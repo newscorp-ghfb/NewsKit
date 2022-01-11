@@ -20,7 +20,7 @@ describe('Headings', () => {
       children: 'A Heading',
       overrides: {
         typographyPreset: 'editorialHeadline050',
-        stylePreset: 'linkInline',
+        stylePreset: 'inkInverse',
       },
     } as Headings.HeadingOverrides);
     expect(wrapper).toMatchSnapshot();

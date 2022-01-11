@@ -40,75 +40,6 @@ export const componentDefaults = {
       },
     },
   },
-  audioPlayer: {
-    seekBar: {
-      slider: {
-        track: {
-          stylePreset: 'audioPlayerSeekBarTrack',
-          size: 'sizing020',
-        },
-        indicator: {
-          stylePreset: 'audioPlayerSeekBarIndicator',
-        },
-        thumb: {
-          stylePreset: 'audioPlayerThumb',
-          size: 'sizing040',
-        },
-        thumbLabel: {
-          stylePreset: 'audioPlayerLabels',
-        },
-        labels: {
-          stylePreset: 'audioPlayerLabels',
-          typographyPreset: 'utilityLabel020',
-        },
-      },
-      buffering: {
-        stylePreset: 'audioPlayerSeekBarBuffering',
-      },
-    },
-    controls: {
-      space: 'space030',
-      previousButton: {
-        stylePreset: 'iconButtonMinimalPrimary',
-      },
-      replayButton: {
-        stylePreset: 'iconButtonMinimalPrimary',
-      },
-      playPauseButton: {
-        stylePreset: 'iconButtonSolidPrimary',
-      },
-      forwardButton: {
-        stylePreset: 'iconButtonMinimalPrimary',
-      },
-      nextButton: {
-        stylePreset: 'iconButtonMinimalPrimary',
-      },
-      popoutButton: {
-        stylePreset: 'iconButtonMinimalPrimary',
-      },
-    },
-    volumeControl: {
-      slider: {
-        track: {
-          stylePreset: 'volumeControlTrack',
-          size: 'sizing010',
-        },
-        indicator: {
-          stylePreset: 'volumeControlIndicator',
-        },
-        thumb: {
-          stylePreset: 'audioPlayerThumb',
-          size: 'sizing040',
-        },
-        thumbLabel: {
-          stylePreset: 'volumeControlLabels',
-        },
-        labels: {
-          stylePreset: 'iconButtonMinimalPrimary',
-        },
-      },
-    },
-  },
   banner: {
     horizontal: {
       stylePreset: 'bannerInformative',
@@ -165,7 +96,6 @@ export const componentDefaults = {
       },
     },
   },
-
   byline: {
     stylePreset: 'inkSubtle',
     typographyPreset: 'utilityMeta020',
@@ -319,12 +249,6 @@ export const componentDefaults = {
     stylePreset: 'inkContrast',
     typographyPreset: 'editorialSubheadline010',
   },
-  icons: {
-    stylePreset: 'iconDefault',
-  },
-  image: {
-    stylePreset: 'imageSharp',
-  },
   inlineDrawer: {
     __extends: '{{componentDefaults.drawer}}',
     panel: {
@@ -369,17 +293,6 @@ export const componentDefaults = {
       spaceStack: 'space040',
       spaceInline: 'space010',
     },
-  },
-  link: {
-    stylePreset: 'linkInline',
-    spaceInline: 'space010',
-    externalIcon: {
-      size: 'iconSize010',
-    },
-  },
-  linkStandalone: {
-    stylePreset: 'linkStandalone',
-    typographyPreset: 'utilityLabel020',
   },
   modal: {
     overlay: {
@@ -631,29 +544,6 @@ export const componentDefaults = {
       spaceInline: 'space020',
     },
   },
-  slider: {
-    track: {
-      stylePreset: 'sliderTrack',
-      size: 'sizing030',
-    },
-    indicator: {
-      stylePreset: 'sliderIndicator',
-    },
-    thumb: {
-      stylePreset: 'sliderThumb',
-      size: 'sizing060',
-    },
-    thumbLabel: {
-      stylePreset: 'sliderThumbLabel',
-      typographyPreset: 'utilityLabel030',
-      space: 'space060',
-    },
-    labels: {
-      stylePreset: 'sliderLabels',
-      typographyPreset: 'utilityLabel020',
-      space: 'space030',
-    },
-  },
   structuredList: {
     divider: {
       stylePreset: 'divider',
@@ -668,7 +558,6 @@ export const componentDefaults = {
       stylePreset: 'inkContrast',
     },
   },
-
   textField: {
     small: {
       stylePreset: 'inputField',
@@ -719,95 +608,6 @@ export const componentDefaults = {
       },
     },
   },
-  textInput: {
-    small: {
-      label: {
-        stylePreset: 'textInputLabel',
-        typographyPreset: 'utilityLabel030',
-        spaceStack: 'space040',
-        spaceInline: 'space010',
-      },
-      input: {
-        stylePreset: 'textInput',
-        spaceInset: 'spaceInset020',
-        minHeight: 'sizing060',
-        typographyPreset: 'utilityBody020',
-        spaceStack: 'space020',
-        leadingIcon: {
-          iconOffset: 'space030',
-          spaceInset: 'space070',
-        },
-        validationIcon: {
-          iconOffset: 'space030',
-          spaceInset: 'space070',
-          iconSize: 'iconSize020',
-        },
-      },
-      assistiveText: {
-        stylePreset: 'textInputAssistiveText',
-        typographyPreset: 'utilityLabel020',
-        minHeight: 'sizing030',
-      },
-    },
-    medium: {
-      label: {
-        stylePreset: 'textInputLabel',
-        typographyPreset: 'utilityLabel030',
-        spaceStack: 'space040',
-        spaceInline: 'space010',
-      },
-      input: {
-        stylePreset: 'textInput',
-        spaceInset: 'spaceInset030',
-        minHeight: 'sizing080',
-        typographyPreset: 'utilityBody020',
-        spaceStack: 'space020',
-        leadingIcon: {
-          iconOffset: 'space030',
-          spaceInset: 'space070',
-        },
-        validationIcon: {
-          iconOffset: 'space030',
-          spaceInset: 'space070',
-          iconSize: 'iconSize020',
-        },
-      },
-      assistiveText: {
-        stylePreset: 'textInputAssistiveText',
-        typographyPreset: 'utilityLabel020',
-        minHeight: 'sizing030',
-      },
-    },
-    large: {
-      label: {
-        stylePreset: 'textInputLabel',
-        typographyPreset: 'utilityLabel030',
-        spaceStack: 'space040',
-        spaceInline: 'space010',
-      },
-      input: {
-        stylePreset: 'textInput',
-        spaceInset: 'spaceInset030',
-        minHeight: 'sizing090',
-        typographyPreset: 'utilityBody030',
-        spaceStack: 'space020',
-        leadingIcon: {
-          iconOffset: 'space030',
-          spaceInset: 'space080',
-        },
-        validationIcon: {
-          iconOffset: 'space030',
-          spaceInset: 'space080',
-          iconSize: 'iconSize030',
-        },
-      },
-      assistiveText: {
-        stylePreset: 'textInputAssistiveText',
-        typographyPreset: 'utilityLabel030',
-        minHeight: 'sizing030',
-      },
-    },
-  },
   toast: {
     stylePreset: 'toastNeutral',
     spaceInset: 'spaceInset030',
@@ -849,24 +649,6 @@ export const componentDefaults = {
       stylePreset: 'inkBase',
       spaceInline: 'space020',
       size: 'iconSize005',
-    },
-  },
-  volumeControl: {
-    slider: {
-      track: {
-        stylePreset: 'volumeControlTrack',
-      },
-      indicator: {
-        stylePreset: 'volumeControlIndicator',
-      },
-      thumb: {
-        stylePreset: 'volumeControlThumb',
-      },
-    },
-    button: {
-      stylePreset: 'iconButtonMinimalPrimary',
-      iconSize: 'iconSize020',
-      size: 'small',
     },
   },
   checkbox: {

@@ -162,63 +162,69 @@ const TeaserDecorator = ({
   return <StyledCardLink {...linkProps} />;
 };
 
-const ThemelessCard: React.FC<CardProps> = ({
-  media,
-  mediaInteractive = false,
-  layout = 'vertical',
-  href,
-  actions,
-  children,
-  overrides = {},
-  ...restProps
-}) => {
-  const hasHref = Boolean(href);
-  return (
-    <StyledCardContainer
-      hasHref={hasHref}
-      layout={layout}
-      overrides={overrides}
-      {...restProps}
-    >
-      {media && (
-        <StyledCardContainerMedia
-          layout={layout}
-          mediaInteractive={mediaInteractive}
-          hasHref={hasHref}
-          overrides={overrides}
-        >
-          {renderMedia(media)}
-        </StyledCardContainerMedia>
-      )}
-
-      <StyledCardContainerTeaserAndActions
+const ThemelessCard = React.forwardRef<HTMLDivElement, CardProps>(
+  (
+    {
+      media,
+      mediaInteractive = false,
+      layout = 'vertical',
+      href,
+      actions,
+      children,
+      overrides = {},
+      ...restProps
+    },
+    ref,
+  ) => {
+    const hasHref = Boolean(href);
+    return (
+      <StyledCardContainer
+        hasHref={hasHref}
         layout={layout}
         overrides={overrides}
+        ref={ref}
+        {...restProps}
       >
-        {children && (
-          <StyledCardContainerTeaser
-            hasHref={hasHref}
+        {media && (
+          <StyledCardContainerMedia
             layout={layout}
-            overrides={overrides}
-          >
-            <TeaserDecorator href={href}>{children}</TeaserDecorator>
-          </StyledCardContainerTeaser>
-        )}
-        {actions && (
-          <StyledCardContainerActions
-            flow={Flow.HorizontalCenter}
-            stackDistribution={StackDistribution.Start}
+            mediaInteractive={mediaInteractive}
             hasHref={hasHref}
-            wrap="nowrap"
             overrides={overrides}
           >
-            {renderIfReactComponent(actions)}
-          </StyledCardContainerActions>
+            {renderMedia(media)}
+          </StyledCardContainerMedia>
         )}
-      </StyledCardContainerTeaserAndActions>
-    </StyledCardContainer>
-  );
-};
+
+        <StyledCardContainerTeaserAndActions
+          layout={layout}
+          overrides={overrides}
+        >
+          {children && (
+            <StyledCardContainerTeaser
+              hasHref={hasHref}
+              layout={layout}
+              overrides={overrides}
+            >
+              <TeaserDecorator href={href}>{children}</TeaserDecorator>
+            </StyledCardContainerTeaser>
+          )}
+          {actions && (
+            <StyledCardContainerActions
+              flow={Flow.HorizontalCenter}
+              stackDistribution={StackDistribution.Start}
+              hasHref={hasHref}
+              wrap="nowrap"
+              overrides={overrides}
+            >
+              {renderIfReactComponent(actions)}
+            </StyledCardContainerActions>
+          )}
+        </StyledCardContainerTeaserAndActions>
+      </StyledCardContainer>
+    );
+  },
+);
 
 export const Card = withOwnTheme(ThemelessCard)({defaults, stylePresets});
 
