@@ -119,6 +119,7 @@ Array [
   "Toast",
   "ToastProvider",
   "UnorderedList",
+  "VideoPlayer",
   "Visible",
   "VolumeControl",
   "compileTheme",

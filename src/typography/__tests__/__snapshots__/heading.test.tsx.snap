@@ -10,9 +10,7 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
   font-weight: 500;
   letter-spacing: -0.5px;
   padding: 0.5px 0px;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -28,47 +26,7 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
-}
-
-.emotion-0:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-0:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-0:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <h1
@@ -177,9 +135,7 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
   font-weight: 500;
   letter-spacing: -0.5px;
   padding: 0.5px 0px;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -195,47 +151,7 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
-}
-
-.emotion-0:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-0:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-0:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <h2
@@ -321,9 +237,7 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
   font-weight: 500;
   letter-spacing: -0.5px;
   padding: 0.5px 0px;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -339,47 +253,7 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
-}
-
-.emotion-0:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-0:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-0:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <h3
@@ -465,9 +339,7 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
   font-weight: 500;
   letter-spacing: -0.5px;
   padding: 0.5px 0px;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -483,47 +355,7 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
-}
-
-.emotion-0:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-0:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-0:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <h4
@@ -609,9 +441,7 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
   font-weight: 500;
   letter-spacing: -0.5px;
   padding: 0.5px 0px;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -627,47 +457,7 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
-}
-
-.emotion-0:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-0:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-0:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <h5
@@ -725,9 +515,7 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
   font-weight: 500;
   letter-spacing: -0.5px;
   padding: 0.5px 0px;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -743,47 +531,7 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
-}
-
-.emotion-0:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-0:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-0:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <h6
@@ -841,9 +589,7 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
   font-weight: 500;
   letter-spacing: -0.5px;
   padding: 0.5px 0px;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -859,47 +605,7 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
-}
-
-.emotion-0:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-0:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-0:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <h1
@@ -1008,9 +714,7 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
   font-weight: 500;
   letter-spacing: -0.5px;
   padding: 0.5px 0px;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -1026,47 +730,7 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
-}
-
-.emotion-0:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-0:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-0:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <h2
@@ -1152,9 +816,7 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
   font-weight: 500;
   letter-spacing: -0.5px;
   padding: 0.5px 0px;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -1170,47 +832,7 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
-}
-
-.emotion-0:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-0:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-0:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <h3
@@ -1296,9 +918,7 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
   font-weight: 500;
   letter-spacing: -0.5px;
   padding: 0.5px 0px;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -1314,47 +934,7 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
-}
-
-.emotion-0:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-0:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-0:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <h4
@@ -1440,9 +1020,7 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
   font-weight: 500;
   letter-spacing: -0.5px;
   padding: 0.5px 0px;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -1458,47 +1036,7 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
-}
-
-.emotion-0:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-0:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-0:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <h5
@@ -1556,9 +1094,7 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
   font-weight: 500;
   letter-spacing: -0.5px;
   padding: 0.5px 0px;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -1574,47 +1110,7 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
-}
-
-.emotion-0:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-0:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-0:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <h6

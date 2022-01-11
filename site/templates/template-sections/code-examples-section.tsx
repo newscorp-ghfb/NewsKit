@@ -59,7 +59,7 @@ export const CodeExamplesSection: React.FC<CodeExamplesSectionProps> = ({
           )}
           {description && <ContentText>{description}</ContentText>}
           {media && (
-            <Block stylePreset="imageRoundedMedium" spaceStack="space050">
+            <Block stylePreset="blockRoundedMedium" spaceStack="space050">
               {renderIfReactComponent(media) || (
                 <Image {...(media as ImageProps)} />
               )}
