@@ -2589,6 +2589,107 @@ Object {
     },
     "stylePreset": "titleBar",
   },
+  "videoPlayer": Object {
+    "controlBar": Object {
+      "iconToggle": Object {
+        "stylePreset": "inkInverse",
+      },
+      "maxHeight": Object {
+        "md": "sizing080",
+        "xs": "sizing070",
+      },
+      "stylePreset": "videoPlayerControlBar",
+      "timeDisplay": Object {
+        "currentTime": Object {
+          "spaceInline": "space010",
+        },
+        "divider": Object {
+          "spaceInline": "space010",
+        },
+        "stylePreset": "inkInverse",
+        "typographyPreset": "utilityMeta010",
+      },
+      "typographyPreset": Object {
+        "md": "utilityMeta020",
+        "xs": "utilityMeta010",
+      },
+      "volumeControl": Object {
+        "volumeBar": Object {
+          "stylePreset": "videoPlayerVolumeBar",
+        },
+        "volumeLevel": Object {
+          "stylePreset": "videoPlayerVolumeLevel",
+        },
+      },
+    },
+    "dockText": Object {
+      "description": Object {
+        "stylePreset": "inkInverse",
+        "typographyPreset": Object {
+          "md": "utilityBody030",
+          "xs": "utilityBody010",
+        },
+      },
+      "spaceInset": Object {
+        "md": "spaceInset050",
+        "xs": "spaceInset040",
+      },
+      "stylePreset": "videoPlayerDockText",
+      "title": Object {
+        "spaceStack": Object {
+          "md": "space030",
+          "xs": "space020",
+        },
+        "stylePreset": "inkInverse",
+        "typographyPreset": Object {
+          "md": "utilityHeading040",
+          "xs": "utilityHeading010",
+        },
+      },
+    },
+    "miniCardOverlay": Object {
+      "closeButton": Object {
+        "spaceInset": "spaceInset010",
+      },
+      "countdown": Object {
+        "spaceStack": "space010",
+        "stylePreset": "inkInverse",
+        "typographyPreset": "utilityMeta010",
+      },
+      "name": Object {
+        "stylePreset": "inkInverse",
+        "typographyPreset": "utilityMeta010",
+      },
+      "spaceInset": "spaceInsetSquish020",
+      "stylePreset": "videoPlayerMiniCardOverlay",
+    },
+    "playButton": Object {
+      "stylePreset": "videoPlayerPlayButton",
+    },
+    "seekBar": Object {
+      "currentDuration": Object {
+        "spaceInset": "spaceInset020",
+        "stylePreset": "videoPlayerCurrentDuration",
+        "typographyPreset": "utilityMeta010",
+      },
+      "loadingProgressBar": Object {
+        "stylePreset": "videoPlayerLoadProgressBar",
+      },
+      "playProgressBar": Object {
+        "stylePreset": "videoPlayerPlayProgressBar",
+      },
+      "seekHandle": Object {
+        "stylePreset": "videoPlayerSeekHandle",
+        "width": "borderWidth020",
+      },
+      "seekPosition": Object {
+        "spaceInset": "spaceInset020",
+        "stylePreset": "videoPlayerSeekPosition",
+        "typographyPreset": "utilityMeta010",
+      },
+      "stylePreset": "videoPlayerSeekBarContainer",
+    },
+  },
   "volumeControl": Object {
     "button": Object {
       "iconSize": "iconSize020",
@@ -4433,6 +4534,81 @@ Object {
       "backgroundColor": "{{colors.interfacePositive010}}",
       "borderRadius": "{{borders.borderRadiusRounded020}}",
       "iconColor": "{{colors.inkInverse}}",
+    },
+  },
+  "videoPlayerControlBar": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.blackTint050}}",
+    },
+  },
+  "videoPlayerCurrentDuration": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.inkInverse}}",
+      "borderColor": "{{colors.inkInverse}}",
+      "borderRadius": "{{borders.borderRadiusRounded020}}",
+      "borderStyle": "solid",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "color": "{{colors.inkContrast}}",
+    },
+  },
+  "videoPlayerDockText": Object {
+    "base": Object {
+      "backgroundImage": "{{overlays.overlayGradientInverseVertical}}",
+    },
+  },
+  "videoPlayerLoadProgressBar": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.whiteTint050}}",
+    },
+  },
+  "videoPlayerMiniCardOverlay": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.neutral090}}",
+    },
+  },
+  "videoPlayerPlayButton": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderColor": "{{colors.inkInverse}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "borderStyle": "solid",
+      "borderWidth": "{{borders.borderWidth020}}",
+      "color": "{{colors.inkInverse}}",
+    },
+  },
+  "videoPlayerPlayProgressBar": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interactivePrimary030}}",
+    },
+  },
+  "videoPlayerSeekBarContainer": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.blackTint020}}",
+    },
+  },
+  "videoPlayerSeekHandle": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interactivePrimary030}}",
+    },
+  },
+  "videoPlayerSeekPosition": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.inkContrast}}",
+      "borderColor": "{{colors.inkContrast}}",
+      "borderRadius": "{{borders.borderRadiusRounded020}}",
+      "borderStyle": "solid",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "color": "{{colors.inkInverse}}",
+    },
+  },
+  "videoPlayerVolumeBar": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.inkInverse}}",
+    },
+  },
+  "videoPlayerVolumeLevel": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interactivePrimary030}}",
     },
   },
   "volumeControlIndicator": Object {
