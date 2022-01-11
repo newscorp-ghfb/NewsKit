@@ -13,7 +13,6 @@ export const componentDefaults = {
         spaceInline: 'space020',
       },
     },
-
     medium: {
       stylePreset: 'assistiveText',
       typographyPreset: 'utilityBody020',
@@ -97,7 +96,6 @@ export const componentDefaults = {
       },
     },
   },
-
   byline: {
     stylePreset: 'inkSubtle',
     typographyPreset: 'utilityMeta020',
@@ -696,7 +694,6 @@ export const componentDefaults = {
       stylePreset: 'inkContrast',
     },
   },
-
   textField: {
     small: {
       stylePreset: 'inputField',
@@ -747,7 +744,6 @@ export const componentDefaults = {
       },
     },
   },
-
   titleBar: {
     stylePreset: 'titleBar',
     spaceInset: {
