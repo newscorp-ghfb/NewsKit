@@ -64,6 +64,15 @@ const myCustomCardTheme = createTheme({
           textDecoration: 'underline',
         },
       },
+      imageDefault: {
+        base: {
+          borderRadius: '{{borders.borderRadiusDefault}}',
+        },
+        loading: {
+          backgroundColor: '{{colors.interfaceSkeleton010}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+      },
     },
   },
 });
@@ -226,18 +235,22 @@ describe('Card', () => {
   });
 
   test('renders media section with overrides', () => {
-    const fragment = renderToFragmentWithTheme(Card, {
-      media: {
-        src: placeholder,
-        alt: 'Card media',
-      },
-      children: cardBody,
-      overrides: {
-        mediaContainer: {
-          stylePreset: 'imageDefault',
+    const fragment = renderToFragmentWithTheme(
+      Card,
+      {
+        media: {
+          src: placeholder,
+          alt: 'Card media',
+        },
+        children: cardBody,
+        overrides: {
+          mediaContainer: {
+            stylePreset: 'imageDefault',
+          },
         },
       },
-    });
+      myCustomCardTheme,
+    );
     expect(fragment).toMatchSnapshot();
   });
 
