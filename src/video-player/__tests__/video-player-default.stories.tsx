@@ -47,7 +47,9 @@ export const StoryDefaultVideoPlayer = () => {
 };
 StoryDefaultVideoPlayer.storyName = 'video-default';
 StoryDefaultVideoPlayer.parameters = {
-  eyes: {waitBeforeCapture: 'div.vjs-poster'},
+  eyes: {
+    waitBeforeCapture: 'button.vjs-big-play-button > span.vjs-control-text',
+  },
 };
 
 export const StoryPlaylistsVideoPlayer = () => {
@@ -78,7 +80,9 @@ export const StoryPlaylistsVideoPlayer = () => {
 };
 StoryPlaylistsVideoPlayer.storyName = 'playlist-video-default';
 StoryDefaultVideoPlayer.parameters = {
-  eyes: {waitBeforeCapture: 'div.vjs-poster'},
+  eyes: {
+    waitBeforeCapture: 'button.vjs-big-play-button > span.vjs-control-text',
+  },
 };
 
 export const StoryCardWithVideo = () => (
@@ -112,5 +116,7 @@ export const StoryCardWithVideo = () => (
 );
 StoryCardWithVideo.storyName = 'video-in-card';
 StoryDefaultVideoPlayer.parameters = {
-  eyes: {waitBeforeCapture: 'div.vjs-poster'},
+  eyes: {
+    waitBeforeCapture: 'button.vjs-big-play-button > span.vjs-control-text',
+  },
 };

@@ -121,7 +121,9 @@ export const StoryVideoPlayerPlayButtonOverrides = () => (
 );
 StoryVideoPlayerPlayButtonOverrides.storyName = 'play-button-overrides';
 StoryVideoPlayerPlayButtonOverrides.parameters = {
-  eyes: {waitBeforeCapture: 'div.vjs-poster'},
+  eyes: {
+    waitBeforeCapture: 'button.vjs-big-play-button > span.vjs-control-text',
+  },
 };
 
 export const StoryVideoPlayerSeekBarOverrides = () => (
@@ -247,7 +249,9 @@ export const StoryVideoPlayerDockTextOverrides = () => (
 );
 StoryVideoPlayerDockTextOverrides.storyName = 'doc-text-overrides';
 StoryVideoPlayerPlayButtonOverrides.parameters = {
-  eyes: {waitBeforeCapture: 'div.vjs-poster'},
+  eyes: {
+    waitBeforeCapture: 'button.vjs-big-play-button > span.vjs-control-text',
+  },
 };
 
 export const StoryVideoPlayerMiniCardOverlayOverrides = () => (
