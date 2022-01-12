@@ -122,7 +122,7 @@ export const StoryVideoPlayerPlayButtonOverrides = () => (
 StoryVideoPlayerPlayButtonOverrides.storyName = 'play-button-overrides';
 StoryVideoPlayerPlayButtonOverrides.parameters = {
   eyes: {
-    waitBeforeCapture: 'button.vjs-big-play-button > span.vjs-control-text',
+    waitBeforeCapture: 5000,
   },
 };
 
@@ -250,7 +250,7 @@ export const StoryVideoPlayerDockTextOverrides = () => (
 StoryVideoPlayerDockTextOverrides.storyName = 'doc-text-overrides';
 StoryVideoPlayerPlayButtonOverrides.parameters = {
   eyes: {
-    waitBeforeCapture: 'button.vjs-big-play-button > span.vjs-control-text',
+    waitBeforeCapture: 5000,
   },
 };
 
