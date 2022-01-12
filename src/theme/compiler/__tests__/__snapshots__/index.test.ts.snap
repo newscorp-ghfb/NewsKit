@@ -237,6 +237,75 @@ Object {
         "typographyPreset": "utilityBody010",
       },
     },
+    "audioPlayer": Object {
+      "controls": Object {
+        "forwardButton": Object {
+          "stylePreset": "iconButtonMinimalPrimary",
+        },
+        "nextButton": Object {
+          "stylePreset": "iconButtonMinimalPrimary",
+        },
+        "playPauseButton": Object {
+          "stylePreset": "iconButtonSolidPrimary",
+        },
+        "popoutButton": Object {
+          "stylePreset": "iconButtonMinimalPrimary",
+        },
+        "previousButton": Object {
+          "stylePreset": "iconButtonMinimalPrimary",
+        },
+        "replayButton": Object {
+          "stylePreset": "iconButtonMinimalPrimary",
+        },
+        "space": "space030",
+      },
+      "seekBar": Object {
+        "buffering": Object {
+          "stylePreset": "audioPlayerSeekBarBuffering",
+        },
+        "slider": Object {
+          "indicator": Object {
+            "stylePreset": "audioPlayerSeekBarIndicator",
+          },
+          "labels": Object {
+            "stylePreset": "audioPlayerLabels",
+            "typographyPreset": "utilityLabel020",
+          },
+          "thumb": Object {
+            "size": "sizing040",
+            "stylePreset": "audioPlayerThumb",
+          },
+          "thumbLabel": Object {
+            "stylePreset": "audioPlayerLabels",
+          },
+          "track": Object {
+            "size": "sizing020",
+            "stylePreset": "audioPlayerSeekBarTrack",
+          },
+        },
+      },
+      "volumeControl": Object {
+        "slider": Object {
+          "indicator": Object {
+            "stylePreset": "volumeControlIndicator",
+          },
+          "labels": Object {
+            "stylePreset": "iconButtonMinimalPrimary",
+          },
+          "thumb": Object {
+            "size": "sizing040",
+            "stylePreset": "audioPlayerThumb",
+          },
+          "thumbLabel": Object {
+            "stylePreset": "volumeControlLabels",
+          },
+          "track": Object {
+            "size": "sizing010",
+            "stylePreset": "volumeControlTrack",
+          },
+        },
+      },
+    },
     "banner": Object {
       "horizontal": Object {
         "actions": Object {
@@ -260,7 +329,6 @@ Object {
         "icon": Object {
           "spaceInline": "space030",
         },
-        "maxWidth": "1920px",
         "minHeight": "sizing090",
         "spaceInset": "spaceInset045",
         "stylePreset": "bannerInformative",
@@ -287,7 +355,6 @@ Object {
         "icon": Object {
           "spaceInline": "space030",
         },
-        "maxWidth": "1920px",
         "minHeight": "sizing090",
         "spaceInset": "spaceInset045",
         "stylePreset": "bannerInformative",
@@ -619,6 +686,12 @@ Object {
       "stylePreset": "inkContrast",
       "typographyPreset": "editorialSubheadline010",
     },
+    "icons": Object {
+      "stylePreset": "iconDefault",
+    },
+    "image": Object {
+      "stylePreset": "imageSharp",
+    },
     "indeterminateProgressIndicator": Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
@@ -713,6 +786,17 @@ Object {
         "stylePreset": "label",
         "typographyPreset": "utilityLabel010",
       },
+    },
+    "link": Object {
+      "externalIcon": Object {
+        "size": "iconSize010",
+      },
+      "spaceInline": "space010",
+      "stylePreset": "linkInline",
+    },
+    "linkStandalone": Object {
+      "stylePreset": "linkStandalone",
+      "typographyPreset": "utilityLabel020",
     },
     "modal": Object {
       "closeButton": Object {
@@ -975,6 +1059,29 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
+    "slider": Object {
+      "indicator": Object {
+        "stylePreset": "sliderIndicator",
+      },
+      "labels": Object {
+        "space": "space030",
+        "stylePreset": "sliderLabels",
+        "typographyPreset": "utilityLabel020",
+      },
+      "thumb": Object {
+        "size": "sizing060",
+        "stylePreset": "sliderThumb",
+      },
+      "thumbLabel": Object {
+        "space": "space060",
+        "stylePreset": "sliderThumbLabel",
+        "typographyPreset": "utilityLabel030",
+      },
+      "track": Object {
+        "size": "sizing030",
+        "stylePreset": "sliderTrack",
+      },
+    },
     "standfirst": Object {
       "styledText": Object {
         "stylePreset": "inkBase",
@@ -1048,6 +1155,95 @@ Object {
         "width": "100%",
       },
     },
+    "textInput": Object {
+      "large": Object {
+        "assistiveText": Object {
+          "minHeight": "sizing030",
+          "stylePreset": "textInputAssistiveText",
+          "typographyPreset": "utilityLabel030",
+        },
+        "input": Object {
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space080",
+          },
+          "minHeight": "sizing090",
+          "spaceInset": "spaceInset030",
+          "spaceStack": "space020",
+          "stylePreset": "textInput",
+          "typographyPreset": "utilityBody030",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize030",
+            "spaceInset": "space080",
+          },
+        },
+        "label": Object {
+          "spaceInline": "space010",
+          "spaceStack": "space040",
+          "stylePreset": "textInputLabel",
+          "typographyPreset": "utilityLabel030",
+        },
+      },
+      "medium": Object {
+        "assistiveText": Object {
+          "minHeight": "sizing030",
+          "stylePreset": "textInputAssistiveText",
+          "typographyPreset": "utilityLabel020",
+        },
+        "input": Object {
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
+          "minHeight": "sizing080",
+          "spaceInset": "spaceInset030",
+          "spaceStack": "space020",
+          "stylePreset": "textInput",
+          "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
+        },
+        "label": Object {
+          "spaceInline": "space010",
+          "spaceStack": "space040",
+          "stylePreset": "textInputLabel",
+          "typographyPreset": "utilityLabel030",
+        },
+      },
+      "small": Object {
+        "assistiveText": Object {
+          "minHeight": "sizing030",
+          "stylePreset": "textInputAssistiveText",
+          "typographyPreset": "utilityLabel020",
+        },
+        "input": Object {
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
+          "minHeight": "sizing060",
+          "spaceInset": "spaceInset020",
+          "spaceStack": "space020",
+          "stylePreset": "textInput",
+          "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
+        },
+        "label": Object {
+          "spaceInline": "space010",
+          "spaceStack": "space040",
+          "stylePreset": "textInputLabel",
+          "typographyPreset": "utilityLabel030",
+        },
+      },
+    },
     "titleBar": Object {
       "heading": Object {
         "typographyPreset": Object {
@@ -1104,6 +1300,24 @@ Object {
         "stylePreset": "inkBase",
       },
       "spaceStack": "space040",
+    },
+    "volumeControl": Object {
+      "button": Object {
+        "iconSize": "iconSize020",
+        "size": "small",
+        "stylePreset": "iconButtonMinimalPrimary",
+      },
+      "slider": Object {
+        "indicator": Object {
+          "stylePreset": "volumeControlIndicator",
+        },
+        "thumb": Object {
+          "stylePreset": "volumeControlThumb",
+        },
+        "track": Object {
+          "stylePreset": "volumeControlTrack",
+        },
+      },
     },
   },
   "fonts": Object {
@@ -1285,6 +1499,42 @@ Object {
       },
       "valid": Object {
         "color": "#535353",
+      },
+    },
+    "audioPlayerSeekBarBuffering": Object {
+      "base": Object {
+        "backgroundColor": "#F4F4F4",
+        "borderRadius": "20rem",
+      },
+    },
+    "audioPlayerSeekBarIndicator": Object {
+      "base": Object {
+        "backgroundColor": "#3358CC",
+        "borderRadius": "20rem",
+      },
+    },
+    "audioPlayerSeekBarTrack": Object {
+      "base": Object {
+        "backgroundColor": "#FAFAFA",
+        "borderRadius": "20rem",
+      },
+    },
+    "audioPlayerThumb": Object {
+      "active": Object {
+        "backgroundColor": "#213A82",
+        "iconColor": "#535353",
+      },
+      "base": Object {
+        "backgroundColor": "#3358CC",
+        "borderColor": "#FFFFFF",
+        "borderRadius": "50%",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "boxShadow": "0 0 2px 0 rgba(10,10,10,0.08)",
+        "iconColor": "#C0C0C0",
+      },
+      "hover": Object {
+        "backgroundColor": "#2B4AAB",
       },
     },
     "bannerInformative": Object {
@@ -1483,6 +1733,110 @@ Object {
         "color": "#5E44E4",
       },
     },
+    "iconDefault": Object {
+      "base": Object {
+        "iconColor": "#2E2E2E",
+      },
+    },
+    "iconNegative": Object {
+      "base": Object {
+        "iconColor": "#D20600",
+      },
+    },
+    "iconPositive": Object {
+      "base": Object {
+        "iconColor": "#0A782A",
+      },
+    },
+    "iconSocialFacebook": Object {
+      "base": Object {
+        "iconColor": "#1877F2",
+      },
+    },
+    "iconSocialGitHub": Object {
+      "base": Object {
+        "iconColor": "#000000",
+      },
+    },
+    "iconSocialInstagram": Object {
+      "base": Object {
+        "iconColor": "#C32AA3",
+      },
+    },
+    "iconSocialReddit": Object {
+      "base": Object {
+        "iconColor": "#FF4500",
+      },
+    },
+    "iconSocialTwitter": Object {
+      "base": Object {
+        "iconColor": "#1DA1F2",
+      },
+    },
+    "iconSocialWhatsApp": Object {
+      "base": Object {
+        "iconColor": "#25D366",
+      },
+    },
+    "iconSocialYoutube": Object {
+      "base": Object {
+        "iconColor": "#FF0000",
+      },
+    },
+    "imageCircle": Object {
+      "base": Object {
+        "borderRadius": "50%",
+      },
+      "loading": Object {
+        "backgroundColor": "#F4F4F4",
+        "iconColor": "#C0C0C0",
+      },
+    },
+    "imageDefault": Object {
+      "base": Object {
+        "borderRadius": "8px",
+      },
+      "loading": Object {
+        "backgroundColor": "#F4F4F4",
+        "iconColor": "#C0C0C0",
+      },
+    },
+    "imageRoundedLarge": Object {
+      "base": Object {
+        "borderRadius": "24px",
+      },
+      "loading": Object {
+        "backgroundColor": "#F4F4F4",
+        "iconColor": "#C0C0C0",
+      },
+    },
+    "imageRoundedMedium": Object {
+      "base": Object {
+        "borderRadius": "12px",
+      },
+      "loading": Object {
+        "backgroundColor": "#F4F4F4",
+        "iconColor": "#C0C0C0",
+      },
+    },
+    "imageRoundedSmall": Object {
+      "base": Object {
+        "borderRadius": "4px",
+      },
+      "loading": Object {
+        "backgroundColor": "#F4F4F4",
+        "iconColor": "#C0C0C0",
+      },
+    },
+    "imageSharp": Object {
+      "base": Object {
+        "borderRadius": "0",
+      },
+      "loading": Object {
+        "backgroundColor": "#F4F4F4",
+        "iconColor": "#C0C0C0",
+      },
+    },
     "indeterminateProgressIndicatorInverse": Object {
       "base": Object {
         "iconColor": "#FFFFFF",
@@ -1654,6 +2008,93 @@ Object {
         "color": "#C0C0C0",
       },
     },
+    "linkInline": Object {
+      "active": Object {
+        "color": "#213A82",
+        "iconColor": "#213A82",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "#3358CC",
+        "iconColor": "#3358CC",
+        "textDecoration": "underline",
+      },
+      "hover": Object {
+        "color": "#2B4AAB",
+        "iconColor": "#2B4AAB",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "#5E44E4",
+        "iconColor": "#5E44E4",
+        "textDecoration": "underline",
+      },
+      "visited:hover": Object {
+        "color": "#5E44E4",
+        "iconColor": "#5E44E4",
+        "textDecoration": "underline",
+      },
+    },
+    "linkInlineInverse": Object {
+      "active": Object {
+        "color": "#FFFFFF",
+        "iconColor": "#FFFFFF",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "#FFFFFF",
+        "iconColor": "#FFFFFF",
+        "textDecoration": "underline",
+      },
+      "hover": Object {
+        "color": "#FFFFFF",
+        "iconColor": "#FFFFFF",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "rgba(255,255,255,0.7)",
+        "iconColor": "rgba(255,255,255,0.7)",
+        "textDecoration": "underline",
+      },
+      "visited:hover": Object {
+        "color": "rgba(255,255,255,0.7)",
+        "iconColor": "rgba(255,255,255,0.7)",
+      },
+    },
+    "linkStandalone": Object {
+      "active": Object {
+        "color": "#213A82",
+        "iconColor": "#213A82",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "#3358CC",
+        "iconColor": "#3358CC",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "#2B4AAB",
+        "iconColor": "#2B4AAB",
+        "textDecoration": "underline",
+      },
+    },
+    "linkStandaloneInverse": Object {
+      "active": Object {
+        "color": "#FFFFFF",
+        "iconColor": "#FFFFFF",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "#FFFFFF",
+        "iconColor": "#FFFFFF",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "#FFFFFF",
+        "iconColor": "#FFFFFF",
+        "textDecoration": "underline",
+      },
+    },
     "modalPanel": Object {
       "base": Object {
         "backgroundColor": "#FFFFFF",
@@ -1742,6 +2183,71 @@ Object {
         "boxShadow": "0 16px 24px 0 rgba(10,10,10,0.08)",
       },
     },
+    "sliderIndicator": Object {
+      "base": Object {
+        "backgroundColor": "#3358CC",
+        "borderRadius": "20rem",
+      },
+      "disabled": Object {
+        "backgroundColor": "#DEDEDE",
+      },
+    },
+    "sliderLabels": Object {
+      "base": Object {
+        "color": "#535353",
+        "iconColor": "#535353",
+      },
+      "disabled": Object {
+        "color": "#C0C0C0",
+        "iconColor": "#C0C0C0",
+      },
+    },
+    "sliderThumb": Object {
+      "active": Object {
+        "backgroundColor": "#213A82",
+        "iconColor": "#535353",
+      },
+      "base": Object {
+        "backgroundColor": "#3358CC",
+        "borderColor": "#E0E7FF",
+        "borderRadius": "50%",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "boxShadow": "0 0 2px 0 rgba(10,10,10,0.08)",
+        "iconColor": "#C0C0C0",
+      },
+      "disabled": Object {
+        "backgroundColor": "#DEDEDE",
+        "borderColor": "none",
+        "borderStyle": "none",
+        "borderWidth": "none",
+        "boxShadow": "none",
+        "iconColor": "#C0C0C0",
+      },
+      "hover": Object {
+        "backgroundColor": "#2B4AAB",
+        "iconColor": "#C0C0C0",
+      },
+    },
+    "sliderThumbLabel": Object {
+      "base": Object {
+        "color": "#3358CC",
+        "textAlign": "center",
+        "whiteSpace": "nowrap",
+      },
+      "disabled": Object {
+        "color": "#C0C0C0",
+      },
+    },
+    "sliderTrack": Object {
+      "base": Object {
+        "backgroundColor": "#F4F4F4",
+        "borderRadius": "20rem",
+      },
+      "disabled": Object {
+        "backgroundColor": "#F4F4F4",
+      },
+    },
     "structuredListItem": Object {
       "active": Object {
         "backgroundColor": "#F4F4F4",
@@ -1751,6 +2257,59 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "#FAFAFA",
+      },
+    },
+    "textInput": Object {
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#DEDEDE",
+        "borderRadius": "8px",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#2E2E2E",
+        "placeholderColor": "#535353",
+        "textOverflow": "ellipsis",
+      },
+      "disabled": Object {
+        "borderColor": "#F4F4F4",
+        "color": "#C0C0C0",
+      },
+      "focus": Object {
+        "backgroundColor": "#FAFAFA",
+        "borderColor": "#3358CC",
+      },
+      "hover": Object {
+        "backgroundColor": "#FAFAFA",
+      },
+      "invalid": Object {
+        "borderColor": "#EF1703",
+        "caretColor": "#D20600",
+      },
+      "valid": Object {
+        "borderColor": "#23A248",
+        "caretColor": "#0A782A",
+      },
+    },
+    "textInputAssistiveText": Object {
+      "base": Object {
+        "color": "#535353",
+      },
+      "disabled": Object {
+        "color": "#C0C0C0",
+      },
+      "invalid": Object {
+        "color": "#D20600",
+      },
+      "valid": Object {
+        "color": "#0A782A",
+      },
+    },
+    "textInputLabel": Object {
+      "base": Object {
+        "color": "#0A0A0A",
+      },
+      "disabled": Object {
+        "color": "#C0C0C0",
       },
     },
     "titleBar": Object {
@@ -1868,6 +2427,37 @@ Object {
         "color": "#535353",
         "iconColor": "#535353",
         "textTransform": "uppercase",
+      },
+    },
+    "volumeControlIndicator": Object {
+      "base": Object {
+        "backgroundColor": "#3358CC",
+        "borderRadius": "20rem",
+      },
+    },
+    "volumeControlThumb": Object {
+      "active": Object {
+        "backgroundColor": "#213A82",
+        "iconColor": "#535353",
+      },
+      "base": Object {
+        "backgroundColor": "#3358CC",
+        "borderColor": "#E0E7FF",
+        "borderRadius": "50%",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "boxShadow": "0 0 2px 0 rgba(10,10,10,0.08)",
+        "iconColor": "#C0C0C0",
+      },
+      "hover": Object {
+        "backgroundColor": "#2B4AAB",
+        "iconColor": "#C0C0C0",
+      },
+    },
+    "volumeControlTrack": Object {
+      "base": Object {
+        "backgroundColor": "#F4F4F4",
+        "borderRadius": "20rem",
       },
     },
   },
@@ -2096,28 +2686,28 @@ Object {
       "fontFamily": "\\"DM Sans\\", sans-serif",
       "fontSize": "14px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "editorialDisplay010": Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "44px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialDisplay020": Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "48px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialDisplay030": Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "56px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialDropCap010": Object {
@@ -2136,133 +2726,133 @@ Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "18px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialHeadline020": Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "20px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialHeadline030": Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "22px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialHeadline040": Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "24px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialHeadline050": Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "28px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialHeadline060": Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "32px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialHeadline070": Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "36px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialHeadline080": Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "40px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialLabel010": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "12px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialLabel020": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "14px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialLabel030": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "16px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialParagraph010": Object {
       "fontFamily": "\\"DM Sans\\", sans-serif",
       "fontSize": "14px",
       "fontWeight": 400,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "editorialParagraph020": Object {
       "fontFamily": "\\"DM Sans\\", sans-serif",
       "fontSize": "16px",
       "fontWeight": 400,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "editorialParagraph030": Object {
       "fontFamily": "\\"DM Sans\\", sans-serif",
       "fontSize": "18px",
       "fontWeight": 400,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "editorialQuote010": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "22px",
       "fontWeight": 400,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.25,
     },
     "editorialQuote020": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "28px",
       "fontWeight": 400,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.25,
     },
     "editorialSubheadline010": Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "16px",
       "fontWeight": 400,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialSubheadline020": Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "20px",
       "fontWeight": 400,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialSubheadline030": Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "22px",
       "fontWeight": 400,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "editorialSubheadline040": Object {
@@ -2276,154 +2866,154 @@ Object {
       "fontFamily": "\\"Bitter\\", serif",
       "fontSize": "28px",
       "fontWeight": 400,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "utilityBody010": Object {
       "fontFamily": "\\"DM Sans\\", sans-serif",
       "fontSize": "12px",
       "fontWeight": 400,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "utilityBody020": Object {
       "fontFamily": "\\"DM Sans\\", sans-serif",
       "fontSize": "14px",
       "fontWeight": 400,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "utilityBody030": Object {
       "fontFamily": "\\"DM Sans\\", sans-serif",
       "fontSize": "16px",
       "fontWeight": 400,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "utilityButton010": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "12px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "utilityButton020": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "14px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "utilityButton030": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "16px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "utilityHeading010": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "16px",
       "fontWeight": 700,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "utilityHeading020": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "18px",
       "fontWeight": 700,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "utilityHeading030": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "20px",
       "fontWeight": 700,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "utilityHeading040": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "22px",
       "fontWeight": 700,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "utilityHeading050": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "24px",
       "fontWeight": 700,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "utilityLabel010": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "12px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "utilityLabel020": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "14px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "utilityLabel030": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "16px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "utilityMeta010": Object {
       "fontFamily": "\\"DM Sans\\", sans-serif",
       "fontSize": "12px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "utilityMeta020": Object {
       "fontFamily": "\\"DM Sans\\", sans-serif",
       "fontSize": "14px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.5,
     },
     "utilitySubheading010": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "14px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "utilitySubheading020": Object {
       "fontFamily": "\\"DM Sans\\", sans-serif",
       "fontSize": "16px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "utilitySubheading030": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "18px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "utilitySubheading040": Object {
       "fontFamily": "\\"DM Sans\\", sans-serif",
       "fontSize": "20px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
     "utilitySubheading050": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "22px",
       "fontWeight": 500,
-      "letterSpacing": "0",
+      "letterSpacing": "-0.5px",
       "lineHeight": 1.125,
     },
   },
