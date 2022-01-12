@@ -5,7 +5,7 @@ import {Stack} from '../../stack';
 import {Headline} from '../../headline';
 import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
-import {styled} from '../../utils/style';
+import {handleResponsiveProp, MQ, styled} from '../../utils/style';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {AlignSelfValues, StackChild} from '../../stack-child';
 import {Divider} from '../../divider';
@@ -139,7 +139,14 @@ export const StoryTheSun = () => (
         <LargeItem />
       </Cell>
       <Cell xs="full-width" lg={4}>
-        <CSSGrid>
+        <GridLayout
+          rowGap={{xs: '10px', md: '20px', lg: '0'}}
+          columnGap={{md: '20px'}}
+          columns={{xs: '1fr', md: '1fr 1fr', lg: '1fr'}}
+          justifyContent={{lg: 'stretch'}}
+          alignContent={{lg: 'space-between'}}
+          style={{height: '100%'}}
+        >
           <SmallItem />
           <Visible sm lg>
             <Divider />
@@ -158,7 +165,7 @@ export const StoryTheSun = () => (
           </Visible>
 
           <SmallItem />
-        </CSSGrid>
+        </GridLayout>
       </Cell>
     </Grid>
   </FixWidth>
@@ -323,7 +330,14 @@ const BlockLayout1L4S = ({placeholders = []}) => {
         {large}
       </Cell>
       <Cell xs="full-width" lg={4}>
-        <CSSGrid>
+        <GridLayout
+          rowGap={{xs: '10px', md: '20px', lg: '0'}}
+          columnGap={{md: '20px'}}
+          columns={{xs: '1fr', md: '1fr 1fr', lg: '1fr'}}
+          justifyContent={{lg: 'stretch'}}
+          alignContent={{lg: 'space-between'}}
+          style={{height: '100%'}}
+        >
           {small1}
 
           <Visible sm lg>
@@ -343,7 +357,28 @@ const BlockLayout1L4S = ({placeholders = []}) => {
           </Visible>
 
           {small4}
-        </CSSGrid>
+        </GridLayout>
+        {/* <CSSGrid>
+          {small1}
+
+          <Visible sm lg>
+            <Divider />
+          </Visible>
+
+          {small2}
+
+          <Visible sm lg>
+            <Divider />
+          </Visible>
+
+          {small3}
+
+          <Visible sm lg>
+            <Divider />
+          </Visible>
+
+          {small4}
+        </CSSGrid> */}
       </Cell>
     </Grid>
   );
@@ -454,3 +489,141 @@ export const StoryTheSun3 = () => (
     <BlockLayoutTeaser name="variant-4" data={imageGallery} />
   </Section>
 );
+
+const GRID_DEFAULT_PROPS = {
+  rowGap: 'space000',
+  columnGap: 'space000',
+  columns: undefined,
+  rows: undefined,
+  justifyContent: undefined,
+  alignContent: undefined,
+  justifyItems: undefined,
+  alignItems: undefined,
+  areas: undefined,
+};
+
+type GridLayoutProps = {
+  rowGap?: MQ<string>;
+  columnGap?: MQ<string>;
+  columns?: MQ<string>;
+  rows?: MQ<string>;
+  justifyContent?: MQ<string>;
+  alignContent?: MQ<string>;
+  justifyItems?: MQ<string>;
+  alignItems?: MQ<string>;
+  areas?: MQ<string>;
+};
+
+const GridLayout = styled.div<GridLayoutProps>`
+  display: grid;
+  ${handleResponsiveProp(
+    {rowGap: GRID_DEFAULT_PROPS.rowGap},
+    ({rowGap}, {theme}) => ({
+      rowGap: theme.spacePresets[rowGap] || rowGap,
+    }),
+  )}
+  ${handleResponsiveProp(
+    {columnGap: GRID_DEFAULT_PROPS.columnGap},
+    ({columnGap}, {theme}) => ({
+      columnGap: theme.spacePresets[columnGap] || columnGap,
+    }),
+  )}
+  ${handleResponsiveProp(
+    {columns: GRID_DEFAULT_PROPS.columns},
+    ({columns}) => ({
+      gridTemplateColumns: columns,
+    }),
+  )}
+  ${handleResponsiveProp({rows: GRID_DEFAULT_PROPS.rows}, ({rows}) => ({
+    gridTemplateRows: rows,
+  }))}
+
+  ${handleResponsiveProp({areas: GRID_DEFAULT_PROPS.areas}, ({areas}) => ({
+    gridTemplateAreas: areas,
+  }))};
+
+  ${handleResponsiveProp(
+    {justifyContent: GRID_DEFAULT_PROPS.justifyContent},
+    ({justifyContent}) => ({
+      justifyContent,
+    }),
+  )}
+
+  ${handleResponsiveProp(
+    {alignContent: GRID_DEFAULT_PROPS.alignContent},
+    ({alignContent}) => ({
+      alignContent,
+    }),
+  )}
+  ${handleResponsiveProp(
+    {justifyItems: GRID_DEFAULT_PROPS.justifyItems},
+    ({justifyItems}) => ({
+      justifyItems,
+    }),
+  )}
+
+  ${handleResponsiveProp(
+    {alignItems: GRID_DEFAULT_PROPS.alignItems},
+    ({alignItems}) => ({
+      alignItems,
+    }),
+  )}
+`;
+
+const GridItem = styled.div`
+  padding: 10px;
+  border: 1px solid orange;
+`;
+
+export const GridStory = () => {
+  const areas = {
+    xs: `"A"
+         "B"
+         "C"
+         "D"
+         "E"
+         `,
+    md: ` "A A"
+          "B C"
+          "D E"`,
+    lg: `
+        "A B"
+        "A C"
+        "A D"
+        "A E"  
+    `,
+  };
+
+  return (
+    <>
+      <GridLayout
+        rowGap={{xs: 'space010', md: 'space040'}}
+        columnGap={{md: 'space030', lg: 'space050'}}
+        columns={{md: '1fr 1fr', lg: '1fr 1fr 1fr 1fr'}}
+      >
+        <GridItem>1</GridItem>
+        <GridItem>2</GridItem>
+        <GridItem>3</GridItem>
+        <GridItem>4</GridItem>
+      </GridLayout>
+      <br />
+      <br />
+      <br />
+      <Divider />
+      <br />
+      <br />
+      <br />
+      <GridLayout
+        rowGap={{xs: 'space010', md: 'space040'}}
+        columnGap={{md: 'space030', lg: 'space050'}}
+        areas={areas}
+      >
+        <GridItem style={{gridArea: 'A'}}>A</GridItem>
+        <GridItem style={{gridArea: 'B'}}>B</GridItem>
+        <GridItem style={{gridArea: 'C'}}>C</GridItem>
+        <GridItem style={{gridArea: 'D'}}>D</GridItem>
+        <GridItem style={{gridArea: 'E'}}>E</GridItem>
+      </GridLayout>
+    </>
+  );
+};
