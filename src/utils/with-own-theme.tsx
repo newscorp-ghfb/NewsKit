@@ -5,7 +5,7 @@ import {deepMerge} from './deep-merge';
 const mergeTheme = (
   theme: Theme,
   defaults: Record<string, Object>,
-  stylePresets: Record<string, StylePreset>,
+  stylePresets?: Record<string, StylePreset>,
 ): Theme => {
   const newTheme = compileTheme({
     ...theme,
@@ -23,7 +23,7 @@ export const withOwnTheme = <P extends {}>(
   stylePresets,
 }: {
   defaults: Record<string, Object>;
-  stylePresets: Record<string, StylePreset>;
+  stylePresets?: Record<string, StylePreset>;
 }) => {
   const componentTheme = (globalTheme: Theme): Theme =>
     mergeTheme(globalTheme, defaults, stylePresets);
