@@ -1,3 +1,4 @@
+import {useRouter} from 'next/router';
 import {RouteObject} from './get-route-object';
 import routes from '../routes';
 
@@ -33,8 +34,8 @@ const findIndex = (
   return {currentIndex, matchedRoute};
 };
 
-export const GetFeatureCard = (getRouterPath: string) => {
-  const path = getRouterPath.slice(0, -1);
+export const GetFeatureCard = () => {
+  const path = useRouter().pathname;
   const currentRoute: string[] = path.match(/\/[A-z\d-]*/g) || [];
   const {currentIndex, matchedRoute} = findIndex(path, currentRoute, routes, 0);
   let feature =
