@@ -22,6 +22,9 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 
+/**
+ * @deprecated This component has been deprecated and will be removed in a future release, use TextField instead
+ */
 const ThemelessTextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
   (
     {
