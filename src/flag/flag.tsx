@@ -15,37 +15,52 @@ import {withOwnTheme} from '../utils/with-own-theme';
 const BaseFlag = React.forwardRef<
   HTMLDivElement,
   BaseFlagProps<BaseFlagOverrides> & {as?: keyof JSX.IntrinsicElements}
->(({children, overrides, loading, disabled, as, ...props}, ref) => {
-  const theme = useTheme();
+>(
+  (
+    {
+      children,
+      /* istanbul ignore next */ overrides = {},
+      loading,
+      disabled,
+      as,
+      ...props
+    },
+    ref,
+  ) => {
+    const theme = useTheme();
 
-  return (
-    <StyledBaseFlag
-      {...props}
-      $loading={loading}
-      $disabled={disabled} // Used to avoid passing disabled HTML attribute to an anchor link
-      disabled={as !== 'a' && disabled}
-      overrides={overrides}
-      ref={ref}
-      as={as}
-    >
-      <Stack
-        spaceInline={getToken({theme, overrides}, '', '', 'spaceInline')}
-        flow={Flow.HorizontalCenter}
-        stackDistribution={StackDistribution.Center}
+    return (
+      <StyledBaseFlag
+        {...props}
+        $loading={loading}
+        $disabled={disabled} // Used to avoid passing disabled HTML attribute to an anchor link
+        disabled={as !== 'a' && disabled}
+        overrides={overrides}
+        ref={ref}
+        as={as}
       >
-        {React.Children.map(children, child =>
-          ['string', 'number'].includes(typeof child) ? (
-            <TextBlock as="span" typographyPreset={overrides?.typographyPreset}>
-              {child}
-            </TextBlock>
-          ) : (
-            child
-          ),
-        )}
-      </Stack>
-    </StyledBaseFlag>
-  );
-});
+        <Stack
+          spaceInline={getToken({theme, overrides}, '', '', 'spaceInline')}
+          flow={Flow.HorizontalCenter}
+          stackDistribution={StackDistribution.Center}
+        >
+          {React.Children.map(children, child =>
+            ['string', 'number'].includes(typeof child) ? (
+              <TextBlock
+                as="span"
+                typographyPreset={overrides.typographyPreset}
+              >
+                {child}
+              </TextBlock>
+            ) : (
+              child
+            ),
+          )}
+        </Stack>
+      </StyledBaseFlag>
+    );
+  },
+);
 
 const ThemelessFlag = React.forwardRef<
   HTMLDivElement,

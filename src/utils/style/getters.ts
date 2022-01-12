@@ -25,19 +25,20 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
     const {fontSize, lineHeight, fontFamily, fontWeight} = typographyPreset;
 
     //* * Following code to be removed once only Font Metrics will be supported by newsKit
-    const [fontStackPeek] = fontFamily.split(',');
+    const [fontFamilyName] = fontFamily.split(',');
     const fontFamilyObject: FontConfig | undefined = Object.values(
       props.theme.fonts,
     ).find(
       (fontEl): fontEl is FontConfig =>
         isFontConfigObject(fontEl) &&
-        (fontEl as FontConfig).fontFamily.split(',')[0] === fontStackPeek,
+        (fontEl as FontConfig).fontFamily.split(',')[0] === fontFamilyName,
     );
 
     if (!fontFamilyObject) return typographyPreset;
 
     let cropProps;
     if (Object.getOwnPropertyDescriptor(fontFamilyObject, 'cropConfig')) {
+      /* istanbul ignore next */
       cropProps = legacyGetFontProps(
         fontSize,
         lineHeight,
@@ -64,7 +65,6 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
 
       cropProps = textCrop(cropData);
     }
-    //  **
 
     return {
       ...typographyPreset,
