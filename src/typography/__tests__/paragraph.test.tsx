@@ -21,7 +21,7 @@ describe('Paragraph', () => {
     const wrapper = renderToFragmentWithTheme(Paragraph, {
       children: 'paragraph component',
       overrides: {
-        stylePreset: 'linkInline',
+        stylePreset: 'inkInverse',
       },
     });
     expect(wrapper).toMatchSnapshot();

@@ -129,3 +129,7 @@ export const getResponsiveSpacingStackVertical = createResponsiveSpace(
   'marginRight',
   'spaceStack',
 );
+export const getResponsiveSpacingInset = createResponsiveSpace(
+  'padding',
+  'spaceInset',
+);

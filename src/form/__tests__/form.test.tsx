@@ -430,45 +430,50 @@ describe('Form', () => {
 });
 
 describe('FormInput', () => {
-  let props: any;
-  const formBodyFormInput = (
+  const formInputBody = (
     <>
-      <FormInput
-        id="email"
-        name="email"
-        rules={{
-          required: 'Required field',
-          pattern: {
-            // eslint-disable-next-line no-useless-escape
-            value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-            message: 'Please provide a valid email',
-          },
-        }}
-      >
-        <FormInputLabel>E-mail</FormInputLabel>
-        <FormInputTextField
-          data-testid="text-field-email"
-          endEnhancer={
-            <>
-              <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
-            </>
-          }
-        />
-        <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
-        <FormInputLabel>Pizza topping</FormInputLabel>
-        <FormInputSelect data-testid="select-pizza-topping">
-          <SelectOption value="ham">Ham</SelectOption>
-          <SelectOption value="pineapple">Pineapple</SelectOption>
-        </FormInputSelect>
-        <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+      <FormInputLabel>E-mail</FormInputLabel>
+      <FormInputTextField
+        data-testid="text-field-email"
+        endEnhancer={
+          <>
+            <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
+          </>
+        }
+      />
+      <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
 
-        <FormInputCheckbox label="Checkbox" value="checked" />
-        <FormInputAssistiveText validationIcon>
-          Checkbox assistive text
-        </FormInputAssistiveText>
-      </FormInput>
+      <FormInputLabel>Pizza topping</FormInputLabel>
+      <FormInputSelect data-testid="select-pizza-topping">
+        <SelectOption value="ham">Ham</SelectOption>
+        <SelectOption value="pineapple">Pineapple</SelectOption>
+      </FormInputSelect>
+      <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+
+      <FormInputCheckbox label="Checkbox" value="checked" />
+      <FormInputAssistiveText validationIcon>
+        Checkbox assistive text
+      </FormInputAssistiveText>
     </>
   );
+
+  const formBodyFormInput = (
+    <FormInput
+      id="email"
+      name="email"
+      rules={{
+        required: 'Required field',
+        pattern: {
+          // eslint-disable-next-line no-useless-escape
+          value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+          message: 'Please provide a valid email',
+        },
+      }}
+    >
+      {formInputBody}
+    </FormInput>
+  );
+
   const formBodyFormInputInvalid = (
     <>
       <FormInput
@@ -509,31 +514,42 @@ describe('FormInput', () => {
         <FormInputTextField data-testid="text-field-username" />
         <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
       </FormInput>
+
       <Button data-testid="submit-button" type="submit">
         Submit
       </Button>
     </>
   );
-  const formProps = (prop: FormInputProps) => (
-    <FormInput {...prop}>
-      <FormInputLabel>E-mail</FormInputLabel>
-      <FormInputTextField data-testid="text-field-email" />
-      <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
-    </FormInput>
-  );
+
+  let props: any;
+  beforeAll(() => {
+    props = {
+      onSubmit: () => {},
+      children: (formBodyFormInputInvalid as unknown) as Array<React.ReactElement>,
+    };
+  });
+
   test('renders FormInput Correctly', () => {
     const prop: FormInputProps = {
-      name: 'TextField',
+      id: 'email',
+      name: 'email',
+      rules: {
+        required: 'Required field',
+        pattern: {
+          // eslint-disable-next-line no-useless-escape
+          value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+          message: 'Please provide a valid email',
+        },
+      },
       size: 'medium' as TextFieldSize,
-      id: 'nk',
 
-      children: (formBodyFormInput as unknown) as Array<React.ReactElement>,
+      children: (formInputBody as unknown) as Array<React.ReactElement>,
     };
     const fragment = renderToFragmentWithTheme(FormInput, prop);
     expect(fragment).toMatchSnapshot();
   });
   test('renders with nested inputs', () => {
-    const fragment = renderToFragmentWithTheme(FormInput, {...props});
+    const fragment = renderToFragmentWithTheme(() => formBodyFormInputInvalid);
     expect(fragment).toMatchSnapshot();
   });
   test('fireEvent with onBlur valid state', () => {
@@ -548,9 +564,11 @@ describe('FormInput', () => {
   });
   test('does not call onBlur ', () => {
     const onBlur = jest.fn();
-    const prop: FormInputProps = {};
+    const prop: FormInputProps = {
+      children: formInputBody,
+    };
 
-    const {getByTestId} = renderWithTheme(formProps, prop);
+    const {getByTestId} = renderWithTheme(FormInput, prop);
     fireEvent.blur(getByTestId('text-field-email'));
 
     expect(onBlur).toHaveBeenCalledTimes(0);
@@ -568,20 +586,16 @@ describe('FormInput', () => {
   });
   test('does not call onChange ', () => {
     const onChange = jest.fn();
-    const prop: FormInputProps = {};
+    const prop: FormInputProps = {
+      children: formInputBody,
+    };
 
-    const {getByTestId} = renderWithTheme(formProps, prop);
+    const {getByTestId} = renderWithTheme(FormInput, prop);
     fireEvent.change(getByTestId('text-field-email'), {
       target: {value: 'teews.co.uk'},
     });
 
     expect(onChange).toHaveBeenCalledTimes(0);
-  });
-  beforeAll(() => {
-    props = {
-      onSubmit: () => {},
-      children: (formBodyFormInputInvalid as unknown) as Array<React.ReactElement>,
-    };
   });
   test('renders with valid icon', async () => {
     const {getByTestId, findByTestId} = renderWithImplementation(Form, {
@@ -619,7 +633,7 @@ describe('FormInput', () => {
     fireEvent.submit(getByRole('button'));
     expect(asFragment()).toMatchSnapshot();
   });
-  test('renders with invalid icon and trailng icon', async () => {
+  test('renders with invalid icon and trailing icon', async () => {
     const {getByTestId, findByTestId} = renderWithImplementation(Form, {
       ...props,
       validationMode: 'onBlur',

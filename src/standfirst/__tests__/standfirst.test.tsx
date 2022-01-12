@@ -22,7 +22,7 @@ describe('Standfirst', () => {
     const fragment = renderToFragmentWithTheme(Standfirst, {
       overrides: {
         styledText: {
-          stylePreset: 'linkInline',
+          stylePreset: 'inkInverse',
         },
       },
     });

@@ -5,9 +5,11 @@ import {
   renderWithTheme,
 } from '../../test/test-utils';
 import {SliderProps, LabelPosition} from '../types';
-import {Theme, createTheme} from '../../theme';
+import {Theme, createTheme, compileTheme} from '../../theme';
 import {StyledThumbValue} from '../styled';
 import {IconOutlinedImage} from '../../icons';
+import stylePresets from '../style-presets';
+import componentDefaults from '../defaults';
 
 let mockRange: jest.Mock;
 jest.mock('react-range', () => {
@@ -107,6 +109,15 @@ describe('slider', () => {
       let onFinalChange: jest.Mock;
       let rangeProps: any;
 
+      const sliderTheme = compileTheme(
+        createTheme({
+          overrides: {
+            stylePresets,
+            componentDefaults,
+          },
+        }),
+      );
+
       const renderSlider = (
         props: Partial<SliderProps> = {},
         theme?: Theme,
@@ -147,14 +158,18 @@ describe('slider', () => {
 
       describe('renderThumb', () => {
         it('should render undragged slider thumb', () => {
-          const fragment = renderToFragmentWithTheme(rangeProps.renderThumb, {
-            props: {
-              one: 'prop',
-              two: 'props',
+          const fragment = renderToFragmentWithTheme(
+            rangeProps.renderThumb,
+            {
+              props: {
+                one: 'prop',
+                two: 'props',
+              },
+              index: 0,
+              isDragged: false,
             },
-            index: 0,
-            isDragged: false,
-          });
+            sliderTheme,
+          );
           expect(fragment).toMatchSnapshot();
         });
 
@@ -162,14 +177,18 @@ describe('slider', () => {
           renderSlider({
             ariaLabel: 'my custom aria label',
           });
-          const fragment = renderToFragmentWithTheme(rangeProps.renderThumb, {
-            props: {
-              one: 'prop',
-              two: 'props',
+          const fragment = renderToFragmentWithTheme(
+            rangeProps.renderThumb,
+            {
+              props: {
+                one: 'prop',
+                two: 'props',
+              },
+              index: 0,
+              isDragged: false,
             },
-            index: 0,
-            isDragged: false,
-          });
+            sliderTheme,
+          );
           expect(fragment).toMatchSnapshot();
         });
 
@@ -179,14 +198,18 @@ describe('slider', () => {
             thumbLabel: true,
           });
 
-          const fragment = renderToFragmentWithTheme(rangeProps.renderThumb, {
-            props: {
-              one: 'prop',
-              two: 'props',
+          const fragment = renderToFragmentWithTheme(
+            rangeProps.renderThumb,
+            {
+              props: {
+                one: 'prop',
+                two: 'props',
+              },
+              index: 0,
+              isDragged: false,
             },
-            index: 0,
-            isDragged: false,
-          });
+            sliderTheme,
+          );
           expect(fragment).toMatchSnapshot();
         });
 
@@ -195,14 +218,18 @@ describe('slider', () => {
             thumbIcon: IconOutlinedImage,
           });
 
-          const fragment = renderToFragmentWithTheme(rangeProps.renderThumb, {
-            props: {
-              one: 'prop',
-              two: 'props',
+          const fragment = renderToFragmentWithTheme(
+            rangeProps.renderThumb,
+            {
+              props: {
+                one: 'prop',
+                two: 'props',
+              },
+              index: 0,
+              isDragged: false,
             },
-            index: 0,
-            isDragged: false,
-          });
+            sliderTheme,
+          );
           expect(fragment).toMatchSnapshot();
         });
 
@@ -210,7 +237,9 @@ describe('slider', () => {
           const customTheme = createTheme({
             name: 'myTestTheme',
             overrides: {
+              componentDefaults,
               stylePresets: {
+                ...stylePresets,
                 presetWithBorderRadius: {
                   base: {
                     backgroundColor: 'red',
@@ -237,14 +266,18 @@ describe('slider', () => {
         });
 
         it('should render dragged slider thumb', () => {
-          const fragment = renderToFragmentWithTheme(rangeProps.renderThumb, {
-            props: {
-              one: 'prop',
-              two: 'props',
+          const fragment = renderToFragmentWithTheme(
+            rangeProps.renderThumb,
+            {
+              props: {
+                one: 'prop',
+                two: 'props',
+              },
+              index: 0,
+              isDragged: true,
             },
-            index: 0,
-            isDragged: true,
-          });
+            sliderTheme,
+          );
           expect(fragment).toMatchSnapshot();
         });
 
@@ -253,14 +286,18 @@ describe('slider', () => {
             values: [10, 20, 30],
           });
 
-          const fragment = renderToFragmentWithTheme(rangeProps.renderThumb, {
-            props: {
-              one: 'prop',
-              two: 'props',
+          const fragment = renderToFragmentWithTheme(
+            rangeProps.renderThumb,
+            {
+              props: {
+                one: 'prop',
+                two: 'props',
+              },
+              index: 2,
+              isDragged: false,
             },
-            index: 2,
-            isDragged: false,
-          });
+            sliderTheme,
+          );
           expect(fragment).toMatchSnapshot();
         });
 
@@ -269,14 +306,18 @@ describe('slider', () => {
             thumbLabel: true,
           });
 
-          const fragment = renderToFragmentWithTheme(rangeProps.renderThumb, {
-            props: {
-              one: 'prop',
-              two: 'props',
+          const fragment = renderToFragmentWithTheme(
+            rangeProps.renderThumb,
+            {
+              props: {
+                one: 'prop',
+                two: 'props',
+              },
+              index: 0,
+              isDragged: false,
             },
-            index: 0,
-            isDragged: false,
-          });
+            sliderTheme,
+          );
           expect(fragment).toMatchSnapshot();
         });
 
@@ -287,14 +328,18 @@ describe('slider', () => {
             values: [10, 20, 30],
           });
 
-          const fragment = renderToFragmentWithTheme(rangeProps.renderThumb, {
-            props: {
-              one: 'prop',
-              two: 'props',
+          const fragment = renderToFragmentWithTheme(
+            rangeProps.renderThumb,
+            {
+              props: {
+                one: 'prop',
+                two: 'props',
+              },
+              index: 1,
+              isDragged: true,
             },
-            index: 1,
-            isDragged: true,
-          });
+            sliderTheme,
+          );
           expect(fragment).toMatchSnapshot();
           expect(thumbLabel).toHaveBeenCalledWith(
             {
@@ -312,14 +357,18 @@ describe('slider', () => {
 
       describe('renderTrack', () => {
         it('should render default slider track', () => {
-          const fragment = renderToFragmentWithTheme(rangeProps.renderTrack, {
-            props: {
-              one: 'prop',
-              two: 'props',
+          const fragment = renderToFragmentWithTheme(
+            rangeProps.renderTrack,
+            {
+              props: {
+                one: 'prop',
+                two: 'props',
+              },
+              children: <div>children</div>,
+              isDragged: false,
             },
-            children: <div>children</div>,
-            isDragged: false,
-          });
+            sliderTheme,
+          );
           expect(fragment).toMatchSnapshot();
         });
 
@@ -328,14 +377,18 @@ describe('slider', () => {
             disabled: true,
           });
 
-          const fragment = renderToFragmentWithTheme(rangeProps.renderTrack, {
-            props: {
-              one: 'prop',
-              two: 'props',
+          const fragment = renderToFragmentWithTheme(
+            rangeProps.renderTrack,
+            {
+              props: {
+                one: 'prop',
+                two: 'props',
+              },
+              children: <div>children</div>,
+              isDragged: false,
             },
-            children: <div>children</div>,
-            isDragged: false,
-          });
+            sliderTheme,
+          );
           expect(fragment).toMatchSnapshot();
         });
 
@@ -344,26 +397,34 @@ describe('slider', () => {
             disabled: true,
           });
 
-          const fragment = renderToFragmentWithTheme(rangeProps.renderTrack, {
-            props: {
-              one: 'prop',
-              two: 'props',
+          const fragment = renderToFragmentWithTheme(
+            rangeProps.renderTrack,
+            {
+              props: {
+                one: 'prop',
+                two: 'props',
+              },
+              children: <div>children</div>,
+              isDragged: false,
             },
-            children: <div>children</div>,
-            isDragged: false,
-          });
+            sliderTheme,
+          );
           expect(fragment).toMatchSnapshot();
         });
 
         it('should render grabbed slider track', () => {
-          const fragment = renderToFragmentWithTheme(rangeProps.renderTrack, {
-            props: {
-              one: 'prop',
-              two: 'props',
+          const fragment = renderToFragmentWithTheme(
+            rangeProps.renderTrack,
+            {
+              props: {
+                one: 'prop',
+                two: 'props',
+              },
+              children: <div>children</div>,
+              isDragged: true,
             },
-            children: <div>children</div>,
-            isDragged: true,
-          });
+            sliderTheme,
+          );
           expect(fragment).toMatchSnapshot();
         });
 
@@ -372,14 +433,18 @@ describe('slider', () => {
             vertical: true,
           });
 
-          const fragment = renderToFragmentWithTheme(rangeProps.renderTrack, {
-            props: {
-              one: 'prop',
-              two: 'props',
+          const fragment = renderToFragmentWithTheme(
+            rangeProps.renderTrack,
+            {
+              props: {
+                one: 'prop',
+                two: 'props',
+              },
+              children: <div>children</div>,
+              isDragged: false,
             },
-            children: <div>children</div>,
-            isDragged: false,
-          });
+            sliderTheme,
+          );
           expect(fragment).toMatchSnapshot();
         });
 
@@ -388,14 +453,18 @@ describe('slider', () => {
             values: [10, 20],
           });
 
-          const fragment = renderToFragmentWithTheme(rangeProps.renderTrack, {
-            props: {
-              one: 'prop',
-              two: 'props',
+          const fragment = renderToFragmentWithTheme(
+            rangeProps.renderTrack,
+            {
+              props: {
+                one: 'prop',
+                two: 'props',
+              },
+              children: <div>children</div>,
+              isDragged: false,
             },
-            children: <div>children</div>,
-            isDragged: false,
-          });
+            sliderTheme,
+          );
           expect(fragment).toMatchSnapshot();
         });
       });
