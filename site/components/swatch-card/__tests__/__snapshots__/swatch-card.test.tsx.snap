@@ -69,7 +69,7 @@ exports[`SwatchCard renders with inkBase 1`] = `
   font-size: 18px;
   line-height: 1.125;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   color: #FFFFFF;
   width: 100%;
 }
@@ -119,7 +119,7 @@ exports[`SwatchCard renders with inkBase 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }

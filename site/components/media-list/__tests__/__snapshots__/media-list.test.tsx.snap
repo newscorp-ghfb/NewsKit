@@ -232,7 +232,7 @@ exports[`Media List renders with custom layout 1`] = `
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -266,7 +266,7 @@ exports[`Media List renders with custom layout 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -689,7 +689,7 @@ exports[`Media List renders with default layout 1`] = `
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -723,7 +723,7 @@ exports[`Media List renders with default layout 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -1122,7 +1122,7 @@ exports[`Media List renders with feature cardscards 1`] = `
     font-size: 24px;
     line-height: 27px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1145,7 +1145,7 @@ exports[`Media List renders with feature cardscards 1`] = `
     font-size: 32px;
     line-height: 36px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1200,7 +1200,7 @@ exports[`Media List renders with feature cardscards 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1223,7 +1223,7 @@ exports[`Media List renders with feature cardscards 1`] = `
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1318,7 +1318,7 @@ exports[`Media List renders with feature cardscards 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2037,7 +2037,7 @@ exports[`Media List renders with usage cards 1`] = `
   font-size: 22px;
   line-height: 24.75px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -2071,7 +2071,7 @@ exports[`Media List renders with usage cards 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 

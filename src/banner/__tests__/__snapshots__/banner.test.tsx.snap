@@ -120,7 +120,7 @@ exports[`Banner renders with content as react element 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -291,7 +291,7 @@ exports[`Banner renders with content as react element 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -470,7 +470,7 @@ exports[`Banner renders with content as string and link 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -728,7 +728,7 @@ exports[`Banner renders with content as string and link 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -994,7 +994,7 @@ exports[`Banner renders with default props 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -1157,7 +1157,7 @@ exports[`Banner renders with default props 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -1353,7 +1353,7 @@ exports[`Banner renders with icon 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -1561,7 +1561,7 @@ exports[`Banner renders with icon 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -1719,7 +1719,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -1870,7 +1870,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2053,7 +2053,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -2204,7 +2204,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2384,7 +2384,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -2539,7 +2539,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2699,7 +2699,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -2854,7 +2854,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -3045,7 +3045,7 @@ exports[`Banner renders with title 1`] = `
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
   margin-bottom: 12px;
@@ -3073,7 +3073,7 @@ exports[`Banner renders with title 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -3242,7 +3242,7 @@ exports[`Banner renders with title 1`] = `
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
   margin-bottom: 12px;
@@ -3270,7 +3270,7 @@ exports[`Banner renders with title 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -3413,7 +3413,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -3568,7 +3568,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -3843,7 +3843,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -4003,7 +4003,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -4245,7 +4245,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -4555,7 +4555,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -4715,7 +4715,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }

@@ -150,7 +150,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -173,7 +173,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -196,7 +196,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -219,7 +219,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -336,7 +336,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -656,7 +656,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -679,7 +679,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -702,7 +702,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -725,7 +725,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -838,7 +838,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1115,7 +1115,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1138,7 +1138,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1161,7 +1161,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1184,7 +1184,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1469,7 +1469,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1492,7 +1492,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1515,7 +1515,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1538,7 +1538,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1743,7 +1743,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1766,7 +1766,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1789,7 +1789,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1812,7 +1812,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1929,7 +1929,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2161,7 +2161,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2184,7 +2184,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2207,7 +2207,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2230,7 +2230,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2431,7 +2431,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2454,7 +2454,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2477,7 +2477,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2500,7 +2500,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2743,7 +2743,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2766,7 +2766,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2789,7 +2789,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2812,7 +2812,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2975,7 +2975,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2998,7 +2998,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3021,7 +3021,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3044,7 +3044,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3276,7 +3276,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   font-size: 24px;
   line-height: 27px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -3316,7 +3316,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -3577,7 +3577,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   font-size: 24px;
   line-height: 27px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -3617,7 +3617,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 

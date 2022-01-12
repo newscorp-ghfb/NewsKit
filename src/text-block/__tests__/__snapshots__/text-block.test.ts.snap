@@ -50,7 +50,7 @@ exports[`TextBlock renders with custom typography preset 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -92,7 +92,7 @@ exports[`TextBlock renders with no text cropping 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 <p

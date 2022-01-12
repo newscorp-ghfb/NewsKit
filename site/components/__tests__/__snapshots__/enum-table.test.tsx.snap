@@ -13,7 +13,7 @@ exports[`EnumTable renders enum as expected 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   background-color: #FFFFFF;
   box-shadow: 0 3px 4px 2px #FFFFFF;
 }
