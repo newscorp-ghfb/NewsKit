@@ -22,7 +22,7 @@ export const FoundationPageTemplate: React.FC<FoundationPageTemplateProps> = ({
   layoutProps,
   ...rest
 }) => {
-  const featureCard = GetFeatureCard();
+  const featureCard = GetFeatureCard(layoutProps.path);
   return (
     <Layout {...layoutProps} newPage>
       {({themeMode}) => (
