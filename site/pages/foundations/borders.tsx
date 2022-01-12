@@ -6,14 +6,16 @@ import {
   H3,
   Block,
 } from 'newskit';
-
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {CommonSection} from '../../templates/template-sections/common-section';
 import {LayoutProps} from '../../components/layout';
-import {ComponentPageCellCompact} from '../../components/layout-cells';
 import {Table} from '../../components/table';
 import {getTokenType} from '../../utils/get-token-type';
 import {Code} from '../../components/code';
+import {
+  ContentSection,
+  ContentPrimary,
+} from '../../components/content-structure';
+import {ComponentPageCell} from '../../components/layout-cells';
 
 const compiledNewskitLightTheme = compileTheme(newskitLightTheme);
 const borderRows = (type: string) =>
@@ -59,15 +61,10 @@ const ExampleSection: React.FC<ExampleSectionProps> = ({section}) => (
   </>
 );
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const CellWrapper = ({children}: {children: any}) => (
-  <ComponentPageCellCompact>{children}</ComponentPageCellCompact>
-);
-
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Borders',
+      title: 'Borders | Newskit design system',
       description:
         'Borders direct attention, identify components, communicate state, and express a brand.',
     }}
@@ -87,62 +84,67 @@ export default (layoutProps: LayoutProps) => (
       href: '/foundations/iconography',
     }}
   >
-    <CommonSection
-      title="Border Radius"
-      introduction="Applying a Border Radius to an element rounds its corners. NewsKit uses a simple set of design token to ensure consistency throughout the UI."
-      id="border-radius"
-      toc="Border Radius"
-    >
-      <CellWrapper>
-        <Table
-          columns={['Border radius', 'Token', 'Token value']}
-          rows={borderRows('borderRadius')}
-        />
-        <Block spaceStack="space060" />
-        <ExampleSection section="borderRadius" />
-      </CellWrapper>
-    </CommonSection>
-    <CommonSection
-      title="Border Width"
-      introduction="Applying a Border Width to an element defines the width of the element’s border. NewsKit uses a simple set of design token to ensure consistency throughout the UI."
-      id="border-width"
-      toc="Border Width"
-    >
-      <CellWrapper>
-        <Table
-          columns={['Border width', 'Token', 'Token value']}
-          rows={borderRows('borderWidth')}
-        />
-        <Block spaceStack="space080" />
-        <ExampleSection section="borderWidth" />
-        <Block spaceStack="space080" />
-        <InlineMessage title="Note">
-          In addition to the Border Radius and Border Width foundations, Border
-          Colour and Border Style can be applied to a UI element using the
-          borderColor and borderStyle attribute on a Style Preset.
-        </InlineMessage>
-      </CellWrapper>
-    </CommonSection>
-    <CommonSection
-      title="Border Colour"
-      introduction="Applying a Border Colour to an element defines the colour of the element's border. Border colour utilises Interface and Interactive colour tokens."
-      id="border-colour"
-      toc="Border Colour"
-    >
-      <CellWrapper>
-        <ExampleSection section="borderColor" />
-      </CellWrapper>
-    </CommonSection>
-
-    <CommonSection
-      title="Border Style"
-      introduction="Applying a Border Style to an element defines the style of the element’s border. Border Style utilises the standard CSS Border Style values."
-      id="border-style"
-      toc="Border Style"
-    >
-      <CellWrapper>
-        <ExampleSection section="borderStyle" />
-      </CellWrapper>
-    </CommonSection>
+    <ComponentPageCell>
+      <ContentSection sectionName="border-radius">
+        <ContentPrimary
+          id="border-radius"
+          toc="Border Radius"
+          headline="Border Radius"
+          description="Applying a Border Radius to an element rounds its corners. NewsKit uses a simple set of design token to ensure consistency throughout the UI."
+          showSeparator
+        >
+          <Table
+            columns={['Border radius', 'Token', 'Token value']}
+            rows={borderRows('borderRadius')}
+          />
+          <Block spaceStack="space060" />
+          <ExampleSection section="borderRadius" />
+        </ContentPrimary>
+      </ContentSection>
+      <ContentSection sectionName="border-width">
+        <ContentPrimary
+          id="border-width"
+          toc="Border Width"
+          headline="Border Width"
+          description="Applying a Border Width to an element defines the width of the element’s border. NewsKit uses a simple set of design token to ensure consistency throughout the UI."
+          showSeparator
+        >
+          <Table
+            columns={['Border width', 'Token', 'Token value']}
+            rows={borderRows('borderWidth')}
+          />
+          <Block spaceStack="space080" />
+          <ExampleSection section="borderWidth" />
+          <Block spaceStack="space080" />
+          <InlineMessage title="Note">
+            In addition to the Border Radius and Border Width foundations,
+            Border Colour and Border Style can be applied to a UI element using
+            the borderColor and borderStyle attribute on a Style Preset.
+          </InlineMessage>
+        </ContentPrimary>
+      </ContentSection>
+      <ContentSection sectionName="border-colour">
+        <ContentPrimary
+          id="border-colour"
+          toc="Border Colour"
+          headline="Border Colour"
+          description="Applying a Border Colour to an element defines the colour of the element's border. Border colour utilises Interface and Interactive colour tokens."
+          showSeparator
+        >
+          <ExampleSection section="borderColor" />
+        </ContentPrimary>
+      </ContentSection>
+      <ContentSection sectionName="border-style">
+        <ContentPrimary
+          id="border-style"
+          toc="Border Style"
+          headline="Border Style"
+          description="Applying a Border Style to an element defines the style of the element’s border. Border Style utilises the standard CSS Border Style values."
+          showSeparator
+        >
+          <ExampleSection section="borderStyle" />
+        </ContentPrimary>
+      </ContentSection>
+    </ComponentPageCell>
   </FoundationPageTemplate>
 );

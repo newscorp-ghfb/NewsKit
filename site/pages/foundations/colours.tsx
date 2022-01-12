@@ -7,11 +7,7 @@ import {
   TextBlock,
 } from 'newskit';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {CommonSection} from '../../templates/template-sections';
-import {
-  ComponentPageCell,
-  ComponentPageCellCompact,
-} from '../../components/layout-cells';
+import {ComponentPageCell} from '../../components/layout-cells';
 import {LayoutProps} from '../../components/layout';
 import {getTokenType} from '../../utils/get-token-type';
 import {Link} from '../../components/link';
@@ -29,6 +25,10 @@ import {
   INTERFACE_DESCRIPTION,
   INTERACTIVE_DESCRIPTION,
 } from '../../utils/colors-token-description';
+import {
+  ContentSection,
+  ContentPrimary,
+} from '../../components/content-structure';
 
 const themeColorRows = (
   type: string,
@@ -321,7 +321,7 @@ const coloursTable = [
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Colours',
+      title: 'Colours | Newskit design system',
       description:
         'Colour is key to expressing brand and identity but it also plays an important role in conveying meaning to a user. ',
     }}
@@ -340,123 +340,135 @@ export default (layoutProps: LayoutProps) => (
       href: '/foundations/iconography',
     }}
   >
-    <CommonSection
-      title="Overview"
-      id="overview"
-      toc="Overview"
-      introduction={
-        <>
-          The NewsKit design system enables brands to utilise bespoke colour
-          palettes appropriately and systematically while encouraging
-          accessibility.
-          <br />
-          <br />
-          Colours are applied to NewsKit components through well-defined rules
-          at both the theme and component level. These rules help to establish a
-          visual tone, indicate interaction and communicate meaning.
-          Importantly, it also allows our brands to maintain their own unique
-          identities.
-        </>
-      }
-    />
-
-    <CommonSection
-      title="Principles"
-      id="principles"
-      toc="Principles"
-      introduction=""
-    >
-      <ComponentPageCell>
-        <MediaList layout="3-span" cardType="feature" cards={PRINCIPLE_CARDS} />
-      </ComponentPageCell>
-    </CommonSection>
-
-    <CommonSection
-      title="Palette colours"
-      id="palettecolours"
-      toc="Palette colours"
-      introduction="Palette colours represent all of a brand’s colours. They are linked to contextual colour tokens where specific meaning (context) is applied. As such, careful consideration should be given if choosing to apply a palette colour directly applied to an interface rather than a contextual colour."
-    >
-      <ComponentPageCellCompact>
-        <ContentText title="Understanding the swatches" titleAs="h3">
-          <Block spaceStack="space030" />
-          Utilise the swatches below to determine the accessibility of the
-          palette colour in contrast to the background colour of this page
-        </ContentText>
-
-        {CUSTOM_ICONS.map(({icon, label}) => (
-          <UnorderedList
-            listItemMarker={icon}
-            overrides={{
-              content: {
-                stylePreset: 'inkBase',
-                typographyPreset: 'editorialParagraph020',
-              },
-              marker: {
-                stylePreset: 'swatchBadge',
-                spaceInline: 'space040',
-                size: 'iconSize030',
-              },
-            }}
+    <ComponentPageCell>
+      <ContentSection sectionName="overview">
+        <ContentPrimary
+          id="overview"
+          toc="Overview"
+          headline="Overview"
+          description={
+            <>
+              The NewsKit design system enables brands to utilise bespoke colour
+              palettes appropriately and systematically while encouraging
+              accessibility.
+              <br />
+              <br />
+              Colours are applied to NewsKit components through well-defined
+              rules at both the theme and component level. These rules help to
+              establish a visual tone, indicate interaction and communicate
+              meaning. Importantly, it also allows our brands to maintain their
+              own unique identities.
+            </>
+          }
+          showSeparator
+        >
+          <Block stylePreset="imageRoundedMedium">
+            <Illustration path="foundations/iconography/overview" />
+          </Block>
+        </ContentPrimary>
+      </ContentSection>
+      <ContentSection sectionName="principles">
+        <ContentPrimary
+          id="principles"
+          toc="Principles"
+          headline="Principles"
+          description=""
+          showSeparator
+        >
+          <MediaList
+            layout="3-span"
+            cardType="feature"
+            cards={PRINCIPLE_CARDS}
+          />
+        </ContentPrimary>
+      </ContentSection>
+      <ContentSection sectionName="palettecolours">
+        <ContentPrimary
+          id="palettecolours"
+          toc="Palette colours"
+          headline="Palette colours"
+          description="Palette colours represent all of a brand’s colours. They are linked to contextual colour tokens where specific meaning (context) is applied. As such, careful consideration should be given if choosing to apply a palette colour directly applied to an interface rather than a contextual colour."
+          showSeparator
+        >
+          <ContentText title="Understanding the swatches" titleAs="h3">
+            <Block spaceStack="space030" />
+            Utilise the swatches below to determine the accessibility of the
+            palette colour in contrast to the background colour of this page
+          </ContentText>
+          {CUSTOM_ICONS.map(({icon, label}) => (
+            <UnorderedList
+              listItemMarker={icon}
+              overrides={{
+                content: {
+                  stylePreset: 'inkBase',
+                  typographyPreset: 'editorialParagraph020',
+                },
+                marker: {
+                  stylePreset: 'swatchBadge',
+                  spaceInline: 'space040',
+                  size: 'iconSize030',
+                },
+              }}
+            >
+              {label}
+            </UnorderedList>
+          ))}
+          <Block spaceStack="space070" />
+          <InlineMessage role="region" title="" aria-label="Palettecolours">
+            Normal and large size text is defined by the WCAG AA standards as
+            the the following: <br />
+            <br />
+            <b>Normal sized text</b>
+            <br />
+            The font size is at least 16px with a regular font weight or
+            heavier.
+            <br />
+            <br />
+            <b>Large sized text</b>
+            <br />
+            The font size is at least 18.66px with a bold font weight or 24px
+            with regular font weight.
+          </InlineMessage>
+          <Block spaceStack="space080" />
+          <ColorPalettes />
+        </ContentPrimary>
+      </ContentSection>
+      <ContentSection sectionName="contextualcolours">
+        <ContentPrimary
+          id="contextualcolours"
+          toc="Contextual colours"
+          headline="Contextual colours"
+          description="Contextual colours are selected from the palette colours and have specific functions or purposes applied. There are three categories of contextual colours: Ink, Interface and Interactive colours."
+          showSeparator
+        >
+          <Block stylePreset="imageRoundedMedium" spaceStack="space050">
+            <Illustration path="foundations/colours/overview" />
+          </Block>
+          <Link
+            overrides={{typographyPreset: 'editorialParagraph030'}}
+            href="/components/icons"
           >
-            {label}
-          </UnorderedList>
-        ))}
-
-        <Block spaceStack="space070" />
-        <InlineMessage role="region" title="" aria-label="Palettecolours">
-          Normal and large size text is defined by the WCAG AA standards as the
-          the following: <br />
-          <br />
-          <b>Normal sized text</b>
-          <br />
-          The font size is at least 16px with a regular font weight or heavier.
-          <br />
-          <br />
-          <b>Large sized text</b>
-          <br />
-          The font size is at least 18.66px with a bold font weight or 24px with
-          regular font weight.
-        </InlineMessage>
-        <Block spaceStack="space080" />
-        <ColorPalettes />
-      </ComponentPageCellCompact>
-    </CommonSection>
-
-    <CommonSection
-      title="Contextual colours"
-      id="contextualcolours"
-      toc="Contextual colours"
-      hideSeparator={false}
-      introduction="Contextual colours are selected from the palette colours and have specific functions or purposes applied. There are three categories of contextual colours: Ink, Interface and Interactive colours."
-    >
-      <ComponentPageCellCompact>
-        <Block stylePreset="imageRoundedMedium" spaceStack="space050">
-          <Illustration path="foundations/colours/overview" />
-        </Block>
-        <Link
-          overrides={{typographyPreset: 'editorialParagraph030'}}
-          href="/components/icons"
-        >
-          Learn more about the Icon component
-        </Link>
-        <Block spaceStack="space100" />
-        <TabsWithTable components={coloursTable} />
-        <ContentText>
-          Colour can be applied to a UI element using the color, iconColor
-          borderColor, placeholderColor and background attribute on a{' '}
-          <Link href="/foundations/presets/space-presets/">Style Preset.</Link>
-        </ContentText>
-        <Block spaceStack="space080" />
-        <TextBlock
-          stylePreset="inkContrast"
-          typographyPreset="editorialHeadline020"
-        >
-          Example code
-        </TextBlock>
-        <Block spaceStack="space050" />
-        <Code>
-          {`backgroundColor: '{{colors.inkBase}}';
+            Learn more about the Icon component
+          </Link>
+          <Block spaceStack="space100" />
+          <TabsWithTable components={coloursTable} />
+          <ContentText>
+            Colour can be applied to a UI element using the color, iconColor
+            borderColor, placeholderColor and background attribute on a{' '}
+            <Link href="/foundations/presets/space-presets/">
+              Style Preset.
+            </Link>
+          </ContentText>
+          <Block spaceStack="space080" />
+          <TextBlock
+            stylePreset="inkContrast"
+            typographyPreset="editorialHeadline020"
+          >
+            Example code
+          </TextBlock>
+          <Block spaceStack="space050" />
+          <Code>
+            {`backgroundColor: '{{colors.inkBase}}';
 backgroundColor: '{{colors.inkNegative}}';
 backgroundColor: '{{colors.inkBrand010}}';
 backgroundColor: '{{colors.interfaceBackground}}';
@@ -467,58 +479,65 @@ backgroundColor: '{{colors.interactiveSecondary010}}';
 backgroundColor: '{{colors.interactiveNegative010}}';
 backgroundColor: '{{colors.interactiveInput010}}';
 backgroundColor: '{{colors.interactiveVisited010}}';`}
-        </Code>
-      </ComponentPageCellCompact>
-    </CommonSection>
-
-    <CommonSection
-      title="Accessibility considerations"
-      id="a11y"
-      toc="Accessibility"
-      introduction={
-        <>
-          Carefully consider what colours to assign to the NewsKit contextual
-          colours to ensure important UI elements like text and icons are
-          legible without compromising the aesthetic. Avoid using yellow or
-          orange colours to convey a notice or warning intent because these
-          colours paired with white text do not allow for sufficient colour
-          contrast. Aim for contrast ratios that adhere to the{' '}
-          <Link
-            target="_blank"
-            href="https://www.w3.org/TR/WCAG20-TECHS/G18.html"
+          </Code>
+        </ContentPrimary>
+      </ContentSection>
+      <ContentSection sectionName="a11y">
+        <ContentPrimary
+          id="a11y"
+          toc="Accessibility"
+          headline="Accessibility considerations"
+          description={
+            <>
+              Carefully consider what colours to assign to the NewsKit
+              contextual colours to ensure important UI elements like text and
+              icons are legible without compromising the aesthetic. Avoid using
+              yellow or orange colours to convey a notice or warning intent
+              because these colours paired with white text do not allow for
+              sufficient colour contrast. Aim for contrast ratios that adhere to
+              the{' '}
+              <Link
+                target="_blank"
+                href="https://www.w3.org/TR/WCAG20-TECHS/G18.html"
+              >
+                WCAG AA standards:
+              </Link>
+            </>
+          }
+          showSeparator
+        >
+          <ContentText
+            title="Contrast for text and images of text"
+            titleAs="h3"
           >
-            WCAG AA standards:
-          </Link>
-        </>
-      }
-    >
-      <ComponentPageCellCompact>
-        <ContentText title="Contrast for text and images of text" titleAs="h3">
-          Standard text and images of text must have a minimum of 4.5:1 contrast
-          between the text colour and the background, except for the following:
-        </ContentText>
-        <ContentText title="Large text" titleAs="h4">
-          Large-scale text and images of large-scale text must have a minimum of
-          3:1 contrast between the text colour and the background.
-        </ContentText>
-        <ContentText title="Link text" titleAs="h4">
-          Underline link text within the body text (inline link). Otherwise, in
-          addition to the above, link text must have at least a 3:1 contrast
-          between the link text colour and the surrounding non-link text colour.
-        </ContentText>
-        <ContentText title="Incidental text" titleAs="h4">
-          Text or images of text that are part of an inactive component, pure
-          decoration, or part of a picture containing significant other visual
-          content do not have any contrast requirements.
-        </ContentText>
-        <ContentText title="Logotypes" titleAs="h4">
-          Text that is part of a logo does not have any contrast requirements.
-        </ContentText>
-        <ContentText title="Contrast for non-text elements" titleAs="h3">
-          User interface components and graphical objects must have at least a
-          3:1 contrast between against adjacent colours.
-        </ContentText>
-      </ComponentPageCellCompact>
-    </CommonSection>
+            Standard text and images of text must have a minimum of 4.5:1
+            contrast between the text colour and the background, except for the
+            following:
+          </ContentText>
+          <ContentText title="Large text" titleAs="h4">
+            Large-scale text and images of large-scale text must have a minimum
+            of 3:1 contrast between the text colour and the background.
+          </ContentText>
+          <ContentText title="Link text" titleAs="h4">
+            Underline link text within the body text (inline link). Otherwise,
+            in addition to the above, link text must have at least a 3:1
+            contrast between the link text colour and the surrounding non-link
+            text colour.
+          </ContentText>
+          <ContentText title="Incidental text" titleAs="h4">
+            Text or images of text that are part of an inactive component, pure
+            decoration, or part of a picture containing significant other visual
+            content do not have any contrast requirements.
+          </ContentText>
+          <ContentText title="Logotypes" titleAs="h4">
+            Text that is part of a logo does not have any contrast requirements.
+          </ContentText>
+          <ContentText title="Contrast for non-text elements" titleAs="h3">
+            User interface components and graphical objects must have at least a
+            3:1 contrast between against adjacent colours.
+          </ContentText>
+        </ContentPrimary>
+      </ContentSection>
+    </ComponentPageCell>
   </FoundationPageTemplate>
 );
