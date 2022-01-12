@@ -37,7 +37,7 @@ const Playground = ({open, ...state}: {open: boolean}) => {
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Drawer | Newskit design system',
+      title: 'Drawer',
       description:
         'A Drawer is a layout panel that slides out the side of the screen revealing content like navigation or filters.',
     }}
