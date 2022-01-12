@@ -9,7 +9,7 @@ import {Mono} from '../../components/flags';
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Divider | Newskit design system',
+      title: 'Divider',
       description:
         'A divider is used to provide visual separation of different content. Dividers can be applied vertically or horizontally.',
     }}

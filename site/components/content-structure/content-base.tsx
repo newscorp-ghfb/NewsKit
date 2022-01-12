@@ -28,7 +28,6 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
 
   return (
     <>
-      {/* headline container */}
       {headline && (
         <>
           <TextBlock
@@ -41,7 +40,6 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
         </>
       )}
 
-      {/* description container */}
       {description && (
         <>
           <TextBlock as="p" {...descriptionOverrides}>
@@ -51,10 +49,8 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
         </>
       )}
 
-      {/* react Container */}
       {children && <>{children}</>}
 
-      {/* separator */}
       <Block {...separatorOverrides} />
 
       {showDivider && (

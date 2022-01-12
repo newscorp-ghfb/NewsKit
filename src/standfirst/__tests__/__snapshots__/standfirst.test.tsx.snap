@@ -12,7 +12,7 @@ exports[`Standfirst renders as h4 html tag 1`] = `
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -35,7 +35,7 @@ exports[`Standfirst renders as h4 html tag 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -71,7 +71,7 @@ exports[`Standfirst renders as span html tag 1`] = `
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -94,7 +94,7 @@ exports[`Standfirst renders as span html tag 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -120,7 +120,7 @@ exports[`Standfirst renders as span html tag 1`] = `
 exports[`Standfirst renders with custom style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #3358CC;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 1023px) {
@@ -129,7 +129,7 @@ exports[`Standfirst renders with custom style preset 1`] = `
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -152,7 +152,7 @@ exports[`Standfirst renders with custom style preset 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -183,7 +183,7 @@ exports[`Standfirst renders with custom typography preset 1`] = `
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -217,7 +217,7 @@ exports[`Standfirst renders with default styles 1`] = `
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -240,7 +240,7 @@ exports[`Standfirst renders with default styles 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 

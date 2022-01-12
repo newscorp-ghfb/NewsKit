@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Video Player default player should render properly with data attributes 1`] = `
+<video
+  class="video-js vjs-fluid"
+  controls=""
+  data-account="1752604059001"
+  data-embed="default"
+  data-player="default"
+  data-testid="bc-video-player"
+  data-video-id="4093643993001"
+  height="540"
+  id="bc-video-4093643993001"
+  width="960"
+/>
+`;
+
+exports[`Video Player playlist player should render properly with data attributes 1`] = `
+<video
+  class="video-js vjs-fluid"
+  controls=""
+  data-account="1752604059001"
+  data-embed="default"
+  data-player="S13cJdUBz"
+  data-playlist-id="5686354139001"
+  data-testid="bc-video-player"
+  height="540"
+  id="bc-video-5686354139001"
+  width="960"
+/>
+`;
+
+exports[`Video Player renders video player with overriden play button style 1`] = `
+<DocumentFragment>
+  .emotion-0 .video-js .vjs-big-play-button {
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  background-color: #FF9900;
+  color: #FF362E;
+}
+
+.emotion-0 .video-js .vjs-progress-holder {
+  width: 100%;
+  background-color: rgba(10,10,10,0.2);
+}
+
+<div
+    class="emotion-0"
+  >
+    <video
+      class="video-js vjs-fluid"
+      controls=""
+      data-account="1752604059001"
+      data-embed="default"
+      data-player="default"
+      data-testid="bc-video-player"
+      data-video-id="4093643993001"
+      height="540"
+      id="bc-video-4093643993001"
+      width="960"
+    />
+  </div>
+</DocumentFragment>
+`;

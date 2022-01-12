@@ -9,7 +9,7 @@ exports[`Label renders large label 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -48,7 +48,7 @@ exports[`Label renders medium label 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -87,7 +87,7 @@ exports[`Label renders small label 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -126,7 +126,7 @@ exports[`Label should render disabled Label 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
