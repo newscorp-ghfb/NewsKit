@@ -89,7 +89,7 @@ exports[`Tag href renders as an anchor 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -217,7 +217,7 @@ exports[`Tag href renders as an anchor and user can pass anchor attributes 1`] =
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -345,7 +345,7 @@ exports[`Tag href renders in disable state as a div 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -472,7 +472,7 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -598,7 +598,7 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -738,7 +738,7 @@ exports[`Tag renders a tag with an icon 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -898,7 +898,7 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1058,7 +1058,7 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1205,7 +1205,7 @@ exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1332,7 +1332,7 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1458,7 +1458,7 @@ exports[`Tag renders a tag with no paddings 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1585,7 +1585,7 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1712,7 +1712,7 @@ exports[`Tag renders a tag with percentage for width and height 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1839,7 +1839,7 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1966,7 +1966,7 @@ exports[`Tag renders a tag with token set for width and height 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2092,7 +2092,7 @@ exports[`Tag renders in disabled state 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2219,7 +2219,7 @@ exports[`Tag renders with Large size 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2345,7 +2345,7 @@ exports[`Tag renders with Medium size 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2471,7 +2471,7 @@ exports[`Tag renders with Small size 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2597,7 +2597,7 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2723,7 +2723,7 @@ exports[`Tag renders with default styles 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }

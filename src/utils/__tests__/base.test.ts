@@ -18,9 +18,24 @@ describe('getXFromTheme', () => {
             sizing: {xs: 'sizing010', sm: 'sizing020', md: 'sizing030'},
             width: '100%',
             size: 'sizing010',
+            space3: {
+              xs: 'space010',
+              sm: 'space020 space020 space020 space020',
+              md: 'space030 space030 space030 space030',
+            },
+            space4: {
+              xs: '4px 4px 4px 4px',
+              sm: '8px',
+              md: '12px 12px 12px 12px',
+            },
             space: 'space010',
             motionDuration: 'motionDuration030',
             weight: 'borderWidth020',
+          },
+          banner: {
+            space: 'space010 space010 space010 space010',
+            space1: 'space010',
+            space2: 'calc(100% - 10px)',
           },
         },
       },
@@ -215,7 +230,81 @@ describe('getXFromTheme', () => {
       },
     });
   });
-
+  test('getResponsiveSize with MQ for spacePresets with token', () => {
+    const result = getResponsiveSpace(
+      'padding',
+      'tabs',
+      '',
+      'space3',
+    )({
+      theme,
+    });
+    expect(result).toEqual({
+      '@media screen and (max-width: 479px)': {
+        padding: '4px',
+      },
+      '@media screen and (min-width: 480px) and (max-width: 767px)': {
+        padding: '8px 8px 8px 8px',
+      },
+      '@media screen and (min-width: 768px)': {
+        padding: '12px 12px 12px 12px',
+      },
+    });
+  });
+  test('getResponsiveSize with MQ for spacePresets with css value', () => {
+    const result = getResponsiveSpace(
+      'padding',
+      'tabs',
+      '',
+      'space4',
+    )({
+      theme,
+    });
+    expect(result).toEqual({
+      '@media screen and (max-width: 479px)': {
+        padding: '4px 4px 4px 4px',
+      },
+      '@media screen and (min-width: 480px) and (max-width: 767px)': {
+        padding: '8px',
+      },
+      '@media screen and (min-width: 768px)': {
+        padding: '12px 12px 12px 12px',
+      },
+    });
+  });
+  test('getResponsiveSpace with four space tokens', () => {
+    const result = getResponsiveSpace(
+      'padding',
+      'banner',
+      '',
+      'space',
+    )({
+      theme,
+    });
+    expect(result).toEqual({padding: '4px 4px 4px 4px'});
+  });
+  test('getResponsiveSpace with single space tokens', () => {
+    const result = getResponsiveSpace(
+      'padding',
+      'banner',
+      '',
+      'space1',
+    )({
+      theme,
+    });
+    expect(result).toEqual({padding: '4px'});
+  });
+  test('getResponsiveSpace with calc as token', () => {
+    const result = getResponsiveSpace(
+      'padding',
+      'banner',
+      '',
+      'space2',
+    )({
+      theme,
+    });
+    expect(result).toEqual({padding: 'calc(100% - 10px)'});
+  });
   test('getResponsiveSpace', () => {
     const result = getResponsiveSpace(
       'minWidth',

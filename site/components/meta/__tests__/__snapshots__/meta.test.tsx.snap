@@ -116,7 +116,7 @@ exports[`Meta renders with mandatory props 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -223,7 +223,7 @@ exports[`Meta renders with mandatory props 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -375,7 +375,7 @@ exports[`Meta renders with mandatory props 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
   display: block;
@@ -535,7 +535,7 @@ exports[`Meta renders with mandatory props 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1238,7 +1238,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -1345,7 +1345,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -1497,7 +1497,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
   display: block;
@@ -1657,7 +1657,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }

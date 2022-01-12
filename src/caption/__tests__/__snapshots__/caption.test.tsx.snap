@@ -13,7 +13,7 @@ exports[`Caption renders correctly with default props and caption and credit tex
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -41,7 +41,7 @@ exports[`Caption renders correctly with default props and caption and credit tex
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -107,7 +107,7 @@ exports[`CaptionInset renders correctly with default props and caption and credi
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -135,7 +135,7 @@ exports[`CaptionInset renders correctly with default props and caption and credi
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -197,7 +197,7 @@ exports[`CaptionInset renders correctly with default props and only caption text
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -258,7 +258,7 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
   font-size: 22px;
   line-height: 24.75px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -286,7 +286,7 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -336,7 +336,7 @@ exports[`renders correctly with default props and only caption text 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -385,7 +385,7 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
   font-size: 22px;
   line-height: 24.75px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -413,7 +413,7 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 

@@ -56,7 +56,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
     </ComponentPageCellCompact>
     <ComponentPageCell>
       <Block
-        stylePreset="blockRoundedMedium"
+        stylePreset="imageRoundedMedium"
         spaceStack={{xs: 'space000', md: 'space030', lg: 'space010'}}
       >
         {heroIsImage(hero) ? (

@@ -75,7 +75,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     font-size: 18px;
     line-height: 20.25px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -98,7 +98,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -142,7 +142,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     font-size: 32px;
     line-height: 36px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -165,7 +165,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -188,7 +188,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     font-size: 40px;
     line-height: 45px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -304,7 +304,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -327,7 +327,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 

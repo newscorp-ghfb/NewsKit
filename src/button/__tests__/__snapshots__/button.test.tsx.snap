@@ -364,7 +364,7 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -503,7 +503,7 @@ exports[`Button Loading Button renders a button with fixed for width and height 
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -642,7 +642,7 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -781,7 +781,7 @@ exports[`Button Loading Button renders a button with percentage for width and he
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -920,7 +920,7 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1059,7 +1059,7 @@ exports[`Button Loading Button renders a button with token set for width and hei
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1198,7 +1198,7 @@ exports[`Button renders Large Button 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1337,7 +1337,7 @@ exports[`Button renders Small Button 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1476,7 +1476,7 @@ exports[`Button renders button link when href passed 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1597,7 +1597,7 @@ exports[`Button renders button link with disabled link 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1737,7 +1737,7 @@ exports[`Button renders fixed-width Button 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1876,7 +1876,7 @@ exports[`Button renders full-width Button 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2015,7 +2015,7 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2183,7 +2183,7 @@ exports[`Button renders with different spaceInset preset 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2327,7 +2327,7 @@ exports[`Button renders with different style preset 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2466,7 +2466,7 @@ exports[`Button renders with different typography preset 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2605,7 +2605,7 @@ exports[`Button renders with fallback formatting 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }

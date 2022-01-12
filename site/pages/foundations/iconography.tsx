@@ -81,7 +81,7 @@ const CellWrapper = ({children}: {children: any}) => (
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Iconography',
+      title: 'Iconography | Newskit design system',
       description:
         'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
     }}

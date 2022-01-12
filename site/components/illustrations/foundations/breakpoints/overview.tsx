@@ -376,7 +376,7 @@ export const Overview: React.FC = () => {
         />
       </g>
       <defs>
-        <clipPath id={`(${clip0})`}>
+        <clipPath id="clip0_439_45139">
           <Rect width="1490" height="600" fill="white" />
         </clipPath>
       </defs>

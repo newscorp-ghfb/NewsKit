@@ -64,7 +64,7 @@ exports[`UnorderedList renders different types of children 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -340,7 +340,7 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -535,7 +535,7 @@ exports[`UnorderedList renders with custom list item marker with different size 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -696,7 +696,7 @@ exports[`UnorderedList renders with defaults 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -794,7 +794,7 @@ exports[`UnorderedList renders with defaults when marker is incorrect 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -926,7 +926,7 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -1121,7 +1121,7 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 

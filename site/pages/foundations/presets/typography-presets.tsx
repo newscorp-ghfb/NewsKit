@@ -107,7 +107,7 @@ const tabOverrides = {
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Typography',
+      title: 'Typography | Newskit design system',
       description:
         'A collection of foundational font design tokens combined into a preset to define reusable typography styles for specific text elements..',
     }}

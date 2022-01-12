@@ -83,7 +83,7 @@ const cards = [
 export default (layoutProps: LayoutProps) => (
   <ComponentPageBasicTemplate
     headTags={{
-      title: 'Visible, Hidden & ScreenReaderOnly',
+      title: 'Visible, Hidden & ScreenReaderOnly | Newskit design system',
       description:
         'The collection of these three components can be used to show and hide content at different breakpoints.',
     }}

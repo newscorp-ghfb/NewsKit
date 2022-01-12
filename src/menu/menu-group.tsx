@@ -44,39 +44,41 @@ const renderTitle = (
   return renderIfReactComponent(MenuTitle);
 };
 
-export const MenuGroup = React.forwardRef<HTMLLIElement, MenuGroupProps>(
-  ({overrides, children, title, ...restProps}, ref) => {
-    const theme = useTheme();
-    const {vertical} = useMenuContext();
-    const {aria, rest} = splitAriaProps(restProps);
-    const titleID = useReactKeys(1)[0];
+export const MenuGroup: React.FC<MenuGroupProps> = ({
+  overrides,
+  children,
+  title,
+  ...restProps
+}) => {
+  const theme = useTheme();
+  const {vertical} = useMenuContext();
+  const {aria, rest} = splitAriaProps(restProps);
+  const titleID = useReactKeys(1)[0];
 
-    const shouldRenderTitle = vertical && Boolean(title);
+  const shouldRenderTitle = vertical && Boolean(title);
 
-    return (
-      <StyledMenuGroup
-        className="nk-menu-group"
-        {...rest}
-        overrides={overrides}
-        vertical={vertical}
-        ref={ref}
+  return (
+    <StyledMenuGroup
+      className="nk-menu-group"
+      {...rest}
+      overrides={overrides}
+      vertical={vertical}
+    >
+      {shouldRenderTitle && (
+        <StyledMenuGroupTitle overrides={overrides}>
+          {renderTitle({title, overrides}, titleID, theme)}
+        </StyledMenuGroupTitle>
+      )}
+      <ul
+        {...(shouldRenderTitle && {
+          'aria-labelledby': titleID,
+          ...aria,
+        })}
       >
-        {shouldRenderTitle && (
-          <StyledMenuGroupTitle overrides={overrides}>
-            {renderTitle({title, overrides}, titleID, theme)}
-          </StyledMenuGroupTitle>
-        )}
-        <ul
-          {...(shouldRenderTitle && {
-            'aria-labelledby': titleID,
-            ...aria,
-          })}
-        >
-          {children}
-        </ul>
-      </StyledMenuGroup>
-    );
-  },
-);
+        {children}
+      </ul>
+    </StyledMenuGroup>
+  );
+};
 
 MenuGroup.displayName = 'MenuGroup';

@@ -207,7 +207,7 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -586,7 +586,7 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -1031,7 +1031,7 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -1086,7 +1086,7 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -1538,7 +1538,7 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -1593,7 +1593,7 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -2075,7 +2075,7 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -2130,7 +2130,7 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -2550,7 +2550,7 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -2613,7 +2613,7 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -2954,7 +2954,7 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -3009,7 +3009,7 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -3496,7 +3496,7 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -3551,7 +3551,7 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -4038,7 +4038,7 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -4093,7 +4093,7 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -4516,7 +4516,7 @@ exports[`StructuredList with href renders with disabled link 1`] = `
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -4951,7 +4951,7 @@ exports[`StructuredList without-href renders with default style 1`] = `
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -5006,7 +5006,7 @@ exports[`StructuredList without-href renders with default style 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -5402,7 +5402,7 @@ exports[`StructuredList without-href renders with one cell default 1`] = `
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -5687,7 +5687,7 @@ exports[`StructuredList without-href renders with overrides 1`] = `
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -5742,7 +5742,7 @@ exports[`StructuredList without-href renders with overrides 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -6262,7 +6262,7 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -6325,7 +6325,7 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -6576,7 +6576,7 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -6639,7 +6639,7 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 

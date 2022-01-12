@@ -431,7 +431,7 @@ const STYLE_PRESET_STATES = [
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Style Presets',
+      title: 'Style Presets | Newskit design system',
       description:
         'A collection of foundational design tokens combined into a preset to define reusable styles for interface elements and their interactive states.',
     }}

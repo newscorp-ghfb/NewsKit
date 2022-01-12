@@ -32,7 +32,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -213,7 +213,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-left: 12px;
 }
@@ -387,7 +387,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -568,7 +568,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-left: 12px;
 }
@@ -742,7 +742,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -923,7 +923,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-left: 12px;
 }
@@ -1096,7 +1096,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-top: 12px;
 }
@@ -1277,7 +1277,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-bottom: 12px;
 }
@@ -1451,7 +1451,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -1632,7 +1632,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-left: 12px;
 }
@@ -1806,7 +1806,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -1987,7 +1987,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-left: 12px;
 }
@@ -2161,7 +2161,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -2342,7 +2342,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-left: 12px;
 }
@@ -2516,7 +2516,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -2697,7 +2697,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-left: 12px;
 }
@@ -2871,7 +2871,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -3052,7 +3052,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-left: 12px;
 }

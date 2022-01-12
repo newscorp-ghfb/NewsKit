@@ -77,7 +77,7 @@ exports[`Card renders MQ layout 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -158,7 +158,7 @@ exports[`Card renders actions section with given component 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -311,7 +311,7 @@ exports[`Card renders actions section with given component 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -530,7 +530,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -683,7 +683,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -902,7 +902,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -1055,7 +1055,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1276,7 +1276,7 @@ exports[`Card renders card with overrides 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -1357,7 +1357,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -1380,7 +1380,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -1403,7 +1403,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -1426,7 +1426,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -1599,7 +1599,7 @@ exports[`Card renders media section if the media data is provided 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -1772,7 +1772,7 @@ exports[`Card renders media section with a custom component 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -1945,7 +1945,7 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -2118,7 +2118,7 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -2292,7 +2292,7 @@ exports[`Card renders media section with overrides 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -2465,7 +2465,7 @@ exports[`Card renders with card items 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -2618,7 +2618,7 @@ exports[`Card renders with card items 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2929,7 +2929,7 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -3149,7 +3149,7 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -3331,7 +3331,7 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -3519,7 +3519,7 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -3707,7 +3707,7 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -3895,7 +3895,7 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -4083,7 +4083,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -4271,7 +4271,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -4425,7 +4425,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -4578,7 +4578,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -4936,7 +4936,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -5086,7 +5086,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -5109,7 +5109,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -5132,7 +5132,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -5155,7 +5155,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -5317,7 +5317,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -5340,7 +5340,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -5363,7 +5363,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -5386,7 +5386,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -5559,7 +5559,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -5582,7 +5582,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -5605,7 +5605,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -5628,7 +5628,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -5799,7 +5799,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -5944,7 +5944,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -6055,7 +6055,7 @@ exports[`CardInset renders card with overrides 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -6212,7 +6212,7 @@ exports[`CardInset renders with card items 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -6388,7 +6388,7 @@ exports[`CardInset renders with card items 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }

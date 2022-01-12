@@ -7,21 +7,21 @@ typographyPresets.editorialDisplay010 = {
   fontSize: '{{fonts.fontSize120}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialDisplay020 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize130}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialDisplay030 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize140}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 // Editorial Heading
 typographyPresets.editorialHeadline010 = {
@@ -29,56 +29,56 @@ typographyPresets.editorialHeadline010 = {
   fontSize: '{{fonts.fontSize040}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialHeadline020 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize050}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialHeadline030 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize060}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialHeadline040 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize070}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialHeadline050 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize080}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialHeadline060 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize090}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialHeadline070 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize100}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialHeadline080 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize110}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 // Editorial Label
 typographyPresets.editorialLabel010 = {
@@ -86,7 +86,7 @@ typographyPresets.editorialLabel010 = {
   fontSize: '{{fonts.fontSize010}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 
 typographyPresets.editorialLabel020 = {
@@ -94,7 +94,7 @@ typographyPresets.editorialLabel020 = {
   fontSize: '{{fonts.fontSize020}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 
 typographyPresets.editorialLabel030 = {
@@ -102,7 +102,7 @@ typographyPresets.editorialLabel030 = {
   fontSize: '{{fonts.fontSize030}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 
 // Editorial Subheading
@@ -111,21 +111,21 @@ typographyPresets.editorialSubheadline010 = {
   fontSize: '{{fonts.fontSize030}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight010}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialSubheadline020 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize050}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight010}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialSubheadline030 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize060}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight010}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialSubheadline040 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
@@ -139,7 +139,7 @@ typographyPresets.editorialSubheadline050 = {
   fontSize: '{{fonts.fontSize080}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight010}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 // Editorial Paragraph
 typographyPresets.editorialParagraph010 = {
@@ -147,21 +147,21 @@ typographyPresets.editorialParagraph010 = {
   fontSize: '{{fonts.fontSize020}}',
   lineHeight: '{{fonts.fontLineHeight040}}',
   fontWeight: '{{fonts.fontWeight010}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialParagraph020 = {
   fontFamily: '{{fonts.fontFamily010.fontFamily}}',
   fontSize: '{{fonts.fontSize030}}',
   lineHeight: '{{fonts.fontLineHeight040}}',
   fontWeight: '{{fonts.fontWeight010}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialParagraph030 = {
   fontFamily: '{{fonts.fontFamily010.fontFamily}}',
   fontSize: '{{fonts.fontSize040}}',
   lineHeight: '{{fonts.fontLineHeight040}}',
   fontWeight: '{{fonts.fontWeight010}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 // Editorial Quote
 typographyPresets.editorialQuote010 = {
@@ -169,14 +169,14 @@ typographyPresets.editorialQuote010 = {
   fontSize: '{{fonts.fontSize060}}',
   lineHeight: '{{fonts.fontLineHeight030}}',
   fontWeight: '{{fonts.fontWeight010}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.editorialQuote020 = {
   fontFamily: '{{fonts.fontFamily030.fontFamily}}',
   fontSize: '{{fonts.fontSize080}}',
   lineHeight: '{{fonts.fontLineHeight030}}',
   fontWeight: '{{fonts.fontWeight010}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 // Editorial Caption
 typographyPresets.editorialCaption010 = {
@@ -184,7 +184,7 @@ typographyPresets.editorialCaption010 = {
   fontSize: '{{fonts.fontSize020}}',
   lineHeight: '{{fonts.fontLineHeight040}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 
 // ** UTILITY **
@@ -195,35 +195,35 @@ typographyPresets.utilityHeading010 = {
   fontSize: '{{fonts.fontSize030}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight040}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.utilityHeading020 = {
   fontFamily: '{{fonts.fontFamily030.fontFamily}}',
   fontSize: '{{fonts.fontSize040}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight040}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.utilityHeading030 = {
   fontFamily: '{{fonts.fontFamily030.fontFamily}}',
   fontSize: '{{fonts.fontSize050}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight040}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.utilityHeading040 = {
   fontFamily: '{{fonts.fontFamily030.fontFamily}}',
   fontSize: '{{fonts.fontSize060}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight040}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.utilityHeading050 = {
   fontFamily: '{{fonts.fontFamily030.fontFamily}}',
   fontSize: '{{fonts.fontSize070}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight040}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 
 // Utility Subheading
@@ -232,35 +232,35 @@ typographyPresets.utilitySubheading010 = {
   fontSize: '{{fonts.fontSize020}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.utilitySubheading020 = {
   fontFamily: '{{fonts.fontFamily010.fontFamily}}',
   fontSize: '{{fonts.fontSize030}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.utilitySubheading030 = {
   fontFamily: '{{fonts.fontFamily030.fontFamily}}',
   fontSize: '{{fonts.fontSize040}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.utilitySubheading040 = {
   fontFamily: '{{fonts.fontFamily010.fontFamily}}',
   fontSize: '{{fonts.fontSize050}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.utilitySubheading050 = {
   fontFamily: '{{fonts.fontFamily030.fontFamily}}',
   fontSize: '{{fonts.fontSize060}}',
   lineHeight: '{{fonts.fontLineHeight020}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 // Utility Body
 typographyPresets.utilityBody010 = {
@@ -268,21 +268,21 @@ typographyPresets.utilityBody010 = {
   fontSize: '{{fonts.fontSize010}}',
   lineHeight: '{{fonts.fontLineHeight040}}',
   fontWeight: '{{fonts.fontWeight010}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.utilityBody020 = {
   fontFamily: '{{fonts.fontFamily010.fontFamily}}',
   fontSize: '{{fonts.fontSize020}}',
   lineHeight: '{{fonts.fontLineHeight040}}',
   fontWeight: '{{fonts.fontWeight010}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.utilityBody030 = {
   fontFamily: '{{fonts.fontFamily010.fontFamily}}',
   fontSize: '{{fonts.fontSize030}}',
   lineHeight: '{{fonts.fontLineHeight040}}',
   fontWeight: '{{fonts.fontWeight010}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 // Utility Label
 typographyPresets.utilityLabel010 = {
@@ -290,21 +290,21 @@ typographyPresets.utilityLabel010 = {
   fontSize: '{{fonts.fontSize010}}',
   lineHeight: '{{fonts.fontLineHeight040}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.utilityLabel020 = {
   fontFamily: '{{fonts.fontFamily030.fontFamily}}',
   fontSize: '{{fonts.fontSize020}}',
   lineHeight: '{{fonts.fontLineHeight040}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.utilityLabel030 = {
   fontFamily: '{{fonts.fontFamily030.fontFamily}}',
   fontSize: '{{fonts.fontSize030}}',
   lineHeight: '{{fonts.fontLineHeight040}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 // Meta
 typographyPresets.utilityMeta010 = {
@@ -312,14 +312,14 @@ typographyPresets.utilityMeta010 = {
   fontSize: '{{fonts.fontSize010}}',
   lineHeight: '{{fonts.fontLineHeight040}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 typographyPresets.utilityMeta020 = {
   fontFamily: '{{fonts.fontFamily010.fontFamily}}',
   fontSize: '{{fonts.fontSize020}}',
   lineHeight: '{{fonts.fontLineHeight040}}',
   fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
 
 // Button

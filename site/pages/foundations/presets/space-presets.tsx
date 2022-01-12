@@ -233,7 +233,7 @@ const PRINCIPLE_CARDS = [
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Spacing',
+      title: 'Spacing | Newskit design system',
       description:
         'Space helps to guide the user and provide a pleasant and consistent experience when using a product.',
     }}

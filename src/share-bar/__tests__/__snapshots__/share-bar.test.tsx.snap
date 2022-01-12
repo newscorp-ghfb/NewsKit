@@ -26,7 +26,7 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-right: 16px;
 }
@@ -161,7 +161,7 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-right: 16px;
 }
@@ -494,7 +494,7 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-bottom: 16px;
 }
@@ -736,7 +736,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-right: 16px;
 }
@@ -956,7 +956,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1091,7 +1091,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   color: #2E2E2E;
   margin-right: 16px;
@@ -1316,7 +1316,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1451,7 +1451,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -1671,7 +1671,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1806,7 +1806,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -2026,7 +2026,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2215,7 +2215,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-bottom: 16px;
 }
@@ -2444,7 +2444,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2579,7 +2579,7 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-bottom: 16px;
 }
@@ -2808,7 +2808,7 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2943,7 +2943,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-bottom: 12px;
 }
@@ -3172,7 +3172,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }

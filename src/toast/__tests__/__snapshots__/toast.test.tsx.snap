@@ -1144,7 +1144,7 @@ exports[`Toast Component renders with actions 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -1287,7 +1287,7 @@ exports[`Toast Component renders with actions 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1433,7 +1433,7 @@ exports[`Toast Component renders with content as react element 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -1559,7 +1559,7 @@ exports[`Toast Component renders with content as string and link 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -1772,7 +1772,7 @@ exports[`Toast Component renders with default props 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -1912,7 +1912,7 @@ exports[`Toast Component renders with icon 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
@@ -2074,7 +2074,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   font-size: 18px;
   line-height: 20.25px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-bottom: 24px;
 }
@@ -2097,7 +2097,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -2235,7 +2235,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2407,7 +2407,7 @@ exports[`Toast Component renders with title 1`] = `
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   color: #FFFFFF;
   margin-bottom: 4px;
@@ -2435,7 +2435,7 @@ exports[`Toast Component renders with title 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }

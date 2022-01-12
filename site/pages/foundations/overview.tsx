@@ -1,5 +1,6 @@
 import React from 'react';
 import {Grid} from 'newskit';
+import Head from 'next/head';
 import {HeaderImage} from '../../components/illustrations/foundations/header-image';
 import Layout, {LayoutProps} from '../../components/layout';
 import {SectionIntroduction} from '../../components/section-introduction';
@@ -10,7 +11,6 @@ import {ComponentPageCell} from '../../components/layout-cells';
 import routes from '../../routes';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {Item} from '../../components/sidebar/types';
-import {HeadNextSeo} from '../../components/head-next-seo';
 
 const foundationRoute: Item[] =
   routes.filter(router => router.title === 'Foundations')[0].subNav || [];
@@ -29,10 +29,13 @@ const cardsContent = foundationRoute
 
 export default (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
-    <HeadNextSeo
-      title="Foundations overview"
-      description="NewsKit foundations define the visual elements that inform the look and feel of UI components."
-    />
+    <Head>
+      <title key="title">Foundations overview | NewsKit design system</title>
+      <meta
+        name="Description"
+        content="NewsKit foundations define the visual elements that inform the look and feel of UI components."
+      />
+    </Head>
     <HeaderIndex title="Foundations" media={HeaderImage}>
       NewsKit foundations define the visual elements that inform the look and
       feel of UI components.

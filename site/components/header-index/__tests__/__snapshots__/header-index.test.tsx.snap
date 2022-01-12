@@ -249,7 +249,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
     font-size: 32px;
     line-height: 36px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -272,7 +272,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
     font-size: 40px;
     line-height: 45px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     padding: 0.5px 0px;
   }
 
@@ -308,7 +308,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 

@@ -54,7 +54,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -154,7 +154,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: block;
 }
 
@@ -291,7 +291,7 @@ exports[`Byline renders correctly with author's name, author's information and n
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -413,7 +413,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -513,7 +513,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: block;
 }
 
@@ -698,7 +698,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -798,7 +798,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: block;
 }
 
@@ -949,7 +949,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1081,7 +1081,7 @@ exports[`Byline renders correctly with one author 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1172,7 +1172,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1222,7 +1222,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: block;
 }
 

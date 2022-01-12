@@ -25,10 +25,6 @@ exports[`IntroductionSection renders section as expected 1`] = `
   padding-top: 24px;
 }
 
-.emotion-2 {
-  margin-bottom: 32px;
-}
-
 <div
     data-comp="NewsKit Cell"
     data-props="{
@@ -67,9 +63,6 @@ exports[`IntroductionSection renders section as expected 1`] = `
 }"
           data-testid="Cell"
         >
-          <div
-            class="emotion-2"
-          />
           <div>
             Meta Component with props:{
   "dummy": "meta props"

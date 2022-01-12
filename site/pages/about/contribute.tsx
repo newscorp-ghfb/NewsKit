@@ -7,6 +7,7 @@ import {
   getSizingCssFromTheme,
   styled,
 } from 'newskit';
+import Head from 'next/head';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
@@ -14,7 +15,6 @@ import {MediaList} from '../../components/media-list';
 import {Separator} from '../../components/separator';
 import {ContentText} from '../../components/text-section';
 import {ComponentPageCell} from '../../components/layout-cells';
-import {HeadNextSeo} from '../../components/head-next-seo';
 
 const cardoverrides = {
   title: {
@@ -80,10 +80,13 @@ const cards = [
 export default ({path, ...props}: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
   <Layout {...props} path={`${path}-new`}>
-    <HeadNextSeo
-      title="Contribute"
-      description="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
-    />
+    <Head>
+      <title key="title">Contribute | NewsKit design system</title>
+      <meta
+        name="Description"
+        content="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
+      />
+    </Head>
     <WrapperWithPadding />
     <Grid lgMargin="sizing000" xsRowGutter="space000">
       <PageIntroduction

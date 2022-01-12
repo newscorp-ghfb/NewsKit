@@ -63,7 +63,7 @@ exports[`Select renders Select with overrides 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4 {
@@ -267,7 +267,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -404,7 +404,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4 {
@@ -593,7 +593,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
 }
 
@@ -699,7 +699,7 @@ exports[`Select renders disabled select 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4 {
@@ -974,7 +974,7 @@ exports[`Select renders large Select 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4 {
@@ -1246,7 +1246,7 @@ exports[`Select renders loading select 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4 {
@@ -1513,7 +1513,7 @@ exports[`Select renders medium Select 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4 {
@@ -1785,7 +1785,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4 {
@@ -2091,7 +2091,7 @@ exports[`Select renders select with a selected option 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4 {
@@ -2426,7 +2426,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-7 {
@@ -2727,7 +2727,7 @@ exports[`Select renders select with non-string options 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4 {
@@ -3035,7 +3035,7 @@ exports[`Select renders small Select 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4 {
@@ -3307,7 +3307,7 @@ exports[`Select should render custom placeholder 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4 {

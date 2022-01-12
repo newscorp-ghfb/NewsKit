@@ -61,7 +61,7 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
   display: block;
@@ -158,7 +158,7 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
   display: block;
@@ -255,7 +255,7 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 0.5px 0px;
   display: inline-block;
   display: block;

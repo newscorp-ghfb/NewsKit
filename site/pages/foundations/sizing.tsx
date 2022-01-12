@@ -98,7 +98,7 @@ const infoIcon = (
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Sizing',
+      title: 'Sizing | Newskit design system',
       description:
         'Standardised sizing provides increased visual consistency in an interface.',
     }}

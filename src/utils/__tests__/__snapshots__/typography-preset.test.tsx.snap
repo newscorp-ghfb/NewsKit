@@ -7,7 +7,7 @@ exports[`TypographyPreset renders default 1`] = `
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 <p
@@ -24,7 +24,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 14px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -34,7 +34,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -52,7 +52,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 14px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -62,7 +62,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -72,7 +72,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -90,7 +90,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 14px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -100,7 +100,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -110,7 +110,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
 </DocumentFragment>
 `;
 
-exports[`TypographyPreset renders responsive override editorialParagraph010 for xs, editorialParagraph020 for sm, editorialParagraph030 for md, editorialHeading010 for lg and xl breakpoints and ignore wrong prop 1`] = `
+exports[`TypographyPreset renders responsive override editorialParagraph010 for xs, editorialParagraph020 for sm, editorialParagraph030 for md, editorialHeadline010 for lg breakpoints and ignore wrong prop 1`] = `
 <DocumentFragment>
   @media screen and (max-width: 479px) {
   .emotion-0 {
@@ -118,7 +118,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 14px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -128,17 +128,37 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-0 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 18px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -155,7 +175,7 @@ exports[`TypographyPreset renders with fontSmooth and fontStretch 1`] = `
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   font-smooth: always;
   font-stretch: condensed;
 }
@@ -173,7 +193,7 @@ exports[`TypographyPreset renders with override editorialParagraph010 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 <p

@@ -13,36 +13,30 @@ const getAlign = (align: MenuItemAlign | undefined, vertical: boolean) => {
   return align;
 };
 
-const ThemelessMenu = React.forwardRef<HTMLElement, MenuProps>(
-  (
-    {
-      overrides,
-      children,
-      vertical = false,
-      size = MenuItemSize.Medium,
-      align: passedAlign,
-      ...rest
-    },
-    ref,
-  ) => {
-    const align = getAlign(passedAlign, vertical);
+const ThemelessMenu = ({
+  overrides,
+  children,
+  vertical = false,
+  size = MenuItemSize.Medium,
+  align: passedAlign,
+  ...rest
+}: MenuProps) => {
+  const align = getAlign(passedAlign, vertical);
 
-    return (
-      <MenuContextProvider value={{vertical, size, align, overrides}}>
-        <StyledMenu
-          role="navigation"
-          data-testid="menu-container"
-          overrides={overrides}
-          vertical={vertical}
-          ref={ref}
-          {...rest}
-        >
-          {/* eslint-disable jsx-a11y/no-redundant-roles  */}
-          <ul role="list">{children}</ul>
-        </StyledMenu>
-      </MenuContextProvider>
-    );
-  },
-);
+  return (
+    <MenuContextProvider value={{vertical, size, align, overrides}}>
+      <StyledMenu
+        role="navigation"
+        data-testid="menu-container"
+        overrides={overrides}
+        vertical={vertical}
+        {...rest}
+      >
+        {/* eslint-disable jsx-a11y/no-redundant-roles  */}
+        <ul role="list">{children}</ul>
+      </StyledMenu>
+    </MenuContextProvider>
+  );
+};
 
 export const Menu = withOwnTheme(ThemelessMenu)({defaults, stylePresets});
