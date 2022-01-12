@@ -174,8 +174,7 @@ export const StoryTheSun = () => (
 
 const news = [
   {
-    title:
-      "Zayn Malik appears on plus size dating app in bid to find 'fuller woman'",
+    title: 'Zayn Malik appears on plus size dating app.',
     teaser:
       'HEART-throb Zayn Malik has signed up to a plus-size dating website that promises to match users with “big beautiful women”. It comes after the former One Direction singer split with slim supermodel Gigi Hadid.',
     image:
@@ -184,16 +183,14 @@ const news = [
       'https://www.thesun.co.uk/tvandshowbiz/17292904/zayn-malik-plus-size-dating/',
   },
   {
-    title:
-      'Boris Johnson must apologise to the nation and stop cowering from his duty',
+    title: 'Boris Johnson must apologise to the nation',
     teaser: '',
     image:
       'https://www.thesun.co.uk/wp-content/uploads/2022/01/3c71f19f-6a26-4f44-a910-fa1521614c03.jpg?strip=all&w=150&h=100&crop=1',
     href: 'https://www.thesun.co.uk/news/17294525/boris-johnson-party-apology/',
   },
   {
-    title:
-      'Get £40 in free bets for the Africa Cup of Nations with Paddy Power',
+    title: 'Get £40 in free bets for the Africa Cup',
     teaser: '',
     image:
       'https://www.thesun.co.uk/wp-content/uploads/2022/01/DD-BETTING-PADDY-POWER-odds-JAN-07.jpg?strip=all&w=150&h=100&crop=1',
@@ -201,8 +198,7 @@ const news = [
       'https://www.thesun.co.uk/sport/betting-tips/17249522/afcon-2022-free-bets-paddy-power/',
   },
   {
-    title:
-      "Lily plans Sadie's birthday party - but ends up flirting with her brother ",
+    title: "Lily plans Sadie's birthday party ",
     teaser: '',
     image:
       'https://www.thesun.co.uk/wp-content/uploads/2022/01/image-2-6.png?strip=all&w=150&h=100&crop=1',
@@ -210,8 +206,7 @@ const news = [
       'https://www.thesun.co.uk/dear-deidre/17264661/sadie-suspicious-lily-plans-with-mark/',
   },
   {
-    title:
-      'My wife said go elsewhere for sex - but now one of my three lovers is pregnant',
+    title: 'My wife said go elsewhere for sex',
     teaser: '',
     image:
       'https://www.thesun.co.uk/wp-content/uploads/2022/01/DEIDRE-LEAD-Man-of-53-who-is-married-but-wife-has-given-up-on-sex-so-he-signed-up-to-a-sugar-daddy-dating-site.jpg?strip=all&w=150&h=100&crop=1',
@@ -304,17 +299,17 @@ const TitleBarWithGrid = ({title, href}) => (
 );
 
 const SectionHeader = ({title, href}) => {
-  return <TitleBarWithGrid title={title} href={href} />;
-  // const button = () => <Button href={href}>read more</Button>;
+  //return <TitleBarWithGrid title={title} href={href} />;
+  const button = () => <Button href={href}>read more</Button>;
 
-  // return (
-  //   <TitleBar actionItem={button}>
-  //     <Stack flow="horizontal-bottom">
-  //       <span>{title}</span>
-  //       <Divider />
-  //     </Stack>
-  //   </TitleBar>
-  // );
+  return (
+    <TitleBar actionItem={button}>
+      <Stack flow="horizontal-center">
+        <span>{title}</span>
+        <Divider />
+      </Stack>
+    </TitleBar>
+  );
 };
 
 const SectionFooter = ({href}) => (
@@ -406,20 +401,20 @@ const BlockLayout1L4S = ({placeholders = []}) => {
 
 // 4 horizontal
 const BlockLayout4H = ({placeholders = []}) => {
-  const [p1, p2, p3, p4] = placeholders;
+  const [ph1, ph2, ph3, ph4] = placeholders;
   return (
     <Grid>
       <Cell xs="full-width" md={6} lg={3}>
-        {p1}
+        {ph1}
       </Cell>
       <Cell xs="full-width" md={6} lg={3}>
-        {p2}
+        {ph2}
       </Cell>
       <Cell xs="full-width" md={6} lg={3}>
-        {p3}
+        {ph3}
       </Cell>
       <Cell xs="full-width" md={6} lg={3}>
-        {p4}
+        {ph4}
       </Cell>
     </Grid>
   );
