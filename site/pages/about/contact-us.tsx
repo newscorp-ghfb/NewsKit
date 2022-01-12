@@ -7,12 +7,12 @@ import {
   Link,
   styled,
 } from 'newskit';
-import Head from 'next/head';
 import {Separator} from '../../components/separator';
 import {ComponentPageCell} from '../../components/layout-cells';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
+import {HeadNextSeo} from '../../components/head-next-seo';
 
 const WrapperWithPadding = styled.div`
   ${getSizingCssFromTheme('paddingTop', 'sizing080')};
@@ -21,13 +21,11 @@ const WrapperWithPadding = styled.div`
 
 export default ({path, ...props}: LayoutProps) => (
   <Layout {...props} path={`${path}-new`}>
-    <Head>
-      <title key="title">Contact us | NewsKit design system</title>
-      <meta
-        name="Description"
-        content="Have a question about our design system? The NewsKit team is here to help you."
-      />
-    </Head>
+    <HeadNextSeo
+      title="Contact us"
+      description="Have a question about our design system? 
+        The NewsKit team is here to help you."
+    />
     <WrapperWithPadding />
     <Grid lgMargin="sizing000" xsRowGutter="space000">
       <PageIntroduction

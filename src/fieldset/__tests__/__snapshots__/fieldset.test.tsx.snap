@@ -1,0 +1,1646 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fieldset renders fieldset with large form inputs 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+  min-inline-size: 0;
+}
+
+.emotion-1 {
+  display: table;
+  margin: 0;
+  padding: 0;
+  padding: 1px 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 12px;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 64px;
+}
+
+.emotion-2 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-2:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-2:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-3 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  padding: 12px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.emotion-5 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.emotion-5 * {
+  box-sizing: border-box;
+}
+
+.emotion-6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 64px;
+  height: 64px;
+  -webkit-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
+  -moz-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
+  -ms-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
+  transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
+}
+
+.emotion-6:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-7 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-7:hover:not(:disabled) {
+  border-color: #3358CC;
+}
+
+.emotion-7:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-7:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-7:checked:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+.emotion-7:checked:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-7:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-7:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-7:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-7:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-7:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-7:checked:invalid:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-7:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-7:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-7:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-7:valid:focus:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-7:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-7:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-7:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-7:checked:valid:focus:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-7:checked:valid:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-7:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-7:disabled {
+  border-color: #F4F4F4;
+}
+
+.emotion-7:checked:disabled:not(:disabled) {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.emotion-7:checked:disabled:not(:disabled) svg {
+  fill: #C0C0C0;
+}
+
+.emotion-8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-9 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-9:disabled {
+  color: #C0C0C0;
+}
+
+<fieldset
+    class="emotion-0"
+  >
+    <legend
+      class="emotion-1"
+    >
+      large legend
+    </legend>
+    <div
+      class="emotion-2"
+    >
+      <input
+        aria-describedby="mock-nk-1-assistive-text"
+        class="emotion-3"
+        id="mock-nk-1"
+        name="input-text-field-large"
+        type="text"
+      />
+    </div>
+    <label
+      class="emotion-4"
+    >
+      <div
+        class="emotion-5"
+        role="presentation"
+      >
+        <div
+          class="emotion-6"
+          data-testid="checkbox-feedback"
+        />
+        <div
+          class="emotion-7"
+        >
+          <input
+            aria-describedby="mock-nk-1-assistive-text"
+            class="emotion-8"
+            id="mock-nk-1"
+            name="input-checkbox-large"
+            type="checkbox"
+            value="tc"
+          />
+        </div>
+      </div>
+      <span
+        class="emotion-9"
+      >
+        Agree with T&C large
+      </span>
+    </label>
+  </fieldset>
+</DocumentFragment>
+`;
+
+exports[`Fieldset renders fieldset with medium form inputs 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+  min-inline-size: 0;
+}
+
+.emotion-1 {
+  display: table;
+  margin: 0;
+  padding: 0;
+  padding: 1px 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 12px;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-2 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-2:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-2:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-3 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  padding: 12px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.emotion-5 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.emotion-5 * {
+  box-sizing: border-box;
+}
+
+.emotion-6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-6:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-7 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-7:hover:not(:disabled) {
+  border-color: #3358CC;
+}
+
+.emotion-7:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-7:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-7:checked:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+.emotion-7:checked:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-7:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-7:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-7:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-7:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-7:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-7:checked:invalid:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-7:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-7:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-7:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-7:valid:focus:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-7:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-7:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-7:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-7:checked:valid:focus:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-7:checked:valid:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-7:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-7:disabled {
+  border-color: #F4F4F4;
+}
+
+.emotion-7:checked:disabled:not(:disabled) {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.emotion-7:checked:disabled:not(:disabled) svg {
+  fill: #C0C0C0;
+}
+
+.emotion-8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-9 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-9:disabled {
+  color: #C0C0C0;
+}
+
+<fieldset
+    class="emotion-0"
+  >
+    <legend
+      class="emotion-1"
+    >
+      medium legend
+    </legend>
+    <div
+      class="emotion-2"
+    >
+      <input
+        aria-describedby="mock-nk-1-assistive-text"
+        class="emotion-3"
+        id="mock-nk-1"
+        name="input-text-field-medium"
+        type="text"
+      />
+    </div>
+    <label
+      class="emotion-4"
+    >
+      <div
+        class="emotion-5"
+        role="presentation"
+      >
+        <div
+          class="emotion-6"
+          data-testid="checkbox-feedback"
+        />
+        <div
+          class="emotion-7"
+        >
+          <input
+            aria-describedby="mock-nk-1-assistive-text"
+            class="emotion-8"
+            id="mock-nk-1"
+            name="input-checkbox-medium"
+            type="checkbox"
+            value="tc"
+          />
+        </div>
+      </div>
+      <span
+        class="emotion-9"
+      >
+        Agree with T&C medium
+      </span>
+    </label>
+  </fieldset>
+</DocumentFragment>
+`;
+
+exports[`Fieldset renders fieldset with small form inputs 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+  min-inline-size: 0;
+}
+
+.emotion-1 {
+  display: table;
+  margin: 0;
+  padding: 0;
+  padding: 1px 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 12px;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 32px;
+}
+
+.emotion-2 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-2:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-2:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-3 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  padding: 8px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.emotion-5 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.emotion-5 * {
+  box-sizing: border-box;
+}
+
+.emotion-6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  -moz-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  -ms-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+}
+
+.emotion-6:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-7 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-7:hover:not(:disabled) {
+  border-color: #3358CC;
+}
+
+.emotion-7:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-7:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-7:checked:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+.emotion-7:checked:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-7:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-7:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-7:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-7:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-7:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-7:checked:invalid:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-7:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-7:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-7:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-7:valid:focus:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-7:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-7:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-7:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-7:checked:valid:focus:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-7:checked:valid:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-7:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-7:disabled {
+  border-color: #F4F4F4;
+}
+
+.emotion-7:checked:disabled:not(:disabled) {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.emotion-7:checked:disabled:not(:disabled) svg {
+  fill: #C0C0C0;
+}
+
+.emotion-8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-9 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-9:disabled {
+  color: #C0C0C0;
+}
+
+<fieldset
+    class="emotion-0"
+  >
+    <legend
+      class="emotion-1"
+    >
+      small legend
+    </legend>
+    <div
+      class="emotion-2"
+    >
+      <input
+        aria-describedby="mock-nk-1-assistive-text"
+        class="emotion-3"
+        id="mock-nk-1"
+        name="input-text-field-small"
+        type="text"
+      />
+    </div>
+    <label
+      class="emotion-4"
+    >
+      <div
+        class="emotion-5"
+        role="presentation"
+      >
+        <div
+          class="emotion-6"
+          data-testid="checkbox-feedback"
+        />
+        <div
+          class="emotion-7"
+        >
+          <input
+            aria-describedby="mock-nk-1-assistive-text"
+            class="emotion-8"
+            id="mock-nk-1"
+            name="input-checkbox-small"
+            type="checkbox"
+            value="tc"
+          />
+        </div>
+      </div>
+      <span
+        class="emotion-9"
+      >
+        Agree with T&C small
+      </span>
+    </label>
+  </fieldset>
+</DocumentFragment>
+`;
+
+exports[`Fieldset renders large legend 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+  min-inline-size: 0;
+}
+
+.emotion-1 {
+  display: table;
+  margin: 0;
+  padding: 0;
+  padding: 1px 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 12px;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<fieldset
+    class="emotion-0"
+  >
+    <legend
+      class="emotion-1"
+    >
+      Search Legend
+    </legend>
+    <label
+      for="search"
+    >
+      <input
+        id="search"
+        name="search"
+        type="text"
+      />
+      Search input:
+    </label>
+  </fieldset>
+</DocumentFragment>
+`;
+
+exports[`Fieldset renders medium legend 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+  min-inline-size: 0;
+}
+
+.emotion-1 {
+  display: table;
+  margin: 0;
+  padding: 0;
+  padding: 1px 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 12px;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<fieldset
+    class="emotion-0"
+  >
+    <legend
+      class="emotion-1"
+    >
+      Search Legend
+    </legend>
+    <label
+      for="search"
+    >
+      <input
+        id="search"
+        name="search"
+        type="text"
+      />
+      Search input:
+    </label>
+  </fieldset>
+</DocumentFragment>
+`;
+
+exports[`Fieldset renders small legend 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+  min-inline-size: 0;
+}
+
+.emotion-1 {
+  display: table;
+  margin: 0;
+  padding: 0;
+  padding: 1px 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 12px;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<fieldset
+    class="emotion-0"
+  >
+    <legend
+      class="emotion-1"
+    >
+      Search Legend
+    </legend>
+    <label
+      for="search"
+    >
+      <input
+        id="search"
+        name="search"
+        type="text"
+      />
+      Search input:
+    </label>
+  </fieldset>
+</DocumentFragment>
+`;
+
+exports[`Fieldset should render tags correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+  min-inline-size: 0;
+}
+
+<fieldset
+    class="emotion-0"
+  >
+    <label
+      for="search"
+    >
+      <input
+        id="search"
+        name="search"
+        type="text"
+      />
+      Search input:
+    </label>
+  </fieldset>
+</DocumentFragment>
+`;
+
+exports[`Fieldset should render with button inside the legend element 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+  min-inline-size: 0;
+}
+
+.emotion-1 {
+  display: table;
+  margin: 0;
+  padding: 0;
+  padding: 1px 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+<fieldset
+    class="emotion-0"
+  >
+    <legend
+      class="emotion-1"
+    >
+      <button
+        type="button"
+      >
+        Legend as a button
+      </button>
+    </legend>
+    <label
+      for="search"
+    >
+      <input
+        id="search"
+        name="search"
+        type="text"
+      />
+      Search input:
+    </label>
+  </fieldset>
+</DocumentFragment>
+`;
+
+exports[`Fieldset should render with legend 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+  min-inline-size: 0;
+}
+
+.emotion-1 {
+  display: table;
+  margin: 0;
+  padding: 0;
+  padding: 1px 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 12px;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<fieldset
+    class="emotion-0"
+  >
+    <legend
+      class="emotion-1"
+    >
+      Search Legend
+    </legend>
+    <label
+      for="search"
+    >
+      <input
+        id="search"
+        name="search"
+        type="text"
+      />
+      Search input:
+    </label>
+  </fieldset>
+</DocumentFragment>
+`;
+
+exports[`Fieldset should render with overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+  min-inline-size: 0;
+  background-color: #FFAD2C;
+  border-color: #4C33CC;
+  border-width: 1px;
+  border-style: solid;
+  padding: 4px;
+}
+
+.emotion-1 {
+  display: table;
+  margin: 0;
+  padding: 0;
+  padding: 1px 0;
+  background-color: #67CF86;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 8px;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+<fieldset
+    class="emotion-0"
+  >
+    <legend
+      class="emotion-1"
+    >
+      Search Legend
+    </legend>
+    <label
+      for="search"
+    >
+      <input
+        id="search"
+        name="search"
+        type="text"
+      />
+      Search input:
+    </label>
+  </fieldset>
+</DocumentFragment>
+`;
