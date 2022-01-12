@@ -575,55 +575,53 @@ const GridItem = styled.div`
   border: 1px solid orange;
 `;
 
-export const GridStory = () => {
-  const areas = {
-    xs: `"A"
+export const GridStory = () => (
+  <>
+    <GridLayout
+      columns={{md: '1fr 1fr', lg: '1fr 1fr 1fr 1fr'}}
+      rowGap={{xs: 'space010', md: 'space040'}}
+      columnGap={{md: 'space030', lg: 'space050'}}
+    >
+      <GridItem>1</GridItem>
+      <GridItem>2</GridItem>
+      <GridItem>3</GridItem>
+      <GridItem>4</GridItem>
+    </GridLayout>
+    <br />
+    <br />
+    <br />
+    <Divider />
+    <br />
+    <br />
+    <br />
+    <GridLayout
+      areas={{
+        xs: `
+         "A"
          "B"
          "C"
          "D"
          "E"
          `,
-    md: ` "A A"
+        md: ` 
+          "A A"
           "B C"
           "D E"`,
-    lg: `
-        "A B"
-        "A C"
-        "A D"
-        "A E"  
+        lg: `
+          "A B"
+          "A C"
+          "A D"
+          "A E"  
     `,
-  };
-
-  return (
-    <>
-      <GridLayout
-        rowGap={{xs: 'space010', md: 'space040'}}
-        columnGap={{md: 'space030', lg: 'space050'}}
-        columns={{md: '1fr 1fr', lg: '1fr 1fr 1fr 1fr'}}
-      >
-        <GridItem>1</GridItem>
-        <GridItem>2</GridItem>
-        <GridItem>3</GridItem>
-        <GridItem>4</GridItem>
-      </GridLayout>
-      <br />
-      <br />
-      <br />
-      <Divider />
-      <br />
-      <br />
-      <br />
-      <GridLayout
-        rowGap={{xs: 'space010', md: 'space040'}}
-        columnGap={{md: 'space030', lg: 'space050'}}
-        areas={areas}
-      >
-        <GridItem style={{gridArea: 'A'}}>A</GridItem>
-        <GridItem style={{gridArea: 'B'}}>B</GridItem>
-        <GridItem style={{gridArea: 'C'}}>C</GridItem>
-        <GridItem style={{gridArea: 'D'}}>D</GridItem>
-        <GridItem style={{gridArea: 'E'}}>E</GridItem>
-      </GridLayout>
-    </>
-  );
-};
+      }}
+      rowGap={{xs: 'space010', md: 'space040'}}
+      columnGap={{md: 'space030', lg: 'space050'}}
+    >
+      <GridItem style={{gridArea: 'A'}}>A</GridItem>
+      <GridItem style={{gridArea: 'B'}}>B</GridItem>
+      <GridItem style={{gridArea: 'C'}}>C</GridItem>
+      <GridItem style={{gridArea: 'D'}}>D</GridItem>
+      <GridItem style={{gridArea: 'E'}}>E</GridItem>
+    </GridLayout>
+  </>
+);
