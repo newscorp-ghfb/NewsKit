@@ -230,7 +230,7 @@ const EXAMPLE_CARDS = [
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Fonts | Newskit design system',
+      title: 'Fonts',
       description:
         'Fonts form an important part of the interface, establishing styles for content such as headlines, sub-headlines or paragraphs, as well as more functional styles for items such as labels, tags and messaging.',
     }}
