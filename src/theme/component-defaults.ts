@@ -200,97 +200,6 @@ export const componentDefaults = {
       stylePreset: 'uppercaseInkSubtle',
     },
   },
-  card: {
-    stylePreset: 'cardContainer',
-    horizontalRatio: '1:1',
-    mediaContainer: {
-      stylePreset: 'cardContainerMedia',
-      spaceInline: {
-        xs: 'space040',
-        sm: 'space040',
-        md: 'space050',
-        lg: 'space050',
-      },
-    },
-    teaserContainer: {
-      stylePreset: 'cardContainerTeaser',
-      spaceInset: 'spaceInsetSquish000',
-    },
-    actionsContainer: {
-      stylePreset: 'cardContainerActions',
-      minHeight: 'sizing080',
-      spaceInset: 'spaceInsetSquish000',
-    },
-    headline: {
-      nonInteractive: {
-        typographyPreset: {
-          xs: 'editorialHeadline020',
-          sm: 'editorialHeadline020',
-          md: 'editorialHeadline030',
-          lg: 'editorialHeadline050',
-        },
-        heading: {
-          stylePreset: 'inkContrast',
-        },
-        kicker: {
-          stylePreset: 'uppercaseInkBrand010',
-          spaceInline: {
-            xs: 'space020',
-            sm: 'space020',
-            md: 'space030',
-            lg: 'space030',
-          },
-        },
-      },
-      interactive: {
-        typographyPreset: {
-          xs: 'editorialHeadline020',
-          sm: 'editorialHeadline020',
-          md: 'editorialHeadline030',
-          lg: 'editorialHeadline050',
-        },
-        heading: {
-          stylePreset: 'headlineHeadingInteractive',
-        },
-        kicker: {
-          stylePreset: 'headlineKickerInteractive',
-          spaceInline: {
-            xs: 'space020',
-            sm: 'space020',
-            md: 'space030',
-            lg: 'space030',
-          },
-        },
-      },
-    },
-  },
-  cardInset: {
-    stylePreset: 'cardContainer',
-    horizontalRatio: '1:1',
-    mediaContainer: {
-      stylePreset: 'cardContainerMedia',
-      spaceInline: 'space000',
-    },
-    teaserContainer: {
-      stylePreset: 'cardContainerTeaser',
-      spaceInset: {
-        xs: 'spaceInset040',
-        sm: 'spaceInset040',
-        md: 'spaceInset050',
-        lg: 'spaceInset050',
-      },
-    },
-    actionsContainer: {
-      stylePreset: 'cardContainerActions',
-      minHeight: 'sizing000',
-      spaceInset: {
-        xs: 'spaceInsetSquish030',
-        sm: 'spaceInsetSquish030',
-        md: 'spaceInsetSquish040',
-        lg: 'spaceInsetSquish040',
-      },
-    },
-  },
   dateTime: {
     stylePreset: 'inkSubtle',
     typographyPreset: 'utilityMeta020',
@@ -372,26 +281,6 @@ export const componentDefaults = {
       xl: 'space050',
     },
   },
-  headline: {
-    typographyPreset: {
-      xs: 'editorialHeadline060',
-      sm: 'editorialHeadline060',
-      md: 'editorialHeadline070',
-      lg: 'editorialHeadline080',
-    },
-    heading: {
-      stylePreset: 'inkContrast',
-    },
-    kicker: {
-      stylePreset: 'uppercaseInkBrand010',
-      spaceInline: {
-        xs: 'space030',
-        sm: 'space030',
-        md: 'space040',
-        lg: 'space040',
-      },
-    },
-  },
   headlineH1: {
     stylePreset: 'inkContrast',
     typographyPreset: {
@@ -428,16 +317,6 @@ export const componentDefaults = {
   headlineH6: {
     stylePreset: 'inkContrast',
     typographyPreset: 'editorialSubheadline010',
-  },
-  icons: {
-    stylePreset: 'iconDefault',
-  },
-  image: {
-    stylePreset: 'imageSharp',
-  },
-  indeterminateProgressIndicator: {
-    stylePreset: 'iconDefault',
-    size: 'iconSize020',
   },
   inlineDrawer: {
     __extends: '{{componentDefaults.drawer}}',
@@ -565,18 +444,7 @@ export const componentDefaults = {
       spaceInset: 'spaceInset020',
     },
   },
-  orderedList: {
-    spaceInline: 'space040',
-    content: {
-      stylePreset: 'inkBase',
-      typographyPreset: 'editorialParagraph010',
-    },
-    counter: {
-      stylePreset: 'inkBase',
-      typographyPreset: 'editorialParagraph010',
-      minWidth: 'sizing050',
-    },
-  },
+
   overlay: {
     stylePreset: 'overlay',
     transitionPreset: 'fade',
@@ -756,38 +624,6 @@ export const componentDefaults = {
       spaceInline: 'space020',
     },
   },
-  slider: {
-    track: {
-      stylePreset: 'sliderTrack',
-      size: 'sizing030',
-    },
-    indicator: {
-      stylePreset: 'sliderIndicator',
-    },
-    thumb: {
-      stylePreset: 'sliderThumb',
-      size: 'sizing060',
-    },
-    thumbLabel: {
-      stylePreset: 'sliderThumbLabel',
-      typographyPreset: 'utilityLabel030',
-      space: 'space060',
-    },
-    labels: {
-      stylePreset: 'sliderLabels',
-      typographyPreset: 'utilityLabel020',
-      space: 'space030',
-    },
-  },
-  standfirst: {
-    styledText: {
-      stylePreset: 'inkBase',
-      typographyPreset: {
-        xs: 'editorialSubheadline010',
-        lg: 'editorialSubheadline020',
-      },
-    },
-  },
   structuredList: {
     divider: {
       stylePreset: 'divider',
@@ -850,109 +686,6 @@ export const componentDefaults = {
       endEnhancer: {
         iconSize: 'iconSize020',
         spaceInline: 'space020',
-      },
-    },
-  },
-  textInput: {
-    small: {
-      label: {
-        stylePreset: 'textInputLabel',
-        typographyPreset: 'utilityLabel030',
-        spaceStack: 'space040',
-        spaceInline: 'space010',
-      },
-      input: {
-        stylePreset: 'textInput',
-        spaceInset: 'spaceInset020',
-        minHeight: 'sizing060',
-        typographyPreset: 'utilityBody020',
-        spaceStack: 'space020',
-        leadingIcon: {
-          iconOffset: 'space030',
-          spaceInset: 'space070',
-        },
-        validationIcon: {
-          iconOffset: 'space030',
-          spaceInset: 'space070',
-          iconSize: 'iconSize020',
-        },
-      },
-      assistiveText: {
-        stylePreset: 'textInputAssistiveText',
-        typographyPreset: 'utilityLabel020',
-        minHeight: 'sizing030',
-      },
-    },
-    medium: {
-      label: {
-        stylePreset: 'textInputLabel',
-        typographyPreset: 'utilityLabel030',
-        spaceStack: 'space040',
-        spaceInline: 'space010',
-      },
-      input: {
-        stylePreset: 'textInput',
-        spaceInset: 'spaceInset030',
-        minHeight: 'sizing080',
-        typographyPreset: 'utilityBody020',
-        spaceStack: 'space020',
-        leadingIcon: {
-          iconOffset: 'space030',
-          spaceInset: 'space070',
-        },
-        validationIcon: {
-          iconOffset: 'space030',
-          spaceInset: 'space070',
-          iconSize: 'iconSize020',
-        },
-      },
-      assistiveText: {
-        stylePreset: 'textInputAssistiveText',
-        typographyPreset: 'utilityLabel020',
-        minHeight: 'sizing030',
-      },
-    },
-    large: {
-      label: {
-        stylePreset: 'textInputLabel',
-        typographyPreset: 'utilityLabel030',
-        spaceStack: 'space040',
-        spaceInline: 'space010',
-      },
-      input: {
-        stylePreset: 'textInput',
-        spaceInset: 'spaceInset030',
-        minHeight: 'sizing090',
-        typographyPreset: 'utilityBody030',
-        spaceStack: 'space020',
-        leadingIcon: {
-          iconOffset: 'space030',
-          spaceInset: 'space080',
-        },
-        validationIcon: {
-          iconOffset: 'space030',
-          spaceInset: 'space080',
-          iconSize: 'iconSize030',
-        },
-      },
-      assistiveText: {
-        stylePreset: 'textInputAssistiveText',
-        typographyPreset: 'utilityLabel030',
-        minHeight: 'sizing030',
-      },
-    },
-  },
-  titleBar: {
-    stylePreset: 'titleBar',
-    spaceInset: {
-      xs: 'spaceInsetSquish030',
-      lg: 'spaceInsetSquish040',
-    },
-    heading: {
-      typographyPreset: {
-        xs: 'editorialHeadline050',
-        md: 'editorialHeadline070',
-        lg: 'editorialHeadline080',
       },
     },
   },

@@ -182,7 +182,6 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 
 .emotion-13 {
   box-sizing: border-box;
-  color: inherit;
   padding: 24px;
 }
 

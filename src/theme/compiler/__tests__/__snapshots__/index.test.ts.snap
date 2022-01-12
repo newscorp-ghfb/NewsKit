@@ -395,97 +395,6 @@ Object {
       "stylePreset": "inkBase",
       "typographyPreset": "editorialCaption010",
     },
-    "card": Object {
-      "actionsContainer": Object {
-        "minHeight": "sizing080",
-        "spaceInset": "spaceInsetSquish000",
-        "stylePreset": "cardContainerActions",
-      },
-      "headline": Object {
-        "interactive": Object {
-          "heading": Object {
-            "stylePreset": "headlineHeadingInteractive",
-          },
-          "kicker": Object {
-            "spaceInline": Object {
-              "lg": "space030",
-              "md": "space030",
-              "sm": "space020",
-              "xs": "space020",
-            },
-            "stylePreset": "headlineKickerInteractive",
-          },
-          "typographyPreset": Object {
-            "lg": "editorialHeadline050",
-            "md": "editorialHeadline030",
-            "sm": "editorialHeadline020",
-            "xs": "editorialHeadline020",
-          },
-        },
-        "nonInteractive": Object {
-          "heading": Object {
-            "stylePreset": "inkContrast",
-          },
-          "kicker": Object {
-            "spaceInline": Object {
-              "lg": "space030",
-              "md": "space030",
-              "sm": "space020",
-              "xs": "space020",
-            },
-            "stylePreset": "uppercaseInkBrand010",
-          },
-          "typographyPreset": Object {
-            "lg": "editorialHeadline050",
-            "md": "editorialHeadline030",
-            "sm": "editorialHeadline020",
-            "xs": "editorialHeadline020",
-          },
-        },
-      },
-      "horizontalRatio": "1:1",
-      "mediaContainer": Object {
-        "spaceInline": Object {
-          "lg": "space050",
-          "md": "space050",
-          "sm": "space040",
-          "xs": "space040",
-        },
-        "stylePreset": "cardContainerMedia",
-      },
-      "stylePreset": "cardContainer",
-      "teaserContainer": Object {
-        "spaceInset": "spaceInsetSquish000",
-        "stylePreset": "cardContainerTeaser",
-      },
-    },
-    "cardInset": Object {
-      "actionsContainer": Object {
-        "minHeight": "sizing000",
-        "spaceInset": Object {
-          "lg": "spaceInsetSquish040",
-          "md": "spaceInsetSquish040",
-          "sm": "spaceInsetSquish030",
-          "xs": "spaceInsetSquish030",
-        },
-        "stylePreset": "cardContainerActions",
-      },
-      "horizontalRatio": "1:1",
-      "mediaContainer": Object {
-        "spaceInline": "space000",
-        "stylePreset": "cardContainerMedia",
-      },
-      "stylePreset": "cardContainer",
-      "teaserContainer": Object {
-        "spaceInset": Object {
-          "lg": "spaceInset050",
-          "md": "spaceInset050",
-          "sm": "spaceInset040",
-          "xs": "spaceInset040",
-        },
-        "stylePreset": "cardContainerTeaser",
-      },
-    },
     "checkbox": Object {
       "large": Object {
         "feedback": Object {
@@ -629,26 +538,6 @@ Object {
         "xs": "space040",
       },
     },
-    "headline": Object {
-      "heading": Object {
-        "stylePreset": "inkContrast",
-      },
-      "kicker": Object {
-        "spaceInline": Object {
-          "lg": "space040",
-          "md": "space040",
-          "sm": "space030",
-          "xs": "space030",
-        },
-        "stylePreset": "uppercaseInkBrand010",
-      },
-      "typographyPreset": Object {
-        "lg": "editorialHeadline080",
-        "md": "editorialHeadline070",
-        "sm": "editorialHeadline060",
-        "xs": "editorialHeadline060",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -685,16 +574,6 @@ Object {
     "headlineH6": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": "editorialSubheadline010",
-    },
-    "icons": Object {
-      "stylePreset": "iconDefault",
-    },
-    "image": Object {
-      "stylePreset": "imageSharp",
-    },
-    "indeterminateProgressIndicator": Object {
-      "size": "iconSize020",
-      "stylePreset": "iconDefault",
     },
     "inlineDrawer": Object {
       "closeButton": Object {
@@ -867,18 +746,6 @@ Object {
         },
         "zIndex": 80,
       },
-    },
-    "orderedList": Object {
-      "content": Object {
-        "stylePreset": "inkBase",
-        "typographyPreset": "editorialParagraph010",
-      },
-      "counter": Object {
-        "minWidth": "sizing050",
-        "stylePreset": "inkBase",
-        "typographyPreset": "editorialParagraph010",
-      },
-      "spaceInline": "space040",
     },
     "overlay": Object {
       "stylePreset": "overlay",
@@ -1059,38 +926,6 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
-    "slider": Object {
-      "indicator": Object {
-        "stylePreset": "sliderIndicator",
-      },
-      "labels": Object {
-        "space": "space030",
-        "stylePreset": "sliderLabels",
-        "typographyPreset": "utilityLabel020",
-      },
-      "thumb": Object {
-        "size": "sizing060",
-        "stylePreset": "sliderThumb",
-      },
-      "thumbLabel": Object {
-        "space": "space060",
-        "stylePreset": "sliderThumbLabel",
-        "typographyPreset": "utilityLabel030",
-      },
-      "track": Object {
-        "size": "sizing030",
-        "stylePreset": "sliderTrack",
-      },
-    },
-    "standfirst": Object {
-      "styledText": Object {
-        "stylePreset": "inkBase",
-        "typographyPreset": Object {
-          "lg": "editorialSubheadline020",
-          "xs": "editorialSubheadline010",
-        },
-      },
-    },
     "structuredList": Object {
       "divider": Object {
         "stylePreset": "divider",
@@ -1154,109 +989,6 @@ Object {
         "typographyPreset": "utilityBody020",
         "width": "100%",
       },
-    },
-    "textInput": Object {
-      "large": Object {
-        "assistiveText": Object {
-          "minHeight": "sizing030",
-          "stylePreset": "textInputAssistiveText",
-          "typographyPreset": "utilityLabel030",
-        },
-        "input": Object {
-          "leadingIcon": Object {
-            "iconOffset": "space030",
-            "spaceInset": "space080",
-          },
-          "minHeight": "sizing090",
-          "spaceInset": "spaceInset030",
-          "spaceStack": "space020",
-          "stylePreset": "textInput",
-          "typographyPreset": "utilityBody030",
-          "validationIcon": Object {
-            "iconOffset": "space030",
-            "iconSize": "iconSize030",
-            "spaceInset": "space080",
-          },
-        },
-        "label": Object {
-          "spaceInline": "space010",
-          "spaceStack": "space040",
-          "stylePreset": "textInputLabel",
-          "typographyPreset": "utilityLabel030",
-        },
-      },
-      "medium": Object {
-        "assistiveText": Object {
-          "minHeight": "sizing030",
-          "stylePreset": "textInputAssistiveText",
-          "typographyPreset": "utilityLabel020",
-        },
-        "input": Object {
-          "leadingIcon": Object {
-            "iconOffset": "space030",
-            "spaceInset": "space070",
-          },
-          "minHeight": "sizing080",
-          "spaceInset": "spaceInset030",
-          "spaceStack": "space020",
-          "stylePreset": "textInput",
-          "typographyPreset": "utilityBody020",
-          "validationIcon": Object {
-            "iconOffset": "space030",
-            "iconSize": "iconSize020",
-            "spaceInset": "space070",
-          },
-        },
-        "label": Object {
-          "spaceInline": "space010",
-          "spaceStack": "space040",
-          "stylePreset": "textInputLabel",
-          "typographyPreset": "utilityLabel030",
-        },
-      },
-      "small": Object {
-        "assistiveText": Object {
-          "minHeight": "sizing030",
-          "stylePreset": "textInputAssistiveText",
-          "typographyPreset": "utilityLabel020",
-        },
-        "input": Object {
-          "leadingIcon": Object {
-            "iconOffset": "space030",
-            "spaceInset": "space070",
-          },
-          "minHeight": "sizing060",
-          "spaceInset": "spaceInset020",
-          "spaceStack": "space020",
-          "stylePreset": "textInput",
-          "typographyPreset": "utilityBody020",
-          "validationIcon": Object {
-            "iconOffset": "space030",
-            "iconSize": "iconSize020",
-            "spaceInset": "space070",
-          },
-        },
-        "label": Object {
-          "spaceInline": "space010",
-          "spaceStack": "space040",
-          "stylePreset": "textInputLabel",
-          "typographyPreset": "utilityLabel030",
-        },
-      },
-    },
-    "titleBar": Object {
-      "heading": Object {
-        "typographyPreset": Object {
-          "lg": "editorialHeadline080",
-          "md": "editorialHeadline070",
-          "xs": "editorialHeadline050",
-        },
-      },
-      "spaceInset": Object {
-        "lg": "spaceInsetSquish040",
-        "xs": "spaceInsetSquish030",
-      },
-      "stylePreset": "titleBar",
     },
     "toast": Object {
       "content": Object {
@@ -1555,12 +1287,6 @@ Object {
         "iconColor": "#FFFFFF",
       },
     },
-    "cardContainer": Object {
-      "base": Object {
-        "backgroundColor": "#FFFFFF",
-        "color": "#2E2E2E",
-      },
-    },
     "checkboxFeedback": Object {
       "base": Object {
         "backgroundColor": "transparent",
@@ -1699,142 +1425,6 @@ Object {
         "backgroundColor": "#FFFFFF",
         "borderRadius": "0",
         "boxShadow": "0 20px 32px 0 rgba(10,10,10,0.08)",
-      },
-    },
-    "headlineHeadingInteractive": Object {
-      "active": Object {
-        "color": "#213A82",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "#2E2E2E",
-      },
-      "hover": Object {
-        "color": "#2B4AAB",
-        "textDecoration": "underline",
-      },
-      "visited": Object {
-        "color": "#5E44E4",
-      },
-    },
-    "headlineKickerInteractive": Object {
-      "active": Object {
-        "color": "#213A82",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "#3358CC",
-      },
-      "hover": Object {
-        "color": "#2B4AAB",
-        "textDecoration": "underline",
-      },
-      "visited": Object {
-        "color": "#5E44E4",
-      },
-    },
-    "iconDefault": Object {
-      "base": Object {
-        "iconColor": "#2E2E2E",
-      },
-    },
-    "iconNegative": Object {
-      "base": Object {
-        "iconColor": "#D20600",
-      },
-    },
-    "iconPositive": Object {
-      "base": Object {
-        "iconColor": "#0A782A",
-      },
-    },
-    "iconSocialFacebook": Object {
-      "base": Object {
-        "iconColor": "#1877F2",
-      },
-    },
-    "iconSocialGitHub": Object {
-      "base": Object {
-        "iconColor": "#000000",
-      },
-    },
-    "iconSocialInstagram": Object {
-      "base": Object {
-        "iconColor": "#C32AA3",
-      },
-    },
-    "iconSocialReddit": Object {
-      "base": Object {
-        "iconColor": "#FF4500",
-      },
-    },
-    "iconSocialTwitter": Object {
-      "base": Object {
-        "iconColor": "#1DA1F2",
-      },
-    },
-    "iconSocialWhatsApp": Object {
-      "base": Object {
-        "iconColor": "#25D366",
-      },
-    },
-    "iconSocialYoutube": Object {
-      "base": Object {
-        "iconColor": "#FF0000",
-      },
-    },
-    "imageCircle": Object {
-      "base": Object {
-        "borderRadius": "50%",
-      },
-      "loading": Object {
-        "backgroundColor": "#F4F4F4",
-        "iconColor": "#C0C0C0",
-      },
-    },
-    "imageDefault": Object {
-      "base": Object {
-        "borderRadius": "8px",
-      },
-      "loading": Object {
-        "backgroundColor": "#F4F4F4",
-        "iconColor": "#C0C0C0",
-      },
-    },
-    "imageRoundedLarge": Object {
-      "base": Object {
-        "borderRadius": "24px",
-      },
-      "loading": Object {
-        "backgroundColor": "#F4F4F4",
-        "iconColor": "#C0C0C0",
-      },
-    },
-    "imageRoundedMedium": Object {
-      "base": Object {
-        "borderRadius": "12px",
-      },
-      "loading": Object {
-        "backgroundColor": "#F4F4F4",
-        "iconColor": "#C0C0C0",
-      },
-    },
-    "imageRoundedSmall": Object {
-      "base": Object {
-        "borderRadius": "4px",
-      },
-      "loading": Object {
-        "backgroundColor": "#F4F4F4",
-        "iconColor": "#C0C0C0",
-      },
-    },
-    "imageSharp": Object {
-      "base": Object {
-        "borderRadius": "0",
-      },
-      "loading": Object {
-        "backgroundColor": "#F4F4F4",
-        "iconColor": "#C0C0C0",
       },
     },
     "indeterminateProgressIndicatorInverse": Object {
@@ -2257,64 +1847,6 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "#FAFAFA",
-      },
-    },
-    "textInput": Object {
-      "base": Object {
-        "backgroundColor": "transparent",
-        "borderColor": "#DEDEDE",
-        "borderRadius": "8px",
-        "borderStyle": "solid",
-        "borderWidth": "1px",
-        "color": "#2E2E2E",
-        "placeholderColor": "#535353",
-        "textOverflow": "ellipsis",
-      },
-      "disabled": Object {
-        "borderColor": "#F4F4F4",
-        "color": "#C0C0C0",
-      },
-      "focus": Object {
-        "backgroundColor": "#FAFAFA",
-        "borderColor": "#3358CC",
-      },
-      "hover": Object {
-        "backgroundColor": "#FAFAFA",
-      },
-      "invalid": Object {
-        "borderColor": "#EF1703",
-        "caretColor": "#D20600",
-      },
-      "valid": Object {
-        "borderColor": "#23A248",
-        "caretColor": "#0A782A",
-      },
-    },
-    "textInputAssistiveText": Object {
-      "base": Object {
-        "color": "#535353",
-      },
-      "disabled": Object {
-        "color": "#C0C0C0",
-      },
-      "invalid": Object {
-        "color": "#D20600",
-      },
-      "valid": Object {
-        "color": "#0A782A",
-      },
-    },
-    "textInputLabel": Object {
-      "base": Object {
-        "color": "#0A0A0A",
-      },
-      "disabled": Object {
-        "color": "#C0C0C0",
-      },
-    },
-    "titleBar": Object {
-      "base": Object {
-        "backgroundColor": "transparent",
       },
     },
     "toastInformative": Object {
