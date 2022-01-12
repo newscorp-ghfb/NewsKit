@@ -12,7 +12,7 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -81,7 +81,7 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
