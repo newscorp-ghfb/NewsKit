@@ -42,7 +42,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -76,7 +76,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -236,7 +236,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -270,7 +270,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -383,7 +383,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -417,7 +417,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -564,7 +564,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -598,7 +598,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
