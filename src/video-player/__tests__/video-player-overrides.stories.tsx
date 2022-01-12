@@ -120,6 +120,9 @@ export const StoryVideoPlayerPlayButtonOverrides = () => (
   </ThemeProvider>
 );
 StoryVideoPlayerPlayButtonOverrides.storyName = 'play-button-overrides';
+StoryVideoPlayerPlayButtonOverrides.parameters = {
+  eyes: {waitBeforeCapture: '[data-testid="bc-video-player"]'},
+};
 
 export const StoryVideoPlayerSeekBarOverrides = () => (
   <ThemeProvider theme={myCustomTheme}>
@@ -243,6 +246,9 @@ export const StoryVideoPlayerDockTextOverrides = () => (
   </ThemeProvider>
 );
 StoryVideoPlayerDockTextOverrides.storyName = 'doc-text-overrides';
+StoryVideoPlayerPlayButtonOverrides.parameters = {
+  eyes: {waitBeforeCapture: '[data-testid="bc-video-player"]'},
+};
 
 export const StoryVideoPlayerMiniCardOverlayOverrides = () => (
   <ThemeProvider theme={myCustomTheme}>
