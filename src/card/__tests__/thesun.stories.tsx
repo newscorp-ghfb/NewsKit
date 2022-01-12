@@ -12,6 +12,7 @@ import {Divider} from '../../divider';
 import {TitleBar} from '../../title-bar';
 import {Button} from '../../button';
 import {Image} from '../../image';
+import {Heading1} from '../..';
 
 export default {
   title: 'NewsKit Light/the-sun',
@@ -277,24 +278,43 @@ const CardSmall = ({title = '', image = '', href = ''}) => (
   </>
 );
 
-const SectionHeaderTitleStack = styled.div`
-  display: grid;
-  grid-template-columns: auto 1fr;
-  width: 800px;
-  align-items: end;
-`;
+// const SectionHeaderTitleStack = styled.div`
+//   display: grid;
+//   grid-template-columns: auto 1fr;
+//   align-items: end;
+// `;
+
+const TitleBarWithGrid = ({title, href}) => (
+  <Block spaceInset="space030">
+    <GridLayout
+      alignItems="center"
+      columnGap="space030"
+      columns={{
+        xs: 'auto 1fr',
+        md: 'auto 1fr auto',
+      }}
+    >
+      <Heading1>{title}</Heading1>
+      <Divider />
+      <Visible md lg xl>
+        <Button href={href}>read more</Button>
+      </Visible>
+    </GridLayout>
+  </Block>
+);
 
 const SectionHeader = ({title, href}) => {
-  const button = () => <Button href={href}>read more</Button>;
+  return <TitleBarWithGrid title={title} href={href} />;
+  // const button = () => <Button href={href}>read more</Button>;
 
-  return (
-    <TitleBar actionItem={button}>
-      <SectionHeaderTitleStack>
-        <span>{title}</span>
-        <Divider />
-      </SectionHeaderTitleStack>
-    </TitleBar>
-  );
+  // return (
+  //   <TitleBar actionItem={button}>
+  //     <Stack flow="horizontal-bottom">
+  //       <span>{title}</span>
+  //       <Divider />
+  //     </Stack>
+  //   </TitleBar>
+  // );
 };
 
 const SectionFooter = ({href}) => (
@@ -304,7 +324,7 @@ const SectionFooter = ({href}) => (
         <Divider />
       </StackChild>
 
-      <Button href={href}>More</Button>
+      <Button href={href}>Read more</Button>
 
       <StackChild alignSelf={AlignSelfValues.Stretch}>
         <Divider />
@@ -473,7 +493,7 @@ const BlockLayoutSpace = () => (
 );
 
 export const StoryTheSun3 = () => (
-  <Section title="Sport" href="/?sport">
+  <Section title="Heading here" href="/?sport">
     <BlockLayoutTeaser name="variant-1" data={news} />
 
     <BlockLayoutSpace />
