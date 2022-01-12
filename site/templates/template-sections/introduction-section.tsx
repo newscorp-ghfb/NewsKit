@@ -24,6 +24,7 @@ export const IntroductionSection: React.FC<IntroductionSectionProps> = ({
         <PageIntroduction {...pageIntroduction} />
         {meta && (
           <ComponentPageCell>
+            <Block spaceStack="space060" />
             <Meta {...meta} />
           </ComponentPageCell>
         )}
