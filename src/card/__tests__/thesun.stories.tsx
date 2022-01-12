@@ -527,9 +527,10 @@ type GridLayoutProps = {
   justifyItems?: MQ<string>;
   alignItems?: MQ<string>;
   areas?: MQ<string>;
+  children?: React.ReactNode;
 };
 
-const GridLayout = styled.div<GridLayoutProps>`
+const StyledGridLayout = styled.div<GridLayoutProps>`
   display: grid;
   ${handleResponsiveProp(
     {rowGap: GRID_DEFAULT_PROPS.rowGap},
@@ -585,6 +586,65 @@ const GridLayout = styled.div<GridLayoutProps>`
   )}
 `;
 
+const capitalize = s => {
+  if (typeof s !== 'string') return '';
+  return s.charAt(0).toUpperCase() + s.slice(1);
+};
+
+const extractAreas = ariaString =>
+  ariaString
+    .replaceAll('\n', '')
+    .replaceAll('"', '')
+    .replace(/  +/g, ' ')
+    .trim()
+    .split(' ');
+
+const makeUniq = (array: string[]) => [...new Set(array)];
+
+const getAreasList = (areas: MQ<string>): string[] => {
+  if (typeof areas === 'string') {
+    return makeUniq(extractAreas(areas));
+  } else if (typeof areas === 'object') {
+    const list = Object.values(areas).reduce((acc, val) => {
+      const filtered = extractAreas(val);
+      acc.push(...filtered);
+      return acc;
+    }, []);
+
+    return makeUniq(list).filter(Boolean);
+  }
+
+  return [];
+};
+
+const GridLayoutArea = styled.div<{area: string}>`
+  grid-area: ${props => props.area};
+`;
+
+const GridLayout = ({children, ...props}: GridLayoutProps) => {
+  const {areas} = props;
+
+  const areasNames = getAreasList(areas);
+  const Areas = {};
+
+  const isFunctionWithAreas =
+    typeof children === 'function' && areasNames.length > 0;
+
+  if (isFunctionWithAreas) {
+    areasNames.forEach(area => {
+      Areas[capitalize(area)] = props => (
+        <GridLayoutArea area={area} {...props} />
+      );
+    });
+  }
+
+  return (
+    <StyledGridLayout {...props}>
+      {isFunctionWithAreas ? children(Areas) : children}
+    </StyledGridLayout>
+  );
+};
+
 const GridItem = styled.div`
   padding: 10px;
   border: 1px solid orange;
@@ -637,6 +697,58 @@ export const GridStory = () => (
       <GridItem style={{gridArea: 'C'}}>C</GridItem>
       <GridItem style={{gridArea: 'D'}}>D</GridItem>
       <GridItem style={{gridArea: 'E'}}>E</GridItem>
+    </GridLayout>
+
+    <br />
+    <br />
+    <br />
+    <Divider />
+    <br />
+    <br />
+    <br />
+
+    <GridLayout
+      areas={{
+        xs: `
+         "A"
+         "B"
+         "C"
+         "D"
+         "E"
+         `,
+        md: ` 
+          "A A"
+          "B C"
+          "D E"`,
+        lg: `
+          "A B"
+          "A C"
+          "A D"
+          "A E"  
+    `,
+      }}
+      rowGap={{xs: 'space010', md: 'space040'}}
+      columnGap={{md: 'space030', lg: 'space050'}}
+    >
+      {Arias => (
+        <>
+          <Arias.A>
+            <GridItem>A</GridItem>
+          </Arias.A>
+          <Arias.B>
+            <GridItem>B</GridItem>
+          </Arias.B>
+          <Arias.C>
+            <GridItem>C</GridItem>
+          </Arias.C>
+          <Arias.D>
+            <GridItem>D</GridItem>
+          </Arias.D>
+          <Arias.E>
+            <GridItem>E</GridItem>
+          </Arias.E>
+        </>
+      )}
     </GridLayout>
   </>
 );
