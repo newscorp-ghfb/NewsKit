@@ -47,7 +47,7 @@ export const StoryDefaultVideoPlayer = () => {
 };
 StoryDefaultVideoPlayer.storyName = 'video-default';
 StoryDefaultVideoPlayer.parameters = {
-  eyes: {waitBeforeCapture: '[data-testid="bc-video-player"]'},
+  eyes: {waitBeforeCapture: 'div.vjs-poster'},
 };
 
 export const StoryPlaylistsVideoPlayer = () => {
@@ -78,7 +78,7 @@ export const StoryPlaylistsVideoPlayer = () => {
 };
 StoryPlaylistsVideoPlayer.storyName = 'playlist-video-default';
 StoryDefaultVideoPlayer.parameters = {
-  eyes: {waitBeforeCapture: '[data-testid="bc-video-player"]'},
+  eyes: {waitBeforeCapture: 'div.vjs-poster'},
 };
 
 export const StoryCardWithVideo = () => (
@@ -112,5 +112,5 @@ export const StoryCardWithVideo = () => (
 );
 StoryCardWithVideo.storyName = 'video-in-card';
 StoryDefaultVideoPlayer.parameters = {
-  eyes: {waitBeforeCapture: '[data-testid="bc-video-player"]'},
+  eyes: {waitBeforeCapture: 'div.vjs-poster'},
 };
