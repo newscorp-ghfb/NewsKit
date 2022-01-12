@@ -49,7 +49,7 @@ exports[`Content Primary renders with description and children 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -72,7 +72,7 @@ exports[`Content Primary renders with description and children 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -95,7 +95,7 @@ exports[`Content Primary renders with description and children 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -118,7 +118,7 @@ exports[`Content Primary renders with description and children 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -214,7 +214,7 @@ exports[`Content Primary renders with description only 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -237,7 +237,7 @@ exports[`Content Primary renders with description only 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -260,7 +260,7 @@ exports[`Content Primary renders with description only 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -283,7 +283,7 @@ exports[`Content Primary renders with description only 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -352,7 +352,7 @@ exports[`Content Primary renders with headline and children 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -375,7 +375,7 @@ exports[`Content Primary renders with headline and children 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -398,7 +398,7 @@ exports[`Content Primary renders with headline and children 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -421,7 +421,7 @@ exports[`Content Primary renders with headline and children 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -519,7 +519,7 @@ exports[`Content Primary renders with headline and description 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -542,7 +542,7 @@ exports[`Content Primary renders with headline and description 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -565,7 +565,7 @@ exports[`Content Primary renders with headline and description 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -588,7 +588,7 @@ exports[`Content Primary renders with headline and description 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -654,7 +654,7 @@ exports[`Content Primary renders with headline and description 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -677,7 +677,7 @@ exports[`Content Primary renders with headline and description 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -700,7 +700,7 @@ exports[`Content Primary renders with headline and description 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -723,7 +723,7 @@ exports[`Content Primary renders with headline and description 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -792,7 +792,7 @@ exports[`Content Primary renders with headline only 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -815,7 +815,7 @@ exports[`Content Primary renders with headline only 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -838,7 +838,7 @@ exports[`Content Primary renders with headline only 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -861,7 +861,7 @@ exports[`Content Primary renders with headline only 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -932,7 +932,7 @@ exports[`Content Primary renders with headline, description and content 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -955,7 +955,7 @@ exports[`Content Primary renders with headline, description and content 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -978,7 +978,7 @@ exports[`Content Primary renders with headline, description and content 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1001,7 +1001,7 @@ exports[`Content Primary renders with headline, description and content 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1067,7 +1067,7 @@ exports[`Content Primary renders with headline, description and content 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1090,7 +1090,7 @@ exports[`Content Primary renders with headline, description and content 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1113,7 +1113,7 @@ exports[`Content Primary renders with headline, description and content 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1136,7 +1136,7 @@ exports[`Content Primary renders with headline, description and content 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1264,7 +1264,7 @@ exports[`Content Secondary renders with description and children 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1287,7 +1287,7 @@ exports[`Content Secondary renders with description and children 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1310,7 +1310,7 @@ exports[`Content Secondary renders with description and children 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1333,7 +1333,7 @@ exports[`Content Secondary renders with description and children 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1429,7 +1429,7 @@ exports[`Content Secondary renders with description only 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1452,7 +1452,7 @@ exports[`Content Secondary renders with description only 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1475,7 +1475,7 @@ exports[`Content Secondary renders with description only 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1498,7 +1498,7 @@ exports[`Content Secondary renders with description only 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1567,7 +1567,7 @@ exports[`Content Secondary renders with headline and children 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1590,7 +1590,7 @@ exports[`Content Secondary renders with headline and children 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1613,7 +1613,7 @@ exports[`Content Secondary renders with headline and children 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1636,7 +1636,7 @@ exports[`Content Secondary renders with headline and children 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1732,7 +1732,7 @@ exports[`Content Secondary renders with headline and description 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1755,7 +1755,7 @@ exports[`Content Secondary renders with headline and description 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1778,7 +1778,7 @@ exports[`Content Secondary renders with headline and description 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1801,7 +1801,7 @@ exports[`Content Secondary renders with headline and description 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1865,7 +1865,7 @@ exports[`Content Secondary renders with headline and description 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1888,7 +1888,7 @@ exports[`Content Secondary renders with headline and description 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1911,7 +1911,7 @@ exports[`Content Secondary renders with headline and description 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1934,7 +1934,7 @@ exports[`Content Secondary renders with headline and description 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2003,7 +2003,7 @@ exports[`Content Secondary renders with headline only 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2026,7 +2026,7 @@ exports[`Content Secondary renders with headline only 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2049,7 +2049,7 @@ exports[`Content Secondary renders with headline only 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2072,7 +2072,7 @@ exports[`Content Secondary renders with headline only 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2141,7 +2141,7 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2164,7 +2164,7 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2187,7 +2187,7 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2210,7 +2210,7 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2274,7 +2274,7 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2297,7 +2297,7 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2320,7 +2320,7 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2343,7 +2343,7 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2483,7 +2483,7 @@ exports[`Content Tertiary renders with description and children 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2506,7 +2506,7 @@ exports[`Content Tertiary renders with description and children 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2529,7 +2529,7 @@ exports[`Content Tertiary renders with description and children 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2552,7 +2552,7 @@ exports[`Content Tertiary renders with description and children 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2648,7 +2648,7 @@ exports[`Content Tertiary renders with description only 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2671,7 +2671,7 @@ exports[`Content Tertiary renders with description only 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2694,7 +2694,7 @@ exports[`Content Tertiary renders with description only 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2717,7 +2717,7 @@ exports[`Content Tertiary renders with description only 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2786,7 +2786,7 @@ exports[`Content Tertiary renders with headline and children 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2809,7 +2809,7 @@ exports[`Content Tertiary renders with headline and children 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2832,7 +2832,7 @@ exports[`Content Tertiary renders with headline and children 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2855,7 +2855,7 @@ exports[`Content Tertiary renders with headline and children 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2951,7 +2951,7 @@ exports[`Content Tertiary renders with headline and description 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2974,7 +2974,7 @@ exports[`Content Tertiary renders with headline and description 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2997,7 +2997,7 @@ exports[`Content Tertiary renders with headline and description 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3020,7 +3020,7 @@ exports[`Content Tertiary renders with headline and description 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3084,7 +3084,7 @@ exports[`Content Tertiary renders with headline and description 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3107,7 +3107,7 @@ exports[`Content Tertiary renders with headline and description 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3130,7 +3130,7 @@ exports[`Content Tertiary renders with headline and description 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3153,7 +3153,7 @@ exports[`Content Tertiary renders with headline and description 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3222,7 +3222,7 @@ exports[`Content Tertiary renders with headline only 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3245,7 +3245,7 @@ exports[`Content Tertiary renders with headline only 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3268,7 +3268,7 @@ exports[`Content Tertiary renders with headline only 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3291,7 +3291,7 @@ exports[`Content Tertiary renders with headline only 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3360,7 +3360,7 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3383,7 +3383,7 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3406,7 +3406,7 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3429,7 +3429,7 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3493,7 +3493,7 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3516,7 +3516,7 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3539,7 +3539,7 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -3562,7 +3562,7 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 

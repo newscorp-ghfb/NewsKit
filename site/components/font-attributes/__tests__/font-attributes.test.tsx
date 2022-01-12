@@ -34,7 +34,7 @@ describe('FontAttributes', () => {
 
   test('renders with fontLetterSpacing token', () => {
     const props: FontAttributesProps = {
-      fontLetterSpacing: 'fontLetterSpacing010',
+      fontLetterSpacing: 'fontLetterSpacing030',
     };
     const fragment = renderToFragmentWithTheme(FontAttributes, props);
     expect(fragment).toMatchSnapshot();

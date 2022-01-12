@@ -34,7 +34,7 @@ exports[`Assistive Text renders large AssistiveText 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -100,7 +100,7 @@ exports[`Assistive Text renders medium AssistiveText 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -166,7 +166,7 @@ exports[`Assistive Text renders small AssistiveText 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -228,7 +228,7 @@ exports[`Assistive Text should render disabled Assistive Text 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -287,7 +287,7 @@ exports[`Assistive Text should render invalid Assistive Text 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -369,7 +369,7 @@ exports[`Assistive Text should render with enhancer 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 

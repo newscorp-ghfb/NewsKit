@@ -16,7 +16,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding-top: 8px;
   padding-bottom: 8px;
   box-shadow: 0 4px 8px 0 rgba(10,10,10,0.08);
@@ -465,7 +465,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #0A0A0A;
   box-sizing: border-box;
@@ -488,7 +488,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #535353;
   box-sizing: border-box;
@@ -1270,7 +1270,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding-top: 8px;
   padding-bottom: 8px;
   box-shadow: 0 4px 8px 0 rgba(10,10,10,0.08);
@@ -1719,7 +1719,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #0A0A0A;
   box-sizing: border-box;
@@ -1742,7 +1742,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #535353;
   box-sizing: border-box;
@@ -2524,7 +2524,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding-top: 8px;
   padding-bottom: 8px;
   box-shadow: 0 4px 8px 0 rgba(10,10,10,0.08);
@@ -2973,7 +2973,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #535353;
   box-sizing: border-box;
