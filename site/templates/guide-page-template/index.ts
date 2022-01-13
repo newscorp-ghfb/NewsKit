@@ -1,2 +1,2 @@
-export * from '../types';
-export * from '../guide-page-template';
+export * from './types';
+export * from './guide-page-template';
