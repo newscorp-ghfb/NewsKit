@@ -1486,6 +1486,65 @@ exports[`Media List renders with feature cardscards 1`] = `
   justify-content: center;
 }
 
+.emotion-36 {
+  margin: 0;
+  color: rgba(255,255,255,0.8);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.emotion-36 svg {
+  fill: rgba(255,255,255,0.8);
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-36 {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-36::before {
+    content: '';
+    margin-bottom: -0.403em;
+    display: block;
+  }
+
+  .emotion-36::after {
+    content: '';
+    margin-top: -0.4em;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-36 {
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-36::before {
+    content: '';
+    margin-bottom: -0.403em;
+    display: block;
+  }
+
+  .emotion-36::after {
+    content: '';
+    margin-top: -0.4em;
+    display: block;
+  }
+}
+
 .emotion-45 {
   box-sizing: border-box;
   overflow: hidden;
@@ -1653,7 +1712,7 @@ exports[`Media List renders with feature cardscards 1`] = `
                       class="emotion-14"
                     >
                       <p
-                        class="emotion-15"
+                        class="emotion-36"
                       >
                         This is a feature card.
                       </p>

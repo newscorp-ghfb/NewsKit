@@ -148,6 +148,7 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
                 <TextBlock
                   stylePreset="inkWhiteSubtle"
                   typographyPreset={descriptionTypographyPreset}
+                  lineTruncation="2"
                 >
                   {description}
                 </TextBlock>

@@ -762,6 +762,10 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 
 .emotion-12 {
   margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .emotion-13 {
@@ -1575,6 +1579,10 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 
 .emotion-12 {
   margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 <div
@@ -2849,6 +2857,10 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 .emotion-11 {
   margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 <div
@@ -3619,6 +3631,10 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .emotion-12::before {
