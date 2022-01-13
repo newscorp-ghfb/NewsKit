@@ -7,6 +7,8 @@ import {useTheme} from '../theme';
 import {Block} from '../block';
 import {TextBlock} from '../text-block';
 import {BylineProps, BylineData} from './types';
+import defaults from './defaults';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const InlineBlock = styled(Block)`
   display: inline-flex;
@@ -66,7 +68,10 @@ const renderLink = (
 const isLastItem = (currentIndex: number, length: number) =>
   currentIndex === length - 1;
 
-export const Byline: React.FC<BylineProps> = ({bylineData, overrides}) => {
+export const ThemelessByline: React.FC<BylineProps> = ({
+  bylineData,
+  overrides,
+}) => {
   const theme = useTheme();
   const spaceStack = getToken({theme, overrides}, 'byline', '', 'spaceStack');
 
@@ -179,3 +184,7 @@ export const Byline: React.FC<BylineProps> = ({bylineData, overrides}) => {
     </Stack>
   );
 };
+
+export const Byline = withOwnTheme(ThemelessByline)({
+  defaults,
+});
