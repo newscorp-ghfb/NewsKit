@@ -116,6 +116,8 @@ Array [
   "TextInput",
   "TextInputSize",
   "ThemeProvider",
+  "ThemelessAssistiveText",
+  "ThemelessByline",
   "ThemelessLabel",
   "ThemelessTextField",
   "TitleBar",
