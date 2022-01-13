@@ -3,10 +3,7 @@ import {ThemeProvider} from 'newskit';
 
 import Layout from '../../components/layout';
 import {PageTemplate} from '../page-template';
-import {
-  foundationsThemeLight,
-  foundationsThemeDark,
-} from '../../theme/doc-theme';
+import {guidesThemeLight, guidesThemeDark} from '../../theme/doc-theme';
 import {OnwardJourneySectionProps} from '../template-sections';
 import {GuidePageTemplateProps} from './types';
 
@@ -27,9 +24,7 @@ export const GuidePageTemplate: React.FC<GuidePageTemplateProps> = ({
     {({themeMode}) => (
       <>
         <ThemeProvider
-          theme={
-            themeMode === 'light' ? foundationsThemeLight : foundationsThemeDark
-          }
+          theme={themeMode === 'light' ? guidesThemeLight : guidesThemeDark}
         >
           <PageTemplate
             {...rest}

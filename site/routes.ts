@@ -58,8 +58,16 @@ export default [
             page: true,
             id: '/getting-started/code/design-overview',
             description:
+              'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
+            illustration: 'guides/design-overview/hero',
+          },
+          {
+            title: 'Design quickstart guide',
+            page: true,
+            id: '/getting-started/code/design-quickstart-guide',
+            description:
               'To start designing with NewsKit, follow the steps in the quickstart guide.',
-            illustration: 'components/form-illustration',
+            illustration: 'guides/design-overview/design-quickstart',
           },
         ],
       },
