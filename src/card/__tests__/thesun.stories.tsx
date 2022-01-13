@@ -491,7 +491,7 @@ const BlockLayoutTeaser = ({data, variant}) => {
   return <p>no correct variant</p>;
 };
 
-export const StoryTheSun3 = () => (
+export const StoryTheSunFull = () => (
   <>
     <Section title="Heading here" href="/?sport">
       <BlockLayoutTeaser variant="variant-1" data={news} />
@@ -514,11 +514,38 @@ export const StoryTheSun3 = () => (
     </Section>
   </>
 );
-
 const GridItem = styled.div`
   padding: 10px;
   border: 1px solid orange;
 `;
+
+const placeholders = [1, 2, 3, 4, 5].map(i => (
+  <GridItem>{i} placeholder</GridItem>
+));
+
+export const StoryTheSunLayouts = () => (
+  <>
+    <Headline>Layout 1</Headline>
+    <br />
+    <BlockLayout1L4S placeholders={placeholders} />
+    <br />
+    <br />
+    <Divider />
+    <br />
+    <br />
+    <Headline>Layout 2</Headline>
+    <br />
+    <BlockLayout4H placeholders={placeholders} />
+    <br />
+    <br />
+    <Divider />
+    <br />
+    <br />
+    <Headline>Layout 3</Headline>
+    <br />
+    <BlockLayout3H placeholders={placeholders} />
+  </>
+);
 
 export const GridStory = () => (
   <>
