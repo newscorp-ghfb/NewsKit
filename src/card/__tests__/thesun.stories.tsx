@@ -300,38 +300,41 @@ const TitleBarWithGrid = ({title, href}) => (
 
 const SectionHeader = ({title, href}) => {
   //return <TitleBarWithGrid title={title} href={href} />;
-  const button = () => <Button href={href}>read more</Button>;
+  const button = () => href && <Button href={href}>Read more</Button>;
 
   return (
     <TitleBar actionItem={button}>
-      <Stack flow="horizontal-center">
+      <GridLayout columnGap="space030" columns="auto 1fr" alignItems="center">
         <span>{title}</span>
         <Divider />
-      </Stack>
+      </GridLayout>
     </TitleBar>
   );
 };
 
-const SectionFooter = ({href}) => (
-  <Visible xs sm>
-    <Stack flow="vertical-center" spaceInline="space030">
-      <StackChild alignSelf={AlignSelfValues.Stretch}>
-        <Divider />
-      </StackChild>
+const SectionFooter = ({href}) =>
+  href && (
+    <Visible xs>
+      <Stack flow="vertical-center" spaceInline="space030">
+        <StackChild alignSelf={AlignSelfValues.Stretch}>
+          <Divider />
+        </StackChild>
 
-      <Button href={href}>Read more</Button>
+        <Button href={href}>Read more</Button>
 
-      <StackChild alignSelf={AlignSelfValues.Stretch}>
-        <Divider />
-      </StackChild>
-    </Stack>
-  </Visible>
-);
+        <StackChild alignSelf={AlignSelfValues.Stretch}>
+          <Divider />
+        </StackChild>
+      </Stack>
+    </Visible>
+  );
+
+const SectionBody = styled.div``;
 
 const Section = ({children, href, title}) => (
   <section>
     <SectionHeader title={title} href={href} />
-    {children}
+    <SectionBody>{children}</SectionBody>
     <SectionFooter href={href} />
   </section>
 );
@@ -488,21 +491,23 @@ const BlockLayoutSpace = () => (
 );
 
 export const StoryTheSun3 = () => (
-  <Section title="Heading here" href="/?sport">
-    <BlockLayoutTeaser name="variant-1" data={news} />
+  <>
+    <Section title="Heading here" href="/?sport">
+      <BlockLayoutTeaser name="variant-1" data={news} />
 
-    <BlockLayoutSpace />
+      <BlockLayoutSpace />
 
-    <BlockLayoutTeaser name="variant-2" data={news} />
+      <BlockLayoutTeaser name="variant-2" data={news} />
 
-    <BlockLayoutSpace />
+      <BlockLayoutSpace />
 
-    <BlockLayoutTeaser name="variant-3" data={news} />
+      <BlockLayoutTeaser name="variant-3" data={news} />
+    </Section>
 
-    <BlockLayoutSpace />
-
-    <BlockLayoutTeaser name="variant-4" data={imageGallery} />
-  </Section>
+    <Section title="Gallery" href="/?sport">
+      <BlockLayoutTeaser name="variant-4" data={imageGallery} />
+    </Section>
+  </>
 );
 
 const GRID_DEFAULT_PROPS = {
