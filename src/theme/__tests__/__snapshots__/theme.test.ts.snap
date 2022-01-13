@@ -806,56 +806,6 @@ Object {
       "spaceInset": "spaceInsetStretch040",
       "stylePreset": "structuredListItem",
     },
-    "textField": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody030",
-        "width": "100%",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing080",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing060",
-        "spaceInset": "spaceInset020",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-    },
     "toast": Object {
       "content": Object {
         "message": Object {
@@ -2493,6 +2443,56 @@ Object {
       "spaceInset": "spaceInsetSquish010",
       "stylePreset": "tagPrimary",
       "typographyPreset": "utilityButton010",
+    },
+  },
+  "textField": Object {
+    "large": Object {
+      "endEnhancer": Object {
+        "iconSize": "iconSize020",
+        "spaceInline": "space020",
+      },
+      "minHeight": "sizing090",
+      "spaceInset": "spaceInset030",
+      "spaceStack": "space020",
+      "startEnhancer": Object {
+        "iconSize": "iconSize020",
+        "spaceInline": "space020",
+      },
+      "stylePreset": "inputField",
+      "typographyPreset": "utilityBody030",
+      "width": "100%",
+    },
+    "medium": Object {
+      "endEnhancer": Object {
+        "iconSize": "iconSize020",
+        "spaceInline": "space020",
+      },
+      "minHeight": "sizing080",
+      "spaceInset": "spaceInset030",
+      "spaceStack": "space020",
+      "startEnhancer": Object {
+        "iconSize": "iconSize020",
+        "spaceInline": "space020",
+      },
+      "stylePreset": "inputField",
+      "typographyPreset": "utilityBody020",
+      "width": "100%",
+    },
+    "small": Object {
+      "endEnhancer": Object {
+        "iconSize": "iconSize020",
+        "spaceInline": "space020",
+      },
+      "minHeight": "sizing060",
+      "spaceInset": "spaceInset020",
+      "spaceStack": "space020",
+      "startEnhancer": Object {
+        "iconSize": "iconSize020",
+        "spaceInline": "space020",
+      },
+      "stylePreset": "inputField",
+      "typographyPreset": "utilityBody020",
+      "width": "100%",
     },
   },
   "textInput": Object {
