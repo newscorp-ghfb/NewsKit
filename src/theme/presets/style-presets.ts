@@ -75,19 +75,6 @@ stylePresets.assistiveText = {
 };
 
 //
-// Label
-//
-
-stylePresets.label = {
-  base: {
-    color: '{{colors.inkContrast}}',
-  },
-  disabled: {
-    color: '{{colors.inkNonEssential}}',
-  },
-};
-
-//
 // Input Field
 //
 

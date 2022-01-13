@@ -2,8 +2,11 @@ import React from 'react';
 import {TextFieldSize} from '../text-field';
 import {StyledLabel} from './styled';
 import {LabelProps} from './types';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
-export const Label = ({
+export const ThemelessLabel = ({
   size = 'medium' as TextFieldSize,
   children,
   state,
@@ -18,3 +21,5 @@ export const Label = ({
     {children}
   </StyledLabel>
 );
+
+export const Label = withOwnTheme(ThemelessLabel)({defaults, stylePresets});
