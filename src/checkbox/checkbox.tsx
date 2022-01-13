@@ -1,6 +1,5 @@
 import React, {useCallback, useRef} from 'react';
 import composeRefs from '@seznam/compose-react-refs';
-
 import {composeEventHandlers} from '../form/utils';
 import {IconFilledCheck} from '../icons';
 import {
@@ -14,6 +13,9 @@ import {
 import {CheckboxProps, CheckboxIconProps} from './types';
 import {getComponentOverrides} from '../utils/overrides';
 import {useControlled} from '../utils/hooks';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const DefaultCheckboxIcon = ({checked, overrides}: CheckboxIconProps) =>
   checked ? (
@@ -25,7 +27,10 @@ const DefaultCheckboxIcon = ({checked, overrides}: CheckboxIconProps) =>
     />
   ) : null;
 
-export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
+export const ThemelessCheckbox = React.forwardRef<
+  HTMLInputElement,
+  CheckboxProps
+>(
   (
     {
       size = 'medium',
@@ -178,3 +183,8 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
     );
   },
 );
+
+export const Checkbox = withOwnTheme(ThemelessCheckbox)({
+  defaults,
+  stylePresets,
+});
