@@ -236,75 +236,6 @@ Object {
         "typographyPreset": "utilityBody010",
       },
     },
-    "audioPlayer": Object {
-      "controls": Object {
-        "forwardButton": Object {
-          "stylePreset": "iconButtonMinimalPrimary",
-        },
-        "nextButton": Object {
-          "stylePreset": "iconButtonMinimalPrimary",
-        },
-        "playPauseButton": Object {
-          "stylePreset": "iconButtonSolidPrimary",
-        },
-        "popoutButton": Object {
-          "stylePreset": "iconButtonMinimalPrimary",
-        },
-        "previousButton": Object {
-          "stylePreset": "iconButtonMinimalPrimary",
-        },
-        "replayButton": Object {
-          "stylePreset": "iconButtonMinimalPrimary",
-        },
-        "space": "space030",
-      },
-      "seekBar": Object {
-        "buffering": Object {
-          "stylePreset": "audioPlayerSeekBarBuffering",
-        },
-        "slider": Object {
-          "indicator": Object {
-            "stylePreset": "audioPlayerSeekBarIndicator",
-          },
-          "labels": Object {
-            "stylePreset": "audioPlayerLabels",
-            "typographyPreset": "utilityLabel020",
-          },
-          "thumb": Object {
-            "size": "sizing040",
-            "stylePreset": "audioPlayerThumb",
-          },
-          "thumbLabel": Object {
-            "stylePreset": "audioPlayerLabels",
-          },
-          "track": Object {
-            "size": "sizing020",
-            "stylePreset": "audioPlayerSeekBarTrack",
-          },
-        },
-      },
-      "volumeControl": Object {
-        "slider": Object {
-          "indicator": Object {
-            "stylePreset": "volumeControlIndicator",
-          },
-          "labels": Object {
-            "stylePreset": "iconButtonMinimalPrimary",
-          },
-          "thumb": Object {
-            "size": "sizing040",
-            "stylePreset": "audioPlayerThumb",
-          },
-          "thumbLabel": Object {
-            "stylePreset": "volumeControlLabels",
-          },
-          "track": Object {
-            "size": "sizing010",
-            "stylePreset": "volumeControlTrack",
-          },
-        },
-      },
-    },
     "banner": Object {
       "horizontal": Object {
         "actions": Object {
@@ -618,17 +549,6 @@ Object {
         "stylePreset": "label",
         "typographyPreset": "utilityLabel010",
       },
-    },
-    "link": Object {
-      "externalIcon": Object {
-        "size": "iconSize010",
-      },
-      "spaceInline": "space010",
-      "stylePreset": "linkInline",
-    },
-    "linkStandalone": Object {
-      "stylePreset": "linkStandalone",
-      "typographyPreset": "utilityLabel020",
     },
     "modal": Object {
       "closeButton": Object {
@@ -985,24 +905,6 @@ Object {
         "stylePreset": "inkBase",
       },
       "spaceStack": "space040",
-    },
-    "volumeControl": Object {
-      "button": Object {
-        "iconSize": "iconSize020",
-        "size": "small",
-        "stylePreset": "iconButtonMinimalPrimary",
-      },
-      "slider": Object {
-        "indicator": Object {
-          "stylePreset": "volumeControlIndicator",
-        },
-        "thumb": Object {
-          "stylePreset": "volumeControlThumb",
-        },
-        "track": Object {
-          "stylePreset": "volumeControlTrack",
-        },
-      },
     },
   },
   "fonts": Object {
