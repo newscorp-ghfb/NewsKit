@@ -4,7 +4,7 @@ import { PlayerButton } from '../controls/play-pause';
 import { useAudioPlayer } from '../useAudioPlayer';
 
 export default {
-  title: 'NewsKit Light/audio-player-poc',
+  title: 'NewsKit Light/audio-player-poc-hook',
   component: () => 'None',
   parameters: {eyes: {waitBeforeScreenshot: 10000}},
 };
@@ -19,12 +19,12 @@ export const AudioPlayerPOC = () => {
   return(
   <>
     <AudioElementPOC {...audioElementProps} src="https://sphinx.acast.com/storiesofourtimes/johnpienaar-istrackandtraceworking-/media.mp3" />
-    <PlayerButton {...playPauseButtonProps} overrides={{}}/>
+    <PlayerButton {...playPauseButtonProps} />
   </>
 )};
 
 AudioPlayerPOC.storyName =
-  'audio-player-poc';
+  'audio-player-poc-hook';
 
 export const AudioPlayerPOCAuto = () => {
   const {playPauseButtonProps, audioElementProps} = useAudioPlayer({
@@ -37,9 +37,32 @@ export const AudioPlayerPOCAuto = () => {
   return(
   <>
     <AudioElementPOC {...audioElementProps} src="https://sphinx.acast.com/storiesofourtimes/johnpienaar-istrackandtraceworking-/media.mp3" />
-    <PlayerButton {...playPauseButtonProps} overrides={{}}/>
+    <PlayerButton {...playPauseButtonProps}/>
   </>
 )};
 
 AudioPlayerPOCAuto.storyName =
-  'audio-player-poc-auto';
+  'audio-player-poc-hook-auto';
+
+export const AudioPlayerPOCAutoWOverrides = () => {
+  const {playPauseButtonProps, audioElementProps} = useAudioPlayer({
+    playPauseButton: {
+      onClick: () => {console.log('Click PlayPause custom f')}
+    }
+  })
+
+  return(
+  <>
+    <AudioElementPOC {...audioElementProps} src="https://sphinx.acast.com/storiesofourtimes/johnpienaar-istrackandtraceworking-/media.mp3" />
+    <PlayerButton {...playPauseButtonProps} overrides={{
+          stylePreset: {
+            xs: 'buttonOutlinedNegative',
+            md: 'buttonSolidPositive',
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          } as any,
+        }}/>
+  </>
+)};
+
+AudioPlayerPOCAutoWOverrides.storyName =
+  'audio-player-poc-hook-overrides';
