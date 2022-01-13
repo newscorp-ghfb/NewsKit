@@ -7,13 +7,16 @@ import {Block} from '../block';
 import {Hidden} from '../grid/visibility';
 import {useTheme} from '../theme';
 import {HeadlineOverrides} from '../headline/types';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const StackContainer = styled(Stack)<ContainerProps>`
   ${getSpacingInset('titleBar')};
   ${getStylePreset('titleBar')};
 `;
 
-export const TitleBar: React.FC<TitleBarProps> = props => {
+const ThemelessTitleBar: React.FC<TitleBarProps> = props => {
   const {
     children,
     hideActionItemOn = {xs: true},
@@ -72,3 +75,7 @@ export const TitleBar: React.FC<TitleBarProps> = props => {
     </StackContainer>
   );
 };
+export const TitleBar = withOwnTheme(ThemelessTitleBar)({
+  defaults,
+  stylePresets,
+});

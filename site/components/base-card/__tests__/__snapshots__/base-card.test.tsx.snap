@@ -25,7 +25,6 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  color: inherit;
   padding: 8px 4px;
 }
 
@@ -175,7 +174,6 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: inherit;
   padding: 24px;
 }
 
@@ -368,7 +366,6 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: inherit;
   padding: 8px 4px;
 }
 
@@ -505,7 +502,6 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  color: inherit;
   padding: 24px;
 }
 

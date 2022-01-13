@@ -282,97 +282,6 @@ Object {
       "stylePreset": "inkBase",
       "typographyPreset": "editorialCaption010",
     },
-    "card": Object {
-      "actionsContainer": Object {
-        "minHeight": "sizing080",
-        "spaceInset": "spaceInsetSquish000",
-        "stylePreset": "cardContainerActions",
-      },
-      "headline": Object {
-        "interactive": Object {
-          "heading": Object {
-            "stylePreset": "headlineHeadingInteractive",
-          },
-          "kicker": Object {
-            "spaceInline": Object {
-              "lg": "space030",
-              "md": "space030",
-              "sm": "space020",
-              "xs": "space020",
-            },
-            "stylePreset": "headlineKickerInteractive",
-          },
-          "typographyPreset": Object {
-            "lg": "editorialHeadline050",
-            "md": "editorialHeadline030",
-            "sm": "editorialHeadline020",
-            "xs": "editorialHeadline020",
-          },
-        },
-        "nonInteractive": Object {
-          "heading": Object {
-            "stylePreset": "inkContrast",
-          },
-          "kicker": Object {
-            "spaceInline": Object {
-              "lg": "space030",
-              "md": "space030",
-              "sm": "space020",
-              "xs": "space020",
-            },
-            "stylePreset": "uppercaseInkBrand010",
-          },
-          "typographyPreset": Object {
-            "lg": "editorialHeadline050",
-            "md": "editorialHeadline030",
-            "sm": "editorialHeadline020",
-            "xs": "editorialHeadline020",
-          },
-        },
-      },
-      "horizontalRatio": "1:1",
-      "mediaContainer": Object {
-        "spaceInline": Object {
-          "lg": "space050",
-          "md": "space050",
-          "sm": "space040",
-          "xs": "space040",
-        },
-        "stylePreset": "cardContainerMedia",
-      },
-      "stylePreset": "cardContainer",
-      "teaserContainer": Object {
-        "spaceInset": "spaceInsetSquish000",
-        "stylePreset": "cardContainerTeaser",
-      },
-    },
-    "cardInset": Object {
-      "actionsContainer": Object {
-        "minHeight": "sizing000",
-        "spaceInset": Object {
-          "lg": "spaceInsetSquish040",
-          "md": "spaceInsetSquish040",
-          "sm": "spaceInsetSquish030",
-          "xs": "spaceInsetSquish030",
-        },
-        "stylePreset": "cardContainerActions",
-      },
-      "horizontalRatio": "1:1",
-      "mediaContainer": Object {
-        "spaceInline": "space000",
-        "stylePreset": "cardContainerMedia",
-      },
-      "stylePreset": "cardContainer",
-      "teaserContainer": Object {
-        "spaceInset": Object {
-          "lg": "spaceInset050",
-          "md": "spaceInset050",
-          "sm": "spaceInset040",
-          "xs": "spaceInset040",
-        },
-        "stylePreset": "cardContainerTeaser",
-      },
-    },
     "checkbox": Object {
       "large": Object {
         "feedback": Object {
@@ -513,26 +422,6 @@ Object {
         "xs": "space040",
       },
     },
-    "headline": Object {
-      "heading": Object {
-        "stylePreset": "inkContrast",
-      },
-      "kicker": Object {
-        "spaceInline": Object {
-          "lg": "space040",
-          "md": "space040",
-          "sm": "space030",
-          "xs": "space030",
-        },
-        "stylePreset": "uppercaseInkBrand010",
-      },
-      "typographyPreset": Object {
-        "lg": "editorialHeadline080",
-        "md": "editorialHeadline070",
-        "sm": "editorialHeadline060",
-        "xs": "editorialHeadline060",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -569,10 +458,6 @@ Object {
     "headlineH6": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": "editorialSubheadline010",
-    },
-    "indeterminateProgressIndicator": Object {
-      "size": "iconSize020",
-      "stylePreset": "iconDefault",
     },
     "inlineDrawer": Object {
       "__extends": "{{componentDefaults.drawer}}",
@@ -688,18 +573,6 @@ Object {
         },
         "zIndex": 80,
       },
-    },
-    "orderedList": Object {
-      "content": Object {
-        "stylePreset": "inkBase",
-        "typographyPreset": "editorialParagraph010",
-      },
-      "counter": Object {
-        "minWidth": "sizing050",
-        "stylePreset": "inkBase",
-        "typographyPreset": "editorialParagraph010",
-      },
-      "spaceInline": "space040",
     },
     "overlay": Object {
       "stylePreset": "overlay",
@@ -880,15 +753,6 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
-    "standfirst": Object {
-      "styledText": Object {
-        "stylePreset": "inkBase",
-        "typographyPreset": Object {
-          "lg": "editorialSubheadline020",
-          "xs": "editorialSubheadline010",
-        },
-      },
-    },
     "textField": Object {
       "large": Object {
         "endEnhancer": Object {
@@ -938,20 +802,6 @@ Object {
         "typographyPreset": "utilityBody020",
         "width": "100%",
       },
-    },
-    "titleBar": Object {
-      "heading": Object {
-        "typographyPreset": Object {
-          "lg": "editorialHeadline080",
-          "md": "editorialHeadline070",
-          "xs": "editorialHeadline050",
-        },
-      },
-      "spaceInset": Object {
-        "lg": "spaceInsetSquish040",
-        "xs": "spaceInsetSquish030",
-      },
-      "stylePreset": "titleBar",
     },
     "unorderedList": Object {
       "content": Object {
@@ -1149,12 +999,6 @@ Object {
         "color": "{{colors.inkSubtle}}",
       },
     },
-    "cardContainer": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "color": "{{colors.inkBase}}",
-      },
-    },
     "checkboxFeedback": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -1279,38 +1123,6 @@ Object {
         "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
         "boxShadow": "{{shadows.shadow060}}",
-      },
-    },
-    "headlineHeadingInteractive": Object {
-      "active": Object {
-        "color": "{{colors.interactivePrimary050}}",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "{{colors.inkBase}}",
-      },
-      "hover": Object {
-        "color": "{{colors.interactivePrimary040}}",
-        "textDecoration": "underline",
-      },
-      "visited": Object {
-        "color": "{{colors.interactiveVisited010}}",
-      },
-    },
-    "headlineKickerInteractive": Object {
-      "active": Object {
-        "color": "{{colors.interactivePrimary050}}",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "{{colors.interactivePrimary030}}",
-      },
-      "hover": Object {
-        "color": "{{colors.interactivePrimary040}}",
-        "textDecoration": "underline",
-      },
-      "visited": Object {
-        "color": "{{colors.interactiveVisited010}}",
       },
     },
     "indeterminateProgressIndicatorInverse": Object {
@@ -1504,11 +1316,6 @@ Object {
         "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "boxShadow": "{{shadows.shadow050}}",
-      },
-    },
-    "titleBar": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
       },
     },
   },
@@ -2236,6 +2043,91 @@ Object {
       "typographyPreset": "utilityButton010",
     },
   },
+  "card": Object {
+    "actionsContainer": Object {
+      "minHeight": "sizing080",
+      "spaceInset": "spaceInsetSquish000",
+    },
+    "headline": Object {
+      "interactive": Object {
+        "heading": Object {
+          "stylePreset": "headlineHeadingInteractive",
+        },
+        "kicker": Object {
+          "spaceInline": Object {
+            "lg": "space030",
+            "md": "space030",
+            "sm": "space020",
+            "xs": "space020",
+          },
+          "stylePreset": "headlineKickerInteractive",
+        },
+        "typographyPreset": Object {
+          "lg": "editorialHeadline050",
+          "md": "editorialHeadline030",
+          "sm": "editorialHeadline020",
+          "xs": "editorialHeadline020",
+        },
+      },
+      "nonInteractive": Object {
+        "heading": Object {
+          "stylePreset": "inkContrast",
+        },
+        "kicker": Object {
+          "spaceInline": Object {
+            "lg": "space030",
+            "md": "space030",
+            "sm": "space020",
+            "xs": "space020",
+          },
+          "stylePreset": "uppercaseInkBrand010",
+        },
+        "typographyPreset": Object {
+          "lg": "editorialHeadline050",
+          "md": "editorialHeadline030",
+          "sm": "editorialHeadline020",
+          "xs": "editorialHeadline020",
+        },
+      },
+    },
+    "horizontalRatio": "1:1",
+    "mediaContainer": Object {
+      "spaceInline": Object {
+        "lg": "space050",
+        "md": "space050",
+        "sm": "space040",
+        "xs": "space040",
+      },
+    },
+    "stylePreset": "cardContainer",
+    "teaserContainer": Object {
+      "spaceInset": "spaceInsetSquish000",
+    },
+  },
+  "cardInset": Object {
+    "actionsContainer": Object {
+      "minHeight": "sizing000",
+      "spaceInset": Object {
+        "lg": "spaceInsetSquish040",
+        "md": "spaceInsetSquish040",
+        "sm": "spaceInsetSquish030",
+        "xs": "spaceInsetSquish030",
+      },
+    },
+    "horizontalRatio": "1:1",
+    "mediaContainer": Object {
+      "spaceInline": "space000",
+    },
+    "stylePreset": "cardContainer",
+    "teaserContainer": Object {
+      "spaceInset": Object {
+        "lg": "spaceInset050",
+        "md": "spaceInset050",
+        "sm": "spaceInset040",
+        "xs": "spaceInset040",
+      },
+    },
+  },
   "divider": Object {
     "stylePreset": "divider",
   },
@@ -2263,6 +2155,26 @@ Object {
       "spaceInset": "spaceInsetSquish010",
       "stylePreset": "flagSolidPrimary",
       "typographyPreset": "utilityLabel010",
+    },
+  },
+  "headline": Object {
+    "heading": Object {
+      "stylePreset": "inkContrast",
+    },
+    "kicker": Object {
+      "spaceInline": Object {
+        "lg": "space040",
+        "md": "space040",
+        "sm": "space030",
+        "xs": "space030",
+      },
+      "stylePreset": "uppercaseInkBrand010",
+    },
+    "typographyPreset": Object {
+      "lg": "editorialHeadline080",
+      "md": "editorialHeadline070",
+      "sm": "editorialHeadline060",
+      "xs": "editorialHeadline060",
     },
   },
   "iconButton": Object {
@@ -2299,6 +2211,10 @@ Object {
   },
   "image": Object {
     "stylePreset": "imageSharp",
+  },
+  "indeterminateProgressIndicator": Object {
+    "size": "iconSize020",
+    "stylePreset": "iconDefault",
   },
   "legend": Object {
     "large": Object {
@@ -2353,6 +2269,18 @@ Object {
       "stylePreset": "menuItemVertical",
     },
   },
+  "orderedList": Object {
+    "content": Object {
+      "stylePreset": "inkBase",
+      "typographyPreset": "editorialParagraph010",
+    },
+    "counter": Object {
+      "minWidth": "sizing050",
+      "stylePreset": "inkBase",
+      "typographyPreset": "editorialParagraph010",
+    },
+    "spaceInline": "space040",
+  },
   "slider": Object {
     "indicator": Object {
       "stylePreset": "sliderIndicator",
@@ -2374,6 +2302,15 @@ Object {
     "track": Object {
       "size": "sizing030",
       "stylePreset": "sliderTrack",
+    },
+  },
+  "standfirst": Object {
+    "styledText": Object {
+      "stylePreset": "inkBase",
+      "typographyPreset": Object {
+        "lg": "editorialSubheadline020",
+        "xs": "editorialSubheadline010",
+      },
     },
   },
   "structuredList": Object {
@@ -2545,6 +2482,20 @@ Object {
         "typographyPreset": "utilityLabel030",
       },
     },
+  },
+  "titleBar": Object {
+    "heading": Object {
+      "typographyPreset": Object {
+        "lg": "editorialHeadline080",
+        "md": "editorialHeadline070",
+        "xs": "editorialHeadline050",
+      },
+    },
+    "spaceInset": Object {
+      "lg": "spaceInsetSquish040",
+      "xs": "spaceInsetSquish030",
+    },
+    "stylePreset": "titleBar",
   },
   "toast": Object {
     "content": Object {

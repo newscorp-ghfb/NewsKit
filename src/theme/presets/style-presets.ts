@@ -193,53 +193,6 @@ stylePresets.selectOptionItemIcon = {
 };
 
 //
-// TitleBar
-//
-
-stylePresets.titleBar = {
-  base: {
-    backgroundColor: '{{colors.transparent}}',
-  },
-};
-
-//
-// Headline
-//
-
-stylePresets.headlineKickerInteractive = {
-  base: {
-    color: '{{colors.interactivePrimary030}}',
-  },
-  hover: {
-    color: '{{colors.interactivePrimary040}}',
-    textDecoration: 'underline',
-  },
-  active: {
-    color: '{{colors.interactivePrimary050}}',
-    textDecoration: 'underline',
-  },
-  visited: {
-    color: '{{colors.interactiveVisited010}}',
-  },
-};
-stylePresets.headlineHeadingInteractive = {
-  base: {
-    color: '{{colors.inkBase}}',
-  },
-  hover: {
-    color: '{{colors.interactivePrimary040}}',
-    textDecoration: 'underline',
-  },
-  active: {
-    color: '{{colors.interactivePrimary050}}',
-    textDecoration: 'underline',
-  },
-  visited: {
-    color: '{{colors.interactiveVisited010}}',
-  },
-};
-
-//
 // Overlay
 //
 
@@ -273,15 +226,6 @@ stylePresets.drawerPanel = {
     borderRadius: '{{borders.borderRadiusSharp}}',
     backgroundColor: '{{colors.interface010}}',
     boxShadow: '{{shadows.shadow060}}',
-  },
-};
-
-// Card
-
-stylePresets.cardContainer = {
-  base: {
-    color: '{{colors.inkBase}}',
-    backgroundColor: '{{colors.interface010}}',
   },
 };
 
