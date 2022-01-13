@@ -116,6 +116,7 @@ Array [
   "TextInput",
   "TextInputSize",
   "ThemeProvider",
+  "ThemelessLabel",
   "TitleBar",
   "Toast",
   "ToastProvider",

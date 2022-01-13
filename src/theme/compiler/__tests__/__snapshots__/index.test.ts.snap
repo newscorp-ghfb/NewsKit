@@ -579,26 +579,6 @@ Object {
       "spaceInset": "spaceInset030",
       "stylePreset": "inlineMessageInformative",
     },
-    "label": Object {
-      "large": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel030",
-      },
-      "medium": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel020",
-      },
-      "small": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel010",
-      },
-    },
     "modal": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -1456,14 +1436,6 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "#FAFAFA",
         "borderColor": "#23A248",
-      },
-    },
-    "label": Object {
-      "base": Object {
-        "color": "#0A0A0A",
-      },
-      "disabled": Object {
-        "color": "#C0C0C0",
       },
     },
     "modalPanel": Object {
