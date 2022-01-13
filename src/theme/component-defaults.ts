@@ -1,45 +1,4 @@
 export const componentDefaults = {
-  assistiveText: {
-    small: {
-      stylePreset: 'assistiveText',
-      typographyPreset: 'utilityBody010',
-      minHeight: 'sizing030',
-      startEnhancer: {
-        iconSize: 'iconSize010',
-        spaceInline: 'space020',
-      },
-      endEnhancer: {
-        iconSize: 'iconSize010',
-        spaceInline: 'space020',
-      },
-    },
-    medium: {
-      stylePreset: 'assistiveText',
-      typographyPreset: 'utilityBody020',
-      minHeight: 'sizing030',
-      startEnhancer: {
-        iconSize: 'iconSize020',
-        spaceInline: 'space020',
-      },
-      endEnhancer: {
-        iconSize: 'iconSize020',
-        spaceInline: 'space020',
-      },
-    },
-    large: {
-      stylePreset: 'assistiveText',
-      typographyPreset: 'utilityBody030',
-      minHeight: 'sizing030',
-      startEnhancer: {
-        iconSize: 'iconSize020',
-        spaceInline: 'space030',
-      },
-      endEnhancer: {
-        iconSize: 'iconSize020',
-        spaceInline: 'space030',
-      },
-    },
-  },
   banner: {
     horizontal: {
       stylePreset: 'bannerInformative',
@@ -580,56 +539,6 @@ export const componentDefaults = {
       stylePreset: 'inkBase',
       spaceInline: 'space020',
       size: 'iconSize005',
-    },
-  },
-  checkbox: {
-    small: {
-      spaceStack: 'space000',
-      input: {
-        size: 'sizing050',
-        stylePreset: 'checkboxInput',
-        spaceInline: 'space030',
-      },
-      feedback: {
-        size: 'sizing070',
-        stylePreset: 'checkboxFeedback',
-      },
-      label: {
-        stylePreset: 'controlLabel',
-        typographyPreset: 'utilityBody020',
-      },
-    },
-    medium: {
-      spaceStack: 'space000',
-      input: {
-        size: 'sizing060',
-        stylePreset: 'checkboxInput',
-        spaceInline: 'space030',
-      },
-      feedback: {
-        size: 'sizing080',
-        stylePreset: 'checkboxFeedback',
-      },
-      label: {
-        stylePreset: 'controlLabel',
-        typographyPreset: 'utilityBody020',
-      },
-    },
-    large: {
-      spaceStack: 'space000',
-      input: {
-        size: 'sizing070',
-        stylePreset: 'checkboxInput',
-        spaceInline: 'space040',
-      },
-      feedback: {
-        size: 'sizing090',
-        stylePreset: 'checkboxFeedback',
-      },
-      label: {
-        stylePreset: 'controlLabel',
-        typographyPreset: 'utilityBody030',
-      },
     },
   },
 };
