@@ -173,7 +173,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
     font-size: 24px;
     line-height: 27px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -196,7 +196,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -243,7 +243,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -326,7 +326,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
     font-size: 24px;
     line-height: 27px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -349,7 +349,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -385,7 +385,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -408,7 +408,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -515,7 +515,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -538,7 +538,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -691,7 +691,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
               </p>
             </div>
             <div
-              class="emotion-18"
+              class="emotion-14"
             >
               <picture
                 class="emotion-19"
@@ -757,7 +757,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
               </p>
             </div>
             <div
-              class="emotion-18"
+              class="emotion-14"
             >
               <picture
                 class="emotion-19"

@@ -33,15 +33,15 @@ export const LabelSizes = () => (
       >
         <Block>
           <StorybookSubHeading>Small</StorybookSubHeading>
-          <Label size={'small' as TextFieldSize}>Small</Label>
+          <Label size={'small' as TextFieldSize}>Label</Label>
         </Block>
         <Block>
           <StorybookSubHeading>Medium</StorybookSubHeading>
-          <Label size={'medium' as TextFieldSize}>Medium</Label>
+          <Label size={'medium' as TextFieldSize}>Label</Label>
         </Block>
         <Block>
           <StorybookSubHeading>Large</StorybookSubHeading>
-          <Label size={'large' as TextFieldSize}>Large</Label>
+          <Label size={'large' as TextFieldSize}>Label</Label>
         </Block>
       </Stack>
     </Container>

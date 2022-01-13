@@ -7,6 +7,8 @@ import {
   css,
 } from '../utils/style';
 import {HeadlineProps, HeadlinePropsWithRenderAs} from './types';
+import defaults from './defaults';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const HeadlineContainer = styled.section<Pick<HeadlineProps, 'overrides'>>`
   ${getTypographyPreset('headline', '', {
@@ -31,7 +33,7 @@ const Kicker = styled.span<HeadlinePropsWithRenderAs>`
   ${getSpacingInlineHorizontal('headline.kicker', 'kicker')};
 `;
 
-export const Headline: React.FC<HeadlineProps> = ({
+const ThemelessHeadline: React.FC<HeadlineProps> = ({
   children,
   kickerText,
   headingAs = 'h1',
@@ -57,5 +59,7 @@ export const Headline: React.FC<HeadlineProps> = ({
     </Heading>
   </HeadlineContainer>
 );
+
+export const Headline = withOwnTheme(ThemelessHeadline)({defaults});
 
 Headline.displayName = 'Headline';

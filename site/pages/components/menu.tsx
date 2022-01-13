@@ -29,7 +29,7 @@ const PlaygroundContainer = styled.div`
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Menu | Newskit design system',
+      title: 'Menu',
       description:
         'A Menu displays a list of navigational items. They are displayed either at the top of a screen, or at the side where space allows.',
     }}

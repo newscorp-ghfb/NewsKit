@@ -67,7 +67,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -85,7 +85,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -103,7 +103,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -121,7 +121,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   border-width: 0;
 }
 
@@ -503,7 +503,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -526,7 +526,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -562,7 +562,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -585,7 +585,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -621,7 +621,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -639,7 +639,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -657,7 +657,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -675,7 +675,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   border-width: 0;
 }
 
@@ -1042,7 +1042,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }

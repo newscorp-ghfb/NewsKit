@@ -17,7 +17,7 @@ import {Link} from '../../components/link';
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'StructuredList | Newskit design system',
+      title: 'StructuredList',
       description: '',
     }}
     layoutProps={layoutProps}
