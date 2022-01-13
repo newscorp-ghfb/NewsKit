@@ -300,7 +300,7 @@ export default (layoutProps: LayoutProps) => (
                                     <>
                                         Guidance for designing inclusive experiences.
                                         <Block spaceStack="space050" />
-                                        <Link href="/foundations/colours#css-w5wzt1">
+                                        <Link href="#">
                                             View NewsKit Accessibility guidance
                                         </Link>
                                     </>
