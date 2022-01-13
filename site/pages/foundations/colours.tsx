@@ -321,7 +321,7 @@ const coloursTable = [
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Colours | Newskit design system',
+      title: 'Colours',
       description:
         'Colour is key to expressing brand and identity but it also plays an important role in conveying meaning to a user. ',
     }}

@@ -155,7 +155,7 @@ const ReduceMotionMessage = () => {
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Motion | Newskit design system',
+      title: 'Motion',
       description: 'Motion',
     }}
     layoutProps={layoutProps}

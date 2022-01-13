@@ -95,7 +95,7 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -337,7 +337,7 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -470,7 +470,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 <label
@@ -600,7 +600,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 <label
@@ -730,7 +730,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -972,7 +972,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -1105,7 +1105,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 <label
@@ -1235,7 +1235,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 <label
@@ -1474,7 +1474,7 @@ exports[`Checkbox label attributes 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -1533,7 +1533,7 @@ exports[`Checkbox label position start 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-1:disabled {
@@ -1960,7 +1960,7 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -2093,7 +2093,7 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -2267,7 +2267,7 @@ exports[`Checkbox render with size: large & checked 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-7:disabled {
@@ -2524,7 +2524,7 @@ exports[`Checkbox render with size: large & label 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -2766,7 +2766,7 @@ exports[`Checkbox render with size: large 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -2940,7 +2940,7 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-7:disabled {
@@ -3197,7 +3197,7 @@ exports[`Checkbox render with size: medium & label 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -3439,7 +3439,7 @@ exports[`Checkbox render with size: medium 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -3613,7 +3613,7 @@ exports[`Checkbox render with size: small & checked 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-7:disabled {
@@ -3870,7 +3870,7 @@ exports[`Checkbox render with size: small & label 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -4112,7 +4112,7 @@ exports[`Checkbox render with size: small 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -4286,7 +4286,7 @@ exports[`Checkbox render with state: checked 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-7:disabled {
@@ -4449,7 +4449,7 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 <div
@@ -4704,7 +4704,7 @@ exports[`Checkbox render with state: default 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -4836,7 +4836,7 @@ exports[`Checkbox render with state: disabled 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 <div
@@ -4973,7 +4973,7 @@ exports[`Checkbox render with state: invalid 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -5129,7 +5129,7 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-7:disabled {
@@ -5286,7 +5286,7 @@ exports[`Checkbox render with state: valid 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -5442,7 +5442,7 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-7:disabled {
@@ -5590,7 +5590,7 @@ exports[`Checkbox with overrides 1`] = `
   font-size: 16px;
   line-height: 1.125;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-7 svg {

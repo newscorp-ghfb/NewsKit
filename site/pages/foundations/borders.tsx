@@ -67,7 +67,7 @@ const CellWrapper = ({children}: {children: any}) => (
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Borders | Newskit design system',
+      title: 'Borders',
       description:
         'Borders direct attention, identify components, communicate state, and express a brand.',
     }}

@@ -3,6 +3,8 @@ import {styled, getTypographyPreset, getStylePreset} from '../utils/style';
 
 import {isInlineElement} from '../utils/inline-tags';
 import {StandfirstProps} from './types';
+import defaults from './defaults';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const StyledText = styled.h2<StandfirstProps>`
   ${getStylePreset('standfirst.styledText', 'styledText', {
@@ -15,7 +17,7 @@ const StyledText = styled.h2<StandfirstProps>`
   ${({as}) => as && (isInlineElement(as) ? 'display: inline-block' : '')}
 `;
 
-export const Standfirst: React.FC<StandfirstProps> = ({
+const ThemelessStandfirst: React.FC<StandfirstProps> = ({
   children,
   as,
   overrides = {},
@@ -24,3 +26,7 @@ export const Standfirst: React.FC<StandfirstProps> = ({
     {children}
   </StyledText>
 );
+
+export const Standfirst = withOwnTheme(ThemelessStandfirst)({
+  defaults,
+});
