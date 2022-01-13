@@ -54,13 +54,14 @@ export const AudioPlayerPOCAutoWOverrides = () => {
   return(
   <>
     <AudioElementPOC {...audioElementProps} src="https://sphinx.acast.com/storiesofourtimes/johnpienaar-istrackandtraceworking-/media.mp3" />
-    <PlayerButton {...playPauseButtonProps} overrides={{
-          stylePreset: {
-            xs: 'buttonOutlinedNegative',
-            md: 'buttonSolidPositive',
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          } as any,
-        }}/>
+    <PlayerButton 
+      {...playPauseButtonProps} 
+      overrides={{
+        stylePreset: {
+          xs: 'buttonOutlinedNegative',
+          md: 'buttonSolidPositive',
+        }}}
+    />
   </>
 )};
 
