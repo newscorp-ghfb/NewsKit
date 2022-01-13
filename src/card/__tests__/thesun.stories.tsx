@@ -104,21 +104,21 @@ const SmallItem = () => (
   </>
 );
 
-const CSSGrid = styled.div`
-  display: grid;
-  height: 100%;
-  gap: 10px;
+// const CSSGrid = styled.div`
+//   display: grid;
+//   height: 100%;
+//   gap: 10px;
 
-  ${getMediaQueryFromTheme('md', 'lg')} {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px 10px;
-  }
-  ${getMediaQueryFromTheme('lg')} {
-    justify-content: stretch;
-    align-content: space-between;
-    gap: 10px;
-  }
-`;
+//   ${getMediaQueryFromTheme('md', 'lg')} {
+//     grid-template-columns: 1fr 1fr;
+//     gap: 20px 10px;
+//   }
+//   ${getMediaQueryFromTheme('lg')} {
+//     justify-content: stretch;
+//     align-content: space-between;
+//     gap: 10px;
+//   }
+// `;
 
 const FixWidth = styled.div`
   margin: 0 auto;
@@ -423,6 +423,43 @@ const BlockLayout4H = ({placeholders = []}) => {
   );
 };
 
+// 3 cards in row
+const BlockLayout3H = ({placeholders = []}) => {
+  const [ph1, ph2, ph3] = placeholders;
+  return (
+    <Grid>
+      <Cell xs={12}>
+        <GridLayout
+          areas={{
+            xs: `
+         "A"
+         "B"
+         "C"
+         `,
+            md: ` 
+          "A B"
+          "A C"
+        `,
+            lg: `
+          "A B C"
+    `,
+          }}
+          rowGap={{xs: 'space010', md: 'space040'}}
+          columnGap={{md: 'space030', lg: 'space050'}}
+        >
+          {Arias => (
+            <>
+              <Arias.A>{ph1}</Arias.A>
+              <Arias.B>{ph2}</Arias.B>
+              <Arias.C>{ph3}</Arias.C>
+            </>
+          )}
+        </GridLayout>
+      </Cell>
+    </Grid>
+  );
+};
+
 const BlockLayoutTeaserVariant1 = ({data = []}) => {
   const items = [CardLarge, CardSmall, CardSmall, CardSmall, CardSmall];
 
@@ -463,6 +500,16 @@ const BlockLayoutTeaserVariant4 = ({data = []}) => {
   return <BlockLayout4H placeholders={itemsWithData} />;
 };
 
+const BlockLayoutTeaserVariant5 = ({data = []}) => {
+  const items = [CardSmall, CardSmall, CardSmall];
+
+  const itemsWithData = items.map((Component, index) => (
+    <Component {...data[index]} />
+  ));
+
+  return <BlockLayout3H placeholders={itemsWithData} />;
+};
+
 const BlockLayoutTeaser = ({data, name}) => {
   // eslint-disable-next-line default-case
   switch (name) {
@@ -477,6 +524,9 @@ const BlockLayoutTeaser = ({data, name}) => {
 
     case 'variant-4':
       return <BlockLayoutTeaserVariant4 data={data} />;
+
+    case 'variant-5':
+      return <BlockLayoutTeaserVariant5 data={data} />;
   }
 
   return <p>no correct variant</p>;
@@ -498,10 +548,14 @@ export const StoryTheSun3 = () => (
       <BlockLayoutSpace />
 
       <BlockLayoutTeaser name="variant-2" data={news} />
+    </Section>
+
+    <Section title="Sport" href="/?sport">
+      <BlockLayoutTeaser name="variant-3" data={news} />
 
       <BlockLayoutSpace />
 
-      <BlockLayoutTeaser name="variant-3" data={news} />
+      <BlockLayoutTeaser name="variant-5" data={news} />
     </Section>
 
     <Section title="Gallery" href="/?sport">
