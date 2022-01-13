@@ -23,7 +23,7 @@ const getRelatedComponents = (related: string[]) =>
 export const RelatedComponentsSection: React.FC<RelatedComponentsSectionProps> = ({
   introduction,
   related,
-...next
+  ...next
 }) => (
   <CommonSection
     title={next.title || 'Related Components'}

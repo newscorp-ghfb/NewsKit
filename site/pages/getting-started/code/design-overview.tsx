@@ -1,15 +1,15 @@
 import React from 'react';
-import { Block } from 'newskit*';
-import { GuidePageTemplate } from 'templates/guide-page-template/guide-page-template';
-import { RelatedComponentsSection } from '../../../templates/template-sections';
-import { ComponentPageCell } from '../../../components/layout-cells';
-import { LayoutProps } from '../../../components/layout';
+import {Block} from 'newskit*';
+import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
+import {RelatedComponentsSection} from '../../../templates/template-sections';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {LayoutProps} from '../../../components/layout';
 import {
   Illustration,
   getIllustrationComponent,
 } from '../../../components/illustrations/illustration-loader';
-import { Link } from '../../../components/link';
-import { MediaItem, MediaList } from '../../../components/media-list';
+import {Link} from '../../../components/link';
+import {MediaItem, MediaList} from '../../../components/media-list';
 import {
   ContentSection,
   ContentPrimary,
@@ -23,7 +23,7 @@ const featureCardoverrides = {
     typographyPreset: 'editorialParagraph020',
   },
 };
-const { title, description } = featureCardoverrides;
+const {title, description} = featureCardoverrides;
 
 const PRINCIPLE_CARDS = [
   {
@@ -49,7 +49,7 @@ const PRINCIPLE_CARDS = [
         NewsKit is fully customisable, with the flexibility to apply a single
         brand, or sub-brands style, with an extensive{' '}
         <Link
-          overrides={{ stylePreset: 'inkInverse' }}
+          overrides={{stylePreset: 'inkInverse'}}
           href="https://www.figma.com/file/oSjjLxC27fa6Jh6AHM7ja9/NK-NewsKit-Theme?node-id=1%3A393"
         >
           theming system
@@ -375,7 +375,9 @@ export default (layoutProps: LayoutProps) => (
                   <>
                     Guidance for designing inclusive experiences.
                     <Block spaceStack="space050" />
-                    <Link href="#">View NewsKit Accessibility guidance</Link>
+                    <Link href="https://www.google.com/">
+                      View NewsKit Accessibility guidance
+                    </Link>
                   </>
                 ),
                 media: getIllustrationComponent(
