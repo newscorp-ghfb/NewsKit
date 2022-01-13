@@ -5,14 +5,16 @@ import {Stack} from '../../stack';
 import {Headline} from '../../headline';
 import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
-import {handleResponsiveProp, MQ, styled} from '../../utils/style';
+import {styled} from '../../utils/style';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {AlignSelfValues, StackChild} from '../../stack-child';
 import {Divider} from '../../divider';
 import {TitleBar} from '../../title-bar';
 import {Button} from '../../button';
 import {Image} from '../../image';
-import {Heading1} from '../..';
+import {Flag, Heading1, IconFilledEmail, Tag} from '../..';
+import {GridLayout} from './gridlayout';
+import {GridCard} from './grid-card';
 
 export default {
   title: 'NewsKit Light/the-sun',
@@ -49,7 +51,6 @@ const cardTypographyPresets: {[index: string]: string} = {
 
 const LargeItemBody = styled.div`
   min-height: 92px;
-  background: #ccc;
 `;
 
 const LargeItem = () => (
@@ -104,22 +105,6 @@ const SmallItem = () => (
   </>
 );
 
-// const CSSGrid = styled.div`
-//   display: grid;
-//   height: 100%;
-//   gap: 10px;
-
-//   ${getMediaQueryFromTheme('md', 'lg')} {
-//     grid-template-columns: 1fr 1fr;
-//     gap: 20px 10px;
-//   }
-//   ${getMediaQueryFromTheme('lg')} {
-//     justify-content: stretch;
-//     align-content: space-between;
-//     gap: 10px;
-//   }
-// `;
-
 const FixWidth = styled.div`
   margin: 0 auto;
   max-width: 420px;
@@ -146,7 +131,7 @@ export const StoryTheSun = () => (
           columns={{xs: '1fr', md: '1fr 1fr', lg: '1fr'}}
           justifyContent={{lg: 'stretch'}}
           alignContent={{lg: 'space-between'}}
-          style={{height: '100%'}}
+          overrides={{height: '100%'}}
         >
           <SmallItem />
           <Visible sm lg>
@@ -170,6 +155,14 @@ export const StoryTheSun = () => (
       </Cell>
     </Grid>
   </FixWidth>
+);
+
+const BlockLayoutSpace = () => (
+  <>
+    <Block spaceStack="space050" />
+    <Divider />
+    <Block spaceStack="space050" />
+  </>
 );
 
 const news = [
@@ -234,7 +227,7 @@ const CardLarge = ({title = '', teaser = '', image = '', href = ''}) => (
     >
       <LargeItemBody>
         <Block spaceStack={cardTeaserHeadline}>
-          <Headline kickerText="SHORT">{title}</Headline>
+          <Headline kickerText="KICKER">{title}</Headline>
         </Block>
         <Block spaceStack={cardTeaserLeadInset}>
           <TextBlock
@@ -262,7 +255,7 @@ const CardSmall = ({title = '', image = '', href = ''}) => (
       }}
     >
       <Headline
-        kickerText="SHORT"
+        kickerText="KICKER"
         overrides={{
           typographyPreset: 'editorialHeadline010',
         }}
@@ -272,12 +265,6 @@ const CardSmall = ({title = '', image = '', href = ''}) => (
     </Card>
   </>
 );
-
-// const SectionHeaderTitleStack = styled.div`
-//   display: grid;
-//   grid-template-columns: auto 1fr;
-//   align-items: end;
-// `;
 
 const TitleBarWithGrid = ({title, href}) => (
   <Block spaceInset="space030">
@@ -343,62 +330,42 @@ const Section = ({children, href, title}) => (
 const BlockLayout1L4S = ({placeholders = []}) => {
   const [large, small1, small2, small3, small4] = placeholders;
   return (
-    <Grid>
-      <Cell xs="full-width" lg={8}>
-        {large}
-      </Cell>
-      <Cell xs="full-width" lg={4}>
-        <GridLayout
-          rowGap={{xs: '10px', md: '20px', lg: '0'}}
-          columnGap={{md: '20px'}}
-          columns={{xs: '1fr', md: '1fr 1fr', lg: '1fr'}}
-          justifyContent={{lg: 'stretch'}}
-          alignContent={{lg: 'space-between'}}
-          style={{height: '100%'}}
-        >
-          {small1}
+    <GridLayout
+      columns={{lg: '2fr 1fr'}}
+      rowGap="space050"
+      columnGap="space050"
+    >
+      {large}
 
-          <Visible sm lg>
-            <Divider />
-          </Visible>
+      <GridLayout
+        rowGap={{xs: '10px', md: '10px', lg: '0'}}
+        columnGap={{md: '20px'}}
+        columns={{xs: '1fr', md: '1fr 1fr', lg: '1fr'}}
+        justifyContent={{lg: 'stretch'}}
+        alignContent={{lg: 'space-between'}}
+        overrides={{height: '100%'}}
+      >
+        {small1}
 
-          {small2}
+        <Visible sm lg>
+          <Divider />
+        </Visible>
 
-          <Visible sm lg>
-            <Divider />
-          </Visible>
+        {small2}
 
-          {small3}
+        <Visible sm lg>
+          <Divider />
+        </Visible>
 
-          <Visible sm lg>
-            <Divider />
-          </Visible>
+        {small3}
 
-          {small4}
-        </GridLayout>
-        {/* <CSSGrid>
-          {small1}
+        <Visible sm lg>
+          <Divider />
+        </Visible>
 
-          <Visible sm lg>
-            <Divider />
-          </Visible>
-
-          {small2}
-
-          <Visible sm lg>
-            <Divider />
-          </Visible>
-
-          {small3}
-
-          <Visible sm lg>
-            <Divider />
-          </Visible>
-
-          {small4}
-        </CSSGrid> */}
-      </Cell>
-    </Grid>
+        {small4}
+      </GridLayout>
+    </GridLayout>
   );
 };
 
@@ -406,57 +373,49 @@ const BlockLayout1L4S = ({placeholders = []}) => {
 const BlockLayout4H = ({placeholders = []}) => {
   const [ph1, ph2, ph3, ph4] = placeholders;
   return (
-    <Grid>
-      <Cell xs="full-width" md={6} lg={3}>
-        {ph1}
-      </Cell>
-      <Cell xs="full-width" md={6} lg={3}>
-        {ph2}
-      </Cell>
-      <Cell xs="full-width" md={6} lg={3}>
-        {ph3}
-      </Cell>
-      <Cell xs="full-width" md={6} lg={3}>
-        {ph4}
-      </Cell>
-    </Grid>
+    <GridLayout
+      columns={{xs: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr 1fr'}}
+      rowGap="space050"
+      columnGap="space050"
+    >
+      {ph1}
+      {ph2}
+      {ph3}
+      {ph4}
+    </GridLayout>
   );
 };
 
-// 3 cards in row
+// 3 horizontal
 const BlockLayout3H = ({placeholders = []}) => {
   const [ph1, ph2, ph3] = placeholders;
   return (
-    <Grid>
-      <Cell xs={12}>
-        <GridLayout
-          areas={{
-            xs: `
+    <GridLayout
+      areas={{
+        xs: `
          "A"
          "B"
          "C"
          `,
-            md: ` 
+        md: ` 
           "A B"
           "A C"
         `,
-            lg: `
+        lg: `
           "A B C"
     `,
-          }}
-          rowGap={{xs: 'space010', md: 'space040'}}
-          columnGap={{md: 'space030', lg: 'space050'}}
-        >
-          {Arias => (
-            <>
-              <Arias.A>{ph1}</Arias.A>
-              <Arias.B>{ph2}</Arias.B>
-              <Arias.C>{ph3}</Arias.C>
-            </>
-          )}
-        </GridLayout>
-      </Cell>
-    </Grid>
+      }}
+      rowGap={{xs: 'space010', md: 'space040'}}
+      columnGap={{md: 'space030', lg: 'space050'}}
+    >
+      {Arias => (
+        <>
+          <Arias.A>{ph1}</Arias.A>
+          <Arias.B>{ph2}</Arias.B>
+          <Arias.C>{ph3}</Arias.C>
+        </>
+      )}
+    </GridLayout>
   );
 };
 
@@ -510,9 +469,9 @@ const BlockLayoutTeaserVariant5 = ({data = []}) => {
   return <BlockLayout3H placeholders={itemsWithData} />;
 };
 
-const BlockLayoutTeaser = ({data, name}) => {
+const BlockLayoutTeaser = ({data, variant}) => {
   // eslint-disable-next-line default-case
-  switch (name) {
+  switch (variant) {
     case 'variant-1':
       return <BlockLayoutTeaserVariant1 data={data} />;
 
@@ -532,177 +491,29 @@ const BlockLayoutTeaser = ({data, name}) => {
   return <p>no correct variant</p>;
 };
 
-const BlockLayoutSpace = () => (
-  <>
-    <Block spaceStack="space050" />
-    <Divider />
-    <Block spaceStack="space050" />
-  </>
-);
-
 export const StoryTheSun3 = () => (
   <>
     <Section title="Heading here" href="/?sport">
-      <BlockLayoutTeaser name="variant-1" data={news} />
+      <BlockLayoutTeaser variant="variant-1" data={news} />
 
       <BlockLayoutSpace />
 
-      <BlockLayoutTeaser name="variant-2" data={news} />
+      <BlockLayoutTeaser variant="variant-2" data={news} />
     </Section>
 
     <Section title="Sport" href="/?sport">
-      <BlockLayoutTeaser name="variant-3" data={news} />
+      <BlockLayoutTeaser variant="variant-3" data={news} />
 
       <BlockLayoutSpace />
 
-      <BlockLayoutTeaser name="variant-5" data={news} />
+      <BlockLayoutTeaser variant="variant-5" data={news} />
     </Section>
 
     <Section title="Gallery" href="/?sport">
-      <BlockLayoutTeaser name="variant-4" data={imageGallery} />
+      <BlockLayoutTeaser variant="variant-4" data={imageGallery} />
     </Section>
   </>
 );
-
-const GRID_DEFAULT_PROPS = {
-  rowGap: 'space000',
-  columnGap: 'space000',
-  columns: undefined,
-  rows: undefined,
-  justifyContent: undefined,
-  alignContent: undefined,
-  justifyItems: undefined,
-  alignItems: undefined,
-  areas: undefined,
-};
-
-type GridLayoutProps = {
-  rowGap?: MQ<string>;
-  columnGap?: MQ<string>;
-  columns?: MQ<string>;
-  rows?: MQ<string>;
-  justifyContent?: MQ<string>;
-  alignContent?: MQ<string>;
-  justifyItems?: MQ<string>;
-  alignItems?: MQ<string>;
-  areas?: MQ<string>;
-  children?: React.ReactNode;
-};
-
-const StyledGridLayout = styled.div<GridLayoutProps>`
-  display: grid;
-  ${handleResponsiveProp(
-    {rowGap: GRID_DEFAULT_PROPS.rowGap},
-    ({rowGap}, {theme}) => ({
-      rowGap: theme.spacePresets[rowGap] || rowGap,
-    }),
-  )}
-  ${handleResponsiveProp(
-    {columnGap: GRID_DEFAULT_PROPS.columnGap},
-    ({columnGap}, {theme}) => ({
-      columnGap: theme.spacePresets[columnGap] || columnGap,
-    }),
-  )}
-  ${handleResponsiveProp(
-    {columns: GRID_DEFAULT_PROPS.columns},
-    ({columns}) => ({
-      gridTemplateColumns: columns,
-    }),
-  )}
-  ${handleResponsiveProp({rows: GRID_DEFAULT_PROPS.rows}, ({rows}) => ({
-    gridTemplateRows: rows,
-  }))}
-
-  ${handleResponsiveProp({areas: GRID_DEFAULT_PROPS.areas}, ({areas}) => ({
-    gridTemplateAreas: areas,
-  }))};
-
-  ${handleResponsiveProp(
-    {justifyContent: GRID_DEFAULT_PROPS.justifyContent},
-    ({justifyContent}) => ({
-      justifyContent,
-    }),
-  )}
-
-  ${handleResponsiveProp(
-    {alignContent: GRID_DEFAULT_PROPS.alignContent},
-    ({alignContent}) => ({
-      alignContent,
-    }),
-  )}
-  ${handleResponsiveProp(
-    {justifyItems: GRID_DEFAULT_PROPS.justifyItems},
-    ({justifyItems}) => ({
-      justifyItems,
-    }),
-  )}
-
-  ${handleResponsiveProp(
-    {alignItems: GRID_DEFAULT_PROPS.alignItems},
-    ({alignItems}) => ({
-      alignItems,
-    }),
-  )}
-`;
-
-const capitalize = s => {
-  if (typeof s !== 'string') return '';
-  return s.charAt(0).toUpperCase() + s.slice(1);
-};
-
-const extractAreas = ariaString =>
-  ariaString
-    .replaceAll('\n', '')
-    .replaceAll('"', '')
-    .replace(/  +/g, ' ')
-    .trim()
-    .split(' ');
-
-const makeUniq = (array: string[]) => [...new Set(array)];
-
-const getAreasList = (areas: MQ<string>): string[] => {
-  if (typeof areas === 'string') {
-    return makeUniq(extractAreas(areas));
-  } else if (typeof areas === 'object') {
-    const list = Object.values(areas).reduce((acc, val) => {
-      const filtered = extractAreas(val);
-      acc.push(...filtered);
-      return acc;
-    }, []);
-
-    return makeUniq(list).filter(Boolean);
-  }
-
-  return [];
-};
-
-const GridLayoutArea = styled.div<{area: string}>`
-  grid-area: ${props => props.area};
-`;
-
-const GridLayout = ({children, ...props}: GridLayoutProps) => {
-  const {areas} = props;
-
-  const areasNames = getAreasList(areas);
-  const Areas = {};
-
-  const isFunctionWithAreas =
-    typeof children === 'function' && areasNames.length > 0;
-
-  if (isFunctionWithAreas) {
-    areasNames.forEach(area => {
-      Areas[capitalize(area)] = props => (
-        <GridLayoutArea area={area} {...props} />
-      );
-    });
-  }
-
-  return (
-    <StyledGridLayout {...props}>
-      {isFunctionWithAreas ? children(Areas) : children}
-    </StyledGridLayout>
-  );
-};
 
 const GridItem = styled.div`
   padding: 10px;
@@ -810,4 +621,12 @@ export const GridStory = () => (
       )}
     </GridLayout>
   </>
+);
+
+export const CardWithGrid = () => (
+  <GridCard
+    image="https://www.thesun.co.uk/wp-content/uploads/2022/01/aj-zayn-love-comp.jpg?strip=all&w=620&h=413&crop=1"
+    title="Rochelle Humes on why Marvin can’t get enough of her pregnancy curves"
+    teaser="When asked about his trips as a royal around the Commonwealth, Harry told the Armchair Expert… podcast"
+  />
 );
