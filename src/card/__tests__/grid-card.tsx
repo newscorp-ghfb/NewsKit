@@ -47,10 +47,7 @@ export const GridCard = ({title = '', teaser = '', image = '', href = ''}) => {
           <Areas.Thumb>
             <Image src={image} />
           </Areas.Thumb>
-          <Areas.Thumb
-            alignSelf={{xs: 'end'}}
-            style={{zIndex: 2, paddingLeft: '12px'}}
-          >
+          <Areas.Thumb alignSelf="end" style={{zIndex: 2, paddingLeft: '12px'}}>
             <Flag>EXCLUSIVE</Flag>
           </Areas.Thumb>
           <Areas.Content spaceInset="spaceInset030">

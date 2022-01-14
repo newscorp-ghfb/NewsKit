@@ -13,7 +13,7 @@ import {TitleBar} from '../../title-bar';
 import {Button} from '../../button';
 import {Image} from '../../image';
 import {Flag, Heading1, IconFilledEmail, Tag} from '../..';
-import {GridLayout} from './gridlayout';
+import {GridLayout, GridLayoutItem} from './gridlayout';
 import {GridCard, GridTeaser} from './grid-card';
 
 export default {
@@ -525,13 +525,13 @@ export const StoryTheSunFull = () => (
   </>
 );
 
-const GridItem = styled.div`
+const GridBox = styled.div`
   padding: 10px;
   border: 1px solid orange;
 `;
 
 const placeholders = [1, 2, 3, 4, 5].map(i => (
-  <GridItem>{i} placeholder</GridItem>
+  <GridBox>{i} placeholder</GridBox>
 ));
 
 export const StoryTheSunLayouts = () => (
@@ -565,10 +565,10 @@ export const GridStory = () => (
       rowGap={{xs: 'space010', md: 'space040'}}
       columnGap={{md: 'space030', lg: 'space050'}}
     >
-      <GridItem>1</GridItem>
-      <GridItem>2</GridItem>
-      <GridItem>3</GridItem>
-      <GridItem>4</GridItem>
+      <GridBox>1</GridBox>
+      <GridBox>2</GridBox>
+      <GridBox>3</GridBox>
+      <GridBox>4</GridBox>
     </GridLayout>
     <br />
     <br />
@@ -600,11 +600,21 @@ export const GridStory = () => (
       rowGap={{xs: 'space010', md: 'space040'}}
       columnGap={{md: 'space030', lg: 'space050'}}
     >
-      <GridItem style={{gridArea: 'A'}}>A</GridItem>
-      <GridItem style={{gridArea: 'B'}}>B</GridItem>
-      <GridItem style={{gridArea: 'C'}}>C</GridItem>
-      <GridItem style={{gridArea: 'D'}}>D</GridItem>
-      <GridItem style={{gridArea: 'E'}}>E</GridItem>
+      <GridLayoutItem area="A">
+        <GridBox>A</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem area="B">
+        <GridBox>B</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem area="C">
+        <GridBox>C</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem area="D">
+        <GridBox>D</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem area="E">
+        <GridBox>E</GridBox>
+      </GridLayoutItem>
     </GridLayout>
 
     <br />
@@ -641,19 +651,19 @@ export const GridStory = () => (
       {Arias => (
         <>
           <Arias.A>
-            <GridItem>A</GridItem>
+            <GridBox>A</GridBox>
           </Arias.A>
           <Arias.B>
-            <GridItem>B</GridItem>
+            <GridBox>B</GridBox>
           </Arias.B>
           <Arias.C>
-            <GridItem>C</GridItem>
+            <GridBox>C</GridBox>
           </Arias.C>
           <Arias.D>
-            <GridItem>D</GridItem>
+            <GridBox>D</GridBox>
           </Arias.D>
           <Arias.E>
-            <GridItem>E</GridItem>
+            <GridBox>E</GridBox>
           </Arias.E>
         </>
       )}
@@ -669,7 +679,10 @@ export const CardWithGrid = () => (
       title="Rochelle Humes on why Marvin can’t get enough of her pregnancy curves"
       teaser="When asked about his trips as a royal around the Commonwealth, Harry told the Armchair Expert… podcast"
     />
+    <Block spaceStack="100px" />
     <hr />
+    <Block spaceStack="100px" />
+
     <GridTeaser
       image="https://www.thesun.co.uk/wp-content/uploads/2022/01/aj-zayn-love-comp.jpg?strip=all&w=620&h=413&crop=1"
       title="Rochelle Humes on why Marvin can’t get enough of her pregnancy curves"
@@ -682,66 +695,66 @@ export const GridComparison = () => (
   <>
     <Grid xsMargin="space000" xsColumnGutter="space050">
       <Cell xs={4}>
-        <GridItem>4</GridItem>
+        <GridBox>4</GridBox>
       </Cell>
       <Cell xs={4}>
-        <GridItem>4</GridItem>
+        <GridBox>4</GridBox>
       </Cell>
       <Cell xs={4}>
-        <GridItem>4</GridItem>
+        <GridBox>4</GridBox>
       </Cell>
     </Grid>
     <GridLayout columns="4fr 4fr 4fr" columnGap="space050">
-      <GridItem>4</GridItem>
-      <GridItem>4</GridItem>
-      <GridItem>4</GridItem>
+      <GridBox>4</GridBox>
+      <GridBox>4</GridBox>
+      <GridBox>4</GridBox>
     </GridLayout>
     <hr />
     <Grid xsMargin="space000" xsColumnGutter="space050">
       <Cell xs={8}>
-        <GridItem>8</GridItem>
+        <GridBox>8</GridBox>
       </Cell>
       <Cell xs={4}>
-        <GridItem>4</GridItem>
+        <GridBox>4</GridBox>
       </Cell>
     </Grid>
     <GridLayout columns="8fr 4fr" columnGap="space050">
-      <GridItem>8</GridItem>
-      <GridItem>4</GridItem>
+      <GridBox>8</GridBox>
+      <GridBox>4</GridBox>
     </GridLayout>
     <hr />
     <Grid xsMargin="space000" xsColumnGutter="space050">
       <Cell xs={2}>
-        <GridItem>2</GridItem>
+        <GridBox>2</GridBox>
       </Cell>
       <Cell xs={6}>
-        <GridItem>6</GridItem>
+        <GridBox>6</GridBox>
       </Cell>
       <Cell xs={4}>
-        <GridItem>4</GridItem>
+        <GridBox>4</GridBox>
       </Cell>
     </Grid>
     <GridLayout columns="2fr 6fr 4fr" columnGap="space050">
-      <GridItem>2</GridItem>
-      <GridItem>6</GridItem>
-      <GridItem>2</GridItem>
+      <GridBox>2</GridBox>
+      <GridBox>6</GridBox>
+      <GridBox>2</GridBox>
     </GridLayout>
     <hr />
     <Grid xsMargin="space000" xsColumnGutter="space050">
       <Cell xs={2}>
-        <GridItem>2</GridItem>
+        <GridBox>2</GridBox>
       </Cell>
       <Cell xs={8}>
-        <GridItem>8</GridItem>
+        <GridBox>8</GridBox>
       </Cell>
       <Cell xs={2}>
-        <GridItem>2</GridItem>
+        <GridBox>2</GridBox>
       </Cell>
     </Grid>
     <GridLayout columns="2fr 8fr 2fr" columnGap="space050">
-      <GridItem>2</GridItem>
-      <GridItem>8</GridItem>
-      <GridItem>2</GridItem>
+      <GridBox>2</GridBox>
+      <GridBox>8</GridBox>
+      <GridBox>2</GridBox>
     </GridLayout>
   </>
 );

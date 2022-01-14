@@ -1,15 +1,17 @@
 import React from 'react';
-import {Block} from '../..';
+import {Block, BlockProps} from '../..';
 import {
   getResponsiveSize,
   handleResponsiveProp,
   MQ,
   styled,
 } from '../../utils/style';
-
+/*
+TYPES
+*/
 const GRID_DEFAULT_PROPS = {
-  rowGap: 'space000',
-  columnGap: 'space000',
+  rowGap: undefined,
+  columnGap: undefined,
   columns: undefined,
   rows: undefined,
   justifyContent: undefined,
@@ -19,7 +21,7 @@ const GRID_DEFAULT_PROPS = {
   areas: undefined,
 };
 
-type GridLayoutProps = {
+export type GridLayoutProps = {
   rowGap?: MQ<string>;
   columnGap?: MQ<string>;
   columns?: MQ<string>;
@@ -29,7 +31,7 @@ type GridLayoutProps = {
   justifyItems?: MQ<string>;
   alignItems?: MQ<string>;
   areas?: MQ<string>;
-  children?: React.ReactNode;
+  children?: React.ReactNode | GridLayoutRenderProps;
   overrides?: {
     width?: MQ<string>;
     minWidth?: MQ<string>;
@@ -40,6 +42,21 @@ type GridLayoutProps = {
   };
 };
 
+export type GridLayoutItemProps = BlockProps & {
+  area?: string;
+  justifySelf?: MQ<string>;
+  alignSelf?: MQ<string>;
+};
+
+export type AreasMap = {
+  [componentName: string]: React.FC<GridLayoutItemProps>;
+};
+
+export type GridLayoutRenderProps = (areas: AreasMap) => React.ReactNode;
+
+/*
+STYLED COMPONENTS
+*/
 const StyledGridLayout = styled.div<GridLayoutProps>`
   display: grid;
   ${handleResponsiveProp(
@@ -103,6 +120,9 @@ const StyledGridLayout = styled.div<GridLayoutProps>`
   ${getResponsiveSize('maxHeight', 'gridLayout', '', 'maxHeight')};
 `;
 
+/*
+HELPERS
+*/
 const capitalize = s => {
   if (typeof s !== 'string') return '';
   return s.charAt(0).toUpperCase() + s.slice(1);
@@ -134,11 +154,10 @@ const getAreasList = (areas: MQ<string>): string[] => {
   return [];
 };
 
-const GridLayoutArea = styled(Block)<{
-  area: string;
-  justifySelf: MQ<string>;
-  alignSelf: MQ<string>;
-}>`
+/*
+EXPORTED COMPONENTS
+*/
+export const GridLayoutItem = styled(Block)<GridLayoutItemProps>`
   grid-area: ${props => props.area};
 
   ${handleResponsiveProp({justifySelf: undefined}, ({justifySelf}) => ({
@@ -160,8 +179,9 @@ export const GridLayout = ({children, ...props}: GridLayoutProps) => {
 
   if (isFunctionWithAreas) {
     areasNames.forEach(area => {
-      Areas[capitalize(area)] = props => (
-        <GridLayoutArea area={area} {...props} />
+      const componentName = capitalize(area);
+      Areas[componentName] = (itemProps: GridLayoutItemProps) => (
+        <GridLayoutItem area={area} {...itemProps} />
       );
     });
   }
