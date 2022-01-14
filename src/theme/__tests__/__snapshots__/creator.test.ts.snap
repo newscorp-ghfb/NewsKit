@@ -1356,7 +1356,7 @@ Object {
     "modalPanel": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBackground}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "boxShadow": "{{shadows.shadow060}}",
       },
     },

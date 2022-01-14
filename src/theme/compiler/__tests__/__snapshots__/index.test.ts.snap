@@ -1469,7 +1469,7 @@ Object {
     "modalPanel": Object {
       "base": Object {
         "backgroundColor": "#FFFFFF",
-        "borderRadius": "0",
+        "borderRadius": "8px",
         "boxShadow": "0 20px 32px 0 rgba(10,10,10,0.08)",
       },
     },

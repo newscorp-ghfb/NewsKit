@@ -72,13 +72,13 @@ export const BaseDialogView = React.forwardRef<
         {...props}
       >
         <MoveFocusInsideWhenFocusTrapDisabled closePosition={closePosition}>
+          {header === undefined && closePosition === 'none' ? null : (
+            <StyledDialogHeaderBG overrides={overrides} path={path} />
+          )}
           {header !== undefined && (
-            <>
-              <StyledDialogHeaderBG overrides={overrides} path={path} />
-              <StyledDialogHeader overrides={overrides} path={path}>
-                {header}
-              </StyledDialogHeader>
-            </>
+            <StyledDialogHeader overrides={overrides} path={path}>
+              {header}
+            </StyledDialogHeader>
           )}
           <StyledDialogContent
             data-testid="dialog-content"
