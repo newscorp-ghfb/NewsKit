@@ -143,79 +143,6 @@ stylePresets.inputField = {
 };
 
 //
-// Select
-//
-
-stylePresets.selectPanel = {
-  base: {
-    backgroundColor: '{{colors.interface010}}',
-    borderRadius: '{{borders.borderRadiusRounded010}}',
-    boxShadow: '{{shadows.shadow050}}',
-  },
-};
-
-stylePresets.selectOptionItem = {
-  base: {
-    backgroundColor: '{{colors.transparent}}',
-    color: '{{colors.inkBase}}',
-    textOverflow: 'ellipsis',
-    borderRadius: '{{borders.borderRadiusSharp}}',
-    borderStyle: 'solid',
-    borderWidth: '{{borders.borderWidth010}}',
-    borderColor: '{{colors.transparent}}',
-  },
-  hover: {
-    backgroundColor: '{{colors.interactiveInput010}}',
-  },
-  focus: {
-    backgroundColor: '{{colors.interactiveInput010}}',
-    borderColor: '{{colors.interactiveInput040}}',
-  },
-  active: {
-    backgroundColor: '{{colors.interactiveInput030}}',
-  },
-  disabled: {
-    color: '{{colors.inkNonEssential}}',
-  },
-  selected: {
-    backgroundColor: '{{colors.interactiveInput030}}',
-  },
-  'selected:hover': {
-    backgroundColor: '{{colors.interactiveInput030}}',
-    color: '{{colors.inkContrast}}',
-  },
-  'selected:focus': {
-    backgroundColor: '{{colors.interactiveInput030}}',
-    borderColor: '{{colors.interactiveInput040}}',
-  },
-  'selected:active': {
-    backgroundColor: '{{colors.interactiveInput030}}',
-  },
-  'selected:focus:active': {
-    backgroundColor: '{{colors.interactiveInput030}}',
-  },
-  'selected:focus:hover': {
-    backgroundColor: '{{colors.interactiveInput030}}',
-    color: '{{colors.inkContrast}}',
-  },
-};
-
-stylePresets.selectOptionItemIcon = {
-  selected: {
-    iconColor: '{{colors.interactiveInput040}}',
-  },
-  'selected:hover': {
-    iconColor: '{{colors.interactiveInput040}}',
-  },
-  'selected:focus': {
-    iconColor: '{{colors.interactiveInput040}}',
-  },
-  'selected:active': {
-    iconColor: '{{colors.interactiveInput040}}',
-  },
-};
-
-//
 // Divider
 //
 
@@ -232,43 +159,6 @@ stylePresets.dividerInverse = {
     borderStyle: 'solid',
     borderColor: '{{colors.whiteTint050}}',
     borderWidth: '{{borders.borderWidthDefault}}',
-  },
-};
-
-//
-// Overlay
-//
-
-stylePresets.overlay = {
-  base: {
-    backgroundColor: '{{overlays.overlayTintBase040}}',
-  },
-};
-
-//
-// Overlay
-//
-
-stylePresets.scrollOverlaysHorizontal = {
-  base: {
-    backgroundImage: '{{overlays.overlayGradientBaseHorizontal}}',
-  },
-};
-stylePresets.scrollOverlaysVertical = {
-  base: {
-    backgroundImage: '{{overlays.overlayGradientBaseVertical}}',
-  },
-};
-
-//
-// Drawer
-//
-
-stylePresets.drawerPanel = {
-  base: {
-    borderRadius: '{{borders.borderRadiusSharp}}',
-    backgroundColor: '{{colors.interface010}}',
-    boxShadow: '{{shadows.shadow060}}',
   },
 };
 
@@ -354,18 +244,6 @@ stylePresets.inlineMessageNegative = {
 };
 
 // Menu
-
-//
-// Modal
-//
-
-stylePresets.modalPanel = {
-  base: {
-    borderRadius: '{{borders.borderRadiusSharp}}',
-    backgroundColor: '{{colors.interfaceBackground}}',
-    boxShadow: '{{shadows.shadow060}}',
-  },
-};
 
 //
 // Checkbox
