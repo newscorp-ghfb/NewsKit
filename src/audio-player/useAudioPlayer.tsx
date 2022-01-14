@@ -73,6 +73,9 @@ export function useAudioPlayer({
   }, [src]);
   
   // @ts-ignore as we are not passing all the parameters yet.
+  // TODO NEXT STEP the useAudioFunctions will need to require minimum props
+  // based on which components we are implementing.?
+  //TODO SPLIT useAudioFunctions? in multiple hooks? by component?
   const {audioEvents, togglePlay, onChangeSlider} = useAudioFunctions({
     setBuffered,
     setDisplayDuration,
