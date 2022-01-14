@@ -422,5 +422,5 @@ export const StoryHeaderLessModal = () =>
       </div>
     );
   });
-StoryModelessModal.storyName = 'modelss';
-StoryModelessModal.parameters = {eyes: {include: false}};
+StoryHeaderLessModal.storyName = 'headerless';
+StoryHeaderLessModal.parameters = {eyes: {include: false}};

@@ -361,7 +361,7 @@ stylePresets.inlineMessageNegative = {
 
 stylePresets.modalPanel = {
   base: {
-    borderRadius: '{{borders.borderRadiusSharp}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
     backgroundColor: '{{colors.interfaceBackground}}',
     boxShadow: '{{shadows.shadow060}}',
   },
