@@ -72,10 +72,14 @@ export const BaseDialogView = React.forwardRef<
         {...props}
       >
         <MoveFocusInsideWhenFocusTrapDisabled closePosition={closePosition}>
-          <StyledDialogHeaderBG overrides={overrides} path={path} />
-          <StyledDialogHeader overrides={overrides} path={path}>
-            {header}
-          </StyledDialogHeader>
+          {header !== undefined && (
+            <>
+              <StyledDialogHeaderBG overrides={overrides} path={path} />
+              <StyledDialogHeader overrides={overrides} path={path}>
+                {header}
+              </StyledDialogHeader>
+            </>
+          )}
           <StyledDialogContent
             data-testid="dialog-content"
             path={path}
@@ -83,23 +87,25 @@ export const BaseDialogView = React.forwardRef<
           >
             {children}
           </StyledDialogContent>
-          <StyledCloseButtonContainer
-            path={path}
-            overrides={overrides}
-            closePosition={closePosition}
-          >
-            <IconButton
-              aria-label="close"
-              aria-describedby={
-                disableFocusTrap ? listDialogItemNotification : undefined
-              }
-              onClick={handleCloseButtonClick}
-              overrides={closeButtonOverrides}
-              size={ButtonSize.Medium}
+          {closePosition !== 'none' && (
+            <StyledCloseButtonContainer
+              path={path}
+              overrides={overrides}
+              closePosition={closePosition}
             >
-              <IconFilledClose />
-            </IconButton>
-          </StyledCloseButtonContainer>
+              <IconButton
+                aria-label="close"
+                aria-describedby={
+                  disableFocusTrap ? listDialogItemNotification : undefined
+                }
+                onClick={handleCloseButtonClick}
+                overrides={closeButtonOverrides}
+                size={ButtonSize.Medium}
+              >
+                <IconFilledClose />
+              </IconButton>
+            </StyledCloseButtonContainer>
+          )}
           {disableFocusTrap && (
             <ScreenReaderOnly id={listDialogItemNotification}>
               With the next tab you will be leaving the dialog window.

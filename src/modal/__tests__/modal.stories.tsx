@@ -385,3 +385,42 @@ export const StoryModelessInlineModal = () =>
   });
 StoryModelessInlineModal.storyName = 'modelss-inline';
 StoryModelessInlineModal.parameters = {eyes: {include: false}};
+
+export const StoryHeaderLessModal = () =>
+  React.createElement(() => {
+    const [isActiveBoth, openBoth, closeBoth] = useActiveState();
+    const [isActiveHeader, openHeader, closeHeader] = useActiveState();
+    const [isActiveButton, openButton, closeButton] = useActiveState();
+
+    return (
+      <div>
+        <StorybookHeading>Headerless Modal</StorybookHeading>
+        <Button onClick={openBoth}>
+          Open without headeer and close button
+        </Button>
+        <Button onClick={openHeader}>Open without headeer</Button>
+        <Button onClick={openButton}>Open without close button</Button>
+
+        <Modal open={isActiveBoth} onDismiss={closeBoth} closePosition="none">
+          {modalContent}
+        </Modal>
+        <Modal
+          open={isActiveHeader}
+          onDismiss={closeHeader}
+          closePosition="right"
+        >
+          {modalContent}
+        </Modal>
+        <Modal
+          open={isActiveButton}
+          onDismiss={closeButton}
+          header="This is a modal header. Content is passed as string. Should be a long one"
+          closePosition="none"
+        >
+          {modalContent}
+        </Modal>
+      </div>
+    );
+  });
+StoryModelessModal.storyName = 'modelss';
+StoryModelessModal.parameters = {eyes: {include: false}};
