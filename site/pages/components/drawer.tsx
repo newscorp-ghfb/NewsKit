@@ -122,6 +122,10 @@ export default (layoutProps: LayoutProps) => (
                 label: 'Right',
                 value: 'right',
               },
+              {
+                label: 'None',
+                value: 'none',
+              },
             ],
           },
           {
@@ -446,7 +450,7 @@ export default (layoutProps: LayoutProps) => (
             },
             {
               name: 'closePosition',
-              type: ['left', 'right'],
+              type: ['left', 'right', 'none'],
               default: 'left',
               description:
                 'closePosition is set to left as default for left placement, and right for right placement. For top and bottom placement, it is set to the right. If provided, users can set the position of the close icon button.',

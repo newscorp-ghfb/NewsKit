@@ -111,6 +111,10 @@ export default (layoutProps: LayoutProps) => (
                 label: 'Right',
                 value: 'right',
               },
+              {
+                label: 'None',
+                value: 'none',
+              },
             ],
           },
           {
@@ -490,7 +494,7 @@ export default (layoutProps: LayoutProps) => (
             },
             {
               name: 'closePosition',
-              type: 'left | right',
+              type: ['left', 'right', 'none'],
               description:
                 'If provided, sets the position of the close icon button.',
             },
