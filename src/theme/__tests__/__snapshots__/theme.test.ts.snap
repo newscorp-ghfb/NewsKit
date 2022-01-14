@@ -1236,31 +1236,6 @@ Object {
         "boxShadow": "{{shadows.shadow060}}",
       },
     },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
-      },
-    },
     "inlineMessageInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative020}}",

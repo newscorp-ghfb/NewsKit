@@ -26,36 +26,6 @@ stylePresets.bannerNegative = {
 };
 
 //
-// Indeterminate Progress Indicator
-//
-
-stylePresets.indeterminateProgressIndicatorPrimary = {
-  base: {
-    iconColor: '{{colors.inkBrand010}}',
-  },
-};
-stylePresets.indeterminateProgressIndicatorSecondary = {
-  base: {
-    iconColor: '{{colors.inkBase}}',
-  },
-};
-stylePresets.indeterminateProgressIndicatorNegative = {
-  base: {
-    iconColor: '{{colors.inkNegative}}',
-  },
-};
-stylePresets.indeterminateProgressIndicatorPositive = {
-  base: {
-    iconColor: '{{colors.inkPositive}}',
-  },
-};
-stylePresets.indeterminateProgressIndicatorInverse = {
-  base: {
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-
-//
 // Assistive Text
 //
 

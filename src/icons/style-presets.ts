@@ -52,4 +52,29 @@ export default {
       iconColor: '{{colors.inkBase}}',
     },
   },
+  indeterminateProgressIndicatorPrimary: {
+    base: {
+      iconColor: '{{colors.inkBrand010}}',
+    },
+  },
+  indeterminateProgressIndicatorSecondary: {
+    base: {
+      iconColor: '{{colors.inkBase}}',
+    },
+  },
+  indeterminateProgressIndicatorNegative: {
+    base: {
+      iconColor: '{{colors.inkNegative}}',
+    },
+  },
+  indeterminateProgressIndicatorPositive: {
+    base: {
+      iconColor: '{{colors.inkPositive}}',
+    },
+  },
+  indeterminateProgressIndicatorInverse: {
+    base: {
+      iconColor: '{{colors.inkInverse}}',
+    },
+  },
 } as Record<string, StylePreset>;

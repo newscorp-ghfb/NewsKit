@@ -1270,31 +1270,6 @@ Object {
         "boxShadow": "0 20px 32px 0 rgba(10,10,10,0.08)",
       },
     },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "#FFFFFF",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "#D20600",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "#0A782A",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "#3358CC",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "#2E2E2E",
-      },
-    },
     "inkBase": Object {
       "base": Object {
         "color": "#2E2E2E",
