@@ -1,4 +1,5 @@
 import React from 'react';
+import {AudioSeekBar} from '../audio-seek-bar-poc'
 import {AudioElementPOC} from '../audio-element-poc'
 import { PlayerButton } from '../controls/play-pause';
 import { useAudioPlayer } from '../useAudioPlayer';
@@ -10,7 +11,8 @@ export default {
 };
 
 export const AudioPlayerPOC = () => {
-  const {playPauseButtonProps, audioElementProps} = useAudioPlayer({
+  const {playPauseButtonProps, audioElementProps, seekBarProps} = useAudioPlayer({
+    src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
     playPauseButton: {
       onClick: () => {console.log('Click PlayPause custom f')}
     }
@@ -18,17 +20,18 @@ export const AudioPlayerPOC = () => {
 
   return(
   <>
-    <AudioElementPOC {...audioElementProps} src="https://sphinx.acast.com/storiesofourtimes/johnpienaar-istrackandtraceworking-/media.mp3" />
+    <AudioElementPOC {...audioElementProps} />
     <PlayerButton {...playPauseButtonProps} />
+    <AudioSeekBar {...seekBarProps}/>
   </>
 )};
 
 AudioPlayerPOC.storyName =
   'audio-player-poc-hook';
 
-export const AudioPlayerPOCAuto = () => {
-  const {playPauseButtonProps, audioElementProps} = useAudioPlayer({
-    autoPlay: true,
+export const AudioPlayerPOCWOverrides = () => {
+  const {playPauseButtonProps, audioElementProps, seekBarProps} = useAudioPlayer({
+    src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
     playPauseButton: {
       onClick: () => {console.log('Click PlayPause custom f')}
     }
@@ -36,24 +39,7 @@ export const AudioPlayerPOCAuto = () => {
 
   return(
   <>
-    <AudioElementPOC {...audioElementProps} src="https://sphinx.acast.com/storiesofourtimes/johnpienaar-istrackandtraceworking-/media.mp3" />
-    <PlayerButton {...playPauseButtonProps}/>
-  </>
-)};
-
-AudioPlayerPOCAuto.storyName =
-  'audio-player-poc-hook-auto';
-
-export const AudioPlayerPOCAutoWOverrides = () => {
-  const {playPauseButtonProps, audioElementProps} = useAudioPlayer({
-    playPauseButton: {
-      onClick: () => {console.log('Click PlayPause custom f')}
-    }
-  })
-
-  return(
-  <>
-    <AudioElementPOC {...audioElementProps} src="https://sphinx.acast.com/storiesofourtimes/johnpienaar-istrackandtraceworking-/media.mp3" />
+    <AudioElementPOC {...audioElementProps} />
     <PlayerButton 
       {...playPauseButtonProps} 
       overrides={{
@@ -62,8 +48,48 @@ export const AudioPlayerPOCAutoWOverrides = () => {
           md: 'buttonSolidPositive',
         }}}
     />
+    <AudioSeekBar {...seekBarProps}/>
   </>
 )};
 
-AudioPlayerPOCAutoWOverrides.storyName =
+AudioPlayerPOCWOverrides.storyName =
   'audio-player-poc-hook-overrides';
+
+export const AudioPlayerPOCMultypleAudio = () => {
+  const {
+    playPauseButtonProps: playPauseButtonProps1 , 
+    audioElementProps: audioElementProps1,
+    seekBarProps: seekBarProps1  
+  } = useAudioPlayer({
+    src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    playPauseButton: {
+      onClick: () => {console.log('Click PlayPause custom f')}
+    }
+  })
+
+  const {playPauseButtonProps: playPauseButtonProps2, audioElementProps: audioElementProps2} = useAudioPlayer({
+    src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    playPauseButton: {
+      onClick: () => {console.log('Click PlayPause custom f')}
+    }
+  })
+
+  return(
+  <>
+    <AudioElementPOC {...audioElementProps1} />
+    <PlayerButton 
+      {...playPauseButtonProps1} 
+    />
+    <AudioSeekBar {...seekBarProps1}/>
+    <br/>
+    <br/>
+    <br/>
+    <AudioElementPOC {...audioElementProps2} />
+    <PlayerButton 
+      {...playPauseButtonProps2} 
+    />
+  </>
+)};
+
+AudioPlayerPOCMultypleAudio.storyName =
+  'audio-player-poc-hook-multiple-audio';

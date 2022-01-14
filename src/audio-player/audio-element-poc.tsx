@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { SyntheticEvent } from 'react'
 
 //TODO Should extend HTML types
 interface audioElementHTML {
@@ -6,9 +6,13 @@ interface audioElementHTML {
   autoPlay: boolean;
   ref: any;
   onCanPlay: () => void;
+  onDurationChange: ({ target }: SyntheticEvent<HTMLAudioElement, Event>) => void;
+  onTimeUpdate: ({ target }: SyntheticEvent<HTMLAudioElement, Event>) => void;
 }
 
 export const AudioElementPOC = React.forwardRef(({
+  onTimeUpdate,
+  onDurationChange,
   autoPlay,
   onCanPlay,
   src
@@ -21,6 +25,8 @@ export const AudioElementPOC = React.forwardRef(({
       autoPlay={autoPlay}
       src={src}
       onCanPlay={onCanPlay}
+      onDurationChange={onDurationChange}
+      onTimeUpdate={onTimeUpdate}
       // ref={audioRef}
       // src={src}
       // data-testid="audio-element"
@@ -32,8 +38,6 @@ export const AudioElementPOC = React.forwardRef(({
       // onPause={eventHandler(AudioEvents.Pause)}
       // onVolumeChange={eventHandler(AudioEvents.VolumeChange)}
       // onEnded={eventHandler(AudioEvents.Ended)}
-      // onDurationChange={eventHandler(AudioEvents.DurationChange)}
-      // onTimeUpdate={eventHandler(AudioEvents.TimeUpdate)}
       // onProgress={eventHandler(AudioEvents.Progress)}
     >
       {/* {captionSrc && <track kind="captions" src={captionSrc} />} */}

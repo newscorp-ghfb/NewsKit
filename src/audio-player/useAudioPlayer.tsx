@@ -1,4 +1,4 @@
-import { MutableRefObject, useRef, useState } from 'react'
+import { MutableRefObject, SyntheticEvent, useEffect, useRef, useState } from 'react'
 import { useAudioFunctions } from './audio-functions';
 
 // HOOK TYPES
@@ -6,6 +6,7 @@ import { useAudioFunctions } from './audio-functions';
 // User can pass props to the function which can change how the audioPlayer behave.
 // Custom events props (on click of the playPauseButton, autoplay, etc.)
 interface useAudioPlayerProps {
+  src: string,
   autoPlay?: boolean,
   live?: boolean
   playPauseButton?: {
@@ -24,43 +25,77 @@ interface playPauseButtonReturnProps {
 }
 
 export interface audioElementReturnProps {
+  src: string,
   autoPlay: boolean;
   ref: any;
   onCanPlay: () => void;
+  onDurationChange: ({ target }: SyntheticEvent<HTMLAudioElement, Event>) => void;
+  onTimeUpdate: ({ target }: SyntheticEvent<HTMLAudioElement, Event>) => void;
+}
+
+export interface seekBarReturnProps {
+  duration: number;
+  trackPositionArr: number[];
+  onChangeSlider: (values: number[]) => void;
 }
 // 
 
 export function useAudioPlayer({
+  src,
   autoPlay =  false,
   live = false,
   playPauseButton,
 }: useAudioPlayerProps): {
   playPauseButtonProps: playPauseButtonReturnProps, 
-  audioElementProps: audioElementReturnProps
+  audioElementProps: audioElementReturnProps,
+  seekBarProps: seekBarReturnProps,
 } {
   
+  const trackPositionRef = useRef(0);
   const audioRef = useRef<HTMLAudioElement>(null);
   const showLoaderTimeoutRef: MutableRefObject<number> = useRef(0);
   
   const [playing, setPlayState] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [duration, setDuration] = useState(0);
+  const [trackPositionArr, setTrackPosition] = useState([0]);
+  const [displayDuration, setDisplayDuration] = useState(0);
+  const [buffered, setBuffered] = useState<TimeRanges>();
+
+
+  useEffect(() => {
+    [trackPositionRef.current] = trackPositionArr;
+  });
+
+  useEffect(() => {
+    setTrackPosition([0]);
+    setDisplayDuration(0);
+  }, [src]);
   
   // @ts-ignore as we are not passing all the parameters yet.
-  const {audioEvents, togglePlay} = useAudioFunctions({
-    loading, 
+  const {audioEvents, togglePlay, onChangeSlider} = useAudioFunctions({
+    setBuffered,
+    setDisplayDuration,
+    trackPositionRef,
+    duration,
+    setDuration,
     setLoading, 
     autoPlay, 
     audioRef, 
     playing, 
     showLoaderTimeoutRef, 
-    setPlayState
+    setPlayState,
+    setTrackPosition
   }) 
 
   return {
     audioElementProps: {
+      src,
       autoPlay,
       ref: audioRef,
-      onCanPlay: audioEvents.onCanPlay
+      onCanPlay: audioEvents.onCanPlay,
+      onDurationChange: audioEvents.onDurationChange,
+      onTimeUpdate: audioEvents.onTimeUpdate
     },
     playPauseButtonProps: {
       canPause: live,
@@ -70,6 +105,11 @@ export function useAudioPlayer({
         togglePlay()
       },
       loading: loading
+    },
+    seekBarProps: {
+      duration: duration,
+      trackPositionArr,
+      onChangeSlider,
     }
   }
 }

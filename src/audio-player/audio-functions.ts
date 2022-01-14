@@ -194,7 +194,7 @@ export const useAudioFunctions = ({
 
   const onDurationChange = useCallback(
     ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
-      const tgt = target as HTMLAudioElement;
+      const tgt = target as HTMLAudioElement;      
       setDuration(tgt.duration);
       setDisplayDuration(tgt.duration);
       setBuffered(tgt.buffered);
