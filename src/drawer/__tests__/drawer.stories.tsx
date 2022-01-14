@@ -605,3 +605,47 @@ StoryModelessWithRestoreFocusAndCustomAutofocus.storyName =
 StoryModelessWithRestoreFocusAndCustomAutofocus.parameters = {
   eyes: {include: false},
 };
+
+export const StoryHeaderlessDrawer = () =>
+  React.createElement(() => {
+    const [isActiveBoth, openBoth, closeBoth] = useActiveState();
+    const [isActiveHeader, openHeader, closeHeader] = useActiveState();
+    const [isActiveButton, openButton, closeButton] = useActiveState();
+
+    return (
+      <div>
+        <StorybookHeading>Headerless Drawer</StorybookHeading>
+        <Button onClick={openBoth}>Open without header and button</Button>
+        <Button onClick={openHeader}>Open without header</Button>
+        <Button onClick={openButton}>Open without close button</Button>
+
+        <Drawer
+          open={isActiveBoth}
+          onDismiss={closeBoth}
+          placement="right"
+          closePosition="none"
+        >
+          <DrawerContent />
+        </Drawer>
+        <Drawer
+          open={isActiveHeader}
+          onDismiss={closeHeader}
+          placement="right"
+          closePosition="right"
+        >
+          <DrawerContent />
+        </Drawer>
+        <Drawer
+          open={isActiveButton}
+          onDismiss={closeButton}
+          placement="right"
+          header="This is a drawer header. Content is passed as string."
+          closePosition="none"
+        >
+          <DrawerContent />
+        </Drawer>
+      </div>
+    );
+  });
+StoryHeaderlessDrawer.storyName = 'headerless';
+StoryHeaderlessDrawer.parameters = {eyes: {include: false}};
