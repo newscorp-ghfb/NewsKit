@@ -4,8 +4,10 @@ import {Block} from '../block';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
 import {TextBlock} from '../text-block';
+import {withOwnTheme} from '../utils/with-own-theme';
+import defaults from './defaults';
 
-export const Caption: React.FC<CaptionProps> = ({
+export const ThemelessCaption: React.FC<CaptionProps> = ({
   overrides,
   children,
   creditText,
@@ -69,4 +71,7 @@ export const Caption: React.FC<CaptionProps> = ({
   );
 };
 
-Caption.displayName = 'Caption';
+ThemelessCaption.displayName = 'Caption';
+export const Caption = withOwnTheme(ThemelessCaption)({
+  defaults,
+});

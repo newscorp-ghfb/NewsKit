@@ -262,28 +262,6 @@ Object {
         "stylePreset": "bannerInformative",
       },
     },
-    "caption": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "captionInset": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceInset": Object {
-        "md": "spaceInset050",
-        "xs": "spaceInset040",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
     "dateTime": Object {
       "prefix": Object {
         "stylePreset": "inkSubtle",
@@ -1907,6 +1885,28 @@ Object {
     "spaceStack": "space020",
     "stylePreset": "inkSubtle",
     "typographyPreset": "utilityMeta020",
+  },
+  "caption": Object {
+    "credit": Object {
+      "stylePreset": "uppercaseInkSubtle",
+      "typographyPreset": "utilityMeta010",
+    },
+    "spaceStack": "space040",
+    "stylePreset": "inkBase",
+    "typographyPreset": "editorialCaption010",
+  },
+  "captionInset": Object {
+    "credit": Object {
+      "stylePreset": "uppercaseInkSubtle",
+      "typographyPreset": "utilityMeta010",
+    },
+    "spaceInset": Object {
+      "md": "spaceInset050",
+      "xs": "spaceInset040",
+    },
+    "spaceStack": "space040",
+    "stylePreset": "inkBase",
+    "typographyPreset": "editorialCaption010",
   },
   "card": Object {
     "actionsContainer": Object {
