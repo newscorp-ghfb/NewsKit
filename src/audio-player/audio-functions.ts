@@ -27,7 +27,7 @@ export interface AudioFunctionDependencies {
   setLoading: React.Dispatch<React.SetStateAction<boolean>>;
   setTrackPosition: React.Dispatch<React.SetStateAction<number[]>>;
   setPlayState: React.Dispatch<React.SetStateAction<boolean>>;
-  setVolume: React.Dispatch<React.SetStateAction<number>>;
+  // setVolume: React.Dispatch<React.SetStateAction<number>>;
   setDuration: React.Dispatch<React.SetStateAction<number>>;
   setDisplayDuration: React.Dispatch<React.SetStateAction<number>>;
   setBuffered: React.Dispatch<React.SetStateAction<TimeRanges | undefined>>;
@@ -50,7 +50,7 @@ export const useAudioFunctions = ({
   setLoading,
   setTrackPosition,
   setPlayState,
-  setVolume,
+  // setVolume,
   setDuration,
   setDisplayDuration,
   setBuffered,
@@ -138,17 +138,17 @@ export const useAudioFunctions = ({
     [duration, setTrackPosition, ifPlayer],
   );
 
-  const updateAudioVolume = useCallback(
-    (vol: number) => {
-      window.localStorage.setItem('newskit-audioplayer-volume', vol.toString());
-      setVolume(vol);
+  // const updateAudioVolume = useCallback(
+  //   (vol: number) => {
+  //     window.localStorage.setItem('newskit-audioplayer-volume', vol.toString());
+  //     setVolume(vol);
 
-      ifPlayer(player => {
-        player.volume = vol;
-      });
-    },
-    [ifPlayer, setVolume],
-  );
+  //     ifPlayer(player => {
+  //       player.volume = vol;
+  //     });
+  //   },
+  //   [ifPlayer, setVolume],
+  // );
 
   const onClickPrevious = useCallback(() => {
     if (trackPositionRef.current > 5) {
@@ -287,12 +287,12 @@ export const useAudioFunctions = ({
     }
   };
 
-  const onVolumeChange = useCallback(
-    ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
-      updateAudioVolume((target as HTMLAudioElement).volume);
-    },
-    [updateAudioVolume],
-  );
+  // const onVolumeChange = useCallback(
+  //   ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
+  //     updateAudioVolume((target as HTMLAudioElement).volume);
+  //   },
+  //   [updateAudioVolume],
+  // );
 
   const onChangeSlider = useCallback(
     ([value]: number[]) => {
@@ -301,12 +301,12 @@ export const useAudioFunctions = ({
     [updateAudioTime],
   );
 
-  const onChangeVolumeSlider = useCallback(
-    (value: number) => {
-      updateAudioVolume(value);
-    },
-    [updateAudioVolume],
-  );
+  // const onChangeVolumeSlider = useCallback(
+  //   (value: number) => {
+  //     updateAudioVolume(value);
+  //   },
+  //   [updateAudioVolume],
+  // );
 
   const onEnded = useCallback(() => {
     const trackingInformation = getTrackingInformation(
@@ -334,14 +334,14 @@ export const useAudioFunctions = ({
     };
   }, [src]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  useEffect(() => {
-    const storedVolume = parseFloat(
-      (typeof window !== 'undefined' &&
-        window.localStorage.getItem('newskit-audioplayer-volume')) ||
-        '',
-    );
-    updateAudioVolume(Number.isNaN(storedVolume) ? 0.7 : storedVolume);
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  // useEffect(() => {
+  //   const storedVolume = parseFloat(
+  //     (typeof window !== 'undefined' &&
+  //       window.localStorage.getItem('newskit-audioplayer-volume')) ||
+  //       '',
+  //   );
+  //   updateAudioVolume(Number.isNaN(storedVolume) ? 0.7 : storedVolume);
+  // }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return {
     audioEvents: {
@@ -350,7 +350,7 @@ export const useAudioFunctions = ({
       [AudioEvents.Waiting]: onWaiting,
       [AudioEvents.CanPlay]: onCanPlay,
       [AudioEvents.Ended]: onEnded,
-      [AudioEvents.VolumeChange]: onVolumeChange,
+      // [AudioEvents.VolumeChange]: onVolumeChange,
       [AudioEvents.DurationChange]: onDurationChange,
       [AudioEvents.TimeUpdate]: onTimeUpdate,
       [AudioEvents.Progress]: onProgress,
@@ -362,6 +362,6 @@ export const useAudioFunctions = ({
     onPopoutClick,
     togglePlay,
     onChangeSlider,
-    onChangeVolumeSlider,
+    // onChangeVolumeSlider,
   };
 };
