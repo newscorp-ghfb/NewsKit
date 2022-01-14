@@ -8,8 +8,6 @@ import {Image} from '../../image';
 import {Flag, getMediaQueryFromTheme, IconFilledEmail} from '../..';
 import {GridLayout} from './gridlayout';
 
-const cardTeaserLeadInset = 'space010';
-
 const StyledAdvancedCard = styled(GridLayout)`
   border: 1px solid gray;
 `;
@@ -104,6 +102,79 @@ export const GridCard = ({title = '', teaser = '', image = '', href = ''}) => {
               share
             </Button>
           </Areas.Share>
+          {href ? <StyledLink href={href} /> : null}
+        </>
+      )}
+    </StyledAdvancedCard>
+  );
+};
+export const GridTeaser = ({
+  title = '',
+  teaser = '',
+  image = '',
+  href = '',
+}) => {
+  const xsLayout = `
+    "thumb"
+    "tags"  
+  `;
+
+  return (
+    <StyledAdvancedCard areas={{xs: xsLayout}} overrides={{maxWidth: '600px'}}>
+      {Areas => (
+        <>
+          <Areas.Thumb>
+            {/* <img
+              src={image}
+              style={{width: '100%', height: '400px', objectFit: 'cover'}}
+            /> */}
+            <Image src={image} />
+          </Areas.Thumb>
+          <Areas.Thumb
+            spaceInset="spaceInset030"
+            alignSelf="end"
+            style={{
+              zIndex: 2,
+              background: `linear-gradient(0deg, black 75%, transparent)`,
+              color: '#fff',
+            }}
+          >
+            <Block spaceStack="space030">
+              <Headline
+                kickerText="KICKER"
+                overrides={{
+                  typographyPreset: {
+                    xs: 'editorialHeadline030',
+                    md: 'editorialHeadline050',
+                  },
+                }}
+              >
+                <span style={{color: '#fff'}}>{title}</span>
+              </Headline>
+            </Block>
+
+            <TextBlock
+              stylePreset="cardTeaserLead"
+              typographyPreset={{
+                xs: 'editorialParagraph010',
+                md: 'editorialParagraph020',
+              }}
+            >
+              {teaser}
+            </TextBlock>
+          </Areas.Thumb>
+          <Areas.Tags style={{background: 'black'}}>
+            <Button
+              href="#"
+              size="small"
+              overrides={{
+                stylePreset: `buttonMinimalPrimary`,
+              }}
+            >
+              Celebrity
+              <IconFilledEmail />
+            </Button>
+          </Areas.Tags>
           {href ? <StyledLink href={href} /> : null}
         </>
       )}

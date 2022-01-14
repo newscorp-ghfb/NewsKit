@@ -14,7 +14,7 @@ import {Button} from '../../button';
 import {Image} from '../../image';
 import {Flag, Heading1, IconFilledEmail, Tag} from '../..';
 import {GridLayout} from './gridlayout';
-import {GridCard} from './grid-card';
+import {GridCard, GridTeaser} from './grid-card';
 
 export default {
   title: 'NewsKit Light/the-sun',
@@ -299,6 +299,8 @@ const SectionHeader = ({title, href}) => {
   );
 };
 
+const SectionBody = styled.div``;
+
 const SectionFooter = ({href}) =>
   href && (
     <Visible xs>
@@ -316,8 +318,6 @@ const SectionFooter = ({href}) =>
     </Visible>
   );
 
-const SectionBody = styled.div``;
-
 const Section = ({children, href, title}) => (
   <section>
     <SectionHeader title={title} href={href} />
@@ -326,7 +326,12 @@ const Section = ({children, href, title}) => (
   </section>
 );
 
-// 1 large, 4 small in a grid
+/*
+
+LAYOUT COMPONENTS
+
+*/
+// 1 large item, 4 small items in a grid
 const BlockLayout1L4S = ({placeholders = []}) => {
   const [large, small1, small2, small3, small4] = placeholders;
   return (
@@ -369,7 +374,7 @@ const BlockLayout1L4S = ({placeholders = []}) => {
   );
 };
 
-// 4 horizontal
+// 4 horizontal items
 const BlockLayout4H = ({placeholders = []}) => {
   const [ph1, ph2, ph3, ph4] = placeholders;
   return (
@@ -386,7 +391,7 @@ const BlockLayout4H = ({placeholders = []}) => {
   );
 };
 
-// 3 horizontal
+// 3 horizontal items
 const BlockLayout3H = ({placeholders = []}) => {
   const [ph1, ph2, ph3] = placeholders;
   return (
@@ -406,7 +411,7 @@ const BlockLayout3H = ({placeholders = []}) => {
     `,
       }}
       rowGap={{xs: 'space010', md: 'space040'}}
-      columnGap={{md: 'space030', lg: 'space050'}}
+      columnGap={{md: 'space050', lg: 'space050'}}
     >
       {Arias => (
         <>
@@ -419,6 +424,11 @@ const BlockLayout3H = ({placeholders = []}) => {
   );
 };
 
+/*
+
+BLOCK LAYOUT COMPONENTS
+
+*/
 const BlockLayoutTeaserVariant1 = ({data = []}) => {
   const items = [CardLarge, CardSmall, CardSmall, CardSmall, CardSmall];
 
@@ -514,6 +524,7 @@ export const StoryTheSunFull = () => (
     </Section>
   </>
 );
+
 const GridItem = styled.div`
   padding: 10px;
   border: 1px solid orange;
@@ -651,9 +662,86 @@ export const GridStory = () => (
 );
 
 export const CardWithGrid = () => (
-  <GridCard
-    image="https://www.thesun.co.uk/wp-content/uploads/2022/01/aj-zayn-love-comp.jpg?strip=all&w=620&h=413&crop=1"
-    title="Rochelle Humes on why Marvin can’t get enough of her pregnancy curves"
-    teaser="When asked about his trips as a royal around the Commonwealth, Harry told the Armchair Expert… podcast"
-  />
+  <>
+    <GridCard
+      href="#"
+      image="https://www.thesun.co.uk/wp-content/uploads/2022/01/aj-zayn-love-comp.jpg?strip=all&w=620&h=413&crop=1"
+      title="Rochelle Humes on why Marvin can’t get enough of her pregnancy curves"
+      teaser="When asked about his trips as a royal around the Commonwealth, Harry told the Armchair Expert… podcast"
+    />
+    <hr />
+    <GridTeaser
+      image="https://www.thesun.co.uk/wp-content/uploads/2022/01/aj-zayn-love-comp.jpg?strip=all&w=620&h=413&crop=1"
+      title="Rochelle Humes on why Marvin can’t get enough of her pregnancy curves"
+      teaser="When asked about his trips as a royal around the Commonwealth, Harry told the Armchair Expert… podcast"
+    />
+  </>
+);
+
+export const GridComparison = () => (
+  <>
+    <Grid xsMargin="space000" xsColumnGutter="space050">
+      <Cell xs={4}>
+        <GridItem>4</GridItem>
+      </Cell>
+      <Cell xs={4}>
+        <GridItem>4</GridItem>
+      </Cell>
+      <Cell xs={4}>
+        <GridItem>4</GridItem>
+      </Cell>
+    </Grid>
+    <GridLayout columns="4fr 4fr 4fr" columnGap="space050">
+      <GridItem>4</GridItem>
+      <GridItem>4</GridItem>
+      <GridItem>4</GridItem>
+    </GridLayout>
+    <hr />
+    <Grid xsMargin="space000" xsColumnGutter="space050">
+      <Cell xs={8}>
+        <GridItem>8</GridItem>
+      </Cell>
+      <Cell xs={4}>
+        <GridItem>4</GridItem>
+      </Cell>
+    </Grid>
+    <GridLayout columns="8fr 4fr" columnGap="space050">
+      <GridItem>8</GridItem>
+      <GridItem>4</GridItem>
+    </GridLayout>
+    <hr />
+    <Grid xsMargin="space000" xsColumnGutter="space050">
+      <Cell xs={2}>
+        <GridItem>2</GridItem>
+      </Cell>
+      <Cell xs={6}>
+        <GridItem>6</GridItem>
+      </Cell>
+      <Cell xs={4}>
+        <GridItem>4</GridItem>
+      </Cell>
+    </Grid>
+    <GridLayout columns="2fr 6fr 4fr" columnGap="space050">
+      <GridItem>2</GridItem>
+      <GridItem>6</GridItem>
+      <GridItem>2</GridItem>
+    </GridLayout>
+    <hr />
+    <Grid xsMargin="space000" xsColumnGutter="space050">
+      <Cell xs={2}>
+        <GridItem>2</GridItem>
+      </Cell>
+      <Cell xs={8}>
+        <GridItem>8</GridItem>
+      </Cell>
+      <Cell xs={2}>
+        <GridItem>2</GridItem>
+      </Cell>
+    </Grid>
+    <GridLayout columns="2fr 8fr 2fr" columnGap="space050">
+      <GridItem>2</GridItem>
+      <GridItem>8</GridItem>
+      <GridItem>2</GridItem>
+    </GridLayout>
+  </>
 );
