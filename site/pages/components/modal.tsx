@@ -1,5 +1,15 @@
 import React from 'react';
-import {UnorderedList, Block, P, Stack, H1, Button, Modal} from 'newskit';
+import {
+  UnorderedList,
+  Block,
+  P,
+  Stack,
+  H1,
+  Button,
+  Modal,
+  InlineMessage,
+  LinkInline,
+} from 'newskit';
 import {Link} from '../../components/link';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
@@ -124,7 +134,7 @@ export default (layoutProps: LayoutProps) => (
           name: 'Overlay',
           description: 'Obscures the page content behind the panel',
           component: ['Overlay (internal)'],
-          optional: undefined,
+          optional: true,
         },
         {
           name: 'Panel',
@@ -137,13 +147,13 @@ export default (layoutProps: LayoutProps) => (
           description:
             'An area to display content at the top of a panel e.g. a title',
           component: 'Block',
-          optional: undefined,
+          optional: true,
         },
         {
           name: 'Close button',
           description: 'Icon Button for closing the Modal',
           component: 'Icon Button',
-          optional: undefined,
+          optional: true,
         },
         {
           name: 'Content',
@@ -200,8 +210,24 @@ export default (layoutProps: LayoutProps) => (
         },
         {
           title: 'Close position',
-          description:
-            'The position of the close button in the Modal header is set to right as default, with the option to set the position to the left of the header.',
+          description: (
+            <>
+              <Block spaceStack="space030">
+                The position of the close button in the Modal header is set to
+                right as default, with the option to set the position to the
+                left of the header.
+              </Block>
+              <InlineMessage
+                role="region"
+                aria-label="Close position"
+                title="Note"
+              >
+                The header and close button are optional. However it&lsquo;s
+                recommended that a close button is always used to adhere to{' '}
+                <LinkInline href="#">aria-principles</LinkInline>.
+              </InlineMessage>
+            </>
+          ),
           media: getIllustrationComponent('components/modal/close-position'),
         },
         {

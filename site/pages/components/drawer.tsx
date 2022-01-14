@@ -1,5 +1,13 @@
 import React from 'react';
-import {Drawer, DrawerProps, OrderedList, styled} from 'newskit';
+import {
+  Block,
+  Drawer,
+  DrawerProps,
+  InlineMessage,
+  LinkInline,
+  OrderedList,
+  styled,
+} from 'newskit';
 
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
@@ -142,7 +150,7 @@ export default (layoutProps: LayoutProps) => (
           name: 'Overlay',
           description: 'Obscures the page content behind the panel',
           component: ['Overlay'],
-          optional: undefined,
+          optional: true,
         },
         {
           name: 'Panel',
@@ -161,7 +169,7 @@ export default (layoutProps: LayoutProps) => (
           name: 'Close Button',
           description: 'Icon Button for closing the Drawer',
           component: ['Icon Button'],
-          optional: undefined,
+          optional: true,
         },
         {
           name: 'Content',
@@ -180,8 +188,27 @@ export default (layoutProps: LayoutProps) => (
       cards: [
         {
           title: 'Placement',
-          description:
-            'The Drawer can appear from the left (default), right, top, or bottom of the screen. When appearing from the left or right of the screen, the close Icon Button is positioned on the same side where the Drawer originates from. When appearing from the top or bottom of the screen, the close Icon Button is positioned on the right as default.',
+          description: (
+            <>
+              <Block spaceStack="space030">
+                The Drawer can appear from the left (default), right, top, or
+                bottom of the screen. When appearing from the left or right of
+                the screen, the close Icon Button is positioned on the same side
+                where the Drawer originates from. When appearing from the top or
+                bottom of the screen, the close Icon Button is positioned on the
+                right as default.
+              </Block>
+              <InlineMessage
+                role="region"
+                aria-label="Close position"
+                title="Note"
+              >
+                The header and close button are optional. However it&lsquo;s
+                recommended that a close button is always used to adhere to{' '}
+                <LinkInline href="#">aria-principles</LinkInline>.
+              </InlineMessage>
+            </>
+          ),
           media: getIllustrationComponent(
             'components/drawer/drawer-options-placement-illustration',
           ),
