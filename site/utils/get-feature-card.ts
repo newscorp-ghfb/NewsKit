@@ -54,7 +54,7 @@ export const useGetFeatureCard = () => {
   }
   const featureCard = {
     ...(feature || initialRoute),
-    href: (feature && feature.id) || initialRoute?.id,
+    href: (feature && feature.id.substring(1)) || initialRoute?.id,
   };
   return featureCard;
 };
