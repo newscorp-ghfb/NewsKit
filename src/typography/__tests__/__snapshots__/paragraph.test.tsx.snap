@@ -9,7 +9,7 @@ exports[`Paragraph renders Paragraph 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-0 svg {
@@ -33,7 +33,7 @@ exports[`Paragraph renders Paragraph with overrides 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-0 svg {
@@ -57,7 +57,7 @@ exports[`Paragraph renders empty Paragraph with dropCap without crashing  1`] = 
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-0 svg {
@@ -87,7 +87,7 @@ exports[`Paragraph renders with drop cap 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-1 svg {

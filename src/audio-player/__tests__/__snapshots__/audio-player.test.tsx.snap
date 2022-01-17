@@ -514,7 +514,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -652,7 +652,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-left: 12px;
 }
@@ -810,7 +810,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -1744,7 +1744,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -1882,7 +1882,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-left: 12px;
 }
@@ -2040,7 +2040,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -3097,7 +3097,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -3832,7 +3832,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -3979,7 +3979,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-left: 12px;
 }
@@ -5297,7 +5297,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -5437,7 +5437,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-left: 12px;
 }
@@ -5596,7 +5596,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -6654,7 +6654,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -6792,7 +6792,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-left: 12px;
 }
@@ -6950,7 +6950,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -7946,7 +7946,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -8084,7 +8084,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-left: 12px;
 }
@@ -8242,7 +8242,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -9227,7 +9227,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-right: 12px;
 }
@@ -9325,7 +9325,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-left: 12px;
 }
@@ -9499,7 +9499,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   background-color: transparent;
   color: #fff;
