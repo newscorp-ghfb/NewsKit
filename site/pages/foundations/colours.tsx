@@ -361,11 +361,7 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
           showSeparator
-        >
-          <Block stylePreset="imageRoundedMedium">
-            <Illustration path="foundations/iconography/overview" />
-          </Block>
-        </ContentPrimary>
+        />
       </ContentSection>
       <ContentSection sectionName="principles">
         <ContentPrimary
