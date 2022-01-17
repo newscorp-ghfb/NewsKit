@@ -9,7 +9,7 @@ describe('LineTruncation', () => {
   });
   test('renders with line truncation attribute', () => {
     const props: LineTruncationProps = {
-      line: '2',
+      lines: '2',
     };
     const fragment = renderToFragmentWithTheme(LineTruncation, props);
     expect(fragment).toMatchSnapshot();

@@ -2,20 +2,20 @@ import {styled} from 'newskit';
 import React from 'react';
 
 export interface LineTruncationProps {
-  line: string;
+  lines: string;
 }
 
 const StyledTextBlock = styled.span<LineTruncationProps>`
-  ${({line}) =>
-    line
+  ${({lines}) =>
+    lines
       ? `display: -webkit-box;
-     -webkit-line-clamp:${line};
+     -webkit-line-clamp:${lines};
      -webkit-box-orient: vertical;
      overflow: hidden;`
       : ''};
 `;
 
 export const LineTruncation: React.FC<LineTruncationProps> = ({
-  line,
+  lines,
   children,
-}) => <StyledTextBlock line={line}>{children}</StyledTextBlock>;
+}) => <StyledTextBlock lines={lines}>{children}</StyledTextBlock>;
