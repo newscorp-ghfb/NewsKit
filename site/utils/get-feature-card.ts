@@ -34,7 +34,7 @@ const findIndex = (
   return {currentIndex, matchedRoute};
 };
 
-export const GetFeatureCard = () => {
+export const useGetFeatureCard = () => {
   const path = useRouter()?.pathname || '';
   const currentRoute: string[] = path.match(/\/[A-z\d-]*/g) || [];
   const {currentIndex, matchedRoute} = findIndex(path, currentRoute, routes, 0);

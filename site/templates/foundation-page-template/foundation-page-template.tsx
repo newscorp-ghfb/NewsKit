@@ -8,7 +8,7 @@ import {
 } from '../../theme/doc-theme';
 import {OnwardJourneySectionProps} from '../template-sections';
 import {FoundationPageTemplateProps} from './types';
-import {GetFeatureCard} from '../../utils/get-feature-card';
+import {useGetFeatureCard} from '../../utils/get-feature-card';
 
 export const defaultFeatureCard: Partial<OnwardJourneySectionProps> = {
   buttonLabel: 'Read more',
@@ -22,7 +22,7 @@ export const FoundationPageTemplate: React.FC<FoundationPageTemplateProps> = ({
   layoutProps,
   ...rest
 }) => {
-  const featureCard = GetFeatureCard();
+  const featureCard = useGetFeatureCard();
   return (
     <Layout {...layoutProps} newPage>
       {({themeMode}) => (
