@@ -1,8 +1,11 @@
 import React from 'react';
-import {styled, getSize, getStylePreset} from '../../../utils/style';
+import {styled, getStylePreset, getResponsiveSize} from '../../../utils/style';
 import {withTheme} from '../../../theme';
 import {Svg} from '../../svg';
 import {NewsKitIconProps} from '../../types';
+import {withOwnTheme} from '../../../utils/with-own-theme';
+import defaults from '../../defaults';
+import stylePresets from '../../style-presets';
 
 const StyledSvg = styled(Svg)<NewsKitIconProps>`
   @keyframes rotate {
@@ -23,8 +26,8 @@ const StyledSvg = styled(Svg)<NewsKitIconProps>`
     }
   }
 
-  width: ${getSize('indeterminateProgressIndicator', '')};
-  height: ${getSize('indeterminateProgressIndicator', '')};
+  ${getResponsiveSize('width', 'indeterminateProgressIndicator', '', 'size')};
+  ${getResponsiveSize('height', 'indeterminateProgressIndicator', '', 'size')};
   stroke: ${props => {
     const stylePresetObj = getStylePreset(
       'indeterminateProgressIndicator',
@@ -57,13 +60,13 @@ const DefaultProgressIndicatorIcon: React.FC<NewsKitIconProps> = props => (
   </StyledSvg>
 );
 
-export const IndeterminateProgressIndicator = withTheme<NewsKitIconProps>(
-  props => {
+export const IndeterminateProgressIndicator = withOwnTheme(
+  withTheme<NewsKitIconProps>(props => {
     const Icon =
       props.theme.icons.IndeterminateProgressIndicator ||
       DefaultProgressIndicatorIcon;
     return <Icon {...props} />;
-  },
-);
+  }),
+)({defaults, stylePresets});
 
 IndeterminateProgressIndicator.displayName = 'IndeterminateProgressIndicator';

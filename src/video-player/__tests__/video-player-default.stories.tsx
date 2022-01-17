@@ -8,10 +8,10 @@ import {
 } from './config';
 import {Button} from '../../button';
 import {Card} from '../../card';
-import {Link} from '../../link';
 import {Block} from '../../block';
 import {Headline} from '../../headline';
 import {TextBlock} from '../../text-block';
+import {LinkStandalone} from '../../link';
 
 export default {
   title: 'NewsKit Light/video-player/default',
@@ -46,6 +46,11 @@ export const StoryDefaultVideoPlayer = () => {
   );
 };
 StoryDefaultVideoPlayer.storyName = 'video-default';
+StoryDefaultVideoPlayer.parameters = {
+  eyes: {
+    waitBeforeCapture: 5000,
+  },
+};
 
 export const StoryPlaylistsVideoPlayer = () => {
   const videoRef = React.useRef<HTMLVideoElement>(null);
@@ -74,6 +79,11 @@ export const StoryPlaylistsVideoPlayer = () => {
   );
 };
 StoryPlaylistsVideoPlayer.storyName = 'playlist-video-default';
+StoryDefaultVideoPlayer.parameters = {
+  eyes: {
+    waitBeforeCapture: 5000,
+  },
+};
 
 export const StoryCardWithVideo = () => (
   <>
@@ -82,7 +92,11 @@ export const StoryCardWithVideo = () => (
       layout={{xs: 'vertical', md: 'horizontal'}}
       media={() => <VideoPlayer config={CARD_VIDEO_PLAYER_CONFIG} />}
       overrides={{horizontalRatio: '2:3'}}
-      actions={() => <Link href="https://google.com">Read the full story</Link>}
+      actions={() => (
+        <LinkStandalone href="https://google.com">
+          Read the full story
+        </LinkStandalone>
+      )}
     >
       <Block spaceStack="space030">
         <Headline kickerText="CROWDS HEAD">
@@ -101,3 +115,8 @@ export const StoryCardWithVideo = () => (
   </>
 );
 StoryCardWithVideo.storyName = 'video-in-card';
+StoryDefaultVideoPlayer.parameters = {
+  eyes: {
+    waitBeforeCapture: 5000,
+  },
+};

@@ -327,97 +327,6 @@ Object {
       "stylePreset": "inkBase",
       "typographyPreset": "editorialCaption010",
     },
-    "card": Object {
-      "actionsContainer": Object {
-        "minHeight": "sizing080",
-        "spaceInset": "spaceInsetSquish000",
-        "stylePreset": "cardContainerActions",
-      },
-      "headline": Object {
-        "interactive": Object {
-          "heading": Object {
-            "stylePreset": "headlineHeadingInteractive",
-          },
-          "kicker": Object {
-            "spaceInline": Object {
-              "lg": "space030",
-              "md": "space030",
-              "sm": "space020",
-              "xs": "space020",
-            },
-            "stylePreset": "headlineKickerInteractive",
-          },
-          "typographyPreset": Object {
-            "lg": "editorialHeadline050",
-            "md": "editorialHeadline030",
-            "sm": "editorialHeadline020",
-            "xs": "editorialHeadline020",
-          },
-        },
-        "nonInteractive": Object {
-          "heading": Object {
-            "stylePreset": "inkContrast",
-          },
-          "kicker": Object {
-            "spaceInline": Object {
-              "lg": "space030",
-              "md": "space030",
-              "sm": "space020",
-              "xs": "space020",
-            },
-            "stylePreset": "uppercaseInkBrand010",
-          },
-          "typographyPreset": Object {
-            "lg": "editorialHeadline050",
-            "md": "editorialHeadline030",
-            "sm": "editorialHeadline020",
-            "xs": "editorialHeadline020",
-          },
-        },
-      },
-      "horizontalRatio": "1:1",
-      "mediaContainer": Object {
-        "spaceInline": Object {
-          "lg": "space050",
-          "md": "space050",
-          "sm": "space040",
-          "xs": "space040",
-        },
-        "stylePreset": "cardContainerMedia",
-      },
-      "stylePreset": "cardContainer",
-      "teaserContainer": Object {
-        "spaceInset": "spaceInsetSquish000",
-        "stylePreset": "cardContainerTeaser",
-      },
-    },
-    "cardInset": Object {
-      "actionsContainer": Object {
-        "minHeight": "sizing000",
-        "spaceInset": Object {
-          "lg": "spaceInsetSquish040",
-          "md": "spaceInsetSquish040",
-          "sm": "spaceInsetSquish030",
-          "xs": "spaceInsetSquish030",
-        },
-        "stylePreset": "cardContainerActions",
-      },
-      "horizontalRatio": "1:1",
-      "mediaContainer": Object {
-        "spaceInline": "space000",
-        "stylePreset": "cardContainerMedia",
-      },
-      "stylePreset": "cardContainer",
-      "teaserContainer": Object {
-        "spaceInset": Object {
-          "lg": "spaceInset050",
-          "md": "spaceInset050",
-          "sm": "spaceInset040",
-          "xs": "spaceInset040",
-        },
-        "stylePreset": "cardContainerTeaser",
-      },
-    },
     "checkbox": Object {
       "large": Object {
         "feedback": Object {
@@ -561,26 +470,6 @@ Object {
         "xs": "space040",
       },
     },
-    "headline": Object {
-      "heading": Object {
-        "stylePreset": "inkContrast",
-      },
-      "kicker": Object {
-        "spaceInline": Object {
-          "lg": "space040",
-          "md": "space040",
-          "sm": "space030",
-          "xs": "space030",
-        },
-        "stylePreset": "uppercaseInkBrand010",
-      },
-      "typographyPreset": Object {
-        "lg": "editorialHeadline080",
-        "md": "editorialHeadline070",
-        "sm": "editorialHeadline060",
-        "xs": "editorialHeadline060",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -617,10 +506,6 @@ Object {
     "headlineH6": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": "editorialSubheadline010",
-    },
-    "indeterminateProgressIndicator": Object {
-      "size": "iconSize020",
-      "stylePreset": "iconDefault",
     },
     "inlineDrawer": Object {
       "__extends": "{{componentDefaults.drawer}}",
@@ -736,18 +621,6 @@ Object {
         },
         "zIndex": 80,
       },
-    },
-    "orderedList": Object {
-      "content": Object {
-        "stylePreset": "inkBase",
-        "typographyPreset": "editorialParagraph010",
-      },
-      "counter": Object {
-        "minWidth": "sizing050",
-        "stylePreset": "inkBase",
-        "typographyPreset": "editorialParagraph010",
-      },
-      "spaceInline": "space040",
     },
     "overlay": Object {
       "stylePreset": "overlay",
@@ -928,15 +801,6 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
-    "standfirst": Object {
-      "styledText": Object {
-        "stylePreset": "inkBase",
-        "typographyPreset": Object {
-          "lg": "editorialSubheadline020",
-          "xs": "editorialSubheadline010",
-        },
-      },
-    },
     "structuredList": Object {
       "divider": Object {
         "stylePreset": "divider",
@@ -1000,20 +864,6 @@ Object {
         "typographyPreset": "utilityBody020",
         "width": "100%",
       },
-    },
-    "titleBar": Object {
-      "heading": Object {
-        "typographyPreset": Object {
-          "lg": "editorialHeadline080",
-          "md": "editorialHeadline070",
-          "xs": "editorialHeadline050",
-        },
-      },
-      "spaceInset": Object {
-        "lg": "spaceInsetSquish040",
-        "xs": "spaceInsetSquish030",
-      },
-      "stylePreset": "titleBar",
     },
     "toast": Object {
       "content": Object {
@@ -1258,12 +1108,6 @@ Object {
         "iconColor": "{{colors.inkInverse}}",
       },
     },
-    "cardContainer": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "color": "{{colors.inkBase}}",
-      },
-    },
     "checkboxFeedback": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -1402,38 +1246,6 @@ Object {
         "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
         "boxShadow": "{{shadows.shadow060}}",
-      },
-    },
-    "headlineHeadingInteractive": Object {
-      "active": Object {
-        "color": "{{colors.interactivePrimary050}}",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "{{colors.inkBase}}",
-      },
-      "hover": Object {
-        "color": "{{colors.interactivePrimary040}}",
-        "textDecoration": "underline",
-      },
-      "visited": Object {
-        "color": "{{colors.interactiveVisited010}}",
-      },
-    },
-    "headlineKickerInteractive": Object {
-      "active": Object {
-        "color": "{{colors.interactivePrimary050}}",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "{{colors.interactivePrimary030}}",
-      },
-      "hover": Object {
-        "color": "{{colors.interactivePrimary040}}",
-        "textDecoration": "underline",
-      },
-      "visited": Object {
-        "color": "{{colors.interactiveVisited010}}",
       },
     },
     "indeterminateProgressIndicatorInverse": Object {
@@ -1638,11 +1450,6 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
-    "titleBar": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
       },
     },
     "toastInformative": Object {
@@ -1906,28 +1713,28 @@ Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "editorialDisplay010": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize120}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDisplay020": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize130}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDisplay030": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize140}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialDropCap010": Object {
@@ -1946,133 +1753,133 @@ Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize040}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline020": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize050}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline030": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize060}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline040": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize070}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline050": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize080}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline060": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize090}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline070": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize100}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialHeadline080": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize110}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialLabel010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize010}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialLabel020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialLabel030": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialParagraph010": Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
       "fontWeight": "{{fonts.fontWeight010}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "editorialParagraph020": Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
       "fontWeight": "{{fonts.fontWeight010}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "editorialParagraph030": Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
       "fontSize": "{{fonts.fontSize040}}",
       "fontWeight": "{{fonts.fontWeight010}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "editorialQuote010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize060}}",
       "fontWeight": "{{fonts.fontWeight010}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight030}}",
     },
     "editorialQuote020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize080}}",
       "fontWeight": "{{fonts.fontWeight010}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight030}}",
     },
     "editorialSubheadline010": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
       "fontWeight": "{{fonts.fontWeight010}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialSubheadline020": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize050}}",
       "fontWeight": "{{fonts.fontWeight010}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialSubheadline030": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize060}}",
       "fontWeight": "{{fonts.fontWeight010}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "editorialSubheadline040": Object {
@@ -2086,154 +1893,154 @@ Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
       "fontSize": "{{fonts.fontSize080}}",
       "fontWeight": "{{fonts.fontWeight010}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "utilityBody010": Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
       "fontSize": "{{fonts.fontSize010}}",
       "fontWeight": "{{fonts.fontWeight010}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "utilityBody020": Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
       "fontWeight": "{{fonts.fontWeight010}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "utilityBody030": Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
       "fontWeight": "{{fonts.fontWeight010}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "utilityButton010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize010}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "utilityButton020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "utilityButton030": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "utilityHeading010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
       "fontWeight": "{{fonts.fontWeight040}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "utilityHeading020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize040}}",
       "fontWeight": "{{fonts.fontWeight040}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "utilityHeading030": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize050}}",
       "fontWeight": "{{fonts.fontWeight040}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "utilityHeading040": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize060}}",
       "fontWeight": "{{fonts.fontWeight040}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "utilityHeading050": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize070}}",
       "fontWeight": "{{fonts.fontWeight040}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "utilityLabel010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize010}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "utilityLabel020": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "utilityLabel030": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "utilityMeta010": Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
       "fontSize": "{{fonts.fontSize010}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "utilityMeta020": Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "utilitySubheading010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "utilitySubheading020": Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "utilitySubheading030": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize040}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "utilitySubheading040": Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
       "fontSize": "{{fonts.fontSize050}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
     "utilitySubheading050": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize060}}",
       "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },
   },

@@ -22,7 +22,7 @@ exports[`FontAttributes renders with fontLetterSpacing token 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 <div

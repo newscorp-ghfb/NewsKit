@@ -21,6 +21,9 @@ import {BreakpointKeys, Theme, useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {deepMerge} from '../utils/deep-merge';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
+import {withOwnTheme} from '../utils/with-own-theme';
+import defaults from './defaults';
+import stylePresets from './style-presets';
 
 // This key is needed to for the card headline (and to the link when it is wrapped)
 // to avoid missing key prop warning from react.
@@ -159,7 +162,7 @@ const TeaserDecorator = ({
   return <StyledCardLink {...linkProps} />;
 };
 
-export const Card = React.forwardRef<HTMLDivElement, CardProps>(
+const ThemelessCard = React.forwardRef<HTMLDivElement, CardProps>(
   (
     {
       media,
@@ -222,5 +225,7 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
     );
   },
 );
+
+export const Card = withOwnTheme(ThemelessCard)({defaults, stylePresets});
 
 Card.displayName = 'Card';

@@ -104,7 +104,7 @@ Object {
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -400,7 +400,7 @@ Object {
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -768,7 +768,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -930,7 +930,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-18 svg {
