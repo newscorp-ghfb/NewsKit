@@ -8,10 +8,7 @@ import defaults from './defaults';
 import {getSingleStylePreset} from '../utils/style/style-preset';
 import {withOwnTheme} from '../utils/with-own-theme';
 
-export const ThemelessTextField = React.forwardRef<
-  HTMLInputElement,
-  TextFieldProps
->(
+const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
   (
     {
       size = 'medium' as TextFieldSize,

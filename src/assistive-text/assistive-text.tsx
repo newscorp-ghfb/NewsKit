@@ -7,7 +7,7 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 
-export const ThemelessAssistiveText = ({
+const ThemelessAssistiveText = ({
   overrides,
   size = 'medium' as TextFieldSize,
   state,

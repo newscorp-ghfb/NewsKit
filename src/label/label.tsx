@@ -6,7 +6,7 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 
-export const ThemelessLabel = ({
+const ThemelessLabel = ({
   size = 'medium' as TextFieldSize,
   children,
   state,

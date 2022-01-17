@@ -68,10 +68,7 @@ const renderLink = (
 const isLastItem = (currentIndex: number, length: number) =>
   currentIndex === length - 1;
 
-export const ThemelessByline: React.FC<BylineProps> = ({
-  bylineData,
-  overrides,
-}) => {
+const ThemelessByline: React.FC<BylineProps> = ({bylineData, overrides}) => {
   const theme = useTheme();
   const spaceStack = getToken({theme, overrides}, 'byline', '', 'spaceStack');
 

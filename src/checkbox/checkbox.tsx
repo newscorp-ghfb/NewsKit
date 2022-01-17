@@ -27,10 +27,7 @@ const DefaultCheckboxIcon = ({checked, overrides}: CheckboxIconProps) =>
     />
   ) : null;
 
-export const ThemelessCheckbox = React.forwardRef<
-  HTMLInputElement,
-  CheckboxProps
->(
+const ThemelessCheckbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
   (
     {
       size = 'medium',

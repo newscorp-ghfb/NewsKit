@@ -7,7 +7,7 @@ import {TextBlock} from '../text-block';
 import {withOwnTheme} from '../utils/with-own-theme';
 import defaults from './defaults';
 
-export const ThemelessCaption: React.FC<CaptionProps> = ({
+const ThemelessCaption: React.FC<CaptionProps> = ({
   overrides,
   children,
   creditText,
