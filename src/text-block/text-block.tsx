@@ -16,10 +16,6 @@ const StyledTextBlock = styled.p<TextBlockProps>`
     })};
   ${({as, noCrop}) =>
     as && !noCrop && isInlineElement(as) ? 'display: inline-block;' : ''};
-  ${({lineTruncation}) =>
-    lineTruncation
-      ? `display: -webkit-box;-webkit-line-clamp:${lineTruncation};-webkit-box-orient: vertical;overflow: hidden;`
-      : ''};
 `;
 
 export {StyledTextBlock as TextBlock};

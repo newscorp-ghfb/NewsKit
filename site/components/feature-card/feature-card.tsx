@@ -19,6 +19,7 @@ import {
   StyledFeatureCardHorizontalMedia,
   StyledFeatureCardVerticalMedia,
 } from './styled';
+import {LineTruncation} from '../line-truncation';
 
 const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
   title,
@@ -148,9 +149,8 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
                 <TextBlock
                   stylePreset="inkWhiteSubtle"
                   typographyPreset={descriptionTypographyPreset}
-                  lineTruncation="2"
                 >
-                  {description}
+                  <LineTruncation line="2">{description}</LineTruncation>
                 </TextBlock>
               </Block>
             )}
