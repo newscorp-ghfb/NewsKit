@@ -8,7 +8,8 @@ import { useAudioFunctions } from './audio-functions';
 interface useAudioPlayerProps {
   src: string,
   autoPlay?: boolean,
-  live?: boolean
+  live?: boolean,
+  withSeekBar?: boolean,
   playPauseButton?: {
     onClick: () => void;
   }
@@ -30,7 +31,7 @@ export interface audioElementReturnProps {
   ref: any;
   onCanPlay: () => void;
   onDurationChange: ({ target }: SyntheticEvent<HTMLAudioElement, Event>) => void;
-  onTimeUpdate: ({ target }: SyntheticEvent<HTMLAudioElement, Event>) => void;
+  onTimeUpdate?: ({ target }: SyntheticEvent<HTMLAudioElement, Event>) => void;
 }
 
 export interface seekBarReturnProps {
@@ -44,6 +45,7 @@ export function useAudioPlayer({
   src,
   autoPlay =  false,
   live = false,
+  withSeekBar = false,
   playPauseButton,
 }: useAudioPlayerProps): {
   playPauseButtonProps: playPauseButtonReturnProps, 
@@ -75,7 +77,6 @@ export function useAudioPlayer({
   // @ts-ignore as we are not passing all the parameters yet.
   // TODO NEXT STEP the useAudioFunctions will need to require minimum props
   // based on which components we are implementing.?
-  //TODO SPLIT useAudioFunctions? in multiple hooks? by component?
   const {audioEvents, togglePlay, onChangeSlider} = useAudioFunctions({
     setBuffered,
     setDisplayDuration,
@@ -98,7 +99,7 @@ export function useAudioPlayer({
       ref: audioRef,
       onCanPlay: audioEvents.onCanPlay,
       onDurationChange: audioEvents.onDurationChange,
-      onTimeUpdate: audioEvents.onTimeUpdate
+      onTimeUpdate: withSeekBar ? audioEvents.onCanPlay : undefined,
     },
     playPauseButtonProps: {
       canPause: live,

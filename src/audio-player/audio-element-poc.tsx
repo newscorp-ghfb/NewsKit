@@ -7,7 +7,7 @@ interface audioElementHTML {
   ref: any;
   onCanPlay: () => void;
   onDurationChange: ({ target }: SyntheticEvent<HTMLAudioElement, Event>) => void;
-  onTimeUpdate: ({ target }: SyntheticEvent<HTMLAudioElement, Event>) => void;
+  onTimeUpdate?: ({ target }: SyntheticEvent<HTMLAudioElement, Event>) => void;
 }
 
 export const AudioElementPOC = React.forwardRef(({
