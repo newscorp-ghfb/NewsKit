@@ -7,6 +7,5 @@ kubernetes
 public
 site/static
 site/next-env.d.ts
-component-generator/generators/app/templates/
 src/icons/filled/material
 src/icons/outlined/material
