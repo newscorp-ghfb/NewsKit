@@ -19,6 +19,7 @@ const GRID_DEFAULT_PROPS = {
   justifyItems: undefined,
   alignItems: undefined,
   areas: undefined,
+  inline: false,
 };
 
 export type GridLayoutProps = {
@@ -31,6 +32,7 @@ export type GridLayoutProps = {
   justifyItems?: MQ<string>;
   alignItems?: MQ<string>;
   areas?: MQ<string>;
+  inline?: MQ<boolean>;
   children?: React.ReactNode | GridLayoutRenderProps;
   overrides?: {
     width?: MQ<string>;
@@ -58,7 +60,10 @@ export type GridLayoutRenderProps = (areas: AreasMap) => React.ReactNode;
 STYLED COMPONENTS
 */
 const StyledGridLayout = styled.div<GridLayoutProps>`
-  display: grid;
+  ${handleResponsiveProp({inline: GRID_DEFAULT_PROPS.inline}, ({inline}) => ({
+    display: inline ? 'inline-grid' : 'grid',
+  }))}
+
   ${handleResponsiveProp(
     {rowGap: GRID_DEFAULT_PROPS.rowGap},
     ({rowGap}, {theme}) => ({
@@ -125,7 +130,7 @@ HELPERS
 */
 const capitalize = s => {
   if (typeof s !== 'string') return '';
-  return s.charAt(0).toUpperCase() + s.slice(1);
+  return s.replace(/^./, firstLetter => firstLetter.toUpperCase());
 };
 
 const extractAreas = ariaString =>
@@ -136,21 +141,22 @@ const extractAreas = ariaString =>
     .trim()
     .split(' ');
 
-const makeUniq = (array: string[]) => [...new Set(array)];
+const uniq = (array: string[]) => [...new Set(array)];
 
 const filterInvalidAreas = areaName => areaName !== '.' && Boolean(areaName);
 
 const getAreasList = (areas: MQ<string>): string[] => {
   if (typeof areas === 'string') {
-    return makeUniq(extractAreas(areas));
-  } else if (typeof areas === 'object') {
+    return uniq(extractAreas(areas));
+  }
+  if (typeof areas === 'object') {
     const list = Object.values(areas).reduce((acc, val) => {
       const filtered = extractAreas(val);
       acc.push(...filtered);
       return acc;
     }, []);
 
-    return makeUniq(list).filter(filterInvalidAreas);
+    return uniq(list).filter(filterInvalidAreas);
   }
 
   return [];
@@ -182,6 +188,7 @@ export const GridLayout = ({children, ...props}: GridLayoutProps) => {
   if (isFunctionWithAreas) {
     areasNames.forEach(area => {
       const componentName = capitalize(area);
+      console.log({componentName});
       Areas[componentName] = (itemProps: GridLayoutItemProps) => (
         <GridLayoutItem area={area} {...itemProps} />
       );
