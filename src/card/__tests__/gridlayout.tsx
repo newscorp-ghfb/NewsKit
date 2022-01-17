@@ -24,8 +24,8 @@ const GRID_DEFAULT_PROPS = {
 export type GridLayoutProps = {
   rowGap?: MQ<string>;
   columnGap?: MQ<string>;
-  columns?: MQ<string>;
   rows?: MQ<string>;
+  columns?: MQ<string>;
   justifyContent?: MQ<string>;
   alignContent?: MQ<string>;
   justifyItems?: MQ<string>;
@@ -138,6 +138,8 @@ const extractAreas = ariaString =>
 
 const makeUniq = (array: string[]) => [...new Set(array)];
 
+const filterInvalidAreas = areaName => areaName !== '.' && Boolean(areaName);
+
 const getAreasList = (areas: MQ<string>): string[] => {
   if (typeof areas === 'string') {
     return makeUniq(extractAreas(areas));
@@ -148,7 +150,7 @@ const getAreasList = (areas: MQ<string>): string[] => {
       return acc;
     }, []);
 
-    return makeUniq(list).filter(Boolean);
+    return makeUniq(list).filter(filterInvalidAreas);
   }
 
   return [];
