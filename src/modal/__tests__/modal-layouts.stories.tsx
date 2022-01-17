@@ -125,6 +125,41 @@ export const StoryNoHeaderContent = () =>
   ));
 StoryNoHeaderContent.storyName = 'no header content';
 
+export const StoryNoClose = () =>
+  React.createElement(() => (
+    <>
+      <StorybookHeading>Default with no close button</StorybookHeading>
+      <Modal
+        aria-label="Default with no header"
+        open
+        header="Header"
+        closePosition="none"
+        onDismiss={() => {}}
+        overrides={{header: {spaceInset: 'space000'}}}
+      >
+        {modalContent}
+      </Modal>
+    </>
+  ));
+StoryNoClose.storyName = 'no close button';
+
+export const StoryNoHeader = () =>
+  React.createElement(() => (
+    <>
+      <StorybookHeading>Default without header</StorybookHeading>
+      <Modal
+        aria-label="Default with no header"
+        open
+        closePosition="none"
+        onDismiss={() => {}}
+        overrides={{header: {spaceInset: 'space000'}}}
+      >
+        {modalContent}
+      </Modal>
+    </>
+  ));
+StoryNoHeader.storyName = 'no header';
+
 export const StoryWithOverrides = () =>
   React.createElement(() => (
     <>
