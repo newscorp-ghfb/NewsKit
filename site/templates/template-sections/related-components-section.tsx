@@ -30,11 +30,9 @@ export const RelatedComponentsSection: React.FC<RelatedComponentsSectionProps> =
     toc={next.toc || 'Related'}
     id={next.id || 'related'}
     introduction={introduction}
-    hideSeparator
   >
     <ComponentPageCell>
       <MediaList
-        spaceStack="space090"
         layout="4-span"
         cards={getRelatedComponents(related).filter(
           component => component.title,
