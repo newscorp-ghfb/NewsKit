@@ -1,20 +1,23 @@
 import * as React from 'react';
 import {Card} from '..';
-import {Visible} from '../../grid';
+import {Grid, Cell, Visible} from '../../grid';
 import {Stack} from '../../stack';
 import {Headline} from '../../headline';
 import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
 import {styled} from '../../utils/style';
+import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {AlignSelfValues, StackChild} from '../../stack-child';
 import {Divider} from '../../divider';
 import {TitleBar} from '../../title-bar';
 import {Button} from '../../button';
 import {Image} from '../../image';
-import {GridLayout} from './gridlayout';
+import {Flag, Heading1, IconFilledEmail, Tag} from '../..';
+import {GridLayout, GridLayoutItem} from './gridlayout';
+import {GridCard, GridTeaser} from './grid-card';
 
 export default {
-  title: 'NewsKit Light/the-sun',
+  title: 'NewsKit Light/the-sun-all',
   component: () => 'None',
 };
 
@@ -49,6 +52,110 @@ const cardTypographyPresets: {[index: string]: string} = {
 const LargeItemBody = styled.div`
   min-height: 92px;
 `;
+
+const LargeItem = () => (
+  <>
+    <Card
+      layout="vertical"
+      media={{
+        src: '/placeholder-3x2.png',
+        alt: 'Card Media',
+      }}
+    >
+      <LargeItemBody>
+        <Block spaceStack={cardTeaserHeadline}>
+          <Headline kickerText="SHORT">
+            title of the card describing the main content
+          </Headline>
+        </Block>
+        <Block spaceStack={cardTeaserLeadInset}>
+          <TextBlock
+            stylePreset="cardTeaserLead"
+            typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+          >
+            A short paragraph description of the article, outlining the main
+            story and focus.
+          </TextBlock>
+        </Block>
+      </LargeItemBody>
+    </Card>
+  </>
+);
+const SmallItem = () => (
+  <>
+    <Card
+      layout="horizontal"
+      media={{
+        src: '/placeholder-3x2.png',
+        alt: 'Card Media',
+      }}
+      overrides={{
+        horizontalRatio: '1:1',
+      }}
+    >
+      <Headline
+        kickerText="SHORT"
+        overrides={{
+          typographyPreset: 'editorialHeadline010',
+        }}
+      >
+        title of the card describing the main content
+      </Headline>
+    </Card>
+  </>
+);
+
+const FixWidth = styled.div`
+  margin: 0 auto;
+  max-width: 420px;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    max-width: 620px;
+  }
+
+  ${getMediaQueryFromTheme('lg')} {
+    max-width: 932px;
+  }
+`;
+
+export const StoryTheSun = () => (
+  <FixWidth>
+    <Grid>
+      <Cell xs="full-width" lg={8}>
+        <LargeItem />
+      </Cell>
+      <Cell xs="full-width" lg={4}>
+        <GridLayout
+          rowGap={{xs: '10px', md: '20px', lg: '0'}}
+          columnGap={{md: '20px'}}
+          columns={{xs: '1fr', md: '1fr 1fr', lg: '1fr'}}
+          justifyContent={{lg: 'stretch'}}
+          alignContent={{lg: 'space-between'}}
+          overrides={{height: '100%'}}
+        >
+          <SmallItem />
+          <Visible sm lg>
+            <Divider />
+          </Visible>
+
+          <SmallItem />
+
+          <Visible sm lg>
+            <Divider />
+          </Visible>
+
+          <SmallItem />
+
+          <Visible sm lg>
+            <Divider />
+          </Visible>
+
+          <SmallItem />
+        </GridLayout>
+      </Cell>
+    </Grid>
+  </FixWidth>
+);
 
 const BlockLayoutSpace = () => (
   <>
@@ -159,7 +266,27 @@ const CardSmall = ({title = '', image = '', href = ''}) => (
   </>
 );
 
+const TitleBarWithGrid = ({title, href}) => (
+  <Block spaceInset="space030">
+    <GridLayout
+      alignItems="center"
+      columnGap="space030"
+      columns={{
+        xs: 'auto 1fr',
+        md: 'auto 1fr auto',
+      }}
+    >
+      <Heading1>{title}</Heading1>
+      <Divider />
+      <Visible md lg xl>
+        <Button href={href}>read more</Button>
+      </Visible>
+    </GridLayout>
+  </Block>
+);
+
 const SectionHeader = ({title, href}) => {
+  //return <TitleBarWithGrid title={title} href={href} />;
   const button = () => href && <Button href={href}>Read more</Button>;
 
   return (
@@ -201,7 +328,7 @@ const Section = ({children, href, title}) => (
 
 /*
 
-BLOCK LAYOUT COMPONENTS
+LAYOUT COMPONENTS
 
 */
 // 1 large item, 4 small items in a grid
@@ -299,7 +426,7 @@ const BlockLayout3H = ({placeholders = []}) => {
 
 /*
 
-BLOCK LAYOUT TEASERS COMPONENTS
+BLOCK LAYOUT COMPONENTS
 
 */
 const BlockLayoutTeaserVariant1 = ({data = []}) => {
@@ -376,29 +503,25 @@ const BlockLayoutTeaser = ({data, variant}) => {
 
 export const StoryTheSunFull = () => (
   <>
-    <header>Header area</header>
-    <main>
-      <Section title="Heading here" href="/?sport">
-        <BlockLayoutTeaser variant="variant-1" data={news} />
+    <Section title="Heading here" href="/?sport">
+      <BlockLayoutTeaser variant="variant-1" data={news} />
 
-        <BlockLayoutSpace />
+      <BlockLayoutSpace />
 
-        <BlockLayoutTeaser variant="variant-2" data={news} />
-      </Section>
+      <BlockLayoutTeaser variant="variant-2" data={news} />
+    </Section>
 
-      <Section title="Sport" href="/?sport">
-        <BlockLayoutTeaser variant="variant-3" data={news} />
+    <Section title="Sport" href="/?sport">
+      <BlockLayoutTeaser variant="variant-3" data={news} />
 
-        <BlockLayoutSpace />
+      <BlockLayoutSpace />
 
-        <BlockLayoutTeaser variant="variant-5" data={news} />
-      </Section>
+      <BlockLayoutTeaser variant="variant-5" data={news} />
+    </Section>
 
-      <Section title="Gallery" href="/?sport">
-        <BlockLayoutTeaser variant="variant-4" data={imageGallery} />
-      </Section>
-    </main>
-    <footer>Footer area</footer>
+    <Section title="Gallery" href="/?sport">
+      <BlockLayoutTeaser variant="variant-4" data={imageGallery} />
+    </Section>
   </>
 );
 
@@ -435,25 +558,203 @@ export const StoryTheSunLayouts = () => (
   </>
 );
 
-export const StoryTheSunCards = () => (
+export const GridStory = () => (
   <>
+    <GridLayout
+      columns={{md: '1fr 1fr', lg: '1fr 1fr 1fr 1fr'}}
+      rowGap={{xs: 'space010', md: 'space040'}}
+      columnGap={{md: 'space030', lg: 'space050'}}
+    >
+      <GridBox>1</GridBox>
+      <GridBox>2</GridBox>
+      <GridBox>3</GridBox>
+      <GridBox>4</GridBox>
+    </GridLayout>
     <br />
-    <Headline>Large</Headline>
-    <br />
-    <div style={{maxWidth: '600px'}}>
-      <CardLarge {...news[0]} />
-    </div>
     <br />
     <br />
     <Divider />
     <br />
     <br />
-    <Headline>Small</Headline>
     <br />
-    <div style={{maxWidth: '400px'}}>
-      <CardSmall {...news[0]} />
-    </div>
+    <GridLayout
+      areas={{
+        xs: `
+         "A"
+         "B"
+         "C"
+         "D"
+         "E"
+         `,
+        md: ` 
+          "A A"
+          "B C"
+          "D E"`,
+        lg: `
+          "A B"
+          "A C"
+          "A D"
+          "A E"  
+    `,
+      }}
+      rowGap={{xs: 'space010', md: 'space040'}}
+      columnGap={{md: 'space030', lg: 'space050'}}
+    >
+      <GridLayoutItem area="A">
+        <GridBox>A</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem area="B">
+        <GridBox>B</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem area="C">
+        <GridBox>C</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem area="D">
+        <GridBox>D</GridBox>
+      </GridLayoutItem>
+      <GridLayoutItem area="E">
+        <GridBox>E</GridBox>
+      </GridLayoutItem>
+    </GridLayout>
+
     <br />
     <br />
+    <br />
+    <Divider />
+    <br />
+    <br />
+    <br />
+
+    <GridLayout
+      areas={{
+        xs: `
+         "A"
+         "B"
+         "C"
+         "D"
+         "E"
+         `,
+        md: ` 
+          "A A"
+          "B C"
+          "D E"`,
+        lg: `
+          "A B"
+          "A C"
+          "A D"
+          "A E"  
+    `,
+      }}
+      rowGap={{xs: 'space010', md: 'space040'}}
+      columnGap={{md: 'space030', lg: 'space050'}}
+    >
+      {Arias => (
+        <>
+          <Arias.A>
+            <GridBox>A</GridBox>
+          </Arias.A>
+          <Arias.B>
+            <GridBox>B</GridBox>
+          </Arias.B>
+          <Arias.C>
+            <GridBox>C</GridBox>
+          </Arias.C>
+          <Arias.D>
+            <GridBox>D</GridBox>
+          </Arias.D>
+          <Arias.E>
+            <GridBox>E</GridBox>
+          </Arias.E>
+        </>
+      )}
+    </GridLayout>
+  </>
+);
+
+export const CardWithGrid = () => (
+  <>
+    <GridCard
+      href="#"
+      image="https://www.thesun.co.uk/wp-content/uploads/2022/01/aj-zayn-love-comp.jpg?strip=all&w=620&h=413&crop=1"
+      title="Rochelle Humes on why Marvin can’t get enough of her pregnancy curves"
+      teaser="When asked about his trips as a royal around the Commonwealth, Harry told the Armchair Expert… podcast"
+    />
+    <Block spaceStack="100px" />
+    <hr />
+    <Block spaceStack="100px" />
+
+    <GridTeaser
+      image="https://www.thesun.co.uk/wp-content/uploads/2022/01/aj-zayn-love-comp.jpg?strip=all&w=620&h=413&crop=1"
+      title="Rochelle Humes on why Marvin can’t get enough of her pregnancy curves"
+      teaser="When asked about his trips as a royal around the Commonwealth, Harry told the Armchair Expert… podcast"
+    />
+  </>
+);
+
+export const GridComparison = () => (
+  <>
+    <Grid xsMargin="space000" xsColumnGutter="space050">
+      <Cell xs={4}>
+        <GridBox>4</GridBox>
+      </Cell>
+      <Cell xs={4}>
+        <GridBox>4</GridBox>
+      </Cell>
+      <Cell xs={4}>
+        <GridBox>4</GridBox>
+      </Cell>
+    </Grid>
+    <GridLayout columns="4fr 4fr 4fr" columnGap="space050">
+      <GridBox>4</GridBox>
+      <GridBox>4</GridBox>
+      <GridBox>4</GridBox>
+    </GridLayout>
+    <hr />
+    <Grid xsMargin="space000" xsColumnGutter="space050">
+      <Cell xs={8}>
+        <GridBox>8</GridBox>
+      </Cell>
+      <Cell xs={4}>
+        <GridBox>4</GridBox>
+      </Cell>
+    </Grid>
+    <GridLayout columns="8fr 4fr" columnGap="space050">
+      <GridBox>8</GridBox>
+      <GridBox>4</GridBox>
+    </GridLayout>
+    <hr />
+    <Grid xsMargin="space000" xsColumnGutter="space050">
+      <Cell xs={2}>
+        <GridBox>2</GridBox>
+      </Cell>
+      <Cell xs={6}>
+        <GridBox>6</GridBox>
+      </Cell>
+      <Cell xs={4}>
+        <GridBox>4</GridBox>
+      </Cell>
+    </Grid>
+    <GridLayout columns="2fr 6fr 4fr" columnGap="space050">
+      <GridBox>2</GridBox>
+      <GridBox>6</GridBox>
+      <GridBox>2</GridBox>
+    </GridLayout>
+    <hr />
+    <Grid xsMargin="space000" xsColumnGutter="space050">
+      <Cell xs={2}>
+        <GridBox>2</GridBox>
+      </Cell>
+      <Cell xs={8}>
+        <GridBox>8</GridBox>
+      </Cell>
+      <Cell xs={2}>
+        <GridBox>2</GridBox>
+      </Cell>
+    </Grid>
+    <GridLayout columns="2fr 8fr 2fr" columnGap="space050">
+      <GridBox>2</GridBox>
+      <GridBox>8</GridBox>
+      <GridBox>2</GridBox>
+    </GridLayout>
   </>
 );
