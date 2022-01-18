@@ -135,7 +135,6 @@ export const StoryNoClose = () =>
         header="Header"
         closePosition="none"
         onDismiss={() => {}}
-        overrides={{header: {spaceInset: 'space000'}}}
       >
         {modalContent}
       </Modal>
@@ -152,13 +151,12 @@ export const StoryNoHeader = () =>
         open
         closePosition="none"
         onDismiss={() => {}}
-        overrides={{header: {spaceInset: 'space000'}}}
       >
         {modalContent}
       </Modal>
     </>
   ));
-StoryNoHeader.storyName = 'no header';
+StoryNoHeader.storyName = 'no header & close button';
 
 export const StoryWithOverrides = () =>
   React.createElement(() => (

@@ -395,10 +395,8 @@ export const StoryHeaderLessModal = () =>
     return (
       <div>
         <StorybookHeading>Headerless Modal</StorybookHeading>
-        <Button onClick={openBoth}>
-          Open without headeer and close button
-        </Button>
-        <Button onClick={openHeader}>Open without headeer</Button>
+        <Button onClick={openBoth}>Open without header and close button</Button>
+        <Button onClick={openHeader}>Open without header</Button>
         <Button onClick={openButton}>Open without close button</Button>
 
         <Modal open={isActiveBoth} onDismiss={closeBoth} closePosition="none">
