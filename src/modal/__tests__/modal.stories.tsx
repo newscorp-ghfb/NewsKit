@@ -386,7 +386,7 @@ export const StoryModelessInlineModal = () =>
 StoryModelessInlineModal.storyName = 'modelss-inline';
 StoryModelessInlineModal.parameters = {eyes: {include: false}};
 
-export const StoryHeaderLessModal = () =>
+export const StoryOptionalHeaderClose = () =>
   React.createElement(() => {
     const [isActiveBoth, openBoth, closeBoth] = useActiveState();
     const [isActiveHeader, openHeader, closeHeader] = useActiveState();
@@ -394,10 +394,16 @@ export const StoryHeaderLessModal = () =>
 
     return (
       <div>
-        <StorybookHeading>Headerless Modal</StorybookHeading>
-        <Button onClick={openBoth}>Open without header and close button</Button>
-        <Button onClick={openHeader}>Open without header</Button>
-        <Button onClick={openButton}>Open without close button</Button>
+        <StorybookHeading>
+          Modal with optional header & close button
+        </StorybookHeading>
+        <Stack spaceInline="space030" flow="horizontal-center">
+          <Button onClick={openBoth}>
+            Open without header and close button
+          </Button>
+          <Button onClick={openHeader}>Open without header</Button>
+          <Button onClick={openButton}>Open without close button</Button>
+        </Stack>
 
         <Modal open={isActiveBoth} onDismiss={closeBoth} closePosition="none">
           {modalContent}
@@ -420,5 +426,5 @@ export const StoryHeaderLessModal = () =>
       </div>
     );
   });
-StoryHeaderLessModal.storyName = 'headerless';
-StoryHeaderLessModal.parameters = {eyes: {include: false}};
+StoryOptionalHeaderClose.storyName = 'optional header & close';
+StoryOptionalHeaderClose.parameters = {eyes: {include: false}};

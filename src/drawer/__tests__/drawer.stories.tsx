@@ -9,6 +9,7 @@ import {TextInput} from '../../text-input';
 import {Block} from '../../block';
 import {Menu, MenuItem} from '../../menu';
 import {createTheme, compileTheme, ThemeProvider} from '../../theme';
+import {Stack} from '../../stack';
 
 const Box = styled.div`
   width: 400px;
@@ -606,7 +607,7 @@ StoryModelessWithRestoreFocusAndCustomAutofocus.parameters = {
   eyes: {include: false},
 };
 
-export const StoryHeaderlessDrawer = () =>
+export const StoryOptionalHeaderClose = () =>
   React.createElement(() => {
     const [isActiveBoth, openBoth, closeBoth] = useActiveState();
     const [isActiveHeader, openHeader, closeHeader] = useActiveState();
@@ -614,10 +615,17 @@ export const StoryHeaderlessDrawer = () =>
 
     return (
       <div>
-        <StorybookHeading>Headerless Drawer</StorybookHeading>
-        <Button onClick={openBoth}>Open without header and button</Button>
-        <Button onClick={openHeader}>Open without header</Button>
-        <Button onClick={openButton}>Open without close button</Button>
+        <StorybookHeading>
+          Drawer with optional header & close button
+        </StorybookHeading>
+
+        <Stack spaceInline="space030" flow="horizontal-center">
+          <Button onClick={openBoth}>
+            Open without header and close button
+          </Button>
+          <Button onClick={openHeader}>Open without header</Button>
+          <Button onClick={openButton}>Open without close button</Button>
+        </Stack>
 
         <Drawer
           open={isActiveBoth}
@@ -647,5 +655,5 @@ export const StoryHeaderlessDrawer = () =>
       </div>
     );
   });
-StoryHeaderlessDrawer.storyName = 'headerless';
-StoryHeaderlessDrawer.parameters = {eyes: {include: false}};
+StoryOptionalHeaderClose.storyName = 'optional header & close';
+StoryOptionalHeaderClose.parameters = {eyes: {include: false}};

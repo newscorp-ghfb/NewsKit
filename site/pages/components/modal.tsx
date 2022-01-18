@@ -228,7 +228,10 @@ export default (layoutProps: LayoutProps) => (
               >
                 The header and close button are optional. However it&lsquo;s
                 recommended that a close button is always used to adhere to{' '}
-                <LinkInline href="#">aria-principles</LinkInline>.
+                <LinkInline href="https://www.w3.org/TR/wai-aria-practices-1.2/#keyboard-interaction-7">
+                  aria-principles
+                </LinkInline>
+                .
               </InlineMessage>
             </>
           ),
