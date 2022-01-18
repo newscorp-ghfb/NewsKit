@@ -239,7 +239,7 @@ export default (layoutProps: LayoutProps) => (
                     visual fidelities.
                     <Block spaceStack="space050" />
                     <Link
-                      href="https://www.figma.com/file/Q3OTJ4RZWJGTCaWuS8sWsL/NK-Utilities?node-id=0%3A1"
+                      href="https://www.figma.com/community/plugin/968555028114672265/NK---Theme-Swapper"
                       target="_blank"
                     >
                       View Theme Swapper Figma plugin
@@ -404,16 +404,7 @@ export default (layoutProps: LayoutProps) => (
               },
               {
                 title: 'NewsKit Accessibility guidance',
-                description: (
-                  <>
-                    Guidance for designing inclusive experiences.
-                    <Block spaceStack="space050" />
-                    <Link href="https://www.google.com/" target="_blank">
-                      {/* ToDo: Once URL finalized, needs to update here */}
-                      View NewsKit Accessibility guidance
-                    </Link>
-                  </>
-                ),
+                description: 'Guidance for designing inclusive experiences.',
                 media: getIllustrationComponent(
                   'guides/design-overview/accessibility-guidance',
                 ),
