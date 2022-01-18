@@ -62,10 +62,6 @@
     "serve:storybook": "http-server dist-storybook -p 6006",
     "dependencies:check": "package-change-checker --install-cmd=\"yarn install --pure-lockfile\" HEAD@{1} HEAD",
     "create:release": "sh ./scripts/release.sh",
-    "generate:install": "cd ./component-generator && yarn && yarn link",
-    "generate:run": "yo newskit-component",
-    "generate:component": "yarn generate:install && yarn generate:run",
-    "generate:uninstall": "cd ./component-generator && yarn && yarn unlink",
     "storybook": "start-storybook -c .storybook -p 6006 -s ./fonts,./static"
   },
   "devDependencies": {
