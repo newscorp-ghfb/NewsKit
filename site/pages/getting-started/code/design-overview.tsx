@@ -1,7 +1,6 @@
 import React from 'react';
 import {Block} from 'newskit*';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
-import {RelatedComponentsSection} from '../../../templates/template-sections';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
 import {
@@ -443,12 +442,13 @@ export default (layoutProps: LayoutProps) => (
         </ContentPrimary>
       </ContentSection>
     </ComponentPageCell>
+    {/* ToDo: Once design quickstart guide page is ready, need to enable this section.
     <RelatedComponentsSection
       title="What’s next?"
       id="whats-next"
       toc="What’s next?"
       introduction="Want to use NewsKit for your next product? Follow the next steps belows to learn more:"
       related={['Design quickstart guide']}
-    />
+    /> */}
   </GuidePageTemplate>
 );
