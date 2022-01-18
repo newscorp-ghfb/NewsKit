@@ -447,7 +447,7 @@ export default (layoutProps: LayoutProps) => (
             Learn more about the Icon component
           </Link>
           <Block spaceStack="space100" />
-          <TabsWithTable components={coloursTable} />
+          <TabsWithTable components={coloursTable} showSeparator />
           <ContentText>
             Colour can be applied to a UI element using the color, iconColor
             borderColor, placeholderColor and background attribute on a{' '}
