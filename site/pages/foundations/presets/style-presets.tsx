@@ -1,15 +1,25 @@
 import React from 'react';
-import {Block, P, InlineMessage, IconFilledInfo, styled} from 'newskit*';
+import {
+  Block,
+  P,
+  InlineMessage,
+  IconFilledInfo,
+  styled,
+  Divider,
+} from 'newskit*';
 import {Table} from '../../../components/table';
-import {Mono} from '../../../components/flags';
+import {InlineCode} from '../../../components/markdown-elements';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
-import {CommonSection} from '../../../templates/template-sections';
-import {ComponentPageCellCompact} from '../../../components/layout-cells';
+import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
 import {Illustration} from '../../../components/illustrations/illustration-loader';
-import {ContentText} from '../../../components/text-section';
 import {Link} from '../../../components/link';
 import {Code} from '../../../components/code';
+import {
+  ContentSection,
+  ContentPrimary,
+  ContentSecondary,
+} from '../../../components/content-structure';
 
 const CSS_PROPS = [
   {
@@ -448,146 +458,158 @@ export default (layoutProps: LayoutProps) => (
       title: 'Typography Presets',
       description:
         'A collection of foundational font design tokens combined into a single token',
-      href: '/foundations/presets/typography-presets/',
+      href: 'foundations/presets/typography-presets/',
     }}
   >
-    <CommonSection
-      title="Overview"
-      id="overview"
-      toc="Overview"
-      introduction={
-        <>
-          <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            Style Presets define properties such as colour, border-radius and
-            text-decoration, across multiple states. For example, one style
-            preset can contain the style for all states of a button.
-          </P>
-          <br />
-          <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            In combination with{' '}
-            <Link href="/foundations/presets/typography-presets/">
-              Typography Presets
-            </Link>
-            , <Link href="/foundations/sizing/">Sizing</Link>, and{' '}
-            <Link href="/foundations/presets/space-presets/">Spacing</Link>,
-            Style Presets provide the visual attributes of a component.
-          </P>
-        </>
-      }
-    >
-      <ComponentPageCellCompact>
-        <Illustration path="foundations/style-presets/overview" />
-      </ComponentPageCellCompact>
-    </CommonSection>
-
-    <CommonSection
-      title="Style Preset style properties"
-      id="styleproperties"
-      toc="Style Properties"
-      introduction="Style Presets use a combination of the following styles:"
-    >
-      <ComponentPageCellCompact>
-        <Table
-          columns={['Token', 'Accepted Values', 'Description']}
-          rows={CSS_PROPS}
-        />
-        <Block spaceStack="space050" />
-        <InlineMessage
-          icon={
-            <IconFilledInfo
-              overrides={{
-                size: 'iconSize020',
-              }}
-            />
+    <ComponentPageCell>
+      <ContentSection sectionName="overview">
+        <ContentPrimary
+          id="overview"
+          toc="Overview"
+          headline="Overview"
+          description={
+            <>
+              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                Style Presets define properties such as colour, border-radius
+                and text-decoration, across multiple states. For example, one
+                style preset can contain the style for all states of a button.
+              </P>
+              <br />
+              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                In combination with{' '}
+                <Link href="/foundations/presets/typography-presets/">
+                  Typography Presets
+                </Link>
+                , <Link href="/foundations/sizing/">Sizing</Link>, and{' '}
+                <Link href="/foundations/presets/space-presets/">Spacing</Link>,
+                Style Presets provide the visual attributes of a component.
+              </P>
+            </>
           }
+          showSeparator
         >
-          Careful consideration should be given when choosing CSS values due to
-          the impact on the theming system.
-        </InlineMessage>
-      </ComponentPageCellCompact>
-    </CommonSection>
-
-    <CommonSection
-      title="Style Preset states"
-      id="states"
-      toc="States"
-      introduction="The following states can be applied to Style Presets styles:"
-    >
-      <ComponentPageCellCompact>
-        <Table
-          columns={['Example', 'State', 'Description']}
-          rows={STYLE_PRESET_STATES}
+          <Illustration path="foundations/style-presets/overview" />
+        </ContentPrimary>
+      </ContentSection>
+      <ContentSection sectionName="styleproperties">
+        <ContentPrimary
+          id="styleproperties"
+          toc="Style Properties"
+          headline="Style Preset style properties"
+          description="Style Presets use a combination of the following styles:"
+          showSeparator
+        >
+          <Table
+            columns={['Token', 'Accepted Values', 'Description']}
+            rows={CSS_PROPS}
+          />
+          <Divider />
+          <Block spaceStack="space070" />
+          <InlineMessage
+            icon={
+              <IconFilledInfo
+                overrides={{
+                  size: 'iconSize020',
+                }}
+              />
+            }
+          >
+            Careful consideration should be given when choosing CSS values due
+            to the impact on the theming system.
+          </InlineMessage>
+        </ContentPrimary>
+      </ContentSection>
+      <ContentSection sectionName="states">
+        <ContentPrimary
+          id="states"
+          toc="States"
+          headline="Style Preset states"
+          description="The following states can be applied to Style Presets styles:"
+          showSeparator
+        >
+          <Table
+            columns={['Example', 'State', 'Description']}
+            rows={STYLE_PRESET_STATES}
+          />
+        </ContentPrimary>
+      </ContentSection>
+      <ContentSection sectionName="using">
+        <ContentPrimary
+          id="using"
+          toc="Using"
+          headline="Using Style Presets"
+          description={
+            <>
+              Style Presets can be applied to NewsKit components in a number of
+              ways,{' '}
+              <Link href="foundations/theming/using-a-theme/">
+                learn more about using a theme in code
+              </Link>{' '}
+              to better understand the trade-offs associated with each approach.
+              For more advanced use cases, Style Presets can be accessed from
+              the theme by calling{' '}
+              <Link href="/components/utils/get-defaults/">getStylePreset</Link>{' '}
+              or Emotion’s{' '}
+              <Link href="/components/utils/emotion/">useTheme hook</Link>.
+            </>
+          }
         />
-      </ComponentPageCellCompact>
-    </CommonSection>
-
-    <CommonSection
-      title="Using Style Presets"
-      id="using"
-      toc="Using"
-      introduction={
-        <>
-          Style Presets can be applied to NewsKit components in a number of
-          ways,{' '}
-          <Link href="foundations/theming/using-a-theme/">
-            learn more about using a theme in code
-          </Link>{' '}
-          to better understand the trade-offs associated with each approach. For
-          more advanced use cases, Style Presets can be accessed from the theme
-          by calling{' '}
-          <Link href="/components/utils/get-defaults/">getStylePreset</Link> or
-          Emotion’s <Link href="/components/utils/emotion/">useTheme hook</Link>
-          .
-        </>
-      }
-    >
-      <ComponentPageCellCompact>
-        <ContentText title="Example code">
-          This example demonstrates declaring style presets for the Button
-          component. It can be passed to the <Mono>createTheme</Mono> function:
-        </ContentText>
-        <Block spaceStack="space050" />
-        <Code>
-          {`const buttonSolidPrimary: StylePresetStates = {
-    base: {
-        backgroundColor: '{{colors.interactivePrimary030}}',
-        borderRadius: '{{borders.borderRadiusCircle}}',
-        color: '{{colors.inkInverse}}',
-        iconColor: '{{colors.inkInverse}}',
-    },
-    hover: {
-        backgroundColor: '{{colors.interactivePrimary040}}',
-    },
-    active: {
-        backgroundColor: '{{colors.interactivePrimary050}}',
-    },
-    disabled: {
-        backgroundColor: '{{colors.interactiveDisabled010}}',
-        color: '{{colors.inkNonEssential}}',
-        iconColor: '{{colors.inkNonEssential}}',
-    },
-    loading: {
-        backgroundColor: '{{colors.interactivePrimary020}}',
-        color: '{{colors.inkBrand010}}',
-        iconColor: '{{colors.inkBrand010}}',
-    },
-};`}
-        </Code>
-      </ComponentPageCellCompact>
-    </CommonSection>
-    <CommonSection
-      title="Adding custom Style Presets to the theme"
-      id="custom"
-      toc="Custom"
-      introduction={
-        <>
-          Custom Style Presets can be added to the theme. See the{' '}
-          <Link href="/foundations/theming/creating-a-theme/">
-            Creating Themes
-          </Link>{' '}
-          guide for more details.
-        </>
-      }
-    />
+        <ContentSecondary
+          headline="Example code"
+          description={
+            <>
+              This example demonstrates declaring style presets for the Button
+              component. It can be passed to the{' '}
+              <InlineCode>createTheme</InlineCode> function:
+            </>
+          }
+          showSeparator
+        >
+          <Code>
+            {`const buttonSolidPrimary: StylePresetStates = {
+      base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+      },
+      hover: {
+          backgroundColor: '{{colors.interactivePrimary040}}',
+      },
+      active: {
+          backgroundColor: '{{colors.interactivePrimary050}}',
+      },
+      disabled: {
+          backgroundColor: '{{colors.interactiveDisabled010}}',
+          color: '{{colors.inkNonEssential}}',
+          iconColor: '{{colors.inkNonEssential}}',
+      },
+      loading: {
+          backgroundColor: '{{colors.interactivePrimary020}}',
+          color: '{{colors.inkBrand010}}',
+          iconColor: '{{colors.inkBrand010}}',
+      },
+  };`}
+          </Code>
+        </ContentSecondary>
+      </ContentSection>
+      <ContentSection sectionName="custom">
+        <ContentPrimary
+          id="custom"
+          toc="Custom"
+          headline="Adding custom Style Presets to the theme"
+          description={
+            <>
+              Custom Style Presets can be added to the theme. See the{' '}
+              <Link href="/foundations/theming/creating-a-theme/">
+                Creating Themes
+              </Link>{' '}
+              guide for more details.
+            </>
+          }
+          showSeparator
+        />
+      </ContentSection>
+    </ComponentPageCell>
   </FoundationPageTemplate>
 );
