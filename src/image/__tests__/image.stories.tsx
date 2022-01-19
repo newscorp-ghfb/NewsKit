@@ -303,7 +303,7 @@ export const StoryImageWithSourcesAndMedia = () => {
   );
 };
 StoryImageWithSourcesAndMedia.storyName =
-  'image-with-sources-using-data-attributes';
+  'image-with-sources-using-media-query';
 
 export const StoryImageWithSourcesAndDataAttributes = () => {
   const sources = [
