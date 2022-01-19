@@ -165,7 +165,6 @@ export default (layoutProps: LayoutProps) => (
         </ContentSecondary>
 
         <ContentSecondary
-          showSeparator
           description={
             <>
               Max-width defaults can be overidden in the{' '}
@@ -177,6 +176,7 @@ export default (layoutProps: LayoutProps) => (
               </Link>
             </>
           }
+          showSeparator
         />
       </ContentSection>
 

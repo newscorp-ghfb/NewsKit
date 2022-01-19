@@ -265,6 +265,7 @@ export default (layoutProps: LayoutProps) => (
           />
         </ContentPrimary>
       </ContentSection>
+
       <ContentSection sectionName="overview">
         <ContentPrimary
           id="overview"
@@ -274,6 +275,7 @@ export default (layoutProps: LayoutProps) => (
         >
           <Illustration path="foundations/spacing/overview" />
         </ContentPrimary>
+
         <ContentSecondary
           description={
             <>
