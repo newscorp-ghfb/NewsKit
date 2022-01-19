@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Block,
-  newskitLightTheme,
-  UnorderedList,
-  InlineMessage,
-  TextBlock,
-} from 'newskit';
+import {Block, newskitLightTheme, UnorderedList, InlineMessage} from 'newskit';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {LayoutProps} from '../../components/layout';
@@ -14,7 +8,6 @@ import {Link} from '../../components/link';
 import {MediaList} from '../../components/media-list';
 import {Illustration} from '../../components/illustrations/illustration-loader';
 import {ColorPalettes} from '../../components/theming-values/colors/colors';
-import {ContentText} from '../../components/text-section';
 import {TabsWithTable} from '../../components/tabs-with-table';
 import {TableRow} from '../../components/table';
 import {Code} from '../../components/code';
@@ -28,6 +21,8 @@ import {
 import {
   ContentSection,
   ContentPrimary,
+  ContentSecondary,
+  ContentTertiary,
 } from '../../components/content-structure';
 
 const themeColorRows = (
@@ -384,13 +379,13 @@ export default (layoutProps: LayoutProps) => (
           toc="Palette colours"
           headline="Palette colours"
           description="Palette colours represent all of a brand’s colours. They are linked to contextual colour tokens where specific meaning (context) is applied. As such, careful consideration should be given if choosing to apply a palette colour directly applied to an interface rather than a contextual colour."
+        />
+        <ContentSecondary
+          headline="Understanding the swatches"
+          description="Utilise the swatches below to determine the accessibility of the
+          palette colour in contrast to the background colour of this page"
           showSeparator
         >
-          <ContentText title="Understanding the swatches" titleAs="h3">
-            <Block spaceStack="space030" />
-            Utilise the swatches below to determine the accessibility of the
-            palette colour in contrast to the background colour of this page
-          </ContentText>
           {CUSTOM_ICONS.map(({icon, label}) => (
             <UnorderedList
               listItemMarker={icon}
@@ -427,7 +422,7 @@ export default (layoutProps: LayoutProps) => (
           </InlineMessage>
           <Block spaceStack="space080" />
           <ColorPalettes />
-        </ContentPrimary>
+        </ContentSecondary>
       </ContentSection>
       <ContentSection sectionName="contextualcolours">
         <ContentPrimary
@@ -435,7 +430,6 @@ export default (layoutProps: LayoutProps) => (
           toc="Contextual colours"
           headline="Contextual colours"
           description="Contextual colours are selected from the palette colours and have specific functions or purposes applied. There are three categories of contextual colours: Ink, Interface and Interactive colours."
-          showSeparator
         >
           <Block stylePreset="imageRoundedMedium" spaceStack="space050">
             <Illustration path="foundations/colours/overview" />
@@ -448,21 +442,19 @@ export default (layoutProps: LayoutProps) => (
           </Link>
           <Block spaceStack="space100" />
           <TabsWithTable components={coloursTable} showSeparator />
-          <ContentText>
-            Colour can be applied to a UI element using the color, iconColor
-            borderColor, placeholderColor and background attribute on a{' '}
-            <Link href="/foundations/presets/space-presets/">
-              Style Preset.
-            </Link>
-          </ContentText>
-          <Block spaceStack="space080" />
-          <TextBlock
-            stylePreset="inkContrast"
-            typographyPreset="editorialHeadline020"
-          >
-            Example code
-          </TextBlock>
-          <Block spaceStack="space050" />
+        </ContentPrimary>
+        <ContentSecondary
+          description={
+            <>
+              Colour can be applied to a UI element using the color, iconColor
+              borderColor, placeholderColor and background attribute on a{' '}
+              <Link href="/foundations/presets/space-presets/">
+                Style Preset.
+              </Link>
+            </>
+          }
+        />
+        <ContentSecondary headline="Example code" showSeparator>
           <Code>
             {`backgroundColor: '{{colors.inkBase}}';
 backgroundColor: '{{colors.inkNegative}}';
@@ -476,7 +468,7 @@ backgroundColor: '{{colors.interactiveNegative010}}';
 backgroundColor: '{{colors.interactiveInput010}}';
 backgroundColor: '{{colors.interactiveVisited010}}';`}
           </Code>
-        </ContentPrimary>
+        </ContentSecondary>
       </ContentSection>
       <ContentSection sectionName="a11y">
         <ContentPrimary
@@ -500,39 +492,41 @@ backgroundColor: '{{colors.interactiveVisited010}}';`}
               </Link>
             </>
           }
+        />
+        <ContentSecondary
+          headline="Contrast for text and images of text"
+          description="Standard text and images of text must have a minimum of 4.5:1
+          contrast between the text colour and the background, except for the
+          following:"
+        />
+        <ContentTertiary
+          headline="Large text"
+          description="Large-scale text and images of large-scale text must have a minimum
+          of 3:1 contrast between the text colour and the background."
+        />
+        <ContentTertiary
+          headline="Link text"
+          description="Underline link text within the body text (inline link). Otherwise,
+          in addition to the above, link text must have at least a 3:1
+          contrast between the link text colour and the surrounding non-link
+          text colour."
+        />
+        <ContentTertiary
+          headline="Incidental text"
+          description="Text or images of text that are part of an inactive component, pure
+          decoration, or part of a picture containing significant other visual
+          content do not have any contrast requirements."
+        />
+        <ContentTertiary
+          headline="Logotypes"
+          description="Text that is part of a logo does not have any contrast requirements."
+        />
+        <ContentSecondary
+          headline="Contrast for non-text elements"
+          description=" User interface components and graphical objects must have at least a
+          3:1 contrast between against adjacent colours."
           showSeparator
-        >
-          <ContentText
-            title="Contrast for text and images of text"
-            titleAs="h3"
-          >
-            Standard text and images of text must have a minimum of 4.5:1
-            contrast between the text colour and the background, except for the
-            following:
-          </ContentText>
-          <ContentText title="Large text" titleAs="h4">
-            Large-scale text and images of large-scale text must have a minimum
-            of 3:1 contrast between the text colour and the background.
-          </ContentText>
-          <ContentText title="Link text" titleAs="h4">
-            Underline link text within the body text (inline link). Otherwise,
-            in addition to the above, link text must have at least a 3:1
-            contrast between the link text colour and the surrounding non-link
-            text colour.
-          </ContentText>
-          <ContentText title="Incidental text" titleAs="h4">
-            Text or images of text that are part of an inactive component, pure
-            decoration, or part of a picture containing significant other visual
-            content do not have any contrast requirements.
-          </ContentText>
-          <ContentText title="Logotypes" titleAs="h4">
-            Text that is part of a logo does not have any contrast requirements.
-          </ContentText>
-          <ContentText title="Contrast for non-text elements" titleAs="h3">
-            User interface components and graphical objects must have at least a
-            3:1 contrast between against adjacent colours.
-          </ContentText>
-        </ContentPrimary>
+        />
       </ContentSection>
     </ComponentPageCell>
   </FoundationPageTemplate>
