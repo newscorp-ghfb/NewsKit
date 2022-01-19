@@ -318,12 +318,14 @@ export const StoryImageWithSourcesAndDataAttributes = () => {
   ];
 
   return (
-    <Image
-      data-src="/fallback-300x-placeholder-image.png"
-      sources={sources}
-      className="lazyload"
-      alt="placeholders"
-    />
+    <Container>
+      <Image
+        data-src="/fallback-300x-placeholder-image.png"
+        sources={sources}
+        className="lazyload"
+        alt="placeholders"
+      />
+    </Container>
   );
 };
 StoryImageWithSourcesAndDataAttributes.storyName =
