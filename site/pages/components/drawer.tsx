@@ -192,15 +192,27 @@ export default (layoutProps: LayoutProps) => (
       cards: [
         {
           title: 'Placement',
-          description: (
-            <>
-              <Block spaceStack="space030">
-                The Drawer can appear from the left (default), right, top, or
+          description: `The Drawer can appear from the left (default), right, top, or
                 bottom of the screen. When appearing from the left or right of
                 the screen, the close Icon Button is positioned on the same side
                 where the Drawer originates from. When appearing from the top or
                 bottom of the screen, the close Icon Button is positioned on the
-                right as default.
+                right as default.`,
+
+          media: getIllustrationComponent(
+            'components/drawer/drawer-options-placement-illustration',
+          ),
+        },
+        {
+          title: 'Close Position',
+          description: (
+            <>
+              <Block spaceStack="space030">
+                The position of the close button in the Drawer header is set to
+                left as default for left placement, and right for right
+                placement. For top and bottom placement, it is set to the right.
+                Users have the option to set the close button position to either
+                left or right for all four placements.
               </Block>
               <InlineMessage
                 role="region"
@@ -219,14 +231,6 @@ export default (layoutProps: LayoutProps) => (
               </InlineMessage>
             </>
           ),
-          media: getIllustrationComponent(
-            'components/drawer/drawer-options-placement-illustration',
-          ),
-        },
-        {
-          title: 'Close Position',
-          description:
-            'The position of the close button in the Drawer header is set to left as default for left placement, and right for right placement. For top and bottom placement, it is set to the right. Users have the option to set the close button position to either left or right for all four placements.',
           media: getIllustrationComponent(
             'components/drawer/drawer-options-close-position-illustration',
           ),
