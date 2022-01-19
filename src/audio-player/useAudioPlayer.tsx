@@ -103,7 +103,7 @@ export function useAudioPlayer({
       ref: audioRef,
       onCanPlay: audioEvents.onCanPlay,
       onDurationChange: audioEvents.onDurationChange,
-      onTimeUpdate: withSeekBar ? audioEvents.onCanPlay : undefined,
+      onTimeUpdate: withSeekBar ? audioEvents.onTimeUpdate : undefined,
     },
     playPauseButtonProps: {
       canPause: live,

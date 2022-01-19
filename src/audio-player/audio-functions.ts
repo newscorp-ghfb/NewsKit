@@ -272,6 +272,7 @@ export const useAudioFunctions = ({
   const onTimeUpdate = ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
     const eventTime = Math.floor((target as HTMLAudioElement).currentTime);
     if (trackPositionRef.current !== eventTime) {
+      console.log('onTimeUpdate')
       setTrackPosition([eventTime]);
 
       const trackingInformation = getTrackingInformation(
