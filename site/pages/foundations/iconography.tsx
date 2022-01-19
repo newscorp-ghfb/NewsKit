@@ -1,5 +1,5 @@
 import React from 'react';
-import {TextBlock, InlineMessage, Block} from 'newskit';
+import {InlineMessage, Block} from 'newskit';
 import {
   Illustration,
   getIllustrationComponent,
@@ -12,6 +12,7 @@ import {LayoutProps} from '../../components/layout';
 import {
   ContentSection,
   ContentPrimary,
+  ContentSecondary,
 } from '../../components/content-structure';
 import {Link} from '../../components/link';
 
@@ -90,7 +91,7 @@ export default (layoutProps: LayoutProps) => (
       title: 'Motion',
       description:
         'Motion is used to create movement and narrative within a product.',
-      href: '/foundations/motions',
+      href: 'foundations/motions',
     }}
   >
     <ComponentPageCell>
@@ -125,7 +126,6 @@ export default (layoutProps: LayoutProps) => (
           </Block>
         </ContentPrimary>
       </ContentSection>
-
       <ContentSection sectionName="principles">
         <ContentPrimary
           id="principles"
@@ -141,7 +141,6 @@ export default (layoutProps: LayoutProps) => (
           />
         </ContentPrimary>
       </ContentSection>
-
       <ContentSection sectionName="characteristics">
         <ContentPrimary
           id="characteristics"
@@ -214,27 +213,25 @@ export default (layoutProps: LayoutProps) => (
               },
             ]}
           />
-          <Block spaceStack="space090" />
+          <Block spaceStack="space070" />
           <InlineMessage
             role="region"
             title="We support the full library of default Icons available in NewsKit."
             aria-label="Characteristics"
           >
-            <TextBlock>
-              Designers -{' '}
-              <Link
-                target="_blank"
-                href="https://www.figma.com/proto/44FDCMcOPHd5m29NKTESm7/Component-Documentation-Sheets?page-id=123%3A57177&amp;node-id=123%3A57178&amp;viewport=909%2C801%2C0.11311577260494232&amp;scaling=scale-down-width&amp;hide-ui=1"
-              >
-                learn more about how to override default icons in the design
-                icon library.
-              </Link>
-              <br />
-              Engineers -{' '}
-              <Link href="/components/icons">
-                learn more about how to override default icons in the theme.
-              </Link>
-            </TextBlock>
+            Designers -{' '}
+            <Link
+              target="_blank"
+              href="https://www.figma.com/proto/44FDCMcOPHd5m29NKTESm7/Component-Documentation-Sheets?page-id=123%3A57177&amp;node-id=123%3A57178&amp;viewport=909%2C801%2C0.11311577260494232&amp;scaling=scale-down-width&amp;hide-ui=1"
+            >
+              learn more about how to override default icons in the design icon
+              library.
+            </Link>
+            <br />
+            Engineers -{' '}
+            <Link href="/components/icons">
+              learn more about how to override default icons in the theme.
+            </Link>
           </InlineMessage>
         </ContentPrimary>
       </ContentSection>
@@ -256,26 +253,23 @@ export default (layoutProps: LayoutProps) => (
               which are the basis for the NewsKit default icon library.
             </>
           }
+        />
+        <ContentSecondary
+          description={
+            <>
+              Icons have the following naming convention:
+              <br />
+              <br />
+              <b>
+                Icon {'{Set}'} {'{Name}'}
+              </b>
+              <br />
+              <br />
+              For example - <b>IconFilledSearch</b> or <b>IconOutlinedHome.</b>
+            </>
+          }
           showSeparator
         >
-          <TextBlock
-            stylePreset="inkBase"
-            typographyPreset={{
-              xs: 'editorialSubheadline010',
-              md: 'editorialSubheadline010',
-            }}
-          >
-            Icons have the following naming convention:
-            <br />
-            <br />
-            <b>
-              Icon {'{Set}'} {'{Name}'}
-            </b>
-            <br />
-            <br />
-            For example - <b>IconFilledSearch</b> or <b>IconOutlinedHome.</b>
-          </TextBlock>
-          <Block spaceStack="space070" />
           <InlineMessage
             role="region"
             title="We support the full library of default Icons available in NewsKit."
@@ -289,7 +283,7 @@ export default (layoutProps: LayoutProps) => (
               icons available.
             </Link>
           </InlineMessage>
-        </ContentPrimary>
+        </ContentSecondary>
       </ContentSection>
       <ContentSection sectionName="usage">
         <ContentPrimary
