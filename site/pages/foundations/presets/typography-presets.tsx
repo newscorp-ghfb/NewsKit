@@ -138,6 +138,7 @@ export default (layoutProps: LayoutProps) => (
           showSeparator
         />
       </ContentSection>
+
       <ContentSection sectionName="default-typography-presets">
         <ContentPrimary
           id="default-typography-presets"
@@ -210,6 +211,7 @@ export default (layoutProps: LayoutProps) => (
           </Tabs>
         </ContentPrimary>
       </ContentSection>
+
       <ContentSection sectionName="apply-typography-presets">
         <ContentPrimary
           id="apply-typography-presets"
@@ -233,6 +235,7 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
         />
+
         <ContentSecondary
           headline="Adding custom Typography Presets to the theme"
           description={
@@ -250,6 +253,7 @@ export default (layoutProps: LayoutProps) => (
             impact on the theming feature when using multiple themes.
           </InlineMessage>
         </ContentSecondary>
+
         <ContentSecondary
           headline="Extending Typography Presets"
           description={
@@ -273,6 +277,7 @@ const ItalicTextBlock = styled(TextBlock)\`
           </Code>
         </ContentSecondary>
       </ContentSection>
+
       <ContentSection sectionName="text-crop">
         <ContentPrimary
           id="text-crop"
@@ -286,6 +291,7 @@ const ItalicTextBlock = styled(TextBlock)\`
           showSeparator
         />
       </ContentSection>
+
       <ContentSection sectionName="accessibility-considerations">
         <ContentPrimary
           id="accessibility-considerations"

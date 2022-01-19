@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage, IconFilledInfo, styled, Divider} from 'newskit*';
+import {InlineMessage, IconFilledInfo, styled} from 'newskit*';
 import {Table} from '../../../components/table';
 import {InlineCode} from '../../../components/markdown-elements';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
@@ -481,20 +481,21 @@ export default (layoutProps: LayoutProps) => (
           <Illustration path="foundations/style-presets/overview" />
         </ContentPrimary>
       </ContentSection>
+
       <ContentSection sectionName="styleproperties">
         <ContentPrimary
           id="styleproperties"
           toc="Style Properties"
           headline="Style Preset style properties"
           description="Style Presets use a combination of the following styles:"
-          showSeparator
         >
           <Table
             columns={['Token', 'Accepted Values', 'Description']}
             rows={CSS_PROPS}
           />
-          <Divider />
-          <Block spaceStack="space070" />
+        </ContentPrimary>
+
+        <ContentSecondary showSeparator>
           <InlineMessage
             icon={
               <IconFilledInfo
@@ -507,8 +508,9 @@ export default (layoutProps: LayoutProps) => (
             Careful consideration should be given when choosing CSS values due
             to the impact on the theming system.
           </InlineMessage>
-        </ContentPrimary>
+        </ContentSecondary>
       </ContentSection>
+
       <ContentSection sectionName="states">
         <ContentPrimary
           id="states"
@@ -523,6 +525,7 @@ export default (layoutProps: LayoutProps) => (
           />
         </ContentPrimary>
       </ContentSection>
+
       <ContentSection sectionName="using">
         <ContentPrimary
           id="using"
@@ -544,6 +547,7 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
         />
+
         <ContentSecondary
           headline="Example code"
           description={
@@ -583,6 +587,7 @@ export default (layoutProps: LayoutProps) => (
           </Code>
         </ContentSecondary>
       </ContentSection>
+
       <ContentSection sectionName="custom">
         <ContentPrimary
           id="custom"

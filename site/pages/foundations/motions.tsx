@@ -1,11 +1,5 @@
 import React, {useEffect} from 'react';
-import {
-  newskitLightTheme,
-  InlineMessage,
-  Block,
-  P,
-  UnorderedList,
-} from 'newskit';
+import {newskitLightTheme, InlineMessage, P, UnorderedList} from 'newskit';
 
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {
@@ -181,7 +175,6 @@ export default (layoutProps: LayoutProps) => (
           toc="Overview"
           headline="Overview"
           description="Motion foundations are used in animations and transitions."
-          showSeparator
         >
           <InlineMessage role="region" aria-label="Overview">
             <Link
@@ -192,7 +185,9 @@ export default (layoutProps: LayoutProps) => (
               and transitions via Motion Presets.
             </Link>
           </InlineMessage>
-          <Block spaceStack="space060" />
+        </ContentPrimary>
+
+        <ContentSecondary showSeparator>
           <InlineMessage
             role="region"
             title="Overrides"
@@ -203,7 +198,7 @@ export default (layoutProps: LayoutProps) => (
               Learn more about overriding default Motion in the theme.
             </Link>
           </InlineMessage>
-        </ContentPrimary>
+        </ContentSecondary>
       </ContentSection>
 
       <ContentSection sectionName="principles">
@@ -228,17 +223,16 @@ export default (layoutProps: LayoutProps) => (
           headline="Duration"
           description="Duration
           Determining which timing to use is a matter of context, including the complexity of the action and the distance over which the animation occurs."
-          showSeparator
         >
-          <Block spaceStack="space060">
-            <ReduceMotionMessage />
-          </Block>
+          <ReduceMotionMessage />
+        </ContentPrimary>
 
+        <ContentSecondary showSeparator>
           <Table
             columns={['Duration', 'Token', 'Token value', 'Common uses']}
             rows={motionDurationRows}
           />
-        </ContentPrimary>
+        </ContentSecondary>
 
         <ContentSecondary>
           <InlineMessage role="region" aria-label="Duration">
@@ -258,15 +252,15 @@ export default (layoutProps: LayoutProps) => (
           headline="Timing"
           description="Timing controls the velocity of motion over its duration. It helps determine an animation’s feeling and can aid in matching the appearance of real-world physics by controlling how objects accelerate and decelerate as they move on the screen. NewsKit uses four different types of timing."
         >
-          <Block spaceStack="space060">
-            <ReduceMotionMessage />
-          </Block>
+          <ReduceMotionMessage />
+        </ContentPrimary>
 
+        <ContentSecondary>
           <Table
             columns={['Timing', 'Token', 'Token value', 'Common uses']}
             rows={motionTimingRows}
           />
-        </ContentPrimary>
+        </ContentSecondary>
 
         <ContentSecondary showSeparator>
           <InlineMessage role="region" aria-label="Timing">

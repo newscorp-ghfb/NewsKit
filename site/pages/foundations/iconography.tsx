@@ -1,5 +1,5 @@
 import React from 'react';
-import {InlineMessage, Block} from 'newskit';
+import {InlineMessage} from 'newskit';
 import {
   Illustration,
   getIllustrationComponent,
@@ -121,11 +121,10 @@ export default (layoutProps: LayoutProps) => (
           }
           showSeparator
         >
-          <Block stylePreset="imageRoundedMedium">
-            <Illustration path="foundations/iconography/overview" />
-          </Block>
+          <Illustration path="foundations/iconography/overview" />
         </ContentPrimary>
       </ContentSection>
+
       <ContentSection sectionName="principles">
         <ContentPrimary
           id="principles"
@@ -140,13 +139,13 @@ export default (layoutProps: LayoutProps) => (
           />
         </ContentPrimary>
       </ContentSection>
+
       <ContentSection sectionName="characteristics">
         <ContentPrimary
           id="characteristics"
           toc="Characteristics"
           headline="Characteristics"
           description="Icons have the following defining characteristics."
-          showSeparator
         >
           <MediaList
             layout="1-span"
@@ -212,7 +211,9 @@ export default (layoutProps: LayoutProps) => (
               },
             ]}
           />
-          <Block spaceStack="space070" />
+        </ContentPrimary>
+
+        <ContentSecondary showSeparator>
           <InlineMessage
             role="region"
             title="We support the full library of default Icons available in NewsKit."
@@ -232,8 +233,9 @@ export default (layoutProps: LayoutProps) => (
               learn more about how to override default icons in the theme.
             </Link>
           </InlineMessage>
-        </ContentPrimary>
+        </ContentSecondary>
       </ContentSection>
+
       <ContentSection sectionName="library">
         <ContentPrimary
           id="library"
@@ -253,6 +255,7 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
         />
+
         <ContentSecondary
           description={
             <>
@@ -284,6 +287,7 @@ export default (layoutProps: LayoutProps) => (
           </InlineMessage>
         </ContentSecondary>
       </ContentSection>
+
       <ContentSection sectionName="usage">
         <ContentPrimary
           toc="Usage"

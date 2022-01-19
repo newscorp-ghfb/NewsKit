@@ -1,6 +1,5 @@
 import React from 'react';
-import {newskitLightTheme, compileTheme, Block} from 'newskit';
-
+import {newskitLightTheme, compileTheme} from 'newskit';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {
@@ -78,7 +77,7 @@ export default (layoutProps: LayoutProps) => (
       title: 'Colours',
       description:
         'Colour is key to expressing brand and identity but it also plays an important role in conveying meaning to a user.',
-      href: '/foundations/colours',
+      href: 'foundations/colours',
     }}
   >
     <ComponentPageCell>
@@ -97,9 +96,7 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Block stylePreset="imageRoundedMedium">
-            <Illustration path="foundations/breakpoints/overview" />
-          </Block>
+          <Illustration path="foundations/breakpoints/overview" />
         </ContentPrimary>
 
         <ContentSecondary>
@@ -190,9 +187,7 @@ export default (layoutProps: LayoutProps) => (
           headline="Using breakpoints"
           description="NewsKit enables the appearance and behaviour of UI elements to change at different breakpoints."
         >
-          <Block stylePreset="imageRoundedMedium">
-            <Illustration path="foundations/breakpoints/usage" />
-          </Block>
+          <Illustration path="foundations/breakpoints/usage" />
         </ContentPrimary>
 
         <ContentSecondary

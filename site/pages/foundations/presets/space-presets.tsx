@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage, newskitLightTheme, Divider} from 'newskit*';
+import {InlineMessage, newskitLightTheme} from 'newskit*';
 import {Table, TableRow} from '../../../components/table';
 import {getTokenType} from '../../../utils/get-token-type';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
@@ -293,8 +293,9 @@ export default (layoutProps: LayoutProps) => (
             columns={['Token', 'Value', 'Description']}
             rows={spaceTable}
           />
-          <Divider />
-          <Block spaceStack="space100" />
+        </ContentSecondary>
+
+        <ContentSecondary>
           <InlineMessage>
             Avoid using generic spacing tokens directly, in favor use the more
             specific options such as: spaceInset, spaceInline, and spaceStack as
@@ -303,6 +304,7 @@ export default (layoutProps: LayoutProps) => (
             consistent.
           </InlineMessage>
         </ContentSecondary>
+
         <ContentSecondary
           headline="Code usage"
           description={
@@ -329,6 +331,7 @@ export default (layoutProps: LayoutProps) => (
           showSeparator
         />
       </ContentSection>
+
       <ContentSection sectionName="spaceinset">
         <ContentPrimary
           id="spaceinset"
@@ -348,10 +351,12 @@ export default (layoutProps: LayoutProps) => (
           }
         >
           <Illustration path="foundations/spacing/space-inset" />
-          <Block spaceStack="space090" />
-          <TabsWithTable components={spaceInsetTable} />
-          <Divider />
         </ContentPrimary>
+
+        <ContentSecondary>
+          <TabsWithTable components={spaceInsetTable} />
+        </ContentSecondary>
+
         <ContentSecondary
           headline="Code usage"
           description={
@@ -378,6 +383,7 @@ export default (layoutProps: LayoutProps) => (
           showSeparator
         />
       </ContentSection>
+
       <ContentSection sectionName="spaceinline">
         <ContentPrimary
           id="spaceinline"
@@ -399,6 +405,7 @@ export default (layoutProps: LayoutProps) => (
         >
           <Illustration path="foundations/spacing/space-inline" />
         </ContentPrimary>
+
         <ContentSecondary
           headline="Code usage"
           description={
@@ -427,6 +434,7 @@ export default (layoutProps: LayoutProps) => (
           showSeparator
         />
       </ContentSection>
+
       <ContentSection sectionName="spacestack">
         <ContentPrimary
           id="spacestack"
@@ -448,6 +456,7 @@ export default (layoutProps: LayoutProps) => (
         >
           <Illustration path="foundations/spacing/space-stack" />
         </ContentPrimary>
+
         <ContentSecondary
           headline="Code usage"
           description={
@@ -476,6 +485,7 @@ export default (layoutProps: LayoutProps) => (
           showSeparator
         />
       </ContentSection>
+
       <ContentSection sectionName="textcrop">
         <ContentPrimary
           id="textcrop"
@@ -495,6 +505,7 @@ export default (layoutProps: LayoutProps) => (
           showSeparator
         />
       </ContentSection>
+
       <ContentSection sectionName="behaviors">
         <ContentPrimary
           id="behaviors"

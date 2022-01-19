@@ -246,7 +246,7 @@ export default (layoutProps: LayoutProps) => (
     featureCard={{
       title: 'Need Help?',
       description: 'Cant find what you are looking for?',
-      href: '/about/contact-us/',
+      href: 'about/contact-us/',
     }}
   >
     <ComponentPageCell>
@@ -410,7 +410,9 @@ export default (layoutProps: LayoutProps) => (
           <Code>
             lineHeight: getLineHeight(‘fontSize040’, ‘fontLineHeight020’)
           </Code>
-          <Block spaceStack="space060" />
+        </ContentSecondary>
+
+        <ContentSecondary>
           <InlineMessage
             overrides={{stylePreset: 'inlineMessageInformative'}}
             icon={icon}
@@ -464,9 +466,11 @@ export default (layoutProps: LayoutProps) => (
           />
         </ContentSecondary>
 
-        <ContentSecondary showSeparator>
+        <ContentSecondary>
           <CodeFromFile path="examples/fonts/font-properties.tsx" />
-          <Block spaceStack="space060" />
+        </ContentSecondary>
+
+        <ContentSecondary showSeparator>
           <InlineMessage
             title="Font smooth"
             overrides={{stylePreset: 'inlineMessageInformative'}}

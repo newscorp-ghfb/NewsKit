@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, newskitLightTheme, InlineMessage, IconFilledInfo} from 'newskit';
+import {newskitLightTheme, InlineMessage, IconFilledInfo} from 'newskit';
 import {MediaList} from '../../components/media-list';
 import {Illustration} from '../../components/illustrations/illustration-loader';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
@@ -119,6 +119,7 @@ export default (layoutProps: LayoutProps) => (
           <MediaList cardType="feature" cards={PRINCIPLE_CARDS} />
         </ContentPrimary>
       </ContentSection>
+
       <ContentSection sectionName="overview">
         <ContentPrimary
           id="overview"
@@ -128,6 +129,7 @@ export default (layoutProps: LayoutProps) => (
         >
           <Illustration path="foundations/sizing/overview" />
         </ContentPrimary>
+
         <ContentSecondary
           description={
             <>
@@ -153,6 +155,7 @@ export default (layoutProps: LayoutProps) => (
           </InlineMessage>
         </ContentSecondary>
       </ContentSection>
+
       <ContentSection sectionName="why-4-px">
         <ContentPrimary
           id="why-4-px"
@@ -183,6 +186,7 @@ export default (layoutProps: LayoutProps) => (
           <Illustration path="foundations/sizing/why-4-px" />
         </ContentPrimary>
       </ContentSection>
+
       <ContentSection sectionName="touch-target-areas">
         <ContentPrimary
           id="touch-target-areas"
@@ -202,18 +206,20 @@ export default (layoutProps: LayoutProps) => (
               improving the user experience.
             </>
           }
-          showSeparator
         >
           <Illustration path="foundations/sizing/touch-target-areas" />
-          <Block spaceStack="space060" />
+        </ContentPrimary>
+
+        <ContentSecondary showSeparator>
           <InlineMessage icon={infoIcon} aria-label="Touch Target Areas">
             In most cases when there are multiple interactive elements in close
             proximity to one another, it is recommended to make sure touch
             target areas are separated by enough clear space (16px), to ensure
             balanced information density and usability.
           </InlineMessage>
-        </ContentPrimary>
+        </ContentSecondary>
       </ContentSection>
+
       <ContentSection sectionName="sizing-tokens">
         <ContentPrimary
           id="sizing-tokens"
@@ -225,6 +231,7 @@ export default (layoutProps: LayoutProps) => (
           <Table columns={['Size box', 'Token', 'Value']} rows={sizingRows} />
         </ContentPrimary>
       </ContentSection>
+
       <ContentSection sectionName="code-usage">
         <ContentPrimary
           id="code-usage"

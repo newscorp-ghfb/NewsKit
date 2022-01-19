@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, newskitLightTheme, UnorderedList, InlineMessage} from 'newskit';
+import {newskitLightTheme, UnorderedList, InlineMessage} from 'newskit';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {LayoutProps} from '../../components/layout';
@@ -332,7 +332,7 @@ export default (layoutProps: LayoutProps) => (
     featureCard={{
       title: 'Iconography',
       description: 'Icons provide additional context to information.',
-      href: '/foundations/iconography',
+      href: 'foundations/iconography',
     }}
   >
     <ComponentPageCell>
@@ -358,6 +358,7 @@ export default (layoutProps: LayoutProps) => (
           showSeparator
         />
       </ContentSection>
+
       <ContentSection sectionName="principles">
         <ContentPrimary
           id="principles"
@@ -372,6 +373,7 @@ export default (layoutProps: LayoutProps) => (
           />
         </ContentPrimary>
       </ContentSection>
+
       <ContentSection sectionName="palettecolours">
         <ContentPrimary
           id="palettecolours"
@@ -379,11 +381,11 @@ export default (layoutProps: LayoutProps) => (
           headline="Palette colours"
           description="Palette colours represent all of a brand’s colours. They are linked to contextual colour tokens where specific meaning (context) is applied. As such, careful consideration should be given if choosing to apply a palette colour directly applied to an interface rather than a contextual colour."
         />
+
         <ContentSecondary
           headline="Understanding the swatches"
           description="Utilise the swatches below to determine the accessibility of the
           palette colour in contrast to the background colour of this page"
-          showSeparator
         >
           {CUSTOM_ICONS.map(({icon, label}) => (
             <UnorderedList
@@ -403,7 +405,9 @@ export default (layoutProps: LayoutProps) => (
               {label}
             </UnorderedList>
           ))}
-          <Block spaceStack="space070" />
+        </ContentSecondary>
+
+        <ContentSecondary>
           <InlineMessage role="region" title="" aria-label="Palettecolours">
             Normal and large size text is defined by the WCAG AA standards as
             the the following: <br />
@@ -419,10 +423,13 @@ export default (layoutProps: LayoutProps) => (
             The font size is at least 18.66px with a bold font weight or 24px
             with regular font weight.
           </InlineMessage>
-          <Block spaceStack="space080" />
+        </ContentSecondary>
+
+        <ContentSecondary showSeparator>
           <ColorPalettes />
         </ContentSecondary>
       </ContentSection>
+
       <ContentSection sectionName="contextualcolours">
         <ContentPrimary
           id="contextualcolours"
@@ -430,18 +437,22 @@ export default (layoutProps: LayoutProps) => (
           headline="Contextual colours"
           description="Contextual colours are selected from the palette colours and have specific functions or purposes applied. There are three categories of contextual colours: Ink, Interface and Interactive colours."
         >
-          <Block stylePreset="imageRoundedMedium" spaceStack="space050">
-            <Illustration path="foundations/colours/overview" />
-          </Block>
+          <Illustration path="foundations/colours/overview" />
+        </ContentPrimary>
+
+        <ContentSecondary>
           <Link
             overrides={{typographyPreset: 'editorialParagraph030'}}
             href="/components/icons"
           >
             Learn more about the Icon component
           </Link>
-          <Block spaceStack="space100" />
+        </ContentSecondary>
+
+        <ContentSecondary>
           <TabsWithTable components={coloursTable} showSeparator />
-        </ContentPrimary>
+        </ContentSecondary>
+
         <ContentSecondary
           description={
             <>
@@ -453,6 +464,7 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
         />
+
         <ContentSecondary headline="Example code" showSeparator>
           <Code>
             {`backgroundColor: '{{colors.inkBase}}';
@@ -469,6 +481,7 @@ backgroundColor: '{{colors.interactiveVisited010}}';`}
           </Code>
         </ContentSecondary>
       </ContentSection>
+
       <ContentSection sectionName="a11y">
         <ContentPrimary
           id="a11y"
@@ -492,17 +505,20 @@ backgroundColor: '{{colors.interactiveVisited010}}';`}
             </>
           }
         />
+
         <ContentSecondary
           headline="Contrast for text and images of text"
           description="Standard text and images of text must have a minimum of 4.5:1
           contrast between the text colour and the background, except for the
           following:"
         />
+
         <ContentTertiary
           headline="Large text"
           description="Large-scale text and images of large-scale text must have a minimum
           of 3:1 contrast between the text colour and the background."
         />
+
         <ContentTertiary
           headline="Link text"
           description="Underline link text within the body text (inline link). Otherwise,
@@ -510,16 +526,19 @@ backgroundColor: '{{colors.interactiveVisited010}}';`}
           contrast between the link text colour and the surrounding non-link
           text colour."
         />
+
         <ContentTertiary
           headline="Incidental text"
           description="Text or images of text that are part of an inactive component, pure
           decoration, or part of a picture containing significant other visual
           content do not have any contrast requirements."
         />
+
         <ContentTertiary
           headline="Logotypes"
           description="Text that is part of a logo does not have any contrast requirements."
         />
+
         <ContentSecondary
           headline="Contrast for non-text elements"
           description=" User interface components and graphical objects must have at least a

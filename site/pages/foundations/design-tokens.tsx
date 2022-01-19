@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, styled, getColorCssFromTheme} from 'newskit';
+import {styled, getColorCssFromTheme} from 'newskit';
 import {InlineCode} from '../../components/markdown-elements';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Illustration} from '../../components/illustrations/illustration-loader';
@@ -73,10 +73,9 @@ export default (layoutProps: LayoutProps) => (
           toc="Literal vs contextual tokens"
           headline="Literal vs contextual tokens"
         >
-          <Block stylePreset="imageRoundedMedium" spaceStack="space080">
-            <Illustration path="foundations/design-tokens/design-tokens" />
-          </Block>
+          <Illustration path="foundations/design-tokens/design-tokens" />
         </ContentPrimary>
+
         <ContentSecondary
           headline="Literal tokens"
           description={
@@ -92,6 +91,7 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
         />
+
         <ContentSecondary
           headline="Contextual tokens"
           description={
@@ -113,6 +113,7 @@ export default (layoutProps: LayoutProps) => (
           showSeparator
         />
       </ContentSection>
+
       <ContentSection sectionName="naming-convention">
         <ContentPrimary
           id="naming-convention"
@@ -136,6 +137,7 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
         />
+
         <ContentSecondary
           headline="For example"
           description={
@@ -155,6 +157,7 @@ export default (layoutProps: LayoutProps) => (
           showSeparator
         />
       </ContentSection>
+
       <ContentSection sectionName="presets">
         <ContentPrimary
           id="presets"

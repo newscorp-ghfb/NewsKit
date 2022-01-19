@@ -1,5 +1,5 @@
 import React from 'react';
-import {Divider, newskitLightTheme} from 'newskit';
+import {newskitLightTheme} from 'newskit';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {Table} from '../../components/table';
 import {ComponentPageCell} from '../../components/layout-cells';
@@ -88,8 +88,8 @@ export default (layoutProps: LayoutProps) => (
             columns={['Shadow', 'Token', 'Example usage']}
             rows={shadowRows}
           />
-          <Divider />
         </ContentPrimary>
+
         <ContentSecondary
           description={
             <>
