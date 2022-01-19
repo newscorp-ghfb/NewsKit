@@ -16,7 +16,7 @@ export const AudioPlayerPOC = () => {
     withSeekBar: true,
     src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
     playPauseButton: {
-      onClick: () => {console.log('Click PlayPause custom f')}
+      onClick: () => {console.log('Click PlayPause extra function')}
     }
   })
 
