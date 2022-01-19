@@ -891,53 +891,24 @@ exports[`Image render with multiple sources 1`] = `
   width: 100%;
   display: block;
   padding-top: 0;
-  height: 0;
+  height: auto;
   width: 100%;
   border-radius: 0;
-  background-color: #F4F4F4;
-}
-
-.emotion-0 svg {
-  fill: #C0C0C0;
 }
 
 .emotion-1 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.emotion-2 {
-  opacity: 0;
+  opacity: 1;
   display: block;
   border-radius: inherit;
   height: auto;
   width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
+  -webkit-animation: fadeIn 300ms;
+  animation: fadeIn 300ms;
 }
 
 <picture
     class="emotion-0"
   >
-    <div
-      class="emotion-1"
-    />
     <source
       media="screen and (min-width: 1024px)"
       srcset="image-lg.jpg"
@@ -951,7 +922,7 @@ exports[`Image render with multiple sources 1`] = `
       srcset="image-600.jpg"
     />
     <img
-      class="emotion-2"
+      class="lazyload emotion-1"
       src="image.jpg"
     />
   </picture>
@@ -1708,6 +1679,52 @@ exports[`Image stylePreset with renderOnServer & loading=lazy 1`] = `
       class="emotion-1"
       loading="lazy"
       src="/placeholder-3x2.png"
+    />
+  </picture>
+</DocumentFragment>
+`;
+
+exports[`Image stylePreset with renderOnServer with srcs 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding-top: 0;
+  height: auto;
+  width: 100%;
+  border-radius: 0;
+}
+
+.emotion-1 {
+  opacity: 1;
+  display: block;
+  border-radius: inherit;
+  height: auto;
+  width: 100%;
+  -webkit-animation: fadeIn 300ms;
+  animation: fadeIn 300ms;
+}
+
+<picture
+    class="emotion-0"
+  >
+    <source
+      data-srcset="image-lg.jpg"
+      media="screen and (min-width: 1024px)"
+    />
+    <source
+      data-srcset="image-md.jpg"
+      media="screen and (min-width: 768px) and (max-width: 1023px)"
+    />
+    <source
+      data-srcset="image-600.jpg"
+      media="(min-width: 600px)"
+    />
+    <img
+      alt="Example Image"
+      class="lazyload emotion-1"
+      data-src="/placeholder-3x2.png"
     />
   </picture>
 </DocumentFragment>

@@ -18,6 +18,21 @@ describe('Image', () => {
       height: '3',
     },
   };
+  const sourceProps = {
+    'data-src': '/placeholder-3x2.png',
+    alt: 'Example Image',
+    sources: [
+      {media: 'lg', 'data-srcset': 'image-lg.jpg'},
+      {
+        media: 'md',
+        'data-srcset': 'image-md.jpg',
+      },
+      {
+        media: '(min-width: 600px)',
+        'data-srcset': 'image-600.jpg',
+      },
+    ],
+  };
 
   test('renders with defaults', () => {
     const fragment = renderToFragmentWithTheme(Image, defaultProps);
@@ -102,8 +117,10 @@ describe('Image', () => {
           srcSet: 'image-600.jpg',
         },
       ],
+      // loading: 'lazy',
+      renderOnServer: true,
+      className: 'lazyload',
     });
-
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -309,6 +326,16 @@ describe('Image', () => {
       const props = {
         ...defaultProps,
         loading: 'lazy',
+        renderOnServer: true,
+      };
+      // @ts-ignore
+      const fragment = renderToFragmentWithTheme(Image, props);
+      expect(fragment).toMatchSnapshot();
+    });
+    test('with renderOnServer with srcs', () => {
+      const props = {
+        ...sourceProps,
+        className: 'lazyload',
         renderOnServer: true,
       };
       // @ts-ignore
