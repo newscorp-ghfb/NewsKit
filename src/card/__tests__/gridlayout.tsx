@@ -67,13 +67,13 @@ const StyledGridLayout = styled.div<GridLayoutProps>`
   ${handleResponsiveProp(
     {rowGap: GRID_DEFAULT_PROPS.rowGap},
     ({rowGap}, {theme}) => ({
-      rowGap: theme.spacePresets[rowGap] || rowGap,
+      rowGap: rowGap && (theme.spacePresets[rowGap] || rowGap),
     }),
   )}
   ${handleResponsiveProp(
     {columnGap: GRID_DEFAULT_PROPS.columnGap},
     ({columnGap}, {theme}) => ({
-      columnGap: theme.spacePresets[columnGap] || columnGap,
+      columnGap: columnGap && (theme.spacePresets[columnGap] || columnGap),
     }),
   )}
   ${handleResponsiveProp(
@@ -128,22 +128,26 @@ const StyledGridLayout = styled.div<GridLayoutProps>`
 /*
 HELPERS
 */
-const capitalize = s => {
+const capitalize = (s: string) => {
   if (typeof s !== 'string') return '';
   return s.replace(/^./, firstLetter => firstLetter.toUpperCase());
 };
 
-const extractAreas = ariaString =>
+const extractAreas = (ariaString: string) =>
   ariaString
+    // @ts-ignore
     .replaceAll('\n', '')
+    // @ts-ignore
     .replaceAll('"', '')
     .replace(/  +/g, ' ')
     .trim()
     .split(' ');
 
+// @ts-ignore
 const uniq = (array: string[]) => [...new Set(array)];
 
-const filterInvalidAreas = areaName => areaName !== '.' && Boolean(areaName);
+const filterInvalidAreas = (areaName: string): boolean =>
+  areaName !== '.' && Boolean(areaName);
 
 const getAreasList = (areas: MQ<string>): string[] => {
   if (typeof areas === 'string') {
@@ -152,6 +156,7 @@ const getAreasList = (areas: MQ<string>): string[] => {
   if (typeof areas === 'object') {
     const list = Object.values(areas).reduce((acc, val) => {
       const filtered = extractAreas(val);
+      // @ts-ignore
       acc.push(...filtered);
       return acc;
     }, []);
@@ -179,8 +184,8 @@ export const GridLayoutItem = styled(Block)<GridLayoutItemProps>`
 export const GridLayout = ({children, ...props}: GridLayoutProps) => {
   const {areas} = props;
 
-  const areasNames = getAreasList(areas);
-  const Areas = {};
+  const areasNames = getAreasList(areas || '');
+  const Areas = {} as AreasMap;
 
   const isFunctionWithAreas =
     typeof children === 'function' && areasNames.length > 0;

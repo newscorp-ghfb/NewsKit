@@ -12,7 +12,6 @@ import {Divider} from '../../divider';
 import {TitleBar} from '../../title-bar';
 import {Button} from '../../button';
 import {Image} from '../../image';
-import {Flag, Heading1, IconFilledEmail, Tag} from '../..';
 import {GridLayout, GridLayoutItem} from './gridlayout';
 import {GridCard, GridTeaser} from './grid-card';
 
@@ -165,7 +164,14 @@ const BlockLayoutSpace = () => (
   </>
 );
 
-const news = [
+type NewsType = {
+  title: string;
+  teaser: string;
+  image: string;
+  href: string;
+};
+
+const news: NewsType[] = [
   {
     title: 'Zayn Malik appears on plus size dating app.',
     teaser:
@@ -208,7 +214,11 @@ const news = [
   },
 ];
 
-const imageGallery = [
+type ImageType = {
+  src: string;
+};
+
+const imageGallery: ImageType[] = [
   {src: 'http://placekitten.com/g/200/200'},
   {src: 'http://placekitten.com/g/200/200'},
   {src: 'http://placekitten.com/g/200/200'},
@@ -241,6 +251,7 @@ const CardLarge = ({title = '', teaser = '', image = '', href = ''}) => (
     </Card>
   </>
 );
+
 const CardSmall = ({title = '', image = '', href = ''}) => (
   <>
     <Card
@@ -266,31 +277,11 @@ const CardSmall = ({title = '', image = '', href = ''}) => (
   </>
 );
 
-const TitleBarWithGrid = ({title, href}) => (
-  <Block spaceInset="space030">
-    <GridLayout
-      alignItems="center"
-      columnGap="space030"
-      columns={{
-        xs: 'auto 1fr',
-        md: 'auto 1fr auto',
-      }}
-    >
-      <Heading1>{title}</Heading1>
-      <Divider />
-      <Visible md lg xl>
-        <Button href={href}>read more</Button>
-      </Visible>
-    </GridLayout>
-  </Block>
-);
-
-const SectionHeader = ({title, href}) => {
-  //return <TitleBarWithGrid title={title} href={href} />;
-  const button = () => href && <Button href={href}>Read more</Button>;
+const SectionHeader = ({title, href}: {title: string; href: string}) => {
+  const button = () => <Button href={href}>Read more</Button>;
 
   return (
-    <TitleBar actionItem={button}>
+    <TitleBar actionItem={href ? button : undefined}>
       <GridLayout columnGap="space030" columns="auto 1fr" alignItems="center">
         <span>{title}</span>
         <Divider />
@@ -301,8 +292,8 @@ const SectionHeader = ({title, href}) => {
 
 const SectionBody = styled.div``;
 
-const SectionFooter = ({href}) =>
-  href && (
+const SectionFooter = ({href}: {href: string}) =>
+  href ? (
     <Visible xs>
       <Stack flow="vertical-center" spaceInline="space030">
         <StackChild alignSelf={AlignSelfValues.Stretch}>
@@ -316,9 +307,17 @@ const SectionFooter = ({href}) =>
         </StackChild>
       </Stack>
     </Visible>
-  );
+  ) : null;
 
-const Section = ({children, href, title}) => (
+const Section = ({
+  children,
+  href,
+  title,
+}: {
+  title: string;
+  href: string;
+  children: React.ReactNode;
+}) => (
   <section>
     <SectionHeader title={title} href={href} />
     <SectionBody>{children}</SectionBody>
@@ -332,7 +331,11 @@ LAYOUT COMPONENTS
 
 */
 // 1 large item, 4 small items in a grid
-const BlockLayout1L4S = ({placeholders = []}) => {
+const BlockLayout1L4S = ({
+  placeholders = [],
+}: {
+  placeholders: React.ReactNode[];
+}) => {
   const [large, small1, small2, small3, small4] = placeholders;
   return (
     <GridLayout
@@ -375,7 +378,11 @@ const BlockLayout1L4S = ({placeholders = []}) => {
 };
 
 // 4 horizontal items
-const BlockLayout4H = ({placeholders = []}) => {
+const BlockLayout4H = ({
+  placeholders = [],
+}: {
+  placeholders: React.ReactNode[];
+}) => {
   const [ph1, ph2, ph3, ph4] = placeholders;
   return (
     <GridLayout
@@ -392,7 +399,11 @@ const BlockLayout4H = ({placeholders = []}) => {
 };
 
 // 3 horizontal items
-const BlockLayout3H = ({placeholders = []}) => {
+const BlockLayout3H = ({
+  placeholders = [],
+}: {
+  placeholders: React.ReactNode[];
+}) => {
   const [ph1, ph2, ph3] = placeholders;
   return (
     <GridLayout
@@ -429,7 +440,7 @@ const BlockLayout3H = ({placeholders = []}) => {
 BLOCK LAYOUT COMPONENTS
 
 */
-const BlockLayoutTeaserVariant1 = ({data = []}) => {
+const BlockLayoutTeaserVariant1 = ({data = []}: {data: NewsType[]}) => {
   const items = [CardLarge, CardSmall, CardSmall, CardSmall, CardSmall];
 
   const itemsWithData = items.map((Component, index) => (
@@ -439,7 +450,7 @@ const BlockLayoutTeaserVariant1 = ({data = []}) => {
   return <BlockLayout1L4S placeholders={itemsWithData} />;
 };
 
-const BlockLayoutTeaserVariant2 = ({data = []}) => {
+const BlockLayoutTeaserVariant2 = ({data = []}: {data: NewsType[]}) => {
   const items = [CardSmall, CardSmall, CardSmall, CardSmall];
 
   const itemsWithData = items.map((Component, index) => (
@@ -449,7 +460,7 @@ const BlockLayoutTeaserVariant2 = ({data = []}) => {
   return <BlockLayout4H placeholders={itemsWithData} />;
 };
 
-const BlockLayoutTeaserVariant3 = ({data = []}) => {
+const BlockLayoutTeaserVariant3 = ({data = []}: {data: NewsType[]}) => {
   const items = [CardLarge, CardLarge, CardLarge, CardLarge];
 
   const itemsWithData = items.map((Component, index) => (
@@ -459,7 +470,7 @@ const BlockLayoutTeaserVariant3 = ({data = []}) => {
   return <BlockLayout4H placeholders={itemsWithData} />;
 };
 
-const BlockLayoutTeaserVariant4 = ({data = []}) => {
+const BlockLayoutTeaserVariant4 = ({data = []}: {data: ImageType[]}) => {
   const items = [Image, Image, Image, Image];
 
   const itemsWithData = items.map((Component, index) => (
@@ -469,7 +480,7 @@ const BlockLayoutTeaserVariant4 = ({data = []}) => {
   return <BlockLayout4H placeholders={itemsWithData} />;
 };
 
-const BlockLayoutTeaserVariant5 = ({data = []}) => {
+const BlockLayoutTeaserVariant5 = ({data = []}: {data: NewsType[]}) => {
   const items = [CardSmall, CardSmall, CardSmall];
 
   const itemsWithData = items.map((Component, index) => (
@@ -479,23 +490,29 @@ const BlockLayoutTeaserVariant5 = ({data = []}) => {
   return <BlockLayout3H placeholders={itemsWithData} />;
 };
 
-const BlockLayoutTeaser = ({data, variant}) => {
+const BlockLayoutTeaser = ({
+  data,
+  variant,
+}: {
+  data: NewsType[] | ImageType[];
+  variant: string;
+}) => {
   // eslint-disable-next-line default-case
   switch (variant) {
     case 'variant-1':
-      return <BlockLayoutTeaserVariant1 data={data} />;
+      return <BlockLayoutTeaserVariant1 data={data as NewsType[]} />;
 
     case 'variant-2':
-      return <BlockLayoutTeaserVariant2 data={data} />;
+      return <BlockLayoutTeaserVariant2 data={data as NewsType[]} />;
 
     case 'variant-3':
-      return <BlockLayoutTeaserVariant3 data={data} />;
+      return <BlockLayoutTeaserVariant3 data={data as NewsType[]} />;
 
     case 'variant-4':
-      return <BlockLayoutTeaserVariant4 data={data} />;
+      return <BlockLayoutTeaserVariant4 data={data as ImageType[]} />;
 
     case 'variant-5':
-      return <BlockLayoutTeaserVariant5 data={data} />;
+      return <BlockLayoutTeaserVariant5 data={data as NewsType[]} />;
   }
 
   return <p>no correct variant</p>;
