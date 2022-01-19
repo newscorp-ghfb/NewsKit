@@ -212,9 +212,7 @@ export default (layoutProps: LayoutProps) => (
           description="Below is an example of how it is recommended to link Figma libraries to get the best out of the NewsKit Design System. This ensures that whenever the NewsKit Design System is updated, designs utilising this can automatically receive updates and enables contributing to the NewsKit Design System."
           showSeparator
         >
-          <Block stylePreset="imageRoundedMedium">
-            <Illustration path="guides/design-overview/example-architecture" />
-          </Block>
+          <Illustration path="guides/design-overview/example-architecture" />
         </ContentPrimary>
       </ContentSection>
       <ContentSection sectionName="plugins">
