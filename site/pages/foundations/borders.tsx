@@ -3,8 +3,8 @@ import {
   InlineMessage,
   newskitLightTheme,
   compileTheme,
-  H3,
   Block,
+  Divider,
 } from 'newskit';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {LayoutProps} from '../../components/layout';
@@ -14,6 +14,7 @@ import {Code} from '../../components/code';
 import {
   ContentSection,
   ContentPrimary,
+  ContentSecondary,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
 
@@ -43,22 +44,9 @@ interface ExampleSectionProps {
 }
 
 const ExampleSection: React.FC<ExampleSectionProps> = ({section}) => (
-  <>
-    <Block spaceStack={{xs: 'space050', md: 'space060'}}>
-      <H3
-        overrides={{
-          stylePreset: 'inkContrast',
-          typographyPreset: {
-            xs: 'editorialHeadline020',
-            md: 'editorialHeadline030',
-          },
-        }}
-      >
-        Code example
-      </H3>
-    </Block>
+  <ContentSecondary headline=" Code example">
     <Code>{codeExamples[section]}</Code>
-  </>
+  </ContentSecondary>
 );
 
 export default (layoutProps: LayoutProps) => (
@@ -81,7 +69,7 @@ export default (layoutProps: LayoutProps) => (
       title: 'Iconography',
       description:
         'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
-      href: '/foundations/iconography',
+      href: 'foundations/iconography',
     }}
   >
     <ComponentPageCell>
@@ -97,7 +85,8 @@ export default (layoutProps: LayoutProps) => (
             columns={['Border radius', 'Token', 'Token value']}
             rows={borderRows('borderRadius')}
           />
-          <Block spaceStack="space060" />
+          <Divider />
+          <Block spaceStack="space100" />
           <ExampleSection section="borderRadius" />
         </ContentPrimary>
       </ContentSection>
@@ -113,9 +102,9 @@ export default (layoutProps: LayoutProps) => (
             columns={['Border width', 'Token', 'Token value']}
             rows={borderRows('borderWidth')}
           />
-          <Block spaceStack="space080" />
+          <Divider />
+          <Block spaceStack="space100" />
           <ExampleSection section="borderWidth" />
-          <Block spaceStack="space080" />
           <InlineMessage title="Note">
             In addition to the Border Radius and Border Width foundations,
             Border Colour and Border Style can be applied to a UI element using
