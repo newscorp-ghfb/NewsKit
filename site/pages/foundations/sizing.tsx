@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Block,
-  TextBlock,
-  newskitLightTheme,
-  InlineMessage,
-  IconFilledInfo,
-} from 'newskit';
+import {Block, newskitLightTheme, InlineMessage, IconFilledInfo} from 'newskit';
 import {MediaList} from '../../components/media-list';
 import {Illustration} from '../../components/illustrations/illustration-loader';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
@@ -17,6 +11,7 @@ import {Link} from '../../components/link';
 import {
   ContentSection,
   ContentPrimary,
+  ContentSecondary,
 } from '../../components/content-structure';
 
 const sizingRows = getTokenType(newskitLightTheme.sizing, 'sizing').map(
@@ -110,7 +105,7 @@ export default (layoutProps: LayoutProps) => (
       title: 'Presets',
       description:
         'A collection of related foundational design tokens combined into a preset to define reusable styles, typography or transitions.',
-      href: '/foundations/motions',
+      href: 'foundations/motions',
     }}
   >
     <ComponentPageCell>
@@ -122,7 +117,7 @@ export default (layoutProps: LayoutProps) => (
           description=""
           showSeparator
         >
-          <MediaList cards={PRINCIPLE_CARDS} />
+          <MediaList cardType="feature" cards={PRINCIPLE_CARDS} />
         </ContentPrimary>
       </ContentSection>
       <ContentSection sectionName="overview">
@@ -131,64 +126,61 @@ export default (layoutProps: LayoutProps) => (
           toc="Overview"
           headline="Overview"
           description="NewsKit uses a simple, standard sizing scale. The size of every UI element and the space between elements is defined by a 4px rule (or pt/rem)."
-          showSeparator
         >
           <Illustration path="foundations/sizing/overview" />
-          <Block spaceStack="space050" />
-          <TextBlock
-            stylePreset="inkBase"
-            typographyPreset="editorialParagraph030"
-          >
-            All UI elements align to a 4px square baseline grid. This is to
-            provide:
-            <ul>
-              <li>Increased visual consistency</li>
-              <li>Increased efficiency: fewer design choices, less code</li>
-              <li>
-                Easier communication and reduced back and forth between design
-                and engineering as the intent is clear and results are more
-                predictable.
-              </li>
-              <li>Visual rhythm</li>
-            </ul>
-          </TextBlock>
-          <Block spaceStack="space050" />
+        </ContentPrimary>
+        <ContentSecondary
+          description={
+            <>
+              All UI elements align to a 4px square baseline grid. This is to
+              provide:
+              <ul>
+                <li>Increased visual consistency</li>
+                <li>Increased efficiency: fewer design choices, less code</li>
+                <li>
+                  Easier communication and reduced back and forth between design
+                  and engineering as the intent is clear and results are more
+                  predictable.
+                </li>
+                <li>Visual rhythm</li>
+              </ul>
+            </>
+          }
+          showSeparator
+        >
           <InlineMessage icon={infoIcon} aria-label="Distribution">
             Text that is centered within a component e.g. a button, does not
             need to sit on the grid as it is evenly distributed.
           </InlineMessage>
-        </ContentPrimary>
+        </ContentSecondary>
       </ContentSection>
       <ContentSection sectionName="why-4-px">
         <ContentPrimary
           id="why-4-px"
           toc="Why 4px?"
           headline="Why 4px?"
-          description=""
+          description={
+            <>
+              A 4px rule provides a good balance of choice to a designer but,
+              crucially, 4 is also divisible and this has some significant
+              benefits:
+              <ul>
+                <li>
+                  Most popular screen sizes are divisible by 4, so grid columns
+                  fit the screen perfectly more often than not.
+                </li>
+                <li>
+                  Increasingly, platforms are allowing users to set their
+                  preferred ‘density’ to accommodate specific user needs. This
+                  may be increasing or decreasing font sizes or white space in
+                  and between page elements. A 4px scale allows us to scale
+                  consistently and continue to maintain the grid.
+                </li>
+              </ul>
+            </>
+          }
           showSeparator
         >
-          <TextBlock
-            stylePreset="inkBase"
-            typographyPreset="editorialParagraph030"
-          >
-            A 4px rule provides a good balance of choice to a designer but,
-            crucially, 4 is also divisible and this has some significant
-            benefits:
-            <ul>
-              <li>
-                Most popular screen sizes are divisible by 4, so grid columns
-                fit the screen perfectly more often than not.
-              </li>
-              <li>
-                Increasingly, platforms are allowing users to set their
-                preferred ‘density’ to accommodate specific user needs. This may
-                be increasing or decreasing font sizes or white space in and
-                between page elements. A 4px scale allows us to scale
-                consistently and continue to maintain the grid.
-              </li>
-            </ul>
-          </TextBlock>
-          <Block spaceStack="space060" />
           <Illustration path="foundations/sizing/why-4-px" />
         </ContentPrimary>
       </ContentSection>
@@ -197,24 +189,22 @@ export default (layoutProps: LayoutProps) => (
           id="touch-target-areas"
           toc="Touch target areas"
           headline="Touch target areas"
-          description=""
+          description={
+            <>
+              To ensure that there is always a sufficient area for users to
+              click or tap on interactive elements, there are a variety of
+              component sizes eg. small, medium, and large buttons, text input,
+              etc.
+              <br />
+              <br />
+              On mobile breakpoints and devices, all interactive elements should
+              have a touch target area of more than 44px². This ensures that it
+              will meet the minimum standard for iOS and Android, whilst
+              improving the user experience.
+            </>
+          }
           showSeparator
         >
-          <TextBlock
-            stylePreset="inkBase"
-            typographyPreset="editorialParagraph030"
-          >
-            To ensure that there is always a sufficient area for users to click
-            or tap on interactive elements, there are a variety of component
-            sizes eg. small, medium, and large buttons, text input, etc.
-            <br />
-            <br />
-            On mobile breakpoints and devices, all interactive elements should
-            have a touch target area of more than 44px². This ensures that it
-            will meet the minimum standard for iOS and Android, whilst improving
-            the user experience.
-          </TextBlock>
-          <Block spaceStack="space060" />
           <Illustration path="foundations/sizing/touch-target-areas" />
           <Block spaceStack="space060" />
           <InlineMessage icon={infoIcon} aria-label="Touch Target Areas">
@@ -241,31 +231,28 @@ export default (layoutProps: LayoutProps) => (
           id="code-usage"
           toc="Code Usage"
           headline="Code Usage"
-          description=""
+          description={
+            <>
+              The{' '}
+              <Link href="/foundations/theming/component-defaults/">
+                Component Defaults
+              </Link>{' '}
+              page details the different ways in which you can override and
+              apply sizing to NewsKit components. For more advanced use cases,
+              these values can be accessed from the theme by calling either:{' '}
+              <Link href="/components/utils/get-defaults/">
+                getResponsiveSize
+              </Link>
+              , emotion’s{' '}
+              <Link href="/components/utils/emotion"> useTheme hook</Link>, or{' '}
+              <Link href="/components/utils/get-css-from-theme/">
+                getSizingCssFromTheme
+              </Link>
+              .
+            </>
+          }
           showSeparator
-        >
-          <TextBlock
-            stylePreset="inkBase"
-            typographyPreset="editorialParagraph030"
-          >
-            The{' '}
-            <Link href="/foundations/theming/component-defaults/">
-              Component Defaults
-            </Link>{' '}
-            page details the different ways in which you can override and apply
-            sizing to NewsKit components. For more advanced use cases, these
-            values can be accessed from the theme by calling either:{' '}
-            <Link href="/components/utils/get-defaults/">
-              getResponsiveSize
-            </Link>
-            , emotion’s{' '}
-            <Link href="/components/utils/emotion"> useTheme hook</Link>, or{' '}
-            <Link href="/components/utils/get-css-from-theme/">
-              getSizingCssFromTheme
-            </Link>
-            .
-          </TextBlock>
-        </ContentPrimary>
+        />
       </ContentSection>
     </ComponentPageCell>
   </FoundationPageTemplate>
