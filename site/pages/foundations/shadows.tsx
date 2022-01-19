@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, TextBlock, Divider, newskitLightTheme} from 'newskit';
+import {Divider, newskitLightTheme} from 'newskit';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {Table} from '../../components/table';
 import {ComponentPageCell} from '../../components/layout-cells';
@@ -9,6 +9,7 @@ import {Link} from '../../components/link';
 import {
   ContentSection,
   ContentPrimary,
+  ContentSecondary,
 } from '../../components/content-structure';
 
 const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
@@ -72,7 +73,7 @@ export default (layoutProps: LayoutProps) => (
       title: 'Typography',
       description:
         'Fonts define the font family, boldness, size, and the style of the text.',
-      href: '/foundations/presets/typography-presets',
+      href: 'foundations/presets/typography-presets',
     }}
   >
     <ComponentPageCell>
@@ -82,25 +83,25 @@ export default (layoutProps: LayoutProps) => (
           toc="Overview"
           headline="Overview"
           description="The NewsKit design system offers a series of depths of shadows. They improve the overall aesthetics, add levels of depth and realism to the user’s visual experience and improve the UI visual hierarchy. This helps users discover and interact with UI elements. These have been mapped to commonly used components to ensure they work together in harmony."
-          showSeparator
         >
           <Table
             columns={['Shadow', 'Token', 'Example usage']}
             rows={shadowRows}
           />
           <Divider />
-          <Block spaceStack="space100" />
-          <TextBlock
-            stylePreset="inkBase"
-            typographyPreset="editorialParagraph030"
-          >
-            Shadows can be applied to a UI element using the boxShadow attribute
-            on a{' '}
-            <Link href="/foundations/presets/space-presets/">
-              Style Preset.
-            </Link>
-          </TextBlock>
         </ContentPrimary>
+        <ContentSecondary
+          description={
+            <>
+              Shadows can be applied to a UI element using the boxShadow
+              attribute on a{' '}
+              <Link href="/foundations/presets/space-presets/">
+                Style Preset.
+              </Link>
+            </>
+          }
+          showSeparator
+        />
       </ContentSection>
     </ComponentPageCell>
   </FoundationPageTemplate>
