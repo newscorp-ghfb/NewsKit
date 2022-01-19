@@ -1,7 +1,6 @@
 import React from 'react';
 import {styled, getColorCssFromTheme} from 'newskit';
 import {InlineCode} from '../../components/markdown-elements';
-import {LegacyBlock} from '../../components/legacy-block';
 import {Illustration} from '../../components/illustrations/illustration-loader';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {Link} from '../../components/link';
@@ -140,20 +139,7 @@ export default (layoutProps: LayoutProps) => (
 
         <ContentSecondary
           headline="For example"
-          description={
-            <>
-              <LegacyBlock
-                display="flex"
-                flexDirection="column"
-                height="100%"
-                width="100%"
-              >
-                <InlineCode>
-                  <TokenStyle />
-                </InlineCode>
-              </LegacyBlock>
-            </>
-          }
+          description={<TokenStyle />}
           showSeparator
         />
       </ContentSection>
