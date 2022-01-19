@@ -3,6 +3,9 @@ import {Image} from '..';
 import {styled} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {IconFilledError} from '../../icons';
+import 'lazysizes';
+// import a plugin
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const Container = styled.div`
   max-width: 600px;
@@ -300,4 +303,28 @@ export const StoryImageWithSourcesAndMedia = () => {
   );
 };
 StoryImageWithSourcesAndMedia.storyName =
-  'image-with-sources-using-media-query';
+  'image-with-sources-using-data-attributes';
+
+export const StoryImageWithSourcesAndDataAttributes = () => {
+  const sources = [
+    {
+      media: '(min-width: 800px)',
+      'data-srcset': '/min-width-800px-placeholder-image.png',
+    },
+    {
+      media: '(min-width: 600px)',
+      'data-srcset': '/min-width-600px-placeholder-image.png',
+    },
+  ];
+
+  return (
+    <Image
+      data-src="/fallback-300x-placeholder-image.png"
+      sources={sources}
+      className="lazyload"
+      alt="placeholders"
+    />
+  );
+};
+StoryImageWithSourcesAndDataAttributes.storyName =
+  'image-with-sources-using-data-attributes';
