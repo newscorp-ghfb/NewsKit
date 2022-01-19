@@ -1,17 +1,9 @@
 import React from 'react';
-import {
-  Block,
-  TextBlock,
-  Tab,
-  Tabs,
-  InlineMessage,
-  newskitLightTheme,
-  IconFilledInfo,
-} from 'newskit';
+import {InlineMessage, newskitLightTheme, IconFilledInfo} from 'newskit';
+import {TabsWithTable} from '../../../components/tabs-with-table';
 import {getTokenType} from '../../../utils/get-token-type';
 import {Code} from '../../../components/code';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
-import {Table} from '../../../components/table';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
 import {Link} from '../../../components/link';
@@ -94,10 +86,37 @@ const infoIcon = (
   />
 );
 
-const tabOverrides = {
-  typographyPreset: 'utilityButton020',
-  stylePreset: 'tab',
-};
+const COLUMN_HEADER = [
+  'Typography preset',
+  'Token',
+  'Typography font family',
+  'Typography font size',
+  'Typography line height',
+  'Typography font weight',
+  'Typography letter spacing',
+  'Common uses',
+];
+
+const typographyPresetsTable = [
+  {
+    tabs: [
+      {
+        header: 'Editorial',
+        columnHeader: COLUMN_HEADER,
+        rows: editorialRows,
+        description:
+          'These styles are used in more expressive scenarios where they may be more aligned to a brand style, these are used in components like the title bar and card.',
+      },
+      {
+        header: 'Utility',
+        columnHeader: COLUMN_HEADER,
+        rows: utilityRows,
+        description:
+          'These styles are used in more functional scenarios where a clear message needs to be communicated, these are used in components like the buttons, tabs, inline messages, and banners.',
+      },
+    ],
+  },
+];
 
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
@@ -159,56 +178,7 @@ export default (layoutProps: LayoutProps) => (
           }
           showSeparator
         >
-          <Tabs>
-            <Tab overrides={tabOverrides} label="Editorial">
-              <TextBlock
-                stylePreset="inkBase"
-                typographyPreset="editorialParagraph030"
-              >
-                These styles are used in more expressive scenarios where they
-                may be more aligned to a brand style, these are used in
-                components like the title bar and card.
-              </TextBlock>
-              <Block spaceStack="space080" />
-              <Table
-                columns={[
-                  'Typography preset',
-                  'Token',
-                  'Typography font family',
-                  'Typography font size',
-                  'Typography line height',
-                  'Typography font weight',
-                  'Typography letter spacing',
-                  'Common uses',
-                ]}
-                rows={editorialRows}
-              />
-            </Tab>
-            <Tab overrides={tabOverrides} label="Utility">
-              <TextBlock
-                stylePreset="inkBase"
-                typographyPreset="editorialParagraph030"
-              >
-                These styles are used in more functional scenarios where a clear
-                message needs to be communicated, these are used in components
-                like the buttons, tabs, inline messages, and banners.
-              </TextBlock>
-              <Block spaceStack="space080" />
-              <Table
-                columns={[
-                  'Typography preset',
-                  'Token',
-                  'Typography font family',
-                  'Typography font size',
-                  'Typography line height',
-                  'Typography font weight',
-                  'Typography letter spacing',
-                  'Common uses',
-                ]}
-                rows={utilityRows}
-              />
-            </Tab>
-          </Tabs>
+          <TabsWithTable components={typographyPresetsTable} />
         </ContentPrimary>
       </ContentSection>
 
