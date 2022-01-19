@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Block,
-  P,
-  InlineMessage,
-  IconFilledInfo,
-  styled,
-  Divider,
-} from 'newskit*';
+import {Block, InlineMessage, IconFilledInfo, styled, Divider} from 'newskit*';
 import {Table} from '../../../components/table';
 import {InlineCode} from '../../../components/markdown-elements';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
@@ -469,21 +462,18 @@ export default (layoutProps: LayoutProps) => (
           headline="Overview"
           description={
             <>
-              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                Style Presets define properties such as colour, border-radius
-                and text-decoration, across multiple states. For example, one
-                style preset can contain the style for all states of a button.
-              </P>
+              Style Presets define properties such as colour, border-radius and
+              text-decoration, across multiple states. For example, one style
+              preset can contain the style for all states of a button.
               <br />
-              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                In combination with{' '}
-                <Link href="/foundations/presets/typography-presets/">
-                  Typography Presets
-                </Link>
-                , <Link href="/foundations/sizing/">Sizing</Link>, and{' '}
-                <Link href="/foundations/presets/space-presets/">Spacing</Link>,
-                Style Presets provide the visual attributes of a component.
-              </P>
+              <br />
+              In combination with{' '}
+              <Link href="/foundations/presets/typography-presets/">
+                Typography Presets
+              </Link>
+              , <Link href="/foundations/sizing/">Sizing</Link>, and{' '}
+              <Link href="/foundations/presets/space-presets/">Spacing</Link>,
+              Style Presets provide the visual attributes of a component.
             </>
           }
           showSeparator

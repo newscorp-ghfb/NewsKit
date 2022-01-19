@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, P, InlineMessage, newskitLightTheme, Divider} from 'newskit*';
+import {Block, InlineMessage, newskitLightTheme, Divider} from 'newskit*';
 import {Table, TableRow} from '../../../components/table';
 import {getTokenType} from '../../../utils/get-token-type';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
@@ -256,7 +256,6 @@ export default (layoutProps: LayoutProps) => (
           id="principles"
           toc="Principles"
           headline="Principles"
-          description=""
           showSeparator
         >
           <MediaList
@@ -273,11 +272,11 @@ export default (layoutProps: LayoutProps) => (
           headline="Overview"
           description="Space is distance between elements on a screen often refered to as the whitespace. Good use of whitespace helps to de-clutter and group content to provide a visual hierarchy so that users can focus on the important elements and digest content with reduced cognitive load."
         >
-          <Block spaceStack="space050">
-            <Illustration path="foundations/spacing/overview" />
-          </Block>
-          <Block spaceStack="space070">
-            <P>
+          <Illustration path="foundations/spacing/overview" />
+        </ContentPrimary>
+        <ContentSecondary
+          description={
+            <>
               Space tokens define the space throughout the system, such as the
               distance between an icon and the label in a button. The space
               tokens define three categories to control margin and padding for
@@ -287,15 +286,15 @@ export default (layoutProps: LayoutProps) => (
               <br />
               <br />
               Available space design tokens are outlined below:
-            </P>
-          </Block>
-          <Block spaceStack="space100">
-            <Table
-              columns={['Token', 'Value', 'Description']}
-              rows={spaceTable}
-            />
-            <Divider />
-          </Block>
+            </>
+          }
+        >
+          <Table
+            columns={['Token', 'Value', 'Description']}
+            rows={spaceTable}
+          />
+          <Divider />
+          <Block spaceStack="space100" />
           <InlineMessage>
             Avoid using generic spacing tokens directly, in favor use the more
             specific options such as: spaceInset, spaceInline, and spaceStack as
@@ -303,7 +302,7 @@ export default (layoutProps: LayoutProps) => (
             needs, you can use the generic variables to keep spatial concepts
             consistent.
           </InlineMessage>
-        </ContentPrimary>
+        </ContentSecondary>
         <ContentSecondary
           headline="Code usage"
           description={

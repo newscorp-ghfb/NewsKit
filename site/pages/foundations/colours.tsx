@@ -363,7 +363,6 @@ export default (layoutProps: LayoutProps) => (
           id="principles"
           toc="Principles"
           headline="Principles"
-          description=""
           showSeparator
         >
           <MediaList
