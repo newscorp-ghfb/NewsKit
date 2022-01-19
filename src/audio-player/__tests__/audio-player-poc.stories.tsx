@@ -12,6 +12,7 @@ export default {
 
 export const AudioPlayerPOC = () => {
   const {playPauseButtonProps, audioElementProps, seekBarProps} = useAudioPlayer({
+    // withSeekBar is just an idea for avoiding functions to run under the hood if not needed. But it is not  a needed feature, and other approaches can be taken
     withSeekBar: true,
     src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
     playPauseButton: {
