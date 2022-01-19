@@ -671,6 +671,22 @@ export const GridStory = () => (
   </>
 );
 
+export const MinMaxRepeaat = () => {
+  const boxes = Array.from(Array(20)).map((_, i) => <GridBox>{i} box</GridBox>);
+  return (
+    <>
+      <h1>MinMan and Repeat</h1>
+      <GridLayout
+        columns="repeat(4, minmax(100px, 400px))"
+        columnGap="20px"
+        rowGap="20px"
+      >
+        {boxes}
+      </GridLayout>
+    </>
+  );
+};
+
 export const CardWithGrid = () => (
   <>
     <GridCard
