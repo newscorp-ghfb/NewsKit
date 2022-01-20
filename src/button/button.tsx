@@ -37,9 +37,8 @@ const ThemelessButton = React.forwardRef<
       eventOriginator,
       ...rest
     } = linkOrButtonProps as ButtonOrButtonLinkProps;
-    const isLink =
-      isButtonLink(linkOrButtonProps) && Boolean(linkOrButtonProps.href);
-    const href = isButtonLink(linkOrButtonProps) && linkOrButtonProps.href;
+
+    const isLink = isButtonLink(linkOrButtonProps);
 
     const disabledLinkProps = {
       href: undefined,
@@ -53,7 +52,6 @@ const ThemelessButton = React.forwardRef<
             'data-testid': 'buttonLink',
             ...emotionAs('a'),
             ...rest,
-            href,
             disabled,
             ...(disabled && disabledLinkProps),
           }
@@ -62,7 +60,6 @@ const ThemelessButton = React.forwardRef<
             'data-testid': 'button',
             ...emotionAs('button'),
             ...rest,
-            href: undefined, // Remove href from HTML attributes
             disabled,
             ...(loading && {
               'aria-busy': 'true',

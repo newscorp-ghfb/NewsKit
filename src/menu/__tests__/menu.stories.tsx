@@ -10,9 +10,8 @@ import {MenuItemAlign, MenuItemSize} from '../types';
 import {styled} from '../../utils';
 import {getSSRId} from '../../utils/get-ssr-id';
 
-// const href = 'javascript:;';
-// const href = 'https://newskit.co.uk/';
-const href = '';
+// eslint-disable-next-line no-script-url
+const href = 'javascript:;';
 
 const myCustomTheme = compileTheme(
   createTheme({
