@@ -1,3 +1,4 @@
+import {useLogicalMargins} from '../utils/logicalProperties';
 import {
   styled,
   getTypographyPreset,
@@ -94,6 +95,8 @@ export const StyledSelectPanel = styled.div<{
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
+
+  ${useLogicalMargins}
 
   ${({$size}) =>
     getResponsiveSpace(`marginTop`, `select.${$size}.panel`, '', 'spaceStack')}

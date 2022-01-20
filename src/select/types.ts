@@ -1,10 +1,13 @@
 import React from 'react';
 import {EnhancerOverrides, CommonInputProps} from '../form/types';
+import {LogicalMargins} from '../utils/logicalProperties';
 import {MQ} from '../utils/style';
 
 export type ButtonSelectSize = 'small' | 'medium' | 'large';
 
-export interface SelectButtonOverrides extends EnhancerOverrides {
+export interface SelectButtonOverrides
+  extends EnhancerOverrides,
+    LogicalMargins {
   width?: MQ<string>;
   height?: MQ<string>;
   minWidth?: MQ<string>;
@@ -20,7 +23,7 @@ export interface SelectButtonOverrides extends EnhancerOverrides {
   };
 }
 
-export interface SelectPanelOverrides {
+export interface SelectPanelOverrides extends LogicalMargins {
   maxHeight?: MQ<string>;
   stylePreset?: MQ<string>;
   spaceInset?: MQ<string>;
