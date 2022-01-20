@@ -270,7 +270,6 @@ const ItalicTextBlock = styled(TextBlock)\`
           description="Legibility is core to the NewsKit typographic system. By following the
           guidelines below, we ensure consistency and readability across all
           typographic variations."
-          showSeparator
         >
           <MediaList
             cardsLayout={{
