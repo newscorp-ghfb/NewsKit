@@ -14,7 +14,7 @@ import {
   ContentPrimary,
 } from '../../../components/content-structure';
 
-const featureCardoverrides = {
+const featureCardOverrides = {
   title: {
     typographyPreset: 'editorialHeadline030',
   },
@@ -22,7 +22,6 @@ const featureCardoverrides = {
     typographyPreset: 'editorialParagraph020',
   },
 };
-const {title, description} = featureCardoverrides;
 
 const PRINCIPLE_CARDS = [
   {
@@ -33,10 +32,7 @@ const PRINCIPLE_CARDS = [
     description:
       'NewsKit makes it simple to design experiences that are not only aesthetically pleasing, but that are fully responsive, promote accessibility and align to the components in code. NewsKit allows designers to free up time to concentrate on the important stuff - like the end user experience!',
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardOverrides,
   },
   {
     media: () => (
@@ -59,10 +55,7 @@ const PRINCIPLE_CARDS = [
       </>
     ),
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardOverrides,
   },
 ] as MediaItem[];
 
