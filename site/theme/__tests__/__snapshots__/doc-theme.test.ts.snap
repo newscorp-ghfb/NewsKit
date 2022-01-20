@@ -2413,35 +2413,35 @@ Object {
     "toastInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNegative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNeutral": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNotice": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastPositive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
@@ -5482,35 +5482,35 @@ Object {
     "toastInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNegative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNeutral": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNotice": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastPositive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
@@ -8551,35 +8551,35 @@ Object {
     "toastInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNegative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNeutral": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNotice": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastPositive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
@@ -11620,35 +11620,35 @@ Object {
     "toastInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNegative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNeutral": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNotice": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastPositive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
@@ -14689,35 +14689,35 @@ Object {
     "toastInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNegative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNeutral": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNotice": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastPositive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
@@ -17758,35 +17758,35 @@ Object {
     "toastInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNegative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNeutral": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNotice": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastPositive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
@@ -20827,35 +20827,35 @@ Object {
     "toastInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNegative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNeutral": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNotice": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastPositive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
@@ -23896,35 +23896,35 @@ Object {
     "toastInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNegative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNeutral": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastNotice": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastPositive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
