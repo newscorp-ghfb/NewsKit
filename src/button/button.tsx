@@ -62,6 +62,7 @@ const ThemelessButton = React.forwardRef<
             'data-testid': 'button',
             ...emotionAs('button'),
             ...rest,
+            href: undefined, // Remove href from HTML attributes
             disabled,
             ...(loading && {
               'aria-busy': 'true',
