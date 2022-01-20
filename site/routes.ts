@@ -61,6 +61,14 @@ export default [
               'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
             illustration: 'guides/design-overview/hero',
           },
+          {
+            title: 'Engineering overview',
+            page: true,
+            id: '/getting-started/code/engineering-overview',
+            description:
+              'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
+            illustration: 'guides/engineering-overview/hero',
+          },
           // ToDo: Once design quickstart guide page is ready, need to enable this section.
           // {
           //   title: 'Design quickstart guide',
