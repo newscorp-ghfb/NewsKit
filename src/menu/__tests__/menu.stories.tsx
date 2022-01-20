@@ -10,8 +10,9 @@ import {MenuItemAlign, MenuItemSize} from '../types';
 import {styled} from '../../utils';
 import {getSSRId} from '../../utils/get-ssr-id';
 
-// eslint-disable-next-line no-script-url
-const href = 'javascript:;';
+// const href = 'javascript:;';
+// const href = 'https://newskit.co.uk/';
+const href = '';
 
 const myCustomTheme = compileTheme(
   createTheme({
@@ -62,12 +63,26 @@ export const StoryMenuItemsHorizontal = () => (
   <>
     <StorybookHeading>Menu items - horizontal</StorybookHeading>
     <Menu aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href}>Menu item 1</MenuItem>
-      <MenuItem href={href}>Menu item 2</MenuItem>
-      <MenuItem href={href}>Menu item 3</MenuItem>
+      <MenuItem href={href}>Menu itemmm 1</MenuItem>
+      <MenuItem href={href}>Menu itemmm 2</MenuItem>
+      <MenuItem href="">Menu itemmm 1</MenuItem>
+      <MenuItem href="">Menu itemmm 2</MenuItem>
+      {/* <MenuItem href={href}>Menu item 3</MenuItem>
       <MenuItem href={href}>Menu item 4</MenuItem>
       <MenuItem href={href}>Menu item 5</MenuItem>
-      <MenuItem href={href}>Menu item 6</MenuItem>
+      <MenuItem href={href}>Menu item 6</MenuItem> */}
+    </Menu>
+
+    <br />
+    <br />
+    <br />
+    <Menu aria-label={`Menu ${getSSRId()}`}>
+      <MenuItem href="">Menu item 1</MenuItem>
+      <MenuItem href="">Menu item 2</MenuItem>
+      <MenuItem href="">Menu item 3</MenuItem>
+      <MenuItem href="">Menu item 4</MenuItem>
+      <MenuItem href="">Menu item 5</MenuItem>
+      <MenuItem href="">Menu item 6</MenuItem>
     </Menu>
   </>
 );
@@ -201,33 +216,48 @@ export const StoryMenuItemsAlignment = () => {
       <StorybookHeading>Menu items with different alignment</StorybookHeading>
       <Flex>
         <div>
-          <StorybookSubHeading>Left alignment</StorybookSubHeading>
+          <StorybookSubHeading>Left</StorybookSubHeading>
           <Menu
             vertical
             align={MenuItemAlign.Start}
             aria-label={`Menu ${getSSRId()}`}
           >
-            <MenuItem href={href}>Menu item 1</MenuItem>
-            <MenuItem href={href}>Menu item 2</MenuItem>
-            <MenuItem href={href}>Menu item 3</MenuItem>
-            <MenuItem href={href}>Menu item 4</MenuItem>
-            <MenuItem href={href}>Menu item 5</MenuItem>
-            <MenuItem href={href}>Menu item 6</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 4</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 5</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 6</MenuItem>
           </Menu>
         </div>
         <div>
-          <StorybookSubHeading>Right alignment</StorybookSubHeading>
+          <StorybookSubHeading>Center</StorybookSubHeading>
+          <Menu
+            vertical
+            align={MenuItemAlign.Center}
+            aria-label={`Menu ${getSSRId()}`}
+          >
+            <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 4</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 5</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 6</MenuItem>
+          </Menu>
+        </div>
+        <div>
+          <StorybookSubHeading>Right</StorybookSubHeading>
           <Menu
             vertical
             align={MenuItemAlign.End}
             aria-label={`Menu ${getSSRId()}`}
           >
-            <MenuItem href={href}>Menu item 1</MenuItem>
-            <MenuItem href={href}>Menu item 2</MenuItem>
-            <MenuItem href={href}>Menu item 3</MenuItem>
-            <MenuItem href={href}>Menu item 4</MenuItem>
-            <MenuItem href={href}>Menu item 5</MenuItem>
-            <MenuItem href={href}>Menu item 6</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 4</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 5</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 6</MenuItem>
           </Menu>
         </div>
       </Flex>
@@ -235,6 +265,48 @@ export const StoryMenuItemsAlignment = () => {
   );
 };
 StoryMenuItemsAlignment.storyName = 'menu items - alignment';
+
+export const StoryMenuItemsHorizontalAlignment = () => {
+  const Container = styled.div`
+    & > div {
+      width: 480px;
+      border: 1px dashed lightgrey;
+    }
+  `;
+  return (
+    <>
+      <StorybookHeading>Menu items with different alignment</StorybookHeading>
+      <Container>
+        <div>
+          <StorybookSubHeading>Left</StorybookSubHeading>
+          <Menu align={MenuItemAlign.Start} aria-label={`Menu ${getSSRId()}`}>
+            <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
+          </Menu>
+        </div>
+        <div>
+          <StorybookSubHeading>Center</StorybookSubHeading>
+          <Menu align={MenuItemAlign.Center} aria-label={`Menu ${getSSRId()}`}>
+            <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
+          </Menu>
+        </div>
+        <div>
+          <StorybookSubHeading>Right</StorybookSubHeading>
+          <Menu align={MenuItemAlign.End} aria-label={`Menu ${getSSRId()}`}>
+            <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
+            <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
+          </Menu>
+        </div>
+      </Container>
+    </>
+  );
+};
+StoryMenuItemsHorizontalAlignment.storyName =
+  'menu items - alignment (horizontal)';
 
 export const StoryMenuItemsOverrides = () => {
   const menuItemOverrides = {
