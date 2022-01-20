@@ -277,7 +277,7 @@ stylePresets.drawerPanel = {
 stylePresets.toastNeutral = {
   base: {
     backgroundColor: '{{colors.interfaceNeutral010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
     iconColor: '{{colors.inkInverse}}',
   },
 };
@@ -285,7 +285,7 @@ stylePresets.toastNeutral = {
 stylePresets.toastInformative = {
   base: {
     backgroundColor: '{{colors.interfaceInformative010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
     iconColor: '{{colors.inkInverse}}',
   },
 };
@@ -293,21 +293,21 @@ stylePresets.toastInformative = {
 stylePresets.toastNotice = {
   base: {
     backgroundColor: '{{colors.interfaceNotice010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
     iconColor: '{{colors.inkInverse}}',
   },
 };
 stylePresets.toastPositive = {
   base: {
     backgroundColor: '{{colors.interfacePositive010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
     iconColor: '{{colors.inkInverse}}',
   },
 };
 stylePresets.toastNegative = {
   base: {
     backgroundColor: '{{colors.interfaceNegative010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
     iconColor: '{{colors.inkInverse}}',
   },
 };
