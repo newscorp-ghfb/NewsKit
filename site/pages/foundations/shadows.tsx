@@ -65,12 +65,6 @@ export default (layoutProps: LayoutProps) => (
       },
       introduction: `Shadows provide visual cues about the distance between layers.`,
     }}
-    featureCard={{
-      title: 'Typography',
-      description:
-        'Fonts define the font family, boldness, size, and the style of the text.',
-      href: '/foundations/presets/typography-presets',
-    }}
   >
     <CommonSection
       title="Overview"
