@@ -227,14 +227,14 @@ export default (layoutProps: LayoutProps) => (
           <ReduceMotionMessage />
         </ContentPrimary>
 
-        <ContentSecondary showSeparator>
+        <ContentSecondary>
           <Table
             columns={['Duration', 'Token', 'Token value', 'Common uses']}
             rows={motionDurationRows}
           />
         </ContentSecondary>
 
-        <ContentSecondary>
+        <ContentSecondary showSeparator>
           <InlineMessage role="region" aria-label="Duration">
             These should use the{' '}
             <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration">
