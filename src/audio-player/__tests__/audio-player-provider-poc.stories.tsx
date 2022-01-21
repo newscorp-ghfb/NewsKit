@@ -11,9 +11,12 @@ export default {
 };
 
 export const AudioPlayerProviderPOC = () => (
-  <AudioPOC src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+  <AudioPOC 
+  // @ts-ignore withSeekBar to be implemented potentially
+  withSeekBar
+  src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
     <AudioElementPOC />
-    <PlayerButtonPOC />
+    <PlayerButtonPOC onClick={() => {console.log('extra click function')}} />
     <AudioSeekBarPOC />
   </AudioPOC>
 );

@@ -5,11 +5,10 @@ import {AudioPlayerProvider} from './context';
 
 interface AudioPOCProps {
   children: React.ReactNode;
-
   src: string;
   autoPlay?: boolean;
   live?: boolean;
-}
+} 
 
 export const AudioPOC = ({
   children,
