@@ -9,6 +9,9 @@ import {
 } from './styled';
 import {StructuredListIcon} from './structured-list-icon';
 import {StructuredListCell} from './structured-list';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const getCellAlign = (child: React.ReactNode): StructuredListCellAlign =>
   React.isValidElement(child) && child.props.align;
@@ -16,7 +19,7 @@ const getCellAlign = (child: React.ReactNode): StructuredListCellAlign =>
 const getPullRight = (child: React.ReactNode): boolean =>
   React.isValidElement(child) && child.props.pullRight;
 
-export const StructuredListItem = React.forwardRef<
+const ThemelessStructuredListItem = React.forwardRef<
   HTMLAnchorElement,
   StructuredListItemProps
 >(
@@ -152,3 +155,8 @@ export const StructuredListItem = React.forwardRef<
     );
   },
 );
+
+export const StructuredListItem = withOwnTheme(ThemelessStructuredListItem)({
+  defaults,
+  stylePresets,
+});
