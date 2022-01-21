@@ -216,7 +216,7 @@ const theme = createTheme({
 
         <ContentSecondary
           showSeparator
-          headline="Example"
+          headline="Code example"
           description="This example below shows different typography presets being used at different breakpoint."
         >
           <Code>{`

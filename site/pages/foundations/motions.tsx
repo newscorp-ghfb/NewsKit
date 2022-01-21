@@ -174,18 +174,21 @@ export default (layoutProps: LayoutProps) => (
           id="overview"
           toc="Overview"
           headline="Overview"
-          description="Motion foundations are used in animations and transitions."
-        >
-          <InlineMessage role="region" aria-label="Overview">
-            <Link
-              href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/3446341702"
-              target="_blank"
-            >
-              Learn more about how Motion foundations are applied to animations
-              and transitions via Motion Presets.
-            </Link>
-          </InlineMessage>
-        </ContentPrimary>
+          description={
+            <>
+              Motion foundations are used in animations and transitions.
+              <br />
+              <br />
+              <Link
+                href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/3446341702"
+                target="_blank"
+              >
+                Learn more about how Motion foundations are applied to
+                animations and transitions via Motion Presets.
+              </Link>
+            </>
+          }
+        />
 
         <ContentSecondary showSeparator>
           <InlineMessage

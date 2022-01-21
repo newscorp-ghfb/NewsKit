@@ -465,7 +465,7 @@ export default (layoutProps: LayoutProps) => (
           }
         />
 
-        <ContentSecondary headline="Example code" showSeparator>
+        <ContentSecondary headline="Code example" showSeparator>
           <Code>
             {`backgroundColor: '{{colors.inkBase}}';
 backgroundColor: '{{colors.inkNegative}}';

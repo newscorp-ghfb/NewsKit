@@ -138,7 +138,7 @@ export default (layoutProps: LayoutProps) => (
         />
 
         <ContentSecondary
-          headline="For example"
+          headline="For example:"
           description={<TokenStyle />}
           showSeparator
         />

@@ -549,7 +549,7 @@ export default (layoutProps: LayoutProps) => (
         />
 
         <ContentSecondary
-          headline="Example code"
+          headline="Code example"
           description={
             <>
               This example demonstrates declaring style presets for the Button
