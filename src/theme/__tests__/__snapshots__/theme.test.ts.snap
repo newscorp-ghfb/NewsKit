@@ -1972,7 +1972,6 @@ Object {
       "icon": Object {
         "spaceInline": "space030",
       },
-      "maxWidth": "1920px",
       "minHeight": "sizing090",
       "spaceInset": "spaceInset045",
       "stylePreset": "bannerInformative",
@@ -1999,7 +1998,6 @@ Object {
       "icon": Object {
         "spaceInline": "space030",
       },
-      "maxWidth": "1920px",
       "minHeight": "sizing090",
       "spaceInset": "spaceInset045",
       "stylePreset": "bannerInformative",
