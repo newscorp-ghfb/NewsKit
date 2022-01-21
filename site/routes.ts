@@ -178,20 +178,25 @@ export default [
             title: 'Space Presets',
             page: true,
             id: '/foundations/presets/space-presets',
+            description:
+              'Space helps to guide the user and provide a pleasant and consistent experience when using a product.',
           },
           {
             title: 'Style Presets',
             page: true,
             id: '/foundations/presets/style-presets',
+            description:
+              'A collection of foundational design tokens combined into a preset to define reusable styles for interface elements and their interactive states.',
           },
           {
             title: 'Typography Presets',
             page: true,
             id: '/foundations/presets/typography-presets',
+            description:
+              'A collection of foundational font design tokens combined into a preset to define reusable typography styles for specific text elements.',
           },
         ],
       },
-
       {
         title: 'Theming',
         id: '/foundations/theming',
@@ -200,6 +205,8 @@ export default [
             title: 'Overview',
             page: true,
             id: '/foundations/theming/overview',
+            description:
+              'A NewsKit theme is built up from a layer of foundations - such as colours, fonts and sizing scales.',
           },
           {
             title: 'Creating a theme',
