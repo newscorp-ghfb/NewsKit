@@ -10,7 +10,12 @@ import Document, {
 } from 'next/document';
 import {Consent, Global, css, Tealium} from 'newskit';
 import Helmet from 'react-helmet';
+import {CacheProvider} from '@emotion/react';
+import createEmotionServer from '@emotion/server/create-instance';
+import {myCache, cacheKey} from '../create-emotion-cache';
 import {HTMLMeta} from '../components/html-meta';
+
+const {extractCritical} = createEmotionServer(myCache);
 
 interface Props {
   production: boolean;
@@ -21,10 +26,33 @@ interface Props {
 const Base = () => <base href={process.env.BASE_URI ?? '/'} />;
 
 export default class MyDocument extends Document<Props> {
-  static async getStaticProps(ctx: DocumentContext) {
-    const {html} = await ctx.renderPage();
+  static async getInitialProps(ctx: DocumentContext) {
+    const renderPage = () =>
+      ctx.renderPage({
+        enhanceApp: App => props => (
+          <CacheProvider value={myCache}>
+            <App {...props} />
+          </CacheProvider>
+        ),
+      });
+
+    const {html} = await renderPage();
+
+    const {css: criticalCss, ids} = extractCritical(html);
+
+    const initialProps = await Document.getInitialProps({
+      ...ctx,
+      renderPage,
+    });
+
     return {
+      ...initialProps,
       html,
+      styles: (
+        <style data-emotion={`${cacheKey} ${ids.join(' ')}`}>
+          {criticalCss}
+        </style>
+      ),
       // Are we in local dev mode or "built and served"?
       production: process.env.NODE_ENV === 'production',
       // Are we production "newskit.co.uk" or not?

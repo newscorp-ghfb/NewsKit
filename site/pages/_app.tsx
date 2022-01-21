@@ -7,10 +7,12 @@ import {
   UncompiledTheme,
 } from 'newskit';
 import App, {AppContext} from 'next/app';
+import {CacheProvider} from '@emotion/react';
 import {HeadNextSeo} from '../components/head-next-seo/head-next-seo';
 import {PageLoadInstrumentation} from '../components/page-load-instrumentation';
 import {ThemeMode} from '../context';
 import {docsThemeLight, docsThemeDark} from '../theme/doc-theme';
+import {myCache} from '../create-emotion-cache';
 
 const DARK_MEDIA_QUERY = '(prefers-color-scheme: dark)';
 const STORAGE_KEY_NAME = 'newskit-docs-theme';
@@ -125,8 +127,15 @@ export default class MyApp extends App<Props, State> {
       instrumentationHandlers.createTealiumHandler(),
     ];
 
+    const ClientOnlyCacheProvider =
+      typeof window !== 'undefined'
+        ? (props: {children: React.ReactNode}) => (
+            <CacheProvider value={myCache} {...props} />
+          )
+        : React.Fragment;
+
     return (
-      <>
+      <ClientOnlyCacheProvider>
         <HeadNextSeo
           description="NewsKit design system - components and guidelines to 
           help increase the speed of creation and innovation in digital teams."
@@ -148,7 +157,7 @@ export default class MyApp extends App<Props, State> {
             </ThemeMode.Provider>
           </ThemeProvider>
         </InstrumentationProvider>
-      </>
+      </ClientOnlyCacheProvider>
     );
   }
 }
