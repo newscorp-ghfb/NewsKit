@@ -247,60 +247,6 @@ Object {
         "typographyPreset": "utilityBody010",
       },
     },
-    "banner": Object {
-      "horizontal": Object {
-        "actions": Object {
-          "closeButton": Object {
-            "stylePreset": "iconButtonMinimalInverse",
-          },
-          "spaceInline": "space040",
-        },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkInverse",
-            "typographyPreset": "utilityBody020",
-          },
-          "spaceInline": "space030",
-          "title": Object {
-            "spaceStack": "space030",
-            "stylePreset": "inkInverse",
-            "typographyPreset": "utilityHeading010",
-          },
-        },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
-      },
-      "vertical": Object {
-        "actions": Object {
-          "closeButton": Object {
-            "stylePreset": "buttonOutlinedInverse",
-          },
-          "spaceInline": "space050",
-        },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkInverse",
-            "typographyPreset": "utilityBody020",
-          },
-          "spaceInline": "space050",
-          "title": Object {
-            "spaceStack": "space030",
-            "stylePreset": "inkInverse",
-            "typographyPreset": "utilityHeading010",
-          },
-        },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
-      },
-    },
     "byline": Object {
       "divider": Object {
         "spaceInline": "space020",
@@ -397,9 +343,6 @@ Object {
         "typographyPreset": "utilityMeta020",
       },
       "typographyPreset": "utilityMeta020",
-    },
-    "divider": Object {
-      "stylePreset": "divider",
     },
     "drawer": Object {
       "closeButton": Object {
@@ -810,20 +753,6 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
-    "structuredList": Object {
-      "divider": Object {
-        "stylePreset": "divider",
-      },
-    },
-    "structuredListItem": Object {
-      "icon": Object {
-        "size": "iconSize010",
-        "stylePreset": "inkContrast",
-      },
-      "minHeight": "sizing100",
-      "spaceInset": "spaceInsetStretch040",
-      "stylePreset": "structuredListItem",
-    },
     "textField": Object {
       "large": Object {
         "endEnhancer": Object {
@@ -873,37 +802,6 @@ Object {
         "typographyPreset": "utilityBody020",
         "width": "100%",
       },
-    },
-    "toast": Object {
-      "content": Object {
-        "message": Object {
-          "stylePreset": "inkInverse",
-          "typographyPreset": "utilityBody020",
-        },
-        "title": Object {
-          "spaceStack": "space010",
-          "stylePreset": "inkInverse",
-          "typographyPreset": "utilityHeading010",
-        },
-      },
-      "contentAndActions": Object {
-        "spaceInline": "space030",
-      },
-      "divider": Object {
-        "stylePreset": "dividerInverse",
-      },
-      "icon": Object {
-        "spaceInline": "space030",
-      },
-      "maxWidth": Object {
-        "lg": "38%",
-        "md": "45%",
-        "sm": "60%",
-        "xl": "31%",
-        "xs": "90%",
-      },
-      "spaceInset": "spaceInset030",
-      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -1101,24 +999,6 @@ Object {
         "color": "{{colors.inkSubtle}}",
       },
     },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
     "checkboxFeedback": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -1236,20 +1116,6 @@ Object {
       },
       "disabled": Object {
         "color": "{{colors.inkNonEssential}}",
-      },
-    },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
-    "dividerInverse": Object {
-      "base": Object {
-        "borderColor": "{{colors.whiteTint050}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "drawerPanel": Object {
@@ -1450,52 +1316,6 @@ Object {
         "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "boxShadow": "{{shadows.shadow050}}",
-      },
-    },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
   },
@@ -2129,6 +1949,62 @@ Object {
       },
     },
   },
+  "banner": Object {
+    "horizontal": Object {
+      "actions": Object {
+        "closeButton": Object {
+          "stylePreset": "iconButtonMinimalInverse",
+        },
+        "spaceInline": "space040",
+      },
+      "content": Object {
+        "message": Object {
+          "stylePreset": "inkInverse",
+          "typographyPreset": "utilityBody020",
+        },
+        "spaceInline": "space030",
+        "title": Object {
+          "spaceStack": "space030",
+          "stylePreset": "inkInverse",
+          "typographyPreset": "utilityHeading010",
+        },
+      },
+      "icon": Object {
+        "spaceInline": "space030",
+      },
+      "maxWidth": "1920px",
+      "minHeight": "sizing090",
+      "spaceInset": "spaceInset045",
+      "stylePreset": "bannerInformative",
+    },
+    "vertical": Object {
+      "actions": Object {
+        "closeButton": Object {
+          "stylePreset": "buttonOutlinedInverse",
+        },
+        "spaceInline": "space050",
+      },
+      "content": Object {
+        "message": Object {
+          "stylePreset": "inkInverse",
+          "typographyPreset": "utilityBody020",
+        },
+        "spaceInline": "space050",
+        "title": Object {
+          "spaceStack": "space030",
+          "stylePreset": "inkInverse",
+          "typographyPreset": "utilityHeading010",
+        },
+      },
+      "icon": Object {
+        "spaceInline": "space030",
+      },
+      "maxWidth": "1920px",
+      "minHeight": "sizing090",
+      "spaceInset": "spaceInset045",
+      "stylePreset": "bannerInformative",
+    },
+  },
   "button": Object {
     "large": Object {
       "iconSize": "iconSize030",
@@ -2251,6 +2127,9 @@ Object {
         "xs": "spaceInset040",
       },
     },
+  },
+  "divider": Object {
+    "stylePreset": "divider",
   },
   "flag": Object {
     "large": Object {
@@ -2434,6 +2313,20 @@ Object {
       },
     },
   },
+  "structuredList": Object {
+    "divider": Object {
+      "stylePreset": "divider",
+    },
+  },
+  "structuredListItem": Object {
+    "icon": Object {
+      "size": "iconSize010",
+      "stylePreset": "inkContrast",
+    },
+    "minHeight": "sizing100",
+    "spaceInset": "spaceInsetStretch040",
+    "stylePreset": "structuredListItem",
+  },
   "tab": Object {
     "large": Object {
       "iconSize": "iconSize030",
@@ -2603,6 +2496,37 @@ Object {
       "xs": "spaceInsetSquish030",
     },
     "stylePreset": "titleBar",
+  },
+  "toast": Object {
+    "content": Object {
+      "message": Object {
+        "stylePreset": "inkInverse",
+        "typographyPreset": "utilityBody020",
+      },
+      "title": Object {
+        "spaceStack": "space010",
+        "stylePreset": "inkInverse",
+        "typographyPreset": "utilityHeading010",
+      },
+    },
+    "contentAndActions": Object {
+      "spaceInline": "space030",
+    },
+    "divider": Object {
+      "stylePreset": "dividerInverse",
+    },
+    "icon": Object {
+      "spaceInline": "space030",
+    },
+    "maxWidth": Object {
+      "lg": "38%",
+      "md": "45%",
+      "sm": "60%",
+      "xl": "31%",
+      "xs": "90%",
+    },
+    "spaceInset": "spaceInset030",
+    "stylePreset": "toastNeutral",
   },
   "videoPlayer": Object {
     "controlBar": Object {

@@ -237,60 +237,6 @@ Object {
         "typographyPreset": "utilityBody010",
       },
     },
-    "banner": Object {
-      "horizontal": Object {
-        "actions": Object {
-          "closeButton": Object {
-            "stylePreset": "iconButtonMinimalInverse",
-          },
-          "spaceInline": "space040",
-        },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkInverse",
-            "typographyPreset": "utilityBody020",
-          },
-          "spaceInline": "space030",
-          "title": Object {
-            "spaceStack": "space030",
-            "stylePreset": "inkInverse",
-            "typographyPreset": "utilityHeading010",
-          },
-        },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
-      },
-      "vertical": Object {
-        "actions": Object {
-          "closeButton": Object {
-            "stylePreset": "buttonOutlinedInverse",
-          },
-          "spaceInline": "space050",
-        },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkInverse",
-            "typographyPreset": "utilityBody020",
-          },
-          "spaceInline": "space050",
-          "title": Object {
-            "spaceStack": "space030",
-            "stylePreset": "inkInverse",
-            "typographyPreset": "utilityHeading010",
-          },
-        },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
-      },
-    },
     "byline": Object {
       "divider": Object {
         "spaceInline": "space020",
@@ -387,9 +333,6 @@ Object {
         "typographyPreset": "utilityMeta020",
       },
       "typographyPreset": "utilityMeta020",
-    },
-    "divider": Object {
-      "stylePreset": "divider",
     },
     "drawer": Object {
       "closeButton": Object {
@@ -846,20 +789,6 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
-    "structuredList": Object {
-      "divider": Object {
-        "stylePreset": "divider",
-      },
-    },
-    "structuredListItem": Object {
-      "icon": Object {
-        "size": "iconSize010",
-        "stylePreset": "inkContrast",
-      },
-      "minHeight": "sizing100",
-      "spaceInset": "spaceInsetStretch040",
-      "stylePreset": "structuredListItem",
-    },
     "textField": Object {
       "large": Object {
         "endEnhancer": Object {
@@ -909,37 +838,6 @@ Object {
         "typographyPreset": "utilityBody020",
         "width": "100%",
       },
-    },
-    "toast": Object {
-      "content": Object {
-        "message": Object {
-          "stylePreset": "inkInverse",
-          "typographyPreset": "utilityBody020",
-        },
-        "title": Object {
-          "spaceStack": "space010",
-          "stylePreset": "inkInverse",
-          "typographyPreset": "utilityHeading010",
-        },
-      },
-      "contentAndActions": Object {
-        "spaceInline": "space030",
-      },
-      "divider": Object {
-        "stylePreset": "dividerInverse",
-      },
-      "icon": Object {
-        "spaceInline": "space030",
-      },
-      "maxWidth": Object {
-        "lg": "38%",
-        "md": "45%",
-        "sm": "60%",
-        "xl": "31%",
-        "xs": "90%",
-      },
-      "spaceInset": "spaceInset030",
-      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -1135,24 +1033,6 @@ Object {
         "color": "#535353",
       },
     },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "#05717D",
-        "iconColor": "#FFFFFF",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "#D20600",
-        "iconColor": "#FFFFFF",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "#535353",
-        "iconColor": "#FFFFFF",
-      },
-    },
     "checkboxFeedback": Object {
       "base": Object {
         "backgroundColor": "transparent",
@@ -1270,20 +1150,6 @@ Object {
       },
       "disabled": Object {
         "color": "#C0C0C0",
-      },
-    },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "#DEDEDE",
-        "borderStyle": "solid",
-        "borderWidth": "1px",
-      },
-    },
-    "dividerInverse": Object {
-      "base": Object {
-        "borderColor": "rgba(255,255,255,0.5)",
-        "borderStyle": "solid",
-        "borderWidth": "1px",
       },
     },
     "drawerPanel": Object {
@@ -1550,52 +1416,6 @@ Object {
         "backgroundColor": "#FFFFFF",
         "borderRadius": "4px",
         "boxShadow": "0 16px 24px 0 rgba(10,10,10,0.08)",
-      },
-    },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "#F4F4F4",
-      },
-      "disabled": Object {
-        "backgroundColor": "transparent",
-      },
-      "hover": Object {
-        "backgroundColor": "#FAFAFA",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "#05717D",
-        "borderRadius": "8px",
-        "iconColor": "#FFFFFF",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "#D20600",
-        "borderRadius": "8px",
-        "iconColor": "#FFFFFF",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "#535353",
-        "borderRadius": "8px",
-        "iconColor": "#FFFFFF",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "#535353",
-        "borderRadius": "8px",
-        "iconColor": "#FFFFFF",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "#0A782A",
-        "borderRadius": "8px",
-        "iconColor": "#FFFFFF",
       },
     },
     "uppercaseInkBase": Object {

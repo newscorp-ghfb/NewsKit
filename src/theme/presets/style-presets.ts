@@ -3,29 +3,6 @@ import {StylePreset} from './types';
 export const stylePresets: Record<string, StylePreset> = {};
 
 //
-// Banner
-//
-
-stylePresets.bannerInformative = {
-  base: {
-    backgroundColor: '{{colors.interfaceInformative010}}',
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-stylePresets.bannerNotice = {
-  base: {
-    backgroundColor: '{{colors.interfaceNotice010}}',
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-stylePresets.bannerNegative = {
-  base: {
-    backgroundColor: '{{colors.interfaceNegative010}}',
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-
-//
 // Indeterminate Progress Indicator
 //
 
@@ -216,26 +193,6 @@ stylePresets.selectOptionItemIcon = {
 };
 
 //
-// Divider
-//
-
-stylePresets.divider = {
-  base: {
-    borderStyle: 'solid',
-    borderColor: '{{colors.interface040}}',
-    borderWidth: '{{borders.borderWidthDefault}}',
-  },
-};
-
-stylePresets.dividerInverse = {
-  base: {
-    borderStyle: 'solid',
-    borderColor: '{{colors.whiteTint050}}',
-    borderWidth: '{{borders.borderWidthDefault}}',
-  },
-};
-
-//
 // Overlay
 //
 
@@ -269,59 +226,6 @@ stylePresets.drawerPanel = {
     borderRadius: '{{borders.borderRadiusSharp}}',
     backgroundColor: '{{colors.interface010}}',
     boxShadow: '{{shadows.shadow060}}',
-  },
-};
-
-// Toast
-
-stylePresets.toastNeutral = {
-  base: {
-    backgroundColor: '{{colors.interfaceNeutral010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-
-stylePresets.toastInformative = {
-  base: {
-    backgroundColor: '{{colors.interfaceInformative010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-
-stylePresets.toastNotice = {
-  base: {
-    backgroundColor: '{{colors.interfaceNotice010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-stylePresets.toastPositive = {
-  base: {
-    backgroundColor: '{{colors.interfacePositive010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-stylePresets.toastNegative = {
-  base: {
-    backgroundColor: '{{colors.interfaceNegative010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-
-// StructuredList
-stylePresets.structuredListItem = {
-  hover: {
-    backgroundColor: '{{colors.interactiveSecondary010}}',
-  },
-  active: {
-    backgroundColor: '{{colors.interactiveSecondary020}}',
-  },
-  disabled: {
-    backgroundColor: '{{colors.transparent}}',
   },
 };
 
