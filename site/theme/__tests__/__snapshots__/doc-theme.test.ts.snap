@@ -1791,8 +1791,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -4732,8 +4732,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -7673,8 +7673,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -10614,8 +10614,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -13555,8 +13555,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -16496,8 +16496,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -19437,8 +19437,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -22378,8 +22378,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
