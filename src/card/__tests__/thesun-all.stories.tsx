@@ -578,7 +578,7 @@ export const StoryTheSunLayouts = () => (
 export const GridStory = () => (
   <>
     <GridLayout
-      columns={{md: '1fr 1fr', lg: '1fr 1fr 1fr 1fr'}}
+      columns={{md: '1fr 1fr', lg: '1fr {{sizing040}} 1fr 1fr'}}
       rowGap={{xs: 'space010', md: 'space040'}}
       columnGap={{md: 'space030', lg: 'space050'}}
     >
@@ -694,7 +694,7 @@ export const MinMaxRepeaat = () => {
     <>
       <h1>MinMan and Repeat</h1>
       <GridLayout
-        columns="repeat(4, minmax(100px, 400px))"
+        columns="repeat(4, minmax(100px, 200px))"
         columnGap="20px"
         rowGap="20px"
       >
@@ -791,3 +791,52 @@ export const GridComparison = () => (
     </GridLayout>
   </>
 );
+
+export const TheTimesStory = () => {
+  const md = `
+    "leftTop      div1 right"
+    "leftDiv      div1 div2"
+    "leftBottom   div1 middle"
+  `;
+
+  const lg = `
+    "leftTop      div1  middle div2 right"
+    "leftDiv      div1  middle div2 right"
+    "leftBottom   div1  middle div2 right"
+  `;
+
+  return (
+    <GridLayout
+      columns="1fr auto 200px auto 1fr"
+      columnGap="space020"
+      rowGap="space020"
+      areas={{md, lg}}
+    >
+      {Areas => (
+        <>
+          <Areas.LeftTop>
+            <GridCard />
+          </Areas.LeftTop>
+          <Areas.LeftDiv>
+            <Divider />
+          </Areas.LeftDiv>
+          <Areas.LeftBottom>
+            <GridCard />
+          </Areas.LeftBottom>
+          <Areas.Div1>
+            <Divider vertical />
+          </Areas.Div1>
+          <Areas.Middle>
+            <GridCard />
+          </Areas.Middle>
+          <Areas.Div2>
+            <Divider vertical={{md: false, lg: true}} />
+          </Areas.Div2>
+          <Areas.Right>
+            <GridCard />
+          </Areas.Right>
+        </>
+      )}
+    </GridLayout>
+  );
+};
