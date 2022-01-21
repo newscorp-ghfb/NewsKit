@@ -1,4 +1,5 @@
 import React from 'react';
+import {Button, IconFilledGitHub} from 'newskit';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
@@ -8,6 +9,8 @@ import {
 } from '../../../components/illustrations/illustration-loader';
 import {Link} from '../../../components/link';
 import {MediaItem, MediaList} from '../../../components/media-list';
+import {IconFilledNpm} from '../../../components/icons';
+import {Table} from '../../../components/table';
 import {
   ContentSection,
   ContentPrimary,
@@ -25,9 +28,7 @@ const {title, description} = featureCardoverrides;
 
 const PRINCIPLE_CARDS = [
   {
-    media: () => (
-      <Illustration path="guides/design-overview/design-made-easy" />
-    ),
+    media: () => <Illustration path="guides/engineering-overview/accessible" />,
     title: 'Accessible',
     description: (
       <>
@@ -58,9 +59,7 @@ const PRINCIPLE_CARDS = [
     },
   },
   {
-    media: () => (
-      <Illustration path="guides/design-overview/complete-flexibility" />
-    ),
+    media: () => <Illustration path="guides/engineering-overview/adaptive" />,
     title: 'Adaptive',
     description: (
       <>
@@ -82,9 +81,7 @@ const PRINCIPLE_CARDS = [
     },
   },
   {
-    media: () => (
-      <Illustration path="guides/design-overview/complete-flexibility" />
-    ),
+    media: () => <Illustration path="guides/engineering-overview/productive" />,
     title: 'Productive',
     description:
       'Carefully crafted components ensure that teams using NewsKit can rapidly iterate on product requirements through re-use of common functionality. This promotes both consistency and common language across product development teams.',
@@ -108,7 +105,7 @@ export default (layoutProps: LayoutProps) => (
       type: 'Guides',
       name: 'Engineering overview',
       hero: {
-        illustration: 'guides/design-overview/hero',
+        illustration: 'guides/engineering-overview/hero',
       },
       introduction: `The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.`,
     }}
@@ -171,7 +168,7 @@ export default (layoutProps: LayoutProps) => (
                   </>
                 ),
                 media: getIllustrationComponent(
-                  'guides/design-overview/theme-library',
+                  'guides/engineering-overview/react-web-components',
                 ),
               },
               {
@@ -191,7 +188,7 @@ export default (layoutProps: LayoutProps) => (
                   </>
                 ),
                 media: getIllustrationComponent(
-                  'guides/design-overview/web-components-library',
+                  'guides/engineering-overview/advanced-theming-system',
                 ),
               },
               {
@@ -209,7 +206,7 @@ export default (layoutProps: LayoutProps) => (
                   </>
                 ),
                 media: getIllustrationComponent(
-                  'guides/design-overview/icon-library',
+                  'guides/engineering-overview/utility-functions',
                 ),
               },
               {
@@ -217,8 +214,30 @@ export default (layoutProps: LayoutProps) => (
                 description:
                   'Comprehensive online documentation and guidelines.',
                 media: getIllustrationComponent(
-                  'guides/design-overview/utilities-library',
+                  'guides/engineering-overview/guidance',
                 ),
+              },
+            ]}
+          />
+        </ContentPrimary>
+      </ContentSection>
+
+      <ContentSection sectionName="source code">
+        <ContentPrimary
+          id="browsersupport"
+          toc="Browser support"
+          headline="Browser support"
+          description="NewsKit supports the following modern browsers:"
+          showSeparator
+        >
+          <Table
+            columns={['Chrome', 'Safari', 'Firefox', 'Edge']}
+            rows={[
+              {
+                chrome: 'last 2 versions',
+                safari: 'last 2 versions',
+                firefox: 'last 2 versions',
+                edge: 'last 2 versions',
               },
             ]}
           />
@@ -233,17 +252,52 @@ export default (layoutProps: LayoutProps) => (
           description="Below is an example of how it is recommended to link Figma libraries to get the best out of the NewsKit Design System. This ensures that whenever the NewsKit Design System is updated, designs utilising this can automatically receive updates and enables contributing to the NewsKit Design System."
           showSeparator
         >
-          <Illustration path="guides/design-overview/example-architecture" />
+          <Illustration path="guides/engineering-overview/example-architecture-engineering" />
+        </ContentPrimary>
+      </ContentSection>
+
+      <ContentSection sectionName="source code">
+        <ContentPrimary
+          id="sourcecode"
+          toc="Source Code"
+          headline="Source Code"
+          description="Below are the links to the NewsKit source code:"
+          showSeparator
+        >
+          <Button
+            size="small"
+            overrides={{
+              typographyPreset: 'utilityButton010',
+              stylePreset: 'buttonOutlinedSecondary',
+            }}
+            href="https://github.com/newscorp-ghfb/newskit"
+            target="_blank"
+          >
+            <IconFilledGitHub /> View Github repo
+          </Button>
+          &nbsp;&nbsp;&nbsp;
+          <Button
+            size="small"
+            overrides={{
+              typographyPreset: 'utilityButton010',
+              stylePreset: 'buttonOutlinedSecondary',
+            }}
+            href="https://www.npmjs.com/package/newskit"
+            target="_blank"
+          >
+            <IconFilledNpm /> View npm package
+          </Button>
         </ContentPrimary>
       </ContentSection>
     </ComponentPageCell>
-    {/* ToDo: Once design quickstart guide page is ready, need to enable this section.
+
+    {/* ToDo: Once engineering quickstart guide and instrumentation setup page is ready, need to enable this section.
     <RelatedComponentsSection
       title="What’s next?"
       id="whats-next"
       toc="What’s next?"
       introduction="Want to use NewsKit for your next product? Follow the next steps belows to learn more:"
-      related={['Design quickstart guide']}
+      related={['Engineering quickstart guide','Instrumentation Setup']}
     /> */}
   </GuidePageTemplate>
 );

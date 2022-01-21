@@ -6,3 +6,4 @@ export * from './icon-filled-light';
 export * from './icon-filled-circle';
 export * from './icon-filled-aa';
 export * from './icon-filled-aaa';
+export * from './icon-filled-npm';
