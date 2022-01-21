@@ -83,6 +83,7 @@ export default (layoutProps: LayoutProps) => (
             rows={borderRows('borderRadius')}
           />
         </ContentPrimary>
+
         <ExampleSection section="borderRadius" showSeparator />
       </ContentSection>
 

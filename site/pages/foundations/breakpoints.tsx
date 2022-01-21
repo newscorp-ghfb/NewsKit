@@ -108,22 +108,20 @@ export default (layoutProps: LayoutProps) => (
 
         <ContentSecondary description="Default breakpoints can be overriden in the theme.">
           <Code>
-            {`
-        import {createTheme} from 'newskit'; 
-        
-        const theme = createTheme({ 
-            name: 'theme-with-custom-breakpoints', 
-            overrides: { 
-                breakpoints: { 
-                    xs: 0, // 0-359 
-                    sm: 360, 
-                    md: 540, 
-                    lg: 720, 
-                    xl: 1080, 
-                } 
-            }, 
-        });
-        `}
+            {`import {createTheme} from 'newskit'; 
+
+const theme = createTheme({ 
+    name: 'theme-with-custom-breakpoints', 
+    overrides: { 
+        breakpoints: { 
+            xs: 0, // 0-359 
+            sm: 360, 
+            md: 540, 
+            lg: 720, 
+            xl: 1080, 
+        } 
+    }, 
+});`}
           </Code>
         </ContentSecondary>
 
