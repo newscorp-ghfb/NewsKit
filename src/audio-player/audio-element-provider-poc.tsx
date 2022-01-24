@@ -5,7 +5,7 @@ import {AudioPlayerContext} from './context';
 export const AudioElementPOC = React.forwardRef((props, ref) => {
   
   const {src, audioRef, audioEvents} = useContext(AudioPlayerContext);
-  const {onCanPlay, onDurationChange, onTimeUpdate} = audioEvents!; // TODO: find a better TS type
+  const {onCanPlay, onDurationChange, onTimeUpdate} = audioEvents!;
 
   return (
     <audio
