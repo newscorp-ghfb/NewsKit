@@ -3,7 +3,7 @@ import {TextFieldSize} from '../text-field';
 import {StyledAssistiveText} from './styled';
 import {WithEnhancers} from '../with-enhancers/with-enhancers';
 import {AssistiveTextProps} from './types';
-import defaults from './defaults';
+import defaults from './assistive-text-defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 

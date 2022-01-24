@@ -18,6 +18,9 @@ import {Block} from '../block';
 import {FormInputState} from './types';
 import {SelectProps, Select} from '../select';
 import {FormInputContext} from './context';
+import {withOwnTheme} from '../utils/with-own-theme';
+import textFieldDefaults from '../text-field/text-field-defaults';
+import assistiveTextDefaults from '../assistive-text/assistive-text-defaults';
 
 export type FormInputProps = {
   state?: FormInputState;
@@ -28,7 +31,7 @@ export type FormInputProps = {
 
 const useFormFieldContext = () => useContext(FormInputContext);
 
-export const FormInput = ({
+const ThemelessFormInput = ({
   name,
   rules,
   state: stateProp,
@@ -242,4 +245,11 @@ export const FormInputCheckbox = React.forwardRef<
       {...props}
     />
   );
+});
+
+export const FormInput = withOwnTheme(ThemelessFormInput)({
+  defaults: {
+    ...textFieldDefaults,
+    ...assistiveTextDefaults,
+  },
 });
