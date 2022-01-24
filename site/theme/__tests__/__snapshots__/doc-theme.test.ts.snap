@@ -851,6 +851,20 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
+    "structuredList": Object {
+      "divider": Object {
+        "stylePreset": "divider",
+      },
+    },
+    "structuredListItem": Object {
+      "icon": Object {
+        "size": "iconSize010",
+        "stylePreset": "inkContrast",
+      },
+      "minHeight": "sizing100",
+      "spaceInset": "spaceInsetStretch040",
+      "stylePreset": "structuredListItem",
+    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -863,10 +877,22 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
+          "typographyPreset": "utilityBody020",
         },
         "title": Object {
+          "spaceStack": "space010",
           "stylePreset": "toastText",
+          "typographyPreset": "utilityHeading010",
         },
+      },
+      "contentAndActions": Object {
+        "spaceInline": "space030",
+      },
+      "divider": Object {
+        "stylePreset": "dividerInverse",
+      },
+      "icon": Object {
+        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -875,6 +901,8 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
+      "spaceInset": "spaceInset030",
+      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -3455,6 +3483,20 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
+    "structuredList": Object {
+      "divider": Object {
+        "stylePreset": "divider",
+      },
+    },
+    "structuredListItem": Object {
+      "icon": Object {
+        "size": "iconSize010",
+        "stylePreset": "inkContrast",
+      },
+      "minHeight": "sizing100",
+      "spaceInset": "spaceInsetStretch040",
+      "stylePreset": "structuredListItem",
+    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -3467,10 +3509,22 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
+          "typographyPreset": "utilityBody020",
         },
         "title": Object {
+          "spaceStack": "space010",
           "stylePreset": "toastText",
+          "typographyPreset": "utilityHeading010",
         },
+      },
+      "contentAndActions": Object {
+        "spaceInline": "space030",
+      },
+      "divider": Object {
+        "stylePreset": "dividerInverse",
+      },
+      "icon": Object {
+        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -3479,6 +3533,8 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
+      "spaceInset": "spaceInset030",
+      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -6059,6 +6115,20 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
+    "structuredList": Object {
+      "divider": Object {
+        "stylePreset": "divider",
+      },
+    },
+    "structuredListItem": Object {
+      "icon": Object {
+        "size": "iconSize010",
+        "stylePreset": "inkContrast",
+      },
+      "minHeight": "sizing100",
+      "spaceInset": "spaceInsetStretch040",
+      "stylePreset": "structuredListItem",
+    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -6071,10 +6141,22 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
+          "typographyPreset": "utilityBody020",
         },
         "title": Object {
+          "spaceStack": "space010",
           "stylePreset": "toastText",
+          "typographyPreset": "utilityHeading010",
         },
+      },
+      "contentAndActions": Object {
+        "spaceInline": "space030",
+      },
+      "divider": Object {
+        "stylePreset": "dividerInverse",
+      },
+      "icon": Object {
+        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -6083,6 +6165,8 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
+      "spaceInset": "spaceInset030",
+      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -8663,6 +8747,20 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
+    "structuredList": Object {
+      "divider": Object {
+        "stylePreset": "divider",
+      },
+    },
+    "structuredListItem": Object {
+      "icon": Object {
+        "size": "iconSize010",
+        "stylePreset": "inkContrast",
+      },
+      "minHeight": "sizing100",
+      "spaceInset": "spaceInsetStretch040",
+      "stylePreset": "structuredListItem",
+    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -8675,10 +8773,22 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
+          "typographyPreset": "utilityBody020",
         },
         "title": Object {
+          "spaceStack": "space010",
           "stylePreset": "toastText",
+          "typographyPreset": "utilityHeading010",
         },
+      },
+      "contentAndActions": Object {
+        "spaceInline": "space030",
+      },
+      "divider": Object {
+        "stylePreset": "dividerInverse",
+      },
+      "icon": Object {
+        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -8687,6 +8797,8 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
+      "spaceInset": "spaceInset030",
+      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -11267,6 +11379,20 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
+    "structuredList": Object {
+      "divider": Object {
+        "stylePreset": "divider",
+      },
+    },
+    "structuredListItem": Object {
+      "icon": Object {
+        "size": "iconSize010",
+        "stylePreset": "inkContrast",
+      },
+      "minHeight": "sizing100",
+      "spaceInset": "spaceInsetStretch040",
+      "stylePreset": "structuredListItem",
+    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -11279,10 +11405,22 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
+          "typographyPreset": "utilityBody020",
         },
         "title": Object {
+          "spaceStack": "space010",
           "stylePreset": "toastText",
+          "typographyPreset": "utilityHeading010",
         },
+      },
+      "contentAndActions": Object {
+        "spaceInline": "space030",
+      },
+      "divider": Object {
+        "stylePreset": "dividerInverse",
+      },
+      "icon": Object {
+        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -11291,6 +11429,8 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
+      "spaceInset": "spaceInset030",
+      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -13871,6 +14011,20 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
+    "structuredList": Object {
+      "divider": Object {
+        "stylePreset": "divider",
+      },
+    },
+    "structuredListItem": Object {
+      "icon": Object {
+        "size": "iconSize010",
+        "stylePreset": "inkContrast",
+      },
+      "minHeight": "sizing100",
+      "spaceInset": "spaceInsetStretch040",
+      "stylePreset": "structuredListItem",
+    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -13883,10 +14037,22 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
+          "typographyPreset": "utilityBody020",
         },
         "title": Object {
+          "spaceStack": "space010",
           "stylePreset": "toastText",
+          "typographyPreset": "utilityHeading010",
         },
+      },
+      "contentAndActions": Object {
+        "spaceInline": "space030",
+      },
+      "divider": Object {
+        "stylePreset": "dividerInverse",
+      },
+      "icon": Object {
+        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -13895,6 +14061,8 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
+      "spaceInset": "spaceInset030",
+      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -16475,6 +16643,20 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
+    "structuredList": Object {
+      "divider": Object {
+        "stylePreset": "divider",
+      },
+    },
+    "structuredListItem": Object {
+      "icon": Object {
+        "size": "iconSize010",
+        "stylePreset": "inkContrast",
+      },
+      "minHeight": "sizing100",
+      "spaceInset": "spaceInsetStretch040",
+      "stylePreset": "structuredListItem",
+    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -16487,10 +16669,22 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
+          "typographyPreset": "utilityBody020",
         },
         "title": Object {
+          "spaceStack": "space010",
           "stylePreset": "toastText",
+          "typographyPreset": "utilityHeading010",
         },
+      },
+      "contentAndActions": Object {
+        "spaceInline": "space030",
+      },
+      "divider": Object {
+        "stylePreset": "dividerInverse",
+      },
+      "icon": Object {
+        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -16499,6 +16693,8 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
+      "spaceInset": "spaceInset030",
+      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -19079,6 +19275,20 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
+    "structuredList": Object {
+      "divider": Object {
+        "stylePreset": "divider",
+      },
+    },
+    "structuredListItem": Object {
+      "icon": Object {
+        "size": "iconSize010",
+        "stylePreset": "inkContrast",
+      },
+      "minHeight": "sizing100",
+      "spaceInset": "spaceInsetStretch040",
+      "stylePreset": "structuredListItem",
+    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -19091,10 +19301,22 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
+          "typographyPreset": "utilityBody020",
         },
         "title": Object {
+          "spaceStack": "space010",
           "stylePreset": "toastText",
+          "typographyPreset": "utilityHeading010",
         },
+      },
+      "contentAndActions": Object {
+        "spaceInline": "space030",
+      },
+      "divider": Object {
+        "stylePreset": "dividerInverse",
+      },
+      "icon": Object {
+        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -19103,6 +19325,8 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
+      "spaceInset": "spaceInset030",
+      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
