@@ -15,8 +15,11 @@ import {
 import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {splitAriaProps} from '../utils/a11y';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
-export const Toast: React.FC<ToastProps> = ({
+const ThemelessToast: React.FC<ToastProps> = ({
   overrides,
   children,
   icon,
@@ -85,3 +88,5 @@ export const Toast: React.FC<ToastProps> = ({
     </StyledToastContainer>
   );
 };
+
+export const Toast = withOwnTheme(ThemelessToast)({defaults, stylePresets});

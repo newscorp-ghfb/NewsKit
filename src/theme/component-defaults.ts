@@ -40,62 +40,6 @@ export const componentDefaults = {
       },
     },
   },
-  banner: {
-    horizontal: {
-      stylePreset: 'bannerInformative',
-      spaceInset: 'spaceInset045',
-      minHeight: 'sizing090',
-      maxWidth: '1920px',
-      icon: {
-        spaceInline: 'space030',
-      },
-      content: {
-        spaceInline: 'space030',
-        title: {
-          stylePreset: 'inkInverse',
-          typographyPreset: 'utilityHeading010',
-          spaceStack: 'space030',
-        },
-        message: {
-          stylePreset: 'inkInverse',
-          typographyPreset: 'utilityBody020',
-        },
-      },
-      actions: {
-        spaceInline: 'space040',
-        closeButton: {
-          stylePreset: 'iconButtonMinimalInverse',
-        },
-      },
-    },
-    vertical: {
-      stylePreset: 'bannerInformative',
-      spaceInset: 'spaceInset045',
-      minHeight: 'sizing090',
-      maxWidth: '1920px',
-      icon: {
-        spaceInline: 'space030',
-      },
-      content: {
-        spaceInline: 'space050',
-        title: {
-          stylePreset: 'inkInverse',
-          typographyPreset: 'utilityHeading010',
-          spaceStack: 'space030',
-        },
-        message: {
-          stylePreset: 'inkInverse',
-          typographyPreset: 'utilityBody020',
-        },
-      },
-      actions: {
-        spaceInline: 'space050',
-        closeButton: {
-          stylePreset: 'buttonOutlinedInverse',
-        },
-      },
-    },
-  },
   byline: {
     stylePreset: 'inkSubtle',
     typographyPreset: 'utilityMeta020',
@@ -142,9 +86,6 @@ export const componentDefaults = {
       stylePreset: 'inkSubtle',
       typographyPreset: 'utilityMeta020',
     },
-  },
-  divider: {
-    stylePreset: 'divider',
   },
   drawer: {
     overlay: {
@@ -544,20 +485,6 @@ export const componentDefaults = {
       spaceInline: 'space020',
     },
   },
-  structuredList: {
-    divider: {
-      stylePreset: 'divider',
-    },
-  },
-  structuredListItem: {
-    stylePreset: 'structuredListItem',
-    spaceInset: 'spaceInsetStretch040',
-    minHeight: 'sizing100',
-    icon: {
-      size: 'iconSize010',
-      stylePreset: 'inkContrast',
-    },
-  },
   textField: {
     small: {
       stylePreset: 'inputField',
@@ -606,37 +533,6 @@ export const componentDefaults = {
         iconSize: 'iconSize020',
         spaceInline: 'space020',
       },
-    },
-  },
-  toast: {
-    stylePreset: 'toastNeutral',
-    spaceInset: 'spaceInset030',
-    maxWidth: {
-      xs: '90%',
-      sm: '60%',
-      md: '45%',
-      lg: '38%',
-      xl: '31%',
-    },
-    content: {
-      message: {
-        stylePreset: 'inkInverse',
-        typographyPreset: 'utilityBody020',
-      },
-      title: {
-        stylePreset: 'inkInverse',
-        typographyPreset: 'utilityHeading010',
-        spaceStack: 'space010',
-      },
-    },
-    contentAndActions: {
-      spaceInline: 'space030',
-    },
-    divider: {
-      stylePreset: 'dividerInverse',
-    },
-    icon: {
-      spaceInline: 'space030',
     },
   },
   unorderedList: {

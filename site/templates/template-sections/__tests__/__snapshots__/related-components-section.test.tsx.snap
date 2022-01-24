@@ -135,10 +135,6 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   display: block;
 }
 
-.emotion-8 {
-  margin-bottom: 64px;
-}
-
 .emotion-9 {
   box-sizing: border-box;
   overflow: hidden;
@@ -370,7 +366,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
           data-testid="Cell"
         >
           <div
-            class="emotion-8"
+            class="emotion-3"
           >
             <div
               data-comp="NewsKit Grid"
@@ -454,6 +450,60 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
         </div>
       </div>
     </section>
+  </div>
+  @media screen and (max-width: 767px) {
+  .emotion-0 {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    margin-bottom: 80px;
+  }
+}
+
+.emotion-1 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+<div
+    data-comp="NewsKit Cell"
+    data-props="{
+  \\"xs\\": 12,
+  \\"md\\": 10,
+  \\"xl\\": 8,
+  \\"mdOffset\\": 1
+}"
+    data-testid="Cell"
+  >
+    <div
+      class="emotion-0"
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-1"
+        data-testid="divider"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
