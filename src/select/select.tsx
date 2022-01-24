@@ -145,16 +145,16 @@ export const Select = React.forwardRef<HTMLInputElement, SelectProps>(
       offsetLeft: left = 0,
     } = (selectRef && selectRef.current) || {};
 
-    useEffect(() => {
-      if (
-        isOpen &&
-        panelRef &&
-        panelRef.current &&
-        'scrollIntoView' in panelRef.current
-      ) {
-        panelRef.current?.scrollIntoView();
-      }
-    }, [isOpen, panelRef]);
+    // useEffect(() => {
+    //   if (
+    //     isOpen &&
+    //     panelRef &&
+    //     panelRef.current &&
+    //     'scrollIntoView' in panelRef.current
+    //   ) {
+    //     panelRef.current?.scrollIntoView();
+    //   }
+    // }, [isOpen, panelRef]);
 
     return (
       <>
