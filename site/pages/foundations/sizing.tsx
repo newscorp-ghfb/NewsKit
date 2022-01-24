@@ -101,12 +101,6 @@ export default (layoutProps: LayoutProps) => (
       },
       introduction: `Standardised sizing provides increased visual consistency in an interface.`,
     }}
-    featureCard={{
-      title: 'Presets',
-      description:
-        'A collection of related foundational design tokens combined into a preset to define reusable styles, typography or transitions.',
-      href: 'foundations/motions',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="principles">

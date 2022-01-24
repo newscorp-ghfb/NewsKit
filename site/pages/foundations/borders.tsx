@@ -63,12 +63,6 @@ export default (layoutProps: LayoutProps) => (
       },
       introduction: `Borders direct attention, identify components, communicate state, and express a brand.`,
     }}
-    featureCard={{
-      title: 'Iconography',
-      description:
-        'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
-      href: 'foundations/iconography',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="border-radius">

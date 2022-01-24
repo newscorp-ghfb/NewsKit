@@ -243,11 +243,6 @@ export default (layoutProps: LayoutProps) => (
       },
       introduction: `Fonts form an important part of the interface, establishing styles for content such as headlines, sub-headlines or paragraphs, as well as more functional styles for items such as labels, tags and messaging.`,
     }}
-    featureCard={{
-      title: 'Need Help?',
-      description: 'Cant find what you are looking for?',
-      href: 'about/contact-us/',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="principles">

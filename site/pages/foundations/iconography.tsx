@@ -87,12 +87,6 @@ export default (layoutProps: LayoutProps) => (
       },
       introduction: `Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.`,
     }}
-    featureCard={{
-      title: 'Motion',
-      description:
-        'Motion is used to create movement and narrative within a product.',
-      href: 'foundations/motions',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="overview">
