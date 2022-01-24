@@ -49,9 +49,10 @@ export default class MyDocument extends Document<Props> {
       ...initialProps,
       html,
       styles: (
-        <style data-emotion={`${cacheKey} ${ids.join(' ')}`}>
-          {criticalCss}
-        </style>
+        <style
+          data-emotion={`${cacheKey} ${ids.join(' ')}`}
+          dangerouslySetInnerHTML={{__html: criticalCss}}
+        />
       ),
       // Are we in local dev mode or "built and served"?
       production: process.env.NODE_ENV === 'production',
