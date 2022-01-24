@@ -71,7 +71,7 @@ const ThemelessCaption: React.FC<CaptionProps> = ({
   );
 };
 
-ThemelessCaption.displayName = 'Caption';
 export const Caption = withOwnTheme(ThemelessCaption)({
   defaults,
 });
+ThemelessCaption.displayName = 'Caption';
