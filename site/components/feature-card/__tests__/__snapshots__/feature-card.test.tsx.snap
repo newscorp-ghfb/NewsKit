@@ -765,6 +765,13 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 }
 
 .emotion-13 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.emotion-14 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -797,12 +804,12 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   cursor: pointer;
 }
 
-.emotion-13 svg {
+.emotion-14 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-14 {
+.emotion-15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -823,7 +830,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-15 {
+.emotion-16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -832,7 +839,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-16 {
+.emotion-17 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -843,19 +850,19 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: inline-block;
 }
 
-.emotion-16::before {
+.emotion-17::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-16::after {
+.emotion-17::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-18 {
+.emotion-19 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -864,7 +871,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: inline-block;
 }
 
-.emotion-18.emotion-18 {
+.emotion-19.emotion-19 {
   width: 16px;
   height: 16px;
 }
@@ -915,32 +922,36 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
               <p
                 class="emotion-12"
               >
-                I am interactive
+                <span
+                  class="emotion-13"
+                >
+                  I am interactive
+                </span>
               </p>
             </div>
             <button
-              class="emotion-13"
+              class="emotion-14"
               data-testid="button"
               type="button"
             >
               <div
-                class="emotion-14"
+                class="emotion-15"
               >
                 <div
-                  class="emotion-15"
+                  class="emotion-16"
                 >
                   <span
-                    class="emotion-16"
+                    class="emotion-17"
                   >
                     Read more
                   </span>
                 </div>
                 <div
-                  class="emotion-15"
+                  class="emotion-16"
                 >
                   <svg
                     aria-hidden="true"
-                    class="emotion-18 emotion-19"
+                    class="emotion-19 emotion-20"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1577,6 +1588,13 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
   margin: 0;
 }
 
+.emotion-13 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 <div
     class="emotion-0"
   >
@@ -1623,7 +1641,11 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
               <p
                 class="emotion-12"
               >
-                I am interactive
+                <span
+                  class="emotion-13"
+                >
+                  I am interactive
+                </span>
               </p>
             </div>
           </div>
@@ -2851,6 +2873,13 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
   margin: 0;
 }
 
+.emotion-12 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 <div
     class="emotion-0"
   >
@@ -2892,7 +2921,11 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
               <p
                 class="emotion-11"
               >
-                I am non-interactive
+                <span
+                  class="emotion-12"
+                >
+                  I am non-interactive
+                </span>
               </p>
             </div>
           </div>
@@ -3633,6 +3666,13 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   display: block;
 }
 
+.emotion-13 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 <div
     class="emotion-0"
   >
@@ -3679,7 +3719,11 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
               <p
                 class="emotion-12"
               >
-                I am interactive
+                <span
+                  class="emotion-13"
+                >
+                  I am interactive
+                </span>
               </p>
             </div>
           </div>
