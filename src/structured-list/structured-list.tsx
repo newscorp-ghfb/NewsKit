@@ -6,6 +6,9 @@ import {
 } from './types';
 import {StyledListWrapper, StyledWrapper} from './styled';
 import {Divider} from '../divider';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 export const StructuredListCell: React.FC<StructuredListCellProps> = ({
   children,
@@ -17,7 +20,7 @@ export const StructuredListCell: React.FC<StructuredListCellProps> = ({
   </>
 );
 
-export const StructuredList: React.FC<StructuredListProps> = ({
+const ThemelessStructuredList: React.FC<StructuredListProps> = ({
   children,
   ariaLabel,
   divider,
@@ -47,3 +50,8 @@ export const StructuredList: React.FC<StructuredListProps> = ({
     </StyledListWrapper>
   );
 };
+
+export const StructuredList = withOwnTheme(ThemelessStructuredList)({
+  defaults,
+  stylePresets,
+});
