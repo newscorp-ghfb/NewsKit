@@ -1,13 +1,10 @@
-import {createContext, SyntheticEvent} from 'react';
+import { ReactJSXElement } from '@emotion/react/types/jsx-namespace';
+import React, {createContext, SyntheticEvent} from 'react';
 
 interface AudioPlayerProviderContext {
   src: string;
   autoPlay?: boolean;
   live?: boolean;
-  //   playPauseButton?: {
-  //     onClick: () => void;
-  //   }; -> moved to the play-pause button
-
   // Internal
   audioRef: React.RefObject<HTMLAudioElement>;
   playing: boolean;
@@ -24,6 +21,16 @@ interface AudioPlayerProviderContext {
   duration: number;
   trackPositionArr: number[];
   onChangeSlider: (values: number[]) => void;
+  // Hooks for custom components
+  getPlayPauseButtonProps: () => {
+    "aria-label": string;
+    "aria-pressed": boolean;
+    loading: boolean;
+    onClick: () => void;
+    playing: boolean;
+    canPause: boolean;
+    playStateIcon: ReactJSXElement;
+  };
 }
 
 export const AudioPlayerContext = createContext<

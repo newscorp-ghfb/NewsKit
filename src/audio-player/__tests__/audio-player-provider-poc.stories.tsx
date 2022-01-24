@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 import {PlayerButtonPOC} from '../controls/play-pause-poc';
+import {UserCustomPlayerButtonPOC} from '../controls/user-play-pause-button';
 import {AudioPOC} from '../audio';
-import {AudioElementPOC} from '../audio-element-provider-poc';
 import {AudioSeekBarPOC} from '../audio-seek-bar-poc';
 
 export default {
@@ -11,21 +11,26 @@ export default {
 };
 
 export const AudioPlayerProviderPOC = () => (
-  <AudioPOC 
-  // @ts-ignore withSeekBar to be implemented potentially
-  withSeekBar
+  <AudioPOC
   src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
-    <AudioElementPOC />
     <PlayerButtonPOC onClick={() => {console.log('extra click function')}} />
     <AudioSeekBarPOC />
   </AudioPOC>
 );
 AudioPlayerProviderPOC.storyName = 'audio-player-poc-provider';
 
+export const AudioPlayerProviderPOCCustom = () => (
+  <AudioPOC 
+  src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+    <UserCustomPlayerButtonPOC />
+    <AudioSeekBarPOC />
+  </AudioPOC>
+);
+AudioPlayerProviderPOCCustom.storyName = 'audio-player-poc-provider-custom';
+
 export const AudioPlayerPOCMultypleAudioWithProvider = () => (
   <>
     <AudioPOC src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
-      <AudioElementPOC />
       <PlayerButtonPOC />
       <AudioSeekBarPOC />
     </AudioPOC>
@@ -33,7 +38,6 @@ export const AudioPlayerPOCMultypleAudioWithProvider = () => (
     <br />
     <br />
     <AudioPOC src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
-      <AudioElementPOC />
       <PlayerButtonPOC />
     </AudioPOC>
   </>

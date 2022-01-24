@@ -1,5 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, {MutableRefObject, useEffect, useRef, useState} from 'react';
+import { IconFilledPause } from '../icons/filled/material/icon-filled-pause';
+import { IconFilledPlayArrow } from '../icons/filled/material/icon-filled-play-arrow';
+import { IconFilledStop } from '../icons/filled/material/icon-filled-stop';
+import { AudioElementPOC } from './audio-element-provider-poc';
 import {useAudioFunctions} from './audio-functions';
 import {AudioPlayerProvider} from './context';
 
@@ -52,8 +56,43 @@ export const AudioPOC = ({
     setDuration,
   });
 
+  const getPlayPauseButtonProps = () => {
+    // All the internal logic for defining aria and icon to show
+    let playStateIcon = <IconFilledPlayArrow />;
+    let ariaLabel = 'Play'
+    let ariaPressed = false
+    
+    if (playing) {
+      ariaPressed = true;
+      if (live) {
+        playStateIcon = <IconFilledPause />;
+        ariaLabel = 'Pause';
+      } else {
+        playStateIcon = <IconFilledStop />;
+        ariaLabel = 'Stop';
+      }
+    }
+
+    const onClick = () => {
+      togglePlay()
+    }
+
+    return {
+      "aria-label": ariaLabel,
+      "aria-pressed": ariaPressed,
+      loading,
+      onClick,
+      
+      // Needed for custom internal logic
+      playing,
+      canPause: live,
+      playStateIcon,
+    }
+  }
+
   const value = {
     src,
+    usePlayPauseButton,
 
     // Internal
     audioRef,
@@ -71,5 +110,10 @@ export const AudioPOC = ({
     onChangeSlider,
   };
 
-  return <AudioPlayerProvider value={value}>{children}</AudioPlayerProvider>;
+  return (
+    <AudioPlayerProvider value={value}>
+      <AudioElementPOC />
+      {children}
+    </AudioPlayerProvider>
+  )
 };
