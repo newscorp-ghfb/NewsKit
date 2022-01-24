@@ -4,7 +4,7 @@ import {StyledInput} from './styled';
 import {WithEnhancers} from '../with-enhancers/with-enhancers';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
-import defaults from './text-field-defaults';
+import defaults from './defaults';
 import {getSingleStylePreset} from '../utils/style/style-preset';
 import {withOwnTheme} from '../utils/with-own-theme';
 

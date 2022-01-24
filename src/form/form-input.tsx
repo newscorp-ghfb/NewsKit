@@ -19,8 +19,8 @@ import {FormInputState} from './types';
 import {SelectProps, Select} from '../select';
 import {FormInputContext} from './context';
 import {withOwnTheme} from '../utils/with-own-theme';
-import textFieldDefaults from '../text-field/text-field-defaults';
-import assistiveTextDefaults from '../assistive-text/assistive-text-defaults';
+import textFieldDefaults from '../text-field/defaults';
+import assistiveTextDefaults from '../assistive-text/defaults';
 
 export type FormInputProps = {
   state?: FormInputState;
