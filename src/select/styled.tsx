@@ -116,6 +116,8 @@ export const StyledSelectPanel = styled.div<{
 
   ${({$size}) =>
     getResponsiveSize('maxHeight', `select.${$size}.panel`, '', 'maxHeight')};
+
+  background: orange;
 `;
 
 export const StyledOption = styled.div<{

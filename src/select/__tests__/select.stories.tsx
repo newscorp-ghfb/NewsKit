@@ -650,3 +650,78 @@ export const StorySelectScreenReaderExample = () => (
   </>
 );
 StorySelectScreenReaderExample.storyName = 'Select screen reader example';
+
+export const StorySelectSimple = () => (
+  <>
+    <StorybookHeading>Select sizes</StorybookHeading>
+    <Container>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
+        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
+        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
+      </p>
+      <Block>
+        <StorybookSubHeading>Small</StorybookSubHeading>
+        <Label htmlFor="id-1" size={'small' as TextFieldSize}>
+          Label
+        </Label>
+        <Select
+          aria-describedby="id-1-at"
+          id="id-1"
+          size="small"
+          overrides={{button: {width: '100%'}}}
+        >
+          {items.map(item => (
+            <SelectOption key={item} value={item}>
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <AssistiveText id="id-1-at" size={'small' as TextFieldSize}>
+          Assistive Text
+        </AssistiveText>
+      </Block>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
+        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
+        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
+        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
+        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
+        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
+        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
+        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
+        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
+        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
+        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
+        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
+        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
+        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
+        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
+        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
+        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
+      </p>
+    </Container>
+  </>
+);
+StorySelectSimple.storyName = 'Select simple';
