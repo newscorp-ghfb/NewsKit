@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, IconFilledGitHub} from 'newskit';
+import {Button, IconFilledGitHub, styled, getSpacingFromTheme} from 'newskit';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
@@ -105,6 +105,10 @@ const COLUMNS_ICON = {
   safari: <IconFilledSafari overrides={{size: 'iconSize050'}} />,
   edge: <IconFilledEdge overrides={{size: 'iconSize050'}} />,
 };
+
+export const ButtonContainer = styled.span`
+  margin-right: ${getSpacingFromTheme('space040')};
+`;
 
 export default (layoutProps: LayoutProps) => (
   <GuidePageTemplate
@@ -272,18 +276,19 @@ export default (layoutProps: LayoutProps) => (
           description="Below are the links to the NewsKit source code:"
           showSeparator
         >
-          <Button
-            size="small"
-            overrides={{
-              typographyPreset: 'utilityButton010',
-              stylePreset: 'buttonOutlinedSecondary',
-            }}
-            href="https://github.com/newscorp-ghfb/newskit"
-            target="_blank"
-          >
-            <IconFilledGitHub /> View Github repo
-          </Button>
-          &nbsp;&nbsp;&nbsp;
+          <ButtonContainer>
+            <Button
+              size="small"
+              overrides={{
+                typographyPreset: 'utilityButton010',
+                stylePreset: 'buttonOutlinedSecondary',
+              }}
+              href="https://github.com/newscorp-ghfb/newskit"
+              target="_blank"
+            >
+              <IconFilledGitHub /> View Github repo
+            </Button>
+          </ButtonContainer>
           <Button
             size="small"
             overrides={{
@@ -298,7 +303,6 @@ export default (layoutProps: LayoutProps) => (
         </ContentPrimary>
       </ContentSection>
     </ComponentPageCell>
-
     {/* ToDo: Once engineering quickstart guide and instrumentation setup page is ready, need to enable this section.
     <RelatedComponentsSection
       title="What’s next?"
