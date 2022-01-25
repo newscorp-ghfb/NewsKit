@@ -3,36 +3,6 @@ import {StylePreset} from './types';
 export const stylePresets: Record<string, StylePreset> = {};
 
 //
-// Indeterminate Progress Indicator
-//
-
-stylePresets.indeterminateProgressIndicatorPrimary = {
-  base: {
-    iconColor: '{{colors.inkBrand010}}',
-  },
-};
-stylePresets.indeterminateProgressIndicatorSecondary = {
-  base: {
-    iconColor: '{{colors.inkBase}}',
-  },
-};
-stylePresets.indeterminateProgressIndicatorNegative = {
-  base: {
-    iconColor: '{{colors.inkNegative}}',
-  },
-};
-stylePresets.indeterminateProgressIndicatorPositive = {
-  base: {
-    iconColor: '{{colors.inkPositive}}',
-  },
-};
-stylePresets.indeterminateProgressIndicatorInverse = {
-  base: {
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-
-//
 // Input Field
 //
 
