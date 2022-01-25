@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 import {
   ButtonSelectSize,
@@ -23,6 +23,7 @@ import {IconFilledCheck, IconFilledClose} from '../icons';
 import {Overlay} from '../overlay/overlay';
 import {IconButton} from '../icon-button/icon-button';
 import {MQ} from '../utils/style/types';
+import {Modal} from '../modal';
 
 interface SelectPanelProps {
   isOpen: boolean;
@@ -130,23 +131,42 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       );
 
     if (renderInModal) {
+      if (!isOpen) {
+        return <div ref={panelRef} />;
+      }
       return (
-        <>
-          <Overlay open={isOpen} />
-          <StyledSelectPanelAsDialogWrapper $isOpen={isOpen}>
-            <StyledSelectPanelAsDialog $size={size}>
-              <StyledSelectPanelHeader>
-                <IconButton aria-label="close" onClick={onClose}>
-                  <IconFilledClose />
-                </IconButton>
-              </StyledSelectPanelHeader>
-              <StyledSelectPanelBody ref={panelRef} {...restProps}>
-                {optionsAsChildren}
-              </StyledSelectPanelBody>
-            </StyledSelectPanelAsDialog>
-          </StyledSelectPanelAsDialogWrapper>
-        </>
+        <Modal
+          open={isOpen}
+          onDismiss={onClose}
+          overrides={{
+            header: {spaceInset: 'space000', minHeight: 'sizing000'},
+            panel: {maxHeight: '80vh'},
+            content: {spaceInset: 'space010'},
+            closeButton: {spaceInset: 'space000'},
+          }}
+        >
+          <StyledSelectPanelBody ref={panelRef} {...restProps}>
+            {optionsAsChildren}
+          </StyledSelectPanelBody>
+        </Modal>
       );
+      // return (
+      //   <>
+      //     <Overlay open={isOpen} />
+      //     <StyledSelectPanelAsDialogWrapper $isOpen={isOpen}>
+      //       <StyledSelectPanelAsDialog $size={size}>
+      //         <StyledSelectPanelHeader>
+      //           <IconButton aria-label="close" onClick={onClose}>
+      //             <IconFilledClose />
+      //           </IconButton>
+      //         </StyledSelectPanelHeader>
+      //         <StyledSelectPanelBody ref={panelRef} {...restProps}>
+      //           {optionsAsChildren}
+      //         </StyledSelectPanelBody>
+      //       </StyledSelectPanelAsDialog>
+      //     </StyledSelectPanelAsDialogWrapper>
+      //   </>
+      // );
     }
     return (
       <>

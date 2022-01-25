@@ -141,7 +141,6 @@ export const StyledSelectPanelAsDialog = styled.div<{
   ${({$size}) =>
     getResponsiveSize('maxHeight', `select.${$size}.panel`, '', 'maxHeight')};
 
-  background: orange;
   display: grid;
   grid-template-rows: auto 1fr;
 `;
@@ -154,6 +153,7 @@ export const StyledSelectPanelHeader = styled.div`
 export const StyledSelectPanelBody = styled.div`
   overflow-x: hidden;
   overflow-y: auto;
+  max-height: 100%;
 `;
 
 export const StyledOption = styled.div<{
