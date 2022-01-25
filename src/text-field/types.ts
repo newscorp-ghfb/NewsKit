@@ -14,7 +14,7 @@ export enum TextFieldSize {
 
 export interface FormInputTextFieldProps
   extends Omit<CommonInputProps, 'size'> {
-  size?: TextFieldSize; // remove this override when https://nidigitalsolutions.jira.com/browse/PPDSC-1872 is implemented
+  size?: TextFieldSize | 'small' | 'medium' | 'large'; // remove this override when https://nidigitalsolutions.jira.com/browse/PPDSC-1872 is implemented
   overrides?: EnhancerOverrides & {
     stylePreset?: MQ<string>;
     spaceInset?: MQ<string>;
