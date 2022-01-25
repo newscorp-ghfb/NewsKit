@@ -2,12 +2,7 @@
 import {TextAlignProperty} from 'csstype';
 import {Button} from '../button';
 import {getStylePreset, getResponsiveSpace, styled} from '../utils/style';
-import {
-  MenuItemAlign,
-  MenuGroupProps,
-  MenuProps,
-  MenutItemAlignTypes,
-} from './types';
+import {MenuItemAlign, MenuGroupProps, MenuProps} from './types';
 
 export const StyledMenu = styled.nav<MenuProps>`
   box-sizing: border-box;
@@ -104,7 +99,7 @@ const menuItemTextAlign = {
 };
 
 export const StyledButton = styled(Button)<{
-  align?: MenutItemAlignTypes;
+  align?: MenuItemAlign | 'start' | 'end' | 'center' | undefined;
   selected?: boolean;
 }>`
   ${({selected}) =>
