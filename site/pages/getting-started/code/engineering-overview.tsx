@@ -212,8 +212,11 @@ export default (layoutProps: LayoutProps) => (
                 title: 'Utility functions',
                 description: (
                   <>
-                    A host of <Link href="web/">utility functions</Link> for use
-                    in third-party or custom components.
+                    A host of{' '}
+                    <Link href="/getting-started/code/web/">
+                      utility functions
+                    </Link>{' '}
+                    for use in third-party or custom components.
                   </>
                 ),
                 media: getIllustrationComponent(
