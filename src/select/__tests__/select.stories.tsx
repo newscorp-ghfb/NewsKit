@@ -665,7 +665,12 @@ export const StorySelectSimple = () => (
         <Label htmlFor="id-1" size={'small' as TextFieldSize}>
           Label
         </Label>
-        <Select aria-describedby="id-1-at" id="id-1" size="small">
+        <Select
+          aria-describedby="id-1-at"
+          id="id-1"
+          size="small"
+          overrides={{button: {width: '50%'}}}
+        >
           {items.map(item => (
             <SelectOption key={item} value={item}>
               {item}

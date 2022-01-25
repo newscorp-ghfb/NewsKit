@@ -129,7 +129,6 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
         },
       );
 
-    console.log({renderInModal});
     if (renderInModal) {
       return (
         <>
