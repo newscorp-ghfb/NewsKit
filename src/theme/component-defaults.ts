@@ -1,163 +1,55 @@
 export const componentDefaults = {
-  assistiveText: {
-    small: {
-      stylePreset: 'assistiveText',
-      typographyPreset: 'utilityBody010',
-      minHeight: 'sizing030',
-      startEnhancer: {
-        iconSize: 'iconSize010',
-        spaceInline: 'space020',
-      },
-      endEnhancer: {
-        iconSize: 'iconSize010',
-        spaceInline: 'space020',
-      },
-    },
-    medium: {
-      stylePreset: 'assistiveText',
-      typographyPreset: 'utilityBody020',
-      minHeight: 'sizing030',
-      startEnhancer: {
-        iconSize: 'iconSize020',
-        spaceInline: 'space020',
-      },
-      endEnhancer: {
-        iconSize: 'iconSize020',
-        spaceInline: 'space020',
-      },
-    },
-    large: {
-      stylePreset: 'assistiveText',
-      typographyPreset: 'utilityBody030',
-      minHeight: 'sizing030',
-      startEnhancer: {
-        iconSize: 'iconSize020',
-        spaceInline: 'space030',
-      },
-      endEnhancer: {
-        iconSize: 'iconSize020',
-        spaceInline: 'space030',
-      },
-    },
-  },
-  banner: {
-    horizontal: {
-      stylePreset: 'bannerInformative',
-      spaceInset: 'spaceInset045',
-      minHeight: 'sizing090',
-      maxWidth: '1920px',
-      icon: {
-        spaceInline: 'space030',
-      },
-      content: {
-        spaceInline: 'space030',
-        title: {
-          stylePreset: 'inkInverse',
-          typographyPreset: 'utilityHeading010',
-          spaceStack: 'space030',
-        },
-        message: {
-          stylePreset: 'inkInverse',
-          typographyPreset: 'utilityBody020',
-        },
-      },
-      actions: {
-        spaceInline: 'space040',
-        closeButton: {
-          stylePreset: 'iconButtonMinimalInverse',
-        },
-      },
-    },
-    vertical: {
-      stylePreset: 'bannerInformative',
-      spaceInset: 'spaceInset045',
-      minHeight: 'sizing090',
-      maxWidth: '1920px',
-      icon: {
-        spaceInline: 'space030',
-      },
-      content: {
-        spaceInline: 'space050',
-        title: {
-          stylePreset: 'inkInverse',
-          typographyPreset: 'utilityHeading010',
-          spaceStack: 'space030',
-        },
-        message: {
-          stylePreset: 'inkInverse',
-          typographyPreset: 'utilityBody020',
-        },
-      },
-      actions: {
-        spaceInline: 'space050',
-        closeButton: {
-          stylePreset: 'buttonOutlinedInverse',
-        },
-      },
-    },
-  },
-  byline: {
+  dateTime: {
     stylePreset: 'inkSubtle',
     typographyPreset: 'utilityMeta020',
-    spaceStack: 'space020',
-    link: {
-      stylePreset: 'linkInline',
+    prefix: {
+      stylePreset: 'inkSubtle',
       typographyPreset: 'utilityMeta020',
     },
-    divider: {
-      stylePreset: 'inkNonEssential',
-      spaceInline: 'space020',
+    suffix: {
+      stylePreset: 'inkSubtle',
+      typographyPreset: 'utilityMeta020',
     },
   },
-  caption: {
-    typographyPreset: 'editorialCaption010',
-    stylePreset: 'inkBase',
-    spaceStack: 'space040',
-    credit: {
-      typographyPreset: 'utilityMeta010',
-      stylePreset: 'uppercaseInkSubtle',
+  drawer: {
+    overlay: {
+      zIndex: 70,
+      transitionPreset: 'fade',
     },
-  },
-  captionInset: {
-    typographyPreset: 'editorialCaption010',
-    stylePreset: 'inkBase',
-    spaceStack: 'space040',
-    spaceInset: {
-      xs: 'spaceInset040',
-      md: 'spaceInset050',
+    panel: {
+      zIndex: 80,
+      stylePreset: 'drawerPanel',
+      maxSize: '100%',
+      minSize: '20px',
+      size: {
+        xs: '305px',
+        sm: '309px',
+        md: '310px',
+        lg: '333px',
+        xl: '354px',
+      },
+      left: {
+        transitionPreset: ['fade', 'slideLeft'],
+      },
+      right: {
+        transitionPreset: ['fade', 'slideRight'],
+      },
+      top: {
+        transitionPreset: ['fade', 'slideTop'],
+      },
+      bottom: {
+        transitionPreset: ['fade', 'slideBottom'],
+      },
     },
-    credit: {
-      typographyPreset: 'utilityMeta010',
-      stylePreset: 'uppercaseInkSubtle',
+    header: {
+      spaceInset: 'spaceInsetSquish040',
     },
-  },
-  divider: {
-    stylePreset: 'divider',
-  },
-
-  grid: {
-    maxWidth: '1920px',
-    columns: 12,
-    containerMargin: {
-      xs: 'space040',
-      sm: 'space040',
-      md: 'space040',
-      lg: 'space050',
-      xl: 'space050',
+    content: {
+      spaceInset: 'spaceInset050',
     },
-    columnGutters: {
-      xs: 'space040',
-      sm: 'space040',
-      md: 'space040',
-      lg: 'space050',
-      xl: 'space050',
-    },
-    rowGutters: {
-      xs: 'space040',
-      sm: 'space040',
-      md: 'space040',
-      lg: 'space050',
-      xl: 'space050',
+    closeButton: {
+      stylePreset: 'iconButtonMinimalSecondary',
+      spaceInset: 'spaceInset020',
     },
   },
   headlineH1: {
@@ -215,25 +107,80 @@ export const componentDefaults = {
       },
     },
   },
-  label: {
-    small: {
-      stylePreset: 'label',
-      typographyPreset: 'utilityLabel010',
-      spaceStack: 'space040',
-      spaceInline: 'space010',
+  modal: {
+    overlay: {
+      zIndex: 70,
+      transitionPreset: {
+        extend: 'fade',
+        enterActive: {
+          transitionDuration: '{{motions.motionDuration030}}',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+        exitActive: {
+          transitionDuration: '{{motions.motionDuration030}}',
+          transitionDelay: '{{motions.motionDuration010}}',
+          transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
+        },
+      },
     },
-    medium: {
-      stylePreset: 'label',
-      typographyPreset: 'utilityLabel020',
-      spaceStack: 'space040',
-      spaceInline: 'space010',
+    panel: {
+      zIndex: 80,
+      stylePreset: 'modalPanel',
+      transitionPreset: [
+        {
+          extend: 'fade',
+          enterActive: {
+            transitionDuration: '{{motions.motionDuration010}}',
+            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+            transitionDelay: '{{motions.motionDuration010}}',
+          },
+          exitActive: {
+            transitionDuration: '{{motions.motionDuration010}}',
+            transitionTimingFunction: '{{motions.motionTimingLinear}}',
+          },
+        },
+        {
+          extend: 'moveUp',
+          enterActive: {
+            transitionDuration: '{{motions.motionDuration010}}',
+            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+            transitionDelay: '{{motions.motionDuration010}}',
+          },
+          exitActive: {
+            transitionDuration: '{{motions.motionDuration010}}',
+            transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
+          },
+        },
+      ],
+      topOffset: '20vh',
+      width: {
+        xs: '90vw',
+        sm: '60vw',
+        md: '45vw',
+        lg: '38vw',
+        xl: '31vw',
+      },
+      minHeight: '15vh',
+      maxHeight: {
+        xs: '95vh',
+        md: '80vh',
+      },
     },
-    large: {
-      stylePreset: 'label',
-      typographyPreset: 'utilityLabel030',
-      spaceStack: 'space040',
-      spaceInline: 'space010',
+    header: {
+      spaceInset: 'spaceInsetSquish040',
     },
+    content: {
+      spaceInset: 'spaceInset050',
+    },
+    closeButton: {
+      stylePreset: 'iconButtonMinimalSecondary',
+      spaceInset: 'spaceInset020',
+    },
+  },
+
+  overlay: {
+    stylePreset: 'overlay',
+    transitionPreset: 'fade',
   },
   paragraph: {
     stylePreset: 'inkBase',
@@ -262,56 +209,7 @@ export const componentDefaults = {
       stylePreset: 'inkContrast',
     },
   },
-  textField: {
-    small: {
-      stylePreset: 'inputField',
-      spaceInset: 'spaceInset020',
-      minHeight: 'sizing060',
-      width: '100%',
-      typographyPreset: 'utilityBody020',
-      spaceStack: 'space020',
-      startEnhancer: {
-        iconSize: 'iconSize020',
-        spaceInline: 'space020',
-      },
-      endEnhancer: {
-        iconSize: 'iconSize020',
-        spaceInline: 'space020',
-      },
-    },
-    medium: {
-      stylePreset: 'inputField',
-      spaceInset: 'spaceInset030',
-      minHeight: 'sizing080',
-      width: '100%',
-      typographyPreset: 'utilityBody020',
-      spaceStack: 'space020',
-      startEnhancer: {
-        iconSize: 'iconSize020',
-        spaceInline: 'space020',
-      },
-      endEnhancer: {
-        iconSize: 'iconSize020',
-        spaceInline: 'space020',
-      },
-    },
-    large: {
-      stylePreset: 'inputField',
-      spaceInset: 'spaceInset030',
-      minHeight: 'sizing090',
-      width: '100%',
-      typographyPreset: 'utilityBody030',
-      spaceStack: 'space020',
-      startEnhancer: {
-        iconSize: 'iconSize020',
-        spaceInline: 'space020',
-      },
-      endEnhancer: {
-        iconSize: 'iconSize020',
-        spaceInline: 'space020',
-      },
-    },
-  },
+
   toast: {
     stylePreset: 'toastNeutral',
     spaceInset: 'spaceInset030',
@@ -343,54 +241,16 @@ export const componentDefaults = {
       spaceInline: 'space030',
     },
   },
-  checkbox: {
-    small: {
-      spaceStack: 'space000',
-      input: {
-        size: 'sizing050',
-        stylePreset: 'checkboxInput',
-        spaceInline: 'space030',
-      },
-      feedback: {
-        size: 'sizing070',
-        stylePreset: 'checkboxFeedback',
-      },
-      label: {
-        stylePreset: 'controlLabel',
-        typographyPreset: 'utilityBody020',
-      },
+  unorderedList: {
+    spaceStack: 'space040',
+    content: {
+      stylePreset: 'inkBase',
+      typographyPreset: 'editorialParagraph010',
     },
-    medium: {
-      spaceStack: 'space000',
-      input: {
-        size: 'sizing060',
-        stylePreset: 'checkboxInput',
-        spaceInline: 'space030',
-      },
-      feedback: {
-        size: 'sizing080',
-        stylePreset: 'checkboxFeedback',
-      },
-      label: {
-        stylePreset: 'controlLabel',
-        typographyPreset: 'utilityBody020',
-      },
-    },
-    large: {
-      spaceStack: 'space000',
-      input: {
-        size: 'sizing070',
-        stylePreset: 'checkboxInput',
-        spaceInline: 'space040',
-      },
-      feedback: {
-        size: 'sizing090',
-        stylePreset: 'checkboxFeedback',
-      },
-      label: {
-        stylePreset: 'controlLabel',
-        typographyPreset: 'utilityBody030',
-      },
+    marker: {
+      stylePreset: 'inkBase',
+      spaceInline: 'space020',
+      size: 'iconSize005',
     },
   },
 };
