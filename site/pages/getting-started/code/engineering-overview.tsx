@@ -46,7 +46,15 @@ const PRINCIPLE_CARDS = [
         >
           WCAG guidelines
         </Link>
-        , WAI Aria and{' '}
+        ,{' '}
+        <Link
+          overrides={{stylePreset: 'inkInverse'}}
+          href="https://www.w3.org/WAI/standards-guidelines/aria/"
+          target="_blank"
+        >
+          WAI Aria
+        </Link>{' '}
+        and
         <Link
           overrides={{stylePreset: 'inkInverse'}}
           href="https://www.w3.org/TR/wai-aria-practices/"
@@ -75,7 +83,7 @@ const PRINCIPLE_CARDS = [
           href="foundations/overview/"
         >
           theming system
-        </Link>
+        </Link>{' '}
         that enables customization of style and layout. Additionally components
         support a range of properties to customise behaviour.
       </>
@@ -165,9 +173,8 @@ export default (layoutProps: LayoutProps) => (
                 description: (
                   <>
                     A collection high quality React{' '}
-                    <Link href="components/overview/">
-                      web components built using
-                    </Link>{' '}
+                    <Link href="components/overview/">web components</Link>{' '}
+                    built using
                     <Link
                       href="https://www.typescriptlang.org/"
                       target="_blank"
