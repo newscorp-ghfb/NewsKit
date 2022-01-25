@@ -1,17 +1,28 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import {
   ButtonSelectSize,
   SelectPanelOverrides,
   SelectOptionProps,
 } from './types';
-import {StyledOption, StyledOptionIcon, StyledSelectPanel} from './styled';
+import {
+  StyledOption,
+  StyledOptionIcon,
+  StyledSelectPanel,
+  StyledSelectPanelAsDialog,
+  StyledSelectPanelAsDialogWrapper,
+  StyledSelectPanelBody,
+  StyledSelectPanelHeader,
+} from './styled';
 import {ScreenReaderOnly} from '../screen-reader-only';
-import {useReactKeys} from '../utils/hooks';
+import {useBreakpointKey, useReactKeys} from '../utils/hooks';
 
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
-import {IconFilledCheck} from '../icons';
+import {IconFilledCheck, IconFilledClose} from '../icons';
+import {Overlay} from '../overlay/overlay';
+import {IconButton} from '../icon-button/icon-button';
+import {MQ} from '../utils/style/types';
 
 interface SelectPanelProps {
   isOpen: boolean;
@@ -25,6 +36,8 @@ interface SelectPanelProps {
   highlightedIndex?: number;
   overrides?: SelectPanelOverrides;
   children: React.ReactElement<SelectOptionProps>[];
+  modal?: MQ<boolean>;
+  onClose: () => void;
 }
 
 const StyledOptionWithPrivateProps = React.forwardRef<
@@ -78,16 +91,70 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       getItemProps,
       selectedItem,
       highlightedIndex,
+      onClose,
+      modal,
       ...restProps
     } = props;
 
     const listDescriptionId = useReactKeys(1)[0];
 
+    const modalMQKeys = Object.keys(modal || {}).filter(Boolean);
+    const currentMQ = useBreakpointKey();
+
+    const renderInModal = modalMQKeys.includes(currentMQ);
+
+    const optionsAsChildren =
+      isOpen &&
+      React.Children.map(
+        children,
+        (child: React.ReactElement<SelectOptionProps>, index) => {
+          const downshiftOptionProps = getItemProps({
+            item: child,
+            index,
+          });
+
+          const combinedProps = {
+            ...downshiftOptionProps,
+            ...child.props,
+          };
+
+          return (
+            <StyledOptionWithPrivateProps
+              $focused={highlightedIndex === index}
+              $selected={selectedItem === child}
+              $size={size}
+              {...combinedProps}
+            />
+          );
+        },
+      );
+
+    console.log({renderInModal});
+    if (renderInModal) {
+      return (
+        <>
+          <Overlay open={isOpen} />
+          <StyledSelectPanelAsDialogWrapper $isOpen={isOpen}>
+            <StyledSelectPanelAsDialog $size={size}>
+              <StyledSelectPanelHeader>
+                <IconButton aria-label="close" onClick={onClose}>
+                  <IconFilledClose />
+                </IconButton>
+              </StyledSelectPanelHeader>
+              <StyledSelectPanelBody ref={panelRef} {...restProps}>
+                {optionsAsChildren}
+              </StyledSelectPanelBody>
+            </StyledSelectPanelAsDialog>
+          </StyledSelectPanelAsDialogWrapper>
+        </>
+      );
+    }
     return (
       <>
         <ScreenReaderOnly id={listDescriptionId}>
           Press down arrow key to navigate to the first item
         </ScreenReaderOnly>
+
         <StyledSelectPanel
           $isOpen={isOpen}
           data-testid="select-panel"
@@ -99,30 +166,7 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
           ref={panelRef}
           {...restProps}
         >
-          {isOpen &&
-            React.Children.map(
-              children,
-              (child: React.ReactElement<SelectOptionProps>, index) => {
-                const downshiftOptionProps = getItemProps({
-                  item: child,
-                  index,
-                });
-
-                const combinedProps = {
-                  ...downshiftOptionProps,
-                  ...child.props,
-                };
-
-                return (
-                  <StyledOptionWithPrivateProps
-                    $focused={highlightedIndex === index}
-                    $selected={selectedItem === child}
-                    $size={size}
-                    {...combinedProps}
-                  />
-                );
-              },
-            )}
+          {optionsAsChildren}
         </StyledSelectPanel>
       </>
     );

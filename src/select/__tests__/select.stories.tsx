@@ -665,19 +665,14 @@ export const StorySelectSimple = () => (
         <Label htmlFor="id-1" size={'small' as TextFieldSize}>
           Label
         </Label>
-        <Select
-          aria-describedby="id-1-at"
-          id="id-1"
-          size="small"
-          overrides={{button: {width: '100%'}}}
-        >
+        <Select aria-describedby="id-1-at" id="id-1" size="small">
           {items.map(item => (
             <SelectOption key={item} value={item}>
               {item}
             </SelectOption>
           ))}
         </Select>
-        <AssistiveText id="id-1-at" size={'small' as TextFieldSize}>
+        <AssistiveText id="id-2-at" size={'small' as TextFieldSize}>
           Assistive Text
         </AssistiveText>
       </Block>
@@ -686,6 +681,27 @@ export const StorySelectSimple = () => (
         qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
         pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
       </p>
+      <Block>
+        <Label htmlFor="id-2" size={'small' as TextFieldSize}>
+          Select with modal
+        </Label>
+        <Select
+          aria-describedby="id-2-at"
+          id="id-2"
+          size="small"
+          overrides={{button: {width: '100%'}}}
+          modal={{xs: true}}
+        >
+          {items.map(item => (
+            <SelectOption key={item} value={item}>
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <AssistiveText id="id-2-at" size={'small' as TextFieldSize}>
+          Assistive Text
+        </AssistiveText>
+      </Block>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
         qui impedit alias maxime, recusandae beatae porro officia ut, quisquam

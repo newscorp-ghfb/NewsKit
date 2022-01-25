@@ -4,6 +4,7 @@ import composeRefs from '@seznam/compose-react-refs';
 import {SelectProps} from './types';
 import {SelectPanel} from './select-panel';
 import {SelectButton} from './select-button';
+import {MediaQueryProvider} from '../utils/hooks/use-media-query';
 
 export const Select = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -20,6 +21,7 @@ export const Select = React.forwardRef<HTMLInputElement, SelectProps>(
       size = 'medium',
       loading,
       children,
+      modal = {},
       ...restProps
     } = props;
 
@@ -157,7 +159,7 @@ export const Select = React.forwardRef<HTMLInputElement, SelectProps>(
     // }, [isOpen, panelRef]);
 
     return (
-      <>
+      <MediaQueryProvider>
         <SelectButton
           size={size}
           placeholder={placeholder}
@@ -190,12 +192,14 @@ export const Select = React.forwardRef<HTMLInputElement, SelectProps>(
           selectedItem={selectedItem}
           highlightedIndex={highlightedIndex}
           getItemProps={getItemProps}
+          onClose={downshiftButtonPropsExceptRef.onClick}
+          modal={modal}
           {...downshiftMenuPropsExceptRef}
           ref={composeRefs(panelRef, downshiftMenuPropsRef)}
         >
           {children}
         </SelectPanel>
-      </>
+      </MediaQueryProvider>
     );
   },
 );

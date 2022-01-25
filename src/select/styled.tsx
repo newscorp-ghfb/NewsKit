@@ -116,8 +116,44 @@ export const StyledSelectPanel = styled.div<{
 
   ${({$size}) =>
     getResponsiveSize('maxHeight', `select.${$size}.panel`, '', 'maxHeight')};
+`;
+
+export const StyledSelectPanelAsDialogWrapper = styled.div<{
+  $isOpen: boolean;
+}>`
+  position: fixed;
+  inset: 0;
+  place-items: center;
+  ${({$isOpen}) => `display: ${$isOpen ? 'grid' : 'none'};`}
+`;
+
+export const StyledSelectPanelAsDialog = styled.div<{
+  $size: ButtonSelectSize;
+}>`
+  height: auto;
+  box-sizing: border-box;
+  outline: none;
+  width: 80vw;
+  max-width: 400px;
+
+  ${({$size}) => getStylePreset(`select.${$size}.panel`, '')};
+
+  ${({$size}) =>
+    getResponsiveSize('maxHeight', `select.${$size}.panel`, '', 'maxHeight')};
 
   background: orange;
+  display: grid;
+  grid-template-rows: auto 1fr;
+`;
+
+export const StyledSelectPanelHeader = styled.div`
+  background: #ccc;
+  text-align: right;
+  padding: 5px;
+`;
+export const StyledSelectPanelBody = styled.div`
+  overflow-x: hidden;
+  overflow-y: auto;
 `;
 
 export const StyledOption = styled.div<{

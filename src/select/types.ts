@@ -31,6 +31,7 @@ export interface SelectProps extends CommonInputProps {
   loading?: boolean;
   children: Array<React.ReactElement<SelectOptionProps>>;
   validationIcon?: React.ReactNode;
+  modal?: MQ<boolean>;
   overrides?: {
     button?: SelectButtonOverrides;
     panel?: SelectPanelOverrides;
