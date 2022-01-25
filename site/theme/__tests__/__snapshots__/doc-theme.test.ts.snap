@@ -500,31 +500,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -1507,31 +1482,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -3132,31 +3082,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -4139,31 +4064,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -5764,31 +5664,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -6771,31 +6646,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -8396,31 +8246,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -9403,31 +9228,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -11028,31 +10828,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -12035,31 +11810,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -13660,31 +13410,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -14667,31 +14392,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -16292,31 +15992,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -17299,31 +16974,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -18924,31 +18574,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -19931,31 +19556,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
