@@ -208,14 +208,8 @@ export default (layoutProps: LayoutProps) => (
                 title: 'Utility functions',
                 description: (
                   <>
-                    A host of{' '}
-                    <Link
-                      href="https://www.newskit.co.uk/getting-started/code/web/"
-                      target="_blank"
-                    >
-                      utility functions
-                    </Link>{' '}
-                    for use in third-party or custom components.
+                    A host of <Link href="web/">utility functions</Link> for use
+                    in third-party or custom components.
                   </>
                 ),
                 media: getIllustrationComponent(
@@ -263,7 +257,7 @@ export default (layoutProps: LayoutProps) => (
           id="architecture"
           toc="Architecture"
           headline="Example architecture"
-          description="Below is an example of how it is recommended to link Figma libraries to get the best out of the NewsKit Design System. This ensures that whenever the NewsKit Design System is updated, designs utilising this can automatically receive updates and enables contributing to the NewsKit Design System."
+          description="Below is an example of a recommended architecture when using the NewsKit design system:"
           showSeparator
         >
           <Illustration path="guides/engineering-overview/example-architecture-engineering" />
