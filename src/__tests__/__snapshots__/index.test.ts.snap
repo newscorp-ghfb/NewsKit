@@ -115,6 +115,7 @@ Array [
   "TextFieldSize",
   "TextInput",
   "TextInputSize",
+  "ThemeChecker",
   "ThemeProvider",
   "TitleBar",
   "Toast",
