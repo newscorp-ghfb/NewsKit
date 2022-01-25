@@ -6,6 +6,8 @@ import {GridContextProvider} from './context';
 import {GridProps} from './types';
 import {getOverridableProp, OverrideProp} from './utils';
 import {ThemeProp} from '../utils/style-types';
+import defaults from './defaults';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const generateBreakpointConfig = (breakpoint: BreakpointKeys) => ({
   theme,
@@ -59,10 +61,12 @@ const StyledGrid = styled.div<GridProps>`
   ${generateBreakpointConfig('xl')};
 `;
 
-export const Grid: React.FC<GridProps> = ({children, maxWidth, ...props}) => (
+const ThemelessGrid: React.FC<GridProps> = ({children, maxWidth, ...props}) => (
   <GridContextProvider value={props}>
     <StyledGridContainer maxWidth={maxWidth}>
       <StyledGrid {...props}>{children}</StyledGrid>
     </StyledGridContainer>
   </GridContextProvider>
 );
+
+export const Grid = withOwnTheme(ThemelessGrid)({defaults});

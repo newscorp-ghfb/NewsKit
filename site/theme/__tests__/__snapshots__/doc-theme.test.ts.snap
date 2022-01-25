@@ -246,186 +246,36 @@ Object {
     "whiteTint090": "rgba(255,255,255,0.9)",
   },
   "componentDefaults": Object {
-    "assistiveText": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody030",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody020",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody010",
-      },
-    },
     "banner": Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
-      },
-    },
-    "byline": Object {
-      "divider": Object {
-        "spaceInline": "space020",
-        "stylePreset": "inkNonEssential",
-      },
-      "link": Object {
-        "stylePreset": "linkInline",
-        "typographyPreset": "utilityMeta020",
-      },
-      "spaceStack": "space020",
-      "stylePreset": "inkSubtle",
-      "typographyPreset": "utilityMeta020",
-    },
-    "caption": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "captionInset": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceInset": Object {
-        "md": "spaceInset050",
-        "xs": "spaceInset040",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "checkbox": Object {
-      "large": Object {
-        "feedback": Object {
-          "size": "sizing090",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing070",
-          "spaceInline": "space040",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody030",
-        },
-        "spaceStack": "space000",
-      },
-      "medium": Object {
-        "feedback": Object {
-          "size": "sizing080",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing060",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
-      },
-      "small": Object {
-        "feedback": Object {
-          "size": "sizing070",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing050",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
       },
     },
     "contentPrimary": Object {
@@ -567,9 +417,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -653,31 +500,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -754,26 +576,6 @@ Object {
       "spaceInset": "spaceInset040",
       "stylePreset": "inlineMessageInformative",
       "width": "100%",
-    },
-    "label": Object {
-      "large": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel030",
-      },
-      "medium": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel020",
-      },
-      "small": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel010",
-      },
     },
     "modal": Object {
       "closeButton": Object {
@@ -1046,56 +848,6 @@ Object {
     "tabs": Object {
       "spaceInline": "space060",
     },
-    "textField": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody030",
-        "width": "100%",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing080",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing060",
-        "spaceInset": "spaceInset020",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-    },
     "toast": Object {
       "content": Object {
         "message": Object {
@@ -1314,41 +1066,9 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "assistiveText": Object {
-      "base": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-      "invalid": Object {
-        "color": "{{colors.inkNegative}}",
-      },
-      "valid": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-    },
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -1519,117 +1239,6 @@ Object {
         "iconColor": "{{colors.inkPositive}}",
       },
     },
-    "checkboxFeedback": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "focus": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-    },
-    "checkboxInput": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-      "checked": Object {
-        "backgroundColor": "{{colors.interactiveInput040}}",
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "checked:disabled": Object {
-        "backgroundColor": "{{colors.interactiveDisabled010}}",
-        "borderColor": "{{colors.interactiveDisabled010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "checked:focus": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:invalid": Object {
-        "backgroundColor": "{{colors.interactiveNegative040}}",
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "checked:invalid:focus": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:valid": Object {
-        "backgroundColor": "{{colors.interactivePositive040}}",
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "checked:valid:focus": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "disabled": Object {
-        "borderColor": "{{colors.interactiveDisabled010}}",
-      },
-      "focus": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "focus:hover": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "hover": Object {
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "invalid": Object {
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "invalid:focus": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:focus:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "valid": Object {
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "valid:focus": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:focus:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-    },
     "closeIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interactiveSecondary040}}",
@@ -1725,14 +1334,6 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
-    "controlLabel": Object {
-      "base": Object {
-        "color": "{{colors.inkBase}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-    },
     "crossIconContainer": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
@@ -1743,18 +1344,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -1873,8 +1465,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -1890,31 +1482,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -1992,14 +1559,6 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
-      },
-    },
-    "label": Object {
-      "base": Object {
-        "color": "{{colors.inkContrast}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
       },
     },
     "linkFooter": Object {
@@ -2334,17 +1893,6 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -2408,41 +1956,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
@@ -3315,186 +2828,36 @@ Object {
     "whiteTint090": "rgba(255,255,255,0.9)",
   },
   "componentDefaults": Object {
-    "assistiveText": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody030",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody020",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody010",
-      },
-    },
     "banner": Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
-      },
-    },
-    "byline": Object {
-      "divider": Object {
-        "spaceInline": "space020",
-        "stylePreset": "inkNonEssential",
-      },
-      "link": Object {
-        "stylePreset": "linkInline",
-        "typographyPreset": "utilityMeta020",
-      },
-      "spaceStack": "space020",
-      "stylePreset": "inkSubtle",
-      "typographyPreset": "utilityMeta020",
-    },
-    "caption": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "captionInset": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceInset": Object {
-        "md": "spaceInset050",
-        "xs": "spaceInset040",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "checkbox": Object {
-      "large": Object {
-        "feedback": Object {
-          "size": "sizing090",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing070",
-          "spaceInline": "space040",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody030",
-        },
-        "spaceStack": "space000",
-      },
-      "medium": Object {
-        "feedback": Object {
-          "size": "sizing080",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing060",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
-      },
-      "small": Object {
-        "feedback": Object {
-          "size": "sizing070",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing050",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
       },
     },
     "contentPrimary": Object {
@@ -3636,9 +2999,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -3722,31 +3082,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -3823,26 +3158,6 @@ Object {
       "spaceInset": "spaceInset040",
       "stylePreset": "inlineMessageInformative",
       "width": "100%",
-    },
-    "label": Object {
-      "large": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel030",
-      },
-      "medium": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel020",
-      },
-      "small": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel010",
-      },
     },
     "modal": Object {
       "closeButton": Object {
@@ -4115,56 +3430,6 @@ Object {
     "tabs": Object {
       "spaceInline": "space060",
     },
-    "textField": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody030",
-        "width": "100%",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing080",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing060",
-        "spaceInset": "spaceInset020",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-    },
     "toast": Object {
       "content": Object {
         "message": Object {
@@ -4383,41 +3648,9 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "assistiveText": Object {
-      "base": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-      "invalid": Object {
-        "color": "{{colors.inkNegative}}",
-      },
-      "valid": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-    },
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -4588,117 +3821,6 @@ Object {
         "iconColor": "{{colors.inkPositive}}",
       },
     },
-    "checkboxFeedback": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "focus": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-    },
-    "checkboxInput": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-      "checked": Object {
-        "backgroundColor": "{{colors.interactiveInput040}}",
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "checked:disabled": Object {
-        "backgroundColor": "{{colors.interactiveDisabled010}}",
-        "borderColor": "{{colors.interactiveDisabled010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "checked:focus": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:invalid": Object {
-        "backgroundColor": "{{colors.interactiveNegative040}}",
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "checked:invalid:focus": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:valid": Object {
-        "backgroundColor": "{{colors.interactivePositive040}}",
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "checked:valid:focus": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "disabled": Object {
-        "borderColor": "{{colors.interactiveDisabled010}}",
-      },
-      "focus": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "focus:hover": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "hover": Object {
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "invalid": Object {
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "invalid:focus": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:focus:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "valid": Object {
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "valid:focus": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:focus:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-    },
     "closeIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interactiveSecondary040}}",
@@ -4794,14 +3916,6 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
-    "controlLabel": Object {
-      "base": Object {
-        "color": "{{colors.inkBase}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-    },
     "crossIconContainer": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
@@ -4812,18 +3926,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -4942,8 +4047,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -4959,31 +4064,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -5061,14 +4141,6 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
-      },
-    },
-    "label": Object {
-      "base": Object {
-        "color": "{{colors.inkContrast}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
       },
     },
     "linkFooter": Object {
@@ -5403,17 +4475,6 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -5477,41 +4538,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
@@ -6384,186 +5410,36 @@ Object {
     "whiteTint090": "rgba(255,255,255,0.9)",
   },
   "componentDefaults": Object {
-    "assistiveText": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody030",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody020",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody010",
-      },
-    },
     "banner": Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
-      },
-    },
-    "byline": Object {
-      "divider": Object {
-        "spaceInline": "space020",
-        "stylePreset": "inkNonEssential",
-      },
-      "link": Object {
-        "stylePreset": "linkInline",
-        "typographyPreset": "utilityMeta020",
-      },
-      "spaceStack": "space020",
-      "stylePreset": "inkSubtle",
-      "typographyPreset": "utilityMeta020",
-    },
-    "caption": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "captionInset": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceInset": Object {
-        "md": "spaceInset050",
-        "xs": "spaceInset040",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "checkbox": Object {
-      "large": Object {
-        "feedback": Object {
-          "size": "sizing090",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing070",
-          "spaceInline": "space040",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody030",
-        },
-        "spaceStack": "space000",
-      },
-      "medium": Object {
-        "feedback": Object {
-          "size": "sizing080",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing060",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
-      },
-      "small": Object {
-        "feedback": Object {
-          "size": "sizing070",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing050",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
       },
     },
     "contentPrimary": Object {
@@ -6705,9 +5581,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -6791,31 +5664,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -6892,26 +5740,6 @@ Object {
       "spaceInset": "spaceInset040",
       "stylePreset": "inlineMessageInformative",
       "width": "100%",
-    },
-    "label": Object {
-      "large": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel030",
-      },
-      "medium": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel020",
-      },
-      "small": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel010",
-      },
     },
     "modal": Object {
       "closeButton": Object {
@@ -7184,56 +6012,6 @@ Object {
     "tabs": Object {
       "spaceInline": "space060",
     },
-    "textField": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody030",
-        "width": "100%",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing080",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing060",
-        "spaceInset": "spaceInset020",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-    },
     "toast": Object {
       "content": Object {
         "message": Object {
@@ -7452,41 +6230,9 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "assistiveText": Object {
-      "base": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-      "invalid": Object {
-        "color": "{{colors.inkNegative}}",
-      },
-      "valid": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-    },
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -7657,117 +6403,6 @@ Object {
         "iconColor": "{{colors.inkPositive}}",
       },
     },
-    "checkboxFeedback": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "focus": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-    },
-    "checkboxInput": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-      "checked": Object {
-        "backgroundColor": "{{colors.interactiveInput040}}",
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "checked:disabled": Object {
-        "backgroundColor": "{{colors.interactiveDisabled010}}",
-        "borderColor": "{{colors.interactiveDisabled010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "checked:focus": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:invalid": Object {
-        "backgroundColor": "{{colors.interactiveNegative040}}",
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "checked:invalid:focus": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:valid": Object {
-        "backgroundColor": "{{colors.interactivePositive040}}",
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "checked:valid:focus": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "disabled": Object {
-        "borderColor": "{{colors.interactiveDisabled010}}",
-      },
-      "focus": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "focus:hover": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "hover": Object {
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "invalid": Object {
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "invalid:focus": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:focus:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "valid": Object {
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "valid:focus": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:focus:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-    },
     "closeIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interactiveSecondary040}}",
@@ -7863,14 +6498,6 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
-    "controlLabel": Object {
-      "base": Object {
-        "color": "{{colors.inkBase}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-    },
     "crossIconContainer": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
@@ -7881,18 +6508,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -8011,8 +6629,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -8028,31 +6646,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -8130,14 +6723,6 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
-      },
-    },
-    "label": Object {
-      "base": Object {
-        "color": "{{colors.inkContrast}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
       },
     },
     "linkFooter": Object {
@@ -8472,17 +7057,6 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -8546,41 +7120,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
@@ -9453,186 +7992,36 @@ Object {
     "whiteTint090": "rgba(255,255,255,0.9)",
   },
   "componentDefaults": Object {
-    "assistiveText": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody030",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody020",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody010",
-      },
-    },
     "banner": Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
-      },
-    },
-    "byline": Object {
-      "divider": Object {
-        "spaceInline": "space020",
-        "stylePreset": "inkNonEssential",
-      },
-      "link": Object {
-        "stylePreset": "linkInline",
-        "typographyPreset": "utilityMeta020",
-      },
-      "spaceStack": "space020",
-      "stylePreset": "inkSubtle",
-      "typographyPreset": "utilityMeta020",
-    },
-    "caption": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "captionInset": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceInset": Object {
-        "md": "spaceInset050",
-        "xs": "spaceInset040",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "checkbox": Object {
-      "large": Object {
-        "feedback": Object {
-          "size": "sizing090",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing070",
-          "spaceInline": "space040",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody030",
-        },
-        "spaceStack": "space000",
-      },
-      "medium": Object {
-        "feedback": Object {
-          "size": "sizing080",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing060",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
-      },
-      "small": Object {
-        "feedback": Object {
-          "size": "sizing070",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing050",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
       },
     },
     "contentPrimary": Object {
@@ -9774,9 +8163,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -9860,31 +8246,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -9961,26 +8322,6 @@ Object {
       "spaceInset": "spaceInset040",
       "stylePreset": "inlineMessageInformative",
       "width": "100%",
-    },
-    "label": Object {
-      "large": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel030",
-      },
-      "medium": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel020",
-      },
-      "small": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel010",
-      },
     },
     "modal": Object {
       "closeButton": Object {
@@ -10253,56 +8594,6 @@ Object {
     "tabs": Object {
       "spaceInline": "space060",
     },
-    "textField": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody030",
-        "width": "100%",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing080",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing060",
-        "spaceInset": "spaceInset020",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-    },
     "toast": Object {
       "content": Object {
         "message": Object {
@@ -10521,41 +8812,9 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "assistiveText": Object {
-      "base": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-      "invalid": Object {
-        "color": "{{colors.inkNegative}}",
-      },
-      "valid": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-    },
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -10726,117 +8985,6 @@ Object {
         "iconColor": "{{colors.inkPositive}}",
       },
     },
-    "checkboxFeedback": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "focus": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-    },
-    "checkboxInput": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-      "checked": Object {
-        "backgroundColor": "{{colors.interactiveInput040}}",
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "checked:disabled": Object {
-        "backgroundColor": "{{colors.interactiveDisabled010}}",
-        "borderColor": "{{colors.interactiveDisabled010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "checked:focus": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:invalid": Object {
-        "backgroundColor": "{{colors.interactiveNegative040}}",
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "checked:invalid:focus": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:valid": Object {
-        "backgroundColor": "{{colors.interactivePositive040}}",
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "checked:valid:focus": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "disabled": Object {
-        "borderColor": "{{colors.interactiveDisabled010}}",
-      },
-      "focus": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "focus:hover": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "hover": Object {
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "invalid": Object {
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "invalid:focus": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:focus:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "valid": Object {
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "valid:focus": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:focus:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-    },
     "closeIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interactiveSecondary040}}",
@@ -10932,14 +9080,6 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
-    "controlLabel": Object {
-      "base": Object {
-        "color": "{{colors.inkBase}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-    },
     "crossIconContainer": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
@@ -10950,18 +9090,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -11080,8 +9211,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -11097,31 +9228,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -11199,14 +9305,6 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
-      },
-    },
-    "label": Object {
-      "base": Object {
-        "color": "{{colors.inkContrast}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
       },
     },
     "linkFooter": Object {
@@ -11541,17 +9639,6 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -11615,41 +9702,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
@@ -12522,186 +10574,36 @@ Object {
     "whiteTint090": "rgba(255,255,255,0.9)",
   },
   "componentDefaults": Object {
-    "assistiveText": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody030",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody020",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody010",
-      },
-    },
     "banner": Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
-      },
-    },
-    "byline": Object {
-      "divider": Object {
-        "spaceInline": "space020",
-        "stylePreset": "inkNonEssential",
-      },
-      "link": Object {
-        "stylePreset": "linkInline",
-        "typographyPreset": "utilityMeta020",
-      },
-      "spaceStack": "space020",
-      "stylePreset": "inkSubtle",
-      "typographyPreset": "utilityMeta020",
-    },
-    "caption": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "captionInset": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceInset": Object {
-        "md": "spaceInset050",
-        "xs": "spaceInset040",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "checkbox": Object {
-      "large": Object {
-        "feedback": Object {
-          "size": "sizing090",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing070",
-          "spaceInline": "space040",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody030",
-        },
-        "spaceStack": "space000",
-      },
-      "medium": Object {
-        "feedback": Object {
-          "size": "sizing080",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing060",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
-      },
-      "small": Object {
-        "feedback": Object {
-          "size": "sizing070",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing050",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
       },
     },
     "contentPrimary": Object {
@@ -12843,9 +10745,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -12929,31 +10828,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -13030,26 +10904,6 @@ Object {
       "spaceInset": "spaceInset040",
       "stylePreset": "inlineMessageInformative",
       "width": "100%",
-    },
-    "label": Object {
-      "large": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel030",
-      },
-      "medium": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel020",
-      },
-      "small": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel010",
-      },
     },
     "modal": Object {
       "closeButton": Object {
@@ -13322,56 +11176,6 @@ Object {
     "tabs": Object {
       "spaceInline": "space060",
     },
-    "textField": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody030",
-        "width": "100%",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing080",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing060",
-        "spaceInset": "spaceInset020",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-    },
     "toast": Object {
       "content": Object {
         "message": Object {
@@ -13590,41 +11394,9 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "assistiveText": Object {
-      "base": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-      "invalid": Object {
-        "color": "{{colors.inkNegative}}",
-      },
-      "valid": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-    },
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -13795,117 +11567,6 @@ Object {
         "iconColor": "{{colors.inkPositive}}",
       },
     },
-    "checkboxFeedback": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "focus": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-    },
-    "checkboxInput": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-      "checked": Object {
-        "backgroundColor": "{{colors.interactiveInput040}}",
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "checked:disabled": Object {
-        "backgroundColor": "{{colors.interactiveDisabled010}}",
-        "borderColor": "{{colors.interactiveDisabled010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "checked:focus": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:invalid": Object {
-        "backgroundColor": "{{colors.interactiveNegative040}}",
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "checked:invalid:focus": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:valid": Object {
-        "backgroundColor": "{{colors.interactivePositive040}}",
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "checked:valid:focus": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "disabled": Object {
-        "borderColor": "{{colors.interactiveDisabled010}}",
-      },
-      "focus": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "focus:hover": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "hover": Object {
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "invalid": Object {
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "invalid:focus": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:focus:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "valid": Object {
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "valid:focus": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:focus:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-    },
     "closeIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interactiveSecondary040}}",
@@ -14001,14 +11662,6 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
-    "controlLabel": Object {
-      "base": Object {
-        "color": "{{colors.inkBase}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-    },
     "crossIconContainer": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
@@ -14019,18 +11672,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -14149,8 +11793,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -14166,31 +11810,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -14268,14 +11887,6 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
-      },
-    },
-    "label": Object {
-      "base": Object {
-        "color": "{{colors.inkContrast}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
       },
     },
     "linkFooter": Object {
@@ -14610,17 +12221,6 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -14684,41 +12284,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
@@ -15591,186 +13156,36 @@ Object {
     "whiteTint090": "rgba(255,255,255,0.9)",
   },
   "componentDefaults": Object {
-    "assistiveText": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody030",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody020",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody010",
-      },
-    },
     "banner": Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
-      },
-    },
-    "byline": Object {
-      "divider": Object {
-        "spaceInline": "space020",
-        "stylePreset": "inkNonEssential",
-      },
-      "link": Object {
-        "stylePreset": "linkInline",
-        "typographyPreset": "utilityMeta020",
-      },
-      "spaceStack": "space020",
-      "stylePreset": "inkSubtle",
-      "typographyPreset": "utilityMeta020",
-    },
-    "caption": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "captionInset": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceInset": Object {
-        "md": "spaceInset050",
-        "xs": "spaceInset040",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "checkbox": Object {
-      "large": Object {
-        "feedback": Object {
-          "size": "sizing090",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing070",
-          "spaceInline": "space040",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody030",
-        },
-        "spaceStack": "space000",
-      },
-      "medium": Object {
-        "feedback": Object {
-          "size": "sizing080",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing060",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
-      },
-      "small": Object {
-        "feedback": Object {
-          "size": "sizing070",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing050",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
       },
     },
     "contentPrimary": Object {
@@ -15912,9 +13327,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -15998,31 +13410,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -16099,26 +13486,6 @@ Object {
       "spaceInset": "spaceInset040",
       "stylePreset": "inlineMessageInformative",
       "width": "100%",
-    },
-    "label": Object {
-      "large": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel030",
-      },
-      "medium": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel020",
-      },
-      "small": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel010",
-      },
     },
     "modal": Object {
       "closeButton": Object {
@@ -16391,56 +13758,6 @@ Object {
     "tabs": Object {
       "spaceInline": "space060",
     },
-    "textField": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody030",
-        "width": "100%",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing080",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing060",
-        "spaceInset": "spaceInset020",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-    },
     "toast": Object {
       "content": Object {
         "message": Object {
@@ -16659,41 +13976,9 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "assistiveText": Object {
-      "base": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-      "invalid": Object {
-        "color": "{{colors.inkNegative}}",
-      },
-      "valid": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-    },
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -16864,117 +14149,6 @@ Object {
         "iconColor": "{{colors.inkPositive}}",
       },
     },
-    "checkboxFeedback": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "focus": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-    },
-    "checkboxInput": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-      "checked": Object {
-        "backgroundColor": "{{colors.interactiveInput040}}",
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "checked:disabled": Object {
-        "backgroundColor": "{{colors.interactiveDisabled010}}",
-        "borderColor": "{{colors.interactiveDisabled010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "checked:focus": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:invalid": Object {
-        "backgroundColor": "{{colors.interactiveNegative040}}",
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "checked:invalid:focus": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:valid": Object {
-        "backgroundColor": "{{colors.interactivePositive040}}",
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "checked:valid:focus": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "disabled": Object {
-        "borderColor": "{{colors.interactiveDisabled010}}",
-      },
-      "focus": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "focus:hover": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "hover": Object {
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "invalid": Object {
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "invalid:focus": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:focus:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "valid": Object {
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "valid:focus": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:focus:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-    },
     "closeIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interactiveSecondary040}}",
@@ -17070,14 +14244,6 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
-    "controlLabel": Object {
-      "base": Object {
-        "color": "{{colors.inkBase}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-    },
     "crossIconContainer": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
@@ -17088,18 +14254,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -17218,8 +14375,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -17235,31 +14392,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -17337,14 +14469,6 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
-      },
-    },
-    "label": Object {
-      "base": Object {
-        "color": "{{colors.inkContrast}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
       },
     },
     "linkFooter": Object {
@@ -17679,17 +14803,6 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -17753,41 +14866,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
@@ -18660,186 +15738,36 @@ Object {
     "whiteTint090": "rgba(255,255,255,0.9)",
   },
   "componentDefaults": Object {
-    "assistiveText": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody030",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody020",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody010",
-      },
-    },
     "banner": Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
-      },
-    },
-    "byline": Object {
-      "divider": Object {
-        "spaceInline": "space020",
-        "stylePreset": "inkNonEssential",
-      },
-      "link": Object {
-        "stylePreset": "linkInline",
-        "typographyPreset": "utilityMeta020",
-      },
-      "spaceStack": "space020",
-      "stylePreset": "inkSubtle",
-      "typographyPreset": "utilityMeta020",
-    },
-    "caption": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "captionInset": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceInset": Object {
-        "md": "spaceInset050",
-        "xs": "spaceInset040",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "checkbox": Object {
-      "large": Object {
-        "feedback": Object {
-          "size": "sizing090",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing070",
-          "spaceInline": "space040",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody030",
-        },
-        "spaceStack": "space000",
-      },
-      "medium": Object {
-        "feedback": Object {
-          "size": "sizing080",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing060",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
-      },
-      "small": Object {
-        "feedback": Object {
-          "size": "sizing070",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing050",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
       },
     },
     "contentPrimary": Object {
@@ -18981,9 +15909,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -19067,31 +15992,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -19168,26 +16068,6 @@ Object {
       "spaceInset": "spaceInset040",
       "stylePreset": "inlineMessageInformative",
       "width": "100%",
-    },
-    "label": Object {
-      "large": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel030",
-      },
-      "medium": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel020",
-      },
-      "small": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel010",
-      },
     },
     "modal": Object {
       "closeButton": Object {
@@ -19460,56 +16340,6 @@ Object {
     "tabs": Object {
       "spaceInline": "space060",
     },
-    "textField": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody030",
-        "width": "100%",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing080",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing060",
-        "spaceInset": "spaceInset020",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-    },
     "toast": Object {
       "content": Object {
         "message": Object {
@@ -19728,41 +16558,9 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "assistiveText": Object {
-      "base": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-      "invalid": Object {
-        "color": "{{colors.inkNegative}}",
-      },
-      "valid": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-    },
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -19933,117 +16731,6 @@ Object {
         "iconColor": "{{colors.inkPositive}}",
       },
     },
-    "checkboxFeedback": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "focus": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-    },
-    "checkboxInput": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-      "checked": Object {
-        "backgroundColor": "{{colors.interactiveInput040}}",
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "checked:disabled": Object {
-        "backgroundColor": "{{colors.interactiveDisabled010}}",
-        "borderColor": "{{colors.interactiveDisabled010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "checked:focus": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:invalid": Object {
-        "backgroundColor": "{{colors.interactiveNegative040}}",
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "checked:invalid:focus": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:valid": Object {
-        "backgroundColor": "{{colors.interactivePositive040}}",
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "checked:valid:focus": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "disabled": Object {
-        "borderColor": "{{colors.interactiveDisabled010}}",
-      },
-      "focus": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "focus:hover": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "hover": Object {
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "invalid": Object {
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "invalid:focus": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:focus:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "valid": Object {
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "valid:focus": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:focus:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-    },
     "closeIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interactiveSecondary040}}",
@@ -20139,14 +16826,6 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
-    "controlLabel": Object {
-      "base": Object {
-        "color": "{{colors.inkBase}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-    },
     "crossIconContainer": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
@@ -20157,18 +16836,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -20287,8 +16957,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -20304,31 +16974,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -20406,14 +17051,6 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
-      },
-    },
-    "label": Object {
-      "base": Object {
-        "color": "{{colors.inkContrast}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
       },
     },
     "linkFooter": Object {
@@ -20748,17 +17385,6 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -20822,41 +17448,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
@@ -21729,186 +18320,36 @@ Object {
     "whiteTint090": "rgba(255,255,255,0.9)",
   },
   "componentDefaults": Object {
-    "assistiveText": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space030",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody030",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody020",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing030",
-        "startEnhancer": Object {
-          "iconSize": "iconSize010",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "assistiveText",
-        "typographyPreset": "utilityBody010",
-      },
-    },
     "banner": Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
-      },
-    },
-    "byline": Object {
-      "divider": Object {
-        "spaceInline": "space020",
-        "stylePreset": "inkNonEssential",
-      },
-      "link": Object {
-        "stylePreset": "linkInline",
-        "typographyPreset": "utilityMeta020",
-      },
-      "spaceStack": "space020",
-      "stylePreset": "inkSubtle",
-      "typographyPreset": "utilityMeta020",
-    },
-    "caption": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "captionInset": Object {
-      "credit": Object {
-        "stylePreset": "uppercaseInkSubtle",
-        "typographyPreset": "utilityMeta010",
-      },
-      "spaceInset": Object {
-        "md": "spaceInset050",
-        "xs": "spaceInset040",
-      },
-      "spaceStack": "space040",
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialCaption010",
-    },
-    "checkbox": Object {
-      "large": Object {
-        "feedback": Object {
-          "size": "sizing090",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing070",
-          "spaceInline": "space040",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody030",
-        },
-        "spaceStack": "space000",
-      },
-      "medium": Object {
-        "feedback": Object {
-          "size": "sizing080",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing060",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
-      },
-      "small": Object {
-        "feedback": Object {
-          "size": "sizing070",
-          "stylePreset": "checkboxFeedback",
-        },
-        "input": Object {
-          "size": "sizing050",
-          "spaceInline": "space030",
-          "stylePreset": "checkboxInput",
-        },
-        "label": Object {
-          "stylePreset": "controlLabel",
-          "typographyPreset": "utilityBody020",
-        },
-        "spaceStack": "space000",
       },
     },
     "contentPrimary": Object {
@@ -22050,9 +18491,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -22136,31 +18574,6 @@ Object {
         "typographyPreset": "utilityButton010",
       },
     },
-    "grid": Object {
-      "columnGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "columns": 12,
-      "containerMargin": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-      "maxWidth": "1920px",
-      "rowGutters": Object {
-        "lg": "space050",
-        "md": "space040",
-        "sm": "space040",
-        "xl": "space050",
-        "xs": "space040",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -22237,26 +18650,6 @@ Object {
       "spaceInset": "spaceInset040",
       "stylePreset": "inlineMessageInformative",
       "width": "100%",
-    },
-    "label": Object {
-      "large": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel030",
-      },
-      "medium": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel020",
-      },
-      "small": Object {
-        "spaceInline": "space010",
-        "spaceStack": "space040",
-        "stylePreset": "label",
-        "typographyPreset": "utilityLabel010",
-      },
     },
     "modal": Object {
       "closeButton": Object {
@@ -22529,56 +18922,6 @@ Object {
     "tabs": Object {
       "spaceInline": "space060",
     },
-    "textField": Object {
-      "large": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody030",
-        "width": "100%",
-      },
-      "medium": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing080",
-        "spaceInset": "spaceInset030",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-      "small": Object {
-        "endEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "minHeight": "sizing060",
-        "spaceInset": "spaceInset020",
-        "spaceStack": "space020",
-        "startEnhancer": Object {
-          "iconSize": "iconSize020",
-          "spaceInline": "space020",
-        },
-        "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
-        "width": "100%",
-      },
-    },
     "toast": Object {
       "content": Object {
         "message": Object {
@@ -22797,41 +19140,9 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "assistiveText": Object {
-      "base": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-      "invalid": Object {
-        "color": "{{colors.inkNegative}}",
-      },
-      "valid": Object {
-        "color": "{{colors.inkSubtle}}",
-      },
-    },
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -23002,117 +19313,6 @@ Object {
         "iconColor": "{{colors.inkPositive}}",
       },
     },
-    "checkboxFeedback": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "focus": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-    },
-    "checkboxInput": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderColor": "{{colors.interactiveInput020}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-      "checked": Object {
-        "backgroundColor": "{{colors.interactiveInput040}}",
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "checked:disabled": Object {
-        "backgroundColor": "{{colors.interactiveDisabled010}}",
-        "borderColor": "{{colors.interactiveDisabled010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "checked:focus": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput050}}",
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "checked:invalid": Object {
-        "backgroundColor": "{{colors.interactiveNegative040}}",
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "checked:invalid:focus": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:invalid:hover": Object {
-        "backgroundColor": "{{colors.interactiveNegative050}}",
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "checked:valid": Object {
-        "backgroundColor": "{{colors.interactivePositive040}}",
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "checked:valid:focus": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:focus:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "checked:valid:hover": Object {
-        "backgroundColor": "{{colors.interactivePositive050}}",
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "disabled": Object {
-        "borderColor": "{{colors.interactiveDisabled010}}",
-      },
-      "focus": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "focus:hover": Object {
-        "borderColor": "{{colors.interactiveInput050}}",
-      },
-      "hover": Object {
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "invalid": Object {
-        "borderColor": "{{colors.interactiveNegative040}}",
-      },
-      "invalid:focus": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:focus:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "invalid:hover": Object {
-        "borderColor": "{{colors.interactiveNegative050}}",
-      },
-      "valid": Object {
-        "borderColor": "{{colors.interactivePositive040}}",
-      },
-      "valid:focus": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:focus:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-      "valid:hover": Object {
-        "borderColor": "{{colors.interactivePositive050}}",
-      },
-    },
     "closeIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interactiveSecondary040}}",
@@ -23208,14 +19408,6 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
-    "controlLabel": Object {
-      "base": Object {
-        "color": "{{colors.inkBase}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-    },
     "crossIconContainer": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
@@ -23226,18 +19418,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -23356,8 +19539,8 @@ Object {
     },
     "foundationFeatureCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(static/card-feature-need-help.svg)",
-        "backgroundPosition": "center left",
+        "backgroundImage": "url(static/feature-card-foundations.svg)",
+        "backgroundPosition": "bottom left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
@@ -23373,31 +19556,6 @@ Object {
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-    },
-    "indeterminateProgressIndicatorInverse": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "indeterminateProgressIndicatorNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "indeterminateProgressIndicatorPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "indeterminateProgressIndicatorPrimary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "indeterminateProgressIndicatorSecondary": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkWhiteContrast": Object {
@@ -23475,14 +19633,6 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
-      },
-    },
-    "label": Object {
-      "base": Object {
-        "color": "{{colors.inkContrast}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
       },
     },
     "linkFooter": Object {
@@ -23817,17 +19967,6 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -23891,41 +20030,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
