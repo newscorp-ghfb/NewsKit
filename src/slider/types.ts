@@ -34,10 +34,10 @@ interface CommonProps {
   values: number[];
   overrides?: SliderOverrideProps;
 }
-
+type LabelPositionTypes = LabelPosition | 'before' | 'after' | 'inline';
 export interface StyledTrackProps extends CommonProps {
   dragged: boolean;
-  labelPosition?: LabelPosition;
+  labelPosition?: LabelPositionTypes;
 }
 
 export interface ThumbLabelProps extends StyledTrackProps {
@@ -56,7 +56,7 @@ interface CommonSliderProps extends CommonProps {
   ariaValueText?: string;
   minLabel?: string | React.ComponentType;
   maxLabel?: string | React.ComponentType;
-  labelPosition?: LabelPosition;
+  labelPosition?: LabelPositionTypes;
   thumbLabel?: boolean | React.ComponentType<ThumbLabelProps>;
   thumbIcon?: React.ComponentType;
   dataTestId?: string;
