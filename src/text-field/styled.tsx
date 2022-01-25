@@ -2,7 +2,7 @@ import {getTypographyPreset, styled, getResponsiveSpace} from '../utils/style';
 import {FormInputTextFieldProps, TextFieldSize} from './types';
 
 interface StyledTextFieldProps extends FormInputTextFieldProps {
-  $size: TextFieldSize;
+  $size: TextFieldSize | 'small' | 'medium' | 'large';
 }
 
 export const StyledInput = styled.input<
