@@ -4,7 +4,6 @@ import {
   StyledTable,
   StyledContainer,
   StyledTableRow,
-  StyledIconContainer,
 } from './styled';
 import {TableProps} from './types';
 import {columnMap} from './column-map';
@@ -18,9 +17,7 @@ export const Table: React.FC<TableProps> = ({rows, columns, columnsIcon}) => (
           {columns.map(columnName => (
             <StyledHeader key={columnName} {...(columnMap[columnName] || {})}>
               {columnsIcon && (
-                <StyledIconContainer>
-                  {columnsIcon[columnName.toLowerCase()]}
-                </StyledIconContainer>
+                <div>{columnsIcon[columnName.toLowerCase()]}</div>
               )}
               {columnMap[columnName]?.cellHeader || columnName}
             </StyledHeader>

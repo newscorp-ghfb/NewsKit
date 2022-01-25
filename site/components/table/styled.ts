@@ -49,7 +49,3 @@ export const StyledDataCell = styled.td<TableCellProps>`
 export const StyledContainer = styled.div`
   overflow-x: auto;
 `;
-
-export const StyledIconContainer = styled.div`
-  margin-bottom: ${getSpacingFromTheme('space030')};
-`;
