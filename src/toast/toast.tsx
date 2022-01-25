@@ -31,7 +31,7 @@ const ThemelessToast: React.FC<ToastProps> = ({
 }) => {
   const theme = useTheme();
   const dividerOverrides: DividerOverrides = {
-    ...theme.componentDefaults.toast.divider,
+    ...theme.componentDefaults!.toast.divider,
     ...filterOutFalsyProperties(overrides?.divider),
   };
 

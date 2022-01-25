@@ -68,7 +68,7 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
     seekBar: {slider: seekBarSliderDefaults},
     controls: {popoutButton: popoutButtonDefaults, ...controlButtonsDefaults},
     volumeControl: volumeControlDefaults,
-  } = theme.componentDefaults.audioPlayer;
+  } = theme.componentDefaults!.audioPlayer;
 
   const [volume, setVolume] = useState(0);
   const [duration, setDuration] = useState(0);

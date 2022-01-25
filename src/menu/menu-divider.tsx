@@ -3,16 +3,13 @@ import {useMenuContext} from './context';
 import {MenuDividerProps} from './types';
 import {StyledMenuDivider} from './styled';
 import {Divider} from '../divider';
-import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 
 export const MenuDivider = React.forwardRef<HTMLLIElement, MenuDividerProps>(
   ({overrides}, ref) => {
     const {vertical, overrides: menuOverrides} = useMenuContext();
 
-    const theme = useTheme();
     const dividerOverrides = {
-      ...theme.componentDefaults.menuDivider,
       ...filterOutFalsyProperties(overrides),
     };
 

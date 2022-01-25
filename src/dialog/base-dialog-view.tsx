@@ -48,7 +48,7 @@ export const BaseDialogView = React.forwardRef<
         mergeBreakpointObject(
           Object.keys(theme.breakpoints) as BreakpointKeys[],
         ),
-        theme.componentDefaults[path].closeButton,
+        theme.componentDefaults![path].closeButton,
         filterOutFalsyProperties(overrides.closeButton),
       ),
     };

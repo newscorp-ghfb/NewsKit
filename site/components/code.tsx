@@ -93,8 +93,9 @@ export const CodeFromDefaultPresets: React.FC<CodeFromDefaultPresetsProps> = ({
   const [codeExample, setCodeExample] = useState('');
 
   useEffect(() => {
-    const defaultsFromTheme =
-      newskitLightTheme.componentDefaults[componentName];
+    const defaultsFromTheme = newskitLightTheme.componentDefaults![
+      componentName
+    ];
     if (defaultsFromTheme) {
       setCodeExample(defaultsFromTheme);
     } else {

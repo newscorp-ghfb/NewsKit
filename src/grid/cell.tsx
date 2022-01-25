@@ -100,7 +100,7 @@ const generateBreakpointConfig = (props: CellProps & GridProps & ThemeProp) => {
         cellCss.marginLeft = margin ? `-${margin}px` : 0;
       } else {
         // Standard 1-12 column spanning Cell
-        const colWidth = 100 / theme.componentDefaults.grid.columns;
+        const colWidth = 100 / theme.componentDefaults!.grid.columns;
         const width = +colSpan * colWidth;
         const offsetColumnGutter = colOffset * colWidth;
         cellCss.marginLeft =

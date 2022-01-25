@@ -27,7 +27,7 @@ export interface ThemeBase {
 
   // defaults
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  componentDefaults: Record<string, any>;
+  componentDefaults?: Record<string, any>;
   icons: Record<string, React.ComponentType>;
 }
 

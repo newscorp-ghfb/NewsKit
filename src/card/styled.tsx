@@ -50,7 +50,7 @@ export const StyledCardContainerMedia = styled.div<
       if (isHorizontal(layout)) {
         const [mediaRatio] = getHorizontalRatio(
           layout,
-          theme.componentDefaults.card,
+          theme.componentDefaults!.card,
           overrides as CardOverridesProps,
         );
         return {flex: mediaRatio};
@@ -91,7 +91,7 @@ export const StyledCardContainerTeaserAndActions = styled.div<
       if (isHorizontal(layout)) {
         const [, teaserRatio] = getHorizontalRatio(
           layout,
-          theme.componentDefaults.card,
+          theme.componentDefaults!.card,
           overrides as CardOverridesProps,
         );
         return {display: 'flex', flexDirection: 'column', flex: teaserRatio};
