@@ -9,7 +9,13 @@ import {
 } from '../../../components/illustrations/illustration-loader';
 import {Link} from '../../../components/link';
 import {MediaItem, MediaList} from '../../../components/media-list';
-import {IconFilledNpm} from '../../../components/icons';
+import {
+  IconFilledNpm,
+  IconFilledChrome,
+  IconFilledFirefox,
+  IconFilledSafari,
+  IconFilledEdge,
+} from '../../../components/icons';
 import {Table} from '../../../components/table';
 import {
   ContentSection,
@@ -92,6 +98,13 @@ const PRINCIPLE_CARDS = [
     },
   },
 ] as MediaItem[];
+
+const COLUMNS_ICON = {
+  chrome: <IconFilledChrome overrides={{size: 'iconSize050'}} />,
+  firefox: <IconFilledFirefox overrides={{size: 'iconSize050'}} />,
+  safari: <IconFilledSafari overrides={{size: 'iconSize050'}} />,
+  edge: <IconFilledEdge overrides={{size: 'iconSize050'}} />,
+};
 
 export default (layoutProps: LayoutProps) => (
   <GuidePageTemplate
@@ -231,6 +244,7 @@ export default (layoutProps: LayoutProps) => (
           showSeparator
         >
           <Table
+            columnsIcon={COLUMNS_ICON}
             columns={['Chrome', 'Safari', 'Firefox', 'Edge']}
             rows={[
               {
