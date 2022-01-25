@@ -141,7 +141,7 @@ Only the owner SHOULD close their PR, unless the PR is not inline with the speci
 
 ### Use labels to indicate state of PR
 
-This will better allow the team to prioritise what to look at. [View here](https://github.com/newscorp-ghfb/ncu-newskit/labels)
+This will better allow the team to prioritise what to look at. [View here](https://github.com/newscorp-ghfb/newskit/labels)
 
 ## Merging to develop
 
