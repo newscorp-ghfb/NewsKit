@@ -100,10 +100,10 @@ const PRINCIPLE_CARDS = [
 ] as MediaItem[];
 
 const COLUMNS_ICON = {
-  chrome: <IconFilledChrome overrides={{size: 'iconSize050'}} />,
-  firefox: <IconFilledFirefox overrides={{size: 'iconSize050'}} />,
-  safari: <IconFilledSafari overrides={{size: 'iconSize050'}} />,
-  edge: <IconFilledEdge overrides={{size: 'iconSize050'}} />,
+  chrome: <IconFilledChrome overrides={{size: 'iconSize040'}} />,
+  firefox: <IconFilledFirefox overrides={{size: 'iconSize040'}} />,
+  safari: <IconFilledSafari overrides={{size: 'iconSize040'}} />,
+  edge: <IconFilledEdge overrides={{size: 'iconSize040'}} />,
 };
 
 export const ButtonContainer = styled.span`
