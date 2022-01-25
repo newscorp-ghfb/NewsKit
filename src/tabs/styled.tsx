@@ -127,7 +127,7 @@ export const StyledTabsBarIndicator = styled.div<
   position: absolute;
   z-index: 2;
   ${({indicatorPosition, vertical}) =>
-    alignmentPosition(indicatorPosition, vertical)};
+    alignmentPosition(indicatorPosition as TabsIndicatorPosition, vertical)};
 `;
 
 export const StyledTabsBarTrack = styled.div<
@@ -150,7 +150,7 @@ export const StyledTabsBarTrack = styled.div<
     )}
 
   ${({indicatorPosition, vertical}) =>
-    alignmentPosition(indicatorPosition, vertical)};
+    alignmentPosition(indicatorPosition as TabsIndicatorPosition, vertical)};
 `;
 
 const tabFlexAlign = {

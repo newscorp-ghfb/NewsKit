@@ -28,16 +28,16 @@ export enum TabsIndicatorPosition {
   End = 'end',
   None = 'none',
 }
-
+type TabsDistributionTypes = TabsDistribution | 'start' | 'grow' | 'equal';
 export interface TabsProps {
-  size?: TabSize;
+  size?: TabSize | 'small' | 'medium' | 'large';
   children: React.ReactElement<TabProps>[];
   divider?: boolean;
   vertical?: boolean;
-  distribution?: TabsDistribution;
+  distribution?: TabsDistributionTypes;
   initialSelectedIndex?: number;
   selectedIndex?: number;
-  indicatorPosition?: TabsIndicatorPosition;
+  indicatorPosition?: TabsIndicatorPosition | 'start' | 'end' | 'none';
   align?: TabAlign;
   onChange?: (selectedIndex: number) => void;
   overrides?: {
@@ -73,7 +73,7 @@ export interface TabPanelProps {
 }
 
 export interface DistributionWrapperProps {
-  distribution: TabsDistribution;
+  distribution: TabsDistributionTypes;
   vertical: boolean;
   last: boolean;
   overrides?: TabsProps['overrides'];
