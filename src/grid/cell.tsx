@@ -12,6 +12,8 @@ import {
 } from './utils';
 import {ThemeProp} from '../utils/style-types';
 import {BreakpointKeys} from '../theme';
+import {withOwnTheme} from '../utils/with-own-theme';
+import defaults from './defaults';
 
 const cleanCss = (
   acc: Record<BreakpointKeys, CSSObject>,
@@ -138,7 +140,9 @@ const filterGridOverrides = (
   return overrides;
 };
 
-export const Cell: React.FC<CellProps> = props => {
+const ThemelessCell: React.FC<CellProps> = props => {
   const gridOverrides = useContext(GridContext);
   return <StyledCell {...filterGridOverrides(gridOverrides)} {...props} />;
 };
+
+export const Cell = withOwnTheme(ThemelessCell)({defaults});
