@@ -1,5 +1,12 @@
 import {MQ} from 'newskit';
 
+type Arg = {
+  renderHeader: () => void;
+  renderDescription: () => void;
+  renderBody: () => void;
+  renderSeparator: () => void;
+};
+
 export interface ContentBaseProps {
   headline?: string;
   description?: string | React.ReactElement;
@@ -23,6 +30,7 @@ export interface ContentBaseProps {
     };
   };
   showSeparator?: boolean;
+  render?: (arg: Arg) => void;
 }
 
 export type ContentPrimaryProps = Omit<ContentBaseProps, 'overrides'>;

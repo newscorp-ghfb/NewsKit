@@ -10,6 +10,7 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
   toc,
   id,
   showSeparator: showDivider,
+  render,
 }) => {
   const {
     headline: {spaceStack: headlineSpace = '', ...headlineOverrides} = {},
@@ -26,9 +27,63 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
   };
   const isPrimary = Boolean(headline && toc && id);
 
+  const renderHeader = () =>
+    headline && (
+      <>
+        <TextBlock {...(isPrimary ? tocAttributes : {})} {...headlineOverrides}>
+          {headline}
+        </TextBlock>
+        {(description || children) && <Block spaceStack={headlineSpace} />}
+      </>
+    );
+
+  const renderDescription = () =>
+    description && (
+      <>
+        <TextBlock as="p" {...descriptionOverrides}>
+          {description}
+        </TextBlock>
+        {children && <Block spaceStack={descriptionSpace} />}
+      </>
+    );
+
+  const renderBody = () => children && <>{children}</>;
+
+  const renderSeparator = () => (
+    <>
+      <Block {...separatorOverrides} />
+      {showDivider && (
+        <Block {...separatorOverrides}>
+          <Divider />
+        </Block>
+      )}
+    </>
+  );
+
+  if (render) {
+    return (
+      <>
+        {render({
+          renderHeader,
+          renderDescription,
+          renderBody,
+          renderSeparator,
+        })}
+      </>
+    );
+  }
+
   return (
     <>
-      {headline && (
+      {/* <div style={{width: '60%', border: '1px solid blue'}}> */}
+      {/* <Grid style={{border: '1px solid blue'}} xsMargin="space000" xsColumnGutter="space000" xsRowGutter="space000">
+        <Cell
+          {...{
+            xs: 12,
+            md: 10,
+          }}
+        > */}
+      {/* {headline && (
         <>
           <TextBlock
             {...(isPrimary ? tocAttributes : {})}
@@ -38,26 +93,33 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
           </TextBlock>
           {(description || children) && <Block spaceStack={headlineSpace} />}
         </>
-      )}
+      )} */}
 
-      {description && (
+      {/* {description && (
         <>
           <TextBlock as="p" {...descriptionOverrides}>
             {description}
           </TextBlock>
           {children && <Block spaceStack={descriptionSpace} />}
         </>
-      )}
+      )} */}
+      {/* </Cell>
+      </Grid> */}
+      {/* </div> */}
 
-      {children && <>{children}</>}
+      {/* {children && <>{children}</>} */}
 
-      <Block {...separatorOverrides} />
-
+      {/* <Block {...separatorOverrides} />
       {showDivider && (
         <Block {...separatorOverrides}>
           <Divider />
         </Block>
-      )}
+      )} */}
+
+      {renderHeader()}
+      {renderDescription()}
+      {renderBody()}
+      {renderSeparator()}
     </>
   );
 };
