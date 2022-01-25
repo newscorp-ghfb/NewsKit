@@ -22,6 +22,7 @@ export interface SelectButtonOverrides extends EnhancerOverrides {
 
 export interface SelectPanelOverrides {
   maxHeight?: MQ<string>;
+  width?: MQ<string>;
   stylePreset?: MQ<string>;
   spaceInset?: MQ<string>;
   spaceStack?: MQ<string>;

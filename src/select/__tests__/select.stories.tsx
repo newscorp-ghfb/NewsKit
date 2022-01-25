@@ -660,27 +660,56 @@ export const StorySelectSimple = () => (
         qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
         pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
       </p>
-      <Block>
-        <StorybookSubHeading>Small</StorybookSubHeading>
-        <Label htmlFor="id-1" size={'small' as TextFieldSize}>
-          Label
-        </Label>
-        <Select
-          aria-describedby="id-1-at"
-          id="id-1"
-          size="small"
-          overrides={{button: {width: '50%'}}}
-        >
-          {items.map(item => (
-            <SelectOption key={item} value={item}>
-              {item}
-            </SelectOption>
-          ))}
-        </Select>
-        <AssistiveText id="id-2-at" size={'small' as TextFieldSize}>
-          Assistive Text
-        </AssistiveText>
-      </Block>
+      <Stack flow={'horizontal-center'} spaceInline="space050">
+        <Block>
+          <StorybookSubHeading>Small</StorybookSubHeading>
+          <Label htmlFor="id-1" size={'small' as TextFieldSize}>
+            Label
+          </Label>
+          <Select
+            aria-describedby="id-1-at"
+            id="id-1"
+            size="small"
+            overrides={{
+              button: {width: '100%'},
+              panel: {width: '320px', maxHeight: 'calc( 80vh - 40px )'},
+            }}
+          >
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+          <AssistiveText id="id-2-at" size={'small' as TextFieldSize}>
+            Assistive Text
+          </AssistiveText>
+        </Block>
+        <Block>
+          <StorybookSubHeading>Small</StorybookSubHeading>
+          <Label htmlFor="id-3" size={'small' as TextFieldSize}>
+            Label
+          </Label>
+          <Select
+            aria-describedby="id-3-at"
+            id="id-3"
+            size="small"
+            overrides={{
+              button: {width: '100%'},
+              panel: {width: '300px', maxHeight: 'calc( 80vh - 40px )'},
+            }}
+          >
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+          <AssistiveText id="id-3-at" size={'small' as TextFieldSize}>
+            Assistive Text
+          </AssistiveText>
+        </Block>
+      </Stack>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
         qui impedit alias maxime, recusandae beatae porro officia ut, quisquam

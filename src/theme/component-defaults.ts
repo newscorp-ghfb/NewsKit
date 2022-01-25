@@ -377,7 +377,7 @@ export const componentDefaults = {
       panel: {
         spaceStack: 'space010',
         stylePreset: 'selectPanel',
-        maxHeight: 'calc( 80vh - 40px )',
+        maxHeight: '184px',
         spaceInset: 'spaceInset020',
       },
     },
