@@ -38,7 +38,7 @@ interface SelectPanelProps {
   overrides?: SelectPanelOverrides;
   children: React.ReactElement<SelectOptionProps>[];
   modal?: MQ<boolean>;
-  onClose: () => void;
+  buttonRef: React.RefObject<HTMLButtonElement>;
 }
 
 const StyledOptionWithPrivateProps = React.forwardRef<
@@ -92,7 +92,7 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       getItemProps,
       selectedItem,
       highlightedIndex,
-      onClose,
+      buttonRef,
       modal,
       ...restProps
     } = props;
@@ -137,7 +137,8 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       return (
         <Modal
           open={isOpen}
-          onDismiss={onClose}
+          onDismiss={() => null}
+          restoreFocusTo={buttonRef.current!}
           overrides={{
             header: {spaceInset: 'space000', minHeight: 'sizing000'},
             panel: {maxHeight: '80vh'},

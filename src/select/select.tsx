@@ -192,7 +192,7 @@ export const Select = React.forwardRef<HTMLInputElement, SelectProps>(
           selectedItem={selectedItem}
           highlightedIndex={highlightedIndex}
           getItemProps={getItemProps}
-          onClose={downshiftButtonPropsExceptRef.onClick}
+          buttonRef={localInputRef}
           modal={modal}
           {...downshiftMenuPropsExceptRef}
           ref={composeRefs(panelRef, downshiftMenuPropsRef)}
