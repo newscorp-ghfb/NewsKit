@@ -74,7 +74,7 @@ const PRINCIPLE_CARDS = [
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Iconography | Newskit design system',
+      title: 'Iconography',
       description:
         'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
     }}

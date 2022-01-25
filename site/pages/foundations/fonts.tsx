@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage, IconFilledInfo, newskitLightTheme} from 'newskit';
+import {InlineMessage, IconFilledInfo, newskitLightTheme} from 'newskit';
 
 import {
   ContentSection,
@@ -109,14 +109,12 @@ const additionalFontPropertiesRows = [
   {
     property: 'wordBreak',
     example: (
-      <Block spaceInline="space050">
-        <Link
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-break"
-          target="_blank"
-        >
-          CSS
-        </Link>
-      </Block>
+      <Link
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-break"
+        target="_blank"
+      >
+        CSS
+      </Link>
     ),
     description:
       'word-break sets whether line breaks appear when the text would otherwise overflow the containing box ',

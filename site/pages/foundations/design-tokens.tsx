@@ -47,7 +47,7 @@ const TokenStyle: React.FC<TextElementProps> = () => {
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Design tokens | Newskit design system',
+      title: 'Design tokens',
       description: 'Design tokens',
     }}
     layoutProps={layoutProps}

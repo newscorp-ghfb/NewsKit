@@ -56,7 +56,7 @@ const shadowRows = getTokenType(newskitLightTheme.shadows, 'shadow').map(
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Shadows | Newskit design system',
+      title: 'Shadows',
       description:
         'Shadows provide visual cues about the distance between layers.',
     }}
