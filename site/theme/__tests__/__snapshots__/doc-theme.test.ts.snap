@@ -1098,28 +1098,6 @@ Object {
         "color": "{{colors.white}}",
       },
     },
-    "inlineMessageInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative020}}",
-        "borderColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "inlineMessageNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
     "inputField": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -3199,28 +3177,6 @@ Object {
     "inkWhiteContrast": Object {
       "base": Object {
         "color": "{{colors.white}}",
-      },
-    },
-    "inlineMessageInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative020}}",
-        "borderColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "inlineMessageNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkNegative}}",
       },
     },
     "inputField": Object {
@@ -5304,28 +5260,6 @@ Object {
         "color": "{{colors.white}}",
       },
     },
-    "inlineMessageInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative020}}",
-        "borderColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "inlineMessageNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
     "inputField": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -7405,28 +7339,6 @@ Object {
     "inkWhiteContrast": Object {
       "base": Object {
         "color": "{{colors.white}}",
-      },
-    },
-    "inlineMessageInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative020}}",
-        "borderColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "inlineMessageNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkNegative}}",
       },
     },
     "inputField": Object {
@@ -9510,28 +9422,6 @@ Object {
         "color": "{{colors.white}}",
       },
     },
-    "inlineMessageInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative020}}",
-        "borderColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "inlineMessageNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
     "inputField": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -11611,28 +11501,6 @@ Object {
     "inkWhiteContrast": Object {
       "base": Object {
         "color": "{{colors.white}}",
-      },
-    },
-    "inlineMessageInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative020}}",
-        "borderColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "inlineMessageNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkNegative}}",
       },
     },
     "inputField": Object {
@@ -13716,28 +13584,6 @@ Object {
         "color": "{{colors.white}}",
       },
     },
-    "inlineMessageInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative020}}",
-        "borderColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "inlineMessageNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
     "inputField": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -15817,28 +15663,6 @@ Object {
     "inkWhiteContrast": Object {
       "base": Object {
         "color": "{{colors.white}}",
-      },
-    },
-    "inlineMessageInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative020}}",
-        "borderColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "inlineMessageNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkNegative}}",
       },
     },
     "inputField": Object {

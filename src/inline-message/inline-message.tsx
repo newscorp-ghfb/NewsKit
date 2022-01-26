@@ -2,6 +2,7 @@ import {Toast} from '../toast';
 import {withDefaultProps} from '../utils';
 import {InlineMessageProps} from './types';
 import defaults from './defaults';
+import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 
 const ThemelessInlineMessage = withDefaultProps<InlineMessageProps>(
@@ -20,4 +21,7 @@ const ThemelessInlineMessage = withDefaultProps<InlineMessageProps>(
   },
 );
 
-export const InlineMessage = withOwnTheme(ThemelessInlineMessage)({defaults});
+export const InlineMessage = withOwnTheme(ThemelessInlineMessage)({
+  defaults,
+  stylePresets,
+});

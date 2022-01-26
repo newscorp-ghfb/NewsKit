@@ -429,28 +429,6 @@ Object {
         "iconColor": "#535353",
       },
     },
-    "inlineMessageInformative": Object {
-      "base": Object {
-        "backgroundColor": "#EBF8F9",
-        "borderColor": "#05717D",
-        "borderRadius": "4px",
-        "borderStyle": "solid",
-        "borderWidth": "0 0 0 4px",
-        "color": "#FFFFFF",
-        "iconColor": "#05717D",
-      },
-    },
-    "inlineMessageNegative": Object {
-      "base": Object {
-        "backgroundColor": "#FFE6E5",
-        "borderColor": "#D20600",
-        "borderRadius": "4px",
-        "borderStyle": "solid",
-        "borderWidth": "0 0 0 4px",
-        "color": "#2E2E2E",
-        "iconColor": "#D20600",
-      },
-    },
     "inputField": Object {
       "base": Object {
         "backgroundColor": "transparent",

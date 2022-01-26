@@ -56,31 +56,3 @@ stylePresets.inputField = {
     backgroundColor: '{{colors.interactiveInput010}}',
   },
 };
-
-// Inline Message
-
-stylePresets.inlineMessageInformative = {
-  base: {
-    backgroundColor: '{{colors.interfaceInformative020}}',
-    borderColor: '{{colors.interfaceInformative010}}',
-    borderStyle: 'solid',
-    borderRadius: '{{borders.borderRadiusRounded010}}',
-    borderWidth:
-      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}',
-    iconColor: '{{colors.inkInformative}}',
-    color: '{{colors.inkInverse}}',
-  },
-};
-
-stylePresets.inlineMessageNegative = {
-  base: {
-    backgroundColor: '{{colors.interfaceNegative020}}',
-    borderColor: '{{colors.interfaceNegative010}}',
-    borderStyle: 'solid',
-    borderRadius: '{{borders.borderRadiusRounded010}}',
-    borderWidth:
-      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}',
-    iconColor: '{{colors.inkNegative}}',
-    color: '{{colors.inkBase}}',
-  },
-};
