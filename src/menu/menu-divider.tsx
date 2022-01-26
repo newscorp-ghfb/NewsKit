@@ -1,9 +1,9 @@
 import React from 'react';
-import {useTheme} from '@emotion/react';
 import {useMenuContext} from './context';
 import {MenuDividerProps} from './types';
 import {StyledMenuDivider} from './styled';
 import {Divider} from '../divider';
+import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 
 export const MenuDivider = React.forwardRef<HTMLLIElement, MenuDividerProps>(
