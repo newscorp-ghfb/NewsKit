@@ -26,7 +26,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
   ) => {
     const theme = useTheme();
     const [isFocused, setIsFocused] = React.useState(false);
-    
+
     const onInputFocus = React.useCallback(
       event => {
         setIsFocused(true);
@@ -70,7 +70,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
       'placeholderColor',
       textFieldStylePreset,
     );
-     
+
     return (
       <>
         <WithEnhancers

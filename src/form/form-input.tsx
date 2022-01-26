@@ -68,8 +68,8 @@ const ThemelessFormInput = ({
           state,
           iconSize: validationIconSize,
         });
- 
-        const isRequired = rules && rules.required !== undefined
+
+        const isRequired = rules && rules.required !== undefined;
 
         const inputFieldContext = {
           name,
@@ -83,7 +83,7 @@ const ThemelessFormInput = ({
           assistiveTextId,
           labelId,
           statusIcon,
-          isRequired
+          isRequired,
         };
 
         return (
@@ -150,7 +150,6 @@ export const FormInput = withOwnTheme(ThemelessFormInput)({
     ...assistiveTextDefaults,
   },
 });
-
 
 export const FormInputLabel = ({children, ...props}: LabelProps) => {
   const {size, state, id, labelId} = useFormFieldContext();
