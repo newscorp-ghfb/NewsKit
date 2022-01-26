@@ -1,8 +1,11 @@
 import {Toast} from '../toast';
 import {withDefaultProps} from '../utils';
 import {InlineMessageProps} from './types';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
-export const InlineMessage = withDefaultProps<InlineMessageProps>(
+const ThemelessInlineMessage = withDefaultProps<InlineMessageProps>(
   Toast,
   ({
     role: 'region',
@@ -17,3 +20,8 @@ export const InlineMessage = withDefaultProps<InlineMessageProps>(
     width: '100%',
   },
 );
+
+export const InlineMessage = withOwnTheme(ThemelessInlineMessage)({
+  defaults,
+  stylePresets,
+});
