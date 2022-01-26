@@ -19,7 +19,6 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
       onBlur,
       onFocus,
       onChange,
-      isRequired,
       ...restProps
     },
     inputRef,
@@ -82,8 +81,6 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
           endEnhancer={endEnhancer}
         >
           <StyledInput
-            aria-required={isRequired}
-            aria-invalid={state === 'invalid' ? 'true' : 'false'}
             ref={inputRef}
             type="text"
             disabled={state === 'disabled'}
