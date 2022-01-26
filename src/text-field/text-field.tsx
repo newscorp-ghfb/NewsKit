@@ -4,9 +4,11 @@ import {StyledInput} from './styled';
 import {WithEnhancers} from '../with-enhancers/with-enhancers';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
+import defaults from './defaults';
 import {getSingleStylePreset} from '../utils/style/style-preset';
+import {withOwnTheme} from '../utils/with-own-theme';
 
-export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
+const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
   (
     {
       size = 'medium' as TextFieldSize,
@@ -92,3 +94,7 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
     );
   },
 );
+
+export const TextField = withOwnTheme(ThemelessTextField)({
+  defaults,
+});
