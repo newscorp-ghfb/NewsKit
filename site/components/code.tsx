@@ -34,11 +34,7 @@ const StyledDiv = styled.div`
   ${getColorCssFromTheme('backgroundColor', 'interface020')};
 `;
 
-export const Code: React.FC<CodeProps> = ({
-  language = 'jsx',
-  children,
-  // tabIndex: tabIndexProp,
-}) => {
+export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const tabIndex = useTabIndexWhenScroll(containerRef, {firstChild: true});
 
@@ -67,11 +63,7 @@ export const Code: React.FC<CodeProps> = ({
   );
 };
 
-export const CodeFromFile: React.FC<CodeFromFileProps> = ({
-  language,
-  path,
-  tabIndex,
-}) => {
+export const CodeFromFile: React.FC<CodeFromFileProps> = ({language, path}) => {
   const [source, setSource] = useState('');
 
   useEffect(() => {
@@ -86,11 +78,7 @@ export const CodeFromFile: React.FC<CodeFromFileProps> = ({
     })();
   }, [path]);
 
-  return (
-    <Code language={language} tabIndex={tabIndex}>
-      {source}
-    </Code>
-  );
+  return <Code language={language}>{source}</Code>;
 };
 
 export const CodeFromDefaultPresets: React.FC<CodeFromDefaultPresetsProps> = ({
