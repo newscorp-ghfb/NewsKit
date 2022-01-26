@@ -525,10 +525,9 @@ export const scenarios: Array<ComponentData> = [
         const [isActive, open, close, toggle] = useActiveState();
         const [placement, setPlacement] = React.useState('left');
 
-        /* istanbul ignore next */ 
-        const onChangeValue = (
-          ev: React.ChangeEvent<HTMLDivElement>,
-        ) => setPlacement((ev.target as HTMLInputElement).value);
+        /* istanbul ignore next */
+        const onChangeValue = (ev: React.ChangeEvent<HTMLDivElement>) =>
+          setPlacement((ev.target as HTMLInputElement).value);
 
         return (
           <div data-testid="scrollable-drawer">
