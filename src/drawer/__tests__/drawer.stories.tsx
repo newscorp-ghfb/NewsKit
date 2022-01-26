@@ -9,6 +9,7 @@ import {TextInput} from '../../text-input';
 import {Block} from '../../block';
 import {Menu, MenuItem} from '../../menu';
 import {createTheme, compileTheme, ThemeProvider} from '../../theme';
+import {Stack} from '../../stack';
 
 const Box = styled.div`
   width: 400px;
@@ -605,3 +606,54 @@ StoryModelessWithRestoreFocusAndCustomAutofocus.storyName =
 StoryModelessWithRestoreFocusAndCustomAutofocus.parameters = {
   eyes: {include: false},
 };
+
+export const StoryOptionalHeaderClose = () =>
+  React.createElement(() => {
+    const [isActiveBoth, openBoth, closeBoth] = useActiveState();
+    const [isActiveHeader, openHeader, closeHeader] = useActiveState();
+    const [isActiveButton, openButton, closeButton] = useActiveState();
+
+    return (
+      <div>
+        <StorybookHeading>
+          Drawer with optional header & close button
+        </StorybookHeading>
+
+        <Stack spaceInline="space030" flow="horizontal-center">
+          <Button onClick={openBoth}>
+            Open without header and close button
+          </Button>
+          <Button onClick={openHeader}>Open without header</Button>
+          <Button onClick={openButton}>Open without close button</Button>
+        </Stack>
+
+        <Drawer
+          open={isActiveBoth}
+          onDismiss={closeBoth}
+          placement="right"
+          closePosition="none"
+        >
+          <DrawerContent />
+        </Drawer>
+        <Drawer
+          open={isActiveHeader}
+          onDismiss={closeHeader}
+          placement="right"
+          closePosition="right"
+        >
+          <DrawerContent />
+        </Drawer>
+        <Drawer
+          open={isActiveButton}
+          onDismiss={closeButton}
+          placement="right"
+          header="This is a drawer header. Content is passed as string."
+          closePosition="none"
+        >
+          <DrawerContent />
+        </Drawer>
+      </div>
+    );
+  });
+StoryOptionalHeaderClose.storyName = 'optional header & close';
+StoryOptionalHeaderClose.parameters = {eyes: {include: false}};
