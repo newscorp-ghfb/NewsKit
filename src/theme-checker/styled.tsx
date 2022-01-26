@@ -33,3 +33,26 @@ export const StyledStack = styled(Stack)`
   ${getSpacingCssFromTheme('marginTop', {xs: 'space040', md: 'space050'})};
   ${getSpacingCssFromTheme('marginBottom', {xs: 'space040', md: 'space070'})};
 `;
+
+export const ModalWrapper = styled.div`
+  margin: 20px 0 20px 350px;
+  position: relative;
+  border: 1px solid orange;
+  background: lightgray;
+`;
+
+export const Box = styled.div`
+  width: 400px;
+`;
+
+export const DrawerContainer = styled.div`
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background: #f1f1f1;
+
+  position: relative;
+  border: 1px solid red;
+  width: 80vw;
+  height: 80vh;
+  overflow: hidden;
+`;

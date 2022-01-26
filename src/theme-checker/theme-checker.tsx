@@ -6,42 +6,20 @@ import {toKebabCase} from '../utils/to-kabab-case';
 import {scenarios} from './scenarios';
 import {StyledStack} from './styled';
 
-const noStylePresetVariations = [
-  'Audio Player',
-  'Block',
-  'Byline',
-  'Card',
-  'Caption',
-  'Checkbox',
-  'Date Time',
-  'Divider',
-  'Drawer',
-  'Email Input',
-  'Fieldset',
-  'FormInput',
-  'Headline',
-  'Link',
-  'Menu',
-  'OrderedList',
-  'Scroll',
-  'Select',
-  'Share Bar',
-  'Slider',
-  'Tabs',
-  'Tag',
-  'Text Block',
-  'Text Field',
-  'Title Bar',
-  'UnorderedList',
-  'Volume Control',
+const stylePresetVariations = [
+  'Banner',
+  'Button',
+  'Flag',
+  'Icon Button',
+  'Inline Message',
+  'Toast',
 ];
-
 const StylePresetsLoader = ({
   name,
   children,
 }: {
   name: string;
-  children: ({stylePreset}?: {stylePreset: MQ<string>}) => React.ReactNode;
+  children: ({stylePreset}: {stylePreset?: MQ<string>}) => JSX.Element;
 }) => {
   const [stylePresets, setStylePresets] = useState([] as string[]);
 
@@ -77,18 +55,16 @@ const ThemeCheckerScenario = ({
   children,
   name,
 }: {
-  children: () =>
-    | React.ReactNode
-    | (({stylePreset}?: {stylePreset: MQ<string>}) => React.ReactNode);
+  children: ({stylePreset}: {stylePreset?: MQ<string>}) => JSX.Element;
   name: string;
 }) => (
   <>
     <StyledStack spaceInline="space030">
       <TextBlock typographyPreset="utilityBody030">{name}</TextBlock>
-      {noStylePresetVariations.includes(name) ? (
-        children()
-      ) : (
+      {stylePresetVariations.includes(name) ? (
         <StylePresetsLoader name={name}>{children}</StylePresetsLoader>
+      ) : (
+        children({})
       )}
     </StyledStack>
   </>
@@ -98,7 +74,6 @@ export const ThemeChecker = () => (
   <>
     {scenarios.map(({name, component}) => (
       <ThemeCheckerScenario key={getSSRId()} name={name}>
-        {/* @ts-ignore */}
         {component}
       </ThemeCheckerScenario>
     ))}

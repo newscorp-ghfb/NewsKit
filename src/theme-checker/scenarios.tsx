@@ -3,11 +3,14 @@ import React from 'react';
 import {states} from '../checkbox/__tests__/helpers';
 import {FormInputState} from '../form/types';
 import {
+  Box,
   Container,
   ContainerWithBorder,
   ContainerWithFixedHeight,
   ContainerWithFixedWidth,
+  DrawerContainer,
   InverseContainer,
+  ModalWrapper,
 } from './styled';
 import {Tag} from '../tag';
 import {LinkInline, LinkStandalone} from '../link';
@@ -57,21 +60,23 @@ import {Toast} from '../toast';
 import {UnorderedList} from '../unordered-list';
 import {AudioPlayer} from '../audio-player';
 import {VolumeControl} from '../volume-control';
+import {Drawer} from '../drawer';
+import {Modal} from '../modal';
+import {H1, P} from '../typography';
+import {Label} from '../label';
 
 interface ComponentData {
   name: string;
-  component:
-    | React.ReactNode
-    | (({stylePreset}: {stylePreset: MQ<string>}) => React.ReactNode);
+  component: ({stylePreset}: {stylePreset?: MQ<string>}) => JSX.Element;
 }
 
 const listData = [`alpha`, `bravo`, `charlie`, `delta`, `echo`, `foxtrot`];
-const textFieldStates = [
-  'valid',
-  'invalid',
-  'disabled',
-  undefined,
-] as FormInputState[];
+const textFieldStates: [string, {state?: FormInputState}][] = [
+  ['default', {state: undefined}],
+  ['disabled', {state: 'disabled'}],
+  ['invalid', {state: 'invalid'}],
+  ['valid', {state: 'valid'}],
+];
 
 const tags = [
   'This',
@@ -117,6 +122,54 @@ const ShareOnFacebookBtn = () => (
     <IconFilledFacebook />
   </IconButton>
 );
+const DrawerContent = () => (
+  <>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
+      scelerisque sapien. Praesent mollis vestibulum nunc at blandit. Donec
+      vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
+      Pellentesque consequat mi in imperdiet ultrices. Sed vitae erat ac urna{' '}
+      <LinkInline href="/">Test link</LinkInline> rutrum aliquet eu mattis
+      ligula. Sed dapibus, enim sed tristique gravida, nisl dolor malesuada
+      lacus, quis auctor dui mauris eu odio. Vivamus eu augue et enim varius
+      viverra. Vivamus ut tellus iaculis, ullamcorper ligula sit amet, posuere
+      ipsum.
+    </p>
+    <div>
+      <Button>Remind me later</Button>
+      <Button>Ok</Button>
+    </div>
+  </>
+);
+
+const useActiveState = (
+  initial = false,
+): [boolean, () => void, () => void, () => void] => {
+  const [isActive, setIsActive] = React.useState(initial);
+
+  /* istanbul ignore next */ const open = () => setIsActive(true);
+  /* istanbul ignore next */ const close = () => setIsActive(false);
+  /* istanbul ignore next */ const toggle = () => (isActive ? close() : open());
+
+  return [isActive, open, close, toggle];
+};
+
+const modalContent = (
+  <Stack
+    flow="vertical-center"
+    stackDistribution="center"
+    spaceInline="space020"
+  >
+    <H1>You need an account</H1>
+    <p contentEditable>
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+      doloremque laudantium, totam rem aperiam. (Double click for more text :) )
+    </p>
+    <Button>Register for a free account</Button>
+    <P>Already have an account?</P>
+    <LinkInline href="/">Sign in here</LinkInline>
+  </Stack>
+);
 
 export const scenarios: Array<ComponentData> = [
   {
@@ -128,9 +181,9 @@ export const scenarios: Array<ComponentData> = [
         flow="horizontal-top"
         wrap
       >
-        {textFieldStates.map(state => (
-          <Container key={getSSRId()}>
-            {state || 'default'}
+        {textFieldStates.map(([id, {state}]) => (
+          <Container>
+            <Label htmlFor={id}>{id}</Label>
             <AssistiveText state={state}>Assistive Text</AssistiveText>
           </Container>
         ))}
@@ -153,6 +206,7 @@ export const scenarios: Array<ComponentData> = [
     component: ({stylePreset}) => (
       <Banner
         title="lorem ipsum"
+        aria-label={`Banner ${stylePreset}`}
         overrides={{stylePreset}}
         key={getSSRId()}
         icon={
@@ -169,18 +223,7 @@ export const scenarios: Array<ComponentData> = [
   },
   {
     name: 'Block',
-    component: () => (
-      <Block
-        spaceStack="space030"
-        spaceInset="spaceInset030"
-        stylePreset="inkNegative"
-      >
-        <span>
-          Block with margin spaceStack030, padding spaceInset030, style
-          customBlock
-        </span>
-      </Block>
-    ),
+    component: () => <Block>This is a block component</Block>,
   },
   {
     name: 'Button',
@@ -313,7 +356,7 @@ export const scenarios: Array<ComponentData> = [
                 </Block>
                 <Block spaceStack="space010">
                   <TextBlock
-                    stylePreset="cardTeaserLead"
+                    stylePreset="inkSubtle"
                     typographyPreset="editorialParagraph010"
                   >
                     {loremIpsum[2].slice(0, 59)}
@@ -336,7 +379,7 @@ export const scenarios: Array<ComponentData> = [
         wrap
       >
         {states.map(([id, {checked, ...props}]) => (
-          <Container key={getSSRId()}>
+          <Container>
             <Checkbox {...props} defaultChecked={checked} label={id} />
           </Container>
         ))}
@@ -346,11 +389,21 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Date Time',
     component: () => (
-      <DateTime
-        date="2017-01-01T04:32:00.000Z"
-        suffix="The Times"
-        prefix="Updated:"
-      />
+      <Stack
+        spaceInline="space040"
+        spaceStack="space100"
+        flow="horizontal-top"
+        wrap
+      >
+        <DateTime date="2017-01-01T04:32:00.000Z" />
+        <DateTime date="2017-01-01T04:32:00.000Z" prefix="Updated:" />
+        <DateTime date="2017-01-01T04:32:00.000Z" suffix="The Times" />
+        <DateTime
+          date="2017-01-01T04:32:00.000Z"
+          suffix="The Times"
+          prefix="Updated:"
+        />
+      </Stack>
     ),
   },
   {
@@ -379,13 +432,26 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Email Input',
     component: () => (
-      <ContainerWithFixedWidth>
-        <EmailInput
-          label="Label"
-          placeholder="Enter your email address."
-          assistiveText="Assistive text"
-        />
-      </ContainerWithFixedWidth>
+      <Stack
+        spaceInline="space040"
+        spaceStack="space100"
+        flow="horizontal-top"
+        wrap
+      >
+        <ContainerWithFixedWidth>
+          <EmailInput
+            label="Label"
+            placeholder="Enter your email address."
+            assistiveText="Assistive text"
+          />
+        </ContainerWithFixedWidth>
+        <ContainerWithFixedWidth>
+          <EmailInput hideLabel label="Label" assistiveText="Assistive text" />
+        </ContainerWithFixedWidth>
+        <ContainerWithFixedWidth>
+          <EmailInput label="Label" />
+        </ContainerWithFixedWidth>
+      </Stack>
     ),
   },
   {
@@ -450,6 +516,101 @@ export const scenarios: Array<ComponentData> = [
     ),
   },
   {
+    name: 'Inline Drawer',
+    component: () =>
+      React.createElement(() => {
+        const [isActive, close, toggle] = useActiveState();
+        const [placement, setPlacement] = React.useState('left');
+
+        /* istanbul ignore next */ const onChangeValue = (
+          ev: React.ChangeEvent<HTMLDivElement>,
+        ) =>
+          /* istanbul ignore next */ setPlacement(
+            (ev.target as HTMLInputElement).value,
+          );
+
+        return (
+          <div data-testid="scrollable-drawer">
+            <Button onClick={toggle} data-testid="drawer-open-button">
+              Open Drawer
+            </Button>
+            <Block as="span" spaceInset="space030" onChange={onChangeValue}>
+              <label htmlFor="drawer-inline_top">
+                top:
+                <input
+                  type="radio"
+                  value="top"
+                  id="drawer-inline_top"
+                  name="placement"
+                />
+              </label>
+              <label htmlFor="drawer-inline_left">
+                left:
+                <input
+                  type="radio"
+                  value="left"
+                  id="drawer-inline_left"
+                  name="placement"
+                  defaultChecked
+                />
+              </label>
+              <label htmlFor="drawer-inline_bottom">
+                bottom:
+                <input
+                  type="radio"
+                  value="bottom"
+                  id="drawer-inline_bottom"
+                  name="placement"
+                />
+              </label>
+              <label htmlFor="drawer-inline_right">
+                right:
+                <input
+                  type="radio"
+                  value="right"
+                  id="drawer-inline_right"
+                  name="placement"
+                />
+              </label>
+            </Block>
+
+            <DrawerContainer>
+              <Drawer
+                aria-label="Drawer example"
+                open={isActive}
+                onDismiss={close}
+                inline
+                disableFocusTrap
+                hideOverlay
+                placement={placement as 'top' | 'left' | 'right' | 'bottom'}
+                header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+                overrides={{
+                  panel: {minSize: '20vh', maxSize: '50%'},
+                }}
+              >
+                <DrawerContent />
+              </Drawer>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                aliquet lorem massa, et lacinia ipsum tristique id. Phasellus
+                sed posuere lacus. Pellentesque eu odio{' '}
+                <LinkInline href="/">Test link 1</LinkInline> sapien. Donec
+                finibus pellentesque est porta dictum. Suspendisse venenatis
+                vitae augue nec hendrerit. In ut quam tempus, feugiat risus
+                quis, porta eros. Aliquam ultricies ac orci viverra gravida. Ut
+                sodales odio tempor sodales viverra. In condimentum tincidunt
+                fermentum. Nullam imperdiet est vel tincidunt suscipit.
+                Vestibulum vel pulvinar nibh, at molestie lectus. Curabitur
+                ultricies massa eu sem varius volutpat. Ut vitae purus et enim
+                imperdiet finibus. Quisque posuere lacus a nunc tempor accumsan.
+                Aliquam odio nunc, interdum.
+              </p>
+            </DrawerContainer>
+          </div>
+        );
+      }),
+  },
+  {
     name: 'Inline Message',
     component: ({stylePreset}) => (
       <InlineMessage
@@ -469,6 +630,47 @@ export const scenarios: Array<ComponentData> = [
     ),
   },
   {
+    name: 'Inline Modal',
+    component: () =>
+      React.createElement(() => {
+        const [isActive, open, close] = useActiveState();
+
+        return (
+          <div data-testid="scrollable-modal">
+            <ModalWrapper>
+              <Button onClick={open} data-testid="modal-open-button">
+                Open Modal
+              </Button>
+              <p>SCROLL DOWN </p>
+
+              <Box>
+                {Array.from({length: 5}, (_, i) => (
+                  <>
+                    {i === 3 && (
+                      <Button onClick={open}>
+                        Another button to open the modal
+                      </Button>
+                    )}
+                    <p key={i}>{loremIpsum[0]}</p>
+                  </>
+                ))}
+              </Box>
+              <Modal
+                open={isActive}
+                onDismiss={close}
+                header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+                hideOverlay
+                disableFocusTrap
+                inline
+              >
+                {modalContent}
+              </Modal>
+            </ModalWrapper>
+          </div>
+        );
+      }),
+  },
+  {
     name: 'Link',
     component: () => (
       <Stack
@@ -477,12 +679,8 @@ export const scenarios: Array<ComponentData> = [
         flow="horizontal-top"
         wrap
       >
-        <LinkInline href="/" overrides={{stylePreset: 'linkInline'}}>
-          Inline link
-        </LinkInline>
-        <LinkStandalone href="/" overrides={{stylePreset: 'LinkStandalone'}}>
-          Standalone link
-        </LinkStandalone>
+        <LinkInline href="/">Inline link</LinkInline>
+        <LinkStandalone href="/">Standalone link</LinkStandalone>
         <InverseContainer>
           <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
             Inline link
@@ -504,14 +702,14 @@ export const scenarios: Array<ComponentData> = [
     component: () => (
       <Stack spaceInline="space040" spaceStack="space100" flow="horizontal-top">
         <ContainerWithBorder>
-          <Menu>
+          <Menu aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href="/">item 1</MenuItem>
             <MenuItem href="/">item 2</MenuItem>
             <MenuItem href="/">item 3</MenuItem>
           </Menu>
         </ContainerWithBorder>
         <ContainerWithBorder>
-          <Menu vertical>
+          <Menu vertical aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href="/">item 1</MenuItem>
             <MenuItem href="/">item 2</MenuItem>
             <MenuItem href="/">item 3</MenuItem>
@@ -620,9 +818,10 @@ export const scenarios: Array<ComponentData> = [
         flow="horizontal-top"
         wrap
       >
-        {textFieldStates.map(state => (
-          <Container key={getSSRId()}>
-            <TextField state={state} />
+        {textFieldStates.map(([id, {state}]) => (
+          <Container>
+            <Label htmlFor={id}>{id}</Label>
+            <TextField state={state} aria-describedby={`${id}-at`} id={id} />
           </Container>
         ))}
       </Stack>
@@ -672,12 +871,17 @@ export const scenarios: Array<ComponentData> = [
     component: () => (
       <Stack spaceInline="space040" spaceStack="space100" flow="horizontal-top">
         <ContainerWithFixedWidth>
-          {/* istanbul ignore next */}
-          <VolumeControl volume={1} onChange={() => {}} />
+          <VolumeControl
+            volume={1}
+            onChange={/* istanbul ignore next */ () => {}}
+          />
         </ContainerWithFixedWidth>
         <ContainerWithFixedHeight>
-          {/* istanbul ignore next */}
-          <VolumeControl vertical volume={0.5} onChange={() => {}} />
+          <VolumeControl
+            vertical
+            volume={0.5}
+            onChange={/* istanbul ignore next */ () => {}}
+          />
         </ContainerWithFixedHeight>
       </Stack>
     ),

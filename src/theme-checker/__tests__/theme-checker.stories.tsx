@@ -17,7 +17,7 @@ import {useHasMounted} from '../../utils/hooks';
 export default {
   title: 'NewsKit Light/theme-checker',
   component: () => 'None',
-  disabledRules: ['color-contrast'],
+  disabledRules: ['color-contrast', 'heading-order'],
 };
 
 const MainContainer = styled.div`
@@ -86,3 +86,6 @@ export const ThemeCheckerStory = () => (
 );
 
 ThemeCheckerStory.storyName = 'theme-checker';
+ThemeCheckerStory.parameters = {
+  eyes: {include: false},
+};
