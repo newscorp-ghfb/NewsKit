@@ -10,6 +10,7 @@ import {
 } from 'newskit';
 import {generateCodeHighlighterTheme} from './code-highlighter-theme';
 import {toKebabCase} from '../utils/to-kabab-case';
+import {useTabIndexWhenScroll} from './hooks';
 
 interface CodeProps extends HTMLAttributes<HTMLDivElement> {
   children: string;
@@ -32,15 +33,20 @@ const StyledDiv = styled.div`
   ${getBorderCssFromTheme('border-radius', 'borderRadiusRounded020')};
   ${getColorCssFromTheme('backgroundColor', 'interface020')};
 `;
+
 export const Code: React.FC<CodeProps> = ({
   language = 'jsx',
   children,
-  tabIndex,
+  // tabIndex: tabIndexProp,
 }) => {
+  const containerRef = React.useRef<HTMLDivElement>(null);
+  const tabIndex = useTabIndexWhenScroll(containerRef, {firstChild: true});
+
   const {colors} = useTheme();
   const highlighterTheme = generateCodeHighlighterTheme(colors);
+
   return (
-    <StyledDiv>
+    <StyledDiv ref={containerRef}>
       <SyntaxHighlighter
         data-testid="sample-code"
         codeTagProps={{tabIndex}}

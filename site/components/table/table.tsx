@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {
   StyledHeader,
   StyledTable,
@@ -8,23 +8,15 @@ import {
 import {TableProps} from './types';
 import {columnMap} from './column-map';
 import {renderCols} from './column-renderer';
-import {useResizeObserver} from '../../../src/utils/hooks';
+import {useTabIndexWhenScroll} from '../hooks';
 
 export const Table: React.FC<TableProps> = ({rows, columns}) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
-  const [hasScroll, setHasScroll] = React.useState(false);
-  const [width] = useResizeObserver(containerRef);
-
-  useEffect(() => {
-    if (containerRef.current) {
-      const {scrollWidth, clientWidth} = containerRef.current;
-      setHasScroll(scrollWidth > clientWidth);
-    }
-  }, [width]);
+  const tabIndex = useTabIndexWhenScroll(containerRef);
 
   return (
     <StyledContainer ref={containerRef}>
-      <StyledTable tabIndex={hasScroll ? 0 : undefined}>
+      <StyledTable tabIndex={tabIndex}>
         <thead>
           <tr>
             {columns.map(columnName => (
