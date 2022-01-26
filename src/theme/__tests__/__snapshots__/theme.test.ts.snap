@@ -205,441 +205,7 @@ Object {
     "whiteTint080": "rgba(255,255,255,0.8)",
     "whiteTint090": "rgba(255,255,255,0.9)",
   },
-  "componentDefaults": Object {
-    "dateTime": Object {
-      "prefix": Object {
-        "stylePreset": "inkSubtle",
-        "typographyPreset": "utilityMeta020",
-      },
-      "stylePreset": "inkSubtle",
-      "suffix": Object {
-        "stylePreset": "inkSubtle",
-        "typographyPreset": "utilityMeta020",
-      },
-      "typographyPreset": "utilityMeta020",
-    },
-    "drawer": Object {
-      "closeButton": Object {
-        "spaceInset": "spaceInset020",
-        "stylePreset": "iconButtonMinimalSecondary",
-      },
-      "content": Object {
-        "spaceInset": "spaceInset050",
-      },
-      "header": Object {
-        "spaceInset": "spaceInsetSquish040",
-      },
-      "overlay": Object {
-        "transitionPreset": "fade",
-        "zIndex": 70,
-      },
-      "panel": Object {
-        "bottom": Object {
-          "transitionPreset": Object {
-            "0": "fade",
-            "1": "slideBottom",
-          },
-        },
-        "left": Object {
-          "transitionPreset": Object {
-            "0": "fade",
-            "1": "slideLeft",
-          },
-        },
-        "maxSize": "100%",
-        "minSize": "20px",
-        "right": Object {
-          "transitionPreset": Object {
-            "0": "fade",
-            "1": "slideRight",
-          },
-        },
-        "size": Object {
-          "lg": "333px",
-          "md": "310px",
-          "sm": "309px",
-          "xl": "354px",
-          "xs": "305px",
-        },
-        "stylePreset": "drawerPanel",
-        "top": Object {
-          "transitionPreset": Object {
-            "0": "fade",
-            "1": "slideTop",
-          },
-        },
-        "zIndex": 80,
-      },
-    },
-    "headlineH1": Object {
-      "stylePreset": "inkContrast",
-      "typographyPreset": Object {
-        "lg": "editorialHeadline070",
-        "xl": "editorialHeadline080",
-        "xs": "editorialHeadline050",
-      },
-    },
-    "headlineH2": Object {
-      "stylePreset": "inkContrast",
-      "typographyPreset": Object {
-        "md": "editorialHeadline040",
-        "xs": "editorialHeadline030",
-      },
-    },
-    "headlineH3": Object {
-      "stylePreset": "inkContrast",
-      "typographyPreset": Object {
-        "md": "editorialHeadline030",
-        "xs": "editorialHeadline020",
-      },
-    },
-    "headlineH4": Object {
-      "stylePreset": "inkContrast",
-      "typographyPreset": Object {
-        "md": "editorialHeadline020",
-        "xs": "editorialHeadline010",
-      },
-    },
-    "headlineH5": Object {
-      "stylePreset": "inkContrast",
-      "typographyPreset": "editorialSubheadline020",
-    },
-    "headlineH6": Object {
-      "stylePreset": "inkContrast",
-      "typographyPreset": "editorialSubheadline010",
-    },
-    "inlineDrawer": Object {
-      "__extends": "{{componentDefaults.drawer}}",
-      "panel": Object {
-        "__extends": "{{componentDefaults.drawer.panel}}",
-        "maxSize": "auto",
-      },
-    },
-    "inlineMessage": Object {
-      "content": Object {
-        "message": Object {
-          "stylePreset": "inkBase",
-          "typographyPreset": "utilityBody020",
-        },
-        "title": Object {
-          "spaceStack": "space030",
-          "stylePreset": "inkContrast",
-          "typographyPreset": "utilityHeading010",
-        },
-      },
-      "icon": Object {
-        "spaceInline": "space030",
-      },
-      "spaceInset": "spaceInset030",
-      "stylePreset": "inlineMessageInformative",
-    },
-    "modal": Object {
-      "closeButton": Object {
-        "spaceInset": "spaceInset020",
-        "stylePreset": "iconButtonMinimalSecondary",
-      },
-      "content": Object {
-        "spaceInset": "spaceInset050",
-      },
-      "header": Object {
-        "spaceInset": "spaceInsetSquish040",
-      },
-      "overlay": Object {
-        "transitionPreset": Object {
-          "enterActive": Object {
-            "transitionDuration": "{{motions.motionDuration030}}",
-            "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
-          },
-          "exitActive": Object {
-            "transitionDelay": "{{motions.motionDuration010}}",
-            "transitionDuration": "{{motions.motionDuration030}}",
-            "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
-          },
-          "extend": "fade",
-        },
-        "zIndex": 70,
-      },
-      "panel": Object {
-        "maxHeight": Object {
-          "md": "80vh",
-          "xs": "95vh",
-        },
-        "minHeight": "15vh",
-        "stylePreset": "modalPanel",
-        "topOffset": "20vh",
-        "transitionPreset": Object {
-          "0": Object {
-            "enterActive": Object {
-              "transitionDelay": "{{motions.motionDuration010}}",
-              "transitionDuration": "{{motions.motionDuration010}}",
-              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
-            },
-            "exitActive": Object {
-              "transitionDuration": "{{motions.motionDuration010}}",
-              "transitionTimingFunction": "{{motions.motionTimingLinear}}",
-            },
-            "extend": "fade",
-          },
-          "1": Object {
-            "enterActive": Object {
-              "transitionDelay": "{{motions.motionDuration010}}",
-              "transitionDuration": "{{motions.motionDuration010}}",
-              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
-            },
-            "exitActive": Object {
-              "transitionDuration": "{{motions.motionDuration010}}",
-              "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
-            },
-            "extend": "moveUp",
-          },
-        },
-        "width": Object {
-          "lg": "38vw",
-          "md": "45vw",
-          "sm": "60vw",
-          "xl": "31vw",
-          "xs": "90vw",
-        },
-        "zIndex": 80,
-      },
-    },
-    "overlay": Object {
-      "stylePreset": "overlay",
-      "transitionPreset": "fade",
-    },
-    "paragraph": Object {
-      "dropCap": Object {
-        "space": "space010",
-        "stylePreset": "inkContrast",
-        "typographyPreset": Object {
-          "lg": "editorialDropCap030",
-          "md": "editorialDropCap020",
-          "xs": "editorialDropCap010",
-        },
-      },
-      "stylePreset": "inkBase",
-      "typographyPreset": "editorialParagraph020",
-    },
-    "scroll": Object {
-      "horizontal": Object {
-        "controls": Object {
-          "button": Object {
-            "spaceInset": "spaceInset000",
-            "stylePreset": "iconButtonSolidPrimary",
-          },
-          "offset": "space040",
-        },
-        "overlays": Object {
-          "size": "sizing090",
-          "stylePreset": "scrollOverlaysHorizontal",
-        },
-      },
-      "vertical": Object {
-        "controls": Object {
-          "button": Object {
-            "spaceInset": "spaceInset000",
-            "stylePreset": "iconButtonSolidPrimary",
-          },
-          "offset": "space040",
-        },
-        "overlays": Object {
-          "size": "sizing090",
-          "stylePreset": "scrollOverlaysVertical",
-        },
-      },
-    },
-    "select": Object {
-      "large": Object {
-        "button": Object {
-          "endEnhancer": Object {
-            "iconSize": "iconSize020",
-            "spaceInline": "space020",
-          },
-          "iconSize": "iconSize020",
-          "loadingIndicator": Object {
-            "stylePreset": "indeterminateProgressIndicatorPrimary",
-          },
-          "minHeight": "sizing090",
-          "spaceInline": "space020",
-          "spaceInset": "spaceInset030",
-          "spaceStack": "space020",
-          "startEnhancer": Object {
-            "iconSize": "iconSize020",
-            "spaceInline": "space020",
-          },
-          "stylePreset": "inputField",
-          "typographyPreset": "utilityBody030",
-          "width": "100%",
-        },
-        "panel": Object {
-          "maxHeight": "360px",
-          "spaceInset": "spaceInset020",
-          "spaceStack": "space010",
-          "stylePreset": "selectPanel",
-        },
-      },
-      "medium": Object {
-        "button": Object {
-          "endEnhancer": Object {
-            "iconSize": "iconSize020",
-            "spaceInline": "space020",
-          },
-          "iconSize": "iconSize020",
-          "loadingIndicator": Object {
-            "stylePreset": "indeterminateProgressIndicatorPrimary",
-          },
-          "minHeight": "sizing080",
-          "spaceInline": "space020",
-          "spaceInset": "spaceInset020",
-          "spaceStack": "space020",
-          "startEnhancer": Object {
-            "iconSize": "iconSize020",
-            "spaceInline": "space020",
-          },
-          "stylePreset": "inputField",
-          "typographyPreset": "utilityBody020",
-          "width": "100%",
-        },
-        "panel": Object {
-          "maxHeight": "272px",
-          "spaceInset": "spaceInset020",
-          "spaceStack": "space010",
-          "stylePreset": "selectPanel",
-        },
-      },
-      "small": Object {
-        "button": Object {
-          "endEnhancer": Object {
-            "iconSize": "iconSize020",
-            "spaceInline": "space020",
-          },
-          "iconSize": "iconSize020",
-          "loadingIndicator": Object {
-            "stylePreset": "indeterminateProgressIndicatorPrimary",
-          },
-          "minHeight": "sizing060",
-          "spaceInline": "space020",
-          "spaceInset": "spaceInset020",
-          "spaceStack": "space020",
-          "startEnhancer": Object {
-            "iconSize": "iconSize020",
-            "spaceInline": "space020",
-          },
-          "stylePreset": "inputField",
-          "typographyPreset": "utilityBody020",
-          "width": "100%",
-        },
-        "panel": Object {
-          "maxHeight": "184px",
-          "spaceInset": "spaceInset020",
-          "spaceStack": "space010",
-          "stylePreset": "selectPanel",
-        },
-      },
-    },
-    "selectOption": Object {
-      "large": Object {
-        "icon": Object {
-          "iconSize": "iconSize020",
-          "stylePreset": "selectOptionItemIcon",
-        },
-        "minHeight": "sizing090",
-        "spaceInline": "space020",
-        "spaceInset": "spaceInsetStretch030",
-        "stylePreset": "selectOptionItem",
-        "typographyPreset": "utilityBody030",
-      },
-      "medium": Object {
-        "icon": Object {
-          "iconSize": "iconSize020",
-          "stylePreset": "selectOptionItemIcon",
-        },
-        "minHeight": "sizing080",
-        "spaceInline": "space020",
-        "spaceInset": "spaceInset020",
-        "stylePreset": "selectOptionItem",
-        "typographyPreset": "utilityBody020",
-      },
-      "small": Object {
-        "icon": Object {
-          "iconSize": "iconSize020",
-          "stylePreset": "selectOptionItemIcon",
-        },
-        "minHeight": "sizing060",
-        "spaceInline": "space020",
-        "spaceInset": "spaceInsetSquish010",
-        "stylePreset": "selectOptionItem",
-        "typographyPreset": "utilityBody020",
-      },
-    },
-    "shareBar": Object {
-      "items": Object {
-        "spaceInline": "space020",
-      },
-      "label": Object {
-        "spaceInline": "space040",
-        "stylePreset": "shareBarLabel",
-        "typographyPreset": "utilityLabel020",
-      },
-    },
-    "structuredList": Object {
-      "divider": Object {
-        "stylePreset": "divider",
-      },
-    },
-    "structuredListItem": Object {
-      "icon": Object {
-        "size": "iconSize010",
-        "stylePreset": "inkContrast",
-      },
-      "minHeight": "sizing100",
-      "spaceInset": "spaceInsetStretch040",
-      "stylePreset": "structuredListItem",
-    },
-    "toast": Object {
-      "content": Object {
-        "message": Object {
-          "stylePreset": "inkInverse",
-          "typographyPreset": "utilityBody020",
-        },
-        "title": Object {
-          "spaceStack": "space010",
-          "stylePreset": "inkInverse",
-          "typographyPreset": "utilityHeading010",
-        },
-      },
-      "contentAndActions": Object {
-        "spaceInline": "space030",
-      },
-      "divider": Object {
-        "stylePreset": "dividerInverse",
-      },
-      "icon": Object {
-        "spaceInline": "space030",
-      },
-      "maxWidth": Object {
-        "lg": "38%",
-        "md": "45%",
-        "sm": "60%",
-        "xl": "31%",
-        "xs": "90%",
-      },
-      "spaceInset": "spaceInset030",
-      "stylePreset": "toastNeutral",
-    },
-    "unorderedList": Object {
-      "content": Object {
-        "stylePreset": "inkBase",
-        "typographyPreset": "editorialParagraph010",
-      },
-      "marker": Object {
-        "size": "iconSize005",
-        "spaceInline": "space020",
-        "stylePreset": "inkBase",
-      },
-      "spaceStack": "space040",
-    },
-  },
+  "componentDefaults": Object {},
   "fonts": Object {
     "fontFamily010": Object {
       "fontFamily": "\\"DM Sans\\", sans-serif",
@@ -809,35 +375,6 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "drawerPanel": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-        "boxShadow": "{{shadows.shadow060}}",
-      },
-    },
-    "inlineMessageInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative020}}",
-        "borderColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "inlineMessageNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
     "inputField": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -886,94 +423,6 @@ Object {
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
-      },
-    },
-    "modalPanel": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBackground}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-        "boxShadow": "{{shadows.shadow060}}",
-      },
-    },
-    "overlay": Object {
-      "base": Object {
-        "backgroundColor": "{{overlays.overlayTintBase040}}",
-      },
-    },
-    "scrollOverlaysHorizontal": Object {
-      "base": Object {
-        "backgroundImage": "{{overlays.overlayGradientBaseHorizontal}}",
-      },
-    },
-    "scrollOverlaysVertical": Object {
-      "base": Object {
-        "backgroundImage": "{{overlays.overlayGradientBaseVertical}}",
-      },
-    },
-    "selectOptionItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderColor": "{{colors.transparent}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkBase}}",
-        "textOverflow": "ellipsis",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-      "focus": Object {
-        "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveInput010}}",
-      },
-      "selected": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-      "selected:active": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-      "selected:focus": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-        "borderColor": "{{colors.interactiveInput040}}",
-      },
-      "selected:focus:active": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-      },
-      "selected:focus:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-        "color": "{{colors.inkContrast}}",
-      },
-      "selected:hover": Object {
-        "backgroundColor": "{{colors.interactiveInput030}}",
-        "color": "{{colors.inkContrast}}",
-      },
-    },
-    "selectOptionItemIcon": Object {
-      "selected": Object {
-        "iconColor": "{{colors.interactiveInput040}}",
-      },
-      "selected:active": Object {
-        "iconColor": "{{colors.interactiveInput040}}",
-      },
-      "selected:focus": Object {
-        "iconColor": "{{colors.interactiveInput040}}",
-      },
-      "selected:hover": Object {
-        "iconColor": "{{colors.interactiveInput040}}",
-      },
-    },
-    "selectPanel": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "boxShadow": "{{shadows.shadow050}}",
       },
     },
   },
@@ -1671,7 +1120,6 @@ Object {
       "icon": Object {
         "spaceInline": "space030",
       },
-      "maxWidth": "1920px",
       "minHeight": "sizing090",
       "spaceInset": "spaceInset045",
       "stylePreset": "bannerInformative",
@@ -1698,7 +1146,6 @@ Object {
       "icon": Object {
         "spaceInline": "space030",
       },
-      "maxWidth": "1920px",
       "minHeight": "sizing090",
       "spaceInset": "spaceInset045",
       "stylePreset": "bannerInformative",
@@ -1912,8 +1359,73 @@ Object {
       "spaceStack": "space000",
     },
   },
+  "dateTime": Object {
+    "prefix": Object {
+      "stylePreset": "inkSubtle",
+      "typographyPreset": "utilityMeta020",
+    },
+    "stylePreset": "inkSubtle",
+    "suffix": Object {
+      "stylePreset": "inkSubtle",
+      "typographyPreset": "utilityMeta020",
+    },
+    "typographyPreset": "utilityMeta020",
+  },
   "divider": Object {
     "stylePreset": "divider",
+  },
+  "drawer": Object {
+    "closeButton": Object {
+      "spaceInset": "spaceInset020",
+      "stylePreset": "iconButtonMinimalSecondary",
+    },
+    "content": Object {
+      "spaceInset": "spaceInset050",
+    },
+    "header": Object {
+      "spaceInset": "spaceInsetSquish040",
+    },
+    "overlay": Object {
+      "transitionPreset": "fade",
+      "zIndex": 70,
+    },
+    "panel": Object {
+      "bottom": Object {
+        "transitionPreset": Array [
+          "fade",
+          "slideBottom",
+        ],
+      },
+      "left": Object {
+        "transitionPreset": Array [
+          "fade",
+          "slideLeft",
+        ],
+      },
+      "maxSize": "100%",
+      "minSize": "20px",
+      "right": Object {
+        "transitionPreset": Array [
+          "fade",
+          "slideRight",
+        ],
+      },
+      "size": Object {
+        "lg": "333px",
+        "md": "310px",
+        "sm": "309px",
+        "xl": "354px",
+        "xs": "305px",
+      },
+      "stylePreset": "drawerPanel",
+      "top": Object {
+        "transitionPreset": Array [
+          "fade",
+          "slideTop",
+        ],
+      },
+      "zIndex": 80,
+    },
   },
   "flag": Object {
     "large": Object {
@@ -1986,6 +1498,43 @@ Object {
       "xs": "editorialHeadline060",
     },
   },
+  "headlineH1": Object {
+    "stylePreset": "inkContrast",
+    "typographyPreset": Object {
+      "lg": "editorialHeadline070",
+      "xl": "editorialHeadline080",
+      "xs": "editorialHeadline050",
+    },
+  },
+  "headlineH2": Object {
+    "stylePreset": "inkContrast",
+    "typographyPreset": Object {
+      "md": "editorialHeadline040",
+      "xs": "editorialHeadline030",
+    },
+  },
+  "headlineH3": Object {
+    "stylePreset": "inkContrast",
+    "typographyPreset": Object {
+      "md": "editorialHeadline030",
+      "xs": "editorialHeadline020",
+    },
+  },
+  "headlineH4": Object {
+    "stylePreset": "inkContrast",
+    "typographyPreset": Object {
+      "md": "editorialHeadline020",
+      "xs": "editorialHeadline010",
+    },
+  },
+  "headlineH5": Object {
+    "stylePreset": "inkContrast",
+    "typographyPreset": "editorialSubheadline020",
+  },
+  "headlineH6": Object {
+    "stylePreset": "inkContrast",
+    "typographyPreset": "editorialSubheadline010",
+  },
   "iconButton": Object {
     "large": Object {
       "height": "sizing090",
@@ -2024,6 +1573,31 @@ Object {
   "indeterminateProgressIndicator": Object {
     "size": "iconSize020",
     "stylePreset": "iconDefault",
+  },
+  "inlineDrawer": Object {
+    "__extends": "{{componentDefaults.drawer}}",
+    "panel": Object {
+      "__extends": "{{componentDefaults.drawer.panel}}",
+      "maxSize": "auto",
+    },
+  },
+  "inlineMessage": Object {
+    "content": Object {
+      "message": Object {
+        "stylePreset": "inkBase",
+        "typographyPreset": "utilityBody020",
+      },
+      "title": Object {
+        "spaceStack": "space030",
+        "stylePreset": "inkContrast",
+        "typographyPreset": "utilityHeading010",
+      },
+    },
+    "icon": Object {
+      "spaceInline": "space030",
+    },
+    "spaceInset": "spaceInset030",
+    "stylePreset": "inlineMessageInformative",
   },
   "label": Object {
     "large": Object {
@@ -2098,6 +1672,76 @@ Object {
       "stylePreset": "menuItemVertical",
     },
   },
+  "modal": Object {
+    "closeButton": Object {
+      "spaceInset": "spaceInset020",
+      "stylePreset": "iconButtonMinimalSecondary",
+    },
+    "content": Object {
+      "spaceInset": "spaceInset050",
+    },
+    "header": Object {
+      "spaceInset": "spaceInsetSquish040",
+    },
+    "overlay": Object {
+      "transitionPreset": Object {
+        "enterActive": Object {
+          "transitionDuration": "{{motions.motionDuration030}}",
+          "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+        },
+        "exitActive": Object {
+          "transitionDelay": "{{motions.motionDuration010}}",
+          "transitionDuration": "{{motions.motionDuration030}}",
+          "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+        },
+        "extend": "fade",
+      },
+      "zIndex": 70,
+    },
+    "panel": Object {
+      "maxHeight": Object {
+        "md": "80vh",
+        "xs": "95vh",
+      },
+      "minHeight": "15vh",
+      "stylePreset": "modalPanel",
+      "topOffset": "20vh",
+      "transitionPreset": Array [
+        Object {
+          "enterActive": Object {
+            "transitionDelay": "{{motions.motionDuration010}}",
+            "transitionDuration": "{{motions.motionDuration010}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+          },
+          "exitActive": Object {
+            "transitionDuration": "{{motions.motionDuration010}}",
+            "transitionTimingFunction": "{{motions.motionTimingLinear}}",
+          },
+          "extend": "fade",
+        },
+        Object {
+          "enterActive": Object {
+            "transitionDelay": "{{motions.motionDuration010}}",
+            "transitionDuration": "{{motions.motionDuration010}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+          },
+          "exitActive": Object {
+            "transitionDuration": "{{motions.motionDuration010}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+          },
+          "extend": "moveUp",
+        },
+      ],
+      "width": Object {
+        "lg": "38vw",
+        "md": "45vw",
+        "sm": "60vw",
+        "xl": "31vw",
+        "xs": "90vw",
+      },
+      "zIndex": 80,
+    },
+  },
   "orderedList": Object {
     "content": Object {
       "stylePreset": "inkBase",
@@ -2109,6 +1753,184 @@ Object {
       "typographyPreset": "editorialParagraph010",
     },
     "spaceInline": "space040",
+  },
+  "overlay": Object {
+    "stylePreset": "overlay",
+    "transitionPreset": "fade",
+  },
+  "paragraph": Object {
+    "dropCap": Object {
+      "space": "space010",
+      "stylePreset": "inkContrast",
+      "typographyPreset": Object {
+        "lg": "editorialDropCap030",
+        "md": "editorialDropCap020",
+        "xs": "editorialDropCap010",
+      },
+    },
+    "stylePreset": "inkBase",
+    "typographyPreset": "editorialParagraph020",
+  },
+  "scroll": Object {
+    "horizontal": Object {
+      "controls": Object {
+        "button": Object {
+          "spaceInset": "spaceInset000",
+          "stylePreset": "iconButtonSolidPrimary",
+        },
+        "offset": "space040",
+      },
+      "overlays": Object {
+        "size": "sizing090",
+        "stylePreset": "scrollOverlaysHorizontal",
+      },
+    },
+    "vertical": Object {
+      "controls": Object {
+        "button": Object {
+          "spaceInset": "spaceInset000",
+          "stylePreset": "iconButtonSolidPrimary",
+        },
+        "offset": "space040",
+      },
+      "overlays": Object {
+        "size": "sizing090",
+        "stylePreset": "scrollOverlaysVertical",
+      },
+    },
+  },
+  "select": Object {
+    "large": Object {
+      "button": Object {
+        "endEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space020",
+        },
+        "iconSize": "iconSize020",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
+        "minHeight": "sizing090",
+        "spaceInline": "space020",
+        "spaceInset": "spaceInset030",
+        "spaceStack": "space020",
+        "startEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space020",
+        },
+        "stylePreset": "inputField",
+        "typographyPreset": "utilityBody030",
+        "width": "100%",
+      },
+      "panel": Object {
+        "maxHeight": "360px",
+        "spaceInset": "spaceInset020",
+        "spaceStack": "space010",
+        "stylePreset": "selectPanel",
+      },
+    },
+    "medium": Object {
+      "button": Object {
+        "endEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space020",
+        },
+        "iconSize": "iconSize020",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
+        "minHeight": "sizing080",
+        "spaceInline": "space020",
+        "spaceInset": "spaceInset020",
+        "spaceStack": "space020",
+        "startEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space020",
+        },
+        "stylePreset": "inputField",
+        "typographyPreset": "utilityBody020",
+        "width": "100%",
+      },
+      "panel": Object {
+        "maxHeight": "272px",
+        "spaceInset": "spaceInset020",
+        "spaceStack": "space010",
+        "stylePreset": "selectPanel",
+      },
+    },
+    "small": Object {
+      "button": Object {
+        "endEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space020",
+        },
+        "iconSize": "iconSize020",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
+        "minHeight": "sizing060",
+        "spaceInline": "space020",
+        "spaceInset": "spaceInset020",
+        "spaceStack": "space020",
+        "startEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space020",
+        },
+        "stylePreset": "inputField",
+        "typographyPreset": "utilityBody020",
+        "width": "100%",
+      },
+      "panel": Object {
+        "maxHeight": "184px",
+        "spaceInset": "spaceInset020",
+        "spaceStack": "space010",
+        "stylePreset": "selectPanel",
+      },
+    },
+  },
+  "selectOption": Object {
+    "large": Object {
+      "icon": Object {
+        "iconSize": "iconSize020",
+        "stylePreset": "selectOptionItemIcon",
+      },
+      "minHeight": "sizing090",
+      "spaceInline": "space020",
+      "spaceInset": "spaceInsetStretch030",
+      "stylePreset": "selectOptionItem",
+      "typographyPreset": "utilityBody030",
+    },
+    "medium": Object {
+      "icon": Object {
+        "iconSize": "iconSize020",
+        "stylePreset": "selectOptionItemIcon",
+      },
+      "minHeight": "sizing080",
+      "spaceInline": "space020",
+      "spaceInset": "spaceInset020",
+      "stylePreset": "selectOptionItem",
+      "typographyPreset": "utilityBody020",
+    },
+    "small": Object {
+      "icon": Object {
+        "iconSize": "iconSize020",
+        "stylePreset": "selectOptionItemIcon",
+      },
+      "minHeight": "sizing060",
+      "spaceInline": "space020",
+      "spaceInset": "spaceInsetSquish010",
+      "stylePreset": "selectOptionItem",
+      "typographyPreset": "utilityBody020",
+    },
+  },
+  "shareBar": Object {
+    "items": Object {
+      "spaceInline": "space020",
+    },
+    "label": Object {
+      "spaceInline": "space040",
+      "typographyPreset": "utilityLabel020",
+    },
   },
   "slider": Object {
     "indicator": Object {
@@ -2406,6 +2228,18 @@ Object {
     },
     "spaceInset": "spaceInset030",
     "stylePreset": "toastNeutral",
+  },
+  "unorderedList": Object {
+    "content": Object {
+      "stylePreset": "inkBase",
+      "typographyPreset": "editorialParagraph010",
+    },
+    "marker": Object {
+      "size": "iconSize005",
+      "spaceInline": "space020",
+      "stylePreset": "inkBase",
+    },
+    "spaceStack": "space040",
   },
   "videoPlayer": Object {
     "controlBar": Object {
@@ -4033,7 +3867,7 @@ Object {
   "modalPanel": Object {
     "base": Object {
       "backgroundColor": "{{colors.interfaceBackground}}",
-      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
       "boxShadow": "{{shadows.shadow060}}",
     },
   },

@@ -5,6 +5,9 @@ import {getTransitionDuration} from '../utils/get-transition-duration';
 import {useLockBodyScroll} from '../utils/hooks';
 import {styled, getStylePreset, MQ, getResponsiveSpace} from '../utils/style';
 import {getTransitionPreset} from '../utils/style/transition-preset';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 interface OverlayProps {
   open: boolean;
@@ -36,7 +39,7 @@ const BaseOverlay: React.FC<Omit<OverlayProps, 'open'>> = props => {
   return <StyledOverlay data-testid="overlay" {...props} />;
 };
 
-export const Overlay: React.FC<OverlayProps> = ({
+const ThemlessOverlay: React.FC<OverlayProps> = ({
   open,
   overrides,
   ...props
@@ -56,3 +59,8 @@ export const Overlay: React.FC<OverlayProps> = ({
     </CSSTransition>
   );
 };
+
+export const Overlay = withOwnTheme(ThemlessOverlay)({
+  defaults,
+  stylePresets,
+});
