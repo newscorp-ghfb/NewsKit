@@ -5,9 +5,10 @@ import {
   MQ,
   getSpace,
   getStylePreset,
-} from '../utils/style';
-
-import {ScreenReaderOnly} from '../screen-reader-only';
+} from '../../utils/style';
+import defaults from './defaults';
+import {withOwnTheme} from '../../utils/with-own-theme';
+import {ScreenReaderOnly} from '../../screen-reader-only';
 
 export interface ParagraphProps {
   // eslint-disable-next-line
@@ -24,13 +25,16 @@ export interface ParagraphProps {
   };
 }
 
-export const ParagraphText = styled.p<ParagraphProps>`
+const ThemelessParagraphText = styled.p<ParagraphProps>`
   margin: 0;
   ${getStylePreset('paragraph', '')};
   ${getTypographyPreset('paragraph', '')};
 `;
+export const ParagraphText = withOwnTheme(ThemelessParagraphText)({
+  defaults,
+});
 
-export const ParagraphDropCap = styled.span<ParagraphProps>`
+const ThemelessParagraphDropCap = styled.span<ParagraphProps>`
   margin: 0;
   float: left;
   margin-right: 0.15em;
@@ -39,6 +43,9 @@ export const ParagraphDropCap = styled.span<ParagraphProps>`
   ${getTypographyPreset('paragraph.dropCap', 'dropCap')};
   ${getStylePreset('paragraph.dropCap', 'dropCap')};
 `;
+export const ParagraphDropCap = withOwnTheme(ThemelessParagraphDropCap)({
+  defaults,
+});
 
 const ParagraphContainer = styled.div`
   display: inline-flex;
