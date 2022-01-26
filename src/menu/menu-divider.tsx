@@ -1,4 +1,5 @@
 import React from 'react';
+import {useTheme} from '@emotion/react';
 import {useMenuContext} from './context';
 import {MenuDividerProps} from './types';
 import {StyledMenuDivider} from './styled';
@@ -9,7 +10,9 @@ export const MenuDivider = React.forwardRef<HTMLLIElement, MenuDividerProps>(
   ({overrides}, ref) => {
     const {vertical, overrides: menuOverrides} = useMenuContext();
 
+    const theme = useTheme();
     const dividerOverrides = {
+      ...theme.componentDefaults.menuDivider,
       ...filterOutFalsyProperties(overrides),
     };
 
