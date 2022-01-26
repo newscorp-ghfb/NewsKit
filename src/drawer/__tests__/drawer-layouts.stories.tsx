@@ -265,6 +265,40 @@ export const StoryNoHeaderContent = () =>
   ));
 StoryNoHeaderContent.storyName = 'no header content';
 
+export const StoryNoClose = () =>
+  React.createElement(() => (
+    <>
+      <StorybookHeading>Default with no close button</StorybookHeading>
+      <Drawer header="Header" open onDismiss={() => {}} closePosition="none">
+        <h3>List title</h3>
+        <p>List description goes here</p>
+
+        <h4>List content</h4>
+        <UnorderedList listItemMarker={IconFilledAddCircleOutline}>
+          {Array.from({length: 5}, () => 'List item')}
+        </UnorderedList>
+      </Drawer>
+    </>
+  ));
+StoryNoClose.storyName = 'no close button';
+
+export const StoryNoHeader = () =>
+  React.createElement(() => (
+    <>
+      <StorybookHeading>Default withhout header</StorybookHeading>
+      <Drawer open onDismiss={() => {}} closePosition="none">
+        <h3>List title</h3>
+        <p>List description goes here</p>
+
+        <h4>List content</h4>
+        <UnorderedList listItemMarker={IconFilledAddCircleOutline}>
+          {Array.from({length: 5}, () => 'List item')}
+        </UnorderedList>
+      </Drawer>
+    </>
+  ));
+StoryNoHeader.storyName = 'no header';
+
 export const StoryWithOverrides = () =>
   React.createElement(() => (
     <>
