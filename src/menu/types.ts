@@ -14,12 +14,12 @@ export enum MenuItemSize {
   Medium = 'medium',
   Large = 'large',
 }
-
+export type MenutItemAlignTypes = MenuItemAlign | 'start' | 'end' | 'center';
 export interface MenuProps extends React.AriaAttributes {
   children: Exclude<React.ReactNode, 'undefined'>;
   vertical?: boolean;
   size?: MenuItemSize | 'small' | 'medium' | 'large';
-  align?: MenuItemAlign | 'start' | 'end' | 'center';
+  align?: MenutItemAlignTypes;
   overrides?: {
     spaceInline?: MQ<string>; // -> space between menuItems
   };
