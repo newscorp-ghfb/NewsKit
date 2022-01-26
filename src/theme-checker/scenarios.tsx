@@ -615,6 +615,7 @@ export const scenarios: Array<ComponentData> = [
     component: ({stylePreset}) => (
       <InlineMessage
         title="lorem ipsum"
+        aria-label={`${stylePreset}`}
         icon={
           <IconFilledStarOutline
             overrides={{
@@ -623,7 +624,6 @@ export const scenarios: Array<ComponentData> = [
           />
         }
         overrides={{stylePreset}}
-        key={getSSRId()}
       >
         {loremIpsum[0].slice(0, 55)}
       </InlineMessage>

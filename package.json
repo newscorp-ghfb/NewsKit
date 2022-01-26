@@ -36,7 +36,7 @@
     "prepublish": "yarn build:sync-version-number",
     "build:clean": "rm -rf dist && rm -rf dist-storybook && rm -rf public",
     "build:ts:cjs": "NODE_ENV=production tsc --outDir dist/cjs",
-    "build:ts": "NODE_ENV=production tsc -m es2019 --outDir dist/esm ",
+    "build:ts": "NODE_ENV=production tsc -m es2020 --outDir dist/esm ",
     "build:copy-files": "cp README_COMPONENTS.md dist/README.md; cp .npmignore dist/.npmignore",
     "build:package-json": "node ./scripts/build-package-json.js",
     "build:sync-version-number": "node ./scripts/sync-version-number.js",
