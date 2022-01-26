@@ -142,6 +142,7 @@ export const SelectButton = React.forwardRef<
                 aria-hidden
                 tabIndex={-1}
                 type="button"
+                disabled={state === 'disabled'}
                 onMouseDown={() => {
                   setAllowBlur(false);
                 }}
