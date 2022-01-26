@@ -779,7 +779,6 @@ exports[`Select renders disabled select 1`] = `
     >
       <div
         class="emotion-5"
-        disabled=""
       >
         <button
           aria-hidden="true"
