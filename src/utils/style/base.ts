@@ -58,36 +58,49 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
   const propKeys = (customProp && props[customProp]) || defaultToken;
   const {breakpoints} = theme;
   const canHaveNonThemeValue = isNonThemeValueAllowed(themeKey);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const isMQTokenArray = (v: any): string[] =>
+    v.length > 0 &&
+    v.every((token: ThemeToken) => section[token as ThemeToken]);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const mapTokensArray = (v: any): string[] =>
+    v.map((token: ThemeToken) => section[token as ThemeToken]).join(' ');
   if (isResponsive(propKeys, breakpoints)) {
     // We have a breakpoints object...
-
     // Convert breakpoints to array and order them
     const breakpointKeys = Object.keys(breakpoints) as BreakpointKeys[];
     const mq = breakpointKeys.sort((a, b) => breakpoints[a] - breakpoints[b]);
-
     const presetKeys: [BreakpointKeys, ThemeToken][] = Object.entries(
       filterObject(propKeys, mq),
     ).sort(
       ([a], [b]) =>
         mq.indexOf(a as BreakpointKeys) - mq.indexOf(b as BreakpointKeys),
     ) as any; // eslint-disable-line @typescript-eslint/no-explicit-any
-
     const cssObject = presetKeys
       .filter(
         // Exclude invalid breakpoints and theme section keys
         ([breakpointKey, presetKey]) =>
           presetKey &&
           (section[presetKey] ||
+            (themeKey === 'spacePresets' &&
+              isMQTokenArray(presetKey.split(' '))) ||
             (canHaveNonThemeValue && isValidUnit(themeKey, presetKey))) &&
           breakpointKeys.includes(breakpointKey),
       )
       .reduce((acc, [key, presetKey], index, arr) => {
         /* istanbul ignore next */
-        const preset =
-          section[presetKey] ||
-          (canHaveNonThemeValue && isValidUnit(themeKey, presetKey)
-            ? presetKey
-            : '');
+        let preset = '' as Record<ThemeToken, unknown>[ThemeToken];
+        const MQtokens =
+          typeof presetKey === 'string' ? (presetKey as string).split(' ') : [];
+        if (themeKey === 'spacePresets' && isMQTokenArray(MQtokens)) {
+          preset = mapTokensArray(MQtokens);
+        } else {
+          preset =
+            section[presetKey] ||
+            (canHaveNonThemeValue &&
+              isValidUnit(themeKey, presetKey) &&
+              presetKey);
+        }
         // Get next key to set the max. This stops styles overlapping when they
         // shouldn't by explicitly setting them for the range they need to apply on.
         const nextKey = arr[index + 1] ? arr[index + 1][0] : undefined;
@@ -104,13 +117,20 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
     return Object.entries(cssObject);
   }
 
+  const noMQtokens =
+    typeof propKeys === 'string' && themeKey === 'spacePresets'
+      ? (propKeys as string).split(' ')
+      : [];
+  if (isMQTokenArray(noMQtokens)) {
+    return mapTokensArray(noMQtokens);
+  }
+
   if (propKeys && section[propKeys as ThemeToken]) {
     return section[propKeys as ThemeToken];
   }
   if (canHaveNonThemeValue && propKeys && isValidUnit(themeKey, propKeys)) {
     return propKeys;
   }
-
   return '';
 };
 

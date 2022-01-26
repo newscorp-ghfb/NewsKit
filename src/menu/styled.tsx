@@ -1,13 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import {TextAlignProperty} from 'csstype';
 import {Button} from '../button';
-import {getStylePreset, getResponsiveSpace, styled} from '../utils/style';
-import {
-  MenuItemAlign,
-  MenuGroupProps,
-  MenuProps,
-  MenutItemAlignTypes,
-} from './types';
+import {getStylePreset, getResponsiveSpace, styled, css} from '../utils/style';
+import {MenuGroupProps, MenuProps, MenutItemAlignTypes} from './types';
 
 export const StyledMenu = styled.nav<MenuProps>`
   box-sizing: border-box;
@@ -95,13 +90,19 @@ export const StyledMenuItem = styled.li<
 
 const menuItemFlexAlign = {
   start: 'flex-start',
+  center: 'center',
   end: 'flex-end',
 };
 
 const menuItemTextAlign = {
   start: 'left',
+  center: 'center',
   end: 'right',
 };
+
+const alignReset = css`
+  text-align: left;
+`;
 
 export const StyledButton = styled(Button)<{
   align?: MenutItemAlignTypes | undefined;
@@ -110,9 +111,9 @@ export const StyledButton = styled(Button)<{
   ${({selected}) =>
     selected && getStylePreset('menuItem', '', {isSelected: selected})}
 
+  ${({align}) => !align && alignReset}
   ${({align}) =>
-    align &&
-    align !== MenuItemAlign.Center && {
+    align && {
       justifyContent: menuItemFlexAlign[align],
       textAlign: menuItemTextAlign[align] as TextAlignProperty,
     }}

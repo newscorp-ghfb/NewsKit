@@ -12,7 +12,7 @@ export const MenuItem = React.forwardRef<HTMLLIElement, MenuItemProps>(
     const {vertical, size, align, overrides: menuOverrides} = useMenuContext();
 
     const theme = useTheme();
-    const buttonOverrides: MenuItemProps['overrides'] = {
+    const menuItemOverrides: MenuItemProps['overrides'] = {
       ...get(
         theme.componentDefaults,
         `menuItem.${vertical ? 'vertical' : 'horizontal'}`,
@@ -37,7 +37,7 @@ export const MenuItem = React.forwardRef<HTMLLIElement, MenuItemProps>(
           {...buttonProps}
           align={align}
           overrides={{
-            ...buttonOverrides,
+            ...menuItemOverrides,
             // width 100% should not be overwritten
             // move to StyledButton once PPDSC-1449 is resolved
             width: '100%',
