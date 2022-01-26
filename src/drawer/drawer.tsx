@@ -10,8 +10,11 @@ import {filterOutFalsyProperties} from '../utils/filter-object';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 import {setDrawerElementFocusability} from './utils';
 import {getTransitionDuration} from '../utils/get-transition-duration';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
-export const Drawer: React.FC<DrawerProps> = ({
+const ThemelessDrawer: React.FC<DrawerProps> = ({
   children,
   /* istanbul ignore next */
   open = false,
@@ -87,3 +90,8 @@ export const Drawer: React.FC<DrawerProps> = ({
     </BaseDialogFunction>
   );
 };
+
+export const Drawer = withOwnTheme(ThemelessDrawer)({
+  defaults,
+  stylePresets,
+});
