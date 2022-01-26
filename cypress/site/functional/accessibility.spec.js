@@ -29,7 +29,6 @@ describe('Page accessibility', () => {
       ) {
         cy.checkA11y(null, {
           rules: {
-            // 'scrollable-region-focusable': {enabled: false},
             'color-contrast': {enabled: false},
           },
         });
