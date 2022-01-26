@@ -167,3 +167,29 @@ describe('Banner', () => {
     expect(closeButton).toHaveTextContent(closeLabel);
   });
 });
+
+test(`renders grid and cell overrides on banner`, () => {
+  const props: BannerProps = {
+    actions: [actionsButton, secondActionsButton],
+    children: bannerMessage,
+    overrides: {
+      grid: {
+        props: {
+          xsMargin: 'space030',
+          mdMargin: 'space040',
+          lgMargin: 'space050',
+        },
+      },
+      cell: {
+        props: {
+          xs: 12,
+          md: 10,
+          mdOffset: 1,
+        },
+      },
+    },
+  };
+  const fragment = renderToFragmentWithTheme(Banner, props) as any;
+
+  expect(fragment).toMatchSnapshot();
+});

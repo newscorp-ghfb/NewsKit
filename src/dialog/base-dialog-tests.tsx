@@ -115,4 +115,25 @@ export const sharedDialogTests = (
 
     expect(mockCallBack).toHaveBeenCalled();
   });
+
+  test('renders without close button', () => {
+    const fragment = renderToFragmentWithTheme(Dialog, {
+      open: true,
+      header,
+      children: body,
+      onDismiss: () => {},
+      closePosition: 'none',
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders without header and close', () => {
+    const fragment = renderToFragmentWithTheme(Dialog, {
+      open: true,
+      children: body,
+      onDismiss: () => {},
+      closePosition: 'none',
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 };
