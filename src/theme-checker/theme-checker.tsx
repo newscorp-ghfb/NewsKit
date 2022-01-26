@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Stack} from '../stack';
 import {TextBlock} from '../text-block';
-import {getSSRId, MQ} from '../utils';
+import {MQ} from '../utils';
 import {toKebabCase} from '../utils/to-kabab-case';
 import {scenarios} from './scenarios';
 import {StyledStack} from './styled';
@@ -44,7 +44,6 @@ const StylePresetsLoader = ({
       spaceStack="space050"
       flow="horizontal-top"
       wrap
-      key={getSSRId()}
     >
       {stylePresets.map(stylePreset => children({stylePreset}))}
     </Stack>
@@ -58,22 +57,22 @@ const ThemeCheckerScenario = ({
   children: ({stylePreset}: {stylePreset?: MQ<string>}) => JSX.Element;
   name: string;
 }) => (
-  <>
-    <StyledStack spaceInline="space030">
-      <TextBlock typographyPreset="utilityBody030">{name}</TextBlock>
-      {stylePresetVariations.includes(name) ? (
-        <StylePresetsLoader name={name}>{children}</StylePresetsLoader>
-      ) : (
-        children({})
-      )}
-    </StyledStack>
-  </>
+  <StyledStack spaceInline="space030">
+    <TextBlock typographyPreset="utilityBody030" stylePreset="inkSubtle">
+      {name}
+    </TextBlock>
+    {stylePresetVariations.includes(name) ? (
+      <StylePresetsLoader name={name}>{children}</StylePresetsLoader>
+    ) : (
+      children({})
+    )}
+  </StyledStack>
 );
 
 export const ThemeChecker = () => (
   <>
     {scenarios.map(({name, component}) => (
-      <ThemeCheckerScenario key={getSSRId()} name={name}>
+      <ThemeCheckerScenario key={name} name={name}>
         {component}
       </ThemeCheckerScenario>
     ))}

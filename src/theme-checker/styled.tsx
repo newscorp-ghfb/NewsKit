@@ -1,10 +1,5 @@
 import {Stack} from '../stack';
-import {
-  getBorderCssFromTheme,
-  getColorCssFromTheme,
-  getSpacingCssFromTheme,
-  styled,
-} from '../utils';
+import {getColorCssFromTheme, getSpacingCssFromTheme, styled} from '../utils';
 
 export const Container = styled.div`
   ${getSpacingCssFromTheme('margin', 'space030')};
@@ -23,11 +18,10 @@ export const ContainerWithFixedHeight = styled.div`
 export const ContainerWithBorder = styled.div`
   border: solid 1px;
   ${getColorCssFromTheme('borderColor', 'interface040')};
-  ${getBorderCssFromTheme('border-radius', 'borderRadiusRounded020')};
 `;
 export const InverseContainer = styled.div`
-  ${getColorCssFromTheme('backgroundColor', 'black')};
-  ${getColorCssFromTheme('color', 'white')};
+  ${getColorCssFromTheme('backgroundColor', 'inkContrast')};
+  ${getColorCssFromTheme('color', 'inkInverse')};
 `;
 export const StyledStack = styled(Stack)`
   ${getSpacingCssFromTheme('marginTop', {xs: 'space040', md: 'space050'})};
@@ -38,7 +32,8 @@ export const ModalWrapper = styled.div`
   margin: 20px 0 20px 350px;
   position: relative;
   border: 1px solid orange;
-  background: lightgray;
+  ${getColorCssFromTheme('color', 'inkContrast')};
+  ${getColorCssFromTheme('backgroundColor', 'inkInverse')};
 `;
 
 export const Box = styled.div`
@@ -48,7 +43,8 @@ export const Box = styled.div`
 export const DrawerContainer = styled.div`
   margin-left: 10vw;
   margin-right: 10vw;
-  background: #f1f1f1;
+  ${getColorCssFromTheme('color', 'inkContrast')};
+  ${getColorCssFromTheme('backgroundColor', 'inkInverse')};
 
   position: relative;
   border: 1px solid red;

@@ -1,7 +1,11 @@
 import * as React from 'react';
 import {ThemeChecker} from '../theme-checker';
 import {StorybookHeading} from '../../test/storybook-comps';
-import {styled} from '../../utils';
+import {
+  getColorCssFromTheme,
+  getSpacingCssFromTheme,
+  styled,
+} from '../../utils';
 import {
   newskitLightTheme,
   newskitDarkTheme,
@@ -22,6 +26,11 @@ export default {
 
 const MainContainer = styled.div`
   margin: 0 auto;
+`;
+
+const Container = styled.div`
+  ${getColorCssFromTheme('backgroundColor', 'inkInverse')};
+  ${getSpacingCssFromTheme('padding', 'space030')};
 `;
 interface ThemeSelectorProps {
   children: React.ReactNode;
@@ -72,7 +81,9 @@ const ThemeSelector = ({children}: ThemeSelectorProps) => {
           ))}
         </Select>
       </Stack>
-      <ThemeProvider theme={themes[themeIndex]}>{children}</ThemeProvider>
+      <ThemeProvider theme={themes[themeIndex]}>
+        <Container>{children}</Container>
+      </ThemeProvider>
     </>
   );
 };

@@ -124,7 +124,7 @@ const ShareOnFacebookBtn = () => (
 );
 const DrawerContent = () => (
   <>
-    <p>
+    <P>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
       scelerisque sapien. Praesent mollis vestibulum nunc at blandit. Donec
       vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
@@ -134,7 +134,7 @@ const DrawerContent = () => (
       lacus, quis auctor dui mauris eu odio. Vivamus eu augue et enim varius
       viverra. Vivamus ut tellus iaculis, ullamcorper ligula sit amet, posuere
       ipsum.
-    </p>
+    </P>
     <div>
       <Button>Remind me later</Button>
       <Button>Ok</Button>
@@ -161,10 +161,10 @@ const modalContent = (
     spaceInline="space020"
   >
     <H1>You need an account</H1>
-    <p contentEditable>
+    <P>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
       doloremque laudantium, totam rem aperiam. (Double click for more text :) )
-    </p>
+    </P>
     <Button>Register for a free account</Button>
     <P>Already have an account?</P>
     <LinkInline href="/">Sign in here</LinkInline>
@@ -182,7 +182,7 @@ export const scenarios: Array<ComponentData> = [
         wrap
       >
         {textFieldStates.map(([id, {state}]) => (
-          <Container>
+          <Container key={id}>
             <Label htmlFor={id}>{id}</Label>
             <AssistiveText state={state}>Assistive Text</AssistiveText>
           </Container>
@@ -223,7 +223,9 @@ export const scenarios: Array<ComponentData> = [
   },
   {
     name: 'Block',
-    component: () => <Block>This is a block component</Block>,
+    component: () => (
+      <Block stylePreset="inkSubtle">This is a block component</Block>
+    ),
   },
   {
     name: 'Button',
@@ -379,7 +381,7 @@ export const scenarios: Array<ComponentData> = [
         wrap
       >
         {states.map(([id, {checked, ...props}]) => (
-          <Container>
+          <Container key={id}>
             <Checkbox {...props} defaultChecked={checked} label={id} />
           </Container>
         ))}
@@ -519,22 +521,26 @@ export const scenarios: Array<ComponentData> = [
     name: 'Inline Drawer',
     component: () =>
       React.createElement(() => {
-        const [isActive, close, toggle] = useActiveState();
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        const [isActive, open, close, toggle] = useActiveState();
         const [placement, setPlacement] = React.useState('left');
 
-        /* istanbul ignore next */ const onChangeValue = (
+        /* istanbul ignore next */ 
+        const onChangeValue = (
           ev: React.ChangeEvent<HTMLDivElement>,
-        ) =>
-          /* istanbul ignore next */ setPlacement(
-            (ev.target as HTMLInputElement).value,
-          );
+        ) => setPlacement((ev.target as HTMLInputElement).value);
 
         return (
           <div data-testid="scrollable-drawer">
             <Button onClick={toggle} data-testid="drawer-open-button">
               Open Drawer
             </Button>
-            <Block as="span" spaceInset="space030" onChange={onChangeValue}>
+            <Block
+              as="span"
+              spaceInset="space030"
+              onChange={onChangeValue}
+              stylePreset="inkSubtle"
+            >
               <label htmlFor="drawer-inline_top">
                 top:
                 <input
@@ -583,14 +589,20 @@ export const scenarios: Array<ComponentData> = [
                 disableFocusTrap
                 hideOverlay
                 placement={placement as 'top' | 'left' | 'right' | 'bottom'}
-                header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+                header={
+                  <P>
+                    This is a drawer header. Content is passed as string. Should
+                    be a long one so that the icon button is vertically
+                    centered.
+                  </P>
+                }
                 overrides={{
                   panel: {minSize: '20vh', maxSize: '50%'},
                 }}
               >
                 <DrawerContent />
               </Drawer>
-              <p>
+              <P>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                 aliquet lorem massa, et lacinia ipsum tristique id. Phasellus
                 sed posuere lacus. Pellentesque eu odio{' '}
@@ -604,7 +616,7 @@ export const scenarios: Array<ComponentData> = [
                 ultricies massa eu sem varius volutpat. Ut vitae purus et enim
                 imperdiet finibus. Quisque posuere lacus a nunc tempor accumsan.
                 Aliquam odio nunc, interdum.
-              </p>
+              </P>
             </DrawerContainer>
           </div>
         );
@@ -624,6 +636,7 @@ export const scenarios: Array<ComponentData> = [
           />
         }
         overrides={{stylePreset}}
+        key={getSSRId()}
       >
         {loremIpsum[0].slice(0, 55)}
       </InlineMessage>
@@ -644,21 +657,20 @@ export const scenarios: Array<ComponentData> = [
               <p>SCROLL DOWN </p>
 
               <Box>
-                {Array.from({length: 5}, (_, i) => (
-                  <>
-                    {i === 3 && (
-                      <Button onClick={open}>
-                        Another button to open the modal
-                      </Button>
-                    )}
-                    <p key={i}>{loremIpsum[0]}</p>
-                  </>
-                ))}
+                <P>{loremIpsum[0]}</P>
+                <P>{loremIpsum[1]}</P>
+                <P>{loremIpsum[2]}</P>
               </Box>
               <Modal
                 open={isActive}
                 onDismiss={close}
-                header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+                header={
+                  <P>
+                    This is a modal header. Content is passed as string. Should
+                    be a long one so that the icon button is vertically
+                    centered.
+                  </P>
+                }
                 hideOverlay
                 disableFocusTrap
                 inline
@@ -681,19 +693,15 @@ export const scenarios: Array<ComponentData> = [
       >
         <LinkInline href="/">Inline link</LinkInline>
         <LinkStandalone href="/">Standalone link</LinkStandalone>
-        <InverseContainer>
-          <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
-            Inline link
-          </LinkInline>
-        </InverseContainer>
-        <InverseContainer>
-          <LinkStandalone
-            href="/"
-            overrides={{stylePreset: 'linkInlineStandalone'}}
-          >
-            Inline link
-          </LinkStandalone>
-        </InverseContainer>
+        <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
+          Inline Link Inverse
+        </LinkInline>
+        <LinkStandalone
+          href="/"
+          overrides={{stylePreset: 'linkStandaloneInverse'}}
+        >
+          LinkStandalone Inverse
+        </LinkStandalone>
       </Stack>
     ),
   },
@@ -783,9 +791,15 @@ export const scenarios: Array<ComponentData> = [
     name: 'Tabs',
     component: () => (
       <Tabs size={TabSize.Small} divider distribution={TabsDistribution.Equal}>
-        <Tab label="Lorem ipsum">{loremIpsum[1]}</Tab>
-        <Tab label="Consectetur adipiscing">{loremIpsum[2]}</Tab>
-        <Tab label="Magna">{loremIpsum[3]}</Tab>
+        <Tab label="Lorem ipsum">
+          <TextBlock stylePreset="inkSubtle">{loremIpsum[1]}</TextBlock>
+        </Tab>
+        <Tab label="Consectetur adipiscing">
+          <TextBlock stylePreset="inkSubtle">{loremIpsum[2]}</TextBlock>
+        </Tab>
+        <Tab label="Magna">
+          <TextBlock stylePreset="inkSubtle">{loremIpsum[3]}</TextBlock>
+        </Tab>
       </Tabs>
     ),
   },
@@ -807,7 +821,11 @@ export const scenarios: Array<ComponentData> = [
   },
   {
     name: 'Text Block',
-    component: () => <TextBlock>{loremIpsum[0].slice(0, 55)}</TextBlock>,
+    component: () => (
+      <TextBlock stylePreset="inkSubtle">
+        {loremIpsum[0].slice(0, 55)}
+      </TextBlock>
+    ),
   },
   {
     name: 'Text Field',
@@ -819,7 +837,7 @@ export const scenarios: Array<ComponentData> = [
         wrap
       >
         {textFieldStates.map(([id, {state}]) => (
-          <Container>
+          <Container key={id}>
             <Label htmlFor={id}>{id}</Label>
             <TextField state={state} aria-describedby={`${id}-at`} id={id} />
           </Container>
