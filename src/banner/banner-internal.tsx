@@ -37,7 +37,7 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
   const closeButtonStyles: ButtonProps['overrides'] = {
     ...deepMerge(
       mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
-      theme.componentDefaults!.banner[layout].actions.closeButton,
+      theme.componentDefaults.banner[layout].actions.closeButton,
       filterOutFalsyProperties(overrides?.actions?.closeButton),
     ),
   };
@@ -47,7 +47,7 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
 
   const actionsSpacing =
     overrides?.actions?.spaceInline ||
-    theme.componentDefaults!.banner[layout].actions.spaceInline;
+    theme.componentDefaults.banner[layout].actions.spaceInline;
 
   return (
     <StyledBannerContainer

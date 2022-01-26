@@ -11,7 +11,7 @@ const ThemelessIconButton = ({overrides = {}, ...props}: IconButtonProps) => {
   const {size = ButtonSize.Small} = props;
 
   const iconButtonSettings: typeof overrides = {
-    ...theme.componentDefaults!.iconButton[size],
+    ...theme.componentDefaults.iconButton[size],
     ...filterOutFalsyProperties(overrides),
   };
 

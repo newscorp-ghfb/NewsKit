@@ -195,6 +195,7 @@ Object {
     "whiteTint090": "rgba(255,255,255,0.9)",
   },
   "compiled": true,
+  "componentDefaults": Object {},
   "fonts": Object {
     "fontFamily010": Object {
       "fontFamily": "\\"DM Sans\\", sans-serif",

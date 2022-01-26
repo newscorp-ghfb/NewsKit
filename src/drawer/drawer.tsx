@@ -35,7 +35,7 @@ const ThemelessDrawer: React.FC<DrawerProps> = ({
   const overlayOverrides = {
     ...deepMerge(
       mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
-      theme.componentDefaults![drawerPath].overlay,
+      theme.componentDefaults[drawerPath].overlay,
       filterOutFalsyProperties(overrides && overrides.overlay),
     ),
   };

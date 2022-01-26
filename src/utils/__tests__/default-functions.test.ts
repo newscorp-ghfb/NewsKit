@@ -573,7 +573,7 @@ describe('get component defaults functions', () => {
         test(fnName, () => {
           expect(fn('basicCCSUnitsComponent')(props)).toEqual(
             expectedResultFormatter(
-              theme.componentDefaults!.basicCCSUnitsComponent[path],
+              theme.componentDefaults.basicCCSUnitsComponent[path],
             ),
           );
         });

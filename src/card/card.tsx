@@ -54,8 +54,8 @@ const getCardHeadlineOverrides = (
   href?: string | BaseLinkProps,
 ) => {
   const cardHeadlineDefaults = href
-    ? theme.componentDefaults!.card.headline.interactive
-    : theme.componentDefaults!.card.headline.nonInteractive;
+    ? theme.componentDefaults.card.headline.interactive
+    : theme.componentDefaults.card.headline.nonInteractive;
 
   const {
     overrides: userHeadlineOverrides,

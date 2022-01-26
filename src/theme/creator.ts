@@ -60,6 +60,7 @@ export const createTheme = ({
   const newskitLight: ThemeBase = {
     ...foundations,
     ...presets,
+    componentDefaults: {},
     icons: {},
   };
 

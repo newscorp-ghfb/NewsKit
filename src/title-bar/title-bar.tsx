@@ -45,10 +45,10 @@ const ThemelessTitleBar: React.FC<TitleBarProps> = props => {
 
   const headlineOverrides = {
     typographyPreset: {
-      ...theme.componentDefaults!.titleBar.heading.typographyPreset,
+      ...theme.componentDefaults.titleBar.heading.typographyPreset,
     },
     heading: {
-      stylePreset: theme.componentDefaults!.titleBar.heading.stylePreset,
+      stylePreset: theme.componentDefaults.titleBar.heading.stylePreset,
     },
 
     ...addTitleBarHeadingOverrides(),

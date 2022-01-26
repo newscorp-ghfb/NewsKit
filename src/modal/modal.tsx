@@ -30,7 +30,7 @@ const ThemelessModal: React.FC<ModalProps> = ({
   const overlayOverrides = {
     ...deepMerge(
       mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
-      theme.componentDefaults!.modal.overlay,
+      theme.componentDefaults.modal.overlay,
       filterOutFalsyProperties(overrides && overrides.overlay),
     ),
   };

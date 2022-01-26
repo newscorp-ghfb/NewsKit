@@ -20,7 +20,7 @@ const ThemelessButton = React.forwardRef<
   const {children, overrides = {}, size = ButtonSize.Medium, loading} = props;
 
   const buttonSettings: typeof overrides = {
-    ...theme.componentDefaults!.button[size],
+    ...theme.componentDefaults.button[size],
     ...filterOutFalsyProperties(overrides),
   };
 

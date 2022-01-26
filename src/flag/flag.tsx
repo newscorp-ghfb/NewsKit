@@ -60,7 +60,7 @@ const ThemelessFlag = React.forwardRef<
       {...props}
       ref={ref}
       overrides={{
-        ...theme.componentDefaults!.flag[size],
+        ...theme.componentDefaults.flag[size],
         ...filterOutFalsyProperties(overrides),
       }}
     />

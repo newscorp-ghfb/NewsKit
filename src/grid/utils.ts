@@ -50,7 +50,7 @@ export const getOverridableProp = (
   const themeKey = propThemeMap[prop];
   const {theme} = props;
 
-  const defaultToken = theme.componentDefaults!.grid[themeKey][breakpoint];
+  const defaultToken = theme.componentDefaults.grid[themeKey][breakpoint];
 
   const tokenValue =
     (inheritedValue && theme.spacePresets[inheritedValue]) ||

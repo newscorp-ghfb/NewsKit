@@ -46,9 +46,10 @@ describe('Grid utils', () => {
             breakpointKeys.indexOf(propOverrideBreakpoint)
           ) {
             it('should use the default value from the theme', () => {
-              const token = mockProps.theme.componentDefaults!.grid[themeKey][
-                currentBreakpoint
-              ];
+              const token =
+                mockProps.theme.componentDefaults.grid[themeKey][
+                  currentBreakpoint
+                ];
               const tokenValue =
                 parseInt(mockProps.theme.spacePresets[token], 10) || 0;
               expect(

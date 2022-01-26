@@ -30,7 +30,7 @@ export const TabInternal = React.forwardRef<
     /* istanbul ignore if */
     if (
       process.env.NODE_ENV !== 'production' &&
-      typeof theme.componentDefaults!.tab !== 'object'
+      typeof theme.componentDefaults.tab !== 'object'
     ) {
       // eslint-disable-next-line no-console
       console.error('<Tab /> component needs to be used as child of <Tabs />');
@@ -39,7 +39,7 @@ export const TabInternal = React.forwardRef<
     }
 
     const tabSettings: typeof overrides = {
-      ...theme.componentDefaults!.tab[size],
+      ...theme.componentDefaults.tab[size],
       ...filterOutFalsyProperties(overrides),
     };
 

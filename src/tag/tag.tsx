@@ -25,7 +25,7 @@ const ThemelessTag = ({overrides = {}, disabled, href, ...props}: TagProps) => {
       {...emotionAs(href && !disabled ? 'a' : 'div')}
       {...props}
       overrides={{
-        ...theme.componentDefaults!.tag[size],
+        ...theme.componentDefaults.tag[size],
         ...filterOutFalsyProperties(overrides),
       }}
     />

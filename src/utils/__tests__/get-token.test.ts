@@ -19,7 +19,7 @@ describe('get token - extra coverage', () => {
         }),
       };
       expect(getToken(props as any, 'theComponent.theDefaultToken')).toEqual(
-        props.theme.componentDefaults!.theComponent.theDefaultToken,
+        props.theme.componentDefaults.theComponent.theDefaultToken,
       );
     });
   });
