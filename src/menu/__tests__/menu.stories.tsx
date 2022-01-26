@@ -62,26 +62,12 @@ export const StoryMenuItemsHorizontal = () => (
   <>
     <StorybookHeading>Menu items - horizontal</StorybookHeading>
     <Menu aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href}>Menu itemmm 1</MenuItem>
-      <MenuItem href={href}>Menu itemmm 2</MenuItem>
-      <MenuItem href="">Menu itemmm 1</MenuItem>
-      <MenuItem href="">Menu itemmm 2</MenuItem>
-      {/* <MenuItem href={href}>Menu item 3</MenuItem>
+      <MenuItem href={href}>Menu item 1</MenuItem>
+      <MenuItem href={href}>Menu item 2</MenuItem>
+      <MenuItem href={href}>Menu item 3</MenuItem>
       <MenuItem href={href}>Menu item 4</MenuItem>
       <MenuItem href={href}>Menu item 5</MenuItem>
-      <MenuItem href={href}>Menu item 6</MenuItem> */}
-    </Menu>
-
-    <br />
-    <br />
-    <br />
-    <Menu aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href="">Menu item 1</MenuItem>
-      <MenuItem href="">Menu item 2</MenuItem>
-      <MenuItem href="">Menu item 3</MenuItem>
-      <MenuItem href="">Menu item 4</MenuItem>
-      <MenuItem href="">Menu item 5</MenuItem>
-      <MenuItem href="">Menu item 6</MenuItem>
+      <MenuItem href={href}>Menu item 6</MenuItem>
     </Menu>
   </>
 );
