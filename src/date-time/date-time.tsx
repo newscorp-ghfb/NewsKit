@@ -5,6 +5,8 @@ import {DateTimeProps} from './types';
 import {TextBlock} from '../text-block';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
+import defaults from './defaults';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const StyledDateText = styled(TextBlock)`
   white-space: pre;
@@ -15,7 +17,7 @@ const StyledSuffix = StyledDateText;
 
 const defaultDateFormat = "MMMM d yyyy, h:mmaaaaa'm'";
 
-export const DateTime: React.FC<DateTimeProps> = ({
+const ThemelessDateTime: React.FC<DateTimeProps> = ({
   date,
   dateFormat = defaultDateFormat,
   prefix,
@@ -62,3 +64,7 @@ export const DateTime: React.FC<DateTimeProps> = ({
     </time>
   );
 };
+
+export const DateTime = withOwnTheme(ThemelessDateTime)({
+  defaults,
+});
