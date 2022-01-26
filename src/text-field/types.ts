@@ -28,6 +28,7 @@ export interface FormInputTextFieldProps
 
 export interface TextFieldProps extends FormInputTextFieldProps {
   rules?: FormValidationRules;
+  isRequired?: boolean;
   name?: string;
 }
 
@@ -37,6 +38,7 @@ type FormEntryChildrenProps = {
   state?: FormInputState;
   ref: React.Ref<HTMLInputElement>;
   error?: string;
+  isRequired?: boolean;
 };
 
 type FormValidationRules = Record<string, string | object>;

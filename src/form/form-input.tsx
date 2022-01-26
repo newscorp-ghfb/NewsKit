@@ -68,6 +68,8 @@ const ThemelessFormInput = ({
           state,
           iconSize: validationIconSize,
         });
+ 
+        const isRequired = rules && rules.required !== undefined
 
         const inputFieldContext = {
           name,
@@ -81,6 +83,7 @@ const ThemelessFormInput = ({
           assistiveTextId,
           labelId,
           statusIcon,
+          isRequired
         };
 
         return (
@@ -90,16 +93,6 @@ const ThemelessFormInput = ({
         );
       }}
     </FormEntry>
-  );
-};
-
-export const FormInputLabel = ({children, ...props}: LabelProps) => {
-  const {size, state, id, labelId} = useFormFieldContext();
-
-  return (
-    <Label id={labelId} size={size} state={state} htmlFor={id} {...props}>
-      {children}
-    </Label>
   );
 };
 
@@ -117,6 +110,7 @@ export const FormInputTextField = React.forwardRef<
     id,
     assistiveTextId,
     statusIcon,
+    isRequired,
   } = useFormFieldContext();
 
   function getEndEnhancer() {
@@ -135,6 +129,7 @@ export const FormInputTextField = React.forwardRef<
 
   return (
     <TextField
+      isRequired={isRequired}
       name={name}
       state={state}
       size={size}
@@ -148,6 +143,24 @@ export const FormInputTextField = React.forwardRef<
     />
   );
 });
+
+export const FormInput = withOwnTheme(ThemelessFormInput)({
+  defaults: {
+    ...textFieldDefaults,
+    ...assistiveTextDefaults,
+  },
+});
+
+
+export const FormInputLabel = ({children, ...props}: LabelProps) => {
+  const {size, state, id, labelId} = useFormFieldContext();
+
+  return (
+    <Label id={labelId} size={size} state={state} htmlFor={id} {...props}>
+      {children}
+    </Label>
+  );
+};
 
 export const FormInputSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   ({children, onChange, onBlur, ...props}, inputRef) => {
@@ -245,11 +258,4 @@ export const FormInputCheckbox = React.forwardRef<
       {...props}
     />
   );
-});
-
-export const FormInput = withOwnTheme(ThemelessFormInput)({
-  defaults: {
-    ...textFieldDefaults,
-    ...assistiveTextDefaults,
-  },
 });
