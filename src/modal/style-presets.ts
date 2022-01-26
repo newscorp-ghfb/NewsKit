@@ -3,7 +3,7 @@ import {StylePreset} from '../theme/types';
 export default {
   modalPanel: {
     base: {
-      borderRadius: '{{borders.borderRadiusSharp}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
       backgroundColor: '{{colors.interfaceBackground}}',
       boxShadow: '{{shadows.shadow060}}',
     },
