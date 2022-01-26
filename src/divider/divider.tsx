@@ -1,5 +1,8 @@
 import React from 'react';
 import {styled, getStylePreset, handleResponsiveProp, MQ} from '../utils/style';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 export interface DividerOverrides {
   stylePreset?: MQ<string>;
@@ -28,6 +31,8 @@ const StyledDivider = styled.hr<DividerProps>`
   })}
 `;
 
-export const Divider: React.FC<DividerProps> = props => (
+const ThemelessDivider: React.FC<DividerProps> = props => (
   <StyledDivider data-testid="divider" aria-hidden {...props} />
 );
+
+export const Divider = withOwnTheme(ThemelessDivider)({defaults, stylePresets});

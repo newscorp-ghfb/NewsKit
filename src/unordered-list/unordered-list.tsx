@@ -12,8 +12,10 @@ import {
   StyledMarkerBlock,
   StyledListItem,
 } from './styled';
+import defaults from './defaults';
+import {withOwnTheme} from '../utils/with-own-theme';
 
-export const UnorderedList: React.FC<UnorderedListProps> = ({
+const ThemelessUnorderedList: React.FC<UnorderedListProps> = ({
   children,
   listItemMarker: ListItemMarker,
   markerAlign,
@@ -92,3 +94,7 @@ export const UnorderedList: React.FC<UnorderedListProps> = ({
     </StyledUl>
   );
 };
+
+export const UnorderedList = withOwnTheme(ThemelessUnorderedList)({
+  defaults,
+});
