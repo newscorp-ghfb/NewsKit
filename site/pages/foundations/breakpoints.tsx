@@ -1,6 +1,5 @@
 import React from 'react';
-import {newskitLightTheme, compileTheme, Block} from 'newskit';
-
+import {newskitLightTheme, compileTheme} from 'newskit';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {
@@ -91,9 +90,7 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Block stylePreset="imageRoundedMedium">
-            <Illustration path="foundations/breakpoints/overview" />
-          </Block>
+          <Illustration path="foundations/breakpoints/overview" />
         </ContentPrimary>
 
         <ContentSecondary>
@@ -105,22 +102,20 @@ export default (layoutProps: LayoutProps) => (
 
         <ContentSecondary description="Default breakpoints can be overriden in the theme.">
           <Code>
-            {`
-        import {createTheme} from 'newskit'; 
-        
-        const theme = createTheme({ 
-            name: 'theme-with-custom-breakpoints', 
-            overrides: { 
-                breakpoints: { 
-                    xs: 0, // 0-359 
-                    sm: 360, 
-                    md: 540, 
-                    lg: 720, 
-                    xl: 1080, 
-                } 
-            }, 
-        });
-        `}
+            {`import {createTheme} from 'newskit'; 
+
+const theme = createTheme({ 
+    name: 'theme-with-custom-breakpoints', 
+    overrides: { 
+        breakpoints: { 
+            xs: 0, // 0-359 
+            sm: 360, 
+            md: 540, 
+            lg: 720, 
+            xl: 1080, 
+        } 
+    }, 
+});`}
           </Code>
         </ContentSecondary>
 
@@ -162,7 +157,6 @@ export default (layoutProps: LayoutProps) => (
         </ContentSecondary>
 
         <ContentSecondary
-          showSeparator
           description={
             <>
               Max-width defaults can be overidden in the{' '}
@@ -174,6 +168,7 @@ export default (layoutProps: LayoutProps) => (
               </Link>
             </>
           }
+          showSeparator
         />
       </ContentSection>
 
@@ -184,9 +179,7 @@ export default (layoutProps: LayoutProps) => (
           headline="Using breakpoints"
           description="NewsKit enables the appearance and behaviour of UI elements to change at different breakpoints."
         >
-          <Block stylePreset="imageRoundedMedium">
-            <Illustration path="foundations/breakpoints/usage" />
-          </Block>
+          <Illustration path="foundations/breakpoints/usage" />
         </ContentPrimary>
 
         <ContentSecondary
@@ -217,7 +210,7 @@ export default (layoutProps: LayoutProps) => (
 
         <ContentSecondary
           showSeparator
-          headline="Example"
+          headline="Code example"
           description="This example below shows different typography presets being used at different breakpoint."
         >
           <Code>{`
