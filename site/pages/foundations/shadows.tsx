@@ -1,12 +1,16 @@
 import React from 'react';
-import {Block, TextBlock, Divider, newskitLightTheme} from 'newskit';
+import {newskitLightTheme} from 'newskit';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {CommonSection} from '../../templates/template-sections';
 import {Table} from '../../components/table';
-import {ComponentPageCellCompact} from '../../components/layout-cells';
+import {ComponentPageCell} from '../../components/layout-cells';
 import {LayoutProps} from '../../components/layout';
 import {getTokenType} from '../../utils/get-token-type';
 import {Link} from '../../components/link';
+import {
+  ContentSection,
+  ContentPrimary,
+  ContentSecondary,
+} from '../../components/content-structure';
 
 const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
   shadow010: (
@@ -66,28 +70,33 @@ export default (layoutProps: LayoutProps) => (
       introduction: `Shadows provide visual cues about the distance between layers.`,
     }}
   >
-    <CommonSection
-      title="Overview"
-      id="overview"
-      toc="Overview"
-      introduction="The NewsKit design system offers a series of depths of shadows. They improve the overall aesthetics, add levels of depth and realism to the user’s visual experience and improve the UI visual hierarchy. This helps users discover and interact with UI elements. These have been mapped to commonly used components to ensure they work together in harmony."
-    >
-      <ComponentPageCellCompact>
-        <Table
-          columns={['Shadow', 'Token', 'Example usage']}
-          rows={shadowRows}
-        />
-        <Divider />
-        <Block spaceStack="space100" />
-        <TextBlock
-          stylePreset="inkBase"
-          typographyPreset="editorialParagraph030"
+    <ComponentPageCell>
+      <ContentSection sectionName="overview">
+        <ContentPrimary
+          id="overview"
+          toc="Overview"
+          headline="Overview"
+          description="The NewsKit design system offers a series of depths of shadows. They improve the overall aesthetics, add levels of depth and realism to the user’s visual experience and improve the UI visual hierarchy. This helps users discover and interact with UI elements. These have been mapped to commonly used components to ensure they work together in harmony."
         >
-          Shadows can be applied to a UI element using the boxShadow attribute
-          on a{' '}
-          <Link href="/foundations/presets/space-presets/">Style Preset.</Link>
-        </TextBlock>
-      </ComponentPageCellCompact>
-    </CommonSection>
+          <Table
+            columns={['Shadow', 'Token', 'Example usage']}
+            rows={shadowRows}
+          />
+        </ContentPrimary>
+
+        <ContentSecondary
+          description={
+            <>
+              Shadows can be applied to a UI element using the boxShadow
+              attribute on a{' '}
+              <Link href="/foundations/presets/space-presets/">
+                Style Preset.
+              </Link>
+            </>
+          }
+          showSeparator
+        />
+      </ContentSection>
+    </ComponentPageCell>
   </FoundationPageTemplate>
 );
