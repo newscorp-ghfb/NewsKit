@@ -1,26 +1,23 @@
 import React from 'react';
-import {Block, P, InlineMessage, newskitLightTheme, Divider} from 'newskit*';
+import {InlineMessage, newskitLightTheme} from 'newskit*';
 import {Table, TableRow} from '../../../components/table';
 import {getTokenType} from '../../../utils/get-token-type';
-import {Mono} from '../../../components/flags';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
-import {
-  BehaviorsSection,
-  CommonSection,
-} from '../../../templates/template-sections';
-import {
-  ComponentPageCell,
-  ComponentPageCellCompact,
-} from '../../../components/layout-cells';
+import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
 import {
   Illustration,
   getIllustrationComponent,
 } from '../../../components/illustrations/illustration-loader';
 import {MediaList} from '../../../components/media-list';
-import {ContentText} from '../../../components/text-section';
 import {TabsWithTable} from '../../../components/tabs-with-table';
 import {Link} from '../../../components/link';
+import {
+  ContentSection,
+  ContentPrimary,
+  ContentSecondary,
+} from '../../../components/content-structure';
+import {InlineCode} from '../../../components/markdown-elements';
 
 const getSpaceRowsDescription = (type: string) => {
   const tokens = getTokenType(
@@ -250,49 +247,57 @@ export default (layoutProps: LayoutProps) => (
       title: 'Motion',
       description:
         'Motion is used to create movement and narrative within a product.',
-      href: '/foundations/motions/',
+      href: 'foundations/motions/',
     }}
   >
-    <CommonSection
-      title="Principles"
-      id="principles"
-      toc="Principles"
-      introduction=""
-    >
-      <ComponentPageCell>
-        <MediaList layout="3-span" cardType="feature" cards={PRINCIPLE_CARDS} />
-      </ComponentPageCell>
-    </CommonSection>
-    <CommonSection
-      title="Overview"
-      id="overview"
-      toc="Overview"
-      introduction="Space is distance between elements on a screen often refered to as the whitespace. Good use of whitespace helps to de-clutter and group content to provide a visual hierarchy so that users can focus on the important elements and digest content with reduced cognitive load."
-    >
-      <ComponentPageCellCompact>
-        <Block spaceStack="space050">
+    <ComponentPageCell>
+      <ContentSection sectionName="principles">
+        <ContentPrimary
+          id="principles"
+          toc="Principles"
+          headline="Principles"
+          showSeparator
+        >
+          <MediaList
+            layout="3-span"
+            cardType="feature"
+            cards={PRINCIPLE_CARDS}
+          />
+        </ContentPrimary>
+      </ContentSection>
+
+      <ContentSection sectionName="overview">
+        <ContentPrimary
+          id="overview"
+          toc="Overview"
+          headline="Overview"
+          description="Space is distance between elements on a screen often refered to as the whitespace. Good use of whitespace helps to de-clutter and group content to provide a visual hierarchy so that users can focus on the important elements and digest content with reduced cognitive load."
+        >
           <Illustration path="foundations/spacing/overview" />
-        </Block>
-        <Block spaceStack="space070">
-          <P>
-            Space tokens define the space throughout the system, such as the
-            distance between an icon and the label in a button. The space tokens
-            define three categories to control margin and padding for specific
-            use cases, these are: <Mono>spaceInset</Mono>,{' '}
-            <Mono>spaceInline</Mono>, and <Mono>spaceStack</Mono>.
-            <br />
-            <br />
-            Available space design tokens are outlined below:
-          </P>
-        </Block>
-        <Block spaceStack="space070">
+        </ContentPrimary>
+
+        <ContentSecondary
+          description={
+            <>
+              Space tokens define the space throughout the system, such as the
+              distance between an icon and the label in a button. The space
+              tokens define three categories to control margin and padding for
+              specific use cases, these are: <InlineCode>spaceInset</InlineCode>
+              , <InlineCode>spaceInline</InlineCode>, and{' '}
+              <InlineCode>spaceStack</InlineCode>.
+              <br />
+              <br />
+              Available space design tokens are outlined below:
+            </>
+          }
+        >
           <Table
             columns={['Token', 'Value', 'Description']}
             rows={spaceTable}
           />
-          <Divider />
-        </Block>
-        <Block spaceStack="space070">
+        </ContentSecondary>
+
+        <ContentSecondary>
           <InlineMessage>
             Avoid using generic spacing tokens directly, in favor use the more
             specific options such as: spaceInset, spaceInline, and spaceStack as
@@ -300,205 +305,252 @@ export default (layoutProps: LayoutProps) => (
             needs, you can use the generic variables to keep spatial concepts
             consistent.
           </InlineMessage>
-        </Block>
-        <ContentText title="Code usage">
-          The{' '}
-          <Link href="/foundations/theming/component-defaults/">
-            Component Defaults
-          </Link>{' '}
-          page details the different ways in which you can override and apply
-          space inset to NewsKit components. For more advanced use cases, these
-          values can be accessed from the theme by calling either:
-          <Link href="/components/utils/get-defaults/">
-            getResponsiveSpacing
-          </Link>
-          , emotion&apos;s{' '}
-          <Link href="/components/utils/hooks/">useTheme hook</Link>, or{' '}
-          <Link href="/components/utils/get-css-from-theme/">
-            getSpacingCssFromTheme
-          </Link>
-          .
-        </ContentText>
-      </ComponentPageCellCompact>
-    </CommonSection>
+        </ContentSecondary>
 
-    <CommonSection
-      title="Space Inset"
-      id="spaceinset"
-      toc="Space Inset"
-      introduction={
-        <>
-          Space Inset is the space within a component (padding). By default, a
-          component&apos;s inset should be equal on all four sides.
-          <br />
-          Squish Inset reduces top and bottom padding relative to the default
-          inset space.
-          <br />
-          Stretch Inset increases top and bottom padding relative to the default
-          inset space.
-        </>
-      }
-    >
-      <ComponentPageCellCompact>
-        <Illustration path="foundations/spacing/space-inset" />
-        <Block spaceStack="space090" />
-        <TabsWithTable components={spaceInsetTable} />
-        <Divider />
-        <Block spaceStack="space090" />
-        <ContentText title="Code usage">
-          The{' '}
-          <Link href="/foundations/theming/component-defaults/">
-            Component Defaults
-          </Link>{' '}
-          page details the different ways in which you can override and apply
-          space inset to NewsKit components. For more advanced use cases, these
-          values can be accessed from the theme by calling either:
-          <Link href="/components/utils/get-defaults/">
-            getResponsiveSpacing
-          </Link>
-          , emotion&apos;s{' '}
-          <Link href="/components/utils/hooks/">useTheme hook</Link>, or{' '}
-          <Link href="/components/utils/get-css-from-theme/">
-            getSpacingCssFromTheme
-          </Link>
-          .
-        </ContentText>
-      </ComponentPageCellCompact>
-    </CommonSection>
-
-    <CommonSection
-      title="Space Inline"
-      id="spaceinline"
-      toc="Space Inline"
-      introduction={
-        <>
-          Space Inline is most often the space to the right of elements
-          (margin-right), however, if a component changes orientation, then the
-          flow changes the position of the margin.
-          <br />
-          If the flow is row or horizontal this will be applied as margin-right.
-          <br />
-          If the flow is column or vertical this will be applied as
-          margin-bottom.
-        </>
-      }
-    >
-      <ComponentPageCellCompact>
-        <Illustration path="foundations/spacing/space-inline" />
-        <Block spaceStack="space090" />
-        <ContentText title="Code usage">
-          The{' '}
-          <Link href="/foundations/theming/component-defaults/">
-            Component Defaults
-          </Link>{' '}
-          page details the different ways in which you can override and apply
-          space inline to NewsKit components. For more advanced use cases, these
-          values can be accessed from the theme by calling either:
-          <Link href="/components/utils/get-defaults/">
-            getResponsiveSpacing
-          </Link>
-          , emotion&apos;s{' '}
-          <Link href="/components/utils/hooks/">useTheme hook</Link>, or{' '}
-          <Link href="/components/utils/get-css-from-theme/">
-            getSpacingCssFromTheme
-          </Link>
-          . Space inline should generally only be applied to{' '}
-          <Mono>margin-right</Mono> and <Mono>margin-bottom</Mono>.
-        </ContentText>
-      </ComponentPageCellCompact>
-    </CommonSection>
-
-    <CommonSection
-      title="Space Stack"
-      id="spacestack"
-      toc="Space Stack"
-      introduction={
-        <>
-          Space Stack is most often the space to the bottom of elements
-          (margin-bottom, however, if a component changes orientation, then the
-          flow changes the position of the margin.
-          <br />
-          If the flow is row or horizontal this should be applied as
-          margin-bottom.
-          <br />
-          If the flow is column or vertical this should be applied as
-          margin-right.
-        </>
-      }
-    >
-      <ComponentPageCellCompact>
-        <Illustration path="foundations/spacing/space-stack" />
-        <Block spaceStack="space090" />
-        <ContentText title="Code usage">
-          The{' '}
-          <Link href="/foundations/theming/component-defaults/">
-            Component Defaults
-          </Link>{' '}
-          page details the different ways in which you can override and apply
-          space stack to NewsKit components. For more advanced use cases, these
-          values can be accessed from the theme by calling either:
-          <Link href="/components/utils/get-defaults/">
-            getResponsiveSpacing
-          </Link>
-          , emotion&apos;s{' '}
-          <Link href="/components/utils/hooks/">useTheme hook</Link>, or{' '}
-          <Link href="/components/utils/get-css-from-theme/">
-            getSpacingCssFromTheme
-          </Link>
-          . Space stack should generally only be applied to{' '}
-          <Mono>margin-right</Mono> and <Mono>margin-bottom</Mono>.
-        </ContentText>
-      </ComponentPageCellCompact>
-    </CommonSection>
-
-    <CommonSection
-      title="Text Crop"
-      id="textcrop"
-      toc="Text Crop"
-      introduction={
-        <>
-          To keep consistent and predictable spacing from design to code, we use
-          a text-crop utility that removes additional space (leading) around a
-          text block. This allows us to maintain our 4px baseline and keep
-          designs pixel-perfect.{' '}
-          <Link href="/foundations/theming/creating-a-theme/">
-            Read more about text crop here.
-          </Link>
-        </>
-      }
-    />
-
-    <BehaviorsSection
-      title="Common components that utilise space"
-      toc="Common components"
-      introduction="The following two components are the most common components that utilise space throughout the system:"
-      cards={[
-        {
-          title: 'Stack component',
-          description: (
+        <ContentSecondary
+          headline="Code usage"
+          description={
             <>
-              The Stack component enables items to be distributed evenly in
-              vertical or horizontal &apos;stacks&apos; (similar to FlexBox).{' '}
-              <Mono>spaceStack</Mono> and <Mono>spaceInline</Mono> can be
-              applied to elements in the Stack component. Learn more about the
-              Stack component.
+              The{' '}
+              <Link href="/foundations/theming/component-defaults/">
+                Component Defaults
+              </Link>{' '}
+              page details the different ways in which you can override and
+              apply space inset to NewsKit components. For more advanced use
+              cases, these values can be accessed from the theme by calling
+              either:
+              <Link href="/components/utils/get-defaults/">
+                getResponsiveSpacing
+              </Link>
+              , emotion&apos;s{' '}
+              <Link href="/components/utils/hooks/">useTheme hook</Link>, or{' '}
+              <Link href="/components/utils/get-css-from-theme/">
+                getSpacingCssFromTheme
+              </Link>
+              .
             </>
-          ),
-          media: getIllustrationComponent('foundations/spacing/stack'),
-        },
-        {
-          title: 'Block component',
-          description: (
+          }
+          showSeparator
+        />
+      </ContentSection>
+
+      <ContentSection sectionName="spaceinset">
+        <ContentPrimary
+          id="spaceinset"
+          toc="Space Inset"
+          headline="Space Inset"
+          description={
             <>
-              The Block component is a simple container component,{' '}
-              <Mono>spaceStack</Mono>, <Mono>spaceInline</Mono>, and{' '}
-              <Mono>spaceInset</Mono> can be applied to this component. Learn
-              more about the Block component.
+              Space Inset is the space within a component (padding). By default,
+              a component&apos;s inset should be equal on all four sides.
+              <br />
+              Squish Inset reduces top and bottom padding relative to the
+              default inset space.
+              <br />
+              Stretch Inset increases top and bottom padding relative to the
+              default inset space.
             </>
-          ),
-          media: getIllustrationComponent('foundations/spacing/block'),
-        },
-      ]}
-    />
+          }
+        >
+          <Illustration path="foundations/spacing/space-inset" />
+        </ContentPrimary>
+
+        <ContentSecondary>
+          <TabsWithTable components={spaceInsetTable} />
+        </ContentSecondary>
+
+        <ContentSecondary
+          headline="Code usage"
+          description={
+            <>
+              The{' '}
+              <Link href="/foundations/theming/component-defaults/">
+                Component Defaults
+              </Link>{' '}
+              page details the different ways in which you can override and
+              apply space inset to NewsKit components. For more advanced use
+              cases, these values can be accessed from the theme by calling
+              either:
+              <Link href="/components/utils/get-defaults/">
+                getResponsiveSpacing
+              </Link>
+              , emotion&apos;s{' '}
+              <Link href="/components/utils/hooks/">useTheme hook</Link>, or{' '}
+              <Link href="/components/utils/get-css-from-theme/">
+                getSpacingCssFromTheme
+              </Link>
+              .
+            </>
+          }
+          showSeparator
+        />
+      </ContentSection>
+
+      <ContentSection sectionName="spaceinline">
+        <ContentPrimary
+          id="spaceinline"
+          toc="Space Inline"
+          headline="Space Inline"
+          description={
+            <>
+              Space Inline is most often the space to the right of elements
+              (margin-right), however, if a component changes orientation, then
+              the flow changes the position of the margin.
+              <br />
+              If the flow is row or horizontal this will be applied as
+              margin-right.
+              <br />
+              If the flow is column or vertical this will be applied as
+              margin-bottom.
+            </>
+          }
+        >
+          <Illustration path="foundations/spacing/space-inline" />
+        </ContentPrimary>
+
+        <ContentSecondary
+          headline="Code usage"
+          description={
+            <>
+              The{' '}
+              <Link href="/foundations/theming/component-defaults/">
+                Component Defaults
+              </Link>{' '}
+              page details the different ways in which you can override and
+              apply space inline to NewsKit components. For more advanced use
+              cases, these values can be accessed from the theme by calling
+              either:
+              <Link href="/components/utils/get-defaults/">
+                getResponsiveSpacing
+              </Link>
+              , emotion&apos;s{' '}
+              <Link href="/components/utils/hooks/">useTheme hook</Link>, or{' '}
+              <Link href="/components/utils/get-css-from-theme/">
+                getSpacingCssFromTheme
+              </Link>
+              . Space inline should generally only be applied to{' '}
+              <InlineCode>margin-right</InlineCode> and{' '}
+              <InlineCode>margin-bottom</InlineCode>.
+            </>
+          }
+          showSeparator
+        />
+      </ContentSection>
+
+      <ContentSection sectionName="spacestack">
+        <ContentPrimary
+          id="spacestack"
+          toc="Space Stack"
+          headline="Space Stack"
+          description={
+            <>
+              Space Stack is most often the space to the bottom of elements
+              (margin-bottom, however, if a component changes orientation, then
+              the flow changes the position of the margin.
+              <br />
+              If the flow is row or horizontal this should be applied as
+              margin-bottom.
+              <br />
+              If the flow is column or vertical this should be applied as
+              margin-right.
+            </>
+          }
+        >
+          <Illustration path="foundations/spacing/space-stack" />
+        </ContentPrimary>
+
+        <ContentSecondary
+          headline="Code usage"
+          description={
+            <>
+              The{' '}
+              <Link href="/foundations/theming/component-defaults/">
+                Component Defaults
+              </Link>{' '}
+              page details the different ways in which you can override and
+              apply space stack to NewsKit components. For more advanced use
+              cases, these values can be accessed from the theme by calling
+              either:
+              <Link href="/components/utils/get-defaults/">
+                getResponsiveSpacing
+              </Link>
+              , emotion&apos;s{' '}
+              <Link href="/components/utils/hooks/">useTheme hook</Link>, or{' '}
+              <Link href="/components/utils/get-css-from-theme/">
+                getSpacingCssFromTheme
+              </Link>
+              . Space stack should generally only be applied to{' '}
+              <InlineCode>margin-right</InlineCode> and{' '}
+              <InlineCode>margin-bottom</InlineCode>.
+            </>
+          }
+          showSeparator
+        />
+      </ContentSection>
+
+      <ContentSection sectionName="textcrop">
+        <ContentPrimary
+          id="textcrop"
+          toc="Text Crop"
+          headline="Text Crop"
+          description={
+            <>
+              To keep consistent and predictable spacing from design to code, we
+              use a text-crop utility that removes additional space (leading)
+              around a text block. This allows us to maintain our 4px baseline
+              and keep designs pixel-perfect.{' '}
+              <Link href="/foundations/theming/creating-a-theme/">
+                Read more about text crop here.
+              </Link>
+            </>
+          }
+          showSeparator
+        />
+      </ContentSection>
+
+      <ContentSection sectionName="behaviors">
+        <ContentPrimary
+          id="behaviors"
+          toc="Common components"
+          headline="Common components that utilise space"
+          description="The following two components are the most common components that utilise space throughout the system:"
+          showSeparator
+        >
+          <MediaList
+            layout="1-span"
+            cardsLayout="horizontal"
+            cards={[
+              {
+                title: 'Stack component',
+                description: (
+                  <>
+                    The Stack component enables items to be distributed evenly
+                    in vertical or horizontal &apos;stacks&apos; (similar to
+                    FlexBox). <InlineCode>spaceStack</InlineCode> and{' '}
+                    <InlineCode>spaceInline</InlineCode> can be applied to
+                    elements in the Stack component. Learn more about the Stack
+                    component.
+                  </>
+                ),
+                media: getIllustrationComponent('foundations/spacing/stack'),
+              },
+              {
+                title: 'Block component',
+                description: (
+                  <>
+                    The Block component is a simple container component,{' '}
+                    <InlineCode>spaceStack</InlineCode>,{' '}
+                    <InlineCode>spaceInline</InlineCode>, and{' '}
+                    <InlineCode>spaceInset</InlineCode> can be applied to this
+                    component. Learn more about the Block component.
+                  </>
+                ),
+                media: getIllustrationComponent('foundations/spacing/block'),
+              },
+            ]}
+          />
+        </ContentPrimary>
+      </ContentSection>
+    </ComponentPageCell>
   </FoundationPageTemplate>
 );

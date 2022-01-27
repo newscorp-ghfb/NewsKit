@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage, IconFilledInfo, newskitLightTheme} from 'newskit';
+import {InlineMessage, IconFilledInfo, newskitLightTheme} from 'newskit';
 
 import {
   ContentSection,
@@ -109,14 +109,12 @@ const additionalFontPropertiesRows = [
   {
     property: 'wordBreak',
     example: (
-      <Block spaceInline="space050">
-        <Link
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-break"
-          target="_blank"
-        >
-          CSS
-        </Link>
-      </Block>
+      <Link
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-break"
+        target="_blank"
+      >
+        CSS
+      </Link>
     ),
     description:
       'word-break sets whether line breaks appear when the text would otherwise overflow the containing box ',
@@ -405,19 +403,20 @@ export default (layoutProps: LayoutProps) => (
           <Code>
             lineHeight: getLineHeight(‘fontSize040’, ‘fontLineHeight020’)
           </Code>
-          <Block spaceStack="space060">
-            <InlineMessage
-              overrides={{stylePreset: 'inlineMessageInformative'}}
-              icon={icon}
-              role="region"
-              aria-label="default base line"
-            >
-              The default baseline of NewsKit is 4px, and when calculating
-              line-height for typographical styles we round either up or down to
-              the nearest 4px value. This maintains a consistent visual approach
-              when using typography across your UI designs.
-            </InlineMessage>
-          </Block>
+        </ContentSecondary>
+
+        <ContentSecondary>
+          <InlineMessage
+            overrides={{stylePreset: 'inlineMessageInformative'}}
+            icon={icon}
+            role="region"
+            aria-label="default base line"
+          >
+            The default baseline of NewsKit is 4px, and when calculating
+            line-height for typographical styles we round either up or down to
+            the nearest 4px value. This maintains a consistent visual approach
+            when using typography across your UI designs.
+          </InlineMessage>
         </ContentSecondary>
 
         <ContentSecondary
@@ -460,23 +459,24 @@ export default (layoutProps: LayoutProps) => (
           />
         </ContentSecondary>
 
-        <ContentSecondary showSeparator>
+        <ContentSecondary>
           <CodeFromFile path="examples/fonts/font-properties.tsx" />
-          <Block spaceStack="space060">
-            <InlineMessage
-              title="Font smooth"
-              overrides={{stylePreset: 'inlineMessageInformative'}}
-              icon={icon}
-              role="region"
-              aria-label="typography"
-            >
-              To ensure typography in components are rendered smooth and crisp
-              (rounded to nearest pixel as opposed to the subpixel), apply{' '}
-              <InlineCode>-webkit-font-smoothing: antialiased</InlineCode>.
-              Emotion’s global style component can be used to set this as a
-              default across your website.
-            </InlineMessage>
-          </Block>
+        </ContentSecondary>
+
+        <ContentSecondary showSeparator>
+          <InlineMessage
+            title="Font smooth"
+            overrides={{stylePreset: 'inlineMessageInformative'}}
+            icon={icon}
+            role="region"
+            aria-label="typography"
+          >
+            To ensure typography in components are rendered smooth and crisp
+            (rounded to nearest pixel as opposed to the subpixel), apply{' '}
+            <InlineCode>-webkit-font-smoothing: antialiased</InlineCode>.
+            Emotion’s global style component can be used to set this as a
+            default across your website.
+          </InlineMessage>
         </ContentSecondary>
       </ContentSection>
 

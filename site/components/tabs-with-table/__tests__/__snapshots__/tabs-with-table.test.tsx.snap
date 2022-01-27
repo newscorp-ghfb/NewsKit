@@ -741,48 +741,5 @@ exports[`TabsWithTable renders with default data 1`] = `
       </div>
     </div>
   </div>
-  @media screen and (max-width: 767px) {
-  .emotion-0 {
-    margin-top: 64px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-top: 80px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .emotion-0 {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-bottom: 80px;
-  }
-}
-
-.emotion-1 {
-  border-style: solid;
-  border-color: #E4E4E4;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-top-width: 1px;
-  width: 100%;
-}
-
-<div
-    class="emotion-0"
-  >
-    <hr
-      aria-hidden="true"
-      class="emotion-1"
-      data-testid="divider"
-    />
-  </div>
 </DocumentFragment>
 `;
