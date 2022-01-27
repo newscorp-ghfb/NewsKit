@@ -9,13 +9,16 @@ import {TableProps} from './types';
 import {columnMap} from './column-map';
 import {renderCols} from './column-renderer';
 
-export const Table: React.FC<TableProps> = ({rows, columns}) => (
+export const Table: React.FC<TableProps> = ({rows, columns, columnsIcon}) => (
   <StyledContainer>
     <StyledTable>
       <thead>
         <tr>
           {columns.map(columnName => (
             <StyledHeader key={columnName} {...(columnMap[columnName] || {})}>
+              {columnsIcon && (
+                <div>{columnsIcon[columnName.toLowerCase()]}</div>
+              )}
               {columnMap[columnName]?.cellHeader || columnName}
             </StyledHeader>
           ))}
