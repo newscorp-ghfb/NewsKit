@@ -10,8 +10,9 @@ import {
 } from '../utils/style';
 import {Stack, Flow, StackProps} from '../stack';
 import {useTheme} from '../theme';
-
 import {getToken} from '../utils/get-token';
+import defaults from './defaults';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 export interface ShareBarProps extends React.HTMLAttributes<HTMLElement> {
   label?: string;
@@ -53,7 +54,7 @@ const StyledShareBarContainer = styled(Stack)<StyledShareBarContainerProps>`
   ${getStylePreset(`shareBar`)}
 `;
 
-export const ShareBar: React.FC<ShareBarProps> = ({
+const ThemelessShareBar: React.FC<ShareBarProps> = ({
   label,
   vertical,
   children,
@@ -91,4 +92,8 @@ export const ShareBar: React.FC<ShareBarProps> = ({
   );
 };
 
-ShareBar.displayName = 'ShareBar';
+ThemelessShareBar.displayName = 'ShareBar';
+
+export const ShareBar = withOwnTheme(ThemelessShareBar)({
+  defaults,
+});

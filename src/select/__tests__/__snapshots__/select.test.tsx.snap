@@ -154,7 +154,7 @@ exports[`Select renders Select with overrides 1`] = `
       aria-haspopup="listbox"
       class="emotion-2"
       data-testid="select-button"
-      id="downshift-38-toggle-button"
+      id="downshift-40-toggle-button"
       type="button"
       value="option 1"
     >
@@ -248,10 +248,10 @@ exports[`Select renders Select with overrides 1`] = `
 
 <div
     aria-describedby="mock-nk-1"
-    aria-labelledby="downshift-38-label"
+    aria-labelledby="downshift-40-label"
     class="emotion-0"
     data-testid="select-panel"
-    id="downshift-38-menu"
+    id="downshift-40-menu"
     role="listbox"
     tabindex="-1"
   />
@@ -779,12 +779,12 @@ exports[`Select renders disabled select 1`] = `
     >
       <div
         class="emotion-5"
-        disabled=""
       >
         <button
           aria-hidden="true"
           class="emotion-6"
           data-testid="select-chevron-button"
+          disabled=""
           tabindex="-1"
           type="button"
         >
@@ -1317,7 +1317,7 @@ exports[`Select renders loading select 1`] = `
       class="emotion-2"
       data-testid="select-button"
       disabled=""
-      id="downshift-15-toggle-button"
+      id="downshift-17-toggle-button"
       type="button"
     >
       <div
@@ -1391,10 +1391,10 @@ exports[`Select renders loading select 1`] = `
 
 <div
     aria-describedby="mock-nk-1"
-    aria-labelledby="downshift-15-label"
+    aria-labelledby="downshift-17-label"
     class="emotion-0"
     data-testid="select-panel"
-    id="downshift-15-menu"
+    id="downshift-17-menu"
     role="listbox"
     tabindex="-1"
   />
@@ -1875,7 +1875,7 @@ exports[`Select renders select with a pre selected option 1`] = `
       aria-haspopup="listbox"
       class="emotion-2"
       data-testid="select-button"
-      id="downshift-16-toggle-button"
+      id="downshift-18-toggle-button"
       type="button"
       value="option 1"
     >
@@ -1969,10 +1969,10 @@ exports[`Select renders select with a pre selected option 1`] = `
 
 <div
     aria-describedby="mock-nk-1"
-    aria-labelledby="downshift-16-label"
+    aria-labelledby="downshift-18-label"
     class="emotion-0"
     data-testid="select-panel"
-    id="downshift-16-menu"
+    id="downshift-18-menu"
     role="listbox"
     tabindex="-1"
   />
@@ -2181,7 +2181,7 @@ exports[`Select renders select with a selected option 1`] = `
       aria-haspopup="listbox"
       class="emotion-2"
       data-testid="select-button"
-      id="downshift-17-toggle-button"
+      id="downshift-19-toggle-button"
       type="button"
       value="option 1"
     >
@@ -2275,10 +2275,10 @@ exports[`Select renders select with a selected option 1`] = `
 
 <div
     aria-describedby="mock-nk-1"
-    aria-labelledby="downshift-17-label"
+    aria-labelledby="downshift-19-label"
     class="emotion-0"
     data-testid="select-panel"
-    id="downshift-17-menu"
+    id="downshift-19-menu"
     role="listbox"
     tabindex="-1"
   />
@@ -2500,7 +2500,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
       aria-haspopup="listbox"
       class="emotion-5"
       data-testid="select-button"
-      id="downshift-18-toggle-button"
+      id="downshift-20-toggle-button"
       type="button"
     >
       <div
@@ -2605,10 +2605,10 @@ exports[`Select renders select with leading and trailing icon 1`] = `
 
 <div
     aria-describedby="mock-nk-1"
-    aria-labelledby="downshift-18-label"
+    aria-labelledby="downshift-20-label"
     class="emotion-0"
     data-testid="select-panel"
-    id="downshift-18-menu"
+    id="downshift-20-menu"
     role="listbox"
     tabindex="-1"
   />
@@ -2817,7 +2817,7 @@ exports[`Select renders select with non-string options 1`] = `
       aria-haspopup="listbox"
       class="emotion-2"
       data-testid="select-button"
-      id="downshift-19-toggle-button"
+      id="downshift-21-toggle-button"
       type="button"
       value="option 2"
     >
@@ -2913,10 +2913,10 @@ exports[`Select renders select with non-string options 1`] = `
 
 <div
     aria-describedby="mock-nk-1"
-    aria-labelledby="downshift-19-label"
+    aria-labelledby="downshift-21-label"
     class="emotion-0"
     data-testid="select-panel"
-    id="downshift-19-menu"
+    id="downshift-21-menu"
     role="listbox"
     tabindex="-1"
   />
