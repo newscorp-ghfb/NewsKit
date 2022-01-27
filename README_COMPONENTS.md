@@ -104,16 +104,16 @@ export default class App extends React.Component {
 
 ## 🐛 Bugs, Issues & Feature requests
 
-Feel free to reach out by raising issues on our [github](https://github.com/newscorp-ghfb/ncu-newskit/issues).
+Feel free to reach out by raising issues on our [github](https://github.com/newscorp-ghfb/newskit/issues).
 
 ## 🤝 Contributing
 
-See the [contributing guidelines](https://github.com/newscorp-ghfb/ncu-newskit/wiki/Contributing-Guidelines) in the wiki.
+See the [contributing guidelines](https://github.com/newscorp-ghfb/newskit/wiki/Contributing-Guidelines) in the wiki.
 
 ## 🔗 Key Links
 
 * [NewsKit Documentation](https://www.newskit.co.uk/)
 * [View NewsKit Design System npm package](https://www.npmjs.com/package/newskit)
-* [Github repository](https://github.com/newscorp-ghfb/ncu-newskit)
+* [Github repository](https://github.com/newscorp-ghfb/newskit)
 * [Medium](https://medium.com/newskit-design-system)
 * [Storybook](https://storybook.newskit.co.uk/)

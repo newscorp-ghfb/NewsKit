@@ -42,7 +42,7 @@ export default (layoutProps: LayoutProps) => (
       status: MetaStatus.Beta,
       introduced: 'v3.3.0',
       codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/tree/master/src/inline-message',
+        'https://github.com/newscorp-ghfb/newskit/tree/master/src/inline-message',
       figmaUrl: '',
     }}
     interactiveDemo={{
