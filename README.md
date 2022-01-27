@@ -13,14 +13,14 @@ NewsKit is News UK’s design system. It provides interactive building blocks an
 | ------- | -------------------------------------------------------------------------------------- |
 | develop | [https://www.newskit.dev-news.co.uk/](https://www.newskit.dev-news.co.uk/)             |
 | develop | [https://storybook.newskit.dev-news.co.uk/](https://storybook.newskit.dev-news.co.uk/) |
-| master  | [https://www.newskit.co.uk/](https://www.newskit.co.uk/)                               |
-| master  | [https://storybook.newskit.co.uk/](https://storybook.newskit.co.uk/)                   |
+| main    | [https://www.newskit.co.uk/](https://www.newskit.co.uk/)                               |
+| main    | [https://storybook.newskit.co.uk/](https://storybook.newskit.co.uk/)                   |
 
 ## 🙌 Browser support
 
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Chrome  | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Safari |
-| --- | --- | --- |
-| last 2 versions | last 2 versions | last 2 versions |
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Safari |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| last 2 versions                                                                                                                                                                                              | last 2 versions                                                                                                                                                                                                  | last 2 versions                                                                                                                                                                                              |
 
 ## ✅ Pre-requisites
 

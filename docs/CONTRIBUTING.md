@@ -33,7 +33,7 @@ The __scope__ field is the (upper case) Jira ticket number for the task being co
 
 The __description__ field is a dash-separated (lower kebab case) useful human-readable description of the changes in the branch.
 
-This does not apply to long-lived branches, such as master, development, release, etc.
+This does not apply to long-lived branches, such as main, development, release, etc.
 
 . e.g. `feat/NUK-001-login-screen-ui`
 
@@ -147,6 +147,6 @@ This will better allow the team to prioritise what to look at. [View here](https
 
 SHOULD be squash merged to keep history on develop branch clean.
 
-## Merging develop to master
+## Merging develop to main
 
-Merge to master is done as a part of the release process, and SHOULD be a merge commit to preserve history.
+Merge to main is done as a part of the release process, and SHOULD be a merge commit to preserve history.
