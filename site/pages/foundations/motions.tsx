@@ -1,11 +1,5 @@
 import React, {useEffect} from 'react';
-import {
-  newskitLightTheme,
-  InlineMessage,
-  Block,
-  P,
-  UnorderedList,
-} from 'newskit';
+import {newskitLightTheme, InlineMessage, P, UnorderedList} from 'newskit';
 
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {
@@ -175,19 +169,23 @@ export default (layoutProps: LayoutProps) => (
           id="overview"
           toc="Overview"
           headline="Overview"
-          description="Motion foundations are used in animations and transitions."
-          showSeparator
-        >
-          <InlineMessage role="region" aria-label="Overview">
-            <Link
-              href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/3446341702"
-              target="_blank"
-            >
-              Learn more about how Motion foundations are applied to animations
-              and transitions via Motion Presets.
-            </Link>
-          </InlineMessage>
-          <Block spaceStack="space060" />
+          description={
+            <>
+              Motion foundations are used in animations and transitions.
+              <br />
+              <br />
+              <Link
+                href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/3446341702"
+                target="_blank"
+              >
+                Learn more about how Motion foundations are applied to
+                animations and transitions via Motion Presets.
+              </Link>
+            </>
+          }
+        />
+
+        <ContentSecondary showSeparator>
           <InlineMessage
             role="region"
             title="Overrides"
@@ -198,7 +196,7 @@ export default (layoutProps: LayoutProps) => (
               Learn more about overriding default Motion in the theme.
             </Link>
           </InlineMessage>
-        </ContentPrimary>
+        </ContentSecondary>
       </ContentSection>
 
       <ContentSection sectionName="principles">
@@ -223,19 +221,18 @@ export default (layoutProps: LayoutProps) => (
           headline="Duration"
           description="Duration
           Determining which timing to use is a matter of context, including the complexity of the action and the distance over which the animation occurs."
-          showSeparator
         >
-          <Block spaceStack="space060">
-            <ReduceMotionMessage />
-          </Block>
+          <ReduceMotionMessage />
+        </ContentPrimary>
 
+        <ContentSecondary>
           <Table
             columns={['Duration', 'Token', 'Token value', 'Common uses']}
             rows={motionDurationRows}
           />
-        </ContentPrimary>
+        </ContentSecondary>
 
-        <ContentSecondary>
+        <ContentSecondary showSeparator>
           <InlineMessage role="region" aria-label="Duration">
             These should use the{' '}
             <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration">
@@ -253,15 +250,15 @@ export default (layoutProps: LayoutProps) => (
           headline="Timing"
           description="Timing controls the velocity of motion over its duration. It helps determine an animation’s feeling and can aid in matching the appearance of real-world physics by controlling how objects accelerate and decelerate as they move on the screen. NewsKit uses four different types of timing."
         >
-          <Block spaceStack="space060">
-            <ReduceMotionMessage />
-          </Block>
+          <ReduceMotionMessage />
+        </ContentPrimary>
 
+        <ContentSecondary>
           <Table
             columns={['Timing', 'Token', 'Token value', 'Common uses']}
             rows={motionTimingRows}
           />
-        </ContentPrimary>
+        </ContentSecondary>
 
         <ContentSecondary showSeparator>
           <InlineMessage role="region" aria-label="Timing">
