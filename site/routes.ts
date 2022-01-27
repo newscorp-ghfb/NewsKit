@@ -124,10 +124,10 @@ export default [
           'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
       },
       {
-        title: 'Motions',
+        title: 'Motion',
         page: true,
-        id: '/foundations/motions',
-        illustration: 'foundations/motions/hero',
+        id: '/foundations/motion',
+        illustration: 'foundations/motion/hero',
         description:
           'Motion is used to create movement and narrative within a product. Animated interface elements don’t just attract attention, they enhance user experience and help guide user flow',
       },
@@ -154,6 +154,13 @@ export default [
         description:
           'Standardised sizing provides increased visual consistency in an interface.',
       },
+      {
+        title: 'Spacing',
+        page: true,
+        id: '/foundations/spacing',
+        description:
+          'Space helps to guide the user and provide a pleasant and consistent experience when using a product.',
+      },
       // {
       //   title: 'Overlays',
       //   page: true,
@@ -174,13 +181,6 @@ export default [
         title: 'Presets',
         id: '/foundations/presets',
         subNav: [
-          {
-            title: 'Space Presets',
-            page: true,
-            id: '/foundations/presets/space-presets',
-            description:
-              'Space helps to guide the user and provide a pleasant and consistent experience when using a product.',
-          },
           {
             title: 'Style Presets',
             page: true,
@@ -648,15 +648,16 @@ export default [
       },
     ],
   },
-  {
-    title: 'Patterns',
-    id: '/patterns',
-    subNav: [
-      {
-        title: 'Overview',
-        page: true,
-        id: '/patterns/overview',
-      },
-    ],
-  },
+  // ToDo: At least one pattern page should be ready to enable this nav link .
+  // {
+  //   title: 'Patterns',
+  //   id: '/patterns',
+  //   subNav: [
+  //     {
+  //       title: 'Overview',
+  //       page: true,
+  //       id: '/patterns/overview',
+  //     },
+  //   ],
+  // },
 ];

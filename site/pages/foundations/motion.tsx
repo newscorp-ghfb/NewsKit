@@ -91,22 +91,22 @@ const DO_AND_DONT = [
   {
     description: `Motion should be used to highlight important details and emphasise key points in a user journey.`,
     kind: UsageKind.DO,
-    media: getIllustrationComponent('foundations/motions/do-01'),
+    media: getIllustrationComponent('foundations/motion/do-01'),
   },
   {
     description: `Motion should not distract or block the user from what they are doing.`,
     kind: UsageKind.DONT,
-    media: getIllustrationComponent('foundations/motions/dont-01'),
+    media: getIllustrationComponent('foundations/motion/dont-01'),
   },
   {
     description: `Avoid motion that is too fast for users to follow.`,
     kind: UsageKind.DONT,
-    media: getIllustrationComponent('foundations/motions/dont-02'),
+    media: getIllustrationComponent('foundations/motion/dont-02'),
   },
   {
     description: `Avoid motion that is overly slow, preventing a user from advancing in their user journey.`,
     kind: UsageKind.DONT,
-    media: getIllustrationComponent('foundations/motions/dont-03'),
+    media: getIllustrationComponent('foundations/motion/dont-03'),
   },
 ];
 
@@ -157,7 +157,7 @@ export default (layoutProps: LayoutProps) => (
       type: 'Foundation',
       name: 'Motion',
       hero: {
-        illustration: 'foundations/motions/hero',
+        illustration: 'foundations/motion/hero',
       },
       introduction: `Motion is used to create movement and narrative within a product. Animated interface elements don't just attract attention, they enhance user experience and help guide user flow. They reveal the functionality and process of a user interface by communicating where to focus and what to do next..
 `,

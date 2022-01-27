@@ -149,8 +149,7 @@ export default (layoutProps: LayoutProps) => (
               <Link href="/foundations/presets/style-presets">
                 Style Presets
               </Link>
-              , Sizing, and{' '}
-              <Link href="/foundations/presets/space-presets/">Spacing</Link>{' '}
+              , Sizing, and <Link href="/foundations/spacing/">Spacing</Link>{' '}
               they provide the visual attributes of a component.
             </>
           }
@@ -171,8 +170,7 @@ export default (layoutProps: LayoutProps) => (
               <Link href="/foundations/presets/style-presets">
                 Style Presets
               </Link>
-              , Sizing, and{' '}
-              <Link href="/foundations/presets/space-presets/">Spacing</Link>{' '}
+              , Sizing, and <Link href="/foundations/spacing/">Spacing</Link>{' '}
               they provide the visual attributes of a component.
             </>
           }
