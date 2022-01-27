@@ -1,6 +1,6 @@
 
 <p align="center">
-  <a href="https://github.com/newscorp-ghfb/ncu-newskit">
+  <a href="https://github.com/newscorp-ghfb/newskit">
     <img width='550' src="https://www.newskit.co.uk/static/newskit-logo.svg">
   </a>
 </p>
@@ -39,8 +39,8 @@ Once you have the above installed, run the following commands:
 Note that if you are on Windows machine, you need to run the `wsl` command first to run which ever linux environment you've installed on your machine.
 
 ```sh
-git clone git@github.com:newscorp-ghfb/ncu-newskit.git
-cd ncu-newskit
+git clone git@github.com:newscorp-ghfb/newskit.git
+cd newskit
 yarn && yarn dev
 ```
 
@@ -64,6 +64,6 @@ For detailed information on how to run the automated tests, please visit [Testin
 
 * [NewsKit Documentation](https://www.newskit.co.uk/)
 * [View NewsKit Design System npm package](https://www.npmjs.com/package/newskit)
-* [Github repository](https://github.com/newscorp-ghfb/ncu-newskit)
+* [Github repository](https://github.com/newscorp-ghfb/newskit)
 * [Medium](https://medium.com/newskit-design-system)
 * [Storybook](https://storybook.newskit.co.uk/)
