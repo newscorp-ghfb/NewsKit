@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, IconFilledGitHub, styled, getSpacingFromTheme} from 'newskit';
+import {Button, IconFilledGitHub, Block} from 'newskit';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
@@ -114,14 +114,10 @@ const COLUMNS_ICON = {
   edge: <IconFilledEdge overrides={{size: 'iconSize040'}} />,
 };
 
-export const ButtonContainer = styled.span`
-  margin-right: ${getSpacingFromTheme('space040')};
-`;
-
 export default (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
-      title: 'Engineering overview | Newskit design system',
+      title: 'Engineering overview',
       description:
         'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
     }}
@@ -286,19 +282,18 @@ export default (layoutProps: LayoutProps) => (
           description="Below are the links to the NewsKit source code:"
           showSeparator
         >
-          <ButtonContainer>
-            <Button
-              size="small"
-              overrides={{
-                typographyPreset: 'utilityButton010',
-                stylePreset: 'buttonOutlinedSecondary',
-              }}
-              href="https://github.com/newscorp-ghfb/newskit"
-              target="_blank"
-            >
-              <IconFilledGitHub /> View Github repo
-            </Button>
-          </ButtonContainer>
+          <Button
+            size="small"
+            overrides={{
+              typographyPreset: 'utilityButton010',
+              stylePreset: 'buttonOutlinedSecondary',
+            }}
+            href="https://github.com/newscorp-ghfb/newskit"
+            target="_blank"
+          >
+            <IconFilledGitHub /> View Github repo
+          </Button>
+          <Block as="span" spaceInline="space030" />
           <Button
             size="small"
             overrides={{
