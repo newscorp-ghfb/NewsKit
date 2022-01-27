@@ -196,12 +196,7 @@ export default (layoutProps: LayoutProps) => (
                 description: (
                   <>
                     An advanced full-featured{' '}
-                    <Link
-                      href="https://newskit.co.uk/foundations/overview/"
-                      target="_blank"
-                    >
-                      theming system
-                    </Link>{' '}
+                    <Link href="/foundations/overview/">theming system</Link>{' '}
                     with the flexibility to meet the requirement of a single or
                     multi-brand requirement, including both business and
                     consumer products.
