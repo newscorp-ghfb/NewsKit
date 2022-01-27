@@ -83,7 +83,7 @@ const cards = [
 export default (layoutProps: LayoutProps) => (
   <ComponentPageBasicTemplate
     headTags={{
-      title: 'Visible, Hidden & ScreenReaderOnly | Newskit design system',
+      title: 'Visible, Hidden & ScreenReaderOnly',
       description:
         'The collection of these three components can be used to show and hide content at different breakpoints.',
     }}
@@ -102,7 +102,7 @@ export default (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v0.2.0',
       codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/blob/master/src/grid/visibility.tsx',
+        'https://github.com/newscorp-ghfb/newskit/blob/main/src/grid/visibility.tsx',
     }}
   >
     <CommonSection

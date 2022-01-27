@@ -1,5 +1,13 @@
 import React from 'react';
-import {Drawer, DrawerProps, OrderedList, styled} from 'newskit';
+import {
+  Block,
+  Drawer,
+  DrawerProps,
+  InlineMessage,
+  LinkInline,
+  OrderedList,
+  styled,
+} from 'newskit';
 
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
@@ -37,7 +45,7 @@ const Playground = ({open, ...state}: {open: boolean}) => {
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Drawer | Newskit design system',
+      title: 'Drawer',
       description:
         'A Drawer is a layout panel that slides out the side of the screen revealing content like navigation or filters.',
     }}
@@ -56,7 +64,7 @@ export default (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v3.0.0',
       codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/tree/develop/src/drawer',
+        'https://github.com/newscorp-ghfb/newskit/tree/develop/src/drawer',
       figmaUrl:
         'https://www.figma.com/file/VYOAzpSq02PoR7cci6SJlE/?node-id=324%3A2',
     }}
@@ -114,6 +122,10 @@ export default (layoutProps: LayoutProps) => (
                 label: 'Right',
                 value: 'right',
               },
+              {
+                label: 'None',
+                value: 'none',
+              },
             ],
           },
           {
@@ -142,7 +154,7 @@ export default (layoutProps: LayoutProps) => (
           name: 'Overlay',
           description: 'Obscures the page content behind the panel',
           component: ['Overlay'],
-          optional: undefined,
+          optional: true,
         },
         {
           name: 'Panel',
@@ -161,7 +173,7 @@ export default (layoutProps: LayoutProps) => (
           name: 'Close Button',
           description: 'Icon Button for closing the Drawer',
           component: ['Icon Button'],
-          optional: undefined,
+          optional: true,
         },
         {
           name: 'Content',
@@ -180,16 +192,45 @@ export default (layoutProps: LayoutProps) => (
       cards: [
         {
           title: 'Placement',
-          description:
-            'The Drawer can appear from the left (default), right, top, or bottom of the screen. When appearing from the left or right of the screen, the close Icon Button is positioned on the same side where the Drawer originates from. When appearing from the top or bottom of the screen, the close Icon Button is positioned on the right as default.',
+          description: `The Drawer can appear from the left (default), right, top, or
+                bottom of the screen. When appearing from the left or right of
+                the screen, the close Icon Button is positioned on the same side
+                where the Drawer originates from. When appearing from the top or
+                bottom of the screen, the close Icon Button is positioned on the
+                right as default.`,
+
           media: getIllustrationComponent(
             'components/drawer/drawer-options-placement-illustration',
           ),
         },
         {
           title: 'Close Position',
-          description:
-            'The position of the close button in the Drawer header is set to left as default for left placement, and right for right placement. For top and bottom placement, it is set to the right. Users have the option to set the close button position to either left or right for all four placements.',
+          description: (
+            <>
+              <Block spaceStack="space030">
+                The position of the close button in the Drawer header is set to
+                left as default for left placement, and right for right
+                placement. For top and bottom placement, it is set to the right.
+                Users have the option to set the close button position to either
+                left or right for all four placements.
+              </Block>
+              <InlineMessage
+                role="region"
+                aria-label="Close position"
+                title="Note"
+              >
+                The header and close button are optional. However it&lsquo;s
+                recommended that a close button is always used to adhere to{' '}
+                <LinkInline
+                  target="_blank"
+                  href="https://www.w3.org/TR/wai-aria-practices-1.2/#keyboard-interaction-7"
+                >
+                  aria-principles
+                </LinkInline>
+                .
+              </InlineMessage>
+            </>
+          ),
           media: getIllustrationComponent(
             'components/drawer/drawer-options-close-position-illustration',
           ),
@@ -419,7 +460,7 @@ export default (layoutProps: LayoutProps) => (
             },
             {
               name: 'closePosition',
-              type: ['left', 'right'],
+              type: ['left', 'right', 'none'],
               default: 'left',
               description:
                 'closePosition is set to left as default for left placement, and right for right placement. For top and bottom placement, it is set to the right. If provided, users can set the position of the close icon button.',

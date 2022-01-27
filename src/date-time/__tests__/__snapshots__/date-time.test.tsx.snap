@@ -9,7 +9,7 @@ exports[`DateTime renders with fallback formatting 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
   white-space: pre;
@@ -49,7 +49,7 @@ exports[`DateTime renders with overrides 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
   white-space: pre;
@@ -73,7 +73,7 @@ exports[`DateTime renders with overrides 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
   white-space: pre;
@@ -120,7 +120,7 @@ exports[`DateTime renders with provided date, format, prefix and suffix 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
   white-space: pre;

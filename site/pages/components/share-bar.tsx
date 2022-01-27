@@ -25,7 +25,7 @@ const PlaygroundContainer = styled.div`
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'ShareBar | Newskit design system',
+      title: 'ShareBar',
       description:
         'The Share Bar component allows users to share hyperlinks of content across their various social media and communication channels. It is usually embedded within article pages in order to increase the reach of a story.',
     }}
@@ -43,8 +43,8 @@ export default (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v0.20.1',
-      codeUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
-      figmaUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
+      codeUrl: 'https://github.com/newscorp-ghfb/newskit',
+      figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
     }}
     interactiveDemo={{
       introduction:

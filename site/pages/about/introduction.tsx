@@ -1,6 +1,5 @@
 import React from 'react';
 import {Block, getSizingCssFromTheme, Grid, styled, Divider} from 'newskit';
-import Head from 'next/head';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
@@ -8,6 +7,7 @@ import {MediaList} from '../../components/media-list';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {ContentText} from '../../components/text-section';
 import {Link} from '../../components/link';
+import {HeadNextSeo} from '../../components/head-next-seo';
 
 const principleCardoverrides = {
   title: {
@@ -92,13 +92,12 @@ const cards = [
 export default ({path, ...props}: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
   <Layout {...props} path={`${path}-new`}>
-    <Head>
-      <title key="title">About | NewsKit design system</title>
-      <meta
-        name="Description"
-        content="NewsKit provides components, guidelines and standards to enable digital product teams to create high-quality, consistent products quickly. NewsKit is built on modular design principles and backed by best practice guidance for design and development."
-      />
-    </Head>
+    <HeadNextSeo
+      title="About"
+      description="NewsKit provides components, guidelines and standards to enable digital product 
+      teams to create high-quality, consistent products quickly. NewsKit is built on modular design 
+      principles and backed by best practice guidance for design and development."
+    />
     <WrapperWithPadding />
     <Grid lgMargin="sizing000" xsRowGutter="space000">
       <PageIntroduction

@@ -647,10 +647,10 @@ export const stylePresets = {
   },
   foundationFeatureCardMedia: {
     base: {
-      backgroundImage: 'url(static/card-feature-need-help.svg)', // Design WIP
+      backgroundImage: 'url(static/feature-card-foundations.svg)',
       borderRadius: '{{borders.borderRadiusRounded030}}',
       backgroundSize: 'cover',
-      backgroundPosition: 'center left',
+      backgroundPosition: 'bottom left',
     },
   },
 
@@ -704,8 +704,10 @@ export const stylePresets = {
       borderColor: '{{colors.interactivePrimary030}}',
     },
   },
-  imageRoundedMedium: {
+  blockRoundedMedium: {
     base: {
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+      // TODO: remove overflow from here
       overflow: 'hidden',
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } as any,

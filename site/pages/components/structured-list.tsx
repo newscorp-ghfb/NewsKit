@@ -17,7 +17,7 @@ import {Link} from '../../components/link';
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'StructuredList | Newskit design system',
+      title: 'StructuredList',
       description: '',
     }}
     layoutProps={layoutProps}
@@ -35,8 +35,8 @@ export default (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Beta,
       introduced: 'v3.3.0',
-      codeUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
-      figmaUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
+      codeUrl: 'https://github.com/newscorp-ghfb/newskit',
+      figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
     }}
     interactiveDemo={{
       introduction:

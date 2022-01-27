@@ -26,7 +26,7 @@ describe('TitleBar', () => {
             md: 'editorialHeadline030',
             lg: 'editorialHeadline040',
           },
-          stylePreset: 'linkInline',
+          stylePreset: 'inkInverse',
         },
       },
     } as TitleBarProps);
@@ -38,7 +38,7 @@ describe('TitleBar', () => {
       children: TITLE,
       overrides: {
         heading: {
-          stylePreset: 'linkInline',
+          stylePreset: 'inkInverse',
         },
       },
     } as TitleBarProps);

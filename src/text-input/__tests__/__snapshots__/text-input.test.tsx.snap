@@ -9,7 +9,7 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -41,7 +41,7 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -110,7 +110,7 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -178,7 +178,7 @@ exports[`TextInput renders correctly with label hidden 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -247,7 +247,7 @@ exports[`TextInput renders correctly with label hidden 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -307,7 +307,7 @@ exports[`TextInput renders correctly without asistive text 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -339,7 +339,7 @@ exports[`TextInput renders correctly without asistive text 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -437,7 +437,7 @@ exports[`TextInput renders disabled text input 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -465,7 +465,7 @@ exports[`TextInput renders disabled text input 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -520,7 +520,7 @@ exports[`TextInput renders disabled text input 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -584,7 +584,7 @@ exports[`TextInput renders large text input 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -616,7 +616,7 @@ exports[`TextInput renders large text input 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -685,7 +685,7 @@ exports[`TextInput renders large text input 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -750,7 +750,7 @@ exports[`TextInput renders readonly text input 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -782,7 +782,7 @@ exports[`TextInput renders readonly text input 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -851,7 +851,7 @@ exports[`TextInput renders readonly text input 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -917,7 +917,7 @@ exports[`TextInput renders small text input 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -949,7 +949,7 @@ exports[`TextInput renders small text input 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -1018,7 +1018,7 @@ exports[`TextInput renders small text input 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -1083,7 +1083,7 @@ exports[`TextInput renders text input with leading icon 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -1147,7 +1147,7 @@ exports[`TextInput renders text input with leading icon 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -1220,7 +1220,7 @@ exports[`TextInput renders text input with leading icon 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -1305,7 +1305,7 @@ exports[`TextInput renders text input with overrides 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 24px;
   margin-right: 8px;
@@ -1333,7 +1333,7 @@ exports[`TextInput renders text input with overrides 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -1366,7 +1366,7 @@ exports[`TextInput renders text input with overrides 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -1427,7 +1427,7 @@ exports[`TextInput renders text input with overrides for leading and validation 
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -1491,7 +1491,7 @@ exports[`TextInput renders text input with overrides for leading and validation 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -1564,7 +1564,7 @@ exports[`TextInput renders text input with overrides for leading and validation 
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -1649,7 +1649,7 @@ exports[`TextInput renders with different minHeight 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -1681,7 +1681,7 @@ exports[`TextInput renders with different minHeight 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -1750,7 +1750,7 @@ exports[`TextInput renders with different minHeight 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -1819,7 +1819,7 @@ exports[`TextInput renders with fixed width 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -1851,7 +1851,7 @@ exports[`TextInput renders with fixed width 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -1920,7 +1920,7 @@ exports[`TextInput renders with fixed width 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -1989,7 +1989,7 @@ exports[`TextInput renders with full width 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -2021,7 +2021,7 @@ exports[`TextInput renders with full width 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -2090,7 +2090,7 @@ exports[`TextInput renders with full width 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -2155,7 +2155,7 @@ exports[`TextInput should render custom aria-label 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -2187,7 +2187,7 @@ exports[`TextInput should render custom aria-label 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -2256,7 +2256,7 @@ exports[`TextInput should render custom aria-label 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -2322,7 +2322,7 @@ exports[`TextInput should render custom placeholder 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -2354,7 +2354,7 @@ exports[`TextInput should render custom placeholder 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -2423,7 +2423,7 @@ exports[`TextInput should render custom placeholder 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 

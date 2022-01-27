@@ -30,8 +30,11 @@ import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
 import {getToken} from '../utils/get-token';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useReactKeys} from '../utils/hooks';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
-export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
+const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
   const {
     onNextTrack,
     disableNextTrack,
@@ -364,3 +367,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     </PlayerContainer>
   );
 };
+
+export const AudioPlayer = withOwnTheme(ThemelessAudioPlayer)({
+  defaults,
+  stylePresets,
+});

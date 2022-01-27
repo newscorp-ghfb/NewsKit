@@ -8,8 +8,6 @@ export interface BaseLinkProps
   href: string;
 }
 
-export interface LinkProps extends Omit<InternalLinkProps, 'noCrop'> {}
-
 export interface InternalLinkProps extends BaseLinkProps {
   external?: boolean;
   overrides?: {
@@ -22,3 +20,5 @@ export interface InternalLinkProps extends BaseLinkProps {
   };
   noCrop?: boolean;
 }
+
+export interface LinkProps extends Omit<InternalLinkProps, 'noCrop'> {}
