@@ -1,4 +1,5 @@
 import {ReactElement} from 'react';
+import {CellProps, GridProps} from '../grid';
 import {NewsKitIcon} from '../icons';
 import {MQ} from '../utils/style';
 
@@ -7,13 +8,19 @@ export interface BannerBaseProps extends React.AriaAttributes {
   children: Exclude<React.ReactNode, 'undefined'>;
   closeButtonLabel?: string;
   icon?: ReactElement<NewsKitIcon>;
-  title?: string;
+  title?: React.ReactNode;
   onClose?: () => void;
   overrides?: {
     stylePreset?: MQ<string>;
     minHeight?: MQ<string>;
     spaceInset?: MQ<string>;
     maxWidth?: MQ<string>;
+    grid?: {
+      props: GridProps;
+    };
+    cell?: {
+      props: CellProps;
+    };
     icon?: {
       spaceInline?: MQ<string>;
     };
@@ -29,6 +36,7 @@ export interface BannerBaseProps extends React.AriaAttributes {
         typographyPreset?: MQ<string>;
       };
     };
+
     actions?: {
       spaceInline?: MQ<string>;
       closeButton?: {

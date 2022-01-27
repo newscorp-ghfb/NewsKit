@@ -15,10 +15,13 @@ import {IconButton} from '../icon-button';
 import {ButtonOverrides} from '../button';
 import {get} from '../utils/get';
 import {useIsomorphicLayoutEffect} from '../utils/hooks';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const SCROLL_THRESHOLD = 0.99;
 
-export const Scroll = React.forwardRef<HTMLDivElement, ScrollProps>(
+const ThemelessScroll = React.forwardRef<HTMLDivElement, ScrollProps>(
   (
     {
       vertical = false,
@@ -183,3 +186,8 @@ export const Scroll = React.forwardRef<HTMLDivElement, ScrollProps>(
     );
   },
 );
+
+export const Scroll = withOwnTheme(ThemelessScroll)({
+  defaults,
+  stylePresets,
+});
