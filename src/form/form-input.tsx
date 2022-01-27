@@ -129,7 +129,7 @@ export const FormInputTextField = React.forwardRef<
 
   return (
     <TextField
-      aria-required={isRequired}
+      aria-required={isRequired ? 'true' : undefined}
       aria-invalid={state === 'invalid' ? 'true' : 'false'}
       name={name}
       state={state}
