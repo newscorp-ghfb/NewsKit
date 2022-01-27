@@ -11,16 +11,15 @@ import {
 import JSZip from 'jszip';
 import {saveAs} from 'file-saver';
 import dompurify from 'dompurify';
-import {
-  compiledDocsThemeLightColors,
-  compiledDocsThemeDarkColors,
-} from './colors-docs-theme';
+import {themeList} from './colors-docs-theme';
 
 export const SvgPreviewer: React.FC = () => {
   const sanitizer = dompurify.sanitize;
 
   const selectSvgEl = useRef<HTMLSelectElement>(null);
-
+  // FIX ANY
+  // to do: the default theme and default option should be in sync
+  const [currentTheme, setCurrentTheme] = useState<any>(themeList[0].default);
   const [isLightTheme, setIsLightTheme] = useState<boolean>(true);
 
   // SVG coming from Figma - used as a base for some mutations.
@@ -116,7 +115,7 @@ export const SvgPreviewer: React.FC = () => {
           const {lightThemeColorValue} = getColorCssFromTheme(
             'lightThemeColorValue',
             colorToken as string,
-          )({theme: compiledDocsThemeLightColors}) as {
+          )({theme: currentTheme}) as {
             lightThemeColorValue: string;
           };
 
@@ -173,13 +172,19 @@ export const SvgPreviewer: React.FC = () => {
       setSvgCodeGroup(newSvgCodeGroup);
     }
   };
-
-  const handleSwitchThemeButtonClick = () => {
-    switchThemeColors(
-      isLightTheme ? compiledDocsThemeDarkColors : compiledDocsThemeLightColors,
-    );
-    return setIsLightTheme(!isLightTheme);
+  // to fo fix type
+  const handleSelectTheme = (e: any) => {
+    console.log(e.target.value, 'event');
+    const newCurrentTheme = e.target.value;
+    setCurrentTheme(newCurrentTheme);
   };
+
+  // const handleSwitchThemeButtonClick = () => {
+  //   switchThemeColors(
+  //     isLightTheme ? compiledDocsThemeDarkColors : compiledDocsThemeLightColors,
+  //   );
+  //   return setIsLightTheme(!isLightTheme);
+  // };
 
   // FUNCTIONS FOR DISPLAYING SVG ** END **
 
@@ -406,7 +411,7 @@ export const SvgPreviewer: React.FC = () => {
       <StyledSwitchThemeButton
         disabled={!svgCodeGroup}
         onClick={() => {
-          handleSwitchThemeButtonClick();
+          // handleSwitchThemeButtonClick();
         }}
       >
         SWITCH THEME: {isLightTheme ? 'LIGHT' : 'DARK'}
@@ -445,6 +450,19 @@ export const SvgPreviewer: React.FC = () => {
   return (
     <StyledSvgPreviewerContainer>
       <StyledButtonsContainer>
+        <select
+          onChange={handleSelectTheme}
+          // ref={selectSvgEl}
+          // disabled={!svgCodeGroup}
+          style={{height: '26px', fontSize: '16px'}}
+        >
+          {themeList.map(theme => (
+            // @ts-ignore
+            // to do fix this type error
+            // select element should show doc theme by default
+            <option value={theme.default}>{theme.name}</option>
+          ))}
+        </select>
         <SwitchThemeButton />
 
         <select
