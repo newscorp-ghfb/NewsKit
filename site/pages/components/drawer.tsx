@@ -64,7 +64,7 @@ export default (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v3.0.0',
       codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/tree/develop/src/drawer',
+        'https://github.com/newscorp-ghfb/newskit/tree/develop/src/drawer',
       figmaUrl:
         'https://www.figma.com/file/VYOAzpSq02PoR7cci6SJlE/?node-id=324%3A2',
     }}

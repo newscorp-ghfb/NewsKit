@@ -102,7 +102,7 @@ export default (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v0.2.0',
       codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/blob/master/src/grid/visibility.tsx',
+        'https://github.com/newscorp-ghfb/newskit/blob/master/src/grid/visibility.tsx',
     }}
   >
     <CommonSection
