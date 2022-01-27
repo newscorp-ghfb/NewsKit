@@ -123,7 +123,7 @@ export const componentDefaults = {
         xs: 'editorialHeadline020',
         md: 'editorialHeadline020',
         lg: 'editorialHeadline020',
-        xl: 'editorialHeadline030',
+        xl: 'editorialHeadline020',
       },
       stylePreset: 'inkContrast',
       spaceStack: {
