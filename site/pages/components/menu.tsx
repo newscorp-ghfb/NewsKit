@@ -29,7 +29,7 @@ const PlaygroundContainer = styled.div`
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Menu | Newskit design system',
+      title: 'Menu',
       description:
         'A Menu displays a list of navigational items. They are displayed either at the top of a screen, or at the side where space allows.',
     }}
@@ -47,8 +47,7 @@ export default (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v3.3.0',
-      codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/tree/master/src/menu',
+      codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/menu',
     }}
     interactiveDemo={{
       introduction:

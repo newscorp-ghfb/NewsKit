@@ -1,6 +1,5 @@
 import React from 'react';
-import {newskitLightTheme, compileTheme, Block} from 'newskit';
-
+import {newskitLightTheme, compileTheme} from 'newskit';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {
@@ -30,16 +29,23 @@ const RANGE_DESCRIPTION: {[key: string]: string} = {
 };
 
 const USAGE_DESCRIPTION: {[key: string]: string | JSX.Element} = {
-  xs: 'Small handset, large handset',
-  sm: 'Large handset, small tablet',
-  md: 'Large tablet',
-};
-
-const LANDSCAPE_USAGE_DESCRIPTION: {[key: string]: string | JSX.Element} = {
-  sm: 'Small handset',
-  md: 'Large handset, small tablet',
-  lg: 'Large tablet',
-  xl: 'Large tablet',
+  xs: 'Portrait - small handset >  large handset',
+  sm: (
+    <>
+      Portrait - large handset &gt; small tablet
+      <br />
+      Landscape - small handset
+    </>
+  ),
+  md: (
+    <>
+      Portrait - large tablet
+      <br />
+      Landscape - large handset &gt; small tablet
+    </>
+  ),
+  lg: 'Landscape - large tablet > desktop',
+  xl: 'Landscape - large tablet > desktop',
 };
 
 const bps = compiledNewskitLightTheme.breakpoints;
@@ -49,13 +55,12 @@ const breakpointsRows = Object.entries(bps).map(([tokenName, tokenValue]) => ({
   breakpoint: tokenValue,
   range: RANGE_DESCRIPTION[tokenName] || '',
   usage: USAGE_DESCRIPTION[tokenName] || '',
-  landscapeUsage: LANDSCAPE_USAGE_DESCRIPTION[tokenName] || '',
 }));
 
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Breakpoints | Newskit design system',
+      title: 'Breakpoints',
       description:
         'Breakpoints set a visual point on a screen to adapt the design of content (responsive design), ensuring a consistent, optimised experience across different screen widths.',
     }}
@@ -67,12 +72,6 @@ export default (layoutProps: LayoutProps) => (
         illustration: 'foundations/breakpoints/hero',
       },
       introduction: `Breakpoints set a visual point on a screen to adapt the design of content (responsive design), ensuring a consistent, optimised experience across different screen widths.`,
-    }}
-    featureCard={{
-      title: 'Colours',
-      description:
-        'Colour is key to expressing brand and identity but it also plays an important role in conveying meaning to a user.',
-      href: '/foundations/colours',
     }}
   >
     <ComponentPageCell>
@@ -91,42 +90,32 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Block stylePreset="imageRoundedMedium">
-            <Illustration path="foundations/breakpoints/overview" />
-          </Block>
+          <Illustration path="foundations/breakpoints/overview" />
         </ContentPrimary>
 
         <ContentSecondary>
           <Table
-            columns={[
-              'Token',
-              'Breakpoint',
-              'Range',
-              'Usage',
-              'Landscape Usage',
-            ]}
+            columns={['Token', 'Breakpoint', 'Range', 'Usage']}
             rows={breakpointsRows}
           />
         </ContentSecondary>
 
         <ContentSecondary description="Default breakpoints can be overriden in the theme.">
           <Code>
-            {`
-        import {createTheme} from 'newskit'; 
-        
-        const theme = createTheme({ 
-            name: 'theme-with-custom-breakpoints', 
-            overrides: { 
-                breakpoints: { 
-                    xs: 0, // 0-359 
-                    sm: 360, 
-                    md: 540, 
-                    lg: 720, 
-                    xl: 1080, 
-                } 
-            }, 
-        });
-        `}
+            {`import {createTheme} from 'newskit'; 
+
+const theme = createTheme({ 
+    name: 'theme-with-custom-breakpoints', 
+    overrides: { 
+        breakpoints: { 
+            xs: 0, // 0-359 
+            sm: 360, 
+            md: 540, 
+            lg: 720, 
+            xl: 1080, 
+        } 
+    }, 
+});`}
           </Code>
         </ContentSecondary>
 
@@ -168,7 +157,6 @@ export default (layoutProps: LayoutProps) => (
         </ContentSecondary>
 
         <ContentSecondary
-          showSeparator
           description={
             <>
               Max-width defaults can be overidden in the{' '}
@@ -180,6 +168,7 @@ export default (layoutProps: LayoutProps) => (
               </Link>
             </>
           }
+          showSeparator
         />
       </ContentSection>
 
@@ -190,9 +179,7 @@ export default (layoutProps: LayoutProps) => (
           headline="Using breakpoints"
           description="NewsKit enables the appearance and behaviour of UI elements to change at different breakpoints."
         >
-          <Block stylePreset="imageRoundedMedium">
-            <Illustration path="foundations/breakpoints/usage" />
-          </Block>
+          <Illustration path="foundations/breakpoints/usage" />
         </ContentPrimary>
 
         <ContentSecondary
@@ -223,7 +210,7 @@ export default (layoutProps: LayoutProps) => (
 
         <ContentSecondary
           showSeparator
-          headline="Example"
+          headline="Code example"
           description="This example below shows different typography presets being used at different breakpoint."
         >
           <Code>{`

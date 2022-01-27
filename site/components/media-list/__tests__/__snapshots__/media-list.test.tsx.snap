@@ -169,7 +169,6 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-10 {
   box-sizing: border-box;
-  color: inherit;
   padding: 24px;
 }
 
@@ -232,7 +231,7 @@ exports[`Media List renders with custom layout 1`] = `
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -266,7 +265,7 @@ exports[`Media List renders with custom layout 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -341,7 +340,6 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-19 {
   box-sizing: border-box;
-  color: inherit;
   padding: 8px 4px;
 }
 
@@ -626,7 +624,6 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-10 {
   box-sizing: border-box;
-  color: inherit;
   padding: 24px;
 }
 
@@ -689,7 +686,7 @@ exports[`Media List renders with default layout 1`] = `
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -723,7 +720,7 @@ exports[`Media List renders with default layout 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -763,7 +760,6 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-19 {
   box-sizing: border-box;
-  color: inherit;
   padding: 8px 4px;
 }
 
@@ -1050,7 +1046,6 @@ exports[`Media List renders with feature cardscards 1`] = `
 
 .emotion-9 {
   box-sizing: border-box;
-  color: inherit;
   padding: 24px;
 }
 
@@ -1122,7 +1117,7 @@ exports[`Media List renders with feature cardscards 1`] = `
     font-size: 24px;
     line-height: 27px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1145,7 +1140,7 @@ exports[`Media List renders with feature cardscards 1`] = `
     font-size: 32px;
     line-height: 36px;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1200,7 +1195,7 @@ exports[`Media List renders with feature cardscards 1`] = `
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1223,7 +1218,7 @@ exports[`Media List renders with feature cardscards 1`] = `
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1318,7 +1313,7 @@ exports[`Media List renders with feature cardscards 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1441,7 +1436,6 @@ exports[`Media List renders with feature cardscards 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: inherit;
 }
 
 @media screen and (max-width: 479px) {
@@ -1492,7 +1486,14 @@ exports[`Media List renders with feature cardscards 1`] = `
   justify-content: center;
 }
 
-.emotion-45 {
+.emotion-37 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.emotion-46 {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
@@ -1661,7 +1662,11 @@ exports[`Media List renders with feature cardscards 1`] = `
                       <p
                         class="emotion-15"
                       >
-                        This is a feature card.
+                        <span
+                          class="emotion-37"
+                        >
+                          This is a feature card.
+                        </span>
                       </p>
                     </div>
                     <button
@@ -1713,7 +1718,7 @@ exports[`Media List renders with feature cardscards 1`] = `
           class="emotion-3"
         >
           <div
-            class="emotion-45"
+            class="emotion-46"
           >
             <div
               class="emotion-8"
@@ -2008,7 +2013,6 @@ exports[`Media List renders with usage cards 1`] = `
 
 .emotion-13 {
   box-sizing: border-box;
-  color: inherit;
   padding: 0;
 }
 
@@ -2037,7 +2041,7 @@ exports[`Media List renders with usage cards 1`] = `
   font-size: 22px;
   line-height: 24.75px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -2071,7 +2075,7 @@ exports[`Media List renders with usage cards 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 

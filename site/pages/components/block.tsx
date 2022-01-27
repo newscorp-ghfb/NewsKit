@@ -18,7 +18,7 @@ const PlaygroundContainer = styled.div`
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Block | Newskit design system',
+      title: 'Block',
       description:
         'The Block is a simple container component that style and space can be applied to. This is the equivalent to a frame in Figma.',
     }}
@@ -37,7 +37,7 @@ export default (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v0.1.0',
       codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/blob/master/src/block/block.tsx',
+        'https://github.com/newscorp-ghfb/newskit/blob/main/src/block/block.tsx',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/?node-id=324%3A2',
     }}

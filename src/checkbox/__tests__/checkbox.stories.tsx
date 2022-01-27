@@ -35,6 +35,12 @@ const myCustomTheme = compileTheme(
             borderRadius: '50%',
           },
         },
+        customIconFilledCancel: {
+          base: {
+            backgroundColor: '{{colors.interfaceInformative010}}',
+            iconColor: '{{colors.inkInverse}}',
+          },
+        },
       },
     },
   }),
@@ -129,7 +135,7 @@ const CustomCheck = ({checked}: CheckboxIconProps) =>
     <IconFilledStarOutline overrides={{size: 'iconSize020'}} />
   ) : (
     <IconFilledCancel
-      overrides={{size: 'iconSize020', stylePreset: 'bannerInformative'}}
+      overrides={{size: 'iconSize020', stylePreset: 'customIconFilledCancel'}}
     />
   );
 export const StoryCheckboxOverrides = () => (

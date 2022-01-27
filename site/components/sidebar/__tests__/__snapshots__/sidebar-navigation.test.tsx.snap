@@ -7,7 +7,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-1 {
@@ -62,7 +62,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   background-color: transparent;
   color: #0A0A0A;
@@ -132,7 +132,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-1 {
@@ -165,7 +165,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-1 {
@@ -220,7 +220,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   background-color: transparent;
   color: #535353;

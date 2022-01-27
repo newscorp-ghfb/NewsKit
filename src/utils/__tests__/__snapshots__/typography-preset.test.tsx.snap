@@ -7,7 +7,7 @@ exports[`TypographyPreset renders default 1`] = `
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 <p
@@ -24,7 +24,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 14px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
   }
 }
 
@@ -34,7 +34,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
   }
 }
 
@@ -52,7 +52,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 14px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
   }
 }
 
@@ -62,7 +62,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
   }
 }
 
@@ -72,7 +72,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
   }
 }
 
@@ -90,7 +90,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 14px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
   }
 }
 
@@ -100,7 +100,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
   }
 }
 
@@ -118,7 +118,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 14px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
   }
 }
 
@@ -128,37 +128,17 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: -0.5px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-0 {
-    font-family: "Bitter",serif;
-    font-size: 18px;
-    line-height: 1.125;
-    font-weight: 500;
-    letter-spacing: -0.5px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-0 {
-    font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 1.125;
-    font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
   }
 }
 
@@ -175,7 +155,7 @@ exports[`TypographyPreset renders with fontSmooth and fontStretch 1`] = `
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   font-smooth: always;
   font-stretch: condensed;
 }
@@ -193,7 +173,7 @@ exports[`TypographyPreset renders with override editorialParagraph010 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 <p

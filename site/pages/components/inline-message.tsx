@@ -24,7 +24,7 @@ const PlaygroundContainer = styled.div`
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Inline Message | Newskit design system',
+      title: 'Inline Message',
       description:
         'An Inline message communicates contextual information. They are positioned inline, in close proximity to the element they are adding context to.',
     }}
@@ -42,7 +42,7 @@ export default (layoutProps: LayoutProps) => (
       status: MetaStatus.Beta,
       introduced: 'v3.3.0',
       codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/tree/master/src/inline-message',
+        'https://github.com/newscorp-ghfb/newskit/tree/main/src/inline-message',
       figmaUrl: '',
     }}
     interactiveDemo={{

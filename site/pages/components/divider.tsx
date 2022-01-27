@@ -9,7 +9,7 @@ import {Mono} from '../../components/flags';
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Divider | Newskit design system',
+      title: 'Divider',
       description:
         'A divider is used to provide visual separation of different content. Dividers can be applied vertically or horizontally.',
     }}
@@ -26,8 +26,8 @@ export default (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v3.8.0',
-      codeUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
-      figmaUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
+      codeUrl: 'https://github.com/newscorp-ghfb/newskit',
+      figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
     }}
     anatomy={{
       introduction: 'The Divider contains one required element.',

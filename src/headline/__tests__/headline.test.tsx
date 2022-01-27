@@ -34,10 +34,10 @@ describe('headline', () => {
       overrides: {
         typographyPreset: 'editorialHeadline050',
         heading: {
-          stylePreset: 'linkInline',
+          stylePreset: 'inkInverse',
         },
         kicker: {
-          stylePreset: 'linkInline',
+          stylePreset: 'inkInverse',
         },
       },
     } as any) as any;

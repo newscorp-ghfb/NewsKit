@@ -94,6 +94,92 @@ export const foundationsDarkOverrides = {
   },
 };
 
+export const guidesLightOverrides = {
+  colors: {
+    inkBrand010: '{{colors.blue050}}',
+    inkBrand020: '{{colors.blue080}}',
+    interfaceBrand010: '{{colors.blue020}}',
+    interfaceBrand020: '{{colors.blue030}}',
+    interfaceBrand030: '{{colors.blue050}}',
+    interfaceBrand040: '{{colors.blue060}}',
+    interfaceBrand050: '{{colors.blue080}}',
+
+    illustrationPalette010: '{{colors.blue010}}',
+    illustrationPalette020: '{{colors.blue020}}',
+    illustrationPalette030: '{{colors.blue030}}',
+    illustrationPalette040: '{{colors.blue040}}',
+    illustrationPalette050: '{{colors.blue050}}',
+    illustrationPalette060: '{{colors.blue060}}',
+    illustrationPalette070: '{{colors.blue070}}',
+    illustrationPalette080: '{{colors.blue080}}',
+    illustrationPalette090: '{{colors.blue090}}',
+    illustrationPalette100: '{{colors.blue100}}',
+    illustrationHighlight010: '{{colors.blue040}}',
+    illustrationSubtle010: '{{colors.darkBlue060}}',
+    illustrationBackground010: '{{colors.blue005}}',
+    illustrationBackground020: '{{colors.darkBlue010}}',
+    illustrationBorder010: '{{colors.darkBlue020}}',
+    illustrationBorder020: '{{colors.darkBlue040}}',
+    illustrationDisabled: '{{colors.darkBlue020}}',
+    illustrationInterface010: '{{colors.white}}',
+    illustrationInterface020: '{{colors.blue010}}',
+    illustrationInterface030: '{{colors.blue020}}',
+    illustrationInterface040: '{{colors.blue030}}',
+    illustrationInterface050: '{{colors.blue040}}',
+    illustrationInterface060: '{{colors.blue050}}',
+    illustrationInterface070: '{{colors.blue060}}',
+    illustrationInterface080: '{{colors.blue070}}',
+    illustrationInterface090: '{{colors.blue080}}',
+    illustrationInterface100: '{{colors.blue090}}',
+    illustrationAnatomySubtle: '{{colors.blue020}}',
+    illustrationAnatomyBorder010: '{{colors.blue020}}',
+    illustrationAnatomyBorder020: '{{colors.blue040}}',
+  },
+};
+
+export const guidesDarkOverrides = {
+  colors: {
+    inkBrand010: '{{colors.blue040}}',
+    inkBrand020: '{{colors.blue020}}',
+    interfaceBrand010: '{{colors.blue090}}',
+    interfaceBrand020: '{{colors.blue080}}',
+    interfaceBrand030: '{{colors.blue050}}',
+    interfaceBrand040: '{{colors.blue040}}',
+    interfaceBrand050: '{{colors.blue020}}',
+
+    illustrationPalette010: '{{colors.blue010}}',
+    illustrationPalette020: '{{colors.blue020}}',
+    illustrationPalette030: '{{colors.blue030}}',
+    illustrationPalette040: '{{colors.blue040}}',
+    illustrationPalette050: '{{colors.blue050}}',
+    illustrationPalette060: '{{colors.blue060}}',
+    illustrationPalette070: '{{colors.blue070}}',
+    illustrationPalette080: '{{colors.blue080}}',
+    illustrationPalette090: '{{colors.blue090}}',
+    illustrationPalette100: '{{colors.blue100}}',
+    illustrationHighlight010: '{{colors.white}}',
+    illustrationSubtle010: '{{colors.blue070}}',
+    illustrationBackground010: '{{colors.darkBlue090}}',
+    illustrationBackground020: '{{colors.darkBlue090}}',
+    illustrationBorder010: '{{colors.blue070}}',
+    illustrationBorder020: '{{colors.blue060}}',
+    illustrationDisabled: '{{colors.blue080}}',
+    illustrationInterface010: '{{colors.blue050}}',
+    illustrationInterface020: '{{colors.blue060}}',
+    illustrationInterface030: '{{colors.blue070}}',
+    illustrationInterface040: '{{colors.blue080}}',
+    illustrationInterface050: '{{colors.blue090}}',
+    illustrationInterface060: '{{colors.blue010}}',
+    illustrationInterface070: '{{colors.blue020}}',
+    illustrationInterface080: '{{colors.blue030}}',
+    illustrationInterface090: '{{colors.blue040}}',
+    illustrationInterface100: '{{colors.blue010}}',
+    illustrationAnatomySubtle: '{{colors.blue040}}',
+    illustrationAnatomyBorder010: '{{colors.blue080}}',
+    illustrationAnatomyBorder020: '{{colors.blue040}}',
+  },
+};
+
 export const patternsLightOverrides = {
   colors: {
     inkBrand010: '{{colors.teal050}}',
@@ -270,4 +356,16 @@ export const accessibilityThemeDark = createTheme({
   name: 'docs-accessibility-dark',
   baseTheme: docsThemeDark,
   overrides: accessibilityDarkOverrides,
+});
+
+export const guidesThemeLight = createTheme({
+  name: 'docs-guides-light',
+  baseTheme: docsThemeLight,
+  overrides: guidesLightOverrides,
+});
+
+export const guidesThemeDark = createTheme({
+  name: 'docs-guides-dark',
+  baseTheme: docsThemeDark,
+  overrides: guidesDarkOverrides,
 });

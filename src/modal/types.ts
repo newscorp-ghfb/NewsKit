@@ -3,7 +3,6 @@ import {MQ} from '../utils';
 
 // Refactor into interface -> https://stackoverflow.com/questions/53636756/typescript-interface-extending-another-interface-with-nested-properties
 export type ModalProps = Omit<BaseDialogProps, 'placement'> & {
-  closePosition?: 'left' | 'right';
   overrides?: {
     panel?: {
       topOffset?: MQ<string>;

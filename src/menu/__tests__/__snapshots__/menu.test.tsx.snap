@@ -80,6 +80,11 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-3 svg {
@@ -162,7 +167,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -436,6 +441,11 @@ exports[`Menu renders horizontally with menu group 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-3 svg {
@@ -518,7 +528,7 @@ exports[`Menu renders horizontally with menu group 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -716,6 +726,11 @@ exports[`Menu renders horizontally with menu items 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -798,7 +813,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1087,7 +1102,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1447,7 +1462,7 @@ exports[`Menu renders vertically with menu group 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1736,7 +1751,7 @@ exports[`Menu renders vertically with menu items 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2013,7 +2028,7 @@ exports[`Menu renders with Large size menu items 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2199,6 +2214,11 @@ exports[`Menu renders with Large size menu items 2`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -2281,7 +2301,7 @@ exports[`Menu renders with Large size menu items 2`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2558,7 +2578,7 @@ exports[`Menu renders with Medium size menu items 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2744,6 +2764,11 @@ exports[`Menu renders with Medium size menu items 2`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -2826,7 +2851,7 @@ exports[`Menu renders with Medium size menu items 2`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -3103,7 +3128,7 @@ exports[`Menu renders with Small size menu items 1`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -3289,6 +3314,11 @@ exports[`Menu renders with Small size menu items 2`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -3371,7 +3401,7 @@ exports[`Menu renders with Small size menu items 2`] = `
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -3557,6 +3587,11 @@ exports[`Menu renders with default props 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -3639,7 +3674,7 @@ exports[`Menu renders with default props 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -3828,6 +3863,11 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -3911,7 +3951,7 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -4097,6 +4137,11 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -4179,7 +4224,7 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -4456,7 +4501,7 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -4729,7 +4774,7 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -5006,7 +5051,7 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -5279,7 +5324,7 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -5609,7 +5654,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   font-size: 18px;
   line-height: 20.25px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -5758,7 +5803,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -6084,7 +6129,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -6303,7 +6348,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -6452,7 +6497,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -6642,7 +6687,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -6791,7 +6836,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -6995,6 +7040,11 @@ exports[`MenuItem renders in Large size 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -7077,7 +7127,7 @@ exports[`MenuItem renders in Large size 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -7194,6 +7244,11 @@ exports[`MenuItem renders in Medium size 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -7276,7 +7331,7 @@ exports[`MenuItem renders in Medium size 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -7393,6 +7448,11 @@ exports[`MenuItem renders in Small size 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -7475,7 +7535,7 @@ exports[`MenuItem renders in Small size 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -7592,6 +7652,11 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -7674,7 +7739,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -7797,6 +7862,11 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   border-color: #3358CC;
   border-width: 0 0 2px 0;
   color: #2E2E2E;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -7901,7 +7971,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -8039,6 +8109,11 @@ exports[`MenuItem renders with default props 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -8121,7 +8196,7 @@ exports[`MenuItem renders with default props 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -8238,6 +8313,11 @@ exports[`MenuItem renders with icon 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -8329,7 +8409,7 @@ exports[`MenuItem renders with icon 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -8466,6 +8546,11 @@ exports[`MenuItem renders with overrides 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .emotion-2 svg {
@@ -8513,7 +8598,7 @@ exports[`MenuItem renders with overrides 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }

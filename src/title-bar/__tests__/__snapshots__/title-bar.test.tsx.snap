@@ -43,7 +43,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -66,7 +66,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -89,7 +89,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -245,7 +245,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -348,7 +348,7 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -371,7 +371,7 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -394,7 +394,7 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -550,7 +550,7 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -653,7 +653,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -676,7 +676,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -699,7 +699,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -913,7 +913,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -936,7 +936,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -959,7 +959,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -980,53 +980,11 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
   display: inline;
   font: inherit;
   margin: 0;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-3 svg {
-  fill: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-3:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-3:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-3:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <div
@@ -1088,7 +1046,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     font-size: 18px;
     line-height: 20.25px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1111,7 +1069,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1134,7 +1092,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1157,7 +1115,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     font-size: 24px;
     line-height: 27px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1232,7 +1190,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     font-size: 18px;
     line-height: 20.25px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1255,7 +1213,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1278,7 +1236,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1301,7 +1259,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     font-size: 24px;
     line-height: 27px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1322,53 +1280,11 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-3 svg {
-  fill: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-3:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-3:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-3:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <div
@@ -1430,7 +1346,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1453,7 +1369,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1476,7 +1392,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1563,7 +1479,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1586,7 +1502,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1609,7 +1525,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1696,7 +1612,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1719,7 +1635,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1742,7 +1658,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1829,7 +1745,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1852,7 +1768,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1875,7 +1791,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1962,7 +1878,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1985,7 +1901,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2008,7 +1924,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2095,7 +2011,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2118,7 +2034,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2141,7 +2057,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2228,7 +2144,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2251,7 +2167,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -2274,7 +2190,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 

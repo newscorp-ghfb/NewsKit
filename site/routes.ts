@@ -53,6 +53,31 @@ export default [
             page: true,
             id: '/getting-started/code/testing',
           },
+          {
+            title: 'Design Overview',
+            page: true,
+            id: '/getting-started/code/design-overview',
+            description:
+              'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
+            illustration: 'guides/design-overview/hero',
+          },
+          {
+            title: 'Engineering overview',
+            page: true,
+            id: '/getting-started/code/engineering-overview',
+            description:
+              'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
+            illustration: 'guides/engineering-overview/hero',
+          },
+          // ToDo: Once design quickstart guide page is ready, need to enable this section.
+          // {
+          //   title: 'Design quickstart guide',
+          //   page: true,
+          //   id: '/getting-started/code/design-quickstart-guide',
+          //   description:
+          //     'To start designing with NewsKit, follow the steps in the quickstart guide.',
+          //   illustration: 'guides/design-overview/design-quickstart',
+          // },
         ],
       },
     ],
@@ -161,20 +186,25 @@ export default [
             title: 'Space Presets',
             page: true,
             id: '/foundations/presets/space-presets',
+            description:
+              'Space helps to guide the user and provide a pleasant and consistent experience when using a product.',
           },
           {
             title: 'Style Presets',
             page: true,
             id: '/foundations/presets/style-presets',
+            description:
+              'A collection of foundational design tokens combined into a preset to define reusable styles for interface elements and their interactive states.',
           },
           {
             title: 'Typography Presets',
             page: true,
             id: '/foundations/presets/typography-presets',
+            description:
+              'A collection of foundational font design tokens combined into a preset to define reusable typography styles for specific text elements.',
           },
         ],
       },
-
       {
         title: 'Theming',
         id: '/foundations/theming',
@@ -183,6 +213,8 @@ export default [
             title: 'Overview',
             page: true,
             id: '/foundations/theming/overview',
+            description:
+              'A NewsKit theme is built up from a layer of foundations - such as colours, fonts and sizing scales.',
           },
           {
             title: 'Creating a theme',

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage, IconFilledInfo, newskitLightTheme} from 'newskit';
+import {InlineMessage, IconFilledInfo, newskitLightTheme} from 'newskit';
 
 import {
   ContentSection,
@@ -8,7 +8,6 @@ import {
   ContentTertiary,
 } from '../../components/content-structure';
 import {LayoutProps} from '../../components/layout';
-// import {Mono} from '../../components/flags';
 import {InlineCode} from '../../components/markdown-elements';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {ComponentPageCell} from '../../components/layout-cells';
@@ -110,14 +109,12 @@ const additionalFontPropertiesRows = [
   {
     property: 'wordBreak',
     example: (
-      <Block spaceInline="space050">
-        <Link
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-break"
-          target="_blank"
-        >
-          CSS
-        </Link>
-      </Block>
+      <Link
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-break"
+        target="_blank"
+      >
+        CSS
+      </Link>
     ),
     description:
       'word-break sets whether line breaks appear when the text would otherwise overflow the containing box ',
@@ -231,7 +228,7 @@ const EXAMPLE_CARDS = [
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Fonts | Newskit design system',
+      title: 'Fonts',
       description:
         'Fonts form an important part of the interface, establishing styles for content such as headlines, sub-headlines or paragraphs, as well as more functional styles for items such as labels, tags and messaging.',
     }}
@@ -243,11 +240,6 @@ export default (layoutProps: LayoutProps) => (
         illustration: 'foundations/fonts/hero',
       },
       introduction: `Fonts form an important part of the interface, establishing styles for content such as headlines, sub-headlines or paragraphs, as well as more functional styles for items such as labels, tags and messaging.`,
-    }}
-    featureCard={{
-      title: 'Need Help?',
-      description: 'Cant find what you are looking for?',
-      href: '/about/contact-us/',
     }}
   >
     <ComponentPageCell>
@@ -326,7 +318,7 @@ export default (layoutProps: LayoutProps) => (
             overrides={{stylePreset: 'inlineMessageInformative'}}
             icon={icon}
             role="region"
-            aria-label="fallback-font"
+            aria-label="fallback font"
           >
             It is also important to consider a fallback font (web safe font)
             when defining a font family.{' '}
@@ -411,12 +403,14 @@ export default (layoutProps: LayoutProps) => (
           <Code>
             lineHeight: getLineHeight(‘fontSize040’, ‘fontLineHeight020’)
           </Code>
-          <Block spaceStack="space060" />
+        </ContentSecondary>
+
+        <ContentSecondary>
           <InlineMessage
             overrides={{stylePreset: 'inlineMessageInformative'}}
             icon={icon}
             role="region"
-            aria-label="4px-baseline"
+            aria-label="default base line"
           >
             The default baseline of NewsKit is 4px, and when calculating
             line-height for typographical styles we round either up or down to
@@ -465,9 +459,11 @@ export default (layoutProps: LayoutProps) => (
           />
         </ContentSecondary>
 
-        <ContentSecondary showSeparator>
+        <ContentSecondary>
           <CodeFromFile path="examples/fonts/font-properties.tsx" />
-          <Block spaceStack="space060" />
+        </ContentSecondary>
+
+        <ContentSecondary showSeparator>
           <InlineMessage
             title="Font smooth"
             overrides={{stylePreset: 'inlineMessageInformative'}}

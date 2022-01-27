@@ -3,7 +3,6 @@ import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx';
 import SyntaxHighlighter from 'react-syntax-highlighter/dist/cjs/prism-light';
 import {
   useTheme,
-  newskitLightTheme,
   styled,
   getColorCssFromTheme,
   getBorderCssFromTheme,
@@ -93,22 +92,15 @@ export const CodeFromDefaultPresets: React.FC<CodeFromDefaultPresetsProps> = ({
   const [codeExample, setCodeExample] = useState('');
 
   useEffect(() => {
-    const defaultsFromTheme =
-      newskitLightTheme.componentDefaults[componentName];
-    if (defaultsFromTheme) {
-      setCodeExample(defaultsFromTheme);
-    } else {
-      // dynamically load componentDefaults from newskit
-      // this will become default behavior once all component have own theme
-      const dynamicallyImportDefaults = async () => {
-        const kebabComponentName = toKebabCase(componentName);
-        const code = (await import(`newskit/${kebabComponentName}/defaults`))
-          .default;
+    // dynamically load componentDefaults from newskit
+    const dynamicallyImportDefaults = async () => {
+      const kebabComponentName = toKebabCase(componentName);
+      const code = (await import(`newskit/${kebabComponentName}/defaults`))
+        .default;
 
-        setCodeExample(code);
-      };
-      dynamicallyImportDefaults();
-    }
+      setCodeExample(code);
+    };
+    dynamicallyImportDefaults();
   }, [componentName, setCodeExample]);
 
   if (componentName && codeExample) {

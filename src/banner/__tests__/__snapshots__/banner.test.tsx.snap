@@ -44,6 +44,86 @@ exports[`Banner renders with content as react element 1`] = `
 }
 
 .emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -68,16 +148,15 @@ exports[`Banner renders with content as react element 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -105,7 +184,7 @@ exports[`Banner renders with content as react element 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-4 {
+.emotion-7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -114,34 +193,34 @@ exports[`Banner renders with content as react element 1`] = `
   align-self: center;
 }
 
-.emotion-5 {
+.emotion-8 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-5::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-5 svg {
+.emotion-8 svg {
   fill: #FFFFFF;
 }
 
-.emotion-6 {
+.emotion-9 {
   margin: 0;
 }
 
@@ -165,11 +244,23 @@ exports[`Banner renders with content as react element 1`] = `
             <div
               class="emotion-5"
             >
-              <p
+              <div
                 class="emotion-6"
               >
-                Banner text
-              </p>
+                <div
+                  class="emotion-7"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <p
+                      class="emotion-9"
+                    >
+                      Banner text
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -218,6 +309,86 @@ exports[`Banner renders with content as react element 1`] = `
 }
 
 .emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -242,16 +413,15 @@ exports[`Banner renders with content as react element 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -276,7 +446,7 @@ exports[`Banner renders with content as react element 1`] = `
   margin-right: 12px;
 }
 
-.emotion-4 {
+.emotion-7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -285,34 +455,34 @@ exports[`Banner renders with content as react element 1`] = `
   align-self: center;
 }
 
-.emotion-5 {
+.emotion-8 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-5::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-5 svg {
+.emotion-8 svg {
   fill: #FFFFFF;
 }
 
-.emotion-6 {
+.emotion-9 {
   margin: 0;
 }
 
@@ -336,11 +506,23 @@ exports[`Banner renders with content as react element 1`] = `
             <div
               class="emotion-5"
             >
-              <p
+              <div
                 class="emotion-6"
               >
-                Banner text
-              </p>
+                <div
+                  class="emotion-7"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <p
+                      class="emotion-9"
+                    >
+                      Banner text
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -394,6 +576,86 @@ exports[`Banner renders with content as string and link 1`] = `
 }
 
 .emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -418,16 +680,15 @@ exports[`Banner renders with content as string and link 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -455,7 +716,7 @@ exports[`Banner renders with content as string and link 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-4 {
+.emotion-7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -464,34 +725,34 @@ exports[`Banner renders with content as string and link 1`] = `
   align-self: center;
 }
 
-.emotion-5 {
+.emotion-8 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-5::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-5 svg {
+.emotion-8 svg {
   fill: #FFFFFF;
 }
 
-.emotion-6 {
+.emotion-9 {
   display: inline-block;
   transition-property: color;
   transition-duration: 200ms;
@@ -501,51 +762,51 @@ exports[`Banner renders with content as string and link 1`] = `
   text-decoration: underline;
 }
 
-.emotion-6 svg {
+.emotion-9 svg {
   fill: #3358CC;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-9:hover:not(:disabled) {
   color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-6:hover:not(:disabled) svg {
+.emotion-9:hover:not(:disabled) svg {
   fill: #2B4AAB;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-9:active:not(:disabled) {
   color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-6:active:not(:disabled) svg {
+.emotion-9:active:not(:disabled) svg {
   fill: #213A82;
 }
 
-.emotion-6:visited:not(:disabled) {
+.emotion-9:visited:not(:disabled) {
   color: #5E44E4;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-6:visited:not(:disabled) svg {
+.emotion-9:visited:not(:disabled) svg {
   fill: #5E44E4;
 }
 
-.emotion-6:visited:hover:not(:disabled) {
+.emotion-9:visited:hover:not(:disabled) {
   color: #5E44E4;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-6:visited:hover:not(:disabled) svg {
+.emotion-9:visited:hover:not(:disabled) svg {
   fill: #5E44E4;
 }
 
-.emotion-7 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -564,7 +825,7 @@ exports[`Banner renders with content as string and link 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-8 {
+.emotion-11 {
   margin: 0;
   display: inline-block;
   display: block;
@@ -587,27 +848,39 @@ exports[`Banner renders with content as string and link 1`] = `
           <div
             class="emotion-4"
           >
-            <p
+            <div
               class="emotion-5"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt
-              <a
+              <div
                 class="emotion-6"
-                href="/"
               >
-                <span
+                <div
                   class="emotion-7"
                 >
-                  <span
+                  <p
                     class="emotion-8"
                   >
-                    NewsKit Link
-                  </span>
-                </span>
-              </a>
-              ut labore et dolore magna aliqua.
-            </p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt
+                    <a
+                      class="emotion-9"
+                      href="/"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-11"
+                        >
+                          NewsKit Link
+                        </span>
+                      </span>
+                    </a>
+                    ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -655,6 +928,86 @@ exports[`Banner renders with content as string and link 1`] = `
 }
 
 .emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -679,16 +1032,15 @@ exports[`Banner renders with content as string and link 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -713,7 +1065,7 @@ exports[`Banner renders with content as string and link 1`] = `
   margin-right: 12px;
 }
 
-.emotion-4 {
+.emotion-7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -722,34 +1074,34 @@ exports[`Banner renders with content as string and link 1`] = `
   align-self: center;
 }
 
-.emotion-5 {
+.emotion-8 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-5::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-5 svg {
+.emotion-8 svg {
   fill: #FFFFFF;
 }
 
-.emotion-6 {
+.emotion-9 {
   display: inline-block;
   transition-property: color;
   transition-duration: 200ms;
@@ -759,51 +1111,51 @@ exports[`Banner renders with content as string and link 1`] = `
   text-decoration: underline;
 }
 
-.emotion-6 svg {
+.emotion-9 svg {
   fill: #3358CC;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-9:hover:not(:disabled) {
   color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-6:hover:not(:disabled) svg {
+.emotion-9:hover:not(:disabled) svg {
   fill: #2B4AAB;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-9:active:not(:disabled) {
   color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-6:active:not(:disabled) svg {
+.emotion-9:active:not(:disabled) svg {
   fill: #213A82;
 }
 
-.emotion-6:visited:not(:disabled) {
+.emotion-9:visited:not(:disabled) {
   color: #5E44E4;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-6:visited:not(:disabled) svg {
+.emotion-9:visited:not(:disabled) svg {
   fill: #5E44E4;
 }
 
-.emotion-6:visited:hover:not(:disabled) {
+.emotion-9:visited:hover:not(:disabled) {
   color: #5E44E4;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-6:visited:hover:not(:disabled) svg {
+.emotion-9:visited:hover:not(:disabled) svg {
   fill: #5E44E4;
 }
 
-.emotion-7 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -822,7 +1174,7 @@ exports[`Banner renders with content as string and link 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-8 {
+.emotion-11 {
   margin: 0;
   display: inline-block;
   display: block;
@@ -845,27 +1197,39 @@ exports[`Banner renders with content as string and link 1`] = `
           <div
             class="emotion-4"
           >
-            <p
+            <div
               class="emotion-5"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt
-              <a
+              <div
                 class="emotion-6"
-                href="/"
               >
-                <span
+                <div
                   class="emotion-7"
                 >
-                  <span
+                  <p
                     class="emotion-8"
                   >
-                    NewsKit Link
-                  </span>
-                </span>
-              </a>
-              ut labore et dolore magna aliqua.
-            </p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt
+                    <a
+                      class="emotion-9"
+                      href="/"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-11"
+                        >
+                          NewsKit Link
+                        </span>
+                      </span>
+                    </a>
+                    ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -918,6 +1282,86 @@ exports[`Banner renders with default props 1`] = `
 }
 
 .emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -942,16 +1386,15 @@ exports[`Banner renders with default props 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -979,7 +1422,7 @@ exports[`Banner renders with default props 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-4 {
+.emotion-7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -988,30 +1431,30 @@ exports[`Banner renders with default props 1`] = `
   align-self: center;
 }
 
-.emotion-5 {
+.emotion-8 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-5::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-5 svg {
+.emotion-8 svg {
   fill: #FFFFFF;
 }
 
@@ -1032,11 +1475,23 @@ exports[`Banner renders with default props 1`] = `
           <div
             class="emotion-4"
           >
-            <p
+            <div
               class="emotion-5"
             >
-              Banner text
-            </p>
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <p
+                    class="emotion-8"
+                  >
+                    Banner text
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1084,6 +1539,86 @@ exports[`Banner renders with default props 1`] = `
 }
 
 .emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1108,16 +1643,15 @@ exports[`Banner renders with default props 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -1142,7 +1676,7 @@ exports[`Banner renders with default props 1`] = `
   margin-right: 12px;
 }
 
-.emotion-4 {
+.emotion-7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1151,30 +1685,30 @@ exports[`Banner renders with default props 1`] = `
   align-self: center;
 }
 
-.emotion-5 {
+.emotion-8 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-5::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-5 svg {
+.emotion-8 svg {
   fill: #FFFFFF;
 }
 
@@ -1195,11 +1729,23 @@ exports[`Banner renders with default props 1`] = `
           <div
             class="emotion-4"
           >
-            <p
+            <div
               class="emotion-5"
             >
-              Banner text
-            </p>
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <p
+                    class="emotion-8"
+                  >
+                    Banner text
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1252,6 +1798,86 @@ exports[`Banner renders with icon 1`] = `
 }
 
 .emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1276,16 +1902,15 @@ exports[`Banner renders with icon 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -1313,7 +1938,7 @@ exports[`Banner renders with icon 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-4 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1321,7 +1946,7 @@ exports[`Banner renders with icon 1`] = `
   margin-right: 12px;
 }
 
-.emotion-5 {
+.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1331,14 +1956,14 @@ exports[`Banner renders with icon 1`] = `
   display: inline-block;
 }
 
-.emotion-5.emotion-5 {
+.emotion-8.emotion-8 {
   width: 24px;
   height: 24px;
   color: #FFFFFF;
   fill: #FFFFFF;
 }
 
-.emotion-7 {
+.emotion-10 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1347,30 +1972,30 @@ exports[`Banner renders with icon 1`] = `
   align-self: center;
 }
 
-.emotion-8 {
+.emotion-11 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-8::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-8::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-8 svg {
+.emotion-11 svg {
   fill: #FFFFFF;
 }
 
@@ -1391,31 +2016,43 @@ exports[`Banner renders with icon 1`] = `
           <div
             class="emotion-4"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-5"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
-              />
-            </svg>
-          </div>
-          <div
-            class="emotion-7"
-          >
-            <p
-              class="emotion-8"
-            >
-              Banner text
-            </p>
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-8 emotion-9"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-10"
+                >
+                  <p
+                    class="emotion-11"
+                  >
+                    Banner text
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1463,6 +2100,86 @@ exports[`Banner renders with icon 1`] = `
 }
 
 .emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1487,16 +2204,15 @@ exports[`Banner renders with icon 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -1521,7 +2237,7 @@ exports[`Banner renders with icon 1`] = `
   margin-right: 12px;
 }
 
-.emotion-4 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1529,7 +2245,7 @@ exports[`Banner renders with icon 1`] = `
   margin-right: 12px;
 }
 
-.emotion-5 {
+.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1539,14 +2255,14 @@ exports[`Banner renders with icon 1`] = `
   display: inline-block;
 }
 
-.emotion-5.emotion-5 {
+.emotion-8.emotion-8 {
   width: 24px;
   height: 24px;
   color: #FFFFFF;
   fill: #FFFFFF;
 }
 
-.emotion-7 {
+.emotion-10 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1555,30 +2271,30 @@ exports[`Banner renders with icon 1`] = `
   align-self: center;
 }
 
-.emotion-8 {
+.emotion-11 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-8::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-8::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-8 svg {
+.emotion-11 svg {
   fill: #FFFFFF;
 }
 
@@ -1599,31 +2315,43 @@ exports[`Banner renders with icon 1`] = `
           <div
             class="emotion-4"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-5"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
-              />
-            </svg>
-          </div>
-          <div
-            class="emotion-7"
-          >
-            <p
-              class="emotion-8"
-            >
-              Banner text
-            </p>
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-8 emotion-9"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-10"
+                >
+                  <p
+                    class="emotion-11"
+                  >
+                    Banner text
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1646,6 +2374,86 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-3 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1670,16 +2478,15 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-2 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -1704,7 +2511,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   margin-right: 12px;
 }
 
-.emotion-3 {
+.emotion-6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1713,34 +2520,34 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   align-self: center;
 }
 
-.emotion-4 {
+.emotion-7 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-4::before {
+.emotion-7::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-7::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-4 svg {
+.emotion-7 svg {
   fill: #FFFFFF;
 }
 
-.emotion-5 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1762,7 +2569,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   align-self: center;
 }
 
-.emotion-6 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1772,7 +2579,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   align-self: auto;
 }
 
-.emotion-7 {
+.emotion-10 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1808,33 +2615,33 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   cursor: pointer;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
 }
 
-.emotion-7:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-7:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-7:disabled {
+.emotion-10:disabled {
   background-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-7:disabled svg {
+.emotion-10:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-8 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1855,7 +2662,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   margin-right: calc(-8px/2);
 }
 
-.emotion-9 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1864,24 +2671,24 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   margin-right: calc(8px/2);
 }
 
-.emotion-10 {
+.emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
-.emotion-10::before {
+.emotion-13::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-13::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1901,61 +2708,73 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
         <div
           class="emotion-3"
         >
-          <p
+          <div
             class="emotion-4"
           >
-            Banner text
-          </p>
-        </div>
-      </div>
-      <div
-        class="emotion-5"
-      >
-        <div
-          class="emotion-6"
-        >
-          <button
-            class="emotion-7"
-            data-testid="button"
-            type="button"
-          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <p
+                  class="emotion-7"
+                >
+                  Banner text
+                </p>
+              </div>
+            </div>
             <div
               class="emotion-8"
             >
               <div
                 class="emotion-9"
               >
-                <span
+                <button
                   class="emotion-10"
+                  data-testid="button"
+                  type="button"
                 >
-                  CTA Button
-                </span>
+                  <div
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <span
+                        class="emotion-13"
+                      >
+                        CTA Button
+                      </span>
+                    </div>
+                  </div>
+                </button>
               </div>
-            </div>
-          </button>
-        </div>
-        <div
-          class="emotion-6"
-        >
-          <button
-            class="emotion-7"
-            data-testid="button"
-            type="button"
-          >
-            <div
-              class="emotion-8"
-            >
               <div
                 class="emotion-9"
               >
-                <span
+                <button
                   class="emotion-10"
+                  data-testid="button"
+                  type="button"
                 >
-                  CTA Button
-                </span>
+                  <div
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <span
+                        class="emotion-13"
+                      >
+                        CTA Button
+                      </span>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
-          </button>
+          </div>
         </div>
       </div>
     </div>
@@ -1977,6 +2796,86 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-3 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2001,16 +2900,15 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-2 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -2038,7 +2936,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   margin-bottom: 24px;
 }
 
-.emotion-3 {
+.emotion-6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2047,34 +2945,34 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   align-self: center;
 }
 
-.emotion-4 {
+.emotion-7 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-4::before {
+.emotion-7::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-7::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-4 svg {
+.emotion-7 svg {
   fill: #FFFFFF;
 }
 
-.emotion-5 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2096,7 +2994,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   align-self: stretch;
 }
 
-.emotion-6 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2106,7 +3004,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   align-self: stretch;
 }
 
-.emotion-7 {
+.emotion-10 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2142,33 +3040,33 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   cursor: pointer;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
 }
 
-.emotion-7:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-7:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-7:disabled {
+.emotion-10:disabled {
   background-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-7:disabled svg {
+.emotion-10:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-8 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2189,7 +3087,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   margin-right: calc(-8px/2);
 }
 
-.emotion-9 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2198,24 +3096,24 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   margin-right: calc(8px/2);
 }
 
-.emotion-10 {
+.emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
-.emotion-10::before {
+.emotion-13::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-13::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2235,61 +3133,73 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
         <div
           class="emotion-3"
         >
-          <p
+          <div
             class="emotion-4"
           >
-            Banner text
-          </p>
-        </div>
-      </div>
-      <div
-        class="emotion-5"
-      >
-        <div
-          class="emotion-6"
-        >
-          <button
-            class="emotion-7"
-            data-testid="button"
-            type="button"
-          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <p
+                  class="emotion-7"
+                >
+                  Banner text
+                </p>
+              </div>
+            </div>
             <div
               class="emotion-8"
             >
               <div
                 class="emotion-9"
               >
-                <span
+                <button
                   class="emotion-10"
+                  data-testid="button"
+                  type="button"
                 >
-                  CTA Button
-                </span>
+                  <div
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <span
+                        class="emotion-13"
+                      >
+                        CTA Button
+                      </span>
+                    </div>
+                  </div>
+                </button>
               </div>
-            </div>
-          </button>
-        </div>
-        <div
-          class="emotion-6"
-        >
-          <button
-            class="emotion-7"
-            data-testid="button"
-            type="button"
-          >
-            <div
-              class="emotion-8"
-            >
               <div
                 class="emotion-9"
               >
-                <span
+                <button
                   class="emotion-10"
+                  data-testid="button"
+                  type="button"
                 >
-                  CTA Button
-                </span>
+                  <div
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <span
+                        class="emotion-13"
+                      >
+                        CTA Button
+                      </span>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
-          </button>
+          </div>
         </div>
       </div>
     </div>
@@ -2311,6 +3221,86 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
 }
 
 .emotion-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-3 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2335,16 +3325,15 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-2 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -2369,7 +3358,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   margin-right: 12px;
 }
 
-.emotion-3 {
+.emotion-6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2378,34 +3367,34 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   align-self: center;
 }
 
-.emotion-4 {
+.emotion-7 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-4::before {
+.emotion-7::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-7::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-4 svg {
+.emotion-7 svg {
   fill: #FFFFFF;
 }
 
-.emotion-5 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2429,7 +3418,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   align-self: center;
 }
 
-.emotion-6 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2441,7 +3430,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   align-self: auto;
 }
 
-.emotion-7 {
+.emotion-10 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2477,33 +3466,33 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   cursor: pointer;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
 }
 
-.emotion-7:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-7:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-7:disabled {
+.emotion-10:disabled {
   background-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-7:disabled svg {
+.emotion-10:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-8 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2524,7 +3513,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-9 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2533,24 +3522,24 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-10 {
+.emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
-.emotion-10::before {
+.emotion-13::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-13::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2570,38 +3559,50 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
         <div
           class="emotion-3"
         >
-          <p
+          <div
             class="emotion-4"
           >
-            Banner text
-          </p>
-        </div>
-      </div>
-      <div
-        class="emotion-5"
-      >
-        <div
-          class="emotion-6"
-        >
-          <button
-            class="emotion-7"
-            data-testid="button"
-            type="button"
-          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <p
+                  class="emotion-7"
+                >
+                  Banner text
+                </p>
+              </div>
+            </div>
             <div
               class="emotion-8"
             >
               <div
                 class="emotion-9"
               >
-                <span
+                <button
                   class="emotion-10"
+                  data-testid="button"
+                  type="button"
                 >
-                  CTA Button
-                </span>
+                  <div
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <span
+                        class="emotion-13"
+                      >
+                        CTA Button
+                      </span>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
-          </button>
+          </div>
         </div>
       </div>
     </div>
@@ -2623,6 +3624,86 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
 }
 
 .emotion-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-3 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2647,16 +3728,15 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-2 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -2684,7 +3764,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-3 {
+.emotion-6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2693,34 +3773,34 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   align-self: center;
 }
 
-.emotion-4 {
+.emotion-7 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-4::before {
+.emotion-7::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-7::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-4 svg {
+.emotion-7 svg {
   fill: #FFFFFF;
 }
 
-.emotion-5 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2744,7 +3824,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   align-self: stretch;
 }
 
-.emotion-6 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2756,7 +3836,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   align-self: stretch;
 }
 
-.emotion-7 {
+.emotion-10 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2792,33 +3872,33 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   cursor: pointer;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
 }
 
-.emotion-7:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-7:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-7:disabled {
+.emotion-10:disabled {
   background-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-7:disabled svg {
+.emotion-10:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-8 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2839,7 +3919,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-9 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2848,24 +3928,24 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-10 {
+.emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
-.emotion-10::before {
+.emotion-13::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-13::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2885,38 +3965,50 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
         <div
           class="emotion-3"
         >
-          <p
+          <div
             class="emotion-4"
           >
-            Banner text
-          </p>
-        </div>
-      </div>
-      <div
-        class="emotion-5"
-      >
-        <div
-          class="emotion-6"
-        >
-          <button
-            class="emotion-7"
-            data-testid="button"
-            type="button"
-          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <p
+                  class="emotion-7"
+                >
+                  Banner text
+                </p>
+              </div>
+            </div>
             <div
               class="emotion-8"
             >
               <div
                 class="emotion-9"
               >
-                <span
+                <button
                   class="emotion-10"
+                  data-testid="button"
+                  type="button"
                 >
-                  CTA Button
-                </span>
+                  <div
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <span
+                        class="emotion-13"
+                      >
+                        CTA Button
+                      </span>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
-          </button>
+          </div>
         </div>
       </div>
     </div>
@@ -2968,6 +4060,86 @@ exports[`Banner renders with title 1`] = `
 }
 
 .emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2992,16 +4164,15 @@ exports[`Banner renders with title 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -3029,7 +4200,7 @@ exports[`Banner renders with title 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-4 {
+.emotion-7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -3038,59 +4209,59 @@ exports[`Banner renders with title 1`] = `
   align-self: center;
 }
 
-.emotion-5 {
+.emotion-8 {
   margin: 0;
   display: inline-block;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
   margin-bottom: 12px;
 }
 
-.emotion-5::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.2155em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.2125em;
   display: block;
 }
 
-.emotion-5 svg {
+.emotion-8 svg {
   fill: #FFFFFF;
 }
 
-.emotion-6 {
+.emotion-9 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-6::before {
+.emotion-9::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-9::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-6 svg {
+.emotion-9 svg {
   fill: #FFFFFF;
 }
 
@@ -3111,16 +4282,28 @@ exports[`Banner renders with title 1`] = `
           <div
             class="emotion-4"
           >
-            <span
+            <div
               class="emotion-5"
             >
-              Banner title
-            </span>
-            <p
-              class="emotion-6"
-            >
-              Banner text
-            </p>
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Banner title
+                  </span>
+                  <p
+                    class="emotion-9"
+                  >
+                    Banner text
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -3168,6 +4351,86 @@ exports[`Banner renders with title 1`] = `
 }
 
 .emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3192,16 +4455,15 @@ exports[`Banner renders with title 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -3226,7 +4488,7 @@ exports[`Banner renders with title 1`] = `
   margin-right: 12px;
 }
 
-.emotion-4 {
+.emotion-7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -3235,59 +4497,59 @@ exports[`Banner renders with title 1`] = `
   align-self: center;
 }
 
-.emotion-5 {
+.emotion-8 {
   margin: 0;
   display: inline-block;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
   margin-bottom: 12px;
 }
 
-.emotion-5::before {
+.emotion-8::before {
   content: '';
   margin-bottom: -0.2155em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-8::after {
   content: '';
   margin-top: -0.2125em;
   display: block;
 }
 
-.emotion-5 svg {
+.emotion-8 svg {
   fill: #FFFFFF;
 }
 
-.emotion-6 {
+.emotion-9 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-6::before {
+.emotion-9::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-9::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-6 svg {
+.emotion-9 svg {
   fill: #FFFFFF;
 }
 
@@ -3308,16 +4570,28 @@ exports[`Banner renders with title 1`] = `
           <div
             class="emotion-4"
           >
-            <span
+            <div
               class="emotion-5"
             >
-              Banner title
-            </span>
-            <p
-              class="emotion-6"
-            >
-              Banner text
-            </p>
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Banner title
+                  </span>
+                  <p
+                    class="emotion-9"
+                  >
+                    Banner text
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -3340,6 +4614,86 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 .emotion-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-3 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3364,16 +4718,15 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-2 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -3398,7 +4751,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   margin-right: 12px;
 }
 
-.emotion-3 {
+.emotion-6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -3407,34 +4760,34 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   align-self: center;
 }
 
-.emotion-4 {
+.emotion-7 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-4::before {
+.emotion-7::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-7::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-4 svg {
+.emotion-7 svg {
   fill: #FFFFFF;
 }
 
-.emotion-5 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3458,7 +4811,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   align-self: center;
 }
 
-.emotion-6 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3470,7 +4823,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   align-self: auto;
 }
 
-.emotion-7 {
+.emotion-10 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3506,33 +4859,33 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   cursor: pointer;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
 }
 
-.emotion-7:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-7:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-7:disabled {
+.emotion-10:disabled {
   background-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-7:disabled svg {
+.emotion-10:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-8 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3553,7 +4906,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   margin-right: calc(-8px/2);
 }
 
-.emotion-9 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3562,30 +4915,30 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   margin-right: calc(8px/2);
 }
 
-.emotion-10 {
+.emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
-.emotion-10::before {
+.emotion-13::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-13::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-11 {
+.emotion-14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3594,7 +4947,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   margin-right: calc(16px/2);
 }
 
-.emotion-12 {
+.emotion-15 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3630,33 +4983,33 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   cursor: pointer;
 }
 
-.emotion-12 svg {
+.emotion-15 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-12 svg {
+.emotion-15 svg {
   fill: #FFFFFF;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-15:hover:not(:disabled) {
   background-color: rgba(255,255,255,0.1);
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-15:active:not(:disabled) {
   background-color: rgba(255,255,255,0.2);
 }
 
-.emotion-12:disabled {
+.emotion-15:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-12:disabled svg {
+.emotion-15:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-15 {
+.emotion-18 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3679,73 +5032,85 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
         <div
           class="emotion-3"
         >
-          <p
+          <div
             class="emotion-4"
           >
-            Banner text
-          </p>
-        </div>
-      </div>
-      <div
-        class="emotion-5"
-      >
-        <div
-          class="emotion-6"
-        >
-          <button
-            class="emotion-7"
-            data-testid="button"
-            type="button"
-          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <p
+                  class="emotion-7"
+                >
+                  Banner text
+                </p>
+              </div>
+            </div>
             <div
               class="emotion-8"
             >
               <div
                 class="emotion-9"
               >
-                <span
+                <button
                   class="emotion-10"
+                  data-testid="button"
+                  type="button"
                 >
-                  CTA Button
-                </span>
+                  <div
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <span
+                        class="emotion-13"
+                      >
+                        CTA Button
+                      </span>
+                    </div>
+                  </div>
+                </button>
               </div>
-            </div>
-          </button>
-        </div>
-        <div
-          class="emotion-11"
-        >
-          <button
-            aria-label="Close"
-            class="emotion-12"
-            data-testid="banner-close-button"
-            type="button"
-          >
-            <div
-              class="emotion-8"
-            >
               <div
-                class="emotion-9"
+                class="emotion-14"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-15 emotion-16"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <button
+                  aria-label="Close"
+                  class="emotion-15"
+                  data-testid="banner-close-button"
+                  type="button"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
+                  <div
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-18 emotion-19"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
-          </button>
+          </div>
         </div>
       </div>
     </div>
@@ -3767,6 +5132,86 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 .emotion-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-3 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3791,16 +5236,15 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-2 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -3828,7 +5272,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   margin-bottom: 24px;
 }
 
-.emotion-3 {
+.emotion-6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -3837,34 +5281,34 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   align-self: center;
 }
 
-.emotion-4 {
+.emotion-7 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-4::before {
+.emotion-7::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-7::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-4 svg {
+.emotion-7 svg {
   fill: #FFFFFF;
 }
 
-.emotion-5 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3888,7 +5332,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   align-self: stretch;
 }
 
-.emotion-6 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3900,7 +5344,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   align-self: stretch;
 }
 
-.emotion-7 {
+.emotion-10 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3939,35 +5383,35 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   cursor: pointer;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
 }
 
-.emotion-7:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: rgba(255,255,255,0.1);
   border-color: rgba(255,255,255,0.7);
 }
 
-.emotion-7:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: rgba(255,255,255,0.2);
   border-color: rgba(255,255,255,0.8);
 }
 
-.emotion-7:disabled {
+.emotion-10:disabled {
   border-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-7:disabled svg {
+.emotion-10:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-8 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3988,7 +5432,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   margin-right: calc(-8px/2);
 }
 
-.emotion-9 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3997,30 +5441,30 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   margin-right: calc(8px/2);
 }
 
-.emotion-10 {
+.emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
-.emotion-10::before {
+.emotion-13::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-13::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-12 {
+.emotion-15 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4056,29 +5500,29 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   cursor: pointer;
 }
 
-.emotion-12 svg {
+.emotion-15 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-12 svg {
+.emotion-15 svg {
   fill: #FFFFFF;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-15:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-15:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-12:disabled {
+.emotion-15:disabled {
   background-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-12:disabled svg {
+.emotion-15:disabled svg {
   fill: #C0C0C0;
 }
 
@@ -4096,61 +5540,73 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
         <div
           class="emotion-3"
         >
-          <p
+          <div
             class="emotion-4"
           >
-            Banner text
-          </p>
-        </div>
-      </div>
-      <div
-        class="emotion-5"
-      >
-        <div
-          class="emotion-6"
-        >
-          <button
-            class="emotion-7"
-            data-testid="banner-close-button"
-            type="button"
-          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <p
+                  class="emotion-7"
+                >
+                  Banner text
+                </p>
+              </div>
+            </div>
             <div
               class="emotion-8"
             >
               <div
                 class="emotion-9"
               >
-                <span
+                <button
                   class="emotion-10"
+                  data-testid="banner-close-button"
+                  type="button"
                 >
-                  Close
-                </span>
+                  <div
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <span
+                        class="emotion-13"
+                      >
+                        Close
+                      </span>
+                    </div>
+                  </div>
+                </button>
               </div>
-            </div>
-          </button>
-        </div>
-        <div
-          class="emotion-6"
-        >
-          <button
-            class="emotion-12"
-            data-testid="button"
-            type="button"
-          >
-            <div
-              class="emotion-8"
-            >
               <div
                 class="emotion-9"
               >
-                <span
-                  class="emotion-10"
+                <button
+                  class="emotion-15"
+                  data-testid="button"
+                  type="button"
                 >
-                  CTA Button
-                </span>
+                  <div
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <span
+                        class="emotion-13"
+                      >
+                        CTA Button
+                      </span>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
-          </button>
+          </div>
         </div>
       </div>
     </div>
@@ -4172,6 +5628,86 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 }
 
 .emotion-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-3 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4196,16 +5732,15 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-2 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -4230,7 +5765,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   margin-right: 12px;
 }
 
-.emotion-3 {
+.emotion-6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -4239,34 +5774,34 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   align-self: center;
 }
 
-.emotion-4 {
+.emotion-7 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-4::before {
+.emotion-7::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-7::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-4 svg {
+.emotion-7 svg {
   fill: #FFFFFF;
 }
 
-.emotion-5 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4290,7 +5825,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   align-self: center;
 }
 
-.emotion-6 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4299,7 +5834,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   margin-right: calc(16px/2);
 }
 
-.emotion-7 {
+.emotion-10 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4335,33 +5870,33 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   cursor: pointer;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
 }
 
-.emotion-7:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: rgba(255,255,255,0.1);
 }
 
-.emotion-7:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: rgba(255,255,255,0.2);
 }
 
-.emotion-7:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-7:disabled svg {
+.emotion-10:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-8 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4382,7 +5917,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-9 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4391,7 +5926,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-10 {
+.emotion-13 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4414,50 +5949,62 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
         <div
           class="emotion-3"
         >
-          <p
+          <div
             class="emotion-4"
           >
-            Banner text
-          </p>
-        </div>
-      </div>
-      <div
-        class="emotion-5"
-      >
-        <div
-          class="emotion-6"
-        >
-          <button
-            aria-label="Close"
-            class="emotion-7"
-            data-testid="banner-close-button"
-            type="button"
-          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <p
+                  class="emotion-7"
+                >
+                  Banner text
+                </p>
+              </div>
+            </div>
             <div
               class="emotion-8"
             >
               <div
                 class="emotion-9"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-10 emotion-11"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <button
+                  aria-label="Close"
+                  class="emotion-10"
+                  data-testid="banner-close-button"
+                  type="button"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
+                  <div
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-13 emotion-14"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
-          </button>
+          </div>
         </div>
       </div>
     </div>
@@ -4479,6 +6026,86 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 }
 
 .emotion-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-3 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4503,16 +6130,15 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-2 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -4540,7 +6166,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-3 {
+.emotion-6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -4549,34 +6175,34 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   align-self: center;
 }
 
-.emotion-4 {
+.emotion-7 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #FFFFFF;
 }
 
-.emotion-4::before {
+.emotion-7::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-7::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-4 svg {
+.emotion-7 svg {
   fill: #FFFFFF;
 }
 
-.emotion-5 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4600,7 +6226,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   align-self: stretch;
 }
 
-.emotion-6 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4612,7 +6238,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   align-self: stretch;
 }
 
-.emotion-7 {
+.emotion-10 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4651,35 +6277,35 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   cursor: pointer;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-7 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
 }
 
-.emotion-7:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: rgba(255,255,255,0.1);
   border-color: rgba(255,255,255,0.7);
 }
 
-.emotion-7:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: rgba(255,255,255,0.2);
   border-color: rgba(255,255,255,0.8);
 }
 
-.emotion-7:disabled {
+.emotion-10:disabled {
   border-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-7:disabled svg {
+.emotion-10:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-8 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4700,7 +6326,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-9 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4709,24 +6335,24 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-10 {
+.emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
-.emotion-10::before {
+.emotion-13::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-10::after {
+.emotion-13::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -4746,38 +6372,988 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
         <div
           class="emotion-3"
         >
-          <p
+          <div
             class="emotion-4"
           >
-            Banner text
-          </p>
-        </div>
-      </div>
-      <div
-        class="emotion-5"
-      >
-        <div
-          class="emotion-6"
-        >
-          <button
-            class="emotion-7"
-            data-testid="banner-close-button"
-            type="button"
-          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <p
+                  class="emotion-7"
+                >
+                  Banner text
+                </p>
+              </div>
+            </div>
             <div
               class="emotion-8"
             >
               <div
                 class="emotion-9"
               >
-                <span
+                <button
                   class="emotion-10"
+                  data-testid="banner-close-button"
+                  type="button"
                 >
-                  Close
-                </span>
+                  <div
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <span
+                        class="emotion-13"
+                      >
+                        Close
+                      </span>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
-          </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders grid and cell overrides on banner 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  background-color: #05717D;
+  padding: 20px;
+  min-height: 64px;
+}
+
+.emotion-1 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -16px 4px 0 4px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -16px 4px 0 4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-4 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: flex-start;
+  align-content: flex-start;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  margin-bottom: 24px;
+}
+
+.emotion-7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-8 {
+  margin: 0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  color: #FFFFFF;
+}
+
+.emotion-8::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-8::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-8 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-24px/2);
+  margin-bottom: calc(-24px/2);
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.emotion-10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(24px/2);
+  margin-bottom: calc(24px/2);
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.emotion-11 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-11 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-11 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-11:hover:not(:disabled) {
+  background-color: #2B4AAB;
+}
+
+.emotion-11:active:not(:disabled) {
+  background-color: #213A82;
+}
+
+.emotion-11:disabled {
+  background-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-11:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-14 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-14::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-14::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="banner-container"
+      role="region"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <p
+                    class="emotion-8"
+                  >
+                    Banner text
+                  </p>
+                </div>
+              </div>
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <button
+                    class="emotion-11"
+                    data-testid="button"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <div
+                        class="emotion-13"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                          CTA Button
+                        </span>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div
+                  class="emotion-10"
+                >
+                  <button
+                    class="emotion-11"
+                    data-testid="button"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <div
+                        class="emotion-13"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                          CTA Button
+                        </span>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @media screen {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  background-color: #05717D;
+  padding: 20px;
+  min-height: 64px;
+}
+
+.emotion-1 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -16px 4px 0 4px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -16px 4px 0 4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-4 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: flex-start;
+  align-content: flex-start;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-right: 12px;
+}
+
+.emotion-7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-8 {
+  margin: 0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  color: #FFFFFF;
+}
+
+.emotion-8::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-8::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-8 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-16px/2);
+  margin-right: calc(-16px/2);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(16px/2);
+  margin-right: calc(16px/2);
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.emotion-11 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-11 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-11 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-11:hover:not(:disabled) {
+  background-color: #2B4AAB;
+}
+
+.emotion-11:active:not(:disabled) {
+  background-color: #213A82;
+}
+
+.emotion-11:disabled {
+  background-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-11:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-14 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-14::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-14::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="banner-container"
+      role="region"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <p
+                    class="emotion-8"
+                  >
+                    Banner text
+                  </p>
+                </div>
+              </div>
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <button
+                    class="emotion-11"
+                    data-testid="button"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <div
+                        class="emotion-13"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                          CTA Button
+                        </span>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div
+                  class="emotion-10"
+                >
+                  <button
+                    class="emotion-11"
+                    data-testid="button"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-12"
+                    >
+                      <div
+                        class="emotion-13"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                          CTA Button
+                        </span>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
