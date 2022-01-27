@@ -41,8 +41,7 @@ export default (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v3.3.0',
-      codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/tree/master/src/toast',
+      codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/master/src/toast',
       figmaUrl:
         'https://www.figma.com/file/i1jp5qmzkADF5z3XmPrxfp/02---NK-Web---Components---Toast?node-id=0%3A1',
     }}
