@@ -80,7 +80,7 @@ const PRINCIPLE_CARDS = [
         NewsKit has an extensive
         <Link
           overrides={{stylePreset: 'inkInverse'}}
-          href="foundations/overview/"
+          href="/foundations/overview/"
         >
           theming system
         </Link>{' '}
@@ -169,7 +169,7 @@ export default (layoutProps: LayoutProps) => (
                 description: (
                   <>
                     A collection high quality React{' '}
-                    <Link href="components/overview/">web components</Link>{' '}
+                    <Link href="/components/overview/">web components</Link>{' '}
                     built using
                     <Link
                       href="https://www.typescriptlang.org/"
