@@ -7,6 +7,7 @@ import {Separator} from '../separator';
 
 export const TabsWithTable: React.FC<ComponentTabsWithTableProps> = ({
   components,
+  showSeparator,
 }) => (
   <>
     {components.map(({title, summary, tabs}, i, arr) => {
@@ -48,7 +49,7 @@ export const TabsWithTable: React.FC<ComponentTabsWithTableProps> = ({
             )}
             {tabList.length === 1 && tabList[0].content}
           </Block>
-          <Separator />
+          {showSeparator && <Separator />}
         </>
       );
     })}

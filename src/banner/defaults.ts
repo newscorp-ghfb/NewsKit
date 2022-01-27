@@ -4,7 +4,6 @@ export default {
       stylePreset: 'bannerInformative',
       spaceInset: 'spaceInset045',
       minHeight: 'sizing090',
-      maxWidth: '1920px',
       icon: {
         spaceInline: 'space030',
       },
@@ -31,7 +30,6 @@ export default {
       stylePreset: 'bannerInformative',
       spaceInset: 'spaceInset045',
       minHeight: 'sizing090',
-      maxWidth: '1920px',
       icon: {
         spaceInline: 'space030',
       },

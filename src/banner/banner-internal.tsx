@@ -21,6 +21,7 @@ import {filterOutFalsyProperties} from '../utils/filter-object';
 import {IconButton} from '../icon-button';
 import {deepMerge} from '../utils';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
+import {Cell, Grid} from '../grid';
 
 export const BannerInternal: React.FC<BannerInternalProps> = ({
   actions,
@@ -57,108 +58,115 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
       layout={layout}
       {...restProps}
     >
-      <StyledMaxWidthContainer
-        flow={
-          layout === 'vertical' ? Flow.VerticalCenter : Flow.HorizontalCenter
-        }
-        stackDistribution="flex-start"
-        wrap="nowrap"
-        layout={layout}
-        overrides={overrides}
-      >
-        <StyledIconContentContainer
-          flow={Flow.HorizontalTop}
-          stackDistribution="flex-start"
-          wrap="nowrap"
-          layout={layout}
-          overrides={overrides}
-        >
-          {icon && (
-            <StyledIconContainer layout={layout} overrides={overrides}>
-              {icon}
-            </StyledIconContainer>
-          )}
-          <StyledContentContainer>
-            {title && (
-              <StyledTitleContainer
-                as="span"
-                layout={layout}
-                overrides={overrides}
-              >
-                {title}
-              </StyledTitleContainer>
-            )}
-            <StyledMessageContainer
-              layout={layout}
-              overrides={overrides}
-              as={
-                typeof children === 'string' ||
-                (Array.isArray(children) &&
-                  children.some(child => typeof child === 'string'))
-                  ? 'p'
-                  : 'div'
-              }
-            >
-              {children}
-            </StyledMessageContainer>
-          </StyledContentContainer>
-        </StyledIconContentContainer>
-        {(actions?.length || onClose) && (
-          <StyledActionsContainer
+      <Grid {...overrides?.grid?.props}>
+        <Cell xs={12} {...overrides?.cell?.props}>
+          <StyledMaxWidthContainer
             flow={
               layout === 'vertical'
                 ? Flow.VerticalCenter
                 : Flow.HorizontalCenter
             }
-            stackDistribution={StackDistribution.Start}
-            spaceInline={actionsSpacing}
+            stackDistribution="flex-start"
+            wrap="nowrap"
             layout={layout}
+            overrides={overrides}
           >
-            {onClose && layout === 'vertical' && (
-              <StackChild
-                key="banner-close-button"
-                alignSelf={AlignSelfValues.Stretch}
-              >
-                <Button
-                  overrides={{
-                    ...closeButtonStyles,
-                    width: '100%',
-                  }}
-                  onClick={onClose}
-                  data-testid="banner-close-button"
-                >
-                  {closeButtonLabel}
-                </Button>
-              </StackChild>
-            )}
-            {actions &&
-              actionKeys.length &&
-              actions.map((action, idx) => (
-                <StackChild
-                  key={actionKeys[idx]}
-                  alignSelf={
-                    layout === 'vertical'
-                      ? AlignSelfValues.Stretch
-                      : AlignSelfValues.Auto
+            <StyledIconContentContainer
+              flow={Flow.HorizontalTop}
+              stackDistribution="flex-start"
+              wrap="nowrap"
+              layout={layout}
+              overrides={overrides}
+              height="auto"
+            >
+              {icon && (
+                <StyledIconContainer layout={layout} overrides={overrides}>
+                  {icon}
+                </StyledIconContainer>
+              )}
+              <StyledContentContainer>
+                {title && (
+                  <StyledTitleContainer
+                    as="span"
+                    layout={layout}
+                    overrides={overrides}
+                  >
+                    {title}
+                  </StyledTitleContainer>
+                )}
+                <StyledMessageContainer
+                  layout={layout}
+                  overrides={overrides}
+                  as={
+                    typeof children === 'string' ||
+                    (Array.isArray(children) &&
+                      children.some(child => typeof child === 'string'))
+                      ? 'p'
+                      : 'div'
                   }
                 >
-                  {renderIfReactComponent(action)}
-                </StackChild>
-              ))}
-            {onClose && layout === 'horizontal' && (
-              <IconButton
-                data-testid="banner-close-button"
-                aria-label={closeButtonLabel}
-                size="small"
-                overrides={closeButtonStyles}
-                onClick={onClose}
+                  {children}
+                </StyledMessageContainer>
+              </StyledContentContainer>
+            </StyledIconContentContainer>
+            {(actions?.length || onClose) && (
+              <StyledActionsContainer
+                flow={
+                  layout === 'vertical'
+                    ? Flow.VerticalCenter
+                    : Flow.HorizontalCenter
+                }
+                stackDistribution={StackDistribution.Start}
+                spaceInline={actionsSpacing}
+                layout={layout}
               >
-                <IconFilledClose />
-              </IconButton>
+                {onClose && layout === 'vertical' && (
+                  <StackChild
+                    key="banner-close-button"
+                    alignSelf={AlignSelfValues.Stretch}
+                  >
+                    <Button
+                      overrides={{
+                        ...closeButtonStyles,
+                        width: '100%',
+                      }}
+                      onClick={onClose}
+                      data-testid="banner-close-button"
+                    >
+                      {closeButtonLabel}
+                    </Button>
+                  </StackChild>
+                )}
+                {actions &&
+                  actionKeys.length &&
+                  actions.map((action, idx) => (
+                    <StackChild
+                      key={actionKeys[idx]}
+                      alignSelf={
+                        layout === 'vertical'
+                          ? AlignSelfValues.Stretch
+                          : AlignSelfValues.Auto
+                      }
+                    >
+                      {renderIfReactComponent(action)}
+                    </StackChild>
+                  ))}
+                {onClose && layout === 'horizontal' && (
+                  <IconButton
+                    data-testid="banner-close-button"
+                    aria-label={closeButtonLabel}
+                    size="small"
+                    overrides={closeButtonStyles}
+                    onClick={onClose}
+                  >
+                    <IconFilledClose />
+                  </IconButton>
+                )}
+              </StyledActionsContainer>
             )}
-          </StyledActionsContainer>
-        )}
-      </StyledMaxWidthContainer>
+          </StyledMaxWidthContainer>
+        </Cell>
+      </Grid>
     </StyledBannerContainer>
   );
 };

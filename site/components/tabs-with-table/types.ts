@@ -2,6 +2,7 @@ import {TableRow} from '../table';
 
 export interface ComponentTabsWithTableProps {
   components: TabsWithTableProps[];
+  showSeparator?: boolean;
 }
 
 export interface TabsWithTableProps {
