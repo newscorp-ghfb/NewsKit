@@ -68,7 +68,7 @@ describe('SvgPreviewer', () => {
     );
   });
 
-  it('should change theme correctly with select component', async () => {
+  it('should change theme colors correctly when selecting a different theme from select element', async () => {
     const {getByTestId, asFragment} = renderWithTheme(SvgPreviewer);
     const data = {
       pluginMessage: {

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SvgPreviewer should change theme correctly with select component 1`] = `
+exports[`SvgPreviewer should change theme colors correctly when selecting a different theme from select element 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;

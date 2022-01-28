@@ -12,6 +12,7 @@ export const DownloadControls = ({
   svgCodeGroup,
 }: DownloadControlsProps) => {
   const selectSvgEl = useRef<HTMLSelectElement>(null);
+
   const buildComponentName = (svgName: string) =>
     svgName
       .split(' ')
