@@ -67,4 +67,25 @@ describe('SvgPreviewer', () => {
       'card-no-crop.tsx',
     );
   });
+  it('should change theme correctly with select component', async () => {
+    const {getByTestId, asFragment} = renderWithTheme(SvgPreviewer);
+    const data = {
+      pluginMessage: {
+        action: 'FilesToUI',
+        data: {
+          hexes: Hexes,
+          svgdata: [{code: SVGString, name: 'SvgName'}],
+        },
+      },
+    };
+    await act(async () => {
+      window.postMessage({...data}, '*');
+      await delay(50);
+    });
+    const select = (getByTestId('select-theme') as unknown) as Element;
+
+    fireEvent.change(select, {target: {value: 'Patterns Theme'}});
+
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
