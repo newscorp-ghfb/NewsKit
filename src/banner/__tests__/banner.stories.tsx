@@ -6,10 +6,16 @@ import {
 } from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils/style';
-import {IconFilledInfo, IconFilledWarning, IconFilledError} from '../../icons';
+import {
+  IconFilledInfo,
+  IconFilledWarning,
+  IconFilledError,
+  IconFilledFacebook,
+  IconFilledInstagram,
+} from '../../icons';
 import {Button, ButtonOrButtonLinkProps} from '../../button';
 import {Link} from '../../link';
-import {Visible} from '../../grid';
+import {Cell, Grid, Visible} from '../../grid';
 
 const myCustomTheme = createTheme({
   name: 'banner-intents-theme',
@@ -268,6 +274,40 @@ export const StoryBannerVariations = () => (
         tempor incididunt {bannerLink} ut labore et dolore magna aliqua.
       </BannerWithState>
     </BannerWrapper>
+    <StorybookSubHeading>with title as icon</StorybookSubHeading>
+    <BannerWrapper>
+      <BannerWithState
+        title={
+          <>
+            <IconFilledFacebook overrides={{size: 'iconSize020'}} />
+            <IconFilledInstagram overrides={{size: 'iconSize020'}} />
+          </>
+        }
+        onClose={undefined}
+        aria-label="Banner with icon in title"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt {bannerLink} ut labore et dolore magna aliqua.
+      </BannerWithState>
+    </BannerWrapper>
+    <StorybookSubHeading>with title as image</StorybookSubHeading>
+    <BannerWrapper>
+      <BannerWithState
+        title={
+          <img
+            src="/placeholder-1x1.png"
+            alt="Example"
+            width="800px"
+            height="50px"
+          />
+        }
+        onClose={undefined}
+        aria-label="Banner with image in title"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt {bannerLink} ut labore et dolore magna aliqua.
+      </BannerWithState>
+    </BannerWrapper>
   </>
 );
 StoryBannerVariations.storyName = 'banner-variations';
@@ -300,12 +340,19 @@ export const StoryBannerWithOverrides = () => (
             stylePreset: 'bannerContainerSolidCustom',
             spaceInset: 'spaceInset060',
             minHeight: 'sizing100',
-            maxWidth: {
-              xs: '420px',
-              sm: '480px',
-              md: '768px',
-              lg: '1024px',
-              xl: '1440px',
+            grid: {
+              props: {
+                xsMargin: 'space030',
+                mdMargin: 'space040',
+                lgMargin: 'space050',
+              },
+            },
+            cell: {
+              props: {
+                xs: 12,
+                md: 10,
+                mdOffset: 1,
+              },
             },
             icon: {
               spaceInline: 'space060',
@@ -337,7 +384,70 @@ export const StoryBannerWithOverrides = () => (
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </BannerWithState>
       </BannerWrapper>
+      <StorybookSubHeading>
+        with spaceInset overrides on each breakpoint
+      </StorybookSubHeading>
+
+      <Banner
+        title="Banner title"
+        aria-label="Banner with breakpoint overrides"
+        overrides={{
+          spaceInset: {
+            xs: 'space050 space045 space045 space050',
+            md: 'space040 space070 space070 space050',
+            lg: 'space040',
+          },
+        }}
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing eli
+      </Banner>
     </ThemeProvider>
   </>
 );
 StoryBannerWithOverrides.storyName = 'banner-with-overrides';
+
+export const StoryBannerWithGridAlignment = () => (
+  <ThemeProvider theme={myCustomTheme}>
+    <StorybookSubHeading>align to grid</StorybookSubHeading>
+    <Grid>
+      <Cell xs="full-width">Content above the banner</Cell>
+    </Grid>
+    <Banner
+      title="Banner title"
+      aria-label="Banner with content above"
+      overrides={{
+        spaceInset: 'space045 space000 space045 space000',
+      }}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing eli
+    </Banner>
+    <Grid>
+      <Cell xs="full-width">Content below the banner</Cell>
+    </Grid>
+    <StorybookSubHeading>
+      align to grid with offset & with spaceInset overrides
+    </StorybookSubHeading>
+    <Grid>
+      <Cell xs={8} xsOffset={2}>
+        Content above the banner
+      </Cell>
+    </Grid>
+    <Banner
+      title="Banner title"
+      aria-label="Banner with content below"
+      overrides={{
+        cell: {props: {xs: 8, xsOffset: 2}},
+        spaceInset: 'space045 space000 space045 space000',
+      }}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing eli
+    </Banner>
+    <Grid>
+      <Cell xs={8} xsOffset={2}>
+        Content bellow the banner
+      </Cell>
+    </Grid>
+  </ThemeProvider>
+);
+
+StoryBannerWithGridAlignment.storyName = 'banner-with-grid-alignment';

@@ -9,7 +9,7 @@ import {GuidePageTemplateProps} from './types';
 
 export const defaultFeatureCard: Partial<OnwardJourneySectionProps> = {
   buttonLabel: 'Get in touch',
-  stylePrefix: 'foundationFeatureCard',
+  stylePrefix: 'needHelpCard',
   layout: 'horizontal',
   href: 'components/overview',
 };

@@ -56,8 +56,8 @@ const mandatoryProps: ComponentPageTemplateProps = {
   meta: {
     status: MetaStatus.Supported,
     introduced: 'v0.3',
-    codeUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
-    figmaUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
+    codeUrl: 'https://github.com/newscorp-ghfb/newskit',
+    figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
   },
 };
 

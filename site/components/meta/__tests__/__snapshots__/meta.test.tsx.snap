@@ -870,7 +870,7 @@ exports[`Meta renders with mandatory props 1`] = `
             <a
               class="emotion-28"
               data-testid="buttonLink"
-              href="https://github.com/newscorp-ghfb/ncu-newskit"
+              href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
               <div
@@ -1052,7 +1052,7 @@ exports[`Meta renders with mandatory props 1`] = `
                 <a
                   class="emotion-28"
                   data-testid="buttonLink"
-                  href="https://github.com/newscorp-ghfb/ncu-newskit"
+                  href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
                   <div
@@ -1992,7 +1992,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
             <a
               class="emotion-28"
               data-testid="buttonLink"
-              href="https://github.com/newscorp-ghfb/ncu-newskit"
+              href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
               <div
@@ -2032,7 +2032,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
             <a
               class="emotion-28"
               data-testid="buttonLink"
-              href="https://github.com/newscorp-ghfb/ncu-newskit"
+              href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
               <div
@@ -2227,7 +2227,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                 <a
                   class="emotion-28"
                   data-testid="buttonLink"
-                  href="https://github.com/newscorp-ghfb/ncu-newskit"
+                  href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
                   <div
@@ -2267,7 +2267,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                 <a
                   class="emotion-28"
                   data-testid="buttonLink"
-                  href="https://github.com/newscorp-ghfb/ncu-newskit"
+                  href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
                   <div

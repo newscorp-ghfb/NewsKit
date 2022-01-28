@@ -10,7 +10,7 @@ import {columnMap} from './column-map';
 import {renderCols} from './column-renderer';
 import {useTabIndexWhenScroll} from '../hooks';
 
-export const Table: React.FC<TableProps> = ({rows, columns}) => {
+export const Table: React.FC<TableProps> = ({rows, columns, columnsIcon}) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const tabIndex = useTabIndexWhenScroll(containerRef);
 
@@ -21,6 +21,9 @@ export const Table: React.FC<TableProps> = ({rows, columns}) => {
           <tr>
             {columns.map(columnName => (
               <StyledHeader key={columnName} {...(columnMap[columnName] || {})}>
+                {columnsIcon && (
+                  <div>{columnsIcon[columnName.toLowerCase()]}</div>
+                )}
                 {columnMap[columnName]?.cellHeader || columnName}
               </StyledHeader>
             ))}
