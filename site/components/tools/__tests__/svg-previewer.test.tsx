@@ -67,6 +67,7 @@ describe('SvgPreviewer', () => {
       'card-no-crop.tsx',
     );
   });
+
   it('should change theme correctly with select component', async () => {
     const {getByTestId, asFragment} = renderWithTheme(SvgPreviewer);
     const data = {
@@ -78,13 +79,16 @@ describe('SvgPreviewer', () => {
         },
       },
     };
+
     await act(async () => {
       window.postMessage({...data}, '*');
       await delay(50);
     });
-    const select = (getByTestId('select-theme') as unknown) as Element;
 
-    fireEvent.change(select, {target: {value: 'Patterns Theme'}});
+    const selectThemeElement = (getByTestId(
+      'select-theme-element',
+    ) as unknown) as Element;
+    fireEvent.change(selectThemeElement, {target: {value: 'Patterns Theme'}});
 
     expect(asFragment()).toMatchSnapshot();
   });
