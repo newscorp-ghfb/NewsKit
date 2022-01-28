@@ -1021,6 +1021,37 @@ Object {
         <div
           class="emotion-1"
         >
+          <select
+            data-testid="select-theme"
+            disabled=""
+            style="height: 26px; font-size: 16px;"
+          >
+            <option
+              value="Docs Theme"
+            >
+              Docs Theme
+            </option>
+            <option
+              value="Foundations Theme"
+            >
+              Foundations Theme
+            </option>
+            <option
+              value="Patterns Theme"
+            >
+              Patterns Theme
+            </option>
+            <option
+              value="Accessibility Theme"
+            >
+              Accessibility Theme
+            </option>
+            <option
+              value="Guide Theme"
+            >
+              Guide Theme
+            </option>
+          </select>
           <button
             class="emotion-2"
             data-testid="button"
@@ -1316,6 +1347,37 @@ Object {
       <div
         class="emotion-1"
       >
+        <select
+          data-testid="select-theme"
+          disabled=""
+          style="height: 26px; font-size: 16px;"
+        >
+          <option
+            value="Docs Theme"
+          >
+            Docs Theme
+          </option>
+          <option
+            value="Foundations Theme"
+          >
+            Foundations Theme
+          </option>
+          <option
+            value="Patterns Theme"
+          >
+            Patterns Theme
+          </option>
+          <option
+            value="Accessibility Theme"
+          >
+            Accessibility Theme
+          </option>
+          <option
+            value="Guide Theme"
+          >
+            Guide Theme
+          </option>
+        </select>
         <button
           class="emotion-2"
           data-testid="button"
@@ -1746,6 +1808,36 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
     <div
       class="emotion-1"
     >
+      <select
+        data-testid="select-theme"
+        style="height: 26px; font-size: 16px;"
+      >
+        <option
+          value="Docs Theme"
+        >
+          Docs Theme
+        </option>
+        <option
+          value="Foundations Theme"
+        >
+          Foundations Theme
+        </option>
+        <option
+          value="Patterns Theme"
+        >
+          Patterns Theme
+        </option>
+        <option
+          value="Accessibility Theme"
+        >
+          Accessibility Theme
+        </option>
+        <option
+          value="Guide Theme"
+        >
+          Guide Theme
+        </option>
+      </select>
       <button
         class="emotion-2"
         data-testid="button"
