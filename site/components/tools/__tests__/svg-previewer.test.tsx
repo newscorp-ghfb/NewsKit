@@ -88,6 +88,7 @@ describe('SvgPreviewer', () => {
     const selectThemeElement = (getByTestId(
       'select-theme-element',
     ) as unknown) as Element;
+
     fireEvent.change(selectThemeElement, {target: {value: 'Patterns Theme'}});
 
     expect(asFragment()).toMatchSnapshot();
