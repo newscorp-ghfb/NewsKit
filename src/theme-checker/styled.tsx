@@ -1,3 +1,4 @@
+import {Block} from '../block';
 import {Stack} from '../stack';
 import {getColorCssFromTheme, getSpacingCssFromTheme, styled} from '../utils';
 
@@ -6,7 +7,6 @@ export const Container = styled.div`
 `;
 export const ContainerWithFixedWidth = styled.div`
   width: 360px;
-  display: block;
   ${getSpacingCssFromTheme('margin', 'space030')};
 `;
 
@@ -22,10 +22,6 @@ export const ContainerWithBorder = styled.div`
 export const InverseContainer = styled.div`
   ${getColorCssFromTheme('backgroundColor', 'inkContrast')};
   ${getColorCssFromTheme('color', 'inkInverse')};
-`;
-export const StyledStack = styled(Stack)`
-  ${getSpacingCssFromTheme('marginTop', {xs: 'space040', md: 'space050'})};
-  ${getSpacingCssFromTheme('marginBottom', {xs: 'space040', md: 'space070'})};
 `;
 
 export const ModalWrapper = styled.div`
@@ -51,4 +47,18 @@ export const DrawerContainer = styled.div`
   width: 80vw;
   height: 80vh;
   overflow: hidden;
+`;
+
+export const StyledStack = styled(Stack)`
+  ${getSpacingCssFromTheme('marginTop', {xs: 'space040', md: 'space050'})};
+  ${getSpacingCssFromTheme('marginBottom', {xs: 'space040', md: 'space070'})};
+`;
+
+export const StyledDiv = styled.div`
+  width: 100%;
+  display: block;
+`;
+
+export const StyledBlock = styled(Block)`
+  width: 500px;
 `;

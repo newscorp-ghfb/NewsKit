@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import {states} from '../checkbox/__tests__/helpers';
 import {FormInputState} from '../form/types';
@@ -11,18 +11,24 @@ import {
   DrawerContainer,
   InverseContainer,
   ModalWrapper,
+  StyledBlock,
 } from './styled';
 import {Tag} from '../tag';
 import {LinkInline, LinkStandalone} from '../link';
 import {IconButton} from '../icon-button';
 import {Button, ButtonSize} from '../button';
 import {
+  IconFilledAccountBalance,
+  IconFilledError,
   IconFilledFacebook,
-  IconFilledStarOutline,
+  IconFilledFigma,
+  IconFilledInfo,
+  IconFilledMood,
+  IconFilledPause,
   IconFilledTwitter,
   IconFilledWhatsApp,
 } from '../icons';
-import {Stack} from '../stack';
+import {Flow, Stack} from '../stack';
 import {AssistiveText} from '../assistive-text';
 import {Banner} from '../banner';
 import {getSSRId, MQ} from '../utils';
@@ -40,6 +46,7 @@ import {EmailInput} from '../email-input';
 import {Fieldset} from '../fieldset';
 import {Checkbox} from '../checkbox';
 import {Flag} from '../flag';
+import {Image} from '../image';
 import {
   FormInput,
   FormInputAssistiveText,
@@ -145,7 +152,7 @@ const DrawerContent = () => (
 const useActiveState = (
   initial = false,
 ): [boolean, () => void, () => void, () => void] => {
-  const [isActive, setIsActive] = React.useState(initial);
+  const [isActive, setIsActive] = useState(initial);
 
   /* istanbul ignore next */ const open = () => setIsActive(true);
   /* istanbul ignore next */ const close = () => setIsActive(false);
@@ -204,21 +211,24 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Banner',
     component: ({stylePreset}) => (
-      <Banner
-        title="lorem ipsum"
-        aria-label={`Banner ${stylePreset}`}
-        overrides={{stylePreset}}
-        key={getSSRId()}
-        icon={
-          <IconFilledStarOutline
-            overrides={{
-              size: 'iconSize020',
-            }}
-          />
-        }
-      >
-        {loremIpsum[0]}
-      </Banner>
+      <Stack spaceInline="space020">
+        <TextBlock typographyPreset="utilityLabel010" stylePreset="inkContrast">
+          {stylePreset}
+        </TextBlock>
+        <Banner
+          icon={
+            <IconFilledInfo
+              overrides={{
+                size: 'iconSize020',
+                stylePreset: 'inkInverse',
+              }}
+            />
+          }
+          overrides={{stylePreset}}
+        >
+          {loremIpsum[0]}
+        </Banner>
+      </Stack>
     ),
   },
   {
@@ -230,9 +240,16 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Button',
     component: ({stylePreset}) => (
-      <Button overrides={{stylePreset}} key={getSSRId()}>
-        Button
-      </Button>
+      <Stack spaceInline="space020">
+        <TextBlock typographyPreset="utilityLabel010" stylePreset="inkContrast">
+          {stylePreset}
+        </TextBlock>
+        <StyledBlock spaceStack="space020">
+          <Button key={getSSRId()} overrides={{stylePreset}}>
+            Button
+          </Button>
+        </StyledBlock>
+      </Stack>
     ),
   },
   {
@@ -255,16 +272,26 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Caption',
     component: () => (
-      <>
-        <ContainerWithBorder>
-          <Caption>Caption component with only caption text</Caption>
-        </ContainerWithBorder>
-        <ContainerWithBorder>
+      <Stack flow={Flow.HorizontalTop} spaceInline="space020">
+        <Stack spaceInline="space020">
+          <Image
+            src="/placeholder-3x2.png"
+            alt="Example Image"
+            overrides={{width: '300px', height: '200px'}}
+          />
+          <Caption creditText="Credit text">Image with Caption</Caption>
+        </Stack>
+        <Stack spaceInline="space020">
+          <Image
+            src="/placeholder-3x2.png"
+            alt="Example Image"
+            overrides={{width: '300px', height: '200px'}}
+          />
           <CaptionInset creditText="Credit text">
-            CaptionInset with both caption and credit text
+            Image with Caption Inset
           </CaptionInset>
-        </ContainerWithBorder>
-      </>
+        </Stack>
+      </Stack>
     ),
   },
   {
@@ -288,7 +315,10 @@ export const scenarios: Array<ComponentData> = [
                 <Headline>dolor sit amet consectetur adipiscing</Headline>
               </Block>
               <Block spaceStack="space010">
-                <TextBlock typographyPreset="editorialParagraph010">
+                <TextBlock
+                  typographyPreset="editorialParagraph010"
+                  stylePreset="inkContrast"
+                >
                   {loremIpsum[1].slice(0, 144)}
                 </TextBlock>
               </Block>
@@ -470,9 +500,16 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Flag',
     component: ({stylePreset}) => (
-      <Flag overrides={{stylePreset}} key={getSSRId()}>
-        Flag
-      </Flag>
+      <Stack spaceInline="space020">
+        <TextBlock typographyPreset="utilityLabel010" stylePreset="inkContrast">
+          {stylePreset}
+        </TextBlock>
+        <StyledBlock spaceStack="space020">
+          <Flag overrides={{stylePreset}} key={getSSRId()}>
+            Flag
+          </Flag>
+        </StyledBlock>
+      </Stack>
     ),
   },
   {
@@ -495,7 +532,7 @@ export const scenarios: Array<ComponentData> = [
             size={'small' as TextFieldSize}
             startEnhancer={
               <>
-                <IconFilledFacebook overrides={{size: '20px'}} />
+                <IconFilledAccountBalance overrides={{size: '20px'}} />
               </>
             }
           />
@@ -509,12 +546,22 @@ export const scenarios: Array<ComponentData> = [
     component: () => <Headline kickerText="Kicker">Headline text</Headline>,
   },
   {
-    name: 'IconButton',
+    name: 'Icon Button',
     component: ({stylePreset}) => (
-      <IconButton aria-label="star" overrides={{stylePreset}} key={getSSRId()}>
-        {' '}
-        <IconFilledStarOutline />{' '}
-      </IconButton>
+      <Stack spaceInline="space020">
+        <TextBlock typographyPreset="utilityLabel010" stylePreset="inkContrast">
+          {stylePreset}
+        </TextBlock>
+        <StyledBlock spaceStack="space020">
+          <IconButton
+            aria-label="Email icon"
+            overrides={{stylePreset}}
+            key={getSSRId()}
+          >
+            <IconFilledPause />
+          </IconButton>
+        </StyledBlock>
+      </Stack>
     ),
   },
   {
@@ -523,7 +570,7 @@ export const scenarios: Array<ComponentData> = [
       React.createElement(() => {
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const [isActive, open, close, toggle] = useActiveState();
-        const [placement, setPlacement] = React.useState('left');
+        const [placement, setPlacement] = useState('left');
 
         /* istanbul ignore next */
         const onChangeValue = (ev: React.ChangeEvent<HTMLDivElement>) =>
@@ -624,21 +671,26 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Inline Message',
     component: ({stylePreset}) => (
-      <InlineMessage
-        title="lorem ipsum"
-        aria-label={`${stylePreset}`}
-        icon={
-          <IconFilledStarOutline
-            overrides={{
-              size: 'iconSize020',
-            }}
-          />
-        }
-        overrides={{stylePreset}}
-        key={getSSRId()}
-      >
-        {loremIpsum[0].slice(0, 55)}
-      </InlineMessage>
+      <Stack spaceInline="space020">
+        <TextBlock typographyPreset="utilityLabel010" stylePreset="inkContrast">
+          {stylePreset}
+        </TextBlock>
+        <InlineMessage
+          title="lorem ipsum"
+          aria-label={`${stylePreset}`}
+          icon={
+            <IconFilledInfo
+              overrides={{
+                size: 'iconSize020',
+              }}
+            />
+          }
+          overrides={{stylePreset}}
+          key={getSSRId()}
+        >
+          {loremIpsum[0].slice(0, 55)}
+        </InlineMessage>
+      </Stack>
     ),
   },
   {
@@ -846,13 +898,29 @@ export const scenarios: Array<ComponentData> = [
   },
   {
     name: 'Title Bar',
-    component: () => <TitleBar actionItem={link}>Title bar with link</TitleBar>,
+    component: () => (
+      <Stack
+        spaceInline="space040"
+        spaceStack="space100"
+        flow="horizontal-top"
+        wrap
+      >
+        <TitleBar>Title bar default state</TitleBar>
+        <TitleBar actionItem={link}>Title bar with link</TitleBar>
+        <TitleBar actionItem={() => <Button>Default button</Button>}>
+          Title bar with button
+        </TitleBar>
+        <TitleBar>
+          Title bar with Icon <IconFilledFigma height="30px" />
+        </TitleBar>
+      </Stack>
+    ),
   },
   {
     name: 'Toast',
     component: ({stylePreset}) => (
       <Toast
-        overrides={{stylePreset}}
+        overrides={{stylePreset, maxWidth: '100%'}}
         key={getSSRId()}
         title="lorem ipsum"
         actions={() => (
@@ -864,7 +932,7 @@ export const scenarios: Array<ComponentData> = [
           </Button>
         )}
         icon={
-          <IconFilledStarOutline
+          <IconFilledError
             overrides={{
               size: 'iconSize020',
             }}
@@ -878,29 +946,51 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'UnorderedList',
     component: () => (
-      <UnorderedList listItemMarker={IconFilledStarOutline}>
-        {listData}
-      </UnorderedList>
+      <Stack spaceInline="space100" flow="horizontal-top">
+        <UnorderedList>{listData}</UnorderedList>
+        <UnorderedList listItemMarker={IconFilledMood}>
+          {listData}
+        </UnorderedList>
+      </Stack>
     ),
   },
   {
     name: 'Volume Control',
-    component: () => (
-      <Stack spaceInline="space040" spaceStack="space100" flow="horizontal-top">
-        <ContainerWithFixedWidth>
-          <VolumeControl
-            volume={1}
-            onChange={/* istanbul ignore next */ () => {}}
-          />
-        </ContainerWithFixedWidth>
-        <ContainerWithFixedHeight>
-          <VolumeControl
-            vertical
-            volume={0.5}
-            onChange={/* istanbul ignore next */ () => {}}
-          />
-        </ContainerWithFixedHeight>
-      </Stack>
-    ),
+    component: () =>
+      React.createElement(() => {
+        const [stateVolume, setVolume] = useState(0);
+        const [stateVerticalVolume, setVerticalVolume] = useState(0);
+        return (
+          <Stack
+            spaceInline="space040"
+            spaceStack="space100"
+            flow="horizontal-top"
+          >
+            <ContainerWithFixedWidth>
+              <VolumeControl
+                volume={stateVolume}
+                onChange={
+                  /* istanbul ignore next */ newValues => {
+                    /* istanbul ignore next */
+                    setVolume(newValues);
+                  }
+                }
+              />
+            </ContainerWithFixedWidth>
+            <ContainerWithFixedHeight>
+              <VolumeControl
+                vertical
+                volume={stateVerticalVolume}
+                onChange={
+                  /* istanbul ignore next */ newValues => {
+                    /* istanbul ignore next */
+                    setVerticalVolume(newValues);
+                  }
+                }
+              />
+            </ContainerWithFixedHeight>
+          </Stack>
+        );
+      }),
   },
 ];

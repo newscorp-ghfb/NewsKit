@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Stack} from '../stack';
+import {Flow, Stack} from '../stack';
 import {TextBlock} from '../text-block';
 import {MQ} from '../utils';
 import {toKebabCase} from '../utils/to-kabab-case';
@@ -40,10 +40,10 @@ const StylePresetsLoader = ({
   }, [name]);
   return (
     <Stack
-      spaceInline="space030"
+      spaceInline="space050"
       spaceStack="space050"
-      flow="horizontal-top"
-      wrap
+      wrap="wrap"
+      flow={Flow.HorizontalTop}
     >
       {stylePresets.map(stylePreset => children({stylePreset}))}
     </Stack>
@@ -58,7 +58,7 @@ const ThemeCheckerScenario = ({
   name: string;
 }) => (
   <StyledStack spaceInline="space030">
-    <TextBlock typographyPreset="utilityBody030" stylePreset="inkSubtle">
+    <TextBlock typographyPreset="utilityBody030" stylePreset="inkContrast">
       {name}
     </TextBlock>
     {stylePresetVariations.includes(name) ? (

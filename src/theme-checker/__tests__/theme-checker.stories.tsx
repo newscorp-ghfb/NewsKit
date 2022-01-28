@@ -29,7 +29,7 @@ const MainContainer = styled.div`
 `;
 
 const Container = styled.div`
-  ${getColorCssFromTheme('backgroundColor', 'inkInverse')};
+  ${getColorCssFromTheme('backgroundColor', 'interface010')};
   ${getSpacingCssFromTheme('padding', 'space030')};
 `;
 interface ThemeSelectorProps {
