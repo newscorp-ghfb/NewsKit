@@ -39,6 +39,13 @@ exports[`InteractiveDemoSection renders section as expected 1`] = `
   background-color: transparent;
 }
 
+.emotion-3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 @media screen and (max-width: 767px) {
   .emotion-4 {
     font-family: "Poppins",sans-serif;
