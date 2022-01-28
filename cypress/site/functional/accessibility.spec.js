@@ -24,12 +24,11 @@ describe('Page accessibility', () => {
         });
       } else if (
         path === `/components/tabs` ||
-        `/components/banner` ||
+        path === `/components/banner` ||
         path === `/foundations/presets/typography-presets`
       ) {
         cy.checkA11y(null, {
           rules: {
-            'scrollable-region-focusable': {enabled: false},
             'color-contrast': {enabled: false},
           },
         });
