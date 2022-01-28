@@ -264,7 +264,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   text-decoration: none;
   width: 24px;
   height: 24px;
-  padding: 4px 8px;
+  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -818,7 +818,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   text-decoration: none;
   width: 24px;
   height: 24px;
-  padding: 4px 8px;
+  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;

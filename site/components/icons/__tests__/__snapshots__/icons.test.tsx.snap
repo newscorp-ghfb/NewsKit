@@ -68,7 +68,7 @@ exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
   text-decoration: none;
   width: 32px;
   height: 32px;
-  padding: 4px 8px;
+  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
