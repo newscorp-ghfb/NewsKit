@@ -1,17 +1,8 @@
-import React, {Dispatch, SetStateAction, useState} from 'react';
+import React, {useState} from 'react';
 import {Button, getColorCssFromTheme, styled, Theme} from 'newskit';
 import {themeList, ThemeNames} from '../colors-theme-list';
+import {ThemeControlsProps} from './types';
 
-interface ThemeControlsProps {
-  hexesObj: object;
-  getThemeFromList: (themeName: ThemeNames, version: 'light' | 'dark') => Theme;
-  setIds: (figmaSvg: string) => string;
-  svgCodeGroup?: [string];
-  setSvgCodeGroup: Dispatch<SetStateAction<[string] | undefined>>;
-  baseSvgCodeGroup?: [{figmaSvg: string; name: string}];
-  currentThemeName: ThemeNames;
-  setCurrentThemeName: Dispatch<SetStateAction<ThemeNames>>;
-}
 export const ThemeControls = ({
   hexesObj,
   getThemeFromList,
@@ -23,6 +14,7 @@ export const ThemeControls = ({
   setCurrentThemeName,
 }: ThemeControlsProps) => {
   const [isLightTheme, setIsLightTheme] = useState<boolean>(true);
+
   const switchThemeColors = (compiledTheme: Theme) => {
     if (baseSvgCodeGroup && baseSvgCodeGroup.length > 0) {
       const newSvgCodeGroup: Array<string> = [];
@@ -55,6 +47,7 @@ export const ThemeControls = ({
       setSvgCodeGroup(newSvgCodeGroup);
     }
   };
+
   const handleSwitchThemeButtonClick = () => {
     const themeToSwitchTo = getThemeFromList(
       currentThemeName,
@@ -65,6 +58,7 @@ export const ThemeControls = ({
 
     return setIsLightTheme(!isLightTheme);
   };
+
   const handleThemeSelection = (
     event: React.ChangeEvent<HTMLSelectElement>,
   ) => {
@@ -76,6 +70,7 @@ export const ThemeControls = ({
     // Used later for other features such as the SwitchThemeButton
     setCurrentThemeName(newSelectedThemeName);
   };
+
   const SwitchThemeButton = () => {
     const StyledSwitchThemeButton = styled(Button)`
       margin: 50px 20px 30px 20px;
