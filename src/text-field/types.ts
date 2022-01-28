@@ -29,7 +29,6 @@ export interface FormInputTextFieldProps
 
 export interface TextFieldProps extends FormInputTextFieldProps {
   rules?: FormValidationRules;
-  isRequired?: boolean;
   name?: string;
 }
 
