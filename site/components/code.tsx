@@ -9,6 +9,7 @@ import {
 } from 'newskit';
 import {generateCodeHighlighterTheme} from './code-highlighter-theme';
 import {toKebabCase} from '../utils/to-kabab-case';
+import {useTabIndexWhenScroll} from './hooks';
 
 interface CodeProps extends HTMLAttributes<HTMLDivElement> {
   children: string;
@@ -31,15 +32,16 @@ const StyledDiv = styled.div`
   ${getBorderCssFromTheme('border-radius', 'borderRadiusRounded020')};
   ${getColorCssFromTheme('backgroundColor', 'interface020')};
 `;
-export const Code: React.FC<CodeProps> = ({
-  language = 'jsx',
-  children,
-  tabIndex,
-}) => {
+
+export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => {
+  const containerRef = React.useRef<HTMLDivElement>(null);
+  const tabIndex = useTabIndexWhenScroll(containerRef, {firstChild: true});
+
   const {colors} = useTheme();
   const highlighterTheme = generateCodeHighlighterTheme(colors);
+
   return (
-    <StyledDiv>
+    <StyledDiv ref={containerRef}>
       <SyntaxHighlighter
         data-testid="sample-code"
         codeTagProps={{tabIndex}}
@@ -60,11 +62,7 @@ export const Code: React.FC<CodeProps> = ({
   );
 };
 
-export const CodeFromFile: React.FC<CodeFromFileProps> = ({
-  language,
-  path,
-  tabIndex,
-}) => {
+export const CodeFromFile: React.FC<CodeFromFileProps> = ({language, path}) => {
   const [source, setSource] = useState('');
 
   useEffect(() => {
@@ -79,11 +77,7 @@ export const CodeFromFile: React.FC<CodeFromFileProps> = ({
     })();
   }, [path]);
 
-  return (
-    <Code language={language} tabIndex={tabIndex}>
-      {source}
-    </Code>
-  );
+  return <Code language={language}>{source}</Code>;
 };
 
 export const CodeFromDefaultPresets: React.FC<CodeFromDefaultPresetsProps> = ({
