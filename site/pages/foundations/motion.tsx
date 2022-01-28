@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import {newskitLightTheme, InlineMessage, P, UnorderedList} from 'newskit';
-
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {
   ContentSection,
@@ -42,7 +41,6 @@ const featureCardOverrides = {
     typographyPreset: 'editorialParagraph020',
   },
 };
-const {title, description} = featureCardOverrides;
 
 const PRINCIPLE_CARDS = [
   {
@@ -54,10 +52,7 @@ const PRINCIPLE_CARDS = [
     description:
       'Motion should help draw attention to important details and emphasise key points in a user journey without creating unnecessary distractions',
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardOverrides,
   },
   {
     media: {
@@ -67,10 +62,7 @@ const PRINCIPLE_CARDS = [
     title: 'Seamless',
     description: `Motion should add to a brand's character and the way it expresses itself to users`,
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardOverrides,
   },
   {
     media: {
@@ -80,10 +72,7 @@ const PRINCIPLE_CARDS = [
     title: 'Instinctive',
     description: `Motion should mimic the feel of real-world physics, to give motion a natural and discernible feeling`,
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardOverrides,
   },
 ];
 
@@ -159,8 +148,7 @@ export default (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'foundations/motion/hero',
       },
-      introduction: `Motion is used to create movement and narrative within a product. Animated interface elements don't just attract attention, they enhance user experience and help guide user flow. They reveal the functionality and process of a user interface by communicating where to focus and what to do next..
-`,
+      introduction: `Motion is used to create movement and narrative within a product. Animated interface elements don't just attract attention, they enhance user experience and help guide user flow. They reveal the functionality and process of a user interface by communicating where to focus and what to do next.`,
     }}
   >
     <ComponentPageCell>
@@ -191,7 +179,7 @@ export default (layoutProps: LayoutProps) => (
             title="Overrides"
             aria-label="Default Motion in the foundations can be overridden."
           >
-            <b>Default Motion in the foundations can be overridden.</b>
+            <b>Default Motion in the foundations can be overridden.</b>{' '}
             <Link href="/foundations/theming/creating-a-theme">
               Learn more about overriding default Motion in the theme.
             </Link>
@@ -219,8 +207,7 @@ export default (layoutProps: LayoutProps) => (
           toc="Duration"
           id="duration"
           headline="Duration"
-          description="Duration
-          Determining which timing to use is a matter of context, including the complexity of the action and the distance over which the animation occurs."
+          description="Determining which timing to use is a matter of context, including the complexity of the action and the distance over which the animation occurs."
         >
           <ReduceMotionMessage />
         </ContentPrimary>
@@ -265,8 +252,7 @@ export default (layoutProps: LayoutProps) => (
             These should use the{' '}
             <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function">
               animation-timing-function
-            </Link>{' '}
-            css property the foundations.
+            </Link>
           </InlineMessage>
         </ContentSecondary>
       </ContentSection>

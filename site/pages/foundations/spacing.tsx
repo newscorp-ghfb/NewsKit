@@ -180,7 +180,6 @@ const featureCardoverrides = {
     typographyPreset: 'editorialParagraph020',
   },
 };
-const {title, description} = featureCardoverrides;
 
 const PRINCIPLE_CARDS = [
   {
@@ -192,10 +191,7 @@ const PRINCIPLE_CARDS = [
     description:
       'Use spacing to visually communicate elements that are connected',
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardoverrides,
   },
   {
     media: {
@@ -206,10 +202,7 @@ const PRINCIPLE_CARDS = [
     description:
       'Use appropriate hierarchy to lead the user to the most important information',
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardoverrides,
   },
   {
     media: {
@@ -220,10 +213,7 @@ const PRINCIPLE_CARDS = [
     description:
       'Arrange elements and white space so that no part of the design overpowers the others',
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardoverrides,
   },
 ];
 

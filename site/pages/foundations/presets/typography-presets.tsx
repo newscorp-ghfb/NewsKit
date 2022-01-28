@@ -123,7 +123,7 @@ export default (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Typography',
       description:
-        'A collection of foundational font design tokens combined into a preset to define reusable typography styles for specific text elements..',
+        'A collection of foundational font design tokens combined into a preset to define reusable typography styles for specific text elements.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -132,7 +132,7 @@ export default (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/hero-typography-illustration',
       },
-      introduction: `A collection of foundational font design tokens combined into a preset to define reusable typography styles for specific text elements..`,
+      introduction: `A collection of foundational font design tokens combined into a preset to define reusable typography styles for specific text elements.`,
     }}
   >
     <ComponentPageCell>
