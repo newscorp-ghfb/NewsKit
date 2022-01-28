@@ -1,12 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {
-  Button,
-  getColorCssFromTheme,
-  getSSRId,
-  P,
-  styled,
-  Theme,
-} from 'newskit';
+import {getColorCssFromTheme, getSSRId, P} from 'newskit';
 import dompurify from 'dompurify';
 import {themeList, ThemeNames} from './colors-theme-list';
 import {
@@ -16,6 +9,7 @@ import {
   StyledSvgPreviewerContainer,
 } from './styled';
 import {DownloadControls} from './controls/download-controls';
+import {ThemeControls} from './controls/theme-controls';
 
 export const SvgPreviewer: React.FC = () => {
   const sanitizer = dompurify.sanitize;
@@ -25,7 +19,7 @@ export const SvgPreviewer: React.FC = () => {
     'Docs Theme',
   );
 
-  const [isLightTheme, setIsLightTheme] = useState<boolean>(true);
+  // const [isLightTheme, setIsLightTheme] = useState<boolean>(true);
 
   // SVG coming from Figma - used as a base for some mutations.
   const [baseSvgCodeGroup, setBaseSvgCodeGroup] = useState<
@@ -159,98 +153,19 @@ export const SvgPreviewer: React.FC = () => {
     /* eslint-disable-next-line react-hooks/exhaustive-deps */
   }, []);
 
-  const switchThemeColors = (compiledTheme: Theme) => {
-    if (baseSvgCodeGroup && baseSvgCodeGroup.length > 0) {
-      const newSvgCodeGroup: Array<string> = [];
-
-      baseSvgCodeGroup.forEach(svg => {
-        let svgCopy = svg.figmaSvg;
-        // Setting ids for "mask", "filter", and "clip" attributes
-        svgCopy = setIds(svgCopy);
-
-        Object.entries(hexesObj).forEach(hex => {
-          const docsThemeColorsObj = getColorCssFromTheme(
-            '',
-            hex[1],
-          )({theme: compiledTheme});
-
-          const themeColorValue = Object.values(
-            docsThemeColorsObj,
-          )[0] as string;
-
-          svgCopy = svgCopy?.replace(
-            new RegExp(hex[0], 'gim'),
-            themeColorValue,
-          );
-        });
-
-        newSvgCodeGroup.push(svgCopy);
-      });
-
-      // @ts-ignore
-      setSvgCodeGroup(newSvgCodeGroup);
-    }
-  };
-
-  const handleThemeSelection = (
-    event: React.ChangeEvent<HTMLSelectElement>,
-  ) => {
-    const newSelectedThemeName = event.target.value as ThemeNames;
-    const newSelectedTheme = getThemeFromList(newSelectedThemeName, 'light');
-
-    switchThemeColors(newSelectedTheme);
-    setIsLightTheme(true);
-    // Used later for other features such as the SwitchThemeButton
-    setCurrentThemeName(newSelectedThemeName);
-  };
-
-  const handleSwitchThemeButtonClick = () => {
-    const themeToSwitchTo = getThemeFromList(
-      currentThemeName,
-      isLightTheme ? 'dark' : 'light',
-    );
-
-    switchThemeColors(themeToSwitchTo);
-
-    return setIsLightTheme(!isLightTheme);
-  };
-
-  const SwitchThemeButton = () => {
-    const StyledSwitchThemeButton = styled(Button)`
-      margin: 50px 20px 30px 20px;
-    `;
-
-    return (
-      <StyledSwitchThemeButton
-        disabled={!svgCodeGroup}
-        onClick={handleSwitchThemeButtonClick}
-      >
-        SWITCH THEME: {isLightTheme ? 'LIGHT' : 'DARK'}
-      </StyledSwitchThemeButton>
-    );
-  };
-
   return (
     <StyledSvgPreviewerContainer>
       <StyledButtonsContainer>
-        <select
-          data-testid="select-theme-element"
-          onChange={handleThemeSelection}
-          disabled={!svgCodeGroup}
-          style={{height: '26px', fontSize: '16px'}}
-        >
-          {themeList.map(theme => (
-            <option
-              selected={theme.name === currentThemeName}
-              value={theme.name}
-            >
-              {theme.name}
-            </option>
-          ))}
-        </select>
-
-        <SwitchThemeButton />
-
+        <ThemeControls
+          setSvgCodeGroup={setSvgCodeGroup}
+          hexesObj={hexesObj}
+          baseSvgCodeGroup={baseSvgCodeGroup}
+          svgCodeGroup={svgCodeGroup}
+          getThemeFromList={getThemeFromList}
+          setIds={setIds}
+          currentThemeName={currentThemeName}
+          setCurrentThemeName={setCurrentThemeName}
+        />
         <DownloadControls
           hexesObj={hexesObj}
           baseSvgCodeGroup={baseSvgCodeGroup}
