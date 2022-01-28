@@ -54,6 +54,9 @@ export type TableRowValue =
 export type TableRow = Record<string, TableRowValue>;
 
 export interface TableProps {
+  columnsIcon?: {
+    [key: string]: React.ReactNode;
+  };
   columns: string[];
   rows: TableRow[];
 }

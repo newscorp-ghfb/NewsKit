@@ -440,6 +440,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   vertical-align: top;
   min-width: 64px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-31 {
