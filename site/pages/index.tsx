@@ -394,7 +394,6 @@ export default (layoutProps: LayoutProps) => {
           </Cell>
         </Explore>
       </DotsContainer>
-      <a href="/about">here we ho</a>
       <FindOutMore>
         <Grid xsRowGutter="space000">
           <SectionIntroduction
