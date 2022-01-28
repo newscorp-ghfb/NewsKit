@@ -18,7 +18,8 @@ export interface FormInputTextFieldProps
   overrides?: EnhancerOverrides & {
     stylePreset?: MQ<string>;
     spaceInset?: MQ<string>;
-    minHeight?: string;
+    minHeight?: MQ<string>;
+    width?: MQ<string>;
     typographyPreset?: MQ<string>;
     spaceStack?: MQ<string>;
     spaceInline?: MQ<string>;
