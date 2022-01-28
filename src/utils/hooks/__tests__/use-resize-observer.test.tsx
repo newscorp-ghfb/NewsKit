@@ -38,6 +38,8 @@ describe('useResizeObserver hook', () => {
     global.ResizeObserver = mockResizeObserver;
     // @ts-ignore
     global.ResizeObserverEntry = jest.fn();
+    // @ts-ignore
+    global.requestAnimationFrame = jest.fn(fn => fn());
   });
 
   beforeEach(() => {
