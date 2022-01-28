@@ -40,7 +40,7 @@ export type TabsIndicatorPositionType =
   | 'end'
   | 'none';
 export interface TabsProps {
-  size?: TabSize | TabSizeType;
+  size?: TabSizeType;
   children: React.ReactElement<TabProps>[];
   divider?: boolean;
   vertical?: boolean;

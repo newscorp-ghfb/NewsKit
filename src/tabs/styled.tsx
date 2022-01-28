@@ -12,15 +12,16 @@ import {
   DistributionWrapperProps,
   TabsBarProps,
   TabInternalProps,
-  TabsIndicatorPosition,
   TabAlign,
+  TabsIndicatorPositionType,
+  TabsDistributionType,
 } from './types';
 import {Stack} from '../stack';
 import {TextBlock, TextBlockProps} from '../text-block';
 import {Button, ButtonProps} from '../button';
 
 const getFlexFromTabsDistribution = (
-  distribution: TabsDistribution,
+  distribution: TabsDistributionType,
   vertical: boolean,
 ) => {
   switch (distribution) {
@@ -35,14 +36,14 @@ const getFlexFromTabsDistribution = (
 };
 
 const alignmentPosition = (
-  indicatorPosition?: TabsIndicatorPosition,
+  indicatorPosition?: TabsIndicatorPositionType,
   vertical?: boolean,
 ) => {
-  if (indicatorPosition === TabsIndicatorPosition.None) {
+  if (indicatorPosition === 'none') {
     return `display: none`;
   }
 
-  if (indicatorPosition === TabsIndicatorPosition.Start) {
+  if (indicatorPosition === 'start') {
     return `
       top: 0px;
       left: 0px;
@@ -97,7 +98,7 @@ export const StyledDistributionWrapper = styled.div<DistributionWrapperProps>`
   align-items: stretch;
   width: ${({vertical}) => (vertical ? '100%' : '')};
   ${({distribution, vertical}) =>
-    getFlexFromTabsDistribution(distribution as TabsDistribution, vertical)};
+    getFlexFromTabsDistribution(distribution, vertical)};
 
   ${({vertical, last}) =>
     getResponsiveSpace(
@@ -127,7 +128,7 @@ export const StyledTabsBarIndicator = styled.div<
   position: absolute;
   z-index: 2;
   ${({indicatorPosition, vertical}) =>
-    alignmentPosition(indicatorPosition as TabsIndicatorPosition, vertical)};
+    alignmentPosition(indicatorPosition, vertical)};
 `;
 
 export const StyledTabsBarTrack = styled.div<
@@ -150,7 +151,7 @@ export const StyledTabsBarTrack = styled.div<
     )}
 
   ${({indicatorPosition, vertical}) =>
-    alignmentPosition(indicatorPosition as TabsIndicatorPosition, vertical)};
+    alignmentPosition(indicatorPosition, vertical)};
 `;
 
 const tabFlexAlign = {
