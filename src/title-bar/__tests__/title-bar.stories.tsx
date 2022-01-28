@@ -3,6 +3,8 @@ import {createTheme, ThemeProvider} from '../../theme';
 import {TitleBar} from '..';
 import {Button} from '../../button';
 import {Link} from '../../link';
+import {Divider} from '../../divider';
+import {Stack} from '../../stack';
 
 import {IconFilledFigma} from '../../icons/filled/custom/icon-filled-figma';
 
@@ -84,6 +86,16 @@ export const StoryTitleBar = () => (
     <TitleBar hideActionItemOn={{sm: true, md: true}} actionItem={button}>
       Title bar with action hidden in sm and md
     </TitleBar>
+    <br />
+    <TitleBar actionItem={button}>
+      <Stack flow="horizontal-center">
+        <span style={{minWidth: 'fit-content'}}>
+          Title bar with divider and button
+        </span>
+        <Divider />
+      </Stack>
+    </TitleBar>
+    <br />
   </>
 );
 StoryTitleBar.storyName = 'title-bar';
