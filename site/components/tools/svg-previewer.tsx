@@ -19,8 +19,6 @@ export const SvgPreviewer: React.FC = () => {
     'Docs Theme',
   );
 
-  // const [isLightTheme, setIsLightTheme] = useState<boolean>(true);
-
   // SVG coming from Figma - used as a base for some mutations.
   const [baseSvgCodeGroup, setBaseSvgCodeGroup] = useState<
     [{figmaSvg: string; name: string}]
@@ -31,8 +29,6 @@ export const SvgPreviewer: React.FC = () => {
 
   // Hexes obj sent by figma, used for switch theme logic.
   const [hexesObj, setHexesObj] = useState<Object>({});
-
-  // FUNCTIONS FOR DISPLAYING SVG ** START **
 
   const setIds = (figmaSvg: string) => {
     const regexList = [/mask\d{1,}/g, /filter\d{1,}/g, /clip\d{1,}/g];
@@ -166,6 +162,7 @@ export const SvgPreviewer: React.FC = () => {
           currentThemeName={currentThemeName}
           setCurrentThemeName={setCurrentThemeName}
         />
+
         <DownloadControls
           hexesObj={hexesObj}
           baseSvgCodeGroup={baseSvgCodeGroup}

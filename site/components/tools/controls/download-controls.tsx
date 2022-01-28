@@ -4,12 +4,7 @@ import {saveAs} from 'file-saver';
 import JSZip from 'jszip';
 import {Button} from 'newskit';
 import {StyledSingleSVGDownloadButton} from '../styled';
-
-interface DownloadControlsProps {
-  hexesObj: object;
-  baseSvgCodeGroup?: [{figmaSvg: string; name: string}];
-  svgCodeGroup?: [string];
-}
+import {DownloadControlsProps} from './types';
 
 // ** FUNCTIONS FOR DOWNLOAD HANDLING  ** START **
 export const DownloadControls = ({
