@@ -55,7 +55,6 @@ const featureCardoverrides = {
     typographyPreset: 'editorialParagraph020',
   },
 };
-const {title, description} = featureCardoverrides;
 
 const PRINCIPLE_CARDS = [
   {
@@ -67,10 +66,7 @@ const PRINCIPLE_CARDS = [
     description:
       'Colour is applied to a UI element based on it’s context, not just because it’s visually pleasing',
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardoverrides,
   },
   {
     media: {
@@ -81,10 +77,7 @@ const PRINCIPLE_CARDS = [
     description:
       'Brand colours are added to key moments in the user journey to express brand identity and style',
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardoverrides,
   },
   {
     media: {
@@ -95,10 +88,7 @@ const PRINCIPLE_CARDS = [
     description:
       'Important UI elements like text and icons are legible and meet accessibility contrast standards',
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardoverrides,
   },
 ];
 
@@ -307,7 +297,7 @@ const coloursTable = [
           'interactiveVisited010',
         ]),
         description:
-          '‘Inverse‘ interactive colours are used to for situations where other interactive colours contrast between the background cannot be achieved.',
+          '‘Common’ interactive colours are used across the system and are universal in their application.',
       },
     ],
   },
