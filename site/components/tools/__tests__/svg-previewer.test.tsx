@@ -7,7 +7,7 @@ import {Hexes, SVGString} from './figma-svg-mock-data';
 
 jest.mock('file-saver', () => ({saveAs: jest.fn()}));
 // @ts-ignore
-global.Blob = function (content: any, options: any) {
+global.Blob = function blob(content: any, options: any) {
   return {content, options};
 };
 
