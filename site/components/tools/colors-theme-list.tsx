@@ -15,6 +15,7 @@ import {
 const docsThemeLightColors = {
   colors: docsThemeLight.colors,
 };
+
 const docsThemeDarkColors = {
   colors: docsThemeDark.colors,
 };
@@ -42,6 +43,7 @@ const accessibilityThemeLightColors = {
 const accessibilityThemeDarkColors = {
   colors: accessibilityThemeDark.colors,
 };
+
 const guidesThemeLightColors = {
   colors: guidesThemeLight.colors,
 };
@@ -49,9 +51,11 @@ const guidesThemeLightColors = {
 const guidesThemeDarkColors = {
   colors: guidesThemeDark.colors,
 };
+
 const compiledDocsThemeLightColors = compileTheme(
   docsThemeLightColors as UncompiledTheme,
 );
+
 const compiledDocsThemeDarkColors = compileTheme(
   docsThemeDarkColors as UncompiledTheme,
 );
@@ -63,6 +67,7 @@ const compiledFoundationsThemeLight = compileTheme(
 const compiledFoundationsThemeDark = compileTheme(
   foundationsThemeDarkColors as UncompiledTheme,
 );
+
 const compiledPatternsThemeLightColors = compileTheme(
   patternsThemeLightColors as UncompiledTheme,
 );
@@ -82,6 +87,7 @@ const compiledAccessibilityThemeDarkColors = compileTheme(
 const compiledGuideThemeLightColors = compileTheme(
   guidesThemeLightColors as UncompiledTheme,
 );
+
 const compiledGuideThemeDarkColors = compileTheme(
   guidesThemeDarkColors as UncompiledTheme,
 );
@@ -89,27 +95,34 @@ const compiledGuideThemeDarkColors = compileTheme(
 export const themeList = [
   {
     name: 'Docs Theme',
-    default: compiledDocsThemeLightColors,
+    defaultLight: compiledDocsThemeLightColors,
     dark: compiledDocsThemeDarkColors,
   },
   {
     name: 'Foundations Theme',
-    default: compiledFoundationsThemeLight,
+    defaultLight: compiledFoundationsThemeLight,
     dark: compiledFoundationsThemeDark,
   },
   {
     name: 'Patterns Theme',
-    default: compiledPatternsThemeLightColors,
+    defaultLight: compiledPatternsThemeLightColors,
     dark: compiledPatternsThemeDarkColors,
   },
   {
     name: 'Accessibility Theme',
-    default: compiledAccessibilityThemeLightColors,
+    defaultLight: compiledAccessibilityThemeLightColors,
     dark: compiledAccessibilityThemeDarkColors,
   },
   {
     name: 'Guide Theme',
-    default: compiledGuideThemeLightColors,
+    defaultLight: compiledGuideThemeLightColors,
     dark: compiledGuideThemeDarkColors,
   },
 ];
+
+export type ThemeNames =
+  | 'Docs Theme'
+  | 'Foundations Theme'
+  | 'Patterns Theme'
+  | 'Accessibility Theme'
+  | 'Guide Theme';
