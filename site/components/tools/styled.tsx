@@ -1,4 +1,4 @@
-import {Button, styled} from 'newskit*';
+import {Button, styled} from 'newskit';
 
 export const StyledSingleSVGDownloadButton = styled(Button)`
   margin-right: 20px;

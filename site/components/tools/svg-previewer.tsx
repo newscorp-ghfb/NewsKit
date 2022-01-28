@@ -457,6 +457,7 @@ export const SvgPreviewer: React.FC = () => {
     <StyledSvgPreviewerContainer>
       <StyledButtonsContainer>
         <select
+          data-testid="select-theme"
           onChange={handleThemeSelection}
           disabled={!svgCodeGroup}
           style={{height: '26px', fontSize: '16px'}}
