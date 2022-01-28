@@ -6,7 +6,6 @@ import {Button} from 'newskit';
 import {StyledSingleSVGDownloadButton} from '../styled';
 import {DownloadControlsProps} from './types';
 
-// ** FUNCTIONS FOR DOWNLOAD HANDLING  ** START **
 export const DownloadControls = ({
   hexesObj,
   baseSvgCodeGroup,
@@ -224,7 +223,6 @@ export const DownloadControls = ({
     buildAndDownloadSingleSvgFile();
   };
 
-  // ** FUNCTIONS FOR DOWNLOAD HANDLING  ** END **
   return (
     <>
       <select
