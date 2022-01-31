@@ -95,10 +95,7 @@ export default ({path, ...props}: LayoutProps) => (
 
       <ContentSection sectionName="feedback">
         <ContentPrimary headline="Feedback">
-          <Image
-            src="static/about/contribute/contribute-banner-feedback.svg"
-            alt="Feedback Media"
-          />
+          <Image src="static/about/contribute/contribute-banner-feedback.svg" />
         </ContentPrimary>
 
         <ContentSecondary
@@ -180,10 +177,7 @@ export default ({path, ...props}: LayoutProps) => (
 
       <ContentSection sectionName="share">
         <ContentPrimary headline="Share">
-          <Image
-            src="static/about/contribute/contribute-banner-share.svg"
-            alt="Share Media"
-          />
+          <Image src="static/about/contribute/contribute-banner-share.svg" />
         </ContentPrimary>
 
         <ContentSecondary
@@ -252,7 +246,7 @@ export default ({path, ...props}: LayoutProps) => (
         />
 
         <ContentSecondary headline="Write some code">
-          <InlineMessage role="region" aria-label="contribute">
+          <InlineMessage role="region" aria-label="code">
             Currently only applicable for News UK teams.
           </InlineMessage>
         </ContentSecondary>
