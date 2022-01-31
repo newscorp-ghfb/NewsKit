@@ -47,8 +47,7 @@ export default (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v3.3.0',
-      codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/tree/master/src/menu',
+      codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/menu',
     }}
     interactiveDemo={{
       introduction:

@@ -32,7 +32,9 @@ export const useResizeObserver = (
     }
 
     const RO = new window.ResizeObserver((entries: ResizeObserverEntry[]) =>
-      handleResize(entries),
+      // Prevents ResizeObserver - loop limit exceeded error
+      // https://stackoverflow.com/a/58701523
+      window.requestAnimationFrame(() => handleResize(entries)),
     );
     RO.observe(ref.current);
 

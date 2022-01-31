@@ -25,6 +25,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
   ) => {
     const theme = useTheme();
     const [isFocused, setIsFocused] = React.useState(false);
+
     const onInputFocus = React.useCallback(
       event => {
         setIsFocused(true);
@@ -34,6 +35,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
       },
       [onFocus],
     );
+
     const onInputBlur = React.useCallback(
       event => {
         if (onBlur) {
@@ -43,6 +45,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
       },
       [onBlur],
     );
+
     const onInputChange = React.useCallback(
       event => {
         if (onChange) {
@@ -51,6 +54,7 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
       },
       [onChange],
     );
+
     // This is a fix to apply the placeholderColor to input
     const textFieldStylePreset = getToken(
       {theme, overrides},

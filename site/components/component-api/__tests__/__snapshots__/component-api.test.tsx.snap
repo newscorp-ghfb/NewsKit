@@ -74,6 +74,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   vertical-align: top;
   min-width: 64px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-5 {
@@ -92,6 +93,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   vertical-align: top;
   min-width: 100px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-8 {
@@ -110,6 +112,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   vertical-align: top;
   width: 100px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-9 {
@@ -628,6 +631,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   vertical-align: top;
   min-width: 64px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-9 {
@@ -646,6 +650,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   vertical-align: top;
   min-width: 100px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-12 {
@@ -664,6 +669,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   vertical-align: top;
   width: 100px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-13 {

@@ -376,6 +376,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
     >
       <input
         aria-describedby="mock-nk-1-assistive-text"
+        aria-invalid="false"
         class="emotion-3"
         id="mock-nk-1"
         name="input-text-field-large"
@@ -792,6 +793,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
     >
       <input
         aria-describedby="mock-nk-1-assistive-text"
+        aria-invalid="false"
         class="emotion-3"
         id="mock-nk-1"
         name="input-text-field-medium"
@@ -1208,6 +1210,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
     >
       <input
         aria-describedby="mock-nk-1-assistive-text"
+        aria-invalid="false"
         class="emotion-3"
         id="mock-nk-1"
         name="input-text-field-small"
