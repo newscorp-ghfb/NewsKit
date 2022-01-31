@@ -30,6 +30,7 @@ const cards = [
   {
     media: {
       src: 'static/about/contribute/contribute-card-feedback.svg',
+      alt: 'Feedback Media',
     },
 
     title: 'Feedback',
@@ -41,6 +42,7 @@ const cards = [
   {
     media: {
       src: 'static/about/contribute/contribute-card-share.svg',
+      alt: 'Share Media',
     },
     title: 'Share',
     description:
@@ -51,6 +53,7 @@ const cards = [
   {
     media: {
       src: 'static/about/contribute/contribute-card-create.svg',
+      alt: 'Create Media',
     },
     title: 'Create',
     stylePrefix: 'featureCard',
@@ -92,7 +95,10 @@ export default ({path, ...props}: LayoutProps) => (
 
       <ContentSection sectionName="feedback">
         <ContentPrimary headline="Feedback">
-          <Image src="static/about/contribute/contribute-banner-feedback.svg" />
+          <Image
+            src="static/about/contribute/contribute-banner-feedback.svg"
+            alt="Feedback Media"
+          />
         </ContentPrimary>
 
         <ContentSecondary
@@ -174,7 +180,10 @@ export default ({path, ...props}: LayoutProps) => (
 
       <ContentSection sectionName="share">
         <ContentPrimary headline="Share">
-          <Image src="static/about/contribute/contribute-banner-share.svg" />
+          <Image
+            src="static/about/contribute/contribute-banner-share.svg"
+            alt="Share Media"
+          />
         </ContentPrimary>
 
         <ContentSecondary
@@ -213,7 +222,10 @@ export default ({path, ...props}: LayoutProps) => (
 
       <ContentSection sectionName="create">
         <ContentPrimary headline="Create">
-          <Image src="static/about/contribute/contribute-banner-create.svg" />
+          <Image
+            src="static/about/contribute/contribute-banner-create.svg"
+            alt="Create Media"
+          />
         </ContentPrimary>
 
         <ContentSecondary
