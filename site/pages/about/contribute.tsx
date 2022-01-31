@@ -95,7 +95,10 @@ export default ({path, ...props}: LayoutProps) => (
 
       <ContentSection sectionName="feedback">
         <ContentPrimary headline="Feedback">
-          <Image src="static/about/contribute/contribute-banner-feedback.svg" />
+          <Image
+            src="static/about/contribute/contribute-banner-feedback.svg"
+            alt="Feedback Media"
+          />
         </ContentPrimary>
 
         <ContentSecondary
@@ -177,7 +180,10 @@ export default ({path, ...props}: LayoutProps) => (
 
       <ContentSection sectionName="share">
         <ContentPrimary headline="Share">
-          <Image src="static/about/contribute/contribute-banner-share.svg" />
+          <Image
+            src="static/about/contribute/contribute-banner-share.svg"
+            alt="Share Media"
+          />
         </ContentPrimary>
 
         <ContentSecondary
