@@ -166,6 +166,7 @@ export default [
         title: 'Spacing',
         page: true,
         id: '/foundations/spacing',
+        illustration: 'foundations/spacing/hero',
         description:
           'Space helps to guide the user and provide a pleasant and consistent experience when using a product.',
       },
