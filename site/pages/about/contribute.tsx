@@ -30,7 +30,6 @@ const cards = [
   {
     media: {
       src: 'static/about/contribute/contribute-card-feedback.svg',
-      alt: '',
     },
 
     title: 'Feedback',
@@ -42,7 +41,6 @@ const cards = [
   {
     media: {
       src: 'static/about/contribute/contribute-card-share.svg',
-      alt: '',
     },
     title: 'Share',
     description:
@@ -53,7 +51,6 @@ const cards = [
   {
     media: {
       src: 'static/about/contribute/contribute-card-create.svg',
-      alt: '',
     },
     title: 'Create',
     stylePrefix: 'featureCard',
@@ -246,7 +243,7 @@ export default ({path, ...props}: LayoutProps) => (
         />
 
         <ContentSecondary headline="Write some code">
-          <InlineMessage role="region" aria-label="code">
+          <InlineMessage role="region" aria-label="contribute">
             Currently only applicable for News UK teams.
           </InlineMessage>
         </ContentSecondary>
