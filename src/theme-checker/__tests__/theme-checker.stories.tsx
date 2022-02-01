@@ -16,7 +16,6 @@ import {
 } from '../..';
 import {tnlTheme} from '../themes/tnl-theme/tnl-theme';
 import {virginTheme} from '../themes/virgin-theme/virgin-theme';
-import {useHasMounted} from '../../utils/hooks';
 
 export default {
   title: 'NewsKit Light/theme-checker',
@@ -39,7 +38,6 @@ interface ThemeSelectorProps {
 const themes = [newskitLightTheme, newskitDarkTheme, tnlTheme, virginTheme];
 
 const ThemeSelector = ({children}: ThemeSelectorProps) => {
-  const mounted = useHasMounted();
   const [themeIndex, setThemeIndex] = React.useState(() => {
     const index =
       typeof window !== 'undefined'
@@ -58,9 +56,7 @@ const ThemeSelector = ({children}: ThemeSelectorProps) => {
     },
     [setThemeIndex],
   );
-  if (!mounted) {
-    return null;
-  }
+
   const themeLabels = themes.map(theme => theme.name);
 
   return (

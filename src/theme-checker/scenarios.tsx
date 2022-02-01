@@ -5,37 +5,31 @@ import {FormInputState} from '../form/types';
 import {
   Box,
   Container,
-  ContainerWithBorder,
-  ContainerWithFixedHeight,
-  ContainerWithFixedWidth,
   DrawerContainer,
-  InverseContainer,
   ModalWrapper,
-  StyledBlock,
+  StyledInput,
+  StyledLabel,
 } from './styled';
 import {Tag} from '../tag';
 import {LinkInline, LinkStandalone} from '../link';
 import {IconButton} from '../icon-button';
 import {Button, ButtonSize} from '../button';
 import {
-  IconFilledAccountBalance,
+  IconFilledAddCircle,
+  IconFilledEmail,
   IconFilledError,
   IconFilledFacebook,
-  IconFilledFigma,
   IconFilledInfo,
-  IconFilledMood,
-  IconFilledPause,
+  IconFilledInstagram,
   IconFilledTwitter,
-  IconFilledWhatsApp,
+  IconOutlinedArrowForwardIos,
 } from '../icons';
-import {Flow, Stack} from '../stack';
+import {Flow, Stack, StackDistribution} from '../stack';
 import {AssistiveText} from '../assistive-text';
 import {Banner} from '../banner';
 import {getSSRId, MQ} from '../utils';
 import {Byline} from '../byline';
 import {Caption, CaptionInset} from '../caption';
-import {Cell, Grid} from '../grid';
-import {Card} from '../card';
 import {Block} from '../block';
 import {TextBlock} from '../text-block';
 import {Headline} from '../headline';
@@ -45,9 +39,10 @@ import {AlignSelfValues, StackChild} from '../stack-child';
 import {EmailInput} from '../email-input';
 import {Fieldset} from '../fieldset';
 import {Checkbox} from '../checkbox';
-import {Flag} from '../flag';
+import {Flag, FlagSize} from '../flag';
 import {Image} from '../image';
 import {
+  Form,
   FormInput,
   FormInputAssistiveText,
   FormInputLabel,
@@ -70,6 +65,19 @@ import {VolumeControl} from '../volume-control';
 import {Drawer} from '../drawer';
 import {Modal} from '../modal';
 import {H1, P} from '../typography';
+import {
+  LabelFlag,
+  returnLastLetterInCamelCase,
+  renderCard,
+  renderCardInset,
+  useActiveState,
+} from './helper';
+import {
+  StructuredList,
+  StructuredListCell,
+  StructuredListItem,
+} from '../structured-list';
+import {Cell, Grid} from '../grid';
 import {Label} from '../label';
 
 interface ComponentData {
@@ -78,11 +86,12 @@ interface ComponentData {
 }
 
 const listData = [`alpha`, `bravo`, `charlie`, `delta`, `echo`, `foxtrot`];
+
 const textFieldStates: [string, {state?: FormInputState}][] = [
-  ['default', {state: undefined}],
-  ['disabled', {state: 'disabled'}],
-  ['invalid', {state: 'invalid'}],
-  ['valid', {state: 'valid'}],
+  ['Default', {state: undefined}],
+  ['Disabled', {state: 'disabled'}],
+  ['Invalid', {state: 'invalid'}],
+  ['Valid', {state: 'valid'}],
 ];
 
 const tags = [
@@ -99,36 +108,8 @@ const tags = [
 const loremIpsum = [
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis erat sed velit tincidunt tincidunt. Sed gravida erat sit amet vulputate euismod. In id quam et sem dignissim mattis. Nullam sit amet ex maximus, egestas ligula vitae, pulvinar magna. Quisque nisi elit, mollis ut mauris dapibus, efficitur aliquam dui. Quisque auctor volutpat feugiat. Maecenas pretium elit ex, at condimentum leo luctus eu. Vivamus eget facilisis dolor, eu semper elit. Etiam rhoncus semper ex tincidunt ultrices. Nulla libero orci, egestas sed lectus ac, laoreet lacinia ipsum.',
-  'Suspendisse faucibus non ipsum id elementum. Quisque porta quam vitae gravida tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis lacinia risus rutrum lectus sodales maximus. Curabitur tempor suscipit congue. Sed auctor, ante ut hendrerit ornare, ipsum sem malesuada diam, in dictum metus massa vel urna. Sed eget massa ac odio hendrerit pulvinar. Vestibulum ex sem, venenatis sed nibh ac, dictum hendrerit magna. Etiam porta nulla vitae fermentum iaculis. Ut vitae metus sit amet ante congue dapibus. Sed commodo augue justo, dignissim hendrerit nisl sollicitudin et. Proin faucibus porta elementum. Morbi finibus, massa lobortis convallis bibendum, neque erat venenatis felis, ut tempor enim dui vitae dolor. Donec eget facilisis lacus.',
-  'Maecenas pharetra nisl eu quam vulputate, eu dignissim nisi ornare. Aliquam eu odio venenatis, ultricies urna in, luctus eros. Proin bibendum massa non justo luctus, sed ultricies eros molestie. Sed non porta erat. Donec nunc nisl, mattis sit amet lacus quis, aliquam sodales leo. Donec quis lectus faucibus, dignissim urna interdum, iaculis ipsum. Aenean porta est ut dignissim ultricies. Sed sit amet dictum sapien. Praesent placerat pellentesque lorem a ornare. Sed eu lectus faucibus, venenatis nibh at, pellentesque massa. Etiam et mi euismod, posuere sapien nec, pharetra neque. Nunc vel pretium dui. Praesent facilisis suscipit est vitae tincidunt. Proin in mauris at massa fringilla vulputate pretium in mauris. Ut non nunc placerat lacus tristique viverra. Morbi accumsan nunc in eros pellentesque fringilla.',
-  'Quisque suscipit magna quis consectetur venenatis. Suspendisse ultrices elit diam, non ultricies lacus molestie eget. Phasellus mi tortor, egestas nec massa vel, ultrices pharetra ligula. Ut nec quam malesuada, pretium ex eget, condimentum tellus. Nam egestas justo vitae lectus convallis faucibus. Nulla nulla enim, blandit sed accumsan ut, laoreet id nisl. Curabitur egestas eleifend leo sed pretium. Suspendisse nec tortor eget risus congue varius et et arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus id mattis leo. Aliquam sed erat a est euismod mattis et vel nisi. Aenean velit dui, semper consectetur eleifend vel, tempus quis nunc. Praesent at placerat mauris. Etiam ante nisl, sagittis vel sapien et, viverra sodales lacus. Maecenas vel eleifend magna. Mauris elementum nunc sed erat vulputate, at venenatis nisl porttitor.',
 ];
 
-const link = () => <LinkInline href="/">Link</LinkInline>;
-
-const ShareOnTwitterBtn = () => (
-  <IconButton
-    aria-label="Share on Twitter"
-    size={ButtonSize.Large}
-    overrides={{
-      stylePreset: 'iconButtonMinimalSecondary',
-    }}
-  >
-    <IconFilledTwitter />
-  </IconButton>
-);
-
-const ShareOnFacebookBtn = () => (
-  <IconButton
-    aria-label="Share on Facebook"
-    size={ButtonSize.Large}
-    overrides={{
-      stylePreset: 'iconButtonMinimalSecondary',
-    }}
-  >
-    <IconFilledFacebook />
-  </IconButton>
-);
 const DrawerContent = () => (
   <>
     <P>
@@ -149,18 +130,6 @@ const DrawerContent = () => (
   </>
 );
 
-const useActiveState = (
-  initial = false,
-): [boolean, () => void, () => void, () => void] => {
-  const [isActive, setIsActive] = useState(initial);
-
-  /* istanbul ignore next */ const open = () => setIsActive(true);
-  /* istanbul ignore next */ const close = () => setIsActive(false);
-  /* istanbul ignore next */ const toggle = () => (isActive ? close() : open());
-
-  return [isActive, open, close, toggle];
-};
-
 const modalContent = (
   <Stack
     flow="vertical-center"
@@ -172,27 +141,82 @@ const modalContent = (
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
       doloremque laudantium, totam rem aperiam. (Double click for more text :) )
     </P>
-    <Button>Register for a free account</Button>
-    <P>Already have an account?</P>
-    <LinkInline href="/">Sign in here</LinkInline>
   </Stack>
 );
+
+const arrowIcon = (
+  <Stack stackDistribution={StackDistribution.End} flow={Flow.HorizontalCenter}>
+    <IconOutlinedArrowForwardIos
+      overrides={{
+        size: 'iconSize010',
+        stylePreset: 'inkContrast',
+      }}
+    />
+  </Stack>
+);
+const listItemWithThreeCells = (
+  <StructuredListItem ariaLabel="list item">
+    <StructuredListCell>
+      <TextBlock stylePreset="inkContrast" typographyPreset="utilityHeading010">
+        Label
+      </TextBlock>
+    </StructuredListCell>
+    <StructuredListCell>
+      <TextBlock stylePreset="inkSubtle" typographyPreset="utilityBody020">
+        A short description of the label
+      </TextBlock>
+    </StructuredListCell>
+    <StructuredListCell>{arrowIcon}</StructuredListCell>
+  </StructuredListItem>
+);
+
+const buttonPresets = [
+  'Primary',
+  'Secondary',
+  'Positive',
+  'Negative',
+  'Inverse',
+];
+const buttonKinds = ['Solid', 'Outlined', 'Minimal'];
+
+const flagPresets = [
+  'Primary',
+  'Positive',
+  'Negative',
+  'Neutral',
+  'Notice',
+  'Informative',
+  'Inverse',
+];
+const flagKinds = ['Solid', 'Minimal'];
+
+/* istanbul ignore next */
+const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+/* istanbul ignore next */
+const onSubmit = async () => {
+  await sleep(2000);
+};
+/* istanbul ignore next */
+const validateUserName = async (value: string) => {
+  await sleep(1000);
+  return value !== 'newskit' || 'This username is already taken';
+};
 
 export const scenarios: Array<ComponentData> = [
   {
     name: 'Assistive Text',
     component: () => (
       <Stack
-        spaceInline="space040"
-        spaceStack="space100"
-        flow="horizontal-top"
-        wrap
+        spaceInline="space100"
+        spaceStack="space060"
+        flow={Flow.HorizontalTop}
+        wrap="wrap"
       >
         {textFieldStates.map(([id, {state}]) => (
-          <Container key={id}>
-            <Label htmlFor={id}>{id}</Label>
+          <Stack key={`${id}-assistive-text`} spaceInline="space050">
+            <LabelFlag>{id}</LabelFlag>
             <AssistiveText state={state}>Assistive Text</AssistiveText>
-          </Container>
+          </Stack>
         ))}
       </Stack>
     ),
@@ -200,22 +224,39 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Audio Player',
     component: () => (
-      <AudioPlayer
-        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-        title="The Breakfast Show with Giles Coren"
-        captionSrc="captions.vtt"
-        ariaLandmark="audio player default"
-      />
+      <Stack spaceInline="space070">
+        <Stack spaceInline="space050">
+          <LabelFlag>Default</LabelFlag>
+          <AudioPlayer
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            title="The Breakfast Show with Giles Coren"
+            captionSrc="captions.vtt"
+            ariaLandmark="audio player default"
+          />
+        </Stack>
+        <Stack spaceInline="space050">
+          <LabelFlag>Live</LabelFlag>
+          <AudioPlayer
+            src="https://radio.talkradio.co.uk/stream"
+            title="The Breakfast Show with Giles Coren"
+            live
+            captionSrc="captions.vtt"
+            ariaLandmark="audio player live"
+          />
+        </Stack>
+      </Stack>
     ),
   },
   {
     name: 'Banner',
     component: ({stylePreset}) => (
-      <Stack spaceInline="space020">
-        <TextBlock typographyPreset="utilityLabel010" stylePreset="inkContrast">
-          {stylePreset}
-        </TextBlock>
+      <Stack spaceInline="space050" key={`${stylePreset}-banner`}>
+        <LabelFlag>
+          {returnLastLetterInCamelCase(stylePreset as string)}
+        </LabelFlag>
         <Banner
+          aria-label={`Banner with ${stylePreset}`}
+          title="Banner title"
           icon={
             <IconFilledInfo
               overrides={{
@@ -226,7 +267,7 @@ export const scenarios: Array<ComponentData> = [
           }
           overrides={{stylePreset}}
         >
-          {loremIpsum[0]}
+          Here goes a brief line or two describing the toast information.
         </Banner>
       </Stack>
     ),
@@ -234,21 +275,41 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Block',
     component: () => (
-      <Block stylePreset="inkSubtle">This is a block component</Block>
+      <Container border height="15px">
+        <Block stylePreset="inkSubtle">
+          Block default without padding or margin
+        </Block>
+      </Container>
     ),
   },
   {
     name: 'Button',
-    component: ({stylePreset}) => (
-      <Stack spaceInline="space020">
-        <TextBlock typographyPreset="utilityLabel010" stylePreset="inkContrast">
-          {stylePreset}
-        </TextBlock>
-        <StyledBlock spaceStack="space020">
-          <Button key={getSSRId()} overrides={{stylePreset}}>
-            Button
-          </Button>
-        </StyledBlock>
+    component: () => (
+      <Stack
+        spaceInline="space100"
+        spaceStack="space060"
+        flow={Flow.HorizontalTop}
+        wrap="wrap"
+      >
+        {buttonPresets.map(preset => (
+          <Stack spaceInline="space050" key={`${preset}-button`}>
+            <LabelFlag>{preset}</LabelFlag>
+            <Stack flow={Flow.HorizontalTop} spaceInline="space090">
+              {buttonKinds.map(kind => (
+                <Stack spaceInline="space050" key={`${kind}-button`}>
+                  <LabelFlag prefix="secondary">{kind}</LabelFlag>
+                  <Button
+                    key={getSSRId()}
+                    size={ButtonSize.Small}
+                    overrides={{stylePreset: `button${kind}${preset}`}}
+                  >
+                    Button
+                  </Button>
+                </Stack>
+              ))}
+            </Stack>
+          </Stack>
+        ))}
       </Stack>
     ),
   },
@@ -258,12 +319,10 @@ export const scenarios: Array<ComponentData> = [
       <Byline
         bylineData={[
           {
-            author: 'Richard Lloyd Parry',
+            author: 'Author',
             href: 'https://www.thetimes.co.uk/profile/richard-lloyd-parry',
-          },
-          {
-            author: 'Callum Jones',
-            href: 'https://www.thetimes.co.uk/profile/callum-jones?',
+            title: 'Job Title',
+            location: 'Location',
           },
         ]}
       />
@@ -272,7 +331,12 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Caption',
     component: () => (
-      <Stack flow={Flow.HorizontalTop} spaceInline="space020">
+      <Stack
+        flow={Flow.HorizontalTop}
+        spaceInline="space100"
+        spaceStack="space060"
+        wrap="wrap"
+      >
         <Stack spaceInline="space020">
           <Image
             src="/placeholder-3x2.png"
@@ -297,123 +361,66 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Card',
     component: () => (
-      <>
-        <Grid>
-          <Cell xs={12} md={5}>
-            <Card
-              href="#"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-                loadingAspectRatio: '3:2',
-              }}
-              actions={() => <Tag href="/">News</Tag>}
-            >
-              <Block
-                spaceStack={{xs: 'space040', md: 'space045', lg: 'space050'}}
-              >
-                <Headline>dolor sit amet consectetur adipiscing</Headline>
-              </Block>
-              <Block spaceStack="space010">
-                <TextBlock
-                  typographyPreset="editorialParagraph010"
-                  stylePreset="inkContrast"
-                >
-                  {loremIpsum[1].slice(0, 144)}
-                </TextBlock>
-              </Block>
-            </Card>
-          </Cell>
-          <Cell xs={12} md={7}>
-            <Stack
-              spaceInline="space030"
-              stackDistribution="space-between"
-              flow="vertical-stretch"
-            >
-              <Card
-                layout="horizontal-reverse"
-                href="#"
-                media={{
-                  src: '/placeholder-3x2.png',
-                  alt: 'Card Media',
-                  loadingAspectRatio: '3:2',
-                }}
-                overrides={{
-                  horizontalRatio: '1:2',
-                }}
-              >
-                <Block
-                  spaceStack={{
-                    xs: 'space040',
-                    md: 'space045',
-                    lg: 'space050',
-                  }}
-                >
-                  <Headline
-                    overrides={{typographyPreset: 'editorialHeadline020'}}
-                  >
-                    Lorem dolor sit amet consectetur adipiscing
-                  </Headline>
-                </Block>
-                <Block spaceStack="space010">
-                  <TextBlock
-                    stylePreset="cardTeaserLead"
-                    typographyPreset="editorialParagraph010"
-                  >
-                    {loremIpsum[1].slice(0, 40)}
-                  </TextBlock>
-                </Block>
-              </Card>
-              <Card
-                layout="horizontal-reverse"
-                href="#"
-                media={{
-                  src: '/placeholder-3x2.png',
-                  alt: 'Card Media',
-                  loadingAspectRatio: '3:2',
-                }}
-              >
-                <Block
-                  spaceStack={{
-                    xs: 'space040',
-                    md: 'space045',
-                    lg: 'space050',
-                  }}
-                >
-                  <Headline
-                    overrides={{typographyPreset: 'editorialHeadline020'}}
-                  >
-                    Sed velit tincidunt aliquam eu odio venenati.
-                  </Headline>
-                </Block>
-                <Block spaceStack="space010">
-                  <TextBlock
-                    stylePreset="inkSubtle"
-                    typographyPreset="editorialParagraph010"
-                  >
-                    {loremIpsum[2].slice(0, 59)}
-                  </TextBlock>
-                </Block>
-              </Card>
-            </Stack>
-          </Cell>
-        </Grid>
-      </>
+      <Stack spaceInline="space050">
+        <Stack spaceInline="space050">
+          <LabelFlag>Vertical</LabelFlag>
+          <Grid xsMargin="space000">
+            <Cell xs={12} sm={6} md={5}>
+              <Stack spaceInline="space050">
+                <LabelFlag prefix="secondary">Default</LabelFlag>
+                {renderCard('vertical')}
+              </Stack>
+            </Cell>
+            <Cell xs={12} sm={6} md={5}>
+              <Stack spaceInline="space050">
+                <LabelFlag prefix="secondary">Inset</LabelFlag>
+                {renderCardInset('vertical')}
+              </Stack>
+            </Cell>
+          </Grid>
+        </Stack>
+        <Stack spaceInline="space050">
+          <LabelFlag>Horizontal</LabelFlag>
+          <Grid xsMargin="space000">
+            <Cell xs={12} sm={6} md={5}>
+              <Stack spaceInline="space050">
+                <LabelFlag prefix="secondary">Default</LabelFlag>
+                {renderCard('horizontal')}
+              </Stack>
+            </Cell>
+            <Cell xs={12} sm={6} md={5}>
+              <Stack spaceInline="space050">
+                <LabelFlag prefix="secondary">Inset</LabelFlag>
+                {renderCardInset('horizontal')}
+              </Stack>
+            </Cell>
+          </Grid>
+        </Stack>
+        <Stack spaceInline="space050">
+          <LabelFlag>Reverse</LabelFlag>
+          <Grid xsMargin="space000">
+            <Cell xs={12} sm={6} md={5}>
+              {renderCard('horizontal-reverse')}
+            </Cell>
+          </Grid>
+        </Stack>
+      </Stack>
     ),
   },
   {
     name: 'Checkbox',
     component: () => (
       <Stack
-        spaceInline="space040"
-        spaceStack="space100"
-        flow="horizontal-top"
-        wrap
+        spaceInline="space100"
+        spaceStack="space060"
+        flow={Flow.HorizontalTop}
+        wrap="wrap"
       >
         {states.map(([id, {checked, ...props}]) => (
-          <Container key={id}>
+          <Stack key={`${id}-checkbox`} spaceInline="space050">
+            <LabelFlag>{id[0].toUpperCase() + id.slice(1)}</LabelFlag>
             <Checkbox {...props} defaultChecked={checked} label={id} />
-          </Container>
+          </Stack>
         ))}
       </Stack>
     ),
@@ -422,123 +429,281 @@ export const scenarios: Array<ComponentData> = [
     name: 'Date Time',
     component: () => (
       <Stack
-        spaceInline="space040"
-        spaceStack="space100"
-        flow="horizontal-top"
-        wrap
+        spaceInline="space100"
+        spaceStack="space060"
+        flow={Flow.HorizontalTop}
+        wrap="wrap"
       >
-        <DateTime date="2017-01-01T04:32:00.000Z" />
-        <DateTime date="2017-01-01T04:32:00.000Z" prefix="Updated:" />
-        <DateTime date="2017-01-01T04:32:00.000Z" suffix="The Times" />
-        <DateTime
-          date="2017-01-01T04:32:00.000Z"
-          suffix="The Times"
-          prefix="Updated:"
-        />
+        <Stack spaceInline="space050">
+          <LabelFlag>Default</LabelFlag>
+          <DateTime date="2017-01-01T04:32:00.000Z" />
+        </Stack>
+        <Stack spaceInline="space050">
+          <LabelFlag>Prefix</LabelFlag>
+          <DateTime date="2017-01-01T04:32:00.000Z" prefix="Updated:" />
+        </Stack>
+        <Stack spaceInline="space050">
+          <LabelFlag>Suffix</LabelFlag>
+          <DateTime date="2017-01-01T04:32:00.000Z" suffix="The Times" />
+        </Stack>
+        <Stack spaceInline="space050">
+          <LabelFlag>Prefix and Suffix</LabelFlag>
+          <DateTime
+            date="2017-01-01T04:32:00.000Z"
+            suffix="The Times"
+            prefix="Updated:"
+          />
+        </Stack>
       </Stack>
     ),
   },
   {
     name: 'Divider',
     component: () => (
-      <>
-        <ContainerWithBorder>
-          <Stack stackDistribution="center" flow="vertical-center">
-            <IconFilledFacebook overrides={{size: 'iconSize040'}} />
-            <Divider />
-            <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
-          </Stack>
-        </ContainerWithBorder>
-        <ContainerWithBorder>
-          <Stack flow="horizontal-center" stackDistribution="center">
-            <IconFilledFacebook overrides={{size: 'iconSize040'}} />
-            <StackChild alignSelf={AlignSelfValues.Stretch}>
-              <Divider vertical />
-            </StackChild>
-            <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
-          </Stack>
-        </ContainerWithBorder>
-      </>
+      <Stack spaceInline="space100" flow={Flow.HorizontalTop} wrap="wrap">
+        <Stack spaceInline="space050">
+          <LabelFlag>Horizontal</LabelFlag>
+          <Container border height="50px" width="">
+            <Stack stackDistribution="center" flow="vertical-center">
+              <IconFilledAddCircle overrides={{size: 'iconSize030'}} />
+              <Divider />
+              <IconFilledAddCircle overrides={{size: 'iconSize030'}} />
+            </Stack>
+          </Container>
+        </Stack>
+        <Stack spaceInline="space050">
+          <LabelFlag>Vertical</LabelFlag>
+          <Container border width="50px">
+            <Stack flow="horizontal-center" stackDistribution="center">
+              <IconFilledAddCircle overrides={{size: 'iconSize030'}} />
+              <StackChild alignSelf={AlignSelfValues.Stretch}>
+                <Divider vertical />
+              </StackChild>
+              <IconFilledAddCircle overrides={{size: 'iconSize030'}} />
+            </Stack>
+          </Container>
+        </Stack>
+      </Stack>
     ),
   },
   {
     name: 'Email Input',
     component: () => (
       <Stack
-        spaceInline="space040"
-        spaceStack="space100"
-        flow="horizontal-top"
-        wrap
+        spaceInline="space100"
+        flow={Flow.HorizontalTop}
+        spaceStack="space060"
+        wrap="wrap"
       >
-        <ContainerWithFixedWidth>
+        <Stack spaceInline="space050">
+          <LabelFlag>Default</LabelFlag>
           <EmailInput
-            label="Label"
+            label="Email address"
             placeholder="Enter your email address."
             assistiveText="Assistive text"
+            icon={
+              <IconFilledEmail
+                overrides={{
+                  size: 'iconSize020',
+                  stylePreset: 'inkSubtle',
+                }}
+              />
+            }
+            overrides={{
+              width: '360px',
+            }}
           />
-        </ContainerWithFixedWidth>
-        <ContainerWithFixedWidth>
-          <EmailInput hideLabel label="Label" assistiveText="Assistive text" />
-        </ContainerWithFixedWidth>
-        <ContainerWithFixedWidth>
-          <EmailInput label="Label" />
-        </ContainerWithFixedWidth>
+        </Stack>
+
+        <Stack spaceInline="space050">
+          <LabelFlag>Submit validation</LabelFlag>
+          <Form onSubmit={onSubmit}>
+            <Block spaceStack="space050">
+              <EmailInput
+                label="Email address"
+                name="email"
+                assistiveText="Assistive text"
+                icon={
+                  <IconFilledEmail
+                    overrides={{
+                      size: 'iconSize020',
+                      stylePreset: 'inkSubtle',
+                    }}
+                  />
+                }
+                rules={{
+                  required: 'Required field',
+                  pattern: {
+                    // eslint-disable-next-line no-useless-escape
+                    value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+                    message: 'Please provide a valid email',
+                  },
+                }}
+                overrides={{
+                  width: '360px',
+                }}
+              />
+            </Block>
+            <Button type="submit">Submit</Button>
+          </Form>
+        </Stack>
       </Stack>
     ),
   },
   {
     name: 'Fieldset',
     component: () => (
-      <ContainerWithFixedWidth>
-        <Fieldset legend="Legend">
-          <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
-          <AssistiveText>Assistive Text</AssistiveText>
-        </Fieldset>
-      </ContainerWithFixedWidth>
+      <Stack
+        spaceInline="space100"
+        flow={Flow.HorizontalTop}
+        spaceStack="space060"
+        wrap="wrap"
+      >
+        <Stack spaceInline="space050">
+          <LabelFlag>Small</LabelFlag>
+          <Fieldset legend="Legend" size="small">
+            <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
+            <AssistiveText>Assistive Text</AssistiveText>
+          </Fieldset>
+        </Stack>
+
+        <Stack spaceInline="space050">
+          <LabelFlag>Medium</LabelFlag>
+          <Fieldset legend="Legend" size="medium">
+            <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
+            <AssistiveText>Assistive Text</AssistiveText>
+          </Fieldset>
+        </Stack>
+
+        <Stack spaceInline="space050">
+          <LabelFlag>Large</LabelFlag>
+          <Fieldset legend="Legend" size="large">
+            <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
+            <AssistiveText>Assistive Text</AssistiveText>
+          </Fieldset>
+        </Stack>
+      </Stack>
     ),
   },
   {
     name: 'Flag',
-    component: ({stylePreset}) => (
-      <Stack spaceInline="space020">
-        <TextBlock typographyPreset="utilityLabel010" stylePreset="inkContrast">
-          {stylePreset}
-        </TextBlock>
-        <StyledBlock spaceStack="space020">
-          <Flag overrides={{stylePreset}} key={getSSRId()}>
-            Flag
-          </Flag>
-        </StyledBlock>
+    component: () => (
+      <Stack
+        spaceInline="space100"
+        spaceStack="space060"
+        flow={Flow.HorizontalTop}
+        wrap="wrap"
+      >
+        {flagPresets.map(preset => (
+          <Stack spaceInline="space050" key={`${preset}-flag`}>
+            <LabelFlag>{preset}</LabelFlag>
+            <Stack flow={Flow.HorizontalTop} spaceInline="space090">
+              {flagKinds.map(kind => (
+                <Stack spaceInline="space050" key={`${kind}-flag`}>
+                  <LabelFlag prefix="secondary">{kind}</LabelFlag>
+                  <Flag
+                    key={getSSRId()}
+                    size={FlagSize.Small}
+                    overrides={{stylePreset: `flag${kind}${preset}`}}
+                  >
+                    Flag
+                  </Flag>
+                </Stack>
+              ))}
+            </Stack>
+          </Stack>
+        ))}
       </Stack>
     ),
   },
   {
     name: 'FormInput',
     component: () => (
-      <ContainerWithFixedWidth>
-        <FormInput
-          name="email-valid"
-          rules={{
-            required: 'Required field',
-            pattern: {
-              // eslint-disable-next-line no-useless-escape
-              value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-              message: 'Please provide a valid email',
-            },
-          }}
-        >
-          <FormInputLabel>E-mail</FormInputLabel>
-          <FormInputTextField
-            size={'small' as TextFieldSize}
-            startEnhancer={
-              <>
-                <IconFilledAccountBalance overrides={{size: '20px'}} />
-              </>
-            }
-          />
-          <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
-        </FormInput>
-      </ContainerWithFixedWidth>
+      <Grid xsMargin="space000" smColumnGutter="space100">
+        <Cell xs={12} sm={6}>
+          <>
+            <Block spaceStack="space050">
+              <LabelFlag>Default</LabelFlag>
+            </Block>
+            <FormInput
+              name="username-default"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 5,
+                  message: 'Usernames must be at least 5 characters long',
+                },
+                validate: validateUserName,
+              }}
+            >
+              <FormInputLabel>Username</FormInputLabel>
+              <FormInputTextField size={'small' as TextFieldSize} />
+              <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+            </FormInput>
+          </>
+        </Cell>
+        <Cell xs={12} sm={6}>
+          <>
+            <Block spaceStack="space050">
+              <LabelFlag>Valid</LabelFlag>
+            </Block>
+            <FormInput
+              state="valid"
+              name="email-valid"
+              rules={{
+                required: 'Required field',
+                pattern: {
+                  // eslint-disable-next-line no-useless-escape
+                  value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+                  message: 'Please provide a valid email',
+                },
+              }}
+            >
+              <FormInputLabel>E-mail</FormInputLabel>
+              <FormInputTextField size={'small' as TextFieldSize} />
+              <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+            </FormInput>
+          </>
+        </Cell>
+        <Cell xs={12} sm={6}>
+          <>
+            <Block spaceStack="space050">
+              <LabelFlag>Invalid</LabelFlag>
+            </Block>
+            <FormInput
+              state="invalid"
+              name="username-invalid"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 5,
+                  message: 'Usernames must be at least 5 characters long',
+                },
+                validate: validateUserName,
+              }}
+            >
+              <FormInputLabel>Username</FormInputLabel>
+              <FormInputTextField size={'small' as TextFieldSize} />
+              <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+            </FormInput>
+          </>
+        </Cell>
+        <Cell xs={12} sm={6}>
+          <>
+            <Block spaceStack="space050">
+              <LabelFlag>Disabled</LabelFlag>
+            </Block>
+            <FormInput name="password-disbled" state="disabled">
+              <FormInputLabel>Password</FormInputLabel>
+              <FormInputTextField
+                state="disabled"
+                size={'small' as TextFieldSize}
+              />
+              <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+            </FormInput>
+          </>
+        </Cell>
+      </Grid>
     ),
   },
   {
@@ -547,20 +712,33 @@ export const scenarios: Array<ComponentData> = [
   },
   {
     name: 'Icon Button',
-    component: ({stylePreset}) => (
-      <Stack spaceInline="space020">
-        <TextBlock typographyPreset="utilityLabel010" stylePreset="inkContrast">
-          {stylePreset}
-        </TextBlock>
-        <StyledBlock spaceStack="space020">
-          <IconButton
-            aria-label="Email icon"
-            overrides={{stylePreset}}
-            key={getSSRId()}
-          >
-            <IconFilledPause />
-          </IconButton>
-        </StyledBlock>
+    component: () => (
+      <Stack
+        spaceInline="space100"
+        spaceStack="space060"
+        flow={Flow.HorizontalTop}
+        wrap="wrap"
+      >
+        {buttonPresets.map(preset => (
+          <Stack spaceInline="space050" key={`${preset}-iconButton`}>
+            <LabelFlag>{preset}</LabelFlag>
+            <Stack flow={Flow.HorizontalTop} spaceInline="space090">
+              {buttonKinds.map(kind => (
+                <Stack spaceInline="space050" key={`${kind}-iconButton`}>
+                  <LabelFlag prefix="secondary">{kind}</LabelFlag>
+                  <IconButton
+                    key={getSSRId()}
+                    aria-label="Add icon"
+                    size={ButtonSize.Small}
+                    overrides={{stylePreset: `iconButton${kind}${preset}`}}
+                  >
+                    <IconFilledAddCircle overrides={{size: 'iconSize010'}} />
+                  </IconButton>
+                </Stack>
+              ))}
+            </Stack>
+          </Stack>
+        ))}
       </Stack>
     ),
   },
@@ -587,43 +765,43 @@ export const scenarios: Array<ComponentData> = [
               onChange={onChangeValue}
               stylePreset="inkSubtle"
             >
-              <label htmlFor="drawer-inline_top">
-                top:
-                <input
+              <StyledLabel htmlFor="drawer-inline_top">
+                <StyledInput
                   type="radio"
                   value="top"
                   id="drawer-inline_top"
                   name="placement"
                 />
-              </label>
-              <label htmlFor="drawer-inline_left">
-                left:
-                <input
+                Top
+              </StyledLabel>
+              <StyledLabel htmlFor="drawer-inline_left">
+                <StyledInput
                   type="radio"
                   value="left"
                   id="drawer-inline_left"
                   name="placement"
                   defaultChecked
                 />
-              </label>
-              <label htmlFor="drawer-inline_bottom">
-                bottom:
-                <input
+                Left
+              </StyledLabel>
+              <StyledLabel htmlFor="drawer-inline_bottom">
+                <StyledInput
                   type="radio"
                   value="bottom"
                   id="drawer-inline_bottom"
                   name="placement"
                 />
-              </label>
-              <label htmlFor="drawer-inline_right">
-                right:
-                <input
+                Bottom
+              </StyledLabel>
+              <StyledLabel htmlFor="drawer-inline_right">
+                <StyledInput
                   type="radio"
                   value="right"
                   id="drawer-inline_right"
                   name="placement"
                 />
-              </label>
+                Right
+              </StyledLabel>
             </Block>
 
             <DrawerContainer>
@@ -635,13 +813,7 @@ export const scenarios: Array<ComponentData> = [
                 disableFocusTrap
                 hideOverlay
                 placement={placement as 'top' | 'left' | 'right' | 'bottom'}
-                header={
-                  <P>
-                    This is a drawer header. Content is passed as string. Should
-                    be a long one so that the icon button is vertically
-                    centered.
-                  </P>
-                }
+                header={<P>Drawer Title</P>}
                 overrides={{
                   panel: {minSize: '20vh', maxSize: '50%'},
                 }}
@@ -671,13 +843,13 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Inline Message',
     component: ({stylePreset}) => (
-      <Stack spaceInline="space020">
-        <TextBlock typographyPreset="utilityLabel010" stylePreset="inkContrast">
-          {stylePreset}
-        </TextBlock>
+      <Stack spaceInline="space050" key={`${stylePreset}-inlineMessage`}>
+        <LabelFlag>
+          {returnLastLetterInCamelCase(stylePreset as string)}
+        </LabelFlag>
         <InlineMessage
-          title="lorem ipsum"
-          aria-label={`${stylePreset}`}
+          title="Inline Message Title"
+          aria-label={`Inline message with ${stylePreset}`}
           icon={
             <IconFilledInfo
               overrides={{
@@ -688,7 +860,8 @@ export const scenarios: Array<ComponentData> = [
           overrides={{stylePreset}}
           key={getSSRId()}
         >
-          {loremIpsum[0].slice(0, 55)}
+          Here goes a brief line or two describing the inline message
+          information.
         </InlineMessage>
       </Stack>
     ),
@@ -705,26 +878,21 @@ export const scenarios: Array<ComponentData> = [
               <Button onClick={open} data-testid="modal-open-button">
                 Open Modal
               </Button>
-              <p>SCROLL DOWN </p>
 
               <Box>
                 <P>{loremIpsum[0]}</P>
                 <P>{loremIpsum[1]}</P>
-                <P>{loremIpsum[2]}</P>
               </Box>
               <Modal
                 open={isActive}
                 onDismiss={close}
-                header={
-                  <P>
-                    This is a modal header. Content is passed as string. Should
-                    be a long one so that the icon button is vertically
-                    centered.
-                  </P>
-                }
+                header={<P>Modal Title</P>}
                 hideOverlay
                 disableFocusTrap
                 inline
+                overrides={{
+                  panel: {maxWidth: '60%'},
+                }}
               >
                 {modalContent}
               </Modal>
@@ -736,44 +904,43 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Link',
     component: () => (
-      <Stack
-        spaceInline="space040"
-        spaceStack="space100"
-        flow="horizontal-top"
-        wrap
-      >
-        <LinkInline href="/">Inline link</LinkInline>
-        <LinkStandalone href="/">Standalone link</LinkStandalone>
-        <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
-          Inline Link Inverse
-        </LinkInline>
-        <LinkStandalone
-          href="/"
-          overrides={{stylePreset: 'linkStandaloneInverse'}}
-        >
-          LinkStandalone Inverse
-        </LinkStandalone>
+      <Stack spaceInline="space100" flow={Flow.HorizontalTop}>
+        <Stack spaceInline="space050">
+          <LabelFlag>Inline</LabelFlag>
+          <LinkInline href="/">Inline link</LinkInline>
+        </Stack>
+        <Stack spaceInline="space050">
+          <LabelFlag>Standalone</LabelFlag>
+          <LinkStandalone href="/">Standalone link</LinkStandalone>
+        </Stack>
       </Stack>
     ),
   },
   {
     name: 'Menu',
     component: () => (
-      <Stack spaceInline="space040" spaceStack="space100" flow="horizontal-top">
-        <ContainerWithBorder>
+      <Stack
+        spaceInline="space100"
+        flow={Flow.HorizontalTop}
+        spaceStack="space060"
+        wrap="wrap"
+      >
+        <Stack spaceInline="space050">
+          <LabelFlag>Horizontal</LabelFlag>
           <Menu aria-label={`Menu ${getSSRId()}`}>
-            <MenuItem href="/">item 1</MenuItem>
-            <MenuItem href="/">item 2</MenuItem>
-            <MenuItem href="/">item 3</MenuItem>
+            <MenuItem href="/">Menu Item 1</MenuItem>
+            <MenuItem href="/">Menu Item 2</MenuItem>
+            <MenuItem href="/">Menu Item 3</MenuItem>
           </Menu>
-        </ContainerWithBorder>
-        <ContainerWithBorder>
+        </Stack>
+        <Stack spaceInline="space050">
+          <LabelFlag>Vertical</LabelFlag>
           <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-            <MenuItem href="/">item 1</MenuItem>
-            <MenuItem href="/">item 2</MenuItem>
-            <MenuItem href="/">item 3</MenuItem>
+            <MenuItem href="/">Menu Item 1</MenuItem>
+            <MenuItem href="/">Menu Item 2</MenuItem>
+            <MenuItem href="/">Menu Item 3</MenuItem>
           </Menu>
-        </ContainerWithBorder>
+        </Stack>
       </Stack>
     ),
   },
@@ -784,19 +951,38 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Scroll',
     component: () => (
-      <ContainerWithFixedWidth>
-        <Scroll controls="static">
-          <Stack flow="horizontal-center" spaceInline="space020">
-            {tags}
-          </Stack>
-        </Scroll>
-      </ContainerWithFixedWidth>
+      <Stack
+        spaceInline="space100"
+        flow={Flow.HorizontalTop}
+        spaceStack="space060"
+        wrap="wrap"
+      >
+        <Stack spaceInline="space050">
+          <LabelFlag>Horizontal</LabelFlag>
+          <Container data-testid="horizontal-scroll-component">
+            <Scroll controls="static">
+              <Stack flow="horizontal-center" spaceInline="space020">
+                {tags}
+              </Stack>
+            </Scroll>
+          </Container>
+        </Stack>
+        <Stack>
+          <Container data-testid="vertical-scroll-component">
+            <Scroll vertical controls="static">
+              <Stack flow="vertical-left" spaceInline="space040">
+                {tags}
+              </Stack>
+            </Scroll>
+          </Container>
+        </Stack>
+      </Stack>
     ),
   },
   {
     name: 'Select',
     component: () => (
-      <Select>
+      <Select overrides={{button: {width: '250px'}}}>
         {listData.map(item => (
           <SelectOption key={getSSRId()} value={item}>
             {item}
@@ -808,149 +994,263 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Share Bar',
     component: () => (
-      <Stack spaceInline="space040" spaceStack="space100" flow="horizontal-top">
-        <ContainerWithBorder>
+      <Stack spaceInline="space100" flow={Flow.HorizontalTop}>
+        <Stack spaceInline="space050">
+          <LabelFlag>Horizontal</LabelFlag>
           <ShareBar label="Share" role="region">
-            <ShareOnTwitterBtn />
-            <ShareOnFacebookBtn />
-            <Button>More options</Button>
+            {[
+              ['Faceook', <IconFilledFacebook />],
+              ['Twitter', <IconFilledTwitter />],
+              ['Instagram', <IconFilledInstagram />],
+              ['AddCircle', <IconFilledAddCircle />],
+            ].map(([name, icon]) => (
+              <IconButton
+                aria-label={`Share on ${name}`}
+                size={ButtonSize.Small}
+                overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
+                key={getSSRId()}
+              >
+                {icon}
+              </IconButton>
+            ))}
           </ShareBar>
-        </ContainerWithBorder>
-        <ContainerWithBorder>
+        </Stack>
+
+        <Stack spaceInline="space050">
+          <LabelFlag>Vertical</LabelFlag>
           <ShareBar
             vertical
             label="Share"
             role="region"
             aria-label="share bar with vertical items and label"
           >
-            <ShareOnTwitterBtn />
-            <ShareOnFacebookBtn />
+            {[
+              ['Faceook', <IconFilledFacebook />],
+              ['Twitter', <IconFilledTwitter />],
+              ['Instagram', <IconFilledInstagram />],
+              ['AddCircle', <IconFilledAddCircle />],
+            ].map(([name, icon]) => (
+              <IconButton
+                aria-label={`Share on ${name}`}
+                size={ButtonSize.Small}
+                overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
+                key={getSSRId()}
+              >
+                {icon}
+              </IconButton>
+            ))}
           </ShareBar>
-        </ContainerWithBorder>
+        </Stack>
       </Stack>
     ),
   },
   {
     name: 'Slider',
     component: () => (
-      <ContainerWithFixedWidth>
-        <StatefulSlider values={[50]} max={100} min={0} />
-      </ContainerWithFixedWidth>
+      <Stack
+        spaceInline="space100"
+        flow={Flow.HorizontalTop}
+        spaceStack="space060"
+        wrap="wrap"
+      >
+        <Stack spaceInline="space050">
+          <LabelFlag>With Labels</LabelFlag>
+          <Container>
+            <StatefulSlider
+              values={[50]}
+              max={100}
+              min={0}
+              minLabel="Label"
+              maxLabel="Label"
+            />
+          </Container>
+        </Stack>
+
+        <Stack spaceInline="space050">
+          <LabelFlag>Without labels</LabelFlag>
+          <Container>
+            <StatefulSlider values={[50]} max={100} min={0} />
+          </Container>
+        </Stack>
+      </Stack>
+    ),
+  },
+  {
+    name: 'Structured List',
+    component: () => (
+      <StructuredList ariaLabel="list">
+        {listItemWithThreeCells}
+        {listItemWithThreeCells}
+        {listItemWithThreeCells}
+      </StructuredList>
     ),
   },
   {
     name: 'Tabs',
     component: () => (
-      <Tabs size={TabSize.Small} divider distribution={TabsDistribution.Equal}>
-        <Tab label="Lorem ipsum">
-          <TextBlock stylePreset="inkSubtle">{loremIpsum[1]}</TextBlock>
-        </Tab>
-        <Tab label="Consectetur adipiscing">
-          <TextBlock stylePreset="inkSubtle">{loremIpsum[2]}</TextBlock>
-        </Tab>
-        <Tab label="Magna">
-          <TextBlock stylePreset="inkSubtle">{loremIpsum[3]}</TextBlock>
-        </Tab>
-      </Tabs>
+      <Stack
+        spaceInline="space100"
+        flow={Flow.HorizontalTop}
+        spaceStack="space060"
+        wrap="wrap"
+      >
+        <Stack spaceInline="space050">
+          <LabelFlag>Horizontal</LabelFlag>
+          <Container>
+            <Tabs
+              size={TabSize.Small}
+              divider
+              distribution={TabsDistribution.Equal}
+            >
+              <Tab label="Tab 1">Lorem ipsum</Tab>
+              <Tab label="Tab 2">Consectetur adipiscing</Tab>
+              <Tab label="Tab 3">Magna</Tab>
+            </Tabs>
+          </Container>
+        </Stack>
+        <Stack spaceInline="space050">
+          <LabelFlag>Vertical</LabelFlag>
+          <Container>
+            <Tabs
+              vertical
+              size={TabSize.Small}
+              divider
+              distribution={TabsDistribution.Equal}
+            >
+              <Tab label="Tab 1">Lorem ipsum</Tab>
+              <Tab label="Tab 2">Consectetur adipiscing</Tab>
+              <Tab label="Tab 3">Magna</Tab>
+            </Tabs>
+          </Container>
+        </Stack>
+      </Stack>
     ),
   },
   {
     name: 'Tag',
     component: () => (
       <Stack
-        flow="horizontal-center"
-        spaceStack="space020"
-        spaceInline="space020"
+        spaceInline="space100"
+        flow={Flow.HorizontalTop}
+        spaceStack="space060"
         wrap="wrap"
       >
-        <Tag href="http://example.com">Text</Tag>
-        <InverseContainer>
-          <Tag overrides={{stylePreset: 'tagPrimaryInverse'}}>Text</Tag>
-        </InverseContainer>
+        <Stack spaceInline="space050">
+          <LabelFlag>Default</LabelFlag>
+          <Tag href="http://example.com">Tag</Tag>
+        </Stack>
+        <Stack spaceInline="space050">
+          <LabelFlag>Disabled</LabelFlag>
+          <Tag href="http://example.com" disabled>
+            Disabled
+          </Tag>
+        </Stack>
       </Stack>
     ),
   },
   {
     name: 'Text Block',
     component: () => (
-      <TextBlock stylePreset="inkSubtle">
-        {loremIpsum[0].slice(0, 55)}
-      </TextBlock>
+      <Container border>
+        <TextBlock stylePreset="inkSubtle">
+          Telling the stories that matter, seeding ideas and stirring emotion.
+          Capturing moments, meaning and magic. Making sense of the world. On
+          the shoulders of giants, in the thick of it, behind the scenes and
+          fighting the good fight.
+        </TextBlock>
+      </Container>
     ),
   },
   {
     name: 'Text Field',
     component: () => (
-      <Stack
-        spaceInline="space040"
-        spaceStack="space100"
-        flow="horizontal-top"
-        wrap
-      >
+      <Grid>
         {textFieldStates.map(([id, {state}]) => (
-          <Container key={id}>
-            <Label htmlFor={id}>{id}</Label>
-            <TextField state={state} aria-describedby={`${id}-at`} id={id} />
-          </Container>
+          <Cell xs={12} sm={6} key={`${id}-textField`}>
+            <Block spaceStack="space050">
+              <LabelFlag>{id}</LabelFlag>
+            </Block>
+            <Label htmlFor={id}>Label</Label>
+            <TextField
+              state={state}
+              aria-describedby={`${id}-at`}
+              id={id}
+              placeholder="Enter your username"
+            />
+          </Cell>
         ))}
-      </Stack>
+      </Grid>
     ),
   },
   {
     name: 'Title Bar',
     component: () => (
-      <Stack
-        spaceInline="space040"
-        spaceStack="space100"
-        flow="horizontal-top"
-        wrap
-      >
-        <TitleBar>Title bar default state</TitleBar>
-        <TitleBar actionItem={link}>Title bar with link</TitleBar>
-        <TitleBar actionItem={() => <Button>Default button</Button>}>
-          Title bar with button
-        </TitleBar>
-        <TitleBar>
-          Title bar with Icon <IconFilledFigma height="30px" />
-        </TitleBar>
-      </Stack>
+      <>
+        <Block spaceStack="space090">
+          <LabelFlag>Default</LabelFlag>
+          <TitleBar>Title bar with link</TitleBar>
+        </Block>
+        <Block>
+          <LabelFlag>With Standalone Link</LabelFlag>
+          <TitleBar
+            actionItem={() => (
+              <LinkStandalone href="/">Standalone Link</LinkStandalone>
+            )}
+          >
+            Title Bar
+          </TitleBar>
+        </Block>
+      </>
     ),
   },
   {
     name: 'Toast',
     component: ({stylePreset}) => (
-      <Toast
-        overrides={{stylePreset, maxWidth: '100%'}}
-        key={getSSRId()}
-        title="lorem ipsum"
-        actions={() => (
-          <Button
-            size="small"
-            overrides={{stylePreset: 'buttonMinimalInverse'}}
+      <Stack spaceInline="space070" key={`${stylePreset}-toast`}>
+        <Stack spaceInline="space050">
+          <LabelFlag>
+            {returnLastLetterInCamelCase(stylePreset as string)}
+          </LabelFlag>
+          <Toast
+            overrides={{stylePreset, maxWidth: '100%'}}
+            key={getSSRId()}
+            title="lorem ipsum"
+            actions={() => (
+              <Button
+                size="small"
+                overrides={{stylePreset: 'buttonMinimalInverse'}}
+              >
+                dismiss
+              </Button>
+            )}
+            icon={
+              <IconFilledError
+                overrides={{
+                  size: 'iconSize020',
+                }}
+              />
+            }
           >
-            dismiss
-          </Button>
-        )}
-        icon={
-          <IconFilledError
-            overrides={{
-              size: 'iconSize020',
-            }}
-          />
-        }
-      >
-        {loremIpsum[0].slice(0, 55)}
-      </Toast>
+            {loremIpsum[0].slice(0, 55)}
+          </Toast>
+        </Stack>
+      </Stack>
     ),
   },
   {
     name: 'UnorderedList',
     component: () => (
-      <Stack spaceInline="space100" flow="horizontal-top">
-        <UnorderedList>{listData}</UnorderedList>
-        <UnorderedList listItemMarker={IconFilledMood}>
-          {listData}
-        </UnorderedList>
+      <Stack spaceInline="space100" flow={Flow.HorizontalTop}>
+        <Stack spaceInline="space050">
+          <LabelFlag>Horizontal</LabelFlag>
+          <UnorderedList listItemMarker={IconFilledAddCircle}>
+            {listData}
+          </UnorderedList>
+        </Stack>
+        <Stack spaceInline="space050">
+          <LabelFlag>Without marker</LabelFlag>
+          <UnorderedList>{listData}</UnorderedList>
+        </Stack>
       </Stack>
     ),
   },
@@ -962,33 +1262,40 @@ export const scenarios: Array<ComponentData> = [
         const [stateVerticalVolume, setVerticalVolume] = useState(0);
         return (
           <Stack
-            spaceInline="space040"
-            spaceStack="space100"
-            flow="horizontal-top"
+            spaceInline="space100"
+            flow={Flow.HorizontalTop}
+            spaceStack="space060"
+            wrap="wrap"
           >
-            <ContainerWithFixedWidth>
-              <VolumeControl
-                volume={stateVolume}
-                onChange={
-                  /* istanbul ignore next */ newValues => {
-                    /* istanbul ignore next */
-                    setVolume(newValues);
+            <Stack spaceInline="space050">
+              <LabelFlag>Horizontal</LabelFlag>
+              <Container>
+                <VolumeControl
+                  volume={stateVolume}
+                  onChange={
+                    /* istanbul ignore next */ newValues => {
+                      /* istanbul ignore next */
+                      setVolume(newValues);
+                    }
                   }
-                }
-              />
-            </ContainerWithFixedWidth>
-            <ContainerWithFixedHeight>
-              <VolumeControl
-                vertical
-                volume={stateVerticalVolume}
-                onChange={
-                  /* istanbul ignore next */ newValues => {
-                    /* istanbul ignore next */
-                    setVerticalVolume(newValues);
+                />
+              </Container>
+            </Stack>
+            <Stack spaceInline="space050">
+              <LabelFlag>Vertical</LabelFlag>
+              <Container height="300px">
+                <VolumeControl
+                  vertical
+                  volume={stateVerticalVolume}
+                  onChange={
+                    /* istanbul ignore next */ newValues => {
+                      /* istanbul ignore next */
+                      setVerticalVolume(newValues);
+                    }
                   }
-                }
-              />
-            </ContainerWithFixedHeight>
+                />
+              </Container>
+            </Stack>
           </Stack>
         );
       }),

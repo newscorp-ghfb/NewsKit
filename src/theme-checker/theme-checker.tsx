@@ -1,19 +1,13 @@
 import React, {useEffect, useState} from 'react';
+import {Block} from '../block';
 import {Flow, Stack} from '../stack';
 import {TextBlock} from '../text-block';
 import {MQ} from '../utils';
 import {toKebabCase} from '../utils/to-kabab-case';
 import {scenarios} from './scenarios';
-import {StyledStack} from './styled';
+import {StyledWrapper} from './styled';
 
-const stylePresetVariations = [
-  'Banner',
-  'Button',
-  'Flag',
-  'Icon Button',
-  'Inline Message',
-  'Toast',
-];
+const stylePresetVariations = ['Banner', 'Inline Message', 'Toast'];
 const StylePresetsLoader = ({
   name,
   children,
@@ -33,14 +27,14 @@ const StylePresetsLoader = ({
 
         setStylePresets(Object.keys(stylePreset));
       } catch (error) {
-        // To catch components with style variation but do not have style-preset file
+        // To catch components with style variation but do noxt have style-preset file
       }
     };
     dynamicallyImport();
   }, [name]);
   return (
     <Stack
-      spaceInline="space050"
+      spaceInline="space100"
       spaceStack="space050"
       wrap="wrap"
       flow={Flow.HorizontalTop}
@@ -57,24 +51,28 @@ const ThemeCheckerScenario = ({
   children: ({stylePreset}: {stylePreset?: MQ<string>}) => JSX.Element;
   name: string;
 }) => (
-  <StyledStack spaceInline="space030">
-    <TextBlock typographyPreset="utilityBody030" stylePreset="inkContrast">
-      {name}
-    </TextBlock>
+  <>
+    <Block spaceStack="space030">
+      <TextBlock typographyPreset="utilityHeading010" stylePreset="inkContrast">
+        {name}
+      </TextBlock>
+    </Block>
     {stylePresetVariations.includes(name) ? (
       <StylePresetsLoader name={name}>{children}</StylePresetsLoader>
     ) : (
       children({})
     )}
-  </StyledStack>
+  </>
 );
 
 export const ThemeChecker = () => (
   <>
     {scenarios.map(({name, component}) => (
-      <ThemeCheckerScenario key={name} name={name}>
-        {component}
-      </ThemeCheckerScenario>
+      <StyledWrapper key={`${name}-wrapper`}>
+        <ThemeCheckerScenario key={name} name={name}>
+          {component}
+        </ThemeCheckerScenario>
+      </StyledWrapper>
     ))}
   </>
 );
