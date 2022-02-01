@@ -140,11 +140,11 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
         },
       );
 
-    if (renderInModal) {
-      if (!isOpen) {
-        return <div ref={panelRef} />;
-      }
-
+    if (renderInModal && !isOpen) {
+      // this is needed for downshift in order to work properly
+      return <div ref={panelRef} />;
+    }
+    if (renderInModal && isOpen) {
       const [ModalComponent, modalProps] = getComponentOverrides(
         overrides?.modal,
         DefaultModal,

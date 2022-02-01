@@ -14,9 +14,8 @@ import {Label} from '../../label';
 import {AssistiveText} from '../../assistive-text';
 import {createTheme, ThemeProvider} from '../../theme';
 import {IconFilledCheckCircle, IconFilledAccountBalance} from '../../icons';
-import {Modal} from '../../modal/modal';
+import {Modal, ModalProps} from '../../modal';
 import {Button} from '../../button/button';
-import {ModalProps} from '../../modal/types';
 
 const items = [
   'Neptunium',
