@@ -1,4 +1,5 @@
 import {Block} from '../block';
+import {Visible} from '../grid';
 import {getColorCssFromTheme, getSpacingCssFromTheme, styled} from '../utils';
 
 export const ModalWrapper = styled.div`
@@ -46,4 +47,8 @@ export const Container = styled(Block)<{
   height: ${({height}) => height || '150px'};
   border: ${({theme, border}) =>
     border ? `solid 1px ${theme.colors.red050}` : null};
+`;
+
+export const StyledFullWidthVisible = styled(Visible)`
+  width: 100%;
 `;

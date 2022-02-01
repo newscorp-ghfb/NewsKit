@@ -8,6 +8,7 @@ import {TextBlock} from '../text-block';
 import {Tag} from '../tag';
 import {IconFilledAddCircle} from '../icons';
 import {MQ} from '../utils';
+import {Button, ButtonOrButtonLinkProps} from '../button';
 
 const themeCheckerTheme = createTheme({
   name: 'themeCheckerTheme',
@@ -118,6 +119,7 @@ export const renderCard = (
     media={{
       src: '/placeholder-3x2.png',
       alt: 'Card Media',
+      placeholderIcon: true,
     }}
     actions={() => (
       <Tag size="small" href="/">
@@ -137,6 +139,7 @@ export const renderCardInset = (
     media={{
       src: '/placeholder-3x2.png',
       alt: 'Card Media',
+      placeholderIcon: true,
     }}
     actions={() => (
       <Tag size="small" href="/">
@@ -146,4 +149,17 @@ export const renderCardInset = (
   >
     {cardBody({inset: true})}
   </CardInset>
+);
+
+export const CTABtn = ({
+  children,
+  overrides,
+  ...restProps
+}: ButtonOrButtonLinkProps) => (
+  <Button
+    overrides={{stylePreset: 'buttonSolidInverse', width: '100%', ...overrides}}
+    {...restProps}
+  >
+    {/* istanbul ignore next */ children || 'CTA Button'}
+  </Button>
 );

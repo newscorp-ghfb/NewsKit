@@ -7,13 +7,14 @@ import {
   Container,
   DrawerContainer,
   ModalWrapper,
+  StyledFullWidthVisible,
   StyledInput,
   StyledLabel,
 } from './styled';
 import {Tag} from '../tag';
 import {LinkInline, LinkStandalone} from '../link';
 import {IconButton} from '../icon-button';
-import {Button, ButtonSize} from '../button';
+import {Button} from '../button';
 import {
   IconFilledAddCircle,
   IconFilledEmail,
@@ -39,7 +40,7 @@ import {AlignSelfValues, StackChild} from '../stack-child';
 import {EmailInput} from '../email-input';
 import {Fieldset} from '../fieldset';
 import {Checkbox} from '../checkbox';
-import {Flag, FlagSize} from '../flag';
+import {Flag} from '../flag';
 import {Image} from '../image';
 import {
   Form,
@@ -56,7 +57,7 @@ import {Scroll} from '../scroll';
 import {Select, SelectOption} from '../select';
 import {ShareBar} from '../share-bar';
 import {StatefulSlider} from '../slider';
-import {Tab, Tabs, TabsDistribution, TabSize} from '../tabs';
+import {Tab, Tabs, TabsDistribution} from '../tabs';
 import {TitleBar} from '../title-bar';
 import {Toast} from '../toast';
 import {UnorderedList} from '../unordered-list';
@@ -71,6 +72,7 @@ import {
   renderCard,
   renderCardInset,
   useActiveState,
+  CTABtn,
 } from './helper';
 import {
   StructuredList,
@@ -207,7 +209,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Assistive Text',
     component: () => (
       <Stack
-        spaceInline="space100"
+        spaceInline="space110"
         spaceStack="space060"
         flow={Flow.HorizontalTop}
         wrap="wrap"
@@ -249,28 +251,70 @@ export const scenarios: Array<ComponentData> = [
   },
   {
     name: 'Banner',
-    component: ({stylePreset}) => (
-      <Stack spaceInline="space050" key={`${stylePreset}-banner`}>
-        <LabelFlag>
-          {returnLastLetterInCamelCase(stylePreset as string)}
-        </LabelFlag>
-        <Banner
-          aria-label={`Banner with ${stylePreset}`}
-          title="Banner title"
-          icon={
-            <IconFilledInfo
-              overrides={{
-                size: 'iconSize020',
-                stylePreset: 'inkInverse',
-              }}
-            />
-          }
-          overrides={{stylePreset}}
-        >
-          Here goes a brief line or two describing the toast information.
-        </Banner>
-      </Stack>
-    ),
+    component: ({stylePreset}) =>
+      React.createElement(() => {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        const [isActive, setIsActive] = React.useState(true);
+        /* istanbul ignore next */
+        const close = () => setIsActive(false);
+        /* istanbul ignore next */
+        const action = () => {
+          /* istanbul ignore next */
+          console.log('CTA Called!');
+        };
+        return (
+          <Stack spaceInline="space050" key={`${stylePreset}-banner`}>
+            <LabelFlag>
+              {returnLastLetterInCamelCase(stylePreset as string)}
+            </LabelFlag>
+            <Banner
+              aria-label={`Banner with ${stylePreset}`}
+              title="Banner title"
+              icon={
+                <IconFilledInfo
+                  overrides={{
+                    size: 'iconSize020',
+                    stylePreset: 'inkInverse',
+                  }}
+                />
+              }
+              actions={[
+                () => (
+                  <>
+                    <StyledFullWidthVisible xs sm>
+                      <CTABtn
+                        onClick={
+                          /* istanbul ignore next */ () => {
+                            action();
+                          }
+                        }
+                      >
+                        CTA button
+                      </CTABtn>
+                    </StyledFullWidthVisible>
+                    <StyledFullWidthVisible md lg xl>
+                      <CTABtn
+                        size="small"
+                        onClick={
+                          /* istanbul ignore next */ () => {
+                            action();
+                          }
+                        }
+                      >
+                        CTA button
+                      </CTABtn>
+                    </StyledFullWidthVisible>
+                  </>
+                ),
+              ]}
+              onClose={close}
+              overrides={{stylePreset}}
+            >
+              Here goes a brief line or two describing the toast information.
+            </Banner>
+          </Stack>
+        );
+      }),
   },
   {
     name: 'Block',
@@ -286,7 +330,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Button',
     component: () => (
       <Stack
-        spaceInline="space100"
+        spaceInline="space110"
         spaceStack="space060"
         flow={Flow.HorizontalTop}
         wrap="wrap"
@@ -300,7 +344,6 @@ export const scenarios: Array<ComponentData> = [
                   <LabelFlag prefix="secondary">{kind}</LabelFlag>
                   <Button
                     key={getSSRId()}
-                    size={ButtonSize.Small}
                     overrides={{stylePreset: `button${kind}${preset}`}}
                   >
                     Button
@@ -333,7 +376,7 @@ export const scenarios: Array<ComponentData> = [
     component: () => (
       <Stack
         flow={Flow.HorizontalTop}
-        spaceInline="space100"
+        spaceInline="space110"
         spaceStack="space060"
         wrap="wrap"
       >
@@ -342,6 +385,7 @@ export const scenarios: Array<ComponentData> = [
             src="/placeholder-3x2.png"
             alt="Example Image"
             overrides={{width: '300px', height: '200px'}}
+            placeholderIcon
           />
           <Caption creditText="Credit text">Image with Caption</Caption>
         </Stack>
@@ -350,6 +394,7 @@ export const scenarios: Array<ComponentData> = [
             src="/placeholder-3x2.png"
             alt="Example Image"
             overrides={{width: '300px', height: '200px'}}
+            placeholderIcon
           />
           <CaptionInset creditText="Credit text">
             Image with Caption Inset
@@ -411,7 +456,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Checkbox',
     component: () => (
       <Stack
-        spaceInline="space100"
+        spaceInline="space110"
         spaceStack="space060"
         flow={Flow.HorizontalTop}
         wrap="wrap"
@@ -429,7 +474,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Date Time',
     component: () => (
       <Stack
-        spaceInline="space100"
+        spaceInline="space110"
         spaceStack="space060"
         flow={Flow.HorizontalTop}
         wrap="wrap"
@@ -460,7 +505,7 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Divider',
     component: () => (
-      <Stack spaceInline="space100" flow={Flow.HorizontalTop} wrap="wrap">
+      <Stack spaceInline="space110" flow={Flow.HorizontalTop} wrap="wrap">
         <Stack spaceInline="space050">
           <LabelFlag>Horizontal</LabelFlag>
           <Container border height="50px" width="">
@@ -490,7 +535,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Email Input',
     component: () => (
       <Stack
-        spaceInline="space100"
+        spaceInline="space110"
         flow={Flow.HorizontalTop}
         spaceStack="space060"
         wrap="wrap"
@@ -554,7 +599,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Fieldset',
     component: () => (
       <Stack
-        spaceInline="space100"
+        spaceInline="space110"
         flow={Flow.HorizontalTop}
         spaceStack="space060"
         wrap="wrap"
@@ -589,7 +634,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Flag',
     component: () => (
       <Stack
-        spaceInline="space100"
+        spaceInline="space110"
         spaceStack="space060"
         flow={Flow.HorizontalTop}
         wrap="wrap"
@@ -603,7 +648,6 @@ export const scenarios: Array<ComponentData> = [
                   <LabelFlag prefix="secondary">{kind}</LabelFlag>
                   <Flag
                     key={getSSRId()}
-                    size={FlagSize.Small}
                     overrides={{stylePreset: `flag${kind}${preset}`}}
                   >
                     Flag
@@ -714,7 +758,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Icon Button',
     component: () => (
       <Stack
-        spaceInline="space100"
+        spaceInline="space110"
         spaceStack="space060"
         flow={Flow.HorizontalTop}
         wrap="wrap"
@@ -729,7 +773,6 @@ export const scenarios: Array<ComponentData> = [
                   <IconButton
                     key={getSSRId()}
                     aria-label="Add icon"
-                    size={ButtonSize.Small}
                     overrides={{stylePreset: `iconButton${kind}${preset}`}}
                   >
                     <IconFilledAddCircle overrides={{size: 'iconSize010'}} />
@@ -904,7 +947,7 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Link',
     component: () => (
-      <Stack spaceInline="space100" flow={Flow.HorizontalTop}>
+      <Stack spaceInline="space110" flow={Flow.HorizontalTop}>
         <Stack spaceInline="space050">
           <LabelFlag>Inline</LabelFlag>
           <LinkInline href="/">Inline link</LinkInline>
@@ -920,7 +963,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Menu',
     component: () => (
       <Stack
-        spaceInline="space100"
+        spaceInline="space110"
         flow={Flow.HorizontalTop}
         spaceStack="space060"
         wrap="wrap"
@@ -952,7 +995,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Scroll',
     component: () => (
       <Stack
-        spaceInline="space100"
+        spaceInline="space110"
         flow={Flow.HorizontalTop}
         spaceStack="space060"
         wrap="wrap"
@@ -994,7 +1037,7 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Share Bar',
     component: () => (
-      <Stack spaceInline="space100" flow={Flow.HorizontalTop}>
+      <Stack spaceInline="space110" flow={Flow.HorizontalTop}>
         <Stack spaceInline="space050">
           <LabelFlag>Horizontal</LabelFlag>
           <ShareBar label="Share" role="region">
@@ -1006,7 +1049,6 @@ export const scenarios: Array<ComponentData> = [
             ].map(([name, icon]) => (
               <IconButton
                 aria-label={`Share on ${name}`}
-                size={ButtonSize.Small}
                 overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
                 key={getSSRId()}
               >
@@ -1032,7 +1074,6 @@ export const scenarios: Array<ComponentData> = [
             ].map(([name, icon]) => (
               <IconButton
                 aria-label={`Share on ${name}`}
-                size={ButtonSize.Small}
                 overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
                 key={getSSRId()}
               >
@@ -1048,7 +1089,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Slider',
     component: () => (
       <Stack
-        spaceInline="space100"
+        spaceInline="space110"
         flow={Flow.HorizontalTop}
         spaceStack="space060"
         wrap="wrap"
@@ -1089,7 +1130,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Tabs',
     component: () => (
       <Stack
-        spaceInline="space100"
+        spaceInline="space110"
         flow={Flow.HorizontalTop}
         spaceStack="space060"
         wrap="wrap"
@@ -1097,29 +1138,32 @@ export const scenarios: Array<ComponentData> = [
         <Stack spaceInline="space050">
           <LabelFlag>Horizontal</LabelFlag>
           <Container>
-            <Tabs
-              size={TabSize.Small}
-              divider
-              distribution={TabsDistribution.Equal}
-            >
-              <Tab label="Tab 1">Lorem ipsum</Tab>
-              <Tab label="Tab 2">Consectetur adipiscing</Tab>
-              <Tab label="Tab 3">Magna</Tab>
+            <Tabs divider distribution={TabsDistribution.Equal}>
+              <Tab label="Tab 1">
+                <P>Lorem ipsum</P>
+              </Tab>
+              <Tab label="Tab 2">
+                <P>Consectetur adipiscing</P>
+              </Tab>
+              <Tab label="Tab 3">
+                <P>Magna</P>
+              </Tab>
             </Tabs>
           </Container>
         </Stack>
         <Stack spaceInline="space050">
           <LabelFlag>Vertical</LabelFlag>
-          <Container>
-            <Tabs
-              vertical
-              size={TabSize.Small}
-              divider
-              distribution={TabsDistribution.Equal}
-            >
-              <Tab label="Tab 1">Lorem ipsum</Tab>
-              <Tab label="Tab 2">Consectetur adipiscing</Tab>
-              <Tab label="Tab 3">Magna</Tab>
+          <Container height="400px">
+            <Tabs vertical divider distribution={TabsDistribution.Equal}>
+              <Tab label="Tab 1">
+                <P>Lorem ipsum</P>
+              </Tab>
+              <Tab label="Tab 2">
+                <P>Consectetur adipiscing</P>
+              </Tab>
+              <Tab label="Tab 3">
+                <P>Magna</P>
+              </Tab>
             </Tabs>
           </Container>
         </Stack>
@@ -1130,7 +1174,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Tag',
     component: () => (
       <Stack
-        spaceInline="space100"
+        spaceInline="space110"
         flow={Flow.HorizontalTop}
         spaceStack="space060"
         wrap="wrap"
@@ -1187,11 +1231,15 @@ export const scenarios: Array<ComponentData> = [
     component: () => (
       <>
         <Block spaceStack="space090">
-          <LabelFlag>Default</LabelFlag>
+          <Block spaceStack="space050">
+            <LabelFlag>Default</LabelFlag>
+          </Block>
           <TitleBar>Title bar with link</TitleBar>
         </Block>
         <Block>
-          <LabelFlag>With Standalone Link</LabelFlag>
+          <Block spaceStack="space050">
+            <LabelFlag>With Standalone Link</LabelFlag>
+          </Block>
           <TitleBar
             actionItem={() => (
               <LinkStandalone href="/">Standalone Link</LinkStandalone>
@@ -1214,13 +1262,12 @@ export const scenarios: Array<ComponentData> = [
           <Toast
             overrides={{stylePreset, maxWidth: '100%'}}
             key={getSSRId()}
-            title="lorem ipsum"
             actions={() => (
               <Button
                 size="small"
                 overrides={{stylePreset: 'buttonMinimalInverse'}}
               >
-                dismiss
+                Undo
               </Button>
             )}
             icon={
@@ -1231,7 +1278,7 @@ export const scenarios: Array<ComponentData> = [
               />
             }
           >
-            {loremIpsum[0].slice(0, 55)}
+            Here goes a brief line or two describing the toast information.
           </Toast>
         </Stack>
       </Stack>
@@ -1240,7 +1287,7 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'UnorderedList',
     component: () => (
-      <Stack spaceInline="space100" flow={Flow.HorizontalTop}>
+      <Stack spaceInline="space110" flow={Flow.HorizontalTop}>
         <Stack spaceInline="space050">
           <LabelFlag>Horizontal</LabelFlag>
           <UnorderedList listItemMarker={IconFilledAddCircle}>
@@ -1262,7 +1309,7 @@ export const scenarios: Array<ComponentData> = [
         const [stateVerticalVolume, setVerticalVolume] = useState(0);
         return (
           <Stack
-            spaceInline="space100"
+            spaceInline="space110"
             flow={Flow.HorizontalTop}
             spaceStack="space060"
             wrap="wrap"
