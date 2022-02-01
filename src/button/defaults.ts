@@ -9,13 +9,12 @@ export default {
       iconSize: 'iconSize010',
       spaceInline: 'space020',
       transitionPreset:{
-        extend: 'backgroundColorChange',
-        base: {
-          transitionProperty: 'background-color',
-          transitionDuration: '{{motions.motionDuration010}}',
-          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-        },
+      extend: 'backgroundColorChange',
+      base: {
+        transitionDuration: '{{motions.motionDuration020}}',
       },
+    },
+
       loadingIndicator: {
         stylePreset: 'indeterminateProgressIndicatorPrimary',
       },
@@ -31,9 +30,7 @@ export default {
       transitionPreset:{
         extend: 'backgroundColorChange',
         base: {
-          transitionProperty: 'background-color',
-          transitionDuration: '{{motions.motionDuration010}}',
-          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+          transitionDuration: '{{motions.motionDuration020}}',
         },
       },
       loadingIndicator: {
@@ -52,7 +49,7 @@ export default {
         extend: 'backgroundColorChange',
         base: {
           transitionProperty: 'background-color',
-          transitionDuration: '{{motions.motionDuration010}}',
+          transitionDuration: '{{motions.motionDuration020}}',
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
       },

@@ -73,7 +73,7 @@ const myCustomTheme = createTheme({
       },
     },
     transitionPresets: {
-      backgroundColorChange: {
+      myTransition: {
         base: {
           transitionProperty: 'background-color',
           transitionDuration: '{{motions.motionDuration040}}',
@@ -215,14 +215,7 @@ export const StoryFullAndFixedWidthButton = () => (
               overrides={{
                 width: 'sizing120',
                 stylePreset: 'myButton',
-                transitionPreset: {
-                  extend: 'backgroundColorChange',
-                  base: {
-                    transitionDuration: '500ms',
-                  },
-                },
-
-                //transitionPreset: 'backgroundColorChange',
+                transitionPreset: 'myTransition',
               }}
             >
               Small fixed-width button

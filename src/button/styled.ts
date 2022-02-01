@@ -5,8 +5,9 @@ import {ButtonOrButtonLinkProps} from './types';
 
 export const StyledFlag = styled(Flag)<Omit<ButtonOrButtonLinkProps, 'size'>>`
   margin: 0; //reset for safari
+
   ${({size}) =>
-  getTransitionPreset(`button.${size}`, `${size}`, 'nk-button')}};
+  getTransitionPreset(`button.${size}`,'')}};
   ${({loading, disabled}) => {
     if (disabled) {
       return null;
