@@ -7,7 +7,7 @@ describe('Meta', () => {
     const props = {
       status: MetaStatus.Supported,
       introduced: 'v0.1',
-      codeUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
+      codeUrl: 'https://github.com/newscorp-ghfb/newskit',
     };
     const fragment = renderToFragmentWithTheme(Meta, props);
     expect(fragment).toMatchSnapshot();
@@ -16,8 +16,8 @@ describe('Meta', () => {
     const props = {
       status: MetaStatus.Supported,
       introduced: 'v0.1',
-      codeUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
-      figmaUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
+      codeUrl: 'https://github.com/newscorp-ghfb/newskit',
+      figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
     };
     const fragment = renderToFragmentWithTheme(Meta, props);
     expect(fragment).toMatchSnapshot();

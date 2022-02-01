@@ -30,4 +30,5 @@ export const FormInputContext = createContext<{
   labelId?: string;
   assistiveTextId?: string;
   statusIcon?: React.ReactNode;
+  isRequired?: boolean;
 }>({});

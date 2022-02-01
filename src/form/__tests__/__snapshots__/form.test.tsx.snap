@@ -3600,6 +3600,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
     >
       <input
         aria-describedby="email-assistive-text"
+        aria-invalid="false"
+        aria-required="true"
         class="emotion-2"
         data-testid="text-field-email"
         id="email"
@@ -4334,6 +4336,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
     >
       <input
         aria-describedby="email-assistive-text"
+        aria-invalid="false"
+        aria-required="true"
         class="emotion-2"
         data-testid="text-field-email"
         id="email"
@@ -4716,6 +4720,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   >
     <input
       aria-describedby="email-assistive-text"
+      aria-invalid="false"
+      aria-required="true"
       class="emotion-1"
       data-testid="text-field-email"
       id="email"
@@ -5857,6 +5863,8 @@ exports[`FormInput renders with error and with submit validation and revalidatio
     >
       <input
         aria-describedby="mock-nk-1-assistive-text"
+        aria-invalid="false"
+        aria-required="true"
         class="emotion-2"
         data-testid="text-field-email"
         id="mock-nk-1"
@@ -5931,6 +5939,8 @@ exports[`FormInput renders with error and with submit validation and revalidatio
     >
       <input
         aria-describedby="mock-nk-1-assistive-text"
+        aria-invalid="false"
+        aria-required="true"
         class="emotion-2"
         data-testid="text-field-username"
         id="mock-nk-1"
@@ -6154,6 +6164,8 @@ exports[`FormInput renders with nested inputs 1`] = `
   >
     <input
       aria-describedby="mock-nk-1-assistive-text"
+      aria-invalid="false"
+      aria-required="true"
       class="emotion-1"
       data-testid="text-field-email"
       id="mock-nk-1"
@@ -6420,6 +6432,8 @@ exports[`FormInput renders with nested inputs 1`] = `
   >
     <input
       aria-describedby="mock-nk-1-assistive-text"
+      aria-invalid="false"
+      aria-required="true"
       class="emotion-1"
       data-testid="text-field-username"
       id="mock-nk-1"
