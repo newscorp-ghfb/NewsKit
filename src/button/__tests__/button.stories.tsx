@@ -172,7 +172,7 @@ export const StoryButtonSize = () => (
           size={ButtonSize.Small}
           overrides={{
             stylePreset: 'testButtonSolidPrimary',
-            transitionPresets: ['backgroundColorChange','borderColorChange' ],
+            transitionPreset: 'backgroundColorChange',
           }}
         >
           Small button
@@ -215,7 +215,14 @@ export const StoryFullAndFixedWidthButton = () => (
               overrides={{
                 width: 'sizing120',
                 stylePreset: 'myButton',
-                transitionPresets: 'backgroundColorChange',
+                transitionPreset: {
+                  extend: 'backgroundColorChange',
+                  base: {
+                    transitionDuration: '500ms',
+                  },
+                },
+
+                //transitionPreset: 'backgroundColorChange',
               }}
             >
               Small fixed-width button
