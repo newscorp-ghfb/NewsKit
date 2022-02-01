@@ -8,6 +8,7 @@ import {MediaQueryProvider} from '../utils/hooks/use-media-query';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {showInModal} from './utils';
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -150,8 +151,12 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       offsetLeft: left = 0,
     } = (selectRef && selectRef.current) || {};
 
+    const SelectWrapper = showInModal(useModal)
+      ? MediaQueryProvider
+      : React.Fragment;
+
     return (
-      <MediaQueryProvider>
+      <SelectWrapper>
         <SelectButton
           size={size}
           placeholder={placeholder}
@@ -191,7 +196,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         >
           {children}
         </SelectPanel>
-      </MediaQueryProvider>
+      </SelectWrapper>
     );
   },
 );

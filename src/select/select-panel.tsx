@@ -42,13 +42,7 @@ interface SelectPanelProps {
   buttonRef: React.RefObject<HTMLButtonElement>;
 }
 
-const DefaultModal = withDefaultProps(
-  Modal,
-  {
-    onDismiss: () => null,
-  },
-  'select.modal',
-);
+const DefaultModal = withDefaultProps(Modal, {}, 'select.modal');
 
 const StyledOptionWithPrivateProps = React.forwardRef<
   HTMLDivElement,
@@ -112,7 +106,7 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
     const modalMQKeys = Object.keys(useModal || {}).filter(Boolean);
     const currentMQ = useBreakpointKey();
 
-    const renderInModal = modalMQKeys.includes(currentMQ);
+    const renderInModal = modalMQKeys.includes(currentMQ) || useModal === true;
 
     const optionsAsChildren =
       isOpen &&
