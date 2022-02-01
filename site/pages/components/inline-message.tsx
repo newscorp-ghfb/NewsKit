@@ -155,7 +155,7 @@ export default (layoutProps: LayoutProps) => (
         {
           title: 'Intent',
           description:
-            'An inline message has three intents: informative and negative. Each intent is used to communicate a specific semantic tone to the user.',
+            'An inline message has two intents: informative and negative. Each intent is used to communicate a specific semantic tone to the user.',
           media: getIllustrationComponent(
             'components/inline-message/inline-message-options-intent-illustration',
           ),
