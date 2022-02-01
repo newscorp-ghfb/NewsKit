@@ -24,7 +24,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       size = 'medium',
       loading,
       children,
-      modal = {},
+      useModal = {},
       ...restProps
     } = props;
 
@@ -175,7 +175,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         />
         <SelectPanel
           isOpen={isOpen}
-          overrides={overrides?.panel}
+          overrides={overrides}
           width={width}
           height={height}
           top={top}
@@ -185,7 +185,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           highlightedIndex={highlightedIndex}
           getItemProps={getItemProps}
           buttonRef={localInputRef}
-          modal={modal}
+          useModal={useModal}
           {...downshiftMenuPropsExceptRef}
           ref={composeRefs(panelRef, downshiftMenuPropsRef)}
         >

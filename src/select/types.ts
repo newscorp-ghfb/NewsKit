@@ -1,6 +1,8 @@
 import React from 'react';
 import {EnhancerOverrides, CommonInputProps} from '../form/types';
 import {MQ} from '../utils/style';
+import {Override} from '../utils/overrides';
+import {ModalProps} from '../modal';
 
 export type ButtonSelectSize = 'small' | 'medium' | 'large';
 
@@ -32,10 +34,11 @@ export interface SelectProps extends CommonInputProps {
   loading?: boolean;
   children: Array<React.ReactElement<SelectOptionProps>>;
   validationIcon?: React.ReactNode;
-  modal?: MQ<boolean>;
+  useModal?: MQ<boolean>;
   overrides?: {
     button?: SelectButtonOverrides;
     panel?: SelectPanelOverrides;
+    modal?: Override<ModalProps>;
   };
 }
 

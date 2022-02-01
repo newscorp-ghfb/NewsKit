@@ -9,21 +9,19 @@ import {
   StyledOption,
   StyledOptionIcon,
   StyledSelectPanel,
-  StyledSelectPanelAsDialog,
-  StyledSelectPanelAsDialogWrapper,
   StyledSelectPanelBody,
-  StyledSelectPanelHeader,
 } from './styled';
 import {ScreenReaderOnly} from '../screen-reader-only';
 import {useBreakpointKey, useReactKeys} from '../utils/hooks';
 
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
-import {IconFilledCheck, IconFilledClose} from '../icons';
-import {Overlay} from '../overlay/overlay';
-import {IconButton} from '../icon-button/icon-button';
+import {IconFilledCheck} from '../icons';
+
 import {MQ} from '../utils/style/types';
-import {Modal} from '../modal';
+import {Modal, ModalProps} from '../modal';
+import {withDefaultProps} from '../utils/with-default-props';
+import {getComponentOverrides, Override} from '../utils/overrides';
 
 interface SelectPanelProps {
   isOpen: boolean;
@@ -35,11 +33,22 @@ interface SelectPanelProps {
   getItemProps: Function;
   selectedItem?: React.ReactElement<SelectOptionProps>;
   highlightedIndex?: number;
-  overrides?: SelectPanelOverrides;
+  overrides?: {
+    panel?: SelectPanelOverrides;
+    modal?: Override<ModalProps>;
+  };
   children: React.ReactElement<SelectOptionProps>[];
-  modal?: MQ<boolean>;
+  useModal?: MQ<boolean>;
   buttonRef: React.RefObject<HTMLButtonElement>;
 }
+
+const DefaultModal = withDefaultProps(
+  Modal,
+  {
+    onDismiss: () => null,
+  },
+  'select.modal',
+);
 
 const StyledOptionWithPrivateProps = React.forwardRef<
   HTMLDivElement,
@@ -93,13 +102,14 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       selectedItem,
       highlightedIndex,
       buttonRef,
-      modal,
+      useModal,
+      overrides,
       ...restProps
     } = props;
 
     const listDescriptionId = useReactKeys(1)[0];
 
-    const modalMQKeys = Object.keys(modal || {}).filter(Boolean);
+    const modalMQKeys = Object.keys(useModal || {}).filter(Boolean);
     const currentMQ = useBreakpointKey();
 
     const renderInModal = modalMQKeys.includes(currentMQ);
@@ -134,40 +144,23 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       if (!isOpen) {
         return <div ref={panelRef} />;
       }
+
+      const [ModalComponent, modalProps] = getComponentOverrides(
+        overrides?.modal,
+        DefaultModal,
+        {
+          open: isOpen,
+          restoreFocusTo: buttonRef.current!,
+        },
+      );
+
       return (
-        <Modal
-          open={isOpen}
-          onDismiss={() => null}
-          restoreFocusTo={buttonRef.current!}
-          overrides={{
-            header: {spaceInset: 'space000', minHeight: 'sizing000'},
-            panel: {maxHeight: '80vh'},
-            content: {spaceInset: 'space010'},
-            closeButton: {spaceInset: 'space000'},
-          }}
-        >
+        <ModalComponent {...(modalProps as ModalProps)}>
           <StyledSelectPanelBody ref={panelRef} {...restProps}>
             {optionsAsChildren}
           </StyledSelectPanelBody>
-        </Modal>
+        </ModalComponent>
       );
-      // return (
-      //   <>
-      //     <Overlay open={isOpen} />
-      //     <StyledSelectPanelAsDialogWrapper $isOpen={isOpen}>
-      //       <StyledSelectPanelAsDialog $size={size}>
-      //         <StyledSelectPanelHeader>
-      //           <IconButton aria-label="close" onClick={onClose}>
-      //             <IconFilledClose />
-      //           </IconButton>
-      //         </StyledSelectPanelHeader>
-      //         <StyledSelectPanelBody ref={panelRef} {...restProps}>
-      //           {optionsAsChildren}
-      //         </StyledSelectPanelBody>
-      //       </StyledSelectPanelAsDialog>
-      //     </StyledSelectPanelAsDialogWrapper>
-      //   </>
-      // );
     }
     return (
       <>
@@ -184,6 +177,7 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
           $left={left}
           $size={size}
           ref={panelRef}
+          overrides={overrides?.panel}
           {...restProps}
         >
           {optionsAsChildren}

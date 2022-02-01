@@ -14,6 +14,9 @@ import {Label} from '../../label';
 import {AssistiveText} from '../../assistive-text';
 import {createTheme, ThemeProvider} from '../../theme';
 import {IconFilledCheckCircle, IconFilledAccountBalance} from '../../icons';
+import {Modal} from '../../modal/modal';
+import {Button} from '../../button/button';
+import {ModalProps} from '../../modal/types';
 
 const items = [
   'Neptunium',
@@ -651,127 +654,107 @@ export const StorySelectScreenReaderExample = () => (
 );
 StorySelectScreenReaderExample.storyName = 'Select screen reader example';
 
-export const StorySelectSimple = () => (
-  <>
-    <StorybookHeading>Select sizes</StorybookHeading>
-    <Container>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
-        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
-        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
-      </p>
-      <Stack flow={'horizontal-center'} spaceInline="space050">
-        <Block>
-          <StorybookSubHeading>Small</StorybookSubHeading>
-          <Label htmlFor="id-1" size={'small' as TextFieldSize}>
-            Label
-          </Label>
-          <Select
-            aria-describedby="id-1-at"
-            id="id-1"
-            size="small"
-            overrides={{
-              button: {width: '100%'},
-              panel: {width: '320px', maxHeight: 'calc( 80vh - 40px )'},
-            }}
-          >
-            {items.map(item => (
-              <SelectOption key={item} value={item}>
-                {item}
-              </SelectOption>
-            ))}
-          </Select>
-          <AssistiveText id="id-2-at" size={'small' as TextFieldSize}>
-            Assistive Text
-          </AssistiveText>
-        </Block>
-        <Block>
-          <StorybookSubHeading>Small</StorybookSubHeading>
-          <Label htmlFor="id-3" size={'small' as TextFieldSize}>
-            Label
-          </Label>
-          <Select
-            aria-describedby="id-3-at"
-            id="id-3"
-            size="small"
-            overrides={{
-              button: {width: '100%'},
-              panel: {width: '300px', maxHeight: 'calc( 80vh - 40px )'},
-            }}
-          >
-            {items.map(item => (
-              <SelectOption key={item} value={item}>
-                {item}
-              </SelectOption>
-            ))}
-          </Select>
-          <AssistiveText id="id-3-at" size={'small' as TextFieldSize}>
-            Assistive Text
-          </AssistiveText>
-        </Block>
-      </Stack>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
-        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
-        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
-      </p>
-      <Block>
-        <Label htmlFor="id-2" size={'small' as TextFieldSize}>
-          Select with modal
-        </Label>
-        <Select
-          aria-describedby="id-2-at"
-          id="id-2"
-          size="small"
-          overrides={{button: {width: '100%'}}}
-          modal={{xs: true}}
-        >
-          {items.map(item => (
-            <SelectOption key={item} value={item}>
-              {item}
-            </SelectOption>
-          ))}
-        </Select>
-        <AssistiveText id="id-2-at" size={'small' as TextFieldSize}>
-          Assistive Text
-        </AssistiveText>
-      </Block>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
-        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
-        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
-        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
-        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
-        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
-        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
-        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
-        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
-        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
-        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
-        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
-        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim ex
-        qui impedit alias maxime, recusandae beatae porro officia ut, quisquam
-        pariatur fugiat. Minus itaque ratione vitae cupiditate eius nisi.
-      </p>
-    </Container>
-  </>
-);
-StorySelectSimple.storyName = 'Select simple';
+const CustomModalContainer = styled.div`
+  max-height: 250px;
+  overflow-x: auto;
+`;
+
+const selectWithModalVariants = [
+  {
+    label: 'defaut',
+    props: {overrides: {button: {width: '100%'}}},
+  },
+  {
+    label: 'style overrides',
+    props: {
+      overrides: {
+        button: {width: '100%'},
+        modal: {
+          header: {spaceInset: 'space000'},
+          panel: {maxHeight: '50vh', maxWidth: '280px'},
+          content: {spaceInset: 'space010'},
+          closeButton: {spaceInset: 'space000'},
+        },
+      },
+    },
+  },
+  {
+    label: 'props override',
+    props: {
+      overrides: {
+        button: {width: '100%'},
+        modal: {
+          props: {
+            closePosition: 'none',
+          },
+        },
+      },
+    },
+  },
+  {
+    label: 'component override',
+    props: {
+      overrides: {
+        button: {width: '100%'},
+        modal: ({children, ...restProps}: ModalProps) => (
+          <Modal {...restProps} closePosition="none">
+            <CustomModalContainer>{children}</CustomModalContainer>
+            <Button>Close dialog</Button>
+          </Modal>
+        ),
+      },
+    },
+  },
+];
+
+export const StorySelectInModal = () => {
+  const selectOptions = items.map(item => (
+    <SelectOption key={item} value={item}>
+      {item}
+    </SelectOption>
+  ));
+
+  return (
+    <>
+      <StorybookHeading>Select useModal</StorybookHeading>
+      <Container>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim
+          ex qui impedit alias maxime, recusandae beatae porro officia ut,
+          quisquam pariatur fugiat. Minus itaque ratione vitae cupiditate eius
+          nisi.
+        </p>
+        {selectWithModalVariants.map(({label, props}, indx) => (
+          <Block spaceStack="space050">
+            <Label htmlFor={`id-modal-${indx}`} size={'small' as TextFieldSize}>
+              Select with modal ( {label} )
+            </Label>
+            <Select
+              aria-describedby={`id-modal-${indx}-at`}
+              id={`id-modal-${indx}`}
+              size="small"
+              useModal={{xs: true}}
+              {...props}
+            >
+              {selectOptions}
+            </Select>
+            <AssistiveText
+              id={`id-modal-${indx}-at`}
+              size={'small' as TextFieldSize}
+            >
+              Assistive Text
+            </AssistiveText>
+          </Block>
+        ))}
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim
+          ex qui impedit alias maxime, recusandae beatae porro officia ut,
+          quisquam pariatur fugiat. Minus itaque ratione vitae cupiditate eius
+          nisi.
+        </p>
+      </Container>
+    </>
+  );
+};
+StorySelectInModal.storyName = 'useModal';

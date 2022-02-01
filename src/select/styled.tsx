@@ -8,7 +8,7 @@ import {
   getResponsiveSize,
   getSpacingCssFromTheme,
 } from '../utils/style';
-import {ButtonSelectSize} from './types';
+import {ButtonSelectSize, SelectPanelOverrides} from './types';
 
 const generateCursor = (disabled?: boolean, $loading?: boolean) => {
   if ($loading) {
@@ -99,6 +99,7 @@ export const StyledSelectPanel = styled.div<{
   $top?: number;
   $left?: number;
   $isOpen: boolean;
+  overrides?: SelectPanelOverrides;
 }>`
   position: absolute;
   height: auto;
@@ -106,7 +107,6 @@ export const StyledSelectPanel = styled.div<{
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  border: 1px solid orange;
 
   ${({$size}) =>
     getResponsiveSpace(`marginTop`, `select.${$size}.panel`, '', 'spaceStack')}

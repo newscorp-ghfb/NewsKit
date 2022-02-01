@@ -41,7 +41,7 @@ export function MediaQueryProvider({children}: {children: React.ReactNode}) {
     }[] = [];
 
     /* istanbul ignore else */
-    if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined' && 'matchMedia' in window) {
       Object.entries(mqPerBreakpoint).forEach(([breakpointKey, mqString]) => {
         const mqList = window.matchMedia(mqString);
         const mqHandler = (event: MediaQueryListEvent) => {
