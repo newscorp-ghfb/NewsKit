@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import {states} from '../checkbox/__tests__/helpers';
 import {FormInputState} from '../form/types';
 import {
+  AudioPlayerContainer,
   Box,
   Container,
   DrawerContainer,
@@ -226,27 +227,35 @@ export const scenarios: Array<ComponentData> = [
   {
     name: 'Audio Player',
     component: () => (
-      <Stack spaceInline="space070">
-        <Stack spaceInline="space050">
-          <LabelFlag>Default</LabelFlag>
-          <AudioPlayer
-            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-            title="The Breakfast Show with Giles Coren"
-            captionSrc="captions.vtt"
-            ariaLandmark="audio player default"
-          />
-        </Stack>
-        <Stack spaceInline="space050">
-          <LabelFlag>Live</LabelFlag>
-          <AudioPlayer
-            src="https://radio.talkradio.co.uk/stream"
-            title="The Breakfast Show with Giles Coren"
-            live
-            captionSrc="captions.vtt"
-            ariaLandmark="audio player live"
-          />
-        </Stack>
-      </Stack>
+      <>
+        <>
+          <Block spaceStack="space050">
+            <LabelFlag>Default</LabelFlag>
+          </Block>
+          <AudioPlayerContainer>
+            <AudioPlayer
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              title="The Breakfast Show with Giles Coren"
+              captionSrc="captions.vtt"
+              ariaLandmark="audio player default"
+            />
+          </AudioPlayerContainer>
+        </>
+        <>
+          <Block spaceStack="space050">
+            <LabelFlag>Live</LabelFlag>
+          </Block>
+          <AudioPlayerContainer>
+            <AudioPlayer
+              src="https://radio.talkradio.co.uk/stream"
+              title="The Breakfast Show with Giles Coren"
+              live
+              captionSrc="captions.vtt"
+              ariaLandmark="audio player live"
+            />
+          </AudioPlayerContainer>
+        </>
+      </>
     ),
   },
   {
@@ -456,7 +465,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Checkbox',
     component: () => (
       <Stack
-        spaceInline="space110"
+        spaceInline="space100"
         spaceStack="space060"
         flow={Flow.HorizontalTop}
         wrap="wrap"
@@ -464,7 +473,12 @@ export const scenarios: Array<ComponentData> = [
         {states.map(([id, {checked, ...props}]) => (
           <Stack key={`${id}-checkbox`} spaceInline="space050">
             <LabelFlag>{id[0].toUpperCase() + id.slice(1)}</LabelFlag>
-            <Checkbox {...props} defaultChecked={checked} label={id} />
+            <Checkbox
+              {...props}
+              defaultChecked={checked}
+              label={id}
+              size="medium"
+            />
           </Stack>
         ))}
       </Stack>
@@ -1234,19 +1248,21 @@ export const scenarios: Array<ComponentData> = [
           <Block spaceStack="space050">
             <LabelFlag>Default</LabelFlag>
           </Block>
-          <TitleBar>Title bar with link</TitleBar>
+          <TitleBar>Title bar</TitleBar>
         </Block>
         <Block>
           <Block spaceStack="space050">
             <LabelFlag>With Standalone Link</LabelFlag>
           </Block>
-          <TitleBar
-            actionItem={() => (
-              <LinkStandalone href="/">Standalone Link</LinkStandalone>
-            )}
-          >
-            Title Bar
-          </TitleBar>
+          <Container width="80%">
+            <TitleBar
+              actionItem={() => (
+                <LinkStandalone href="/">Standalone Link</LinkStandalone>
+              )}
+            >
+              Title Bar
+            </TitleBar>
+          </Container>
         </Block>
       </>
     ),

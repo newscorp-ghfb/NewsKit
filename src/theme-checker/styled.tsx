@@ -52,3 +52,8 @@ export const Container = styled(Block)<{
 export const StyledFullWidthVisible = styled(Visible)`
   width: 100%;
 `;
+
+export const AudioPlayerContainer = styled.div`
+  max-width: 1156px;
+  ${getSpacingCssFromTheme('marginBottom', 'space050')};
+`;
