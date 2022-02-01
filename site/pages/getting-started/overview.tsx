@@ -20,13 +20,13 @@ const designCards = [
       'Everything you need to know about using NewsKit to design digital products.',
     href: '/getting-started/code/design-overview',
   },
-  {
-    media: getIllustrationComponent('guides/overview/design-quickstart'),
-    title: 'Design Quickstart Guide',
-    description:
-      'A step by step guide to get you up and running using NewsKit.',
-    href: '/getting-started/code/design-quickstart',
-  },
+  // {
+  //   media: getIllustrationComponent('guides/overview/design-quickstart'),
+  //   title: 'Design Quickstart Guide',
+  //   description:
+  //     'A step by step guide to get you up and running using NewsKit.',
+  //   href: '/getting-started/code/design-quickstart',
+  // },
 ];
 
 const codeCards = [
@@ -37,13 +37,13 @@ const codeCards = [
       'Everything you need to know about using NewsKit’s library of React web components.',
     href: '/getting-started/code/engineering-overview',
   },
-  {
-    media: getIllustrationComponent('guides/overview/engineering-quickstart'),
-    title: 'Engineering Quickstart Guide',
-    description:
-      'Guides on how to get started building a web application with NewsKit.',
-    href: '/getting-started/code/engineering-quickstart',
-  },
+  // {
+  //   media: getIllustrationComponent('guides/overview/engineering-quickstart'),
+  //   title: 'Engineering Quickstart Guide',
+  //   description:
+  //     'Guides on how to get started building a web application with NewsKit.',
+  //   href: '/getting-started/code/engineering-quickstart',
+  // },
   {
     media: getIllustrationComponent('guides/overview/instrumentation-setup'),
     title: 'Instrumentation Setup',
