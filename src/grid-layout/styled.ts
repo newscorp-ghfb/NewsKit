@@ -1,0 +1,85 @@
+import {getResponsiveSize, handleResponsiveProp, styled} from '../utils/style';
+import {GridLayoutProps} from './types';
+
+const GRID_DEFAULT_PROPS = {
+  rowGap: undefined,
+  columnGap: undefined,
+  columns: undefined,
+  rows: undefined,
+  justifyContent: undefined,
+  alignContent: undefined,
+  justifyItems: undefined,
+  alignItems: undefined,
+  areas: undefined,
+  inline: false,
+};
+
+export const StyledGridLayout = styled.div<GridLayoutProps>`
+  ${handleResponsiveProp({inline: GRID_DEFAULT_PROPS.inline}, ({inline}) => ({
+    display: inline ? 'inline-grid' : 'grid',
+  }))}
+
+  ${handleResponsiveProp(
+    {rowGap: GRID_DEFAULT_PROPS.rowGap},
+    ({rowGap}, {theme}) => ({
+      rowGap: rowGap && (theme.spacePresets[rowGap] || rowGap),
+    }),
+  )}
+
+  ${handleResponsiveProp(
+    {columnGap: GRID_DEFAULT_PROPS.columnGap},
+    ({columnGap}, {theme}) => ({
+      columnGap: columnGap && (theme.spacePresets[columnGap] || columnGap),
+    }),
+  )}
+
+  ${handleResponsiveProp(
+    {columns: GRID_DEFAULT_PROPS.columns},
+    ({columns}) => ({
+      gridTemplateColumns: columns,
+    }),
+  )}
+
+  ${handleResponsiveProp({rows: GRID_DEFAULT_PROPS.rows}, ({rows}) => ({
+    gridTemplateRows: rows,
+  }))}
+
+  ${handleResponsiveProp({areas: GRID_DEFAULT_PROPS.areas}, ({areas}) => ({
+    gridTemplateAreas: areas,
+  }))};
+
+  ${handleResponsiveProp(
+    {justifyContent: GRID_DEFAULT_PROPS.justifyContent},
+    ({justifyContent}) => ({
+      justifyContent,
+    }),
+  )}
+
+  ${handleResponsiveProp(
+    {alignContent: GRID_DEFAULT_PROPS.alignContent},
+    ({alignContent}) => ({
+      alignContent,
+    }),
+  )}
+
+  ${handleResponsiveProp(
+    {justifyItems: GRID_DEFAULT_PROPS.justifyItems},
+    ({justifyItems}) => ({
+      justifyItems,
+    }),
+  )}
+
+  ${handleResponsiveProp(
+    {alignItems: GRID_DEFAULT_PROPS.alignItems},
+    ({alignItems}) => ({
+      alignItems,
+    }),
+  )}
+  
+  ${getResponsiveSize('width', 'gridLayout', '', 'width')};
+  ${getResponsiveSize('minWidth', 'gridLayout', '', 'minWidth')};
+  ${getResponsiveSize('maxWidth', 'gridLayout', '', 'maxWidth')};
+  ${getResponsiveSize('height', 'gridLayout', '', 'height')};
+  ${getResponsiveSize('minHeight', 'gridLayout', '', 'minHeight')};
+  ${getResponsiveSize('maxHeight', 'gridLayout', '', 'maxHeight')};
+`;
