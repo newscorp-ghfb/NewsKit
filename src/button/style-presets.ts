@@ -25,6 +25,33 @@ export default {
       iconColor: '{{colors.inkBrand010}}',
     },
   },
+  testButtonSolidPrimary: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      borderStyle: 'solid',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+
+      //color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkInverse}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactiveNegative040}}',
+      borderColor: '{{colors.interactivePositive030}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactivePrimary050}}',
+    },
+    disabled: {
+      backgroundColor: '{{colors.interactiveDisabled010}}',
+      color: '{{colors.inkNonEssential}}',
+      iconColor: '{{colors.inkNonEssential}}',
+    },
+    loading: {
+      backgroundColor: '{{colors.interactivePrimary020}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+  },
   buttonSolidSecondary: {
     base: {
       backgroundColor: '{{colors.interactiveSecondary030}}',

@@ -8,6 +8,13 @@ export default {
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
       spaceInline: 'space020',
+      transitionPresets:{
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '{{motions.motionDuration000}}',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
       loadingIndicator: {
         stylePreset: 'indeterminateProgressIndicatorPrimary',
       },

@@ -67,6 +67,18 @@ const myCustomTheme = createTheme({
           color: '#0a68c1',
           backgroundColor: 'transparent',
         },
+        hover: {
+          backgroundColor: '#7930C1',
+        },
+      },
+    },
+    transitionPresets: {
+      backgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '{{motions.motionDuration040}}',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
       },
     },
   },
@@ -156,7 +168,15 @@ export const StoryButtonSize = () => (
         spaceStack="space070"
         wrap="wrap"
       >
-        <Button size={ButtonSize.Small}>Small button</Button>
+        <Button
+          size={ButtonSize.Small}
+          overrides={{
+            stylePreset: 'testButtonSolidPrimary',
+            transitionPresets: ['backgroundColorChange','borderColorChange' ],
+          }}
+        >
+          Small button
+        </Button>
         <Button size={ButtonSize.Medium}>Medium button</Button>
         <Button size={ButtonSize.Large}>Large button</Button>
       </Stack>
@@ -187,21 +207,30 @@ export const StoryFullAndFixedWidthButton = () => (
     </Container>
     <StorybookSubHeading>Fixed-Width Button</StorybookSubHeading>
     <Container>
-      <Border>
-        <Spacer>
-          <Button size={ButtonSize.Small} overrides={{width: 'sizing120'}}>
-            Small fixed-width button
+      <ThemeProvider theme={myCustomTheme}>
+        <Border>
+          <Spacer>
+            <Button
+              size={ButtonSize.Small}
+              overrides={{
+                width: 'sizing120',
+                stylePreset: 'myButton',
+                transitionPresets: 'backgroundColorChange',
+              }}
+            >
+              Small fixed-width button
+            </Button>
+          </Spacer>
+          <Spacer>
+            <Button size={ButtonSize.Medium} overrides={{width: 'sizing120'}}>
+              Medium fixed-width button
+            </Button>
+          </Spacer>
+          <Button size={ButtonSize.Large} overrides={{width: 'sizing120'}}>
+            Large fixed-width button
           </Button>
-        </Spacer>
-        <Spacer>
-          <Button size={ButtonSize.Medium} overrides={{width: 'sizing120'}}>
-            Medium fixed-width button
-          </Button>
-        </Spacer>
-        <Button size={ButtonSize.Large} overrides={{width: 'sizing120'}}>
-          Large fixed-width button
-        </Button>
-      </Border>
+        </Border>
+      </ThemeProvider>
     </Container>
     <StorybookSubHeading>Fixed-Width and overflow</StorybookSubHeading>
     <Container>
