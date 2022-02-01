@@ -8,10 +8,11 @@ export default {
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
       spaceInline: 'space020',
-      transitionPresets:{
+      transitionPreset:{
+        extend: 'backgroundColorChange',
         base: {
           transitionProperty: 'background-color',
-          transitionDuration: '{{motions.motionDuration000}}',
+          transitionDuration: '{{motions.motionDuration050}}',
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
       },
