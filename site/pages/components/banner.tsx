@@ -57,8 +57,8 @@ export default (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Beta,
       introduced: 'v3.0',
-      codeUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
-      figmaUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
+      codeUrl: 'https://github.com/newscorp-ghfb/newskit',
+      figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
     }}
     interactiveDemo={{
       introduction:
@@ -434,7 +434,8 @@ export default (layoutProps: LayoutProps) => (
       introduction: 'There are no SEO considerations for this component.',
     }}
     componentAPI={{
-      introduction: `A Banner has a range of props that can be used to define an appropriate experience for different use cases.`,
+      introduction:
+        'A Banner has a range of props that can be used to define an appropriate experience for different use cases.',
       components: [
         {
           title: 'Banner',
@@ -443,35 +444,38 @@ export default (layoutProps: LayoutProps) => (
               name: 'children',
               type: "Exclude<React.ReactNode, 'undefined'>",
               required: true,
-              description: `Sets the content of the Banner.`,
+              description: 'Sets the content of the Banner.',
             },
             {
               name: 'layout',
               type: "MQ<'horizontal' | 'vertical'>",
               default: ['xs: vertical', ' md:  horizontal'],
-              description: `If provided, defines the content of the title in the Banner.`,
+              description:
+                'If provided, defines the content of the title in the Banner.',
             },
             {
               name: 'title',
-              type: 'string',
-              description: `If provided, defines the content of the title in the Banner.`,
+              type: 'React.ReactNode',
+              description:
+                'If provided, defines the content of the title in the Banner.',
             },
             {
               name: 'icon',
               type: 'ReactElement<NewsKitIcon>',
-              description: `Icon used to indicate the status or intent of the Banner.`,
+              description:
+                'Icon used to indicate the status or intent of the Banner.',
             },
             {
               name: 'actions',
               type: 'React.ComponentType[]',
-              description: `	
-              If provided, defines the action(s) that is/are displayed in the Banner.`,
+              description:
+                'If provided, defines the action(s) that is/are displayed in the Banner.',
             },
             {
               name: 'onClose',
               type: 'function',
-              description: `	
-              If you pass onClose callback function to the banner it will display a close button. The function can be used to manage the external (open/closed) state of the banner.`,
+              description:
+                'If you pass onClose callback function to the banner it will display a close button. The function can be used to manage the external (open/closed) state of the banner.',
             },
             {
               name: 'closeButtonLabel',
@@ -496,100 +500,107 @@ export default (layoutProps: LayoutProps) => (
               attribute: 'stylePreset',
               type: 'MQ<string>',
               default: 'Banner',
-              description: `Overrides the stylePreset applied to the Banner container and the Icon color.`,
+              description:
+                'Overrides the stylePreset applied to the Banner container and the Icon color.',
             },
             {
               attribute: 'spaceInset',
               type: 'MQ<string>',
               default: 'spaceInset045',
-              description: `Overrides the space inset applied to the Banner container.`,
+              description:
+                'Overrides the space inset applied to the Banner container. It can take four space tokens to specify the padding for each side of the Banner. These four space tokens can also be used on breakpoints.	',
             },
             {
               attribute: 'minHeight',
               type: 'MQ<string>',
               default: 'sizing090',
-              description: `	
-              Overrides the minHeight applied to the Banner container.`,
+              description:
+                'Overrides the minHeight applied to the Banner container.',
             },
             {
-              attribute: 'maxWidth',
-              type: 'MQ<string>',
-              default: '1920px',
-              description: `	
-              Overrides the maxWidth of the Banner container.`,
+              attribute: 'grid.props',
+              type: '{props: GridProps;}',
+              default: '',
+              description: (
+                <>
+                  Overrides internal grid&apos;s properties. This grid is used
+                  to layout the content, see{' '}
+                  <Link href="/components/grid">grid documentation</Link> for a
+                  full list of props
+                </>
+              ),
+            },
+            {
+              attribute: 'cell.props',
+              type: '{props: CellProps;}',
+              default: '{ xs: full-width }',
+              description: `Overrides the amount of columns for the Cell to span at a given breakpoint. If set to "full-width" the Cell will span all 12 columns and breakout across the margin of the Grid. It will still be confined by the Grid's max-width.`,
             },
             {
               attribute: 'icon.spaceInline',
               type: 'MQ<string>',
               default: 'space030',
-              description: `Overrides the space between the icon and the content.`,
+              description:
+                'Overrides the space between the icon and the content.',
             },
             {
               attribute: 'content.spaceInline',
               type: 'MQ<string>',
-              default: (
-                <>
-                  <TextBlock>horizontal: space030,</TextBlock>
-                  <TextBlock>vertical: space050 icon-button.</TextBlock>
-                </>
-              ) as any,
-              description: `Overrides the space between the banner content and the action/close buttons`,
+              default: ['horizontal: space030', 'vertical: space050'],
+              description:
+                'Overrides the space between the banner content and the action/close buttons',
             },
             {
               attribute: 'content.title.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityHeading010',
-              description: `	
-              Overrides the typography preset applied to the Banner title.`,
+              description:
+                'Overrides the typography preset applied to the Banner title.',
             },
             {
               attribute: 'content.title.stylePreset',
               type: 'MQ<string>',
               default: 'inkInverse',
-              description: `Overrides the style preset applied to the Banner title.`,
+              description:
+                'Overrides the style preset applied to the Banner title.',
             },
             {
               attribute: 'content.title.spaceStack',
               type: 'MQ<string>',
               default: 'space030',
-              description: `Overrides the spacing between the title and the message.`,
+              description:
+                'Overrides the spacing between the title and the message.',
             },
             {
               attribute: 'content.message.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityBody010',
-              description: `	
-              Overrides the typographyPreset applied to the Banner content.`,
+              description:
+                'Overrides the typographyPreset applied to the Banner content.',
             },
             {
               attribute: 'content.message.stylePreset',
               type: 'MQ<string>',
               default: 'inkInverse',
-              description: `Overrides the stylePreset applied to the Banner message.`,
+              description:
+                'Overrides the stylePreset applied to the Banner message.',
             },
             {
               attribute: 'actions.spaceInline',
               type: 'MQ<string>',
-              default: (
-                <>
-                  <TextBlock>horizontal: space040,</TextBlock>
-                  <TextBlock>vertical: space050</TextBlock>
-                </>
-              ) as any,
-              description: `Overrides the spacing between the action buttons and the close button.`,
+              default: ['horizontal: space040', 'vertical: space050'],
+              description:
+                'Overrides the spacing between the action buttons and the close button.',
             },
             {
               attribute: 'actions.closeButton.stylePreset',
               type: 'MQ<string>',
-              default: (
-                <>
-                  <TextBlock>horizontal: iconButtonMinimalInverse,</TextBlock>
-                  <TextBlock>
-                    vertical: buttonOutlinedInverse icon-button.
-                  </TextBlock>
-                </>
-              ) as any,
-              description: `Overrides the spacing between the action buttons and the close button.`,
+              default: [
+                `horizontal: iconButtonMinimalInverse`,
+                `vertical: buttonOutlinedInverse`,
+              ],
+              description:
+                'Overrides the spacing between the action buttons and the close button.',
             },
           ],
         },

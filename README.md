@@ -1,6 +1,6 @@
 
 <p align="center">
-  <a href="https://github.com/newscorp-ghfb/ncu-newskit">
+  <a href="https://github.com/newscorp-ghfb/newskit">
     <img width='550' src="https://www.newskit.co.uk/static/newskit-logo.svg">
   </a>
 </p>
@@ -13,14 +13,14 @@ NewsKit is News UK’s design system. It provides interactive building blocks an
 | ------- | -------------------------------------------------------------------------------------- |
 | develop | [https://www.newskit.dev-news.co.uk/](https://www.newskit.dev-news.co.uk/)             |
 | develop | [https://storybook.newskit.dev-news.co.uk/](https://storybook.newskit.dev-news.co.uk/) |
-| master  | [https://www.newskit.co.uk/](https://www.newskit.co.uk/)                               |
-| master  | [https://storybook.newskit.co.uk/](https://storybook.newskit.co.uk/)                   |
+| main    | [https://www.newskit.co.uk/](https://www.newskit.co.uk/)                               |
+| main    | [https://storybook.newskit.co.uk/](https://storybook.newskit.co.uk/)                   |
 
 ## 🙌 Browser support
 
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Chrome  | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Safari |
-| --- | --- | --- |
-| last 2 versions | last 2 versions | last 2 versions |
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Safari |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| last 2 versions                                                                                                                                                                                              | last 2 versions                                                                                                                                                                                                  | last 2 versions                                                                                                                                                                                              |
 
 ## ✅ Pre-requisites
 
@@ -39,8 +39,8 @@ Once you have the above installed, run the following commands:
 Note that if you are on Windows machine, you need to run the `wsl` command first to run which ever linux environment you've installed on your machine.
 
 ```sh
-git clone git@github.com:newscorp-ghfb/ncu-newskit.git
-cd ncu-newskit
+git clone git@github.com:newscorp-ghfb/newskit.git
+cd newskit
 yarn && yarn dev
 ```
 
@@ -64,6 +64,6 @@ For detailed information on how to run the automated tests, please visit [Testin
 
 * [NewsKit Documentation](https://www.newskit.co.uk/)
 * [View NewsKit Design System npm package](https://www.npmjs.com/package/newskit)
-* [Github repository](https://github.com/newscorp-ghfb/ncu-newskit)
+* [Github repository](https://github.com/newscorp-ghfb/newskit)
 * [Medium](https://medium.com/newskit-design-system)
 * [Storybook](https://storybook.newskit.co.uk/)

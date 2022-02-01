@@ -9,8 +9,11 @@ import {deepMerge} from '../utils/deep-merge';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 import {getTransitionDuration} from '../utils/get-transition-duration';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
-export const Modal: React.FC<ModalProps> = ({
+const ThemelessModal: React.FC<ModalProps> = ({
   children,
   /* istanbul ignore next */
   open = false,
@@ -86,3 +89,8 @@ export const Modal: React.FC<ModalProps> = ({
     </BaseDialogFunction>
   );
 };
+
+export const Modal = withOwnTheme(ThemelessModal)({
+  defaults,
+  stylePresets,
+});

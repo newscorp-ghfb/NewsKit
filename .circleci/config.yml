@@ -9,7 +9,7 @@ slack_status: &slack_status
   channel: '#nuk-pp-newskit'
   mentions: 'newskitdevs'
   fail_only: true
-  only_for_branches: 'develop,master'
+  only_for_branches: 'develop,main'
 
 working_directory: &working_directory
   working_directory: ~/project
@@ -568,21 +568,7 @@ jobs:
       - run:
           name: Install Headless Chrome dependencies
           command: >
-            sudo apt-get install -yq \
-
-            gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2
-            libcups2 libdbus-1-3 \
-
-            libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0
-            libglib2.0-0 libgtk-3-0 libnspr4 \
-
-            libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1
-            libxcb1 libxcomposite1 libxcursor1 \
-
-            libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1
-            libxtst6 ca-certificates \
-
-            fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
+            sudo apt-get update && sudo apt-get install -yq gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libgbm-dev libappindicator1 libnss3 lsb-release xdg-utils wget
       - run:
           name: 'Setup Applitools environment variables'
           <<: *applitools_defaults
@@ -910,17 +896,17 @@ only_release: &only_release
     branches:
       only: /^release.*/
 
-only_master: &only_master
+only_main: &only_main
   filters:
     branches:
-      only: master
+      only: main
 
 only_pr: &only_pr
   filters:
     branches:
       ignore:
         - develop
-        - master
+        - main
         - /trigger-release-.*/
         - /^release.*/
 
@@ -928,7 +914,7 @@ only_pr_and_develop: &only_pr_and_develop
   filters:
     branches:
       ignore:
-        - master
+        - main
         - /trigger-release-.*/
         - /^release.*/
 
@@ -937,7 +923,7 @@ only_pr_and_release: &only_pr_and_release
     branches:
       ignore:
         - develop
-        - master
+        - main
         - /trigger-release-.*/
 
 ignore_trigger_release: &ignore_trigger_release
@@ -1254,10 +1240,10 @@ workflows:
           environment: staging
           requires:
             - init_aws
-      # master jobs
+      # main jobs
       - publish_npm:
           context: ncu-product-platforms-context
-          <<: *only_master
+          <<: *only_main
           requires:
             - lint
             - test_unit_comps
@@ -1269,13 +1255,13 @@ workflows:
           name: eks_flux_deploy_prod
           context: ncu-newskit-site-prod
           environment: prod
-          <<: *only_master
+          <<: *only_main
           requires:
             - publish_npm
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_prod
           context: ncu-newskit-site-prod
           environment: prod
-          <<: *only_master
+          <<: *only_main
           requires:
             - eks_flux_deploy_prod

@@ -26,8 +26,8 @@ export default (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v3.8.0',
-      codeUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
-      figmaUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
+      codeUrl: 'https://github.com/newscorp-ghfb/newskit',
+      figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
     }}
     anatomy={{
       introduction: 'The Divider contains one required element.',

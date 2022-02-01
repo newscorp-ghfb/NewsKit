@@ -1,20 +1,13 @@
 import React from 'react';
-import {styled, getSpacingInset, getStylePreset} from '../utils/style';
-import {TitleBarProps, ContainerProps} from './types';
+import {TitleBarProps} from './types';
 import {Headline} from '../headline';
-import {Stack} from '../stack/stack';
-import {Block} from '../block';
 import {Hidden} from '../grid/visibility';
 import {useTheme} from '../theme';
 import {HeadlineOverrides} from '../headline/types';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-
-const StackContainer = styled(Stack)<ContainerProps>`
-  ${getSpacingInset('titleBar')};
-  ${getStylePreset('titleBar')};
-`;
+import {StyledBlock, StyledStackContainer} from './styled';
 
 const ThemelessTitleBar: React.FC<TitleBarProps> = props => {
   const {
@@ -57,22 +50,22 @@ const ThemelessTitleBar: React.FC<TitleBarProps> = props => {
   const blockOverrides = {spaceInline: hasActions ? 'space040' : ''};
 
   return (
-    <StackContainer
+    <StyledStackContainer
       overrides={overrides}
       flow="horizontal-center"
       stackDistribution="space-between"
     >
-      <Block {...blockOverrides}>
+      <StyledBlock {...blockOverrides}>
         <Headline headingAs={headingAs} overrides={headlineOverrides}>
           {children}
         </Headline>
-      </Block>
+      </StyledBlock>
       {ActionItem && (
         <Hidden {...hideActionItemOn}>
           <ActionItem />
         </Hidden>
       )}
-    </StackContainer>
+    </StyledStackContainer>
   );
 };
 export const TitleBar = withOwnTheme(ThemelessTitleBar)({

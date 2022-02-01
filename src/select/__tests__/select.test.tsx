@@ -173,6 +173,45 @@ describe('Select', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test(`chevron clicks don't open panel when select is disabled`, async () => {
+    const props: SelectProps = {
+      state: 'disabled',
+      children: [
+        <SelectOption value="option 1">option 1</SelectOption>,
+        <SelectOption value="option 2">option 2</SelectOption>,
+      ],
+    };
+
+    const {getByTestId} = renderWithTheme(Select, props);
+
+    await act(async () => {
+      fireEvent.mouseDown(getByTestId('select-chevron-button'));
+      fireEvent.mouseUp(getByTestId('select-chevron-button'));
+    });
+
+    const menuElement = getByTestId('select-panel') as any;
+    expect(menuElement).not.toBeVisible();
+  });
+
+  test(`button clicks don't open panel when select is disabled`, async () => {
+    const props: SelectProps = {
+      state: 'disabled',
+      children: [
+        <SelectOption value="option 1">option 1</SelectOption>,
+        <SelectOption value="option 2">option 2</SelectOption>,
+      ],
+    };
+
+    const {getByTestId} = renderWithTheme(Select, props);
+
+    await act(async () => {
+      fireEvent.click(getByTestId('select-button'));
+    });
+
+    const menuElement = getByTestId('select-panel') as any;
+    expect(menuElement).not.toBeVisible();
+  });
+
   test('renders loading select', () => {
     const props: SelectProps = {
       loading: true,

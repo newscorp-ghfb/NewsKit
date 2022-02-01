@@ -5,8 +5,11 @@ import {SelectProps} from './types';
 import {SelectPanel} from './select-panel';
 import {SelectButton} from './select-button';
 import {MediaQueryProvider} from '../utils/hooks/use-media-query';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
-export const Select = React.forwardRef<HTMLInputElement, SelectProps>(
+const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
     const {
       overrides,
@@ -193,4 +196,9 @@ export const Select = React.forwardRef<HTMLInputElement, SelectProps>(
   },
 );
 
-Select.displayName = 'Select';
+ThemelessSelect.displayName = 'Select';
+
+export const Select = withOwnTheme(ThemelessSelect)({
+  defaults,
+  stylePresets,
+});
