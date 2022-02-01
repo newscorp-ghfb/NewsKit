@@ -35,6 +35,11 @@ export default [
     id: '/getting-started',
     subNav: [
       {
+        title: 'Overview',
+        page: true,
+        id: '/getting-started/overview',
+      },
+      {
         title: 'Code',
         id: '/getting-started/code/web',
         subNav: [
