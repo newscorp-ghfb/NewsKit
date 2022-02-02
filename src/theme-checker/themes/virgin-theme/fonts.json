@@ -2,9 +2,10 @@
   "fontFamily010": {
     "fontFamily": "Montserrat",
     "cropConfig": {
-      "top": 8,
-      "bottom": 10
-    }
+      "top": 0,
+      "bottom": 0
+    },
+    "cropAdjustments": {}
   },
   "fontWeight010": 400,
   "fontWeight020": 500,
@@ -21,18 +22,24 @@
   "fontSize090": "36px",
   "fontSize100": "40px",
   "fontSize110": "48px",
-  "fontLineHeight010": 1.0833,
-  "fontLineHeight020": 1.125,
-  "fontLineHeight030": 1.1667,
-  "fontLineHeight040": 1.25,
-  "fontLineHeight050": 1.3333,
-  "fontLineHeight060": 1.5,
-  "fontLineHeight070": 1.6667,
-  "fontLetterSpacing010": -0.5,
-  "fontLetterSpacing020": -0.25,
-  "fontLetterSpacing030": 0,
-  "fontLetterSpacing040": 0.25,
-  "fontLetterSpacing050": 0.5,
-  "fontLetterSpacing060": 0.75,
-  "fontLetterSpacing070": 1
+  "fontSize120": "56px",
+  "fontSize130": "64px",
+  "fontSize140": "72px",
+  "fontLineHeight010": "0.778",
+  "fontLineHeight020": "0.875",
+  "fontLineHeight030": "1.000",
+  "fontLineHeight040": "1.083",
+  "fontLineHeight050": "1.100",
+  "fontLineHeight060": "1.111",
+  "fontLineHeight070": "1.125",
+  "fontLineHeight080": "1.143",
+  "fontLineHeight090": "1.167",
+  "fontLineHeight100": "1.200",
+  "fontLineHeight110": "1.250",
+  "fontLineHeight120": "1.333",
+  "fontLineHeight130": "1.429",
+  "fontLineHeight140": "1.500",
+  "fontLineHeight150": "1.556",
+  "fontLineHeight160": "1.667",
+  "fontLetterSpacing010": "0%"
 }

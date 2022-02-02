@@ -16,6 +16,7 @@ import {
 } from '../..';
 import {tnlTheme} from '../themes/tnl-theme/tnl-theme';
 import {virginTheme} from '../themes/virgin-theme/virgin-theme';
+import {sunTheme} from '../themes/sun-theme/sun-theme';
 
 export default {
   title: 'NewsKit Light/theme-checker',
@@ -35,7 +36,13 @@ interface ThemeSelectorProps {
   children: React.ReactNode;
 }
 
-const themes = [newskitLightTheme, newskitDarkTheme, tnlTheme, virginTheme];
+const themes = [
+  newskitLightTheme,
+  newskitDarkTheme,
+  tnlTheme,
+  virginTheme,
+  sunTheme,
+];
 
 const ThemeSelector = ({children}: ThemeSelectorProps) => {
   const [themeIndex, setThemeIndex] = React.useState(() => {

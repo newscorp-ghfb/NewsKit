@@ -27,7 +27,7 @@ const StylePresetsLoader = ({
 
         setStylePresets(Object.keys(stylePreset));
       } catch (error) {
-        // To catch components with style variation but do noxt have style-preset file
+        // To catch components with style variation but do not have style-preset file
       }
     };
     dynamicallyImport();
