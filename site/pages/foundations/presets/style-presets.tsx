@@ -447,12 +447,6 @@ export default (layoutProps: LayoutProps) => (
       },
       introduction: `A collection of foundational design tokens combined into a preset to define reusable styles for interface elements and their interactive states.`,
     }}
-    featureCard={{
-      title: 'Typography Presets',
-      description:
-        'A collection of foundational font design tokens combined into a single token',
-      href: 'foundations/presets/typography-presets/',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="overview">
@@ -472,8 +466,8 @@ export default (layoutProps: LayoutProps) => (
                 Typography Presets
               </Link>
               , <Link href="/foundations/sizing/">Sizing</Link>, and{' '}
-              <Link href="/foundations/presets/space-presets/">Spacing</Link>,
-              Style Presets provide the visual attributes of a component.
+              <Link href="/foundations/spacing/">Spacing</Link>, Style Presets
+              provide the visual attributes of a component.
             </>
           }
           showSeparator
