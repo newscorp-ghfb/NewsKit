@@ -245,9 +245,6 @@ export const unifyTransition = (
   const errorLogger = console.error.bind(console);
   // const res = parseAndGet(theme, overrides, errorLogger) as string;
 
-  console.log('overrides');
-  console.log(overrides);
-
   const compiledThemeResults = recurseUnknown(
     theme as UncompiledTheme,
     overrides,
@@ -257,9 +254,6 @@ export const unifyTransition = (
   const a = Object.keys(compiledThemeResults as object).length
     ? deepMerge({}, baseTransitionPreset, compiledThemeResults)
     : baseTransitionPreset;
-
-  // console.log('a');
-  // console.log(a);
 
   return a;
 };
