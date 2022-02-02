@@ -6,6 +6,8 @@ import {
 } from '../form/types';
 import {MQ} from '../utils/style';
 
+export type TextFieldSizeType = TextFieldSize | 'small' | 'medium' | 'large';
+
 export enum TextFieldSize {
   Small = 'small',
   Medium = 'medium',
@@ -14,7 +16,7 @@ export enum TextFieldSize {
 
 export interface FormInputTextFieldProps
   extends Omit<CommonInputProps, 'size'> {
-  size?: TextFieldSize; // remove this override when https://nidigitalsolutions.jira.com/browse/PPDSC-1872 is implemented
+  size?: TextFieldSizeType; // remove this override when https://nidigitalsolutions.jira.com/browse/PPDSC-1872 is implemented
   overrides?: EnhancerOverrides & {
     stylePreset?: MQ<string>;
     spaceInset?: MQ<string>;

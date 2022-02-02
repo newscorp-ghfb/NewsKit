@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid} from 'newskit';
+import {Grid, ThemeProvider} from 'newskit';
 import {HeaderImage} from '../../components/illustrations/foundations/header-image';
 import Layout, {LayoutProps} from '../../components/layout';
 import {SectionIntroduction} from '../../components/section-introduction';
@@ -11,6 +11,10 @@ import routes from '../../routes';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {Item} from '../../components/sidebar/types';
 import {HeadNextSeo} from '../../components/head-next-seo';
+import {
+  foundationsThemeLight,
+  foundationsThemeDark,
+} from '../../theme/doc-theme';
 
 const foundationRoute: Item[] =
   routes.filter(router => router.title === 'Foundations')[0].subNav || [];
@@ -29,28 +33,40 @@ const cardsContent = foundationRoute
 
 export default (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
-    <HeadNextSeo
-      title="Foundations overview"
-      description="NewsKit foundations define the visual elements that inform the look and feel of UI components."
-    />
-    <HeaderIndex title="Foundations" media={HeaderImage}>
-      NewsKit foundations define the visual elements that inform the look and
-      feel of UI components.
-    </HeaderIndex>
-    <Grid lgMargin="sizing000" xsRowGutter="sizing000">
-      <SectionIntroduction
-        title="Categories"
-        cellProps={{lg: 8}}
-        subHeadingSpaceStack="space000"
+    {({themeMode}) => (
+      <ThemeProvider
+        theme={
+          themeMode === 'light' ? foundationsThemeLight : foundationsThemeDark
+        }
       >
-        The NewsKit Foundations are structured into the following categories:
-      </SectionIntroduction>
-      <ComponentPageCell>
-        <MediaList cards={cardsContent} gridProps={{xsRowGutter: 'space050'}} />
-      </ComponentPageCell>
-      <ComponentPageCell>
-        <Separator />
-      </ComponentPageCell>
-    </Grid>
+        <HeadNextSeo
+          title="Foundations overview"
+          description="NewsKit foundations define the visual elements that inform the look and feel of UI components."
+        />
+        <HeaderIndex title="Foundations" media={HeaderImage}>
+          NewsKit foundations define the visual elements that inform the look
+          and feel of UI components.
+        </HeaderIndex>
+        <Grid lgMargin="sizing000" xsRowGutter="sizing000">
+          <SectionIntroduction
+            title="Categories"
+            cellProps={{lg: 8}}
+            subHeadingSpaceStack="space000"
+          >
+            The NewsKit Foundations are structured into the following
+            categories:
+          </SectionIntroduction>
+          <ComponentPageCell>
+            <MediaList
+              cards={cardsContent}
+              gridProps={{xsRowGutter: 'space050'}}
+            />
+          </ComponentPageCell>
+          <ComponentPageCell>
+            <Separator />
+          </ComponentPageCell>
+        </Grid>
+      </ThemeProvider>
+    )}
   </Layout>
 );

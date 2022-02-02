@@ -1,20 +1,19 @@
 import React from 'react';
-import {
-  Block,
-  styled,
-  InlineMessage,
-  Grid,
-  getSizingCssFromTheme,
-} from 'newskit';
+import {InlineMessage, getSizingCssFromTheme, styled} from 'newskit';
 import {HeadNextSeo} from '../../components/head-next-seo';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
-import {SectionIntroduction} from '../../components/section-introduction';
 import {Link} from '../../components/link';
+import {
+  ContentSection,
+  ContentPrimary,
+  ContentSecondary,
+} from '../../components/content-structure';
+import {ComponentPageCell} from '../../components/layout-cells';
 
-const WrapperWithPadding = styled.div`
-  ${getSizingCssFromTheme('paddingTop', 'sizing080')};
-  ${getSizingCssFromTheme('marginBottom', 'sizing080')}
+const PageIntroductionContainer = styled.div`
+  ${getSizingCssFromTheme('marginTop', 'sizing100')};
+  ${getSizingCssFromTheme('marginBottom', 'sizing090')}
 `;
 
 export default ({path, ...props}: LayoutProps) => (
@@ -24,44 +23,45 @@ export default ({path, ...props}: LayoutProps) => (
       title="Roadmap"
       description="NewsKit’s Design System team is busy building and planning to help you build better products faster."
     />
-    <WrapperWithPadding />
-    <Grid lgMargin="sizing000" xsRowGutter="space000">
+
+    <PageIntroductionContainer>
       <PageIntroduction
         type="About"
         name="Roadmap"
         introduction="NewsKit’s Design System team is busy building and planning to help you
-        build better products faster."
+          build better products faster."
         hero={{illustration: 'components/hero-roadmap-illustration'}}
       />
-      <Block spaceStack="space100" />
-      <SectionIntroduction
-        title="NewsKit Roadmap"
-        cellProps={{xs: 12, md: 10, lg: 10}}
-      >
-        Here is the team’s focus over the coming months. This is updated
-        regularly as our priorities change over time.
-        <Block spaceStack="space070" />
-        <iframe
-          title="airtable roadmap"
-          className="airtable-embed"
-          src="https://airtable.com/embed/shrbFPJXN4tVA0Yye?backgroundColor=blue"
-          frameBorder="0"
-          width="100%"
-          height="533"
-          style={{
-            background: 'transparent',
-            border: '1px solid #ccc',
-          }}
-        />
-        <Block spaceStack="space070">
-          <Block spaceStack={{xs: 'space080', xl: 'space090'}} />
+    </PageIntroductionContainer>
+
+    <ComponentPageCell>
+      <ContentSection sectionName="roadmap">
+        <ContentPrimary
+          headline="NewsKit Roadmap"
+          description="Here is the team’s focus over the coming months. This is updated regularly as our priorities change over time."
+        >
+          <iframe
+            title="airtable roadmap"
+            className="airtable-embed"
+            src="https://airtable.com/embed/shrbFPJXN4tVA0Yye?backgroundColor=blue"
+            frameBorder="0"
+            width="100%"
+            height="533"
+            style={{
+              background: 'transparent',
+              border: '1px solid #ccc',
+            }}
+          />
+        </ContentPrimary>
+
+        <ContentSecondary>
           <InlineMessage>
             If you’d like to influence the roadmap,see the{' '}
             <Link href="/about/contribute">contribution page</Link> for further
             details.
           </InlineMessage>
-        </Block>
-      </SectionIntroduction>
-    </Grid>
+        </ContentSecondary>
+      </ContentSection>
+    </ComponentPageCell>
   </Layout>
 );
