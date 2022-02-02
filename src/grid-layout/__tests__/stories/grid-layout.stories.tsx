@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {styled} from '../../../utils';
-import {Grid, Cell} from '../../../grid';
 import {Block} from '../../../block';
 import {Divider} from '../../../divider';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
@@ -237,75 +236,6 @@ export const CardWithGrid = () => (
       title="title of the card describing the main content"
       teaser="this is the teaser"
     />
-  </>
-);
-
-export const GridComparison = () => (
-  <>
-    <StorybookHeading>Grid comparison</StorybookHeading>
-    <Grid xsMargin="space000" xsColumnGutter="space050">
-      <Cell xs={4}>
-        <GridBox>4</GridBox>
-      </Cell>
-      <Cell xs={4}>
-        <GridBox>4</GridBox>
-      </Cell>
-      <Cell xs={4}>
-        <GridBox>4</GridBox>
-      </Cell>
-    </Grid>
-    <GridLayout columns="4fr 4fr 4fr" columnGap="space050">
-      <GridBox>4</GridBox>
-      <GridBox>4</GridBox>
-      <GridBox>4</GridBox>
-    </GridLayout>
-    <hr />
-    <Grid xsMargin="space000" xsColumnGutter="space050">
-      <Cell xs={8}>
-        <GridBox>8</GridBox>
-      </Cell>
-      <Cell xs={4}>
-        <GridBox>4</GridBox>
-      </Cell>
-    </Grid>
-    <GridLayout columns="8fr 4fr" columnGap="space050">
-      <GridBox>8</GridBox>
-      <GridBox>4</GridBox>
-    </GridLayout>
-    <hr />
-    <Grid xsMargin="space000" xsColumnGutter="space050">
-      <Cell xs={2}>
-        <GridBox>2</GridBox>
-      </Cell>
-      <Cell xs={6}>
-        <GridBox>6</GridBox>
-      </Cell>
-      <Cell xs={4}>
-        <GridBox>4</GridBox>
-      </Cell>
-    </Grid>
-    <GridLayout columns="2fr 6fr 4fr" columnGap="space050">
-      <GridBox>2</GridBox>
-      <GridBox>6</GridBox>
-      <GridBox>2</GridBox>
-    </GridLayout>
-    <hr />
-    <Grid xsMargin="space000" xsColumnGutter="space050">
-      <Cell xs={2}>
-        <GridBox>2</GridBox>
-      </Cell>
-      <Cell xs={8}>
-        <GridBox>8</GridBox>
-      </Cell>
-      <Cell xs={2}>
-        <GridBox>2</GridBox>
-      </Cell>
-    </Grid>
-    <GridLayout columns="2fr 8fr 2fr" columnGap="space050">
-      <GridBox>2</GridBox>
-      <GridBox>8</GridBox>
-      <GridBox>2</GridBox>
-    </GridLayout>
   </>
 );
 
