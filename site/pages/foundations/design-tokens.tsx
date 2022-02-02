@@ -37,8 +37,8 @@ const TokenStyle: React.FC<TextElementProps> = () => {
     const item = tokenData[i];
     tokens.push(
       <>
-        <TextElement colorPreset="teal050">{item.property}</TextElement>
-        <TextElement>{item.series}</TextElement>, <br />
+        <TextElement>{item.property}</TextElement>
+        <TextElement colorPreset="teal050">{item.series}</TextElement>, <br />
       </>,
     );
   }

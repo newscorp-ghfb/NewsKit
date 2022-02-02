@@ -7,7 +7,7 @@ export const IconFilledCheckCircle: React.FC<{size?: FlagProps['size']}> = ({
   <Flag
     overrides={{
       stylePreset: 'checkIconContainer',
-      spaceInset: 'spaceInsetSquish010',
+      spaceInset: 'spaceInsetSquish000',
       width: size === 'small' ? 'sizing050' : 'sizing060',
       height: size === 'small' ? 'sizing050' : 'sizing060',
     }}
