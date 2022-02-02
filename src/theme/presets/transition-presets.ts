@@ -14,7 +14,7 @@ transitionPresets.fontColorChange = {
 transitionPresets.backgroundColorChange = {
   base: {
     transitionProperty: 'background-color',
-    transitionDuration: '{{motions.motionDuration030}}',
+    transitionDuration: '{{motions.motionDuration020}}',
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
 };
@@ -22,7 +22,7 @@ transitionPresets.backgroundColorChange = {
 transitionPresets.borderColorChange = {
   base: {
     transitionProperty: 'border-color',
-    transitionDuration: '{{motions.motionDuration040}}',
+    transitionDuration: '{{motions.motionDuration020}}',
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
 };

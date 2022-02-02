@@ -477,7 +477,6 @@ const myCustomTransitionPresets = createTheme({
           borderWidth: '4px',
         },
         hover: {
-          // backgroundColor: '{{colors.interactivePrimary040}}',
           backgroundColor: '{{colors.amber070}}',
           borderColor: '{{colors.green040}}',
         },
@@ -529,6 +528,28 @@ export const StoryButtonWithTransitions = () => (
             }}
           >
             Medium button
+          </Button>
+          <Button
+            size={ButtonSize.Medium}
+            overrides={{
+              transitionPreset: [
+                {
+                  extend: 'backgroundColorChange',
+                  base: {
+                    transitionDuration: '{{motions.motionDuration030}}',
+                  },
+                },
+                {
+                  extend: 'backgroundColorChange',
+                  base: {
+                    transitionDuration: '{{motions.motionDuration050}}',
+                  },
+                },
+              ],
+              stylePreset: 'testButtonStylePresetWithBorders',
+            }}
+          >
+            Medium button - with two extends
           </Button>
           <Button
             size={ButtonSize.Large}
