@@ -35,51 +35,50 @@ export default [
     id: '/getting-started',
     subNav: [
       {
-        title: 'Code',
-        id: '/getting-started/code/web',
-        subNav: [
-          {
-            title: 'Web',
-            page: true,
-            id: '/getting-started/code/web',
-          },
-          {
-            title: 'Instrumentation',
-            page: true,
-            id: '/getting-started/code/instrumentation',
-          },
-          {
-            title: 'Testing',
-            page: true,
-            id: '/getting-started/code/testing',
-          },
-          {
-            title: 'Design Overview',
-            page: true,
-            id: '/getting-started/code/design-overview',
-            description:
-              'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
-            illustration: 'guides/design-overview/hero',
-          },
-          {
-            title: 'Engineering overview',
-            page: true,
-            id: '/getting-started/code/engineering-overview',
-            description:
-              'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
-            illustration: 'guides/engineering-overview/hero',
-          },
-          // ToDo: Once design quickstart guide page is ready, need to enable this section.
-          // {
-          //   title: 'Design quickstart guide',
-          //   page: true,
-          //   id: '/getting-started/code/design-quickstart-guide',
-          //   description:
-          //     'To start designing with NewsKit, follow the steps in the quickstart guide.',
-          //   illustration: 'guides/design-overview/design-quickstart',
-          // },
-        ],
+        title: 'Overview',
+        page: true,
+        id: '/getting-started/overview',
       },
+      {
+        title: 'Web',
+        page: true,
+        id: '/getting-started/code/web',
+      },
+      {
+        title: 'Instrumentation',
+        page: true,
+        id: '/getting-started/code/instrumentation',
+      },
+      {
+        title: 'Testing',
+        page: true,
+        id: '/getting-started/code/testing',
+      },
+      {
+        title: 'Design Overview',
+        page: true,
+        id: '/getting-started/code/design-overview',
+        description:
+          'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
+        illustration: 'guides/design-overview/hero',
+      },
+      {
+        title: 'Engineering overview',
+        page: true,
+        id: '/getting-started/code/engineering-overview',
+        description:
+          'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
+        illustration: 'guides/engineering-overview/hero',
+      },
+      // ToDo: Once design quickstart guide page is ready, need to enable this section.
+      // {
+      //   title: 'Design quickstart guide',
+      //   page: true,
+      //   id: '/getting-started/code/design-quickstart-guide',
+      //   description:
+      //     'To start designing with NewsKit, follow the steps in the quickstart guide.',
+      //   illustration: 'guides/design-overview/design-quickstart',
+      // },
     ],
   },
   {
