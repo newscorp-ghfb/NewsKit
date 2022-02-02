@@ -53,7 +53,10 @@ export default ({path, ...props}: LayoutProps) => (
         Send an enquiry to the NewsKit team who will respond as quickly as
         possible.
         <Block spaceStack="space080" />
-        <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js" />
+        <script
+          src="https://static.airtable.com/js/embed/embed_snippet_v1.js"
+          async
+        />
         <iframe
           src="https://airtable.com/embed/shrbfsBAPlQrW4MZ5?backgroundColor=orange"
           frameBorder="0"

@@ -7,6 +7,17 @@ const CopyPlugin = require('copy-webpack-plugin');
 const withMDX = require('./mdx');
 
 module.exports = withMDX({
+  eslint: {
+    dirs: [
+      'components',
+      'demo-components',
+      'helpers',
+      'pages',
+      'templates',
+      'theme',
+      'utils',
+    ],
+  },
   experimental: {
     externalDir: true,
   },
