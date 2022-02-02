@@ -128,11 +128,11 @@ export const BlockLayout3H = ({
       rowGap={{xs: 'space010', md: 'space040'}}
       columnGap={{md: 'space050', lg: 'space050'}}
     >
-      {Arias => (
+      {Areas => (
         <>
-          <Arias.A>{ph1}</Arias.A>
-          <Arias.B>{ph2}</Arias.B>
-          <Arias.C>{ph3}</Arias.C>
+          <Areas.A>{ph1}</Areas.A>
+          <Areas.B>{ph2}</Areas.B>
+          <Areas.C>{ph3}</Areas.C>
         </>
       )}
     </GridLayout>

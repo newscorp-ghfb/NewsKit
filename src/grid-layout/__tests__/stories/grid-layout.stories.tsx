@@ -1,14 +1,16 @@
 import * as React from 'react';
+import {styled} from '../../../utils';
 import {Grid, Cell} from '../../../grid';
-
 import {Block} from '../../../block';
 import {Divider} from '../../../divider';
-
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {GridCard, GridTeaser} from './grid-card';
 import {GridBox} from './common';
-import {StorybookHeading} from '../../../test/storybook-comps';
 import {Label} from '../../..';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../../test/storybook-comps';
 
 export default {
   title: 'NewsKit Light/grid-layout',
@@ -104,23 +106,23 @@ export const ResponsiveExample = () => (
       rowGap={{xs: 'space010', md: 'space040'}}
       columnGap={{md: 'space030', lg: 'space050'}}
     >
-      {Arias => (
+      {Areas => (
         <>
-          <Arias.A>
+          <Areas.A>
             <GridBox>A</GridBox>
-          </Arias.A>
-          <Arias.B>
+          </Areas.A>
+          <Areas.B>
             <GridBox>B</GridBox>
-          </Arias.B>
-          <Arias.C>
+          </Areas.B>
+          <Areas.C>
             <GridBox>C</GridBox>
-          </Arias.C>
-          <Arias.D>
+          </Areas.C>
+          <Areas.D>
             <GridBox>D</GridBox>
-          </Arias.D>
-          <Arias.E>
+          </Areas.D>
+          <Areas.E>
             <GridBox>E</GridBox>
-          </Arias.E>
+          </Areas.E>
         </>
       )}
     </GridLayout>
@@ -182,6 +184,41 @@ export const ItemOrder = () => {
     </>
   );
 };
+
+const BigRedBlock = styled(Block)`
+  width: 200px;
+  height: 200px;
+  background: red;
+`;
+
+export const WithOverrides = () => (
+  <>
+    <StorybookHeading>With overrides</StorybookHeading>
+    <StorybookSubHeading>Unconstrained width</StorybookSubHeading>
+    <GridLayout columns="1fr 1fr" columnGap="20px" rowGap="20px">
+      <GridLayoutItem>
+        <BigRedBlock />
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <BigRedBlock />
+      </GridLayoutItem>
+    </GridLayout>
+    <StorybookSubHeading>Width 500px</StorybookSubHeading>
+    <GridLayout
+      columns="1fr 1fr"
+      columnGap="20px"
+      rowGap="20px"
+      overrides={{width: '500px'}}
+    >
+      <GridLayoutItem>
+        <BigRedBlock />
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <BigRedBlock />
+      </GridLayoutItem>
+    </GridLayout>
+  </>
+);
 
 export const CardWithGrid = () => (
   <>

@@ -37,6 +37,7 @@ export const GridLayout = ({children, ...props}: GridLayoutProps) => {
   let validCSSAreas: string | Record<string, string | undefined> | undefined;
 
   if (typeof areas === 'object') {
+    validCSSAreas = {};
     Object.entries(areas).forEach(([key, value]) => {
       (validCSSAreas as Record<string, string | undefined>)[
         key

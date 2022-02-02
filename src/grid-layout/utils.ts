@@ -1,12 +1,10 @@
 import {MQ} from '../utils/style';
 
-export const capitalize = (s: string) => {
-  if (typeof s !== 'string') return '';
-  return s.replace(/^./, firstLetter => firstLetter.toUpperCase());
-};
+export const capitalize = (s: string) =>
+  s.replace(/^./, firstLetter => firstLetter.toUpperCase());
 
-export const extractAreas = (ariaString: string) =>
-  ariaString
+export const extractAreas = (areaString: string) =>
+  areaString
     .replace(/\n/g, '')
     .replace(/"/g, '')
     .replace(/  +/g, ' ')
@@ -22,17 +20,12 @@ export const getAreasList = (areas: MQ<string>): string[] => {
   if (typeof areas === 'string') {
     return uniq(extractAreas(areas));
   }
+  const list = Object.values(areas).reduce((acc: string[], val: string) => {
+    const filtered = extractAreas(val);
+    return [...acc, ...filtered];
+  }, []);
 
-  if (typeof areas === 'object') {
-    const list = Object.values(areas).reduce((acc: string[], val: string) => {
-      const filtered = extractAreas(val);
-      return [...acc, ...filtered];
-    }, []);
-
-    return uniq(list).filter(filterInvalidAreas);
-  }
-
-  return [];
+  return uniq(list).filter(filterInvalidAreas);
 };
 
 export const areaToValidCSS = (areasToStandardise?: string) =>
