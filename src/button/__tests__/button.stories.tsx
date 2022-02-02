@@ -67,18 +67,6 @@ const myCustomTheme = createTheme({
           color: '#0a68c1',
           backgroundColor: 'transparent',
         },
-        hover: {
-          backgroundColor: '#7930C1',
-        },
-      },
-    },
-    transitionPresets: {
-      myTransition: {
-        base: {
-          transitionProperty: 'background-color',
-          transitionDuration: '{{motions.motionDuration040}}',
-          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-        },
       },
     },
   },
@@ -168,15 +156,7 @@ export const StoryButtonSize = () => (
         spaceStack="space070"
         wrap="wrap"
       >
-        <Button
-          size={ButtonSize.Small}
-          overrides={{
-            stylePreset: 'testButtonSolidPrimary',
-            transitionPreset: 'backgroundColorChange',
-          }}
-        >
-          Small button
-        </Button>
+        <Button size={ButtonSize.Small}>Small button</Button>
         <Button size={ButtonSize.Medium}>Medium button</Button>
         <Button size={ButtonSize.Large}>Large button</Button>
       </Stack>
@@ -207,30 +187,19 @@ export const StoryFullAndFixedWidthButton = () => (
     </Container>
     <StorybookSubHeading>Fixed-Width Button</StorybookSubHeading>
     <Container>
-      <ThemeProvider theme={myCustomTheme}>
-        <Border>
-          <Spacer>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{
-                width: 'sizing120',
-                stylePreset: 'myButton',
-                transitionPreset: 'myTransition',
-              }}
-            >
-              Small fixed-width button
-            </Button>
-          </Spacer>
-          <Spacer>
-            <Button size={ButtonSize.Medium} overrides={{width: 'sizing120'}}>
-              Medium fixed-width button
-            </Button>
-          </Spacer>
-          <Button size={ButtonSize.Large} overrides={{width: 'sizing120'}}>
-            Large fixed-width button
+      <Border>
+        <Spacer>
+          <Button size={ButtonSize.Small}>Small fixed-width button</Button>
+        </Spacer>
+        <Spacer>
+          <Button size={ButtonSize.Medium} overrides={{width: 'sizing120'}}>
+            Medium fixed-width button
           </Button>
-        </Border>
-      </ThemeProvider>
+        </Spacer>
+        <Button size={ButtonSize.Large} overrides={{width: 'sizing120'}}>
+          Large fixed-width button
+        </Button>
+      </Border>
     </Container>
     <StorybookSubHeading>Fixed-Width and overflow</StorybookSubHeading>
     <Container>
@@ -475,3 +444,107 @@ export const StoryButtonLink = () => (
   </>
 );
 StoryButtonLink.storyName = 'button-link';
+const myCustomTransitionPresets = createTheme({
+  name: 'my-custom-transition-presets',
+  overrides: {
+    transitionPresets: {
+      customBackgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '10ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+      customBorderColourChange: {
+        base: {
+          transitionProperty: 'border-color',
+          transitionDuration: '100ms',
+          transitionDelay: '0ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+    },
+    stylePresets: {
+      testButtonStylePresetWithBorders: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+          borderColor: '{{colors.blue020}}',
+          borderStyle: 'solid',
+          borderWidth: '4px',
+        },
+        hover: {
+          // backgroundColor: '{{colors.interactivePrimary040}}',
+          backgroundColor: '{{colors.amber070}}',
+          borderColor: '{{colors.green040}}',
+        },
+        active: {
+          backgroundColor: '{{colors.interactivePrimary050}}',
+        },
+        disabled: {
+          backgroundColor: '{{colors.interactiveDisabled010}}',
+          color: '{{colors.inkNonEssential}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+        loading: {
+          backgroundColor: '{{colors.interactivePrimary020}}',
+          color: '{{colors.inkBrand010}}',
+          iconColor: '{{colors.inkBrand010}}',
+        },
+      },
+    },
+  },
+});
+
+export const StoryButtonWithTransitions = () => (
+  <>
+    <StorybookSubHeading>Button with transition</StorybookSubHeading>
+    <ThemeProvider theme={myCustomTransitionPresets}>
+      <Container>
+        <Stack
+          flow="vertical-center"
+          spaceInline="space070"
+          spaceStack="space070"
+          wrap="wrap"
+        >
+          <Button
+            size={ButtonSize.Small}
+            overrides={{transitionPreset: 'customBackgroundColorChange'}}
+          >
+            Small button override transition preset
+          </Button>
+          <Button
+            size={ButtonSize.Medium}
+            overrides={{
+              stylePreset: 'testButtonStylePresetWithBorders',
+              transitionPreset: {
+                extend: 'backgroundColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration050}}',
+                },
+              },
+            }}
+          >
+            Medium button
+          </Button>
+          <Button
+            size={ButtonSize.Large}
+            overrides={{
+              transitionPreset: [
+                'customBorderColourChange',
+                'customBackgroundColorChange',
+              ],
+              stylePreset: 'testButtonStylePresetWithBorders',
+            }}
+          >
+            Large button - override [transition presets]
+          </Button>
+        </Stack>
+      </Container>
+    </ThemeProvider>
+  </>
+);
+StoryButtonWithTransitions.storyName = 'button-with-transition';

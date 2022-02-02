@@ -1,4 +1,4 @@
-import { TransitionToken } from '../theme/types';
+import {TransitionToken} from '../theme/types';
 import {MQ} from '../utils/style';
 
 export enum FlagSize {

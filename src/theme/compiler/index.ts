@@ -61,7 +61,7 @@ const parseAndGet = (
   return value;
 };
 
-const recurseUnknown = (
+export const recurseUnknown = (
   theme: UncompiledTheme,
   value: unknown,
   errorLogger: ThemeLoggerFunction,

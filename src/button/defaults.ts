@@ -8,12 +8,21 @@ export default {
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
       spaceInline: 'space020',
-      transitionPreset:{
-      extend: 'backgroundColorChange',
-      base: {
-        transitionDuration: '{{motions.motionDuration020}}',
-      },
-    },
+      transitionPreset: 'backgroundColorChange',
+      //     [{
+      //     extend: 'backgroundColorChange',
+      //     base: {
+      //       transitionDuration: '{{motions.motionDuration020}}',
+      //     },
+      //   },
+
+      //   {
+      //     extend: 'borderColorChange',
+      //     base: {
+      //       transitionDuration: '{{motions.motionDuration040}}',
+      //     },
+      //   },
+      // ],
 
       loadingIndicator: {
         stylePreset: 'indeterminateProgressIndicatorPrimary',
@@ -27,12 +36,13 @@ export default {
       minHeight: 'sizing080',
       iconSize: 'iconSize020',
       spaceInline: 'space020',
-      transitionPreset:{
-        extend: 'backgroundColorChange',
-        base: {
-          transitionDuration: '{{motions.motionDuration020}}',
-        },
-      },
+      transitionPreset: 'backgroundColorChange',
+      // transitionPreset:{
+      //   extend: 'backgroundColorChange',
+      //   base: {
+      //     transitionDuration: '{{motions.motionDuration020}}',
+      //   },
+      // },
       loadingIndicator: {
         stylePreset: 'indeterminateProgressIndicatorPrimary',
       },
@@ -45,14 +55,15 @@ export default {
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
       spaceInline: 'space020',
-      transitionPreset:{
-        extend: 'backgroundColorChange',
-        base: {
-          transitionProperty: 'background-color',
-          transitionDuration: '{{motions.motionDuration020}}',
-          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-        },
-      },
+      transitionPreset: 'backgroundColorChange',
+      // transitionPreset:{
+      //   extend: 'backgroundColorChange',
+      //   base: {
+      //     transitionProperty: 'background-color',
+      //     transitionDuration: '{{motions.motionDuration020}}',
+      //     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+      //   },
+      // },
       loadingIndicator: {
         stylePreset: 'indeterminateProgressIndicatorPrimary',
       },
