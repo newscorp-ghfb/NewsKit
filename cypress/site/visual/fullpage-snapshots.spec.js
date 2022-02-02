@@ -4,7 +4,7 @@
 const routes = {
   audioPlayer: '/components/audio-player',
   icons: '/components/icons',
-  spacePresets: '/foundations/presets/space-presets',
+  spacing: '/foundations/spacing',
   typography: '/foundations/presets/typography-presets',
   welcome: '/index',
   overview: '/components/overview/',
@@ -18,7 +18,7 @@ Object.entries(routes).forEach(route => {
     it(`should pass visual regression test on ${pageName}`, () => {
       cy.eyesOpen();
       cy.mockConsentAndVisit(path);
-      if (!['spacePresets', 'welcome', 'overview'].includes(pageName)) {
+      if (!['spacing', 'welcome', 'overview'].includes(pageName)) {
         cy.get('[data-testid="sample-code"]').first().scrollIntoView({
           easing: 'linear',
         });
