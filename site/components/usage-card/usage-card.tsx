@@ -14,7 +14,7 @@ const kindMap: Record<string, KindConfig> = {
   },
 
   dont: {
-    heading: 'Do not',
+    heading: 'Don’t',
     iconComponent: IconFilledCrossCircle,
     dividerStylePreset: 'dividerNegative',
     headingStylePreset: 'inkNegative',
