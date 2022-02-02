@@ -120,10 +120,6 @@ export const GridTeaser = ({
       {Areas => (
         <>
           <Areas.Thumb>
-            {/* <img
-              src={image}
-              style={{width: '100%', height: '400px', objectFit: 'cover'}}
-            /> */}
             <Image src={image} />
           </Areas.Thumb>
           <Areas.Thumb
