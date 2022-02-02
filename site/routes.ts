@@ -289,6 +289,13 @@ export default [
             description: 'Lets users enter and edit text.',
             illustration: 'components/text-input-illustration',
           },
+          {
+            title: 'Select',
+            page: true,
+            id: '/components/select',
+            description: 'Lets users select one option from a list',
+            illustration: 'components/select-illustration',
+          },
         ],
       },
       {
