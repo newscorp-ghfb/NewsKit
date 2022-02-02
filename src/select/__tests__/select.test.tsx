@@ -413,4 +413,65 @@ describe('Select', () => {
 
     expect(fragment).toMatchSnapshot();
   });
+
+  // test('render Select options in Modal', () => {
+  //   const props: SelectProps = {
+  //     children: [
+  //       <SelectOption value="option 1">option 1</SelectOption>,
+  //       <SelectOption value="option 2">option 2</SelectOption>,
+  //     ],
+  //     useModal: true,
+  //   };
+
+  //   const fragment = renderToFragmentWithTheme(Select, props);
+  //   expect(fragment).toMatchSnapshot();
+  // });
+
+  test('render Select options in a Modal', async () => {
+    const props: SelectProps = {
+      children: [
+        <SelectOption value="option 1">option 1</SelectOption>,
+        <SelectOption value="option 2">option 2</SelectOption>,
+      ],
+      useModal: true,
+    };
+
+    const {getByTestId, asFragment} = renderWithTheme(Select, props);
+
+    await act(async () => {
+      fireEvent.click(getByTestId('select-button'));
+    });
+    const menuElement = getByTestId('select-panel') as any;
+    expect(menuElement).toHaveFocus();
+
+    const dialogElement = getByTestId('modal');
+    expect(dialogElement).toBeInTheDocument();
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+  test('render Select options in a Modal with overrides', async () => {
+    const props: SelectProps = {
+      children: [
+        <SelectOption value="option 1">option 1</SelectOption>,
+        <SelectOption value="option 2">option 2</SelectOption>,
+      ],
+      useModal: true,
+      overrides: {
+        modal: {
+          panel: {
+            maxHeight: '50vh',
+            maxWidth: '300px',
+          },
+        },
+      },
+    };
+
+    const {getByTestId, asFragment} = renderWithTheme(Select, props);
+
+    await act(async () => {
+      fireEvent.click(getByTestId('select-button'));
+    });
+
+    expect(asFragment()).toMatchSnapshot();
+  });
 });

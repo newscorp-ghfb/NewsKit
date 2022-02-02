@@ -38,7 +38,7 @@ interface SelectPanelProps {
     modal?: Override<ModalProps>;
   };
   children: React.ReactElement<SelectOptionProps>[];
-  useModal?: MQ<boolean>;
+  useModal: MQ<boolean>;
   buttonRef: React.RefObject<HTMLButtonElement>;
 }
 
@@ -103,7 +103,7 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
 
     const listDescriptionId = useReactKeys(1)[0];
 
-    const modalMQKeys = Object.keys(useModal || {}).filter(Boolean);
+    const modalMQKeys = Object.keys(useModal).filter(Boolean);
     const currentMQ = useBreakpointKey();
 
     const renderInModal = modalMQKeys.includes(currentMQ) || useModal === true;
@@ -150,7 +150,11 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
 
       return (
         <ModalComponent {...(modalProps as ModalProps)}>
-          <StyledSelectPanelBody ref={panelRef} {...restProps}>
+          <StyledSelectPanelBody
+            data-testid="select-panel"
+            ref={panelRef}
+            {...restProps}
+          >
             {optionsAsChildren}
           </StyledSelectPanelBody>
         </ModalComponent>
