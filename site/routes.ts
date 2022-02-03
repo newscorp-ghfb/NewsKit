@@ -172,7 +172,7 @@ export default [
       // {
       //   title: 'Overlays',
       //   page: true,
-      //   id: '/foundations/overlays',
+      //   id: '/theme/overlays',
       //   illustration: 'static/theming/foundations/overlays.svg',
       //   description:
       //     'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
@@ -180,7 +180,7 @@ export default [
       // {
       //   title: 'Typography',
       //   page: true,
-      //   id: '/foundations/fonts',
+      //   id: '/theme/fonts',
       //   illustration: 'static/theming/foundations/typography.svg',
       //   description:
       //     'Fonts define the font family, boldness, size, and the style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',

@@ -146,11 +146,9 @@ export default (layoutProps: LayoutProps) => (
               Typography Presets define properties such as font-family,
               font-weight and line-height, in one design token. In combination
               with{' '}
-              <Link href="/foundations/presets/style-presets">
-                Style Presets
-              </Link>
-              , Sizing, and <Link href="/foundations/spacing/">Spacing</Link>{' '}
-              they provide the visual attributes of a component.
+              <Link href="/theme/presets/style-presets">Style Presets</Link>,
+              Sizing, and <Link href="/theme/spacing/">Spacing</Link> they
+              provide the visual attributes of a component.
             </>
           }
           showSeparator
@@ -167,11 +165,9 @@ export default (layoutProps: LayoutProps) => (
               Typography Presets define properties such as font-family,
               font-weight and line-height, in one design token. In combination
               with{' '}
-              <Link href="/foundations/presets/style-presets">
-                Style Presets
-              </Link>
-              , Sizing, and <Link href="/foundations/spacing/">Spacing</Link>{' '}
-              they provide the visual attributes of a component.
+              <Link href="/theme/presets/style-presets">Style Presets</Link>,
+              Sizing, and <Link href="/theme/spacing/">Spacing</Link> they
+              provide the visual attributes of a component.
             </>
           }
           showSeparator
