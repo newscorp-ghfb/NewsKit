@@ -35,51 +35,50 @@ export default [
     id: '/getting-started',
     subNav: [
       {
-        title: 'Code',
-        id: '/getting-started/code/web',
-        subNav: [
-          {
-            title: 'Web',
-            page: true,
-            id: '/getting-started/code/web',
-          },
-          {
-            title: 'Instrumentation',
-            page: true,
-            id: '/getting-started/code/instrumentation',
-          },
-          {
-            title: 'Testing',
-            page: true,
-            id: '/getting-started/code/testing',
-          },
-          {
-            title: 'Design Overview',
-            page: true,
-            id: '/getting-started/code/design-overview',
-            description:
-              'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
-            illustration: 'guides/design-overview/hero',
-          },
-          {
-            title: 'Engineering overview',
-            page: true,
-            id: '/getting-started/code/engineering-overview',
-            description:
-              'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
-            illustration: 'guides/engineering-overview/hero',
-          },
-          // ToDo: Once design quickstart guide page is ready, need to enable this section.
-          // {
-          //   title: 'Design quickstart guide',
-          //   page: true,
-          //   id: '/getting-started/code/design-quickstart-guide',
-          //   description:
-          //     'To start designing with NewsKit, follow the steps in the quickstart guide.',
-          //   illustration: 'guides/design-overview/design-quickstart',
-          // },
-        ],
+        title: 'Overview',
+        page: true,
+        id: '/getting-started/overview',
       },
+      {
+        title: 'Web',
+        page: true,
+        id: '/getting-started/code/web',
+      },
+      {
+        title: 'Instrumentation',
+        page: true,
+        id: '/getting-started/code/instrumentation',
+      },
+      {
+        title: 'Testing',
+        page: true,
+        id: '/getting-started/code/testing',
+      },
+      {
+        title: 'Design Overview',
+        page: true,
+        id: '/getting-started/code/design-overview',
+        description:
+          'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
+        illustration: 'guides/design-overview/hero',
+      },
+      {
+        title: 'Engineering overview',
+        page: true,
+        id: '/getting-started/code/engineering-overview',
+        description:
+          'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
+        illustration: 'guides/engineering-overview/hero',
+      },
+      // ToDo: Once design quickstart guide page is ready, need to enable this section.
+      // {
+      //   title: 'Design quickstart guide',
+      //   page: true,
+      //   id: '/getting-started/code/design-quickstart-guide',
+      //   description:
+      //     'To start designing with NewsKit, follow the steps in the quickstart guide.',
+      //   illustration: 'guides/design-overview/design-quickstart',
+      // },
     ],
   },
   {
@@ -132,10 +131,10 @@ export default [
           'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
       },
       {
-        title: 'Motions',
+        title: 'Motion',
         page: true,
-        id: '/foundations/motions',
-        illustration: 'foundations/motions/hero',
+        id: '/foundations/motion',
+        illustration: 'foundations/motion/hero',
         description:
           'Motion is used to create movement and narrative within a product. Animated interface elements don’t just attract attention, they enhance user experience and help guide user flow',
       },
@@ -162,6 +161,14 @@ export default [
         description:
           'Standardised sizing provides increased visual consistency in an interface.',
       },
+      {
+        title: 'Spacing',
+        page: true,
+        id: '/foundations/spacing',
+        illustration: 'foundations/spacing/hero',
+        description:
+          'Space helps to guide the user and provide a pleasant and consistent experience when using a product.',
+      },
       // {
       //   title: 'Overlays',
       //   page: true,
@@ -182,13 +189,6 @@ export default [
         title: 'Presets',
         id: '/foundations/presets',
         subNav: [
-          {
-            title: 'Space Presets',
-            page: true,
-            id: '/foundations/presets/space-presets',
-            description:
-              'Space helps to guide the user and provide a pleasant and consistent experience when using a product.',
-          },
           {
             title: 'Style Presets',
             page: true,
@@ -656,15 +656,16 @@ export default [
       },
     ],
   },
-  {
-    title: 'Patterns',
-    id: '/patterns',
-    subNav: [
-      {
-        title: 'Overview',
-        page: true,
-        id: '/patterns/overview',
-      },
-    ],
-  },
+  // ToDo: At least one pattern page should be ready to enable this nav link .
+  // {
+  //   title: 'Patterns',
+  //   id: '/patterns',
+  //   subNav: [
+  //     {
+  //       title: 'Overview',
+  //       page: true,
+  //       id: '/patterns/overview',
+  //     },
+  //   ],
+  // },
 ];
