@@ -172,7 +172,7 @@ export default (layoutProps: LayoutProps) => (
                 description: (
                   <>
                     Icons can be sized using{' '}
-                    <Link href="/foundations/presets/space-presets/#css-2ka130">
+                    <Link href="/foundations/spacing/#css-2ka130">
                       icon size tokens.
                     </Link>
                   </>
