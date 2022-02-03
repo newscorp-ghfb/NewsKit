@@ -500,70 +500,83 @@ const myCustomTransitionPresets = createTheme({
 
 export const StoryButtonWithTransitions = () => (
   <>
-    <StorybookSubHeading>Button with transition</StorybookSubHeading>
+    <StorybookSubHeading>Button with transitions</StorybookSubHeading>
     <ThemeProvider theme={myCustomTransitionPresets}>
       <Container>
-        <Stack
-          flow="vertical-center"
-          spaceInline="space070"
-          spaceStack="space070"
-          wrap="wrap"
+        <StorybookSubHeading>
+          Button with default transition preset
+        </StorybookSubHeading>
+        <Button size={ButtonSize.Medium}>Button</Button>
+        <StorybookSubHeading>
+          Button with overrides on default transition preset
+        </StorybookSubHeading>
+        <Button
+          size={ButtonSize.Medium}
+          overrides={{
+            stylePreset: 'testButtonStylePresetWithBorders',
+            transitionPreset: 'customBackgroundColorChange',
+          }}
         >
-          <Button
-            size={ButtonSize.Small}
-            overrides={{transitionPreset: 'customBackgroundColorChange'}}
-          >
-            Small button override transition preset
-          </Button>
-          <Button
-            size={ButtonSize.Medium}
-            overrides={{
-              stylePreset: 'testButtonStylePresetWithBorders',
-              transitionPreset: {
+          Button
+        </Button>
+        <StorybookSubHeading>
+          {' '}
+          Button with overrides using extend on transitionDuration
+        </StorybookSubHeading>
+        <Button
+          size={ButtonSize.Medium}
+          overrides={{
+            stylePreset: 'testButtonStylePresetWithBorders',
+            transitionPreset: {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration050}}',
+              },
+            },
+          }}
+        >
+          Button
+        </Button>
+        <StorybookSubHeading>
+          Button with overrides on two properties from defaults using extend
+        </StorybookSubHeading>
+        <Button
+          size={ButtonSize.Medium}
+          overrides={{
+            transitionPreset: [
+              {
                 extend: 'backgroundColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration030}}',
+                },
+              },
+              {
+                extend: 'borderColorChange',
                 base: {
                   transitionDuration: '{{motions.motionDuration050}}',
                 },
               },
-            }}
-          >
-            Medium button
-          </Button>
-          <Button
-            size={ButtonSize.Medium}
-            overrides={{
-              transitionPreset: [
-                {
-                  extend: 'backgroundColorChange',
-                  base: {
-                    transitionDuration: '{{motions.motionDuration030}}',
-                  },
-                },
-                {
-                  extend: 'backgroundColorChange',
-                  base: {
-                    transitionDuration: '{{motions.motionDuration050}}',
-                  },
-                },
-              ],
-              stylePreset: 'testButtonStylePresetWithBorders',
-            }}
-          >
-            Medium button - with two extends
-          </Button>
-          <Button
-            size={ButtonSize.Large}
-            overrides={{
-              transitionPreset: [
-                'customBorderColourChange',
-                'customBackgroundColorChange',
-              ],
-              stylePreset: 'testButtonStylePresetWithBorders',
-            }}
-          >
-            Large button - override [transition presets]
-          </Button>
-        </Stack>
+            ],
+            stylePreset: 'testButtonStylePresetWithBorders',
+          }}
+        >
+          Button
+        </Button>
+        <StorybookSubHeading>
+          Button with overrides on two properties on transitioPreset
+        </StorybookSubHeading>
+        <Button
+          size={ButtonSize.Medium}
+          overrides={{
+            transitionPreset: [
+              'customBorderColourChange',
+              'customBackgroundColorChange',
+            ],
+            stylePreset: 'testButtonStylePresetWithBorders',
+          }}
+        >
+          Button
+        </Button>
       </Container>
     </ThemeProvider>
   </>
