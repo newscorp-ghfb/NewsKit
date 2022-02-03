@@ -415,6 +415,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -440,6 +454,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration000}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {

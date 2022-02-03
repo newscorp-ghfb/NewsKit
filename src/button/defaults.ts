@@ -55,7 +55,7 @@ export default {
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
       spaceInline: 'space020',
-      transitionPreset: ['backgroundColorChange', 'borderColorChange'],
+      transitionPreset: 'backgroundColorChange',
       // transitionPreset:{
       //   extend: 'backgroundColorChange',
       //   base: {
