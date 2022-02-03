@@ -13,15 +13,13 @@ import {
 } from './styled';
 import {ScreenReaderOnly} from '../screen-reader-only';
 import {useBreakpointKey, useReactKeys} from '../utils/hooks';
-
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {IconFilledCheck} from '../icons';
-
 import {MQ} from '../utils/style/types';
 import {Modal, ModalProps} from '../modal';
-import {withDefaultProps} from '../utils/with-default-props';
 import {getComponentOverrides, Override} from '../utils/overrides';
+import {getModalOverrides} from './utils';
 
 interface SelectPanelProps {
   isOpen: boolean;
@@ -40,9 +38,10 @@ interface SelectPanelProps {
   children: React.ReactElement<SelectOptionProps>[];
   useModal: MQ<boolean>;
   buttonRef: React.RefObject<HTMLButtonElement>;
+  closeMenu: Function;
 }
 
-const DefaultModal = withDefaultProps(Modal, {}, 'select.modal');
+const DefaultModal = Modal;
 
 const StyledOptionWithPrivateProps = React.forwardRef<
   HTMLDivElement,
@@ -97,6 +96,7 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       highlightedIndex,
       buttonRef,
       useModal,
+      closeMenu,
       overrides,
       ...restProps
     } = props;
@@ -107,6 +107,13 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
     const currentMQ = useBreakpointKey();
 
     const renderInModal = modalMQKeys.includes(currentMQ) || useModal === true;
+
+    const theme = useTheme();
+    const modalOverrides = getModalOverrides({
+      theme,
+      size,
+      overrides: overrides?.modal,
+    });
 
     const optionsAsChildren =
       isOpen &&
@@ -143,8 +150,13 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
         overrides?.modal,
         DefaultModal,
         {
+          overrides: modalOverrides,
           open: isOpen,
           restoreFocusTo: buttonRef.current!,
+          onDismiss: () => {
+            // TODO: does not work when click on SVG Icon
+            closeMenu();
+          },
         },
       );
 
@@ -152,6 +164,7 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
         <ModalComponent {...(modalProps as ModalProps)}>
           <StyledSelectPanelBody
             data-testid="select-panel"
+            aria-describedby={listDescriptionId}
             ref={panelRef}
             {...restProps}
           >

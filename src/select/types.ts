@@ -29,16 +29,18 @@ export interface SelectPanelOverrides {
   spaceStack?: MQ<string>;
 }
 
+export type SelectPropsOverrides = {
+  button?: SelectButtonOverrides;
+  panel?: SelectPanelOverrides;
+  modal?: Override<ModalProps>;
+};
+
 export interface SelectProps extends CommonInputProps {
   loading?: boolean;
   children: Array<React.ReactElement<SelectOptionProps>>;
   validationIcon?: React.ReactNode;
   useModal?: MQ<boolean>;
-  overrides?: {
-    button?: SelectButtonOverrides;
-    panel?: SelectPanelOverrides;
-    modal?: Override<ModalProps>;
-  };
+  overrides?: SelectPropsOverrides;
 }
 
 export interface SelectOptionProps {

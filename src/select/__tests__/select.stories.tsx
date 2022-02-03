@@ -698,7 +698,7 @@ const selectWithModalVariants = [
         modal: ({children, ...restProps}: ModalProps) => (
           <Modal {...restProps} closePosition="none">
             <CustomModalContainer>{children}</CustomModalContainer>
-            <Button>Close dialog</Button>
+            <Button onClick={restProps.onDismiss}>Close dialog</Button>
           </Modal>
         ),
       },

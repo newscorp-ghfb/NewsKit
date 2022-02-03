@@ -111,12 +111,31 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       getMenuProps,
       getItemProps,
       openMenu,
+      closeMenu,
     } = useSelect({
       items: children,
       defaultSelectedItem,
       onSelectedItemChange: onInputChange,
       itemToString,
       onHighlightedIndexChange,
+      stateReducer: (rstate, actionAndChanges) => {
+        console.log(rstate, actionAndChanges);
+        const {type, changes} = actionAndChanges;
+
+        if (
+          // TODO: needs to know if its showing in the modal or not
+          showInModal(useModal) &&
+          type === useSelect.stateChangeTypes.MenuBlur
+        ) {
+          console.log('click outside');
+          return {
+            ...changes,
+            isOpen: true,
+          };
+        }
+
+        return changes;
+      },
       ...(programmaticallySelectedItem
         ? {selectedItem: programmaticallySelectedItem}
         : {}),
@@ -191,6 +210,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           getItemProps={getItemProps}
           buttonRef={localInputRef}
           useModal={useModal}
+          closeMenu={closeMenu}
           {...downshiftMenuPropsExceptRef}
           ref={composeRefs(panelRef, downshiftMenuPropsRef)}
         >

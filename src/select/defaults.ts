@@ -28,6 +28,11 @@ export default {
         maxHeight: '184px',
         spaceInset: 'spaceInset020',
       },
+      modal: {
+        panel: {
+          width: '60vw',
+        },
+      },
     },
     medium: {
       button: {
@@ -57,6 +62,11 @@ export default {
         maxHeight: '272px',
         spaceInset: 'spaceInset020',
       },
+      modal: {
+        panel: {
+          width: '60vw',
+        },
+      },
     },
     large: {
       button: {
@@ -85,6 +95,11 @@ export default {
         stylePreset: 'selectPanel',
         maxHeight: '360px',
         spaceInset: 'spaceInset020',
+      },
+      modal: {
+        panel: {
+          width: '60vw',
+        },
       },
     },
   },
