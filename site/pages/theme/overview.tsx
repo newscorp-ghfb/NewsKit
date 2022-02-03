@@ -42,9 +42,7 @@ const getCardList = (routeList: Item[]) =>
     })) as MediaItem[];
 
 const themeOverviewRouteListCards = getCardList(themeRouteList);
-
 const themePresetsRouteListCards = getCardList(themePresetsRouteList);
-
 const themeThemingRouteListCards = getCardList(themeThemingRouteList);
 
 export default (layoutProps: LayoutProps) => {
