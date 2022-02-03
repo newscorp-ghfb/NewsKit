@@ -32,6 +32,12 @@ const Container = styled.div`
   ${getColorCssFromTheme('backgroundColor', 'interface010')};
   ${getSpacingCssFromTheme('padding', 'space030')};
 `;
+
+const SelectWrapper = styled.div`
+  position: fixed;
+  top: 0;
+  right: 10px;
+`;
 interface ThemeSelectorProps {
   children: React.ReactNode;
 }
@@ -70,19 +76,21 @@ const ThemeSelector = ({children}: ThemeSelectorProps) => {
     <>
       <Stack flow="horizontal-stretch" stackDistribution="space-between">
         <StorybookHeading>Theme Checker</StorybookHeading>
-        <Select
-          overrides={{button: {width: '200px'}}}
-          onChange={event => {
-            setAndSaveThemeIndex(event.target.value);
-          }}
-          defaultValue={themeIndex.toString()}
-        >
-          {themeLabels.map((label, id) => (
-            <SelectOption key={label} value={id.toString()}>
-              {label}
-            </SelectOption>
-          ))}
-        </Select>
+        <SelectWrapper>
+          <Select
+            overrides={{button: {width: '200px'}}}
+            onChange={event => {
+              setAndSaveThemeIndex(event.target.value);
+            }}
+            defaultValue={themeIndex.toString()}
+          >
+            {themeLabels.map((label, id) => (
+              <SelectOption key={label} value={id.toString()}>
+                {label}
+              </SelectOption>
+            ))}
+          </Select>
+        </SelectWrapper>
       </Stack>
       <ThemeProvider theme={themes[themeIndex]}>
         <Container>{children}</Container>

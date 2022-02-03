@@ -1,7 +1,7 @@
 {
   "editorialHeadline010": {
     "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
-    "fontWeight": "{{fonts.fontWeight030}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
     "fontSize": "{{fonts.fontSize020}}",
     "lineHeight": "{{fonts.fontLineHeight060}}",
     "letterSpacing": "{{fonts.fontLetterSpacing010}}",
@@ -9,7 +9,7 @@
   },
   "editorialHeadline020": {
     "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
-    "fontWeight": "{{fonts.fontWeight030}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
     "fontSize": "{{fonts.fontSize030}}",
     "lineHeight": "{{fonts.fontLineHeight090}}",
     "letterSpacing": "{{fonts.fontLetterSpacing010}}",
@@ -17,7 +17,7 @@
   },
   "editorialHeadline030": {
     "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
-    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
     "fontSize": "{{fonts.fontSize060}}",
     "lineHeight": "{{fonts.fontLineHeight070}}",
     "letterSpacing": "{{fonts.fontLetterSpacing010}}",
@@ -25,7 +25,7 @@
   },
   "editorialHeadline040": {
     "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
-    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
     "fontSize": "{{fonts.fontSize070}}",
     "lineHeight": "{{fonts.fontLineHeight060}}",
     "letterSpacing": "{{fonts.fontLetterSpacing010}}",
@@ -33,7 +33,7 @@
   },
   "editorialHeadline050": {
     "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
-    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
     "fontSize": "{{fonts.fontSize080}}",
     "lineHeight": "{{fonts.fontLineHeight050}}",
     "letterSpacing": "{{fonts.fontLetterSpacing010}}",
@@ -41,23 +41,23 @@
   },
   "editorialHeadline060": {
     "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
-    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
     "fontSize": "{{fonts.fontSize090}}",
     "lineHeight": "{{fonts.fontLineHeight040}}",
-    "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
     "fontStretch": "semi-condensed"
   },
   "editorialHeadline070": {
     "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
-    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
     "fontSize": "{{fonts.fontSize100}}",
     "lineHeight": "{{fonts.fontLineHeight030}}",
-    "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
     "fontStretch": "semi-condensed"
   },
   "editorialHeadline080": {
     "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
-    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
     "fontSize": "{{fonts.fontSize110}}",
     "lineHeight": "{{fonts.fontLineHeight020}}",
     "letterSpacing": "{{fonts.fontLetterSpacing010}}",
