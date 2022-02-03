@@ -4,11 +4,12 @@ import composeRefs from '@seznam/compose-react-refs';
 import {SelectProps} from './types';
 import {SelectPanel} from './select-panel';
 import {SelectButton} from './select-button';
-import {MediaQueryProvider} from '../utils/hooks/use-media-query';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {showInModal} from './utils';
+import {shouldRenderInModal} from './utils';
+import {withMediaQueryProvider} from '../utils/hooks/use-media-query/context';
+import {useBreakpointKey} from '../utils/hooks/use-media-query';
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -32,6 +33,8 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     const selectRef: React.RefObject<HTMLDivElement> = useRef(null);
     const localInputRef: React.RefObject<HTMLInputElement> = useRef(null);
     const panelRef: React.RefObject<HTMLDivElement> = useRef(null);
+
+    const renderInModal = shouldRenderInModal(useModal, useBreakpointKey());
 
     const [isFocused, setIsFocused] = React.useState(false);
     const onSelectButtonFocus = React.useCallback(
@@ -118,16 +121,11 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       onSelectedItemChange: onInputChange,
       itemToString,
       onHighlightedIndexChange,
-      stateReducer: (rstate, actionAndChanges) => {
-        console.log(rstate, actionAndChanges);
+      stateReducer: (_, actionAndChanges) => {
         const {type, changes} = actionAndChanges;
 
-        if (
-          // TODO: needs to know if its showing in the modal or not
-          showInModal(useModal) &&
-          type === useSelect.stateChangeTypes.MenuBlur
-        ) {
-          console.log('click outside');
+        // Does not close panel in the case we are rendering panel inside a modal
+        if (renderInModal && type === useSelect.stateChangeTypes.MenuBlur) {
           return {
             ...changes,
             isOpen: true,
@@ -170,12 +168,8 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       offsetLeft: left = 0,
     } = (selectRef && selectRef.current) || {};
 
-    const SelectWrapper = showInModal(useModal)
-      ? MediaQueryProvider
-      : React.Fragment;
-
     return (
-      <SelectWrapper>
+      <>
         <SelectButton
           size={size}
           placeholder={placeholder}
@@ -209,21 +203,23 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           highlightedIndex={highlightedIndex}
           getItemProps={getItemProps}
           buttonRef={localInputRef}
-          useModal={useModal}
+          renderInModal={renderInModal}
           closeMenu={closeMenu}
           {...downshiftMenuPropsExceptRef}
           ref={composeRefs(panelRef, downshiftMenuPropsRef)}
         >
           {children}
         </SelectPanel>
-      </SelectWrapper>
+      </>
     );
   },
 );
 
 ThemelessSelect.displayName = 'Select';
 
-export const Select = withOwnTheme(ThemelessSelect)({
-  defaults,
-  stylePresets,
-});
+export const Select = withMediaQueryProvider(
+  withOwnTheme(ThemelessSelect)({
+    defaults,
+    stylePresets,
+  }),
+);

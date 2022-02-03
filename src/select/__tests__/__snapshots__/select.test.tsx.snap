@@ -303,6 +303,7 @@ exports[`Select render Select options in a Modal 1`] = `
   border-radius: 8px;
   background-color: #FFFFFF;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
+  width: 60vw;
   min-height: 15vh;
   opacity: 0;
 }
@@ -310,36 +311,6 @@ exports[`Select render Select options in a Modal 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-2 {
     top: 20vh;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .emotion-2 {
-    width: 90vw;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-2 {
-    width: 60vw;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-2 {
-    width: 45vw;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-2 {
-    width: 38vw;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-2 {
-    width: 31vw;
   }
 }
 
@@ -655,6 +626,7 @@ exports[`Select render Select options in a Modal 1`] = `
             data-testid="dialog-content"
           >
             <div
+              aria-describedby="mock-nk-1"
               aria-labelledby="downshift-43-label"
               class="emotion-5"
               data-testid="select-panel"
@@ -1036,6 +1008,7 @@ exports[`Select render Select options in a Modal with overrides 1`] = `
   border-radius: 8px;
   background-color: #FFFFFF;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
+  width: 60vw;
   max-width: 300px;
   min-height: 15vh;
   max-height: 50vh;
@@ -1045,36 +1018,6 @@ exports[`Select render Select options in a Modal with overrides 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-2 {
     top: 20vh;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .emotion-2 {
-    width: 90vw;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-2 {
-    width: 60vw;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-2 {
-    width: 45vw;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-2 {
-    width: 38vw;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-2 {
-    width: 31vw;
   }
 }
 
@@ -1366,7 +1309,7 @@ exports[`Select render Select options in a Modal with overrides 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-appear-done nk-modal-enter-done"
+          class="emotion-2 nk-modal-appear nk-modal-appear-active"
           data-testid="modal"
           role="dialog"
         >
@@ -1378,6 +1321,7 @@ exports[`Select render Select options in a Modal with overrides 1`] = `
             data-testid="dialog-content"
           >
             <div
+              aria-describedby="mock-nk-1"
               aria-labelledby="downshift-45-label"
               class="emotion-5"
               data-testid="select-panel"

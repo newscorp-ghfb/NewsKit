@@ -12,11 +12,10 @@ import {
   StyledSelectPanelBody,
 } from './styled';
 import {ScreenReaderOnly} from '../screen-reader-only';
-import {useBreakpointKey, useReactKeys} from '../utils/hooks';
+import {useReactKeys} from '../utils/hooks';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {IconFilledCheck} from '../icons';
-import {MQ} from '../utils/style/types';
 import {Modal, ModalProps} from '../modal';
 import {getComponentOverrides, Override} from '../utils/overrides';
 import {getModalOverrides} from './utils';
@@ -36,7 +35,7 @@ interface SelectPanelProps {
     modal?: Override<ModalProps>;
   };
   children: React.ReactElement<SelectOptionProps>[];
-  useModal: MQ<boolean>;
+  renderInModal: boolean;
   buttonRef: React.RefObject<HTMLButtonElement>;
   closeMenu: Function;
 }
@@ -95,18 +94,13 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       selectedItem,
       highlightedIndex,
       buttonRef,
-      useModal,
+      renderInModal,
       closeMenu,
       overrides,
       ...restProps
     } = props;
 
     const listDescriptionId = useReactKeys(1)[0];
-
-    const modalMQKeys = Object.keys(useModal).filter(Boolean);
-    const currentMQ = useBreakpointKey();
-
-    const renderInModal = modalMQKeys.includes(currentMQ) || useModal === true;
 
     const theme = useTheme();
     const modalOverrides = getModalOverrides({
@@ -153,10 +147,7 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
           overrides: modalOverrides,
           open: isOpen,
           restoreFocusTo: buttonRef.current!,
-          onDismiss: () => {
-            // TODO: does not work when click on SVG Icon
-            closeMenu();
-          },
+          onDismiss: closeMenu,
         },
       );
 

@@ -1822,6 +1822,11 @@ Object {
         "typographyPreset": "utilityBody030",
         "width": "100%",
       },
+      "modal": Object {
+        "panel": Object {
+          "width": "60vw",
+        },
+      },
       "panel": Object {
         "maxHeight": "360px",
         "spaceInset": "spaceInset020",
@@ -1851,6 +1856,11 @@ Object {
         "typographyPreset": "utilityBody020",
         "width": "100%",
       },
+      "modal": Object {
+        "panel": Object {
+          "width": "60vw",
+        },
+      },
       "panel": Object {
         "maxHeight": "272px",
         "spaceInset": "spaceInset020",
@@ -1879,6 +1889,11 @@ Object {
         "stylePreset": "inputField",
         "typographyPreset": "utilityBody020",
         "width": "100%",
+      },
+      "modal": Object {
+        "panel": Object {
+          "width": "60vw",
+        },
       },
       "panel": Object {
         "maxHeight": "184px",

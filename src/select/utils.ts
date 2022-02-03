@@ -7,11 +7,12 @@ import {hasOwnProperty} from '../utils/has-own-property';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 import {MQ} from '../utils/style/types';
 
-export const showInModal = (prop: MQ<boolean>) => {
-  if (typeof prop === 'object') {
-    return Object.keys(prop).filter(Boolean).length;
-  }
-  return prop === true;
+export const shouldRenderInModal = (
+  prop: MQ<boolean>,
+  currentBreakpoint: string,
+) => {
+  const modalMQKeys = Object.keys(prop).filter(Boolean);
+  return modalMQKeys.includes(currentBreakpoint) || prop === true;
 };
 
 export const getModalOverrides = ({
