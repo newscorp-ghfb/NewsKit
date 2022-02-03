@@ -28,41 +28,24 @@ const themeThemingRouteList: Item[] =
   themeRouteList.filter(route => route.title === 'Creating and using themes')[0]
     .subNav || [];
 
-const themeOverviewRouteListCards = themeRouteList
-  .filter(route => route.page && route?.illustration)
-  .map(({title, description, id, illustration}) => ({
-    media: illustration?.endsWith('.svg')
-      ? {src: illustration, alt: ''}
-      : getIllustrationComponent(illustration as string),
+const getCardList = (routeList: Item[]) =>
+  routeList
+    .filter(route => route.page && route?.illustration)
+    .map(({title, description, id, illustration}) => ({
+      media: illustration?.endsWith('.svg')
+        ? {src: illustration, alt: ''}
+        : getIllustrationComponent(illustration as string),
 
-    title,
-    href: id,
-    description,
-  })) as MediaItem[];
+      title,
+      href: id,
+      description,
+    })) as MediaItem[];
 
-const themePresetsRouteListCards = themePresetsRouteList
-  .filter(route => route.page && route?.illustration)
-  .map(({title, description, id, illustration}) => ({
-    media: illustration?.endsWith('.svg')
-      ? {src: illustration, alt: ''}
-      : getIllustrationComponent(illustration as string),
+const themeOverviewRouteListCards = getCardList(themeRouteList);
 
-    title,
-    href: id,
-    description,
-  })) as MediaItem[];
+const themePresetsRouteListCards = getCardList(themePresetsRouteList);
 
-const themeThemingRouteListCards = themeThemingRouteList
-  .filter(route => route.page && route?.illustration)
-  .map(({title, description, id, illustration}) => ({
-    media: illustration?.endsWith('.svg')
-      ? {src: illustration, alt: ''}
-      : getIllustrationComponent(illustration as string),
-
-    title,
-    href: id,
-    description,
-  })) as MediaItem[];
+const themeThemingRouteListCards = getCardList(themeThemingRouteList);
 
 export default (layoutProps: LayoutProps) => {
   const pageDescription = `NewsKit offers a robust and flexible theming system, enabling brands to 
