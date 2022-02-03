@@ -13,7 +13,11 @@ import {
 import {Label} from '../../label';
 import {AssistiveText} from '../../assistive-text';
 import {createTheme, ThemeProvider} from '../../theme';
-import {IconFilledCheckCircle, IconFilledAccountBalance} from '../../icons';
+import {
+  IconFilledCheckCircle,
+  IconFilledAccountBalance,
+  IconFilledClose,
+} from '../../icons';
 import {Modal, ModalProps} from '../../modal';
 import {Button} from '../../button/button';
 
@@ -698,7 +702,9 @@ const selectWithModalVariants = [
         modal: ({children, ...restProps}: ModalProps) => (
           <Modal {...restProps} closePosition="none">
             <CustomModalContainer>{children}</CustomModalContainer>
-            <Button onClick={restProps.onDismiss}>Close dialog</Button>
+            <Button onClick={restProps.onDismiss}>
+              Close dialog <IconFilledClose />
+            </Button>
           </Modal>
         ),
       },

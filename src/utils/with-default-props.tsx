@@ -14,38 +14,40 @@ export const withDefaultProps = <P extends {}>(
   // Can be useful for removing other default overrides injected in the component.
   enhanceOverrides?: object,
 ): React.FC<P> => {
-  const WrappedComponent = React.forwardRef<unknown, P>((props, ref) => {
-    const dProps =
-      typeof defaultProps === 'function'
-        ? (defaultProps as PropsEvalFunction<P>)(props)
-        : defaultProps || {};
-    const theme = useTheme();
+  const WrappedComponent = React.memo(
+    React.forwardRef<unknown, P>((props, ref) => {
+      const dProps =
+        typeof defaultProps === 'function'
+          ? (defaultProps as PropsEvalFunction<P>)(props)
+          : defaultProps || {};
+      const theme = useTheme();
 
-    const overrides = getToken({theme}, defaultPresetsPath);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const {children, ...propsWithoutChildren} = props as any;
-    const enhancedOverrides = deepMerge(overrides, enhanceOverrides);
+      const overrides = getToken({theme}, defaultPresetsPath);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const {children, ...propsWithoutChildren} = props as any;
+      const enhancedOverrides = deepMerge(overrides, enhanceOverrides);
 
-    return (
-      <Component
-        ref={ref}
-        {...deepMerge(
-          {} as P,
-          {
-            overrides: Object.keys(enhancedOverrides).length
-              ? enhancedOverrides
-              : undefined,
+      return (
+        <Component
+          ref={ref}
+          {...deepMerge(
+            {} as P,
+            {
+              overrides: Object.keys(enhancedOverrides).length
+                ? enhancedOverrides
+                : undefined,
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            } as any,
+            dProps,
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          } as any,
-          dProps,
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          propsWithoutChildren as any,
-        )}
-      >
-        {children}
-      </Component>
-    );
-  });
+            propsWithoutChildren as any,
+          )}
+        >
+          {children}
+        </Component>
+      );
+    }),
+  );
   WrappedComponent.displayName = `withDefaultProps(${Component.displayName})`;
   return (WrappedComponent as unknown) as React.FC<P>;
 };

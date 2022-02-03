@@ -167,6 +167,11 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
             aria-describedby={listDescriptionId}
             ref={panelRef}
             {...restProps}
+            onBlur={e => {
+              // set tabIndex to 0 so that user can return to the element
+              // when before that moves to Close / Other focusable elements inside the modal
+              e.target.setAttribute('tabIndex', '0');
+            }}
           >
             {optionsAsChildren}
           </StyledSelectPanelBody>
