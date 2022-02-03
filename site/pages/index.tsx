@@ -50,7 +50,7 @@ const cardsContent = [
       alt: '',
     },
     title: 'Theming',
-    href: '/foundations/theming/creating-a-theme',
+    href: '/theme/theming/creating-a-theme',
     description:
       'Creating and applying themes allow you to tailor your experience to your unique brand requirements.',
   },

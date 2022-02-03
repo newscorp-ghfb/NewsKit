@@ -189,10 +189,8 @@ export default (layoutProps: LayoutProps) => (
             <>
               Typography Presets can be applied to NewsKit components in a
               number of ways, learn more about{' '}
-              <Link href="/foundations/theming/using-a-theme/">
-                using a theme
-              </Link>{' '}
-              to better understand the trade-offs associated with each approach.
+              <Link href="/theme/theming/using-a-theme/">using a theme</Link> to
+              better understand the trade-offs associated with each approach.
               For more advanced use cases, Style Presets can be accessed from
               the theme by calling{' '}
               <Link href="/components/utils/get-defaults">
@@ -209,7 +207,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               Custom Typography Presets can be added to the theme. See the{' '}
-              <Link href="/foundations/theming/creating-a-theme/">
+              <Link href="/theme/theming/creating-a-theme/">
                 Creating a theme
               </Link>{' '}
               guide for more details.

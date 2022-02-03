@@ -296,7 +296,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               The{' '}
-              <Link href="/foundations/theming/component-defaults/">
+              <Link href="/theme/theming/component-defaults/">
                 Component Defaults
               </Link>{' '}
               page details the different ways in which you can override and
@@ -348,7 +348,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               The{' '}
-              <Link href="/foundations/theming/component-defaults/">
+              <Link href="/theme/theming/component-defaults/">
                 Component Defaults
               </Link>{' '}
               page details the different ways in which you can override and
@@ -397,7 +397,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               The{' '}
-              <Link href="/foundations/theming/component-defaults/">
+              <Link href="/theme/theming/component-defaults/">
                 Component Defaults
               </Link>{' '}
               page details the different ways in which you can override and
@@ -448,7 +448,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               The{' '}
-              <Link href="/foundations/theming/component-defaults/">
+              <Link href="/theme/theming/component-defaults/">
                 Component Defaults
               </Link>{' '}
               page details the different ways in which you can override and
@@ -483,7 +483,7 @@ export default (layoutProps: LayoutProps) => (
               use a text-crop utility that removes additional space (leading)
               around a text block. This allows us to maintain our 4px baseline
               and keep designs pixel-perfect.{' '}
-              <Link href="/foundations/theming/creating-a-theme/">
+              <Link href="/theme/theming/creating-a-theme/">
                 Read more about text crop here.
               </Link>
             </>

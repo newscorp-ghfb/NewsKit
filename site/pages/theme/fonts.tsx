@@ -269,7 +269,7 @@ export default (layoutProps: LayoutProps) => (
               typography. Key characteristics such as font-family, font-weight,
               letter-spacing, line-height and font style are applied in a
               systematic way when creating a theme in Figma and{' '}
-              <Link href="/foundations/theming/creating-a-theme/">
+              <Link href="/theme/theming/creating-a-theme/">
                 creating a theme in code
               </Link>
               . A combination of the key characteristics are grouped to form{' '}

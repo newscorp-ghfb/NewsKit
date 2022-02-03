@@ -590,7 +590,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               Custom Style Presets can be added to the theme. See the{' '}
-              <Link href="/foundations/theming/creating-a-theme/">
+              <Link href="/theme/theming/creating-a-theme/">
                 Creating Themes
               </Link>{' '}
               guide for more details.

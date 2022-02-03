@@ -234,7 +234,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               The{' '}
-              <Link href="/foundations/theming/component-defaults/">
+              <Link href="/theme/theming/component-defaults/">
                 Component Defaults
               </Link>{' '}
               page details the different ways in which you can override and
