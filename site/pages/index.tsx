@@ -29,8 +29,8 @@ const cardsContent = [
       src: 'static/landing/landing-foundations.svg',
       alt: '',
     },
-    title: 'Foundations',
-    href: '/foundations/overview',
+    title: 'Theme',
+    href: '/theme/overview',
     description:
       'These standardised styles define the look and feel of UI components. e.g. colours, fonts, shadows and sizing.',
   },
