@@ -1,23 +1,23 @@
 import React from 'react';
 import {InlineMessage, newskitLightTheme} from 'newskit*';
-import {Table, TableRow} from '../../../components/table';
-import {getTokenType} from '../../../utils/get-token-type';
-import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
-import {ComponentPageCell} from '../../../components/layout-cells';
-import {LayoutProps} from '../../../components/layout';
+import {Table, TableRow} from '../../components/table';
+import {getTokenType} from '../../utils/get-token-type';
+import {FoundationPageTemplate} from '../../templates/foundation-page-template';
+import {ComponentPageCell} from '../../components/layout-cells';
+import {LayoutProps} from '../../components/layout';
 import {
   Illustration,
   getIllustrationComponent,
-} from '../../../components/illustrations/illustration-loader';
-import {MediaList} from '../../../components/media-list';
-import {TabsWithTable} from '../../../components/tabs-with-table';
-import {Link} from '../../../components/link';
+} from '../../components/illustrations/illustration-loader';
+import {MediaList} from '../../components/media-list';
+import {TabsWithTable} from '../../components/tabs-with-table';
+import {Link} from '../../components/link';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-} from '../../../components/content-structure';
-import {InlineCode} from '../../../components/markdown-elements';
+} from '../../components/content-structure';
+import {InlineCode} from '../../components/markdown-elements';
 
 const getSpaceRowsDescription = (type: string) => {
   const tokens = getTokenType(
@@ -172,7 +172,7 @@ const spaceInsetTable = [
   },
 ];
 
-const featureCardoverrides = {
+const featureCardOverrides = {
   title: {
     typographyPreset: 'editorialHeadline030',
   },
@@ -180,7 +180,6 @@ const featureCardoverrides = {
     typographyPreset: 'editorialParagraph020',
   },
 };
-const {title, description} = featureCardoverrides;
 
 const PRINCIPLE_CARDS = [
   {
@@ -192,10 +191,7 @@ const PRINCIPLE_CARDS = [
     description:
       'Use spacing to visually communicate elements that are connected',
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardOverrides,
   },
   {
     media: {
@@ -206,10 +202,7 @@ const PRINCIPLE_CARDS = [
     description:
       'Use appropriate hierarchy to lead the user to the most important information',
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardOverrides,
   },
   {
     media: {
@@ -220,10 +213,7 @@ const PRINCIPLE_CARDS = [
     description:
       'Arrange elements and white space so that no part of the design overpowers the others',
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardOverrides,
   },
 ];
 
@@ -242,12 +232,6 @@ export default (layoutProps: LayoutProps) => (
         illustration: 'foundations/spacing/hero',
       },
       introduction: `Space helps to guide the user and provide a pleasant and consistent experience when using a product.`,
-    }}
-    featureCard={{
-      title: 'Motion',
-      description:
-        'Motion is used to create movement and narrative within a product.',
-      href: 'foundations/motions/',
     }}
   >
     <ComponentPageCell>
