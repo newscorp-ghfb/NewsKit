@@ -7,6 +7,12 @@ export default {
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
       spaceInline: 'space020',
+      transitionPreset: [
+        'backgroundColorChange',
+        'borderColorChange',
+        'iconColorChange',
+        'fontColorChange',
+      ],
     },
     medium: {
       stylePreset: 'tab',
@@ -15,6 +21,12 @@ export default {
       minHeight: 'sizing080',
       iconSize: 'iconSize020',
       spaceInline: 'space020',
+      transitionPreset: [
+        'backgroundColorChange',
+        'borderColorChange',
+        'iconColorChange',
+        'fontColorChange',
+      ],
     },
     large: {
       stylePreset: 'tab',
@@ -23,6 +35,12 @@ export default {
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
       spaceInline: 'space020',
+      transitionPreset: [
+        'backgroundColorChange',
+        'borderColorChange',
+        'iconColorChange',
+        'fontColorChange',
+      ],
     },
   },
   tabs: {

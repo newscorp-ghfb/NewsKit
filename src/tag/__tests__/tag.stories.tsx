@@ -263,10 +263,7 @@ export const StoryTagTransitions = () => (
           href="http://example.com"
           overrides={{
             stylePreset: 'tagCustom',
-            transitionPreset: [
-              'customBackgroundColorChange',
-              'customborderIconChange',
-            ],
+            transitionPreset: 'customBackgroundColorChange',
           }}
         >
           <IconFilledEmail />
