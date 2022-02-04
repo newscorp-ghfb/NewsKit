@@ -102,7 +102,7 @@ export default [
         title: 'Breakpoints',
         page: true,
         id: '/theme/breakpoints',
-        illustration: 'theme/breakpoints/hero',
+        illustration: 'k/breakpoints/hero',
         description:
           'Breakpoints set a visual point on a screen to alter the layout of content (responsive design), ensuring consistency across different screen widths.',
       },
