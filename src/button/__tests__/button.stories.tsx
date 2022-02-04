@@ -517,10 +517,25 @@ export const StoryButtonWithTransitions = () => (
             transitionPreset: 'customBackgroundColorChange',
           }}
         >
+          <IconFilledEmail overrides={{size: 'iconSize020'}} />
           Button
         </Button>
         <StorybookSubHeading>
-          {' '}
+          Button with overrides on two properties on transition presets
+        </StorybookSubHeading>
+        <Button
+          size={ButtonSize.Medium}
+          overrides={{
+            transitionPreset: [
+              'customBorderColourChange',
+              'customBackgroundColorChange',
+            ],
+            stylePreset: 'testButtonStylePresetWithBorders',
+          }}
+        >
+          Button
+        </Button>
+        <StorybookSubHeading>
           Button with overrides using extend on transitionDuration
         </StorybookSubHeading>
         <Button
@@ -556,21 +571,6 @@ export const StoryButtonWithTransitions = () => (
                   transitionDuration: '{{motions.motionDuration050}}',
                 },
               },
-            ],
-            stylePreset: 'testButtonStylePresetWithBorders',
-          }}
-        >
-          Button
-        </Button>
-        <StorybookSubHeading>
-          Button with overrides on two properties on transitioPreset
-        </StorybookSubHeading>
-        <Button
-          size={ButtonSize.Medium}
-          overrides={{
-            transitionPreset: [
-              'customBorderColourChange',
-              'customBackgroundColorChange',
             ],
             stylePreset: 'testButtonStylePresetWithBorders',
           }}

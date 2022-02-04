@@ -26,6 +26,7 @@ const myCustomTheme = createTheme({
         base: {
           borderStyle: 'dashed',
           borderColor: '{{colors.blue060}}',
+          iconColor: '{{colors.inkInverse}}',
           backgroundColor: '{{colors.red020}}',
         },
       },
@@ -202,3 +203,123 @@ export const StoryTagIconSizes = () => (
   </>
 );
 StoryTagIconSizes.storyName = 'tag-icon-sizes';
+
+const myCustomThemeTransitions = createTheme({
+  name: 'my-custom-tag-theme',
+  overrides: {
+    transitionPresets: {
+      customBackgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '100ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+      customborderColorChange: {
+        base: {
+          transitionProperty: 'border-color',
+          transitionDuration: '100ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+    },
+    stylePresets: {
+      tagCustom: {
+        base: {
+          borderStyle: 'dashed',
+          borderColor: '{{colors.blue060}}',
+          backgroundColor: '{{colors.red020}}',
+          iconColor: '{{colors.purple020}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.amber070}}',
+          borderColor: '{{colors.green040}}',
+          // iconColor: '{{colors.amber020}}',
+        },
+      },
+    },
+  },
+});
+export const StoryTagTransitions = () => (
+  <>
+    <StorybookSubHeading>Tag with transitions</StorybookSubHeading>
+    <ThemeProvider theme={myCustomThemeTransitions}>
+      <Container>
+        <StorybookSubHeading>
+          Tag with default transition preset
+        </StorybookSubHeading>
+        <Tag href="http://example.com">Tag</Tag>
+        <StorybookSubHeading>
+          Tag with overrides on default transition preset
+        </StorybookSubHeading>
+        <Tag
+          href="http://example.com"
+          overrides={{
+            stylePreset: 'tagCustom',
+            transitionPreset: 'customBackgroundColorChange',
+          }}
+        >
+          <IconFilledEmail />
+          Text
+        </Tag>
+        <StorybookSubHeading>
+          Tag with overrides on two properties on transition presets
+        </StorybookSubHeading>
+        <Tag
+          overrides={{
+            stylePreset: 'tagCustom',
+            transitionPreset: [
+              'customBackgroundColorChange',
+              'customIconColorChange',
+            ],
+          }}
+        >
+          Text
+        </Tag>
+        <StorybookSubHeading>
+          Tag with overrides using extend on transitionDuration
+        </StorybookSubHeading>
+        <Tag
+          overrides={{
+            stylePreset: 'tagCustom',
+            transitionPreset: {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration050}}',
+              },
+            },
+          }}
+        >
+          Text
+        </Tag>
+        <StorybookSubHeading>
+          Tag with overrides on two properties from defaults using extend
+        </StorybookSubHeading>
+        <Tag
+          overrides={{
+            stylePreset: 'tagCustom',
+            transitionPreset: [
+              {
+                extend: 'backgroundColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration030}}',
+                },
+              },
+              {
+                extend: 'borderColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration050}}',
+                },
+              },
+            ],
+          }}
+        >
+          Text
+        </Tag>
+      </Container>
+    </ThemeProvider>
+  </>
+);
+StoryTagTransitions.storyName = 'tag-transitions';

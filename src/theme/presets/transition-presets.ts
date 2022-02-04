@@ -11,6 +11,13 @@ transitionPresets.fontColorChange = {
   },
 };
 
+transitionPresets.iconColorChange = {
+  base: {
+    transitionProperty: 'accent-color',
+    transitionDuration: '{{motions.motionDuration020}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+  },
+};
 transitionPresets.backgroundColorChange = {
   base: {
     transitionProperty: 'background-color',
