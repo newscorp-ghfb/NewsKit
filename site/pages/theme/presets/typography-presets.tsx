@@ -146,11 +146,9 @@ export default (layoutProps: LayoutProps) => (
               Typography Presets define properties such as font-family,
               font-weight and line-height, in one design token. In combination
               with{' '}
-              <Link href="/foundations/presets/style-presets">
-                Style Presets
-              </Link>
-              , Sizing, and <Link href="/foundations/spacing/">Spacing</Link>{' '}
-              they provide the visual attributes of a component.
+              <Link href="/theme/presets/style-presets">Style Presets</Link>,
+              Sizing, and <Link href="/theme/spacing/">Spacing</Link> they
+              provide the visual attributes of a component.
             </>
           }
           showSeparator
@@ -167,11 +165,9 @@ export default (layoutProps: LayoutProps) => (
               Typography Presets define properties such as font-family,
               font-weight and line-height, in one design token. In combination
               with{' '}
-              <Link href="/foundations/presets/style-presets">
-                Style Presets
-              </Link>
-              , Sizing, and <Link href="/foundations/spacing/">Spacing</Link>{' '}
-              they provide the visual attributes of a component.
+              <Link href="/theme/presets/style-presets">Style Presets</Link>,
+              Sizing, and <Link href="/theme/spacing/">Spacing</Link> they
+              provide the visual attributes of a component.
             </>
           }
           showSeparator
@@ -189,10 +185,8 @@ export default (layoutProps: LayoutProps) => (
             <>
               Typography Presets can be applied to NewsKit components in a
               number of ways, learn more about{' '}
-              <Link href="/foundations/theming/using-a-theme/">
-                using a theme
-              </Link>{' '}
-              to better understand the trade-offs associated with each approach.
+              <Link href="/theme/theming/using-a-theme/">using a theme</Link> to
+              better understand the trade-offs associated with each approach.
               For more advanced use cases, Style Presets can be accessed from
               the theme by calling{' '}
               <Link href="/components/utils/get-defaults">
@@ -209,7 +203,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               Custom Typography Presets can be added to the theme. See the{' '}
-              <Link href="/foundations/theming/creating-a-theme/">
+              <Link href="/theme/theming/creating-a-theme/">
                 Creating a theme
               </Link>{' '}
               guide for more details.

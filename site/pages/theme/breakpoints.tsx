@@ -187,7 +187,7 @@ const theme = createTheme({
             <>
               In the codebase, changing the appearance and behaviour of UI
               elements can be achieved by utilising the{' '}
-              <Link href="/foundations/theming/component-defaults/">
+              <Link href="/theme/theming/component-defaults/">
                 component defaults and overrides system
               </Link>{' '}
               to override design tokens at specific breakpoints. For example,
