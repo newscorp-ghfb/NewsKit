@@ -151,65 +151,47 @@ const CSS_PROPS = [
   },
   {
     token: 'borderRadius',
-    acceptedValues: (
-      <Link href="/foundations/borders/">foundations borders</Link>
-    ),
+    acceptedValues: <Link href="/theme/borders/">foundations borders</Link>,
     description: 'The border radius (shape) of an element',
   },
   {
     token: 'borderWidth',
-    acceptedValues: (
-      <Link href="/foundations/borders/">foundations borders</Link>
-    ),
+    acceptedValues: <Link href="/theme/borders/">foundations borders</Link>,
     description: 'The border width of an element',
   },
   {
     token: 'backgroundColor',
-    acceptedValues: (
-      <Link href="/foundations/colours/">foundations colors</Link>
-    ),
+    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
     description: 'The background colour of an element',
   },
   {
     token: 'borderColor',
-    acceptedValues: (
-      <Link href="/foundations/colours/">foundations colors</Link>
-    ),
+    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
     description: 'The colour of a border',
   },
   {
     token: 'caretColor',
-    acceptedValues: (
-      <Link href="/foundations/colours/">foundations colors</Link>
-    ),
+    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
     description: 'The colour of a caret (cursor) in a text input',
   },
   {
     token: 'color',
-    acceptedValues: (
-      <Link href="/foundations/colours/">foundations colors</Link>
-    ),
+    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
     description: 'The colour of text. For text, use ink colours',
   },
   {
     token: 'iconColor',
-    acceptedValues: (
-      <Link href="/foundations/colours/">foundations colors</Link>
-    ),
+    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
     description: 'The colour of icons. For icons, use ink colours',
   },
   {
     token: 'placeholderColor',
-    acceptedValues: (
-      <Link href="/foundations/colours/">foundations colors</Link>
-    ),
+    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
     description: 'The colour of placeholder text',
   },
   {
     token: 'boxShadow',
-    acceptedValues: (
-      <Link href="/foundations/shadows/">foundations shadows</Link>
-    ),
+    acceptedValues: <Link href="/theme/shadows/">foundations shadows</Link>,
     description: 'The box shadow to an element',
   },
 ];
@@ -447,12 +429,6 @@ export default (layoutProps: LayoutProps) => (
       },
       introduction: `A collection of foundational design tokens combined into a preset to define reusable styles for interface elements and their interactive states.`,
     }}
-    featureCard={{
-      title: 'Typography Presets',
-      description:
-        'A collection of foundational font design tokens combined into a single token',
-      href: 'foundations/presets/typography-presets/',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="overview">
@@ -468,17 +444,17 @@ export default (layoutProps: LayoutProps) => (
               <br />
               <br />
               In combination with{' '}
-              <Link href="/foundations/presets/typography-presets/">
+              <Link href="/theme/presets/typography-presets/">
                 Typography Presets
               </Link>
-              , <Link href="/foundations/sizing/">Sizing</Link>, and{' '}
-              <Link href="/foundations/presets/space-presets/">Spacing</Link>,
-              Style Presets provide the visual attributes of a component.
+              , <Link href="/theme/sizing/">Sizing</Link>, and{' '}
+              <Link href="/theme/spacing/">Spacing</Link>, Style Presets provide
+              the visual attributes of a component.
             </>
           }
           showSeparator
         >
-          <Illustration path="foundations/style-presets/overview" />
+          <Illustration path="theme/style-presets/overview" />
         </ContentPrimary>
       </ContentSection>
 
@@ -535,7 +511,7 @@ export default (layoutProps: LayoutProps) => (
             <>
               Style Presets can be applied to NewsKit components in a number of
               ways,{' '}
-              <Link href="foundations/theming/using-a-theme/">
+              <Link href="theme/theming/using-a-theme/">
                 learn more about using a theme in code
               </Link>{' '}
               to better understand the trade-offs associated with each approach.
@@ -596,7 +572,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               Custom Style Presets can be added to the theme. See the{' '}
-              <Link href="/foundations/theming/creating-a-theme/">
+              <Link href="/theme/theming/creating-a-theme/">
                 Creating Themes
               </Link>{' '}
               guide for more details.

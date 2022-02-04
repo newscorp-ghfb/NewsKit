@@ -1,6 +1,11 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: ['airbnb-typescript', 'plugin:prettier/recommended', 'prettier'],
+  extends: [
+    'airbnb-typescript',
+    'plugin:prettier/recommended',
+    'prettier',
+    'plugin:@next/next/recommended',
+  ],
   parserOptions: {
     project: 'tsconfig.eslint.json',
   },
