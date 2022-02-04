@@ -3,12 +3,6 @@ import {LinkInline, InlineMessage} from 'newskit';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
-// import {
-//   ContentSection,
-//   ContentPrimary,
-//   ContentSecondary,
-//   ContentTertiary,
-// } from '../../components/content-structure';
 
 const commonPropsRows = [
   {
@@ -22,13 +16,6 @@ const commonPropsRows = [
     type: ['valid', 'invalid', 'disabled'],
     description:
       'If provided, renders the FormInput Select in a valid, invalid, or disabled state. It can be submitted within a form.',
-  },
-  {
-    name: 'readOnly',
-    type: 'boolean',
-    default: 'false',
-    description:
-      'If true, renders the Select in a read-only state. It can be selected but not changed by the user.',
   },
   {
     name: 'useModal',
@@ -64,14 +51,14 @@ const commonOverridesRows = [
     description: `If provided, this overrides the minWidth of the Select.`,
   },
   {
-    attribute: 'input.stylePreset',
+    attribute: 'button.stylePreset',
     type: 'MQ<string>',
     default: 'inputField',
     description:
       'If provided, overrides the stylePreset of the Select input container.',
   },
   {
-    attribute: 'input.typographyPreset',
+    attribute: 'button.typographyPreset',
     type: 'MQ<string>',
     default: [
       'small = utilityBody020',
@@ -81,7 +68,7 @@ const commonOverridesRows = [
     description: 'If provided, this overrides the input & placeholder text.',
   },
   {
-    attribute: 'input.spaceInset',
+    attribute: 'button.spaceInset',
     type: 'MQ<string>',
     default: [
       'small = spaceInset020',
@@ -92,14 +79,14 @@ const commonOverridesRows = [
       'If provided, this overrides the inset space within the Select input container.',
   },
   {
-    attribute: 'input.spaceStack',
+    attribute: 'button.spaceStack',
     type: 'MQ<string>',
     default: 'space020',
     description:
       'If provided, this overrides the stack space of the Select input container.',
   },
   {
-    attribute: 'input.spaceInline',
+    attribute: 'button.spaceInline',
     type: 'MQ<string>',
     default: 'space020',
     description:
@@ -107,84 +94,94 @@ const commonOverridesRows = [
   },
 
   {
-    attribute: 'input.loadingIndicator.stylePreset',
+    attribute: 'button.loadingIndicator.stylePreset',
     type: 'MQ<string>',
     default: 'indeterminateProgressIndicatorPrimary',
     description:
       'If provided, this overrides the stylePreset of the Select input container loading indicator.',
   },
   {
-    attribute: 'startEnhancer.iconSize',
+    attribute: 'button.startEnhancer.iconSize',
     type: 'MQ<string>',
     default: 'iconSize020',
     description:
       'If provided, this overrides the component passed to the start enhancer.',
   },
   {
-    attribute: 'startEnhancer.inlineSpace',
+    attribute: 'button.startEnhancer.inlineSpace',
     type: 'MQ<string>',
     default: 'space020',
     description:
       'If provided, this overrides the inline space of the start enhancer.',
   },
   {
-    attribute: 'endEnhancer.iconSize',
+    attribute: 'button.endEnhancer.iconSize',
     type: 'MQ<string>',
     default: 'iconSize020',
     description:
       'If provided, this overrides the component passed to the end enhancer.',
   },
   {
-    attribute: 'endEnhancer.inlineSpace',
+    attribute: 'button.endEnhancer.inlineSpace',
     type: 'MQ<string>',
     default: 'space020',
     description:
       'If provided, this overrides the inline space of the end enhancer.',
   },
   {
-    attribute: 'selectPanel.stylePreset',
+    attribute: 'panel.stylePreset',
     type: 'MQ<string>',
     default: 'selectPanel',
     description:
       'If provided, this overrides the stylePreset of the Select panel.',
   },
   {
-    attribute: 'selectPanel.maxHeight',
+    attribute: 'panel.maxHeight',
     type: 'MQ<string>',
     default: ['small = 184px', 'medium = 272px', 'large = 360px'],
     description:
       'If provided, this overrides the maxHeight of the Select panel.',
   },
   {
-    attribute: 'selectPanel.spaceInset',
+    attribute: 'panel.spaceInset',
     type: 'MQ<string>',
     default: 'spaceInset020',
     description:
       'If provided, this overrides the inset space within the Select panel.',
   },
   {
-    attribute: 'selectPanel.spaceStack',
+    attribute: 'panel.spaceStack',
     type: 'MQ<string>',
     default: 'spaceStack010',
     description:
       'If provided, this overrides the stack space of the Select panel.',
   },
   {
-    attribute: 'selectOption.stylePreset',
+    attribute: 'modal.panel.width',
+    type: 'MQ<string>',
+    default: '60vw',
+    description:
+      'If provided, this overrides the width property of the Modal panel.',
+  },
+];
+
+const selectOptionOverrides = [
+  {
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: 'selectOptionItem',
     description:
       'If provided, this overrides the stylePreset of the Select option.',
   },
   {
-    attribute: 'selectOption.minHeight',
+    attribute: 'minHeight',
     type: 'MQ<string>',
     default: ['small = sizing060', 'medium = sizing080', 'large = sizing090'],
     description:
       'If provided, this overrides the minHeight of the Select option.',
   },
   {
-    attribute: 'selectOption.typographyPreset',
+    attribute: 'typographyPreset',
     type: 'MQ<string>',
     default: [
       'small = utilityBody020',
@@ -195,7 +192,7 @@ const commonOverridesRows = [
       'If provided, this overrides the typographyPreset of the Select option.',
   },
   {
-    attribute: 'selectOption.spaceInset',
+    attribute: 'spaceInset',
     type: 'MQ<string>',
     default: [
       'small = spaceInsetSquish010',
@@ -206,20 +203,60 @@ const commonOverridesRows = [
       'If provided, this overrides the inset space within the Select option.',
   },
   {
-    attribute: 'selectOption.spaceInline',
+    attribute: 'spaceInline',
     type: 'MQ<string>',
     default: 'space020',
     description:
       'If provided, this overrides the inline space of the Select option.',
   },
+];
+
+const selectOptionProps = [
   {
-    attribute: 'selectOption.icon.size',
-    type: 'MQ<string>',
-    default: 'iconSize020',
-    description:
-      'If provided, this overrides the icon size of the Select option icon.',
+    name: 'value',
+    type: 'string',
+    required: true,
+    description: '',
+  },
+  {
+    name: 'children',
+    type: 'React.ReactNode',
+    required: true,
+    default: '',
+    description: '',
+  },
+  {
+    name: 'selected',
+    type: 'boolean',
+    default: '',
+    description: '',
+  },
+  {
+    name: 'defaultSelected',
+    type: 'boolean',
+    default: '',
+    description: '',
+  },
+  {
+    name: 'selectedIcon',
+    type: 'React.ReactNode',
+    default: '',
+    description: '',
+  },
+  {
+    name: 'selectedDisplay',
+    type: 'React.ReactNode',
+    default: '',
+    description: '',
   },
 ];
+
+const selectOverridesFooter = (
+  <InlineMessage>
+    Checkout <LinkInline href="/components/modal">Modal component</LinkInline>{' '}
+    for all props and overrides
+  </InlineMessage>
+);
 
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -234,7 +271,7 @@ export default (layoutProps: LayoutProps) => (
       name: 'Select',
       hero: {
         // TODO: Update
-        illustration: 'components/toast/toast-illustration',
+        illustration: 'components/select/select-illustration',
       },
       introduction: `Select components allow users to select one option from a list. They typically appear in forms.`,
     }}
@@ -265,6 +302,7 @@ export default (layoutProps: LayoutProps) => (
           summary: `The FormInputSelect has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.`,
           propsRows: commonPropsRows,
           overridesRows: commonOverridesRows,
+          overridesFooter: selectOverridesFooter,
         },
         {
           title: 'Select',
@@ -279,6 +317,13 @@ export default (layoutProps: LayoutProps) => (
             ...commonPropsRows,
           ],
           overridesRows: commonOverridesRows,
+          overridesFooter: selectOverridesFooter,
+        },
+        {
+          title: 'SelectOption',
+          summary: '...TODO...',
+          propsRows: selectOptionProps,
+          overridesRows: selectOptionOverrides,
         },
       ],
     }}
