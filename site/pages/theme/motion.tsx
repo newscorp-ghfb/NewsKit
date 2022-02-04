@@ -180,7 +180,7 @@ export default (layoutProps: LayoutProps) => (
             aria-label="Default Motion in the foundations can be overridden."
           >
             <b>Default Motion in the foundations can be overridden.</b>{' '}
-            <Link href="/foundations/theming/creating-a-theme">
+            <Link href="/theme/theming/creating-a-theme">
               Learn more about overriding default Motion in the theme.
             </Link>
           </InlineMessage>

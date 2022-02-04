@@ -172,7 +172,7 @@ const spaceInsetTable = [
   },
 ];
 
-const featureCardoverrides = {
+const featureCardOverrides = {
   title: {
     typographyPreset: 'editorialHeadline030',
   },
@@ -191,7 +191,7 @@ const PRINCIPLE_CARDS = [
     description:
       'Use spacing to visually communicate elements that are connected',
     stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
+    overrides: featureCardOverrides,
   },
   {
     media: {
@@ -202,7 +202,7 @@ const PRINCIPLE_CARDS = [
     description:
       'Use appropriate hierarchy to lead the user to the most important information',
     stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
+    overrides: featureCardOverrides,
   },
   {
     media: {
@@ -213,7 +213,7 @@ const PRINCIPLE_CARDS = [
     description:
       'Arrange elements and white space so that no part of the design overpowers the others',
     stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
+    overrides: featureCardOverrides,
   },
 ];
 
@@ -296,7 +296,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               The{' '}
-              <Link href="/foundations/theming/component-defaults/">
+              <Link href="/theme/theming/component-defaults/">
                 Component Defaults
               </Link>{' '}
               page details the different ways in which you can override and
@@ -348,7 +348,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               The{' '}
-              <Link href="/foundations/theming/component-defaults/">
+              <Link href="/theme/theming/component-defaults/">
                 Component Defaults
               </Link>{' '}
               page details the different ways in which you can override and
@@ -397,7 +397,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               The{' '}
-              <Link href="/foundations/theming/component-defaults/">
+              <Link href="/theme/theming/component-defaults/">
                 Component Defaults
               </Link>{' '}
               page details the different ways in which you can override and
@@ -448,7 +448,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               The{' '}
-              <Link href="/foundations/theming/component-defaults/">
+              <Link href="/theme/theming/component-defaults/">
                 Component Defaults
               </Link>{' '}
               page details the different ways in which you can override and
@@ -483,7 +483,7 @@ export default (layoutProps: LayoutProps) => (
               use a text-crop utility that removes additional space (leading)
               around a text block. This allows us to maintain our 4px baseline
               and keep designs pixel-perfect.{' '}
-              <Link href="/foundations/theming/creating-a-theme/">
+              <Link href="/theme/theming/creating-a-theme/">
                 Read more about text crop here.
               </Link>
             </>

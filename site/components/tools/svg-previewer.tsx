@@ -60,7 +60,7 @@ export const SvgPreviewer: React.FC = () => {
     let figmaSvgCopy = figmaSvg;
     const regexList = [
       /mask\d+_\d+_\d+/g,
-      /filter\d+_df_\d+_\d+/g,
+      /filter\d+_d_\d+_\d+/g,
       /clip\d+_\d+_\d+/g,
     ];
 
