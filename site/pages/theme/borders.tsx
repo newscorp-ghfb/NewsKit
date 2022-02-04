@@ -59,7 +59,7 @@ export default (layoutProps: LayoutProps) => (
       type: 'Foundations',
       name: 'Borders',
       hero: {
-        illustration: 'foundations/hero-borders-illustration',
+        illustration: 'theme/hero-borders-illustration',
       },
       introduction: `Borders direct attention, identify components, communicate state, and express a brand.`,
     }}

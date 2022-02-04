@@ -96,13 +96,13 @@ export default [
         id: '/theme/borders',
         description:
           'Borders direct attention, identify components, communicate state, and express a brand.',
-        illustration: 'foundations/hero-borders-illustration',
+        illustration: 'theme/hero-borders-illustration',
       },
       {
         title: 'Breakpoints',
         page: true,
         id: '/theme/breakpoints',
-        illustration: 'foundations/breakpoints/hero',
+        illustration: 'theme/breakpoints/hero',
         description:
           'Breakpoints set a visual point on a screen to alter the layout of content (responsive design), ensuring consistency across different screen widths.',
       },
@@ -110,7 +110,7 @@ export default [
         title: 'Colours',
         page: true,
         id: '/theme/colours',
-        illustration: 'foundations/colours/hero',
+        illustration: 'theme/colours/hero',
         description:
           'Colour is key to expressing brand and identity, but it also plays a vital role in conveying specific meaning to a user.',
       },
@@ -118,14 +118,14 @@ export default [
         title: 'Design tokens',
         page: true,
         id: '/theme/design-tokens',
-        illustration: 'foundations/design-tokens/hero',
+        illustration: 'theme/design-tokens/hero',
         description: `Design tokens are the design decisions of the design system — specifically, they are named entities that store visual and functional attributes. They are used in place of hardcoded values (such as hex values for colour or pixel values for spacing) to maintain a scalable and consistent system for UI.`,
       },
       {
         title: 'Fonts',
         page: true,
         id: '/theme/fonts',
-        illustration: 'foundations/fonts/hero',
+        illustration: 'theme/fonts/hero',
         description:
           'Fonts form an important part of the interface, establishing styles for content such as headlines, sub-headlines or paragraphs, as well as more functional styles for items such as labels, tags and messaging.',
       },
@@ -133,7 +133,7 @@ export default [
         title: 'Iconography',
         page: true,
         id: '/theme/iconography',
-        illustration: 'foundations/iconography/hero',
+        illustration: 'theme/iconography/hero',
         description:
           'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
       },
@@ -141,7 +141,7 @@ export default [
         title: 'Motion',
         page: true,
         id: '/theme/motion',
-        illustration: 'foundations/motion/hero',
+        illustration: 'theme/motion/hero',
         description:
           'Motion is used to create movement and narrative within a product. Animated interface elements don’t just attract attention, they enhance user experience and help guide user flow',
       },
@@ -165,7 +165,7 @@ export default [
         title: 'Spacing',
         page: true,
         id: '/theme/spacing',
-        illustration: 'foundations/spacing/hero',
+        illustration: 'theme/spacing/hero',
         description:
           'Space helps to guide the user and provide a pleasant and consistent experience when using a product.',
       },
@@ -173,7 +173,7 @@ export default [
       //   title: 'Overlays',
       //   page: true,
       //   id: '/theme/overlays',
-      //   illustration: 'static/theming/foundations/overlays.svg',
+      //   illustration: 'static/theming/theme/overlays.svg',
       //   description:
       //     'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
       // },
@@ -181,7 +181,7 @@ export default [
       //   title: 'Typography',
       //   page: true,
       //   id: '/theme/fonts',
-      //   illustration: 'static/theming/foundations/typography.svg',
+      //   illustration: 'static/theming/theme/typography.svg',
       //   description:
       //     'Fonts define the font family, boldness, size, and the style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
       // },
@@ -193,7 +193,7 @@ export default [
             title: 'Style Presets',
             page: true,
             id: '/theme/presets/style-presets',
-            illustration: 'foundations/style-presets/hero',
+            illustration: 'theme/style-presets/hero',
             description:
               'A collection of foundational design tokens combined into a preset to define reusable styles for interface elements and their interactive states.',
           },
@@ -201,7 +201,7 @@ export default [
           //   title: 'Transition Presets',
           //   page: true,
           //   id: '/theme/presets/transition-presets',
-          //   illustration: 'foundations/transition-presets/hero',
+          //   illustration: 'theme/transition-presets/hero',
           //   description: 'A collection of foundational font design tokens combined into a preset to define reusable typography styles for specific text elements.'
           // },
           {
@@ -228,7 +228,7 @@ export default [
           {
             title: 'Creating a theme',
             page: true,
-            illustration: 'foundations/creating-a-theme/hero',
+            illustration: 'theme/creating-a-theme/hero',
             description:
               "Themes represent the brand's identity, controlling the appearance of all NewsKit components.",
             id: '/theme/theming/creating-a-theme',
@@ -236,14 +236,14 @@ export default [
           {
             title: 'Using a theme',
             page: true,
-            illustration: 'foundations/using-a-theme/hero',
+            illustration: 'theme/using-a-theme/hero',
             description:
               'To render NewsKit components you must have a theme available for them to utilise.',
             id: '/theme/theming/using-a-theme',
           },
           {
             title: 'Component Defaults',
-            illustration: 'foundations/component-defaults/hero',
+            illustration: 'theme/component-defaults/hero',
             description:
               'A preselected option that is applied to a component to define its appearance or behaviour.',
             page: true,

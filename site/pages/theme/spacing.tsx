@@ -229,7 +229,7 @@ export default (layoutProps: LayoutProps) => (
       type: 'Foundations',
       name: 'Spacing',
       hero: {
-        illustration: 'foundations/spacing/hero',
+        illustration: 'theme/spacing/hero',
       },
       introduction: `Space helps to guide the user and provide a pleasant and consistent experience when using a product.`,
     }}
@@ -257,7 +257,7 @@ export default (layoutProps: LayoutProps) => (
           headline="Overview"
           description="Space is distance between elements on a screen often refered to as the whitespace. Good use of whitespace helps to de-clutter and group content to provide a visual hierarchy so that users can focus on the important elements and digest content with reduced cognitive load."
         >
-          <Illustration path="foundations/spacing/overview" />
+          <Illustration path="theme/spacing/overview" />
         </ContentPrimary>
 
         <ContentSecondary
@@ -336,7 +336,7 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Illustration path="foundations/spacing/space-inset" />
+          <Illustration path="theme/spacing/space-inset" />
         </ContentPrimary>
 
         <ContentSecondary>
@@ -389,7 +389,7 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Illustration path="foundations/spacing/space-inline" />
+          <Illustration path="theme/spacing/space-inline" />
         </ContentPrimary>
 
         <ContentSecondary
@@ -440,7 +440,7 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Illustration path="foundations/spacing/space-stack" />
+          <Illustration path="theme/spacing/space-stack" />
         </ContentPrimary>
 
         <ContentSecondary
@@ -516,7 +516,7 @@ export default (layoutProps: LayoutProps) => (
                     component.
                   </>
                 ),
-                media: getIllustrationComponent('foundations/spacing/stack'),
+                media: getIllustrationComponent('theme/spacing/stack'),
               },
               {
                 title: 'Block component',
@@ -529,7 +529,7 @@ export default (layoutProps: LayoutProps) => (
                     component. Learn more about the Block component.
                   </>
                 ),
-                media: getIllustrationComponent('foundations/spacing/block'),
+                media: getIllustrationComponent('theme/spacing/block'),
               },
             ]}
           />

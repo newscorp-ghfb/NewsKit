@@ -315,7 +315,7 @@ export default (layoutProps: LayoutProps) => (
       type: 'Foundations',
       name: 'Colours',
       hero: {
-        illustration: 'foundations/colours/hero',
+        illustration: 'theme/colours/hero',
       },
       introduction: `Colour is key to expressing brand and identity but it also plays an important role in conveying meaning to a user. `,
     }}

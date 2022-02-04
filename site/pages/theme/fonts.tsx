@@ -184,7 +184,7 @@ const PRINCIPLE_CARDS = [
 
 const EXAMPLE_CARDS = [
   {
-    media: () => <Illustration path="foundations/fonts/buttonnocrop" />,
+    media: () => <Illustration path="theme/fonts/buttonnocrop" />,
     title: 'Button - before Text-crop',
     description:
       'Without the ability to crop text, the button text would be misaligned when changing font family or font size.',
@@ -194,7 +194,7 @@ const EXAMPLE_CARDS = [
     },
   },
   {
-    media: () => <Illustration path="foundations/fonts/buttoncropped" />,
+    media: () => <Illustration path="theme/fonts/buttoncropped" />,
     title: 'Button - after Text-crop',
     description:
       'With text-cropping applied the button label is consistently positioned correctly when changing the font family or font size.',
@@ -204,7 +204,7 @@ const EXAMPLE_CARDS = [
     },
   },
   {
-    media: () => <Illustration path="foundations/fonts/cardnocrop" />,
+    media: () => <Illustration path="theme/fonts/cardnocrop" />,
     title: 'Card - before Text-crop',
     description:
       'Without the ability to crop text, the layout of the card is unnecessarily elongated due to the misaligned spacing around the text blocks.',
@@ -237,7 +237,7 @@ export default (layoutProps: LayoutProps) => (
       type: 'Foundations',
       name: 'Fonts',
       hero: {
-        illustration: 'foundations/fonts/hero',
+        illustration: 'theme/fonts/hero',
       },
       introduction: `Fonts form an important part of the interface, establishing styles for content such as headlines, sub-headlines or paragraphs, as well as more functional styles for items such as labels, tags and messaging.`,
     }}
@@ -538,13 +538,13 @@ export default (layoutProps: LayoutProps) => (
                 title: 'Cap height',
                 description:
                   'This crops to the top of an uppercase letter in the typeface. An example would be the top of an uppercase T.',
-                media: getIllustrationComponent('foundations/fonts/cap-height'),
+                media: getIllustrationComponent('theme/fonts/cap-height'),
               },
               {
                 title: 'Baseline',
                 description:
                   'This crops to the baseline of all the lowercase letters in the typeface',
-                media: getIllustrationComponent('foundations/fonts/baseline'),
+                media: getIllustrationComponent('theme/fonts/baseline'),
               },
             ]}
           />

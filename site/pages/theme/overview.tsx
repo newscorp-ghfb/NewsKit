@@ -4,7 +4,7 @@ import {
   ContentPrimary,
   ContentSection,
 } from '../../components/content-structure';
-import {HeaderImage} from '../../components/illustrations/foundations/header-image';
+import {HeaderImage} from '../../components/illustrations/theme/header-image';
 import Layout, {LayoutProps} from '../../components/layout';
 import {MediaItem, MediaList} from '../../components/media-list';
 import {HeaderIndex} from '../../components/header-index';
