@@ -216,38 +216,40 @@ const selectOptionProps = [
     name: 'value',
     type: 'string',
     required: true,
-    description: '',
+    description: 'Defines the value of the SelectOption',
   },
   {
     name: 'children',
     type: 'React.ReactNode',
     required: true,
     default: '',
-    description: '',
+    description: 'Label and icon(s) of the SelectOption.',
   },
   {
     name: 'selected',
     type: 'boolean',
     default: '',
-    description: '',
+    description: 'If provided, renders the SelectOption in a selected state.',
   },
   {
     name: 'defaultSelected',
     type: 'boolean',
     default: '',
-    description: '',
+    description:
+      'If provided, renders the SelectOption in a selected state by default.',
   },
   {
     name: 'selectedIcon',
     type: 'React.ReactNode',
     default: '',
-    description: '',
+    description: 'Icon rendered inside the SelectOption.',
   },
   {
     name: 'selectedDisplay',
     type: 'React.ReactNode',
     default: '',
-    description: '',
+    description:
+      'Display value rendered inside the SelectOption (supports custom display).',
   },
 ];
 
