@@ -7,6 +7,11 @@ export default {
       minHeight: 'sizing050',
       iconSize: 'iconSize010',
       spaceInline: 'space010',
+      transitionPreset: [
+        'backgroundColorChange',
+        'borderColorChange',
+        'iconColorChange',
+      ],
     },
     medium: {
       typographyPreset: 'utilityButton020',
@@ -15,6 +20,11 @@ export default {
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
       spaceInline: 'space010',
+      transitionPreset: [
+        'backgroundColorChange',
+        'borderColorChange',
+        'iconColorChange',
+      ],
     },
     large: {
       typographyPreset: 'utilityButton030',
@@ -23,6 +33,11 @@ export default {
       minHeight: 'sizing070',
       iconSize: 'iconSize020',
       spaceInline: 'space010',
+      transitionPreset: [
+        'backgroundColorChange',
+        'borderColorChange',
+        'iconColorChange',
+      ],
     },
   },
 };
