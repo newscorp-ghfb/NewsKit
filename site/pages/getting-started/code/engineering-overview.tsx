@@ -78,10 +78,7 @@ const PRINCIPLE_CARDS = [
     description: (
       <>
         NewsKit has an extensive
-        <Link
-          overrides={{stylePreset: 'inkInverse'}}
-          href="/foundations/overview/"
-        >
+        <Link overrides={{stylePreset: 'inkInverse'}} href="/theme/overview/">
           theming system
         </Link>{' '}
         that enables customization of style and layout. Additionally components
@@ -196,8 +193,8 @@ export default (layoutProps: LayoutProps) => (
                 description: (
                   <>
                     An advanced full-featured{' '}
-                    <Link href="/foundations/overview/">theming system</Link>{' '}
-                    with the flexibility to meet the requirement of a single or
+                    <Link href="/theme/overview/">theming system</Link> with the
+                    flexibility to meet the requirement of a single or
                     multi-brand requirement, including both business and
                     consumer products.
                   </>

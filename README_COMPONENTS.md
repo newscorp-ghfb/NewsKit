@@ -22,7 +22,7 @@ NewsKit components folllow [WCAG guidelines](https://www.w3.org/WAI/standards-gu
 
 ### Adaptive
 
-NewsKit has an extensive [theming system](https://newskit.co.uk/foundations/overview/) that enables customization of style and layout. Additionally components support a range of properties to customise behaviour.
+NewsKit has an extensive [theming system](https://newskit.co.uk/theme/overview/) that enables customization of style and layout. Additionally components support a range of properties to customise behaviour.
 
 ### Productive
 
@@ -37,7 +37,7 @@ A collection high quality React [web components](https://newskit.co.uk/component
 
 ### Advanced theming system
 
-An advanced full-featured [theming system](https://newskit.co.uk/foundations/overview/) with the flexibility to meet the requirement of a single or multi-brand requirement, including both business and consumer products.
+An advanced full-featured [theming system](https://newskit.co.uk/theme/overview/) with the flexibility to meet the requirement of a single or multi-brand requirement, including both business and consumer products.
 
 ### Utility functions
 

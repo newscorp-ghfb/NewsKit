@@ -4,8 +4,8 @@
 const routes = {
   audioPlayer: '/components/audio-player',
   icons: '/components/icons',
-  spacing: '/foundations/spacing',
-  typography: '/foundations/presets/typography-presets',
+  spacing: '/theme/spacing',
+  typography: '/theme/presets/typography-presets',
   welcome: '/index',
   overview: '/components/overview/',
   tabs: '/components/tabs/',

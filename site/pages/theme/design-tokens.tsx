@@ -149,7 +149,7 @@ export default (layoutProps: LayoutProps) => (
               Design tokens are grouped into Presets when constructing
               components. This creates a simple way to customise particular
               aspects of a component.{' '}
-              <Link href="/foundations/presets/style-presets">
+              <Link href="/theme/presets/style-presets">
                 Read more about Presets
               </Link>
               .

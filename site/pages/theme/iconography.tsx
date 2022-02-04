@@ -158,7 +158,7 @@ export default (layoutProps: LayoutProps) => (
                 description: (
                   <>
                     Colour can be applied to icons using{' '}
-                    <Link href="/foundations/colours#css-w5wzt1">
+                    <Link href="/theme/colours#css-w5wzt1">
                       Ink colour tokens.
                     </Link>
                   </>
@@ -172,7 +172,7 @@ export default (layoutProps: LayoutProps) => (
                 description: (
                   <>
                     Icons can be sized using{' '}
-                    <Link href="/foundations/spacing/#css-2ka130">
+                    <Link href="/theme/spacing/#css-2ka130">
                       icon size tokens.
                     </Link>
                   </>

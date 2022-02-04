@@ -443,9 +443,7 @@ export default (layoutProps: LayoutProps) => (
             <>
               Colour can be applied to a UI element using the color, iconColor
               borderColor, placeholderColor and background attribute on a{' '}
-              <Link href="/foundations/presets/style-presets/">
-                Style Preset.
-              </Link>
+              <Link href="/theme/presets/style-presets/">Style Preset.</Link>
             </>
           }
         />
