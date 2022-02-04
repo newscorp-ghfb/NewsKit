@@ -321,7 +321,8 @@ export default (layoutProps: LayoutProps) => (
         },
         {
           title: 'SelectOption',
-          summary: '...TODO...',
+          summary:
+            'The SelectOption has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.',
           propsRows: selectOptionProps,
           overridesRows: selectOptionOverrides,
         },
