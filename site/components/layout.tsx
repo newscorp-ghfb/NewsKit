@@ -43,7 +43,7 @@ const Container = styled.div<Pick<LayoutProps, 'hideSidebar'>>`
 const BodyWrapper = styled.main`
   flex: 1 0 auto;
   ${getColorCssFromTheme('backgroundColor', 'interfaceBackground')};
-  ${getSpacingCssFromTheme('paddingTop', 'space030')};
+  ${getSpacingCssFromTheme('paddingTop', {xs: 'space080', lg: 'space030'})};
   overflow: hidden;
 `;
 
