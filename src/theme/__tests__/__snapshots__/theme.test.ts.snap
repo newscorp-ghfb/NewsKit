@@ -471,7 +471,7 @@ Object {
     },
     "fontColorChange": Object {
       "base": Object {
-        "transitionDuration": "{{motions.motionDuration000}}",
+        "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "color",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
@@ -506,6 +506,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "outline-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -1679,6 +1686,11 @@ Object {
     "title": Object {
       "spaceInline": "space050",
       "stylePreset": "inkSubtle",
+      "transitionPreset": Array [
+        "backgroundColorChange",
+        "borderColorChange",
+        "fontColorChange",
+      ],
       "typographyPreset": "utilityHeading030",
     },
   },
@@ -1688,12 +1700,22 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "menuItemHorizontal",
+      "transitionPreset": Array [
+        "backgroundColorChange",
+        "borderColorChange",
+        "fontColorChange",
+      ],
     },
     "vertical": Object {
       "minHeight": "sizing080",
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "menuItemVertical",
+      "transitionPreset": Array [
+        "backgroundColorChange",
+        "borderColorChange",
+        "fontColorChange",
+      ],
     },
   },
   "modal": Object {
@@ -2009,6 +2031,12 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "tab",
+      "transitionPreset": Array [
+        "backgroundColorChange",
+        "borderColorChange",
+        "iconColorChange",
+        "fontColorChange",
+      ],
       "typographyPreset": "utilityButton030",
     },
     "medium": Object {
@@ -2017,6 +2045,12 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "tab",
+      "transitionPreset": Array [
+        "backgroundColorChange",
+        "borderColorChange",
+        "iconColorChange",
+        "fontColorChange",
+      ],
       "typographyPreset": "utilityButton020",
     },
     "small": Object {
@@ -2025,6 +2059,12 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish020",
       "stylePreset": "tab",
+      "transitionPreset": Array [
+        "backgroundColorChange",
+        "borderColorChange",
+        "iconColorChange",
+        "fontColorChange",
+      ],
       "typographyPreset": "utilityButton010",
     },
   },
@@ -2050,6 +2090,11 @@ Object {
       "spaceInline": "space010",
       "spaceInset": "spaceInsetSquish020",
       "stylePreset": "tagPrimary",
+      "transitionPreset": Array [
+        "backgroundColorChange",
+        "borderColorChange",
+        "iconColorChange",
+      ],
       "typographyPreset": "utilityButton030",
     },
     "medium": Object {
@@ -2058,6 +2103,11 @@ Object {
       "spaceInline": "space010",
       "spaceInset": "spaceInsetSquish020",
       "stylePreset": "tagPrimary",
+      "transitionPreset": Array [
+        "backgroundColorChange",
+        "borderColorChange",
+        "iconColorChange",
+      ],
       "typographyPreset": "utilityButton020",
     },
     "small": Object {
@@ -2066,6 +2116,11 @@ Object {
       "spaceInline": "space010",
       "spaceInset": "spaceInsetSquish010",
       "stylePreset": "tagPrimary",
+      "transitionPreset": Array [
+        "backgroundColorChange",
+        "borderColorChange",
+        "iconColorChange",
+      ],
       "typographyPreset": "utilityButton010",
     },
   },

@@ -34,6 +34,9 @@ exports[`Tag href renders as an anchor 1`] = `
   color: #2E2E2E;
   border-radius: 0;
   cursor: pointer;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -162,6 +165,9 @@ exports[`Tag href renders as an anchor and user can pass anchor attributes 1`] =
   color: #2E2E2E;
   border-radius: 0;
   cursor: pointer;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -290,6 +296,9 @@ exports[`Tag href renders in disable state as a div 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -417,6 +426,9 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -543,6 +555,9 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -669,6 +684,9 @@ exports[`Tag renders a tag with an icon 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -829,6 +847,9 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -989,6 +1010,9 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -1150,6 +1174,9 @@ exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -1277,6 +1304,9 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -1403,6 +1433,9 @@ exports[`Tag renders a tag with no paddings 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -1530,6 +1563,9 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -1657,6 +1693,9 @@ exports[`Tag renders a tag with percentage for width and height 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -1784,6 +1823,9 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -1911,6 +1953,9 @@ exports[`Tag renders a tag with token set for width and height 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -2037,6 +2082,9 @@ exports[`Tag renders in disabled state 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -2164,6 +2212,9 @@ exports[`Tag renders with Large size 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -2290,6 +2341,9 @@ exports[`Tag renders with Medium size 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -2416,6 +2470,9 @@ exports[`Tag renders with Small size 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -2542,6 +2599,9 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {
@@ -2668,6 +2728,9 @@ exports[`Tag renders with default styles 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
+  transition-property: background-color,border-color,outline-color;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-0 svg {

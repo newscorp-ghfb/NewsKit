@@ -458,7 +458,7 @@ Object {
     },
     "fontColorChange": Object {
       "base": Object {
-        "transitionDuration": "{{motions.motionDuration000}}",
+        "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "color",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
@@ -493,6 +493,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "outline-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {

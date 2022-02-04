@@ -602,7 +602,7 @@ Object {
     },
     "fontColorChange": Object {
       "base": Object {
-        "transitionDuration": "0ms",
+        "transitionDuration": "200ms",
         "transitionProperty": "color",
         "transitionTimingFunction": "cubic-bezier(0, 0, .5, 1)",
       },
@@ -637,6 +637,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "200ms",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "200ms",
+        "transitionProperty": "outline-color",
+        "transitionTimingFunction": "cubic-bezier(0, 0, .5, 1)",
       },
     },
     "moveUp": Object {
