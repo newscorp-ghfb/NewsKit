@@ -123,7 +123,6 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       onHighlightedIndexChange,
       stateReducer: (_, actionAndChanges) => {
         const {type, changes} = actionAndChanges;
-
         // Does not close panel in the case we are rendering panel inside a modal
         if (renderInModal && type === useSelect.stateChangeTypes.MenuBlur) {
           return {

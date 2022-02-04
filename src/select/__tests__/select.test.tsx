@@ -1,6 +1,7 @@
 import React, {createRef} from 'react';
 import {fireEvent, screen} from '@testing-library/react';
 import {act} from 'react-dom/test-utils';
+import userEvent from '@testing-library/user-event';
 import {Select, SelectProps, ButtonSelectSize, SelectOption} from '..';
 import {
   renderToFragmentWithTheme,
@@ -10,6 +11,41 @@ import {AssistiveText} from '../../assistive-text';
 import {Label} from '../../label';
 import {createTheme, IconFilledSearch} from '../..';
 
+// @ts-ignore
+const callIfExist = (props, method) => method in props && props[method]();
+
+jest.mock('react-transition-group', () => {
+  const FakeTransition = jest.fn(({children}) => children);
+  const FakeCSSTransition = jest.fn(props => {
+    const modifyChildren = (
+      child: React.DetailedReactHTMLElement<{className: string}, HTMLElement>,
+    ) => {
+      const className = `nk-modal-enter-done`;
+
+      return React.cloneElement(child, {
+        className,
+      });
+    };
+
+    const onEnter = () => callIfExist(props, 'onEnter');
+    const onExited = () => callIfExist(props, 'onExited');
+
+    // check only for `in` prop and ignore `appear` since its always applied it does not play role
+    if (props.in) {
+      onEnter();
+      return (
+        <FakeTransition>
+          {React.Children.map(props.children, child => modifyChildren(child))}
+        </FakeTransition>
+      );
+    }
+
+    // modal is not in the DOM when is not open
+    onExited();
+    return null;
+  });
+  return {CSSTransition: FakeCSSTransition, Transition: FakeTransition};
+});
 const renderSelectButtonWithComponents = () => (
   <>
     <Label>A label</Label>
@@ -414,21 +450,8 @@ describe('Select', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  // test('render Select options in Modal', () => {
-  //   const props: SelectProps = {
-  //     children: [
-  //       <SelectOption value="option 1">option 1</SelectOption>,
-  //       <SelectOption value="option 2">option 2</SelectOption>,
-  //     ],
-  //     useModal: true,
-  //   };
-
-  //   const fragment = renderToFragmentWithTheme(Select, props);
-  //   expect(fragment).toMatchSnapshot();
-  // });
-
-  test('render Select options in a Modal', async () => {
-    const props: SelectProps = {
+  describe('in Modal', () => {
+    const commonProps: SelectProps = {
       children: [
         <SelectOption value="option 1">option 1</SelectOption>,
         <SelectOption value="option 2">option 2</SelectOption>,
@@ -436,42 +459,129 @@ describe('Select', () => {
       useModal: true,
     };
 
-    const {getByTestId, asFragment} = renderWithTheme(Select, props);
+    test('render Select', async () => {
+      const {getByTestId, asFragment} = renderWithTheme(Select, commonProps);
 
-    await act(async () => {
-      fireEvent.click(getByTestId('select-button'));
+      await act(async () => {
+        userEvent.click(getByTestId('select-button'));
+      });
+      const menuElement = getByTestId('select-panel') as any;
+      expect(menuElement).toHaveFocus();
+
+      const dialogElement = getByTestId('modal');
+      expect(dialogElement).toBeInTheDocument();
+
+      expect(asFragment()).toMatchSnapshot();
     });
-    const menuElement = getByTestId('select-panel') as any;
-    expect(menuElement).toHaveFocus();
 
-    const dialogElement = getByTestId('modal');
-    expect(dialogElement).toBeInTheDocument();
-
-    expect(asFragment()).toMatchSnapshot();
-  });
-  test('render Select options in a Modal with overrides', async () => {
-    const props: SelectProps = {
-      children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
-      ],
-      useModal: true,
-      overrides: {
-        modal: {
-          panel: {
-            maxHeight: '50vh',
-            maxWidth: '300px',
+    test('render Select with overrides props', async () => {
+      const props: SelectProps = {
+        ...commonProps,
+        overrides: {
+          button: {width: '100%'},
+          modal: {
+            // @ts-ignore
+            props: {
+              closePosition: 'none',
+              header: 'make your selection',
+            },
           },
         },
-      },
-    };
+      };
 
-    const {getByTestId, asFragment} = renderWithTheme(Select, props);
+      const {getByTestId, asFragment} = renderWithTheme(Select, props);
 
-    await act(async () => {
-      fireEvent.click(getByTestId('select-button'));
+      await act(async () => {
+        userEvent.click(getByTestId('select-button'));
+      });
+
+      expect(asFragment()).toMatchSnapshot();
     });
 
-    expect(asFragment()).toMatchSnapshot();
+    test('render Select with overrides style', async () => {
+      const props: SelectProps = {
+        ...commonProps,
+        overrides: {
+          modal: {
+            panel: {
+              maxHeight: '50vh',
+              maxWidth: '300px',
+            },
+          },
+        },
+      };
+
+      const {getByTestId, asFragment} = renderWithTheme(Select, props);
+
+      await act(async () => {
+        userEvent.click(getByTestId('select-button'));
+      });
+
+      expect(asFragment()).toMatchSnapshot();
+    });
+
+    test('correct focus order', async () => {
+      const {getByTestId} = renderWithTheme(Select, commonProps);
+
+      // open select
+      await act(async () => {
+        userEvent.click(getByTestId('select-button'));
+      });
+
+      // check if the select panel is focused
+      expect(getByTestId('select-panel')).toHaveFocus();
+
+      // next tab should focus on close button
+      userEvent.tab();
+      expect(getByTestId('button')).toHaveFocus();
+
+      // next tab should focus on select panel again
+      userEvent.tab();
+      expect(getByTestId('select-panel')).toHaveFocus();
+    });
+
+    test('can close modal', async () => {
+      const {getByTestId, queryByTestId} = renderWithTheme(Select, commonProps);
+
+      // open select
+      await act(async () => {
+        userEvent.click(getByTestId('select-button'));
+      });
+
+      // close modal
+      userEvent.click(getByTestId('button'));
+      expect(queryByTestId('modal')).not.toBeInTheDocument();
+    });
+
+    test('do not close modal when click outside the panel', async () => {
+      const props: SelectProps = {
+        ...commonProps,
+        overrides: {
+          modal: {
+            // @ts-ignore
+            props: {
+              header: (
+                <button type="button" data-testid="header">
+                  header
+                </button>
+              ),
+            },
+          },
+        },
+      };
+
+      const {getByTestId, queryByTestId} = renderWithTheme(Select, props);
+
+      // open select
+      await act(async () => {
+        userEvent.click(getByTestId('select-button'));
+      });
+
+      // click outside select panel
+      userEvent.click(getByTestId('header'));
+
+      // the modal should not close
+      expect(queryByTestId('modal')).toBeInTheDocument();
+    });
   });
 });

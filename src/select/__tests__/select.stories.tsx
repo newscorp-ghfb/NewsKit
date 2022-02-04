@@ -688,6 +688,7 @@ const selectWithModalVariants = [
         button: {width: '100%'},
         modal: {
           props: {
+            header: 'make your selection',
             closePosition: 'none',
           },
         },
