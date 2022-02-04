@@ -119,7 +119,7 @@ export default [
         page: true,
         id: '/theme/design-tokens',
         illustration: 'theme/design-tokens/hero',
-        description: `Design tokens are the design decisions of the design system — specifically, they are named entities that store visual and functional attributes. They are used in place of hardcoded values (such as hex values for colour or pixel values for spacing) to maintain a scalable and consistent system for UI.`,
+        description: `Design tokens are the design decisions of the design system. They are used in place of hard-coded values to maintain a scalable and consistent system for UI.`,
       },
       {
         title: 'Fonts',
@@ -127,7 +127,7 @@ export default [
         id: '/theme/fonts',
         illustration: 'theme/fonts/hero',
         description:
-          'Fonts form an important part of the interface, establishing styles for content such as headlines, sub-headlines or paragraphs, as well as more functional styles for items such as labels, tags and messaging.',
+          'Fonts define the font family, boldness, size, and style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
       },
       {
         title: 'Iconography',
@@ -143,7 +143,7 @@ export default [
         id: '/theme/motion',
         illustration: 'theme/motion/hero',
         description:
-          'Motion is used to create movement and narrative within a product. Animated interface elements don’t just attract attention, they enhance user experience and help guide user flow',
+          'Motion is used to create movement and narrative within a product. Timely animated interface elements attract attention, provide guidance and enhance user experience.',
       },
       {
         title: 'Shadows',
@@ -151,7 +151,7 @@ export default [
         id: '/theme/shadows',
         illustration: 'components/hero-shadows-illustration',
         description:
-          'Shadows provide visual cues about the distance between layers.',
+          'Shadows provide visual cues about the distance between layers. They add levels of depth and realism to the user’s visual experience and improve the UI visual hierarchy.',
       },
       {
         title: 'Sizing',
@@ -159,7 +159,7 @@ export default [
         id: '/theme/sizing',
         illustration: 'components/hero-sizing-illustration',
         description:
-          'Standardised sizing provides increased visual consistency in an interface.',
+          'A simple, standardised approach to size increases consistency and visual rhythm. Appropriate sizing is important for providing an inclusive experience.',
       },
       {
         title: 'Spacing',
@@ -167,7 +167,7 @@ export default [
         id: '/theme/spacing',
         illustration: 'theme/spacing/hero',
         description:
-          'Space helps to guide the user and provide a pleasant and consistent experience when using a product.',
+          'Considered use of space can improve communication: reducing visual clutter, providing hierarchy or helping show a relationship between elements on a screen.',
       },
       // {
       //   title: 'Overlays',
@@ -195,14 +195,14 @@ export default [
             id: '/theme/presets/style-presets',
             illustration: 'theme/style-presets/hero',
             description:
-              'A collection of foundational design tokens combined into a preset to define reusable styles for interface elements and their interactive states.',
+              'A collection of foundational design tokens combined into a preset to define reusable styles for specific interface elements and their interactive states.',
           },
           // {
           //   title: 'Transition Presets',
           //   page: true,
           //   id: '/theme/presets/transition-presets',
           //   illustration: 'theme/transition-presets/hero',
-          //   description: 'A collection of foundational font design tokens combined into a preset to define reusable typography styles for specific text elements.'
+          //   description: 'A collection of motion styles and states combined into a preset to define reusable motion transition from one state to another for specific interface elements.'
           // },
           {
             title: 'Typography Presets',
@@ -226,26 +226,26 @@ export default [
               'A NewsKit theme is built up from a layer of foundations - such as colours, fonts and sizing scales.',
           },
           {
-            title: 'Creating a theme',
+            title: 'Creating a theme in code',
             page: true,
             illustration: 'theme/creating-a-theme/hero',
             description:
-              "Themes represent the brand's identity, controlling the appearance of all NewsKit components.",
+              'Creating a theme enables the  brand identity to be managed from a single location across multiple products.',
             id: '/theme/theming/creating-a-theme',
           },
           {
-            title: 'Using a theme',
+            title: 'Using a theme in code',
             page: true,
             illustration: 'theme/using-a-theme/hero',
             description:
-              'To render NewsKit components you must have a theme available for them to utilise.',
+              'A guide covering how to populate and apply a brand’s theme.',
             id: '/theme/theming/using-a-theme',
           },
           {
-            title: 'Component Defaults',
+            title: 'Component overrides & defaults',
             illustration: 'theme/component-defaults/hero',
             description:
-              'A preselected option that is applied to a component to define its appearance or behaviour.',
+              'Each component in NewsKit has defaults that can be overridden to enhance the experience.',
             page: true,
             id: '/theme/theming/component-defaults',
           },
