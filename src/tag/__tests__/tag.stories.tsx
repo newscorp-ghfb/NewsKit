@@ -224,6 +224,14 @@ const myCustomThemeTransitions = createTheme({
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
       },
+      customborderIconChange: {
+        base: {
+          transitionProperty: 'outline-color',
+          transitionDuration: '100ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
     },
     stylePresets: {
       tagCustom: {
@@ -231,11 +239,12 @@ const myCustomThemeTransitions = createTheme({
           borderStyle: 'dashed',
           borderColor: '{{colors.blue060}}',
           backgroundColor: '{{colors.red020}}',
-          iconColor: '{{colors.purple020}}',
+          // iconColor: '{{colors.amber020}}',
         },
         hover: {
           backgroundColor: '{{colors.amber070}}',
           borderColor: '{{colors.green040}}',
+          iconColor: '{{colors.purple020}}',
           // iconColor: '{{colors.amber020}}',
         },
       },
@@ -248,17 +257,16 @@ export const StoryTagTransitions = () => (
     <ThemeProvider theme={myCustomThemeTransitions}>
       <Container>
         <StorybookSubHeading>
-          Tag with default transition preset
-        </StorybookSubHeading>
-        <Tag href="http://example.com">Tag</Tag>
-        <StorybookSubHeading>
           Tag with overrides on default transition preset
         </StorybookSubHeading>
         <Tag
           href="http://example.com"
           overrides={{
             stylePreset: 'tagCustom',
-            transitionPreset: 'customBackgroundColorChange',
+            transitionPreset: [
+              'customBackgroundColorChange',
+              'customborderIconChange',
+            ],
           }}
         >
           <IconFilledEmail />
@@ -272,7 +280,7 @@ export const StoryTagTransitions = () => (
             stylePreset: 'tagCustom',
             transitionPreset: [
               'customBackgroundColorChange',
-              'customIconColorChange',
+              'customborderColorChange',
             ],
           }}
         >

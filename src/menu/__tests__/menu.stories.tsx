@@ -326,6 +326,163 @@ export const StoryMenuItemsOverrides = () => {
   );
 };
 StoryMenuItemsOverrides.storyName = 'menu items - overrides';
+const myCustomThemeTransitions = compileTheme(
+  createTheme({
+    name: 'my-custom-menu-theme',
+    overrides: {
+      transitionPresets: {
+        customBackgroundColorChange: {
+          base: {
+            transitionProperty: 'background-color',
+            transitionDuration: '10ms',
+            transitionDelay: '500ms',
+            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+          },
+        },
+        customFontColourChange: {
+          base: {
+            transitionProperty: 'color',
+            transitionDuration: '100ms',
+            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+          },
+        },
+      },
+      stylePresets: {
+        menuItemCustomTransition: {
+          base: {
+            backgroundColor: '#ffe66b',
+            borderStyle: 'solid',
+            borderColor: '#222222',
+            borderWidth: '8px 0px 0px 0px',
+            color: '#222222',
+            iconColor: 'grey',
+          },
+          hover: {
+            backgroundColor: '{{colors.amber070}}',
+            color: '{{colors.green040}}',
+          },
+          active: {
+            backgroundColor: '{{colors.interactivePrimary050}}',
+            color: '{{colors.purple020}}',
+          },
+          disabled: {
+            backgroundColor: '{{colors.interactiveDisabled010}}',
+            color: '{{colors.inkNonEssential}}',
+            iconColor: '{{colors.inkNonEssential}}',
+          },
+          loading: {
+            backgroundColor: '{{colors.interactivePrimary020}}',
+            color: '{{colors.inkBrand010}}',
+            iconColor: '{{colors.inkBrand010}}',
+          },
+        },
+        dividerPrimary: {
+          base: {
+            backgroundColor: '{{colors.transparent}}',
+            borderStyle: 'solid',
+            borderColor: '{{colors.interactivePrimary030}}',
+            borderWidth: '{{borders.borderWidth010}}',
+            borderRadius: '{{borders.borderRadiusDefault}}',
+            color: '{{colors.inkBrand010}}',
+            iconColor: '{{colors.inkBrand010}}',
+          },
+        },
+      },
+    },
+  }),
+);
+export const StoryMenuTransitionOverrides = () => {
+  const Container = styled.div`
+    & > div {
+      width: 480px;
+      border: 1px dashed lightgrey;
+    }
+  `;
+  return (
+    <Container>
+      <ThemeProvider theme={myCustomThemeTransitions}>
+        <StorybookSubHeading>
+          Menu items with default transition preset
+        </StorybookSubHeading>
+        <Menu aria-label={`Menu ${getSSRId()}`}>
+          <MenuItem
+            href={href}
+            overrides={{
+              stylePreset: 'menuItemCustomTransition',
+              transitionPreset: 'customBackgroundColorChange',
+            }}
+          >
+            Menu item 1
+          </MenuItem>
+        </Menu>
+        <StorybookSubHeading>
+          Menu item with overrides on two properties on transition presets
+        </StorybookSubHeading>
+        <Menu aria-label={`Menu ${getSSRId()}`}>
+          <MenuItem
+            href={href}
+            overrides={{
+              stylePreset: 'menuItemCustomTransition',
+              transitionPreset: [
+                'customBackgroundColorChange',
+                'customFontColourChange',
+              ],
+            }}
+          >
+            Menu item 1
+          </MenuItem>
+        </Menu>
+        <StorybookSubHeading>
+          Menu item with overrides using extend on transitionDuration
+        </StorybookSubHeading>
+        <Menu aria-label={`Menu ${getSSRId()}`}>
+          <MenuItem
+            href={href}
+            overrides={{
+              stylePreset: 'menuItemCustomTransition',
+              transitionPreset: {
+                extend: 'backgroundColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration050}}',
+                },
+              },
+            }}
+          >
+            Menu item 1
+          </MenuItem>
+        </Menu>
+        <StorybookSubHeading>
+          Menu item with overrides on two properties from defaults using extend
+        </StorybookSubHeading>
+        <Menu aria-label={`Menu ${getSSRId()}`}>
+          <MenuItem
+            href={href}
+            overrides={{
+              stylePreset: 'menuItemCustomTransition',
+              transitionPreset: [
+                {
+                  extend: 'backgroundColorChange',
+                  base: {
+                    transitionDuration: '{{motions.motionDuration030}}',
+                  },
+                },
+                {
+                  extend: 'customFontColourChange',
+                  base: {
+                    transitionDuration: '{{motions.motionDuration050}}',
+                  },
+                },
+              ],
+            }}
+          >
+            Menu item 1
+          </MenuItem>
+        </Menu>
+      </ThemeProvider>
+    </Container>
+  );
+};
+StoryMenuTransitionOverrides.storyName = 'menu items - transitions';
 
 export const StoryMenuItemsInverse = () => {
   const InverseContainer = styled.div`

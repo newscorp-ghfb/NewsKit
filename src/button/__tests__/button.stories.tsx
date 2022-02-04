@@ -504,10 +504,6 @@ export const StoryButtonWithTransitions = () => (
     <ThemeProvider theme={myCustomTransitionPresets}>
       <Container>
         <StorybookSubHeading>
-          Button with default transition preset
-        </StorybookSubHeading>
-        <Button size={ButtonSize.Medium}>Button</Button>
-        <StorybookSubHeading>
           Button with overrides on default transition preset
         </StorybookSubHeading>
         <Button

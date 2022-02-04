@@ -6,14 +6,14 @@ export const transitionPresets: Record<string, TransitionPreset> = {};
 transitionPresets.fontColorChange = {
   base: {
     transitionProperty: 'color',
-    transitionDuration: '{{motions.motionDuration000}}',
+    transitionDuration: '{{motions.motionDuration020}}',
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
 };
 
 transitionPresets.iconColorChange = {
   base: {
-    transitionProperty: 'accent-color',
+    transitionProperty: 'outline-color',
     transitionDuration: '{{motions.motionDuration020}}',
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
@@ -23,6 +23,7 @@ transitionPresets.backgroundColorChange = {
     transitionProperty: 'background-color',
     transitionDuration: '{{motions.motionDuration020}}',
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+    // transitionDelay: '500ms',
   },
 };
 
