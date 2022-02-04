@@ -24,18 +24,18 @@ const PlaygroundContainer = styled.div`
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Inline Message',
+      title: 'Inline message',
       description:
-        'An Inline message communicates contextual information. They are positioned inline, in close proximity to the element they are adding context to.',
+        'An inline message communicates contextual information. They are positioned inline, in close proximity to the element they are adding context to.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Feedback & Status',
-      name: 'Inline Message',
+      name: 'Inline message',
       hero: {
         illustration: 'components/inline-message/inline-message-illustration',
       },
-      introduction: `An Inline message communicates contextual information. They are positioned inline, in close proximity to the element they are adding context to.`,
+      introduction: `An inline message communicates contextual information. They are positioned inline, in close proximity to the element they are adding context to.`,
     }}
     componentDefaultsKey="inlineMessage"
     meta={{
@@ -47,7 +47,7 @@ export default (layoutProps: LayoutProps) => (
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the Inline Message component, its variations, and configuration options.',
+        'This demo allows you to preview the inline message component, its variations, and configuration options.',
       playground: {
         componentName: 'InlineMessage',
         component: state => {
@@ -124,7 +124,7 @@ export default (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'An Inline message contains one required element and two optional elements.',
+        'An inline message contains one required element and two optional elements.',
       rows: [
         {
           name: 'Icon',
@@ -155,7 +155,7 @@ export default (layoutProps: LayoutProps) => (
         {
           title: 'Intent',
           description:
-            'An Inline message has three intents: informative and negative. Each intent is used to communicate a specific semantic tone to the user.',
+            'An inline message has two intents: informative and negative. Each intent is used to communicate a specific semantic tone to the user.',
           media: getIllustrationComponent(
             'components/inline-message/inline-message-options-intent-illustration',
           ),
@@ -180,12 +180,12 @@ export default (layoutProps: LayoutProps) => (
     }}
     behaviors={{
       introduction:
-        'The following guidance describes how an Inline message behaves.',
+        'The following guidance describes how an inline message behaves.',
       cards: [
         {
           title: 'Text Overflow Wrap',
           description:
-            'When the title and/or message in the Inline message is too long for the available horizontal space, it wraps to form another line.',
+            'When the title and/or message in the inline message is too long for the available horizontal space, it wraps to form another line.',
           media: getIllustrationComponent(
             'components/inline-message/inline-message-behaviours-text-overflow-illustration',
           ),
@@ -194,11 +194,11 @@ export default (layoutProps: LayoutProps) => (
     }}
     usage={{
       introduction:
-        'The following guidance describes how and when to appropriately use an Inline message component.',
+        'The following guidance describes how and when to appropriately use an inline message component.',
       cards: [
         {
           description:
-            'Use an Inline message to provide additional context or supporting information to a particular UI element or function e.g. delivery terms, within a delivery address form.',
+            'Use an inline message to provide additional context or supporting information to a particular UI element or function e.g. delivery terms, within a delivery address form.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/inline-message/inline-message-do-1-illustration',
@@ -206,7 +206,7 @@ export default (layoutProps: LayoutProps) => (
         },
         {
           description:
-            'Use an Inline message for critical system-level messages such as errors e.g. loss of functionality. Something that partially or fully interrupts a user experience is more appropriate e.g. a Banner or Modal.',
+            'Use an inline message for critical system-level messages such as errors e.g. loss of functionality. Something that partially or fully interrupts a user experience is more appropriate e.g. a Banner or Modal.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/inline-message/inline-message-dont-1-illustration',
@@ -214,7 +214,7 @@ export default (layoutProps: LayoutProps) => (
         },
         {
           description:
-            'Carefully consider if you need to use more than one Inline message per screen, as this could increase a users cognitive load and become less effective in drawing attention to content.',
+            'Carefully consider if you need to use more than one inline message per screen, as this could increase a users cognitive load and become less effective in drawing attention to content.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/inline-message/inline-message-do-2-illustration',
@@ -222,14 +222,14 @@ export default (layoutProps: LayoutProps) => (
         },
         {
           description:
-            'Use an Inline message to add context to a single input such as a Text input. Assistive text within an input is more appropriate.',
+            'Use an inline message to add context to a single input such as a Text input. Assistive text within an input is more appropriate.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/inline-message/inline-message-dont-2-illustration',
           ),
         },
         {
-          description: 'Use multiple Inline messages in close proximately.',
+          description: 'Use multiple inline messages in close proximately.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/inline-message/inline-message-dont-3-illustration',
@@ -239,7 +239,7 @@ export default (layoutProps: LayoutProps) => (
     }}
     accessibility={{
       introduction:
-        'An Inline Message implements accessibility best practices.',
+        'An inline message implements accessibility best practices.',
       aria: {
         title: 'WAI-ARIA',
         tableRows: [
@@ -271,7 +271,7 @@ export default (layoutProps: LayoutProps) => (
       introduction: ``,
       components: [
         {
-          title: 'Inline Message',
+          title: 'Inline message',
           summary: `An Inline Message has a range of props that can be used to define an appropriate experience for different use cases and
                     a range of predefined elements and attributes that can be overridden to define its appearance.`,
           propsRows: [
@@ -279,25 +279,25 @@ export default (layoutProps: LayoutProps) => (
               name: 'children',
               type: `Exclude<React.ReactNode, 'undefined'>`,
               required: true,
-              description: 'Sets the message of the Inline Message.',
+              description: 'Sets the message of the inline message.',
             },
             {
               name: 'icon',
               type: 'ReactElement<NewsKitIcon>',
               description:
-                'If provided, defines the icon that is displayed in the Inline Message.',
+                'If provided, defines the icon that is displayed in the inline message.',
             },
             {
               name: 'title',
               type: 'string',
               description:
-                'If provided, defines the content of the title in the Inline Message.',
+                'If provided, defines the content of the title in the inline message.',
             },
             {
               name: 'ariaLabel',
               type: 'React.ComponentType',
               description:
-                'If provided, defines the Aria-label of the Inline Message.',
+                'If provided, defines the Aria-label of the inline message.',
             },
           ],
           overridesRows: [
@@ -307,7 +307,7 @@ export default (layoutProps: LayoutProps) => (
               default: 'inlineMessageInformative',
               description: (
                 <>
-                  Overrides the stylePreset of the Inline Message that styles
+                  Overrides the stylePreset of the inline message that styles
                   the Icon and the background.
                   <Mono>inlineMessageInformative</Mono> |
                   <Mono>inlineMessageNotice</Mono> |
@@ -320,7 +320,7 @@ export default (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'spaceInset030',
               description:
-                'Overrides the spaceInset of the Inline Message container.',
+                'Overrides the spaceInset of the inline message container.',
             },
             {
               attribute: 'content.title.stylePreset',
@@ -375,7 +375,7 @@ export default (layoutProps: LayoutProps) => (
       uiKit: true,
     }}
     related={{
-      introduction: 'Components related to Inline Message',
+      introduction: 'Components related to inline message',
       related: ['Toast', 'Modal', 'Drawer'],
     }}
   />
