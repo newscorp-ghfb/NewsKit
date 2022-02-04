@@ -1,8 +1,9 @@
 {
-  "shadow010": "0px 0.5px 0px 2px rgba(10,10,10,0.08)",
-  "shadow020": "0px 2px 0px 4px rgba(10,10,10,0.08)",
-  "shadow030": "0px 4px 0px 8px rgba(10,10,10,0.08)",
-  "shadow040": "0px 8px 0px 16px rgba(10,10,10,0.08)",
-  "shadow050": "0px 16px 0px 24px rgba(10,10,10,0.08)",
-  "shadow060": "0px 20px 0px 32px rgba(10,10,10,0.08)"
+  "shadow010": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
+  "shadow020": "0 0 1px 0 rgba(40,41,61,0.04), 0 2px 4px 0 rgba(96,97,112,0.16)",
+  "shadow030": "0 0 2px 0 rgba(40,41,61,0.04), 0 4px 8px 0 rgba(96,97,112,0.16)",
+  "shadow040": "0 2px 4px 0 rgba(40,41,61,0.04), 0 8px 16px 0 rgba(96,97,112,0.16)",
+  "shadow050": "0 2px 8px 0 rgba(40,41,61,0.04), 0 16px 24px 0 rgba(96,97,112,0.16)",
+  "shadow060": "0 2px 8px 0 rgba(40,41,61,0.08), 0 20px 32px 0 rgba(96,97,112,0.24)",
+  "headerShadow": "0px 4px 4px rgba(159, 159, 159, 0.25)"
 }

@@ -20,15 +20,11 @@ const StylePresetsLoader = ({
   useEffect(() => {
     const dynamicallyImport = async () => {
       const kebabComponentName = toKebabCase(name);
-      try {
-        const stylePreset = (
-          await import(`../${kebabComponentName}/style-presets`)
-        ).default;
+      const stylePreset = (
+        await import(`../${kebabComponentName}/style-presets`)
+      ).default;
 
-        setStylePresets(Object.keys(stylePreset));
-      } catch (error) {
-        // To catch components with style variation but do not have style-preset file
-      }
+      setStylePresets(Object.keys(stylePreset));
     };
     dynamicallyImport();
   }, [name]);
