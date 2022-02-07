@@ -4,7 +4,7 @@ import {
   ContentPrimary,
   ContentSection,
 } from '../../components/content-structure';
-import {HeaderImage} from '../../components/illustrations/foundations/header-image';
+import {HeaderImage} from '../../components/illustrations/theme/header-image';
 import Layout, {LayoutProps} from '../../components/layout';
 import {MediaItem, MediaList} from '../../components/media-list';
 import {HeaderIndex} from '../../components/header-index';
@@ -46,8 +46,8 @@ const themePresetsRouteListCards = getCardList(themePresetsRouteList);
 const themeThemingRouteListCards = getCardList(themeThemingRouteList);
 
 export default (layoutProps: LayoutProps) => {
-  const pageDescription = `NewsKit offers a robust and flexible theming system, enabling brands to 
-                           retain a unique identity while building consistent, accessible products.`;
+  const pageDescription = `NewsKit offers a robust and flexible theming system, 
+                          enabling brands to retain a unique identity while building consistent, accessible products.`;
   return (
     <Layout {...layoutProps} newPage>
       {({themeMode}) => (
@@ -66,8 +66,8 @@ export default (layoutProps: LayoutProps) => {
               <ContentSection sectionName="Foundations">
                 <ContentPrimary
                   headline="Foundations"
-                  description=" NewsKit foundations define the look and feel of digital products. Foundations include
-                  borders, breakpoints, colours, fonts, motion, shadows, sizing and space."
+                  description="NewsKit foundations define the look and feel of digital products. Foundations include borders,
+                  breakpoints, colours, fonts, motion, shadows, sizing and space."
                 >
                   <MediaList
                     cards={themeOverviewRouteListCards}
@@ -78,7 +78,7 @@ export default (layoutProps: LayoutProps) => {
               <ContentSection sectionName="Presets">
                 <ContentPrimary
                   headline="Presets"
-                  description=" A collection of related foundational design tokens combined into a preset to define
+                  description="A collection of related foundational design tokens combined into a preset to define
                   reusable styles, typography or transitions. There are three categories of presets:"
                 >
                   <MediaList
@@ -91,7 +91,7 @@ export default (layoutProps: LayoutProps) => {
                 <ContentPrimary
                   headline="Creating and using themes"
                   description="Learn how to create NewsKit themes in Figma and code, and unlock the power
-                  of presets and component defaults to further customize NewsKit components."
+                  of presets and component defaults to further customise NewsKit components."
                 >
                   <MediaList
                     cards={themeThemingRouteListCards}

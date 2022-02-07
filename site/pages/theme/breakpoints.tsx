@@ -69,7 +69,7 @@ export default (layoutProps: LayoutProps) => (
       type: 'Foundations',
       name: 'Breakpoints',
       hero: {
-        illustration: 'foundations/breakpoints/hero',
+        illustration: 'theme/breakpoints/hero',
       },
       introduction: `Breakpoints set a visual point on a screen to adapt the design of content (responsive design), ensuring a consistent, optimised experience across different screen widths.`,
     }}
@@ -90,7 +90,7 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Illustration path="foundations/breakpoints/overview" />
+          <Illustration path="theme/breakpoints/overview" />
         </ContentPrimary>
 
         <ContentSecondary>
@@ -139,18 +139,14 @@ const theme = createTheme({
                   be calculated to its relative size., and will stretch as the
                   browser is resized.
                   `,
-                media: getIllustrationComponent(
-                  'foundations/breakpoints/fluid',
-                ),
+                media: getIllustrationComponent('theme/breakpoints/fluid'),
               },
               {
                 title: 'Fixed',
                 description: `
                   Fixed layouts do not respond to the size of the screen (viewport) but remain at a fixed width at a specific numerical value e.g. 1920px.
                   `,
-                media: getIllustrationComponent(
-                  'foundations/breakpoints/fixed',
-                ),
+                media: getIllustrationComponent('theme/breakpoints/fixed'),
               },
             ]}
           />
@@ -179,7 +175,7 @@ const theme = createTheme({
           headline="Using breakpoints"
           description="NewsKit enables the appearance and behaviour of UI elements to change at different breakpoints."
         >
-          <Illustration path="foundations/breakpoints/usage" />
+          <Illustration path="theme/breakpoints/usage" />
         </ContentPrimary>
 
         <ContentSecondary
