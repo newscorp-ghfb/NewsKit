@@ -75,7 +75,7 @@ yarn add newskit
 ## 🔨 Usage
 
 NewsKit components can be used like any typical react components. One thing to bear in mind is that they will need to be descendants of a `ThemeProvider`, this can be thought of as the theme context, this theme will be applied to all of its descendants.
-The following example shows the "Hello World!" example of using a NewsKit component. More comprehensive usage documentation can be found on our [website](https://www.newskit.co.uk/getting-started/code/web/).
+The following example shows the "Hello World!" example of using a NewsKit component. More comprehensive usage documentation can be found on our [website](https://www.newskit.co.uk/getting-started/code/engineering-quickstart/).
 
 ```typescript
 import {ThemeProvider, Tag, TagSize, newskitLightTheme} from 'newskit';

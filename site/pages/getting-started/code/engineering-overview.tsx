@@ -211,7 +211,7 @@ export default (layoutProps: LayoutProps) => (
                 description: (
                   <>
                     A host of{' '}
-                    <Link href="/getting-started/code/web/">
+                    <Link href="/getting-started/code/engineering-quickstart/">
                       utility functions
                     </Link>{' '}
                     for use in third-party or custom components.

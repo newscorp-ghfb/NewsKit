@@ -361,9 +361,12 @@ export default (layoutProps: LayoutProps) => {
                     Design
                   </Button>
                 </LinkNext>
-                <LinkNext href="/getting-started/code/web" passHref>
+                <LinkNext
+                  href="/getting-started/code/engineering-quickstart"
+                  passHref
+                >
                   <Button
-                    href="/getting-started/code/web"
+                    href="/getting-started/code/engineering-quickstart"
                     overrides={{
                       stylePreset: 'buttonOutlinedPrimary',
                       width: 'sizing110',
