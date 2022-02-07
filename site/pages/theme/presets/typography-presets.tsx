@@ -290,9 +290,7 @@ const ItalicTextBlock = styled(TextBlock)\`
                     smallest font-size applied to text is no less 12px for web.
                   </>
                 ),
-                media: getIllustrationComponent(
-                  'foundations/typography/font-size',
-                ),
+                media: getIllustrationComponent('theme/typography/font-size'),
               },
               {
                 title: 'Line Height',
@@ -311,9 +309,7 @@ const ItalicTextBlock = styled(TextBlock)\`
                     size and body text set at 1.5-times the font size.
                   </>
                 ),
-                media: getIllustrationComponent(
-                  'foundations/typography/line-height',
-                ),
+                media: getIllustrationComponent('theme/typography/line-height'),
               },
               {
                 title: 'Line length',
@@ -331,9 +327,7 @@ const ItalicTextBlock = styled(TextBlock)\`
                     to the correct line in a large body of the text.
                   </>
                 ),
-                media: getIllustrationComponent(
-                  'foundations/typography/line-length',
-                ),
+                media: getIllustrationComponent('theme/typography/line-length'),
               },
             ]}
           />
