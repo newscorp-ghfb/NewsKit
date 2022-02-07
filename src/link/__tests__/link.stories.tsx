@@ -358,3 +358,97 @@ export const StoryLinkWithinTextParagraph = () => (
   </Container>
 );
 StoryLinkWithinTextParagraph.storyName = 'link-within-text-paragraph';
+const myCustomLinkTheme = createTheme({
+  name: 'my-custom-link-theme',
+  overrides: {
+    transitionPresets: {
+      customIconChange: {
+        base: {
+          transitionProperty: 'outline-color',
+          transitionDuration: '100ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+      customFontColorChange: {
+        base: {
+          transitionProperty: 'color',
+          transitionDuration: '100ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+    },
+    colors: {
+      inkLinkBase: '{{colors.red080}}',
+      inkLinkHover: '{{colors.green080}}',
+      inkLinkVisited: '{{colors.red090}}',
+    },
+    stylePresets: {
+      linkCustom: {
+        base: {
+          color: '{{colors.inkLinkBase}}',
+        },
+        visited: {
+          color: '{{colors.inkLinkVisited}}',
+        },
+        hover: {
+          color: '{{colors.inkLinkHover}}',
+        },
+      },
+    },
+  },
+});
+export const StoryLinkStandAloneTransition = () => (
+  <Container>
+    {/* ------ Link standalone -------- */}
+    <StorybookHeading>
+      Link standalone with transition overrides
+    </StorybookHeading>
+    <ThemeProvider theme={myCustomLinkTheme}>
+      <StorybookSubHeading>
+        with overrides on default transition preset
+      </StorybookSubHeading>
+      <LinkStandalone
+        href="/"
+        overrides={{
+          stylePreset: 'linkCustom',
+          transitionPreset: 'customFontColorChange',
+        }}
+      >
+        Standalone link
+      </LinkStandalone>
+      <br />
+      <StorybookSubHeading>
+        Link standalone with overrides on two properties on transition presets
+      </StorybookSubHeading>
+      <LinkStandalone
+        href="https://google.com"
+        overrides={{
+          stylePreset: 'linkCustom',
+          transitionPreset: ['customFontColorChange', 'customIconChange'],
+        }}
+      >
+        Standalone link external
+      </LinkStandalone>
+      <StorybookSubHeading>
+        Link standalone with overrides using extend on transitionDuration
+      </StorybookSubHeading>
+      <LinkStandalone
+        href="https://google.com"
+        overrides={{
+          stylePreset: 'linkCustom',
+          transitionPreset: {
+            extend: 'customFontColorChange',
+            base: {
+              transitionDuration: '{{motions.motionDuration050}}',
+            },
+          },
+        }}
+      >
+        Standalone link external
+      </LinkStandalone>
+    </ThemeProvider>
+  </Container>
+);
+StoryLinkStandAloneTransition.storyName = 'link-standalone-transition';

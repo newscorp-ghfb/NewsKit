@@ -1,5 +1,5 @@
 import React from 'react';
-import {styled, getStylePreset, getMotionFromTheme} from '../utils/style';
+import {styled, getStylePreset} from '../utils/style';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {InternalLinkProps} from './types';
 import {IconFilledLaunch} from '../icons';
@@ -9,13 +9,12 @@ import {useTheme} from '../theme';
 import {isLinkExternal} from './utils';
 import {useHasMounted} from '../utils/hooks';
 import {TextBlock} from '../text-block';
+import {getTransitionPreset} from '../utils/style/transition-preset';
 
 const StyledLink = styled.a<InternalLinkProps>`
   display: inline-block;
   transition-property: color;
-  transition-duration: ${getMotionFromTheme('motionDuration020')};
-  transition-timing-function: ${getMotionFromTheme('motionTimingEaseOut')};
-
+  ${getTransitionPreset(`linkStandalone`, '')};
   ${getStylePreset('link', '')}
 `;
 
