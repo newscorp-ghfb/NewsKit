@@ -315,7 +315,7 @@ export default (layoutProps: LayoutProps) => (
       type: 'Foundations',
       name: 'Colours',
       hero: {
-        illustration: 'foundations/colours/hero',
+        illustration: 'theme/colours/hero',
       },
       introduction: `Colour is key to expressing brand and identity but it also plays an important role in conveying meaning to a user. `,
     }}
@@ -422,7 +422,7 @@ export default (layoutProps: LayoutProps) => (
           headline="Contextual colours"
           description="Contextual colours are selected from the palette colours and have specific functions or purposes applied. There are three categories of contextual colours: Ink, Interface and Interactive colours."
         >
-          <Illustration path="foundations/colours/overview" />
+          <Illustration path="theme/colours/overview" />
         </ContentPrimary>
 
         <ContentSecondary>
