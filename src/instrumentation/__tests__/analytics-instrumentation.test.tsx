@@ -75,7 +75,7 @@ describe('createEventInstrumentation', () => {
     expect(() =>
       (createEventInstrumentation as any)(),
     ).toThrowErrorMatchingInlineSnapshot(
-      `"Cannot read properties of undefined (reading 'length')"`,
+      `"Cannot read property 'length' of undefined"`,
     );
   });
 
