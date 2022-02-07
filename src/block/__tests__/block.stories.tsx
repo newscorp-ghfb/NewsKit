@@ -33,6 +33,24 @@ const myCustomTheme = createTheme({
           iconColor: '{{colors.inkInverse}}',
         },
       },
+      transitionBlock: {
+        base: {
+          backgroundColor: '{{colors.purple020}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.amber070}}',
+        },
+      },
+    },
+    transitionPresets: {
+      customBackgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '500ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
     },
   },
 });
@@ -108,6 +126,36 @@ export const StoryBlock = () => (
         </Block>
       </Block>
       <StyledHr />
+      <Block stylePreset="blockOuter">
+        <Block
+          spaceStack="space030"
+          spaceInset="spaceInset030"
+          stylePreset="transitionBlock"
+          overrides={{
+            transitionPreset: 'customBackgroundColorChange',
+          }}
+        >
+          <span>Block with transition</span>
+        </Block>
+      </Block>
+      <StyledHr />
+      <Block stylePreset="blockOuter">
+        <Block
+          spaceStack="space030"
+          spaceInset="spaceInset030"
+          stylePreset="transitionBlock"
+          overrides={{
+            transitionPreset: {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration030}}',
+              },
+            },
+          }}
+        >
+          <span>Block with extend transition</span>
+        </Block>
+      </Block>
     </ThemeProvider>
   </>
 );
