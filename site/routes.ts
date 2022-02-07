@@ -230,7 +230,7 @@ export default [
             page: true,
             illustration: 'theme/creating-a-theme/hero',
             description:
-              'Creating a theme enables the  brand identity to be managed from a single location across multiple products.',
+              'Creating a theme enables the brand identity to be managed from a single location across multiple products.',
             id: '/theme/theming/creating-a-theme',
           },
           {
