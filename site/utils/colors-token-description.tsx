@@ -279,13 +279,8 @@ export const INTERACTIVE_DESCRIPTION = {
     'Background & border colours applied to the Unselected state of the  Switch, the Checkbox, & Radio components',
   interactiveInput030:
     'Background colour applied to the ‘Feedback’ of the Checkbox, & Radio components',
-  interactiveInput040: (
-    <>
-      Background colour applied to the Hover state of the Solid{' '}
-      <Link href="/components/button/">Button</Link>, & the border colour of the
-      Outlined Button
-    </>
-  ),
+  interactiveInput040:
+    'Background & border colours applied to the Selected state of the Switch, the Checkbox, & Radio components',
   interactiveInput050:
     'Active state background and border for selection controls, and input components',
   interactiveInverse010: (

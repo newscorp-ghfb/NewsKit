@@ -263,7 +263,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
               <h1
                 class="nk-headline-heading emotion-14"
               >
-                Do not
+                Don’t
               </h1>
             </section>
           </div>
@@ -314,7 +314,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   text-decoration: none;
   width: 32px;
   height: 32px;
-  padding: 4px 8px;
+  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;

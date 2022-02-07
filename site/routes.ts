@@ -35,66 +35,65 @@ export default [
     id: '/getting-started',
     subNav: [
       {
-        title: 'Code',
-        id: '/getting-started/code/web',
-        subNav: [
-          {
-            title: 'Web',
-            page: true,
-            id: '/getting-started/code/web',
-          },
-          {
-            title: 'Instrumentation',
-            page: true,
-            id: '/getting-started/code/instrumentation',
-          },
-          {
-            title: 'Testing',
-            page: true,
-            id: '/getting-started/code/testing',
-          },
-          {
-            title: 'Design Overview',
-            page: true,
-            id: '/getting-started/code/design-overview',
-            description:
-              'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
-            illustration: 'guides/design-overview/hero',
-          },
-          {
-            title: 'Engineering overview',
-            page: true,
-            id: '/getting-started/code/engineering-overview',
-            description:
-              'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
-            illustration: 'guides/engineering-overview/hero',
-          },
-          // ToDo: Once design quickstart guide page is ready, need to enable this section.
-          // {
-          //   title: 'Design quickstart guide',
-          //   page: true,
-          //   id: '/getting-started/code/design-quickstart-guide',
-          //   description:
-          //     'To start designing with NewsKit, follow the steps in the quickstart guide.',
-          //   illustration: 'guides/design-overview/design-quickstart',
-          // },
-        ],
+        title: 'Overview',
+        page: true,
+        id: '/getting-started/overview',
       },
+      {
+        title: 'Web',
+        page: true,
+        id: '/getting-started/code/web',
+      },
+      {
+        title: 'Instrumentation',
+        page: true,
+        id: '/getting-started/code/instrumentation',
+      },
+      {
+        title: 'Testing',
+        page: true,
+        id: '/getting-started/code/testing',
+      },
+      {
+        title: 'Design Overview',
+        page: true,
+        id: '/getting-started/code/design-overview',
+        description:
+          'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
+        illustration: 'guides/design-overview/hero',
+      },
+      {
+        title: 'Engineering overview',
+        page: true,
+        id: '/getting-started/code/engineering-overview',
+        description:
+          'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
+        illustration: 'guides/engineering-overview/hero',
+      },
+      // ToDo: Once design quickstart guide page is ready, need to enable this section.
+      // {
+      //   title: 'Design quickstart guide',
+      //   page: true,
+      //   id: '/getting-started/code/design-quickstart-guide',
+      //   description:
+      //     'To start designing with NewsKit, follow the steps in the quickstart guide.',
+      //   illustration: 'guides/design-overview/design-quickstart',
+      // },
     ],
   },
   {
-    title: 'Foundations',
-    id: '/foundations',
+    title: 'Theme',
+    id: '/theme',
     subNav: [
       {
         title: 'Overview',
         page: true,
-        id: '/foundations/overview',
+        id: '/theme/overview',
       },
       {
         title: 'Borders',
         page: true,
-        id: '/foundations/borders',
+        id: '/theme/borders',
         description:
           'Borders direct attention, identify components, communicate state, and express a brand.',
         illustration: 'foundations/hero-borders-illustration',
@@ -102,7 +101,7 @@ export default [
       {
         title: 'Breakpoints',
         page: true,
-        id: '/foundations/breakpoints',
+        id: '/theme/breakpoints',
         illustration: 'foundations/breakpoints/hero',
         description:
           'Breakpoints set a visual point on a screen to alter the layout of content (responsive design), ensuring consistency across different screen widths.',
@@ -110,15 +109,22 @@ export default [
       {
         title: 'Colours',
         page: true,
-        id: '/foundations/colours',
+        id: '/theme/colours',
         illustration: 'foundations/colours/hero',
         description:
           'Colour is key to expressing brand and identity, but it also plays a vital role in conveying specific meaning to a user.',
       },
       {
+        title: 'Design tokens',
+        page: true,
+        id: '/theme/design-tokens',
+        illustration: 'foundations/design-tokens/hero',
+        description: `Design tokens are the design decisions of the design system — specifically, they are named entities that store visual and functional attributes. They are used in place of hardcoded values (such as hex values for colour or pixel values for spacing) to maintain a scalable and consistent system for UI.`,
+      },
+      {
         title: 'Fonts',
         page: true,
-        id: '/foundations/fonts',
+        id: '/theme/fonts',
         illustration: 'foundations/fonts/hero',
         description:
           'Fonts form an important part of the interface, establishing styles for content such as headlines, sub-headlines or paragraphs, as well as more functional styles for items such as labels, tags and messaging.',
@@ -126,30 +132,23 @@ export default [
       {
         title: 'Iconography',
         page: true,
-        id: '/foundations/iconography',
+        id: '/theme/iconography',
         illustration: 'foundations/iconography/hero',
         description:
           'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
       },
       {
-        title: 'Motions',
+        title: 'Motion',
         page: true,
-        id: '/foundations/motions',
-        illustration: 'foundations/motions/hero',
+        id: '/theme/motion',
+        illustration: 'foundations/motion/hero',
         description:
           'Motion is used to create movement and narrative within a product. Animated interface elements don’t just attract attention, they enhance user experience and help guide user flow',
       },
       {
-        title: 'Design tokens',
-        page: true,
-        id: '/foundations/design-tokens',
-        illustration: 'foundations/design-tokens/hero',
-        description: `Design tokens are the design decisions of the design system — specifically, they are named entities that store visual and functional attributes. They are used in place of hardcoded values (such as hex values for colour or pixel values for spacing) to maintain a scalable and consistent system for UI.`,
-      },
-      {
         title: 'Shadows',
         page: true,
-        id: '/foundations/shadows',
+        id: '/theme/shadows',
         illustration: 'components/hero-shadows-illustration',
         description:
           'Shadows provide visual cues about the distance between layers.',
@@ -157,15 +156,23 @@ export default [
       {
         title: 'Sizing',
         page: true,
-        id: '/foundations/sizing',
+        id: '/theme/sizing',
         illustration: 'components/hero-sizing-illustration',
         description:
           'Standardised sizing provides increased visual consistency in an interface.',
       },
+      {
+        title: 'Spacing',
+        page: true,
+        id: '/theme/spacing',
+        illustration: 'foundations/spacing/hero',
+        description:
+          'Space helps to guide the user and provide a pleasant and consistent experience when using a product.',
+      },
       // {
       //   title: 'Overlays',
       //   page: true,
-      //   id: '/foundations/overlays',
+      //   id: '/theme/overlays',
       //   illustration: 'static/theming/foundations/overlays.svg',
       //   description:
       //     'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
@@ -173,63 +180,74 @@ export default [
       // {
       //   title: 'Typography',
       //   page: true,
-      //   id: '/foundations/fonts',
+      //   id: '/theme/fonts',
       //   illustration: 'static/theming/foundations/typography.svg',
       //   description:
       //     'Fonts define the font family, boldness, size, and the style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
       // },
       {
         title: 'Presets',
-        id: '/foundations/presets',
+        id: '/theme/presets',
         subNav: [
-          {
-            title: 'Space Presets',
-            page: true,
-            id: '/foundations/presets/space-presets',
-            description:
-              'Space helps to guide the user and provide a pleasant and consistent experience when using a product.',
-          },
           {
             title: 'Style Presets',
             page: true,
-            id: '/foundations/presets/style-presets',
+            id: '/theme/presets/style-presets',
+            illustration: 'foundations/style-presets/hero',
             description:
               'A collection of foundational design tokens combined into a preset to define reusable styles for interface elements and their interactive states.',
           },
+          // {
+          //   title: 'Transition Presets',
+          //   page: true,
+          //   id: '/theme/presets/transition-presets',
+          //   illustration: 'foundations/transition-presets/hero',
+          //   description: 'A collection of foundational font design tokens combined into a preset to define reusable typography styles for specific text elements.'
+          // },
           {
             title: 'Typography Presets',
             page: true,
-            id: '/foundations/presets/typography-presets',
+            id: '/theme/presets/typography-presets',
+            illustration: 'components/hero-typography-illustration',
             description:
               'A collection of foundational font design tokens combined into a preset to define reusable typography styles for specific text elements.',
           },
         ],
       },
       {
-        title: 'Theming',
-        id: '/foundations/theming',
+        title: 'Creating and using themes',
+        id: '/theme/theming',
         subNav: [
           {
             title: 'Overview',
             page: true,
-            id: '/foundations/theming/overview',
+            id: '/theme/theming/overview',
             description:
               'A NewsKit theme is built up from a layer of foundations - such as colours, fonts and sizing scales.',
           },
           {
             title: 'Creating a theme',
             page: true,
-            id: '/foundations/theming/creating-a-theme',
+            illustration: 'foundations/creating-a-theme/hero',
+            description:
+              "Themes represent the brand's identity, controlling the appearance of all NewsKit components.",
+            id: '/theme/theming/creating-a-theme',
           },
           {
             title: 'Using a theme',
             page: true,
-            id: '/foundations/theming/using-a-theme',
+            illustration: 'foundations/using-a-theme/hero',
+            description:
+              'To render NewsKit components you must have a theme available for them to utilise.',
+            id: '/theme/theming/using-a-theme',
           },
           {
             title: 'Component Defaults',
+            illustration: 'foundations/component-defaults/hero',
+            description:
+              'A preselected option that is applied to a component to define its appearance or behaviour.',
             page: true,
-            id: '/foundations/theming/component-defaults',
+            id: '/theme/theming/component-defaults',
           },
         ],
       },
@@ -656,15 +674,16 @@ export default [
       },
     ],
   },
-  {
-    title: 'Patterns',
-    id: '/patterns',
-    subNav: [
-      {
-        title: 'Overview',
-        page: true,
-        id: '/patterns/overview',
-      },
-    ],
-  },
+  // ToDo: At least one pattern page should be ready to enable this nav link .
+  // {
+  //   title: 'Patterns',
+  //   id: '/patterns',
+  //   subNav: [
+  //     {
+  //       title: 'Overview',
+  //       page: true,
+  //       id: '/patterns/overview',
+  //     },
+  //   ],
+  // },
 ];

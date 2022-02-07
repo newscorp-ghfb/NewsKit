@@ -10,6 +10,10 @@ import {withOwnTheme} from '../utils/with-own-theme';
 
 const StyledDateText = styled(TextBlock)`
   white-space: pre;
+  &:before,
+  &:after {
+    white-space: normal;
+  }
 `;
 
 const StyledPrefix = StyledDateText;

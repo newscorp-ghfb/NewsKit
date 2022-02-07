@@ -37,8 +37,8 @@ const TokenStyle: React.FC<TextElementProps> = () => {
     const item = tokenData[i];
     tokens.push(
       <>
-        <TextElement colorPreset="teal050">{item.property}</TextElement>
-        <TextElement>{item.series}</TextElement>, <br />
+        <TextElement>{item.property}</TextElement>
+        <TextElement colorPreset="teal050">{item.series}</TextElement>, <br />
       </>,
     );
   }
@@ -149,7 +149,7 @@ export default (layoutProps: LayoutProps) => (
               Design tokens are grouped into Presets when constructing
               components. This creates a simple way to customise particular
               aspects of a component.{' '}
-              <Link href="/foundations/presets/style-presets">
+              <Link href="/theme/presets/style-presets">
                 Read more about Presets
               </Link>
               .

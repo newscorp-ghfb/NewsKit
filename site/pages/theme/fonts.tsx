@@ -269,11 +269,11 @@ export default (layoutProps: LayoutProps) => (
               typography. Key characteristics such as font-family, font-weight,
               letter-spacing, line-height and font style are applied in a
               systematic way when creating a theme in Figma and{' '}
-              <Link href="/foundations/theming/creating-a-theme/">
+              <Link href="/theme/theming/creating-a-theme/">
                 creating a theme in code
               </Link>
               . A combination of the key characteristics are grouped to form{' '}
-              <Link href="/foundations/presets/typography-presets">
+              <Link href="/theme/presets/typography-presets">
                 typography presets
               </Link>{' '}
               that are applied to text interface elements.
@@ -281,7 +281,7 @@ export default (layoutProps: LayoutProps) => (
           }
           showSeparator
         >
-          <Illustration path="foundations/fonts/overview" />
+          <Illustration path="theme/fonts/overview" />
         </ContentPrimary>
       </ContentSection>
 
@@ -301,7 +301,7 @@ export default (layoutProps: LayoutProps) => (
               symbols in various weights. Font families are mapped to design
               tokens. Font family can be applied to any text element using the{' '}
               <InlineCode>fontFamily</InlineCode> attribute on a{' '}
-              <Link href="/foundations/presets/typography-presets">
+              <Link href="/theme/presets/typography-presets">
                 Typography Preset.
               </Link>
             </>
@@ -339,7 +339,7 @@ export default (layoutProps: LayoutProps) => (
               sizes are mapped to a scale of design tokens. Font size can be
               applied to any text element using the{' '}
               <InlineCode>fontSize</InlineCode> attribute on a{' '}
-              <Link href="/foundations/presets/typography-presets">
+              <Link href="/theme/presets/typography-presets">
                 Typography Preset.
               </Link>
             </>
@@ -359,7 +359,7 @@ export default (layoutProps: LayoutProps) => (
               weights are mapped to a scale of design tokens. Font weight can be
               applied to any text element using the{' '}
               <InlineCode>fontWeight</InlineCode> attribute on a{' '}
-              <Link href="/foundations/presets/typography-presets">
+              <Link href="/theme/presets/typography-presets">
                 Typography Preset.
               </Link>
             </>
@@ -379,7 +379,7 @@ export default (layoutProps: LayoutProps) => (
               and are mapped to a scale of design tokens. Font line-height can
               be applied to any text element using the{' '}
               <InlineCode>fontLineHeight</InlineCode> attribute on a{' '}
-              <Link href="/foundations/presets/typography-presets">
+              <Link href="/theme/presets/typography-presets">
                 Typography Preset.
               </Link>
             </>
@@ -427,7 +427,7 @@ export default (layoutProps: LayoutProps) => (
               character and are mapped to a scale of design tokens. Font
               letter-spacing can be applied to any text element using the{' '}
               <InlineCode>fontLetterSpacing</InlineCode> attribute on a{' '}
-              <Link href="/foundations/presets/typography-presets">
+              <Link href="/theme/presets/typography-presets">
                 Typography Preset.
               </Link>
             </>
@@ -445,9 +445,7 @@ export default (layoutProps: LayoutProps) => (
             <>
               The following properties can be applied to typography. These can
               be defined as part of the{' '}
-              <Link href="/foundations/presets/style-presets/">
-                Style Presets.
-              </Link>{' '}
+              <Link href="/theme/presets/style-presets/">Style Presets.</Link>{' '}
               Having these properties on Style Presets promotes greater reuse of
               tokens.
             </>
@@ -489,7 +487,7 @@ export default (layoutProps: LayoutProps) => (
             <>
               For accessibility considerations related to typography, please
               refer to the{' '}
-              <Link href="/foundations/presets/typography-presets">
+              <Link href="/theme/presets/typography-presets">
                 Typography Presets
               </Link>
               .
