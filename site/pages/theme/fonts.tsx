@@ -214,7 +214,7 @@ const EXAMPLE_CARDS = [
     },
   },
   {
-    media: () => <Illustration path="foundations/fonts/cardcropped" />,
+    media: () => <Illustration path="theme/fonts/cardcropped" />,
     title: 'Card - after Text-crop',
     description:
       ' With text cropping applied, the spacing in the card is aligned correctly to the text blocks and the overall size of the card is exactly as defined.',
