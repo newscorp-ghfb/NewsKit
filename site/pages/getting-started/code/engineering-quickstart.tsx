@@ -21,7 +21,7 @@ const whatNextCards = [
     title: 'Creating a theme',
     description:
       'Themes represent the brand’s identity, controlling the appearance of all NewsKit components.',
-    href: '/foundations/theming/creating-a-theme/',
+    href: '/theme/theming/creating-a-theme/',
   },
   {
     media: getIllustrationComponent('theme/using-a-theme/hero'),
