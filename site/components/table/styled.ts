@@ -41,9 +41,6 @@ export const StyledDataCell = styled.td<TableCellProps>`
   white-space: ${({noWrap}) => noWrap && 'nowrap'};
   vertical-align: top;
   overflow: ${({maxWidth}) => maxWidth && 'hidden'};
-  & div {
-    overflow: ${({maxWidth}) => maxWidth && 'hidden'};
-  }
 `;
 
 export const StyledContainer = styled.div`
