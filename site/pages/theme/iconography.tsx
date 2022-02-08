@@ -83,7 +83,7 @@ export default (layoutProps: LayoutProps) => (
       type: 'Foundations',
       name: 'Iconography',
       hero: {
-        illustration: 'foundations/iconography/hero',
+        illustration: 'theme/iconography/hero',
       },
       introduction: `Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.`,
     }}
@@ -115,7 +115,7 @@ export default (layoutProps: LayoutProps) => (
           }
           showSeparator
         >
-          <Illustration path="foundations/iconography/overview" />
+          <Illustration path="theme/iconography/overview" />
         </ContentPrimary>
       </ContentSection>
 
@@ -149,35 +149,31 @@ export default (layoutProps: LayoutProps) => (
                 title: 'Overlay',
                 description:
                   'Icons have two variations; ‘Filled’ and ‘Outlined’. There will be certain instances when a ‘Filled’ and ‘Outlined’ instance of the same icon look the same. This is because some visual characteristics don’t lend themselves to one or the other style.',
-                media: getIllustrationComponent(
-                  'foundations/iconography/appearance',
-                ),
+                media: getIllustrationComponent('theme/iconography/appearance'),
               },
               {
                 title: 'Colour',
                 description: (
                   <>
                     Colour can be applied to icons using{' '}
-                    <Link href="/foundations/colours#css-w5wzt1">
+                    <Link href="/theme/colours#css-w5wzt1">
                       Ink colour tokens.
                     </Link>
                   </>
                 ),
-                media: getIllustrationComponent(
-                  'foundations/iconography/colours',
-                ),
+                media: getIllustrationComponent('theme/iconography/colours'),
               },
               {
                 title: 'Size',
                 description: (
                   <>
                     Icons can be sized using{' '}
-                    <Link href="/foundations/spacing/#css-2ka130">
+                    <Link href="/theme/spacing/#css-2ka130">
                       icon size tokens.
                     </Link>
                   </>
                 ),
-                media: getIllustrationComponent('foundations/iconography/size'),
+                media: getIllustrationComponent('theme/iconography/size'),
               },
               {
                 title: 'Structure',
@@ -199,9 +195,7 @@ export default (layoutProps: LayoutProps) => (
                     the trim area.
                   </>
                 ),
-                media: getIllustrationComponent(
-                  'foundations/iconography/structure',
-                ),
+                media: getIllustrationComponent('theme/iconography/structure'),
               },
             ]}
           />
@@ -307,49 +301,37 @@ export default (layoutProps: LayoutProps) => (
                   </>
                 ),
                 kind: UsageKind.DO,
-                media: getIllustrationComponent(
-                  'foundations/iconography/do-01',
-                ),
+                media: getIllustrationComponent('theme/iconography/do-01'),
               },
               {
                 description:
                   'To avoid distorting an icon, position icons ‘on pixel’ so they appear clear and not pixelated or blurred.',
                 kind: UsageKind.DONT,
-                media: getIllustrationComponent(
-                  'foundations/iconography/dont-01',
-                ),
+                media: getIllustrationComponent('theme/iconography/dont-01'),
               },
               {
                 description:
                   'Icons should be used purposefully to reduce cognitive load and provide greater context.',
                 kind: UsageKind.DO,
-                media: getIllustrationComponent(
-                  'foundations/iconography/do-02',
-                ),
+                media: getIllustrationComponent('theme/iconography/do-02'),
               },
               {
                 description:
                   'Avoid using Icons as the sole way of communicating if there is the space to accompany with a label or supporting text.',
                 kind: UsageKind.DONT,
-                media: getIllustrationComponent(
-                  'foundations/iconography/dont-02',
-                ),
+                media: getIllustrationComponent('theme/iconography/dont-02'),
               },
               {
                 description:
                   'When used next to text, icons should be vertically centre-aligned.',
                 kind: UsageKind.DO,
-                media: getIllustrationComponent(
-                  'foundations/iconography/do-03',
-                ),
+                media: getIllustrationComponent('theme/iconography/do-03'),
               },
               {
                 description:
                   'Avoid using icon sizes that are noticeably larger or smaller than the text they are paired with, as this can lead to the interface feeling unbalanced.',
                 kind: UsageKind.DONT,
-                media: getIllustrationComponent(
-                  'foundations/iconography/dont-03',
-                ),
+                media: getIllustrationComponent('theme/iconography/dont-03'),
               },
               {
                 description: (
@@ -364,17 +346,13 @@ export default (layoutProps: LayoutProps) => (
                   </>
                 ),
                 kind: UsageKind.DO,
-                media: getIllustrationComponent(
-                  'foundations/iconography/do-04',
-                ),
+                media: getIllustrationComponent('theme/iconography/do-04'),
               },
               {
                 description:
                   'Try to give icons a name that adequately describes what it represents.',
                 kind: UsageKind.DO,
-                media: getIllustrationComponent(
-                  'foundations/iconography/do-05',
-                ),
+                media: getIllustrationComponent('theme/iconography/do-05'),
               },
             ]}
           />

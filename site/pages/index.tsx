@@ -29,8 +29,8 @@ const cardsContent = [
       src: 'static/landing/landing-foundations.svg',
       alt: '',
     },
-    title: 'Foundations',
-    href: '/foundations/overview',
+    title: 'Theme',
+    href: '/theme/overview',
     description:
       'These standardised styles define the look and feel of UI components. e.g. colours, fonts, shadows and sizing.',
   },
@@ -50,7 +50,7 @@ const cardsContent = [
       alt: '',
     },
     title: 'Theming',
-    href: '/foundations/theming/creating-a-theme',
+    href: '/theme/theming/creating-a-theme',
     description:
       'Creating and applying themes allow you to tailor your experience to your unique brand requirements.',
   },

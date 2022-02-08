@@ -184,7 +184,7 @@ const PRINCIPLE_CARDS = [
 
 const EXAMPLE_CARDS = [
   {
-    media: () => <Illustration path="foundations/fonts/buttonnocrop" />,
+    media: () => <Illustration path="theme/fonts/buttonnocrop" />,
     title: 'Button - before Text-crop',
     description:
       'Without the ability to crop text, the button text would be misaligned when changing font family or font size.',
@@ -194,7 +194,7 @@ const EXAMPLE_CARDS = [
     },
   },
   {
-    media: () => <Illustration path="foundations/fonts/buttoncropped" />,
+    media: () => <Illustration path="theme/fonts/buttoncropped" />,
     title: 'Button - after Text-crop',
     description:
       'With text-cropping applied the button label is consistently positioned correctly when changing the font family or font size.',
@@ -204,7 +204,7 @@ const EXAMPLE_CARDS = [
     },
   },
   {
-    media: () => <Illustration path="foundations/fonts/cardnocrop" />,
+    media: () => <Illustration path="theme/fonts/cardnocrop" />,
     title: 'Card - before Text-crop',
     description:
       'Without the ability to crop text, the layout of the card is unnecessarily elongated due to the misaligned spacing around the text blocks.',
@@ -214,7 +214,7 @@ const EXAMPLE_CARDS = [
     },
   },
   {
-    media: () => <Illustration path="foundations/fonts/cardcropped" />,
+    media: () => <Illustration path="theme/fonts/cardcropped" />,
     title: 'Card - after Text-crop',
     description:
       ' With text cropping applied, the spacing in the card is aligned correctly to the text blocks and the overall size of the card is exactly as defined.',
@@ -237,7 +237,7 @@ export default (layoutProps: LayoutProps) => (
       type: 'Foundations',
       name: 'Fonts',
       hero: {
-        illustration: 'foundations/fonts/hero',
+        illustration: 'theme/fonts/hero',
       },
       introduction: `Fonts form an important part of the interface, establishing styles for content such as headlines, sub-headlines or paragraphs, as well as more functional styles for items such as labels, tags and messaging.`,
     }}
@@ -269,11 +269,11 @@ export default (layoutProps: LayoutProps) => (
               typography. Key characteristics such as font-family, font-weight,
               letter-spacing, line-height and font style are applied in a
               systematic way when creating a theme in Figma and{' '}
-              <Link href="/foundations/theming/creating-a-theme/">
+              <Link href="/theme/theming/creating-a-theme/">
                 creating a theme in code
               </Link>
               . A combination of the key characteristics are grouped to form{' '}
-              <Link href="/foundations/presets/typography-presets">
+              <Link href="/theme/presets/typography-presets">
                 typography presets
               </Link>{' '}
               that are applied to text interface elements.
@@ -281,7 +281,7 @@ export default (layoutProps: LayoutProps) => (
           }
           showSeparator
         >
-          <Illustration path="foundations/fonts/overview" />
+          <Illustration path="theme/fonts/overview" />
         </ContentPrimary>
       </ContentSection>
 
@@ -301,7 +301,7 @@ export default (layoutProps: LayoutProps) => (
               symbols in various weights. Font families are mapped to design
               tokens. Font family can be applied to any text element using the{' '}
               <InlineCode>fontFamily</InlineCode> attribute on a{' '}
-              <Link href="/foundations/presets/typography-presets">
+              <Link href="/theme/presets/typography-presets">
                 Typography Preset.
               </Link>
             </>
@@ -339,7 +339,7 @@ export default (layoutProps: LayoutProps) => (
               sizes are mapped to a scale of design tokens. Font size can be
               applied to any text element using the{' '}
               <InlineCode>fontSize</InlineCode> attribute on a{' '}
-              <Link href="/foundations/presets/typography-presets">
+              <Link href="/theme/presets/typography-presets">
                 Typography Preset.
               </Link>
             </>
@@ -359,7 +359,7 @@ export default (layoutProps: LayoutProps) => (
               weights are mapped to a scale of design tokens. Font weight can be
               applied to any text element using the{' '}
               <InlineCode>fontWeight</InlineCode> attribute on a{' '}
-              <Link href="/foundations/presets/typography-presets">
+              <Link href="/theme/presets/typography-presets">
                 Typography Preset.
               </Link>
             </>
@@ -379,7 +379,7 @@ export default (layoutProps: LayoutProps) => (
               and are mapped to a scale of design tokens. Font line-height can
               be applied to any text element using the{' '}
               <InlineCode>fontLineHeight</InlineCode> attribute on a{' '}
-              <Link href="/foundations/presets/typography-presets">
+              <Link href="/theme/presets/typography-presets">
                 Typography Preset.
               </Link>
             </>
@@ -427,7 +427,7 @@ export default (layoutProps: LayoutProps) => (
               character and are mapped to a scale of design tokens. Font
               letter-spacing can be applied to any text element using the{' '}
               <InlineCode>fontLetterSpacing</InlineCode> attribute on a{' '}
-              <Link href="/foundations/presets/typography-presets">
+              <Link href="/theme/presets/typography-presets">
                 Typography Preset.
               </Link>
             </>
@@ -445,9 +445,7 @@ export default (layoutProps: LayoutProps) => (
             <>
               The following properties can be applied to typography. These can
               be defined as part of the{' '}
-              <Link href="/foundations/presets/style-presets/">
-                Style Presets.
-              </Link>{' '}
+              <Link href="/theme/presets/style-presets/">Style Presets.</Link>{' '}
               Having these properties on Style Presets promotes greater reuse of
               tokens.
             </>
@@ -489,7 +487,7 @@ export default (layoutProps: LayoutProps) => (
             <>
               For accessibility considerations related to typography, please
               refer to the{' '}
-              <Link href="/foundations/presets/typography-presets">
+              <Link href="/theme/presets/typography-presets">
                 Typography Presets
               </Link>
               .
@@ -540,13 +538,13 @@ export default (layoutProps: LayoutProps) => (
                 title: 'Cap height',
                 description:
                   'This crops to the top of an uppercase letter in the typeface. An example would be the top of an uppercase T.',
-                media: getIllustrationComponent('foundations/fonts/cap-height'),
+                media: getIllustrationComponent('theme/fonts/cap-height'),
               },
               {
                 title: 'Baseline',
                 description:
                   'This crops to the baseline of all the lowercase letters in the typeface',
-                media: getIllustrationComponent('foundations/fonts/baseline'),
+                media: getIllustrationComponent('theme/fonts/baseline'),
               },
             ]}
           />

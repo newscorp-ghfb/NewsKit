@@ -89,9 +89,7 @@ export default (layoutProps: LayoutProps) => (
             <>
               Shadows can be applied to a UI element using the boxShadow
               attribute on a{' '}
-              <Link href="/foundations/presets/style-presets/">
-                Style Preset.
-              </Link>
+              <Link href="/theme/presets/style-presets/">Style Preset.</Link>
             </>
           }
           showSeparator
