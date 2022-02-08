@@ -8,32 +8,6 @@ export const LargeItemBody = styled.div`
   min-height: 92px;
 `;
 
-export const cardTypographyPresets: {[index: string]: string} = {
-  cardTeaserHeadlineLarge: 'editorialHeadline050',
-  cardTeaserHeadlineMedium: 'editorialHeadline030',
-  cardTeaserHeadlineSmall: 'editorialHeadline010',
-
-  cardTeaserLeadLarge: 'editorialParagraph030',
-  cardTeaserLeadMedium: 'editorialParagraph020',
-  cardTeaserLeadSmall: 'editorialParagraph010',
-
-  cardLabelLarge: 'utilityLabel020',
-  cardLabelMedium: 'utilityLabel010',
-  cardLabelSmall: 'utilityLabel010',
-
-  cardTagLarge: 'utilityLabel020',
-  cardTagMedium: 'utilityLabel010',
-  cardTagSmall: 'utilityLabel010',
-};
-
-export const cardTeaserHeadline = {
-  xs: 'space040',
-  sm: 'space040',
-  md: 'space045',
-  lg: 'space050',
-};
-export const cardTeaserLeadInset = 'space010';
-
 // 1 large item, 4 small items in a grid
 export const BlockLayout1L4S = ({
   placeholders = [],

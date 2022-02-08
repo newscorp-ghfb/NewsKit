@@ -1,3 +1,4 @@
+import {Theme} from '../theme';
 import {getResponsiveSize, handleResponsiveProp, styled} from '../utils/style';
 import {GridLayoutProps} from './types';
 
@@ -13,6 +14,12 @@ const GRID_DEFAULT_PROPS = {
   areas: undefined,
   inline: false,
 };
+
+const mapTemplate = (theme: Theme, templateString?: string) =>
+  templateString
+    ?.split(' ')
+    .map(section => theme.sizing[section] || section)
+    .join(' ');
 
 export const StyledGridLayout = styled.div<GridLayoutProps>`
   ${handleResponsiveProp({inline: GRID_DEFAULT_PROPS.inline}, ({inline}) => ({
@@ -35,14 +42,17 @@ export const StyledGridLayout = styled.div<GridLayoutProps>`
 
   ${handleResponsiveProp(
     {columns: GRID_DEFAULT_PROPS.columns},
-    ({columns}) => ({
-      gridTemplateColumns: columns,
+    ({columns}, {theme}) => ({
+      gridTemplateColumns: mapTemplate(theme, columns),
     }),
   )}
 
-  ${handleResponsiveProp({rows: GRID_DEFAULT_PROPS.rows}, ({rows}) => ({
-    gridTemplateRows: rows,
-  }))}
+  ${handleResponsiveProp(
+    {rows: GRID_DEFAULT_PROPS.rows},
+    ({rows}, {theme}) => ({
+      gridTemplateRows: mapTemplate(theme, rows),
+    }),
+  )}
 
   ${handleResponsiveProp({areas: GRID_DEFAULT_PROPS.areas}, ({areas}) => ({
     gridTemplateAreas: areas,

@@ -15,9 +15,6 @@ import {
   BlockLayout1L4S,
   BlockLayout3H,
   BlockLayout4H,
-  cardTeaserHeadline,
-  cardTeaserLeadInset,
-  cardTypographyPresets,
   LargeItemBody,
 } from '../common';
 import {StorybookHeading} from '../../../../test/storybook-comps';
@@ -112,13 +109,13 @@ const CardLarge = ({title = '', teaser = '', image = '', href = ''}) => (
       }}
     >
       <LargeItemBody>
-        <Block spaceStack={cardTeaserHeadline}>
+        <Block spaceStack="space040">
           <Headline kickerText="KICKER">{title}</Headline>
         </Block>
-        <Block spaceStack={cardTeaserLeadInset}>
+        <Block spaceStack="space010">
           <TextBlock
             stylePreset="cardTeaserLead"
-            typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+            typographyPreset="editorialParagraph010"
           >
             {teaser}
           </TextBlock>

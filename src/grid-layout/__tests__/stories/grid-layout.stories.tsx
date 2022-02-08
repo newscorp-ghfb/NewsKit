@@ -20,7 +20,8 @@ export const ResponsiveExample = () => (
   <>
     <StorybookHeading>Responsive grids</StorybookHeading>
     <GridLayout
-      columns={{md: '1fr 1fr', lg: '1fr {{sizing040}} 1fr 1fr'}}
+      columns={{md: '1fr 1fr', lg: '1fr sizing120 300px 1fr'}}
+      rows={{md: '1fr 1fr', lg: '1fr sizing120 300px 1fr'}}
       rowGap={{xs: 'space010', md: 'space040'}}
       columnGap={{md: 'space030', lg: 'space050'}}
     >
@@ -28,6 +29,18 @@ export const ResponsiveExample = () => (
       <GridBox>2</GridBox>
       <GridBox>3</GridBox>
       <GridBox>4</GridBox>
+      <GridBox>5</GridBox>
+      <GridBox>6</GridBox>
+      <GridBox>7</GridBox>
+      <GridBox>8</GridBox>
+      <GridBox>9</GridBox>
+      <GridBox>10</GridBox>
+      <GridBox>11</GridBox>
+      <GridBox>12</GridBox>
+      <GridBox>13</GridBox>
+      <GridBox>14</GridBox>
+      <GridBox>15</GridBox>
+      <GridBox>16</GridBox>
     </GridLayout>
     <br />
     <br />

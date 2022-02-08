@@ -7,7 +7,9 @@ import {areaToValidCSS, capitalize, getAreasList} from './utils';
 
 export const GridLayoutItem = styled(Block)<GridLayoutItemProps>`
   grid-area: ${props => props.area};
-  order: ${props => props.order};
+  ${handleResponsiveProp({order: undefined}, ({order}) => ({
+    order,
+  }))}
   ${handleResponsiveProp({justifySelf: undefined}, ({justifySelf}) => ({
     justifySelf,
   }))}

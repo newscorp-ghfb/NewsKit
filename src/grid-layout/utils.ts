@@ -1,4 +1,5 @@
 import {MQ} from '../utils/style';
+import {uniq} from '../utils/uniq';
 
 export const capitalize = (s: string) =>
   s.replace(/^./, firstLetter => firstLetter.toUpperCase());
@@ -10,8 +11,6 @@ export const extractAreas = (areaString: string) =>
     .replace(/  +/g, ' ')
     .trim()
     .split(' ');
-
-export const uniq = (array: string[]) => Array.from(new Set(array));
 
 export const filterInvalidAreas = (areaName: string): boolean =>
   areaName !== '.' && Boolean(areaName);
