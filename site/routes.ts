@@ -82,154 +82,172 @@ export default [
     ],
   },
   {
-    title: 'Foundations',
-    id: '/foundations',
+    title: 'Theme',
+    id: '/theme',
     subNav: [
       {
         title: 'Overview',
         page: true,
-        id: '/foundations/overview',
+        id: '/theme/overview',
       },
       {
         title: 'Borders',
         page: true,
-        id: '/foundations/borders',
+        id: '/theme/borders',
         description:
           'Borders direct attention, identify components, communicate state, and express a brand.',
-        illustration: 'foundations/hero-borders-illustration',
+        illustration: 'theme/hero-borders-illustration',
       },
       {
         title: 'Breakpoints',
         page: true,
-        id: '/foundations/breakpoints',
-        illustration: 'foundations/breakpoints/hero',
+        id: '/theme/breakpoints',
+        illustration: 'theme/breakpoints/hero',
         description:
           'Breakpoints set a visual point on a screen to alter the layout of content (responsive design), ensuring consistency across different screen widths.',
       },
       {
         title: 'Colours',
         page: true,
-        id: '/foundations/colours',
-        illustration: 'foundations/colours/hero',
+        id: '/theme/colours',
+        illustration: 'theme/colours/hero',
         description:
           'Colour is key to expressing brand and identity, but it also plays a vital role in conveying specific meaning to a user.',
       },
       {
+        title: 'Design tokens',
+        page: true,
+        id: '/theme/design-tokens',
+        illustration: 'theme/design-tokens/hero',
+        description: `Design tokens are the design decisions of the design system. They are used in place of hard-coded values to maintain a scalable and consistent system for UI.`,
+      },
+      {
         title: 'Fonts',
         page: true,
-        id: '/foundations/fonts',
-        illustration: 'foundations/fonts/hero',
+        id: '/theme/fonts',
+        illustration: 'theme/fonts/hero',
         description:
-          'Fonts form an important part of the interface, establishing styles for content such as headlines, sub-headlines or paragraphs, as well as more functional styles for items such as labels, tags and messaging.',
+          'Fonts define the font family, boldness, size, and style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
       },
       {
         title: 'Iconography',
         page: true,
-        id: '/foundations/iconography',
-        illustration: 'foundations/iconography/hero',
+        id: '/theme/iconography',
+        illustration: 'theme/iconography/hero',
         description:
           'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
       },
       {
         title: 'Motion',
         page: true,
-        id: '/foundations/motion',
-        illustration: 'foundations/motion/hero',
+        id: '/theme/motion',
+        illustration: 'theme/motion/hero',
         description:
-          'Motion is used to create movement and narrative within a product. Animated interface elements don’t just attract attention, they enhance user experience and help guide user flow',
-      },
-      {
-        title: 'Design tokens',
-        page: true,
-        id: '/foundations/design-tokens',
-        illustration: 'foundations/design-tokens/hero',
-        description: `Design tokens are the design decisions of the design system — specifically, they are named entities that store visual and functional attributes. They are used in place of hardcoded values (such as hex values for colour or pixel values for spacing) to maintain a scalable and consistent system for UI.`,
+          'Motion is used to create movement and narrative within a product. Timely animated interface elements attract attention, provide guidance and enhance user experience.',
       },
       {
         title: 'Shadows',
         page: true,
-        id: '/foundations/shadows',
+        id: '/theme/shadows',
         illustration: 'components/hero-shadows-illustration',
         description:
-          'Shadows provide visual cues about the distance between layers.',
+          'Shadows provide visual cues about the distance between layers. They add levels of depth and realism to the user’s visual experience and improve the UI visual hierarchy.',
       },
       {
         title: 'Sizing',
         page: true,
-        id: '/foundations/sizing',
+        id: '/theme/sizing',
         illustration: 'components/hero-sizing-illustration',
         description:
-          'Standardised sizing provides increased visual consistency in an interface.',
+          'A simple, standardised approach to size increases consistency and visual rhythm. Appropriate sizing is important for providing an inclusive experience.',
       },
       {
         title: 'Spacing',
         page: true,
-        id: '/foundations/spacing',
-        illustration: 'foundations/spacing/hero',
+        id: '/theme/spacing',
+        illustration: 'theme/spacing/hero',
         description:
-          'Space helps to guide the user and provide a pleasant and consistent experience when using a product.',
+          'Considered use of space can improve communication: reducing visual clutter, providing hierarchy or helping show a relationship between elements on a screen.',
       },
       // {
       //   title: 'Overlays',
       //   page: true,
-      //   id: '/foundations/overlays',
-      //   illustration: 'static/theming/foundations/overlays.svg',
+      //   id: '/theme/overlays',
+      //   illustration: 'static/theming/theme/overlays.svg',
       //   description:
       //     'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
       // },
       // {
       //   title: 'Typography',
       //   page: true,
-      //   id: '/foundations/fonts',
-      //   illustration: 'static/theming/foundations/typography.svg',
+      //   id: '/theme/fonts',
+      //   illustration: 'static/theming/theme/typography.svg',
       //   description:
       //     'Fonts define the font family, boldness, size, and the style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
       // },
       {
         title: 'Presets',
-        id: '/foundations/presets',
+        id: '/theme/presets',
         subNav: [
           {
             title: 'Style Presets',
             page: true,
-            id: '/foundations/presets/style-presets',
+            id: '/theme/presets/style-presets',
+            illustration: 'theme/style-presets/hero',
             description:
-              'A collection of foundational design tokens combined into a preset to define reusable styles for interface elements and their interactive states.',
+              'A collection of foundational design tokens combined into a preset to define reusable styles for specific interface elements and their interactive states.',
           },
+          // {
+          //   title: 'Transition Presets',
+          //   page: true,
+          //   id: '/theme/presets/transition-presets',
+          //   illustration: 'theme/transition-presets/hero',
+          //   description: 'A collection of motion styles and states combined into a preset to define reusable motion transition from one state to another for specific interface elements.'
+          // },
           {
             title: 'Typography Presets',
             page: true,
-            id: '/foundations/presets/typography-presets',
+            id: '/theme/presets/typography-presets',
+            illustration: 'components/hero-typography-illustration',
             description:
               'A collection of foundational font design tokens combined into a preset to define reusable typography styles for specific text elements.',
           },
         ],
       },
       {
-        title: 'Theming',
-        id: '/foundations/theming',
+        title: 'Creating and using themes',
+        id: '/theme/theming',
         subNav: [
           {
             title: 'Overview',
             page: true,
-            id: '/foundations/theming/overview',
+            id: '/theme/theming/overview',
             description:
               'A NewsKit theme is built up from a layer of foundations - such as colours, fonts and sizing scales.',
           },
           {
-            title: 'Creating a theme',
+            title: 'Creating a theme in code',
             page: true,
-            id: '/foundations/theming/creating-a-theme',
+            illustration: 'theme/creating-a-theme/hero',
+            description:
+              'Creating a theme enables the brand identity to be managed from a single location across multiple products.',
+            id: '/theme/theming/creating-a-theme',
           },
           {
-            title: 'Using a theme',
+            title: 'Using a theme in code',
             page: true,
-            id: '/foundations/theming/using-a-theme',
+            illustration: 'theme/using-a-theme/hero',
+            description:
+              'A guide covering how to populate and apply a brand’s theme.',
+            id: '/theme/theming/using-a-theme',
           },
           {
-            title: 'Component Defaults',
+            title: 'Component overrides & defaults',
+            illustration: 'theme/component-defaults/hero',
+            description:
+              'Each component in NewsKit has defaults that can be overridden to enhance the experience.',
             page: true,
-            id: '/foundations/theming/component-defaults',
+            id: '/theme/theming/component-defaults',
           },
         ],
       },

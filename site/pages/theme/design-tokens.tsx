@@ -55,7 +55,7 @@ export default (layoutProps: LayoutProps) => (
       type: 'Foundation',
       name: 'Design tokens',
       hero: {
-        illustration: 'foundations/design-tokens/hero',
+        illustration: 'theme/design-tokens/hero',
       },
       introduction: `Design tokens are the design decisions of the design system — specifically, they are named entities that store visual and functional attributes. They are used in place of hardcoded values (such as hex values for colour or pixel values for spacing) to maintain a scalable and consistent system for UI.`,
     }}
@@ -67,7 +67,7 @@ export default (layoutProps: LayoutProps) => (
           toc="Literal vs contextual tokens"
           headline="Literal vs contextual tokens"
         >
-          <Illustration path="foundations/design-tokens/design-tokens" />
+          <Illustration path="theme/design-tokens/design-tokens" />
         </ContentPrimary>
 
         <ContentSecondary
@@ -149,7 +149,7 @@ export default (layoutProps: LayoutProps) => (
               Design tokens are grouped into Presets when constructing
               components. This creates a simple way to customise particular
               aspects of a component.{' '}
-              <Link href="/foundations/presets/style-presets">
+              <Link href="/theme/presets/style-presets">
                 Read more about Presets
               </Link>
               .

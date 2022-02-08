@@ -187,6 +187,8 @@ Array [
   "getStylePresetFromTheme",
   "getTransitionDuration",
   "getTransitionDurationFromTheme",
+  "getTransitionPreset",
+  "getTransitionPresetFromTheme",
   "getTypographyPreset",
   "getTypographyPresetFromTheme",
   "getValueFromTheme",

@@ -151,65 +151,47 @@ const CSS_PROPS = [
   },
   {
     token: 'borderRadius',
-    acceptedValues: (
-      <Link href="/foundations/borders/">foundations borders</Link>
-    ),
+    acceptedValues: <Link href="/theme/borders/">foundations borders</Link>,
     description: 'The border radius (shape) of an element',
   },
   {
     token: 'borderWidth',
-    acceptedValues: (
-      <Link href="/foundations/borders/">foundations borders</Link>
-    ),
+    acceptedValues: <Link href="/theme/borders/">foundations borders</Link>,
     description: 'The border width of an element',
   },
   {
     token: 'backgroundColor',
-    acceptedValues: (
-      <Link href="/foundations/colours/">foundations colors</Link>
-    ),
+    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
     description: 'The background colour of an element',
   },
   {
     token: 'borderColor',
-    acceptedValues: (
-      <Link href="/foundations/colours/">foundations colors</Link>
-    ),
+    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
     description: 'The colour of a border',
   },
   {
     token: 'caretColor',
-    acceptedValues: (
-      <Link href="/foundations/colours/">foundations colors</Link>
-    ),
+    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
     description: 'The colour of a caret (cursor) in a text input',
   },
   {
     token: 'color',
-    acceptedValues: (
-      <Link href="/foundations/colours/">foundations colors</Link>
-    ),
+    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
     description: 'The colour of text. For text, use ink colours',
   },
   {
     token: 'iconColor',
-    acceptedValues: (
-      <Link href="/foundations/colours/">foundations colors</Link>
-    ),
+    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
     description: 'The colour of icons. For icons, use ink colours',
   },
   {
     token: 'placeholderColor',
-    acceptedValues: (
-      <Link href="/foundations/colours/">foundations colors</Link>
-    ),
+    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
     description: 'The colour of placeholder text',
   },
   {
     token: 'boxShadow',
-    acceptedValues: (
-      <Link href="/foundations/shadows/">foundations shadows</Link>
-    ),
+    acceptedValues: <Link href="/theme/shadows/">foundations shadows</Link>,
     description: 'The box shadow to an element',
   },
 ];
@@ -227,204 +209,204 @@ const getImage = (url: string) => (
 
 const STYLE_PRESET_STATES = [
   {
-    example: getImage('foundations/style-presets/base'),
+    example: getImage('theme/style-presets/base'),
     state: 'base',
     description:
       'The base style and behaviour (baseline CSS) of an element before it has been interacted with by a user',
   },
   {
-    example: getImage('foundations/style-presets/hover'),
+    example: getImage('theme/style-presets/hover'),
     state: 'hover',
     description:
       'The style and behaviour when a user’s cursor hovers over an interactive element. The cursor shows as a “pointer” and style of an element changes to visually communicate and provide feedback to a user that an element is interactive',
   },
   {
-    example: getImage('foundations/style-presets/focus'),
+    example: getImage('theme/style-presets/focus'),
     state: 'focus',
     description:
       'Highlights an element to a user that has received focus, by using an input method such as a keyboard or voice',
   },
   {
-    example: getImage('foundations/style-presets/active'),
+    example: getImage('theme/style-presets/active'),
     state: 'active',
     description: `When using a mouse, "activation" typically starts when a user presses down a primary mouse button. Sometimes referred to as ‘pressed’`,
   },
   {
-    example: getImage('foundations/style-presets/visited'),
+    example: getImage('theme/style-presets/visited'),
     state: 'visited',
     description:
       'Visually represents text links a user has already visited, distinguishing them from links that have not been visited',
   },
   {
-    example: getImage('foundations/style-presets/disabled'),
+    example: getImage('theme/style-presets/disabled'),
     state: 'disabled',
     description: `Communicates that an element exists, but is not available to a user in that scenario. It is used to maintain layout consistency and communicate to a user that an element may become available if another condition has been met. When a user hovers over an element in a disabled state, the cursor shows as “not-allowed”`,
   },
   {
-    example: getImage('foundations/style-presets/selected'),
+    example: getImage('theme/style-presets/selected'),
     state: 'selected',
     description: `The style of a component changes to visually communicate and provide feedback to a user that a component has been selected (e.g. in a Tab menu, "selected" would be the selected Tab)`,
   },
   {
-    example: getImage('foundations/style-presets/checked'),
+    example: getImage('theme/style-presets/checked'),
     state: 'checked',
     description: `The style of a component changes to visually communicate and provide feedback to a user that a component has been checked (e.g. a “checked” checkbox)`,
   },
   {
-    example: getImage('foundations/style-presets/invalid'),
+    example: getImage('theme/style-presets/invalid'),
     state: 'invalid',
     description:
       'Components in an invalid state change style and can display an invalid icon (e.g. when the input information in a form validates unsuccessfully)',
   },
   {
-    example: getImage('foundations/style-presets/valid'),
+    example: getImage('theme/style-presets/valid'),
     state: 'valid',
     description:
       'Components in an valid state change style and can display an valid icon (e.g. when the input information in a form validates successfully)',
   },
   {
-    example: getImage('foundations/style-presets/loading'),
+    example: getImage('theme/style-presets/loading'),
     state: 'loading',
     description: `When a component can’t be displayed because it is in a transitional "loading" state (e.g. images that haven't loaded yet)`,
   },
   {
-    example: getImage('foundations/style-presets/selected-hover'),
+    example: getImage('theme/style-presets/selected-hover'),
     state: 'selected:hover',
     description:
       'The style of a component changes to visually communicate and provide feedback to a user that a component has been selected, and in a hover state',
   },
   {
-    example: getImage('foundations/style-presets/selected-focus'),
+    example: getImage('theme/style-presets/selected-focus'),
     state: 'selected:focus',
     description:
       'The style of a component changes to visually communicate and provide feedback to a user that a component has been selected, and in a focus state',
   },
   {
-    example: getImage('foundations/style-presets/selected-disabled'),
+    example: getImage('theme/style-presets/selected-disabled'),
     state: 'selected:disabled',
     description: `Communicates that an element exists and selected, but is not available to the user in that scenario. It is used to maintain layout consistency and communicate to the user that an element may become available if another condition has been met. When the user hovers over an element in a disabled state, the cursor shows as “not-allowed”`,
   },
   {
-    example: getImage('foundations/style-presets/selected-valid'),
+    example: getImage('theme/style-presets/selected-valid'),
     state: 'selected:valid',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is valid, and in a selected state',
   },
   {
-    example: getImage('foundations/style-presets/selected-valid-focus'),
+    example: getImage('theme/style-presets/selected-valid-focus'),
     state: 'selected:valid:focus',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is valid, selected, and in a focus state',
   },
   {
-    example: getImage('foundations/style-presets/selected-invalid'),
+    example: getImage('theme/style-presets/selected-invalid'),
     state: 'selected:invalid',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid, and in a selected state',
   },
   {
-    example: getImage('foundations/style-presets/selected-invalid-focus'),
+    example: getImage('theme/style-presets/selected-invalid-focus'),
     state: 'selected:invalid:focus',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid, selected, and in a focus state',
   },
   {
-    example: getImage('foundations/style-presets/selected-valid-hover'),
+    example: getImage('theme/style-presets/selected-valid-hover'),
     state: 'selected:valid:hover',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is valid, selected, and in a hover state',
   },
   {
-    example: getImage('foundations/style-presets/selected-invalid-hover'),
+    example: getImage('theme/style-presets/selected-invalid-hover'),
     state: 'selected:invalid:hover',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid, selected, and in a hover state',
   },
   {
-    example: getImage('foundations/style-presets/checked-hover'),
+    example: getImage('theme/style-presets/checked-hover'),
     state: 'checked:hover',
     description:
       'The style of a component changes to visually communicate and provide feedback to a user that a component has been checked, and in a hover state',
   },
   {
-    example: getImage('foundations/style-presets/checked-focus'),
+    example: getImage('theme/style-presets/checked-focus'),
     state: 'checked:focus',
     description:
       'The style of a component changes to visually communicate and provide feedback to a user that a component has been checked, and in a focus state',
   },
   {
-    example: getImage('foundations/style-presets/checked-disabled'),
+    example: getImage('theme/style-presets/checked-disabled'),
     state: 'checked:disabled',
     description: `Communicates that an element exists and checked, but is not available to the user in that scenario. It is used to maintain layout consistency and communicate to the user that an element may become available if another condition has been met. When the user hovers over an element in a disabled state, the cursor shows as “not-allowed”`,
   },
   {
-    example: getImage('foundations/style-presets/checked-valid'),
+    example: getImage('theme/style-presets/checked-valid'),
     state: 'checked:valid',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is valid, and in a checked state',
   },
   {
-    example: getImage('foundations/style-presets/checked-valid-hover'),
+    example: getImage('theme/style-presets/checked-valid-hover'),
     state: 'checked:valid:hover',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is valid, checked, and in a hover state',
   },
   {
-    example: getImage('foundations/style-presets/checked-valid-focus'),
+    example: getImage('theme/style-presets/checked-valid-focus'),
     state: 'checked:valid:focus',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is valid, checked, and in a focus state',
   },
   {
-    example: getImage('foundations/style-presets/checked-invalid'),
+    example: getImage('theme/style-presets/checked-invalid'),
     state: 'checked:invalid',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid, and in a checked state',
   },
   {
-    example: getImage('foundations/style-presets/checked-invalid-hover'),
+    example: getImage('theme/style-presets/checked-invalid-hover'),
     state: 'checked:invalid:hover',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid, checked, and in a hover state',
   },
   {
-    example: getImage('foundations/style-presets/checked-invalid-focus'),
+    example: getImage('theme/style-presets/checked-invalid-focus'),
     state: 'checked:invalid:focus',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid, checked, and in a focus state',
   },
   {
-    example: getImage('foundations/style-presets/valid-hover'),
+    example: getImage('theme/style-presets/valid-hover'),
     state: 'valid:hover',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is valid, and in a hover state',
   },
   {
-    example: getImage('foundations/style-presets/valid-focus'),
+    example: getImage('theme/style-presets/valid-focus'),
     state: 'valid:focus',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is valid, and in a focus state',
   },
   {
-    example: getImage('foundations/style-presets/invalid-hover'),
+    example: getImage('theme/style-presets/invalid-hover'),
     state: 'invalid:hover',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid, and in a hover state',
   },
   {
-    example: getImage('foundations/style-presets/invalid-focus'),
+    example: getImage('theme/style-presets/invalid-focus'),
     state: 'invalid:focus',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid, and in a focus state',
   },
   {
-    example: getImage('foundations/style-presets/visited-hover'),
+    example: getImage('theme/style-presets/visited-hover'),
     state: 'visited:hover',
     description:
       'Visually represents text links a user has already visited, and in a hover state',
   },
   {
-    example: getImage('foundations/style-presets/visited-focus'),
+    example: getImage('theme/style-presets/visited-focus'),
     state: 'visited:focus',
     description:
       'Visually represents text links a user has already visited, and in a focus state',
@@ -443,7 +425,7 @@ export default (layoutProps: LayoutProps) => (
       type: 'Foundations',
       name: 'Style Presets',
       hero: {
-        illustration: 'foundations/style-presets/hero',
+        illustration: 'theme/style-presets/hero',
       },
       introduction: `A collection of foundational design tokens combined into a preset to define reusable styles for interface elements and their interactive states.`,
     }}
@@ -462,17 +444,17 @@ export default (layoutProps: LayoutProps) => (
               <br />
               <br />
               In combination with{' '}
-              <Link href="/foundations/presets/typography-presets/">
+              <Link href="/theme/presets/typography-presets/">
                 Typography Presets
               </Link>
-              , <Link href="/foundations/sizing/">Sizing</Link>, and{' '}
-              <Link href="/foundations/spacing/">Spacing</Link>, Style Presets
-              provide the visual attributes of a component.
+              , <Link href="/theme/sizing/">Sizing</Link>, and{' '}
+              <Link href="/theme/spacing/">Spacing</Link>, Style Presets provide
+              the visual attributes of a component.
             </>
           }
           showSeparator
         >
-          <Illustration path="foundations/style-presets/overview" />
+          <Illustration path="theme/style-presets/overview" />
         </ContentPrimary>
       </ContentSection>
 
@@ -529,7 +511,7 @@ export default (layoutProps: LayoutProps) => (
             <>
               Style Presets can be applied to NewsKit components in a number of
               ways,{' '}
-              <Link href="foundations/theming/using-a-theme/">
+              <Link href="theme/theming/using-a-theme/">
                 learn more about using a theme in code
               </Link>{' '}
               to better understand the trade-offs associated with each approach.
@@ -590,7 +572,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               Custom Style Presets can be added to the theme. See the{' '}
-              <Link href="/foundations/theming/creating-a-theme/">
+              <Link href="/theme/theming/creating-a-theme/">
                 Creating Themes
               </Link>{' '}
               guide for more details.
