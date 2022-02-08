@@ -137,18 +137,32 @@ export const sharedDialogTests = (
     expect(fragment).toMatchSnapshot();
   });
 
-  // test.only('toggle aria-hidden to parent elements', () => {
-  //   const Component = () => (
-  //     <>
-  //       <p>other content</p>
-  //       <Dialog open onDismiss={() => {}}>
-  //         Dialog content
-  //       </Dialog>
-  //     </>
-  //   );
+  test('toggle aria-hidden to content outside dialog', () => {
+    const Component = () => {
+      const [open, setOpen] = React.useState(true);
 
-  //   const {getByTestId, asFragment} = renderWithTheme(Component);
+      return (
+        <>
+          <p data-testid="outside-content">other content</p>
+          <Dialog open={open} onDismiss={() => setOpen(false)}>
+            Dialog content
+          </Dialog>
+        </>
+      );
+    };
 
-  //   expect(asFragment()).toMatchSnapshot();
-  // });
+    const {getByTestId, asFragment} = renderWithTheme(Component);
+
+    // outside content is hidden for screen readers when dialog is open
+    expect(getByTestId('outside-content')).toHaveAttribute(
+      'aria-hidden',
+      'true',
+    );
+    expect(asFragment()).toMatchSnapshot();
+
+    // outside content should be visible when dialog is closed
+    fireEvent.click(getByTestId('button'));
+    expect(getByTestId('outside-content')).not.toHaveAttribute('aria-hidden');
+    expect(asFragment()).toMatchSnapshot();
+  });
 };
