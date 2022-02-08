@@ -121,7 +121,7 @@ export default (layoutProps: LayoutProps) => (
           headline="Overview"
           description="NewsKit uses a simple, standard sizing scale. The size of every UI element and the space between elements is defined by a 4px rule (or pt/rem)."
         >
-          <Illustration path="foundations/sizing/overview" />
+          <Illustration path="theme/sizing/overview" />
         </ContentPrimary>
 
         <ContentSecondary
@@ -177,7 +177,7 @@ export default (layoutProps: LayoutProps) => (
           }
           showSeparator
         >
-          <Illustration path="foundations/sizing/why-4-px" />
+          <Illustration path="theme/sizing/why-4-px" />
         </ContentPrimary>
       </ContentSection>
 
@@ -201,7 +201,7 @@ export default (layoutProps: LayoutProps) => (
             </>
           }
         >
-          <Illustration path="foundations/sizing/touch-target-areas" />
+          <Illustration path="theme/sizing/touch-target-areas" />
         </ContentPrimary>
 
         <ContentSecondary showSeparator>
