@@ -111,6 +111,23 @@ const COLUMNS_ICON = {
   edge: <IconFilledEdge overrides={{size: 'iconSize040'}} />,
 };
 
+const whatNextCards = [
+  {
+    media: getIllustrationComponent('guides/engineering-quickstart/hero'),
+    title: 'Engineering Quickstart Guide',
+    description:
+      'To start engineering with NewsKit, follow the steps in the quickstart guide.',
+    href: '/getting-started/code/engineering-quickstart/',
+  },
+  {
+    media: getIllustrationComponent('guides/overview/instrumentation-setup'),
+    title: 'Instrumentation Setup',
+    description:
+      'NewsKit components are built to emit events "out of the box".',
+    href: '/getting-started/code/instrumentation/',
+  },
+];
+
 export default (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
@@ -208,7 +225,7 @@ export default (layoutProps: LayoutProps) => (
                 description: (
                   <>
                     A host of{' '}
-                    <Link href="/getting-started/code/web/">
+                    <Link href="/getting-started/code/engineering-quickstart/">
                       utility functions
                     </Link>{' '}
                     for use in third-party or custom components.
@@ -297,6 +314,21 @@ export default (layoutProps: LayoutProps) => (
           >
             <IconFilledNpm /> View npm package
           </Button>
+        </ContentPrimary>
+      </ContentSection>
+
+      <ContentSection sectionName="what’s next?">
+        <ContentPrimary
+          id="whatsnext"
+          toc="what’s next?"
+          headline="What’s next?"
+          description="Want to use NewsKit for your next product? Follow the next steps belows to learn more:"
+          showSeparator
+        >
+          <MediaList
+            cards={whatNextCards}
+            gridProps={{xsRowGutter: 'space050'}}
+          />
         </ContentPrimary>
       </ContentSection>
     </ComponentPageCell>
