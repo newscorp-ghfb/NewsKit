@@ -132,7 +132,7 @@ export const StyledSelectPanel = styled.div<{
     getResponsiveSize('maxHeight', `select.${$size}.panel`, '', 'maxHeight')};
 `;
 
-export const StyledSelectPanelBody = styled.div`
+export const StyledModalPanel = styled.div`
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 100%;

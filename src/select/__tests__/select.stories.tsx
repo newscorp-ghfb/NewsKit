@@ -658,7 +658,7 @@ export const StorySelectScreenReaderExample = () => (
 StorySelectScreenReaderExample.storyName = 'Select screen reader example';
 
 const CustomModalContainer = styled.div`
-  max-height: 250px;
+  height: 250px;
   overflow-x: auto;
 `;
 
@@ -703,8 +703,13 @@ const selectWithModalVariants = [
         modal: ({children, ...restProps}: ModalProps) => (
           <Modal {...restProps} closePosition="none">
             <CustomModalContainer>{children}</CustomModalContainer>
-            <Button onClick={restProps.onDismiss}>
-              Close dialog <IconFilledClose />
+            <Block spaceStack="space040" />
+            <Button
+              onClick={restProps.onDismiss}
+              aria-label="close"
+              overrides={{width: '100%'}}
+            >
+              Close <IconFilledClose />
             </Button>
           </Modal>
         ),

@@ -9,7 +9,7 @@ import {
   StyledOption,
   StyledOptionIcon,
   StyledSelectPanel,
-  StyledSelectPanelBody,
+  StyledModalPanel,
 } from './styled';
 import {ScreenReaderOnly} from '../screen-reader-only';
 import {useReactKeys} from '../utils/hooks';
@@ -135,6 +135,12 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
         },
       );
 
+    const screenReaderOnlyMessage = isOpen && (
+      <ScreenReaderOnly id={listDescriptionId}>
+        Press down arrow key to navigate to the first item
+      </ScreenReaderOnly>
+    );
+
     if (renderInModal && !isOpen) {
       // this is needed for downshift in order to work properly
       return <div ref={panelRef} />;
@@ -153,7 +159,8 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
 
       return (
         <ModalComponent {...(modalProps as ModalProps)}>
-          <StyledSelectPanelBody
+          {screenReaderOnlyMessage}
+          <StyledModalPanel
             data-testid="select-panel"
             aria-describedby={listDescriptionId}
             ref={panelRef}
@@ -165,20 +172,17 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
             }}
           >
             {optionsAsChildren}
-          </StyledSelectPanelBody>
+          </StyledModalPanel>
         </ModalComponent>
       );
     }
     return (
       <>
-        <ScreenReaderOnly id={listDescriptionId}>
-          Press down arrow key to navigate to the first item
-        </ScreenReaderOnly>
-
+        {screenReaderOnlyMessage}
         <StyledSelectPanel
           $isOpen={isOpen}
           data-testid="select-panel"
-          aria-describedby={listDescriptionId}
+          aria-describedby={isOpen ? listDescriptionId : undefined}
           $width={width}
           $top={(top || 0) + (height || 0)}
           $left={left}
