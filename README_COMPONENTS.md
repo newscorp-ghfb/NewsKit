@@ -22,7 +22,7 @@ NewsKit components folllow [WCAG guidelines](https://www.w3.org/WAI/standards-gu
 
 ### Adaptive
 
-NewsKit has an extensive [theming system](https://newskit.co.uk/foundations/overview/) that enables customization of style and layout. Additionally components support a range of properties to customise behaviour.
+NewsKit has an extensive [theming system](https://newskit.co.uk/theme/overview/) that enables customization of style and layout. Additionally components support a range of properties to customise behaviour.
 
 ### Productive
 
@@ -37,7 +37,7 @@ A collection high quality React [web components](https://newskit.co.uk/component
 
 ### Advanced theming system
 
-An advanced full-featured [theming system](https://newskit.co.uk/foundations/overview/) with the flexibility to meet the requirement of a single or multi-brand requirement, including both business and consumer products.
+An advanced full-featured [theming system](https://newskit.co.uk/theme/overview/) with the flexibility to meet the requirement of a single or multi-brand requirement, including both business and consumer products.
 
 ### Utility functions
 
@@ -75,7 +75,7 @@ yarn add newskit
 ## 🔨 Usage
 
 NewsKit components can be used like any typical react components. One thing to bear in mind is that they will need to be descendants of a `ThemeProvider`, this can be thought of as the theme context, this theme will be applied to all of its descendants.
-The following example shows the "Hello World!" example of using a NewsKit component. More comprehensive usage documentation can be found on our [website](https://www.newskit.co.uk/getting-started/code/web/).
+The following example shows the "Hello World!" example of using a NewsKit component. More comprehensive usage documentation can be found on our [website](https://www.newskit.co.uk/getting-started/code/engineering-quickstart/).
 
 ```typescript
 import {ThemeProvider, Tag, TagSize, newskitLightTheme} from 'newskit';
@@ -104,16 +104,16 @@ export default class App extends React.Component {
 
 ## 🐛 Bugs, Issues & Feature requests
 
-Feel free to reach out by raising issues on our [github](https://github.com/newscorp-ghfb/ncu-newskit/issues).
+Feel free to reach out by raising issues on our [github](https://github.com/newscorp-ghfb/newskit/issues).
 
 ## 🤝 Contributing
 
-See the [contributing guidelines](https://github.com/newscorp-ghfb/ncu-newskit/wiki/Contributing-Guidelines) in the wiki.
+See the [contributing guidelines](https://github.com/newscorp-ghfb/newskit/wiki/Contributing-Guidelines) in the wiki.
 
 ## 🔗 Key Links
 
 * [NewsKit Documentation](https://www.newskit.co.uk/)
 * [View NewsKit Design System npm package](https://www.npmjs.com/package/newskit)
-* [Github repository](https://github.com/newscorp-ghfb/ncu-newskit)
+* [Github repository](https://github.com/newscorp-ghfb/newskit)
 * [Medium](https://medium.com/newskit-design-system)
 * [Storybook](https://storybook.newskit.co.uk/)

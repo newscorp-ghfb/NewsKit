@@ -23,6 +23,7 @@ export const StyledHeader = styled.th<TableCellProps>`
   min-width: ${getSpacingFromTheme('space090', 'minWidth')};
   width: ${getSpacingFromTheme('', 'maxWidth')};
   white-space: nowrap;
+  padding-bottom: ${getSpacingFromTheme('space040')};
 `;
 
 export const StyledTableRow = styled.tr<{last?: boolean}>`
@@ -40,9 +41,6 @@ export const StyledDataCell = styled.td<TableCellProps>`
   white-space: ${({noWrap}) => noWrap && 'nowrap'};
   vertical-align: top;
   overflow: ${({maxWidth}) => maxWidth && 'hidden'};
-  & div {
-    overflow: ${({maxWidth}) => maxWidth && 'hidden'};
-  }
 `;
 
 export const StyledContainer = styled.div`

@@ -1486,7 +1486,14 @@ exports[`Media List renders with feature cardscards 1`] = `
   justify-content: center;
 }
 
-.emotion-45 {
+.emotion-37 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.emotion-46 {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
@@ -1655,7 +1662,11 @@ exports[`Media List renders with feature cardscards 1`] = `
                       <p
                         class="emotion-15"
                       >
-                        This is a feature card.
+                        <span
+                          class="emotion-37"
+                        >
+                          This is a feature card.
+                        </span>
                       </p>
                     </div>
                     <button
@@ -1707,7 +1718,7 @@ exports[`Media List renders with feature cardscards 1`] = `
           class="emotion-3"
         >
           <div
-            class="emotion-45"
+            class="emotion-46"
           >
             <div
               class="emotion-8"
@@ -1914,7 +1925,7 @@ exports[`Media List renders with usage cards 1`] = `
   text-decoration: none;
   width: 32px;
   height: 32px;
-  padding: 4px 8px;
+  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2320,7 +2331,7 @@ exports[`Media List renders with usage cards 1`] = `
                       <h1
                         class="nk-headline-heading emotion-36"
                       >
-                        Do not
+                        Don’t
                       </h1>
                     </section>
                   </div>

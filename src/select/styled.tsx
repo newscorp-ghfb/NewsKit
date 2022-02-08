@@ -1,5 +1,8 @@
 import {useLogicalMargins} from '../utils/logicalProperties';
+import {Theme} from '../theme';
+
 import {
+  css,
   styled,
   getTypographyPreset,
   getStylePreset,
@@ -9,26 +12,36 @@ import {
 } from '../utils/style';
 import {ButtonSelectSize} from './types';
 
-export const StyledButtonIcons = styled.div<{
-  disabled?: boolean;
-  $spaceInline: string;
-  $loading?: boolean;
-}>`
-  display: flex;
+const generateCursor = (disabled?: boolean, $loading?: boolean) => {
+  if ($loading) {
+    return 'wait';
+  }
+  if (disabled) {
+    return 'not-allowed';
+  }
 
-  ${({$spaceInline}) => getSpacingCssFromTheme('columnGap', $spaceInline)}
+  return 'pointer';
+};
 
-  cursor: ${({disabled, $loading}) => {
-    if ($loading) {
-      return 'wait';
-    }
-    if (disabled) {
-      return 'not-allowed';
-    }
+export const StyledButtonIcons = styled('div', {
+  shouldForwardProp: prop => prop !== 'disabled',
+})(
+  ({
+    disabled,
+    $spaceInline,
+    $loading,
+    ...props
+  }: {
+    disabled?: boolean;
+    $spaceInline: string;
+    $loading?: boolean;
+  } & {theme: Theme}) => css`
+    display: flex;
 
-    return 'pointer';
-  }};
-`;
+    ${getSpacingCssFromTheme('columnGap', $spaceInline)(props)};
+    cursor: ${generateCursor(disabled, $loading)};
+  `,
+);
 
 export const StyledSelectButton = styled.button<{
   $size: ButtonSelectSize;

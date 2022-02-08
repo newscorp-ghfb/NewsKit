@@ -5,8 +5,11 @@ import {BannerInternal} from './banner-internal';
 import {useTheme} from '../theme';
 import {MQ} from '../utils';
 import {getVisibleBreakpointsForLayout} from './utils';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
-export const Banner: React.FC<BannerProps> = ({
+const ThemelessBanner: React.FC<BannerProps> = ({
   layout = {
     xs: 'vertical',
     md: 'horizontal',
@@ -46,3 +49,5 @@ export const Banner: React.FC<BannerProps> = ({
     </>
   );
 };
+
+export const Banner = withOwnTheme(ThemelessBanner)({defaults, stylePresets});

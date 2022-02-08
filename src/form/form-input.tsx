@@ -18,6 +18,9 @@ import {Block} from '../block';
 import {FormInputState} from './types';
 import {SelectProps, Select} from '../select';
 import {FormInputContext} from './context';
+import {withOwnTheme} from '../utils/with-own-theme';
+import textFieldDefaults from '../text-field/defaults';
+import assistiveTextDefaults from '../assistive-text/defaults';
 
 export type FormInputProps = {
   state?: FormInputState;
@@ -28,7 +31,7 @@ export type FormInputProps = {
 
 const useFormFieldContext = () => useContext(FormInputContext);
 
-export const FormInput = ({
+const ThemelessFormInput = ({
   name,
   rules,
   state: stateProp,
@@ -66,6 +69,8 @@ export const FormInput = ({
           iconSize: validationIconSize,
         });
 
+        const isRequired = rules && rules.required !== undefined;
+
         const inputFieldContext = {
           name,
           size: size || passedInputFieldContext.size || defaultSize,
@@ -78,6 +83,7 @@ export const FormInput = ({
           assistiveTextId,
           labelId,
           statusIcon,
+          isRequired,
         };
 
         return (
@@ -87,16 +93,6 @@ export const FormInput = ({
         );
       }}
     </FormEntry>
-  );
-};
-
-export const FormInputLabel = ({children, ...props}: LabelProps) => {
-  const {size, state, id, labelId} = useFormFieldContext();
-
-  return (
-    <Label id={labelId} size={size} state={state} htmlFor={id} {...props}>
-      {children}
-    </Label>
   );
 };
 
@@ -114,6 +110,7 @@ export const FormInputTextField = React.forwardRef<
     id,
     assistiveTextId,
     statusIcon,
+    isRequired,
   } = useFormFieldContext();
 
   function getEndEnhancer() {
@@ -132,6 +129,8 @@ export const FormInputTextField = React.forwardRef<
 
   return (
     <TextField
+      aria-required={isRequired ? 'true' : undefined}
+      aria-invalid={state === 'invalid' ? 'true' : 'false'}
       name={name}
       state={state}
       size={size}
@@ -145,6 +144,23 @@ export const FormInputTextField = React.forwardRef<
     />
   );
 });
+
+export const FormInput = withOwnTheme(ThemelessFormInput)({
+  defaults: {
+    ...textFieldDefaults,
+    ...assistiveTextDefaults,
+  },
+});
+
+export const FormInputLabel = ({children, ...props}: LabelProps) => {
+  const {size, state, id, labelId} = useFormFieldContext();
+
+  return (
+    <Label id={labelId} size={size} state={state} htmlFor={id} {...props}>
+      {children}
+    </Label>
+  );
+};
 
 export const FormInputSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   ({children, onChange, onBlur, ...props}, inputRef) => {

@@ -28,6 +28,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   vertical-align: top;
   min-width: 64px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-3 {
@@ -46,6 +47,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   vertical-align: top;
   width: 100px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-4 {
@@ -74,10 +76,6 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   overflow: hidden;
 }
 
-.emotion-6 div {
-  overflow: hidden;
-}
-
 .emotion-7 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -96,7 +94,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   text-decoration: none;
   width: 24px;
   height: 24px;
-  padding: 4px 8px;
+  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -312,6 +310,7 @@ exports[`Table renders links correctly 1`] = `
   vertical-align: top;
   min-width: 100px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-3 {
@@ -507,6 +506,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   vertical-align: top;
   width: 100px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-4 {
@@ -525,6 +525,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   vertical-align: top;
   min-width: 100px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-5 {
@@ -544,10 +545,6 @@ exports[`Table renders number values automatically if undefined 1`] = `
   max-width: 100px;
   text-align: left;
   vertical-align: top;
-  overflow: hidden;
-}
-
-.emotion-6 div {
   overflow: hidden;
 }
 
@@ -884,6 +881,7 @@ exports[`Table renders with default styles 1`] = `
   vertical-align: top;
   min-width: 64px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-4 {
@@ -1000,6 +998,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   vertical-align: top;
   min-width: 64px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-3 {
@@ -1018,6 +1017,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   vertical-align: top;
   min-width: 100px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-5 {
@@ -1320,6 +1320,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   vertical-align: top;
   min-width: 64px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-3 {
@@ -1338,6 +1339,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   vertical-align: top;
   min-width: 100px;
   white-space: nowrap;
+  padding-bottom: 16px;
 }
 
 .emotion-5 {

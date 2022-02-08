@@ -29,8 +29,8 @@ const cardsContent = [
       src: 'static/landing/landing-foundations.svg',
       alt: '',
     },
-    title: 'Foundations',
-    href: '/foundations/overview',
+    title: 'Theme',
+    href: '/theme/overview',
     description:
       'These standardised styles define the look and feel of UI components. e.g. colours, fonts, shadows and sizing.',
   },
@@ -50,7 +50,7 @@ const cardsContent = [
       alt: '',
     },
     title: 'Theming',
-    href: '/foundations/theming/creating-a-theme',
+    href: '/theme/theming/creating-a-theme',
     description:
       'Creating and applying themes allow you to tailor your experience to your unique brand requirements.',
   },
@@ -261,6 +261,16 @@ export default (layoutProps: LayoutProps) => {
             title="We’re hiring"
             actions={bannerActions}
             onClose={bannerOnClose}
+            overrides={{
+              cell: {
+                props: {
+                  xs: 12,
+                  md: 11,
+                  mdOffset: 1,
+                  xl: 10,
+                },
+              },
+            }}
           >
             Looking for your next role? We have a range of product development
             opportunities.
@@ -269,7 +279,7 @@ export default (layoutProps: LayoutProps) => {
       )}
 
       <DotsContainer>
-        <Header xsColumnGutter="space000" xsRowGutter="space000">
+        <Header>
           <HeroTextContainer {...heroTextCellProps}>
             <Stack
               flow="vertical-left"
@@ -351,9 +361,12 @@ export default (layoutProps: LayoutProps) => {
                     Design
                   </Button>
                 </LinkNext>
-                <LinkNext href="/getting-started/code/web" passHref>
+                <LinkNext
+                  href="/getting-started/code/engineering-quickstart"
+                  passHref
+                >
                   <Button
-                    href="/getting-started/code/web"
+                    href="/getting-started/code/engineering-quickstart"
                     overrides={{
                       stylePreset: 'buttonOutlinedPrimary',
                       width: 'sizing110',
@@ -372,9 +385,10 @@ export default (layoutProps: LayoutProps) => {
         <Explore xsRowGutter="space000">
           <SectionIntroduction
             title="Explore"
-            cellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
+            cellProps={{xs: 12, xl: 10, xlOffset: 1}}
           />
-          <Cell xs={12} md={12} mdOffset={0} lg={12} xl={10} xlOffset={1}>
+
+          <Cell xs={12} xl={10} xlOffset={1}>
             <MediaList
               layout="3-span"
               cards={cardsContent}
@@ -387,7 +401,7 @@ export default (layoutProps: LayoutProps) => {
         <Grid xsRowGutter="space000">
           <SectionIntroduction
             title="Find out more"
-            cellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
+            cellProps={{xs: 12, xl: 10, xlOffset: 1}}
           />
         </Grid>
         <Grid xsRowGutter="space040" mdRowGutter="space050">

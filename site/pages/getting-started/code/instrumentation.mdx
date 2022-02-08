@@ -13,7 +13,7 @@ NewsKit components are built to emit events "out of the box" via the provided Ne
 
 As well as the above handlers, NewsKit also provided a middleware composition system to allow for operations on events before they reach a handler. For example, if you wanted to filter events to forward only a specific set to a tag manager, perform some event data transformations, or batch the events reaching a handler.
 
-For more information, users with the relevant access can read the internal RFC which lead to this implementation. This can be found on [GitHub](https://github.com/newsuk/nuk-rfcs/blob/master/active/0037-user-interface-event-instrumentation.md).
+For more information, users with the relevant access can read the internal RFC which lead to this implementation. This can be found on [GitHub](https://github.com/newsuk/nuk-rfcs/blob/main/active/0037-user-interface-event-instrumentation.md).
 
 ## Setup
 
@@ -26,7 +26,7 @@ This function will return an object containing the context passed to it and the 
 
 ## InstrumentationProvider
 
-Similar to the way you may use the [ThemeProvider](/foundations/theming/using-a-theme) to set the components theme, NewsKit provides a React context component called `InstrumentationProvider` to wrap the React DOM of your project and provide the required event instrumentation down to NewsKit components. The props required for this component match the object output from the `createEventInstrumentation` function and as a result, the object can simply be destructured into the props of the provider.
+Similar to the way you may use the [ThemeProvider](/theme/theming/using-a-theme) to set the components theme, NewsKit provides a React context component called `InstrumentationProvider` to wrap the React DOM of your project and provide the required event instrumentation down to NewsKit components. The props required for this component match the object output from the `createEventInstrumentation` function and as a result, the object can simply be destructured into the props of the provider.
 
 <CodeFromFile path="examples/instrumentation/instrumentation-provider.tsx" />
 
