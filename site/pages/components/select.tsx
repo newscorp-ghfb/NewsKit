@@ -1,5 +1,5 @@
 import React from 'react';
-import {LinkInline, InlineMessage} from 'newskit';
+import {LinkInline, InlineMessage, Block} from 'newskit';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
@@ -291,6 +291,7 @@ export default (layoutProps: LayoutProps) => (
           The Select component is compromised of four key elements, these have a
           range of props that can be used to define an appropriate experience
           for different use cases.
+          <Block spaceStack="space080" />
           <InlineMessage>
             There are two components exported from the package, one for use
             within the NewsKit Form component, and one for use as a controlled
