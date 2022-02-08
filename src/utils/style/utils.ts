@@ -6,6 +6,7 @@ import {
 } from '../../theme/types';
 import {deepMerge} from '../deep-merge';
 import {recurseUnknown} from '../../theme/compiler/index';
+import {errorLogger} from './error-logger';
 
 export const endsWith = (value: string, checks: string[]): boolean =>
   checks.some(c => value.endsWith(c));
@@ -239,11 +240,6 @@ export const unifyTransition = (
     theme.transitionPresets[tokenName];
 
   if (!baseTransitionPreset) return undefined;
-
-  // Compile overrides
-  // eslint-disable-next-line no-console
-  const errorLogger = console.error.bind(console);
-  // const res = parseAndGet(theme, overrides, errorLogger) as string;
 
   const compiledThemeResults = recurseUnknown(
     theme as UncompiledTheme,
