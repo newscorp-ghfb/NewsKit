@@ -37,13 +37,13 @@ const codeCards = [
       'Everything you need to know about using NewsKit’s library of React web components.',
     href: '/getting-started/code/engineering-overview',
   },
-  // {
-  //   media: getIllustrationComponent('guides/overview/engineering-quickstart'),
-  //   title: 'Engineering Quickstart Guide',
-  //   description:
-  //     'Guides on how to get started building a web application with NewsKit.',
-  //   href: '/getting-started/code/engineering-quickstart',
-  // },
+  {
+    media: getIllustrationComponent('guides/engineering-quickstart/hero'),
+    title: 'Engineering Quickstart Guide',
+    description:
+      'Guides on how to get started building a web application with NewsKit.',
+    href: '/getting-started/code/engineering-quickstart/',
+  },
   {
     media: getIllustrationComponent('guides/overview/instrumentation-setup'),
     title: 'Instrumentation Setup',
