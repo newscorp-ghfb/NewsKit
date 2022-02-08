@@ -136,4 +136,19 @@ export const sharedDialogTests = (
     });
     expect(fragment).toMatchSnapshot();
   });
+
+  // test.only('toggle aria-hidden to parent elements', () => {
+  //   const Component = () => (
+  //     <>
+  //       <p>other content</p>
+  //       <Dialog open onDismiss={() => {}}>
+  //         Dialog content
+  //       </Dialog>
+  //     </>
+  //   );
+
+  //   const {getByTestId, asFragment} = renderWithTheme(Component);
+
+  //   expect(asFragment()).toMatchSnapshot();
+  // });
 };

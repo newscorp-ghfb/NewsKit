@@ -3354,7 +3354,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   display: flex;
 }
 
-.emotion-20 {
+.emotion-19 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -3374,7 +3374,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   max-height: 272px;
 }
 
-.emotion-23 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3387,7 +3387,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-24 {
+.emotion-23 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -3401,11 +3401,11 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   margin-right: 12px;
 }
 
-.emotion-24 * {
+.emotion-23 * {
   box-sizing: border-box;
 }
 
-.emotion-25 {
+.emotion-24 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3419,11 +3419,11 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-25:focus:not(:disabled) {
+.emotion-24:focus:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-26 {
+.emotion-25 {
   position: absolute;
   top: 0;
   left: 0;
@@ -3448,120 +3448,120 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   border-style: solid;
 }
 
-.emotion-26 svg {
+.emotion-25 svg {
   fill: #FFFFFF;
 }
 
-.emotion-26:hover:not(:disabled) {
+.emotion-25:hover:not(:disabled) {
   border-color: #3358CC;
 }
 
-.emotion-26:focus:not(:disabled) {
+.emotion-25:focus:not(:disabled) {
   border-color: #2B4AAB;
 }
 
-.emotion-26:focus:hover:not(:disabled) {
+.emotion-25:focus:hover:not(:disabled) {
   border-color: #2B4AAB;
 }
 
-.emotion-26:checked:not(:disabled) {
+.emotion-25:checked:not(:disabled) {
   background-color: #3358CC;
   border-color: #3358CC;
 }
 
-.emotion-26:checked:hover:not(:disabled) {
+.emotion-25:checked:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-26:checked:focus:not(:disabled) {
+.emotion-25:checked:focus:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-26:checked:focus:hover:not(:disabled) {
+.emotion-25:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-26:invalid:focus:not(:disabled) {
+.emotion-25:invalid:focus:not(:disabled) {
   border-color: #A60100;
 }
 
-.emotion-26:invalid:hover:not(:disabled) {
+.emotion-25:invalid:hover:not(:disabled) {
   border-color: #A60100;
 }
 
-.emotion-26:invalid:focus:hover:not(:disabled) {
+.emotion-25:invalid:focus:hover:not(:disabled) {
   border-color: #A60100;
 }
 
-.emotion-26:checked:invalid:not(:disabled) {
+.emotion-25:checked:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-26:checked:invalid:focus:not(:disabled) {
+.emotion-25:checked:invalid:focus:not(:disabled) {
   background-color: #A60100;
   border-color: #A60100;
 }
 
-.emotion-26:checked:invalid:hover:not(:disabled) {
+.emotion-25:checked:invalid:hover:not(:disabled) {
   background-color: #A60100;
   border-color: #A60100;
 }
 
-.emotion-26:checked:invalid:focus:hover:not(:disabled) {
+.emotion-25:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
   border-color: #A60100;
 }
 
-.emotion-26:valid:focus:not(:disabled) {
+.emotion-25:valid:focus:not(:disabled) {
   border-color: #0A782A;
 }
 
-.emotion-26:valid:hover:not(:disabled) {
+.emotion-25:valid:hover:not(:disabled) {
   border-color: #0A782A;
 }
 
-.emotion-26:valid:focus:hover:not(:disabled) {
+.emotion-25:valid:focus:hover:not(:disabled) {
   border-color: #0A782A;
 }
 
-.emotion-26:checked:valid:not(:disabled) {
+.emotion-25:checked:valid:not(:disabled) {
   background-color: #148F39;
   border-color: #148F39;
 }
 
-.emotion-26:checked:valid:focus:not(:disabled) {
+.emotion-25:checked:valid:focus:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-26:checked:valid:hover:not(:disabled) {
+.emotion-25:checked:valid:hover:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-26:checked:valid:focus:hover:not(:disabled) {
+.emotion-25:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-26:disabled {
+.emotion-25:disabled {
   border-color: #F4F4F4;
 }
 
-.emotion-26:checked:disabled:not(:disabled) {
+.emotion-25:checked:disabled:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-26:checked:disabled:not(:disabled) svg {
+.emotion-25:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-27 {
+.emotion-26 {
   position: absolute;
   top: 0;
   left: 0;
@@ -3572,7 +3572,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   cursor: inherit;
 }
 
-.emotion-28 {
+.emotion-27 {
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -3581,7 +3581,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-28:disabled {
+.emotion-27:disabled {
   color: #C0C0C0;
 }
 
@@ -3732,16 +3732,9 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
         </div>
       </div>
     </div>
-    <span
-      class="emotion-10"
-      id="mock-nk-1"
-    >
-      Press down arrow key to navigate to the first item
-    </span>
     <div
-      aria-describedby="mock-nk-1"
       aria-labelledby="downshift-2-label"
-      class="emotion-20"
+      class="emotion-19"
       data-testid="select-panel"
       id="downshift-2-menu"
       role="listbox"
@@ -3758,22 +3751,22 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
       </p>
     </div>
     <label
-      class="emotion-23"
+      class="emotion-22"
     >
       <div
-        class="emotion-24"
+        class="emotion-23"
         role="presentation"
       >
         <div
-          class="emotion-25"
+          class="emotion-24"
           data-testid="checkbox-feedback"
         />
         <div
-          class="emotion-26"
+          class="emotion-25"
         >
           <input
             aria-describedby="email-assistive-text"
-            class="emotion-27"
+            class="emotion-26"
             id="email"
             name="email"
             type="checkbox"
@@ -3782,7 +3775,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
         </div>
       </div>
       <span
-        class="emotion-28"
+        class="emotion-27"
       >
         Checkbox
       </span>
@@ -4090,7 +4083,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   display: flex;
 }
 
-.emotion-20 {
+.emotion-19 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -4110,7 +4103,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   max-height: 272px;
 }
 
-.emotion-23 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4123,7 +4116,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-24 {
+.emotion-23 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -4137,11 +4130,11 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   margin-right: 12px;
 }
 
-.emotion-24 * {
+.emotion-23 * {
   box-sizing: border-box;
 }
 
-.emotion-25 {
+.emotion-24 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4155,11 +4148,11 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-25:focus:not(:disabled) {
+.emotion-24:focus:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-26 {
+.emotion-25 {
   position: absolute;
   top: 0;
   left: 0;
@@ -4184,120 +4177,120 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   border-style: solid;
 }
 
-.emotion-26 svg {
+.emotion-25 svg {
   fill: #FFFFFF;
 }
 
-.emotion-26:hover:not(:disabled) {
+.emotion-25:hover:not(:disabled) {
   border-color: #3358CC;
 }
 
-.emotion-26:focus:not(:disabled) {
+.emotion-25:focus:not(:disabled) {
   border-color: #2B4AAB;
 }
 
-.emotion-26:focus:hover:not(:disabled) {
+.emotion-25:focus:hover:not(:disabled) {
   border-color: #2B4AAB;
 }
 
-.emotion-26:checked:not(:disabled) {
+.emotion-25:checked:not(:disabled) {
   background-color: #3358CC;
   border-color: #3358CC;
 }
 
-.emotion-26:checked:hover:not(:disabled) {
+.emotion-25:checked:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-26:checked:focus:not(:disabled) {
+.emotion-25:checked:focus:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-26:checked:focus:hover:not(:disabled) {
+.emotion-25:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-26:invalid:focus:not(:disabled) {
+.emotion-25:invalid:focus:not(:disabled) {
   border-color: #A60100;
 }
 
-.emotion-26:invalid:hover:not(:disabled) {
+.emotion-25:invalid:hover:not(:disabled) {
   border-color: #A60100;
 }
 
-.emotion-26:invalid:focus:hover:not(:disabled) {
+.emotion-25:invalid:focus:hover:not(:disabled) {
   border-color: #A60100;
 }
 
-.emotion-26:checked:invalid:not(:disabled) {
+.emotion-25:checked:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-26:checked:invalid:focus:not(:disabled) {
+.emotion-25:checked:invalid:focus:not(:disabled) {
   background-color: #A60100;
   border-color: #A60100;
 }
 
-.emotion-26:checked:invalid:hover:not(:disabled) {
+.emotion-25:checked:invalid:hover:not(:disabled) {
   background-color: #A60100;
   border-color: #A60100;
 }
 
-.emotion-26:checked:invalid:focus:hover:not(:disabled) {
+.emotion-25:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
   border-color: #A60100;
 }
 
-.emotion-26:valid:focus:not(:disabled) {
+.emotion-25:valid:focus:not(:disabled) {
   border-color: #0A782A;
 }
 
-.emotion-26:valid:hover:not(:disabled) {
+.emotion-25:valid:hover:not(:disabled) {
   border-color: #0A782A;
 }
 
-.emotion-26:valid:focus:hover:not(:disabled) {
+.emotion-25:valid:focus:hover:not(:disabled) {
   border-color: #0A782A;
 }
 
-.emotion-26:checked:valid:not(:disabled) {
+.emotion-25:checked:valid:not(:disabled) {
   background-color: #148F39;
   border-color: #148F39;
 }
 
-.emotion-26:checked:valid:focus:not(:disabled) {
+.emotion-25:checked:valid:focus:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-26:checked:valid:hover:not(:disabled) {
+.emotion-25:checked:valid:hover:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-26:checked:valid:focus:hover:not(:disabled) {
+.emotion-25:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-26:disabled {
+.emotion-25:disabled {
   border-color: #F4F4F4;
 }
 
-.emotion-26:checked:disabled:not(:disabled) {
+.emotion-25:checked:disabled:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-26:checked:disabled:not(:disabled) svg {
+.emotion-25:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-27 {
+.emotion-26 {
   position: absolute;
   top: 0;
   left: 0;
@@ -4308,7 +4301,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   cursor: inherit;
 }
 
-.emotion-28 {
+.emotion-27 {
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -4317,7 +4310,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-28:disabled {
+.emotion-27:disabled {
   color: #C0C0C0;
 }
 
@@ -4468,16 +4461,9 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
         </div>
       </div>
     </div>
-    <span
-      class="emotion-10"
-      id="mock-nk-1"
-    >
-      Press down arrow key to navigate to the first item
-    </span>
     <div
-      aria-describedby="mock-nk-1"
       aria-labelledby="downshift-6-label"
-      class="emotion-20"
+      class="emotion-19"
       data-testid="select-panel"
       id="downshift-6-menu"
       role="listbox"
@@ -4494,22 +4480,22 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
       </p>
     </div>
     <label
-      class="emotion-23"
+      class="emotion-22"
     >
       <div
-        class="emotion-24"
+        class="emotion-23"
         role="presentation"
       >
         <div
-          class="emotion-25"
+          class="emotion-24"
           data-testid="checkbox-feedback"
         />
         <div
-          class="emotion-26"
+          class="emotion-25"
         >
           <input
             aria-describedby="email-assistive-text"
-            class="emotion-27"
+            class="emotion-26"
             id="email"
             name="email"
             type="checkbox"
@@ -4518,7 +4504,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
         </div>
       </div>
       <span
-        class="emotion-28"
+        class="emotion-27"
       >
         Checkbox
       </span>
@@ -5096,24 +5082,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
     </div>
   </div>
   .emotion-0 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -5134,7 +5102,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 <div
-    aria-describedby="mock-nk-1"
     aria-labelledby="downshift-0-label"
     class="emotion-0"
     data-testid="select-panel"

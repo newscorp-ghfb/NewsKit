@@ -395,12 +395,24 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-5 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-6 {
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 100%;
 }
 
-.emotion-6 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -434,53 +446,53 @@ exports[`Select in Modal render Select 1`] = `
   min-height: 48px;
 }
 
-.emotion-6 * {
+.emotion-7 * {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-6:focus:not(:disabled) {
+.emotion-7:focus:not(:disabled) {
   background-color: #FAFAFA;
   border-color: #3358CC;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-6:disabled {
+.emotion-7:disabled {
   color: #C0C0C0;
 }
 
-.emotion-6:selected:hover:not(:disabled) {
+.emotion-7:selected:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #0A0A0A;
 }
 
-.emotion-6:selected:focus:not(:disabled) {
+.emotion-7:selected:focus:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #3358CC;
 }
 
-.emotion-6:selected:active:not(:disabled) {
+.emotion-7:selected:active:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-6:selected:focus:active:not(:disabled) {
+.emotion-7:selected:focus:active:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-6:selected:focus:hover:not(:disabled) {
+.emotion-7:selected:focus:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #0A0A0A;
 }
 
-.emotion-8 {
+.emotion-9 {
   grid-area: close;
   box-sizing: border-box;
   -webkit-align-self: center;
@@ -490,7 +502,7 @@ exports[`Select in Modal render Select 1`] = `
   padding-left: 0;
 }
 
-.emotion-9 {
+.emotion-10 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -526,33 +538,33 @@ exports[`Select in Modal render Select 1`] = `
   cursor: pointer;
 }
 
-.emotion-9 svg {
+.emotion-10 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-9 svg {
+.emotion-10 svg {
   fill: #2E2E2E;
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-9:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #F4F4F4;
 }
 
-.emotion-9:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-9:disabled svg {
+.emotion-10:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-10 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -573,7 +585,7 @@ exports[`Select in Modal render Select 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -582,7 +594,7 @@ exports[`Select in Modal render Select 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-12 {
+.emotion-13 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -625,10 +637,16 @@ exports[`Select in Modal render Select 1`] = `
             class="emotion-4"
             data-testid="dialog-content"
           >
+            <span
+              class="emotion-5"
+              id="mock-nk-1"
+            >
+              Press down arrow key to navigate to the first item
+            </span>
             <div
               aria-describedby="mock-nk-1"
               aria-labelledby="downshift-43-label"
-              class="emotion-5"
+              class="emotion-6"
               data-testid="select-panel"
               id="downshift-43-menu"
               role="listbox"
@@ -636,7 +654,7 @@ exports[`Select in Modal render Select 1`] = `
             >
               <div
                 aria-selected="false"
-                class="emotion-6"
+                class="emotion-7"
                 id="downshift-43-item-0"
                 role="option"
                 value="option 1"
@@ -647,7 +665,7 @@ exports[`Select in Modal render Select 1`] = `
               </div>
               <div
                 aria-selected="false"
-                class="emotion-6"
+                class="emotion-7"
                 id="downshift-43-item-1"
                 role="option"
                 value="option 2"
@@ -659,23 +677,23 @@ exports[`Select in Modal render Select 1`] = `
             </div>
           </div>
           <div
-            class="emotion-8"
+            class="emotion-9"
           >
             <button
               aria-label="close"
-              class="emotion-9"
+              class="emotion-10"
               data-testid="button"
               type="button"
             >
               <div
-                class="emotion-10"
+                class="emotion-11"
               >
                 <div
-                  class="emotion-11"
+                  class="emotion-12"
                 >
                   <svg
                     aria-hidden="true"
-                    class="emotion-12 emotion-13"
+                    class="emotion-13 emotion-14"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1116,12 +1134,24 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-6 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-7 {
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 100%;
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1155,48 +1185,48 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   min-height: 48px;
 }
 
-.emotion-7 * {
+.emotion-8 * {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.emotion-7:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-7:focus:not(:disabled) {
+.emotion-8:focus:not(:disabled) {
   background-color: #FAFAFA;
   border-color: #3358CC;
 }
 
-.emotion-7:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-7:disabled {
+.emotion-8:disabled {
   color: #C0C0C0;
 }
 
-.emotion-7:selected:hover:not(:disabled) {
+.emotion-8:selected:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #0A0A0A;
 }
 
-.emotion-7:selected:focus:not(:disabled) {
+.emotion-8:selected:focus:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #3358CC;
 }
 
-.emotion-7:selected:active:not(:disabled) {
+.emotion-8:selected:active:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-7:selected:focus:active:not(:disabled) {
+.emotion-8:selected:focus:active:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-7:selected:focus:hover:not(:disabled) {
+.emotion-8:selected:focus:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #0A0A0A;
 }
@@ -1240,10 +1270,16 @@ exports[`Select in Modal render Select with overrides props 1`] = `
             class="emotion-5"
             data-testid="dialog-content"
           >
+            <span
+              class="emotion-6"
+              id="mock-nk-1"
+            >
+              Press down arrow key to navigate to the first item
+            </span>
             <div
               aria-describedby="mock-nk-1"
               aria-labelledby="downshift-46-label"
-              class="emotion-6"
+              class="emotion-7"
               data-testid="select-panel"
               id="downshift-46-menu"
               role="listbox"
@@ -1251,7 +1287,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
             >
               <div
                 aria-selected="false"
-                class="emotion-7"
+                class="emotion-8"
                 id="downshift-46-item-0"
                 role="option"
                 value="option 1"
@@ -1262,7 +1298,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
               </div>
               <div
                 aria-selected="false"
-                class="emotion-7"
+                class="emotion-8"
                 id="downshift-46-item-1"
                 role="option"
                 value="option 2"
@@ -1670,12 +1706,24 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-5 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-6 {
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 100%;
 }
 
-.emotion-6 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1709,53 +1757,53 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   min-height: 48px;
 }
 
-.emotion-6 * {
+.emotion-7 * {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-6:focus:not(:disabled) {
+.emotion-7:focus:not(:disabled) {
   background-color: #FAFAFA;
   border-color: #3358CC;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-6:disabled {
+.emotion-7:disabled {
   color: #C0C0C0;
 }
 
-.emotion-6:selected:hover:not(:disabled) {
+.emotion-7:selected:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #0A0A0A;
 }
 
-.emotion-6:selected:focus:not(:disabled) {
+.emotion-7:selected:focus:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #3358CC;
 }
 
-.emotion-6:selected:active:not(:disabled) {
+.emotion-7:selected:active:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-6:selected:focus:active:not(:disabled) {
+.emotion-7:selected:focus:active:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-6:selected:focus:hover:not(:disabled) {
+.emotion-7:selected:focus:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #0A0A0A;
 }
 
-.emotion-8 {
+.emotion-9 {
   grid-area: close;
   box-sizing: border-box;
   -webkit-align-self: center;
@@ -1765,7 +1813,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   padding-left: 0;
 }
 
-.emotion-9 {
+.emotion-10 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1801,33 +1849,33 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   cursor: pointer;
 }
 
-.emotion-9 svg {
+.emotion-10 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-9 svg {
+.emotion-10 svg {
   fill: #2E2E2E;
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-9:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #F4F4F4;
 }
 
-.emotion-9:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-9:disabled svg {
+.emotion-10:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-10 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1848,7 +1896,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1857,7 +1905,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-12 {
+.emotion-13 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1900,10 +1948,16 @@ exports[`Select in Modal render Select with overrides style 1`] = `
             class="emotion-4"
             data-testid="dialog-content"
           >
+            <span
+              class="emotion-5"
+              id="mock-nk-1"
+            >
+              Press down arrow key to navigate to the first item
+            </span>
             <div
               aria-describedby="mock-nk-1"
               aria-labelledby="downshift-49-label"
-              class="emotion-5"
+              class="emotion-6"
               data-testid="select-panel"
               id="downshift-49-menu"
               role="listbox"
@@ -1911,7 +1965,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
             >
               <div
                 aria-selected="false"
-                class="emotion-6"
+                class="emotion-7"
                 id="downshift-49-item-0"
                 role="option"
                 value="option 1"
@@ -1922,7 +1976,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
               </div>
               <div
                 aria-selected="false"
-                class="emotion-6"
+                class="emotion-7"
                 id="downshift-49-item-1"
                 role="option"
                 value="option 2"
@@ -1934,23 +1988,23 @@ exports[`Select in Modal render Select with overrides style 1`] = `
             </div>
           </div>
           <div
-            class="emotion-8"
+            class="emotion-9"
           >
             <button
               aria-label="close"
-              class="emotion-9"
+              class="emotion-10"
               data-testid="button"
               type="button"
             >
               <div
-                class="emotion-10"
+                class="emotion-11"
               >
                 <div
-                  class="emotion-11"
+                  class="emotion-12"
                 >
                   <svg
                     aria-hidden="true"
-                    class="emotion-12 emotion-13"
+                    class="emotion-13 emotion-14"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -2189,24 +2243,6 @@ exports[`Select renders Select with overrides 1`] = `
     </div>
   </div>
   .emotion-0 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -2227,7 +2263,6 @@ exports[`Select renders Select with overrides 1`] = `
 }
 
 <div
-    aria-describedby="mock-nk-1"
     aria-labelledby="downshift-40-label"
     class="emotion-0"
     data-testid="select-panel"
@@ -2495,24 +2530,6 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
     </div>
   </div>
   .emotion-0 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -2533,7 +2550,6 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 <div
-    aria-describedby="mock-nk-1"
     aria-labelledby="downshift-0-label"
     class="emotion-0"
     data-testid="select-panel"
@@ -2793,24 +2809,6 @@ exports[`Select renders disabled select 1`] = `
     </div>
   </div>
   .emotion-0 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -2831,7 +2829,6 @@ exports[`Select renders disabled select 1`] = `
 }
 
 <div
-    aria-describedby="mock-nk-1"
     aria-labelledby="downshift-14-label"
     class="emotion-0"
     data-testid="select-panel"
@@ -3065,24 +3062,6 @@ exports[`Select renders large Select 1`] = `
     </div>
   </div>
   .emotion-0 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -3103,7 +3082,6 @@ exports[`Select renders large Select 1`] = `
 }
 
 <div
-    aria-describedby="mock-nk-1"
     aria-labelledby="downshift-3-label"
     class="emotion-0"
     data-testid="select-panel"
@@ -3332,24 +3310,6 @@ exports[`Select renders loading select 1`] = `
     </div>
   </div>
   .emotion-0 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -3370,7 +3330,6 @@ exports[`Select renders loading select 1`] = `
 }
 
 <div
-    aria-describedby="mock-nk-1"
     aria-labelledby="downshift-17-label"
     class="emotion-0"
     data-testid="select-panel"
@@ -3604,24 +3563,6 @@ exports[`Select renders medium Select 1`] = `
     </div>
   </div>
   .emotion-0 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -3642,7 +3583,6 @@ exports[`Select renders medium Select 1`] = `
 }
 
 <div
-    aria-describedby="mock-nk-1"
     aria-labelledby="downshift-2-label"
     class="emotion-0"
     data-testid="select-panel"
@@ -3910,24 +3850,6 @@ exports[`Select renders select with a pre selected option 1`] = `
     </div>
   </div>
   .emotion-0 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -3948,7 +3870,6 @@ exports[`Select renders select with a pre selected option 1`] = `
 }
 
 <div
-    aria-describedby="mock-nk-1"
     aria-labelledby="downshift-18-label"
     class="emotion-0"
     data-testid="select-panel"
@@ -4216,24 +4137,6 @@ exports[`Select renders select with a selected option 1`] = `
     </div>
   </div>
   .emotion-0 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -4254,7 +4157,6 @@ exports[`Select renders select with a selected option 1`] = `
 }
 
 <div
-    aria-describedby="mock-nk-1"
     aria-labelledby="downshift-19-label"
     class="emotion-0"
     data-testid="select-panel"
@@ -4546,24 +4448,6 @@ exports[`Select renders select with leading and trailing icon 1`] = `
     </div>
   </div>
   .emotion-0 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -4584,7 +4468,6 @@ exports[`Select renders select with leading and trailing icon 1`] = `
 }
 
 <div
-    aria-describedby="mock-nk-1"
     aria-labelledby="downshift-20-label"
     class="emotion-0"
     data-testid="select-panel"
@@ -4854,24 +4737,6 @@ exports[`Select renders select with non-string options 1`] = `
     </div>
   </div>
   .emotion-0 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -4892,7 +4757,6 @@ exports[`Select renders select with non-string options 1`] = `
 }
 
 <div
-    aria-describedby="mock-nk-1"
     aria-labelledby="downshift-21-label"
     class="emotion-0"
     data-testid="select-panel"
@@ -5126,24 +4990,6 @@ exports[`Select renders small Select 1`] = `
     </div>
   </div>
   .emotion-0 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -5164,7 +5010,6 @@ exports[`Select renders small Select 1`] = `
 }
 
 <div
-    aria-describedby="mock-nk-1"
     aria-labelledby="downshift-1-label"
     class="emotion-0"
     data-testid="select-panel"
@@ -5398,24 +5243,6 @@ exports[`Select should render custom placeholder 1`] = `
     </div>
   </div>
   .emotion-0 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -5436,7 +5263,6 @@ exports[`Select should render custom placeholder 1`] = `
 }
 
 <div
-    aria-describedby="mock-nk-1"
     aria-labelledby="downshift-4-label"
     class="emotion-0"
     data-testid="select-panel"
