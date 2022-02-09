@@ -245,10 +245,6 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   overflow: hidden;
 }
 
-.emotion-18 div {
-  overflow: hidden;
-}
-
 .emotion-19 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -799,10 +795,6 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   max-width: 100px;
   text-align: left;
   vertical-align: top;
-  overflow: hidden;
-}
-
-.emotion-22 div {
   overflow: hidden;
 }
 
