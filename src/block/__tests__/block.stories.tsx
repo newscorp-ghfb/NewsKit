@@ -1,7 +1,10 @@
 import React from 'react';
 import {Block} from '..';
 import {styled} from '../../utils/style';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
 import {Visible} from '../../grid/visibility';
 
@@ -127,6 +130,7 @@ export const StoryBlock = () => (
       </Block>
       <StyledHr />
       <Block stylePreset="blockOuter">
+        <StorybookSubHeading>Block with overrides</StorybookSubHeading>
         <Block
           spaceStack="space030"
           spaceInset="spaceInset030"

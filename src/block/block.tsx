@@ -7,10 +7,7 @@ import {
   getSpacingInsetFromTheme,
   getStylePresetFromTheme,
 } from '../utils/style';
-import {getTransitionPreset} from '../utils/style/transition-preset';
-import {withOwnTheme} from '../utils/with-own-theme';
-import defaults from './defaults';
-import stylePresets from './style-presets';
+import {getTransitionPresetFromTheme} from '../utils/style/transition-preset';
 
 export interface BlockProps extends React.HTMLAttributes<HTMLDivElement> {
   as?: keyof JSX.IntrinsicElements;
@@ -30,9 +27,8 @@ const StyledDiv = styled.div<BlockProps>`
     spaceInline && getSpacingFromTheme(spaceInline, undefined, 'marginRight')}
   ${({spaceStack}) =>
     spaceStack && getSpacingFromTheme(spaceStack, undefined, 'marginBottom')}
-  ${getTransitionPreset(`block`, '')};
+  ${({overrides}) =>
+    overrides && getTransitionPresetFromTheme('backgroundColorChange')};
 `;
 
-const ThemelessBlock: React.FC<BlockProps> = props => <StyledDiv {...props} />;
-
-export const Block = withOwnTheme(ThemelessBlock)({defaults, stylePresets});
+export const Block: React.FC<BlockProps> = props => <StyledDiv {...props} />;
