@@ -10,12 +10,17 @@ transitionPresets.fontColorChange = {
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
 };
-
+// transitionPresets.iconColorChange = {
+//   base: {
+//     transition:'fill 500ms ease-in-out 1s'
+//   },
+// };
 transitionPresets.iconColorChange = {
   base: {
-    transitionProperty: 'outline-color',
-    transitionDuration: '{{motions.motionDuration020}}',
+    transitionProperty: 'fill',
+    transitionDuration: '{{motions.motionDuration050}}',
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+    transitionDelay: '500ms',
   },
 };
 transitionPresets.backgroundColorChange = {
@@ -23,7 +28,6 @@ transitionPresets.backgroundColorChange = {
     transitionProperty: 'background-color',
     transitionDuration: '{{motions.motionDuration020}}',
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-    // transitionDelay: '500ms',
   },
 };
 

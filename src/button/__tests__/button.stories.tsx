@@ -451,7 +451,7 @@ const myCustomTransitionPresets = createTheme({
       customBackgroundColorChange: {
         base: {
           transitionProperty: 'background-color',
-          transitionDuration: '10ms',
+          transitionDuration: '500ms',
           transitionDelay: '500ms',
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
@@ -459,8 +459,16 @@ const myCustomTransitionPresets = createTheme({
       customBorderColourChange: {
         base: {
           transitionProperty: 'border-color',
-          transitionDuration: '100ms',
+          transitionDuration: '500ms',
           transitionDelay: '0ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+      customIconChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '300ms',
+          transitionDelay: '300ms',
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
       },
@@ -479,6 +487,7 @@ const myCustomTransitionPresets = createTheme({
         hover: {
           backgroundColor: '{{colors.amber070}}',
           borderColor: '{{colors.green040}}',
+          iconColor: '{{colors.purple020}}',
         },
         active: {
           backgroundColor: '{{colors.interactivePrimary050}}',
@@ -510,7 +519,8 @@ export const StoryButtonWithTransitions = () => (
           size={ButtonSize.Medium}
           overrides={{
             stylePreset: 'testButtonStylePresetWithBorders',
-            transitionPreset: 'customBackgroundColorChange',
+            // transitionPreset: 'customIconChange',
+            // transitionPreset:' customIconChange'
           }}
         >
           <IconFilledEmail overrides={{size: 'iconSize020'}} />

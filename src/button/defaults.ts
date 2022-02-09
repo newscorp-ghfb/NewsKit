@@ -8,7 +8,11 @@ export default {
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
       spaceInline: 'space020',
-      transitionPreset: 'backgroundColorChange',
+      transitionPreset: [
+        'backgroundColorChange',
+        'borderColorChange',
+        'iconColorChange',
+      ],
       //     [{
       //     extend: 'backgroundColorChange',
       //     base: {
@@ -36,7 +40,11 @@ export default {
       minHeight: 'sizing080',
       iconSize: 'iconSize020',
       spaceInline: 'space020',
-      transitionPreset: 'backgroundColorChange',
+      transitionPreset: [
+        'backgroundColorChange',
+        'borderColorChange',
+        'iconColorChange',
+      ],
       // transitionPreset:{
       //   extend: 'backgroundColorChange',
       //   base: {
@@ -55,7 +63,11 @@ export default {
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
       spaceInline: 'space020',
-      transitionPreset: 'backgroundColorChange',
+      transitionPreset: [
+        'backgroundColorChange',
+        'borderColorChange',
+        'iconColorChange',
+      ],
       // transitionPreset:{
       //   extend: 'backgroundColorChange',
       //   base: {
