@@ -5,6 +5,8 @@ import {tnlTheme} from '../themes/tnl-theme/tnl-theme';
 import {virginTheme} from '../themes/virgin-theme/virgin-theme';
 import {sunTheme} from '../themes/sun-theme/sun-theme';
 
+jest.mock('date-fns/format', () => () => 'Mock Date');
+
 const themes = [
   newskitLightTheme,
   newskitDarkTheme,
