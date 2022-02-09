@@ -59,6 +59,16 @@ const PRINCIPLE_CARDS = [
   },
 ] as MediaItem[];
 
+const whatNextCards = [
+  {
+    media: getIllustrationComponent('guides/design-quickstart/hero'),
+    title: 'Design Quickstart Guide',
+    description:
+      'A step by step guide to get you up and running using NewsKit.',
+    href: '/getting-started/design/design-quickstart',
+  },
+];
+
 export default (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
@@ -423,14 +433,21 @@ export default (layoutProps: LayoutProps) => (
           />
         </ContentPrimary>
       </ContentSection>
+
+      <ContentSection sectionName="what’s next?">
+        <ContentPrimary
+          id="whatsnext"
+          toc="what’s next?"
+          headline="What’s next?"
+          description="Want to use NewsKit for your next product? Follow the next steps belows to learn more:"
+          showSeparator
+        >
+          <MediaList
+            cards={whatNextCards}
+            gridProps={{xsRowGutter: 'space050'}}
+          />
+        </ContentPrimary>
+      </ContentSection>
     </ComponentPageCell>
-    {/* ToDo: Once design quickstart guide page is ready, need to enable this section.
-    <RelatedComponentsSection
-      title="What’s next?"
-      id="whats-next"
-      toc="What’s next?"
-      introduction="Want to use NewsKit for your next product? Follow the next steps belows to learn more:"
-      related={['Design quickstart guide']}
-    /> */}
   </GuidePageTemplate>
 );

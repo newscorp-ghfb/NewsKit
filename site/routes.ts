@@ -58,6 +58,14 @@ export default [
         illustration: 'guides/design-overview/hero',
       },
       {
+        title: 'Design quickstart',
+        page: true,
+        id: '/getting-started/design/design-quickstart',
+        description:
+          'This page describes how to get started designing a digital product with NewsKit.',
+        illustration: 'guides/design-quickstart/hero',
+      },
+      {
         title: 'Engineering overview',
         page: true,
         id: '/getting-started/code/engineering-overview',
@@ -73,15 +81,6 @@ export default [
           'This page describes how to get started building a web application with NewsKit.',
         illustration: 'guides/engineering-quickstart/hero',
       },
-      // ToDo: Once design quickstart guide page is ready, need to enable this section.
-      // {
-      //   title: 'Design quickstart guide',
-      //   page: true,
-      //   id: '/getting-started/code/design-quickstart-guide',
-      //   description:
-      //     'To start designing with NewsKit, follow the steps in the quickstart guide.',
-      //   illustration: 'guides/design-overview/design-quickstart',
-      // },
     ],
   },
   {
