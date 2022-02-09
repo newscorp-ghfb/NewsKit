@@ -22,7 +22,8 @@ const generateCursor = (disabled?: boolean, $loading?: boolean) => {
 };
 
 export const StyledButtonIcons = styled('div', {
-  shouldForwardProp: prop => prop !== 'disabled',
+  shouldForwardProp: prop =>
+    !['disabled', '$spaceInline', '$loading'].includes(prop as string),
 })(
   ({
     disabled,

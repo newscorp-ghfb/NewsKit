@@ -1,5 +1,5 @@
 import React from 'react';
-import {fireEvent, act} from '@testing-library/react';
+import {fireEvent, act, waitFor, screen} from '@testing-library/react';
 import {useForm} from 'react-hook-form';
 import {Form, FormRef} from '..';
 import {
@@ -548,10 +548,12 @@ describe('FormInput', () => {
     const fragment = renderToFragmentWithTheme(FormInput, prop);
     expect(fragment).toMatchSnapshot();
   });
+
   test('renders with nested inputs', () => {
     const fragment = renderToFragmentWithTheme(() => formBodyFormInputInvalid);
     expect(fragment).toMatchSnapshot();
   });
+
   test('fireEvent with onBlur valid state', () => {
     const {getByTestId, asFragment} = renderWithImplementation(Form, {
       ...props,
@@ -562,6 +564,7 @@ describe('FormInput', () => {
     });
     expect(asFragment()).toMatchSnapshot();
   });
+
   test('does not call onBlur ', () => {
     const onBlur = jest.fn();
     const prop: FormInputProps = {
@@ -573,6 +576,7 @@ describe('FormInput', () => {
 
     expect(onBlur).toHaveBeenCalledTimes(0);
   });
+
   test('fireEvent with onChange when value is invalid', () => {
     const {getByTestId, asFragment} = renderWithImplementation(Form, {
       ...props,
@@ -584,6 +588,7 @@ describe('FormInput', () => {
     });
     expect(asFragment()).toMatchSnapshot();
   });
+
   test('does not call onChange ', () => {
     const onChange = jest.fn();
     const prop: FormInputProps = {
@@ -597,6 +602,7 @@ describe('FormInput', () => {
 
     expect(onChange).toHaveBeenCalledTimes(0);
   });
+
   test('renders with valid icon', async () => {
     const {getByTestId, findByTestId} = renderWithImplementation(Form, {
       ...props,
@@ -609,6 +615,7 @@ describe('FormInput', () => {
 
     expect(await findByTestId('tick-icon')).not.toBeNull();
   });
+
   test('renders with invalid icon', async () => {
     const {getByTestId, findByTestId} = renderWithImplementation(Form, {
       ...props,
@@ -620,19 +627,27 @@ describe('FormInput', () => {
     });
     expect(await findByTestId('error-icon')).not.toBeNull();
   });
+
   test('test function', () => {
     const theResult = composeEventHandlers();
     expect(typeof theResult).toBe('function');
   });
+
   test('renders with error and with submit validation and revalidation mode ', async () => {
     const {getByRole, asFragment} = renderWithImplementation(Form, {
       ...props,
       reValidationMode: 'onSubmit',
     });
 
-    fireEvent.submit(getByRole('button'));
+    act(() => {
+      fireEvent.submit(getByRole('button'));
+    });
+
+    await waitFor(() => screen.queryByText(/please provide a valid email/i));
+
     expect(asFragment()).toMatchSnapshot();
   });
+
   test('renders with invalid icon and trailing icon', async () => {
     const {getByTestId, findByTestId} = renderWithImplementation(Form, {
       ...props,
