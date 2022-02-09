@@ -233,6 +233,7 @@ exports[`Select renders Select with overrides 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
+  z-index: 1;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -539,6 +540,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
+  z-index: 1;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -837,6 +839,7 @@ exports[`Select renders disabled select 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
+  z-index: 1;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -1109,6 +1112,7 @@ exports[`Select renders large Select 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
+  z-index: 1;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -1376,6 +1380,7 @@ exports[`Select renders loading select 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
+  z-index: 1;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -1648,6 +1653,7 @@ exports[`Select renders medium Select 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
+  z-index: 1;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -1954,6 +1960,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
+  z-index: 1;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -2260,6 +2267,7 @@ exports[`Select renders select with a selected option 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
+  z-index: 1;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -2590,6 +2598,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
+  z-index: 1;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -2898,6 +2907,7 @@ exports[`Select renders select with non-string options 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
+  z-index: 1;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -3170,6 +3180,7 @@ exports[`Select renders small Select 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
+  z-index: 1;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -3442,6 +3453,7 @@ exports[`Select should render custom placeholder 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
+  z-index: 1;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
