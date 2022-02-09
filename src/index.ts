@@ -46,6 +46,7 @@ export * from './text-block';
 export * from './text-input';
 export * from './text-field';
 export * from './theme';
+export * from './theme-checker';
 export * from './title-bar';
 export * from './toast';
 export * from './typography';

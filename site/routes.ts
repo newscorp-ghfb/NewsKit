@@ -40,11 +40,6 @@ export default [
         id: '/getting-started/overview',
       },
       {
-        title: 'Web',
-        page: true,
-        id: '/getting-started/code/web',
-      },
-      {
         title: 'Instrumentation',
         page: true,
         id: '/getting-started/code/instrumentation',
@@ -69,6 +64,14 @@ export default [
         description:
           'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
         illustration: 'guides/engineering-overview/hero',
+      },
+      {
+        title: 'Engineering quickstart',
+        page: true,
+        id: '/getting-started/code/engineering-quickstart',
+        description:
+          'This page describes how to get started building a web application with NewsKit.',
+        illustration: 'guides/engineering-quickstart/hero',
       },
       // ToDo: Once design quickstart guide page is ready, need to enable this section.
       // {
