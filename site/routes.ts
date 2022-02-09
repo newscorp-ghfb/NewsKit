@@ -52,7 +52,7 @@ export default [
       {
         title: 'Design Overview',
         page: true,
-        id: '/getting-started/code/design-overview',
+        id: '/getting-started/design/design-overview',
         description:
           'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
         illustration: 'guides/design-overview/hero',
