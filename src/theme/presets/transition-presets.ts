@@ -18,11 +18,12 @@ transitionPresets.fontColorChange = {
 transitionPresets.iconColorChange = {
   base: {
     transitionProperty: 'fill',
-    transitionDuration: '{{motions.motionDuration050}}',
+    transitionDuration: '2000ms',
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-    transitionDelay: '500ms',
+    // transitionDelay: '500ms',
   },
 };
+
 transitionPresets.backgroundColorChange = {
   base: {
     transitionProperty: 'background-color',

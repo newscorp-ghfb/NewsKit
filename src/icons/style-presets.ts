@@ -1,6 +1,15 @@
 import {StylePreset} from '../theme/types';
 
 export default {
+  iconTEST: {
+    base: {
+      iconColor: '{{colors.red050}}',
+    },
+    hover: {
+      iconColor: '{{colors.green050}}',
+    },
+  },
+
   iconPositive: {
     base: {
       iconColor: '{{colors.inkPositive}}',

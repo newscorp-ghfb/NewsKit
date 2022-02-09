@@ -3,15 +3,23 @@ import {EmotionIconProps} from '@emotion-icons/emotion-icon';
 import {withTheme} from '../theme';
 import {NewsKitIconProps, NewsKitIcon, SvgProps} from './types';
 import {getSizingCssFromTheme, getStylePreset, styled} from '../utils/style';
+import {getTransitionPresetFromTheme} from '../utils/style/transition-preset';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const renderIconStylePreset = (overridesOnly: boolean) => (props: any) => {
   if (!overridesOnly || props?.overrides?.stylePreset) {
-    return getStylePreset('icons', '', {
+    const sp = getStylePreset('icons', '', {
       isSvg: true,
     })(props);
+
+    const tp = getTransitionPresetFromTheme('iconColorChange')(props);
+
+    return {
+      ...sp,
+      ...tp,
+    };
   }
   return {};
 };
@@ -27,7 +35,7 @@ export const toNewsKitIcon = (
       const toStyledIcon = (
         Icon: React.ComponentType<EmotionIconProps>,
       ) => styled(Icon)`
-        // If not overridden, render SP CSS here, this allows parent SP to override Icon default.
+        // If not overridden, render style preset CSS here, this allows parent's style preset to override Icon default.
         ${renderIconStylePreset(false)}
 
         vertical-align: unset;
