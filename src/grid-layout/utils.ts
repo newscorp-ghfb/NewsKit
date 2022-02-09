@@ -36,6 +36,6 @@ export const areaToValidCSS = (areasToStandardise?: string) =>
         .filter(eachAreaNested => !!eachAreaNested)
         .join(' '),
     )
-    .filter(each => each?.length)
+    .filter(each => each.length)
     .map(each => (each.includes(`"`) ? each : `"${each}"`))
     .join('\n');

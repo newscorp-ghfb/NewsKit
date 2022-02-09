@@ -235,6 +235,41 @@ export default (layoutProps: LayoutProps) => (
             },
           ],
         },
+        {
+          title: 'Grid Layout Item',
+          summary:
+            'Grid Layout Item has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit GridLayout component.',
+          propsRows: [
+            {
+              name: 'area',
+              type: 'string',
+              required: false,
+              description:
+                'Assigns a name to an item so that it can be referenced by a template created with the GridLayout areas property.',
+            },
+            {
+              name: 'order',
+              type: 'MQ<number>',
+              required: false,
+              description:
+                'Sets the order in which to display items in a grid. Items are sorted by ascending order value and then by their oder of appearance in the DOM.',
+            },
+            {
+              name: 'justifySelf',
+              type: 'MQ<string>',
+              required: false,
+              description:
+                'Aligns an item inside its containing block on the inline axis.',
+            },
+            {
+              name: 'alignSelf',
+              type: 'MQ<string>',
+              required: false,
+              description:
+                'Aligns an item inside its containing block on the block axis.',
+            },
+          ],
+        },
       ],
     }}
   />

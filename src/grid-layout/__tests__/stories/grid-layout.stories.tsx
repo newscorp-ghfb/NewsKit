@@ -18,7 +18,7 @@ export default {
 
 export const ResponsiveExample = () => (
   <>
-    <StorybookHeading>Responsive grids</StorybookHeading>
+    <StorybookHeading>Responsive grid with mixed sizing</StorybookHeading>
     <GridLayout
       columns={{md: '1fr 1fr', lg: '1fr sizing120 300px 1fr'}}
       rows={{md: '1fr 1fr', lg: '1fr sizing120 300px 1fr'}}
@@ -49,6 +49,10 @@ export const ResponsiveExample = () => (
     <br />
     <br />
     <br />
+
+    <StorybookHeading>
+      Responsive grid with children explicitly tagged with relevant areas
+    </StorybookHeading>
     <GridLayout
       areas={{
         xs: `
@@ -95,6 +99,10 @@ export const ResponsiveExample = () => (
     <br />
     <br />
     <br />
+    <StorybookHeading>
+      Responsive grid with children generated using a function that has access
+      to the &apos;Areas&apos; object
+    </StorybookHeading>
     <GridLayout
       areas={{
         xs: `
@@ -207,7 +215,7 @@ export const WithOverrides = () => (
   <>
     <StorybookHeading>With overrides</StorybookHeading>
     <StorybookSubHeading>Unconstrained width</StorybookSubHeading>
-    <GridLayout columns="1fr 1fr" columnGap="20px" rowGap="20px">
+    <GridLayout columns="1fr 1fr" columnGap="20px">
       <GridLayoutItem>
         <BigRedBlock />
       </GridLayoutItem>
@@ -216,12 +224,7 @@ export const WithOverrides = () => (
       </GridLayoutItem>
     </GridLayout>
     <StorybookSubHeading>Width 500px</StorybookSubHeading>
-    <GridLayout
-      columns="1fr 1fr"
-      columnGap="20px"
-      rowGap="20px"
-      overrides={{width: '500px'}}
-    >
+    <GridLayout columns="1fr 1fr" columnGap="20px" overrides={{width: '500px'}}>
       <GridLayoutItem>
         <BigRedBlock />
       </GridLayoutItem>
