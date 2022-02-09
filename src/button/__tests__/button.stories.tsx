@@ -466,7 +466,7 @@ const myCustomTransitionPresets = createTheme({
       },
       customIconChange: {
         base: {
-          transitionProperty: 'background-color',
+          transitionProperty: 'fill',
           transitionDuration: '300ms',
           transitionDelay: '300ms',
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
@@ -519,8 +519,7 @@ export const StoryButtonWithTransitions = () => (
           size={ButtonSize.Medium}
           overrides={{
             stylePreset: 'testButtonStylePresetWithBorders',
-            // transitionPreset: 'customIconChange',
-            // transitionPreset:' customIconChange'
+            transitionPreset: 'customIconChange',
           }}
         >
           <IconFilledEmail overrides={{size: 'iconSize020'}} />
@@ -539,6 +538,7 @@ export const StoryButtonWithTransitions = () => (
             stylePreset: 'testButtonStylePresetWithBorders',
           }}
         >
+          <IconFilledEmail overrides={{size: 'iconSize020'}} />
           Button
         </Button>
         <StorybookSubHeading>
@@ -557,6 +557,7 @@ export const StoryButtonWithTransitions = () => (
           }}
         >
           Button
+          <IconFilledEmail overrides={{size: 'iconSize020'}} />
         </Button>
         <StorybookSubHeading>
           Button with overrides on two properties from defaults using extend

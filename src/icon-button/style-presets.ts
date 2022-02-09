@@ -1,32 +1,6 @@
 import {StylePreset} from '../theme/types';
 
 export default {
-  iconButtonTEST: {
-    base: {
-      backgroundColor: '{{colors.interactivePrimary030}}',
-      borderRadius: '{{borders.borderRadiusCircle}}',
-      color: '{{colors.inkInverse}}',
-      iconColor: '{{colors.purple060}}',
-    },
-    hover: {
-      backgroundColor: '{{colors.interactivePrimary040}}',
-      iconColor: '{{colors.amber060}}',
-    },
-    active: {
-      backgroundColor: '{{colors.interactivePrimary050}}',
-    },
-    disabled: {
-      backgroundColor: '{{colors.interactiveDisabled010}}',
-      color: '{{colors.inkNonEssential}}',
-      iconColor: '{{colors.inkNonEssential}}',
-    },
-    loading: {
-      backgroundColor: '{{colors.interactivePrimary020}}',
-      color: '{{colors.inkBrand010}}',
-      iconColor: '{{colors.inkBrand010}}',
-    },
-  },
-
   iconButtonSolidPrimary: {
     base: {
       backgroundColor: '{{colors.interactivePrimary030}}',

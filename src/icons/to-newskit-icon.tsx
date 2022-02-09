@@ -10,15 +10,17 @@ import {withOwnTheme} from '../utils/with-own-theme';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const renderIconStylePreset = (overridesOnly: boolean) => (props: any) => {
   if (!overridesOnly || props?.overrides?.stylePreset) {
-    const sp = getStylePreset('icons', '', {
+    const stylePreset = getStylePreset('icons', '', {
       isSvg: true,
     })(props);
 
-    const tp = getTransitionPresetFromTheme('iconColorChange')(props);
+    const transitionPreset = getTransitionPresetFromTheme('iconColorChange')(
+      props,
+    );
 
     return {
-      ...sp,
-      ...tp,
+      ...stylePreset,
+      ...transitionPreset,
     };
   }
   return {};

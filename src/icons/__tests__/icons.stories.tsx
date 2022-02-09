@@ -21,7 +21,6 @@ import {
 } from '..';
 import * as customIcons from '../filled/custom';
 import {customToNewsKitIcon} from '../custom-to-newskit-icon';
-import {IconButton} from '../../icon-button';
 
 const Container = styled.div<{dark?: boolean}>`
   ${({dark}) => dark && 'background: #000;'}
@@ -41,6 +40,14 @@ const getTheme = (baseTheme?: UncompiledTheme) =>
         iconCustom: {
           base: {
             iconColor: '{{colors.amber050}}',
+          },
+        },
+        iconCustomWithTransitions: {
+          base: {
+            iconColor: '{{colors.amber050}}',
+          },
+          hover: {
+            iconColor: '{{colors.green050}}',
           },
         },
       },
@@ -259,27 +266,16 @@ export const StoryIconsTransition = () => (
       <div>
         <ThemeProvider theme={getTheme()}>
           <Constrain>
+            <StorybookSubHeading>Icon with transition</StorybookSubHeading>
             <Icon
               overrides={{
-                stylePreset: 'iconTEST',
+                stylePreset: 'iconCustomWithTransitions',
               }}
             />
           </Constrain>
-
-          <br />
-          <br />
-          <br />
-
-          <IconButton
-            aria-label="Pause icon"
-            overrides={{stylePreset: 'iconButtonTEST'}}
-            size="large"
-          >
-            <IconFilledAccountBalance />
-          </IconButton>
         </ThemeProvider>
       </div>
     ))}
   </>
 );
-StoryIconsTransition.storyName = 'icons-transition';
+StoryIconsTransition.storyName = 'icons-transition-overrides';

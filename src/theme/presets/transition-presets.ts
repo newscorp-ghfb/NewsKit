@@ -10,17 +10,12 @@ transitionPresets.fontColorChange = {
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
 };
-// transitionPresets.iconColorChange = {
-//   base: {
-//     transition:'fill 500ms ease-in-out 1s'
-//   },
-// };
+
 transitionPresets.iconColorChange = {
   base: {
     transitionProperty: 'fill',
-    transitionDuration: '2000ms',
+    transitionDuration: '{{motions.motionDuration020}}',
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-    // transitionDelay: '500ms',
   },
 };
 
