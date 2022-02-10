@@ -4,6 +4,7 @@ import {
   ButtonSelectSize,
   SelectPanelOverrides,
   SelectOptionProps,
+  SelectPropsOverrides,
 } from './types';
 import {
   StyledOption,
@@ -106,7 +107,7 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
     const modalOverrides = getModalOverrides({
       theme,
       size,
-      overrides: overrides?.modal,
+      overrides: overrides?.modal as SelectPropsOverrides['modal'],
     });
 
     const optionsAsChildren =

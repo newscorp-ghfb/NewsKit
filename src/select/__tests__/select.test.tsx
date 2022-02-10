@@ -480,7 +480,6 @@ describe('Select', () => {
         overrides: {
           button: {width: '100%'},
           modal: {
-            // @ts-ignore
             props: {
               closePosition: 'none',
               header: 'make your selection',
@@ -558,7 +557,6 @@ describe('Select', () => {
         ...commonProps,
         overrides: {
           modal: {
-            // @ts-ignore
             props: {
               header: (
                 <button type="button" data-testid="header">
