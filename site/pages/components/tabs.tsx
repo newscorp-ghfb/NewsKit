@@ -390,6 +390,18 @@ export default (layoutProps: LayoutProps) => (
               description: 'If provided, this overrides the Tab styling.  ',
             },
             {
+              attribute: 'transitionPreset',
+              type: 'MQ<string>',
+              default: [
+                'backgroundColorChange',
+                'borderColorChange',
+                'fontColorChange',
+                'iconColorChange',
+              ],
+              description:
+                'If provided, this overrides the transition preset applied to the Button.',
+            },
+            {
               attribute: 'typographyPreset',
               type: 'MQ<string>',
               default: [
