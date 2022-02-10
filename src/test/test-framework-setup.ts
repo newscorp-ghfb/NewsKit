@@ -9,6 +9,8 @@ jest.mock('../utils/get-ssr-id', () => ({
   getSSRId: () => `mock-nk-1`,
 }));
 
+jest.mock('date-fns/format', () => () => 'Mock Date');
+
 const consoleError = console.error;
 console.error = (...args: any[]) => {
   // We want to ignore errors about the duplicate key prop in react if it's due to the above mock.
