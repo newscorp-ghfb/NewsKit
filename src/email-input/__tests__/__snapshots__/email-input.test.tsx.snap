@@ -71,6 +71,9 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
 }
 
 .emotion-3 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 

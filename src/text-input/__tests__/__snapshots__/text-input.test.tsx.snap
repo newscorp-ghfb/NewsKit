@@ -100,6 +100,9 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
 }
 
 .emotion-4 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 
@@ -237,6 +240,9 @@ exports[`TextInput renders correctly with label hidden 1`] = `
 }
 
 .emotion-3 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 
@@ -398,6 +404,9 @@ exports[`TextInput renders correctly without asistive text 1`] = `
 }
 
 .emotion-4 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 
@@ -510,6 +519,9 @@ exports[`TextInput renders disabled text input 1`] = `
 }
 
 .emotion-4 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 
@@ -675,6 +687,9 @@ exports[`TextInput renders large text input 1`] = `
 }
 
 .emotion-4 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 
@@ -841,6 +856,9 @@ exports[`TextInput renders readonly text input 1`] = `
 }
 
 .emotion-4 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 
@@ -1008,6 +1026,9 @@ exports[`TextInput renders small text input 1`] = `
 }
 
 .emotion-4 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 
@@ -1216,6 +1237,9 @@ exports[`TextInput renders text input with leading icon 1`] = `
 }
 
 .emotion-7 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 
@@ -1362,6 +1386,9 @@ exports[`TextInput renders text input with overrides 1`] = `
 }
 
 .emotion-4 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 24px;
 }
 
@@ -1566,6 +1593,9 @@ exports[`TextInput renders text input with overrides for leading and validation 
 }
 
 .emotion-7 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 
@@ -1752,6 +1782,9 @@ exports[`TextInput renders with different minHeight 1`] = `
 }
 
 .emotion-4 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 
@@ -1922,6 +1955,9 @@ exports[`TextInput renders with fixed width 1`] = `
 }
 
 .emotion-4 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 
@@ -2092,6 +2128,9 @@ exports[`TextInput renders with full width 1`] = `
 }
 
 .emotion-4 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 
@@ -2258,6 +2297,9 @@ exports[`TextInput should render custom aria-label 1`] = `
 }
 
 .emotion-4 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 
@@ -2425,6 +2467,9 @@ exports[`TextInput should render custom placeholder 1`] = `
 }
 
 .emotion-4 {
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   min-height: 12px;
 }
 
