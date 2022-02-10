@@ -106,7 +106,6 @@ export default (layoutProps: LayoutProps) => (
             </>
             <>
               Select the “Log in with SAML SSO” link at the bottom of the form.
-              <Block spaceStack="space040" />
               <ImageContainer>
                 <Illustration path="guides/design-quickstart/step1/access-to-figma-log-in" />
               </ImageContainer>
@@ -149,7 +148,7 @@ export default (layoutProps: LayoutProps) => (
         </ContentPrimary>
 
         <ContentSecondary showSeparator>
-          <InlineMessage>
+          <InlineMessage role="region" aria-label="NewsCorp teams">
             For other NewsCorp teams, please get in touch with the design
             systems team via Slack:{' '}
             <Link
@@ -167,6 +166,61 @@ export default (layoutProps: LayoutProps) => (
             >
               this form.
             </Link>
+          </InlineMessage>
+        </ContentSecondary>
+      </ContentSection>
+
+      <ContentSection sectionName="step 2">
+        <ContentPrimary showSeparator>
+          <Step
+            media="guides/design-quickstart/step2/hero"
+            stepText="Step 2"
+            timerText="<1 min"
+          />
+        </ContentPrimary>
+      </ContentSection>
+
+      <ContentSection sectionName="joining a team workspace">
+        <ContentPrimary
+          id="joiningateamworkspace"
+          toc="Joining a team workspace"
+          headline="Joining a team workspace"
+          description="To join a team workspace, follow these simple steps:"
+        >
+          <OrderedList overrides={orderedListOverrides}>
+            <>
+              <Link
+                href="https://www.figma.com/files/885972051699405879?fuid=991535588482779467"
+                target="_blank"
+              >
+                View teams in the News UK Figma organisation.
+              </Link>
+            </>
+            <>
+              Find your team(s), and press “Request to join” or “Join” button(s)
+              to get access to a team workspace.
+              <ImageContainer>
+                <Illustration path="guides/design-quickstart/step2/joining-a-workspace-request" />
+              </ImageContainer>
+            </>
+            <>
+              Once you have access to a team(s), you will see the structure of
+              project files and associated libraries on the main Figma screen.
+              News UK Figma workspaces are structured in a particular way, learn
+              more about News UK Figma workspaces.
+            </>
+          </OrderedList>
+        </ContentPrimary>
+
+        <ContentSecondary showSeparator>
+          <InlineMessage role="region" aria-label="Tip">
+            Tip - to see projects in a team in the left-hand navigation on the
+            main Figma screen,be sure to “star” them in the team view screen.
+          </InlineMessage>
+          <Block spaceStack="space050" />
+          <InlineMessage role="region" aria-label="Having trouble">
+            Having trouble joining a team? Get in touch with the design systems
+            team via Slack: #newskit
           </InlineMessage>
         </ContentSecondary>
       </ContentSection>
