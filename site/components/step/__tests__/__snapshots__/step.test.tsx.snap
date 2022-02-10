@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Step renders with props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-bottom: 32px;
+}
+
+.emotion-1 {
+  width: 100%;
+  height: auto;
+}
+
+<div
+    class="emotion-0"
+  >
+    <svg
+      class="emotion-1"
+      fill="none"
+      height="1600"
+      viewBox="0 0 1600 1600"
+      width="1600"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        fill="illustration-Background020"
+        height="1600"
+        width="1600"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M1020.59 586.74H579.412C571.29 586.74 564.706 593.339 564.706 601.48V999.458C564.706 1007.6 571.29 1014.2 579.412 1014.2H1020.59C1028.71 1014.2 1035.29 1007.6 1035.29 999.458V601.48C1035.29 593.339 1028.71 586.74 1020.59 586.74ZM579.412 572C563.168 572 550 585.199 550 601.48V999.458C550 1015.74 563.168 1028.94 579.412 1028.94H1020.59C1036.83 1028.94 1050 1015.74 1050 999.458V601.48C1050 585.199 1036.83 572 1020.59 572H579.412ZM722.249 702.981C722.249 728.415 701.898 749.033 676.794 749.033C651.69 749.033 631.339 728.415 631.339 702.981C631.339 677.547 651.69 656.928 676.794 656.928C701.898 656.928 722.249 677.547 722.249 702.981ZM709.872 832.119C703.597 823.903 691.078 824.573 685.706 833.411L609.592 958.639C603.615 968.472 610.654 981.091 622.116 981.091H979.082C990.092 981.091 997.182 969.356 992.108 959.532L892.423 766.558C887.131 756.315 872.718 755.87 866.812 765.768L786.838 899.781C781.512 908.707 768.916 909.432 762.611 901.176L709.872 832.119Z"
+        fill="#E4E4E4"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </div>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 8px 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #3358CC;
+  border-radius: 24px;
+  color: #FFFFFF;
+}
+
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 24px;
+  padding: 8px 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #DEDEDE;
+  border-radius: 24px;
+  color: #535353;
+}
+
+.emotion-5 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-5 svg {
+  fill: #535353;
+}
+
+.emotion-8 {
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="flag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            Step 1
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-5"
+      data-testid="flag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-8"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </div>
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+             
+          </span>
+        </div>
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            3+ mins
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

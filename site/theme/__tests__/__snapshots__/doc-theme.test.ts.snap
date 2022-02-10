@@ -1392,6 +1392,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -1439,6 +1446,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral080}}",
       },
     },
     "toastButton": Object {
@@ -3473,6 +3488,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -3520,6 +3542,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral080}}",
       },
     },
     "toastButton": Object {
@@ -5554,6 +5584,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -5601,6 +5638,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral080}}",
       },
     },
     "toastButton": Object {
@@ -7635,6 +7680,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -7682,6 +7734,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral080}}",
       },
     },
     "toastButton": Object {
@@ -9716,6 +9776,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -9763,6 +9830,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral080}}",
       },
     },
     "toastButton": Object {
@@ -11797,6 +11872,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -11844,6 +11926,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral080}}",
       },
     },
     "toastButton": Object {
@@ -13878,6 +13968,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -13925,6 +14022,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral080}}",
       },
     },
     "toastButton": Object {
@@ -15959,6 +16064,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -16006,6 +16118,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral080}}",
       },
     },
     "toastButton": Object {
