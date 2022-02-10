@@ -272,7 +272,6 @@ export default (layoutProps: LayoutProps) => (
       type: 'Actions & Inputs',
       name: 'Select',
       hero: {
-        // TODO: Update
         illustration: 'components/select/select-illustration',
       },
       introduction: `Select components allow users to select one option from a list. They typically appear in forms.`,
