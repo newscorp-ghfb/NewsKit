@@ -1,6 +1,7 @@
 import React from 'react';
-import {Stack, Block, Flow, Flag, FlagSize, IconFilledGitHub} from 'newskit';
+import {Stack, Block, Flow, Flag, FlagSize} from 'newskit';
 import {Illustration} from '../illustrations/illustration-loader';
+import {IconFilledTimer} from '../icons';
 
 interface StepProps {
   media?: string;
@@ -34,7 +35,7 @@ export const Step = ({media, stepText, timerText}: StepProps) => (
           spaceInset: 'spaceInsetSquish020',
         }}
       >
-        <IconFilledGitHub /> {timerText}
+        <IconFilledTimer /> {timerText}
       </Flag>
     </Stack>
   </>

@@ -818,7 +818,7 @@ export const stylePresets = {
       backgroundColor: '{{colors.neutral030}}',
       borderRadius: '{{borders.borderRadiusRounded050}}',
       color: '{{colors.neutral080}}',
-      iconColor: '{{colors.neutral080}}',
+      iconColor: '{{colors.neutral100}}',
     },
   },
 };
