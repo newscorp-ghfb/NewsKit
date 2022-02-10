@@ -1,6 +1,6 @@
 const a11yComponentRules = require('../config/a11y-components.json');
 
-const excludeList = ['use-media-query-hook', 'tab'];
+const excludeList = ['use-media-query-hook', 'tab', 'grid-layout'];
 
 a11yComponentRules
   .filter(component => !excludeList.includes(component.title))

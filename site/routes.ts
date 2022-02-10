@@ -414,6 +414,14 @@ export default [
             illustration: 'components/grid-cell-illustration',
           },
           {
+            title: 'Grid Layout',
+            page: true,
+            id: '/components/grid-layout',
+            description:
+              'Used to construct a visual grid for responsive page layout. A Proxy for CSS grid.',
+            illustration: 'static/placeholder-3x2.png',
+          },
+          {
             title: 'Modal',
             page: true,
             id: '/components/modal',
