@@ -220,7 +220,13 @@ export default (layoutProps: LayoutProps) => (
           <Block spaceStack="space050" />
           <InlineMessage role="region" aria-label="Having trouble">
             Having trouble joining a team? Get in touch with the design systems
-            team via Slack: #newskit
+            team via Slack:{' '}
+            <Link
+              href="https://newsuktechnology.slack.com/archives/CTFGLAK9C"
+              target="_blank"
+            >
+              #newskit
+            </Link>
           </InlineMessage>
         </ContentSecondary>
       </ContentSection>
