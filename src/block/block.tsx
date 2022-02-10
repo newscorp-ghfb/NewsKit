@@ -28,7 +28,8 @@ const StyledDiv = styled.div<BlockProps>`
   ${({spaceStack}) =>
     spaceStack && getSpacingFromTheme(spaceStack, undefined, 'marginBottom')}
   ${({overrides}) =>
-    overrides && getTransitionPresetFromTheme('backgroundColorChange')};
+    overrides?.transitionPreset &&
+    getTransitionPresetFromTheme('backgroundColorChange')};
 `;
 
 export const Block: React.FC<BlockProps> = props => <StyledDiv {...props} />;
