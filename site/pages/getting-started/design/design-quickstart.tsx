@@ -1,5 +1,11 @@
 import React from 'react';
-import {Block, OrderedList, InlineMessage} from 'newskit';
+import {
+  Block,
+  OrderedList,
+  InlineMessage,
+  styled,
+  getSizingCssFromTheme,
+} from 'newskit';
 import {LayoutProps} from '../../../components/layout';
 import {Link} from '../../../components/link';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
@@ -22,6 +28,11 @@ const orderedListOverrides = {
     minWidth: 'sizing040',
   },
 };
+
+const ImageContainer = styled.div`
+  ${getSizingCssFromTheme('marginTop', 'sizing040')};
+  ${getSizingCssFromTheme('marginBottom', 'sizing050')}
+`;
 
 export default (layoutProps: LayoutProps) => (
   <GuidePageTemplate
@@ -96,7 +107,9 @@ export default (layoutProps: LayoutProps) => (
             <>
               Select the “Log in with SAML SSO” link at the bottom of the form.
               <Block spaceStack="space040" />
-              <Illustration path="guides/design-quickstart/step1/access-to-figma-log-in" />
+              <ImageContainer>
+                <Illustration path="guides/design-quickstart/step1/access-to-figma-log-in" />
+              </ImageContainer>
             </>
             <>
               Enter a work email address in the form e.g. Joe.Bloggs@news.co.uk.
@@ -119,15 +132,17 @@ export default (layoutProps: LayoutProps) => (
             <>
               In the Figma desktop app, press “Log in with browser” - a new
               browser window will open.
-              <Block spaceStack="space040" />
-              <Illustration path="guides/design-quickstart/step1/access-to-figma-browser-launch" />
+              <ImageContainer>
+                <Illustration path="guides/design-quickstart/step1/access-to-figma-browser-launch" />
+              </ImageContainer>
             </>
             <>
               In the newly opened browser window, press “Open the desktop app”.
               A browser dialog screen will appear, check the “Always allow Figma
               to open links of this type in the associated app”
-              <Block spaceStack="space040" />
-              <Illustration path="guides/design-quickstart/step1/access-to-figma-open-in-app" />
+              <ImageContainer>
+                <Illustration path="guides/design-quickstart/step1/access-to-figma-open-in-app" />
+              </ImageContainer>
             </>
             <>You will now be taken to the Figma desktop app - enjoy!</>
           </OrderedList>
