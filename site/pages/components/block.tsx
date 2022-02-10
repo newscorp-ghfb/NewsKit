@@ -245,6 +245,14 @@ export default (layoutProps: LayoutProps) => (
               description: `Overrides the space inset applied to the Block.`,
             },
           ],
+          overridesRows: [
+            {
+              attribute: 'block.transitionPreset',
+              type: 'TransitionToken | TransitionToken[]',
+              default: 'backgroundColorChange',
+              description: `Overrides the transitionPreset of the Menu Item.`,
+            },
+          ],
           infoNotice: (
             <>
               The Block can utilise any valid{' '}
