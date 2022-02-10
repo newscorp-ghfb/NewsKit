@@ -3,7 +3,6 @@ import {EnhancerOverrides, CommonInputProps} from '../form/types';
 import {MQ} from '../utils/style';
 import {Override} from '../utils/overrides';
 import {ModalProps} from '../modal';
-import {PartialBy} from '../utils/types';
 
 export type ButtonSelectSize = 'small' | 'medium' | 'large';
 
@@ -23,6 +22,9 @@ export interface SelectButtonOverrides extends EnhancerOverrides {
   };
 }
 
+export type SelectModalProps = ModalProps &
+  Partial<Pick<ModalProps, 'open' | 'onDismiss'>>;
+
 export interface SelectPanelOverrides {
   maxHeight?: MQ<string>;
   stylePreset?: MQ<string>;
@@ -33,7 +35,7 @@ export interface SelectPanelOverrides {
 export type SelectPropsOverrides = {
   button?: SelectButtonOverrides;
   panel?: SelectPanelOverrides;
-  modal?: Override<PartialBy<ModalProps, 'open' | 'children' | 'onDismiss'>>;
+  modal?: Override<SelectModalProps>;
 };
 
 export interface SelectProps extends CommonInputProps {

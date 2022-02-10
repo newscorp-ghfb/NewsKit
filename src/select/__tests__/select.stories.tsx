@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {Select, SelectOption} from '..';
+import {Select, SelectModalProps, SelectOption} from '..';
 import {styled} from '../../utils/style';
 import {Stack} from '../../stack';
 import {Block} from '../../block';
@@ -18,8 +18,9 @@ import {
   IconFilledAccountBalance,
   IconFilledClose,
 } from '../../icons';
-import {Modal, ModalProps} from '../../modal';
+import {Modal} from '../../modal';
 import {Button} from '../../button/button';
+import {InlineMessage} from '../../inline-message';
 
 const items = [
   'Neptunium',
@@ -664,7 +665,7 @@ const CustomModalContainer = styled.div`
 
 const selectWithModalVariants = [
   {
-    label: 'defaut',
+    label: 'default',
     props: {overrides: {button: {width: '100%'}}},
   },
   {
@@ -700,12 +701,12 @@ const selectWithModalVariants = [
     props: {
       overrides: {
         button: {width: '100%'},
-        modal: ({children, ...restProps}: ModalProps) => (
+        modal: ({children, ...restProps}: SelectModalProps) => (
           <Modal {...restProps} closePosition="none">
             <CustomModalContainer>{children}</CustomModalContainer>
             <Block spaceStack="space040" />
             <Button
-              onClick={restProps.onDismiss}
+              onClick={restProps?.onDismiss}
               aria-label="close"
               overrides={{width: '100%'}}
             >
@@ -729,12 +730,13 @@ export const StorySelectInModal = () => {
     <>
       <StorybookHeading>Select useModal</StorybookHeading>
       <Container>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim
-          ex qui impedit alias maxime, recusandae beatae porro officia ut,
-          quisquam pariatur fugiat. Minus itaque ratione vitae cupiditate eius
-          nisi.
-        </p>
+        <Block spaceStack="space050">
+          <InlineMessage>
+            In order to open select options inside a modal you need to resize
+            your screen to <b>xs</b> or <b>sm</b> breakpoints. Or use the device
+            dropdown and choose the appropriate one.
+          </InlineMessage>
+        </Block>
         {selectWithModalVariants.map(({label, props}, indx) => (
           <Block spaceStack="space050">
             <Label htmlFor={`id-modal-${indx}`} size={'small' as TextFieldSize}>
@@ -744,7 +746,7 @@ export const StorySelectInModal = () => {
               aria-describedby={`id-modal-${indx}-at`}
               id={`id-modal-${indx}`}
               size="small"
-              useModal={{xs: true}}
+              useModal={{xs: true, sm: true}}
               {...props}
             >
               {selectOptions}
@@ -757,13 +759,6 @@ export const StorySelectInModal = () => {
             </AssistiveText>
           </Block>
         ))}
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim
-          ex qui impedit alias maxime, recusandae beatae porro officia ut,
-          quisquam pariatur fugiat. Minus itaque ratione vitae cupiditate eius
-          nisi.
-        </p>
       </Container>
     </>
   );
