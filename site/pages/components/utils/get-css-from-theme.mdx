@@ -9,7 +9,7 @@ export default Layout;
 
 A group of functions used to retrieve token values from theme or component props.
 The following functions `getBorderCssFromTheme`, `getColorCssFromTheme`, `getMotionCssFromTheme`, `getOverlayCssFromTheme`,
-`getShadowCssFromTheme`, `getSizingCssFromTheme`, `getSpacingCssFromTheme` share the same annotation, therefore we will generalize them as `the getter function`.
+`getShadowCssFromTheme`, `getSizingCssFromTheme`, `getSpacingCssFromTheme`, `getTransitionPresetFromTheme` share the same annotation, therefore we will generalize them as `the getter function`.
 Also, since those functions are used in the same way, we will use only `getCssColorFromTheme` to build our Syntax and Example sections.
 
 ## Overview
@@ -271,3 +271,33 @@ In this example the `Paragraph` component will include the typography styles fro
 However, it will include styles from `editorialSubheadline050` if the `Paragraph` is used with the `font` prop and the value passed in is `editorialSubheadline050`:
 
 <Code>{'<Paragraph typographyPreset="editorialSubheadline050" />'}</Code>
+
+## getTransitionPresetFromTheme()
+
+Retrieves a transition preset from the current theme.
+
+### Syntax
+
+<Code>{'getTransitionPresetFromTheme(token, componentClassName)'}</Code>
+
+### Parameters
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="token" type="ThemeToken">
+    Is the name of the transition preset to be retrieved. This is an object that
+    contains the transition properties.
+  </Prop>
+  <Prop name="componentClassName" type="string">
+    This is an optional parameter when using the fade, slideLeft, slideRight,
+    slideTop, slideBottom, moveUp and grow presets. The classname is applied to
+    the component as it appears enters, exits or has finished the transition.
+  </Prop>
+</LegacyBlock>
+
+### Example
+
+<CodeFromFile path="examples/utils/get-from-theme/get-transition-preset-from-theme.tsx" />
+
+In the example above `backgroundColorChange` is the transition preset that will be applied.
+
+When combined with the following `stylePreset` the paragraphs background will transition between states with different duration.
