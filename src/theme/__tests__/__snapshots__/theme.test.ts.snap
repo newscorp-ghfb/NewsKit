@@ -1688,7 +1688,10 @@ Object {
   },
   "linkStandalone": Object {
     "stylePreset": "linkStandalone",
-    "transitionPreset": "fontColorChange",
+    "transitionPreset": Array [
+      "fontColorChange",
+      "iconColorChange",
+    ],
     "typographyPreset": "utilityLabel020",
   },
   "menu": Object {
@@ -1703,6 +1706,7 @@ Object {
         "backgroundColorChange",
         "borderColorChange",
         "fontColorChange",
+        "iconColorChange",
       ],
       "typographyPreset": "utilityHeading030",
     },
@@ -1717,6 +1721,7 @@ Object {
         "backgroundColorChange",
         "borderColorChange",
         "fontColorChange",
+        "iconColorChange",
       ],
     },
     "vertical": Object {
@@ -1728,6 +1733,7 @@ Object {
         "backgroundColorChange",
         "borderColorChange",
         "fontColorChange",
+        "iconColorChange",
       ],
     },
   },

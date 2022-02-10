@@ -351,9 +351,9 @@ exports[`Table renders links correctly 1`] = `
 
 .emotion-5 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #577FFB;
   -webkit-text-decoration: none;
   text-decoration: none;
