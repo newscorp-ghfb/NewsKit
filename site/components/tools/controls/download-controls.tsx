@@ -157,7 +157,6 @@ export const DownloadControls = ({
 
   const buildAndDownloadSingleSvgFile = () => {
     const selectElementValue = selectSvgEl.current?.value;
-    console.log({selectElementValue});
     const selectedSvg = selectElementValue
       ? parseInt(selectElementValue, 10)
       : undefined;

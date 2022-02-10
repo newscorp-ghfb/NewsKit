@@ -102,7 +102,6 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
                     typeof children === 'string' ||
                     (Array.isArray(children) &&
                       children.some(
-                        // TODO: unwrap it
                         child => typeof child === 'string' || isFragment(child),
                       ))
                       ? 'p'

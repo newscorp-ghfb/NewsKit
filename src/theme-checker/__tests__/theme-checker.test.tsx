@@ -9,7 +9,6 @@ import {sunTheme} from '../themes/sun-theme/sun-theme';
 // Either remove the entire ThemeCheker testing,
 // or add the file to insanbul ignore
 // or move all mocks on the root level
-// jest.mock('date-fns/format', () => () => 'Mock Date');
 
 const themes = [
   newskitLightTheme,

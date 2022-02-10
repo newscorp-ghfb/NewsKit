@@ -78,12 +78,6 @@ describe('Banner', () => {
           ut labore et dolore magna aliqua.
         </React.Fragment>,
       ],
-      // children: [
-      //   `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      // eiusmod tempor incididunt`,
-      //   <LinkInline href="/">NewsKit Link</LinkInline>,
-      //   `ut labore et dolore magna aliqua.`,
-      // ],
     };
     const fragment = renderToFragmentWithTheme(Banner, props) as any;
 

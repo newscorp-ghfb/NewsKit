@@ -1,4 +1,5 @@
 import React from 'react';
+import {isFragment} from 'react-is';
 import {ToastProps} from './types';
 import {Divider, DividerOverrides} from '../divider';
 import {renderIfReactComponent} from '../utils/component';
@@ -66,7 +67,9 @@ const ThemelessToast: React.FC<ToastProps> = ({
             as={
               typeof children === 'string' ||
               (Array.isArray(children) &&
-                children.some(child => typeof child === 'string'))
+                children.some(
+                  child => typeof child === 'string' || isFragment(child),
+                ))
                 ? 'p'
                 : 'div'
             }
