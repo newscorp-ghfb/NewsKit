@@ -26,7 +26,7 @@ const UsageCardDont = {
 };
 
 const FeatureCardHorizontal = {
-  title: 'Feature Card',
+  title: 'Feature Card 1',
   description: 'This is a feature card.',
   buttonLabel: 'needHelpCard',
   layout: 'horizontal',
@@ -34,7 +34,7 @@ const FeatureCardHorizontal = {
 } as FeatureCardProps;
 
 const FeatureCardVertical = {
-  title: 'Feature Card',
+  title: 'Feature Card 2',
   description: 'This is a feature card.',
   buttonLabel: 'needHelpCard',
   layout: 'vertical',

@@ -1,4 +1,5 @@
 import React from 'react';
+import {isFragment} from 'react-is';
 import {BannerInternalProps} from './types';
 import {
   StyledBannerContainer,
@@ -100,7 +101,10 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
                   as={
                     typeof children === 'string' ||
                     (Array.isArray(children) &&
-                      children.some(child => typeof child === 'string'))
+                      children.some(
+                        // TODO: unwrap it
+                        child => typeof child === 'string' || isFragment(child),
+                      ))
                       ? 'p'
                       : 'div'
                   }
@@ -153,6 +157,7 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
                   ))}
                 {onClose && layout === 'horizontal' && (
                   <IconButton
+                    key="banner-close-button-horizontal"
                     data-testid="banner-close-button"
                     aria-label={closeButtonLabel}
                     size="small"

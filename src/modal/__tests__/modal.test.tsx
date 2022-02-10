@@ -1,6 +1,6 @@
 import {fireEvent, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import React, {useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
@@ -26,21 +26,30 @@ jest.mock('react-transition-group', () => {
       });
     };
 
-    const onEnter = () => callIfExist(props, 'onEnter');
-    const onExited = () => callIfExist(props, 'onExited');
+    const onEnter = React.useCallback(() => callIfExist(props, 'onEnter'), [
+      props,
+    ]);
+    const onExited = React.useCallback(() => callIfExist(props, 'onExited'), [
+      props,
+    ]);
+
+    useEffect(() => {
+      if (props.in) {
+        onEnter();
+      } else {
+        onExited();
+      }
+    }, [props.in, onEnter, onExited]);
 
     // check only for `in` prop and ignore `appear` since its always applied it does not play role
     if (props.in) {
-      onEnter();
       return (
         <FakeTransition>
           {React.Children.map(props.children, child => modifyChildren(child))}
         </FakeTransition>
       );
     }
-
     // modal is not in the DOM when is not open
-    onExited();
     return null;
   });
   return {

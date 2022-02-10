@@ -16,7 +16,7 @@ console.error = (...args: any[]) => {
     args[0].includes(
       'Warning: Encountered two children with the same key, `%s`.',
     ) &&
-    args[1] === 'mock-nk-1'
+    args[1].includes('mock-nk-1')
   ) {
     return;
   }

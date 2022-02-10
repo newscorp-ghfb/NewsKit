@@ -7,7 +7,7 @@ import {
 } from '../../test/test-utils';
 import {TextBlock} from '../../text-block';
 import {IconFilledInfo} from '../../icons';
-import {Link} from '../../link';
+import {LinkInline} from '../../link';
 import {Button} from '../../button';
 
 const layouts: BannerProps['layout'][] = ['horizontal', 'vertical'];
@@ -65,12 +65,25 @@ describe('Banner', () => {
 
   test('renders with content as string and link', () => {
     const props: BannerProps = {
+      // TODO: how we can fix this
       children: [
-        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt`,
-        <Link href="/">NewsKit Link</Link>,
-        `ut labore et dolore magna aliqua.`,
+        <React.Fragment key="1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt
+        </React.Fragment>,
+        <LinkInline key="2" href="/">
+          NewsKit Link
+        </LinkInline>,
+        <React.Fragment key="3">
+          ut labore et dolore magna aliqua.
+        </React.Fragment>,
       ],
+      // children: [
+      //   `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      // eiusmod tempor incididunt`,
+      //   <LinkInline href="/">NewsKit Link</LinkInline>,
+      //   `ut labore et dolore magna aliqua.`,
+      // ],
     };
     const fragment = renderToFragmentWithTheme(Banner, props) as any;
 

@@ -100,7 +100,10 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
         };
 
         return (
-          <Block spaceStack={i !== arr.length - 1 ? 'space100' : undefined}>
+          <Block
+            key={`${title}-${summary}`}
+            spaceStack={i !== arr.length - 1 ? 'space100' : undefined}
+          >
             {title && (
               <ContentText title={title} titleAs="span">
                 {summary}
@@ -109,7 +112,7 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
             {tabs.length > 1 && (
               <Tabs size={TabSize.Medium}>
                 {tabs.map(({label, tabSummary, content}) => (
-                  <Tab label={label} overrides={tabOverrides}>
+                  <Tab label={label} overrides={tabOverrides} key={label}>
                     {tabSummary && <ContentText>{tabSummary}</ContentText>}
                     {content}
                   </Tab>

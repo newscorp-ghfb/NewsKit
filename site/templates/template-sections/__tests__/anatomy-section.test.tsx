@@ -3,6 +3,10 @@ import {getIllustrationComponent} from '../../../components/illustrations/illust
 import {AnatomySection, AnatomySectionProps} from '..';
 import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 
+jest.mock('../../../components/illustrations/illustration-loader', () => ({
+  getIllustrationComponent: jest.fn().mockReturnValue(() => <div>Mock</div>),
+}));
+
 jest.mock('../../../components/table/table');
 jest.mock(
   'newskit',

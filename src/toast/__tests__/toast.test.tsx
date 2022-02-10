@@ -197,7 +197,9 @@ describe('Toast', () => {
     test('toast adds component to DOM', async () => {
       const messageText = 'test message';
       const action = () => toast(<div>{messageText}</div>);
-      const {getByTestId, getByText} = renderWithTheme(ToastExample, {action});
+      const {getByTestId, getByText, unmount} = renderWithTheme(ToastExample, {
+        action,
+      });
 
       // TODO: Why this is working
       // waitFor(() => getByTestId('toast-container'));
@@ -206,6 +208,7 @@ describe('Toast', () => {
       fireEvent.click(actionBtn);
       const toastMessage = getByText(messageText);
       expect(toastMessage).toBeDefined();
+      unmount();
     });
 
     test('toast can be removed from DOM via button', async () => {
@@ -226,7 +229,7 @@ describe('Toast', () => {
           ),
           {autoHideDuration: 1500},
         );
-      const {getByTestId, getByText} = renderWithTheme(ToastExample, {
+      const {getByTestId, getByText, unmount} = renderWithTheme(ToastExample, {
         action,
       });
 
@@ -237,6 +240,7 @@ describe('Toast', () => {
       fireEvent.click(closeBtn);
 
       await waitForElementToBeRemoved(() => getByText(messageText));
+      unmount();
     });
   });
 });

@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import React, {useEffect, useState} from 'react';
 import {Block} from '../block';
 import {Flow, Stack} from '../stack';
@@ -54,7 +55,9 @@ const ThemeCheckerScenario = ({
       </TextBlock>
     </Block>
     {stylePresetVariations.includes(name) ? (
-      <StylePresetsLoader name={name}>{children}</StylePresetsLoader>
+      <StylePresetsLoader key="name" name={name}>
+        {children}
+      </StylePresetsLoader>
     ) : (
       children({})
     )}
