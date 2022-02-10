@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {Select, SelectModalProps, SelectOption} from '..';
+import {Select, SelectOption} from '..';
 import {styled} from '../../utils/style';
 import {Stack} from '../../stack';
 import {Block} from '../../block';
@@ -18,7 +18,7 @@ import {
   IconFilledAccountBalance,
   IconFilledClose,
 } from '../../icons';
-import {Modal} from '../../modal';
+import {Modal, ModalProps} from '../../modal';
 import {Button} from '../../button/button';
 import {InlineMessage} from '../../inline-message';
 
@@ -701,7 +701,7 @@ const selectWithModalVariants = [
     props: {
       overrides: {
         button: {width: '100%'},
-        modal: ({children, ...restProps}: SelectModalProps) => (
+        modal: ({children, ...restProps}: ModalProps) => (
           <Modal {...restProps} closePosition="none">
             <CustomModalContainer>{children}</CustomModalContainer>
             <Block spaceStack="space040" />

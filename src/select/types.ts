@@ -22,9 +22,6 @@ export interface SelectButtonOverrides extends EnhancerOverrides {
   };
 }
 
-export type SelectModalProps = ModalProps &
-  Partial<Pick<ModalProps, 'open' | 'onDismiss'>>;
-
 export interface SelectPanelOverrides {
   maxHeight?: MQ<string>;
   stylePreset?: MQ<string>;
@@ -35,7 +32,7 @@ export interface SelectPanelOverrides {
 export type SelectPropsOverrides = {
   button?: SelectButtonOverrides;
   panel?: SelectPanelOverrides;
-  modal?: Override<SelectModalProps>;
+  modal?: Override<ModalProps>;
 };
 
 export interface SelectProps extends CommonInputProps {
