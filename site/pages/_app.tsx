@@ -130,6 +130,8 @@ export default class MyApp extends App<Props, State> {
         <HeadNextSeo
           description="NewsKit design system - components and guidelines to 
           help increase the speed of creation and innovation in digital teams."
+          url=""
+          alt=""
         />
         <InstrumentationProvider
           {...createEventInstrumentation(handlers, {
