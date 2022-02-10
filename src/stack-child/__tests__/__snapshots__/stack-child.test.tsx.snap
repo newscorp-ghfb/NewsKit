@@ -64,7 +64,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
-  transition-property: background-color,border-color,outline-color;
+  transition-property: background-color,border-color,fill;
   transition-duration: 200ms,200ms,200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
@@ -298,7 +298,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
-  transition-property: background-color,border-color,outline-color;
+  transition-property: background-color,border-color,fill;
   transition-duration: 200ms,200ms,200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
@@ -532,7 +532,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
-  transition-property: background-color,border-color,outline-color;
+  transition-property: background-color,border-color,fill;
   transition-duration: 200ms,200ms,200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }

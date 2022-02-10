@@ -511,7 +511,7 @@ Object {
     "iconColorChange": Object {
       "base": Object {
         "transitionDuration": "{{motions.motionDuration020}}",
-        "transitionProperty": "outline-color",
+        "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
@@ -1190,7 +1190,11 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish040",
       "stylePreset": "buttonSolidPrimary",
-      "transitionPreset": "backgroundColorChange",
+      "transitionPreset": Array [
+        "backgroundColorChange",
+        "borderColorChange",
+        "iconColorChange",
+      ],
       "typographyPreset": "utilityButton030",
     },
     "medium": Object {
@@ -1203,7 +1207,11 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "buttonSolidPrimary",
-      "transitionPreset": "backgroundColorChange",
+      "transitionPreset": Array [
+        "backgroundColorChange",
+        "borderColorChange",
+        "iconColorChange",
+      ],
       "typographyPreset": "utilityButton020",
     },
     "small": Object {
@@ -1216,7 +1224,11 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish020",
       "stylePreset": "buttonSolidPrimary",
-      "transitionPreset": "backgroundColorChange",
+      "transitionPreset": Array [
+        "backgroundColorChange",
+        "borderColorChange",
+        "iconColorChange",
+      ],
       "typographyPreset": "utilityButton010",
     },
   },
@@ -1676,6 +1688,7 @@ Object {
   },
   "linkStandalone": Object {
     "stylePreset": "linkStandalone",
+    "transitionPreset": "fontColorChange",
     "typographyPreset": "utilityLabel020",
   },
   "menu": Object {

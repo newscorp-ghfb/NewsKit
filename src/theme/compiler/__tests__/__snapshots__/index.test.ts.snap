@@ -642,7 +642,7 @@ Object {
     "iconColorChange": Object {
       "base": Object {
         "transitionDuration": "200ms",
-        "transitionProperty": "outline-color",
+        "transitionProperty": "fill",
         "transitionTimingFunction": "cubic-bezier(0, 0, .5, 1)",
       },
     },
