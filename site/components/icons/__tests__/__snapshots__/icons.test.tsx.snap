@@ -4,6 +4,9 @@ exports[`Icons IconFilledAA icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -28,6 +31,9 @@ exports[`Icons IconFilledAAA icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -127,6 +133,9 @@ exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #0A782A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -135,6 +144,9 @@ exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
   width: 24px;
   height: 24px;
   fill: #0A782A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 <div
@@ -173,6 +185,9 @@ exports[`Icons IconFilledChrome icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -204,6 +219,9 @@ exports[`Icons IconFilledCircle icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -303,6 +321,9 @@ exports[`Icons IconFilledCrossCircle icon renders as expected 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #D20600;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -311,6 +332,9 @@ exports[`Icons IconFilledCrossCircle icon renders as expected 1`] = `
   width: 24px;
   height: 24px;
   fill: #D20600;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 <div
@@ -349,6 +373,9 @@ exports[`Icons IconFilledDark icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -382,6 +409,9 @@ exports[`Icons IconFilledEdge icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -404,6 +434,9 @@ exports[`Icons IconFilledFirefox icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -426,6 +459,9 @@ exports[`Icons IconFilledLight icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -459,6 +495,9 @@ exports[`Icons IconFilledNpm icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -483,6 +522,9 @@ exports[`Icons IconFilledNullDot icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #E4E4E4;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
   margin: 0 6px;
@@ -492,6 +534,9 @@ exports[`Icons IconFilledNullDot icon renders as expected 1`] = `
   width: 12px;
   height: 12px;
   fill: #E4E4E4;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 <svg
@@ -514,6 +559,9 @@ exports[`Icons IconFilledSafari icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }

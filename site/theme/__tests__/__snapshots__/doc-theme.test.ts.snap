@@ -1589,7 +1589,7 @@ Object {
     "iconColorChange": Object {
       "base": Object {
         "transitionDuration": "{{motions.motionDuration020}}",
-        "transitionProperty": "outline-color",
+        "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
@@ -3698,7 +3698,7 @@ Object {
     "iconColorChange": Object {
       "base": Object {
         "transitionDuration": "{{motions.motionDuration020}}",
-        "transitionProperty": "outline-color",
+        "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
@@ -5807,7 +5807,7 @@ Object {
     "iconColorChange": Object {
       "base": Object {
         "transitionDuration": "{{motions.motionDuration020}}",
-        "transitionProperty": "outline-color",
+        "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
@@ -7916,7 +7916,7 @@ Object {
     "iconColorChange": Object {
       "base": Object {
         "transitionDuration": "{{motions.motionDuration020}}",
-        "transitionProperty": "outline-color",
+        "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
@@ -10025,7 +10025,7 @@ Object {
     "iconColorChange": Object {
       "base": Object {
         "transitionDuration": "{{motions.motionDuration020}}",
-        "transitionProperty": "outline-color",
+        "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
@@ -12134,7 +12134,7 @@ Object {
     "iconColorChange": Object {
       "base": Object {
         "transitionDuration": "{{motions.motionDuration020}}",
-        "transitionProperty": "outline-color",
+        "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
@@ -14243,7 +14243,7 @@ Object {
     "iconColorChange": Object {
       "base": Object {
         "transitionDuration": "{{motions.motionDuration020}}",
-        "transitionProperty": "outline-color",
+        "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
@@ -16352,7 +16352,7 @@ Object {
     "iconColorChange": Object {
       "base": Object {
         "transitionDuration": "{{motions.motionDuration020}}",
-        "transitionProperty": "outline-color",
+        "transitionProperty": "fill",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },

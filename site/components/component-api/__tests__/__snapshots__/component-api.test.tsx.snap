@@ -296,12 +296,18 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #0A782A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-22.emotion-22 {
   fill: #0A782A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 <div
@@ -853,12 +859,18 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #0A782A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-26.emotion-26 {
   fill: #0A782A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-33 {
@@ -985,7 +997,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   background-color: transparent;
   color: #535353;
   margin: 0;
-  transition-property: background-color,border-color,outline-color,color;
+  transition-property: background-color,border-color,fill,color;
   transition-duration: 200ms,200ms,200ms,200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
@@ -1099,7 +1111,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   background-color: transparent;
   color: #535353;
   margin: 0;
-  transition-property: background-color,border-color,outline-color,color;
+  transition-property: background-color,border-color,fill,color;
   transition-duration: 200ms,200ms,200ms,200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;

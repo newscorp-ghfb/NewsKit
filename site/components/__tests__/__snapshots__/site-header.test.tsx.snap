@@ -179,6 +179,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   overflow: hidden;
   color: #577FFB;
   fill: #577FFB;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -188,6 +191,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   height: 32px;
   color: #577FFB;
   fill: #577FFB;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-10 {
@@ -645,9 +651,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   background-color: #F4F4F4;
   border-radius: 50%;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -696,6 +702,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-83 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -1389,6 +1398,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   overflow: hidden;
   color: #577FFB;
   fill: #577FFB;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -1398,6 +1410,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   height: 32px;
   color: #577FFB;
   fill: #577FFB;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-10 {
@@ -1855,9 +1870,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   background-color: #F4F4F4;
   border-radius: 50%;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -1906,6 +1921,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-83 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -2599,6 +2617,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   overflow: hidden;
   color: #577FFB;
   fill: #577FFB;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -2608,6 +2629,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   height: 32px;
   color: #577FFB;
   fill: #577FFB;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-10 {
@@ -3042,9 +3066,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   background-color: #F4F4F4;
   border-radius: 50%;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -3093,6 +3117,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-83 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }

@@ -157,12 +157,18 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   vertical-align: middle;
   overflow: hidden;
   fill: #0A782A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-10.emotion-10 {
   fill: #0A782A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-12 {
@@ -180,6 +186,9 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 
 .emotion-15 {
   fill: #E4E4E4;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
   margin: 0 6px;
@@ -189,6 +198,9 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   width: 12px;
   height: 12px;
   fill: #E4E4E4;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 <div

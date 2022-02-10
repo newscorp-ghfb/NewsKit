@@ -256,7 +256,7 @@ exports[`Card renders actions section with given component 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
-  transition-property: background-color,border-color,outline-color;
+  transition-property: background-color,border-color,fill;
   transition-duration: 200ms,200ms,200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
@@ -361,9 +361,9 @@ exports[`Card renders actions section with given component 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -631,7 +631,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
-  transition-property: background-color,border-color,outline-color;
+  transition-property: background-color,border-color,fill;
   transition-duration: 200ms,200ms,200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
@@ -736,9 +736,9 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -1006,7 +1006,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
-  transition-property: background-color,border-color,outline-color;
+  transition-property: background-color,border-color,fill;
   transition-duration: 200ms,200ms,200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
@@ -1111,9 +1111,9 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -2572,7 +2572,7 @@ exports[`Card renders with card items 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
-  transition-property: background-color,border-color,outline-color;
+  transition-property: background-color,border-color,fill;
   transition-duration: 200ms,200ms,200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
@@ -2677,9 +2677,9 @@ exports[`Card renders with card items 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -4535,7 +4535,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
-  transition-property: background-color,border-color,outline-color;
+  transition-property: background-color,border-color,fill;
   transition-duration: 200ms,200ms,200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
@@ -4640,9 +4640,9 @@ exports[`Card with href renders correctly with actions 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -6348,7 +6348,7 @@ exports[`CardInset renders with card items 1`] = `
   border-width: 1px;
   color: #2E2E2E;
   border-radius: 0;
-  transition-property: background-color,border-color,outline-color;
+  transition-property: background-color,border-color,fill;
   transition-duration: 200ms,200ms,200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
@@ -6453,9 +6453,9 @@ exports[`CardInset renders with card items 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 

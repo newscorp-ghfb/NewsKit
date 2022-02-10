@@ -163,9 +163,9 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -464,6 +464,9 @@ exports[`Form renders with error and with submit validation and revalidation mod
   vertical-align: middle;
   overflow: hidden;
   fill: #D20600;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -472,6 +475,9 @@ exports[`Form renders with error and with submit validation and revalidation mod
   width: 24px;
   height: 24px;
   fill: #D20600;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-8 {
@@ -531,9 +537,9 @@ exports[`Form renders with error and with submit validation and revalidation mod
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -879,6 +885,9 @@ exports[`Form renders with error on blur 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #D20600;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -887,6 +896,9 @@ exports[`Form renders with error on blur 1`] = `
   width: 24px;
   height: 24px;
   fill: #D20600;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-8 {
@@ -1036,9 +1048,9 @@ exports[`Form renders with error on blur 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -1361,6 +1373,9 @@ exports[`Form renders with error on submit 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #D20600;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -1369,6 +1384,9 @@ exports[`Form renders with error on submit 1`] = `
   width: 24px;
   height: 24px;
   fill: #D20600;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-8 {
@@ -1428,9 +1446,9 @@ exports[`Form renders with error on submit 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -1776,6 +1794,9 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #D20600;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -1784,6 +1805,9 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   width: 24px;
   height: 24px;
   fill: #D20600;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-8 {
@@ -1933,9 +1957,9 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -2525,9 +2549,9 @@ exports[`Form renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -2877,9 +2901,9 @@ exports[`Form renders with onBlur validation 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -3227,6 +3251,9 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -3963,6 +3990,9 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -4706,6 +4736,9 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -5026,6 +5059,9 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -5672,6 +5708,9 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -5763,9 +5802,9 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -6150,6 +6189,9 @@ exports[`FormInput renders with nested inputs 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -6533,9 +6575,9 @@ exports[`FormInput renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 

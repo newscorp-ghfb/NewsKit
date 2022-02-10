@@ -253,7 +253,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   background-color: transparent;
   color: #535353;
   margin: 0;
-  transition-property: background-color,border-color,outline-color,color;
+  transition-property: background-color,border-color,fill,color;
   transition-duration: 200ms,200ms,200ms,200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
@@ -367,7 +367,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   background-color: transparent;
   color: #535353;
   margin: 0;
-  transition-property: background-color,border-color,outline-color,color;
+  transition-property: background-color,border-color,fill,color;
   transition-duration: 200ms,200ms,200ms,200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   cursor: pointer;

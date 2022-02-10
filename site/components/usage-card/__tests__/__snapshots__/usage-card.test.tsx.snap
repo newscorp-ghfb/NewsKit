@@ -90,6 +90,9 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #D20600;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -98,6 +101,9 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   width: 24px;
   height: 24px;
   fill: #D20600;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-7 {
@@ -373,6 +379,9 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #0A782A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -381,6 +390,9 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   width: 24px;
   height: 24px;
   fill: #0A782A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-7 {
