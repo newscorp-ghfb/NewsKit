@@ -20,6 +20,8 @@ export default (layoutProps: LayoutProps) => (
     <HeadNextSeo
       title="Components overview"
       description="Components are key building blocks of the NewsKit design system."
+      url="about/contribute/contribute-banner-create.svg"
+      alt="Components overview"
     />
     <HeaderIndex title="Components" media={HeaderImage}>
       Components are key building blocks of the NewsKit design system.

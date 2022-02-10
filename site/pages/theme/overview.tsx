@@ -56,7 +56,12 @@ export default (layoutProps: LayoutProps) => {
             themeMode === 'light' ? foundationsThemeLight : foundationsThemeDark
           }
         >
-          <HeadNextSeo title="Theme overview" description={pageDescription} />
+          <HeadNextSeo
+            title="Theme overview"
+            description={pageDescription}
+            url="about/contribute/contribute-banner-create.svg"
+            alt="theme overview"
+          />
 
           <HeaderIndex title="Theme" media={HeaderImage}>
             {pageDescription}

@@ -6,7 +6,7 @@ interface PageTitleProps {
 }
 
 const PageTitle: React.FC<PageTitleProps> = ({title}) => (
-  <HeadNextSeo title={title} />
+  <HeadNextSeo title={title} url="" />
 );
 
 export default PageTitle;
