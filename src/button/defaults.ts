@@ -13,21 +13,6 @@ export default {
         'borderColorChange',
         'iconColorChange',
       ],
-      //     [{
-      //     extend: 'backgroundColorChange',
-      //     base: {
-      //       transitionDuration: '{{motions.motionDuration020}}',
-      //     },
-      //   },
-
-      //   {
-      //     extend: 'borderColorChange',
-      //     base: {
-      //       transitionDuration: '{{motions.motionDuration040}}',
-      //     },
-      //   },
-      // ],
-
       loadingIndicator: {
         stylePreset: 'indeterminateProgressIndicatorPrimary',
       },
@@ -45,12 +30,6 @@ export default {
         'borderColorChange',
         'iconColorChange',
       ],
-      // transitionPreset:{
-      //   extend: 'backgroundColorChange',
-      //   base: {
-      //     transitionDuration: '{{motions.motionDuration020}}',
-      //   },
-      // },
       loadingIndicator: {
         stylePreset: 'indeterminateProgressIndicatorPrimary',
       },
@@ -68,14 +47,6 @@ export default {
         'borderColorChange',
         'iconColorChange',
       ],
-      // transitionPreset:{
-      //   extend: 'backgroundColorChange',
-      //   base: {
-      //     transitionProperty: 'background-color',
-      //     transitionDuration: '{{motions.motionDuration020}}',
-      //     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-      //   },
-      // },
       loadingIndicator: {
         stylePreset: 'indeterminateProgressIndicatorPrimary',
       },
