@@ -14,6 +14,7 @@ import {Label} from '../../label';
 import {AssistiveText} from '../../assistive-text';
 import {createTheme, ThemeProvider} from '../../theme';
 import {IconFilledCheckCircle, IconFilledAccountBalance} from '../../icons';
+import {Tabs, Tab} from '../../tabs';
 
 const items = [
   'Neptunium',
@@ -60,6 +61,79 @@ export default {
   title: 'NewsKit Light/select',
   component: () => 'None',
 };
+
+export const StoryTest = () => (
+  <>
+    <StorybookHeading>Z-index</StorybookHeading>
+    <Container>
+      <Select>
+        <SelectOption key="sel 1" value="select 1">
+          select 1
+        </SelectOption>
+        <SelectOption key="sel 2" value="select 2">
+          select 2
+        </SelectOption>
+      </Select>
+      <div style={{height: '30px', background: 'salmon'}}>
+        Div container with text sitting between the Select and Tabs components{' '}
+      </div>
+      <Tabs>
+        <Tab label="Tab 1">option 1</Tab>
+        <Tab label="Tab 2">option 2</Tab>
+      </Tabs>
+    </Container>
+  </>
+);
+StoryTest.storyName = 'Select TESTT';
+
+export const TESt = () => {
+  const F = styled.div`
+    .level-1 {
+      width: 200px;
+      height: 200px;
+      border: 1px solid;
+    }
+
+    .level-1:nth-of-type(1) {
+      background: hotpink;
+    }
+
+    .level-1:nth-of-type(2) {
+      background: red;
+      margin-top: -50px;
+      margin-left: 50px;
+
+      position: relative;
+    }
+
+    .level-1:nth-of-type(3) {
+      background: bisque;
+      margin-top: -100px;
+      margin-left: 100px;
+    }
+
+    .level-2 {
+      width: 100px;
+      height: 100px;
+      background: green;
+      margin-top: 80px;
+
+      position: absolute;
+      /*   z-index: 1; */
+    }
+  `;
+
+  return (
+    <F>
+      <div className="level-1">
+        <div className="level-2" />
+      </div>
+      <div className="level-1" />
+      <div className="level-1" />
+    </F>
+  );
+};
+TESt.storyName = 'zindex TESTT';
 
 export const StorySelectSize = () => (
   <>

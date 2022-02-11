@@ -106,7 +106,7 @@ export const StyledSelectPanel = styled.div<{
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
+  // z-index: 1;
 
   ${({$size}) =>
     getResponsiveSpace(`marginTop`, `select.${$size}.panel`, '', 'spaceStack')}
@@ -126,6 +126,7 @@ export const StyledSelectPanel = styled.div<{
   ${({$isOpen}) => `display: ${$isOpen ? 'block' : 'none'};`}
 
   ${({$size}) => getStylePreset(`select.${$size}.panel`, '')};
+  background: yellow;
 
   ${({$size}) =>
     getResponsiveSize('maxHeight', `select.${$size}.panel`, '', 'maxHeight')};

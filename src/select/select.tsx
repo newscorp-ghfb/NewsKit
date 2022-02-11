@@ -7,6 +7,7 @@ import {SelectButton} from './select-button';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {Portal} from '../utils/portal';
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -171,22 +172,24 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           {...downshiftButtonPropsExceptRef}
           {...restProps}
         />
-        <SelectPanel
-          isOpen={isOpen}
-          overrides={overrides?.panel}
-          width={width}
-          height={height}
-          top={top}
-          left={left}
-          size={size}
-          selectedItem={selectedItem}
-          highlightedIndex={highlightedIndex}
-          getItemProps={getItemProps}
-          {...downshiftMenuPropsExceptRef}
-          ref={composeRefs(panelRef, downshiftMenuPropsRef)}
-        >
-          {children}
-        </SelectPanel>
+        <Portal rootId="portal">
+          <SelectPanel
+            isOpen={isOpen}
+            overrides={overrides?.panel}
+            width={width}
+            height={height}
+            top={top}
+            left={left}
+            size={size}
+            selectedItem={selectedItem}
+            highlightedIndex={highlightedIndex}
+            getItemProps={getItemProps}
+            {...downshiftMenuPropsExceptRef}
+            ref={composeRefs(panelRef, downshiftMenuPropsRef)}
+          >
+            {children}
+          </SelectPanel>
+        </Portal>
       </>
     );
   },

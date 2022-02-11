@@ -18,12 +18,14 @@ const Box = styled.div`
 const DrawerContainer = styled.div`
   margin-left: 10vw;
   margin-right: 10vw;
-  background: #f1f1f1;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  background: #f9f9f9;
 
   position: relative;
-  border: 1px solid red;
-  width: 80vw;
-  height: 80vh;
+  // border: 1px dotted gray;
+  width: 20vw;
+  height: 30vh;
   overflow: hidden;
 `;
 
@@ -47,41 +49,42 @@ const BoxWithContent = ({open}: {open?: () => void}) => (
 );
 
 const DrawerContent = () => (
-  <>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lorem
-      massa, et lacinia ipsum tristique id. Phasellus sed posuere lacus.
-      Pellentesque eu odio <Link href="/">Test link 1</Link> sapien. Donec
-      finibus pellentesque est porta dictum. Suspendisse venenatis vitae augue
-      nec hendrerit. In ut quam tempus, feugiat risus quis, porta eros. Aliquam
-      ultricies ac orci viverra gravida. Ut sodales odio tempor sodales viverra.
-      In condimentum tincidunt fermentum. Nullam imperdiet est vel tincidunt
-      suscipit. Vestibulum vel pulvinar nibh, at molestie lectus. Curabitur
-      ultricies massa eu sem varius volutpat. Ut vitae purus et enim imperdiet
-      finibus. Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
-      interdum.
-    </p>
-    <TextInput label="First name" />
-    <TextInput label="Last name" />
-    <TextInput label="Phone number" />
-    <div>
-      <Link href="/">For more information...</Link>{' '}
-    </div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
-      scelerisque sapien. Praesent mollis vestibulum nunc at blandit. Donec
-      vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
-      Pellentesque consequat mi in imperdiet ultrices. Sed vitae erat ac urna{' '}
-      <Link href="/">Test link 2</Link> rutrum aliquet eu mattis ligula. Sed
-      dapibus, enim sed tristique gravida, nisl dolor malesuada lacus, quis
-      auctor dui mauris eu odio. Vivamus eu augue et enim varius viverra.
-      Vivamus ut tellus iaculis, ullamcorper ligula sit amet, posuere ipsum.
-    </p>
-    <div>
-      <Button>Remind me later</Button>
-      <Button>Ok</Button>
-    </div>
-  </>
+  <div>Content</div>
+  // <>
+  //   <p>
+  //     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lorem
+  //     massa, et lacinia ipsum tristique id. Phasellus sed posuere lacus.
+  //     Pellentesque eu odio <Link href="/">Test link 1</Link> sapien. Donec
+  //     finibus pellentesque est porta dictum. Suspendisse venenatis vitae augue
+  //     nec hendrerit. In ut quam tempus, feugiat risus quis, porta eros. Aliquam
+  //     ultricies ac orci viverra gravida. Ut sodales odio tempor sodales viverra.
+  //     In condimentum tincidunt fermentum. Nullam imperdiet est vel tincidunt
+  //     suscipit. Vestibulum vel pulvinar nibh, at molestie lectus. Curabitur
+  //     ultricies massa eu sem varius volutpat. Ut vitae purus et enim imperdiet
+  //     finibus. Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
+  //     interdum.
+  //   </p>
+  //   <TextInput label="First name" />
+  //   <TextInput label="Last name" />
+  //   <TextInput label="Phone number" />
+  //   <div>
+  //     <Link href="/">For more information...</Link>{' '}
+  //   </div>
+  //   <p>
+  //     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
+  //     scelerisque sapien. Praesent mollis vestibulum nunc at blandit. Donec
+  //     vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
+  //     Pellentesque consequat mi in imperdiet ultrices. Sed vitae erat ac urna{' '}
+  //     <Link href="/">Test link 2</Link> rutrum aliquet eu mattis ligula. Sed
+  //     dapibus, enim sed tristique gravida, nisl dolor malesuada lacus, quis
+  //     auctor dui mauris eu odio. Vivamus eu augue et enim varius viverra.
+  //     Vivamus ut tellus iaculis, ullamcorper ligula sit amet, posuere ipsum.
+  //   </p>
+  //   <div>
+  //     <Button>Remind me later</Button>
+  //     <Button>Ok</Button>
+  //   </div>
+  // </>
 );
 
 export default {
@@ -168,6 +171,50 @@ export const StoryDefault = () =>
 StoryDefault.storyName = 'default';
 StoryDefault.parameters = {eyes: {include: false}};
 
+const myCustomTheme = createTheme({
+  name: 'my-custom-drawer-theme',
+  overrides: {
+    stylePresets: {
+      overlayCustom: {
+        base: {
+          backgroundColor: '{{colors.purple050}}',
+        },
+      },
+      drawerPanelCustom: {
+        base: {
+          // backgroundColor: '{{colors.purple030}}',
+          boxShadow: '0px 0px 16px 14px rgba(169,183,172,0.9)',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderStyle: 'dotted',
+          borderColor: '{{colors.purple070}}',
+        },
+      },
+      drawerHeaderCustom: {
+        base: {
+          backgroundColor: '{{colors.purple030}}',
+          // borderStyle: 'none none solid none',
+          // borderWidth: '{{borders.borderWidth010}}',
+          // borderColor: '{{colors.red060}}',
+        },
+      },
+      drawerCloseButtonCustom: {
+        base: {
+          // borderWidth: '{{borders.borderWidth010}}',
+          // borderStyle: 'solid',
+          // borderColor: '{{colors.teal030}}',
+          backgroundColor: '{{colors.purple030}}',
+          // borderRadius: '{{borders.borderRadiusCircle}}',
+          iconColor: '{{colors.purple070}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.purple030}}',
+          iconColor: '{{colors.purple090}}',
+        },
+      },
+    },
+  },
+});
+
 export const StoryInline = () =>
   React.createElement(() => {
     const [isActive, open, close, toggle] = useActiveState();
@@ -222,37 +269,43 @@ export const StoryInline = () =>
           </label>
         </Block>
 
-        <DrawerContainer>
-          <Drawer
-            aria-label="Drawer example"
-            open={isActive}
-            onDismiss={close}
-            inline
-            disableFocusTrap
-            hideOverlay
-            placement={placement as 'top' | 'left' | 'right' | 'bottom'}
-            header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-            overrides={{
-              panel: {minSize: '20vh', maxSize: '50%'},
-            }}
-          >
-            <DrawerContent />
-          </Drawer>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
-            lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
-            lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
-            sapien. Donec finibus pellentesque est porta dictum. Suspendisse
-            venenatis vitae augue nec hendrerit. In ut quam tempus, feugiat
-            risus quis, porta eros. Aliquam ultricies ac orci viverra gravida.
-            Ut sodales odio tempor sodales viverra. In condimentum tincidunt
-            fermentum. Nullam imperdiet est vel tincidunt suscipit. Vestibulum
-            vel pulvinar nibh, at molestie lectus. Curabitur ultricies massa eu
-            sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
-            Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
-            interdum.
-          </p>
-        </DrawerContainer>
+        <ThemeProvider theme={myCustomTheme}>
+          <DrawerContainer>
+            <Drawer
+              aria-label="Drawer example"
+              open={isActive}
+              onDismiss={close}
+              inline
+              disableFocusTrap
+              hideOverlay
+              placement={placement as 'top' | 'left' | 'right' | 'bottom'}
+              header="Drawer"
+              overrides={{
+                overlay: {
+                  stylePreset: 'overlayCustom',
+                },
+                panel: {
+                  stylePreset: 'drawerPanelCustom',
+                  minSize: '20vh',
+                  maxSize: '40%',
+                },
+                header: {
+                  spaceInset: 'spaceInset000',
+                  stylePreset: 'drawerHeaderCustom',
+                },
+                content: {
+                  spaceInset: 'spaceInset000',
+                },
+                closeButton: {
+                  stylePreset: 'drawerCloseButtonCustom',
+                  spaceInset: 'spaceInset000',
+                },
+              }}
+            >
+              <DrawerContent />
+            </Drawer>
+          </DrawerContainer>
+        </ThemeProvider>
 
         <BoxWithContent open={open} />
       </div>
