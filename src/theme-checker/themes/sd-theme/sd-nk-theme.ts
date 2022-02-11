@@ -7,7 +7,6 @@ export const sdTheme = {
   themeVersion: 1,
 };
 
-// TODO FIX SHADOW IN REPO, SEe how shadows are in sun-theme
 export const sdNkTheme = createTheme({
   name: 'sd-marco-theme',
   baseTheme: newskitLightTheme,
