@@ -69,7 +69,7 @@ export default ({path, ...props}: LayoutProps) => (
     <HeadNextSeo
       title="Contribute"
       description="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
-      url="about/contribute/contribute-banner-create.svg"
+      imageUrl="social/about.png"
       alt="Contribute"
     />
 

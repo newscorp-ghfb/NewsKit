@@ -22,8 +22,8 @@ export default ({path, ...props}: LayoutProps) => (
     <HeadNextSeo
       title="Roadmap"
       description="NewsKit’s Design System team is busy building and planning to help you build better products faster."
-      url="about/contribute/contribute-banner-create.svg"
-      alt="roadmap"
+      imageUrl="social/about.png"
+      alt="Roadmap"
     />
 
     <PageIntroductionContainer>

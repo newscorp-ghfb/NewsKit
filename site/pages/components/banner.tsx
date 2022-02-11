@@ -42,8 +42,6 @@ export default (layoutProps: LayoutProps) => (
       title: 'Banner',
       description:
         'A Banner communicates essential information without blocking an experience. They are positioned at the top of the screen, so they are noticeable. They require user action to disappear.',
-      imageUrl: 'about/contribute/contribute-banner-create.svg',
-      alt: 'Banner',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{

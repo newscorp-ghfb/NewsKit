@@ -88,8 +88,8 @@ export default ({path, ...props}: LayoutProps) => (
       description="NewsKit provides components, guidelines and standards to enable digital product 
       teams to create high-quality, consistent products quickly. NewsKit is built on modular design 
       principles and backed by best practice guidance for design and development."
-      url="about/contribute/contribute-banner-create.svg"
-      alt="introduction"
+      imageUrl="social/about.png"
+      alt="Introduction"
     />
 
     <PageIntroductionContainer>

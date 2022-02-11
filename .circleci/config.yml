@@ -370,7 +370,9 @@ jobs:
           at: ~/project
       - run:
           name: Build
-          command: make build_docs
+          command: |
+            export SITE_BASE_URL=${SITE_BASE_URL}
+            make build_docs
       - persist_to_workspace:
           root: ./
           paths:
@@ -379,23 +381,6 @@ jobs:
           <<: *slack_status
 
   build_docs_prod:
-    <<: *working_directory
-    executor: node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Build
-          command: make build_docs_prod
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - public/*
-      - slack/status:
-          <<: *slack_status
-
-  build_docs_pr:
     <<: *working_directory
     executor: node-xlarge
     steps:
@@ -406,7 +391,7 @@ jobs:
           name: Build
           command: |
             export SITE_BASE_URL=${SITE_BASE_URL}
-            make build_docs_pr
+            make build_docs_prod
       - persist_to_workspace:
           root: ./
           paths:
@@ -1082,10 +1067,10 @@ workflows:
           environment: pr
           requires:
             - init_aws
-      - build_docs_pr:
+      - build_docs_prod:
           <<: *only_pr
-          name: build_docs_pr
-          context: ncu-newskit-site-dev
+          name: build_docs_prod
+          context: ncu-newskit-site-pr
           requires:
             - build_icons
       - push_s3:
@@ -1094,7 +1079,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_terraform_s3_dev
-            - build_docs_pr
+            - build_docs_prod
             - build_storybook
       - post_pr_env_url_to_github_pr:
           <<: *only_pr
@@ -1155,7 +1140,7 @@ workflows:
             - eks_kubectl_deploy_dev
       - build_docs_prod:
           <<: *only_develop
-          name: 'build_docs_prod'
+          name: build_docs_prod
           requires:
             - approve_publish_docs
       - build_push_docker_ecr:

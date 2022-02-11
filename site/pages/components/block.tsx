@@ -21,8 +21,6 @@ export default (layoutProps: LayoutProps) => (
       title: 'Block',
       description:
         'The Block is a simple container component that style and space can be applied to. This is the equivalent to a frame in Figma.',
-      imageUrl: 'about/contribute/contribute-banner-create.svg',
-      alt: 'Block',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{

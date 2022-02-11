@@ -22,7 +22,7 @@ export const PageTemplate: React.FC<TemplateProps> = ({
     <HeadNextSeo
       title={headTags.title}
       description={headTags.description}
-      url={headTags.imageUrl || ''}
+      imageUrl={headTags.imageUrl!}
       alt={headTags.alt}
     />
     <WrapperWithPadding>

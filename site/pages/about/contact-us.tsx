@@ -21,8 +21,8 @@ export default ({path, ...props}: LayoutProps) => (
       title="Contact us"
       description="Have a question about our design system? 
         The NewsKit team is here to help you."
-      url="about/contribute/contribute-banner-create.svg"
-      alt="contact us"
+      imageUrl="social/about.png"
+      alt="Contact us"
     />
 
     <PageIntroductionContainer>

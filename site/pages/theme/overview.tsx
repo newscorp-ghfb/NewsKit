@@ -59,8 +59,8 @@ export default (layoutProps: LayoutProps) => {
           <HeadNextSeo
             title="Theme overview"
             description={pageDescription}
-            url="about/contribute/contribute-banner-create.svg"
-            alt="theme overview"
+            imageUrl="social/theme.png"
+            alt="Theme overview"
           />
 
           <HeaderIndex title="Theme" media={HeaderImage}>
