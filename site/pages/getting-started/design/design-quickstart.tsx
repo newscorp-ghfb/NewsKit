@@ -230,6 +230,67 @@ export default (layoutProps: LayoutProps) => (
           </InlineMessage>
         </ContentSecondary>
       </ContentSection>
+
+      <ContentSection sectionName="step 3">
+        <ContentPrimary showSeparator>
+          <Step
+            media="guides/design-quickstart/step3/hero"
+            stepText="Step 3"
+            timerText="5+ mins"
+          />
+        </ContentPrimary>
+      </ContentSection>
+
+      <ContentSection sectionName="installing and setting up figma plugins">
+        <ContentPrimary
+          id="installing-settingup-figma-plugins"
+          toc="Installing & setting up Figma plugins"
+          headline="Installing & setting up Figma plugins"
+          description="NewsKit provides custom Figma plugins to improve the design process workflow, follow these simple steps to install and set up:"
+        >
+          <OrderedList overrides={orderedListOverrides}>
+            <>
+              <Link
+                href="https://www.figma.com/proto/44FDCMcOPHd5m29NKTESm7/NK-Component-Overviews?page-id=190%3A60380&node-id=204%3A0&viewport=368%2C48%2C0.5&scaling=scale-down-width&hide-ui=1"
+                target="_blank"
+              >
+                View setup & installation guidance for the Theme Swapper plugin.
+              </Link>
+            </>
+            <>
+              <Link
+                href="https://www.figma.com/proto/44FDCMcOPHd5m29NKTESm7/NK-Component-Overviews?page-id=218%3A62928&node-id=218%3A62929&viewport=410%2C48%2C0.06&scaling=scale-down-width&hide-ui=1"
+                target="_blank"
+              >
+                View setup & installation guidance for the Text Crop plugin.
+              </Link>
+            </>
+            <>
+              <Link
+                href="https://www.figma.com/proto/44FDCMcOPHd5m29NKTESm7/NK-Component-Overviews?page-id=190%3A60380&node-id=204%3A0&viewport=368%2C48%2C0.5&scaling=scale-down-width&hide-ui=1"
+                target="_blank"
+              >
+                View setup & installation guidance for the Theme Exporter plugin
+              </Link>{' '}
+              (optional - only required if you are going to be managing a
+              brand’s theme).
+            </>
+          </OrderedList>
+        </ContentPrimary>
+
+        <ContentSecondary showSeparator>
+          <InlineMessage role="region" aria-label="Figma plugins">
+            In addition to the above, view a list of optional{' '}
+            <Link
+              href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/3704423476/old+design+overview+content+-+Web+Documentation#:~:text=refer%20to%20the-,Figma%20plugins%20guide,-"
+              target="_blank"
+            >
+              recommended Figma plugins
+            </Link>{' '}
+            from the Figma Community to improve the design workflow.
+          </InlineMessage>
+        </ContentSecondary>
+      </ContentSection>
     </ComponentPageCell>
   </GuidePageTemplate>
 );
