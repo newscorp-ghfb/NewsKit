@@ -10,7 +10,7 @@ describe('Documentation Site - sidebar component', () => {
   siteRoutes.forEach(route => {
     it(`should contain ${route.title} section routes`, () => {
       if (route.title === 'Guides') {
-        cy.visit('/getting-started/code/web');
+        cy.visit('/getting-started/code/engineering-quickstart');
       } else {
         cy.visit(route.subNav[0].id);
       }

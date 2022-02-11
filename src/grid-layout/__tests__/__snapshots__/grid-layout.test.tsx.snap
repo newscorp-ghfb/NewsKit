@@ -1,0 +1,462 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GridLayout renders GridLayout 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GridLayout renders GridLayout with areas 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: grid;
+  grid-template-areas: "A A" "B C" "D E";
+}
+
+.emotion-1 {
+  grid-area: A;
+}
+
+.emotion-2 {
+  grid-area: B;
+}
+
+.emotion-3 {
+  grid-area: C;
+}
+
+.emotion-4 {
+  grid-area: D;
+}
+
+.emotion-5 {
+  grid-area: E;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      A
+    </div>
+    <div
+      class="emotion-2"
+    >
+      B
+    </div>
+    <div
+      class="emotion-3"
+    >
+      C
+    </div>
+    <div
+      class="emotion-4"
+    >
+      D
+    </div>
+    <div
+      class="emotion-5"
+    >
+      E
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GridLayout renders GridLayout with areas without quotes around areas 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: grid;
+  grid-template-areas: "A A" "B C" "D E";
+}
+
+.emotion-1 {
+  grid-area: A;
+}
+
+.emotion-2 {
+  grid-area: B;
+}
+
+.emotion-3 {
+  grid-area: C;
+}
+
+.emotion-4 {
+  grid-area: D;
+}
+
+.emotion-5 {
+  grid-area: E;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div>
+        A
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+    >
+      <div>
+        B
+      </div>
+    </div>
+    <div
+      class="emotion-3"
+    >
+      <div>
+        C
+      </div>
+    </div>
+    <div
+      class="emotion-4"
+    >
+      <div>
+        D
+      </div>
+    </div>
+    <div
+      class="emotion-5"
+    >
+      <div>
+        E
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GridLayout renders GridLayout with different areas for different breakpoints 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: grid;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    grid-template-areas: "A" "B" "C" "D" "E";
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    grid-template-areas: "A A" "B C" "D E";
+  }
+}
+
+.emotion-1 {
+  grid-area: A;
+}
+
+.emotion-2 {
+  grid-area: B;
+}
+
+.emotion-3 {
+  grid-area: C;
+}
+
+.emotion-4 {
+  grid-area: D;
+}
+
+.emotion-5 {
+  grid-area: E;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      A
+    </div>
+    <div
+      class="emotion-2"
+    >
+      B
+    </div>
+    <div
+      class="emotion-3"
+    >
+      C
+    </div>
+    <div
+      class="emotion-4"
+    >
+      D
+    </div>
+    <div
+      class="emotion-5"
+    >
+      E
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GridLayout renders GridLayout with mixed values in columns and rows 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    grid-template-columns: 1fr 160px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    grid-template-columns: 1fr 160px 300px 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    grid-template-rows: 1fr 160px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    grid-template-rows: 1fr 160px 300px 1fr;
+  }
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      3
+    </div>
+    <div
+      class="emotion-1"
+    >
+      4
+    </div>
+    <div
+      class="emotion-1"
+    >
+      5
+    </div>
+    <div
+      class="emotion-1"
+    >
+      6
+    </div>
+    <div
+      class="emotion-1"
+    >
+      7
+    </div>
+    <div
+      class="emotion-1"
+    >
+      8
+    </div>
+    <div
+      class="emotion-1"
+    >
+      9
+    </div>
+    <div
+      class="emotion-1"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+    >
+      11
+    </div>
+    <div
+      class="emotion-1"
+    >
+      12
+    </div>
+    <div
+      class="emotion-1"
+    >
+      13
+    </div>
+    <div
+      class="emotion-1"
+    >
+      14
+    </div>
+    <div
+      class="emotion-1"
+    >
+      15
+    </div>
+    <div
+      class="emotion-1"
+    >
+      16
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GridLayout renders GridLayout with overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: grid;
+  width: 100px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GridLayout renders a grid with rowGap and columnGap 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: grid;
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GridLayout renders a grid with rowGap and columnGap as tokens 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: grid;
+  row-gap: 8px;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GridLayout renders inline GridLayout 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+  </div>
+</DocumentFragment>
+`;

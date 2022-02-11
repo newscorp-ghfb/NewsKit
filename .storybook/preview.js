@@ -17,7 +17,8 @@ const unlimitedScenarios = [
   'modal',
   'image',
   'image-e2e',
-  'select',
+  'grid-layout',
+  'theme-checker',
 ];
 
 const Container = styled.div`
