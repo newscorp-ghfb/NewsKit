@@ -16,6 +16,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
+  ContentTertiary,
 } from '../../../components/content-structure';
 
 const orderedListOverrides = {
@@ -290,6 +291,117 @@ export default (layoutProps: LayoutProps) => (
             from the Figma Community to improve the design workflow.
           </InlineMessage>
         </ContentSecondary>
+      </ContentSection>
+
+      <ContentSection sectionName="step 4">
+        <ContentPrimary showSeparator>
+          <Step
+            media="guides/design-quickstart/step4/hero"
+            stepText="Step 4"
+            timerText="<1 min"
+          />
+        </ContentPrimary>
+      </ContentSection>
+
+      <ContentSection sectionName="starting a figma project">
+        <ContentPrimary
+          id="starting-figma-project"
+          toc="Starting a Figma project"
+          headline="Starting a Figma project"
+          description="To start a Figma project, follow these simple steps:"
+        >
+          <OrderedList overrides={orderedListOverrides}>
+            <>
+              In your team area, hover over the team name, and press the “+”
+              icon (labeled “New project” on hover) to add a new project.
+              <ImageContainer>
+                <Illustration path="guides/design-quickstart/step4/starting-a-figma-project-new-project-01" />
+              </ImageContainer>
+            </>
+            <>
+              Give your new project a clear and distinctive name [Product/Brand
+              Name], with an emoji to identify the project’s purpose (optional).
+            </>
+            <>
+              You will also see permissions options for the new project -
+              everyone in the team can edit, everyone in the team can view, or
+              via invite-only.
+            </>
+            <>
+              In your newly created project, hover over the project name, and
+              press the “+” icon (New file) to add a new project.
+              <ImageContainer>
+                <Illustration path="guides/design-quickstart/step4/starting-a-figma-project-new-project-02" />
+              </ImageContainer>
+            </>
+            <>
+              You will see options to add a design file, FigJam file, or to
+              import a file locally.
+            </>
+            <>
+              Select the “Design file” option to create a new file, and the new
+              file will open in a tab.
+              <ImageContainer>
+                <Illustration path="guides/design-quickstart/step4/starting-a-figma-project-new-project-03" />
+              </ImageContainer>
+            </>
+          </OrderedList>
+        </ContentPrimary>
+
+        <ContentSecondary
+          headline="Using the NewsKit project template files"
+          description={
+            <>
+              NewsKit provides template Figma files to kickstart design
+              processes, helping to develop a consistent workflow.
+              <br />
+              <br />
+              To use a{' '}
+              <Link
+                href="https://www.figma.com/file/iH4aqnno7MHwUMUW1QUr4S/%5BProduct%2FBrand-Name%5D-UX-project-template?node-id=0%3A1"
+                target="_blank"
+              >
+                UX Project Template file
+              </Link>
+              , or{' '}
+              <Link
+                href="https://www.figma.com/file/BnIKQwut4dqqrfghSlsRV1/%5BProduct%2FBrand-Name%5D-UI-project-template?node-id=0%3A1"
+                target="_blank"
+              >
+                UI Project Template file
+              </Link>
+              , follow these simple steps:
+            </>
+          }
+        />
+        <ContentTertiary showSeparator>
+          <OrderedList overrides={orderedListOverrides}>
+            <>
+              Select “Duplicate” from the dropdown of options next to the file
+              name.
+              <ImageContainer>
+                <Illustration path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-01" />
+              </ImageContainer>
+            </>
+            <>
+              At the bottom of the screen, a notification telling you that the
+              file was duplicated will appear. Press “Open”, and the newly
+              duplicated project template file will open in a new tab.
+              <ImageContainer>
+                <Illustration path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-02" />
+              </ImageContainer>
+            </>
+            <>
+              Select “Move to project…” from the dropdown of options next to the
+              file name, and you will be given the option of selecting a project
+              from a list, or you can search for a project name to move the file
+              to.
+              <ImageContainer>
+                <Illustration path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-03" />
+              </ImageContainer>
+            </>
+          </OrderedList>
+        </ContentTertiary>
       </ContentSection>
     </ComponentPageCell>
   </GuidePageTemplate>
