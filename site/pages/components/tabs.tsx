@@ -8,6 +8,7 @@ import {
   TabSize,
   TextBlock,
   UnorderedList,
+  InlineMessage,
 } from 'newskit';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {parseEnumValues} from '../../utils/parse-enum-values';
@@ -307,8 +308,14 @@ export default (layoutProps: LayoutProps) => (
               ),
             },
           ],
-          infoNotice:
-            'To support resizing of the selected tab indicator this component uses the ResizeObserver API this is not supported in Internet explorer, if you require support we suggest you add a pollyfill to your application.',
+          propsFooter: (
+            <InlineMessage>
+              To support resizing of the selected tab indicator this component
+              uses the ResizeObserver API this is not supported in Internet
+              explorer, if you require support we suggest you add a pollyfill to
+              your application.
+            </InlineMessage>
+          ),
         },
         {
           title: 'Tab',
