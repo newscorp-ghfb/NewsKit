@@ -7,7 +7,7 @@ export type ComponentOverrides = {
 
 export type Override<TCO extends ComponentOverrides> =
   | TCO['overrides']
-  | {props: TCO}
+  | {props: Partial<TCO>}
   | React.ComponentType<TCO>;
 
 export const getComponentOverrides = <TCO extends ComponentOverrides>(
