@@ -7,6 +7,9 @@ import {SelectButton} from './select-button';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {shouldRenderInModal} from './utils';
+import {withMediaQueryProvider} from '../utils/hooks/use-media-query/context';
+import {useBreakpointKey} from '../utils/hooks/use-media-query';
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -23,12 +26,15 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       size = 'medium',
       loading,
       children,
+      useModal = {},
       ...restProps
     } = props;
 
     const selectRef: React.RefObject<HTMLDivElement> = useRef(null);
     const localInputRef: React.RefObject<HTMLInputElement> = useRef(null);
     const panelRef: React.RefObject<HTMLDivElement> = useRef(null);
+
+    const renderInModal = shouldRenderInModal(useModal, useBreakpointKey());
 
     const [isFocused, setIsFocused] = React.useState(false);
     const onSelectButtonFocus = React.useCallback(
@@ -108,12 +114,25 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       getMenuProps,
       getItemProps,
       openMenu,
+      closeMenu,
     } = useSelect({
       items: children,
       defaultSelectedItem,
       onSelectedItemChange: onInputChange,
       itemToString,
       onHighlightedIndexChange,
+      stateReducer: (_, actionAndChanges) => {
+        const {type, changes} = actionAndChanges;
+        // Does not close panel in the case we are rendering panel inside a modal
+        if (renderInModal && type === useSelect.stateChangeTypes.MenuBlur) {
+          return {
+            ...changes,
+            isOpen: true,
+          };
+        }
+
+        return changes;
+      },
       ...(programmaticallySelectedItem
         ? {selectedItem: programmaticallySelectedItem}
         : {}),
@@ -173,7 +192,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         />
         <SelectPanel
           isOpen={isOpen}
-          overrides={overrides?.panel}
+          overrides={overrides}
           width={width}
           height={height}
           top={top}
@@ -182,6 +201,9 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           selectedItem={selectedItem}
           highlightedIndex={highlightedIndex}
           getItemProps={getItemProps}
+          buttonRef={localInputRef}
+          renderInModal={renderInModal}
+          closeMenu={closeMenu}
           {...downshiftMenuPropsExceptRef}
           ref={composeRefs(panelRef, downshiftMenuPropsRef)}
         >
@@ -194,7 +216,9 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
 
 ThemelessSelect.displayName = 'Select';
 
-export const Select = withOwnTheme(ThemelessSelect)({
-  defaults,
-  stylePresets,
-});
+export const Select = withMediaQueryProvider(
+  withOwnTheme(ThemelessSelect)({
+    defaults,
+    stylePresets,
+  }),
+);
