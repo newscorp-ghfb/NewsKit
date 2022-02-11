@@ -314,8 +314,9 @@ export default [
             title: 'Select',
             page: true,
             id: '/components/select',
-            description: 'Lets users select one option from a list',
-            illustration: 'components/select-illustration',
+            description:
+              'Select components allow users to select one option from a list.',
+            illustration: 'components/select/select-illustration',
           },
         ],
       },
