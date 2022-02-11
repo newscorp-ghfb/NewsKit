@@ -32,30 +32,32 @@ export const toNewsKitIcon = (
     | React.ComponentType<SvgProps>,
 ): NewsKitIcon =>
   withOwnTheme(
-    withTheme<NewsKitIconProps>(props => {
-      const emotionIconName = PassedIcon.displayName;
-      const toStyledIcon = (
-        Icon: React.ComponentType<EmotionIconProps>,
-      ) => styled(Icon)`
-        // If not overridden, render style preset CSS here, this allows parent's style preset to override Icon default.
-        ${renderIconStylePreset(false)}
+    withTheme<NewsKitIconProps>(
+      React.memo(props => {
+        const emotionIconName = PassedIcon.displayName;
+        const toStyledIcon = (
+          Icon: React.ComponentType<EmotionIconProps>,
+        ) => styled(Icon)`
+          // If not overridden, render SP CSS here, this allows parent SP to override Icon default.
+          ${renderIconStylePreset(false)}
 
-        vertical-align: unset;
-        display: inline-block;
-        // https://css-tricks.com/the-sass-ampersand/#doubling-up-specificity
-        && {
-          //we don't want the icon to have a default size hence using non defaulted functions
-          ${props.overrides?.size &&
-          getSizingCssFromTheme('width', props.overrides?.size)}
-          ${props.overrides?.size &&
-          getSizingCssFromTheme('height', props.overrides?.size)}
+          vertical-align: unset;
+          display: inline-block;
+          // https://css-tricks.com/the-sass-ampersand/#doubling-up-specificity
+          && {
+            //we don't want the icon to have a default size hence using non defaulted functions
+            ${props.overrides?.size &&
+            getSizingCssFromTheme('width', props.overrides?.size)}
+            ${props.overrides?.size &&
+            getSizingCssFromTheme('height', props.overrides?.size)}
         // If overridden, render SP CSS here instead - this ensures we override fill color from parent SP.
         ${renderIconStylePreset(true)}
-        }
-      `;
-      const Icon =
-        props.theme.icons[`${emotionIconName}`] ||
-        toStyledIcon(PassedIcon as React.ComponentType<EmotionIconProps>);
-      return <Icon title={props.title} {...props} />;
-    }),
+          }
+        `;
+        const Icon =
+          props.theme.icons[`${emotionIconName}`] ||
+          toStyledIcon(PassedIcon as React.ComponentType<EmotionIconProps>);
+        return <Icon title={props.title} {...props} />;
+      }),
+    ),
   )({defaults, stylePresets});
