@@ -380,7 +380,7 @@ jobs:
       - slack/status:
           <<: *slack_status
 
-  build_docs_prod:
+  build_docs_link:
     <<: *working_directory
     executor: node-xlarge
     steps:
@@ -391,7 +391,7 @@ jobs:
           name: Build
           command: |
             export SITE_BASE_URL=${SITE_BASE_URL}
-            make build_docs_prod
+            make build_docs_link
       - persist_to_workspace:
           root: ./
           paths:
@@ -1067,9 +1067,9 @@ workflows:
           environment: pr
           requires:
             - init_aws
-      - build_docs_prod:
+      - build_docs_link:
           <<: *only_pr
-          name: build_docs_prod
+          name: build_docs_pr_link
           context: ncu-newskit-site-pr
           requires:
             - build_icons
@@ -1079,7 +1079,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_terraform_s3_dev
-            - build_docs_prod
+            - build_docs_link
             - build_storybook
       - post_pr_env_url_to_github_pr:
           <<: *only_pr
@@ -1138,16 +1138,16 @@ workflows:
           type: approval
           requires:
             - eks_kubectl_deploy_dev
-      - build_docs_prod:
+      - build_docs_link:
           <<: *only_develop
-          name: build_docs_prod
+          name: build_docs_dev_link
           requires:
             - approve_publish_docs
       - build_push_docker_ecr:
           name: build_push_docker_ecr_prod
           context: ncu-product-platforms-context
           requires:
-            - build_docs_prod
+            - build_docs_link
       - eks_flux_deploy:
           <<: *only_develop
           name: eks_flux_deploy_dev_to_prod
