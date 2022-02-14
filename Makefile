@@ -11,9 +11,9 @@ CURRENT_BRANCH = $(shell git symbolic-ref --short -q HEAD)
 SITE_ENV = $(shell node -p "/(^release.*)|(^main$$)/.test('${CURRENT_BRANCH}') ? 'production' : 'development'")
 
 # Cleans branch into a url friendly format 
-BASE_PATH = $(shell node -p "/(^release.*)|(^main$$)|(^develop$$)/.test('${CURRENT_BRANCH}') ? "" : "require('./scripts/branch-name-to-url.js').branchNameToUrl('${CURRENT_BRANCH}')/")
+BASE_PATH = $(shell node -p "/(^release.*)|(^main$$)|(^develop$$)/.test('${CURRENT_BRANCH}') ? "" : "require('./scripts/branch-name-to-url.js').branchNameToUrl('${CURRENT_BRANCH}')")
 
-BASE_URI = ${SITE_BASE_URL}${BASE_PATH}
+BASE_URI = ${SITE_BASE_URL}${BASE_PATH}/
 
 # patch/minor/major
 UPDATE_TYPE = ${shell echo ${CURRENT_BRANCH}| cut -d'-' -f 3}
