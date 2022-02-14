@@ -1,10 +1,11 @@
 import React from 'react';
 import {
   Block,
-  OrderedList,
   InlineMessage,
   styled,
   getSizingCssFromTheme,
+  OrderedList,
+  UnorderedList,
 } from 'newskit';
 import {LayoutProps} from '../../../components/layout';
 import {Link} from '../../../components/link';
@@ -12,6 +13,7 @@ import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-pa
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {Step} from '../../../components/step';
 import {Illustration} from '../../../components/illustrations/illustration-loader';
+import {IconFilledCircle} from '../../../components/icons';
 import {
   ContentSection,
   ContentPrimary,
@@ -402,6 +404,144 @@ export default (layoutProps: LayoutProps) => (
             </>
           </OrderedList>
         </ContentTertiary>
+      </ContentSection>
+
+      <ContentSection sectionName="step 5">
+        <ContentPrimary showSeparator>
+          <Step
+            media="guides/design-quickstart/step5/hero"
+            stepText="Step 5"
+            timerText="<1 min"
+          />
+        </ContentPrimary>
+      </ContentSection>
+
+      <ContentSection sectionName="linking newsKit figma libraries">
+        <ContentPrimary
+          id="linking-newsKit-figma-libraries"
+          toc="Linking NewsKit Figma libraries"
+          headline="Linking NewsKit Figma libraries"
+          description="To link a NewsKit Figma library to a project, follow these simple steps:"
+        >
+          <OrderedList overrides={orderedListOverrides}>
+            <>
+              In your design file, select the “Assets” tab in the left-hand
+              panel.
+              <ImageContainer>
+                <Illustration path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-01" />
+              </ImageContainer>
+            </>
+            <>
+              Press the “book” icon (labeled “Team library” on hover), to bring
+              up a list of libraries in a modal dialog.
+              <ImageContainer>
+                <Illustration path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-02" />
+              </ImageContainer>
+            </>
+            <>
+              In the list, you will see the available libraries available to
+              link to your design file, categorised by teams.
+            </>
+            <>
+              The libraries that are already enabled are indicated in the list
+              with a switch on the left-hand side of each library set to
+              “Enabled”.
+            </>
+            <>
+              The{' '}
+              <Link
+                href="https://www.figma.com/file/Q3OTJ4RZWJGTCaWuS8sWsL/%F0%9F%9F%A2-NK-Utilities"
+                target="_blank"
+              >
+                NK-Web Gallery, & NK-Utilities
+              </Link>{' '}
+              Figma libraries are automatically linked when you add a new design
+              file or duplicate one of the NewsKit project template files.
+            </>
+            <>
+              To link your design file to one of your team’s libraries, or the
+              available NewsKit Design Systems libraries simply enable the
+              library you want to link to via the corresponding switch on the
+              left-hand side.
+              <ImageContainer>
+                <Illustration path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-03" />
+              </ImageContainer>
+            </>
+          </OrderedList>
+        </ContentPrimary>
+
+        <ContentSecondary showSeparator>
+          <InlineMessage role="region" aria-label="library">
+            Note - Any library that you link to your design file will give you
+            access to all the components in that library. If your team has its
+            own local library, you should be linking to that local library as it
+            will contain all of the components available that are specific to
+            your brand.
+            <br />
+            <br />
+            If your team has its own local library, you should be linking to
+            that local library as it will contain all of the components
+            available that are specific to your brand.
+          </InlineMessage>
+        </ContentSecondary>
+
+        <ContentTertiary showSeparator>
+          <InlineMessage role="region" aria-label="Design community">
+            <Link href="https://www.figma.com/@newsuk" target="_blank">
+              Follow the News UK Figma design community
+            </Link>{' '}
+            to stay up to date with community resources.
+          </InlineMessage>
+        </ContentTertiary>
+      </ContentSection>
+
+      <ContentSection sectionName="what’s next?">
+        <ContentPrimary
+          id="whats-next"
+          toc="What’s next?"
+          headline="What’s next?"
+          description="To link a NewsKit Figma library to a project, follow these simple steps:"
+          showSeparator
+        >
+          <UnorderedList
+            markerAlign="center"
+            listItemMarker={IconFilledCircle}
+            overrides={{
+              spaceStack: 'space050',
+              marker: {
+                spaceInline: 'space020',
+              },
+              content: {
+                typographyPreset: 'editorialParagraph030',
+              },
+            }}
+          >
+            <>
+              For an overview of the design working process, getting started,
+              Figma setup and toolkits, resources, and more{' '}
+              <Link
+                href="https://www.figma.com/proto/GzKdlZVkuR7tpv0kBwaFD6/Figma-for-Designers?page-id=3%3A6&node-id=57%3A55&viewport=350%2C48%2C0.5&scaling=min-zoom&hide-ui=1"
+                target="_blank"
+              >
+                view the ways of working guidance.
+              </Link>
+              with a minimum of node v14 installed.
+            </>
+            <>
+              <Link href="/theme/theming/creating-a-theme/">
+                View creating a theme in design guidance.
+              </Link>
+            </>
+            <>
+              <Link
+                href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2670919872/Read+Me+-+NewsKit+Website"
+                target="_blank"
+              >
+                View the NewsKit Read Me document.
+              </Link>
+            </>
+          </UnorderedList>
+        </ContentPrimary>
       </ContentSection>
     </ComponentPageCell>
   </GuidePageTemplate>
