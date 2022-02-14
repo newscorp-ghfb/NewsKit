@@ -1276,11 +1276,16 @@ const transitionTheme = createTheme({
 
 export const StoryTabsTransitions = () => (
   <>
-    <StorybookHeading>Tabs with transitions</StorybookHeading>
-    <StorybookSubHeading>
-      Tag with overrides on default transition preset
-    </StorybookSubHeading>
+    <StorybookHeading>Tabs item with Transition Presets</StorybookHeading>
+    <StorybookSubHeading>Default Transition Preset</StorybookSubHeading>
     <ThemeProvider theme={transitionTheme}>
+      <Tabs>
+        <Tab label="One transition preset">Content 1</Tab>
+        <Tab label="Two transition presets">Content 2</Tab>
+      </Tabs>
+      <StorybookSubHeading>
+        Tab items with Transition Preset overrides
+      </StorybookSubHeading>
       <Tabs>
         <Tab
           overrides={{
@@ -1305,7 +1310,7 @@ export const StoryTabsTransitions = () => (
         </Tab>
       </Tabs>
       <StorybookSubHeading>
-        Tag with overrides using extend on transitionDuration
+        Tab items with overrides using extend on transitionDuration
       </StorybookSubHeading>
       <Tabs>
         <Tab
@@ -1318,6 +1323,47 @@ export const StoryTabsTransitions = () => (
                 transitionDuration: '{{motions.motionDuration050}}',
               },
             },
+          }}
+        >
+          Content 1
+        </Tab>
+        <Tab
+          label="Using extend prop on one preset"
+          overrides={{
+            stylePreset: 'tabCustomPreset',
+            transitionPreset: {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration050}}',
+              },
+            },
+          }}
+        >
+          Content 2
+        </Tab>
+      </Tabs>
+      <StorybookSubHeading>
+        Tab items with overrides on two presets using extend
+      </StorybookSubHeading>
+      <Tabs>
+        <Tab
+          label="Using extend prop on two presets"
+          overrides={{
+            stylePreset: 'tabCustomPreset',
+            transitionPreset: [
+              {
+                extend: 'backgroundColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration030}}',
+                },
+              },
+              {
+                extend: 'customFontColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration050}}',
+                },
+              },
+            ],
           }}
         >
           Content 1
