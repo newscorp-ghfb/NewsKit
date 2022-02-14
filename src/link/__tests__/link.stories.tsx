@@ -364,7 +364,7 @@ const myCustomLinkTheme = createTheme({
     transitionPresets: {
       customIconChange: {
         base: {
-          transitionProperty: 'outline-color',
+          transitionProperty: 'fill',
           transitionDuration: '100ms',
           transitionDelay: '500ms',
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
