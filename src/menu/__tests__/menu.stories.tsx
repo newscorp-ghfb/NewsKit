@@ -334,15 +334,14 @@ const myCustomThemeTransitions = compileTheme(
         customBackgroundColorChange: {
           base: {
             transitionProperty: 'background-color',
-            transitionDuration: '10ms',
-            transitionDelay: '500ms',
+            transitionDuration: '400ms',
             transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
           },
         },
         customFontColourChange: {
           base: {
             transitionProperty: 'color',
-            transitionDuration: '100ms',
+            transitionDuration: '400ms',
             transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
           },
         },
@@ -350,19 +349,22 @@ const myCustomThemeTransitions = compileTheme(
       stylePresets: {
         menuItemCustomTransition: {
           base: {
-            backgroundColor: '#ffe66b',
+            backgroundColor: '{{colors.transparent}}',
             borderStyle: 'solid',
-            borderColor: '#222222',
+            color: '{{colors.inkSubtle}}',
+            borderColor: '{{colors.transparent}}',
             borderWidth: '8px 0px 0px 0px',
-            color: '#222222',
-            iconColor: 'grey',
           },
           hover: {
             backgroundColor: '{{colors.amber070}}',
             color: '{{colors.green040}}',
+            borderStyle: 'solid',
+            borderColor: '#222222',
+            borderWidth: '4px 0px 0px 0px',
           },
           active: {
             backgroundColor: '{{colors.interactivePrimary050}}',
+            borderColor: '#222222',
             color: '{{colors.purple020}}',
           },
           disabled: {
@@ -401,8 +403,13 @@ export const StoryMenuTransitionOverrides = () => {
   return (
     <Container>
       <ThemeProvider theme={myCustomThemeTransitions}>
+        <StorybookSubHeading>Default Transition Preset</StorybookSubHeading>
+        <Menu aria-label={`Menu ${getSSRId()}`}>
+          <MenuItem href={href}>Menu item 1</MenuItem>
+          <MenuItem href={href}>Menu item 1</MenuItem>
+        </Menu>
         <StorybookSubHeading>
-          Menu items with default transition preset
+          Menu items with Transition Preset overrides
         </StorybookSubHeading>
         <Menu aria-label={`Menu ${getSSRId()}`}>
           <MenuItem
@@ -416,7 +423,7 @@ export const StoryMenuTransitionOverrides = () => {
           </MenuItem>
         </Menu>
         <StorybookSubHeading>
-          Menu item with overrides on two properties on transition presets
+          Menu item with two Transition Preset Overrides
         </StorybookSubHeading>
         <Menu aria-label={`Menu ${getSSRId()}`}>
           <MenuItem
@@ -452,7 +459,7 @@ export const StoryMenuTransitionOverrides = () => {
           </MenuItem>
         </Menu>
         <StorybookSubHeading>
-          Menu item with overrides on two properties from defaults using extend
+          Menu item with overrides on two presets using extend
         </StorybookSubHeading>
         <Menu aria-label={`Menu ${getSSRId()}`}>
           <MenuItem
