@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, BlockProps, styled} from 'newskit';
+import {Block, BlockProps, InlineMessage, styled} from 'newskit';
 import {Link} from '../../components/link/link';
 import {LegacyBlock} from '../../components/legacy-block';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
@@ -245,14 +245,14 @@ export default (layoutProps: LayoutProps) => (
               description: `Overrides the space inset applied to the Block.`,
             },
           ],
-          infoNotice: (
-            <>
+          propsFooter: (
+            <InlineMessage>
               The Block can utilise any valid{' '}
               <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">
                 HTML attribute.
               </Link>
               .
-            </>
+            </InlineMessage>
           ),
         },
       ],

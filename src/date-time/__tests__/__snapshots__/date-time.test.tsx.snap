@@ -31,6 +31,11 @@ exports[`DateTime renders with fallback formatting 1`] = `
   display: block;
 }
 
+.emotion-0:before,
+.emotion-0:after {
+  white-space: normal;
+}
+
 <time>
     <span
       class="emotion-0"
@@ -67,6 +72,11 @@ exports[`DateTime renders with overrides 1`] = `
   display: block;
 }
 
+.emotion-0:before,
+.emotion-0:after {
+  white-space: normal;
+}
+
 .emotion-1 {
   margin: 0;
   font-family: "Poppins",sans-serif;
@@ -89,6 +99,11 @@ exports[`DateTime renders with overrides 1`] = `
   content: '';
   margin-top: -0.4em;
   display: block;
+}
+
+.emotion-1:before,
+.emotion-1:after {
+  white-space: normal;
 }
 
 <time>
@@ -140,6 +155,11 @@ exports[`DateTime renders with provided date, format, prefix and suffix 1`] = `
   content: '';
   margin-top: -0.409em;
   display: block;
+}
+
+.emotion-0:before,
+.emotion-0:after {
+  white-space: normal;
 }
 
 <time>

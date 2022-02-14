@@ -3,8 +3,11 @@ import {createTheme, ThemeProvider} from '../../theme';
 import {TitleBar} from '..';
 import {Button} from '../../button';
 import {Link} from '../../link';
+import {Divider} from '../../divider';
+import {Stack} from '../../stack';
 
 import {IconFilledFigma} from '../../icons/filled/custom/icon-filled-figma';
+import {styled} from '../../utils/style';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-title-bar-theme',
@@ -28,6 +31,9 @@ const myCustomTheme = createTheme({
 
 const link = () => <Link href="/">Link</Link>;
 const button = () => <Button>Default button</Button>;
+const HeadlineContainer = styled.span`
+  min-width: fit-content;
+`;
 
 export default {
   title: 'NewsKit Light/title-bar',
@@ -84,6 +90,14 @@ export const StoryTitleBar = () => (
     <TitleBar hideActionItemOn={{sm: true, md: true}} actionItem={button}>
       Title bar with action hidden in sm and md
     </TitleBar>
+    <br />
+    <TitleBar actionItem={button}>
+      <Stack flow="horizontal-center">
+        <HeadlineContainer>Title bar with divider and button</HeadlineContainer>
+        <Divider />
+      </Stack>
+    </TitleBar>
+    <br />
   </>
 );
 StoryTitleBar.storyName = 'title-bar';

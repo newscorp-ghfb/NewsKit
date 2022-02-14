@@ -777,24 +777,24 @@ export const stylePresets = {
   },
   dividerInverse: {
     base: {
-      borderColor: '{{colors.blackTint020}}',
+      borderColor: '{{colors.whiteTint050}}',
     },
   },
   toastText: {
     base: {
-      color: '{{colors.neutral100}}',
+      color: '{{colors.white}}',
     },
   },
   toastIcon: {
     base: {
-      iconColor: '{{colors.neutral100}}',
+      iconColor: '{{colors.white}}',
     },
   },
   toastButton: {
     base: {
       backgroundColor: '{{colors.transparent}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
-      color: '{{colors.neutral100}}',
+      color: '{{colors.white}}',
       iconColor: '{{colors.neutral100}}',
     },
     hover: {

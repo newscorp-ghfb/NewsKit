@@ -7,7 +7,7 @@ import {Hexes, SVGString} from './figma-svg-mock-data';
 
 jest.mock('file-saver', () => ({saveAs: jest.fn()}));
 // @ts-ignore
-global.Blob = function (content: any, options: any) {
+global.Blob = function blob(content: any, options: any) {
   return {content, options};
 };
 
@@ -66,5 +66,31 @@ describe('SvgPreviewer', () => {
       {content: [fileSvgMock], options: {type: 'text/plain;charset=utf-8;'}},
       'card-no-crop.tsx',
     );
+  });
+
+  it('should change theme colors correctly when selecting a different theme from select element', async () => {
+    const {getByTestId, asFragment} = renderWithTheme(SvgPreviewer);
+    const data = {
+      pluginMessage: {
+        action: 'FilesToUI',
+        data: {
+          hexes: Hexes,
+          svgdata: [{code: SVGString, name: 'SvgName'}],
+        },
+      },
+    };
+
+    await act(async () => {
+      window.postMessage({...data}, '*');
+      await delay(50);
+    });
+
+    const selectThemeElement = (getByTestId(
+      'select-theme-element',
+    ) as unknown) as Element;
+
+    fireEvent.change(selectThemeElement, {target: {value: 'Patterns Theme'}});
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });

@@ -54,7 +54,13 @@ export const BaseDialogView = React.forwardRef<
     };
 
     const MoveFocusInsideWhenFocusTrapDisabled =
-      disableFocusTrap && open ? StyledMoveFocusInside : React.Fragment;
+      disableFocusTrap && open
+        ? ({children: focusChildren}: {children: React.ReactNode}) => (
+            <StyledMoveFocusInside closePosition={closePosition}>
+              {focusChildren}
+            </StyledMoveFocusInside>
+          )
+        : React.Fragment;
 
     return (
       <StyledDialogPanel
@@ -71,7 +77,7 @@ export const BaseDialogView = React.forwardRef<
         closePosition={closePosition}
         {...props}
       >
-        <MoveFocusInsideWhenFocusTrapDisabled closePosition={closePosition}>
+        <MoveFocusInsideWhenFocusTrapDisabled>
           {header === undefined && closePosition === 'none' ? null : (
             <StyledDialogHeaderBG overrides={overrides} path={path} />
           )}
