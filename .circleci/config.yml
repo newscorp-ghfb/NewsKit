@@ -1152,7 +1152,7 @@ workflows:
           name: build_push_docker_ecr_prod
           context: ncu-product-platforms-context
           requires:
-            - build_docs_dev_link
+            - build_docs_prod_link
       - eks_flux_deploy:
           <<: *only_develop
           name: eks_flux_deploy_dev_to_prod
