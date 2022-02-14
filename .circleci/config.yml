@@ -371,8 +371,8 @@ jobs:
       - run:
           name: Build
           command: |
-            export SITE_BASE_URL=${SITE_BASE_URL}
-            make build_docs
+            echo "export SITE_BASE_URL=${SITE_BASE_URL}"
+            export SITE_BASE_URL=${SITE_BASE_URL}; make build_docs
       - persist_to_workspace:
           root: ./
           paths:
@@ -390,8 +390,8 @@ jobs:
       - run:
           name: Build
           command: |
-            export SITE_BASE_URL=${SITE_BASE_URL}
-            make build_docs_link
+            echo "export SITE_BASE_URL=${SITE_BASE_URL}"
+            export SITE_BASE_URL=${SITE_BASE_URL}; make build_docs_link
       - persist_to_workspace:
           root: ./
           paths:
