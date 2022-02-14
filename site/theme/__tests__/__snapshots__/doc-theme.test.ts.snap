@@ -962,7 +962,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -1445,7 +1445,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -1454,12 +1454,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -2680,8 +2680,8 @@ Object {
   },
   "name": "docs-accessibility-light",
   "overlays": Object {
-    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
-    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
+    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -3043,7 +3043,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -3526,7 +3526,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -3535,12 +3535,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -5124,7 +5124,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -5607,7 +5607,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -5616,12 +5616,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -6842,8 +6842,8 @@ Object {
   },
   "name": "docs-theme-light",
   "overlays": Object {
-    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
-    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
+    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -7205,7 +7205,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -7688,7 +7688,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -7697,12 +7697,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -9286,7 +9286,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -9769,7 +9769,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -9778,12 +9778,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -11004,8 +11004,8 @@ Object {
   },
   "name": "docs-foundations-light",
   "overlays": Object {
-    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
-    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
+    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -11367,7 +11367,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -11850,7 +11850,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -11859,12 +11859,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -13448,7 +13448,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -13931,7 +13931,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -13940,12 +13940,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -15166,8 +15166,8 @@ Object {
   },
   "name": "docs-patterns-light",
   "overlays": Object {
-    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
-    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
+    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -15529,7 +15529,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -16012,7 +16012,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -16021,12 +16021,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {

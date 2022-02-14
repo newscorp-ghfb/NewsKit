@@ -76,10 +76,6 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   overflow: hidden;
 }
 
-.emotion-6 div {
-  overflow: hidden;
-}
-
 .emotion-7 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -98,7 +94,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   text-decoration: none;
   width: 24px;
   height: 24px;
-  padding: 4px 8px;
+  padding: 0;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -549,10 +545,6 @@ exports[`Table renders number values automatically if undefined 1`] = `
   max-width: 100px;
   text-align: left;
   vertical-align: top;
-  overflow: hidden;
-}
-
-.emotion-6 div {
   overflow: hidden;
 }
 

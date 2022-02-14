@@ -507,43 +507,43 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen {
-  .emotion-60 {
+  .emotion-55 {
     display: block;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-60 {
+  .emotion-55 {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-60 {
+  .emotion-55 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-60 {
+  .emotion-55 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-60 {
+  .emotion-55 {
     display: none;
   }
 }
 
-.emotion-61 {
+.emotion-56 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-62 {
+.emotion-57 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
@@ -551,16 +551,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   scroll-behavior: smooth;
 }
 
-.emotion-62::-webkit-scrollbar {
+.emotion-57::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-62 {
+.emotion-57 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.emotion-63 {
+.emotion-58 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -581,7 +581,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   margin-right: calc(-40px/2);
 }
 
-.emotion-89 {
+.emotion-79 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -591,7 +591,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen {
-  .emotion-89 {
+  .emotion-79 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -606,7 +606,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-89 {
+  .emotion-79 {
     -webkit-order: 3;
     -ms-flex-order: 3;
     order: 3;
@@ -616,7 +616,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   }
 }
 
-.emotion-90 {
+.emotion-80 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -651,20 +651,20 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   cursor: pointer;
 }
 
-.emotion-90 svg {
+.emotion-80 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-90:hover:not(:disabled) {
+.emotion-80:hover:not(:disabled) {
   background-color: #CCCCCC;
 }
 
-.emotion-90:active:not(:disabled) {
+.emotion-80:active:not(:disabled) {
   background-color: #CCCCCC;
 }
 
-.emotion-91 {
+.emotion-81 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -685,7 +685,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   margin-right: calc(-8px/2);
 }
 
-.emotion-92 {
+.emotion-82 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -694,13 +694,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   margin-right: calc(8px/2);
 }
 
-.emotion-93 {
+.emotion-83 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-93.emotion-93 {
+.emotion-83.emotion-83 {
   width: 24px;
   height: 24px;
 }
@@ -995,7 +995,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                     >
                       <a
                         class="emotion-37"
-                        href="/getting-started/code/web"
+                        href="/getting-started/overview"
                       >
                         <span
                           class="emotion-4"
@@ -1017,7 +1017,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                     >
                       <a
                         class="emotion-37"
-                        href="/foundations/overview"
+                        href="/theme/overview"
                       >
                         <span
                           class="emotion-4"
@@ -1025,7 +1025,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                           <div
                             class="emotion-44"
                           >
-                            Foundations
+                            Theme
                           </div>
                         </span>
                       </a>
@@ -1053,46 +1053,24 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       </a>
                     </div>
                   </div>
-                  <div
-                    class="emotion-33"
-                  >
-                    <div
-                      class="emotion-36"
-                    >
-                      <a
-                        class="emotion-37"
-                        href="/patterns/overview"
-                      >
-                        <span
-                          class="emotion-4"
-                        >
-                          <div
-                            class="emotion-44"
-                          >
-                            Patterns
-                          </div>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="emotion-60"
+            class="emotion-55"
           >
             <div
-              class="emotion-61"
+              class="emotion-56"
             >
               <div
                 aria-orientation="horizontal"
-                class="emotion-62"
+                class="emotion-57"
                 data-testid="scroll-container"
                 tabindex="0"
               >
                 <div
-                  class="emotion-63"
+                  class="emotion-58"
                 >
                   <div
                     class="emotion-33"
@@ -1125,7 +1103,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                     >
                       <a
                         class="emotion-37"
-                        href="/getting-started/code/web"
+                        href="/getting-started/overview"
                       >
                         <span
                           class="emotion-4"
@@ -1147,7 +1125,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                     >
                       <a
                         class="emotion-37"
-                        href="/foundations/overview"
+                        href="/theme/overview"
                       >
                         <span
                           class="emotion-4"
@@ -1155,7 +1133,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                           <div
                             class="emotion-44"
                           >
-                            Foundations
+                            Theme
                           </div>
                         </span>
                       </a>
@@ -1183,52 +1161,30 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                       </a>
                     </div>
                   </div>
-                  <div
-                    class="emotion-33"
-                  >
-                    <div
-                      class="emotion-36"
-                    >
-                      <a
-                        class="emotion-37"
-                        href="/patterns/overview"
-                      >
-                        <span
-                          class="emotion-4"
-                        >
-                          <div
-                            class="emotion-44"
-                          >
-                            Patterns
-                          </div>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="emotion-89"
+          class="emotion-79"
         >
           <button
             aria-label="Enable Dark Theme"
             aria-pressed="false"
-            class="emotion-90"
+            class="emotion-80"
             data-testid="theme-switch-button"
             title="Enable Dark Theme"
             type="button"
           >
             <div
-              class="emotion-91"
+              class="emotion-81"
             >
               <div
-                class="emotion-92"
+                class="emotion-82"
               >
                 <svg
-                  class="emotion-93"
+                  class="emotion-83"
                   fill="currentColor"
                   role="img"
                   viewBox="0 0 17 17"
@@ -1761,43 +1717,43 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen {
-  .emotion-60 {
+  .emotion-55 {
     display: block;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-60 {
+  .emotion-55 {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-60 {
+  .emotion-55 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-60 {
+  .emotion-55 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-60 {
+  .emotion-55 {
     display: none;
   }
 }
 
-.emotion-61 {
+.emotion-56 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-62 {
+.emotion-57 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
@@ -1805,16 +1761,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   scroll-behavior: smooth;
 }
 
-.emotion-62::-webkit-scrollbar {
+.emotion-57::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-62 {
+.emotion-57 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.emotion-63 {
+.emotion-58 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1835,7 +1791,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   margin-right: calc(-40px/2);
 }
 
-.emotion-89 {
+.emotion-79 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -1845,7 +1801,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen {
-  .emotion-89 {
+  .emotion-79 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -1860,7 +1816,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-89 {
+  .emotion-79 {
     -webkit-order: 3;
     -ms-flex-order: 3;
     order: 3;
@@ -1870,7 +1826,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   }
 }
 
-.emotion-90 {
+.emotion-80 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1905,20 +1861,20 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   cursor: pointer;
 }
 
-.emotion-90 svg {
+.emotion-80 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-90:hover:not(:disabled) {
+.emotion-80:hover:not(:disabled) {
   background-color: #CCCCCC;
 }
 
-.emotion-90:active:not(:disabled) {
+.emotion-80:active:not(:disabled) {
   background-color: #CCCCCC;
 }
 
-.emotion-91 {
+.emotion-81 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1939,7 +1895,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   margin-right: calc(-8px/2);
 }
 
-.emotion-92 {
+.emotion-82 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1948,13 +1904,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   margin-right: calc(8px/2);
 }
 
-.emotion-93 {
+.emotion-83 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-93.emotion-93 {
+.emotion-83.emotion-83 {
   width: 24px;
   height: 24px;
 }
@@ -2249,7 +2205,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                     >
                       <a
                         class="emotion-37"
-                        href="/getting-started/code/web"
+                        href="/getting-started/overview"
                       >
                         <span
                           class="emotion-4"
@@ -2271,7 +2227,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                     >
                       <a
                         class="emotion-37"
-                        href="/foundations/overview"
+                        href="/theme/overview"
                       >
                         <span
                           class="emotion-4"
@@ -2279,7 +2235,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                           <div
                             class="emotion-44"
                           >
-                            Foundations
+                            Theme
                           </div>
                         </span>
                       </a>
@@ -2307,46 +2263,24 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       </a>
                     </div>
                   </div>
-                  <div
-                    class="emotion-33"
-                  >
-                    <div
-                      class="emotion-36"
-                    >
-                      <a
-                        class="emotion-37"
-                        href="/patterns/overview"
-                      >
-                        <span
-                          class="emotion-4"
-                        >
-                          <div
-                            class="emotion-44"
-                          >
-                            Patterns
-                          </div>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="emotion-60"
+            class="emotion-55"
           >
             <div
-              class="emotion-61"
+              class="emotion-56"
             >
               <div
                 aria-orientation="horizontal"
-                class="emotion-62"
+                class="emotion-57"
                 data-testid="scroll-container"
                 tabindex="0"
               >
                 <div
-                  class="emotion-63"
+                  class="emotion-58"
                 >
                   <div
                     class="emotion-33"
@@ -2379,7 +2313,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                     >
                       <a
                         class="emotion-37"
-                        href="/getting-started/code/web"
+                        href="/getting-started/overview"
                       >
                         <span
                           class="emotion-4"
@@ -2401,7 +2335,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                     >
                       <a
                         class="emotion-37"
-                        href="/foundations/overview"
+                        href="/theme/overview"
                       >
                         <span
                           class="emotion-4"
@@ -2409,7 +2343,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                           <div
                             class="emotion-44"
                           >
-                            Foundations
+                            Theme
                           </div>
                         </span>
                       </a>
@@ -2437,52 +2371,30 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                       </a>
                     </div>
                   </div>
-                  <div
-                    class="emotion-33"
-                  >
-                    <div
-                      class="emotion-36"
-                    >
-                      <a
-                        class="emotion-37"
-                        href="/patterns/overview"
-                      >
-                        <span
-                          class="emotion-4"
-                        >
-                          <div
-                            class="emotion-44"
-                          >
-                            Patterns
-                          </div>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="emotion-89"
+          class="emotion-79"
         >
           <button
             aria-label="Enable Dark Theme"
             aria-pressed="false"
-            class="emotion-90"
+            class="emotion-80"
             data-testid="theme-switch-button"
             title="Enable Dark Theme"
             type="button"
           >
             <div
-              class="emotion-91"
+              class="emotion-81"
             >
               <div
-                class="emotion-92"
+                class="emotion-82"
               >
                 <svg
-                  class="emotion-93"
+                  class="emotion-83"
                   fill="currentColor"
                   role="img"
                   viewBox="0 0 17 17"
@@ -2992,43 +2904,43 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen {
-  .emotion-60 {
+  .emotion-55 {
     display: block;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-60 {
+  .emotion-55 {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-60 {
+  .emotion-55 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-60 {
+  .emotion-55 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-60 {
+  .emotion-55 {
     display: none;
   }
 }
 
-.emotion-61 {
+.emotion-56 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-62 {
+.emotion-57 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
@@ -3036,16 +2948,16 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   scroll-behavior: smooth;
 }
 
-.emotion-62::-webkit-scrollbar {
+.emotion-57::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-62 {
+.emotion-57 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.emotion-63 {
+.emotion-58 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3066,7 +2978,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   margin-right: calc(-40px/2);
 }
 
-.emotion-89 {
+.emotion-79 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -3076,7 +2988,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen {
-  .emotion-89 {
+  .emotion-79 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -3091,7 +3003,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-89 {
+  .emotion-79 {
     -webkit-order: 3;
     -ms-flex-order: 3;
     order: 3;
@@ -3101,7 +3013,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   }
 }
 
-.emotion-90 {
+.emotion-80 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3136,20 +3048,20 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   cursor: pointer;
 }
 
-.emotion-90 svg {
+.emotion-80 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-90:hover:not(:disabled) {
+.emotion-80:hover:not(:disabled) {
   background-color: #CCCCCC;
 }
 
-.emotion-90:active:not(:disabled) {
+.emotion-80:active:not(:disabled) {
   background-color: #CCCCCC;
 }
 
-.emotion-91 {
+.emotion-81 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3170,7 +3082,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-92 {
+.emotion-82 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3179,13 +3091,13 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-93 {
+.emotion-83 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-93.emotion-93 {
+.emotion-83.emotion-83 {
   width: 24px;
   height: 24px;
 }
@@ -3479,7 +3391,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                     >
                       <a
                         class="emotion-37"
-                        href="/getting-started/code/web"
+                        href="/getting-started/overview"
                       >
                         <span
                           class="emotion-4"
@@ -3501,7 +3413,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                     >
                       <a
                         class="emotion-37"
-                        href="/foundations/overview"
+                        href="/theme/overview"
                       >
                         <span
                           class="emotion-4"
@@ -3509,7 +3421,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                           <div
                             class="emotion-39"
                           >
-                            Foundations
+                            Theme
                           </div>
                         </span>
                       </a>
@@ -3537,46 +3449,24 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       </a>
                     </div>
                   </div>
-                  <div
-                    class="emotion-33"
-                  >
-                    <div
-                      class="emotion-36"
-                    >
-                      <a
-                        class="emotion-37"
-                        href="/patterns/overview"
-                      >
-                        <span
-                          class="emotion-4"
-                        >
-                          <div
-                            class="emotion-39"
-                          >
-                            Patterns
-                          </div>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="emotion-60"
+            class="emotion-55"
           >
             <div
-              class="emotion-61"
+              class="emotion-56"
             >
               <div
                 aria-orientation="horizontal"
-                class="emotion-62"
+                class="emotion-57"
                 data-testid="scroll-container"
                 tabindex="0"
               >
                 <div
-                  class="emotion-63"
+                  class="emotion-58"
                 >
                   <div
                     class="emotion-33"
@@ -3608,7 +3498,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                     >
                       <a
                         class="emotion-37"
-                        href="/getting-started/code/web"
+                        href="/getting-started/overview"
                       >
                         <span
                           class="emotion-4"
@@ -3630,7 +3520,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                     >
                       <a
                         class="emotion-37"
-                        href="/foundations/overview"
+                        href="/theme/overview"
                       >
                         <span
                           class="emotion-4"
@@ -3638,7 +3528,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                           <div
                             class="emotion-39"
                           >
-                            Foundations
+                            Theme
                           </div>
                         </span>
                       </a>
@@ -3666,52 +3556,30 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                       </a>
                     </div>
                   </div>
-                  <div
-                    class="emotion-33"
-                  >
-                    <div
-                      class="emotion-36"
-                    >
-                      <a
-                        class="emotion-37"
-                        href="/patterns/overview"
-                      >
-                        <span
-                          class="emotion-4"
-                        >
-                          <div
-                            class="emotion-39"
-                          >
-                            Patterns
-                          </div>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="emotion-89"
+          class="emotion-79"
         >
           <button
             aria-label="Enable Dark Theme"
             aria-pressed="false"
-            class="emotion-90"
+            class="emotion-80"
             data-testid="theme-switch-button"
             title="Enable Dark Theme"
             type="button"
           >
             <div
-              class="emotion-91"
+              class="emotion-81"
             >
               <div
-                class="emotion-92"
+                class="emotion-82"
               >
                 <svg
-                  class="emotion-93"
+                  class="emotion-83"
                   fill="currentColor"
                   role="img"
                   viewBox="0 0 17 17"

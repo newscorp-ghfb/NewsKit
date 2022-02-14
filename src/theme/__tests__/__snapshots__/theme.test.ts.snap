@@ -291,10 +291,10 @@ Object {
   "name": "newskit-dark",
   "overlays": Object {
     "overlayDarkGradient010": "linear-gradient(180deg, rgba(51, 51, 51, 0) 0%, #0A0A0A 100%)",
-    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
-    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
-    "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0.00) 0%, #0A0A0A 100%)",
-    "overlayGradientInverseVertical": "linear-gradient(0deg, rgba(255,255,255,0.00) 0%, #0A0A0A 100%)",
+    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(10,10,10,0) 0%, rgba(10,10,10,1) 100%)",
+    "overlayGradientInverseVertical": "linear-gradient(0deg, rgba(10,10,10,0) 0%, gba(10,10,10,1) 100%)",
     "overlayLightGradient010": "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)",
     "overlayTintBase010": "{{colors.blackTint020}}",
     "overlayTintBase020": "{{colors.blackTint040}}",
@@ -1822,6 +1822,11 @@ Object {
         "typographyPreset": "utilityBody030",
         "width": "100%",
       },
+      "modal": Object {
+        "panel": Object {
+          "width": "60vw",
+        },
+      },
       "panel": Object {
         "maxHeight": "360px",
         "spaceInset": "spaceInset020",
@@ -1851,6 +1856,11 @@ Object {
         "typographyPreset": "utilityBody020",
         "width": "100%",
       },
+      "modal": Object {
+        "panel": Object {
+          "width": "60vw",
+        },
+      },
       "panel": Object {
         "maxHeight": "272px",
         "spaceInset": "spaceInset020",
@@ -1879,6 +1889,11 @@ Object {
         "stylePreset": "inputField",
         "typographyPreset": "utilityBody020",
         "width": "100%",
+      },
+      "modal": Object {
+        "panel": Object {
+          "width": "60vw",
+        },
       },
       "panel": Object {
         "maxHeight": "184px",
