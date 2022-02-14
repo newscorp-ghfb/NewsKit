@@ -1,6 +1,10 @@
 import * as React from 'react';
 import {Button} from '..';
-import {getColorFromTheme, styled} from '../../utils/style';
+import {
+  getColorFromTheme,
+  getTypographyPresetFromTheme,
+  styled,
+} from '../../utils/style';
 import {ButtonOverrides, ButtonSize} from '../types';
 import {IconFilledEmail} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
@@ -39,6 +43,7 @@ const Label = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  ${getTypographyPresetFromTheme('utilityLabel020')};
 `;
 
 const Spacer = styled.div`
@@ -464,14 +469,6 @@ const myCustomTransitionPresets = createTheme({
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
       },
-      customIconChange: {
-        base: {
-          transitionProperty: 'fill',
-          transitionDuration: '300ms',
-          transitionDelay: '300ms',
-          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-        },
-      },
     },
     stylePresets: {
       testButtonStylePresetWithBorders: {
@@ -482,51 +479,79 @@ const myCustomTransitionPresets = createTheme({
           iconColor: '{{colors.inkInverse}}',
           borderColor: '{{colors.blue020}}',
           borderStyle: 'solid',
-          borderWidth: '4px',
+          borderWidth: '1px',
         },
         hover: {
           backgroundColor: '{{colors.amber070}}',
           borderColor: '{{colors.green040}}',
-          iconColor: '{{colors.purple020}}',
         },
         active: {
           backgroundColor: '{{colors.interactivePrimary050}}',
         },
         disabled: {
           backgroundColor: '{{colors.interactiveDisabled010}}',
-          color: '{{colors.inkNonEssential}}',
-          iconColor: '{{colors.inkNonEssential}}',
         },
         loading: {
           backgroundColor: '{{colors.interactivePrimary020}}',
-          color: '{{colors.inkBrand010}}',
-          iconColor: '{{colors.inkBrand010}}',
         },
       },
     },
   },
 });
+const buttonStyles: Array<{
+  stylePreset: string;
+  buttonKind: string;
+}> = [
+  {buttonKind: 'Solid', stylePreset: ''},
+  {buttonKind: 'Outlined', stylePreset: 'buttonOutlinedPrimary'},
+  {buttonKind: 'Minimal', stylePreset: 'buttonMinimalPrimary'},
+];
 
 export const StoryButtonWithTransitions = () => (
   <>
-    <StorybookSubHeading>Button with transitions</StorybookSubHeading>
+    <StorybookSubHeading>Button with Transition Presets</StorybookSubHeading>
     <ThemeProvider theme={myCustomTransitionPresets}>
       <Container>
-        <StorybookSubHeading>
-          Button with overrides on default transition preset
-        </StorybookSubHeading>
-        <Button
-          size={ButtonSize.Medium}
-          overrides={{
-            stylePreset: 'testButtonStylePresetWithBorders',
-            transitionPreset: 'customIconChange',
-          }}
+        <StorybookSubHeading>Default Transition Presets</StorybookSubHeading>
+        <Stack
+          flow="horizontal-top"
+          spaceInline="space070"
+          spaceStack="space070"
         >
-          <IconFilledEmail overrides={{size: 'iconSize020'}} />
-          Button
-        </Button>
+          {buttonStyles.map(buttons => (
+            <Stack spaceInline="space000">
+              <Label>{buttons.buttonKind}</Label>
+              <Button overrides={{stylePreset: buttons.stylePreset}}>
+                Button
+              </Button>
+            </Stack>
+          ))}
+        </Stack>
+
         <StorybookSubHeading>
-          Button with overrides on two properties on transition presets
+          Button with Transition Preset overrides
+        </StorybookSubHeading>
+        <Stack
+          flow="horizontal-top"
+          spaceInline="space070"
+          spaceStack="space070"
+        >
+          {buttonStyles.map(buttons => (
+            <Stack spaceInline="space000">
+              <Label>{buttons.buttonKind}</Label>
+              <Button
+                overrides={{
+                  stylePreset: buttons.stylePreset,
+                  transitionPreset: 'customBackgroundColorChange',
+                }}
+              >
+                Button
+              </Button>
+            </Stack>
+          ))}
+        </Stack>
+        <StorybookSubHeading>
+          Button with two Transition Preset Overrides
         </StorybookSubHeading>
         <Button
           size={ButtonSize.Medium}
@@ -538,9 +563,9 @@ export const StoryButtonWithTransitions = () => (
             stylePreset: 'testButtonStylePresetWithBorders',
           }}
         >
-          <IconFilledEmail overrides={{size: 'iconSize020'}} />
           Button
         </Button>
+
         <StorybookSubHeading>
           Button with overrides using extend on transitionDuration
         </StorybookSubHeading>
@@ -557,10 +582,9 @@ export const StoryButtonWithTransitions = () => (
           }}
         >
           Button
-          <IconFilledEmail overrides={{size: 'iconSize020'}} />
         </Button>
         <StorybookSubHeading>
-          Button with overrides on two properties from defaults using extend
+          Button with overrides on two presets using extend
         </StorybookSubHeading>
         <Button
           size={ButtonSize.Medium}
