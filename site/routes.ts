@@ -310,6 +310,14 @@ export default [
             description: 'Lets users enter and edit text.',
             illustration: 'components/text-input-illustration',
           },
+          {
+            title: 'Select',
+            page: true,
+            id: '/components/select',
+            description:
+              'Select components allow users to select one option from a list.',
+            illustration: 'components/select/select-illustration',
+          },
         ],
       },
       {
@@ -412,6 +420,14 @@ export default [
             description:
               'Used together to construct a visual grid for responsive page layout.',
             illustration: 'components/grid-cell-illustration',
+          },
+          {
+            title: 'Grid Layout',
+            page: true,
+            id: '/components/grid-layout',
+            description:
+              'Used to construct a visual grid for responsive page layout. A Proxy for CSS grid.',
+            illustration: 'static/placeholder-3x2.png',
           },
           {
             title: 'Modal',
