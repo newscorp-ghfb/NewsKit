@@ -91,7 +91,6 @@ export const SvgPreviewer: React.FC = () => {
     return newTheme[0].dark;
   };
 
-  // TODO: This needs to be wrapped in React.useCallback
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const onmessage = (event: MessageEvent) => {
     if (event.data.pluginMessage?.action === 'FilesToUI') {

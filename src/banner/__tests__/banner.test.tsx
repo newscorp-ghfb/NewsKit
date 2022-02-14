@@ -65,7 +65,6 @@ describe('Banner', () => {
 
   test('renders with content as string and link', () => {
     const props: BannerProps = {
-      // TODO: how we can fix this
       children: [
         <React.Fragment key="1">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

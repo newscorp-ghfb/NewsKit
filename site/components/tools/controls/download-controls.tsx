@@ -12,6 +12,7 @@ export const DownloadControls = ({
   svgCodeGroup,
 }: DownloadControlsProps) => {
   const selectSvgEl = useRef<HTMLSelectElement>(null);
+  const [selectedIndexSvg, setSelectedIndexSvg] = React.useState('0');
 
   const buildComponentName = (svgName: string) =>
     svgName
@@ -223,8 +224,6 @@ export const DownloadControls = ({
   const handleDownloadButtonClick = () => {
     buildAndDownloadSingleSvgFile();
   };
-
-  const [selectedIndexSvg, setSelectedIndexSvg] = React.useState('0');
 
   return (
     <>
