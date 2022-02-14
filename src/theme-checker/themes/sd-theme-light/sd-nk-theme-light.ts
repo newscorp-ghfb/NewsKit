@@ -2,13 +2,13 @@ import {createTheme} from '../../../theme';
 import {newskitLightTheme} from '../../..';
 import theme from './theme.json';
 
-export const sdTheme = {
+export const sdThemeLight = {
   ...theme,
   themeVersion: 1,
 };
 
-export const sdNkTheme = createTheme({
-  name: 'sd-marco-theme',
+export const sdNkThemeLight = createTheme({
+  name: 'sd-theme-light',
   baseTheme: newskitLightTheme,
-  overrides: sdTheme,
+  overrides: sdThemeLight,
 });
