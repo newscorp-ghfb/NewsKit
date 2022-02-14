@@ -224,28 +224,18 @@ const myCustomThemeTransitions = createTheme({
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
       },
-      customborderIconChange: {
-        base: {
-          transitionProperty: 'outline-color',
-          transitionDuration: '100ms',
-          transitionDelay: '500ms',
-          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-        },
-      },
     },
     stylePresets: {
       tagCustom: {
         base: {
-          borderStyle: 'dashed',
-          borderColor: '{{colors.blue060}}',
-          backgroundColor: '{{colors.red020}}',
-          // iconColor: '{{colors.amber020}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveSecondary030}}',
+          backgroundColor: '{{colors.transparent}}',
         },
         hover: {
           backgroundColor: '{{colors.amber070}}',
           borderColor: '{{colors.green040}}',
           iconColor: '{{colors.purple020}}',
-          // iconColor: '{{colors.amber020}}',
         },
       },
     },
@@ -253,24 +243,24 @@ const myCustomThemeTransitions = createTheme({
 });
 export const StoryTagTransitions = () => (
   <>
-    <StorybookSubHeading>Tag with transitions</StorybookSubHeading>
+    <StorybookSubHeading>Tag with Transition Presets</StorybookSubHeading>
     <ThemeProvider theme={myCustomThemeTransitions}>
       <Container>
+        <StorybookSubHeading>Default Transition Presets</StorybookSubHeading>
+        <Tag>Tag</Tag>
         <StorybookSubHeading>
-          Tag with overrides on default transition preset
+          Tag with Transition Preset overrides
         </StorybookSubHeading>
         <Tag
-          href="http://example.com"
           overrides={{
             stylePreset: 'tagCustom',
             transitionPreset: 'customBackgroundColorChange',
           }}
         >
-          <IconFilledEmail />
-          Text
+          Tag
         </Tag>
         <StorybookSubHeading>
-          Tag with overrides on two properties on transition presets
+          Tag with two Transition Preset Overrides
         </StorybookSubHeading>
         <Tag
           overrides={{
@@ -281,7 +271,7 @@ export const StoryTagTransitions = () => (
             ],
           }}
         >
-          Text
+          Tag
         </Tag>
         <StorybookSubHeading>
           Tag with overrides using extend on transitionDuration
@@ -297,10 +287,10 @@ export const StoryTagTransitions = () => (
             },
           }}
         >
-          Text
+          Tag
         </Tag>
         <StorybookSubHeading>
-          Tag with overrides on two properties from defaults using extend
+          Tag with overrides on two presets using extend
         </StorybookSubHeading>
         <Tag
           overrides={{
@@ -321,7 +311,7 @@ export const StoryTagTransitions = () => (
             ],
           }}
         >
-          Text
+          Tag
         </Tag>
       </Container>
     </ThemeProvider>
