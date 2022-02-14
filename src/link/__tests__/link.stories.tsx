@@ -387,13 +387,14 @@ const myCustomLinkTheme = createTheme({
     stylePresets: {
       linkCustom: {
         base: {
-          color: '{{colors.inkLinkBase}}',
+          color: '{{colors.interactivePrimary030}}',
         },
         visited: {
           color: '{{colors.inkLinkVisited}}',
         },
         hover: {
           color: '{{colors.inkLinkHover}}',
+          iconColor: '{{colors.purple020}}',
         },
       },
     },
@@ -402,13 +403,13 @@ const myCustomLinkTheme = createTheme({
 export const StoryLinkStandAloneTransition = () => (
   <Container>
     {/* ------ Link standalone -------- */}
+    <StorybookHeading>Default Transition Presets</StorybookHeading>
+    <LinkStandalone href="/">Standalone link</LinkStandalone>
     <StorybookHeading>
-      Link standalone with transition overrides
+      Link standalone with Transition Preset overrides
     </StorybookHeading>
     <ThemeProvider theme={myCustomLinkTheme}>
-      <StorybookSubHeading>
-        with overrides on default transition preset
-      </StorybookSubHeading>
+      <StorybookSubHeading>Standalone link</StorybookSubHeading>
       <LinkStandalone
         href="/"
         overrides={{
@@ -420,7 +421,7 @@ export const StoryLinkStandAloneTransition = () => (
       </LinkStandalone>
       <br />
       <StorybookSubHeading>
-        Link standalone with overrides on two properties on transition presets
+        Link standalone with two Transition Preset Overrides
       </StorybookSubHeading>
       <LinkStandalone
         href="https://google.com"
@@ -429,7 +430,7 @@ export const StoryLinkStandAloneTransition = () => (
           transitionPreset: ['customFontColorChange', 'customIconChange'],
         }}
       >
-        Standalone link external
+        Standalone Link External
       </LinkStandalone>
       <StorybookSubHeading>
         Link standalone with overrides using extend on transitionDuration
@@ -446,7 +447,7 @@ export const StoryLinkStandAloneTransition = () => (
           },
         }}
       >
-        Standalone link external
+        Standalone Link External
       </LinkStandalone>
     </ThemeProvider>
   </Container>
