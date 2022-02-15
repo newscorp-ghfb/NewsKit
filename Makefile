@@ -117,4 +117,3 @@ push_release:
 	echo "Create PR into main"
 	gh pr create --base main --head $(RELEASE_BRANCH) -t $(RELEASE_PR_MAIN_TITLE) --body ""
 	git push origin --delete "trigger-release-${INITIAL_UPDATE_TYPE}"
-	
