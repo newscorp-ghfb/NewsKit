@@ -263,6 +263,11 @@ const NewBox = styled.div`
   height: 50px;
   background: red;
   border: 2px dotted black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 50px;
 `;
 const OldBox = styled(NewBox)`
   background: green;
@@ -292,17 +297,20 @@ const Container = styled.div`
 
 export const GridComparison = () => (
   <Container>
+    <StorybookHeading>GridLayout with 12 Columns</StorybookHeading>
     {differentColumns.map(columns => (
       <>
         <GridLayout columns="repeat(12, 1fr)" columnGap={columnGap}>
           {columns.map(span => (
-            <NewBoxWithSpan column={`auto / span ${span}`} />
+            <NewBoxWithSpan column={`auto / span ${span}`}>
+              {span}
+            </NewBoxWithSpan>
           ))}
         </GridLayout>
         <Grid xsColumnGutter={columnGap} xsMargin="space000">
           {columns.map(n => (
             <Cell xs={n}>
-              <OldBox />
+              <OldBox>{n}</OldBox>
             </Cell>
           ))}
         </Grid>
@@ -316,20 +324,21 @@ export const GridComparison = () => (
     <br />
     <br />
     <br />
+    <StorybookHeading>GridLayout with columns per size</StorybookHeading>
     {differentColumns.map(columns => (
       <>
         <GridLayout
           columns={columns.map(c => `${c}fr`).join(' ')}
           columnGap={columnGap}
         >
-          {columns.map(() => (
-            <NewBox />
+          {columns.map(n => (
+            <NewBox>{n}</NewBox>
           ))}
         </GridLayout>
         <Grid xsColumnGutter={columnGap} xsMargin="space000">
           {columns.map(n => (
             <Cell xs={n}>
-              <OldBox />
+              <OldBox>{n}</OldBox>
             </Cell>
           ))}
         </Grid>
@@ -344,6 +353,7 @@ export const GridComparison = () => (
     <br />
     <br />
     <br />
+    <StorybookHeading>Same amount of columns</StorybookHeading>
 
     {sameColumns.map(n => (
       <>
@@ -353,7 +363,7 @@ export const GridComparison = () => (
           rowGap={rowGap}
         >
           {createItems(n * 2).map(() => (
-            <NewBox />
+            <NewBox>{12 / n}</NewBox>
           ))}
         </GridLayout>
         <Grid
@@ -363,7 +373,7 @@ export const GridComparison = () => (
         >
           {createItems(n * 2).map(() => (
             <Cell xs={12 / n}>
-              <OldBox />
+              <OldBox>{12 / n}</OldBox>
             </Cell>
           ))}
         </Grid>
