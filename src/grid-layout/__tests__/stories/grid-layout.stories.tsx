@@ -5,6 +5,7 @@ import {Divider} from '../../../divider';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {GridCard, GridTeaser} from './grid-card';
 import {GridBox} from './common';
+import {Grid, Cell} from '../../../grid';
 import {Label} from '../../..';
 import {
   StorybookHeading,
@@ -257,3 +258,117 @@ export const CardWithGrid = () => (
 
 export * from './the-times';
 export * from './the-sun';
+
+const NewBox = styled.div`
+  height: 50px;
+  background: red;
+  border: 2px dotted black;
+`;
+const OldBox = styled(NewBox)`
+  background: green;
+`;
+
+// @ts-ignore
+const NewBoxWithSpan = styled(NewBox)`
+  grid-column: ${props => props.column};
+`;
+
+const createItems = (count: number) => Array.from(Array(count));
+
+const sameColumns = [12, 6, 4, 3, 2, 1];
+const differentColumns = [
+  [8, 4],
+  [9, 3],
+  [3, 6, 3],
+  [5, 5, 2],
+  [1, 2, 3, 4, 2],
+];
+const columnGap = 'space030';
+const rowGap = 'space020';
+
+const Container = styled.div`
+  width: 1000px;
+`;
+
+export const GridComparison = () => (
+  <Container>
+    {differentColumns.map(columns => (
+      <>
+        <GridLayout columns="repeat(12, 1fr)" columnGap={columnGap}>
+          {columns.map(span => (
+            <NewBoxWithSpan column={`auto / span ${span}`} />
+          ))}
+        </GridLayout>
+        <Grid xsColumnGutter={columnGap} xsMargin="space000">
+          {columns.map(n => (
+            <Cell xs={n}>
+              <OldBox />
+            </Cell>
+          ))}
+        </Grid>
+        <hr />
+      </>
+    ))}
+    <br />
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <br />
+    {differentColumns.map(columns => (
+      <>
+        <GridLayout
+          columns={columns.map(c => `${c}fr`).join(' ')}
+          columnGap={columnGap}
+        >
+          {columns.map(() => (
+            <NewBox />
+          ))}
+        </GridLayout>
+        <Grid xsColumnGutter={columnGap} xsMargin="space000">
+          {columns.map(n => (
+            <Cell xs={n}>
+              <OldBox />
+            </Cell>
+          ))}
+        </Grid>
+        <hr />
+      </>
+    ))}
+
+    <br />
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <br />
+
+    {sameColumns.map(n => (
+      <>
+        <GridLayout
+          columns={`repeat(${n}, 1fr)`}
+          columnGap={columnGap}
+          rowGap={rowGap}
+        >
+          {createItems(n * 2).map(() => (
+            <NewBox />
+          ))}
+        </GridLayout>
+        <Grid
+          xsColumnGutter={columnGap}
+          xsMargin="space000"
+          xsRowGutter={rowGap}
+        >
+          {createItems(n * 2).map(() => (
+            <Cell xs={12 / n}>
+              <OldBox />
+            </Cell>
+          ))}
+        </Grid>
+        <hr />
+      </>
+    ))}
+  </Container>
+);
