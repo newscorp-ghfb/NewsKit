@@ -29,5 +29,5 @@ export interface BaseFlagProps<TOverrides> {
   size?: 'small' | 'medium' | 'large';
   children?: React.ReactNode;
 }
-
-export interface FlagProps extends BaseFlagProps<BaseFlagOverrides> {}
+export interface FlagProps
+  extends BaseFlagProps<Omit<BaseFlagOverrides, 'transitionPreset'>> {}
