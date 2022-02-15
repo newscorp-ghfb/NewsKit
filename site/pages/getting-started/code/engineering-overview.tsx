@@ -320,7 +320,7 @@ export default (layoutProps: LayoutProps) => (
       <ContentSection sectionName="what’s next?">
         <ContentPrimary
           id="whatsnext"
-          toc="what’s next?"
+          toc="What’s next?"
           headline="What’s next?"
           description="Want to use NewsKit for your next product? Follow the next steps belows to learn more:"
           showSeparator
