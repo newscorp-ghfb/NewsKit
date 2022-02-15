@@ -43,7 +43,6 @@ const SelectWrapper = styled.div`
 interface ThemeSelectorProps {
   children: React.ReactNode;
 }
-
 const themes = [
   newskitLightTheme,
   newskitDarkTheme,
