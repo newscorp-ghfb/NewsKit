@@ -1,3 +1,4 @@
+import {NkDocThemes} from 'package-name';
 import {createTheme} from '../../../theme';
 import {newskitLightTheme} from '../../..';
 
@@ -5,14 +6,13 @@ import {newskitLightTheme} from '../../..';
 
 // TODO ts complaining?
 
-// TODO user can currently import the package without {} and use any name. 
+// TODO user can currently import the package without {} and use any name.
 // To hardcode the default name.
 
 // @ts-ignore
-import {NkDocThemes} from 'package-name'
 
 export const sdThemeDark = {
-  ...NkDocThemes["NK-Dark"],
+  ...NkDocThemes['NK-Dark'],
   themeVersion: 1,
 };
 
