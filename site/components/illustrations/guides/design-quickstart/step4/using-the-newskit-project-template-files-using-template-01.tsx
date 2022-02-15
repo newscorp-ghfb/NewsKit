@@ -43,32 +43,19 @@ export const UsingTheNewsKitProjectTemplateFilesUsingTemplate01: React.FC = () =
           height="60"
           fill="illustrationPalette020"
         />
-        <Rect
-          x="226"
-          y="236"
-          width="178"
-          height="383"
-          stroke="#AEBFFF"
-          stroke-width="2"
+        <Path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M403 237H227V618H403V237ZM225 235V620H405V235H225Z"
+          fill="illustrationPalette020"
         />
-        <Rect
-          x="941"
-          y="236"
-          width="178"
-          height="383"
-          stroke="#AEBFFF"
-          stroke-width="2"
+        <Path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M1118 237H942V618H1118V237ZM940 235V620H1120V235H940Z"
+          fill="illustrationPalette020"
         />
       </g>
-      <Rect
-        x="196.5"
-        y="149.5"
-        width="952"
-        height="520"
-        rx="14.5"
-        stroke="#AEBFFF"
-        stroke-width="3"
-      />
       <Circle cx="1108" cy="178" r="12" fill="white" />
       <mask
         id={mask1}

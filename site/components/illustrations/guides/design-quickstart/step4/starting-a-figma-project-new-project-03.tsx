@@ -49,15 +49,6 @@ export const StartingAFigmaProjectNewProject03: React.FC = () => {
           fill="illustrationPalette020"
         />
       </g>
-      <Rect
-        x="196.5"
-        y="149.5"
-        width="952"
-        height="520"
-        rx="14.5"
-        stroke="#AEBFFF"
-        stroke-width="3"
-      />
       <Circle cx="1108" cy="178" r="12" fill="white" />
       <mask
         id={mask1}

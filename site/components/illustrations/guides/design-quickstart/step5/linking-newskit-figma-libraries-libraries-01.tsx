@@ -67,15 +67,6 @@ export const LinkingNewsKitFigmaLibrariesLibraries01: React.FC = () => {
               fill="illustrationPalette020"
             />
           </g>
-          <Rect
-            x="282.5"
-            y="116.5"
-            width="1109.39"
-            height="687"
-            rx="22.5205"
-            stroke="#AEBFFF"
-            stroke-width="5"
-          />
           <mask
             id={mask1}
             mask-type="alpha"
