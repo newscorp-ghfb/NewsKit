@@ -1,4 +1,4 @@
-import React, {createRef} from 'react';
+import React, {createRef, useEffect} from 'react';
 import {fireEvent, screen} from '@testing-library/react';
 import {act} from 'react-dom/test-utils';
 import userEvent from '@testing-library/user-event';
@@ -27,24 +27,36 @@ jest.mock('react-transition-group', () => {
       });
     };
 
-    const onEnter = () => callIfExist(props, 'onEnter');
-    const onExited = () => callIfExist(props, 'onExited');
+    const onEnter = React.useCallback(() => callIfExist(props, 'onEnter'), [
+      props,
+    ]);
+    const onExited = React.useCallback(() => callIfExist(props, 'onExited'), [
+      props,
+    ]);
+
+    useEffect(() => {
+      if (props.in) {
+        onEnter();
+      } else {
+        onExited();
+      }
+    }, [props.in, onEnter, onExited]);
 
     // check only for `in` prop and ignore `appear` since its always applied it does not play role
     if (props.in) {
-      onEnter();
       return (
         <FakeTransition>
           {React.Children.map(props.children, child => modifyChildren(child))}
         </FakeTransition>
       );
     }
-
     // modal is not in the DOM when is not open
-    onExited();
     return null;
   });
-  return {CSSTransition: FakeCSSTransition, Transition: FakeTransition};
+  return {
+    CSSTransition: FakeCSSTransition,
+    Transition: FakeTransition,
+  };
 });
 const renderSelectButtonWithComponents = () => (
   <>
@@ -444,8 +456,12 @@ describe('Select', () => {
   describe('in Modal', () => {
     const commonProps: SelectProps = {
       children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
+        <SelectOption key="1" value="option 1">
+          option 1
+        </SelectOption>,
+        <SelectOption key="2" value="option 2">
+          option 2
+        </SelectOption>,
       ],
       useModal: true,
     };
