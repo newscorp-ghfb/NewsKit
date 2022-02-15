@@ -371,7 +371,6 @@ jobs:
       - run:
           name: Build
           command: |
-            echo "export SITE_BASE_URL=${SITE_BASE_URL}"
             export SITE_BASE_URL=${SITE_BASE_URL}; make build_docs
       - persist_to_workspace:
           root: ./
@@ -390,7 +389,6 @@ jobs:
       - run:
           name: Build
           command: |
-            echo "export SITE_BASE_URL=${SITE_BASE_URL}"
             export SITE_BASE_URL=${SITE_BASE_URL}; make build_docs_link
       - persist_to_workspace:
           root: ./
@@ -1108,10 +1106,6 @@ workflows:
             - approve_publish_npm_dev
 
       # develop jobs
-      - build_docs_link:
-          <<: *only_develop
-          name: build_docs_dev_link
-          context: ncu-newskit-site-dev
       - build_push_docker_ecr:
           name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context
@@ -1145,7 +1139,6 @@ workflows:
       - build_docs_link:
           <<: *only_develop
           name: build_docs_prod_link
-          context: ncu-newskit-site-prod
           requires:
             - approve_publish_docs
       - build_push_docker_ecr:
@@ -1196,10 +1189,6 @@ workflows:
       - create_release_candidate:
           <<: *only_trigger_release
           context: ncu-product-platforms-context
-      - build_docs_link:
-          <<: *only_trigger_release
-          name: build_docs_stage_link
-          context: ncu-newskit-site-stage
       - build_push_docker_ecr:
           name: build_push_docker_ecr_release
           context: ncu-product-platforms-context
