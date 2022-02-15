@@ -18,6 +18,7 @@ export * from './fieldset';
 export * from './flag';
 export * from './form';
 export * from './grid';
+export * from './grid-layout';
 export * from './headline';
 export * from './icon-button';
 export * from './icons';

@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useCallback, useState} from 'react';
+import React, {useRef, useEffect, useCallback} from 'react';
 import FocusLock from 'react-focus-lock';
 import {hideOthers, Undo} from 'aria-hidden';
 import {useKeypress} from '../utils/hooks';
@@ -30,15 +30,20 @@ export const BaseDialogFunction: React.FC<BaseDialogFunctionProps> = ({
 
   useKeypress('Escape', handleEscape, {enabled: open});
 
-  const [ariaHiddenUndo, setAriaHiddenUndo] = useState<{undo: Undo}>();
-
   // ref to store activeElement ( focused ) before dialog been opened
   const originalFocusedElementRef = useRef<Element | null>(null);
 
   const baseDialogFunctionRef = useRef(null);
+  const undoRef = useRef<{undo?: Undo}>({});
 
   const handleOnLockActivation = () => {
     originalFocusedElementRef.current = document.activeElement;
+
+    // Aria hides everything else that is not contained inside BaseDialogFunction
+    if (baseDialogFunctionRef.current) {
+      const undo = hideOthers(baseDialogFunctionRef.current);
+      undoRef.current = {undo};
+    }
   };
 
   const handleOnLockDeactivation = useCallback(() => {
@@ -54,6 +59,13 @@ export const BaseDialogFunction: React.FC<BaseDialogFunctionProps> = ({
         0,
       );
     }
+
+    if (undoRef.current) {
+      const {undo} = undoRef.current;
+      if (typeof undo === 'function') {
+        undo();
+      }
+    }
   }, [restoreFocusTo]);
 
   useEffect(() => {
@@ -66,19 +78,6 @@ export const BaseDialogFunction: React.FC<BaseDialogFunctionProps> = ({
       }
     };
   }, [disableFocusTrap, handleOnLockDeactivation, open]);
-
-  // Aria hides everything else that is not contained inside BaseDialogFunction
-  useEffect(() => {
-    if (open && baseDialogFunctionRef.current && !disableFocusTrap) {
-      const undo = hideOthers(baseDialogFunctionRef.current);
-      return setAriaHiddenUndo({undo});
-    }
-    return () => {
-      if (!open && ariaHiddenUndo) {
-        ariaHiddenUndo.undo();
-      }
-    };
-  }, [open]);
 
   return (
     <div ref={baseDialogFunctionRef}>

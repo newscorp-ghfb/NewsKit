@@ -962,7 +962,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -1460,7 +1460,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -1469,12 +1469,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -3058,7 +3058,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -3556,7 +3556,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -3565,12 +3565,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -5154,7 +5154,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -5652,7 +5652,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -5661,12 +5661,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -7250,7 +7250,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -7748,7 +7748,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -7757,12 +7757,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -9346,7 +9346,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -9844,7 +9844,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -9853,12 +9853,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -11442,7 +11442,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -11940,7 +11940,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -11949,12 +11949,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -13538,7 +13538,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -14036,7 +14036,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -14045,12 +14045,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {
@@ -15634,7 +15634,7 @@ Object {
     },
     "dividerInverse": Object {
       "base": Object {
-        "borderColor": "{{colors.blackTint020}}",
+        "borderColor": "{{colors.whiteTint050}}",
       },
     },
     "dividerNegative": Object {
@@ -16132,7 +16132,7 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
         "iconColor": "{{colors.neutral100}}",
       },
       "hover": Object {
@@ -16141,12 +16141,12 @@ Object {
     },
     "toastIcon": Object {
       "base": Object {
-        "iconColor": "{{colors.neutral100}}",
+        "iconColor": "{{colors.white}}",
       },
     },
     "toastText": Object {
       "base": Object {
-        "color": "{{colors.neutral100}}",
+        "color": "{{colors.white}}",
       },
     },
     "tokenFlag": Object {

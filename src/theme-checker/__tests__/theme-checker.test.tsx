@@ -5,6 +5,12 @@ import {tnlTheme} from '../themes/tnl-theme/tnl-theme';
 import {virginTheme} from '../themes/virgin-theme/virgin-theme';
 import {sunTheme} from '../themes/sun-theme/sun-theme';
 
+// TODO: PPDSC-2002
+// Either remove the entire ThemeCheker testing,
+// or add the file to insanbul ignore
+// or move all mocks on the root level
+jest.mock('date-fns/format', () => () => 'Mock Date');
+
 const themes = [
   newskitLightTheme,
   newskitDarkTheme,
