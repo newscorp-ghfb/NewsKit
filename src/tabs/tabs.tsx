@@ -41,6 +41,7 @@ import {Divider} from '../divider';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {omitLogicalPropsFromOverrides} from '../utils/logical-properties';
 
 /* istanbul ignore next */
 export const Tab: React.FC<TabProps> = () => <></>;
@@ -323,6 +324,10 @@ const ThemelessTabs: React.FC<TabsProps> = ({
     return acc;
   }, [] as React.ReactElement[]);
 
+  const overridesWithoutLogicalProps = omitLogicalPropsFromOverrides(
+    overrides as Record<string, unknown>,
+  );
+
   return (
     <StyledTabGroup
       vertical={vertical}
@@ -330,13 +335,14 @@ const ThemelessTabs: React.FC<TabsProps> = ({
       data-testid="tab-group"
     >
       <StyledTabsBar
-        overrides={overrides}
+        overrides={overridesWithoutLogicalProps}
         vertical={vertical}
         data-testid="tab-bar"
       >
         <ScrollComponent {...scrollProps}>
+          {/* MSF TODO: here */}
           <StyledInnerTabGroup
-            overrides={overrides}
+            overrides={overridesWithoutLogicalProps}
             flow={vertical ? Flow.VerticalLeft : Flow.HorizontalCenter}
             inline={!vertical}
             role="tablist"
@@ -345,7 +351,7 @@ const ThemelessTabs: React.FC<TabsProps> = ({
             {tabs}
 
             <StyledTabsBarIndicator
-              overrides={overrides}
+              overrides={overridesWithoutLogicalProps}
               vertical={vertical}
               indicatorPosition={indicatorPosition}
               style={getTabsBarIndicatorStyle(
@@ -354,7 +360,7 @@ const ThemelessTabs: React.FC<TabsProps> = ({
                 indicator.distance,
                 vertical,
                 keyUpdated,
-                overrides,
+                overridesWithoutLogicalProps,
               )}
               data-testid="tab-bar-indicator"
               aria-hidden="true"
@@ -363,7 +369,7 @@ const ThemelessTabs: React.FC<TabsProps> = ({
           </StyledInnerTabGroup>
         </ScrollComponent>
         <StyledTabsBarTrack
-          overrides={overrides}
+          overrides={overridesWithoutLogicalProps}
           vertical={vertical}
           indicatorPosition={indicatorPosition}
           role="presentation"

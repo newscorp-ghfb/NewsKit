@@ -650,34 +650,3 @@ export const StorySelectScreenReaderExample = () => (
   </>
 );
 StorySelectScreenReaderExample.storyName = 'Select screen reader example';
-
-export const StorySelectWithLayoutProps = () => (
-  <>
-    <StorybookSubHeading>With LayoutProps</StorybookSubHeading>
-    <div style={{background: 'red', overflow: 'overlay'}}>
-      <ThemeProvider theme={myCustomTheme}>
-        <Select
-          id="id-13"
-          overrides={{
-            button: {
-              width: '200px',
-              spaceStack: 'unset',
-              marginInline: 'space060',
-              marginBlock: 'space060',
-            },
-            panel: {
-              marginInline: 'space060',
-            },
-          }}
-        >
-          {items.map(item => (
-            <SelectOption key={item} value={item}>
-              {item}
-            </SelectOption>
-          ))}
-        </Select>
-      </ThemeProvider>
-    </div>
-  </>
-);
-StorySelectWithLayoutProps.storyName = 'Select with LayoutProps';

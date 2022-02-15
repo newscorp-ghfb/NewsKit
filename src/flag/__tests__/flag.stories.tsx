@@ -323,27 +323,3 @@ export const StoryFlagWithSize = () => (
   </>
 );
 StoryFlagWithSize.storyName = 'flag with fixed size and overflow';
-
-export const StoryFlagWithLayoutProps = () => (
-  <>
-    <StorybookHeading>Flag</StorybookHeading>
-    <StorybookSubHeading>With LayoutProps</StorybookSubHeading>
-    <ThemeProvider theme={myCustomTheme}>
-      <div style={{background: 'red'}}>
-        <Flag
-          overrides={{
-            width: '200px',
-            marginInline: 'space060',
-            marginBlock: 'space060',
-            paddingBlock: 'space120',
-            paddingInline: 'space120',
-            spaceInset: 'unset',
-          }}
-        >
-          Test
-        </Flag>
-      </div>
-    </ThemeProvider>
-  </>
-);
-StoryFlagWithLayoutProps.storyName = 'flag with LayoutProps';

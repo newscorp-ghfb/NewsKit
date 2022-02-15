@@ -1,5 +1,6 @@
 import {MQ} from '../utils/style';
 import {EventData} from '../instrumentation';
+import {LogicalProps} from '../utils/logical-properties';
 
 export interface BaseLinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
@@ -8,16 +9,18 @@ export interface BaseLinkProps
   href: string;
 }
 
+interface LinkOverrides extends LogicalProps {
+  stylePreset?: MQ<string>;
+  typographyPreset?: MQ<string>;
+  spaceInline?: MQ<string>;
+  externalIcon?: {
+    size?: string;
+  };
+}
+
 export interface InternalLinkProps extends BaseLinkProps {
   external?: boolean;
-  overrides?: {
-    stylePreset?: MQ<string>;
-    typographyPreset?: MQ<string>;
-    spaceInline?: MQ<string>;
-    externalIcon?: {
-      size?: string;
-    };
-  };
+  overrides?: LinkOverrides;
   noCrop?: boolean;
 }
 

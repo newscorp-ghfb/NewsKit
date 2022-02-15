@@ -4,6 +4,7 @@ import {BaseFlagProps, BaseFlagOverrides} from '../flag';
 import {DividerOverrides} from '../divider';
 import {ScrollProps} from '../scroll';
 import {Override} from '../utils/overrides';
+import {LogicalProps} from '../utils/logical-properties';
 
 export enum TabAlign {
   Start = 'start',
@@ -39,6 +40,28 @@ export type TabsIndicatorPositionType =
   | 'start'
   | 'end'
   | 'none';
+
+interface TabsOverrides extends LogicalProps {
+  spaceInline?: MQ<string>;
+  divider?: DividerOverrides;
+  tab?: {
+    spaceInline?: MQ<string>;
+  };
+  selectionIndicator?: {
+    track?: {
+      weight?: MQ<string>;
+      stylePreset?: MQ<string>;
+    };
+    indicator?: {
+      size?: string;
+      weight?: string;
+      motionDuration?: string;
+      motionTiming?: string;
+      stylePreset?: MQ<string>;
+    };
+  };
+  scroll?: Override<ScrollProps>;
+}
 export interface TabsProps {
   size?: TabSizeType;
   children: React.ReactElement<TabProps>[];
@@ -50,27 +73,7 @@ export interface TabsProps {
   indicatorPosition?: TabsIndicatorPositionType;
   align?: TabAlign;
   onChange?: (selectedIndex: number) => void;
-  overrides?: {
-    spaceInline?: MQ<string>;
-    divider?: DividerOverrides;
-    tab?: {
-      spaceInline?: MQ<string>;
-    };
-    selectionIndicator?: {
-      track?: {
-        weight?: MQ<string>;
-        stylePreset?: MQ<string>;
-      };
-      indicator?: {
-        size?: string;
-        weight?: string;
-        motionDuration?: string;
-        motionTiming?: string;
-        stylePreset?: MQ<string>;
-      };
-    };
-    scroll?: Override<ScrollProps>;
-  };
+  overrides?: TabsOverrides;
 }
 
 export interface TabPanelProps {

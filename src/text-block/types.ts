@@ -1,7 +1,10 @@
 import React from 'react';
+import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
-export interface TextBlockProps extends React.HTMLAttributes<HTMLElement> {
+export interface TextBlockProps
+  extends React.HTMLAttributes<HTMLElement>,
+    LogicalProps {
   typographyPreset?: MQ<string>;
   stylePreset?: MQ<string>;
   noCrop?: boolean;

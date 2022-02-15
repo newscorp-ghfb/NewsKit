@@ -5,6 +5,7 @@ import {
   SubmitHandler,
   UseFormReturn,
 } from 'react-hook-form';
+import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
 export interface FormError extends Object {
@@ -55,7 +56,7 @@ export type CommonInputProps = Omit<
   endEnhancer?: React.ReactNode;
 };
 
-export type EnhancerOverrides = {
+export interface EnhancerOverrides extends LogicalProps {
   startEnhancer?: {
     spaceInline?: MQ<string>;
     iconSize?: MQ<string>;
@@ -64,4 +65,4 @@ export type EnhancerOverrides = {
     spaceInline?: MQ<string>;
     iconSize?: MQ<string>;
   };
-};
+}

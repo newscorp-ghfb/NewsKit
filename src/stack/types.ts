@@ -1,5 +1,6 @@
 import {MQ} from '../utils/style/types';
 import {AlignSelfValues} from '../stack-child';
+import {LogicalProps} from '../utils/logical-properties';
 
 export type FlexWrap = boolean | 'wrap' | 'nowrap' | 'wrap-reverse';
 
@@ -48,7 +49,7 @@ export interface StyledStackProps extends CommonStackProps {
   $height?: MQ<string>;
 }
 
-export interface StackProps extends Partial<CommonStackProps> {
+export interface StackProps extends Partial<CommonStackProps>, LogicalProps {
   wrap?: MQ<FlexWrap>;
   list?: boolean;
   ariaLabel?: string;

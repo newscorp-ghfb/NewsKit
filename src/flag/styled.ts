@@ -1,4 +1,4 @@
-import {useLogicalMargins, useLogicalPadding} from '../utils/logicalProperties';
+import {useLogicalProps} from '../utils/logical-properties';
 import {
   styled,
   getStylePreset,
@@ -19,8 +19,7 @@ export const StyledBaseFlag = styled('div')<
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  ${useLogicalMargins};
-  ${useLogicalPadding};
+  ${useLogicalProps}
 
   ${props =>
     getResponsiveSize(

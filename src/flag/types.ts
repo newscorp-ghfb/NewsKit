@@ -1,4 +1,4 @@
-import {LogicalMargins, LogicalPadding} from '../utils/logicalProperties';
+import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
 export enum FlagSize {
@@ -7,7 +7,7 @@ export enum FlagSize {
   Large = 'large',
 }
 
-export interface BaseFlagOverrides extends LogicalMargins, LogicalPadding {
+export interface BaseFlagOverrides extends LogicalProps {
   typographyPreset?: MQ<string>;
   stylePreset?: MQ<string>;
   spaceInset?: MQ<string>;

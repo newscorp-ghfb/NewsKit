@@ -7,9 +7,11 @@ import {
   getResponsiveSpacingInlineHorizontal,
   styled,
 } from '../utils/style';
+import {useLogicalProps} from '../utils/logical-properties';
 
 export const StyledLabel = styled.label<LabelProps>`
   display: block;
+  ${useLogicalProps}
   ${({size, state}) =>
     getStylePreset(`label.${size}`, '', {
       isInvalid: state === 'invalid',
