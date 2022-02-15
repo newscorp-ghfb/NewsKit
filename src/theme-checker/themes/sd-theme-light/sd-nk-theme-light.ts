@@ -8,10 +8,10 @@ import {newskitLightTheme} from '../../..';
 // To hardcode the default name.
 
 // @ts-ignore
-import {NkThemes} from 'package-name'
+import {NkDocThemes} from 'package-name'
 
 export const sdThemeLight = {
-  ...NkThemes["NK-Light"],
+  ...NkDocThemes["NK-Light"],
   themeVersion: 1,
 };
 
