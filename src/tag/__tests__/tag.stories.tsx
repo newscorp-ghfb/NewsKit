@@ -231,11 +231,11 @@ const myCustomThemeTransitions = createTheme({
           borderStyle: 'solid',
           borderColor: '{{colors.interactiveSecondary030}}',
           backgroundColor: '{{colors.transparent}}',
+          color: '{{colors.inkBase}}',
         },
         hover: {
           backgroundColor: '{{colors.amber070}}',
           borderColor: '{{colors.green040}}',
-          iconColor: '{{colors.purple020}}',
         },
       },
     },
@@ -247,11 +247,12 @@ export const StoryTagTransitions = () => (
     <ThemeProvider theme={myCustomThemeTransitions}>
       <Container>
         <StorybookSubHeading>Default Transition Presets</StorybookSubHeading>
-        <Tag>Tag</Tag>
+        <Tag href="http://example.com">Tag</Tag>
         <StorybookSubHeading>
           Tag with Transition Preset overrides
         </StorybookSubHeading>
         <Tag
+          href="http://example.com"
           overrides={{
             stylePreset: 'tagCustom',
             transitionPreset: 'customBackgroundColorChange',
@@ -263,6 +264,7 @@ export const StoryTagTransitions = () => (
           Tag with two Transition Preset Overrides
         </StorybookSubHeading>
         <Tag
+          href="http://example.com"
           overrides={{
             stylePreset: 'tagCustom',
             transitionPreset: [
@@ -277,6 +279,7 @@ export const StoryTagTransitions = () => (
           Tag with overrides using extend on transitionDuration
         </StorybookSubHeading>
         <Tag
+          href="http://example.com"
           overrides={{
             stylePreset: 'tagCustom',
             transitionPreset: {
@@ -293,6 +296,7 @@ export const StoryTagTransitions = () => (
           Tag with overrides on two presets using extend
         </StorybookSubHeading>
         <Tag
+          href="http://example.com"
           overrides={{
             stylePreset: 'tagCustom',
             transitionPreset: [
