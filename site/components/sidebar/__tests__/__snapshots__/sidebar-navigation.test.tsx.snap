@@ -26,9 +26,9 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 
 .emotion-4 {
   display: inline-block;
-  transition-property: color,fill;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -184,9 +184,9 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 
 .emotion-4 {
   display: inline-block;
-  transition-property: color,fill;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   -webkit-text-decoration: none;
   text-decoration: none;
 }

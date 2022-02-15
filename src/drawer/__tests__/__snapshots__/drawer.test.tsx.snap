@@ -222,9 +222,9 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   border-radius: 50%;
   color: #2E2E2E;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -598,9 +598,9 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   border-radius: 50%;
   color: #2E2E2E;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -980,9 +980,9 @@ exports[`Drawer renders default 1`] = `
   border-radius: 50%;
   color: #2E2E2E;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -1331,9 +1331,9 @@ exports[`Drawer renders drawer with overrides 1`] = `
   background-color: transparent;
   border-radius: 50%;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -1712,9 +1712,9 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   border-radius: 50%;
   color: #2E2E2E;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -2122,9 +2122,9 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   border-radius: 50%;
   color: #2E2E2E;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -2488,9 +2488,9 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   border-radius: 50%;
   color: #2E2E2E;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -2875,9 +2875,9 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   border-radius: 50%;
   color: #2E2E2E;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -3265,9 +3265,9 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   border-radius: 50%;
   color: #2E2E2E;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -3655,9 +3655,9 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   border-radius: 50%;
   color: #2E2E2E;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -4045,9 +4045,9 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   border-radius: 50%;
   color: #2E2E2E;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -4661,9 +4661,9 @@ exports[`Drawer renders without header 1`] = `
   border-radius: 50%;
   color: #2E2E2E;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -5209,9 +5209,9 @@ exports[`Drawer renders without overlay 1`] = `
   border-radius: 50%;
   color: #2E2E2E;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -5583,9 +5583,9 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   border-radius: 50%;
   color: #2E2E2E;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -5947,9 +5947,9 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   border-radius: 50%;
   color: #2E2E2E;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 

@@ -1192,8 +1192,6 @@ Object {
       "stylePreset": "buttonSolidPrimary",
       "transitionPreset": Array [
         "backgroundColorChange",
-        "borderColorChange",
-        "iconColorChange",
       ],
       "typographyPreset": "utilityButton030",
     },
@@ -1209,8 +1207,6 @@ Object {
       "stylePreset": "buttonSolidPrimary",
       "transitionPreset": Array [
         "backgroundColorChange",
-        "borderColorChange",
-        "iconColorChange",
       ],
       "typographyPreset": "utilityButton020",
     },
@@ -1226,8 +1222,6 @@ Object {
       "stylePreset": "buttonSolidPrimary",
       "transitionPreset": Array [
         "backgroundColorChange",
-        "borderColorChange",
-        "iconColorChange",
       ],
       "typographyPreset": "utilityButton010",
     },
@@ -1690,7 +1684,6 @@ Object {
     "stylePreset": "linkStandalone",
     "transitionPreset": Array [
       "fontColorChange",
-      "iconColorChange",
     ],
     "typographyPreset": "utilityLabel020",
   },
@@ -1704,9 +1697,6 @@ Object {
       "stylePreset": "inkSubtle",
       "transitionPreset": Array [
         "backgroundColorChange",
-        "borderColorChange",
-        "fontColorChange",
-        "iconColorChange",
       ],
       "typographyPreset": "utilityHeading030",
     },
@@ -1719,9 +1709,6 @@ Object {
       "stylePreset": "menuItemHorizontal",
       "transitionPreset": Array [
         "backgroundColorChange",
-        "borderColorChange",
-        "fontColorChange",
-        "iconColorChange",
       ],
     },
     "vertical": Object {
@@ -1731,9 +1718,6 @@ Object {
       "stylePreset": "menuItemVertical",
       "transitionPreset": Array [
         "backgroundColorChange",
-        "borderColorChange",
-        "fontColorChange",
-        "iconColorChange",
       ],
     },
   },
@@ -2067,9 +2051,6 @@ Object {
       "stylePreset": "tab",
       "transitionPreset": Array [
         "backgroundColorChange",
-        "borderColorChange",
-        "iconColorChange",
-        "fontColorChange",
       ],
       "typographyPreset": "utilityButton030",
     },
@@ -2081,9 +2062,6 @@ Object {
       "stylePreset": "tab",
       "transitionPreset": Array [
         "backgroundColorChange",
-        "borderColorChange",
-        "iconColorChange",
-        "fontColorChange",
       ],
       "typographyPreset": "utilityButton020",
     },
@@ -2095,9 +2073,6 @@ Object {
       "stylePreset": "tab",
       "transitionPreset": Array [
         "backgroundColorChange",
-        "borderColorChange",
-        "iconColorChange",
-        "fontColorChange",
       ],
       "typographyPreset": "utilityButton010",
     },
@@ -2126,8 +2101,6 @@ Object {
       "stylePreset": "tagPrimary",
       "transitionPreset": Array [
         "backgroundColorChange",
-        "borderColorChange",
-        "iconColorChange",
       ],
       "typographyPreset": "utilityButton030",
     },
@@ -2139,8 +2112,6 @@ Object {
       "stylePreset": "tagPrimary",
       "transitionPreset": Array [
         "backgroundColorChange",
-        "borderColorChange",
-        "iconColorChange",
       ],
       "typographyPreset": "utilityButton020",
     },
@@ -2152,8 +2123,6 @@ Object {
       "stylePreset": "tagPrimary",
       "transitionPreset": Array [
         "backgroundColorChange",
-        "borderColorChange",
-        "iconColorChange",
       ],
       "typographyPreset": "utilityButton010",
     },

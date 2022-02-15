@@ -289,9 +289,9 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   -ms-appearance: none;
   appearance: none;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -801,9 +801,9 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   -ms-appearance: none;
   appearance: none;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -1910,9 +1910,9 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   -ms-appearance: none;
   appearance: none;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 

@@ -30,9 +30,9 @@ exports[`TableOfContent should render with no errors 1`] = `
 
 .emotion-2 {
   display: inline-block;
-  transition-property: color,fill;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #535353;
   border-style: solid;
   border-color: #EBEBEB;
@@ -104,9 +104,9 @@ exports[`TableOfContent should render with no errors 1`] = `
 
 .emotion-5 {
   display: inline-block;
-  transition-property: color,fill;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #535353;
   border-style: solid;
   border-color: #EBEBEB;

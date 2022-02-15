@@ -32,9 +32,9 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: progress;
 }
 
@@ -165,9 +165,9 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -304,9 +304,9 @@ exports[`IconButton renders Large Icon Button 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -444,9 +444,9 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -584,9 +584,9 @@ exports[`IconButton renders Small Icon Button 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -724,9 +724,9 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -867,9 +867,9 @@ exports[`IconButton renders with different style preset 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 

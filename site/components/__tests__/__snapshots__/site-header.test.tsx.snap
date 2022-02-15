@@ -198,9 +198,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-10 {
   display: inline-block;
-  transition-property: color,fill;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #2E2E2E;
 }
 
@@ -446,9 +446,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-37 {
   display: inline-block;
-  transition-property: color,fill;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -651,9 +651,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   background-color: #F4F4F4;
   border-radius: 50%;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -1417,9 +1417,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-10 {
   display: inline-block;
-  transition-property: color,fill;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #2E2E2E;
 }
 
@@ -1665,9 +1665,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-37 {
   display: inline-block;
-  transition-property: color,fill;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1870,9 +1870,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   background-color: #F4F4F4;
   border-radius: 50%;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -2636,9 +2636,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-10 {
   display: inline-block;
-  transition-property: color,fill;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #2E2E2E;
 }
 
@@ -2884,9 +2884,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-37 {
   display: inline-block;
-  transition-property: color,fill;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3066,9 +3066,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   background-color: #F4F4F4;
   border-radius: 50%;
   margin: 0;
-  transition-property: background-color,border-color,fill;
-  transition-duration: 200ms,200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
