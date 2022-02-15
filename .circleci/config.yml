@@ -370,9 +370,7 @@ jobs:
           at: ~/project
       - run:
           name: Build
-          command: |
-            echo "export SITE_BASE_URL=${SITE_BASE_URL}"
-            export SITE_BASE_URL=${SITE_BASE_URL}; make build_docs
+          command: make build_docs
       - persist_to_workspace:
           root: ./
           paths:
@@ -380,7 +378,24 @@ jobs:
       - slack/status:
           <<: *slack_status
 
-  build_docs_link:
+  build_docs_prod:
+    <<: *working_directory
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Build
+          command: make build_docs_prod
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - public/*
+      - slack/status:
+          <<: *slack_status
+
+  build_docs_pr:
     <<: *working_directory
     executor: node-xlarge
     steps:
@@ -390,8 +405,8 @@ jobs:
       - run:
           name: Build
           command: |
-            echo "export SITE_BASE_URL=${SITE_BASE_URL}"
-            export SITE_BASE_URL=${SITE_BASE_URL}; make build_docs_link
+            export SITE_BASE_URL=${SITE_BASE_URL}
+            make build_docs_pr
       - persist_to_workspace:
           root: ./
           paths:
@@ -1067,10 +1082,10 @@ workflows:
           environment: pr
           requires:
             - init_aws
-      - build_docs_link:
+      - build_docs_pr:
           <<: *only_pr
-          name: build_docs_pr_link
-          context: ncu-newskit-site-pr
+          name: build_docs_pr
+          context: ncu-newskit-site-dev
           requires:
             - build_icons
       - push_s3:
@@ -1079,7 +1094,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_terraform_s3_dev
-            - build_docs_pr_link
+            - build_docs_pr
             - build_storybook
       - post_pr_env_url_to_github_pr:
           <<: *only_pr
@@ -1108,10 +1123,6 @@ workflows:
             - approve_publish_npm_dev
 
       # develop jobs
-      - build_docs_link:
-          <<: *only_develop
-          name: build_docs_dev_link
-          context: ncu-newskit-site-dev
       - build_push_docker_ecr:
           name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context
@@ -1142,17 +1153,16 @@ workflows:
           type: approval
           requires:
             - eks_kubectl_deploy_dev
-      - build_docs_link:
+      - build_docs_prod:
           <<: *only_develop
-          name: build_docs_prod_link
-          context: ncu-newskit-site-prod
+          name: 'build_docs_prod'
           requires:
             - approve_publish_docs
       - build_push_docker_ecr:
           name: build_push_docker_ecr_prod
           context: ncu-product-platforms-context
           requires:
-            - build_docs_prod_link
+            - build_docs_prod
       - eks_flux_deploy:
           <<: *only_develop
           name: eks_flux_deploy_dev_to_prod
@@ -1196,10 +1206,6 @@ workflows:
       - create_release_candidate:
           <<: *only_trigger_release
           context: ncu-product-platforms-context
-      - build_docs_link:
-          <<: *only_trigger_release
-          name: build_docs_stage_link
-          context: ncu-newskit-site-stage
       - build_push_docker_ecr:
           name: build_push_docker_ecr_release
           context: ncu-product-platforms-context
