@@ -35,51 +35,63 @@ export default [
     id: '/getting-started',
     subNav: [
       {
-        title: 'Overview',
+        title: 'Getting started',
         page: true,
         id: '/getting-started/overview',
       },
       {
-        title: 'Instrumentation',
-        page: true,
-        id: '/getting-started/code/instrumentation',
+        title: 'Design',
+        id: '/getting-started/design',
+        subNav: [
+          {
+            title: 'Overview',
+            page: true,
+            id: '/getting-started/design/design-overview',
+            description:
+              'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
+            illustration: 'guides/design-overview/hero',
+          },
+          {
+            title: 'Quickstart',
+            page: true,
+            id: '/getting-started/design/design-quickstart',
+            description:
+              'This page describes how to get started designing a digital product with NewsKit.',
+            illustration: 'guides/design-quickstart/hero',
+          },
+        ],
       },
       {
-        title: 'Testing',
-        page: true,
-        id: '/getting-started/code/testing',
-      },
-      {
-        title: 'Design Overview',
-        page: true,
-        id: '/getting-started/design/design-overview',
-        description:
-          'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
-        illustration: 'guides/design-overview/hero',
-      },
-      {
-        title: 'Design quickstart',
-        page: true,
-        id: '/getting-started/design/design-quickstart',
-        description:
-          'This page describes how to get started designing a digital product with NewsKit.',
-        illustration: 'guides/design-quickstart/hero',
-      },
-      {
-        title: 'Engineering overview',
-        page: true,
-        id: '/getting-started/code/engineering-overview',
-        description:
-          'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
-        illustration: 'guides/engineering-overview/hero',
-      },
-      {
-        title: 'Engineering quickstart',
-        page: true,
-        id: '/getting-started/code/engineering-quickstart',
-        description:
-          'This page describes how to get started building a web application with NewsKit.',
-        illustration: 'guides/engineering-quickstart/hero',
+        title: 'Code',
+        id: '/getting-started/code',
+        subNav: [
+          {
+            title: 'Overview',
+            page: true,
+            id: '/getting-started/code/engineering-overview',
+            description:
+              'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
+            illustration: 'guides/engineering-overview/hero',
+          },
+          {
+            title: 'Quickstart',
+            page: true,
+            id: '/getting-started/code/engineering-quickstart',
+            description:
+              'This page describes how to get started building a web application with NewsKit.',
+            illustration: 'guides/engineering-quickstart/hero',
+          },
+          {
+            title: 'Instrumentation',
+            page: true,
+            id: '/getting-started/code/instrumentation',
+          },
+          {
+            title: 'Testing',
+            page: true,
+            id: '/getting-started/code/testing',
+          },
+        ],
       },
     ],
   },

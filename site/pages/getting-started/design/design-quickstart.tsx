@@ -249,7 +249,16 @@ export default (layoutProps: LayoutProps) => (
           id="installing-settingup-figma-plugins"
           toc="Installing & setting up Figma plugins"
           headline="Installing & setting up Figma plugins"
-          description="NewsKit provides custom Figma plugins to improve the design process workflow, follow these simple steps to install and set up:"
+          description={
+            <>
+              NewsKit provides{' '}
+              <Link href="/getting-started/design/design-overview/#plugins">
+                custom Figma plugins
+              </Link>{' '}
+              to improve the design process workflow, follow these simple steps
+              to install and set up:
+            </>
+          }
         >
           <OrderedList overrides={orderedListOverrides}>
             <>
@@ -285,7 +294,7 @@ export default (layoutProps: LayoutProps) => (
           <InlineMessage role="region" aria-label="Figma plugins">
             In addition to the above, view a list of optional{' '}
             <Link
-              href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/3704423476/old+design+overview+content+-+Web+Documentation#:~:text=refer%20to%20the-,Figma%20plugins%20guide,-"
+              href="https://www.figma.com/file/JCXJnEdPgFVWocU3LYk6YW/Figma-Plugins?node-id=301%3A19"
               target="_blank"
             >
               recommended Figma plugins
@@ -450,11 +459,18 @@ export default (layoutProps: LayoutProps) => (
             <>
               The{' '}
               <Link
+                href="https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components"
+                target="_blank"
+              >
+                NK-Web Gallery
+              </Link>
+              , &{' '}
+              <Link
                 href="https://www.figma.com/file/Q3OTJ4RZWJGTCaWuS8sWsL/%F0%9F%9F%A2-NK-Utilities"
                 target="_blank"
               >
-                NK-Web Gallery, & NK-Utilities
-              </Link>{' '}
+                NK-Utilities
+              </Link>
               Figma libraries are automatically linked when you add a new design
               file or duplicate one of the NewsKit project template files.
             </>
@@ -504,7 +520,7 @@ export default (layoutProps: LayoutProps) => (
           showSeparator
         >
           <UnorderedList
-            markerAlign="center"
+            markerAlign="start"
             listItemMarker={IconFilledCircle}
             overrides={{
               spaceStack: 'space050',
@@ -525,7 +541,6 @@ export default (layoutProps: LayoutProps) => (
               >
                 view the ways of working guidance.
               </Link>
-              with a minimum of node v14 installed.
             </>
             <>
               <Link href="/theme/theming/creating-a-theme/">
