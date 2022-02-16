@@ -1,9 +1,6 @@
 import {withDefaultProps} from '../utils/with-default-props';
 import {toNewsKitIcon} from './to-newskit-icon';
 import {NewsKitIconProps, SvgProps} from './types';
-import defaults from './defaults';
-import stylePresets from './style-presets';
-import {withOwnTheme} from '../utils/with-own-theme';
 
 export const customToNewsKitIcon = (
   displayName: string,
@@ -13,9 +10,11 @@ export const customToNewsKitIcon = (
   // eslint-disable-next-line no-param-reassign
   CustomIcon.displayName = displayName;
 
-  return withOwnTheme(
-    withDefaultProps(toNewsKitIcon(CustomIcon), {
-      overrides: overrides || {},
-    }),
-  )({defaults, stylePresets});
+  if (!overrides) {
+    return toNewsKitIcon(CustomIcon);
+  }
+
+  return withDefaultProps(toNewsKitIcon(CustomIcon), {
+    overrides,
+  });
 };

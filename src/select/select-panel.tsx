@@ -4,14 +4,22 @@ import {
   ButtonSelectSize,
   SelectPanelOverrides,
   SelectOptionProps,
+  SelectPropsOverrides,
 } from './types';
-import {StyledOption, StyledOptionIcon, StyledSelectPanel} from './styled';
+import {
+  StyledOption,
+  StyledOptionIcon,
+  StyledSelectPanel,
+  StyledModalPanel,
+} from './styled';
 import {ScreenReaderOnly} from '../screen-reader-only';
 import {useReactKeys} from '../utils/hooks';
-
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {IconFilledCheck} from '../icons';
+import {Modal, ModalProps} from '../modal';
+import {getComponentOverrides, Override} from '../utils/overrides';
+import {getModalOverrides} from './utils';
 
 interface SelectPanelProps {
   isOpen: boolean;
@@ -23,9 +31,17 @@ interface SelectPanelProps {
   getItemProps: Function;
   selectedItem?: React.ReactElement<SelectOptionProps>;
   highlightedIndex?: number;
-  overrides?: SelectPanelOverrides;
+  overrides?: {
+    panel?: SelectPanelOverrides;
+    modal?: Override<ModalProps>;
+  };
   children: React.ReactElement<SelectOptionProps>[];
+  renderInModal: boolean;
+  buttonRef: React.RefObject<HTMLButtonElement>;
+  closeMenu: Function;
 }
+
+const DefaultModal = Modal;
 
 const StyledOptionWithPrivateProps = React.forwardRef<
   HTMLDivElement,
@@ -78,51 +94,105 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       getItemProps,
       selectedItem,
       highlightedIndex,
+      buttonRef,
+      renderInModal,
+      closeMenu,
+      overrides,
       ...restProps
     } = props;
 
     const listDescriptionId = useReactKeys(1)[0];
 
+    const theme = useTheme();
+    const modalOverrides = getModalOverrides({
+      theme,
+      size,
+      overrides: overrides?.modal as SelectPropsOverrides['modal'],
+    });
+
+    const optionsAsChildren =
+      isOpen &&
+      React.Children.map(
+        children,
+        (child: React.ReactElement<SelectOptionProps>, index) => {
+          const downshiftOptionProps = getItemProps({
+            item: child,
+            index,
+          });
+
+          const combinedProps = {
+            ...downshiftOptionProps,
+            ...child.props,
+          };
+
+          return (
+            <StyledOptionWithPrivateProps
+              $focused={highlightedIndex === index}
+              $selected={selectedItem === child}
+              $size={size}
+              {...combinedProps}
+            />
+          );
+        },
+      );
+
+    const screenReaderOnlyMessage = isOpen && (
+      <ScreenReaderOnly id={listDescriptionId}>
+        Press down arrow key to navigate to the first item
+      </ScreenReaderOnly>
+    );
+
+    if (renderInModal && !isOpen) {
+      // this is needed for downshift in order to work properly
+      return <div ref={panelRef} />;
+    }
+    if (renderInModal && isOpen) {
+      const [ModalComponent, modalProps] = getComponentOverrides(
+        overrides?.modal,
+        DefaultModal,
+        {
+          overrides: modalOverrides,
+          open: isOpen,
+          restoreFocusTo: buttonRef.current!,
+          onDismiss: closeMenu,
+        },
+      );
+
+      return (
+        <ModalComponent {...(modalProps as ModalProps)}>
+          {screenReaderOnlyMessage}
+          <StyledModalPanel
+            data-testid="select-panel"
+            aria-describedby={listDescriptionId}
+            ref={panelRef}
+            {...restProps}
+            onBlur={e => {
+              // set tabIndex to 0 so that user can return to the element
+              // when before that moves to Close / Other focusable elements inside the modal
+              e.target.setAttribute('tabIndex', '0');
+            }}
+          >
+            {optionsAsChildren}
+          </StyledModalPanel>
+        </ModalComponent>
+      );
+    }
     return (
       <>
-        <ScreenReaderOnly id={listDescriptionId}>
-          Press down arrow key to navigate to the first item
-        </ScreenReaderOnly>
+        {screenReaderOnlyMessage}
         <StyledSelectPanel
           $isOpen={isOpen}
           data-testid="select-panel"
-          aria-describedby={listDescriptionId}
+          aria-describedby={isOpen ? listDescriptionId : undefined}
           $width={width}
           $top={(top || 0) + (height || 0)}
           $left={left}
           $size={size}
           ref={panelRef}
+          overrides={overrides?.panel}
           {...restProps}
         >
-          {isOpen &&
-            React.Children.map(
-              children,
-              (child: React.ReactElement<SelectOptionProps>, index) => {
-                const downshiftOptionProps = getItemProps({
-                  item: child,
-                  index,
-                });
-
-                const combinedProps = {
-                  ...downshiftOptionProps,
-                  ...child.props,
-                };
-
-                return (
-                  <StyledOptionWithPrivateProps
-                    $focused={highlightedIndex === index}
-                    $selected={selectedItem === child}
-                    $size={size}
-                    {...combinedProps}
-                  />
-                );
-              },
-            )}
+          {optionsAsChildren}
         </StyledSelectPanel>
       </>
     );

@@ -34,7 +34,7 @@ export const createInitState = (
 ): BreakpointState =>
   Object.entries(mqPerBreakpoint).reduce((state, [breakpointKey, mqString]) => {
     /* istanbul ignore else */
-    if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined' && 'matchMedia' in window) {
       const mql = window.matchMedia(mqString);
       return {...state, [breakpointKey]: mql.matches};
       // eslint-disable-next-line no-else-return

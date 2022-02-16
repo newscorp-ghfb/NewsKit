@@ -2,6 +2,8 @@ import React from 'react';
 import {EnhancerOverrides, CommonInputProps} from '../form/types';
 import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
+import {Override} from '../utils/overrides';
+import {ModalProps} from '../modal';
 
 export type ButtonSelectSize = 'small' | 'medium' | 'large';
 
@@ -28,14 +30,18 @@ export interface SelectPanelOverrides extends LogicalProps {
   spaceStack?: MQ<string>;
 }
 
+export type SelectPropsOverrides = {
+  button?: SelectButtonOverrides;
+  panel?: SelectPanelOverrides;
+  modal?: Override<ModalProps>;
+};
+
 export interface SelectProps extends CommonInputProps {
   loading?: boolean;
   children: Array<React.ReactElement<SelectOptionProps>>;
   validationIcon?: React.ReactNode;
-  overrides?: {
-    button?: SelectButtonOverrides;
-    panel?: SelectPanelOverrides;
-  };
+  useModal?: MQ<boolean>;
+  overrides?: SelectPropsOverrides;
 }
 
 export interface SelectOptionProps {

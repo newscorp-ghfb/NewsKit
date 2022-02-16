@@ -144,6 +144,9 @@ const ThemelessTabs: React.FC<TabsProps> = ({
   );
   const tabsBarTrackSize = vertical ? tabsBarTrackHeight : tabsBarTrackWidth;
 
+  const [activeTabWidth, activeTabHeight] = useResizeObserver(activeTabRef);
+  const activeTabSize = vertical ? activeTabHeight : activeTabWidth;
+
   const tabsBarIndicatorSizeOverride = get(
     overrides,
     'selectionIndicator.indicator.size',
@@ -166,6 +169,7 @@ const ThemelessTabs: React.FC<TabsProps> = ({
     theme,
     vertical,
     tabsBarTrackSize,
+    activeTabSize,
   ]);
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {

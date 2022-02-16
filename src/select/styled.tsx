@@ -10,7 +10,7 @@ import {
   getResponsiveSize,
   getSpacingCssFromTheme,
 } from '../utils/style';
-import {ButtonSelectSize} from './types';
+import {ButtonSelectSize, SelectPanelOverrides} from './types';
 
 const generateCursor = (disabled?: boolean, $loading?: boolean) => {
   if ($loading) {
@@ -24,7 +24,8 @@ const generateCursor = (disabled?: boolean, $loading?: boolean) => {
 };
 
 export const StyledButtonIcons = styled('div', {
-  shouldForwardProp: prop => prop !== 'disabled',
+  shouldForwardProp: prop =>
+    !['disabled', '$spaceInline', '$loading'].includes(prop as string),
 })(
   ({
     disabled,
@@ -101,6 +102,7 @@ export const StyledSelectPanel = styled.div<{
   $top?: number;
   $left?: number;
   $isOpen: boolean;
+  overrides?: SelectPanelOverrides;
 }>`
   position: absolute;
   height: auto;
@@ -108,6 +110,7 @@ export const StyledSelectPanel = styled.div<{
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
+  z-index: 1;
 
   ${useLogicalProps}
 
@@ -132,6 +135,12 @@ export const StyledSelectPanel = styled.div<{
 
   ${({$size}) =>
     getResponsiveSize('maxHeight', `select.${$size}.panel`, '', 'maxHeight')};
+`;
+
+export const StyledModalPanel = styled.div`
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 100%;
 `;
 
 export const StyledOption = styled.div<{
