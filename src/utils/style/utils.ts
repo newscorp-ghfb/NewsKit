@@ -5,7 +5,7 @@ import {
   UncompiledTheme,
 } from '../../theme/types';
 import {deepMerge} from '../deep-merge';
-import {recurseUnknown} from '../../theme/compiler/index';
+import {recurseUnknown} from '../recurse-unknown';
 import {errorLogger} from './error-logger';
 
 export const endsWith = (value: string, checks: string[]): boolean =>
