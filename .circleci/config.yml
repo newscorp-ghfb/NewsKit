@@ -1049,12 +1049,6 @@ workflows:
           environment: pr
           requires:
             - init_aws
-      - build_docs_link:
-          <<: *only_pr
-          name: build_docs_pr_link
-          context: ncu-newskit-site-pr
-          requires:
-            - build_icons
       - push_s3:
           <<: *only_pr
           name: deploy_to_s3
