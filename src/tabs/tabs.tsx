@@ -340,7 +340,6 @@ const ThemelessTabs: React.FC<TabsProps> = ({
         data-testid="tab-bar"
       >
         <ScrollComponent {...scrollProps}>
-          {/* MSF TODO: here */}
           <StyledInnerTabGroup
             overrides={overridesWithoutLogicalProps}
             flow={vertical ? Flow.VerticalLeft : Flow.HorizontalCenter}
