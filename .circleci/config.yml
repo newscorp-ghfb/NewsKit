@@ -379,24 +379,6 @@ jobs:
       - slack/status:
           <<: *slack_status
 
-  build_docs_link:
-    <<: *working_directory
-    executor: node-xlarge
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Build
-          command: |
-            export SITE_BASE_URL=${SITE_BASE_URL}; make build_docs_link
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - public/*
-      - slack/status:
-          <<: *slack_status
-
   build_test_e2e:
     <<: *working_directory
     executor: node-xlarge
@@ -946,11 +928,6 @@ workflows:
           <<: *require_dep
           requires:
             - build_icons
-      - build_docs:
-          <<: *ignore_trigger_release
-          <<: *require_dep
-          requires:
-            - build_icons
       - build_test_e2e:
           <<: *ignore_trigger_release
           <<: *require_dep
@@ -991,6 +968,13 @@ workflows:
 
       # PR jobs
       ## Visual changes approval jobs
+      - build_docs:
+          <<: *only_pr
+          <<: *require_dep
+          name: build_docs_pr
+          context: ncu-newskit-site-pr
+          requires:
+            - build_icons
       - no_visual_changes:
           <<: *only_pr
           type: approval
@@ -1106,6 +1090,13 @@ workflows:
             - approve_publish_npm_dev
 
       # develop jobs
+      - build_docs:
+          <<: *only_develop
+          <<: *require_dep
+          name: build_docs_dev
+          context: ncu-newskit-site-dev
+          requires:
+            - build_icons
       - build_push_docker_ecr:
           name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context
@@ -1136,9 +1127,10 @@ workflows:
           type: approval
           requires:
             - eks_kubectl_deploy_dev
-      - build_docs_link:
+      - build_docs:
           <<: *only_develop
           name: build_docs_prod_link
+          context: ncu-newskit-site-prod
           requires:
             - approve_publish_docs
       - build_push_docker_ecr:
@@ -1189,6 +1181,13 @@ workflows:
       - create_release_candidate:
           <<: *only_trigger_release
           context: ncu-product-platforms-context
+      - build_docs:
+          <<: *only_release
+          <<: *require_dep
+          name: build_docs_release
+          context: ncu-newskit-site-stage
+          requires:
+            - build_icons
       - build_push_docker_ecr:
           name: build_push_docker_ecr_release
           context: ncu-product-platforms-context
@@ -1224,6 +1223,13 @@ workflows:
           requires:
             - init_aws
       # main jobs
+      - build_docs:
+          <<: *only_main
+          <<: *require_dep
+          name: build_docs_prod
+          context: ncu-newskit-site-prod
+          requires:
+            - build_icons
       - publish_npm:
           context: ncu-product-platforms-context
           <<: *only_main

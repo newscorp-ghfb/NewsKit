@@ -44,10 +44,7 @@ build_storybook:
 	yarn build:storybook
 
 build_docs:
-	SITE_ENV=${SITE_ENV} yarn build:docs
-
-build_docs_link:
-	BASE_PATH=${BASE_PATH} BASE_URI=${BASE_URI} SITE_ENV=${SITE_ENV} yarn build:docs
+	SITE_ENV=${SITE_ENV} BASE_URI=${BASE_URI} BASE_PATH=${BASE_PATH} yarn build:docs
 
 unit_test_docs:
 	yarn test:unit:ci --projects=site
