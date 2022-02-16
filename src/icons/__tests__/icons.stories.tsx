@@ -263,18 +263,16 @@ StoryOverriddenIcons.storyName = 'overridden-icons';
 export const StoryIconsTransition = () => (
   <>
     {Object.values([IconFilledAccountBalance]).map((Icon: NewsKitIcon) => (
-      <div>
-        <ThemeProvider theme={getTheme()}>
-          <Constrain>
-            <StorybookSubHeading>Icon with transition</StorybookSubHeading>
-            <Icon
-              overrides={{
-                stylePreset: 'iconCustomWithTransitions',
-              }}
-            />
-          </Constrain>
-        </ThemeProvider>
-      </div>
+      <ThemeProvider theme={getTheme()}>
+        <Constrain>
+          <StorybookSubHeading>Icon with transition</StorybookSubHeading>
+          <Icon
+            overrides={{
+              stylePreset: 'iconCustomWithTransitions',
+            }}
+          />
+        </Constrain>
+      </ThemeProvider>
     ))}
   </>
 );

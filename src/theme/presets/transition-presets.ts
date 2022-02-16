@@ -2,7 +2,6 @@ import {TransitionPreset} from './types';
 
 export const transitionPresets: Record<string, TransitionPreset> = {};
 
-// Uncomment lines in PPDSC-1810
 transitionPresets.fontColorChange = {
   base: {
     transitionProperty: 'color',
