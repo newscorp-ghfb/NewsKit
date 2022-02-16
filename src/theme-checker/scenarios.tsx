@@ -1,7 +1,5 @@
 /* istanbul ignore file */
 import React, {useState} from 'react';
-
-import {states} from '../checkbox/__tests__/helpers';
 import {FormInputState} from '../form/types';
 import {
   AudioPlayerContainer,
@@ -83,6 +81,18 @@ import {
 } from '../structured-list';
 import {Cell, Grid} from '../grid';
 import {Label} from '../label';
+import {CheckboxState} from '../checkbox/types';
+
+export const states: [string, {checked?: boolean; state?: CheckboxState}][] = [
+  ['default', {}],
+  ['checked', {checked: true}],
+  ['disabled', {state: 'disabled'}],
+  ['checked-disabled', {checked: true, state: 'disabled'}],
+  ['invalid', {state: 'invalid'}],
+  ['invalid-checked', {state: 'invalid', checked: true}],
+  ['valid', {state: 'valid'}],
+  ['valid-checked', {state: 'valid', checked: true}],
+];
 
 interface ComponentData {
   name: string;
