@@ -29,7 +29,7 @@ SyntaxHighlighter.registerLanguage('jsx', jsx);
 const StyledDiv = styled.div`
   border: solid 1px;
   ${getColorCssFromTheme('borderColor', 'interface040')};
-  ${getBorderCssFromTheme('border-radius', 'borderRadiusRounded020')};
+  ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
   ${getColorCssFromTheme('backgroundColor', 'interface020')};
 `;
 

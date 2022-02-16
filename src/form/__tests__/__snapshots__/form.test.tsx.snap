@@ -5527,9 +5527,9 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   align-items: center;
   width: 100%;
   margin-bottom: 8px;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #3358CC;
   border-width: 1px;
   border-radius: 8px;
   color: #2E2E2E;
@@ -5539,44 +5539,6 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 
 .emotion-1 svg {
   fill: #2E2E2E;
-}
-
-.emotion-1:focus:not(:disabled) {
-  border-color: #3358CC;
-  background-color: #FAFAFA;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-1:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
-}
-
-.emotion-1:valid:focus:not(:disabled) {
-  border-color: #3358CC;
-  background-color: #FAFAFA;
-}
-
-.emotion-1:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-1:disabled svg {
-  fill: #C0C0C0;
-}
-
-.emotion-1:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
-  background-color: #FAFAFA;
-}
-
-.emotion-1:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
 }
 
 .emotion-2 {
@@ -5641,7 +5603,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #D20600;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5649,9 +5611,28 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 .emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
+  fill: #D20600;
 }
 
 .emotion-6 {
+  margin-right: 8px;
+}
+
+.emotion-7 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-7.emotion-7 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5665,20 +5646,16 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
+  color: #D20600;
   min-height: 12px;
 }
 
-.emotion-6:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-7 {
+.emotion-10 {
   margin: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #535353;
+  color: #D20600;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -5687,23 +5664,59 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   padding: 0.5px 0px;
 }
 
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-7::before {
+.emotion-10::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-7::after {
+.emotion-10::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-13 {
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #EF1703;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-12 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-12:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-12:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-19 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5739,33 +5752,33 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   cursor: pointer;
 }
 
-.emotion-13 svg {
+.emotion-19 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-13 svg {
+.emotion-19 svg {
   fill: #FFFFFF;
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-19:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-13:active:not(:disabled) {
+.emotion-19:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-13:disabled {
+.emotion-19:disabled {
   background-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-13:disabled svg {
+.emotion-19:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-14 {
+.emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5786,7 +5799,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   margin-right: calc(-8px/2);
 }
 
-.emotion-15 {
+.emotion-21 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5795,7 +5808,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   margin-right: calc(8px/2);
 }
 
-.emotion-16 {
+.emotion-22 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -5806,13 +5819,13 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   display: inline-block;
 }
 
-.emotion-16::before {
+.emotion-22::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-16::after {
+.emotion-22::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -5832,8 +5845,8 @@ exports[`FormInput renders with error and with submit validation and revalidatio
       class="emotion-1"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
-        aria-invalid="false"
+        aria-describedby="mock-nk-1-error-text"
+        aria-invalid="true"
         aria-required="true"
         class="emotion-2"
         data-testid="text-field-email"
@@ -5847,6 +5860,28 @@ exports[`FormInput renders with error and with submit validation and revalidatio
         <svg
           aria-hidden="true"
           class="emotion-4 emotion-5"
+          data-testid="error-icon"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+          />
+        </svg>
+         
+        <div
+          class="emotion-6"
+        />
+         
+        <svg
+          aria-hidden="true"
+          class="emotion-7 emotion-5"
           fill="currentColor"
           focusable="false"
           viewBox="0 0 24 24"
@@ -5885,16 +5920,19 @@ exports[`FormInput renders with error and with submit validation and revalidatio
             points="12,1 2,6 2,8 22,8 22,6"
           />
         </svg>
+         
       </div>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-9"
     >
       <p
-        class="emotion-7"
-        id="mock-nk-1-assistive-text"
+        aria-live="polite"
+        class="emotion-10"
+        id="mock-nk-1-error-text"
+        role="alert"
       >
-        Assistive Text
+        Required field
       </p>
     </div>
     <label
@@ -5905,11 +5943,11 @@ exports[`FormInput renders with error and with submit validation and revalidatio
       Username
     </label>
     <div
-      class="emotion-1"
+      class="emotion-12"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
-        aria-invalid="false"
+        aria-describedby="mock-nk-1-error-text"
+        aria-invalid="true"
         aria-required="true"
         class="emotion-2"
         data-testid="text-field-username"
@@ -5917,30 +5955,53 @@ exports[`FormInput renders with error and with submit validation and revalidatio
         name="username"
         type="text"
       />
+      <div
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          data-testid="error-icon"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+          />
+        </svg>
+      </div>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-9"
     >
       <p
-        class="emotion-7"
-        id="mock-nk-1-assistive-text"
+        aria-live="polite"
+        class="emotion-10"
+        id="mock-nk-1-error-text"
+        role="alert"
       >
-        Assistive Text
+        Required field
       </p>
     </div>
     <button
-      class="emotion-13"
+      class="emotion-19"
       data-testid="submit-button"
       type="submit"
     >
       <div
-        class="emotion-14"
+        class="emotion-20"
       >
         <div
-          class="emotion-15"
+          class="emotion-21"
         >
           <span
-            class="emotion-16"
+            class="emotion-22"
           >
             Submit
           </span>
