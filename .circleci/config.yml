@@ -977,7 +977,7 @@ workflows:
           requires:
             - build_docs_pr
             - install_cypress
-      - approve_publish_npm_dev:
+      - approve_publish_npm_pr:
           type: approval
           <<: *only_pr
           requires:
@@ -987,6 +987,13 @@ workflows:
             - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs_pr
+      - publish_npm:
+          <<: *only_pr
+          name: publish_npm_pr
+          context: ncu-product-platforms-context
+          publish_dev: true
+          requires:
+            - approve_publish_npm_pr
       - no_visual_changes:
           <<: *only_pr
           type: approval
@@ -1076,14 +1083,6 @@ workflows:
           requires:
             - deploy_to_s3
 
-      # PR & Develop jobs
-      - publish_npm:
-          <<: *only_pr_and_develop
-          name: publish_npm_dev
-          context: ncu-product-platforms-context
-          publish_dev: true
-          requires:
-            - approve_publish_npm_dev
 
       # develop jobs
       - build_docs:
@@ -1116,6 +1115,13 @@ workflows:
             - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs_dev
+      - publish_npm:
+          <<: *only_develop
+          name: publish_npm_dev
+          context: ncu-product-platforms-context
+          publish_dev: true
+          requires:
+            - approve_publish_npm_dev
       - build_push_docker_ecr:
           name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context
