@@ -19,7 +19,7 @@ interface Props {
 
 // Is added so relative paths work when we are on a sub dir e.g. s-3.com/ppdsc-123-foo/
 const hrefURL =
-  process.env.BASE_URI && process.env.BASE_URI.includes('amazonaws')
+  process.env.SITE_ENV && process.env.SITE_ENV === 'pr'
     ? process.env.BASE_URI
     : '/';
 

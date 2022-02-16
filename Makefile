@@ -7,9 +7,6 @@ SHORT_GIT_HASH := $(shell echo ${CIRCLE_SHA1} | cut -c -9)
 # CURRENT BRANCH CHECKED OUT
 CURRENT_BRANCH = $(shell git symbolic-ref --short -q HEAD)
 
-# SITE_ENV is for differentiating between newskit.co.uk and dev
-SITE_ENV = $(shell node -p "/(^release.*)|(^main$$)/.test('${CURRENT_BRANCH}') ? 'production' : 'development'")
-
 # Cleans branch into a url friendly format 
 BASE_PATH = $(shell node -p "/(^release.*)|(^main$$)|(^develop$$)/.test('${CURRENT_BRANCH}') ? '' : require('./scripts/branch-name-to-url.js').branchNameToUrl('${CURRENT_BRANCH}')")
 
