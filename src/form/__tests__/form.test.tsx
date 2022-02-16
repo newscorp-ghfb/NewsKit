@@ -643,7 +643,7 @@ describe('FormInput', () => {
       fireEvent.submit(getByRole('button'));
     });
 
-    await waitFor(() => screen.queryByText(/please provide a valid email/i));
+    await waitFor(() => screen.getAllByText(/required field/i));
 
     expect(asFragment()).toMatchSnapshot();
   });
