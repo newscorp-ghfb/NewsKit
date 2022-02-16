@@ -298,9 +298,9 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-23 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #577FFB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -1423,9 +1423,9 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-23 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #577FFB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
