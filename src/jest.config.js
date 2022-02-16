@@ -8,7 +8,7 @@ module.exports = {
     '@testing-library/jest-dom/extend-expect',
   ],
   testEnvironment: 'jsdom',
-  testPathIgnorePatterns: ['/node_modules/', '/dist/'],
+  testPathIgnorePatterns: ['/node_modules/', '/dist/', '/src/theme-checker/'],
   testRegex: '(.|-)test\\.tsx?$',
   testURL: 'http://localhost/',
   transform: {

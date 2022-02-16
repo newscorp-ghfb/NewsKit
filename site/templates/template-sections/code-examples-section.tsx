@@ -43,7 +43,7 @@ export const CodeExamplesSection: React.FC<CodeExamplesSectionProps> = ({
   >
     <ComponentPageCell>
       {example.map(({title, description, media, code, codeUrl, sections}) => (
-        <>
+        <React.Fragment key={`${title}-${codeUrl}`}>
           {title && (
             <Block spaceStack="space050">
               <TextBlock
@@ -87,7 +87,7 @@ export const CodeExamplesSection: React.FC<CodeExamplesSectionProps> = ({
               },
               arr,
             ) => (
-              <>
+              <React.Fragment key={secTitle}>
                 <ContentText title={secTitle}>{secDescription}</ContentText>
                 {secMedia && (
                   <Block stylePreset="imageRoundedMedium" spaceStack="space050">
@@ -105,11 +105,11 @@ export const CodeExamplesSection: React.FC<CodeExamplesSectionProps> = ({
                 {sections && arr !== sections.length - 1 && (
                   <Block spaceStack="space090" />
                 )}
-              </>
+              </React.Fragment>
             ),
           )}
           {children}
-        </>
+        </React.Fragment>
       ))}
     </ComponentPageCell>
   </CommonSection>

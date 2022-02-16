@@ -6,7 +6,7 @@ import {LayoutProps} from '../../../components/layout';
 
 jest.mock('../../../components/layout', () => ({children, ...props}: any) => (
   <div data-comp="layout" data-props={JSON.stringify(props)}>
-    {children}
+    {typeof children === 'function' ? children({themeMode: 'light'}) : children}
   </div>
 ));
 

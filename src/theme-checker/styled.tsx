@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import {Block} from '../block';
 import {Visible} from '../grid';
 import {getColorCssFromTheme, getSpacingCssFromTheme, styled} from '../utils';

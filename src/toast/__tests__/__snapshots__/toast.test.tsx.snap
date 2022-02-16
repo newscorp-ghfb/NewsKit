@@ -1655,7 +1655,6 @@ exports[`Toast Component renders with content as string and link 1`] = `
 
 .emotion-6 {
   margin: 0;
-  display: inline-block;
   display: block;
 }
 
@@ -1674,8 +1673,7 @@ exports[`Toast Component renders with content as string and link 1`] = `
         <p
           class="emotion-3"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           <a
             class="emotion-4"
             href="/"
