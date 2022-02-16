@@ -1100,7 +1100,7 @@ workflows:
           requires:
             - build_docs_dev
       - test_e2e_docs:
-           <<: *only_develop
+          <<: *only_develop
           name: test_e2e_docs_dev
           context: ncu-product-platforms-context
           requires:
@@ -1220,7 +1220,7 @@ workflows:
           requires:
             - build_docs_stage
       - test_e2e_docs:
-           <<: *only_release
+          <<: *only_release
           name: test_e2e_docs_stage
           context: ncu-product-platforms-context
           requires:
@@ -1275,7 +1275,7 @@ workflows:
           requires:
             - build_docs_prod
       - test_e2e_docs:
-           <<: *only_main
+          <<: *only_main
           name: test_e2e_docs_prod
           context: ncu-product-platforms-context
           requires:
