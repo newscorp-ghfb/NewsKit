@@ -13,7 +13,7 @@ import {getTransitionPreset} from '../utils/style/transition-preset';
 
 const StyledLink = styled.a<InternalLinkProps>`
   display: inline-block;
-  ${getTransitionPreset(`linkStandalone`, '')};
+  ${getTransitionPreset(`link`, '')};
   ${getStylePreset('link', '')}
 `;
 

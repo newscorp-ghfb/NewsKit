@@ -366,7 +366,6 @@ const myCustomLinkTheme = createTheme({
         base: {
           transitionProperty: 'fill',
           transitionDuration: '100ms',
-          transitionDelay: '500ms',
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
       },
@@ -374,7 +373,6 @@ const myCustomLinkTheme = createTheme({
         base: {
           transitionProperty: 'color',
           transitionDuration: '100ms',
-          transitionDelay: '500ms',
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
       },
@@ -382,19 +380,21 @@ const myCustomLinkTheme = createTheme({
     colors: {
       inkLinkBase: '{{colors.red080}}',
       inkLinkHover: '{{colors.green080}}',
-      inkLinkVisited: '{{colors.red090}}',
+      inkLinkActive: '{{colors.purpl020}}',
     },
     stylePresets: {
       linkCustom: {
         base: {
           color: '{{colors.interactivePrimary030}}',
+          iconColor: '{{colors.interactivePrimary030}}',
         },
-        visited: {
-          color: '{{colors.inkLinkVisited}}',
+        active: {
+          color: '{{colors.inkLinkActive}}',
+          iconColor: '{{colors.inkLinkActive}}',
         },
         hover: {
           color: '{{colors.inkLinkHover}}',
-          iconColor: '{{colors.purple020}}',
+          iconColor: '{{colors.inkLinkHover}}',
         },
       },
     },
@@ -405,24 +405,43 @@ export const StoryLinkStandAloneTransition = () => (
     {/* ------ Link standalone -------- */}
     <StorybookHeading>Default Transition Presets</StorybookHeading>
     <LinkStandalone href="/">Standalone link</LinkStandalone>
+    <br />
+    <br />
+    <LinkInline href="/">LinkInline link</LinkInline>
     <StorybookHeading>
-      Link standalone with Transition Preset overrides
+      Default Transition Presets with external icon
+    </StorybookHeading>
+    <LinkStandalone href="https://google.com">Standalone link</LinkStandalone>{' '}
+    <br />
+    <br />
+    <LinkInline href="https://google.com">LinkInline link</LinkInline>
+    <StorybookHeading>
+      Link with Transition Preset overrides no icon
     </StorybookHeading>
     <ThemeProvider theme={myCustomLinkTheme}>
-      <StorybookSubHeading>Standalone link</StorybookSubHeading>
       <LinkStandalone
         href="/"
         overrides={{
           stylePreset: 'linkCustom',
-          transitionPreset: 'customFontColorChange',
+          transitionPreset: ['customFontColorChange', 'customIconChange'],
         }}
       >
         Standalone link
       </LinkStandalone>
       <br />
-      <StorybookSubHeading>
-        Link standalone with two Transition Preset Overrides
-      </StorybookSubHeading>
+      <br />
+      <LinkInline
+        href="/"
+        overrides={{
+          stylePreset: 'linkCustom',
+          transitionPreset: ['customFontColorChange', 'customIconChange'],
+        }}
+      >
+        Linkinline link
+      </LinkInline>
+      <StorybookHeading>
+        Link with Transition Preset overrides and external icon
+      </StorybookHeading>
       <LinkStandalone
         href="https://google.com"
         overrides={{
@@ -430,11 +449,22 @@ export const StoryLinkStandAloneTransition = () => (
           transitionPreset: ['customFontColorChange', 'customIconChange'],
         }}
       >
-        Standalone Link External
+        Standalone link
       </LinkStandalone>
-      <StorybookSubHeading>
-        Link standalone with overrides using extend on transitionDuration
-      </StorybookSubHeading>
+      <br />
+      <br />
+      <LinkInline
+        href="https://google.com"
+        overrides={{
+          stylePreset: 'linkCustom',
+          transitionPreset: ['customFontColorChange', 'customIconChange'],
+        }}
+      >
+        Linkinline link
+      </LinkInline>
+      <StorybookHeading>
+        Link with overrides using extend on transitionDuration
+      </StorybookHeading>
       <LinkStandalone
         href="https://google.com"
         overrides={{
@@ -447,8 +477,24 @@ export const StoryLinkStandAloneTransition = () => (
           },
         }}
       >
-        Standalone Link External
+        Standalone Link
       </LinkStandalone>
+      <br />
+      <br />
+      <LinkInline
+        href="https://google.com"
+        overrides={{
+          stylePreset: 'linkCustom',
+          transitionPreset: {
+            extend: 'customFontColorChange',
+            base: {
+              transitionDuration: '{{motions.motionDuration030}}',
+            },
+          },
+        }}
+      >
+        Inline Link
+      </LinkInline>
     </ThemeProvider>
   </Container>
 );

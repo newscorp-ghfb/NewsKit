@@ -1190,9 +1190,7 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish040",
       "stylePreset": "buttonSolidPrimary",
-      "transitionPreset": Array [
-        "backgroundColorChange",
-      ],
+      "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton030",
     },
     "medium": Object {
@@ -1205,9 +1203,7 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "buttonSolidPrimary",
-      "transitionPreset": Array [
-        "backgroundColorChange",
-      ],
+      "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton020",
     },
     "small": Object {
@@ -1220,9 +1216,7 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish020",
       "stylePreset": "buttonSolidPrimary",
-      "transitionPreset": Array [
-        "backgroundColorChange",
-      ],
+      "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton010",
     },
   },
@@ -1679,12 +1673,13 @@ Object {
     },
     "spaceInline": "space010",
     "stylePreset": "linkInline",
+    "transitionPreset": Array [
+      "fontColorChange",
+      "iconColorChange",
+    ],
   },
   "linkStandalone": Object {
     "stylePreset": "linkStandalone",
-    "transitionPreset": Array [
-      "fontColorChange",
-    ],
     "typographyPreset": "utilityLabel020",
   },
   "menu": Object {
@@ -1695,9 +1690,7 @@ Object {
     "title": Object {
       "spaceInline": "space050",
       "stylePreset": "inkSubtle",
-      "transitionPreset": Array [
-        "backgroundColorChange",
-      ],
+      "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityHeading030",
     },
   },
@@ -1707,18 +1700,14 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "menuItemHorizontal",
-      "transitionPreset": Array [
-        "backgroundColorChange",
-      ],
+      "transitionPreset": "backgroundColorChange",
     },
     "vertical": Object {
       "minHeight": "sizing080",
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "menuItemVertical",
-      "transitionPreset": Array [
-        "backgroundColorChange",
-      ],
+      "transitionPreset": "backgroundColorChange",
     },
   },
   "modal": Object {
@@ -2049,9 +2038,7 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "tab",
-      "transitionPreset": Array [
-        "backgroundColorChange",
-      ],
+      "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton030",
     },
     "medium": Object {
@@ -2060,9 +2047,7 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "tab",
-      "transitionPreset": Array [
-        "backgroundColorChange",
-      ],
+      "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton020",
     },
     "small": Object {
@@ -2071,9 +2056,7 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish020",
       "stylePreset": "tab",
-      "transitionPreset": Array [
-        "backgroundColorChange",
-      ],
+      "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton010",
     },
   },
@@ -2099,9 +2082,7 @@ Object {
       "spaceInline": "space010",
       "spaceInset": "spaceInsetSquish020",
       "stylePreset": "tagPrimary",
-      "transitionPreset": Array [
-        "backgroundColorChange",
-      ],
+      "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton030",
     },
     "medium": Object {
@@ -2110,9 +2091,7 @@ Object {
       "spaceInline": "space010",
       "spaceInset": "spaceInsetSquish020",
       "stylePreset": "tagPrimary",
-      "transitionPreset": Array [
-        "backgroundColorChange",
-      ],
+      "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton020",
     },
     "small": Object {
@@ -2121,9 +2100,7 @@ Object {
       "spaceInline": "space010",
       "spaceInset": "spaceInsetSquish010",
       "stylePreset": "tagPrimary",
-      "transitionPreset": Array [
-        "backgroundColorChange",
-      ],
+      "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton010",
     },
   },
