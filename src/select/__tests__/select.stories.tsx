@@ -791,7 +791,7 @@ export const StorySelectVirtualized = () => {
         <Select
           aria-describedby="countries-at"
           id="countries"
-          size="small"
+          size="medium"
           useModal={{xs: true}}
         >
           {selectOptions}

@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useEffect, useRef} from 'react';
+import React, {ChangeEvent, useEffect, useRef, useState} from 'react';
 import {useSelect, UseSelectStateChange} from 'downshift';
 import composeRefs from '@seznam/compose-react-refs';
 import {useVirtual} from 'react-virtual';
@@ -31,12 +31,24 @@ const useVirtualizedList = ({
   size: ButtonSelectSize;
   isOpen: boolean;
 }) => {
+  const [itemSize, setItemSize] = useState(0);
+
   const rowVirtualizer = useVirtual({
     size: items.length,
     parentRef: listRef,
-    estimateSize: React.useCallback(() => 30, []),
+    estimateSize: React.useCallback(() => itemSize, [itemSize]),
     overscan: 2,
   });
+
+  useEffect(() => {
+    if (isOpen) {
+      // measure the size of the first item, assuming all items are the same size
+      const height =
+        // @ts-ignore
+        listRef.current?.querySelector('[role="option"]')?.offsetHeight;
+      setItemSize(height || 0);
+    }
+  }, [listRef, isOpen]);
 
   const useVirtualization = items.length > limit;
 
@@ -73,7 +85,7 @@ const useVirtualizedList = ({
         top: 0,
         left: 0,
         width: '100%',
-        height: virtualRow.size,
+        // height: virtualRow.size,
         transform: `translateY(${virtualRow.start}px)`,
       },
     });
