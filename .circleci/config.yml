@@ -379,6 +379,24 @@ jobs:
       - slack/status:
           <<: *slack_status
 
+  build_docs_with_no_base_url:
+    <<: *working_directory
+    executor: node-xlarge
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Build
+          command: |
+            make build_docs_pr_with_no_base_url
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - public/*
+      - slack/status:
+          <<: *slack_status
+
   build_test_e2e:
     <<: *working_directory
     executor: node-xlarge
@@ -957,10 +975,9 @@ workflows:
 
       # PR jobs
       ## Visual changes approval jobs
-      - build_docs:
+      - build_docs_pr_with_no_base_url:
           <<: *only_pr
           <<: *require_dep
-          name: build_docs_pr
           context: ncu-newskit-site-pr
           requires:
             - build_icons
@@ -969,13 +986,13 @@ workflows:
           name: test_broken_links_docs_pr
           context: ncu-product-platforms-context
           requires:
-            - build_docs_pr
+            - build_docs_pr_with_no_base_url
       - test_e2e_docs:
           <<: *only_pr
           name: test_e2e_docs_pr
           context: ncu-product-platforms-context
           requires:
-            - build_docs_pr
+            - build_docs_pr_with_no_base_url
             - install_cypress
       - approve_publish_npm_pr:
           type: approval
@@ -1019,14 +1036,14 @@ workflows:
           <<: *only_pr
           context: ncu-product-platforms-context
           requires:
-            - build_docs_pr
+            - build_docs_pr_with_no_base_url
             - install_cypress
             - test_visual_comps
       - test_visual_docs_2:
           <<: *only_pr
           context: ncu-product-platforms-context
           requires:
-            - build_docs_pr
+            - build_docs_pr_with_no_base_url
             - install_cypress
             - docs_visual_changes
       - can_i_merge_checker:
@@ -1068,6 +1085,13 @@ workflows:
           environment: pr
           requires:
             - init_aws
+      - build_docs:
+          <<: *only_pr
+          <<: *require_dep
+          name: build_docs_pr
+          context: ncu-newskit-site-pr
+          requires:
+            - build_icons
       - push_s3:
           <<: *only_pr
           name: deploy_to_s3
@@ -1101,7 +1125,7 @@ workflows:
       - test_e2e_docs:
           <<: *only_develop
           name: test_e2e_docs_dev
-          context: ncu-product-platforms-context
+          context: ncu-newskit-site-dev
           requires:
             - build_docs_dev
             - install_cypress
@@ -1228,7 +1252,7 @@ workflows:
       - test_e2e_docs:
           <<: *only_release
           name: test_e2e_docs_stage
-          context: ncu-product-platforms-context
+          context: ncu-newskit-site-stage
           requires:
             - build_docs_stage
             - install_cypress
@@ -1283,7 +1307,7 @@ workflows:
       - test_e2e_docs:
           <<: *only_main
           name: test_e2e_docs_prod
-          context: ncu-product-platforms-context
+          context: ncu-newskit-site-prod
           requires:
             - build_docs_prod
             - install_cypress
