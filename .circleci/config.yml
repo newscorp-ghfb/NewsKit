@@ -1012,14 +1012,14 @@ workflows:
           <<: *only_pr
           context: ncu-product-platforms-context
           requires:
-            - build_docs
+            - build_docs_pr
             - install_cypress
             - test_visual_comps
       - test_visual_docs_2:
           <<: *only_pr
           context: ncu-product-platforms-context
           requires:
-            - build_docs
+            - build_docs_pr
             - install_cypress
             - docs_visual_changes
       - can_i_merge_checker:
