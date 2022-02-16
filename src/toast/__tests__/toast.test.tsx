@@ -201,9 +201,6 @@ describe('Toast', () => {
         action,
       });
 
-      // TODO: Why this is working
-      // waitFor(() => getByTestId('toast-container'));
-
       const actionBtn = getByTestId('action');
       fireEvent.click(actionBtn);
       const toastMessage = getByText(messageText);
