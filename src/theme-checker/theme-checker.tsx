@@ -4,7 +4,7 @@ import {Block} from '../block';
 import {Flow, Stack} from '../stack';
 import {TextBlock} from '../text-block';
 import {MQ} from '../utils';
-import {toKebabCase} from '../utils/to-kabab-case';
+import {toKebabCase} from '../utils/to-kebab-case';
 import {scenarios} from './scenarios';
 import {StyledWrapper} from './styled';
 

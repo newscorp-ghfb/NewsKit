@@ -1,5 +1,4 @@
 import React from 'react';
-import {isFragment} from 'react-is';
 import {ToastProps} from './types';
 import {Divider, DividerOverrides} from '../divider';
 import {renderIfReactComponent} from '../utils/component';
@@ -19,6 +18,7 @@ import {splitAriaProps} from '../utils/a11y';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {childrenIsString} from '../utils/react-children-utilities';
 
 const ThemelessToast: React.FC<ToastProps> = ({
   overrides,
@@ -64,15 +64,7 @@ const ThemelessToast: React.FC<ToastProps> = ({
           )}
           <StyledMessageContainer
             overrides={overrides}
-            as={
-              typeof children === 'string' ||
-              (Array.isArray(children) &&
-                children.some(
-                  child => typeof child === 'string' || isFragment(child),
-                ))
-                ? 'p'
-                : 'div'
-            }
+            as={childrenIsString(children) ? 'p' : 'div'}
           >
             {children}
           </StyledMessageContainer>

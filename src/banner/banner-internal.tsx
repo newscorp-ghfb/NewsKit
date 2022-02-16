@@ -1,5 +1,4 @@
 import React from 'react';
-import {isFragment} from 'react-is';
 import {BannerInternalProps} from './types';
 import {
   StyledBannerContainer,
@@ -23,6 +22,7 @@ import {IconButton} from '../icon-button';
 import {deepMerge} from '../utils';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 import {Cell, Grid} from '../grid';
+import {childrenIsString} from '../utils/react-children-utilities';
 
 export const BannerInternal: React.FC<BannerInternalProps> = ({
   actions,
@@ -98,15 +98,7 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
                 <StyledMessageContainer
                   layout={layout}
                   overrides={overrides}
-                  as={
-                    typeof children === 'string' ||
-                    (Array.isArray(children) &&
-                      children.some(
-                        child => typeof child === 'string' || isFragment(child),
-                      ))
-                      ? 'p'
-                      : 'div'
-                  }
+                  as={childrenIsString(children) ? 'p' : 'div'}
                 >
                   {children}
                 </StyledMessageContainer>
