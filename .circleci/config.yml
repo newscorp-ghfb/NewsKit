@@ -1067,7 +1067,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_terraform_s3_dev
-            - build_docs_pr_link
+            - build_docs_pr
             - build_storybook
       - post_pr_env_url_to_github_pr:
           <<: *only_pr
