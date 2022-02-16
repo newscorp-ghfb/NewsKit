@@ -28,9 +28,6 @@ interface SelectPanelProps {
   top: number;
   left: number;
   size: ButtonSelectSize;
-  getItemProps: Function;
-  selectedItem?: React.ReactElement<SelectOptionProps>;
-  highlightedIndex?: number;
   overrides?: {
     panel?: SelectPanelOverrides;
     modal?: Override<ModalProps>;
@@ -39,12 +36,11 @@ interface SelectPanelProps {
   renderInModal: boolean;
   buttonRef: React.RefObject<HTMLButtonElement>;
   closeMenu: Function;
-  getItems: Function;
 }
 
 const DefaultModal = Modal;
 
-const StyledOptionWithPrivateProps = React.forwardRef<
+export const StyledOptionWithPrivateProps = React.forwardRef<
   HTMLDivElement,
   SelectOptionProps & StyledOptionPrivateProps
 >((props, inputRef) => {
@@ -92,15 +88,10 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       left,
       size,
       children,
-      getItemProps,
-      selectedItem,
-      highlightedIndex,
       buttonRef,
       renderInModal,
       closeMenu,
       overrides,
-      getItems,
-      getTotalSizeItem,
       ...restProps
     } = props;
 
@@ -113,53 +104,7 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       overrides: overrides?.modal as SelectPropsOverrides['modal'],
     });
 
-    // const optionsAsChildren =
-    //   isOpen &&
-    //   React.Children.map(
-    //     children,
-    //     (child: React.ReactElement<SelectOptionProps>, index) => {
-    //       const downshiftOptionProps = getItemProps({
-    //         item: child,
-    //         index,
-    //       });
-
-    //       const combinedProps = {
-    //         ...downshiftOptionProps,
-    //         ...child.props,
-    //       };
-
-    //       return (
-    //         <StyledOptionWithPrivateProps
-    //           $focused={highlightedIndex === index}
-    //           $selected={selectedItem === child}
-    //           $size={size}
-    //           {...combinedProps}
-    //         />
-    //       );
-    //     },
-    //   );
-
-    const optionsAsChildren = isOpen && (
-      // @ts-ignore
-      <>
-        {getTotalSizeItem()}
-        {getItems().map(({child, props: itemProps, index}) => {
-          const combinedProps = {
-            ...itemProps,
-            ...child.props,
-          };
-
-          return (
-            <StyledOptionWithPrivateProps
-              $focused={highlightedIndex === index}
-              $selected={selectedItem === child}
-              $size={size}
-              {...combinedProps}
-            />
-          );
-        })}
-      </>
-    );
+    const optionsAsChildren = isOpen && children;
 
     const screenReaderOnlyMessage = isOpen && (
       <ScreenReaderOnly id={listDescriptionId}>

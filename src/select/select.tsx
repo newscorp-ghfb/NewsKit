@@ -2,8 +2,8 @@ import React, {ChangeEvent, useEffect, useRef} from 'react';
 import {useSelect, UseSelectStateChange} from 'downshift';
 import composeRefs from '@seznam/compose-react-refs';
 import {useVirtual} from 'react-virtual';
-import {SelectProps} from './types';
-import {SelectPanel} from './select-panel';
+import {ButtonSelectSize, SelectProps, SelectOptionProps} from './types';
+import {SelectPanel, StyledOptionWithPrivateProps} from './select-panel';
 import {SelectButton} from './select-button';
 import defaults from './defaults';
 import stylePresets from './style-presets';
@@ -12,7 +12,25 @@ import {shouldRenderInModal} from './utils';
 import {withMediaQueryProvider} from '../utils/hooks/use-media-query/context';
 import {useBreakpointKey} from '../utils/hooks/use-media-query';
 
-const useVirtualizedList = ({items, listRef, getItemProps, limit}) => {
+const useVirtualizedList = ({
+  items,
+  listRef,
+  getItemProps,
+  limit,
+  highlightedIndex,
+  selectedItem,
+  size,
+  isOpen,
+}: {
+  items: React.ReactElement<SelectOptionProps>[];
+  listRef: React.RefObject<HTMLDivElement>;
+  getItemProps: Function;
+  limit: number;
+  highlightedIndex?: number | null;
+  selectedItem?: React.ReactNode;
+  size: ButtonSelectSize;
+  isOpen: boolean;
+}) => {
   const rowVirtualizer = useVirtual({
     size: items.length,
     parentRef: listRef,
@@ -22,8 +40,32 @@ const useVirtualizedList = ({items, listRef, getItemProps, limit}) => {
 
   const useVirtualization = items.length > limit;
 
-  const mapVirtualized = virtualRow => ({
-    props: getItemProps({
+  const renderSelectOption = (
+    props: object,
+    child: React.ReactElement<SelectOptionProps>,
+    index: number,
+  ) => {
+    const combinedProps = {
+      ...props,
+      ...child.props,
+    };
+
+    return (
+      <StyledOptionWithPrivateProps
+        $focused={highlightedIndex === index}
+        $selected={selectedItem === child}
+        $size={size}
+        {...combinedProps}
+      />
+    );
+  };
+
+  const mapVirtualized = (virtualRow: {
+    index: number;
+    size: number;
+    start: number;
+  }) => {
+    const itemProps = getItemProps({
       index: virtualRow.index,
       item: items[virtualRow.index],
       style: {
@@ -34,32 +76,43 @@ const useVirtualizedList = ({items, listRef, getItemProps, limit}) => {
         height: virtualRow.size,
         transform: `translateY(${virtualRow.start}px)`,
       },
-    }),
-    child: items[virtualRow.index],
-    index: virtualRow.index,
-  });
+    });
 
-  const mapNonVirtualized = (child, index) => ({
-    props: getItemProps({
+    const {index} = virtualRow;
+    const child = items[index];
+
+    return renderSelectOption(itemProps, child, index);
+  };
+
+  const mapNonVirtualized = (
+    child: React.ReactElement<SelectOptionProps>,
+    index: number,
+  ) => {
+    const itemProps = getItemProps({
       item: child,
       index,
-    }),
-    child,
-    index,
-  });
+    });
+
+    return renderSelectOption(itemProps, child, index);
+  };
 
   const getItems = () =>
     useVirtualization
       ? rowVirtualizer.virtualItems.map(mapVirtualized)
       : items.map(mapNonVirtualized);
+
   const getTotalSizeItem = () =>
     useVirtualization ? (
       <div key="total-size" style={{height: rowVirtualizer.totalSize}} />
     ) : null;
 
   return {
-    getItems,
-    getTotalSizeItem,
+    children: isOpen ? (
+      <>
+        {getTotalSizeItem()}
+        {getItems()}
+      </>
+    ) : null,
     scrollToIndex: useVirtualization ? rowVirtualizer.scrollToIndex : () => {},
   };
 };
@@ -192,12 +245,17 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         : {}),
     });
 
-    //
-    const {getItems, getTotalSizeItem, scrollToIndex} = useVirtualizedList({
-      items: children,
+    const {children: optionsAsChildren, scrollToIndex} = useVirtualizedList({
+      items: React.Children.toArray(
+        children,
+      ) as React.ReactElement<SelectOptionProps>[],
       listRef: panelRef,
       getItemProps,
       limit: virtualized,
+      highlightedIndex,
+      selectedItem,
+      size,
+      isOpen,
     });
 
     useEffect(() => {
@@ -264,18 +322,13 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           top={top}
           left={left}
           size={size}
-          selectedItem={selectedItem}
-          highlightedIndex={highlightedIndex}
-          getItemProps={getItemProps}
           buttonRef={localInputRef}
           renderInModal={renderInModal}
           closeMenu={closeMenu}
           {...downshiftMenuPropsExceptRef}
           ref={composeRefs(panelRef, downshiftMenuPropsRef)}
-          getItems={getItems}
-          getTotalSizeItem={getTotalSizeItem}
         >
-          {children}
+          {optionsAsChildren}
         </SelectPanel>
       </>
     );
