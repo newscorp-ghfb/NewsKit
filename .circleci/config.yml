@@ -1214,7 +1214,7 @@ workflows:
           requires:
             - build_icons
       - test_broken_links_docs:
-           <<: *only_release
+          <<: *only_release
           name: test_broken_links_docs_stage
           context: ncu-product-platforms-context
           requires:
