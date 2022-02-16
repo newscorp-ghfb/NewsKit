@@ -58,8 +58,10 @@ export default (layoutProps: LayoutProps) => (
     <HeadNextSeo
       title="Guides overview"
       description="Use the guides below to help you get the most out of using NewsKit."
-      imageUrl="social/guides.png"
-      alt="Guides overview"
+      image={{
+        url: 'social/guides.png',
+        alt: 'Guides overview',
+      }}
     />
     <HeaderIndex title="Guides" media={HeaderImage}>
       Use the guides below to help you get the most out of using NewsKit.

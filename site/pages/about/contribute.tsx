@@ -69,8 +69,10 @@ export default ({path, ...props}: LayoutProps) => (
     <HeadNextSeo
       title="Contribute"
       description="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
-      imageUrl="social/about.png"
-      alt="Contribute"
+      image={{
+        url: 'social/about.png',
+        alt: 'Contribute',
+      }}
     />
 
     <PageIntroductionContainer>

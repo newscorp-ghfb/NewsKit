@@ -59,8 +59,10 @@ export default (layoutProps: LayoutProps) => {
           <HeadNextSeo
             title="Theme overview"
             description={pageDescription}
-            imageUrl="social/theme.png"
-            alt="Theme overview"
+            image={{
+              url: 'social/theme.png',
+              alt: 'Theme overview',
+            }}
           />
 
           <HeaderIndex title="Theme" media={HeaderImage}>

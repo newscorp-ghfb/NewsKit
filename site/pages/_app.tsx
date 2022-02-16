@@ -130,7 +130,10 @@ export default class MyApp extends App<Props, State> {
         <HeadNextSeo
           description="NewsKit design system - components and guidelines to 
           help increase the speed of creation and innovation in digital teams."
-          imageUrl="social/landing.png"
+          image={{
+            url: 'social/landing.png',
+            alt: 'NewsKit design system',
+          }}
         />
         <InstrumentationProvider
           {...createEventInstrumentation(handlers, {

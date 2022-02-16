@@ -22,8 +22,10 @@ export const PageTemplate: React.FC<TemplateProps> = ({
     <HeadNextSeo
       title={headTags.title}
       description={headTags.description}
-      imageUrl={headTags.imageUrl!}
-      alt={headTags.alt}
+      image={{
+        url: headTags.imageUrl!,
+        alt: headTags.alt,
+      }}
     />
     <WrapperWithPadding>
       <Grid xsRowGutter="space000">

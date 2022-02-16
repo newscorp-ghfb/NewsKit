@@ -3,16 +3,13 @@ import {NextSeo, NextSeoProps} from 'next-seo';
 
 import {OpenGraphMedia} from 'next-seo/lib/types';
 
-interface HeadNextSeoProps extends NextSeoProps, Omit<OpenGraphMedia, 'url'> {
-  imageUrl: string;
+interface HeadNextSeoProps extends NextSeoProps {
+  image: OpenGraphMedia;
 }
 export function HeadNextSeo({
   title,
   description,
-  imageUrl,
-  width = 1200,
-  height = 600,
-  alt,
+  image: {url, width = 1200, height = 600, alt},
 }: HeadNextSeoProps) {
   const nextSeoTitle = title
     ? `${title} | NewsKit design system`
@@ -27,9 +24,7 @@ export function HeadNextSeo({
     description,
     images: [
       {
-        url: imageUrl
-          ? `${baseUrl}static/${imageUrl}`
-          : `${baseUrl}static/landing.png`,
+        url: url ? `${baseUrl}static/${url}` : `${baseUrl}static/landing.png`,
         width,
         height,
         alt,

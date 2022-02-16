@@ -22,8 +22,10 @@ export default ({path, ...props}: LayoutProps) => (
     <HeadNextSeo
       title="Roadmap"
       description="NewsKit’s Design System team is busy building and planning to help you build better products faster."
-      imageUrl="social/about.png"
-      alt="Roadmap"
+      image={{
+        url: 'social/about.png',
+        alt: 'Roadmap',
+      }}
     />
 
     <PageIntroductionContainer>
