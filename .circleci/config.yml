@@ -971,7 +971,7 @@ workflows:
           requires:
             - build_docs_pr
       - test_e2e_docs:
-           <<: *only_pr
+          <<: *only_pr
           name: test_e2e_docs_pr
           context: ncu-product-platforms-context
           requires:
