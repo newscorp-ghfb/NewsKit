@@ -8,7 +8,7 @@ export default {
   },
   linkStandalone: {
     stylePreset: 'linkStandalone',
-    transitionPreset: ['fontColorChange'],
+    transitionPreset: 'fontColorChange',
     typographyPreset: 'utilityLabel020',
   },
 };
