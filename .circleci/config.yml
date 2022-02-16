@@ -379,7 +379,7 @@ jobs:
       - slack/status:
           <<: *slack_status
 
-  build_docs_with_no_base_url:
+  build_docs_pr_with_no_base_url:
     <<: *working_directory
     executor: node-xlarge
     steps:
@@ -978,7 +978,7 @@ workflows:
       - build_docs_pr_with_no_base_url:
           <<: *only_pr
           <<: *require_dep
-          context: ncu-newskit-site-pr
+          context: ncu-product-platforms-context
           requires:
             - build_icons
       - test_broken_links_docs:
