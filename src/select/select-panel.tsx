@@ -39,6 +39,7 @@ interface SelectPanelProps {
   renderInModal: boolean;
   buttonRef: React.RefObject<HTMLButtonElement>;
   closeMenu: Function;
+  getItems: Function;
 }
 
 const DefaultModal = Modal;
@@ -98,6 +99,8 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       renderInModal,
       closeMenu,
       overrides,
+      getItems,
+      getTotalSizeItem,
       ...restProps
     } = props;
 
@@ -110,18 +113,39 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       overrides: overrides?.modal as SelectPropsOverrides['modal'],
     });
 
-    const optionsAsChildren =
-      isOpen &&
-      React.Children.map(
-        children,
-        (child: React.ReactElement<SelectOptionProps>, index) => {
-          const downshiftOptionProps = getItemProps({
-            item: child,
-            index,
-          });
+    // const optionsAsChildren =
+    //   isOpen &&
+    //   React.Children.map(
+    //     children,
+    //     (child: React.ReactElement<SelectOptionProps>, index) => {
+    //       const downshiftOptionProps = getItemProps({
+    //         item: child,
+    //         index,
+    //       });
 
+    //       const combinedProps = {
+    //         ...downshiftOptionProps,
+    //         ...child.props,
+    //       };
+
+    //       return (
+    //         <StyledOptionWithPrivateProps
+    //           $focused={highlightedIndex === index}
+    //           $selected={selectedItem === child}
+    //           $size={size}
+    //           {...combinedProps}
+    //         />
+    //       );
+    //     },
+    //   );
+
+    const optionsAsChildren = isOpen && (
+      // @ts-ignore
+      <>
+        {getTotalSizeItem()}
+        {getItems().map(({child, props: itemProps, index}) => {
           const combinedProps = {
-            ...downshiftOptionProps,
+            ...itemProps,
             ...child.props,
           };
 
@@ -133,8 +157,9 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
               {...combinedProps}
             />
           );
-        },
-      );
+        })}
+      </>
+    );
 
     const screenReaderOnlyMessage = isOpen && (
       <ScreenReaderOnly id={listDescriptionId}>

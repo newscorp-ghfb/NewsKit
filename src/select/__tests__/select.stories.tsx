@@ -21,6 +21,8 @@ import {
 import {Modal, ModalProps} from '../../modal';
 import {Button} from '../../button/button';
 import {InlineMessage} from '../../inline-message';
+import {GridLayout} from '../../grid-layout';
+import {countries} from './phone-countries';
 
 const items = [
   'Neptunium',
@@ -764,3 +766,40 @@ export const StorySelectInModal = () => {
   );
 };
 StorySelectInModal.storyName = 'useModal';
+
+export const StorySelectVirtualized = () => {
+  const selectOptions = countries.map(({value, name}) => (
+    <SelectOption value={value} key={value}>
+      <GridLayout columns="auto 1fr" columnGap="space020" alignItems="center">
+        <img
+          src={`https://flagcdn.com/16x12/${value.toLowerCase()}.png`}
+          width="16"
+          height="12"
+          alt={name}
+        />
+        <span>{name}</span>
+      </GridLayout>
+    </SelectOption>
+  ));
+
+  return (
+    <>
+      <Block spaceStack="space050">
+        <Label htmlFor="countries" size={'medium' as TextFieldSize}>
+          Select your country ( virtualized )
+        </Label>
+        <Select
+          aria-describedby="countries-at"
+          id="countries"
+          size="small"
+          useModal={{xs: true}}
+        >
+          {selectOptions}
+        </Select>
+        <AssistiveText id="countries-at" size={'small' as TextFieldSize}>
+          Assistive Text
+        </AssistiveText>
+      </Block>
+    </>
+  );
+};

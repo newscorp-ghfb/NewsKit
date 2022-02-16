@@ -209,7 +209,8 @@
     "react-hook-form": "^7.5.3",
     "react-hot-toast": "^1.0.2",
     "react-range": "^1.5.3",
-    "react-transition-group": "^4.4.1"
+    "react-transition-group": "^4.4.1",
+    "react-virtual": "^2.10.4"
   },
   "resolutions": {
     "@types/react": "17",
