@@ -6,11 +6,11 @@ import {OpenGraphMedia} from 'next-seo/lib/types';
 interface HeadNextSeoProps extends NextSeoProps {
   image: OpenGraphMedia;
 }
-export function HeadNextSeo({
+export const HeadNextSeo: React.FC<HeadNextSeoProps> = ({
   title,
   description,
   image: {url, width = 1200, height = 600, alt},
-}: HeadNextSeoProps) {
+}) => {
   const nextSeoTitle = title
     ? `${title} | NewsKit design system`
     : 'NewsKit design system';
@@ -38,4 +38,4 @@ export function HeadNextSeo({
       openGraph={openGraphConfig}
     />
   );
-}
+};
