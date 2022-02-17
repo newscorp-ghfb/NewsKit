@@ -2,7 +2,7 @@ import * as React from 'react';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import 'react-phone-number-input/style.css';
-import {Form, FormRef} from '..';
+import {Form, FormInput, FormInputCheckbox, FormRef} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -12,6 +12,7 @@ import {TextInput, TextInputSize} from '../../text-input';
 import {Block} from '../../block';
 import {Stack} from '../../stack';
 import {styled} from '../../utils';
+import {TextBlock} from '../..';
 
 const PhoneInputWithCountry = require('react-phone-number-input/react-hook-form')
   .default;
@@ -365,3 +366,69 @@ export const StoryFormWithCustomStyles = () => {
   );
 };
 StoryFormWithCustomStyles.storyName = 'form-with-custom-styles';
+
+export const StoryRenderBug = () => (
+  <>
+    <div data-testid="yup-resolver">
+      <StorybookHeading>Render bug reproduction</StorybookHeading>
+      <Block>
+        <StorybookSubHeading>Steps to reproduce:</StorybookSubHeading>
+        <ol>
+          <li>
+            Enter a valid value into the username field (5 characters or longer)
+          </li>
+          <li>Tab into the next field (green validation tick still there)</li>
+          <li>
+            Tab into the next field - checkbox (green validation tick still
+            there)
+          </li>
+          <li>
+            Shift Tab back to the previous field (green validation tick is gone
+            now)
+          </li>
+        </ol>
+        <TextBlock>
+          This seems to be only happening when the FormInputCheckbox is wrapped
+          in FormInput but it doesn&apos;t seem to matter whether the checkbox
+          is required.
+        </TextBlock>
+        <TextBlock>
+          Please let the render team know when this is fixed.
+        </TextBlock>
+        <Block spaceStack="space050" />
+        <Form
+          onSubmit={onSubmit}
+          validationMode="onBlur"
+          reValidationMode="onBlur"
+          resolver={yupResolver(schema)}
+        >
+          <Block spaceStack="space050">
+            <TextInput
+              label="Username"
+              name="username"
+              data-testid="username-input"
+            />
+          </Block>
+          <Block spaceStack="space050">
+            <TextInput
+              label="Potato"
+              name="potato"
+              data-testid="potato-input"
+            />
+          </Block>
+          <FormInput name="small-checkbox">
+            <FormInputCheckbox
+              label="I agree to the terms & conditions"
+              value="tc"
+              overrides={{spaceStack: 'space020'}}
+            />
+          </FormInput>
+          <Button type="submit" data-testid="submit-button">
+            Submit
+          </Button>
+        </Form>
+      </Block>
+    </div>
+  </>
+);
+StoryRenderBug.storyName = 'story-render-bug';
