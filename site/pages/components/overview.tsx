@@ -15,7 +15,7 @@ import {HeadNextSeo} from '../../components/head-next-seo';
 const componentCategories: any =
   routes.find(r => r.title === 'Components')?.subNav?.slice(1) || [];
 
-export default (layoutProps: LayoutProps) => (
+const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     <HeadNextSeo
       title="Components overview"
@@ -78,3 +78,5 @@ export default (layoutProps: LayoutProps) => (
     <Block spaceStack="space070" />
   </Layout>
 );
+
+export default Overview;

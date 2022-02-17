@@ -53,7 +53,7 @@ const codeCards = [
   },
 ];
 
-export default (layoutProps: LayoutProps) => (
+const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     <HeadNextSeo
       title="Guides overview"
@@ -90,3 +90,5 @@ export default (layoutProps: LayoutProps) => (
     </Grid>
   </Layout>
 );
+
+export default Overview;

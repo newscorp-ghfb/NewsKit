@@ -59,7 +59,7 @@ const PRINCIPLE_CARDS = [
   },
 ] as MediaItem[];
 
-export default (layoutProps: LayoutProps) => (
+const DesignOverview = (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
       title: 'Design overview | Newskit design system',
@@ -425,12 +425,14 @@ export default (layoutProps: LayoutProps) => (
       </ContentSection>
     </ComponentPageCell>
     {/* ToDo: Once design quickstart guide page is ready, need to enable this section.
-    <RelatedComponentsSection
-      title="What’s next?"
-      id="whats-next"
-      toc="What’s next?"
-      introduction="Want to use NewsKit for your next product? Follow the next steps belows to learn more:"
-      related={['Design quickstart guide']}
-    /> */}
+  <RelatedComponentsSection
+    title="What’s next?"
+    id="whats-next"
+    toc="What’s next?"
+    introduction="Want to use NewsKit for your next product? Follow the next steps belows to learn more:"
+    related={['Design quickstart guide']}
+  /> */}
   </GuidePageTemplate>
 );
+
+export default DesignOverview;
