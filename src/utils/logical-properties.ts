@@ -2,6 +2,7 @@ import {CSSObject, getXFromTheme, MQ} from './style';
 import {ThemeProp} from './style-types';
 import {deepMerge} from './deep-merge';
 import {get} from './get';
+import {rejectObject} from './filter-object';
 
 interface LogicalMargins {
   marginInlineStart?: MQ<string>;
@@ -71,20 +72,18 @@ export const useLogicalProps = (props: ThemeProp): CSSObject =>
 
 export const omitLogicalPropsFromOverrides = (
   overrides: Record<string, unknown>,
-) => {
-  const cleanOverrides = {...overrides};
-
-  delete cleanOverrides.marginInlineStart;
-  delete cleanOverrides.marginInlineEnd;
-  delete cleanOverrides.marginInline;
-  delete cleanOverrides.marginBlockStart;
-  delete cleanOverrides.marginBlockEnd;
-  delete cleanOverrides.marginBlock;
-  delete cleanOverrides.paddingInlineStart;
-  delete cleanOverrides.paddingInlineEnd;
-  delete cleanOverrides.paddingInline;
-  delete cleanOverrides.paddingBlockStart;
-  delete cleanOverrides.paddingBlockEnd;
-  delete cleanOverrides.paddingBlock;
-  return cleanOverrides;
-};
+) =>
+  rejectObject(overrides, [
+    'marginInlineStart',
+    'marginInlineEnd',
+    'marginInline',
+    'marginBlockStart',
+    'marginBlockEnd',
+    'marginBlock',
+    'paddingInlineStart',
+    'paddingInlineEnd',
+    'paddingInline',
+    'paddingBlockStart',
+    'paddingBlockEnd',
+    'paddingBlock',
+  ]);
