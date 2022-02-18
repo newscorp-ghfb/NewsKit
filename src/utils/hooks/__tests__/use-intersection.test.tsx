@@ -1,5 +1,5 @@
 import React from 'react';
-import {render} from '@testing-library/react';
+import {act, render} from '@testing-library/react';
 import {useIntersection, UseIntersection} from '..';
 
 let callback: (e: Event[]) => void;
@@ -41,15 +41,15 @@ describe('useIntersection hook', () => {
   };
 
   it('should trigger when in view', () => {
-    const {getByText, debug, rerender} = render(<InViewMock />);
+    const {getByText, rerender} = render(<InViewMock />);
     getByText('false');
-    debug();
 
-    triggerObserverCb(true);
+    act(() => {
+      triggerObserverCb(true);
+    });
+
     rerender(<InViewMock />);
     getByText('true');
-
-    debug();
   });
 
   it('should use same instance', () => {

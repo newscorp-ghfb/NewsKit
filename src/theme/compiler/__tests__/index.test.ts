@@ -664,7 +664,6 @@ describe('compileTheme', () => {
       myColour: '{{forgotToDefineThis}}',
     };
     console.error = jest.fn();
-
     const result = compileTheme(theme);
     expect(console.error).toHaveBeenCalledWith(
       'Theme token "forgotToDefineThis" was not found when compiling theme!',
@@ -716,6 +715,8 @@ describe('compileTheme', () => {
       deepToken5: '{{deepToken4}}',
     };
 
+    jest.spyOn(console, 'error').mockImplementation();
+
     const result = compileTheme(tooDeepTheme);
     expect(console.error).toHaveBeenCalledWith(
       'Recursive loop detected, token stack: "deepToken", "deepToken1", "deepToken2", "deepToken3", "deepToken4"!',
@@ -741,6 +742,8 @@ describe('compileTheme', () => {
       recursiveToken1: '{{recursiveToken}}',
       recursiveToken2: '{{recursiveToken1}}',
     };
+
+    jest.spyOn(console, 'error').mockImplementation();
 
     const result = compileTheme(recursiveLoopTheme);
     expect(console.error).toHaveBeenCalledWith(
