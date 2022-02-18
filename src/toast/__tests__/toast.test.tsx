@@ -15,7 +15,7 @@ import {
 } from '../../test/test-utils';
 import {IconFilledWarning} from '../../icons';
 import {TextBlock} from '../../text-block';
-import {Link} from '../../link';
+import {LinkInline} from '../../link';
 import {Button, compileTheme, createTheme} from '../..';
 
 const ToastExample = ({
@@ -69,10 +69,16 @@ describe('Toast', () => {
     test('renders with content as string and link', () => {
       const props: ToastProps = {
         children: [
-          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt`,
-          <Link href="/">NewsKit Link</Link>,
-          `ut labore et dolore magna aliqua.`,
+          <React.Fragment key="1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt
+          </React.Fragment>,
+          <LinkInline key="2" href="/">
+            NewsKit Link
+          </LinkInline>,
+          <React.Fragment key="3">
+            ut labore et dolore magna aliqua.
+          </React.Fragment>,
         ],
       };
       const fragment = renderToFragmentWithTheme(Toast, props) as any;
@@ -188,15 +194,18 @@ describe('Toast', () => {
       });
     });
 
-    test('toast adds component to DOM', () => {
+    test('toast adds component to DOM', async () => {
       const messageText = 'test message';
       const action = () => toast(<div>{messageText}</div>);
-      const {getByTestId, getByText} = renderWithTheme(ToastExample, {action});
+      const {getByTestId, getByText, unmount} = renderWithTheme(ToastExample, {
+        action,
+      });
 
       const actionBtn = getByTestId('action');
       fireEvent.click(actionBtn);
       const toastMessage = getByText(messageText);
       expect(toastMessage).toBeDefined();
+      unmount();
     });
 
     test('toast can be removed from DOM via button', async () => {
@@ -217,7 +226,7 @@ describe('Toast', () => {
           ),
           {autoHideDuration: 1500},
         );
-      const {getByTestId, getByText} = renderWithTheme(ToastExample, {
+      const {getByTestId, getByText, unmount} = renderWithTheme(ToastExample, {
         action,
       });
 
@@ -228,6 +237,7 @@ describe('Toast', () => {
       fireEvent.click(closeBtn);
 
       await waitForElementToBeRemoved(() => getByText(messageText));
+      unmount();
     });
   });
 });

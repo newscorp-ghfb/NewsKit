@@ -1,4 +1,4 @@
-import React, {createRef} from 'react';
+import React, {createRef, useEffect} from 'react';
 import {fireEvent, screen} from '@testing-library/react';
 import {act} from 'react-dom/test-utils';
 import userEvent from '@testing-library/user-event';
@@ -27,35 +27,60 @@ jest.mock('react-transition-group', () => {
       });
     };
 
-    const onEnter = () => callIfExist(props, 'onEnter');
-    const onExited = () => callIfExist(props, 'onExited');
+    const onEnter = React.useCallback(() => callIfExist(props, 'onEnter'), [
+      props,
+    ]);
+    const onExited = React.useCallback(() => callIfExist(props, 'onExited'), [
+      props,
+    ]);
+
+    useEffect(() => {
+      if (props.in) {
+        onEnter();
+      } else {
+        onExited();
+      }
+    }, [props.in, onEnter, onExited]);
 
     // check only for `in` prop and ignore `appear` since its always applied it does not play role
     if (props.in) {
-      onEnter();
       return (
         <FakeTransition>
           {React.Children.map(props.children, child => modifyChildren(child))}
         </FakeTransition>
       );
     }
-
     // modal is not in the DOM when is not open
-    onExited();
     return null;
   });
-  return {CSSTransition: FakeCSSTransition, Transition: FakeTransition};
+  return {
+    CSSTransition: FakeCSSTransition,
+    Transition: FakeTransition,
+  };
 });
 const renderSelectButtonWithComponents = () => (
   <>
     <Label>A label</Label>
     <Select>
-      <SelectOption value="option 1">option 1</SelectOption>
-      <SelectOption value="option 2">option 2</SelectOption>
+      <SelectOption key="1" value="option 1">
+        option 1
+      </SelectOption>
+      <SelectOption key="2" value="option 2">
+        option 2
+      </SelectOption>
     </Select>
     <AssistiveText>AssistiveText</AssistiveText>
   </>
 );
+
+const defaultSelectOptions = [
+  <SelectOption key="1" value="option 1">
+    option 1
+  </SelectOption>,
+  <SelectOption key="2" value="option 2">
+    option 2
+  </SelectOption>,
+];
 
 describe('Select', () => {
   test('renders Select, AssistiveText and Label', () => {
@@ -69,10 +94,7 @@ describe('Select', () => {
     test(`renders ${size} Select`, () => {
       const props: SelectProps = {
         size: size as ButtonSelectSize,
-        children: [
-          <SelectOption value="option 1">option 1</SelectOption>,
-          <SelectOption value="option 2">option 2</SelectOption>,
-        ],
+        children: defaultSelectOptions,
       };
       const fragment = renderToFragmentWithTheme(Select, props);
       expect(fragment).toMatchSnapshot();
@@ -81,10 +103,7 @@ describe('Select', () => {
 
   test('should render custom placeholder', () => {
     const props: SelectProps = {
-      children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
-      ],
+      children: defaultSelectOptions,
       placeholder: 'This is some text',
     };
 
@@ -97,10 +116,7 @@ describe('Select', () => {
 
     const props = {
       ref: inputRef,
-      children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
-      ],
+      children: defaultSelectOptions,
     };
 
     renderWithTheme(Select, props);
@@ -118,10 +134,7 @@ describe('Select', () => {
     const props: SelectProps = {
       placeholder: 'This is some text',
       onBlur,
-      children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
-      ],
+      children: defaultSelectOptions,
     };
 
     const {getByTestId} = renderWithTheme(Select, props);
@@ -142,10 +155,7 @@ describe('Select', () => {
     const props: SelectProps = {
       placeholder: 'This is some text',
       onFocus,
-      children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
-      ],
+      children: defaultSelectOptions,
     };
 
     const {getByTestId} = renderWithTheme(Select, props);
@@ -163,10 +173,12 @@ describe('Select', () => {
       placeholder: 'This is some text',
       onChange,
       children: [
-        <SelectOption defaultSelected value="option 1">
+        <SelectOption key="1" defaultSelected value="option 1">
           option 1
         </SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
+        <SelectOption key="2" value="option 2">
+          option 2
+        </SelectOption>,
       ],
     };
 
@@ -186,10 +198,7 @@ describe('Select', () => {
     const props: SelectProps = {
       placeholder: 'This is some text',
       onChange,
-      children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
-      ],
+      children: defaultSelectOptions,
     };
 
     renderWithTheme(Select, props);
@@ -200,10 +209,7 @@ describe('Select', () => {
   test('renders disabled select', () => {
     const props: SelectProps = {
       state: 'disabled',
-      children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
-      ],
+      children: defaultSelectOptions,
     };
     const fragment = renderToFragmentWithTheme(Select, props);
     expect(fragment).toMatchSnapshot();
@@ -212,10 +218,7 @@ describe('Select', () => {
   test(`chevron clicks don't open panel when select is disabled`, async () => {
     const props: SelectProps = {
       state: 'disabled',
-      children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
-      ],
+      children: defaultSelectOptions,
     };
 
     const {getByTestId} = renderWithTheme(Select, props);
@@ -232,10 +235,7 @@ describe('Select', () => {
   test(`button clicks don't open panel when select is disabled`, async () => {
     const props: SelectProps = {
       state: 'disabled',
-      children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
-      ],
+      children: defaultSelectOptions,
     };
 
     const {getByTestId} = renderWithTheme(Select, props);
@@ -251,10 +251,7 @@ describe('Select', () => {
   test('renders loading select', () => {
     const props: SelectProps = {
       loading: true,
-      children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
-      ],
+      children: defaultSelectOptions,
     };
     const fragment = renderToFragmentWithTheme(Select, props);
     expect(fragment).toMatchSnapshot();
@@ -263,10 +260,12 @@ describe('Select', () => {
   test('renders select with a pre selected option', () => {
     const props: SelectProps = {
       children: [
-        <SelectOption defaultSelected value="option 1">
+        <SelectOption key="1" defaultSelected value="option 1">
           option 1
         </SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
+        <SelectOption key="2" value="option 2">
+          option 2
+        </SelectOption>,
       ],
     };
     const fragment = renderToFragmentWithTheme(Select, props);
@@ -276,10 +275,12 @@ describe('Select', () => {
   test('renders select with a selected option', () => {
     const props: SelectProps = {
       children: [
-        <SelectOption selected value="option 1">
+        <SelectOption key="1" selected value="option 1">
           option 1
         </SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
+        <SelectOption key="2" value="option 2">
+          option 2
+        </SelectOption>,
       ],
     };
     const fragment = renderToFragmentWithTheme(Select, props);
@@ -290,10 +291,7 @@ describe('Select', () => {
     const props: SelectProps = {
       startEnhancer: <IconFilledSearch overrides={{size: 'iconSize020'}} />,
       endEnhancer: <IconFilledSearch overrides={{size: 'iconSize020'}} />,
-      children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
-      ],
+      children: defaultSelectOptions,
     };
     const fragment = renderToFragmentWithTheme(Select, props);
     expect(fragment).toMatchSnapshot();
@@ -302,8 +300,10 @@ describe('Select', () => {
   test('renders select with non-string options', () => {
     const props: SelectProps = {
       children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption defaultSelected value="option 2">
+        <SelectOption key="1" value="option 1">
+          option 1
+        </SelectOption>,
+        <SelectOption key="2" defaultSelected value="option 2">
           <div>this is not a string</div>
         </SelectOption>,
       ],
@@ -314,10 +314,7 @@ describe('Select', () => {
 
   test('renders select with open menu', async () => {
     const props: SelectProps = {
-      children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
-      ],
+      children: defaultSelectOptions,
     };
     const {getByTestId} = renderWithTheme(Select, props);
 
@@ -333,12 +330,18 @@ describe('Select', () => {
     const props: SelectProps = {
       onChange,
       children: [
-        <SelectOption defaultSelected value="option 1">
+        <SelectOption key="1" defaultSelected value="option 1">
           option 1
         </SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
-        <SelectOption value="option 3">option 3</SelectOption>,
-        <SelectOption value="option 4">option 4</SelectOption>,
+        <SelectOption key="2" value="option 2">
+          option 2
+        </SelectOption>,
+        <SelectOption key="3" value="option 3">
+          option 3
+        </SelectOption>,
+        <SelectOption key="4" value="option 4">
+          option 4
+        </SelectOption>,
       ],
     };
     const {getByTestId} = renderWithTheme(Select, props);
@@ -377,10 +380,7 @@ describe('Select', () => {
   test('blur on chevron button opens the menu again', async () => {
     const props: SelectProps = {
       placeholder: 'This is some text',
-      children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
-      ],
+      children: defaultSelectOptions,
     };
 
     const {getByTestId} = renderWithTheme(Select, props);
@@ -430,10 +430,13 @@ describe('Select', () => {
           overrides={{spaceInset: 'space050', spaceInline: 'space020'}}
           selectedIcon="TEST"
           value="option 1"
+          key="1"
         >
           option 1
         </SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
+        <SelectOption key="2" value="option 2">
+          option 2
+        </SelectOption>,
       ],
     };
 
@@ -453,8 +456,12 @@ describe('Select', () => {
   describe('in Modal', () => {
     const commonProps: SelectProps = {
       children: [
-        <SelectOption value="option 1">option 1</SelectOption>,
-        <SelectOption value="option 2">option 2</SelectOption>,
+        <SelectOption key="1" value="option 1">
+          option 1
+        </SelectOption>,
+        <SelectOption key="2" value="option 2">
+          option 2
+        </SelectOption>,
       ],
       useModal: true,
     };
