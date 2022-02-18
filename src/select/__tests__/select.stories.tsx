@@ -769,7 +769,7 @@ StorySelectInModal.storyName = 'useModal';
 
 export const StorySelectVirtualized = () => {
   const selectOptions = countries.map(({value, name}) => (
-    <SelectOption value={value} key={value}>
+    <SelectOption value={value} key={value} aria-label={name}>
       <GridLayout columns="auto 1fr" columnGap="space020" alignItems="center">
         <img
           src={`https://flagcdn.com/16x12/${value.toLowerCase()}.png`}
@@ -779,6 +779,12 @@ export const StorySelectVirtualized = () => {
         />
         <span>{name}</span>
       </GridLayout>
+    </SelectOption>
+  ));
+
+  const selectOptionsSimple = countries.map(({name}) => (
+    <SelectOption key={name} value={name}>
+      {name}
     </SelectOption>
   ));
 
@@ -793,10 +799,28 @@ export const StorySelectVirtualized = () => {
           id="countries"
           size="medium"
           useModal={{xs: true}}
+          virtualized={50}
         >
           {selectOptions}
         </Select>
         <AssistiveText id="countries-at" size={'small' as TextFieldSize}>
+          Assistive Text
+        </AssistiveText>
+      </Block>
+      <Block spaceStack="space050">
+        <Label htmlFor="simple-data" size={'medium' as TextFieldSize}>
+          Simple data ( virtualized )
+        </Label>
+        <Select
+          aria-describedby="simple-data-at"
+          id="simple-data"
+          size="medium"
+          useModal={{xs: true}}
+          virtualized={50}
+        >
+          {selectOptionsSimple}
+        </Select>
+        <AssistiveText id="simple-data-at" size={'small' as TextFieldSize}>
           Assistive Text
         </AssistiveText>
       </Block>
