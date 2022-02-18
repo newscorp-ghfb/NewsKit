@@ -60,6 +60,7 @@ const useVirtualizedList = ({
     const combinedProps = {
       ...props,
       ...child.props,
+      key: child.key,
     };
 
     return (
@@ -296,12 +297,29 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       ...downshiftMenuPropsExceptRef
     } = getMenuProps();
 
-    const {
-      clientWidth: width = 0,
-      offsetTop: top = 0,
-      clientHeight: height = 0,
-      offsetLeft: left = 0,
-    } = (selectRef && selectRef.current) || {};
+    const [{width, top, height, left}, setSelectRect] = useState({
+      width: 0,
+      top: 0,
+      height: 0,
+      left: 0,
+    });
+
+    useEffect(() => {
+      if (isOpen) {
+        const {
+          clientWidth = 0,
+          offsetTop = 0,
+          clientHeight = 0,
+          offsetLeft = 0,
+        } = (selectRef && selectRef.current) || {};
+        setSelectRect({
+          width: clientWidth,
+          top: offsetTop,
+          height: clientHeight,
+          left: offsetLeft,
+        });
+      }
+    }, [isOpen, selectRef]);
 
     return (
       <>
