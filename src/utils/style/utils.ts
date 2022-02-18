@@ -247,9 +247,9 @@ export const unifyTransition = (
     errorLogger,
   );
 
-  const a = Object.keys(compiledThemeResults as object).length
+  const compiledResults = Object.keys(compiledThemeResults as object).length
     ? deepMerge({}, baseTransitionPreset, compiledThemeResults)
     : baseTransitionPreset;
 
-  return a;
+  return compiledResults;
 };
