@@ -121,21 +121,10 @@ export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
   token: MQ<TransitionToken> | MQ<TransitionToken[]>,
   componentClassName?: string,
 ) => (props: Props) => {
-  // console.log('>>>> IN getTransitionPresetFromTheme <<<<<');
-  // console.log(token);
-
   if (isResponsive(token, props.theme.breakpoints)) {
-    // console.log('tuka sme');
-    // const a
     return Object.entries(token).reduce(
       (acc, [key, transitionPresetToken], index, arr) => {
-        // console.log('key', key);
-        // console.log('trPR', transitionPresetToken); // ['slideLeft', 'fade']
-        // console.log('index', index);
-        // console.log('arr', arr);
-
         const nextKey = arr[index + 1] ? arr[index + 1][0] : undefined;
-        // console.log('nextKey:  ', nextKey);
 
         const mediaQuery = getMediaQueryFromTheme(
           key as BreakpointKeys,
@@ -143,34 +132,13 @@ export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
         )({
           theme: props.theme,
         });
-        // console.log('mediaQuery');
-        // console.log(mediaQuery);
 
         if (Array.isArray(transitionPresetToken)) {
-          // console.log('array ehee!');
-
-          // const mergedTransitionPresets = (transitionPresetToken as TransitionToken[])
-          //   .map(tkn => unifyTransition(props.theme, tkn))
-          //   .filter(transition => transition)
-          //   .reduce(
-          //     (mergedTransitionPreset, transition) =>
-          //       concatAndMergeInTransitionStringsForPreset(
-          //         transition,
-          //         mergedTransitionPreset,
-          //       ),
-          //     {} as TransitionPreset,
-          //   );
-
           const mergedTransitionPresets = getMergedTransitionPresets(
             transitionPresetToken as TransitionToken[],
             props.theme,
           );
 
-          // const c = getTransitionPresetValueFromTheme(
-          //   mergedTransitionPresets,
-          //   componentClassName,
-          // );
-          // console.log(c);
           acc[mediaQuery] = getTransitionPresetValueFromTheme(
             mergedTransitionPresets,
             componentClassName,
@@ -180,11 +148,7 @@ export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
             props.theme,
             transitionPresetToken,
           );
-          // const b = getTransitionPresetValueFromTheme(
-          //   transitionPreset,
-          //   componentClassName,
-          // );
-          // console.log(b);
+
           acc[mediaQuery] = getTransitionPresetValueFromTheme(
             transitionPreset,
             componentClassName,
@@ -195,24 +159,9 @@ export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
       },
       {} as {[index: string]: CSSObject},
     );
-
-    // console.log(a);
-    // return a;
   }
 
   if (Array.isArray(token)) {
-    // const mergedTransitionPresets = token
-    //   .map(tkn => unifyTransition(props.theme, tkn))
-    //   .filter(transition => transition)
-    //   .reduce(
-    //     (mergedTransitionPreset, transition) =>
-    //       concatAndMergeInTransitionStringsForPreset(
-    //         transition,
-    //         mergedTransitionPreset,
-    //       ),
-    //     {} as TransitionPreset,
-    //   );
-
     const mergedTransitionPresets = getMergedTransitionPresets(
       token,
       props.theme,
@@ -248,14 +197,10 @@ const getDefaultedValue = <
   componentClassName?: string,
 ) => (props: Props) => {
   const token = getToken(props, defaultPath, overridePath, presetType);
-  // console.log('<<<<<<<<<<<<< in getDefaultedValue >>>>>>>>>>');
-  // console.log('token');
-  // console.log(token);
 
   let tokenAsSingleOrMultiply;
 
   if (isResponsive(token, props.theme.breakpoints)) {
-    // console.log('isResponsive true');
     tokenAsSingleOrMultiply = Object.entries(token).reduce((acc, currVal) => {
       const [bp, trValue] = currVal as [string, object];
       acc[bp] = (isArrayLikeObject(trValue)
