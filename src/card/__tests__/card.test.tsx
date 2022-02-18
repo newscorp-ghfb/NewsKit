@@ -56,7 +56,7 @@ const myCustomCardTheme = createTheme({
       },
       cardHeadlineLinkStyleMock: {
         base: {
-          color: '{{colors.inkHeadingLink}}}',
+          color: '{{colors.inkBase}}}',
           textDecoration: 'none',
         },
         hover: {

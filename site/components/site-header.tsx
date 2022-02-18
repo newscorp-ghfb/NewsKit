@@ -126,7 +126,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
 
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
       items.map(({title, id}) => (
-        <Block spaceInset="spaceInset010">
+        <Block spaceInset="spaceInset010" key={id}>
           <Link
             type="standalone"
             href={id}
