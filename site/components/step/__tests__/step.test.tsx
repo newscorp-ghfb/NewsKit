@@ -10,5 +10,6 @@ describe('Step', () => {
     };
     const fragment = renderToFragmentWithTheme(Step, props);
     expect(fragment).toMatchSnapshot();
+    jest.spyOn(console, 'error').mockImplementation();
   });
 });
