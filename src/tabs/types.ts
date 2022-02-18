@@ -42,6 +42,9 @@ export type TabsIndicatorPositionType =
   | 'none';
 
 interface TabsOverrides extends LogicalProps {
+  /**
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginInline` instead.
+   */
   spaceInline?: MQ<string>;
   divider?: DividerOverrides;
   tab?: {

@@ -13,8 +13,17 @@ export interface BlockProps
     LogicalProps {
   as?: keyof JSX.IntrinsicElements;
   stylePreset?: MQ<string>;
+  /**
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingBlock` and `paddingInline` instead.
+   */
   spaceInset?: MQ<string>;
+  /**
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginInline` instead.
+   */
   spaceInline?: MQ<string>;
+  /**
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlock` instead.
+   */
   spaceStack?: MQ<string>;
 }
 

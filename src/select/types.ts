@@ -14,8 +14,17 @@ export interface SelectButtonOverrides extends EnhancerOverrides {
   minHeight?: MQ<string>;
   maxWidth?: MQ<string>;
   stylePreset?: MQ<string>;
+  /**
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingBlock` and `paddingInline` instead.
+   */
   spaceInset?: MQ<string>;
+  /**
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlock` instead.
+   */
   spaceStack?: MQ<string>;
+  /**
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginInline` instead.
+   */
   spaceInline?: MQ<string>;
   typographyPreset?: MQ<string>;
   loadingIndicator?: {
@@ -26,7 +35,13 @@ export interface SelectButtonOverrides extends EnhancerOverrides {
 export interface SelectPanelOverrides extends LogicalProps {
   maxHeight?: MQ<string>;
   stylePreset?: MQ<string>;
+  /**
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingBlock` and `paddingInline` instead.
+   */
   spaceInset?: MQ<string>;
+  /**
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlock` instead.
+   */
   spaceStack?: MQ<string>;
 }
 

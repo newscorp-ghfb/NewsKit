@@ -10,7 +10,13 @@ export enum FlagSize {
 export interface BaseFlagOverrides extends LogicalProps {
   typographyPreset?: MQ<string>;
   stylePreset?: MQ<string>;
+  /**
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingBlock` and `paddingInline` instead.
+   */
   spaceInset?: MQ<string>;
+  /**
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginInline` instead.
+   */
   spaceInline?: MQ<string>;
   width?: MQ<string>;
   height?: MQ<string>;

@@ -12,6 +12,9 @@ export interface BaseLinkProps
 interface LinkOverrides extends LogicalProps {
   stylePreset?: MQ<string>;
   typographyPreset?: MQ<string>;
+  /**
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginInline` instead.
+   */
   spaceInline?: MQ<string>;
   externalIcon?: {
     size?: string;
