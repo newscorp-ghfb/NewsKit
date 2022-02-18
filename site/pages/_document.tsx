@@ -18,12 +18,12 @@ interface Props {
 }
 
 // Is added so relative paths work when we are on a sub dir e.g. s-3.com/ppdsc-123-foo/
-const hrefURL =
+const baseHref =
   process.env.SITE_ENV && process.env.SITE_ENV === 'pr'
     ? process.env.BASE_URI
     : '/';
 
-const Base = () => <base href={hrefURL} />;
+const Base = () => <base href={baseHref} />;
 
 export default class MyDocument extends Document<Props> {
   static async getStaticProps(ctx: DocumentContext) {

@@ -6,16 +6,22 @@ import {OpenGraphMedia} from 'next-seo/lib/types';
 interface HeadNextSeoProps extends NextSeoProps {
   image: OpenGraphMedia;
 }
+
+const baseUrl = process.env.BASE_URI || 'https://newskit.co.uk/';
+
 export const HeadNextSeo: React.FC<HeadNextSeoProps> = ({
   title,
   description,
-  image: {url, width = 1200, height = 600, alt},
+  image: {
+    url = `${baseUrl}static/landing.png`,
+    width = 1200,
+    height = 600,
+    alt = 'NewsKit Design System',
+  },
 }) => {
   const nextSeoTitle = title
     ? `${title} | NewsKit design system`
     : 'NewsKit design system';
-
-  const baseUrl = process.env.BASE_URI || 'https://newskit.co.uk/';
 
   const openGraphConfig = {
     type: 'website',
@@ -24,7 +30,7 @@ export const HeadNextSeo: React.FC<HeadNextSeoProps> = ({
     description,
     images: [
       {
-        url: url ? `${baseUrl}static/${url}` : `${baseUrl}static/landing.png`,
+        url: `${baseUrl}static/${url}`,
         width,
         height,
         alt,
