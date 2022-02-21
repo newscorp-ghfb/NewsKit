@@ -273,11 +273,6 @@ const OldBox = styled(NewBox)`
   background: green;
 `;
 
-// @ts-ignore
-const NewBoxWithSpan = styled(NewBox)`
-  grid-column: ${props => props.column};
-`;
-
 const createItems = (count: number) => Array.from(Array(count));
 
 const sameColumns = [12, 6, 4, 3, 2, 1];
@@ -302,9 +297,9 @@ export const GridComparison = () => (
       <>
         <GridLayout columns="repeat(12, 1fr)" columnGap={columnGap}>
           {columns.map(span => (
-            <NewBoxWithSpan column={`auto / span ${span}`}>
-              {span}
-            </NewBoxWithSpan>
+            <GridLayoutItem column={`auto / span ${span}`}>
+              <NewBox>{span}</NewBox>
+            </GridLayoutItem>
           ))}
         </GridLayout>
         <Grid xsColumnGutter={columnGap} xsMargin="space000">

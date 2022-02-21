@@ -16,6 +16,12 @@ export const GridLayoutItem = styled(Block)<GridLayoutItemProps>`
   ${handleResponsiveProp({alignSelf: undefined}, ({alignSelf}) => ({
     alignSelf,
   }))}
+  ${handleResponsiveProp({column: undefined}, ({column}) => ({
+    gridColumn: column,
+  }))}
+  ${handleResponsiveProp({row: undefined}, ({row}) => ({
+    gridRow: row,
+  }))}
 `;
 
 export const GridLayout = ({children, ...props}: GridLayoutProps) => {

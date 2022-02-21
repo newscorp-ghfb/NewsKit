@@ -186,4 +186,22 @@ describe('GridLayout', () => {
     const fragment = renderToFragmentWithTheme(GridLayout, props);
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders GridLayout with colum/row prop', () => {
+    const props: GridLayoutProps = {
+      columns: `repeat(12, 1fr)`,
+      rows: `repeat(10, 1fr)`,
+      children: [
+        <GridLayoutItem column="auto / span 8" row="1 / 5">
+          8 cells
+        </GridLayoutItem>,
+        <GridLayoutItem column="auto / span 4" row="2 / 3">
+          4 cells
+        </GridLayoutItem>,
+      ],
+    };
+
+    const fragment = renderToFragmentWithTheme(GridLayout, props);
+    expect(fragment).toMatchSnapshot();
+  });
 });

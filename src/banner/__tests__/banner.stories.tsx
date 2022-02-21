@@ -14,8 +14,9 @@ import {
   IconFilledInstagram,
 } from '../../icons';
 import {Button, ButtonOrButtonLinkProps} from '../../button';
-import {Link} from '../../link';
+import {LinkInline} from '../../link';
 import {Cell, Grid, Visible} from '../../grid';
+import {GridLayout, GridLayoutItem} from '../..';
 
 const myCustomTheme = createTheme({
   name: 'banner-intents-theme',
@@ -191,9 +192,9 @@ const BannerIntentNegative: React.FC<BannerProps> = ({
 );
 
 const bannerLink = (
-  <Link href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
+  <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
     with link
-  </Link>
+  </LinkInline>
 );
 
 export default {
@@ -451,3 +452,51 @@ export const StoryBannerWithGridAlignment = () => (
 );
 
 StoryBannerWithGridAlignment.storyName = 'banner-with-grid-alignment';
+
+export const StoryBannerWithGridLayoutAlignment = () => (
+  <ThemeProvider theme={myCustomTheme}>
+    <StorybookSubHeading>align to grid</StorybookSubHeading>
+    <GridLayout>
+      <GridLayoutItem>Content above the banner</GridLayoutItem>
+    </GridLayout>
+    <Banner
+      title="Banner title"
+      aria-label="Banner with content above"
+      overrides={{
+        spaceInset: 'space045 space000 space045 space000',
+      }}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing eli
+    </Banner>
+    <GridLayout>
+      <GridLayoutItem>Content below the banner</GridLayoutItem>
+    </GridLayout>
+    <StorybookSubHeading>
+      align to grid with offset & with spaceInset overrides
+    </StorybookSubHeading>
+    <GridLayout columns="repeat(12, 1fr)" columnGap="space040">
+      <GridLayoutItem column="3 / span 8">
+        Content above the banner
+      </GridLayoutItem>
+    </GridLayout>
+    <Banner
+      title="Banner title"
+      aria-label="Banner with content below"
+      overrides={{
+        grid: {props: {xsMargin: 'space000'}},
+        cell: {props: {xs: 8, xsOffset: 2}},
+        spaceInset: 'space045 space000 space045 space000',
+      }}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing eli
+    </Banner>
+    <GridLayout columns="repeat(12, 1fr)" columnGap="space040">
+      <GridLayoutItem column="3 / span 8">
+        Content bellow the banner
+      </GridLayoutItem>
+    </GridLayout>
+  </ThemeProvider>
+);
+
+StoryBannerWithGridLayoutAlignment.storyName =
+  'banner-with-grid-layout-alignment';
