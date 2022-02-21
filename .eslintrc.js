@@ -88,14 +88,6 @@ module.exports = {
           'error',
           {ignore: ['newskit', 'csstype', '@components/page-title']},
         ],
-        // 'import/no-anonymous-default-export': [
-        //   'error',
-        //   {
-        //     allowArrowFunction: false,
-        //     allowAnonymousClass: false,
-        //     allowAnonymousFunction: false,
-        //   },
-        // ],
       },
     },
     {
