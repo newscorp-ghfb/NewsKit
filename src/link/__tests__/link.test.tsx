@@ -98,7 +98,7 @@ describe('Link', () => {
     };
     const link = await renderWithTheme((() => (
       <InstrumentationProvider fireEvent={mockFireEvent}>
-        <Link href="the-href.com" eventContext={eventContext}>
+        <Link href="#the-href.com" eventContext={eventContext}>
           test link text
         </Link>
         ;
@@ -111,7 +111,7 @@ describe('Link', () => {
       originator: 'link',
       trigger: EventTrigger.Click,
       context: {
-        href: 'the-href.com',
+        href: '#the-href.com',
         event: 'other event data',
       },
     });
@@ -125,7 +125,7 @@ describe('Link', () => {
     const link = await renderWithTheme((() => (
       <InstrumentationProvider fireEvent={mockFireEvent}>
         <Link
-          href="the-href.com"
+          href="#the-href.com"
           eventContext={eventContext}
           eventOriginator="custom-originator"
         >
@@ -141,7 +141,7 @@ describe('Link', () => {
       originator: 'custom-originator',
       trigger: EventTrigger.Click,
       context: {
-        href: 'the-href.com',
+        href: '#the-href.com',
         event: 'other event data',
       },
     });

@@ -12,6 +12,7 @@ export const DownloadControls = ({
   svgCodeGroup,
 }: DownloadControlsProps) => {
   const selectSvgEl = useRef<HTMLSelectElement>(null);
+  const [selectedIndexSvg, setSelectedIndexSvg] = React.useState('0');
 
   const buildComponentName = (svgName: string) =>
     svgName
@@ -230,11 +231,13 @@ export const DownloadControls = ({
         ref={selectSvgEl}
         disabled={!svgCodeGroup}
         style={{height: '26px', fontSize: '16px'}}
+        value={selectedIndexSvg}
+        onChange={e => setSelectedIndexSvg(e.target.value)}
       >
         <option>No SVG selected</option>
         {baseSvgCodeGroup &&
           baseSvgCodeGroup.map((svg, index) => (
-            <option selected={index === 0} value={`${index}`}>
+            <option key={svg.name} value={`${index}`}>
               {svg.name.replace(' ', '')} SVG
             </option>
           ))}

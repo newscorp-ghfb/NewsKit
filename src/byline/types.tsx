@@ -6,6 +6,7 @@ export interface BylineData {
   title?: string;
   location?: string;
   ariaLabel?: string;
+  key?: string | number;
 }
 
 export interface BylineProps {

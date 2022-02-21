@@ -137,7 +137,7 @@ const ThemelessByline: React.FC<BylineProps> = ({bylineData, overrides}) => {
   return (
     <Stack flow="horizontal-center" inline wrap="wrap" spaceStack={spaceStack}>
       {bylineData.map(
-        ({author, href, title, location, ariaLabel}: BylineData, i) => {
+        ({author, href, title, location, ariaLabel, key}: BylineData, i) => {
           const lastItem = isLastItem(i, bylineData.length);
           const hasLinkOnly = href && !title && !location;
           const hasLinkAndAuthorInfo = href && (title || location);
@@ -151,7 +151,7 @@ const ThemelessByline: React.FC<BylineProps> = ({bylineData, overrides}) => {
           );
 
           return (
-            <>
+            <React.Fragment key={key}>
               {hasLinkOnly && (
                 <BylineItem lastItem={lastItem}>{authorNameLink}</BylineItem>
               )}
@@ -174,7 +174,7 @@ const ThemelessByline: React.FC<BylineProps> = ({bylineData, overrides}) => {
                   {location && `, ${location}`}
                 </BylineItem>
               )}
-            </>
+            </React.Fragment>
           );
         },
       )}
