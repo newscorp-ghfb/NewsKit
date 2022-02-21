@@ -97,7 +97,7 @@ module.exports = {
       },
     },
     {
-      files: ['site/pages/**/*.tsx'],
+      files: ['site/**/*.tsx'],
       rules: {
         'import/no-anonymous-default-export': [
           'error',
