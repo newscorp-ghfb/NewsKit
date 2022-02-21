@@ -41,6 +41,12 @@ const commonPropsRows = [
     type: 'React.ReactNode',
     description: `If provided, gives the ability to add a component to the end of the input container.`,
   },
+  {
+    name: 'virtualized',
+    type: 'number',
+    description: `If provided, Select will render a virtualized list of options.`,
+    default: 50,
+  },
 ];
 
 const commonOverridesRows = [
