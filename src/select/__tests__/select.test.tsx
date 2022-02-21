@@ -463,6 +463,7 @@ describe('Select', () => {
 
     const {getByTestId, getAllByRole, asFragment} = renderWithTheme(Select, {
       children: selectOptions,
+      virtualized: 10,
       size: 'medium',
     });
 
