@@ -3734,10 +3734,10 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
       </div>
     </div>
     <div
-      aria-labelledby="downshift-2-label"
+      aria-labelledby="downshift-3-label"
       class="emotion-19"
       data-testid="select-panel"
-      id="downshift-2-menu"
+      id="downshift-3-menu"
       role="listbox"
       tabindex="-1"
     />
@@ -4464,10 +4464,10 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
       </div>
     </div>
     <div
-      aria-labelledby="downshift-6-label"
+      aria-labelledby="downshift-9-label"
       class="emotion-19"
       data-testid="select-panel"
-      id="downshift-6-menu"
+      id="downshift-9-menu"
       role="listbox"
       tabindex="-1"
     />

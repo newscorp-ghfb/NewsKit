@@ -11,6 +11,7 @@ import {withOwnTheme} from '../utils/with-own-theme';
 import {shouldRenderInModal} from './utils';
 import {withMediaQueryProvider} from '../utils/hooks/use-media-query/context';
 import {useBreakpointKey} from '../utils/hooks/use-media-query';
+import {get} from '../utils/get';
 
 const useVirtualizedList = ({
   items,
@@ -41,13 +42,16 @@ const useVirtualizedList = ({
   });
 
   useEffect(() => {
-    if (isOpen) {
-      // measure the size of the first item, assuming all items are the same size
-      const height =
-        // @ts-ignore
-        listRef.current?.querySelector('[role="option"]')?.offsetHeight;
-      setItemSize(height || 0);
-    }
+    if (!isOpen || !listRef.current) return;
+
+    // measure the size of the first item, assuming all items are the same size\
+    const element = listRef.current.querySelector('[role="option"]');
+
+    // istanbul ignore if
+    if (!(element instanceof HTMLElement)) return;
+
+    const height = element.offsetHeight;
+    setItemSize(height || 0);
   }, [listRef, isOpen]);
 
   const useVirtualization = items.length > limit;
@@ -63,10 +67,15 @@ const useVirtualizedList = ({
       key: child.key,
     };
 
+    const isSelected = Boolean(
+      selectedItem &&
+        get(selectedItem, 'props.value') === get(child, 'props.value'),
+    );
+
     return (
       <StyledOptionWithPrivateProps
         $focused={highlightedIndex === index}
-        $selected={selectedItem === child}
+        $selected={isSelected}
         $size={size}
         {...combinedProps}
       />
@@ -146,7 +155,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       loading,
       children,
       useModal = {},
-      virtualized = 30,
+      virtualized = 50, // TODO: what's the magic number?
       ...restProps
     } = props;
 
