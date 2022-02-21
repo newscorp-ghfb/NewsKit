@@ -6,7 +6,7 @@ import {ComponentPageTemplate} from '../../templates/component-page-template/com
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {Mono} from '../../components/flags';
 
-const Divider = (layoutProps: LayoutProps) => (
+const DividerComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Divider',
@@ -192,4 +192,4 @@ const Divider = (layoutProps: LayoutProps) => (
   />
 );
 
-export default Divider;
+export default DividerComponent;
