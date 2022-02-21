@@ -2,6 +2,9 @@
 
 exports[`Content Primary renders with children only 1`] = `
 <DocumentFragment>
+  <div>
+    Content Primary custom react component
+  </div>
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 40px;
@@ -167,6 +170,9 @@ exports[`Content Primary renders with description and children 1`] = `
 <div
     class="emotion-0"
   />
+  <div>
+    Content Primary custom react component
+  </div>
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 40px;
@@ -472,6 +478,9 @@ exports[`Content Primary renders with headline and children 1`] = `
 <div
     class="emotion-0"
   />
+  <div>
+    Content Primary custom react component
+  </div>
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 40px;
@@ -1185,6 +1194,9 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 <div
     class="emotion-0"
   />
+  <div>
+    Content Primary custom react component
+  </div>
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 40px;
@@ -1217,6 +1229,9 @@ exports[`Content Primary renders with headline, description and content 1`] = `
 
 exports[`Content Secondary renders with children only 1`] = `
 <DocumentFragment>
+  <div>
+    Content Secondary custom react component
+  </div>
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 80px;
@@ -1382,6 +1397,9 @@ exports[`Content Secondary renders with description and children 1`] = `
 <div
     class="emotion-0"
   />
+  <div>
+    Content Secondary custom react component
+  </div>
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 80px;
@@ -1685,6 +1703,9 @@ exports[`Content Secondary renders with headline and children 1`] = `
 <div
     class="emotion-0"
   />
+  <div>
+    Content Primary custom react component
+  </div>
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 80px;
@@ -2392,6 +2413,9 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 <div
     class="emotion-0"
   />
+  <div>
+    Content Secondary custom react component
+  </div>
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 80px;
@@ -2424,18 +2448,29 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 
 exports[`Content Section renders with children 1`] = `
 <DocumentFragment>
-  <section />
+  <section>
+    <div>
+      Content Section custom react component
+    </div>
+  </section>
 </DocumentFragment>
 `;
 
 exports[`Content Section renders without section name 1`] = `
 <DocumentFragment>
-  <section />
+  <section>
+    <div>
+      Content Section custom react component
+    </div>
+  </section>
 </DocumentFragment>
 `;
 
 exports[`Content Tertiary renders with children only 1`] = `
 <DocumentFragment>
+  <div>
+    Content Tertiary custom react component
+  </div>
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 80px;
@@ -2601,6 +2636,9 @@ exports[`Content Tertiary renders with description and children 1`] = `
 <div
     class="emotion-0"
   />
+  <div>
+    Content Tertiary custom react component
+  </div>
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 80px;
@@ -2904,6 +2942,9 @@ exports[`Content Tertiary renders with headline and children 1`] = `
 <div
     class="emotion-0"
   />
+  <div>
+    Content Primary custom react component
+  </div>
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 80px;
@@ -3611,6 +3652,9 @@ exports[`Content Tertiary renders with headline, description and content 1`] = `
 <div
     class="emotion-0"
   />
+  <div>
+    Content Tertiary custom react component
+  </div>
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 80px;

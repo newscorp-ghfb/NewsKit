@@ -20,6 +20,16 @@ exports[`GridLayout renders GridLayout 1`] = `
     >
       TEST
     </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -394,6 +404,16 @@ exports[`GridLayout renders GridLayout with overrides 1`] = `
     >
       TEST
     </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -482,6 +502,16 @@ exports[`GridLayout renders inline GridLayout 1`] = `
 <div
     class="emotion-0"
   >
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
     <div
       class="emotion-1"
     >

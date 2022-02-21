@@ -92,9 +92,10 @@ export const ThemeControls = ({
         onChange={handleThemeSelection}
         disabled={!svgCodeGroup}
         style={{height: '26px', fontSize: '16px'}}
+        value={currentThemeName}
       >
         {themeList.map(theme => (
-          <option selected={theme.name === currentThemeName} value={theme.name}>
+          <option key={theme.name} value={theme.name}>
             {theme.name}
           </option>
         ))}
