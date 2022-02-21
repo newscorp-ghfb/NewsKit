@@ -806,4 +806,19 @@ export const stylePresets = {
       iconColor: '{{colors.white}}',
     },
   },
+  stepFlag: {
+    base: {
+      backgroundColor: '{{colors.blue060}}',
+      borderRadius: '{{borders.borderRadiusRounded050}}',
+      color: '{{colors.white}}',
+    },
+  },
+  timerFlag: {
+    base: {
+      backgroundColor: '{{colors.neutral030}}',
+      borderRadius: '{{borders.borderRadiusRounded050}}',
+      color: '{{colors.neutral080}}',
+      iconColor: '{{colors.neutral100}}',
+    },
+  },
 };
