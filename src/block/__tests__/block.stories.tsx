@@ -130,34 +130,14 @@ export const StoryBlock = () => (
       </Block>
       <StyledHr />
       <Block stylePreset="blockOuter">
-        <StorybookSubHeading>Block with overrides</StorybookSubHeading>
+        <StorybookSubHeading>Block with transition</StorybookSubHeading>
         <Block
           spaceStack="space030"
           spaceInset="spaceInset030"
           stylePreset="transitionBlock"
-          overrides={{
-            transitionPreset: 'customBackgroundColorChange',
-          }}
+          transitionPreset="customBackgroundColorChange"
         >
           <span>Block with transition</span>
-        </Block>
-      </Block>
-      <StyledHr />
-      <Block stylePreset="blockOuter">
-        <Block
-          spaceStack="space030"
-          spaceInset="spaceInset030"
-          stylePreset="transitionBlock"
-          overrides={{
-            transitionPreset: {
-              extend: 'backgroundColorChange',
-              base: {
-                transitionDuration: '{{motions.motionDuration030}}',
-              },
-            },
-          }}
-        >
-          <span>Block with extend transition</span>
         </Block>
       </Block>
     </ThemeProvider>

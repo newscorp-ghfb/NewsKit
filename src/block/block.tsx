@@ -12,9 +12,8 @@ import {getTransitionPresetFromTheme} from '../utils/style/transition-preset';
 export interface BlockProps extends React.HTMLAttributes<HTMLDivElement> {
   as?: keyof JSX.IntrinsicElements;
   stylePreset?: MQ<string>;
-  overrides?: {
-    transitionPreset?: TransitionToken | TransitionToken[];
-  };
+  transitionPreset?: TransitionToken | TransitionToken[];
+
   spaceInset?: MQ<string>;
   spaceInline?: MQ<string>;
   spaceStack?: MQ<string>;
@@ -27,9 +26,8 @@ const StyledDiv = styled.div<BlockProps>`
     spaceInline && getSpacingFromTheme(spaceInline, undefined, 'marginRight')}
   ${({spaceStack}) =>
     spaceStack && getSpacingFromTheme(spaceStack, undefined, 'marginBottom')}
-  ${({overrides}) =>
-    overrides?.transitionPreset &&
-    getTransitionPresetFromTheme('backgroundColorChange')};
+  ${({transitionPreset}) =>
+    transitionPreset && getTransitionPresetFromTheme(transitionPreset)};
 `;
 
 export const Block: React.FC<BlockProps> = props => <StyledDiv {...props} />;
