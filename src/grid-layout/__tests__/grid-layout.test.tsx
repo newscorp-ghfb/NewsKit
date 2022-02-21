@@ -186,10 +186,10 @@ describe('GridLayout', () => {
       columns: `repeat(12, 1fr)`,
       rows: `repeat(10, 1fr)`,
       children: [
-        <GridLayoutItem column="auto / span 8" row="1 / 5">
+        <GridLayoutItem key="1" column="auto / span 8" row="1 / 5">
           8 cells
         </GridLayoutItem>,
-        <GridLayoutItem column="auto / span 4" row="2 / 3">
+        <GridLayoutItem key="2" column="auto / span 4" row="2 / 3">
           4 cells
         </GridLayoutItem>,
       ],
