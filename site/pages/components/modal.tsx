@@ -57,7 +57,7 @@ const ModalComponent = ({open, ...state}: {open: boolean}) => {
   );
 };
 
-export default (layoutProps: LayoutProps) => (
+const ModalPage = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Modal',
@@ -667,3 +667,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default ModalPage;
