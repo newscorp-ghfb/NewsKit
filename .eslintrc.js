@@ -9,7 +9,7 @@ module.exports = {
   parserOptions: {
     project: 'tsconfig.eslint.json',
   },
-  plugins: ['cup', 'header', 'prettier', 'react-hooks'],
+  plugins: ['cup', 'header', 'prettier', 'react-hooks', 'import'],
   env: {
     jest: true,
   },
@@ -88,12 +88,33 @@ module.exports = {
           'error',
           {ignore: ['newskit', 'csstype', '@components/page-title']},
         ],
+        // 'import/no-anonymous-default-export': [
+        //   'error',
+        //   {
+        //     allowArrowFunction: false,
+        //     allowAnonymousClass: false,
+        //     allowAnonymousFunction: false,
+        //   },
+        // ],
       },
     },
     {
       files: ['cypress/**/*.spec.js'],
       env: {
         mocha: true,
+      },
+    },
+    {
+      files: ['site/pages/**/*.tsx'],
+      rules: {
+        'import/no-anonymous-default-export': [
+          'error',
+          {
+            allowArrowFunction: false,
+            allowAnonymousClass: false,
+            allowAnonymousFunction: false,
+          },
+        ],
       },
     },
   ],
