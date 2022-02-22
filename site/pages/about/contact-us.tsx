@@ -20,7 +20,11 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
     <HeadNextSeo
       title="Contact us"
       description="Have a question about our design system? 
-      The NewsKit team is here to help you."
+        The NewsKit team is here to help you."
+      image={{
+        url: 'social/about.png',
+        alt: 'Contact us',
+      }}
     />
 
     <PageIntroductionContainer>

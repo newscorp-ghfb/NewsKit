@@ -87,8 +87,12 @@ const Introduction = (
     <HeadNextSeo
       title="About"
       description="NewsKit provides components, guidelines and standards to enable digital product 
-    teams to create high-quality, consistent products quickly. NewsKit is built on modular design 
-    principles and backed by best practice guidance for design and development."
+      teams to create high-quality, consistent products quickly. NewsKit is built on modular design 
+      principles and backed by best practice guidance for design and development."
+      image={{
+        url: 'social/about.png',
+        alt: 'Introduction',
+      }}
     />
 
     <PageIntroductionContainer>
