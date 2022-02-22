@@ -50,7 +50,7 @@ const contentOverrides = {
   typographyPreset: 'editorialParagraph030',
 };
 
-export default (layoutProps: LayoutProps) => (
+const InstrumentationSetup = (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
       title: 'Instrumentation setup',
@@ -564,3 +564,5 @@ const App = () => (
     </ComponentPageCell>
   </GuidePageTemplate>
 );
+
+export default InstrumentationSetup;
