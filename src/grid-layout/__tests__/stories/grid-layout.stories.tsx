@@ -292,6 +292,12 @@ const Container = styled.div`
 
 export const GridComparison = () => (
   <Container>
+    <StorybookHeading>Legend</StorybookHeading>
+    <GridLayout columns="auto auto">
+      <NewBox>Red - GridLayout component</NewBox>
+      <OldBox>Green - Legacy Grid component</OldBox>
+    </GridLayout>
+
     <StorybookHeading>GridLayout with 12 Columns</StorybookHeading>
     {differentColumns.map(columns => (
       <>

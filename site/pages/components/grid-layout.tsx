@@ -273,14 +273,14 @@ export default (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               required: false,
               description:
-                'Determines a grid item’s location within the grid by referring to specific grid lines',
+                'Determines a grid item’s location within the grid by referring to specific grid columns.',
             },
             {
-              name: 'rows',
+              name: 'row',
               type: 'MQ<string>',
               required: false,
               description:
-                'Determines a grid item’s location within the grid by referring to specific row lines',
+                'Determines a grid item’s location within the grid by referring to specific rows.',
             },
           ],
         },
