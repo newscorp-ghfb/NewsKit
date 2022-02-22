@@ -17,5 +17,7 @@ module.exports = {
   coveragePathIgnorePatterns: [
     '/node_modules/',
     '/src/test/require-context.ts',
+    '/src/icons/filled/',
+    '/src/icons/outlined/',
   ],
 };
