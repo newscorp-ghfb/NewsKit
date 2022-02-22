@@ -1,5 +1,5 @@
 import React from 'react';
-import {InlineMessage, UnorderedList, P, Block} from 'newskit';
+import {Block, P, InlineMessage, UnorderedList} from 'newskit';
 import {Code} from '../../../components/code';
 import {Link} from '../../../components/link';
 import {InlineCode} from '../../../components/markdown-elements';
@@ -21,16 +21,12 @@ const customEventFiringRows = [
     value: 'click',
   },
   {
-    key: 'End',
-    value: 'end',
+    key: 'Swipe',
+    value: 'swipe',
   },
   {
     key: 'Load',
     value: 'load',
-  },
-  {
-    key: 'Pulse',
-    value: 'pulse',
   },
   {
     key: 'Start',
@@ -41,8 +37,12 @@ const customEventFiringRows = [
     value: 'stop',
   },
   {
-    key: 'Swipe',
-    value: 'swipe',
+    key: 'End',
+    value: 'end',
+  },
+  {
+    key: 'Pulse',
+    value: 'pulse',
   },
 ];
 
@@ -101,8 +101,11 @@ export default (layoutProps: LayoutProps) => (
           <Block spaceStack="space070" />
           <InlineMessage role="region" aria-label="Github">
             For more information, users with the relevant access can read the
-            internal RFC which lead to this implementation. This can be found on
-            <Link href="https://www.google.com/" target="_blank">
+            internal RFC which lead to this implementation. This can be found on{' '}
+            <Link
+              href="https://github.com/newsuk/nuk-rfcs/blob/master/active/0037-user-interface-event-instrumentation.md"
+              target="_blank"
+            >
               Github.
             </Link>
           </InlineMessage>
@@ -169,7 +172,7 @@ export default (layoutProps: LayoutProps) => (
           description={
             <>
               Similar to the way you may use the{' '}
-              <Link href="https://www.google.com/" target="_blank">
+              <Link href="/theme/theming/using-a-theme/" target="_blank">
                 ThemeProvider
               </Link>{' '}
               to set the components theme, NewsKit provides a React context
