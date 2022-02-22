@@ -44,7 +44,7 @@ const commonPropsRows = [
   {
     name: 'virtualized',
     type: 'number',
-    description: `If provided, Select will render a virtualized list of options.`,
+    description: `When the amount of options is greater than this number, the options list will be virtualized.`,
     default: 50,
   },
 ];
