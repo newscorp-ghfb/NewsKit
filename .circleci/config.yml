@@ -370,7 +370,10 @@ jobs:
           at: ~/project
       - run:
           name: Build
-          command: make build_docs
+          command: |
+            export SITE_ENV=${SITE_ENV}
+            export SITE_BASE_URL=${SITE_BASE_URL}
+            make build_docs
       - persist_to_workspace:
           root: ./
           paths:
@@ -378,24 +381,7 @@ jobs:
       - slack/status:
           <<: *slack_status
 
-  build_docs_prod:
-    <<: *working_directory
-    executor: node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Build
-          command: make build_docs_prod
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - public/*
-      - slack/status:
-          <<: *slack_status
-
-  build_docs_pr:
+  build_docs_pr_with_no_base_url:
     <<: *working_directory
     executor: node-xlarge
     steps:
@@ -405,8 +391,8 @@ jobs:
       - run:
           name: Build
           command: |
-            export SITE_BASE_URL=${SITE_BASE_URL}
-            make build_docs_pr
+            export SITE_ENV=${SITE_ENV}
+            make build_docs_pr_with_no_base_url
       - persist_to_workspace:
           root: ./
           paths:
@@ -963,11 +949,6 @@ workflows:
           <<: *require_dep
           requires:
             - build_icons
-      - build_docs:
-          <<: *ignore_trigger_release
-          <<: *require_dep
-          requires:
-            - build_icons
       - build_test_e2e:
           <<: *ignore_trigger_release
           <<: *require_dep
@@ -978,11 +959,6 @@ workflows:
           <<: *require_dep
           requires:
             - build_icons
-      - test_broken_links_docs:
-          <<: *ignore_trigger_release
-          context: ncu-product-platforms-context
-          requires:
-            - build_docs
       - test_unit_comps:
           <<: *ignore_trigger_release
           <<: *require_dep
@@ -999,15 +975,45 @@ workflows:
           requires:
             - build_test_e2e
             - install_cypress
-      - test_e2e_docs:
-          <<: *ignore_trigger_release
-          context: ncu-product-platforms-context
-          requires:
-            - build_docs
-            - install_cypress
 
       # PR jobs
       ## Visual changes approval jobs
+      - build_docs_pr_with_no_base_url:
+          <<: *only_pr
+          <<: *require_dep
+          context: ncu-product-platforms-context
+          requires:
+            - build_icons
+      - test_broken_links_docs:
+          <<: *only_pr
+          name: test_broken_links_docs_pr
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+      - test_e2e_docs:
+          <<: *only_pr
+          name: test_e2e_docs_pr
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+      - approve_publish_npm_pr:
+          type: approval
+          <<: *only_pr
+          requires:
+            - build_components
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_pr
+      - publish_npm:
+          <<: *only_pr
+          name: publish_npm_pr
+          context: ncu-product-platforms-context
+          publish_dev: true
+          requires:
+            - approve_publish_npm_pr
       - no_visual_changes:
           <<: *only_pr
           type: approval
@@ -1033,14 +1039,14 @@ workflows:
           <<: *only_pr
           context: ncu-product-platforms-context
           requires:
-            - build_docs
+            - build_docs_pr_with_no_base_url
             - install_cypress
             - test_visual_comps
       - test_visual_docs_2:
           <<: *only_pr
           context: ncu-product-platforms-context
           requires:
-            - build_docs
+            - build_docs_pr_with_no_base_url
             - install_cypress
             - docs_visual_changes
       - can_i_merge_checker:
@@ -1082,10 +1088,11 @@ workflows:
           environment: pr
           requires:
             - init_aws
-      - build_docs_pr:
+      - build_docs:
           <<: *only_pr
+          <<: *require_dep
           name: build_docs_pr
-          context: ncu-newskit-site-dev
+          context: ncu-newskit-site-pr
           requires:
             - build_icons
       - push_s3:
@@ -1103,26 +1110,44 @@ workflows:
           requires:
             - deploy_to_s3
 
-      # PR & Develop jobs
+      # develop jobs
+      - build_docs:
+          <<: *only_develop
+          <<: *require_dep
+          name: build_docs_dev
+          context: ncu-newskit-site-dev
+          requires:
+            - build_icons
+      - test_broken_links_docs:
+          <<: *only_develop
+          name: test_broken_links_docs_dev
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_dev
+      - test_e2e_docs:
+          <<: *only_develop
+          name: test_e2e_docs_dev
+          context: ncu-newskit-site-dev
+          requires:
+            - build_docs_dev
+            - install_cypress
       - approve_publish_npm_dev:
           type: approval
-          <<: *only_pr_and_develop
+          <<: *only_develop
           requires:
             - build_components
             - lint
             - test_unit_comps
             - test_unit_docs
             - test_e2e_comps
-            - test_e2e_docs
+            - test_e2e_docs_dev
       - publish_npm:
-          <<: *only_pr_and_develop
+          <<: *only_develop
           name: publish_npm_dev
           context: ncu-product-platforms-context
           publish_dev: true
           requires:
             - approve_publish_npm_dev
-
-      # develop jobs
       - build_push_docker_ecr:
           name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context
@@ -1133,7 +1158,7 @@ workflows:
             - test_unit_comps
             - test_unit_docs
             - test_e2e_comps
-            - test_e2e_docs
+            - test_e2e_docs_dev
       - eks_flux_deploy:
           name: eks_flux_deploy_dev
           context: ncu-newskit-site-dev
@@ -1153,16 +1178,17 @@ workflows:
           type: approval
           requires:
             - eks_kubectl_deploy_dev
-      - build_docs_prod:
+      - build_docs:
           <<: *only_develop
-          name: 'build_docs_prod'
+          name: build_docs_prod_link
+          context: ncu-newskit-site-prod
           requires:
             - approve_publish_docs
       - build_push_docker_ecr:
           name: build_push_docker_ecr_prod
           context: ncu-product-platforms-context
           requires:
-            - build_docs_prod
+            - build_docs_prod_link
       - eks_flux_deploy:
           <<: *only_develop
           name: eks_flux_deploy_dev_to_prod
@@ -1206,6 +1232,26 @@ workflows:
       - create_release_candidate:
           <<: *only_trigger_release
           context: ncu-product-platforms-context
+      - build_docs:
+          <<: *only_release
+          <<: *require_dep
+          name: build_docs_stage
+          context: ncu-newskit-site-stage
+          requires:
+            - build_icons
+      - test_broken_links_docs:
+          <<: *only_release
+          name: test_broken_links_docs_stage
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_stage
+      - test_e2e_docs:
+          <<: *only_release
+          name: test_e2e_docs_stage
+          context: ncu-newskit-site-stage
+          requires:
+            - build_docs_stage
+            - install_cypress
       - build_push_docker_ecr:
           name: build_push_docker_ecr_release
           context: ncu-product-platforms-context
@@ -1217,7 +1263,7 @@ workflows:
             - test_unit_comps
             - test_unit_docs
             - test_e2e_comps
-            - test_e2e_docs
+            - test_e2e_docs_stage
       - eks_flux_deploy:
           name: eks_flux_deploy_staging
           context: ncu-newskit-site-stage
@@ -1241,6 +1287,26 @@ workflows:
           requires:
             - init_aws
       # main jobs
+      - build_docs:
+          <<: *only_main
+          <<: *require_dep
+          name: build_docs_prod
+          context: ncu-newskit-site-prod
+          requires:
+            - build_icons
+      - test_broken_links_docs:
+          <<: *only_main
+          name: test_broken_links_docs_prod
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_prod
+      - test_e2e_docs:
+          <<: *only_main
+          name: test_e2e_docs_prod
+          context: ncu-newskit-site-prod
+          requires:
+            - build_docs_prod
+            - install_cypress
       - publish_npm:
           context: ncu-product-platforms-context
           <<: *only_main
@@ -1249,7 +1315,7 @@ workflows:
             - test_unit_comps
             - test_unit_docs
             - test_e2e_comps
-            - test_e2e_docs
+            - test_e2e_docs_prod
             - build_components
       - eks_flux_deploy:
           name: eks_flux_deploy_prod
