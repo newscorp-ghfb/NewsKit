@@ -92,7 +92,8 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
               for this handler to work). You can also create your own handlers,
               for example, if you require forwarding events to a different tag
               manager.
-              <Block spaceStack="space050" />
+              <br />
+              <br />
               As well as the above handlers, NewsKit also provides a middleware
               composition system to allow for operations on events before they
               reach a handler. For example, if you wanted to filter events to
@@ -249,7 +250,8 @@ const MyPage = (
               be a different length or even empty if necessary, though it is
               recommended that middleware functions are pure and do not mutate
               the array or events.
-              <Block spaceStack="space070" />
+              <br />
+              <br />
               In the example below, filter middleware is used to pass only
               specific events to specific handlers.
             </>
