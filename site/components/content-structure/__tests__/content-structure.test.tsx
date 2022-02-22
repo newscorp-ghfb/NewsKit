@@ -15,14 +15,14 @@ import {
 describe(`Content Section`, () => {
   test('renders with children', () => {
     const fragment = renderToFragmentWithTheme(ContentSection, {
-      children: () => <div>Content Section custom react component</div>,
+      children: <div>Content Section custom react component</div>,
     });
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders without section name', () => {
     const fragment = renderToFragmentWithTheme(ContentSection, {
-      children: () => <div>Content Section custom react component</div>,
+      children: <div>Content Section custom react component</div>,
       sectionName: 'Content Section Name',
     });
     expect(fragment).toMatchSnapshot();
@@ -78,9 +78,7 @@ describe(`Content Section`, () => {
 
       test('renders with children only', () => {
         const fragment = renderToFragmentWithTheme(Component, {
-          children: () => (
-            <div>{`${componentName}`} custom react component</div>
-          ),
+          children: <div>{`${componentName}`} custom react component</div>,
         });
         expect(fragment).toMatchSnapshot();
       });
@@ -98,7 +96,7 @@ describe(`Content Section`, () => {
         const fragment = renderToFragmentWithTheme(Component, {
           ...(isPrimary ? tocAttributes : {}),
           headline: `${componentName} headline`,
-          children: () => <div>Content Primary custom react component</div>,
+          children: <div>Content Primary custom react component</div>,
         });
         expect(fragment).toMatchSnapshot();
       });
@@ -106,9 +104,7 @@ describe(`Content Section`, () => {
       test('renders with description and children', () => {
         const fragment = renderToFragmentWithTheme(Component, {
           description: `${componentName} description`,
-          children: () => (
-            <div>{`${componentName}`} custom react component</div>
-          ),
+          children: <div>{`${componentName}`} custom react component</div>,
         });
         expect(fragment).toMatchSnapshot();
       });
@@ -118,9 +114,7 @@ describe(`Content Section`, () => {
           ...(isPrimary ? tocAttributes : {}),
           headline: `${componentName} headline`,
           description: `${componentName} description`,
-          children: () => (
-            <div>{`${componentName}`} custom react component</div>
-          ),
+          children: <div>{`${componentName}`} custom react component</div>,
         });
         expect(fragment).toMatchSnapshot();
       });

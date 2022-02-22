@@ -15,7 +15,7 @@ const PageIntroductionContainer = styled.div`
   ${getSizingCssFromTheme('marginBottom', 'sizing090')}
 `;
 
-export default ({path, ...props}: LayoutProps) => (
+const ContactUs = ({path, ...props}: LayoutProps) => (
   <Layout {...props} path={`${path}-new`}>
     <HeadNextSeo
       title="Contact us"
@@ -83,3 +83,5 @@ export default ({path, ...props}: LayoutProps) => (
     </ComponentPageCell>
   </Layout>
 );
+
+export default ContactUs;

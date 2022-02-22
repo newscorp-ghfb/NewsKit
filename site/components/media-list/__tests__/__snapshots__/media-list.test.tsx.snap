@@ -1555,7 +1555,7 @@ exports[`Media List renders with feature cardscards 1`] = `
                         <h1
                           class="nk-headline-heading emotion-13"
                         >
-                          Feature Card
+                          Feature Card 1
                         </h1>
                       </section>
                     </a>
@@ -1651,7 +1651,7 @@ exports[`Media List renders with feature cardscards 1`] = `
                           <h1
                             class="nk-headline-heading emotion-13"
                           >
-                            Feature Card
+                            Feature Card 1
                           </h1>
                         </section>
                       </a>
@@ -1739,7 +1739,7 @@ exports[`Media List renders with feature cardscards 1`] = `
                       <h1
                         class="nk-headline-heading emotion-13"
                       >
-                        Feature Card
+                        Feature Card 2
                       </h1>
                     </section>
                   </a>

@@ -18,15 +18,15 @@ const designCards = [
     title: 'Design Overview',
     description:
       'Everything you need to know about using NewsKit to design digital products.',
-    href: '/getting-started/code/design-overview',
+    href: '/getting-started/design/design-overview',
   },
-  // {
-  //   media: getIllustrationComponent('guides/overview/design-quickstart'),
-  //   title: 'Design Quickstart Guide',
-  //   description:
-  //     'A step by step guide to get you up and running using NewsKit.',
-  //   href: '/getting-started/code/design-quickstart',
-  // },
+  {
+    media: getIllustrationComponent('guides/design-quickstart/hero'),
+    title: 'Design Quickstart Guide',
+    description:
+      'A step by step guide to get you up and running using NewsKit.',
+    href: '/getting-started/design/design-quickstart',
+  },
 ];
 
 const codeCards = [
@@ -53,7 +53,7 @@ const codeCards = [
   },
 ];
 
-export default (layoutProps: LayoutProps) => (
+const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     <HeadNextSeo
       title="Guides overview"
@@ -94,3 +94,5 @@ export default (layoutProps: LayoutProps) => (
     </Grid>
   </Layout>
 );
+
+export default Overview;

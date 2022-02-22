@@ -12,7 +12,7 @@ describe('Fieldset', () => {
   test('should render tags correctly', () => {
     const props: FieldsetProps = {
       children: [
-        <label htmlFor="search">
+        <label key="1" htmlFor="search">
           <input type="text" id="search" name="search" />
           Search input:
         </label>,
@@ -27,7 +27,7 @@ describe('Fieldset', () => {
     const props: FieldsetProps = {
       legend: 'Search Legend',
       children: [
-        <label htmlFor="search">
+        <label key="1" htmlFor="search">
           <input type="text" id="search" name="search" />
           Search input:
         </label>,
@@ -50,7 +50,7 @@ describe('Fieldset', () => {
           },
         },
         children: [
-          <label htmlFor="search">
+          <label key="1" htmlFor="search">
             <input type="text" id="search" name="search" />
             Search input:
           </label>,
@@ -66,7 +66,7 @@ describe('Fieldset', () => {
     const props: FieldsetProps = {
       legend: () => <button type="button">Legend as a button</button>,
       children: [
-        <label htmlFor="search">
+        <label key="1" htmlFor="search">
           <input type="text" id="search" name="search" />
           Search input:
         </label>,
@@ -102,7 +102,7 @@ describe('Fieldset', () => {
     const props: FieldsetProps = {
       legend: 'Search Legend',
       children: [
-        <label htmlFor="search">
+        <label key="1" htmlFor="search">
           <input type="text" id="search" name="search" />
           Search input:
         </label>,
@@ -128,10 +128,10 @@ describe('Fieldset', () => {
         legend: `${size} legend`,
         size: size as 'small' | 'medium' | 'large',
         children: [
-          <FormInput name={`input-text-field-${size}`}>
+          <FormInput key="1" name={`input-text-field-${size}`}>
             <FormInputTextField />
           </FormInput>,
-          <FormInput name={`input-checkbox-${size}`}>
+          <FormInput key="2" name={`input-checkbox-${size}`}>
             <FormInputCheckbox label={`Agree with T&C ${size}`} value="tc" />
           </FormInput>,
         ],

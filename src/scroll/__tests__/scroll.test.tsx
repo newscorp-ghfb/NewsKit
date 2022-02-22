@@ -297,7 +297,7 @@ describe('ScrollSnapAlignment', () => {
       Scroll,
       {
         children: [
-          <>
+          <React.Fragment key="1">
             <ScrollSnapAlignment>
               <div>1</div>
             </ScrollSnapAlignment>
@@ -310,7 +310,7 @@ describe('ScrollSnapAlignment', () => {
               <div>3</div>
             </ScrollSnapAlignment>
             ,
-          </>,
+          </React.Fragment>,
         ],
         snapAlign: 'start',
       },
@@ -325,7 +325,7 @@ describe('ScrollSnapAlignment', () => {
       Scroll,
       {
         children: [
-          <>
+          <React.Fragment key="1">
             <ScrollSnapAlignment>
               <div>1</div>
             </ScrollSnapAlignment>
@@ -338,7 +338,7 @@ describe('ScrollSnapAlignment', () => {
               <div>3</div>
             </ScrollSnapAlignment>
             ,
-          </>,
+          </React.Fragment>,
         ],
         vertical: true,
         snapAlign: 'start',

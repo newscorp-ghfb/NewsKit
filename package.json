@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
@@ -136,7 +136,7 @@
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-cup": "^2.0.1",
     "eslint-plugin-header": "^3.0.0",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
@@ -151,6 +151,7 @@
     "isomorphic-fetch": "^2.2.1",
     "jest": "^27.0.6",
     "jest-dom": "^4.0.0",
+    "jest-fail-on-console": "^2.2.1",
     "jest-junit": "^11.1.0",
     "jest-matcher-utils": "^27.0.6",
     "jest-matchmedia-mock": "^1.1.0",

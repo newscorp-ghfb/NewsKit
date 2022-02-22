@@ -5059,6 +5059,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4 .nk-headline-heading {
+  color: #2E2E2E;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -5176,6 +5177,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   display: inline;
   font: inherit;
   margin: 0;
+  color: #2E2E2E;
   -webkit-text-decoration: none;
   text-decoration: none;
 }

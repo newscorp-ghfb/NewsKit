@@ -1,3 +1,4 @@
+import React from 'react';
 import {RelatedComponentsSection, RelatedComponentsSectionProps} from '..';
 import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 
@@ -14,6 +15,10 @@ jest.mock('../../../utils/get-route-object.ts', () => ({
     description: 'Here lies the description for the related component',
     media: 'static/placeholder-16x9.png',
   })),
+}));
+
+jest.mock('../../../components/illustrations/illustration-loader', () => ({
+  getIllustrationComponent: jest.fn().mockReturnValue(() => <div>Mock</div>),
 }));
 
 describe('RelatedComponentsSection', () => {

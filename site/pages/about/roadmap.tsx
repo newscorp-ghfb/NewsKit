@@ -16,8 +16,9 @@ const PageIntroductionContainer = styled.div`
   ${getSizingCssFromTheme('marginBottom', 'sizing090')}
 `;
 
-export default ({path, ...props}: LayoutProps) => (
-  //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
+const Roadmap = (
+  {path, ...props}: LayoutProps, //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
+) => (
   <Layout {...props} path={`${path}-new`}>
     <HeadNextSeo
       title="Roadmap"
@@ -33,7 +34,7 @@ export default ({path, ...props}: LayoutProps) => (
         type="About"
         name="Roadmap"
         introduction="NewsKit’s Design System team is busy building and planning to help you
-          build better products faster."
+        build better products faster."
         hero={{illustration: 'components/hero-roadmap-illustration'}}
       />
     </PageIntroductionContainer>
@@ -69,3 +70,5 @@ export default ({path, ...props}: LayoutProps) => (
     </ComponentPageCell>
   </Layout>
 );
+
+export default Roadmap;

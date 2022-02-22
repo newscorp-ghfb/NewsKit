@@ -22,7 +22,7 @@ const PlaygroundContainer = styled.div`
   justify-content: center;
 `;
 
-export default (layoutProps: LayoutProps) => (
+const ShareBarComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'ShareBar',
@@ -323,3 +323,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default ShareBarComponent;
