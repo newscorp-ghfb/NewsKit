@@ -20,4 +20,13 @@ module.exports = {
     '/src/icons/filled/',
     '/src/icons/outlined/',
   ],
+  coverageDirectory: './coverage',
+  coverageThreshold: {
+    'src/**': {
+      branches: 100,
+      functions: 100,
+      lines: 100,
+      statements: 100,
+    },
+  },
 };

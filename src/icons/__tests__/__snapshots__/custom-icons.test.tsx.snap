@@ -831,7 +831,7 @@ exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicat
 </DocumentFragment>
 `;
 
-exports[`customToNewsKit renders the icon from theme override 1`] = `
+exports[`customToNewsKit renders icon with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2E2E2E;
