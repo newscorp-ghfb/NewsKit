@@ -86,9 +86,9 @@ exports[`UnorderedList renders different types of children 1`] = `
 
 .emotion-10 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -179,6 +179,9 @@ exports[`UnorderedList renders different types of children 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -322,6 +325,9 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
   overflow: hidden;
   color: #2E2E2E;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -331,6 +337,9 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
   height: 8px;
   color: #2E2E2E;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-6 {
@@ -517,6 +526,9 @@ exports[`UnorderedList renders with custom list item marker with different size 
   overflow: hidden;
   color: #2E2E2E;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -526,6 +538,9 @@ exports[`UnorderedList renders with custom list item marker with different size 
   height: 16px;
   color: #2E2E2E;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-6 {
@@ -908,6 +923,9 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
   overflow: hidden;
   color: #2E2E2E;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -917,6 +935,9 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
   height: 8px;
   color: #2E2E2E;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-6 {
@@ -1103,6 +1124,9 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
   overflow: hidden;
   color: #2E2E2E;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -1112,6 +1136,9 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
   height: 8px;
   color: #2E2E2E;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-6 {

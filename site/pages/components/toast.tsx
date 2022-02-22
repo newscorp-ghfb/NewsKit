@@ -21,7 +21,7 @@ const PlaygroundContainer = styled.div`
   justify-content: center;
 `;
 
-export default (layoutProps: LayoutProps) => (
+const ToastComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Toast',
@@ -232,12 +232,12 @@ export default (layoutProps: LayoutProps) => (
         {
           title: 'Position',
           description: `
-              A Toast can be positioned to appear and hide from the following
-              positions on the screen:
-              top-left | top-center  |
-              top-right  |  bottom-left  |
-              bottom-center |  bottom-right
-           `,
+            A Toast can be positioned to appear and hide from the following
+            positions on the screen:
+            top-left | top-center  |
+            top-right  |  bottom-left  |
+            bottom-center |  bottom-right
+         `,
           media: getIllustrationComponent(
             'components/toast/toast-options-position-illustration',
           ),
@@ -653,3 +653,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default ToastComponent;

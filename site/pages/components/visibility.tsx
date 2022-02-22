@@ -80,7 +80,7 @@ const cards = [
   },
 ];
 
-export default (layoutProps: LayoutProps) => (
+const VisibilityComponent = (layoutProps: LayoutProps) => (
   <ComponentPageBasicTemplate
     headTags={{
       title: 'Visible, Hidden & ScreenReaderOnly',
@@ -331,3 +331,5 @@ export default (layoutProps: LayoutProps) => (
     />
   </ComponentPageBasicTemplate>
 );
+
+export default VisibilityComponent;

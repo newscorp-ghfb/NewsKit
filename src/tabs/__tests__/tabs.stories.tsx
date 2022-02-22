@@ -1238,3 +1238,160 @@ export const StoryTabsWithScrollOverrides = () => {
   );
 };
 StoryTabsWithScrollOverrides.storyName = 'tabs-with-scroll-overrides';
+
+const transitionTheme = createTheme({
+  name: 'my-custom-tab-theme',
+  overrides: {
+    transitionPresets: {
+      customBackgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '100ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+      customFontColorChange: {
+        base: {
+          transitionProperty: 'color',
+          transitionDuration: '100ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+    },
+    stylePresets: {
+      tabCustomPreset: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.amber070}}',
+          color: '{{colors.green040}}',
+        },
+      },
+    },
+  },
+});
+
+export const StoryTabsTransitions = () => (
+  <>
+    <StorybookHeading>Tabs item with Transition Presets</StorybookHeading>
+    <StorybookSubHeading>Default Transition Preset</StorybookSubHeading>
+    <ThemeProvider theme={transitionTheme}>
+      <Tabs>
+        <Tab label="One transition preset">Content 1</Tab>
+        <Tab label="Two transition presets">Content 2</Tab>
+      </Tabs>
+      <StorybookSubHeading>
+        Tab items with Transition Preset overrides
+      </StorybookSubHeading>
+      <Tabs>
+        <Tab
+          overrides={{
+            stylePreset: 'tabCustomPreset',
+            transitionPreset: 'customBackgroundColorChange',
+          }}
+          label="One transition preset"
+        >
+          Content 1
+        </Tab>
+        <Tab
+          overrides={{
+            stylePreset: 'tabCustomPreset',
+            transitionPreset: [
+              'customBackgroundColorChange',
+              'customFontColorChange',
+            ],
+          }}
+          label="Two transition presets"
+        >
+          Content 2
+        </Tab>
+      </Tabs>
+      <StorybookSubHeading>
+        Tab items with overrides using extend on transitionDuration
+      </StorybookSubHeading>
+      <Tabs>
+        <Tab
+          label="Using extend prop on one preset"
+          overrides={{
+            stylePreset: 'tabCustomPreset',
+            transitionPreset: {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration050}}',
+              },
+            },
+          }}
+        >
+          Content 1
+        </Tab>
+        <Tab
+          label="Using extend prop on one preset"
+          overrides={{
+            stylePreset: 'tabCustomPreset',
+            transitionPreset: {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration050}}',
+              },
+            },
+          }}
+        >
+          Content 2
+        </Tab>
+      </Tabs>
+      <StorybookSubHeading>
+        Tab items with overrides on two presets using extend
+      </StorybookSubHeading>
+      <Tabs>
+        <Tab
+          label="Using extend prop on two presets"
+          overrides={{
+            stylePreset: 'tabCustomPreset',
+            transitionPreset: [
+              {
+                extend: 'backgroundColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration030}}',
+                },
+              },
+              {
+                extend: 'customFontColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration050}}',
+                },
+              },
+            ],
+          }}
+        >
+          Content 1
+        </Tab>
+        <Tab
+          label="Using extend prop on two presets"
+          overrides={{
+            stylePreset: 'tabCustomPreset',
+            transitionPreset: [
+              {
+                extend: 'backgroundColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration030}}',
+                },
+              },
+              {
+                extend: 'customFontColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration050}}',
+                },
+              },
+            ],
+          }}
+        >
+          Content 2
+        </Tab>
+      </Tabs>
+    </ThemeProvider>
+  </>
+);
+StoryTabsTransitions.storyName = 'tabs-transitions';
