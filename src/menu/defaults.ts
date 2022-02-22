@@ -7,6 +7,7 @@ export default {
     title: {
       typographyPreset: 'utilityHeading030',
       stylePreset: 'inkSubtle',
+      transitionPreset: 'backgroundColorChange',
       spaceInline: 'space050',
     },
   },
@@ -14,12 +15,14 @@ export default {
     horizontal: {
       minHeight: 'sizing080',
       stylePreset: 'menuItemHorizontal',
+      transitionPreset: 'backgroundColorChange',
       spaceInline: 'space020',
       spaceInset: 'spaceInsetSquish030',
     },
     vertical: {
       minHeight: 'sizing080',
       stylePreset: 'menuItemVertical',
+      transitionPreset: 'backgroundColorChange',
       spaceInline: 'space020',
       spaceInset: 'spaceInsetSquish030',
     },

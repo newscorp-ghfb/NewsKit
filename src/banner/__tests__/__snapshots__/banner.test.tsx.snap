@@ -754,9 +754,9 @@ exports[`Banner renders with content as string and link 1`] = `
 
 .emotion-9 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -1101,9 +1101,9 @@ exports[`Banner renders with content as string and link 1`] = `
 
 .emotion-9 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -1948,6 +1948,9 @@ exports[`Banner renders with icon 1`] = `
   overflow: hidden;
   color: #FFFFFF;
   fill: #FFFFFF;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -1957,6 +1960,9 @@ exports[`Banner renders with icon 1`] = `
   height: 24px;
   color: #FFFFFF;
   fill: #FFFFFF;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-10 {
@@ -2247,6 +2253,9 @@ exports[`Banner renders with icon 1`] = `
   overflow: hidden;
   color: #FFFFFF;
   fill: #FFFFFF;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -2256,6 +2265,9 @@ exports[`Banner renders with icon 1`] = `
   height: 24px;
   color: #FFFFFF;
   fill: #FFFFFF;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-10 {
@@ -5010,6 +5022,9 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -5927,6 +5942,9 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }

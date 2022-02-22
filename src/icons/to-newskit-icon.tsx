@@ -3,15 +3,25 @@ import {EmotionIconProps} from '@emotion-icons/emotion-icon';
 import {withTheme} from '../theme';
 import {NewsKitIconProps, NewsKitIcon, SvgProps} from './types';
 import {getSizingCssFromTheme, getStylePreset, styled} from '../utils/style';
+import {getTransitionPresetFromTheme} from '../utils/style/transition-preset';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const renderIconStylePreset = (overridesOnly: boolean) => (props: any) => {
   if (!overridesOnly || props?.overrides?.stylePreset) {
-    return getStylePreset('icons', '', {
+    const stylePreset = getStylePreset('icons', '', {
       isSvg: true,
     })(props);
+
+    const transitionPreset = getTransitionPresetFromTheme('iconColorChange')(
+      props,
+    );
+
+    return {
+      ...stylePreset,
+      ...transitionPreset,
+    };
   }
   return {};
 };

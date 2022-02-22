@@ -42,6 +42,14 @@ const getTheme = (baseTheme?: UncompiledTheme) =>
             iconColor: '{{colors.amber050}}',
           },
         },
+        iconCustomWithTransitions: {
+          base: {
+            iconColor: '{{colors.amber050}}',
+          },
+          hover: {
+            iconColor: '{{colors.green050}}',
+          },
+        },
       },
     },
   });
@@ -251,3 +259,21 @@ export const StoryOverriddenIcons = () => {
   );
 };
 StoryOverriddenIcons.storyName = 'overridden-icons';
+
+export const StoryIconsTransition = () => (
+  <>
+    {Object.values([IconFilledAccountBalance]).map((Icon: NewsKitIcon) => (
+      <ThemeProvider theme={getTheme()}>
+        <Constrain>
+          <StorybookSubHeading>Icon with transition</StorybookSubHeading>
+          <Icon
+            overrides={{
+              stylePreset: 'iconCustomWithTransitions',
+            }}
+          />
+        </Constrain>
+      </ThemeProvider>
+    ))}
+  </>
+);
+StoryIconsTransition.storyName = 'icons-transition-overrides';

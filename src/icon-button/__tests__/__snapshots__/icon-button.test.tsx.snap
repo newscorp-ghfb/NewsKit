@@ -232,6 +232,9 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -368,6 +371,9 @@ exports[`IconButton renders Large Icon Button 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -505,6 +511,9 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -642,6 +651,9 @@ exports[`IconButton renders Small Icon Button 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -779,6 +791,9 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -921,6 +936,9 @@ exports[`IconButton renders with different style preset 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }

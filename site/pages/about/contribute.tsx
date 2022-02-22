@@ -70,6 +70,10 @@ const Contribute = (
     <HeadNextSeo
       title="Contribute"
       description="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
+      image={{
+        url: 'social/about.png',
+        alt: 'Contribute',
+      }}
     />
 
     <PageIntroductionContainer>

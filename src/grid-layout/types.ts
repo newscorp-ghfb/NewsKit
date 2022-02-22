@@ -7,6 +7,8 @@ export type GridLayoutItemProps = BlockProps & {
   order?: MQ<number>;
   justifySelf?: MQ<string>;
   alignSelf?: MQ<string>;
+  column?: MQ<string>;
+  row?: MQ<string>;
 };
 
 export type AreasMap = {
