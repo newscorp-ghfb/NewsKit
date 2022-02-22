@@ -14,7 +14,7 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Link} from '../../components/link';
 
-export default (layoutProps: LayoutProps) => (
+const StructuredListComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'StructuredList',
@@ -194,7 +194,7 @@ export default (layoutProps: LayoutProps) => (
         {
           title: 'Alignment',
           description: `On XS> breakpoints, the content of the third cell align to the vertical center.
-           On MD> breakpoints, the content of the third cell align to the top.`,
+         On MD> breakpoints, the content of the third cell align to the top.`,
         },
       ],
     }}
@@ -346,21 +346,21 @@ export default (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'structuredListItem',
               description: `If provided, this overrides the stylePreset applied to the StructuredListItem's most
-                outer container. Can be used to override the background color of the StructuredListItem.`,
+              outer container. Can be used to override the background color of the StructuredListItem.`,
             },
             {
               attribute: 'minHeight',
               type: 'MQ<string>',
               default: 'sizing100',
               description: `If provided, this overrides the minHeight applied to the StructuredListItem's most
-                outer container.`,
+              outer container.`,
             },
             {
               attribute: 'spaceInset',
               type: 'MQ<string>',
               default: 'spaceInsetStretch040',
               description: `If provided, this overrides the spaceInset applied to the StructuredListItem's most
-                outer container`,
+              outer container`,
             },
             {
               attribute: 'icon.size',
@@ -419,3 +419,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default StructuredListComponent;
