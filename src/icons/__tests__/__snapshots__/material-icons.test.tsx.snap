@@ -7,6 +7,9 @@ exports[`Material icons should render icons with no props IconFilledAccountBalan
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -62,6 +65,9 @@ exports[`Material icons should render icons with no props IconFilledAccountTree 
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -92,6 +98,9 @@ exports[`Material icons should render icons with no props IconOutlinedAccountBal
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -122,6 +131,9 @@ exports[`Material icons should render icons with no props IconOutlinedAccountTre
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -152,6 +164,9 @@ exports[`Material icons should render icons with props IconFilledAccountBalance 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -159,6 +174,9 @@ exports[`Material icons should render icons with props IconFilledAccountBalance 
 .emotion-0.emotion-0 {
   width: 4px;
   height: 4px;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 <svg
@@ -214,6 +232,9 @@ exports[`Material icons should render icons with props IconFilledAccountTree 1`]
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -221,6 +242,9 @@ exports[`Material icons should render icons with props IconFilledAccountTree 1`]
 .emotion-0.emotion-0 {
   width: 4px;
   height: 4px;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 <svg
@@ -251,6 +275,9 @@ exports[`Material icons should render icons with props IconOutlinedAccountBalanc
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -258,6 +285,9 @@ exports[`Material icons should render icons with props IconOutlinedAccountBalanc
 .emotion-0.emotion-0 {
   width: 4px;
   height: 4px;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 <svg
@@ -288,6 +318,9 @@ exports[`Material icons should render icons with props IconOutlinedAccountTree 1
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -295,6 +328,9 @@ exports[`Material icons should render icons with props IconOutlinedAccountTree 1
 .emotion-0.emotion-0 {
   width: 4px;
   height: 4px;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 <svg
