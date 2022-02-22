@@ -53,7 +53,7 @@ const shadowRows = getTokenType(newskitLightTheme.shadows, 'shadow').map(
   }),
 );
 
-export default (layoutProps: LayoutProps) => (
+const Shadows = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
       title: 'Shadows',
@@ -98,3 +98,5 @@ export default (layoutProps: LayoutProps) => (
     </ComponentPageCell>
   </FoundationPageTemplate>
 );
+
+export default Shadows;

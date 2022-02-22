@@ -9,7 +9,7 @@ module.exports = {
   parserOptions: {
     project: 'tsconfig.eslint.json',
   },
-  plugins: ['cup', 'header', 'prettier', 'react-hooks'],
+  plugins: ['cup', 'header', 'prettier', 'react-hooks', 'import'],
   env: {
     jest: true,
   },
@@ -94,6 +94,19 @@ module.exports = {
       files: ['cypress/**/*.spec.js'],
       env: {
         mocha: true,
+      },
+    },
+    {
+      files: ['site/**/*.tsx'],
+      rules: {
+        'import/no-anonymous-default-export': [
+          'error',
+          {
+            allowArrowFunction: false,
+            allowAnonymousClass: false,
+            allowAnonymousFunction: false,
+          },
+        ],
       },
     },
   ],

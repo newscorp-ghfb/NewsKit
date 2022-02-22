@@ -63,8 +63,9 @@ const cards = [
   },
 ];
 
-export default ({path, ...props}: LayoutProps) => (
-  //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
+const Contribute = (
+  {path, ...props}: LayoutProps, //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
+) => (
   <Layout {...props} path={`${path}-new`}>
     <HeadNextSeo
       title="Contribute"
@@ -85,8 +86,8 @@ export default ({path, ...props}: LayoutProps) => (
         <ContentPrimary
           headline="How to contribute"
           description="There are a lot of ways to contribute to the NewsKit community and
-          Design System; from submitting a proposal to designing a new feature for
-          other users to benefit from."
+        Design System; from submitting a proposal to designing a new feature for
+        other users to benefit from."
           showSeparator
         >
           <MediaList layout="3-span" cardType="feature" cards={cards} />
@@ -307,3 +308,5 @@ export default ({path, ...props}: LayoutProps) => (
     </ComponentPageCell>
   </Layout>
 );
+
+export default Contribute;

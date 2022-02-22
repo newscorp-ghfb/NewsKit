@@ -57,7 +57,7 @@ const breakpointsRows = Object.entries(bps).map(([tokenName, tokenValue]) => ({
   usage: USAGE_DESCRIPTION[tokenName] || '',
 }));
 
-export default (layoutProps: LayoutProps) => (
+const Breakpoints = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
       title: 'Breakpoints',
@@ -105,16 +105,16 @@ export default (layoutProps: LayoutProps) => (
             {`import {createTheme} from 'newskit'; 
 
 const theme = createTheme({ 
-    name: 'theme-with-custom-breakpoints', 
-    overrides: { 
-        breakpoints: { 
-            xs: 0, // 0-359 
-            sm: 360, 
-            md: 540, 
-            lg: 720, 
-            xl: 1080, 
-        } 
-    }, 
+  name: 'theme-with-custom-breakpoints', 
+  overrides: { 
+      breakpoints: { 
+          xs: 0, // 0-359 
+          sm: 360, 
+          md: 540, 
+          lg: 720, 
+          xl: 1080, 
+      } 
+  }, 
 });`}
           </Code>
         </ContentSecondary>
@@ -133,19 +133,19 @@ const theme = createTheme({
               {
                 title: 'Fluid',
                 description: `
-                  Fluid layouts are calculated to their relative size, and
-                  stretch as the viewport is resized. For example, if you set
-                  the width of your layout to 100% width, each column will only
-                  be calculated to its relative size., and will stretch as the
-                  browser is resized.
-                  `,
+                Fluid layouts are calculated to their relative size, and
+                stretch as the viewport is resized. For example, if you set
+                the width of your layout to 100% width, each column will only
+                be calculated to its relative size., and will stretch as the
+                browser is resized.
+                `,
                 media: getIllustrationComponent('theme/breakpoints/fluid'),
               },
               {
                 title: 'Fixed',
                 description: `
-                  Fixed layouts do not respond to the size of the screen (viewport) but remain at a fixed width at a specific numerical value e.g. 1920px.
-                  `,
+                Fixed layouts do not respond to the size of the screen (viewport) but remain at a fixed width at a specific numerical value e.g. 1920px.
+                `,
                 media: getIllustrationComponent('theme/breakpoints/fixed'),
               },
             ]}
@@ -210,14 +210,16 @@ const theme = createTheme({
           description="This example below shows different typography presets being used at different breakpoint."
         >
           <Code>{`
-    typographyPreset: {
-        xs: 'editorialHeadline010',
-        md: 'editorialHeadline020',
-        lg: 'editorialHeadline030',
-      }
-    `}</Code>
+  typographyPreset: {
+      xs: 'editorialHeadline010',
+      md: 'editorialHeadline020',
+      lg: 'editorialHeadline030',
+    }
+  `}</Code>
         </ContentSecondary>
       </ContentSection>
     </ComponentPageCell>
   </FoundationPageTemplate>
 );
+
+export default Breakpoints;

@@ -128,7 +128,7 @@ const whatNextCards = [
   },
 ];
 
-export default (layoutProps: LayoutProps) => (
+const EngineeringOverview = (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
       title: 'Engineering overview',
@@ -334,3 +334,5 @@ export default (layoutProps: LayoutProps) => (
     </ComponentPageCell>
   </GuidePageTemplate>
 );
+
+export default EngineeringOverview;
