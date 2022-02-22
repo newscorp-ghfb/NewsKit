@@ -143,14 +143,14 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
             }}
           >
             <>
-              An array of event handler functions; an event handler function
+              an array of event handler functions; an event handler function
               simply takes an array of events and returns the same. There are
               two handlers provided by NewsKit, a console and Tealium handler
               (exported under <InlineCode>instrumentationHandlers</InlineCode>),
               but you can also pass your own custom handlers.
             </>
             <>
-              An array of event handler functions; an event handler function
+              an array of event handler functions; an event handler function
               simply takes an array of events and returns the same. There are
               two handlers provided by NewsKit, a console and Tealium handler
               (exported under <InlineCode>instrumentationHandlers</InlineCode>),
@@ -309,13 +309,13 @@ const instrumentation = createEventInstrumentation(handlers, {
             }}
           >
             <>
-              Using the NewsKit HOC <InlineCode>withInstrumentation</InlineCode>
+              using the NewsKit HOC <InlineCode>withInstrumentation</InlineCode>
               . This will wrap the component argument in the instrumentation
               context and a <InlineCode>fireEvent</InlineCode> prop will be
               passed to the component.
             </>
             <>
-              Using the NewsKit React hook{' '}
+              using the NewsKit React hook{' '}
               <InlineCode>useInstrumentation</InlineCode>. This will return an
               object containing the <InlineCode>fireEvent</InlineCode> function.
             </>
