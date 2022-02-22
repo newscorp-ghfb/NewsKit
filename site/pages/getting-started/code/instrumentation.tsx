@@ -107,10 +107,7 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
           <InlineMessage role="region" aria-label="Github">
             For more information, users with the relevant access can read the
             internal RFC which lead to this implementation. This can be found on{' '}
-            <Link
-              href="https://github.com/newsuk/nuk-rfcs/blob/master/active/0037-user-interface-event-instrumentation.md"
-              target="_blank"
-            >
+            <Link href="https://github.com/newsuk/nuk-rfcs" target="_blank">
               Github.
             </Link>
           </InlineMessage>
