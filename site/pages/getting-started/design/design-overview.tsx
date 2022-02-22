@@ -69,7 +69,7 @@ const whatNextCards = [
   },
 ];
 
-export default (layoutProps: LayoutProps) => (
+const DesignOverview = (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
       title: 'Design overview | Newskit design system',
@@ -451,3 +451,5 @@ export default (layoutProps: LayoutProps) => (
     </ComponentPageCell>
   </GuidePageTemplate>
 );
+
+export default DesignOverview;

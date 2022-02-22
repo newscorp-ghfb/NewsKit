@@ -45,7 +45,7 @@ const themeOverviewRouteListCards = getCardList(themeRouteList);
 const themePresetsRouteListCards = getCardList(themePresetsRouteList);
 const themeThemingRouteListCards = getCardList(themeThemingRouteList);
 
-export default (layoutProps: LayoutProps) => {
+const Overview = (layoutProps: LayoutProps) => {
   const pageDescription = `NewsKit offers a robust and flexible theming system, 
                           enabling brands to retain a unique identity while building consistent, accessible products.`;
   return (
@@ -106,3 +106,5 @@ export default (layoutProps: LayoutProps) => {
     </Layout>
   );
 };
+
+export default Overview;

@@ -80,14 +80,15 @@ const cards = [
   },
 ];
 
-export default ({path, ...props}: LayoutProps) => (
-  //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
+const Introduction = (
+  {path, ...props}: LayoutProps, //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
+) => (
   <Layout {...props} path={`${path}-new`}>
     <HeadNextSeo
       title="About"
       description="NewsKit provides components, guidelines and standards to enable digital product 
-      teams to create high-quality, consistent products quickly. NewsKit is built on modular design 
-      principles and backed by best practice guidance for design and development."
+    teams to create high-quality, consistent products quickly. NewsKit is built on modular design 
+    principles and backed by best practice guidance for design and development."
     />
 
     <PageIntroductionContainer>
@@ -111,17 +112,17 @@ export default ({path, ...props}: LayoutProps) => (
         <ContentSecondary
           headline="Speed to market"
           description="Upfront research, design and development allows teams to build new
-          features or products quickly and with confidence. Rapid creation
-          translates to the increased pace of innovation."
+        features or products quickly and with confidence. Rapid creation
+        translates to the increased pace of innovation."
         />
 
         <ContentSecondary
           headline="Shared knowledge"
           description="NewsKit is built through collaboration and is available to all.
-          Feedback from a diverse range of consumers produces a more robust,
-          considered and flexible product. In addition, NewsKit allows teams
-          to benefit from the research and experience of other teams and solve
-          problems once."
+        Feedback from a diverse range of consumers produces a more robust,
+        considered and flexible product. In addition, NewsKit allows teams
+        to benefit from the research and experience of other teams and solve
+        problems once."
         />
 
         <ContentSecondary
@@ -143,27 +144,27 @@ export default ({path, ...props}: LayoutProps) => (
         <ContentSecondary
           headline="Sustainability"
           description="NewsKit allows teams to do more with less; components are maintained
-          centrally, enabling teams to achieve incremental upgrades and manage
-          their digital product needs as they grow."
+        centrally, enabling teams to achieve incremental upgrades and manage
+        their digital product needs as they grow."
         />
 
         <ContentSecondary
           headline="Flexibility"
           description="The powerful theming system allows styling to be tailored to the
-          needs of any brand. Themes can be applied globally or per component,
-          enabling visual differences between sections, sub-brands or
-          unlocking user preferences like dark mode or page density settings.
-          In addition, all components are designed to ensure they can be
-          applied to multiple use cases."
+        needs of any brand. Themes can be applied globally or per component,
+        enabling visual differences between sections, sub-brands or
+        unlocking user preferences like dark mode or page density settings.
+        In addition, all components are designed to ensure they can be
+        applied to multiple use cases."
         />
 
         <ContentSecondary
           headline="Consistency"
           description="NewsKit establishes a common language between designer and engineer
-          and applies a systematic approach to all aspects of the interface.
-          Infinitely reusable components and clear guidance around design and
-          engineering best practices enable teams to build consistency across
-          products and teams."
+        and applies a systematic approach to all aspects of the interface.
+        Infinitely reusable components and clear guidance around design and
+        engineering best practices enable teams to build consistency across
+        products and teams."
           showSeparator
         />
       </ContentSection>
@@ -184,3 +185,5 @@ export default ({path, ...props}: LayoutProps) => (
     </ComponentPageCell>
   </Layout>
 );
+
+export default Introduction;
