@@ -4,9 +4,9 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -101,9 +101,9 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -198,9 +198,9 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
