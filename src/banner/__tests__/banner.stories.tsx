@@ -409,7 +409,7 @@ StoryBannerWithOverrides.storyName = 'banner-with-overrides';
 
 export const StoryBannerWithGridAlignment = () => (
   <ThemeProvider theme={myCustomTheme}>
-    <StorybookSubHeading>align to grid</StorybookSubHeading>
+    <StorybookSubHeading>Align to Grid component</StorybookSubHeading>
     <Grid>
       <Cell xs="full-width">Content above the banner</Cell>
     </Grid>
@@ -455,13 +455,13 @@ StoryBannerWithGridAlignment.storyName = 'banner-with-grid-alignment';
 
 export const StoryBannerWithGridLayoutAlignment = () => (
   <ThemeProvider theme={myCustomTheme}>
-    <StorybookSubHeading>align to grid</StorybookSubHeading>
+    <StorybookSubHeading>Align to GridLayout component</StorybookSubHeading>
     <GridLayout>
       <GridLayoutItem>Content above the banner</GridLayoutItem>
     </GridLayout>
     <Banner
-      title="Banner title"
-      aria-label="Banner with content above"
+      title="Banner align to GridLayout component"
+      aria-label="Banner align to GridLayout component"
       overrides={{
         spaceInset: 'space045 space000 space045 space000',
       }}
@@ -480,8 +480,8 @@ export const StoryBannerWithGridLayoutAlignment = () => (
       </GridLayoutItem>
     </GridLayout>
     <Banner
-      title="Banner title"
-      aria-label="Banner with content below"
+      title="Banner align to GridLayout component and offset"
+      aria-label="Banner align to GridLayout component and offset"
       overrides={{
         grid: {props: {xsMargin: 'space000'}},
         cell: {props: {xs: 8, xsOffset: 2}},
