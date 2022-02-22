@@ -71,7 +71,7 @@ const PRINCIPLE_CARDS = [
   },
 ];
 
-export default (layoutProps: LayoutProps) => (
+const Iconography = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
       title: 'Iconography',
@@ -361,3 +361,5 @@ export default (layoutProps: LayoutProps) => (
     </ComponentPageCell>
   </FoundationPageTemplate>
 );
+
+export default Iconography;

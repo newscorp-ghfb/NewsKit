@@ -17,7 +17,7 @@ const BigRedBlock = styled.div`
   background: red;
 `;
 
-export default (layoutProps: LayoutProps) => (
+const GridLayoutComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'GridLayout',
@@ -274,3 +274,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default GridLayoutComponent;

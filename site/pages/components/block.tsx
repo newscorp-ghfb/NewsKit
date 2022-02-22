@@ -15,7 +15,7 @@ const PlaygroundContainer = styled.div`
   justify-content: center;
 `;
 
-export default (layoutProps: LayoutProps) => (
+const BlockComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Block',
@@ -278,3 +278,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default BlockComponent;

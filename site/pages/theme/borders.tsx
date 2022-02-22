@@ -47,7 +47,7 @@ const ExampleSection: React.FC<ExampleSectionProps> = ({
   </ContentSecondary>
 );
 
-export default (layoutProps: LayoutProps) => (
+const Borders = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
       title: 'Borders',
@@ -128,3 +128,5 @@ export default (layoutProps: LayoutProps) => (
     </ComponentPageCell>
   </FoundationPageTemplate>
 );
+
+export default Borders;
