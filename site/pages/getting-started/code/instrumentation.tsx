@@ -165,7 +165,9 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
             events to your handlers.
           </P>
         </ContentPrimary>
+      </ContentSection>
 
+      <ContentSection sectionName="instrumentation provider">
         <ContentSecondary
           headline="Instrumentation provider"
           description={
