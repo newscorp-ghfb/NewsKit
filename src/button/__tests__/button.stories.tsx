@@ -1,6 +1,10 @@
 import * as React from 'react';
 import {Button} from '..';
-import {getColorFromTheme, styled} from '../../utils/style';
+import {
+  getColorFromTheme,
+  getTypographyPresetFromTheme,
+  styled,
+} from '../../utils/style';
 import {ButtonOverrides, ButtonSize} from '../types';
 import {IconFilledEmail} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
@@ -39,6 +43,7 @@ const Label = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  ${getTypographyPresetFromTheme('utilityLabel020')};
 `;
 
 const Spacer = styled.div`
@@ -189,9 +194,7 @@ export const StoryFullAndFixedWidthButton = () => (
     <Container>
       <Border>
         <Spacer>
-          <Button size={ButtonSize.Small} overrides={{width: 'sizing120'}}>
-            Small fixed-width button
-          </Button>
+          <Button size={ButtonSize.Small}>Small fixed-width button</Button>
         </Spacer>
         <Spacer>
           <Button size={ButtonSize.Medium} overrides={{width: 'sizing120'}}>
@@ -446,3 +449,167 @@ export const StoryButtonLink = () => (
   </>
 );
 StoryButtonLink.storyName = 'button-link';
+const myCustomTransitionPresets = createTheme({
+  name: 'my-custom-transition-presets',
+  overrides: {
+    transitionPresets: {
+      customBackgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '500ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+      customBorderColourChange: {
+        base: {
+          transitionProperty: 'border-color',
+          transitionDuration: '500ms',
+          transitionDelay: '0ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+    },
+    stylePresets: {
+      testButtonStylePresetWithBorders: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+          borderColor: '{{colors.blue020}}',
+          borderStyle: 'solid',
+          borderWidth: '1px',
+        },
+        hover: {
+          backgroundColor: '{{colors.amber070}}',
+          borderColor: '{{colors.green040}}',
+        },
+        active: {
+          backgroundColor: '{{colors.interactivePrimary050}}',
+        },
+        disabled: {
+          backgroundColor: '{{colors.interactiveDisabled010}}',
+        },
+        loading: {
+          backgroundColor: '{{colors.interactivePrimary020}}',
+        },
+      },
+    },
+  },
+});
+const buttonStyles: Array<{
+  stylePreset: string;
+  buttonKind: string;
+}> = [
+  {buttonKind: 'Solid', stylePreset: ''},
+  {buttonKind: 'Outlined', stylePreset: 'buttonOutlinedPrimary'},
+  {buttonKind: 'Minimal', stylePreset: 'buttonMinimalPrimary'},
+];
+
+export const StoryButtonWithTransitions = () => (
+  <>
+    <StorybookSubHeading>Button with Transition Presets</StorybookSubHeading>
+    <ThemeProvider theme={myCustomTransitionPresets}>
+      <Container>
+        <StorybookSubHeading>Default Transition Presets</StorybookSubHeading>
+        <Stack
+          flow="horizontal-top"
+          spaceInline="space070"
+          spaceStack="space070"
+        >
+          {buttonStyles.map(buttons => (
+            <Stack spaceInline="space000">
+              <Label>{buttons.buttonKind}</Label>
+              <Button overrides={{stylePreset: buttons.stylePreset}}>
+                Button
+              </Button>
+            </Stack>
+          ))}
+        </Stack>
+
+        <StorybookSubHeading>
+          Button with Transition Preset overrides
+        </StorybookSubHeading>
+        <Stack
+          flow="horizontal-top"
+          spaceInline="space070"
+          spaceStack="space070"
+        >
+          {buttonStyles.map(buttons => (
+            <Stack spaceInline="space000">
+              <Label>{buttons.buttonKind}</Label>
+              <Button
+                overrides={{
+                  stylePreset: buttons.stylePreset,
+                  transitionPreset: 'customBackgroundColorChange',
+                }}
+              >
+                Button
+              </Button>
+            </Stack>
+          ))}
+        </Stack>
+        <StorybookSubHeading>
+          Button with two Transition Preset Overrides
+        </StorybookSubHeading>
+        <Button
+          size={ButtonSize.Medium}
+          overrides={{
+            transitionPreset: [
+              'customBorderColourChange',
+              'customBackgroundColorChange',
+            ],
+            stylePreset: 'testButtonStylePresetWithBorders',
+          }}
+        >
+          Button
+        </Button>
+
+        <StorybookSubHeading>
+          Button with overrides using extend on transitionDuration
+        </StorybookSubHeading>
+        <Button
+          size={ButtonSize.Medium}
+          overrides={{
+            stylePreset: 'testButtonStylePresetWithBorders',
+            transitionPreset: {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration050}}',
+              },
+            },
+          }}
+        >
+          Button
+        </Button>
+        <StorybookSubHeading>
+          Button with overrides on two presets using extend
+        </StorybookSubHeading>
+        <Button
+          size={ButtonSize.Medium}
+          overrides={{
+            transitionPreset: [
+              {
+                extend: 'backgroundColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration030}}',
+                },
+              },
+              {
+                extend: 'borderColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration050}}',
+                },
+              },
+            ],
+            stylePreset: 'testButtonStylePresetWithBorders',
+          }}
+        >
+          Button
+        </Button>
+      </Container>
+    </ThemeProvider>
+  </>
+);
+StoryButtonWithTransitions.storyName = 'button-with-transition';

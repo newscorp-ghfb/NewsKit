@@ -56,7 +56,14 @@ const Overview = (layoutProps: LayoutProps) => {
             themeMode === 'light' ? foundationsThemeLight : foundationsThemeDark
           }
         >
-          <HeadNextSeo title="Theme overview" description={pageDescription} />
+          <HeadNextSeo
+            title="Theme overview"
+            description={pageDescription}
+            image={{
+              url: 'social/theme.png',
+              alt: 'Theme overview',
+            }}
+          />
 
           <HeaderIndex title="Theme" media={HeaderImage}>
             {pageDescription}

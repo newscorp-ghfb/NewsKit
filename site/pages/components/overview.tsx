@@ -20,6 +20,10 @@ const OverviewComponent = (layoutProps: LayoutProps) => (
     <HeadNextSeo
       title="Components overview"
       description="Components are key building blocks of the NewsKit design system."
+      image={{
+        url: 'social/components.png',
+        alt: 'Components overview',
+      }}
     />
     <HeaderIndex title="Components" media={HeaderImage}>
       Components are key building blocks of the NewsKit design system.

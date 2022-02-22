@@ -471,4 +471,23 @@ describe('Style helpers', () => {
       }),
     ).toEqual({base: {opacity: 1}, enterActive: {opacity: 0}});
   });
+  test('unifyTransition with uncompiled theme token', () => {
+    const theme = compileTheme(
+      createTheme({
+        name: 'test-transition-preset',
+        overrides: {
+          transitionPresets: {
+            testPreset: {
+              base: {
+                transitionDuration: '{{motions.motionDuration030}}',
+              },
+            },
+          },
+        },
+      }),
+    );
+    expect(unifyTransition(theme, 'testPreset')).toEqual({
+      base: {transitionDuration: '300ms'},
+    });
+  });
 });
