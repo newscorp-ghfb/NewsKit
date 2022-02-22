@@ -15,7 +15,7 @@ import {
   ContentTertiary,
 } from '../../../components/content-structure';
 
-const customEventFiringRows = [
+const customEventRows = [
   {
     key: 'Click',
     value: 'click',
@@ -45,6 +45,10 @@ const customEventFiringRows = [
     value: 'pulse',
   },
 ];
+
+const contentOverrides = {
+  typographyPreset: 'editorialParagraph030',
+};
 
 export default (layoutProps: LayoutProps) => (
   <GuidePageTemplate
@@ -135,9 +139,7 @@ export default (layoutProps: LayoutProps) => (
               marker: {
                 spaceInline: 'space020',
               },
-              content: {
-                typographyPreset: 'editorialParagraph030',
-              },
+              content: contentOverrides,
             }}
           >
             <>
@@ -155,7 +157,7 @@ export default (layoutProps: LayoutProps) => (
               but you can also pass your own custom handlers.
             </>
           </UnorderedList>
-          <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+          <P overrides={contentOverrides}>
             This function will return an object containing the context passed to
             it and the <InlineCode>fireEvent</InlineCode> function. This is the
             function that is used internally by the NewsKit components to fire
@@ -208,7 +210,7 @@ const MyPage = (
 );`}
           </Code>
           <Block spaceStack="space080" />
-          <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+          <P overrides={contentOverrides}>
             In this example, the Link component, and any other NewsKit
             instrumentation enabled components would emit events to the
             browser&apos;s console. This could look something like this:
@@ -224,7 +226,7 @@ const MyPage = (
 }`}
           </Code>
           <Block spaceStack="space080" />
-          <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+          <P overrides={contentOverrides}>
             InstrumentationProvider components can be nested if you wish to
             extend the context object to add extra data. See the relevant
             section below for more information and examples.
@@ -303,9 +305,7 @@ const instrumentation = createEventInstrumentation(handlers, {
               marker: {
                 spaceInline: 'space020',
               },
-              content: {
-                typographyPreset: 'editorialParagraph030',
-              },
+              content: contentOverrides,
             }}
           >
             <>
@@ -320,7 +320,7 @@ const instrumentation = createEventInstrumentation(handlers, {
               object containing the <InlineCode>fireEvent</InlineCode> function.
             </>
           </UnorderedList>
-          <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+          <P overrides={contentOverrides}>
             You can then call this function with your custom instrumentation
             event as necessary, so long as it meets event requirements. Event
             objects must contain an event <InlineCode>originator</InlineCode>{' '}
@@ -360,7 +360,7 @@ export const MySpecialCustomButton: React.FC<
         </ContentSecondary>
 
         <ContentTertiary>
-          <Table columns={['Key', 'Value']} rows={customEventFiringRows} />
+          <Table columns={['Key', 'Value']} rows={customEventRows} />
         </ContentTertiary>
       </ContentSection>
 
@@ -450,7 +450,7 @@ const App = () => (
 );`}
           </Code>
           <Block spaceStack="space080" />
-          <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+          <P overrides={contentOverrides}>
             In this example, we have a root{' '}
             <InlineCode>InstrumentationProvider</InlineCode> providing the page
             URL. Inside the <InlineCode>Rail</InlineCode> component, we have
@@ -473,7 +473,7 @@ const App = () => (
 }`}
           </Code>
           <Block spaceStack="space080" />
-          <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+          <P overrides={contentOverrides}>
             It is important to remember that in the example above, the{' '}
             <InlineCode>fireEvent</InlineCode> function is scoped to the context
             of the parent provider (the one which wraps the{' '}
@@ -511,7 +511,7 @@ const App = () => (
 23};`}
           </Code>
           <Block spaceStack="space080" />
-          <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+          <P overrides={contentOverrides}>
             This would produce the following event (for rail item 1) as
             expected:
           </P>
@@ -539,7 +539,7 @@ const App = () => (
 };`}
           </Code>
           <Block spaceStack="space080" />
-          <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+          <P overrides={contentOverrides}>
             Instead, we can add context to the event directly (or we must put
             the button into a separate component and get the{' '}
             <InlineCode>fireEvent</InlineCode>
