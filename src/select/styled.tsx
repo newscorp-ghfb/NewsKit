@@ -1,4 +1,4 @@
-import {useLogicalProps} from '../utils/logical-properties';
+import {logicalProps} from '../utils/logical-properties';
 import {Theme} from '../theme';
 
 import {
@@ -112,7 +112,7 @@ export const StyledSelectPanel = styled.div<{
   outline: none;
   z-index: 1;
 
-  ${useLogicalProps}
+  ${logicalProps()}
 
   ${({$size}) =>
     getResponsiveSpace(`marginTop`, `select.${$size}.panel`, '', 'spaceStack')}

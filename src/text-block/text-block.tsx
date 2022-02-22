@@ -5,10 +5,10 @@ import {
 } from '../utils/style';
 import {isInlineElement} from '../utils/inline-tags';
 import {TextBlockProps} from './types';
-import {useLogicalProps} from '../utils/logical-properties';
+import {logicalProps} from '../utils/logical-properties';
 
 const StyledTextBlock = styled.p<TextBlockProps>`
-  ${useLogicalProps}
+  ${logicalProps()}
   margin: 0;
   ${({stylePreset}) => stylePreset && getStylePresetFromTheme(stylePreset)};
   ${({typographyPreset, noCrop}) =>

@@ -27,48 +27,82 @@ export interface LogicalProps extends LogicalMargins, LogicalPadding {}
 const getResponsiveSpace = (
   cssProperty: string,
   props: ThemeProp & {overrides?: unknown},
+  defaultsPath?: string,
 ) => {
-  const token = get(
+  let defaultToken;
+  if (defaultsPath) {
+    defaultToken = get(
+      props.theme.componentDefaults,
+      `${defaultsPath}.${cssProperty}`,
+    );
+  }
+
+  const overrideToken = get(
     props,
     props.overrides ? `overrides.${cssProperty}` : cssProperty,
   );
 
-  return getXFromTheme('spacePresets')(cssProperty, token)(props);
+  return getXFromTheme('spacePresets')(
+    cssProperty,
+    overrideToken || defaultToken,
+  )(props);
 };
 
-const generateLogicalProps = (prefix: string) => (props: ThemeProp) => {
+const generateLogicalProps = (prefix: string, defaultsPath?: string) => (
+  props: ThemeProp,
+) => {
   const inlineStart = getResponsiveSpace(
     `${prefix}InlineStart`,
     props,
+    defaultsPath,
   ) as CSSObject;
 
   const inlineEnd = getResponsiveSpace(
     `${prefix}InlineEnd`,
     props,
+    defaultsPath,
   ) as CSSObject;
 
-  const inline = getResponsiveSpace(`${prefix}Inline`, props) as CSSObject;
+  const inline = getResponsiveSpace(
+    `${prefix}Inline`,
+    props,
+    defaultsPath,
+  ) as CSSObject;
 
   const blockStart = getResponsiveSpace(
     `${prefix}BlockStart`,
     props,
+    defaultsPath,
   ) as CSSObject;
 
-  const blockEnd = getResponsiveSpace(`${prefix}BlockEnd`, props) as CSSObject;
+  const blockEnd = getResponsiveSpace(
+    `${prefix}BlockEnd`,
+    props,
+    defaultsPath,
+  ) as CSSObject;
 
-  const block = getResponsiveSpace(`${prefix}Block`, props) as CSSObject;
+  const block = getResponsiveSpace(
+    `${prefix}Block`,
+    props,
+    defaultsPath,
+  ) as CSSObject;
 
   return deepMerge(inlineStart, inlineEnd, inline, blockStart, blockEnd, block);
 };
 
-const useLogicalMargins = (props: ThemeProp): CSSObject =>
-  generateLogicalProps('margin')(props);
+const logicalMargins = (props: ThemeProp, defaultsPath?: string): CSSObject =>
+  generateLogicalProps('margin', defaultsPath)(props);
 
-const useLogicalPadding = (props: ThemeProp): CSSObject =>
-  generateLogicalProps('padding')(props);
+const logicalPadding = (props: ThemeProp, defaultsPath?: string): CSSObject =>
+  generateLogicalProps('padding', defaultsPath)(props);
 
-export const useLogicalProps = (props: ThemeProp): CSSObject =>
-  deepMerge(useLogicalMargins(props), useLogicalPadding(props));
+export const logicalProps = (defaultsPath?: string) => (
+  props: ThemeProp,
+): CSSObject => {
+  const margin = logicalMargins(props, defaultsPath);
+  const padding = logicalPadding(props, defaultsPath);
+  return deepMerge(margin, padding);
+};
 
 export const omitLogicalPropsFromOverrides = (
   overrides: Record<string, unknown>,

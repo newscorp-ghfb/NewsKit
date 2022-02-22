@@ -1,5 +1,5 @@
 import React from 'react';
-import {LogicalProps, useLogicalProps} from '../utils/logical-properties';
+import {LogicalProps, logicalProps} from '../utils/logical-properties';
 import {
   styled,
   MQ,
@@ -28,7 +28,7 @@ export interface BlockProps
 }
 
 const StyledDiv = styled.div<BlockProps>`
-  ${useLogicalProps}
+  ${logicalProps()}
   ${({stylePreset}) => stylePreset && getStylePresetFromTheme(stylePreset)}
   ${({spaceInset}) => spaceInset && getSpacingInsetFromTheme(spaceInset)}
   ${({spaceInline}) =>

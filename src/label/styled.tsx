@@ -7,11 +7,10 @@ import {
   getResponsiveSpacingInlineHorizontal,
   styled,
 } from '../utils/style';
-import {useLogicalProps} from '../utils/logical-properties';
+import {logicalProps} from '../utils/logical-properties';
 
 export const StyledLabel = styled.label<LabelProps>`
   display: block;
-  ${useLogicalProps}
   ${({size, state}) =>
     getStylePreset(`label.${size}`, '', {
       isInvalid: state === 'invalid',
@@ -21,7 +20,8 @@ export const StyledLabel = styled.label<LabelProps>`
   ${({size}) =>
     getTypographyPreset(`label.${size}`, '', {
       withCrop: true,
-    })}
-    ${({size}) => getResponsiveSpacingStackHorizontal(`label.${size}`, '')}
-    ${({size}) => getResponsiveSpacingInlineHorizontal(`label.${size}`, '')}
+    })};
+  ${({size}) => getResponsiveSpacingStackHorizontal(`label.${size}`, '')};
+  ${({size}) => getResponsiveSpacingInlineHorizontal(`label.${size}`, '')};
+  ${({size}) => logicalProps(`label.${size}`)};
 `;

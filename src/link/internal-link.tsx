@@ -9,7 +9,7 @@ import {useTheme} from '../theme';
 import {isLinkExternal} from './utils';
 import {useHasMounted} from '../utils/hooks';
 import {TextBlock} from '../text-block';
-import {useLogicalProps} from '../utils/logical-properties';
+import {logicalProps} from '../utils/logical-properties';
 
 const StyledLink = styled.a<InternalLinkProps>`
   display: inline-block;
@@ -18,7 +18,7 @@ const StyledLink = styled.a<InternalLinkProps>`
   transition-timing-function: ${getMotionFromTheme('motionTimingEaseOut')};
 
   ${getStylePreset('link', '')}
-  ${useLogicalProps}
+  ${logicalProps('link')}
 `;
 
 const StyledTextBlock = styled(TextBlock)`

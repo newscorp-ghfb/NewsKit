@@ -8,7 +8,7 @@ import {
   styled,
 } from '../utils/style';
 import {TextFieldSize} from '../text-field/types';
-import {useLogicalProps} from '../utils/logical-properties';
+import {logicalProps} from '../utils/logical-properties';
 
 const getMarginDirection = ({
   marginPosition,
@@ -49,7 +49,7 @@ export const StyledInputContainer = styled.div<
   justify-content: center;
   box-sizing: border-box;
   align-items: center;
-  ${useLogicalProps}
+  ${logicalProps()}
 
   ${({componentDefaultsPath}) =>
     getResponsiveSize('width', componentDefaultsPath, '', 'width')}

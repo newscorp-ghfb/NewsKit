@@ -11,7 +11,7 @@ import {
 } from './types';
 import {Theme} from '../theme';
 import {ThemeProp} from '../utils/style-types';
-import {useLogicalProps} from '../utils/logical-properties';
+import {logicalProps} from '../utils/logical-properties';
 
 export const DEFAULT_PROPS: DefaultStackProps = {
   spaceStack: 'space000',
@@ -130,7 +130,7 @@ const getFlexDirection = (
 };
 
 export const StyledMasterContainer = styled.div<StyledStackProps>`
-  ${useLogicalProps}
+  ${logicalProps()}
 
   ${handleResponsiveProp({inline: DEFAULT_PROPS.inline}, ({inline}) => ({
     display: inline ? 'inline-flex' : 'flex',

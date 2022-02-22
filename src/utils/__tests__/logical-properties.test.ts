@@ -1,6 +1,6 @@
 import {
   omitLogicalPropsFromOverrides,
-  useLogicalProps,
+  logicalProps,
 } from '../logical-properties';
 import {compileTheme, newskitLightTheme} from '../../theme';
 
@@ -12,7 +12,7 @@ describe('logical properties', () => {
       paddingBlock: 'space020',
     };
 
-    expect(useLogicalProps(props as any)).toEqual({
+    expect(logicalProps(props as any)).toEqual({
       marginBlock: '8px',
       paddingBlock: '8px',
     });
@@ -27,7 +27,7 @@ describe('logical properties', () => {
       },
     };
 
-    expect(useLogicalProps(props as any)).toEqual({
+    expect(logicalProps(props as any)).toEqual({
       marginBlock: '8px',
       paddingBlock: '8px',
     });
@@ -50,7 +50,7 @@ describe('logical properties', () => {
       },
     };
 
-    expect(useLogicalProps(props as any)).toEqual({
+    expect(logicalProps(props as any)).toEqual({
       '@media screen and (max-width: 767px)': {
         marginBlock: '8px',
         paddingBlock: '8px',
@@ -75,7 +75,7 @@ describe('logical properties', () => {
       },
     };
 
-    const dummyProps = {someOtherProps: true, ...useLogicalProps(props as any)};
+    const dummyProps = {someOtherProps: true, ...logicalProps(props as any)};
 
     expect(omitLogicalPropsFromOverrides(dummyProps)).toEqual({
       someOtherProps: true,
