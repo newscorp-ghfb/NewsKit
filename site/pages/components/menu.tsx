@@ -26,7 +26,7 @@ const PlaygroundContainer = styled.div`
   }
 `;
 
-export default (layoutProps: LayoutProps) => (
+const MenuComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Menu',
@@ -796,3 +796,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default MenuComponent;
