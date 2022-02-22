@@ -23,6 +23,10 @@ const Roadmap = (
     <HeadNextSeo
       title="Roadmap"
       description="NewsKit’s Design System team is busy building and planning to help you build better products faster."
+      image={{
+        url: 'social/about.png',
+        alt: 'Roadmap',
+      }}
     />
 
     <PageIntroductionContainer>
