@@ -661,10 +661,7 @@ StoryOptionalHeaderClose.parameters = {eyes: {include: false}};
 
 export const StoryDreawerTest = () =>
   React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+    const [isActive, open, close] = useActiveState();
 
     const mqPlacement = {
       xs: 'left',

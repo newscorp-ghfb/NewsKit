@@ -418,57 +418,65 @@ describe('getTransitionPresetFromTheme', () => {
     expect(result).toEqual('');
   });
 
-  test('return trasntion string tokens based on breakpoints', () => {
-    const theme = compileTheme(
-      createTheme({
-        name: 'test-transition-preset',
-        overrides: {
-          breakpoints: {
-            xs: 0,
-            sm: 500,
-            md: 800,
-            lg: 1000,
-            xl: 1500,
+  const theme = compileTheme(
+    createTheme({
+      name: 'test-transition-preset-breakpoints',
+      overrides: {
+        breakpoints: {
+          xs: 0,
+          sm: 500,
+          md: 800,
+          lg: 1000,
+          xl: 1500,
+        },
+        motions: {
+          motionDuration020: '2000ms',
+          motionDuration030: '3000ms',
+          motionDuration040: '4000ms',
+          motionTimingLinear: 'linear',
+        },
+        transitionPresets: {
+          colorTransitionCustom: {
+            base: {
+              transitionProperty: 'color',
+              transitionDuration: '{{motions.motionDuration020}}',
+              transitionTimingFunction: '{{motions.motionTimingLinear}}',
+            },
           },
-          motions: {
-            motionDuration020: '2000ms',
-            motionDuration030: '3000ms',
-            motionTimingLinear: 'linear',
+          backgroundTransitionCustom: {
+            base: {
+              transitionProperty: 'background-colour',
+              transitionDuration: '{{motions.motionDuration030}}',
+              transitionTimingFunction: '{{motions.motionTimingLinear}}',
+            },
           },
-          transitionPresets: {
-            colorTransitionCustom: {
-              base: {
-                transitionProperty: 'color',
-                transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionTimingLinear}}',
-              },
+          widthTransitionCustom: {
+            base: {
+              transitionProperty: 'width',
+              transitionDuration: '{{motions.motionDuration020}}',
+              transitionTimingFunction: '{{motions.motionTimingLinear}}',
             },
-            backgroundTransitionCustom: {
-              base: {
-                transitionProperty: 'background-colour',
-                transitionDuration: '{{motions.motionDuration030}}',
-                transitionTimingFunction: '{{motions.motionTimingLinear}}',
-              },
+          },
+          heightTransitionCustom: {
+            base: {
+              transitionProperty: 'height',
+              transitionDuration: '{{motions.motionDuration030}}',
+              transitionTimingFunction: '{{motions.motionTimingLinear}}',
             },
-            widthTransitionCustom: {
-              base: {
-                transitionProperty: 'width',
-                transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionTimingLinear}}',
-              },
-            },
-            heightTransitionCustom: {
-              base: {
-                transitionProperty: 'height',
-                transitionDuration: '{{motions.motionDuration030}}',
-                transitionTimingFunction: '{{motions.motionTimingLinear}}',
-              },
+          },
+          fadeTransitionCustom: {
+            base: {
+              transitionProperty: 'opacity',
+              transitionDuration: '{{motions.motionDuration040}}',
+              transitionTimingFunction: '{{motions.motionTimingLinear}}',
             },
           },
         },
-      }),
-    );
+      },
+    }),
+  );
 
+  test('return trasntion string tokens based on breakpoints', () => {
     const mqTransitions = {
       xs: 'colorTransitionCustom',
       sm: 'widthTransitionCustom',
@@ -506,64 +514,6 @@ describe('getTransitionPresetFromTheme', () => {
   });
 
   test('return array of trasntion string tokens based on breakpoints', () => {
-    const theme = compileTheme(
-      createTheme({
-        name: 'test-transition-preset',
-        overrides: {
-          breakpoints: {
-            xs: 0,
-            sm: 500,
-            md: 800,
-            lg: 1000,
-            xl: 1500,
-          },
-          motions: {
-            motionDuration020: '2000ms',
-            motionDuration030: '3000ms',
-            motionDuration040: '4000ms',
-            motionTimingLinear: 'linear',
-          },
-          transitionPresets: {
-            colorTransitionCustom: {
-              base: {
-                transitionProperty: 'color',
-                transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionTimingLinear}}',
-              },
-            },
-            backgroundTransitionCustom: {
-              base: {
-                transitionProperty: 'background-colour',
-                transitionDuration: '{{motions.motionDuration030}}',
-                transitionTimingFunction: '{{motions.motionTimingLinear}}',
-              },
-            },
-            widthTransitionCustom: {
-              base: {
-                transitionProperty: 'width',
-                transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionTimingLinear}}',
-              },
-            },
-            heightTransitionCustom: {
-              base: {
-                transitionProperty: 'height',
-                transitionDuration: '{{motions.motionDuration030}}',
-                transitionTimingFunction: '{{motions.motionTimingLinear}}',
-              },
-            },
-            fadeTransitionCustom: {
-              base: {
-                transitionProperty: 'opacity',
-                transitionDuration: '{{motions.motionDuration040}}',
-                transitionTimingFunction: '{{motions.motionTimingLinear}}',
-              },
-            },
-          },
-        },
-      }),
-    );
-
     const mqTransitions = {
       xs: ['colorTransitionCustom', 'fadeTransitionCustom'],
       sm: ['widthTransitionCustom', 'fadeTransitionCustom'],
@@ -601,39 +551,6 @@ describe('getTransitionPresetFromTheme', () => {
   });
 
   test('return trasntion extend objects based on breakpoint', () => {
-    const theme = compileTheme(
-      createTheme({
-        name: 'test-transition-preset',
-        overrides: {
-          breakpoints: {
-            xs: 1,
-            md: 800,
-          },
-          motions: {
-            motionDuration020: '2000ms',
-            motionDuration030: '3000ms',
-            motionTimingLinear: 'linear',
-          },
-          transitionPresets: {
-            colorTransitionCustom: {
-              base: {
-                transitionProperty: 'color',
-                transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionTimingLinear}}',
-              },
-            },
-            backgroundTransitionCustom: {
-              base: {
-                transitionProperty: 'background-colour',
-                transitionDuration: '{{motions.motionDuration030}}',
-                transitionTimingFunction: '{{motions.motionTimingLinear}}',
-              },
-            },
-          },
-        },
-      }),
-    );
-
     const mqTransitions = {
       xs: {
         extend: 'colorTransitionCustom',
@@ -650,7 +567,7 @@ describe('getTransitionPresetFromTheme', () => {
     });
 
     expect(result).toEqual({
-      '@media screen and (min-width: 1px) and (max-width: 799px)': {
+      '@media screen and (max-width: 799px)': {
         transitionProperty: 'color',
         transitionDuration: '5000ms',
         transitionTimingFunction: 'linear',
@@ -664,47 +581,6 @@ describe('getTransitionPresetFromTheme', () => {
   });
 
   test('return array of trasntion extend objects based on breakpoint', () => {
-    const theme = compileTheme(
-      createTheme({
-        name: 'test-transition-preset',
-        overrides: {
-          breakpoints: {
-            xs: 1,
-            md: 800,
-          },
-          motions: {
-            motionDuration020: '2000ms',
-            motionDuration030: '3000ms',
-            motionDuration040: '4000ms',
-            motionTimingLinear: 'linear',
-          },
-          transitionPresets: {
-            colorTransitionCustom: {
-              base: {
-                transitionProperty: 'color',
-                transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionTimingLinear}}',
-              },
-            },
-            backgroundTransitionCustom: {
-              base: {
-                transitionProperty: 'background-colour',
-                transitionDuration: '{{motions.motionDuration030}}',
-                transitionTimingFunction: '{{motions.motionTimingLinear}}',
-              },
-            },
-            fadeTransitionCustom: {
-              base: {
-                transitionProperty: 'opacity',
-                transitionDuration: '{{motions.motionDuration040}}',
-                transitionTimingFunction: '{{motions.motionTimingLinear}}',
-              },
-            },
-          },
-        },
-      }),
-    );
-
     const mqTransitions = {
       xs: [
         {
@@ -727,7 +603,7 @@ describe('getTransitionPresetFromTheme', () => {
     });
 
     expect(result).toEqual({
-      '@media screen and (min-width: 1px) and (max-width: 799px)': {
+      '@media screen and (max-width: 799px)': {
         transitionProperty: 'color, opacity',
         transitionDuration: '5000ms, 6000ms',
         transitionTimingFunction: 'linear, linear',

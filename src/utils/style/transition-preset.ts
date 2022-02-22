@@ -14,9 +14,7 @@ import {hasOwnProperty} from '../has-own-property';
 import {ThemeProp} from '../style-types';
 import {CSSObject} from './emotion';
 import {MQ} from './types';
-// import {getResponsiveValueFromTheme} from './base';
 import {getMediaQueryFromTheme, isResponsive} from '../responsive-helpers';
-// import {filterObject} from '../filter-object';
 
 const cssTransitionPropertiesList: [TransitionPresetStyleKeys, string][] = [
   ['transitionProperty', ', '],
