@@ -16,7 +16,7 @@ export interface BlockProps
   as?: keyof JSX.IntrinsicElements;
   stylePreset?: MQ<string>;
   transitionPreset?: TransitionToken | TransitionToken[];
-   /**
+  /**
    * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingBlock` and `paddingInline` instead.
    */
   spaceInset?: MQ<string>;

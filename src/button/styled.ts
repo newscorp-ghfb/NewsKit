@@ -1,6 +1,5 @@
 import {Flag} from '../flag';
 import {logicalProps} from '../utils/logical-properties';
-import {getMotionFromTheme, styled} from '../utils/style';
 import {styled} from '../utils/style';
 import {getTransitionPreset} from '../utils/style/transition-preset';
 import {ButtonOrButtonLinkProps} from './types';
