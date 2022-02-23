@@ -711,7 +711,7 @@ jobs:
           name: Install python and pip
           command: |
             sudo apt-get update
-            sudo apt-get install python-pip python-dev
+            sudo apt-get install python-pip3 python-dev
       - run:
           name: Install awscli
           command: sudo pip install awscli
