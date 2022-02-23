@@ -288,6 +288,9 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
   overflow: hidden;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -297,6 +300,9 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
   height: 16px;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-13 {
@@ -667,6 +673,9 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
   overflow: hidden;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -676,6 +685,9 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
   height: 16px;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-13 {
@@ -1136,6 +1148,9 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -1663,6 +1678,9 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
   overflow: hidden;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -1672,6 +1690,9 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
   height: 16px;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-19 {
@@ -2200,6 +2221,9 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
   overflow: hidden;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -2209,6 +2233,9 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
   height: 16px;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-19 {
@@ -3082,6 +3109,9 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
   overflow: hidden;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -3091,6 +3121,9 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
   height: 16px;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-19 {
@@ -3624,6 +3657,9 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
   overflow: hidden;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -3633,6 +3669,9 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
   height: 16px;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-19 {
@@ -4163,6 +4202,9 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
   overflow: hidden;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -4172,6 +4214,9 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
   height: 16px;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-19 {
@@ -4597,6 +4642,9 @@ exports[`StructuredList with href renders with disabled link 1`] = `
   overflow: hidden;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -4606,6 +4654,9 @@ exports[`StructuredList with href renders with disabled link 1`] = `
   height: 16px;
   color: #0A0A0A;
   fill: #0A0A0A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-13 {
@@ -5056,6 +5107,9 @@ exports[`StructuredList without-href renders with default style 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -5792,6 +5846,9 @@ exports[`StructuredList without-href renders with overrides 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }

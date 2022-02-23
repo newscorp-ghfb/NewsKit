@@ -179,6 +179,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   overflow: hidden;
   color: #577FFB;
   fill: #577FFB;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -188,13 +191,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   height: 32px;
   color: #577FFB;
   fill: #577FFB;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-10 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #2E2E2E;
 }
 
@@ -440,9 +446,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-37 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -696,6 +702,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-83 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -1389,6 +1398,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   overflow: hidden;
   color: #577FFB;
   fill: #577FFB;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -1398,13 +1410,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   height: 32px;
   color: #577FFB;
   fill: #577FFB;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-10 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #2E2E2E;
 }
 
@@ -1650,9 +1665,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-37 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1906,6 +1921,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-83 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -2599,6 +2617,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   overflow: hidden;
   color: #577FFB;
   fill: #577FFB;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -2608,13 +2629,16 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   height: 32px;
   color: #577FFB;
   fill: #577FFB;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-10 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #2E2E2E;
 }
 
@@ -2860,9 +2884,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-37 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3093,6 +3117,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-83 {
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }

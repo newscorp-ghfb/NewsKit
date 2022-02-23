@@ -1521,6 +1521,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -1546,6 +1560,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -1578,6 +1599,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -3617,6 +3645,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -3642,6 +3684,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -3674,6 +3723,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -5713,6 +5769,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -5738,6 +5808,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -5770,6 +5847,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -7809,6 +7893,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -7834,6 +7932,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -7866,6 +7971,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -9905,6 +10017,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -9930,6 +10056,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -9962,6 +10095,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -12001,6 +12141,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -12026,6 +12180,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -12058,6 +12219,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -14097,6 +14265,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -14122,6 +14304,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -14154,6 +14343,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -16193,6 +16389,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -16218,6 +16428,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -16250,6 +16467,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
