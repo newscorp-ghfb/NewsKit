@@ -493,7 +493,11 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
-      - run: python --version
+      - run:
+          name: Install python and pip
+          command: |
+            sudo apt-get update
+            sudo apt-get install python-pip python-dev
       - run:
           name: Install aws cli
           command: sudo pip install awscli
