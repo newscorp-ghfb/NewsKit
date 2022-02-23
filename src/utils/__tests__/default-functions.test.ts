@@ -83,6 +83,13 @@ describe('get component defaults functions', () => {
               transitionTimingFunction: 'linear',
             },
           },
+          theAdditionalToken: {
+            base: {
+              transitionProperty: 'css-props-for-additional-token',
+              transitionDuration: '400ms',
+              transitionTimingFunction: 'linear',
+            },
+          },
         },
         componentDefaults: {
           basicTestComponent: {
@@ -105,6 +112,10 @@ describe('get component defaults functions', () => {
               md: 'theOverrideToken',
             },
             spaceInset: {
+              xs: 'theDefaultToken',
+              md: 'theOverrideToken',
+            },
+            transitionPreset: {
               xs: 'theDefaultToken',
               md: 'theOverrideToken',
             },
@@ -167,6 +178,10 @@ describe('get component defaults functions', () => {
                 transitionDuration: '1000ms',
               },
             },
+          },
+          transitionsWithBreakpoints: {
+            xs: ['theDefaultToken', 'theAdditionalToken'],
+            md: ['theOverrideToken', 'theAdditionalToken'],
           },
         },
       },
@@ -242,6 +257,7 @@ describe('get component defaults functions', () => {
       tokenPathEnd: 'transitionPreset',
       themeSection: 'transitionPresets',
       expectedResultFormatter: (expected: {base: any}) => expected.base,
+      responsive: true,
     },
   ].forEach(
     ({
@@ -626,7 +642,7 @@ describe('get component defaults functions', () => {
   });
 
   describe('getTransitionPreset', () => {
-    test('component defaults with transition extend', () => {
+    test('extends a single transition token', () => {
       const props = {
         theme,
       };
@@ -645,7 +661,7 @@ describe('get component defaults functions', () => {
       });
     });
 
-    test('component overrides with transition extend', () => {
+    test('extends an array of transition tokens', () => {
       const props = {
         theme,
         overrides: {
@@ -672,6 +688,28 @@ describe('get component defaults functions', () => {
         transitionDuration: '500ms',
         transitionProperty: 'css-props-for-default-token',
         transitionTimingFunction: 'linear',
+      });
+    });
+
+    test('returns array transition per berakpoint', () => {
+      const props = {
+        theme,
+      };
+      const result = getTransitionPreset('transitionsWithBreakpoints')(props);
+
+      expect(result).toEqual({
+        '@media screen and (max-width: 767px)': {
+          transitionProperty:
+            'css-props-for-default-token, css-props-for-additional-token',
+          transitionDuration: '200ms, 400ms',
+          transitionTimingFunction: 'linear, linear',
+        },
+        '@media screen and (min-width: 768px)': {
+          transitionProperty:
+            'css-props-for-override-token, css-props-for-additional-token',
+          transitionDuration: '300ms, 400ms',
+          transitionTimingFunction: 'linear, linear',
+        },
       });
     });
   });
