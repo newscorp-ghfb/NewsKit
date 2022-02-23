@@ -10,6 +10,7 @@ import {Block} from '../../block';
 import {Menu, MenuItem} from '../../menu';
 import {createTheme, compileTheme, ThemeProvider} from '../../theme';
 import {Stack} from '../../stack';
+import {useMediaQueryObject} from '../../utils/hooks';
 
 const Box = styled.div`
   width: 400px;
@@ -657,3 +658,43 @@ export const StoryOptionalHeaderClose = () =>
   });
 StoryOptionalHeaderClose.storyName = 'optional header & close';
 StoryOptionalHeaderClose.parameters = {eyes: {include: false}};
+
+export const StoryDreawerTest = () =>
+  React.createElement(() => {
+    const [isActive, open, close] = useActiveState();
+
+    const mqPlacement = {
+      xs: 'left',
+      md: 'right',
+    };
+    const placement = useMediaQueryObject(mqPlacement);
+
+    return (
+      <div data-testid="scrollable-drawer">
+        <StorybookHeading>Left/right drawer</StorybookHeading>
+        <Button onClick={open} data-testid="drawer-open-button">
+          Open Drawer from the {placement}
+        </Button>
+
+        <Drawer
+          aria-label="Drawer example"
+          open={isActive}
+          onDismiss={close}
+          placement={placement as 'left' | 'right' | 'top' | 'bottom'}
+          header="This is a drawer header."
+          overrides={{
+            panel: {
+              transitionPreset: {
+                xs: 'slideLeft',
+                md: 'slideRight',
+              },
+            },
+          }}
+        >
+          <DrawerContent />
+        </Drawer>
+      </div>
+    );
+  });
+StoryDreawerTest.storyName = 'drawer-transitions-mq';
+StoryDreawerTest.parameters = {eyes: {include: false}};
