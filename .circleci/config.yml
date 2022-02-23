@@ -50,22 +50,22 @@ executors:
 
   python:
     docker:
-      - image: circleci/python:3.7
+      - image: cimg/python:3.7
 
   node:
     docker:
-      - image: circleci/node:16.13.0
+      - image: cimg/node:16.13.0
 
   node-large:
     docker:
-      - image: circleci/node:16.13.0
+      - image: cimg/node:16.13.0
     resource_class: large
     environment:
       NODE_OPTIONS: --max_old_space_size=7680
 
   node-xlarge:
     docker:
-      - image: circleci/node:16.13.0
+      - image: cimg/node:16.13.0
     resource_class: xlarge
     environment:
       NODE_OPTIONS: --max_old_space_size=15872
@@ -77,7 +77,7 @@ executors:
 
   java:
     docker:
-      - image: circleci/openjdk:8u252-jdk-buster
+      - image: cimg/openjdk:8u252-jdk-buster
 
 commands:
   terraform_init:
