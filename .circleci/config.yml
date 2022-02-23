@@ -50,7 +50,7 @@ executors:
 
   python:
     docker:
-      - image: cimg/python:3.7
+      - image: circleci/python:3.7
 
   node:
     docker:
