@@ -303,7 +303,7 @@ const coloursTable = [
   },
 ];
 
-export default (layoutProps: LayoutProps) => (
+const Colours = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
       title: 'Colours',
@@ -370,7 +370,7 @@ export default (layoutProps: LayoutProps) => (
         <ContentSecondary
           headline="Understanding the swatches"
           description="Utilise the swatches below to determine the accessibility of the
-          palette colour in contrast to the background colour of this page"
+        palette colour in contrast to the background colour of this page"
         >
           {CUSTOM_ICONS.map(({icon, label}) => (
             <UnorderedList
@@ -492,29 +492,29 @@ backgroundColor: '{{colors.interactiveVisited010}}';`}
         <ContentSecondary
           headline="Contrast for text and images of text"
           description="Standard text and images of text must have a minimum of 4.5:1
-          contrast between the text colour and the background, except for the
-          following:"
+        contrast between the text colour and the background, except for the
+        following:"
         />
 
         <ContentTertiary
           headline="Large text"
           description="Large-scale text and images of large-scale text must have a minimum
-          of 3:1 contrast between the text colour and the background."
+        of 3:1 contrast between the text colour and the background."
         />
 
         <ContentTertiary
           headline="Link text"
           description="Underline link text within the body text (inline link). Otherwise,
-          in addition to the above, link text must have at least a 3:1
-          contrast between the link text colour and the surrounding non-link
-          text colour."
+        in addition to the above, link text must have at least a 3:1
+        contrast between the link text colour and the surrounding non-link
+        text colour."
         />
 
         <ContentTertiary
           headline="Incidental text"
           description="Text or images of text that are part of an inactive component, pure
-          decoration, or part of a picture containing significant other visual
-          content do not have any contrast requirements."
+        decoration, or part of a picture containing significant other visual
+        content do not have any contrast requirements."
         />
 
         <ContentTertiary
@@ -525,10 +525,12 @@ backgroundColor: '{{colors.interactiveVisited010}}';`}
         <ContentSecondary
           headline="Contrast for non-text elements"
           description=" User interface components and graphical objects must have at least a
-          3:1 contrast between against adjacent colours."
+        3:1 contrast between against adjacent colours."
           showSeparator
         />
       </ContentSection>
     </ComponentPageCell>
   </FoundationPageTemplate>
 );
+
+export default Colours;

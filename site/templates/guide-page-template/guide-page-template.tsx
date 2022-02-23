@@ -18,6 +18,7 @@ export const GuidePageTemplate: React.FC<GuidePageTemplateProps> = ({
   children,
   layoutProps,
   featureCard,
+  headTags,
   ...rest
 }) => (
   <Layout {...layoutProps} newPage>
@@ -28,6 +29,12 @@ export const GuidePageTemplate: React.FC<GuidePageTemplateProps> = ({
         >
           <PageTemplate
             {...rest}
+            headTags={{
+              imageUrl: 'social/guides.png',
+              alt: 'Guides',
+              title: headTags.title,
+              description: headTags.description,
+            }}
             featureCard={
               featureCard &&
               ({

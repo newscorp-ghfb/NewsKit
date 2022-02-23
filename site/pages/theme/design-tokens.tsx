@@ -44,7 +44,8 @@ const TokenStyle: React.FC<TextElementProps> = () => {
   }
   return <TextElement>{tokens}</TextElement>;
 };
-export default (layoutProps: LayoutProps) => (
+
+const DesignTokens = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
       title: 'Design tokens',
@@ -161,3 +162,5 @@ export default (layoutProps: LayoutProps) => (
     </ComponentPageCell>
   </FoundationPageTemplate>
 );
+
+export default DesignTokens;

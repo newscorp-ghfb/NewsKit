@@ -37,7 +37,7 @@ const ImageContainer = styled.div`
   ${getSizingCssFromTheme('marginBottom', 'sizing050')}
 `;
 
-export default (layoutProps: LayoutProps) => (
+const DesignQuickstart = (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
       title: 'Design quickstart',
@@ -561,3 +561,5 @@ export default (layoutProps: LayoutProps) => (
     </ComponentPageCell>
   </GuidePageTemplate>
 );
+
+export default DesignQuickstart;

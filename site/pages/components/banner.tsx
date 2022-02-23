@@ -36,7 +36,7 @@ const PlaygroundContainer = styled.div`
   justify-content: center;
 `;
 
-export default (layoutProps: LayoutProps) => (
+const BannerComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Banner',
@@ -625,3 +625,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default BannerComponent;

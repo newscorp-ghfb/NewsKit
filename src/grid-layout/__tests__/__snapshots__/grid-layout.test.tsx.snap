@@ -162,6 +162,41 @@ exports[`GridLayout renders GridLayout with areas without quotes around areas 1`
 </DocumentFragment>
 `;
 
+exports[`GridLayout renders GridLayout with colum/row prop 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.emotion-1 {
+  grid-column: auto/span 8;
+  grid-row: 1/5;
+}
+
+.emotion-2 {
+  grid-column: auto/span 4;
+  grid-row: 2/3;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      8 cells
+    </div>
+    <div
+      class="emotion-2"
+    >
+      4 cells
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`GridLayout renders GridLayout with different areas for different breakpoints 1`] = `
 <DocumentFragment>
   .emotion-0 {

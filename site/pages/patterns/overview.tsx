@@ -11,7 +11,7 @@ const WrapperWithPadding = styled.div`
   ${getSizingCssFromTheme('padding-bottom', 'sizing090')};
 `;
 
-export default (layoutProps: LayoutProps) => (
+const Patterns = (layoutProps: LayoutProps) => (
   <>
     <Layout {...layoutProps} newPage>
       {({themeMode}) => (
@@ -31,3 +31,5 @@ export default (layoutProps: LayoutProps) => (
     </Layout>
   </>
 );
+
+export default Patterns;

@@ -1,7 +1,10 @@
 import React from 'react';
 import {Block} from '..';
 import {styled} from '../../utils/style';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
 import {Visible} from '../../grid/visibility';
 
@@ -31,6 +34,24 @@ const myCustomTheme = createTheme({
           backgroundColor: '{{colors.interfaceInformative010}}',
           color: '{{colors.inkInverse}}',
           iconColor: '{{colors.inkInverse}}',
+        },
+      },
+      transitionBlock: {
+        base: {
+          backgroundColor: '{{colors.purple020}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.amber070}}',
+        },
+      },
+    },
+    transitionPresets: {
+      customBackgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '500ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
       },
     },
@@ -108,6 +129,17 @@ export const StoryBlock = () => (
         </Block>
       </Block>
       <StyledHr />
+      <Block stylePreset="blockOuter">
+        <StorybookSubHeading>Block with transition</StorybookSubHeading>
+        <Block
+          spaceStack="space030"
+          spaceInset="spaceInset030"
+          stylePreset="transitionBlock"
+          transitionPreset="customBackgroundColorChange"
+        >
+          <span>Block with transition</span>
+        </Block>
+      </Block>
     </ThemeProvider>
   </>
 );
