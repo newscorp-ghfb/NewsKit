@@ -11,6 +11,7 @@ import {
   TextBlock,
   CellProps,
   Block,
+  Divider,
 } from 'newskit';
 import {Link} from './link';
 
@@ -45,56 +46,42 @@ const Footer = styled.footer`
 
 const FooterCopy = styled(TextBlock)`
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   text-align: center;
-  ${getMediaQueryFromTheme('md')} {
-    text-align: right;
-    top: 10%;
-  }
 `;
 
 const FooterMenu = styled.div`
   height: 100%;
-  display: flex;
+  display: block;
   flex-wrap: nowrap;
   align-items: center;
-  ${getSizingCssFromTheme('paddingTop', {
-    md: 'sizing010',
-  })};
+  justify-content: center;
+  ${getSizingCssFromTheme('paddingTop', 'sizing010')};
+  ${getTypographyPresetFromTheme('utilityButton020')};
+  ${getMediaQueryFromTheme('md')} {
+    display: flex;
+    ${getSizingCssFromTheme('paddingBottom', 'sizing020')};
+  }
 `;
 
 const FooterLink = styled.span`
-  flex-basis: 50%;
   text-align: center;
-  ${getTypographyPresetFromTheme('utilityButton020')};
-  ${getMediaQueryFromTheme('md')} {
-    flex-basis: auto;
-  }
+  justify-content: center;
+  ${getTypographyPresetFromTheme('utilityButton00')};
   ${getSizingCssFromTheme('paddingRight', {
     md: 'sizing050',
     lg: 'sizing080',
   })};
+  ${getMediaQueryFromTheme('xs')} {
+    display: block;
+    ${getSizingCssFromTheme('paddingBottom', 'sizing050')};
+  }
 `;
 interface FooterProps {
   cellProps?: CellProps;
-  footerCopyCellProps?: CellProps;
 }
 
 const year = new Date().getUTCFullYear();
-const SiteFooter: React.FC<FooterProps> = ({
-  cellProps = {xs: 12, md: 10, lg: 8, mdOffset: 1},
-  footerCopyCellProps = {
-    xs: 10,
-    xsOffset: 1,
-    md: 8,
-    mdOffset: 3,
-    lg: 10,
-    lgOffset: 1,
-    xl: 8,
-    xlOffset: 3,
-  },
-}) => (
+const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
   <>
     <Footer>
       <Block spaceStack={{xs: 'space080', md: 'space080', lg: 'space090'}} />
@@ -102,15 +89,14 @@ const SiteFooter: React.FC<FooterProps> = ({
         <Cell {...cellProps}>
           <FooterMenu>
             <FooterLink>
-              <ConsentSettingsLink
-                privacyManagerId="407619"
-                overrides={{
-                  stylePreset: 'linkFooter',
-                  typographyPreset: 'utilityButton020',
-                }}
+              <Link
+                href="https://www.newscareers.co.uk/"
+                target="_blank"
+                external={false}
+                overrides={{stylePreset: 'linkFooter'}}
               >
-                Privacy
-              </ConsentSettingsLink>
+                Careers
+              </Link>
             </FooterLink>
             <FooterLink>
               <Link
@@ -122,7 +108,17 @@ const SiteFooter: React.FC<FooterProps> = ({
                 Blog
               </Link>
             </FooterLink>
-
+            <FooterLink>
+              <ConsentSettingsLink
+                privacyManagerId="407619"
+                overrides={{
+                  stylePreset: 'linkFooter',
+                  typographyPreset: 'utilityButton020',
+                }}
+              >
+                Privacy policy
+              </ConsentSettingsLink>
+            </FooterLink>
             <FooterLink>
               <Link
                 href="https://www.newscareers.co.uk/"
@@ -130,13 +126,13 @@ const SiteFooter: React.FC<FooterProps> = ({
                 external={false}
                 overrides={{stylePreset: 'linkFooter'}}
               >
-                Careers
+                Terms & conditions
               </Link>
             </FooterLink>
           </FooterMenu>
         </Cell>
 
-        <Cell {...footerCopyCellProps}>
+        <Cell {...cellProps}>
           <FooterCopy
             as="div"
             stylePreset="inkSubtle"
@@ -145,8 +141,14 @@ const SiteFooter: React.FC<FooterProps> = ({
               md: 'utilityMeta020',
             }}
           >
-            <Block spaceStack="space060">
-              Copyright &copy; {year} News Corp. All rights reserved.
+            <Block spaceStack="space050">
+              <Divider />
+            </Block>
+            <Block spaceStack="space070">
+              Copyright &copy; {year} News Corp UK & Ireland Limited. All rights
+              reserved. This website is published by News Corp UK & Ireland
+              Limited, 1 London Bridge Street, London, SE1 9GF. Registered in
+              England No 81701. VAT number GB 243 8054 69.
             </Block>
           </FooterCopy>
         </Cell>
