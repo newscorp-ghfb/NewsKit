@@ -1,14 +1,14 @@
 import {Flag} from '../flag';
 import {logicalProps} from '../utils/logical-properties';
 import {getMotionFromTheme, styled} from '../utils/style';
+import {styled} from '../utils/style';
+import {getTransitionPreset} from '../utils/style/transition-preset';
 import {ButtonOrButtonLinkProps} from './types';
 
 export const StyledFlag = styled(Flag)<Omit<ButtonOrButtonLinkProps, 'size'>>`
   margin: 0; //reset for safari
-  transition-property: background-color;
-  transition-duration: ${getMotionFromTheme('motionDuration020')};
-  transition-timing-function: ${getMotionFromTheme('motionTimingEaseOut')};
 
+  ${({size}) => getTransitionPreset(`button.${size}`, '')};
   ${({loading, disabled}) => {
     if (disabled) {
       return null;

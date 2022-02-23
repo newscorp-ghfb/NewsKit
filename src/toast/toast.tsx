@@ -18,6 +18,7 @@ import {splitAriaProps} from '../utils/a11y';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {childrenIsString} from '../utils/react-children-utilities';
 
 const ThemelessToast: React.FC<ToastProps> = ({
   overrides,
@@ -63,13 +64,7 @@ const ThemelessToast: React.FC<ToastProps> = ({
           )}
           <StyledMessageContainer
             overrides={overrides}
-            as={
-              typeof children === 'string' ||
-              (Array.isArray(children) &&
-                children.some(child => typeof child === 'string'))
-                ? 'p'
-                : 'div'
-            }
+            as={childrenIsString(children) ? 'p' : 'div'}
           >
             {children}
           </StyledMessageContainer>

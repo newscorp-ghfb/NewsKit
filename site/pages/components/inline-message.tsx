@@ -21,7 +21,7 @@ const PlaygroundContainer = styled.div`
   justify-content: center;
 `;
 
-export default (layoutProps: LayoutProps) => (
+const InlineMessageComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Inline message',
@@ -273,7 +273,7 @@ export default (layoutProps: LayoutProps) => (
         {
           title: 'Inline message',
           summary: `An Inline Message has a range of props that can be used to define an appropriate experience for different use cases and
-                    a range of predefined elements and attributes that can be overridden to define its appearance.`,
+                  a range of predefined elements and attributes that can be overridden to define its appearance.`,
           propsRows: [
             {
               name: 'children',
@@ -380,3 +380,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default InlineMessageComponent;

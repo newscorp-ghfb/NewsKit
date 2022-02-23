@@ -91,6 +91,7 @@ export const SvgPreviewer: React.FC = () => {
     return newTheme[0].dark;
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const onmessage = (event: MessageEvent) => {
     if (event.data.pluginMessage?.action === 'FilesToUI') {
       testSvgCodeIsString(event.data.pluginMessage.data.svgdata);
@@ -146,8 +147,11 @@ export const SvgPreviewer: React.FC = () => {
 
   useEffect(() => {
     window.addEventListener('message', onmessage);
-    /* eslint-disable-next-line react-hooks/exhaustive-deps */
-  }, []);
+
+    return () => {
+      window.removeEventListener('message', onmessage);
+    };
+  }, [onmessage]);
 
   return (
     <StyledSvgPreviewerContainer>
@@ -173,7 +177,7 @@ export const SvgPreviewer: React.FC = () => {
       {svgCodeGroup && baseSvgCodeGroup && (
         <StyledSvgGroupContainer>
           {svgCodeGroup.map((svgCode, index) => (
-            <StyledSingleSvgWrapper>
+            <StyledSingleSvgWrapper key={baseSvgCodeGroup[index].name}>
               <P>{baseSvgCodeGroup[index].name}</P>
               {/* eslint-disable-next-line react/no-danger */}
               <div dangerouslySetInnerHTML={{__html: sanitizer(svgCode)}} />

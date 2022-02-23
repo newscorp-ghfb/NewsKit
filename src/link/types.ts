@@ -1,6 +1,7 @@
 import {MQ} from '../utils/style';
 import {EventData} from '../instrumentation';
 import {LogicalProps} from '../utils/logical-properties';
+import {TransitionToken} from '../theme/types';
 
 export interface BaseLinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
@@ -11,6 +12,7 @@ export interface BaseLinkProps
 
 interface LinkOverrides extends LogicalProps {
   stylePreset?: MQ<string>;
+  transitionPreset?: TransitionToken | TransitionToken[];
   typographyPreset?: MQ<string>;
   /**
    * @deprecated This property is deprecated and will be removed in the next major release. Use `marginInline` instead.

@@ -128,7 +128,7 @@ const whatNextCards = [
   },
 ];
 
-export default (layoutProps: LayoutProps) => (
+const EngineeringOverview = (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
       title: 'Engineering overview',
@@ -320,7 +320,7 @@ export default (layoutProps: LayoutProps) => (
       <ContentSection sectionName="what’s next?">
         <ContentPrimary
           id="whatsnext"
-          toc="what’s next?"
+          toc="What’s next?"
           headline="What’s next?"
           description="Want to use NewsKit for your next product? Follow the next steps belows to learn more:"
           showSeparator
@@ -332,13 +332,7 @@ export default (layoutProps: LayoutProps) => (
         </ContentPrimary>
       </ContentSection>
     </ComponentPageCell>
-    {/* ToDo: Once engineering quickstart guide and instrumentation setup page is ready, need to enable this section.
-    <RelatedComponentsSection
-      title="What’s next?"
-      id="whats-next"
-      toc="What’s next?"
-      introduction="Want to use NewsKit for your next product? Follow the next steps belows to learn more:"
-      related={['Engineering quickstart guide','Instrumentation Setup']}
-    /> */}
   </GuidePageTemplate>
 );
+
+export default EngineeringOverview;

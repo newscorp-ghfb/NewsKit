@@ -163,7 +163,7 @@ describe('Button', () => {
     const mockFunc = jest.fn();
 
     const props: ButtonLinkProps = {
-      href: 'http://localhost:6006',
+      href: '#link',
       onClick: () => {
         mockFunc(42);
       },
@@ -297,7 +297,7 @@ describe('Button instrumentation', () => {
       event: 'other event data',
     };
     const props: ButtonLinkProps = {
-      href: 'http://localhost:6006/',
+      href: '#link',
       eventContext,
     };
     const button = await renderWithTheme((() => (

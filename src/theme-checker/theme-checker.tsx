@@ -1,9 +1,10 @@
+/* istanbul ignore file */
 import React, {useEffect, useState} from 'react';
 import {Block} from '../block';
 import {Flow, Stack} from '../stack';
 import {TextBlock} from '../text-block';
 import {MQ} from '../utils';
-import {toKebabCase} from '../utils/to-kabab-case';
+import {toKebabCase} from '../utils/to-kebab-case';
 import {scenarios} from './scenarios';
 import {StyledWrapper} from './styled';
 
@@ -54,7 +55,9 @@ const ThemeCheckerScenario = ({
       </TextBlock>
     </Block>
     {stylePresetVariations.includes(name) ? (
-      <StylePresetsLoader name={name}>{children}</StylePresetsLoader>
+      <StylePresetsLoader key="name" name={name}>
+        {children}
+      </StylePresetsLoader>
     ) : (
       children({})
     )}
