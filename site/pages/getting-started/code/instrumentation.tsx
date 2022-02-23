@@ -12,7 +12,6 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-  ContentTertiary,
 } from '../../../components/content-structure';
 
 const customEventRows = [
@@ -162,9 +161,7 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
             events to your handlers.
           </P>
         </ContentPrimary>
-      </ContentSection>
 
-      <ContentSection sectionName="instrumentation provider">
         <ContentSecondary
           headline="Instrumentation provider"
           description={
@@ -232,9 +229,7 @@ const MyPage = (
             section below for more information and examples.
           </P>
         </ContentSecondary>
-      </ContentSection>
 
-      <ContentSection sectionName="middleware">
         <ContentSecondary
           headline="Middleware"
           description={
@@ -291,9 +286,7 @@ const instrumentation = createEventInstrumentation(handlers, {
 });`}
           </Code>
         </ContentSecondary>
-      </ContentSection>
 
-      <ContentSection sectionName="custom event firing">
         <ContentSecondary
           headline="Custom Event Firing"
           description="You should not need to add any instrumentation event firing to NewsKit components as this is already provided, but there may be a case where you have pre-existing custom components and wish to utilise the single NewsKit event instrumentation. This can be done easily in two ways;"
@@ -358,14 +351,10 @@ export const MySpecialCustomButton: React.FC<
   </button>
 ));`}
           </Code>
+          <Block spaceStack="space080" />
+          <Table columns={['Key', 'Value']} rows={customEventRows} />
         </ContentSecondary>
 
-        <ContentTertiary>
-          <Table columns={['Key', 'Value']} rows={customEventRows} />
-        </ContentTertiary>
-      </ContentSection>
-
-      <ContentSection sectionName="nested instrumentation providers & contexts">
         <ContentSecondary
           headline="Nested Instrumentation Providers & Contexts"
           description={
