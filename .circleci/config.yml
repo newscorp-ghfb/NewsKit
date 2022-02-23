@@ -489,10 +489,11 @@ jobs:
         default: 'default'
     <<: *working_directory
     executor: python
-    steps:
+    steps:  
       - checkout
       - attach_workspace:
           at: ~/project
+      - run: python --version
       - run:
           name: Install aws cli
           command: sudo pip install awscli
