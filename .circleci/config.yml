@@ -1157,6 +1157,7 @@ workflows:
       - build_push_docker_ecr:
           name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context
+          <<: *only_develop
           requires:
             - build_storybook
             - lint
