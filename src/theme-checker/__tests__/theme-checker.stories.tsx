@@ -17,6 +17,8 @@ import {
 import {tnlTheme} from '../themes/tnl-theme/tnl-theme';
 import {virginTheme} from '../themes/virgin-theme/virgin-theme';
 import {sunTheme} from '../themes/sun-theme/sun-theme';
+import {tnlRadioTheme} from '../themes/tnl-radio-theme/tnl-radio-theme';
+import {tnlSportTheme} from '../themes/tnl-sport-theme/tnl-sport-theme';
 
 export default {
   title: 'NewsKit Light/theme-checker',
@@ -48,6 +50,8 @@ const themes = [
   tnlTheme,
   virginTheme,
   sunTheme,
+  tnlRadioTheme,
+  tnlSportTheme,
 ];
 
 const ThemeSelector = ({children}: ThemeSelectorProps) => {
