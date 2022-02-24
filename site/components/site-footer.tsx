@@ -66,7 +66,6 @@ const FooterMenu = styled.div`
 const FooterLink = styled.span`
   text-align: center;
   justify-content: center;
-  ${getTypographyPresetFromTheme('utilityButton00')};
   ${getSizingCssFromTheme('paddingRight', {
     md: 'sizing050',
     lg: 'sizing080',
