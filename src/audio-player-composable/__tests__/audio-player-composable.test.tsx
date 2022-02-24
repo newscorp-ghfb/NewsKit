@@ -32,11 +32,13 @@ const recordedAudioPropsAutoplay: AudioWithProviderProps = {
 
 describe('Audio Player Composable', () => {
   const mediaElement = (window as any).HTMLMediaElement.prototype;
+
   beforeEach(() => {
     ['load', 'play', 'pause'].forEach(k => {
       mediaElement[k] = jest.fn();
     });
     window.open = jest.fn();
+    jest.useFakeTimers('legacy');
   });
 
   it('should render with no errors', () => {
@@ -93,6 +95,6 @@ describe('Audio Player Composable', () => {
     });
 
     // playButton should go back to loading state
-    expect(getByTestId('audio-player-play-button')).toMatchSnapshot();
+    expect(playPauseButton).toMatchSnapshot();
   });
 });

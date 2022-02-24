@@ -17,6 +17,7 @@ interface AudioPlayerProviderContext {
       target,
     }: SyntheticEvent<HTMLAudioElement, Event>) => void;
     onTimeUpdate: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
+    onWaiting: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
   };
   duration: number;
   trackPositionArr: number[];
