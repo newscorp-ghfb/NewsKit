@@ -944,3 +944,35 @@ exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicat
   </svg>
 </DocumentFragment>
 `;
+
+exports[`customToNewsKit renders icon with overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
+  width: 48px;
+  height: 48px;
+}
+
+<svg
+    aria-hidden="true"
+    class="emotion-0"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="12"
+      cy="12"
+      r="12"
+    />
+  </svg>
+</DocumentFragment>
+`;

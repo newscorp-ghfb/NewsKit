@@ -9,7 +9,7 @@ import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const renderIconStylePreset = (overridesOnly: boolean) => (props: any) => {
-  if (!overridesOnly || props?.overrides?.stylePreset) {
+  if (!overridesOnly || (props.overrides && props.overrides.stylePreset)) {
     const stylePreset = getStylePreset('icons', '', {
       isSvg: true,
     })(props);
@@ -47,9 +47,9 @@ export const toNewsKitIcon = (
           && {
             //we don't want the icon to have a default size hence using non defaulted functions
             ${props.overrides?.size &&
-            getSizingCssFromTheme('width', props.overrides?.size)}
+            getSizingCssFromTheme('width', props.overrides.size)}
             ${props.overrides?.size &&
-            getSizingCssFromTheme('height', props.overrides?.size)}
+            getSizingCssFromTheme('height', props.overrides.size)}
         // If overridden, render SP CSS here instead - this ensures we override fill color from parent SP.
         ${renderIconStylePreset(true)}
           }
