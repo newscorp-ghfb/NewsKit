@@ -58,20 +58,17 @@ const FooterMenu = styled.div`
   ${getSizingCssFromTheme('paddingTop', 'sizing010')};
   ${getTypographyPresetFromTheme('utilityButton020')};
   ${getMediaQueryFromTheme('md')} {
-    display: flex;
     ${getSizingCssFromTheme('paddingBottom', 'sizing020')};
+    display: flex;
   }
 `;
 
 const FooterLink = styled.span`
   text-align: center;
-  justify-content: center;
-  ${getSizingCssFromTheme('paddingRight', {
-    md: 'sizing050',
-    lg: 'sizing080',
-  })};
+  ${getSizingCssFromTheme('paddingRight', 'sizing080')};
   ${getMediaQueryFromTheme('xs')} {
     display: block;
+    ${getSizingCssFromTheme('paddingRight', 'sizing000')};
     ${getSizingCssFromTheme('paddingBottom', 'sizing050')};
   }
 `;
@@ -83,7 +80,7 @@ const year = new Date().getUTCFullYear();
 const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
   <>
     <Footer>
-      <Block spaceStack={{xs: 'space080', md: 'space080', lg: 'space090'}} />
+      <Block spaceStack={{xs: 'space080', lg: 'space090'}} />
       <Grid xsRowGutter="space060" mdRowGutter="space000">
         <Cell {...cellProps}>
           <FooterMenu>
