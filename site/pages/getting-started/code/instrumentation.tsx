@@ -147,11 +147,10 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
               but you can also pass your own custom handlers.
             </>
             <>
-              an array of event handler functions; an event handler function
-              simply takes an array of events and returns the same. There are
-              two handlers provided by NewsKit, a console and Tealium handler
-              (exported under <InlineCode>instrumentationHandlers</InlineCode>),
-              but you can also pass your own custom handlers.
+              an event context object; this is an optional, but recommended,
+              object of contextual data relevant to the page the events are
+              being fired from. It might contain for example the page URL and a
+              user identifier.
             </>
           </UnorderedList>
           <P overrides={contentOverrides}>
