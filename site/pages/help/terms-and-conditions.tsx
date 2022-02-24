@@ -57,7 +57,10 @@ const Introduction = ({path, ...props}: LayoutProps) => (
             <br />
             In the event of a conflict between these Terms and the Open Source
             Terms in any way, the{' '}
-            <Link href="https://newskit.co.uk/" target="_blank">
+            <Link
+              href="https://github.com/newscorp-ghfb/newskit/blob/main/LICENSE"
+              target="_blank"
+            >
               Open Source Terms
             </Link>{' '}
             shall prevail in relation to your usage of any Components (including
@@ -150,7 +153,10 @@ const Introduction = ({path, ...props}: LayoutProps) => (
               <br />
               For the avoidance of doubt, you may use the NewsKit OSS in
               accordance with the{' '}
-              <Link href="https://newskit.co.uk/" target="_blank">
+              <Link
+                href="https://github.com/newscorp-ghfb/newskit/blob/main/LICENSE"
+                target="_blank"
+              >
                 Open Source Terms.
               </Link>
             </>

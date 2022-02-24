@@ -1,3 +1,24 @@
+OPEN SOURCE
+
+This page sets out the details of the licences that apply to the open source software used in NewsKit. You should read and comply with the terms of these licences when using NewsKit.
+
+
+NEWS UK SOFTWARE
+
+The code that has been developed by or on behalf of News UK to form the basis of NewsKit (“NewsKit OSS”) is published by News UK under the 3-Clause BSD License. The terms of the 3-Clause BSD License are shown below.
+
+
+THIRD PARTY SOFTWARE
+
+NewsKit incorporates some components of open source software published by people other than News UK.  Details of these components, and their related licences, are set out in the table below.
+
+The NewsKit OSS also refers, or links, to other components of open source software published by people other than News UK. You should ensure that you check, and comply with, the terms of the licences for those components before using them.
+
+There may be provisions in the licences for these third party components or NewsKit OSS that override aspects of News UK’s Website Terms and Conditions [INSERT LINK TO WEBSITE TERMS AND CONDITIONS].
+
+
+NEWSKIT OSS LICENCE TERMS
+
 BSD 3-Clause License
 
 Copyright (c) 2021, News Corp
@@ -27,3 +48,11 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+LIST OF INCORPORATED THIRD PARTY OSS
+
+| Component / Software Name  | Open Source Licence Type      | Copyright Holder          | Applicable Licence Terms                                                      |
+| -------------------------- | ----------------------------------------------------------|-------------------------------------------------------------------------------|
+| [INSERT COMPONENT NAME]    | [SIL Open Font License, v1.1] | [INSERT COPYRIGHT HOLDER] | Licence Text - [https://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web] |
+| [INSERT COMPONENT NAME]    | [Apache License, version 2.0] | [INSERT COPYRIGHT HOLDER] | Licence Text - [https://www.apache.org/licenses/LICENSE-2.0.html]             |
