@@ -120,9 +120,7 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
             </FooterLink>
             <FooterLink>
               <Link
-                href="https://www.newscareers.co.uk/"
-                target="_blank"
-                external={false}
+                href="/help/terms-and-conditions"
                 overrides={{stylePreset: 'linkFooter'}}
               >
                 Terms & conditions

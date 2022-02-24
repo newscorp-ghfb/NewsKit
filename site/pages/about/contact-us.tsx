@@ -88,10 +88,7 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
           description={
             <>
               For any other enquiries related to NewsUK{' '}
-              <Link
-                href="https://newsuktechnology.slack.com/archives/CTFGLAK9C"
-                target="_blank"
-              >
+              <Link href="https://www.news.co.uk/contact-us/" target="_blank">
                 click here.
               </Link>
             </>
