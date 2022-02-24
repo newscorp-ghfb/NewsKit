@@ -477,28 +477,28 @@ const App = () => (
           <Block spaceStack="space080" />
           <Code>
             {`const RailItem: React.FC<{itemId: number}> = ({itemId, ...props}) => {
-2  const {fireEvent} = useInstrumentation();
-3  return (
-4    <InstrumentationProvider
-5      context={{
-6        // THIS WON'T BE INCLUDED! The fireEvent above is outside the scope of this provider!
-7        railItemId: itemId,
-8      }}
-9    >
-10      <button
-11        {...props}
-12        onClick={() => {
-13          fireEvent({
-14            originator: 'button',
-15            trigger: EventTrigger.Click,
-16          });
-17        }}
-18      >
-19        {itemId}: A really great item!
-20      </button>
-21    </InstrumentationProvider>
-22  );
-23};`}
+const {fireEvent} = useInstrumentation();
+return (
+  <InstrumentationProvider
+    context={{
+      // THIS WON'T BE INCLUDED! The fireEvent above is outside the scope of this provider!
+      railItemId: itemId,
+    }}
+  >
+    <button
+       {...props}
+       onClick={() => {
+         fireEvent({
+           originator: 'button',
+           trigger: EventTrigger.Click,
+         });
+       }}
+     >
+      {itemId}: A really great item!
+    </button>
+  </InstrumentationProvider>
+ );
+};`}
           </Code>
           <Block spaceStack="space080" />
           <P overrides={contentOverrides}>
