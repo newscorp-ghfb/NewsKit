@@ -11,3 +11,4 @@ export * from './icon-filled-chrome';
 export * from './icon-filled-firefox';
 export * from './icon-filled-safari';
 export * from './icon-filled-edge';
+export * from './icon-filled-timer';

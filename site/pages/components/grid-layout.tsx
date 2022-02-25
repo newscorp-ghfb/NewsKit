@@ -17,7 +17,7 @@ const BigRedBlock = styled.div`
   background: red;
 `;
 
-export default (layoutProps: LayoutProps) => (
+const GridLayoutComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'GridLayout',
@@ -119,7 +119,7 @@ export default (layoutProps: LayoutProps) => (
       introduction: `Below are the properties for the Grid Layout component:`,
       components: [
         {
-          title: 'Grid Layout',
+          title: 'GridLayout',
           summary:
             'Grid Layout has a range of props that can be used to define an appropriate experience for different use cases.',
           propsRows: [
@@ -236,7 +236,7 @@ export default (layoutProps: LayoutProps) => (
           ],
         },
         {
-          title: 'Grid Layout Item',
+          title: 'GridLayoutItem',
           summary:
             'Grid Layout Item has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit GridLayout component.',
           propsRows: [
@@ -268,9 +268,25 @@ export default (layoutProps: LayoutProps) => (
               description:
                 'Aligns an item inside its containing block on the block axis.',
             },
+            {
+              name: 'column',
+              type: 'MQ<string>',
+              required: false,
+              description:
+                'Determines a grid item’s location within the grid by referring to specific grid columns.',
+            },
+            {
+              name: 'row',
+              type: 'MQ<string>',
+              required: false,
+              description:
+                'Determines a grid item’s location within the grid by referring to specific rows.',
+            },
           ],
         },
       ],
     }}
   />
 );
+
+export default GridLayoutComponent;

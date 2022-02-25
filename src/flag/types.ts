@@ -1,3 +1,4 @@
+import {TransitionToken} from '../theme/types';
 import {MQ} from '../utils/style';
 
 export enum FlagSize {
@@ -9,6 +10,7 @@ export enum FlagSize {
 export interface BaseFlagOverrides {
   typographyPreset?: MQ<string>;
   stylePreset?: MQ<string>;
+  transitionPreset?: TransitionToken | TransitionToken[];
   spaceInset?: MQ<string>;
   spaceInline?: MQ<string>;
   width?: MQ<string>;
@@ -27,5 +29,5 @@ export interface BaseFlagProps<TOverrides> {
   size?: 'small' | 'medium' | 'large';
   children?: React.ReactNode;
 }
-
-export interface FlagProps extends BaseFlagProps<BaseFlagOverrides> {}
+export interface FlagProps
+  extends BaseFlagProps<Omit<BaseFlagOverrides, 'transitionPreset'>> {}

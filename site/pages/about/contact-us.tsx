@@ -15,12 +15,16 @@ const PageIntroductionContainer = styled.div`
   ${getSizingCssFromTheme('marginBottom', 'sizing090')}
 `;
 
-export default ({path, ...props}: LayoutProps) => (
+const ContactUs = ({path, ...props}: LayoutProps) => (
   <Layout {...props} path={`${path}-new`}>
     <HeadNextSeo
       title="Contact us"
       description="Have a question about our design system? 
         The NewsKit team is here to help you."
+      image={{
+        url: 'social/about.png',
+        alt: 'Contact us',
+      }}
     />
 
     <PageIntroductionContainer>
@@ -79,3 +83,5 @@ export default ({path, ...props}: LayoutProps) => (
     </ComponentPageCell>
   </Layout>
 );
+
+export default ContactUs;

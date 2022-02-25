@@ -94,3 +94,18 @@ exports[`Block with props renders with spaceStack020 1`] = `
   />
 </DocumentFragment>
 `;
+
+exports[`Block with props renders with transitionPresets 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-delay: 500ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;

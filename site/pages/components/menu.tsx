@@ -26,7 +26,7 @@ const PlaygroundContainer = styled.div`
   }
 `;
 
-export default (layoutProps: LayoutProps) => (
+const MenuComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Menu',
@@ -732,6 +732,26 @@ export default (layoutProps: LayoutProps) => (
               description: `Overrides the stylePreset of the icon, label and background of the Menu Item.`,
             },
             {
+              attribute: 'menuItem.vertical.transitionPreset',
+              type: 'TransitionToken | TransitionToken[]',
+              default: [
+                'backgroundColorChange',
+                'borderColorChange',
+                'fontColorChange',
+              ],
+              description: `Overrides the transitionPreset of the Menu Item.`,
+            },
+            {
+              attribute: 'menuItem.horizontal.transitionPreset',
+              type: 'TransitionToken | TransitionToken[]',
+              default: [
+                'backgroundColorChange',
+                'borderColorChange',
+                'fontColorChange',
+              ],
+              description: `Overrides the transitionPreset of the Menu Item.`,
+            },
+            {
               attribute: 'menuItem.vertical.spaceInline',
               type: 'MQ<string>',
               default: 'space020',
@@ -796,3 +816,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default MenuComponent;

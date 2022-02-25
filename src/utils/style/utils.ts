@@ -1,5 +1,12 @@
-import {Theme, TransitionPreset, TransitionToken} from '../../theme/types';
+import {
+  Theme,
+  TransitionPreset,
+  TransitionToken,
+  UncompiledTheme,
+} from '../../theme/types';
 import {deepMerge} from '../deep-merge';
+import {recurseUnknown} from '../recurse-unknown';
+import {errorLogger} from './error-logger';
 
 export const endsWith = (value: string, checks: string[]): boolean =>
   checks.some(c => value.endsWith(c));
@@ -224,7 +231,7 @@ const unifyToken = (token: TransitionToken) => {
 };
 
 export const unifyTransition = (
-  theme: Theme,
+  theme: Theme | UncompiledTheme,
   transitionToken: TransitionToken,
 ) => {
   const {extend: tokenName, overrides} = unifyToken(transitionToken);
@@ -234,7 +241,15 @@ export const unifyTransition = (
 
   if (!baseTransitionPreset) return undefined;
 
-  return Object.keys(overrides).length
-    ? deepMerge({}, baseTransitionPreset, overrides)
+  const compiledThemeResults = recurseUnknown(
+    theme as UncompiledTheme,
+    overrides,
+    errorLogger,
+  );
+
+  const compiledResults = Object.keys(compiledThemeResults as object).length
+    ? deepMerge({}, baseTransitionPreset, compiledThemeResults)
     : baseTransitionPreset;
+
+  return compiledResults;
 };
