@@ -16,36 +16,8 @@ import {
 import {Link} from './link';
 
 const Footer = styled.footer`
-  flex-shrink: 0;
-
-  ${getSizingCssFromTheme('paddingBottom', {
-    xs: 'sizing070',
-    md: 'sizing000',
-    lg: 'sizing040',
-  })};
   ${getColorCssFromTheme('background', 'interface020')}
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -50%;
-    left: -50%;
-    transform: scale(0.5);
-  }
-
-  ${getMediaQueryFromTheme('sm')} {
-    &::before {
-      right: 0;
-      left: 0;
-      transform: scale(1);
-    }
-  }
-`;
-
-const FooterCopy = styled(TextBlock)`
-  text-align: center;
+  ${getSizingCssFromTheme('paddingBottom', 'sizing070')};
 `;
 
 const FooterMenu = styled.div`
@@ -54,8 +26,8 @@ const FooterMenu = styled.div`
   ${getSizingCssFromTheme('paddingTop', 'sizing010')};
   ${getTypographyPresetFromTheme('utilityButton020')};
   ${getMediaQueryFromTheme('md')} {
-    ${getSizingCssFromTheme('paddingBottom', 'sizing020')};
     display: flex;
+    ${getSizingCssFromTheme('paddingBottom', 'sizing020')};
   }
 `;
 
@@ -75,6 +47,15 @@ const FooterLink = styled.span`
     }
   }
 `;
+
+const FooterCopy = styled(TextBlock)`
+  text-align: center;
+`;
+
+const linkOverrides = {
+  stylePreset: 'linkFooter',
+};
+
 interface FooterProps {
   cellProps?: CellProps;
 }
@@ -92,7 +73,7 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
                 href="https://www.newscareers.co.uk/"
                 target="_blank"
                 external={false}
-                overrides={{stylePreset: 'linkFooter'}}
+                overrides={linkOverrides}
               >
                 Careers
               </Link>
@@ -102,7 +83,7 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
                 href="https://medium.com/newskit-design-system"
                 target="_blank"
                 external={false}
-                overrides={{stylePreset: 'linkFooter'}}
+                overrides={linkOverrides}
               >
                 Blog
               </Link>
@@ -119,10 +100,7 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
               </ConsentSettingsLink>
             </FooterLink>
             <FooterLink>
-              <Link
-                href="/help/terms-and-conditions"
-                overrides={{stylePreset: 'linkFooter'}}
-              >
+              <Link href="/help/terms-and-conditions" overrides={linkOverrides}>
                 Terms & conditions
               </Link>
             </FooterLink>
@@ -133,10 +111,7 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
           <FooterCopy
             as="div"
             stylePreset="inkSubtle"
-            typographyPreset={{
-              xs: 'utilityMeta010',
-              md: 'utilityMeta020',
-            }}
+            typographyPreset="utilityMeta010"
           >
             <Block spaceStack="space050">
               <Divider />
