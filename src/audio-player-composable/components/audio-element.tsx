@@ -4,7 +4,13 @@ import {AudioPlayerContext} from '../context';
 
 export const AudioElement = () => {
   const {src, audioRef, audioEvents, autoPlay} = useContext(AudioPlayerContext);
-  const {onCanPlay, onDurationChange, onTimeUpdate, onWaiting} = audioEvents!;
+  const {
+    onCanPlay,
+    onDurationChange,
+    onTimeUpdate,
+    onWaiting,
+    onEnded,
+  } = audioEvents!;
 
   return (
     <audio
@@ -14,6 +20,7 @@ export const AudioElement = () => {
       onCanPlay={onCanPlay}
       onDurationChange={onDurationChange}
       onWaiting={onWaiting}
+      onEnded={onEnded}
       onTimeUpdate={onTimeUpdate}
       data-testid="audio-element"
     />

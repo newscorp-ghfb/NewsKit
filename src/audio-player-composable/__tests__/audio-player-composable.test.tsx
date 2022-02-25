@@ -1,10 +1,36 @@
 /* eslint-disable no-console */
 import React from 'react';
 import {fireEvent, act} from '@testing-library/react';
-import {renderWithTheme} from '../../test/test-utils';
+import {renderWithImplementation, renderWithTheme} from '../../test/test-utils';
 import {AudioPlayerComposable} from '../audio-player-composable';
 import {PlayPauseButton} from '../components/play-pause-button';
 import {AudioPlayerComposableProps} from '../types';
+
+const version = '0.10.0';
+
+jest.mock('../../version-number.json', () => ({version: '0.10.0'}));
+
+jest.mock('../utils', () => {
+  const originalModule = jest.requireActual('../utils');
+  return {
+    ...originalModule,
+    getMediaSegment: jest.fn(() => 'MockMediaSegment'),
+  };
+});
+
+const recordedTrackingOutputObject = {
+  originator: 'audio-player-play-pause-button',
+  trigger: 'click',
+  context: {
+    media_player: `newskit-audio-player-${version}`,
+    media_duration: '00:00',
+    media_type: 'audio',
+    // TODO should be "2" once implemented the seekbar
+    media_milestone: 'NaN',
+    media_offset: '00:00',
+    media_segment: 'MockMediaSegment',
+  },
+};
 
 const recordedAudioProps: AudioPlayerComposableProps = {
   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
@@ -93,8 +119,27 @@ describe('Audio Player Composable', () => {
     act(() => {
       jest.advanceTimersByTime(750);
     });
-
     // playButton should go back to loading state
     expect(playPauseButton).toMatchSnapshot();
+  });
+
+  test('raise event when the track has ended', () => {
+    const fireEventSpy = jest.fn();
+    const {getByTestId} = renderWithImplementation(
+      AudioPlayerComposable,
+      recordedAudioProps,
+      fireEventSpy,
+    );
+
+    const expectedObject = {
+      ...recordedTrackingOutputObject,
+      originator: 'audio-complete',
+      trigger: 'end',
+    };
+
+    const player = getByTestId('audio-element');
+    fireEvent.ended(player);
+
+    expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
   });
 });

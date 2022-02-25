@@ -126,6 +126,8 @@ export const useAudioFunctions = ({
     setLoading(false);
   }, [setLoading, showLoaderTimeoutRef]);
 
+  // TODO remove ignore once implemented audio functionality
+  /* istanbul ignore next */
   const updateAudioTime = useCallback(
     (playerTime: number) => {
       const newPlayerTime = getValueInRange(playerTime, [0, duration]);
@@ -200,6 +202,8 @@ export const useAudioFunctions = ({
     fireEvent(trackingInformation);
   }, [fireEvent, getTrackingInformation, updateAudioTime, trackPositionRef]);
 
+  // TODO remove ignore once implementing seekbar
+  /* istanbul ignore next */
   const onDurationChange = useCallback(
     ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
       const tgt = target as HTMLAudioElement;
@@ -275,10 +279,14 @@ export const useAudioFunctions = ({
     }
   }, [loading, playing, onPause, onPlay]);
 
+  // TODO remove ignore once implementing seekbar
+  /* istanbul ignore next-line */
   const onProgress = ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
     setBuffered((target as HTMLAudioElement).buffered);
   };
 
+  // TODO remove ignore once implementing seekbar
+  /* istanbul ignore next */
   const onTimeUpdate = ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
     const eventTime = Math.floor((target as HTMLAudioElement).currentTime);
     if (trackPositionRef.current !== eventTime) {
