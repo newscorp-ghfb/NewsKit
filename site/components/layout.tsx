@@ -225,8 +225,8 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
               <SiteFooter
                 cellProps={{
                   xs: 12,
-                  md: 10,
-                  mdOffset: 1,
+                  xl: 10,
+                  xlOffset: 1,
                 }}
               />
             ) : (
