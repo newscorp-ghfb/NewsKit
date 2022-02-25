@@ -35,7 +35,10 @@ const BaseFlag = React.forwardRef<
       >
         {React.Children.map(children, child =>
           ['string', 'number'].includes(typeof child) ? (
-            <TextBlock as="span" typographyPreset={overrides?.typographyPreset}>
+            <TextBlock
+              as="span"
+              typographyPreset={overrides && overrides.typographyPreset}
+            >
               {child}
             </TextBlock>
           ) : (
