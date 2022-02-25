@@ -37,12 +37,12 @@ const Introduction = ({path, ...props}: LayoutProps) => (
       introduction={
         <>
           <P overrides={contentOverrides}>
-            Welcome to the Website Terms and Conditions of Use (**Terms**) which
-            apply to{' '}
+            Welcome to the Website Terms and Conditions of Use (<b>Terms</b>)
+            which apply to{' '}
             <Link href="https://newskit.co.uk/" target="_blank">
               https://newskit.co.uk/
             </Link>{' '}
-            (the **Website**).
+            (the <b>Website</b>).
             <br />
             <br />
             By using our Website you agree to be legally bound by these Terms.
@@ -50,9 +50,9 @@ const Introduction = ({path, ...props}: LayoutProps) => (
             <br />
             <br />
             On this Website, we make available various software components,
-            features and tools (**Components**), including code which has been
-            developed by or on behalf of News UK to form the basis of NewsKit
-            (**NewsKit OSS**).
+            features and tools (<b>Components</b>), including code which has
+            been developed by or on behalf of News UK to form the basis of
+            NewsKit (<b>NewsKit OSS</b>).
             <br />
             <br />
             Separate terms may apply to your usage of NewsKit OSS and other
@@ -248,22 +248,26 @@ const Introduction = ({path, ...props}: LayoutProps) => (
             restricts the use of our Website by other users;
           </>
           <>
-            **News UK** means News Corp UK & Ireland Limited, 1 London Bridge
+            <b>News UK</b> means News Corp UK & Ireland Limited, 1 London Bridge
             Street, London, SE1 9GF, together with any of its subsidiaries from
             time to time.
           </>
           <>
-            **Our content** means any text, files, images, photos, graphics,
+            <b>Our content</b> means any text, files, images, photos, graphics,
             video, sounds, musical works or any other materials that we post on
             or through the Website.
           </>
           <>
-            **Third party content** means any text, files, images, photos,
+            <b>Third party content</b> means any text, files, images, photos,
             graphics, video, sounds, musical works or any other materials posted
             on or through the Website by our third party partners.
           </>
-          <>**Us, our, we** means News UK.</>
-          <>**You, your, yours** means you as a user of the Website.</>
+          <>
+            <b>Us, our, we</b> means News UK.
+          </>
+          <>
+            <b>You, your, yours</b> means you as a user of the Website.
+          </>
         </UnorderedList>
       </ContentSecondary>
     </ComponentPageCell>
