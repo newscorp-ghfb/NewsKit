@@ -45,15 +45,11 @@ const Footer = styled.footer`
 `;
 
 const FooterCopy = styled(TextBlock)`
-  position: relative;
   text-align: center;
 `;
 
 const FooterMenu = styled.div`
-  height: 100%;
   display: block;
-  flex-wrap: nowrap;
-  align-items: center;
   justify-content: center;
   ${getSizingCssFromTheme('paddingTop', 'sizing010')};
   ${getTypographyPresetFromTheme('utilityButton020')};
@@ -65,11 +61,18 @@ const FooterMenu = styled.div`
 
 const FooterLink = styled.span`
   text-align: center;
-  ${getSizingCssFromTheme('paddingRight', 'sizing080')};
+  display: block;
+  ${getSizingCssFromTheme('marginBottom', 'sizing050')};
   ${getMediaQueryFromTheme('xs')} {
-    display: block;
-    ${getSizingCssFromTheme('paddingRight', 'sizing000')};
-    ${getSizingCssFromTheme('paddingBottom', 'sizing050')};
+    :last-child {
+      ${getSizingCssFromTheme('marginBottom', 'sizing000')};
+    }
+  }
+  ${getMediaQueryFromTheme('md')} {
+    ${getSizingCssFromTheme('marginRight', 'sizing080')};
+    :last-child {
+      ${getSizingCssFromTheme('marginBottom', 'sizing050')};
+    }
   }
 `;
 interface FooterProps {
