@@ -1,16 +1,15 @@
-/* eslint-disable no-console */
+import {act, fireEvent} from '@testing-library/react';
 import React from 'react';
-import {fireEvent, act} from '@testing-library/react';
 import {renderWithTheme} from '../../test/test-utils';
 import {AudioPlayerComposable} from '../audio-player-composable';
-import {PlayPauseButton} from '../components/play-pause-button';
 import {AudioPlayerComposableProps} from '../types';
+import {UserPlayPauseButton} from '../user-test-components/userPlayPauseButton';
 
 const recordedAudioProps: AudioPlayerComposableProps = {
   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
   autoPlay: false,
   children: (
-    <PlayPauseButton
+    <UserPlayPauseButton
       onClick={() => {
         console.log('extra click function');
       }}
@@ -22,7 +21,7 @@ const recordedAudioPropsAutoplay: AudioPlayerComposableProps = {
   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
   autoPlay: true,
   children: (
-    <PlayPauseButton
+    <UserPlayPauseButton
       onClick={() => {
         console.log('extra click function');
       }}
@@ -30,7 +29,7 @@ const recordedAudioPropsAutoplay: AudioPlayerComposableProps = {
   ),
 };
 
-describe('Audio Player Composable', () => {
+describe('Audio Player Composable using custom components', () => {
   const mediaElement = (window as any).HTMLMediaElement.prototype;
 
   beforeEach(() => {

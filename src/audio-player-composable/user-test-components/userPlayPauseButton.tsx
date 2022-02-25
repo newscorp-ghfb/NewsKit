@@ -11,6 +11,7 @@ export interface UserPlayPauseButtonProps {
 export const UserPlayPauseButton: React.FC<UserPlayPauseButtonProps> = React.memo(
   ({onClick, ...props}) => {
     const {getPlayPauseButtonProps} = useContext(AudioPlayerContext);
+
     const {playStateIcon, ...playPauseButtonProps} =
       getPlayPauseButtonProps! && getPlayPauseButtonProps();
 
@@ -18,7 +19,7 @@ export const UserPlayPauseButton: React.FC<UserPlayPauseButtonProps> = React.mem
       <IconButton
         {...props}
         {...playPauseButtonProps}
-        data-testid="audio-player-play-button"
+        data-testid="audio-player-play-pause-button"
         size={ButtonSize.Large}
       >
         {playStateIcon}

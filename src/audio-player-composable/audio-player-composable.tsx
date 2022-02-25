@@ -5,7 +5,7 @@ import {IconFilledStop} from '../icons/filled/material/icon-filled-stop';
 import {AudioElement} from './components/audio-element';
 import {useAudioFunctions} from './audio-functions';
 import {AudioPlayerProvider} from './context';
-import {AudioWithProviderProps} from './types';
+import {AudioPlayerComposableProps} from './types';
 
 export const AudioPlayerComposable = ({
   children,
@@ -13,7 +13,7 @@ export const AudioPlayerComposable = ({
   autoPlay = false,
   live = false,
   ariaLandmark,
-}: AudioWithProviderProps) => {
+}: AudioPlayerComposableProps) => {
   const trackPositionRef = useRef(0);
   const audioRef = useRef<HTMLAudioElement>(null);
   const showLoaderTimeoutRef: MutableRefObject<number> = useRef(0);
@@ -58,6 +58,8 @@ export const AudioPlayerComposable = ({
 
     if (playing) {
       ariaPressed = true;
+      // TODO remove ignore as we implement the "live" functionality back and write test for it
+      /* istanbul ignore next */
       if (live) {
         playStateIcon = <IconFilledPause />;
         ariaLabel = 'Pause';
@@ -85,7 +87,7 @@ export const AudioPlayerComposable = ({
   };
 
   const value = {
-    // Props hooks
+    // Props function getter
     getPlayPauseButtonProps,
 
     // Internal for AudioElement

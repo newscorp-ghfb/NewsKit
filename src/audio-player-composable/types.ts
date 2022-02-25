@@ -38,7 +38,7 @@ export interface PlayPauseButtonProps {
   overrides?: ButtonProps['overrides'];
 }
 
-export interface AudioWithProviderProps {
+export interface AudioPlayerComposableProps {
   children: React.ReactNode;
   src: string;
   autoPlay?: boolean;
