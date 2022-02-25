@@ -56,7 +56,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 LIST OF INCORPORATED THIRD PARTY OSS
 
-| Component / Software Name | Open Source Licence Type      | Copyright Holder          | Applicable Licence Terms                                                      |
-| ------------------------- | ----------------------------- | ------------------------- | ----------------------------------------------------------------------------- |
-| [INSERT COMPONENT NAME]   | [SIL Open Font License, v1.1] | [INSERT COPYRIGHT HOLDER] | Licence Text - [https://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web] |
-| [INSERT COMPONENT NAME]   | [Apache License, version 2.0] | [INSERT COPYRIGHT HOLDER] | Licence Text - [https://www.apache.org/licenses/LICENSE-2.0.html]             |
+| Component / Software Name | Open Source Licence Type   | Copyright Holder                                      | Applicable Licence Terms                                                 |
+| ------------------------- | -------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------ |
+| Bitter                    | SIL Open Font License, 1.1 | Copyright 2011 The Bitter Project Authors             | OFL - [https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL] |
+| DM Mono                   | SIL Open Font License, 1.1 | Copyright 2011 The Bitter Project Authors             | OFL - [https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL] |
+| Noto Sans                 | SIL Open Font License, 1.1 | Copyright 2012 Google Inc                             | OFL - [https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL] |
+| Poppins                   | SIL Open Font License, 1.1 | Copyright 2020 The Poppins Project Authors            | OFL - [https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL] |
+| Source Serif Pro          | SIL Open Font License, 1.1 | Copyright 2014, 2015, 2016 Adobe Systems Incorporated | OFL - [https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL] |
