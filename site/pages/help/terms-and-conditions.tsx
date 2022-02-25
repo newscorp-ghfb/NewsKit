@@ -1,5 +1,5 @@
 import React from 'react';
-import {UnorderedList, P} from 'newskit';
+import {UnorderedList, P, Block} from 'newskit';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {ComponentPageCell} from '../../components/layout-cells';
@@ -8,12 +8,18 @@ import {IconFilledCircle} from '../../components/icons';
 import {HeadNextSeo} from '../../components/head-next-seo';
 import {
   ContentSection,
-  ContentPrimary,
   ContentSecondary,
 } from '../../components/content-structure';
 
 const contentOverrides = {
   typographyPreset: 'editorialParagraph030',
+};
+
+const unorderedListOverrides = {
+  marker: {
+    spaceInline: 'space020',
+  },
+  content: contentOverrides,
 };
 
 const Introduction = ({path, ...props}: LayoutProps) => (
@@ -50,21 +56,20 @@ const Introduction = ({path, ...props}: LayoutProps) => (
             <br />
             <br />
             Separate terms may apply to your usage of NewsKit OSS and other
-            Components, including these Open Source Terms. You should ensure
-            that you check, and comply with, the terms of the licences for any
-            such Components before using them.
-            <br />
-            <br />
-            In the event of a conflict between these Terms and the Open Source
-            Terms in any way, the{' '}
+            Components, including these{' '}
             <Link
               href="https://github.com/newscorp-ghfb/newskit/blob/main/LICENSE"
               target="_blank"
             >
               Open Source Terms
-            </Link>{' '}
-            shall prevail in relation to your usage of any Components (including
-            NewsKit OSS).
+            </Link>
+            . You should ensure that you check, and comply with, the terms of
+            the licences for any such Components before using them.
+            <br />
+            <br />
+            In the event of a conflict between these Terms and the Open Source
+            Terms in any way, the Open Source Terms shall prevail in relation to
+            your usage of any Components (including NewsKit OSS).
           </P>
         </>
       }
@@ -72,7 +77,7 @@ const Introduction = ({path, ...props}: LayoutProps) => (
 
     <ComponentPageCell>
       <ContentSection sectionName="accessing and using our website">
-        <ContentPrimary
+        <ContentSecondary
           headline="Accessing and using our website"
           description={
             <>
@@ -93,21 +98,17 @@ const Introduction = ({path, ...props}: LayoutProps) => (
               our Website, we make no representations, warranties or guarantees,
               whether express or implied, that the content on our Website is
               accurate, complete or up-to-date.
-              <br />
-              <br />
-              In accessing any part of our Website, you agree not to:
             </>
           }
         >
+          <P overrides={contentOverrides}>
+            In accessing any part of our Website, you agree not to:
+          </P>
+          <Block spaceStack="space040" />
           <UnorderedList
             markerAlign="start"
             listItemMarker={IconFilledCircle}
-            overrides={{
-              marker: {
-                spaceInline: 'space020',
-              },
-              content: contentOverrides,
-            }}
+            overrides={unorderedListOverrides}
           >
             <>
               Use our Website in such a way that disrupts, interferes with or
@@ -135,7 +136,7 @@ const Introduction = ({path, ...props}: LayoutProps) => (
               Website.
             </>
           </UnorderedList>
-        </ContentPrimary>
+        </ContentSecondary>
 
         <ContentSecondary
           headline="Our content"
@@ -217,23 +218,30 @@ const Introduction = ({path, ...props}: LayoutProps) => (
       />
 
       <ContentSecondary
+        headline="Limitation of our liability to you"
+        description="You agree that to the extent permissible by law, your sole and only remedy for any problems, issues or concerns arising from the use of our Website is to stop using our Website."
+      />
+
+      <ContentSecondary
         headline="Indemnity"
         description="By using our Website, you agree to indemnify us and our agents, and any third party contributors to our Website, against any loss, damages or expenses incurred by us as a result of your breach of these Terms."
       />
 
       <ContentSecondary
         headline="Law and jurisdiction"
-        description="In these Terms, the following words and expressions have the following meanings:"
-      >
+        description="Any dispute or claim arising out of or in connection with our Website, these Terms and/or our Privacy Policy (including non-contractual disputes or claims) shall be governed by and construed in accordance with the laws of England and Wales and will be subject to the exclusive jurisdiction of the English courts."
+      />
+
+      <ContentSecondary headline="Other information">
+        <P overrides={contentOverrides}>
+          In these Terms, the following words and expressions have the following
+          meanings:
+        </P>
+        <Block spaceStack="space040" />
         <UnorderedList
           markerAlign="start"
           listItemMarker={IconFilledCircle}
-          overrides={{
-            marker: {
-              spaceInline: 'space020',
-            },
-            content: contentOverrides,
-          }}
+          overrides={unorderedListOverrides}
         >
           <>
             Use our Website in such a way that disrupts, interferes with or
