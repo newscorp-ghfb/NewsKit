@@ -15,7 +15,11 @@ import {LinkStandalone} from '../../link';
 export default {
   title: 'NewsKit Light/video-player/default',
   component: () => 'None',
-  disabledRules: ['landmark-unique'],
+  disabledRules: [
+    'landmark-unique',
+    'duplicate-id-aria',
+    'duplicate-id-active',
+  ],
 };
 
 export const StoryDefaultVideoPlayer = () => {
