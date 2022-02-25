@@ -225,7 +225,7 @@ const EXAMPLE_CARDS = [
   },
 ];
 
-export default (layoutProps: LayoutProps) => (
+const Fonts = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
       title: 'Fonts',
@@ -612,13 +612,13 @@ export default (layoutProps: LayoutProps) => (
           }
         >
           <Code>{`
-    import React from 'react';
-    import { TextBlock } from 'newskit';
-    
-    export default () => (
-      <TextBlock noCrop>TextBlock Content</TextBlock>
-    );
-    `}</Code>
+  import React from 'react';
+  import { TextBlock } from 'newskit';
+  
+  export default () => (
+    <TextBlock noCrop>TextBlock Content</TextBlock>
+  );
+  `}</Code>
         </ContentTertiary>
 
         <ContentTertiary
@@ -646,3 +646,5 @@ export default (layoutProps: LayoutProps) => (
     </ComponentPageCell>
   </FoundationPageTemplate>
 );
+
+export default Fonts;

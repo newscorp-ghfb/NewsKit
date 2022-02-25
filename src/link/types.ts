@@ -1,5 +1,6 @@
 import {MQ} from '../utils/style';
 import {EventData} from '../instrumentation';
+import {TransitionToken} from '../theme/types';
 
 export interface BaseLinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
@@ -12,6 +13,7 @@ export interface InternalLinkProps extends BaseLinkProps {
   external?: boolean;
   overrides?: {
     stylePreset?: MQ<string>;
+    transitionPreset?: TransitionToken | TransitionToken[];
     typographyPreset?: MQ<string>;
     spaceInline?: MQ<string>;
     externalIcon?: {

@@ -8,9 +8,11 @@ import {styled} from '../utils/style';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {getTransitionPreset} from '../utils/style/transition-preset';
 
 const StyledFlag = styled(Flag)`
   ${({href, disabled}: TagProps) => href && !disabled && {cursor: 'pointer'}}
+  ${({size}) => getTransitionPreset(`tag.${size}`, '')};
 `;
 
 const ThemelessTag = ({overrides = {}, disabled, href, ...props}: TagProps) => {

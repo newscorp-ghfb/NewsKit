@@ -559,6 +559,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "200ms",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "cubic-bezier(0, 0, .5, 1)",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "200ms",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "cubic-bezier(0, 0, .5, 1)",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -584,6 +598,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "200ms",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "cubic-bezier(0, 0, .5, 1)",
       },
     },
     "grow": Object {
@@ -616,6 +637,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "200ms",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "200ms",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "cubic-bezier(0, 0, .5, 1)",
       },
     },
     "moveUp": Object {

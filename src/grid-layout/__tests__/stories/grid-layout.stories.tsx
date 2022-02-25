@@ -5,6 +5,7 @@ import {Divider} from '../../../divider';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {GridCard, GridTeaser} from './grid-card';
 import {GridBox} from './common';
+import {Grid, Cell} from '../../../grid';
 import {Label} from '../../..';
 import {
   StorybookHeading,
@@ -257,3 +258,128 @@ export const CardWithGrid = () => (
 
 export * from './the-times';
 export * from './the-sun';
+
+const NewBox = styled.div`
+  height: 50px;
+  background: red;
+  border: 2px dotted black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 50px;
+`;
+const OldBox = styled(NewBox)`
+  background: green;
+`;
+
+const createItems = (count: number) => Array.from(Array(count));
+
+const sameColumns = [12, 6, 4, 3, 2, 1];
+const differentColumns = [
+  [8, 4],
+  [9, 3],
+  [3, 6, 3],
+  [5, 5, 2],
+  [1, 2, 3, 4, 2],
+];
+const columnGap = 'space030';
+const rowGap = 'space020';
+
+const Container = styled.div`
+  width: 1000px;
+`;
+
+export const GridComparison = () => (
+  <Container>
+    <StorybookHeading>Legend</StorybookHeading>
+    <GridLayout columns="auto auto">
+      <NewBox>Red - GridLayout component</NewBox>
+      <OldBox>Green - Legacy Grid component</OldBox>
+    </GridLayout>
+
+    <StorybookHeading>GridLayout with 12 Columns</StorybookHeading>
+    {differentColumns.map(columns => (
+      <>
+        <GridLayout columns="repeat(12, 1fr)" columnGap={columnGap}>
+          {columns.map(span => (
+            <GridLayoutItem column={`auto / span ${span}`}>
+              <NewBox>{span}</NewBox>
+            </GridLayoutItem>
+          ))}
+        </GridLayout>
+        <Grid xsColumnGutter={columnGap} xsMargin="space000">
+          {columns.map(n => (
+            <Cell xs={n}>
+              <OldBox>{n}</OldBox>
+            </Cell>
+          ))}
+        </Grid>
+        <hr />
+      </>
+    ))}
+    <br />
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <br />
+    <StorybookHeading>GridLayout with columns per size</StorybookHeading>
+    {differentColumns.map(columns => (
+      <>
+        <GridLayout
+          columns={columns.map(c => `${c}fr`).join(' ')}
+          columnGap={columnGap}
+        >
+          {columns.map(n => (
+            <NewBox>{n}</NewBox>
+          ))}
+        </GridLayout>
+        <Grid xsColumnGutter={columnGap} xsMargin="space000">
+          {columns.map(n => (
+            <Cell xs={n}>
+              <OldBox>{n}</OldBox>
+            </Cell>
+          ))}
+        </Grid>
+        <hr />
+      </>
+    ))}
+
+    <br />
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <br />
+    <StorybookHeading>Same amount of columns</StorybookHeading>
+
+    {sameColumns.map(n => (
+      <>
+        <GridLayout
+          columns={`repeat(${n}, 1fr)`}
+          columnGap={columnGap}
+          rowGap={rowGap}
+        >
+          {createItems(n * 2).map(() => (
+            <NewBox>{12 / n}</NewBox>
+          ))}
+        </GridLayout>
+        <Grid
+          xsColumnGutter={columnGap}
+          xsMargin="space000"
+          xsRowGutter={rowGap}
+        >
+          {createItems(n * 2).map(() => (
+            <Cell xs={12 / n}>
+              <OldBox>{12 / n}</OldBox>
+            </Cell>
+          ))}
+        </Grid>
+        <hr />
+      </>
+    ))}
+  </Container>
+);
