@@ -28,7 +28,7 @@ export const AudioPlayPauseButtonAutoplay = () => (
   <AudioPlayerComposable
     autoPlay
     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    ariaLandmark="audio player"
+    ariaLandmark="audio player auto"
   >
     <PlayPauseButton
       onClick={() => {
@@ -43,7 +43,7 @@ AudioPlayPauseButtonAutoplay.storyName = 'audio-play-pause-button-autoplay';
 export const AudioCustomPlayPauseButton = () => (
   <AudioPlayerComposable
     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    ariaLandmark="audio player"
+    ariaLandmark="audio player auto custom"
   >
     <UserPlayPauseButton onClick={() => console.log('extra click function')} />
   </AudioPlayerComposable>
