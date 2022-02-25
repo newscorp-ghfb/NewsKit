@@ -9,7 +9,6 @@ import {
   styled,
   TextBlock,
   CellProps,
-  Block,
   Divider,
 } from 'newskit';
 import {Link} from './link';
@@ -35,22 +34,25 @@ const FooterMenu = styled.div`
 const FooterLink = styled.span`
   text-align: center;
   display: block;
-  ${getSizingCssFromTheme('marginBottom', 'sizing070')};
   ${getMediaQueryFromTheme('xs')} {
+    ${getSizingCssFromTheme('marginBottom', 'sizing070')};
     :last-child {
       ${getSizingCssFromTheme('marginBottom', 'sizing000')};
     }
   }
   ${getMediaQueryFromTheme('md')} {
     ${getSizingCssFromTheme('marginRight', 'sizing080')};
+    ${getSizingCssFromTheme('marginBottom', 'sizing050')};
     :last-child {
-      ${getSizingCssFromTheme('marginBottom', 'sizing070')};
+      ${getSizingCssFromTheme('marginBottom', 'sizing050')};
     }
   }
 `;
 
 const FooterCopy = styled(TextBlock)`
   text-align: center;
+  ${getSizingCssFromTheme('marginTop', 'sizing050')};
+  ${getSizingCssFromTheme('marginBottom', 'sizing070')};
 `;
 
 const linkOverrides = {
@@ -106,20 +108,16 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
         </Cell>
 
         <Cell {...cellProps}>
+          <Divider />
           <FooterCopy
             as="div"
             stylePreset="inkSubtle"
             typographyPreset="utilityMeta010"
           >
-            <Block spaceStack="space050">
-              <Divider />
-            </Block>
-            <Block spaceStack="space070">
-              Copyright &copy; {year} News Corp UK & Ireland Limited. All rights
-              reserved. This website is published by News Corp UK & Ireland
-              Limited, 1 London Bridge Street, London, SE1 9GF. Registered in
-              England No 81701. VAT number GB 243 8054 69.
-            </Block>
+            Copyright &copy; {year} News Corp UK & Ireland Limited. All rights
+            reserved. This website is published by News Corp UK & Ireland
+            Limited, 1 London Bridge Street, London, SE1 9GF. Registered in
+            England No 81701. VAT number GB 243 8054 69.
           </FooterCopy>
         </Cell>
       </Grid>
