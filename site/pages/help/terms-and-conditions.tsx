@@ -43,18 +43,15 @@ const Introduction = ({path, ...props}: LayoutProps) => (
               https://newskit.co.uk/
             </Link>{' '}
             (the **Website**).
-            <br />
-            <br />
+            <Block spaceStack="space060" />
             By using our Website you agree to be legally bound by these Terms.
             If you do not agree to these Terms, you should not use our Website.
-            <br />
-            <br />
+            <Block spaceStack="space060" />
             On this Website, we make available various software components,
             features and tools (**Components**), including code which has been
             developed by or on behalf of News UK to form the basis of NewsKit
             (**NewsKit OSS**).
-            <br />
-            <br />
+            <Block spaceStack="space060" />
             Separate terms may apply to your usage of NewsKit OSS and other
             Components, including these{' '}
             <Link
@@ -65,8 +62,7 @@ const Introduction = ({path, ...props}: LayoutProps) => (
             </Link>
             . You should ensure that you check, and comply with, the terms of
             the licences for any such Components before using them.
-            <br />
-            <br />
+            <Block spaceStack="space060" />
             In the event of a conflict between these Terms and the Open Source
             Terms in any way, the Open Source Terms shall prevail in relation to
             your usage of any Components (including NewsKit OSS).
@@ -86,13 +82,11 @@ const Introduction = ({path, ...props}: LayoutProps) => (
               part of our Website, including the availability of any content,
               without notice. We will not be liable to you if for any reason our
               Website is unavailable at any time or for any period.
-              <br />
-              <br />
+              <Block spaceStack="space060" />
               You are responsible for ensuring that all persons accessing our
               Website through your connection are aware of these Terms and that
               they comply with them.
-              <br />
-              <br />
+              <Block spaceStack="space060" />
               The content on our Website is provided for information only.
               Although we make reasonable efforts to update the information on
               our Website, we make no representations, warranties or guarantees,
@@ -145,13 +139,11 @@ const Introduction = ({path, ...props}: LayoutProps) => (
               Our content, trademarks, copyright, patents, logos, domain names
               and other related intellectual property rights or other features
               of our brand belong to us or to our licensors.
-              <br />
-              <br />
+              <Block spaceStack="space060" />
               Unless otherwise expressly stated, your use of our Website does
               not grant you any rights in our and/or our licensors’ intellectual
               property whether for commercial or non-commercial use.
-              <br />
-              <br />
+              <Block spaceStack="space060" />
               For the avoidance of doubt, you may use the NewsKit OSS in
               accordance with the{' '}
               <Link
@@ -200,16 +192,14 @@ const Introduction = ({path, ...props}: LayoutProps) => (
             by our third party partners. We have no control over third party
             content and we are unable to guarantee the accuracy of such third
             party content.
-            <br />
-            <br />
+            <Block spaceStack="space060" />
             Whilst we will do our best to ensure that our Website is fully
             operational at all times, we are not responsible for any problems or
             temporary interruptions in using our Website arising from factors
             outside of our control (e.g. technical problems from traffic
             congestion on the internet) or for any problems arising from
             participating in or from downloading third party content.
-            <br />
-            <br />
+            <Block spaceStack="space060" />
             Under no circumstances shall we be responsible for any loss or
             damage resulting from the use of our Website and/or from the use of
             information presented on our Website.
