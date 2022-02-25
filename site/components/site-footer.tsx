@@ -3,7 +3,6 @@ import {
   Grid,
   Cell,
   ConsentSettingsLink,
-  getTypographyPresetFromTheme,
   getColorCssFromTheme,
   getSizingCssFromTheme,
   getMediaQueryFromTheme,
@@ -17,24 +16,26 @@ import {Link} from './link';
 
 const Footer = styled.footer`
   ${getColorCssFromTheme('background', 'interface020')}
-  ${getSizingCssFromTheme('paddingBottom', 'sizing070')};
+  ${getSizingCssFromTheme('paddingTop', {
+    xs: 'sizing070',
+    md: 'sizing080',
+  })};
+  ${getSizingCssFromTheme('paddingBottom', 'sizing050')};
 `;
 
 const FooterMenu = styled.div`
   display: block;
   justify-content: center;
-  ${getSizingCssFromTheme('paddingTop', 'sizing010')};
-  ${getTypographyPresetFromTheme('utilityButton020')};
+  ${getSizingCssFromTheme('marginTop', 'sizing040')};
   ${getMediaQueryFromTheme('md')} {
     display: flex;
-    ${getSizingCssFromTheme('paddingBottom', 'sizing020')};
   }
 `;
 
 const FooterLink = styled.span`
   text-align: center;
   display: block;
-  ${getSizingCssFromTheme('marginBottom', 'sizing050')};
+  ${getSizingCssFromTheme('marginBottom', 'sizing070')};
   ${getMediaQueryFromTheme('xs')} {
     :last-child {
       ${getSizingCssFromTheme('marginBottom', 'sizing000')};
@@ -43,7 +44,7 @@ const FooterLink = styled.span`
   ${getMediaQueryFromTheme('md')} {
     ${getSizingCssFromTheme('marginRight', 'sizing080')};
     :last-child {
-      ${getSizingCssFromTheme('marginBottom', 'sizing050')};
+      ${getSizingCssFromTheme('marginBottom', 'sizing070')};
     }
   }
 `;
@@ -54,6 +55,7 @@ const FooterCopy = styled(TextBlock)`
 
 const linkOverrides = {
   stylePreset: 'linkFooter',
+  typographyPreset: 'utilityButton020',
 };
 
 interface FooterProps {
@@ -64,7 +66,6 @@ const year = new Date().getUTCFullYear();
 const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
   <>
     <Footer>
-      <Block spaceStack={{xs: 'space080', lg: 'space090'}} />
       <Grid xsRowGutter="space060" mdRowGutter="space000">
         <Cell {...cellProps}>
           <FooterMenu>
@@ -91,10 +92,7 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
             <FooterLink>
               <ConsentSettingsLink
                 privacyManagerId="407619"
-                overrides={{
-                  stylePreset: 'linkFooter',
-                  typographyPreset: 'utilityButton020',
-                }}
+                overrides={linkOverrides}
               >
                 Privacy policy
               </ConsentSettingsLink>
