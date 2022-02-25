@@ -1,7 +1,8 @@
+/* eslint-disable no-console */
 import * as React from 'react';
 import {PlayPauseButton} from '../components/play-pause-button';
 import {AudioPlayerComposable} from '../audio-player-composable';
-import {UserPlayPauseButton} from '../user-test-components/userPlayPauseButton';
+import {UserPlayPauseButton} from '../user-test-components/user-play-pause-button';
 
 export default {
   title: 'NewsKit Light/audio-player-composable',

@@ -1,9 +1,10 @@
+/* eslint-disable no-console */
 import {act, fireEvent} from '@testing-library/react';
 import React from 'react';
 import {renderWithTheme} from '../../test/test-utils';
 import {AudioPlayerComposable} from '../audio-player-composable';
 import {AudioPlayerComposableProps} from '../types';
-import {UserPlayPauseButton} from '../user-test-components/userPlayPauseButton';
+import {UserPlayPauseButton} from '../user-test-components/user-play-pause-button';
 
 const recordedAudioProps: AudioPlayerComposableProps = {
   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
