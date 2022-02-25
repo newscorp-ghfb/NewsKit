@@ -22,8 +22,12 @@ export const AudioPlayerComposable = ({
   const [loading, setLoading] = useState(true);
   const [duration, setDuration] = useState(0);
   const [trackPositionArr, setTrackPosition] = useState([0]);
-  // const [displayDuration, setDisplayDuration] = useState(0);
-  // const [buffered, setBuffered] = useState<TimeRanges>();
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [displayDuration, setDisplayDuration] = useState(0);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [isPrevTrackBtnDisabled, setIsPrevTrackBtnDisabled] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [buffered, setBuffered] = useState<TimeRanges>();
 
   useEffect(() => {
     [trackPositionRef.current] = trackPositionArr;
@@ -43,8 +47,9 @@ export const AudioPlayerComposable = ({
     setPlayState,
     showLoaderTimeoutRef,
     setTrackPosition,
-    // setBuffered,
-    // setDisplayDuration,
+    setBuffered,
+    setDisplayDuration,
+    setIsPrevTrackBtnDisabled,
     trackPositionRef,
     duration,
     setDuration,
