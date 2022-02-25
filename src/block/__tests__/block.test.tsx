@@ -77,5 +77,27 @@ describe('Block', () => {
       const fragment = renderToFragmentWithTheme(Block, props);
       expect(fragment).toMatchSnapshot();
     });
+    test('renders with transitionPresets', () => {
+      const myCustomTheme = createTheme({
+        name: 'my-custom-block-theme',
+        overrides: {
+          transitionPresets: {
+            customBackgroundColorChange: {
+              base: {
+                transitionProperty: 'background-color',
+                transitionDuration: '500ms',
+                transitionDelay: '500ms',
+                transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+              },
+            },
+          },
+        },
+      });
+      const props: BlockProps = {
+        transitionPreset: 'customBackgroundColorChange',
+      };
+      const fragment = renderToFragmentWithTheme(Block, props, myCustomTheme);
+      expect(fragment).toMatchSnapshot();
+    });
   });
 });
