@@ -28,7 +28,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       loading,
       children,
       useModal = {},
-      virtualized = 50, // TODO: what's the magic number?
+      virtualized = 50,
       ...restProps
     } = props;
 
