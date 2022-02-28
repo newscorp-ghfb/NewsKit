@@ -432,14 +432,15 @@ export default [
               'Used together to construct a visual grid for responsive page layout.',
             illustration: 'components/grid-cell-illustration',
           },
-          {
-            title: 'Grid Layout',
-            page: true,
-            id: '/components/grid-layout',
-            description:
-              'Used to construct a visual grid for responsive page layout. A Proxy for CSS grid.',
-            illustration: 'static/placeholder-3x2.png',
-          },
+          // ToDo: This documentation page is still a work in progress.
+          // {
+          //   title: 'Grid Layout',
+          //   page: true,
+          //   id: '/components/grid-layout',
+          //   description:
+          //     'Used to construct a visual grid for responsive page layout. A Proxy for CSS grid.',
+          //   illustration: 'static/placeholder-3x2.png',
+          // },
           {
             title: 'Modal',
             page: true,
