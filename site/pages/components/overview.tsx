@@ -15,11 +15,15 @@ import {HeadNextSeo} from '../../components/head-next-seo';
 const componentCategories: any =
   routes.find(r => r.title === 'Components')?.subNav?.slice(1) || [];
 
-export default (layoutProps: LayoutProps) => (
+const OverviewComponent = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     <HeadNextSeo
       title="Components overview"
       description="Components are key building blocks of the NewsKit design system."
+      image={{
+        url: 'social/components.png',
+        alt: 'Components overview',
+      }}
     />
     <HeaderIndex title="Components" media={HeaderImage}>
       Components are key building blocks of the NewsKit design system.
@@ -78,3 +82,5 @@ export default (layoutProps: LayoutProps) => (
     <Block spaceStack="space070" />
   </Layout>
 );
+
+export default OverviewComponent;

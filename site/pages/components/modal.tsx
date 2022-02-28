@@ -37,7 +37,7 @@ const modalContent = (
   </Stack>
 );
 
-const ModalComponent = ({open, ...state}: {open: boolean}) => {
+const ModalState = ({open, ...state}: {open: boolean}) => {
   const [isActive, setIsActive] = React.useState(false);
   React.useEffect(() => {
     setIsActive(open);
@@ -57,7 +57,7 @@ const ModalComponent = ({open, ...state}: {open: boolean}) => {
   );
 };
 
-export default (layoutProps: LayoutProps) => (
+const ModalComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Modal',
@@ -86,7 +86,7 @@ export default (layoutProps: LayoutProps) => (
       playground: {
         componentName: 'Modal',
         // @ts-ignore
-        component: ModalComponent,
+        component: ModalState,
         knobs: [
           {
             name: 'open',
@@ -667,3 +667,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default ModalComponent;

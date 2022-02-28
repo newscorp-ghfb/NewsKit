@@ -43,11 +43,18 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
   compliance,
   related,
   featureCard,
+  headTags,
   ...rest
 }: ComponentPageTemplateProps) => (
   <Layout {...layoutProps} newPage>
     <PageTemplate
       {...rest}
+      headTags={{
+        imageUrl: 'social/components.png',
+        alt: 'components',
+        title: headTags.title,
+        description: headTags.description,
+      }}
       featureCard={
         {
           ...defaultFeatureCard,

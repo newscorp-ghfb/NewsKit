@@ -85,7 +85,7 @@ const infoIcon = (
   />
 );
 
-export default (layoutProps: LayoutProps) => (
+const Sizing = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
       title: 'Sizing',
@@ -257,3 +257,5 @@ export default (layoutProps: LayoutProps) => (
     </ComponentPageCell>
   </FoundationPageTemplate>
 );
+
+export default Sizing;

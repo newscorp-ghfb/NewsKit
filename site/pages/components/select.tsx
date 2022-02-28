@@ -266,7 +266,7 @@ const selectOverridesFooter = (
   </InlineMessage>
 );
 
-export default (layoutProps: LayoutProps) => (
+const SelectComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Select',
@@ -338,3 +338,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default SelectComponent;

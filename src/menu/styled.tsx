@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import {TextAlignProperty} from 'csstype';
 import {Button} from '../button';
-import {getStylePreset, getResponsiveSpace, styled, css} from '../utils/style';
+import {getStylePreset, getResponsiveSpace, styled} from '../utils/style';
 import {MenuGroupProps, MenuProps, MenutItemAlignTypes} from './types';
 
 export const StyledMenu = styled.nav<MenuProps>`
@@ -100,10 +100,6 @@ const menuItemTextAlign = {
   end: 'right',
 };
 
-const alignReset = css`
-  text-align: left;
-`;
-
 export const StyledButton = styled(Button)<{
   align?: MenutItemAlignTypes | undefined;
   selected?: boolean;
@@ -111,7 +107,6 @@ export const StyledButton = styled(Button)<{
   ${({selected}) =>
     selected && getStylePreset('menuItem', '', {isSelected: selected})}
 
-  ${({align}) => !align && alignReset}
   ${({align}) =>
     align && {
       justifyContent: menuItemFlexAlign[align],

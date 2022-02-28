@@ -11,7 +11,7 @@ export interface BaseDialogOverridesProps {
   panel?: {
     zIndex?: number;
     stylePreset?: MQ<string>;
-    transitionPreset?: TransitionToken | TransitionToken[];
+    transitionPreset?: MQ<TransitionToken> | MQ<TransitionToken[]>;
   };
   header?: {
     stylePreset?: MQ<string>;

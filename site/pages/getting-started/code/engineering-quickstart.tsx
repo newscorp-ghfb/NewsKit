@@ -32,7 +32,7 @@ const whatNextCards = [
   },
 ];
 
-export default (layoutProps: LayoutProps) => (
+const EngineeringQuickstart = (layoutProps: LayoutProps) => (
   <GuidePageTemplate
     headTags={{
       title: 'Engineering quickstart',
@@ -169,17 +169,17 @@ export default (layoutProps: LayoutProps) => (
             {`import {ThemeProvider, Tag, TagSize, newskitLightTheme} from 'newskit';
 import React from 'react';
 export default class App extends React.Component {
-  render() {
-    return (
-      <ThemeProvider theme={newskitLightTheme}>
-        <Tag
-          href="http://example.com"
-          size={TagSize.Medium}>
-            Tag Content
-        </Tag>
-      </ThemeProvider>
-    )
-  }
+render() {
+  return (
+    <ThemeProvider theme={newskitLightTheme}>
+      <Tag
+        href="http://example.com"
+        size={TagSize.Medium}>
+          Tag Content
+      </Tag>
+    </ThemeProvider>
+  )
+}
 }`}
           </Code>
         </ContentPrimary>
@@ -202,3 +202,5 @@ export default class App extends React.Component {
     </ComponentPageCell>
   </GuidePageTemplate>
 );
+
+export default EngineeringQuickstart;

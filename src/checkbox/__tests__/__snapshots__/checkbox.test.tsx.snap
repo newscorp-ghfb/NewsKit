@@ -2241,6 +2241,9 @@ exports[`Checkbox render with size: large & checked 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -2914,6 +2917,9 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -3587,6 +3593,9 @@ exports[`Checkbox render with size: small & checked 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -4260,6 +4269,9 @@ exports[`Checkbox render with state: checked 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -4423,6 +4435,9 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -5103,6 +5118,9 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -5416,6 +5434,9 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -5564,6 +5585,9 @@ exports[`Checkbox with overrides 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
