@@ -49,7 +49,6 @@ export const StyledInputContainer = styled.div<
   justify-content: center;
   box-sizing: border-box;
   align-items: center;
-  ${logicalProps()}
 
   ${({componentDefaultsPath}) =>
     getResponsiveSize('width', componentDefaultsPath, '', 'width')}
@@ -59,6 +58,8 @@ export const StyledInputContainer = styled.div<
     getResponsiveSize('maxWidth', componentDefaultsPath, '', 'maxWidth')}
   ${({componentDefaultsPath}) =>
     getResponsiveSize('maxHeight', componentDefaultsPath, '', 'maxHeight')}
+  ${({componentDefaultsPath}) =>
+    getResponsiveSize('minHeight', componentDefaultsPath, '', 'minHeight')}
   ${({componentDefaultsPath}) =>
     getResponsiveSpacingStackHorizontal(componentDefaultsPath)}
 
@@ -70,6 +71,5 @@ export const StyledInputContainer = styled.div<
       isValid: state === 'valid',
     })}
 
-  ${({componentDefaultsPath}) =>
-    getResponsiveSize('minHeight', componentDefaultsPath, '', 'minHeight')}
+  ${logicalProps()}
 `;

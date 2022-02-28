@@ -31,13 +31,13 @@ export interface BlockProps
 }
 
 const StyledDiv = styled.div<BlockProps>`
-  ${logicalProps()}
   ${({stylePreset}) => stylePreset && getStylePresetFromTheme(stylePreset)}
   ${({spaceInset}) => spaceInset && getSpacingInsetFromTheme(spaceInset)}
   ${({spaceInline}) =>
     spaceInline && getSpacingFromTheme(spaceInline, undefined, 'marginRight')}
   ${({spaceStack}) =>
     spaceStack && getSpacingFromTheme(spaceStack, undefined, 'marginBottom')}
+  ${logicalProps()}
   ${({transitionPreset}) =>
     transitionPreset && getTransitionPresetFromTheme(transitionPreset)};
 `;

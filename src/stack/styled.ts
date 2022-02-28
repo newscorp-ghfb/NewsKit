@@ -130,8 +130,6 @@ const getFlexDirection = (
 };
 
 export const StyledMasterContainer = styled.div<StyledStackProps>`
-  ${logicalProps()}
-
   ${handleResponsiveProp({inline: DEFAULT_PROPS.inline}, ({inline}) => ({
     display: inline ? 'inline-flex' : 'flex',
   }))}
@@ -215,6 +213,8 @@ export const StyledMasterContainer = styled.div<StyledStackProps>`
         spaceInline,
       }),
   )}
+
+  ${logicalProps()}
 `;
 
 export const StyledChildContainer = styled.div<StyledChildProps>`

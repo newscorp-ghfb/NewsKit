@@ -19,7 +19,6 @@ export const StyledBaseFlag = styled('div')<
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  ${logicalProps()}
 
   ${props =>
     getResponsiveSize(
@@ -38,9 +37,10 @@ export const StyledBaseFlag = styled('div')<
     )(props)};
   ${getResponsiveSize('width', '', '', 'width')};
   ${getResponsiveSize('height', '', '', 'height')};
-  ${getResponsiveSpace('padding', '', '', 'spaceInset')};
   ${getResponsiveSize('maxWidth', '', '', 'maxWidth')};
   ${getResponsiveSize('maxHeight', '', '', 'maxHeight')};
+  ${getResponsiveSpace('padding', '', '', 'spaceInset')};
+  ${logicalProps()}
 
   svg {
     ${getResponsiveSize('width', '', '', 'iconSize')};

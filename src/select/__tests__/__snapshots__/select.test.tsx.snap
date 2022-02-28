@@ -17,6 +17,7 @@ exports[`Select in Modal render Select 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -25,7 +26,6 @@ exports[`Select in Modal render Select 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -746,6 +746,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -754,7 +755,6 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -1347,6 +1347,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -1355,7 +1356,6 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -2066,9 +2066,9 @@ exports[`Select renders Select with overrides 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   border-color: #D20600;
-  min-height: 48px;
 }
 
 .emotion-1 {
@@ -2343,6 +2343,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -2351,7 +2352,6 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -2594,8 +2594,8 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -2661,6 +2661,7 @@ exports[`Select renders disabled select 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -2669,7 +2670,6 @@ exports[`Select renders disabled select 1`] = `
   border-radius: 8px;
   color: #C0C0C0;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -2883,6 +2883,7 @@ exports[`Select renders large Select 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 64px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -2891,7 +2892,6 @@ exports[`Select renders large Select 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 64px;
 }
 
 .emotion-0 svg {
@@ -3140,6 +3140,7 @@ exports[`Select renders loading select 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -3148,7 +3149,6 @@ exports[`Select renders loading select 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -3389,6 +3389,7 @@ exports[`Select renders medium Select 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -3397,7 +3398,6 @@ exports[`Select renders medium Select 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -3646,6 +3646,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -3654,7 +3655,6 @@ exports[`Select renders select with a pre selected option 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -3937,6 +3937,7 @@ exports[`Select renders select with a selected option 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -3945,7 +3946,6 @@ exports[`Select renders select with a selected option 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -4228,6 +4228,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -4236,7 +4237,6 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -4543,6 +4543,7 @@ exports[`Select renders select with non-string options 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -4551,7 +4552,6 @@ exports[`Select renders select with non-string options 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -4836,6 +4836,7 @@ exports[`Select renders small Select 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 32px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -4844,7 +4845,6 @@ exports[`Select renders small Select 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 32px;
 }
 
 .emotion-0 svg {
@@ -5093,6 +5093,7 @@ exports[`Select should render custom placeholder 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -5101,7 +5102,6 @@ exports[`Select should render custom placeholder 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {

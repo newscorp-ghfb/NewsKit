@@ -112,8 +112,6 @@ export const StyledSelectPanel = styled.div<{
   outline: none;
   z-index: 1;
 
-  ${logicalProps()}
-
   ${({$size}) =>
     getResponsiveSpace(`marginTop`, `select.${$size}.panel`, '', 'spaceStack')}
 
@@ -124,6 +122,8 @@ export const StyledSelectPanel = styled.div<{
       '',
       'spaceInset',
     )}
+
+  ${logicalProps()}
 
   ${({$width}) => `width: ${$width}px;`}
   ${({$top}) => `top: ${$top}px;`}
