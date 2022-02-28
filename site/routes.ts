@@ -82,7 +82,7 @@ export default [
             illustration: 'guides/engineering-quickstart/hero',
           },
           {
-            title: 'Instrumentation',
+            title: 'Instrumentation setup',
             page: true,
             id: '/getting-started/code/instrumentation',
           },
