@@ -6,7 +6,7 @@ import {ComponentPageCell, ComponentPageCellCompact} from '../layout-cells';
 
 const heroIsImage = (hero: PageIntroductionProps['hero']): hero is ImageProps =>
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  Boolean((hero as any).src);
+  Boolean(hero && (hero as any).src);
 
 export const PageIntroduction: React.FC<PageIntroductionProps> = ({
   type,
@@ -62,7 +62,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
         {heroIsImage(hero) ? (
           <Image loadingAspectRatio="16:9" alt="" {...hero} />
         ) : (
-          <Illustration path={hero.illustration} />
+          hero && <Illustration path={hero.illustration} />
         )}
       </Block>
       {/* <Block spaceStack="space060" /> */}
