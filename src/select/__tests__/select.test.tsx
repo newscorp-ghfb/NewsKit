@@ -476,14 +476,6 @@ describe('Select', () => {
     expect(getAllByRole('option').length).not.toBe(countries.length);
 
     expect(asFragment()).toMatchSnapshot();
-
-    // next tab should focus on close button
-    // userEvent.tab();
-    // expect(getByTestId('button')).toHaveFocus();
-
-    // // next tab should focus on select panel again
-    // userEvent.tab();
-    // expect(getByTestId('select-panel')).toHaveFocus();
   });
 
   describe('in Modal', () => {

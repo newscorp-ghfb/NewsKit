@@ -81,13 +81,45 @@ export const StorySelectSize = () => (
             Label
           </Label>
           <Select aria-describedby="id-1-at" id="id-1" size="small">
-            {items.slice(0, 3).map(item => (
+            {items.map(item => (
               <SelectOption key={item} value={item}>
                 {item}
               </SelectOption>
             ))}
           </Select>
           <AssistiveText id="id-1-at" size={'small' as TextFieldSize}>
+            Assistive Text
+          </AssistiveText>
+        </Block>
+        <Block>
+          <StorybookSubHeading>Medium</StorybookSubHeading>
+          <Label htmlFor="id-2" size={'medium' as TextFieldSize}>
+            Label
+          </Label>
+          <Select aria-describedby="id-2-at" id="id-2" size="medium">
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+          <AssistiveText id="id-2-at" size={'medium' as TextFieldSize}>
+            Assistive Text
+          </AssistiveText>
+        </Block>
+        <Block>
+          <StorybookSubHeading>Large</StorybookSubHeading>
+          <Label htmlFor="id-3" size={'large' as TextFieldSize}>
+            Label
+          </Label>
+          <Select aria-describedby="id-3-at" id="id-3" size="large">
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+          <AssistiveText id="id-3-at" size={'large' as TextFieldSize}>
             Assistive Text
           </AssistiveText>
         </Block>
@@ -735,7 +767,7 @@ export const StorySelectInModal = () => {
 };
 StorySelectInModal.storyName = 'useModal';
 
-export const StorySelectVirtualized = () => {
+export const SelectVirtualization = () => {
   const selectOptions = countries.map(({value, name}) => (
     <SelectOption value={value} key={value} aria-label={name}>
       <GridLayout columns="auto 1fr" columnGap="space020" alignItems="center">
@@ -758,40 +790,45 @@ export const StorySelectVirtualized = () => {
 
   return (
     <>
-      <Block spaceStack="space050">
-        <Label htmlFor="countries" size={'medium' as TextFieldSize}>
-          Select your country ( virtualized )
-        </Label>
-        <Select
-          aria-describedby="countries-at"
-          id="countries"
-          size="medium"
-          useModal={{xs: true}}
-          virtualized={50}
-        >
-          {selectOptions}
-        </Select>
-        <AssistiveText id="countries-at" size={'small' as TextFieldSize}>
-          Assistive Text
-        </AssistiveText>
-      </Block>
-      <Block spaceStack="space050">
-        <Label htmlFor="simple-data" size={'medium' as TextFieldSize}>
-          Simple data ( virtualized )
-        </Label>
-        <Select
-          aria-describedby="simple-data-at"
-          id="simple-data"
-          size="medium"
-          useModal={{xs: true}}
-          virtualized={50}
-        >
-          {selectOptionsSimple}
-        </Select>
-        <AssistiveText id="simple-data-at" size={'small' as TextFieldSize}>
-          Assistive Text
-        </AssistiveText>
-      </Block>
+      <Container>
+        <StorybookHeading>Select with virtualization</StorybookHeading>
+        <Block spaceStack="space050">
+          <Label htmlFor="countries" size={'medium' as TextFieldSize}>
+            Select your country ( virtualized )
+          </Label>
+          <Select
+            aria-describedby="countries-at"
+            id="countries"
+            size="medium"
+            useModal={{xs: true}}
+            virtualized={50}
+          >
+            {selectOptions}
+          </Select>
+          <AssistiveText id="countries-at" size={'small' as TextFieldSize}>
+            Assistive Text
+          </AssistiveText>
+        </Block>
+        <Block spaceStack="space050">
+          <Label htmlFor="simple-data" size={'medium' as TextFieldSize}>
+            Simple data ( virtualized )
+          </Label>
+          <Select
+            aria-describedby="simple-data-at"
+            id="simple-data"
+            size="medium"
+            useModal={{xs: true}}
+            virtualized={50}
+          >
+            {selectOptionsSimple}
+          </Select>
+          <AssistiveText id="simple-data-at" size={'small' as TextFieldSize}>
+            Assistive Text
+          </AssistiveText>
+        </Block>
+      </Container>
     </>
   );
 };
+
+// StorySelectVirtualized.name = "sel"
