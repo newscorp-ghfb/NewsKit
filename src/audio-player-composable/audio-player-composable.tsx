@@ -115,7 +115,7 @@ export const AudioPlayerComposable = ({
   };
 
   return (
-    <section aria-label={ariaLandmark}>
+    <section aria-label={ariaLandmark || 'Audio Player'}>
       <AudioPlayerProvider value={value}>
         <AudioElement />
         {children}
