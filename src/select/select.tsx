@@ -1,7 +1,7 @@
-import React, {ChangeEvent, useEffect, useRef} from 'react';
+import React, {ChangeEvent, useEffect, useRef, useState} from 'react';
 import {useSelect, UseSelectStateChange} from 'downshift';
 import composeRefs from '@seznam/compose-react-refs';
-import {SelectProps} from './types';
+import {SelectProps, SelectOptionProps} from './types';
 import {SelectPanel} from './select-panel';
 import {SelectButton} from './select-button';
 import defaults from './defaults';
@@ -10,6 +10,7 @@ import {withOwnTheme} from '../utils/with-own-theme';
 import {shouldRenderInModal} from './utils';
 import {withMediaQueryProvider} from '../utils/hooks/use-media-query/context';
 import {useBreakpointKey} from '../utils/hooks/use-media-query';
+import {useVirtualizedList} from './use-virtualized-list';
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -27,6 +28,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       loading,
       children,
       useModal = {},
+      virtualized = 50,
       ...restProps
     } = props;
 
@@ -138,6 +140,23 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         : {}),
     });
 
+    const {children: optionsAsChildren, scrollToIndex} = useVirtualizedList({
+      items: React.Children.toArray(
+        children,
+      ) as React.ReactElement<SelectOptionProps>[],
+      listRef: panelRef,
+      getItemProps,
+      limit: virtualized,
+      highlightedIndex,
+      selectedItem,
+      size,
+      isOpen,
+    });
+
+    useEffect(() => {
+      if (highlightedIndex) scrollToIndex(highlightedIndex);
+    }, [highlightedIndex, scrollToIndex]);
+
     const [allowBlur, setAllowBlur] = React.useState(true);
     const onSelectButtonBlur = React.useCallback(
       (event: React.FocusEvent<HTMLInputElement>) => {
@@ -160,12 +179,29 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       ...downshiftMenuPropsExceptRef
     } = getMenuProps();
 
-    const {
-      clientWidth: width = 0,
-      offsetTop: top = 0,
-      clientHeight: height = 0,
-      offsetLeft: left = 0,
-    } = (selectRef && selectRef.current) || {};
+    const [{width, top, height, left}, setSelectRect] = useState({
+      width: 0,
+      top: 0,
+      height: 0,
+      left: 0,
+    });
+
+    useEffect(() => {
+      if (isOpen && selectRef.current) {
+        const {
+          clientWidth,
+          offsetTop,
+          clientHeight,
+          offsetLeft,
+        } = selectRef.current;
+        setSelectRect({
+          width: clientWidth,
+          top: offsetTop,
+          height: clientHeight,
+          left: offsetLeft,
+        });
+      }
+    }, [isOpen, selectRef]);
 
     return (
       <>
@@ -198,16 +234,13 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           top={top}
           left={left}
           size={size}
-          selectedItem={selectedItem}
-          highlightedIndex={highlightedIndex}
-          getItemProps={getItemProps}
           buttonRef={localInputRef}
           renderInModal={renderInModal}
           closeMenu={closeMenu}
           {...downshiftMenuPropsExceptRef}
           ref={composeRefs(panelRef, downshiftMenuPropsRef)}
         >
-          {children}
+          {optionsAsChildren}
         </SelectPanel>
       </>
     );

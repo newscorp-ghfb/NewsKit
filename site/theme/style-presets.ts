@@ -374,15 +374,15 @@ export const stylePresets = {
   },
   linkFooter: {
     base: {
-      color: '{{colors.inkContrast}}',
+      color: '{{colors.interactivePrimary040}}',
       textDecoration: 'none',
     },
     hover: {
-      color: '{{colors.inkSubtle}}',
+      color: '{{colors.interactivePrimary030}}',
       textDecoration: 'underline',
     },
     active: {
-      color: '{{colors.inkNonEssential}}',
+      color: '{{colors.interactivePrimary020}}',
       textDecoration: 'none',
     },
   },
