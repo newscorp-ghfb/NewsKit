@@ -19,6 +19,7 @@ const unlimitedScenarios = [
   'image-e2e',
   'grid-layout',
   'theme-checker',
+  'read-more',
 ];
 
 const Container = styled.div`
