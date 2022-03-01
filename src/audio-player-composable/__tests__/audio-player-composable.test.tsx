@@ -37,8 +37,8 @@ const recordedAudioProps: AudioPlayerComposableProps = {
   autoPlay: false,
   children: (
     <PlayPauseButton
-      onClick={() => {
-        console.log('extra click function');
+      customerOnClick={() => {
+        console.log('customer click function');
       }}
     />
   ),
@@ -49,8 +49,8 @@ const recordedAudioPropsAutoplay: AudioPlayerComposableProps = {
   autoPlay: true,
   children: (
     <PlayPauseButton
-      onClick={() => {
-        console.log('extra click function');
+      customerOnClick={() => {
+        console.log('customer click function');
       }}
     />
   ),

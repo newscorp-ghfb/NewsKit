@@ -23,10 +23,12 @@ interface AudioPlayerProviderContext {
   duration: number;
   trackPositionArr: number[];
   onChangeSlider: (values: number[]) => void;
-  // Hooks for custom components
-  getPlayPauseButtonProps: () => {
-    'aria-label': string;
-    'aria-pressed': boolean;
+  // Getter functions
+  getPlayPauseButtonProps: (
+    customerOnClick?: () => void,
+  ) => {
+    ariaLabel: string;
+    ariaPressed: boolean;
     loading: boolean;
     onClick: () => void;
     playing: boolean;

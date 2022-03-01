@@ -1,40 +1,39 @@
-// import {TrackControlProps, ControlsOverrideProps} from './controls';
-import {SliderOverrideProps} from '../slider';
-import {VolumeControlOverrideProps} from '../volume-control';
-import {MQ} from '../utils/style';
-import {ButtonProps} from '../button';
+import {ButtonProps, ButtonSize} from '../button';
 
-export interface AudioPlayerProps
-  extends Omit<React.AudioHTMLAttributes<HTMLAudioElement>, 'controls'>,
-    TrackControlProps {
-  captionSrc?: string;
-  popoutHref?: string;
-  live?: boolean;
-  ariaLandmark?: string;
-  hideVolumeControl?: boolean;
-  hidePreviousTrack?: boolean;
-  hideSeekButtons?: boolean;
-  overrides?: {
-    seekBar?: {
-      slider?: SliderOverrideProps;
-      buffering?: {
-        stylePreset?: MQ<string>;
-      };
-    };
-    // controls?: ControlsOverrideProps;
-    volumeControl?: VolumeControlOverrideProps;
-  };
+export interface AudioFunctionDependencies {
+  onPreviousTrack: () => void;
+  onNextTrack: () => void;
+  autoPlay: boolean;
+  disablePreviousTrack: boolean;
+  src: string;
+  live: NonNullable<boolean>;
+
+  loading: boolean;
+  duration: number;
+  playing: boolean;
+
+  showLoaderTimeoutRef: React.MutableRefObject<number>;
+  trackPositionRef: React.MutableRefObject<number>;
+  audioRef: React.RefObject<HTMLAudioElement>;
+
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  setTrackPosition: React.Dispatch<React.SetStateAction<number[]>>;
+  setPlayState: React.Dispatch<React.SetStateAction<boolean>>;
+  // setVolume: React.Dispatch<React.SetStateAction<number>>;
+  setDuration: React.Dispatch<React.SetStateAction<number>>;
+  setDisplayDuration: React.Dispatch<React.SetStateAction<number>>;
+  setBuffered: React.Dispatch<React.SetStateAction<TimeRanges | undefined>>;
+  setIsPrevTrackBtnDisabled: React.Dispatch<React.SetStateAction<boolean>>;
 }
-
 export interface TrackControlProps {
   onNextTrack?: () => void;
   disableNextTrack?: boolean;
   onPreviousTrack?: () => void;
   disablePreviousTrack?: boolean;
 }
-
 export interface PlayPauseButtonProps {
-  onClick?: () => void;
+  size?: ButtonSize;
+  customerOnClick?: () => void;
   overrides?: ButtonProps['overrides'];
 }
 

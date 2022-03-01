@@ -1,38 +1,11 @@
 /* eslint-disable no-param-reassign */
 import {useCallback, SyntheticEvent, useEffect} from 'react';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
-import {AudioPlayerProps, AudioEvents} from './types';
+import {AudioEvents, AudioFunctionDependencies} from './types';
 import {formatTrackTime, getMediaSegment} from './utils';
 import calculateStringPercentage from '../utils/calculate-string-percentage';
 import {getValueInRange} from '../utils/value-in-range';
-
 import {version} from '../version-number.json';
-
-export interface AudioFunctionDependencies {
-  onPreviousTrack: AudioPlayerProps['onPreviousTrack'];
-  onNextTrack: AudioPlayerProps['onNextTrack'];
-  autoPlay: AudioPlayerProps['autoPlay'];
-  disablePreviousTrack: AudioPlayerProps['disablePreviousTrack'];
-  src: AudioPlayerProps['src'];
-  live: NonNullable<AudioPlayerProps['live']>;
-
-  loading: boolean;
-  duration: number;
-  playing: boolean;
-
-  showLoaderTimeoutRef: React.MutableRefObject<number>;
-  trackPositionRef: React.MutableRefObject<number>;
-  audioRef: React.RefObject<HTMLAudioElement>;
-
-  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
-  setTrackPosition: React.Dispatch<React.SetStateAction<number[]>>;
-  setPlayState: React.Dispatch<React.SetStateAction<boolean>>;
-  // setVolume: React.Dispatch<React.SetStateAction<number>>;
-  setDuration: React.Dispatch<React.SetStateAction<number>>;
-  setDisplayDuration: React.Dispatch<React.SetStateAction<number>>;
-  setBuffered: React.Dispatch<React.SetStateAction<TimeRanges | undefined>>;
-  setIsPrevTrackBtnDisabled: React.Dispatch<React.SetStateAction<boolean>>;
-}
 
 export const useAudioFunctions = ({
   onPreviousTrack,

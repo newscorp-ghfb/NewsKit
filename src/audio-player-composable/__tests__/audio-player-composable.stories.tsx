@@ -2,7 +2,6 @@
 import * as React from 'react';
 import {PlayPauseButton} from '../components/play-pause-button';
 import {AudioPlayerComposable} from '../audio-player-composable';
-import {UserPlayPauseButton} from '../user-test-components/user-play-pause-button';
 
 export default {
   title: 'NewsKit Light/audio-player-composable',
@@ -15,8 +14,8 @@ export const AudioPlayPauseButton = () => (
     ariaLandmark="audio player"
   >
     <PlayPauseButton
-      onClick={() => {
-        console.log('extra click function');
+      customerOnClick={() => {
+        console.log('customer click function');
       }}
     />
   </AudioPlayerComposable>
@@ -31,25 +30,14 @@ export const AudioPlayPauseButtonAutoplay = () => (
     ariaLandmark="audio player auto"
   >
     <PlayPauseButton
-      onClick={() => {
-        console.log('extra click function');
+      customerOnClick={() => {
+        console.log('customer click function');
       }}
     />
   </AudioPlayerComposable>
 );
 
 AudioPlayPauseButtonAutoplay.storyName = 'audio-play-pause-button-autoplay';
-
-export const AudioCustomPlayPauseButton = () => (
-  <AudioPlayerComposable
-    src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    ariaLandmark="audio player auto custom"
-  >
-    <UserPlayPauseButton onClick={() => console.log('extra click function')} />
-  </AudioPlayerComposable>
-);
-
-AudioCustomPlayPauseButton.storyName = 'audio-player-play-pause-using-hook';
 
 export const MultipleAudioPlayPauseButtonWithOverrides = () => (
   <>
