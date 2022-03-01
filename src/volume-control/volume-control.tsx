@@ -10,7 +10,7 @@ import {
 } from '../icons';
 import {useTheme} from '../theme';
 import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
-import {getSSRId} from '../utils/get-ssr-id';
+import {useReactKeys} from '../utils/hooks';
 import {getTokensForVolumeControl} from './utils';
 import {MQ} from '../utils/style';
 import defaults from './defaults';
@@ -63,7 +63,7 @@ const ThemelessVolumeControl: React.FC<VolumeControlProps> = ({
 }) => {
   const theme = useTheme();
   const [unMutedVolume, setUnMutedVolume] = useState(volume);
-  const srOnlyVolumeControl = getSSRId();
+  const [srOnlyVolumeControl] = useReactKeys(1);
   const {
     sliderTrackStylePreset,
     trackSize,
