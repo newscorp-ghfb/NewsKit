@@ -3474,6 +3474,9 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-25 svg {
@@ -4207,6 +4210,9 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-25 svg {
@@ -5282,6 +5288,9 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {

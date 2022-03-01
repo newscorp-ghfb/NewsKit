@@ -224,6 +224,9 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-7 svg {
@@ -641,6 +644,9 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-7 svg {
@@ -1058,6 +1064,9 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-7 svg {
