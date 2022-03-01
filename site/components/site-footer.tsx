@@ -3,151 +3,121 @@ import {
   Grid,
   Cell,
   ConsentSettingsLink,
-  getTypographyPresetFromTheme,
   getColorCssFromTheme,
   getSizingCssFromTheme,
   getMediaQueryFromTheme,
   styled,
   TextBlock,
   CellProps,
-  Block,
+  Divider,
 } from 'newskit';
 import {Link} from './link';
 
 const Footer = styled.footer`
-  flex-shrink: 0;
-
-  ${getSizingCssFromTheme('paddingBottom', {
-    xs: 'sizing070',
-    md: 'sizing000',
-    lg: 'sizing040',
-  })};
   ${getColorCssFromTheme('background', 'interface020')}
-  position: relative;
+  ${getSizingCssFromTheme('paddingTop', {
+    xs: 'sizing070',
+    md: 'sizing080',
+  })};
+  ${getSizingCssFromTheme('paddingBottom', 'sizing050')};
+`;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -50%;
-    left: -50%;
-    transform: scale(0.5);
+const FooterMenu = styled.div`
+  display: block;
+  justify-content: center;
+  ${getSizingCssFromTheme('marginTop', 'sizing040')};
+  ${getMediaQueryFromTheme('md')} {
+    display: flex;
   }
+`;
 
-  ${getMediaQueryFromTheme('sm')} {
-    &::before {
-      right: 0;
-      left: 0;
-      transform: scale(1);
+const FooterLink = styled.span`
+  text-align: center;
+  display: block;
+  ${getMediaQueryFromTheme('xs')} {
+    ${getSizingCssFromTheme('marginBottom', 'sizing070')};
+    :last-child {
+      ${getSizingCssFromTheme('marginBottom', 'sizing000')};
+    }
+  }
+  ${getMediaQueryFromTheme('md')} {
+    ${getSizingCssFromTheme('marginRight', 'sizing080')};
+    ${getSizingCssFromTheme('marginBottom', 'sizing050')};
+    :last-child {
+      ${getSizingCssFromTheme('marginBottom', 'sizing050')};
     }
   }
 `;
 
 const FooterCopy = styled(TextBlock)`
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   text-align: center;
-  ${getMediaQueryFromTheme('md')} {
-    text-align: right;
-    top: 10%;
-  }
+  ${getSizingCssFromTheme('marginTop', 'sizing050')};
+  ${getSizingCssFromTheme('marginBottom', 'sizing070')};
 `;
 
-const FooterMenu = styled.div`
-  height: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  ${getSizingCssFromTheme('paddingTop', {
-    md: 'sizing010',
-  })};
-`;
+const linkOverrides = {
+  stylePreset: 'linkFooter',
+  typographyPreset: 'utilityButton020',
+};
 
-const FooterLink = styled.span`
-  flex-basis: 50%;
-  text-align: center;
-  ${getTypographyPresetFromTheme('utilityButton020')};
-  ${getMediaQueryFromTheme('md')} {
-    flex-basis: auto;
-  }
-  ${getSizingCssFromTheme('paddingRight', {
-    md: 'sizing050',
-    lg: 'sizing080',
-  })};
-`;
 interface FooterProps {
   cellProps?: CellProps;
-  footerCopyCellProps?: CellProps;
 }
 
 const year = new Date().getUTCFullYear();
-const SiteFooter: React.FC<FooterProps> = ({
-  cellProps = {xs: 12, md: 10, lg: 8, mdOffset: 1},
-  footerCopyCellProps = {
-    xs: 10,
-    xsOffset: 1,
-    md: 8,
-    mdOffset: 3,
-    lg: 10,
-    lgOffset: 1,
-    xl: 8,
-    xlOffset: 3,
-  },
-}) => (
+const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
   <>
     <Footer>
-      <Block spaceStack={{xs: 'space080', md: 'space080', lg: 'space090'}} />
       <Grid xsRowGutter="space060" mdRowGutter="space000">
         <Cell {...cellProps}>
           <FooterMenu>
             <FooterLink>
-              <ConsentSettingsLink
-                privacyManagerId="407619"
-                overrides={{
-                  stylePreset: 'linkFooter',
-                  typographyPreset: 'utilityButton020',
-                }}
+              <Link
+                href="https://www.newscareers.co.uk/"
+                target="_blank"
+                external={false}
+                overrides={linkOverrides}
               >
-                Privacy
-              </ConsentSettingsLink>
+                Careers
+              </Link>
             </FooterLink>
             <FooterLink>
               <Link
                 href="https://medium.com/newskit-design-system"
                 target="_blank"
                 external={false}
-                overrides={{stylePreset: 'linkFooter'}}
+                overrides={linkOverrides}
               >
                 Blog
               </Link>
             </FooterLink>
-
             <FooterLink>
-              <Link
-                href="https://www.newscareers.co.uk/"
-                target="_blank"
-                external={false}
-                overrides={{stylePreset: 'linkFooter'}}
+              <ConsentSettingsLink
+                privacyManagerId="407619"
+                overrides={linkOverrides}
               >
-                Careers
+                Privacy policy
+              </ConsentSettingsLink>
+            </FooterLink>
+            <FooterLink>
+              <Link href="/help/terms-and-conditions" overrides={linkOverrides}>
+                Terms & conditions
               </Link>
             </FooterLink>
           </FooterMenu>
         </Cell>
 
-        <Cell {...footerCopyCellProps}>
+        <Cell {...cellProps}>
+          <Divider />
           <FooterCopy
             as="div"
             stylePreset="inkSubtle"
-            typographyPreset={{
-              xs: 'utilityMeta010',
-              md: 'utilityMeta020',
-            }}
+            typographyPreset="utilityMeta010"
           >
-            <Block spaceStack="space060">
-              Copyright &copy; {year} News Corp. All rights reserved.
-            </Block>
+            Copyright &copy; {year} News Corp UK & Ireland Limited. All rights
+            reserved. This website is published by News Corp UK & Ireland
+            Limited, 1 London Bridge Street, London, SE1 9GF. Registered in
+            England No 81701. VAT number GB 243 8054 69.
           </FooterCopy>
         </Cell>
       </Grid>
