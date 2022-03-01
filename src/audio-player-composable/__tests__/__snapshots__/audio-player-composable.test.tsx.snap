@@ -504,7 +504,9 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
   animation: rotate 1s linear infinite;
 }
 
-<section>
+<section
+    aria-label="Audio Player"
+  >
     <audio
       autoplay=""
       data-testid="audio-element"
@@ -645,7 +647,9 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   animation: rotate 1s linear infinite;
 }
 
-<section>
+<section
+    aria-label="Audio Player"
+  >
     <audio
       data-testid="audio-element"
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
