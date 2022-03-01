@@ -20,38 +20,64 @@ const href = 'http://';
 
 const menuItemContent = 'Menu item';
 const menuItems = [
-  <MenuItem href={href}>{menuItemContent}</MenuItem>,
-  <MenuItem href={href}>{menuItemContent}</MenuItem>,
-  <MenuItem href={href}>{menuItemContent}</MenuItem>,
-  <MenuItem href={href}>{menuItemContent}</MenuItem>,
+  <MenuItem key="1" href={href}>
+    {menuItemContent}
+  </MenuItem>,
+  <MenuItem key="2" href={href}>
+    {menuItemContent}
+  </MenuItem>,
+  <MenuItem key="3" href={href}>
+    {menuItemContent}
+  </MenuItem>,
+  <MenuItem key="4" href={href}>
+    {menuItemContent}
+  </MenuItem>,
 ];
 const menuGroups = [
-  <MenuGroup>
-    <MenuItem href={href}>{menuItemContent}</MenuItem>
-    <MenuItem href={href}>{menuItemContent}</MenuItem>
+  <MenuGroup key="1">
+    <MenuItem key="1.1" href={href}>
+      {menuItemContent}
+    </MenuItem>
+    <MenuItem key="1.2" href={href}>
+      {menuItemContent}
+    </MenuItem>
   </MenuGroup>,
-  <MenuGroup>
-    <MenuItem href={href}>{menuItemContent}</MenuItem>
-    <MenuItem href={href}>{menuItemContent}</MenuItem>
+  <MenuGroup key="2">
+    <MenuItem key="2.1" href={href}>
+      {menuItemContent}
+    </MenuItem>
+    <MenuItem key="2.2" href={href}>
+      {menuItemContent}
+    </MenuItem>
   </MenuGroup>,
 ];
 const menuGroupsAndDividers = [
-  <MenuGroup>
-    <MenuItem href={href}>{menuItemContent}</MenuItem>,
-    <MenuDivider />
-    <MenuItem href={href}>{menuItemContent}</MenuItem>,
+  <MenuGroup key="1">
+    <MenuItem key="1.1" href={href}>
+      {menuItemContent}
+    </MenuItem>
+    <MenuDivider key="1.2" />
+    <MenuItem key="1.3" href={href}>
+      {menuItemContent}
+    </MenuItem>
+    ,
   </MenuGroup>,
-  <MenuDivider />,
-  <MenuGroup>
-    <MenuItem href={href}>{menuItemContent}</MenuItem>,
-    <MenuDivider />
-    <MenuItem href={href}>{menuItemContent}</MenuItem>,
+  <MenuDivider key="2" />,
+  <MenuGroup key="3">
+    <MenuItem key="3.1" href={href}>
+      {menuItemContent}
+    </MenuItem>
+    <MenuDivider key="3.2" />
+    <MenuItem key="3.3" href={href}>
+      {menuItemContent}
+    </MenuItem>
+    ,
   </MenuGroup>,
 ];
 
 const MenuWithItem = (props: MenuItemProps) => (
   <Menu>
-    <MenuItem {...props} />
+    <MenuItem key="1" {...props} />
   </Menu>
 );
 
@@ -77,7 +103,7 @@ describe('MenuItem', () => {
   });
   it('renders with icon', () => {
     const props = {
-      children: [<IconFilledAddCircleOutline />, menuItemContent],
+      children: [<IconFilledAddCircleOutline key="i" />, menuItemContent],
       href,
     };
     const fragment = renderToFragmentWithTheme(MenuWithItem, props);
@@ -85,7 +111,7 @@ describe('MenuItem', () => {
   });
   it('renders selected menu item with aria attributes', () => {
     const props = {
-      children: [<IconFilledAddCircleOutline />, menuItemContent],
+      children: [<IconFilledAddCircleOutline key="i" />, menuItemContent],
       href,
       selected: true,
     };
@@ -96,6 +122,7 @@ describe('MenuItem', () => {
     const props = {
       children: menuItemContent,
       href,
+
       target: '_blank',
     };
     const {getAllByTestId, asFragment} = renderWithTheme(MenuWithItem, props);
@@ -126,6 +153,7 @@ describe('MenuItem', () => {
     const props = {
       children: menuItemContent,
       href,
+      key: '1',
       overrides: {
         stylePreset: 'menuItemCustom',
         typographyPreset: 'utilityButton030',
@@ -147,7 +175,11 @@ describe('MenuItem', () => {
 
 describe('MenuDivider', () => {
   it('renders vertically with default props', () => {
-    const fragment = renderToFragmentWithTheme(MenuDivider);
+    const fragment = renderToFragmentWithTheme(() => (
+      <Menu>
+        <MenuDivider />
+      </Menu>
+    ));
     expect(fragment).toMatchSnapshot();
   });
   it('renders horizontally', () => {
@@ -182,8 +214,12 @@ describe('MenuDivider', () => {
       },
     };
     const fragment = renderToFragmentWithTheme(
-      MenuDivider,
-      props,
+      () => (
+        <Menu>
+          <MenuDivider {...props} />
+        </Menu>
+      ),
+      undefined,
       compileTheme(myCustomTheme),
     );
     expect(fragment).toMatchSnapshot();

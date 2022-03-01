@@ -31,7 +31,7 @@ export const TabsWithTable: React.FC<ComponentTabsWithTableProps> = ({
       };
 
       return (
-        <>
+        <React.Fragment key={`${title}-${summary}`}>
           <Block spaceStack={i !== arr.length - 1 ? 'space100' : undefined}>
             {title && (
               <ContentText title={title} titleAs="span">
@@ -41,7 +41,7 @@ export const TabsWithTable: React.FC<ComponentTabsWithTableProps> = ({
             {tabList.length > 1 && (
               <Tabs size={TabSize.Medium}>
                 {tabList.map(({label, content}) => (
-                  <Tab label={label} overrides={tabOverrides}>
+                  <Tab label={label} overrides={tabOverrides} key={label}>
                     {content}
                   </Tab>
                 ))}
@@ -50,7 +50,7 @@ export const TabsWithTable: React.FC<ComponentTabsWithTableProps> = ({
             {tabList.length === 1 && tabList[0].content}
           </Block>
           {showSeparator && <Separator />}
-        </>
+        </React.Fragment>
       );
     })}
   </>

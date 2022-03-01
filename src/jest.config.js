@@ -8,7 +8,7 @@ module.exports = {
     '@testing-library/jest-dom/extend-expect',
   ],
   testEnvironment: 'jsdom',
-  testPathIgnorePatterns: ['/node_modules/', '/dist/'],
+  testPathIgnorePatterns: ['/node_modules/', '/dist/', '/src/theme-checker/'],
   testRegex: '(.|-)test\\.tsx?$',
   testURL: 'http://localhost/',
   transform: {
@@ -17,5 +17,16 @@ module.exports = {
   coveragePathIgnorePatterns: [
     '/node_modules/',
     '/src/test/require-context.ts',
+    '/src/icons/filled/',
+    '/src/icons/outlined/',
   ],
+  coverageDirectory: './coverage',
+  coverageThreshold: {
+    'src/**': {
+      branches: 100,
+      functions: 100,
+      lines: 100,
+      statements: 100,
+    },
+  },
 };

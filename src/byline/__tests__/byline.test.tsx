@@ -8,6 +8,7 @@ describe('Byline', () => {
     const props: BylineProps = {
       bylineData: [
         {
+          key: 1,
           author: 'Jane Smith',
         },
       ],
@@ -21,12 +22,15 @@ describe('Byline', () => {
     const props: BylineProps = {
       bylineData: [
         {
+          key: 1,
           author: 'Jane Smith',
         },
         {
+          key: 2,
           author: 'John Smith',
         },
         {
+          key: 3,
           author: 'Sam Smith',
         },
       ],
@@ -40,15 +44,18 @@ describe('Byline', () => {
     const props: BylineProps = {
       bylineData: [
         {
+          key: 1,
           author: 'Jane Smith',
           href: 'www.example.com',
           location: 'London',
         },
         {
+          key: 2,
           author: 'John Smith',
           href: 'www.example.com',
         },
         {
+          key: 3,
           author: 'John Smith',
           href: 'www.example.com',
           title: 'Developer manager',
@@ -64,10 +71,12 @@ describe('Byline', () => {
     const props: BylineProps = {
       bylineData: [
         {
+          key: 1,
           author: 'Jane Smith',
           href: 'www.example.com',
         },
         {
+          key: 2,
           author: 'John Smith',
           href: 'www.example.com',
         },
@@ -82,10 +91,12 @@ describe('Byline', () => {
     const props: BylineProps = {
       bylineData: [
         {
+          key: 1,
           author: 'Jane Smith',
           title: 'Author',
         },
         {
+          key: 2,
           author: 'John Smith',
           location: 'Milan',
         },
@@ -100,12 +111,14 @@ describe('Byline', () => {
     const props: BylineProps = {
       bylineData: [
         {
+          key: 1,
           author: 'Jane Smith',
           title: 'Author',
           location: 'London',
           href: 'www.example.com',
         },
         {
+          key: 2,
           author: 'John Smith',
           title: 'Other Author',
           location: 'London',
@@ -158,12 +171,14 @@ describe('Byline', () => {
       },
       bylineData: [
         {
+          key: 1,
           author: 'Jane Smith',
           title: 'Author',
           location: 'London',
           href: 'www.example.com',
         },
         {
+          key: 2,
           author: 'John Smith',
           title: 'Other Author',
           location: 'London',

@@ -239,7 +239,7 @@ export const ScrollableTable = ({children}: TableProps) => (
   </TableWrapper>
 );
 
-export default {
+const MarkdownElements = {
   code: ({children, ...props}: TextProps) => (
     <Code {...props}>{children as string}</Code>
   ),
@@ -273,3 +273,4 @@ export default {
   ),
   table: ScrollableTable,
 };
+export default MarkdownElements;

@@ -2,18 +2,92 @@
 
 exports[`Foundation Page Template renders with feature card 1`] = `
 <DocumentFragment>
-  <div
+  .emotion-0 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+<div
     data-comp="layout"
     data-props="{\\"toggleTheme\\":\\"toggle-theme-function\\",\\"themeMode\\":\\"theme-mode\\",\\"path\\":\\"/the-path\\",\\"newPage\\":true}"
-  />
+  >
+    <div
+      class="emotion-0"
+    >
+      <div
+        data-comp="NewsKit Grid"
+        data-props="{
+  \\"xsRowGutter\\": \\"space000\\"
+}"
+        data-testid="Grid"
+      >
+        IntroductionSection Component
+        <div>
+          Pattern template content
+        </div>
+        OnwardJourneySection Component
+        <div
+          data-comp="NewsKit Cell"
+          data-props="{
+  \\"xsHidden\\": true,
+  \\"smHidden\\": true,
+  \\"mdHidden\\": true,
+  \\"lgHidden\\": true,
+  \\"xlOffset\\": 10,
+  \\"xl\\": 2
+}"
+          data-testid="Cell"
+        >
+          TableOfContents Component
+        </div>
+      </div>
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Foundation Page Template renders with mandatory props only 1`] = `
 <DocumentFragment>
-  <div
+  .emotion-0 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+<div
     data-comp="layout"
     data-props="{\\"toggleTheme\\":\\"toggle-theme-function\\",\\"themeMode\\":\\"theme-mode\\",\\"path\\":\\"/the-path\\",\\"newPage\\":true}"
-  />
+  >
+    <div
+      class="emotion-0"
+    >
+      <div
+        data-comp="NewsKit Grid"
+        data-props="{
+  \\"xsRowGutter\\": \\"space000\\"
+}"
+        data-testid="Grid"
+      >
+        IntroductionSection Component
+        <div>
+          Pattern template content
+        </div>
+        OnwardJourneySection Component
+        <div
+          data-comp="NewsKit Cell"
+          data-props="{
+  \\"xsHidden\\": true,
+  \\"smHidden\\": true,
+  \\"mdHidden\\": true,
+  \\"lgHidden\\": true,
+  \\"xlOffset\\": 10,
+  \\"xl\\": 2
+}"
+          data-testid="Cell"
+        >
+          TableOfContents Component
+        </div>
+      </div>
+    </div>
+  </div>
 </DocumentFragment>
 `;

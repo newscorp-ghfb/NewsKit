@@ -15,7 +15,7 @@ const PlaygroundContainer = styled.div`
   justify-content: center;
 `;
 
-export default (layoutProps: LayoutProps) => (
+const BlockComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Block',
@@ -245,6 +245,14 @@ export default (layoutProps: LayoutProps) => (
               description: `Overrides the space inset applied to the Block.`,
             },
           ],
+          overridesRows: [
+            {
+              attribute: 'block.transitionPreset',
+              type: 'TransitionToken | TransitionToken[]',
+              default: 'backgroundColorChange',
+              description: `Overrides the transitionPreset of the Menu Item.`,
+            },
+          ],
           propsFooter: (
             <InlineMessage>
               The Block can utilise any valid{' '}
@@ -270,3 +278,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default BlockComponent;

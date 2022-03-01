@@ -66,7 +66,7 @@ export const TableOfContents: React.FC = () => {
       <Stack flow={Flow.VerticalLeft}>
         {contentsInfo &&
           contentsInfo.map((info, index) => (
-            <ContentsNavItem itemKey={index} href={`#${info.id}`}>
+            <ContentsNavItem key={info.id} itemKey={index} href={`#${info.id}`}>
               {info.title}
             </ContentsNavItem>
           ))}

@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import React, {useState} from 'react';
 import {Flag, FlagProps} from '../flag';
 import {createTheme, ThemeProvider} from '../theme';
