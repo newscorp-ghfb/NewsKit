@@ -61,6 +61,7 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
         <ContentPrimary
           headline="Form"
           description="Send an enquiry to the NewsKit team who will respond as quickly as possible."
+          showSeparator
         >
           <script
             src="https://static.airtable.com/js/embed/embed_snippet_v1.js"
@@ -79,6 +80,20 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
             }}
           />
         </ContentPrimary>
+      </ContentSection>
+
+      <ContentSection sectionName="contact newsUK">
+        <ContentPrimary
+          headline="Contact NewsUK"
+          description={
+            <>
+              For any other enquiries related to NewsUK{' '}
+              <Link href="https://www.news.co.uk/contact-us/" target="_blank">
+                click here.
+              </Link>
+            </>
+          }
+        />
       </ContentSection>
     </ComponentPageCell>
   </Layout>

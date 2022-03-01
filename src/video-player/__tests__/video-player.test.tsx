@@ -47,14 +47,6 @@ describe('Video Player', () => {
       'data-player',
       DEFATULT_VIDEO_PLAYER_CONFIG['data-player'],
     );
-    expect(getByTestId('bc-video-player')).toHaveAttribute(
-      'width',
-      DEFATULT_VIDEO_PLAYER_CONFIG.width,
-    );
-    expect(getByTestId('bc-video-player')).toHaveAttribute(
-      'height',
-      DEFATULT_VIDEO_PLAYER_CONFIG.height,
-    );
     expect(getByTestId('bc-video-player').getAttribute('id')).toContain(
       DEFATULT_VIDEO_PLAYER_CONFIG['data-video-id'],
     );
