@@ -360,13 +360,9 @@ export const StoryButtonWithIcons = () => (
         spaceStack="space020"
       >
         {buttonSizes.map(button => (
-          <Button size={button.buttonSize} overrides={{maxWidth: '200px'}}>
+          <Button size={button.buttonSize}>
             <IconFilledEmail />
             Button
-            <IconFilledEmail />
-            <IconFilledEmail />
-            <IconFilledEmail />
-            <IconFilledEmail />
             <IconFilledEmail />
           </Button>
         ))}
