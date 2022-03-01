@@ -123,7 +123,7 @@ describe('Audio Player Composable', () => {
     expect(playPauseButton).toMatchSnapshot();
   });
 
-  test('raise event when the track has ended', () => {
+  it('should fire "end" event when the track has ended', () => {
     const fireEventSpy = jest.fn();
     const {getByTestId} = renderWithImplementation(
       AudioPlayerComposable,

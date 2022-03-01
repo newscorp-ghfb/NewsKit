@@ -10,7 +10,9 @@ import {AudioPlayerComposableProps} from './types';
 export const AudioPlayerComposable = ({
   children,
   src,
+  /* istanbul ignore next */
   autoPlay = false,
+  /* istanbul ignore next */
   live = false,
   ariaLandmark,
 }: AudioPlayerComposableProps) => {

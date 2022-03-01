@@ -314,6 +314,7 @@ export const useAudioFunctions = ({
       player.load();
       onWaiting();
       if (!autoPlay) {
+        /* istanbul ignore next */
         if (playing) {
           player.play();
         } else {
