@@ -6,7 +6,13 @@ interface PageTitleProps {
 }
 
 const PageTitle: React.FC<PageTitleProps> = ({title}) => (
-  <HeadNextSeo title={title} />
+  <HeadNextSeo
+    title={title}
+    image={{
+      url: 'social/landing.png',
+      alt: 'NewsKit design system',
+    }}
+  />
 );
 
 export default PageTitle;

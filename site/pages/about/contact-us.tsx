@@ -15,12 +15,16 @@ const PageIntroductionContainer = styled.div`
   ${getSizingCssFromTheme('marginBottom', 'sizing090')}
 `;
 
-export default ({path, ...props}: LayoutProps) => (
+const ContactUs = ({path, ...props}: LayoutProps) => (
   <Layout {...props} path={`${path}-new`}>
     <HeadNextSeo
       title="Contact us"
       description="Have a question about our design system? 
         The NewsKit team is here to help you."
+      image={{
+        url: 'social/about.png',
+        alt: 'Contact us',
+      }}
     />
 
     <PageIntroductionContainer>
@@ -57,6 +61,7 @@ export default ({path, ...props}: LayoutProps) => (
         <ContentPrimary
           headline="Form"
           description="Send an enquiry to the NewsKit team who will respond as quickly as possible."
+          showSeparator
         >
           <script
             src="https://static.airtable.com/js/embed/embed_snippet_v1.js"
@@ -76,6 +81,22 @@ export default ({path, ...props}: LayoutProps) => (
           />
         </ContentPrimary>
       </ContentSection>
+
+      <ContentSection sectionName="contact newsUK">
+        <ContentPrimary
+          headline="Contact NewsUK"
+          description={
+            <>
+              For any other enquiries related to NewsUK{' '}
+              <Link href="https://www.news.co.uk/contact-us/" target="_blank">
+                click here.
+              </Link>
+            </>
+          }
+        />
+      </ContentSection>
     </ComponentPageCell>
   </Layout>
 );
+
+export default ContactUs;

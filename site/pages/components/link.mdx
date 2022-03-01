@@ -23,12 +23,12 @@ A link requires a href property to be passed in.
 
 The default link component uses the following style tokens, which can be overridden:
 
-| Theme Token | Contextual Color | Color Value                                  |
-| ----------- | ---------------- | -------------------------------------------- |
-| linkText    | interactivePrimary030          | <TextBoxSwatch themeColor="interactivePrimary030"/>        |
-| linkActive  | interactivePrimary050          | <TextBoxSwatch themeColor="interactivePrimary050"/>        |
-| linkHover   | interactivePrimary040          | <TextBoxSwatch themeColor="interactivePrimary040"/>        |
-| linkVisited | interactiveVisited010   | <TextBoxSwatch themeColor="interactiveVisited010"/> |
+| Theme Token | Contextual Color      | Color Value                                         |
+| ----------- | --------------------- | --------------------------------------------------- |
+| linkText    | interactivePrimary030 | <TextBoxSwatch themeColor="interactivePrimary030"/> |
+| linkActive  | interactivePrimary050 | <TextBoxSwatch themeColor="interactivePrimary050"/> |
+| linkHover   | interactivePrimary040 | <TextBoxSwatch themeColor="interactivePrimary040"/> |
+| linkVisited | interactiveVisited010 | <TextBoxSwatch themeColor="interactiveVisited010"/> |
 
 ## Props
 
@@ -59,6 +59,9 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
     <Prop name="stylePreset" type="MQ<string>">
       If provided, this overrides the style preset applied to the Link.
     </Prop>
+    <Prop name="transitionPreset" type="TransitionToken | TransitionToken[]">
+      If provided, this overrides the transition preset applied to the standalone Link.
+    </Prop>
     <Prop name="typographyPreset" type="MQ<string>">
       If provided, this overrides the typography preset applied to the Link.
     </Prop>
@@ -88,7 +91,6 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
 
 All the native HTML attributes which an anchor element can take, can also be passed.
 E.g: `<LinkInline aria-label='NewsKit staging website' href="http://newskit.staging-news.co.uk/">`
-
 
 ## Playground
 
@@ -195,6 +197,7 @@ All you need to do is pass a href property with valid url. <a href="/components/
 ## Variations
 
 ### Inline
+
 LinkInline does not have any text cropping, is suggested to crop the whole paragraph, where it is sitting in.
 These are used within paragraphs or sentences to link to different content on the same page or other pages. Our current link style is more akin to this.
 
@@ -211,7 +214,9 @@ Note: linkInline is the default Link token, so there is no need to pass it to th
 </Code>
 
 <LegacyBlock display="inline-block" backgroundColor="black">
- <a href="/" overrides={{stylePreset: 'linkInlineInverse'}}>Inline link inverse</a>
+  <a href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
+    Inline link inverse
+  </a>
 </LegacyBlock>
 <Code>
   {`
@@ -222,11 +227,14 @@ Note: linkInline is the default Link token, so there is no need to pass it to th
 </Code>
 
 ### External
+
 An external link, which can be both Inline or Standalone,directs users to a page not produced by brand i.e. the website they currently are visiting. A trailing icon to depict the user is navigating away is often paired with the external link text.
 
 Add a link inline style preset token (linkExternal, linkExternalInverse) to the overrides.
 
-<a href="http://google.com/" overrides={{stylePreset: 'linkExternal'}}>External link with external icon</a>
+<a href="http://google.com/" overrides={{stylePreset: 'linkExternal'}}>
+  External link with external icon
+</a>
 <Code>
   {`
 <LinkInline
@@ -239,7 +247,9 @@ Add a link inline style preset token (linkExternal, linkExternalInverse) to the 
 </Code>
 
 <LegacyBlock display="inline-block" backgroundColor="black">
-  <a href="http://google.com/" overrides={{stylePreset: 'linkExternalInverse'}}>External link with external icon</a>
+  <a href="http://google.com/" overrides={{stylePreset: 'linkExternalInverse'}}>
+    External link with external icon
+  </a>
 </LegacyBlock>
 <Code>
   {`
@@ -253,6 +263,7 @@ Add a link inline style preset token (linkExternal, linkExternalInverse) to the 
 </Code>
 
 ### Standalone
+
 LinkStandalone has text cropping applied by default.
 Standalone links are used outside of body content, for example within navigational components such as menus, headers and footers.
 
@@ -266,7 +277,6 @@ Note: linkStandalone is the default LinkStandalone token, so there is no need to
 <Code>
   {`
 <LinkStandalone href="/">Standalone link</LinkStandalone>
-
 
 <LinkStandalone href="https://google.com">Standalone link external</LinkStandalone>
   `}

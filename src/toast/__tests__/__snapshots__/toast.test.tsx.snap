@@ -1582,9 +1582,9 @@ exports[`Toast Component renders with content as string and link 1`] = `
 
 .emotion-4 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  transition-property: color,fill;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -1655,7 +1655,6 @@ exports[`Toast Component renders with content as string and link 1`] = `
 
 .emotion-6 {
   margin: 0;
-  display: inline-block;
   display: block;
 }
 
@@ -1674,8 +1673,7 @@ exports[`Toast Component renders with content as string and link 1`] = `
         <p
           class="emotion-3"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           <a
             class="emotion-4"
             href="/"
@@ -1891,6 +1889,9 @@ exports[`Toast Component renders with icon 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -2052,6 +2053,9 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }

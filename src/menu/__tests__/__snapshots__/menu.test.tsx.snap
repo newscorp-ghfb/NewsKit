@@ -242,7 +242,6 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
               </div>
             </a>
           </li>
-          ,
           <li
             aria-hidden="true"
             class="emotion-7"
@@ -318,7 +317,6 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
               </div>
             </a>
           </li>
-          ,
           <li
             aria-hidden="true"
             class="emotion-7"
@@ -1176,7 +1174,6 @@ exports[`Menu renders vertically with menu dividers 1`] = `
               </div>
             </a>
           </li>
-          ,
           <li
             aria-hidden="true"
             class="emotion-7"
@@ -1252,7 +1249,6 @@ exports[`Menu renders vertically with menu dividers 1`] = `
               </div>
             </a>
           </li>
-          ,
           <li
             aria-hidden="true"
             class="emotion-7"
@@ -5522,9 +5518,38 @@ exports[`MenuDivider renders vertically with default props 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  width: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-right: 0;
 }
 
 .emotion-1 {
+  box-sizing: border-box;
+}
+
+.nk-menu-group+.emotion-1 {
+  margin-right: 24px;
+}
+
+.nk-menu-item+.emotion-1 {
+  margin-right: 8px;
+}
+
+.emotion-2 {
   border-style: solid;
   border-color: #DEDEDE;
   border-width: 1px;
@@ -5535,17 +5560,27 @@ exports[`MenuDivider renders vertically with default props 1`] = `
   height: 100%;
 }
 
-<li
-    aria-hidden="true"
+<nav
     class="emotion-0"
-    role="separator"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <hr
-      aria-hidden="true"
-      class="emotion-1"
-      data-testid="divider"
-    />
-  </li>
+    <ul
+      role="list"
+    >
+      <li
+        aria-hidden="true"
+        class="emotion-1"
+        role="separator"
+      >
+        <hr
+          aria-hidden="true"
+          class="emotion-2"
+          data-testid="divider"
+        />
+      </li>
+    </ul>
+  </nav>
 </DocumentFragment>
 `;
 
@@ -5553,17 +5588,38 @@ exports[`MenuDivider renders with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  width: 100%;
 }
 
-.nk-menu-group+.emotion-0 {
-  margin-right: 12px;
+.emotion-0>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
-.nk-menu-item+.emotion-0 {
-  margin-right: 12px;
+.emotion-0 li:last-of-type {
+  margin-right: 0;
 }
 
 .emotion-1 {
+  box-sizing: border-box;
+}
+
+.nk-menu-group+.emotion-1 {
+  margin-right: 12px;
+}
+
+.nk-menu-item+.emotion-1 {
+  margin-right: 12px;
+}
+
+.emotion-2 {
   border-style: solid;
   border-color: red;
   border-width: 2px;
@@ -5574,17 +5630,27 @@ exports[`MenuDivider renders with overrides 1`] = `
   height: 100%;
 }
 
-<li
-    aria-hidden="true"
+<nav
     class="emotion-0"
-    role="separator"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <hr
-      aria-hidden="true"
-      class="emotion-1"
-      data-testid="divider"
-    />
-  </li>
+    <ul
+      role="list"
+    >
+      <li
+        aria-hidden="true"
+        class="emotion-1"
+        role="separator"
+      >
+        <hr
+          aria-hidden="true"
+          class="emotion-2"
+          data-testid="divider"
+        />
+      </li>
+    </ul>
+  </nav>
 </DocumentFragment>
 `;
 
@@ -5991,6 +6057,9 @@ exports[`MenuGroup renders with title as a component 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -7961,6 +8030,9 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -8399,6 +8471,9 @@ exports[`MenuItem renders with icon 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }

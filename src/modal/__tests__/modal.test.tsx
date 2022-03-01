@@ -1,6 +1,6 @@
-import {fireEvent, wait} from '@testing-library/react';
+import {fireEvent, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import React, {useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
@@ -26,24 +26,36 @@ jest.mock('react-transition-group', () => {
       });
     };
 
-    const onEnter = () => callIfExist(props, 'onEnter');
-    const onExited = () => callIfExist(props, 'onExited');
+    const onEnter = React.useCallback(() => callIfExist(props, 'onEnter'), [
+      props,
+    ]);
+    const onExited = React.useCallback(() => callIfExist(props, 'onExited'), [
+      props,
+    ]);
+
+    useEffect(() => {
+      if (props.in) {
+        onEnter();
+      } else {
+        onExited();
+      }
+    }, [props.in, onEnter, onExited]);
 
     // check only for `in` prop and ignore `appear` since its always applied it does not play role
     if (props.in) {
-      onEnter();
       return (
         <FakeTransition>
           {React.Children.map(props.children, child => modifyChildren(child))}
         </FakeTransition>
       );
     }
-
     // modal is not in the DOM when is not open
-    onExited();
     return null;
   });
-  return {CSSTransition: FakeCSSTransition, Transition: FakeTransition};
+  return {
+    CSSTransition: FakeCSSTransition,
+    Transition: FakeTransition,
+  };
 });
 
 const modalBody = <TextBlock>Modal body content</TextBlock>;
@@ -179,7 +191,7 @@ describe('Modal focus management', () => {
       ),
     });
 
-    await wait(async () => {
+    await waitFor(async () => {
       const element = await findByTestId('interactive-element');
       expect(element).toHaveFocus();
     });
@@ -204,7 +216,7 @@ describe('Modal focus management', () => {
       ),
     });
 
-    await wait(async () => {
+    await waitFor(async () => {
       const element = await findByTestId('interactive-element');
       expect(element).toHaveFocus();
     });
@@ -237,7 +249,7 @@ describe('Modal focus management', () => {
     let toggleButton = getByTestId('toggle');
     toggleButton.focus();
     fireEvent.click(toggleButton);
-    await wait(async () => {
+    await waitFor(async () => {
       // first interactive element is focused
       const interactiveElement = await findByTestId('interactive-element');
       expect(interactiveElement).toHaveFocus();
@@ -252,7 +264,7 @@ describe('Modal focus management', () => {
 
     fireEvent.click(closeButton);
 
-    await wait(async () => {
+    await waitFor(async () => {
       toggleButton = await findByTestId('toggle');
       expect(toggleButton).toHaveFocus();
     });
@@ -298,7 +310,7 @@ describe('Modal focus management', () => {
     const toggleButton = getByTestId('toggle');
     toggleButton.focus();
     fireEvent.click(toggleButton);
-    await wait(async () => {
+    await waitFor(async () => {
       // first interactive element is focused
       const interactiveElement = await findByTestId('interactive-element');
       expect(interactiveElement).toHaveFocus();
@@ -313,7 +325,7 @@ describe('Modal focus management', () => {
 
     fireEvent.click(closeButton);
 
-    await wait(async () => {
+    await waitFor(async () => {
       const restoreFocusButton = await findByTestId('restoreFocusTo');
       expect(restoreFocusButton).toHaveFocus();
     });
@@ -333,7 +345,7 @@ describe('Modal focus management when focus trap is disabled', () => {
       ),
     });
 
-    await wait(async () => {
+    await waitFor(async () => {
       const element = await findByTestId('interactive-element');
       expect(element).toHaveFocus();
     });
@@ -359,7 +371,7 @@ describe('Modal focus management when focus trap is disabled', () => {
       ),
     });
 
-    await wait(async () => {
+    await waitFor(async () => {
       const element = await findByTestId('interactive-element');
       expect(element).toHaveFocus();
     });
@@ -396,7 +408,7 @@ describe('Modal focus management when focus trap is disabled', () => {
     let toggleButton = getByTestId('toggle');
     toggleButton.focus();
     fireEvent.click(toggleButton);
-    await wait(async () => {
+    await waitFor(async () => {
       // first interactive element is focused
       const interactiveElement = await findByTestId('interactive-element');
       expect(interactiveElement).toHaveFocus();
@@ -411,7 +423,7 @@ describe('Modal focus management when focus trap is disabled', () => {
 
     fireEvent.click(closeButton);
 
-    await wait(async () => {
+    await waitFor(async () => {
       toggleButton = await findByTestId('toggle');
       expect(toggleButton).toHaveFocus();
     });
@@ -458,7 +470,7 @@ describe('Modal focus management when focus trap is disabled', () => {
     const toggleButton = getByTestId('toggle');
     toggleButton.focus();
     fireEvent.click(toggleButton);
-    await wait(async () => {
+    await waitFor(async () => {
       // first interactive element is focused
       const interactiveElement = await findByTestId('interactive-element');
       expect(interactiveElement).toHaveFocus();
@@ -473,7 +485,7 @@ describe('Modal focus management when focus trap is disabled', () => {
 
     fireEvent.click(closeButton);
 
-    await wait(async () => {
+    await waitFor(async () => {
       const restoreFocusButton = await findByTestId('restoreFocusTo');
       expect(restoreFocusButton).toHaveFocus();
     });

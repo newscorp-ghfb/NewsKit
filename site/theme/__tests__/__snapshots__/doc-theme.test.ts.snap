@@ -1150,15 +1150,15 @@ Object {
     },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.interactivePrimary020}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary040}}",
         "textDecoration": "none",
       },
       "hover": Object {
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "underline",
       },
     },
@@ -1392,6 +1392,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -1439,6 +1446,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral100}}",
       },
     },
     "toastButton": Object {
@@ -1506,6 +1521,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -1531,6 +1560,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -1563,6 +1599,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -3231,15 +3274,15 @@ Object {
     },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.interactivePrimary020}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary040}}",
         "textDecoration": "none",
       },
       "hover": Object {
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "underline",
       },
     },
@@ -3473,6 +3516,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -3520,6 +3570,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral100}}",
       },
     },
     "toastButton": Object {
@@ -3587,6 +3645,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -3612,6 +3684,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -3644,6 +3723,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -5312,15 +5398,15 @@ Object {
     },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.interactivePrimary020}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary040}}",
         "textDecoration": "none",
       },
       "hover": Object {
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "underline",
       },
     },
@@ -5554,6 +5640,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -5601,6 +5694,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral100}}",
       },
     },
     "toastButton": Object {
@@ -5668,6 +5769,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -5693,6 +5808,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -5725,6 +5847,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -7393,15 +7522,15 @@ Object {
     },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.interactivePrimary020}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary040}}",
         "textDecoration": "none",
       },
       "hover": Object {
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "underline",
       },
     },
@@ -7635,6 +7764,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -7682,6 +7818,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral100}}",
       },
     },
     "toastButton": Object {
@@ -7749,6 +7893,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -7774,6 +7932,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -7806,6 +7971,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -9474,15 +9646,15 @@ Object {
     },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.interactivePrimary020}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary040}}",
         "textDecoration": "none",
       },
       "hover": Object {
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "underline",
       },
     },
@@ -9716,6 +9888,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -9763,6 +9942,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral100}}",
       },
     },
     "toastButton": Object {
@@ -9830,6 +10017,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -9855,6 +10056,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -9887,6 +10095,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -11555,15 +11770,15 @@ Object {
     },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.interactivePrimary020}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary040}}",
         "textDecoration": "none",
       },
       "hover": Object {
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "underline",
       },
     },
@@ -11797,6 +12012,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -11844,6 +12066,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral100}}",
       },
     },
     "toastButton": Object {
@@ -11911,6 +12141,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -11936,6 +12180,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -11968,6 +12219,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -13636,15 +13894,15 @@ Object {
     },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.interactivePrimary020}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary040}}",
         "textDecoration": "none",
       },
       "hover": Object {
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "underline",
       },
     },
@@ -13878,6 +14136,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -13925,6 +14190,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral100}}",
       },
     },
     "toastButton": Object {
@@ -13992,6 +14265,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -14017,6 +14304,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -14049,6 +14343,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {
@@ -15717,15 +16018,15 @@ Object {
     },
     "linkFooter": Object {
       "active": Object {
-        "color": "{{colors.inkNonEssential}}",
+        "color": "{{colors.interactivePrimary020}}",
         "textDecoration": "none",
       },
       "base": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary040}}",
         "textDecoration": "none",
       },
       "hover": Object {
-        "color": "{{colors.inkSubtle}}",
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "underline",
       },
     },
@@ -15959,6 +16260,13 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "stepFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.blue060}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.white}}",
+      },
+    },
     "swatchBadge": Object {
       "base": Object {
         "iconColor": "{{colors.interface060}}",
@@ -16006,6 +16314,14 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
+      },
+    },
+    "timerFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.neutral030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "color": "{{colors.neutral080}}",
+        "iconColor": "{{colors.neutral100}}",
       },
     },
     "toastButton": Object {
@@ -16073,6 +16389,20 @@ Object {
   },
   "themeVersion": 1,
   "transitionPresets": Object {
+    "backgroundColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "background-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "borderColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "border-color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "fade": Object {
       "base": Object {
         "opacity": "0",
@@ -16098,6 +16428,13 @@ Object {
       },
       "exitDone": Object {
         "opacity": "0",
+      },
+    },
+    "fontColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "color",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "grow": Object {
@@ -16130,6 +16467,13 @@ Object {
         "transform": "scale(1.7)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
+      },
+    },
+    "iconColorChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "moveUp": Object {

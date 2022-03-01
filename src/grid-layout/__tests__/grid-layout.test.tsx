@@ -3,14 +3,36 @@ import {GridLayout, GridLayoutItem} from '..';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {GridLayoutProps} from '../types';
 
+const defaultChildren = [
+  <GridLayoutItem key="1">TEST</GridLayoutItem>,
+  <GridLayoutItem key="2">TEST</GridLayoutItem>,
+  <GridLayoutItem key="3">TEST</GridLayoutItem>,
+  <GridLayoutItem key="4">TEST</GridLayoutItem>,
+];
+
+const areasChildren = [
+  <GridLayoutItem area="A" key="A">
+    A
+  </GridLayoutItem>,
+  <GridLayoutItem area="B" key="B">
+    B
+  </GridLayoutItem>,
+  <GridLayoutItem area="C" key="C">
+    C
+  </GridLayoutItem>,
+  <GridLayoutItem area="D" key="D">
+    D
+  </GridLayoutItem>,
+  <GridLayoutItem area="E" key="E">
+    E
+  </GridLayoutItem>,
+];
+
 describe('GridLayout', () => {
   test('renders GridLayout', () => {
     const props: GridLayoutProps = {
       columns: '1fr 1fr 1fr 1fr',
-      children: [
-        <GridLayoutItem>TEST</GridLayoutItem>,
-        <GridLayoutItem>TEST</GridLayoutItem>,
-      ],
+      children: defaultChildren,
     };
 
     const fragment = renderToFragmentWithTheme(GridLayout, props);
@@ -22,10 +44,7 @@ describe('GridLayout', () => {
       overrides: {
         width: '100px',
       },
-      children: [
-        <GridLayoutItem>TEST</GridLayoutItem>,
-        <GridLayoutItem>TEST</GridLayoutItem>,
-      ],
+      children: defaultChildren,
     };
 
     const fragment = renderToFragmentWithTheme(GridLayout, props) as any;
@@ -38,13 +57,7 @@ describe('GridLayout', () => {
         "A A"
         "B C"
         "D E"`,
-      children: [
-        <GridLayoutItem area="A">A</GridLayoutItem>,
-        <GridLayoutItem area="B">B</GridLayoutItem>,
-        <GridLayoutItem area="C">C</GridLayoutItem>,
-        <GridLayoutItem area="D">D</GridLayoutItem>,
-        <GridLayoutItem area="E">E</GridLayoutItem>,
-      ],
+      children: areasChildren,
     };
 
     const fragment = renderToFragmentWithTheme(GridLayout, props);
@@ -67,13 +80,7 @@ describe('GridLayout', () => {
           D E
         `,
       },
-      children: [
-        <GridLayoutItem area="A">A</GridLayoutItem>,
-        <GridLayoutItem area="B">B</GridLayoutItem>,
-        <GridLayoutItem area="C">C</GridLayoutItem>,
-        <GridLayoutItem area="D">D</GridLayoutItem>,
-        <GridLayoutItem area="E">E</GridLayoutItem>,
-      ],
+      children: areasChildren,
     };
 
     const fragment = renderToFragmentWithTheme(GridLayout, props);
@@ -116,22 +123,22 @@ describe('GridLayout', () => {
       columns: {md: '1fr sizing120', lg: '1fr sizing120 300px 1fr'},
       rows: {md: '1fr sizing120', lg: '1fr sizing120 300px 1fr'},
       children: [
-        <GridLayoutItem>1</GridLayoutItem>,
-        <GridLayoutItem>2</GridLayoutItem>,
-        <GridLayoutItem>3</GridLayoutItem>,
-        <GridLayoutItem>4</GridLayoutItem>,
-        <GridLayoutItem>5</GridLayoutItem>,
-        <GridLayoutItem>6</GridLayoutItem>,
-        <GridLayoutItem>7</GridLayoutItem>,
-        <GridLayoutItem>8</GridLayoutItem>,
-        <GridLayoutItem>9</GridLayoutItem>,
-        <GridLayoutItem>10</GridLayoutItem>,
-        <GridLayoutItem>11</GridLayoutItem>,
-        <GridLayoutItem>12</GridLayoutItem>,
-        <GridLayoutItem>13</GridLayoutItem>,
-        <GridLayoutItem>14</GridLayoutItem>,
-        <GridLayoutItem>15</GridLayoutItem>,
-        <GridLayoutItem>16</GridLayoutItem>,
+        <GridLayoutItem key="1">1</GridLayoutItem>,
+        <GridLayoutItem key="2">2</GridLayoutItem>,
+        <GridLayoutItem key="3">3</GridLayoutItem>,
+        <GridLayoutItem key="4">4</GridLayoutItem>,
+        <GridLayoutItem key="5">5</GridLayoutItem>,
+        <GridLayoutItem key="6">6</GridLayoutItem>,
+        <GridLayoutItem key="7">7</GridLayoutItem>,
+        <GridLayoutItem key="8">8</GridLayoutItem>,
+        <GridLayoutItem key="9">9</GridLayoutItem>,
+        <GridLayoutItem key="10">10</GridLayoutItem>,
+        <GridLayoutItem key="11">11</GridLayoutItem>,
+        <GridLayoutItem key="12">12</GridLayoutItem>,
+        <GridLayoutItem key="13">13</GridLayoutItem>,
+        <GridLayoutItem key="14">14</GridLayoutItem>,
+        <GridLayoutItem key="15">15</GridLayoutItem>,
+        <GridLayoutItem key="16">16</GridLayoutItem>,
       ],
     };
 
@@ -143,10 +150,7 @@ describe('GridLayout', () => {
     const props: GridLayoutProps = {
       inline: true,
       columns: '1fr 1fr',
-      children: [
-        <GridLayoutItem>TEST</GridLayoutItem>,
-        <GridLayoutItem>TEST</GridLayoutItem>,
-      ],
+      children: defaultChildren,
     };
 
     const fragment = renderToFragmentWithTheme(GridLayout, props);
@@ -158,12 +162,7 @@ describe('GridLayout', () => {
       columns: '1fr 1fr',
       columnGap: '20px',
       rowGap: '20px',
-      children: [
-        <GridLayoutItem>TEST</GridLayoutItem>,
-        <GridLayoutItem>TEST</GridLayoutItem>,
-        <GridLayoutItem>TEST</GridLayoutItem>,
-        <GridLayoutItem>TEST</GridLayoutItem>,
-      ],
+      children: defaultChildren,
     };
 
     const fragment = renderToFragmentWithTheme(GridLayout, props);
@@ -175,11 +174,24 @@ describe('GridLayout', () => {
       columns: '1fr 1fr',
       columnGap: 'space020',
       rowGap: 'space020',
+      children: defaultChildren,
+    };
+
+    const fragment = renderToFragmentWithTheme(GridLayout, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders GridLayout with colum/row prop', () => {
+    const props: GridLayoutProps = {
+      columns: `repeat(12, 1fr)`,
+      rows: `repeat(10, 1fr)`,
       children: [
-        <GridLayoutItem>TEST</GridLayoutItem>,
-        <GridLayoutItem>TEST</GridLayoutItem>,
-        <GridLayoutItem>TEST</GridLayoutItem>,
-        <GridLayoutItem>TEST</GridLayoutItem>,
+        <GridLayoutItem key="1" column="auto / span 8" row="1 / 5">
+          8 cells
+        </GridLayoutItem>,
+        <GridLayoutItem key="2" column="auto / span 4" row="2 / 3">
+          4 cells
+        </GridLayoutItem>,
       ],
     };
 

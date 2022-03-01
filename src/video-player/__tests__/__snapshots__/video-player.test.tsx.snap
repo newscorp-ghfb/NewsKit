@@ -8,10 +8,8 @@ exports[`Video Player default player should render properly with data attributes
   data-embed="default"
   data-player="default"
   data-testid="bc-video-player"
-  data-video-id="4093643993001"
-  height="540"
-  id="bc-video-4093643993001"
-  width="960"
+  data-video-id="5290445795001"
+  id="bc-video-5290445795001"
 />
 `;
 
@@ -24,9 +22,7 @@ exports[`Video Player playlist player should render properly with data attribute
   data-player="S13cJdUBz"
   data-playlist-id="5686354139001"
   data-testid="bc-video-player"
-  height="540"
   id="bc-video-5686354139001"
-  width="960"
 />
 `;
 
@@ -56,10 +52,8 @@ exports[`Video Player renders video player with overriden play button style 1`] 
       data-embed="default"
       data-player="default"
       data-testid="bc-video-player"
-      data-video-id="4093643993001"
-      height="540"
-      id="bc-video-4093643993001"
-      width="960"
+      data-video-id="5290445795001"
+      id="bc-video-5290445795001"
     />
   </div>
 </DocumentFragment>
