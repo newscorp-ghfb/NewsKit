@@ -107,6 +107,7 @@ describe('Audio Player Composable', () => {
     const playPauseButton = getByTestId('audio-player-play-pause-button');
     const audioElement = getByTestId('audio-element') as HTMLAudioElement;
 
+    fireEvent.click(playPauseButton);
     // playButton should be in initial loading state
     expect(playPauseButton).toMatchSnapshot();
 
@@ -141,5 +142,45 @@ describe('Audio Player Composable', () => {
     fireEvent.ended(player);
 
     expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
+  });
+
+  it('should preserve playing state when changing track', () => {
+    const {getByTestId, rerender} = renderWithTheme(
+      AudioPlayerComposable,
+      recordedAudioProps,
+    );
+
+    let audioElement: any = getByTestId('audio-element');
+
+    const resetAndReRender = (props: Partial<AudioPlayerComposableProps>) => {
+      audioElement.play.mockReset();
+      audioElement.pause.mockReset();
+
+      rerender(<AudioPlayerComposable {...recordedAudioProps} {...props} />);
+      audioElement = getByTestId('audio-element');
+    };
+
+    // Not playing, no auto play, new track should be paused
+    resetAndReRender({src: 'newtrack-1'});
+    expect(audioElement.play).not.toHaveBeenCalled();
+    expect(audioElement.pause).toHaveBeenCalled();
+
+    // Playing, no auto play, new track should be played
+    fireEvent.canPlay(getByTestId('audio-element'));
+    fireEvent.click(getByTestId('audio-player-play-pause-button'));
+    resetAndReRender({src: 'newtrack-2'});
+    expect(audioElement.play).toHaveBeenCalled();
+    expect(audioElement.pause).not.toHaveBeenCalled();
+
+    // Playing, with auto play, no need to call play/pause
+    fireEvent.click(getByTestId('audio-player-play-pause-button'));
+    resetAndReRender({src: 'newtrack-3', autoPlay: true});
+    expect(audioElement.play).not.toHaveBeenCalled();
+    expect(audioElement.pause).not.toHaveBeenCalled();
+
+    fireEvent.click(getByTestId('audio-player-play-pause-button'));
+    resetAndReRender({src: 'newtrack-4', autoPlay: true});
+    expect(audioElement.play).not.toHaveBeenCalled();
+    expect(audioElement.pause).not.toHaveBeenCalled();
   });
 });

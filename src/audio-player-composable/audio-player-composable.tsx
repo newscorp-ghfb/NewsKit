@@ -46,6 +46,7 @@ export const AudioPlayerComposable = ({
     audioRef,
     playing,
     setLoading,
+    loading,
     setPlayState,
     showLoaderTimeoutRef,
     setTrackPosition,
@@ -55,6 +56,7 @@ export const AudioPlayerComposable = ({
     trackPositionRef,
     duration,
     setDuration,
+    src,
   });
 
   const getPlayPauseButtonProps = ({

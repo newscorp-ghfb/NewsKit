@@ -49,7 +49,9 @@ export const useAudioFunctions = ({
       media_type: 'audio',
     };
     return live
-      ? playerData
+      ? // TODO remove ignore once in implemented live
+        /* istanbul ignore next */
+        playerData
       : {
           ...playerData,
           media_duration: formatTrackTime(duration),
@@ -236,11 +238,14 @@ export const useAudioFunctions = ({
     pause();
 
     fireEvent(
+      // TODO remove ignore when implementing live functionality and test
+      /* istanbul ignore next */
       getTrackingInformation('audio-player-popout', EventTrigger.Click),
     );
   };
 
   const togglePlay = useCallback(() => {
+    console.log(loading, 'Loading');
     if (loading) {
       return;
     }
@@ -309,12 +314,12 @@ export const useAudioFunctions = ({
     fireEvent(trackingInformation);
   }, [getTrackingInformation, fireEvent]);
 
+  // Preserve audioplayer play state on src change
   useEffect(() => {
     ifPlayer(player => {
       player.load();
       onWaiting();
       if (!autoPlay) {
-        /* istanbul ignore next */
         if (playing) {
           player.play();
         } else {
