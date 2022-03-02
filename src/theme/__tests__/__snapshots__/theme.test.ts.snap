@@ -1350,6 +1350,10 @@ Object {
         "size": "sizing070",
         "spaceInline": "space040",
         "stylePreset": "checkboxInput",
+        "transitionPreset": Array [
+          "backgroundColorChange",
+          "borderColorChange",
+        ],
       },
       "label": Object {
         "stylePreset": "controlLabel",
@@ -1366,6 +1370,10 @@ Object {
         "size": "sizing060",
         "spaceInline": "space030",
         "stylePreset": "checkboxInput",
+        "transitionPreset": Array [
+          "backgroundColorChange",
+          "borderColorChange",
+        ],
       },
       "label": Object {
         "stylePreset": "controlLabel",
@@ -1382,6 +1390,10 @@ Object {
         "size": "sizing050",
         "spaceInline": "space030",
         "stylePreset": "checkboxInput",
+        "transitionPreset": Array [
+          "backgroundColorChange",
+          "borderColorChange",
+        ],
       },
       "label": Object {
         "stylePreset": "controlLabel",
