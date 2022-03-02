@@ -277,4 +277,4 @@ export const StoryCheckboxTransitions = () => (
   </ThemeProvider>
 );
 
-StoryCheckboxOverrides.storyName = 'checkbox-transitions';
+StoryCheckboxTransitions.storyName = 'checkbox-transitions';
