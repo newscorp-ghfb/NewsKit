@@ -30,7 +30,7 @@ interface AudioPlayerProviderContext {
     ariaLabel: string;
     ariaPressed: boolean;
     loading: boolean;
-    completeOnClick: () => void;
+    onClick: () => void;
     playing: boolean;
     canPause: boolean;
     playStateIcon: ReactJSXElement;

@@ -82,7 +82,7 @@ export const AudioPlayerComposable = ({
       }
     }
 
-    const completeOnClick = () => {
+    const onClick = () => {
       if (customerOnClick) customerOnClick();
       togglePlay();
     };
@@ -91,7 +91,7 @@ export const AudioPlayerComposable = ({
       ariaLabel,
       ariaPressed,
       loading,
-      completeOnClick,
+      onClick,
 
       // can  be needed for custom internal logic
       playing,

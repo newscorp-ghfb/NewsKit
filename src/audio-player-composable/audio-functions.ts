@@ -225,6 +225,8 @@ export const useAudioFunctions = ({
 
       fireEvent(
         getTrackingInformation(
+          // TODO remove ignore once implemented live functionality
+          /* istanbul ignore next */
           live ? 'audio-player-stop-button' : 'audio-player-pause-button',
           EventTrigger.Click,
         ),

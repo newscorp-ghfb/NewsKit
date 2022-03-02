@@ -8,7 +8,7 @@ export const PlayPauseButton: React.FC<PlayPauseButtonProps> = React.memo(
   ({onClick: customerOnClick, ...props}) => {
     const {getPlayPauseButtonProps} = useContext(AudioPlayerContext);
 
-    const {playStateIcon, ariaLabel, ariaPressed, loading, completeOnClick} =
+    const {playStateIcon, ariaLabel, ariaPressed, loading, onClick} =
       getPlayPauseButtonProps! &&
       getPlayPauseButtonProps({onClick: customerOnClick});
 
@@ -18,7 +18,7 @@ export const PlayPauseButton: React.FC<PlayPauseButtonProps> = React.memo(
         aria-label={ariaLabel}
         aria-pressed={ariaPressed}
         loading={loading}
-        onClick={completeOnClick}
+        onClick={onClick}
         size={props.size || ButtonSize.Large}
         overrides={props.overrides}
         {...props}
