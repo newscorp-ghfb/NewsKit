@@ -24,13 +24,13 @@ interface AudioPlayerProviderContext {
   trackPositionArr: number[];
   onChangeSlider: (values: number[]) => void;
   // Getter functions
-  getPlayPauseButtonProps: (
-    customerOnClick?: () => void,
-  ) => {
+  getPlayPauseButtonProps: (args: {
+    onClick?: () => void;
+  }) => {
     ariaLabel: string;
     ariaPressed: boolean;
     loading: boolean;
-    onClick: () => void;
+    completeOnClick: () => void;
     playing: boolean;
     canPause: boolean;
     playStateIcon: ReactJSXElement;

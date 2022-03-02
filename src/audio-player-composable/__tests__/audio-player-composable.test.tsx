@@ -25,7 +25,7 @@ const recordedTrackingOutputObject = {
     media_player: `newskit-audio-player-${version}`,
     media_duration: '00:00',
     media_type: 'audio',
-    // TODO should be "2" once implemented the seekbar
+    // TODO media_milestone should be "2" once implemented the seekbar
     media_milestone: 'NaN',
     media_offset: '00:00',
     media_segment: 'MockMediaSegment',
@@ -37,7 +37,7 @@ const recordedAudioProps: AudioPlayerComposableProps = {
   autoPlay: false,
   children: (
     <PlayPauseButton
-      customerOnClick={() => {
+      onClick={() => {
         console.log('customer click function');
       }}
     />
@@ -49,7 +49,7 @@ const recordedAudioPropsAutoplay: AudioPlayerComposableProps = {
   autoPlay: true,
   children: (
     <PlayPauseButton
-      customerOnClick={() => {
+      onClick={() => {
         console.log('customer click function');
       }}
     />

@@ -14,7 +14,7 @@ export const AudioPlayPauseButton = () => (
     ariaLandmark="audio player"
   >
     <PlayPauseButton
-      customerOnClick={() => {
+      onClick={() => {
         console.log('customer click function');
       }}
     />
@@ -30,7 +30,7 @@ export const AudioPlayPauseButtonAutoplay = () => (
     ariaLandmark="audio player auto"
   >
     <PlayPauseButton
-      customerOnClick={() => {
+      onClick={() => {
         console.log('customer click function');
       }}
     />

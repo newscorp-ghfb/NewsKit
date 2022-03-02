@@ -33,7 +33,7 @@ export interface TrackControlProps {
 }
 export interface PlayPauseButtonProps {
   size?: ButtonSize;
-  customerOnClick?: () => void;
+  onClick?: () => void;
   overrides?: ButtonProps['overrides'];
 }
 

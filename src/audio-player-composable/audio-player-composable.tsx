@@ -57,7 +57,11 @@ export const AudioPlayerComposable = ({
     setDuration,
   });
 
-  const getPlayPauseButtonProps = (customerOnClick?: () => void) => {
+  const getPlayPauseButtonProps = ({
+    onClick: customerOnClick,
+  }: {
+    onClick?: () => void;
+  }) => {
     // All the internal logic for defining aria and icon to show
     let playStateIcon = <IconFilledPlayArrow />;
     let ariaLabel = 'Play';
@@ -76,7 +80,7 @@ export const AudioPlayerComposable = ({
       }
     }
 
-    const onClick = () => {
+    const completeOnClick = () => {
       if (customerOnClick) customerOnClick();
       togglePlay();
     };
@@ -85,7 +89,7 @@ export const AudioPlayerComposable = ({
       ariaLabel,
       ariaPressed,
       loading,
-      onClick,
+      completeOnClick,
 
       // can  be needed for custom internal logic
       playing,
