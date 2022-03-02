@@ -5,12 +5,12 @@ import {AudioPlayerContext} from '../context';
 import {PlayPauseButtonProps} from '../types';
 
 export const PlayPauseButton: React.FC<PlayPauseButtonProps> = React.memo(
-  ({onClick: customerOnClick, ...props}) => {
+  ({onClick: consumerOnClick, ...props}) => {
     const {getPlayPauseButtonProps} = useContext(AudioPlayerContext);
 
     const {playStateIcon, ariaLabel, ariaPressed, loading, onClick} =
       getPlayPauseButtonProps! &&
-      getPlayPauseButtonProps({onClick: customerOnClick});
+      getPlayPauseButtonProps({onClick: consumerOnClick});
 
     return (
       <IconButton

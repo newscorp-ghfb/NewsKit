@@ -60,7 +60,7 @@ export const AudioPlayerComposable = ({
   });
 
   const getPlayPauseButtonProps = ({
-    onClick: customerOnClick,
+    onClick: consumerOnClick,
   }: {
     onClick?: () => void;
   }) => {
@@ -83,7 +83,7 @@ export const AudioPlayerComposable = ({
     }
 
     const onClick = () => {
-      if (customerOnClick) customerOnClick();
+      if (consumerOnClick) consumerOnClick();
       togglePlay();
     };
 
