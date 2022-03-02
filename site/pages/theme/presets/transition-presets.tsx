@@ -1,5 +1,5 @@
 import React from 'react';
-import {InlineMessage, IconFilledInfo, styled} from 'newskit*';
+import {InlineMessage, IconFilledInfo, styled, P, Block} from 'newskit*';
 import {Table} from '../../../components/table';
 import {InlineCode} from '../../../components/markdown-elements';
 import {Mono} from '../../../components/flags';
@@ -8,6 +8,7 @@ import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
 import {Illustration} from '../../../components/illustrations/illustration-loader';
 import {Link} from '../../../components/link';
+import {Code} from '../../../components/code';
 import {
   ContentSection,
   ContentPrimary,
@@ -294,6 +295,101 @@ const PREDEFINED_TRANSITION_PRESETS = [
   },
 ];
 
+const USER_INTERACTION = [
+  {
+    example: getImage(
+      'theme/transition-presets/transition-preset-states/user-interaction',
+    ),
+    name: 'base',
+    type: 'TransitionPresetStyles',
+    description:
+      'Defines the CSS property, duration, delay and transition timing for the transition of the element.',
+  },
+];
+
+const ENTER_EXIT_COMPONENT = [
+  {
+    example: getImage(
+      'theme/transition-presets/transition-preset-states/component/base',
+    ),
+    name: 'base',
+    type: 'TransitionPresetStyles',
+    description:
+      'Defines the CSS property, duration, delay and transition timing for the transition of the element.',
+  },
+  {
+    example: getImage(
+      'theme/transition-presets/transition-preset-states/component/enter',
+    ),
+    name: 'enter',
+    type: 'TransitionPresetStyles',
+    description:
+      'Defines the initial style prior to starting the enter transition.',
+  },
+  {
+    example: getImage(
+      'theme/transition-presets/transition-preset-states/component/enteractive',
+    ),
+    name: 'enterActive',
+    type: 'TransitionPresetStyles',
+    description: (
+      <>
+        Defines the enter transition including CSS property that is
+        transitioned, the duration, the delay and the timing function.
+        <br />
+        <br />
+        Defines the final values of the enter transition.
+      </>
+    ),
+  },
+  {
+    example: getImage(
+      'theme/transition-presets/transition-preset-states/component/enterdone',
+    ),
+    name: 'enterDone',
+    type: 'TransitionPresetStyles',
+    description:
+      'Defines the final style after the enter transition has completed.',
+  },
+  {
+    example: getImage(
+      'theme/transition-presets/transition-preset-states/component/exit',
+    ),
+    name: 'exit',
+    type: 'TransitionPresetStyles',
+    description: 'Defines the style prior to starting the exit transition.',
+  },
+  {
+    example: getImage(
+      'theme/transition-presets/transition-preset-states/component/exitactive',
+    ),
+    name: 'exitActive',
+    type: 'TransitionPresetStyles',
+    description: (
+      <>
+        Defines the exit transition including CSS property that is transitioned,
+        the duration, the delay and the timing function.
+        <br />
+        <br />
+        Defines the final values of the exit transition.
+      </>
+    ),
+  },
+  {
+    example: getImage(
+      'theme/transition-presets/transition-preset-states/component/exitdone',
+    ),
+    name: 'exitDone',
+    type: 'TransitionPresetStyles',
+    description:
+      'Defines the final style after the exit transition has completed. This is the state that persists after the transition.',
+  },
+];
+
+const contentOverrides = {
+  typographyPreset: 'editorialParagraph030',
+};
+
 const StylePresets = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
@@ -356,6 +452,7 @@ const StylePresets = (layoutProps: LayoutProps) => (
             rows={PREDEFINED_TRANSITION_PRESETS}
           />
         </ContentPrimary>
+
         <ContentSecondary showSeparator>
           <InlineMessage icon={infoIcon}>
             You can also add your own Transition Presets. See the{' '}
@@ -364,6 +461,155 @@ const StylePresets = (layoutProps: LayoutProps) => (
             </Link>{' '}
             guide for more details.
           </InlineMessage>
+        </ContentSecondary>
+      </ContentSection>
+
+      <ContentSection sectionName="transition preset states">
+        <ContentPrimary
+          id="transition-preset-states"
+          toc="Transition Preset States"
+          headline="Transition Preset States"
+          description={
+            <>
+              States are used to define the{' '}
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions"
+                target="_blank"
+              >
+                CSS property
+              </Link>
+              , duration, delay and transition timing, and the initial and final
+              styling of an element.
+            </>
+          }
+        >
+          <Illustration path="theme/transition-presets/transition-preset-states/overview" />
+          <Block spaceStack="space060" />
+          <P overrides={contentOverrides}>
+            There are two distinct approaches to defining transitions based on
+            the following:
+          </P>
+        </ContentPrimary>
+
+        <ContentSecondary
+          headline="1. States for transitions triggered upon user interaction"
+          description="Transition presents applied to elements upon user interaction e.g. changing the background colour of a Button on hover. The following states are used for transitions triggered upon user interaction:"
+        >
+          <Table
+            columns={['Example', 'Name', 'Type', 'Description']}
+            rows={USER_INTERACTION}
+          />
+        </ContentSecondary>
+
+        <ContentSecondary
+          headline="2. States for transitions triggered upon enter and exit of a component"
+          description={
+            <>
+              Transition presets applied to mount and unmount components e.g.{' '}
+              <Link href="/components/modal/">Modal</Link> on-screen appearing
+              and disappearing. The following states are used for transitions
+              triggered upon enter (mount) and exit (unmount) of a component.
+              The states represent class names applied to an element:
+            </>
+          }
+          showSeparator
+        >
+          <Table
+            columns={['Example', 'Name', 'Type', 'Description']}
+            rows={ENTER_EXIT_COMPONENT}
+          />
+        </ContentSecondary>
+      </ContentSection>
+
+      <ContentSection sectionName="apply transition presets">
+        <ContentPrimary
+          id="apply-transition-presets"
+          toc="Apply Transition Presets"
+          headline="Apply Transition Presets"
+          description={
+            <>
+              The{' '}
+              <Link href="/theme/theming/component-defaults/">
+                Component Defaults
+              </Link>{' '}
+              page details the different ways in which you can override and
+              apply Transition Presets to NewsKit components. For more advanced
+              use cases, these values can be accessed from the theme by calling{' '}
+              <Link href="/theme/theming/using-a-theme/">
+                getTransitionPreset
+              </Link>{' '}
+              (a function used to retrieve values from the{' '}
+              <Link href="/theme/theming/component-defaults/">
+                component defaults or overrides objects)
+              </Link>{' '}
+              or{' '}
+              <Link href="/theme/theming/using-a-theme/">
+                getTransitionPresetFromTheme
+              </Link>{' '}
+              (a function used to retrieve token values from theme or component
+              props).
+            </>
+          }
+        />
+
+        <ContentSecondary
+          headline="Transition presets triggered upon user interaction"
+          description={
+            <>
+              1. This example demonstrates a Transition Preset{' '}
+              <InlineCode>backgroundColorChange</InlineCode>.
+            </>
+          }
+        >
+          <Code>
+            {`transitionPresets.backgroundColorChange = {
+  base: {
+    transitionProperty: 'background-color',
+    transitionDuration: '{{motions.motionDuration050}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+  },
+};`}
+          </Code>
+        </ContentSecondary>
+
+        <ContentSecondary
+          description={
+            <>
+              2. When combined with the following{' '}
+              <InlineCode>stylePreset</InlineCode> the background colour will
+              transition between states.
+            </>
+          }
+        >
+          <Code>
+            {`stylePresets.box = {
+  base: {
+      backgroundColor: '{{colors.purple030}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.purple070}}',
+    }
+};`}
+          </Code>
+        </ContentSecondary>
+
+        <ContentSecondary
+          description={
+            <>
+              3. This example demonstrates applying{' '}
+              <InlineCode>backgroundColorChange</InlineCode> Transition preset
+              to a simple box element.
+            </>
+          }
+        >
+          <Code>
+            {`const Box = styled.div
+$\{getStylePresetFromTheme('box')}
+$\{getTransitionPresetFromTheme('backgroundColorChange')}
+  width: 100px;
+  height: 100px;
+;`}
+          </Code>
         </ContentSecondary>
       </ContentSection>
     </ComponentPageCell>
