@@ -1,5 +1,6 @@
 import React from 'react';
 import {NewsKitIconProps} from '../icons';
+import {TransitionToken} from '../theme/presets/types';
 import {Override} from '../utils/overrides';
 import {MQ} from '../utils/style/types';
 
@@ -12,6 +13,7 @@ type CheckboxOverrides = {
     size?: MQ<string>;
     stylePreset?: MQ<string>;
     spaceInline?: MQ<string>;
+    transitionPreset?: TransitionToken | TransitionToken[];
   };
   feedback?: {
     size?: MQ<string>;
