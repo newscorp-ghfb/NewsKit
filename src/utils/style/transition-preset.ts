@@ -119,6 +119,9 @@ export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
   token: MQ<TransitionToken> | MQ<TransitionToken[]>,
   componentClassName?: string,
 ) => (props: Props) => {
+  /* istanbul ignore if */
+  if (!token) return '';
+
   if (isResponsive(token, props.theme.breakpoints)) {
     return Object.entries(token).reduce(
       (acc, [key, transitionPresetToken], index, arr) => {
