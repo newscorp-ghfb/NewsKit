@@ -7,7 +7,13 @@ import {
 import {Checkbox} from '..';
 import {compileTheme, createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
-import {Cell, Grid, IconFilledCancel, IconFilledStarOutline} from '../..';
+import {
+  Cell,
+  Grid,
+  GridLayout,
+  IconFilledCancel,
+  IconFilledStarOutline,
+} from '../..';
 import {CheckboxIconProps} from '../types';
 import {states, sizes} from './helpers';
 
@@ -202,3 +208,73 @@ export const StoryCheckboxOverrides = () => (
   </ThemeProvider>
 );
 StoryCheckboxOverrides.storyName = 'checkbox-overrides';
+
+const myCustomTransitionPresets = createTheme({
+  name: 'my-custom-transition-presets',
+  overrides: {
+    transitionPresets: {
+      customBackgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '500ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+      customBorderColourChange: {
+        base: {
+          transitionProperty: 'border-color',
+          transitionDuration: '500ms',
+          transitionDelay: '0ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+    },
+  },
+});
+export const StoryCheckboxTransitions = () => (
+  <ThemeProvider theme={myCustomTransitionPresets}>
+    <StorybookSubHeading>Checkbox with Transition Presets</StorybookSubHeading>
+    <Container>
+      <GridLayout rowGap="space040">
+        <Checkbox defaultChecked label="default transition" />
+        <Checkbox
+          overrides={{
+            input: {
+              transitionPreset: [
+                'customBackgroundColorChange',
+                'customBorderColourChange',
+              ],
+            },
+          }}
+          defaultChecked
+          label="with overrides using custom transitions"
+        />
+        <Checkbox
+          overrides={{
+            input: {
+              transitionPreset: [
+                {
+                  extend: 'backgroundColorChange',
+                  base: {
+                    transitionDuration: '{{motions.motionDuration050}}',
+                  },
+                },
+                {
+                  extend: 'borderColorChange',
+                  base: {
+                    transitionDuration: '{{motions.motionDuration010}}',
+                  },
+                },
+              ],
+            },
+          }}
+          defaultChecked
+          label="with overrides using extend on transitionDuration"
+        />
+      </GridLayout>
+    </Container>
+  </ThemeProvider>
+);
+
+StoryCheckboxOverrides.storyName = 'checkbox-transitions';
