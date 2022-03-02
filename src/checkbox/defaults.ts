@@ -6,11 +6,7 @@ export default {
         size: 'sizing050',
         stylePreset: 'checkboxInput',
         spaceInline: 'space030',
-        transitionPreset: [
-          'backgroundColorChange',
-          'borderColorChange',
-          'iconColorChange',
-        ],
+        transitionPreset: ['backgroundColorChange', 'borderColorChange'],
       },
       feedback: {
         size: 'sizing070',
@@ -27,11 +23,7 @@ export default {
         size: 'sizing060',
         stylePreset: 'checkboxInput',
         spaceInline: 'space030',
-        transitionPreset: [
-          'backgroundColorChange',
-          'borderColorChange',
-          'iconColorChange',
-        ],
+        transitionPreset: ['backgroundColorChange', 'borderColorChange'],
       },
       feedback: {
         size: 'sizing080',
@@ -48,11 +40,7 @@ export default {
         size: 'sizing070',
         stylePreset: 'checkboxInput',
         spaceInline: 'space040',
-        transitionPreset: [
-          'backgroundColorChange',
-          'borderColorChange',
-          'iconColorChange',
-        ],
+        transitionPreset: ['backgroundColorChange', 'borderColorChange'],
       },
       feedback: {
         size: 'sizing090',
