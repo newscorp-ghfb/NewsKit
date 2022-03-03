@@ -193,7 +193,7 @@ interface StyledSliderLabelProps
   text: boolean;
 }
 
-const getLabelMargin = ({
+export const getLabelMargin = ({
   vertical,
   labelType,
   labelPosition,
