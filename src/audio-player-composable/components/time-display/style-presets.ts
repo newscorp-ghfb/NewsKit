@@ -1,4 +1,4 @@
-import {StylePreset} from '../../theme/types';
+import {StylePreset} from '../../../theme/types';
 
 export default {
   currentTimeDisplay: {
