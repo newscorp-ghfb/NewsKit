@@ -1,17 +1,18 @@
 import React, {useContext} from 'react';
-import {SliderProps} from '../..';
-import {seekBarAriaValueText} from '../../audio-player/utils';
-import {getLabelMargin} from '../../slider/styled';
-import {MQ, styled} from '../../utils';
+import {getStylePreset, MQ, styled} from '../../utils';
 import {AudioPlayerContext} from '../context';
+import {withOwnTheme} from '../../utils/with-own-theme';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {Label} from '../../label/label';
 
 interface StyledLabelProps {
   length?: number;
   format?: object;
   currentTime?: number[];
   overrides?: {
-    typographyPreset: MQ<string>;
-    stylePreset: MQ<string>;
+    typographyPreset?: MQ<string>;
+    stylePreset?: MQ<string>;
   };
 }
 const calculateTime = (secs: number) => {
@@ -22,15 +23,23 @@ const calculateTime = (secs: number) => {
   return `${returnedMinutes}:${returnedSeconds}`;
 };
 
-const TimeDisplayLabel = styled.label<StyledLabelProps>``;
+const TimeDisplayContainer = styled.div`
+  ${getStylePreset(`container`, '')}
+`;
 
-export const TimeDisplay = ({format, overrides}: StyledLabelProps) => {
+export const ThemelessTimeDisplay = ({format, ...props}: StyledLabelProps) => {
   const {duration, trackPositionArr} = useContext(AudioPlayerContext);
   const currentTime = calculateTime((trackPositionArr as unknown) as number);
   const length = calculateTime((duration as unknown) as number);
   return (
-    <TimeDisplayLabel>
-      {currentTime} / {length}
-    </TimeDisplayLabel>
+    <TimeDisplayContainer>
+      <Label overrides={props.overrides}>
+        {currentTime} / {length}
+      </Label>
+    </TimeDisplayContainer>
   );
 };
+
+export const TimeDisplay = withOwnTheme(ThemelessTimeDisplay)({
+  defaults,
+});
