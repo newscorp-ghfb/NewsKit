@@ -3,14 +3,12 @@ import {getStylePreset, MQ, styled} from '../../../utils';
 import {AudioPlayerContext} from '../../context';
 import {withOwnTheme} from '../../../utils/with-own-theme';
 import defaults from './defaults';
-import stylePresets from './style-presets';
-import {Label} from '../../../label/label';
 import {LabelProps} from '../../../label/types';
 
 interface StyledLabelProps extends Omit<LabelProps, 'children'> {
   length?: number;
-  format?: any;
-  defaultTime?:any
+  format?: string;
+  defaultTime?: any;
   currentTime?: number[];
   overrides?: {
     typographyPreset?: MQ<string>;
@@ -29,42 +27,40 @@ const TimeDisplayContainer = styled.div`
   ${getStylePreset(`container`, '')}
 `;
 
-const StyledLabel = styled.label<StyledLabelProps>``
+const StyledLabel = styled.label<StyledLabelProps>``;
 
-export const ThemelessTimeDisplay = ({format, defaultTime, ...props}: StyledLabelProps) => {
+export const ThemelessTimeDisplay = ({
+  format,
+  defaultTime,
+  ...props
+}: StyledLabelProps) => {
   const {duration, trackPositionArr} = useContext(AudioPlayerContext);
   const currentTime = calculateTime((trackPositionArr as unknown) as number);
   const totalLength = calculateTime((duration as unknown) as number);
-  defaultTime= currentTime  + totalLength 
-  const formatFunction = (current?: string, length?: string) => {
-    // if (current === 'current' && length === 'length') {
-    //   return `ciao ${currentTime} ${totalLength} first answer`;
-    // }
-    if (length && current) {
+  defaultTime = currentTime + totalLength;
+
+  const formatFunction = (answer: string) => {
+    if (answer === 'length, current') {
       return `${totalLength} / ${currentTime}`;
-    } else if (current === 'current' && !length) {
+    }
+    if (answer === 'current') {
       return ` ${currentTime}`;
-    } else return `${totalLength} `;
+    }
+    if (answer === 'length') return `${totalLength} `;
+    else return `${currentTime}/ ${totalLength} `;
   };
-
-
-  //if format exsists use formatFunction to handle
-  console.log(formatFunction('current'));
+  console.log(formatFunction('length'), 'answer');
   return (
     <TimeDisplayContainer>
-
-      {format && (
+      {format ? (
         <StyledLabel overrides={props.overrides}>
-          {format=formatFunction()}  
+          {(format = formatFunction(format))}
         </StyledLabel>
-      )}
-       {!format && (
+      ) : (
         <StyledLabel overrides={props.overrides}>
           {currentTime} / {totalLength}
         </StyledLabel>
       )}
-
-     {/* {currentTime} / {totalLength} */}
     </TimeDisplayContainer>
   );
 };
