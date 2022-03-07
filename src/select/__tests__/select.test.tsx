@@ -10,6 +10,7 @@ import {
 import {AssistiveText} from '../../assistive-text';
 import {Label} from '../../label';
 import {createTheme, IconFilledSearch} from '../..';
+import {countries} from './phone-countries';
 
 // @ts-ignore
 const callIfExist = (props, method) => method in props && props[method]();
@@ -451,6 +452,30 @@ describe('Select', () => {
     });
 
     expect(fragment).toMatchSnapshot();
+  });
+
+  test('virtualize long list', async () => {
+    const selectOptions = countries.map(({name}) => (
+      <SelectOption key={name} value={name}>
+        {name}
+      </SelectOption>
+    ));
+
+    const {getByTestId, getAllByRole, asFragment} = renderWithTheme(Select, {
+      children: selectOptions,
+      virtualized: 10,
+      size: 'medium',
+    });
+
+    // open select
+    await act(async () => {
+      userEvent.click(getByTestId('select-button'));
+    });
+
+    // the amount of rendered options should be less than original list
+    expect(getAllByRole('option').length).not.toBe(countries.length);
+
+    expect(asFragment()).toMatchSnapshot();
   });
 
   describe('in Modal', () => {

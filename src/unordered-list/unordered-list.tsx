@@ -1,6 +1,5 @@
 import React from 'react';
 import {isValidNode} from '../utils/component';
-import {getSSRId} from '../utils/get-ssr-id';
 import {TextBlock} from '../text-block';
 
 import {useTheme} from '../theme';
@@ -65,7 +64,7 @@ const ThemelessUnorderedList: React.FC<UnorderedListProps> = ({
         if (!isValidNode(node)) return null;
 
         return (
-          <StyledListItem key={getSSRId()}>
+          <StyledListItem>
             <StyledBlock spaceStack={itemSpaceToken}>
               {ListItemMarker && (
                 <StyledMarkerBlock

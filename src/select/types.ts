@@ -54,6 +54,7 @@ export interface SelectProps extends CommonInputProps {
   validationIcon?: React.ReactNode;
   useModal?: MQ<boolean>;
   overrides?: SelectPropsOverrides;
+  virtualized?: number;
 }
 
 export interface SelectOptionProps {

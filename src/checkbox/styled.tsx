@@ -2,6 +2,7 @@ import {
   getResponsiveSize,
   getResponsiveSpace,
   getStylePreset,
+  getTransitionPreset,
   getTypographyPreset,
   styled,
 } from '../utils';
@@ -82,7 +83,9 @@ export const StyledCheckbox = styled.div<
       isHover,
     })};
   ${({feedbackIsVisible}) =>
-    feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`}
+    feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`};
+
+  ${({size}) => getTransitionPreset(`checkbox.${size}.input`, 'input')};
 `;
 
 export const StyledFeedback = styled.div<

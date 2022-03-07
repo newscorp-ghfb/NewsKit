@@ -138,6 +138,7 @@ export const StyledSelectPanel = styled.div<{
 `;
 
 export const StyledModalPanel = styled.div`
+  position: relative;
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 100%;

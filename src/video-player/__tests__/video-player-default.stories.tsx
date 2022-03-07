@@ -4,7 +4,6 @@ import {VideoPlayer} from '..';
 import {
   DEFATULT_VIDEO_PLAYER_CONFIG,
   PLAYLISTS_VIDEO_PLAYER_CONFIG,
-  CARD_VIDEO_PLAYER_CONFIG,
 } from './config';
 import {Button} from '../../button';
 import {Card} from '../../card';
@@ -16,7 +15,11 @@ import {LinkStandalone} from '../../link';
 export default {
   title: 'NewsKit Light/video-player/default',
   component: () => 'None',
-  disabledRules: ['landmark-unique'],
+  disabledRules: [
+    'landmark-unique',
+    'duplicate-id-aria',
+    'duplicate-id-active',
+  ],
 };
 
 export const StoryDefaultVideoPlayer = () => {
@@ -90,7 +93,7 @@ export const StoryCardWithVideo = () => (
     <StorybookHeading>Video Player in Card</StorybookHeading>
     <Card
       layout={{xs: 'vertical', md: 'horizontal'}}
-      media={() => <VideoPlayer config={CARD_VIDEO_PLAYER_CONFIG} />}
+      media={() => <VideoPlayer config={DEFATULT_VIDEO_PLAYER_CONFIG} />}
       overrides={{horizontalRatio: '2:3'}}
       actions={() => (
         <LinkStandalone href="https://google.com">
