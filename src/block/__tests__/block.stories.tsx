@@ -170,7 +170,6 @@ export const StoryBlockLogical = () => (
         stylePreset="logicalBlock"
         paddingInline="space020"
         paddingBlock="space040"
-        // TODO: Inset, Squish, Stretch cannot be applied to paddingInline/Block
       >
         A
       </Square>

@@ -5,14 +5,8 @@ import {LogicalProps} from '../utils/logical-properties';
 export type FlexWrap = boolean | 'wrap' | 'nowrap' | 'wrap-reverse';
 
 export interface CommonStackPropsWithoutMQ {
-  /**
-   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlock` instead.
-   */
-  spaceStack: string;
-  /**
-   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginInline` instead.
-   */
-  spaceInline: string;
+  spaceStack: string; // Note: LogicalProps can not replace spaceStack! spaceStack = Stack's gap
+  spaceInline: string; // Note: LogicalProps can not replace spaceInline! spaceInline = Stack's gap
   flexGrow: boolean | number;
   flexShrink: boolean | number;
   flowReverse: boolean;

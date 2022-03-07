@@ -22,10 +22,7 @@ export interface SelectButtonOverrides extends EnhancerOverrides {
    * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlock` instead.
    */
   spaceStack?: MQ<string>;
-  /**
-   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginInline` instead.
-   */
-  spaceInline?: MQ<string>;
+  spaceInline?: MQ<string>; // Note: LogicalProps can not replace spaceInline! spaceInline = column-gap
   typographyPreset?: MQ<string>;
   loadingIndicator?: {
     stylePreset?: MQ<string>;

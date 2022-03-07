@@ -14,10 +14,7 @@ interface LinkOverrides extends LogicalProps {
   stylePreset?: MQ<string>;
   transitionPreset?: TransitionToken | TransitionToken[];
   typographyPreset?: MQ<string>;
-  /**
-   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginInline` instead.
-   */
-  spaceInline?: MQ<string>;
+  spaceInline?: MQ<string>; // Note: LogicalProps can not replace spaceInline! spaceInline = Stack's gap
   externalIcon?: {
     size?: string;
   };
