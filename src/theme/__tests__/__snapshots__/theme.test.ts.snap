@@ -1402,6 +1402,9 @@ Object {
       "spaceStack": "space000",
     },
   },
+  "container": Object {
+    "stylePreset": "containers",
+  },
   "dateTime": Object {
     "prefix": Object {
       "stylePreset": "inkSubtle",
@@ -2986,12 +2989,22 @@ Object {
       "borderColor": "{{colors.interactivePositive050}}",
     },
   },
+  "containers": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.transparent}}",
+    },
+  },
   "controlLabel": Object {
     "base": Object {
       "color": "{{colors.inkBase}}",
     },
     "disabled": Object {
       "color": "{{colors.inkNonEssential}}",
+    },
+  },
+  "currentTimeDisplay": Object {
+    "base": Object {
+      "color": "{{colors.inkContrast}}",
     },
   },
   "divider": Object {

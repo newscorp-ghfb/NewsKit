@@ -5,6 +5,7 @@ import {renderWithImplementation, renderWithTheme} from '../../test/test-utils';
 import {AudioPlayerComposable} from '../audio-player-composable';
 import {PlayPauseButton} from '../components/play-pause-button';
 import {AudioPlayerComposableProps} from '../types';
+import {TimeDisplay} from '../components/time-display/time-display';
 
 const version = '0.10.0';
 
@@ -36,11 +37,14 @@ const recordedAudioProps: AudioPlayerComposableProps = {
   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
   autoPlay: false,
   children: (
-    <PlayPauseButton
-      onClick={() => {
-        console.log('customer click function');
-      }}
-    />
+    <>
+      <PlayPauseButton
+        onClick={() => {
+          console.log('customer click function');
+        }}
+      />
+      <TimeDisplay />
+    </>
   ),
 };
 
@@ -66,6 +70,23 @@ describe('Audio Player Composable', () => {
     window.open = jest.fn();
     jest.useFakeTimers('legacy');
   });
+  //
+  // it('should render default display time label', () => {
+  //   const {asFragment} = renderWithTheme(
+  //     AudioPlayerComposable,
+  //     recordedAudioProps,
+  //   );
+  //   expect(asFragment()).toMatchSnapshot();
+  // });
+  test('uses format function to display just length', () => {
+    const props = {
+      ...recordedAudioProps,
+      format: 'length',
+    };
+    const {asFragment} = renderWithTheme(AudioPlayerComposable, props);
+    expect(asFragment()).toMatchSnapshot();
+  });
+  //
 
   it('should render with no errors', () => {
     const {asFragment} = renderWithTheme(

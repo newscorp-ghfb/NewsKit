@@ -684,6 +684,166 @@ exports[`Audio Player Composable should render with no errors 1`] = `
         </div>
       </div>
     </button>
+    <div
+      class="emotion-4"
+    >
+      <label
+        class="emotion-5"
+      >
+        00:00 / 00:00
+      </label>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Audio Player Composable uses format function to display just length 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #AEBFFF;
+  border-radius: 50%;
+  color: #3358CC;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: progress;
+}
+
+.emotion-0 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-0 svg {
+  fill: #3358CC;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-3 {
+  width: 32px;
+  height: 32px;
+  stroke: #3358CC;
+}
+
+.emotion-3 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
+  will-change: transform;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+<section
+    aria-label="Audio Player"
+  >
+    <audio
+      data-testid="audio-element"
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    />
+    <button
+      aria-busy="true"
+      aria-label="Play"
+      aria-live="polite"
+      aria-pressed="false"
+      class="emotion-0"
+      data-testid="audio-player-play-pause-button"
+      type="button"
+    >
+      <div
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-3"
+            fill="currentColor"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="50%"
+              cy="50%"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+    <div
+      class="emotion-4"
+    >
+      <label
+        class="emotion-5"
+      >
+        00:00 / 00:00
+      </label>
+    </div>
   </section>
 </DocumentFragment>
 `;
