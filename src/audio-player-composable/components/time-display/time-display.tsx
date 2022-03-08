@@ -3,13 +3,10 @@ import {getStylePreset, MQ, styled} from '../../../utils';
 import {AudioPlayerContext} from '../../context';
 import {withOwnTheme} from '../../../utils/with-own-theme';
 import defaults from './defaults';
-import {LabelProps} from '../../../label/types';
 
-interface StyledLabelProps extends Omit<LabelProps, 'children'> {
+interface StyledLabelProps {
   length?: number;
-  format?: string;
-  defaultTime?: number;
-  currentTime?: number[];
+  format?: (currentTime: number, length: number) => string;
   overrides?: {
     typographyPreset?: MQ<string>;
     stylePreset?: MQ<string>;
@@ -22,27 +19,17 @@ const TimeDisplayContainer = styled.div`
 
 const StyledLabel = styled.label<Partial<StyledLabelProps>>``;
 
-export const ThemelessTimeDisplay = ({
-  format,
-  defaultTime,
-  ...props
-}: StyledLabelProps) => {
-  const {currentTime, totalLength, formatFunction} = useContext(
+export const ThemelessTimeDisplay = ({format, ...props}: StyledLabelProps) => {
+  const {trackPositionArr, duration, getTimeDisplayProps} = useContext(
     AudioPlayerContext,
   );
-  formatFunction!;
+  const {defaultFormat} = getTimeDisplayProps!();
 
   return (
     <TimeDisplayContainer>
-      {format ? (
-        <StyledLabel overrides={props.overrides}>
-          {formatFunction! && formatFunction(format)}
-        </StyledLabel>
-      ) : (
-        <StyledLabel overrides={props.overrides}>
-          {currentTime} / {totalLength}
-        </StyledLabel>
-      )}
+      <StyledLabel overrides={props.overrides}>
+        {format ? format(trackPositionArr![0], duration!) : defaultFormat}
+      </StyledLabel>
     </TimeDisplayContainer>
   );
 };

@@ -8,7 +8,7 @@ export default {
   },
   containers: {
     base: {
-      backgroundColor:'{{colors.transparent}}',
+      backgroundColor: '{{colors.transparent}}',
     },
   },
 } as Record<string, StylePreset>;
