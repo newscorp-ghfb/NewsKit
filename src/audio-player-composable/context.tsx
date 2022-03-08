@@ -36,6 +36,9 @@ interface AudioPlayerProviderContext {
     canPause: boolean;
     playStateIcon: ReactJSXElement;
   };
+  getTimeDisplayProps: () => {
+    defaultFormat: string;
+  };
   length?: number;
   format?: string;
   defaultTime?: number;

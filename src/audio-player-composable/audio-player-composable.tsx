@@ -6,6 +6,7 @@ import {AudioElement} from './components/audio-element';
 import {useAudioFunctions} from './audio-functions';
 import {AudioPlayerProvider} from './context';
 import {AudioPlayerComposableProps} from './types';
+import {formatFunction} from './components/time-display/utils';
 
 export const AudioPlayerComposable = ({
   children,
@@ -100,30 +101,18 @@ export const AudioPlayerComposable = ({
     };
   };
 
-  const calculateTime = (secs: number) => {
-    const minutes = Math.floor(secs / 60);
-    const seconds = Math.floor(secs % 60);
-    const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
-    const returnedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
-    return `${returnedMinutes}:${returnedSeconds}`;
-  };
-  const currentTime = calculateTime((trackPositionArr as unknown) as number);
-  const totalLength = calculateTime((duration as unknown) as number);
-
-  const formatFunction = (answer: string) => {
-    const current = 'current';
-    const length = 'length';
-    if (answer === current) return ` ${currentTime}`;
-    if (answer === length) return `${totalLength}`;
-    if (answer.includes(length && current))
-      return `${totalLength} / ${currentTime}`;
-
-    return `${currentTime}/ ${totalLength} `;
-  };
+  const getTimeDisplayProps = () => ({
+    defaultFormat: formatFunction(trackPositionArr![0], duration!),
+    currentTime: trackPositionArr[0],
+    length: duration,
+  });
 
   const value = {
     // Props function getter
     getPlayPauseButtonProps,
+
+    // Time display
+    getTimeDisplayProps,
 
     // Internal for AudioElement
     audioRef,
@@ -141,11 +130,6 @@ export const AudioPlayerComposable = ({
     duration,
     trackPositionArr,
     onChangeSlider,
-
-    // Needed by time display
-    currentTime,
-    totalLength,
-    formatFunction,
   };
 
   return (
