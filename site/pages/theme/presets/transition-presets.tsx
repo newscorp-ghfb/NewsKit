@@ -6,9 +6,13 @@ import {Mono} from '../../../components/flags';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
-import {Illustration} from '../../../components/illustrations/illustration-loader';
+import {
+  Illustration,
+  getIllustrationComponent,
+} from '../../../components/illustrations/illustration-loader';
 import {Link} from '../../../components/link';
 import {Code} from '../../../components/code';
+import {MediaList} from '../../../components/media-list';
 import {
   ContentSection,
   ContentPrimary,
@@ -399,7 +403,7 @@ const StylePresets = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Theme',
+      type: 'Foundations',
       name: 'Transition Presets',
       hero: {
         illustration: 'theme/transition-presets/hero',
@@ -420,10 +424,10 @@ const StylePresets = (layoutProps: LayoutProps) => (
         </ContentPrimary>
       </ContentSection>
 
-      <ContentSection sectionName="transition preset properties">
+      <ContentSection sectionName="properties">
         <ContentPrimary
-          id="transition-preset-properties"
-          toc="Transition Preset properties"
+          id="properties"
+          toc="Properties"
           headline="Transition Preset properties"
           description="Transition Presets use a combination of the following Transition Preset properties:"
           showSeparator
@@ -443,7 +447,7 @@ const StylePresets = (layoutProps: LayoutProps) => (
       <ContentSection sectionName="predefined transition presets">
         <ContentPrimary
           id="predefined-transition-presets"
-          toc="Predefined Transition Presets"
+          toc="Available Transition Presets"
           headline="Predefined Transition Presets"
           description="Below is a collection of Transition Presets that come out of the box with NewsKit that can be applied to elements:"
         >
@@ -464,10 +468,10 @@ const StylePresets = (layoutProps: LayoutProps) => (
         </ContentSecondary>
       </ContentSection>
 
-      <ContentSection sectionName="transition preset states">
+      <ContentSection sectionName="states">
         <ContentPrimary
-          id="transition-preset-states"
-          toc="Transition Preset States"
+          id="states"
+          toc="States"
           headline="Transition Preset States"
           description={
             <>
@@ -597,7 +601,7 @@ const StylePresets = (layoutProps: LayoutProps) => (
           description={
             <>
               3. This example demonstrates applying{' '}
-              <InlineCode>backgroundColorChange</InlineCode> Transition preset
+              <InlineCode>backgroundColorChange</InlineCode> Tran+sition preset
               to a simple box element.
             </>
           }
@@ -609,6 +613,381 @@ $\{getTransitionPresetFromTheme('backgroundColorChange')}
   width: 100px;
   height: 100px;
 ;`}
+          </Code>
+          <Block spaceStack="space100" />
+          <P overrides={contentOverrides}>Video</P>
+        </ContentSecondary>
+
+        <ContentSecondary
+          headline="Combining Transition Presets applied to background and border colours"
+          description={
+            <>
+              1. This example demonstrates two Transition Presets,{' '}
+              <InlineCode>backgroundColorChange</InlineCode> and
+              <InlineCode>borderColorChange</InlineCode>
+            </>
+          }
+        >
+          <Code>
+            {`transitionPresets.backgroundColorChange = {
+  base: {
+    transitionProperty: 'background-color',
+    transitionDuration: '{{motions.motionDuration030}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+  },
+};
+
+transitionPresets.borderColorChange = {
+  base: {
+    transitionProperty: 'border-color',
+    transitionDuration: '{{motions.motionDuration050}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+  },
+};`}
+          </Code>
+        </ContentSecondary>
+
+        <ContentSecondary
+          description={
+            <>
+              2. When combined with the following{' '}
+              <InlineCode>stylePreset</InlineCode> the background and border
+              colours will transition between states with different durations.
+            </>
+          }
+        >
+          <Code>
+            {`stylePresets.box = {
+  base: {
+    backgroundColor: '{{colors.purple030}}',
+    borderWidth: '{{borders.borderWidth030}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.green020}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.purple070}}',
+    borderColor: '{{colors.green040}}',
+  }
+};`}
+          </Code>
+        </ContentSecondary>
+
+        <ContentSecondary
+          description={
+            <>
+              3. This example demonstrates applying{' '}
+              <InlineCode>backgroundColorChange</InlineCode> and{' '}
+              <InlineCode>borderColorChange</InlineCode> Transition preset to a
+              simple Box component.
+            </>
+          }
+        >
+          <Code>
+            {`const Box = styled.div
+$\{getStylePresetFromTheme('box')}
+$\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
+  width: 100px;
+  height: 100px;
+;`}
+          </Code>
+          <Block spaceStack="space100" />
+          <P overrides={contentOverrides}>Video</P>
+        </ContentSecondary>
+
+        <ContentSecondary>
+          <InlineMessage icon={infoIcon} title="Note">
+            These example only applies to a single instance. Use{' '}
+            <Link href="/theme/theming/component-defaults/">
+              Component Defaults
+            </Link>{' '}
+            if you want to apply to all instances of a component.
+          </InlineMessage>
+        </ContentSecondary>
+
+        <ContentSecondary
+          headline="Transition Preset triggered upon mount/unmount"
+          description={
+            <>
+              1. This example demonstrates a Transition Preset,{' '}
+              <InlineCode>slideLeft</InlineCode>. This Transition Preset is used
+              to slide an element in from the left edge of the screen.
+            </>
+          }
+        >
+          <Code>
+            {`transitionPresets.slideLeft = {
+  base: {
+    transform: 'translateX(-100%)',
+  },
+  enter: {
+    transform: 'translateX(-100%)',
+  },
+  enterActive: {
+    transform: 'translateX(0)',
+    transitionProperty: 'transform',
+    transitionDuration: '{{motions.motionDuration020}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
+  },
+  enterDone: {
+    transform: 'translateX(0)',
+  },
+  exit: {
+    transform: 'translateX(0)',
+  },
+  exitActive: {
+    transform: 'translateX(-100%)',
+    transitionProperty: 'transform',
+    transitionDuration: '{{motions.motionDuration020}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+  },
+  exitDone: {
+    transform: 'translateX(-100%)',
+  },
+};`}
+          </Code>
+        </ContentSecondary>
+
+        <ContentSecondary
+          description={
+            <>
+              2. Applying the transition preset to the Drawer in the defaults.
+            </>
+          }
+          showSeparator
+        >
+          <Code>
+            {` export const Drawer = styled.div
+  $\{getTransitionPreset(
+    drawer.panel.left,
+    'panel',
+    'nk-drawer',
+    )};
+;
+ 
+ 
+ <Drawer
+  open
+  onDismiss={close}
+  header="Drawer"
+>
+  <div>Content</div>
+</Drawer>`}
+          </Code>
+          <Block spaceStack="space100" />
+          <P overrides={contentOverrides}>Video</P>
+        </ContentSecondary>
+      </ContentSection>
+
+      <ContentSection sectionName="extending or overriding transition presets">
+        <ContentPrimary
+          id="extending-overriding-transition-presets"
+          toc="Overriding & combining"
+          headline="Extending or overriding Transition Presets"
+          description="Transition Presets can be overridden or combined to achieve different combinations."
+        />
+
+        <ContentSecondary
+          headline="Code example"
+          description={
+            <>
+              The example below demonstrates overriding a transition preset
+              applied in the defaults of the{' '}
+              <Link href="/components/drawer/">Drawer</Link> component.
+            </>
+          }
+        >
+          <Code>
+            {` <Drawer
+  open
+  onDismiss={close}
+  header="This is a drawer header"
+  overrides={{
+    panel: {
+      transitionPreset: 'slideRight',
+    },
+  }}
+>
+  <DrawerContent />
+</Drawer>`}
+          </Code>
+        </ContentSecondary>
+
+        <ContentSecondary
+          description={
+            <>
+              The example below demonstrates extending two predefined Transition
+              presets - <InlineCode>fade</InlineCode> and{' '}
+              <InlineCode>moveUp</InlineCode> applied to a Modal component. The
+              Duration value and Timing function of both Transition Presets are
+              overridden and delay is added to the
+              <InlineCode>fade</InlineCode> Transition Preset when the component
+              appears on the screen.
+              <br />
+              <br />
+              For both Transition Presets, the Duration and Timing functions are
+              updated from the enter to the exit state of the transition.
+            </>
+          }
+          showSeparator
+        >
+          <Code>
+            {`<Modal
+    open={true}
+    onDismiss={close}
+    header="This is a modal header."
+    overrides={{
+      panel: {
+        transitionPreset: [
+          {
+            extend: 'fade',
+            enterActive: {
+              transitionDuration: '{{motions.motionDuration010}}',
+              transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+              transitionDelay: '{{motions.motionDuration010}}',
+            },
+            exitActive: {
+              transitionDuration: '{{motions.motionDuration010}}',
+              transitionTimingFunction: '{{motions.motionTimingLinear}}',
+            },
+          },
+          {
+            extend: 'moveUp',
+            enterActive: {
+              transitionDuration: '{{motions.motionDuration010}}',
+              transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+              transitionDelay: '{{motions.motionDuration010}}',
+            },
+            exitActive: {
+              transitionDuration: '{{motions.motionDuration010}}',
+              transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
+            },
+          },
+        ],
+      },
+    }}
+  >
+    {modalContent}
+  </Modal>`}
+          </Code>
+        </ContentSecondary>
+      </ContentSection>
+
+      <ContentSection sectionName="adding custom transition presets to the theme">
+        <ContentPrimary
+          id="adding-custom-transition-presets-to-the-theme"
+          toc="Custom Transition Presets"
+          headline="Adding custom Transition Presets to the theme"
+          description={
+            <>
+              Custom Transition Presets can be added to the theme. See the{' '}
+              <Link href="/theme/theming/creating-a-theme/">
+                Creating a theme
+              </Link>{' '}
+              guide for more details.
+            </>
+          }
+          showSeparator
+        />
+      </ContentSection>
+
+      <ContentSection sectionName="communicating transition presets in figma">
+        <ContentPrimary
+          headline="Communicating Transition Presets in Figma"
+          description="The inability to communicate motion in static layouts has been a long-standing problem in the design world. In the absence of this information, it is often up to the developer to interpret how to implement it."
+          showSeparator
+        >
+          <MediaList
+            layout="1-span"
+            cardsLayout="horizontal"
+            cards={[
+              {
+                description:
+                  'Icons have two variations; ‘Filled’ and ‘Outlined’. There will be certain instances when a ‘Filled’ and ‘Outlined’ instance of the same icon look the same. This is because some visual characteristics don’t lend themselves to one or the other style.',
+                media: getIllustrationComponent(
+                  'theme/transition-presets/transition-presets-in-figma',
+                ),
+              },
+            ]}
+          />
+
+          <Block spaceStack="space060" />
+          <P overrides={contentOverrides}>
+            For additional guidance on how to communicate a design to the
+            product team for engineers to build, refer to the{' '}
+            <Link
+              href="https://www.figma.com/proto/kXCrh9MHKAJ878KE2dQOz8/Handoff-Guides---for-engineers-%26-designers?page-id=1%3A544&node-id=275%3A21221&viewport=350%2C48%2C0.13&scaling=min-zoom&starting-point-node-id=275%3A21221&show-proto-sidebar=1&hide-ui=1"
+              target="_blank"
+            >
+              NewsKit Handoff guidance
+            </Link>
+            .
+          </P>
+        </ContentPrimary>
+      </ContentSection>
+
+      <ContentSection sectionName="accessibility considerations">
+        <ContentPrimary
+          id="accessibility-considerations"
+          toc="Accessibility considerations"
+          headline="Accessibility considerations"
+          description={
+            <>
+              Considering users that may have a{' '}
+              <Link
+                href="https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html"
+                target="_blank"
+              >
+                sensitivity to motion
+              </Link>{' '}
+              (perceived movement on the screen), is core to the NewsKit motion
+              system. By following the guidelines below, we ensure that any
+              users who experience sensitivity to motion have the option to view
+              a more basic experience that reduces motion where possible.
+            </>
+          }
+        />
+
+        <ContentSecondary
+          headline="Reduced Motion for motion sensitivities"
+          description={
+            <>
+              The{' '}
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
+                target="_blank"
+              >
+                prefers-reduced-motion
+              </Link>{' '}
+              CSS media feature detects if the user has requested that their
+              operating system or browser minimises the amount of non-essential
+              motion displayed to the user. To ensure experiences are inclusive
+              it is recommended to implement the //prefers-reduced-motion//
+              feature to elements that have motion. By default, we support this
+              feature for components in the NewsKit Design System that have
+              motion applied to them eg. the{' '}
+              <Link href="/components/drawer/">Drawer</Link>, &{' '}
+              <Link href="/components/modal/">Modal</Link> components.
+              <Link
+                href="https://caniuse.com/prefers-reduced-motion"
+                target="_blank"
+              >
+                To see which browsers support this feature, please refer to this
+                link
+              </Link>
+              .
+            </>
+          }
+        />
+
+        <ContentSecondary
+          headline="Code example"
+          description="To implement this feature manually by using CSS:"
+          showSeparator
+        >
+          <Code>
+            {`@media (prefers-reduced-motion: reduce) {
+    /* reduced behaviour */   
+}`}
           </Code>
         </ContentSecondary>
       </ContentSection>
