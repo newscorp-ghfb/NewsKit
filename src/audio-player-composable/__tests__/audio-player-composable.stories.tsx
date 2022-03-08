@@ -119,7 +119,7 @@ MultipleAudioPlayPauseButtonWithOverrides.storyName =
 export const AudioPlayerSeekBar = () => (
   <AudioPlayerComposable
     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    ariaLandmark="audio player"
+    ariaLandmark="audio player 3"
   >
     <SeekBar />
     <PlayPauseButton
@@ -137,7 +137,7 @@ export const AudioPlayerSeekBarWithOverrides = () => (
     <ThemeProvider theme={myCustomTheme}>
       <AudioPlayerComposable
         src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-        ariaLandmark="audio player with overrides"
+        ariaLandmark="audio player 4"
       >
         <SeekBar
           overrides={{
