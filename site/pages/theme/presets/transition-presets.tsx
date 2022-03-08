@@ -27,7 +27,7 @@ const infoIcon = (
   />
 );
 
-const TRANSITION_PRESET_PROPERTIES = [
+const PROPERTIES = [
   {
     tokenName: 'transitionProperty',
     acceptedValues: (
@@ -105,7 +105,7 @@ const getImage = (url: string) => (
   </ImageWrapper>
 );
 
-const PREDEFINED_TRANSITION_PRESETS = [
+const PRESETS = [
   {
     example: getImage(
       'theme/transition-presets/predefined-transition-presets/backgroundcolorchange',
@@ -120,9 +120,9 @@ const PREDEFINED_TRANSITION_PRESETS = [
     example: getImage(
       'theme/transition-presets/predefined-transition-presets/bordercolorchange',
     ),
-    token: 'backgroundColorChange',
+    token: 'borderColorChange',
     description:
-      'Transition background colour from the initial state to the final state.',
+      'Transition border colour from the initial state to the final state.',
     implementation:
       'Can be applied to components when interacting eg. on hover, or triggered on page load.',
   },
@@ -170,9 +170,10 @@ const PREDEFINED_TRANSITION_PRESETS = [
         its original starting position).
         <br />
         <br />
-        When applied to a element or component like the Drawer, slideLeft causes
-        the Drawer panel to slide in from off the left edge of the screen to the
-        right, and back again off the left edge of the screen.
+        When applied to a element or component like the Drawer,{' '}
+        <InlineCode>slideLeft</InlineCode> causes the Drawer panel to slide in
+        from off the left edge of the screen to the right, and back again off
+        the left edge of the screen.
       </>
     ),
     implementation: (
@@ -188,6 +189,43 @@ const PREDEFINED_TRANSITION_PRESETS = [
         <br />
         The <InlineCode>exitActive</InlineCode> state brings it back to its
         original starting position on the left (translateX(-100%)).
+        <br />
+        <br />
+        Can be applied to components and triggered on page load, or when
+        entering (mount), or exiting (unmount).
+      </>
+    ),
+  },
+  {
+    example: getImage(
+      'theme/transition-presets/predefined-transition-presets/slideright',
+    ),
+    token: 'slideRight',
+    description: (
+      <>
+        Slide in from the right to left, and back from left to right (back to
+        its original starting position).
+        <br />
+        <br />
+        When applied to a element or component like the Drawer,{' '}
+        <InlineCode>slideRight</InlineCode> causes the Drawer panel to slide in
+        from off the right edge of the screen to the left, and back again off
+        the right edge of the screen.
+      </>
+    ),
+    implementation: (
+      <>
+        The transition <InlineCode>base</InlineCode> state keeps the element
+        positioned to the right (translateX(100%)) until the transition is
+        activated.
+        <br />
+        <br />
+        The <InlineCode>enterActive</InlineCode> state changes the transform
+        value to translateX(0) and moves the element to the left.
+        <br />
+        <br />
+        The <InlineCode>exitActive</InlineCode> state brings it back to its
+        original starting position on the right (translateX(100%)).
         <br />
         <br />
         Can be applied to components and triggered on page load, or when
@@ -433,7 +471,7 @@ const StylePresets = (layoutProps: LayoutProps) => (
               'Example',
               'Description',
             ]}
-            rows={TRANSITION_PRESET_PROPERTIES}
+            rows={PROPERTIES}
           />
         </ContentPrimary>
       </ContentSection>
@@ -441,13 +479,13 @@ const StylePresets = (layoutProps: LayoutProps) => (
       <ContentSection sectionName="predefined transition presets">
         <ContentPrimary
           id="predefined-transition-presets"
-          toc="Available Transition Presets"
+          toc="Predefined Transition Presets"
           headline="Predefined Transition Presets"
           description="Below is a collection of Transition Presets that come out of the box with NewsKit that can be applied to elements:"
         >
           <Table
             columns={['Example', 'Token', 'Description', 'Implementation']}
-            rows={PREDEFINED_TRANSITION_PRESETS}
+            rows={PRESETS}
           />
         </ContentPrimary>
 
@@ -491,7 +529,15 @@ const StylePresets = (layoutProps: LayoutProps) => (
 
         <ContentSecondary
           headline="1. States for transitions triggered upon user interaction"
-          description="Transition presents applied to elements upon user interaction e.g. changing the background colour of a Button on hover. The following states are used for transitions triggered upon user interaction:"
+          description={
+            <>
+              Transition presents applied to elements upon user interaction e.g.
+              changing the background colour of a{' '}
+              <Link href="/components/button/">Button</Link> on hover. The
+              following states are used for transitions triggered upon user
+              interaction:
+            </>
+          }
         >
           <Table
             columns={['Example', 'Name', 'Type', 'Description']}
@@ -536,11 +582,8 @@ const StylePresets = (layoutProps: LayoutProps) => (
               <Link href="/theme/theming/using-a-theme/">
                 getTransitionPreset
               </Link>{' '}
-              (a function used to retrieve values from the{' '}
-              <Link href="/theme/theming/component-defaults/">
-                component defaults or overrides objects)
-              </Link>{' '}
-              or{' '}
+              (a function used to retrieve values from the component defaults or
+              overrides objects) or{' '}
               <Link href="/theme/theming/using-a-theme/">
                 getTransitionPresetFromTheme
               </Link>{' '}
@@ -617,7 +660,7 @@ $\{getTransitionPresetFromTheme('backgroundColorChange')}
           description={
             <>
               1. This example demonstrates two Transition Presets,{' '}
-              <InlineCode>backgroundColorChange</InlineCode> and
+              <InlineCode>backgroundColorChange</InlineCode> and{' '}
               <InlineCode>borderColorChange</InlineCode>
             </>
           }
@@ -912,9 +955,8 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
               href="https://www.figma.com/proto/kXCrh9MHKAJ878KE2dQOz8/Handoff-Guides---for-engineers-%26-designers?page-id=1%3A544&node-id=275%3A21221&viewport=350%2C48%2C0.13&scaling=min-zoom&starting-point-node-id=275%3A21221&show-proto-sidebar=1&hide-ui=1"
               target="_blank"
             >
-              NewsKit Handoff guidance
+              NewsKit Handoff guidance.
             </Link>
-            .
           </P>
         </ContentPrimary>
       </ContentSection>
@@ -955,11 +997,11 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
               CSS media feature detects if the user has requested that their
               operating system or browser minimises the amount of non-essential
               motion displayed to the user. To ensure experiences are inclusive
-              it is recommended to implement the //prefers-reduced-motion//
-              feature to elements that have motion. By default, we support this
-              feature for components in the NewsKit Design System that have
-              motion applied to them eg. the{' '}
-              <Link href="/components/drawer/">Drawer</Link>, &{' '}
+              it is recommended to implement the{' '}
+              <InlineCode>prefers-reduced-motion</InlineCode> feature to
+              elements that have motion. By default, we support this feature for
+              components in the NewsKit Design System that have motion applied
+              to them eg. the <Link href="/components/drawer/">Drawer</Link>, &{' '}
               <Link href="/components/modal/">Modal</Link> components.
               <Link
                 href="https://caniuse.com/prefers-reduced-motion"
