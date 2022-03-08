@@ -1,5 +1,3 @@
-import {ButtonProps, ButtonSize} from '../button';
-
 export interface AudioFunctionDependencies {
   onPreviousTrack: () => void;
   onNextTrack: () => void;
@@ -30,11 +28,6 @@ export interface TrackControlProps {
   disableNextTrack?: boolean;
   onPreviousTrack?: () => void;
   disablePreviousTrack?: boolean;
-}
-export interface PlayPauseButtonProps {
-  size?: ButtonSize;
-  onClick?: () => void;
-  overrides?: ButtonProps['overrides'];
 }
 
 export interface AudioPlayerComposableProps {

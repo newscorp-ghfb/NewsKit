@@ -10,6 +10,7 @@ export const AudioElement = () => {
     onTimeUpdate,
     onWaiting,
     onEnded,
+    onProgress,
   } = audioEvents!;
 
   return (
@@ -22,6 +23,7 @@ export const AudioElement = () => {
       onWaiting={onWaiting}
       onEnded={onEnded}
       onTimeUpdate={onTimeUpdate}
+      onProgress={onProgress}
       data-testid="audio-element"
     />
   );

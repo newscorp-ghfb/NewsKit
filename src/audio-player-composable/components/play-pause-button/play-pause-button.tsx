@@ -1,8 +1,8 @@
 import React, {useContext} from 'react';
-import {IconButton} from '../../icon-button';
-import {ButtonSize} from '../../button/types';
-import {AudioPlayerContext} from '../context';
-import {PlayPauseButtonProps} from '../types';
+import {IconButton} from '../../../icon-button';
+import {ButtonSize} from '../../../button/types';
+import {AudioPlayerContext} from '../../context';
+import {PlayPauseButtonProps} from './types';
 
 export const PlayPauseButton: React.FC<PlayPauseButtonProps> = React.memo(
   ({onClick: consumerOnClick, ...props}) => {

@@ -28,7 +28,7 @@ export const AudioPlayerComposable = ({
   const [displayDuration, setDisplayDuration] = useState(0);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isPrevTrackBtnDisabled, setIsPrevTrackBtnDisabled] = useState(false);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
   const [buffered, setBuffered] = useState<TimeRanges>();
 
   useEffect(() => {
@@ -37,7 +37,7 @@ export const AudioPlayerComposable = ({
 
   useEffect(() => {
     setTrackPosition([0]);
-    // setDisplayDuration(0);
+    setDisplayDuration(0);
   }, [src]);
 
   // @ts-ignore as we are not passing all the parameters yet.
@@ -100,26 +100,23 @@ export const AudioPlayerComposable = ({
     };
   };
 
+  const getSeekBarProps = () => ({
+    duration,
+    trackPositionArr,
+    onChangeSlider,
+    buffered,
+  });
+
   const value = {
     // Props function getter
     getPlayPauseButtonProps,
+    getSeekBarProps,
 
     // Internal for AudioElement
     audioRef,
     audioEvents,
     src,
     autoPlay,
-
-    // Needed by play-pause button
-    playing,
-    canPause: live,
-    loading,
-    togglePlay,
-
-    // Seek bar
-    duration,
-    trackPositionArr,
-    onChangeSlider,
   };
 
   return (

@@ -19,10 +19,8 @@ interface AudioPlayerProviderContext {
     onTimeUpdate: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
     onWaiting: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
     onEnded: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
+    onProgress: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
   };
-  duration: number;
-  trackPositionArr: number[];
-  onChangeSlider: (values: number[]) => void;
   // Getter functions
   getPlayPauseButtonProps: (args: {
     onClick?: () => void;
@@ -34,6 +32,12 @@ interface AudioPlayerProviderContext {
     playing: boolean;
     canPause: boolean;
     playStateIcon: ReactJSXElement;
+  };
+  getSeekBarProps: () => {
+    duration: number;
+    trackPositionArr: number[];
+    onChangeSlider: ([value]: number[]) => void;
+    buffered: TimeRanges | undefined;
   };
 }
 

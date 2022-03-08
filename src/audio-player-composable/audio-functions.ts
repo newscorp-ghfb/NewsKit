@@ -11,7 +11,7 @@ export const useAudioFunctions = ({
   onPreviousTrack,
   onNextTrack,
   autoPlay,
-  disablePreviousTrack,
+  // disablePreviousTrack,
   src,
   live,
   duration,
@@ -27,8 +27,8 @@ export const useAudioFunctions = ({
   setDuration,
   setDisplayDuration,
   setBuffered,
-  setIsPrevTrackBtnDisabled,
-}: AudioFunctionDependencies) => {
+}: // setIsPrevTrackBtnDisabled,
+AudioFunctionDependencies) => {
   const {fireEvent} = useInstrumentation();
 
   const ifPlayer = useCallback(
@@ -101,8 +101,6 @@ export const useAudioFunctions = ({
     setLoading(false);
   }, [setLoading, showLoaderTimeoutRef]);
 
-  // TODO remove ignore once implemented audio functionality
-  /* istanbul ignore next */
   const updateAudioTime = useCallback(
     (playerTime: number) => {
       const newPlayerTime = getValueInRange(playerTime, [0, duration]);
@@ -177,8 +175,6 @@ export const useAudioFunctions = ({
     fireEvent(trackingInformation);
   }, [fireEvent, getTrackingInformation, updateAudioTime, trackPositionRef]);
 
-  // TODO remove ignore once implementing seekbar
-  /* istanbul ignore next */
   const onDurationChange = useCallback(
     ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
       const tgt = target as HTMLAudioElement;
@@ -259,14 +255,10 @@ export const useAudioFunctions = ({
     }
   }, [loading, playing, onPause, onPlay]);
 
-  // TODO remove ignore once implementing seekbar
-  /* istanbul ignore next-line */
   const onProgress = ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
     setBuffered((target as HTMLAudioElement).buffered);
   };
 
-  // TODO remove ignore once implementing seekbar
-  /* istanbul ignore next */
   const onTimeUpdate = ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
     const eventTime = Math.floor((target as HTMLAudioElement).currentTime);
     if (trackPositionRef.current !== eventTime) {
@@ -278,11 +270,12 @@ export const useAudioFunctions = ({
       );
       fireEvent(trackingInformation);
     }
-    if (trackPositionRef.current > 5) {
-      setIsPrevTrackBtnDisabled(false);
-    } else {
-      setIsPrevTrackBtnDisabled(Boolean(disablePreviousTrack));
-    }
+    // TO Do: Should be added in the ticket for controls
+    // if (trackPositionRef.current > 5) {
+    //   setIsPrevTrackBtnDisabled(false);
+    // } else {
+    //   setIsPrevTrackBtnDisabled(Boolean(disablePreviousTrack));
+    // }
   };
 
   // const onVolumeChange = useCallback(
@@ -292,8 +285,6 @@ export const useAudioFunctions = ({
   //   [updateAudioVolume],
   // );
 
-  // TODO remove ignore once in use
-  /* istanbul ignore next */
   const onChangeSlider = useCallback(
     ([value]: number[]) => {
       updateAudioTime(value);
