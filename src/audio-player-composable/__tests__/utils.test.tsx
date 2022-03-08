@@ -1,11 +1,8 @@
 import {
-  // formatTrackData,
-  formatTrackTime,
-  formatDuration,
-  getMediaSegment,
-  seekBarAriaValueText,
   formatTrackData,
-} from '../utils';
+  seekBarAriaValueText,
+} from '../components/seek-bar/utils';
+import {formatTrackTime, formatDuration, getMediaSegment} from '../utils';
 
 test('formatTrackTime', () => {
   const oneMinute = 60;

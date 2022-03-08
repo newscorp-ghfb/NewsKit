@@ -1,6 +1,6 @@
-import React, {useCallback, useContext} from 'react';
+import React, {useCallback} from 'react';
 import {getTrackBackground} from 'react-range';
-import {AudioPlayerContext} from '../../context';
+import {useAudioPlayerContext} from '../../context';
 import {SeekBarProps} from './types';
 import {Slider, SliderProps} from '../../../slider';
 import {ScreenReaderOnly} from '../../../screen-reader-only';
@@ -12,8 +12,8 @@ import {StyledTrack} from '../../../slider/styled';
 import {withOwnTheme} from '../../../utils/with-own-theme';
 import stylePresets from './style-presets';
 import {useTheme} from '../../../theme';
-import {formatTrackData, seekBarAriaValueText} from '../../utils';
 import defaults from './defaults';
+import {formatTrackData, seekBarAriaValueText} from './utils';
 
 const ThemelessSeekBar: React.FC<SeekBarProps> = ({overrides = {}}) => {
   const {slider: seekBarSliderOverrides} = overrides;
@@ -23,9 +23,9 @@ const ThemelessSeekBar: React.FC<SeekBarProps> = ({overrides = {}}) => {
     seekBar: {slider: seekBarSliderDefaults},
   } = theme.componentDefaults;
 
-  const {getSeekBarProps} = useContext(AudioPlayerContext);
+  const {getSeekBarProps} = useAudioPlayerContext();
 
-  const {duration, trackPositionArr, onChangeSlider, buffered} =
+  const {duration, trackPosition, onChange, buffered} =
     getSeekBarProps! && getSeekBarProps();
 
   const [srOnlyForwardRewind] = useReactKeys(1);
@@ -71,14 +71,14 @@ const ThemelessSeekBar: React.FC<SeekBarProps> = ({overrides = {}}) => {
           'backgroundColor',
           bufferingStylePreset,
         ),
-        trackPositionArr,
+        [trackPosition],
         buffered,
       );
 
       return (
         <StyledTrack
           {...trackProps}
-          values={trackPositionArr}
+          values={[trackPosition]}
           dragged={isDragged}
           onKeyDown={e => {
             const spaceKeyCode = 32;
@@ -110,7 +110,7 @@ const ThemelessSeekBar: React.FC<SeekBarProps> = ({overrides = {}}) => {
       seekBarSliderDefaults,
       seekBarSliderOverrides,
       theme,
-      trackPositionArr,
+      trackPosition,
     ],
   );
 
@@ -119,13 +119,13 @@ const ThemelessSeekBar: React.FC<SeekBarProps> = ({overrides = {}}) => {
       <Slider
         min={0}
         max={Math.floor(duration) || 1}
-        values={trackPositionArr}
+        values={[trackPosition]}
         step={1}
         ariaLabel="seek bar"
-        ariaValueText={`Playback time: ${seekBarAriaValueText(
-          trackPositionArr,
-        )} of ${seekBarAriaValueText([duration])}`}
-        onChange={onChangeSlider}
+        ariaValueText={`Playback time: ${seekBarAriaValueText([
+          trackPosition,
+        ])} of ${seekBarAriaValueText([duration])}`}
+        onChange={onChange}
         renderTrack={renderTrack}
         dataTestId="audio-slider"
         ariaDescribedBy={srOnlyForwardRewind}

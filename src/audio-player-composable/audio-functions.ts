@@ -104,7 +104,7 @@ AudioFunctionDependencies) => {
   const updateAudioTime = useCallback(
     (playerTime: number) => {
       const newPlayerTime = getValueInRange(playerTime, [0, duration]);
-      setTrackPosition([newPlayerTime]);
+      setTrackPosition(newPlayerTime);
 
       ifPlayer(player => {
         player.currentTime = newPlayerTime;
@@ -262,7 +262,7 @@ AudioFunctionDependencies) => {
   const onTimeUpdate = ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
     const eventTime = Math.floor((target as HTMLAudioElement).currentTime);
     if (trackPositionRef.current !== eventTime) {
-      setTrackPosition([eventTime]);
+      setTrackPosition(eventTime);
 
       const trackingInformation = getTrackingInformation(
         'audio-player-audio',

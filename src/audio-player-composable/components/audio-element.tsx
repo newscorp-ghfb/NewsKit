@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/media-has-caption */
-import React, {useContext} from 'react';
-import {AudioPlayerContext} from '../context';
+import React from 'react';
+import {useAudioPlayerContext} from '../context';
 
 export const AudioElement = () => {
-  const {src, audioRef, audioEvents, autoPlay} = useContext(AudioPlayerContext);
+  const {src, audioRef, audioEvents, autoPlay} = useAudioPlayerContext();
   const {
     onCanPlay,
     onDurationChange,

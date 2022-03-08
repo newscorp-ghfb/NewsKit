@@ -1,5 +1,5 @@
 import {ReactJSXElement} from '@emotion/react/types/jsx-namespace';
-import React, {createContext, SyntheticEvent} from 'react';
+import React, {createContext, SyntheticEvent, useContext} from 'react';
 
 interface AudioPlayerProviderContext {
   id: string;
@@ -35,8 +35,8 @@ interface AudioPlayerProviderContext {
   };
   getSeekBarProps: () => {
     duration: number;
-    trackPositionArr: number[];
-    onChangeSlider: ([value]: number[]) => void;
+    trackPosition: number;
+    onChange: ([value]: number[]) => void;
     buffered: TimeRanges | undefined;
   };
 }
@@ -46,3 +46,5 @@ export const AudioPlayerContext = createContext<
 >({});
 
 export const AudioPlayerProvider = AudioPlayerContext.Provider;
+
+export const useAudioPlayerContext = () => useContext(AudioPlayerContext);
