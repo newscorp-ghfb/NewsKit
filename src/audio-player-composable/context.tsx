@@ -24,6 +24,7 @@ interface AudioPlayerProviderContext {
   trackPositionArr: number[];
   onChangeSlider: (values: number[]) => void;
   // Getter functions
+
   getPlayPauseButtonProps: (args: {
     onClick?: () => void;
   }) => {
@@ -35,6 +36,12 @@ interface AudioPlayerProviderContext {
     canPause: boolean;
     playStateIcon: ReactJSXElement;
   };
+  length?: number;
+  format?: string;
+  defaultTime?: number;
+  currentTime?: string;
+  totalLength?: string;
+  formatFunction: (answer: string) => string;
 }
 
 export const AudioPlayerContext = createContext<
