@@ -52,9 +52,7 @@ const TRANSITION_PRESET_PROPERTIES = [
     tokenName: 'transitionDelay',
     acceptedValues: (
       <>
-        <Link href="https://www.google.com/" target="_blank">
-          motionDuration
-        </Link>
+        <Link href="/theme/motion/#duration">motionDuration</Link>
       </>
     ),
     example: (
@@ -69,9 +67,7 @@ const TRANSITION_PRESET_PROPERTIES = [
     tokenName: 'transitionDuration',
     acceptedValues: (
       <>
-        <Link href="https://www.google.com/" target="_blank">
-          motionDuration
-        </Link>
+        <Link href="/theme/motion/#duration">motionDuration</Link>
       </>
     ),
     example: (
@@ -86,9 +82,7 @@ const TRANSITION_PRESET_PROPERTIES = [
     tokenName: 'transitionTimingFunction',
     acceptedValues: (
       <>
-        <Link href="https://www.google.com/" target="_blank">
-          motionTiming
-        </Link>
+        <Link href="/theme/motion/#timing">motionTiming</Link>
       </>
     ),
     example: (
