@@ -19,7 +19,7 @@ import {
   FormInputSelect,
   FormInputCheckbox,
 } from '../form-input';
-import {composeEventHandlers} from '../utils';
+import {composeEventHandlers} from '../../utils/compose-event-handlers';
 import {IconFilledAccountBalance, TextFieldSize} from '../..';
 import {SelectOption} from '../../select';
 

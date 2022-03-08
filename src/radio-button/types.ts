@@ -1,8 +1,8 @@
 import {SwitchBaseIconProps, SwitchBaseProps} from '../switch-base/types';
 
-export type CheckboxIconProps = SwitchBaseIconProps;
+export type RadioButtonIconProps = SwitchBaseIconProps;
 
-export type CheckboxProps = Omit<
+export type RadioButtonProps = Omit<
   SwitchBaseProps,
   'path' | 'defaultSwitchComponent' | 'type'
 >;

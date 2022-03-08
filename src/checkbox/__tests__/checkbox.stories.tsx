@@ -166,6 +166,9 @@ export const StoryCheckboxOverrides = () => (
             typographyPreset: 'utilityHeading010',
             stylePreset: 'inkSubtle',
           },
+          icon: {
+            size: 'iconSize050',
+          },
         }}
       />
     </Container>

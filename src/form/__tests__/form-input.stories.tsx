@@ -7,6 +7,7 @@ import {
   FormInputSelect,
   FormInputTextField,
   FormInputCheckbox,
+  FormInputRadioButton,
 } from '..';
 import {
   Block,
@@ -28,6 +29,7 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {Fieldset} from '../../fieldset';
+import {RadioGroup} from '../../radio-button';
 
 const FormInputBlock = styled(Block)``;
 
@@ -338,6 +340,33 @@ export const FormFieldCheckbox = () => (
   </Form>
 );
 FormFieldCheckbox.storyName = 'form-input-checkbox';
+
+export const FormFieldRadioButton = () => (
+  <Form onSubmit={onSubmit}>
+    <StorybookSubHeading>Single Radio Button validation</StorybookSubHeading>
+    <Fieldset legend="Select size" size="medium">
+      <RadioGroup>
+        {['small', 'medium', 'large'].map(size => (
+          <Block spaceStack="space050" key={size}>
+            <FormInput
+              name="size"
+              size={'medium' as TextFieldSize}
+              rules={{
+                required: 'Required field',
+              }}
+            >
+              <FormInputRadioButton label={size} value={size} />
+            </FormInput>
+          </Block>
+        ))}
+      </RadioGroup>
+    </Fieldset>
+
+    <Button type="submit">Submit</Button>
+  </Form>
+);
+
+FormFieldRadioButton.storyName = 'form-input-radio-button';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-select-theme',
