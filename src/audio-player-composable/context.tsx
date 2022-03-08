@@ -38,13 +38,9 @@ interface AudioPlayerProviderContext {
   };
   getTimeDisplayProps: () => {
     defaultFormat: string;
+    currentTime?: number;
+    length?: number;
   };
-  length?: number;
-  format?: string;
-  defaultTime?: number;
-  currentTime?: string;
-  totalLength?: string;
-  formatFunction: (answer: string) => string;
 }
 
 export const AudioPlayerContext = createContext<

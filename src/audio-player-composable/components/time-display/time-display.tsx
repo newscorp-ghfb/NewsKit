@@ -6,7 +6,7 @@ import defaults from './defaults';
 
 interface StyledLabelProps {
   length?: number;
-  format?: (currentTime: number, length: number) => string;
+  format?: (currentTime?: number, length?: number) => string;
   overrides?: {
     typographyPreset?: MQ<string>;
     stylePreset?: MQ<string>;
@@ -20,15 +20,14 @@ const TimeDisplayContainer = styled.div`
 const StyledLabel = styled.label<Partial<StyledLabelProps>>``;
 
 export const ThemelessTimeDisplay = ({format, ...props}: StyledLabelProps) => {
-  const {trackPositionArr, duration, getTimeDisplayProps} = useContext(
-    AudioPlayerContext,
-  );
-  const {defaultFormat} = getTimeDisplayProps!();
+  const {getTimeDisplayProps} = useContext(AudioPlayerContext);
+  const {defaultFormat, currentTime, length} = getTimeDisplayProps!();
 
+  // const test = format === currentTime ? currentTime : length
   return (
     <TimeDisplayContainer>
       <StyledLabel overrides={props.overrides}>
-        {format ? format(trackPositionArr![0], duration!) : defaultFormat}
+        {format ? format(currentTime, length) : defaultFormat}
       </StyledLabel>
     </TimeDisplayContainer>
   );

@@ -110,8 +110,6 @@ export const AudioPlayerComposable = ({
   const value = {
     // Props function getter
     getPlayPauseButtonProps,
-
-    // Time display
     getTimeDisplayProps,
 
     // Internal for AudioElement
