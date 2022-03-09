@@ -11,8 +11,7 @@ export default {
   title: 'NewsKit Light/audio-player-composable',
   component: () => 'None',
 };
-const test = formatFunction(3.0, 372.0);
-console.log(test, 'test');
+
 export const AudioPlayPauseButton = () => (
   <AudioPlayerComposable
     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
