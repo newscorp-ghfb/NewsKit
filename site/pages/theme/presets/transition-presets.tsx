@@ -671,7 +671,7 @@ $\{getTransitionPresetFromTheme('backgroundColorChange')}
         </ContentSecondary>
 
         <ContentSecondary>
-          <VideoElement url="static/examples/transition-presets/background-colour.mov" />
+          <VideoElement url="static/examples/transition-presets/background-colour.mp4" />
         </ContentSecondary>
 
         <ContentSecondary
@@ -749,7 +749,7 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
         </ContentSecondary>
 
         <ContentSecondary>
-          <VideoElement url="static/examples/transition-presets/background-border-colours.mov" />
+          <VideoElement url="static/examples/transition-presets/background-border-colours.mp4" />
         </ContentSecondary>
 
         <ContentSecondary>
@@ -837,7 +837,7 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
         </ContentSecondary>
 
         <ContentSecondary showSeparator>
-          <VideoElement url="static/examples/transition-presets/drawer-mount-unmount.mov" />
+          <VideoElement url="static/examples/transition-presets/drawer-mount-unmount.mp4" />
         </ContentSecondary>
       </ContentSection>
 
