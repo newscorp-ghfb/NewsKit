@@ -41,6 +41,7 @@ test('formatFunction', () => {
   expect(formatFunction(23.0, 109000.0)).toEqual('00:23/30:16:40 ');
   expect(formatFunction(120, 109000.0)).toEqual('02:00/30:16:40 ');
   expect(formatFunction(4100, 109000.0)).toEqual('01:08:20/30:16:40 ');
+  expect(formatFunction(109000.0, 109000.0)).toEqual('30:16:40/30:16:40 ');
 });
 
 // describe('formatTrackData', () => {

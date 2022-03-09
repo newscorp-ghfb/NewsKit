@@ -1402,9 +1402,6 @@ Object {
       "spaceStack": "space000",
     },
   },
-  "container": Object {
-    "stylePreset": "containers",
-  },
   "dateTime": Object {
     "prefix": Object {
       "stylePreset": "inkSubtle",
@@ -2256,6 +2253,15 @@ Object {
         "stylePreset": "textInputLabel",
         "typographyPreset": "utilityLabel030",
       },
+    },
+  },
+  "timeDisplay": Object {
+    "container": Object {
+      "stylePreset": "currentTimeDisplay",
+    },
+    "currentTimeDisplay": Object {
+      "stylePreset": "currentTimeDisplay",
+      "typographyPreset": "utilityButton010",
     },
   },
   "titleBar": Object {

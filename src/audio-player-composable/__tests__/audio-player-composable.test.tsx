@@ -6,6 +6,8 @@ import {AudioPlayerComposable} from '../audio-player-composable';
 import {PlayPauseButton} from '../components/play-pause-button';
 import {AudioPlayerComposableProps} from '../types';
 import {TimeDisplay} from '../components/time-display/time-display';
+import {createTheme} from '../../theme/creator';
+import {formatFunction} from '../components/time-display/utils';
 
 const version = '0.10.0';
 
@@ -43,7 +45,11 @@ const recordedAudioProps: AudioPlayerComposableProps = {
           console.log('customer click function');
         }}
       />
-      <TimeDisplay />
+      <TimeDisplay
+        format={({currentTime, length}) =>
+          formatFunction(length!, currentTime!)
+        }
+      />
     </>
   ),
 };
@@ -52,11 +58,27 @@ const recordedAudioPropsAutoplay: AudioPlayerComposableProps = {
   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
   autoPlay: true,
   children: (
-    <PlayPauseButton
-      onClick={() => {
-        console.log('customer click function');
-      }}
-    />
+    <>
+      <PlayPauseButton
+        onClick={() => {
+          console.log('customer click function');
+        }}
+      />
+    </>
+  ),
+};
+const recordedTimeDisplayOverrides: AudioPlayerComposableProps = {
+  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  autoPlay: true,
+  children: (
+    <>
+      <PlayPauseButton
+        onClick={() => {
+          console.log('customer click function');
+        }}
+      />
+      <TimeDisplay overrides={{stylePreset: 'myTimeDisplay'}} />
+    </>
   ),
 };
 
@@ -70,23 +92,6 @@ describe('Audio Player Composable', () => {
     window.open = jest.fn();
     jest.useFakeTimers('legacy');
   });
-  //
-  // it('should render default display time label', () => {
-  //   const {asFragment} = renderWithTheme(
-  //     AudioPlayerComposable,
-  //     recordedAudioProps,
-  //   );
-  //   expect(asFragment()).toMatchSnapshot();
-  // });
-  test('uses format function to display just length', () => {
-    const props = {
-      ...recordedAudioProps,
-      format: 'length',
-    };
-    const {asFragment} = renderWithTheme(AudioPlayerComposable, props);
-    expect(asFragment()).toMatchSnapshot();
-  });
-  //
 
   it('should render with no errors', () => {
     const {asFragment} = renderWithTheme(
@@ -203,5 +208,42 @@ describe('Audio Player Composable', () => {
     resetAndReRender({src: 'newtrack-4', autoPlay: true});
     expect(audioElement.play).not.toHaveBeenCalled();
     expect(audioElement.pause).not.toHaveBeenCalled();
+  });
+
+  it('should render correctly when in autoplay', () => {
+    const {asFragment} = renderWithTheme(
+      AudioPlayerComposable,
+      recordedAudioPropsAutoplay,
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+  it('should render default display time label', () => {
+    const {asFragment} = renderWithTheme(
+      AudioPlayerComposable,
+      recordedAudioProps,
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+  it('renders with TimeDisplay label overrides', () => {
+    const myCustomTheme = createTheme({
+      name: 'my-custom-seek-bar-theme',
+      overrides: {
+        stylePresets: {
+          myTimeDisplay: {
+            base: {
+              backgroundColor: '{{colors.interactivePrimary030}}',
+            },
+          },
+        },
+      },
+    });
+
+    const {asFragment} = renderWithTheme(
+      AudioPlayerComposable,
+      recordedTimeDisplayOverrides,
+      myCustomTheme,
+    );
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });

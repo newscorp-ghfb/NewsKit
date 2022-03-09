@@ -93,7 +93,6 @@ export const AudioPlayerWithTimeDisplay = () => (
         }}
       />
       <TimeDisplay />
-      {/* <TimeDisplay format={'length'} /> */}
     </AudioPlayerComposable>
     <StorybookSubHeading>
       with time current time display only
