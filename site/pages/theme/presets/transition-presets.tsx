@@ -439,7 +439,7 @@ const VideoElement = ({url}: {url: string}) => (
   </video>
 );
 
-const StylePresets = (layoutProps: LayoutProps) => (
+const TransitionPresets = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
       title: 'Transition Presets',
@@ -448,7 +448,7 @@ const StylePresets = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Foundations',
+      type: 'Presets',
       name: 'Transition Presets',
       hero: {
         illustration: 'theme/transition-presets/hero',
@@ -1059,4 +1059,4 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
   </FoundationPageTemplate>
 );
 
-export default StylePresets;
+export default TransitionPresets;

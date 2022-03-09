@@ -217,7 +217,7 @@ export default [
             id: '/theme/presets/transition-presets',
             illustration: 'theme/transition-presets/hero',
             description:
-              'A collection of motion styles and states combined into a preset to define reusable motion transition from one state to another for specific interface elements.',
+              'A collection of motion attributes combined into a preset to define reusable motion transition from one state to another.',
           },
           {
             title: 'Typography Presets',
