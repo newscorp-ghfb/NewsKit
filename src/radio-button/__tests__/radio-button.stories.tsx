@@ -167,16 +167,10 @@ export const StoryRadioButtonWithGroup = () => {
     <Container>
       <GridLayout rowGap="space040">
         <StorybookSubHeading>RadioGroup Uncontrolled</StorybookSubHeading>
-        <RadioGroup name="group">
+        <RadioGroup name="group" defaultValue="medium">
           <GridLayout rowGap="space040">
             {['small', 'medium', 'large'].map(size => (
-              <RadioButton
-                key={size}
-                size="medium"
-                label={size}
-                value={size}
-                defaultChecked={size === 'medium'}
-              />
+              <RadioButton key={size} size="medium" label={size} value={size} />
             ))}
           </GridLayout>
         </RadioGroup>
@@ -188,13 +182,7 @@ export const StoryRadioButtonWithGroup = () => {
         >
           <GridLayout rowGap="space040">
             {['small', 'medium', 'large'].map(size => (
-              <RadioButton
-                key={size}
-                size="medium"
-                label={size}
-                value={size}
-                defaultChecked={size === 'medium'}
-              />
+              <RadioButton key={size} size="medium" label={size} value={size} />
             ))}
           </GridLayout>
         </RadioGroup>

@@ -7,7 +7,7 @@ type RadioGroupContextValue = {
   value: string | undefined;
 };
 
-type RadioGroupProps = {
+export type RadioGroupProps = {
   defaultValue?: string;
   value?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;

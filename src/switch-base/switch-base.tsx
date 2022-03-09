@@ -29,9 +29,9 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
       label,
       labelPosition = 'end',
       labelAttributes = {},
-      path = 'checkbox',
+      path,
       defaultSwitchComponent,
-      type = 'checkbox',
+      type,
       ...restProps
     },
     inputRef,
@@ -149,7 +149,7 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
             overrides={overrides}
             state={state}
             onClick={onFeedbackClick}
-            data-testid="checkbox-feedback"
+            data-testid={`${type}-feedback`}
             isFocused={isFocused}
             isHover={isFeedbackHover}
             path={path}
@@ -177,6 +177,7 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
               onChange={composeEventHandlers([onInputChange, onChange])}
               path={path}
               type={type}
+              data-testid={`${type}-input`}
             />
           </StyledSwitch>
         </StyledSwitchContainer>

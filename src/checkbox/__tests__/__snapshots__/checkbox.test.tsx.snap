@@ -121,6 +121,7 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -382,6 +383,7 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -530,6 +532,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           type="checkbox"
         />
@@ -679,6 +682,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           type="checkbox"
         />
@@ -832,6 +836,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -1093,6 +1098,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -1241,6 +1247,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           type="checkbox"
         />
@@ -1390,6 +1397,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           type="checkbox"
         />
@@ -1654,6 +1662,7 @@ exports[`Checkbox label attributes 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -1920,6 +1929,7 @@ exports[`Checkbox label position start 1`] = `
       >
         <input
           class="emotion-5"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -2176,6 +2186,7 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -2312,6 +2323,7 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -2525,6 +2537,7 @@ exports[`Checkbox render with size: large & checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -2784,6 +2797,7 @@ exports[`Checkbox render with size: large & label 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -3045,6 +3059,7 @@ exports[`Checkbox render with size: large 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -3258,6 +3273,7 @@ exports[`Checkbox render with size: medium & checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -3517,6 +3533,7 @@ exports[`Checkbox render with size: medium & label 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -3778,6 +3795,7 @@ exports[`Checkbox render with size: medium 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -3991,6 +4009,7 @@ exports[`Checkbox render with size: small & checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -4250,6 +4269,7 @@ exports[`Checkbox render with size: small & label 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -4511,6 +4531,7 @@ exports[`Checkbox render with size: small 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -4724,6 +4745,7 @@ exports[`Checkbox render with state: checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           id="checked"
           type="checkbox"
         />
@@ -4905,6 +4927,7 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           disabled=""
           id="checked-disabled"
           type="checkbox"
@@ -5166,6 +5189,7 @@ exports[`Checkbox render with state: default 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           id="default"
           type="checkbox"
         />
@@ -5313,6 +5337,7 @@ exports[`Checkbox render with state: disabled 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           id="disabled"
           type="checkbox"
@@ -5473,6 +5498,7 @@ exports[`Checkbox render with state: invalid 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           id="invalid"
           type="checkbox"
         />
@@ -5668,6 +5694,7 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           id="invalid-checked"
           type="checkbox"
         />
@@ -5827,6 +5854,7 @@ exports[`Checkbox render with state: valid 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           id="valid"
           type="checkbox"
         />
@@ -6022,6 +6050,7 @@ exports[`Checkbox render with state: valid-checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           id="valid-checked"
           type="checkbox"
         />
@@ -6176,6 +6205,7 @@ exports[`Checkbox with overrides 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
