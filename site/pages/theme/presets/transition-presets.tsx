@@ -503,7 +503,12 @@ const StylePresets = (layoutProps: LayoutProps) => (
         </ContentPrimary>
 
         <ContentSecondary showSeparator>
-          <InlineMessage icon={infoIcon}>
+          <InlineMessage
+            icon={infoIcon}
+            role="region"
+            aria-label="transition presets"
+            title="transition presets"
+          >
             You can also add your own Transition Presets. See the{' '}
             <Link href="/theme/theming/creating-a-theme/">
               Creating a theme
@@ -749,7 +754,12 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
         </ContentSecondary>
 
         <ContentSecondary>
-          <InlineMessage icon={infoIcon} title="Note">
+          <InlineMessage
+            icon={infoIcon}
+            role="region"
+            aria-label="single instance"
+            title="single instance"
+          >
             These example only applies to a single instance. Use{' '}
             <Link href="/theme/theming/component-defaults/">
               Component Defaults
