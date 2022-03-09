@@ -1,3 +1,4 @@
+import {formatFunction} from '../components/time-display/utils';
 import {
   // formatTrackData,
   formatTrackTime,
@@ -32,6 +33,14 @@ test('formatDurationTime', () => {
   expect(formatDuration(oneHour + oneMinute + 1, oneHour)).toEqual('01:01:01');
   expect(formatDuration(oneHour + tenMinutes + 1)).toEqual('01:10:01');
   expect(formatDuration(oneHour, oneMinute)).toEqual('01:00:00');
+});
+
+test('formatFunction', () => {
+  expect(formatFunction(3.0, 372.0)).toEqual('00:03/06:12 ');
+  expect(formatFunction(1000.0, 5.0)).toEqual('16:40/00:05 ');
+  expect(formatFunction(23.0, 109000.0)).toEqual('00:23/30:16:40 ');
+  expect(formatFunction(120, 109000.0)).toEqual('02:00/30:16:40 ');
+  expect(formatFunction(4100, 109000.0)).toEqual('01:08:20/30:16:40 ');
 });
 
 // describe('formatTrackData', () => {
