@@ -329,6 +329,13 @@ export default [
               'Select components allow users to select one option from a list.',
             illustration: 'components/select/select-illustration',
           },
+          {
+            title: 'RadioButton',
+            page: true,
+            id: '/components/radio-button',
+            description: 'TODO',
+            // illustration: 'components/select/select-illustration',
+          },
         ],
       },
       {
