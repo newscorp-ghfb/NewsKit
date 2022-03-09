@@ -5,12 +5,14 @@ import {TimeDisplay} from '../components/time-display/time-display';
 import {AudioPlayerComposable} from '../audio-player-composable';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {calculateTime, formatFunction} from '../components/time-display/utils';
+import {GridLayout, GridLayoutItem} from '../../grid-layout';
 
 export default {
   title: 'NewsKit Light/audio-player-composable',
   component: () => 'None',
 };
-
+const test = formatFunction(3.0, 372.0);
+console.log(test, 'test');
 export const AudioPlayPauseButton = () => (
   <AudioPlayerComposable
     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
@@ -94,7 +96,9 @@ export const AudioPlayerWithTimeDisplay = () => (
       <TimeDisplay />
       {/* <TimeDisplay format={'length'} /> */}
     </AudioPlayerComposable>
-    <StorybookSubHeading>with time display currentTime</StorybookSubHeading>
+    <StorybookSubHeading>
+      with time current time display only
+    </StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
       ariaLandmark="audio player"
@@ -104,11 +108,54 @@ export const AudioPlayerWithTimeDisplay = () => (
           console.log('customer click function');
         }}
       />
-      <TimeDisplay />
       <TimeDisplay format={({currentTime}) => calculateTime(currentTime)} />
+    </AudioPlayerComposable>
+    <StorybookSubHeading>
+      with time length time display only
+    </StorybookSubHeading>
+    <AudioPlayerComposable
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      ariaLandmark="audio player"
+    >
+      <PlayPauseButton
+        onClick={() => {
+          console.log('customer click function');
+        }}
+      />
+      <TimeDisplay format={({length}) => calculateTime(length)} />
+    </AudioPlayerComposable>
+    <StorybookSubHeading>with formatFunction</StorybookSubHeading>
+    <AudioPlayerComposable
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      ariaLandmark="audio player"
+    >
+      <PlayPauseButton
+        onClick={() => {
+          console.log('customer click function');
+        }}
+      />
       <TimeDisplay
         format={({currentTime, length}) => formatFunction(length, currentTime)}
       />
+    </AudioPlayerComposable>
+    <StorybookSubHeading>with grid</StorybookSubHeading>
+    <AudioPlayerComposable
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      ariaLandmark="audio player"
+    >
+      <PlayPauseButton
+        onClick={() => {
+          console.log('customer click function');
+        }}
+      />
+      <GridLayout columns="1fr 1fr 0fr 0fr 0fr">
+        <GridLayoutItem justifySelf="start">
+          <TimeDisplay format={({currentTime}) => calculateTime(currentTime)} />
+        </GridLayoutItem>
+        <GridLayoutItem justifySelf="end">
+          <TimeDisplay format={({length}) => calculateTime(length)} />
+        </GridLayoutItem>
+      </GridLayout>
     </AudioPlayerComposable>
   </>
 );
