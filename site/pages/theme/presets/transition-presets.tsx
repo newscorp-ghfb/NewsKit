@@ -667,7 +667,7 @@ $\{getTransitionPresetFromTheme('backgroundColorChange')}
         </ContentSecondary>
 
         <ContentSecondary>
-          <VideoElement url="static/transition-bg.mp4" />
+          <VideoElement url="static/examples/transition-presets/background-color.mp4" />
         </ContentSecondary>
 
         <ContentSecondary
@@ -745,7 +745,7 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
         </ContentSecondary>
 
         <ContentSecondary>
-          <VideoElement url="static/transition-bg-border.mp4" />
+          <VideoElement url="static/examples/transition-presets/background-border-color.mp4" />
         </ContentSecondary>
 
         <ContentSecondary>
@@ -807,7 +807,6 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
               2. Applying the transition preset to the Drawer in the defaults.
             </>
           }
-          showSeparator
         >
           <Code>
             {` export const Drawer = styled.div
@@ -829,8 +828,8 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
           </Code>
         </ContentSecondary>
 
-        <ContentSecondary>
-          <VideoElement url="static/drawer.mp4" />
+        <ContentSecondary showSeparator>
+          <VideoElement url="static/examples/transition-presets/drawer.mp4" />
         </ContentSecondary>
       </ContentSection>
 
