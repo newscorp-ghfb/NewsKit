@@ -341,30 +341,37 @@ export const FormFieldCheckbox = () => (
 );
 FormFieldCheckbox.storyName = 'form-input-checkbox';
 
-export const FormFieldRadioButton = () => (
-  <Form onSubmit={onSubmit}>
-    <StorybookSubHeading>Single Radio Button validation</StorybookSubHeading>
-    <Fieldset legend="Select size" size="medium">
-      <RadioGroup>
-        {['small', 'medium', 'large'].map(size => (
-          <Block spaceStack="space050" key={size}>
-            <FormInput
-              name="size"
-              size={'medium' as TextFieldSize}
-              rules={{
-                required: 'Required field',
-              }}
-            >
-              <FormInputRadioButton label={size} value={size} />
-            </FormInput>
-          </Block>
-        ))}
-      </RadioGroup>
-    </Fieldset>
+export const FormFieldRadioButton = () => {
+  const rules = {
+    required: 'Required field',
+  };
 
-    <Button type="submit">Submit</Button>
-  </Form>
-);
+  return (
+    <Block spaceInset="space050">
+      <Form onSubmit={onSubmit}>
+        <StorybookHeading>RadioButton and RadioGroup</StorybookHeading>
+        <Fieldset legend="Favorite activities">
+          <RadioGroup>
+            {['Reading', 'Writing', 'Speaking', 'Listening'].map(value => (
+              <FormInput key={value} name="favoriteActivities" rules={rules}>
+                <FormInputRadioButton
+                  label={value}
+                  value={value}
+                  overrides={{spaceStack: 'space030'}}
+                />
+              </FormInput>
+            ))}
+          </RadioGroup>
+          <FormInput name="favoriteActivities" rules={rules}>
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </FormInput>
+        </Fieldset>
+        <Block spaceStack="space030" />
+        <Button type="submit">Submit</Button>
+      </Form>
+    </Block>
+  );
+};
 
 FormFieldRadioButton.storyName = 'form-input-radio-button';
 
