@@ -966,7 +966,7 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
             cards={[
               {
                 description:
-                  'Icons have two variations; ‘Filled’ and ‘Outlined’. There will be certain instances when a ‘Filled’ and ‘Outlined’ instance of the same icon look the same. This is because some visual characteristics don’t lend themselves to one or the other style.',
+                  'To alleviate this problem with page-level transitions we recommend designers refer to the documentation provided in Figma.',
                 media: getIllustrationComponent(
                   'theme/transition-presets/transition-presets-in-figma',
                 ),
@@ -1030,6 +1030,8 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
               components in the NewsKit Design System that have motion applied
               to them eg. the <Link href="/components/drawer/">Drawer</Link>, &{' '}
               <Link href="/components/modal/">Modal</Link> components.
+              <br />
+              <br />
               <Link
                 href="https://caniuse.com/prefers-reduced-motion"
                 target="_blank"
