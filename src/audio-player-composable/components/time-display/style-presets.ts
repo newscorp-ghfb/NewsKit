@@ -6,7 +6,7 @@ export default {
       color: '{{colors.inkContrast}}',
     },
   },
-  containers: {
+  container: {
     base: {
       backgroundColor: '{{colors.transparent}}',
     },

@@ -5,7 +5,6 @@ export default {
     },
     currentTimeDisplay: {
       stylePreset: 'currentTimeDisplay',
-      typographyPreset: 'utilityButton010',
     },
   },
 };
