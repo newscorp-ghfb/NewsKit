@@ -4,14 +4,14 @@ export const states: [
   string,
   {checked?: boolean; state?: SwitchBaseState},
 ][] = [
-  ['default', {}],
+  ['default', {checked: false}],
   ['checked', {checked: true}],
   ['disabled', {state: 'disabled'}],
   ['checked-disabled', {checked: true, state: 'disabled'}],
-  ['invalid', {state: 'invalid'}],
-  ['invalid-checked', {state: 'invalid', checked: true}],
-  ['valid', {state: 'valid'}],
-  ['valid-checked', {state: 'valid', checked: true}],
+  ['invalid', {checked: false, state: 'invalid'}],
+  ['invalid-checked', {checked: true, state: 'invalid'}],
+  ['valid', {checked: false, state: 'valid'}],
+  ['valid-checked', {checked: true, state: 'valid'}],
 ];
 
 export const sizes: SwitchBaseSize[] = ['small', 'medium', 'large'];

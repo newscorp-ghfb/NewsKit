@@ -3735,6 +3735,10 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   border-width: 4px;
 }
 
+.emotion-33:checked:focus:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
 .emotion-33:checked:focus:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #2B4AAB;
@@ -4820,6 +4824,10 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   background-color: #FAFAFA;
   border-color: #2B4AAB;
   border-width: 4px;
+}
+
+.emotion-33:checked:focus:not(:disabled) svg {
+  fill: #2B4AAB;
 }
 
 .emotion-33:checked:focus:hover:not(:disabled) {
@@ -6373,6 +6381,10 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   background-color: #FAFAFA;
   border-color: #2B4AAB;
   border-width: 4px;
+}
+
+.emotion-3:checked:focus:not(:disabled) svg {
+  fill: #2B4AAB;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {

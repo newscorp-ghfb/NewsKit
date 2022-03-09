@@ -20,7 +20,12 @@ const DefaultIcon = ({checked, iconSize, overrides}: RadioButtonIconProps) =>
 
 const ThemelessCheckbox = React.forwardRef<HTMLInputElement, RadioButtonProps>(
   (
-    {name: nameProp, onChange: onChangeProp, checked: checkedProp, ...props},
+    {
+      name: nameProp,
+      onChange: onChangeProp,
+      checked: checkedProp = false,
+      ...props
+    },
     inputRef,
   ) => {
     const radioGroup = useRadioGroup();
@@ -34,9 +39,8 @@ const ThemelessCheckbox = React.forwardRef<HTMLInputElement, RadioButtonProps>(
     let checked = checkedProp;
 
     if (radioGroup) {
-      if (typeof checked === 'undefined') {
-        checked = radioGroup.value === props.value;
-      }
+      checked = radioGroup.value === props.value;
+
       if (typeof name === 'undefined') {
         name = radioGroup.name;
       }

@@ -75,7 +75,7 @@ export const StoryRadioButtonDefault = () => (
         {sizes.map(size => (
           <>
             <Container>
-              <RadioButton size={size} label={size} />
+              <RadioButton size={size} label={size} checked={false} />
             </Container>
             <Container>
               <RadioButton size={size} label={`${size}-checked`} checked />

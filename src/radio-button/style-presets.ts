@@ -37,6 +37,7 @@ export default {
       backgroundColor: '{{colors.interactiveInput010}}',
       borderColor: '{{colors.interactiveInput050}}',
       borderWidth: '{{borders.borderWidth030}}',
+      iconColor: '{{colors.interactiveInput050}}',
     },
     'checked:focus:hover': {
       backgroundColor: '{{colors.interactiveInput030}}',
