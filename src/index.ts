@@ -30,6 +30,7 @@ export * from './link';
 export * from './menu';
 export * from './modal';
 export * from './ordered-list';
+export * from './radio-button';
 export * from './screen-reader-only';
 export * from './scroll';
 export * from './select';

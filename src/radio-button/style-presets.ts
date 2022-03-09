@@ -1,30 +1,5 @@
 import {StylePreset} from '../theme/types';
 
-// spaceStack: 'space000',
-// RadioButtonInput: {
-//    size: 'sizing050',
-//    spaceInline: 'space030',
-//       stylePresets.radioButtonInput = {
-//             backgroundColor: '{{colors.interactiveInput010}}',
-//             borderColor: '{{colors.interactiveInput020}}',
-//             borderWidth: '{{borders.borderWidth020}}',
-//             borderRadius: '{{borders.borderRadiusCircle}}',
-//             borderStyle: 'solid',
-//          },
-//       stylePresets.radioButtonFeedback = {
-//             size: 'sizing070',
-//             backgroundColor: '{{colors.transparent}}',
-//          },
-//       stylePresets.controlLabel = {
-//             fontColor: '{{colors.inkBase}}',
-//             typographyPreset: 'utilityBody020',
-//          },
-//       stylePresets.radioButtonIcon = {
-//             iconColor: '{{colors.transparent}}',
-//             iconSize: 'iconSize010',
-//          },
-// },
-
 export default {
   radioButtonInput: {
     base: {
@@ -182,16 +157,6 @@ export default {
     },
     'invalid:hover': {
       backgroundColor: '{{colors.interactiveNegative010}}',
-    },
-  },
-
-  // This should be shared
-  controlLabel: {
-    base: {
-      color: '{{colors.inkBase}}',
-    },
-    disabled: {
-      color: '{{colors.inkNonEssential}}',
     },
   },
 } as Record<string, StylePreset>;
