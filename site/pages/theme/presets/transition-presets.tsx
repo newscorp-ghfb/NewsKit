@@ -826,7 +826,6 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
     )};
 ;
  
- 
  <Drawer
   open
   onDismiss={close}
@@ -896,42 +895,42 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
         >
           <Code>
             {`<Modal
-    open={true}
-    onDismiss={close}
-    header="This is a modal header."
-    overrides={{
-      panel: {
-        transitionPreset: [
-          {
-            extend: 'fade',
-            enterActive: {
-              transitionDuration: '{{motions.motionDuration010}}',
-              transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-              transitionDelay: '{{motions.motionDuration010}}',
-            },
-            exitActive: {
-              transitionDuration: '{{motions.motionDuration010}}',
-              transitionTimingFunction: '{{motions.motionTimingLinear}}',
-            },
+  open={true}
+  onDismiss={close}
+  header="This is a modal header."
+  overrides={{
+    panel: {
+      transitionPreset: [
+        {
+          extend: 'fade',
+          enterActive: {
+            transitionDuration: '{{motions.motionDuration010}}',
+            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+            transitionDelay: '{{motions.motionDuration010}}',
           },
-          {
-            extend: 'moveUp',
-            enterActive: {
-              transitionDuration: '{{motions.motionDuration010}}',
-              transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-              transitionDelay: '{{motions.motionDuration010}}',
-            },
-            exitActive: {
-              transitionDuration: '{{motions.motionDuration010}}',
-              transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
-            },
+          exitActive: {
+            transitionDuration: '{{motions.motionDuration010}}',
+            transitionTimingFunction: '{{motions.motionTimingLinear}}',
           },
-        ],
-      },
-    }}
-  >
-    {modalContent}
-  </Modal>`}
+        },
+        {
+          extend: 'moveUp',
+          enterActive: {
+            transitionDuration: '{{motions.motionDuration010}}',
+            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+            transitionDelay: '{{motions.motionDuration010}}',
+          },
+          exitActive: {
+            transitionDuration: '{{motions.motionDuration010}}',
+            transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
+          },
+        },
+      ],
+    },
+  }}
+>
+  {modalContent}
+</Modal>`}
           </Code>
         </ContentSecondary>
       </ContentSection>
