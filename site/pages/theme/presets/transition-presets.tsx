@@ -492,7 +492,7 @@ const StylePresets = (layoutProps: LayoutProps) => (
       <ContentSection sectionName="predefined transition presets">
         <ContentPrimary
           id="predefined-transition-presets"
-          toc="Predefined Transition Presets"
+          toc="Available Transition Presets"
           headline="Predefined Transition Presets"
           description="Below is a collection of Transition Presets that come out of the box with NewsKit that can be applied to elements:"
         >
@@ -507,7 +507,6 @@ const StylePresets = (layoutProps: LayoutProps) => (
             icon={infoIcon}
             role="region"
             aria-label="transition presets"
-            title="transition presets"
           >
             You can also add your own Transition Presets. See the{' '}
             <Link href="/theme/theming/creating-a-theme/">
@@ -656,7 +655,7 @@ const StylePresets = (layoutProps: LayoutProps) => (
           description={
             <>
               3. This example demonstrates applying{' '}
-              <InlineCode>backgroundColorChange</InlineCode> Tran+sition preset
+              <InlineCode>backgroundColorChange</InlineCode> Transition preset
               to a simple box element.
             </>
           }
@@ -758,7 +757,7 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
             icon={infoIcon}
             role="region"
             aria-label="single instance"
-            title="single instance"
+            title="Note"
           >
             These example only applies to a single instance. Use{' '}
             <Link href="/theme/theming/component-defaults/">
