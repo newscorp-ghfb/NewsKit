@@ -6,7 +6,6 @@ import {
   getSpacingInlineVertical,
   getMinWidth,
 } from '../utils/style';
-import {getSSRId} from '../utils/get-ssr-id';
 import {isValidNode} from '../utils/component';
 import {OrderedListProps} from './types';
 import defaults from './defaults';
@@ -42,9 +41,7 @@ const ThemelessOrderedList: React.FC<OrderedListProps> = ({
   <List role="list">
     {React.Children.map(children, node =>
       isValidNode(node) ? (
-        <ListItem overrides={overrides} key={getSSRId()}>
-          {node}
-        </ListItem>
+        <ListItem overrides={overrides}>{node}</ListItem>
       ) : null,
     )}
   </List>
