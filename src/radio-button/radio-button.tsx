@@ -23,6 +23,7 @@ const ThemelessCheckbox = React.forwardRef<HTMLInputElement, RadioButtonProps>(
     {
       name: nameProp,
       onChange: onChangeProp,
+      /* istanbul ignore next */
       checked: checkedProp = false,
       ...props
     },
