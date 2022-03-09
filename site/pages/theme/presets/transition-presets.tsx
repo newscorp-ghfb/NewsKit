@@ -426,6 +426,19 @@ const contentOverrides = {
   typographyPreset: 'editorialParagraph030',
 };
 
+const VideoElement = ({url}: {url: string}) => (
+  <video
+    controls
+    controlsList="nofullscreen nodownload"
+    loop
+    autoPlay
+    width="100%"
+  >
+    <source src={url} type="video/mp4" />
+    <track kind="captions" label="transition presets video" />
+  </video>
+);
+
 const StylePresets = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
@@ -651,8 +664,10 @@ $\{getTransitionPresetFromTheme('backgroundColorChange')}
   height: 100px;
 ;`}
           </Code>
-          <Block spaceStack="space100" />
-          <P overrides={contentOverrides}>Video</P>
+        </ContentSecondary>
+
+        <ContentSecondary>
+          <VideoElement url="static/transition-bg.mp4" />
         </ContentSecondary>
 
         <ContentSecondary
@@ -727,8 +742,10 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
   height: 100px;
 ;`}
           </Code>
-          <Block spaceStack="space100" />
-          <P overrides={contentOverrides}>Video</P>
+        </ContentSecondary>
+
+        <ContentSecondary>
+          <VideoElement url="static/transition-bg-border.mp4" />
         </ContentSecondary>
 
         <ContentSecondary>
@@ -810,8 +827,10 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
   <div>Content</div>
 </Drawer>`}
           </Code>
-          <Block spaceStack="space100" />
-          <P overrides={contentOverrides}>Video</P>
+        </ContentSecondary>
+
+        <ContentSecondary>
+          <VideoElement url="static/drawer.mp4" />
         </ContentSecondary>
       </ContentSection>
 
