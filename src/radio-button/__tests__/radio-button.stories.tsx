@@ -7,44 +7,16 @@ import {
 import {RadioButton} from '..';
 import {compileTheme, createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
-import {Cell, Grid, GridLayout} from '../..';
+import {
+  Cell,
+  Grid,
+  GridLayout,
+  IconFilledCancel,
+  IconFilledStarOutline,
+} from '../..';
 import {states, sizes} from './helpers';
 import {RadioGroup} from '../radio-group';
-
-const myCustomTheme = compileTheme(
-  createTheme({
-    name: 'radio-group-theme',
-    overrides: {
-      stylePresets: {
-        customCheckboxInput: {
-          base: {
-            borderColor: 'red',
-            borderStyle: 'solid',
-            borderWidth: '2px',
-            borderRadius: '50%',
-            backgroundColor: 'orange',
-            iconColor: 'red',
-          },
-          hover: {
-            backgroundColor: 'blue',
-          },
-        },
-        customCheckboxFeedback: {
-          base: {
-            backgroundColor: 'rgba(0,0,0,0.2)',
-            borderRadius: '50%',
-          },
-        },
-        customIconFilledCancel: {
-          base: {
-            backgroundColor: '{{colors.interfaceInformative010}}',
-            iconColor: '{{colors.inkInverse}}',
-          },
-        },
-      },
-    },
-  }),
-);
+import {RadioButtonIconProps} from '../types';
 
 export default {
   title: 'NewsKit Light/radio-button',
@@ -54,10 +26,9 @@ export default {
 
 const Container = styled.div`
   margin: 10px;
-  display: flex;
 `;
 export const StoryRadioButtonDefault = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <StorybookHeading>RadioButton</StorybookHeading>
     <Grid>
       <Cell xs={8} sm={4}>
@@ -84,9 +55,8 @@ export const StoryRadioButtonDefault = () => (
         ))}
       </Cell>
     </Grid>
-  </ThemeProvider>
+  </>
 );
-
 StoryRadioButtonDefault.storyName = 'radio-button-default';
 
 export const StoryRadioButtonLabel = () => {
@@ -94,8 +64,8 @@ export const StoryRadioButtonLabel = () => {
   const longLabel =
     'Very long label... The array of dependencies is not passed as arguments to the effect function.';
   return (
-    <ThemeProvider theme={myCustomTheme}>
-      <StorybookHeading>Checkbox - Labels</StorybookHeading>
+    <Container>
+      <StorybookHeading>RadioButton</StorybookHeading>
       <Grid>
         {sizes.map(size => (
           <Cell xs={8} sm={4}>
@@ -127,15 +97,18 @@ export const StoryRadioButtonLabel = () => {
         ))}
       </Grid>
       <StorybookSubHeading>No label</StorybookSubHeading>
-      <Container>
+      <GridLayout
+        columns="max-content max-content max-content"
+        columnGap="space030"
+        alignItems="center"
+      >
         <span>This is checkbox</span> <RadioButton id="no-label" />
         {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
         <label htmlFor="no-label">without label</label>
-      </Container>
-    </ThemeProvider>
+      </GridLayout>
+    </Container>
   );
 };
-
 StoryRadioButtonLabel.storyName = 'radio-button-label';
 
 export const StoryRadioButtonUsingState = () => {
@@ -143,8 +116,9 @@ export const StoryRadioButtonUsingState = () => {
   return (
     <Container>
       <GridLayout rowGap="space040">
+        <StorybookHeading>Using state</StorybookHeading>
         <StorybookSubHeading>
-          Using external state ( useState ) to control checked
+          This example uses setState instead of RadioGroup
         </StorybookSubHeading>
         {['small', 'medium', 'large'].map(size => (
           <RadioButton
@@ -165,6 +139,7 @@ export const StoryRadioButtonWithGroup = () => {
   const [checked, setChecked] = React.useState('small');
   return (
     <Container>
+      <StorybookHeading>RadioGroup</StorybookHeading>
       <GridLayout rowGap="space040">
         <StorybookSubHeading>RadioGroup Uncontrolled</StorybookSubHeading>
         <RadioGroup name="group" defaultValue="medium">
@@ -190,5 +165,135 @@ export const StoryRadioButtonWithGroup = () => {
     </Container>
   );
 };
-
 StoryRadioButtonWithGroup.storyName = 'radio-group';
+
+const myCustomTheme = compileTheme(
+  createTheme({
+    name: 'radio-group-theme',
+    overrides: {
+      stylePresets: {
+        customRadioInput: {
+          base: {
+            borderColor: 'red',
+            borderStyle: 'solid',
+            borderWidth: '2px',
+            borderRadius: '50%',
+            backgroundColor: 'orange',
+            iconColor: 'red',
+          },
+          hover: {
+            backgroundColor: 'blue',
+          },
+        },
+        customRadioFeedback: {
+          base: {
+            backgroundColor: 'rgba(0,0,0,0.0)',
+            borderRadius: '50%',
+          },
+          hover: {
+            backgroundColor: 'rgba(0,0,0,0.5)',
+            borderRadius: '50%',
+          },
+        },
+        customIconFilledCancel: {
+          base: {
+            backgroundColor: '{{colors.interfaceInformative010}}',
+            iconColor: '{{colors.inkInverse}}',
+            borderRadius: '50%',
+          },
+        },
+      },
+    },
+  }),
+);
+
+const CustomIcon = ({checked}: RadioButtonIconProps) =>
+  checked ? (
+    <IconFilledStarOutline overrides={{size: 'iconSize020'}} />
+  ) : (
+    <IconFilledCancel
+      overrides={{size: 'iconSize020', stylePreset: 'customIconFilledCancel'}}
+    />
+  );
+
+export const StoryRadioButtonOverrides = () => {
+  const styleOverrides = {
+    spaceStack: 'space060',
+    input: {
+      stylePreset: 'customRadioInput',
+      size: '68px',
+    },
+    feedback: {
+      size: '90px',
+      stylePreset: 'customRadioFeedback',
+    },
+    label: {
+      typographyPreset: 'utilityHeading010',
+      stylePreset: 'inkSubtle',
+    },
+    icon: {
+      size: 'iconSize050',
+      stylePreset: 'customIconFilledCancel',
+    },
+  };
+
+  const propOverrides = {
+    icon: {
+      props: {
+        overrides: {
+          size: 'iconSize010',
+        },
+      },
+    },
+  };
+
+  const iconOverrides = {
+    icon: CustomIcon,
+  };
+
+  return (
+    <ThemeProvider theme={myCustomTheme}>
+      <Container>
+        <StorybookHeading>RadioButton</StorybookHeading>
+        <StorybookSubHeading>Style overrides</StorybookSubHeading>
+        <RadioGroup name="style" defaultValue="1">
+          <GridLayout rowGap="space040">
+            <RadioButton
+              value="1"
+              label="Option 1"
+              overrides={styleOverrides}
+            />
+            <RadioButton
+              value="2"
+              label="Option 2"
+              overrides={styleOverrides}
+            />
+            <RadioButton
+              value="3"
+              label="Option 3"
+              overrides={styleOverrides}
+            />
+          </GridLayout>
+        </RadioGroup>
+
+        <StorybookSubHeading>Icon Prop override</StorybookSubHeading>
+        <RadioGroup name="prop" defaultValue="1">
+          <GridLayout rowGap="space040">
+            <RadioButton value="1" label="Option 1" overrides={propOverrides} />
+            <RadioButton value="2" label="Option 2" overrides={propOverrides} />
+            <RadioButton value="3" label="Option 3" overrides={propOverrides} />
+          </GridLayout>
+        </RadioGroup>
+        <StorybookSubHeading>Icon Component override</StorybookSubHeading>
+        <RadioGroup name="icon" defaultValue="1">
+          <GridLayout rowGap="space040">
+            <RadioButton value="1" label="Option 1" overrides={iconOverrides} />
+            <RadioButton value="2" label="Option 2" overrides={iconOverrides} />
+            <RadioButton value="3" label="Option 3" overrides={iconOverrides} />
+          </GridLayout>
+        </RadioGroup>
+      </Container>
+    </ThemeProvider>
+  );
+};
+StoryRadioButtonOverrides.storyName = 'radio-button-overrides';
