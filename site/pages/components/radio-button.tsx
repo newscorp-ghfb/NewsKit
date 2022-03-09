@@ -148,17 +148,17 @@ const radioButtonPropsRows = [
 const RadioButtonComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'RadioButton',
+      title: 'Radio Button',
       description: 'TODO',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Actions & Inputs',
-      name: 'RadioButton',
+      name: 'Radio Button',
       hero: {
-        // illustration: 'components/select/select-illustration',
+        illustration: 'components/radio-button/radio-button-illustration',
       },
-      introduction: `TODO`,
+      introduction: `Radio Buttons are selection controls that are typically used in forms. They are used for exclusive selection - allowing users to select one of multiple options in a Radio Group.`,
     }}
     componentDefaultsKey="select"
     meta={{
@@ -167,17 +167,19 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/radio-button',
       figmaUrl:
-        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/NK-Web-Components?node-id=4603%3A124656',
+        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=5918%3A132664',
     }}
     componentAPI={{
       introduction: (
         <>
-          TODO
+          The Radio Button has a range of props that can be used to define an
+          appropriate experience for different use cases.
           <Block spaceStack="space080" />
           <InlineMessage>
-            There are two components exported from the package, one for use
-            within the NewsKit Form component, and one for use as a controlled
-            component.
+            There are three components exported from the package; one for use
+            within the NewsKit Form component, one for use as a controlled
+            component, and the RadioGroup component that is used to group Radio
+            Buttons together.
           </InlineMessage>
         </>
       ),

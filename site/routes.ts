@@ -330,11 +330,12 @@ export default [
             illustration: 'components/select/select-illustration',
           },
           {
-            title: 'RadioButton',
+            title: 'Radio Button',
             page: true,
             id: '/components/radio-button',
-            description: 'TODO',
-            // illustration: 'components/select/select-illustration',
+            description:
+              'Radio Buttons are selection controls that are typically used in forms',
+            illustration: 'components/radio-button/radio-button-illustration',
           },
         ],
       },
