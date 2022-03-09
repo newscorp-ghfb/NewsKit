@@ -351,7 +351,7 @@ const ENTER_EXIT_COMPONENT = [
     name: 'base',
     type: 'TransitionPresetStyles',
     description:
-      'Defines the CSS property, duration, delay and transition timing for the transition of the element.',
+      'Defines the initial style prior to starting the enter transition if a component is rendered (in the DOM) but is visibly hidden off the screen, until an action is triggered.',
   },
   {
     example: getImage(
@@ -428,13 +428,13 @@ const contentOverrides = {
 
 const VideoElement = ({url}: {url: string}) => (
   <video
+    src={url}
     controls
     controlsList="nofullscreen nodownload"
     loop
     autoPlay
     width="100%"
   >
-    <source src={url} type="video/mp4" />
     <track kind="captions" label="transition presets video" />
   </video>
 );
@@ -671,7 +671,7 @@ $\{getTransitionPresetFromTheme('backgroundColorChange')}
         </ContentSecondary>
 
         <ContentSecondary>
-          <VideoElement url="static/examples/transition-presets/background-color.mp4" />
+          <VideoElement url="static/examples/transition-presets/background-colour.mov" />
         </ContentSecondary>
 
         <ContentSecondary
@@ -749,7 +749,7 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
         </ContentSecondary>
 
         <ContentSecondary>
-          <VideoElement url="static/examples/transition-presets/background-border-color.mp4" />
+          <VideoElement url="static/examples/transition-presets/background-border-colours.mov" />
         </ContentSecondary>
 
         <ContentSecondary>
@@ -837,7 +837,7 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
         </ContentSecondary>
 
         <ContentSecondary showSeparator>
-          <VideoElement url="static/examples/transition-presets/drawer.mp4" />
+          <VideoElement url="static/examples/transition-presets/drawer-mount-unmount.mov" />
         </ContentSecondary>
       </ContentSection>
 
