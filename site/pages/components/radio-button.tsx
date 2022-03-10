@@ -186,13 +186,13 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       components: [
         {
           title: 'FormInputRadioButton',
-          summary: `The FormInputRadioButton has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.`,
+          summary: `The FormInput Radio Button has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.`,
           propsRows: commonPropsRows,
           overridesRows: commonOverridesRows,
         },
         {
           title: 'RadioButton',
-          summary: `The RadioButton has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.`,
+          summary: `The Radio Button has a range of props that can be used to define an appropriate experience for different use cases. Use this component as a controlled component, for instance where you have a custom validation mechanism.`,
           propsRows: [
             {
               name: 'name',
@@ -206,8 +206,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'RadioGroup',
-          summary:
-            'The RadioGroup has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.',
+          summary: `The Radio Group has a range of props that can be used to define an appropriate experience for different use cases. Use this component to group Radio Buttons together.`,
           propsRows: radioButtonPropsRows,
         },
       ],
