@@ -286,7 +286,7 @@ AudioFunctionDependencies) => {
   // );
 
   const onChangeSlider = useCallback(
-    ([value]: number[]) => {
+    (value: number) => {
       updateAudioTime(value);
     },
     [updateAudioTime],

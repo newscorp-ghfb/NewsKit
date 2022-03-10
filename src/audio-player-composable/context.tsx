@@ -36,7 +36,7 @@ interface AudioPlayerProviderContext {
   getSeekBarProps: () => {
     duration: number;
     trackPosition: number;
-    onChange: ([value]: number[]) => void;
+    onChange: (value: number) => void;
     buffered: TimeRanges | undefined;
   };
 }

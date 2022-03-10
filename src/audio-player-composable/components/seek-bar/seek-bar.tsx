@@ -125,7 +125,7 @@ const ThemelessSeekBar: React.FC<SeekBarProps> = ({overrides = {}}) => {
         ariaValueText={`Playback time: ${seekBarAriaValueText([
           trackPosition,
         ])} of ${seekBarAriaValueText([duration])}`}
-        onChange={onChange}
+        onChange={([value]) => onChange(value)}
         renderTrack={renderTrack}
         dataTestId="audio-slider"
         ariaDescribedBy={srOnlyForwardRewind}
