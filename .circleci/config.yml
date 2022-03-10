@@ -969,8 +969,8 @@ workflows:
             - install_deps
             - build_icons
       - build_storybook:
+          <<: *require_dep
           requires:
-            - install_deps
             - build_icons
       - build_test_e2e:
           requires:
