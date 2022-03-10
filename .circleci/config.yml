@@ -939,6 +939,7 @@ workflows:
   # (PR can be into Main or into other feature branches if using "Epics" branches[should we deploy to dev environments in epic's PR?])
   # Do we want to run this and deploy to dev envs when raising a PR to update package json version during a release? 
   pr_workflow:
+    #TODO use positive rather than negative? list all the pattern we accept? fix, bug, feat, etc. Easier to mantain and more readable
     when:
       and:
           # Won't run when merging into MAIN -  TODO TO BE TESTED
@@ -1100,7 +1101,10 @@ workflows:
           name: deploy_to_s3
           context: ncu-product-platforms-context
           requires:
-            - deploy_terraform_s3_dev
+          # TODO was it a mistake? should it be  deploy_terraform_s3_pr instead?(pr)
+          # has been working so far because pr has always finished earlier, BUT looks wrong and should be
+          # linked properly to deploy_terraform_s3_pr
+            # - deploy_terraform_s3_dev
             - build_docs_pr
             - build_storybook
       - post_pr_env_url_to_github_pr:
