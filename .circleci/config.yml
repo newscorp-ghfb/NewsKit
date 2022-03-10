@@ -998,6 +998,7 @@ workflows:
 
       - build_docs_pr_with_no_base_url:
           context: ncu-product-platforms-context
+          requires:
             - install_deps
             - build_icons
       - test_broken_links_docs:
@@ -1103,7 +1104,7 @@ workflows:
           requires:
           # TODO was it a mistake? should it be  deploy_terraform_s3_pr instead?(pr)
           # has been working so far because pr has always finished earlier, BUT looks wrong and should be
-          # linked properly to deploy_terraform_s3_pr
+          # linked properly to deploy_terraform_s3_pr instead
             # - deploy_terraform_s3_dev
             - build_docs_pr
             - build_storybook
