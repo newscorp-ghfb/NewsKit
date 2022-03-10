@@ -3689,9 +3689,9 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   border-width: 2px;
   border-radius: 50%;
   border-style: solid;
-  transition-property: background-color,border-color;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-33:hover:not(:disabled) {
@@ -4780,9 +4780,9 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   border-width: 2px;
   border-radius: 50%;
   border-style: solid;
-  transition-property: background-color,border-color;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-33:hover:not(:disabled) {
@@ -6337,9 +6337,9 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   border-width: 2px;
   border-radius: 50%;
   border-style: solid;
-  transition-property: background-color,border-color;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  transition-property: background-color,border-color,fill;
+  transition-duration: 200ms,200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3:hover:not(:disabled) {

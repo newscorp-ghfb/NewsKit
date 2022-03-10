@@ -1,19 +1,6 @@
 import React, {useCallback} from 'react';
 import {useControlled} from '../utils/hooks';
-
-type RadioGroupContextValue = {
-  name: string | undefined;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>, value: string) => void;
-  value: string | undefined;
-};
-
-export type RadioGroupProps = {
-  defaultValue?: string;
-  value?: string;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  name?: string;
-  children?: React.ReactNode;
-};
+import {RadioGroupContextValue, RadioGroupProps} from './types';
 
 const RadioGroupContext = React.createContext<
   RadioGroupContextValue | undefined

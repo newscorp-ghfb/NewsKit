@@ -1845,6 +1845,7 @@ Object {
         "transitionPreset": Array [
           "backgroundColorChange",
           "borderColorChange",
+          "iconColorChange",
         ],
       },
       "label": Object {
@@ -1868,6 +1869,7 @@ Object {
         "transitionPreset": Array [
           "backgroundColorChange",
           "borderColorChange",
+          "iconColorChange",
         ],
       },
       "label": Object {
@@ -1891,6 +1893,7 @@ Object {
         "transitionPreset": Array [
           "backgroundColorChange",
           "borderColorChange",
+          "iconColorChange",
         ],
       },
       "label": Object {

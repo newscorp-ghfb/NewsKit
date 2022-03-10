@@ -1,7 +1,6 @@
 import React from 'react';
 import {renderWithTheme} from '../../test/test-utils';
-import {RadioButton, RadioGroup} from '..';
-import {RadioGroupProps} from '../radio-group';
+import {RadioButton, RadioGroup, RadioGroupProps} from '..';
 
 const RadioButtonGroupTest = (props: RadioGroupProps) => (
   <RadioGroup name="size" {...props}>
