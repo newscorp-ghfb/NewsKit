@@ -42,6 +42,12 @@ module.exports = withMDX({
     return config;
   },
   pageExtensions: ['js', 'jsx', 'mdx', 'tsx', 'ts'],
+  // added to fix 404 redirects https://github.com/vercel/next.js/issues/16528#issuecomment-764377616
+  async exportPathMap() {
+    return {
+      '/404': {page: '/404'},
+    };
+  },
   trailingSlash: true, // added for static export https://stackoverflow.com/a/66573096/641979
   ...(() => {
     const basePath = process.env.BASE_PATH
