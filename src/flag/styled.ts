@@ -40,7 +40,7 @@ export const StyledBaseFlag = styled('div')<
   ${getResponsiveSize('maxWidth', '', '', 'maxWidth')};
   ${getResponsiveSize('maxHeight', '', '', 'maxHeight')};
   ${getResponsiveSpace('padding', '', '', 'spaceInset')};
-  ${logicalProps()}
+  ${({size}) => logicalProps(`flag.${size}`)};
 
   svg {
     ${getResponsiveSize('width', '', '', 'iconSize')};

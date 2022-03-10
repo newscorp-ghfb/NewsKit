@@ -15,6 +15,9 @@ export const StyledFlag = styled(Flag)<Omit<ButtonOrButtonLinkProps, 'size'>>`
     const cursor = loading ? 'progress' : 'pointer';
     return {cursor};
   }}
-  ${logicalProps()} // needs to be used in here as well, even though Flag uses it itself
+  ${({size}) =>
+    logicalProps(
+      `button.${size}`,
+    )}; // needs to be used in here as well, even though Flag uses it itself
   // that is because of the margin: 0; override higher up.
 `;

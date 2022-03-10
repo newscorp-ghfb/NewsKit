@@ -214,7 +214,7 @@ export const StyledMasterContainer = styled.div<StyledStackProps>`
       }),
   )}
 
-  ${logicalProps()}
+  ${logicalProps('stack')}
 `;
 
 export const StyledChildContainer = styled.div<StyledChildProps>`

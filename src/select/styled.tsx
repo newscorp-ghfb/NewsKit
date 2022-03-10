@@ -123,7 +123,7 @@ export const StyledSelectPanel = styled.div<{
       'spaceInset',
     )}
 
-  ${logicalProps()}
+  ${({$size}) => logicalProps(`select.${$size}.panel`)};
 
   ${({$width}) => `width: ${$width}px;`}
   ${({$top}) => `top: ${$top}px;`}

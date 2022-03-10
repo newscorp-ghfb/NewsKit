@@ -71,5 +71,5 @@ export const StyledInputContainer = styled.div<
       isValid: state === 'valid',
     })}
 
-  ${logicalProps()}
+  ${({componentDefaultsPath}) => logicalProps(componentDefaultsPath)};
 `;
