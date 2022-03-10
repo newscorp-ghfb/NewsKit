@@ -941,7 +941,7 @@ workflows:
   pr_workflow:
     when:
       and:
-          # Won't run when merging into MAIN
+          # Won't run when merging into MAIN -  TODO TO BE TESTED
         - not:
             matches:
               # Is pattern right? what ^ and $ are for? needed? can just be `main`?
@@ -950,6 +950,7 @@ workflows:
         - or:
           - not: 
             # Won't run on release branches. Release branches are supposed to exist only to update package.json thrugh script?
+            # TODO TO BE TESTED
             matches:
               # TODO is pattern correct? TO be REVIEW
               pattern: "^release$"
@@ -991,3 +992,119 @@ workflows:
           requires:
             - build_test_e2e
             - install_cypress
+
+      ## Visual changes approval jobs
+
+      - build_docs_pr_with_no_base_url:
+          context: ncu-product-platforms-context
+            - install_deps
+            - build_icons
+      - test_broken_links_docs:
+          name: test_broken_links_docs_pr
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+      - test_e2e_docs:
+          name: test_e2e_docs_pr
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+      - approve_publish_npm_pr:
+          type: approval
+          requires:
+            - build_components
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_pr
+      - publish_npm:
+          name: publish_npm_pr
+          context: ncu-product-platforms-context
+          publish_dev: true
+          requires:
+            - approve_publish_npm_pr
+      - no_visual_changes:
+          type: approval
+          requires:
+            - build_storybook
+      - docs_and_comps_visual_changes:
+          type: approval
+          requires:
+            - build_storybook
+      - docs_visual_changes:
+          type: approval
+          requires:
+            - build_storybook
+
+        # end visual changes approval jobs
+
+      - test_visual_comps:
+          context: ncu-product-platforms-context
+          requires:
+            - docs_and_comps_visual_changes
+      - test_visual_docs:
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+            - test_visual_comps
+      - test_visual_docs_2:
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+            - docs_visual_changes
+      - can_i_merge_checker:
+          context: ncu-product-platforms-context
+          requires:
+            - i_have_merged_applitools
+      - i_have_merged_applitools:
+          type: approval
+      - init_aws:
+          <<: *ignore_trigger_release
+          context: ncu-product-platforms-context
+      - deploy_terraform:
+          name: deploy_terraform_dns_pr
+          package: dns
+          context: ncu-product-platforms-context
+          apply: false
+          environment: dev
+          requires:
+            - init_aws
+      - deploy_terraform:
+          name: deploy_terraform_ecr_pr
+          package: ecr
+          context: ncu-product-platforms-context
+          apply: false
+          tf_env: false
+          requires:
+            - init_aws
+      - deploy_terraform:
+          name: deploy_terraform_s3_pr
+          package: s3
+          context: ncu-product-platforms-context
+          apply: false
+          tf_env: false
+          environment: pr
+          requires:
+            - init_aws
+      - build_docs:
+          name: build_docs_pr
+          context: ncu-newskit-site-pr
+          requires:
+            - install_deps
+            - build_icons
+      - push_s3:
+          name: deploy_to_s3
+          context: ncu-product-platforms-context
+          requires:
+            - deploy_terraform_s3_dev
+            - build_docs_pr
+            - build_storybook
+      - post_pr_env_url_to_github_pr:
+          name: pr_enviroment_link
+          context: ncu-product-platforms-context
+          requires:
+            - deploy_to_s3
