@@ -941,9 +941,12 @@ workflows:
   pr_workflow:
     when:
       and:
-        - not:
           # Won't run when merging into MAIN
-          - equal: [ main, << pipeline.git.branch >> ]
+        - not:
+            matches:
+              # Is pattern right? what ^ and $ are for? needed? can just be `main`?
+              pattern: "^main$"
+              value: << pipeline.git.branch >>
         - or:
           - not: 
             # Won't run on release branches. Release branches are supposed to exist only to update package.json thrugh script?
@@ -951,11 +954,11 @@ workflows:
               # TODO is pattern correct? TO be REVIEW
               pattern: "^release$"
               value: << pipeline.git.branch >>
-    # ( still issue with Epics branches? what would be run? we happy with that?)
+    # # ( still issue with Epics branches? what would be run? we happy with that?)
 
     jobs:
-      - install_deps:
-      - install_cypress:
+      - install_deps
+      - install_cypress
       - build_icons:
           requires:
             - install_deps
