@@ -6,8 +6,8 @@ export interface StyledLabelProps {
     currentTime,
     length,
   }: {
-    currentTime?: number;
-    length?: number;
+    currentTime: number;
+    length: number;
   }) => string;
   overrides?: {
     typographyPreset?: MQ<string>;
