@@ -1,6 +1,6 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {getStylePreset, styled} from '../../../utils';
-import {AudioPlayerContext} from '../../context';
+import {useAudioPlayerContext} from '../../context';
 import {withOwnTheme} from '../../../utils/with-own-theme';
 import defaults from './defaults';
 import stylePresets from './style-presets';
@@ -15,7 +15,7 @@ export const ThemelessTimeDisplay = ({
   overrides = {},
   format,
 }: StyledLabelProps) => {
-  const {getTimeDisplayProps} = useContext(AudioPlayerContext);
+  const {getTimeDisplayProps} = useAudioPlayerContext();
   const {defaultFormat, currentTime, length} = getTimeDisplayProps!();
   return (
     <TimeDisplayContainer>

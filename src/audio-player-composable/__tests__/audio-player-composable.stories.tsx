@@ -98,7 +98,7 @@ export const AudioPlayerWithTimeDisplay = () => (
     <StorybookSubHeading>with time display label default</StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player"
+      ariaLandmark="audio player 3"
     >
       <PlayPauseButton
         onClick={() => {
@@ -112,7 +112,7 @@ export const AudioPlayerWithTimeDisplay = () => (
     </StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player"
+      ariaLandmark="audio player 4"
     >
       <PlayPauseButton
         onClick={() => {
@@ -126,7 +126,7 @@ export const AudioPlayerWithTimeDisplay = () => (
     </StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player"
+      ariaLandmark="audio player 5"
     >
       <PlayPauseButton
         onClick={() => {
@@ -138,7 +138,7 @@ export const AudioPlayerWithTimeDisplay = () => (
     <StorybookSubHeading>with formatFunction</StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player"
+      ariaLandmark="audio player 6"
     >
       <PlayPauseButton
         onClick={() => {
@@ -153,7 +153,7 @@ export const AudioPlayerWithTimeDisplay = () => (
     <ThemeProvider theme={myCustomTheme}>
       <AudioPlayerComposable
         src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-        ariaLandmark="audio player"
+        ariaLandmark="audio player 7"
       >
         <PlayPauseButton
           onClick={() => {
@@ -182,28 +182,6 @@ export const AudioPlayerWithTimeDisplay = () => (
         </GridLayout>
       </AudioPlayerComposable>
     </ThemeProvider>
-    {/* <StorybookSubHeading>with overrides</StorybookSubHeading>
-    <ThemeProvider theme={myCustomTheme}>
-      <AudioPlayerComposable
-        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-        ariaLandmark="audio player"
-      >
-        <PlayPauseButton
-          onClick={() => {
-            console.log('customer click function');
-          }}
-        />
-        <TimeDisplay
-          overrides={{
-            typographyPreset: 'editorialSubheadline010',
-            stylePreset: 'customAudioPlayerLabels',
-          }}
-          format={({currentTime, length}) =>
-            formatFunction(length, currentTime)
-          }
-        />
-      </AudioPlayerComposable>
-    </ThemeProvider> */}
   </>
 );
 

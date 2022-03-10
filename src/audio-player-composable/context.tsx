@@ -1,5 +1,5 @@
 import {ReactJSXElement} from '@emotion/react/types/jsx-namespace';
-import React, {createContext, SyntheticEvent} from 'react';
+import React, {createContext, SyntheticEvent, useContext} from 'react';
 
 interface AudioPlayerProviderContext {
   id: string;
@@ -48,3 +48,5 @@ export const AudioPlayerContext = createContext<
 >({});
 
 export const AudioPlayerProvider = AudioPlayerContext.Provider;
+
+export const useAudioPlayerContext = () => useContext(AudioPlayerContext);
