@@ -38,8 +38,8 @@ interface AudioPlayerProviderContext {
   };
   getTimeDisplayProps: () => {
     defaultFormat: string;
-    currentTime?: number;
-    length?: number;
+    currentTime: number;
+    length: number;
   };
 }
 

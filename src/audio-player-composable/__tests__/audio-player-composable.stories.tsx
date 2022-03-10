@@ -6,6 +6,7 @@ import {AudioPlayerComposable} from '../audio-player-composable';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {calculateTime, formatFunction} from '../components/time-display/utils';
 import {createTheme, ThemeProvider} from '../../theme';
+import {GridLayout, GridLayoutItem} from '../../grid-layout';
 
 export default {
   title: 'NewsKit Light/audio-player-composable',
@@ -148,28 +149,40 @@ export const AudioPlayerWithTimeDisplay = () => (
         format={({currentTime, length}) => formatFunction(length, currentTime)}
       />
     </AudioPlayerComposable>
-    {/* <StorybookSubHeading>with grid</StorybookSubHeading>
-    <ThemeProvider theme={myCustomTheme}>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player"
-    >
-      <PlayPauseButton
-        onClick={() => {
-          console.log('customer click function');
-        }}
-      />
-      <GridLayout columns="1fr 1fr 0fr 0fr 0fr">
-        <GridLayoutItem justifySelf="start">
-          <TimeDisplay overrides={{typographyPreset: 'editorialSubheadline010', stylePreset:'customAudioPlayerLabels'}} />
-        </GridLayoutItem>
-        <GridLayoutItem justifySelf="end">
-          <TimeDisplay format={({length}) => calculateTime(length)} />
-        </GridLayoutItem>
-      </GridLayout>
-    </AudioPlayerComposable> 
-       </ThemeProvider>  */}
     <StorybookSubHeading>with overrides</StorybookSubHeading>
+    <ThemeProvider theme={myCustomTheme}>
+      <AudioPlayerComposable
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        ariaLandmark="audio player"
+      >
+        <PlayPauseButton
+          onClick={() => {
+            console.log('customer click function');
+          }}
+        />
+        <GridLayout columns="1fr 1fr 0fr 0fr 0fr">
+          <GridLayoutItem justifySelf="start">
+            <TimeDisplay
+              format={({currentTime}) => calculateTime(currentTime)}
+              overrides={{
+                typographyPreset: 'editorialSubheadline010',
+                stylePreset: 'customAudioPlayerLabels',
+              }}
+            />
+          </GridLayoutItem>
+          <GridLayoutItem justifySelf="end">
+            <TimeDisplay
+              format={({length}) => calculateTime(length)}
+              overrides={{
+                typographyPreset: 'editorialSubheadline010',
+                stylePreset: 'customAudioPlayerLabels',
+              }}
+            />
+          </GridLayoutItem>
+        </GridLayout>
+      </AudioPlayerComposable>
+    </ThemeProvider>
+    {/* <StorybookSubHeading>with overrides</StorybookSubHeading>
     <ThemeProvider theme={myCustomTheme}>
       <AudioPlayerComposable
         src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
@@ -190,7 +203,7 @@ export const AudioPlayerWithTimeDisplay = () => (
           }
         />
       </AudioPlayerComposable>
-    </ThemeProvider>
+    </ThemeProvider> */}
   </>
 );
 
