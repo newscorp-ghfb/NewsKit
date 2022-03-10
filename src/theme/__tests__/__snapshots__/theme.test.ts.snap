@@ -2261,7 +2261,6 @@ Object {
     },
     "currentTimeDisplay": Object {
       "stylePreset": "currentTimeDisplay",
-      "typographyPreset": "utilityButton010",
     },
   },
   "titleBar": Object {
@@ -2995,7 +2994,7 @@ Object {
       "borderColor": "{{colors.interactivePositive050}}",
     },
   },
-  "containers": Object {
+  "container": Object {
     "base": Object {
       "backgroundColor": "{{colors.transparent}}",
     },

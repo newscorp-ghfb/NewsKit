@@ -7,7 +7,7 @@ import stylePresets from './style-presets';
 import {Label} from '../../../label';
 import {StyledLabelProps} from './types';
 
-const TimeDisplayContainer = styled.div`
+const TimeDisplayContainer = styled.div<StyledLabelProps>`
   ${getStylePreset(`container`, '')}
 `;
 
