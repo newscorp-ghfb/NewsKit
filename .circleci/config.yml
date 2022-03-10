@@ -966,27 +966,21 @@ workflows:
             - install_deps
       - build_components:
           requires:
-            - install_deps
             - build_icons
       - build_storybook:
-          <<: *require_dep
           requires:
             - build_icons
       - build_test_e2e:
           requires:
-            - install_deps
             - build_icons
       - lint:
           requires:
-            - install_deps
             - build_icons
       - test_unit_comps:
           requires:
-            - install_deps
             - build_icons
       - test_unit_docs:
           requires:
-            - install_deps
             - build_icons
       - test_e2e_comps:
           context: ncu-product-platforms-context
@@ -999,7 +993,6 @@ workflows:
       - build_docs_pr_with_no_base_url:
           context: ncu-product-platforms-context
           requires:
-            - install_deps
             - build_icons
       - test_broken_links_docs:
           name: test_broken_links_docs_pr
@@ -1096,7 +1089,6 @@ workflows:
           name: build_docs_pr
           context: ncu-newskit-site-pr
           requires:
-            - install_deps
             - build_icons
       - push_s3:
           name: deploy_to_s3
