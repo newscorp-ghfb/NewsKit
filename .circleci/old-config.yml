@@ -934,57 +934,428 @@ require_dep: &require_dep
 # ========== REQUIREMENTS END   ==========
 
 workflows:
-  
-  #Jobs run on any PR workflow.
-  # (PR can be into Main or into other feature branches if using "Epics" branches[should we deploy to dev environments in epic's PR?])
-  # Do we want to run this and deploy to dev envs when raising a PR to update package json version during a release? 
-  pr_workflow:
-    when:
-      and:
-        - not:
-          # Won't run when merging into MAIN
-          - equal: [ main, << pipeline.git.branch >> ]
-        - or:
-          - not: 
-            # Won't run on release branches. Release branches are supposed to exist only to update package.json thrugh script?
-            matches:
-              # TODO is pattern correct? TO be REVIEW
-              pattern: "^release$"
-              value: << pipeline.git.branch >>
-    # ( still issue with Epics branches? what would be run? we happy with that?)
+  build_and_deploy:
 
     jobs:
+
+# TUTTI TRANNE RELEASE TRIGGER
+
+      # common jobs
       - install_deps:
+          <<: *ignore_trigger_release
       - install_cypress:
+          <<: *ignore_trigger_release
       - build_icons:
-          requires:
-            - install_deps
+          <<: *ignore_trigger_release
+          <<: *require_dep
       - build_components:
+          <<: *ignore_trigger_release
+          <<: *require_dep
           requires:
-            - install_deps
             - build_icons
       - build_storybook:
+          <<: *ignore_trigger_release
+          <<: *require_dep
           requires:
-            - install_deps
             - build_icons
       - build_test_e2e:
+          <<: *ignore_trigger_release
+          <<: *require_dep
           requires:
-            - install_deps
             - build_icons
       - lint:
+          <<: *ignore_trigger_release
+          <<: *require_dep
           requires:
-            - install_deps
             - build_icons
       - test_unit_comps:
+          <<: *ignore_trigger_release
+          <<: *require_dep
           requires:
-            - install_deps
             - build_icons
       - test_unit_docs:
+          <<: *ignore_trigger_release
+          <<: *require_dep
           requires:
-            - install_deps
             - build_icons
       - test_e2e_comps:
+          <<: *ignore_trigger_release
           context: ncu-product-platforms-context
           requires:
             - build_test_e2e
             - install_cypress
+
+# FINE TUTTI TRANNE RELEASE TRIGGER
+
+# PR INIZIO
+      # PR jobs
+      ## Visual changes approval jobs
+      - build_docs_pr_with_no_base_url:
+          <<: *only_pr
+          <<: *require_dep
+          context: ncu-product-platforms-context
+          requires:
+            - build_icons
+      - test_broken_links_docs:
+          <<: *only_pr
+          name: test_broken_links_docs_pr
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+      - test_e2e_docs:
+          <<: *only_pr
+          name: test_e2e_docs_pr
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+      - approve_publish_npm_pr:
+          type: approval
+          <<: *only_pr
+          requires:
+            - build_components
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_pr
+      - publish_npm:
+          <<: *only_pr
+          name: publish_npm_pr
+          context: ncu-product-platforms-context
+          publish_dev: true
+          requires:
+            - approve_publish_npm_pr
+      - no_visual_changes:
+          <<: *only_pr
+          type: approval
+          requires:
+            - build_storybook
+      - docs_and_comps_visual_changes:
+          <<: *only_pr
+          type: approval
+          requires:
+            - build_storybook
+      - docs_visual_changes:
+          <<: *only_pr
+          type: approval
+          requires:
+            - build_storybook
+        # end visual changes approval jobs
+      - test_visual_comps:
+          <<: *only_pr
+          context: ncu-product-platforms-context
+          requires:
+            - docs_and_comps_visual_changes
+      - test_visual_docs:
+          <<: *only_pr
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+            - test_visual_comps
+      - test_visual_docs_2:
+          <<: *only_pr
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+            - docs_visual_changes
+      - can_i_merge_checker:
+          <<: *only_pr
+          context: ncu-product-platforms-context
+          requires:
+            - i_have_merged_applitools
+      - i_have_merged_applitools:
+          <<: *only_pr
+          type: approval
+      - init_aws:
+          <<: *ignore_trigger_release
+          context: ncu-product-platforms-context
+      - deploy_terraform:
+          <<: *only_pr
+          name: deploy_terraform_dns_pr
+          package: dns
+          context: ncu-product-platforms-context
+          apply: false
+          environment: dev
+          requires:
+            - init_aws
+      - deploy_terraform:
+          <<: *only_pr
+          name: deploy_terraform_ecr_pr
+          package: ecr
+          context: ncu-product-platforms-context
+          apply: false
+          tf_env: false
+          requires:
+            - init_aws
+      - deploy_terraform:
+          <<: *only_pr
+          name: deploy_terraform_s3_pr
+          package: s3
+          context: ncu-product-platforms-context
+          apply: false
+          tf_env: false
+          environment: pr
+          requires:
+            - init_aws
+      - build_docs:
+          <<: *only_pr
+          <<: *require_dep
+          name: build_docs_pr
+          context: ncu-newskit-site-pr
+          requires:
+            - build_icons
+      - push_s3:
+          <<: *only_pr
+          name: deploy_to_s3
+          context: ncu-product-platforms-context
+          requires:
+            - deploy_terraform_s3_dev
+            - build_docs_pr
+            - build_storybook
+      - post_pr_env_url_to_github_pr:
+          <<: *only_pr
+          name: pr_enviroment_link
+          context: ncu-product-platforms-context
+          requires:
+            - deploy_to_s3
+
+# END PR
+
+#INIZIO JOBS WHEN MERGING INTO DEVELOP
+
+      # develop jobs
+      - build_docs:
+          <<: *only_develop
+          <<: *require_dep
+          name: build_docs_dev
+          context: ncu-newskit-site-dev
+          requires:
+            - build_icons
+      - test_broken_links_docs:
+          <<: *only_develop
+          name: test_broken_links_docs_dev
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_dev
+      - test_e2e_docs:
+          <<: *only_develop
+          name: test_e2e_docs_dev
+          context: ncu-newskit-site-dev
+          requires:
+            - build_docs_dev
+            - install_cypress
+      - approve_publish_npm_dev:
+          type: approval
+          <<: *only_develop
+          requires:
+            - build_components
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_dev
+      - publish_npm:
+          <<: *only_develop
+          name: publish_npm_dev
+          context: ncu-product-platforms-context
+          publish_dev: true
+          requires:
+            - approve_publish_npm_dev
+      - build_push_docker_ecr:
+          name: build_push_docker_ecr_dev
+          context: ncu-product-platforms-context
+          <<: *only_develop
+          requires:
+            - build_storybook
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_dev
+      - eks_flux_deploy:
+          name: eks_flux_deploy_dev
+          context: ncu-newskit-site-dev
+          environment: dev
+          <<: *only_develop
+          requires:
+            - build_push_docker_ecr_dev
+      - eks_kubectl_deploy:
+          name: eks_kubectl_deploy_dev
+          context: ncu-newskit-site-dev
+          environment: dev
+          <<: *only_develop
+          requires:
+            - eks_flux_deploy_dev
+      - approve_publish_docs:
+          <<: *only_develop
+          type: approval
+          requires:
+            - eks_kubectl_deploy_dev
+      - build_docs:
+          <<: *only_develop
+          name: build_docs_prod_link
+          context: ncu-newskit-site-prod
+          requires:
+            - approve_publish_docs
+      - build_push_docker_ecr:
+          name: build_push_docker_ecr_prod
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_prod_link
+      - eks_flux_deploy:
+          <<: *only_develop
+          name: eks_flux_deploy_dev_to_prod
+          context: ncu-newskit-site-prod
+          environment: prod
+          requires:
+            - build_push_docker_ecr_prod
+      - eks_kubectl_deploy:
+          <<: *only_develop
+          name: eks_kubectl_deploy_prod
+          context: ncu-newskit-site-prod
+          environment: prod
+          requires:
+            - eks_flux_deploy_dev_to_prod
+      - deploy_terraform:
+          <<: *only_develop
+          name: deploy_terraform_dns_dev
+          package: dns
+          context: ncu-product-platforms-context
+          environment: dev
+          requires:
+            - init_aws
+      - deploy_terraform:
+          <<: *only_develop
+          name: deploy_terraform_ecr_dev
+          package: ecr
+          context: ncu-product-platforms-context
+          tf_env: false
+          requires:
+            - init_aws
+      - deploy_terraform:
+          <<: *only_develop
+          name: deploy_terraform_s3_dev
+          package: s3
+          context: ncu-product-platforms-context
+          environment: dev
+          requires:
+            - deploy_terraform_s3_pr
+
+# FINE DEVELOP JOBS
+
+# INIZIO RELEASE JOBS (PER both MASTER AND DEVELOP??)
+
+      # release jobs
+      - create_release_candidate:
+          <<: *only_trigger_release
+          context: ncu-product-platforms-context
+      - build_docs:
+          <<: *only_release
+          <<: *require_dep
+          name: build_docs_stage
+          context: ncu-newskit-site-stage
+          requires:
+            - build_icons
+      - test_broken_links_docs:
+          <<: *only_release
+          name: test_broken_links_docs_stage
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_stage
+      - test_e2e_docs:
+          <<: *only_release
+          name: test_e2e_docs_stage
+          context: ncu-newskit-site-stage
+          requires:
+            - build_docs_stage
+            - install_cypress
+      - build_push_docker_ecr:
+          name: build_push_docker_ecr_release
+          context: ncu-product-platforms-context
+          docker_version: release
+          <<: *only_release
+          requires:
+            - build_storybook
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_stage
+      - eks_flux_deploy:
+          name: eks_flux_deploy_staging
+          context: ncu-newskit-site-stage
+          environment: staging
+          <<: *only_release
+          requires:
+            - build_push_docker_ecr_release
+      - eks_kubectl_deploy:
+          name: eks_kubectl_deploy_staging
+          context: ncu-newskit-site-stage
+          environment: staging
+          <<: *only_release
+          requires:
+            - eks_flux_deploy_staging
+      - deploy_terraform:
+          <<: *only_release
+          name: deploy_terraform_dns_staging
+          package: dns
+          context: ncu-product-platforms-context
+          environment: staging
+          requires:
+            - init_aws
+
+# FINE RELEASE JOBS
+
+# JOBS FOR MASTER
+
+      # main jobs
+      - build_docs:
+          <<: *only_main
+          <<: *require_dep
+          name: build_docs_prod
+          context: ncu-newskit-site-prod
+          requires:
+            - build_icons
+      - test_broken_links_docs:
+          <<: *only_main
+          name: test_broken_links_docs_prod
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_prod
+      - test_e2e_docs:
+          <<: *only_main
+          name: test_e2e_docs_prod
+          context: ncu-newskit-site-prod
+          requires:
+            - build_docs_prod
+            - install_cypress
+      - publish_npm:
+          context: ncu-product-platforms-context
+          <<: *only_main
+          requires:
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_prod
+            - build_components
+      - eks_flux_deploy:
+          name: eks_flux_deploy_prod
+          context: ncu-newskit-site-prod
+          environment: prod
+          <<: *only_main
+          requires:
+            - publish_npm
+      - eks_kubectl_deploy:
+          name: eks_kubectl_deploy_prod
+          context: ncu-newskit-site-prod
+          environment: prod
+          <<: *only_main
+          requires:
+            - eks_flux_deploy_prod
+
+
+# FINE JOBS MAIN
