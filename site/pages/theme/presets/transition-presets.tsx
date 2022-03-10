@@ -1,31 +1,23 @@
 import React from 'react';
-import {InlineMessage, IconFilledInfo, styled, P, Block} from 'newskit*';
-import {Table} from '../../../components/table';
-import {InlineCode} from '../../../components/markdown-elements';
-import {Mono} from '../../../components/flags';
-import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {Block, P, styled, IconFilledInfo, InlineMessage} from 'newskit*';
 import {ComponentPageCell} from '../../../components/layout-cells';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {InlineCode} from '../../../components/markdown-elements';
 import {LayoutProps} from '../../../components/layout';
-import {
-  Illustration,
-  getIllustrationComponent,
-} from '../../../components/illustrations/illustration-loader';
-import {Link} from '../../../components/link';
-import {Code} from '../../../components/code';
 import {MediaList} from '../../../components/media-list';
+import {Link} from '../../../components/link';
+import {Mono} from '../../../components/flags';
+import {Code} from '../../../components/code';
+import {Table} from '../../../components/table';
+import {
+  getIllustrationComponent,
+  Illustration,
+} from '../../../components/illustrations/illustration-loader';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
 } from '../../../components/content-structure';
-
-const infoIcon = (
-  <IconFilledInfo
-    overrides={{
-      size: 'iconSize020',
-    }}
-  />
-);
 
 const PROPERTIES = [
   {
@@ -428,15 +420,23 @@ const contentOverrides = {
 
 const VideoElement = ({url}: {url: string}) => (
   <video
-    src={url}
+    autoPlay
     controls
     controlsList="nofullscreen nodownload"
     loop
-    autoPlay
+    src={url}
     width="100%"
   >
-    <track kind="captions" label="transition presets video" />
+    <track kind="captions" />
   </video>
+);
+
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
 );
 
 const TransitionPresets = (layoutProps: LayoutProps) => (
@@ -661,12 +661,12 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
           }
         >
           <Code>
-            {`const Box = styled.div
+            {`const Box = styled.div\`
 $\{getStylePresetFromTheme('box')}
 $\{getTransitionPresetFromTheme('backgroundColorChange')}
   width: 100px;
   height: 100px;
-;`}
+\`;`}
           </Code>
         </ContentSecondary>
 
@@ -739,12 +739,12 @@ transitionPresets.borderColorChange = {
           }
         >
           <Code>
-            {`const Box = styled.div
+            {`const Box = styled.div\`
 $\{getStylePresetFromTheme('box')}
 $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
   width: 100px;
   height: 100px;
-;`}
+\`;`}
           </Code>
         </ContentSecondary>
 
@@ -818,13 +818,13 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
           }
         >
           <Code>
-            {` export const Drawer = styled.div
+            {`export const Drawer = styled.div\`
   $\{getTransitionPreset(
-    drawer.panel.left,
+    \`drawer.panel.left\`,
     'panel',
     'nk-drawer',
     )};
-;
+\`;
  
  <Drawer
   open
