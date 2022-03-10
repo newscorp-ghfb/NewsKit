@@ -46,9 +46,7 @@ const recordedAudioProps: AudioPlayerComposableProps = {
         }}
       />
       <TimeDisplay
-        format={({currentTime, length}) =>
-          formatFunction(length!, currentTime!)
-        }
+        format={({currentTime, length}) => formatFunction(length, currentTime)}
       />
     </>
   ),

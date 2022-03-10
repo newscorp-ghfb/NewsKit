@@ -1,7 +1,6 @@
 import {MQ} from '../../../utils';
 
 export interface StyledLabelProps {
-  length?: number;
   format?: ({
     currentTime,
     length,
