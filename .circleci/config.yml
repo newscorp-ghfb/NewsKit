@@ -938,7 +938,7 @@ workflows:
   #Jobs run on any PR workflow.
   # (PR can be into Main or into other feature branches if using "Epics" branches[should we deploy to dev environments in epic's PR?])
   # Do we want to run this and deploy to dev envs when raising a PR to update package json version during a release? 
-  pr_workflow:
+  on_pr:
     #TODO use positive rather than negative? list all the pattern we accept? fix, bug, feat, etc. Easier to mantain and more readable
     when:
       and:
@@ -948,14 +948,13 @@ workflows:
               # Is pattern right? what ^ and $ are for? needed? can just be `main`?
               pattern: "^main$"
               value: << pipeline.git.branch >>
-        - or:
-          - not: 
-            # Won't run on release branches. Release branches are supposed to exist only to update package.json thrugh script?
-            # TODO TO BE TESTED
-            matches:
-              # TODO is pattern correct? TO be REVIEW
-              pattern: "^release$"
-              value: << pipeline.git.branch >>
+        - not: 
+          # Won't run on release branches. Release branches are supposed to exist only to update package.json thrugh script?
+          # TODO TO BE TESTED
+          matches:
+            # TODO is pattern correct? TO be REVIEW
+            pattern: "^release$"
+            value: << pipeline.git.branch >>
     # # ( still issue with Epics branches? what would be run? we happy with that?)
 
     jobs:
@@ -989,7 +988,6 @@ workflows:
             - install_cypress
 
       ## Visual changes approval jobs
-
       - build_docs_pr_with_no_base_url:
           context: ncu-product-platforms-context
           requires:
@@ -1032,8 +1030,7 @@ workflows:
           type: approval
           requires:
             - build_storybook
-
-        # end visual changes approval jobs
+      # end visual changes approval jobs
 
       - test_visual_comps:
           context: ncu-product-platforms-context
@@ -1105,3 +1102,12 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_to_s3
+  
+  on_main_merge:
+    when: 
+      equal: [ main, << pipeline.git.branch >> ]
+      
+    jobs:
+      - install_deps
+
+    
