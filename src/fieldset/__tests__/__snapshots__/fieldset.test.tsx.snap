@@ -187,6 +187,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 64px;
@@ -624,6 +625,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -1061,6 +1063,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 40px;

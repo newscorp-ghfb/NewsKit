@@ -100,6 +100,7 @@ export const StyledFeedback = styled.div<
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   ${({isHover, isFocused}) =>
     (isHover || isFocused) && `z-index: ${STACKING_CONTEXT.feedback}`};
 

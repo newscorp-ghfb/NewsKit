@@ -37,6 +37,7 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   z-index: 1;
   background-color: #E0E7FF;
   border-radius: 4px;
@@ -172,6 +173,7 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -434,6 +436,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -584,6 +587,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -734,6 +738,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -887,6 +892,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -1149,6 +1155,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -1299,6 +1306,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -1449,6 +1457,7 @@ exports[`Checkbox label attributes 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -1726,6 +1735,7 @@ exports[`Checkbox label position start 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -1975,6 +1985,7 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -2235,6 +2246,7 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   z-index: 1;
   background-color: #E0E7FF;
   border-radius: 4px;
@@ -2372,6 +2384,7 @@ exports[`Checkbox render with size: large & checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 64px;
@@ -2586,6 +2599,7 @@ exports[`Checkbox render with size: large & label 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 64px;
@@ -2848,6 +2862,7 @@ exports[`Checkbox render with size: large 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 64px;
@@ -3108,6 +3123,7 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -3322,6 +3338,7 @@ exports[`Checkbox render with size: medium & label 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -3584,6 +3601,7 @@ exports[`Checkbox render with size: medium 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -3844,6 +3862,7 @@ exports[`Checkbox render with size: small & checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 40px;
@@ -4058,6 +4077,7 @@ exports[`Checkbox render with size: small & label 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 40px;
@@ -4320,6 +4340,7 @@ exports[`Checkbox render with size: small 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 40px;
@@ -4580,6 +4601,7 @@ exports[`Checkbox render with state: checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -4795,6 +4817,7 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -4978,6 +5001,7 @@ exports[`Checkbox render with state: default 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -5239,6 +5263,7 @@ exports[`Checkbox render with state: disabled 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -5388,6 +5413,7 @@ exports[`Checkbox render with state: invalid 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -5548,6 +5574,7 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -5744,6 +5771,7 @@ exports[`Checkbox render with state: valid 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -5904,6 +5932,7 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -6100,6 +6129,7 @@ exports[`Checkbox with overrides 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   width: 120px;
   height: 120px;
   -webkit-transform: translate3d(calc(120px / -2), calc(120px / -2), 0);
