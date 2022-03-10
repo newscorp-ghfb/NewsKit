@@ -23,65 +23,35 @@ const PROPERTIES = [
   {
     tokenName: 'transitionProperty',
     acceptedValues: (
-      <>
-        <Link
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties"
-          target="_blank"
-        >
-          CSS
-        </Link>
-      </>
+      <Link
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties"
+        target="_blank"
+      >
+        CSS
+      </Link>
     ),
-    example: (
-      <>
-        <Mono>transform</Mono>
-      </>
-    ),
+    example: <Mono>transform</Mono>,
     description:
       'Specifies the name of the CSS property the transition effect is for',
   },
   {
     tokenName: 'transitionDelay',
-    acceptedValues: (
-      <>
-        <Link href="/theme/motion/#duration">motionDuration</Link>
-      </>
-    ),
-    example: (
-      <>
-        <Mono>motionDuration000</Mono>
-      </>
-    ),
+    acceptedValues: <Link href="/theme/motion/#duration">motionDuration</Link>,
+    example: <Mono>motionDuration000</Mono>,
     description:
       'Specifies how many milliseconds delay for the transition effect to start',
   },
   {
     tokenName: 'transitionDuration',
-    acceptedValues: (
-      <>
-        <Link href="/theme/motion/#duration">motionDuration</Link>
-      </>
-    ),
-    example: (
-      <>
-        <Mono>motionDuration030</Mono>
-      </>
-    ),
+    acceptedValues: <Link href="/theme/motion/#duration">motionDuration</Link>,
+    example: <Mono>motionDuration030</Mono>,
     description:
       'Specifies how many milliseconds a transition effect takes to complete',
   },
   {
     tokenName: 'transitionTimingFunction',
-    acceptedValues: (
-      <>
-        <Link href="/theme/motion/#timing">motionTiming</Link>
-      </>
-    ),
-    example: (
-      <>
-        <Mono>motionTimingLinear</Mono>
-      </>
-    ),
+    acceptedValues: <Link href="/theme/motion/#timing">motionTiming</Link>,
+    example: <Mono>motionTimingLinear</Mono>,
     description: 'Specifies the speed curve of the transition effect',
   },
 ];
