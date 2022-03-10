@@ -17,6 +17,8 @@ import {
   IconFilledAccountBalance,
   IconFilledAccountTree,
   IconFilledAddCircleOutline,
+  IconFilledRemoveRedEye,
+  IconFilledStop,
   Stack,
   StackDistribution,
   styled,
@@ -30,6 +32,7 @@ import {
 } from '../../test/storybook-comps';
 import {Fieldset} from '../../fieldset';
 import {RadioGroup} from '../../radio-button';
+import {GridLayout} from '../../grid-layout';
 
 const FormInputBlock = styled(Block)``;
 
@@ -815,3 +818,466 @@ export const StoryFormFieldset = () => (
   </>
 );
 StoryFormFieldset.storyName = 'form-input-fieldset';
+
+const ShowPasswordButton = ({onClick, isVisible}) => (
+  <IconButton
+    aria-label="toggle password"
+    onClick={onClick}
+    size="small"
+    overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
+  >
+    {isVisible ? (
+      <IconFilledStop overrides={{size: 'iconSize010'}} />
+    ) : (
+      <IconFilledRemoveRedEye overrides={{size: 'iconSize010'}} />
+    )}
+  </IconButton>
+);
+
+const FormContainer = styled.div`
+  height: 700px;
+  overflow: auto;
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+`;
+
+export const StoryFormComplete = () => {
+  const [showPassword, toggleShowPassword] = React.useState(false);
+
+  const space = 'space060';
+  const spaceXs = 'space030';
+
+  return (
+    <FormContainer>
+      <Form onSubmit={data => console.log(data)}>
+        <Fieldset legend="Personal">
+          <FormInput
+            name="first-name"
+            rules={{
+              required: 'Required field',
+              minLength: {
+                value: 2,
+                message: 'Name must be at least 2 characters long',
+              },
+            }}
+          >
+            <FormInputLabel>First name</FormInputLabel>
+            <FormInputTextField />
+            <FormInputAssistiveText>
+              Enter your first name
+            </FormInputAssistiveText>
+          </FormInput>
+
+          <Block spaceStack={space} />
+
+          <FormInput
+            name="last-name"
+            rules={{
+              required: 'Required field',
+              minLength: {
+                value: 2,
+                message: 'Name must be at least 2 characters long',
+              },
+            }}
+          >
+            <FormInputLabel>Last name</FormInputLabel>
+            <FormInputTextField />
+            <FormInputAssistiveText>
+              Enter your last name
+            </FormInputAssistiveText>
+          </FormInput>
+
+          <Block spaceStack={space} />
+
+          <FormInput
+            name="country"
+            rules={{
+              required: 'Required field',
+            }}
+          >
+            <FormInputLabel>Country</FormInputLabel>
+            <FormInputSelect>
+              <SelectOption value="BG">Bulgaria</SelectOption>
+              <SelectOption value="UK">United Kingdom</SelectOption>
+              <SelectOption value="NL">The Netherlands</SelectOption>
+              <SelectOption value="DE">Germany</SelectOption>
+            </FormInputSelect>
+            <FormInputAssistiveText>
+              Enter your last name
+            </FormInputAssistiveText>
+          </FormInput>
+
+          <Block spaceStack={space} />
+
+          <FormInput
+            name="email"
+            rules={{
+              required: 'Required field',
+              pattern: /^\S+@\S+$/i,
+            }}
+          >
+            <FormInputLabel>Email</FormInputLabel>
+            <FormInputTextField type="email" />
+            <FormInputAssistiveText>Enter your email</FormInputAssistiveText>
+          </FormInput>
+
+          <Block spaceStack={space} />
+
+          <FormInput
+            name="password"
+            rules={{
+              required: 'Required field',
+              minLength: {
+                value: 8,
+                message: 'Name must be at least 8 characters long',
+              },
+            }}
+          >
+            <FormInputLabel>Password</FormInputLabel>
+            <FormInputTextField
+              type={showPassword ? 'text' : 'password'}
+              endEnhancer={
+                <ShowPasswordButton
+                  onClick={() => toggleShowPassword(!showPassword)}
+                  isVisible={showPassword}
+                />
+              }
+            />
+            <FormInputAssistiveText>Enter your password</FormInputAssistiveText>
+          </FormInput>
+        </Fieldset>
+
+        <Block spaceStack={space} />
+
+        <Fieldset legend="Gender">
+          <FormInput
+            name="sex"
+            rules={{
+              required: 'Required field',
+            }}
+          >
+            <RadioGroup>
+              <FormInputRadioButton value="male" label="Male" />
+              <Block spaceStack={spaceXs} />
+              <FormInputRadioButton value="female" label="Female" />
+              <Block spaceStack={spaceXs} />
+              <FormInputRadioButton value="3rd" label="Third Gender" />
+              <Block spaceStack={spaceXs} />
+              <FormInputRadioButton value="noSay" label="Not to say" />
+            </RadioGroup>
+            <Block spaceStack={spaceXs} />
+            <FormInputAssistiveText>Make your choice</FormInputAssistiveText>
+          </FormInput>
+        </Fieldset>
+
+        <Block spaceStack={space} />
+
+        <Fieldset legend="Interests">
+          <FormInput
+            name="interests"
+            rules={{
+              required: 'Required field',
+              validate: (value: string[]) => {
+                if (value.length < 3) {
+                  return 'Select at least 3 interests';
+                }
+
+                return true;
+              },
+            }}
+          >
+            <FormInputCheckbox value="politics" label="Politics" />
+            <Block spaceStack={spaceXs} />
+            <FormInputCheckbox value="Business" label="Business" />
+            <Block spaceStack={spaceXs} />
+            <FormInputCheckbox value="Society" label="Society" />
+            <Block spaceStack={spaceXs} />
+            <FormInputCheckbox value="Technology" label="Technology" />
+            <Block spaceStack={spaceXs} />
+            <FormInputCheckbox value="Sport" label="Sport" />
+            <Block spaceStack={spaceXs} />
+            <FormInputCheckbox value="Science" label="Science" />
+            <Block spaceStack={spaceXs} />
+
+            <FormInputAssistiveText>Make your choice</FormInputAssistiveText>
+          </FormInput>
+        </Fieldset>
+
+        <Block spaceStack={space} />
+
+        <Button type="submit">Register</Button>
+      </Form>
+    </FormContainer>
+  );
+};
+
+StoryFormComplete.storyName = 'form-complete';
+
+type FormEntry = {
+  name: string;
+  label: string;
+  assistiveText?: string;
+  type?: 'text' | 'password' | 'email' | 'select' | 'checkbox' | 'radio';
+  options?: {value: string; label: string}[];
+  rules?: Record<string, string | object>;
+};
+
+const formEntries: FormEntry[] = [
+  {
+    name: 'first-name',
+    label: 'First Name',
+    assistiveText: 'Enter your first name',
+    type: 'text',
+    rules: {
+      required: 'Required field',
+      minLength: {
+        value: 2,
+        message: 'Name must be at least 2 characters long',
+      },
+    },
+    options: [],
+  },
+  {
+    name: 'last-name',
+    label: 'Last name',
+    assistiveText: 'Enter your last name',
+    type: 'text',
+    rules: {
+      required: 'Required field',
+      minLength: {
+        value: 2,
+        message: 'Name must be at least 2 characters long',
+      },
+    },
+    options: [],
+  },
+  {
+    name: 'country',
+    label: 'Country',
+    assistiveText: 'Select your country',
+    type: 'select',
+    rules: {required: 'Required field'},
+    options: [
+      {value: 'BG', label: 'Bulgaria'},
+      {value: 'UK', label: 'United Kingdom'},
+      {value: 'NL', label: 'The Netherlands'},
+    ],
+  },
+  {
+    name: 'email',
+    label: 'Email',
+    assistiveText: 'Enter our email address',
+    type: 'email',
+    rules: {
+      required: 'Required field',
+      pattern: /^\S+@\S+$/i,
+    },
+    options: [],
+  },
+  {
+    name: 'password',
+    label: 'Password',
+    assistiveText: 'Enter password min 8 chars',
+    type: 'password',
+    rules: {
+      required: 'Required field',
+      minLength: {
+        value: 8,
+        message: 'Name must be at least 8 characters long',
+      },
+    },
+    options: [],
+  },
+  {
+    name: 'gender',
+    label: 'Gender',
+    assistiveText: 'Make your choice',
+    type: 'checkbox',
+    rules: {required: 'Required field'},
+    options: [
+      {value: 'male', label: 'Male'},
+      {value: 'female', label: 'Female'},
+      {value: '3rd', label: 'Third Gender'},
+      {value: 'noSay', label: 'Not to say'},
+    ],
+  },
+  {
+    name: 'interests',
+    label: 'Interests',
+    assistiveText: 'Select at last 3',
+    type: 'radio',
+    rules: {
+      required: 'Required field',
+      validate: (value: string[]) => {
+        if (value.length < 3) {
+          return 'Select at least 3 interests';
+        }
+
+        return true;
+      },
+    },
+    options: [
+      {value: 'Politics', label: 'Politics'},
+      {value: 'Business', label: 'Business'},
+      {value: 'Society', label: 'Society'},
+      {value: 'Technology', label: 'Technology'},
+      {value: 'Sport', label: 'Sport'},
+      {value: 'Science', label: 'Science'},
+    ],
+  },
+];
+
+type FormConfig = {
+  onSubmit: (values: Record<string, string | number>) => void;
+  inputSize: 'small' | 'medium' | 'large' | TextFieldSize;
+  space: {
+    small: string;
+    medium: string;
+    large: string;
+  };
+};
+
+const makeRadioGroup = (
+  {name, rules, options, assistiveText, label}: FormEntry,
+  config: FormConfig,
+) => (
+  <Fieldset legend={label} size={config.inputSize}>
+    <FormInput
+      name={name}
+      rules={rules}
+      size={config.inputSize as TextFieldSize}
+    >
+      <RadioGroup>
+        {options.map(option => (
+          <FormInputRadioButton
+            key={option.label}
+            value={option.value}
+            label={option.label}
+            overrides={{spaceStack: config.space.small}}
+          />
+        ))}
+      </RadioGroup>
+      <FormInputAssistiveText>{assistiveText}</FormInputAssistiveText>
+    </FormInput>
+  </Fieldset>
+);
+
+const makeCheckboxGroup = (
+  {name, rules, options, assistiveText, label}: FormEntry,
+  config: FormConfig,
+) => (
+  <Fieldset legend={label} size={config.inputSize as TextFieldSize}>
+    <FormInput name={name} rules={rules}>
+      <>
+        {options.map(option => (
+          <FormInputCheckbox
+            key={option.label}
+            value={option.value}
+            label={option.label}
+            overrides={{spaceStack: config.space.small}}
+          />
+        ))}
+      </>
+      <FormInputAssistiveText>{assistiveText}</FormInputAssistiveText>
+    </FormInput>
+  </Fieldset>
+);
+
+const makeSelect = (
+  {name, rules, label, assistiveText, options}: FormEntry,
+  config: FormConfig,
+) => (
+  <div>
+    <FormInput
+      name={name}
+      rules={rules}
+      size={config.inputSize as TextFieldSize}
+    >
+      <FormInputLabel>{label}</FormInputLabel>
+      <FormInputSelect>
+        {options.map(option => (
+          <SelectOption value={option.value}>{option.label}</SelectOption>
+        ))}
+      </FormInputSelect>
+      <FormInputAssistiveText>{assistiveText}</FormInputAssistiveText>
+    </FormInput>
+  </div>
+);
+
+const makeInput = (
+  {name, rules, label, assistiveText, ...props}: FormEntry,
+  config: FormConfig,
+) => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [showPassword, toggleShowPassword] = React.useState(false);
+  const type =
+    // eslint-disable-next-line no-nested-ternary
+    props.type === 'password'
+      ? showPassword
+        ? 'password'
+        : 'text'
+      : props.type;
+
+  const endEnhancer =
+    props.type === 'password' ? (
+      <ShowPasswordButton
+        onClick={() => toggleShowPassword(!showPassword)}
+        isVisible={showPassword}
+      />
+    ) : null;
+
+  return (
+    <div>
+      <FormInput
+        name={name}
+        rules={rules}
+        size={config.inputSize as TextFieldSize}
+      >
+        <FormInputLabel>{label}</FormInputLabel>
+        <FormInputTextField type={type} endEnhancer={endEnhancer} />
+        <FormInputAssistiveText>{assistiveText}</FormInputAssistiveText>
+      </FormInput>
+    </div>
+  );
+};
+
+const createForm = (items: FormEntry[], config: FormConfig) => (
+  <Form onSubmit={config.onSubmit}>
+    <GridLayout rowGap={config.space.medium}>
+      {items.map(entry => {
+        switch (entry.type) {
+          case 'radio':
+            return makeRadioGroup(entry, config);
+          case 'checkbox':
+            return makeCheckboxGroup(entry, config);
+          case 'select':
+            return makeSelect(entry, config);
+          default:
+            return makeInput(entry, config);
+        }
+      })}
+      <Button type="submit" size={config.inputSize}>
+        Send
+      </Button>
+    </GridLayout>
+  </Form>
+);
+
+export const StoryFormBuilder = () => (
+  <FormContainer>
+    {createForm(formEntries, {
+      onSubmit: data => console.log(data),
+      inputSize: 'small',
+      space: {
+        small: 'space030',
+        medium: 'space060',
+        large: 'space090',
+      },
+    })}
+  </FormContainer>
+);
+
+StoryFormBuilder.storyName = 'form-builder';
