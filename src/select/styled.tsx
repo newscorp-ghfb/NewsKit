@@ -1,4 +1,6 @@
+import {logicalProps} from '../utils/logical-properties';
 import {Theme} from '../theme';
+
 import {
   css,
   styled,
@@ -120,6 +122,8 @@ export const StyledSelectPanel = styled.div<{
       '',
       'spaceInset',
     )}
+
+  ${({$size}) => logicalProps(`select.${$size}.panel`)};
 
   ${({$width}) => `width: ${$width}px;`}
   ${({$top}) => `top: ${$top}px;`}

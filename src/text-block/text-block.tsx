@@ -5,6 +5,7 @@ import {
 } from '../utils/style';
 import {isInlineElement} from '../utils/inline-tags';
 import {TextBlockProps} from './types';
+import {logicalProps} from '../utils/logical-properties';
 
 const StyledTextBlock = styled.p<TextBlockProps>`
   margin: 0;
@@ -16,6 +17,7 @@ const StyledTextBlock = styled.p<TextBlockProps>`
     })};
   ${({as, noCrop}) =>
     as && !noCrop && isInlineElement(as) ? 'display: inline-block;' : ''};
+  ${logicalProps()}
 `;
 
 export {StyledTextBlock as TextBlock};
