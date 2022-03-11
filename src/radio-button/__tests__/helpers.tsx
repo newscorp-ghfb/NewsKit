@@ -4,7 +4,7 @@ export const states: [
   string,
   {checked?: boolean; state?: SwitchBaseState},
 ][] = [
-  ['default', {checked: false}],
+  ['base', {checked: false}],
   ['checked', {checked: true}],
   ['disabled', {state: 'disabled'}],
   ['checked-disabled', {checked: true, state: 'disabled'}],

@@ -13,15 +13,10 @@ export default {
       backgroundColor: '{{colors.interactiveInput030}}',
       borderColor: '{{colors.interactiveInput050}}',
     },
-    focus: {
-      backgroundColor: '{{colors.interactiveInput010}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
-    },
+    focus: {},
     'focus:hover': {
       backgroundColor: '{{colors.interactiveInput030}}',
       borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
     },
     checked: {
       backgroundColor: '{{colors.interactiveInput010}}',
@@ -35,14 +30,12 @@ export default {
     },
     'checked:focus': {
       backgroundColor: '{{colors.interactiveInput010}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
-      iconColor: '{{colors.interactiveInput050}}',
+      borderColor: '{{colors.interactiveInput040}}',
+      iconColor: '{{colors.interactiveInput040}}',
     },
     'checked:focus:hover': {
       backgroundColor: '{{colors.interactiveInput030}}',
       borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
       iconColor: '{{colors.interactiveInput050}}',
     },
     invalid: {
@@ -50,39 +43,33 @@ export default {
       borderColor: '{{colors.interactiveNegative040}}',
     },
     'invalid:focus': {
-      backgroundColor: '{{colors.interactiveInput010}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      borderColor: '{{colors.interactiveNegative040}}',
     },
     'invalid:hover': {
-      backgroundColor: '{{colors.interactiveInput030}}',
+      backgroundColor: '{{colors.interactiveNegative010}}',
       borderColor: '{{colors.interactiveNegative050}}',
     },
     'invalid:focus:hover': {
-      backgroundColor: '{{colors.interactiveInput030}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      backgroundColor: '{{colors.interactiveNegative010}}',
+      borderColor: '{{colors.interactiveNegative050}}',
     },
     'checked:invalid': {
-      backgroundColor: '{{colors.interactiveInput010}}',
+      backgroundColor: '{{colors.interactiveNegative010}}',
       borderColor: '{{colors.interactiveNegative040}}',
       iconColor: '{{colors.interactiveNegative040}}',
     },
     'checked:invalid:focus': {
-      backgroundColor: '{{colors.interactiveInput010}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      borderColor: '{{colors.interactiveNegative040}}',
       iconColor: '{{colors.interactiveNegative040}}',
     },
     'checked:invalid:hover': {
-      backgroundColor: '{{colors.interactiveInput030}}',
+      backgroundColor: '{{colors.interactiveNegative010}}',
       borderColor: '{{colors.interactiveNegative050}}',
       iconColor: '{{colors.interactiveNegative050}}',
     },
     'checked:invalid:focus:hover': {
-      backgroundColor: '{{colors.interactiveInput030}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      backgroundColor: '{{colors.interactiveNegative010}}',
+      borderColor: '{{colors.interactiveNegative050}}',
       iconColor: '{{colors.interactiveNegative050}}',
     },
     valid: {
@@ -90,18 +77,15 @@ export default {
       borderColor: '{{colors.interactivePositive040}}',
     },
     'valid:focus': {
-      backgroundColor: '{{colors.interactiveInput010}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      borderColor: '{{colors.interactivePositive050}}',
     },
     'valid:hover': {
-      backgroundColor: '{{colors.interactiveInput030}}',
+      backgroundColor: '{{colors.interactivePositive010}}',
       borderColor: '{{colors.interactivePositive050}}',
     },
     'valid:focus:hover': {
-      backgroundColor: '{{colors.interactiveInput030}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      backgroundColor: '{{colors.interactivePositive010}}',
+      borderColor: '{{colors.interactivePositive050}}',
     },
     'checked:valid': {
       backgroundColor: '{{colors.interactiveInput010}}',
@@ -109,20 +93,17 @@ export default {
       iconColor: '{{colors.interactivePositive040}}',
     },
     'checked:valid:focus': {
-      backgroundColor: '{{colors.interactiveInput010}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      borderColor: '{{colors.interactivePositive040}}',
       iconColor: '{{colors.interactivePositive040}}',
     },
     'checked:valid:hover': {
-      backgroundColor: '{{colors.interactiveInput030}}',
+      backgroundColor: '{{colors.interactivePositive010}}',
       borderColor: '{{colors.interactivePositive050}}',
       iconColor: '{{colors.interactivePositive050}}',
     },
     'checked:valid:focus:hover': {
-      backgroundColor: '{{colors.interactiveInput030}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      backgroundColor: '{{colors.interactivePositive010}}',
+      borderColor: '{{colors.interactivePositive050}}',
       iconColor: '{{colors.interactivePositive050}}',
     },
     disabled: {
@@ -144,19 +125,16 @@ export default {
     hover: {
       backgroundColor: '{{colors.interactiveInput030}}',
     },
-    focus: {
-      backgroundColor: '{{colors.interactiveInput030}}',
-    },
-    'valid:focus': {
+    'valid:focus:hover': {
       backgroundColor: '{{colors.interactivePositive010}}',
     },
     'valid:hover': {
       backgroundColor: '{{colors.interactivePositive010}}',
     },
-    'invalid:focus': {
+    'invalid:hover': {
       backgroundColor: '{{colors.interactiveNegative010}}',
     },
-    'invalid:hover': {
+    'invalid:focus:hover': {
       backgroundColor: '{{colors.interactiveNegative010}}',
     },
   },

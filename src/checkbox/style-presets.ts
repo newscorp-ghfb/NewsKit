@@ -112,17 +112,5 @@ export default {
     focus: {
       backgroundColor: '{{colors.interactiveInput030}}',
     },
-    'valid:focus': {
-      backgroundColor: '{{colors.interactivePositive010}}',
-    },
-    'valid:hover': {
-      backgroundColor: '{{colors.interactivePositive010}}',
-    },
-    'invalid:focus': {
-      backgroundColor: '{{colors.interactiveNegative010}}',
-    },
-    'invalid:hover': {
-      backgroundColor: '{{colors.interactiveNegative010}}',
-    },
   },
 } as Record<string, StylePreset>;

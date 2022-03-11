@@ -151,7 +151,7 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
             onClick={onFeedbackClick}
             data-testid={`${type}-feedback`}
             isFocused={isFocused}
-            isHover={isFeedbackHover}
+            isHover={isFeedbackHover || isLabelHover}
             path={path}
           />
           <StyledSwitch
@@ -161,7 +161,7 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
             size={size}
             isFocused={isFocused}
             isHover={isLabelHover}
-            feedbackIsVisible={isFeedbackHover || isFocused}
+            feedbackIsVisible={isLabelHover || isFeedbackHover || isFocused}
             path={path}
           >
             <CheckIcon {...(checkIconProps as SwitchBaseIconProps)} />

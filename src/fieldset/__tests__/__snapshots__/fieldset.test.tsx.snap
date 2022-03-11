@@ -202,22 +202,6 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   background-color: #E0E7FF;
 }
 
-.emotion-6:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-6:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-6:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
-}
-
-.emotion-6:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
-}
-
 .emotion-7 {
   position: absolute;
   top: 0;
@@ -640,22 +624,6 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   background-color: #E0E7FF;
 }
 
-.emotion-6:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-6:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-6:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
-}
-
-.emotion-6:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
-}
-
 .emotion-7 {
   position: absolute;
   top: 0;
@@ -1076,22 +1044,6 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 
 .emotion-6:focus:not(:disabled) {
   background-color: #E0E7FF;
-}
-
-.emotion-6:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-6:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-6:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
-}
-
-.emotion-6:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
 }
 
 .emotion-7 {
