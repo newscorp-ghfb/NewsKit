@@ -7,7 +7,7 @@ import {HeadNextSeo} from '../components/head-next-seo';
 import {Link} from '../components/link';
 
 const Custom404 = ({path, ...props}: LayoutProps) => (
-  <Layout {...props} path={`${path}-new`}>
+  <Layout {...props} hideSidebar path={`${path}-new`}>
     <HeadNextSeo
       title="404 page"
       description="Have a question about our design system? 
@@ -34,7 +34,7 @@ const Custom404 = ({path, ...props}: LayoutProps) => (
           description=" We can't seem to find what you're looking for. If you typed in the website address, please check it and try again."
         />
         <Link
-          data-test-id="back-link"
+          data-testid="back-link"
           href="/"
           aria-label="back"
           type="standalone"
@@ -44,7 +44,7 @@ const Custom404 = ({path, ...props}: LayoutProps) => (
               size: 'iconSize020',
             }}
           />
-          Back to ...
+          Go back to the homepage
         </Link>
       </ContentSection>
     </ComponentPageCell>
