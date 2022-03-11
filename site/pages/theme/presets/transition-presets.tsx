@@ -44,7 +44,7 @@ const PROPERTIES = [
   {
     tokenName: 'transitionDuration',
     acceptedValues: <Link href="/theme/motion/#duration">motionDuration</Link>,
-    example: <Mono>motionDuration030</Mono>,
+    example: <Mono>motionDuration020</Mono>,
     description:
       'Specifies how many milliseconds a transition effect takes to complete',
   },
