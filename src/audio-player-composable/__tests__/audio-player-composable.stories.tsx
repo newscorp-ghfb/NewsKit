@@ -4,7 +4,7 @@ import {PlayPauseButton} from '../components/play-pause-button/play-pause-button
 import {TimeDisplay} from '../components/time-display/time-display';
 import {AudioPlayerComposable} from '../audio-player-composable';
 import {StorybookSubHeading} from '../../test/storybook-comps';
-import {calculateTime, formatFunction} from '../components/time-display/utils';
+import {calculateTime} from '../components/time-display/utils';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {SeekBar} from '../components/seek-bar/seek-bar';
 import {createTheme, ThemeProvider} from '../../theme';
@@ -176,23 +176,6 @@ export const AudioPlayerWithTimeDisplay = () => (
       />
       <TimeDisplay format={({duration}) => calculateTime(duration)} />
     </AudioPlayerComposable>
-    <StorybookSubHeading>with formatFunction</StorybookSubHeading>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player 6"
-    >
-      <PlayPauseButton
-        onClick={() => {
-          console.log('customer click function');
-        }}
-      />
-      <TimeDisplay
-        // format={formatFunction}
-        format={({currentTime, duration}) =>
-          formatFunction({duration, currentTime})
-        }
-      />
-    </AudioPlayerComposable>
     <StorybookSubHeading>with overrides in grid</StorybookSubHeading>
     <ThemeProvider theme={myCustomThemeTimeDisplay}>
       <AudioPlayerComposable
@@ -209,19 +192,19 @@ export const AudioPlayerWithTimeDisplay = () => (
           <GridLayoutItem justifySelf="start">
             <TimeDisplay
               format={({currentTime}) => calculateTime(currentTime)}
-              // overrides={{
-              //   typographyPreset: 'editorialSubheadline010',
-              //   stylePreset: 'customAudioPlayerLabels',
-              // }}
+              overrides={{
+                typographyPreset: 'editorialSubheadline010',
+                stylePreset: 'customAudioPlayerLabels',
+              }}
             />
           </GridLayoutItem>
           <GridLayoutItem justifySelf="end">
             <TimeDisplay
               format={({duration}) => calculateTime(duration)}
-              // overrides={{
-              //   typographyPreset: 'editorialSubheadline010',
-              //   stylePreset: 'customAudioPlayerLabels',
-              // }}
+              overrides={{
+                typographyPreset: 'editorialSubheadline010',
+                stylePreset: 'customAudioPlayerLabels',
+              }}
             />
           </GridLayoutItem>
         </GridLayout>
