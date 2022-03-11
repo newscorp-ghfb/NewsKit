@@ -3737,7 +3737,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-33:checked:invalid:not(:disabled) {
-  background-color: #FFE6E5;
+  background-color: #FAFAFA;
   border-color: #D20600;
 }
 
@@ -4789,7 +4789,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-33:checked:invalid:not(:disabled) {
-  background-color: #FFE6E5;
+  background-color: #FAFAFA;
   border-color: #D20600;
 }
 
@@ -6307,7 +6307,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
-  background-color: #FFE6E5;
+  background-color: #FAFAFA;
   border-color: #D20600;
 }
 

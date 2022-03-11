@@ -54,7 +54,7 @@ export default {
       borderColor: '{{colors.interactiveNegative050}}',
     },
     'checked:invalid': {
-      backgroundColor: '{{colors.interactiveNegative010}}',
+      backgroundColor: '{{colors.interactiveInput010}}',
       borderColor: '{{colors.interactiveNegative040}}',
       iconColor: '{{colors.interactiveNegative040}}',
     },
