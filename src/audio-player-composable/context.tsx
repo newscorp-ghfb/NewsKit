@@ -19,10 +19,8 @@ interface AudioPlayerProviderContext {
     onTimeUpdate: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
     onWaiting: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
     onEnded: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
+    onProgress: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
   };
-  duration: number;
-  trackPositionArr: number[];
-  onChangeSlider: (values: number[]) => void;
   // Getter functions
 
   getPlayPauseButtonProps: (args: {
@@ -40,6 +38,12 @@ interface AudioPlayerProviderContext {
     defaultFormat: string;
     currentTime: number;
     length: number;
+  };
+  getSeekBarProps: () => {
+    duration: number;
+    trackPosition: number;
+    onChange: (value: number) => void;
+    buffered: TimeRanges | undefined;
   };
 }
 

@@ -1,18 +1,57 @@
 /* eslint-disable no-console */
 import * as React from 'react';
-import {PlayPauseButton} from '../components/play-pause-button';
+import {PlayPauseButton} from '../components/play-pause-button/play-pause-button';
 import {TimeDisplay} from '../components/time-display/time-display';
 import {AudioPlayerComposable} from '../audio-player-composable';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {calculateTime, formatFunction} from '../components/time-display/utils';
-import {createTheme, ThemeProvider} from '../../theme';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
+import {SeekBar} from '../components/seek-bar/seek-bar';
+import {createTheme, ThemeProvider} from '../../theme';
+import {styled} from '../../utils';
+
+const AudioPlayerContainer = styled.div<{dark?: boolean}>`
+  border: solid 1px red;
+  max-width: 1156px;
+  margin-left: auto;
+  margin-right: auto;
+  ${({dark}) => (dark ? 'background: #000' : null)}
+`;
+
+const myCustomTheme = createTheme({
+  name: 'my-custom-audio-player-theme',
+  overrides: {
+    stylePresets: {
+      customAudioPlayerThumb: {
+        base: {
+          backgroundColor: '#f6807e',
+          borderRadius: '50%',
+        },
+      },
+      customAudioPlayerSeekBarTrack: {
+        base: {
+          backgroundColor: 'red',
+        },
+      },
+      customAudioPlayerSeekBarIndicator: {
+        base: {
+          backgroundColor: 'yellow',
+        },
+      },
+      customAudioPlayerSeekBarBuffering: {
+        base: {
+          backgroundColor: 'green',
+        },
+      },
+    },
+  },
+});
 
 export default {
   title: 'NewsKit Light/audio-player-composable',
   component: () => 'None',
 };
-const myCustomTheme = createTheme({
+const myCustomThemeTimeDisplay = createTheme({
   name: 'my-custom-audio-player-theme',
   overrides: {
     stylePresets: {
@@ -150,7 +189,7 @@ export const AudioPlayerWithTimeDisplay = () => (
       />
     </AudioPlayerComposable>
     <StorybookSubHeading>with overrides</StorybookSubHeading>
-    <ThemeProvider theme={myCustomTheme}>
+    <ThemeProvider theme={myCustomThemeTimeDisplay}>
       <AudioPlayerComposable
         src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
         ariaLandmark="audio player 7"
@@ -185,4 +224,58 @@ export const AudioPlayerWithTimeDisplay = () => (
   </>
 );
 
-AudioPlayerWithTimeDisplay.storyName = 'audio-player-with-time-display';
+export const AudioPlayerSeekBar = () => (
+  <AudioPlayerComposable
+    src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    ariaLandmark="audio player 3"
+  >
+    <SeekBar />
+    <PlayPauseButton
+      onClick={() => {
+        console.log('customer click function');
+      }}
+    />
+  </AudioPlayerComposable>
+);
+
+AudioPlayerSeekBar.storyName = 'audio-player-seek-bar';
+
+export const AudioPlayerSeekBarWithOverrides = () => (
+  <AudioPlayerContainer dark>
+    <ThemeProvider theme={myCustomTheme}>
+      <AudioPlayerComposable
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        ariaLandmark="audio player 4"
+      >
+        <SeekBar
+          overrides={{
+            slider: {
+              track: {
+                stylePreset: 'customAudioPlayerSeekBarTrack',
+                size: 'sizing030',
+              },
+              indicator: {
+                stylePreset: 'customAudioPlayerSeekBarIndicator',
+              },
+              thumb: {
+                stylePreset: 'customAudioPlayerThumb',
+                size: 'sizing050',
+              },
+            },
+            buffering: {
+              stylePreset: 'customAudioPlayerSeekBarBuffering',
+            },
+          }}
+        />
+        <PlayPauseButton
+          onClick={() => {
+            console.log('customer click function');
+          }}
+        />
+      </AudioPlayerComposable>
+    </ThemeProvider>
+  </AudioPlayerContainer>
+);
+
+AudioPlayerSeekBarWithOverrides.storyName =
+  'audio-player-seek-bar-with-overrides';

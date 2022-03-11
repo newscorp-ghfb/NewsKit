@@ -56,6 +56,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 64px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -64,7 +65,6 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 64px;
 }
 
 .emotion-2 svg {
@@ -476,6 +476,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -484,7 +485,6 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-2 svg {
@@ -896,6 +896,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 32px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -904,7 +905,6 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 32px;
 }
 
 .emotion-2 svg {
