@@ -56,32 +56,19 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
           </InlineMessage>
         </ContentPrimary>
       </ContentSection>
-
-      <ContentSection sectionName="form">
+      <ContentSection sectionName="Contact NewsKit">
         <ContentPrimary
-          headline="Form"
-          description="Send an enquiry to the NewsKit team who will respond as quickly as possible."
           showSeparator
-        >
-          <script
-            src="https://static.airtable.com/js/embed/embed_snippet_v1.js"
-            async
-          />
-          <iframe
-            src="https://airtable.com/embed/shrbfsBAPlQrW4MZ5?backgroundColor=orange"
-            frameBorder="0"
-            width="100%"
-            height="771"
-            title="Design System Feedback"
-            style={{
-              background: 'transparent',
-              border: '1px solid #ccc',
-              borderRadius: '12px',
-            }}
-          />
-        </ContentPrimary>
+          headline="Contact NewsKit Design System"
+          description={
+            <>
+              For any enquiries related to to Newskit, please send an email to:{' '}
+              <Link href="mailto:newskit@news.co.uk">newskit@news.co.uk</Link>.
+              Our team will respond as quickly as possible.
+            </>
+          }
+        />
       </ContentSection>
-
       <ContentSection sectionName="contact newsUK">
         <ContentPrimary
           headline="Contact NewsUK"

@@ -1,3 +1,4 @@
+import {logicalProps} from '../utils/logical-properties';
 import {
   styled,
   getStylePreset,
@@ -36,9 +37,10 @@ export const StyledBaseFlag = styled('div')<
     )(props)};
   ${getResponsiveSize('width', '', '', 'width')};
   ${getResponsiveSize('height', '', '', 'height')};
-  ${getResponsiveSpace('padding', '', '', 'spaceInset')};
   ${getResponsiveSize('maxWidth', '', '', 'maxWidth')};
   ${getResponsiveSize('maxHeight', '', '', 'maxHeight')};
+  ${getResponsiveSpace('padding', '', '', 'spaceInset')};
+  ${({size}) => logicalProps(`flag.${size}`)};
 
   svg {
     ${getResponsiveSize('width', '', '', 'iconSize')};
