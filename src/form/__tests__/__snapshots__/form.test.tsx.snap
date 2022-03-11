@@ -3439,7 +3439,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -3448,8 +3448,20 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-24:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-24:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-24:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-24:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-24:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-25 {
@@ -3470,9 +3482,9 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -3485,15 +3497,20 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-25:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-25:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:checked:not(:disabled) {
@@ -3507,25 +3524,32 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-25:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-25:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-25:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-25:invalid:focus:hover:not(:disabled) {
+.emotion-25:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-25:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:checked:invalid:not(:disabled) {
@@ -3534,8 +3558,9 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-25:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:checked:invalid:hover:not(:disabled) {
@@ -3545,19 +3570,25 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 
 .emotion-25:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-25:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-25:valid:focus:hover:not(:disabled) {
+.emotion-25:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-25:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:checked:valid:not(:disabled) {
@@ -3566,8 +3597,9 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-25:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:checked:valid:hover:not(:disabled) {
@@ -3577,10 +3609,12 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 
 .emotion-25:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -4491,7 +4525,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -4500,8 +4534,20 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-24:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-24:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-24:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-24:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-24:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-25 {
@@ -4522,9 +4568,9 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -4537,15 +4583,20 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-25:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-25:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:checked:not(:disabled) {
@@ -4559,25 +4610,32 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-25:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-25:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-25:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-25:invalid:focus:hover:not(:disabled) {
+.emotion-25:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-25:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:checked:invalid:not(:disabled) {
@@ -4586,8 +4644,9 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-25:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:checked:invalid:hover:not(:disabled) {
@@ -4597,19 +4656,25 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 
 .emotion-25:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-25:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-25:valid:focus:hover:not(:disabled) {
+.emotion-25:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-25:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:checked:valid:not(:disabled) {
@@ -4618,8 +4683,9 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-25:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:checked:valid:hover:not(:disabled) {
@@ -4629,10 +4695,12 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 
 .emotion-25:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-25:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -5885,7 +5953,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5894,8 +5962,20 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -5916,9 +5996,9 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -5931,15 +6011,20 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -5953,25 +6038,32 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:focus:hover:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
@@ -5980,8 +6072,9 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -5991,19 +6084,25 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:focus:hover:not(:disabled) {
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:not(:disabled) {
@@ -6012,8 +6111,9 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -6023,10 +6123,12 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 

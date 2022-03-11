@@ -40,7 +40,7 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
   opacity: 0.7;
   z-index: 1;
   background-color: #E0E7FF;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -67,9 +67,9 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
-  border-color: #3358CC;
-  border-width: 1px;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   z-index: 2;
@@ -175,7 +175,7 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -184,8 +184,20 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -206,9 +218,9 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -221,15 +233,20 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -243,25 +260,32 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:focus:hover:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
@@ -270,8 +294,9 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -281,19 +306,25 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:focus:hover:not(:disabled) {
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:not(:disabled) {
@@ -302,8 +333,9 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -313,10 +345,12 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -422,7 +456,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -431,8 +465,20 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -455,7 +501,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   align-items: center;
   background-color: transparent;
   border-color: #F4F4F4;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -557,7 +603,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -566,8 +612,20 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -590,7 +648,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
   align-items: center;
   background-color: transparent;
   border-color: #F4F4F4;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -693,7 +751,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
   opacity: 0.7;
   z-index: 1;
   background-color: #E0E7FF;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -720,9 +778,9 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
-  border-color: #3358CC;
-  border-width: 1px;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   z-index: 2;
@@ -828,7 +886,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -837,8 +895,20 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -859,9 +929,9 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -874,15 +944,20 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -896,25 +971,32 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:focus:hover:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
@@ -923,8 +1005,9 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -934,19 +1017,25 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:focus:hover:not(:disabled) {
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:not(:disabled) {
@@ -955,8 +1044,9 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -966,10 +1056,12 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -1075,7 +1167,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -1084,8 +1176,20 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -1108,7 +1212,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   align-items: center;
   background-color: transparent;
   border-color: #F4F4F4;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -1210,7 +1314,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -1219,8 +1323,20 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -1243,7 +1359,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   align-items: center;
   background-color: transparent;
   border-color: #F4F4F4;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -1345,7 +1461,7 @@ exports[`Checkbox label attributes 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -1354,8 +1470,20 @@ exports[`Checkbox label attributes 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -1376,9 +1504,9 @@ exports[`Checkbox label attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -1391,15 +1519,20 @@ exports[`Checkbox label attributes 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -1413,25 +1546,32 @@ exports[`Checkbox label attributes 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:focus:hover:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
@@ -1440,8 +1580,9 @@ exports[`Checkbox label attributes 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -1451,19 +1592,25 @@ exports[`Checkbox label attributes 1`] = `
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:focus:hover:not(:disabled) {
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:not(:disabled) {
@@ -1472,8 +1619,9 @@ exports[`Checkbox label attributes 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -1483,10 +1631,12 @@ exports[`Checkbox label attributes 1`] = `
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -1607,7 +1757,7 @@ exports[`Checkbox label position start 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -1616,8 +1766,20 @@ exports[`Checkbox label position start 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-3:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-4 {
@@ -1638,9 +1800,9 @@ exports[`Checkbox label position start 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -1653,15 +1815,20 @@ exports[`Checkbox label position start 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-4:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-4:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-4:checked:not(:disabled) {
@@ -1675,25 +1842,32 @@ exports[`Checkbox label position start 1`] = `
 }
 
 .emotion-4:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-4:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-4:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-4:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-4:invalid:focus:hover:not(:disabled) {
+.emotion-4:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-4:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-4:checked:invalid:not(:disabled) {
@@ -1702,8 +1876,9 @@ exports[`Checkbox label position start 1`] = `
 }
 
 .emotion-4:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-4:checked:invalid:hover:not(:disabled) {
@@ -1713,19 +1888,25 @@ exports[`Checkbox label position start 1`] = `
 
 .emotion-4:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-4:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-4:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-4:valid:focus:hover:not(:disabled) {
+.emotion-4:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-4:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-4:checked:valid:not(:disabled) {
@@ -1734,8 +1915,9 @@ exports[`Checkbox label position start 1`] = `
 }
 
 .emotion-4:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-4:checked:valid:hover:not(:disabled) {
@@ -1745,10 +1927,12 @@ exports[`Checkbox label position start 1`] = `
 
 .emotion-4:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-4:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -1841,7 +2025,7 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -1850,8 +2034,20 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -1872,9 +2068,9 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -1887,15 +2083,20 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -1909,25 +2110,32 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:focus:hover:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
@@ -1936,8 +2144,9 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -1947,19 +2156,25 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:focus:hover:not(:disabled) {
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:not(:disabled) {
@@ -1968,8 +2183,9 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -1979,10 +2195,12 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -2086,14 +2304,30 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   left: 50%;
   opacity: 0.7;
   z-index: 1;
-  background-color: #E0E7FF;
-  border-radius: 4px;
+  background-color: transparent;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -2114,9 +2348,9 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
-  border-width: 1px;
+  border-width: 4px;
   border-radius: 4px;
   border-style: solid;
   z-index: 2;
@@ -2130,7 +2364,9 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-4 {
@@ -2224,7 +2460,7 @@ exports[`Checkbox render with size: large & checked 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 64px;
   height: 64px;
   -webkit-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
@@ -2233,8 +2469,20 @@ exports[`Checkbox render with size: large & checked 1`] = `
   transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -2257,7 +2505,7 @@ exports[`Checkbox render with size: large & checked 1`] = `
   align-items: center;
   background-color: #3358CC;
   border-color: #3358CC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -2275,8 +2523,9 @@ exports[`Checkbox render with size: large & checked 1`] = `
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:not(:disabled) {
@@ -2423,7 +2672,7 @@ exports[`Checkbox render with size: large & label 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 64px;
   height: 64px;
   -webkit-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
@@ -2432,8 +2681,20 @@ exports[`Checkbox render with size: large & label 1`] = `
   transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -2454,9 +2715,9 @@ exports[`Checkbox render with size: large & label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -2469,15 +2730,20 @@ exports[`Checkbox render with size: large & label 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -2491,25 +2757,32 @@ exports[`Checkbox render with size: large & label 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:focus:hover:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
@@ -2518,8 +2791,9 @@ exports[`Checkbox render with size: large & label 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -2529,19 +2803,25 @@ exports[`Checkbox render with size: large & label 1`] = `
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:focus:hover:not(:disabled) {
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:not(:disabled) {
@@ -2550,8 +2830,9 @@ exports[`Checkbox render with size: large & label 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -2561,10 +2842,12 @@ exports[`Checkbox render with size: large & label 1`] = `
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -2670,7 +2953,7 @@ exports[`Checkbox render with size: large 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 64px;
   height: 64px;
   -webkit-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
@@ -2679,8 +2962,20 @@ exports[`Checkbox render with size: large 1`] = `
   transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -2701,9 +2996,9 @@ exports[`Checkbox render with size: large 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -2716,15 +3011,20 @@ exports[`Checkbox render with size: large 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -2738,25 +3038,32 @@ exports[`Checkbox render with size: large 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:focus:hover:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
@@ -2765,8 +3072,9 @@ exports[`Checkbox render with size: large 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -2776,19 +3084,25 @@ exports[`Checkbox render with size: large 1`] = `
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:focus:hover:not(:disabled) {
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:not(:disabled) {
@@ -2797,8 +3111,9 @@ exports[`Checkbox render with size: large 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -2808,10 +3123,12 @@ exports[`Checkbox render with size: large 1`] = `
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -2915,7 +3232,7 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -2924,8 +3241,20 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -2948,7 +3277,7 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   align-items: center;
   background-color: #3358CC;
   border-color: #3358CC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -2966,8 +3295,9 @@ exports[`Checkbox render with size: medium & checked 1`] = `
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:not(:disabled) {
@@ -3114,7 +3444,7 @@ exports[`Checkbox render with size: medium & label 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -3123,8 +3453,20 @@ exports[`Checkbox render with size: medium & label 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -3145,9 +3487,9 @@ exports[`Checkbox render with size: medium & label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -3160,15 +3502,20 @@ exports[`Checkbox render with size: medium & label 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -3182,25 +3529,32 @@ exports[`Checkbox render with size: medium & label 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:focus:hover:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
@@ -3209,8 +3563,9 @@ exports[`Checkbox render with size: medium & label 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -3220,19 +3575,25 @@ exports[`Checkbox render with size: medium & label 1`] = `
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:focus:hover:not(:disabled) {
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:not(:disabled) {
@@ -3241,8 +3602,9 @@ exports[`Checkbox render with size: medium & label 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -3252,10 +3614,12 @@ exports[`Checkbox render with size: medium & label 1`] = `
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -3361,7 +3725,7 @@ exports[`Checkbox render with size: medium 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -3370,8 +3734,20 @@ exports[`Checkbox render with size: medium 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -3392,9 +3768,9 @@ exports[`Checkbox render with size: medium 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -3407,15 +3783,20 @@ exports[`Checkbox render with size: medium 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -3429,25 +3810,32 @@ exports[`Checkbox render with size: medium 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:focus:hover:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
@@ -3456,8 +3844,9 @@ exports[`Checkbox render with size: medium 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -3467,19 +3856,25 @@ exports[`Checkbox render with size: medium 1`] = `
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:focus:hover:not(:disabled) {
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:not(:disabled) {
@@ -3488,8 +3883,9 @@ exports[`Checkbox render with size: medium 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -3499,10 +3895,12 @@ exports[`Checkbox render with size: medium 1`] = `
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -3606,7 +4004,7 @@ exports[`Checkbox render with size: small & checked 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
@@ -3615,8 +4013,20 @@ exports[`Checkbox render with size: small & checked 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -3639,7 +4049,7 @@ exports[`Checkbox render with size: small & checked 1`] = `
   align-items: center;
   background-color: #3358CC;
   border-color: #3358CC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -3657,8 +4067,9 @@ exports[`Checkbox render with size: small & checked 1`] = `
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:not(:disabled) {
@@ -3805,7 +4216,7 @@ exports[`Checkbox render with size: small & label 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
@@ -3814,8 +4225,20 @@ exports[`Checkbox render with size: small & label 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -3836,9 +4259,9 @@ exports[`Checkbox render with size: small & label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -3851,15 +4274,20 @@ exports[`Checkbox render with size: small & label 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -3873,25 +4301,32 @@ exports[`Checkbox render with size: small & label 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:focus:hover:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
@@ -3900,8 +4335,9 @@ exports[`Checkbox render with size: small & label 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -3911,19 +4347,25 @@ exports[`Checkbox render with size: small & label 1`] = `
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:focus:hover:not(:disabled) {
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:not(:disabled) {
@@ -3932,8 +4374,9 @@ exports[`Checkbox render with size: small & label 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -3943,10 +4386,12 @@ exports[`Checkbox render with size: small & label 1`] = `
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -4052,7 +4497,7 @@ exports[`Checkbox render with size: small 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
@@ -4061,8 +4506,20 @@ exports[`Checkbox render with size: small 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -4083,9 +4540,9 @@ exports[`Checkbox render with size: small 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -4098,15 +4555,20 @@ exports[`Checkbox render with size: small 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -4120,25 +4582,32 @@ exports[`Checkbox render with size: small 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:focus:hover:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
@@ -4147,8 +4616,9 @@ exports[`Checkbox render with size: small 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -4158,19 +4628,25 @@ exports[`Checkbox render with size: small 1`] = `
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:focus:hover:not(:disabled) {
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:not(:disabled) {
@@ -4179,8 +4655,9 @@ exports[`Checkbox render with size: small 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -4190,10 +4667,12 @@ exports[`Checkbox render with size: small 1`] = `
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -4297,7 +4776,7 @@ exports[`Checkbox render with state: checked 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -4306,8 +4785,20 @@ exports[`Checkbox render with state: checked 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -4330,7 +4821,7 @@ exports[`Checkbox render with state: checked 1`] = `
   align-items: center;
   background-color: #3358CC;
   border-color: #3358CC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -4348,8 +4839,9 @@ exports[`Checkbox render with state: checked 1`] = `
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:not(:disabled) {
@@ -4497,7 +4989,7 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -4506,8 +4998,20 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -4530,7 +5034,7 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   align-items: center;
   background-color: #F4F4F4;
   border-color: #F4F4F4;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -4665,7 +5169,7 @@ exports[`Checkbox render with state: default 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -4674,8 +5178,20 @@ exports[`Checkbox render with state: default 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -4696,9 +5212,9 @@ exports[`Checkbox render with state: default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -4711,15 +5227,20 @@ exports[`Checkbox render with state: default 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
 }
 
 .emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -4733,25 +5254,32 @@ exports[`Checkbox render with state: default 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #3358CC;
   border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:focus:hover:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:not(:disabled) {
@@ -4760,8 +5288,9 @@ exports[`Checkbox render with state: default 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -4771,19 +5300,25 @@ exports[`Checkbox render with state: default 1`] = `
 
 .emotion-3:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:focus:hover:not(:disabled) {
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:not(:disabled) {
@@ -4792,8 +5327,9 @@ exports[`Checkbox render with state: default 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -4803,10 +5339,12 @@ exports[`Checkbox render with state: default 1`] = `
 
 .emotion-3:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #0A782A;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -4911,7 +5449,7 @@ exports[`Checkbox render with state: disabled 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -4920,8 +5458,20 @@ exports[`Checkbox render with state: disabled 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -4944,7 +5494,7 @@ exports[`Checkbox render with state: disabled 1`] = `
   align-items: center;
   background-color: transparent;
   border-color: #F4F4F4;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -5045,7 +5595,7 @@ exports[`Checkbox render with state: invalid 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5054,8 +5604,20 @@ exports[`Checkbox render with state: invalid 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -5076,9 +5638,9 @@ exports[`Checkbox render with state: invalid 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #D20600;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -5091,11 +5653,14 @@ exports[`Checkbox render with state: invalid 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #A60100;
 }
 
 .emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #A60100;
+  border-width: 4px;
 }
 
 .emotion-4 {
@@ -5190,7 +5755,7 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5199,8 +5764,20 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -5223,7 +5800,7 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   align-items: center;
   background-color: #D20600;
   border-color: #D20600;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -5241,8 +5818,9 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-4 {
@@ -5371,7 +5949,7 @@ exports[`Checkbox render with state: valid 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5380,8 +5958,20 @@ exports[`Checkbox render with state: valid 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -5402,9 +5992,9 @@ exports[`Checkbox render with state: valid 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #148F39;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -5417,11 +6007,14 @@ exports[`Checkbox render with state: valid 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #0A782A;
 }
 
 .emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
   border-color: #0A782A;
+  border-width: 4px;
 }
 
 .emotion-4 {
@@ -5516,7 +6109,7 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   left: 50%;
   opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5525,8 +6118,20 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -5549,7 +6154,7 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   align-items: center;
   background-color: #148F39;
   border-color: #148F39;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   transition-property: background-color,border-color;
@@ -5567,8 +6172,9 @@ exports[`Checkbox render with state: valid-checked 1`] = `
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #2B4AAB;
+  border-width: 4px;
 }
 
 .emotion-4 {
