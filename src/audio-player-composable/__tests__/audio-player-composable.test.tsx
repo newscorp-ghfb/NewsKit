@@ -89,7 +89,9 @@ const recordedSeekBarOverrides: AudioPlayerComposableProps = {
         }}
       />
       <TimeDisplay
-        format={({currentTime, length}) => formatFunction(length, currentTime)}
+        format={({currentTime, duration}) =>
+          formatFunction({currentTime, duration})
+        }
       />
     </>
   ),

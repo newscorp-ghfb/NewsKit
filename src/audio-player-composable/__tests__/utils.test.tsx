@@ -1,4 +1,4 @@
-import {formatFunction} from '../components/time-display/utils';
+import {calculateTime, formatFunction} from '../components/time-display/utils';
 import {
   formatTrackData,
   seekBarAriaValueText,
@@ -34,12 +34,23 @@ test('formatDurationTime', () => {
 });
 
 test('formatFunction', () => {
-  expect(formatFunction(3.0, 372.0)).toEqual('00:03/06:12 ');
-  expect(formatFunction(1000.0, 5.0)).toEqual('16:40/00:05 ');
-  expect(formatFunction(23.0, 109000.0)).toEqual('00:23/30:16:40 ');
-  expect(formatFunction(120, 109000.0)).toEqual('02:00/30:16:40 ');
-  expect(formatFunction(4100, 109000.0)).toEqual('01:08:20/30:16:40 ');
-  expect(formatFunction(109000.0, 109000.0)).toEqual('30:16:40/30:16:40 ');
+  const currentTime = 3.0;
+  const duration = 372.0;
+  expect(formatFunction({currentTime, duration})).toEqual('00:03/06:12 ');
+  // expect(formatFunction({currentTime, duration})).toEqual('16:40/00:05 ');
+  // expect(formatFunction(23.0, 109000.0)).toEqual('00:23/30:16:40 ');
+  // expect(formatFunction(120, 109000.0)).toEqual('02:00/30:16:40 ');
+  // expect(formatFunction(4100, 109000.0)).toEqual('01:08:20/30:16:40 ');
+  // expect(formatFunction(109000.0, 109000.0)).toEqual('30:16:40/30:16:40 ');
+});
+
+test('calculateTime', () => {
+  expect(calculateTime(109000.0)).toEqual('30:16:40');
+  // expect(formatFunction({currentTime, duration})).toEqual('16:40/00:05 ');
+  // expect(formatFunction(23.0, 109000.0)).toEqual('00:23/30:16:40 ');
+  // expect(formatFunction(120, 109000.0)).toEqual('02:00/30:16:40 ');
+  // expect(formatFunction(4100, 109000.0)).toEqual('01:08:20/30:16:40 ');
+  // expect(formatFunction(109000.0, 109000.0)).toEqual('30:16:40/30:16:40 ');
 });
 
 // describe('formatTrackData', () => {
