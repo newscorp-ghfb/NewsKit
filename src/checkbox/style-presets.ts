@@ -8,24 +8,19 @@ export default {
       borderWidth: '{{borders.borderWidth020}}',
       borderRadius: '{{borders.borderRadiusRounded010}}',
       borderStyle: 'solid',
-      iconColor: '{{colors.inkInverse}}', // ???
+      iconColor: '{{colors.inkInverse}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInput030}}',
       borderColor: '{{colors.interactiveInput050}}',
     },
-    focus: {
-      backgroundColor: '{{colors.interactiveInput010}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
-    },
+    focus: {},
     'focus:hover': {
       backgroundColor: '{{colors.interactiveInput030}}',
       borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
     },
     checked: {
-      backgroundColor: '{{colors.interactiveInput040}}', // 010 in Figma, probably error
+      backgroundColor: '{{colors.interactiveInput040}}',
       borderColor: '{{colors.interactiveInput040}}',
     },
     'checked:hover': {
@@ -35,12 +30,10 @@ export default {
     'checked:focus': {
       backgroundColor: '{{colors.interactiveInput040}}',
       borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
     },
     'checked:focus:hover': {
       backgroundColor: '{{colors.interactiveInput050}}',
       borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
     },
     invalid: {
       // backgroundColor: '{{colors.interactiveInput010}}', // from base
@@ -51,15 +44,12 @@ export default {
       borderColor: '{{colors.interactiveNegative050}}',
     },
     'invalid:focus': {
-      backgroundColor: '{{colors.interactiveInput010}}',
-      borderColor: '{{colors.interactiveNegative050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      borderColor: '{{colors.interactiveNegative040}}',
     },
 
     'invalid:focus:hover': {
-      backgroundColor: '{{colors.interactiveInput030}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      backgroundColor: '{{colors.interactiveNegative010}}',
+      borderColor: '{{colors.interactiveNegative050}}',
     },
     'checked:invalid': {
       backgroundColor: '{{colors.interactiveNegative040}}',
@@ -67,8 +57,7 @@ export default {
     },
     'checked:invalid:focus': {
       backgroundColor: '{{colors.interactiveNegative040}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      borderColor: '{{colors.interactiveNegative040}}',
     },
     'checked:invalid:hover': {
       backgroundColor: '{{colors.interactiveNegative050}}',
@@ -76,8 +65,7 @@ export default {
     },
     'checked:invalid:focus:hover': {
       backgroundColor: '{{colors.interactiveNegative050}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      borderColor: '{{colors.interactiveNegative050}}',
     },
     valid: {
       backgroundColor: '{{colors.interactiveInput010}}',
@@ -90,13 +78,11 @@ export default {
     'valid:focus': {
       backgroundColor: '{{colors.interactiveInput010}}',
       borderColor: '{{colors.interactivePositive050}}',
-      borderWidth: '{{borders.borderWidth030}}',
     },
 
     'valid:focus:hover': {
-      backgroundColor: '{{colors.interactiveInput030}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      backgroundColor: '{{colors.interactivePositive010}}',
+      borderColor: '{{colors.interactivePositive050}}',
     },
     'checked:valid': {
       backgroundColor: '{{colors.interactivePositive040}}',
@@ -104,8 +90,7 @@ export default {
     },
     'checked:valid:focus': {
       backgroundColor: '{{colors.interactivePositive040}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      borderColor: '{{colors.interactivePositive040}}',
     },
     'checked:valid:hover': {
       backgroundColor: '{{colors.interactivePositive050}}',
@@ -113,8 +98,7 @@ export default {
     },
     'checked:valid:focus:hover': {
       backgroundColor: '{{colors.interactivePositive050}}',
-      borderColor: '{{colors.interactiveInput050}}',
-      borderWidth: '{{borders.borderWidth030}}',
+      borderColor: '{{colors.interactivePositive050}}',
     },
     disabled: {
       backgroundColor: '{{colors.transparent}}',
