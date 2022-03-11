@@ -3096,7 +3096,7 @@ Object {
       "borderWidth": "{{borders.borderWidth030}}",
     },
     "invalid:hover": Object {
-      "backgroundColor": "{{colors.interactiveInput030}}",
+      "backgroundColor": "{{colors.interactiveNegative010}}",
       "borderColor": "{{colors.interactiveNegative050}}",
     },
     "valid": Object {
@@ -3114,7 +3114,7 @@ Object {
       "borderWidth": "{{borders.borderWidth030}}",
     },
     "valid:hover": Object {
-      "backgroundColor": "{{colors.interactiveInput030}}",
+      "backgroundColor": "{{colors.interactivePositive010}}",
       "borderColor": "{{colors.interactivePositive050}}",
     },
   },

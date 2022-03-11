@@ -3536,7 +3536,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-25:invalid:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -3575,7 +3575,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-25:valid:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
@@ -4622,7 +4622,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-25:invalid:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -4661,7 +4661,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-25:valid:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
@@ -6050,7 +6050,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -6089,7 +6089,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:valid:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 

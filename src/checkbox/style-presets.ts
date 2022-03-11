@@ -47,7 +47,7 @@ export default {
       borderColor: '{{colors.interactiveNegative040}}',
     },
     'invalid:hover': {
-      backgroundColor: '{{colors.interactiveInput030}}',
+      backgroundColor: '{{colors.interactiveNegative010}}',
       borderColor: '{{colors.interactiveNegative050}}',
     },
     'invalid:focus': {
@@ -84,7 +84,7 @@ export default {
       borderColor: '{{colors.interactivePositive040}}',
     },
     'valid:hover': {
-      backgroundColor: '{{colors.interactiveInput030}}',
+      backgroundColor: '{{colors.interactivePositive010}}',
       borderColor: '{{colors.interactivePositive050}}',
     },
     'valid:focus': {
