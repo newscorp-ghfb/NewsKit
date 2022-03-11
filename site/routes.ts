@@ -291,6 +291,14 @@ export default [
             illustration: 'components/button-illustration',
           },
           {
+            title: 'Checkbox',
+            page: true,
+            id: '/components/checkbox',
+            description:
+              'Checkboxes are selection controls that allow users to select one or multiple items from a group of options. They typically appear in forms.',
+            illustration: 'components/checkbox/hero',
+          },
+          {
             title: 'Form',
             page: true,
             id: '/components/form',
