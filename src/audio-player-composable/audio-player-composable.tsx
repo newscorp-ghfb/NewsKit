@@ -109,10 +109,9 @@ export const AudioPlayerComposable = ({
     buffered,
   });
   const getTimeDisplayProps = () => ({
-    defaultFormat: formatFunction(trackPosition, duration!),
-    format: formatFunction(trackPosition, duration),
+    format: formatFunction,
     currentTime: trackPosition,
-    length: duration,
+    duration,
   });
 
   const value = {

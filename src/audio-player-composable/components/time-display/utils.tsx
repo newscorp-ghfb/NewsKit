@@ -1,3 +1,5 @@
+import {FormatFn} from './types';
+
 export const calculateTime = (secs: number) => {
   const hours = Math.floor(secs / 3600);
   const minutes = Math.floor((secs % 3600) / 60);
@@ -10,10 +12,12 @@ export const calculateTime = (secs: number) => {
   }
   return `${returnedMinutes}:${returnedSeconds}`;
 };
+// change to formattedcurrentime
+export const formatFunction: FormatFn = ({currentTime, duration}) => {
+  const currentFormattedTime = calculateTime(
+    (currentTime as unknown) as number,
+  );
+  const totalDuration = calculateTime((duration as unknown) as number);
 
-export const formatFunction = (duration: number, length: number) => {
-  const currentTime = calculateTime((duration as unknown) as number);
-  const totalLength = calculateTime((length as unknown) as number);
-
-  return `${currentTime}/${totalLength} `;
+  return `${currentFormattedTime}/${totalDuration} `;
 };

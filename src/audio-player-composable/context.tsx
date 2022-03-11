@@ -1,5 +1,6 @@
 import {ReactJSXElement} from '@emotion/react/types/jsx-namespace';
 import React, {createContext, SyntheticEvent, useContext} from 'react';
+import {FormatFn} from './components/time-display/types';
 
 interface AudioPlayerProviderContext {
   id: string;
@@ -35,9 +36,9 @@ interface AudioPlayerProviderContext {
     playStateIcon: ReactJSXElement;
   };
   getTimeDisplayProps: () => {
-    defaultFormat: string;
+    format: FormatFn;
     currentTime: number;
-    length: number;
+    duration: number;
   };
   getSeekBarProps: () => {
     duration: number;

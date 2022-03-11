@@ -10,17 +10,18 @@ import {StyledLabelProps} from './types';
 const TimeDisplayContainer = styled.div<StyledLabelProps>`
   ${getStylePreset(`container`, '')}
 `;
-
+// 15-20
 export const ThemelessTimeDisplay = ({
   overrides = {},
   format,
 }: StyledLabelProps) => {
   const {getTimeDisplayProps} = useAudioPlayerContext();
-  const {defaultFormat, currentTime, length} = getTimeDisplayProps!();
+  const {format: defaultFormat, currentTime, duration} = getTimeDisplayProps!();
+  const formatFn = typeof format === 'function' ? format : defaultFormat;
   return (
     <TimeDisplayContainer>
       <Label size="large" overrides={overrides}>
-        {format ? format({currentTime, length}) : defaultFormat}
+        {formatFn({currentTime, duration})}
       </Label>
     </TimeDisplayContainer>
   );
