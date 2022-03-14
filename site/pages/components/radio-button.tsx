@@ -149,7 +149,8 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Radio Button',
-      description: 'TODO',
+      description:
+        'Radio Buttons are selection controls that are typically used in forms.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
