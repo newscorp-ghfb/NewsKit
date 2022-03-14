@@ -1124,7 +1124,7 @@ workflows:
 
 # END PR
 
-#INIZIO JOBS WHEN MERGING INTO DEVELOP
+#INIZIO JOBS WHEN merged INTO DEVELOP
 
       # develop jobs
       - build_docs:

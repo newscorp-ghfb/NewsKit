@@ -619,6 +619,7 @@ jobs:
       - slack/status:
           <<: *slack_status
 
+  # TODO to be removed?
   create_release_candidate:
     <<: *working_directory
     executor: node
@@ -638,6 +639,26 @@ jobs:
             echo "export VERSION=${VERSION}" >> $BASH_ENV
       - slack/status:
           <<: *slack_status
+  
+
+  bump_version:
+    #TODO next line needed?
+    <<: *working_directory
+    executor: node
+    parameters:
+      version:
+        type: string
+    steps:
+      # - checkout
+      # - github-cli/setup
+      # - run:
+      #     name: Set github identity
+      #     #TODO Will these credential allow us to push directly to master?
+      #     command: make set_git_identity
+      # - run:
+      #     name: bump version
+      #     command: make bump_version
+      - run: echo << parameters.version >>
 
   publish_npm:
     parameters:
@@ -958,6 +979,9 @@ workflows:
     # # ( still issue with Epics branches? what would be run? we happy with that?)
 
     jobs:
+      - bump_version:
+          #TODO replace hardcoded version with << pipeline.git.tag >>
+          version: release@5.0.2 | cut -f2 -d"@"
       - install_deps
       - install_cypress
       - build_icons:
@@ -1093,7 +1117,7 @@ workflows:
           requires:
           # TODO was it a mistake? should it be  deploy_terraform_s3_pr instead?(pr)
           # has been working so far because pr has always finished earlier, BUT looks wrong and should be
-          # linked properly to deploy_terraform_s3_pr instead
+          # linked properly to deploy_terraform_s3_pr instead. _dev does not and did not run on Pr workflow
             # - deploy_terraform_s3_dev
             - build_docs_pr
             - build_storybook
@@ -1108,6 +1132,170 @@ workflows:
       equal: [ main, << pipeline.git.branch >> ]
       
     jobs:
+    #TODO Are these needed? they will be run in PR too, before merging.
       - install_deps
+      - install_cypress
+      - build_icons:
+          requires:
+            - install_deps
+      - build_components:
+          requires:
+            - build_icons
+      - build_storybook:
+          requires:
+            - build_icons
+      - build_test_e2e:
+          requires:
+            - build_icons
+      - lint:
+          requires:
+            - build_icons
+      - test_unit_comps:
+          requires:
+            - build_icons
+      - test_unit_docs:
+          requires:
+            - build_icons
+      - test_e2e_comps:
+          context: ncu-product-platforms-context
+          requires:
+            - build_test_e2e
+            - install_cypress
+      
+      #TODO END  needed QUESTIONING
+
+      - build_docs:
+          name: build_docs_dev
+          context: ncu-newskit-site-dev
+          requires:
+            - build_icons
+      - test_broken_links_docs:
+          name: test_broken_links_docs_dev
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_dev
+      - test_e2e_docs:
+          name: test_e2e_docs_dev
+          context: ncu-newskit-site-dev
+          requires:
+            - build_docs_dev
+            - install_cypress
+      - approve_publish_npm_dev:
+          type: approval
+          requires:
+            - build_components
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_dev
+      - publish_npm:
+          name: publish_npm_dev
+          context: ncu-product-platforms-context
+          publish_dev: true
+          requires:
+            - approve_publish_npm_dev
+      - build_push_docker_ecr:
+          name: build_push_docker_ecr_dev
+          context: ncu-product-platforms-context
+          requires:
+            - build_storybook
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_dev
+      - eks_flux_deploy:
+          name: eks_flux_deploy_dev
+          context: ncu-newskit-site-dev
+          environment: dev
+          requires:
+            - build_push_docker_ecr_dev
+      - eks_kubectl_deploy:
+          name: eks_kubectl_deploy_dev
+          context: ncu-newskit-site-dev
+          environment: dev
+          requires:
+            - eks_flux_deploy_dev
+      - approve_publish_docs:
+          type: approval
+          requires:
+            - eks_kubectl_deploy_dev
+      - build_docs:
+          name: build_docs_prod_link
+          context: ncu-newskit-site-prod
+          requires:
+            - approve_publish_docs
+      - build_push_docker_ecr:
+          name: build_push_docker_ecr_prod
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_prod_link
+      - eks_flux_deploy:
+          name: eks_flux_deploy_dev_to_prod
+          context: ncu-newskit-site-prod
+          environment: prod
+          requires:
+            - build_push_docker_ecr_prod
+      - eks_kubectl_deploy:
+          name: eks_kubectl_deploy_prod
+          context: ncu-newskit-site-prod
+          environment: prod
+          requires:
+            - eks_flux_deploy_dev_to_prod
+      - deploy_terraform:
+          name: deploy_terraform_dns_dev
+          package: dns
+          context: ncu-product-platforms-context
+          environment: dev
+          requires:
+            - init_aws
+      - deploy_terraform:
+          name: deploy_terraform_ecr_dev
+          package: ecr
+          context: ncu-product-platforms-context
+          tf_env: false
+          requires:
+            - init_aws
+      - deploy_terraform:
+          name: deploy_terraform_s3_dev
+          package: s3
+          context: ncu-product-platforms-context
+          environment: dev
+          requires:
+            - deploy_terraform_s3_pr
+  
+  on_release:
+    when: << pipeline.git.tag >>
+    #TODO Add conditional for tags
+    jobs:
+   #TODO? Run all the "checks/test" jobs, if we feel they need to be re-run.
+   # In theory all the checks have ran on main merge already
+
+      - bump_version:
+          #TODO replace hardcoded version with << pipeline.git.tag >>
+          version: release@5.0.2 | cut -f2 -d"@"
+
+  # UPDATE VERSION
+
+  # SET_GIT_IDENTIFY (see set_git_identity in make file)?!
+  
+  # based on the tag update version with yarn version
+  # What should we take from the tag? directly the new number? or patch, minor, major? I would say the lates. How.. to see.
+
+  # git checkout main
+  # git pull
+  # yarn version << some  logic based on tag string>
+  # push to main directly
+
+  # END UPDATE VERSION
+
+  # Deploy jobs
+
+     
+
+# TODO remove MAKE FILE script not used anymore, or jobs/command in the new workflow.
+
+
 
     

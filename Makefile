@@ -91,13 +91,25 @@ set_git_identity:
 	git config --global user.name "Product Platforms Service"
 
 # UPDATE PACKAGE VERSION BASED ON UPDATE TYPE IN BRANCH TRIGGER NAME
+#TODO to be removed
 create_release_candidate:
-	git fetch origin
-	git checkout -f develop
-	echo "Creating new ${UPDATE_TYPE} version"
-	yarn version --${UPDATE_TYPE}
-	make INITIAL_UPDATE_TYPE=${UPDATE_TYPE} push_release
+  git fetch origin
+  git checkout -f develop
+  echo "Creating new ${UPDATE_TYPE} version"
+  yarn version --${UPDATE_TYPE}
+  make INITIAL_UPDATE_TYPE=${UPDATE_TYPE} push_release
 
+# TODO need to checkout to main? need for -f flag in there? - pull rather than fetch
+bump_version:
+	git pull origin
+	git checkout main
+	echo "Updating package.json version"
+	yarn version --new-version ${NEW_VERSION}
+	git commit -m "Updating to version ${NEW_VERSION}"
+	git push
+
+
+#TODO to be removed?
 # CREATE RELEASE BRANCH AND PULL REQUESTS BEFORE DELETING ORIGINAL TRIGGER BRANCH
 push_release:
 	echo "Creating branch $(RELEASE_BRANCH)"
