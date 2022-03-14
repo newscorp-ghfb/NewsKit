@@ -1,11 +1,12 @@
 import {MQ} from '../utils/style/types';
 import {AlignSelfValues} from '../stack-child';
+import {LogicalProps} from '../utils/logical-properties';
 
 export type FlexWrap = boolean | 'wrap' | 'nowrap' | 'wrap-reverse';
 
 export interface CommonStackPropsWithoutMQ {
-  spaceStack: string;
-  spaceInline: string;
+  spaceStack: string; // Note: LogicalProps can not replace spaceStack! spaceStack = Stack's gap
+  spaceInline: string; // Note: LogicalProps can not replace spaceInline! spaceInline = Stack's gap
   flexGrow: boolean | number;
   flexShrink: boolean | number;
   flowReverse: boolean;
@@ -48,7 +49,7 @@ export interface StyledStackProps extends CommonStackProps {
   $height?: MQ<string>;
 }
 
-export interface StackProps extends Partial<CommonStackProps> {
+export interface StackProps extends Partial<CommonStackProps>, LogicalProps {
   wrap?: MQ<FlexWrap>;
   list?: boolean;
   ariaLabel?: string;

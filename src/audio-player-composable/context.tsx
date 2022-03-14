@@ -1,5 +1,5 @@
 import {ReactJSXElement} from '@emotion/react/types/jsx-namespace';
-import React, {createContext, SyntheticEvent} from 'react';
+import React, {createContext, SyntheticEvent, useContext} from 'react';
 
 interface AudioPlayerProviderContext {
   id: string;
@@ -19,10 +19,8 @@ interface AudioPlayerProviderContext {
     onTimeUpdate: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
     onWaiting: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
     onEnded: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
+    onProgress: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
   };
-  duration: number;
-  trackPositionArr: number[];
-  onChangeSlider: (values: number[]) => void;
   // Getter functions
   getPlayPauseButtonProps: (args: {
     onClick?: () => void;
@@ -35,6 +33,12 @@ interface AudioPlayerProviderContext {
     canPause: boolean;
     playStateIcon: ReactJSXElement;
   };
+  getSeekBarProps: () => {
+    duration: number;
+    trackPosition: number;
+    onChange: (value: number) => void;
+    buffered: TimeRanges | undefined;
+  };
 }
 
 export const AudioPlayerContext = createContext<
@@ -42,3 +46,5 @@ export const AudioPlayerContext = createContext<
 >({});
 
 export const AudioPlayerProvider = AudioPlayerContext.Provider;
+
+export const useAudioPlayerContext = () => useContext(AudioPlayerContext);
