@@ -9,6 +9,8 @@ import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {SeekBar} from '../components/seek-bar/seek-bar';
 import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
+import {Block} from '../../block';
+import {ButtonSize} from '../../button/types';
 
 const AudioPlayerContainer = styled.div<{dark?: boolean}>`
   border: solid 1px red;
@@ -64,6 +66,34 @@ const myCustomThemeTimeDisplay = createTheme({
     },
   },
 });
+
+export const AudioPlayer = () => (
+  <>
+    <StorybookSubHeading>Audio player inline</StorybookSubHeading>
+    <AudioPlayerComposable
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      ariaLandmark="audio player 0"
+    >
+      <GridLayout
+        columns="auto auto 1fr auto"
+        columnGap="16px"
+        alignItems="center"
+      >
+        <PlayPauseButton
+          size={ButtonSize.Small}
+          onClick={() => {
+            console.log('customer click function');
+          }}
+        />
+        <TimeDisplay format={({currentTime}) => calculateTime(currentTime)} />
+        <SeekBar />
+        <TimeDisplay format={({duration}) => calculateTime(duration)} />
+      </GridLayout>
+    </AudioPlayerComposable>
+  </>
+);
+AudioPlayer.storyName = 'audio-player';
+
 export const AudioPlayPauseButton = () => (
   <AudioPlayerComposable
     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
@@ -76,7 +106,6 @@ export const AudioPlayPauseButton = () => (
     />
   </AudioPlayerComposable>
 );
-
 AudioPlayPauseButton.storyName = 'audio-play-pause-button';
 
 export const AudioPlayPauseButtonAutoplay = () => (
@@ -135,49 +164,60 @@ MultipleAudioPlayPauseButtonWithOverrides.storyName =
 export const AudioPlayerWithTimeDisplay = () => (
   <>
     <StorybookSubHeading>with time display label default</StorybookSubHeading>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player 3"
-    >
-      <PlayPauseButton
-        onClick={() => {
-          console.log('customer click function');
-        }}
-      />
-      <SeekBar />
-      <TimeDisplay />
-    </AudioPlayerComposable>
-    <StorybookSubHeading>
-      with time current time display only
-    </StorybookSubHeading>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player 4"
-    >
-      <PlayPauseButton
-        onClick={() => {
-          console.log('customer click function');
-        }}
-      />
-      <SeekBar />
-      <TimeDisplay format={({currentTime}) => calculateTime(currentTime)} />
-    </AudioPlayerComposable>
-    <StorybookSubHeading>
-      with time length time display only
-    </StorybookSubHeading>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player 5"
-    >
-      <PlayPauseButton
-        onClick={() => {
-          console.log('customer click function');
-        }}
-      />
-      <TimeDisplay format={({duration}) => calculateTime(duration)} />
-    </AudioPlayerComposable>
-    <StorybookSubHeading>with overrides in grid</StorybookSubHeading>
     <ThemeProvider theme={myCustomThemeTimeDisplay}>
+      <AudioPlayerComposable
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        ariaLandmark="audio player 3"
+      >
+        <PlayPauseButton
+          onClick={() => {
+            console.log('customer click function');
+          }}
+        />
+        <Block spaceStack="space030" />
+        <SeekBar />
+        <Block spaceStack="space030" />
+        <TimeDisplay />
+      </AudioPlayerComposable>
+      <StorybookSubHeading>
+        with time current time display only
+      </StorybookSubHeading>
+      <AudioPlayerComposable
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        ariaLandmark="audio player 4"
+      >
+        <PlayPauseButton
+          onClick={() => {
+            console.log('customer click function');
+          }}
+        />
+        <Block spaceStack="space030" />
+        <SeekBar />
+        <Block spaceStack="space030" />
+        <TimeDisplay format={({currentTime}) => calculateTime(currentTime)} />
+      </AudioPlayerComposable>
+      <StorybookSubHeading>
+        with time length time display only
+      </StorybookSubHeading>
+      <AudioPlayerComposable
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        ariaLandmark="audio player 5"
+      >
+        <PlayPauseButton
+          onClick={() => {
+            console.log('customer click function');
+          }}
+        />
+        <Block spaceStack="space030" />
+        <SeekBar />
+        <Block spaceStack="space030" />
+        <GridLayout columns="repeat(1, 1fr)">
+          <GridLayoutItem justifySelf="end">
+            <TimeDisplay format={({duration}) => calculateTime(duration)} />
+          </GridLayoutItem>
+        </GridLayout>
+      </AudioPlayerComposable>
+      <StorybookSubHeading>with overrides</StorybookSubHeading>
       <AudioPlayerComposable
         src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
         ariaLandmark="audio player 7"
@@ -187,7 +227,9 @@ export const AudioPlayerWithTimeDisplay = () => (
             console.log('customer click function');
           }}
         />
+        <Block spaceStack="space030" />
         <SeekBar />
+        <Block spaceStack="space030" />
         <GridLayout columns="1fr 1fr 0fr 0fr 0fr">
           <GridLayoutItem justifySelf="start">
             <TimeDisplay
@@ -212,7 +254,7 @@ export const AudioPlayerWithTimeDisplay = () => (
     </ThemeProvider>
   </>
 );
-
+AudioPlayerWithTimeDisplay.storyName = 'audio-player-with-time-display';
 export const AudioPlayerSeekBar = () => (
   <AudioPlayerComposable
     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
