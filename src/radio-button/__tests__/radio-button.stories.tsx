@@ -120,15 +120,17 @@ export const StoryRadioButtonUsingState = () => {
         <StorybookSubHeading>
           This example uses setState instead of RadioGroup
         </StorybookSubHeading>
-        {['small', 'medium', 'large'].map(size => (
-          <RadioButton
-            size="medium"
-            name="size"
-            label={size}
-            checked={checked === size}
-            onChange={() => setChecked(size)}
-          />
-        ))}
+        <GridLayout rowGap="space040" columns="max-content">
+          {['small', 'medium', 'large'].map(size => (
+            <RadioButton
+              size="medium"
+              name="size"
+              label={size}
+              checked={checked === size}
+              onChange={() => setChecked(size)}
+            />
+          ))}
+        </GridLayout>
       </GridLayout>
     </Container>
   );
@@ -143,7 +145,7 @@ export const StoryRadioButtonWithGroup = () => {
       <GridLayout rowGap="space040">
         <StorybookSubHeading>RadioGroup Uncontrolled</StorybookSubHeading>
         <RadioGroup name="group" defaultValue="medium">
-          <GridLayout rowGap="space040">
+          <GridLayout rowGap="space040" columns="max-content">
             {['small', 'medium', 'large'].map(size => (
               <RadioButton key={size} size="medium" label={size} value={size} />
             ))}
@@ -155,7 +157,7 @@ export const StoryRadioButtonWithGroup = () => {
           onChange={event => setChecked(event.target.value)}
           name="group-2"
         >
-          <GridLayout rowGap="space040">
+          <GridLayout rowGap="space040" columns="max-content">
             {['small', 'medium', 'large'].map(size => (
               <RadioButton key={size} size="medium" label={size} value={size} />
             ))}
@@ -257,7 +259,7 @@ export const StoryRadioButtonOverrides = () => {
         <StorybookHeading>RadioButton</StorybookHeading>
         <StorybookSubHeading>Style overrides</StorybookSubHeading>
         <RadioGroup name="style" defaultValue="1">
-          <GridLayout rowGap="space040">
+          <GridLayout rowGap="space040" columns="max-content">
             <RadioButton
               value="1"
               label="Option 1"
@@ -278,7 +280,7 @@ export const StoryRadioButtonOverrides = () => {
 
         <StorybookSubHeading>Icon Prop override</StorybookSubHeading>
         <RadioGroup name="prop" defaultValue="1">
-          <GridLayout rowGap="space040">
+          <GridLayout rowGap="space040" columns="max-content">
             <RadioButton value="1" label="Option 1" overrides={propOverrides} />
             <RadioButton value="2" label="Option 2" overrides={propOverrides} />
             <RadioButton value="3" label="Option 3" overrides={propOverrides} />
@@ -286,7 +288,7 @@ export const StoryRadioButtonOverrides = () => {
         </RadioGroup>
         <StorybookSubHeading>Icon Component override</StorybookSubHeading>
         <RadioGroup name="icon" defaultValue="1">
-          <GridLayout rowGap="space040">
+          <GridLayout rowGap="space040" columns="max-content">
             <RadioButton value="1" label="Option 1" overrides={iconOverrides} />
             <RadioButton value="2" label="Option 2" overrides={iconOverrides} />
             <RadioButton value="3" label="Option 3" overrides={iconOverrides} />
