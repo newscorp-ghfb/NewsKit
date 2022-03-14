@@ -101,12 +101,6 @@ create_release_candidate:
 
 # TODO need to checkout to main? need for -f flag in there? - pull rather than fetch
 bump_version:
-	# git pull origin
-	# git checkout main
-	# echo "Updating package.json version"
-	# yarn version --new-version ${NEW_VERSION}
-	# git commit -m "Updating to version ${NEW_VERSION}"
-	# git push
 	echo ${NEW_VERSION}
 
 #TODO to be removed?
