@@ -43,19 +43,6 @@ test('calculateTime', () => {
   expect(calculateTime(109000.0)).toEqual('30:16:40');
 });
 
-// describe('formatTrackData', () => {
-//   test('when fully buffered', () => {
-//     expect(
-//       formatTrackData('track', 'indicator', 'buffer', [5], {
-//         length: 1,
-//         start: () => 0,
-//         end: () => 10,
-//       }),
-//     ).toEqual({
-//       colors: ['indicator', 'buffer', 'track'],
-//       values: [5, 10],
-//     });
-//   });
 describe('formatTrackData', () => {
   test('when fully buffered', () => {
     expect(
