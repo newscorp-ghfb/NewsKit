@@ -422,7 +422,7 @@ const StylePresets = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Foundations',
+      type: 'Presets',
       name: 'Style Presets',
       hero: {
         illustration: 'theme/style-presets/hero',
