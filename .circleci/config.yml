@@ -651,7 +651,7 @@ jobs:
     steps:
       - run:
           name: bump version
-          command: echo "marco"
+          command: make bump_version
 
   publish_npm:
     parameters:
