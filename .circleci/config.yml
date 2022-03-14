@@ -649,8 +649,8 @@ jobs:
       version:
         type: string
     steps:
-      - checkout
-      - github-cli/setup
+      # - checkout
+      # - github-cli/setup
       # - run:
       #     name: Set github identity
       #     #TODO Will these credential allow us to push directly to master?
