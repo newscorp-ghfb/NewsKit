@@ -25,7 +25,7 @@ export const AudioPlayerComposable = ({
   const [playing, setPlayState] = useState(autoPlay);
   const [loading, setLoading] = useState(true);
   const [duration, setDuration] = useState(0);
-  const [trackPosition, setTrackPosition] = useState(0);
+  const [currentTime, setTrackPosition] = useState(0);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [displayDuration, setDisplayDuration] = useState(0);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -34,7 +34,7 @@ export const AudioPlayerComposable = ({
   const [buffered, setBuffered] = useState<TimeRanges>();
 
   useEffect(() => {
-    trackPositionRef.current = trackPosition;
+    trackPositionRef.current = currentTime;
   });
 
   useEffect(() => {
@@ -104,13 +104,13 @@ export const AudioPlayerComposable = ({
 
   const getSeekBarProps = () => ({
     duration,
-    trackPosition,
+    currentTime,
     onChange: onChangeSlider,
     buffered,
   });
   const getTimeDisplayProps = () => ({
     format: formatFunction,
-    currentTime: trackPosition,
+    currentTime,
     duration,
   });
 

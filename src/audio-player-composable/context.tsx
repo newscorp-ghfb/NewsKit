@@ -42,7 +42,7 @@ interface AudioPlayerProviderContext {
   };
   getSeekBarProps: () => {
     duration: number;
-    trackPosition: number;
+    currentTime: number;
     onChange: (value: number) => void;
     buffered: TimeRanges | undefined;
   };

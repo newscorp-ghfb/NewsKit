@@ -65,7 +65,7 @@ export const AudioPlayer = () => (
     <StorybookSubHeading>Audio player inline</StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player 0"
+      ariaLandmark="audio player inline"
     >
       <GridLayout
         columns="auto auto 1fr auto"
@@ -225,7 +225,7 @@ export const AudioPlayerTimeDisplayOverrides = () => (
   <ThemeProvider theme={myCustomTheme}>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player 7"
+      ariaLandmark="audio player 6"
     >
       <PlayPauseButton
         onClick={() => {
