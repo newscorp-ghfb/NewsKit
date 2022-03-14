@@ -844,173 +844,194 @@ const FormContainer = styled.div`
   border-radius: 5px;
 `;
 
+const formExampleTheme = createTheme({
+  name: 'my-form-theme',
+  overrides: {
+    componentDefaults: {
+      label: {
+        medium: {
+          spaceStack: 'space020',
+        },
+      },
+      textField: {
+        medium: {
+          spaceStack: 'space030',
+        },
+      },
+      radioButton: {
+        medium: {
+          spaceStack: 'space030',
+        },
+      },
+      checkbox: {
+        medium: {
+          spaceStack: 'space030',
+        },
+      },
+      assistiveText: {
+        medium: {
+          spaceStack: 'space060',
+        },
+      },
+      // Why we cant change this ?
+      fieldset: {
+        spaceStack: 'space040',
+      },
+      legend: {
+        medium: {
+          typographyPreset: 'utilityLabel030',
+          spaceStack: 'space050',
+        },
+      },
+    },
+  },
+});
+
 export const StoryFormComplete = () => {
   const [showPassword, toggleShowPassword] = React.useState(false);
 
-  const space = 'space060';
-  const spaceXs = 'space030';
-
   return (
-    <FormContainer>
-      <Form onSubmit={data => console.log(data)}>
-        <Fieldset legend="Personal">
-          <FormInput
-            name="first-name"
-            rules={{
-              required: 'Required field',
-              minLength: {
-                value: 2,
-                message: 'Name must be at least 2 characters long',
-              },
-            }}
-          >
-            <FormInputLabel>First name</FormInputLabel>
-            <FormInputTextField />
-            <FormInputAssistiveText>
-              Enter your first name
-            </FormInputAssistiveText>
-          </FormInput>
+    <ThemeProvider theme={formExampleTheme}>
+      <FormContainer>
+        <Form onSubmit={data => console.log(data)}>
+          <Fieldset legend="Personal">
+            <FormInput
+              name="first-name"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 2,
+                  message: 'Name must be at least 2 characters long',
+                },
+              }}
+            >
+              <FormInputLabel>First name</FormInputLabel>
+              <FormInputTextField />
+              <FormInputAssistiveText>
+                Enter your first name
+              </FormInputAssistiveText>
+            </FormInput>
 
-          <Block spaceStack={space} />
+            <FormInput
+              name="last-name"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 2,
+                  message: 'Name must be at least 2 characters long',
+                },
+              }}
+            >
+              <FormInputLabel>Last name</FormInputLabel>
+              <FormInputTextField />
+              <FormInputAssistiveText>
+                Enter your last name
+              </FormInputAssistiveText>
+            </FormInput>
 
-          <FormInput
-            name="last-name"
-            rules={{
-              required: 'Required field',
-              minLength: {
-                value: 2,
-                message: 'Name must be at least 2 characters long',
-              },
-            }}
-          >
-            <FormInputLabel>Last name</FormInputLabel>
-            <FormInputTextField />
-            <FormInputAssistiveText>
-              Enter your last name
-            </FormInputAssistiveText>
-          </FormInput>
+            <FormInput
+              name="country"
+              rules={{
+                required: 'Required field',
+              }}
+            >
+              <FormInputLabel>Country</FormInputLabel>
+              <FormInputSelect>
+                <SelectOption value="BG">Bulgaria</SelectOption>
+                <SelectOption value="UK">United Kingdom</SelectOption>
+                <SelectOption value="NL">The Netherlands</SelectOption>
+                <SelectOption value="DE">Germany</SelectOption>
+              </FormInputSelect>
+              <FormInputAssistiveText>
+                Enter your last name
+              </FormInputAssistiveText>
+            </FormInput>
+          </Fieldset>
 
-          <Block spaceStack={space} />
+          <Fieldset legend="Login information">
+            <FormInput
+              name="email"
+              rules={{
+                required: 'Required field',
+                pattern: /^\S+@\S+$/i,
+              }}
+            >
+              <FormInputLabel>Email</FormInputLabel>
+              <FormInputTextField type="email" />
+              <FormInputAssistiveText>Enter your email</FormInputAssistiveText>
+            </FormInput>
 
-          <FormInput
-            name="country"
-            rules={{
-              required: 'Required field',
-            }}
-          >
-            <FormInputLabel>Country</FormInputLabel>
-            <FormInputSelect>
-              <SelectOption value="BG">Bulgaria</SelectOption>
-              <SelectOption value="UK">United Kingdom</SelectOption>
-              <SelectOption value="NL">The Netherlands</SelectOption>
-              <SelectOption value="DE">Germany</SelectOption>
-            </FormInputSelect>
-            <FormInputAssistiveText>
-              Enter your last name
-            </FormInputAssistiveText>
-          </FormInput>
-
-          <Block spaceStack={space} />
-
-          <FormInput
-            name="email"
-            rules={{
-              required: 'Required field',
-              pattern: /^\S+@\S+$/i,
-            }}
-          >
-            <FormInputLabel>Email</FormInputLabel>
-            <FormInputTextField type="email" />
-            <FormInputAssistiveText>Enter your email</FormInputAssistiveText>
-          </FormInput>
-
-          <Block spaceStack={space} />
-
-          <FormInput
-            name="password"
-            rules={{
-              required: 'Required field',
-              minLength: {
-                value: 8,
-                message: 'Name must be at least 8 characters long',
-              },
-            }}
-          >
-            <FormInputLabel>Password</FormInputLabel>
-            <FormInputTextField
-              type={showPassword ? 'text' : 'password'}
-              endEnhancer={
-                <ShowPasswordButton
-                  onClick={() => toggleShowPassword(!showPassword)}
-                  isVisible={showPassword}
-                />
-              }
-            />
-            <FormInputAssistiveText>Enter your password</FormInputAssistiveText>
-          </FormInput>
-        </Fieldset>
-
-        <Block spaceStack={space} />
-
-        <Fieldset legend="Gender">
-          <FormInput
-            name="sex"
-            rules={{
-              required: 'Required field',
-            }}
-          >
-            <RadioGroup>
-              <FormInputRadioButton value="male" label="Male" />
-              <Block spaceStack={spaceXs} />
-              <FormInputRadioButton value="female" label="Female" />
-              <Block spaceStack={spaceXs} />
-              <FormInputRadioButton value="3rd" label="Third Gender" />
-              <Block spaceStack={spaceXs} />
-              <FormInputRadioButton value="noSay" label="Not to say" />
-            </RadioGroup>
-            <Block spaceStack={spaceXs} />
-            <FormInputAssistiveText>Make your choice</FormInputAssistiveText>
-          </FormInput>
-        </Fieldset>
-
-        <Block spaceStack={space} />
-
-        <Fieldset legend="Interests">
-          <FormInput
-            name="interests"
-            rules={{
-              required: 'Required field',
-              validate: (value: string[]) => {
-                if (value.length < 3) {
-                  return 'Select at least 3 interests';
+            <FormInput
+              name="password"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 8,
+                  message: 'Name must be at least 8 characters long',
+                },
+              }}
+            >
+              <FormInputLabel>Password</FormInputLabel>
+              <FormInputTextField
+                type={showPassword ? 'text' : 'password'}
+                endEnhancer={
+                  <ShowPasswordButton
+                    onClick={() => toggleShowPassword(!showPassword)}
+                    isVisible={showPassword}
+                  />
                 }
+              />
+              <FormInputAssistiveText>
+                Enter your password
+              </FormInputAssistiveText>
+            </FormInput>
+          </Fieldset>
 
-                return true;
-              },
-            }}
-          >
-            <FormInputCheckbox value="politics" label="Politics" />
-            <Block spaceStack={spaceXs} />
-            <FormInputCheckbox value="Business" label="Business" />
-            <Block spaceStack={spaceXs} />
-            <FormInputCheckbox value="Society" label="Society" />
-            <Block spaceStack={spaceXs} />
-            <FormInputCheckbox value="Technology" label="Technology" />
-            <Block spaceStack={spaceXs} />
-            <FormInputCheckbox value="Sport" label="Sport" />
-            <Block spaceStack={spaceXs} />
-            <FormInputCheckbox value="Science" label="Science" />
-            <Block spaceStack={spaceXs} />
+          <Fieldset legend="Gender">
+            <FormInput
+              name="sex"
+              rules={{
+                required: 'Required field',
+              }}
+            >
+              <RadioGroup>
+                <FormInputRadioButton value="male" label="Male" />
+                <FormInputRadioButton value="female" label="Female" />
+                <FormInputRadioButton value="3rd" label="Third Gender" />
+                <FormInputRadioButton value="noSay" label="Not to say" />
+              </RadioGroup>
+              <FormInputAssistiveText>Make your choice</FormInputAssistiveText>
+            </FormInput>
+          </Fieldset>
 
-            <FormInputAssistiveText>Make your choice</FormInputAssistiveText>
-          </FormInput>
-        </Fieldset>
+          <Fieldset legend="Interests">
+            <FormInput
+              name="interests"
+              rules={{
+                required: 'Required field',
+                validate: (value: string[]) => {
+                  if (value.length < 3) {
+                    return 'Select at least 3 interests';
+                  }
 
-        <Block spaceStack={space} />
+                  return true;
+                },
+              }}
+            >
+              <FormInputCheckbox value="politics" label="Politics" />
+              <FormInputCheckbox value="Business" label="Business" />
+              <FormInputCheckbox value="Society" label="Society" />
+              <FormInputCheckbox value="Technology" label="Technology" />
+              <FormInputCheckbox value="Sport" label="Sport" />
+              <FormInputCheckbox value="Science" label="Science" />
+              <FormInputAssistiveText>Make your choice</FormInputAssistiveText>
+            </FormInput>
+          </Fieldset>
 
-        <Button type="submit">Register</Button>
-      </Form>
-    </FormContainer>
+          <Button type="submit">Register</Button>
+        </Form>
+      </FormContainer>
+    </ThemeProvider>
   );
 };
 

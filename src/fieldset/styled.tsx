@@ -39,4 +39,5 @@ export const StyledFieldset = styled.fieldset<FieldsetProps>`
 
   ${getStylePreset('fieldset', '')};
   ${getResponsiveSpacingInset('fieldset', '')}
+  ${getResponsiveSpacingStackHorizontal(`fieldset`, '')};
 `;
