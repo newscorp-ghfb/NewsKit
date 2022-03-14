@@ -1,7 +1,6 @@
 import React from 'react';
-import {Block, IconFilledKeyboardArrowLeft, Image} from 'newskit';
+import {Block, Cell, IconFilledKeyboardArrowLeft, Image} from 'newskit';
 import {ContentPrimary, ContentSection} from '../components/content-structure';
-import {ComponentPageCell} from '../components/layout-cells';
 import Layout, {LayoutProps} from '../components/layout';
 import {HeadNextSeo} from '../components/head-next-seo';
 import {Link} from '../components/link';
@@ -17,11 +16,8 @@ const Custom404 = ({path, ...props}: LayoutProps) => (
         alt: '404 page',
       }}
     />
-    <ComponentPageCell>
-      <Block
-        stylePreset="blockRoundedMedium"
-        spaceStack={{xs: 'space040', sm: 'space050', md: 'space070'}}
-      >
+    <Cell xs={12} md={10} mdOffset={1} lg={8} lgOffset={2} xl={6} xlOffset={3}>
+      <Block spaceStack={{xs: 'space045', sm: 'space050', md: 'space070'}}>
         <Image
           loadingAspectRatio="16:9"
           alt="404page"
@@ -31,23 +27,30 @@ const Custom404 = ({path, ...props}: LayoutProps) => (
       <ContentSection sectionName="page not found">
         <ContentPrimary
           headline="Page not found"
-          description=" We can't seem to find what you're looking for. If you typed in the website address, please check it and try again."
+          description={
+            <>
+              <Block spaceStack={{xs: 'space050', md: 'space060'}}>
+                We can&apos;t seem to find what you&apos;re looking for. If you
+                typed in the website address, please check it and try again.
+              </Block>
+              <Link
+                data-testid="back-link"
+                href="/"
+                aria-label="back"
+                type="standalone"
+              >
+                <IconFilledKeyboardArrowLeft
+                  overrides={{
+                    size: 'iconSize020',
+                  }}
+                />
+                Go back to the homepage
+              </Link>
+            </>
+          }
         />
-        <Link
-          data-testid="back-link"
-          href="/"
-          aria-label="back"
-          type="standalone"
-        >
-          <IconFilledKeyboardArrowLeft
-            overrides={{
-              size: 'iconSize020',
-            }}
-          />
-          Go back to the homepage
-        </Link>
       </ContentSection>
-    </ComponentPageCell>
+    </Cell>
   </Layout>
 );
 
