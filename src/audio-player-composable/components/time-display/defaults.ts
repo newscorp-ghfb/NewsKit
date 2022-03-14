@@ -1,10 +1,6 @@
 export default {
   timeDisplay: {
-    container: {
-      stylePreset: 'currentTimeDisplay',
-    },
-    currentTimeDisplay: {
-      stylePreset: 'currentTimeDisplay',
-    },
+    stylePreset: 'timeDisplay',
+    typographyPreset: 'utilityButton030',
   },
 };

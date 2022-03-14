@@ -1,7 +1,7 @@
 import {StylePreset} from '../../../theme/types';
 
 export default {
-  container: {
+  timeDisplay: {
     base: {
       backgroundColor: '{{colors.transparent}}',
     },

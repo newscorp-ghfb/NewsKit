@@ -2274,12 +2274,8 @@ Object {
     },
   },
   "timeDisplay": Object {
-    "container": Object {
-      "stylePreset": "currentTimeDisplay",
-    },
-    "currentTimeDisplay": Object {
-      "stylePreset": "currentTimeDisplay",
-    },
+    "stylePreset": "timeDisplay",
+    "typographyPreset": "utilityButton030",
   },
   "titleBar": Object {
     "heading": Object {
@@ -3012,22 +3008,12 @@ Object {
       "borderColor": "{{colors.interactivePositive050}}",
     },
   },
-  "container": Object {
-    "base": Object {
-      "backgroundColor": "{{colors.transparent}}",
-    },
-  },
   "controlLabel": Object {
     "base": Object {
       "color": "{{colors.inkBase}}",
     },
     "disabled": Object {
       "color": "{{colors.inkNonEssential}}",
-    },
-  },
-  "currentTimeDisplay": Object {
-    "base": Object {
-      "color": "{{colors.inkContrast}}",
     },
   },
   "divider": Object {
@@ -4297,6 +4283,11 @@ Object {
     },
     "disabled": Object {
       "color": "{{colors.inkNonEssential}}",
+    },
+  },
+  "timeDisplay": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.transparent}}",
     },
   },
   "titleBar": Object {

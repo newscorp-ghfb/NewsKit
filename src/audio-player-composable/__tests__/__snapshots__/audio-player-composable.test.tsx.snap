@@ -101,29 +101,16 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
   animation: rotate 1s linear infinite;
 }
 
-.emotion-5 {
-  display: block;
+.emotion-4 {
+  margin: 0;
+  display: inline-block;
+  display: inline-block;
   background-color: #3358CC;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-5::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-5::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <section
@@ -164,15 +151,11 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
         </div>
       </div>
     </button>
-    <div
+    <span
       class="emotion-4"
     >
-      <label
-        class="emotion-5"
-      >
-        00:00/00:00 
-      </label>
-    </div>
+      00:00/00:00 
+    </span>
   </section>
 </DocumentFragment>
 `;
@@ -674,33 +657,16 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   animation: rotate 1s linear infinite;
 }
 
-.emotion-9 {
-  display: block;
-  color: #0A0A0A;
+.emotion-8 {
+  margin: 0;
+  display: inline-block;
+  display: inline-block;
+  background-color: transparent;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-9:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-9::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-9::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <section
@@ -774,15 +740,11 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
         </div>
       </div>
     </button>
-    <div
+    <span
       class="emotion-8"
     >
-      <label
-        class="emotion-9"
-      >
-        00:00/00:00 
-      </label>
-    </div>
+      00:00/00:00 
+    </span>
   </section>
 </DocumentFragment>
 `;
