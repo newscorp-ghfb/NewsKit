@@ -649,6 +649,11 @@ jobs:
         type: string
     steps:
       - checkout
+      # - github-cli/setup
+      # - run:
+      #     name: Set github identity
+      #     #TODO Will these credential allow us to push directly to master?
+      #     command: make set_git_identity
       - run:
           name: bump version
           command: make bump_version
