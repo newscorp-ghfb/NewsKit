@@ -107,7 +107,7 @@ bump_version:
   # yarn version --new-version ${NEW_VERSION}
   # git commit -m "Updating to version ${NEW_VERSION}"
   # git push
-	echo "marco"
+	echo ${NEW_VERSION}"
 
 #TODO to be removed?
 # CREATE RELEASE BRANCH AND PULL REQUESTS BEFORE DELETING ORIGINAL TRIGGER BRANCH
