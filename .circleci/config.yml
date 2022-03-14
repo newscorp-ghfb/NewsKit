@@ -640,7 +640,6 @@ jobs:
       - slack/status:
           <<: *slack_status
   
-
   bump_version:
     #TODO next line needed?
     <<: *working_directory
@@ -649,6 +648,7 @@ jobs:
       version:
         type: string
     steps:
+      - checkout
       - run:
           name: bump version
           command: make bump_version
