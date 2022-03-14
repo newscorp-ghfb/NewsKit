@@ -978,6 +978,7 @@ workflows:
     # # ( still issue with Epics branches? what would be run? we happy with that?)
 
     jobs:
+      - bump_version
       - install_deps
       - install_cypress
       - build_icons:
