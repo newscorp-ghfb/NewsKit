@@ -45,18 +45,6 @@ const myCustomTheme = createTheme({
           backgroundColor: 'green',
         },
       },
-    },
-  },
-});
-
-export default {
-  title: 'NewsKit Light/audio-player-composable',
-  component: () => 'None',
-};
-const myCustomThemeTimeDisplay = createTheme({
-  name: 'my-custom-audio-player-theme',
-  overrides: {
-    stylePresets: {
       customAudioPlayerLabels: {
         base: {
           backgroundColor: 'grey',
@@ -66,6 +54,11 @@ const myCustomThemeTimeDisplay = createTheme({
     },
   },
 });
+
+export default {
+  title: 'NewsKit Light/audio-player-composable',
+  component: () => 'None',
+};
 
 export const AudioPlayer = () => (
   <>
@@ -229,7 +222,7 @@ export const AudioPlayerWithTimeDisplay = () => (
 AudioPlayerWithTimeDisplay.storyName = 'audio-player-with-time-display';
 
 export const AudioPlayerTimeDisplayOverrides = () => (
-  <ThemeProvider theme={myCustomThemeTimeDisplay}>
+  <ThemeProvider theme={myCustomTheme}>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
       ariaLandmark="audio player 7"
