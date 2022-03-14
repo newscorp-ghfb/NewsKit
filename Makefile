@@ -101,7 +101,7 @@ create_release_candidate:
 
 # TODO need to checkout to main? need for -f flag in there? - pull rather than fetch
 bump_version:
-	echo marco
+	echo "marco"
 
 #TODO to be removed?
 # CREATE RELEASE BRANCH AND PULL REQUESTS BEFORE DELETING ORIGINAL TRIGGER BRANCH
