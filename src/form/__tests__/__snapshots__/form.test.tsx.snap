@@ -3518,7 +3518,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 
 .emotion-25:checked:focus:not(:disabled) {
   background-color: #3358CC;
-  border-color: #2B4AAB;
+  border-color: #3358CC;
 }
 
 .emotion-25:checked:focus:hover:not(:disabled) {
@@ -3567,7 +3567,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 
 .emotion-25:valid:focus:not(:disabled) {
   background-color: #FAFAFA;
-  border-color: #0A782A;
+  border-color: #148F39;
 }
 
 .emotion-25:valid:focus:hover:not(:disabled) {
@@ -4586,7 +4586,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 
 .emotion-25:checked:focus:not(:disabled) {
   background-color: #3358CC;
-  border-color: #2B4AAB;
+  border-color: #3358CC;
 }
 
 .emotion-25:checked:focus:hover:not(:disabled) {
@@ -4635,7 +4635,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 
 .emotion-25:valid:focus:not(:disabled) {
   background-color: #FAFAFA;
-  border-color: #0A782A;
+  border-color: #148F39;
 }
 
 .emotion-25:valid:focus:hover:not(:disabled) {
@@ -5996,7 +5996,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 
 .emotion-3:checked:focus:not(:disabled) {
   background-color: #3358CC;
-  border-color: #2B4AAB;
+  border-color: #3358CC;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
@@ -6045,7 +6045,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 
 .emotion-3:valid:focus:not(:disabled) {
   background-color: #FAFAFA;
-  border-color: #0A782A;
+  border-color: #148F39;
 }
 
 .emotion-3:valid:focus:hover:not(:disabled) {

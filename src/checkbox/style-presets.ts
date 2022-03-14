@@ -29,14 +29,13 @@ export default {
     },
     'checked:focus': {
       backgroundColor: '{{colors.interactiveInput040}}',
-      borderColor: '{{colors.interactiveInput050}}',
+      borderColor: '{{colors.interactiveInput040}}',
     },
     'checked:focus:hover': {
       backgroundColor: '{{colors.interactiveInput050}}',
       borderColor: '{{colors.interactiveInput050}}',
     },
     invalid: {
-      // backgroundColor: '{{colors.interactiveInput010}}', // from base
       borderColor: '{{colors.interactiveNegative040}}',
     },
     'invalid:hover': {
@@ -77,7 +76,7 @@ export default {
     },
     'valid:focus': {
       backgroundColor: '{{colors.interactiveInput010}}',
-      borderColor: '{{colors.interactivePositive050}}',
+      borderColor: '{{colors.interactivePositive040}}',
     },
 
     'valid:focus:hover': {

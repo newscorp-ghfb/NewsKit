@@ -3016,7 +3016,7 @@ Object {
     },
     "checked:focus": Object {
       "backgroundColor": "{{colors.interactiveInput040}}",
-      "borderColor": "{{colors.interactiveInput050}}",
+      "borderColor": "{{colors.interactiveInput040}}",
     },
     "checked:focus:hover": Object {
       "backgroundColor": "{{colors.interactiveInput050}}",
@@ -3091,7 +3091,7 @@ Object {
     },
     "valid:focus": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
-      "borderColor": "{{colors.interactivePositive050}}",
+      "borderColor": "{{colors.interactivePositive040}}",
     },
     "valid:focus:hover": Object {
       "backgroundColor": "{{colors.interactivePositive010}}",
