@@ -3135,6 +3135,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -3143,7 +3144,6 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-1 svg {
@@ -3277,8 +3277,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-6:disabled {
@@ -3871,6 +3871,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -3879,7 +3880,6 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-1 svg {
@@ -4013,8 +4013,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-6:disabled {
@@ -4614,6 +4614,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -4622,7 +4623,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -4815,8 +4815,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -4914,6 +4914,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -4922,7 +4923,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -5168,8 +5168,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -5474,8 +5474,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -5571,6 +5571,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: #FAFAFA;
   border-style: solid;
@@ -5579,7 +5580,6 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-1 svg {
@@ -5700,8 +5700,8 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #D20600;
   min-height: 12px;
+  color: #D20600;
 }
 
 .emotion-10 {
@@ -5745,6 +5745,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -5753,7 +5754,6 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-12 svg {
@@ -6119,6 +6119,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -6127,7 +6128,6 @@ exports[`FormInput renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -6320,8 +6320,8 @@ exports[`FormInput renders with nested inputs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -6419,6 +6419,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -6427,7 +6428,6 @@ exports[`FormInput renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -6543,8 +6543,8 @@ exports[`FormInput renders with nested inputs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-0:disabled {

@@ -9,12 +9,14 @@ import {useTheme} from '../theme';
 import {isLinkExternal} from './utils';
 import {useHasMounted} from '../utils/hooks';
 import {TextBlock} from '../text-block';
+import {logicalProps} from '../utils/logical-properties';
 import {getTransitionPreset} from '../utils/style/transition-preset';
 
 const StyledLink = styled.a<InternalLinkProps>`
   display: inline-block;
   ${getTransitionPreset(`link`, '')};
   ${getStylePreset('link', '')}
+  ${logicalProps('link')}
 `;
 
 const StyledTextBlock = styled(TextBlock)`
