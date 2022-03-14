@@ -127,7 +127,7 @@ const TypographyPresets = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Foundations',
+      type: 'Presets',
       name: 'Typography presets',
       hero: {
         illustration: 'components/hero-typography-illustration',
