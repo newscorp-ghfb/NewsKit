@@ -20,9 +20,9 @@ const ThemelessSeekBar: React.FC<SeekBarProps> = ({overrides = {}}) => {
 
   const theme = useTheme();
   const {
-    seekBar: {slider: seekBarSliderDefaults},
+    audioPlayerSeekBar: {slider: seekBarSliderDefaults},
   } = theme.componentDefaults;
-
+  console.log(seekBarSliderDefaults);
   const {getSeekBarProps} = useAudioPlayerContext();
 
   const {duration, currentTime, onChange, buffered} =
@@ -34,20 +34,20 @@ const ThemelessSeekBar: React.FC<SeekBarProps> = ({overrides = {}}) => {
     ({props: trackProps, children: trackChildren, isDragged}) => {
       const sliderTrackStylePreset = getToken(
         {theme, overrides},
-        'seekBar.slider.track',
+        'audioPlayerSeekBar.slider.track',
         'slider.track',
         'stylePreset',
       );
 
       const sliderIndicatorTrackStylePreset = getToken(
         {theme, overrides},
-        'seekBar.slider.indicator',
+        'audioPlayerSeekBar.slider.indicator',
         'slider.indicator',
         'stylePreset',
       );
       const bufferingStylePreset = getToken(
         {theme, overrides},
-        'seekBar.buffering',
+        'audioPlayerSeekBar.buffering',
         'buffering',
         'stylePreset',
       );

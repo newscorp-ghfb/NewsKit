@@ -1,5 +1,5 @@
 export default {
-  timeDisplay: {
+  audioPlayerTimeDisplay: {
     stylePreset: 'timeDisplay',
     typographyPreset: 'utilityButton030',
   },

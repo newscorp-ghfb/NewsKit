@@ -1125,6 +1125,28 @@ Object {
       },
     },
   },
+  "audioPlayerSeekBar": Object {
+    "buffering": Object {
+      "stylePreset": "seekBarBuffering",
+    },
+    "slider": Object {
+      "indicator": Object {
+        "stylePreset": "seekBarIndicator",
+      },
+      "thumb": Object {
+        "size": "sizing040",
+        "stylePreset": "seekBarThumb",
+      },
+      "track": Object {
+        "size": "sizing020",
+        "stylePreset": "seekBarTrack",
+      },
+    },
+  },
+  "audioPlayerTimeDisplay": Object {
+    "stylePreset": "timeDisplay",
+    "typographyPreset": "utilityButton030",
+  },
   "banner": Object {
     "horizontal": Object {
       "actions": Object {
@@ -1849,24 +1871,6 @@ Object {
       },
     },
   },
-  "seekBar": Object {
-    "buffering": Object {
-      "stylePreset": "seekBarBuffering",
-    },
-    "slider": Object {
-      "indicator": Object {
-        "stylePreset": "seekBarIndicator",
-      },
-      "thumb": Object {
-        "size": "sizing040",
-        "stylePreset": "seekBarThumb",
-      },
-      "track": Object {
-        "size": "sizing020",
-        "stylePreset": "seekBarTrack",
-      },
-    },
-  },
   "select": Object {
     "large": Object {
       "button": Object {
@@ -2272,10 +2276,6 @@ Object {
         "typographyPreset": "utilityLabel030",
       },
     },
-  },
-  "timeDisplay": Object {
-    "stylePreset": "timeDisplay",
-    "typographyPreset": "utilityButton030",
   },
   "titleBar": Object {
     "heading": Object {
