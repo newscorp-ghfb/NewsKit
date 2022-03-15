@@ -164,10 +164,8 @@ export const AudioPlayerWithTimeDisplay = () => (
       <Block spaceStack="space030" />
       <AudioPlayerSeekBar />
       <Block spaceStack="space030" />
-      <GridLayout columns="1fr 0fr 0fr 0fr">
-        <GridLayoutItem justifySelf="end">
-          <AudioPlayerTimeDisplay />
-        </GridLayoutItem>
+      <GridLayout justifyItems="end">
+        <AudioPlayerTimeDisplay />
       </GridLayout>
     </AudioPlayerComposable>
     <StorybookSubHeading>
@@ -181,12 +179,10 @@ export const AudioPlayerWithTimeDisplay = () => (
       <Block spaceStack="space030" />
       <AudioPlayerSeekBar />
       <Block spaceStack="space030" />
-      <GridLayout columns="1fr 1fr 0fr 0fr">
-        <GridLayoutItem justifySelf="start">
-          <AudioPlayerTimeDisplay
-            format={({currentTime}) => calculateTime(currentTime)}
-          />
-        </GridLayoutItem>
+      <GridLayout justifyItems="start">
+        <AudioPlayerTimeDisplay
+          format={({currentTime}) => calculateTime(currentTime)}
+        />
       </GridLayout>
     </AudioPlayerComposable>
     <StorybookSubHeading>
@@ -200,12 +196,10 @@ export const AudioPlayerWithTimeDisplay = () => (
       <Block spaceStack="space030" />
       <AudioPlayerSeekBar />
       <Block spaceStack="space030" />
-      <GridLayout columns="1fr 0fr 0fr 0fr">
-        <GridLayoutItem justifySelf="end">
-          <AudioPlayerTimeDisplay
-            format={({duration}) => calculateTime(duration)}
-          />
-        </GridLayoutItem>
+      <GridLayout justifyItems="end">
+        <AudioPlayerTimeDisplay
+          format={({duration}) => calculateTime(duration)}
+        />
       </GridLayout>
     </AudioPlayerComposable>
   </>
@@ -222,25 +216,24 @@ export const AudioPlayerTimeDisplayOverrides = () => (
       <Block spaceStack="space030" />
       <AudioPlayerSeekBar />
       <Block spaceStack="space030" />
-      <GridLayout columns="1fr 1fr 0fr 0fr">
-        <GridLayoutItem justifySelf="start">
-          <AudioPlayerTimeDisplay
-            format={({currentTime}) => calculateTime(currentTime)}
-            overrides={{
-              typographyPreset: 'editorialSubheadline010',
-              stylePreset: 'customAudioPlayerLabels',
-            }}
-          />
-        </GridLayoutItem>
-        <GridLayoutItem justifySelf="end">
-          <AudioPlayerTimeDisplay
-            format={({duration}) => calculateTime(duration)}
-            overrides={{
-              typographyPreset: 'editorialSubheadline010',
-              stylePreset: 'customAudioPlayerLabels',
-            }}
-          />
-        </GridLayoutItem>
+      <GridLayout columns="auto 1fr auto">
+        <AudioPlayerTimeDisplay
+          format={({currentTime}) => calculateTime(currentTime)}
+          overrides={{
+            typographyPreset: 'editorialSubheadline010',
+            stylePreset: 'customAudioPlayerLabels',
+          }}
+        />
+
+        <GridLayoutItem />
+
+        <AudioPlayerTimeDisplay
+          format={({duration}) => calculateTime(duration)}
+          overrides={{
+            typographyPreset: 'editorialSubheadline010',
+            stylePreset: 'customAudioPlayerLabels',
+          }}
+        />
       </GridLayout>
     </AudioPlayerComposable>
   </ThemeProvider>
