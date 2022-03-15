@@ -19,4 +19,4 @@ export type RadioGroupProps = {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   name?: string;
   children?: React.ReactNode;
-} & React.HTMLAttributes<HTMLDivElement>;
+} & Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange' | 'value' | 'name'>;
