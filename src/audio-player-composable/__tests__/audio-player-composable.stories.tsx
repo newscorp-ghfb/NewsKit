@@ -160,7 +160,7 @@ export const AudioPlayerWithTimeDisplay = () => (
       <Block spaceStack="space030" />
       <SeekBar />
       <Block spaceStack="space030" />
-      <GridLayout columns="repeat(1, 1fr)">
+      <GridLayout columns="1fr 0fr 0fr 0fr">
         <GridLayoutItem justifySelf="end">
           <TimeDisplay />
         </GridLayoutItem>
@@ -177,7 +177,7 @@ export const AudioPlayerWithTimeDisplay = () => (
       <Block spaceStack="space030" />
       <SeekBar />
       <Block spaceStack="space030" />
-      <GridLayout columns="1fr 1fr 0fr 0fr 0fr">
+      <GridLayout columns="1fr 1fr 0fr 0fr">
         <GridLayoutItem justifySelf="start">
           <TimeDisplay format={({currentTime}) => calculateTime(currentTime)} />
         </GridLayoutItem>
@@ -194,7 +194,7 @@ export const AudioPlayerWithTimeDisplay = () => (
       <Block spaceStack="space030" />
       <SeekBar />
       <Block spaceStack="space030" />
-      <GridLayout columns="repeat(1, 1fr)">
+      <GridLayout columns="1fr 0fr 0fr 0fr">
         <GridLayoutItem justifySelf="end">
           <TimeDisplay format={({duration}) => calculateTime(duration)} />
         </GridLayoutItem>
@@ -214,7 +214,7 @@ export const AudioPlayerTimeDisplayOverrides = () => (
       <Block spaceStack="space030" />
       <SeekBar />
       <Block spaceStack="space030" />
-      <GridLayout columns="1fr 1fr 0fr 0fr 0fr">
+      <GridLayout columns="1fr 1fr 0fr 0fr">
         <GridLayoutItem justifySelf="start">
           <TimeDisplay
             format={({currentTime}) => calculateTime(currentTime)}
