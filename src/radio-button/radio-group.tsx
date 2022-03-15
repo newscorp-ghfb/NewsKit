@@ -28,7 +28,7 @@ export const RadioGroup = React.forwardRef<HTMLInputElement, RadioGroupProps>(
     );
     return (
       <RadioGroupContext.Provider value={{name, onChange: handleChange, value}}>
-        <div ref={ref} role="radiogroup" {...restProps}>
+        <div ref={ref} {...restProps}>
           {children}
         </div>
       </RadioGroupContext.Provider>

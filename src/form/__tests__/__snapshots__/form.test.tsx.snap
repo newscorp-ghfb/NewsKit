@@ -4040,9 +4040,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
         Checkbox assistive text
       </p>
     </div>
-    <div
-      role="radiogroup"
-    >
+    <div>
       <label
         class="emotion-22"
       >
@@ -5092,9 +5090,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
         Checkbox assistive text
       </p>
     </div>
-    <div
-      role="radiogroup"
-    >
+    <div>
       <label
         class="emotion-22"
       >
@@ -6428,9 +6424,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   color: #C0C0C0;
 }
 
-<div
-    role="radiogroup"
-  >
+<div>
     <label
       class="emotion-0"
     >
