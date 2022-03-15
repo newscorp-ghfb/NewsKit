@@ -1,2 +1,4 @@
 export {calculateTime} from './components/time-display/utils';
-export {TimeDisplay} from './components/time-display';
+export {AudioPlayerTimeDisplay} from './components/time-display';
+export {AudioPlayerSeekBar} from './components/seek-bar';
+export {AudioPlayerPlayPauseButton} from './components/play-pause-button';
