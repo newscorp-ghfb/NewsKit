@@ -72,12 +72,7 @@ export const AudioPlayer = () => (
         columnGap="16px"
         alignItems="center"
       >
-        <PlayPauseButton
-          size={ButtonSize.Small}
-          onClick={() => {
-            console.log('customer click function');
-          }}
-        />
+        <PlayPauseButton size={ButtonSize.Small} />
         <TimeDisplay format={({currentTime}) => calculateTime(currentTime)} />
         <SeekBar />
         <TimeDisplay format={({duration}) => calculateTime(duration)} />
@@ -161,11 +156,7 @@ export const AudioPlayerWithTimeDisplay = () => (
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
       ariaLandmark="audio player 3"
     >
-      <PlayPauseButton
-        onClick={() => {
-          console.log('customer click function');
-        }}
-      />
+      <PlayPauseButton />
       <Block spaceStack="space030" />
       <SeekBar />
       <Block spaceStack="space030" />
@@ -182,11 +173,7 @@ export const AudioPlayerWithTimeDisplay = () => (
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
       ariaLandmark="audio player 4"
     >
-      <PlayPauseButton
-        onClick={() => {
-          console.log('customer click function');
-        }}
-      />
+      <PlayPauseButton />
       <Block spaceStack="space030" />
       <SeekBar />
       <Block spaceStack="space030" />
@@ -203,11 +190,7 @@ export const AudioPlayerWithTimeDisplay = () => (
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
       ariaLandmark="audio player 5"
     >
-      <PlayPauseButton
-        onClick={() => {
-          console.log('customer click function');
-        }}
-      />
+      <PlayPauseButton />
       <Block spaceStack="space030" />
       <SeekBar />
       <Block spaceStack="space030" />
@@ -227,11 +210,7 @@ export const AudioPlayerTimeDisplayOverrides = () => (
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
       ariaLandmark="audio player 6"
     >
-      <PlayPauseButton
-        onClick={() => {
-          console.log('customer click function');
-        }}
-      />
+      <PlayPauseButton />
       <Block spaceStack="space030" />
       <SeekBar />
       <Block spaceStack="space030" />
@@ -268,11 +247,7 @@ export const AudioPlayerSeekBar = () => (
     ariaLandmark="audio player 7"
   >
     <SeekBar />
-    <PlayPauseButton
-      onClick={() => {
-        console.log('customer click function');
-      }}
-    />
+    <PlayPauseButton />
   </AudioPlayerComposable>
 );
 
@@ -305,11 +280,7 @@ export const AudioPlayerSeekBarWithOverrides = () => (
             },
           }}
         />
-        <PlayPauseButton
-          onClick={() => {
-            console.log('customer click function');
-          }}
-        />
+        <PlayPauseButton />
       </AudioPlayerComposable>
     </ThemeProvider>
   </AudioPlayerContainer>

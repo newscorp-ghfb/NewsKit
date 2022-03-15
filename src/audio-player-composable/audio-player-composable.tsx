@@ -17,7 +17,7 @@ export const AudioPlayerComposable = ({
   live = false,
   ariaLandmark,
 }: AudioPlayerComposableProps) => {
-  const trackPositionRef = useRef(0);
+  const currentTimeRef = useRef(0);
 
   const audioRef = useRef<HTMLAudioElement>(null);
   const showLoaderTimeoutRef: MutableRefObject<number> = useRef(0);
@@ -25,7 +25,7 @@ export const AudioPlayerComposable = ({
   const [playing, setPlayState] = useState(autoPlay);
   const [loading, setLoading] = useState(true);
   const [duration, setDuration] = useState(0);
-  const [currentTime, setTrackPosition] = useState(0);
+  const [currentTime, setCurrentTime] = useState(0);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [displayDuration, setDisplayDuration] = useState(0);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -34,11 +34,11 @@ export const AudioPlayerComposable = ({
   const [buffered, setBuffered] = useState<TimeRanges>();
 
   useEffect(() => {
-    trackPositionRef.current = currentTime;
+    currentTimeRef.current = currentTime;
   });
 
   useEffect(() => {
-    setTrackPosition(0);
+    setCurrentTime(0);
     setDisplayDuration(0);
   }, [src]);
 
@@ -51,11 +51,11 @@ export const AudioPlayerComposable = ({
     loading,
     setPlayState,
     showLoaderTimeoutRef,
-    setTrackPosition,
+    setCurrentTime,
     setBuffered,
     setDisplayDuration,
     setIsPrevTrackBtnDisabled,
-    trackPositionRef,
+    currentTimeRef,
     duration,
     setDuration,
     src,
