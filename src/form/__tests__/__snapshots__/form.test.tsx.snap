@@ -464,6 +464,9 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #0A782A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
@@ -472,6 +475,9 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
   width: 24px;
   height: 24px;
   fill: #0A782A;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-8 {
