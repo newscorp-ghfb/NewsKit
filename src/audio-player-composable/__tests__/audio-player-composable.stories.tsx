@@ -5,6 +5,7 @@ import {SeekBar} from '../components/seek-bar/seek-bar';
 import {AudioPlayerComposable} from '../audio-player-composable';
 import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
+import {Button} from '../../button';
 
 const AudioPlayerContainer = styled.div<{dark?: boolean}>`
   border: solid 1px red;
@@ -127,6 +128,7 @@ export const AudioPlayerSeekBar = () => (
         console.log('customer click function');
       }}
     />
+    <Button onClick={() => alert('hi')}>Other button</Button>
   </AudioPlayerComposable>
 );
 

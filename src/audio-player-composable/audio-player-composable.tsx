@@ -1,4 +1,10 @@
-import React, {MutableRefObject, useEffect, useRef, useState} from 'react';
+import React, {
+  MutableRefObject,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import {IconFilledPause} from '../icons/filled/material/icon-filled-pause';
 import {IconFilledPlayArrow} from '../icons/filled/material/icon-filled-play-arrow';
 import {IconFilledStop} from '../icons/filled/material/icon-filled-stop';
@@ -6,6 +12,12 @@ import {AudioElement} from './components/audio-element';
 import {useAudioFunctions} from './audio-functions';
 import {AudioPlayerProvider} from './context';
 import {AudioPlayerComposableProps} from './types';
+import {useKeypress} from '../utils/hooks/use-keypress';
+
+const defaultKeyboardShortcuts = {
+  jumpToStart: ['0', 'Home'],
+  jumpToEnd: ['1', 'End'],
+};
 
 export const AudioPlayerComposable = ({
   children,
@@ -15,10 +27,12 @@ export const AudioPlayerComposable = ({
   /* istanbul ignore next */
   live = false,
   ariaLandmark,
+  keyboardShortcuts: keyboardShortcutsProp,
 }: AudioPlayerComposableProps) => {
   const trackPositionRef = useRef(0);
 
   const audioRef = useRef<HTMLAudioElement>(null);
+  const audioSectionRef = useRef<HTMLScriptElement>(null);
   const showLoaderTimeoutRef: MutableRefObject<number> = useRef(0);
 
   const [playing, setPlayState] = useState(autoPlay);
@@ -115,13 +129,32 @@ export const AudioPlayerComposable = ({
 
     // Internal for AudioElement
     audioRef,
+    audioSectionRef,
+    togglePlay,
     audioEvents,
     src,
     autoPlay,
   };
 
+  // Keyboard shortcuts
+  const options = {target: audioSectionRef, preventDefault: false};
+  const keyboardShortcuts = {
+    ...defaultKeyboardShortcuts,
+    ...keyboardShortcutsProp,
+  };
+
+  const pressJumpToStart = useCallback(() => {
+    onChangeSlider(0);
+  }, [onChangeSlider]);
+  const pressJumpToEnd = useCallback(() => {
+    onChangeSlider(duration);
+  }, [onChangeSlider, duration]);
+
+  useKeypress(keyboardShortcuts.jumpToStart, pressJumpToStart, options);
+  useKeypress(keyboardShortcuts.jumpToEnd, pressJumpToEnd, options);
+
   return (
-    <section aria-label={ariaLandmark || 'Audio Player'}>
+    <section aria-label={ariaLandmark || 'Audio Player'} ref={audioSectionRef}>
       <AudioPlayerProvider value={value}>
         <AudioElement />
         {children}
