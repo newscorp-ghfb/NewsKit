@@ -3,10 +3,10 @@ import React from 'react';
 import {fireEvent, act} from '@testing-library/react';
 import {renderWithImplementation, renderWithTheme} from '../../test/test-utils';
 import {AudioPlayerComposable} from '../audio-player-composable';
-import {PlayPauseButton} from '../components/play-pause-button/play-pause-button';
-import {SeekBar} from '../components/seek-bar/seek-bar';
+import {AudioPlayerPlayPauseButton} from '../components/play-pause-button/play-pause-button';
+import {AudioPlayerSeekBar} from '../components/seek-bar/seek-bar';
 import {AudioPlayerComposableProps} from '../types';
-import {TimeDisplay} from '../components/time-display/time-display';
+import {AudioPlayerTimeDisplay} from '../components/time-display/time-display';
 
 import {formatFunction} from '../components/time-display/utils';
 import {compileTheme, createTheme} from '../../theme';
@@ -19,8 +19,8 @@ const recordedAudioProps: AudioPlayerComposableProps = {
   autoPlay: false,
   children: (
     <>
-      <SeekBar />
-      <PlayPauseButton
+      <AudioPlayerSeekBar />
+      <AudioPlayerPlayPauseButton
         onClick={() => {
           console.log('customer click function');
         }}
@@ -34,8 +34,8 @@ const recordedAudioPropsAutoplay: AudioPlayerComposableProps = {
   autoPlay: true,
   children: (
     <>
-      <SeekBar />
-      <PlayPauseButton
+      <AudioPlayerSeekBar />
+      <AudioPlayerPlayPauseButton
         onClick={() => {
           console.log('customer click function');
         }}
@@ -63,7 +63,7 @@ const recordedSeekBarOverrides: AudioPlayerComposableProps = {
   autoPlay: false,
   children: (
     <>
-      <SeekBar
+      <AudioPlayerSeekBar
         overrides={{
           slider: {
             track: {
@@ -83,12 +83,12 @@ const recordedSeekBarOverrides: AudioPlayerComposableProps = {
           },
         }}
       />
-      <PlayPauseButton
+      <AudioPlayerPlayPauseButton
         onClick={() => {
           console.log('customer click function');
         }}
       />
-      <TimeDisplay
+      <AudioPlayerTimeDisplay
         format={({currentTime, duration}) =>
           formatFunction({currentTime, duration})
         }
@@ -102,12 +102,12 @@ const recordedTimeDisplayOverrides: AudioPlayerComposableProps = {
   autoPlay: true,
   children: (
     <>
-      <PlayPauseButton
+      <AudioPlayerPlayPauseButton
         onClick={() => {
           console.log('customer click function');
         }}
       />
-      <TimeDisplay overrides={{stylePreset: 'myTimeDisplay'}} />
+      <AudioPlayerTimeDisplay overrides={{stylePreset: 'myTimeDisplay'}} />
     </>
   ),
 };

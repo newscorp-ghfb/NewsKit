@@ -27,7 +27,7 @@ export const ThemelessTimeDisplay = ({
   );
 };
 
-export const TimeDisplay = withOwnTheme(ThemelessTimeDisplay)({
+export const AudioPlayerTimeDisplay = withOwnTheme(ThemelessTimeDisplay)({
   defaults,
   stylePresets,
 });

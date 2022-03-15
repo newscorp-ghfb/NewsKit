@@ -141,7 +141,7 @@ const ThemelessSeekBar: React.FC<SeekBarProps> = ({overrides = {}}) => {
   );
 };
 
-export const SeekBar = withOwnTheme(ThemelessSeekBar)({
+export const AudioPlayerSeekBar = withOwnTheme(ThemelessSeekBar)({
   defaults,
   stylePresets,
 });
