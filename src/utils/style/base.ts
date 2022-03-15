@@ -91,7 +91,7 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
         /* istanbul ignore next */
         let preset = '' as Record<ThemeToken, unknown>[ThemeToken];
         const MQtokens =
-          typeof presetKey === 'string' ? (presetKey as string).split(' ') : [];
+          typeof presetKey === 'string' && (presetKey as string).split(' ');
         if (themeKey === 'spacePresets' && isMQTokenArray(MQtokens)) {
           preset = mapTokensArray(MQtokens);
         } else {

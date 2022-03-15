@@ -204,7 +204,7 @@ const BannerWrapper = styled.div`
   ${getSpacingCssFromTheme('paddingTop', {xs: '40px', md: '43px', lg: '0px'})}
 `;
 
-export default (layoutProps: LayoutProps) => {
+const Index = (layoutProps: LayoutProps) => {
   const [bannerIsActive, setBannerIsActive] = React.useState(true);
   const bannerOnClose = () => {
     setBannerIsActive(false);
@@ -411,3 +411,5 @@ export default (layoutProps: LayoutProps) => {
     </Layout>
   );
 };
+
+export default Index;

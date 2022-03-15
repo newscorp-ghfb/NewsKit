@@ -1,4 +1,6 @@
 import {
+  BreakpointKeys,
+  Theme,
   TransitionPreset,
   TransitionPresetStates,
   TransitionPresetStyleKeys,
@@ -11,6 +13,8 @@ import {isArrayLikeObject, unifyTransition} from './utils';
 import {hasOwnProperty} from '../has-own-property';
 import {ThemeProp} from '../style-types';
 import {CSSObject} from './emotion';
+import {MQ} from './types';
+import {getMediaQueryFromTheme, isResponsive} from '../responsive-helpers';
 
 const cssTransitionPropertiesList: [TransitionPresetStyleKeys, string][] = [
   ['transitionProperty', ', '],
@@ -95,22 +99,74 @@ function concatAndMergeInTransitionStringsForPreset(
   );
 }
 
+const getMergedTransitionPresets = (token: TransitionToken[], theme: Theme) => {
+  const mergedTransitionPresets = token
+    .map(tkn => unifyTransition(theme, tkn))
+    .filter(transition => transition)
+    .reduce(
+      (mergedTransitionPreset, transition) =>
+        concatAndMergeInTransitionStringsForPreset(
+          transition,
+          mergedTransitionPreset,
+        ),
+      {} as TransitionPreset,
+    );
+
+  return mergedTransitionPresets;
+};
+
 export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
-  token: TransitionToken | TransitionToken[],
+  token: MQ<TransitionToken> | MQ<TransitionToken[]>,
   componentClassName?: string,
 ) => (props: Props) => {
+  /* istanbul ignore if */
+  if (!token) return '';
+
+  if (isResponsive(token, props.theme.breakpoints)) {
+    return Object.entries(token).reduce(
+      (acc, [key, transitionPresetToken], index, arr) => {
+        const nextKey = arr[index + 1] ? arr[index + 1][0] : undefined;
+
+        const mediaQuery = getMediaQueryFromTheme(
+          key as BreakpointKeys,
+          nextKey as BreakpointKeys,
+        )({
+          theme: props.theme,
+        });
+
+        if (Array.isArray(transitionPresetToken)) {
+          const mergedTransitionPresets = getMergedTransitionPresets(
+            transitionPresetToken as TransitionToken[],
+            props.theme,
+          );
+
+          acc[mediaQuery] = getTransitionPresetValueFromTheme(
+            mergedTransitionPresets,
+            componentClassName,
+          );
+        } else {
+          const transitionPreset = unifyTransition(
+            props.theme,
+            transitionPresetToken,
+          );
+
+          acc[mediaQuery] = getTransitionPresetValueFromTheme(
+            transitionPreset,
+            componentClassName,
+          );
+        }
+
+        return acc;
+      },
+      {} as {[index: string]: CSSObject},
+    );
+  }
+
   if (Array.isArray(token)) {
-    const mergedTransitionPresets = token
-      .map(tkn => unifyTransition(props.theme, tkn))
-      .filter(transition => transition)
-      .reduce(
-        (mergedTransitionPreset, transition) =>
-          concatAndMergeInTransitionStringsForPreset(
-            transition,
-            mergedTransitionPreset,
-          ),
-        {} as TransitionPreset,
-      );
+    const mergedTransitionPresets = getMergedTransitionPresets(
+      token,
+      props.theme,
+    );
 
     return Object.keys(mergedTransitionPresets).length
       ? getTransitionPresetValueFromTheme(
@@ -120,7 +176,10 @@ export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
       : '';
   }
 
-  const transitionPreset = unifyTransition(props.theme, token);
+  const transitionPreset = unifyTransition(
+    props.theme,
+    token as TransitionToken,
+  );
 
   return transitionPreset
     ? getTransitionPresetValueFromTheme(transitionPreset, componentClassName)
@@ -140,9 +199,22 @@ const getDefaultedValue = <
 ) => (props: Props) => {
   const token = getToken(props, defaultPath, overridePath, presetType);
 
-  const tokenAsSingleOrMultiply = isArrayLikeObject(token)
-    ? Object.values(token)
-    : token;
+  let tokenAsSingleOrMultiply;
+
+  if (isResponsive(token, props.theme.breakpoints)) {
+    tokenAsSingleOrMultiply = Object.entries(token).reduce((acc, currVal) => {
+      const [bp, trValue] = currVal as [string, object];
+      acc[bp] = (isArrayLikeObject(trValue)
+        ? Object.values(trValue)
+        : trValue) as TransitionToken | TransitionToken[];
+
+      return acc;
+    }, {} as {[index: string]: TransitionToken | TransitionToken[]});
+  } else {
+    tokenAsSingleOrMultiply = isArrayLikeObject(token)
+      ? Object.values(token)
+      : token;
+  }
 
   return getPresetFromThemeUtil(
     tokenAsSingleOrMultiply,

@@ -2,7 +2,7 @@ import React, {useEffect, useContext} from 'react';
 import {useFormContext} from 'react-hook-form';
 import composeRefs from '@seznam/compose-react-refs';
 import {TextInputProps, TextInputSize} from './types';
-import {getSSRId} from '../utils/get-ssr-id';
+import {useReactKeys} from '../utils/hooks';
 import {FormValidationContext} from '../form/context';
 
 import {
@@ -72,7 +72,7 @@ const ThemelessTextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [errorText, hadError, name]);
 
-    const id = getSSRId();
+    const [id] = useReactKeys(1);
     const assistiveTextId =
       (errorText && `${id}-error-text`) ||
       (assistiveText && `${id}-assistive-text`);

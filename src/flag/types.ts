@@ -1,3 +1,5 @@
+import {LogicalProps} from '../utils/logical-properties';
+import {TransitionToken} from '../theme/types';
 import {MQ} from '../utils/style';
 
 export enum FlagSize {
@@ -6,11 +8,15 @@ export enum FlagSize {
   Large = 'large',
 }
 
-export interface BaseFlagOverrides {
+export interface BaseFlagOverrides extends LogicalProps {
   typographyPreset?: MQ<string>;
   stylePreset?: MQ<string>;
+  transitionPreset?: TransitionToken | TransitionToken[];
+  /**
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingBlock` and `paddingInline` instead.
+   */
   spaceInset?: MQ<string>;
-  spaceInline?: MQ<string>;
+  spaceInline?: MQ<string>; // Note: LogicalProps can not replace spaceInline! spaceInline = Stack's gap
   width?: MQ<string>;
   height?: MQ<string>;
   minWidth?: MQ<string>;
@@ -27,5 +33,5 @@ export interface BaseFlagProps<TOverrides> {
   size?: 'small' | 'medium' | 'large';
   children?: React.ReactNode;
 }
-
-export interface FlagProps extends BaseFlagProps<BaseFlagOverrides> {}
+export interface FlagProps
+  extends BaseFlagProps<Omit<BaseFlagOverrides, 'transitionPreset'>> {}

@@ -413,7 +413,7 @@ const STYLE_PRESET_STATES = [
   },
 ];
 
-export default (layoutProps: LayoutProps) => (
+const StylePresets = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
       title: 'Style Presets',
@@ -422,7 +422,7 @@ export default (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Foundations',
+      type: 'Presets',
       name: 'Style Presets',
       hero: {
         illustration: 'theme/style-presets/hero',
@@ -537,29 +537,29 @@ export default (layoutProps: LayoutProps) => (
         >
           <Code>
             {`const buttonSolidPrimary: StylePresetStates = {
-      base: {
-          backgroundColor: '{{colors.interactivePrimary030}}',
-          borderRadius: '{{borders.borderRadiusCircle}}',
-          color: '{{colors.inkInverse}}',
-          iconColor: '{{colors.inkInverse}}',
-      },
-      hover: {
-          backgroundColor: '{{colors.interactivePrimary040}}',
-      },
-      active: {
-          backgroundColor: '{{colors.interactivePrimary050}}',
-      },
-      disabled: {
-          backgroundColor: '{{colors.interactiveDisabled010}}',
-          color: '{{colors.inkNonEssential}}',
-          iconColor: '{{colors.inkNonEssential}}',
-      },
-      loading: {
-          backgroundColor: '{{colors.interactivePrimary020}}',
-          color: '{{colors.inkBrand010}}',
-          iconColor: '{{colors.inkBrand010}}',
-      },
-  };`}
+    base: {
+        backgroundColor: '{{colors.interactivePrimary030}}',
+        borderRadius: '{{borders.borderRadiusCircle}}',
+        color: '{{colors.inkInverse}}',
+        iconColor: '{{colors.inkInverse}}',
+    },
+    hover: {
+        backgroundColor: '{{colors.interactivePrimary040}}',
+    },
+    active: {
+        backgroundColor: '{{colors.interactivePrimary050}}',
+    },
+    disabled: {
+        backgroundColor: '{{colors.interactiveDisabled010}}',
+        color: '{{colors.inkNonEssential}}',
+        iconColor: '{{colors.inkNonEssential}}',
+    },
+    loading: {
+        backgroundColor: '{{colors.interactivePrimary020}}',
+        color: '{{colors.inkBrand010}}',
+        iconColor: '{{colors.inkBrand010}}',
+    },
+};`}
           </Code>
         </ContentSecondary>
       </ContentSection>
@@ -584,3 +584,5 @@ export default (layoutProps: LayoutProps) => (
     </ComponentPageCell>
   </FoundationPageTemplate>
 );
+
+export default StylePresets;

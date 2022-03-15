@@ -1,9 +1,18 @@
 import React from 'react';
 import {Block} from '..';
 import {styled} from '../../utils/style';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
 import {Visible} from '../../grid/visibility';
+
+const Square = styled(Block)`
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+`;
 
 // The style presets are added for easier visualization of the spacings around the Block component
 const myCustomTheme = createTheme({
@@ -31,6 +40,32 @@ const myCustomTheme = createTheme({
           backgroundColor: '{{colors.interfaceInformative010}}',
           color: '{{colors.inkInverse}}',
           iconColor: '{{colors.inkInverse}}',
+        },
+      },
+      transitionBlock: {
+        base: {
+          backgroundColor: '{{colors.purple020}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.amber070}}',
+        },
+      },
+      logicalBlock: {
+        base: {
+          backgroundColor: '{{colors.green040}}',
+          borderWidth: '{{borders.borderWidth020}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.blue060}}',
+        },
+      },
+    },
+    transitionPresets: {
+      customBackgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '500ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
       },
     },
@@ -108,7 +143,68 @@ export const StoryBlock = () => (
         </Block>
       </Block>
       <StyledHr />
+      <Block stylePreset="blockOuter">
+        <StorybookSubHeading>Block with transition</StorybookSubHeading>
+        <Block
+          spaceStack="space030"
+          spaceInset="spaceInset030"
+          stylePreset="transitionBlock"
+          transitionPreset="customBackgroundColorChange"
+        >
+          <span>Block with transition</span>
+        </Block>
+      </Block>
     </ThemeProvider>
   </>
 );
 StoryBlock.storyName = 'block';
+
+export const StoryBlockLogical = () => (
+  <>
+    <ThemeProvider theme={myCustomTheme}>
+      <StorybookHeading>
+        Inspect the box for better understanding
+      </StorybookHeading>
+      <StorybookSubHeading>paddingInline & paddingBlock</StorybookSubHeading>
+      <Square
+        stylePreset="logicalBlock"
+        paddingInline="space020"
+        paddingBlock="space040"
+      >
+        A
+      </Square>
+      <StorybookSubHeading>marginInline & marginBlock</StorybookSubHeading>
+      <Square
+        stylePreset="logicalBlock"
+        marginInline="space020"
+        marginBlock="space040"
+      >
+        B
+      </Square>
+      <StorybookSubHeading>
+        marginInline & marginBlock & paddingInline & paddingBlock
+      </StorybookSubHeading>
+      <Square
+        stylePreset="logicalBlock"
+        paddingInline="space020"
+        paddingBlock="space040"
+        marginInline="space020"
+        marginBlock="space040"
+      >
+        C
+      </Square>
+      <StorybookSubHeading>
+        marginInline & marginBlock & spaceInline
+      </StorybookSubHeading>
+      <Square
+        stylePreset="logicalBlock"
+        marginInline="space020"
+        marginBlock="space040"
+        spaceInline="space050"
+      >
+        D
+      </Square>
+    </ThemeProvider>
+  </>
+);
+StoryBlockLogical.storyName = 'block-logical';

@@ -1,4 +1,6 @@
+import {logicalProps} from '../utils/logical-properties';
 import {Theme} from '../theme';
+
 import {
   css,
   styled,
@@ -121,6 +123,8 @@ export const StyledSelectPanel = styled.div<{
       'spaceInset',
     )}
 
+  ${({$size}) => logicalProps(`select.${$size}.panel`)};
+
   ${({$width}) => `width: ${$width}px;`}
   ${({$top}) => `top: ${$top}px;`}
   ${({$left}) => `left: ${$left}px;`}
@@ -134,6 +138,7 @@ export const StyledSelectPanel = styled.div<{
 `;
 
 export const StyledModalPanel = styled.div`
+  position: relative;
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 100%;

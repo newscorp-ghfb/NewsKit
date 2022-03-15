@@ -42,7 +42,7 @@ const Playground = ({open, ...state}: {open: boolean}) => {
   );
 };
 
-export default (layoutProps: LayoutProps) => (
+const DrawerComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Drawer',
@@ -193,11 +193,11 @@ export default (layoutProps: LayoutProps) => (
         {
           title: 'Placement',
           description: `The Drawer can appear from the left (default), right, top, or
-                bottom of the screen. When appearing from the left or right of
-                the screen, the close Icon Button is positioned on the same side
-                where the Drawer originates from. When appearing from the top or
-                bottom of the screen, the close Icon Button is positioned on the
-                right as default.`,
+              bottom of the screen. When appearing from the left or right of
+              the screen, the close Icon Button is positioned on the same side
+              where the Drawer originates from. When appearing from the top or
+              bottom of the screen, the close Icon Button is positioned on the
+              right as default.`,
 
           media: getIllustrationComponent(
             'components/drawer/drawer-options-placement-illustration',
@@ -618,3 +618,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default DrawerComponent;
