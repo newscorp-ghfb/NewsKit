@@ -8,7 +8,6 @@ import {StyledLabelProps} from './types';
 import {TextBlock} from '../../../text-block';
 
 const StyledTextBlock = styled(TextBlock)<StyledLabelProps>`
-  display: inline-block;
   ${getStylePreset(`timeDisplay`, '')}
   ${getTypographyPreset(`timeDisplay`, '')};
 `;
