@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 export {calculateTime} from './components/time-display/utils';
 export {AudioPlayerTimeDisplay} from './components/time-display';
 export {AudioPlayerSeekBar} from './components/seek-bar';
