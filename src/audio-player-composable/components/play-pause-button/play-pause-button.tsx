@@ -42,7 +42,9 @@ export const PlayPauseButton: React.FC<PlayPauseButtonProps> = React.memo(
 
         if (
           typeof togglePlay === 'function' &&
-          (!isActionKey || (isActionKey && !isActionElement))
+          (!isActionKey ||
+            // pressing Space or Enter when the focused element is a Button, A or Input will not trigger the toggle
+            (isActionKey && !isActionElement))
         ) {
           togglePlay();
         }
