@@ -2006,19 +2006,6 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -2040,9 +2027,6 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2144,19 +2128,6 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -2178,9 +2149,6 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2326,19 +2294,6 @@ exports[`Checkbox render with size: large & checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -2377,9 +2332,6 @@ exports[`Checkbox render with size: large & checked 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2835,19 +2787,6 @@ exports[`Checkbox render with size: large 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -2869,9 +2808,6 @@ exports[`Checkbox render with size: large 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -3017,19 +2953,6 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -3068,9 +2991,6 @@ exports[`Checkbox render with size: medium & checked 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -3526,19 +3446,6 @@ exports[`Checkbox render with size: medium 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -3560,9 +3467,6 @@ exports[`Checkbox render with size: medium 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -3708,19 +3612,6 @@ exports[`Checkbox render with size: small & checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -3759,9 +3650,6 @@ exports[`Checkbox render with size: small & checked 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4217,19 +4105,6 @@ exports[`Checkbox render with size: small 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -4251,9 +4126,6 @@ exports[`Checkbox render with size: small 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4399,19 +4271,6 @@ exports[`Checkbox render with state: checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -4451,9 +4310,6 @@ exports[`Checkbox render with state: checked 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4570,15 +4426,6 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #C0C0C0;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
 <div
     class="emotion-0"
   >
@@ -4619,9 +4466,6 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4830,19 +4674,6 @@ exports[`Checkbox render with state: default 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -4865,9 +4696,6 @@ exports[`Checkbox render with state: default 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4967,15 +4795,6 @@ exports[`Checkbox render with state: disabled 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #C0C0C0;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
 <div
     class="emotion-0"
   >
@@ -4999,9 +4818,6 @@ exports[`Checkbox render with state: disabled 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5109,19 +4925,6 @@ exports[`Checkbox render with state: invalid 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -5144,9 +4947,6 @@ exports[`Checkbox render with state: invalid 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5273,19 +5073,6 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -5325,9 +5112,6 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5435,19 +5219,6 @@ exports[`Checkbox render with state: valid 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -5470,9 +5241,6 @@ exports[`Checkbox render with state: valid 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5599,19 +5367,6 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -5651,9 +5406,6 @@ exports[`Checkbox render with state: valid-checked 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5755,19 +5507,6 @@ exports[`Checkbox with overrides 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 1.125;
-  font-weight: 700;
-  letter-spacing: 0;
-}
-
-.emotion-7 svg {
-  fill: #535353;
-}
-
 <div
     class="emotion-0"
   >
@@ -5806,9 +5545,6 @@ exports[`Checkbox with overrides 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;

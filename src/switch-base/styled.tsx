@@ -68,7 +68,7 @@ const insetCSS = `
 export const StyledSwitch = styled.div<
   Pick<SwitchBaseProps, 'checked' | 'size' | 'state' | 'overrides' | 'path'> & {
     isFocused: boolean;
-    isHover: boolean;
+    isHovered: boolean;
     feedbackIsVisible: boolean;
   }
 >`
@@ -76,14 +76,14 @@ export const StyledSwitch = styled.div<
   display: flex;
   justify-content: center;
   align-items: center;
-  ${({size, checked, state, isFocused, isHover, path}) =>
+  ${({size, checked, state, isFocused, isHovered, path}) =>
     getStylePreset(`${path}.${size}.input`, 'input', {
       isChecked: checked,
       isDisabled: state === 'disabled',
       isInvalid: state === 'invalid',
       isValid: state === 'valid',
       isFocused,
-      isHover,
+      isHovered,
     })};
   ${({feedbackIsVisible}) =>
     feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`};
@@ -94,24 +94,24 @@ export const StyledSwitch = styled.div<
 export const StyledFeedback = styled.div<
   Pick<SwitchBaseProps, 'size' | 'overrides' | 'state' | 'path'> & {
     isFocused: boolean;
-    isHover: boolean;
+    isHovered: boolean;
   }
 >`
   position: absolute;
   top: 50%;
   left: 50%;
   opacity: 0.7;
-  ${({isHover, isFocused}) =>
-    (isHover || isFocused) && `z-index: ${STACKING_CONTEXT.feedback}`};
+  ${({isHovered, isFocused}) =>
+    (isHovered || isFocused) && `z-index: ${STACKING_CONTEXT.feedback}`};
 
-  ${({size, isHover, isFocused, state, path}) =>
+  ${({size, isHovered, isFocused, state, path}) =>
     getStylePreset(`${path}.${size}.feedback`, 'feedback', {
-      isHover,
+      isHovered,
       isFocused,
       isInvalid: state === 'invalid',
       isValid: state === 'valid',
       // when is not HOVER we need to remove the hover so it does not apply as class:hover
-      omitStates: isHover ? [] : ['hover'],
+      omitStates: isHovered ? [] : ['hover'],
     })}
   ${({size, path}) =>
     getResponsiveSize(

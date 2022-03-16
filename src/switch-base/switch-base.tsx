@@ -37,9 +37,9 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
     inputRef,
   ) => {
     const ref = useRef<HTMLInputElement>(null);
-    const [isFocused, setFocused] = React.useState(false);
-    const [isLabelHover, setLabelHover] = React.useState(false);
-    const [isFeedbackHover, setFeedbackHover] = React.useState(false);
+    const [isInputFocused, setIsInputFocused] = React.useState(false);
+    const [isLabelHovered, setIsLabelHovered] = React.useState(false);
+    const [isFeedbackHovered, setIsFeedbackHovered] = React.useState(false);
 
     const [checked, setCheckedState] = useControlled({
       controlledValue: checkedProp,
@@ -50,52 +50,51 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
       // When label is passed, everything ( input and feedback components) is wrap inside the label
       // so there is no need for clicking on the input
       /* istanbul ignore else */
-      if (ref && ref.current && !label) {
+      if (!label && ref && ref.current) {
         ref.current.click();
       }
     }, [ref, label]);
 
     const onInputChange = useCallback(
       event => {
-        const newChecked = event.target.checked;
-        setCheckedState(newChecked);
+        setCheckedState(event.target.checked);
       },
       [setCheckedState],
     );
 
     const onInputFocus = useCallback(() => {
-      setFocused(true);
-    }, [setFocused]);
+      setIsInputFocused(true);
+    }, [setIsInputFocused]);
 
     const onInputBlur = useCallback(() => {
-      setFocused(false);
-    }, [setFocused]);
+      setIsInputFocused(false);
+    }, [setIsInputFocused]);
 
     // onLabelMouseOver && onLabelMouseLeave
     // are used to apply hover state on the checkbox when mouse is over label
     const onLabelMouseOver = useCallback(() => {
       if (state !== 'disabled') {
-        setLabelHover(true);
+        setIsLabelHovered(true);
       }
-    }, [setLabelHover, state]);
+    }, [setIsLabelHovered, state]);
 
     const onLabelMouseLeave = useCallback(() => {
       if (state !== 'disabled') {
-        setLabelHover(false);
+        setIsLabelHovered(false);
       }
-    }, [setLabelHover, state]);
+    }, [setIsLabelHovered, state]);
 
     const onFeedbackMouseOver = useCallback(() => {
       if (state !== 'disabled') {
-        setFeedbackHover(true);
+        setIsFeedbackHovered(true);
       }
-    }, [setFeedbackHover, state]);
+    }, [setIsFeedbackHovered, state]);
 
     const onFeedbackMouseLeave = useCallback(() => {
       if (state !== 'disabled') {
-        setFeedbackHover(false);
+        setIsFeedbackHovered(false);
       }
-    }, [setFeedbackHover, state]);
+    }, [setIsFeedbackHovered, state]);
 
     const theme = useTheme();
     const iconSize = getToken(
@@ -116,7 +115,7 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
       },
     );
 
-    const labelElement = (
+    const labelElement = label && (
       <StyledLabel path={path} size={size} overrides={overrides} state={state}>
         {label}
       </StyledLabel>
@@ -150,8 +149,8 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
             state={state}
             onClick={onFeedbackClick}
             data-testid={`${type}-feedback`}
-            isFocused={isFocused}
-            isHover={isFeedbackHover || isLabelHover}
+            isFocused={isInputFocused}
+            isHovered={isFeedbackHovered || isLabelHovered}
             path={path}
           />
           <StyledSwitch
@@ -159,9 +158,11 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
             state={state}
             overrides={overrides}
             size={size}
-            isFocused={isFocused}
-            isHover={isLabelHover}
-            feedbackIsVisible={isLabelHover || isFeedbackHover || isFocused}
+            isFocused={isInputFocused}
+            isHovered={isLabelHovered}
+            feedbackIsVisible={
+              isLabelHovered || isFeedbackHovered || isInputFocused
+            }
             path={path}
           >
             <CheckIcon {...(checkIconProps as SwitchBaseIconProps)} />
