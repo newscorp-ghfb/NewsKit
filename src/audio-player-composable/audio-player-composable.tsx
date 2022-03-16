@@ -32,7 +32,7 @@ export const AudioPlayerComposable = ({
   const trackPositionRef = useRef(0);
 
   const audioRef = useRef<HTMLAudioElement>(null);
-  const audioSectionRef = useRef<HTMLScriptElement>(null);
+  const audioSectionRef = useRef<HTMLDivElement>(null);
   const showLoaderTimeoutRef: MutableRefObject<number> = useRef(0);
 
   const [playing, setPlayState] = useState(autoPlay);

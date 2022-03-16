@@ -7,7 +7,7 @@ interface AudioPlayerProviderContext {
   autoPlay?: boolean;
   // Internal
   audioRef: React.RefObject<HTMLAudioElement>;
-  audioSectionRef: React.RefObject<HTMLSelectElement>;
+  audioSectionRef: React.RefObject<HTMLDivElement>;
   playing: boolean;
   canPause: boolean;
   loading: boolean;
