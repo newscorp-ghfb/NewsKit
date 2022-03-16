@@ -12,7 +12,7 @@ export const StatesSection: React.FC<StatesSectionProps> = ({
 }) => (
   <CommonSection title="States" id="states" introduction={introduction}>
     <ComponentPageCell>
-      <MediaList {...states} layout="2-span" />
+      <MediaList {...states} layout="3-span" />
     </ComponentPageCell>
   </CommonSection>
 );

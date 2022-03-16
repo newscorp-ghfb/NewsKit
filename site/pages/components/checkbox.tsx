@@ -162,6 +162,221 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             'The Checkbox has a base (default) state. This is the base style of the Checkbox before it has been interacted with by a user.',
           media: getIllustrationComponent('components/checkbox/states/base'),
         },
+        {
+          title: 'Hover',
+          description:
+            'The Checkbox has a hover state. The style of the Checkbox changes to visually communicate and provide feedback to the user that the Checkbox is an interactive element. The style of the label remains the same. The label can also be interacted with (hovered) to check the Checkbox.',
+          media: getIllustrationComponent('components/checkbox/states/hover'),
+        },
+        {
+          title: 'Focus',
+          description:
+            'The Checkbox in a focus state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent('components/checkbox/states/focus'),
+        },
+        {
+          title: 'Focus Hover',
+          description:
+            'The Checkbox in a focus hover state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/focus-hover',
+          ),
+        },
+        {
+          title: 'Checked',
+          description:
+            'The Checkbox has a checked state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox has been checked. The style of the label remains the same.',
+          media: getIllustrationComponent('components/checkbox/states/checked'),
+        },
+        {
+          title: 'Checked Hover',
+          description:
+            'The Checkbox has a checked hover state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox has been checked and hovered over. The style of the label remains the same.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/checked-hover',
+          ),
+        },
+        {
+          title: 'Checked Focus',
+          description:
+            'The Checkbox in a checked focus state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/checked-focus',
+          ),
+        },
+        {
+          title: 'Checked Focus Hover',
+          description:
+            'The Checkbox in a checked focus hover state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/checked-focus-hover',
+          ),
+        },
+        {
+          title: 'Invalid',
+          description:
+            'The Checkbox in an invalid state changes style when the Checkbox selection doesn’t conform to a specific format eg. attempting to proceed without selecting a required Checkbox in a Form. The Form component is used to apply validation behaviour. The style of the label remains the same.',
+          media: getIllustrationComponent('components/checkbox/states/invalid'),
+        },
+        {
+          title: 'Invalid Focus',
+          description:
+            'The Checkbox in an invalid focus state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/invalid-focus',
+          ),
+        },
+        {
+          title: 'Invalid Hover',
+          description:
+            'The Checkbox has an invalid hover state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox is in an invalid state and hovered over. The style of the label remains the same.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/invalid-hover',
+          ),
+        },
+        {
+          title: 'Invalid Focus Hover',
+          description:
+            'The Checkbox in an invalid focus hover state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/invalid-focus-hover',
+          ),
+        },
+        {
+          title: 'Checked Invalid',
+          description:
+            'The Checkbox has a checked invalid state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox has been checked and is in an invalid state. The style of the label remains the same.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/checked-invalid',
+          ),
+        },
+        {
+          title: 'Checked Invalid Focus',
+          description:
+            'The Checkbox in a checked invalid focus state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/checked-invalid-focus',
+          ),
+        },
+        {
+          title: 'Checked Invalid Hover',
+          description:
+            'The Checkbox has a checked invalid hover state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox has been checked and is in an invalid state, and hovered over. The style of the label remains the same.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/checked-invalid-hover',
+          ),
+        },
+        {
+          title: 'Checked Invalid Focus Hover',
+          description:
+            'The Checkbox in a checked invalid focus hover state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/checked-invalid-focus-hover',
+          ),
+        },
+        {
+          title: 'Valid',
+          description:
+            'The Checkbox in an valid state changes style when the Checkbox selection conforms to a specific format eg. updating preferences in a Form. The Form component is used to apply validation behaviour. The style of the label remains the same.',
+          media: getIllustrationComponent('components/checkbox/states/valid'),
+        },
+        {
+          title: 'Valid Focus',
+          description:
+            'The Checkbox in a valid focus state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/valid-focus',
+          ),
+        },
+        {
+          title: 'Valid Hover',
+          description:
+            'The Checkbox has a valid hover state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox is in a valid state and hovered over. The style of the label remains the same.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/valid-hover',
+          ),
+        },
+        {
+          title: 'Valid Focus Hover',
+          description:
+            'The Checkbox in a valid focus hover state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/valid-focus-hover',
+          ),
+        },
+        {
+          title: 'Checked Valid',
+          description:
+            'The Checkbox has a checked valid state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox has been checked and is in a valid state. The style of the label remains the same.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/checked-valid',
+          ),
+        },
+        {
+          title: 'Checked Valid Focus',
+          description:
+            'The Checkbox in a checked valid focus state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/checked-valid-hover',
+          ),
+        },
+        {
+          title: 'Checked Valid Hover',
+          description:
+            'The Checkbox has a checked valid hover state. The style of the Checkbox input changes to visually communicate and provide feedback to the user that the Checkbox has been checked and is in a valid state, and hovered over. The style of the label remains the same.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/checked-valid-hover',
+          ),
+        },
+        {
+          title: 'Checked Valid Focus Hover',
+          description:
+            'The Checkbox in a checked valid focus hover state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent(
+            'components/checkbox/states/checked-valid-focus-hover',
+          ),
+        },
+        {
+          title: 'Disabled',
+          description: (
+            <>
+              The Checkbox in a disabled state communicates that a Checkbox
+              exists, but is not available to the user in that scenario. When
+              the user&apos;s cursor hovers over a Checkbox in a disabled state,
+              the cursor shows as not allowed.
+              <br />
+              <br />
+              Disabled Checkboxes are often used to maintain layout consistency
+              and communicate that a Checkbox may become available if another
+              condition has been met. The style of the label (colour) also
+              changes to indicate that the Checkbox is disabled.
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/checkbox/states/disabled',
+          ),
+        },
+        {
+          title: 'Checked Disabled',
+          description: (
+            <>
+              The Checkbox in a checked disabled state communicates that a
+              Checkbox exists, but is not available to the user in that
+              scenario. When the user&apos;s cursor hovers over a Checkbox in a
+              checked disabled state, the cursor shows as not allowed.
+              <br />
+              <br />
+              Disabled checked Checkboxes are often used to maintain layout
+              consistency and communicate that a Checkbox may become available
+              if another condition has been met. The style of the label (colour)
+              also changes to indicate that the Checkbox is checked and
+              disabled.
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/checkbox/states/checked-disabled',
+          ),
+        },
       ],
     }}
   />
