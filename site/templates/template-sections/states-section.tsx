@@ -8,11 +8,12 @@ export type StatesSectionProps = MediaListProps & IntroductionText;
 
 export const StatesSection: React.FC<StatesSectionProps> = ({
   introduction,
+  layout,
   ...states
 }) => (
   <CommonSection title="States" id="states" introduction={introduction}>
     <ComponentPageCell>
-      <MediaList {...states} layout="3-span" />
+      <MediaList {...states} layout={layout || '2-span'} />
     </ComponentPageCell>
   </CommonSection>
 );

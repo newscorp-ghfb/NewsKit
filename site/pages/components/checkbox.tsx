@@ -5,7 +5,7 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {InlineCode} from '../../components/markdown-elements';
-// import {Link} from '../../components/link';
+import {Link} from '../../components/link';
 
 const infoIcon = (
   <IconFilledInfo
@@ -155,6 +155,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
     states={{
       introduction:
         'Tab items have states including, base, hover, active, disabled, and focus. They can be displayed with both, base or selected. By default, Tabs have one Tab item in a selected state.',
+      layout: '3-span',
       cards: [
         {
           title: 'Base',
@@ -214,8 +215,16 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'Invalid',
-          description:
-            'The Checkbox in an invalid state changes style when the Checkbox selection doesn’t conform to a specific format eg. attempting to proceed without selecting a required Checkbox in a Form. The Form component is used to apply validation behaviour. The style of the label remains the same.',
+          description: (
+            <>
+              The Checkbox in an invalid state changes style when the Checkbox
+              selection doesn’t conform to a specific format eg. attempting to
+              proceed without selecting a required Checkbox in a{' '}
+              <Link href="/components/form/">Form</Link>. The Form component is
+              used to apply validation behaviour. The style of the label remains
+              the same.
+            </>
+          ),
           media: getIllustrationComponent('components/checkbox/states/invalid'),
         },
         {
@@ -276,8 +285,15 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'Valid',
-          description:
-            'The Checkbox in an valid state changes style when the Checkbox selection conforms to a specific format eg. updating preferences in a Form. The Form component is used to apply validation behaviour. The style of the label remains the same.',
+          description: (
+            <>
+              The Checkbox in an valid state changes style when the Checkbox
+              selection conforms to a specific format eg.updating preferences in
+              a <Link href="/components/form/"> Form</Link>.The Form component
+              is used to apply validation behaviour.The style of the label
+              remains the same.
+            </>
+          ),
           media: getIllustrationComponent('components/checkbox/states/valid'),
         },
         {
