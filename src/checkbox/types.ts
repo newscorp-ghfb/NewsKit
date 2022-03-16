@@ -8,7 +8,7 @@ export type CheckboxIconProps = SwitchBaseIconProps;
 
 export type CheckboxProps = Omit<
   SwitchBaseProps,
-  'path' | 'defaultSwitchComponent' | 'type'
+  'path' | 'defaultSwitchSelectorComponent' | 'type'
 >;
 
 export type CheckboxState = SwitchBaseState;

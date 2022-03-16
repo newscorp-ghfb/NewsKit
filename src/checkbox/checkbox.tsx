@@ -23,7 +23,7 @@ const ThemelessCheckbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
       ref={inputRef}
       type="checkbox"
       {...props}
-      defaultSwitchComponent={DefaultCheckboxIcon}
+      defaultSwitchSelectorComponent={DefaultCheckboxIcon}
     />
   ),
 );

@@ -7,7 +7,10 @@ const RadioGroupContext = React.createContext<
 >(undefined);
 
 export const RadioGroup = React.forwardRef<HTMLInputElement, RadioGroupProps>(
-  ({children, defaultValue, name, onChange, value: valueProp}, ref) => {
+  (
+    {children, defaultValue, name, onChange, value: valueProp, ...restProps},
+    ref,
+  ) => {
     const [value, setValueState] = useControlled({
       controlledValue: valueProp,
       defaultValue,
@@ -25,7 +28,7 @@ export const RadioGroup = React.forwardRef<HTMLInputElement, RadioGroupProps>(
     );
     return (
       <RadioGroupContext.Provider value={{name, onChange: handleChange, value}}>
-        <div ref={ref} role="radiogroup">
+        <div ref={ref} {...restProps}>
           {children}
         </div>
       </RadioGroupContext.Provider>

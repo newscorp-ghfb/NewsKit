@@ -200,6 +200,18 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -463,6 +475,18 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -607,6 +631,18 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
 }
 
 .emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
@@ -893,6 +929,18 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -1156,6 +1204,18 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -1303,6 +1363,18 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -1447,6 +1519,18 @@ exports[`Checkbox label attributes 1`] = `
 }
 
 .emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
@@ -1728,6 +1812,18 @@ exports[`Checkbox label position start 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-3:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-3:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-4 {
   position: absolute;
   top: 0;
@@ -1978,6 +2074,18 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -2134,19 +2242,6 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -2168,9 +2263,6 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2214,7 +2306,7 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   left: 50%;
   opacity: 0.7;
   z-index: 1;
-  background-color: transparent;
+  background-color: #E0E7FF;
   border-radius: 50%;
   width: 48px;
   height: 48px;
@@ -2222,22 +2314,6 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-}
-
-.emotion-2:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-2:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-2:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
-}
-
-.emotion-2:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -2289,19 +2365,6 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -2323,9 +2386,6 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2391,6 +2451,18 @@ exports[`Checkbox render with size: large & checked 1`] = `
 }
 
 .emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
@@ -2483,19 +2555,6 @@ exports[`Checkbox render with size: large & checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -2534,9 +2593,6 @@ exports[`Checkbox render with size: large & checked 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2602,6 +2658,18 @@ exports[`Checkbox render with size: large & label 1`] = `
 }
 
 .emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
@@ -2868,6 +2936,18 @@ exports[`Checkbox render with size: large 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -3024,19 +3104,6 @@ exports[`Checkbox render with size: large 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -3058,9 +3125,6 @@ exports[`Checkbox render with size: large 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -3126,6 +3190,18 @@ exports[`Checkbox render with size: medium & checked 1`] = `
 }
 
 .emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
@@ -3218,19 +3294,6 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -3269,9 +3332,6 @@ exports[`Checkbox render with size: medium & checked 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -3337,6 +3397,18 @@ exports[`Checkbox render with size: medium & label 1`] = `
 }
 
 .emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
@@ -3603,6 +3675,18 @@ exports[`Checkbox render with size: medium 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -3759,19 +3843,6 @@ exports[`Checkbox render with size: medium 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -3793,9 +3864,6 @@ exports[`Checkbox render with size: medium 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -3861,6 +3929,18 @@ exports[`Checkbox render with size: small & checked 1`] = `
 }
 
 .emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
@@ -3953,19 +4033,6 @@ exports[`Checkbox render with size: small & checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -4004,9 +4071,6 @@ exports[`Checkbox render with size: small & checked 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4072,6 +4136,18 @@ exports[`Checkbox render with size: small & label 1`] = `
 }
 
 .emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
@@ -4338,6 +4414,18 @@ exports[`Checkbox render with size: small 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -4494,19 +4582,6 @@ exports[`Checkbox render with size: small 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -4528,9 +4603,6 @@ exports[`Checkbox render with size: small 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4599,6 +4671,18 @@ exports[`Checkbox render with state: base 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -4755,19 +4839,6 @@ exports[`Checkbox render with state: base 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -4790,9 +4861,6 @@ exports[`Checkbox render with state: base 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4858,6 +4926,18 @@ exports[`Checkbox render with state: checked 1`] = `
 }
 
 .emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
@@ -4950,19 +5030,6 @@ exports[`Checkbox render with state: checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -5002,9 +5069,6 @@ exports[`Checkbox render with state: checked 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5073,6 +5137,18 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -5133,15 +5209,6 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #C0C0C0;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
 <div
     class="emotion-0"
   >
@@ -5182,9 +5249,6 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5253,6 +5317,18 @@ exports[`Checkbox render with state: disabled 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -5296,15 +5372,6 @@ exports[`Checkbox render with state: disabled 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #C0C0C0;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
 <div
     class="emotion-0"
   >
@@ -5328,9 +5395,6 @@ exports[`Checkbox render with state: disabled 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5399,6 +5463,18 @@ exports[`Checkbox render with state: invalid 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -5451,19 +5527,6 @@ exports[`Checkbox render with state: invalid 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -5486,9 +5549,6 @@ exports[`Checkbox render with state: invalid 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5554,6 +5614,18 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
 }
 
 .emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
@@ -5627,19 +5699,6 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -5679,9 +5738,6 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5750,6 +5806,18 @@ exports[`Checkbox render with state: valid 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -5803,19 +5871,6 @@ exports[`Checkbox render with state: valid 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -5838,9 +5893,6 @@ exports[`Checkbox render with state: valid 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5906,6 +5958,18 @@ exports[`Checkbox render with state: valid-checked 1`] = `
 }
 
 .emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
@@ -5979,19 +6043,6 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -6031,9 +6082,6 @@ exports[`Checkbox render with state: valid-checked 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -6135,19 +6183,6 @@ exports[`Checkbox with overrides 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 1.125;
-  font-weight: 700;
-  letter-spacing: 0;
-}
-
-.emotion-7 svg {
-  fill: #535353;
-}
-
 <div
     class="emotion-0"
   >
@@ -6186,9 +6221,6 @@ exports[`Checkbox with overrides 1`] = `
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;

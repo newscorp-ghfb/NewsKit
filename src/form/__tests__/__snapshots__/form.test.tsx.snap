@@ -3464,6 +3464,18 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-24:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-24:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-24:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-25 {
   position: absolute;
   top: 0;
@@ -3661,6 +3673,18 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-32:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-32:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-32:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-32:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
@@ -4056,9 +4080,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
         Checkbox assistive text
       </p>
     </div>
-    <div
-      role="radiogroup"
-    >
+    <div>
       <label
         class="emotion-22"
       >
@@ -4532,6 +4554,18 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-24:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-24:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-24:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-25 {
   position: absolute;
   top: 0;
@@ -4729,6 +4763,18 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-32:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-32:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-32:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-32:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
@@ -5124,9 +5170,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
         Checkbox assistive text
       </p>
     </div>
-    <div
-      role="radiogroup"
-    >
+    <div>
       <label
         class="emotion-22"
       >
@@ -5942,6 +5986,18 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -6266,6 +6322,18 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3 {
   position: absolute;
   top: 0;
@@ -6476,9 +6544,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   color: #C0C0C0;
 }
 
-<div
-    role="radiogroup"
-  >
+<div>
     <label
       class="emotion-0"
     >

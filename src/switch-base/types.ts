@@ -44,5 +44,5 @@ export interface SwitchBaseProps
   labelAttributes?: React.LabelHTMLAttributes<HTMLLabelElement>;
   labelPosition?: SwitchBaseLabelPosition;
   path: string;
-  defaultSwitchComponent: React.ComponentType<SwitchBaseIconProps>;
+  defaultSwitchSelectorComponent: React.ComponentType<SwitchBaseIconProps>;
 }

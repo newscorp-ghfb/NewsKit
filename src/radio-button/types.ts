@@ -4,7 +4,11 @@ export type RadioButtonIconProps = SwitchBaseIconProps;
 
 export type RadioButtonProps = Omit<
   SwitchBaseProps,
-  'path' | 'defaultSwitchComponent' | 'type' | 'defaultChecked' | 'defaultValue'
+  | 'path'
+  | 'defaultSwitchSelectorComponent'
+  | 'type'
+  | 'defaultChecked'
+  | 'defaultValue'
 >;
 
 export type RadioGroupContextValue = {
@@ -19,4 +23,4 @@ export type RadioGroupProps = {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   name?: string;
   children?: React.ReactNode;
-};
+} & Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange' | 'value' | 'name'>;

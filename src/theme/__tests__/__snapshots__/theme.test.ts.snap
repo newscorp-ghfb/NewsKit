@@ -2980,14 +2980,23 @@ Object {
       "backgroundColor": "{{colors.transparent}}",
       "borderRadius": "{{borders.borderRadiusCircle}}",
     },
+    "focus": Object {
+      "backgroundColor": "{{colors.interactiveInput030}}",
+    },
     "hover": Object {
       "backgroundColor": "{{colors.interactiveInput030}}",
+    },
+    "invalid:focus": Object {
+      "backgroundColor": "{{colors.interactiveNegative010}}",
     },
     "invalid:focus:hover": Object {
       "backgroundColor": "{{colors.interactiveNegative010}}",
     },
     "invalid:hover": Object {
       "backgroundColor": "{{colors.interactiveNegative010}}",
+    },
+    "valid:focus": Object {
+      "backgroundColor": "{{colors.interactivePositive010}}",
     },
     "valid:focus:hover": Object {
       "backgroundColor": "{{colors.interactivePositive010}}",
@@ -4068,14 +4077,23 @@ Object {
       "backgroundColor": "{{colors.transparent}}",
       "borderRadius": "{{borders.borderRadiusCircle}}",
     },
+    "focus": Object {
+      "backgroundColor": "{{colors.interactiveInput030}}",
+    },
     "hover": Object {
       "backgroundColor": "{{colors.interactiveInput030}}",
+    },
+    "invalid:focus": Object {
+      "backgroundColor": "{{colors.interactiveNegative010}}",
     },
     "invalid:focus:hover": Object {
       "backgroundColor": "{{colors.interactiveNegative010}}",
     },
     "invalid:hover": Object {
       "backgroundColor": "{{colors.interactiveNegative010}}",
+    },
+    "valid:focus": Object {
+      "backgroundColor": "{{colors.interactivePositive010}}",
     },
     "valid:focus:hover": Object {
       "backgroundColor": "{{colors.interactivePositive010}}",

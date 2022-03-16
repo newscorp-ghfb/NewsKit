@@ -130,5 +130,15 @@ export default {
     'invalid:focus:hover': {
       backgroundColor: '{{colors.interactiveNegative010}}',
     },
+    // TODO: Remove when we have generic focus style
+    focus: {
+      backgroundColor: '{{colors.interactiveInput030}}',
+    },
+    'valid:focus': {
+      backgroundColor: '{{colors.interactivePositive010}}',
+    },
+    'invalid:focus': {
+      backgroundColor: '{{colors.interactiveNegative010}}',
+    },
   },
 } as Record<string, StylePreset>;
