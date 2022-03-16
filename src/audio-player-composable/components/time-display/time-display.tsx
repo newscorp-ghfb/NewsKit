@@ -9,8 +9,8 @@ import {TextBlock} from '../../../text-block';
 
 const StyledTextBlock = styled(TextBlock)<StyledLabelProps>`
   display: block;
-  ${getStylePreset(`timeDisplay`, '')}
-  ${getTypographyPreset(`timeDisplay`, '')};
+  ${getStylePreset(`audioPlayerTimeDisplay`, '')}
+  ${getTypographyPreset(`audioPlayerTimeDisplay`, '')};
 `;
 
 export const ThemelessTimeDisplay = ({

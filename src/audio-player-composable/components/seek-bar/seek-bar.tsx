@@ -22,7 +22,7 @@ const ThemelessSeekBar: React.FC<SeekBarProps> = ({overrides = {}}) => {
   const {
     audioPlayerSeekBar: {slider: seekBarSliderDefaults},
   } = theme.componentDefaults;
-  console.log(seekBarSliderDefaults);
+
   const {getSeekBarProps} = useAudioPlayerContext();
 
   const {duration, currentTime, onChange, buffered} =
