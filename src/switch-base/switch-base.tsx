@@ -39,7 +39,6 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
     const ref = useRef<HTMLInputElement>(null);
     const [isInputFocused, setIsInputFocused] = React.useState(false);
     const [isLabelHovered, setIsLabelHovered] = React.useState(false);
-    const [isFeedbackHovered, setIsFeedbackHovered] = React.useState(false);
 
     const [checked, setCheckedState] = useControlled({
       controlledValue: checkedProp,
@@ -70,8 +69,6 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
       setIsInputFocused(false);
     }, [setIsInputFocused]);
 
-    // onLabelMouseOver && onLabelMouseLeave
-    // are used to apply hover state on the checkbox when mouse is over label
     const onLabelMouseOver = useCallback(() => {
       if (state !== 'disabled') {
         setIsLabelHovered(true);
@@ -83,18 +80,6 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
         setIsLabelHovered(false);
       }
     }, [setIsLabelHovered, state]);
-
-    const onFeedbackMouseOver = useCallback(() => {
-      if (state !== 'disabled') {
-        setIsFeedbackHovered(true);
-      }
-    }, [setIsFeedbackHovered, state]);
-
-    const onFeedbackMouseLeave = useCallback(() => {
-      if (state !== 'disabled') {
-        setIsFeedbackHovered(false);
-      }
-    }, [setIsFeedbackHovered, state]);
 
     const theme = useTheme();
     const iconSize = getToken(
@@ -138,8 +123,6 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
           overrides={overrides}
           state={state}
           labelPosition={labelPosition}
-          onMouseOver={onFeedbackMouseOver}
-          onMouseLeave={onFeedbackMouseLeave}
           role="presentation"
           path={path}
         >
@@ -150,7 +133,7 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
             onClick={onFeedbackClick}
             data-testid={`${type}-feedback`}
             isFocused={isInputFocused}
-            isHovered={isFeedbackHovered || isLabelHovered || isInputFocused}
+            isHovered={isLabelHovered || isInputFocused}
             path={path}
           />
           <StyledSwitch
@@ -160,9 +143,7 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
             size={size}
             isFocused={isInputFocused}
             isHovered={isLabelHovered}
-            feedbackIsVisible={
-              isLabelHovered || isFeedbackHovered || isInputFocused
-            }
+            feedbackIsVisible={isLabelHovered || isInputFocused}
             path={path}
           >
             <CheckIcon {...(checkIconProps as SwitchBaseIconProps)} />
