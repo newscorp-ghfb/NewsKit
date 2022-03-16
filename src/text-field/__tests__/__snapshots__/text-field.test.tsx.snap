@@ -56,6 +56,7 @@ exports[`TextField renders TextField Correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -64,7 +65,6 @@ exports[`TextField renders TextField Correctly 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -181,9 +181,9 @@ exports[`TextField renders TextField with overrides 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 64px;
   margin-bottom: 16px;
   border-color: #D20600;
-  min-height: 64px;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -412,6 +412,7 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -420,7 +421,6 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -532,8 +532,8 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -599,6 +599,7 @@ exports[`TextField renders disabled text field 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -607,7 +608,6 @@ exports[`TextField renders disabled text field 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -830,6 +830,7 @@ exports[`TextField renders large TextField 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 64px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -838,7 +839,6 @@ exports[`TextField renders large TextField 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 64px;
 }
 
 .emotion-0 svg {
@@ -955,6 +955,7 @@ exports[`TextField renders medium TextField 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -963,7 +964,6 @@ exports[`TextField renders medium TextField 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -1080,6 +1080,7 @@ exports[`TextField renders small TextField 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 32px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -1088,7 +1089,6 @@ exports[`TextField renders small TextField 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 32px;
 }
 
 .emotion-0 svg {
@@ -1205,6 +1205,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -1213,7 +1214,6 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -1435,6 +1435,7 @@ exports[`TextField should render custom placeholder 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -1443,7 +1444,6 @@ exports[`TextField should render custom placeholder 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
