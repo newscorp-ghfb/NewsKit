@@ -30,7 +30,7 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
       labelPosition = 'end',
       labelAttributes = {},
       path,
-      defaultSwitchComponent,
+      defaultSwitchSelectorComponent: defaultSwitchComponent,
       type,
       ...restProps
     },
@@ -150,7 +150,7 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
             onClick={onFeedbackClick}
             data-testid={`${type}-feedback`}
             isFocused={isInputFocused}
-            isHovered={isFeedbackHovered || isLabelHovered}
+            isHovered={isFeedbackHovered || isLabelHovered || isInputFocused}
             path={path}
           />
           <StyledSwitch

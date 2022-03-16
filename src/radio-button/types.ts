@@ -4,7 +4,11 @@ export type RadioButtonIconProps = SwitchBaseIconProps;
 
 export type RadioButtonProps = Omit<
   SwitchBaseProps,
-  'path' | 'defaultSwitchComponent' | 'type' | 'defaultChecked' | 'defaultValue'
+  | 'path'
+  | 'defaultSwitchSelectorComponent'
+  | 'type'
+  | 'defaultChecked'
+  | 'defaultValue'
 >;
 
 export type RadioGroupContextValue = {

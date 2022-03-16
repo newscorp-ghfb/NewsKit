@@ -56,7 +56,7 @@ const ThemelessCheckbox = React.forwardRef<HTMLInputElement, RadioButtonProps>(
         onChange={onChange}
         checked={checked}
         {...props}
-        defaultSwitchComponent={DefaultIcon}
+        defaultSwitchSelectorComponent={DefaultIcon}
       />
     );
   },

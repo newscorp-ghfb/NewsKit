@@ -127,7 +127,7 @@ export const StyledFeedback = styled.div<
 `;
 
 export const StyledInput = styled.input<
-  Omit<SwitchBaseProps, 'defaultSwitchComponent'>
+  Omit<SwitchBaseProps, 'defaultSwitchSelectorComponent'>
 >`
   ${insetCSS}
   margin: 0;

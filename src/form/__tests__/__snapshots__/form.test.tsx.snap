@@ -3648,6 +3648,18 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   background-color: #FFE6E5;
 }
 
+.emotion-32:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-32:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-32:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-33 {
   position: absolute;
   top: 0;
@@ -4695,6 +4707,18 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-32:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-32:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-32:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-32:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
@@ -6211,6 +6235,18 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 

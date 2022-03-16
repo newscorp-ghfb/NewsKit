@@ -139,7 +139,7 @@ export default {
     },
     // TODO: remove when we have generic focus state
     focus: {
-      backgroundColor: '{{colors.interactiveInput010}}',
+      backgroundColor: '{{colors.interactiveInput030}}',
     },
     'valid:focus': {
       backgroundColor: '{{colors.interactivePositive010}}',
