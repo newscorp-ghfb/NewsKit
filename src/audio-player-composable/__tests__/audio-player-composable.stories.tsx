@@ -1,12 +1,12 @@
 /* eslint-disable no-console */
 import * as React from 'react';
-import {AudioPlayerPlayPauseButton} from '../components/play-pause-button/play-pause-button';
-import {AudioPlayerTimeDisplay} from '../components/time-display/time-display';
+import {AudioPlayerPlayPauseButton} from '../components/play-pause-button';
+import {AudioPlayerTimeDisplay} from '../components/time-display';
 import {AudioPlayerComposable} from '../audio-player-composable';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {calculateTime} from '../components/time-display/utils';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
-import {AudioPlayerSeekBar} from '../components/seek-bar/seek-bar';
+import {AudioPlayerSeekBar} from '../components/seek-bar';
 import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
 import {Block} from '../../block';
