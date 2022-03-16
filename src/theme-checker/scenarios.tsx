@@ -82,7 +82,7 @@ import {
 import {Cell, Grid} from '../grid';
 import {Label} from '../label';
 import {CheckboxState} from '../checkbox/types';
-import {SwitchBaseState} from '../switch-base/types';
+import {BaseSwitchState} from '../base-switch/types';
 import {RadioButton} from '../radio-button';
 
 export const checkboxStates: [
@@ -101,7 +101,7 @@ export const checkboxStates: [
 
 export const radioButtonStates: [
   string,
-  {checked?: boolean; state?: SwitchBaseState},
+  {checked?: boolean; state?: BaseSwitchState},
 ][] = [
   ['default', {checked: false}],
   ['checked', {checked: true}],

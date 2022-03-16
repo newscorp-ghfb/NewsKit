@@ -1,17 +1,17 @@
 import {
-  SwitchBaseIconProps,
-  SwitchBaseProps,
-  SwitchBaseSize,
-  SwitchBaseState,
-} from '../switch-base/types';
+  BaseSwitchIconProps,
+  BaseSwitchProps,
+  BaseSwitchSize,
+  BaseSwitchState,
+} from '../base-switch/types';
 
-export type CheckboxIconProps = SwitchBaseIconProps;
+export type CheckboxIconProps = BaseSwitchIconProps;
 
 export type CheckboxProps = Omit<
-  SwitchBaseProps,
+  BaseSwitchProps,
   'path' | 'defaultSwitchSelectorComponent' | 'type'
 >;
 
-export type CheckboxSize = SwitchBaseSize;
+export type CheckboxSize = BaseSwitchSize;
 
-export type CheckboxState = SwitchBaseState;
+export type CheckboxState = BaseSwitchState;

@@ -4,7 +4,7 @@ import {RadioButtonProps, RadioButtonIconProps} from './types';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {SwitchBase} from '../switch-base';
+import {BaseSwitch} from '../base-switch';
 import {useRadioGroupContext} from './radio-group';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
 
@@ -51,7 +51,7 @@ const ThemelessRadioButton = React.forwardRef<
     }
 
     return (
-      <SwitchBase
+      <BaseSwitch
         path="radioButton"
         type="radio"
         ref={inputRef}
