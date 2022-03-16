@@ -61,7 +61,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           name: 'Feedback',
           description:
-            'Non-interactive background element for visual feedback on state change eg. hover',
+            'Non-interactive background element for visual feedback on hover',
           component: ['Block'],
           optional: true,
         },
@@ -102,7 +102,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Feedback',
           description:
-            'The feedback element is non-interactive and appears in the background behind the Checkbox input for visual feedback on state change, eg hover. ',
+            'The feedback element is non-interactive and appears in the background behind the Checkbox input for visual feedback on hover.',
           media: getIllustrationComponent(
             'components/checkbox/options/feedback',
           ),
@@ -149,6 +149,18 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent(
             'components/checkbox/options/fieldset',
           ),
+        },
+      ],
+    }}
+    states={{
+      introduction:
+        'Tab items have states including, base, hover, active, disabled, and focus. They can be displayed with both, base or selected. By default, Tabs have one Tab item in a selected state.',
+      cards: [
+        {
+          title: 'Base',
+          description:
+            'The Checkbox has a base (default) state. This is the base style of the Checkbox before it has been interacted with by a user.',
+          media: getIllustrationComponent('components/checkbox/states/base'),
         },
       ],
     }}
