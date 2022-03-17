@@ -397,6 +397,94 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
       notice:
         'The Feedback element becomes visible (configurable) on state change, eg hover.',
     }}
+    behaviors={{
+      introduction:
+        'The following guidance describes how the Checkbox component behaves.',
+      cards: [
+        {
+          title: 'Checked vs unchecked',
+          description:
+            'Checkboxes can be checked or unchecked. A Checkbox in a checked state is indicated with an icon that appears in the centre of the checkbox.',
+          media: getIllustrationComponent(
+            'components/checkbox/behaviours/checked-vs-unchecked',
+          ),
+        },
+        {
+          title: 'Label overflow wrap',
+          description:
+            'When a Label is too long for the available horizontal space, it wraps to form another line.',
+          media: getIllustrationComponent(
+            'components/checkbox/behaviours/label-overflow-wrap',
+          ),
+        },
+        {
+          title: 'Transition',
+          description:
+            'When the Checkbox is checked, the ‘check’ icon fades up in the centre of the Checkbox, and the backgroundColor, and borderColor transition simultaneously.',
+          media: getIllustrationComponent(
+            'components/checkbox/behaviours/transition',
+          ),
+        },
+        {
+          title: 'Clickable area',
+          description:
+            'Checkboxes can be checked or unchecked. A Checkbox in a checked state is indicated with an icon that appears in the centre of the checkbox.',
+          media: getIllustrationComponent(
+            'components/checkbox/behaviours/clickable-area',
+          ),
+        },
+        {
+          title: 'Focusable area',
+          description:
+            'Both the Checkbox input and Label are interactive, and a user can hover over either, but only the Checkbox input itself is focusable by using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent(
+            'components/checkbox/behaviours/focusable-area',
+          ),
+        },
+        {
+          title: 'Validation',
+          description: (
+            <>
+              The Checkbox validation rules can be defined for onSubmit or
+              onBlur, for both the initial validation and re-validation using
+              the Form.
+              <br />
+              <br />
+              For more information, please refer to the Form component.
+              <Block spaceStack="space050" />
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="note"
+                title="Note"
+              >
+                Validation only works if the FormInput Checkbox uses the Form
+                component.
+              </InlineMessage>
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/checkbox/behaviours/validation',
+          ),
+        },
+        {
+          title: 'Autofocus',
+          description:
+            'The Checkbox can be set to be auto-focused on page load (when mounted).',
+          media: getIllustrationComponent(
+            'components/checkbox/behaviours/autofocus',
+          ),
+        },
+        {
+          title: 'Default checked',
+          description:
+            'The Checkbox initial state can be set to be checked or unchecked by default (controlled or uncontrolled).',
+          media: getIllustrationComponent(
+            'components/checkbox/behaviours/default-checked',
+          ),
+        },
+      ],
+    }}
   />
 );
 
