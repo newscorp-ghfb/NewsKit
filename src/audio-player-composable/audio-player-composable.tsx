@@ -5,7 +5,7 @@ import {IconFilledStop} from '../icons/filled/material/icon-filled-stop';
 import {AudioElement} from './components/audio-element';
 import {useAudioFunctions} from './audio-functions';
 import {AudioPlayerProvider} from './context';
-import {AudioPlayerComposableProps} from './types';
+import {AudioFunctionDependencies, AudioPlayerComposableProps} from './types';
 import {formatFunction} from './components/time-display/utils';
 
 export const AudioPlayerComposable = ({
@@ -43,7 +43,12 @@ export const AudioPlayerComposable = ({
   }, [src]);
 
   // @ts-ignore as we are not passing all the parameters yet.
-  const {audioEvents, togglePlay, onChangeSlider} = useAudioFunctions({
+  const {
+    audioEvents,
+    togglePlay,
+    onChangeSlider,
+    onClickForward,
+  } = useAudioFunctions({
     autoPlay,
     audioRef,
     playing,
@@ -59,7 +64,7 @@ export const AudioPlayerComposable = ({
     duration,
     setDuration,
     src,
-  });
+  } as AudioFunctionDependencies);
 
   const getPlayPauseButtonProps = ({
     onClick: consumerOnClick,
@@ -102,6 +107,11 @@ export const AudioPlayerComposable = ({
     };
   };
 
+  const getForwardButtonProps = () => ({
+    onClickForward,
+
+    //ariaLabel,
+  });
   const getSeekBarProps = () => ({
     duration,
     currentTime,
@@ -119,6 +129,7 @@ export const AudioPlayerComposable = ({
     getPlayPauseButtonProps,
     getTimeDisplayProps,
     getSeekBarProps,
+    getForwardButtonProps,
 
     // Internal for AudioElement
     audioRef,

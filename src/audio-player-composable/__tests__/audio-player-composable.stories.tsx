@@ -2,6 +2,7 @@
 import * as React from 'react';
 import {AudioPlayerPlayPauseButton} from '../components/play-pause-button';
 import {AudioPlayerTimeDisplay} from '../components/time-display';
+import {AudioPlayerForwardButton} from '../components/forward-button/forward-button';
 import {AudioPlayerComposable} from '../audio-player-composable';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {calculateTime} from '../components/time-display/utils';
@@ -77,6 +78,9 @@ export const AudioPlayer = () => (
           format={({currentTime}) => calculateTime(currentTime)}
         />
         <AudioPlayerSeekBar />
+        <AudioPlayerForwardButton  onClick={() => {
+        console.log('customer click function for forward');
+      }}/>
         <AudioPlayerTimeDisplay
           format={({duration}) => calculateTime(duration)}
         />
@@ -111,6 +115,10 @@ export const AudioPlayPauseButtonAutoplay = () => (
         console.log('customer click function');
       }}
     />
+      <AudioPlayerForwardButton  onClick={() => {
+        console.log('wahh');
+      }}/>
+    
   </AudioPlayerComposable>
 );
 
