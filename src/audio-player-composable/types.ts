@@ -11,11 +11,11 @@ export interface AudioFunctionDependencies {
   playing: boolean;
 
   showLoaderTimeoutRef: React.MutableRefObject<number>;
-  trackPositionRef: React.MutableRefObject<number>;
+  currentTimeRef: React.MutableRefObject<number>;
   audioRef: React.RefObject<HTMLAudioElement>;
 
   setLoading: React.Dispatch<React.SetStateAction<boolean>>;
-  setTrackPosition: React.Dispatch<React.SetStateAction<number>>;
+  setCurrentTime: React.Dispatch<React.SetStateAction<number>>;
   setPlayState: React.Dispatch<React.SetStateAction<boolean>>;
   // setVolume: React.Dispatch<React.SetStateAction<number>>;
   setDuration: React.Dispatch<React.SetStateAction<number>>;

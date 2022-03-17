@@ -9,7 +9,7 @@ const defaultKeyboardShortcuts = {
   toggle: ['k', ' '],
 };
 
-export const PlayPauseButton: React.FC<PlayPauseButtonProps> = React.memo(
+export const AudioPlayerPlayPauseButton: React.FC<PlayPauseButtonProps> = React.memo(
   ({
     onClick: consumerOnClick,
     keyboardShortcuts: keyboardShortcutsProp,
