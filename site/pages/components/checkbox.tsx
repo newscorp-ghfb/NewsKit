@@ -5,6 +5,7 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {InlineCode} from '../../components/markdown-elements';
+import {UsageKind} from '../../components/usage-card';
 import {Link} from '../../components/link';
 
 const infoIcon = (
@@ -482,6 +483,92 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent(
             'components/checkbox/behaviours/default-checked',
           ),
+        },
+      ],
+    }}
+    usage={{
+      introduction:
+        'The following guidance describes how and when to appropriately use the Checkbox component.',
+      cards: [
+        {
+          description:
+            'Group Checkboxes along with other selection controls, Labels, and Assistive Text together with the Fieldset component and the Legend that gives a title attributed to the elements that appear in the Fieldset.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/checkbox/usage/do-1'),
+        },
+        {
+          description: (
+            <>
+              When medium or large Checkboxes are too visually prominent, small
+              checkboxes can work well on information dense screens/pages.
+              <br />
+              <br />
+              For example, smaller checkboxes may let users see more options in
+              a form at a glance.
+            </>
+          ),
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/checkbox/usage/do-2'),
+        },
+        {
+          description:
+            'Checkboxes should be used to help users select multiple options from a list or to check or uncheck a single option. Unlike Radio Buttons, users can select multiple options from a list of Checkboxes.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/checkbox/usage/do-3'),
+        },
+        {
+          description:
+            'Avoid using the Checkbox component if users can only choose one option from a selection. In this case, use the Radio Button component.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/checkbox/usage/dont-1'),
+        },
+        {
+          description:
+            'Checkboxes should always have a Label associated to give users context of what the Checkbox represents.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/checkbox/usage/do-4'),
+        },
+        {
+          description:
+            'Avoid placing Labels to the left (start) of Checkboxes when there are multiple Checkboxes grouped together to avoid layout misalignment. Instead place Labels to the right (end) so that when used together in forms, Checkbox inputs align vertically, which makes them easier to find, especially for users of screen magnifiers.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/checkbox/usage/dont-2'),
+        },
+        {
+          description:
+            'Checkboxes should be displayed vertically, stacked for consistent alignment and positioning across different breakpoints.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/checkbox/usage/do-5'),
+        },
+        {
+          description:
+            'Avoid using Checkboxes in a horizontal orientation to avoid issues with alignment and legibility when there are multiple Checkboxes grouped together.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/checkbox/usage/dont-3'),
+        },
+        {
+          description:
+            'If needed Assistive Text should be used to hint at the action the user is being asked to do, for example, ‘Select all that apply’.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/checkbox/usage/do-6'),
+        },
+        {
+          description:
+            'Avoid default checked options where possible as this makes it more likely that users will not realise they’ve missed a question, or submit the wrong answer when not intended.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/checkbox/usage/dont-4'),
+        },
+        {
+          description:
+            'Swap Assistive Text with error text if the Checkbox is invalid. Once the Checkbox is valid then the assistive is then shown again.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/checkbox/usage/do-8'),
+        },
+        {
+          description:
+            'Write error text that communicates a solution. Error text should be written in no more than a few clear, concise and complete sentences.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/checkbox/usage/do-8'),
         },
       ],
     }}
