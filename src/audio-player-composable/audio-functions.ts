@@ -18,10 +18,10 @@ export const useAudioFunctions = ({
   loading,
   playing,
   showLoaderTimeoutRef,
-  trackPositionRef,
+  currentTimeRef,
   audioRef,
   setLoading,
-  setTrackPosition,
+  setCurrentTime,
   setPlayState,
   // setVolume,
   setDuration,
@@ -56,13 +56,13 @@ AudioFunctionDependencies) => {
           ...playerData,
           media_duration: formatTrackTime(duration),
           media_milestone: calculateStringPercentage(
-            trackPositionRef.current,
+            currentTimeRef.current,
             duration,
           ),
-          media_segment: getMediaSegment(duration, trackPositionRef.current),
-          media_offset: formatTrackTime(trackPositionRef.current),
+          media_segment: getMediaSegment(duration, currentTimeRef.current),
+          media_offset: formatTrackTime(currentTimeRef.current),
         };
-  }, [duration, live, trackPositionRef]);
+  }, [duration, live, currentTimeRef]);
 
   const getTrackingInformation = useCallback(
     (
@@ -104,13 +104,13 @@ AudioFunctionDependencies) => {
   const updateAudioTime = useCallback(
     (playerTime: number) => {
       const newPlayerTime = getValueInRange(playerTime, [0, duration]);
-      setTrackPosition(newPlayerTime);
+      setCurrentTime(newPlayerTime);
 
       ifPlayer(player => {
         player.currentTime = newPlayerTime;
       });
     },
-    [duration, setTrackPosition, ifPlayer],
+    [duration, setCurrentTime, ifPlayer],
   );
 
   // const updateAudioVolume = useCallback(
@@ -128,7 +128,7 @@ AudioFunctionDependencies) => {
   // TODO remove ignore once in use
   /* istanbul ignore next */
   const onClickPrevious = useCallback(() => {
-    if (trackPositionRef.current > 5) {
+    if (currentTimeRef.current > 5) {
       updateAudioTime(0);
       return;
     }
@@ -138,7 +138,7 @@ AudioFunctionDependencies) => {
     if (onPreviousTrack) {
       onPreviousTrack();
     }
-  }, [trackPositionRef, onPreviousTrack, updateAudioTime]);
+  }, [currentTimeRef, onPreviousTrack, updateAudioTime]);
 
   // TODO remove ignore once in use
   /* istanbul ignore next */
@@ -153,19 +153,19 @@ AudioFunctionDependencies) => {
   // TODO remove ignore once in use
   /* istanbul ignore next */
   const onClickBackward = useCallback(() => {
-    updateAudioTime(trackPositionRef.current - 10);
+    updateAudioTime(currentTimeRef.current - 10);
     const trackingInformation = getTrackingInformation(
       'audio-player-skip-backward',
       EventTrigger.Click,
       {event_navigation_name: 'backward skip'},
     );
     fireEvent(trackingInformation);
-  }, [fireEvent, getTrackingInformation, updateAudioTime, trackPositionRef]);
+  }, [fireEvent, getTrackingInformation, updateAudioTime, currentTimeRef]);
 
   // TODO remove ignore once in use
   /* istanbul ignore next */
   const onClickForward = useCallback(() => {
-    updateAudioTime(trackPositionRef.current + 10);
+    updateAudioTime(currentTimeRef.current + 10);
 
     const trackingInformation = getTrackingInformation(
       'audio-player-skip-forward',
@@ -173,7 +173,7 @@ AudioFunctionDependencies) => {
       {event_navigation_name: 'forward skip'},
     );
     fireEvent(trackingInformation);
-  }, [fireEvent, getTrackingInformation, updateAudioTime, trackPositionRef]);
+  }, [fireEvent, getTrackingInformation, updateAudioTime, currentTimeRef]);
 
   const onDurationChange = useCallback(
     ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
@@ -261,8 +261,8 @@ AudioFunctionDependencies) => {
 
   const onTimeUpdate = ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
     const eventTime = Math.floor((target as HTMLAudioElement).currentTime);
-    if (trackPositionRef.current !== eventTime) {
-      setTrackPosition(eventTime);
+    if (currentTimeRef.current !== eventTime) {
+      setCurrentTime(eventTime);
 
       const trackingInformation = getTrackingInformation(
         'audio-player-audio',
@@ -271,7 +271,7 @@ AudioFunctionDependencies) => {
       fireEvent(trackingInformation);
     }
     // TO Do: Should be added in the ticket for controls
-    // if (trackPositionRef.current > 5) {
+    // if (currentTimeRef.current > 5) {
     //   setIsPrevTrackBtnDisabled(false);
     // } else {
     //   setIsPrevTrackBtnDisabled(Boolean(disablePreviousTrack));

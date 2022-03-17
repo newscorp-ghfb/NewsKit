@@ -28,18 +28,20 @@ export const BaseCard = React.forwardRef<HTMLDivElement, BaseCardProps>(
         };
     return (
       <StyledCard overrides={cardOverrides} href={href} {...rest} ref={ref}>
-        <Block spaceStack="space045">
-          <Headline
-            overrides={{
-              typographyPreset: 'editorialHeadline020',
-              heading: {
-                stylePreset: 'inkContrast',
-              },
-            }}
-          >
-            {title}
-          </Headline>
-        </Block>
+        {title && (
+          <Block spaceStack="space045">
+            <Headline
+              overrides={{
+                typographyPreset: 'editorialHeadline020',
+                heading: {
+                  stylePreset: 'inkContrast',
+                },
+              }}
+            >
+              {title}
+            </Headline>
+          </Block>
+        )}
         <TextBlock
           typographyPreset="editorialParagraph020"
           stylePreset="inkBase"

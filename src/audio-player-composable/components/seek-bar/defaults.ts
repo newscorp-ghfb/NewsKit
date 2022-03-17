@@ -1,5 +1,5 @@
 export default {
-  seekBar: {
+  audioPlayerSeekBar: {
     slider: {
       track: {
         stylePreset: 'seekBarTrack',
