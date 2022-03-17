@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import React from 'react';
 import {fireEvent, act} from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import {renderWithImplementation, renderWithTheme} from '../../test/test-utils';
 import {AudioPlayerComposable} from '../audio-player-composable';
 import {AudioPlayerPlayPauseButton} from '../components/play-pause-button/play-pause-button';
@@ -178,8 +179,10 @@ describe('Audio Player Composable', () => {
     fireEvent.canPlay(getByTestId('audio-element'));
     fireEvent.click(playPauseButton);
     expect(audioElement.play).toHaveBeenCalled();
+    expect(audioElement.paused).toBe(false);
     fireEvent.click(playPauseButton);
     expect(audioElement.pause).toHaveBeenCalled();
+    expect(audioElement.paused).toBe(true);
   });
 
   it('should phasing playPause button loading state as expected', () => {
@@ -302,6 +305,7 @@ describe('Audio Player Composable', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+
   describe('seekBar should', () => {
     it('renders and behaves as expected', () => {
       const onPlay = jest.fn();
@@ -437,6 +441,29 @@ describe('Audio Player Composable', () => {
       );
 
       expect(asFragment()).toMatchSnapshot();
+    });
+  });
+
+  describe('Keyboard shortcuts', () => {
+    it.only('should play and pause on press K key', () => {
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        recordedAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const playPauseButton = getByTestId('audio-player-play-pause-button');
+      playPauseButton.focus();
+
+      expect(audioElement.duration).toBe(10);
+
+      fireEvent.canPlay(getByTestId('audio-element'));
+      userEvent.keyboard('k');
+      expect(audioElement.play).toHaveBeenCalled();
+      expect(audioElement.paused).toBe(false);
+      userEvent.keyboard('k');
+      expect(audioElement.pause).toHaveBeenCalled();
+      expect(audioElement.paused).toBe(true);
     });
   });
 });

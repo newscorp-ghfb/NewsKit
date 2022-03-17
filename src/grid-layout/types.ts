@@ -1,3 +1,4 @@
+import React from 'react';
 import {MQ} from '../utils/style';
 
 import {BlockProps} from '../block';
@@ -29,6 +30,8 @@ export type GridLayoutProps = {
   areas?: MQ<string>;
   inline?: MQ<boolean>;
   children?: React.ReactNode | GridLayoutRenderProps;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  as?: React.ElementType<any>;
   overrides?: {
     width?: MQ<string>;
     minWidth?: MQ<string>;
@@ -37,4 +40,4 @@ export type GridLayoutProps = {
     minHeight?: MQ<string>;
     maxHeight?: MQ<string>;
   };
-};
+} & React.HTMLAttributes<HTMLDivElement>;
