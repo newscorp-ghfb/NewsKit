@@ -46,10 +46,17 @@ interface AudioPlayerProviderContext {
     onChange: (value: number) => void;
     buffered: TimeRanges | undefined;
   };
-  getForwardButtonProps: () => {
-    onClickForward: () => void;
-    //onClick: () => void;
+  getForwardButtonProps: (args: {
+    onClick?: () => void;
+  }) => {
+    ariaLabel: string;
+    onClick: () => void;
   };
+  // getForwardButtonProps: () => {
+  //   onClickForward: () => void;
+  //   ariaLabel: string;
+  //   onClick: () => void;
+  // };
 }
 
 export const AudioPlayerContext = createContext<

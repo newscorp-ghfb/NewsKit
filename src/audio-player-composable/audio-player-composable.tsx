@@ -106,12 +106,31 @@ export const AudioPlayerComposable = ({
       playStateIcon,
     };
   };
+  const  getForwardButtonProps = ({
+    onClick: consumerOnClick,
+  }: {
+    onClick?: () => void;
+  }) => {
+    // All the internal logic for defining aria and icon to show
 
-  const getForwardButtonProps = () => ({
-    onClickForward,
+    let ariaLabel = 'Forward';
+    const onClick = () => {
+      if (consumerOnClick) consumerOnClick();
+      onClickForward();
+    };
 
-    //ariaLabel,
-  });
+    return {
+      ariaLabel,
+
+      onClick,
+    };
+  };
+
+  // const getForwardButtonProps = () => ({
+  //   onClickForward,
+
+  //   ariaLabel:'Forward',
+  // });
   const getSeekBarProps = () => ({
     duration,
     currentTime,

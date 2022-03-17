@@ -12,6 +12,7 @@ import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
 import {Block} from '../../block';
 import {ButtonSize} from '../../button/types';
+import { spacePresets } from '../../theme/presets';
 
 const AudioPlayerContainer = styled.div<{dark?: boolean}>`
   border: solid 1px red;
@@ -78,7 +79,11 @@ export const AudioPlayer = () => (
           format={({currentTime}) => calculateTime(currentTime)}
         />
         <AudioPlayerSeekBar />
-        <AudioPlayerForwardButton  onClick={() => {
+        <AudioPlayerForwardButton overrides={{
+            //iconSize: 'iconSize010',
+            spaceInline:'space000',
+            //stylePreset:'buttonOutlinedNegative'
+        }} size={ButtonSize.Small}  onClick={() => {
         console.log('customer click function for forward');
       }}/>
         <AudioPlayerTimeDisplay
@@ -100,6 +105,9 @@ export const AudioPlayPauseButton = () => (
         console.log('customer click function');
       }}
     />
+      <AudioPlayerForwardButton  onClick={() => {
+        console.log('customer click function for forward');
+      }}/>
   </AudioPlayerComposable>
 );
 AudioPlayPauseButton.storyName = 'audio-play-pause-button';
@@ -115,9 +123,7 @@ export const AudioPlayPauseButtonAutoplay = () => (
         console.log('customer click function');
       }}
     />
-      <AudioPlayerForwardButton  onClick={() => {
-        console.log('wahh');
-      }}/>
+  
     
   </AudioPlayerComposable>
 );
@@ -169,6 +175,7 @@ export const AudioPlayerWithTimeDisplay = () => (
       ariaLandmark="audio player 3"
     >
       <AudioPlayerPlayPauseButton />
+      
       <Block spaceStack="space030" />
       <AudioPlayerSeekBar />
       <Block spaceStack="space030" />

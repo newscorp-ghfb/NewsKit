@@ -14,15 +14,16 @@ export interface ForwardButtonProps {
 export const AudioPlayerForwardButton: React.FC<ForwardButtonProps> = React.memo(
     ({onClick: consumerOnClick, ...props}) => {
       const {getForwardButtonProps} = useAudioPlayerContext();
-  
-      const {onClickForward} = getForwardButtonProps!();
+      const {ariaLabel, onClick} =
+      getForwardButtonProps! &&
+      getForwardButtonProps({onClick: consumerOnClick});
   
       return (
         <IconButton
          data-testid="audio-player-forward"
-          aria-label='hello'
-          onClick={onClickForward}
-          size={props.size || ButtonSize.Large}
+          aria-label={ariaLabel}
+          onClick={onClick}
+          size={props.size || ButtonSize.Medium}
           overrides={props.overrides}
           {...props}
         >
