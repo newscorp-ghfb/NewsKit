@@ -572,6 +572,63 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
+    accessibility={{
+      introduction:
+        'The Checkbox has the following accessibility considerations:',
+      focusOrder: {
+        title: 'Focus order',
+        tableRows: [
+          {
+            order: 1,
+            element: 'Checkbox input',
+            role: 'Focusses to the Checkbox input',
+          },
+        ],
+      },
+      interaction: {
+        title: 'Keyboard Interactions',
+        tableRows: [
+          {
+            command: ['Tab'],
+            description: 'Moves focus to the Checkbox input',
+          },
+          {
+            command: ['Space'],
+            description: 'Checks & unchecks the Checkbox ',
+          },
+        ],
+      },
+
+      aria: {
+        title: 'WAI-ARIA',
+        tableRows: [
+          {
+            element: 'label',
+            attribute: 'ariaLabel',
+            value: 'string',
+            description:
+              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with a Tab Item in a Tabs. Example: ariaLabel="view component overrides”',
+            userSupplied: true,
+          },
+          {
+            element: 'required',
+            attribute: 'aria-required',
+            value: 'object',
+            description:
+              'This attribute informs the user that an element is required. When set to true, screen readers notify users that the element is required.',
+            userSupplied: true,
+          },
+          {
+            element: 'invalid',
+            attribute: 'aria-invalid',
+            value: 'object',
+            description:
+              'This attribute informs the user when there is an error. By default it’s set to false. Screen readers will alert users when the element is set to any value other than false.',
+            userSupplied: true,
+          },
+        ],
+      },
+    }}
   />
 );
 
