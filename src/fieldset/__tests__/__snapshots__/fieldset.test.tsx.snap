@@ -224,9 +224,6 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
-  transition-property: background-color,border-color;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-7 svg {
@@ -340,6 +337,22 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
 
 .emotion-7:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: background-color,border-color;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: background-color,border-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-8 {
@@ -644,9 +657,6 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
-  transition-property: background-color,border-color;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-7 svg {
@@ -760,6 +770,22 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
 
 .emotion-7:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: background-color,border-color;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: background-color,border-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-8 {
@@ -1064,9 +1090,6 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
-  transition-property: background-color,border-color;
-  transition-duration: 200ms,200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-7 svg {
@@ -1180,6 +1203,22 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 
 .emotion-7:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: background-color,border-color;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: background-color,border-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-8 {

@@ -256,7 +256,14 @@ describe('get component defaults functions', () => {
       fn: getTransitionPreset as any,
       tokenPathEnd: 'transitionPreset',
       themeSection: 'transitionPresets',
-      expectedResultFormatter: (expected: {base: any}) => expected.base,
+      expectedResultFormatter: (expected: {base: any}) => ({
+        '@media screen and (prefers-reduced-motion: no-preference)':
+          expected.base,
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          ...expected.base,
+          transitionDuration: '0ms',
+        },
+      }),
       responsive: true,
     },
   ].forEach(
@@ -652,12 +659,18 @@ describe('get component defaults functions', () => {
         'test',
       )(props);
       expect(result).toEqual({
-        '&.test-enter-active': {
-          transitionDuration: '1000ms',
+        '@media screen and (prefers-reduced-motion: no-preference)': {
+          transitionProperty: 'css-props-for-default-token',
+          transitionDuration: '1200ms',
+          transitionTimingFunction: 'linear',
+          '&.test-enter-active': {transitionDuration: '1000ms'},
         },
-        transitionDuration: '1200ms',
-        transitionProperty: 'css-props-for-default-token',
-        transitionTimingFunction: 'linear',
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          transitionProperty: 'css-props-for-default-token',
+          transitionDuration: '0ms',
+          transitionTimingFunction: 'linear',
+          '&.test-enter-active': {transitionDuration: '0ms'},
+        },
       });
     });
 
@@ -682,12 +695,18 @@ describe('get component defaults functions', () => {
         'test',
       )(props);
       expect(result).toEqual({
-        '&.test-enter-active': {
-          transitionDuration: '800ms',
+        '@media screen and (prefers-reduced-motion: no-preference)': {
+          transitionProperty: 'css-props-for-default-token',
+          transitionDuration: '500ms',
+          transitionTimingFunction: 'linear',
+          '&.test-enter-active': {transitionDuration: '800ms'},
         },
-        transitionDuration: '500ms',
-        transitionProperty: 'css-props-for-default-token',
-        transitionTimingFunction: 'linear',
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          transitionProperty: 'css-props-for-default-token',
+          transitionDuration: '0ms',
+          transitionTimingFunction: 'linear',
+          '&.test-enter-active': {transitionDuration: '0ms'},
+        },
       });
     });
 
@@ -699,16 +718,32 @@ describe('get component defaults functions', () => {
 
       expect(result).toEqual({
         '@media screen and (max-width: 767px)': {
-          transitionProperty:
-            'css-props-for-default-token, css-props-for-additional-token',
-          transitionDuration: '200ms, 400ms',
-          transitionTimingFunction: 'linear, linear',
+          '@media screen and (prefers-reduced-motion: no-preference)': {
+            transitionProperty:
+              'css-props-for-default-token, css-props-for-additional-token',
+            transitionDuration: '200ms, 400ms',
+            transitionTimingFunction: 'linear, linear',
+          },
+          '@media screen and (prefers-reduced-motion: reduce)': {
+            transitionProperty:
+              'css-props-for-default-token, css-props-for-additional-token',
+            transitionDuration: '0ms',
+            transitionTimingFunction: 'linear, linear',
+          },
         },
         '@media screen and (min-width: 768px)': {
-          transitionProperty:
-            'css-props-for-override-token, css-props-for-additional-token',
-          transitionDuration: '300ms, 400ms',
-          transitionTimingFunction: 'linear, linear',
+          '@media screen and (prefers-reduced-motion: no-preference)': {
+            transitionProperty:
+              'css-props-for-override-token, css-props-for-additional-token',
+            transitionDuration: '300ms, 400ms',
+            transitionTimingFunction: 'linear, linear',
+          },
+          '@media screen and (prefers-reduced-motion: reduce)': {
+            transitionProperty:
+              'css-props-for-override-token, css-props-for-additional-token',
+            transitionDuration: '0ms',
+            transitionTimingFunction: 'linear, linear',
+          },
         },
       });
     });

@@ -28,9 +28,16 @@ describe('getTransitionPresetFromTheme', () => {
       theme,
     });
     expect(result).toEqual({
-      transitionProperty: 'color',
-      transitionDuration: '2000ms',
-      transitionTimingFunction: 'linear',
+      '@media screen and (prefers-reduced-motion: no-preference)': {
+        transitionProperty: 'color',
+        transitionDuration: '2000ms',
+        transitionTimingFunction: 'linear',
+      },
+      '@media screen and (prefers-reduced-motion: reduce)': {
+        transitionProperty: 'color',
+        transitionDuration: '0ms',
+        transitionTimingFunction: 'linear',
+      },
     });
   });
 
@@ -93,40 +100,55 @@ describe('getTransitionPresetFromTheme', () => {
     )({
       theme,
     });
+
     expect(result).toEqual({
-      opacity: '0.2',
-      '&.nk-test-appear': {
+      '@media screen and (prefers-reduced-motion: no-preference)': {
         opacity: '0.2',
+        '&.nk-test-appear': {opacity: '0.2'},
+        '&.nk-test-appear-active': {
+          opacity: '0.8',
+          transitionProperty: 'opacity',
+          transitionDuration: '4000ms',
+        },
+        '&.nk-test-appear-done': {opacity: '0.2'},
+        '&.nk-test-enter': {opacity: '0.2'},
+        '&.nk-test-enter-active': {
+          opacity: '0.8',
+          transitionProperty: 'opacity',
+          transitionDuration: '4000ms',
+        },
+        '&.nk-test-enter-done': {opacity: '0.8'},
+        '&.nk-test-exit': {opacity: '0.8'},
+        '&.nk-test-exit-active': {
+          opacity: '0.2',
+          transitionProperty: 'opacity',
+          transitionDuration: '4000ms',
+        },
+        '&.nk-test-exit-done': {opacity: '0.2'},
       },
-      '&.nk-test-appear-active': {
-        opacity: '0.8',
-        transitionProperty: 'opacity',
-        transitionDuration: '4000ms',
-      },
-      '&.nk-test-appear-done': {
+      '@media screen and (prefers-reduced-motion: reduce)': {
         opacity: '0.2',
-      },
-      '&.nk-test-enter': {
-        opacity: '0.2',
-      },
-      '&.nk-test-enter-active': {
-        opacity: '0.8',
-        transitionProperty: 'opacity',
-        transitionDuration: '4000ms',
-      },
-      '&.nk-test-enter-done': {
-        opacity: '0.8',
-      },
-      '&.nk-test-exit': {
-        opacity: '0.8',
-      },
-      '&.nk-test-exit-active': {
-        opacity: '0.2',
-        transitionProperty: 'opacity',
-        transitionDuration: '4000ms',
-      },
-      '&.nk-test-exit-done': {
-        opacity: '0.2',
+        '&.nk-test-appear': {opacity: '0.2'},
+        '&.nk-test-appear-active': {
+          opacity: '0.8',
+          transitionProperty: 'opacity',
+          transitionDuration: '0ms',
+        },
+        '&.nk-test-appear-done': {opacity: '0.2'},
+        '&.nk-test-enter': {opacity: '0.2'},
+        '&.nk-test-enter-active': {
+          opacity: '0.8',
+          transitionProperty: 'opacity',
+          transitionDuration: '0ms',
+        },
+        '&.nk-test-enter-done': {opacity: '0.8'},
+        '&.nk-test-exit': {opacity: '0.8'},
+        '&.nk-test-exit-active': {
+          opacity: '0.2',
+          transitionProperty: 'opacity',
+          transitionDuration: '0ms',
+        },
+        '&.nk-test-exit-done': {opacity: '0.2'},
       },
     });
   });
@@ -182,9 +204,16 @@ describe('getTransitionPresetFromTheme', () => {
       theme,
     });
     expect(result).toEqual({
-      transitionProperty: 'color, background-color',
-      transitionDuration: '2000ms, 3000ms',
-      transitionTimingFunction: 'linear, linear',
+      '@media screen and (prefers-reduced-motion: no-preference)': {
+        transitionProperty: 'color, background-color',
+        transitionDuration: '2000ms, 3000ms',
+        transitionTimingFunction: 'linear, linear',
+      },
+      '@media screen and (prefers-reduced-motion: reduce)': {
+        transitionProperty: 'color, background-color',
+        transitionDuration: '0ms',
+        transitionTimingFunction: 'linear, linear',
+      },
     });
   });
 
@@ -296,37 +325,67 @@ describe('getTransitionPresetFromTheme', () => {
       theme,
     });
     expect(result).toEqual({
-      opacity: '0.2',
-      transform: 'translateY(100%) scale(0.5)',
-      '&.nk-test-enter': {
+      '@media screen and (prefers-reduced-motion: no-preference)': {
         opacity: '0.2',
         transform: 'translateY(100%) scale(0.5)',
+        '&.nk-test-enter': {
+          opacity: '0.2',
+          transform: 'translateY(100%) scale(0.5)',
+        },
+        '&.nk-test-enter-active': {
+          opacity: '0.8',
+          transitionProperty: 'opacity, transform, transform',
+          transitionDuration: '4000ms, 4000ms, 4000ms',
+          transitionTimingFunction: 'linear, linear',
+          transform: 'translateY(0) scale(1)',
+        },
+        '&.nk-test-enter-done': {
+          opacity: '0.8',
+          transform: 'translateY(0) scale(1)',
+        },
+        '&.nk-test-exit': {opacity: '0.8', transform: 'translateY(0) scale(1)'},
+        '&.nk-test-exit-active': {
+          opacity: '0.2',
+          transitionProperty: 'opacity, transform, transform',
+          transitionDuration: '4000ms, 4000ms, 4000ms',
+          transitionTimingFunction: 'linear, linear',
+          transform: 'translateY(100%) scale(0.5)',
+        },
+        '&.nk-test-exit-done': {
+          opacity: '0.2',
+          transform: 'translateY(100%) scale(0.5)',
+        },
       },
-      '&.nk-test-enter-active': {
-        opacity: '0.8',
-        transitionProperty: 'opacity, transform, transform',
-        transitionDuration: '4000ms, 4000ms, 4000ms',
-        transitionTimingFunction: 'linear, linear',
-        transform: 'translateY(0) scale(1)',
-      },
-      '&.nk-test-enter-done': {
-        opacity: '0.8',
-        transform: 'translateY(0) scale(1)',
-      },
-      '&.nk-test-exit': {
-        opacity: '0.8',
-        transform: 'translateY(0) scale(1)',
-      },
-      '&.nk-test-exit-active': {
+      '@media screen and (prefers-reduced-motion: reduce)': {
         opacity: '0.2',
-        transitionProperty: 'opacity, transform, transform',
-        transitionDuration: '4000ms, 4000ms, 4000ms',
-        transitionTimingFunction: 'linear, linear',
         transform: 'translateY(100%) scale(0.5)',
-      },
-      '&.nk-test-exit-done': {
-        opacity: '0.2',
-        transform: 'translateY(100%) scale(0.5)',
+        '&.nk-test-enter': {
+          opacity: '0.2',
+          transform: 'translateY(100%) scale(0.5)',
+        },
+        '&.nk-test-enter-active': {
+          opacity: '0.8',
+          transitionProperty: 'opacity, transform, transform',
+          transitionDuration: '0ms',
+          transitionTimingFunction: 'linear, linear',
+          transform: 'translateY(0) scale(1)',
+        },
+        '&.nk-test-enter-done': {
+          opacity: '0.8',
+          transform: 'translateY(0) scale(1)',
+        },
+        '&.nk-test-exit': {opacity: '0.8', transform: 'translateY(0) scale(1)'},
+        '&.nk-test-exit-active': {
+          opacity: '0.2',
+          transitionProperty: 'opacity, transform, transform',
+          transitionDuration: '0ms',
+          transitionTimingFunction: 'linear, linear',
+          transform: 'translateY(100%) scale(0.5)',
+        },
+        '&.nk-test-exit-done': {
+          opacity: '0.2',
+          transform: 'translateY(100%) scale(0.5)',
+        },
       },
     });
   });
@@ -368,9 +427,16 @@ describe('getTransitionPresetFromTheme', () => {
       theme,
     });
     expect(result).toEqual({
-      transitionProperty: 'background-color',
-      transitionDuration: '3000ms',
-      transitionTimingFunction: 'linear',
+      '@media screen and (prefers-reduced-motion: no-preference)': {
+        transitionProperty: 'background-color',
+        transitionDuration: '3000ms',
+        transitionTimingFunction: 'linear',
+      },
+      '@media screen and (prefers-reduced-motion: reduce)': {
+        transitionProperty: 'background-color',
+        transitionDuration: '0ms',
+        transitionTimingFunction: 'linear',
+      },
     });
   });
 
@@ -490,25 +556,52 @@ describe('getTransitionPresetFromTheme', () => {
 
     expect(result).toEqual({
       '@media screen and (max-width: 499px)': {
-        transitionDuration: '2000ms',
-        transitionProperty: 'color',
-        transitionTimingFunction: 'linear',
+        '@media screen and (prefers-reduced-motion: no-preference)': {
+          transitionDuration: '2000ms',
+          transitionProperty: 'color',
+          transitionTimingFunction: 'linear',
+        },
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          transitionDuration: '0ms',
+          transitionProperty: 'color',
+          transitionTimingFunction: 'linear',
+        },
       },
-
       '@media screen and (min-width: 1500px)': {
-        transitionDuration: '3000ms',
-        transitionProperty: 'height',
-        transitionTimingFunction: 'linear',
+        '@media screen and (prefers-reduced-motion: no-preference)': {
+          transitionDuration: '3000ms',
+          transitionProperty: 'height',
+          transitionTimingFunction: 'linear',
+        },
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          transitionDuration: '0ms',
+          transitionProperty: 'height',
+          transitionTimingFunction: 'linear',
+        },
       },
       '@media screen and (min-width: 500px) and (max-width: 799px)': {
-        transitionDuration: '2000ms',
-        transitionProperty: 'width',
-        transitionTimingFunction: 'linear',
+        '@media screen and (prefers-reduced-motion: no-preference)': {
+          transitionDuration: '2000ms',
+          transitionProperty: 'width',
+          transitionTimingFunction: 'linear',
+        },
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          transitionDuration: '0ms',
+          transitionProperty: 'width',
+          transitionTimingFunction: 'linear',
+        },
       },
       '@media screen and (min-width: 800px) and (max-width: 1499px)': {
-        transitionDuration: '3000ms',
-        transitionProperty: 'background-colour',
-        transitionTimingFunction: 'linear',
+        '@media screen and (prefers-reduced-motion: no-preference)': {
+          transitionDuration: '3000ms',
+          transitionProperty: 'background-colour',
+          transitionTimingFunction: 'linear',
+        },
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          transitionDuration: '0ms',
+          transitionProperty: 'background-colour',
+          transitionTimingFunction: 'linear',
+        },
       },
     });
   });
@@ -527,25 +620,52 @@ describe('getTransitionPresetFromTheme', () => {
 
     expect(result).toEqual({
       '@media screen and (max-width: 499px)': {
-        transitionDuration: '2000ms, 4000ms',
-        transitionProperty: 'color, opacity',
-        transitionTimingFunction: 'linear, linear',
+        '@media screen and (prefers-reduced-motion: no-preference)': {
+          transitionDuration: '2000ms, 4000ms',
+          transitionProperty: 'color, opacity',
+          transitionTimingFunction: 'linear, linear',
+        },
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          transitionDuration: '0ms',
+          transitionProperty: 'color, opacity',
+          transitionTimingFunction: 'linear, linear',
+        },
       },
-
       '@media screen and (min-width: 1500px)': {
-        transitionDuration: '3000ms, 4000ms',
-        transitionProperty: 'height, opacity',
-        transitionTimingFunction: 'linear, linear',
+        '@media screen and (prefers-reduced-motion: no-preference)': {
+          transitionDuration: '3000ms, 4000ms',
+          transitionProperty: 'height, opacity',
+          transitionTimingFunction: 'linear, linear',
+        },
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          transitionDuration: '0ms',
+          transitionProperty: 'height, opacity',
+          transitionTimingFunction: 'linear, linear',
+        },
       },
       '@media screen and (min-width: 500px) and (max-width: 799px)': {
-        transitionDuration: '2000ms, 4000ms',
-        transitionProperty: 'width, opacity',
-        transitionTimingFunction: 'linear, linear',
+        '@media screen and (prefers-reduced-motion: no-preference)': {
+          transitionDuration: '2000ms, 4000ms',
+          transitionProperty: 'width, opacity',
+          transitionTimingFunction: 'linear, linear',
+        },
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          transitionDuration: '0ms',
+          transitionProperty: 'width, opacity',
+          transitionTimingFunction: 'linear, linear',
+        },
       },
       '@media screen and (min-width: 800px) and (max-width: 1499px)': {
-        transitionDuration: '3000ms, 4000ms',
-        transitionProperty: 'background-colour, opacity',
-        transitionTimingFunction: 'linear, linear',
+        '@media screen and (prefers-reduced-motion: no-preference)': {
+          transitionDuration: '3000ms, 4000ms',
+          transitionProperty: 'background-colour, opacity',
+          transitionTimingFunction: 'linear, linear',
+        },
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          transitionDuration: '0ms',
+          transitionProperty: 'background-colour, opacity',
+          transitionTimingFunction: 'linear, linear',
+        },
       },
     });
   });
@@ -568,14 +688,28 @@ describe('getTransitionPresetFromTheme', () => {
 
     expect(result).toEqual({
       '@media screen and (max-width: 799px)': {
-        transitionProperty: 'color',
-        transitionDuration: '5000ms',
-        transitionTimingFunction: 'linear',
+        '@media screen and (prefers-reduced-motion: no-preference)': {
+          transitionProperty: 'color',
+          transitionDuration: '5000ms',
+          transitionTimingFunction: 'linear',
+        },
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          transitionProperty: 'color',
+          transitionDuration: '0ms',
+          transitionTimingFunction: 'linear',
+        },
       },
       '@media screen and (min-width: 800px)': {
-        transitionProperty: 'background-colour',
-        transitionDuration: '5000ms',
-        transitionTimingFunction: 'linear',
+        '@media screen and (prefers-reduced-motion: no-preference)': {
+          transitionProperty: 'background-colour',
+          transitionDuration: '5000ms',
+          transitionTimingFunction: 'linear',
+        },
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          transitionProperty: 'background-colour',
+          transitionDuration: '0ms',
+          transitionTimingFunction: 'linear',
+        },
       },
     });
   });
@@ -604,14 +738,28 @@ describe('getTransitionPresetFromTheme', () => {
 
     expect(result).toEqual({
       '@media screen and (max-width: 799px)': {
-        transitionProperty: 'color, opacity',
-        transitionDuration: '5000ms, 6000ms',
-        transitionTimingFunction: 'linear, linear',
+        '@media screen and (prefers-reduced-motion: no-preference)': {
+          transitionProperty: 'color, opacity',
+          transitionDuration: '5000ms, 6000ms',
+          transitionTimingFunction: 'linear, linear',
+        },
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          transitionProperty: 'color, opacity',
+          transitionDuration: '0ms',
+          transitionTimingFunction: 'linear, linear',
+        },
       },
       '@media screen and (min-width: 800px)': {
-        transitionProperty: 'background-colour, opacity',
-        transitionDuration: '5000ms, 6000ms',
-        transitionTimingFunction: 'linear, linear',
+        '@media screen and (prefers-reduced-motion: no-preference)': {
+          transitionProperty: 'background-colour, opacity',
+          transitionDuration: '5000ms, 6000ms',
+          transitionTimingFunction: 'linear, linear',
+        },
+        '@media screen and (prefers-reduced-motion: reduce)': {
+          transitionProperty: 'background-colour, opacity',
+          transitionDuration: '0ms',
+          transitionTimingFunction: 'linear, linear',
+        },
       },
     });
   });
