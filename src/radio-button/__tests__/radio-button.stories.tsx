@@ -47,7 +47,7 @@ export const StoryRadioButtonDefault = () => (
         {sizes.map(size => (
           <>
             <Container>
-              <RadioButton size={size} label={size} checked={false} />
+              <RadioButton size={size} label={size} />
             </Container>
             <Container>
               <RadioButton size={size} label={`${size}-checked`} checked />
@@ -103,9 +103,9 @@ export const StoryRadioButtonLabel = () => {
         columnGap="space030"
         alignItems="center"
       >
-        <span>This is checkbox</span> <RadioButton id="no-label" />
+        <span>This is radio-button </span> <RadioButton id="custom-label" />
         {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-        <label htmlFor="no-label">without label</label>
+        <label htmlFor="custom-label">with custom label</label>
       </GridLayout>
     </Container>
   );

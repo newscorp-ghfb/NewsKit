@@ -4,10 +4,10 @@ import {TransitionToken} from '../theme/presets/types';
 import {Override} from '../utils/overrides';
 import {MQ} from '../utils/style/types';
 
-export type SwitchBaseIconProps = NewsKitIconProps &
-  Pick<SwitchBaseProps, 'checked' | 'state'> & {iconSize?: string};
+export type BaseSwitchIconProps = NewsKitIconProps &
+  Pick<BaseSwitchProps, 'checked' | 'state'> & {iconSize?: string};
 
-type SwitchBaseOverrides = {
+type BaseSwitchOverrides = {
   spaceStack?: MQ<string>;
   input?: {
     size?: MQ<string>;
@@ -23,26 +23,26 @@ type SwitchBaseOverrides = {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
   };
-  icon?: Override<SwitchBaseIconProps>;
+  icon?: Override<BaseSwitchIconProps>;
 };
 
-export type SwitchBaseSize = 'small' | 'medium' | 'large';
+export type BaseSwitchSize = 'small' | 'medium' | 'large';
 
-export type SwitchBaseState = 'valid' | 'invalid' | 'disabled';
+export type BaseSwitchState = 'valid' | 'invalid' | 'disabled';
 
-export type SwitchBaseLabelPosition = 'start' | 'end';
+export type BaseSwitchLabelPosition = 'start' | 'end';
 
-export interface SwitchBaseProps
+export interface BaseSwitchProps
   extends Omit<
     React.InputHTMLAttributes<HTMLInputElement>,
     'size' | 'disabled'
   > {
-  overrides?: SwitchBaseOverrides;
-  size?: SwitchBaseSize;
-  state?: SwitchBaseState;
+  overrides?: BaseSwitchOverrides;
+  size?: BaseSwitchSize;
+  state?: BaseSwitchState;
   label?: React.ReactNode;
   labelAttributes?: React.LabelHTMLAttributes<HTMLLabelElement>;
-  labelPosition?: SwitchBaseLabelPosition;
+  labelPosition?: BaseSwitchLabelPosition;
   path: string;
-  defaultSwitchSelectorComponent: React.ComponentType<SwitchBaseIconProps>;
+  defaultSwitchSelectorComponent: React.ComponentType<BaseSwitchIconProps>;
 }

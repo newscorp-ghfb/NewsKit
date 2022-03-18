@@ -36,5 +36,5 @@ export const RadioGroup = React.forwardRef<HTMLInputElement, RadioGroupProps>(
   },
 );
 
-export const useRadioGroup = (): RadioGroupContextValue | undefined =>
+export const useRadioGroupContext = (): RadioGroupContextValue | undefined =>
   React.useContext(RadioGroupContext);

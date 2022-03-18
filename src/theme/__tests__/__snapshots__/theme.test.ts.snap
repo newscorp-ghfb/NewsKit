@@ -1133,6 +1133,28 @@ Object {
       },
     },
   },
+  "audioPlayerSeekBar": Object {
+    "buffering": Object {
+      "stylePreset": "seekBarBuffering",
+    },
+    "slider": Object {
+      "indicator": Object {
+        "stylePreset": "seekBarIndicator",
+      },
+      "thumb": Object {
+        "size": "sizing040",
+        "stylePreset": "seekBarThumb",
+      },
+      "track": Object {
+        "size": "sizing020",
+        "stylePreset": "seekBarTrack",
+      },
+    },
+  },
+  "audioPlayerTimeDisplay": Object {
+    "stylePreset": "timeDisplay",
+    "typographyPreset": "utilityButton030",
+  },
   "banner": Object {
     "horizontal": Object {
       "actions": Object {
@@ -1928,24 +1950,6 @@ Object {
       "overlays": Object {
         "size": "sizing090",
         "stylePreset": "scrollOverlaysVertical",
-      },
-    },
-  },
-  "seekBar": Object {
-    "buffering": Object {
-      "stylePreset": "seekBarBuffering",
-    },
-    "slider": Object {
-      "indicator": Object {
-        "stylePreset": "seekBarIndicator",
-      },
-      "thumb": Object {
-        "size": "sizing040",
-        "stylePreset": "seekBarThumb",
-      },
-      "track": Object {
-        "size": "sizing020",
-        "stylePreset": "seekBarTrack",
       },
     },
   },
@@ -4531,6 +4535,11 @@ Object {
     },
     "disabled": Object {
       "color": "{{colors.inkNonEssential}}",
+    },
+  },
+  "timeDisplay": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.transparent}}",
     },
   },
   "titleBar": Object {

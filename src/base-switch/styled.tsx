@@ -6,7 +6,7 @@ import {
   getTypographyPreset,
   styled,
 } from '../utils';
-import {SwitchBaseProps} from './types';
+import {BaseSwitchProps} from './types';
 
 const STACKING_CONTEXT = {
   feedback: '1',
@@ -14,7 +14,7 @@ const STACKING_CONTEXT = {
 };
 
 export const StyledContainer = styled.label<
-  Pick<SwitchBaseProps, 'state' | 'size' | 'overrides' | 'path'>
+  Pick<BaseSwitchProps, 'state' | 'size' | 'overrides' | 'path'>
 >`
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@ export const StyledContainer = styled.label<
 
 export const StyledSwitchContainer = styled.div<
   Pick<
-    SwitchBaseProps,
+    BaseSwitchProps,
     'size' | 'overrides' | 'state' | 'labelPosition' | 'path'
   >
 >`
@@ -66,7 +66,7 @@ const insetCSS = `
 `;
 
 export const StyledSwitch = styled.div<
-  Pick<SwitchBaseProps, 'checked' | 'size' | 'state' | 'overrides' | 'path'> & {
+  Pick<BaseSwitchProps, 'checked' | 'size' | 'state' | 'overrides' | 'path'> & {
     isFocused: boolean;
     isHovered: boolean;
     feedbackIsVisible: boolean;
@@ -92,7 +92,7 @@ export const StyledSwitch = styled.div<
 `;
 
 export const StyledFeedback = styled.div<
-  Pick<SwitchBaseProps, 'size' | 'overrides' | 'state' | 'path'> & {
+  Pick<BaseSwitchProps, 'size' | 'overrides' | 'state' | 'path'> & {
     isFocused: boolean;
     isHovered: boolean;
   }
@@ -127,7 +127,7 @@ export const StyledFeedback = styled.div<
 `;
 
 export const StyledInput = styled.input<
-  Omit<SwitchBaseProps, 'defaultSwitchSelectorComponent'>
+  Omit<BaseSwitchProps, 'defaultSwitchSelectorComponent'>
 >`
   ${insetCSS}
   margin: 0;
@@ -136,7 +136,7 @@ export const StyledInput = styled.input<
 `;
 
 export const StyledLabel = styled.span<
-  Pick<SwitchBaseProps, 'size' | 'overrides' | 'state' | 'path'>
+  Pick<BaseSwitchProps, 'size' | 'overrides' | 'state' | 'path'>
 >`
   ${({size, state, path}) =>
     getStylePreset(`${path}.${size}.label`, 'label', {

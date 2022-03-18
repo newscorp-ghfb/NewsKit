@@ -9,13 +9,13 @@ import {
   StyledContainer,
   StyledLabel,
 } from './styled';
-import {SwitchBaseProps, SwitchBaseIconProps} from './types';
+import {BaseSwitchProps, BaseSwitchIconProps} from './types';
 import {getComponentOverrides} from '../utils/overrides';
 import {useControlled} from '../utils/hooks';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 
-export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
+export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
   (
     {
       size = 'medium',
@@ -146,7 +146,7 @@ export const SwitchBase = React.forwardRef<HTMLInputElement, SwitchBaseProps>(
             feedbackIsVisible={isLabelHovered || isInputFocused}
             path={path}
           >
-            <CheckIcon {...(checkIconProps as SwitchBaseIconProps)} />
+            <CheckIcon {...(checkIconProps as BaseSwitchIconProps)} />
             <StyledInput
               ref={composeRefs(inputRef, ref)}
               overrides={overrides}

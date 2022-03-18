@@ -4,8 +4,8 @@ import {RadioButtonProps, RadioButtonIconProps} from './types';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {SwitchBase} from '../switch-base';
-import {useRadioGroup} from './radio-group';
+import {BaseSwitch} from '../base-switch';
+import {useRadioGroupContext} from './radio-group';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
 
 const DefaultIcon = ({checked, iconSize, overrides}: RadioButtonIconProps) =>
@@ -18,7 +18,10 @@ const DefaultIcon = ({checked, iconSize, overrides}: RadioButtonIconProps) =>
     />
   ) : null;
 
-const ThemelessCheckbox = React.forwardRef<HTMLInputElement, RadioButtonProps>(
+const ThemelessRadioButton = React.forwardRef<
+  HTMLInputElement,
+  RadioButtonProps
+>(
   (
     {
       name: nameProp,
@@ -29,7 +32,7 @@ const ThemelessCheckbox = React.forwardRef<HTMLInputElement, RadioButtonProps>(
     },
     inputRef,
   ) => {
-    const radioGroup = useRadioGroup();
+    const radioGroup = useRadioGroupContext();
 
     const onChange = composeEventHandlers([
       onChangeProp,
@@ -48,7 +51,7 @@ const ThemelessCheckbox = React.forwardRef<HTMLInputElement, RadioButtonProps>(
     }
 
     return (
-      <SwitchBase
+      <BaseSwitch
         path="radioButton"
         type="radio"
         ref={inputRef}
@@ -62,7 +65,7 @@ const ThemelessCheckbox = React.forwardRef<HTMLInputElement, RadioButtonProps>(
   },
 );
 
-export const RadioButton = withOwnTheme(ThemelessCheckbox)({
+export const RadioButton = withOwnTheme(ThemelessRadioButton)({
   defaults,
   stylePresets,
 });

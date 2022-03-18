@@ -1,9 +1,6 @@
-import {SwitchBaseSize, SwitchBaseState} from '../../switch-base/types';
+import {CheckboxState, CheckboxSize} from '../types';
 
-export const states: [
-  string,
-  {checked?: boolean; state?: SwitchBaseState},
-][] = [
+export const states: [string, {checked?: boolean; state?: CheckboxState}][] = [
   ['base', {}],
   ['checked', {checked: true}],
   ['disabled', {state: 'disabled'}],
@@ -14,4 +11,4 @@ export const states: [
   ['valid-checked', {state: 'valid', checked: true}],
 ];
 
-export const sizes: SwitchBaseSize[] = ['small', 'medium', 'large'];
+export const sizes: CheckboxSize[] = ['small', 'medium', 'large'];

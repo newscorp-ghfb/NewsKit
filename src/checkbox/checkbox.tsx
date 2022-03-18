@@ -4,7 +4,7 @@ import {CheckboxProps, CheckboxIconProps} from './types';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {SwitchBase} from '../switch-base';
+import {BaseSwitch} from '../base-switch';
 
 const DefaultCheckboxIcon = ({checked, overrides}: CheckboxIconProps) =>
   checked ? (
@@ -18,7 +18,7 @@ const DefaultCheckboxIcon = ({checked, overrides}: CheckboxIconProps) =>
 
 const ThemelessCheckbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
   (props, inputRef) => (
-    <SwitchBase
+    <BaseSwitch
       path="checkbox"
       ref={inputRef}
       type="checkbox"
