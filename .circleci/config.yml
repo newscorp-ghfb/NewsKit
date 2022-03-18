@@ -621,7 +621,6 @@ jobs:
 
   # TODO to be removed?
   create_release_candidate:
-    <<: *working_directory
     executor: node
     steps:
       - checkout
@@ -641,19 +640,15 @@ jobs:
           <<: *slack_status
   
   bump_version:
-    #TODO next line needed?
-    <<: *working_directory
     executor: node
     parameters:
       version:
         type: string
     steps:
       - checkout
-      # - github-cli/setup
-      # - run:
-      #     name: Set github identity
-      #     #TODO Will these credential allow us to push directly to master?
-      #     command: make set_git_identity
+      - run:
+          name: Set github identity
+          command: make set_git_identity
       - run:
           name: bump version
           command: make bump_version NEW_VERSION=<< parameters.version >>
@@ -891,72 +886,26 @@ jobs:
 
 # ========== FILTERS START    ==========
 
-only_develop: &only_develop
+only_on_release: &only_on_release
   filters:
+    tags:
+      # The pattern must match the tag created in the github release interface
+      only: /^release@.*/
     branches:
-      only: develop
+      ignore: /.*/
 
-only_trigger_release: &only_trigger_release
+only_on_deploy_release: &only_on_deploy_release
   filters:
+    tags:
+      # The pattern must match the tag created and pushed by bump_version make script
+      only: /^deploy-release@.*/
     branches:
-      only: /trigger-release-.*/
-
-only_release: &only_release
-  filters:
-    branches:
-      only: /^release.*/
-
-only_main: &only_main
-  filters:
-    branches:
-      only: main
-
-only_pr: &only_pr
-  filters:
-    branches:
-      ignore:
-        - develop
-        - main
-        - /trigger-release-.*/
-        - /^release.*/
-
-only_pr_and_develop: &only_pr_and_develop
-  filters:
-    branches:
-      ignore:
-        - main
-        - /trigger-release-.*/
-        - /^release.*/
-
-only_pr_and_release: &only_pr_and_release
-  filters:
-    branches:
-      ignore:
-        - develop
-        - main
-        - /trigger-release-.*/
-
-ignore_trigger_release: &ignore_trigger_release
-  filters:
-    branches:
-      ignore:
-        - /trigger-release-.*/
+      ignore: /.*/
 
 # ========== FILTERS END        ==========
 
-# ========== REQUIREMENTS START ==========
-
-require_dep: &require_dep
-  requires:
-    - install_deps
-
-# ========== REQUIREMENTS END   ==========
-
 workflows:
-  
-  #Jobs run on any PR workflow.
-  # (PR can be into Main or into other feature branches if using "Epics" branches[should we deploy to dev environments in epic's PR?])
-  # Do we want to run this and deploy to dev envs when raising a PR to update package json version during a release? 
+
   on_pr:
     #TODO use positive rather than negative? list all the pattern we accept? fix, bug, feat, etc. Easier to mantain and more readable
     when:
@@ -967,18 +916,11 @@ workflows:
               # Is pattern right? what ^ and $ are for? needed? can just be `main`?
               pattern: "^main$"
               value: << pipeline.git.branch >>
-        - not: 
-          # Won't run on release branches. Release branches are supposed to exist only to update package.json thrugh script?
-          # TODO TO BE TESTED
-          matches:
-            # TODO is pattern correct? TO be REVIEW
-            pattern: "^release$"
-            value: << pipeline.git.branch >>
-    # # ( still issue with Epics branches? what would be run? we happy with that?)
-
     jobs:
+    # TODO TO REMOVE, was just testing
       - bump_version:
           version: release@5.0.2
+    #
       - install_deps
       - install_cypress
       - build_icons:
@@ -1007,8 +949,6 @@ workflows:
           requires:
             - build_test_e2e
             - install_cypress
-
-      ## Visual changes approval jobs
       - build_docs_pr_with_no_base_url:
           context: ncu-product-platforms-context
           requires:
@@ -1024,6 +964,20 @@ workflows:
           requires:
             - build_docs_pr_with_no_base_url
             - install_cypress
+      - no_visual_changes:
+          type: approval
+          requires:
+            - build_storybook
+      - docs_and_comps_visual_changes:
+          type: approval
+          requires:
+            - build_storybook
+      - docs_visual_changes:
+          type: approval
+          requires:
+            - build_storybook
+
+      # Jobs for realising unstable NPM version
       - approve_publish_npm_pr:
           type: approval
           requires:
@@ -1039,19 +993,7 @@ workflows:
           publish_dev: true
           requires:
             - approve_publish_npm_pr
-      - no_visual_changes:
-          type: approval
-          requires:
-            - build_storybook
-      - docs_and_comps_visual_changes:
-          type: approval
-          requires:
-            - build_storybook
-      - docs_visual_changes:
-          type: approval
-          requires:
-            - build_storybook
-      # end visual changes approval jobs
+      # End jobs for releasing unstable NPM version
 
       - test_visual_comps:
           context: ncu-product-platforms-context
@@ -1076,8 +1018,8 @@ workflows:
       - i_have_merged_applitools:
           type: approval
       - init_aws:
-          <<: *ignore_trigger_release
           context: ncu-product-platforms-context
+      #TODO CORRECT environment?
       - deploy_terraform:
           name: deploy_terraform_dns_pr
           package: dns
@@ -1086,6 +1028,7 @@ workflows:
           environment: dev
           requires:
             - init_aws
+      #TODO CORRECT environment?
       - deploy_terraform:
           name: deploy_terraform_ecr_pr
           package: ecr
@@ -1094,6 +1037,7 @@ workflows:
           tf_env: false
           requires:
             - init_aws
+      #TODO CORRECT environment?
       - deploy_terraform:
           name: deploy_terraform_s3_pr
           package: s3
@@ -1115,7 +1059,7 @@ workflows:
           # TODO was it a mistake? should it be  deploy_terraform_s3_pr instead?(pr)
           # has been working so far because pr has always finished earlier, BUT looks wrong and should be
           # linked properly to deploy_terraform_s3_pr instead. _dev does not and did not run on Pr workflow
-            # - deploy_terraform_s3_dev
+            - deploy_terraform_s3_pr
             - build_docs_pr
             - build_storybook
       - post_pr_env_url_to_github_pr:
@@ -1127,8 +1071,26 @@ workflows:
   on_main_merge:
     when: 
       equal: [ main, << pipeline.git.branch >> ]
-      
     jobs:
+     #TODO add comment for what these are for
+      - init_aws:
+          context: ncu-product-platforms-context
+      - deploy_terraform:
+          name: deploy_terraform_dns_dev
+          package: dns
+          context: ncu-product-platforms-context
+          environment: dev
+          requires:
+            - init_aws
+      - deploy_terraform:
+          name: deploy_terraform_ecr_dev
+          package: ecr
+          context: ncu-product-platforms-context
+          tf_env: false
+          requires:
+            - init_aws
+    #
+
     #TODO Are these needed? they will be run in PR too, before merging.
       - install_deps
       - install_cypress
@@ -1177,6 +1139,9 @@ workflows:
           requires:
             - build_docs_dev
             - install_cypress
+
+      # TODO the next is approval for deploying newskit package to npm dev right?
+      # nothing related to the website, right?
       - approve_publish_npm_dev:
           type: approval
           requires:
@@ -1192,6 +1157,11 @@ workflows:
           publish_dev: true
           requires:
             - approve_publish_npm_dev
+      # END prev todo
+
+      # TODO ARE THE following ones ONLY FOR THE dev env WEBSITE? strictly for
+      #  website: https://newskit.ceng-dev.newsuk.tech/
+      # :storybook: https://newskit-storybook.ceng-dev.newsuk.tech/ ?? in that case is fine. We want only to deploy to dev WHEN MERGING On main. to prod when releasing.
       - build_push_docker_ecr:
           name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context
@@ -1214,6 +1184,7 @@ workflows:
           environment: dev
           requires:
             - eks_flux_deploy_dev
+      # approval for deploying website to prod
       - approve_publish_docs:
           type: approval
           requires:
@@ -1240,59 +1211,125 @@ workflows:
           environment: prod
           requires:
             - eks_flux_deploy_dev_to_prod
-      - deploy_terraform:
-          name: deploy_terraform_dns_dev
-          package: dns
-          context: ncu-product-platforms-context
-          environment: dev
-          requires:
-            - init_aws
-      - deploy_terraform:
-          name: deploy_terraform_ecr_dev
-          package: ecr
-          context: ncu-product-platforms-context
-          tf_env: false
-          requires:
-            - init_aws
-      - deploy_terraform:
-          name: deploy_terraform_s3_dev
-          package: s3
-          context: ncu-product-platforms-context
-          environment: dev
-          requires:
-            - deploy_terraform_s3_pr
-  
-  on_release:
-    when: << pipeline.git.tag >>
-    #TODO Add conditional for tags
-    jobs:
-   #TODO? Run all the "checks/test" jobs, if we feel they need to be re-run.
-   # In theory all the checks have ran on main merge already
 
+
+  on_release_tag:
+    jobs: 
       - bump_version:
-          #TODO replace hardcoded version with << pipeline.git.tag >>
-          version: release@5.0.2 | cut -f2 -d"@"
-
-  # UPDATE VERSION
-
-  # SET_GIT_IDENTIFY (see set_git_identity in make file)?!
+          <<: *only_on_release
+          #TODO replace hardcoded version with << pipeline.git.tag >> plus some logic to just grab the "number" from it or 'major minor etc.'
+          # Not need for release@ for example.
+          # Also, maybe better grab the minor, major, patch keywords and use that one. Less huma errors risk with writing the number correctly.?
+          # depends how we want to syntax it out.
+          version: release@5.0.2
   
-  # based on the tag update version with yarn version
-  # What should we take from the tag? directly the new number? or patch, minor, major? I would say the lates. How.. to see.
-
-  # git checkout main
-  # git pull
-  # yarn version << some  logic based on tag string>
-  # push to main directly
-
-  # END UPDATE VERSION
-
-  # Deploy jobs
-
-     
-
-# TODO remove MAKE FILE script not used anymore, or jobs/command in the new workflow.
-
-
+  on_deploy_release_tag:
+    # Workflow's jobs triggered by bump_version make script, which will create and push the tag.
+    jobs:
+      - init_aws:
+          <<: *only_on_deploy_release
+          context: ncu-product-platforms-context
+      #TODO? Run all the "checks/test" jobs, if we feel they need to be re-run.
+      # In theory all the checks have ran on main merge already. The only thing changes is the package json, I would not re run them ?!?!
+      - install_deps:
+          <<: *only_on_deploy_release
+      - install_cypress:
+          <<: *only_on_deploy_release
+      - build_icons:
+          <<: *only_on_deploy_release
+          requires:
+            - install_deps
+      - build_components:
+          <<: *only_on_deploy_release
+          requires:
+            - build_icons
+      - build_storybook:
+          <<: *only_on_deploy_release
+          requires:
+            - build_icons
+      - build_test_e2e:
+          <<: *only_on_deploy_release
+          requires:
+            - build_icons
+      - lint:
+          <<: *only_on_deploy_release
+          requires:
+            - build_icons
+      - test_unit_comps:
+          <<: *only_on_deploy_release
+          requires:
+            - build_icons
+      - test_unit_docs:
+          <<: *only_on_deploy_release
+          requires:
+            - build_icons
+      - test_e2e_comps:
+          <<: *only_on_deploy_release
+          context: ncu-product-platforms-context
+          requires:
+            - build_test_e2e
+            - install_cypress
+      #TODO END  needed QUESTIONING
+ 
+    - build_docs:
+          <<: *only_on_deploy_release
+          name: build_docs_prod
+          context: ncu-newskit-site-prod
+          requires:
+            - build_icons
+      - test_broken_links_docs:
+          <<: *only_on_deploy_release
+          name: test_broken_links_docs_prod
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_prod
+      - test_e2e_docs:
+          <<: *only_on_deploy_release
+          name: test_e2e_docs_prod
+          context: ncu-newskit-site-prod
+          requires:
+            - build_docs_prod
+            - install_cypress
+      - build_push_docker_ecr:
+          <<: *only_on_deploy_release
+          name: build_push_docker_ecr_release
+          context: ncu-product-platforms-context
+          docker_version: release
+          requires:
+            - build_storybook
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_prod
+      #TODO Is the next deploying stable NewsKit npm package !? 
+      # TODO check requirements are correct
+      - publish_npm:
+          <<: *only_on_deploy_release
+          context: ncu-product-platforms-context
+          requires:
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_prod
+            - build_components
+      #TODO deploying website to prod?
+      - eks_flux_deploy:
+          <<: *only_on_deploy_release
+          name: eks_flux_deploy_prod
+          context: ncu-newskit-site-prod
+          environment: prod
+          requires:
+            - publish_npm
+      - eks_kubectl_deploy:
+          <<: *only_on_deploy_release
+          name: eks_kubectl_deploy_prod
+          context: ncu-newskit-site-prod
+          environment: prod
+          requires:
+            - eks_flux_deploy_prod
 
     
+#TODO remove MAKE FILE script not used anymore, or jobs/command in the new workflow.
+#TODO remove working_directory
