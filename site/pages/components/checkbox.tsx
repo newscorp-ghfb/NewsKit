@@ -645,7 +645,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         <>
           The Checkbox has a range of props that can be used to define an
           appropriate experience for different use cases.
-          <Block spaceStack="space070" />
+          <Block spaceStack="space080" />
           <InlineMessage>
             There are two components exported from the package, one for use
             within the{' '}
@@ -663,18 +663,18 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           propsRows: [
             {
               name: 'size',
-              type: `“small” ”medium” ”large”`,
+              type: ['small', 'medium', 'large'],
               default: 'medium',
               description: `Defines the size of the FormInput Checkbox.`,
             },
             {
               name: 'state',
-              type: `"valid", "invalid", "disabled"`,
+              type: ['valid', 'invalid', 'disabled'],
               description: `If true, renders the FormInput Checkbox in a valid, invalid, or disabled state. It can be submitted within a form.`,
             },
             {
               name: 'labelPosition',
-              type: `"start", "end"`,
+              type: ['start', 'end'],
               default: 'end',
               description: `Defines the position of the Label.`,
             },
@@ -688,8 +688,11 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'checkbox.size',
               type: 'checkboxSize',
-              default:
-                'Small = sizing050, Medium = sizing060, Large =sizing070',
+              default: [
+                'Small = sizing050',
+                'Medium = sizing060',
+                'Large =sizing070',
+              ],
               description:
                 'If provided, this overrides the size of the Checkbox input.',
             },
@@ -710,8 +713,11 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'checkbox.spaceInline',
               type: 'MQ<string>',
-              default:
-                'Small = spaceInline030, Medium = spaceInline030, Large = spaceInline040',
+              default: [
+                'spaceInline030',
+                'Medium = spaceInline030',
+                'Large = spaceInline040',
+              ],
               description:
                 'If provided, this overrides the inline space between the Checkbox input and Label.',
             },
@@ -742,12 +748,14 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the stylePreset of the Checkbox icon.',
             },
-
             {
               attribute: 'feedback.size',
               type: 'feedbackSize',
-              default:
-                'Small = sizing070, Medium = sizing080, Large = sizing090',
+              default: [
+                'Small = sizing070',
+                'Medium = sizing080',
+                'Large = sizing090',
+              ],
               description:
                 'If provided, this overrides the size of the feedback element.',
             },
@@ -768,8 +776,11 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'checkbox.label.typographyPreset',
               type: 'MQ<string>',
-              default:
-                'Small = utilityBody020, Medium = utilityBody020, Large = utilityBody030',
+              default: [
+                'Small = utilityBody020',
+                ' Medium = utilityBody020',
+                'Large = utilityBody030',
+              ],
               description:
                 'If provided, this overrides the typographyPreset of the Label.',
             },
@@ -810,7 +821,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           propsRows: [
             {
               name: 'size',
-              type: `“small” ”medium” ”large”`,
+              type: ['small', 'medium', 'large'],
               default: 'medium',
               description: `Defines the size of the Checkbox.`,
             },
@@ -821,16 +832,13 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             },
             {
               name: 'state',
-              type: `“valid”
-              ”invalid”
-              ”disabled”`,
+              type: ['valid', 'invalid', 'disabled'],
               description: `If true, renders the Checkbox in a valid, invalid, or disabled state. It can be submitted within a form.`,
             },
             {
               name: 'labelPosition',
-              type: `“start”
-              ”end”`,
-              default: `”end”`,
+              type: ['start', 'end'],
+              default: 'end',
               description: `Defines the position of the Label.`,
             },
             {
@@ -843,8 +851,11 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'checkbox.size',
               type: 'checkboxSize',
-              default:
-                'Small = sizing050, Medium = sizing060, Large =sizing070',
+              default: [
+                'Small = sizing050',
+                'Medium = sizing060',
+                'Large =sizing070',
+              ],
               description:
                 'If provided, this overrides the size of the Checkbox input.',
             },
@@ -865,8 +876,11 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'checkbox.spaceInline',
               type: 'MQ<string>',
-              default:
-                'Small = spaceInline030, Medium = spaceInline030, Large = spaceInline040',
+              default: [
+                'spaceInline030',
+                'Medium = spaceInline030',
+                'Large = spaceInline040',
+              ],
               description:
                 'If provided, this overrides the inline space between the Checkbox input and Label.',
             },
@@ -897,12 +911,14 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the stylePreset of the Checkbox icon.',
             },
-
             {
               attribute: 'feedback.size',
               type: 'feedbackSize',
-              default:
-                'Small = sizing070, Medium = sizing080, Large = sizing090',
+              default: [
+                'Small = sizing070',
+                'Medium = sizing080',
+                'Large = sizing090',
+              ],
               description:
                 'If provided, this overrides the size of the feedback element.',
             },
@@ -923,8 +939,11 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'checkbox.label.typographyPreset',
               type: 'MQ<string>',
-              default:
-                'Small = utilityBody020, Medium = utilityBody020, Large = utilityBody030',
+              default: [
+                'Small = utilityBody020',
+                ' Medium = utilityBody020',
+                'Large = utilityBody030',
+              ],
               description:
                 'If provided, this overrides the typographyPreset of the Label.',
             },
