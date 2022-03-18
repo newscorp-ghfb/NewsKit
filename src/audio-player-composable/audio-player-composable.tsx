@@ -48,6 +48,7 @@ export const AudioPlayerComposable = ({
     togglePlay,
     onChangeSlider,
     onClickForward,
+    onClickBackward,
   } = useAudioFunctions({
     autoPlay,
     audioRef,
@@ -106,7 +107,7 @@ export const AudioPlayerComposable = ({
       playStateIcon,
     };
   };
-  const  getForwardButtonProps = ({
+  const getForwardButtonProps = ({
     onClick: consumerOnClick,
   }: {
     onClick?: () => void;
@@ -125,12 +126,24 @@ export const AudioPlayerComposable = ({
       onClick,
     };
   };
+  const getBackwardButtonProps = ({
+    onClick: consumerOnClick,
+  }: {
+    onClick?: () => void;
+  }) => {
+    // All the internal logic for defining aria and icon to show
 
-  // const getForwardButtonProps = () => ({
-  //   onClickForward,
+    let ariaLabel = 'Forward';
+    const onClick = () => {
+      if (consumerOnClick) consumerOnClick();
+      onClickBackward();
+    };
 
-  //   ariaLabel:'Forward',
-  // });
+    return {
+      ariaLabel,
+      onClick,
+    };
+  };
   const getSeekBarProps = () => ({
     duration,
     currentTime,
@@ -149,6 +162,7 @@ export const AudioPlayerComposable = ({
     getTimeDisplayProps,
     getSeekBarProps,
     getForwardButtonProps,
+    getBackwardButtonProps,
 
     // Internal for AudioElement
     audioRef,

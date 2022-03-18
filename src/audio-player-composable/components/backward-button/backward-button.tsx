@@ -2,15 +2,16 @@ import React from 'react';
 import {IconButton} from '../../../icon-button';
 import {ButtonSize} from '../../../button/types';
 import {useAudioPlayerContext} from '../../context';
-import {IconFilledForward10} from '../../../icons';
+import {IconFilledReplay10} from '../../../icons';
 import { SkipButtonProps } from '../../types';
 
-export const AudioPlayerForwardButton: React.FC<SkipButtonProps> = React.memo(
+
+export const AudioPlayerBackwardButton: React.FC<SkipButtonProps> = React.memo(
   ({onClick: consumerOnClick, ...props}) => {
-    const {getForwardButtonProps} = useAudioPlayerContext();
+    const {getBackwardButtonProps} = useAudioPlayerContext();
     const {ariaLabel, onClick} =
-      getForwardButtonProps! &&
-      getForwardButtonProps({onClick: consumerOnClick});
+      getBackwardButtonProps! &&
+      getBackwardButtonProps({onClick: consumerOnClick});
 
     return (
       <IconButton
@@ -21,7 +22,7 @@ export const AudioPlayerForwardButton: React.FC<SkipButtonProps> = React.memo(
         overrides={props.overrides}
         {...props}
       >
-        <IconFilledForward10 />
+        <IconFilledReplay10 />
       </IconButton>
     );
   },

@@ -52,11 +52,12 @@ interface AudioPlayerProviderContext {
     ariaLabel: string;
     onClick: () => void;
   };
-  // getForwardButtonProps: () => {
-  //   onClickForward: () => void;
-  //   ariaLabel: string;
-  //   onClick: () => void;
-  // };
+  getBackwardButtonProps: (args: {
+    onClick?: () => void;
+  }) => {
+    ariaLabel: string;
+    onClick: () => void;
+  };
 }
 
 export const AudioPlayerContext = createContext<
