@@ -362,7 +362,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           description:
             'The Checkbox in a checked valid focus state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
           media: getIllustrationComponent(
-            'components/checkbox/states/checked-valid-hover',
+            'components/checkbox/states/checked-valid-focus',
           ),
         },
         {
@@ -457,7 +457,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Clickable area',
           description:
-            'Checkboxes can be checked or unchecked. A Checkbox in a checked state is indicated with an icon that appears in the centre of the checkbox.',
+            'The Checkbox feedback element indicates the minimum clickable area for the Checkbox input (also known as hit area, or touch target area). The size of the clickable area changes according to the size of the Checkbox. The associated Label is also clickable next to the Checkbox.',
           media: getIllustrationComponent(
             'components/checkbox/behaviours/clickable-area',
           ),
