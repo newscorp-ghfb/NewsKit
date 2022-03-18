@@ -11,24 +11,24 @@ export const useAudioFunctions = ({
   onPreviousTrack,
   onNextTrack,
   autoPlay,
-  disablePreviousTrack,
+  // disablePreviousTrack,
   src,
   live,
   duration,
   loading,
   playing,
   showLoaderTimeoutRef,
-  trackPositionRef,
+  currentTimeRef,
   audioRef,
   setLoading,
-  setTrackPosition,
+  setCurrentTime,
   setPlayState,
   // setVolume,
   setDuration,
   setDisplayDuration,
   setBuffered,
-  setIsPrevTrackBtnDisabled,
-}: AudioFunctionDependencies) => {
+}: // setIsPrevTrackBtnDisabled,
+AudioFunctionDependencies) => {
   const {fireEvent} = useInstrumentation();
 
   const ifPlayer = useCallback(
@@ -56,13 +56,13 @@ export const useAudioFunctions = ({
           ...playerData,
           media_duration: formatTrackTime(duration),
           media_milestone: calculateStringPercentage(
-            trackPositionRef.current,
+            currentTimeRef.current,
             duration,
           ),
-          media_segment: getMediaSegment(duration, trackPositionRef.current),
-          media_offset: formatTrackTime(trackPositionRef.current),
+          media_segment: getMediaSegment(duration, currentTimeRef.current),
+          media_offset: formatTrackTime(currentTimeRef.current),
         };
-  }, [duration, live, trackPositionRef]);
+  }, [duration, live, currentTimeRef]);
 
   const getTrackingInformation = useCallback(
     (
@@ -101,18 +101,16 @@ export const useAudioFunctions = ({
     setLoading(false);
   }, [setLoading, showLoaderTimeoutRef]);
 
-  // TODO remove ignore once implemented audio functionality
-  /* istanbul ignore next */
   const updateAudioTime = useCallback(
     (playerTime: number) => {
       const newPlayerTime = getValueInRange(playerTime, [0, duration]);
-      setTrackPosition([newPlayerTime]);
+      setCurrentTime(newPlayerTime);
 
       ifPlayer(player => {
         player.currentTime = newPlayerTime;
       });
     },
-    [duration, setTrackPosition, ifPlayer],
+    [duration, setCurrentTime, ifPlayer],
   );
 
   // const updateAudioVolume = useCallback(
@@ -130,7 +128,7 @@ export const useAudioFunctions = ({
   // TODO remove ignore once in use
   /* istanbul ignore next */
   const onClickPrevious = useCallback(() => {
-    if (trackPositionRef.current > 5) {
+    if (currentTimeRef.current > 5) {
       updateAudioTime(0);
       return;
     }
@@ -140,7 +138,7 @@ export const useAudioFunctions = ({
     if (onPreviousTrack) {
       onPreviousTrack();
     }
-  }, [trackPositionRef, onPreviousTrack, updateAudioTime]);
+  }, [currentTimeRef, onPreviousTrack, updateAudioTime]);
 
   // TODO remove ignore once in use
   /* istanbul ignore next */
@@ -155,19 +153,19 @@ export const useAudioFunctions = ({
   // TODO remove ignore once in use
   /* istanbul ignore next */
   const onClickBackward = useCallback(() => {
-    updateAudioTime(trackPositionRef.current - 10);
+    updateAudioTime(currentTimeRef.current - 10);
     const trackingInformation = getTrackingInformation(
       'audio-player-skip-backward',
       EventTrigger.Click,
       {event_navigation_name: 'backward skip'},
     );
     fireEvent(trackingInformation);
-  }, [fireEvent, getTrackingInformation, updateAudioTime, trackPositionRef]);
+  }, [fireEvent, getTrackingInformation, updateAudioTime, currentTimeRef]);
 
   // TODO remove ignore once in use
   /* istanbul ignore next */
   const onClickForward = useCallback(() => {
-    updateAudioTime(trackPositionRef.current + 10);
+    updateAudioTime(currentTimeRef.current + 10);
 
     const trackingInformation = getTrackingInformation(
       'audio-player-skip-forward',
@@ -175,10 +173,8 @@ export const useAudioFunctions = ({
       {event_navigation_name: 'forward skip'},
     );
     fireEvent(trackingInformation);
-  }, [fireEvent, getTrackingInformation, updateAudioTime, trackPositionRef]);
+  }, [fireEvent, getTrackingInformation, updateAudioTime, currentTimeRef]);
 
-  // TODO remove ignore once implementing seekbar
-  /* istanbul ignore next */
   const onDurationChange = useCallback(
     ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
       const tgt = target as HTMLAudioElement;
@@ -259,18 +255,14 @@ export const useAudioFunctions = ({
     }
   }, [loading, playing, onPause, onPlay]);
 
-  // TODO remove ignore once implementing seekbar
-  /* istanbul ignore next-line */
   const onProgress = ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
     setBuffered((target as HTMLAudioElement).buffered);
   };
 
-  // TODO remove ignore once implementing seekbar
-  /* istanbul ignore next */
   const onTimeUpdate = ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
     const eventTime = Math.floor((target as HTMLAudioElement).currentTime);
-    if (trackPositionRef.current !== eventTime) {
-      setTrackPosition([eventTime]);
+    if (currentTimeRef.current !== eventTime) {
+      setCurrentTime(eventTime);
 
       const trackingInformation = getTrackingInformation(
         'audio-player-audio',
@@ -278,11 +270,12 @@ export const useAudioFunctions = ({
       );
       fireEvent(trackingInformation);
     }
-    if (trackPositionRef.current > 5) {
-      setIsPrevTrackBtnDisabled(false);
-    } else {
-      setIsPrevTrackBtnDisabled(Boolean(disablePreviousTrack));
-    }
+    // TO Do: Should be added in the ticket for controls
+    // if (currentTimeRef.current > 5) {
+    //   setIsPrevTrackBtnDisabled(false);
+    // } else {
+    //   setIsPrevTrackBtnDisabled(Boolean(disablePreviousTrack));
+    // }
   };
 
   // const onVolumeChange = useCallback(
@@ -292,10 +285,8 @@ export const useAudioFunctions = ({
   //   [updateAudioVolume],
   // );
 
-  // TODO remove ignore once in use
-  /* istanbul ignore next */
   const onChangeSlider = useCallback(
-    ([value]: number[]) => {
+    (value: number) => {
       updateAudioTime(value);
     },
     [updateAudioTime],

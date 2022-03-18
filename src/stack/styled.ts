@@ -11,6 +11,7 @@ import {
 } from './types';
 import {Theme} from '../theme';
 import {ThemeProp} from '../utils/style-types';
+import {logicalProps} from '../utils/logical-properties';
 
 export const DEFAULT_PROPS: DefaultStackProps = {
   spaceStack: 'space000',
@@ -212,6 +213,8 @@ export const StyledMasterContainer = styled.div<StyledStackProps>`
         spaceInline,
       }),
   )}
+
+  ${logicalProps('stack')}
 `;
 
 export const StyledChildContainer = styled.div<StyledChildProps>`

@@ -6,6 +6,7 @@ import {AudioElement} from './components/audio-element';
 import {useAudioFunctions} from './audio-functions';
 import {AudioPlayerProvider} from './context';
 import {AudioPlayerComposableProps} from './types';
+import {formatFunction} from './components/time-display/utils';
 
 export const AudioPlayerComposable = ({
   children,
@@ -16,28 +17,29 @@ export const AudioPlayerComposable = ({
   live = false,
   ariaLandmark,
 }: AudioPlayerComposableProps) => {
-  const trackPositionRef = useRef(0);
+  const currentTimeRef = useRef(0);
+
   const audioRef = useRef<HTMLAudioElement>(null);
   const showLoaderTimeoutRef: MutableRefObject<number> = useRef(0);
 
   const [playing, setPlayState] = useState(autoPlay);
   const [loading, setLoading] = useState(true);
   const [duration, setDuration] = useState(0);
-  const [trackPositionArr, setTrackPosition] = useState([0]);
+  const [currentTime, setCurrentTime] = useState(0);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [displayDuration, setDisplayDuration] = useState(0);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isPrevTrackBtnDisabled, setIsPrevTrackBtnDisabled] = useState(false);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
   const [buffered, setBuffered] = useState<TimeRanges>();
 
   useEffect(() => {
-    [trackPositionRef.current] = trackPositionArr;
+    currentTimeRef.current = currentTime;
   });
 
   useEffect(() => {
-    setTrackPosition([0]);
-    // setDisplayDuration(0);
+    setCurrentTime(0);
+    setDisplayDuration(0);
   }, [src]);
 
   // @ts-ignore as we are not passing all the parameters yet.
@@ -49,11 +51,11 @@ export const AudioPlayerComposable = ({
     loading,
     setPlayState,
     showLoaderTimeoutRef,
-    setTrackPosition,
+    setCurrentTime,
     setBuffered,
     setDisplayDuration,
     setIsPrevTrackBtnDisabled,
-    trackPositionRef,
+    currentTimeRef,
     duration,
     setDuration,
     src,
@@ -100,26 +102,29 @@ export const AudioPlayerComposable = ({
     };
   };
 
+  const getSeekBarProps = () => ({
+    duration,
+    currentTime,
+    onChange: onChangeSlider,
+    buffered,
+  });
+  const getTimeDisplayProps = () => ({
+    format: formatFunction,
+    currentTime,
+    duration,
+  });
+
   const value = {
     // Props function getter
     getPlayPauseButtonProps,
+    getTimeDisplayProps,
+    getSeekBarProps,
 
     // Internal for AudioElement
     audioRef,
     audioEvents,
     src,
     autoPlay,
-
-    // Needed by play-pause button
-    playing,
-    canPause: live,
-    loading,
-    togglePlay,
-
-    // Seek bar
-    duration,
-    trackPositionArr,
-    onChangeSlider,
   };
 
   return (

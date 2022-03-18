@@ -1,5 +1,6 @@
 import {ReactJSXElement} from '@emotion/react/types/jsx-namespace';
-import React, {createContext, SyntheticEvent} from 'react';
+import React, {createContext, SyntheticEvent, useContext} from 'react';
+import {FormatFn} from './components/time-display/types';
 
 interface AudioPlayerProviderContext {
   id: string;
@@ -19,11 +20,10 @@ interface AudioPlayerProviderContext {
     onTimeUpdate: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
     onWaiting: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
     onEnded: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
+    onProgress: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
   };
-  duration: number;
-  trackPositionArr: number[];
-  onChangeSlider: (values: number[]) => void;
   // Getter functions
+
   getPlayPauseButtonProps: (args: {
     onClick?: () => void;
   }) => {
@@ -35,6 +35,17 @@ interface AudioPlayerProviderContext {
     canPause: boolean;
     playStateIcon: ReactJSXElement;
   };
+  getTimeDisplayProps: () => {
+    format: FormatFn;
+    currentTime: number;
+    duration: number;
+  };
+  getSeekBarProps: () => {
+    duration: number;
+    currentTime: number;
+    onChange: (value: number) => void;
+    buffered: TimeRanges | undefined;
+  };
 }
 
 export const AudioPlayerContext = createContext<
@@ -42,3 +53,20 @@ export const AudioPlayerContext = createContext<
 >({});
 
 export const AudioPlayerProvider = AudioPlayerContext.Provider;
+
+export const useAudioPlayerContext = () => {
+  const context = useContext(AudioPlayerContext);
+
+  /* istanbul ignore if */
+  if (
+    process.env.NODE_ENV !== 'production' &&
+    Object.keys(context).length === 0
+  ) {
+    // eslint-disable-next-line no-console
+    console.error(
+      'You are using a component which needs to be a child of <AudioPlayerComposable />',
+    );
+  }
+
+  return context;
+};
