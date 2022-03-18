@@ -6,6 +6,7 @@ import {ComponentPageTemplate} from '../../templates/component-page-template/com
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {InlineCode} from '../../components/markdown-elements';
 import {UsageKind} from '../../components/usage-card';
+import {ContentText} from '../../components/text-section/content-text';
 import {Link} from '../../components/link';
 
 const infoIcon = (
@@ -573,8 +574,18 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     accessibility={{
-      introduction:
-        'The Checkbox has the following accessibility considerations:',
+      introduction: (
+        <>
+          The Checkbox has the following accessibility considerations:
+          <Block spaceStack="space100" />
+          <ContentText title="Grouping Checkboxes" titleAs="span">
+            It is recommended to group Checkboxes and other related elements
+            such as Labels and Assistive Text together using the Fieldset
+            component, with a title attributed to the elements that appear in
+            the Fieldset, called a Legend.
+          </ContentText>
+        </>
+      ),
       focusOrder: {
         title: 'Focus order',
         tableRows: [

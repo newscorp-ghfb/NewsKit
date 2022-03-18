@@ -303,7 +303,7 @@ export default [
             page: true,
             id: '/components/form',
             description:
-              'Used to collect information from users, and to validate fields in certain rules.',
+              'Forms allow users to enter and edit text content into a UI.',
             illustration: 'components/form-illustration',
           },
           {
