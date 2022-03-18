@@ -1,7 +1,7 @@
 import {CheckboxState, CheckboxSize} from '../types';
 
 export const states: [string, {checked?: boolean; state?: CheckboxState}][] = [
-  ['default', {}],
+  ['base', {}],
   ['checked', {checked: true}],
   ['disabled', {state: 'disabled'}],
   ['checked-disabled', {checked: true, state: 'disabled'}],
