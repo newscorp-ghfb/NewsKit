@@ -1271,7 +1271,7 @@ workflows:
             - install_cypress
       #TODO END  needed QUESTIONING
  
-    - build_docs:
+      - build_docs:
           <<: *only_on_deploy_release
           name: build_docs_prod
           context: ncu-newskit-site-prod
