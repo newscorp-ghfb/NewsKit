@@ -1,5 +1,3 @@
-import { ButtonProps, ButtonSize } from "../button";
-
 export interface AudioFunctionDependencies {
   onPreviousTrack: () => void;
   onNextTrack: () => void;
@@ -50,10 +48,4 @@ export enum AudioEvents {
   DurationChange = 'onDurationChange',
   TimeUpdate = 'onTimeUpdate',
   Progress = 'onProgress',
-}
-
-export interface SkipButtonProps {
-  size?: ButtonSize;
-  onClick?: () => void;
-  overrides?: ButtonProps['overrides'];
 }
