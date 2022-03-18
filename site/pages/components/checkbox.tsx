@@ -629,6 +629,305 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         ],
       },
     }}
+    componentAPI={{
+      introduction: (
+        <>
+          The Checkbox has a range of props that can be used to define an
+          appropriate experience for different use cases.
+          <Block spaceStack="space070" />
+          <InlineMessage>
+            There are two components exported from the package, one for use
+            within the{' '}
+            <Link type="inline" target="_blank" href="/components/form/">
+              NewsKit Form component
+            </Link>
+            , and one for use as a controlled component.
+          </InlineMessage>
+        </>
+      ),
+      components: [
+        {
+          title: 'FormInput Checkbox',
+          summary: `The FormInput Checkbox has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.`,
+          propsRows: [
+            {
+              name: 'size',
+              type: `“small” ”medium” ”large”`,
+              default: 'medium',
+              description: `Defines the size of the FormInput Checkbox.`,
+            },
+            {
+              name: 'state',
+              type: `"valid", "invalid", "disabled"`,
+              description: `If true, renders the FormInput Checkbox in a valid, invalid, or disabled state. It can be submitted within a form.`,
+            },
+            {
+              name: 'labelPosition',
+              type: `"start", "end"`,
+              default: 'end',
+              description: `Defines the position of the Label.`,
+            },
+            {
+              name: 'labelAttributes',
+              type: 'React.LabelHTMLAttributes<HTMLLabelElement>',
+              description: `Used to pass HTML attributes to the Label.`,
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'checkbox.size',
+              type: 'checkboxSize',
+              default:
+                'Small = sizing050, Medium = sizing060, Large =sizing070',
+              description:
+                'If provided, this overrides the size of the Checkbox input.',
+            },
+            {
+              attribute: 'checkbox.stylePreset',
+              type: 'MQ<string>',
+              default: 'inputField',
+              description:
+                'If provided, overrides the stylePreset of the Checkbox input.',
+            },
+            {
+              attribute: 'checkbox.transitionPreset',
+              type: 'MQ<string>',
+              default: 'backgroundColorChange, borderColorChange',
+              description:
+                'If provided, overrides the transitionPreset of the Checkbox input.',
+            },
+            {
+              attribute: 'checkbox.spaceInline',
+              type: 'MQ<string>',
+              default:
+                'Small = spaceInline030, Medium = spaceInline030, Large = spaceInline040',
+              description:
+                'If provided, this overrides the inline space between the Checkbox input and Label.',
+            },
+            {
+              attribute: 'checkbox.spaceStack',
+              type: 'MQ<string>',
+              default: '',
+              description:
+                'If provided, this overrides the stack space applied to the Checkbox.',
+            },
+            {
+              attribute: 'checkbox.icon',
+              type: 'MQ<string>',
+              default: 'check',
+              description: 'If provided, overrides the Checkbox icon.',
+            },
+            {
+              attribute: 'checkbox.icon.size',
+              type: 'MQ<string>',
+              default: 'iconSize020',
+              description:
+                'If provided, overrides the size of the Checkbox icon.',
+            },
+            {
+              attribute: 'checkbox.icon.stylePreset',
+              type: 'MQ<string>',
+              default: 'inkInverse',
+              description:
+                'If provided, overrides the stylePreset of the Checkbox icon.',
+            },
+
+            {
+              attribute: 'feedback.size',
+              type: 'feedbackSize',
+              default:
+                'Small = sizing070, Medium = sizing080, Large = sizing090',
+              description:
+                'If provided, this overrides the size of the feedback element.',
+            },
+            {
+              attribute: 'feedback.stylePreset',
+              type: 'feedbackSize',
+              default: '',
+              description:
+                'If provided, this overrides the stylePreset of the feedback element.',
+            },
+            {
+              attribute: 'feedback.transitionPreset',
+              type: 'MQ<string>',
+              default: 'fade',
+              description:
+                'If provided, overrides the transitionPreset of the feedback element.',
+            },
+            {
+              attribute: 'checkbox.label.typographyPreset',
+              type: 'MQ<string>',
+              default:
+                'Small = utilityBody020, Medium = utilityBody020, Large = utilityBody030',
+              description:
+                'If provided, this overrides the typographyPreset of the Label.',
+            },
+            {
+              attribute: 'checkbox.label.stylePreset',
+              type: 'MQ<string>',
+              default: 'inkBase',
+              description:
+                'If provided, this overrides the stylePreset of the Label.',
+            },
+          ],
+          propsFooter: (
+            <>
+              <Block spaceStack="space030" />
+              <InlineMessage title="Note">
+                The <InlineCode>name</InlineCode> &{' '}
+                <InlineCode>rules</InlineCode> props are set on the form input
+                level. If you want to add validation rules or set the name of
+                this component, please refer to the{' '}
+                <Link type="inline" target="_blank" href="/components/form/">
+                  Form
+                </Link>{' '}
+                component
+              </InlineMessage>
+              <Block spaceStack="space050" />
+              <InlineMessage title="Note">
+                Engineer to check the validation related props at the time of
+                implementation.
+              </InlineMessage>
+            </>
+          ),
+        },
+
+        {
+          title: 'Checkbox',
+          summary:
+            'The Checkbox has a range of props that can be used to define an appropriate experience for different use cases. Use this component as a controlled component, for instance where you have a custom validation mechanism.',
+          propsRows: [
+            {
+              name: 'size',
+              type: `“small” ”medium” ”large”`,
+              default: 'medium',
+              description: `Defines the size of the Checkbox.`,
+            },
+            {
+              name: 'name',
+              type: 'string',
+              description: `If provided, defines name of the input element, used when submitting an HTML form.`,
+            },
+            {
+              name: 'state',
+              type: `“valid”
+              ”invalid”
+              ”disabled”`,
+              description: `If true, renders the Checkbox in a valid, invalid, or disabled state. It can be submitted within a form.`,
+            },
+            {
+              name: 'labelPosition',
+              type: `“start”
+              ”end”`,
+              default: `”end”`,
+              description: `Defines the position of the Label.`,
+            },
+            {
+              name: 'labelAttributes',
+              type: 'React.LabelHTMLAttributes<HTMLLabelElement>',
+              description: `Used to pass HTML attributes to the Label.`,
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'checkbox.size',
+              type: 'checkboxSize',
+              default:
+                'Small = sizing050, Medium = sizing060, Large =sizing070',
+              description:
+                'If provided, this overrides the size of the Checkbox input.',
+            },
+            {
+              attribute: 'checkbox.stylePreset',
+              type: 'MQ<string>',
+              default: 'inputField',
+              description:
+                'If provided, overrides the stylePreset of the Checkbox input.',
+            },
+            {
+              attribute: 'checkbox.transitionPreset',
+              type: 'MQ<string>',
+              default: 'backgroundColorChange, borderColorChange',
+              description:
+                'If provided, overrides the transitionPreset of the Checkbox input.',
+            },
+            {
+              attribute: 'checkbox.spaceInline',
+              type: 'MQ<string>',
+              default:
+                'Small = spaceInline030, Medium = spaceInline030, Large = spaceInline040',
+              description:
+                'If provided, this overrides the inline space between the Checkbox input and Label.',
+            },
+            {
+              attribute: 'checkbox.spaceStack',
+              type: 'MQ<string>',
+              default: '',
+              description:
+                'If provided, this overrides the stack space applied to the Checkbox.',
+            },
+            {
+              attribute: 'checkbox.icon',
+              type: 'MQ<string>',
+              default: 'check',
+              description: 'If provided, overrides the Checkbox icon.',
+            },
+            {
+              attribute: 'checkbox.icon.size',
+              type: 'MQ<string>',
+              default: 'iconSize020',
+              description:
+                'If provided, overrides the size of the Checkbox icon.',
+            },
+            {
+              attribute: 'checkbox.icon.stylePreset',
+              type: 'MQ<string>',
+              default: 'inkInverse',
+              description:
+                'If provided, overrides the stylePreset of the Checkbox icon.',
+            },
+
+            {
+              attribute: 'feedback.size',
+              type: 'feedbackSize',
+              default:
+                'Small = sizing070, Medium = sizing080, Large = sizing090',
+              description:
+                'If provided, this overrides the size of the feedback element.',
+            },
+            {
+              attribute: 'feedback.stylePreset',
+              type: 'feedbackSize',
+              default: '',
+              description:
+                'If provided, this overrides the stylePreset of the feedback element.',
+            },
+            {
+              attribute: 'feedback.transitionPreset',
+              type: 'MQ<string>',
+              default: 'fade',
+              description:
+                'If provided, overrides the transitionPreset of the feedback element.',
+            },
+            {
+              attribute: 'checkbox.label.typographyPreset',
+              type: 'MQ<string>',
+              default:
+                'Small = utilityBody020, Medium = utilityBody020, Large = utilityBody030',
+              description:
+                'If provided, this overrides the typographyPreset of the Label.',
+            },
+            {
+              attribute: 'checkbox.label.stylePreset',
+              type: 'MQ<string>',
+              default: 'inkBase',
+              description:
+                'If provided, this overrides the stylePreset of the Label.',
+            },
+          ],
+        },
+      ],
+    }}
     compliance={{
       variations: true,
       states: true,
