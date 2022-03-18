@@ -114,7 +114,7 @@ export const AudioPlayerComposable = ({
   }) => {
     // All the internal logic for defining aria and icon to show
 
-    let ariaLabel = 'Forward';
+    const ariaLabel = 'Fast forward for 10 seconds';
     const onClick = () => {
       if (consumerOnClick) consumerOnClick();
       onClickForward();
@@ -126,14 +126,14 @@ export const AudioPlayerComposable = ({
       onClick,
     };
   };
-  const getBackwardButtonProps = ({
+  const getReplayButtonProps = ({
     onClick: consumerOnClick,
   }: {
     onClick?: () => void;
   }) => {
     // All the internal logic for defining aria and icon to show
 
-    let ariaLabel = 'Forward';
+    const ariaLabel = 'Rewind 10 seconds';
     const onClick = () => {
       if (consumerOnClick) consumerOnClick();
       onClickBackward();
@@ -162,7 +162,7 @@ export const AudioPlayerComposable = ({
     getTimeDisplayProps,
     getSeekBarProps,
     getForwardButtonProps,
-    getBackwardButtonProps,
+    getReplayButtonProps,
 
     // Internal for AudioElement
     audioRef,
