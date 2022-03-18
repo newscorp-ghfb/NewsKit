@@ -769,11 +769,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
   opacity: 0.7;
   z-index: 1;
   background-color: #E0E7FF;
-<<<<<<< HEAD
   border-radius: 50%;
-=======
-  border-radius: 4px;
->>>>>>> develop
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -4858,16 +4854,9 @@ exports[`Checkbox render with state: base 1`] = `
         class="emotion-3"
       >
         <input
-<<<<<<< HEAD
           class="emotion-4"
           data-testid="checkbox-input"
           id="base"
-=======
-          checked=""
-          class="emotion-6"
-          data-testid="checkbox-input"
-          id="checked"
->>>>>>> develop
           type="checkbox"
         />
       </div>
@@ -5075,12 +5064,7 @@ exports[`Checkbox render with state: checked 1`] = `
           checked=""
           class="emotion-6"
           data-testid="checkbox-input"
-<<<<<<< HEAD
           id="checked"
-=======
-          disabled=""
-          id="checked-disabled"
->>>>>>> develop
           type="checkbox"
         />
       </div>
@@ -5256,17 +5240,11 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
           />
         </svg>
         <input
-<<<<<<< HEAD
           checked=""
           class="emotion-6"
           data-testid="checkbox-input"
           disabled=""
           id="checked-disabled"
-=======
-          class="emotion-4"
-          data-testid="checkbox-input"
-          id="default"
->>>>>>> develop
           type="checkbox"
         />
       </div>
