@@ -52,7 +52,7 @@ interface AudioPlayerProviderContext {
     ariaLabel: string;
     onClick: () => void;
   };
-  getBackwardButtonProps: (args: {
+  getReplayButtonProps: (args: {
     onClick?: () => void;
   }) => {
     ariaLabel: string;
