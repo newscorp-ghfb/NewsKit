@@ -187,6 +187,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 64px;
@@ -403,6 +404,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
           <input
             aria-describedby="mock-nk-1-assistive-text"
             class="emotion-8"
+            data-testid="checkbox-input"
             id="mock-nk-1"
             name="input-checkbox-large"
             type="checkbox"
@@ -607,6 +609,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -823,6 +826,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
           <input
             aria-describedby="mock-nk-1-assistive-text"
             class="emotion-8"
+            data-testid="checkbox-input"
             id="mock-nk-1"
             name="input-checkbox-medium"
             type="checkbox"
@@ -1027,6 +1031,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 40px;
@@ -1243,6 +1248,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
           <input
             aria-describedby="mock-nk-1-assistive-text"
             class="emotion-8"
+            data-testid="checkbox-input"
             id="mock-nk-1"
             name="input-checkbox-small"
             type="checkbox"
