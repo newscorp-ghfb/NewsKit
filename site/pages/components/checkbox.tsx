@@ -965,7 +965,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
       usage: true,
       accessibility: true,
       performance: false,
-      seo: true,
+      seo: false,
       props: true,
       uiKit: true,
       design: true,
