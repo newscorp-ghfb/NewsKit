@@ -676,17 +676,22 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           <InlineMessage>
             There are two components exported from the package, one for use
             within the{' '}
-            <Link type="inline" target="_blank" href="/components/form/">
-              NewsKit Form component
-            </Link>
-            , and one for use as a controlled component.
+            <Link href="/components/form/">NewsKit Form component</Link>, and
+            one for use as a controlled component.
           </InlineMessage>
         </>
       ),
       components: [
         {
           title: 'FormInput Checkbox',
-          summary: `The FormInput Checkbox has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.`,
+          summary: (
+            <>
+              The FormInput Checkbox has a range of props that can be used to
+              define an appropriate experience for different use cases.Use this
+              component within the{' '}
+              <Link href="/components/form/">NewsKit Form component.</Link>
+            </>
+          ),
           propsRows: [
             {
               name: 'size',
@@ -827,10 +832,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
                 <InlineCode>rules</InlineCode> props are set on the form input
                 level. If you want to add validation rules or set the name of
                 this component, please refer to the{' '}
-                <Link type="inline" target="_blank" href="/components/form/">
-                  Form
-                </Link>{' '}
-                component
+                <Link href="/components/form/">Form</Link> component
               </InlineMessage>
               <Block spaceStack="space050" />
               <InlineMessage title="Note">
