@@ -126,9 +126,9 @@ export const StoryCheckboxLabel = () => {
       </Grid>
       <StorybookSubHeading>No label</StorybookSubHeading>
       <Container>
-        <span>This is checkbox</span> <Checkbox id="no-label" />
+        <span>This is checkbox</span> <Checkbox id="custom-label" />
         {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-        <label htmlFor="no-label">without label</label>
+        <label htmlFor="custom-label"> with custom label</label>
       </Container>
     </ThemeProvider>
   );
@@ -165,6 +165,9 @@ export const StoryCheckboxOverrides = () => (
           label: {
             typographyPreset: 'utilityHeading010',
             stylePreset: 'inkSubtle',
+          },
+          icon: {
+            size: 'iconSize050',
           },
         }}
       />

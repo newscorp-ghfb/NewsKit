@@ -37,6 +37,7 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   z-index: 1;
   background-color: #E0E7FF;
   border-radius: 4px;
@@ -121,6 +122,7 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -171,6 +173,7 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -366,6 +369,7 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -416,6 +420,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -498,6 +503,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           type="checkbox"
         />
@@ -549,6 +555,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -631,6 +638,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           type="checkbox"
         />
@@ -682,7 +690,9 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: transparent;
+  opacity: 0.7;
+  z-index: 1;
+  background-color: #E0E7FF;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -690,10 +700,6 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-}
-
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
 }
 
 .emotion-3 {
@@ -719,6 +725,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
+  z-index: 2;
   transition-property: background-color,border-color;
   transition-duration: 200ms,200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -768,6 +775,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -818,6 +826,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -1013,6 +1022,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -1063,6 +1073,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -1145,6 +1156,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           type="checkbox"
         />
@@ -1196,6 +1208,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -1278,6 +1291,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           type="checkbox"
         />
@@ -1329,6 +1343,7 @@ exports[`Checkbox label attributes 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -1526,6 +1541,7 @@ exports[`Checkbox label attributes 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -1589,6 +1605,7 @@ exports[`Checkbox label position start 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -1776,6 +1793,7 @@ exports[`Checkbox label position start 1`] = `
       >
         <input
           class="emotion-5"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -1821,6 +1839,7 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -1987,19 +2006,6 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -2016,13 +2022,11 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2064,6 +2068,7 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   z-index: 1;
   background-color: #E0E7FF;
   border-radius: 4px;
@@ -2123,19 +2128,6 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -2152,13 +2144,11 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2200,6 +2190,7 @@ exports[`Checkbox render with size: large & checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 64px;
@@ -2303,19 +2294,6 @@ exports[`Checkbox render with size: large & checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -2349,13 +2327,11 @@ exports[`Checkbox render with size: large & checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2397,6 +2373,7 @@ exports[`Checkbox render with size: large & label 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 64px;
@@ -2592,6 +2569,7 @@ exports[`Checkbox render with size: large & label 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -2642,6 +2620,7 @@ exports[`Checkbox render with size: large 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 64px;
@@ -2808,19 +2787,6 @@ exports[`Checkbox render with size: large 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -2837,13 +2803,11 @@ exports[`Checkbox render with size: large 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2885,6 +2849,7 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -2988,19 +2953,6 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -3034,13 +2986,11 @@ exports[`Checkbox render with size: medium & checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -3082,6 +3032,7 @@ exports[`Checkbox render with size: medium & label 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -3277,6 +3228,7 @@ exports[`Checkbox render with size: medium & label 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -3327,6 +3279,7 @@ exports[`Checkbox render with size: medium 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -3493,19 +3446,6 @@ exports[`Checkbox render with size: medium 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -3522,13 +3462,11 @@ exports[`Checkbox render with size: medium 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -3570,6 +3508,7 @@ exports[`Checkbox render with size: small & checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 40px;
@@ -3673,19 +3612,6 @@ exports[`Checkbox render with size: small & checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -3719,13 +3645,11 @@ exports[`Checkbox render with size: small & checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -3767,6 +3691,7 @@ exports[`Checkbox render with size: small & label 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 40px;
@@ -3962,6 +3887,7 @@ exports[`Checkbox render with size: small & label 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -4012,6 +3938,7 @@ exports[`Checkbox render with size: small 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 40px;
@@ -4178,19 +4105,6 @@ exports[`Checkbox render with size: small 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -4207,13 +4121,11 @@ exports[`Checkbox render with size: small 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4255,6 +4167,7 @@ exports[`Checkbox render with state: checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -4358,19 +4271,6 @@ exports[`Checkbox render with state: checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -4404,14 +4304,12 @@ exports[`Checkbox render with state: checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           id="checked"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4453,6 +4351,7 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -4527,15 +4426,6 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #C0C0C0;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
 <div
     class="emotion-0"
   >
@@ -4569,15 +4459,13 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           disabled=""
           id="checked-disabled"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4619,6 +4507,7 @@ exports[`Checkbox render with state: default 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -4785,19 +4674,6 @@ exports[`Checkbox render with state: default 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -4814,14 +4690,12 @@ exports[`Checkbox render with state: default 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           id="default"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4863,6 +4737,7 @@ exports[`Checkbox render with state: disabled 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -4920,15 +4795,6 @@ exports[`Checkbox render with state: disabled 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #C0C0C0;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
 <div
     class="emotion-0"
   >
@@ -4945,15 +4811,13 @@ exports[`Checkbox render with state: disabled 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           id="disabled"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4995,6 +4859,7 @@ exports[`Checkbox render with state: invalid 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -5060,19 +4925,6 @@ exports[`Checkbox render with state: invalid 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -5089,14 +4941,12 @@ exports[`Checkbox render with state: invalid 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           id="invalid"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5138,6 +4988,7 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -5222,19 +5073,6 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -5268,14 +5106,12 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           id="invalid-checked"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5317,6 +5153,7 @@ exports[`Checkbox render with state: valid 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -5382,19 +5219,6 @@ exports[`Checkbox render with state: valid 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -5411,14 +5235,12 @@ exports[`Checkbox render with state: valid 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           id="valid"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5460,6 +5282,7 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
   border-radius: 4px;
   width: 48px;
@@ -5544,19 +5367,6 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -5590,14 +5400,12 @@ exports[`Checkbox render with state: valid-checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           id="valid-checked"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5639,6 +5447,7 @@ exports[`Checkbox with overrides 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   width: 120px;
   height: 120px;
   -webkit-transform: translate3d(calc(120px / -2), calc(120px / -2), 0);
@@ -5698,19 +5507,6 @@ exports[`Checkbox with overrides 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 1.125;
-  font-weight: 700;
-  letter-spacing: 0;
-}
-
-.emotion-7 svg {
-  fill: #535353;
-}
-
 <div
     class="emotion-0"
   >
@@ -5744,13 +5540,11 @@ exports[`Checkbox with overrides 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
