@@ -950,6 +950,14 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
+    "controlLabel": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+      },
+    },
     "crossIconContainer": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
@@ -3072,6 +3080,14 @@ Object {
     "contributeCardMedia": Object {
       "base": Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+      },
+    },
+    "controlLabel": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
       },
     },
     "crossIconContainer": Object {
@@ -5198,6 +5214,14 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
+    "controlLabel": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+      },
+    },
     "crossIconContainer": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
@@ -7320,6 +7344,14 @@ Object {
     "contributeCardMedia": Object {
       "base": Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+      },
+    },
+    "controlLabel": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
       },
     },
     "crossIconContainer": Object {
@@ -9446,6 +9478,14 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
+    "controlLabel": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+      },
+    },
     "crossIconContainer": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
@@ -11568,6 +11608,14 @@ Object {
     "contributeCardMedia": Object {
       "base": Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+      },
+    },
+    "controlLabel": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
       },
     },
     "crossIconContainer": Object {
@@ -13694,6 +13742,14 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
+    "controlLabel": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+      },
+    },
     "crossIconContainer": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
@@ -15816,6 +15872,14 @@ Object {
     "contributeCardMedia": Object {
       "base": Object {
         "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
+      },
+    },
+    "controlLabel": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
       },
     },
     "crossIconContainer": Object {

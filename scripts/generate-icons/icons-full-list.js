@@ -226,6 +226,7 @@ const iconsList = [
   'ChildCare',
   'ChildFriendly',
   'ChromeReaderMode',
+  'Circle',
   'Class',
   'CleanHands',
   'CleaningServices',

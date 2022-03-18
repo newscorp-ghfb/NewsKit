@@ -113,13 +113,4 @@ export default {
       backgroundColor: '{{colors.interactiveInput030}}',
     },
   },
-
-  controlLabel: {
-    base: {
-      color: '{{colors.inkBase}}',
-    },
-    disabled: {
-      color: '{{colors.inkNonEssential}}',
-    },
-  },
 } as Record<string, StylePreset>;
