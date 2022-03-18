@@ -3,7 +3,7 @@ import * as React from 'react';
 import {AudioPlayerPlayPauseButton} from '../components/play-pause-button';
 import {AudioPlayerTimeDisplay} from '../components/time-display';
 import {AudioPlayerForwardButton} from '../components/forward-button/forward-button';
-//import {AudioPlayerBackwardButton} from '../components/backward-button/backward-button';
+// import {AudioPlayerBackwardButton} from '../components/backward-button/backward-button';
 import {AudioPlayerComposable} from '../audio-player-composable';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {calculateTime} from '../components/time-display/utils';
@@ -13,8 +13,7 @@ import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
 import {Block} from '../../block';
 import {ButtonSize} from '../../button/types';
-import { spacePresets } from '../../theme/presets';
-import { AudioPlayerBackwardButton } from '../components/backward-button/backward-button';
+import {AudioPlayerReplayButton} from '../components/replay-button/replay-button';
 
 const AudioPlayerContainer = styled.div<{dark?: boolean}>`
   border: solid 1px red;
@@ -81,14 +80,6 @@ export const AudioPlayer = () => (
           format={({currentTime}) => calculateTime(currentTime)}
         />
         <AudioPlayerSeekBar />
-        <AudioPlayerForwardButton overrides={{
-            //iconSize: 'iconSize010',
-            spaceInline:'space000',
-            //stylePreset:'buttonOutlinedNegative'
-        }} size={ButtonSize.Small}  onClick={() => {
-        console.log('customer click function for forward');
-      }}/>
-      <AudioPlayerBackwardButton />
         <AudioPlayerTimeDisplay
           format={({duration}) => calculateTime(duration)}
         />
@@ -108,9 +99,6 @@ export const AudioPlayPauseButton = () => (
         console.log('customer click function');
       }}
     />
-      <AudioPlayerForwardButton  onClick={() => {
-        console.log('customer click function for forward');
-      }}/>
   </AudioPlayerComposable>
 );
 AudioPlayPauseButton.storyName = 'audio-play-pause-button';
@@ -126,8 +114,6 @@ export const AudioPlayPauseButtonAutoplay = () => (
         console.log('customer click function');
       }}
     />
-  
-    
   </AudioPlayerComposable>
 );
 
@@ -170,6 +156,58 @@ export const MultipleAudioPlayPauseButtonWithOverrides = () => (
 MultipleAudioPlayPauseButtonWithOverrides.storyName =
   'multiple-audio-play-pause-with-overrides';
 
+export const AudioPlayerForwardReplayButton = () => (
+  <>
+    <StorybookSubHeading>
+      with default forward and replay buttons
+    </StorybookSubHeading>
+    <AudioPlayerComposable
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      ariaLandmark="audio player"
+    >
+      <AudioPlayerPlayPauseButton
+        onClick={() => {
+          console.log('customer click function');
+        }}
+      />
+      <Block spaceStack="space030" />
+      <AudioPlayerSeekBar />
+      <Block spaceStack="space030" />
+      <GridLayout columns="auto 0fr 0fr auto">
+        <GridLayout justifyItems="start">
+          <AudioPlayerTimeDisplay
+            format={({currentTime}) => calculateTime(currentTime)}
+          />
+        </GridLayout>
+        <GridLayout justifyItems="center">
+          <AudioPlayerReplayButton />
+        </GridLayout>
+
+        <GridLayout justifyItems="center">
+          <AudioPlayerForwardButton
+            overrides={{
+              // iconSize: 'iconSize010',
+              spaceInline: 'space000',
+              // stylePreset:'buttonOutlinedNegative'
+            }}
+            onClick={() => {
+              console.log('customer click function for forward');
+            }}
+          />
+        </GridLayout>
+
+        <GridLayout justifyItems="end">
+          <AudioPlayerTimeDisplay
+            format={({duration}) => calculateTime(duration)}
+          />
+        </GridLayout>
+      </GridLayout>
+    </AudioPlayerComposable>
+    <StorybookSubHeading>with overrides</StorybookSubHeading>
+  </>
+);
+AudioPlayerForwardReplayButton.storyName = 'audio-forward-replay-button';
+
 export const AudioPlayerWithTimeDisplay = () => (
   <>
     <StorybookSubHeading>with time display label default</StorybookSubHeading>
@@ -178,7 +216,7 @@ export const AudioPlayerWithTimeDisplay = () => (
       ariaLandmark="audio player 3"
     >
       <AudioPlayerPlayPauseButton />
-      
+
       <Block spaceStack="space030" />
       <AudioPlayerSeekBar />
       <Block spaceStack="space030" />
