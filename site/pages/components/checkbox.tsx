@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage, IconFilledInfo, styled, Checkbox} from 'newskit';
+import {Block, InlineMessage, IconFilledInfo} from 'newskit'; // styled, Checkbox
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
@@ -17,16 +17,16 @@ const infoIcon = (
   />
 );
 
-const Container = styled.div`
-  margin: 10px;
-  display: flex;
-`;
+// const Container = styled.div`
+//   margin: 10px;
+//   display: flex;
+// `;
 
-const Playground = ({checked, ...state}: {checked: boolean}) => (
-  <Container>
-    <Checkbox {...state} defaultChecked={checked} label="Default" />
-  </Container>
-);
+// const Playground = ({checked, ...state}: {checked: boolean}) => (
+//   <Container>
+//     <Checkbox {...state} defaultChecked={checked} label="Default" />
+//   </Container>
+// );
 
 const CheckboxComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -54,22 +54,22 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components',
     }}
-    interactiveDemo={{
-      introduction:
-        'This demo allows you to preview the Checkbox component, its variations, and configuration options.',
-      playground: {
-        componentName: 'Checkbox',
-        // @ts-ignore
-        component: Playground,
-        knobs: [
-          {
-            name: 'Default',
-            propName: 'checked',
-            value: false,
-          },
-        ],
-      },
-    }}
+    // interactiveDemo={{
+    //   introduction:
+    //     'This demo allows you to preview the Checkbox component, its variations, and configuration options.',
+    //   playground: {
+    //     componentName: 'Checkbox',
+    //     // @ts-ignore
+    //     component: Playground,
+    //     knobs: [
+    //       {
+    //         name: 'Default',
+    //         propName: 'checked',
+    //         value: false,
+    //       },
+    //     ],
+    //   },
+    // }}
     anatomy={{
       introduction:
         'The Checkbox contains one required element and three optional elements.',
