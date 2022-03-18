@@ -590,7 +590,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           description:
             'Swap Assistive Text with error text if the Checkbox is invalid. Once the Checkbox is valid then the assistive is then shown again.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/checkbox/usage/do-8'),
+          media: getIllustrationComponent('components/checkbox/usage/do-7'),
         },
         {
           description:

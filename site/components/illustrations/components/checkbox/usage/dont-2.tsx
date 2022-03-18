@@ -25,7 +25,7 @@ export const Dont2: React.FC = () => {
             width="606"
             height="956"
             rx="9.39221"
-            fill="illustrationBackground010"
+            fill="white"
           />
         </g>
         <Path
