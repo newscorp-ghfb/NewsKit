@@ -211,13 +211,14 @@ export default [
             description:
               'A collection of foundational design tokens combined into a preset to define reusable styles for specific interface elements and their interactive states.',
           },
-          // {
-          //   title: 'Transition Presets',
-          //   page: true,
-          //   id: '/theme/presets/transition-presets',
-          //   illustration: 'theme/transition-presets/hero',
-          //   description: 'A collection of motion styles and states combined into a preset to define reusable motion transition from one state to another for specific interface elements.'
-          // },
+          {
+            title: 'Transition Presets',
+            page: true,
+            id: '/theme/presets/transition-presets',
+            illustration: 'theme/transition-presets/hero',
+            description:
+              'A collection of motion attributes combined into a preset to define reusable motion transition from one state to another.',
+          },
           {
             title: 'Typography Presets',
             page: true,
@@ -328,6 +329,14 @@ export default [
             description:
               'Select components allow users to select one option from a list.',
             illustration: 'components/select/select-illustration',
+          },
+          {
+            title: 'Radio Button',
+            page: true,
+            id: '/components/radio-button',
+            description:
+              'Radio Buttons are selection controls that are typically used in forms',
+            illustration: 'components/radio-button/radio-button-illustration',
           },
         ],
       },

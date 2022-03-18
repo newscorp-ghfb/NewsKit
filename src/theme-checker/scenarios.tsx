@@ -82,8 +82,13 @@ import {
 import {Cell, Grid} from '../grid';
 import {Label} from '../label';
 import {CheckboxState} from '../checkbox/types';
+import {BaseSwitchState} from '../base-switch/types';
+import {RadioButton} from '../radio-button';
 
-export const states: [string, {checked?: boolean; state?: CheckboxState}][] = [
+export const checkboxStates: [
+  string,
+  {checked?: boolean; state?: CheckboxState},
+][] = [
   ['default', {}],
   ['checked', {checked: true}],
   ['disabled', {state: 'disabled'}],
@@ -92,6 +97,20 @@ export const states: [string, {checked?: boolean; state?: CheckboxState}][] = [
   ['invalid-checked', {state: 'invalid', checked: true}],
   ['valid', {state: 'valid'}],
   ['valid-checked', {state: 'valid', checked: true}],
+];
+
+export const radioButtonStates: [
+  string,
+  {checked?: boolean; state?: BaseSwitchState},
+][] = [
+  ['default', {checked: false}],
+  ['checked', {checked: true}],
+  ['disabled', {state: 'disabled'}],
+  ['checked-disabled', {checked: true, state: 'disabled'}],
+  ['invalid', {checked: false, state: 'invalid'}],
+  ['invalid-checked', {checked: true, state: 'invalid'}],
+  ['valid', {checked: false, state: 'valid'}],
+  ['valid-checked', {checked: true, state: 'valid'}],
 ];
 
 interface ComponentData {
@@ -484,12 +503,35 @@ export const scenarios: Array<ComponentData> = [
         flow={Flow.HorizontalTop}
         wrap="wrap"
       >
-        {states.map(([id, {checked, ...props}]) => (
+        {checkboxStates.map(([id, {checked, ...props}]) => (
           <Stack key={`${id}-checkbox`} spaceInline="space050">
             <LabelFlag>{id[0].toUpperCase() + id.slice(1)}</LabelFlag>
             <Checkbox
               {...props}
               defaultChecked={checked}
+              label={id}
+              size="medium"
+            />
+          </Stack>
+        ))}
+      </Stack>
+    ),
+  },
+  {
+    name: 'RadioButton',
+    component: () => (
+      <Stack
+        spaceInline="space100"
+        spaceStack="space060"
+        flow={Flow.HorizontalTop}
+        wrap="wrap"
+      >
+        {radioButtonStates.map(([id, {checked, ...props}]) => (
+          <Stack key={`${id}-radiobutton`} spaceInline="space050">
+            <LabelFlag>{id[0].toUpperCase() + id.slice(1)}</LabelFlag>
+            <RadioButton
+              {...props}
+              checked={checked}
               label={id}
               size="medium"
             />

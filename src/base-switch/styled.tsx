@@ -2,10 +2,11 @@ import {
   getResponsiveSize,
   getResponsiveSpace,
   getStylePreset,
+  getTransitionPreset,
   getTypographyPreset,
   styled,
 } from '../utils';
-import {CheckboxProps} from './types';
+import {BaseSwitchProps} from './types';
 
 const STACKING_CONTEXT = {
   feedback: '1',
@@ -13,19 +14,22 @@ const STACKING_CONTEXT = {
 };
 
 export const StyledContainer = styled.label<
-  Pick<CheckboxProps, 'state' | 'size' | 'overrides'>
+  Pick<BaseSwitchProps, 'state' | 'size' | 'overrides' | 'path'>
 >`
   display: flex;
   align-items: center;
 
   ${({state}) => ({cursor: state === 'disabled' ? 'not-allowed' : 'pointer'})};
 
-  ${({size}) =>
-    getResponsiveSpace('marginBottom', `checkbox.${size}`, '', 'spaceStack')}
+  ${({size, path}) =>
+    getResponsiveSpace('marginBottom', `${path}.${size}`, '', 'spaceStack')}
 `;
 
-export const StyledCheckboxContainer = styled.div<
-  Pick<CheckboxProps, 'size' | 'overrides' | 'state' | 'labelPosition'>
+export const StyledSwitchContainer = styled.div<
+  Pick<
+    BaseSwitchProps,
+    'size' | 'overrides' | 'state' | 'labelPosition' | 'path'
+  >
 >`
   position: relative;
   display: inline-block;
@@ -36,18 +40,18 @@ export const StyledCheckboxContainer = styled.div<
     box-sizing: border-box;
   }
 
-  ${({size}) =>
+  ${({size, path}) =>
     getResponsiveSize(
       rectSize => ({width: rectSize, height: rectSize}),
-      `checkbox.${size}.input`,
+      `${path}.${size}.input`,
       'input',
       'size',
     )}
 
-  ${({size, labelPosition}) =>
+  ${({size, labelPosition, path}) =>
     getResponsiveSpace(
       labelPosition === 'end' ? 'marginRight' : 'marginLeft',
-      `checkbox.${size}.input`,
+      `${path}.${size}.input`,
       'input',
       'spaceInline',
     )}
@@ -61,10 +65,10 @@ const insetCSS = `
   height: 100%;
 `;
 
-export const StyledCheckbox = styled.div<
-  Pick<CheckboxProps, 'checked' | 'size' | 'state' | 'overrides'> & {
+export const StyledSwitch = styled.div<
+  Pick<BaseSwitchProps, 'checked' | 'size' | 'state' | 'overrides' | 'path'> & {
     isFocused: boolean;
-    isHover: boolean;
+    isHovered: boolean;
     feedbackIsVisible: boolean;
   }
 >`
@@ -72,52 +76,59 @@ export const StyledCheckbox = styled.div<
   display: flex;
   justify-content: center;
   align-items: center;
-  ${({size, checked, state, isFocused, isHover}) =>
-    getStylePreset(`checkbox.${size}.input`, 'input', {
+  ${({size, checked, state, isFocused, isHovered, path}) =>
+    getStylePreset(`${path}.${size}.input`, 'input', {
       isChecked: checked,
       isDisabled: state === 'disabled',
       isInvalid: state === 'invalid',
       isValid: state === 'valid',
       isFocused,
-      isHover,
+      isHovered,
     })};
   ${({feedbackIsVisible}) =>
-    feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`}
+    feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`};
+
+  ${({size, path}) => getTransitionPreset(`${path}.${size}.input`, 'input')};
 `;
 
 export const StyledFeedback = styled.div<
-  Pick<CheckboxProps, 'size' | 'overrides' | 'state'> & {
+  Pick<BaseSwitchProps, 'size' | 'overrides' | 'state' | 'path'> & {
     isFocused: boolean;
-    isHover: boolean;
+    isHovered: boolean;
   }
 >`
   position: absolute;
   top: 50%;
   left: 50%;
-  ${({isHover, isFocused}) =>
-    (isHover || isFocused) && `z-index: ${STACKING_CONTEXT.feedback}`};
+  opacity: 0.7;
+  ${({isHovered, isFocused}) =>
+    (isHovered || isFocused) && `z-index: ${STACKING_CONTEXT.feedback}`};
 
-  ${({size, isHover, isFocused}) =>
-    getStylePreset(`checkbox.${size}.feedback`, 'feedback', {
-      isHover,
+  ${({size, isHovered, isFocused, state, path}) =>
+    getStylePreset(`${path}.${size}.feedback`, 'feedback', {
+      isHovered,
       isFocused,
+      isInvalid: state === 'invalid',
+      isValid: state === 'valid',
       // when is not HOVER we need to remove the hover so it does not apply as class:hover
-      omitStates: isHover ? [] : ['hover'],
+      omitStates: isHovered ? [] : ['hover'],
     })}
-  ${({size}) =>
+  ${({size, path}) =>
     getResponsiveSize(
       rectSize => ({
         width: rectSize,
         height: rectSize,
         transform: `translate3d(calc(${rectSize} / -2), calc(${rectSize} / -2), 0)`,
       }),
-      `checkbox.${size}.feedback`,
+      `${path}.${size}.feedback`,
       'feedback',
       'size',
     )};
 `;
 
-export const StyledInput = styled.input<CheckboxProps>`
+export const StyledInput = styled.input<
+  Omit<BaseSwitchProps, 'defaultSwitchSelectorComponent'>
+>`
   ${insetCSS}
   margin: 0;
   opacity: 0;
@@ -125,13 +136,13 @@ export const StyledInput = styled.input<CheckboxProps>`
 `;
 
 export const StyledLabel = styled.span<
-  Pick<CheckboxProps, 'size' | 'overrides' | 'state'>
+  Pick<BaseSwitchProps, 'size' | 'overrides' | 'state' | 'path'>
 >`
-  ${({size, state}) =>
-    getStylePreset(`checkbox.${size}.label`, 'label', {
+  ${({size, state, path}) =>
+    getStylePreset(`${path}.${size}.label`, 'label', {
       isDisabled: state === 'disabled',
       isInvalid: state === 'invalid',
       isValid: state === 'valid',
     })}
-  ${({size}) => getTypographyPreset(`checkbox.${size}.label`, 'label')}
+  ${({size, path}) => getTypographyPreset(`${path}.${size}.label`, 'label')}
 `;

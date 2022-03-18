@@ -37,9 +37,10 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   z-index: 1;
   background-color: #E0E7FF;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -66,12 +67,15 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
-  border-color: #3358CC;
-  border-width: 1px;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   z-index: 2;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -118,6 +122,7 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -168,8 +173,9 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -178,8 +184,32 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -200,11 +230,14 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -212,14 +245,12 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-3:focus:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
@@ -234,8 +265,8 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
@@ -243,15 +274,17 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   border-color: #2B4AAB;
 }
 
-.emotion-3:invalid:focus:not(:disabled) {
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #A60100;
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #D20600;
 }
 
 .emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -261,8 +294,8 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #D20600;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -275,15 +308,18 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   border-color: #A60100;
 }
 
-.emotion-3:valid:focus:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #0A782A;
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
 }
 
 .emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
@@ -293,8 +329,8 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -308,6 +344,7 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -360,6 +397,7 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -410,8 +448,9 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -420,8 +459,32 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -444,9 +507,12 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   align-items: center;
   background-color: transparent;
   border-color: #F4F4F4;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -489,6 +555,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           type="checkbox"
         />
@@ -540,8 +607,9 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -550,8 +618,32 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -574,9 +666,12 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
   align-items: center;
   background-color: transparent;
   border-color: #F4F4F4;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -619,6 +714,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           type="checkbox"
         />
@@ -670,18 +766,16 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: transparent;
-  border-radius: 4px;
+  opacity: 0.7;
+  z-index: 1;
+  background-color: #E0E7FF;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-}
-
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
 }
 
 .emotion-3 {
@@ -702,11 +796,15 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
-  border-color: #3358CC;
-  border-width: 1px;
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  z-index: 2;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -753,6 +851,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -803,8 +902,9 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -813,8 +913,32 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -835,11 +959,14 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -847,14 +974,12 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-3:focus:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
@@ -869,8 +994,8 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
@@ -878,15 +1003,17 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   border-color: #2B4AAB;
 }
 
-.emotion-3:invalid:focus:not(:disabled) {
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #A60100;
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #D20600;
 }
 
 .emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -896,8 +1023,8 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #D20600;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -910,15 +1037,18 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   border-color: #A60100;
 }
 
-.emotion-3:valid:focus:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #0A782A;
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
 }
 
 .emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
@@ -928,8 +1058,8 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -943,6 +1073,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -995,6 +1126,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -1045,8 +1177,9 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -1055,8 +1188,32 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -1079,9 +1236,12 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   align-items: center;
   background-color: transparent;
   border-color: #F4F4F4;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -1124,6 +1284,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           type="checkbox"
         />
@@ -1175,8 +1336,9 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -1185,8 +1347,32 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -1209,9 +1395,12 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   align-items: center;
   background-color: transparent;
   border-color: #F4F4F4;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -1254,6 +1443,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           type="checkbox"
         />
@@ -1305,8 +1495,9 @@ exports[`Checkbox label attributes 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -1315,8 +1506,32 @@ exports[`Checkbox label attributes 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -1337,11 +1552,14 @@ exports[`Checkbox label attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -1349,14 +1567,12 @@ exports[`Checkbox label attributes 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-3:focus:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
@@ -1371,8 +1587,8 @@ exports[`Checkbox label attributes 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
@@ -1380,15 +1596,17 @@ exports[`Checkbox label attributes 1`] = `
   border-color: #2B4AAB;
 }
 
-.emotion-3:invalid:focus:not(:disabled) {
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #A60100;
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #D20600;
 }
 
 .emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -1398,8 +1616,8 @@ exports[`Checkbox label attributes 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #D20600;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -1412,15 +1630,18 @@ exports[`Checkbox label attributes 1`] = `
   border-color: #A60100;
 }
 
-.emotion-3:valid:focus:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #0A782A;
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
 }
 
 .emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
@@ -1430,8 +1651,8 @@ exports[`Checkbox label attributes 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -1445,6 +1666,7 @@ exports[`Checkbox label attributes 1`] = `
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -1499,6 +1721,7 @@ exports[`Checkbox label attributes 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -1562,8 +1785,9 @@ exports[`Checkbox label position start 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -1572,8 +1796,32 @@ exports[`Checkbox label position start 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-3:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-3:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-4 {
@@ -1594,11 +1842,14 @@ exports[`Checkbox label position start 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-4 svg {
@@ -1606,14 +1857,12 @@ exports[`Checkbox label position start 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-4:focus:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
 .emotion-4:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
@@ -1628,8 +1877,8 @@ exports[`Checkbox label position start 1`] = `
 }
 
 .emotion-4:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-4:checked:focus:hover:not(:disabled) {
@@ -1637,15 +1886,17 @@ exports[`Checkbox label position start 1`] = `
   border-color: #2B4AAB;
 }
 
-.emotion-4:invalid:focus:not(:disabled) {
+.emotion-4:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-4:invalid:hover:not(:disabled) {
-  border-color: #A60100;
+.emotion-4:invalid:focus:not(:disabled) {
+  border-color: #D20600;
 }
 
 .emotion-4:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -1655,8 +1906,8 @@ exports[`Checkbox label position start 1`] = `
 }
 
 .emotion-4:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #D20600;
 }
 
 .emotion-4:checked:invalid:hover:not(:disabled) {
@@ -1669,15 +1920,18 @@ exports[`Checkbox label position start 1`] = `
   border-color: #A60100;
 }
 
-.emotion-4:valid:focus:not(:disabled) {
+.emotion-4:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-4:valid:hover:not(:disabled) {
-  border-color: #0A782A;
+.emotion-4:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
 }
 
 .emotion-4:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
@@ -1687,8 +1941,8 @@ exports[`Checkbox label position start 1`] = `
 }
 
 .emotion-4:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
 .emotion-4:checked:valid:hover:not(:disabled) {
@@ -1702,6 +1956,7 @@ exports[`Checkbox label position start 1`] = `
 }
 
 .emotion-4:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -1746,6 +2001,7 @@ exports[`Checkbox label position start 1`] = `
       >
         <input
           class="emotion-5"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -1791,8 +2047,9 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -1801,8 +2058,32 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -1823,11 +2104,14 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -1835,14 +2119,12 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-3:focus:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
@@ -1857,8 +2139,8 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
@@ -1866,15 +2148,17 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   border-color: #2B4AAB;
 }
 
-.emotion-3:invalid:focus:not(:disabled) {
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #A60100;
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #D20600;
 }
 
 .emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -1884,8 +2168,8 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #D20600;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -1898,15 +2182,18 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   border-color: #A60100;
 }
 
-.emotion-3:valid:focus:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #0A782A;
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
 }
 
 .emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
@@ -1916,8 +2203,8 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -1931,6 +2218,7 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -1954,19 +2242,6 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -1983,13 +2258,11 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2031,9 +2304,10 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   z-index: 1;
   background-color: #E0E7FF;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -2060,12 +2334,15 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
-  border-color: #2B4AAB;
-  border-width: 1px;
+  background-color: #FAFAFA;
+  border-color: #CCCCCC;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
   z-index: 2;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -2073,6 +2350,7 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
@@ -2085,19 +2363,6 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   margin: 0;
   opacity: 0;
   cursor: inherit;
-}
-
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
 }
 
 <div
@@ -2116,13 +2381,11 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2164,8 +2427,9 @@ exports[`Checkbox render with size: large & checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 64px;
   height: 64px;
   -webkit-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
@@ -2174,8 +2438,32 @@ exports[`Checkbox render with size: large & checked 1`] = `
   transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -2198,9 +2486,12 @@ exports[`Checkbox render with size: large & checked 1`] = `
   align-items: center;
   background-color: #3358CC;
   border-color: #3358CC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -2213,8 +2504,8 @@ exports[`Checkbox render with size: large & checked 1`] = `
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:invalid:not(:disabled) {
@@ -2264,19 +2555,6 @@ exports[`Checkbox render with size: large & checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -2310,13 +2588,11 @@ exports[`Checkbox render with size: large & checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2358,8 +2634,9 @@ exports[`Checkbox render with size: large & label 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 64px;
   height: 64px;
   -webkit-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
@@ -2368,8 +2645,32 @@ exports[`Checkbox render with size: large & label 1`] = `
   transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -2390,11 +2691,14 @@ exports[`Checkbox render with size: large & label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -2402,14 +2706,12 @@ exports[`Checkbox render with size: large & label 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-3:focus:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
@@ -2424,8 +2726,8 @@ exports[`Checkbox render with size: large & label 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
@@ -2433,15 +2735,17 @@ exports[`Checkbox render with size: large & label 1`] = `
   border-color: #2B4AAB;
 }
 
-.emotion-3:invalid:focus:not(:disabled) {
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #A60100;
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #D20600;
 }
 
 .emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -2451,8 +2755,8 @@ exports[`Checkbox render with size: large & label 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #D20600;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -2465,15 +2769,18 @@ exports[`Checkbox render with size: large & label 1`] = `
   border-color: #A60100;
 }
 
-.emotion-3:valid:focus:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #0A782A;
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
 }
 
 .emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
@@ -2483,8 +2790,8 @@ exports[`Checkbox render with size: large & label 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -2498,6 +2805,7 @@ exports[`Checkbox render with size: large & label 1`] = `
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -2550,6 +2858,7 @@ exports[`Checkbox render with size: large & label 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -2600,8 +2909,9 @@ exports[`Checkbox render with size: large 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 64px;
   height: 64px;
   -webkit-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
@@ -2610,8 +2920,32 @@ exports[`Checkbox render with size: large 1`] = `
   transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -2632,11 +2966,14 @@ exports[`Checkbox render with size: large 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -2644,14 +2981,12 @@ exports[`Checkbox render with size: large 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-3:focus:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
@@ -2666,8 +3001,8 @@ exports[`Checkbox render with size: large 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
@@ -2675,15 +3010,17 @@ exports[`Checkbox render with size: large 1`] = `
   border-color: #2B4AAB;
 }
 
-.emotion-3:invalid:focus:not(:disabled) {
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #A60100;
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #D20600;
 }
 
 .emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -2693,8 +3030,8 @@ exports[`Checkbox render with size: large 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #D20600;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -2707,15 +3044,18 @@ exports[`Checkbox render with size: large 1`] = `
   border-color: #A60100;
 }
 
-.emotion-3:valid:focus:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #0A782A;
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
 }
 
 .emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
@@ -2725,8 +3065,8 @@ exports[`Checkbox render with size: large 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -2740,6 +3080,7 @@ exports[`Checkbox render with size: large 1`] = `
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -2763,19 +3104,6 @@ exports[`Checkbox render with size: large 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -2792,13 +3120,11 @@ exports[`Checkbox render with size: large 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2840,8 +3166,9 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -2850,8 +3177,32 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -2874,9 +3225,12 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   align-items: center;
   background-color: #3358CC;
   border-color: #3358CC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -2889,8 +3243,8 @@ exports[`Checkbox render with size: medium & checked 1`] = `
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:invalid:not(:disabled) {
@@ -2940,19 +3294,6 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -2986,13 +3327,11 @@ exports[`Checkbox render with size: medium & checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -3034,8 +3373,9 @@ exports[`Checkbox render with size: medium & label 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -3044,8 +3384,32 @@ exports[`Checkbox render with size: medium & label 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -3066,11 +3430,14 @@ exports[`Checkbox render with size: medium & label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -3078,14 +3445,12 @@ exports[`Checkbox render with size: medium & label 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-3:focus:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
@@ -3100,8 +3465,8 @@ exports[`Checkbox render with size: medium & label 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
@@ -3109,15 +3474,17 @@ exports[`Checkbox render with size: medium & label 1`] = `
   border-color: #2B4AAB;
 }
 
-.emotion-3:invalid:focus:not(:disabled) {
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #A60100;
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #D20600;
 }
 
 .emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -3127,8 +3494,8 @@ exports[`Checkbox render with size: medium & label 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #D20600;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -3141,15 +3508,18 @@ exports[`Checkbox render with size: medium & label 1`] = `
   border-color: #A60100;
 }
 
-.emotion-3:valid:focus:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #0A782A;
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
 }
 
 .emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
@@ -3159,8 +3529,8 @@ exports[`Checkbox render with size: medium & label 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -3174,6 +3544,7 @@ exports[`Checkbox render with size: medium & label 1`] = `
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -3226,6 +3597,7 @@ exports[`Checkbox render with size: medium & label 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -3276,8 +3648,9 @@ exports[`Checkbox render with size: medium 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -3286,8 +3659,32 @@ exports[`Checkbox render with size: medium 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -3308,11 +3705,14 @@ exports[`Checkbox render with size: medium 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -3320,14 +3720,12 @@ exports[`Checkbox render with size: medium 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-3:focus:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
@@ -3342,8 +3740,8 @@ exports[`Checkbox render with size: medium 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
@@ -3351,15 +3749,17 @@ exports[`Checkbox render with size: medium 1`] = `
   border-color: #2B4AAB;
 }
 
-.emotion-3:invalid:focus:not(:disabled) {
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #A60100;
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #D20600;
 }
 
 .emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -3369,8 +3769,8 @@ exports[`Checkbox render with size: medium 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #D20600;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -3383,15 +3783,18 @@ exports[`Checkbox render with size: medium 1`] = `
   border-color: #A60100;
 }
 
-.emotion-3:valid:focus:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #0A782A;
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
 }
 
 .emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
@@ -3401,8 +3804,8 @@ exports[`Checkbox render with size: medium 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -3416,6 +3819,7 @@ exports[`Checkbox render with size: medium 1`] = `
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -3439,19 +3843,6 @@ exports[`Checkbox render with size: medium 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -3468,13 +3859,11 @@ exports[`Checkbox render with size: medium 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -3516,8 +3905,9 @@ exports[`Checkbox render with size: small & checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
@@ -3526,8 +3916,32 @@ exports[`Checkbox render with size: small & checked 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -3550,9 +3964,12 @@ exports[`Checkbox render with size: small & checked 1`] = `
   align-items: center;
   background-color: #3358CC;
   border-color: #3358CC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -3565,8 +3982,8 @@ exports[`Checkbox render with size: small & checked 1`] = `
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:invalid:not(:disabled) {
@@ -3616,19 +4033,6 @@ exports[`Checkbox render with size: small & checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -3662,13 +4066,11 @@ exports[`Checkbox render with size: small & checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -3710,8 +4112,9 @@ exports[`Checkbox render with size: small & label 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
@@ -3720,8 +4123,32 @@ exports[`Checkbox render with size: small & label 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -3742,11 +4169,14 @@ exports[`Checkbox render with size: small & label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -3754,14 +4184,12 @@ exports[`Checkbox render with size: small & label 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-3:focus:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
@@ -3776,8 +4204,8 @@ exports[`Checkbox render with size: small & label 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
@@ -3785,15 +4213,17 @@ exports[`Checkbox render with size: small & label 1`] = `
   border-color: #2B4AAB;
 }
 
-.emotion-3:invalid:focus:not(:disabled) {
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #A60100;
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #D20600;
 }
 
 .emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -3803,8 +4233,8 @@ exports[`Checkbox render with size: small & label 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #D20600;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -3817,15 +4247,18 @@ exports[`Checkbox render with size: small & label 1`] = `
   border-color: #A60100;
 }
 
-.emotion-3:valid:focus:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #0A782A;
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
 }
 
 .emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
@@ -3835,8 +4268,8 @@ exports[`Checkbox render with size: small & label 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -3850,6 +4283,7 @@ exports[`Checkbox render with size: small & label 1`] = `
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -3902,6 +4336,7 @@ exports[`Checkbox render with size: small & label 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
@@ -3952,8 +4387,9 @@ exports[`Checkbox render with size: small 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
@@ -3962,8 +4398,32 @@ exports[`Checkbox render with size: small 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -3984,11 +4444,14 @@ exports[`Checkbox render with size: small 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -3996,14 +4459,12 @@ exports[`Checkbox render with size: small 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-3:focus:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
@@ -4018,8 +4479,8 @@ exports[`Checkbox render with size: small 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
@@ -4027,15 +4488,17 @@ exports[`Checkbox render with size: small 1`] = `
   border-color: #2B4AAB;
 }
 
-.emotion-3:invalid:focus:not(:disabled) {
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #A60100;
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #D20600;
 }
 
 .emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -4045,8 +4508,8 @@ exports[`Checkbox render with size: small 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #D20600;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -4059,15 +4522,18 @@ exports[`Checkbox render with size: small 1`] = `
   border-color: #A60100;
 }
 
-.emotion-3:valid:focus:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #0A782A;
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
 }
 
 .emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
@@ -4077,8 +4543,8 @@ exports[`Checkbox render with size: small 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -4092,6 +4558,7 @@ exports[`Checkbox render with size: small 1`] = `
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -4115,17 +4582,261 @@ exports[`Checkbox render with size: small 1`] = `
   cursor: inherit;
 }
 
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      role="presentation"
+    >
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
+      />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          data-testid="checkbox-input"
+          type="checkbox"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox render with state: base 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
 }
 
-.emotion-5:disabled {
-  color: #C0C0C0;
+.emotion-1 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.7;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FAFAFA;
+  border-color: #CCCCCC;
+  border-width: 2px;
+  border-radius: 4px;
+  border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+.emotion-3:checked:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+.emotion-3:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #D20600;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-3:checked:invalid:focus:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-3:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:focus:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:disabled {
+  background-color: transparent;
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) svg {
+  fill: #C0C0C0;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
 }
 
 <div
@@ -4144,13 +4855,12 @@ exports[`Checkbox render with size: small 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
+          id="base"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4192,8 +4902,9 @@ exports[`Checkbox render with state: checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -4202,8 +4913,32 @@ exports[`Checkbox render with state: checked 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -4226,9 +4961,12 @@ exports[`Checkbox render with state: checked 1`] = `
   align-items: center;
   background-color: #3358CC;
   border-color: #3358CC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -4241,8 +4979,8 @@ exports[`Checkbox render with state: checked 1`] = `
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:invalid:not(:disabled) {
@@ -4292,19 +5030,6 @@ exports[`Checkbox render with state: checked 1`] = `
   cursor: inherit;
 }
 
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
 <div
     class="emotion-0"
   >
@@ -4338,14 +5063,12 @@ exports[`Checkbox render with state: checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           id="checked"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4387,8 +5110,9 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -4397,8 +5121,32 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -4421,9 +5169,12 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   align-items: center;
   background-color: #F4F4F4;
   border-color: #F4F4F4;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -4456,15 +5207,6 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   margin: 0;
   opacity: 0;
   cursor: inherit;
-}
-
-.emotion-7 {
-  color: #C0C0C0;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
 }
 
 <div
@@ -4500,256 +5242,13 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           disabled=""
           id="checked-disabled"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Checkbox render with state: default 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  margin-bottom: 0;
-}
-
-.emotion-1 {
-  position: relative;
-  display: inline-block;
-  -webkit-align-self: start;
-  -ms-flex-item-align: start;
-  align-self: start;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  margin-right: 12px;
-}
-
-.emotion-1 * {
-  box-sizing: border-box;
-}
-
-.emotion-2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: transparent;
-  border-radius: 4px;
-  width: 48px;
-  height: 48px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-}
-
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
-}
-
-.emotion-3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  border-color: #CCCCCC;
-  border-width: 1px;
-  border-radius: 4px;
-  border-style: solid;
-}
-
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-3:focus:not(:disabled) {
-  border-color: #2B4AAB;
-}
-
-.emotion-3:focus:hover:not(:disabled) {
-  border-color: #2B4AAB;
-}
-
-.emotion-3:checked:not(:disabled) {
-  background-color: #3358CC;
-  border-color: #3358CC;
-}
-
-.emotion-3:checked:hover:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
-}
-
-.emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
-}
-
-.emotion-3:checked:focus:hover:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  border-color: #A60100;
-}
-
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #A60100;
-}
-
-.emotion-3:invalid:focus:hover:not(:disabled) {
-  border-color: #A60100;
-}
-
-.emotion-3:checked:invalid:not(:disabled) {
-  background-color: #D20600;
-  border-color: #D20600;
-}
-
-.emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:checked:invalid:hover:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:checked:invalid:focus:hover:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  border-color: #0A782A;
-}
-
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #0A782A;
-}
-
-.emotion-3:valid:focus:hover:not(:disabled) {
-  border-color: #0A782A;
-}
-
-.emotion-3:checked:valid:not(:disabled) {
-  background-color: #148F39;
-  border-color: #148F39;
-}
-
-.emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
-}
-
-.emotion-3:checked:valid:hover:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
-}
-
-.emotion-3:checked:valid:focus:hover:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
-}
-
-.emotion-3:disabled {
-  border-color: #F4F4F4;
-}
-
-.emotion-3:checked:disabled:not(:disabled) {
-  background-color: #F4F4F4;
-  border-color: #F4F4F4;
-}
-
-.emotion-3:checked:disabled:not(:disabled) svg {
-  fill: #C0C0C0;
-}
-
-.emotion-4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  opacity: 0;
-  cursor: inherit;
-}
-
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
-<div
-    class="emotion-0"
-  >
-    <div
-      class="emotion-1"
-      role="presentation"
-    >
-      <div
-        class="emotion-2"
-        data-testid="checkbox-feedback"
-      />
-      <div
-        class="emotion-3"
-      >
-        <input
-          class="emotion-4"
-          id="default"
-          type="checkbox"
-        />
-      </div>
-    </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4791,8 +5290,9 @@ exports[`Checkbox render with state: disabled 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -4801,8 +5301,32 @@ exports[`Checkbox render with state: disabled 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -4825,9 +5349,12 @@ exports[`Checkbox render with state: disabled 1`] = `
   align-items: center;
   background-color: transparent;
   border-color: #F4F4F4;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -4843,15 +5370,6 @@ exports[`Checkbox render with state: disabled 1`] = `
   margin: 0;
   opacity: 0;
   cursor: inherit;
-}
-
-.emotion-5 {
-  color: #C0C0C0;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
 }
 
 <div
@@ -4870,15 +5388,13 @@ exports[`Checkbox render with state: disabled 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           disabled=""
           id="disabled"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -4920,8 +5436,9 @@ exports[`Checkbox render with state: invalid 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -4930,8 +5447,32 @@ exports[`Checkbox render with state: invalid 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -4952,11 +5493,14 @@ exports[`Checkbox render with state: invalid 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #D20600;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -4964,11 +5508,12 @@ exports[`Checkbox render with state: invalid 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
 .emotion-3:focus:not(:disabled) {
-  border-color: #A60100;
+  border-color: #D20600;
 }
 
 .emotion-4 {
@@ -4980,19 +5525,6 @@ exports[`Checkbox render with state: invalid 1`] = `
   margin: 0;
   opacity: 0;
   cursor: inherit;
-}
-
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
 }
 
 <div
@@ -5011,14 +5543,12 @@ exports[`Checkbox render with state: invalid 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           id="invalid"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5060,8 +5590,9 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5070,8 +5601,32 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -5094,9 +5649,12 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   align-items: center;
   background-color: #D20600;
   border-color: #D20600;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -5109,8 +5667,8 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #D20600;
 }
 
 .emotion-4 {
@@ -5139,19 +5697,6 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   margin: 0;
   opacity: 0;
   cursor: inherit;
-}
-
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
 }
 
 <div
@@ -5187,14 +5732,12 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           id="invalid-checked"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5236,8 +5779,9 @@ exports[`Checkbox render with state: valid 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5246,8 +5790,32 @@ exports[`Checkbox render with state: valid 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -5268,11 +5836,14 @@ exports[`Checkbox render with state: valid 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #148F39;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -5280,11 +5851,13 @@ exports[`Checkbox render with state: valid 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
 .emotion-3:focus:not(:disabled) {
-  border-color: #0A782A;
+  background-color: #FAFAFA;
+  border-color: #148F39;
 }
 
 .emotion-4 {
@@ -5296,19 +5869,6 @@ exports[`Checkbox render with state: valid 1`] = `
   margin: 0;
   opacity: 0;
   cursor: inherit;
-}
-
-.emotion-5 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
 }
 
 <div
@@ -5327,14 +5887,12 @@ exports[`Checkbox render with state: valid 1`] = `
       >
         <input
           class="emotion-4"
+          data-testid="checkbox-input"
           id="valid"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-5"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5376,8 +5934,9 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5386,8 +5945,32 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -5410,9 +5993,12 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   align-items: center;
   background-color: #148F39;
   border-color: #148F39;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-3 svg {
@@ -5425,8 +6011,8 @@ exports[`Checkbox render with state: valid-checked 1`] = `
 }
 
 .emotion-3:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
 .emotion-4 {
@@ -5455,19 +6041,6 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   margin: 0;
   opacity: 0;
   cursor: inherit;
-}
-
-.emotion-7 {
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7:disabled {
-  color: #C0C0C0;
 }
 
 <div
@@ -5503,14 +6076,12 @@ exports[`Checkbox render with state: valid-checked 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           id="valid-checked"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -5552,6 +6123,7 @@ exports[`Checkbox with overrides 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   width: 120px;
   height: 120px;
   -webkit-transform: translate3d(calc(120px / -2), calc(120px / -2), 0);
@@ -5578,6 +6150,9 @@ exports[`Checkbox with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  transition-property: background-color,border-color;
+  transition-duration: 200ms,200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
 }
 
 .emotion-4 {
@@ -5606,19 +6181,6 @@ exports[`Checkbox with overrides 1`] = `
   margin: 0;
   opacity: 0;
   cursor: inherit;
-}
-
-.emotion-7 {
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 1.125;
-  font-weight: 700;
-  letter-spacing: 0;
-}
-
-.emotion-7 svg {
-  fill: #535353;
 }
 
 <div
@@ -5654,13 +6216,11 @@ exports[`Checkbox with overrides 1`] = `
         <input
           checked=""
           class="emotion-6"
+          data-testid="checkbox-input"
           type="checkbox"
         />
       </div>
     </div>
-    <span
-      class="emotion-7"
-    />
   </div>
 </DocumentFragment>
 `;
