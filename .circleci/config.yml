@@ -629,11 +629,9 @@ jobs:
       - run:
           name: Set github identity
           command: make set_git_identity
-      # TODO uncomment and remove 657 AFTER CHECKING THE VERSION NUMBER comes right
-      # - run:
-      #     name: bump version
-      #     command: make bump_version NEW_VERSION=<< parameters.version >>
-      - run: echo "<< parameters.version >>"
+      - run:
+          name: bump version
+          command: make bump_version NEW_VERSION=<< parameters.version >>
 
   publish_npm:
     parameters:
