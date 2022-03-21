@@ -363,6 +363,14 @@ Object {
     "spaceInsetStretch060": "48px 32px",
   },
   "stylePresets": Object {
+    "controlLabel": Object {
+      "base": Object {
+        "color": "#2E2E2E",
+      },
+      "disabled": Object {
+        "color": "#C0C0C0",
+      },
+    },
     "inkBase": Object {
       "base": Object {
         "color": "#2E2E2E",

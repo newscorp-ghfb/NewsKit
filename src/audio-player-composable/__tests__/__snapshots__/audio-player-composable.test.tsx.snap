@@ -1,5 +1,178 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #AEBFFF;
+  border-radius: 50%;
+  color: #3358CC;
+  margin: 0;
+  cursor: progress;
+}
+
+.emotion-0 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-0 svg {
+  fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-3 {
+  width: 32px;
+  height: 32px;
+  stroke: #3358CC;
+}
+
+.emotion-3 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
+  will-change: transform;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+.emotion-4 {
+  margin: 0;
+  display: inline-block;
+  display: block;
+  background-color: #3358CC;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+<section
+    aria-label="Audio Player"
+  >
+    <audio
+      autoplay=""
+      data-testid="audio-element"
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    />
+    <button
+      aria-busy="true"
+      aria-label="Stop"
+      aria-live="polite"
+      aria-pressed="true"
+      class="emotion-0"
+      data-testid="audio-player-play-pause-button"
+      type="button"
+    >
+      <div
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-3"
+            fill="currentColor"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="50%"
+              cy="50%"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+    <span
+      class="emotion-4"
+    >
+      00:00/00:00 
+    </span>
+  </section>
+</DocumentFragment>
+`;
+
 exports[`Audio Player Composable seekBar should renders and behaves as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -536,6 +709,18 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   animation: rotate 1s linear infinite;
 }
 
+.emotion-8 {
+  margin: 0;
+  display: inline-block;
+  display: block;
+  background-color: transparent;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
 <section
     aria-label="Audio Player"
   >
@@ -607,6 +792,11 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
         </div>
       </div>
     </button>
+    <span
+      class="emotion-8"
+    >
+      00:00/00:00 
+    </span>
   </section>
 </DocumentFragment>
 `;
@@ -1315,6 +1505,561 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
       aria-label="Stop"
       aria-live="polite"
       aria-pressed="true"
+      class="emotion-4"
+      data-testid="audio-player-play-pause-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-7"
+            fill="currentColor"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="50%"
+              cy="50%"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Audio Player Composable should render correctly when in autoplay 2`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  border-radius: 20rem;
+  margin: calc(16px/2 - 8px/2) calc(16px/2);
+  height: 8px;
+  width: 100%;
+}
+
+.emotion-2 {
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  background-color: #3358CC;
+  border-color: #FFFFFF;
+  height: 16px;
+  width: 16px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-2 svg {
+  fill: #C0C0C0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #2B4AAB;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #213A82;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #535353;
+}
+
+.emotion-3 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #AEBFFF;
+  border-radius: 50%;
+  color: #3358CC;
+  margin: 0;
+  cursor: progress;
+}
+
+.emotion-4 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-4 svg {
+  fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-7 {
+  width: 32px;
+  height: 32px;
+  stroke: #3358CC;
+}
+
+.emotion-7 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
+  will-change: transform;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+<section
+    aria-label="Audio Player"
+  >
+    <audio
+      autoplay=""
+      data-testid="audio-element"
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    />
+    <div
+      class="emotion-0"
+      data-testid="audio-slider"
+    >
+      <div
+        class="emotion-1"
+        data-testid="audio-slider-track"
+        style="background: rgb(255, 255, 0);"
+        values="0"
+      >
+        <div
+          aria-describedby="mock-nk-1"
+          aria-label="seek bar"
+          aria-valuemax="1"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          aria-valuetext="Playback time: 0 seconds of 0 seconds"
+          class="emotion-2"
+          data-testid="audio-slider-thumb"
+          draggable="false"
+          role="slider"
+          style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+          tabindex="0"
+          values="0"
+        />
+      </div>
+    </div>
+    <span
+      aria-hidden="true"
+      class="emotion-3"
+      id="mock-nk-1"
+    >
+      Use the arrow keys to fast forward or rewind
+    </span>
+    <button
+      aria-busy="true"
+      aria-label="Stop"
+      aria-live="polite"
+      aria-pressed="true"
+      class="emotion-4"
+      data-testid="audio-player-play-pause-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-7"
+            fill="currentColor"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="50%"
+              cy="50%"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Audio Player Composable should render default display time label 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  border-radius: 20rem;
+  margin: calc(16px/2 - 8px/2) calc(16px/2);
+  height: 8px;
+  width: 100%;
+}
+
+.emotion-2 {
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  background-color: #3358CC;
+  border-color: #FFFFFF;
+  height: 16px;
+  width: 16px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-2 svg {
+  fill: #C0C0C0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #2B4AAB;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #213A82;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #535353;
+}
+
+.emotion-3 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #AEBFFF;
+  border-radius: 50%;
+  color: #3358CC;
+  margin: 0;
+  cursor: progress;
+}
+
+.emotion-4 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-4 svg {
+  fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-7 {
+  width: 32px;
+  height: 32px;
+  stroke: #3358CC;
+}
+
+.emotion-7 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
+  will-change: transform;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+<section
+    aria-label="Audio Player"
+  >
+    <audio
+      data-testid="audio-element"
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    />
+    <div
+      class="emotion-0"
+      data-testid="audio-slider"
+    >
+      <div
+        class="emotion-1"
+        data-testid="audio-slider-track"
+        style="background: rgb(255, 255, 0);"
+        values="0"
+      >
+        <div
+          aria-describedby="mock-nk-1"
+          aria-label="seek bar"
+          aria-valuemax="1"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          aria-valuetext="Playback time: 0 seconds of 0 seconds"
+          class="emotion-2"
+          data-testid="audio-slider-thumb"
+          draggable="false"
+          role="slider"
+          style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+          tabindex="0"
+          values="0"
+        />
+      </div>
+    </div>
+    <span
+      aria-hidden="true"
+      class="emotion-3"
+      id="mock-nk-1"
+    >
+      Use the arrow keys to fast forward or rewind
+    </span>
+    <button
+      aria-busy="true"
+      aria-label="Play"
+      aria-live="polite"
+      aria-pressed="false"
       class="emotion-4"
       data-testid="audio-player-play-pause-button"
       type="button"
