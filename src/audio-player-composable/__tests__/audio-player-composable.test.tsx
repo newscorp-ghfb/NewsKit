@@ -136,7 +136,7 @@ describe('Audio Player Composable', () => {
   const mediaElement = (window as any).HTMLMediaElement.prototype;
 
   beforeAll(() => {
-    ['duration', 'seekable', 'buffered'].forEach(k => {
+    ['duration', 'seekable', 'buffered', 'paused'].forEach(k => {
       Object.defineProperty(mediaElement, k, {
         writable: true,
       });
@@ -144,8 +144,16 @@ describe('Audio Player Composable', () => {
   });
 
   beforeEach(() => {
-    ['load', 'play', 'pause'].forEach(k => {
-      mediaElement[k] = jest.fn();
+    mediaElement.load = jest.fn(() => {
+      mediaElement.duration = 100;
+    });
+    mediaElement.play = jest.fn(() => {
+      console.log('mock play');
+      mediaElement.paused = false;
+    });
+    mediaElement.pause = jest.fn(() => {
+      console.log('mock pause');
+      mediaElement.paused = true;
     });
     window.open = jest.fn();
     jest.useFakeTimers('legacy');
@@ -446,6 +454,38 @@ describe('Audio Player Composable', () => {
 
   describe('Keyboard shortcuts', () => {
     it.only('should play and pause on press K key', () => {
+      /*
+
+      DO NOT TEST IMPLEMENTATION DETAILS
+      DO NOT TEST IMPLEMENTATION DETAILS
+      DO NOT TEST IMPLEMENTATION DETAILS
+      DO NOT TEST IMPLEMENTATION DETAILS
+      DO NOT TEST IMPLEMENTATION DETAILS
+      DO NOT TEST IMPLEMENTATION DETAILS
+      DO NOT TEST IMPLEMENTATION DETAILS
+      DO NOT TEST IMPLEMENTATION DETAILS
+
+      */
+
+      // let ct = 0;
+      // Object.defineProperty(mediaElement, 'currentTime', {
+      //   get() {
+      //     console.log('getter');
+      //     return ct;
+      //   },
+      //   set(newValue) {
+      //     console.log('setter', newValue);
+      //     ct = newValue;
+      //   },
+      // });
+      // Object.defineProperty(mediaElement, 'duration', {
+      //   value: 6610,
+      // });
+      // mediaElement.onDurationChange = jest.fn(v => {
+      //   console.log('onDurationChange', v);
+      //   ct = v;
+      // });
+
       const {getByTestId} = renderWithTheme(
         AudioPlayerComposable,
         recordedAudioProps,
@@ -454,16 +494,15 @@ describe('Audio Player Composable', () => {
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
       const playPauseButton = getByTestId('audio-player-play-pause-button');
       playPauseButton.focus();
-
-      expect(audioElement.duration).toBe(10);
-
-      fireEvent.canPlay(getByTestId('audio-element'));
+      fireEvent.canPlay(audioElement);
       userEvent.keyboard('k');
-      expect(audioElement.play).toHaveBeenCalled();
       expect(audioElement.paused).toBe(false);
       userEvent.keyboard('k');
-      expect(audioElement.pause).toHaveBeenCalled();
       expect(audioElement.paused).toBe(true);
+
+      userEvent.keyboard('1');
+      // expect(audioElement.currentTime).toBe(6610);
+      expect(audioElement.duration).toBe(6610);
     });
   });
 });

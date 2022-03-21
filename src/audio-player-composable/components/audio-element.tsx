@@ -11,6 +11,7 @@ export const AudioElement = () => {
     onWaiting,
     onEnded,
     onProgress,
+    onPause,
   } = audioEvents!;
 
   return (
@@ -18,6 +19,7 @@ export const AudioElement = () => {
       ref={audioRef}
       autoPlay={autoPlay}
       src={src}
+      onPause={onPause}
       onCanPlay={onCanPlay}
       onDurationChange={onDurationChange}
       onWaiting={onWaiting}

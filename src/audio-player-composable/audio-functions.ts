@@ -243,7 +243,6 @@ AudioFunctionDependencies) => {
   };
 
   const togglePlay = useCallback(() => {
-    console.log(loading, 'Loading');
     if (loading) {
       return;
     }

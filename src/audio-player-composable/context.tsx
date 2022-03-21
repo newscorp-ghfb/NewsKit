@@ -22,6 +22,7 @@ interface AudioPlayerProviderContext {
     onWaiting: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
     onEnded: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
     onProgress: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
+    onPause: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
   };
   // Getter functions
 
