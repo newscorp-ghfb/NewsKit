@@ -62,8 +62,9 @@ export default {
 };
 
 export const AudioPlayer = () => (
-  <>
+  <div data-testid="audio-player-inline">
     <StorybookSubHeading>Audio player inline</StorybookSubHeading>
+
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
       ariaLandmark="audio player inline"
@@ -75,15 +76,17 @@ export const AudioPlayer = () => (
       >
         <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
         <AudioPlayerTimeDisplay
+          data-testid="audio-player-current-time"
           format={({currentTime}) => calculateTime(currentTime)}
         />
         <AudioPlayerSeekBar />
         <AudioPlayerTimeDisplay
+          data-testid="audio-player-duration"
           format={({duration}) => calculateTime(duration)}
         />
       </GridLayout>
     </AudioPlayerComposable>
-  </>
+  </div>
 );
 AudioPlayer.storyName = 'audio-player';
 
@@ -329,7 +332,7 @@ export const AudioPlayerKeyboard = () => (
     <Block marginBlockEnd="space090" />
 
     <StorybookSubHeading>
-      Audio Player Keyboard overriden shortcuts
+      Audio Player Keyboard overrides shortcuts
     </StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"

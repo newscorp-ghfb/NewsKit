@@ -1,3 +1,4 @@
+import React from 'react';
 import {MQ} from '../../../utils';
 
 export type FormatFn = ({
@@ -7,11 +8,10 @@ export type FormatFn = ({
   currentTime: number;
   duration: number;
 }) => string;
-export interface StyledLabelProps {
+export type StyledLabelProps = {
   format?: FormatFn;
-
   overrides?: {
     typographyPreset?: MQ<string>;
     stylePreset?: MQ<string>;
   };
-}
+} & React.HTMLAttributes<HTMLSpanElement>;
