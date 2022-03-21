@@ -91,4 +91,12 @@ set_git_identity:
 	git config --global user.name "Product Platforms Service"
 
 bump_version:
-	echo ${NEW_VERSION}
+	git checkout main
+	git pull
+	yarn config set version-git-message "Bumping to version v%s - [skip ci]"
+	echo "Updating package.json version"
+	yarn version --new-version ${NEW_VERSION}
+	git push
+	echo "Creating and pushing tag to trigger release deployment to prod"
+	git tag -a deploy-release@${NEW_VERSION} -m "Tag to trigger ${NEW_VERSION} deployment to prod"
+	git push origin deploy-release@${NEW_VERSION}
