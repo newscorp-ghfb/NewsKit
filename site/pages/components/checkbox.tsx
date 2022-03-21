@@ -120,7 +120,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="LabelPosition"
+                aria-label="labelposition"
               >
                 In the case of needing a label on the left (start) of a
                 Checkbox, this can be set via the{' '}
@@ -467,7 +467,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="note"
+                aria-label="validation"
                 title="Note"
               >
                 Validation only works if the FormInput Checkbox uses the Form
@@ -838,7 +838,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
                 <Link href="/components/form/">Form</Link> component
               </InlineMessage>
               <Block spaceStack="space050" />
-              <InlineMessage title="Note">
+              <InlineMessage role="region" aria-label="engineer" title="Note">
                 Engineer to check the validation related props at the time of
                 implementation.
               </InlineMessage>
