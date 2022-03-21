@@ -459,7 +459,10 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               the Form.
               <br />
               <br />
-              For more information, please refer to the Form component.
+              <Link href="/components/form/">
+                For more information, please refer to the Form component
+              </Link>
+              .
               <Block spaceStack="space050" />
               <InlineMessage
                 icon={infoIcon}
