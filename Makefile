@@ -90,32 +90,13 @@ set_git_identity:
 	git config --global user.email "ncu-product-platforms@news.co.uk"
 	git config --global user.name "Product Platforms Service"
 
-# UPDATE PACKAGE VERSION BASED ON UPDATE TYPE IN BRANCH TRIGGER NAME
-#TODO to be removed
-create_release_candidate:
-	git fetch origin
-	git checkout -f develop
-	echo "Creating new ${UPDATE_TYPE} version"
-	yarn version --${UPDATE_TYPE}
-	make INITIAL_UPDATE_TYPE=${UPDATE_TYPE} push_release
-
-# TODO need to checkout to main? need for -f flag in there? - pull rather than fetch
 bump_version:
-  # TODO paste back the code from the notes
-	echo ${NEW_VERSION}
-	
-
-#TODO to be removed?
-# CREATE RELEASE BRANCH AND PULL REQUESTS BEFORE DELETING ORIGINAL TRIGGER BRANCH
-push_release:
-	echo "Creating branch $(RELEASE_BRANCH)"
-	git checkout -b $(RELEASE_BRANCH)
-	#We don't care about any changes on main we force the current HEAD onto main
-	echo "Merge our release branch"
-	git merge -s ours origin/main --no-edit
-	git push --tags --set-upstream origin $(RELEASE_BRANCH)
-	echo "Create PR into develop"
-	gh pr create --base develop --head $(RELEASE_BRANCH) -t $(RELEASE_PR_DEVELOP_TITLE) --body ""
-	echo "Create PR into main"
-	gh pr create --base main --head $(RELEASE_BRANCH) -t $(RELEASE_PR_MAIN_TITLE) --body ""
-	git push origin --delete "trigger-release-${INITIAL_UPDATE_TYPE}"
+	git checkout main
+	git pull
+	yarn config set version-git-message "Bumping to version v%s - [skip ci]"
+	echo "Updating package.json version"
+	yarn version --new-version ${NEW_VERSION}
+	git push
+	echo "Creating and pushing tag to trigger release deployment to prod"
+	git tag -a deploy-release@${NEW_VERSION} -m "Tag to trigger ${NEW_VERSION} deployment to prod"
+	git push origin deploy-release@${NEW_VERSION}

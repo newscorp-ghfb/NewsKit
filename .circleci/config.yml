@@ -618,26 +618,6 @@ jobs:
           path: cypress/videos
       - slack/status:
           <<: *slack_status
-
-  # TODO to be removed?
-  create_release_candidate:
-    executor: node
-    steps:
-      - checkout
-      - github-cli/setup
-      - run:
-          name: Set github identity
-          command: make set_git_identity
-      - run:
-          name: bump version
-          command: make create_release_candidate
-      - run:
-          name: export version
-          command: |
-            export VERSION=$(jq -r .version package.json)
-            echo "export VERSION=${VERSION}" >> $BASH_ENV
-      - slack/status:
-          <<: *slack_status
   
   bump_version:
     executor: node
@@ -649,9 +629,11 @@ jobs:
       - run:
           name: Set github identity
           command: make set_git_identity
-      - run:
-          name: bump version
-          command: make bump_version NEW_VERSION=<< parameters.version >>
+      # TODO uncomment and remove 657 AFTER CHECKING THE VERSION NUMBER comes right
+      # - run:
+      #     name: bump version
+      #     command: make bump_version NEW_VERSION=<< parameters.version >>
+      - run: echo "<< parameters.version >>"
 
   publish_npm:
     parameters:
@@ -906,8 +888,8 @@ only_on_deploy_release: &only_on_deploy_release
 
 workflows:
 
-  on_pr:
-    #TODO use positive rather than negative? list all the pattern we accept? fix, bug, feat, etc. Easier to mantain and more readable
+  pr:
+    #TODO use positive rather than negative? list all the pattern we accept? fix, bug, feat, etc. Easier to maintain and more readable
     when:
       and:
           # Won't run when merging into MAIN -  TODO TO BE TESTED
@@ -917,10 +899,6 @@ workflows:
               pattern: "^main$"
               value: << pipeline.git.branch >>
     jobs:
-    # TODO TO REMOVE, was just testing
-      - bump_version:
-          version: release@5.0.2
-    #
       - install_deps
       - install_cypress
       - build_icons:
@@ -1019,7 +997,11 @@ workflows:
           type: approval
       - init_aws:
           context: ncu-product-platforms-context
-      #TODO CORRECT environment?
+      #TODO CORRECT environment? is that right this having env dev and pr in the name?
+      # should this be named with dev? or having pr environment? LIKE THE THIRD deploy terraform has. "pr" and "pr".
+
+      # *asked to james*
+
       - deploy_terraform:
           name: deploy_terraform_dns_pr
           package: dns
@@ -1028,7 +1010,6 @@ workflows:
           environment: dev
           requires:
             - init_aws
-      #TODO CORRECT environment?
       - deploy_terraform:
           name: deploy_terraform_ecr_pr
           package: ecr
@@ -1037,7 +1018,6 @@ workflows:
           tf_env: false
           requires:
             - init_aws
-      #TODO CORRECT environment?
       - deploy_terraform:
           name: deploy_terraform_s3_pr
           package: s3
@@ -1056,9 +1036,6 @@ workflows:
           name: deploy_to_s3
           context: ncu-product-platforms-context
           requires:
-          # TODO was it a mistake? should it be  deploy_terraform_s3_pr instead?(pr)
-          # has been working so far because pr has always finished earlier, BUT looks wrong and should be
-          # linked properly to deploy_terraform_s3_pr instead. _dev does not and did not run on Pr workflow
             - deploy_terraform_s3_pr
             - build_docs_pr
             - build_storybook
@@ -1068,11 +1045,10 @@ workflows:
           requires:
             - deploy_to_s3
   
-  on_main_merge:
+  main:
     when: 
       equal: [ main, << pipeline.git.branch >> ]
     jobs:
-     #TODO add comment for what these are for
       - init_aws:
           context: ncu-product-platforms-context
       - deploy_terraform:
@@ -1089,9 +1065,6 @@ workflows:
           tf_env: false
           requires:
             - init_aws
-    #
-
-    #TODO Are these needed? they will be run in PR too, before merging.
       - install_deps
       - install_cypress
       - build_icons:
@@ -1120,9 +1093,6 @@ workflows:
           requires:
             - build_test_e2e
             - install_cypress
-      
-      #TODO END  needed QUESTIONING
-
       - build_docs:
           name: build_docs_dev
           context: ncu-newskit-site-dev
@@ -1140,8 +1110,7 @@ workflows:
             - build_docs_dev
             - install_cypress
 
-      # TODO the next is approval for deploying newskit package to npm dev right?
-      # nothing related to the website, right?
+      # Jobs for deploying unstable NewsKit version
       - approve_publish_npm_dev:
           type: approval
           requires:
@@ -1157,11 +1126,8 @@ workflows:
           publish_dev: true
           requires:
             - approve_publish_npm_dev
-      # END prev todo
+        # end
 
-      # TODO ARE THE following ones ONLY FOR THE dev env WEBSITE? strictly for
-      #  website: https://newskit.ceng-dev.newsuk.tech/
-      # :storybook: https://newskit-storybook.ceng-dev.newsuk.tech/ ?? in that case is fine. We want only to deploy to dev WHEN MERGING On main. to prod when releasing.
       - build_push_docker_ecr:
           name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context
@@ -1184,7 +1150,8 @@ workflows:
           environment: dev
           requires:
             - eks_flux_deploy_dev
-      # approval for deploying website to prod
+
+      # Approval for optional website deployment to prod
       - approve_publish_docs:
           type: approval
           requires:
@@ -1211,26 +1178,20 @@ workflows:
           environment: prod
           requires:
             - eks_flux_deploy_dev_to_prod
+      # end
 
-
-  on_release_tag:
+  release_tag:
     jobs: 
       - bump_version:
           <<: *only_on_release
-          #TODO replace hardcoded version with << pipeline.git.tag >> plus some logic to just grab the "number" from it or 'major minor etc.'
-          # Not need for release@ for example.
-          # Also, maybe better grab the minor, major, patch keywords and use that one. Less huma errors risk with writing the number correctly.?
-          # depends how we want to syntax it out.
-          version: release@5.0.2
+          version: << pipeline.git.tag >> | cut -f2 -d "v"
   
-  on_deploy_release_tag:
+  deploy_release_tag:
     # Workflow's jobs triggered by bump_version make script, which will create and push the tag.
     jobs:
       - init_aws:
           <<: *only_on_deploy_release
           context: ncu-product-platforms-context
-      #TODO? Run all the "checks/test" jobs, if we feel they need to be re-run.
-      # In theory all the checks have ran on main merge already. The only thing changes is the package json, I would not re run them ?!?!
       - install_deps:
           <<: *only_on_deploy_release
       - install_cypress:
@@ -1269,7 +1230,6 @@ workflows:
           requires:
             - build_test_e2e
             - install_cypress
-      #TODO END  needed QUESTIONING
  
       - build_docs:
           <<: *only_on_deploy_release
@@ -1302,8 +1262,6 @@ workflows:
             - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs_prod
-      #TODO Is the next deploying stable NewsKit npm package !? 
-      # TODO check requirements are correct
       - publish_npm:
           <<: *only_on_deploy_release
           context: ncu-product-platforms-context
@@ -1314,7 +1272,6 @@ workflows:
             - test_e2e_comps
             - test_e2e_docs_prod
             - build_components
-      #TODO deploying website to prod?
       - eks_flux_deploy:
           <<: *only_on_deploy_release
           name: eks_flux_deploy_prod
@@ -1331,5 +1288,4 @@ workflows:
             - eks_flux_deploy_prod
 
     
-#TODO remove MAKE FILE script not used anymore, or jobs/command in the new workflow.
 #TODO remove working_directory
