@@ -142,7 +142,9 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               <br />
               <br />
               The Fieldset can also support other selection controls (inputs)
-              such as the FormInput, FormInput Switch, and FormInput TextField.
+              such as the{' '}
+              <Link href="/components/radio-button/">FormInput</Link>, FormInput
+              Switch, and FormInput TextField.
               <br />
               <br />
               For more information, please refer to the Fieldset component.
@@ -517,14 +519,28 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/checkbox/usage/do-2'),
         },
         {
-          description:
-            'Checkboxes should be used to help users select multiple options from a list or to check or uncheck a single option. Unlike Radio Buttons, users can select multiple options from a list of Checkboxes.',
+          description: (
+            <>
+              Checkboxes should be used to help users select multiple options
+              from a list or to check or uncheck a single option. Unlike{' '}
+              <Link href="/components/radio-button/">Radios</Link>, users can
+              select multiple options from a list of Checkboxes.
+            </>
+          ),
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/checkbox/usage/do-3'),
         },
         {
-          description:
-            'Avoid using the Checkbox component if users can only choose one option from a selection. In this case, use the Radio Button component.',
+          description: (
+            <>
+              Avoid using the Checkbox component if users can only choose one
+              option from a selection. In this case, use the{' '}
+              <Link href="/components/radio-button/">
+                Radio Button component
+              </Link>
+              .
+            </>
+          ),
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/checkbox/usage/dont-1'),
         },
