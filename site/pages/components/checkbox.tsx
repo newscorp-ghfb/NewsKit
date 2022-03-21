@@ -676,7 +676,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           The Checkbox has a range of props that can be used to define an
           appropriate experience for different use cases.
           <Block spaceStack="space080" />
-          <InlineMessage>
+          <InlineMessage role="region" aria-label="apiintro">
             There are two components exported from the package, one for use
             within the{' '}
             <Link href="/components/form/">NewsKit Form component</Link>, and
@@ -830,7 +830,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           propsFooter: (
             <>
               <Block spaceStack="space030" />
-              <InlineMessage title="Note">
+              <InlineMessage role="region" aria-label="propstab" title="Note">
                 The <InlineCode>name</InlineCode> &{' '}
                 <InlineCode>rules</InlineCode> props are set on the form input
                 level. If you want to add validation rules or set the name of
