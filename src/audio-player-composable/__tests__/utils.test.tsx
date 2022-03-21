@@ -1,3 +1,4 @@
+import {calculateTime, formatFunction} from '../components/time-display/utils';
 import {
   formatTrackData,
   seekBarAriaValueText,
@@ -30,6 +31,16 @@ test('formatDurationTime', () => {
   expect(formatDuration(oneHour + oneMinute + 1, oneHour)).toEqual('01:01:01');
   expect(formatDuration(oneHour + tenMinutes + 1)).toEqual('01:10:01');
   expect(formatDuration(oneHour, oneMinute)).toEqual('01:00:00');
+});
+
+test('formatFunction', () => {
+  const currentTime = 3.0;
+  const duration = 372.0;
+  expect(formatFunction({currentTime, duration})).toEqual('00:03/06:12 ');
+});
+
+test('calculateTime', () => {
+  expect(calculateTime(109000.0)).toEqual('30:16:40');
 });
 
 describe('formatTrackData', () => {

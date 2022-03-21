@@ -3,7 +3,8 @@ import composeRefs from '@seznam/compose-react-refs';
 import {Label, LabelProps} from '../label';
 import {TextField} from '../text-field/text-field';
 import {AssistiveText, AssistiveTextProps} from '../assistive-text';
-import {composeEventHandlers, getStatusIcon} from './utils';
+import {getStatusIcon} from './utils';
+import {composeEventHandlers} from '../utils/compose-event-handlers';
 import {Checkbox, CheckboxProps} from '../checkbox';
 import {useReactKeys} from '../utils/hooks';
 import {getToken} from '../utils/get-token';
@@ -21,6 +22,7 @@ import {FormInputContext} from './context';
 import {withOwnTheme} from '../utils/with-own-theme';
 import textFieldDefaults from '../text-field/defaults';
 import assistiveTextDefaults from '../assistive-text/defaults';
+import {RadioButton} from '../radio-button';
 
 const useFormFieldContext = () => useContext(FormInputContext);
 
@@ -244,6 +246,36 @@ export const FormInputCheckbox = React.forwardRef<
 
   return (
     <Checkbox
+      name={name}
+      state={state}
+      size={size}
+      onChange={composeEventHandlers([onChange, onChangeContext])}
+      onBlur={composeEventHandlers([onBlur, onBlurContext])}
+      ref={composeRefs(ref, inputRef)}
+      id={id}
+      aria-describedby={assistiveTextId}
+      {...props}
+    />
+  );
+});
+
+export const FormInputRadioButton = React.forwardRef<
+  HTMLInputElement,
+  CheckboxProps
+>(({children, onChange, onBlur, ...props}, inputRef) => {
+  const {
+    size,
+    name,
+    state,
+    onChange: onChangeContext,
+    onBlur: onBlurContext,
+    ref,
+    id,
+    assistiveTextId,
+  } = useFormFieldContext();
+
+  return (
+    <RadioButton
       name={name}
       state={state}
       size={size}

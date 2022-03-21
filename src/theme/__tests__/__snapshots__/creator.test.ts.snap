@@ -362,6 +362,14 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
+    "controlLabel": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+      },
+    },
     "inputField": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",

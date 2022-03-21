@@ -1,6 +1,7 @@
 export * from './aspect-ratio';
 export * from './assistive-text';
 export * from './audio-player';
+export * from './audio-player-composable';
 export * from './banner';
 export * from './block';
 export * from './button';
@@ -30,6 +31,7 @@ export * from './link';
 export * from './menu';
 export * from './modal';
 export * from './ordered-list';
+export * from './radio-button';
 export * from './screen-reader-only';
 export * from './scroll';
 export * from './select';

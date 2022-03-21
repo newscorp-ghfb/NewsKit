@@ -18,9 +18,10 @@ import {
   FormInputTextField,
   FormInputSelect,
   FormInputCheckbox,
+  FormInputRadioButton,
 } from '../form-input';
-import {composeEventHandlers} from '../utils';
-import {IconFilledAccountBalance, TextFieldSize} from '../..';
+import {composeEventHandlers} from '../../utils/compose-event-handlers';
+import {IconFilledAccountBalance, RadioGroup, TextFieldSize} from '../..';
 import {SelectOption} from '../../select';
 
 let actualRHF: any;
@@ -486,6 +487,12 @@ describe('FormInput', () => {
       <FormInputAssistiveText validationIcon>
         Checkbox assistive text
       </FormInputAssistiveText>
+
+      <RadioGroup name="radio">
+        <FormInputRadioButton label="Option 1" value="1" />
+        <FormInputRadioButton label="Option 2" value="2" />
+        <FormInputRadioButton label="Option 3" value="2" />
+      </RadioGroup>
     </>
   );
 
