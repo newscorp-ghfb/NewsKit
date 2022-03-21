@@ -888,9 +888,8 @@ workflows:
 
   pr:
     when:
-      and:
-        matches:
-          pattern: "^feat\/.*|bugfix\/.*|docs\/.*"
+      matches:
+          pattern: '^feat\/.*|bugfix\/.*|docs\/.*'
           value: << pipeline.git.branch >>
     jobs:
       - install_deps
