@@ -305,7 +305,7 @@ export default [
             id: '/components/form',
             description:
               'Forms allow users to enter and edit text content into a UI.',
-            illustration: 'components/form-illustration',
+            illustration: 'components/form/hero',
           },
           {
             title: 'Share Bar',

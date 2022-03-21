@@ -1,9 +1,9 @@
 import React from 'react';
-import {Path} from '../path';
-import {Rect} from '../rect';
-import {Svg} from '../svg';
+import {Path} from '../../path';
+import {Rect} from '../../rect';
+import {Svg} from '../../svg';
 
-export const FormIllustration: React.FC = () => (
+export const Hero: React.FC = () => (
   <Svg
     width="1490"
     height="838"
@@ -112,4 +112,4 @@ export const FormIllustration: React.FC = () => (
     />
   </Svg>
 );
-export default FormIllustration;
+export default Hero;

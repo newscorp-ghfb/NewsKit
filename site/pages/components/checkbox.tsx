@@ -17,6 +17,103 @@ const infoIcon = (
   />
 );
 
+const commonOverridesRows = [
+  {
+    attribute: 'checkbox.size',
+    type: 'checkboxSize',
+    default: ['Small = sizing050', 'Medium = sizing060', 'Large =sizing070'],
+    description: 'If provided, this overrides the size of the Checkbox input.',
+  },
+  {
+    attribute: 'checkbox.stylePreset',
+    type: 'MQ<string>',
+    default: 'inputField',
+    description:
+      'If provided, overrides the stylePreset of the Checkbox input.',
+  },
+  {
+    attribute: 'checkbox.transitionPreset',
+    type: 'MQ<string>',
+    default: 'backgroundColorChange, borderColorChange',
+    description:
+      'If provided, overrides the transitionPreset of the Checkbox input.',
+  },
+  {
+    attribute: 'checkbox.spaceInline',
+    type: 'MQ<string>',
+    default: [
+      'spaceInline030',
+      'Medium = spaceInline030',
+      'Large = spaceInline040',
+    ],
+    description:
+      'If provided, this overrides the inline space between the Checkbox input and Label.',
+  },
+  {
+    attribute: 'checkbox.spaceStack',
+    type: 'MQ<string>',
+    default: '',
+    description:
+      'If provided, this overrides the stack space applied to the Checkbox.',
+  },
+  {
+    attribute: 'checkbox.icon',
+    type: 'MQ<string>',
+    default: 'check',
+    description: 'If provided, overrides the Checkbox icon.',
+  },
+  {
+    attribute: 'checkbox.icon.size',
+    type: 'MQ<string>',
+    default: 'iconSize020',
+    description: 'If provided, overrides the size of the Checkbox icon.',
+  },
+  {
+    attribute: 'checkbox.icon.stylePreset',
+    type: 'MQ<string>',
+    default: 'inkInverse',
+    description: 'If provided, overrides the stylePreset of the Checkbox icon.',
+  },
+  {
+    attribute: 'feedback.size',
+    type: 'feedbackSize',
+    default: ['Small = sizing070', 'Medium = sizing080', 'Large = sizing090'],
+    description:
+      'If provided, this overrides the size of the feedback element.',
+  },
+  {
+    attribute: 'feedback.stylePreset',
+    type: 'feedbackSize',
+    default: '',
+    description:
+      'If provided, this overrides the stylePreset of the feedback element.',
+  },
+  {
+    attribute: 'feedback.transitionPreset',
+    type: 'MQ<string>',
+    default: 'fade',
+    description:
+      'If provided, overrides the transitionPreset of the feedback element.',
+  },
+  {
+    attribute: 'checkbox.label.typographyPreset',
+    type: 'MQ<string>',
+    default: [
+      'Small = utilityBody020',
+      ' Medium = utilityBody020',
+      'Large = utilityBody030',
+    ],
+    description:
+      'If provided, this overrides the typographyPreset of the Label.',
+  },
+  {
+    attribute: 'checkbox.label.stylePreset',
+    type: 'MQ<string>',
+    default: 'inkBase',
+    description: 'If provided, this overrides the stylePreset of the Label.',
+  },
+];
+
 const CheckboxComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
@@ -38,8 +135,6 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v4.2.0',
-      introducedLink:
-        'https://github.com/newscorp-ghfb/ncu-newskit/releases/tag/v4.2.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/ncu-newskit/blob/develop/src/checkbox/checkbox.tsx',
       figmaUrl:
@@ -721,114 +816,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               description: `Used to pass HTML attributes to the Label.`,
             },
           ],
-          overridesRows: [
-            {
-              attribute: 'checkbox.size',
-              type: 'checkboxSize',
-              default: [
-                'Small = sizing050',
-                'Medium = sizing060',
-                'Large =sizing070',
-              ],
-              description:
-                'If provided, this overrides the size of the Checkbox input.',
-            },
-            {
-              attribute: 'checkbox.stylePreset',
-              type: 'MQ<string>',
-              default: 'inputField',
-              description:
-                'If provided, overrides the stylePreset of the Checkbox input.',
-            },
-            {
-              attribute: 'checkbox.transitionPreset',
-              type: 'MQ<string>',
-              default: 'backgroundColorChange, borderColorChange',
-              description:
-                'If provided, overrides the transitionPreset of the Checkbox input.',
-            },
-            {
-              attribute: 'checkbox.spaceInline',
-              type: 'MQ<string>',
-              default: [
-                'spaceInline030',
-                'Medium = spaceInline030',
-                'Large = spaceInline040',
-              ],
-              description:
-                'If provided, this overrides the inline space between the Checkbox input and Label.',
-            },
-            {
-              attribute: 'checkbox.spaceStack',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'If provided, this overrides the stack space applied to the Checkbox.',
-            },
-            {
-              attribute: 'checkbox.icon',
-              type: 'MQ<string>',
-              default: 'check',
-              description: 'If provided, overrides the Checkbox icon.',
-            },
-            {
-              attribute: 'checkbox.icon.size',
-              type: 'MQ<string>',
-              default: 'iconSize020',
-              description:
-                'If provided, overrides the size of the Checkbox icon.',
-            },
-            {
-              attribute: 'checkbox.icon.stylePreset',
-              type: 'MQ<string>',
-              default: 'inkInverse',
-              description:
-                'If provided, overrides the stylePreset of the Checkbox icon.',
-            },
-            {
-              attribute: 'feedback.size',
-              type: 'feedbackSize',
-              default: [
-                'Small = sizing070',
-                'Medium = sizing080',
-                'Large = sizing090',
-              ],
-              description:
-                'If provided, this overrides the size of the feedback element.',
-            },
-            {
-              attribute: 'feedback.stylePreset',
-              type: 'feedbackSize',
-              default: '',
-              description:
-                'If provided, this overrides the stylePreset of the feedback element.',
-            },
-            {
-              attribute: 'feedback.transitionPreset',
-              type: 'MQ<string>',
-              default: 'fade',
-              description:
-                'If provided, overrides the transitionPreset of the feedback element.',
-            },
-            {
-              attribute: 'checkbox.label.typographyPreset',
-              type: 'MQ<string>',
-              default: [
-                'Small = utilityBody020',
-                ' Medium = utilityBody020',
-                'Large = utilityBody030',
-              ],
-              description:
-                'If provided, this overrides the typographyPreset of the Label.',
-            },
-            {
-              attribute: 'checkbox.label.stylePreset',
-              type: 'MQ<string>',
-              default: 'inkBase',
-              description:
-                'If provided, this overrides the stylePreset of the Label.',
-            },
-          ],
+          overridesRows: commonOverridesRows,
           propsFooter: (
             <>
               <Block spaceStack="space030" />
@@ -893,114 +881,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               description: `Used to pass HTML attributes to the Label.`,
             },
           ],
-          overridesRows: [
-            {
-              attribute: 'checkbox.size',
-              type: 'checkboxSize',
-              default: [
-                'Small = sizing050',
-                'Medium = sizing060',
-                'Large =sizing070',
-              ],
-              description:
-                'If provided, this overrides the size of the Checkbox input.',
-            },
-            {
-              attribute: 'checkbox.stylePreset',
-              type: 'MQ<string>',
-              default: 'inputField',
-              description:
-                'If provided, overrides the stylePreset of the Checkbox input.',
-            },
-            {
-              attribute: 'checkbox.transitionPreset',
-              type: 'MQ<string>',
-              default: 'backgroundColorChange, borderColorChange',
-              description:
-                'If provided, overrides the transitionPreset of the Checkbox input.',
-            },
-            {
-              attribute: 'checkbox.spaceInline',
-              type: 'MQ<string>',
-              default: [
-                'spaceInline030',
-                'Medium = spaceInline030',
-                'Large = spaceInline040',
-              ],
-              description:
-                'If provided, this overrides the inline space between the Checkbox input and Label.',
-            },
-            {
-              attribute: 'checkbox.spaceStack',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'If provided, this overrides the stack space applied to the Checkbox.',
-            },
-            {
-              attribute: 'checkbox.icon',
-              type: 'MQ<string>',
-              default: 'check',
-              description: 'If provided, overrides the Checkbox icon.',
-            },
-            {
-              attribute: 'checkbox.icon.size',
-              type: 'MQ<string>',
-              default: 'iconSize020',
-              description:
-                'If provided, overrides the size of the Checkbox icon.',
-            },
-            {
-              attribute: 'checkbox.icon.stylePreset',
-              type: 'MQ<string>',
-              default: 'inkInverse',
-              description:
-                'If provided, overrides the stylePreset of the Checkbox icon.',
-            },
-            {
-              attribute: 'feedback.size',
-              type: 'feedbackSize',
-              default: [
-                'Small = sizing070',
-                'Medium = sizing080',
-                'Large = sizing090',
-              ],
-              description:
-                'If provided, this overrides the size of the feedback element.',
-            },
-            {
-              attribute: 'feedback.stylePreset',
-              type: 'feedbackSize',
-              default: '',
-              description:
-                'If provided, this overrides the stylePreset of the feedback element.',
-            },
-            {
-              attribute: 'feedback.transitionPreset',
-              type: 'MQ<string>',
-              default: 'fade',
-              description:
-                'If provided, overrides the transitionPreset of the feedback element.',
-            },
-            {
-              attribute: 'checkbox.label.typographyPreset',
-              type: 'MQ<string>',
-              default: [
-                'Small = utilityBody020',
-                ' Medium = utilityBody020',
-                'Large = utilityBody030',
-              ],
-              description:
-                'If provided, this overrides the typographyPreset of the Label.',
-            },
-            {
-              attribute: 'checkbox.label.stylePreset',
-              type: 'MQ<string>',
-              default: 'inkBase',
-              description:
-                'If provided, this overrides the stylePreset of the Label.',
-            },
-          ],
+          overridesRows: commonOverridesRows,
         },
       ],
     }}
