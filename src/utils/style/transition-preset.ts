@@ -118,18 +118,26 @@ const getMergedTransitionPresets = (token: TransitionToken[], theme: Theme) => {
 const setDurationZero = (
   transitionPreset: Record<string, TransitionPresetStyles>,
 ) => {
-  const newObj = {} as Record<string, TransitionPresetStyles>;
+  const presetWithoutDuration = {} as Record<string, TransitionPresetStyles>;
   Object.keys(transitionPreset).map(key => {
     const stateObj = transitionPreset[key];
-    newObj[key] = {...stateObj};
+    presetWithoutDuration[key] = {...stateObj};
 
-    if (newObj[key].transitionDuration) {
-      newObj[key].transitionDuration = '0ms';
+    if ('transitionDuration' in presetWithoutDuration[key]) {
+      presetWithoutDuration[key].transitionDuration = '0ms';
     }
-    return newObj;
+    return presetWithoutDuration;
   });
-  return newObj;
+  return presetWithoutDuration;
 };
+
+const NO_PREFERENCE = '(prefers-reduced-motion: no-preference)';
+const REDUCED = '(prefers-reduced-motion: reduce)';
+const NO_PREFERENCE_MQ = `@media screen and ${NO_PREFERENCE}`;
+const REDUCED_MQ = `@media screen and ${REDUCED}`;
+
+const combineMediaQuery = (layoutMQ: string, motionMQ: string): string =>
+  `${layoutMQ} and ${motionMQ}`;
 
 export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
   token: MQ<TransitionToken> | MQ<TransitionToken[]>,
@@ -149,38 +157,41 @@ export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
           theme: props.theme,
         });
 
+        const mediaQueryReduced = combineMediaQuery(mediaQuery, REDUCED);
+        const mediaQueryNoPreference = combineMediaQuery(
+          mediaQuery,
+          NO_PREFERENCE,
+        );
+
         if (Array.isArray(transitionPresetToken)) {
           const mergedTransitionPresets = getMergedTransitionPresets(
             transitionPresetToken as TransitionToken[],
             props.theme,
           );
 
-          acc[mediaQuery] = {
-            '@media screen and (prefers-reduced-motion: no-preference)': getTransitionPresetValueFromTheme(
-              mergedTransitionPresets,
-              componentClassName,
-            ),
-            '@media screen and (prefers-reduced-motion: reduce)': getTransitionPresetValueFromTheme(
-              setDurationZero(mergedTransitionPresets),
-              componentClassName,
-            ),
-          };
+          acc[mediaQueryNoPreference] = getTransitionPresetValueFromTheme(
+            mergedTransitionPresets,
+            componentClassName,
+          );
+          acc[mediaQueryReduced] = getTransitionPresetValueFromTheme(
+            setDurationZero(mergedTransitionPresets),
+            componentClassName,
+          );
         } else {
           const transitionPreset = unifyTransition(
             props.theme,
             transitionPresetToken,
           );
 
-          acc[mediaQuery] = {
-            '@media screen and (prefers-reduced-motion: no-preference)': getTransitionPresetValueFromTheme(
-              transitionPreset,
-              componentClassName,
-            ),
-            '@media screen and (prefers-reduced-motion: reduce)': getTransitionPresetValueFromTheme(
-              setDurationZero(transitionPreset),
-              componentClassName,
-            ),
-          };
+          acc[mediaQueryNoPreference] = getTransitionPresetValueFromTheme(
+            transitionPreset,
+            componentClassName,
+          );
+
+          acc[mediaQueryReduced] = getTransitionPresetValueFromTheme(
+            setDurationZero(transitionPreset),
+            componentClassName,
+          );
         }
         return acc;
       },
@@ -196,11 +207,11 @@ export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
 
     if (Object.keys(mergedTransitionPresets).length) {
       return {
-        '@media screen and (prefers-reduced-motion: no-preference)': getTransitionPresetValueFromTheme(
+        [NO_PREFERENCE_MQ]: getTransitionPresetValueFromTheme(
           mergedTransitionPresets,
           componentClassName,
         ),
-        '@media screen and (prefers-reduced-motion: reduce)': getTransitionPresetValueFromTheme(
+        [REDUCED_MQ]: getTransitionPresetValueFromTheme(
           setDurationZero(mergedTransitionPresets),
           componentClassName,
         ),
@@ -216,11 +227,11 @@ export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
 
   if (transitionPreset) {
     return {
-      '@media screen and (prefers-reduced-motion: no-preference)': getTransitionPresetValueFromTheme(
+      [NO_PREFERENCE_MQ]: getTransitionPresetValueFromTheme(
         transitionPreset,
         componentClassName,
       ),
-      '@media screen and (prefers-reduced-motion: reduce)': getTransitionPresetValueFromTheme(
+      [REDUCED_MQ]: getTransitionPresetValueFromTheme(
         setDurationZero(transitionPreset),
         componentClassName,
       ),

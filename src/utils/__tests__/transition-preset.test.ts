@@ -555,117 +555,45 @@ describe('getTransitionPresetFromTheme', () => {
     });
 
     expect(result).toEqual({
-      '@media screen and (max-width: 499px)': {
-        '@media screen and (prefers-reduced-motion: no-preference)': {
-          transitionDuration: '2000ms',
-          transitionProperty: 'color',
-          transitionTimingFunction: 'linear',
-        },
-        '@media screen and (prefers-reduced-motion: reduce)': {
-          transitionDuration: '0ms',
-          transitionProperty: 'color',
-          transitionTimingFunction: 'linear',
-        },
+      '@media screen and (max-width: 499px) and (prefers-reduced-motion: no-preference)': {
+        transitionProperty: 'color',
+        transitionDuration: '2000ms',
+        transitionTimingFunction: 'linear',
       },
-      '@media screen and (min-width: 1500px)': {
-        '@media screen and (prefers-reduced-motion: no-preference)': {
-          transitionDuration: '3000ms',
-          transitionProperty: 'height',
-          transitionTimingFunction: 'linear',
-        },
-        '@media screen and (prefers-reduced-motion: reduce)': {
-          transitionDuration: '0ms',
-          transitionProperty: 'height',
-          transitionTimingFunction: 'linear',
-        },
+      '@media screen and (max-width: 499px) and (prefers-reduced-motion: reduce)': {
+        transitionProperty: 'color',
+        transitionDuration: '0ms',
+        transitionTimingFunction: 'linear',
       },
-      '@media screen and (min-width: 500px) and (max-width: 799px)': {
-        '@media screen and (prefers-reduced-motion: no-preference)': {
-          transitionDuration: '2000ms',
-          transitionProperty: 'width',
-          transitionTimingFunction: 'linear',
-        },
-        '@media screen and (prefers-reduced-motion: reduce)': {
-          transitionDuration: '0ms',
-          transitionProperty: 'width',
-          transitionTimingFunction: 'linear',
-        },
+      '@media screen and (min-width: 500px) and (max-width: 799px) and (prefers-reduced-motion: no-preference)': {
+        transitionProperty: 'width',
+        transitionDuration: '2000ms',
+        transitionTimingFunction: 'linear',
       },
-      '@media screen and (min-width: 800px) and (max-width: 1499px)': {
-        '@media screen and (prefers-reduced-motion: no-preference)': {
-          transitionDuration: '3000ms',
-          transitionProperty: 'background-colour',
-          transitionTimingFunction: 'linear',
-        },
-        '@media screen and (prefers-reduced-motion: reduce)': {
-          transitionDuration: '0ms',
-          transitionProperty: 'background-colour',
-          transitionTimingFunction: 'linear',
-        },
+      '@media screen and (min-width: 500px) and (max-width: 799px) and (prefers-reduced-motion: reduce)': {
+        transitionProperty: 'width',
+        transitionDuration: '0ms',
+        transitionTimingFunction: 'linear',
       },
-    });
-  });
-
-  test('return array of trasntion string tokens based on breakpoints', () => {
-    const mqTransitions = {
-      xs: ['colorTransitionCustom', 'fadeTransitionCustom'],
-      sm: ['widthTransitionCustom', 'fadeTransitionCustom'],
-      md: ['backgroundTransitionCustom', 'fadeTransitionCustom'],
-      xl: ['heightTransitionCustom', 'fadeTransitionCustom'],
-    };
-
-    const result = getTransitionPresetFromTheme(mqTransitions)({
-      theme,
-    });
-
-    expect(result).toEqual({
-      '@media screen and (max-width: 499px)': {
-        '@media screen and (prefers-reduced-motion: no-preference)': {
-          transitionDuration: '2000ms, 4000ms',
-          transitionProperty: 'color, opacity',
-          transitionTimingFunction: 'linear, linear',
-        },
-        '@media screen and (prefers-reduced-motion: reduce)': {
-          transitionDuration: '0ms',
-          transitionProperty: 'color, opacity',
-          transitionTimingFunction: 'linear, linear',
-        },
+      '@media screen and (min-width: 800px) and (max-width: 1499px) and (prefers-reduced-motion: no-preference)': {
+        transitionProperty: 'background-colour',
+        transitionDuration: '3000ms',
+        transitionTimingFunction: 'linear',
       },
-      '@media screen and (min-width: 1500px)': {
-        '@media screen and (prefers-reduced-motion: no-preference)': {
-          transitionDuration: '3000ms, 4000ms',
-          transitionProperty: 'height, opacity',
-          transitionTimingFunction: 'linear, linear',
-        },
-        '@media screen and (prefers-reduced-motion: reduce)': {
-          transitionDuration: '0ms',
-          transitionProperty: 'height, opacity',
-          transitionTimingFunction: 'linear, linear',
-        },
+      '@media screen and (min-width: 800px) and (max-width: 1499px) and (prefers-reduced-motion: reduce)': {
+        transitionProperty: 'background-colour',
+        transitionDuration: '0ms',
+        transitionTimingFunction: 'linear',
       },
-      '@media screen and (min-width: 500px) and (max-width: 799px)': {
-        '@media screen and (prefers-reduced-motion: no-preference)': {
-          transitionDuration: '2000ms, 4000ms',
-          transitionProperty: 'width, opacity',
-          transitionTimingFunction: 'linear, linear',
-        },
-        '@media screen and (prefers-reduced-motion: reduce)': {
-          transitionDuration: '0ms',
-          transitionProperty: 'width, opacity',
-          transitionTimingFunction: 'linear, linear',
-        },
+      '@media screen and (min-width: 1500px) and (prefers-reduced-motion: no-preference)': {
+        transitionProperty: 'height',
+        transitionDuration: '3000ms',
+        transitionTimingFunction: 'linear',
       },
-      '@media screen and (min-width: 800px) and (max-width: 1499px)': {
-        '@media screen and (prefers-reduced-motion: no-preference)': {
-          transitionDuration: '3000ms, 4000ms',
-          transitionProperty: 'background-colour, opacity',
-          transitionTimingFunction: 'linear, linear',
-        },
-        '@media screen and (prefers-reduced-motion: reduce)': {
-          transitionDuration: '0ms',
-          transitionProperty: 'background-colour, opacity',
-          transitionTimingFunction: 'linear, linear',
-        },
+      '@media screen and (min-width: 1500px) and (prefers-reduced-motion: reduce)': {
+        transitionProperty: 'height',
+        transitionDuration: '0ms',
+        transitionTimingFunction: 'linear',
       },
     });
   });
@@ -685,31 +613,26 @@ describe('getTransitionPresetFromTheme', () => {
     const result = getTransitionPresetFromTheme(mqTransitions)({
       theme,
     });
-
     expect(result).toEqual({
-      '@media screen and (max-width: 799px)': {
-        '@media screen and (prefers-reduced-motion: no-preference)': {
-          transitionProperty: 'color',
-          transitionDuration: '5000ms',
-          transitionTimingFunction: 'linear',
-        },
-        '@media screen and (prefers-reduced-motion: reduce)': {
-          transitionProperty: 'color',
-          transitionDuration: '0ms',
-          transitionTimingFunction: 'linear',
-        },
+      '@media screen and (max-width: 799px) and (prefers-reduced-motion: no-preference)': {
+        transitionProperty: 'color',
+        transitionDuration: '5000ms',
+        transitionTimingFunction: 'linear',
       },
-      '@media screen and (min-width: 800px)': {
-        '@media screen and (prefers-reduced-motion: no-preference)': {
-          transitionProperty: 'background-colour',
-          transitionDuration: '5000ms',
-          transitionTimingFunction: 'linear',
-        },
-        '@media screen and (prefers-reduced-motion: reduce)': {
-          transitionProperty: 'background-colour',
-          transitionDuration: '0ms',
-          transitionTimingFunction: 'linear',
-        },
+      '@media screen and (max-width: 799px) and (prefers-reduced-motion: reduce)': {
+        transitionProperty: 'color',
+        transitionDuration: '0ms',
+        transitionTimingFunction: 'linear',
+      },
+      '@media screen and (min-width: 800px) and (prefers-reduced-motion: no-preference)': {
+        transitionProperty: 'background-colour',
+        transitionDuration: '5000ms',
+        transitionTimingFunction: 'linear',
+      },
+      '@media screen and (min-width: 800px) and (prefers-reduced-motion: reduce)': {
+        transitionProperty: 'background-colour',
+        transitionDuration: '0ms',
+        transitionTimingFunction: 'linear',
       },
     });
   });
@@ -737,29 +660,25 @@ describe('getTransitionPresetFromTheme', () => {
     });
 
     expect(result).toEqual({
-      '@media screen and (max-width: 799px)': {
-        '@media screen and (prefers-reduced-motion: no-preference)': {
-          transitionProperty: 'color, opacity',
-          transitionDuration: '5000ms, 6000ms',
-          transitionTimingFunction: 'linear, linear',
-        },
-        '@media screen and (prefers-reduced-motion: reduce)': {
-          transitionProperty: 'color, opacity',
-          transitionDuration: '0ms',
-          transitionTimingFunction: 'linear, linear',
-        },
+      '@media screen and (max-width: 799px) and (prefers-reduced-motion: no-preference)': {
+        transitionProperty: 'color, opacity',
+        transitionDuration: '5000ms, 6000ms',
+        transitionTimingFunction: 'linear, linear',
       },
-      '@media screen and (min-width: 800px)': {
-        '@media screen and (prefers-reduced-motion: no-preference)': {
-          transitionProperty: 'background-colour, opacity',
-          transitionDuration: '5000ms, 6000ms',
-          transitionTimingFunction: 'linear, linear',
-        },
-        '@media screen and (prefers-reduced-motion: reduce)': {
-          transitionProperty: 'background-colour, opacity',
-          transitionDuration: '0ms',
-          transitionTimingFunction: 'linear, linear',
-        },
+      '@media screen and (max-width: 799px) and (prefers-reduced-motion: reduce)': {
+        transitionProperty: 'color, opacity',
+        transitionDuration: '0ms',
+        transitionTimingFunction: 'linear, linear',
+      },
+      '@media screen and (min-width: 800px) and (prefers-reduced-motion: no-preference)': {
+        transitionProperty: 'background-colour, opacity',
+        transitionDuration: '5000ms, 6000ms',
+        transitionTimingFunction: 'linear, linear',
+      },
+      '@media screen and (min-width: 800px) and (prefers-reduced-motion: reduce)': {
+        transitionProperty: 'background-colour, opacity',
+        transitionDuration: '0ms',
+        transitionTimingFunction: 'linear, linear',
       },
     });
   });

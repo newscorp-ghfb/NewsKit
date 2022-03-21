@@ -1,5 +1,7 @@
-import {Theme, TransitionToken} from '../theme';
+import {BreakpointKeys, Theme, TransitionToken} from '../theme';
 import {getToken} from './get-token';
+import {getMediaQueryFromTheme, isResponsive} from './responsive-helpers';
+import {MQ} from './style';
 import {ThemeProp} from './style-types';
 import {isArrayLikeObject, unifyTransition} from './style/utils';
 
@@ -109,13 +111,45 @@ export const getTransitionDurationFromTheme = (
   return extractDurationFromPreset(tokensArray, props.theme);
 };
 
+// getTransitionDuration is passed to timeout in CSSTransitions which defines the entire timeframe of the transition.
+// Reduced motion is not added here because it has no visual changes and might cause issues in rendering transitions.
 export const getTransitionDuration = (
   defaultPath?: string,
   overridePath?: string | false,
 ) => (props: ThemeProp & {overrides?: unknown}) => {
-  const token = getToken(props, defaultPath, overridePath, 'transitionPreset');
+  const token = getToken(
+    props,
+    defaultPath,
+    overridePath,
+    'transitionPreset',
+  ) as MQ<TransitionToken> | MQ<TransitionToken>[];
 
   if (!token) return {enter: 0, exit: 0, appear: 0} as TimeoutType;
+
+  if (isResponsive(token, props.theme.breakpoints)) {
+    return Object.entries(token).reduce(
+      (acc, [key, transitionPresetToken], index, arr) => {
+        const nextKey = arr[index + 1] ? arr[index + 1][0] : undefined;
+
+        const mediaQuery = getMediaQueryFromTheme(
+          key as BreakpointKeys,
+          nextKey as BreakpointKeys,
+        )({
+          theme: props.theme,
+        });
+
+        if (isArrayLikeObject(transitionPresetToken)) {
+          const tokensArray = Object.values(transitionPresetToken) as string[];
+          acc[mediaQuery] = extractDurationFromPreset(tokensArray, props.theme);
+        } else {
+          const tokensArray = [transitionPresetToken];
+          acc[mediaQuery] = extractDurationFromPreset(tokensArray, props.theme);
+        }
+        return acc;
+      },
+      {} as {[index: string]: TimeoutType},
+    );
+  }
 
   const tokensArray: string[] = isArrayLikeObject(token)
     ? Object.values(token)

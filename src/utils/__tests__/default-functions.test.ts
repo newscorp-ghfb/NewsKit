@@ -717,33 +717,29 @@ describe('get component defaults functions', () => {
       const result = getTransitionPreset('transitionsWithBreakpoints')(props);
 
       expect(result).toEqual({
-        '@media screen and (max-width: 767px)': {
-          '@media screen and (prefers-reduced-motion: no-preference)': {
-            transitionProperty:
-              'css-props-for-default-token, css-props-for-additional-token',
-            transitionDuration: '200ms, 400ms',
-            transitionTimingFunction: 'linear, linear',
-          },
-          '@media screen and (prefers-reduced-motion: reduce)': {
-            transitionProperty:
-              'css-props-for-default-token, css-props-for-additional-token',
-            transitionDuration: '0ms',
-            transitionTimingFunction: 'linear, linear',
-          },
+        '@media screen and (max-width: 767px) and (prefers-reduced-motion: no-preference)': {
+          transitionProperty:
+            'css-props-for-default-token, css-props-for-additional-token',
+          transitionDuration: '200ms, 400ms',
+          transitionTimingFunction: 'linear, linear',
         },
-        '@media screen and (min-width: 768px)': {
-          '@media screen and (prefers-reduced-motion: no-preference)': {
-            transitionProperty:
-              'css-props-for-override-token, css-props-for-additional-token',
-            transitionDuration: '300ms, 400ms',
-            transitionTimingFunction: 'linear, linear',
-          },
-          '@media screen and (prefers-reduced-motion: reduce)': {
-            transitionProperty:
-              'css-props-for-override-token, css-props-for-additional-token',
-            transitionDuration: '0ms',
-            transitionTimingFunction: 'linear, linear',
-          },
+        '@media screen and (max-width: 767px) and (prefers-reduced-motion: reduce)': {
+          transitionProperty:
+            'css-props-for-default-token, css-props-for-additional-token',
+          transitionDuration: '0ms',
+          transitionTimingFunction: 'linear, linear',
+        },
+        '@media screen and (min-width: 768px) and (prefers-reduced-motion: no-preference)': {
+          transitionProperty:
+            'css-props-for-override-token, css-props-for-additional-token',
+          transitionDuration: '300ms, 400ms',
+          transitionTimingFunction: 'linear, linear',
+        },
+        '@media screen and (min-width: 768px) and (prefers-reduced-motion: reduce)': {
+          transitionProperty:
+            'css-props-for-override-token, css-props-for-additional-token',
+          transitionDuration: '0ms',
+          transitionTimingFunction: 'linear, linear',
         },
       });
     });
