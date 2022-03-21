@@ -16,6 +16,7 @@ export const AudioPlayerComposable = ({
   /* istanbul ignore next */
   live = false,
   ariaLandmark,
+  ...props
 }: AudioPlayerComposableProps) => {
   const currentTimeRef = useRef(0);
 
@@ -119,18 +120,18 @@ export const AudioPlayerComposable = ({
     getPlayPauseButtonProps,
     getTimeDisplayProps,
     getSeekBarProps,
-
-    // Internal for AudioElement
-    audioRef,
-    audioEvents,
-    src,
-    autoPlay,
   };
 
   return (
     <section aria-label={ariaLandmark || 'Audio Player'}>
       <AudioPlayerProvider value={value}>
-        <AudioElement />
+        <AudioElement
+          audioRef={audioRef}
+          audioEvents={audioEvents}
+          src={src}
+          autoPlay={autoPlay}
+          {...props}
+        />
         {children}
       </AudioPlayerProvider>
     </section>

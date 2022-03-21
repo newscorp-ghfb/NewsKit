@@ -1,3 +1,5 @@
+import {SyntheticEvent} from 'react';
+
 export interface AudioFunctionDependencies {
   onPreviousTrack: () => void;
   onNextTrack: () => void;
@@ -30,10 +32,27 @@ export interface TrackControlProps {
   disablePreviousTrack?: boolean;
 }
 
-export interface AudioPlayerComposableProps {
-  children: React.ReactNode;
+export interface AudioElementProps
+  extends Omit<React.AudioHTMLAttributes<HTMLAudioElement>, 'controls'> {
   src: string;
+  audioRef?: React.RefObject<HTMLAudioElement>;
   autoPlay?: boolean;
+  audioEvents?: {
+    onPlay: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
+    onPause: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
+    onWaiting: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
+    onCanPlay: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
+    onEnded: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
+    onDurationChange: ({
+      target,
+    }: SyntheticEvent<HTMLAudioElement, Event>) => void;
+    onTimeUpdate: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
+    onProgress: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
+  };
+}
+
+export interface AudioPlayerComposableProps extends AudioElementProps {
+  children: React.ReactNode;
   live?: boolean;
   ariaLandmark?: string;
 }
@@ -44,7 +63,7 @@ export enum AudioEvents {
   Waiting = 'onWaiting',
   CanPlay = 'onCanPlay',
   Ended = 'onEnded',
-  VolumeChange = 'onVolumeChange',
+  // VolumeChange = 'onVolumeChange',
   DurationChange = 'onDurationChange',
   TimeUpdate = 'onTimeUpdate',
   Progress = 'onProgress',

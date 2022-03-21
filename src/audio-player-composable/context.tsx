@@ -1,27 +1,14 @@
 import {ReactJSXElement} from '@emotion/react/types/jsx-namespace';
-import React, {createContext, SyntheticEvent, useContext} from 'react';
+import {createContext, useContext} from 'react';
 import {FormatFn} from './components/time-display/types';
 
 interface AudioPlayerProviderContext {
   id: string;
-  src: string;
-  autoPlay?: boolean;
-  // Internal
-  audioRef: React.RefObject<HTMLAudioElement>;
   playing: boolean;
   canPause: boolean;
   loading: boolean;
   togglePlay: () => void;
-  audioEvents: {
-    onCanPlay: () => void;
-    onDurationChange: ({
-      target,
-    }: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onTimeUpdate: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onWaiting: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onEnded: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onProgress: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-  };
+
   // Getter functions
 
   getPlayPauseButtonProps: (args: {
