@@ -850,6 +850,7 @@ exports[`Meta renders with mandatory props 1`] = `
               <a
                 class="emotion-23"
                 href="/"
+                target="_blank"
               >
                 <span
                   class="emotion-24"
@@ -1016,6 +1017,7 @@ exports[`Meta renders with mandatory props 1`] = `
                   <a
                     class="emotion-23"
                     href="/"
+                    target="_blank"
                   >
                     <span
                       class="emotion-24"
@@ -1492,9 +1494,11 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
 }
 
-.emotion-25 {
+.emotion-26 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -1506,19 +1510,36 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
 }
 
-.emotion-25::before {
+.emotion-26::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-25::after {
+.emotion-26::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-26 {
+.emotion-28 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-28.emotion-28 {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-30 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1539,7 +1560,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(-16px/2);
 }
 
-.emotion-27 {
+.emotion-31 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1551,7 +1572,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   align-self: stretch;
 }
 
-.emotion-28 {
+.emotion-32 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1590,35 +1611,35 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   cursor: pointer;
 }
 
-.emotion-28 svg {
+.emotion-32 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-28 svg {
+.emotion-32 svg {
   fill: #2E2E2E;
 }
 
-.emotion-28:hover:not(:disabled) {
+.emotion-32:hover:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #2E2E2E;
 }
 
-.emotion-28:active:not(:disabled) {
+.emotion-32:active:not(:disabled) {
   background-color: #CCCCCC;
   border-color: #0A0A0A;
 }
 
-.emotion-28:disabled {
+.emotion-32:disabled {
   border-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-28:disabled svg {
+.emotion-32:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-29 {
+.emotion-33 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1639,7 +1660,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-30 {
+.emotion-34 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1648,7 +1669,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-31 {
+.emotion-35 {
   fill: #2E2E2E;
   transition-property: fill;
   transition-duration: 200ms;
@@ -1657,7 +1678,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: inline-block;
 }
 
-.emotion-33 {
+.emotion-37 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -1668,19 +1689,19 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: inline-block;
 }
 
-.emotion-33::before {
+.emotion-37::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-33::after {
+.emotion-37::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-34 {
+.emotion-38 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1689,11 +1710,11 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(16px/2);
 }
 
-.emotion-41 {
+.emotion-45 {
   margin-bottom: 24px;
 }
 
-.emotion-42 {
+.emotion-46 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -1704,36 +1725,36 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-43 {
+  .emotion-47 {
     display: block;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-43 {
+  .emotion-47 {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-43 {
+  .emotion-47 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-43 {
+  .emotion-47 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-43 {
+  .emotion-47 {
     display: none;
   }
 }
 
-.emotion-45 {
+.emotion-49 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1745,7 +1766,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   align-self: stretch;
 }
 
-.emotion-46 {
+.emotion-50 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -1755,7 +1776,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-46 {
+  .emotion-50 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 50%;
@@ -1766,17 +1787,17 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-46 {
+  .emotion-50 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-60 {
+.emotion-64 {
   margin-right: 32px;
 }
 
-.emotion-61 {
+.emotion-65 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1797,19 +1818,38 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-61:before,
-.emotion-61:after {
+.emotion-65:before,
+.emotion-65:after {
   content: '';
   display: block;
 }
 
-.emotion-71 {
+.emotion-72 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-75 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-72 {
+.emotion-76 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -1827,36 +1867,36 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-72 {
+  .emotion-76 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-72 {
+  .emotion-76 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-72 {
+  .emotion-76 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-72 {
+  .emotion-76 {
     margin: -24px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-72 {
+  .emotion-76 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-73 {
+.emotion-77 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -1866,7 +1906,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-73 {
+  .emotion-77 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -1877,7 +1917,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-73 {
+  .emotion-77 {
     padding: 0 12px;
     margin-top: 24px;
   }
@@ -1974,15 +2014,43 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
             >
               <a
                 class="emotion-23"
-                href="/"
+                href="https://github.com/newscorp-ghfb/ncu-newskit/releases/tag/v0.19.0"
+                target="_blank"
               >
                 <span
                   class="emotion-24"
                 >
                   <span
-                    class="emotion-25"
+                    class="emotion-11"
                   >
-                    v0.1
+                    <span
+                      class="emotion-26"
+                    >
+                      v0.1
+                    </span>
+                  </span>
+                  <span
+                    class="emotion-11"
+                  >
+                    <svg
+                      class="emotion-28 emotion-29"
+                      fill="currentColor"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        External link
+                      </title>
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                      />
+                    </svg>
                   </span>
                 </span>
               </a>
@@ -1990,26 +2058,26 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
           </div>
         </div>
         <div
-          class="emotion-26"
+          class="emotion-30"
         >
           <div
-            class="emotion-27"
+            class="emotion-31"
           >
             <a
-              class="emotion-28"
+              class="emotion-32"
               data-testid="buttonLink"
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
               <div
-                class="emotion-29"
+                class="emotion-33"
               >
                 <div
-                  class="emotion-30"
+                  class="emotion-34"
                 >
                   <svg
                     aria-hidden="true"
-                    class="emotion-31"
+                    class="emotion-35"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2021,10 +2089,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   </svg>
                 </div>
                 <div
-                  class="emotion-30"
+                  class="emotion-34"
                 >
                   <span
-                    class="emotion-33"
+                    class="emotion-37"
                   >
                     View code
                   </span>
@@ -2033,23 +2101,23 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
             </a>
           </div>
           <div
-            class="emotion-34"
+            class="emotion-38"
           >
             <a
-              class="emotion-28"
+              class="emotion-32"
               data-testid="buttonLink"
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
               <div
-                class="emotion-29"
+                class="emotion-33"
               >
                 <div
-                  class="emotion-30"
+                  class="emotion-34"
                 >
                   <svg
                     aria-hidden="true"
-                    class="emotion-31"
+                    class="emotion-35"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2077,10 +2145,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   </svg>
                 </div>
                 <div
-                  class="emotion-30"
+                  class="emotion-34"
                 >
                   <span
-                    class="emotion-33"
+                    class="emotion-37"
                   >
                     View Design
                   </span>
@@ -2091,25 +2159,25 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
         </div>
       </div>
       <div
-        class="emotion-41"
+        class="emotion-45"
       />
       <hr
         aria-hidden="true"
-        class="emotion-42"
+        class="emotion-46"
         data-testid="divider"
       />
     </div>
     <div
-      class="emotion-43"
+      class="emotion-47"
     >
       <div
         class="emotion-18"
       >
         <div
-          class="emotion-45"
+          class="emotion-49"
         >
           <div
-            class="emotion-46"
+            class="emotion-50"
           >
             <div
               class="emotion-4"
@@ -2156,7 +2224,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
             </div>
           </div>
           <div
-            class="emotion-46"
+            class="emotion-50"
           >
             <div
               class="emotion-3"
@@ -2167,10 +2235,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                 data-testid="divider"
               />
               <div
-                class="emotion-60"
+                class="emotion-64"
               />
               <div
-                class="emotion-61"
+                class="emotion-65"
               />
               <div
                 class="emotion-18"
@@ -2194,12 +2262,13 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   <a
                     class="emotion-23"
                     href="/"
+                    target="_blank"
                   >
                     <span
-                      class="emotion-24"
+                      class="emotion-72"
                     >
                       <span
-                        class="emotion-25"
+                        class="emotion-26"
                       >
                         v0.1
                       </span>
@@ -2211,40 +2280,40 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
           </div>
         </div>
         <div
-          class="emotion-45"
+          class="emotion-49"
         >
           <div
-            class="emotion-71"
+            class="emotion-75"
           >
             <div
-              class="emotion-72"
+              class="emotion-76"
             >
               <div
-                class="emotion-73"
+                class="emotion-77"
               >
                 <hr
                   aria-hidden="true"
-                  class="emotion-42"
+                  class="emotion-46"
                   data-testid="divider"
                 />
                 <div
-                  class="emotion-41"
+                  class="emotion-45"
                 />
                 <a
-                  class="emotion-28"
+                  class="emotion-32"
                   data-testid="buttonLink"
                   href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
                   <div
-                    class="emotion-29"
+                    class="emotion-33"
                   >
                     <div
-                      class="emotion-30"
+                      class="emotion-34"
                     >
                       <svg
                         aria-hidden="true"
-                        class="emotion-31"
+                        class="emotion-35"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
@@ -2256,10 +2325,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                       </svg>
                     </div>
                     <div
-                      class="emotion-30"
+                      class="emotion-34"
                     >
                       <span
-                        class="emotion-33"
+                        class="emotion-37"
                       >
                         View code
                       </span>
@@ -2268,23 +2337,23 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                 </a>
               </div>
               <div
-                class="emotion-73"
+                class="emotion-77"
               >
                 <a
-                  class="emotion-28"
+                  class="emotion-32"
                   data-testid="buttonLink"
                   href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
                   <div
-                    class="emotion-29"
+                    class="emotion-33"
                   >
                     <div
-                      class="emotion-30"
+                      class="emotion-34"
                     >
                       <svg
                         aria-hidden="true"
-                        class="emotion-31"
+                        class="emotion-35"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
@@ -2312,10 +2381,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                       </svg>
                     </div>
                     <div
-                      class="emotion-30"
+                      class="emotion-34"
                     >
                       <span
-                        class="emotion-33"
+                        class="emotion-37"
                       >
                         View Design
                       </span>
@@ -2323,11 +2392,11 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   </div>
                 </a>
                 <div
-                  class="emotion-41"
+                  class="emotion-45"
                 />
                 <hr
                   aria-hidden="true"
-                  class="emotion-42"
+                  class="emotion-46"
                   data-testid="divider"
                 />
               </div>
