@@ -17,6 +17,31 @@ const infoIcon = (
   />
 );
 
+const commonPropsRows = (type?: string) => [
+  {
+    name: 'size',
+    type: ['small', 'medium', 'large'],
+    default: 'medium',
+    description: `Defines the size of the ${type} Checkbox.`,
+  },
+  {
+    name: 'state',
+    type: ['valid', 'invalid', 'disabled'],
+    description: `If true, renders the ${type} Checkbox in a valid, invalid, or disabled state. It can be submitted within a form.`,
+  },
+  {
+    name: 'labelPosition',
+    type: ['start', 'end'],
+    default: 'end',
+    description: `Defines the position of the Label.`,
+  },
+  {
+    name: 'labelAttributes',
+    type: 'React.LabelHTMLAttributes<HTMLLabelElement>',
+    description: `Used to pass HTML attributes to the Label.`,
+  },
+];
+
 const commonOverridesRows = [
   {
     attribute: 'checkbox.size',
@@ -792,30 +817,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               <Link href="/components/form/">NewsKit Form component.</Link>
             </>
           ),
-          propsRows: [
-            {
-              name: 'size',
-              type: ['small', 'medium', 'large'],
-              default: 'medium',
-              description: `Defines the size of the FormInput Checkbox.`,
-            },
-            {
-              name: 'state',
-              type: ['valid', 'invalid', 'disabled'],
-              description: `If true, renders the FormInput Checkbox in a valid, invalid, or disabled state. It can be submitted within a form.`,
-            },
-            {
-              name: 'labelPosition',
-              type: ['start', 'end'],
-              default: 'end',
-              description: `Defines the position of the Label.`,
-            },
-            {
-              name: 'labelAttributes',
-              type: 'React.LabelHTMLAttributes<HTMLLabelElement>',
-              description: `Used to pass HTML attributes to the Label.`,
-            },
-          ],
+          propsRows: commonPropsRows('FormInput'),
           overridesRows: commonOverridesRows,
           propsFooter: (
             <>
@@ -842,12 +844,6 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             'The Checkbox has a range of props that can be used to define an appropriate experience for different use cases. Use this component as a controlled component, for instance where you have a custom validation mechanism.',
           propsRows: [
             {
-              name: 'size',
-              type: ['small', 'medium', 'large'],
-              default: 'medium',
-              description: `Defines the size of the Checkbox.`,
-            },
-            {
               name: 'name',
               type: 'string',
               description: (
@@ -864,22 +860,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
                 </>
               ),
             },
-            {
-              name: 'state',
-              type: ['valid', 'invalid', 'disabled'],
-              description: `If true, renders the Checkbox in a valid, invalid, or disabled state. It can be submitted within a form.`,
-            },
-            {
-              name: 'labelPosition',
-              type: ['start', 'end'],
-              default: 'end',
-              description: `Defines the position of the Label.`,
-            },
-            {
-              name: 'labelAttributes',
-              type: 'React.LabelHTMLAttributes<HTMLLabelElement>',
-              description: `Used to pass HTML attributes to the Label.`,
-            },
+            ...commonPropsRows(),
           ],
           overridesRows: commonOverridesRows,
         },
