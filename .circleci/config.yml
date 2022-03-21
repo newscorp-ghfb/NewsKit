@@ -899,6 +899,8 @@ workflows:
               pattern: "^main$"
               value: << pipeline.git.branch >>
     jobs:
+      - bump_version:
+          version: v5.0.7 | cut -f2 -d "v"
       - install_deps
       - install_cypress
       - build_icons:
