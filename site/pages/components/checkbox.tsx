@@ -38,6 +38,8 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v4.2.0',
+      introducedLink:
+        'https://github.com/newscorp-ghfb/ncu-newskit/releases/tag/v4.2.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/ncu-newskit/blob/develop/src/checkbox/checkbox.tsx',
       figmaUrl:

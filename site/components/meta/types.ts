@@ -13,6 +13,7 @@ export enum MetaFlagStylePresets {
 export interface MetaProps {
   status: MetaStatus;
   introduced: string;
+  introducedLink?: string;
   codeUrl: string;
   figmaUrl?: string;
 }
