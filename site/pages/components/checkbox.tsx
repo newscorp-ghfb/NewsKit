@@ -39,9 +39,9 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v4.2.0',
       codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/releases/tag/v4.2.0',
+        'https://github.com/newscorp-ghfb/ncu-newskit/blob/develop/src/checkbox/checkbox.tsx',
       figmaUrl:
-        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components',
+        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=3712%3A75609',
     }}
     anatomy={{
       introduction:
@@ -155,8 +155,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     states={{
-      introduction:
-        'Tab items have states including, base, hover, active, disabled, and focus. They can be displayed with both, base or selected. By default, Tabs have one Tab item in a selected state.',
+      introduction: 'The Checkbox has the following states:',
       layout: '3-span',
       cards: [
         {
@@ -291,7 +290,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             <>
               The Checkbox in an valid state changes style when the Checkbox
               selection conforms to a specific format eg.updating preferences in
-              a <Link href="/components/form/"> Form</Link>.The Form component
+              a <Link href="/components/form/">Form</Link>. The Form component
               is used to apply validation behaviour.The style of the label
               remains the same.
             </>
@@ -421,8 +420,14 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'Transition',
-          description:
-            'When the Checkbox is checked, the ‘check’ icon fades up in the centre of the Checkbox, and the backgroundColor, and borderColor transition simultaneously.',
+          description: (
+            <>
+              When the Checkbox is checked, the ‘check’ icon fades up in the
+              centre of the Checkbox, and the{' '}
+              <InlineCode>backgroundColor</InlineCode>, and{' '}
+              <InlineCode>borderColor</InlineCode> transition simultaneously.
+            </>
+          ),
           media: getIllustrationComponent(
             'components/checkbox/behaviours/transition',
           ),
@@ -579,10 +584,16 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           The Checkbox has the following accessibility considerations:
           <Block spaceStack="space100" />
           <ContentText title="Grouping Checkboxes" titleAs="span">
-            It is recommended to group Checkboxes and other related elements
-            such as Labels and Assistive Text together using the Fieldset
-            component, with a title attributed to the elements that appear in
-            the Fieldset, called a Legend.
+            It is recommended to{' '}
+            <Link
+              target="_blank"
+              href="https://www.w3.org/TR/wai-aria-1.2/#group"
+            >
+              group
+            </Link>{' '}
+            Checkboxes and other related elements such as Labels and Assistive
+            Text together using the Fieldset component, with a title attributed
+            to the elements that appear in the Fieldset, called a Legend.
           </ContentText>
         </>
       ),
@@ -618,7 +629,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             attribute: 'ariaLabel',
             value: 'string',
             description:
-              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with a Tab Item in a Tabs. Example: ariaLabel="view component overrides”',
+              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the Checkbox',
             userSupplied: true,
           },
           {
@@ -830,7 +841,19 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
             {
               name: 'name',
               type: 'string',
-              description: `If provided, defines name of the input element, used when submitting an HTML form.`,
+              description: (
+                <>
+                  If provided, defines name of the input element, used when
+                  submitting an{' '}
+                  <Link
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefname"
+                  >
+                    HTML form
+                  </Link>
+                  .
+                </>
+              ),
             },
             {
               name: 'state',
@@ -967,7 +990,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
       usage: true,
       accessibility: true,
       performance: false,
-      seo: false,
+      seo: null,
       props: true,
       uiKit: true,
       design: true,
@@ -975,7 +998,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
     }}
     related={{
       introduction: '',
-      related: ['Form'],
+      related: ['Form', 'Radio Button'],
     }}
   />
 );
