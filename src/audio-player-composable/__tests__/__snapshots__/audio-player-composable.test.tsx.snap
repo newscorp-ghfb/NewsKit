@@ -356,6 +356,68 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   display: inline-block;
 }
 
+.emotion-9 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #3358CC;
+  border-radius: 50%;
+  color: #FFFFFF;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-9 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-9 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-9:hover:not(:disabled) {
+  background-color: #2B4AAB;
+}
+
+.emotion-9:active:not(:disabled) {
+  background-color: #213A82;
+}
+
+.emotion-9:disabled {
+  background-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-9:disabled svg {
+  fill: #C0C0C0;
+}
+
 <section
     aria-label="Audio Player"
   >
@@ -424,6 +486,79 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
             />
             <path
               d="M8 5v14l11-7z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+    <button
+      aria-label="Fast forward for 10 seconds"
+      class="emotion-9"
+      data-testid="audio-player-forward-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-7 emotion-8"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="24"
+              width="24"
+            />
+            <path
+              d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+            />
+            <polygon
+              points="10.86,15.94 10.86,11.67 10.77,11.67 9,12.3 9,12.99 10.01,12.68 10.01,15.94"
+            />
+            <path
+              d="M12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+    <button
+      aria-label="Rewind 10 seconds"
+      class="emotion-9"
+      data-testid="audio-player-replay-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-7 emotion-8"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="24"
+              width="24"
+            />
+            <path
+              d="M11.99 5V1l-5 5 5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6h-2c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"
+            />
+            <path
+              d="M10.89 16h-.85v-3.26l-1.01.31v-.69l1.77-.63h.09V16zM15.17 14.24c0 .32-.03.6-.1.82s-.17.42-.29.57-.28.26-.45.33-.37.1-.59.1-.41-.03-.59-.1-.33-.18-.46-.33-.23-.34-.3-.57-.11-.5-.11-.82v-.74c0-.32.03-.6.1-.82s.17-.42.29-.57.28-.26.45-.33.37-.1.59-.1.41.03.59.1.33.18.46.33.23.34.3.57.11.5.11.82v.74zm-.85-.86c0-.19-.01-.35-.04-.48s-.07-.23-.12-.31-.11-.14-.19-.17-.16-.05-.25-.05-.18.02-.25.05-.14.09-.19.17-.09.18-.12.31-.04.29-.04.48v.97c0 .19.01.35.04.48s.07.24.12.32.11.14.19.17.16.05.25.05.18-.02.25-.05.14-.09.19-.17.09-.19.11-.32.04-.29.04-.48v-.97z"
             />
           </svg>
         </div>
@@ -1871,6 +2006,80 @@ exports[`Audio Player Composable should render default display time label 1`] = 
   animation: rotate 1s linear infinite;
 }
 
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #3358CC;
+  border-radius: 50%;
+  color: #FFFFFF;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #2B4AAB;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #213A82;
+}
+
+.emotion-8:disabled {
+  background-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-8:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-11 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  vertical-align: unset;
+  display: inline-block;
+}
+
 <section
     aria-label="Audio Player"
   >
@@ -1937,6 +2146,79 @@ exports[`Audio Player Composable should render default display time label 1`] = 
             <circle
               cx="50%"
               cy="50%"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+    <button
+      aria-label="Fast forward for 10 seconds"
+      class="emotion-8"
+      data-testid="audio-player-forward-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-11 emotion-12"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="24"
+              width="24"
+            />
+            <path
+              d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+            />
+            <polygon
+              points="10.86,15.94 10.86,11.67 10.77,11.67 9,12.3 9,12.99 10.01,12.68 10.01,15.94"
+            />
+            <path
+              d="M12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+    <button
+      aria-label="Rewind 10 seconds"
+      class="emotion-8"
+      data-testid="audio-player-replay-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-11 emotion-12"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="24"
+              width="24"
+            />
+            <path
+              d="M11.99 5V1l-5 5 5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6h-2c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"
+            />
+            <path
+              d="M10.89 16h-.85v-3.26l-1.01.31v-.69l1.77-.63h.09V16zM15.17 14.24c0 .32-.03.6-.1.82s-.17.42-.29.57-.28.26-.45.33-.37.1-.59.1-.41-.03-.59-.1-.33-.18-.46-.33-.23-.34-.3-.57-.11-.5-.11-.82v-.74c0-.32.03-.6.1-.82s.17-.42.29-.57.28-.26.45-.33.37-.1.59-.1.41.03.59.1.33.18.46.33.23.34.3.57.11.5.11.82v.74zm-.85-.86c0-.19-.01-.35-.04-.48s-.07-.23-.12-.31-.11-.14-.19-.17-.16-.05-.25-.05-.18.02-.25.05-.14.09-.19.17-.09.18-.12.31-.04.29-.04.48v.97c0 .19.01.35.04.48s.07.24.12.32.11.14.19.17.16.05.25.05.18-.02.25-.05.14-.09.19-.17.09-.19.11-.32.04-.29.04-.48v-.97z"
             />
           </svg>
         </div>
@@ -2135,6 +2417,80 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   animation: rotate 1s linear infinite;
 }
 
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #3358CC;
+  border-radius: 50%;
+  color: #FFFFFF;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #2B4AAB;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #213A82;
+}
+
+.emotion-8:disabled {
+  background-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-8:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-11 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  vertical-align: unset;
+  display: inline-block;
+}
+
 <section
     aria-label="Audio Player"
   >
@@ -2201,6 +2557,79 @@ exports[`Audio Player Composable should render with no errors 1`] = `
             <circle
               cx="50%"
               cy="50%"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+    <button
+      aria-label="Fast forward for 10 seconds"
+      class="emotion-8"
+      data-testid="audio-player-forward-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-11 emotion-12"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="24"
+              width="24"
+            />
+            <path
+              d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+            />
+            <polygon
+              points="10.86,15.94 10.86,11.67 10.77,11.67 9,12.3 9,12.99 10.01,12.68 10.01,15.94"
+            />
+            <path
+              d="M12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+    <button
+      aria-label="Rewind 10 seconds"
+      class="emotion-8"
+      data-testid="audio-player-replay-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-11 emotion-12"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="24"
+              width="24"
+            />
+            <path
+              d="M11.99 5V1l-5 5 5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6h-2c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"
+            />
+            <path
+              d="M10.89 16h-.85v-3.26l-1.01.31v-.69l1.77-.63h.09V16zM15.17 14.24c0 .32-.03.6-.1.82s-.17.42-.29.57-.28.26-.45.33-.37.1-.59.1-.41-.03-.59-.1-.33-.18-.46-.33-.23-.34-.3-.57-.11-.5-.11-.82v-.74c0-.32.03-.6.1-.82s.17-.42.29-.57.28-.26.45-.33.37-.1.59-.1.41.03.59.1.33.18.46.33.23.34.3.57.11.5.11.82v.74zm-.85-.86c0-.19-.01-.35-.04-.48s-.07-.23-.12-.31-.11-.14-.19-.17-.16-.05-.25-.05-.18.02-.25.05-.14.09-.19.17-.09.18-.12.31-.04.29-.04.48v.97c0 .19.01.35.04.48s.07.24.12.32.11.14.19.17.16.05.25.05.18-.02.25-.05.14-.09.19-.17.09-.19.11-.32.04-.29.04-.48v-.97z"
             />
           </svg>
         </div>

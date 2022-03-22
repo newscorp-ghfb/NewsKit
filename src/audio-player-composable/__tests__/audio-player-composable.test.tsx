@@ -11,6 +11,8 @@ import {AudioPlayerTimeDisplay} from '../components/time-display/time-display';
 import {formatFunction} from '../components/time-display/utils';
 import {compileTheme, createTheme} from '../../theme';
 import seekBarStylePresets from '../components/seek-bar/style-presets';
+import {AudioPlayerForwardButton} from '../components/forward-button/forward-button';
+import {AudioPlayerReplayButton} from '../components/replay-button/replay-button';
 
 const version = '0.10.0';
 
@@ -23,6 +25,16 @@ const recordedAudioProps: AudioPlayerComposableProps = {
       <AudioPlayerPlayPauseButton
         onClick={() => {
           console.log('customer click function');
+        }}
+      />
+      <AudioPlayerForwardButton
+        onClick={() => {
+          console.log('customer click function for forward');
+        }}
+      />
+      <AudioPlayerReplayButton
+        onClick={() => {
+          console.log('customer click function for replay');
         }}
       />
     </>
@@ -174,6 +186,7 @@ describe('Audio Player Composable', () => {
 
     const audioElement = getByTestId('audio-element') as HTMLAudioElement;
     const playPauseButton = getByTestId('audio-player-play-pause-button');
+    // const forwardButton = getByTestId('audio-player-forward');
 
     fireEvent.canPlay(getByTestId('audio-element'));
     fireEvent.click(playPauseButton);
@@ -181,7 +194,30 @@ describe('Audio Player Composable', () => {
     fireEvent.click(playPauseButton);
     expect(audioElement.pause).toHaveBeenCalled();
   });
+  it('should skip 10 seconds with forwad or replay button button click', () => {
+    const {getByTestId} = renderWithTheme(
+      AudioPlayerComposable,
+      recordedAudioProps,
+    );
 
+    const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+    fireEvent.durationChange(audioElement, {
+      target: {
+        duration: 6610,
+      },
+    });
+    const forwardButton = getByTestId('audio-player-forward-button');
+    const replayButton = getByTestId('audio-player-replay-button');
+    fireEvent.canPlay(getByTestId('audio-element'));
+    fireEvent.click(getByTestId('audio-player-play-pause-button'));
+    expect(audioElement.play).toHaveBeenCalled();
+    // fireEvent.canPlay(getByTestId('audio-element'));
+    fireEvent.click(forwardButton);
+    fireEvent.click(forwardButton);
+    expect(audioElement.currentTime).toEqual(20);
+    fireEvent.click(replayButton);
+    expect(audioElement.currentTime).toEqual(10);
+  });
   it('should phasing playPause button loading state as expected', () => {
     const {getByTestId} = renderWithTheme(
       AudioPlayerComposable,
