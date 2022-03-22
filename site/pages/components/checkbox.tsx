@@ -239,11 +239,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
                 The Checkbox has a label that appears to the right (end) of a
                 Checkbox.
               </Block>
-              <InlineMessage
-                icon={infoIcon}
-                role="region"
-                aria-label="Checkbox label position"
-              >
+              <InlineMessage icon={infoIcon}>
                 In the case of needing a label on the left (start) of a
                 Checkbox, this can be set via the{' '}
                 <InlineCode>labelPosition</InlineCode> prop.
