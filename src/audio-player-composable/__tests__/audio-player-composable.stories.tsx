@@ -86,36 +86,6 @@ export const AudioPlayer = () => (
 );
 AudioPlayer.storyName = 'audio-player';
 
-export const AudioPlayerWithCustomEventHandler = () => (
-  <>
-    <StorybookSubHeading>Audio player inline</StorybookSubHeading>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player inline"
-      onPlay={() => {
-        console.log('Custom event handler');
-      }}
-    >
-      <GridLayout
-        columns="auto auto 1fr auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
-        <AudioPlayerTimeDisplay
-          format={({currentTime}) => calculateTime(currentTime)}
-        />
-        <AudioPlayerSeekBar />
-        <AudioPlayerTimeDisplay
-          format={({duration}) => calculateTime(duration)}
-        />
-      </GridLayout>
-    </AudioPlayerComposable>
-  </>
-);
-AudioPlayerWithCustomEventHandler.storyName =
-  'audio-player-with-custom-event-handler';
-
 export const AudioPlayPauseButton = () => (
   <AudioPlayerComposable
     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
