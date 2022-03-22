@@ -3,6 +3,7 @@ import {InlineMessage, Block} from 'newskit';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
+import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 
 const commonPropsRows = [
   {
@@ -161,7 +162,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       },
       introduction: `Radio Buttons are selection controls that are typically used in forms. They are used for exclusive selection - allowing users to select one of multiple options in a Radio Group.`,
     }}
-    componentDefaultsKey="select"
+    componentDefaultsKey="radio"
     meta={{
       status: MetaStatus.Beta,
       introduced: 'v5.3',
@@ -169,6 +170,41 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/radio-button',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=5918%3A132664',
+    }}
+    anatomy={{
+      introduction:
+        'The Radio Button contains one required element and three optional elements.',
+      media: getIllustrationComponent('components/radio-button/anatomy'),
+      rows: [
+        {
+          name: 'Radio Input (unchecked)',
+          description:
+            'Selection control (input) that is the unselected state of the Radio Button input',
+          component: ['Block'],
+          optional: undefined,
+        },
+        {
+          name: 'Radio Input  (checked)',
+          description:
+            'The Icon that appears within the Radio Button input when in a checked state',
+          component: 'Icon',
+          optional: true,
+        },
+        {
+          name: 'Feedback',
+          description:
+            'Non-interactive background element for visual feedback on hover',
+          component: 'Block',
+          optional: true,
+        },
+        {
+          name: 'Label',
+          description:
+            'The Label is the text attributed to the Radio Button that provides context',
+          component: 'Text Block',
+          optional: true,
+        },
+      ],
     }}
     componentAPI={{
       introduction: (
