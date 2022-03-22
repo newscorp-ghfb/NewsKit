@@ -1,5 +1,3 @@
-import {SyntheticEvent} from 'react';
-
 export interface AudioFunctionDependencies {
   onPreviousTrack: () => void;
   onNextTrack: () => void;
@@ -34,26 +32,15 @@ export interface TrackControlProps {
 
 export interface AudioElementProps
   extends Omit<React.AudioHTMLAttributes<HTMLAudioElement>, 'controls'> {
-  src: string;
   audioRef?: React.RefObject<HTMLAudioElement>;
-  autoPlay?: boolean;
-  audioEvents?: {
-    onPlay: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onPause: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onWaiting: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onCanPlay: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onEnded: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onDurationChange: ({
-      target,
-    }: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onTimeUpdate: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onProgress: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-  };
 }
 
-export interface AudioPlayerComposableProps extends AudioElementProps {
+export interface AudioPlayerComposableProps
+  extends Omit<React.AudioHTMLAttributes<HTMLAudioElement>, 'controls'> {
   children: React.ReactNode;
   live?: boolean;
+  autoPlay?: boolean;
+  src: string;
   ariaLandmark?: string;
 }
 

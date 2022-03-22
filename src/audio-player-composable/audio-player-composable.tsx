@@ -5,7 +5,7 @@ import {IconFilledStop} from '../icons/filled/material/icon-filled-stop';
 import {AudioElement} from './components/audio-element';
 import {useAudioFunctions} from './audio-functions';
 import {AudioPlayerProvider} from './context';
-import {AudioPlayerComposableProps} from './types';
+import {AudioEvents, AudioPlayerComposableProps} from './types';
 import {formatFunction} from './components/time-display/utils';
 
 export const AudioPlayerComposable = ({
@@ -122,15 +122,29 @@ export const AudioPlayerComposable = ({
     getSeekBarProps,
   };
 
+  const eventHandler = (eventName: AudioEvents) => (
+    e: React.SyntheticEvent<HTMLAudioElement, Event>,
+  ) => {
+    const eventCallback = props[eventName];
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+    eventCallback ? eventCallback(e) : audioEvents![eventName](e);
+  };
+
   return (
     <section aria-label={ariaLandmark || 'Audio Player'}>
       <AudioPlayerProvider value={value}>
         <AudioElement
           audioRef={audioRef}
-          audioEvents={audioEvents}
           src={src}
           autoPlay={autoPlay}
-          {...props}
+          onCanPlay={eventHandler(AudioEvents.CanPlay)}
+          onWaiting={eventHandler(AudioEvents.Waiting)}
+          onPlay={eventHandler(AudioEvents.Play)}
+          onPause={eventHandler(AudioEvents.Pause)}
+          onEnded={eventHandler(AudioEvents.Ended)}
+          onDurationChange={eventHandler(AudioEvents.DurationChange)}
+          onTimeUpdate={eventHandler(AudioEvents.TimeUpdate)}
+          onProgress={eventHandler(AudioEvents.Progress)}
         />
         {children}
       </AudioPlayerProvider>
