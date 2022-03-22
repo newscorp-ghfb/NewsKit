@@ -9,7 +9,7 @@ slack_status: &slack_status
   channel: '#nuk-pp-newskit'
   mentions: 'newskitdevs'
   fail_only: true
-  only_for_branches: 'develop,main'
+  only_for_branches: 'main'
 
 cypress_defaults: &cypress_defaults
   environment:
@@ -697,8 +697,6 @@ jobs:
             currentBranch=$(git symbolic-ref --short -q HEAD)
             if [ << parameters.docker_version >> = release ]; then
               export DOCKER_TAG=$(node -p "require('./package.json').version")
-            elif [ $currentBranch = develop ]; then    
-              export DOCKER_TAG=$(node -p "require('./package.json').version")-$CIRCLE_SHA1
             else 
               export DOCKER_TAG=${CIRCLE_SHA1}
             fi
