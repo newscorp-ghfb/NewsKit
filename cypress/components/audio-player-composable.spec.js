@@ -55,10 +55,10 @@ const TEST_DATA = {
 };
 
 describe('audio player composable', () => {
+  const parentTestIDSelector = '[data-testid="audio-player-inline"]';
+
   beforeEach(() => {
     cy.visit('?name=audio-player-composable');
-
-    const parentTestIDSelector = '[data-testid="audio-player-inline"]';
 
     cy.get(`${parentTestIDSelector}`).as('container');
 
@@ -101,10 +101,10 @@ describe('audio player composable', () => {
 
     // move to the begining
     cy.get('@audioSliderTrack').click('left');
-    checkTime(0);
+    checkTime(1);
 
     // move to 4th minute
-    cy.get('@audioSliderTrack').click(510, 4);
+    cy.get('@audioSliderTrack').click(448, 4);
     checkTime(4 * 60);
   });
 
@@ -112,12 +112,12 @@ describe('audio player composable', () => {
     // start playing
     cy.get('@togglePlay').click();
     // move to the end
-    cy.get('@audioSliderTrack').click(791, 4);
+    cy.get('@audioSliderTrack').click(695, 4);
     checkTime(TEST_DATA.durationInSeconds);
     isPaused();
   });
 
-  it('toggle when press K key', () => {
+  it('keyboard: toggle when press K key', () => {
     cy.get('@togglePlay').focus();
     cy.get('@togglePlay').trigger('keyup', {key: 'k'});
     isPlaying();
@@ -126,16 +126,16 @@ describe('audio player composable', () => {
     isPaused();
   });
 
-  it('toggle when press Space key', () => {
+  it('keyboard: toggle when press Space key', () => {
     cy.get('@audioSliderThumb').focus();
-    cy.get('@togglePlay').trigger('keyup', {key: ' '});
+    cy.get('@audioSliderThumb').trigger('keyup', {key: ' '});
     isPlaying();
 
-    cy.get('@togglePlay').trigger('keyup', {key: ' '});
+    cy.get('@audioSliderThumb').trigger('keyup', {key: ' '});
     isPaused();
   });
 
-  it.only('should move track using 0, Start and End key', () => {
+  it('keyboard: move track using 0, Start and End key', () => {
     cy.get('@togglePlay').focus();
     cy.get('@togglePlay').trigger('keyup', {key: 'End'});
     checkTime(TEST_DATA.durationInSeconds);
@@ -148,5 +148,17 @@ describe('audio player composable', () => {
 
     cy.get('@togglePlay').trigger('keyup', {key: '0'});
     checkTime(0);
+  });
+
+  it('keyboard: Space key does not work with active elements', () => {
+    isPaused();
+    cy.get(`${parentTestIDSelector} [data-testid="buttonLink"]`).as('link');
+    cy.get('@link').focus();
+    cy.get('@link').trigger('keyup', {
+      force: true,
+      position: 'topLeft',
+      key: ' ',
+    });
+    isPaused();
   });
 });

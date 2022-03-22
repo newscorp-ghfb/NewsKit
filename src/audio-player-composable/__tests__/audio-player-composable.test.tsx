@@ -12,6 +12,7 @@ import {AudioPlayerTimeDisplay} from '../components/time-display/time-display';
 import {formatFunction} from '../components/time-display/utils';
 import {compileTheme, createTheme} from '../../theme';
 import seekBarStylePresets from '../components/seek-bar/style-presets';
+import {Button} from '../../button';
 
 const version = '0.10.0';
 
@@ -26,6 +27,8 @@ const recordedAudioProps: AudioPlayerComposableProps = {
           console.log('customer click function');
         }}
       />
+      <AudioPlayerTimeDisplay />
+      <Button href="/">read more</Button>
     </>
   ),
 };
@@ -148,11 +151,9 @@ describe('Audio Player Composable', () => {
       mediaElement.duration = 100;
     });
     mediaElement.play = jest.fn(() => {
-      console.log('mock play');
       mediaElement.paused = false;
     });
     mediaElement.pause = jest.fn(() => {
-      console.log('mock pause');
       mediaElement.paused = true;
     });
     window.open = jest.fn();
@@ -186,10 +187,9 @@ describe('Audio Player Composable', () => {
 
     fireEvent.canPlay(getByTestId('audio-element'));
     fireEvent.click(playPauseButton);
-    expect(audioElement.play).toHaveBeenCalled();
     expect(audioElement.paused).toBe(false);
+
     fireEvent.click(playPauseButton);
-    expect(audioElement.pause).toHaveBeenCalled();
     expect(audioElement.paused).toBe(true);
   });
 
@@ -278,20 +278,6 @@ describe('Audio Player Composable', () => {
     expect(audioElement.pause).not.toHaveBeenCalled();
   });
 
-  it('should render correctly when in autoplay', () => {
-    const {asFragment} = renderWithTheme(
-      AudioPlayerComposable,
-      recordedAudioPropsAutoplay,
-    );
-    expect(asFragment()).toMatchSnapshot();
-  });
-  it('should render default display time label', () => {
-    const {asFragment} = renderWithTheme(
-      AudioPlayerComposable,
-      recordedAudioProps,
-    );
-    expect(asFragment()).toMatchSnapshot();
-  });
   it('renders with TimeDisplay label overrides', () => {
     const myCustomTheme = createTheme({
       name: 'my-custom-seek-bar-theme',
@@ -453,39 +439,7 @@ describe('Audio Player Composable', () => {
   });
 
   describe('Keyboard shortcuts', () => {
-    it.only('should play and pause on press K key', () => {
-      /*
-
-      DO NOT TEST IMPLEMENTATION DETAILS
-      DO NOT TEST IMPLEMENTATION DETAILS
-      DO NOT TEST IMPLEMENTATION DETAILS
-      DO NOT TEST IMPLEMENTATION DETAILS
-      DO NOT TEST IMPLEMENTATION DETAILS
-      DO NOT TEST IMPLEMENTATION DETAILS
-      DO NOT TEST IMPLEMENTATION DETAILS
-      DO NOT TEST IMPLEMENTATION DETAILS
-
-      */
-
-      // let ct = 0;
-      // Object.defineProperty(mediaElement, 'currentTime', {
-      //   get() {
-      //     console.log('getter');
-      //     return ct;
-      //   },
-      //   set(newValue) {
-      //     console.log('setter', newValue);
-      //     ct = newValue;
-      //   },
-      // });
-      // Object.defineProperty(mediaElement, 'duration', {
-      //   value: 6610,
-      // });
-      // mediaElement.onDurationChange = jest.fn(v => {
-      //   console.log('onDurationChange', v);
-      //   ct = v;
-      // });
-
+    it('should play and pause on press K key', () => {
       const {getByTestId} = renderWithTheme(
         AudioPlayerComposable,
         recordedAudioProps,
@@ -499,10 +453,20 @@ describe('Audio Player Composable', () => {
       expect(audioElement.paused).toBe(false);
       userEvent.keyboard('k');
       expect(audioElement.paused).toBe(true);
+    });
 
-      userEvent.keyboard('1');
-      // expect(audioElement.currentTime).toBe(6610);
-      expect(audioElement.duration).toBe(6610);
+    it('should NOT play on space key when focus on an active element', () => {
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        recordedAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const link = getByTestId('buttonLink');
+      link.focus();
+      fireEvent.canPlay(audioElement);
+      userEvent.keyboard(' ');
+      expect(audioElement.paused).toBe(true);
     });
   });
 });
