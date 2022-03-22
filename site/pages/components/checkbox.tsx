@@ -242,7 +242,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="labelposition"
+                aria-label="Checkbox label position"
               >
                 In the case of needing a label on the left (start) of a
                 Checkbox, this can be set via the{' '}
