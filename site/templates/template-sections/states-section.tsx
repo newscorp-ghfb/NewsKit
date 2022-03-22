@@ -27,7 +27,11 @@ export const StatesSection: React.FC<StatesSectionProps> = ({
       {notice && (
         <>
           <Block spaceStack="space070" />
-          <InlineMessage icon={infoIcon} role="region" aria-label="states">
+          <InlineMessage
+            icon={infoIcon}
+            role="region"
+            aria-label="states notice"
+          >
             {notice}
           </InlineMessage>
         </>
