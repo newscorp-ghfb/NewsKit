@@ -9,7 +9,6 @@ import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {AudioPlayerSeekBar} from '../components/seek-bar';
 import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
-// import {Button} from '../../button';
 import {Block} from '../../block';
 import {ButtonSize} from '../../button/types';
 import {Button} from '../../button';
@@ -65,7 +64,6 @@ export default {
 export const AudioPlayer = () => (
   <>
     <StorybookSubHeading>Audio player inline</StorybookSubHeading>
-
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
       ariaLandmark="audio player inline"

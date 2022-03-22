@@ -17,7 +17,7 @@ import {formatFunction} from './components/time-display/utils';
 
 const defaultKeyboardShortcuts = {
   jumpToStart: ['0', 'Home'],
-  jumpToEnd: ['1', 'End'],
+  jumpToEnd: ['End'],
 };
 
 export const AudioPlayerComposable = ({
