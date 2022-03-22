@@ -528,6 +528,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
     </button>
     <span
       class="emotion-9"
+      data-testid="audio-player-time-display"
     >
       00:10/01:50:10 
     </span>
@@ -1897,6 +1898,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
     </button>
     <span
       class="emotion-8"
+      data-testid="audio-player-time-display"
     >
       00:00/00:00 
     </span>

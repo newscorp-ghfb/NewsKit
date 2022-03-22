@@ -27,7 +27,7 @@ const recordedAudioProps: AudioPlayerComposableProps = {
           console.log('customer click function');
         }}
       />
-      <AudioPlayerTimeDisplay />
+      <AudioPlayerTimeDisplay data-testid="audio-player-time-display" />
       <Button href="/">read more</Button>
     </>
   ),
@@ -155,6 +155,9 @@ describe('Audio Player Composable', () => {
     });
     mediaElement.pause = jest.fn(() => {
       mediaElement.paused = true;
+    });
+    mediaElement.onDurationChange = jest.fn(val => {
+      mediaElement.duration = val;
     });
     window.open = jest.fn();
     jest.useFakeTimers('legacy');
@@ -467,6 +470,33 @@ describe('Audio Player Composable', () => {
       fireEvent.canPlay(audioElement);
       userEvent.keyboard(' ');
       expect(audioElement.paused).toBe(true);
+    });
+
+    it('should change current time via Home and End key', () => {
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        recordedAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const playPauseButton = getByTestId('audio-player-play-pause-button');
+      playPauseButton.focus();
+
+      // set initial duration
+      fireEvent.durationChange(audioElement, {
+        target: {
+          duration: 100,
+        },
+      });
+
+      fireEvent.canPlay(audioElement);
+
+      // move to end
+      userEvent.keyboard('{End}');
+      expect(audioElement.currentTime).toBe(100);
+
+      userEvent.keyboard('{Home}');
+      expect(audioElement.currentTime).toBe(0);
     });
   });
 });
