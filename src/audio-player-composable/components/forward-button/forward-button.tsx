@@ -14,7 +14,7 @@ export const AudioPlayerForwardButton: React.FC<SkipButtonProps> = React.memo(
 
     return (
       <IconButton
-        data-testid="audio-player-forward"
+        data-testid="audio-player-forward-button"
         aria-label={ariaLabel}
         onClick={onClick}
         size={props.size || ButtonSize.Medium}
