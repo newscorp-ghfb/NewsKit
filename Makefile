@@ -85,5 +85,5 @@ bump_version:
 	yarn version --new-version ${NEW_VERSION}
 	git push
 	echo "Creating and pushing tag to trigger release deployment to prod"
-	git tag -a deploy@${NEW_VERSION} -m "Tag to trigger ${NEW_VERSION} deployment to prod"
-	git push origin deploy@${NEW_VERSION}
+	git tag -a deploy-release@${NEW_VERSION} -m "Tag to trigger ${NEW_VERSION} deployment to prod"
+	git push origin deploy-release@${NEW_VERSION}

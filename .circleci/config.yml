@@ -20,7 +20,7 @@ cypress_defaults: &cypress_defaults
 applitools_defaults: &applitools_defaults
   command: |
     export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`
-    export APPLITOOLS_PARENT_BRANCH_NAME=develop
+    export APPLITOOLS_PARENT_BRANCH_NAME=main
     export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
     export APPLITOOLS_DONT_CLOSE_BATCHES=true
     echo "export APPLITOOLS_BATCH_ID=${APPLITOOLS_BATCH_ID}" >> $BASH_ENV
@@ -858,7 +858,7 @@ only_on_deploy_release: &only_on_deploy_release
   filters:
     tags:
       # The pattern must match the tag created and pushed by bump_version make script
-      only: /^deploy@.*/
+      only: /^deploy-release@.*/
     branches:
       ignore: /.*/
 
@@ -1146,8 +1146,8 @@ workflows:
           <<: *only_on_release
           version: << pipeline.git.tag >> | cut -f2 -d "v"
   
-  on_deploy_tag:
-    # Workflow's jobs triggered by bump_version make script, which will create and push the "deploy@*" tag.
+  on_deploy_release_tag:
+    # Workflow's jobs triggered by bump_version make script, which will create and push the "deploy-release@*" tag.
     jobs:
       - init_aws:
           <<: *only_on_deploy_release
