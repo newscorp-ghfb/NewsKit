@@ -366,7 +366,7 @@ export const StoryFormWithCustomStyles = () => {
 };
 StoryFormWithCustomStyles.storyName = 'form-with-custom-styles';
 
-export const StoryRenderBug = () => (
+export const StoryFormWithTextInputAndFormInput = () => (
   <>
     <StorybookHeading>Use Tab to move through the inputs</StorybookHeading>
     <Block spaceStack="space050" />
@@ -402,4 +402,5 @@ export const StoryRenderBug = () => (
     </Form>
   </>
 );
-StoryRenderBug.storyName = 'form-with-text-input-and-form-input';
+StoryFormWithTextInputAndFormInput.storyName =
+  'form-with-text-input-and-form-input';
