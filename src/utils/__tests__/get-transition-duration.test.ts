@@ -1105,16 +1105,9 @@ describe('getTransitionDuration', () => {
     });
 
     expect(result).toEqual({
-      '@media screen and (max-width: 799px)': {
-        appear: 2000,
-        enter: 2000,
-        exit: 2000,
-      },
-      '@media screen and (min-width: 800px)': {
-        appear: 3000,
-        enter: 3000,
-        exit: 3000,
-      },
+      appear: 3000,
+      enter: 3000,
+      exit: 3000,
     });
   });
   test('returns duration from overrides with breakpoints', () => {
@@ -1183,18 +1176,8 @@ describe('getTransitionDuration', () => {
       theme,
       overrides,
     });
-    expect(result).toEqual({
-      '@media screen and (max-width: 799px)': {
-        appear: 300,
-        enter: 300,
-        exit: 300,
-      },
-      '@media screen and (min-width: 800px)': {
-        appear: 3000,
-        enter: 3000,
-        exit: 3000,
-      },
-    });
+
+    expect(result).toEqual({appear: 3000, enter: 3000, exit: 3000});
   });
   test('returns duration from multiple default transition presets with breakpoints', () => {
     const theme = compileTheme(
@@ -1211,6 +1194,7 @@ describe('getTransitionDuration', () => {
           motions: {
             motionDuration020: '2000ms',
             motionDuration030: '3000ms',
+            motionDuration040: '4000ms',
             motionTimingLinear: 'linear',
           },
           transitionPresets: {
@@ -1231,7 +1215,7 @@ describe('getTransitionDuration', () => {
             customFadeTransition: {
               base: {
                 transitionProperty: 'opacity',
-                transitionDuration: '{{motions.motionDuration030}}',
+                transitionDuration: '{{motions.motionDuration040}}',
                 transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
@@ -1254,18 +1238,7 @@ describe('getTransitionDuration', () => {
     )({
       theme,
     });
-    expect(result).toEqual({
-      '@media screen and (max-width: 799px)': {
-        appear: 3000,
-        enter: 3000,
-        exit: 3000,
-      },
-      '@media screen and (min-width: 800px)': {
-        appear: 3000,
-        enter: 3000,
-        exit: 3000,
-      },
-    });
+    expect(result).toEqual({appear: 4000, enter: 4000, exit: 4000});
   });
   test('returns duration from multiple overrides presets with breakpoints', () => {
     const theme = compileTheme(
@@ -1282,6 +1255,7 @@ describe('getTransitionDuration', () => {
           motions: {
             motionDuration020: '2000ms',
             motionDuration030: '3000ms',
+            motionDuration040: '4000ms',
             motionTimingLinear: 'linear',
           },
           transitionPresets: {
@@ -1302,7 +1276,7 @@ describe('getTransitionDuration', () => {
             customFadeTransition: {
               base: {
                 transitionProperty: 'opacity',
-                transitionDuration: '{{motions.motionDuration030}}',
+                transitionDuration: '{{motions.motionDuration040}}',
                 transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
@@ -1318,7 +1292,6 @@ describe('getTransitionDuration', () => {
         },
       }),
     );
-
     const overrides = {
       transitionPreset: {
         xs: ['customTransitionPresetOverrides', 'customFadeTransition'],
@@ -1333,17 +1306,6 @@ describe('getTransitionDuration', () => {
       theme,
       overrides,
     });
-    expect(result).toEqual({
-      '@media screen and (max-width: 799px)': {
-        appear: 3000,
-        enter: 3000,
-        exit: 3000,
-      },
-      '@media screen and (min-width: 800px)': {
-        appear: 3000,
-        enter: 3000,
-        exit: 3000,
-      },
-    });
+    expect(result).toEqual({appear: 4000, enter: 4000, exit: 4000});
   });
 });

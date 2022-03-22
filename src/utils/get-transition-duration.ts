@@ -1,6 +1,6 @@
-import {BreakpointKeys, Theme, TransitionToken} from '../theme';
+import {Theme, TransitionToken} from '../theme';
 import {getToken} from './get-token';
-import {getMediaQueryFromTheme, isResponsive} from './responsive-helpers';
+import {isResponsive} from './responsive-helpers';
 import {MQ} from './style';
 import {ThemeProp} from './style-types';
 import {isArrayLikeObject, unifyTransition} from './style/utils';
@@ -128,26 +128,23 @@ export const getTransitionDuration = (
 
   if (isResponsive(token, props.theme.breakpoints)) {
     return Object.entries(token).reduce(
-      (acc, [key, transitionPresetToken], index, arr) => {
-        const nextKey = arr[index + 1] ? arr[index + 1][0] : undefined;
-
-        const mediaQuery = getMediaQueryFromTheme(
-          key as BreakpointKeys,
-          nextKey as BreakpointKeys,
-        )({
-          theme: props.theme,
-        });
-
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      (acc, [bp, transitionPresetToken]) => {
+        let currentDuration;
         if (isArrayLikeObject(transitionPresetToken)) {
           const tokensArray = Object.values(transitionPresetToken) as string[];
-          acc[mediaQuery] = extractDurationFromPreset(tokensArray, props.theme);
+          currentDuration = extractDurationFromPreset(tokensArray, props.theme);
         } else {
           const tokensArray = [transitionPresetToken];
-          acc[mediaQuery] = extractDurationFromPreset(tokensArray, props.theme);
+          currentDuration = extractDurationFromPreset(tokensArray, props.theme);
         }
-        return acc;
+        return {
+          appear: Math.max(currentDuration.appear, acc.appear),
+          enter: Math.max(currentDuration.enter, acc.enter),
+          exit: Math.max(currentDuration.exit, acc.exit),
+        };
       },
-      {} as {[index: string]: TimeoutType},
+      {enter: 0, exit: 0, appear: 0} as TimeoutType,
     );
   }
 
