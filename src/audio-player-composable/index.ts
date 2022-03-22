@@ -9,4 +9,3 @@ export {AudioPlayerComposable} from './audio-player-composable';
 export * from './components/seek-bar/types';
 export * from './components/time-display/types';
 export * from './components/play-pause-button/types';
-export * from './components/replay-button/types';

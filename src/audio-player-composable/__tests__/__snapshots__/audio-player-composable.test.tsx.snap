@@ -382,9 +382,9 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #3358CC;
+  background-color: transparent;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #3358CC;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -398,19 +398,19 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-9 svg {
-  fill: #FFFFFF;
+  fill: #3358CC;
 }
 
 .emotion-9:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #E0E7FF;
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #AEBFFF;
 }
 
 .emotion-9:disabled {
-  background-color: #F4F4F4;
+  background-color: transparent;
   color: #C0C0C0;
 }
 
@@ -2032,9 +2032,9 @@ exports[`Audio Player Composable should render default display time label 1`] = 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #3358CC;
+  background-color: transparent;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #3358CC;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -2048,19 +2048,19 @@ exports[`Audio Player Composable should render default display time label 1`] = 
 }
 
 .emotion-8 svg {
-  fill: #FFFFFF;
+  fill: #3358CC;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #E0E7FF;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #AEBFFF;
 }
 
 .emotion-8:disabled {
-  background-color: #F4F4F4;
+  background-color: transparent;
   color: #C0C0C0;
 }
 
@@ -2443,9 +2443,9 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #3358CC;
+  background-color: transparent;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #3358CC;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -2459,19 +2459,19 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #FFFFFF;
+  fill: #3358CC;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #2B4AAB;
+  background-color: #E0E7FF;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #213A82;
+  background-color: #AEBFFF;
 }
 
 .emotion-8:disabled {
-  background-color: #F4F4F4;
+  background-color: transparent;
   color: #C0C0C0;
 }
 
