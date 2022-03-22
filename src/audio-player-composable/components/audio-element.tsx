@@ -13,12 +13,10 @@ export const AudioElement: React.FC<AudioElementProps> = ({
     e: React.SyntheticEvent<HTMLAudioElement, Event>,
   ) => {
     const eventCallback = props[eventName];
-
-    if (eventCallback) {
-      eventCallback(e);
-    }
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-    audioEvents && audioEvents[eventName](e);
+    eventCallback
+      ? /* istanbul ignore next */ eventCallback(e)
+      : audioEvents![eventName](e);
   };
 
   return (
