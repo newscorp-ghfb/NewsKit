@@ -5,8 +5,15 @@ import {IconFilledStop} from '../icons/filled/material/icon-filled-stop';
 import {AudioElement} from './components/audio-element';
 import {useAudioFunctions} from './audio-functions';
 import {AudioPlayerProvider} from './context';
-import {AudioFunctionDependencies, AudioPlayerComposableProps} from './types';
+import {
+  AudioFunctionDependencies,
+  AudioPlayerComposableProps,
+  AudioPlayerIconButtonProps,
+} from './types';
 import {formatFunction} from './components/time-display/utils';
+import {IconFilledForward10, IconFilledReplay10} from '../icons';
+import {IconButtonProps} from '../icon-button/types';
+import {composeEventHandlers} from '../utils/compose-event-handlers';
 
 export const AudioPlayerComposable = ({
   children,
@@ -109,41 +116,23 @@ export const AudioPlayerComposable = ({
   };
   const getForwardButtonProps = ({
     onClick: consumerOnClick,
-  }: {
-    onClick?: () => void;
-  }) => {
-    // All the internal logic for defining aria and icon to show
-
-    const ariaLabel = 'Fast forward for 10 seconds';
-    const onClick = () => {
-      if (consumerOnClick) consumerOnClick();
-      onClickForward();
-    };
-
-    return {
-      ariaLabel,
-
-      onClick,
-    };
-  };
+    ...getterProps
+  }: AudioPlayerIconButtonProps): IconButtonProps => ({
+    children: <IconFilledForward10 />,
+    'aria-label': 'Fast forward for 10 seconds',
+    onClick: composeEventHandlers([consumerOnClick, onClickForward]),
+    ...getterProps,
+  });
   const getReplayButtonProps = ({
     onClick: consumerOnClick,
-  }: {
-    onClick?: () => void;
-  }) => {
-    // All the internal logic for defining aria and icon to show
+    ...getterProps
+  }: AudioPlayerIconButtonProps): IconButtonProps => ({
+    children: <IconFilledReplay10 />,
+    'aria-label': 'Rewind 10 seconds',
+    onClick: composeEventHandlers([consumerOnClick, onClickBackward]),
+    ...getterProps,
+  });
 
-    const ariaLabel = 'Rewind 10 seconds';
-    const onClick = () => {
-      if (consumerOnClick) consumerOnClick();
-      onClickBackward();
-    };
-
-    return {
-      ariaLabel,
-      onClick,
-    };
-  };
   const getSeekBarProps = () => ({
     duration,
     currentTime,

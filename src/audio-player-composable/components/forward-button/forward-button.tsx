@@ -1,28 +1,39 @@
 import React from 'react';
+import {ButtonOverrides, ButtonSize} from '../../../button/types';
 import {IconButton} from '../../../icon-button';
-import {ButtonSize} from '../../../button/types';
+import {useTheme} from '../../../theme';
+import {filterOutFalsyProperties} from '../../../utils/filter-object';
+import {withOwnTheme} from '../../../utils/with-own-theme';
 import {useAudioPlayerContext} from '../../context';
-import {IconFilledForward10} from '../../../icons';
-import {SkipButtonProps} from '../replay-button/types';
+import {AudioPlayerIconButtonProps} from '../../types';
+import defaults from './defaults';
 
-export const AudioPlayerForwardButton: React.FC<SkipButtonProps> = React.memo(
-  ({onClick: consumerOnClick, ...props}) => {
+const ThemelessAudioPlayerForwardButton: React.FC<AudioPlayerIconButtonProps> = React.memo(
+  ({overrides, ...props}) => {
     const {getForwardButtonProps} = useAudioPlayerContext();
-    const {ariaLabel, onClick} =
-      getForwardButtonProps! &&
-      getForwardButtonProps({onClick: consumerOnClick});
 
+    const theme = useTheme();
+
+    const audioPlayerForwardOverrides: ButtonOverrides = {
+      ...theme.componentDefaults.audioPlayerForwardButton,
+      ...filterOutFalsyProperties(overrides),
+    };
+
+    const propsFromContex =
+      getForwardButtonProps! && getForwardButtonProps(props);
     return (
       <IconButton
         data-testid="audio-player-forward-button"
-        aria-label={ariaLabel}
-        onClick={onClick}
         size={props.size || ButtonSize.Medium}
-        overrides={props.overrides}
-        {...props}
-      >
-        <IconFilledForward10 />
-      </IconButton>
+        overrides={audioPlayerForwardOverrides}
+        {...propsFromContex}
+      />
     );
   },
 );
+
+export const AudioPlayerForwardButton = withOwnTheme(
+  ThemelessAudioPlayerForwardButton,
+)({
+  defaults,
+});
