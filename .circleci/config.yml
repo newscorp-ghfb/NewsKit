@@ -860,7 +860,7 @@ only_on_deploy_release: &only_on_deploy_release
   filters:
     tags:
       # The pattern must match the tag created and pushed by bump_version make script
-      only: /^deploy-release@.*/
+      only: /^deploy@.*/
     branches:
       ignore: /.*/
 
@@ -1142,14 +1142,14 @@ workflows:
             - eks_flux_deploy_dev_to_prod
       # end
 
-  release_tag:
+  on_release_tag:
     jobs: 
       - bump_version:
           <<: *only_on_release
           version: << pipeline.git.tag >> | cut -f2 -d "v"
   
-  deploy_release_tag:
-    # Workflow's jobs triggered by bump_version make script, which will create and push the tag.
+  on_deploy_tag:
+    # Workflow's jobs triggered by bump_version make script, which will create and push the "deploy@*" tag.
     jobs:
       - init_aws:
           <<: *only_on_deploy_release
@@ -1192,7 +1192,6 @@ workflows:
           requires:
             - build_test_e2e
             - install_cypress
- 
       - build_docs:
           <<: *only_on_deploy_release
           name: build_docs_prod
