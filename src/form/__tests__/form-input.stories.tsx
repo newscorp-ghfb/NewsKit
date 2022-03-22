@@ -7,6 +7,7 @@ import {
   FormInputSelect,
   FormInputTextField,
   FormInputCheckbox,
+  FormInputRadioButton,
 } from '..';
 import {
   Block,
@@ -28,6 +29,7 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {Fieldset} from '../../fieldset';
+import {RadioGroup} from '../../radio-button';
 
 const FormInputBlock = styled(Block)``;
 
@@ -338,6 +340,40 @@ export const FormFieldCheckbox = () => (
   </Form>
 );
 FormFieldCheckbox.storyName = 'form-input-checkbox';
+
+export const FormFieldRadioButton = () => {
+  const rules = {
+    required: 'Required field',
+  };
+
+  return (
+    <Block spaceInset="space050">
+      <Form onSubmit={onSubmit}>
+        <StorybookHeading>RadioButton and RadioGroup</StorybookHeading>
+        <Fieldset legend="Favorite activities">
+          <RadioGroup>
+            {['Reading', 'Writing', 'Speaking', 'Listening'].map(value => (
+              <FormInput key={value} name="favoriteActivities" rules={rules}>
+                <FormInputRadioButton
+                  label={value}
+                  value={value}
+                  overrides={{spaceStack: 'space030'}}
+                />
+              </FormInput>
+            ))}
+          </RadioGroup>
+          <FormInput name="favoriteActivities" rules={rules}>
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </FormInput>
+        </Fieldset>
+        <Block spaceStack="space030" />
+        <Button type="submit">Submit</Button>
+      </Form>
+    </Block>
+  );
+};
+
+FormFieldRadioButton.storyName = 'form-input-radio-button';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-select-theme',

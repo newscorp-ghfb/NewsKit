@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "5.2.0",
+  "version": "5.3.0",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
@@ -45,9 +45,10 @@
     "build:comps": "concurrently \"yarn build:ts\" \"yarn build:ts:cjs\" && yarn build:comps:clean-icons && yarn build:copy-files && yarn build:package-json",
     "build:storybook": "build-storybook -c .storybook -o dist-storybook -s ./fonts,./static",
     "build:docs": "yarn build:comps:clean-icons && next build site && next export site -o public",
+    "postbuild:docs": "node ./scripts/post-build",
     "build:icons:dev": "node ./scripts/generate-icons --dev",
     "build:icons:ci": "node ./scripts/generate-icons --ci",
-    "build": "yarn build:clean && yarn build:icons:ci && yarn build:comps && yarn build:storybook && yarn build:docs",
+    "build": "yarn build:clean && yarn build:icons:ci && yarn build:comps && yarn build:storybook && yarn build:docs && yarn postbuild:docs",
     "e2e:build": "yarn e2e:generate:a11ytests && webpack --config webpack.e2e.config.js --mode=production",
     "e2e:serve": "http-server e2e/dist -p 8080",
     "e2e:comps": "cypress open --config-file cypress/config/cypress.components.json",

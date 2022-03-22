@@ -73,6 +73,8 @@ Scripts should be named using the following naming convention:
 
 * `build:docs` -> builds documentation site, into public/.
 
+* `postbuild:docs` -> move 404.html to public/.
+
 * `build:icons:dev` -> generates only the icons that are used within newskit.
 
 * `build:icons:ci` -> generates all 2600+ icons.

@@ -3,9 +3,12 @@ import React from 'react';
 import {fireEvent, act} from '@testing-library/react';
 import {renderWithImplementation, renderWithTheme} from '../../test/test-utils';
 import {AudioPlayerComposable} from '../audio-player-composable';
-import {PlayPauseButton} from '../components/play-pause-button/play-pause-button';
-import {SeekBar} from '../components/seek-bar/seek-bar';
+import {AudioPlayerPlayPauseButton} from '../components/play-pause-button/play-pause-button';
+import {AudioPlayerSeekBar} from '../components/seek-bar/seek-bar';
 import {AudioPlayerComposableProps} from '../types';
+import {AudioPlayerTimeDisplay} from '../components/time-display/time-display';
+
+import {formatFunction} from '../components/time-display/utils';
 import {compileTheme, createTheme} from '../../theme';
 import seekBarStylePresets from '../components/seek-bar/style-presets';
 
@@ -16,8 +19,8 @@ const recordedAudioProps: AudioPlayerComposableProps = {
   autoPlay: false,
   children: (
     <>
-      <SeekBar />
-      <PlayPauseButton
+      <AudioPlayerSeekBar />
+      <AudioPlayerPlayPauseButton
         onClick={() => {
           console.log('customer click function');
         }}
@@ -31,8 +34,8 @@ const recordedAudioPropsAutoplay: AudioPlayerComposableProps = {
   autoPlay: true,
   children: (
     <>
-      <SeekBar />
-      <PlayPauseButton
+      <AudioPlayerSeekBar />
+      <AudioPlayerPlayPauseButton
         onClick={() => {
           console.log('customer click function');
         }}
@@ -60,7 +63,7 @@ const recordedSeekBarOverrides: AudioPlayerComposableProps = {
   autoPlay: false,
   children: (
     <>
-      <SeekBar
+      <AudioPlayerSeekBar
         overrides={{
           slider: {
             track: {
@@ -80,15 +83,34 @@ const recordedSeekBarOverrides: AudioPlayerComposableProps = {
           },
         }}
       />
-      <PlayPauseButton
+      <AudioPlayerPlayPauseButton
         onClick={() => {
           console.log('customer click function');
         }}
+      />
+      <AudioPlayerTimeDisplay
+        format={({currentTime, duration}) =>
+          formatFunction({currentTime, duration})
+        }
       />
     </>
   ),
 };
 
+const recordedTimeDisplayOverrides: AudioPlayerComposableProps = {
+  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  autoPlay: true,
+  children: (
+    <>
+      <AudioPlayerPlayPauseButton
+        onClick={() => {
+          console.log('customer click function');
+        }}
+      />
+      <AudioPlayerTimeDisplay overrides={{stylePreset: 'myTimeDisplay'}} />
+    </>
+  ),
+};
 jest.mock('../../version-number.json', () => ({version: '0.10.0'}));
 
 jest.mock('../utils', () => {
@@ -245,6 +267,41 @@ describe('Audio Player Composable', () => {
     expect(audioElement.pause).not.toHaveBeenCalled();
   });
 
+  it('should render correctly when in autoplay', () => {
+    const {asFragment} = renderWithTheme(
+      AudioPlayerComposable,
+      recordedAudioPropsAutoplay,
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+  it('should render default display time label', () => {
+    const {asFragment} = renderWithTheme(
+      AudioPlayerComposable,
+      recordedAudioProps,
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+  it('renders with TimeDisplay label overrides', () => {
+    const myCustomTheme = createTheme({
+      name: 'my-custom-seek-bar-theme',
+      overrides: {
+        stylePresets: {
+          myTimeDisplay: {
+            base: {
+              backgroundColor: '{{colors.interactivePrimary030}}',
+            },
+          },
+        },
+      },
+    });
+    const {asFragment} = renderWithTheme(
+      AudioPlayerComposable,
+      recordedTimeDisplayOverrides,
+      myCustomTheme,
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
   describe('seekBar should', () => {
     it('renders and behaves as expected', () => {
       const onPlay = jest.fn();
