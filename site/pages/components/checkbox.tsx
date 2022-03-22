@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage, IconFilledInfo} from 'newskit';
+import {Block, InlineMessage} from 'newskit'; // IconFilledInfo
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
@@ -9,13 +9,13 @@ import {InlineCode} from '../../components/markdown-elements';
 import {UsageKind} from '../../components/usage-card';
 import {Link} from '../../components/link';
 
-const infoIcon = (
-  <IconFilledInfo
-    overrides={{
-      size: 'iconSize020',
-    }}
-  />
-);
+// const infoIcon = (
+//   <IconFilledInfo
+//     overrides={{
+//       size: 'iconSize020',
+//     }}
+//   />
+// );
 
 const commonPropsRows = (type?: string) => [
   {
@@ -239,11 +239,15 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
                 The Checkbox has a label that appears to the right (end) of a
                 Checkbox.
               </Block>
-              <InlineMessage icon={infoIcon}>
+              {/* <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="Checkbox label position"
+              >
                 In the case of needing a label on the left (start) of a
                 Checkbox, this can be set via the{' '}
                 <InlineCode>labelPosition</InlineCode> prop.
-              </InlineMessage>
+              </InlineMessage> */}
             </>
           ),
           media: getIllustrationComponent('components/checkbox/options/label'),
@@ -581,7 +585,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
                 For more information, please refer to the Form component
               </Link>
               .
-              <Block spaceStack="space050" />
+              {/* <Block spaceStack="space050" />
               <InlineMessage
                 icon={infoIcon}
                 role="region"
@@ -590,7 +594,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               >
                 Validation only works if the FormInput Checkbox uses the Form
                 component.
-              </InlineMessage>
+              </InlineMessage> */}
             </>
           ),
           media: getIllustrationComponent(
