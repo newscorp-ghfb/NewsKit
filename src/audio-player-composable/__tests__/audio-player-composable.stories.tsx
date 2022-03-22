@@ -204,6 +204,54 @@ export const AudioPlayerForwardReplayButton = () => (
       </GridLayout>
     </AudioPlayerComposable>
     <StorybookSubHeading>with overrides</StorybookSubHeading>
+    <AudioPlayerComposable
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      ariaLandmark="audio player"
+    >
+      <AudioPlayerPlayPauseButton
+        onClick={() => {
+          console.log('customer click function');
+        }}
+      />
+      <Block spaceStack="space030" />
+      <AudioPlayerSeekBar />
+      <Block spaceStack="space030" />
+      <GridLayout columns="auto 0fr 0fr auto">
+        <GridLayout justifyItems="start">
+          <AudioPlayerTimeDisplay
+            format={({currentTime}) => calculateTime(currentTime)}
+          />
+        </GridLayout>
+        <GridLayout justifyItems="center">
+          <AudioPlayerReplayButton
+            overrides={{
+              iconSize: 'iconSize040',
+              spaceInline: 'space000',
+              stylePreset: 'buttonOutlinedNegative',
+            }}
+          />
+        </GridLayout>
+
+        <GridLayout justifyItems="center">
+          <AudioPlayerForwardButton
+            overrides={{
+              iconSize: 'iconSize040',
+              spaceInline: 'space0040',
+              stylePreset: 'buttonOutlinedNegative',
+            }}
+            onClick={() => {
+              console.log('customer click function for forward');
+            }}
+          />
+        </GridLayout>
+
+        <GridLayout justifyItems="end">
+          <AudioPlayerTimeDisplay
+            format={({duration}) => calculateTime(duration)}
+          />
+        </GridLayout>
+      </GridLayout>
+    </AudioPlayerComposable>
   </>
 );
 AudioPlayerForwardReplayButton.storyName = 'audio-forward-replay-button';
