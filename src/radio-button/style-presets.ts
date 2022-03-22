@@ -1,14 +1,13 @@
 import {StylePreset} from '../theme/types';
 
 export default {
-  checkboxInput: {
+  radioButtonInput: {
     base: {
       backgroundColor: '{{colors.interactiveInput010}}',
       borderColor: '{{colors.interactiveInput020}}',
       borderWidth: '{{borders.borderWidth020}}',
-      borderRadius: '{{borders.borderRadiusRounded010}}',
+      borderRadius: '{{borders.borderRadiusCircle}}',
       borderStyle: 'solid',
-      iconColor: '{{colors.inkInverse}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInput030}}',
@@ -20,97 +19,105 @@ export default {
       borderColor: '{{colors.interactiveInput050}}',
     },
     checked: {
-      backgroundColor: '{{colors.interactiveInput040}}',
+      backgroundColor: '{{colors.interactiveInput010}}',
       borderColor: '{{colors.interactiveInput040}}',
+      iconColor: '{{colors.interactiveInput040}}',
     },
     'checked:hover': {
-      backgroundColor: '{{colors.interactiveInput050}}',
+      backgroundColor: '{{colors.interactiveInput030}}',
       borderColor: '{{colors.interactiveInput050}}',
+      iconColor: '{{colors.interactiveInput050}}',
     },
     'checked:focus': {
-      backgroundColor: '{{colors.interactiveInput040}}',
+      backgroundColor: '{{colors.interactiveInput010}}',
       borderColor: '{{colors.interactiveInput040}}',
+      iconColor: '{{colors.interactiveInput040}}',
     },
     'checked:focus:hover': {
-      backgroundColor: '{{colors.interactiveInput050}}',
+      backgroundColor: '{{colors.interactiveInput030}}',
       borderColor: '{{colors.interactiveInput050}}',
+      iconColor: '{{colors.interactiveInput050}}',
     },
     invalid: {
+      backgroundColor: '{{colors.interactiveInput010}}',
+      borderColor: '{{colors.interactiveNegative040}}',
+    },
+    'invalid:focus': {
       borderColor: '{{colors.interactiveNegative040}}',
     },
     'invalid:hover': {
       backgroundColor: '{{colors.interactiveNegative010}}',
       borderColor: '{{colors.interactiveNegative050}}',
     },
-    'invalid:focus': {
-      borderColor: '{{colors.interactiveNegative040}}',
-    },
-
     'invalid:focus:hover': {
       backgroundColor: '{{colors.interactiveNegative010}}',
       borderColor: '{{colors.interactiveNegative050}}',
     },
     'checked:invalid': {
-      backgroundColor: '{{colors.interactiveNegative040}}',
+      backgroundColor: '{{colors.interactiveInput010}}',
       borderColor: '{{colors.interactiveNegative040}}',
+      iconColor: '{{colors.interactiveNegative040}}',
     },
     'checked:invalid:focus': {
-      backgroundColor: '{{colors.interactiveNegative040}}',
       borderColor: '{{colors.interactiveNegative040}}',
+      iconColor: '{{colors.interactiveNegative040}}',
     },
     'checked:invalid:hover': {
-      backgroundColor: '{{colors.interactiveNegative050}}',
+      backgroundColor: '{{colors.interactiveNegative010}}',
       borderColor: '{{colors.interactiveNegative050}}',
+      iconColor: '{{colors.interactiveNegative050}}',
     },
     'checked:invalid:focus:hover': {
-      backgroundColor: '{{colors.interactiveNegative050}}',
+      backgroundColor: '{{colors.interactiveNegative010}}',
       borderColor: '{{colors.interactiveNegative050}}',
+      iconColor: '{{colors.interactiveNegative050}}',
     },
     valid: {
       backgroundColor: '{{colors.interactiveInput010}}',
       borderColor: '{{colors.interactivePositive040}}',
     },
+    'valid:focus': {
+      borderColor: '{{colors.interactivePositive050}}',
+    },
     'valid:hover': {
       backgroundColor: '{{colors.interactivePositive010}}',
       borderColor: '{{colors.interactivePositive050}}',
     },
-    'valid:focus': {
-      backgroundColor: '{{colors.interactiveInput010}}',
-      borderColor: '{{colors.interactivePositive040}}',
-    },
-
     'valid:focus:hover': {
       backgroundColor: '{{colors.interactivePositive010}}',
       borderColor: '{{colors.interactivePositive050}}',
     },
     'checked:valid': {
-      backgroundColor: '{{colors.interactivePositive040}}',
+      backgroundColor: '{{colors.interactiveInput010}}',
       borderColor: '{{colors.interactivePositive040}}',
+      iconColor: '{{colors.interactivePositive040}}',
     },
     'checked:valid:focus': {
-      backgroundColor: '{{colors.interactivePositive040}}',
       borderColor: '{{colors.interactivePositive040}}',
+      iconColor: '{{colors.interactivePositive040}}',
     },
     'checked:valid:hover': {
-      backgroundColor: '{{colors.interactivePositive050}}',
+      backgroundColor: '{{colors.interactivePositive010}}',
       borderColor: '{{colors.interactivePositive050}}',
+      iconColor: '{{colors.interactivePositive050}}',
     },
     'checked:valid:focus:hover': {
-      backgroundColor: '{{colors.interactivePositive050}}',
+      backgroundColor: '{{colors.interactivePositive010}}',
       borderColor: '{{colors.interactivePositive050}}',
+      iconColor: '{{colors.interactivePositive050}}',
     },
     disabled: {
       backgroundColor: '{{colors.transparent}}',
       borderColor: '{{colors.interactiveDisabled010}}',
     },
     'checked:disabled': {
-      backgroundColor: '{{colors.interactiveDisabled010}}',
+      backgroundColor: '{{colors.transparent}}',
       borderColor: '{{colors.interactiveDisabled010}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
   },
 
-  checkboxFeedback: {
+  radioButtonFeedback: {
     base: {
       backgroundColor: '{{colors.transparent}}',
       borderRadius: '{{borders.borderRadiusCircle}}',
@@ -118,10 +125,10 @@ export default {
     hover: {
       backgroundColor: '{{colors.interactiveInput030}}',
     },
-    'valid:hover': {
+    'valid:focus:hover': {
       backgroundColor: '{{colors.interactivePositive010}}',
     },
-    'valid:focus:hover': {
+    'valid:hover': {
       backgroundColor: '{{colors.interactivePositive010}}',
     },
     'invalid:hover': {
@@ -130,7 +137,7 @@ export default {
     'invalid:focus:hover': {
       backgroundColor: '{{colors.interactiveNegative010}}',
     },
-    // TODO: Remove when we have generic focus style
+    // TODO: remove when we have generic focus state
     focus: {
       backgroundColor: '{{colors.interactiveInput030}}',
     },

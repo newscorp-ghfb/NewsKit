@@ -330,6 +330,14 @@ export default [
               'Select components allow users to select one option from a list.',
             illustration: 'components/select/select-illustration',
           },
+          {
+            title: 'Radio Button',
+            page: true,
+            id: '/components/radio-button',
+            description:
+              'Radio Buttons are selection controls that are typically used in forms',
+            illustration: 'components/radio-button/radio-button-illustration',
+          },
         ],
       },
       {
