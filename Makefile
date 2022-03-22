@@ -12,19 +12,6 @@ BASE_PATH = $(shell node -p "/(^release.*)|(^main$$)|(^develop$$)/.test('${CURRE
 
 BASE_URI = ${SITE_BASE_URL}${BASE_PATH}/
 
-# patch/minor/major
-UPDATE_TYPE = ${shell echo ${CURRENT_BRANCH}| cut -d'-' -f 3}
-
-# VERSION NUMBER IN PACKAGE JSON
-PKG_VERSION = ${shell node -p "require('./package.json').version"}
-
-# RELEASE BRANCH NAME TO CREATE PULL REQUESTS INTO DEVELOP AND MAIN
-RELEASE_BRANCH = release/${INITIAL_UPDATE_TYPE}-${PKG_VERSION}
-
-# PR TITLES
-RELEASE_PR_MAIN_TITLE = release/main-${INITIAL_UPDATE_TYPE}-${PKG_VERSION}
-RELEASE_PR_DEVELOP_TITLE = release/develop-${INITIAL_UPDATE_TYPE}-${PKG_VERSION}
-
 install:
 	yarn install --frozen-lockfile
 
