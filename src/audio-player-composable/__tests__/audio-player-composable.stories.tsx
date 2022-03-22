@@ -163,7 +163,7 @@ export const AudioPlayerForwardReplayButton = () => (
     </StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player"
+      ariaLandmark="audio player skip buttons"
     >
       <AudioPlayerPlayPauseButton
         onClick={() => {
@@ -185,11 +185,6 @@ export const AudioPlayerForwardReplayButton = () => (
 
         <GridLayout justifyItems="center">
           <AudioPlayerForwardButton
-            overrides={{
-              // iconSize: 'iconSize010',
-              spaceInline: 'space000',
-              // stylePreset:'buttonOutlinedNegative'
-            }}
             onClick={() => {
               console.log('customer click function for forward');
             }}
@@ -206,7 +201,7 @@ export const AudioPlayerForwardReplayButton = () => (
     <StorybookSubHeading>with overrides</StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player"
+      ariaLandmark="audio player skip overrides"
     >
       <AudioPlayerPlayPauseButton
         onClick={() => {
