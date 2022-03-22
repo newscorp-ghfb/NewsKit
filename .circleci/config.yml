@@ -11,11 +11,7 @@ slack_status: &slack_status
   fail_only: true
   only_for_branches: 'develop,main'
 
-working_directory: &working_directory
-  working_directory: ~/project
-
 cypress_defaults: &cypress_defaults
-  <<: *working_directory
   environment:
     CYPRESS_CACHE_FOLDER: '~/project/.cache/Cypress'
 
@@ -263,7 +259,6 @@ jobs:
             fi
 
   install_deps:
-    <<: *working_directory
     executor: node-large
     steps:
       - checkout
@@ -311,7 +306,6 @@ jobs:
           <<: *slack_status
 
   build_icons:
-    <<: *working_directory
     executor: node
     steps:
       - checkout
@@ -328,7 +322,6 @@ jobs:
           <<: *slack_status
 
   build_components:
-    <<: *working_directory
     executor: node-large
     steps:
       - checkout
@@ -345,7 +338,6 @@ jobs:
           <<: *slack_status
 
   build_storybook:
-    <<: *working_directory
     executor: node
     steps:
       - checkout
@@ -362,7 +354,6 @@ jobs:
           <<: *slack_status
 
   build_docs:
-    <<: *working_directory
     executor: node-xlarge
     steps:
       - checkout
@@ -382,7 +373,6 @@ jobs:
           <<: *slack_status
 
   build_docs_pr_with_no_base_url:
-    <<: *working_directory
     executor: node-xlarge
     steps:
       - checkout
@@ -401,7 +391,6 @@ jobs:
           <<: *slack_status
 
   build_test_e2e:
-    <<: *working_directory
     executor: node-xlarge
     steps:
       - checkout
@@ -419,7 +408,6 @@ jobs:
           <<: *slack_status
 
   test_unit_comps:
-    <<: *working_directory
     executor: node-large
     steps:
       - checkout
@@ -438,7 +426,6 @@ jobs:
           <<: *slack_status
 
   test_unit_docs:
-    <<: *working_directory
     executor: node-large
     steps:
       - checkout
@@ -457,7 +444,6 @@ jobs:
           <<: *slack_status
 
   lint:
-    <<: *working_directory
     executor: node
     steps:
       - checkout
@@ -470,7 +456,6 @@ jobs:
           <<: *slack_status
 
   test_broken_links_docs:
-    <<: *working_directory
     executor: node
     steps:
       - checkout
@@ -487,7 +472,6 @@ jobs:
       job_type:
         type: string
         default: 'default'
-    <<: *working_directory
     executor: python
     steps:  
       - checkout
@@ -517,7 +501,6 @@ jobs:
       environment:
         type: string
         default: ''
-    <<: *working_directory
     executor: terraform
     steps:
       - checkout
@@ -550,7 +533,6 @@ jobs:
                 package: << parameters.package >>
 
   test_visual_comps:
-    <<: *working_directory
     executor: node-large
     steps:
       - checkout
@@ -991,14 +973,6 @@ workflows:
       - init_aws:
           context: ncu-product-platforms-context
       - deploy_terraform:
-          name: deploy_terraform_dns_pr
-          package: dns
-          context: ncu-product-platforms-context
-          apply: false
-          environment: dev
-          requires:
-            - init_aws
-      - deploy_terraform:
           name: deploy_terraform_ecr_pr
           package: ecr
           context: ncu-product-platforms-context
@@ -1274,6 +1248,3 @@ workflows:
           environment: prod
           requires:
             - eks_flux_deploy_prod
-
-    
-#TODO remove working_directory
