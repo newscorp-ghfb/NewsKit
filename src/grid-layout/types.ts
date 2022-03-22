@@ -1,3 +1,4 @@
+import React from 'react';
 import {MQ} from '../utils/style';
 
 import {BlockProps} from '../block';
@@ -9,7 +10,7 @@ export type GridLayoutItemProps = BlockProps & {
   alignSelf?: MQ<string>;
   column?: MQ<string>;
   row?: MQ<string>;
-};
+} & React.HTMLAttributes<HTMLElement>;
 
 export type AreasMap = {
   [componentName: string]: React.FC<GridLayoutItemProps>;
@@ -37,4 +38,4 @@ export type GridLayoutProps = {
     minHeight?: MQ<string>;
     maxHeight?: MQ<string>;
   };
-};
+} & React.HTMLAttributes<HTMLElement>;

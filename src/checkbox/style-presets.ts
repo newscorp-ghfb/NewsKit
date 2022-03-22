@@ -3,20 +3,20 @@ import {StylePreset} from '../theme/types';
 export default {
   checkboxInput: {
     base: {
-      backgroundColor: '{{colors.transparent}}',
+      backgroundColor: '{{colors.interactiveInput010}}',
       borderColor: '{{colors.interactiveInput020}}',
-      borderWidth: '{{borders.borderWidth010}}',
+      borderWidth: '{{borders.borderWidth020}}',
       borderRadius: '{{borders.borderRadiusRounded010}}',
       borderStyle: 'solid',
       iconColor: '{{colors.inkInverse}}',
     },
     hover: {
-      borderColor: '{{colors.interactiveInput040}}',
-    },
-    focus: {
+      backgroundColor: '{{colors.interactiveInput030}}',
       borderColor: '{{colors.interactiveInput050}}',
     },
+    focus: {},
     'focus:hover': {
+      backgroundColor: '{{colors.interactiveInput030}}',
       borderColor: '{{colors.interactiveInput050}}',
     },
     checked: {
@@ -28,8 +28,8 @@ export default {
       borderColor: '{{colors.interactiveInput050}}',
     },
     'checked:focus': {
-      backgroundColor: '{{colors.interactiveInput050}}',
-      borderColor: '{{colors.interactiveInput050}}',
+      backgroundColor: '{{colors.interactiveInput040}}',
+      borderColor: '{{colors.interactiveInput040}}',
     },
     'checked:focus:hover': {
       backgroundColor: '{{colors.interactiveInput050}}',
@@ -38,13 +38,16 @@ export default {
     invalid: {
       borderColor: '{{colors.interactiveNegative040}}',
     },
-    'invalid:focus': {
-      borderColor: '{{colors.interactiveNegative050}}',
-    },
     'invalid:hover': {
+      backgroundColor: '{{colors.interactiveNegative010}}',
       borderColor: '{{colors.interactiveNegative050}}',
     },
+    'invalid:focus': {
+      borderColor: '{{colors.interactiveNegative040}}',
+    },
+
     'invalid:focus:hover': {
+      backgroundColor: '{{colors.interactiveNegative010}}',
       borderColor: '{{colors.interactiveNegative050}}',
     },
     'checked:invalid': {
@@ -52,8 +55,8 @@ export default {
       borderColor: '{{colors.interactiveNegative040}}',
     },
     'checked:invalid:focus': {
-      backgroundColor: '{{colors.interactiveNegative050}}',
-      borderColor: '{{colors.interactiveNegative050}}',
+      backgroundColor: '{{colors.interactiveNegative040}}',
+      borderColor: '{{colors.interactiveNegative040}}',
     },
     'checked:invalid:hover': {
       backgroundColor: '{{colors.interactiveNegative050}}',
@@ -64,15 +67,20 @@ export default {
       borderColor: '{{colors.interactiveNegative050}}',
     },
     valid: {
+      backgroundColor: '{{colors.interactiveInput010}}',
       borderColor: '{{colors.interactivePositive040}}',
     },
-    'valid:focus': {
-      borderColor: '{{colors.interactivePositive050}}',
-    },
     'valid:hover': {
+      backgroundColor: '{{colors.interactivePositive010}}',
       borderColor: '{{colors.interactivePositive050}}',
     },
+    'valid:focus': {
+      backgroundColor: '{{colors.interactiveInput010}}',
+      borderColor: '{{colors.interactivePositive040}}',
+    },
+
     'valid:focus:hover': {
+      backgroundColor: '{{colors.interactivePositive010}}',
       borderColor: '{{colors.interactivePositive050}}',
     },
     'checked:valid': {
@@ -80,8 +88,8 @@ export default {
       borderColor: '{{colors.interactivePositive040}}',
     },
     'checked:valid:focus': {
-      backgroundColor: '{{colors.interactivePositive050}}',
-      borderColor: '{{colors.interactivePositive050}}',
+      backgroundColor: '{{colors.interactivePositive040}}',
+      borderColor: '{{colors.interactivePositive040}}',
     },
     'checked:valid:hover': {
       backgroundColor: '{{colors.interactivePositive050}}',
@@ -92,6 +100,7 @@ export default {
       borderColor: '{{colors.interactivePositive050}}',
     },
     disabled: {
+      backgroundColor: '{{colors.transparent}}',
       borderColor: '{{colors.interactiveDisabled010}}',
     },
     'checked:disabled': {
@@ -104,22 +113,32 @@ export default {
   checkboxFeedback: {
     base: {
       backgroundColor: '{{colors.transparent}}',
-      borderRadius: '{{borders.borderRadiusRounded010}}',
+      borderRadius: '{{borders.borderRadiusCircle}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInput030}}',
     },
+    'valid:hover': {
+      backgroundColor: '{{colors.interactivePositive010}}',
+    },
+    'valid:focus:hover': {
+      backgroundColor: '{{colors.interactivePositive010}}',
+    },
+    'invalid:hover': {
+      backgroundColor: '{{colors.interactiveNegative010}}',
+    },
+    'invalid:focus:hover': {
+      backgroundColor: '{{colors.interactiveNegative010}}',
+    },
+    // TODO: Remove when we have generic focus style
     focus: {
       backgroundColor: '{{colors.interactiveInput030}}',
     },
-  },
-
-  controlLabel: {
-    base: {
-      color: '{{colors.inkBase}}',
+    'valid:focus': {
+      backgroundColor: '{{colors.interactivePositive010}}',
     },
-    disabled: {
-      color: '{{colors.inkNonEssential}}',
+    'invalid:focus': {
+      backgroundColor: '{{colors.interactiveNegative010}}',
     },
   },
 } as Record<string, StylePreset>;
