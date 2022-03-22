@@ -4,6 +4,5 @@ export {AudioPlayerTimeDisplay} from './components/time-display';
 export {AudioPlayerSeekBar} from './components/seek-bar';
 export {AudioPlayerPlayPauseButton} from './components/play-pause-button';
 export {AudioPlayerComposable} from './audio-player-composable';
-export * from './components/seek-bar/types';
-export * from './components/time-display/types';
-export * from './components/play-pause-button/types';
+export * from './components/skip-next';
+export * from './components/skip-previous';

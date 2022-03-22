@@ -10,20 +10,15 @@ const defaultKeyboardShortcuts = {
 };
 
 export const AudioPlayerPlayPauseButton: React.FC<PlayPauseButtonProps> = React.memo(
-  ({
-    onClick: consumerOnClick,
-    keyboardShortcuts: keyboardShortcutsProp,
-    ...props
-  }) => {
+  ({keyboardShortcuts: keyboardShortcutsProp, ...props}) => {
     const {
       getPlayPauseButtonProps,
       audioSectionRef,
       togglePlay,
     } = useAudioPlayerContext();
 
-    const {playStateIcon, ariaLabel, ariaPressed, loading, onClick} =
-      getPlayPauseButtonProps! &&
-      getPlayPauseButtonProps({onClick: consumerOnClick});
+    const propsFromContext =
+      getPlayPauseButtonProps! && getPlayPauseButtonProps(props);
 
     // Keyboard shortcuts
     const options = {target: audioSectionRef, preventDefault: false};
@@ -52,21 +47,14 @@ export const AudioPlayerPlayPauseButton: React.FC<PlayPauseButtonProps> = React.
       [togglePlay],
     );
 
-    useKeypress(keyboardShortcuts.toggle, toggleAction, options); // toggle
+    useKeypress(keyboardShortcuts.toggle, toggleAction, options);
 
     return (
       <IconButton
         data-testid="audio-player-play-pause-button"
-        aria-label={ariaLabel}
-        aria-pressed={ariaPressed}
-        loading={loading}
-        onClick={onClick}
-        size={props.size || ButtonSize.Large}
-        overrides={props.overrides}
-        {...props}
-      >
-        {playStateIcon}
-      </IconButton>
+        size={ButtonSize.Large}
+        {...propsFromContext}
+      />
     );
   },
 );

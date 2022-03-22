@@ -8,10 +8,7 @@ import {getValueInRange} from '../utils/value-in-range';
 import {version} from '../version-number.json';
 
 export const useAudioFunctions = ({
-  onPreviousTrack,
-  onNextTrack,
   autoPlay,
-  // disablePreviousTrack,
   src,
   live,
   duration,
@@ -27,8 +24,7 @@ export const useAudioFunctions = ({
   setDuration,
   setDisplayDuration,
   setBuffered,
-}: // setIsPrevTrackBtnDisabled,
-AudioFunctionDependencies) => {
+}: AudioFunctionDependencies) => {
   const {fireEvent} = useInstrumentation();
 
   const ifPlayer = useCallback(
@@ -124,31 +120,6 @@ AudioFunctionDependencies) => {
   //   },
   //   [ifPlayer, setVolume],
   // );
-
-  // TODO remove ignore once in use
-  /* istanbul ignore next */
-  const onClickPrevious = useCallback(() => {
-    if (currentTimeRef.current > 5) {
-      updateAudioTime(0);
-      return;
-    }
-
-    // If no function is passed, the button is disabled, check is just to be sure; the else can't be tested.
-    /* istanbul ignore else */
-    if (onPreviousTrack) {
-      onPreviousTrack();
-    }
-  }, [currentTimeRef, onPreviousTrack, updateAudioTime]);
-
-  // TODO remove ignore once in use
-  /* istanbul ignore next */
-  const onClickNext = useCallback(() => {
-    // If no function is passed, the button is disabled, check is just to be sure; the else can't be tested.
-    /* istanbul ignore else */
-    if (onNextTrack) {
-      onNextTrack();
-    }
-  }, [onNextTrack]);
 
   // TODO remove ignore once in use
   /* istanbul ignore next */
@@ -269,12 +240,6 @@ AudioFunctionDependencies) => {
       );
       fireEvent(trackingInformation);
     }
-    // TO Do: Should be added in the ticket for controls
-    // if (currentTimeRef.current > 5) {
-    //   setIsPrevTrackBtnDisabled(false);
-    // } else {
-    //   setIsPrevTrackBtnDisabled(Boolean(disablePreviousTrack));
-    // }
   };
 
   // const onVolumeChange = useCallback(
@@ -346,8 +311,6 @@ AudioFunctionDependencies) => {
       [AudioEvents.TimeUpdate]: onTimeUpdate,
       [AudioEvents.Progress]: onProgress,
     },
-    onClickPrevious,
-    onClickNext,
     onClickBackward,
     onClickForward,
     onPopoutClick,

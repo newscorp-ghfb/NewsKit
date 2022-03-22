@@ -12,6 +12,8 @@ import {styled} from '../../utils';
 import {Block} from '../../block';
 import {ButtonSize} from '../../button/types';
 import {Button} from '../../button';
+import {AudioPlayerSkipNextButton} from '../components/skip-next/skip-next';
+import {AudioPlayerSkipPreviousButton} from '../components/skip-previous/skip-previous';
 
 const AudioPlayerContainer = styled.div<{dark?: boolean}>`
   border: solid 1px red;
@@ -116,6 +118,25 @@ export const AudioPlayerE2E = () => (
         >
           read more
         </Button>
+      </GridLayout>
+      <GridLayout
+        columnGap="space040"
+        columns="auto auto 1fr auto auto"
+        justifyContent="center"
+      >
+        <AudioPlayerSkipPreviousButton size={ButtonSize.Small} />
+        <AudioPlayerSkipNextButton size={ButtonSize.Small} />
+        <span> - </span>
+        <AudioPlayerSkipPreviousButton
+          onClick={() => alert('Prev track clicked!')}
+          overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
+          size={ButtonSize.Small}
+        />
+        <AudioPlayerSkipNextButton
+          onClick={() => alert('Next track clicked!')}
+          overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
+          size={ButtonSize.Small}
+        />
       </GridLayout>
     </AudioPlayerComposable>
   </div>

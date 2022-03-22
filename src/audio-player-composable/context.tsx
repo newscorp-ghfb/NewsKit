@@ -1,6 +1,7 @@
-import {ReactJSXElement} from '@emotion/react/types/jsx-namespace';
 import React, {createContext, SyntheticEvent, useContext} from 'react';
+import {IconButtonProps} from '../button';
 import {FormatFn} from './components/time-display/types';
+import {AudioPlayerIconButtonProps} from './types';
 
 interface AudioPlayerProviderContext {
   id: string;
@@ -26,16 +27,11 @@ interface AudioPlayerProviderContext {
   };
   // Getter functions
 
-  getPlayPauseButtonProps: (args: {
-    onClick?: () => void;
-  }) => {
-    ariaLabel: string;
-    ariaPressed: boolean;
-    loading: boolean;
-    onClick: () => void;
+  getPlayPauseButtonProps: (
+    props: AudioPlayerIconButtonProps,
+  ) => IconButtonProps & {
     playing: boolean;
     canPause: boolean;
-    playStateIcon: ReactJSXElement;
   };
   getTimeDisplayProps: () => {
     format: FormatFn;
@@ -48,6 +44,12 @@ interface AudioPlayerProviderContext {
     onChange: (value: number) => void;
     buffered: TimeRanges | undefined;
   };
+  getSkipPreviousButtonProps: (
+    props: AudioPlayerIconButtonProps,
+  ) => IconButtonProps;
+  getSkipNextButtonProps: (
+    props: AudioPlayerIconButtonProps,
+  ) => IconButtonProps;
 }
 
 export const AudioPlayerContext = createContext<

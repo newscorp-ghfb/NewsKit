@@ -11,9 +11,12 @@ import {IconFilledStop} from '../icons/filled/material/icon-filled-stop';
 import {AudioElement} from './components/audio-element';
 import {useAudioFunctions} from './audio-functions';
 import {AudioPlayerProvider} from './context';
-import {AudioPlayerComposableProps} from './types';
+import {AudioPlayerComposableProps, AudioPlayerIconButtonProps} from './types';
 import {useKeypress} from '../utils/hooks/use-keypress';
 import {formatFunction} from './components/time-display/utils';
+import {composeEventHandlers} from '../utils/compose-event-handlers';
+import {IconFilledSkipNext, IconFilledSkipPrevious} from '../icons';
+import {IconButtonProps} from '../icon-button/types';
 
 const defaultKeyboardShortcuts = {
   jumpToStart: ['0', 'Home'],
@@ -42,8 +45,6 @@ export const AudioPlayerComposable = ({
   const [currentTime, setCurrentTime] = useState(0);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [displayDuration, setDisplayDuration] = useState(0);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [isPrevTrackBtnDisabled, setIsPrevTrackBtnDisabled] = useState(false);
 
   const [buffered, setBuffered] = useState<TimeRanges>();
 
@@ -56,8 +57,12 @@ export const AudioPlayerComposable = ({
     setDisplayDuration(0);
   }, [src]);
 
-  // @ts-ignore as we are not passing all the parameters yet.
-  const {audioEvents, togglePlay, onChangeSlider} = useAudioFunctions({
+  const {
+    audioEvents,
+    togglePlay,
+    onChangeSlider,
+    // @ts-ignore as we are not passing all the parameters yet.
+  } = useAudioFunctions({
     autoPlay,
     audioRef,
     playing,
@@ -68,7 +73,6 @@ export const AudioPlayerComposable = ({
     setCurrentTime,
     setBuffered,
     setDisplayDuration,
-    setIsPrevTrackBtnDisabled,
     currentTimeRef,
     duration,
     setDuration,
@@ -76,10 +80,12 @@ export const AudioPlayerComposable = ({
   });
 
   const getPlayPauseButtonProps = ({
-    onClick: consumerOnClick,
-  }: {
-    onClick?: () => void;
-  }) => {
+    onClick: onClickProp,
+    ...getterProps
+  }: AudioPlayerIconButtonProps): IconButtonProps & {
+    playing: boolean;
+    canPause: boolean;
+  } => {
     // All the internal logic for defining aria and icon to show
     let playStateIcon = <IconFilledPlayArrow />;
     let ariaLabel = 'Play';
@@ -98,21 +104,19 @@ export const AudioPlayerComposable = ({
       }
     }
 
-    const onClick = () => {
-      if (consumerOnClick) consumerOnClick();
-      togglePlay();
-    };
+    const onClick = composeEventHandlers([onClickProp, togglePlay]);
 
     return {
-      ariaLabel,
-      ariaPressed,
+      'aria-label': ariaLabel,
+      'aria-pressed': ariaPressed,
       loading,
       onClick,
+      children: playStateIcon,
+      ...getterProps,
 
       // can  be needed for custom internal logic
       playing,
       canPause: live,
-      playStateIcon,
     };
   };
 
@@ -128,11 +132,45 @@ export const AudioPlayerComposable = ({
     duration,
   });
 
+  const getSkipPreviousButtonProps = ({
+    onClick: onClickProp,
+    ...getterProps
+  }: AudioPlayerIconButtonProps): IconButtonProps => {
+    const onClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+      if (currentTime > 5) {
+        onChangeSlider(0);
+      } else if (typeof onClickProp === 'function') {
+        onClickProp(event);
+      }
+    };
+
+    const isDisabled = currentTime <= 5 && !onClickProp;
+
+    return {
+      onClick,
+      children: <IconFilledSkipPrevious />,
+      'aria-label': 'previous',
+      disabled: isDisabled,
+      ...getterProps,
+    };
+  };
+
+  const getSkipNextButtonProps = ({
+    ...getterProps
+  }: AudioPlayerIconButtonProps): IconButtonProps => ({
+    children: <IconFilledSkipNext />,
+    'aria-label': 'next',
+    disabled: typeof getterProps.onClick !== 'function',
+    ...getterProps,
+  });
+
   const value = {
     // Props function getter
     getPlayPauseButtonProps,
     getTimeDisplayProps,
     getSeekBarProps,
+    getSkipPreviousButtonProps,
+    getSkipNextButtonProps,
 
     // Internal for AudioElement
     audioRef,
