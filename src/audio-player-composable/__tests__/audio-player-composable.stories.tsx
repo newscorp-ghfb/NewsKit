@@ -2,8 +2,8 @@
 import * as React from 'react';
 import {AudioPlayerPlayPauseButton} from '../components/play-pause-button';
 import {AudioPlayerTimeDisplay} from '../components/time-display';
-import {AudioPlayerForwardButton} from '../components/forward-button/forward-button';
-// import {AudioPlayerBackwardButton} from '../components/backward-button/backward-button';
+import {AudioPlayerForwardButton} from '../components/forward-button';
+import {AudioPlayerReplayButton} from '../components/replay-button';
 import {AudioPlayerComposable} from '../audio-player-composable';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {calculateTime} from '../components/time-display/utils';
@@ -13,7 +13,6 @@ import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
 import {Block} from '../../block';
 import {ButtonSize} from '../../button/types';
-import {AudioPlayerReplayButton} from '../components/replay-button/replay-button';
 
 const AudioPlayerContainer = styled.div<{dark?: boolean}>`
   border: solid 1px red;
