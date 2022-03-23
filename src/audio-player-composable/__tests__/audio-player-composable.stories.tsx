@@ -70,7 +70,7 @@ export const AudioPlayer = () => (
       ariaLandmark="audio player inline"
     >
       <GridLayout
-        columns="auto auto 1fr auto"
+        columns="auto 40px 1fr auto"
         columnGap="space040"
         alignItems="center"
       >
