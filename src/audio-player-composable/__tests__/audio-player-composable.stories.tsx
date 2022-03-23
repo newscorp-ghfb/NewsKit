@@ -121,22 +121,11 @@ export const AudioPlayerE2E = () => (
       </GridLayout>
       <GridLayout
         columnGap="space040"
-        columns="auto auto 1fr auto auto"
+        columns="auto auto"
         justifyContent="center"
       >
         <AudioPlayerSkipPreviousButton size={ButtonSize.Small} />
         <AudioPlayerSkipNextButton size={ButtonSize.Small} />
-        <span />
-        <AudioPlayerSkipPreviousButton
-          onClick={() => alert('Prev track clicked!')}
-          overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
-          size={ButtonSize.Small}
-        />
-        <AudioPlayerSkipNextButton
-          onClick={() => alert('Next track clicked!')}
-          overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
-          size={ButtonSize.Small}
-        />
       </GridLayout>
     </AudioPlayerComposable>
   </div>

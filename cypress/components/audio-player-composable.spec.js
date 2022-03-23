@@ -161,4 +161,23 @@ describe('audio player composable', () => {
     });
     isPaused();
   });
+
+  it('skip-prev button moves to start after 5 seconds time', () => {
+    cy.get('@togglePlay').click();
+    cy.get(
+      `${parentTestIDSelector} [data-testid="audio-player-skip-previous-button"]`,
+    ).as('skipPrevBtn');
+    // button is disabled in first 5 seconds
+    cy.get('@skipPrevBtn').should('have.attr', 'disabled', 'disabled');
+
+    // move time to the middle
+    cy.get('@audioSliderTrack').click('center');
+
+    // button should be Enabled after 5sec
+    cy.get('@skipPrevBtn').should('not.have.attr', 'disabled');
+
+    cy.get('@skipPrevBtn').click();
+    // the track should be at the start after clicking Skip Prev Button
+    checkTime(0);
+  });
 });
