@@ -822,15 +822,17 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           propsFooter: (
             <>
               <Block spaceStack="space030" />
-              <InlineMessage role="region" aria-label="propstab" title="Note">
+              <InlineMessage
+                role="region"
+                aria-label="props notice"
+                title="Note"
+              >
                 The <InlineCode>name</InlineCode> &{' '}
                 <InlineCode>rules</InlineCode> props are set on the form input
                 level. If you want to add validation rules or set the name of
                 this component, please refer to the{' '}
-                <Link href="/components/form/">Form</Link> component
-              </InlineMessage>
-              <Block spaceStack="space050" />
-              <InlineMessage role="region" aria-label="engineer" title="Note">
+                <Link href="/components/form/">Form</Link> component <br />
+                <br />
                 Engineer to check the validation related props at the time of
                 implementation.
               </InlineMessage>
