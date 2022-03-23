@@ -22,7 +22,7 @@ export const AudioPlayerE2E = () => (
       ariaLandmark="audio player e2e tests"
     >
       <GridLayout
-        columns="auto auto 1fr auto auto"
+        columns="0fr 40px 1fr auto 0fr 1fr"
         columnGap="space040"
         alignItems="center"
       >
