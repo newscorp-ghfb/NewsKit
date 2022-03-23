@@ -128,16 +128,14 @@ export const getTransitionDuration = (
 
   if (isResponsive(token, props.theme.breakpoints)) {
     return Object.entries(token).reduce(
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      (acc, [bp, transitionPresetToken]) => {
-        let currentDuration;
-        if (isArrayLikeObject(transitionPresetToken)) {
-          const tokensArray = Object.values(transitionPresetToken) as string[];
-          currentDuration = extractDurationFromPreset(tokensArray, props.theme);
-        } else {
-          const tokensArray = [transitionPresetToken];
-          currentDuration = extractDurationFromPreset(tokensArray, props.theme);
-        }
+      (acc, [, transitionPresetToken]) => {
+        const tokensArray: string[] = isArrayLikeObject(transitionPresetToken)
+          ? Object.values(transitionPresetToken)
+          : [transitionPresetToken];
+        const currentDuration = extractDurationFromPreset(
+          tokensArray,
+          props.theme,
+        );
         return {
           appear: Math.max(currentDuration.appear, acc.appear),
           enter: Math.max(currentDuration.enter, acc.enter),
