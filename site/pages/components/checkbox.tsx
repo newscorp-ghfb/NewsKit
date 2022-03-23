@@ -819,31 +819,31 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           ),
           propsRows: commonPropsRows('FormInput'),
           overridesRows: commonOverridesRows,
-          propsFooter: (
-            <>
-              <Block spaceStack="space030" />
-              <InlineMessage
-                role="region"
-                aria-label="rules props"
-                title="Note"
-              >
-                The <InlineCode>name</InlineCode> &{' '}
-                <InlineCode>rules</InlineCode> props are set on the form input
-                level. If you want to add validation rules or set the name of
-                this component, please refer to the{' '}
-                <Link href="/components/form/">Form</Link> component
-              </InlineMessage>
-              <Block spaceStack="space050" />
-              <InlineMessage
-                role="region"
-                aria-label="engineer validation"
-                title="Note"
-              >
-                Engineer to check the validation related props at the time of
-                implementation.
-              </InlineMessage>
-            </>
-          ),
+          // propsFooter: (
+          //   <>
+          //     <Block spaceStack="space030" />
+          //     <InlineMessage
+          //       role="region"
+          //       aria-label="rules props"
+          //       title="Note"
+          //     >
+          //       The <InlineCode>name</InlineCode> &{' '}
+          //       <InlineCode>rules</InlineCode> props are set on the form input
+          //       level. If you want to add validation rules or set the name of
+          //       this component, please refer to the{' '}
+          //       <Link href="/components/form/">Form</Link> component
+          //     </InlineMessage>
+          //     <Block spaceStack="space050" />
+          //     <InlineMessage
+          //       role="region"
+          //       aria-label="engineer validation"
+          //       title="Note"
+          //     >
+          //       Engineer to check the validation related props at the time of
+          //       implementation.
+          //     </InlineMessage>
+          //   </>
+          // ),
         },
 
         {
