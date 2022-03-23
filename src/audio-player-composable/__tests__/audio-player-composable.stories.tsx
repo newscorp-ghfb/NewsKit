@@ -126,7 +126,7 @@ export const AudioPlayerE2E = () => (
       >
         <AudioPlayerSkipPreviousButton size={ButtonSize.Small} />
         <AudioPlayerSkipNextButton size={ButtonSize.Small} />
-        <span> - </span>
+        <span />
         <AudioPlayerSkipPreviousButton
           onClick={() => alert('Prev track clicked!')}
           overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}

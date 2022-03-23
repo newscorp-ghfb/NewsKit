@@ -453,6 +453,68 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   display: block;
 }
 
+.emotion-14 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #3358CC;
+  border-radius: 50%;
+  color: #FFFFFF;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-14 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-14 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-14:hover:not(:disabled) {
+  background-color: #2B4AAB;
+}
+
+.emotion-14:active:not(:disabled) {
+  background-color: #213A82;
+}
+
+.emotion-14:disabled {
+  background-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-14:disabled svg {
+  fill: #C0C0C0;
+}
+
 <section
     aria-label="Audio Player"
   >
@@ -551,6 +613,68 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
         </div>
       </div>
     </a>
+    <button
+      aria-label="next"
+      class="emotion-14"
+      data-testid="audio-player-skip-next-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-7 emotion-8"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+    <button
+      aria-label="previous"
+      class="emotion-14"
+      data-testid="audio-player-skip-previous-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-7 emotion-8"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
   </section>
 </DocumentFragment>
 `;
@@ -1825,6 +1949,80 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   display: block;
 }
 
+.emotion-13 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #3358CC;
+  border-radius: 50%;
+  color: #FFFFFF;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-13 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-13 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-13:hover:not(:disabled) {
+  background-color: #2B4AAB;
+}
+
+.emotion-13:active:not(:disabled) {
+  background-color: #213A82;
+}
+
+.emotion-13:disabled {
+  background-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-13:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-16 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  vertical-align: unset;
+  display: inline-block;
+}
+
 <section
     aria-label="Audio Player"
   >
@@ -1921,6 +2119,68 @@ exports[`Audio Player Composable should render with no errors 1`] = `
         </div>
       </div>
     </a>
+    <button
+      aria-label="next"
+      class="emotion-13"
+      data-testid="audio-player-skip-next-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-16 emotion-17"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+    <button
+      aria-label="previous"
+      class="emotion-13"
+      data-testid="audio-player-skip-previous-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-16 emotion-17"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
   </section>
 </DocumentFragment>
 `;

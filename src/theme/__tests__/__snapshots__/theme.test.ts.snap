@@ -1151,6 +1151,8 @@ Object {
       },
     },
   },
+  "audioPlayerSkipNext": Object {},
+  "audioPlayerSkipPrevious": Object {},
   "audioPlayerTimeDisplay": Object {
     "stylePreset": "timeDisplay",
     "typographyPreset": "utilityButton030",

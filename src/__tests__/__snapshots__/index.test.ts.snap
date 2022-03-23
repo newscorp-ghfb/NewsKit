@@ -11,6 +11,8 @@ Array [
   "AudioPlayerComposable",
   "AudioPlayerPlayPauseButton",
   "AudioPlayerSeekBar",
+  "AudioPlayerSkipNextButton",
+  "AudioPlayerSkipPreviousButton",
   "AudioPlayerTimeDisplay",
   "Banner",
   "Block",
