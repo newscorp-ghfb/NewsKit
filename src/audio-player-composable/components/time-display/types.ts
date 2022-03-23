@@ -7,11 +7,11 @@ export type FormatFn = ({
   currentTime: number;
   duration: number;
 }) => string;
-export interface StyledLabelProps {
+export type StyledLabelProps = {
   format?: FormatFn;
 
   overrides?: {
     typographyPreset?: MQ<string>;
     stylePreset?: MQ<string>;
   };
-}
+} & React.HTMLAttributes<HTMLSpanElement>;
