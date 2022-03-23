@@ -614,6 +614,8 @@ jobs:
       - run:
           name: bump version
           command: make bump_version NEW_VERSION=<< parameters.version >>
+      - slack/status:
+          <<: *slack_status
 
   publish_npm:
     parameters:
@@ -1153,6 +1155,15 @@ workflows:
       - init_aws:
           <<: *only_on_deploy_release
           context: ncu-product-platforms-context
+      - deploy_terraform:
+          <<: *only_on_deploy_release
+          name: deploy_terraform_dns_staging
+          package: dns
+          context: ncu-product-platforms-context
+          environment: staging
+          requires:
+            - init_aws
+
       - install_deps:
           <<: *only_on_deploy_release
       - install_cypress:
@@ -1222,6 +1233,7 @@ workflows:
             - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs_prod
+
       - publish_npm:
           <<: *only_on_deploy_release
           context: ncu-product-platforms-context
@@ -1232,13 +1244,30 @@ workflows:
             - test_e2e_comps
             - test_e2e_docs_prod
             - build_components
+
+      # Deploying newskit.co.uk and storybook to staging then to prod URLs.
+      - eks_flux_deploy:
+          name: eks_flux_deploy_staging
+          context: ncu-newskit-site-stage
+          environment: staging
+          <<: *only_on_deploy_release
+          requires:
+            - publish_npm
+            - build_push_docker_ecr_release
+      - eks_kubectl_deploy:
+          name: eks_kubectl_deploy_staging
+          context: ncu-newskit-site-stage
+          environment: staging
+          <<: *only_on_deploy_release
+          requires:
+            - eks_flux_deploy_staging
       - eks_flux_deploy:
           <<: *only_on_deploy_release
           name: eks_flux_deploy_prod
           context: ncu-newskit-site-prod
           environment: prod
           requires:
-            - publish_npm
+            - eks_kubectl_deploy_staging
       - eks_kubectl_deploy:
           <<: *only_on_deploy_release
           name: eks_kubectl_deploy_prod
@@ -1246,3 +1275,4 @@ workflows:
           environment: prod
           requires:
             - eks_flux_deploy_prod
+      # 
