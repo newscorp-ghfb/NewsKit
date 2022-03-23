@@ -6,7 +6,7 @@ export interface ComponentAPIProps {
 
 export interface SingleComponentAPIProps {
   title?: string;
-  summary?: string;
+  summary?: string | JSX.Element;
   propsSummary?: string;
   argsSummary?: string;
   overridesSummary?: string;
