@@ -24,14 +24,14 @@ import textFieldDefaults from '../text-field/defaults';
 import assistiveTextDefaults from '../assistive-text/defaults';
 import {RadioButton} from '../radio-button';
 
+const useFormFieldContext = () => useContext(FormInputContext);
+
 export type FormInputProps = {
   state?: FormInputState;
   size?: TextFieldSize;
   children?: JSX.Element | JSX.Element[];
   id?: string;
 } & Omit<FormEntryProps, 'children'>;
-
-const useFormFieldContext = () => useContext(FormInputContext);
 
 const ThemelessFormInput = ({
   name,
@@ -66,10 +66,7 @@ const ThemelessFormInput = ({
           `${currentID}-assistive-text`;
         const labelId = `${currentID}-label`;
 
-        const statusIcon = getStatusIcon({
-          state,
-          iconSize: validationIconSize,
-        });
+        const statusIcon = getStatusIcon({state, iconSize: validationIconSize});
 
         const isRequired = rules && rules.required !== undefined;
 
@@ -97,6 +94,13 @@ const ThemelessFormInput = ({
     </FormEntry>
   );
 };
+
+export const FormInput = withOwnTheme(ThemelessFormInput)({
+  defaults: {
+    ...textFieldDefaults,
+    ...assistiveTextDefaults,
+  },
+});
 
 export const FormInputTextField = React.forwardRef<
   HTMLInputElement,
@@ -145,13 +149,6 @@ export const FormInputTextField = React.forwardRef<
       {...props}
     />
   );
-});
-
-export const FormInput = withOwnTheme(ThemelessFormInput)({
-  defaults: {
-    ...textFieldDefaults,
-    ...assistiveTextDefaults,
-  },
 });
 
 export const FormInputLabel = ({children, ...props}: LabelProps) => {
