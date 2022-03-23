@@ -519,8 +519,8 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           ),
         },
       ],
-      // notice:
-      //   'The Feedback element becomes visible (configurable) on state change, eg hover.',
+      notice:
+        'The Feedback element becomes visible (configurable) on state change, eg hover.',
     }}
     behaviors={{
       introduction:

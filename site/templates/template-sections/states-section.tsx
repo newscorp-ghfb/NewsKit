@@ -1,5 +1,5 @@
 import React from 'react';
-// import {Block, InlineMessage, IconFilledInfo} from 'newskit';
+import {Block, InlineMessage, IconFilledInfo} from 'newskit';
 import {MediaList, MediaListProps} from '../../components/media-list';
 import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
@@ -7,13 +7,13 @@ import {ComponentPageCell} from '../../components/layout-cells';
 
 export type StatesSectionProps = MediaListProps & IntroductionText;
 
-// const infoIcon = (
-//   <IconFilledInfo
-//     overrides={{
-//       size: 'iconSize020',
-//     }}
-//   />
-// );
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
+);
 
 export const StatesSection: React.FC<StatesSectionProps> = ({
   introduction,
@@ -24,7 +24,7 @@ export const StatesSection: React.FC<StatesSectionProps> = ({
   <CommonSection title="States" id="states" introduction={introduction}>
     <ComponentPageCell>
       <MediaList {...states} layout={layout || '2-span'} />
-      {/* {notice && (
+      {notice && (
         <>
           <Block spaceStack="space070" />
           <InlineMessage
@@ -35,7 +35,7 @@ export const StatesSection: React.FC<StatesSectionProps> = ({
             {notice}
           </InlineMessage>
         </>
-      )} */}
+      )}
     </ComponentPageCell>
   </CommonSection>
 );
