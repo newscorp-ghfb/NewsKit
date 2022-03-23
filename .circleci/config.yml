@@ -869,7 +869,8 @@ workflows:
   pr:
     when:
       matches:
-          pattern: '^feat\/.*|bugfix\/.*|docs\/.*'
+          # Supporting Pr branches starting with feat/, docs/, fix/, chore/, style/, refactor/, perf/, test/
+          pattern: '^feat\/.*|docs\/.*|fix\/.*|chore\/.*|style\/.*|refactor\/.*|perf\/.*|test\/.*'
           value: << pipeline.git.branch >>
     jobs:
       - install_deps
