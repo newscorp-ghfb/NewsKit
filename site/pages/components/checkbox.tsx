@@ -589,7 +589,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="validation"
+                aria-label="formInput checkbox validation"
                 title="Note"
               >
                 Validation only works if the FormInput Checkbox uses the Form
@@ -798,7 +798,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           The Checkbox has a range of props that can be used to define an
           appropriate experience for different use cases.
           <Block spaceStack="space080" />
-          <InlineMessage role="region" aria-label="apiintro">
+          <InlineMessage role="region" aria-label="api introduction">
             There are two components exported from the package, one for use
             within the{' '}
             <Link href="/components/form/">NewsKit Form component</Link>, and
@@ -824,15 +824,21 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
               <Block spaceStack="space030" />
               <InlineMessage
                 role="region"
-                aria-label="props notice"
+                aria-label="rules props"
                 title="Note"
               >
                 The <InlineCode>name</InlineCode> &{' '}
                 <InlineCode>rules</InlineCode> props are set on the form input
                 level. If you want to add validation rules or set the name of
                 this component, please refer to the{' '}
-                <Link href="/components/form/">Form</Link> component <br />
-                <br />
+                <Link href="/components/form/">Form</Link> component
+              </InlineMessage>
+              <Block spaceStack="space050" />
+              <InlineMessage
+                role="region"
+                aria-label="engineer validation"
+                title="Note"
+              >
                 Engineer to check the validation related props at the time of
                 implementation.
               </InlineMessage>
