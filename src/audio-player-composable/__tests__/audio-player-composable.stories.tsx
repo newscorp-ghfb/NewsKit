@@ -211,7 +211,7 @@ export const AudioPlayerForwardReplayButton = () => (
     <StorybookSubHeading>with overrides</StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player skip buttons"
+      ariaLandmark="audio player skip buttons override"
     >
       <GridLayout rowGap="20px" areas={fullAudioPlayerAreas}>
         {Areas => (
