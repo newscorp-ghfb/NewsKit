@@ -115,13 +115,36 @@ const getMergedTransitionPresets = (token: TransitionToken[], theme: Theme) => {
   return mergedTransitionPresets;
 };
 
+const setDurationZero = (
+  transitionPreset: Record<string, TransitionPresetStyles>,
+) => {
+  const presetWithoutDuration = {} as Record<string, TransitionPresetStyles>;
+  Object.keys(transitionPreset).map(key => {
+    const stateObj = transitionPreset[key];
+    presetWithoutDuration[key] = {...stateObj};
+
+    if ('transitionDuration' in presetWithoutDuration[key]) {
+      presetWithoutDuration[key].transitionDuration = '0ms';
+    }
+    return presetWithoutDuration;
+  });
+  return presetWithoutDuration;
+};
+
+const NO_PREFERENCE = '(prefers-reduced-motion: no-preference)';
+const REDUCED = '(prefers-reduced-motion: reduce)';
+const NO_PREFERENCE_MQ = `@media screen and ${NO_PREFERENCE}`;
+const REDUCED_MQ = `@media screen and ${REDUCED}`;
+
+const combineMediaQuery = (layoutMQ: string, motionMQ: string): string =>
+  `${layoutMQ} and ${motionMQ}`;
+
 export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
   token: MQ<TransitionToken> | MQ<TransitionToken[]>,
   componentClassName?: string,
 ) => (props: Props) => {
   /* istanbul ignore if */
   if (!token) return '';
-
   if (isResponsive(token, props.theme.breakpoints)) {
     return Object.entries(token).reduce(
       (acc, [key, transitionPresetToken], index, arr) => {
@@ -134,14 +157,24 @@ export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
           theme: props.theme,
         });
 
+        const mediaQueryReduced = combineMediaQuery(mediaQuery, REDUCED);
+        const mediaQueryNoPreference = combineMediaQuery(
+          mediaQuery,
+          NO_PREFERENCE,
+        );
+
         if (Array.isArray(transitionPresetToken)) {
           const mergedTransitionPresets = getMergedTransitionPresets(
             transitionPresetToken as TransitionToken[],
             props.theme,
           );
 
-          acc[mediaQuery] = getTransitionPresetValueFromTheme(
+          acc[mediaQueryNoPreference] = getTransitionPresetValueFromTheme(
             mergedTransitionPresets,
+            componentClassName,
+          );
+          acc[mediaQueryReduced] = getTransitionPresetValueFromTheme(
+            setDurationZero(mergedTransitionPresets),
             componentClassName,
           );
         } else {
@@ -150,12 +183,16 @@ export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
             transitionPresetToken,
           );
 
-          acc[mediaQuery] = getTransitionPresetValueFromTheme(
+          acc[mediaQueryNoPreference] = getTransitionPresetValueFromTheme(
             transitionPreset,
             componentClassName,
           );
-        }
 
+          acc[mediaQueryReduced] = getTransitionPresetValueFromTheme(
+            setDurationZero(transitionPreset),
+            componentClassName,
+          );
+        }
         return acc;
       },
       {} as {[index: string]: CSSObject},
@@ -168,12 +205,19 @@ export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
       props.theme,
     );
 
-    return Object.keys(mergedTransitionPresets).length
-      ? getTransitionPresetValueFromTheme(
+    if (Object.keys(mergedTransitionPresets).length) {
+      return {
+        [NO_PREFERENCE_MQ]: getTransitionPresetValueFromTheme(
           mergedTransitionPresets,
           componentClassName,
-        )
-      : '';
+        ),
+        [REDUCED_MQ]: getTransitionPresetValueFromTheme(
+          setDurationZero(mergedTransitionPresets),
+          componentClassName,
+        ),
+      };
+    }
+    return '';
   }
 
   const transitionPreset = unifyTransition(
@@ -181,9 +225,19 @@ export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
     token as TransitionToken,
   );
 
-  return transitionPreset
-    ? getTransitionPresetValueFromTheme(transitionPreset, componentClassName)
-    : '';
+  if (transitionPreset) {
+    return {
+      [NO_PREFERENCE_MQ]: getTransitionPresetValueFromTheme(
+        transitionPreset,
+        componentClassName,
+      ),
+      [REDUCED_MQ]: getTransitionPresetValueFromTheme(
+        setDurationZero(transitionPreset),
+        componentClassName,
+      ),
+    };
+  }
+  return '';
 };
 
 const getDefaultedValue = <
