@@ -135,7 +135,7 @@ AudioPlayerE2E.storyName = 'audio-player-e2e';
 export const AudioPlayPauseButton = () => (
   <AudioPlayerComposable
     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    ariaLandmark="audio player"
+    ariaLandmark="audio player play pause button"
   >
     <AudioPlayerPlayPauseButton
       onClick={() => {
@@ -341,7 +341,7 @@ export const AudioPlayerKeyboard = () => (
     <StorybookSubHeading>Audio Player Keyboard shortcuts</StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player inline"
+      ariaLandmark="audio player keyboard"
     >
       <GridLayout
         columns="auto auto 1fr auto"
@@ -378,7 +378,7 @@ export const AudioPlayerKeyboard = () => (
     </StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player inline"
+      ariaLandmark="audio player keyboard overrides"
       keyboardShortcuts={{jumpToStart: 's', jumpToEnd: 'e'}}
     >
       <GridLayout
