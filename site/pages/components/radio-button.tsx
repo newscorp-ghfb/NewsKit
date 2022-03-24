@@ -188,7 +188,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="radio"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v5.3',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/radio-button',
@@ -253,7 +253,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Icon',
           description:
-            'The icon that appears within the Checkbox input can be overridden for the different Checkbox states.',
+            'The icon that appears within the Radio Button input can be overridden across different states.',
           media: getIllustrationComponent(
             'components/radio-button/options/icon',
           ),
