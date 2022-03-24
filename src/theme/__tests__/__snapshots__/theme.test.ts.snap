@@ -1133,6 +1133,12 @@ Object {
       },
     },
   },
+  "audioPlayerForwardButton": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
+  "audioPlayerReplayButton": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
   "audioPlayerSeekBar": Object {
     "buffering": Object {
       "stylePreset": "seekBarBuffering",
