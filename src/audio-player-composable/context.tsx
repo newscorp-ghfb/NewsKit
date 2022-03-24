@@ -10,7 +10,6 @@ interface AudioPlayerProviderContext {
   canPause: boolean;
   loading: boolean;
   togglePlay: () => void;
-
   // Getter functions
 
   getPlayPauseButtonProps: (args: {

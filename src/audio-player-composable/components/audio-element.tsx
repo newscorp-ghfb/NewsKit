@@ -19,7 +19,6 @@ export const AudioElement: React.FC<AudioElementProps> = ({
     ref={audioRef}
     autoPlay={autoPlay}
     src={src}
-    // override callback handlers
     onCanPlay={onCanPlay}
     onWaiting={onWaiting}
     onPlay={onPlay}
