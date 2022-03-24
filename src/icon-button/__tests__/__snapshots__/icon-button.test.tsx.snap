@@ -32,9 +32,6 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: progress;
 }
 
@@ -45,6 +42,22 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
 
 .emotion-0 svg {
   fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -165,9 +178,6 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -195,6 +205,22 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -232,11 +258,24 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <button
@@ -304,9 +343,6 @@ exports[`IconButton renders Large Icon Button 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -334,6 +370,22 @@ exports[`IconButton renders Large Icon Button 1`] = `
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -371,11 +423,24 @@ exports[`IconButton renders Large Icon Button 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <button
@@ -444,9 +509,6 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -474,6 +536,22 @@ exports[`IconButton renders Medium Icon Button 1`] = `
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -511,11 +589,24 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <button
@@ -584,9 +675,6 @@ exports[`IconButton renders Small Icon Button 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -614,6 +702,22 @@ exports[`IconButton renders Small Icon Button 1`] = `
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -651,11 +755,24 @@ exports[`IconButton renders Small Icon Button 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <button
@@ -724,9 +841,6 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -754,6 +868,22 @@ exports[`IconButton renders icon button link when href passed 1`] = `
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -791,11 +921,24 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <a
@@ -867,9 +1010,6 @@ exports[`IconButton renders with different style preset 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -899,6 +1039,22 @@ exports[`IconButton renders with different style preset 1`] = `
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -936,11 +1092,24 @@ exports[`IconButton renders with different style preset 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <button

@@ -2,7 +2,7 @@ import * as React from 'react';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import 'react-phone-number-input/style.css';
-import {Form, FormRef} from '..';
+import {Form, FormInput, FormInputCheckbox, FormRef} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -365,3 +365,42 @@ export const StoryFormWithCustomStyles = () => {
   );
 };
 StoryFormWithCustomStyles.storyName = 'form-with-custom-styles';
+
+export const StoryFormWithTextInputAndFormInput = () => (
+  <>
+    <StorybookHeading>Use Tab to move through the inputs</StorybookHeading>
+    <Block spaceStack="space050" />
+    <Form onSubmit={onSubmit} validationMode="onBlur" reValidationMode="onBlur">
+      <Block spaceStack="space050">
+        <TextInput
+          label="Username"
+          name="username"
+          data-testid="username-input"
+          rules={{
+            required: 'Required field',
+          }}
+        />
+      </Block>
+      <Block spaceStack="space050">
+        <TextInput label="FAQ" name="faq" data-testid="faq-input" />
+      </Block>
+      <FormInput
+        name="small-checkbox"
+        rules={{
+          required: 'Required field',
+        }}
+      >
+        <FormInputCheckbox
+          label="I agree to the terms & conditions"
+          value="tc"
+          overrides={{spaceStack: 'space020'}}
+        />
+      </FormInput>
+      <Button type="submit" data-testid="submit-button">
+        Submit
+      </Button>
+    </Form>
+  </>
+);
+StoryFormWithTextInputAndFormInput.storyName =
+  'form-with-text-input-and-form-input';

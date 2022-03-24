@@ -32,9 +32,6 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: progress;
 }
 
@@ -45,6 +42,22 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
 
 .emotion-0 svg {
   fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -282,9 +295,6 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -312,6 +322,22 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 
 .emotion-4:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-5 {
@@ -349,85 +375,24 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-9 {
-  margin: 0;
-  display: inline-block;
-  display: block;
-  background-color: transparent;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
-.emotion-10 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3358CC;
-  margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  cursor: pointer;
-}
-
-.emotion-10 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-10 svg {
-  fill: #3358CC;
-}
-
-.emotion-10:hover:not(:disabled) {
-  background-color: #E0E7FF;
-}
-
-.emotion-10:active:not(:disabled) {
-  background-color: #AEBFFF;
-}
-
-.emotion-10:disabled {
-  background-color: transparent;
-  color: #C0C0C0;
-}
-
-.emotion-10:disabled svg {
-  fill: #C0C0C0;
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <section
@@ -741,9 +706,6 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: progress;
 }
 
@@ -754,6 +716,22 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
 
 .emotion-4 svg {
   fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-5 {
@@ -933,9 +911,6 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: progress;
 }
 
@@ -946,6 +921,22 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 
 .emotion-0 svg {
   fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -1065,9 +1056,6 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   border-radius: 50%;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -1095,6 +1083,22 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -1132,11 +1136,24 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <button
@@ -1204,9 +1221,6 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: progress;
 }
 
@@ -1217,6 +1231,22 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 
 .emotion-0 svg {
   fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -1425,9 +1455,6 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: progress;
 }
 
@@ -1438,6 +1465,22 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
 
 .emotion-4 svg {
   fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-5 {
@@ -1690,9 +1733,6 @@ exports[`Audio Player Composable should render correctly when in autoplay 2`] = 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: progress;
 }
 
@@ -1703,6 +1743,22 @@ exports[`Audio Player Composable should render correctly when in autoplay 2`] = 
 
 .emotion-4 svg {
   fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-5 {
@@ -1955,9 +2011,6 @@ exports[`Audio Player Composable should render default display time label 1`] = 
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: progress;
 }
 
@@ -1968,6 +2021,22 @@ exports[`Audio Player Composable should render default display time label 1`] = 
 
 .emotion-4 svg {
   fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-5 {
@@ -2384,9 +2453,6 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   border-radius: 50%;
   color: #3358CC;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: progress;
 }
 
@@ -2397,6 +2463,22 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 
 .emotion-4 svg {
   fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-5 {

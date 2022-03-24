@@ -14,20 +14,46 @@ exports[`IconFilledFacebook renders the IconFilledFacebook icon with specified s
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -49,20 +75,46 @@ exports[`IconFilledFacebook renders the IconFilledFacebook icon with title overr
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -97,20 +149,46 @@ exports[`IconFilledFigma renders the IconFilledFigma icon with specified style 1
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -148,20 +226,46 @@ exports[`IconFilledFigma renders the IconFilledFigma icon with title override 1`
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -212,20 +316,46 @@ exports[`IconFilledGitHub renders the IconFilledGitHub icon with specified style
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -247,20 +377,46 @@ exports[`IconFilledGitHub renders the IconFilledGitHub icon with title override 
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -295,20 +451,46 @@ exports[`IconFilledInstagram renders the IconFilledInstagram icon with specified
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -330,20 +512,46 @@ exports[`IconFilledInstagram renders the IconFilledInstagram icon with title ove
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -378,20 +586,46 @@ exports[`IconFilledReddit renders the IconFilledReddit icon with specified style
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -413,20 +647,46 @@ exports[`IconFilledReddit renders the IconFilledReddit icon with title override 
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -461,20 +721,46 @@ exports[`IconFilledTwitter renders the IconFilledTwitter icon with specified sty
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -496,20 +782,46 @@ exports[`IconFilledTwitter renders the IconFilledTwitter icon with title overrid
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -544,20 +856,46 @@ exports[`IconFilledWhatsApp renders the IconFilledWhatsApp icon with specified s
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -579,20 +917,46 @@ exports[`IconFilledWhatsApp renders the IconFilledWhatsApp icon with title overr
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -627,20 +991,46 @@ exports[`IconFilledYoutube renders the IconFilledYoutube icon with specified sty
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -662,20 +1052,46 @@ exports[`IconFilledYoutube renders the IconFilledYoutube icon with title overrid
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -699,19 +1115,45 @@ exports[`IconFilledYoutube renders the IconFilledYoutube icon with title overrid
 exports[`IconOutlinedigma renders the IconOutlinedigma icon from theme override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -749,20 +1191,46 @@ exports[`IconOutlinedigma renders the IconOutlinedigma icon with specified style
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -800,20 +1268,46 @@ exports[`IconOutlinedigma renders the IconOutlinedigma icon with title override 
 <DocumentFragment>
   .emotion-0 {
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -949,11 +1443,24 @@ exports[`customToNewsKit renders icon with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2E2E2E;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0.emotion-0 {
