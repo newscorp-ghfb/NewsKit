@@ -1131,11 +1131,24 @@ exports[`TextInput renders text input with leading icon 1`] = `
   overflow: hidden;
   color: #535353;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-4.emotion-4 {
@@ -1143,9 +1156,22 @@ exports[`TextInput renders text input with leading icon 1`] = `
   height: 24px;
   color: #535353;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4.emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4.emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-6 {
@@ -1481,11 +1507,24 @@ exports[`TextInput renders text input with overrides for leading and validation 
   overflow: hidden;
   color: #535353;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-4.emotion-4 {
@@ -1493,9 +1532,22 @@ exports[`TextInput renders text input with overrides for leading and validation 
   height: 24px;
   color: #535353;
   fill: #535353;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4.emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4.emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-6 {
