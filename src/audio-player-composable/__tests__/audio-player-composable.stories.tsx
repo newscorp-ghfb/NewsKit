@@ -13,7 +13,6 @@ import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
 import {Block} from '../../block';
 import {ButtonSize} from '../../button/types';
-import {Button} from '../../button';
 
 const AudioPlayerContainer = styled.div<{dark?: boolean}>`
   border: solid 1px red;
@@ -88,41 +87,6 @@ export const AudioPlayer = () => (
   </>
 );
 AudioPlayer.storyName = 'audio-player';
-
-export const AudioPlayerE2E = () => (
-  <div data-testid="audio-player-inline">
-    <StorybookSubHeading>Audio player for e2e tests</StorybookSubHeading>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player e2e tests"
-    >
-      <GridLayout
-        columns="auto auto 1fr auto auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
-        <AudioPlayerTimeDisplay
-          data-testid="audio-player-current-time"
-          format={({currentTime}) => calculateTime(currentTime)}
-        />
-        <AudioPlayerSeekBar />
-        <AudioPlayerTimeDisplay
-          data-testid="audio-player-duration"
-          format={({duration}) => calculateTime(duration)}
-        />
-        <Button
-          href="/"
-          size={ButtonSize.Small}
-          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-        >
-          read more
-        </Button>
-      </GridLayout>
-    </AudioPlayerComposable>
-  </div>
-);
-AudioPlayerE2E.storyName = 'audio-player-e2e';
 
 export const AudioPlayPauseButton = () => (
   <AudioPlayerComposable
