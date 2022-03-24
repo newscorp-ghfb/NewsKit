@@ -106,10 +106,10 @@ describe('audio player composable', () => {
 
     // move to the begining
     cy.get('@audioSliderTrack').click('left');
-    checkTime(1);
+    checkTime(0);
 
     // move to 4th minute
-    cy.get('@audioSliderTrack').click(448, 4);
+    cy.get('@audioSliderTrack').click(624, 4);
     checkTime(4 * 60);
   });
 
@@ -117,7 +117,7 @@ describe('audio player composable', () => {
     // start playing
     cy.get('@togglePlay').click();
     // move to the end
-    cy.get('@audioSliderTrack').click(695, 4, {force: true});
+    cy.get('@audioSliderTrack').click(1000, 4, {force: true});
     checkTime(TEST_DATA.durationInSeconds);
     isPaused();
   });
