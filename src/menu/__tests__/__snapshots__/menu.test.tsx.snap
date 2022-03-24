@@ -76,9 +76,6 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -129,6 +126,22 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
 
 .emotion-3:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-4 {
@@ -435,9 +448,6 @@ exports[`Menu renders horizontally with menu group 1`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -488,6 +498,22 @@ exports[`Menu renders horizontally with menu group 1`] = `
 
 .emotion-3:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-4 {
@@ -720,9 +746,6 @@ exports[`Menu renders horizontally with menu items 1`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -773,6 +796,22 @@ exports[`Menu renders horizontally with menu items 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -1008,9 +1047,6 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   border-width: 0 2px 0 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -1062,6 +1098,22 @@ exports[`Menu renders vertically with menu dividers 1`] = `
 
 .emotion-3:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-4 {
@@ -1366,9 +1418,6 @@ exports[`Menu renders vertically with menu group 1`] = `
   border-width: 0 2px 0 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -1420,6 +1469,22 @@ exports[`Menu renders vertically with menu group 1`] = `
 
 .emotion-3:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-4 {
@@ -1655,9 +1720,6 @@ exports[`Menu renders vertically with menu items 1`] = `
   border-width: 0 2px 0 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -1709,6 +1771,22 @@ exports[`Menu renders vertically with menu items 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -1932,9 +2010,6 @@ exports[`Menu renders with Large size menu items 1`] = `
   border-width: 0 2px 0 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -1986,6 +2061,22 @@ exports[`Menu renders with Large size menu items 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -2206,9 +2297,6 @@ exports[`Menu renders with Large size menu items 2`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -2259,6 +2347,22 @@ exports[`Menu renders with Large size menu items 2`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -2482,9 +2586,6 @@ exports[`Menu renders with Medium size menu items 1`] = `
   border-width: 0 2px 0 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -2536,6 +2637,22 @@ exports[`Menu renders with Medium size menu items 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -2756,9 +2873,6 @@ exports[`Menu renders with Medium size menu items 2`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -2809,6 +2923,22 @@ exports[`Menu renders with Medium size menu items 2`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -3032,9 +3162,6 @@ exports[`Menu renders with Small size menu items 1`] = `
   border-width: 0 2px 0 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -3086,6 +3213,22 @@ exports[`Menu renders with Small size menu items 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -3306,9 +3449,6 @@ exports[`Menu renders with Small size menu items 2`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -3359,6 +3499,22 @@ exports[`Menu renders with Small size menu items 2`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -3579,9 +3735,6 @@ exports[`Menu renders with default props 1`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -3632,6 +3785,22 @@ exports[`Menu renders with default props 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -3855,9 +4024,6 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
   border-width: 0 2px 0 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -3909,6 +4075,22 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -4129,9 +4311,6 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -4182,6 +4361,22 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -4405,9 +4600,6 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
   border-width: 0 2px 0 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -4459,6 +4651,22 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -4679,9 +4887,6 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -4732,6 +4937,22 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -4955,9 +5176,6 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
   border-width: 0 2px 0 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -5009,6 +5227,22 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -5229,9 +5463,6 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -5282,6 +5513,22 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -5777,9 +6024,6 @@ exports[`MenuGroup renders with overrides 1`] = `
   border-width: 0 2px 0 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -5831,6 +6075,22 @@ exports[`MenuGroup renders with overrides 1`] = `
 
 .emotion-5:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-5 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-5 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-6 {
@@ -6057,11 +6317,24 @@ exports[`MenuGroup renders with title as a component 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3.emotion-3 {
@@ -6106,9 +6379,6 @@ exports[`MenuGroup renders with title as a component 1`] = `
   border-width: 0 2px 0 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -6160,6 +6430,22 @@ exports[`MenuGroup renders with title as a component 1`] = `
 
 .emotion-8:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-9 {
@@ -6474,9 +6760,6 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   border-width: 0 2px 0 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -6528,6 +6811,22 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 
 .emotion-5:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-5 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-5 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-6 {
@@ -6813,9 +7112,6 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   border-width: 0 2px 0 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -6867,6 +7163,22 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 
 .emotion-5:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-5 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-5 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-6 {
@@ -7105,9 +7417,6 @@ exports[`MenuItem renders in Large size 1`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -7158,6 +7467,22 @@ exports[`MenuItem renders in Large size 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -7309,9 +7634,6 @@ exports[`MenuItem renders in Medium size 1`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -7362,6 +7684,22 @@ exports[`MenuItem renders in Medium size 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -7513,9 +7851,6 @@ exports[`MenuItem renders in Small size 1`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -7566,6 +7901,22 @@ exports[`MenuItem renders in Small size 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -7717,9 +8068,6 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -7770,6 +8118,22 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -7922,9 +8286,6 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   background-color: transparent;
   border-style: solid;
@@ -7982,6 +8343,22 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   fill: #C0C0C0;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-2 svg {
   fill: #2E2E2E;
 }
@@ -8030,11 +8407,24 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-5 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-5 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-8 {
@@ -8177,9 +8567,6 @@ exports[`MenuItem renders with default props 1`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -8230,6 +8617,22 @@ exports[`MenuItem renders with default props 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -8381,9 +8784,6 @@ exports[`MenuItem renders with icon 1`] = `
   border-width: 0 0 2px 0;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -8436,6 +8836,22 @@ exports[`MenuItem renders with icon 1`] = `
   fill: #C0C0C0;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8471,11 +8887,24 @@ exports[`MenuItem renders with icon 1`] = `
   vertical-align: middle;
   overflow: hidden;
   fill: #2E2E2E;
-  transition-property: fill;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-5 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-5 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-8 {
@@ -8617,9 +9046,6 @@ exports[`MenuItem renders with overrides 1`] = `
   border-width: 0px 8px 0px 0px;
   color: red;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -8635,6 +9061,22 @@ exports[`MenuItem renders with overrides 1`] = `
 
 .emotion-2 svg {
   fill: grey;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
