@@ -24,7 +24,7 @@ const ThemelessAudioPlayerReplayButton: React.FC<AudioPlayerIconButtonProps> = R
     return (
       <IconButton
         data-testid="audio-player-replay-button"
-        size={props.size || ButtonSize.Medium}
+        size={ButtonSize.Medium}
         overrides={audioPlayerReplayOverrides}
         {...propsFromContex}
       />

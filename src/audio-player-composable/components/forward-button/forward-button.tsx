@@ -24,7 +24,7 @@ const ThemelessAudioPlayerForwardButton: React.FC<AudioPlayerIconButtonProps> = 
     return (
       <IconButton
         data-testid="audio-player-forward-button"
-        size={props.size || ButtonSize.Medium}
+        size={ButtonSize.Medium}
         overrides={audioPlayerForwardOverrides}
         {...propsFromContex}
       />

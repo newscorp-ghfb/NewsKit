@@ -43,3 +43,4 @@ export const AudioPlayerE2E = () => (
   </div>
 );
 AudioPlayerE2E.storyName = 'audio-player-e2e';
+AudioPlayerE2E.parameters = {eyes: {include: false}};
