@@ -17,18 +17,17 @@ const infoIcon = (
   />
 );
 
-const commonPropsRows = [
+const commonPropsRows = (type?: string) => [
+  {
+    name: 'state',
+    type: ['valid', 'invalid', 'disabled'],
+    description: `If true, renders the ${type} Radio Button in a valid, invalid, or disabled state. It can be submitted within a form.`,
+  },
   {
     name: 'size',
     type: ['small', 'medium', 'large'],
     default: 'medium',
-    description: 'Defines the size of the RadioButton.',
-  },
-  {
-    name: 'state',
-    type: ['valid', 'invalid', 'disabled'],
-    description:
-      'If provided, renders the RadioButton in a valid, invalid, or disabled state. It can be submitted within a form.',
+    description: `Defines the size of the ${type} Radio Button.`,
   },
   {
     name: 'labelPosition',
@@ -38,7 +37,7 @@ const commonPropsRows = [
   },
   {
     name: 'labelAttributes',
-    type: 'LabelHTMLAttributes',
+    type: 'React.LabelHTMLAttributes<HTMLLabelElement>',
     default: '',
     description: 'Used to pass HTML attributes to the Label.',
   },
@@ -46,87 +45,100 @@ const commonPropsRows = [
 
 const commonOverridesRows = [
   {
-    attribute: 'spaceStack',
+    attribute: 'radioButton.size',
+    type: ['small', 'medium', 'large'],
+    default: ['Small = sizing050', 'Medium = sizing060', 'Large =sizing070'],
+    description: `If provided, this overrides the size of the Radio Button input.`,
+  },
+  {
+    attribute: 'radioButton.stylePreset',
     type: 'MQ<string>',
-    default: 'space000',
+    default: 'inputField',
+    description: `If provided, overrides the stylePreset of the Radio Button input.`,
+  },
+  {
+    attribute: 'radioButton.transitionPreset',
+    type: 'MQ<string>',
+    default: ['backgroundColorChange', 'borderColorChange'],
+    description: `If provided, overrides the transitionPreset of the Radio Button input.`,
+  },
+  {
+    attribute: 'radioButton.spaceInline',
+    type: 'MQ<string>',
+    default: [
+      'Small = spaceInline030',
+      'Medium = spaceInline030',
+      'Large = spaceInline040',
+    ],
+    description: `If provided, this overrides the inline space between the Radio Button input and Label.`,
+  },
+  {
+    attribute: 'radioButton.spaceStack',
+    type: 'MQ<string>',
+    default: '',
     description: `If provided, this overrides the stack space applied to the Radio Button.`,
   },
   {
-    attribute: 'input.stylePreset',
+    attribute: 'radioButton.icon',
     type: 'MQ<string>',
-    default: 'radioButtonInput',
-    description:
-      'If provided, overrides the stylePreset of the Radio Button input.',
+    default: 'circle',
+    description: `If provided, overrides the Radio Button icon.`,
   },
   {
-    attribute: 'input.size',
+    attribute: 'radioButton.icon.size',
     type: 'MQ<string>',
-    default: ['small = sizing050', 'medium = sizing060', 'large = sizing070'],
-    description:
-      'If provided, this overrides the size of the Radio Button input.',
+    default: [
+      'Small = iconSize010',
+      'Medium = iconSize020',
+      'Large = iconSize030',
+    ],
+    description: `If provided, overrides the size of the Radio Button icon.`,
   },
   {
-    attribute: 'input.spaceInline',
+    attribute: 'radioButton.icon.stylePreset',
     type: 'MQ<string>',
-    default: ['small = space030', 'medium = space030', 'large = space040'],
-    description:
-      'If provided, this overrides the inline space between the Radio Button input and Label.',
+    default: 'interactiveInput040',
+    description: `If provided, overrides the stylePreset of the Radio Button icon.`,
   },
   {
-    attribute: 'input.transitionPreset',
+    attribute: 'radioButton.icon.transitionPreset',
     type: 'MQ<string>',
-    default: ['backgroundColorChange', 'borderColorChange'],
-    description:
-      'If provided, overrides the transitionPreset of the Radio Button input.',
+    default: 'iconColorChange',
+    description: `If provided, overrides the transitionPreset of the Radio Button icon.`,
   },
   {
     attribute: 'feedback.size',
-    type: 'MQ<string>',
-    default: ['small = sizing070', 'medium = sizing080', 'large = sizing090'],
-    description:
-      'If provided, this overrides the size of the feedback element.',
+    type: 'feedbackSize',
+    default: ['Small = sizing070', 'Medium = sizing080', 'Large = sizing090'],
+    description: `If provided, this overrides the size of the feedback element.`,
   },
   {
     attribute: 'feedback.stylePreset',
-    type: 'MQ<string>',
-    default: 'radioButtonFeedback',
-    description:
-      'If provided, this overrides the stylePreset of the feedback element.',
-  },
-  // THIS IS NOT IMPLEMENTED YET, UNCOMMENT WHEN THIS FUNCTIONALITY IS ADDED
-  // {
-  //   attribute: 'feedback.transitionPreset',
-  //   type: 'MQ<string>',
-  //   default: ['fade', 'grow'],
-  //   description:
-  //     'If provided, overrides the transitionPreset of the feedback element.',
-  // },
-  {
-    attribute: 'label.stylePreset',
-    type: 'MQ<string>',
-    default: 'controlLabel',
-    description: 'If provided, this overrides the stylePreset of the Label.',
+    type: 'feedbackSize',
+    default: '',
+    description: `If provided, this overrides the stylePreset of the feedback element.`,
   },
   {
-    attribute: 'label.typographyPreset',
+    attribute: 'feedback.transitionPreset',
+    type: 'MQ<string>',
+    default: 'fade',
+    description: `If provided, overrides the transitionPreset of the feedback element.`,
+  },
+  {
+    attribute: 'radioButton.label.typographyPreset',
     type: 'MQ<string>',
     default: [
-      'small = utilityBody020',
-      'medium = utilityBody020',
-      'large = utilityBody030',
+      'Small = utilityBody020',
+      'Medium = utilityBody020',
+      'Large = utilityBody030',
     ],
-    description:
-      'If provided, this overrides the typographyPreset of the Label.',
+    description: `If provided, this overrides the typographyPreset of the Label.`,
   },
   {
-    attribute: 'icon.size',
+    attribute: 'radioButton.label.stylePreset',
     type: 'MQ<string>',
-    default: [
-      'small = iconSize010',
-      'medium = iconSize020',
-      'large = iconSize030',
-    ],
-    description: 'If provided, overrides the size of the Radio Button icon.',
+    default: 'inkBase',
+    description: `If provided, this overrides the stylePreset of the Label.`,
   },
 ];
 
@@ -807,17 +819,25 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           <Block spaceStack="space080" />
           <InlineMessage>
             There are three components exported from the package; one for use
-            within the NewsKit Form component, one for use as a controlled
-            component, and the RadioGroup component that is used to group Radio
-            Buttons together.
+            within the{' '}
+            <Link href="/components/form/">NewsKit Form component</Link>, one
+            for use as a controlled component, and the RadioGroup component that
+            is used to group Radio Buttons together.
           </InlineMessage>
         </>
       ),
       components: [
         {
-          title: 'FormInputRadioButton',
-          summary: `The FormInput Radio Button has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.`,
-          propsRows: commonPropsRows,
+          title: 'FormInput Radio Button',
+          summary: (
+            <>
+              The FormInput Radio Button has a range of props that can be used
+              to define an appropriate experience for different use cases. Use
+              this component within the{' '}
+              <Link href="/components/form/">NewsKit Form component</Link>.
+            </>
+          ),
+          propsRows: commonPropsRows('FormInput'),
           overridesRows: commonOverridesRows,
         },
         {
@@ -827,10 +847,15 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
             {
               name: 'name',
               type: 'string',
-              description:
-                'If provided, defines name of the input element, used when submitting an HTML form.',
+              description: (
+                <>
+                  If provided, defines name of the input element, used when
+                  submitting an{' '}
+                  <Link href="/components/radio-button/">HTML form</Link>.
+                </>
+              ),
             },
-            ...commonPropsRows,
+            ...commonPropsRows(),
           ],
           overridesRows: commonOverridesRows,
         },
