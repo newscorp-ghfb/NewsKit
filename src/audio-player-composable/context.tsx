@@ -1,6 +1,8 @@
 import {ReactJSXElement} from '@emotion/react/types/jsx-namespace';
 import {createContext, useContext} from 'react';
+import {IconButtonProps} from '../button';
 import {FormatFn} from './components/time-display/types';
+import {AudioPlayerIconButtonProps} from './types';
 
 interface AudioPlayerProviderContext {
   id: string;
@@ -33,6 +35,8 @@ interface AudioPlayerProviderContext {
     onChange: (value: number) => void;
     buffered: TimeRanges | undefined;
   };
+  getForwardButtonProps: (props: AudioPlayerIconButtonProps) => IconButtonProps;
+  getReplayButtonProps: (props: AudioPlayerIconButtonProps) => IconButtonProps;
 }
 
 export const AudioPlayerContext = createContext<

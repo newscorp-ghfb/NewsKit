@@ -1,3 +1,6 @@
+import {IconButtonProps} from '../icon-button/types';
+import {Optional} from '../utils/types';
+
 export interface AudioFunctionDependencies {
   onPreviousTrack: () => void;
   onNextTrack: () => void;
@@ -55,3 +58,8 @@ export enum AudioEvents {
   TimeUpdate = 'onTimeUpdate',
   Progress = 'onProgress',
 }
+
+export type AudioPlayerIconButtonProps = Optional<
+  IconButtonProps,
+  'aria-label'
+>;

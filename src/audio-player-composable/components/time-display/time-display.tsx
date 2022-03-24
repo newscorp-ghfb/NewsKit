@@ -16,12 +16,13 @@ const StyledTextBlock = styled(TextBlock)<StyledLabelProps>`
 export const ThemelessTimeDisplay = ({
   overrides = {},
   format,
+  ...restProps
 }: StyledLabelProps) => {
   const {getTimeDisplayProps} = useAudioPlayerContext();
   const {format: defaultFormat, currentTime, duration} = getTimeDisplayProps!();
   const formatFn = typeof format === 'function' ? format : defaultFormat;
   return (
-    <StyledTextBlock as="span" overrides={overrides}>
+    <StyledTextBlock as="span" overrides={overrides} {...restProps}>
       {formatFn({currentTime, duration})}
     </StyledTextBlock>
   );

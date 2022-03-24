@@ -7,10 +7,11 @@ import {AudioPlayerPlayPauseButton} from '../components/play-pause-button/play-p
 import {AudioPlayerSeekBar} from '../components/seek-bar/seek-bar';
 import {AudioPlayerComposableProps} from '../types';
 import {AudioPlayerTimeDisplay} from '../components/time-display/time-display';
-
 import {formatFunction} from '../components/time-display/utils';
 import {compileTheme, createTheme} from '../../theme';
 import seekBarStylePresets from '../components/seek-bar/style-presets';
+import {AudioPlayerForwardButton} from '../components/forward-button/forward-button';
+import {AudioPlayerReplayButton} from '../components/replay-button/replay-button';
 
 const version = '0.10.0';
 
@@ -23,6 +24,17 @@ const recordedAudioProps: AudioPlayerComposableProps = {
       <AudioPlayerPlayPauseButton
         onClick={() => {
           console.log('customer click function');
+        }}
+      />
+      <AudioPlayerTimeDisplay data-testid="audio-player-time-display" />
+      <AudioPlayerForwardButton
+        onClick={() => {
+          console.log('customer click function for forward');
+        }}
+      />
+      <AudioPlayerReplayButton
+        onClick={() => {
+          console.log('customer click function for replay');
         }}
       />
     </>
@@ -135,7 +147,7 @@ describe('Audio Player Composable', () => {
   const mediaElement = (window as any).HTMLMediaElement.prototype;
 
   beforeAll(() => {
-    ['duration', 'seekable', 'buffered'].forEach(k => {
+    ['duration', 'seekable', 'buffered', 'paused'].forEach(k => {
       Object.defineProperty(mediaElement, k, {
         writable: true,
       });
@@ -143,8 +155,17 @@ describe('Audio Player Composable', () => {
   });
 
   beforeEach(() => {
-    ['load', 'play', 'pause'].forEach(k => {
-      mediaElement[k] = jest.fn();
+    mediaElement.load = jest.fn(() => {
+      mediaElement.duration = 100;
+    });
+    mediaElement.play = jest.fn(() => {
+      mediaElement.paused = false;
+    });
+    mediaElement.pause = jest.fn(() => {
+      mediaElement.paused = true;
+    });
+    mediaElement.onDurationChange = jest.fn(val => {
+      mediaElement.duration = val;
     });
     window.open = jest.fn();
     jest.useFakeTimers('legacy');
@@ -177,11 +198,37 @@ describe('Audio Player Composable', () => {
 
     fireEvent.canPlay(getByTestId('audio-element'));
     fireEvent.click(playPauseButton);
-    expect(audioElement.play).toHaveBeenCalled();
+    expect(audioElement.paused).toBe(false);
     fireEvent.click(playPauseButton);
-    expect(audioElement.pause).toHaveBeenCalled();
+    expect(audioElement.paused).toBe(true);
   });
+  it('should skip 10 seconds with forwad or replay button button click', () => {
+    const {getByTestId} = renderWithTheme(
+      AudioPlayerComposable,
+      recordedAudioProps,
+    );
 
+    const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+    fireEvent.durationChange(audioElement, {
+      target: {
+        duration: 6610,
+      },
+    });
+    const forwardButton = getByTestId('audio-player-forward-button');
+    const replayButton = getByTestId('audio-player-replay-button');
+    fireEvent.canPlay(getByTestId('audio-element'));
+    fireEvent.click(getByTestId('audio-player-play-pause-button'));
+
+    expect(audioElement.play).toHaveBeenCalled();
+
+    fireEvent.click(forwardButton);
+    fireEvent.click(forwardButton);
+
+    expect(audioElement.currentTime).toEqual(20);
+
+    fireEvent.click(replayButton);
+    expect(audioElement.currentTime).toEqual(10);
+  });
   it('should phasing playPause button loading state as expected', () => {
     const {getByTestId} = renderWithTheme(
       AudioPlayerComposable,
