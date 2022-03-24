@@ -6,7 +6,7 @@ export interface BaseDialogOverridesProps {
   overlay?: {
     zIndex?: number;
     stylePreset?: MQ<string>;
-    transitionPreset?: TransitionToken | TransitionToken[];
+    transitionPreset?: MQ<TransitionToken> | MQ<TransitionToken[]>;
   };
   panel?: {
     zIndex?: number;

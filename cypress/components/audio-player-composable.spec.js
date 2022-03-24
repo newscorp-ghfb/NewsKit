@@ -58,7 +58,7 @@ describe('audio player composable', () => {
   const parentTestIDSelector = '[data-testid="audio-player-inline"]';
 
   beforeEach(() => {
-    cy.visit('?name=audio-player-composable');
+    cy.visit('?name=audio-player-composable-e2e');
 
     cy.get(`${parentTestIDSelector}`).as('container');
 
@@ -77,7 +77,12 @@ describe('audio player composable', () => {
     cy.get(`${parentTestIDSelector} [data-testid="audio-slider-track"]`).as(
       'audioSliderTrack',
     );
-
+    cy.get(
+      `${parentTestIDSelector} [data-testid="audio-player-forward-button"]`,
+    ).as('forwardButton');
+    cy.get(
+      `${parentTestIDSelector} [data-testid="audio-player-replay-button"]`,
+    ).as('backwardButton');
     cy.get(
       `${parentTestIDSelector} [data-testid="audio-player-current-time"]`,
     ).as('audioCurrentTime');
@@ -160,5 +165,23 @@ describe('audio player composable', () => {
       key: ' ',
     });
     isPaused();
+  });
+
+  it('it forwards when forward button is clicked', () => {
+    cy.get('@forwardButton').click();
+    checkTime(10);
+  });
+
+  it('it replays when replay button is clicked', () => {
+    cy.get('@forwardButton').click();
+    cy.get('@forwardButton').click();
+    cy.get('@backwardButton').click();
+    checkTime(10);
+  });
+
+  it('it replay button back to 0 if under 10 seconds', () => {
+    cy.get('@audioSliderTrack').click(9, 4);
+    cy.get('@backwardButton').click();
+    checkTime(0);
   });
 });

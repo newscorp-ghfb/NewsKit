@@ -11,9 +11,16 @@ import {IconFilledStop} from '../icons/filled/material/icon-filled-stop';
 import {AudioElement} from './components/audio-element';
 import {useAudioFunctions} from './audio-functions';
 import {AudioPlayerProvider} from './context';
-import {AudioPlayerComposableProps} from './types';
 import {useKeypress} from '../utils/hooks/use-keypress';
+import {
+  AudioFunctionDependencies,
+  AudioPlayerComposableProps,
+  AudioPlayerIconButtonProps,
+} from './types';
 import {formatFunction} from './components/time-display/utils';
+import {IconFilledForward10, IconFilledReplay10} from '../icons';
+import {IconButtonProps} from '../icon-button/types';
+import {composeEventHandlers} from '../utils/compose-event-handlers';
 
 const defaultKeyboardShortcuts = {
   jumpToStart: ['0', 'Home'],
@@ -57,7 +64,13 @@ export const AudioPlayerComposable = ({
   }, [src]);
 
   // @ts-ignore as we are not passing all the parameters yet.
-  const {audioEvents, togglePlay, onChangeSlider} = useAudioFunctions({
+  const {
+    audioEvents,
+    togglePlay,
+    onChangeSlider,
+    onClickForward,
+    onClickBackward,
+  } = useAudioFunctions({
     autoPlay,
     audioRef,
     playing,
@@ -73,7 +86,7 @@ export const AudioPlayerComposable = ({
     duration,
     setDuration,
     src,
-  });
+  } as AudioFunctionDependencies);
 
   const getPlayPauseButtonProps = ({
     onClick: consumerOnClick,
@@ -115,6 +128,24 @@ export const AudioPlayerComposable = ({
       playStateIcon,
     };
   };
+  const getForwardButtonProps = ({
+    onClick: consumerOnClick,
+    ...getterProps
+  }: AudioPlayerIconButtonProps): IconButtonProps => ({
+    children: <IconFilledForward10 />,
+    'aria-label': 'Fast forward for 10 seconds',
+    onClick: composeEventHandlers([consumerOnClick, onClickForward]),
+    ...getterProps,
+  });
+  const getReplayButtonProps = ({
+    onClick: consumerOnClick,
+    ...getterProps
+  }: AudioPlayerIconButtonProps): IconButtonProps => ({
+    children: <IconFilledReplay10 />,
+    'aria-label': 'Rewind 10 seconds',
+    onClick: composeEventHandlers([consumerOnClick, onClickBackward]),
+    ...getterProps,
+  });
 
   const getSeekBarProps = () => ({
     duration,
@@ -133,6 +164,8 @@ export const AudioPlayerComposable = ({
     getPlayPauseButtonProps,
     getTimeDisplayProps,
     getSeekBarProps,
+    getForwardButtonProps,
+    getReplayButtonProps,
 
     // Internal for AudioElement
     audioRef,
