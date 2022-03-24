@@ -1052,4 +1052,260 @@ describe('getTransitionDuration', () => {
       appear: 250,
     });
   });
+  test('returns duration from default transition preset with breakpoints', () => {
+    const theme = compileTheme(
+      createTheme({
+        name: 'test-transition-preset-breakpoints',
+        overrides: {
+          breakpoints: {
+            xs: 0,
+            sm: 500,
+            md: 800,
+            lg: 1000,
+            xl: 1500,
+          },
+          motions: {
+            motionDuration020: '2000ms',
+            motionDuration030: '3000ms',
+            motionTimingLinear: 'linear',
+          },
+          transitionPresets: {
+            customTransitionPresetDefault: {
+              base: {
+                transitionProperty: 'css-props',
+                transitionDuration: '{{motions.motionDuration020}}',
+                transitionTimingFunction: 'linear',
+              },
+            },
+            customFadeTransition: {
+              base: {
+                transitionProperty: 'opacity',
+                transitionDuration: '{{motions.motionDuration030}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
+              },
+            },
+          },
+          componentDefaults: {
+            componentUnderTest: {
+              transitionPreset: {
+                xs: 'customTransitionPresetDefault',
+                md: 'customFadeTransition',
+              },
+            },
+          },
+        },
+      }),
+    );
+
+    const result = getTransitionDuration(
+      'componentUnderTest',
+      undefined,
+    )({
+      theme,
+    });
+
+    expect(result).toEqual({
+      appear: 3000,
+      enter: 3000,
+      exit: 3000,
+    });
+  });
+  test('returns duration from overrides with breakpoints', () => {
+    const theme = compileTheme(
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          breakpoints: {
+            xs: 0,
+            sm: 500,
+            md: 800,
+            lg: 1000,
+            xl: 1500,
+          },
+          motions: {
+            motionDuration020: '2000ms',
+            motionDuration030: '3000ms',
+            motionTimingLinear: 'linear',
+          },
+          transitionPresets: {
+            customTransitionPresetDefault: {
+              base: {
+                transitionProperty: 'css-props-default-token',
+                transitionDuration: '200ms',
+                transitionTimingFunction: 'linear',
+              },
+            },
+            customTransitionPresetOverrides: {
+              base: {
+                transitionProperty: 'css-props-overrides-token',
+                transitionDuration: '300ms',
+                transitionTimingFunction: 'linear',
+              },
+            },
+            customFadeTransition: {
+              base: {
+                transitionProperty: 'opacity',
+                transitionDuration: '{{motions.motionDuration030}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
+              },
+            },
+          },
+          componentDefaults: {
+            componentUnderTest: {
+              transitionPreset: {
+                xs: 'customTransitionPresetDefault',
+                md: 'customFadeTransition',
+              },
+            },
+          },
+        },
+      }),
+    );
+
+    const overrides = {
+      transitionPreset: {
+        xs: 'customTransitionPresetOverrides',
+        md: 'customFadeTransition',
+      },
+    };
+
+    const result = getTransitionDuration(
+      undefined,
+      '',
+    )({
+      theme,
+      overrides,
+    });
+
+    expect(result).toEqual({appear: 3000, enter: 3000, exit: 3000});
+  });
+  test('returns duration from multiple default transition presets with breakpoints', () => {
+    const theme = compileTheme(
+      createTheme({
+        name: 'test-transition-preset-breakpoints',
+        overrides: {
+          breakpoints: {
+            xs: 0,
+            sm: 500,
+            md: 800,
+            lg: 1000,
+            xl: 1500,
+          },
+          motions: {
+            motionDuration020: '2000ms',
+            motionDuration030: '3000ms',
+            motionDuration040: '4000ms',
+            motionTimingLinear: 'linear',
+          },
+          transitionPresets: {
+            customTransitionPresetDefault: {
+              base: {
+                transitionProperty: 'css-props',
+                transitionDuration: '{{motions.motionDuration020}}',
+                transitionTimingFunction: 'linear',
+              },
+            },
+            customTransitionPresetDefault2: {
+              base: {
+                transitionProperty: 'css-props',
+                transitionDuration: '{{motions.motionDuration030}}',
+                transitionTimingFunction: 'linear',
+              },
+            },
+            customFadeTransition: {
+              base: {
+                transitionProperty: 'opacity',
+                transitionDuration: '{{motions.motionDuration040}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
+              },
+            },
+          },
+          componentDefaults: {
+            componentUnderTest: {
+              transitionPreset: {
+                xs: ['customTransitionPresetDefault', 'customFadeTransition'],
+                md: 'customFadeTransition',
+              },
+            },
+          },
+        },
+      }),
+    );
+
+    const result = getTransitionDuration(
+      'componentUnderTest',
+      undefined,
+    )({
+      theme,
+    });
+    expect(result).toEqual({appear: 4000, enter: 4000, exit: 4000});
+  });
+  test('returns duration from multiple overrides presets with breakpoints', () => {
+    const theme = compileTheme(
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          breakpoints: {
+            xs: 0,
+            sm: 500,
+            md: 800,
+            lg: 1000,
+            xl: 1500,
+          },
+          motions: {
+            motionDuration020: '2000ms',
+            motionDuration030: '3000ms',
+            motionDuration040: '4000ms',
+            motionTimingLinear: 'linear',
+          },
+          transitionPresets: {
+            customTransitionPresetDefault: {
+              base: {
+                transitionProperty: 'css-props-default-token',
+                transitionDuration: '200ms',
+                transitionTimingFunction: 'linear',
+              },
+            },
+            customTransitionPresetOverrides: {
+              base: {
+                transitionProperty: 'css-props-overrides-token',
+                transitionDuration: '300ms',
+                transitionTimingFunction: 'linear',
+              },
+            },
+            customFadeTransition: {
+              base: {
+                transitionProperty: 'opacity',
+                transitionDuration: '{{motions.motionDuration040}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
+              },
+            },
+          },
+          componentDefaults: {
+            componentUnderTest: {
+              transitionPreset: {
+                xs: 'customTransitionPresetDefault',
+                md: 'customFadeTransition',
+              },
+            },
+          },
+        },
+      }),
+    );
+    const overrides = {
+      transitionPreset: {
+        xs: ['customTransitionPresetOverrides', 'customFadeTransition'],
+        md: 'customFadeTransition',
+      },
+    };
+
+    const result = getTransitionDuration(
+      undefined,
+      '',
+    )({
+      theme,
+      overrides,
+    });
+    expect(result).toEqual({appear: 4000, enter: 4000, exit: 4000});
+  });
 });
