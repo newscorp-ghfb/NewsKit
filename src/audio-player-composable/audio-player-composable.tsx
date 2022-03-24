@@ -7,6 +7,7 @@ import {useAudioFunctions} from './audio-functions';
 import {AudioPlayerProvider} from './context';
 import {AudioEvents, AudioPlayerComposableProps} from './types';
 import {formatFunction} from './components/time-display/utils';
+import {composeEventHandlers} from '../utils/compose-event-handlers';
 
 export const AudioPlayerComposable = ({
   children,
@@ -125,9 +126,11 @@ export const AudioPlayerComposable = ({
   const eventHandler = (eventName: AudioEvents) => (
     e: React.SyntheticEvent<HTMLAudioElement, Event>,
   ) => {
-    const eventCallback = props[eventName];
-    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-    eventCallback ? eventCallback(e) : audioEvents![eventName](e);
+    const propEvent = props[eventName];
+    const internalEvent = audioEvents[eventName];
+    return propEvent
+      ? composeEventHandlers([propEvent(e), internalEvent(e)])
+      : internalEvent(e);
   };
 
   return (
