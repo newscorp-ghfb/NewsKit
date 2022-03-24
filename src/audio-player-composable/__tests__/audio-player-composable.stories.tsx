@@ -171,44 +171,41 @@ export const AudioPlayerForwardReplayButton = () => (
       ariaLandmark="audio player skip buttons"
     >
       <GridLayout rowGap="20px" areas={fullAudioPlayerAreas}>
-        {Areas => {
-          console.log(Areas);
-          return (
-            <>
-              <Areas.SeekBar>
-                <AudioPlayerSeekBar />
-              </Areas.SeekBar>
-              <Areas.CurrentTime>
-                <AudioPlayerTimeDisplay
-                  format={({currentTime}) => calculateTime(currentTime)}
-                />
-              </Areas.CurrentTime>
-              <Areas.TotalTime justifySelf="end">
-                <AudioPlayerTimeDisplay
-                  format={({duration}) => calculateTime(duration)}
-                />
-              </Areas.TotalTime>
-              <Areas.Volume alignSelf="center" justifySelf="start">
-                Not yet
-              </Areas.Volume>
-              <Areas.Link alignSelf="center" justifySelf="end">
-                Not yet
-              </Areas.Link>
-              <Areas.Controls>
-                <GridLayout
-                  columns="repeat(3, auto)"
-                  columnGap="20px"
-                  justifyContent="center"
-                  alignItems="center"
-                >
-                  <AudioPlayerReplayButton />
-                  <AudioPlayPauseButton />
-                  <AudioPlayerForwardButton />
-                </GridLayout>
-              </Areas.Controls>
-            </>
-          );
-        }}
+        {Areas => (
+          <>
+            <Areas.SeekBar>
+              <AudioPlayerSeekBar />
+            </Areas.SeekBar>
+            <Areas.CurrentTime>
+              <AudioPlayerTimeDisplay
+                format={({currentTime}) => calculateTime(currentTime)}
+              />
+            </Areas.CurrentTime>
+            <Areas.TotalTime justifySelf="end">
+              <AudioPlayerTimeDisplay
+                format={({duration}) => calculateTime(duration)}
+              />
+            </Areas.TotalTime>
+            <Areas.Volume alignSelf="center" justifySelf="start">
+              Not yet
+            </Areas.Volume>
+            <Areas.Link alignSelf="center" justifySelf="end">
+              Not yet
+            </Areas.Link>
+            <Areas.Controls>
+              <GridLayout
+                columns="repeat(5, auto)"
+                columnGap="20px"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <AudioPlayerReplayButton />
+                <AudioPlayerPlayPauseButton />
+                <AudioPlayerForwardButton />
+              </GridLayout>
+            </Areas.Controls>
+          </>
+        )}
       </GridLayout>
     </AudioPlayerComposable>
     <StorybookSubHeading>with overrides</StorybookSubHeading>
@@ -217,58 +214,56 @@ export const AudioPlayerForwardReplayButton = () => (
       ariaLandmark="audio player skip buttons"
     >
       <GridLayout rowGap="20px" areas={fullAudioPlayerAreas}>
-        {Areas => {
-          console.log(Areas);
-          return (
-            <>
-              <Areas.SeekBar>
-                <AudioPlayerSeekBar />
-              </Areas.SeekBar>
-              <Areas.CurrentTime>
-                <AudioPlayerTimeDisplay
-                  format={({currentTime}) => calculateTime(currentTime)}
+        {Areas => (
+          <>
+            <Areas.SeekBar>
+              <AudioPlayerSeekBar />
+            </Areas.SeekBar>
+            <Areas.CurrentTime>
+              <AudioPlayerTimeDisplay
+                format={({currentTime}) => calculateTime(currentTime)}
+              />
+            </Areas.CurrentTime>
+            <Areas.TotalTime justifySelf="end">
+              <AudioPlayerTimeDisplay
+                format={({duration}) => calculateTime(duration)}
+              />
+            </Areas.TotalTime>
+            <Areas.Volume alignSelf="center" justifySelf="start">
+              Not yet
+            </Areas.Volume>
+            <Areas.Link alignSelf="center" justifySelf="end">
+              Not yet
+            </Areas.Link>
+            <Areas.Controls>
+              <GridLayout
+                columns="repeat(5, auto)"
+                columnGap="20px"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <AudioPlayerReplayButton
+                  overrides={{
+                    iconSize: 'iconSize030',
+                    stylePreset: 'buttonOutlinedNegative',
+                  }}
                 />
-              </Areas.CurrentTime>
-              <Areas.TotalTime justifySelf="end">
-                <AudioPlayerTimeDisplay
-                  format={({duration}) => calculateTime(duration)}
+                <AudioPlayerPlayPauseButton />
+                <AudioPlayerForwardButton
+                  overrides={{
+                    iconSize: 'iconSize030',
+                    stylePreset: 'buttonOutlinedNegative',
+                  }}
                 />
-              </Areas.TotalTime>
-              <Areas.Volume alignSelf="center" justifySelf="start">
-                Not yet
-              </Areas.Volume>
-              <Areas.Link alignSelf="center" justifySelf="end">
-                Not yet
-              </Areas.Link>
-              <Areas.Controls>
-                <GridLayout
-                  columns="repeat(3, auto)"
-                  columnGap="20px"
-                  justifyContent="center"
-                  alignItems="center"
-                >
-                  <AudioPlayerReplayButton
-                    overrides={{
-                      iconSize: 'iconSize030',
-                      stylePreset: 'buttonOutlinedNegative',
-                    }}
-                  />
-                  <AudioPlayPauseButton />
-                  <AudioPlayerForwardButton
-                    overrides={{
-                      iconSize: 'iconSize030',
-                      stylePreset: 'buttonOutlinedNegative',
-                    }}
-                  />
-                </GridLayout>
-              </Areas.Controls>
-            </>
-          );
-        }}
+              </GridLayout>
+            </Areas.Controls>
+          </>
+        )}
       </GridLayout>
     </AudioPlayerComposable>
   </>
 );
+
 AudioPlayerForwardReplayButton.storyName = 'audio-forward-replay-button';
 
 export const AudioPlayerWithTimeDisplay = () => (
