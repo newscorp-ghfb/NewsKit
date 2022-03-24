@@ -4,6 +4,7 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {ContentText} from '../../components/text-section/content-text';
 import {InlineCode} from '../../components/markdown-elements';
 import {UsageKind} from '../../components/usage-card';
 import {Link} from '../../components/link';
@@ -707,6 +708,96 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/radio-button/usage/do-4'),
         },
       ],
+    }}
+    accessibility={{
+      introduction: (
+        <>
+          The Radio Button has the following accessibility considerations:
+          <Block spaceStack="space100" />
+          <ContentText title="Grouping Radio Buttons" titleAs="span">
+            It is recommended to{' '}
+            <Link
+              target="_blank"
+              href="https://www.w3.org/TR/wai-aria-1.2/#group"
+            >
+              group
+            </Link>{' '}
+            Radio Buttons together in a RadioGroup. Other related elements such
+            as Labels and Assistive Text should be grouped together using the
+            Fieldset component, with a title attributed to the elements that
+            appear in the Fieldset, called a Legend.
+          </ContentText>
+        </>
+      ),
+      focusOrder: {
+        title: 'Focus order',
+        tableRows: [
+          {
+            order: 1,
+            element: 'Radio Button input',
+            role: 'Focusses to the Radio Button input',
+          },
+        ],
+      },
+      interaction: {
+        title: 'Keyboard Interactions',
+        tableRows: [
+          {
+            command: ['Tab', 'Shift'],
+            description:
+              'Move focus into and out of the Radio Group. When focus moves into a Radio Group. If a Radio Button is checked, focus is set on the checked Radio Button. If none of the Radio Buttons are checked, focus is set on the first Radio Rutton in the group.',
+          },
+          {
+            command: ['Right arrow', 'Down arrow'],
+            description: 'To go forward and select next Radio Button.',
+          },
+          {
+            command: ['Left arrow', 'Up arrow'],
+            description: 'To go back and select previous Radio Button.',
+          },
+          {
+            command: ['Space'],
+            description: (
+              <>
+                If the Radio Button with focus is not checked, changes the state
+                to <InlineCode>checked</InlineCode>, otherwise, does nothing.
+                <Block spaceStack="space030" />
+                <InlineMessage
+                  icon={infoIcon}
+                  role="region"
+                  aria-label="Space"
+                  title="Note"
+                >
+                  The state where a Radio Button is not checked only occurs on
+                  page load.
+                </InlineMessage>
+              </>
+            ),
+          },
+        ],
+      },
+
+      aria: {
+        title: 'WAI-ARIA',
+        tableRows: [
+          {
+            element: 'label',
+            attribute: 'ariaLabel',
+            value: 'string',
+            description:
+              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the Radio Button.',
+            userSupplied: true,
+          },
+          {
+            element: 'required',
+            attribute: 'aria-required',
+            value: 'object',
+            description:
+              'This attribute informs the user that an element is required. When set to true, screen readers notify users that the element is required.',
+            userSupplied: true,
+          },
+        ],
+      },
     }}
     componentAPI={{
       introduction: (
