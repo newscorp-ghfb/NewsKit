@@ -1,6 +1,9 @@
 import React, {useEffect} from 'react';
 import {CSSTransitionProps} from 'react-transition-group/CSSTransition';
 
+// https://jestjs.io/docs/manual-mocks
+// If the module you are mocking is a Node module (e.g.: lodash), the mock should be placed in the __mocks__ directory adjacent to node_modules (unless you configured roots to point to a folder other than the project root) and will be automatically mocked. There's no need to explicitly call jest.mock('module_name').
+
 const rtg = jest.requireActual('react-transition-group');
 rtg.config.disabled = true;
 
