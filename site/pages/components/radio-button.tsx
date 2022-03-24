@@ -302,10 +302,11 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           description: (
             <>
               Selection controls (inputs), such as the FormInput, Radio Button,
-              and Checkbox, can be grouped together with other selection
-              controls, Labels, and Assistive Text together in a Fieldset. The
-              Fieldset has a caption that gives a title attributed to the
-              elements that appear in the Fieldset, called a Legend.
+              and <Link href="/components/checkbox/">Checkbox</Link>, can be
+              grouped together with other selection controls, Labels, and
+              Assistive Text together in a Fieldset. The Fieldset has a caption
+              that gives a title attributed to the elements that appear in the
+              Fieldset, called a Legend.
               <br />
               <br />
               The Fieldset can also support other selection controls (inputs)
@@ -480,8 +481,14 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'Valid Focus',
-          description:
-            'The Radio Button in a valid focus state communicates that a user has highlighted a Checkbox, using an input method such as a keyboard or voice.',
+          description: (
+            <>
+              The Radio Button in a valid focus state communicates that a user
+              has highlighted a{' '}
+              <Link href="/components/checkbox/">Checkbox</Link>, using an input
+              method such as a keyboard or voice.
+            </>
+          ),
           media: getIllustrationComponent(
             'components/radio-button/states/valid-focus',
           ),
@@ -628,8 +635,8 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
                 aria-label="Radio validation"
                 title="Note"
               >
-                Validation only works if the FormInput Checkbox uses the Form
-                component.
+                Validation only works if the FormInput Radio Button uses the
+                Form component.
               </InlineMessage>
             </>
           ),
