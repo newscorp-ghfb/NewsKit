@@ -5,6 +5,7 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {InlineCode} from '../../components/markdown-elements';
+import {UsageKind} from '../../components/usage-card';
 import {Link} from '../../components/link';
 
 const infoIcon = (
@@ -566,6 +567,147 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       notice:
         'The Feedback element becomes visible (configurable) on state change, eg hover.',
     }}
+    behaviors={{
+      introduction:
+        'The following guidance describes how the Radio Button component behaves.',
+      cards: [
+        {
+          title: 'Label overflow wrap',
+          description:
+            'When a Label is too long for the available horizontal space, it wraps to form another line.',
+          media: getIllustrationComponent(
+            'components/radio-button/behaviours/label-overflow-wrap',
+          ),
+        },
+        {
+          title: 'Clickable area',
+          description:
+            'The Radio Button feedback element indicates the minimum clickable area for the Radio Button input (also known as hit area, or touch target area). The size of the clickable area changes according to the size of the Radio Button. The associated Label is also clickable next to the Radio Button.',
+          media: getIllustrationComponent(
+            'components/radio-button/behaviours/clickable-area',
+          ),
+        },
+        {
+          title: 'Focusable area',
+          description:
+            'Both the Radio Button input and Label are interactive, and a user can hover over either, but only the Radio Button input itself is focusable by using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent(
+            'components/radio-button/behaviours/focusable-area',
+          ),
+        },
+        {
+          title: 'Validation',
+          description: (
+            <>
+              The Radio Button validation rules can be defined for onSubmit or
+              onBlur, for both the initial validation and re-validation using
+              the Form.
+              <br />
+              <br />
+              <Link href="/components/form/">
+                For more information, please refer to the Form component
+              </Link>
+              .
+              <Block spaceStack="space050" />
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="Radio validation"
+                title="Note"
+              >
+                Validation only works if the FormInput Checkbox uses the Form
+                component.
+              </InlineMessage>
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/radio-button/behaviours/validation',
+          ),
+        },
+        {
+          title: 'Exclusive selection',
+          description:
+            'Checking a Radio Button in a Radio Group will uncheck all other Radio Buttons in that group.',
+          media: getIllustrationComponent(
+            'components/radio-button/behaviours/autofocus',
+          ),
+        },
+        {
+          title: 'Autofocus',
+          description:
+            'The Radio Button can be set to be auto-focused on page load (when mounted).',
+          media: getIllustrationComponent(
+            'components/radio-button/behaviours/autofocus',
+          ),
+        },
+        {
+          title: 'Default checked',
+          description: (
+            <>
+              The Radio Button&apos;s initial state can be set to be checked or
+              unchecked by default (controlled or uncontrolled).
+              <br />
+              <br />
+              Adding <InlineCode>checked</InlineCode> to the native HTML element
+              will set the Radio Button as selected by default.
+              <br />
+              <br />
+              Voiceover will read out the Radio Button to the user and let them
+              know it is selected.
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/radio-button/behaviours/default-checked',
+          ),
+        },
+      ],
+    }}
+    usage={{
+      introduction:
+        'The following guidance describes how and when to appropriately use the Radio Button component.',
+      cards: [
+        {
+          description:
+            'Use Radio Buttons when a user can select only one option from a list.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/radio-button/usage/do-1'),
+        },
+        {
+          description:
+            'Don’t use Radio Buttons when a user can select multiple options from a list. In this case, use a group of Checkboxes.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent(
+            'components/radio-button/usage/dont-1',
+          ),
+        },
+        {
+          description:
+            'Radio Buttons should always have an associated Label to give users context of what the Radio Button represents.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/radio-button/usage/do-2'),
+        },
+        {
+          description:
+            'Avoid placing Labels to the left (start) of Radio Buttons when there are multiple Radio Buttons grouped together to avoid layout misalignment. Instead place Labels to the right (end) so that when used together in forms, Radio Button inputs align vertically, which makes them easier to find, especially for users of screen magnifiers.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent(
+            'components/radio-button/usage/dont-2',
+          ),
+        },
+        {
+          description:
+            'Radio Buttons should be displayed stacked vertically for consistent alignment and positioning across different breakpoints.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/radio-button/usage/do-3'),
+        },
+        {
+          description:
+            'Use Assistive Text to provide context to the Radio Button group. For example, why a selection is required.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/radio-button/usage/do-4'),
+        },
+      ],
+    }}
     componentAPI={{
       introduction: (
         <>
@@ -607,6 +749,23 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           propsRows: radioButtonPropsRows,
         },
       ],
+    }}
+    compliance={{
+      variations: true,
+      states: true,
+      behaviours: true,
+      usage: true,
+      accessibility: true,
+      performance: false,
+      seo: null,
+      props: true,
+      uiKit: true,
+      design: true,
+      themes: true,
+    }}
+    related={{
+      introduction: '',
+      related: ['Form', 'Checkbox'],
     }}
   />
 );
