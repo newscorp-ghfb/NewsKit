@@ -22,6 +22,7 @@ const AudioPlayerContainer = styled.div<{dark?: boolean}>`
   ${({dark}) => (dark ? 'background: #000' : null)}
 `;
 
+// create own theme
 const myCustomTheme = createTheme({
   name: 'my-custom-audio-player-theme',
   overrides: {
