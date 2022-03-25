@@ -62,7 +62,7 @@ const PRINCIPLE_CARDS = [
 const whatNextCards = [
   {
     media: getIllustrationComponent('guides/design-quickstart/hero'),
-    title: 'Design Quickstart Guide',
+    title: 'Design quickstart guide',
     description:
       'A step by step guide to get you up and running using NewsKit.',
     href: '/getting-started/design/design-quickstart',
