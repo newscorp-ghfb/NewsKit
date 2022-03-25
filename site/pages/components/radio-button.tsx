@@ -45,100 +45,87 @@ const commonPropsRows = (type?: string) => [
 
 const commonOverridesRows = [
   {
-    attribute: 'radioButton.size',
-    type: ['small', 'medium', 'large'],
-    default: ['Small = sizing050', 'Medium = sizing060', 'Large =sizing070'],
-    description: `If provided, this overrides the size of the Radio Button input.`,
-  },
-  {
-    attribute: 'radioButton.stylePreset',
+    attribute: 'spaceStack',
     type: 'MQ<string>',
-    default: 'inputField',
-    description: `If provided, overrides the stylePreset of the Radio Button input.`,
-  },
-  {
-    attribute: 'radioButton.transitionPreset',
-    type: 'MQ<string>',
-    default: ['backgroundColorChange', 'borderColorChange'],
-    description: `If provided, overrides the transitionPreset of the Radio Button input.`,
-  },
-  {
-    attribute: 'radioButton.spaceInline',
-    type: 'MQ<string>',
-    default: [
-      'Small = spaceInline030',
-      'Medium = spaceInline030',
-      'Large = spaceInline040',
-    ],
-    description: `If provided, this overrides the inline space between the Radio Button input and Label.`,
-  },
-  {
-    attribute: 'radioButton.spaceStack',
-    type: 'MQ<string>',
-    default: '',
+    default: 'space000',
     description: `If provided, this overrides the stack space applied to the Radio Button.`,
   },
   {
-    attribute: 'radioButton.icon',
+    attribute: 'input.stylePreset',
     type: 'MQ<string>',
-    default: 'circle',
-    description: `If provided, overrides the Radio Button icon.`,
+    default: 'radioButtonInput',
+    description:
+      'If provided, overrides the stylePreset of the Radio Button input.',
   },
   {
-    attribute: 'radioButton.icon.size',
+    attribute: 'input.size',
     type: 'MQ<string>',
-    default: [
-      'Small = iconSize010',
-      'Medium = iconSize020',
-      'Large = iconSize030',
-    ],
-    description: `If provided, overrides the size of the Radio Button icon.`,
+    default: ['small = sizing050', 'medium = sizing060', 'large = sizing070'],
+    description:
+      'If provided, this overrides the size of the Radio Button input.',
   },
   {
-    attribute: 'radioButton.icon.stylePreset',
+    attribute: 'input.spaceInline',
     type: 'MQ<string>',
-    default: 'interactiveInput040',
-    description: `If provided, overrides the stylePreset of the Radio Button icon.`,
+    default: ['small = space030', 'medium = space030', 'large = space040'],
+    description:
+      'If provided, this overrides the inline space between the Radio Button input and Label.',
   },
   {
-    attribute: 'radioButton.icon.transitionPreset',
+    attribute: 'input.transitionPreset',
     type: 'MQ<string>',
-    default: 'iconColorChange',
-    description: `If provided, overrides the transitionPreset of the Radio Button icon.`,
+    default: ['backgroundColorChange', 'borderColorChange'],
+    description:
+      'If provided, overrides the transitionPreset of the Radio Button input.',
   },
   {
     attribute: 'feedback.size',
-    type: 'feedbackSize',
-    default: ['Small = sizing070', 'Medium = sizing080', 'Large = sizing090'],
-    description: `If provided, this overrides the size of the feedback element.`,
+    type: 'MQ<string>',
+    default: ['small = sizing070', 'medium = sizing080', 'large = sizing090'],
+    description:
+      'If provided, this overrides the size of the feedback element.',
   },
   {
     attribute: 'feedback.stylePreset',
-    type: 'feedbackSize',
-    default: '',
-    description: `If provided, this overrides the stylePreset of the feedback element.`,
-  },
-  {
-    attribute: 'feedback.transitionPreset',
     type: 'MQ<string>',
-    default: 'fade',
-    description: `If provided, overrides the transitionPreset of the feedback element.`,
+    default: 'radioButtonFeedback',
+    description:
+      'If provided, this overrides the stylePreset of the feedback element.',
+  },
+  // THIS IS NOT IMPLEMENTED YET, UNCOMMENT WHEN THIS FUNCTIONALITY IS ADDED
+  // {
+  //   attribute: 'feedback.transitionPreset',
+  //   type: 'MQ<string>',
+  //   default: ['fade', 'grow'],
+  //   description:
+  //     'If provided, overrides the transitionPreset of the feedback element.',
+  // },
+  {
+    attribute: 'label.stylePreset',
+    type: 'MQ<string>',
+    default: 'controlLabel',
+    description: 'If provided, this overrides the stylePreset of the Label.',
   },
   {
-    attribute: 'radioButton.label.typographyPreset',
+    attribute: 'label.typographyPreset',
     type: 'MQ<string>',
     default: [
-      'Small = utilityBody020',
-      'Medium = utilityBody020',
-      'Large = utilityBody030',
+      'small = utilityBody020',
+      'medium = utilityBody020',
+      'large = utilityBody030',
     ],
-    description: `If provided, this overrides the typographyPreset of the Label.`,
+    description:
+      'If provided, this overrides the typographyPreset of the Label.',
   },
   {
-    attribute: 'radioButton.label.stylePreset',
+    attribute: 'icon.size',
     type: 'MQ<string>',
-    default: 'inkBase',
-    description: `If provided, this overrides the stylePreset of the Label.`,
+    default: [
+      'small = iconSize010',
+      'medium = iconSize020',
+      'large = iconSize030',
+    ],
+    description: 'If provided, overrides the size of the Radio Button icon.',
   },
 ];
 
@@ -186,9 +173,9 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       },
       introduction: `Radio Buttons are selection controls that are typically used in forms. They are used for exclusive selection - allowing users to select one of multiple options in a Radio Group.`,
     }}
-    componentDefaultsKey="radio"
+    componentDefaultsKey="radioButton"
     meta={{
-      status: MetaStatus.Supported,
+      status: MetaStatus.Beta,
       introduced: 'v5.3.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/radio-button',
