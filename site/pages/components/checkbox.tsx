@@ -256,11 +256,12 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
           title: 'Fieldset',
           description: (
             <>
-              Selection controls (inputs), such as the FormInput, Radio Button,
-              and Checkbox, can be grouped together with other selection
-              controls, Labels, and Assistive Text together in a Fieldset. The
-              Fieldset has a caption that gives a title attributed to the
-              elements that appear in the Fieldset, called a Legend.
+              Selection controls (inputs), such as the FormInput,{' '}
+              <Link href="/components/radio-button/">Radio Button</Link>, and
+              Checkbox, can be grouped together with other selection controls,
+              Labels, and Assistive Text together in a Fieldset. The Fieldset
+              has a caption that gives a title attributed to the elements that
+              appear in the Fieldset, called a Legend.
               <br />
               <br />
               The Fieldset can also support other selection controls (inputs)
