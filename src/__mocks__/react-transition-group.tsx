@@ -24,10 +24,10 @@ const InterceptedCSSTransition = ({
   onExited,
   ...rest
 }: CSSTransitionProps) => {
-  const handleOnEntered = (maybeNode: HTMLElement, isAppearing: boolean) => {
-    if (onEnter) onEnter(maybeNode, isAppearing);
-    if (onEntering) onEntering(maybeNode, isAppearing);
-    if (onEntered) onEntered(maybeNode, isAppearing);
+  const handleOnEntered = (node: HTMLElement, isAppearing: boolean) => {
+    if (onEnter) onEnter(node, isAppearing);
+    if (onEntering) onEntering(node, isAppearing);
+    if (onEntered) onEntered(node, isAppearing);
   };
 
   const handleOnExited = (node: HTMLElement) => {
@@ -38,9 +38,9 @@ const InterceptedCSSTransition = ({
 
   return (
     <CSSTransition
+      {...rest}
       onEntered={handleOnEntered}
       onExited={handleOnExited}
-      {...rest}
     >
       {children}
     </CSSTransition>
