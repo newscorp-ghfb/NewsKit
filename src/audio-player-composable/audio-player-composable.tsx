@@ -156,14 +156,10 @@ export const AudioPlayerComposable = ({
     getReplayButtonProps,
   };
 
-  const eventHandler = (eventName: AudioEvents) => (
-    e: React.SyntheticEvent<HTMLAudioElement, Event>,
-  ) => {
+  const eventHandler = (eventName: AudioEvents) => {
     const propEvent = props[eventName];
     const internalEvent = audioEvents[eventName];
-    return propEvent
-      ? composeEventHandlers([propEvent(e), internalEvent(e)])
-      : internalEvent(e);
+    return composeEventHandlers([propEvent, internalEvent]);
   };
 
   return (
