@@ -246,14 +246,33 @@ export const AudioPlayerForwardReplayButton = () => (
                 justifyContent="center"
                 alignItems="center"
               >
+                <AudioPlayerSkipPreviousButton
+                  overrides={{
+                    iconSize: 'iconSize030',
+                    stylePreset: 'buttonOutlinedNegative',
+                  }}
+                />
+
                 <AudioPlayerReplayButton
                   overrides={{
                     iconSize: 'iconSize030',
                     stylePreset: 'buttonOutlinedNegative',
                   }}
                 />
-                <AudioPlayerPlayPauseButton />
+                <AudioPlayerPlayPauseButton
+                  overrides={{
+                    iconSize: 'iconSize030',
+                    stylePreset: 'buttonOutlinedNegative',
+                  }}
+                />
                 <AudioPlayerForwardButton
+                  overrides={{
+                    iconSize: 'iconSize030',
+                    stylePreset: 'buttonOutlinedNegative',
+                  }}
+                />
+
+                <AudioPlayerSkipNextButton
                   overrides={{
                     iconSize: 'iconSize030',
                     stylePreset: 'buttonOutlinedNegative',
