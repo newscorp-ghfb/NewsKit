@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {CSSTransitionProps} from 'react-transition-group/CSSTransition';
 
 // https://jestjs.io/docs/manual-mocks
@@ -14,30 +14,37 @@ const {CSSTransition} = rtg;
 // It looks like when transitions are disabled (actually disabling only the waiting time, not the transitions themselves)
 // only onEntered() and onExited() callbacks are being called
 // The following function is a hack-ish way to call the rest of the transition lifecycle methods.
-const InterceptedCSSTransition = ({children, ...rest}: CSSTransitionProps) => {
-  const callIfExist = (props: CSSTransitionProps, method: string) =>
-    method in props && props[method]();
+const InterceptedCSSTransition = ({
+  children,
+  onEnter,
+  onEntering,
+  onEntered,
+  onExit,
+  onExiting,
+  onExited,
+  ...rest
+}: CSSTransitionProps) => {
+  const handleOnEntered = (maybeNode: HTMLElement, isAppearing: boolean) => {
+    if (onEnter) onEnter(maybeNode, isAppearing);
+    if (onEntering) onEntering(maybeNode, isAppearing);
+    if (onEntered) onEntered(maybeNode, isAppearing);
+  };
 
-  const onEnter = React.useCallback(() => callIfExist(rest, 'onEnter'), [rest]);
-  const onEntering = React.useCallback(() => callIfExist(rest, 'onEntering'), [
-    rest,
-  ]);
-  const onExit = React.useCallback(() => callIfExist(rest, 'onExit'), [rest]);
-  const onExiting = React.useCallback(() => callIfExist(rest, 'onExiting'), [
-    rest,
-  ]);
+  const handleOnExited = (node: HTMLElement) => {
+    if (onExit) onExit(node);
+    if (onExiting) onExiting(node);
+    if (onExited) onExited(node);
+  };
 
-  useEffect(() => {
-    if (rest.in) {
-      onEnter();
-      onEntering();
-    } else {
-      onExit();
-      onExiting();
-    }
-  }, [rest.in, onEnter, onEntering, onExit, onExiting]);
-
-  return <CSSTransition {...rest}>{children}</CSSTransition>;
+  return (
+    <CSSTransition
+      onEntered={handleOnEntered}
+      onExited={handleOnExited}
+      {...rest}
+    >
+      {children}
+    </CSSTransition>
+  );
 };
 
 rtg.CSSTransition = InterceptedCSSTransition;
