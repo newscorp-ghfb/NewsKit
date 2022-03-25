@@ -30,6 +30,7 @@ const myCustomTheme = createTheme({
         base: {
           backgroundColor: '#f6807e',
           borderRadius: '50%',
+          textAlign: 'center',
         },
       },
       customAudioPlayerSeekBarTrack: {
