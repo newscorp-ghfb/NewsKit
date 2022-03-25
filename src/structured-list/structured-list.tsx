@@ -55,3 +55,5 @@ export const StructuredList = withOwnTheme(ThemelessStructuredList)({
   defaults,
   stylePresets,
 });
+
+StructuredList.stylePresets = stylePresets;

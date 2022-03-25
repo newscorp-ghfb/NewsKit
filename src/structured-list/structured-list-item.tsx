@@ -160,3 +160,5 @@ export const StructuredListItem = withOwnTheme(ThemelessStructuredListItem)({
   defaults,
   stylePresets,
 });
+
+StructuredListItem.stylePresets = stylePresets;

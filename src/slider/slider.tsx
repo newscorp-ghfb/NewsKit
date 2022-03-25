@@ -222,3 +222,5 @@ const ThemelessSlider: React.FC<SliderProps> = ({
 };
 
 export const Slider = withOwnTheme(ThemelessSlider)({defaults, stylePresets});
+
+Slider.stylePresets = stylePresets;

@@ -94,3 +94,5 @@ export const Modal = withOwnTheme(ThemelessModal)({
   defaults,
   stylePresets,
 });
+
+Modal.stylePresets = stylePresets;

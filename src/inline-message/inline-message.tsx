@@ -25,3 +25,5 @@ export const InlineMessage = withOwnTheme(ThemelessInlineMessage)({
   defaults,
   stylePresets,
 });
+
+InlineMessage.stylePresets = stylePresets;

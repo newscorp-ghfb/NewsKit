@@ -100,3 +100,4 @@ const ThemelessButton = React.forwardRef<
 });
 
 export const Button = withOwnTheme(ThemelessButton)({defaults, stylePresets});
+Button.stylePresets = stylePresets;

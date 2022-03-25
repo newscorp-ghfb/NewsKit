@@ -255,3 +255,5 @@ export const Select = withMediaQueryProvider(
     stylePresets,
   }),
 );
+
+Select.stylePresets = stylePresets;

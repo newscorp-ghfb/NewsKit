@@ -83,24 +83,38 @@ To allow you to build your theme more effectively, there are a few special "keyw
 
 Note that the keywords will be removed from the object as they are interpreted. You should not expect to see the keywords in a compiled theme, for example.
 
+Please note as of NewsKit V5, stylePresets are no longer global, instead they are under each component. You will need to import the component to use the style presets.
+
+<Code>
+  {`import { Button } from "newskit"`}
+</Code>
+
+
 #### \_\_extends
 
 This keyword is used as an object key, where the value is set to an object path in the theme. This will act like a shallow merge and put the values of the object in the token path into the object which `__extends` is specified. For example, to duplicate the buttonSolidPrimary style preset and replace the hover state:
 
 <Code>
-  {JSON.stringify(
-    {
-      __extends: '{{stylePresets.buttonSolidPrimary}}',
-      hover: {color: '{{colors.red010}}'},
-    },
-    null,
-    2,
-  )}
+  {`export const stylePresets = {
+  buttonSolidPrimary: Button.stylePresets.buttonSolidPrimary;
+  buttonLightDarkToggle: {
+    __extends: '{{stylePresets.buttonSolidPrimary}}',
+    hover: {color: '{{colors.red010}}'},
+}
+  `}
 </Code>
 
-Therefore, the above example is equivalent to the following function theme value:
+Alternatively, you can also do this:
 
-<CodeFromFile path="examples/theming/extends-keyword-equivalent.ts" />
+<Code>
+  {`export const stylePresets = {
+  buttonLightDarkToggle: {
+    ...Button.stylePresets.buttonSolidPrimary,
+    hover: {color: '{{colors.red010}}'},
+  },
+}
+ `}
+</Code>
 
 As well as a single token string, the `__extends` also supports an array of token strings. This can be used to merge multiple objects together. The order of the array is respected and is the merge order of the objects.
 

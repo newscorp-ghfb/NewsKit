@@ -229,3 +229,5 @@ const ThemelessCard = React.forwardRef<HTMLDivElement, CardProps>(
 export const Card = withOwnTheme(ThemelessCard)({defaults, stylePresets});
 
 Card.displayName = 'Card';
+
+Card.stylePresets = stylePresets;

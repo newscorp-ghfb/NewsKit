@@ -34,5 +34,7 @@ export const withOwnTheme = <P extends {}>(
     </ThemeProvider>
   ));
 
-  return (WrappedComponent as unknown) as React.FC<P>;
+  return (WrappedComponent as unknown) as React.FC<P> & {
+    stylePresets: Record<string, StylePreset>;
+  };
 };

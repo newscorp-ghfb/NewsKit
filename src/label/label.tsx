@@ -23,3 +23,5 @@ const ThemelessLabel = ({
 );
 
 export const Label = withOwnTheme(ThemelessLabel)({defaults, stylePresets});
+
+Label.stylePresets = stylePresets;

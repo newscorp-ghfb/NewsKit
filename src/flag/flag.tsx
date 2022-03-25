@@ -71,3 +71,5 @@ const ThemelessFlag = React.forwardRef<
 });
 
 export const Flag = withOwnTheme(ThemelessFlag)({defaults, stylePresets});
+
+Flag.stylePresets = stylePresets;

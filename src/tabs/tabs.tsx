@@ -381,3 +381,5 @@ const ThemelessTabs: React.FC<TabsProps> = ({
 };
 
 export const Tabs = withOwnTheme(ThemelessTabs)({defaults, stylePresets});
+
+Tabs.stylePresets = stylePresets;

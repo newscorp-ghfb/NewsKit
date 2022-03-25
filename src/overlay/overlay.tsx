@@ -64,3 +64,5 @@ export const Overlay = withOwnTheme(ThemlessOverlay)({
   defaults,
   stylePresets,
 });
+
+Overlay.stylePresets = stylePresets;

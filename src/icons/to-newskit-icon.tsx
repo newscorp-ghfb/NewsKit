@@ -65,3 +65,5 @@ export const toNewsKitIcon = (
       }),
     ),
   )({defaults, stylePresets});
+
+toNewsKitIcon.stylePresets = stylePresets;

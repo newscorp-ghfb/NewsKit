@@ -45,3 +45,5 @@ export const AssistiveText = withOwnTheme(ThemelessAssistiveText)({
   defaults,
   stylePresets,
 });
+
+AssistiveText.stylePresets = stylePresets;

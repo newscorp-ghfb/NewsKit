@@ -32,3 +32,5 @@ export const Checkbox = withOwnTheme(ThemelessCheckbox)({
   defaults,
   stylePresets,
 });
+
+Checkbox.stylePresets = stylePresets;

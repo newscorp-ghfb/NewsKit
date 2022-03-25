@@ -145,3 +145,5 @@ export const AudioPlayerSeekBar = withOwnTheme(ThemelessSeekBar)({
   defaults,
   stylePresets,
 });
+
+AudioPlayerSeekBar.stylePresets = stylePresets;

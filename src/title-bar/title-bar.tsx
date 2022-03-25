@@ -72,3 +72,5 @@ export const TitleBar = withOwnTheme(ThemelessTitleBar)({
   defaults,
   stylePresets,
 });
+
+TitleBar.stylePresets = stylePresets;

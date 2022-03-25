@@ -18,6 +18,9 @@ const ThemelessIconButton = ({overrides = {}, ...props}: IconButtonProps) => {
   return <Button {...props} size={size} overrides={iconButtonSettings} />;
 };
 
-export const IconButton: React.FC<IconButtonProps> = withOwnTheme(
-  ThemelessIconButton,
-)({defaults, stylePresets});
+export const IconButton = withOwnTheme(ThemelessIconButton)({
+  defaults,
+  stylePresets,
+});
+
+IconButton.stylePresets = stylePresets;

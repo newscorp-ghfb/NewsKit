@@ -1,5 +1,5 @@
 import React from 'react';
-import {BreakpointKeys, useTheme} from '../../../theme';
+import {BreakpointKeys, StylePreset, useTheme} from '../../../theme';
 import {getMediaQueryFromTheme} from '../../responsive-helpers';
 import {MediaQueries} from './types';
 import {
@@ -85,5 +85,7 @@ export const withMediaQueryProvider = <P extends {}>(
     </MediaQueryProvider>
   ));
 
-  return (WrappedComponent as unknown) as React.FC<P>;
+  return (WrappedComponent as unknown) as React.FC<P> & {
+    stylePresets: Record<string, StylePreset>;
+  };
 };

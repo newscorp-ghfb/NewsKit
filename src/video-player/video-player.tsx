@@ -63,3 +63,5 @@ export const VideoPlayer = withOwnTheme(ThemelessVideoPlayer)({
   defaults,
   stylePresets,
 });
+
+VideoPlayer.stylePresets = stylePresets;
