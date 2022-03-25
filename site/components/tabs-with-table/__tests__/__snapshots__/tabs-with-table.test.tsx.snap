@@ -253,9 +253,6 @@ exports[`TabsWithTable renders with default data 1`] = `
   background-color: transparent;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   border-radius: borderRadiusSharp;
   background-color: transparent;
@@ -274,6 +271,22 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-12:active:not(:disabled) {
   color: #2E2E2E;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-12:focus {
@@ -367,9 +380,6 @@ exports[`TabsWithTable renders with default data 1`] = `
   background-color: transparent;
   color: #535353;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -384,6 +394,22 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-18:active:not(:disabled) {
   color: #2E2E2E;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-18 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-18 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-18:focus {

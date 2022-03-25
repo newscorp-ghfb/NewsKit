@@ -2,7 +2,11 @@
 import * as React from 'react';
 import {AudioPlayerPlayPauseButton} from '../components/play-pause-button';
 import {AudioPlayerTimeDisplay} from '../components/time-display';
+import {AudioPlayerForwardButton} from '../components/forward-button';
+import {AudioPlayerReplayButton} from '../components/replay-button';
 import {AudioPlayerComposable} from '../audio-player-composable';
+import {AudioPlayerSkipNextButton} from '../components/skip-next/skip-next';
+import {AudioPlayerSkipPreviousButton} from '../components/skip-previous/skip-previous';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {calculateTime} from '../components/time-display/utils';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
@@ -11,9 +15,6 @@ import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
 import {Block} from '../../block';
 import {ButtonSize} from '../../button/types';
-import {Button} from '../../button';
-import {AudioPlayerSkipNextButton} from '../components/skip-next/skip-next';
-import {AudioPlayerSkipPreviousButton} from '../components/skip-previous/skip-previous';
 
 const AudioPlayerContainer = styled.div<{dark?: boolean}>`
   border: solid 1px red;
@@ -65,13 +66,13 @@ export default {
 
 export const AudioPlayer = () => (
   <>
-    <StorybookSubHeading>Audio player inline</StorybookSubHeading>
+    <StorybookSubHeading>Audio player inline recorded </StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
       ariaLandmark="audio player inline"
     >
       <GridLayout
-        columns="auto auto 1fr auto"
+        columns="auto 40px 1fr auto"
         columnGap="space040"
         alignItems="center"
       >
@@ -88,49 +89,6 @@ export const AudioPlayer = () => (
   </>
 );
 AudioPlayer.storyName = 'audio-player';
-
-export const AudioPlayerE2E = () => (
-  <div data-testid="audio-player-inline">
-    <StorybookSubHeading>Audio player for e2e tests</StorybookSubHeading>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player e2e tests"
-    >
-      <GridLayout
-        columns="auto auto 1fr auto auto"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
-        <AudioPlayerTimeDisplay
-          data-testid="audio-player-current-time"
-          format={({currentTime}) => calculateTime(currentTime)}
-        />
-        <AudioPlayerSeekBar />
-        <AudioPlayerTimeDisplay
-          data-testid="audio-player-duration"
-          format={({duration}) => calculateTime(duration)}
-        />
-        <Button
-          href="/"
-          size={ButtonSize.Small}
-          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-        >
-          read more
-        </Button>
-      </GridLayout>
-      <GridLayout
-        columnGap="space040"
-        columns="auto auto"
-        justifyContent="center"
-      >
-        <AudioPlayerSkipPreviousButton size={ButtonSize.Small} />
-        <AudioPlayerSkipNextButton size={ButtonSize.Small} />
-      </GridLayout>
-    </AudioPlayerComposable>
-  </div>
-);
-AudioPlayerE2E.storyName = 'audio-player-e2e';
 
 export const AudioPlayPauseButton = () => (
   <AudioPlayerComposable
@@ -199,6 +157,119 @@ export const MultipleAudioPlayPauseButtonWithOverrides = () => (
 MultipleAudioPlayPauseButtonWithOverrides.storyName =
   'multiple-audio-play-pause-with-overrides';
 
+const fullAudioPlayerAreas = `
+  seekBar seekBar seekBar 
+  currentTime none totalTime  
+  volume controls link
+ `;
+
+export const AudioPlayerForwardReplayButton = () => (
+  <>
+    <StorybookSubHeading>
+      with default forward and replay buttons
+    </StorybookSubHeading>
+    <AudioPlayerComposable
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      ariaLandmark="audio player skip buttons"
+    >
+      <GridLayout rowGap="20px" areas={fullAudioPlayerAreas}>
+        {Areas => (
+          <>
+            <Areas.SeekBar>
+              <AudioPlayerSeekBar />
+            </Areas.SeekBar>
+            <Areas.CurrentTime>
+              <AudioPlayerTimeDisplay
+                format={({currentTime}) => calculateTime(currentTime)}
+              />
+            </Areas.CurrentTime>
+            <Areas.TotalTime justifySelf="end">
+              <AudioPlayerTimeDisplay
+                format={({duration}) => calculateTime(duration)}
+              />
+            </Areas.TotalTime>
+            <Areas.Volume alignSelf="center" justifySelf="start">
+              Not yet
+            </Areas.Volume>
+            <Areas.Link alignSelf="center" justifySelf="end">
+              Not yet
+            </Areas.Link>
+            <Areas.Controls>
+              <GridLayout
+                columns="repeat(5, auto)"
+                columnGap="20px"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <AudioPlayerSkipPreviousButton />
+                <AudioPlayerReplayButton />
+                <AudioPlayerPlayPauseButton />
+                <AudioPlayerForwardButton />
+                <AudioPlayerSkipNextButton />
+              </GridLayout>
+            </Areas.Controls>
+          </>
+        )}
+      </GridLayout>
+    </AudioPlayerComposable>
+    <StorybookSubHeading>with overrides</StorybookSubHeading>
+    <AudioPlayerComposable
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      ariaLandmark="audio player skip buttons override"
+    >
+      <GridLayout rowGap="20px" areas={fullAudioPlayerAreas}>
+        {Areas => (
+          <>
+            <Areas.SeekBar>
+              <AudioPlayerSeekBar />
+            </Areas.SeekBar>
+            <Areas.CurrentTime>
+              <AudioPlayerTimeDisplay
+                format={({currentTime}) => calculateTime(currentTime)}
+              />
+            </Areas.CurrentTime>
+            <Areas.TotalTime justifySelf="end">
+              <AudioPlayerTimeDisplay
+                format={({duration}) => calculateTime(duration)}
+              />
+            </Areas.TotalTime>
+            <Areas.Volume alignSelf="center" justifySelf="start">
+              Not yet
+            </Areas.Volume>
+            <Areas.Link alignSelf="center" justifySelf="end">
+              Not yet
+            </Areas.Link>
+            <Areas.Controls>
+              <GridLayout
+                columns="repeat(5, auto)"
+                columnGap="20px"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <AudioPlayerReplayButton
+                  overrides={{
+                    iconSize: 'iconSize030',
+                    stylePreset: 'buttonOutlinedNegative',
+                  }}
+                />
+                <AudioPlayerPlayPauseButton />
+                <AudioPlayerForwardButton
+                  overrides={{
+                    iconSize: 'iconSize030',
+                    stylePreset: 'buttonOutlinedNegative',
+                  }}
+                />
+              </GridLayout>
+            </Areas.Controls>
+          </>
+        )}
+      </GridLayout>
+    </AudioPlayerComposable>
+  </>
+);
+
+AudioPlayerForwardReplayButton.storyName = 'audio-forward-replay-button';
+
 export const AudioPlayerWithTimeDisplay = () => (
   <>
     <StorybookSubHeading>with time display label default</StorybookSubHeading>
@@ -207,6 +278,7 @@ export const AudioPlayerWithTimeDisplay = () => (
       ariaLandmark="audio player 3"
     >
       <AudioPlayerPlayPauseButton />
+
       <Block spaceStack="space030" />
       <AudioPlayerSeekBar />
       <Block spaceStack="space030" />

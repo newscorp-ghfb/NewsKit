@@ -50,6 +50,8 @@ interface AudioPlayerProviderContext {
   getSkipNextButtonProps: (
     props: AudioPlayerIconButtonProps,
   ) => IconButtonProps;
+  getForwardButtonProps: (props: AudioPlayerIconButtonProps) => IconButtonProps;
+  getReplayButtonProps: (props: AudioPlayerIconButtonProps) => IconButtonProps;
 }
 
 export const AudioPlayerContext = createContext<

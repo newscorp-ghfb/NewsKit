@@ -58,7 +58,7 @@ describe('audio player composable', () => {
   const parentTestIDSelector = '[data-testid="audio-player-inline"]';
 
   beforeEach(() => {
-    cy.visit('?name=audio-player-composable');
+    cy.visit('?name=audio-player-composable-e2e');
 
     cy.get(`${parentTestIDSelector}`).as('container');
 
@@ -77,7 +77,12 @@ describe('audio player composable', () => {
     cy.get(`${parentTestIDSelector} [data-testid="audio-slider-track"]`).as(
       'audioSliderTrack',
     );
-
+    cy.get(
+      `${parentTestIDSelector} [data-testid="audio-player-forward-button"]`,
+    ).as('forwardButton');
+    cy.get(
+      `${parentTestIDSelector} [data-testid="audio-player-replay-button"]`,
+    ).as('backwardButton');
     cy.get(
       `${parentTestIDSelector} [data-testid="audio-player-current-time"]`,
     ).as('audioCurrentTime');
@@ -101,10 +106,10 @@ describe('audio player composable', () => {
 
     // move to the begining
     cy.get('@audioSliderTrack').click('left');
-    checkTime(1);
+    checkTime(0);
 
     // move to 4th minute
-    cy.get('@audioSliderTrack').click(448, 4);
+    cy.get('@audioSliderTrack').click(624, 4);
     checkTime(4 * 60);
   });
 
@@ -112,7 +117,7 @@ describe('audio player composable', () => {
     // start playing
     cy.get('@togglePlay').click();
     // move to the end
-    cy.get('@audioSliderTrack').click(695, 4, {force: true});
+    cy.get('@audioSliderTrack').click(1000, 4, {force: true});
     checkTime(TEST_DATA.durationInSeconds);
     isPaused();
   });
@@ -178,6 +183,24 @@ describe('audio player composable', () => {
 
     cy.get('@skipPrevBtn').click();
     // the track should be at the start after clicking Skip Prev Button
+    checkTime(0);
+  });
+
+  it('it forwards when forward button is clicked', () => {
+    cy.get('@forwardButton').click();
+    checkTime(10);
+  });
+
+  it('it replays when replay button is clicked', () => {
+    cy.get('@forwardButton').click();
+    cy.get('@forwardButton').click();
+    cy.get('@backwardButton').click();
+    checkTime(10);
+  });
+
+  it('it replay button back to 0 if under 10 seconds', () => {
+    cy.get('@audioSliderTrack').click(9, 4);
+    cy.get('@backwardButton').click();
     checkTime(0);
   });
 });
