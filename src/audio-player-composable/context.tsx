@@ -9,26 +9,12 @@ import {FormatFn} from './components/time-display/types';
 
 interface AudioPlayerProviderContext {
   id: string;
-  src: string;
-  autoPlay?: boolean;
-  // Internal
-  audioRef: React.RefObject<HTMLAudioElement>;
-  audioSectionRef: React.RefObject<HTMLDivElement>;
   playing: boolean;
   canPause: boolean;
   loading: boolean;
+  audioRef: React.RefObject<HTMLAudioElement>;
+  audioSectionRef: React.RefObject<HTMLDivElement>;
   togglePlay: () => void;
-  audioEvents: {
-    onCanPlay: () => void;
-    onDurationChange: ({
-      target,
-    }: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onTimeUpdate: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onWaiting: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onEnded: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onProgress: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onPause: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-  };
   // Getter functions
 
   getPlayPauseButtonProps: (args: {

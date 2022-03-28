@@ -33,11 +33,17 @@ export interface TrackControlProps {
   disablePreviousTrack?: boolean;
 }
 
-export interface AudioPlayerComposableProps {
+export interface AudioElementProps
+  extends Omit<React.AudioHTMLAttributes<HTMLAudioElement>, 'controls'> {
+  audioRef?: React.RefObject<HTMLAudioElement>;
+}
+
+export interface AudioPlayerComposableProps
+  extends Omit<React.AudioHTMLAttributes<HTMLAudioElement>, 'controls'> {
   children: React.ReactNode;
-  src: string;
-  autoPlay?: boolean;
   live?: boolean;
+  autoPlay?: boolean;
+  src: string;
   ariaLandmark?: string;
   keyboardShortcuts?: {
     jumpToStart: string | string[];
@@ -51,7 +57,7 @@ export enum AudioEvents {
   Waiting = 'onWaiting',
   CanPlay = 'onCanPlay',
   Ended = 'onEnded',
-  VolumeChange = 'onVolumeChange',
+  // VolumeChange = 'onVolumeChange',
   DurationChange = 'onDurationChange',
   TimeUpdate = 'onTimeUpdate',
   Progress = 'onProgress',
