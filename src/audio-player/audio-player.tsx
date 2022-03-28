@@ -372,5 +372,3 @@ export const AudioPlayer = withOwnTheme(ThemelessAudioPlayer)({
   defaults,
   stylePresets,
 });
-
-AudioPlayer.stylePresets = stylePresets;

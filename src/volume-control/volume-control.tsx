@@ -173,5 +173,3 @@ export const VolumeControl = withOwnTheme(ThemelessVolumeControl)({
   defaults,
   stylePresets,
 });
-
-VolumeControl.stylePresets = stylePresets;

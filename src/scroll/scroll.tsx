@@ -191,5 +191,3 @@ export const Scroll = withOwnTheme(ThemelessScroll)({
   defaults,
   stylePresets,
 });
-
-Scroll.stylePresets = stylePresets;

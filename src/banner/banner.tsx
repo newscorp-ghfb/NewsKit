@@ -51,5 +51,3 @@ const ThemelessBanner: React.FC<BannerProps> = ({
 };
 
 export const Banner = withOwnTheme(ThemelessBanner)({defaults, stylePresets});
-
-Banner.stylePresets = stylePresets;

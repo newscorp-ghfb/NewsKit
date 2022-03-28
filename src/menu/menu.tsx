@@ -54,4 +54,3 @@ const ThemelessMenu = React.forwardRef<HTMLElement, MenuProps>(
 );
 
 export const Menu = withOwnTheme(ThemelessMenu)({defaults, stylePresets});
-Menu.stylePresets = stylePresets;

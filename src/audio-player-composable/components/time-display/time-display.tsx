@@ -32,5 +32,3 @@ export const AudioPlayerTimeDisplay = withOwnTheme(ThemelessTimeDisplay)({
   defaults,
   stylePresets,
 });
-
-AudioPlayerTimeDisplay.stylePresets = stylePresets;

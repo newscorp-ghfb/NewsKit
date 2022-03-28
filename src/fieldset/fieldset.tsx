@@ -50,5 +50,3 @@ export const Fieldset = withOwnTheme(ThemelessFieldset)({
   defaults,
   stylePresets,
 });
-
-Fieldset.stylePresets = stylePresets;

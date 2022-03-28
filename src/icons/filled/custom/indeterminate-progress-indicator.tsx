@@ -70,4 +70,3 @@ export const IndeterminateProgressIndicator = withOwnTheme(
 )({defaults, stylePresets});
 
 IndeterminateProgressIndicator.displayName = 'IndeterminateProgressIndicator';
-IndeterminateProgressIndicator.stylePresets = stylePresets;

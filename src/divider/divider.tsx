@@ -36,5 +36,3 @@ const ThemelessDivider: React.FC<DividerProps> = props => (
 );
 
 export const Divider = withOwnTheme(ThemelessDivider)({defaults, stylePresets});
-
-Divider.stylePresets = stylePresets;

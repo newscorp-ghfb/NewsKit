@@ -95,5 +95,3 @@ export const Drawer = withOwnTheme(ThemelessDrawer)({
   defaults,
   stylePresets,
 });
-
-Drawer.stylePresets = stylePresets;

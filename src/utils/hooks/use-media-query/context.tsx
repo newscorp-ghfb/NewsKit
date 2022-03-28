@@ -86,6 +86,6 @@ export const withMediaQueryProvider = <P extends {}>(
   ));
 
   return (WrappedComponent as unknown) as React.FC<P> & {
-    stylePresets: Record<string, StylePreset>;
+    stylePresets?: Record<string, StylePreset>;
   };
 };

@@ -22,5 +22,3 @@ export const IconButton = withOwnTheme(ThemelessIconButton)({
   defaults,
   stylePresets,
 });
-
-IconButton.stylePresets = stylePresets;

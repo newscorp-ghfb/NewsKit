@@ -8,5 +8,3 @@ export const CardInset = withOwnTheme(withDefaultProps(Card, {}, 'cardInset'))({
   defaults,
   stylePresets,
 });
-
-CardInset.stylePresets = stylePresets;

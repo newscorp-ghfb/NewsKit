@@ -69,5 +69,3 @@ export const RadioButton = withOwnTheme(ThemelessRadioButton)({
   defaults,
   stylePresets,
 });
-
-RadioButton.stylePresets = stylePresets;

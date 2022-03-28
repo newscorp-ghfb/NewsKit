@@ -85,4 +85,3 @@ const ThemelessToast: React.FC<ToastProps> = ({
 };
 
 export const Toast = withOwnTheme(ThemelessToast)({defaults, stylePresets});
-Toast.stylePresets = stylePresets;

@@ -35,5 +35,3 @@ const ThemelessTag = ({overrides = {}, disabled, href, ...props}: TagProps) => {
 };
 
 export const Tag = withOwnTheme(ThemelessTag)({defaults, stylePresets});
-
-Tag.stylePresets = stylePresets;
