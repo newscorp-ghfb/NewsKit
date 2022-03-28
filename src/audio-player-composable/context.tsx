@@ -9,6 +9,8 @@ interface AudioPlayerProviderContext {
   playing: boolean;
   canPause: boolean;
   loading: boolean;
+  audioRef: React.RefObject<HTMLAudioElement>;
+  audioSectionRef: React.RefObject<HTMLDivElement>;
   togglePlay: () => void;
   // Getter functions
 

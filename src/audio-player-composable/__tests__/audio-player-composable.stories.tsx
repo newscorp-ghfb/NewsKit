@@ -91,7 +91,7 @@ AudioPlayer.storyName = 'audio-player';
 export const AudioPlayPauseButton = () => (
   <AudioPlayerComposable
     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    ariaLandmark="audio player"
+    ariaLandmark="audio player play pause button"
   >
     <AudioPlayerPlayPauseButton
       onClick={() => {
@@ -403,3 +403,83 @@ export const AudioPlayerSeekBarWithOverrides = () => (
 
 AudioPlayerSeekBarWithOverrides.storyName =
   'audio-player-seek-bar-with-overrides';
+
+export const AudioPlayerKeyboard = () => (
+  <>
+    <StorybookSubHeading>Audio Player Keyboard shortcuts</StorybookSubHeading>
+    <AudioPlayerComposable
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      ariaLandmark="audio player keyboard"
+    >
+      <GridLayout
+        columns="auto auto 1fr auto"
+        columnGap="space040"
+        alignItems="center"
+      >
+        <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+        <AudioPlayerTimeDisplay
+          format={({currentTime}) => calculateTime(currentTime)}
+        />
+        <AudioPlayerSeekBar />
+        <AudioPlayerTimeDisplay
+          format={({duration}) => calculateTime(duration)}
+        />
+      </GridLayout>
+    </AudioPlayerComposable>
+    <Block marginBlockEnd="space040" />
+    <GridLayout columns="auto 1fr" rowGap="space020" as="dl">
+      <dt>k / space</dt>
+      <dd>Toggle play/pause</dd>
+      <dt>0 / Home</dt>
+      <dd>Jump to start</dd>
+      <dt>End</dt>
+      <dd>Jump to end</dd>
+      <dt>-</dt>
+      <dd>Next track</dd>
+      <dt>-</dt>
+      <dd>Prev track</dd>
+    </GridLayout>
+    <Block marginBlockEnd="space090" />
+
+    <StorybookSubHeading>
+      Audio Player Keyboard overrides shortcuts
+    </StorybookSubHeading>
+    <AudioPlayerComposable
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      ariaLandmark="audio player keyboard overrides"
+      keyboardShortcuts={{jumpToStart: 's', jumpToEnd: 'e'}}
+    >
+      <GridLayout
+        columns="auto auto 1fr auto"
+        columnGap="space040"
+        alignItems="center"
+      >
+        <AudioPlayerPlayPauseButton
+          size={ButtonSize.Small}
+          keyboardShortcuts={{toggle: 't'}}
+        />
+        <AudioPlayerTimeDisplay
+          format={({currentTime}) => calculateTime(currentTime)}
+        />
+        <AudioPlayerSeekBar />
+        <AudioPlayerTimeDisplay
+          format={({duration}) => calculateTime(duration)}
+        />
+      </GridLayout>
+    </AudioPlayerComposable>
+    <Block marginBlockEnd="space040" />
+    <GridLayout columns="auto 1fr" rowGap="space020" as="dl">
+      <dt>t</dt>
+      <dd>Toggle play/pause</dd>
+      <dt>s</dt>
+      <dd>Jump to start</dd>
+      <dt>e</dt>
+      <dd>Jump to end</dd>
+      <dt>-</dt>
+      <dd>Next track</dd>
+      <dt>-</dt>
+      <dd>Prev track</dd>
+    </GridLayout>
+  </>
+);
+AudioPlayerKeyboard.storyName = 'audio-keyboard-shortcuts';

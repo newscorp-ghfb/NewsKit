@@ -45,6 +45,10 @@ export interface AudioPlayerComposableProps
   autoPlay?: boolean;
   src: string;
   ariaLandmark?: string;
+  keyboardShortcuts?: {
+    jumpToStart: string | string[];
+    jumpToEnd: string | string[];
+  };
 }
 
 export enum AudioEvents {

@@ -7,6 +7,7 @@ const isPlaying = () => {
       expect(paused).to.equal(false);
     });
 };
+
 const isPaused = () => {
   cy.get('@togglePlay').should('have.attr', 'aria-label', 'Play');
   cy.get('@audioElement')
@@ -47,6 +48,10 @@ const checkTime = expectedValue => {
   checkSliderValue(expectedValue);
   checkAudioElementTime(expectedValue);
   checkLabelCurrentTime(formatTime(expectedValue));
+};
+
+const TEST_DATA = {
+  durationInSeconds: 372,
 };
 
 describe('audio player composable', () => {
@@ -94,16 +99,86 @@ describe('audio player composable', () => {
     isPaused();
   });
 
+  it('move track using slider', () => {
+    // move to middle
+    cy.get('@audioSliderTrack').click('center');
+    checkTime(TEST_DATA.durationInSeconds / 2);
+
+    // move to the begining
+    cy.get('@audioSliderTrack').click('left');
+    checkTime(0);
+
+    // move to 4th minute
+    cy.get('@audioSliderTrack').click(624, 4);
+    checkTime(4 * 60);
+  });
+
+  it('pause when end', () => {
+    // start playing
+    cy.get('@togglePlay').click();
+    // move to the end
+    cy.get('@audioSliderTrack').click(1000, 4, {force: true});
+    checkTime(TEST_DATA.durationInSeconds);
+    isPaused();
+  });
+
+  it('keyboard: toggle when press K key', () => {
+    cy.get('@togglePlay').focus();
+    cy.get('@togglePlay').trigger('keyup', {key: 'k'});
+    isPlaying();
+
+    cy.get('@togglePlay').trigger('keyup', {key: 'k'});
+    isPaused();
+  });
+
+  it('keyboard: toggle when press Space key', () => {
+    cy.get('@audioSliderThumb').focus();
+    cy.get('@audioSliderThumb').trigger('keyup', {key: ' '});
+    isPlaying();
+
+    cy.get('@audioSliderThumb').trigger('keyup', {key: ' '});
+    isPaused();
+  });
+
+  it('keyboard: move track using 0, Start and End key', () => {
+    cy.get('@togglePlay').focus();
+    cy.get('@togglePlay').trigger('keyup', {key: 'End'});
+    checkTime(TEST_DATA.durationInSeconds);
+
+    cy.get('@togglePlay').trigger('keyup', {key: 'Home'});
+    checkTime(0);
+
+    cy.get('@togglePlay').trigger('keyup', {key: 'End'});
+    checkTime(TEST_DATA.durationInSeconds);
+
+    cy.get('@togglePlay').trigger('keyup', {key: '0'});
+    checkTime(0);
+  });
+
+  it('keyboard: Space key does not work with active elements', () => {
+    isPaused();
+    cy.get(`${parentTestIDSelector} [data-testid="buttonLink"]`).as('link');
+    cy.get('@link').focus();
+    cy.get('@link').trigger('keyup', {
+      force: true,
+      position: 'topLeft',
+      key: ' ',
+    });
+    isPaused();
+  });
+
   it('it forwards when forward button is clicked', () => {
     cy.get('@forwardButton').click();
     checkTime(10);
   });
+
   it('it replays when replay button is clicked', () => {
     cy.get('@forwardButton').click();
     cy.get('@forwardButton').click();
     cy.get('@backwardButton').click();
     checkTime(10);
   });
+
   it('it replay button back to 0 if under 10 seconds', () => {
     cy.get('@audioSliderTrack').click(9, 4);
     cy.get('@backwardButton').click();
