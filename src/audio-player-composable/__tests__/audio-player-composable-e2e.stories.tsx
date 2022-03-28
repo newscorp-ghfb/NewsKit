@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {ButtonSize} from '../../button';
+import {ButtonSize, Button} from '../../button';
 import {GridLayout} from '../../grid-layout/grid-layout';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {AudioPlayerComposable} from '../audio-player-composable';
@@ -14,6 +14,13 @@ export default {
   title: 'NewsKit Light/audio-player-composable-e2e',
   component: () => 'None',
 };
+
+const fullAudioPlayerAreas = `
+  seekBar seekBar seekBar 
+  currentTime none totalTime  
+  volume controls link
+ `;
+
 export const AudioPlayerE2E = () => (
   <div data-testid="audio-player-inline">
     <StorybookSubHeading>Audio player for e2e tests</StorybookSubHeading>
@@ -21,23 +28,50 @@ export const AudioPlayerE2E = () => (
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
       ariaLandmark="audio player e2e tests"
     >
-      <GridLayout
-        columns="0fr 40px 1fr auto 0fr 1fr"
-        columnGap="space040"
-        alignItems="center"
-      >
-        <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
-        <AudioPlayerTimeDisplay
-          data-testid="audio-player-current-time"
-          format={({currentTime}) => calculateTime(currentTime)}
-        />
-        <AudioPlayerSeekBar />
-        <AudioPlayerTimeDisplay
-          data-testid="audio-player-duration"
-          format={({duration}) => calculateTime(duration)}
-        />
-        <AudioPlayerReplayButton size={ButtonSize.Small} />
-        <AudioPlayerForwardButton size={ButtonSize.Small} />
+      <GridLayout rowGap="10px" areas={fullAudioPlayerAreas}>
+        {Areas => (
+          <>
+            <Areas.SeekBar>
+              <AudioPlayerSeekBar />
+            </Areas.SeekBar>
+            <Areas.CurrentTime>
+              <AudioPlayerTimeDisplay
+                data-testid="audio-player-current-time"
+                format={({currentTime}) => calculateTime(currentTime)}
+              />
+            </Areas.CurrentTime>
+            <Areas.TotalTime justifySelf="end">
+              <AudioPlayerTimeDisplay
+                data-testid="audio-player-duration"
+                format={({duration}) => calculateTime(duration)}
+              />
+            </Areas.TotalTime>
+            <Areas.Volume alignSelf="center" justifySelf="start">
+              Not yet
+            </Areas.Volume>
+            <Areas.Link alignSelf="center" justifySelf="end">
+              <Button
+                href="/"
+                size={ButtonSize.Small}
+                overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+              >
+                read more
+              </Button>
+            </Areas.Link>
+            <Areas.Controls>
+              <GridLayout
+                columns="repeat(5, auto)"
+                columnGap="20px"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <AudioPlayerReplayButton />
+                <AudioPlayerPlayPauseButton />
+                <AudioPlayerForwardButton />
+              </GridLayout>
+            </Areas.Controls>
+          </>
+        )}
       </GridLayout>
     </AudioPlayerComposable>
   </div>
