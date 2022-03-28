@@ -432,7 +432,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 
 <div>
     <div
-      class="nk-drawer-enter-done emotion-0"
+      class="emotion-0 nk-overlay-enter-done"
       data-testid="overlay"
     />
     <div
@@ -451,7 +451,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
       <div
         aria-hidden="false"
         aria-modal="true"
-        class="nk-drawer-enter-done emotion-1"
+        class="emotion-1 nk-drawer-enter-done"
         data-testid="inlineDrawer"
         role="dialog"
       >
@@ -528,86 +528,6 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   .emotion-0 {
   box-sizing: border-box;
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 70;
-  cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-0 {
-    opacity: 0;
-  }
-
-  .emotion-0.nk-overlay-enter {
-    opacity: 0;
-  }
-
-  .emotion-0.nk-overlay-enter-active {
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: 200ms;
-  }
-
-  .emotion-0.nk-overlay-enter-done {
-    opacity: 1;
-  }
-
-  .emotion-0.nk-overlay-exit {
-    opacity: 1;
-  }
-
-  .emotion-0.nk-overlay-exit-active {
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 200ms;
-  }
-
-  .emotion-0.nk-overlay-exit-done {
-    opacity: 0;
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-0 {
-    opacity: 0;
-  }
-
-  .emotion-0.nk-overlay-enter {
-    opacity: 0;
-  }
-
-  .emotion-0.nk-overlay-enter-active {
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: 0ms;
-  }
-
-  .emotion-0.nk-overlay-enter-done {
-    opacity: 1;
-  }
-
-  .emotion-0.nk-overlay-exit {
-    opacity: 1;
-  }
-
-  .emotion-0.nk-overlay-exit-active {
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 0ms;
-  }
-
-  .emotion-0.nk-overlay-exit-done {
-    opacity: 0;
-  }
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  position: fixed;
   pointer-events: none;
   z-index: 80;
   display: grid;
@@ -626,37 +546,37 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 @media screen and (max-width: 479px) {
-  .emotion-1 {
+  .emotion-0 {
     width: 305px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-1 {
+  .emotion-0 {
     width: 309px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-1 {
+  .emotion-0 {
     width: 310px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-1 {
+  .emotion-0 {
     width: 333px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-1 {
+  .emotion-0 {
     width: 354px;
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-1 {
+  .emotion-0 {
     opacity: 0;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -664,7 +584,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
     transform: translateX(-100%);
   }
 
-  .emotion-1.nk-drawer-enter {
+  .emotion-0.nk-drawer-enter {
     opacity: 0;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -672,7 +592,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
     transform: translateX(-100%);
   }
 
-  .emotion-1.nk-drawer-enter-active {
+  .emotion-0.nk-drawer-enter-active {
     opacity: 1;
     transition-property: opacity,transform;
     transition-duration: 200ms,200ms;
@@ -683,7 +603,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
   }
 
-  .emotion-1.nk-drawer-enter-done {
+  .emotion-0.nk-drawer-enter-done {
     opacity: 1;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -691,7 +611,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
     transform: translateX(0);
   }
 
-  .emotion-1.nk-drawer-exit {
+  .emotion-0.nk-drawer-exit {
     opacity: 1;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -699,7 +619,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
     transform: translateX(0);
   }
 
-  .emotion-1.nk-drawer-exit-active {
+  .emotion-0.nk-drawer-exit-active {
     opacity: 0;
     transition-property: opacity,transform;
     transition-duration: 200ms,200ms;
@@ -710,7 +630,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 
-  .emotion-1.nk-drawer-exit-done {
+  .emotion-0.nk-drawer-exit-done {
     opacity: 0;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -720,7 +640,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-1 {
+  .emotion-0 {
     opacity: 0;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -728,7 +648,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
     transform: translateX(-100%);
   }
 
-  .emotion-1.nk-drawer-enter {
+  .emotion-0.nk-drawer-enter {
     opacity: 0;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -736,7 +656,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
     transform: translateX(-100%);
   }
 
-  .emotion-1.nk-drawer-enter-active {
+  .emotion-0.nk-drawer-enter-active {
     opacity: 1;
     transition-property: opacity,transform;
     transition-duration: 0ms;
@@ -747,7 +667,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
   }
 
-  .emotion-1.nk-drawer-enter-done {
+  .emotion-0.nk-drawer-enter-done {
     opacity: 1;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -755,7 +675,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
     transform: translateX(0);
   }
 
-  .emotion-1.nk-drawer-exit {
+  .emotion-0.nk-drawer-exit {
     opacity: 1;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -763,7 +683,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
     transform: translateX(0);
   }
 
-  .emotion-1.nk-drawer-exit-active {
+  .emotion-0.nk-drawer-exit-active {
     opacity: 0;
     transition-property: opacity,transform;
     transition-duration: 0ms;
@@ -774,7 +694,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 
-  .emotion-1.nk-drawer-exit-done {
+  .emotion-0.nk-drawer-exit-done {
     opacity: 0;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -783,24 +703,24 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   }
 }
 
-.emotion-2 {
+.emotion-1 {
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
   padding: 24px;
 }
 
-.emotion-4 {
+.emotion-3 {
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   grid-area: close;
   box-sizing: border-box;
   -webkit-align-self: center;
@@ -810,7 +730,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   padding-right: 0;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -843,34 +763,34 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   cursor: pointer;
 }
 
-.emotion-6 svg {
+.emotion-5 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-6 svg {
+.emotion-5 svg {
   fill: #2E2E2E;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-5:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-5:active:not(:disabled) {
   background-color: #F4F4F4;
 }
 
-.emotion-6:disabled {
+.emotion-5:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-6:disabled svg {
+.emotion-5:disabled svg {
   fill: #C0C0C0;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -878,14 +798,14 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -906,7 +826,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   margin-right: calc(-8px/2);
 }
 
-.emotion-8 {
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -915,7 +835,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   margin-right: calc(8px/2);
 }
 
-.emotion-9 {
+.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -925,7 +845,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -933,7 +853,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -941,10 +861,6 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 }
 
 <div>
-    <div
-      class="emotion-0"
-      data-testid="overlay"
-    />
     <div
       data-focus-guard="true"
       style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -961,42 +877,42 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
       <div
         aria-hidden="true"
         aria-modal="true"
-        class="emotion-1"
+        class="emotion-0"
         data-testid="drawer"
         role="dialog"
       >
         <div
-          class="emotion-2"
+          class="emotion-1"
         />
         <div
-          class="emotion-3"
+          class="emotion-2"
           data-testid="dialog-content"
         >
           <p
-            class="emotion-4"
+            class="emotion-3"
           >
             Drawer body content
           </p>
         </div>
         <div
-          class="emotion-5"
+          class="emotion-4"
         >
           <button
             aria-label="close"
-            class="emotion-6"
+            class="emotion-5"
             data-testid="button"
             tabindex="-1"
             type="button"
           >
             <div
-              class="emotion-7"
+              class="emotion-6"
             >
               <div
-                class="emotion-8"
+                class="emotion-7"
               >
                 <svg
                   aria-hidden="true"
-                  class="emotion-9 emotion-10"
+                  class="emotion-8 emotion-9"
                   fill="currentColor"
                   focusable="false"
                   viewBox="0 0 24 24"
@@ -1458,7 +1374,7 @@ exports[`Drawer renders default 1`] = `
 
 <div>
     <div
-      class="nk-drawer-enter-done emotion-0"
+      class="emotion-0 nk-overlay-enter-done"
       data-testid="overlay"
     />
     <div
@@ -1477,7 +1393,7 @@ exports[`Drawer renders default 1`] = `
       <div
         aria-hidden="false"
         aria-modal="true"
-        class="nk-drawer-enter-done emotion-1"
+        class="emotion-1 nk-drawer-enter-done"
         data-testid="drawer"
         role="dialog"
       >
@@ -1930,7 +1846,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
 
 <div>
     <div
-      class="nk-drawer-enter-done emotion-0"
+      class="emotion-0 nk-overlay-enter-done"
       data-testid="overlay"
     />
     <div
@@ -1949,7 +1865,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
       <div
         aria-hidden="false"
         aria-modal="true"
-        class="nk-drawer-enter-done emotion-1"
+        class="emotion-1 nk-drawer-enter-done"
         data-testid="drawer"
         role="dialog"
       >
@@ -2470,7 +2386,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
 
 <div>
     <div
-      class="nk-drawer-enter-done emotion-0"
+      class="emotion-0 nk-overlay-enter-done"
       data-testid="overlay"
     />
     <div
@@ -2489,7 +2405,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
       <div
         aria-hidden="false"
         aria-modal="false"
-        class="nk-drawer-enter-done emotion-1"
+        class="emotion-1 nk-drawer-enter-done"
         data-testid="drawer"
         role="dialog"
       >
@@ -3002,7 +2918,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
 
 <div>
     <div
-      class="nk-drawer-enter-done emotion-0"
+      class="emotion-0 nk-overlay-enter-done"
       data-testid="overlay"
     />
     <div
@@ -3022,7 +2938,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
         aria-hidden="false"
         aria-labelledby="headerLabel"
         aria-modal="true"
-        class="nk-drawer-enter-done emotion-1"
+        class="emotion-1 nk-drawer-enter-done"
         data-testid="drawer"
         role="dialog"
       >
@@ -3502,7 +3418,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
 
 <div>
     <div
-      class="nk-drawer-enter-done emotion-0"
+      class="emotion-0 nk-overlay-enter-done"
       data-testid="overlay"
     />
     <div
@@ -3522,7 +3438,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
         aria-describedby="description purpose"
         aria-hidden="false"
         aria-modal="true"
-        class="nk-drawer-enter-done emotion-1"
+        class="emotion-1 nk-drawer-enter-done"
         data-testid="drawer"
         role="dialog"
       >
@@ -4023,7 +3939,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
 
 <div>
     <div
-      class="nk-drawer-enter-done emotion-0"
+      class="emotion-0 nk-overlay-enter-done"
       data-testid="overlay"
     />
     <div
@@ -4042,7 +3958,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
       <div
         aria-hidden="false"
         aria-modal="true"
-        class="nk-drawer-enter-done emotion-1"
+        class="emotion-1 nk-drawer-enter-done"
         data-testid="drawer"
         role="dialog"
       >
@@ -4547,7 +4463,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
 
 <div>
     <div
-      class="nk-drawer-enter-done emotion-0"
+      class="emotion-0 nk-overlay-enter-done"
       data-testid="overlay"
     />
     <div
@@ -4566,7 +4482,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
       <div
         aria-hidden="false"
         aria-modal="true"
-        class="nk-drawer-enter-done emotion-1"
+        class="emotion-1 nk-drawer-enter-done"
         data-testid="drawer"
         role="dialog"
       >
@@ -5071,7 +4987,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
 
 <div>
     <div
-      class="nk-drawer-enter-done emotion-0"
+      class="emotion-0 nk-overlay-enter-done"
       data-testid="overlay"
     />
     <div
@@ -5090,7 +5006,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
       <div
         aria-hidden="false"
         aria-modal="true"
-        class="nk-drawer-enter-done emotion-1"
+        class="emotion-1 nk-drawer-enter-done"
         data-testid="drawer"
         role="dialog"
       >
@@ -5595,7 +5511,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
 
 <div>
     <div
-      class="nk-drawer-enter-done emotion-0"
+      class="emotion-0 nk-overlay-enter-done"
       data-testid="overlay"
     />
     <div
@@ -5614,7 +5530,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
       <div
         aria-hidden="false"
         aria-modal="true"
-        class="nk-drawer-enter-done emotion-1"
+        class="emotion-1 nk-drawer-enter-done"
         data-testid="drawer"
         role="dialog"
       >
@@ -5979,7 +5895,7 @@ exports[`Drawer renders without close button 1`] = `
 
 <div>
     <div
-      class="nk-drawer-enter-done emotion-0"
+      class="emotion-0 nk-overlay-enter-done"
       data-testid="overlay"
     />
     <div
@@ -5998,7 +5914,7 @@ exports[`Drawer renders without close button 1`] = `
       <div
         aria-hidden="false"
         aria-modal="true"
-        class="nk-drawer-enter-done emotion-1"
+        class="emotion-1 nk-drawer-enter-done"
         data-testid="drawer"
         role="dialog"
       >
@@ -6453,7 +6369,7 @@ exports[`Drawer renders without header 1`] = `
 
 <div>
     <div
-      class="nk-drawer-enter-done emotion-0"
+      class="emotion-0 nk-overlay-enter-done"
       data-testid="overlay"
     />
     <div
@@ -6472,7 +6388,7 @@ exports[`Drawer renders without header 1`] = `
       <div
         aria-hidden="false"
         aria-modal="true"
-        class="nk-drawer-enter-done emotion-1"
+        class="emotion-1 nk-drawer-enter-done"
         data-testid="drawer"
         role="dialog"
       >
@@ -6807,7 +6723,7 @@ exports[`Drawer renders without header and close 1`] = `
 
 <div>
     <div
-      class="nk-drawer-enter-done emotion-0"
+      class="emotion-0 nk-overlay-enter-done"
       data-testid="overlay"
     />
     <div
@@ -6826,7 +6742,7 @@ exports[`Drawer renders without header and close 1`] = `
       <div
         aria-hidden="false"
         aria-modal="true"
-        class="nk-drawer-enter-done emotion-1"
+        class="emotion-1 nk-drawer-enter-done"
         data-testid="drawer"
         role="dialog"
       >
@@ -7219,7 +7135,7 @@ exports[`Drawer renders without overlay 1`] = `
       <div
         aria-hidden="false"
         aria-modal="true"
-        class="nk-drawer-enter-done emotion-0"
+        class="emotion-0 nk-drawer-enter-done"
         data-testid="drawer"
         role="dialog"
       >
@@ -7712,7 +7628,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
 
 <div>
     <div
-      class="nk-drawer-enter-done emotion-0"
+      class="emotion-0 nk-overlay-enter-done"
       data-testid="overlay"
     />
     <div
@@ -7731,7 +7647,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
       <div
         aria-hidden="false"
         aria-modal="true"
-        class="nk-drawer-enter-done emotion-1"
+        class="emotion-1 nk-drawer-enter-done"
         data-testid="drawer"
         role="dialog"
       >
@@ -7800,86 +7716,6 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   .emotion-0 {
   box-sizing: border-box;
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 70;
-  cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-0 {
-    opacity: 0;
-  }
-
-  .emotion-0.nk-overlay-enter {
-    opacity: 0;
-  }
-
-  .emotion-0.nk-overlay-enter-active {
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: 200ms;
-  }
-
-  .emotion-0.nk-overlay-enter-done {
-    opacity: 1;
-  }
-
-  .emotion-0.nk-overlay-exit {
-    opacity: 1;
-  }
-
-  .emotion-0.nk-overlay-exit-active {
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 200ms;
-  }
-
-  .emotion-0.nk-overlay-exit-done {
-    opacity: 0;
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-0 {
-    opacity: 0;
-  }
-
-  .emotion-0.nk-overlay-enter {
-    opacity: 0;
-  }
-
-  .emotion-0.nk-overlay-enter-active {
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: 0ms;
-  }
-
-  .emotion-0.nk-overlay-enter-done {
-    opacity: 1;
-  }
-
-  .emotion-0.nk-overlay-exit {
-    opacity: 1;
-  }
-
-  .emotion-0.nk-overlay-exit-active {
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 0ms;
-  }
-
-  .emotion-0.nk-overlay-exit-done {
-    opacity: 0;
-  }
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  position: fixed;
   pointer-events: none;
   z-index: 80;
   display: grid;
@@ -7898,37 +7734,37 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 @media screen and (max-width: 479px) {
-  .emotion-1 {
+  .emotion-0 {
     width: 305px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-1 {
+  .emotion-0 {
     width: 309px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-1 {
+  .emotion-0 {
     width: 310px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-1 {
+  .emotion-0 {
     width: 333px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-1 {
+  .emotion-0 {
     width: 354px;
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-1 {
+  .emotion-0 {
     opacity: 0;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -7936,7 +7772,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
     transform: translateX(-100%);
   }
 
-  .emotion-1.nk-drawer-enter {
+  .emotion-0.nk-drawer-enter {
     opacity: 0;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -7944,7 +7780,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
     transform: translateX(-100%);
   }
 
-  .emotion-1.nk-drawer-enter-active {
+  .emotion-0.nk-drawer-enter-active {
     opacity: 1;
     transition-property: opacity,transform;
     transition-duration: 200ms,200ms;
@@ -7955,7 +7791,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
   }
 
-  .emotion-1.nk-drawer-enter-done {
+  .emotion-0.nk-drawer-enter-done {
     opacity: 1;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -7963,7 +7799,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
     transform: translateX(0);
   }
 
-  .emotion-1.nk-drawer-exit {
+  .emotion-0.nk-drawer-exit {
     opacity: 1;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -7971,7 +7807,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
     transform: translateX(0);
   }
 
-  .emotion-1.nk-drawer-exit-active {
+  .emotion-0.nk-drawer-exit-active {
     opacity: 0;
     transition-property: opacity,transform;
     transition-duration: 200ms,200ms;
@@ -7982,7 +7818,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 
-  .emotion-1.nk-drawer-exit-done {
+  .emotion-0.nk-drawer-exit-done {
     opacity: 0;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -7992,7 +7828,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-1 {
+  .emotion-0 {
     opacity: 0;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -8000,7 +7836,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
     transform: translateX(-100%);
   }
 
-  .emotion-1.nk-drawer-enter {
+  .emotion-0.nk-drawer-enter {
     opacity: 0;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -8008,7 +7844,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
     transform: translateX(-100%);
   }
 
-  .emotion-1.nk-drawer-enter-active {
+  .emotion-0.nk-drawer-enter-active {
     opacity: 1;
     transition-property: opacity,transform;
     transition-duration: 0ms;
@@ -8019,7 +7855,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
   }
 
-  .emotion-1.nk-drawer-enter-done {
+  .emotion-0.nk-drawer-enter-done {
     opacity: 1;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -8027,7 +7863,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
     transform: translateX(0);
   }
 
-  .emotion-1.nk-drawer-exit {
+  .emotion-0.nk-drawer-exit {
     opacity: 1;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -8035,7 +7871,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
     transform: translateX(0);
   }
 
-  .emotion-1.nk-drawer-exit-active {
+  .emotion-0.nk-drawer-exit-active {
     opacity: 0;
     transition-property: opacity,transform;
     transition-duration: 0ms;
@@ -8046,7 +7882,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 
-  .emotion-1.nk-drawer-exit-done {
+  .emotion-0.nk-drawer-exit-done {
     opacity: 0;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -8055,20 +7891,20 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   }
 }
 
-.emotion-2 {
+.emotion-1 {
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
   padding: 24px;
 }
 
-.emotion-4 {
+.emotion-3 {
   grid-area: close;
   box-sizing: border-box;
   -webkit-align-self: center;
@@ -8078,7 +7914,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   padding-right: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -8111,34 +7947,34 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   cursor: pointer;
 }
 
-.emotion-5 svg {
+.emotion-4 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-5 svg {
+.emotion-4 svg {
   fill: #2E2E2E;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #F4F4F4;
 }
 
-.emotion-5:disabled {
+.emotion-4:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-5:disabled svg {
+.emotion-4:disabled svg {
   fill: #C0C0C0;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-4 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8146,14 +7982,14 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-4 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-6 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8174,7 +8010,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8183,7 +8019,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-8 {
+.emotion-7 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -8193,7 +8029,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8201,7 +8037,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-7 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8209,10 +8045,6 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
 }
 
 <div>
-    <div
-      class="emotion-0"
-      data-testid="overlay"
-    />
     <div
       data-focus-guard="true"
       style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -8229,38 +8061,38 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
       <div
         aria-hidden="true"
         aria-modal="true"
-        class="emotion-1"
+        class="emotion-0 nk-drawer-exit-done"
         data-testid="drawer"
         role="dialog"
       >
         <div
-          class="emotion-2"
+          class="emotion-1"
         />
         <div
-          class="emotion-3"
+          class="emotion-2"
           data-testid="dialog-content"
         >
           Dialog content
         </div>
         <div
-          class="emotion-4"
+          class="emotion-3"
         >
           <button
             aria-label="close"
-            class="emotion-5"
+            class="emotion-4"
             data-testid="button"
             tabindex="-1"
             type="button"
           >
             <div
-              class="emotion-6"
+              class="emotion-5"
             >
               <div
-                class="emotion-7"
+                class="emotion-6"
               >
                 <svg
                   aria-hidden="true"
-                  class="emotion-8 emotion-9"
+                  class="emotion-7 emotion-8"
                   fill="currentColor"
                   focusable="false"
                   viewBox="0 0 24 24"
