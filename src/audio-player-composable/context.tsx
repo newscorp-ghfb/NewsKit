@@ -10,6 +10,7 @@ interface AudioPlayerProviderContext {
   autoPlay?: boolean;
   // Internal
   audioRef: React.RefObject<HTMLAudioElement>;
+  audioSectionRef: React.RefObject<HTMLDivElement>;
   playing: boolean;
   canPause: boolean;
   loading: boolean;
@@ -23,6 +24,7 @@ interface AudioPlayerProviderContext {
     onWaiting: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
     onEnded: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
     onProgress: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
+    onPause: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
   };
   // Getter functions
 
