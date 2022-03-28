@@ -47,6 +47,20 @@ export const StyledSwitchContainer = styled.div<
       'input',
       'size',
     )}
+  ${({size, path}) =>
+    getResponsiveSize(
+      'blockSize',
+      `${path}.${size}.input`,
+      'input',
+      'blockSize',
+    )}
+  ${({size, path}) =>
+    getResponsiveSize(
+      'inlineSize',
+      `${path}.${size}.input`,
+      'input',
+      'inlineSize',
+    )}
 
   ${({size, labelPosition, path}) =>
     getResponsiveSpace(

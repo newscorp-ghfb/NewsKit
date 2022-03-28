@@ -22,8 +22,10 @@ import {
   SvgProps,
   toNewsKitIcon,
 } from '../..';
-import {CheckboxIconProps} from '../types';
+import {CheckboxIconProps, CheckboxProps} from '../types';
 import {states, sizes} from './helpers';
+import {BaseSwitch} from '../../base-switch';
+import {withOwnTheme} from '../../utils/with-own-theme';
 
 const myCustomTheme = compileTheme(
   createTheme({
@@ -290,47 +292,54 @@ export const StoryCheckboxTransitions = () => (
 
 StoryCheckboxTransitions.storyName = 'checkbox-transitions';
 
-const myToggle = compileTheme(
-  createTheme({
-    name: 'checkbox-theme',
-    overrides: {
-      stylePresets: {
-        toggleTrack: {
-          base: {
-            backgroundColor: 'rgb(159 158 159)',
-            borderRadius: '{{borders.borderRadiusPill}}',
-          },
-          checked: {
-            backgroundColor: 'rgb(143 185 232)',
-          },
-        },
-        toggleThumb: {
-          base: {
-            backgroundColor: 'white',
-            borderRadius: '{{borders.borderRadiusCircle}}',
-            boxShadow:
-              'rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px',
-          },
-          checked: {
-            backgroundColor: 'rgb(25 118 210)',
-          },
-        },
+const toggleStylePresets = {
+  toggleTrack: {
+    base: {
+      backgroundColor: 'rgb(159 158 159)',
+      borderRadius: '{{borders.borderRadiusPill}}',
+    },
+    checked: {
+      backgroundColor: 'rgb(143 185 232)',
+    },
+  },
+  toggleThumb: {
+    base: {
+      backgroundColor: 'white',
+      borderRadius: '{{borders.borderRadiusCircle}}',
+      boxShadow:
+        'rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px',
+    },
+    checked: {
+      backgroundColor: 'rgb(25 118 210)',
+    },
+  },
+};
+
+const toggleDefaults = {
+  toggle: {
+    medium: {
+      spaceStack: 'space000',
+      track: {
+        stylePreset: 'toggleTrack',
+        size: '16px',
       },
-      componentDefaults: {
-        toggle: {
-          track: {
-            stylePreset: 'toggleTrack',
-            size: '16px',
-          },
-          thumb: {
-            stylePreset: 'toggleThumb',
-            size: '24px',
-          },
-        },
+      thumb: {
+        stylePreset: 'toggleThumb',
+        size: '24px',
+      },
+      // this is coming from base-switch
+      input: {
+        blockSize: '32px',
+        inlineSize: '48px',
+        spaceInline: 'space030',
+      },
+      label: {
+        stylePreset: 'controlLabel',
+        typographyPreset: 'utilityBody020',
       },
     },
-  }),
-);
+  },
+};
 
 const Track = styled.div<{checked: boolean}>`
   width: 100%;
@@ -338,20 +347,20 @@ const Track = styled.div<{checked: boolean}>`
   display: grid;
   place-items: center;
   ${props =>
-    getStylePreset('toggle.track', 'track', {isChecked: props.checked})}
-  ${getResponsiveSize('height', 'toggle.track', 'track', 'size')};
+    getStylePreset('toggle.medium.track', 'track', {isChecked: props.checked})}
+  ${getResponsiveSize('height', 'toggle.medium.track', 'track', 'size')};
   transition: all 0.2s ease-in-out;
 `;
 const Thumb = styled.div<{checked: boolean}>`
   ${props =>
-    getStylePreset('toggle.thumb', 'thumb', {isChecked: props.checked})}
+    getStylePreset('toggle.medium.thumb', 'thumb', {isChecked: props.checked})}
   ${getResponsiveSize(
     rectSize => ({width: rectSize, height: rectSize}),
-    'toggle.thumb',
+    'toggle.medium.thumb',
     'thumb',
     'size',
   )}
-  ${props => (!props.checked ? 'left: 0' : 'left: 50%')};
+  ${props => (!props.checked ? 'left: 0' : 'left: calc(100% - 24px)')};
   position: absolute;
   aspect-ratio: 1/1;
   transition: all 0.2s ease-in-out;
@@ -359,7 +368,13 @@ const Thumb = styled.div<{checked: boolean}>`
   place-items: center;
 `;
 
-const ToggleComponent = ({checked}: CheckboxIconProps) => (
+const DefaultToggleComponent = ({checked}: CheckboxIconProps) => (
+  <Track checked={checked}>
+    <Thumb checked={checked} />
+  </Track>
+);
+
+const ThemeToggleComponent = ({checked}: CheckboxIconProps) => (
   <Track checked={checked}>
     <Thumb checked={checked}>
       {checked ? (
@@ -371,16 +386,28 @@ const ToggleComponent = ({checked}: CheckboxIconProps) => (
   </Track>
 );
 
-export const StoryCheckboxAsToggle = () => (
-  <ThemeProvider theme={myToggle}>
-    <Checkbox
-      overrides={{
-        icon: ToggleComponent,
-        input: {stylePreset: 'no-real-style-preset'},
-        feedback: {stylePreset: 'no-real-style-preset'},
-      }}
+const ThemelessToggle = React.forwardRef<HTMLInputElement, CheckboxProps>(
+  (props, inputRef) => (
+    <BaseSwitch
+      path="toggle"
+      ref={inputRef}
+      type="checkbox"
+      {...props}
+      defaultSwitchSelectorComponent={DefaultToggleComponent}
     />
-  </ThemeProvider>
+  ),
+);
+
+export const Toggle = withOwnTheme(ThemelessToggle)({
+  defaults: toggleDefaults,
+  stylePresets: toggleStylePresets,
+});
+
+export const StoryCheckboxAsToggle = () => (
+  <>
+    <Toggle defaultChecked />
+    <Toggle label="change theme" overrides={{icon: ThemeToggleComponent}} />
+  </>
 );
 
 const Dark: React.FC<SvgProps> = props => (
