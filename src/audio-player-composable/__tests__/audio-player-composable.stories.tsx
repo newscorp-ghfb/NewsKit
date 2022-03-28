@@ -13,7 +13,8 @@ import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
 import {Block} from '../../block';
 import {ButtonSize} from '../../button/types';
-import {IconFilledReplay5} from '../../icons/filled/custom/IconFilledReplay5';
+import {IconFilledReplay5} from '../../icons/filled/custom/icon-filled-replay-5';
+import {IconFilledFoward5} from '../../icons/filled/custom/icon-filled-forward-5';
 
 const AudioPlayerContainer = styled.div<{dark?: boolean}>`
   border: solid 1px red;
@@ -244,10 +245,13 @@ export const AudioPlayerForwardReplayButton = () => (
                 alignItems="center"
               >
                 <AudioPlayerReplayButton
-                  seconds={20}
+                  seconds={5}
                   overrides={{
                     iconSize: 'iconSize030',
                     stylePreset: 'buttonOutlinedNegative',
+                  }}
+                  onClick={() => {
+                    console.log('customer click function');
                   }}
                 >
                   <IconFilledReplay5 />
@@ -255,12 +259,17 @@ export const AudioPlayerForwardReplayButton = () => (
 
                 <AudioPlayerPlayPauseButton />
                 <AudioPlayerForwardButton
-                  seconds={20}
+                  seconds={5}
                   overrides={{
                     iconSize: 'iconSize030',
                     stylePreset: 'buttonOutlinedNegative',
                   }}
-                />
+                  onClick={() => {
+                    console.log('customer click function');
+                  }}
+                >
+                  <IconFilledFoward5 />
+                </AudioPlayerForwardButton>
               </GridLayout>
             </Areas.Controls>
           </>

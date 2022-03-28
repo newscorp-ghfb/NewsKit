@@ -131,6 +131,7 @@ export const AudioPlayerComposable = ({
     seconds?: number;
   }) => {
     const onClick = () => {
+      console.log('clicked?');
       if (consumerOnClick) consumerOnClick();
       onClickForward({
         seconds,
@@ -138,7 +139,7 @@ export const AudioPlayerComposable = ({
     };
 
     return {
-      children: <IconFilledForward10 />,
+      defaultForwardIcon: <IconFilledForward10 />,
       ariaLabel: `Fast forward for ${seconds} seconds`,
       onClick,
     };

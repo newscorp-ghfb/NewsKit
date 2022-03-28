@@ -46,7 +46,7 @@ interface AudioPlayerProviderContext {
     onClick?: () => void;
     seconds?: number;
   }) => {
-    children: ReactElement;
+    defaultForwardIcon: ReactElement;
     ariaLabel: string;
     onClick: (event: SyntheticEvent<HTMLButtonElement, Event>) => void;
   };
