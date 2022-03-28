@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import React from 'react';
 import {fireEvent, act} from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import {renderWithImplementation, renderWithTheme} from '../../test/test-utils';
 import {AudioPlayerComposable} from '../audio-player-composable';
 import {AudioPlayerPlayPauseButton} from '../components/play-pause-button/play-pause-button';
@@ -10,6 +11,7 @@ import {AudioPlayerTimeDisplay} from '../components/time-display/time-display';
 import {formatFunction} from '../components/time-display/utils';
 import {compileTheme, createTheme} from '../../theme';
 import seekBarStylePresets from '../components/seek-bar/style-presets';
+import {Button} from '../../button';
 import {AudioPlayerForwardButton} from '../components/forward-button/forward-button';
 import {AudioPlayerReplayButton} from '../components/replay-button/replay-button';
 
@@ -27,6 +29,7 @@ const recordedAudioProps: AudioPlayerComposableProps = {
         }}
       />
       <AudioPlayerTimeDisplay data-testid="audio-player-time-display" />
+      <Button href="/">read more</Button>
       <AudioPlayerForwardButton
         onClick={() => {
           console.log('customer click function for forward');
@@ -314,20 +317,6 @@ describe('Audio Player Composable', () => {
     expect(audioElement.pause).not.toHaveBeenCalled();
   });
 
-  it('should render correctly when in autoplay', () => {
-    const {asFragment} = renderWithTheme(
-      AudioPlayerComposable,
-      recordedAudioPropsAutoplay,
-    );
-    expect(asFragment()).toMatchSnapshot();
-  });
-  it('should render default display time label', () => {
-    const {asFragment} = renderWithTheme(
-      AudioPlayerComposable,
-      recordedAudioProps,
-    );
-    expect(asFragment()).toMatchSnapshot();
-  });
   it('renders with TimeDisplay label overrides', () => {
     const myCustomTheme = createTheme({
       name: 'my-custom-seek-bar-theme',
@@ -349,16 +338,29 @@ describe('Audio Player Composable', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+  it('calls event handler passed from the props', () => {
+    const onDurationChange = jest.fn();
+    const props = {
+      ...recordedAudioProps,
+      onDurationChange,
+    };
+    const {getByTestId} = renderWithTheme(AudioPlayerComposable, props);
+    fireEvent.durationChange(getByTestId('audio-element'), {
+      target: {duration: 10},
+    });
+
+    expect(onDurationChange).toHaveBeenCalledTimes(1);
+    expect(onDurationChange).toHaveBeenCalledWith(
+      expect.objectContaining({
+        target: expect.objectContaining({duration: 10}),
+      }),
+    );
+  });
   describe('seekBar should', () => {
     it('renders and behaves as expected', () => {
-      const onPlay = jest.fn();
-      const props = {
-        ...recordedAudioProps,
-        onPlay,
-      };
       const {asFragment, getByTestId} = renderWithTheme(
         AudioPlayerComposable,
-        props,
+        recordedAudioProps,
       );
 
       const audioElement = getByTestId('audio-element') as any;
@@ -484,6 +486,65 @@ describe('Audio Player Composable', () => {
       );
 
       expect(asFragment()).toMatchSnapshot();
+    });
+  });
+
+  describe('Keyboard shortcuts', () => {
+    it('should play and pause on press K key', () => {
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        recordedAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const playPauseButton = getByTestId('audio-player-play-pause-button');
+      playPauseButton.focus();
+      fireEvent.canPlay(audioElement);
+      userEvent.keyboard('k');
+      expect(audioElement.paused).toBe(false);
+      userEvent.keyboard('k');
+      expect(audioElement.paused).toBe(true);
+    });
+
+    it('should NOT play on space key when focus on an active element', () => {
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        recordedAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const link = getByTestId('buttonLink');
+      link.focus();
+      fireEvent.canPlay(audioElement);
+      userEvent.keyboard(' ');
+      expect(audioElement.paused).toBe(true);
+    });
+
+    it('should change current time via Home and End key', () => {
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        recordedAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const playPauseButton = getByTestId('audio-player-play-pause-button');
+      playPauseButton.focus();
+
+      // set initial duration
+      fireEvent.durationChange(audioElement, {
+        target: {
+          duration: 100,
+        },
+      });
+
+      fireEvent.canPlay(audioElement);
+
+      // move to end
+      userEvent.keyboard('{End}');
+      expect(audioElement.currentTime).toBe(100);
+
+      userEvent.keyboard('{Home}');
+      expect(audioElement.currentTime).toBe(0);
     });
   });
 });

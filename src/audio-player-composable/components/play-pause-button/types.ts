@@ -4,4 +4,7 @@ export interface PlayPauseButtonProps {
   size?: ButtonSize;
   onClick?: () => void;
   overrides?: ButtonProps['overrides'];
+  keyboardShortcuts?: {
+    toggle: string;
+  };
 }

@@ -126,7 +126,6 @@ export const sharedDialogTests = (
     });
     expect(fragment).toMatchSnapshot();
   });
-
   test('renders without header and close', () => {
     const fragment = renderToFragmentWithTheme(Dialog, {
       open: true,
@@ -136,7 +135,6 @@ export const sharedDialogTests = (
     });
     expect(fragment).toMatchSnapshot();
   });
-
   test('toggle aria-hidden to content outside dialog', () => {
     const Component = () => {
       const [open, setOpen] = React.useState(true);
