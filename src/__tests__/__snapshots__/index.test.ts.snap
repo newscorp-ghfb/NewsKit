@@ -130,6 +130,7 @@ Array [
   "TextInputSize",
   "ThemeChecker",
   "ThemeProvider",
+  "ThemelessTimeDisplay",
   "TitleBar",
   "Toast",
   "ToastProvider",

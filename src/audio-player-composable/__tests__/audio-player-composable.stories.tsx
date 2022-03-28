@@ -201,11 +201,15 @@ export const AudioPlayerForwardReplayButton = () => (
                 justifyContent="center"
                 alignItems="center"
               >
-                <AudioPlayerSkipPreviousButton />
+                <AudioPlayerSkipPreviousButton
+                  onClick={() => console.log('on skip Prev track')}
+                />
                 <AudioPlayerReplayButton />
                 <AudioPlayerPlayPauseButton />
                 <AudioPlayerForwardButton />
-                <AudioPlayerSkipNextButton />
+                <AudioPlayerSkipNextButton
+                  onClick={() => console.log('on skip Next track')}
+                />
               </GridLayout>
             </Areas.Controls>
           </>

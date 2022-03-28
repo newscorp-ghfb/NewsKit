@@ -1157,8 +1157,12 @@ Object {
       },
     },
   },
-  "audioPlayerSkipNext": Object {},
-  "audioPlayerSkipPrevious": Object {},
+  "audioPlayerSkipNext": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
+  "audioPlayerSkipPrevious": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
   "audioPlayerTimeDisplay": Object {
     "stylePreset": "timeDisplay",
     "typographyPreset": "utilityButton030",
