@@ -1,3 +1,4 @@
+import React from 'react';
 import {MQ} from '../../../utils';
 
 export type FormatFn = ({
@@ -9,7 +10,6 @@ export type FormatFn = ({
 }) => string;
 export type StyledLabelProps = {
   format?: FormatFn;
-
   overrides?: {
     typographyPreset?: MQ<string>;
     stylePreset?: MQ<string>;
