@@ -159,7 +159,7 @@ export const AudioPlayerComposable = ({
     };
 
     return {
-      children: <IconFilledReplay10 />,
+      defaultReplayIcon: <IconFilledReplay10 />,
       ariaLabel: `Rewind ${seconds} seconds`,
       onClick,
     };

@@ -13,6 +13,7 @@ import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
 import {Block} from '../../block';
 import {ButtonSize} from '../../button/types';
+import {IconFilledReplay5} from '../../icons/filled/custom/IconFilledReplay5';
 
 const AudioPlayerContainer = styled.div<{dark?: boolean}>`
   border: solid 1px red;
@@ -248,7 +249,10 @@ export const AudioPlayerForwardReplayButton = () => (
                     iconSize: 'iconSize030',
                     stylePreset: 'buttonOutlinedNegative',
                   }}
-                />
+                >
+                  <IconFilledReplay5 />
+                </AudioPlayerReplayButton>
+
                 <AudioPlayerPlayPauseButton />
                 <AudioPlayerForwardButton
                   seconds={20}
