@@ -338,17 +338,29 @@ describe('Audio Player Composable', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+  it('calls event handler passed from the props', () => {
+    const onDurationChange = jest.fn();
+    const props = {
+      ...recordedAudioProps,
+      onDurationChange,
+    };
+    const {getByTestId} = renderWithTheme(AudioPlayerComposable, props);
+    fireEvent.durationChange(getByTestId('audio-element'), {
+      target: {duration: 10},
+    });
 
+    expect(onDurationChange).toHaveBeenCalledTimes(1);
+    expect(onDurationChange).toHaveBeenCalledWith(
+      expect.objectContaining({
+        target: expect.objectContaining({duration: 10}),
+      }),
+    );
+  });
   describe('seekBar should', () => {
     it('renders and behaves as expected', () => {
-      const onPlay = jest.fn();
-      const props = {
-        ...recordedAudioProps,
-        onPlay,
-      };
       const {asFragment, getByTestId} = renderWithTheme(
         AudioPlayerComposable,
-        props,
+        recordedAudioProps,
       );
 
       const audioElement = getByTestId('audio-element') as any;
