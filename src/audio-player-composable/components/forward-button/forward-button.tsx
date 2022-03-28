@@ -9,7 +9,7 @@ import {AudioPlayerIconButtonProps} from '../../types';
 import defaults from './defaults';
 
 const ThemelessAudioPlayerForwardButton: React.FC<AudioPlayerIconButtonProps> = React.memo(
-  ({overrides, ...props}) => {
+  ({overrides, onClick: consumerOnClick, ...props}) => {
     const {getForwardButtonProps} = useAudioPlayerContext();
 
     const theme = useTheme();
@@ -19,15 +19,21 @@ const ThemelessAudioPlayerForwardButton: React.FC<AudioPlayerIconButtonProps> = 
       ...filterOutFalsyProperties(overrides),
     };
 
-    const propsFromContex =
-      getForwardButtonProps! && getForwardButtonProps(props);
+    const {onClick, ariaLabel, children} =
+      getForwardButtonProps! &&
+      getForwardButtonProps({onClick: consumerOnClick});
+
     return (
       <IconButton
         data-testid="audio-player-forward-button"
         size={ButtonSize.Medium}
         overrides={audioPlayerForwardOverrides}
-        {...propsFromContex}
-      />
+        onClick={onClick}
+        aria-label={ariaLabel}
+        {...props}
+      >
+        {children}
+      </IconButton>
     );
   },
 );

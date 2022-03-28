@@ -1,8 +1,11 @@
 import {ReactJSXElement} from '@emotion/react/types/jsx-namespace';
-import React, {createContext, SyntheticEvent, useContext} from 'react';
-import {IconButtonProps} from '../button';
+import React, {
+  createContext,
+  ReactElement,
+  SyntheticEvent,
+  useContext,
+} from 'react';
 import {FormatFn} from './components/time-display/types';
-import {AudioPlayerIconButtonProps} from './types';
 
 interface AudioPlayerProviderContext {
   id: string;
@@ -39,6 +42,13 @@ interface AudioPlayerProviderContext {
     canPause: boolean;
     playStateIcon: ReactJSXElement;
   };
+  getForwardButtonProps: (args: {
+    onClick?: () => void;
+  }) => {
+    children: ReactElement;
+    ariaLabel: string;
+    onClick: (event: SyntheticEvent<HTMLButtonElement, Event>) => void;
+  };
   getTimeDisplayProps: () => {
     format: FormatFn;
     currentTime: number;
@@ -50,8 +60,13 @@ interface AudioPlayerProviderContext {
     onChange: (value: number) => void;
     buffered: TimeRanges | undefined;
   };
-  getForwardButtonProps: (props: AudioPlayerIconButtonProps) => IconButtonProps;
-  getReplayButtonProps: (props: AudioPlayerIconButtonProps) => IconButtonProps;
+  getReplayButtonProps: (args: {
+    onClick?: () => void;
+  }) => {
+    children: ReactElement;
+    ariaLabel: string;
+    onClick: (event: SyntheticEvent<HTMLButtonElement, Event>) => void;
+  };
 }
 
 export const AudioPlayerContext = createContext<
