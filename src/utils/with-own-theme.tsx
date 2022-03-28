@@ -2,6 +2,10 @@ import React from 'react';
 import {compileTheme, StylePreset, Theme, ThemeProvider} from '../theme';
 import {deepMerge} from './deep-merge';
 
+export type NewsKitReactComponents<T> = React.FC<T> & {
+  stylePresets?: Record<string, StylePreset>;
+};
+
 const mergeTheme = (
   theme: Theme,
   defaults: Record<string, Object>,
@@ -34,10 +38,9 @@ export const withOwnTheme = <P extends {}>(
     </ThemeProvider>
   ));
 
-  const Component = (WrappedComponent as unknown) as React.FC<P> & {
-    stylePresets?: Record<string, StylePreset>;
-  };
+  const Component = (WrappedComponent as unknown) as NewsKitReactComponents<P>;
 
   Component.stylePresets = stylePresets;
+
   return Component;
 };
