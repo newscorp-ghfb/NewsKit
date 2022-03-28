@@ -44,6 +44,15 @@ interface AudioPlayerProviderContext {
   };
   getForwardButtonProps: (args: {
     onClick?: () => void;
+    seconds?: number;
+  }) => {
+    children: ReactElement;
+    ariaLabel: string;
+    onClick: (event: SyntheticEvent<HTMLButtonElement, Event>) => void;
+  };
+  getReplayButtonProps: (args: {
+    onClick?: () => void;
+    seconds?: number;
   }) => {
     children: ReactElement;
     ariaLabel: string;
@@ -59,13 +68,6 @@ interface AudioPlayerProviderContext {
     currentTime: number;
     onChange: (value: number) => void;
     buffered: TimeRanges | undefined;
-  };
-  getReplayButtonProps: (args: {
-    onClick?: () => void;
-  }) => {
-    children: ReactElement;
-    ariaLabel: string;
-    onClick: (event: SyntheticEvent<HTMLButtonElement, Event>) => void;
   };
 }
 

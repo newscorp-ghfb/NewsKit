@@ -243,6 +243,7 @@ export const AudioPlayerForwardReplayButton = () => (
                 alignItems="center"
               >
                 <AudioPlayerReplayButton
+                  seconds={20}
                   overrides={{
                     iconSize: 'iconSize030',
                     stylePreset: 'buttonOutlinedNegative',
@@ -250,6 +251,7 @@ export const AudioPlayerForwardReplayButton = () => (
                 />
                 <AudioPlayerPlayPauseButton />
                 <AudioPlayerForwardButton
+                  seconds={20}
                   overrides={{
                     iconSize: 'iconSize030',
                     stylePreset: 'buttonOutlinedNegative',

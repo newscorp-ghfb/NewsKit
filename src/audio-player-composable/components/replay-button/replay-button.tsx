@@ -9,7 +9,7 @@ import {AudioPlayerIconButtonProps} from '../../types';
 import defaults from './defaults';
 
 const ThemelessAudioPlayerReplayButton: React.FC<AudioPlayerIconButtonProps> = React.memo(
-  ({overrides, onClick: consumerOnClick, ...props}) => {
+  ({overrides, onClick: consumerOnClick, seconds, ...props}) => {
     const {getReplayButtonProps} = useAudioPlayerContext();
 
     const theme = useTheme();
@@ -20,7 +20,8 @@ const ThemelessAudioPlayerReplayButton: React.FC<AudioPlayerIconButtonProps> = R
     };
 
     const {onClick, ariaLabel, children} =
-      getReplayButtonProps! && getReplayButtonProps({onClick: consumerOnClick});
+      getReplayButtonProps! &&
+      getReplayButtonProps({onClick: consumerOnClick, seconds});
 
     return (
       <IconButton

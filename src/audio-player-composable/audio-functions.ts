@@ -150,30 +150,32 @@ AudioFunctionDependencies) => {
     }
   }, [onNextTrack]);
 
-  // TODO remove ignore once in use
-  /* istanbul ignore next */
-  const onClickBackward = useCallback(() => {
-    updateAudioTime(currentTimeRef.current - 10);
-    const trackingInformation = getTrackingInformation(
-      'audio-player-skip-backward',
-      EventTrigger.Click,
-      {event_navigation_name: 'backward skip'},
-    );
-    fireEvent(trackingInformation);
-  }, [fireEvent, getTrackingInformation, updateAudioTime, currentTimeRef]);
+  const onClickBackward = useCallback(
+    ({seconds = 10}: {seconds: number}) => {
+      updateAudioTime(currentTimeRef.current - seconds);
+      const trackingInformation = getTrackingInformation(
+        'audio-player-skip-backward',
+        EventTrigger.Click,
+        {event_navigation_name: 'backward skip'},
+      );
+      fireEvent(trackingInformation);
+    },
+    [fireEvent, getTrackingInformation, updateAudioTime, currentTimeRef],
+  );
 
-  // TODO remove ignore once in use
-  /* istanbul ignore next */
-  const onClickForward = useCallback(() => {
-    updateAudioTime(currentTimeRef.current + 10);
+  const onClickForward = useCallback(
+    ({seconds = 10}: {seconds: number}) => {
+      updateAudioTime(currentTimeRef.current + seconds);
 
-    const trackingInformation = getTrackingInformation(
-      'audio-player-skip-forward',
-      EventTrigger.Click,
-      {event_navigation_name: 'forward skip'},
-    );
-    fireEvent(trackingInformation);
-  }, [fireEvent, getTrackingInformation, updateAudioTime, currentTimeRef]);
+      const trackingInformation = getTrackingInformation(
+        'audio-player-skip-forward',
+        EventTrigger.Click,
+        {event_navigation_name: 'forward skip'},
+      );
+      fireEvent(trackingInformation);
+    },
+    [fireEvent, getTrackingInformation, updateAudioTime, currentTimeRef],
+  );
 
   const onDurationChange = useCallback(
     ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {

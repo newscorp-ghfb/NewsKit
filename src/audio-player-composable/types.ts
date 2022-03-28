@@ -59,6 +59,6 @@ export enum AudioEvents {
 
 export interface AudioPlayerIconButtonProps
   extends Optional<IconButtonProps, 'aria-label'> {
-  seconds?: string;
+  seconds?: number;
   onClick?: () => void;
 }

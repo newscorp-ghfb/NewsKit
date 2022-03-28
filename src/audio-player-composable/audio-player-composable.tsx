@@ -15,7 +15,6 @@ import {useKeypress} from '../utils/hooks/use-keypress';
 import {AudioFunctionDependencies, AudioPlayerComposableProps} from './types';
 import {formatFunction} from './components/time-display/utils';
 import {IconFilledForward10, IconFilledReplay10} from '../icons';
-import {composeEventHandlers} from '../utils/compose-event-handlers';
 
 const defaultKeyboardShortcuts = {
   jumpToStart: ['0', 'Home'],
@@ -126,23 +125,45 @@ export const AudioPlayerComposable = ({
 
   const getForwardButtonProps = ({
     onClick: consumerOnClick,
+    seconds = 10,
   }: {
     onClick?: () => void;
-  }) => ({
-    children: <IconFilledForward10 />,
-    ariaLabel: 'Fast forward for 10 seconds',
-    onClick: composeEventHandlers([consumerOnClick, onClickForward]),
-  });
+    seconds?: number;
+  }) => {
+    const onClick = () => {
+      if (consumerOnClick) consumerOnClick();
+      onClickForward({
+        seconds,
+      });
+    };
+
+    return {
+      children: <IconFilledForward10 />,
+      ariaLabel: `Fast forward for ${seconds} seconds`,
+      onClick,
+    };
+  };
 
   const getReplayButtonProps = ({
     onClick: consumerOnClick,
+    seconds = 10,
   }: {
     onClick?: () => void;
-  }) => ({
-    children: <IconFilledReplay10 />,
-    ariaLabel: 'Rewind 10 seconds',
-    onClick: composeEventHandlers([consumerOnClick, onClickBackward]),
-  });
+    seconds?: number;
+  }) => {
+    const onClick = () => {
+      if (consumerOnClick) consumerOnClick();
+      onClickBackward({
+        seconds,
+      });
+    };
+
+    return {
+      children: <IconFilledReplay10 />,
+      ariaLabel: `Rewind ${seconds} seconds`,
+      onClick,
+    };
+  };
 
   const getSeekBarProps = () => ({
     duration,
