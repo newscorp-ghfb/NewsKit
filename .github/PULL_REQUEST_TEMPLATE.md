@@ -19,26 +19,20 @@ DO CONSIDER any of the following are breaking changes to a consumer, this is by 
 <!---
 Add any breaking change if present.
 E.g:
-BREAKING CHANGE: renames the foobar component's prop foo to bar 
+BREAKING CHANGE: renames the foobar component's prop foo to bar
 --->
 
 **I have done:**
- - [ ] Written unit tests against changes
- - [ ] Written accessibility tests against the component
- - [ ] Written functional tests against the component and/or NewsKit site
- - [ ] Updated relevant documentation
- - [ ] Updated the release notes for the [next release version](https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2349695021/Release%2BNotes%2BCode%2B-%2BWeb%2BDocumentation)
- - [ ] Discussed with QA and/or design about any visual changes
+- [ ] Written unit tests against changes
+- [ ] Written functional tests against the component and/or NewsKit site
+- [ ] Updated relevant documentation
 
 **I have tested manually:**
- - [ ] Renders correctly on IE11
- - [ ] The feature's functionality is working as expected on other browsers such as Safari, Firefox and IE11
- - [ ] There are no accessibility errors reported by WAVE
- - [ ] The screen reader reads the expected text for the tabbable elements.
- - [ ] There are no new errors in the browser console coming from this PR.
- - [ ] When visual test is not added, it renders correctly on different browsers and mobile viewports (Safari, Firefox, small mobile viewport, tablet)
- - [ ] The Playground feature is working as expected
-
+- [ ] The feature's functionality is working as expected on Chrome, Firefox, Safari and Edge
+- [ ] The screen reader reads the expected text for the tabbable elements.
+- [ ] There are no new errors in the browser console coming from this PR.
+- [ ] When visual test is not added, it renders correctly on different browsers and mobile viewports (Safari, Firefox, small mobile viewport, tablet)
+- [ ] The Playground feature is working as expected
 
 
 <!---
