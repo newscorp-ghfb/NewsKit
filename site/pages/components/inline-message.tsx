@@ -24,7 +24,7 @@ const PlaygroundContainer = styled.div`
 const InlineMessageComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Inline message',
+      title: 'Inline Message',
       description:
         'An inline message communicates contextual information. They are positioned inline, in close proximity to the element they are adding context to.',
     }}
