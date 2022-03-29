@@ -1136,6 +1136,9 @@ Object {
   "audioPlayerForwardButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },
+  "audioPlayerPlayPauseButton": Object {
+    "stylePreset": "iconButtonSolidPrimary",
+  },
   "audioPlayerReplayButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },
@@ -1157,10 +1160,10 @@ Object {
       },
     },
   },
-  "audioPlayerSkipNext": Object {
+  "audioPlayerSkipNextButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },
-  "audioPlayerSkipPrevious": Object {
+  "audioPlayerSkipPreviousButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },
   "audioPlayerTimeDisplay": Object {

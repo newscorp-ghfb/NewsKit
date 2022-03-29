@@ -1,6 +1,7 @@
 import React from 'react';
 import {BreakpointKeys, useTheme} from '../../../theme';
 import {getMediaQueryFromTheme} from '../../responsive-helpers';
+import {NewsKitReactComponents} from '../../with-own-theme';
 import {MediaQueries} from './types';
 import {
   createInitState,
@@ -85,5 +86,5 @@ export const withMediaQueryProvider = <P extends {}>(
     </MediaQueryProvider>
   ));
 
-  return (WrappedComponent as unknown) as React.FC<P>;
+  return (WrappedComponent as unknown) as NewsKitReactComponents<P>;
 };

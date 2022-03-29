@@ -3,22 +3,21 @@ import React from 'react';
 import {fireEvent, act} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import {renderWithImplementation, renderWithTheme} from '../../test/test-utils';
-import {AudioPlayerComposable} from '../audio-player-composable';
-import {AudioPlayerSeekBar} from '../components/seek-bar/seek-bar';
 import {AudioPlayerComposableProps} from '../types';
+import {formatFunction} from '../components/time-display/utils';
+import {compileTheme, createTheme} from '../../theme';
+import seekBarStylePresets from '../components/seek-bar/style-presets';
+import {Button} from '../../button';
 import {
+  AudioPlayerComposable,
   AudioPlayerTimeDisplay,
   AudioPlayerPlayPauseButton,
   AudioPlayerSkipNextButton,
   AudioPlayerSkipPreviousButton,
   AudioPlayerForwardButton,
   AudioPlayerReplayButton,
+  AudioPlayerSeekBar,
 } from '..';
-
-import {formatFunction} from '../components/time-display/utils';
-import {compileTheme, createTheme} from '../../theme';
-import seekBarStylePresets from '../components/seek-bar/style-presets';
-import {Button} from '../../button';
 
 const version = '0.10.0';
 
@@ -353,6 +352,24 @@ describe('Audio Player Composable', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+  it('calls event handler passed from the props', () => {
+    const onDurationChange = jest.fn();
+    const props = {
+      ...recordedAudioProps,
+      onDurationChange,
+    };
+    const {getByTestId} = renderWithTheme(AudioPlayerComposable, props);
+    fireEvent.durationChange(getByTestId('audio-element'), {
+      target: {duration: 10},
+    });
+
+    expect(onDurationChange).toHaveBeenCalledTimes(1);
+    expect(onDurationChange).toHaveBeenCalledWith(
+      expect.objectContaining({
+        target: expect.objectContaining({duration: 10}),
+      }),
+    );
+  });
 
   it('skip-prev button should move track to beginning', () => {
     const {getByTestId} = renderWithTheme(AudioPlayerComposable, {
@@ -435,14 +452,9 @@ describe('Audio Player Composable', () => {
 
   describe('seekBar should', () => {
     it('renders and behaves as expected', () => {
-      const onPlay = jest.fn();
-      const props = {
-        ...recordedAudioProps,
-        onPlay,
-      };
       const {asFragment, getByTestId} = renderWithTheme(
         AudioPlayerComposable,
-        props,
+        recordedAudioProps,
       );
 
       const audioElement = getByTestId('audio-element') as any;

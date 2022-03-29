@@ -1,30 +1,16 @@
-import React, {createContext, SyntheticEvent, useContext} from 'react';
+import React, {createContext, useContext} from 'react';
 import {IconButtonProps} from '../button';
 import {FormatFn} from './components/time-display/types';
 import {AudioPlayerIconButtonProps} from './types';
 
 interface AudioPlayerProviderContext {
   id: string;
-  src: string;
-  autoPlay?: boolean;
-  // Internal
-  audioRef: React.RefObject<HTMLAudioElement>;
-  audioSectionRef: React.RefObject<HTMLDivElement>;
   playing: boolean;
   canPause: boolean;
   loading: boolean;
+  audioRef: React.RefObject<HTMLAudioElement>;
+  audioSectionRef: React.RefObject<HTMLDivElement>;
   togglePlay: () => void;
-  audioEvents: {
-    onCanPlay: () => void;
-    onDurationChange: ({
-      target,
-    }: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onTimeUpdate: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onWaiting: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onEnded: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onProgress: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-    onPause: ({target}: SyntheticEvent<HTMLAudioElement, Event>) => void;
-  };
   // Getter functions
 
   getPlayPauseButtonProps: (
