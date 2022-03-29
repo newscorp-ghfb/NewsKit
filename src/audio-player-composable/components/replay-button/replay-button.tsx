@@ -3,60 +3,44 @@ import {ButtonOverrides, ButtonSize} from '../../../button/types';
 import {IconButton} from '../../../icon-button';
 import {useTheme} from '../../../theme';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
-import {useKeypress} from '../../../utils/hooks/use-keypress';
 import {withOwnTheme} from '../../../utils/with-own-theme';
 import {useAudioPlayerContext} from '../../context';
-import {AudioPlayerIconButtonProps} from '../../types';
+import {AudioPlayerIconButtonWithShortcuts} from '../../types';
+import {useKeyboardShortcutsOnButton} from '../../utils';
 import defaults from './defaults';
 
-const defaultKeyboardShortcuts = {
-  replay: ['j'],
-};
+const defaultKeyboardShortcuts = ['j'];
 
 const ThemelessAudioPlayerReplayButton: React.FC<
-  AudioPlayerIconButtonProps & {
-    keyboardShortcuts?: {
-      forward: string[] | string;
-    };
+  AudioPlayerIconButtonWithShortcuts & {
     seconds?: number;
   }
-> = React.memo(
-  ({overrides, keyboardShortcuts: keyboardShortcutsProp, ...props}) => {
-    const {getReplayButtonProps, audioSectionRef} = useAudioPlayerContext();
+> = React.memo(({overrides, ...props}) => {
+  const {getReplayButtonProps} = useAudioPlayerContext();
 
-    const theme = useTheme();
+  const theme = useTheme();
 
-    const audioPlayerReplayOverrides: ButtonOverrides = {
-      ...theme.componentDefaults.audioPlayerReplayButton,
-      ...filterOutFalsyProperties(overrides),
-    };
+  const audioPlayerReplayOverrides: ButtonOverrides = {
+    ...theme.componentDefaults.audioPlayerReplayButton,
+    ...filterOutFalsyProperties(overrides),
+  };
 
-    const propsFromContext =
-      getReplayButtonProps! && getReplayButtonProps(props);
+  const propsFromContext = getReplayButtonProps! && getReplayButtonProps(props);
 
-    // Keyboard shortcuts
-    const options = {target: audioSectionRef, preventDefault: false};
-    const keyboardShortcuts = {
-      ...defaultKeyboardShortcuts,
-      ...keyboardShortcutsProp,
-    };
-    useKeypress(
-      keyboardShortcuts.replay,
-      // @ts-ignore
-      e => propsFromContext.onClick(e),
-      options,
-    );
+  useKeyboardShortcutsOnButton({
+    props: propsFromContext as AudioPlayerIconButtonWithShortcuts,
+    defaults: defaultKeyboardShortcuts,
+  });
 
-    return (
-      <IconButton
-        data-testid="audio-player-replay-button"
-        size={ButtonSize.Medium}
-        overrides={audioPlayerReplayOverrides}
-        {...propsFromContext}
-      />
-    );
-  },
-);
+  return (
+    <IconButton
+      data-testid="audio-player-replay-button"
+      size={ButtonSize.Medium}
+      overrides={audioPlayerReplayOverrides}
+      {...propsFromContext}
+    />
+  );
+});
 
 export const AudioPlayerReplayButton = withOwnTheme(
   ThemelessAudioPlayerReplayButton,

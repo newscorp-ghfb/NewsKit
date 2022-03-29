@@ -2,30 +2,19 @@ import React from 'react';
 import {IconButton} from '../../../icon-button';
 import {ButtonOverrides, ButtonSize} from '../../../button/types';
 import {useAudioPlayerContext} from '../../context';
-import {AudioPlayerIconButtonProps} from '../../types';
+import {AudioPlayerIconButtonWithShortcuts} from '../../types';
 import defaults from './defaults';
 import {withOwnTheme} from '../../../utils/with-own-theme';
 import {useTheme} from '../../../theme';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
 import {get} from '../../../utils/get';
-import {useKeypress} from '../../../utils/hooks';
+import {useKeyboardShortcutsOnButton} from '../../utils';
 
-const defaultKeyboardShortcuts = {
-  skipPrevious: ['s', 'shift + p'],
-};
+const defaultKeyboardShortcuts = ['s', 'shift + p'];
 
-const ThemelessAudioPlayerSkipPreviousButton: React.FC<
-  AudioPlayerIconButtonProps & {
-    keyboardShortcuts?: {
-      forward: string[] | string;
-    };
-  }
-> = React.memo(
-  ({overrides, keyboardShortcuts: keyboardShortcutsProp, ...props}) => {
-    const {
-      getSkipPreviousButtonProps,
-      audioSectionRef,
-    } = useAudioPlayerContext();
+const ThemelessAudioPlayerSkipPreviousButton: React.FC<AudioPlayerIconButtonWithShortcuts> = React.memo(
+  ({overrides, ...props}) => {
+    const {getSkipPreviousButtonProps} = useAudioPlayerContext();
 
     const theme = useTheme();
     const buttonOverrides: ButtonOverrides = {
@@ -36,18 +25,10 @@ const ThemelessAudioPlayerSkipPreviousButton: React.FC<
     const propsFromContext =
       getSkipPreviousButtonProps! && getSkipPreviousButtonProps(props);
 
-    // Keyboard shortcuts
-    const options = {target: audioSectionRef, preventDefault: false};
-    const keyboardShortcuts = {
-      ...defaultKeyboardShortcuts,
-      ...keyboardShortcutsProp,
-    };
-    useKeypress(
-      keyboardShortcuts.skipPrevious,
-      // @ts-ignore
-      e => propsFromContext.onClick(e),
-      options,
-    );
+    useKeyboardShortcutsOnButton({
+      props: propsFromContext as AudioPlayerIconButtonWithShortcuts,
+      defaults: defaultKeyboardShortcuts,
+    });
 
     return (
       <IconButton

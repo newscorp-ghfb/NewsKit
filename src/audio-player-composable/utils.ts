@@ -1,3 +1,7 @@
+import {useKeypress} from '../utils/hooks';
+import {useAudioPlayerContext} from './context';
+import {AudioPlayerIconButtonWithShortcuts} from './types';
+
 const hhmmss: [number, number] = [11, 8];
 const mmss: [number, number] = [14, 5];
 
@@ -24,4 +28,25 @@ export const getMediaSegment = (duration: number, currentPosition: number) => {
     return '51-75';
 
   return '76-100';
+};
+
+type UseKeyboardShortcutsType = {
+  action?: Function;
+  defaults: string | string[];
+  props: AudioPlayerIconButtonWithShortcuts;
+};
+
+export const useKeyboardShortcutsOnButton = ({
+  props,
+  defaults: defaultKeys,
+}: UseKeyboardShortcutsType) => {
+  const {audioSectionRef} = useAudioPlayerContext();
+
+  const {keyboardShortcuts: keyboardShortcutsProp} = props;
+
+  const options = {target: audioSectionRef, preventDefault: false};
+  const keyboardShortcuts = keyboardShortcutsProp || defaultKeys;
+
+  // @ts-ignore
+  useKeypress(keyboardShortcuts, e => props.onClick(e), options);
 };
