@@ -16,7 +16,7 @@ const defaultKeyboardShortcuts = {
 
 const ThemelessAudioPlayerSkipNextButton: React.FC<
   AudioPlayerIconButtonProps & {
-    keyboardShortcuts: {
+    keyboardShortcuts?: {
       forward: string[] | string;
     };
   }

@@ -15,10 +15,10 @@ const defaultKeyboardShortcuts = {
 
 const ThemelessAudioPlayerForwardButton: React.FC<
   AudioPlayerIconButtonProps & {
-    keyboardShortcuts: {
+    keyboardShortcuts?: {
       forward: string[] | string;
     };
-    seconds: number;
+    seconds?: number;
   }
 > = React.memo(
   ({overrides, keyboardShortcuts: keyboardShortcutsProp, ...props}) => {
