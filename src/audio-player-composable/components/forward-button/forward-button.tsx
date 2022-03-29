@@ -8,6 +8,8 @@ import {useAudioPlayerContext} from '../../context';
 import {AudioPlayerIconButtonProps} from '../../types';
 import defaults from './defaults';
 
+// TODO update svgs path
+
 const ThemelessAudioPlayerForwardButton: React.FC<AudioPlayerIconButtonProps> = React.memo(
   ({overrides, ...props}) => {
     const {getForwardButtonProps} = useAudioPlayerContext();
@@ -19,14 +21,14 @@ const ThemelessAudioPlayerForwardButton: React.FC<AudioPlayerIconButtonProps> = 
       ...filterOutFalsyProperties(overrides),
     };
 
-    const propsFromContex =
+    const propsFromContext =
       getForwardButtonProps! && getForwardButtonProps(props);
     return (
       <IconButton
         data-testid="audio-player-forward-button"
         size={ButtonSize.Medium}
         overrides={audioPlayerForwardOverrides}
-        {...propsFromContex}
+        {...propsFromContext}
       />
     );
   },
