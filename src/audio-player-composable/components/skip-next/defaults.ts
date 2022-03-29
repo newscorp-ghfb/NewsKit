@@ -1,5 +1,5 @@
 export default {
-  audioPlayerSkipNext: {
+  audioPlayerSkipNextButton: {
     stylePreset: 'iconButtonMinimalPrimary',
   },
 };

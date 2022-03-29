@@ -136,7 +136,7 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
     />
     <button
       aria-busy="true"
-      aria-label="Stop"
+      aria-label="Pause"
       aria-live="polite"
       aria-pressed="true"
       class="emotion-0"
@@ -1847,7 +1847,7 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
     </span>
     <button
       aria-busy="true"
-      aria-label="Stop"
+      aria-label="Pause"
       aria-live="polite"
       aria-pressed="true"
       class="emotion-4"

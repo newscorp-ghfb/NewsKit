@@ -13,6 +13,7 @@ import {useAudioFunctions} from './audio-functions';
 import {AudioPlayerProvider} from './context';
 import {useKeypress} from '../utils/hooks/use-keypress';
 import {
+  AudioEvents,
   AudioFunctionDependencies,
   AudioPlayerComposableProps,
   AudioPlayerIconButtonProps,
@@ -41,6 +42,7 @@ export const AudioPlayerComposable = ({
   live = false,
   ariaLandmark,
   keyboardShortcuts: keyboardShortcutsProp,
+  ...props
 }: AudioPlayerComposableProps) => {
   const currentTimeRef = useRef(0);
 
@@ -101,12 +103,13 @@ export const AudioPlayerComposable = ({
     let playStateIcon = <IconFilledPlayArrow />;
     let ariaLabel = 'Play';
     let ariaPressed = false;
+    const canPause = !live;
 
     if (playing) {
       ariaPressed = true;
       // TODO remove ignore as we implement the "live" functionality back and write test for it
       /* istanbul ignore next */
-      if (live) {
+      if (canPause) {
         playStateIcon = <IconFilledPause />;
         ariaLabel = 'Pause';
       } else {
@@ -127,7 +130,7 @@ export const AudioPlayerComposable = ({
 
       // can  be needed for custom internal logic
       playing,
-      canPause: live,
+      canPause,
     };
   };
   const getForwardButtonProps = ({
@@ -194,6 +197,9 @@ export const AudioPlayerComposable = ({
   });
 
   const value = {
+    audioRef,
+    audioSectionRef,
+    togglePlay,
     // Props function getter
     getPlayPauseButtonProps,
     getTimeDisplayProps,
@@ -202,14 +208,12 @@ export const AudioPlayerComposable = ({
     getSkipNextButtonProps,
     getForwardButtonProps,
     getReplayButtonProps,
+  };
 
-    // Internal for AudioElement
-    audioRef,
-    audioSectionRef,
-    togglePlay,
-    audioEvents,
-    src,
-    autoPlay,
+  const eventHandler = (eventName: AudioEvents) => {
+    const propEvent = props[eventName];
+    const internalEvent = audioEvents[eventName];
+    return composeEventHandlers([propEvent, internalEvent]);
   };
 
   // Keyboard shortcuts
@@ -232,7 +236,19 @@ export const AudioPlayerComposable = ({
   return (
     <section aria-label={ariaLandmark || 'Audio Player'} ref={audioSectionRef}>
       <AudioPlayerProvider value={value}>
-        <AudioElement />
+        <AudioElement
+          audioRef={audioRef}
+          src={src}
+          autoPlay={autoPlay}
+          onCanPlay={eventHandler(AudioEvents.CanPlay)}
+          onWaiting={eventHandler(AudioEvents.Waiting)}
+          onPlay={eventHandler(AudioEvents.Play)}
+          onPause={eventHandler(AudioEvents.Pause)}
+          onEnded={eventHandler(AudioEvents.Ended)}
+          onDurationChange={eventHandler(AudioEvents.DurationChange)}
+          onTimeUpdate={eventHandler(AudioEvents.TimeUpdate)}
+          onProgress={eventHandler(AudioEvents.Progress)}
+        />
         {children}
       </AudioPlayerProvider>
     </section>

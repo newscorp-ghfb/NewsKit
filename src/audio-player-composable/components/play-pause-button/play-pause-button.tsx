@@ -1,16 +1,21 @@
 import React, {useCallback} from 'react';
 import {IconButton} from '../../../icon-button';
-import {ButtonSize} from '../../../button/types';
+import {ButtonOverrides, ButtonSize} from '../../../button/types';
 import {useAudioPlayerContext} from '../../context';
 import {PlayPauseButtonProps} from './types';
 import {useKeypress} from '../../../utils/hooks/use-keypress';
+import {filterOutFalsyProperties} from '../../../utils/filter-object';
+import {useTheme} from '../../../theme';
+import {get} from '../../../utils/get';
+import defaults from './defaults';
+import {withOwnTheme} from '../../../utils/with-own-theme';
 
 const defaultKeyboardShortcuts = {
   toggle: ['k', ' '],
 };
 
-export const AudioPlayerPlayPauseButton: React.FC<PlayPauseButtonProps> = React.memo(
-  ({keyboardShortcuts: keyboardShortcutsProp, ...props}) => {
+const ThemelessAudioPlayerPlayPauseButton: React.FC<PlayPauseButtonProps> = React.memo(
+  ({overrides, keyboardShortcuts: keyboardShortcutsProp, ...props}) => {
     const {
       getPlayPauseButtonProps,
       audioSectionRef,
@@ -19,6 +24,12 @@ export const AudioPlayerPlayPauseButton: React.FC<PlayPauseButtonProps> = React.
 
     const propsFromContext =
       getPlayPauseButtonProps! && getPlayPauseButtonProps(props);
+
+    const theme = useTheme();
+    const buttonOverrides: ButtonOverrides = {
+      ...get(theme, 'componentDefaults.audioPlayerPlayPauseButton'),
+      ...filterOutFalsyProperties(overrides),
+    };
 
     // Keyboard shortcuts
     const options = {target: audioSectionRef, preventDefault: false};
@@ -53,8 +64,13 @@ export const AudioPlayerPlayPauseButton: React.FC<PlayPauseButtonProps> = React.
       <IconButton
         data-testid="audio-player-play-pause-button"
         size={ButtonSize.Large}
+        overrides={buttonOverrides}
         {...propsFromContext}
       />
     );
   },
 );
+
+export const AudioPlayerPlayPauseButton = withOwnTheme(
+  ThemelessAudioPlayerPlayPauseButton,
+)({defaults});

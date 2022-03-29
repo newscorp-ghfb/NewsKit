@@ -30,7 +30,7 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
     <PageIntroductionContainer>
       <PageIntroduction
         type="About"
-        name="Contact Us"
+        name="Contact us"
         introduction="Have a question about our design system? The NewsKit team is here to help you. "
         hero={{illustration: 'about/contact-us-hero-illustration'}}
       />
