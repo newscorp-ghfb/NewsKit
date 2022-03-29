@@ -3,14 +3,26 @@ import {ButtonOverrides, ButtonSize} from '../../../button/types';
 import {IconButton} from '../../../icon-button';
 import {useTheme} from '../../../theme';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
+import {useKeypress} from '../../../utils/hooks/use-keypress';
 import {withOwnTheme} from '../../../utils/with-own-theme';
 import {useAudioPlayerContext} from '../../context';
 import {AudioPlayerIconButtonProps} from '../../types';
 import defaults from './defaults';
 
-const ThemelessAudioPlayerForwardButton: React.FC<AudioPlayerIconButtonProps> = React.memo(
-  ({overrides, ...props}) => {
-    const {getForwardButtonProps} = useAudioPlayerContext();
+const defaultKeyboardShortcuts = {
+  forward: ['l'],
+};
+
+const ThemelessAudioPlayerForwardButton: React.FC<
+  AudioPlayerIconButtonProps & {
+    keyboardShortcuts: {
+      forward: string[] | string;
+    };
+    seconds: number;
+  }
+> = React.memo(
+  ({overrides, keyboardShortcuts: keyboardShortcutsProp, ...props}) => {
+    const {getForwardButtonProps, audioSectionRef} = useAudioPlayerContext();
 
     const theme = useTheme();
 
@@ -19,14 +31,28 @@ const ThemelessAudioPlayerForwardButton: React.FC<AudioPlayerIconButtonProps> = 
       ...filterOutFalsyProperties(overrides),
     };
 
-    const propsFromContex =
+    const propsFromContext =
       getForwardButtonProps! && getForwardButtonProps(props);
+
+    // Keyboard shortcuts
+    const options = {target: audioSectionRef, preventDefault: false};
+    const keyboardShortcuts = {
+      ...defaultKeyboardShortcuts,
+      ...keyboardShortcutsProp,
+    };
+    useKeypress(
+      keyboardShortcuts.forward,
+      // @ts-ignore
+      e => propsFromContext.onClick(e),
+      options,
+    );
+
     return (
       <IconButton
         data-testid="audio-player-forward-button"
         size={ButtonSize.Medium}
         overrides={audioPlayerForwardOverrides}
-        {...propsFromContex}
+        {...propsFromContext}
       />
     );
   },
