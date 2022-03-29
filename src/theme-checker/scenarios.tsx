@@ -84,6 +84,14 @@ import {Label} from '../label';
 import {CheckboxState} from '../checkbox/types';
 import {BaseSwitchState} from '../base-switch/types';
 import {RadioButton} from '../radio-button';
+import {AudioPlayerComposable} from '../audio-player-composable/audio-player-composable';
+import {AudioPlayerSeekBar} from '../audio-player-composable/components/seek-bar';
+import {AudioPlayerPlayPauseButton} from '../audio-player-composable/components/play-pause-button';
+import {AudioPlayerTimeDisplay} from '../audio-player-composable/components/time-display';
+import {calculateTime} from '../audio-player-composable/components/time-display/utils';
+import {AudioPlayerReplayButton} from '../audio-player-composable/components/replay-button';
+import {AudioPlayerForwardButton} from '../audio-player-composable/components/forward-button';
+import {GridLayout} from '../grid-layout';
 
 export const checkboxStates: [
   string,
@@ -222,6 +230,11 @@ const flagPresets = [
   'Inverse',
 ];
 const flagKinds = ['Solid', 'Minimal'];
+const fullAudioPlayerAreas = `
+  seekBar seekBar seekBar 
+  currentTime none totalTime  
+  volume controls link
+ `;
 
 /* istanbul ignore next */
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
@@ -284,6 +297,58 @@ export const scenarios: Array<ComponentData> = [
               ariaLandmark="audio player live"
             />
           </AudioPlayerContainer>
+        </>
+      </>
+    ),
+  },
+
+  {
+    name: 'Audio Player Composable',
+    component: () => (
+      <>
+        <>
+          <AudioPlayerComposable
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            ariaLandmark="audio player skip buttons"
+          >
+            <GridLayout rowGap="20px" areas={fullAudioPlayerAreas}>
+              {Areas => (
+                <>
+                  <Areas.SeekBar>
+                    <AudioPlayerSeekBar />
+                  </Areas.SeekBar>
+                  <Areas.CurrentTime>
+                    <AudioPlayerTimeDisplay
+                      format={({currentTime}) => calculateTime(currentTime)}
+                    />
+                  </Areas.CurrentTime>
+                  <Areas.TotalTime justifySelf="end">
+                    <AudioPlayerTimeDisplay
+                      format={({duration}) => calculateTime(duration)}
+                    />
+                  </Areas.TotalTime>
+                  <Areas.Volume alignSelf="center" justifySelf="start">
+                    Not yet
+                  </Areas.Volume>
+                  <Areas.Link alignSelf="center" justifySelf="end">
+                    Not yet
+                  </Areas.Link>
+                  <Areas.Controls>
+                    <GridLayout
+                      columns="repeat(5, auto)"
+                      columnGap="20px"
+                      justifyContent="center"
+                      alignItems="center"
+                    >
+                      <AudioPlayerReplayButton />
+                      <AudioPlayerPlayPauseButton />
+                      <AudioPlayerForwardButton />
+                    </GridLayout>
+                  </Areas.Controls>
+                </>
+              )}
+            </GridLayout>
+          </AudioPlayerComposable>
         </>
       </>
     ),
