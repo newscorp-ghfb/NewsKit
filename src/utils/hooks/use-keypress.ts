@@ -1,4 +1,5 @@
-import {RefObject, useEffect} from 'react';
+import {RefObject, useEffect, useRef} from 'react';
+import {composeEventHandlers} from '../compose-event-handlers';
 
 interface Options {
   enabled?: boolean;
@@ -15,6 +16,8 @@ export const useKeypress = (
   action: ((e: KeyboardEvent) => void) | undefined,
   opts?: Options,
 ) => {
+  const keyStore = useRef<{[key: string]: boolean}>({});
+
   useEffect(() => {
     const defaultOptions = {
       enabled: true,
@@ -32,29 +35,50 @@ export const useKeypress = (
         return;
       }
 
-      const pressedKey = e.key;
+      if (e.type === eventType) {
+        const pressedKey = Object.entries(keyStore.current)
+          .filter(([, value]) => value)
+          .map(([activeKey]) => activeKey.toLowerCase())
+          .join(' + ');
 
-      const keyIsMatched =
-        (typeof key === 'string' && pressedKey === key) ||
-        (Array.isArray(key) && key.includes(pressedKey));
+        const keyIsMatched =
+          (typeof key === 'string' && pressedKey === key) ||
+          (Array.isArray(key) && key.includes(pressedKey));
 
-      if (action && keyIsMatched) {
-        action(e);
+        if (action && keyIsMatched) {
+          action(e);
 
-        if (preventDefault) {
-          e.preventDefault();
-          e.stopPropagation();
+          if (preventDefault) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
         }
       }
     };
 
     const targetNode = target && target.current ? target.current : document;
 
+    const addToStore = (e: KeyboardEvent) => {
+      keyStore.current[e.key] = true;
+    };
+
+    const removeFromStore = (e: KeyboardEvent) => {
+      delete keyStore.current[e.key];
+    };
+
+    const onKeyDown = composeEventHandlers([addToStore, handle]);
+    const onKeyUp = composeEventHandlers([handle, removeFromStore]);
+
     if (enabled && typeof targetNode !== 'undefined') {
-      targetNode.addEventListener(eventType, handle, false);
+      targetNode.addEventListener('keydown', onKeyDown, false);
+      targetNode.addEventListener('keyup', onKeyUp, false);
     }
 
-    return () =>
-      targetNode && targetNode.removeEventListener(eventType, handle, false);
+    return () => {
+      if (targetNode) {
+        targetNode.removeEventListener('keydown', onKeyDown, false);
+        targetNode.removeEventListener('keyup', onKeyUp, false);
+      }
+    };
   }, [key, action, opts]);
 };
