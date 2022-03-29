@@ -137,7 +137,6 @@ export const AudioPlayerComposable = ({
     seconds?: number;
   }) => {
     const onClick = () => {
-      console.log('clicked?');
       if (consumerOnClick) consumerOnClick();
       onClickForward({
         seconds,

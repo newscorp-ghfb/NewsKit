@@ -151,6 +151,7 @@ AudioFunctionDependencies) => {
   }, [onNextTrack]);
 
   const onClickBackward = useCallback(
+    /* istanbul ignore next */
     ({seconds = 10}: {seconds: number}) => {
       updateAudioTime(currentTimeRef.current - seconds);
       const trackingInformation = getTrackingInformation(
@@ -164,6 +165,7 @@ AudioFunctionDependencies) => {
   );
 
   const onClickForward = useCallback(
+    /* istanbul ignore next */
     ({seconds = 10}: {seconds: number}) => {
       updateAudioTime(currentTimeRef.current + seconds);
 
