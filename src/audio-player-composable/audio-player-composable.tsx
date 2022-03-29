@@ -101,12 +101,13 @@ export const AudioPlayerComposable = ({
     let playStateIcon = <IconFilledPlayArrow />;
     let ariaLabel = 'Play';
     let ariaPressed = false;
+    const canPause = !live;
 
     if (playing) {
       ariaPressed = true;
       // TODO remove ignore as we implement the "live" functionality back and write test for it
       /* istanbul ignore next */
-      if (live) {
+      if (canPause) {
         playStateIcon = <IconFilledPause />;
         ariaLabel = 'Pause';
       } else {
@@ -127,7 +128,7 @@ export const AudioPlayerComposable = ({
 
       // can  be needed for custom internal logic
       playing,
-      canPause: live,
+      canPause,
     };
   };
   const getForwardButtonProps = ({

@@ -15,7 +15,7 @@ const ThemelessAudioPlayerSkipNextButton: React.FC<AudioPlayerIconButtonProps> =
 
     const theme = useTheme();
     const buttonOverrides: ButtonOverrides = {
-      ...get(theme, 'componentDefaults.audioPlayerSkipNext'),
+      ...get(theme, 'componentDefaults.audioPlayerSkipNextButton'),
       ...filterOutFalsyProperties(overrides),
     };
 
