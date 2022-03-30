@@ -5,6 +5,8 @@ import {AudioPlayerTimeDisplay} from '../components/time-display';
 import {AudioPlayerForwardButton} from '../components/forward-button';
 import {AudioPlayerReplayButton} from '../components/replay-button';
 import {AudioPlayerComposable} from '../audio-player-composable';
+import {AudioPlayerSkipNextButton} from '../components/skip-next/skip-next';
+import {AudioPlayerSkipPreviousButton} from '../components/skip-previous/skip-previous';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {calculateTime} from '../components/time-display/utils';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
@@ -201,9 +203,15 @@ export const AudioPlayerForwardReplayButton = () => (
                 justifyContent="center"
                 alignItems="center"
               >
+                <AudioPlayerSkipPreviousButton
+                  onClick={() => console.log('on skip Prev track')}
+                />
                 <AudioPlayerReplayButton />
                 <AudioPlayerPlayPauseButton />
                 <AudioPlayerForwardButton />
+                <AudioPlayerSkipNextButton
+                  onClick={() => console.log('on skip Next track')}
+                />
               </GridLayout>
             </Areas.Controls>
           </>
@@ -244,6 +252,13 @@ export const AudioPlayerForwardReplayButton = () => (
                 justifyContent="center"
                 alignItems="center"
               >
+                <AudioPlayerSkipPreviousButton
+                  overrides={{
+                    iconSize: 'iconSize030',
+                    stylePreset: 'buttonOutlinedNegative',
+                  }}
+                />
+
                 <AudioPlayerReplayButton
                   seconds={5}
                   overrides={{
@@ -254,7 +269,12 @@ export const AudioPlayerForwardReplayButton = () => (
                   <IconFilledReplay5 />
                 </AudioPlayerReplayButton>
 
-                <AudioPlayerPlayPauseButton />
+                <AudioPlayerPlayPauseButton
+                  overrides={{
+                    iconSize: 'iconSize030',
+                    stylePreset: 'buttonOutlinedNegative',
+                  }}
+                />
 
                 <AudioPlayerForwardButton
                   seconds={5}
@@ -265,6 +285,12 @@ export const AudioPlayerForwardReplayButton = () => (
                 >
                   <IconFilledForward5 />
                 </AudioPlayerForwardButton>
+                <AudioPlayerSkipNextButton
+                  overrides={{
+                    iconSize: 'iconSize030',
+                    stylePreset: 'buttonOutlinedNegative',
+                  }}
+                />
               </GridLayout>
             </Areas.Controls>
           </>
