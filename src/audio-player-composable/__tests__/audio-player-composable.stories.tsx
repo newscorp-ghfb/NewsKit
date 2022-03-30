@@ -99,7 +99,7 @@ export const AudioPlayer = () => (
             <Areas.Controls>
               <GridLayout
                 columns="repeat(5, auto)"
-                columnGap={{md: 'space045'}}
+                columnGap="space045"
                 justifyContent="center"
                 alignItems="center"
               >
