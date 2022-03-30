@@ -15,8 +15,7 @@ import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
 import {Block} from '../../block';
 import {ButtonSize} from '../../button/types';
-import {IconFilledReplay5} from '../../icons/filled/custom/icon-filled-replay-5';
-import {IconFilledForward5} from '../../icons/filled/custom/icon-filled-forward-5';
+import {IconFilledReplay5, IconFilledForward5} from '../../icons';
 
 const AudioPlayerContainer = styled.div<{dark?: boolean}>`
   border: solid 1px red;

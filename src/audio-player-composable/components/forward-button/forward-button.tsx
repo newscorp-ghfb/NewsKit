@@ -8,8 +8,6 @@ import {useAudioPlayerContext} from '../../context';
 import {AudioPlayerIconButtonProps} from '../../types';
 import defaults from './defaults';
 
-// TODO update svgs path
-
 const ThemelessAudioPlayerForwardButton: React.FC<AudioPlayerIconButtonProps> = React.memo(
   ({overrides, ...props}) => {
     const {getForwardButtonProps} = useAudioPlayerContext();
