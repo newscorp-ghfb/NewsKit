@@ -1,5 +1,4 @@
-import {ReactJSXElement} from '@emotion/react/types/jsx-namespace';
-import {createContext, useContext} from 'react';
+import React, {createContext, useContext} from 'react';
 import {IconButtonProps} from '../button';
 import {FormatFn} from './components/time-display/types';
 import {AudioPlayerIconButtonProps} from './types';
@@ -14,16 +13,11 @@ interface AudioPlayerProviderContext {
   togglePlay: () => void;
   // Getter functions
 
-  getPlayPauseButtonProps: (args: {
-    onClick?: () => void;
-  }) => {
-    ariaLabel: string;
-    ariaPressed: boolean;
-    loading: boolean;
-    onClick: () => void;
+  getPlayPauseButtonProps: (
+    props: AudioPlayerIconButtonProps,
+  ) => IconButtonProps & {
     playing: boolean;
     canPause: boolean;
-    playStateIcon: ReactJSXElement;
   };
   getTimeDisplayProps: () => {
     format: FormatFn;
@@ -36,6 +30,12 @@ interface AudioPlayerProviderContext {
     onChange: (value: number) => void;
     buffered: TimeRanges | undefined;
   };
+  getSkipPreviousButtonProps: (
+    props: AudioPlayerIconButtonProps,
+  ) => IconButtonProps;
+  getSkipNextButtonProps: (
+    props: AudioPlayerIconButtonProps,
+  ) => IconButtonProps;
   getForwardButtonProps: (props: AudioPlayerIconButtonProps) => IconButtonProps;
   getReplayButtonProps: (props: AudioPlayerIconButtonProps) => IconButtonProps;
 }
