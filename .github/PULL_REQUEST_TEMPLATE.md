@@ -29,7 +29,7 @@ BREAKING CHANGE: renames the foobar component's prop foo to bar
 
 **I have tested manually:**
 - [ ] The feature's functionality is working as expected on Chrome, Firefox, Safari and Edge
-- [ ] The screen reader reads the expected text for the tabbable elements.
+- [ ] The screen reader reads and flows through the elements as expected.
 - [ ] There are no new errors in the browser console coming from this PR.
 - [ ] When visual test is not added, it renders correctly on different browsers and mobile viewports (Safari, Firefox, small mobile viewport, tablet)
 - [ ] The Playground feature is working as expected
