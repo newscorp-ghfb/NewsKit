@@ -17,6 +17,7 @@ import {AudioPlayerSeekBar} from '../components/seek-bar';
 import {createTheme, ThemeProvider} from '../../theme';
 import {Block} from '../../block';
 import {ButtonSize} from '../../button/types';
+import {Hidden} from '../../grid/visibility';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-audio-player-theme',
@@ -58,9 +59,9 @@ export default {
   component: () => 'None',
 };
 const fullAudioPlayerAreas = `
-  seekBar seekBar seekBar 
-  currentTime none totalTime  
-  controls controls controls
+  seekBar seekBar seekBar
+  currentTime none  totalTime  
+  volume controls link
  `;
 
 export const AudioPlayer = () => (
@@ -86,16 +87,20 @@ export const AudioPlayer = () => (
                 format={({duration}) => calculateTime(duration)}
               />
             </Areas.TotalTime>
-            {/* <Areas.Volume alignSelf="center" justifySelf="start">
-              Not yet
+            <Areas.Volume alignSelf="center" justifySelf="start">
+              <Hidden xs sm>
+                Not yet
+              </Hidden>
             </Areas.Volume>
             <Areas.Link alignSelf="center" justifySelf="end">
-              Not yet
-            </Areas.Link> */}
+              <Hidden xs sm>
+                Not yet
+              </Hidden>
+            </Areas.Link>
             <Areas.Controls>
               <GridLayout
                 columns="repeat(5, auto)"
-                columnGap="20px"
+                columnGap={{md: 'space045'}}
                 justifyContent="center"
                 alignItems="center"
               >
