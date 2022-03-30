@@ -8,6 +8,8 @@ import {AudioPlayerPlayPauseButton} from '../components/play-pause-button';
 import {AudioPlayerReplayButton} from '../components/replay-button';
 import {AudioPlayerSeekBar} from '../components/seek-bar';
 import {AudioPlayerTimeDisplay} from '../components/time-display';
+import {AudioPlayerSkipNextButton} from '../components/skip-next/skip-next';
+import {AudioPlayerSkipPreviousButton} from '../components/skip-previous/skip-previous';
 import {calculateTime} from '../components/time-display/utils';
 
 export default {
@@ -28,7 +30,7 @@ export const AudioPlayerE2E = () => (
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
       ariaLandmark="audio player e2e tests"
     >
-      <GridLayout rowGap="10px" areas={fullAudioPlayerAreas}>
+      <GridLayout rowGap="space020" areas={fullAudioPlayerAreas}>
         {Areas => (
           <>
             <Areas.SeekBar>
@@ -61,13 +63,15 @@ export const AudioPlayerE2E = () => (
             <Areas.Controls>
               <GridLayout
                 columns="repeat(5, auto)"
-                columnGap="20px"
+                columnGap="space040"
                 justifyContent="center"
                 alignItems="center"
               >
+                <AudioPlayerSkipPreviousButton />
                 <AudioPlayerReplayButton />
                 <AudioPlayerPlayPauseButton />
                 <AudioPlayerForwardButton />
+                <AudioPlayerSkipNextButton />
               </GridLayout>
             </Areas.Controls>
           </>

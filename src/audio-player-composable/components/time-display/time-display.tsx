@@ -13,7 +13,7 @@ const StyledTextBlock = styled(TextBlock)<StyledLabelProps>`
   ${getTypographyPreset(`audioPlayerTimeDisplay`, '')};
 `;
 
-export const ThemelessTimeDisplay = ({
+const ThemelessTimeDisplay = ({
   overrides = {},
   format,
   ...restProps

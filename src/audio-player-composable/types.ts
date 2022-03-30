@@ -2,10 +2,7 @@ import {IconButtonProps} from '../icon-button/types';
 import {Optional} from '../utils/types';
 
 export interface AudioFunctionDependencies {
-  onPreviousTrack: () => void;
-  onNextTrack: () => void;
   autoPlay: boolean;
-  disablePreviousTrack: boolean;
   src: string;
   live: NonNullable<boolean>;
 
@@ -24,13 +21,6 @@ export interface AudioFunctionDependencies {
   setDuration: React.Dispatch<React.SetStateAction<number>>;
   setDisplayDuration: React.Dispatch<React.SetStateAction<number>>;
   setBuffered: React.Dispatch<React.SetStateAction<TimeRanges | undefined>>;
-  setIsPrevTrackBtnDisabled: React.Dispatch<React.SetStateAction<boolean>>;
-}
-export interface TrackControlProps {
-  onNextTrack?: () => void;
-  disableNextTrack?: boolean;
-  onPreviousTrack?: () => void;
-  disablePreviousTrack?: boolean;
 }
 
 export interface AudioElementProps
