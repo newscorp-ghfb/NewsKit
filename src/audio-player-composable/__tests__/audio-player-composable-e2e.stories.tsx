@@ -23,62 +23,71 @@ const fullAudioPlayerAreas = `
   volume controls link
  `;
 
-export const AudioPlayerE2E = () => (
-  <div data-testid="audio-player-inline">
-    <StorybookSubHeading>Audio player for e2e tests</StorybookSubHeading>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player e2e tests"
-    >
-      <GridLayout rowGap="space020" areas={fullAudioPlayerAreas}>
-        {Areas => (
-          <>
-            <Areas.SeekBar>
-              <AudioPlayerSeekBar />
-            </Areas.SeekBar>
-            <Areas.CurrentTime>
-              <AudioPlayerTimeDisplay
-                data-testid="audio-player-current-time"
-                format={({currentTime}) => calculateTime(currentTime)}
-              />
-            </Areas.CurrentTime>
-            <Areas.TotalTime justifySelf="end">
-              <AudioPlayerTimeDisplay
-                data-testid="audio-player-duration"
-                format={({duration}) => calculateTime(duration)}
-              />
-            </Areas.TotalTime>
-            <Areas.Volume alignSelf="center" justifySelf="start">
-              Not yet
-            </Areas.Volume>
-            <Areas.Link alignSelf="center" justifySelf="end">
-              <Button
-                href="/"
-                size={ButtonSize.Small}
-                overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-              >
-                read more
-              </Button>
-            </Areas.Link>
-            <Areas.Controls>
-              <GridLayout
-                columns="repeat(5, auto)"
-                columnGap="space040"
-                justifyContent="center"
-                alignItems="center"
-              >
-                <AudioPlayerSkipPreviousButton />
-                <AudioPlayerReplayButton />
-                <AudioPlayerPlayPauseButton />
-                <AudioPlayerForwardButton />
-                <AudioPlayerSkipNextButton />
-              </GridLayout>
-            </Areas.Controls>
-          </>
-        )}
-      </GridLayout>
-    </AudioPlayerComposable>
-  </div>
-);
+export const AudioPlayerE2E = () => {
+  const [event, showEvent] = React.useState('');
+
+  return (
+    <div data-testid="audio-player-inline">
+      <StorybookSubHeading>Audio player for e2e tests</StorybookSubHeading>
+      <AudioPlayerComposable
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        ariaLandmark="audio player e2e tests"
+      >
+        <GridLayout rowGap="space020" areas={fullAudioPlayerAreas}>
+          {Areas => (
+            <>
+              <Areas.SeekBar>
+                <AudioPlayerSeekBar />
+              </Areas.SeekBar>
+              <Areas.CurrentTime>
+                <AudioPlayerTimeDisplay
+                  data-testid="audio-player-current-time"
+                  format={({currentTime}) => calculateTime(currentTime)}
+                />
+              </Areas.CurrentTime>
+              <Areas.TotalTime justifySelf="end">
+                <AudioPlayerTimeDisplay
+                  data-testid="audio-player-duration"
+                  format={({duration}) => calculateTime(duration)}
+                />
+              </Areas.TotalTime>
+              <Areas.Volume alignSelf="center" justifySelf="start">
+                Not yet
+              </Areas.Volume>
+              <Areas.Link alignSelf="center" justifySelf="end">
+                <Button
+                  href="/"
+                  size={ButtonSize.Small}
+                  overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+                >
+                  read more
+                </Button>
+              </Areas.Link>
+              <Areas.Controls>
+                <GridLayout
+                  columns="repeat(5, auto)"
+                  columnGap="space040"
+                  justifyContent="center"
+                  alignItems="center"
+                >
+                  <AudioPlayerSkipPreviousButton
+                    onClick={() => showEvent('skip-previous')}
+                  />
+                  <AudioPlayerReplayButton />
+                  <AudioPlayerPlayPauseButton />
+                  <AudioPlayerForwardButton />
+                  <AudioPlayerSkipNextButton
+                    onClick={() => showEvent('skip-next')}
+                  />
+                </GridLayout>
+              </Areas.Controls>
+            </>
+          )}
+        </GridLayout>
+      </AudioPlayerComposable>
+      <div data-testid="event">{event}</div>
+    </div>
+  );
+};
 AudioPlayerE2E.storyName = 'audio-player-e2e';
 AudioPlayerE2E.parameters = {eyes: {include: false}};

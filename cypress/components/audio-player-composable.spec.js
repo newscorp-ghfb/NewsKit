@@ -54,6 +54,16 @@ const TEST_DATA = {
   durationInSeconds: 372,
 };
 
+const triggerKeyEvent = (selector, events) => {
+  const eventsList = Array.isArray(events) ? events : [events];
+  eventsList.forEach(event => {
+    cy.get(selector).trigger('keydown', event);
+  });
+  eventsList.forEach(event => {
+    cy.get(selector).trigger('keyup', event);
+  });
+};
+
 describe('audio player composable', () => {
   const parentTestIDSelector = '[data-testid="audio-player-inline"]';
 
@@ -122,64 +132,14 @@ describe('audio player composable', () => {
     isPaused();
   });
 
-  it('keyboard: toggle when press K key', () => {
-    cy.get('@togglePlay').focus();
-    cy.get('@togglePlay').trigger('keyup', {key: 'k'});
-    isPlaying();
-
-    cy.get('@togglePlay').trigger('keyup', {key: 'k'});
-    isPaused();
-  });
-
-  it('keyboard: toggle when press Space key', () => {
-    cy.get('@audioSliderThumb').focus();
-    cy.get('@audioSliderThumb').trigger('keyup', {key: ' '});
-    isPlaying();
-
-    cy.get('@audioSliderThumb').trigger('keyup', {key: ' '});
-    isPaused();
-  });
-
-  it('keyboard: move track using 0, Start and End key', () => {
-    cy.get('@togglePlay').focus();
-    cy.get('@togglePlay').trigger('keyup', {key: 'End'});
-    checkTime(TEST_DATA.durationInSeconds);
-
-    cy.get('@togglePlay').trigger('keyup', {key: 'Home'});
-    checkTime(0);
-
-    cy.get('@togglePlay').trigger('keyup', {key: 'End'});
-    checkTime(TEST_DATA.durationInSeconds);
-
-    cy.get('@togglePlay').trigger('keyup', {key: '0'});
-    checkTime(0);
-  });
-
-  it('keyboard: Space key does not work with active elements', () => {
-    isPaused();
-    cy.get(`${parentTestIDSelector} [data-testid="buttonLink"]`).as('link');
-    cy.get('@link').focus();
-    cy.get('@link').trigger('keyup', {
-      force: true,
-      position: 'topLeft',
-      key: ' ',
-    });
-    isPaused();
-  });
-
   it('skip-prev button moves to start after 5 seconds time', () => {
-    cy.get('@togglePlay').click();
     cy.get(
       `${parentTestIDSelector} [data-testid="audio-player-skip-previous-button"]`,
     ).as('skipPrevBtn');
-    // button is disabled in first 5 seconds
-    cy.get('@skipPrevBtn').should('have.attr', 'disabled', 'disabled');
+    checkTime(0);
 
     // move time to the middle
     cy.get('@audioSliderTrack').click('center');
-
-    // button should be Enabled after 5sec
-    cy.get('@skipPrevBtn').should('not.have.attr', 'disabled');
 
     cy.get('@skipPrevBtn').click();
     // the track should be at the start after clicking Skip Prev Button
@@ -202,5 +162,75 @@ describe('audio player composable', () => {
     cy.get('@audioSliderTrack').click(9, 4);
     cy.get('@backwardButton').click();
     checkTime(0);
+  });
+
+  // Keyboard related tests
+  it('keyboard: toggle when press K key', () => {
+    cy.get('@togglePlay').focus();
+    triggerKeyEvent('@togglePlay', {key: 'k'});
+    isPlaying();
+
+    triggerKeyEvent('@togglePlay', {key: 'k'});
+    isPaused();
+  });
+
+  it('keyboard: toggle when press Space key', () => {
+    cy.get('@audioSliderThumb').focus();
+    triggerKeyEvent('@audioSliderThumb', {key: ' '});
+    isPlaying();
+
+    triggerKeyEvent('@audioSliderThumb', {key: ' '});
+    isPaused();
+  });
+
+  it('keyboard: move track using 0, Start and End key', () => {
+    cy.get('@togglePlay').focus();
+    triggerKeyEvent('@togglePlay', {key: 'End'});
+    checkTime(TEST_DATA.durationInSeconds);
+
+    triggerKeyEvent('@togglePlay', {key: 'Home'});
+    checkTime(0);
+
+    triggerKeyEvent('@togglePlay', {key: 'End'});
+    checkTime(TEST_DATA.durationInSeconds);
+
+    triggerKeyEvent('@togglePlay', {key: '0'});
+    checkTime(0);
+  });
+
+  it('keyboard: Space key does not work with active elements', () => {
+    isPaused();
+    cy.get(`${parentTestIDSelector} [data-testid="buttonLink"]`).as('link');
+    cy.get('@link').focus();
+    triggerKeyEvent('@link', {
+      force: true,
+      position: 'topLeft',
+      key: ' ',
+    });
+    isPaused();
+  });
+
+  it('keyboard: shift + p trigger previous', () => {
+    triggerKeyEvent('@togglePlay', [{key: 'Shift'}, {key: 'p'}]);
+    cy.get(`${parentTestIDSelector} [data-testid="event"]`).as('eventLog');
+    cy.get('@eventLog').should('have.text', 'skip-previous');
+  });
+
+  it('keyboard: shift + n trigger next', () => {
+    triggerKeyEvent('@togglePlay', [{key: 'Shift'}, {key: 'n'}]);
+    cy.get(`${parentTestIDSelector} [data-testid="event"]`).as('eventLog');
+    cy.get('@eventLog').should('have.text', 'skip-next');
+  });
+
+  it('keyboard: l trigger forwards', () => {
+    triggerKeyEvent('@forwardButton', {key: 'l'});
+    checkTime(10);
+  });
+
+  it('keyboard: j trigger playback', () => {
+    triggerKeyEvent('@forwardButton', {key: 'l'});
+    triggerKeyEvent('@forwardButton', {key: 'l'});
+    triggerKeyEvent('@forwardButton', {key: 'j'});
+    checkTime(10);
   });
 });
