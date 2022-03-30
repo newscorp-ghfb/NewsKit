@@ -84,6 +84,13 @@ bump_version:
 	echo "Updating package.json version"
 	yarn version --new-version ${NEW_VERSION}
 	git push
-	echo "Creating and pushing tag to trigger release deployment to staging and prod"
-	git tag -a deploy-release@${NEW_VERSION} -m "Tag to trigger ${NEW_VERSION} deployment to prod"
-	git push origin deploy-release@${NEW_VERSION}
+	echo "Creating and pushing version tag"
+	git tag -a v${NEW_VERSION} -m "Bumped to v${NEW_VERSION}"
+	git push origin v${NEW_VERSION}
+
+
+# The tag deleted should match the expected tag in the `only_on_trigger_release_tag` filter.
+delete_trigger_release_tag:
+	git checkout main
+	git push origin --delete trigger-release@${VERSION}
+
