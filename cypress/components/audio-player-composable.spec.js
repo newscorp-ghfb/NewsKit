@@ -1,5 +1,5 @@
 const isPlaying = () => {
-  cy.get('@togglePlay').should('have.attr', 'aria-label', 'Stop');
+  cy.get('@togglePlay').should('have.attr', 'aria-label', 'Pause');
 
   cy.get('@audioElement')
     .invoke('prop', 'paused')
