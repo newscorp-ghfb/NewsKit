@@ -60,7 +60,7 @@ export default {
 const fullAudioPlayerAreas = `
   seekBar seekBar seekBar 
   currentTime none totalTime  
-  volume controls link
+  controls controls controls
  `;
 
 export const AudioPlayer = () => (
@@ -280,6 +280,12 @@ export const AudioPlayerOverrides = () => (
                 format={({duration}) => calculateTime(duration)}
               />
             </Areas.TotalTime>
+            {/* <Areas.Volume alignSelf="center" justifySelf="start">
+              Not yet
+            </Areas.Volume>
+            <Areas.Link alignSelf="center" justifySelf="end">
+              Not yet
+            </Areas.Link> */}
             <Areas.Controls>
               <GridLayout
                 columns="repeat(5, auto)"
