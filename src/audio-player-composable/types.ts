@@ -58,6 +58,10 @@ export type AudioPlayerIconButtonProps = Optional<
   'aria-label'
 >;
 
-export type AudioPlayerIconButtonWithShortcuts = AudioPlayerIconButtonProps & {
+export type AudioPlayerIconButtonWithShortcuts = Omit<
+  AudioPlayerIconButtonProps,
+  'onClick'
+> & {
   keyboardShortcuts?: string[] | string;
+  onClick?: () => void;
 };

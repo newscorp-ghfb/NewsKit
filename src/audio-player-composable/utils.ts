@@ -47,6 +47,5 @@ export const useKeyboardShortcutsOnButton = ({
   const options = {target: audioSectionRef, preventDefault: false};
   const keyboardShortcuts = keyboardShortcutsProp || defaultKeys;
 
-  // @ts-ignore
-  useKeypress(keyboardShortcuts, e => props.onClick(e), options);
+  useKeypress(keyboardShortcuts, props.onClick, options);
 };

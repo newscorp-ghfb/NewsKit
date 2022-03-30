@@ -18,6 +18,10 @@ export const useKeypress = (
 ) => {
   const keyStore = useRef<{[key: string]: boolean}>({});
 
+  const keyLowerCase = (typeof key === 'string' ? [key] : key).map(k =>
+    k.toLowerCase(),
+  );
+
   useEffect(() => {
     const defaultOptions = {
       enabled: true,
@@ -28,6 +32,7 @@ export const useKeypress = (
     const {enabled, eventType, target, preventDefault} = options;
 
     const handle: EventListener = (e: Event) => {
+      /* istanbul ignore if */
       if (!isKeyboardEvent(e)) {
         return;
       }
@@ -41,9 +46,7 @@ export const useKeypress = (
           .map(([activeKey]) => activeKey.toLowerCase())
           .join(' + ');
 
-        const keyIsMatched =
-          (typeof key === 'string' && pressedKey === key) ||
-          (Array.isArray(key) && key.includes(pressedKey));
+        const keyIsMatched = keyLowerCase.includes(pressedKey);
 
         if (action && keyIsMatched) {
           action(e);
@@ -80,5 +83,5 @@ export const useKeypress = (
         targetNode.removeEventListener('keyup', onKeyUp, false);
       }
     };
-  }, [key, action, opts]);
+  }, [keyLowerCase, action, opts]);
 };
