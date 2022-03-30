@@ -39,20 +39,20 @@ BREAKING CHANGE: renames the foobar component's prop foo to bar
 Below sections are optional
 --->
 
-**Before**
+**Before:**
 <!--- Drag and Drop your screenshot's here --->
 
 **After:**
 <!--- Drag and Drop your screenshot's here --->
 
-**Who should review this PR**
+**Who should review this PR:**
 <!---
 If you know someone is a domain expert for your PR,
 someone who is deeply involved in the story,
 ask them explicitly to review the PR.
 --->
 
-**How to test**
+**How to test:**
 <!--
 If it's not immediately obvious how to test this PR, give instructions.
 It's mandatory to update README.MD or development documentation if existing test strategy had changed.
