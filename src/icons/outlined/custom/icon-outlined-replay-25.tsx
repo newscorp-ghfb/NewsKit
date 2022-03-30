@@ -2,8 +2,8 @@ import React from 'react';
 import {Svg} from '../../svg';
 import {customToNewsKitIcon} from '../../custom-to-newskit-icon';
 
-export const IconFilledReplay25 = customToNewsKitIcon(
-  'IconFilledReplay25',
+export const IconOutlinedReplay25 = customToNewsKitIcon(
+  'IconOutlinedReplay25',
   props => (
     <Svg {...props} viewBox="0 0 24 24">
       <path

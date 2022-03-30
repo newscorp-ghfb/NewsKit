@@ -251,7 +251,7 @@ export const AudioPlayerForwardReplayButton = () => (
                     stylePreset: 'buttonOutlinedNegative',
                   }}
                 >
-                  <IconFilledForward5 />
+                  <IconFilledReplay5 />
                 </AudioPlayerReplayButton>
 
                 <AudioPlayerPlayPauseButton />
@@ -263,7 +263,7 @@ export const AudioPlayerForwardReplayButton = () => (
                     stylePreset: 'buttonOutlinedNegative',
                   }}
                 >
-                  <IconFilledReplay5 />
+                  <IconFilledForward5 />
                 </AudioPlayerForwardButton>
               </GridLayout>
             </Areas.Controls>
