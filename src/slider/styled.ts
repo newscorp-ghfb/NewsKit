@@ -148,30 +148,41 @@ export const StyledThumb = styled.div<StyledThumbProps>`
   align-items: center;
   box-sizing: border-box;
   cursor: ${getCursor};
+  position: relative;
 
-  &:hover {
-    position: relative;
-  }
-
-  ::after {
+  &:hover::before {
     content: '';
+    display: block;
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
+    left: 0;
     border-radius: 50%;
-    opacity: 0;
     box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
-    transition: opacity 1s ease;
+    animation: ripple 2s linear;
   }
-
-  &:hover::after {
-    opacity: 1;
-  }
-
   &:active::after {
-    box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+    animation: ripple 2s linear;
+  }
+
+  @keyframes ripple {
+    0% {
+      transform: scale(0.3);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 `;
 
