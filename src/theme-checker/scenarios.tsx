@@ -92,6 +92,8 @@ import {calculateTime} from '../audio-player-composable/components/time-display/
 import {AudioPlayerReplayButton} from '../audio-player-composable/components/replay-button';
 import {AudioPlayerForwardButton} from '../audio-player-composable/components/forward-button';
 import {GridLayout} from '../grid-layout';
+import {AudioPlayerSkipPreviousButton} from '../audio-player-composable/components/skip-previous';
+import {AudioPlayerSkipNextButton} from '../audio-player-composable';
 
 export const checkboxStates: [
   string,
@@ -340,9 +342,11 @@ export const scenarios: Array<ComponentData> = [
                       justifyContent="center"
                       alignItems="center"
                     >
+                      <AudioPlayerSkipPreviousButton />
                       <AudioPlayerReplayButton />
                       <AudioPlayerPlayPauseButton />
                       <AudioPlayerForwardButton />
+                      <AudioPlayerSkipNextButton />
                     </GridLayout>
                   </Areas.Controls>
                 </>
