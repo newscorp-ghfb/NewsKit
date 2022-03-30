@@ -136,7 +136,7 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
     />
     <button
       aria-busy="true"
-      aria-label="Stop"
+      aria-label="Pause"
       aria-live="polite"
       aria-pressed="true"
       class="emotion-0"
@@ -678,6 +678,68 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
         </div>
       </div>
     </a>
+    <button
+      aria-label="next"
+      class="emotion-14"
+      data-testid="audio-player-skip-next-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-7 emotion-8"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+    <button
+      aria-label="previous"
+      class="emotion-14"
+      data-testid="audio-player-skip-previous-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-7 emotion-8"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
     <button
       aria-label="Fast forward for 10 seconds"
       class="emotion-14"
@@ -1785,7 +1847,7 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
     </span>
     <button
       aria-busy="true"
-      aria-label="Stop"
+      aria-label="Pause"
       aria-live="polite"
       aria-pressed="true"
       class="emotion-4"
@@ -2325,6 +2387,68 @@ exports[`Audio Player Composable should render with no errors 1`] = `
         </div>
       </div>
     </a>
+    <button
+      aria-label="next"
+      class="emotion-13"
+      data-testid="audio-player-skip-next-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-16 emotion-17"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+    <button
+      aria-label="previous"
+      class="emotion-13"
+      data-testid="audio-player-skip-previous-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-16 emotion-17"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
     <button
       aria-label="Fast forward for 10 seconds"
       class="emotion-13"

@@ -13,6 +13,8 @@ Array [
   "AudioPlayerPlayPauseButton",
   "AudioPlayerReplayButton",
   "AudioPlayerSeekBar",
+  "AudioPlayerSkipNextButton",
+  "AudioPlayerSkipPreviousButton",
   "AudioPlayerTimeDisplay",
   "Banner",
   "Block",

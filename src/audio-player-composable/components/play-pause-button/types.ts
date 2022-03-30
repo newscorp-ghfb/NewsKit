@@ -1,10 +1,7 @@
-import {ButtonProps, ButtonSize} from '../../../button';
+import {AudioPlayerIconButtonProps} from '../../types';
 
-export interface PlayPauseButtonProps {
-  size?: ButtonSize;
-  onClick?: () => void;
-  overrides?: ButtonProps['overrides'];
+export type PlayPauseButtonProps = AudioPlayerIconButtonProps & {
   keyboardShortcuts?: {
     toggle: string;
   };
-}
+};
