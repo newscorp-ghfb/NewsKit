@@ -64,11 +64,71 @@ export const Example2 = () => (
   </GridLayout>
 );
 
-// Named areas
-export const Example3 = () => <GridLayout></GridLayout>;
+const areas = {
+  xs: `
+    header
+    main
+    sidebar
+    footer
+  `,
+  md: `
+    "header header header header"
+    "sidebar main main main"
+    "footer footer footer footer"
+  `,
+};
 
-// Aligment
-export const Example4 = () => <GridLayout></GridLayout>;
+// Named areas
+export const Example3 = () => (
+  <GridLayout areas={areas}>
+    {({Header, Main, Sidebar, Footer}) => (
+      <>
+        <Sidebar>sidebar</Sidebar>
+        <Header>Header</Header>
+        <Footer>footer</Footer>
+        <Main>Main</Main>
+      </>
+    )}
+  </GridLayout>
+);
+
+const cardAreas = {
+  xs: `
+    thumb   content
+    action share
+  `,
+  md: `
+    thumb   thumb
+    content content
+    action  share
+  `,
+};
 
 // Advanced examples
-// TODO:
+export const Example4 = () => (
+  <GridLayout
+    areas={cardAreas}
+    columns={{xs: '200px 1fr', md: '1fr 1fr'}}
+    columnGap="20px"
+    overrides={{maxWidth: '400px'}}
+  >
+    {({Thumb, Content, Action, Share}) => (
+      <>
+        <Thumb>
+          <img src="http://placekitten.com/200/200" alt="" />
+        </Thumb>
+        <Content>
+          <h1>Title</h1>
+          <p>leading text</p>
+        </Content>
+        <Action>Date: Today</Action>
+        <Share justifySelf="end">
+          <a href="#">share here</a>
+        </Share>
+        <Thumb alignSelf="end">
+          <a href="#">tag of the image</a>
+        </Thumb>
+      </>
+    )}
+  </GridLayout>
+);
