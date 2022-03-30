@@ -715,6 +715,32 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   fill: #535353;
 }
 
+.emotion-48:hover {
+  position: relative;
+}
+
+.emotion-48::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-48:hover::after {
+  opacity: 1;
+}
+
+.emotion-48:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 .emotion-49 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2013,6 +2039,32 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   fill: #535353;
 }
 
+.emotion-38:hover {
+  position: relative;
+}
+
+.emotion-38::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-38:hover::after {
+  opacity: 1;
+}
+
+.emotion-38:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 .emotion-39 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -3268,6 +3320,32 @@ exports[`Audio Player hides volume control as expected 1`] = `
   fill: #535353;
 }
 
+.emotion-46:hover {
+  position: relative;
+}
+
+.emotion-46::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-46:hover::after {
+  opacity: 1;
+}
+
+.emotion-46:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 .emotion-47 {
   width: 100%;
   margin-top: 12px;
@@ -4218,6 +4296,32 @@ exports[`Audio Player live player renders as expected 1`] = `
 
 .emotion-28:active:not(:disabled) svg {
   fill: #535353;
+}
+
+.emotion-28:hover {
+  position: relative;
+}
+
+.emotion-28::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-28:hover::after {
+  opacity: 1;
+}
+
+.emotion-28:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
 }
 
 .emotion-29 {
@@ -5830,6 +5934,32 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   fill: #535353;
 }
 
+.emotion-49:hover {
+  position: relative;
+}
+
+.emotion-49::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-49:hover::after {
+  opacity: 1;
+}
+
+.emotion-49:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 .emotion-50 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -6475,6 +6605,32 @@ exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #535353;
+}
+
+.emotion-0:hover {
+  position: relative;
+}
+
+.emotion-0::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-0:hover::after {
+  opacity: 1;
+}
+
+.emotion-0:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
 }
 
 <div
@@ -7264,6 +7420,32 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 
 .emotion-48:active:not(:disabled) svg {
   fill: #535353;
+}
+
+.emotion-48:hover {
+  position: relative;
+}
+
+.emotion-48::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-48:hover::after {
+  opacity: 1;
+}
+
+.emotion-48:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
 }
 
 .emotion-49 {
@@ -8639,6 +8821,32 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   fill: #535353;
 }
 
+.emotion-48:hover {
+  position: relative;
+}
+
+.emotion-48::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-48:hover::after {
+  opacity: 1;
+}
+
+.emotion-48:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 .emotion-49 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -9961,6 +10169,32 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   cursor: pointer;
 }
 
+.emotion-48:hover {
+  position: relative;
+}
+
+.emotion-48::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-48:hover::after {
+  opacity: 1;
+}
+
+.emotion-48:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 .emotion-49 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -10105,6 +10339,32 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   align-items: center;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+.emotion-62:hover {
+  position: relative;
+}
+
+.emotion-62::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-62:hover::after {
+  opacity: 1;
+}
+
+.emotion-62:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
 }
 
 .emotion-63 {

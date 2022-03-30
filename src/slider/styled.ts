@@ -148,6 +148,31 @@ export const StyledThumb = styled.div<StyledThumbProps>`
   align-items: center;
   box-sizing: border-box;
   cursor: ${getCursor};
+
+  &:hover {
+    position: relative;
+  }
+
+  ::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+    transition: opacity 1s ease;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:active::after {
+    box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+  }
 `;
 
 type StyledThumbValueProps = VerticalProp &

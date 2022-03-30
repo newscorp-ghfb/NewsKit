@@ -103,6 +103,32 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-2:hover {
+  position: relative;
+}
+
+.emotion-2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-2:hover::after {
+  opacity: 1;
+}
+
+.emotion-2:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 <div
     class="emotion-0"
     data-testid="slider"

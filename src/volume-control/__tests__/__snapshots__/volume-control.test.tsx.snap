@@ -237,6 +237,32 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   fill: #535353;
 }
 
+.emotion-8:hover {
+  position: relative;
+}
+
+.emotion-8::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-8:hover::after {
+  opacity: 1;
+}
+
+.emotion-8:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 .emotion-9 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -619,6 +645,32 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-8:active:not(:disabled) svg {
   fill: #535353;
+}
+
+.emotion-8:hover {
+  position: relative;
+}
+
+.emotion-8::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-8:hover::after {
+  opacity: 1;
+}
+
+.emotion-8:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
 }
 
 .emotion-9 {
@@ -1005,6 +1057,32 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   fill: #535353;
 }
 
+.emotion-8:hover {
+  position: relative;
+}
+
+.emotion-8::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-8:hover::after {
+  opacity: 1;
+}
+
+.emotion-8:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 .emotion-9 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -1386,6 +1464,32 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-8:active:not(:disabled) svg {
   fill: #535353;
+}
+
+.emotion-8:hover {
+  position: relative;
+}
+
+.emotion-8::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-8:hover::after {
+  opacity: 1;
+}
+
+.emotion-8:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
 }
 
 .emotion-9 {
@@ -1772,6 +1876,32 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   fill: #535353;
 }
 
+.emotion-8:hover {
+  position: relative;
+}
+
+.emotion-8::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-8:hover::after {
+  opacity: 1;
+}
+
+.emotion-8:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 .emotion-9 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2154,6 +2284,32 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-8:active:not(:disabled) svg {
   fill: #535353;
+}
+
+.emotion-8:hover {
+  position: relative;
+}
+
+.emotion-8::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-8:hover::after {
+  opacity: 1;
+}
+
+.emotion-8:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
 }
 
 .emotion-9 {
@@ -2540,6 +2696,32 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   fill: #535353;
 }
 
+.emotion-8:hover {
+  position: relative;
+}
+
+.emotion-8::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-8:hover::after {
+  opacity: 1;
+}
+
+.emotion-8:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 .emotion-9 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2924,6 +3106,32 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   fill: #535353;
 }
 
+.emotion-8:hover {
+  position: relative;
+}
+
+.emotion-8::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-8:hover::after {
+  opacity: 1;
+}
+
+.emotion-8:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 .emotion-9 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -3306,6 +3514,32 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 
 .emotion-8:active:not(:disabled) svg {
   fill: #535353;
+}
+
+.emotion-8:hover {
+  position: relative;
+}
+
+.emotion-8::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-8:hover::after {
+  opacity: 1;
+}
+
+.emotion-8:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
 }
 
 .emotion-9 {

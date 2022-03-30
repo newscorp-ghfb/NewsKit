@@ -824,6 +824,32 @@ exports[`slider react-range Range function props renderThumb should render custo
   fill: #C0C0C0;
 }
 
+.emotion-0:hover {
+  position: relative;
+}
+
+.emotion-0::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-0:hover::after {
+  opacity: 1;
+}
+
+.emotion-0:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 <div
     aria-label="my custom aria label"
     class="emotion-0"
@@ -887,6 +913,32 @@ exports[`slider react-range Range function props renderThumb should render custo
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-0:hover {
+  position: relative;
+}
+
+.emotion-0::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-0:hover::after {
+  opacity: 1;
+}
+
+.emotion-0:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
 }
 
 <div
@@ -998,6 +1050,32 @@ exports[`slider react-range Range function props renderThumb should render dragg
   fill: #C0C0C0;
 }
 
+.emotion-0:hover {
+  position: relative;
+}
+
+.emotion-0::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-0:hover::after {
+  opacity: 1;
+}
+
+.emotion-0:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 <div
     aria-label="slider"
     class="emotion-0"
@@ -1062,6 +1140,32 @@ exports[`slider react-range Range function props renderThumb should render multi
   fill: #C0C0C0;
 }
 
+.emotion-0:hover {
+  position: relative;
+}
+
+.emotion-0::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-0:hover::after {
+  opacity: 1;
+}
+
+.emotion-0:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 <div
     aria-label="slider"
     class="emotion-0"
@@ -1124,6 +1228,32 @@ exports[`slider react-range Range function props renderThumb should render range
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-0:hover {
+  position: relative;
+}
+
+.emotion-0::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-0:hover::after {
+  opacity: 1;
+}
+
+.emotion-0:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
 }
 
 .emotion-1 {
@@ -1226,6 +1356,32 @@ exports[`slider react-range Range function props renderThumb should render slide
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-0:hover {
+  position: relative;
+}
+
+.emotion-0::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-0:hover::after {
+  opacity: 1;
+}
+
+.emotion-0:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
 }
 
 .emotion-1 {
@@ -1334,6 +1490,32 @@ exports[`slider react-range Range function props renderThumb should render undra
   fill: #C0C0C0;
 }
 
+.emotion-0:hover {
+  position: relative;
+}
+
+.emotion-0::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-0:hover::after {
+  opacity: 1;
+}
+
+.emotion-0:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 <div
     aria-label="slider"
     class="emotion-0"
@@ -1396,6 +1578,32 @@ exports[`slider react-range Range function props renderThumb should render verti
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-0:hover {
+  position: relative;
+}
+
+.emotion-0::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-0:hover::after {
+  opacity: 1;
+}
+
+.emotion-0:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
 }
 
 .emotion-1 {

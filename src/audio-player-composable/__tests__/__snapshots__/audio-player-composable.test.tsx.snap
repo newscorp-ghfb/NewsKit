@@ -253,6 +253,32 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   fill: #535353;
 }
 
+.emotion-2:hover {
+  position: relative;
+}
+
+.emotion-2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-2:hover::after {
+  opacity: 1;
+}
+
+.emotion-2:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 .emotion-3 {
   display: block;
   clip: rect(0 0 0 0);
@@ -794,6 +820,32 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   fill: #535353;
 }
 
+.emotion-0:hover {
+  position: relative;
+}
+
+.emotion-0::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-0:hover::after {
+  opacity: 1;
+}
+
+.emotion-0:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 <div
   aria-describedby="mock-nk-1"
   aria-label="seek bar"
@@ -866,6 +918,32 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   align-items: center;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+.emotion-2:hover {
+  position: relative;
+}
+
+.emotion-2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-2:hover::after {
+  opacity: 1;
+}
+
+.emotion-2:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
 }
 
 .emotion-3 {
@@ -1617,6 +1695,32 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
   fill: #535353;
 }
 
+.emotion-2:hover {
+  position: relative;
+}
+
+.emotion-2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-2:hover::after {
+  opacity: 1;
+}
+
+.emotion-2:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
+}
+
 .emotion-3 {
   display: block;
   clip: rect(0 0 0 0);
@@ -1893,6 +1997,32 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 
 .emotion-2:active:not(:disabled) svg {
   fill: #535353;
+}
+
+.emotion-2:hover {
+  position: relative;
+}
+
+.emotion-2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.emotion-2:hover::after {
+  opacity: 1;
+}
+
+.emotion-2:active::after {
+  box-shadow: 0px 0px 0px 14px rgb(25 118 210 / 16%);
 }
 
 .emotion-3 {
