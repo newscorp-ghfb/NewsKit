@@ -196,7 +196,7 @@ export const AudioPlayerForwardReplayButton = () => (
             </Areas.Link>
             <Areas.Controls>
               <GridLayout
-                columns="repeat(5, auto)"
+                columns="repeat(7, auto)"
                 columnGap="20px"
                 justifyContent="center"
                 alignItems="center"
@@ -205,7 +205,9 @@ export const AudioPlayerForwardReplayButton = () => (
                   onClick={() => console.log('on skip Prev track')}
                 />
                 <AudioPlayerReplayButton />
+                <AudioPlayerReplayButton />
                 <AudioPlayerPlayPauseButton />
+                <AudioPlayerForwardButton />
                 <AudioPlayerForwardButton />
                 <AudioPlayerSkipNextButton
                   onClick={() => console.log('on skip Next track')}
@@ -216,7 +218,7 @@ export const AudioPlayerForwardReplayButton = () => (
         )}
       </GridLayout>
     </AudioPlayerComposable>
-    <StorybookSubHeading>with overrides</StorybookSubHeading>
+    {/* <StorybookSubHeading>with overrides</StorybookSubHeading>
 
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
@@ -288,7 +290,7 @@ export const AudioPlayerForwardReplayButton = () => (
           </>
         )}
       </GridLayout>
-    </AudioPlayerComposable>
+    </AudioPlayerComposable> */}
   </>
 );
 
