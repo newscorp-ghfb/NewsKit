@@ -68,7 +68,7 @@ export const AudioPlayer = () => (
     <StorybookSubHeading>Full player-recorded</StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player skip buttons"
+      ariaLandmark="audio player full"
     >
       <GridLayout rowGap="20px" areas={fullAudioPlayerAreas}>
         {Areas => (
@@ -153,7 +153,7 @@ export const AudioSubComponents = () => (
     <StorybookSubHeading>TimeDisplay</StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player 4"
+      ariaLandmark="audio player time display"
     >
       <GridLayout rowGap="20px" areas={timeDisplayAreas}>
         {Areas => (
@@ -193,7 +193,7 @@ export const AudioSubComponents = () => (
     <StorybookSubHeading>SkipNext</StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player play pause button"
+      ariaLandmark="audio player skip next"
     >
       <AudioPlayerSkipNextButton
         onClick={() => console.log('on skip Next track')}
@@ -202,7 +202,7 @@ export const AudioSubComponents = () => (
     <StorybookSubHeading>SkipPrevious</StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player play pause button"
+      ariaLandmark="audio player skip previous"
     >
       <AudioPlayerSkipPreviousButton
         onClick={() => console.log('on skip Next track')}
@@ -211,21 +211,21 @@ export const AudioSubComponents = () => (
     <StorybookSubHeading>Forward</StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player play pause button"
+      ariaLandmark="audio player forward button"
     >
       <AudioPlayerForwardButton />
     </AudioPlayerComposable>
     <StorybookSubHeading>Replay</StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player play pause button"
+      ariaLandmark="audio player replay button"
     >
       <AudioPlayerReplayButton />
     </AudioPlayerComposable>
     <StorybookSubHeading>SeekBar</StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player play pause button"
+      ariaLandmark="audio player seek bar"
     >
       <AudioPlayerSeekBar />
     </AudioPlayerComposable>
@@ -239,7 +239,7 @@ export const AudioPlayerOverrides = () => (
     <StorybookSubHeading>Audio player with overrides</StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player skip buttons"
+      ariaLandmark="audio player overrides"
     >
       <GridLayout rowGap="20px" areas={fullAudioPlayerAreas}>
         {Areas => (
