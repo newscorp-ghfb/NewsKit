@@ -96,17 +96,13 @@ export const stylePresets = {
       color: '{{colors.inkSubtle}}',
     },
     hover: {
-      backgroundColor: '{{colors.interactivePrimary010}}',
-      borderRadius: '{{borders.borderRadiusDefault}}',
-      color: '{{colors.inkContrast}}',
+      color: '{{colors.interactivePrimary030}}',
     },
     active: {
-      backgroundColor: '{{colors.interactivePrimary020}}',
-      borderRadius: '{{borders.borderRadiusDefault}}',
       color: '{{colors.inkContrast}}',
     },
     selected: {
-      color: '{{colors.inkContrast}}',
+      color: '{{colors.interactivePrimary040}}',
     },
   },
   sidebarHeader: {

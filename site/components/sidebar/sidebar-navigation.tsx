@@ -1,5 +1,20 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {useRouter} from 'next/router';
+import {
+  Block,
+  Visible,
+  UnorderedList,
+  P,
+  Menu,
+  MenuItem,
+  MenuGroup,
+  Divider,
+  styled,
+  Stack,
+  Flow,
+  H2,
+  getSpacingCssFromTheme,
+} from 'newskit';
 import {Link} from '../link';
 import routes from '../../routes';
 import {
@@ -17,6 +32,27 @@ import {
   NavigationSectionType,
   PageType,
 } from './types';
+import {IconExpandLess, IconExpandMore} from '../icons';
+
+const NavigationDivider = styled.div`
+  ${getSpacingCssFromTheme('marginTop', 'space050')};
+  ${getSpacingCssFromTheme('marginBottom', 'space050')};
+`;
+
+const MobileSideNavigationHeader = styled.div`
+  width: 225px;
+  ${getSpacingCssFromTheme('marginBottom', 'space040')};
+  &.collapsed > p {
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
+  }
+  &.expanded > p {
+    max-height: 9999px;
+    transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
+    transition-delay: 0s;
+  }
+`;
 
 const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -57,6 +93,9 @@ const NavigationSection: React.FC<NavigationSectionProps> = ({
         active={activePagePath.includes(page.id)}
       />
     ))}
+    <NavigationDivider>
+      <Divider />
+    </NavigationDivider>
   </>
 );
 
@@ -77,7 +116,6 @@ const Section: React.FC<SectionProps> = ({section, activePagePath}) => (
           <PageLink
             key={subNav.id}
             page={subNav as PageType}
-            // TODO: can rollback to subNav.id === activePagePath after https://nidigitalsolutions.jira.com/browse/PPDSE-312
             active={activePagePath.includes(subNav.id)}
           />
         );
@@ -86,21 +124,138 @@ const Section: React.FC<SectionProps> = ({section, activePagePath}) => (
   </StyledSectionContainer>
 );
 
+type NavProps = {
+  title: string;
+  id: string;
+  description?: string;
+  page?: boolean;
+};
+
+type SubNav = {
+  subNav?: NavProps[];
+};
+
+type SubNavItemProps = NavProps & SubNav;
+
+const menuItemOverrides = {
+  typographyPreset: 'utilityButton000',
+  spaceInset: 'space030',
+  spaceInline: 'space000',
+};
+
+const RenderMobileNavigation = ({
+  path,
+  menu,
+}: {
+  menu: SubNavItemProps[];
+  path: string;
+}) => {
+  const [openPanelIds, setOpenPanelIds] = useState<Array<number>>([]);
+  useEffect(() => {
+    const index = menu.findIndex(obj => path.includes(obj.id)) || 0;
+    setOpenPanelIds([index]);
+  }, []);
+  const createMenuItem = (list: SubNavItemProps[]) => (
+    <>
+      {list &&
+        list.map(({title, id, subNav, page}) => (
+          <>
+            {page ? (
+              <MenuItem
+                href={id}
+                overrides={menuItemOverrides}
+                selected={path.includes(id)}
+              >
+                {title}
+              </MenuItem>
+            ) : (
+              <>
+                <Block spaceStack="space010" />
+                <MenuGroup
+                  title={title}
+                  overrides={{
+                    title: {
+                      typographyPreset: 'utilityButton030',
+                      stylePreset: 'inkBase',
+                      spaceInset: 'space030',
+                      spaceInline: 'space040',
+                    },
+                  }}
+                >
+                  {subNav && createMenuItem(subNav)}
+                </MenuGroup>
+              </>
+            )}
+          </>
+        ))}
+    </>
+  );
+  return (
+    <UnorderedList>
+      {menu.map(({title, subNav}, index) => (
+        <MobileSideNavigationHeader
+          onClick={() =>
+            openPanelIds.includes(index)
+              ? setOpenPanelIds([])
+              : setOpenPanelIds([index])
+          }
+          className={openPanelIds.includes(index) ? 'expanded' : 'collapsed'}
+        >
+          <H2 overrides={{typographyPreset: 'utilityHeading020'}}>
+            <Stack
+              flow={Flow.HorizontalCenter}
+              stackDistribution="space-between"
+            >
+              <Stack flow={Flow.HorizontalTop}>{title}</Stack>
+              <Stack flow="horizontal-center" spaceInline="space040">
+                {openPanelIds.includes(index) ? (
+                  <IconExpandLess />
+                ) : (
+                  <IconExpandMore />
+                )}
+              </Stack>
+            </Stack>
+          </H2>
+          <P>
+            <Menu
+              aria-label="Accordion sub-menu"
+              vertical
+              size="small"
+              align="start"
+              overrides={{spaceInline: 'space020'}}
+            >
+              <Block spaceStack="space020" />
+              {subNav && createMenuItem(subNav)}
+            </Menu>
+          </P>
+        </MobileSideNavigationHeader>
+      ))}
+    </UnorderedList>
+  );
+};
+
 export const SidebarNav: React.FC = () => {
   const path = useRouter().pathname;
-
   const currentRoute = path.match(/\/[A-z\d-]*/g);
   const currentSection =
     currentRoute && routes.filter(({id}) => id === currentRoute[0]);
-
   return (
     <StyledSidebarNav role="navigation" aria-label="Sidebar">
-      <StyledNavigationWrapper role="list">
-        {currentSection &&
-          currentSection.map(section => (
-            <Section key={section.id} section={section} activePagePath={path} />
-          ))}
-      </StyledNavigationWrapper>
+      <Visible xs sm md>
+        <RenderMobileNavigation path={path} menu={routes} />
+      </Visible>
+      <Visible lg xl>
+        <StyledNavigationWrapper role="list">
+          {currentSection &&
+            currentSection.map(section => (
+              <Section
+                key={section.id}
+                section={section}
+                activePagePath={path}
+              />
+            ))}
+        </StyledNavigationWrapper>
+      </Visible>
     </StyledSidebarNav>
   );
 };

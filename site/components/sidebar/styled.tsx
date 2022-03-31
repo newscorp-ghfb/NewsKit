@@ -17,10 +17,9 @@ export const StyledLinkItem = styled.div<{
       isSelected: $selected,
     })(props)}
   box-sizing: border-box;
-
   cursor: 'pointer';
   min-width: 230px;
-  padding: ${getSpacingFromTheme('spaceInset030')};
+  padding: ${getSpacingFromTheme('spaceInset030')} 0;
   margin: ${({theme}) => `${theme.spacePresets.space010} 0`};
   text-overflow: ellipsis;
 `;
@@ -32,7 +31,7 @@ export const StyledFirstLevelHeader = styled.div`
   padding: ${getSpacingFromTheme('space040')} ${getSpacingFromTheme('space000')};
 `;
 export const StyledSecondLevelHeader = styled.div`
-  ${getTypographyPresetFromTheme('utilityLabel020')};
+  ${getTypographyPresetFromTheme('sidebarFirstLevelHeader')};
   ${getStylePresetFromTheme('sidebarHeader')};
   min-height: ${getSizingFromTheme('sizing060')};
   margin-top: ${getSpacingFromTheme('space045')};

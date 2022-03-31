@@ -7,7 +7,7 @@ import {
   styled,
   IconFilledMenu,
   Visible,
-  BreakpointKeys,
+  IconFilledClose,
   Stack,
   StackDistribution,
   Flow,
@@ -16,10 +16,11 @@ import {
   getShadowCssFromTheme,
   getSizingCssFromTheme,
   getStylePresetFromTheme,
-  Scroll,
   Block,
+  getBorderFromTheme,
+  getColorFromTheme,
 } from 'newskit';
-import {NewsKitLogo, NewsKitMobileLogo} from './logo';
+import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
 import routes from '../routes';
@@ -32,11 +33,14 @@ const Header = styled.header`
   right: 0;
   left: 0;
   z-index: 4;
+  border-bottom-style: solid;
+  border-bottom-width: ${getBorderFromTheme('borderWidth010')};
+  border-bottom-color: ${getColorFromTheme('interface040')};
+
   ${getColorCssFromTheme('backgroundColor', 'interfaceBackground')};
   ${getTypographyPresetFromTheme('utilityLabel020')}
-  ${getSpacingCssFromTheme('paddingTop', 'space020')};
-  ${getSpacingCssFromTheme('paddingBottom', 'space020')};
-  ${getShadowCssFromTheme('boxShadow', 'shadow030')};
+  ${getSpacingCssFromTheme('paddingTop', 'space000')};
+  ${getSpacingCssFromTheme('paddingBottom', 'space000')};
 
   ${getMediaQueryFromTheme('lg')} {
     ${getSpacingCssFromTheme('paddingTop', 'space030')};
@@ -71,19 +75,16 @@ export const StyledLinkItem = styled.div<{
 
 const StyledVisible = styled(Visible)`
   height: 100%;
+  z-index: 1;
+  ${getSizingCssFromTheme('marginLeft', 'sizing110')};
 `;
-
-const MobileLogo: React.FC = () => (
-  <Link type="standalone" href="/" overrides={{stylePreset: 'inkBase'}}>
-    <NewsKitMobileLogo color="inkBase" />
-  </Link>
-);
 
 interface HeaderProps {
   handleSidebarClick: () => void;
   toggleTheme: () => void;
   themeMode: string;
   path: string;
+  sidebarOpen: boolean;
 }
 
 type HeaderRef = HTMLElement;
@@ -96,30 +97,29 @@ type NavItemProps = {
 const navItems = routes.map(({title, subNav}) => ({title, id: subNav[0].id}));
 
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
-  ({handleSidebarClick, toggleTheme, themeMode, path}, ref) => {
-    const renderMobileNavigation = (
-      handleClick: () => void,
-      breakpoint?: BreakpointKeys,
-    ) => (
+  ({handleSidebarClick, toggleTheme, themeMode, path, sidebarOpen}, ref) => {
+    const renderMobileNavigation = (handleClick: () => void) => (
       <Stack data-testid="logo-container" flow={Flow.HorizontalCenter}>
         {!path.split('/')[1].includes('index') && (
-          <MobileMenu
-            onClick={handleClick}
-            onKeyDown={handleEnterKeyPress(handleClick)}
-            tabIndex={0}
-            data-testid="mobile-menu-icon"
-          >
-            <IconFilledMenu
-              overrides={{size: 'iconSize030', stylePreset: 'inkBrand010'}}
-            />
-          </MobileMenu>
-        )}
-        {breakpoint === 'xs' ? (
-          <MobileLogo />
-        ) : (
-          <Link type="standalone" href="/" overrides={{stylePreset: 'inkBase'}}>
-            <NewsKitLogo />
-          </Link>
+          <>
+            <MobileMenu
+              onClick={handleClick}
+              onKeyDown={handleEnterKeyPress(handleClick)}
+              tabIndex={0}
+              data-testid="mobile-menu-icon"
+            >
+              {sidebarOpen ? (
+                <IconFilledClose
+                  overrides={{
+                    stylePreset: 'closeIcon',
+                    size: 'iconSize020',
+                  }}
+                />
+              ) : (
+                <IconFilledMenu overrides={{size: 'iconSize020'}} />
+              )}
+            </MobileMenu>
+          </>
         )}
       </Stack>
     );
@@ -151,15 +151,14 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
     return (
       <Header data-testid="header-navigation" ref={ref}>
         <StyledGrid maxWidth="9999px">
-          <Cell xs={6} xsOrder={1}>
+          <Cell xs={2} lg={2} xsOrder={1}>
             <Stack
               flow={Flow.HorizontalCenter}
               stackDistribution={StackDistribution.Start}
             >
-              <Visible xs sm>
-                {renderMobileNavigation(handleSidebarClick, 'xs')}
+              <Visible xs sm md>
+                {renderMobileNavigation(handleSidebarClick)}
               </Visible>
-              <Visible md>{renderMobileNavigation(handleSidebarClick)}</Visible>
               <Visible lg xl>
                 <Link
                   type="standalone"
@@ -169,39 +168,49 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                   <NewsKitLogo />
                 </Link>
               </Visible>
+              <StyledVisible lg xl>
+                <Stack
+                  flow={Flow.HorizontalCenter}
+                  stackDistribution={StackDistribution.Start}
+                  flexGrow={1}
+                  spaceInline="space070"
+                >
+                  <Stack
+                    flow={Flow.HorizontalCenter}
+                    stackDistribution={StackDistribution.End}
+                    spaceInline="space070"
+                  >
+                    {renderNavItems(navItems, path)}
+                  </Stack>
+                </Stack>
+              </StyledVisible>
             </Stack>
           </Cell>
-          <Cell xs={12} lg={5} xsOrder={3} lgOrder={2}>
-            <StyledVisible lg xl>
+          <Cell xs={8} lg={8} xsOrder={2}>
+            <Visible xs sm md>
               <Stack
                 flow={Flow.HorizontalCenter}
-                stackDistribution={StackDistribution.End}
-                flexGrow={1}
+                stackDistribution={StackDistribution.SpaceAround}
                 spaceInline="space070"
               >
-                <Stack
-                  flow={Flow.HorizontalCenter}
-                  stackDistribution={StackDistribution.End}
-                  spaceInline="space070"
+                <Link
+                  type="standalone"
+                  href="/"
+                  overrides={{stylePreset: 'inkBase'}}
                 >
-                  {renderNavItems(navItems, path)}
-                </Stack>
+                  <NewsKitLogo />
+                </Link>
               </Stack>
-            </StyledVisible>
-            <Visible xs sm md>
-              <Scroll>
-                <Stack
-                  flow={Flow.HorizontalCenter}
-                  stackDistribution={StackDistribution.SpaceAround}
-                  spaceInline="space070"
-                >
-                  {renderNavItems(navItems, path)}
-                </Stack>
-              </Scroll>
             </Visible>
           </Cell>
-          <Cell xs={1} xsOrder={2} lgOrder={3} xsOffset={5} lgOffset={0}>
-            <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />
+          <Cell xs={2} lg={2} xsOrder={2} lgOrder={3}>
+            <Stack
+              flow={Flow.HorizontalCenter}
+              stackDistribution={StackDistribution.End}
+              spaceInline="space070"
+            >
+              <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />
+            </Stack>
           </Cell>
         </StyledGrid>
       </Header>

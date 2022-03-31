@@ -348,3 +348,12 @@ typographyPresets.editorialDropCap030 = {
   fontSize: '6em',
   lineHeight: 0.85,
 };
+
+// Side Navigation Group Header
+typographyPresets.sidebarFirstLevelHeader = {
+  fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+  fontSize: '{{fonts.fontSize050}}',
+  lineHeight: '{{fonts.fontLineHeight020}}',
+  fontWeight: '{{fonts.fontWeight040}}',
+  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+};

@@ -33,7 +33,7 @@ const Container = styled.div<Pick<LayoutProps, 'hideSidebar'>>`
   width: 100%;
   display: flex;
   flex-direction: column;
-  ${getSpacingCssFromTheme('paddingTop', 'space090')};
+  ${getSpacingCssFromTheme('paddingTop', 'space050')};
   ${getMediaQueryFromTheme('lg')} {
     padding-left: ${({hideSidebar}) => !hideSidebar && '276px'};
     ${getSpacingCssFromTheme('paddingTop', 'space100')};
@@ -191,6 +191,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
             ref={this.headerRef}
             path={path}
             data-test-id="siteHeader"
+            sidebarOpen={sidebarOpen}
           />
           <Container hideSidebar={hideSidebar}>
             {/* This is a hack to fix stalling builds from NextJS trying to optimise the page, it won't render anything */}

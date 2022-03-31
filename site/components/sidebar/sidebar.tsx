@@ -1,9 +1,7 @@
 import * as React from 'react';
 import {
-  Visible,
   getMediaQueryFromTheme,
   styled,
-  IconFilledClose,
   Devices,
   getDeviceQueryFromTheme,
   css,
@@ -11,12 +9,8 @@ import {
   getStylePresetFromTheme,
   Block,
 } from 'newskit';
-
-import {LegacyBlock} from '../legacy-block';
-
 import {Overlay} from '../overlay';
 import {SidebarNav} from './sidebar-navigation';
-import {handleEnterKeyPress} from '../../helpers/a11y';
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -40,7 +34,8 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   z-index: 3;
   transform: ${({open}) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   transition: transform 300ms;
-  ${getSpacingCssFromTheme('marginTop', 'space090')};
+  ${getSpacingCssFromTheme('paddingTop', 'space020')};
+  ${getSpacingCssFromTheme('marginTop', 'space080')};
   ${getStylePresetFromTheme('sidebar')};
 
   ${getMediaQueryFromTheme('lg')} {
@@ -61,10 +56,6 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   )};
 `;
 
-const IconWrapper = styled.div`
-  align-self: center;
-`;
-
 const Sidebar: React.FC<SidebarProps> = ({
   sidebarOpen,
   handleSidebarClick,
@@ -77,25 +68,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       role="complementary"
       hideSidebar={hideSidebar}
     >
-      <Block spaceInset="space080">
-        <Visible xs sm md>
-          <LegacyBlock display="flex" height="100%">
-            <IconWrapper
-              onClick={handleSidebarClick}
-              onKeyDown={handleEnterKeyPress(handleSidebarClick)}
-              tabIndex={0}
-              data-testid="close-icon"
-            >
-              <IconFilledClose
-                overrides={{
-                  stylePreset: 'closeIcon',
-                  size: 'iconSize010',
-                }}
-              />
-            </IconWrapper>
-          </LegacyBlock>
-        </Visible>
-      </Block>
+      <Block spaceInset="space030" />
       <SidebarNav />
     </SidebarWrapper>
 

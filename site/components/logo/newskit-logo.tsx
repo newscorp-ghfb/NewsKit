@@ -4,6 +4,7 @@ import {
   styled,
   getSizingFromTheme,
   getColorFromTheme,
+  getSpacingCssFromTheme,
 } from 'newskit';
 
 const LogoWrapper = styled.div`
@@ -19,8 +20,8 @@ interface StyledLogoProps {
 
 const LogoSvg = styled.svg<StyledLogoProps>`
   display: inline-block;
-  width: 183px;
   height: ${getSizingFromTheme('sizing070')};
+  ${getSpacingCssFromTheme('width', {xs: '125px', lg: '183px'})};
 `;
 
 const StyledText = styled.g`
