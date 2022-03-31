@@ -255,7 +255,11 @@ export const AudioPlayerOverrides = () => (
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
       ariaLandmark="audio player overrides"
     >
-      <GridLayout rowGap="20px" areas={fullAudioPlayerAreas}>
+      <GridLayout
+        rowGap="20px"
+        columns="50px 1fr 50px"
+        areas={fullAudioPlayerAreas}
+      >
         {Areas => (
           <>
             <Areas.SeekBar>
@@ -298,12 +302,16 @@ export const AudioPlayerOverrides = () => (
                 format={({duration}) => calculateTime(duration)}
               />
             </Areas.TotalTime>
-            {/* <Areas.Volume alignSelf="center" justifySelf="start">
-              Not yet
+            <Areas.Volume alignSelf="center" justifySelf="start">
+              <Hidden xs sm>
+                Not yet
+              </Hidden>
             </Areas.Volume>
             <Areas.Link alignSelf="center" justifySelf="end">
-              Not yet
-            </Areas.Link> */}
+              <Hidden xs sm>
+                Not yet
+              </Hidden>
+            </Areas.Link>
             <Areas.Controls>
               <GridLayout
                 columns="repeat(5, auto)"
