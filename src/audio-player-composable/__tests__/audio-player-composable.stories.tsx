@@ -45,8 +45,7 @@ const myCustomTheme = createTheme({
       },
       customAudioPlayerLabels: {
         base: {
-          backgroundColor: '#D20600',
-          color: '#blue',
+          backgroundColor: 'grey',
         },
       },
     },
