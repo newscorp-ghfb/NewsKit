@@ -17,6 +17,9 @@ import {AudioPlayerSeekBar} from '../components/seek-bar';
 import {createTheme, ThemeProvider} from '../../theme';
 import {Block} from '../../block';
 import {ButtonSize} from '../../button/types';
+import {Hidden} from '../../grid/visibility';
+import {IconButton} from '../../icon-button';
+import {IconFilledLaunch} from '../../icons';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-audio-player-theme',
@@ -59,7 +62,7 @@ export default {
 const fullAudioPlayerAreas = `
   seekBar seekBar seekBar
   currentTime none  totalTime  
-  controls controls controls
+  volume controls link
  `;
 
 export const AudioPlayer = () => (
@@ -69,7 +72,11 @@ export const AudioPlayer = () => (
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
       ariaLandmark="audio player full"
     >
-      <GridLayout rowGap="20px" areas={fullAudioPlayerAreas}>
+      <GridLayout
+        columns="50px 1fr 50px"
+        rowGap="20px"
+        areas={fullAudioPlayerAreas}
+      >
         {Areas => (
           <>
             <Areas.SeekBar>
@@ -85,16 +92,24 @@ export const AudioPlayer = () => (
                 format={({duration}) => calculateTime(duration)}
               />
             </Areas.TotalTime>
-            {/* <Areas.Volume alignSelf="center" justifySelf="start">
+            <Areas.Volume alignSelf="center" justifySelf="start">
               <Hidden xs sm>
                 Not yet
               </Hidden>
             </Areas.Volume>
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
-                Not yet
+                <IconButton
+                  size={ButtonSize.Medium}
+                  aria-label="Open popout player"
+                  href="https://www.newskit.co.uk/"
+                  overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
+                >
+                  <IconFilledLaunch />
+                </IconButton>
               </Hidden>
-            </Areas.Link> */}
+            </Areas.Link>
+
             <Areas.Controls>
               <GridLayout
                 columns="repeat(5, auto)"
