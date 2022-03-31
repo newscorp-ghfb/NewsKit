@@ -54,6 +54,9 @@ const TEST_DATA = {
   durationInSeconds: 372,
 };
 
+/*
+  our useKeypress hook uses keydown and keyup events, that's why we need thi
+*/
 const triggerKeyEvent = (selector, events) => {
   const eventsList = Array.isArray(events) ? events : [events];
   eventsList.forEach(event => {

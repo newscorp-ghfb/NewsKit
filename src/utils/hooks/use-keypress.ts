@@ -11,6 +11,14 @@ interface Options {
 const isKeyboardEvent = (event: Event): event is KeyboardEvent =>
   'key' in event;
 
+/*
+In order to use multiple keys at once, you need to use keyDown and keyUp simultaneously.
+- on KeyDown event, keys code is stored in a object ( keyStore )
+- on KeyUp event, keys code is removed from the object
+
+When the keyStore values match the key argument , the callback is called.
+https://www.gavsblog.com/blog/detect-single-and-multiple-keypress-events-javascript
+*/
 export const useKeypress = (
   key: string | string[],
   action: ((e: KeyboardEvent) => void) | undefined,

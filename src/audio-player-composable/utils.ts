@@ -1,3 +1,7 @@
+import {IconButtonProps} from '../button';
+import {useTheme} from '../theme';
+import {filterOutFalsyProperties} from '../utils/filter-object';
+import {get} from '../utils/get';
 import {useKeypress} from '../utils/hooks';
 import {useAudioPlayerContext} from './context';
 import {AudioPlayerIconButtonWithShortcuts} from './types';
@@ -48,4 +52,17 @@ export const useKeyboardShortcutsOnButton = ({
   const keyboardShortcuts = keyboardShortcutsProp || defaultKeys;
 
   useKeypress(keyboardShortcuts, props.onClick, options);
+};
+
+export const useButtonOverrides = (
+  props: Pick<IconButtonProps, 'overrides'>,
+  defaultsPath: string,
+) => {
+  const theme = useTheme();
+  const {overrides} = props;
+
+  return {
+    ...get(theme, `componentDefaults.${defaultsPath}`),
+    ...filterOutFalsyProperties(overrides),
+  };
 };

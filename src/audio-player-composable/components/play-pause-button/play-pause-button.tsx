@@ -1,21 +1,19 @@
 import React, {useCallback} from 'react';
 import {IconButton} from '../../../icon-button';
-import {ButtonOverrides, ButtonSize} from '../../../button/types';
+import {ButtonSize} from '../../../button/types';
 import {useAudioPlayerContext} from '../../context';
 import {PlayPauseButtonProps} from './types';
 import {useKeypress} from '../../../utils/hooks/use-keypress';
-import {filterOutFalsyProperties} from '../../../utils/filter-object';
-import {useTheme} from '../../../theme';
-import {get} from '../../../utils/get';
 import defaults from './defaults';
 import {withOwnTheme} from '../../../utils/with-own-theme';
+import {useButtonOverrides} from '../../utils';
 
 const defaultKeyboardShortcuts = {
   toggle: ['k', ' '],
 };
 
 const ThemelessAudioPlayerPlayPauseButton: React.FC<PlayPauseButtonProps> = React.memo(
-  ({overrides, keyboardShortcuts: keyboardShortcutsProp, ...props}) => {
+  ({keyboardShortcuts: keyboardShortcutsProp, ...props}) => {
     const {
       getPlayPauseButtonProps,
       audioSectionRef,
@@ -25,11 +23,7 @@ const ThemelessAudioPlayerPlayPauseButton: React.FC<PlayPauseButtonProps> = Reac
     const propsFromContext =
       getPlayPauseButtonProps! && getPlayPauseButtonProps(props);
 
-    const theme = useTheme();
-    const buttonOverrides: ButtonOverrides = {
-      ...get(theme, 'componentDefaults.audioPlayerPlayPauseButton'),
-      ...filterOutFalsyProperties(overrides),
-    };
+    const overrides = useButtonOverrides(props, 'audioPlayerPlayPauseButton');
 
     // Keyboard shortcuts
     const options = {target: audioSectionRef, preventDefault: false};
@@ -38,6 +32,7 @@ const ThemelessAudioPlayerPlayPauseButton: React.FC<PlayPauseButtonProps> = Reac
       ...keyboardShortcutsProp,
     };
 
+    // TODO: move to use common hook
     const toggleAction = useCallback(
       ({target, key}: KeyboardEvent) => {
         const {tagName} = target as HTMLElement;
@@ -64,7 +59,7 @@ const ThemelessAudioPlayerPlayPauseButton: React.FC<PlayPauseButtonProps> = Reac
       <IconButton
         data-testid="audio-player-play-pause-button"
         size={ButtonSize.Large}
-        overrides={buttonOverrides}
+        overrides={overrides}
         {...propsFromContext}
       />
     );
