@@ -160,7 +160,7 @@ export const StyledThumb = styled.div<StyledThumbProps>`
     left: 0;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
-    animation: ripple 2s linear;
+    animation: ripple 1s linear;
   }
   &:active::after {
     content: '';
@@ -171,8 +171,8 @@ export const StyledThumb = styled.div<StyledThumbProps>`
     bottom: 0;
     left: 0;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
-    animation: ripple 2s linear;
+    box-shadow: 0px 0px 0px 16px rgb(25 118 210 / 16%);
+    animation: ripple 1s linear;
   }
 
   @keyframes ripple {
