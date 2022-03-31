@@ -6,6 +6,7 @@ import {
   getSize,
   getSpace,
   getStylePreset,
+  getResponsiveSize,
 } from '../utils/style';
 import {
   StyledTrackProps,
@@ -148,42 +149,30 @@ export const StyledThumb = styled.div<StyledThumbProps>`
   align-items: center;
   box-sizing: border-box;
   cursor: ${getCursor};
-  position: relative;
+`;
 
-  &:hover::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 8px rgb(25 118 210 / 16%);
-    animation: ripple 1s linear;
-  }
-  &:active::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 16px rgb(25 118 210 / 16%);
-    animation: ripple 1s linear;
-  }
-
-  @keyframes ripple {
-    0% {
-      transform: scale(0.3);
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
+export const StyledFeedback = styled.span<
+  Pick<StyledThumbProps, 'disabled' | 'overrides'>
+>`
+  ${({disabled}) =>
+    getStylePreset('slider.feedback', 'feedback', {
+      isDisabled: disabled,
+    })}
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.2;
+  ${getStylePreset('slider.feedback', 'feedback')}
+  ${getResponsiveSize(
+    rectSize => ({
+      width: rectSize,
+      height: rectSize,
+      transform: `translate3d(calc(${rectSize} / -2), calc(${rectSize} / -2), 0)`,
+    }),
+    `slider.feedback`,
+    'feedback',
+    'size',
+  )};
 `;
 
 type StyledThumbValueProps = VerticalProp &

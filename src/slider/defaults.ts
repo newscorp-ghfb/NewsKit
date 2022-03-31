@@ -21,5 +21,9 @@ export default {
       typographyPreset: 'utilityLabel020',
       space: 'space030',
     },
+    feedback: {
+      size: 'sizing090',
+      stylePreset: 'sliderFeedback',
+    },
   },
 };

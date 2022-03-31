@@ -66,4 +66,19 @@ export default {
       iconColor: '{{colors.inkNonEssential}}',
     },
   },
+  sliderFeedback: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      borderRadius: '{{borders.borderRadiusCircle}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactiveInput050}}',
+    },
+    focus: {
+      backgroundColor: '{{colors.interactiveInput050}}',
+    },
+    disabled: {
+      backgroundColor: '{{colors.transparent}}',
+    },
+  },
 } as Record<string, StylePreset>;

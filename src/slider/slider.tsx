@@ -8,6 +8,7 @@ import {
   StyledThumb,
   StyledSliderLabel,
   LabelContainer,
+  StyledFeedback,
 } from './styled';
 import {ThumbLabelWrapper} from './thumb-label-wrapper';
 import {renderLabel, getTrackBackgroundStyle} from './utils';
@@ -119,6 +120,12 @@ const ThemelessSlider: React.FC<SliderProps> = ({
         data-testid={`${dataTestId}-thumb`}
         overrides={overrides}
       >
+        <StyledFeedback
+          {...p}
+          disabled={disabled}
+          overrides={overrides}
+          data-testid={`${dataTestId}-feedback`}
+        />
         {ThumbIcon && <ThumbIcon />}
         <ThumbLabelWrapper
           values={values}
