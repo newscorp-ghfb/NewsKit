@@ -100,7 +100,6 @@ export const AudioPlayer = () => (
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
                 <IconButton
-                  size={ButtonSize.Medium}
                   aria-label="Open popout player"
                   href="https://www.newskit.co.uk/"
                   overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
