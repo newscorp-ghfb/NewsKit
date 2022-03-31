@@ -157,7 +157,9 @@ export const AudioPlayer = () => (
 );
 AudioPlayer.storyName = 'audio-player';
 const timeDisplayAreas = `
-  current duration default 
+  start centre end 
+  start centre end 
+  start centre none 
 
  `;
 export const AudioSubComponents = () => (
@@ -171,78 +173,102 @@ export const AudioSubComponents = () => (
       <GridLayout rowGap="20px" areas={timeDisplayAreas}>
         {Areas => (
           <>
-            <Areas.Current>
+            <Areas.Start>
               <StorybookSubHeading>currentTime</StorybookSubHeading>
               <AudioPlayerTimeDisplay
                 format={({currentTime}) => calculateTime(currentTime)}
               />
-            </Areas.Current>
-            <Areas.Duration>
+            </Areas.Start>
+            <Areas.Centre>
               <StorybookSubHeading>duration</StorybookSubHeading>
               <AudioPlayerTimeDisplay
                 format={({duration}) => calculateTime(duration)}
               />
-            </Areas.Duration>
-            <Areas.Default>
+            </Areas.Centre>
+            <Areas.End>
               <StorybookSubHeading>default</StorybookSubHeading>
               <AudioPlayerTimeDisplay />
-            </Areas.Default>
+            </Areas.End>
           </>
         )}
       </GridLayout>
     </AudioPlayerComposable>
     <br />
-    <StorybookSubHeading>Play/Pause</StorybookSubHeading>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player play pause button"
-    >
-      <AudioPlayerPlayPauseButton
-        onClick={() => {
-          console.log('customer click function');
-        }}
-      />
-    </AudioPlayerComposable>
-    <StorybookSubHeading>SkipNext</StorybookSubHeading>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player skip next"
-    >
-      <AudioPlayerSkipNextButton
-        onClick={() => console.log('on skip Next track')}
-      />
-    </AudioPlayerComposable>
-    <StorybookSubHeading>SkipPrevious</StorybookSubHeading>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player skip previous"
-    >
-      <AudioPlayerSkipPreviousButton
-        onClick={() => console.log('on skip Next track')}
-      />
-    </AudioPlayerComposable>
-    <StorybookSubHeading>Forward</StorybookSubHeading>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player forward button"
-    >
-      <AudioPlayerForwardButton />
-    </AudioPlayerComposable>
-    <StorybookSubHeading>Replay</StorybookSubHeading>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player replay button"
-    >
-      <AudioPlayerReplayButton />
-    </AudioPlayerComposable>
-    <StorybookSubHeading>SeekBar</StorybookSubHeading>
-    <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player seek bar"
-    >
-      <AudioPlayerSeekBar />
-    </AudioPlayerComposable>
-    <br />
+
+    <GridLayout rowGap="20px" areas={timeDisplayAreas}>
+      {Areas => (
+        <>
+          <Areas.Start>
+            <StorybookSubHeading>Play/Pause</StorybookSubHeading>
+            <AudioPlayerComposable
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              ariaLandmark="audio player play pause button"
+            >
+              <AudioPlayerPlayPauseButton
+                onClick={() => {
+                  console.log('customer click function');
+                }}
+              />
+            </AudioPlayerComposable>
+          </Areas.Start>
+          <Areas.Centre>
+            <StorybookSubHeading>SkipNext</StorybookSubHeading>
+            <AudioPlayerComposable
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              ariaLandmark="audio player skip next"
+            >
+              <AudioPlayerSkipNextButton
+                onClick={() => console.log('on skip Next track')}
+              />
+            </AudioPlayerComposable>
+          </Areas.Centre>
+          <Areas.End>
+            <StorybookSubHeading>SkipPrevious</StorybookSubHeading>
+            <AudioPlayerComposable
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              ariaLandmark="audio player skip previous"
+            >
+              <AudioPlayerSkipPreviousButton
+                onClick={() => console.log('on skip Next track')}
+              />
+            </AudioPlayerComposable>
+          </Areas.End>
+        </>
+      )}
+    </GridLayout>
+    <GridLayout rowGap="20px" areas={timeDisplayAreas}>
+      {Areas => (
+        <>
+          <Areas.Start>
+            <StorybookSubHeading>Forward</StorybookSubHeading>
+            <AudioPlayerComposable
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              ariaLandmark="audio player forward"
+            >
+              <AudioPlayerForwardButton />
+            </AudioPlayerComposable>
+          </Areas.Start>
+          <Areas.Centre>
+            <StorybookSubHeading>Replay</StorybookSubHeading>
+            <AudioPlayerComposable
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              ariaLandmark="audio player replay"
+            >
+              <AudioPlayerReplayButton />
+            </AudioPlayerComposable>
+          </Areas.Centre>
+          <Areas.End>
+            <StorybookSubHeading>SeekBar</StorybookSubHeading>{' '}
+            <AudioPlayerComposable
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              ariaLandmark="audio player seek bar"
+            >
+              <AudioPlayerSeekBar />
+            </AudioPlayerComposable>
+          </Areas.End>
+        </>
+      )}
+    </GridLayout>
   </>
 );
 
@@ -362,13 +388,66 @@ export const AudioPlayPauseButtonAutoplay = () => (
   <AudioPlayerComposable
     autoPlay
     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    ariaLandmark="audio player auto"
+    ariaLandmark="audio player autoplay"
   >
-    <AudioPlayerPlayPauseButton
-      onClick={() => {
-        console.log('customer click function');
-      }}
-    />
+    <GridLayout
+      columns="50px 1fr 50px"
+      rowGap="20px"
+      areas={fullAudioPlayerAreas}
+    >
+      {Areas => (
+        <>
+          <Areas.SeekBar>
+            <AudioPlayerSeekBar />
+          </Areas.SeekBar>
+          <Areas.CurrentTime>
+            <AudioPlayerTimeDisplay
+              format={({currentTime}) => calculateTime(currentTime)}
+            />
+          </Areas.CurrentTime>
+          <Areas.TotalTime justifySelf="end">
+            <AudioPlayerTimeDisplay
+              format={({duration}) => calculateTime(duration)}
+            />
+          </Areas.TotalTime>
+          <Areas.Volume alignSelf="center" justifySelf="start">
+            <Hidden xs sm>
+              Not yet
+            </Hidden>
+          </Areas.Volume>
+          <Areas.Link alignSelf="center" justifySelf="end">
+            <Hidden xs sm>
+              <IconButton
+                aria-label="Open popout player"
+                href="https://www.newskit.co.uk/"
+                overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
+              >
+                <IconFilledLaunch />
+              </IconButton>
+            </Hidden>
+          </Areas.Link>
+
+          <Areas.Controls>
+            <GridLayout
+              columns="repeat(5, auto)"
+              columnGap="space045"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <AudioPlayerSkipPreviousButton
+                onClick={() => console.log('on skip Prev track')}
+              />
+              <AudioPlayerReplayButton />
+              <AudioPlayerPlayPauseButton />
+              <AudioPlayerForwardButton />
+              <AudioPlayerSkipNextButton
+                onClick={() => console.log('on skip Next track')}
+              />
+            </GridLayout>
+          </Areas.Controls>
+        </>
+      )}
+    </GridLayout>
   </AudioPlayerComposable>
 );
 
