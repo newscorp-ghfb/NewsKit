@@ -13,7 +13,6 @@ import {
   Flow,
   getColorCssFromTheme,
   getSpacingCssFromTheme,
-  getShadowCssFromTheme,
   getSizingCssFromTheme,
   getStylePresetFromTheme,
   Block,
@@ -45,7 +44,6 @@ const Header = styled.header`
   ${getMediaQueryFromTheme('lg')} {
     ${getSpacingCssFromTheme('paddingTop', 'space030')};
     ${getSpacingCssFromTheme('paddingBottom', 'space030')};
-    ${getShadowCssFromTheme('boxShadow', 'shadow040')};
     ${getSizingCssFromTheme('height', 'sizing100')};
   }
 `;
@@ -71,6 +69,9 @@ export const StyledLinkItem = styled.div<{
       isSelected: $selected,
     })(props)}
   box-sizing: border-box;
+  ${({$selected}) =>
+    $selected &&
+    '::after {content: "";background: #3358CC;height: 5px;border-radius: 5px 5px 0 0;display: block; position: relative; top: 31px;'}
 `;
 
 const StyledVisible = styled(Visible)`
@@ -100,27 +101,23 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
   ({handleSidebarClick, toggleTheme, themeMode, path, sidebarOpen}, ref) => {
     const renderMobileNavigation = (handleClick: () => void) => (
       <Stack data-testid="logo-container" flow={Flow.HorizontalCenter}>
-        {!path.split('/')[1].includes('index') && (
-          <>
-            <MobileMenu
-              onClick={handleClick}
-              onKeyDown={handleEnterKeyPress(handleClick)}
-              tabIndex={0}
-              data-testid="mobile-menu-icon"
-            >
-              {sidebarOpen ? (
-                <IconFilledClose
-                  overrides={{
-                    stylePreset: 'closeIcon',
-                    size: 'iconSize020',
-                  }}
-                />
-              ) : (
-                <IconFilledMenu overrides={{size: 'iconSize020'}} />
-              )}
-            </MobileMenu>
-          </>
-        )}
+        <MobileMenu
+          onClick={handleClick}
+          onKeyDown={handleEnterKeyPress(handleClick)}
+          tabIndex={0}
+          data-testid="mobile-menu-icon"
+        >
+          {sidebarOpen ? (
+            <IconFilledClose
+              overrides={{
+                stylePreset: 'closeIcon',
+                size: 'iconSize020',
+              }}
+            />
+          ) : (
+            <IconFilledMenu overrides={{size: 'iconSize020'}} />
+          )}
+        </MobileMenu>
       </Stack>
     );
 

@@ -4,6 +4,8 @@ import {
   getStylePresetFromTheme,
   getSizingFromTheme,
   getSpacingFromTheme,
+  // getBorderCssFromTheme,
+  // getColorFromTheme,
 } from 'newskit';
 
 export const StyledLinkItem = styled.div<{
@@ -22,7 +24,26 @@ export const StyledLinkItem = styled.div<{
   padding: ${getSpacingFromTheme('spaceInset030')} 0;
   margin: ${({theme}) => `${theme.spacePresets.space010} 0`};
   text-overflow: ellipsis;
+  position: relative;
+  ::after {
+  ${({$selected}) =>
+    $selected &&
+    `{
+          content: "";
+          background: #3358CC;
+          height: 40px;
+          width: 5px;
+          border-radius: 0 5px 5px 0;
+          display: block;
+          position: absolute;
+          top: 0px;
+          left: -25px;
+      }
+    `}
 `;
+
+// background: ${getColorFromTheme('blue060')};
+// ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
 
 export const StyledFirstLevelHeader = styled.div`
   ${getTypographyPresetFromTheme('utilityLabel020')};
@@ -34,7 +55,7 @@ export const StyledSecondLevelHeader = styled.div`
   ${getTypographyPresetFromTheme('sidebarFirstLevelHeader')};
   ${getStylePresetFromTheme('sidebarHeader')};
   min-height: ${getSizingFromTheme('sizing060')};
-  margin-top: ${getSpacingFromTheme('space045')};
+  margin-top: ${getSpacingFromTheme('space010')};
 `;
 
 export const StyledSidebarNav = styled.nav`

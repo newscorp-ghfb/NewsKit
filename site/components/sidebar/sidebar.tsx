@@ -68,7 +68,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       role="complementary"
       hideSidebar={hideSidebar}
     >
-      <Block spaceInset="space030" />
+      <Block spaceInset="space010" />
       <SidebarNav />
     </SidebarWrapper>
 

@@ -96,7 +96,7 @@ export const stylePresets = {
       color: '{{colors.inkSubtle}}',
     },
     hover: {
-      color: '{{colors.interactivePrimary030}}',
+      color: '{{colors.interactivePrimary040}}',
     },
     active: {
       color: '{{colors.inkContrast}}',
@@ -815,6 +815,27 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusRounded050}}',
       color: '{{colors.neutral080}}',
       iconColor: '{{colors.neutral100}}',
+    },
+  },
+  sideNavItemHorizontal: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.inkSubtle}}',
+    },
+    hover: {
+      color: '{{colors.interactivePrimary040}}',
+    },
+    active: {
+      color: '{{colors.inkContrast}}',
+    },
+    selected: {
+      color: '{{colors.interactivePrimary040}}',
+    },
+    'selected:hover': {
+      color: '{{colors.inkBase}}',
+    },
+    disabled: {
+      color: '{{colors.inkNonEssential}}',
     },
   },
 };

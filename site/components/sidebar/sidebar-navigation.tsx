@@ -4,7 +4,6 @@ import {
   Block,
   Visible,
   UnorderedList,
-  P,
   Menu,
   MenuItem,
   MenuGroup,
@@ -14,6 +13,8 @@ import {
   Flow,
   H2,
   getSpacingCssFromTheme,
+  getBorderCssFromTheme,
+  getColorFromTheme,
 } from 'newskit';
 import {Link} from '../link';
 import routes from '../../routes';
@@ -39,18 +40,39 @@ const NavigationDivider = styled.div`
   ${getSpacingCssFromTheme('marginBottom', 'space050')};
 `;
 
-const MobileSideNavigationHeader = styled.div`
+const MobileSideNavigation = styled.div`
   width: 225px;
-  ${getSpacingCssFromTheme('marginBottom', 'space040')};
-  &.collapsed > p {
+  ${getSpacingCssFromTheme('marginTop', 'space040')};
+  ${getSpacingCssFromTheme('marginBottom', 'space010')};
+  &.collapsed > nav {
     overflow: hidden;
     max-height: 0px;
     transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
   }
-  &.expanded > p {
+  &.expanded > nav {
     max-height: 9999px;
     transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
     transition-delay: 0s;
+  }
+  &.expanded .nk-menu-item {
+    position: relative;
+  }
+  &.expanded .menu-item,
+  &.collapsed .menu-item {
+    border: none !important;
+  }
+  &.expanded .menu-item[aria-current='page'] {
+    ::after {
+      content: '';
+      background: ${getColorFromTheme('blue060')};
+      height: 40px;
+      width: 10px;
+      ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: -30px;
+    }
   }
 `;
 
@@ -138,9 +160,10 @@ type SubNav = {
 type SubNavItemProps = NavProps & SubNav;
 
 const menuItemOverrides = {
-  typographyPreset: 'utilityButton000',
+  typographyPreset: 'utilityButton020',
   spaceInset: 'space030',
-  spaceInline: 'space000',
+  spaceStack: 'space000',
+  stylePreset: 'sideNavItemHorizontal',
 };
 
 const RenderMobileNavigation = ({
@@ -161,22 +184,26 @@ const RenderMobileNavigation = ({
         list.map(({title, id, subNav, page}) => (
           <>
             {page ? (
-              <MenuItem
-                href={id}
-                overrides={menuItemOverrides}
-                selected={path.includes(id)}
-              >
-                {title}
-              </MenuItem>
+              <>
+                <MenuItem
+                  href={id}
+                  overrides={menuItemOverrides}
+                  selected={path.includes(id)}
+                  size="small"
+                  className="menu-item"
+                >
+                  {title}
+                </MenuItem>
+              </>
             ) : (
               <>
-                <Block spaceStack="space010" />
+                <Block spaceStack="space030" />
                 <MenuGroup
                   title={title}
                   overrides={{
                     title: {
                       typographyPreset: 'utilityButton030',
-                      stylePreset: 'inkBase',
+                      stylePreset: 'inkContrast',
                       spaceInset: 'space030',
                       spaceInline: 'space040',
                     },
@@ -193,42 +220,40 @@ const RenderMobileNavigation = ({
   return (
     <UnorderedList>
       {menu.map(({title, subNav}, index) => (
-        <MobileSideNavigationHeader
-          onClick={() =>
-            openPanelIds.includes(index)
-              ? setOpenPanelIds([])
-              : setOpenPanelIds([index])
-          }
+        <MobileSideNavigation
           className={openPanelIds.includes(index) ? 'expanded' : 'collapsed'}
         >
-          <H2 overrides={{typographyPreset: 'utilityHeading020'}}>
+          <H2
+            overrides={{typographyPreset: 'utilityHeading020'}}
+            onClick={() =>
+              openPanelIds.includes(index)
+                ? setOpenPanelIds([])
+                : setOpenPanelIds([index])
+            }
+          >
             <Stack
               flow={Flow.HorizontalCenter}
               stackDistribution="space-between"
             >
-              <Stack flow={Flow.HorizontalTop}>{title}</Stack>
-              <Stack flow="horizontal-center" spaceInline="space040">
-                {openPanelIds.includes(index) ? (
-                  <IconExpandLess />
-                ) : (
-                  <IconExpandMore />
-                )}
-              </Stack>
+              <span>{title}</span>
+              {openPanelIds.includes(index) ? (
+                <IconExpandLess />
+              ) : (
+                <IconExpandMore />
+              )}
             </Stack>
           </H2>
-          <P>
-            <Menu
-              aria-label="Accordion sub-menu"
-              vertical
-              size="small"
-              align="start"
-              overrides={{spaceInline: 'space020'}}
-            >
-              <Block spaceStack="space020" />
-              {subNav && createMenuItem(subNav)}
-            </Menu>
-          </P>
-        </MobileSideNavigationHeader>
+          <Menu
+            aria-label="menu"
+            vertical
+            size="small"
+            align="start"
+            overrides={{spaceInline: 'space000'}}
+          >
+            <Block spaceStack="space030" />
+            {subNav && createMenuItem(subNav)}
+          </Menu>
+        </MobileSideNavigation>
       ))}
     </UnorderedList>
   );
