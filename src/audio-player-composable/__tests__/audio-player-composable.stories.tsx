@@ -197,7 +197,7 @@ export const AudioPlayerForwardReplayButton = () => (
             </Areas.Link>
             <Areas.Controls>
               <GridLayout
-                columns="repeat(7, auto)"
+                columns="repeat(5, auto)"
                 columnGap="20px"
                 justifyContent="center"
                 alignItems="center"

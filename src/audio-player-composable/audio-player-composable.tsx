@@ -250,7 +250,6 @@ export const AudioPlayerComposable = ({
     }),
     [
       togglePlay,
-      // Props function getter
       getPlayPauseButtonProps,
       getTimeDisplayProps,
       getSeekBarProps,
