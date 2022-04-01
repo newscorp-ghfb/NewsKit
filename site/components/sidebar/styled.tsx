@@ -4,8 +4,6 @@ import {
   getStylePresetFromTheme,
   getSizingFromTheme,
   getSpacingFromTheme,
-  // getBorderCssFromTheme,
-  // getColorFromTheme,
 } from 'newskit';
 
 export const StyledLinkItem = styled.div<{
@@ -36,14 +34,11 @@ export const StyledLinkItem = styled.div<{
           border-radius: 0 5px 5px 0;
           display: block;
           position: absolute;
-          top: 0px;
+          top: 5px;
           left: -27px;
       }
     `}
 `;
-
-// background: ${getColorFromTheme('blue060')};
-// ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
 
 export const StyledFirstLevelHeader = styled.div`
   ${getTypographyPresetFromTheme('utilityLabel020')};
