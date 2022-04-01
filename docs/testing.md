@@ -40,9 +40,7 @@ Components
 
 NewsKit Site changes
 
-* [ ] Does it render correctly on IE11?
-* [ ] Is the feature's functionality working as expected on other browsers such as Safari, Firefox and IE11?
-* [ ] Does it have accessibility errors reported by WAVE?
+* [ ] Is the feature's functionality working as expected on other browsers such as Safari, Firefox and Edge?
 * [ ] Are there new console errors reported?
 * [ ] If visual test is not added, does it render OK on different browsers and mobile viewports? (Safari, Firefox, small mobile viewport, tablet)
 * [ ] Is the Playground feature working as expected?

@@ -140,6 +140,27 @@ const recordedTimeDisplayOverrides: AudioPlayerComposableProps = {
     </>
   ),
 };
+
+const audioPlayerSecondsProps: AudioPlayerComposableProps = {
+  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  children: (
+    <>
+      <AudioPlayerForwardButton
+        seconds={20}
+        onClick={() => {
+          console.log('customer click function for forward');
+        }}
+      />
+      <AudioPlayerReplayButton
+        seconds={20}
+        onClick={() => {
+          console.log('customer click function for replay');
+        }}
+      />
+    </>
+  ),
+};
+
 jest.mock('../../version-number.json', () => ({version: '0.10.0'}));
 
 jest.mock('../utils', () => {
@@ -246,6 +267,26 @@ describe('Audio Player Composable', () => {
 
     fireEvent.click(replayButton);
     expect(audioElement.currentTime).toEqual(10);
+  });
+
+  it('should use custom seconds props for forward and replay button', () => {
+    const {getByTestId} = renderWithTheme(
+      AudioPlayerComposable,
+      audioPlayerSecondsProps,
+    );
+    const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+    fireEvent.durationChange(audioElement, {
+      target: {
+        duration: 6610,
+      },
+    });
+    const forwardButton = getByTestId('audio-player-forward-button');
+    const replayButton = getByTestId('audio-player-replay-button');
+    fireEvent.click(forwardButton);
+    fireEvent.click(forwardButton);
+    expect(audioElement.currentTime).toEqual(40);
+    fireEvent.click(replayButton);
+    expect(audioElement.currentTime).toEqual(20);
   });
 
   it('should phasing playPause button loading state as expected', () => {

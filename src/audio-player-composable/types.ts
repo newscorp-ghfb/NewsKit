@@ -53,10 +53,10 @@ export enum AudioEvents {
   Progress = 'onProgress',
 }
 
-export type AudioPlayerIconButtonProps = Optional<
-  IconButtonProps,
-  'aria-label'
->;
+export interface AudioPlayerIconButtonProps
+  extends Optional<IconButtonProps, 'aria-label'> {
+  seconds?: number;
+}
 
 export type AudioPlayerIconButtonWithShortcuts = Omit<
   AudioPlayerIconButtonProps,

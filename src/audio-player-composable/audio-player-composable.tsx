@@ -95,7 +95,7 @@ export const AudioPlayerComposable = ({
 
   const getPlayPauseButtonProps = useCallback(
     ({
-      onClick: onClickProp,
+      onClick: consumerOnClick,
       ...getterProps
     }: AudioPlayerIconButtonProps): IconButtonProps & {
       playing: boolean;
@@ -120,7 +120,7 @@ export const AudioPlayerComposable = ({
         }
       }
 
-      const onClick = composeEventHandlers([onClickProp, togglePlay]);
+      const onClick = composeEventHandlers([consumerOnClick, togglePlay]);
 
       return {
         'aria-label': ariaLabel,
@@ -141,26 +141,41 @@ export const AudioPlayerComposable = ({
   const getForwardButtonProps = useCallback(
     ({
       onClick: consumerOnClick,
+      seconds = 10,
       ...getterProps
-    }: AudioPlayerIconButtonProps): IconButtonProps => ({
-      children: <IconFilledForward10 />,
-      'aria-label': 'Fast forward for 10 seconds',
-      onClick: composeEventHandlers([consumerOnClick, onClickForward]),
-      ...getterProps,
-    }),
+    }: AudioPlayerIconButtonProps): IconButtonProps => {
+      const onClickForwardWithSeconds = () => onClickForward({seconds});
+
+      return {
+        children: <IconFilledForward10 />,
+        'aria-label': `Fast forward for ${seconds} seconds`,
+        onClick: composeEventHandlers([
+          consumerOnClick,
+          onClickForwardWithSeconds,
+        ]),
+        ...getterProps,
+      };
+    },
     [onClickForward],
   );
 
   const getReplayButtonProps = useCallback(
     ({
       onClick: consumerOnClick,
+      seconds = 10,
       ...getterProps
-    }: AudioPlayerIconButtonProps): IconButtonProps => ({
-      children: <IconFilledReplay10 />,
-      'aria-label': 'Rewind 10 seconds',
-      onClick: composeEventHandlers([consumerOnClick, onClickBackward]),
-      ...getterProps,
-    }),
+    }: AudioPlayerIconButtonProps): IconButtonProps => {
+      const onClickWithBackwardWithSeconds = () => onClickBackward({seconds});
+      return {
+        children: <IconFilledReplay10 />,
+        'aria-label': `Rewind ${seconds} seconds`,
+        onClick: composeEventHandlers([
+          consumerOnClick,
+          onClickWithBackwardWithSeconds,
+        ]),
+        ...getterProps,
+      };
+    },
     [onClickBackward],
   );
 
@@ -185,18 +200,18 @@ export const AudioPlayerComposable = ({
 
   const getSkipPreviousButtonProps = useCallback(
     ({
-      onClick: onClickProp,
+      onClick: consumerOnClick,
       ...getterProps
     }: AudioPlayerIconButtonProps): IconButtonProps => {
       const onClick = (event: React.MouseEvent<HTMLButtonElement>) => {
         if (currentTime > 5) {
           onChangeSlider(0);
-        } else if (typeof onClickProp === 'function') {
-          onClickProp(event);
+        } else if (typeof consumerOnClick === 'function') {
+          consumerOnClick(event);
         }
       };
 
-      const isDisabled = currentTime <= 5 && !onClickProp;
+      const isDisabled = currentTime <= 5 && !consumerOnClick;
 
       return {
         onClick,
@@ -265,6 +280,7 @@ export const AudioPlayerComposable = ({
   const pressJumpToStart = useCallback(() => {
     onChangeSlider(0);
   }, [onChangeSlider]);
+
   const pressJumpToEnd = useCallback(() => {
     onChangeSlider(duration);
   }, [onChangeSlider, duration]);
