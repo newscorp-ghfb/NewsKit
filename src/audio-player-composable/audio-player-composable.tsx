@@ -13,12 +13,18 @@ import {useAudioFunctions} from './audio-functions';
 import {AudioPlayerProvider} from './context';
 import {useKeypress} from '../utils/hooks/use-keypress';
 import {
+  AudioEvents,
   AudioFunctionDependencies,
   AudioPlayerComposableProps,
   AudioPlayerIconButtonProps,
 } from './types';
 import {formatFunction} from './components/time-display/utils';
-import {IconFilledForward10, IconFilledReplay10} from '../icons';
+import {
+  IconFilledSkipNext,
+  IconFilledSkipPrevious,
+  IconFilledForward10,
+  IconFilledReplay10,
+} from '../icons';
 import {IconButtonProps} from '../icon-button/types';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
 
@@ -36,6 +42,7 @@ export const AudioPlayerComposable = ({
   live = false,
   ariaLandmark,
   keyboardShortcuts: keyboardShortcutsProp,
+  ...props
 }: AudioPlayerComposableProps) => {
   const currentTimeRef = useRef(0);
 
@@ -49,8 +56,6 @@ export const AudioPlayerComposable = ({
   const [currentTime, setCurrentTime] = useState(0);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [displayDuration, setDisplayDuration] = useState(0);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [isPrevTrackBtnDisabled, setIsPrevTrackBtnDisabled] = useState(false);
 
   const [buffered, setBuffered] = useState<TimeRanges>();
 
@@ -81,7 +86,6 @@ export const AudioPlayerComposable = ({
     setCurrentTime,
     setBuffered,
     setDisplayDuration,
-    setIsPrevTrackBtnDisabled,
     currentTimeRef,
     duration,
     setDuration,
@@ -89,20 +93,23 @@ export const AudioPlayerComposable = ({
   } as AudioFunctionDependencies);
 
   const getPlayPauseButtonProps = ({
-    onClick: consumerOnClick,
-  }: {
-    onClick?: () => void;
-  }) => {
+    onClick: onClickProp,
+    ...getterProps
+  }: AudioPlayerIconButtonProps): IconButtonProps & {
+    playing: boolean;
+    canPause: boolean;
+  } => {
     // All the internal logic for defining aria and icon to show
     let playStateIcon = <IconFilledPlayArrow />;
     let ariaLabel = 'Play';
     let ariaPressed = false;
+    const canPause = !live;
 
     if (playing) {
       ariaPressed = true;
       // TODO remove ignore as we implement the "live" functionality back and write test for it
       /* istanbul ignore next */
-      if (live) {
+      if (canPause) {
         playStateIcon = <IconFilledPause />;
         ariaLabel = 'Pause';
       } else {
@@ -111,21 +118,19 @@ export const AudioPlayerComposable = ({
       }
     }
 
-    const onClick = () => {
-      if (consumerOnClick) consumerOnClick();
-      togglePlay();
-    };
+    const onClick = composeEventHandlers([onClickProp, togglePlay]);
 
     return {
-      ariaLabel,
-      ariaPressed,
+      'aria-label': ariaLabel,
+      'aria-pressed': ariaPressed,
       loading,
       onClick,
+      children: playStateIcon,
+      ...getterProps,
 
       // can  be needed for custom internal logic
       playing,
-      canPause: live,
-      playStateIcon,
+      canPause,
     };
   };
   const getForwardButtonProps = ({
@@ -159,21 +164,56 @@ export const AudioPlayerComposable = ({
     duration,
   });
 
+  const getSkipPreviousButtonProps = ({
+    onClick: onClickProp,
+    ...getterProps
+  }: AudioPlayerIconButtonProps): IconButtonProps => {
+    const onClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+      if (currentTime > 5) {
+        onChangeSlider(0);
+      } else if (typeof onClickProp === 'function') {
+        onClickProp(event);
+      }
+    };
+
+    const isDisabled = currentTime <= 5 && !onClickProp;
+
+    return {
+      onClick,
+      children: <IconFilledSkipPrevious />,
+      'aria-label': 'previous',
+      disabled: isDisabled,
+      ...getterProps,
+    };
+  };
+
+  const getSkipNextButtonProps = ({
+    ...getterProps
+  }: AudioPlayerIconButtonProps): IconButtonProps => ({
+    children: <IconFilledSkipNext />,
+    'aria-label': 'next',
+    disabled: typeof getterProps.onClick !== 'function',
+    ...getterProps,
+  });
+
   const value = {
+    audioRef,
+    audioSectionRef,
+    togglePlay,
     // Props function getter
     getPlayPauseButtonProps,
     getTimeDisplayProps,
     getSeekBarProps,
+    getSkipPreviousButtonProps,
+    getSkipNextButtonProps,
     getForwardButtonProps,
     getReplayButtonProps,
+  };
 
-    // Internal for AudioElement
-    audioRef,
-    audioSectionRef,
-    togglePlay,
-    audioEvents,
-    src,
-    autoPlay,
+  const eventHandler = (eventName: AudioEvents) => {
+    const propEvent = props[eventName];
+    const internalEvent = audioEvents[eventName];
+    return composeEventHandlers([propEvent, internalEvent]);
   };
 
   // Keyboard shortcuts
@@ -196,7 +236,19 @@ export const AudioPlayerComposable = ({
   return (
     <section aria-label={ariaLandmark || 'Audio Player'} ref={audioSectionRef}>
       <AudioPlayerProvider value={value}>
-        <AudioElement />
+        <AudioElement
+          audioRef={audioRef}
+          src={src}
+          autoPlay={autoPlay}
+          onCanPlay={eventHandler(AudioEvents.CanPlay)}
+          onWaiting={eventHandler(AudioEvents.Waiting)}
+          onPlay={eventHandler(AudioEvents.Play)}
+          onPause={eventHandler(AudioEvents.Pause)}
+          onEnded={eventHandler(AudioEvents.Ended)}
+          onDurationChange={eventHandler(AudioEvents.DurationChange)}
+          onTimeUpdate={eventHandler(AudioEvents.TimeUpdate)}
+          onProgress={eventHandler(AudioEvents.Progress)}
+        />
         {children}
       </AudioPlayerProvider>
     </section>

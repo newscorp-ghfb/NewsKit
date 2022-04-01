@@ -5,6 +5,8 @@ import {AudioPlayerTimeDisplay} from '../components/time-display';
 import {AudioPlayerForwardButton} from '../components/forward-button';
 import {AudioPlayerReplayButton} from '../components/replay-button';
 import {AudioPlayerComposable} from '../audio-player-composable';
+import {AudioPlayerSkipNextButton} from '../components/skip-next/skip-next';
+import {AudioPlayerSkipPreviousButton} from '../components/skip-previous/skip-previous';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {calculateTime} from '../components/time-display/utils';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
@@ -199,9 +201,15 @@ export const AudioPlayerForwardReplayButton = () => (
                 justifyContent="center"
                 alignItems="center"
               >
+                <AudioPlayerSkipPreviousButton
+                  onClick={() => console.log('on skip Prev track')}
+                />
                 <AudioPlayerReplayButton />
                 <AudioPlayerPlayPauseButton />
                 <AudioPlayerForwardButton />
+                <AudioPlayerSkipNextButton
+                  onClick={() => console.log('on skip Next track')}
+                />
               </GridLayout>
             </Areas.Controls>
           </>
@@ -242,14 +250,33 @@ export const AudioPlayerForwardReplayButton = () => (
                 justifyContent="center"
                 alignItems="center"
               >
+                <AudioPlayerSkipPreviousButton
+                  overrides={{
+                    iconSize: 'iconSize030',
+                    stylePreset: 'buttonOutlinedNegative',
+                  }}
+                />
+
                 <AudioPlayerReplayButton
                   overrides={{
                     iconSize: 'iconSize030',
                     stylePreset: 'buttonOutlinedNegative',
                   }}
                 />
-                <AudioPlayerPlayPauseButton />
+                <AudioPlayerPlayPauseButton
+                  overrides={{
+                    iconSize: 'iconSize030',
+                    stylePreset: 'buttonOutlinedNegative',
+                  }}
+                />
                 <AudioPlayerForwardButton
+                  overrides={{
+                    iconSize: 'iconSize030',
+                    stylePreset: 'buttonOutlinedNegative',
+                  }}
+                />
+
+                <AudioPlayerSkipNextButton
                   overrides={{
                     iconSize: 'iconSize030',
                     stylePreset: 'buttonOutlinedNegative',

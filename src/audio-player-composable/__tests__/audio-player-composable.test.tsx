@@ -3,17 +3,21 @@ import React from 'react';
 import {fireEvent, act} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import {renderWithImplementation, renderWithTheme} from '../../test/test-utils';
-import {AudioPlayerComposable} from '../audio-player-composable';
-import {AudioPlayerPlayPauseButton} from '../components/play-pause-button/play-pause-button';
-import {AudioPlayerSeekBar} from '../components/seek-bar/seek-bar';
 import {AudioPlayerComposableProps} from '../types';
-import {AudioPlayerTimeDisplay} from '../components/time-display/time-display';
 import {formatFunction} from '../components/time-display/utils';
 import {compileTheme, createTheme} from '../../theme';
 import seekBarStylePresets from '../components/seek-bar/style-presets';
 import {Button} from '../../button';
-import {AudioPlayerForwardButton} from '../components/forward-button/forward-button';
-import {AudioPlayerReplayButton} from '../components/replay-button/replay-button';
+import {
+  AudioPlayerComposable,
+  AudioPlayerTimeDisplay,
+  AudioPlayerPlayPauseButton,
+  AudioPlayerSkipNextButton,
+  AudioPlayerSkipPreviousButton,
+  AudioPlayerForwardButton,
+  AudioPlayerReplayButton,
+  AudioPlayerSeekBar,
+} from '..';
 
 const version = '0.10.0';
 
@@ -30,6 +34,16 @@ const recordedAudioProps: AudioPlayerComposableProps = {
       />
       <AudioPlayerTimeDisplay data-testid="audio-player-time-display" />
       <Button href="/">read more</Button>
+      <AudioPlayerSkipNextButton
+        onClick={() => {
+          console.log('customer click function for skip next');
+        }}
+      />
+      <AudioPlayerSkipPreviousButton
+        onClick={() => {
+          console.log('customer click function for skip prev');
+        }}
+      />
       <AudioPlayerForwardButton
         onClick={() => {
           console.log('customer click function for forward');
@@ -338,17 +352,109 @@ describe('Audio Player Composable', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+  it('calls event handler passed from the props', () => {
+    const onDurationChange = jest.fn();
+    const props = {
+      ...recordedAudioProps,
+      onDurationChange,
+    };
+    const {getByTestId} = renderWithTheme(AudioPlayerComposable, props);
+    fireEvent.durationChange(getByTestId('audio-element'), {
+      target: {duration: 10},
+    });
+
+    expect(onDurationChange).toHaveBeenCalledTimes(1);
+    expect(onDurationChange).toHaveBeenCalledWith(
+      expect.objectContaining({
+        target: expect.objectContaining({duration: 10}),
+      }),
+    );
+  });
+
+  it('skip-prev button should move track to beginning', () => {
+    const {getByTestId} = renderWithTheme(AudioPlayerComposable, {
+      ...recordedAudioProps,
+
+      children: (
+        <>
+          <AudioPlayerSkipPreviousButton />
+        </>
+      ),
+    });
+
+    const prevButton = getByTestId('audio-player-skip-previous-button');
+    const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+
+    // set initial duration and currentTime
+    audioElement.currentTime = 10;
+    fireEvent.durationChange(audioElement, {
+      target: {
+        duration: 100,
+      },
+    });
+    fireEvent.timeUpdate(audioElement, {
+      target: {
+        currentTime: 10,
+      },
+    });
+
+    // after 5 seconds the button should not be disabled
+    expect(prevButton).not.toBeDisabled();
+
+    fireEvent.click(prevButton);
+
+    // audio player should be at the beginning
+    expect(audioElement.currentTime).toBe(0);
+    expect(prevButton).toBeDisabled();
+  });
+
+  it('skip-prev/next should be disabled when onClick is not provided', () => {
+    const {getByTestId} = renderWithTheme(AudioPlayerComposable, {
+      ...recordedAudioProps,
+
+      children: (
+        <>
+          <AudioPlayerSkipPreviousButton />
+          <AudioPlayerSkipNextButton />
+        </>
+      ),
+    });
+
+    const prevButton = getByTestId('audio-player-skip-previous-button');
+    const nextButton = getByTestId('audio-player-skip-next-button');
+
+    expect(prevButton).toBeDisabled();
+    expect(nextButton).toBeDisabled();
+  });
+
+  it('skip-prev/next should invoke onClick when clicked', () => {
+    const mockOnPrevClick = jest.fn();
+    const mockOnNextClick = jest.fn();
+    const {getByTestId} = renderWithTheme(AudioPlayerComposable, {
+      ...recordedAudioProps,
+
+      children: (
+        <>
+          <AudioPlayerSkipPreviousButton onClick={mockOnPrevClick} />
+          <AudioPlayerSkipNextButton onClick={mockOnNextClick} />
+        </>
+      ),
+    });
+
+    const prevButton = getByTestId('audio-player-skip-previous-button');
+    const nextButton = getByTestId('audio-player-skip-next-button');
+
+    fireEvent.click(prevButton);
+    fireEvent.click(nextButton);
+    expect(mockOnPrevClick).toHaveBeenCalled();
+    expect(mockOnNextClick).toHaveBeenCalled();
+  });
 
   describe('seekBar should', () => {
     it('renders and behaves as expected', () => {
-      const onPlay = jest.fn();
-      const props = {
-        ...recordedAudioProps,
-        onPlay,
-      };
       const {asFragment, getByTestId} = renderWithTheme(
         AudioPlayerComposable,
-        props,
+        recordedAudioProps,
       );
 
       const audioElement = getByTestId('audio-element') as any;

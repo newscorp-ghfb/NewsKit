@@ -9,7 +9,7 @@ export default [
         id: '/about/introduction',
       },
       {
-        title: 'Release Notes',
+        title: 'Release notes',
         page: true,
         id: '/about/release-notes',
       },
@@ -24,7 +24,7 @@ export default [
         id: '/about/contribute',
       },
       {
-        title: 'Contact Us',
+        title: 'Contact us',
         page: true,
         id: '/about/contact-us',
       },
