@@ -55,7 +55,7 @@ const TEST_DATA = {
 };
 
 /*
-  our useKeypress hook uses keydown and keyup events, that's why we need thi
+  our useKeypress hook uses keydown and keyup events, that's why we need to call both events in tests
 */
 const triggerKeyEvent = (selector, events) => {
   const eventsList = Array.isArray(events) ? events : [events];

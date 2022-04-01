@@ -2,37 +2,22 @@ import React, {useCallback} from 'react';
 import {IconButton} from '../../../icon-button';
 import {ButtonSize} from '../../../button/types';
 import {useAudioPlayerContext} from '../../context';
-import {PlayPauseButtonProps} from './types';
-import {useKeypress} from '../../../utils/hooks/use-keypress';
 import defaults from './defaults';
 import {withOwnTheme} from '../../../utils/with-own-theme';
-import {useButtonOverrides} from '../../utils';
+import {useButtonOverrides, useKeyboardShortcutsOnButton} from '../../utils';
+import {AudioPlayerIconButtonWithShortcuts} from '../../types';
 
-const defaultKeyboardShortcuts = {
-  toggle: ['k', ' '],
-};
+const defaultKeyboardShortcuts = ['k', ' '];
 
-const ThemelessAudioPlayerPlayPauseButton: React.FC<PlayPauseButtonProps> = React.memo(
-  ({keyboardShortcuts: keyboardShortcutsProp, ...props}) => {
-    const {
-      getPlayPauseButtonProps,
-      audioSectionRef,
-      togglePlay,
-    } = useAudioPlayerContext();
+const ThemelessAudioPlayerPlayPauseButton: React.FC<AudioPlayerIconButtonWithShortcuts> = React.memo(
+  props => {
+    const {getPlayPauseButtonProps, togglePlay} = useAudioPlayerContext();
 
     const propsFromContext =
       getPlayPauseButtonProps! && getPlayPauseButtonProps(props);
 
     const overrides = useButtonOverrides(props, 'audioPlayerPlayPauseButton');
 
-    // Keyboard shortcuts
-    const options = {target: audioSectionRef, preventDefault: false};
-    const keyboardShortcuts = {
-      ...defaultKeyboardShortcuts,
-      ...keyboardShortcutsProp,
-    };
-
-    // TODO: move to use common hook
     const toggleAction = useCallback(
       ({target, key}: KeyboardEvent) => {
         const {tagName} = target as HTMLElement;
@@ -53,7 +38,13 @@ const ThemelessAudioPlayerPlayPauseButton: React.FC<PlayPauseButtonProps> = Reac
       [togglePlay],
     );
 
-    useKeypress(keyboardShortcuts.toggle, toggleAction, options);
+    useKeyboardShortcutsOnButton({
+      props: propsFromContext as AudioPlayerIconButtonWithShortcuts,
+      defaults: defaultKeyboardShortcuts,
+      action: toggleAction,
+    });
+
+    console.log('rendering play payse button');
 
     return (
       <IconButton

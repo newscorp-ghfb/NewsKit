@@ -205,9 +205,7 @@ export const AudioPlayerForwardReplayButton = () => (
                   onClick={() => console.log('on skip Prev track')}
                 />
                 <AudioPlayerReplayButton />
-                <AudioPlayerReplayButton />
                 <AudioPlayerPlayPauseButton />
-                <AudioPlayerForwardButton />
                 <AudioPlayerForwardButton />
                 <AudioPlayerSkipNextButton
                   onClick={() => console.log('on skip Next track')}
@@ -218,7 +216,7 @@ export const AudioPlayerForwardReplayButton = () => (
         )}
       </GridLayout>
     </AudioPlayerComposable>
-    {/* <StorybookSubHeading>with overrides</StorybookSubHeading>
+    <StorybookSubHeading>with overrides</StorybookSubHeading>
 
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
@@ -290,7 +288,7 @@ export const AudioPlayerForwardReplayButton = () => (
           </>
         )}
       </GridLayout>
-    </AudioPlayerComposable> */}
+    </AudioPlayerComposable>
   </>
 );
 

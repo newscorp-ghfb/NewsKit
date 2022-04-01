@@ -35,7 +35,7 @@ export const getMediaSegment = (duration: number, currentPosition: number) => {
 };
 
 type UseKeyboardShortcutsType = {
-  action?: Function;
+  action?: (e: KeyboardEvent) => void;
   defaults: string | string[];
   props: AudioPlayerIconButtonWithShortcuts;
 };
@@ -43,6 +43,7 @@ type UseKeyboardShortcutsType = {
 export const useKeyboardShortcutsOnButton = ({
   props,
   defaults: defaultKeys,
+  action,
 }: UseKeyboardShortcutsType) => {
   const {audioSectionRef} = useAudioPlayerContext();
 
@@ -51,7 +52,9 @@ export const useKeyboardShortcutsOnButton = ({
   const options = {target: audioSectionRef, preventDefault: false};
   const keyboardShortcuts = keyboardShortcutsProp || defaultKeys;
 
-  useKeypress(keyboardShortcuts, props.onClick, options);
+  const callback = action || props.onClick;
+
+  useKeypress(keyboardShortcuts, callback, options);
 };
 
 export const useButtonOverrides = (
