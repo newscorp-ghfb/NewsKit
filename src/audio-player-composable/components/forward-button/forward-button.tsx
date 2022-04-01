@@ -19,14 +19,14 @@ const ThemelessAudioPlayerForwardButton: React.FC<AudioPlayerIconButtonProps> = 
       ...filterOutFalsyProperties(overrides),
     };
 
-    const propsFromContex =
+    const propsFromContext =
       getForwardButtonProps! && getForwardButtonProps(props);
     return (
       <IconButton
         data-testid="audio-player-forward-button"
         size={ButtonSize.Medium}
         overrides={audioPlayerForwardOverrides}
-        {...propsFromContex}
+        {...propsFromContext}
       />
     );
   },
