@@ -201,18 +201,6 @@ export const useAudioFunctions = ({
     }
   }, [playing, pause, fireEvent, live, getTrackingInformation]);
 
-  // TODO remove ignore once in use
-  /* istanbul ignore next */
-  const onPopoutClick = () => {
-    pause();
-
-    fireEvent(
-      // TODO remove ignore when implementing live functionality and test
-      /* istanbul ignore next */
-      getTrackingInformation('audio-player-popout', EventTrigger.Click),
-    );
-  };
-
   const togglePlay = useCallback(() => {
     if (loading) {
       return;
@@ -225,22 +213,28 @@ export const useAudioFunctions = ({
     }
   }, [loading, playing, onPause, onPlay]);
 
-  const onProgress = ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
-    setBuffered((target as HTMLAudioElement).buffered);
-  };
+  const onProgress = useCallback(
+    ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
+      setBuffered((target as HTMLAudioElement).buffered);
+    },
+    [setBuffered],
+  );
 
-  const onTimeUpdate = ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
-    const eventTime = Math.floor((target as HTMLAudioElement).currentTime);
-    if (currentTimeRef.current !== eventTime) {
-      setCurrentTime(eventTime);
+  const onTimeUpdate = useCallback(
+    ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
+      const eventTime = Math.floor((target as HTMLAudioElement).currentTime);
+      if (currentTimeRef.current !== eventTime) {
+        setCurrentTime(eventTime);
 
-      const trackingInformation = getTrackingInformation(
-        'audio-player-audio',
-        EventTrigger.Pulse,
-      );
-      fireEvent(trackingInformation);
-    }
-  };
+        const trackingInformation = getTrackingInformation(
+          'audio-player-audio',
+          EventTrigger.Pulse,
+        );
+        fireEvent(trackingInformation);
+      }
+    },
+    [fireEvent, getTrackingInformation, setCurrentTime, currentTimeRef],
+  );
 
   // const onVolumeChange = useCallback(
   //   ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
@@ -313,7 +307,7 @@ export const useAudioFunctions = ({
     },
     onClickBackward,
     onClickForward,
-    onPopoutClick,
+
     togglePlay,
     onChangeSlider,
     // onChangeVolumeSlider,

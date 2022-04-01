@@ -44,8 +44,6 @@ const ThemelessAudioPlayerPlayPauseButton: React.FC<AudioPlayerIconButtonWithSho
       action: toggleAction,
     });
 
-    console.log('rendering play payse button');
-
     return (
       <IconButton
         data-testid="audio-player-play-pause-button"

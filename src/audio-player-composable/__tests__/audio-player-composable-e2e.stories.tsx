@@ -71,13 +71,19 @@ export const AudioPlayerE2E = () => {
                   alignItems="center"
                 >
                   <AudioPlayerSkipPreviousButton
-                    onClick={() => showEvent('skip-previous')}
+                    onClick={() => {
+                      console.log('skip-previous');
+                      showEvent('skip-previous');
+                    }}
                   />
                   <AudioPlayerReplayButton />
                   <AudioPlayerPlayPauseButton />
                   <AudioPlayerForwardButton />
                   <AudioPlayerSkipNextButton
-                    onClick={() => showEvent('skip-next')}
+                    onClick={() => {
+                      console.log('skip-next');
+                      showEvent('skip-next');
+                    }}
                   />
                 </GridLayout>
               </Areas.Controls>

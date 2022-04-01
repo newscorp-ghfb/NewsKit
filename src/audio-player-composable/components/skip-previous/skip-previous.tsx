@@ -7,7 +7,7 @@ import defaults from './defaults';
 import {withOwnTheme} from '../../../utils/with-own-theme';
 import {useButtonOverrides, useKeyboardShortcutsOnButton} from '../../utils';
 
-const defaultKeyboardShortcuts = ['s', 'shift + p'];
+const defaultKeyboardShortcuts = ['shift + p'];
 
 const ThemelessAudioPlayerSkipPreviousButton: React.FC<AudioPlayerIconButtonWithShortcuts> = React.memo(
   props => {
