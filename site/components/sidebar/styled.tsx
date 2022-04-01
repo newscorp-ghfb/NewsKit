@@ -25,19 +25,19 @@ export const StyledLinkItem = styled.div<{
   margin: ${({theme}) => `${theme.spacePresets.space010} 0`};
   text-overflow: ellipsis;
   position: relative;
-  ::after {
+  ::before {
   ${({$selected}) =>
     $selected &&
     `{
           content: "";
           background: #3358CC;
           height: 40px;
-          width: 5px;
+          width: 7px;
           border-radius: 0 5px 5px 0;
           display: block;
           position: absolute;
           top: 0px;
-          left: -25px;
+          left: -27px;
       }
     `}
 `;

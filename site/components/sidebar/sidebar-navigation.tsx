@@ -59,19 +59,19 @@ const MobileSideNavigation = styled.div`
   }
   &.expanded .menu-item,
   &.collapsed .menu-item {
-    border: none !important;
+    border: none;
   }
   &.expanded .menu-item[aria-current='page'] {
-    ::after {
+    ::before {
       content: '';
       background: ${getColorFromTheme('blue060')};
       height: 40px;
-      width: 10px;
+      width: 7px;
       ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
       display: block;
       position: absolute;
       top: 5px;
-      left: -30px;
+      left: -27px;
     }
   }
 `;
