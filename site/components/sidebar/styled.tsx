@@ -4,6 +4,8 @@ import {
   getStylePresetFromTheme,
   getSizingFromTheme,
   getSpacingFromTheme,
+  getColorFromTheme,
+  getBorderCssFromTheme,
 } from 'newskit';
 
 export const StyledLinkItem = styled.div<{
@@ -23,21 +25,20 @@ export const StyledLinkItem = styled.div<{
   margin: ${({theme}) => `${theme.spacePresets.space010} 0`};
   text-overflow: ellipsis;
   position: relative;
-  ::before {
-  ${({$selected}) =>
-    $selected &&
-    `{
-          content: "";
-          background: #3358CC;
-          height: 40px;
-          width: 7px;
-          border-radius: 0 5px 5px 0;
-          display: block;
-          position: absolute;
-          top: 5px;
-          left: -27px;
-      }
-    `}
+
+  &.selected {
+    ::before {
+      content: '';
+      background: ${getColorFromTheme('blue060')};
+      height: ${getSizingFromTheme('sizing070')};
+      width: 7px;
+      ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: -27px;
+    }
+  }
 `;
 
 export const StyledFirstLevelHeader = styled.div`

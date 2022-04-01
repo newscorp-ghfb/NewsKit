@@ -15,6 +15,7 @@ import {
   getSpacingCssFromTheme,
   getBorderCssFromTheme,
   getColorFromTheme,
+  getSizingFromTheme,
 } from 'newskit';
 import {Link} from '../link';
 import routes from '../../routes';
@@ -54,20 +55,16 @@ const MobileSideNavigation = styled.div`
     transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
     transition-delay: 0s;
   }
-  &.expanded .nk-menu-item {
+  &.expanded .selected {
     position: relative;
-  }
-  &.expanded .menu-item,
-  &.collapsed .menu-item {
-    border: none;
-  }
-  &.expanded .menu-item[aria-current='page'] {
+    overflow: visible;
+
     ::before {
       content: '';
       background: ${getColorFromTheme('blue060')};
-      height: 40px;
-      width: 7px;
+      height: ${getSizingFromTheme('sizing070')};
       ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
+      width: 7px;
       display: block;
       position: absolute;
       top: 5px;
@@ -92,7 +89,11 @@ const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
         href={page.id}
         overrides={{stylePreset: 'linkNoUnderline'}}
       >
-        <StyledLinkItem data-testid={page.id} $selected={active}>
+        <StyledLinkItem
+          data-testid={page.id}
+          $selected={active}
+          className={active ? 'selected' : undefined}
+        >
           {page.title}
         </StyledLinkItem>
       </Link>
@@ -190,7 +191,7 @@ const RenderMobileNavigation = ({
                   overrides={menuItemOverrides}
                   selected={path.includes(id)}
                   size="small"
-                  className="menu-item"
+                  className={path.includes(id) ? 'selected' : undefined}
                 >
                   {title}
                 </MenuItem>

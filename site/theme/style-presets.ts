@@ -117,7 +117,7 @@ export const stylePresets = {
       color: '{{colors.inkSubtle}}',
     },
     selected: {
-      color: '{{colors.inkContrast}}',
+      color: '{{colors.interactivePrimary040}}',
     },
   },
   contentsNavItem: {
