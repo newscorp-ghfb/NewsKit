@@ -19,7 +19,11 @@ import {Block} from '../../block';
 import {ButtonSize} from '../../button/types';
 import {Hidden} from '../../grid/visibility';
 import {IconButton} from '../../icon-button';
-import {IconFilledLaunch} from '../../icons';
+import {
+  IconFilledLaunch,
+  IconFilledReplay5,
+  IconFilledForward5,
+} from '../../icons';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-audio-player-theme',
@@ -302,23 +306,31 @@ export const AudioPlayerOverrides = () => (
                   }}
                 />
                 <AudioPlayerReplayButton
+                  seconds={5}
                   overrides={{
                     iconSize: 'iconSize030',
                     stylePreset: 'buttonOutlinedNegative',
                   }}
-                />
+                >
+                  <IconFilledReplay5 />
+                </AudioPlayerReplayButton>
+
                 <AudioPlayerPlayPauseButton
                   overrides={{
                     iconSize: 'iconSize030',
                     stylePreset: 'buttonOutlinedNegative',
                   }}
                 />
+
                 <AudioPlayerForwardButton
+                  seconds={5}
                   overrides={{
                     iconSize: 'iconSize030',
                     stylePreset: 'buttonOutlinedNegative',
                   }}
-                />
+                >
+                  <IconFilledForward5 />
+                </AudioPlayerForwardButton>
                 <AudioPlayerSkipNextButton
                   overrides={{
                     iconSize: 'iconSize030',
