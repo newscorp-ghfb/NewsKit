@@ -12,7 +12,7 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {calculateTime} from '../components/time-display/utils';
-import {GridLayout} from '../../grid-layout';
+import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {AudioPlayerSeekBar} from '../components/seek-bar';
 import {createTheme, ThemeProvider} from '../../theme';
 import {Block} from '../../block';
@@ -156,119 +156,70 @@ export const AudioPlayer = () => (
   </>
 );
 AudioPlayer.storyName = 'audio-player';
-const timeDisplayAreas = `
-  start centre end 
-  start centre end 
-  start centre none 
-
- `;
 export const AudioSubComponents = () => (
   <>
     <StorybookHeading>Audio Player - subcomponents</StorybookHeading>
     <StorybookSubHeading>TimeDisplay</StorybookSubHeading>
+    <br />
+
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
       ariaLandmark="audio player time display"
     >
-      <GridLayout rowGap="20px" areas={timeDisplayAreas}>
-        {Areas => (
-          <>
-            <Areas.Start>
-              <StorybookSubHeading>currentTime</StorybookSubHeading>
-              <AudioPlayerTimeDisplay
-                format={({currentTime}) => calculateTime(currentTime)}
-              />
-            </Areas.Start>
-            <Areas.Centre>
-              <StorybookSubHeading>duration</StorybookSubHeading>
-              <AudioPlayerTimeDisplay
-                format={({duration}) => calculateTime(duration)}
-              />
-            </Areas.Centre>
-            <Areas.End>
-              <StorybookSubHeading>default</StorybookSubHeading>
-              <AudioPlayerTimeDisplay />
-            </Areas.End>
-          </>
-        )}
-      </GridLayout>
-    </AudioPlayerComposable>
-    <br />
+      <GridLayout
+        columns="1fr 1fr 1fr"
+        rows="1fr 1fr 1fr"
+        rowGap="10px"
+        columnGap="20px"
+      >
+        <GridLayoutItem>
+          <StorybookSubHeading>currentTime</StorybookSubHeading>
+          <AudioPlayerTimeDisplay
+            format={({currentTime}) => calculateTime(currentTime)}
+          />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>duration</StorybookSubHeading>
+          <AudioPlayerTimeDisplay
+            format={({duration}) => calculateTime(duration)}
+          />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>default</StorybookSubHeading>
+          <AudioPlayerTimeDisplay />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Play/Pause</StorybookSubHeading>
+          <AudioPlayerPlayPauseButton
+            onClick={() => {
+              console.log('customer click function');
+            }}
+          />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>SkipNext</StorybookSubHeading>
+          <AudioPlayerSkipNextButton
+            onClick={() => console.log('on skip Next track')}
+          />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>SkipPrevious</StorybookSubHeading>
+          <AudioPlayerSkipPreviousButton
+            onClick={() => console.log('on skip Next track')}
+          />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Forward</StorybookSubHeading>
+          <AudioPlayerForwardButton />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Replay</StorybookSubHeading>
 
-    <GridLayout rowGap="20px" areas={timeDisplayAreas}>
-      {Areas => (
-        <>
-          <Areas.Start>
-            <StorybookSubHeading>Play/Pause</StorybookSubHeading>
-            <AudioPlayerComposable
-              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-              ariaLandmark="audio player play pause button"
-            >
-              <AudioPlayerPlayPauseButton
-                onClick={() => {
-                  console.log('customer click function');
-                }}
-              />
-            </AudioPlayerComposable>
-          </Areas.Start>
-          <Areas.Centre>
-            <StorybookSubHeading>SkipNext</StorybookSubHeading>
-            <AudioPlayerComposable
-              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-              ariaLandmark="audio player skip next"
-            >
-              <AudioPlayerSkipNextButton
-                onClick={() => console.log('on skip Next track')}
-              />
-            </AudioPlayerComposable>
-          </Areas.Centre>
-          <Areas.End>
-            <StorybookSubHeading>SkipPrevious</StorybookSubHeading>
-            <AudioPlayerComposable
-              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-              ariaLandmark="audio player skip previous"
-            >
-              <AudioPlayerSkipPreviousButton
-                onClick={() => console.log('on skip Next track')}
-              />
-            </AudioPlayerComposable>
-          </Areas.End>
-        </>
-      )}
-    </GridLayout>
-    <GridLayout rowGap="20px" areas={timeDisplayAreas}>
-      {Areas => (
-        <>
-          <Areas.Start>
-            <StorybookSubHeading>Forward</StorybookSubHeading>
-            <AudioPlayerComposable
-              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-              ariaLandmark="audio player forward"
-            >
-              <AudioPlayerForwardButton />
-            </AudioPlayerComposable>
-          </Areas.Start>
-          <Areas.Centre>
-            <StorybookSubHeading>Replay</StorybookSubHeading>
-            <AudioPlayerComposable
-              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-              ariaLandmark="audio player replay"
-            >
-              <AudioPlayerReplayButton />
-            </AudioPlayerComposable>
-          </Areas.Centre>
-          <Areas.End>
-            <StorybookSubHeading>SeekBar</StorybookSubHeading>{' '}
-            <AudioPlayerComposable
-              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-              ariaLandmark="audio player seek bar"
-            >
-              <AudioPlayerSeekBar />
-            </AudioPlayerComposable>
-          </Areas.End>
-        </>
-      )}
-    </GridLayout>
+          <AudioPlayerReplayButton />
+        </GridLayoutItem>
+      </GridLayout>
+      <StorybookSubHeading>SeekBar</StorybookSubHeading> <AudioPlayerSeekBar />
+    </AudioPlayerComposable>
   </>
 );
 
