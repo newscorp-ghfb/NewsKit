@@ -137,6 +137,27 @@ export const StoryTestingLayerPowers = () => {
 };
 StoryTestingLayerPowers.storyName = 'testing-layer-powers';
 
+const Wrapper = styled.div<{
+  width?: string;
+  height?: string;
+  border?: string;
+  color?: string;
+  offset?: string;
+}>`
+  box-sizing: border-box;
+  position: fixed;
+  top: ${({offset}) => offset || '0%'};
+  left: ${({offset}) => offset || '0%'};
+  width: 300px;
+  heigh: 200px;
+  padding: 20px;
+  ${({color = 'transparent', ...props}) =>
+    getColorCssFromTheme('background', color)(props)};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const StoryBasicLayerOrganizer = () => (
   <>
     {/* <StorybookHeading>Byline</StorybookHeading> */}
@@ -159,16 +180,64 @@ export const StoryBasicLayerOrganizerZindex = () => (
   <>
     {/* <StorybookHeading>Byline</StorybookHeading> */}
     <Box width="300px" height="200px" border="black">
-      <p>This is is the main content</p>
-      <Layer color="purple040">
-        <Box>Layer outside of main content</Box>
-      </Layer>
-      <LayerOrganizer zIndex={3}>
-        <Layer color="purple040">
-          <Box>Layer outside of main content</Box>
-        </Layer>
-      </LayerOrganizer>
+      This is is the main content
     </Box>
+    <Layer>
+      <Wrapper offset="20%" color="amber040">
+        A
+      </Wrapper>
+    </Layer>
+    <LayerOrganizer zIndex={100}>
+      <Layer>
+        <Wrapper offset="22%" color="red040">
+          B1
+        </Wrapper>
+      </Layer>
+      <Layer>
+        <Wrapper offset="24%" color="teal040">
+          B2 should be on top
+        </Wrapper>
+      </Layer>
+    </LayerOrganizer>
+    <Layer>
+      <Wrapper offset="26%" color="green040">
+        C
+      </Wrapper>
+    </Layer>
   </>
 );
 StoryBasicLayerOrganizerZindex.storyName = 'basic layer organizer zindex';
+
+export const StoryNestedLayerOrganizerZindex = () => (
+  <>
+    {/* <StorybookHeading>Byline</StorybookHeading> */}
+    <Box width="300px" height="200px" border="black">
+      This is is the main content
+    </Box>
+    <Layer>
+      <Wrapper offset="20%" color="amber040">
+        A
+      </Wrapper>
+    </Layer>
+    <LayerOrganizer zIndex={1}>
+      <LayerOrganizer zIndex={1}>
+        <Layer>
+          <Wrapper offset="22%" color="red040">
+            B1 should be on top
+          </Wrapper>
+        </Layer>
+      </LayerOrganizer>
+      <Layer>
+        <Wrapper offset="24%" color="teal040">
+          B2
+        </Wrapper>
+      </Layer>
+    </LayerOrganizer>
+    <Layer>
+      <Wrapper offset="26%" color="green040">
+        C
+      </Wrapper>
+    </Layer>
+  </>
+);
+StoryNestedLayerOrganizerZindex.storyName = 'nested layer organizer zindex';
