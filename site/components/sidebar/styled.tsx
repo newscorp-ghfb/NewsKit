@@ -29,12 +29,12 @@ export const StyledLinkItem = styled.div<{
   &.selected {
     ::before {
       position: absolute;
-      left: -28px;
+      left: -${getSizingFromTheme('sizing060')};
       background: ${getColorFromTheme('blue060')};
       height: ${getSizingFromTheme('sizing070')};
-      width: ${getSizingFromTheme('sizing020')};
-      ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
+      width: ${getSizingFromTheme('sizing030')};
       top: ${getSizingFromTheme('sizing000')};
+      ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
     }
   }
 `;

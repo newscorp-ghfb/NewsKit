@@ -62,12 +62,12 @@ const MobileSideNavigation = styled.div`
     ::before {
       content: '';
       position: absolute;
-      left: -28px;
+      left: -${getSizingFromTheme('sizing060')};
       background: ${getColorFromTheme('blue060')};
       height: ${getSizingFromTheme('sizing070')};
-      ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
-      width: ${getSizingFromTheme('sizing020')};
+      width: ${getSizingFromTheme('sizing030')};
       top: ${getSizingFromTheme('sizing010')};
+      ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
     }
   }
 `;
