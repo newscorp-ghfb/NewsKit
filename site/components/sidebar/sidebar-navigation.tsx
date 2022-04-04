@@ -61,14 +61,13 @@ const MobileSideNavigation = styled.div`
 
     ::before {
       content: '';
+      position: absolute;
+      left: -28px;
       background: ${getColorFromTheme('blue060')};
       height: ${getSizingFromTheme('sizing070')};
       ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
-      width: 7px;
-      display: block;
-      position: absolute;
-      top: 5px;
-      left: -27px;
+      width: ${getSizingFromTheme('sizing020')};
+      top: ${getSizingFromTheme('sizing010')};
     }
   }
 `;

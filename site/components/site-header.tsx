@@ -25,6 +25,7 @@ import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
 import routes from '../routes';
 import {Link} from './link';
+import {getBorderRadius} from './theming-values/colors/utils';
 
 const Header = styled.header`
   flex-shrink: 0;
@@ -73,13 +74,11 @@ export const StyledLinkItem = styled.div<{
 
   &.selected {
     ::after {
-      content: '';
+      position: relative;
+      border-radius: ${getBorderRadius({first: true, last: false})};
       background: ${getColorFromTheme('blue060')};
       height: ${getSizingFromTheme('sizing010')};
-      border-radius: 5px 5px 0 0;
-      display: block;
-      position: relative;
-      top: 32px;
+      top: ${getSizingFromTheme('sizing060')};
     }
   }
 `;
