@@ -19,7 +19,14 @@ export const PageTemplate: React.FC<TemplateProps> = ({
   featureCard,
 }) => (
   <>
-    <HeadNextSeo title={headTags.title} description={headTags.description} />
+    <HeadNextSeo
+      title={headTags.title}
+      description={headTags.description}
+      image={{
+        url: headTags.imageUrl!,
+        alt: headTags.alt,
+      }}
+    />
     <WrapperWithPadding>
       <Grid xsRowGutter="space000">
         <IntroductionSection pageIntroduction={pageIntroduction} meta={meta} />

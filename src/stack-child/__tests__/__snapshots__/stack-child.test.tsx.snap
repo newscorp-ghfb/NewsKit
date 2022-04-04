@@ -83,6 +83,22 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -314,6 +330,22 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -543,6 +575,22 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
 
 .emotion-2:active:not(:disabled) {
   border-width: 1px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {

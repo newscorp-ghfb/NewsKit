@@ -4,12 +4,25 @@ exports[`Link does not render the external icon even if the href is external 1`]
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0 svg {
@@ -102,12 +115,25 @@ exports[`Link does not render the external icon if the href is internal 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0 svg {
@@ -200,12 +226,25 @@ exports[`Link renders as expected in default state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0 svg {
@@ -298,12 +337,25 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0 svg {
@@ -395,6 +447,22 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-5 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-5 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-5.emotion-5 {
   width: 16px;
   height: 16px;
@@ -448,12 +516,25 @@ exports[`Link renders the external icon if the href is external 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0 svg {
@@ -546,10 +627,23 @@ exports[`Link renders with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #EF1703;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -624,12 +718,25 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-0 svg {

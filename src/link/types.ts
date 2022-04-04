@@ -1,5 +1,7 @@
 import {MQ} from '../utils/style';
 import {EventData} from '../instrumentation';
+import {LogicalProps} from '../utils/logical-properties';
+import {TransitionToken} from '../theme/types';
 
 export interface BaseLinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
@@ -8,16 +10,19 @@ export interface BaseLinkProps
   href: string;
 }
 
+interface LinkOverrides extends LogicalProps {
+  stylePreset?: MQ<string>;
+  transitionPreset?: TransitionToken | TransitionToken[];
+  typographyPreset?: MQ<string>;
+  spaceInline?: MQ<string>; // Note: LogicalProps can not replace spaceInline! spaceInline = Stack's gap
+  externalIcon?: {
+    size?: string;
+  };
+}
+
 export interface InternalLinkProps extends BaseLinkProps {
   external?: boolean;
-  overrides?: {
-    stylePreset?: MQ<string>;
-    typographyPreset?: MQ<string>;
-    spaceInline?: MQ<string>;
-    externalIcon?: {
-      size?: string;
-    };
-  };
+  overrides?: LinkOverrides;
   noCrop?: boolean;
 }
 

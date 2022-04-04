@@ -275,6 +275,22 @@ exports[`Card renders actions section with given component 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -358,9 +374,6 @@ exports[`Card renders actions section with given component 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -388,6 +401,22 @@ exports[`Card renders actions section with given component 1`] = `
 
 .emotion-11:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-12 {
@@ -647,6 +676,22 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -730,9 +775,6 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -760,6 +802,22 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 
 .emotion-11:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-12 {
@@ -1019,6 +1077,22 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1102,9 +1176,6 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -1132,6 +1203,22 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 
 .emotion-11:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-12 {
@@ -2582,6 +2669,22 @@ exports[`Card renders with card items 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2665,9 +2768,6 @@ exports[`Card renders with card items 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -2695,6 +2795,22 @@ exports[`Card renders with card items 1`] = `
 
 .emotion-15:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-15 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-15 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-16 {
@@ -4542,6 +4658,22 @@ exports[`Card with href renders correctly with actions 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4625,9 +4757,6 @@ exports[`Card with href renders correctly with actions 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -4655,6 +4784,22 @@ exports[`Card with href renders correctly with actions 1`] = `
 
 .emotion-12:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-13 {
@@ -5059,6 +5204,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4 .nk-headline-heading {
+  color: #2E2E2E;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -5176,6 +5322,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   display: inline;
   font: inherit;
   margin: 0;
+  color: #2E2E2E;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -6352,6 +6499,22 @@ exports[`CardInset renders with card items 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6435,9 +6598,6 @@ exports[`CardInset renders with card items 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -6465,6 +6625,22 @@ exports[`CardInset renders with card items 1`] = `
 
 .emotion-15:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-15 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-15 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-16 {

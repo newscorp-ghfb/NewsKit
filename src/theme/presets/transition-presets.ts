@@ -2,7 +2,6 @@ import {TransitionPreset} from './types';
 
 export const transitionPresets: Record<string, TransitionPreset> = {};
 
-// Uncomment lines in PPDSC-1810
 transitionPresets.fontColorChange = {
   base: {
     transitionProperty: 'color',
@@ -11,10 +10,18 @@ transitionPresets.fontColorChange = {
   },
 };
 
+transitionPresets.iconColorChange = {
+  base: {
+    transitionProperty: 'fill',
+    transitionDuration: '{{motions.motionDuration020}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+  },
+};
+
 transitionPresets.backgroundColorChange = {
   base: {
     transitionProperty: 'background-color',
-    transitionDuration: '{{motions.motionDuration030}}',
+    transitionDuration: '{{motions.motionDuration020}}',
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
 };
@@ -22,7 +29,7 @@ transitionPresets.backgroundColorChange = {
 transitionPresets.borderColorChange = {
   base: {
     transitionProperty: 'border-color',
-    transitionDuration: '{{motions.motionDuration050}}',
+    transitionDuration: '{{motions.motionDuration020}}',
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
 };

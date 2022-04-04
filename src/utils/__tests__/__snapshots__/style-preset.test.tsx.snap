@@ -308,7 +308,7 @@ exports[`getStylePresetFromTheme renders with focus state when prop isFocused is
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme renders with hover state when prop isHover is passed 1`] = `
+exports[`getStylePresetFromTheme renders with hover state when prop isHovered is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;

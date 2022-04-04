@@ -35,53 +35,64 @@ export default [
     id: '/getting-started',
     subNav: [
       {
-        title: 'Overview',
+        title: 'Getting started',
         page: true,
         id: '/getting-started/overview',
       },
       {
-        title: 'Instrumentation',
-        page: true,
-        id: '/getting-started/code/instrumentation',
+        title: 'Design',
+        id: '/getting-started/design',
+        subNav: [
+          {
+            title: 'Overview',
+            page: true,
+            id: '/getting-started/design/design-overview',
+            description:
+              'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
+            illustration: 'guides/design-overview/hero',
+          },
+          {
+            title: 'Quickstart',
+            page: true,
+            id: '/getting-started/design/design-quickstart',
+            description:
+              'This page describes how to get started designing a digital product with NewsKit.',
+            illustration: 'guides/design-quickstart/hero',
+          },
+        ],
       },
       {
-        title: 'Testing',
-        page: true,
-        id: '/getting-started/code/testing',
+        title: 'Code',
+        id: '/getting-started/code',
+        subNav: [
+          {
+            title: 'Overview',
+            page: true,
+            id: '/getting-started/code/engineering-overview',
+            description:
+              'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
+            illustration: 'guides/engineering-overview/hero',
+          },
+          {
+            title: 'Quickstart',
+            page: true,
+            id: '/getting-started/code/engineering-quickstart',
+            description:
+              'This page describes how to get started building a web application with NewsKit.',
+            illustration: 'guides/engineering-quickstart/hero',
+          },
+          {
+            title: 'Instrumentation setup',
+            page: true,
+            id: '/getting-started/code/instrumentation',
+          },
+          {
+            title: 'Testing',
+            page: true,
+            id: '/getting-started/code/testing',
+          },
+        ],
       },
-      {
-        title: 'Design Overview',
-        page: true,
-        id: '/getting-started/code/design-overview',
-        description:
-          'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
-        illustration: 'guides/design-overview/hero',
-      },
-      {
-        title: 'Engineering overview',
-        page: true,
-        id: '/getting-started/code/engineering-overview',
-        description:
-          'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
-        illustration: 'guides/engineering-overview/hero',
-      },
-      {
-        title: 'Engineering quickstart',
-        page: true,
-        id: '/getting-started/code/engineering-quickstart',
-        description:
-          'This page describes how to get started building a web application with NewsKit.',
-        illustration: 'guides/engineering-quickstart/hero',
-      },
-      // ToDo: Once design quickstart guide page is ready, need to enable this section.
-      // {
-      //   title: 'Design quickstart guide',
-      //   page: true,
-      //   id: '/getting-started/code/design-quickstart-guide',
-      //   description:
-      //     'To start designing with NewsKit, follow the steps in the quickstart guide.',
-      //   illustration: 'guides/design-overview/design-quickstart',
-      // },
     ],
   },
   {
@@ -200,13 +211,14 @@ export default [
             description:
               'A collection of foundational design tokens combined into a preset to define reusable styles for specific interface elements and their interactive states.',
           },
-          // {
-          //   title: 'Transition Presets',
-          //   page: true,
-          //   id: '/theme/presets/transition-presets',
-          //   illustration: 'theme/transition-presets/hero',
-          //   description: 'A collection of motion styles and states combined into a preset to define reusable motion transition from one state to another for specific interface elements.'
-          // },
+          {
+            title: 'Transition Presets',
+            page: true,
+            id: '/theme/presets/transition-presets',
+            illustration: 'theme/transition-presets/hero',
+            description:
+              'A collection of motion attributes combined into a preset to define reusable motion transition from one state to another.',
+          },
           {
             title: 'Typography Presets',
             page: true,
@@ -280,12 +292,20 @@ export default [
             illustration: 'components/button-illustration',
           },
           {
+            title: 'Checkbox',
+            page: true,
+            id: '/components/checkbox',
+            description:
+              'Checkboxes are selection controls that allow users to select one or multiple items from a group of options. They typically appear in forms.',
+            illustration: 'components/checkbox/hero',
+          },
+          {
             title: 'Form',
             page: true,
             id: '/components/form',
             description:
-              'Used to collect information from users, and to validate fields in certain rules.',
-            illustration: 'components/form-illustration',
+              'Forms allow users to enter and edit text content into a UI.',
+            illustration: 'components/form/hero',
           },
           {
             title: 'Share Bar',
@@ -309,6 +329,22 @@ export default [
             id: '/components/text-input',
             description: 'Lets users enter and edit text.',
             illustration: 'components/text-input-illustration',
+          },
+          {
+            title: 'Select',
+            page: true,
+            id: '/components/select',
+            description:
+              'Select components allow users to select one option from a list.',
+            illustration: 'components/select/select-illustration',
+          },
+          {
+            title: 'Radio Button',
+            page: true,
+            id: '/components/radio-button',
+            description:
+              'Radio Buttons are selection controls that are typically used in forms',
+            illustration: 'components/radio-button/radio-button-illustration',
           },
         ],
       },
@@ -412,6 +448,14 @@ export default [
             description:
               'Used together to construct a visual grid for responsive page layout.',
             illustration: 'components/grid-cell-illustration',
+          },
+          {
+            title: 'Grid Layout',
+            page: true,
+            id: '/components/grid-layout',
+            description:
+              'Used to construct a visual grid for responsive page layout. A Proxy for CSS grid.',
+            illustration: 'static/placeholder-3x2.png',
           },
           {
             title: 'Modal',

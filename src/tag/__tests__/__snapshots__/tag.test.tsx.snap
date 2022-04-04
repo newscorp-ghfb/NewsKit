@@ -53,6 +53,22 @@ exports[`Tag href renders as an anchor 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -179,6 +195,22 @@ exports[`Tag href renders as an anchor and user can pass anchor attributes 1`] =
 
 .emotion-0:active:not(:disabled) {
   border-width: 1px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -309,6 +341,22 @@ exports[`Tag href renders in disable state as a div 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -434,6 +482,22 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
 
 .emotion-0:active:not(:disabled) {
   border-width: 1px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -562,6 +626,22 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -688,6 +768,22 @@ exports[`Tag renders a tag with an icon 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -725,6 +821,22 @@ exports[`Tag renders a tag with an icon 1`] = `
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3.emotion-3 {
@@ -848,6 +960,22 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -885,6 +1013,22 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3.emotion-3 {
@@ -1008,6 +1152,22 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1045,6 +1205,22 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3.emotion-3 {
@@ -1167,6 +1343,22 @@ exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
 
 .emotion-0:active:not(:disabled) {
   border-width: 1px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -1296,6 +1488,22 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1420,6 +1628,22 @@ exports[`Tag renders a tag with no paddings 1`] = `
 
 .emotion-0:active:not(:disabled) {
   border-width: 1px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -1549,6 +1773,22 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1674,6 +1914,22 @@ exports[`Tag renders a tag with percentage for width and height 1`] = `
 
 .emotion-0:active:not(:disabled) {
   border-width: 1px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -1803,6 +2059,22 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1930,6 +2202,22 @@ exports[`Tag renders a tag with token set for width and height 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2054,6 +2342,22 @@ exports[`Tag renders in disabled state 1`] = `
 
 .emotion-0:active:not(:disabled) {
   border-width: 1px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -2183,6 +2487,22 @@ exports[`Tag renders with Large size 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2307,6 +2627,22 @@ exports[`Tag renders with Medium size 1`] = `
 
 .emotion-0:active:not(:disabled) {
   border-width: 1px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -2435,6 +2771,22 @@ exports[`Tag renders with Small size 1`] = `
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2561,6 +2913,22 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
   border-width: 1px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2685,6 +3053,22 @@ exports[`Tag renders with default styles 1`] = `
 
 .emotion-0:active:not(:disabled) {
   border-width: 1px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {

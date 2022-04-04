@@ -217,7 +217,7 @@ const PRINCIPLE_CARDS = [
   },
 ];
 
-export default (layoutProps: LayoutProps) => (
+const Spacing = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
       title: 'Spacing',
@@ -538,3 +538,5 @@ export default (layoutProps: LayoutProps) => (
     </ComponentPageCell>
   </FoundationPageTemplate>
 );
+
+export default Spacing;

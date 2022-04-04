@@ -1,4 +1,5 @@
 import React from 'react';
+import {isFragment} from 'react-is';
 
 // these utility function are copied from https://github.com/fernandopasik/react-children-utilities
 // the library will be added as a dependency with PPDSC-1432 - Add react-children-utilities as dependency
@@ -50,3 +51,18 @@ export const deepMap = (
       return deepMapFn(child, index, mapChildren);
     },
   );
+
+export const childIsString = (child: React.ReactNode): boolean => {
+  if (typeof child === 'string') {
+    return true;
+  }
+  // unpack fragment
+  if (isFragment(child) && typeof child.props.children === 'string') {
+    return true;
+  }
+  return false;
+};
+
+export const childrenIsString = (children: React.ReactNode): boolean =>
+  childIsString(children) ||
+  (Array.isArray(children) && children.some(childIsString));

@@ -11,6 +11,22 @@ exports[`Material icons should render icons with no props IconFilledAccountBalan
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 <svg
     aria-hidden="true"
     class="emotion-0 emotion-1"
@@ -66,6 +82,22 @@ exports[`Material icons should render icons with no props IconFilledAccountTree 
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 <svg
     aria-hidden="true"
     class="emotion-0 emotion-1"
@@ -94,6 +126,22 @@ exports[`Material icons should render icons with no props IconOutlinedAccountBal
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -126,6 +174,22 @@ exports[`Material icons should render icons with no props IconOutlinedAccountTre
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 <svg
     aria-hidden="true"
     class="emotion-0 emotion-1"
@@ -156,9 +220,41 @@ exports[`Material icons should render icons with props IconFilledAccountBalance 
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-0.emotion-0 {
   width: 4px;
   height: 4px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -218,9 +314,41 @@ exports[`Material icons should render icons with props IconFilledAccountTree 1`]
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-0.emotion-0 {
   width: 4px;
   height: 4px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -255,9 +383,41 @@ exports[`Material icons should render icons with props IconOutlinedAccountBalanc
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-0.emotion-0 {
   width: 4px;
   height: 4px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg
@@ -292,9 +452,41 @@ exports[`Material icons should render icons with props IconOutlinedAccountTree 1
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-0.emotion-0 {
   width: 4px;
   height: 4px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <svg

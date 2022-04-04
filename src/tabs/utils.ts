@@ -23,7 +23,7 @@ export const getLayoutParams = (
         // getBoundingClientRect returns the correct value as float
         // but browsers also like to round up the value for the indicator
         // so we end up with example: tab width: 150.67 and indicator width: 151px
-        // which adds 1px to the scroll and make arrows to be visible when then shoud not be
+        // which adds 1px to the scroll and make arrows to be visible when then should not be
         // for that we use Math.floor to round down the value
         // which might make the indicator 1px smaller but prevents 1px scroll
         size: Math.floor(el.getBoundingClientRect().height),

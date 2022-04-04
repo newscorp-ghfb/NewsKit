@@ -1,5 +1,5 @@
 import React from 'react';
-import {fireEvent, act} from '@testing-library/react';
+import {fireEvent, act, waitFor, screen, within} from '@testing-library/react';
 import {useForm} from 'react-hook-form';
 import {Form, FormRef} from '..';
 import {
@@ -18,9 +18,10 @@ import {
   FormInputTextField,
   FormInputSelect,
   FormInputCheckbox,
+  FormInputRadioButton,
 } from '../form-input';
-import {composeEventHandlers} from '../utils';
-import {IconFilledAccountBalance, TextFieldSize} from '../..';
+import {composeEventHandlers} from '../../utils/compose-event-handlers';
+import {IconFilledAccountBalance, RadioGroup, TextFieldSize} from '../..';
 import {SelectOption} from '../../select';
 
 let actualRHF: any;
@@ -193,6 +194,38 @@ describe('Form', () => {
     fireEvent.blur(getByTestId('text-input-email'));
 
     expect(await findByText('Please provide a valid email')).not.toBeNull();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('keeps validation when revalidation mode is onBlur', async () => {
+    const {getByTestId, asFragment} = renderWithImplementation(Form, {
+      ...props,
+      validationMode: 'onBlur',
+      reValidationMode: 'onBlur',
+    });
+
+    const inputEmail = getByTestId('text-input-email') as HTMLInputElement;
+    const inputUsername = getByTestId(
+      'text-input-username',
+    ) as HTMLInputElement;
+
+    fireEvent.blur(inputEmail, {
+      target: {value: 'test@news.co.uk'},
+    });
+    const a = inputEmail.closest('div') as HTMLElement;
+    expect(await within(a).getByTestId('tick-icon')).not.toBeNull();
+
+    fireEvent.blur(inputUsername, {
+      target: {value: 'test'},
+    });
+    fireEvent.blur(inputUsername);
+
+    expect(
+      await within(inputUsername.closest('div') as HTMLElement).getByTestId(
+        'tick-icon',
+      ),
+    ).not.toBeNull();
+
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -454,6 +487,12 @@ describe('FormInput', () => {
       <FormInputAssistiveText validationIcon>
         Checkbox assistive text
       </FormInputAssistiveText>
+
+      <RadioGroup name="radio">
+        <FormInputRadioButton label="Option 1" value="1" />
+        <FormInputRadioButton label="Option 2" value="2" />
+        <FormInputRadioButton label="Option 3" value="2" />
+      </RadioGroup>
     </>
   );
 
@@ -548,10 +587,12 @@ describe('FormInput', () => {
     const fragment = renderToFragmentWithTheme(FormInput, prop);
     expect(fragment).toMatchSnapshot();
   });
+
   test('renders with nested inputs', () => {
     const fragment = renderToFragmentWithTheme(() => formBodyFormInputInvalid);
     expect(fragment).toMatchSnapshot();
   });
+
   test('fireEvent with onBlur valid state', () => {
     const {getByTestId, asFragment} = renderWithImplementation(Form, {
       ...props,
@@ -562,6 +603,7 @@ describe('FormInput', () => {
     });
     expect(asFragment()).toMatchSnapshot();
   });
+
   test('does not call onBlur ', () => {
     const onBlur = jest.fn();
     const prop: FormInputProps = {
@@ -573,6 +615,7 @@ describe('FormInput', () => {
 
     expect(onBlur).toHaveBeenCalledTimes(0);
   });
+
   test('fireEvent with onChange when value is invalid', () => {
     const {getByTestId, asFragment} = renderWithImplementation(Form, {
       ...props,
@@ -584,6 +627,7 @@ describe('FormInput', () => {
     });
     expect(asFragment()).toMatchSnapshot();
   });
+
   test('does not call onChange ', () => {
     const onChange = jest.fn();
     const prop: FormInputProps = {
@@ -597,6 +641,7 @@ describe('FormInput', () => {
 
     expect(onChange).toHaveBeenCalledTimes(0);
   });
+
   test('renders with valid icon', async () => {
     const {getByTestId, findByTestId} = renderWithImplementation(Form, {
       ...props,
@@ -609,6 +654,7 @@ describe('FormInput', () => {
 
     expect(await findByTestId('tick-icon')).not.toBeNull();
   });
+
   test('renders with invalid icon', async () => {
     const {getByTestId, findByTestId} = renderWithImplementation(Form, {
       ...props,
@@ -620,19 +666,27 @@ describe('FormInput', () => {
     });
     expect(await findByTestId('error-icon')).not.toBeNull();
   });
+
   test('test function', () => {
     const theResult = composeEventHandlers();
     expect(typeof theResult).toBe('function');
   });
+
   test('renders with error and with submit validation and revalidation mode ', async () => {
     const {getByRole, asFragment} = renderWithImplementation(Form, {
       ...props,
       reValidationMode: 'onSubmit',
     });
 
-    fireEvent.submit(getByRole('button'));
+    act(() => {
+      fireEvent.submit(getByRole('button'));
+    });
+
+    await waitFor(() => screen.getAllByText(/required field/i));
+
     expect(asFragment()).toMatchSnapshot();
   });
+
   test('renders with invalid icon and trailing icon', async () => {
     const {getByTestId, findByTestId} = renderWithImplementation(Form, {
       ...props,

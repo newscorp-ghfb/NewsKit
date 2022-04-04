@@ -163,9 +163,6 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -193,6 +190,22 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
 
 .emotion-14:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-14 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-14 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-15 {
@@ -350,6 +363,425 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
 </form>
 `;
 
+exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-bottom: 24px;
+}
+
+.emotion-2 {
+  display: block;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-2:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-2::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-2::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-3 {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #23A248;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  caret-color: #0A782A;
+  padding: 12px;
+  min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-4 {
+  padding-right: 40px;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  pointer-events: none;
+  right: 12px;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #0A782A;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
+  fill: #0A782A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-8 {
+  min-height: 12px;
+}
+
+.emotion-18 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
+  margin: 0;
+  cursor: pointer;
+}
+
+.emotion-18 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-18 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-18:hover:not(:disabled) {
+  background-color: #2B4AAB;
+}
+
+.emotion-18:active:not(:disabled) {
+  background-color: #213A82;
+}
+
+.emotion-18:disabled {
+  background-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-18:disabled svg {
+  fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-18 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-18 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-20 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-21 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-21::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-21::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<form
+    novalidate=""
+  >
+    <div
+      class="emotion-0"
+    >
+      <div
+        class="emotion-1"
+      >
+        <label
+          class="emotion-2"
+          for="mock-nk-1"
+        >
+          Email
+        </label>
+        <div
+          class="emotion-3"
+        >
+          <input
+            aria-describedby="mock-nk-1-assistive-text"
+            aria-invalid="false"
+            class="emotion-4"
+            data-testid="text-input-email"
+            id="mock-nk-1"
+            name="email"
+            spellcheck="false"
+            type="text"
+            value="test"
+          />
+          <span
+            class="emotion-5"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              data-testid="tick-icon"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+              />
+            </svg>
+          </span>
+        </div>
+        <div
+          class="emotion-8"
+        />
+      </div>
+    </div>
+    <div
+      class="emotion-0"
+    >
+      <div
+        class="emotion-1"
+      >
+        <label
+          class="emotion-2"
+          for="mock-nk-1"
+        >
+          Username
+        </label>
+        <div
+          class="emotion-3"
+        >
+          <input
+            aria-describedby="mock-nk-1-assistive-text"
+            aria-invalid="false"
+            class="emotion-4"
+            data-testid="text-input-username"
+            id="mock-nk-1"
+            name="username"
+            spellcheck="false"
+            type="text"
+          />
+          <span
+            class="emotion-5"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              data-testid="tick-icon"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+              />
+            </svg>
+          </span>
+        </div>
+        <div
+          class="emotion-8"
+        />
+      </div>
+    </div>
+    <button
+      class="emotion-18"
+      data-testid="submit-button"
+      type="submit"
+    >
+      <div
+        class="emotion-19"
+      >
+        <div
+          class="emotion-20"
+        >
+          <span
+            class="emotion-21"
+          >
+            Submit
+          </span>
+        </div>
+      </div>
+    </button>
+  </form>
+</DocumentFragment>
+`;
+
 exports[`Form renders with error and with submit validation and revalidation mode  1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -468,10 +900,42 @@ exports[`Form renders with error and with submit validation and revalidation mod
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-6.emotion-6 {
   width: 24px;
   height: 24px;
   fill: #D20600;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-8 {
@@ -531,9 +995,6 @@ exports[`Form renders with error and with submit validation and revalidation mod
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -561,6 +1022,22 @@ exports[`Form renders with error and with submit validation and revalidation mod
 
 .emotion-20:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-20 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-20 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-21 {
@@ -883,10 +1360,42 @@ exports[`Form renders with error on blur 1`] = `
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-6.emotion-6 {
   width: 24px;
   height: 24px;
   fill: #D20600;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-8 {
@@ -1036,9 +1545,6 @@ exports[`Form renders with error on blur 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -1066,6 +1572,22 @@ exports[`Form renders with error on blur 1`] = `
 
 .emotion-17:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-17 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-17 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-18 {
@@ -1365,10 +1887,42 @@ exports[`Form renders with error on submit 1`] = `
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-6.emotion-6 {
   width: 24px;
   height: 24px;
   fill: #D20600;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-8 {
@@ -1428,9 +1982,6 @@ exports[`Form renders with error on submit 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -1458,6 +2009,22 @@ exports[`Form renders with error on submit 1`] = `
 
 .emotion-20:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-20 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-20 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-21 {
@@ -1780,10 +2347,42 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-6.emotion-6 {
   width: 24px;
   height: 24px;
   fill: #D20600;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-8 {
@@ -1933,9 +2532,6 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -1963,6 +2559,22 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 
 .emotion-17:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-17 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-17 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-18 {
@@ -2525,9 +3137,6 @@ exports[`Form renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -2555,6 +3164,22 @@ exports[`Form renders with nested inputs 1`] = `
 
 .emotion-14:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-14 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-14 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-15 {
@@ -2877,9 +3502,6 @@ exports[`Form renders with onBlur validation 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -2907,6 +3529,22 @@ exports[`Form renders with onBlur validation 1`] = `
 
 .emotion-14:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-14 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-14 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-15 {
@@ -3111,6 +3749,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -3119,7 +3758,6 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-1 svg {
@@ -3231,6 +3869,22 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
@@ -3250,8 +3904,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-6:disabled {
@@ -3354,7 +4008,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   display: flex;
 }
 
-.emotion-20 {
+.emotion-19 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -3375,7 +4029,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   max-height: 272px;
 }
 
-.emotion-23 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3388,7 +4042,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-24 {
+.emotion-23 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -3402,16 +4056,17 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   margin-right: 12px;
 }
 
-.emotion-24 * {
+.emotion-23 * {
   box-sizing: border-box;
 }
 
-.emotion-25 {
+.emotion-24 {
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -3420,11 +4075,35 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-25:focus:not(:disabled) {
+.emotion-24:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-24:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-24:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-24:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-24:focus:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-26 {
+.emotion-24:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-24:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-25 {
   position: absolute;
   top: 0;
   left: 0;
@@ -3442,127 +4121,147 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
 }
 
-.emotion-26 svg {
+.emotion-25 svg {
   fill: #FFFFFF;
 }
 
-.emotion-26:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-26:focus:not(:disabled) {
+.emotion-25:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-26:focus:hover:not(:disabled) {
+.emotion-25:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-26:checked:not(:disabled) {
+.emotion-25:checked:not(:disabled) {
   background-color: #3358CC;
   border-color: #3358CC;
 }
 
-.emotion-26:checked:hover:not(:disabled) {
+.emotion-25:checked:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-26:checked:focus:not(:disabled) {
+.emotion-25:checked:focus:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+.emotion-25:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-26:checked:focus:hover:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
-}
-
-.emotion-26:invalid:focus:not(:disabled) {
+.emotion-25:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-26:invalid:hover:not(:disabled) {
+.emotion-25:invalid:focus:not(:disabled) {
+  border-color: #D20600;
+}
+
+.emotion-25:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-26:invalid:focus:hover:not(:disabled) {
-  border-color: #A60100;
-}
-
-.emotion-26:checked:invalid:not(:disabled) {
+.emotion-25:checked:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-26:checked:invalid:focus:not(:disabled) {
+.emotion-25:checked:invalid:focus:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-25:checked:invalid:hover:not(:disabled) {
   background-color: #A60100;
   border-color: #A60100;
 }
 
-.emotion-26:checked:invalid:hover:not(:disabled) {
+.emotion-25:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
   border-color: #A60100;
 }
 
-.emotion-26:checked:invalid:focus:hover:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-26:valid:focus:not(:disabled) {
+.emotion-25:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-26:valid:hover:not(:disabled) {
+.emotion-25:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
+}
+
+.emotion-25:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-26:valid:focus:hover:not(:disabled) {
-  border-color: #0A782A;
-}
-
-.emotion-26:checked:valid:not(:disabled) {
+.emotion-25:checked:valid:not(:disabled) {
   background-color: #148F39;
   border-color: #148F39;
 }
 
-.emotion-26:checked:valid:focus:not(:disabled) {
+.emotion-25:checked:valid:focus:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-25:checked:valid:hover:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-26:checked:valid:hover:not(:disabled) {
+.emotion-25:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-26:checked:valid:focus:hover:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
-}
-
-.emotion-26:disabled {
+.emotion-25:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
-.emotion-26:checked:disabled:not(:disabled) {
+.emotion-25:checked:disabled:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-26:checked:disabled:not(:disabled) svg {
+.emotion-25:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-27 {
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-25 {
+    transition-property: background-color,border-color;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-25 {
+    transition-property: background-color,border-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-26 {
   position: absolute;
   top: 0;
   left: 0;
@@ -3573,7 +4272,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   cursor: inherit;
 }
 
-.emotion-28 {
+.emotion-27 {
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -3582,8 +4281,250 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-28:disabled {
+.emotion-27:disabled {
   color: #C0C0C0;
+}
+
+.emotion-32 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.7;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-32:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-32:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-32:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-32:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-32:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-32:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-32:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-33 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FAFAFA;
+  border-color: #CCCCCC;
+  border-width: 2px;
+  border-radius: 50%;
+  border-style: solid;
+}
+
+.emotion-33:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-33:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-33:checked:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-33:checked:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-33:checked:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-33:checked:hover:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
+.emotion-33:checked:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-33:checked:focus:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-33:checked:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-33:checked:focus:hover:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
+.emotion-33:invalid:focus:not(:disabled) {
+  border-color: #D20600;
+}
+
+.emotion-33:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-33:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-33:checked:invalid:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #D20600;
+}
+
+.emotion-33:checked:invalid:not(:disabled) svg {
+  fill: #D20600;
+}
+
+.emotion-33:checked:invalid:focus:not(:disabled) {
+  border-color: #D20600;
+}
+
+.emotion-33:checked:invalid:focus:not(:disabled) svg {
+  fill: #D20600;
+}
+
+.emotion-33:checked:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-33:checked:invalid:hover:not(:disabled) svg {
+  fill: #A60100;
+}
+
+.emotion-33:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-33:checked:invalid:focus:hover:not(:disabled) svg {
+  fill: #A60100;
+}
+
+.emotion-33:valid:focus:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-33:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-33:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-33:checked:valid:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
+}
+
+.emotion-33:checked:valid:not(:disabled) svg {
+  fill: #148F39;
+}
+
+.emotion-33:checked:valid:focus:not(:disabled) {
+  border-color: #148F39;
+}
+
+.emotion-33:checked:valid:focus:not(:disabled) svg {
+  fill: #148F39;
+}
+
+.emotion-33:checked:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-33:checked:valid:hover:not(:disabled) svg {
+  fill: #0A782A;
+}
+
+.emotion-33:checked:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-33:checked:valid:focus:hover:not(:disabled) svg {
+  fill: #0A782A;
+}
+
+.emotion-33:disabled {
+  background-color: transparent;
+  border-color: #F4F4F4;
+}
+
+.emotion-33:checked:disabled:not(:disabled) {
+  background-color: transparent;
+  border-color: #F4F4F4;
+}
+
+.emotion-33:checked:disabled:not(:disabled) svg {
+  fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-33 {
+    transition-property: background-color,border-color,fill;
+    transition-duration: 200ms,200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-33 {
+    transition-property: background-color,border-color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <form
@@ -3733,18 +4674,11 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
         </div>
       </div>
     </div>
-    <span
-      class="emotion-10"
-      id="mock-nk-1"
-    >
-      Press down arrow key to navigate to the first item
-    </span>
     <div
-      aria-describedby="mock-nk-1"
-      aria-labelledby="downshift-2-label"
-      class="emotion-20"
+      aria-labelledby="downshift-3-label"
+      class="emotion-19"
       data-testid="select-panel"
-      id="downshift-2-menu"
+      id="downshift-3-menu"
       role="listbox"
       tabindex="-1"
     />
@@ -3759,22 +4693,23 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
       </p>
     </div>
     <label
-      class="emotion-23"
+      class="emotion-22"
     >
       <div
-        class="emotion-24"
+        class="emotion-23"
         role="presentation"
       >
         <div
-          class="emotion-25"
+          class="emotion-24"
           data-testid="checkbox-feedback"
         />
         <div
-          class="emotion-26"
+          class="emotion-25"
         >
           <input
             aria-describedby="email-assistive-text"
-            class="emotion-27"
+            class="emotion-26"
+            data-testid="checkbox-input"
             id="email"
             name="email"
             type="checkbox"
@@ -3783,7 +4718,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
         </div>
       </div>
       <span
-        class="emotion-28"
+        class="emotion-27"
       >
         Checkbox
       </span>
@@ -3797,6 +4732,101 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
       >
         Checkbox assistive text
       </p>
+    </div>
+    <div>
+      <label
+        class="emotion-22"
+      >
+        <div
+          class="emotion-23"
+          role="presentation"
+        >
+          <div
+            class="emotion-32"
+            data-testid="radio-feedback"
+          />
+          <div
+            class="emotion-33"
+          >
+            <input
+              aria-describedby="email-assistive-text"
+              class="emotion-26"
+              data-testid="radio-input"
+              id="email"
+              name="email"
+              type="radio"
+              value="1"
+            />
+          </div>
+        </div>
+        <span
+          class="emotion-27"
+        >
+          Option 1
+        </span>
+      </label>
+      <label
+        class="emotion-22"
+      >
+        <div
+          class="emotion-23"
+          role="presentation"
+        >
+          <div
+            class="emotion-32"
+            data-testid="radio-feedback"
+          />
+          <div
+            class="emotion-33"
+          >
+            <input
+              aria-describedby="email-assistive-text"
+              class="emotion-26"
+              data-testid="radio-input"
+              id="email"
+              name="email"
+              type="radio"
+              value="2"
+            />
+          </div>
+        </div>
+        <span
+          class="emotion-27"
+        >
+          Option 2
+        </span>
+      </label>
+      <label
+        class="emotion-22"
+      >
+        <div
+          class="emotion-23"
+          role="presentation"
+        >
+          <div
+            class="emotion-32"
+            data-testid="radio-feedback"
+          />
+          <div
+            class="emotion-33"
+          >
+            <input
+              aria-describedby="email-assistive-text"
+              class="emotion-26"
+              data-testid="radio-input"
+              id="email"
+              name="email"
+              type="radio"
+              value="2"
+            />
+          </div>
+        </div>
+        <span
+          class="emotion-27"
+        >
+          Option 3
+        </span>
+      </label>
     </div>
   </form>
 </DocumentFragment>
@@ -3848,6 +4878,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -3856,7 +4887,6 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-1 svg {
@@ -3968,6 +4998,22 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
@@ -3987,8 +5033,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-6:disabled {
@@ -4091,7 +5137,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   display: flex;
 }
 
-.emotion-20 {
+.emotion-19 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -4112,7 +5158,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   max-height: 272px;
 }
 
-.emotion-23 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4125,7 +5171,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-24 {
+.emotion-23 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -4139,16 +5185,17 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   margin-right: 12px;
 }
 
-.emotion-24 * {
+.emotion-23 * {
   box-sizing: border-box;
 }
 
-.emotion-25 {
+.emotion-24 {
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -4157,11 +5204,35 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-25:focus:not(:disabled) {
+.emotion-24:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-24:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-24:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-24:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-24:focus:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-26 {
+.emotion-24:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-24:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-25 {
   position: absolute;
   top: 0;
   left: 0;
@@ -4179,127 +5250,147 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
 }
 
-.emotion-26 svg {
+.emotion-25 svg {
   fill: #FFFFFF;
 }
 
-.emotion-26:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-26:focus:not(:disabled) {
+.emotion-25:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-26:focus:hover:not(:disabled) {
+.emotion-25:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-26:checked:not(:disabled) {
+.emotion-25:checked:not(:disabled) {
   background-color: #3358CC;
   border-color: #3358CC;
 }
 
-.emotion-26:checked:hover:not(:disabled) {
+.emotion-25:checked:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-26:checked:focus:not(:disabled) {
+.emotion-25:checked:focus:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+.emotion-25:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-26:checked:focus:hover:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
-}
-
-.emotion-26:invalid:focus:not(:disabled) {
+.emotion-25:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-26:invalid:hover:not(:disabled) {
+.emotion-25:invalid:focus:not(:disabled) {
+  border-color: #D20600;
+}
+
+.emotion-25:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-26:invalid:focus:hover:not(:disabled) {
-  border-color: #A60100;
-}
-
-.emotion-26:checked:invalid:not(:disabled) {
+.emotion-25:checked:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-26:checked:invalid:focus:not(:disabled) {
+.emotion-25:checked:invalid:focus:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-25:checked:invalid:hover:not(:disabled) {
   background-color: #A60100;
   border-color: #A60100;
 }
 
-.emotion-26:checked:invalid:hover:not(:disabled) {
+.emotion-25:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
   border-color: #A60100;
 }
 
-.emotion-26:checked:invalid:focus:hover:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
-}
-
-.emotion-26:valid:focus:not(:disabled) {
+.emotion-25:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-26:valid:hover:not(:disabled) {
+.emotion-25:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
+}
+
+.emotion-25:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-26:valid:focus:hover:not(:disabled) {
-  border-color: #0A782A;
-}
-
-.emotion-26:checked:valid:not(:disabled) {
+.emotion-25:checked:valid:not(:disabled) {
   background-color: #148F39;
   border-color: #148F39;
 }
 
-.emotion-26:checked:valid:focus:not(:disabled) {
+.emotion-25:checked:valid:focus:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-25:checked:valid:hover:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-26:checked:valid:hover:not(:disabled) {
+.emotion-25:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-26:checked:valid:focus:hover:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
-}
-
-.emotion-26:disabled {
+.emotion-25:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
-.emotion-26:checked:disabled:not(:disabled) {
+.emotion-25:checked:disabled:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-26:checked:disabled:not(:disabled) svg {
+.emotion-25:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-27 {
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-25 {
+    transition-property: background-color,border-color;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-25 {
+    transition-property: background-color,border-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-26 {
   position: absolute;
   top: 0;
   left: 0;
@@ -4310,7 +5401,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   cursor: inherit;
 }
 
-.emotion-28 {
+.emotion-27 {
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -4319,8 +5410,250 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-28:disabled {
+.emotion-27:disabled {
   color: #C0C0C0;
+}
+
+.emotion-32 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.7;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-32:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-32:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-32:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-32:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-32:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-32:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-32:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-33 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FAFAFA;
+  border-color: #CCCCCC;
+  border-width: 2px;
+  border-radius: 50%;
+  border-style: solid;
+}
+
+.emotion-33:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-33:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-33:checked:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-33:checked:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-33:checked:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-33:checked:hover:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
+.emotion-33:checked:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-33:checked:focus:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-33:checked:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-33:checked:focus:hover:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
+.emotion-33:invalid:focus:not(:disabled) {
+  border-color: #D20600;
+}
+
+.emotion-33:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-33:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-33:checked:invalid:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #D20600;
+}
+
+.emotion-33:checked:invalid:not(:disabled) svg {
+  fill: #D20600;
+}
+
+.emotion-33:checked:invalid:focus:not(:disabled) {
+  border-color: #D20600;
+}
+
+.emotion-33:checked:invalid:focus:not(:disabled) svg {
+  fill: #D20600;
+}
+
+.emotion-33:checked:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-33:checked:invalid:hover:not(:disabled) svg {
+  fill: #A60100;
+}
+
+.emotion-33:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-33:checked:invalid:focus:hover:not(:disabled) svg {
+  fill: #A60100;
+}
+
+.emotion-33:valid:focus:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-33:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-33:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-33:checked:valid:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
+}
+
+.emotion-33:checked:valid:not(:disabled) svg {
+  fill: #148F39;
+}
+
+.emotion-33:checked:valid:focus:not(:disabled) {
+  border-color: #148F39;
+}
+
+.emotion-33:checked:valid:focus:not(:disabled) svg {
+  fill: #148F39;
+}
+
+.emotion-33:checked:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-33:checked:valid:hover:not(:disabled) svg {
+  fill: #0A782A;
+}
+
+.emotion-33:checked:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-33:checked:valid:focus:hover:not(:disabled) svg {
+  fill: #0A782A;
+}
+
+.emotion-33:disabled {
+  background-color: transparent;
+  border-color: #F4F4F4;
+}
+
+.emotion-33:checked:disabled:not(:disabled) {
+  background-color: transparent;
+  border-color: #F4F4F4;
+}
+
+.emotion-33:checked:disabled:not(:disabled) svg {
+  fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-33 {
+    transition-property: background-color,border-color,fill;
+    transition-duration: 200ms,200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-33 {
+    transition-property: background-color,border-color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 <form
@@ -4470,18 +5803,11 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
         </div>
       </div>
     </div>
-    <span
-      class="emotion-10"
-      id="mock-nk-1"
-    >
-      Press down arrow key to navigate to the first item
-    </span>
     <div
-      aria-describedby="mock-nk-1"
-      aria-labelledby="downshift-6-label"
-      class="emotion-20"
+      aria-labelledby="downshift-9-label"
+      class="emotion-19"
       data-testid="select-panel"
-      id="downshift-6-menu"
+      id="downshift-9-menu"
       role="listbox"
       tabindex="-1"
     />
@@ -4496,22 +5822,23 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
       </p>
     </div>
     <label
-      class="emotion-23"
+      class="emotion-22"
     >
       <div
-        class="emotion-24"
+        class="emotion-23"
         role="presentation"
       >
         <div
-          class="emotion-25"
+          class="emotion-24"
           data-testid="checkbox-feedback"
         />
         <div
-          class="emotion-26"
+          class="emotion-25"
         >
           <input
             aria-describedby="email-assistive-text"
-            class="emotion-27"
+            class="emotion-26"
+            data-testid="checkbox-input"
             id="email"
             name="email"
             type="checkbox"
@@ -4520,7 +5847,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
         </div>
       </div>
       <span
-        class="emotion-28"
+        class="emotion-27"
       >
         Checkbox
       </span>
@@ -4534,6 +5861,101 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
       >
         Checkbox assistive text
       </p>
+    </div>
+    <div>
+      <label
+        class="emotion-22"
+      >
+        <div
+          class="emotion-23"
+          role="presentation"
+        >
+          <div
+            class="emotion-32"
+            data-testid="radio-feedback"
+          />
+          <div
+            class="emotion-33"
+          >
+            <input
+              aria-describedby="email-assistive-text"
+              class="emotion-26"
+              data-testid="radio-input"
+              id="email"
+              name="email"
+              type="radio"
+              value="1"
+            />
+          </div>
+        </div>
+        <span
+          class="emotion-27"
+        >
+          Option 1
+        </span>
+      </label>
+      <label
+        class="emotion-22"
+      >
+        <div
+          class="emotion-23"
+          role="presentation"
+        >
+          <div
+            class="emotion-32"
+            data-testid="radio-feedback"
+          />
+          <div
+            class="emotion-33"
+          >
+            <input
+              aria-describedby="email-assistive-text"
+              class="emotion-26"
+              data-testid="radio-input"
+              id="email"
+              name="email"
+              type="radio"
+              value="2"
+            />
+          </div>
+        </div>
+        <span
+          class="emotion-27"
+        >
+          Option 2
+        </span>
+      </label>
+      <label
+        class="emotion-22"
+      >
+        <div
+          class="emotion-23"
+          role="presentation"
+        >
+          <div
+            class="emotion-32"
+            data-testid="radio-feedback"
+          />
+          <div
+            class="emotion-33"
+          >
+            <input
+              aria-describedby="email-assistive-text"
+              class="emotion-26"
+              data-testid="radio-input"
+              id="email"
+              name="email"
+              type="radio"
+              value="2"
+            />
+          </div>
+        </div>
+        <span
+          class="emotion-27"
+        >
+          Option 3
+        </span>
+      </label>
     </div>
   </form>
 </DocumentFragment>
@@ -4592,6 +6014,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -4600,7 +6023,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -4712,6 +6134,22 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-3.emotion-3 {
   width: 24px;
   height: 24px;
@@ -4790,8 +6228,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -4889,6 +6327,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -4897,7 +6336,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -5032,6 +6470,22 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-8.emotion-8 {
   width: 24px;
   height: 24px;
@@ -5098,24 +6552,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
     </div>
   </div>
   .emotion-0 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-<span
-    class="emotion-0"
-    id="mock-nk-1"
-  >
-    Press down arrow key to navigate to the first item
-  </span>
-  .emotion-0 {
   position: absolute;
   height: auto;
   overflow-x: hidden;
@@ -5137,7 +6573,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 <div
-    aria-describedby="mock-nk-1"
     aria-labelledby="downshift-0-label"
     class="emotion-0"
     data-testid="select-panel"
@@ -5159,8 +6594,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -5242,8 +6677,9 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0.7;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5252,8 +6688,32 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
 .emotion-2:focus:not(:disabled) {
   background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
 }
 
 .emotion-3 {
@@ -5274,9 +6734,9 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-color: #CCCCCC;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 4px;
   border-style: solid;
 }
@@ -5286,14 +6746,12 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #3358CC;
-}
-
-.emotion-3:focus:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
 .emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
@@ -5308,8 +6766,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:checked:focus:not(:disabled) {
-  background-color: #2B4AAB;
-  border-color: #2B4AAB;
+  background-color: #3358CC;
+  border-color: #3358CC;
 }
 
 .emotion-3:checked:focus:hover:not(:disabled) {
@@ -5317,15 +6775,17 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   border-color: #2B4AAB;
 }
 
-.emotion-3:invalid:focus:not(:disabled) {
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #A60100;
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #D20600;
 }
 
 .emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
   border-color: #A60100;
 }
 
@@ -5335,8 +6795,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:checked:invalid:focus:not(:disabled) {
-  background-color: #A60100;
-  border-color: #A60100;
+  background-color: #D20600;
+  border-color: #D20600;
 }
 
 .emotion-3:checked:invalid:hover:not(:disabled) {
@@ -5349,15 +6809,18 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   border-color: #A60100;
 }
 
-.emotion-3:valid:focus:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #0A782A;
+.emotion-3:valid:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
 }
 
 .emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
@@ -5367,8 +6830,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:checked:valid:focus:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
 .emotion-3:checked:valid:hover:not(:disabled) {
@@ -5382,6 +6845,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-3:disabled {
+  background-color: transparent;
   border-color: #F4F4F4;
 }
 
@@ -5392,6 +6856,22 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 
 .emotion-3:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color,border-color;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color,border-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-4 {
@@ -5435,6 +6915,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
         <input
           aria-describedby="email-assistive-text"
           class="emotion-4"
+          data-testid="checkbox-input"
           id="email"
           name="email"
           type="checkbox"
@@ -5462,8 +6943,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -5509,6 +6990,398 @@ exports[`FormInput renders FormInput Correctly 1`] = `
     >
       Checkbox assistive text
     </p>
+  </div>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.emotion-1 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.7;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-2:valid:focus:not(:disabled) {
+  background-color: #E6FAEB;
+}
+
+.emotion-2:invalid:focus:not(:disabled) {
+  background-color: #FFE6E5;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FAFAFA;
+  border-color: #CCCCCC;
+  border-width: 2px;
+  border-radius: 50%;
+  border-style: solid;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-3:checked:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-3:checked:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:hover:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
+.emotion-3:checked:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-3:checked:focus:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-3:checked:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus:hover:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #D20600;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #D20600;
+}
+
+.emotion-3:checked:invalid:not(:disabled) svg {
+  fill: #D20600;
+}
+
+.emotion-3:checked:invalid:focus:not(:disabled) {
+  border-color: #D20600;
+}
+
+.emotion-3:checked:invalid:focus:not(:disabled) svg {
+  fill: #D20600;
+}
+
+.emotion-3:checked:invalid:hover:not(:disabled) {
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:hover:not(:disabled) svg {
+  fill: #A60100;
+}
+
+.emotion-3:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #FFE6E5;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:focus:hover:not(:disabled) svg {
+  fill: #A60100;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:not(:disabled) svg {
+  fill: #148F39;
+}
+
+.emotion-3:checked:valid:focus:not(:disabled) {
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:focus:not(:disabled) svg {
+  fill: #148F39;
+}
+
+.emotion-3:checked:valid:hover:not(:disabled) {
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:hover:not(:disabled) svg {
+  fill: #0A782A;
+}
+
+.emotion-3:checked:valid:focus:hover:not(:disabled) {
+  background-color: #E6FAEB;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:focus:hover:not(:disabled) svg {
+  fill: #0A782A;
+}
+
+.emotion-3:disabled {
+  background-color: transparent;
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) {
+  background-color: transparent;
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) svg {
+  fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color,border-color,fill;
+    transition-duration: 200ms,200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color,border-color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
+}
+
+<div>
+    <label
+      class="emotion-0"
+    >
+      <div
+        class="emotion-1"
+        role="presentation"
+      >
+        <div
+          class="emotion-2"
+          data-testid="radio-feedback"
+        />
+        <div
+          class="emotion-3"
+        >
+          <input
+            aria-describedby="email-assistive-text"
+            class="emotion-4"
+            data-testid="radio-input"
+            id="email"
+            name="email"
+            type="radio"
+            value="1"
+          />
+        </div>
+      </div>
+      <span
+        class="emotion-5"
+      >
+        Option 1
+      </span>
+    </label>
+    <label
+      class="emotion-0"
+    >
+      <div
+        class="emotion-1"
+        role="presentation"
+      >
+        <div
+          class="emotion-2"
+          data-testid="radio-feedback"
+        />
+        <div
+          class="emotion-3"
+        >
+          <input
+            aria-describedby="email-assistive-text"
+            class="emotion-4"
+            data-testid="radio-input"
+            id="email"
+            name="email"
+            type="radio"
+            value="2"
+          />
+        </div>
+      </div>
+      <span
+        class="emotion-5"
+      >
+        Option 2
+      </span>
+    </label>
+    <label
+      class="emotion-0"
+    >
+      <div
+        class="emotion-1"
+        role="presentation"
+      >
+        <div
+          class="emotion-2"
+          data-testid="radio-feedback"
+        />
+        <div
+          class="emotion-3"
+        >
+          <input
+            aria-describedby="email-assistive-text"
+            class="emotion-4"
+            data-testid="radio-input"
+            id="email"
+            name="email"
+            type="radio"
+            value="2"
+          />
+        </div>
+      </div>
+      <span
+        class="emotion-5"
+      >
+        Option 3
+      </span>
+    </label>
   </div>
 </DocumentFragment>
 `;
@@ -5559,57 +7432,19 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
-  background-color: transparent;
+  background-color: #FAFAFA;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #3358CC;
   border-width: 1px;
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-1 svg {
   fill: #2E2E2E;
-}
-
-.emotion-1:focus:not(:disabled) {
-  border-color: #3358CC;
-  background-color: #FAFAFA;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-1:valid:hover:not(:disabled) {
-  border-color: #23A248;
-  background-color: #FAFAFA;
-}
-
-.emotion-1:valid:focus:not(:disabled) {
-  border-color: #3358CC;
-  background-color: #FAFAFA;
-}
-
-.emotion-1:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-1:disabled svg {
-  fill: #C0C0C0;
-}
-
-.emotion-1:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
-  background-color: #FAFAFA;
-}
-
-.emotion-1:invalid:hover:not(:disabled) {
-  border-color: #EF1703;
-  background-color: #FAFAFA;
 }
 
 .emotion-2 {
@@ -5674,17 +7509,84 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E2E2E;
+  fill: #D20600;
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
+  fill: #D20600;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4.emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4.emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-6 {
+  margin-right: 8px;
+}
+
+.emotion-7 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-7.emotion-7 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5698,20 +7600,16 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #D20600;
 }
 
-.emotion-6:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-7 {
+.emotion-10 {
   margin: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: #535353;
+  color: #D20600;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -5720,23 +7618,59 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   padding: 0.5px 0px;
 }
 
-.emotion-7:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-7::before {
+.emotion-10::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-7::after {
+.emotion-10::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-13 {
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #EF1703;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+}
+
+.emotion-12 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-12:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-12:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-19 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5766,39 +7700,52 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-13 svg {
+.emotion-19 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-13 svg {
+.emotion-19 svg {
   fill: #FFFFFF;
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-19:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-13:active:not(:disabled) {
+.emotion-19:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-13:disabled {
+.emotion-19:disabled {
   background-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-13:disabled svg {
+.emotion-19:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-14 {
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-19 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-19 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5819,7 +7766,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   margin-right: calc(-8px/2);
 }
 
-.emotion-15 {
+.emotion-21 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5828,7 +7775,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   margin-right: calc(8px/2);
 }
 
-.emotion-16 {
+.emotion-22 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -5839,13 +7786,13 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   display: inline-block;
 }
 
-.emotion-16::before {
+.emotion-22::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-16::after {
+.emotion-22::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -5865,8 +7812,8 @@ exports[`FormInput renders with error and with submit validation and revalidatio
       class="emotion-1"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
-        aria-invalid="false"
+        aria-describedby="mock-nk-1-error-text"
+        aria-invalid="true"
         aria-required="true"
         class="emotion-2"
         data-testid="text-field-email"
@@ -5880,6 +7827,28 @@ exports[`FormInput renders with error and with submit validation and revalidatio
         <svg
           aria-hidden="true"
           class="emotion-4 emotion-5"
+          data-testid="error-icon"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+          />
+        </svg>
+         
+        <div
+          class="emotion-6"
+        />
+         
+        <svg
+          aria-hidden="true"
+          class="emotion-7 emotion-5"
           fill="currentColor"
           focusable="false"
           viewBox="0 0 24 24"
@@ -5918,16 +7887,19 @@ exports[`FormInput renders with error and with submit validation and revalidatio
             points="12,1 2,6 2,8 22,8 22,6"
           />
         </svg>
+         
       </div>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-9"
     >
       <p
-        class="emotion-7"
-        id="mock-nk-1-assistive-text"
+        aria-live="polite"
+        class="emotion-10"
+        id="mock-nk-1-error-text"
+        role="alert"
       >
-        Assistive Text
+        Required field
       </p>
     </div>
     <label
@@ -5938,11 +7910,11 @@ exports[`FormInput renders with error and with submit validation and revalidatio
       Username
     </label>
     <div
-      class="emotion-1"
+      class="emotion-12"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
-        aria-invalid="false"
+        aria-describedby="mock-nk-1-error-text"
+        aria-invalid="true"
         aria-required="true"
         class="emotion-2"
         data-testid="text-field-username"
@@ -5950,30 +7922,53 @@ exports[`FormInput renders with error and with submit validation and revalidatio
         name="username"
         type="text"
       />
+      <div
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          data-testid="error-icon"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+          />
+        </svg>
+      </div>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-9"
     >
       <p
-        class="emotion-7"
-        id="mock-nk-1-assistive-text"
+        aria-live="polite"
+        class="emotion-10"
+        id="mock-nk-1-error-text"
+        role="alert"
       >
-        Assistive Text
+        Required field
       </p>
     </div>
     <button
-      class="emotion-13"
+      class="emotion-19"
       data-testid="submit-button"
       type="submit"
     >
       <div
-        class="emotion-14"
+        class="emotion-20"
       >
         <div
-          class="emotion-15"
+          class="emotion-21"
         >
           <span
-            class="emotion-16"
+            class="emotion-22"
           >
             Submit
           </span>
@@ -6037,6 +8032,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -6045,7 +8041,6 @@ exports[`FormInput renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -6157,6 +8152,22 @@ exports[`FormInput renders with nested inputs 1`] = `
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-3.emotion-3 {
   width: 24px;
   height: 24px;
@@ -6235,8 +8246,8 @@ exports[`FormInput renders with nested inputs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -6334,6 +8345,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -6342,7 +8354,6 @@ exports[`FormInput renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  min-height: 48px;
 }
 
 .emotion-0 svg {
@@ -6458,8 +8469,8 @@ exports[`FormInput renders with nested inputs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #535353;
   min-height: 12px;
+  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -6536,9 +8547,6 @@ exports[`FormInput renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #FFFFFF;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -6566,6 +8574,22 @@ exports[`FormInput renders with nested inputs 1`] = `
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {

@@ -183,6 +183,22 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-8.emotion-8 {
   width: 32px;
   height: 32px;
@@ -190,12 +206,41 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   fill: #577FFB;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8.emotion-8 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8.emotion-8 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-10 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #2E2E2E;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-10 svg {
@@ -440,12 +485,25 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-37 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-37 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-37 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-37:hover:not(:disabled) {
@@ -645,9 +703,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   background-color: #F4F4F4;
   border-radius: 50%;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -662,6 +717,22 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-80:active:not(:disabled) {
   background-color: #CCCCCC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-80 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-80 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-81 {
@@ -698,6 +769,22 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-83 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-83 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-83.emotion-83 {
@@ -1393,6 +1480,22 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-8.emotion-8 {
   width: 32px;
   height: 32px;
@@ -1400,12 +1503,41 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   fill: #577FFB;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8.emotion-8 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8.emotion-8 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-10 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #2E2E2E;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-10 svg {
@@ -1650,12 +1782,25 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-37 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-37 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-37 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-37:hover:not(:disabled) {
@@ -1855,9 +2000,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   background-color: #F4F4F4;
   border-radius: 50%;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -1872,6 +2014,22 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-80:active:not(:disabled) {
   background-color: #CCCCCC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-80 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-80 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-81 {
@@ -1908,6 +2066,22 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-83 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-83 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-83.emotion-83 {
@@ -2603,6 +2777,22 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   display: inline-block;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-8.emotion-8 {
   width: 32px;
   height: 32px;
@@ -2610,12 +2800,41 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   fill: #577FFB;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8.emotion-8 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8.emotion-8 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-10 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #2E2E2E;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-10 svg {
@@ -2860,12 +3079,25 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-37 {
   display: inline-block;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-37 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-37 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-37:hover:not(:disabled) {
@@ -3042,9 +3274,6 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   background-color: #F4F4F4;
   border-radius: 50%;
   margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -3059,6 +3288,22 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-80:active:not(:disabled) {
   background-color: #CCCCCC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-80 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-80 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-81 {
@@ -3095,6 +3340,22 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-83 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-83 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-83.emotion-83 {

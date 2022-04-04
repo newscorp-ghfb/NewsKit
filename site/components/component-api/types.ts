@@ -6,14 +6,16 @@ export interface ComponentAPIProps {
 
 export interface SingleComponentAPIProps {
   title?: string;
-  summary?: string;
+  summary?: string | JSX.Element;
   propsSummary?: string;
   argsSummary?: string;
   overridesSummary?: string;
   propsRows?: PropsRowsProps[];
+  propsFooter?: React.ReactNode;
   argsRows?: ArgumentsRowsProps[];
+  argsFooter?: React.ReactNode;
   overridesRows?: OverridesRowsProps[];
-  infoNotice?: React.ReactNode;
+  overridesFooter?: React.ReactNode;
 }
 
 interface CommonProps extends TableRow {

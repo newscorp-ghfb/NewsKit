@@ -8,6 +8,7 @@ import {
   TabSize,
   TextBlock,
   UnorderedList,
+  InlineMessage,
 } from 'newskit';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {parseEnumValues} from '../../utils/parse-enum-values';
@@ -18,7 +19,7 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Link} from '../../components/link';
 
-export default (layoutProps: LayoutProps) => (
+const TabsComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Tabs',
@@ -307,8 +308,14 @@ export default (layoutProps: LayoutProps) => (
               ),
             },
           ],
-          infoNotice:
-            'To support resizing of the selected tab indicator this component uses the ResizeObserver API this is not supported in Internet explorer, if you require support we suggest you add a pollyfill to your application.',
+          propsFooter: (
+            <InlineMessage>
+              To support resizing of the selected tab indicator this component
+              uses the ResizeObserver API this is not supported in Internet
+              explorer, if you require support we suggest you add a pollyfill to
+              your application.
+            </InlineMessage>
+          ),
         },
         {
           title: 'Tab',
@@ -388,6 +395,18 @@ export default (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'tab',
               description: 'If provided, this overrides the Tab styling.  ',
+            },
+            {
+              attribute: 'transitionPreset',
+              type: 'MQ<string>',
+              default: [
+                'backgroundColorChange',
+                'borderColorChange',
+                'fontColorChange',
+                'iconColorChange',
+              ],
+              description:
+                'If provided, this overrides the transition preset applied to the Button.',
             },
             {
               attribute: 'typographyPreset',
@@ -1111,3 +1130,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default TabsComponent;

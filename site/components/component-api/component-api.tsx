@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage, Tab, Tabs, TabSize} from 'newskit';
+import {Block, Tab, Tabs, TabSize} from 'newskit';
 import {Table} from '../table';
 import {ContentText} from '../text-section/content-text';
 import {ComponentAPIProps} from './types';
@@ -18,7 +18,9 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
           propsRows,
           argsRows,
           overridesRows,
-          infoNotice,
+          propsFooter,
+          argsFooter,
+          overridesFooter,
         },
         i,
         arr,
@@ -45,11 +47,7 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
                   ]}
                   rows={propsRows}
                 />
-                {infoNotice && (
-                  <InlineMessage role="region" aria-label="Props notice">
-                    {infoNotice}
-                  </InlineMessage>
-                )}
+                {propsFooter}
               </>
             ),
           });
@@ -60,16 +58,19 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
             label: 'Arguments',
             tabSummary: argsSummary,
             content: (
-              <Table
-                columns={[
-                  'Argument',
-                  'Type',
-                  'Default',
-                  'Description',
-                  'Required',
-                ]}
-                rows={argsRows}
-              />
+              <>
+                <Table
+                  columns={[
+                    'Argument',
+                    'Type',
+                    'Default',
+                    'Description',
+                    'Required',
+                  ]}
+                  rows={argsRows}
+                />
+                {argsFooter}
+              </>
             ),
           });
         }
@@ -84,11 +85,7 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
                   columns={['Attribute', 'Type', 'Default', 'Description']}
                   rows={overridesRows}
                 />
-                {infoNotice && (
-                  <InlineMessage role="region" aria-label="Support resizing">
-                    {infoNotice}
-                  </InlineMessage>
-                )}
+                {overridesFooter}
               </>
             ),
           });
@@ -100,7 +97,10 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
         };
 
         return (
-          <Block spaceStack={i !== arr.length - 1 ? 'space100' : undefined}>
+          <Block
+            key={`${title}-${summary}`}
+            spaceStack={i !== arr.length - 1 ? 'space100' : undefined}
+          >
             {title && (
               <ContentText title={title} titleAs="span">
                 {summary}
@@ -109,7 +109,7 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
             {tabs.length > 1 && (
               <Tabs size={TabSize.Medium}>
                 {tabs.map(({label, tabSummary, content}) => (
-                  <Tab label={label} overrides={tabOverrides}>
+                  <Tab label={label} overrides={tabOverrides} key={label}>
                     {tabSummary && <ContentText>{tabSummary}</ContentText>}
                     {content}
                   </Tab>

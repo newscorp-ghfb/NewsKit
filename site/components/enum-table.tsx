@@ -6,13 +6,15 @@ import {ScrollableTable} from './markdown-elements';
 export const EnumTable: React.FC<{children: any}> = ({children}) => (
   <ScrollableTable>
     <thead>
-      <th>Key</th>
-      <th>Value</th>
+      <tr>
+        <th>Key</th>
+        <th>Value</th>
+      </tr>
     </thead>
     <tbody>
       {Object.entries(children as Record<string, string>).map(
         ([key, value]) => (
-          <tr>
+          <tr key={`${key}-${value}`}>
             <td>{key}</td>
             <td>{value}</td>
           </tr>

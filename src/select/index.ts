@@ -1,3 +1,3 @@
-export * from './select';
-export * from './select-option';
+export {Select} from './select';
+export {SelectOption} from './select-option';
 export * from './types';

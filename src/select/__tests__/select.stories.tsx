@@ -5,6 +5,7 @@ import {styled} from '../../utils/style';
 import {Stack} from '../../stack';
 import {Block} from '../../block';
 import {TextFieldSize} from '../../text-field';
+import {Tabs, Tab} from '../../tabs';
 
 import {
   StorybookHeading,
@@ -13,8 +14,16 @@ import {
 import {Label} from '../../label';
 import {AssistiveText} from '../../assistive-text';
 import {createTheme, ThemeProvider} from '../../theme';
-import {IconFilledCheckCircle, IconFilledAccountBalance} from '../../icons';
-import {Tabs, Tab} from '../../tabs';
+import {
+  IconFilledCheckCircle,
+  IconFilledAccountBalance,
+  IconFilledClose,
+} from '../../icons';
+import {Modal, ModalProps} from '../../modal';
+import {Button} from '../../button/button';
+import {InlineMessage} from '../../inline-message';
+import {GridLayout} from '../../grid-layout';
+import {countries} from './phone-countries';
 
 const items = [
   'Neptunium',
@@ -724,3 +733,176 @@ export const StorySelectScreenReaderExample = () => (
   </>
 );
 StorySelectScreenReaderExample.storyName = 'Select screen reader example';
+
+const CustomModalContainer = styled.div`
+  height: 250px;
+  overflow-x: auto;
+`;
+
+const selectWithModalVariants = [
+  {
+    label: 'default',
+    props: {overrides: {button: {width: '100%'}}},
+  },
+  {
+    label: 'style overrides',
+    props: {
+      overrides: {
+        button: {width: '100%'},
+        modal: {
+          header: {spaceInset: 'space000'},
+          panel: {maxHeight: '50vh', maxWidth: '280px'},
+          content: {spaceInset: 'space010'},
+          closeButton: {spaceInset: 'space000'},
+        },
+      },
+    },
+  },
+  {
+    label: 'props override',
+    props: {
+      overrides: {
+        button: {width: '100%'},
+        modal: {
+          props: {
+            header: 'make your selection',
+            closePosition: 'none',
+          },
+        },
+      },
+    },
+  },
+  {
+    label: 'component override',
+    props: {
+      overrides: {
+        button: {width: '100%'},
+        modal: ({children, ...restProps}: ModalProps) => (
+          <Modal {...restProps} closePosition="none">
+            <CustomModalContainer>{children}</CustomModalContainer>
+            <Block spaceStack="space040" />
+            <Button
+              onClick={restProps?.onDismiss}
+              aria-label="close"
+              overrides={{width: '100%'}}
+            >
+              Close <IconFilledClose />
+            </Button>
+          </Modal>
+        ),
+      },
+    },
+  },
+];
+
+export const StorySelectInModal = () => {
+  const selectOptions = items.map(item => (
+    <SelectOption key={item} value={item}>
+      {item}
+    </SelectOption>
+  ));
+
+  return (
+    <>
+      <StorybookHeading>Select useModal</StorybookHeading>
+      <Container>
+        <Block spaceStack="space050">
+          <InlineMessage>
+            In order to open select options inside a modal you need to resize
+            your screen to <b>xs</b> or <b>sm</b> breakpoints. Or use the device
+            dropdown and choose the appropriate one.
+          </InlineMessage>
+        </Block>
+        {selectWithModalVariants.map(({label, props}, indx) => (
+          <Block spaceStack="space050">
+            <Label htmlFor={`id-modal-${indx}`} size={'small' as TextFieldSize}>
+              Select with modal ( {label} )
+            </Label>
+            <Select
+              aria-describedby={`id-modal-${indx}-at`}
+              id={`id-modal-${indx}`}
+              size="small"
+              useModal={{xs: true, sm: true}}
+              {...props}
+            >
+              {selectOptions}
+            </Select>
+            <AssistiveText
+              id={`id-modal-${indx}-at`}
+              size={'small' as TextFieldSize}
+            >
+              Assistive Text
+            </AssistiveText>
+          </Block>
+        ))}
+      </Container>
+    </>
+  );
+};
+StorySelectInModal.storyName = 'useModal';
+
+export const SelectVirtualization = () => {
+  const selectOptions = countries.map(({value, name}) => (
+    <SelectOption value={value} key={value} aria-label={name}>
+      <GridLayout columns="auto 1fr" columnGap="space020" alignItems="center">
+        <img
+          src={`https://flagcdn.com/16x12/${value.toLowerCase()}.png`}
+          width="16"
+          height="12"
+          alt={name}
+        />
+        <span>{name}</span>
+      </GridLayout>
+    </SelectOption>
+  ));
+
+  const selectOptionsSimple = countries.map(({name}) => (
+    <SelectOption key={name} value={name}>
+      {name}
+    </SelectOption>
+  ));
+
+  return (
+    <>
+      <Container>
+        <StorybookHeading>Select with virtualization</StorybookHeading>
+        <Block spaceStack="space050">
+          <Label htmlFor="countries" size={'medium' as TextFieldSize}>
+            Select your country ( virtualized )
+          </Label>
+          <Select
+            aria-describedby="countries-at"
+            id="countries"
+            size="medium"
+            useModal={{xs: true}}
+            virtualized={50}
+          >
+            {selectOptions}
+          </Select>
+          <AssistiveText id="countries-at" size={'small' as TextFieldSize}>
+            Assistive Text
+          </AssistiveText>
+        </Block>
+        <Block spaceStack="space050">
+          <Label htmlFor="simple-data" size={'medium' as TextFieldSize}>
+            Simple data ( virtualized )
+          </Label>
+          <Select
+            aria-describedby="simple-data-at"
+            id="simple-data"
+            size="medium"
+            useModal={{xs: true}}
+            virtualized={50}
+          >
+            {selectOptionsSimple}
+          </Select>
+          <AssistiveText id="simple-data-at" size={'small' as TextFieldSize}>
+            Assistive Text
+          </AssistiveText>
+        </Block>
+      </Container>
+    </>
+  );
+};
+
+// StorySelectVirtualized.name = "sel"

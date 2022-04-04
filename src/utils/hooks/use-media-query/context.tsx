@@ -41,7 +41,7 @@ export function MediaQueryProvider({children}: {children: React.ReactNode}) {
     }[] = [];
 
     /* istanbul ignore else */
-    if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined' && 'matchMedia' in window) {
       Object.entries(mqPerBreakpoint).forEach(([breakpointKey, mqString]) => {
         const mqList = window.matchMedia(mqString);
         const mqHandler = (event: MediaQueryListEvent) => {
@@ -75,3 +75,15 @@ export function MediaQueryProvider({children}: {children: React.ReactNode}) {
     <MQContext.Provider value={breakpointState}>{children}</MQContext.Provider>
   );
 }
+
+export const withMediaQueryProvider = <P extends {}>(
+  BaseComponent: React.ComponentType<P>,
+) => {
+  const WrappedComponent = React.forwardRef<unknown, P>((props, ref) => (
+    <MediaQueryProvider>
+      <BaseComponent ref={ref} {...props} />
+    </MediaQueryProvider>
+  ));
+
+  return (WrappedComponent as unknown) as React.FC<P>;
+};

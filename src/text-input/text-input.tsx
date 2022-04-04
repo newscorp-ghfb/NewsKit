@@ -2,7 +2,7 @@ import React, {useEffect, useContext} from 'react';
 import {useFormContext} from 'react-hook-form';
 import composeRefs from '@seznam/compose-react-refs';
 import {TextInputProps, TextInputSize} from './types';
-import {getSSRId} from '../utils/get-ssr-id';
+import {useReactKeys} from '../utils/hooks';
 import {FormValidationContext} from '../form/context';
 
 import {
@@ -22,9 +22,6 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 
-/**
- * @deprecated This component has been deprecated and will be removed in a future release, use TextField instead
- */
 const ThemelessTextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
   (
     {
@@ -75,7 +72,7 @@ const ThemelessTextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [errorText, hadError, name]);
 
-    const id = getSSRId();
+    const [id] = useReactKeys(1);
     const assistiveTextId =
       (errorText && `${id}-error-text`) ||
       (assistiveText && `${id}-assistive-text`);
@@ -94,7 +91,7 @@ const ThemelessTextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
       if (onBlur) {
         onBlur(e);
       }
-      // cunstom onBlur function
+      // custom onBlur function
       if (
         validationMode === 'onBlur' &&
         !hadError &&
@@ -104,7 +101,11 @@ const ThemelessTextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
         const updateForFieldsHadError: FieldsHadErrorObject = {};
 
         updateForFieldsHadError[name] = {hadError: true};
-        setFieldsHadError(updateForFieldsHadError);
+
+        setFieldsHadError({
+          ...fieldsHadError,
+          ...updateForFieldsHadError,
+        });
       }
       // onBlur function passed in the props
       if (props.onBlur) {
@@ -209,6 +210,9 @@ const ThemelessTextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
 
 ThemelessTextInput.displayName = 'TextInput';
 
+/**
+ * @deprecated This component has been deprecated and will be removed in a future release, use TextField instead
+ */
 export const TextInput = withOwnTheme(ThemelessTextInput)({
   defaults,
   stylePresets,

@@ -135,7 +135,7 @@ const ReduceMotionMessage = () => {
   ) : null;
 };
 
-export default (layoutProps: LayoutProps) => (
+const Motion = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
       title: 'Motion',
@@ -312,3 +312,5 @@ export default (layoutProps: LayoutProps) => (
     </ComponentPageCell>
   </FoundationPageTemplate>
 );
+
+export default Motion;

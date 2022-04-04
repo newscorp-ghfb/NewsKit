@@ -1,6 +1,5 @@
+/* istanbul ignore file */
 import React, {useState} from 'react';
-
-import {states} from '../checkbox/__tests__/helpers';
 import {FormInputState} from '../form/types';
 import {
   AudioPlayerContainer,
@@ -82,6 +81,37 @@ import {
 } from '../structured-list';
 import {Cell, Grid} from '../grid';
 import {Label} from '../label';
+import {CheckboxState} from '../checkbox/types';
+import {BaseSwitchState} from '../base-switch/types';
+import {RadioButton} from '../radio-button';
+
+export const checkboxStates: [
+  string,
+  {checked?: boolean; state?: CheckboxState},
+][] = [
+  ['default', {}],
+  ['checked', {checked: true}],
+  ['disabled', {state: 'disabled'}],
+  ['checked-disabled', {checked: true, state: 'disabled'}],
+  ['invalid', {state: 'invalid'}],
+  ['invalid-checked', {state: 'invalid', checked: true}],
+  ['valid', {state: 'valid'}],
+  ['valid-checked', {state: 'valid', checked: true}],
+];
+
+export const radioButtonStates: [
+  string,
+  {checked?: boolean; state?: BaseSwitchState},
+][] = [
+  ['default', {checked: false}],
+  ['checked', {checked: true}],
+  ['disabled', {state: 'disabled'}],
+  ['checked-disabled', {checked: true, state: 'disabled'}],
+  ['invalid', {checked: false, state: 'invalid'}],
+  ['invalid-checked', {checked: true, state: 'invalid'}],
+  ['valid', {checked: false, state: 'valid'}],
+  ['valid-checked', {checked: true, state: 'valid'}],
+];
 
 interface ComponentData {
   name: string;
@@ -106,7 +136,7 @@ const tags = [
   'showing',
   'multiple',
   'tags',
-].map(item => <Tag key={getSSRId()}>{item}</Tag>);
+].map(item => <Tag key={item}>{item}</Tag>);
 
 const loremIpsum = [
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -350,9 +380,11 @@ export const scenarios: Array<ComponentData> = [
             <Stack flow={Flow.HorizontalTop} spaceInline="space090">
               {buttonKinds.map(kind => (
                 <Stack spaceInline="space050" key={`${kind}-button`}>
-                  <LabelFlag prefix="secondary">{kind}</LabelFlag>
+                  <LabelFlag key="flag" prefix="secondary">
+                    {kind}
+                  </LabelFlag>
                   <Button
-                    key={getSSRId()}
+                    key="button"
                     overrides={{stylePreset: `button${kind}${preset}`}}
                   >
                     Button
@@ -375,6 +407,7 @@ export const scenarios: Array<ComponentData> = [
             href: 'https://www.thetimes.co.uk/profile/richard-lloyd-parry',
             title: 'Job Title',
             location: 'Location',
+            key: 1,
           },
         ]}
       />
@@ -470,12 +503,35 @@ export const scenarios: Array<ComponentData> = [
         flow={Flow.HorizontalTop}
         wrap="wrap"
       >
-        {states.map(([id, {checked, ...props}]) => (
+        {checkboxStates.map(([id, {checked, ...props}]) => (
           <Stack key={`${id}-checkbox`} spaceInline="space050">
             <LabelFlag>{id[0].toUpperCase() + id.slice(1)}</LabelFlag>
             <Checkbox
               {...props}
               defaultChecked={checked}
+              label={id}
+              size="medium"
+            />
+          </Stack>
+        ))}
+      </Stack>
+    ),
+  },
+  {
+    name: 'RadioButton',
+    component: () => (
+      <Stack
+        spaceInline="space100"
+        spaceStack="space060"
+        flow={Flow.HorizontalTop}
+        wrap="wrap"
+      >
+        {radioButtonStates.map(([id, {checked, ...props}]) => (
+          <Stack key={`${id}-radiobutton`} spaceInline="space050">
+            <LabelFlag>{id[0].toUpperCase() + id.slice(1)}</LabelFlag>
+            <RadioButton
+              {...props}
+              checked={checked}
               label={id}
               size="medium"
             />
@@ -659,9 +715,11 @@ export const scenarios: Array<ComponentData> = [
             <Stack flow={Flow.HorizontalTop} spaceInline="space090">
               {flagKinds.map(kind => (
                 <Stack spaceInline="space050" key={`${kind}-flag`}>
-                  <LabelFlag prefix="secondary">{kind}</LabelFlag>
+                  <LabelFlag key="label-flag" prefix="secondary">
+                    {kind}
+                  </LabelFlag>
                   <Flag
-                    key={getSSRId()}
+                    key="flag"
                     overrides={{stylePreset: `flag${kind}${preset}`}}
                   >
                     Flag
@@ -783,9 +841,11 @@ export const scenarios: Array<ComponentData> = [
             <Stack flow={Flow.HorizontalTop} spaceInline="space090">
               {buttonKinds.map(kind => (
                 <Stack spaceInline="space050" key={`${kind}-iconButton`}>
-                  <LabelFlag prefix="secondary">{kind}</LabelFlag>
+                  <LabelFlag key="label-flag" prefix="secondary">
+                    {kind}
+                  </LabelFlag>
                   <IconButton
-                    key={getSSRId()}
+                    key="icon-button"
                     aria-label="Add icon"
                     overrides={{stylePreset: `iconButton${kind}${preset}`}}
                   >
@@ -901,7 +961,7 @@ export const scenarios: Array<ComponentData> = [
     name: 'Inline Message',
     component: ({stylePreset}) => (
       <Stack spaceInline="space050" key={`${stylePreset}-inlineMessage`}>
-        <LabelFlag>
+        <LabelFlag key="label-flag">
           {returnLastLetterInCamelCase(stylePreset as string)}
         </LabelFlag>
         <InlineMessage
@@ -915,7 +975,7 @@ export const scenarios: Array<ComponentData> = [
             />
           }
           overrides={{stylePreset}}
-          key={getSSRId()}
+          key="inline-message"
         >
           Here goes a brief line or two describing the inline message
           information.
@@ -1041,7 +1101,7 @@ export const scenarios: Array<ComponentData> = [
     component: () => (
       <Select overrides={{button: {width: '250px'}}}>
         {listData.map(item => (
-          <SelectOption key={getSSRId()} value={item}>
+          <SelectOption key={item.toString()} value={item}>
             {item}
           </SelectOption>
         ))}
@@ -1064,7 +1124,7 @@ export const scenarios: Array<ComponentData> = [
               <IconButton
                 aria-label={`Share on ${name}`}
                 overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
-                key={getSSRId()}
+                key={name as string}
               >
                 {icon}
               </IconButton>
@@ -1089,7 +1149,7 @@ export const scenarios: Array<ComponentData> = [
               <IconButton
                 aria-label={`Share on ${name}`}
                 overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
-                key={getSSRId()}
+                key={name as string}
               >
                 {icon}
               </IconButton>
@@ -1109,8 +1169,8 @@ export const scenarios: Array<ComponentData> = [
         wrap="wrap"
       >
         <Stack spaceInline="space050">
-          <LabelFlag>With Labels</LabelFlag>
-          <Container>
+          <LabelFlag key="label-flag">With Labels</LabelFlag>
+          <Container key="container">
             <StatefulSlider
               values={[50]}
               max={100}
@@ -1122,8 +1182,8 @@ export const scenarios: Array<ComponentData> = [
         </Stack>
 
         <Stack spaceInline="space050">
-          <LabelFlag>Without labels</LabelFlag>
-          <Container>
+          <LabelFlag key="label-flag">Without labels</LabelFlag>
+          <Container key="container">
             <StatefulSlider values={[50]} max={100} min={0} />
           </Container>
         </Stack>
@@ -1272,12 +1332,12 @@ export const scenarios: Array<ComponentData> = [
     component: ({stylePreset}) => (
       <Stack spaceInline="space070" key={`${stylePreset}-toast`}>
         <Stack spaceInline="space050">
-          <LabelFlag>
+          <LabelFlag key="label-flag">
             {returnLastLetterInCamelCase(stylePreset as string)}
           </LabelFlag>
           <Toast
             overrides={{stylePreset, maxWidth: '100%'}}
-            key={getSSRId()}
+            key="toast"
             actions={() => (
               <Button
                 size="small"

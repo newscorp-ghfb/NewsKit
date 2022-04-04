@@ -1,15 +1,17 @@
 import React from 'react';
 
-export function useControlled({
+export interface UseControlledProps<T = unknown> {
+  controlledValue: T | undefined;
+  defaultValue: T | undefined;
+}
+
+export function useControlled<T = unknown>({
   controlledValue,
   defaultValue,
-}: {
-  controlledValue: boolean | undefined;
-  defaultValue: boolean;
-}): [boolean, (state: boolean) => void] {
+}: UseControlledProps<T>): [T | undefined, (state: T) => void] {
   const {current: isControlled} = React.useRef(controlledValue !== undefined);
   const [valueState, setValue] = React.useState(defaultValue);
-  const value = (isControlled ? controlledValue : valueState) as boolean;
+  const value = isControlled ? controlledValue : valueState;
 
   const setValueIfUncontrolled = React.useCallback(
     newValue => {

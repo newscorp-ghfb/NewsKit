@@ -51,7 +51,7 @@ export const FormEntry = ({name, rules, children}: FormEntryProps) => {
     if (onBlur) {
       onBlur(e);
     }
-    // cunstom onBlur function
+    // custom onBlur function
     if (
       validationMode === 'onBlur' &&
       !hadError &&
@@ -61,7 +61,11 @@ export const FormEntry = ({name, rules, children}: FormEntryProps) => {
       const updateForFieldsHadError: FieldsHadErrorObject = {};
 
       updateForFieldsHadError[name] = {hadError: true};
-      setFieldsHadError(updateForFieldsHadError);
+
+      setFieldsHadError({
+        ...fieldsHadError,
+        ...updateForFieldsHadError,
+      });
     }
   };
 

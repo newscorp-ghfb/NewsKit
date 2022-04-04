@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, BlockProps, styled} from 'newskit';
+import {Block, BlockProps, InlineMessage, styled} from 'newskit';
 import {Link} from '../../components/link/link';
 import {LegacyBlock} from '../../components/legacy-block';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
@@ -15,7 +15,7 @@ const PlaygroundContainer = styled.div`
   justify-content: center;
 `;
 
-export default (layoutProps: LayoutProps) => (
+const BlockComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Block',
@@ -245,14 +245,22 @@ export default (layoutProps: LayoutProps) => (
               description: `Overrides the space inset applied to the Block.`,
             },
           ],
-          infoNotice: (
-            <>
+          overridesRows: [
+            {
+              attribute: 'block.transitionPreset',
+              type: 'TransitionToken | TransitionToken[]',
+              default: 'backgroundColorChange',
+              description: `Overrides the transitionPreset of the Menu Item.`,
+            },
+          ],
+          propsFooter: (
+            <InlineMessage>
               The Block can utilise any valid{' '}
               <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">
                 HTML attribute.
               </Link>
               .
-            </>
+            </InlineMessage>
           ),
         },
       ],
@@ -270,3 +278,5 @@ export default (layoutProps: LayoutProps) => (
     }}
   />
 );
+
+export default BlockComponent;

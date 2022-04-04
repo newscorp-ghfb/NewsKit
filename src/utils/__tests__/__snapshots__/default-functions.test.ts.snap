@@ -455,6 +455,206 @@ Object {
 }
 `;
 
+exports[`get component defaults functions getTransitionPreset for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:no-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1024px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "300ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 1024px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1023px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "300ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1023px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+}
+`;
+
+exports[`get component defaults functions getTransitionPreset for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:with-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1024px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "300ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 1024px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1023px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "300ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1023px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+}
+`;
+
+exports[`get component defaults functions getTransitionPreset for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:no-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1024px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "300ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 1024px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1023px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "300ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1023px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+}
+`;
+
+exports[`get component defaults functions getTransitionPreset for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1024px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "300ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 1024px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1023px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "300ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1023px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+}
+`;
+
+exports[`get component defaults functions getTransitionPreset for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 2`] = `
+Object {
+  "@media screen and (min-width: 1024px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "300ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 1024px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1023px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "300ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1023px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+}
+`;
+
+exports[`get component defaults functions getTransitionPreset for responsive tokens when props.overrides is set with breakpoint object with override path: breakpoint-override-object:with-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1024px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "300ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 1024px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1023px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "300ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1023px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+}
+`;
+
+exports[`get component defaults functions getTransitionPreset for responsive tokens with no override path provided, with and without token type at the end: default:no-path-end 1`] = `
+Object {
+  "@media screen and (max-width: 767px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "200ms",
+    "transitionProperty": "css-props-for-default-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (max-width: 767px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-default-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 768px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "300ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 768px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+}
+`;
+
+exports[`get component defaults functions getTransitionPreset for responsive tokens with no override path provided, with and without token type at the end: default:with-path-end 1`] = `
+Object {
+  "@media screen and (max-width: 767px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "200ms",
+    "transitionProperty": "css-props-for-default-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (max-width: 767px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-default-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 768px) and (prefers-reduced-motion: no-preference)": Object {
+    "transitionDuration": "300ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+  "@media screen and (min-width: 768px) and (prefers-reduced-motion: reduce)": Object {
+    "transitionDuration": "0ms",
+    "transitionProperty": "css-props-for-override-token",
+    "transitionTimingFunction": "linear",
+  },
+}
+`;
+
 exports[`get component defaults functions getTypographyPreset for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:no-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1024px)": Object {

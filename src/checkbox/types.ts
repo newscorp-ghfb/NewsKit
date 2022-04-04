@@ -1,43 +1,17 @@
-import React from 'react';
-import {NewsKitIconProps} from '../icons';
-import {Override} from '../utils/overrides';
-import {MQ} from '../utils/style/types';
+import {
+  BaseSwitchIconProps,
+  BaseSwitchProps,
+  BaseSwitchSize,
+  BaseSwitchState,
+} from '../base-switch/types';
 
-export type CheckboxIconProps = NewsKitIconProps &
-  Pick<CheckboxProps, 'checked' | 'state'>;
+export type CheckboxIconProps = BaseSwitchIconProps;
 
-type CheckboxOverrides = {
-  spaceStack?: MQ<string>;
-  input?: {
-    size?: MQ<string>;
-    stylePreset?: MQ<string>;
-    spaceInline?: MQ<string>;
-  };
-  feedback?: {
-    size?: MQ<string>;
-    stylePreset?: MQ<string>;
-  };
-  label?: {
-    stylePreset?: MQ<string>;
-    typographyPreset?: MQ<string>;
-  };
-  icon?: Override<CheckboxIconProps>;
-};
+export type CheckboxProps = Omit<
+  BaseSwitchProps,
+  'path' | 'defaultSwitchSelectorComponent' | 'type'
+>;
 
-export type CheckboxSize = 'small' | 'medium' | 'large';
+export type CheckboxSize = BaseSwitchSize;
 
-export type CheckboxState = 'valid' | 'invalid' | 'disabled';
-
-export type CheckboxLabelPosition = 'start' | 'end';
-export interface CheckboxProps
-  extends Omit<
-    React.InputHTMLAttributes<HTMLInputElement>,
-    'size' | 'disabled'
-  > {
-  overrides?: CheckboxOverrides;
-  size?: CheckboxSize;
-  state?: CheckboxState;
-  label?: React.ReactNode;
-  labelAttributes?: React.LabelHTMLAttributes<HTMLLabelElement>;
-  labelPosition?: CheckboxLabelPosition;
-}
+export type CheckboxState = BaseSwitchState;

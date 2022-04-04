@@ -1,13 +1,13 @@
 import {Flag} from '../flag';
-import {getMotionFromTheme, styled} from '../utils/style';
+import {logicalProps} from '../utils/logical-properties';
+import {styled} from '../utils/style';
+import {getTransitionPreset} from '../utils/style/transition-preset';
 import {ButtonOrButtonLinkProps} from './types';
 
 export const StyledFlag = styled(Flag)<Omit<ButtonOrButtonLinkProps, 'size'>>`
   margin: 0; //reset for safari
-  transition-property: background-color;
-  transition-duration: ${getMotionFromTheme('motionDuration020')};
-  transition-timing-function: ${getMotionFromTheme('motionTimingEaseOut')};
 
+  ${({size}) => getTransitionPreset(`button.${size}`, '')};
   ${({loading, disabled}) => {
     if (disabled) {
       return null;
@@ -15,4 +15,9 @@ export const StyledFlag = styled(Flag)<Omit<ButtonOrButtonLinkProps, 'size'>>`
     const cursor = loading ? 'progress' : 'pointer';
     return {cursor};
   }}
+  ${({size}) =>
+    logicalProps(
+      `button.${size}`,
+    )}; // needs to be used in here as well, even though Flag uses it itself
+  // that is because of the margin: 0; override higher up.
 `;

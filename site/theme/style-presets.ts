@@ -374,15 +374,15 @@ export const stylePresets = {
   },
   linkFooter: {
     base: {
-      color: '{{colors.inkContrast}}',
+      color: '{{colors.interactivePrimary040}}',
       textDecoration: 'none',
     },
     hover: {
-      color: '{{colors.inkSubtle}}',
+      color: '{{colors.interactivePrimary030}}',
       textDecoration: 'underline',
     },
     active: {
-      color: '{{colors.inkNonEssential}}',
+      color: '{{colors.interactivePrimary020}}',
       textDecoration: 'none',
     },
   },
@@ -777,24 +777,24 @@ export const stylePresets = {
   },
   dividerInverse: {
     base: {
-      borderColor: '{{colors.blackTint020}}',
+      borderColor: '{{colors.whiteTint050}}',
     },
   },
   toastText: {
     base: {
-      color: '{{colors.neutral100}}',
+      color: '{{colors.white}}',
     },
   },
   toastIcon: {
     base: {
-      iconColor: '{{colors.neutral100}}',
+      iconColor: '{{colors.white}}',
     },
   },
   toastButton: {
     base: {
       backgroundColor: '{{colors.transparent}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
-      color: '{{colors.neutral100}}',
+      color: '{{colors.white}}',
       iconColor: '{{colors.neutral100}}',
     },
     hover: {
@@ -804,6 +804,21 @@ export const stylePresets = {
   bannerIcon: {
     base: {
       iconColor: '{{colors.white}}',
+    },
+  },
+  stepFlag: {
+    base: {
+      backgroundColor: '{{colors.blue060}}',
+      borderRadius: '{{borders.borderRadiusRounded050}}',
+      color: '{{colors.white}}',
+    },
+  },
+  timerFlag: {
+    base: {
+      backgroundColor: '{{colors.neutral030}}',
+      borderRadius: '{{borders.borderRadiusRounded050}}',
+      color: '{{colors.neutral080}}',
+      iconColor: '{{colors.neutral100}}',
     },
   },
 };

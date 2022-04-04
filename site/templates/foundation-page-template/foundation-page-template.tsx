@@ -20,6 +20,7 @@ export const defaultFeatureCard: Partial<OnwardJourneySectionProps> = {
 export const FoundationPageTemplate: React.FC<FoundationPageTemplateProps> = ({
   children,
   layoutProps,
+  headTags,
   ...rest
 }) => {
   const featureCard = useGetFeatureCard();
@@ -36,6 +37,12 @@ export const FoundationPageTemplate: React.FC<FoundationPageTemplateProps> = ({
           >
             <PageTemplate
               {...rest}
+              headTags={{
+                imageUrl: 'social/theme.png',
+                alt: 'Themes',
+                title: headTags.title,
+                description: headTags.description,
+              }}
               featureCard={
                 featureCard &&
                 ({

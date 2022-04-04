@@ -56,3 +56,12 @@ stylePresets.inputField = {
     backgroundColor: '{{colors.interactiveInput010}}',
   },
 };
+
+stylePresets.controlLabel = {
+  base: {
+    color: '{{colors.inkBase}}',
+  },
+  disabled: {
+    color: '{{colors.inkNonEssential}}',
+  },
+};

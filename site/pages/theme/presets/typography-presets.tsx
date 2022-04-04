@@ -118,7 +118,7 @@ const typographyPresetsTable = [
   },
 ];
 
-export default (layoutProps: LayoutProps) => (
+const TypographyPresets = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
       title: 'Typography',
@@ -127,7 +127,7 @@ export default (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Foundations',
+      type: 'Presets',
       name: 'Typography presets',
       hero: {
         illustration: 'components/hero-typography-illustration',
@@ -232,7 +232,7 @@ export default (layoutProps: LayoutProps) => (
             {`import {TextBlock, styled} from 'newskit'
 
 const ItalicTextBlock = styled(TextBlock)\`
-  font-style:italic;
+font-style:italic;
 \`;
 
 <ItalicTextBlock stylePreset="editorialParagraph010"> This Text is italic</ItalicTextBlock>`}
@@ -246,10 +246,10 @@ const ItalicTextBlock = styled(TextBlock)\`
           toc="Text-crop"
           headline="Text-crop"
           description="To keep consistent and predictable space from design to code, we use a
-          text-cropping utility that removes additional space (leading) around a
-          text block. This allows us to maintain our 4px baseline and keep
-          designs pixel-perfect. Refer to the Text Crop documentation for more
-          detailed information."
+        text-cropping utility that removes additional space (leading) around a
+        text block. This allows us to maintain our 4px baseline and keep
+        designs pixel-perfect. Refer to the Text Crop documentation for more
+        detailed information."
           showSeparator
         />
       </ContentSection>
@@ -260,8 +260,8 @@ const ItalicTextBlock = styled(TextBlock)\`
           toc="Accessibility Considerations"
           headline="Accessibility Considerations"
           description="Legibility is core to the NewsKit typographic system. By following the
-          guidelines below, we ensure consistency and readability across all
-          typographic variations."
+        guidelines below, we ensure consistency and readability across all
+        typographic variations."
         >
           <MediaList
             cardsLayout={{
@@ -336,3 +336,5 @@ const ItalicTextBlock = styled(TextBlock)\`
     </ComponentPageCell>
   </FoundationPageTemplate>
 );
+
+export default TypographyPresets;
