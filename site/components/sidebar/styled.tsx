@@ -52,7 +52,7 @@ export const StyledSecondLevelHeader = styled.div`
   margin-top: ${getSpacingFromTheme('space010')};
 `;
 
-export const StyledSidebarNav = styled.nav`
+export const StyledSidebarNav = styled.div`
   ${getTypographyPresetFromTheme('utilityBody030')};
 
   & ul > li > div {

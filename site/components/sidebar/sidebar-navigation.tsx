@@ -265,7 +265,7 @@ export const SidebarNav: React.FC = () => {
   const currentSection =
     currentRoute && routes.filter(({id}) => id === currentRoute[0]);
   return (
-    <StyledSidebarNav role="navigation" aria-label="Sidebar">
+    <StyledSidebarNav role="menu" aria-label="sidebar-menu">
       <Visible xs sm md>
         <RenderMobileNavigation path={path} menu={routes} />
       </Visible>
