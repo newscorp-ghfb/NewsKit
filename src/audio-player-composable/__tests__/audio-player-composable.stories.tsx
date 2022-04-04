@@ -67,15 +67,15 @@ export default {
 };
 
 const fullAudioPlayerAreasDesktop = `
-  seekBar seekBar seekBar
-  currentTime none  totalTime  
-  volume controls link
+  seekBar     seekBar   seekBar   seekBar   seekBar   seekBar   seekBar
+  currentTime none      none      none      none      none      totalTime  
+  volume      prev      backward  play      forward   next      link
  `;
 
 const fullAudioPlayerAreasMobile = `
-  seekBar seekBar seekBar
-  currentTime none  totalTime  
-  controls controls controls
+  seekBar     seekBar   seekBar   seekBar   seekBar
+  currentTime volume    none      link      totalTime  
+  prev        backward  play      forward   next
  `;
 
 const AudioPlayerFull = (props: {ariaLandmark: string; src?: string}) => (
@@ -84,8 +84,12 @@ const AudioPlayerFull = (props: {ariaLandmark: string; src?: string}) => (
     {...props}
   >
     <GridLayout
-      columns="50px 1fr 50px"
-      rowGap="20px"
+      columns={{
+        xs: '1fr auto auto auto 1fr',
+        md: '50px 1fr auto auto auto 1fr 50px',
+      }}
+      rowGap="space040"
+      columnGap="space040"
       areas={{
         xs: fullAudioPlayerAreasMobile,
         md: fullAudioPlayerAreasDesktop,
@@ -93,24 +97,52 @@ const AudioPlayerFull = (props: {ariaLandmark: string; src?: string}) => (
     >
       {Areas => (
         <>
-          <Areas.SeekBar>
-            <AudioPlayerSeekBar />
-          </Areas.SeekBar>
-          <Areas.CurrentTime>
-            <AudioPlayerTimeDisplay
-              format={({currentTime}) => calculateTime(currentTime)}
+          <Areas.Play alignSelf="center">
+            <AudioPlayerPlayPauseButton />
+          </Areas.Play>
+
+          <Areas.Backward alignSelf="center">
+            <AudioPlayerReplayButton />
+          </Areas.Backward>
+
+          <Areas.Forward alignSelf="center">
+            <AudioPlayerForwardButton />
+          </Areas.Forward>
+
+          <Areas.Prev alignSelf="center" justifySelf="end">
+            <AudioPlayerSkipPreviousButton
+              onClick={() => console.log('on skip Prev track')}
             />
-          </Areas.CurrentTime>
-          <Areas.TotalTime justifySelf="end">
-            <AudioPlayerTimeDisplay
-              format={({duration}) => calculateTime(duration)}
+          </Areas.Prev>
+
+          <Areas.Next alignSelf="center">
+            <AudioPlayerSkipNextButton
+              onClick={() => console.log('on skip Next track')}
             />
-          </Areas.TotalTime>
+          </Areas.Next>
+
           <Areas.Volume alignSelf="center" justifySelf="start">
             <Hidden xs sm>
               Not yet
             </Hidden>
           </Areas.Volume>
+
+          <Areas.SeekBar>
+            <AudioPlayerSeekBar />
+          </Areas.SeekBar>
+
+          <Areas.CurrentTime>
+            <AudioPlayerTimeDisplay
+              format={({currentTime}) => calculateTime(currentTime)}
+            />
+          </Areas.CurrentTime>
+
+          <Areas.TotalTime justifySelf="end">
+            <AudioPlayerTimeDisplay
+              format={({duration}) => calculateTime(duration)}
+            />
+          </Areas.TotalTime>
+
           <Areas.Link alignSelf="center" justifySelf="end">
             <Hidden xs sm>
               <IconButton
@@ -122,25 +154,6 @@ const AudioPlayerFull = (props: {ariaLandmark: string; src?: string}) => (
               </IconButton>
             </Hidden>
           </Areas.Link>
-
-          <Areas.Controls>
-            <GridLayout
-              columns="repeat(5, auto)"
-              columnGap="space045"
-              justifyContent="center"
-              alignItems="center"
-            >
-              <AudioPlayerSkipPreviousButton
-                onClick={() => console.log('on skip Prev track')}
-              />
-              <AudioPlayerReplayButton />
-              <AudioPlayerPlayPauseButton />
-              <AudioPlayerForwardButton />
-              <AudioPlayerSkipNextButton
-                onClick={() => console.log('on skip Next track')}
-              />
-            </GridLayout>
-          </Areas.Controls>
         </>
       )}
     </GridLayout>
