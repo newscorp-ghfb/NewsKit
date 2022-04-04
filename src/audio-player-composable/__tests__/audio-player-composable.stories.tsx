@@ -26,7 +26,6 @@ import {
   IconFilledReplay5,
   IconFilledForward5,
 } from '../../icons';
-import {AudioPlayerComposableProps} from '../types';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-audio-player-theme',
@@ -79,7 +78,7 @@ const fullAudioPlayerAreasMobile = `
   controls controls controls
  `;
 
-const AudioPlayerFull = (props: AudioPlayerComposableProps) => (
+const AudioPlayerFull = (props: {ariaLandmark: string; src?: string}) => (
   <AudioPlayerComposable
     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
     {...props}
@@ -148,7 +147,7 @@ const AudioPlayerFull = (props: AudioPlayerComposableProps) => (
   </AudioPlayerComposable>
 );
 
-const AudioPlayerInline = (props: AudioPlayerComposableProps) => (
+const AudioPlayerInline = (props: {ariaLandmark: string; src?: string}) => (
   <AudioPlayerComposable
     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
     {...props}
