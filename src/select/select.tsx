@@ -11,6 +11,7 @@ import {shouldRenderInModal} from './utils';
 import {withMediaQueryProvider} from '../utils/hooks/use-media-query/context';
 import {useBreakpointKey} from '../utils/hooks/use-media-query';
 import {useVirtualizedList} from './use-virtualized-list';
+import {Layer} from '../layer';
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -226,22 +227,24 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           {...downshiftButtonPropsExceptRef}
           {...restProps}
         />
-        <SelectPanel
-          isOpen={isOpen}
-          overrides={overrides}
-          width={width}
-          height={height}
-          top={top}
-          left={left}
-          size={size}
-          buttonRef={localInputRef}
-          renderInModal={renderInModal}
-          closeMenu={closeMenu}
-          {...downshiftMenuPropsExceptRef}
-          ref={composeRefs(panelRef, downshiftMenuPropsRef)}
-        >
-          {optionsAsChildren}
-        </SelectPanel>
+        <Layer>
+          <SelectPanel
+            isOpen={isOpen}
+            overrides={overrides}
+            width={width}
+            height={height}
+            top={top}
+            left={left}
+            size={size}
+            buttonRef={localInputRef}
+            renderInModal={renderInModal}
+            closeMenu={closeMenu}
+            {...downshiftMenuPropsExceptRef}
+            ref={composeRefs(panelRef, downshiftMenuPropsRef)}
+          >
+            {optionsAsChildren}
+          </SelectPanel>
+        </Layer>
       </>
     );
   },

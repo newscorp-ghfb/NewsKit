@@ -7,6 +7,7 @@ import {
   MediaQueryProvider,
   newskitLightTheme,
   styled,
+  LayerOrganizer,
 } from '../src';
 
 const unlimitedScenarios = [
@@ -80,7 +81,9 @@ export const decorators = [
   (Story, context) => {
     return (
       <ThemeProvider theme={getThemeFromContext(context)}>
-        <Story />
+        <LayerOrganizer>
+           <Story />
+        </LayerOrganizer>
       </ThemeProvider>
     );
   },

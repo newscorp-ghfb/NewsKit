@@ -12,6 +12,7 @@ import {getTransitionDuration} from '../utils/get-transition-duration';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {Layer} from '../layer';
 
 const ThemelessModal: React.FC<ModalProps> = ({
   children,
@@ -38,55 +39,57 @@ const ThemelessModal: React.FC<ModalProps> = ({
   const [showWrapper, setShowWrapper] = React.useState(false);
 
   return (
-    <BaseDialogFunction
-      open={open}
-      restoreFocusTo={restoreFocusTo}
-      onDismiss={onDismiss}
-      hideOverlay={hideOverlay}
-      disableFocusTrap={disableFocusTrap}
-      renderOverlay={handleOverlayClick => (
-        <Overlay
-          open={open}
-          onClick={handleOverlayClick}
-          overrides={overlayOverrides}
-        />
-      )}
-    >
-      {handleCloseButtonClick => (
-        <StyledModalWrapper
-          inline={props.inline}
-          $open={showWrapper}
-          overrides={overrides}
-        >
-          <CSSTransition
-            in={open}
-            timeout={getTransitionDuration(
-              `modal.panel`,
-              '',
-            )({theme, overrides})}
-            classNames="nk-modal"
-            mountOnEnter
-            unmountOnExit
-            appear
-            onEnter={() => setShowWrapper(true)}
-            onExited={() => setShowWrapper(false)}
+    <Layer>
+      <BaseDialogFunction
+        open={open}
+        restoreFocusTo={restoreFocusTo}
+        onDismiss={onDismiss}
+        hideOverlay={hideOverlay}
+        disableFocusTrap={disableFocusTrap}
+        renderOverlay={handleOverlayClick => (
+          <Overlay
+            open={open}
+            onClick={handleOverlayClick}
+            overrides={overlayOverrides}
+          />
+        )}
+      >
+        {handleCloseButtonClick => (
+          <StyledModalWrapper
+            inline={props.inline}
+            $open={showWrapper}
+            overrides={overrides}
           >
-            <StyledModal
-              open={open}
-              disableFocusTrap={disableFocusTrap}
-              handleCloseButtonClick={handleCloseButtonClick}
-              path="modal"
-              data-testid="modal"
-              closePosition={closePosition}
-              overrides={overrides}
-              {...props}
+            <CSSTransition
+              in={open}
+              timeout={getTransitionDuration(
+                `modal.panel`,
+                '',
+              )({theme, overrides})}
+              classNames="nk-modal"
+              mountOnEnter
+              unmountOnExit
+              appear
+              onEnter={() => setShowWrapper(true)}
+              onExited={() => setShowWrapper(false)}
             >
-              {children}
-            </StyledModal>
-          </CSSTransition>
-        </StyledModalWrapper>
-      )}
-    </BaseDialogFunction>
+              <StyledModal
+                open={open}
+                disableFocusTrap={disableFocusTrap}
+                handleCloseButtonClick={handleCloseButtonClick}
+                path="modal"
+                data-testid="modal"
+                closePosition={closePosition}
+                overrides={overrides}
+                {...props}
+              >
+                {children}
+              </StyledModal>
+            </CSSTransition>
+          </StyledModalWrapper>
+        )}
+      </BaseDialogFunction>
+    </Layer>
   );
 };
 

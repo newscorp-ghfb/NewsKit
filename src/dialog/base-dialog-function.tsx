@@ -80,7 +80,7 @@ export const BaseDialogFunction: React.FC<BaseDialogFunctionProps> = ({
   }, [disableFocusTrap, handleOnLockDeactivation, open]);
 
   return (
-    <div ref={baseDialogFunctionRef}>
+    <div ref={baseDialogFunctionRef} id="this-div-lives-in-basedialog-function">
       {!hideOverlay && renderOverlay(handleOverlayClick)}
       <FocusLock
         disabled={!open || disableFocusTrap}

@@ -8,6 +8,7 @@ import {Link} from '../../link';
 import {Stack} from '../../stack';
 import {H1, P} from '../../typography';
 import {useHasMounted} from '../../utils/hooks';
+import {Select, SelectOption} from '../../select';
 
 const Box = styled.div`
   width: 400px;
@@ -428,3 +429,88 @@ export const StoryOptionalHeaderClose = () =>
   });
 StoryOptionalHeaderClose.storyName = 'optional header & close';
 StoryOptionalHeaderClose.parameters = {eyes: {include: false}};
+
+const items = [
+  'Neptunium',
+  'Plutonium',
+  'Americium',
+  'Curium',
+  'Berkelium',
+  'Californium',
+  'Einsteinium',
+  'Fermium',
+  'Mendelevium',
+  'Nobelium',
+  'Lawrencium',
+  'Rutherfordium',
+  'Dubnium',
+  'Seaborgium',
+  'Bohrium',
+  'Hassium',
+  'Meitnerium',
+  'Darmstadtium',
+  'Roentgenium',
+  'Copernicium',
+  'Nihonium',
+  'Flerovium',
+  'Moscovium',
+  'Livermorium',
+  'Tennessine',
+  'Oganesson',
+];
+
+export const StoryNestedModals = () =>
+  React.createElement(() => {
+    const [isActive, open, close] = useActiveState();
+
+    const [isNestedActive, setIsNestedActive] = React.useState(false);
+    const openNested = () => setIsNestedActive(true);
+    const closeNested = () => setIsNestedActive(false);
+
+    return (
+      <div>
+        <StorybookHeading>Default Modal</StorybookHeading>
+        <Button onClick={open}>Open Modal</Button>
+        <Modal
+          aria-label="Default Modal"
+          open={isActive}
+          onDismiss={close}
+          header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+        >
+          <Stack
+            flow="vertical-center"
+            stackDistribution="center"
+            spaceInline="space020"
+          >
+            <Button onClick={openNested}>Open nested Modal</Button>
+
+            <Modal
+              aria-label="Nested Modal"
+              open={isNestedActive}
+              onDismiss={closeNested}
+              header="Nested Modal"
+            >
+              <Stack
+                flow="vertical-center"
+                stackDistribution="center"
+                spaceInline="space020"
+              >
+                <div>Ta da! You opened a nested modal</div>
+                <div>Now select something from the list below</div>
+                <Select aria-describedby="id-2-at" id="id-2" size="medium">
+                  {items.map(item => (
+                    <SelectOption key={item} value={item}>
+                      {item}
+                    </SelectOption>
+                  ))}
+                </Select>
+                <Button onClick={closeNested}>Close nested modal</Button>
+              </Stack>
+            </Modal>
+          </Stack>
+        </Modal>
+      </div>
+    );
+  });
+StoryNestedModals.storyName = 'nested-modals';
+StoryNestedModals.parameters = {eyes: {include: false}};
