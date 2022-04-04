@@ -36,11 +36,6 @@ import {
 } from './types';
 import {IconExpandLess, IconExpandMore} from '../icons';
 
-const NavigationDivider = styled.div`
-  ${getSpacingCssFromTheme('marginTop', 'space050')};
-  ${getSpacingCssFromTheme('marginBottom', 'space050')};
-`;
-
 const MobileSideNavigation = styled.div`
   ${getSpacingCssFromTheme('marginTop', 'space040')};
   ${getSpacingCssFromTheme('marginBottom', 'space010')};
@@ -70,6 +65,124 @@ const MobileSideNavigation = styled.div`
       ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
     }
   }
+`;
+
+const mobileMenuItemOverrides = {
+  typographyPreset: 'utilityButton020',
+  spaceInset: 'space030',
+  spaceStack: 'space000',
+  stylePreset: 'sideNavItemHorizontal',
+};
+
+type MobileSideNavProps = {
+  title: string;
+  id: string;
+  description?: string;
+  page?: boolean;
+};
+
+type MobileSideSubNavProps = {
+  subNav?: MobileSideNavProps[];
+};
+
+type MobileSideSubNavItemProps = MobileSideNavProps & MobileSideSubNavProps;
+
+const RenderMobileNavigation = ({
+  path,
+  menu,
+}: {
+  menu: MobileSideSubNavItemProps[];
+  path: string;
+}) => {
+  const [openPanelIds, setOpenPanelIds] = useState<Array<number>>([]);
+  useEffect(() => {
+    const index = menu.findIndex(obj => path.includes(obj.id)) || 0;
+    setOpenPanelIds([index]);
+  }, []);
+  const createMenuItem = (list: MobileSideSubNavItemProps[]) => (
+    <>
+      {list &&
+        list.map(({title, id, subNav, page}) => (
+          <>
+            {page ? (
+              <>
+                <MenuItem
+                  href={id}
+                  overrides={mobileMenuItemOverrides}
+                  selected={path.includes(id)}
+                  size="small"
+                  className={path.includes(id) ? 'selected' : undefined}
+                >
+                  {title}
+                </MenuItem>
+              </>
+            ) : (
+              <>
+                <Block spaceStack="space030" />
+                <MenuGroup
+                  title={title}
+                  overrides={{
+                    title: {
+                      typographyPreset: 'utilityButton030',
+                      stylePreset: 'inkContrast',
+                      spaceInset: 'space030',
+                      spaceInline: 'space040',
+                    },
+                  }}
+                >
+                  {subNav && createMenuItem(subNav)}
+                </MenuGroup>
+              </>
+            )}
+          </>
+        ))}
+    </>
+  );
+  return (
+    <UnorderedList>
+      {menu.map(({title, subNav}, index) => (
+        <MobileSideNavigation
+          className={openPanelIds.includes(index) ? 'expanded' : 'collapsed'}
+        >
+          <H2
+            overrides={{typographyPreset: 'utilityHeading020'}}
+            onClick={() =>
+              openPanelIds.includes(index)
+                ? setOpenPanelIds([])
+                : setOpenPanelIds([index])
+            }
+          >
+            <Stack
+              flow={Flow.HorizontalCenter}
+              stackDistribution="space-between"
+            >
+              <span>{title}</span>
+              {openPanelIds.includes(index) ? (
+                <IconExpandLess />
+              ) : (
+                <IconExpandMore />
+              )}
+            </Stack>
+          </H2>
+          <Menu
+            aria-label="menu"
+            vertical
+            size="small"
+            align="start"
+            overrides={{spaceInline: 'space000'}}
+          >
+            <Block spaceStack="space030" />
+            {subNav && createMenuItem(subNav)}
+          </Menu>
+        </MobileSideNavigation>
+      ))}
+    </UnorderedList>
+  );
+};
+
+const NavigationDivider = styled.div`
+  ${getSpacingCssFromTheme('marginTop', 'space050')};
+  ${getSpacingCssFromTheme('marginBottom', 'space050')};
 `;
 
 const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
@@ -145,119 +258,6 @@ const Section: React.FC<SectionProps> = ({section, activePagePath}) => (
     </StyledNavigationSection>
   </StyledSectionContainer>
 );
-
-type NavProps = {
-  title: string;
-  id: string;
-  description?: string;
-  page?: boolean;
-};
-
-type SubNav = {
-  subNav?: NavProps[];
-};
-
-type SubNavItemProps = NavProps & SubNav;
-
-const menuItemOverrides = {
-  typographyPreset: 'utilityButton020',
-  spaceInset: 'space030',
-  spaceStack: 'space000',
-  stylePreset: 'sideNavItemHorizontal',
-};
-
-const RenderMobileNavigation = ({
-  path,
-  menu,
-}: {
-  menu: SubNavItemProps[];
-  path: string;
-}) => {
-  const [openPanelIds, setOpenPanelIds] = useState<Array<number>>([]);
-  useEffect(() => {
-    const index = menu.findIndex(obj => path.includes(obj.id)) || 0;
-    setOpenPanelIds([index]);
-  }, []);
-  const createMenuItem = (list: SubNavItemProps[]) => (
-    <>
-      {list &&
-        list.map(({title, id, subNav, page}) => (
-          <>
-            {page ? (
-              <>
-                <MenuItem
-                  href={id}
-                  overrides={menuItemOverrides}
-                  selected={path.includes(id)}
-                  size="small"
-                  className={path.includes(id) ? 'selected' : undefined}
-                >
-                  {title}
-                </MenuItem>
-              </>
-            ) : (
-              <>
-                <Block spaceStack="space030" />
-                <MenuGroup
-                  title={title}
-                  overrides={{
-                    title: {
-                      typographyPreset: 'utilityButton030',
-                      stylePreset: 'inkContrast',
-                      spaceInset: 'space030',
-                      spaceInline: 'space040',
-                    },
-                  }}
-                >
-                  {subNav && createMenuItem(subNav)}
-                </MenuGroup>
-              </>
-            )}
-          </>
-        ))}
-    </>
-  );
-  return (
-    <UnorderedList>
-      {menu.map(({title, subNav}, index) => (
-        <MobileSideNavigation
-          className={openPanelIds.includes(index) ? 'expanded' : 'collapsed'}
-        >
-          <H2
-            overrides={{typographyPreset: 'utilityHeading020'}}
-            onClick={() =>
-              openPanelIds.includes(index)
-                ? setOpenPanelIds([])
-                : setOpenPanelIds([index])
-            }
-          >
-            <Stack
-              flow={Flow.HorizontalCenter}
-              stackDistribution="space-between"
-            >
-              <span>{title}</span>
-              {openPanelIds.includes(index) ? (
-                <IconExpandLess />
-              ) : (
-                <IconExpandMore />
-              )}
-            </Stack>
-          </H2>
-          <Menu
-            aria-label="menu"
-            vertical
-            size="small"
-            align="start"
-            overrides={{spaceInline: 'space000'}}
-          >
-            <Block spaceStack="space030" />
-            {subNav && createMenuItem(subNav)}
-          </Menu>
-        </MobileSideNavigation>
-      ))}
-    </UnorderedList>
-  );
-};
 
 export const SidebarNav: React.FC = () => {
   const path = useRouter().pathname;
