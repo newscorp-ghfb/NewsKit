@@ -5,11 +5,11 @@ import {useAudioPlayerContext} from '../../context';
 import defaults from './defaults';
 import {withOwnTheme} from '../../../utils/with-own-theme';
 import {useButtonOverrides, useKeyboardShortcutsOnButton} from '../../utils';
-import {AudioPlayerIconButtonWithShortcuts} from '../../types';
+import {AudioPlayerPlayPauseButtonProps} from './types';
 
 const defaultKeyboardShortcuts = ['k', ' '];
 
-const ThemelessAudioPlayerPlayPauseButton: React.FC<AudioPlayerIconButtonWithShortcuts> = React.memo(
+const ThemelessAudioPlayerPlayPauseButton: React.FC<AudioPlayerPlayPauseButtonProps> = React.memo(
   props => {
     const {getPlayPauseButtonProps, togglePlay} = useAudioPlayerContext();
 
@@ -39,7 +39,7 @@ const ThemelessAudioPlayerPlayPauseButton: React.FC<AudioPlayerIconButtonWithSho
     );
 
     useKeyboardShortcutsOnButton({
-      props: propsFromContext as AudioPlayerIconButtonWithShortcuts,
+      props: propsFromContext as AudioPlayerPlayPauseButtonProps,
       defaults: defaultKeyboardShortcuts,
       action: toggleAction,
     });

@@ -1,19 +1,21 @@
 /* eslint-disable no-console */
 import * as React from 'react';
-import {AudioPlayerPlayPauseButton} from '../components/play-pause-button';
-import {AudioPlayerTimeDisplay} from '../components/time-display';
-import {AudioPlayerForwardButton} from '../components/forward-button';
-import {AudioPlayerReplayButton} from '../components/replay-button';
-import {AudioPlayerComposable} from '../audio-player-composable';
-import {AudioPlayerSkipNextButton} from '../components/skip-next/skip-next';
-import {AudioPlayerSkipPreviousButton} from '../components/skip-previous/skip-previous';
+import {
+  AudioPlayerComposable,
+  AudioPlayerForwardButton,
+  AudioPlayerPlayPauseButton,
+  AudioPlayerReplayButton,
+  AudioPlayerSeekBar,
+  AudioPlayerTimeDisplay,
+  AudioPlayerSkipNextButton,
+  AudioPlayerSkipPreviousButton,
+} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {calculateTime} from '../components/time-display/utils';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
-import {AudioPlayerSeekBar} from '../components/seek-bar';
 import {createTheme, ThemeProvider} from '../../theme';
 import {Block} from '../../block';
 import {ButtonSize} from '../../button/types';

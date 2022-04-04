@@ -2,14 +2,16 @@ import * as React from 'react';
 import {ButtonSize, Button} from '../../button';
 import {GridLayout} from '../../grid-layout/grid-layout';
 import {StorybookSubHeading} from '../../test/storybook-comps';
-import {AudioPlayerComposable} from '../audio-player-composable';
-import {AudioPlayerForwardButton} from '../components/forward-button';
-import {AudioPlayerPlayPauseButton} from '../components/play-pause-button';
-import {AudioPlayerReplayButton} from '../components/replay-button';
-import {AudioPlayerSeekBar} from '../components/seek-bar';
-import {AudioPlayerTimeDisplay} from '../components/time-display';
-import {AudioPlayerSkipNextButton} from '../components/skip-next/skip-next';
-import {AudioPlayerSkipPreviousButton} from '../components/skip-previous/skip-previous';
+import {
+  AudioPlayerComposable,
+  AudioPlayerForwardButton,
+  AudioPlayerPlayPauseButton,
+  AudioPlayerReplayButton,
+  AudioPlayerSeekBar,
+  AudioPlayerTimeDisplay,
+  AudioPlayerSkipNextButton,
+  AudioPlayerSkipPreviousButton,
+} from '..';
 import {calculateTime} from '../components/time-display/utils';
 
 export default {

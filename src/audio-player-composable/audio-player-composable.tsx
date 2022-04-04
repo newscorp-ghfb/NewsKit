@@ -17,7 +17,6 @@ import {
   AudioEvents,
   AudioFunctionDependencies,
   AudioPlayerComposableProps,
-  AudioPlayerIconButtonProps,
 } from './types';
 import {formatFunction} from './components/time-display/utils';
 import {
@@ -28,6 +27,11 @@ import {
 } from '../icons';
 import {IconButtonProps} from '../icon-button/types';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
+import {AudioPlayerPlayPauseButtonProps} from './components/play-pause-button/types';
+import {AudioPlayerForwardButtonProps} from './components/forward-button/types';
+import {AudioPlayerReplayButtonProps} from './components/replay-button/types';
+import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/types';
+import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
 
 const defaultKeyboardShortcuts = {
   jumpToStart: ['0', 'Home'],
@@ -97,7 +101,7 @@ export const AudioPlayerComposable = ({
     ({
       onClick: consumerOnClick,
       ...getterProps
-    }: AudioPlayerIconButtonProps): IconButtonProps & {
+    }: AudioPlayerPlayPauseButtonProps): IconButtonProps & {
       playing: boolean;
       canPause: boolean;
     } => {
@@ -133,6 +137,9 @@ export const AudioPlayerComposable = ({
         // can  be needed for custom internal logic
         playing,
         canPause,
+      } as IconButtonProps & {
+        playing: boolean;
+        canPause: boolean;
       };
     },
     [live, loading, playing, togglePlay],
@@ -143,7 +150,7 @@ export const AudioPlayerComposable = ({
       onClick: consumerOnClick,
       seconds = 10,
       ...getterProps
-    }: AudioPlayerIconButtonProps): IconButtonProps => {
+    }: AudioPlayerForwardButtonProps): IconButtonProps => {
       const onClickForwardWithSeconds = () => onClickForward({seconds});
 
       return {
@@ -154,7 +161,7 @@ export const AudioPlayerComposable = ({
           onClickForwardWithSeconds,
         ]),
         ...getterProps,
-      };
+      } as IconButtonProps;
     },
     [onClickForward],
   );
@@ -164,7 +171,7 @@ export const AudioPlayerComposable = ({
       onClick: consumerOnClick,
       seconds = 10,
       ...getterProps
-    }: AudioPlayerIconButtonProps): IconButtonProps => {
+    }: AudioPlayerReplayButtonProps): IconButtonProps => {
       const onClickWithBackwardWithSeconds = () => onClickBackward({seconds});
       return {
         children: <IconFilledReplay10 />,
@@ -174,7 +181,7 @@ export const AudioPlayerComposable = ({
           onClickWithBackwardWithSeconds,
         ]),
         ...getterProps,
-      };
+      } as IconButtonProps;
     },
     [onClickBackward],
   );
@@ -202,7 +209,7 @@ export const AudioPlayerComposable = ({
     ({
       onClick: consumerOnClick,
       ...getterProps
-    }: AudioPlayerIconButtonProps): IconButtonProps => {
+    }: AudioPlayerSkipPreviousButtonProps): IconButtonProps => {
       const onClick = (event: React.MouseEvent<HTMLButtonElement>) => {
         if (currentTime > 5) {
           onChangeSlider(0);
@@ -219,18 +226,19 @@ export const AudioPlayerComposable = ({
         'aria-label': 'previous',
         disabled: isDisabled,
         ...getterProps,
-      };
+      } as IconButtonProps;
     },
     [currentTime, onChangeSlider],
   );
 
   const getSkipNextButtonProps = useCallback(
-    ({...getterProps}: AudioPlayerIconButtonProps): IconButtonProps => ({
-      children: <IconFilledSkipNext />,
-      'aria-label': 'next',
-      disabled: typeof getterProps.onClick !== 'function',
-      ...getterProps,
-    }),
+    ({...getterProps}: AudioPlayerSkipNextButtonProps): IconButtonProps =>
+      ({
+        children: <IconFilledSkipNext />,
+        'aria-label': 'next',
+        disabled: typeof getterProps.onClick !== 'function',
+        ...getterProps,
+      } as IconButtonProps),
     [],
   );
 

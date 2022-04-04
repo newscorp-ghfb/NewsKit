@@ -2,14 +2,14 @@ import React from 'react';
 import {IconButton} from '../../../icon-button';
 import {ButtonSize} from '../../../button/types';
 import {useAudioPlayerContext} from '../../context';
-import {AudioPlayerIconButtonWithShortcuts} from '../../types';
 import defaults from './defaults';
 import {withOwnTheme} from '../../../utils/with-own-theme';
 import {useButtonOverrides, useKeyboardShortcutsOnButton} from '../../utils';
+import {AudioPlayerSkipNextButtonProps} from './types';
 
 const defaultKeyboardShortcuts = ['shift + n'];
 
-const ThemelessAudioPlayerSkipNextButton: React.FC<AudioPlayerIconButtonWithShortcuts> = React.memo(
+const ThemelessAudioPlayerSkipNextButton: React.FC<AudioPlayerSkipNextButtonProps> = React.memo(
   props => {
     const {getSkipNextButtonProps} = useAudioPlayerContext();
 
@@ -19,7 +19,7 @@ const ThemelessAudioPlayerSkipNextButton: React.FC<AudioPlayerIconButtonWithShor
       getSkipNextButtonProps! && getSkipNextButtonProps(props);
 
     useKeyboardShortcutsOnButton({
-      props: propsFromContext as AudioPlayerIconButtonWithShortcuts,
+      props: propsFromContext as AudioPlayerSkipNextButtonProps,
       defaults: defaultKeyboardShortcuts,
     });
 

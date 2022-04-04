@@ -4,7 +4,7 @@ import {filterOutFalsyProperties} from '../utils/filter-object';
 import {get} from '../utils/get';
 import {useKeypress} from '../utils/hooks';
 import {useAudioPlayerContext} from './context';
-import {AudioPlayerIconButtonWithShortcuts} from './types';
+import {AudioPlayerIconButtonWithShortcuts} from './components/types';
 
 const hhmmss: [number, number] = [11, 8];
 const mmss: [number, number] = [14, 5];
@@ -60,7 +60,7 @@ export const useKeyboardShortcutsOnButton = ({
 export const useButtonOverrides = (
   props: Pick<IconButtonProps, 'overrides'>,
   defaultsPath: string,
-) => {
+): IconButtonProps['overrides'] => {
   const theme = useTheme();
   const {overrides} = props;
 
