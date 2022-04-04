@@ -56,6 +56,10 @@ export const StyledSecondLevelHeader = styled.div`
 
 export const StyledSidebarNav = styled.nav`
   ${getTypographyPresetFromTheme('utilityBody030')};
+
+  & ul > li > div {
+    display: block;
+  }
 `;
 
 export const StyledSectionContainer = styled.li`

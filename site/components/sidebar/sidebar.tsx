@@ -23,7 +23,7 @@ interface SidebarWrapperProps {
 }
 
 const SidebarWrapper = styled.div<SidebarWrapperProps>`
-  width: 276px;
+  width: 100%;
   ${getSpacingCssFromTheme('paddingLeft', 'space050')};
   ${getSpacingCssFromTheme('paddingRight', 'space050')};
   position: fixed;
@@ -39,6 +39,7 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   ${getStylePresetFromTheme('sidebar')};
 
   ${getMediaQueryFromTheme('lg')} {
+    width: 276px;
     display: ${({hideSidebar}) => hideSidebar && 'none'};
     ${getSpacingCssFromTheme('marginTop', 'space100')};
     transform: translateX(0);

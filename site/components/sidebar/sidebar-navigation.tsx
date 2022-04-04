@@ -42,9 +42,9 @@ const NavigationDivider = styled.div`
 `;
 
 const MobileSideNavigation = styled.div`
-  width: 225px;
   ${getSpacingCssFromTheme('marginTop', 'space040')};
   ${getSpacingCssFromTheme('marginBottom', 'space010')};
+
   &.collapsed > nav {
     overflow: hidden;
     max-height: 0px;

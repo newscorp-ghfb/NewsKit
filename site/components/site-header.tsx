@@ -18,6 +18,7 @@ import {
   Block,
   getBorderFromTheme,
   getColorFromTheme,
+  getSizingFromTheme,
 } from 'newskit';
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
@@ -69,9 +70,18 @@ export const StyledLinkItem = styled.div<{
       isSelected: $selected,
     })(props)}
   box-sizing: border-box;
-  ${({$selected}) =>
-    $selected &&
-    '::after {content: "";background: #3358CC;height: 5px;border-radius: 5px 5px 0 0;display: block; position: relative; top: 31px;'}
+
+  &.selected {
+    ::after {
+      content: '';
+      background: ${getColorFromTheme('blue060')};
+      height: ${getSizingFromTheme('sizing010')};
+      border-radius: 5px 5px 0 0;
+      display: block;
+      position: relative;
+      top: 32px;
+    }
+  }
 `;
 
 const StyledVisible = styled(Visible)`
@@ -138,6 +148,11 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                 undefined
               }
               $selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
+              className={
+                currentRoute.split('/')[1].includes(id.split('/')[1])
+                  ? 'selected'
+                  : undefined
+              }
             >
               {title}
             </StyledLinkItem>
