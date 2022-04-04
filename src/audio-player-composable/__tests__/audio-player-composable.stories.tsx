@@ -408,7 +408,7 @@ export const AudioPlayerKeyboard = () => (
     </StorybookSubHeading>
     <AudioPlayerComposable
       src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      ariaLandmark="audio player full"
+      ariaLandmark="audio player keyboard overrides"
       keyboardShortcuts={{
         jumpToStart: '1',
         jumpToEnd: '9',
