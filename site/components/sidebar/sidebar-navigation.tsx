@@ -1,7 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {useRouter} from 'next/router';
 import {
-  Block,
   Visible,
   UnorderedList,
   Menu,
@@ -37,9 +36,15 @@ import {
 import {IconExpandLess, IconExpandMore} from '../icons';
 
 const MobileSideNavigation = styled.div`
-  ${getSpacingCssFromTheme('marginTop', 'space040')};
-  ${getSpacingCssFromTheme('marginBottom', 'space010')};
+  ${getSpacingCssFromTheme('marginTop', 'space030')};
+  ${getSpacingCssFromTheme('marginBottom', 'space000')};
 
+  & .nk-menu-group {
+    ${getSpacingCssFromTheme('marginTop', 'space030')};
+  }
+  & h2 {
+    ${getSpacingCssFromTheme('marginBottom', 'space030')};
+  }
   &.collapsed > nav {
     overflow: hidden;
     max-height: 0px;
@@ -66,13 +71,6 @@ const MobileSideNavigation = styled.div`
     }
   }
 `;
-
-const mobileMenuItemOverrides = {
-  typographyPreset: 'utilityButton020',
-  spaceInset: 'space030',
-  spaceStack: 'space000',
-  stylePreset: 'sideNavItemHorizontal',
-};
 
 type MobileSideNavProps = {
   title: string;
@@ -108,7 +106,11 @@ const RenderMobileNavigation = ({
               <>
                 <MenuItem
                   href={id}
-                  overrides={mobileMenuItemOverrides}
+                  overrides={{
+                    typographyPreset: 'utilityButton020',
+                    spaceInset: 'space030',
+                    stylePreset: 'sideNavItemHorizontal',
+                  }}
                   selected={path.includes(id)}
                   size="small"
                   className={path.includes(id) ? 'selected' : undefined}
@@ -118,7 +120,6 @@ const RenderMobileNavigation = ({
               </>
             ) : (
               <>
-                <Block spaceStack="space030" />
                 <MenuGroup
                   title={title}
                   overrides={{
@@ -171,7 +172,6 @@ const RenderMobileNavigation = ({
             align="start"
             overrides={{spaceInline: 'space000'}}
           >
-            <Block spaceStack="space030" />
             {subNav && createMenuItem(subNav)}
           </Menu>
         </MobileSideNavigation>
