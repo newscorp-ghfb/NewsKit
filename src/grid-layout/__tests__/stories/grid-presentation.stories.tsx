@@ -1,20 +1,65 @@
 import * as React from 'react';
 import {styled} from '../../../utils';
-import {Block} from '../../../block';
-import {Divider} from '../../../divider';
-import {GridBox} from './common';
-import {Grid, Cell} from '../../../grid';
-import {Label} from '../../..';
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../../test/storybook-comps';
+import {Button, Flag, Headline, IconFilledEmail} from '../../..';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
+import {TextBlock} from '../../../text-block';
 
 export default {
   title: 'NewsKit Light/grid-layout-presentation',
   component: () => 'None',
 };
+
+const ImagePlaceholder = () => (
+  <img
+    src="https://picsum.photos/200/200"
+    alt=""
+    style={{width: '100%', height: '100%'}}
+  />
+);
+const TitlePlaceholder = () => (
+  <Headline
+    kickerText="Lorem Ipsum"
+    overrides={{
+      typographyPreset: {
+        xs: 'editorialHeadline020',
+      },
+    }}
+  >
+    Lorem Ipsum is simply dummy text
+  </Headline>
+);
+const TextPlaceholder = () => (
+  <TextBlock typographyPreset="editorialParagraph020">
+    It is a long established fact that a reader will be distracted by the
+    readable content of a page when looking at its layout.
+  </TextBlock>
+);
+
+const ActionPlaceholder = () => (
+  <Button
+    href="#"
+    size="small"
+    overrides={{
+      stylePreset: `buttonMinimalPrimary`,
+    }}
+  >
+    Button
+    <IconFilledEmail />
+  </Button>
+);
+
+const SharePlaceholder = () => (
+  <Button
+    size="small"
+    href="#"
+    overrides={{
+      stylePreset: `buttonMinimalPositive`,
+    }}
+  >
+    <IconFilledEmail />
+    Share
+  </Button>
+);
 
 const Item = styled.div`
   padding: 10px;
@@ -104,7 +149,7 @@ const cardAreas = {
   `,
 };
 
-// Advanced examples
+// Card examples
 export const Example4 = () => (
   <GridLayout
     areas={cardAreas}
@@ -115,19 +160,85 @@ export const Example4 = () => (
     {({Thumb, Content, Action, Share}) => (
       <>
         <Thumb>
-          <img src="http://placekitten.com/200/200" alt="" />
+          <ImagePlaceholder />
         </Thumb>
         <Content>
-          <h1>Title</h1>
-          <p>leading text</p>
+          <TitlePlaceholder />
+          <TextPlaceholder />
         </Content>
-        <Action>Date: Today</Action>
+        <Action>
+          <ActionPlaceholder />
+        </Action>
         <Share justifySelf="end">
-          <a href="#">share here</a>
+          <SharePlaceholder />
         </Share>
         <Thumb alignSelf="end">
-          <a href="#">tag of the image</a>
+          <Flag>tag of the image</Flag>
         </Thumb>
+      </>
+    )}
+  </GridLayout>
+);
+
+const layoutAreas = {
+  xs: `
+    a
+    b
+    c
+    d
+    e
+  `,
+  md: `
+    a a
+    b c
+    d e
+  `,
+  lg: `
+    a b
+    a c
+    a d
+    a e  
+  `,
+};
+
+const layoutColumns = {
+  xs: '1fr',
+  md: '1fr 1fr',
+  lg: 'auto 200px',
+};
+
+const layoutRows = {
+  xs: 'repeat(5, 150px)',
+  md: '300px 150px 150px',
+  lg: 'repeat(4, 150px)',
+};
+
+// Layout example
+export const Example5 = () => (
+  <GridLayout
+    areas={layoutAreas}
+    columns={layoutColumns}
+    rows={layoutRows}
+    columnGap="space050"
+    rowGap="space050"
+  >
+    {({A, B, C, D, E}) => (
+      <>
+        <A>
+          <ImagePlaceholder />
+        </A>
+        <B>
+          <ImagePlaceholder />
+        </B>
+        <C>
+          <ImagePlaceholder />
+        </C>
+        <D>
+          <ImagePlaceholder />
+        </D>
+        <E>
+          <ImagePlaceholder />
+        </E>
       </>
     )}
   </GridLayout>
