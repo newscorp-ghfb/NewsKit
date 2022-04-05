@@ -46,15 +46,12 @@ export const useKeyboardShortcutsOnButton = ({
   action,
 }: UseKeyboardShortcutsType) => {
   const {audioSectionRef} = useAudioPlayerContext();
-
-  const {keyboardShortcuts: keyboardShortcutsProp} = props;
-
   const options = {target: audioSectionRef, preventDefault: false};
-  const keyboardShortcuts = keyboardShortcutsProp || defaultKeys;
+  const {keyboardShortcuts} = props;
+  const key = keyboardShortcuts || defaultKeys;
 
   const callback = action || props.onClick;
-
-  useKeypress(keyboardShortcuts, callback, options);
+  useKeypress(key, callback, options);
 };
 
 export const useButtonOverrides = (

@@ -270,8 +270,12 @@ export const AudioPlayerOverrides = () => (
       ariaLandmark="audio player overrides"
     >
       <GridLayout
-        rowGap="20px"
-        columns="50px 1fr 50px"
+        columns={{
+          xs: '1fr auto auto auto 1fr',
+          md: '50px 1fr auto auto auto 1fr 50px',
+        }}
+        rowGap="space040"
+        columnGap="space040"
         areas={{
           xs: fullAudioPlayerAreasMobile,
           md: fullAudioPlayerAreasDesktop,
@@ -279,6 +283,64 @@ export const AudioPlayerOverrides = () => (
       >
         {Areas => (
           <>
+            <Areas.Play alignSelf="center">
+              <AudioPlayerPlayPauseButton
+                overrides={{
+                  iconSize: 'iconSize030',
+                  stylePreset: 'buttonOutlinedNegative',
+                }}
+              />
+            </Areas.Play>
+
+            <Areas.Backward alignSelf="center">
+              <AudioPlayerReplayButton
+                seconds={5}
+                overrides={{
+                  iconSize: 'iconSize030',
+                  stylePreset: 'buttonOutlinedNegative',
+                }}
+              >
+                <IconFilledReplay5 />
+              </AudioPlayerReplayButton>
+            </Areas.Backward>
+
+            <Areas.Forward alignSelf="center">
+              <AudioPlayerForwardButton
+                seconds={5}
+                overrides={{
+                  iconSize: 'iconSize030',
+                  stylePreset: 'buttonOutlinedNegative',
+                }}
+              >
+                <IconFilledForward5 />
+              </AudioPlayerForwardButton>
+            </Areas.Forward>
+
+            <Areas.Prev alignSelf="center" justifySelf="end">
+              <AudioPlayerSkipPreviousButton
+                overrides={{
+                  iconSize: 'iconSize030',
+                  stylePreset: 'buttonOutlinedNegative',
+                }}
+              />
+            </Areas.Prev>
+
+            <Areas.Next alignSelf="center">
+              <AudioPlayerSkipNextButton
+                overrides={{
+                  iconSize: 'iconSize030',
+                  stylePreset: 'buttonOutlinedNegative',
+                }}
+                onClick={() => console.log('on skip Next track')}
+              />
+            </Areas.Next>
+
+            <Areas.Volume alignSelf="center" justifySelf="start">
+              <Hidden xs sm>
+                Not yet
+              </Hidden>
+            </Areas.Volume>
+
             <Areas.SeekBar>
               <AudioPlayerSeekBar
                 overrides={{
@@ -301,7 +363,8 @@ export const AudioPlayerOverrides = () => (
                 }}
               />
             </Areas.SeekBar>
-            <Areas.CurrentTime justifySelf="start">
+
+            <Areas.CurrentTime>
               <AudioPlayerTimeDisplay
                 overrides={{
                   typographyPreset: 'editorialSubheadline010',
@@ -310,6 +373,7 @@ export const AudioPlayerOverrides = () => (
                 format={({currentTime}) => calculateTime(currentTime)}
               />
             </Areas.CurrentTime>
+
             <Areas.TotalTime justifySelf="end">
               <AudioPlayerTimeDisplay
                 overrides={{
@@ -319,63 +383,18 @@ export const AudioPlayerOverrides = () => (
                 format={({duration}) => calculateTime(duration)}
               />
             </Areas.TotalTime>
-            <Areas.Volume alignSelf="center" justifySelf="start">
-              <Hidden xs sm>
-                Not yet
-              </Hidden>
-            </Areas.Volume>
+
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
-                Not yet
+                <IconButton
+                  aria-label="Open popout player"
+                  href="https://www.newskit.co.uk/"
+                  overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
+                >
+                  <IconFilledLaunch />
+                </IconButton>
               </Hidden>
             </Areas.Link>
-            <Areas.Controls>
-              <GridLayout
-                columns="repeat(5, auto)"
-                columnGap="20px"
-                justifyContent="center"
-                alignItems="center"
-              >
-                <AudioPlayerSkipPreviousButton
-                  overrides={{
-                    iconSize: 'iconSize030',
-                    stylePreset: 'buttonOutlinedNegative',
-                  }}
-                />
-                <AudioPlayerReplayButton
-                  seconds={5}
-                  overrides={{
-                    iconSize: 'iconSize030',
-                    stylePreset: 'buttonOutlinedNegative',
-                  }}
-                >
-                  <IconFilledReplay5 />
-                </AudioPlayerReplayButton>
-
-                <AudioPlayerPlayPauseButton
-                  overrides={{
-                    iconSize: 'iconSize030',
-                    stylePreset: 'buttonOutlinedNegative',
-                  }}
-                />
-
-                <AudioPlayerForwardButton
-                  seconds={5}
-                  overrides={{
-                    iconSize: 'iconSize030',
-                    stylePreset: 'buttonOutlinedNegative',
-                  }}
-                >
-                  <IconFilledForward5 />
-                </AudioPlayerForwardButton>
-                <AudioPlayerSkipNextButton
-                  overrides={{
-                    iconSize: 'iconSize030',
-                    stylePreset: 'buttonOutlinedNegative',
-                  }}
-                />
-              </GridLayout>
-            </Areas.Controls>
           </>
         )}
       </GridLayout>
@@ -428,8 +447,12 @@ export const AudioPlayerKeyboard = () => (
       }}
     >
       <GridLayout
-        columns="50px 1fr 50px"
-        rowGap="20px"
+        columns={{
+          xs: '1fr auto auto auto 1fr',
+          md: '50px 1fr auto auto auto 1fr 50px',
+        }}
+        rowGap="space040"
+        columnGap="space040"
         areas={{
           xs: fullAudioPlayerAreasMobile,
           md: fullAudioPlayerAreasDesktop,
@@ -437,24 +460,54 @@ export const AudioPlayerKeyboard = () => (
       >
         {Areas => (
           <>
-            <Areas.SeekBar>
-              <AudioPlayerSeekBar />
-            </Areas.SeekBar>
-            <Areas.CurrentTime>
-              <AudioPlayerTimeDisplay
-                format={({currentTime}) => calculateTime(currentTime)}
+            <Areas.Play alignSelf="center">
+              <AudioPlayerPlayPauseButton keyboardShortcuts="s" />
+            </Areas.Play>
+
+            <Areas.Backward alignSelf="center">
+              <AudioPlayerReplayButton keyboardShortcuts="a" />
+            </Areas.Backward>
+
+            <Areas.Forward alignSelf="center">
+              <AudioPlayerForwardButton keyboardShortcuts="d" />
+            </Areas.Forward>
+
+            <Areas.Prev alignSelf="center" justifySelf="end">
+              <AudioPlayerSkipPreviousButton
+                keyboardShortcuts="p"
+                onClick={() => console.log('on skip Prev track')}
               />
-            </Areas.CurrentTime>
-            <Areas.TotalTime justifySelf="end">
-              <AudioPlayerTimeDisplay
-                format={({duration}) => calculateTime(duration)}
+            </Areas.Prev>
+
+            <Areas.Next alignSelf="center">
+              <AudioPlayerSkipNextButton
+                keyboardShortcuts="n"
+                onClick={() => console.log('on skip Next track')}
               />
-            </Areas.TotalTime>
+            </Areas.Next>
+
             <Areas.Volume alignSelf="center" justifySelf="start">
               <Hidden xs sm>
                 Not yet
               </Hidden>
             </Areas.Volume>
+
+            <Areas.SeekBar>
+              <AudioPlayerSeekBar />
+            </Areas.SeekBar>
+
+            <Areas.CurrentTime>
+              <AudioPlayerTimeDisplay
+                format={({currentTime}) => calculateTime(currentTime)}
+              />
+            </Areas.CurrentTime>
+
+            <Areas.TotalTime justifySelf="end">
+              <AudioPlayerTimeDisplay
+                format={({duration}) => calculateTime(duration)}
+              />
+            </Areas.TotalTime>
+
             <Areas.Link alignSelf="center" justifySelf="end">
               <Hidden xs sm>
                 <IconButton
@@ -466,27 +519,6 @@ export const AudioPlayerKeyboard = () => (
                 </IconButton>
               </Hidden>
             </Areas.Link>
-
-            <Areas.Controls>
-              <GridLayout
-                columns="repeat(5, auto)"
-                columnGap="space045"
-                justifyContent="center"
-                alignItems="center"
-              >
-                <AudioPlayerSkipPreviousButton
-                  keyboardShortcuts="p"
-                  onClick={() => console.log('on skip Prev track')}
-                />
-                <AudioPlayerReplayButton seconds={20} keyboardShortcuts="a" />
-                <AudioPlayerPlayPauseButton keyboardShortcuts="s" />
-                <AudioPlayerForwardButton seconds={20} keyboardShortcuts="d" />
-                <AudioPlayerSkipNextButton
-                  keyboardShortcuts="n"
-                  onClick={() => console.log('on skip Next track')}
-                />
-              </GridLayout>
-            </Areas.Controls>
           </>
         )}
       </GridLayout>
