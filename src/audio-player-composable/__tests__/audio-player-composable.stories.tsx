@@ -147,8 +147,14 @@ const AudioPlayerFull = (props: {ariaLandmark: string; src?: string}) => (
             <Hidden xs sm>
               <IconButton
                 aria-label="Open popout player"
-                href="https://www.newskit.co.uk/"
                 overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
+                onClick={() => {
+                  window.open(
+                    'https://www.newskit.co.uk/',
+                    '',
+                    'width=380,height=665',
+                  );
+                }}
               >
                 <IconFilledLaunch />
               </IconButton>
@@ -536,9 +542,9 @@ export const AudioPlayerKeyboard = () => (
       <dt>p</dt>
       <dd>Prev track</dd>
       <dt>d</dt>
-      <dd>Forward 20sec</dd>
+      <dd>Forward 10sec</dd>
       <dt>a</dt>
-      <dd>Replay 20 sec</dd>
+      <dd>Replay 10 sec</dd>
     </GridLayout>
   </>
 );
