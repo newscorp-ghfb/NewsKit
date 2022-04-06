@@ -6,6 +6,7 @@ import {
   ContentPrimary,
   ContentSecondary,
   ContentTertiary,
+  ChildrenColSpan,
 } from '../../components/content-structure';
 import {LayoutProps} from '../../components/layout';
 import {InlineCode} from '../../components/markdown-elements';
@@ -313,7 +314,7 @@ const Fonts = (layoutProps: LayoutProps) => (
           />
         </ContentSecondary>
 
-        <ContentSecondary>
+        <ContentSecondary childrenColSpan={ChildrenColSpan.TEXT}>
           <InlineMessage
             overrides={{stylePreset: 'inlineMessageInformative'}}
             icon={icon}
@@ -405,7 +406,7 @@ const Fonts = (layoutProps: LayoutProps) => (
           </Code>
         </ContentSecondary>
 
-        <ContentSecondary>
+        <ContentSecondary childrenColSpan={ChildrenColSpan.TEXT}>
           <InlineMessage
             overrides={{stylePreset: 'inlineMessageInformative'}}
             icon={icon}
@@ -461,7 +462,7 @@ const Fonts = (layoutProps: LayoutProps) => (
           <CodeFromFile path="examples/fonts/font-properties.tsx" />
         </ContentSecondary>
 
-        <ContentSecondary showSeparator>
+        <ContentSecondary showSeparator childrenColSpan={ChildrenColSpan.TEXT}>
           <InlineMessage
             title="Font smooth"
             overrides={{stylePreset: 'inlineMessageInformative'}}
@@ -614,7 +615,7 @@ const Fonts = (layoutProps: LayoutProps) => (
           <Code>{`
   import React from 'react';
   import { TextBlock } from 'newskit';
-  
+
   export default () => (
     <TextBlock noCrop>TextBlock Content</TextBlock>
   );

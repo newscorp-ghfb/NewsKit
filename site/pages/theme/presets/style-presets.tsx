@@ -12,6 +12,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
+  ChildrenColSpan,
 } from '../../../components/content-structure';
 
 const CSS_PROPS = [
@@ -471,7 +472,7 @@ const StylePresets = (layoutProps: LayoutProps) => (
           />
         </ContentPrimary>
 
-        <ContentSecondary showSeparator>
+        <ContentSecondary showSeparator childrenColSpan={ChildrenColSpan.TEXT}>
           <InlineMessage
             icon={
               <IconFilledInfo

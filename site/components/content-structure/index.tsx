@@ -1,3 +1,4 @@
+export * from './content-base';
 export * from './content-section';
 export * from './content-primary';
 export * from './content-secondary';

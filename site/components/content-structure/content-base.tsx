@@ -1,6 +1,27 @@
-import {Block, Divider, TextBlock} from 'newskit';
-import React from 'react';
+import {
+  Block,
+  Divider,
+  GridLayout,
+  GridLayoutItem,
+  MQ,
+  TextBlock,
+} from 'newskit';
+import React, {useMemo} from 'react';
 import {ContentBaseProps} from './types';
+
+export enum ChildrenColSpan {
+  FULL = 12,
+  TEXT = 10,
+}
+
+const fullGridColumns = `auto / span ${ChildrenColSpan.FULL}`;
+
+const textGridColumns: (cols?: number) => MQ<string> = (
+  cols = ChildrenColSpan.TEXT,
+) => ({
+  xs: fullGridColumns,
+  lg: `auto / span ${cols}`,
+});
 
 export const ContentBase: React.FC<ContentBaseProps> = ({
   overrides,
@@ -9,6 +30,7 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
   children,
   toc,
   id,
+  childrenColSpan = ChildrenColSpan.FULL,
   showSeparator: showDivider,
 }) => {
   const {
@@ -26,10 +48,15 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
   };
   const isPrimary = Boolean(headline && toc && id);
 
+  const textColumns = useMemo(() => textGridColumns(), []);
+  const childrenColumns = useMemo(() => textGridColumns(childrenColSpan), [
+    childrenColSpan,
+  ]);
+
   return (
-    <>
+    <GridLayout columns={`repeat(${ChildrenColSpan.FULL}, 1fr)`}>
       {headline && (
-        <>
+        <GridLayoutItem column={textColumns}>
           <TextBlock
             {...(isPrimary ? tocAttributes : {})}
             {...headlineOverrides}
@@ -37,27 +64,33 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
             {headline}
           </TextBlock>
           {(description || children) && <Block spaceStack={headlineSpace} />}
-        </>
+        </GridLayoutItem>
       )}
 
       {description && (
-        <>
+        <GridLayoutItem column={textColumns}>
           <TextBlock as="p" {...descriptionOverrides}>
             {description}
           </TextBlock>
           {children && <Block spaceStack={descriptionSpace} />}
-        </>
+        </GridLayoutItem>
       )}
 
-      {children && <>{children}</>}
+      {children && (
+        <GridLayoutItem column={childrenColumns}>{children}</GridLayoutItem>
+      )}
 
-      <Block {...separatorOverrides} />
+      <GridLayoutItem column={fullGridColumns}>
+        <Block {...separatorOverrides} />
+      </GridLayoutItem>
 
       {showDivider && (
-        <Block {...separatorOverrides}>
-          <Divider />
-        </Block>
+        <GridLayoutItem column={fullGridColumns}>
+          <Block {...separatorOverrides}>
+            <Divider />
+          </Block>
+        </GridLayoutItem>
       )}
-    </>
+    </GridLayout>
   );
 };

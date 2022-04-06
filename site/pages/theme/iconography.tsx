@@ -13,6 +13,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
+  ChildrenColSpan,
 } from '../../components/content-structure';
 import {Link} from '../../components/link';
 
@@ -201,7 +202,7 @@ const Iconography = (layoutProps: LayoutProps) => (
           />
         </ContentPrimary>
 
-        <ContentSecondary showSeparator>
+        <ContentSecondary showSeparator childrenColSpan={ChildrenColSpan.TEXT}>
           <InlineMessage
             role="region"
             title="We support the full library of default Icons available in NewsKit."
@@ -259,6 +260,7 @@ const Iconography = (layoutProps: LayoutProps) => (
             </>
           }
           showSeparator
+          childrenColSpan={ChildrenColSpan.TEXT}
         >
           <InlineMessage
             role="region"

@@ -8,6 +8,7 @@ import {Link} from '../../components/link';
 import {
   ContentSection,
   ContentPrimary,
+  ChildrenColSpan,
 } from '../../components/content-structure';
 
 const PageIntroductionContainer = styled.div`
@@ -19,7 +20,7 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
   <Layout {...props} path={`${path}-new`}>
     <HeadNextSeo
       title="Contact us"
-      description="Have a question about our design system? 
+      description="Have a question about our design system?
         The NewsKit team is here to help you."
       image={{
         url: 'social/about.png',
@@ -50,6 +51,7 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
             </>
           }
           showSeparator
+          childrenColSpan={ChildrenColSpan.TEXT}
         >
           <InlineMessage role="region" aria-label="contact" title="Note">
             For internal News Corp users only.

@@ -12,6 +12,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
+  ChildrenColSpan,
 } from '../../../components/content-structure';
 
 const customEventRows = [
@@ -101,8 +102,8 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
             </>
           }
           showSeparator
+          childrenColSpan={ChildrenColSpan.TEXT}
         >
-          <Block spaceStack="space070" />
           <InlineMessage role="region" aria-label="Github">
             For more information, users with the relevant access can read the
             internal RFC which lead to this implementation. This can be found on{' '}
@@ -127,6 +128,7 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
               This function takes two arguments;
             </>
           }
+          childrenColSpan={ChildrenColSpan.TEXT}
         >
           <UnorderedList
             markerAlign="start"
@@ -143,8 +145,8 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
               an array of event handler functions; an event handler function
               simply takes an array of events and returns the same. There are
               two handlers provided by NewsKit, a console and Tealium handler
-              (exported under <InlineCode>instrumentationHandlers</InlineCode>),
-              but you can also pass your own custom handlers.
+              (exported under <InlineCode>instrumentationHandlers</InlineCode>
+              ), but you can also pass your own custom handlers.
             </>
             <>
               an event context object; this is an optional, but recommended,
@@ -205,13 +207,8 @@ const MyPage = (
   </InstrumentationProvider>
 );`}
           </Code>
-          <Block spaceStack="space080" />
-          <P overrides={contentOverrides}>
-            In this example, the Link component, and any other NewsKit
-            instrumentation enabled components would emit events to the
-            browser&apos;s console. This could look something like this:
-          </P>
-          <Block spaceStack="space080" />
+        </ContentSecondary>
+        <ContentSecondary description="In this example, the Link component, and any other NewsKit instrumentation enabled components would emit events to the browser's console. This could look something like this:">
           <Code>
             {`{
   "originator": "link",
@@ -221,13 +218,12 @@ const MyPage = (
   }
 }`}
           </Code>
-          <Block spaceStack="space080" />
-          <P overrides={contentOverrides}>
-            InstrumentationProvider components can be nested if you wish to
-            extend the context object to add extra data. See the relevant
-            section below for more information and examples.
-          </P>
         </ContentSecondary>
+
+        <ContentSecondary
+          description="InstrumentationProvider components can be nested if you wish to extend the context object to add extra data. See the relevant section below for more information and examples."
+          childrenColSpan={ChildrenColSpan.TEXT}
+        />
 
         <ContentSecondary
           headline="Middleware"
@@ -289,6 +285,7 @@ const instrumentation = createEventInstrumentation(handlers, {
         <ContentSecondary
           headline="Custom Event Firing"
           description="You should not need to add any instrumentation event firing to NewsKit components as this is already provided, but there may be a case where you have pre-existing custom components and wish to utilise the single NewsKit event instrumentation. This can be done easily in two ways;"
+          childrenColSpan={ChildrenColSpan.TEXT}
         >
           <UnorderedList
             markerAlign="start"
@@ -324,7 +321,8 @@ const instrumentation = createEventInstrumentation(handlers, {
             Events can also contain a <InlineCode>context</InlineCode> object,
             which can be any JSON-serializable structure.
           </P>
-          <Block spaceStack="space080" />
+        </ContentSecondary>
+        <ContentSecondary>
           <Code>
             {`import {withInstrumentation, EventTrigger} from 'newskit';
 
@@ -372,7 +370,6 @@ export const MySpecialCustomButton: React.FC<
               information on what the button is for and where it is on the page.
             </>
           }
-          showSeparator
         >
           <Code>
             {`import React from 'react';
@@ -438,18 +435,22 @@ const App = () => (
   </ThemeProvider>
 );`}
           </Code>
-          <Block spaceStack="space080" />
-          <P overrides={contentOverrides}>
-            In this example, we have a root{' '}
-            <InlineCode>InstrumentationProvider</InlineCode> providing the page
-            URL. Inside the <InlineCode>Rail</InlineCode> component, we have
-            another
-            <InlineCode>InstrumentationProvider</InlineCode>; this provides any
-            child events with rail specifics, like the rail name. The{' '}
-            <InlineCode>RailItem</InlineCode> then contains a button that fires
-            a click event. The resulting click event would look like this:
-          </P>
-          <Block spaceStack="space080" />
+        </ContentSecondary>
+        <ContentSecondary
+          description={
+            <>
+              In this example, we have a root{' '}
+              <InlineCode>InstrumentationProvider</InlineCode> providing the
+              page URL. Inside the <InlineCode>Rail</InlineCode> component, we
+              have another
+              <InlineCode>InstrumentationProvider</InlineCode>; this provides
+              any child events with rail specifics, like the rail name. The{' '}
+              <InlineCode>RailItem</InlineCode> then contains a button that
+              fires a click event. The resulting click event would look like
+              this:
+            </>
+          }
+        >
           <Code>
             {`{
   "context": {
@@ -461,19 +462,22 @@ const App = () => (
   "trigger": "click"
 }`}
           </Code>
-          <Block spaceStack="space080" />
-          <P overrides={contentOverrides}>
-            It is important to remember that in the example above, the{' '}
-            <InlineCode>fireEvent</InlineCode> function is scoped to the context
-            of the parent provider (the one which wraps the{' '}
-            <InlineCode>RailItem</InlineCode>). This means if we wanted to add
-            more context to the event inside the{' '}
-            <InlineCode>RailItem</InlineCode>, in the example above, doing the
-            following would NOT work as expected. The{' '}
-            <InlineCode>railItemId</InlineCode> we are adding to the context
-            would NOT appear on the event context.
-          </P>
-          <Block spaceStack="space080" />
+        </ContentSecondary>
+        <ContentSecondary
+          description={
+            <>
+              It is important to remember that in the example above, the{' '}
+              <InlineCode>fireEvent</InlineCode> function is scoped to the
+              context of the parent provider (the one which wraps the{' '}
+              <InlineCode>RailItem</InlineCode>). This means if we wanted to add
+              more context to the event inside the{' '}
+              <InlineCode>RailItem</InlineCode>, in the example above, doing the
+              following would NOT work as expected. The{' '}
+              <InlineCode>railItemId</InlineCode> we are adding to the context
+              would NOT appear on the event context.
+            </>
+          }
+        >
           <Code>
             {`const RailItem: React.FC<{itemId: number}> = ({itemId, ...props}) => {
 const {fireEvent} = useInstrumentation();
@@ -499,12 +503,8 @@ return (
  );
 };`}
           </Code>
-          <Block spaceStack="space080" />
-          <P overrides={contentOverrides}>
-            This would produce the following event (for rail item 1) as
-            expected:
-          </P>
-          <Block spaceStack="space080" />
+        </ContentSecondary>
+        <ContentSecondary description="This would produce the following event (for rail item 1) as expected:">
           <Code>
             {`const RailItem: React.FC<{itemId: number}> = ({itemId, ...props}) => {
   const {fireEvent} = useInstrumentation();
@@ -527,15 +527,19 @@ return (
   );
 };`}
           </Code>
-          <Block spaceStack="space080" />
-          <P overrides={contentOverrides}>
-            Instead, we can add context to the event directly (or we must put
-            the button into a separate component and get the{' '}
-            <InlineCode>fireEvent</InlineCode>
-            function at that scope level). Passing context information via the
-            fireEvent function is the simpler of the two options:
-          </P>
-          <Block spaceStack="space080" />
+        </ContentSecondary>
+        <ContentSecondary
+          description={
+            <>
+              Instead, we can add context to the event directly (or we must put
+              the button into a separate component and get the{' '}
+              <InlineCode>fireEvent</InlineCode>
+              function at that scope level). Passing context information via the
+              fireEvent function is the simpler of the two options:
+            </>
+          }
+          showSeparator
+        >
           <Code>
             {`{
   "context": {
