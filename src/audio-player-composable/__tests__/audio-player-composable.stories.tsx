@@ -78,7 +78,11 @@ const fullAudioPlayerAreasMobile = `
   prev        backward  play      forward   next
  `;
 
-const AudioPlayerFull = (props: {ariaLandmark: string; src?: string}) => (
+const AudioPlayerFull = (props: {
+  ariaLandmark: string;
+  src?: string;
+  autoPlay?: boolean;
+}) => (
   <AudioPlayerComposable
     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
     {...props}
@@ -412,7 +416,7 @@ AudioPlayerOverrides.storyName = 'audio-player-overrides';
 export const AudioPlayPauseButtonAutoplay = () => (
   <>
     <StorybookSubHeading>Autoplay</StorybookSubHeading>
-    <AudioPlayerFull ariaLandmark="audio player autoplay" />
+    <AudioPlayerFull ariaLandmark="audio player autoplay" autoPlay />
   </>
 );
 
