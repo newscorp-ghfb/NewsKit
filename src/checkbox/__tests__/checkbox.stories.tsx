@@ -376,7 +376,7 @@ const DefaultToggleComponent = ({checked}: CheckboxIconProps) => (
 );
 
 const ThemeToggleComponent = ({checked}: CheckboxIconProps) => (
-  <Track checked={checked} aria-hidden='true'>
+  <Track checked={checked} aria-hidden="true">
     <Thumb checked={checked}>
       {checked ? (
         <IconFilledLight overrides={{size: 'iconSize010'}} />
@@ -393,7 +393,7 @@ const ThemelessToggle = React.forwardRef<HTMLInputElement, CheckboxProps>(
       path="toggle"
       ref={inputRef}
       type="checkbox"
-      role='switch'
+      role="switch"
       {...props}
       defaultSwitchSelectorComponent={DefaultToggleComponent}
     />
