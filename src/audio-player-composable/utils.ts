@@ -43,7 +43,7 @@ type UseKeyboardShortcutsType = {
 export const useKeyboardShortcutsOnButton = ({
   props,
   defaults: defaultKeys,
-  action,
+  action, // action is used when the default callback is not onClick
 }: UseKeyboardShortcutsType) => {
   const {audioSectionRef} = useAudioPlayerContext();
   const options = {target: audioSectionRef, preventDefault: false};

@@ -12,7 +12,7 @@ const isKeyboardEvent = (event: Event): event is KeyboardEvent =>
   'key' in event;
 
 /*
- This store together with addEventIfNotExist and removeEvent track if the event wit the same
+ This store together with addEventIfNotExist and removeEvent track if the event with the same
   keyShortcut is already attached to the element. This is needed to prevent adding the same event twice.
 
   In context of audio-player if you add 2 buttons for SkipBackward with same 

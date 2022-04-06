@@ -12,7 +12,7 @@ export const calculateTime = (secs: number) => {
   }
   return `${returnedMinutes}:${returnedSeconds}`;
 };
-// change to formattedcurrentime
+
 export const formatFunction: AudioPlayerTimeFormatFn = ({
   currentTime,
   duration,
