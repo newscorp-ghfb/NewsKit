@@ -14,6 +14,7 @@ import {
 } from '../../utils';
 import {
   Cell,
+  Fieldset,
   Grid,
   GridLayout,
   IconFilledCancel,
@@ -375,7 +376,7 @@ const DefaultToggleComponent = ({checked}: CheckboxIconProps) => (
 );
 
 const ThemeToggleComponent = ({checked}: CheckboxIconProps) => (
-  <Track checked={checked}>
+  <Track checked={checked} aria-hidden='true'>
     <Thumb checked={checked}>
       {checked ? (
         <IconFilledLight overrides={{size: 'iconSize010'}} />
@@ -392,6 +393,7 @@ const ThemelessToggle = React.forwardRef<HTMLInputElement, CheckboxProps>(
       path="toggle"
       ref={inputRef}
       type="checkbox"
+      role='switch'
       {...props}
       defaultSwitchSelectorComponent={DefaultToggleComponent}
     />
@@ -407,6 +409,11 @@ export const StoryCheckboxAsToggle = () => (
   <>
     <Toggle defaultChecked />
     <Toggle label="change theme" overrides={{icon: ThemeToggleComponent}} />
+
+    <Fieldset legend="Breakfast menu">
+      <Toggle defaultChecked />
+      <Toggle label="change theme" overrides={{icon: ThemeToggleComponent}} />
+    </Fieldset>
   </>
 );
 
