@@ -451,6 +451,153 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
+    states={{
+      introduction: 'The Select component has the following states:',
+      layout: '3-span',
+      cards: [
+        {
+          title: 'Base',
+          description:
+            'The select has a base state. This is the base style of the input before it has been interacted with by a user.',
+          media: getIllustrationComponent('components/select/states/base'),
+        },
+        {
+          title: 'Focus',
+          description:
+            'The select has a focus state. This is the style of the input when the element is focused via keyboard control.',
+          media: getIllustrationComponent('components/select/states/focus'),
+        },
+        {
+          title: 'Hover',
+          description:
+            'The select has a hover state. The style of the input changes to visually communicate and provide feedback to the user that the Select input is an interactive element.',
+          media: getIllustrationComponent('components/select/states/hover'),
+        },
+        {
+          title: 'Selected',
+          description:
+            'The Select in a selected state changes style when the Select selection conforms to a specific condition eg. the panel appearing. This is the style of the input when the panel element is visible (open).',
+          media: getIllustrationComponent('components/select/states/selected'),
+        },
+        {
+          title: 'Valid',
+          description: (
+            <>
+              The select in a valid state changes style when the selected option
+              conforms to a specific condition eg. updating preferences in a
+              form.
+              <br />
+              <br />
+              The input style change and validation icon can appear as soon as a
+              user types a valid entry in the input or on submit.
+              <br />
+              <br />
+              The <Link href="/components/form/">Form.</Link> component is used
+              to define this validation behaviour.
+            </>
+          ),
+          media: getIllustrationComponent('components/select/states/valid'),
+        },
+        {
+          title: 'Valid focus',
+          description: (
+            <>
+              The select in a valid state changes style when the selected option
+              conforms to a specific condition eg. updating preferences in a
+              form.
+              <br />
+              <br />
+              The input style change and validation icon can appear as soon as a
+              user types a valid entry in the input or on submit.
+              <br />
+              <br />
+              The Form component is used to define this validation behaviour.
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/select/states/valid-focus',
+          ),
+        },
+        {
+          title: 'Valid hover',
+          description:
+            'The select in a valid hover state changes style when the selected option conforms to a specific condition eg. updating preferences in a form, while hovering.',
+          media: getIllustrationComponent(
+            'components/select/states/valid-focus',
+          ),
+        },
+        {
+          title: 'Invalid',
+          description: (
+            <>
+              The select in an invalid state changes style when the selected
+              option doesn’t conform to a specific condition eg. not making a
+              selection in a form.
+              <br />
+              <br />
+              The input style change and validation icon can appear as soon as a
+              user types a valid entry in the input or on submit.
+              <br />
+              <br />
+              The Form component is used to define this validation behaviour.
+            </>
+          ),
+          media: getIllustrationComponent('components/select/states/invalid'),
+        },
+        {
+          title: 'Invalid focus',
+          description:
+            'The select in an invalid focus state changes style when the selected option conforms to a specific condition eg. not making a selection in a form, while focused.',
+          media: getIllustrationComponent(
+            'components/select/states/invalid-focus',
+          ),
+        },
+        {
+          title: 'Invalid hover',
+          description:
+            'The select in an invalid hover state changes style when the selected option conforms to a specific condition eg. not making a selection in a Form, while hovering',
+          media: getIllustrationComponent(
+            'components/select/states/invalid-hover',
+          ),
+        },
+        {
+          title: 'Disabled',
+          description: (
+            <>
+              The select in a disabled state communicates to the user that an
+              input exists, but cannot be modified in that scenario.
+              <br />
+              <br />
+              Disabled selects are often used to maintain layout consistency and
+              communicate that an input may become available if another
+              condition has been met, e.g. selecting a previous option in a
+              form.
+            </>
+          ),
+          media: getIllustrationComponent('components/select/states/disabled'),
+        },
+        {
+          title: 'Read-only',
+          description: (
+            <>
+              The select in a read-only state communicates to the user that an
+              input exists, but cannot be modified in that scenario (however, a
+              user can tab to it, highlight it, and copy the text from it).
+              <br />
+              <br />
+              Read-only selects are often used to maintain layout consistency
+              and communicate that an input may become available if another
+              condition has been met, e.g. selecting a previous option in a
+              form.
+              <br />
+              <br />
+              Content and data in a read-only select can be submitted in a form.
+            </>
+          ),
+          media: getIllustrationComponent('components/select/states/read-only'),
+        },
+      ],
+    }}
     componentAPI={{
       introduction: (
         <>
