@@ -2,6 +2,7 @@ import React, {
   MutableRefObject,
   useCallback,
   useEffect,
+  useMemo,
   useRef,
   useState,
 } from 'react';
@@ -16,7 +17,6 @@ import {
   AudioEvents,
   AudioFunctionDependencies,
   AudioPlayerComposableProps,
-  AudioPlayerIconButtonProps,
 } from './types';
 import {formatFunction} from './components/time-display/utils';
 import {
@@ -27,6 +27,11 @@ import {
 } from '../icons';
 import {IconButtonProps} from '../icon-button/types';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
+import {AudioPlayerPlayPauseButtonProps} from './components/play-pause-button/types';
+import {AudioPlayerForwardButtonProps} from './components/forward-button/types';
+import {AudioPlayerReplayButtonProps} from './components/replay-button/types';
+import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/types';
+import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
 
 const defaultKeyboardShortcuts = {
   jumpToStart: ['0', 'Home'],
@@ -92,148 +97,185 @@ export const AudioPlayerComposable = ({
     src,
   } as AudioFunctionDependencies);
 
-  const getPlayPauseButtonProps = ({
-    onClick: consumerOnClick,
-    ...getterProps
-  }: AudioPlayerIconButtonProps): IconButtonProps & {
-    playing: boolean;
-    canPause: boolean;
-  } => {
-    // All the internal logic for defining aria and icon to show
-    let playStateIcon = <IconFilledPlayArrow />;
-    let ariaLabel = 'Play';
-    let ariaPressed = false;
-    const canPause = !live;
+  const getPlayPauseButtonProps = useCallback(
+    ({
+      onClick: consumerOnClick,
+      ...getterProps
+    }: AudioPlayerPlayPauseButtonProps): IconButtonProps & {
+      playing: boolean;
+      canPause: boolean;
+    } => {
+      // All the internal logic for defining aria and icon to show
+      let playStateIcon = <IconFilledPlayArrow />;
+      let ariaLabel = 'Play';
+      let ariaPressed = false;
+      const canPause = !live;
 
-    if (playing) {
-      ariaPressed = true;
-      // TODO remove ignore as we implement the "live" functionality back and write test for it
-      /* istanbul ignore next */
-      if (canPause) {
-        playStateIcon = <IconFilledPause />;
-        ariaLabel = 'Pause';
-      } else {
-        playStateIcon = <IconFilledStop />;
-        ariaLabel = 'Stop';
+      if (playing) {
+        ariaPressed = true;
+        // TODO remove ignore as we implement the "live" functionality back and write test for it
+        /* istanbul ignore next */
+        if (canPause) {
+          playStateIcon = <IconFilledPause />;
+          ariaLabel = 'Pause';
+        } else {
+          playStateIcon = <IconFilledStop />;
+          ariaLabel = 'Stop';
+        }
       }
-    }
 
-    const onClick = composeEventHandlers([consumerOnClick, togglePlay]);
+      const onClick = composeEventHandlers([consumerOnClick, togglePlay]);
 
-    return {
-      'aria-label': ariaLabel,
-      'aria-pressed': ariaPressed,
-      loading,
-      onClick,
-      children: playStateIcon,
-      ...getterProps,
+      return {
+        'aria-label': ariaLabel,
+        'aria-pressed': ariaPressed,
+        loading,
+        onClick,
+        children: playStateIcon,
+        ...getterProps,
 
-      // can  be needed for custom internal logic
-      playing,
-      canPause,
-    };
-  };
+        // can  be needed for custom internal logic
+        playing,
+        canPause,
+      } as IconButtonProps & {
+        playing: boolean;
+        canPause: boolean;
+      };
+    },
+    [live, loading, playing, togglePlay],
+  );
 
-  const getForwardButtonProps = ({
-    onClick: consumerOnClick,
-    seconds = 10,
-    ...getterProps
-  }: AudioPlayerIconButtonProps): IconButtonProps => {
-    const onClickForwardWithSeconds = () => onClickForward({seconds});
+  const getForwardButtonProps = useCallback(
+    ({
+      onClick: consumerOnClick,
+      seconds = 10,
+      ...getterProps
+    }: AudioPlayerForwardButtonProps): IconButtonProps => {
+      const onClickForwardWithSeconds = () => onClickForward({seconds});
 
-    return {
-      children: <IconFilledForward10 />,
-      'aria-label': `Fast forward for ${seconds} seconds`,
-      onClick: composeEventHandlers([
-        consumerOnClick,
-        onClickForwardWithSeconds,
-      ]),
-      ...getterProps,
-    };
-  };
+      return {
+        children: <IconFilledForward10 />,
+        'aria-label': `Fast forward for ${seconds} seconds`,
+        onClick: composeEventHandlers([
+          consumerOnClick,
+          onClickForwardWithSeconds,
+        ]),
+        ...getterProps,
+      } as IconButtonProps;
+    },
+    [onClickForward],
+  );
 
-  const getReplayButtonProps = ({
-    onClick: consumerOnClick,
-    seconds = 10,
-    ...getterProps
-  }: AudioPlayerIconButtonProps): IconButtonProps => {
-    const onClickWithBackwardWithSeconds = () => onClickBackward({seconds});
+  const getReplayButtonProps = useCallback(
+    ({
+      onClick: consumerOnClick,
+      seconds = 10,
+      ...getterProps
+    }: AudioPlayerReplayButtonProps): IconButtonProps => {
+      const onClickWithBackwardWithSeconds = () => onClickBackward({seconds});
+      return {
+        children: <IconFilledReplay10 />,
+        'aria-label': `Rewind ${seconds} seconds`,
+        onClick: composeEventHandlers([
+          consumerOnClick,
+          onClickWithBackwardWithSeconds,
+        ]),
+        ...getterProps,
+      } as IconButtonProps;
+    },
+    [onClickBackward],
+  );
 
-    return {
-      children: <IconFilledReplay10 />,
-      'aria-label': `Rewind ${seconds} seconds`,
-      onClick: composeEventHandlers([
-        consumerOnClick,
-        onClickWithBackwardWithSeconds,
-      ]),
-      ...getterProps,
-    };
-  };
+  const getSeekBarProps = useCallback(
+    () => ({
+      duration,
+      currentTime,
+      onChange: onChangeSlider,
+      buffered,
+    }),
+    [buffered, currentTime, duration, onChangeSlider],
+  );
 
-  const getSeekBarProps = () => ({
-    duration,
-    currentTime,
-    onChange: onChangeSlider,
-    buffered,
-  });
+  const getTimeDisplayProps = useCallback(
+    () => ({
+      format: formatFunction,
+      currentTime,
+      duration,
+    }),
+    [currentTime, duration],
+  );
 
-  const getTimeDisplayProps = () => ({
-    format: formatFunction,
-    currentTime,
-    duration,
-  });
+  const getSkipPreviousButtonProps = useCallback(
+    ({
+      onClick: consumerOnClick,
+      ...getterProps
+    }: AudioPlayerSkipPreviousButtonProps): IconButtonProps => {
+      const onClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+        if (currentTime > 5) {
+          onChangeSlider(0);
+        } else if (typeof consumerOnClick === 'function') {
+          consumerOnClick(event);
+        }
+      };
 
-  const getSkipPreviousButtonProps = ({
-    onClick: consumerOnClick,
-    ...getterProps
-  }: AudioPlayerIconButtonProps): IconButtonProps => {
-    const onClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-      if (currentTime > 5) {
-        onChangeSlider(0);
-      } else if (typeof consumerOnClick === 'function') {
-        consumerOnClick(event);
-      }
-    };
+      const isDisabled = currentTime <= 5 && !consumerOnClick;
 
-    const isDisabled = currentTime <= 5 && !consumerOnClick;
+      return {
+        onClick,
+        children: <IconFilledSkipPrevious />,
+        'aria-label': 'previous',
+        disabled: isDisabled,
+        ...getterProps,
+      } as IconButtonProps;
+    },
+    [currentTime, onChangeSlider],
+  );
 
-    return {
-      onClick,
-      children: <IconFilledSkipPrevious />,
-      'aria-label': 'previous',
-      disabled: isDisabled,
-      ...getterProps,
-    };
-  };
+  const getSkipNextButtonProps = useCallback(
+    ({...getterProps}: AudioPlayerSkipNextButtonProps): IconButtonProps =>
+      ({
+        children: <IconFilledSkipNext />,
+        'aria-label': 'next',
+        disabled: typeof getterProps.onClick !== 'function',
+        ...getterProps,
+      } as IconButtonProps),
+    [],
+  );
 
-  const getSkipNextButtonProps = ({
-    ...getterProps
-  }: AudioPlayerIconButtonProps): IconButtonProps => ({
-    children: <IconFilledSkipNext />,
-    'aria-label': 'next',
-    disabled: typeof getterProps.onClick !== 'function',
-    ...getterProps,
-  });
+  const value = useMemo(
+    () => ({
+      audioRef,
+      audioSectionRef,
+      togglePlay,
+      // Props function getter
+      getPlayPauseButtonProps,
+      getTimeDisplayProps,
+      getSeekBarProps,
+      getSkipPreviousButtonProps,
+      getSkipNextButtonProps,
+      getForwardButtonProps,
+      getReplayButtonProps,
+    }),
+    [
+      togglePlay,
+      getPlayPauseButtonProps,
+      getTimeDisplayProps,
+      getSeekBarProps,
+      getSkipPreviousButtonProps,
+      getSkipNextButtonProps,
+      getForwardButtonProps,
+      getReplayButtonProps,
+    ],
+  );
 
-  const value = {
-    audioRef,
-    audioSectionRef,
-    togglePlay,
-    // Props function getter
-    getPlayPauseButtonProps,
-    getTimeDisplayProps,
-    getSeekBarProps,
-    getSkipPreviousButtonProps,
-    getSkipNextButtonProps,
-    getForwardButtonProps,
-    getReplayButtonProps,
-  };
-
-  const eventHandler = (eventName: AudioEvents) => {
-    const propEvent = props[eventName];
-    const internalEvent = audioEvents[eventName];
-    return composeEventHandlers([propEvent, internalEvent]);
-  };
+  const eventHandler = useCallback(
+    (eventName: AudioEvents) => {
+      const propEvent = props[eventName];
+      const internalEvent = audioEvents[eventName];
+      return composeEventHandlers([propEvent, internalEvent]);
+    },
+    [audioEvents, props],
+  );
 
   // Keyboard shortcuts
   const options = {target: audioSectionRef, preventDefault: false};

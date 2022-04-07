@@ -1,7 +1,3 @@
-import {AudioPlayerIconButtonProps} from '../../types';
+import {AudioPlayerIconButtonWithShortcuts} from '../types';
 
-export type PlayPauseButtonProps = AudioPlayerIconButtonProps & {
-  keyboardShortcuts?: {
-    toggle: string;
-  };
-};
+export type AudioPlayerPlayPauseButtonProps = AudioPlayerIconButtonWithShortcuts;
