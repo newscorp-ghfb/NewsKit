@@ -6,6 +6,7 @@ import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
+import {UsageKind} from '../../components/usage-card';
 
 const infoIcon = (
   <IconFilledInfo
@@ -371,7 +372,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
               There is an option for Select options to appear in a Modal (with
               overlay), which is intended for long lists of options eg.
               presenting a list of countries to select from in a{' '}
-              <Link href="/components/radio-button/">Form.</Link>
+              <Link href="/components/form/">Form.</Link>
             </>
           ),
           media: getIllustrationComponent('components/select/options/mobile'),
@@ -706,6 +707,61 @@ const SelectComponent = (layoutProps: LayoutProps) => (
             'The SelectOption has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.',
           propsRows: selectOptionProps,
           overridesRows: selectOptionOverrides,
+        },
+      ],
+    }}
+    usage={{
+      introduction:
+        'The following guidance describes how and when to appropriately use a Select component.',
+      cards: [
+        {
+          description:
+            'Use a Select to present multiple options where only one can be selected.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/select/usage/do-1'),
+        },
+        {
+          description: (
+            <>
+              Don&apos;t use a Select when you have only a few options and
+              enough space; use a radio.
+              <br />
+              <br />A select can cause usability issues due to the number of
+              interactions it takes to select an option.This can increase the
+              likelihood of abandonment of a user task.
+            </>
+          ),
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/select/usage/dont-1'),
+        },
+        {
+          description:
+            'Use a Select when there are four or more options for a user to choose from.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/select/usage/do-2'),
+        },
+        {
+          description:
+            'Don’t use a Select when a user can select more than one option, use a checkbox.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/select/usage/dont-2'),
+        },
+        {
+          description: 'Where possible, define a default option.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/select/usage/do-2'),
+        },
+        {
+          description:
+            'Have an empty Select upon page load. If a default option isn’t appropriate, define a placeholder such as “Select an option”.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/select/usage/dont-3'),
+        },
+        {
+          description:
+            'Don’t use a Select when a users can add and remove options, consider a Text Field with Tags or a Combobox.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/select/usage/dont-4'),
         },
       ],
     }}
