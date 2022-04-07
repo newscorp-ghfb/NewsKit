@@ -1,32 +1,34 @@
 import React from 'react';
-import {ButtonOverrides, ButtonSize} from '../../../button/types';
+import {ButtonSize} from '../../../button/types';
 import {IconButton} from '../../../icon-button';
-import {useTheme} from '../../../theme';
-import {filterOutFalsyProperties} from '../../../utils/filter-object';
 import {withOwnTheme} from '../../../utils/with-own-theme';
 import {useAudioPlayerContext} from '../../context';
-import {AudioPlayerIconButtonProps} from '../../types';
+import {useButtonOverrides, useKeyboardShortcutsOnButton} from '../../utils';
 import defaults from './defaults';
+import {AudioPlayerReplayButtonProps} from './types';
 
-const ThemelessAudioPlayerReplayButton: React.FC<AudioPlayerIconButtonProps> = React.memo(
-  ({overrides, ...props}) => {
+const defaultKeyboardShortcuts = ['j'];
+
+const ThemelessAudioPlayerReplayButton: React.FC<AudioPlayerReplayButtonProps> = React.memo(
+  props => {
     const {getReplayButtonProps} = useAudioPlayerContext();
 
-    const theme = useTheme();
+    const overrides = useButtonOverrides(props, 'audioPlayerReplayButton');
 
-    const audioPlayerReplayOverrides: ButtonOverrides = {
-      ...theme.componentDefaults.audioPlayerReplayButton,
-      ...filterOutFalsyProperties(overrides),
-    };
-
-    const propsFromContex =
+    const propsFromContext =
       getReplayButtonProps! && getReplayButtonProps(props);
+
+    useKeyboardShortcutsOnButton({
+      props: propsFromContext as AudioPlayerReplayButtonProps,
+      defaults: defaultKeyboardShortcuts,
+    });
+
     return (
       <IconButton
         data-testid="audio-player-replay-button"
         size={ButtonSize.Medium}
-        overrides={audioPlayerReplayOverrides}
-        {...propsFromContex}
+        overrides={overrides}
+        {...propsFromContext}
       />
     );
   },
