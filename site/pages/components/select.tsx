@@ -4,6 +4,7 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 
 const infoIcon = (
@@ -595,6 +596,70 @@ const SelectComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent('components/select/states/read-only'),
+        },
+      ],
+    }}
+    behaviors={{
+      introduction:
+        'The following guidance describes how the Select component behaves.',
+      cards: [
+        {
+          title: 'Select Input and Select option item text-overflow truncation',
+          description: (
+            <>
+              When the Select input text or the Select option item text is too
+              long for the available horizontal space, the text truncates.
+              <br />
+              <br />
+              Truncation is visually indicated using{' '}
+              <InlineCode>text-overflow:elipsis</InlineCode> via the style
+              presets.
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/select/behaviours/checked-vs-unchecked',
+          ),
+        },
+        {
+          title: 'Validation',
+          description: (
+            <>
+              The Select validation rules can be defined for onSubmit or onBlur,
+              for both the initial validation and re-validation using the Form.
+              <br />
+              <br />
+              <Link href="/components/form/">
+                For more information, please refer to the Form component.
+              </Link>
+              .
+              <Block spaceStack="space050" />
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="Select validation"
+                title="Note"
+              >
+                Validation only works if the Select component uses the Form
+                component.
+              </InlineMessage>
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/select/behaviours/validation',
+          ),
+        },
+        {
+          title: 'Validation icon',
+          description: (
+            <>
+              An icon is used to indicate if the select is in a valid or invalid
+              state. Validation is set on the{' '}
+              <Link href="/components/form/">Form</Link> component.
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/select/behaviours/validation-icon',
+          ),
         },
       ],
     }}
