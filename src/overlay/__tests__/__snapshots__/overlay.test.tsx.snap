@@ -13,39 +13,78 @@ exports[`Overlay renders with overrides 1`] = `
   left: 0;
   cursor: pointer;
   background-color: #FFEECF;
-  opacity: 0;
 }
 
-.emotion-0.nk-overlay-enter {
-  opacity: 0;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-overlay-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-overlay-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-overlay-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-overlay-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-overlay-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-overlay-exit-done {
+    opacity: 0;
+  }
 }
 
-.emotion-0.nk-overlay-enter-active {
-  opacity: 1;
-  transition-property: opacity;
-  transition-duration: 200ms;
-}
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
 
-.emotion-0.nk-overlay-enter-done {
-  opacity: 1;
-}
+  .emotion-0.nk-overlay-enter {
+    opacity: 0;
+  }
 
-.emotion-0.nk-overlay-exit {
-  opacity: 1;
-}
+  .emotion-0.nk-overlay-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
 
-.emotion-0.nk-overlay-exit-active {
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: 200ms;
-}
+  .emotion-0.nk-overlay-enter-done {
+    opacity: 1;
+  }
 
-.emotion-0.nk-overlay-exit-done {
-  opacity: 0;
+  .emotion-0.nk-overlay-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-overlay-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-overlay-exit-done {
+    opacity: 0;
+  }
 }
 
 <div
-    class="emotion-0 nk-overlay-appear nk-overlay-appear-active"
+    class="emotion-0 nk-overlay-enter-done"
     data-testid="overlay"
   />
 </DocumentFragment>
