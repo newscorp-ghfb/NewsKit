@@ -1,17 +1,18 @@
+import React from 'react';
 import {MQ} from '../../../utils';
 
-export type FormatFn = ({
+export type AudioPlayerTimeFormatFn = ({
   currentTime,
   duration,
 }: {
   currentTime: number;
   duration: number;
 }) => string;
-export interface StyledLabelProps {
-  format?: FormatFn;
 
+export type AudioPlayerTimeDisplayProps = {
+  format?: AudioPlayerTimeFormatFn;
   overrides?: {
     typographyPreset?: MQ<string>;
     stylePreset?: MQ<string>;
   };
-}
+} & React.HTMLAttributes<HTMLSpanElement>;

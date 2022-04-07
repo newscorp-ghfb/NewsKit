@@ -1,7 +1,7 @@
 import React, {useCallback} from 'react';
 import {getTrackBackground} from 'react-range';
 import {useAudioPlayerContext} from '../../context';
-import {SeekBarProps} from './types';
+import {AudioPlayerSeekBarProps} from './types';
 import {Slider, SliderProps} from '../../../slider';
 import {ScreenReaderOnly} from '../../../screen-reader-only';
 import {useReactKeys} from '../../../utils/hooks';
@@ -15,7 +15,9 @@ import {useTheme} from '../../../theme';
 import defaults from './defaults';
 import {formatTrackData, seekBarAriaValueText} from './utils';
 
-const ThemelessSeekBar: React.FC<SeekBarProps> = ({overrides = {}}) => {
+const ThemelessSeekBar: React.FC<AudioPlayerSeekBarProps> = ({
+  overrides = {},
+}) => {
   const {slider: seekBarSliderOverrides} = overrides;
 
   const theme = useTheme();

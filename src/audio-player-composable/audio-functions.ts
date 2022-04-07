@@ -8,10 +8,7 @@ import {getValueInRange} from '../utils/value-in-range';
 import {version} from '../version-number.json';
 
 export const useAudioFunctions = ({
-  onPreviousTrack,
-  onNextTrack,
   autoPlay,
-  // disablePreviousTrack,
   src,
   live,
   duration,
@@ -27,8 +24,7 @@ export const useAudioFunctions = ({
   setDuration,
   setDisplayDuration,
   setBuffered,
-}: // setIsPrevTrackBtnDisabled,
-AudioFunctionDependencies) => {
+}: AudioFunctionDependencies) => {
   const {fireEvent} = useInstrumentation();
 
   const ifPlayer = useCallback(
@@ -125,55 +121,34 @@ AudioFunctionDependencies) => {
   //   [ifPlayer, setVolume],
   // );
 
-  // TODO remove ignore once in use
-  /* istanbul ignore next */
-  const onClickPrevious = useCallback(() => {
-    if (currentTimeRef.current > 5) {
-      updateAudioTime(0);
-      return;
-    }
+  const onClickBackward = useCallback(
+    /* istanbul ignore next */
+    ({seconds = 10}: {seconds: number}) => {
+      updateAudioTime(currentTimeRef.current - seconds);
+      const trackingInformation = getTrackingInformation(
+        'audio-player-skip-backward',
+        EventTrigger.Click,
+        {event_navigation_name: 'backward skip'},
+      );
+      fireEvent(trackingInformation);
+    },
+    [fireEvent, getTrackingInformation, updateAudioTime, currentTimeRef],
+  );
 
-    // If no function is passed, the button is disabled, check is just to be sure; the else can't be tested.
-    /* istanbul ignore else */
-    if (onPreviousTrack) {
-      onPreviousTrack();
-    }
-  }, [currentTimeRef, onPreviousTrack, updateAudioTime]);
+  const onClickForward = useCallback(
+    /* istanbul ignore next */
+    ({seconds = 10}: {seconds: number}) => {
+      updateAudioTime(currentTimeRef.current + seconds);
 
-  // TODO remove ignore once in use
-  /* istanbul ignore next */
-  const onClickNext = useCallback(() => {
-    // If no function is passed, the button is disabled, check is just to be sure; the else can't be tested.
-    /* istanbul ignore else */
-    if (onNextTrack) {
-      onNextTrack();
-    }
-  }, [onNextTrack]);
-
-  // TODO remove ignore once in use
-  /* istanbul ignore next */
-  const onClickBackward = useCallback(() => {
-    updateAudioTime(currentTimeRef.current - 10);
-    const trackingInformation = getTrackingInformation(
-      'audio-player-skip-backward',
-      EventTrigger.Click,
-      {event_navigation_name: 'backward skip'},
-    );
-    fireEvent(trackingInformation);
-  }, [fireEvent, getTrackingInformation, updateAudioTime, currentTimeRef]);
-
-  // TODO remove ignore once in use
-  /* istanbul ignore next */
-  const onClickForward = useCallback(() => {
-    updateAudioTime(currentTimeRef.current + 10);
-
-    const trackingInformation = getTrackingInformation(
-      'audio-player-skip-forward',
-      EventTrigger.Click,
-      {event_navigation_name: 'forward skip'},
-    );
-    fireEvent(trackingInformation);
-  }, [fireEvent, getTrackingInformation, updateAudioTime, currentTimeRef]);
+      const trackingInformation = getTrackingInformation(
+        'audio-player-skip-forward',
+        EventTrigger.Click,
+        {event_navigation_name: 'forward skip'},
+      );
+      fireEvent(trackingInformation);
+    },
+    [fireEvent, getTrackingInformation, updateAudioTime, currentTimeRef],
+  );
 
   const onDurationChange = useCallback(
     ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
@@ -230,20 +205,7 @@ AudioFunctionDependencies) => {
     }
   }, [playing, pause, fireEvent, live, getTrackingInformation]);
 
-  // TODO remove ignore once in use
-  /* istanbul ignore next */
-  const onPopoutClick = () => {
-    pause();
-
-    fireEvent(
-      // TODO remove ignore when implementing live functionality and test
-      /* istanbul ignore next */
-      getTrackingInformation('audio-player-popout', EventTrigger.Click),
-    );
-  };
-
   const togglePlay = useCallback(() => {
-    console.log(loading, 'Loading');
     if (loading) {
       return;
     }
@@ -255,28 +217,28 @@ AudioFunctionDependencies) => {
     }
   }, [loading, playing, onPause, onPlay]);
 
-  const onProgress = ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
-    setBuffered((target as HTMLAudioElement).buffered);
-  };
+  const onProgress = useCallback(
+    ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
+      setBuffered((target as HTMLAudioElement).buffered);
+    },
+    [setBuffered],
+  );
 
-  const onTimeUpdate = ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
-    const eventTime = Math.floor((target as HTMLAudioElement).currentTime);
-    if (currentTimeRef.current !== eventTime) {
-      setCurrentTime(eventTime);
+  const onTimeUpdate = useCallback(
+    ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
+      const eventTime = Math.floor((target as HTMLAudioElement).currentTime);
+      if (currentTimeRef.current !== eventTime) {
+        setCurrentTime(eventTime);
 
-      const trackingInformation = getTrackingInformation(
-        'audio-player-audio',
-        EventTrigger.Pulse,
-      );
-      fireEvent(trackingInformation);
-    }
-    // TO Do: Should be added in the ticket for controls
-    // if (currentTimeRef.current > 5) {
-    //   setIsPrevTrackBtnDisabled(false);
-    // } else {
-    //   setIsPrevTrackBtnDisabled(Boolean(disablePreviousTrack));
-    // }
-  };
+        const trackingInformation = getTrackingInformation(
+          'audio-player-audio',
+          EventTrigger.Pulse,
+        );
+        fireEvent(trackingInformation);
+      }
+    },
+    [fireEvent, getTrackingInformation, setCurrentTime, currentTimeRef],
+  );
 
   // const onVolumeChange = useCallback(
   //   ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
@@ -347,11 +309,9 @@ AudioFunctionDependencies) => {
       [AudioEvents.TimeUpdate]: onTimeUpdate,
       [AudioEvents.Progress]: onProgress,
     },
-    onClickPrevious,
-    onClickNext,
     onClickBackward,
     onClickForward,
-    onPopoutClick,
+
     togglePlay,
     onChangeSlider,
     // onChangeVolumeSlider,

@@ -7,6 +7,7 @@ import {getTransitionPresetFromTheme} from '../utils/style/transition-preset';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const renderIconStylePreset = (overridesOnly: boolean) => (props: any) => {
   if (!overridesOnly || (props.overrides && props.overrides.stylePreset)) {

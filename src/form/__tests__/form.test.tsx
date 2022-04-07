@@ -1,5 +1,5 @@
 import React from 'react';
-import {fireEvent, act, waitFor, screen} from '@testing-library/react';
+import {fireEvent, act, waitFor, screen, within} from '@testing-library/react';
 import {useForm} from 'react-hook-form';
 import {Form, FormRef} from '..';
 import {
@@ -194,6 +194,38 @@ describe('Form', () => {
     fireEvent.blur(getByTestId('text-input-email'));
 
     expect(await findByText('Please provide a valid email')).not.toBeNull();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('keeps validation when revalidation mode is onBlur', async () => {
+    const {getByTestId, asFragment} = renderWithImplementation(Form, {
+      ...props,
+      validationMode: 'onBlur',
+      reValidationMode: 'onBlur',
+    });
+
+    const inputEmail = getByTestId('text-input-email') as HTMLInputElement;
+    const inputUsername = getByTestId(
+      'text-input-username',
+    ) as HTMLInputElement;
+
+    fireEvent.blur(inputEmail, {
+      target: {value: 'test@news.co.uk'},
+    });
+    const a = inputEmail.closest('div') as HTMLElement;
+    expect(await within(a).getByTestId('tick-icon')).not.toBeNull();
+
+    fireEvent.blur(inputUsername, {
+      target: {value: 'test'},
+    });
+    fireEvent.blur(inputUsername);
+
+    expect(
+      await within(inputUsername.closest('div') as HTMLElement).getByTestId(
+        'tick-icon',
+      ),
+    ).not.toBeNull();
+
     expect(asFragment()).toMatchSnapshot();
   });
 

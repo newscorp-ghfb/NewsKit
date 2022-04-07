@@ -1,3 +1,11 @@
+import {IconButtonProps} from '../button';
+import {useTheme} from '../theme';
+import {filterOutFalsyProperties} from '../utils/filter-object';
+import {get} from '../utils/get';
+import {useKeypress} from '../utils/hooks';
+import {useAudioPlayerContext} from './context';
+import {AudioPlayerIconButtonWithShortcuts} from './components/types';
+
 const hhmmss: [number, number] = [11, 8];
 const mmss: [number, number] = [14, 5];
 
@@ -24,4 +32,37 @@ export const getMediaSegment = (duration: number, currentPosition: number) => {
     return '51-75';
 
   return '76-100';
+};
+
+type UseKeyboardShortcutsType = {
+  action?: (e: KeyboardEvent) => void;
+  defaults: string | string[];
+  props: AudioPlayerIconButtonWithShortcuts;
+};
+
+export const useKeyboardShortcutsOnButton = ({
+  props,
+  defaults: defaultKeys,
+  action, // action is used when the default callback is not onClick
+}: UseKeyboardShortcutsType) => {
+  const {audioSectionRef} = useAudioPlayerContext();
+  const options = {target: audioSectionRef, preventDefault: false};
+  const {keyboardShortcuts} = props;
+  const key = keyboardShortcuts || defaultKeys;
+
+  const callback = action || props.onClick;
+  useKeypress(key, callback, options);
+};
+
+export const useButtonOverrides = (
+  props: Pick<IconButtonProps, 'overrides'>,
+  defaultsPath: string,
+): IconButtonProps['overrides'] => {
+  const theme = useTheme();
+  const {overrides} = props;
+
+  return {
+    ...get(theme, `componentDefaults.${defaultsPath}`),
+    ...filterOutFalsyProperties(overrides),
+  };
 };
