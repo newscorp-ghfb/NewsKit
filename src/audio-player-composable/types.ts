@@ -1,5 +1,10 @@
 import {IconButtonProps} from '../icon-button/types';
-import {Optional} from '../utils/types';
+import {AudioPlayerForwardButtonProps} from './components/forward-button/types';
+import {AudioPlayerPlayPauseButtonProps} from './components/play-pause-button/types';
+import {AudioPlayerReplayButtonProps} from './components/replay-button/types';
+import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/types';
+import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
+import {AudioPlayerTimeFormatFn} from './components/time-display/types';
 
 export interface AudioFunctionDependencies {
   autoPlay: boolean;
@@ -21,6 +26,47 @@ export interface AudioFunctionDependencies {
   setDuration: React.Dispatch<React.SetStateAction<number>>;
   setDisplayDuration: React.Dispatch<React.SetStateAction<number>>;
   setBuffered: React.Dispatch<React.SetStateAction<TimeRanges | undefined>>;
+}
+
+export interface AudioPlayerProviderContext {
+  id: string;
+  playing: boolean;
+  canPause: boolean;
+  loading: boolean;
+  audioRef: React.RefObject<HTMLAudioElement>;
+  audioSectionRef: React.RefObject<HTMLDivElement>;
+  togglePlay: () => void;
+
+  // Getter functions
+  getPlayPauseButtonProps: (
+    props: AudioPlayerPlayPauseButtonProps,
+  ) => IconButtonProps & {
+    playing: boolean;
+    canPause: boolean;
+  };
+  getTimeDisplayProps: () => {
+    format: AudioPlayerTimeFormatFn;
+    currentTime: number;
+    duration: number;
+  };
+  getSeekBarProps: () => {
+    duration: number;
+    currentTime: number;
+    onChange: (value: number) => void;
+    buffered: TimeRanges | undefined;
+  };
+  getSkipPreviousButtonProps: (
+    props: AudioPlayerSkipPreviousButtonProps,
+  ) => IconButtonProps;
+  getSkipNextButtonProps: (
+    props: AudioPlayerSkipNextButtonProps,
+  ) => IconButtonProps;
+  getForwardButtonProps: (
+    props: AudioPlayerForwardButtonProps,
+  ) => IconButtonProps;
+  getReplayButtonProps: (
+    props: AudioPlayerReplayButtonProps,
+  ) => IconButtonProps;
 }
 
 export interface AudioElementProps
@@ -51,9 +97,4 @@ export enum AudioEvents {
   DurationChange = 'onDurationChange',
   TimeUpdate = 'onTimeUpdate',
   Progress = 'onProgress',
-}
-
-export interface AudioPlayerIconButtonProps
-  extends Optional<IconButtonProps, 'aria-label'> {
-  seconds?: number;
 }

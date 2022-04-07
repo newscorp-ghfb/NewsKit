@@ -84,16 +84,19 @@ import {Label} from '../label';
 import {CheckboxState} from '../checkbox/types';
 import {BaseSwitchState} from '../base-switch/types';
 import {RadioButton} from '../radio-button';
-import {AudioPlayerComposable} from '../audio-player-composable/audio-player-composable';
-import {AudioPlayerSeekBar} from '../audio-player-composable/components/seek-bar';
-import {AudioPlayerPlayPauseButton} from '../audio-player-composable/components/play-pause-button';
-import {AudioPlayerTimeDisplay} from '../audio-player-composable/components/time-display';
+import {
+  AudioPlayerComposable,
+  AudioPlayerPlayPauseButton,
+  AudioPlayerSkipPreviousButton,
+  AudioPlayerSkipNextButton,
+  AudioPlayerSeekBar,
+  AudioPlayerTimeDisplay,
+  AudioPlayerReplayButton,
+  AudioPlayerForwardButton,
+} from '../audio-player-composable/index';
 import {calculateTime} from '../audio-player-composable/components/time-display/utils';
-import {AudioPlayerReplayButton} from '../audio-player-composable/components/replay-button';
-import {AudioPlayerForwardButton} from '../audio-player-composable/components/forward-button';
+
 import {GridLayout} from '../grid-layout';
-import {AudioPlayerSkipPreviousButton} from '../audio-player-composable/components/skip-previous';
-import {AudioPlayerSkipNextButton} from '../audio-player-composable';
 
 export const checkboxStates: [
   string,

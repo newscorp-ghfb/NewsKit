@@ -1,31 +1,33 @@
 import React from 'react';
-import {ButtonOverrides, ButtonSize} from '../../../button/types';
+import {ButtonSize} from '../../../button/types';
 import {IconButton} from '../../../icon-button';
-import {useTheme} from '../../../theme';
-import {filterOutFalsyProperties} from '../../../utils/filter-object';
 import {withOwnTheme} from '../../../utils/with-own-theme';
 import {useAudioPlayerContext} from '../../context';
-import {AudioPlayerIconButtonProps} from '../../types';
+import {useButtonOverrides, useKeyboardShortcutsOnButton} from '../../utils';
 import defaults from './defaults';
+import {AudioPlayerForwardButtonProps} from './types';
 
-const ThemelessAudioPlayerForwardButton: React.FC<AudioPlayerIconButtonProps> = React.memo(
-  ({overrides, ...props}) => {
+const defaultKeyboardShortcuts = ['l'];
+
+const ThemelessAudioPlayerForwardButton: React.FC<AudioPlayerForwardButtonProps> = React.memo(
+  props => {
     const {getForwardButtonProps} = useAudioPlayerContext();
 
-    const theme = useTheme();
-
-    const audioPlayerForwardOverrides: ButtonOverrides = {
-      ...theme.componentDefaults.audioPlayerForwardButton,
-      ...filterOutFalsyProperties(overrides),
-    };
+    const overrides = useButtonOverrides(props, 'audioPlayerForwardButton');
 
     const propsFromContext =
       getForwardButtonProps! && getForwardButtonProps(props);
+
+    useKeyboardShortcutsOnButton({
+      props: propsFromContext as AudioPlayerForwardButtonProps,
+      defaults: defaultKeyboardShortcuts,
+    });
+
     return (
       <IconButton
         data-testid="audio-player-forward-button"
         size={ButtonSize.Medium}
-        overrides={audioPlayerForwardOverrides}
+        overrides={overrides}
         {...propsFromContext}
       />
     );

@@ -1,7 +1,7 @@
 import {SliderOverrideProps} from '../../../slider';
 import {MQ} from '../../../utils';
 
-export type SeekBarProps = {
+export type AudioPlayerSeekBarProps = {
   overrides?: {
     slider?: SliderOverrideProps;
     buffering?: {

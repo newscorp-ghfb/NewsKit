@@ -2,6 +2,8 @@
 // eslint-disable-next-line
 import {fireEvent} from '@testing-library/react';
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import userEvent from '@testing-library/user-event';
 import {renderToFragmentWithTheme, renderWithTheme} from '../test/test-utils';
 import {BaseDialogProps} from './types';
 
@@ -85,7 +87,7 @@ export const sharedDialogTests = (
       children: body,
     });
 
-    fireEvent.keyUp(document, {key: 'Escape'});
+    userEvent.keyboard('{esc}');
 
     expect(mockCallBack).toHaveBeenCalled();
   });
