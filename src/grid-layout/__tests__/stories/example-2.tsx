@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {styled} from '../../../utils';
-import {GridLayout} from '../../grid-layout';
+import {GridLayout, GridLayoutItem} from '../../grid-layout';
 
 const Item = styled.div`
   padding: 10px;

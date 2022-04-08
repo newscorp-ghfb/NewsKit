@@ -53,7 +53,7 @@ export const decorators = [
     const kind = context.kind.split('/')[1];
     const Decorator = unlimitedScenarios.includes(kind)
       ? NoDecorator
-      : LimitSizeDecorator;
+      : NoDecorator;
     return (
       <Decorator>
         <Story />
