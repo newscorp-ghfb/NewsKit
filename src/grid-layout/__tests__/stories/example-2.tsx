@@ -14,9 +14,15 @@ const Item = styled.div`
 // Basics
 export const Example2 = () => (
   <GridLayout rows="repeat(3, 100px)" columns="repeat(3, 100px)">
-    <Item>One</Item>
-    <Item>Two</Item>
-    <Item>Three</Item>
+    <GridLayoutItem column=" 1 / 4" row=" 1 / 3">
+      <Item>One</Item>
+    </GridLayoutItem>
+    <GridLayoutItem column="auto / span 3">
+      <Item>Two</Item>
+    </GridLayoutItem>
+    <GridLayoutItem column=" 2 / 3" row=" 1 / 3">
+      <Item>Three</Item>
+    </GridLayoutItem>
     <Item>Four</Item>
     <Item>Five</Item>
   </GridLayout>

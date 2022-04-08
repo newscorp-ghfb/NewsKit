@@ -11,7 +11,16 @@ const Item = styled.div`
 
 // Basics
 export const Example1 = () => (
-  <GridLayout>
+  <GridLayout
+    columns={{
+      xs: '1fr',
+      sm: '1fr 1fr',
+      md: '1fr 1fr 1fr',
+    }}
+    rows="100px 100px"
+    columnGap="space020"
+    rowGap="space020"
+  >
     <Item>One</Item>
     <Item>Two</Item>
     <Item>Three</Item>
