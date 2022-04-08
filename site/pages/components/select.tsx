@@ -264,10 +264,18 @@ const selectOptionPropsRows = [
   },
 ];
 
-const selectOverridesFooter = (
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
+);
+
+const selectPropsFooter = (
   <>
-    <Block spaceStack="space030" />
-    <InlineMessage>
+    <Block spaceStack="space050" />
+    <InlineMessage icon={infoIcon} role="region" aria-label="rules props">
       The name & rules props are set on the form input level. If you want to add
       validation rules or set the name of this component,{' '}
       <LinkInline href="/components/form">
@@ -276,19 +284,22 @@ const selectOverridesFooter = (
       .
     </InlineMessage>
     <Block spaceStack="space030" />
-    <InlineMessage>
+    <InlineMessage icon={infoIcon} role="region" aria-label="select component">
       The Select component can support rendering in a read-only state (can be
       selected but not changed by the user).
     </InlineMessage>
   </>
 );
 
-const infoIcon = (
-  <IconFilledInfo
-    overrides={{
-      size: 'iconSize020',
-    }}
-  />
+const selectOptionPropsFooter = (
+  <>
+    <Block spaceStack="space050" />
+    <InlineMessage icon={infoIcon} role="region" aria-label="rules props">
+      Please refer to the{' '}
+      <LinkInline href="/components/modal">Modal component</LinkInline> for all
+      props and overrides.
+    </InlineMessage>
+  </>
 );
 
 const SelectComponent = (layoutProps: LayoutProps) => (
@@ -317,7 +328,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The select component contains five required elements and two optional elements',
+        'The select component contains five required elements and two optional elements.',
       media: getIllustrationComponent('components/select/anatomy'),
       rows: [
         {
@@ -864,7 +875,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           propsRows: commonPropsRows('FormInput'),
-          propsFooter: selectOverridesFooter,
+          propsFooter: selectPropsFooter,
           overridesRows: commonOverridesRows,
         },
         {
@@ -910,6 +921,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           propsRows: selectOptionPropsRows,
+          propsFooter: selectOptionPropsFooter,
           overridesRows: commonOverridesRows,
         },
       ],
