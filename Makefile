@@ -83,11 +83,10 @@ bump_version:
 	yarn config set version-git-message "Bumping to version v%s - [skip ci]"
 	echo "Updating package.json to version `${NEW_VERSION}`"
 	yarn version --new-version ${NEW_VERSION}
-	# git push
-	# echo "Creating and pushing version tag"
-	# git tag -a v${NEW_VERSION} -m "Bumped to v${NEW_VERSION}"
-	# git push origin v${NEW_VERSION}
-
+	git push
+	echo "Creating and pushing version tag"
+	git tag -a v${NEW_VERSION} -m "Bumped to v${NEW_VERSION}"
+	git push origin v${NEW_VERSION}
 
 # The tag deleted should match the expected tag in the `only_on_trigger_release_tag` filter.
 delete_trigger_release_tag:

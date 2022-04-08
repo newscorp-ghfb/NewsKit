@@ -889,141 +889,138 @@ workflows:
           pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert\/.*|style\/.*|test\/.*'
           value: << pipeline.git.branch >>
     jobs:
-      - bump_version:
+      - install_deps
+      - install_cypress
+      - build_icons:
+          requires:
+            - install_deps
+      - build_components:
+          requires:
+            - build_icons
+      - build_storybook:
+          requires:
+            - build_icons
+      - build_test_e2e:
+          requires:
+            - build_icons
+      - lint:
+          requires:
+            - build_icons
+      - test_unit_comps:
+          requires:
+            - build_icons
+      - test_unit_docs:
+          requires:
+            - build_icons
+      - test_e2e_comps:
           context: ncu-product-platforms-context
-          version: $(echo ciao@5.4.1 | cut -f2 -d "@")
-      # - install_deps
-      # - install_cypress
-      # - build_icons:
-      #     requires:
-      #       - install_deps
-      # - build_components:
-      #     requires:
-      #       - build_icons
-      # - build_storybook:
-      #     requires:
-      #       - build_icons
-      # - build_test_e2e:
-      #     requires:
-      #       - build_icons
-      # - lint:
-      #     requires:
-      #       - build_icons
-      # - test_unit_comps:
-      #     requires:
-      #       - build_icons
-      # - test_unit_docs:
-      #     requires:
-      #       - build_icons
-      # - test_e2e_comps:
-      #     context: ncu-product-platforms-context
-      #     requires:
-      #       - build_test_e2e
-      #       - install_cypress
-      # - build_docs_pr_with_no_base_url:
-      #     context: ncu-product-platforms-context
-      #     requires:
-      #       - build_icons
-      # - test_broken_links_docs:
-      #     name: test_broken_links_docs_pr
-      #     context: ncu-product-platforms-context
-      #     requires:
-      #       - build_docs_pr_with_no_base_url
-      # - test_e2e_docs:
-      #     name: test_e2e_docs_pr
-      #     context: ncu-product-platforms-context
-      #     requires:
-      #       - build_docs_pr_with_no_base_url
-      #       - install_cypress
-      # - no_visual_changes:
-      #     type: approval
-      #     requires:
-      #       - build_storybook
-      # - docs_and_comps_visual_changes:
-      #     type: approval
-      #     requires:
-      #       - build_storybook
-      # - docs_visual_changes:
-      #     type: approval
-      #     requires:
-      #       - build_storybook
+          requires:
+            - build_test_e2e
+            - install_cypress
+      - build_docs_pr_with_no_base_url:
+          context: ncu-product-platforms-context
+          requires:
+            - build_icons
+      - test_broken_links_docs:
+          name: test_broken_links_docs_pr
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+      - test_e2e_docs:
+          name: test_e2e_docs_pr
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+      - no_visual_changes:
+          type: approval
+          requires:
+            - build_storybook
+      - docs_and_comps_visual_changes:
+          type: approval
+          requires:
+            - build_storybook
+      - docs_visual_changes:
+          type: approval
+          requires:
+            - build_storybook
 
-      # # Jobs for realising unstable NPM version
-      # - approve_publish_npm_pr:
-      #     type: approval
-      #     requires:
-      #       - build_components
-      #       - lint
-      #       - test_unit_comps
-      #       - test_unit_docs
-      #       - test_e2e_comps
-      #       - test_e2e_docs_pr
-      # - publish_npm:
-      #     name: publish_npm_pr
-      #     context: ncu-product-platforms-context
-      #     publish_dev: true
-      #     requires:
-      #       - approve_publish_npm_pr
-      # # End jobs for releasing unstable NPM version
+      # Jobs for realising unstable NPM version
+      - approve_publish_npm_pr:
+          type: approval
+          requires:
+            - build_components
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_pr
+      - publish_npm:
+          name: publish_npm_pr
+          context: ncu-product-platforms-context
+          publish_dev: true
+          requires:
+            - approve_publish_npm_pr
+      # End jobs for releasing unstable NPM version
 
-      # - test_visual_comps:
-      #     context: ncu-product-platforms-context
-      #     requires:
-      #       - docs_and_comps_visual_changes
-      # - test_visual_docs:
-      #     context: ncu-product-platforms-context
-      #     requires:
-      #       - build_docs_pr_with_no_base_url
-      #       - install_cypress
-      #       - test_visual_comps
-      # - test_visual_docs_2:
-      #     context: ncu-product-platforms-context
-      #     requires:
-      #       - build_docs_pr_with_no_base_url
-      #       - install_cypress
-      #       - docs_visual_changes
-      # - can_i_merge_checker:
-      #     context: ncu-product-platforms-context
-      #     requires:
-      #       - i_have_merged_applitools
-      # - i_have_merged_applitools:
-      #     type: approval
-      # - init_aws:
-      #     context: ncu-product-platforms-context
-      # - deploy_terraform:
-      #     name: deploy_terraform_ecr_pr
-      #     package: ecr
-      #     context: ncu-product-platforms-context
-      #     apply: false
-      #     tf_env: false
-      #     requires:
-      #       - init_aws
-      # - deploy_terraform:
-      #     name: deploy_terraform_s3_pr
-      #     package: s3
-      #     context: ncu-product-platforms-context
-      #     apply: false
-      #     tf_env: false
-      #     environment: pr
-      #     requires:
-      #       - init_aws
-      # - build_docs:
-      #     name: build_docs_pr
-      #     context: ncu-newskit-site-pr
-      #     requires:
-      #       - build_icons
-      # - push_s3:
-      #     name: deploy_to_s3
-      #     context: ncu-product-platforms-context
-      #     requires:
-      #       - deploy_terraform_s3_pr
-      #       - build_docs_pr
-      #       - build_storybook
-      # - post_pr_env_url_to_github_pr:
-      #     name: pr_enviroment_link
-      #     context: ncu-product-platforms-context
-      #     requires:
-      #       - deploy_to_s3
+      - test_visual_comps:
+          context: ncu-product-platforms-context
+          requires:
+            - docs_and_comps_visual_changes
+      - test_visual_docs:
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+            - test_visual_comps
+      - test_visual_docs_2:
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_pr_with_no_base_url
+            - install_cypress
+            - docs_visual_changes
+      - can_i_merge_checker:
+          context: ncu-product-platforms-context
+          requires:
+            - i_have_merged_applitools
+      - i_have_merged_applitools:
+          type: approval
+      - init_aws:
+          context: ncu-product-platforms-context
+      - deploy_terraform:
+          name: deploy_terraform_ecr_pr
+          package: ecr
+          context: ncu-product-platforms-context
+          apply: false
+          tf_env: false
+          requires:
+            - init_aws
+      - deploy_terraform:
+          name: deploy_terraform_s3_pr
+          package: s3
+          context: ncu-product-platforms-context
+          apply: false
+          tf_env: false
+          environment: pr
+          requires:
+            - init_aws
+      - build_docs:
+          name: build_docs_pr
+          context: ncu-newskit-site-pr
+          requires:
+            - build_icons
+      - push_s3:
+          name: deploy_to_s3
+          context: ncu-product-platforms-context
+          requires:
+            - deploy_terraform_s3_pr
+            - build_docs_pr
+            - build_storybook
+      - post_pr_env_url_to_github_pr:
+          name: pr_enviroment_link
+          context: ncu-product-platforms-context
+          requires:
+            - deploy_to_s3
   
   main:
     when: 
@@ -1177,20 +1174,20 @@ workflows:
             - eks_flux_deploy_dev_to_prod
       # end
 
-  # on_trigger_release_tag:
-  #   jobs: 
-  #     - bump_version:
-  #         <<: *only_on_trigger_release_tag
-  #         context: ncu-product-platforms-context
-  #         tag: << pipeline.git.tag >>
-  
+  on_trigger_release_tag:
+    jobs: 
+      - bump_version:
+          <<: *only_on_trigger_release_tag
+          context: ncu-product-platforms-context
+          version: $(echo << pipeline.git.tag >> | cut -f2 -d "@")
+             
   on_release_version_tag:
     # Workflow's jobs triggered by the bump_version make script, which creates and pushes a new version tag e.g: "v5.0.1". 
     jobs:
       - delete_trigger_release_tag:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
-          version: << pipeline.git.tag >> | cut -f2 -d "v"
+          version: $(echo << pipeline.git.tag >> | cut -f2 -d "v")
 
       - init_aws:
           <<: *only_on_version_tag
