@@ -208,6 +208,15 @@ export const StoryCheckboxOverrides = () => (
         }}
       />
     </Container>
+    <StorybookSubHeading>Logical Margin Override</StorybookSubHeading>
+    <Container>
+      <Checkbox
+        label="overrides"
+        overrides={{
+          marginBlockEnd: 'space060',
+        }}
+      />
+    </Container>
   </ThemeProvider>
 );
 StoryCheckboxOverrides.storyName = 'checkbox-overrides';
