@@ -604,7 +604,7 @@ jobs:
   bump_version:
     executor: node
     parameters:
-      git-tag:
+      tag:
         type: string
     steps:
       - checkout
@@ -613,7 +613,7 @@ jobs:
           command: make set_git_identity
       - run:
           name: Bump version
-          command: make bump_version NEW_VERSION=<< parameters.git-tag >> | cut -f2 -d "@"
+          command: make bump_version NEW_VERSION=<< parameters.tag >> | cut -f2 -d "@"
       - slack/status:
           <<: *slack_status
 
@@ -891,7 +891,7 @@ workflows:
     jobs:
       - bump_version:
           context: ncu-product-platforms-context
-          git-tag: << pipeline.git.tag >>
+          tag: << pipeline.git.tag >>
 
       # TODO uncomment everything when done with bump_version
 
