@@ -613,7 +613,7 @@ jobs:
           command: make set_git_identity
       - run:
           name: Bump version
-          command: make bump_version NEW_VERSION=<< parameters.tag >>
+          command: make bump_version NEW_VERSION=<< parameters.tag >> | cut -f2 -d "@"
       - slack/status:
           <<: *slack_status
 
@@ -891,7 +891,7 @@ workflows:
     jobs:
       - bump_version:
           context: ncu-product-platforms-context
-          tag: 5.4.1
+          tag: '@5.4.1'
       # - install_deps
       # - install_cypress
       # - build_icons:
