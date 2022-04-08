@@ -1177,12 +1177,12 @@ workflows:
             - eks_flux_deploy_dev_to_prod
       # end
 
-  on_trigger_release_tag:
-    jobs: 
-      - bump_version:
-          <<: *only_on_trigger_release_tag
-          context: ncu-product-platforms-context
-          tag: << pipeline.git.tag >>
+  # on_trigger_release_tag:
+  #   jobs: 
+  #     - bump_version:
+  #         <<: *only_on_trigger_release_tag
+  #         context: ncu-product-platforms-context
+  #         tag: << pipeline.git.tag >>
   
   on_release_version_tag:
     # Workflow's jobs triggered by the bump_version make script, which creates and pushes a new version tag e.g: "v5.0.1". 
