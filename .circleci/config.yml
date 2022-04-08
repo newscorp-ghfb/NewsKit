@@ -613,7 +613,9 @@ jobs:
           command: make set_git_identity
       - run:
           name: Bump version
-          command: make bump_version NEW_VERSION=$(echo << parameters.tag >> | cut -f2 -d "@")
+          command: | 
+            NEW_VERSION=$(echo << parameters.tag >> | cut -f2 -d "@")
+            make bump_version NEW_VERSION
       - slack/status:
           <<: *slack_status
 
@@ -1177,12 +1179,12 @@ workflows:
             - eks_flux_deploy_dev_to_prod
       # end
 
-  # on_trigger_release_tag:
-  #   jobs: 
-  #     - bump_version:
-  #         <<: *only_on_trigger_release_tag
-  #         context: ncu-product-platforms-context
-  #         version: << pipeline.git.tag >> | cut -f2 -d "@"
+  on_trigger_release_tag:
+    jobs: 
+      - bump_version:
+          <<: *only_on_trigger_release_tag
+          context: ncu-product-platforms-context
+          tag: << pipeline.git.tag >>
   
   on_release_version_tag:
     # Workflow's jobs triggered by the bump_version make script, which creates and pushes a new version tag e.g: "v5.0.1". 
