@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import {Button, Headline, IconFilledEmail, TextBlock} from '../../..';
+import {Block} from '../../../block';
 
 export const ImagePlaceholder = () => (
   <img
@@ -11,16 +12,18 @@ export const ImagePlaceholder = () => (
 );
 
 export const TitlePlaceholder = () => (
-  <Headline
-    kickerText="Lorem Ipsum"
-    overrides={{
-      typographyPreset: {
-        xs: 'editorialHeadline020',
-      },
-    }}
-  >
-    Lorem Ipsum is simply dummy text
-  </Headline>
+  <Block spaceStack="space040">
+    <Headline
+      kickerText="Lorem Ipsum"
+      overrides={{
+        typographyPreset: {
+          xs: 'editorialHeadline020',
+        },
+      }}
+    >
+      Lorem Ipsum is simply dummy text
+    </Headline>
+  </Block>
 );
 
 export const TextPlaceholder = () => (
