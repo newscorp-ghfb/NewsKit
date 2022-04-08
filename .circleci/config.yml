@@ -891,7 +891,7 @@ workflows:
     jobs:
       - bump_version:
           context: ncu-product-platforms-context
-          version: trigger-release@5.4.1 | cut -f2 -d "@"
+          version: echo trigger-release@5.4.1 | cut -f2 -d "@"
       # - install_deps
       # - install_cypress
       # - build_icons:
