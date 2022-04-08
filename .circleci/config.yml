@@ -891,7 +891,6 @@ workflows:
     jobs:
       - bump_version:
           context: ncu-product-platforms-context
-          # version: << pipeline.git.tag >> | cut -f2 -d "@"
           tag: 5.4.1
       # - install_deps
       # - install_cypress
