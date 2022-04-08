@@ -613,8 +613,7 @@ jobs:
           command: make set_git_identity
       - run:
           name: Bump version
-          command: | 
-            make bump_version NEW_VERSION=$(echo << parameters.tag >> | cut -f2 -d "@")
+          command: make bump_version NEW_VERSION=$(echo << parameters.tag >> | cut -f2 -d "@")
       - slack/status:
           <<: *slack_status
 
