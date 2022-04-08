@@ -294,7 +294,7 @@ const selectPropsFooter = (
 const selectOptionPropsFooter = (
   <>
     <Block spaceStack="space050" />
-    <InlineMessage icon={infoIcon} role="region" aria-label="rules props">
+    <InlineMessage icon={infoIcon} role="region" aria-label="modal component">
       Please refer to the{' '}
       <LinkInline href="/components/modal">Modal component</LinkInline> for all
       props and overrides.
