@@ -890,7 +890,6 @@ workflows:
           value: << pipeline.git.branch >>
     jobs:
       - bump_version:
-          <<: *only_on_trigger_release_tag
           context: ncu-product-platforms-context
           # version: << pipeline.git.tag >> | cut -f2 -d "@"
           version: '5.4.1'
