@@ -8,22 +8,9 @@ SHORT_GIT_HASH := $(shell echo ${CIRCLE_SHA1} | cut -c -9)
 CURRENT_BRANCH = $(shell git symbolic-ref --short -q HEAD)
 
 # Cleans branch into a url friendly format 
-BASE_PATH = $(shell node -p "/(^release.*)|(^main$$)|(^develop$$)/.test('${CURRENT_BRANCH}') ? '' : require('./scripts/branch-name-to-url.js').branchNameToUrl('${CURRENT_BRANCH}')")
+BASE_PATH = $(shell node -p "/(^main$$)/.test('${CURRENT_BRANCH}') ? '' : require('./scripts/branch-name-to-url.js').branchNameToUrl('${CURRENT_BRANCH}')")
 
 BASE_URI = ${SITE_BASE_URL}${BASE_PATH}/
-
-# patch/minor/major
-UPDATE_TYPE = ${shell echo ${CURRENT_BRANCH}| cut -d'-' -f 3}
-
-# VERSION NUMBER IN PACKAGE JSON
-PKG_VERSION = ${shell node -p "require('./package.json').version"}
-
-# RELEASE BRANCH NAME TO CREATE PULL REQUESTS INTO DEVELOP AND MAIN
-RELEASE_BRANCH = release/${INITIAL_UPDATE_TYPE}-${PKG_VERSION}
-
-# PR TITLES
-RELEASE_PR_MAIN_TITLE = release/main-${INITIAL_UPDATE_TYPE}-${PKG_VERSION}
-RELEASE_PR_DEVELOP_TITLE = release/develop-${INITIAL_UPDATE_TYPE}-${PKG_VERSION}
 
 install:
 	yarn install --frozen-lockfile
@@ -90,24 +77,20 @@ set_git_identity:
 	git config --global user.email "ncu-product-platforms@news.co.uk"
 	git config --global user.name "Product Platforms Service"
 
-# UPDATE PACKAGE VERSION BASED ON UPDATE TYPE IN BRANCH TRIGGER NAME
-create_release_candidate:
-	git fetch origin
-	git checkout -f develop
-	echo "Creating new ${UPDATE_TYPE} version"
-	yarn version --${UPDATE_TYPE}
-	make INITIAL_UPDATE_TYPE=${UPDATE_TYPE} push_release
+bump_version:
+	git checkout main
+	git pull
+	yarn config set version-git-message "Bumping to version v%s - [skip ci]"
+	echo "Updating package.json version"
+	yarn version --new-version ${NEW_VERSION}
+	git push
+	echo "Creating and pushing version tag"
+	git tag -a v${NEW_VERSION} -m "Bumped to v${NEW_VERSION}"
+	git push origin v${NEW_VERSION}
 
-# CREATE RELEASE BRANCH AND PULL REQUESTS BEFORE DELETING ORIGINAL TRIGGER BRANCH
-push_release:
-	echo "Creating branch $(RELEASE_BRANCH)"
-	git checkout -b $(RELEASE_BRANCH)
-	#We don't care about any changes on main we force the current HEAD onto main
-	echo "Merge our release branch"
-	git merge -s ours origin/main --no-edit
-	git push --tags --set-upstream origin $(RELEASE_BRANCH)
-	echo "Create PR into develop"
-	gh pr create --base develop --head $(RELEASE_BRANCH) -t $(RELEASE_PR_DEVELOP_TITLE) --body ""
-	echo "Create PR into main"
-	gh pr create --base main --head $(RELEASE_BRANCH) -t $(RELEASE_PR_MAIN_TITLE) --body ""
-	git push origin --delete "trigger-release-${INITIAL_UPDATE_TYPE}"
+
+# The tag deleted should match the expected tag in the `only_on_trigger_release_tag` filter.
+delete_trigger_release_tag:
+	git checkout main
+	git push origin --delete trigger-release@${VERSION}
+
