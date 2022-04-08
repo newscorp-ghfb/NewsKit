@@ -614,8 +614,7 @@ jobs:
       - run:
           name: Bump version
           command: | 
-            NEW_VERSION=$(echo << parameters.tag >> | cut -f2 -d "@")
-            make bump_version NEW_VERSION
+            make bump_version NEW_VERSION=$(echo << parameters.tag >> | cut -f2 -d "@")
       - slack/status:
           <<: *slack_status
 
