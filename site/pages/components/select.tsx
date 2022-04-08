@@ -4,60 +4,47 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {ContentText} from '../../components/text-section/content-text';
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 
-const infoIcon = (
-  <IconFilledInfo
-    overrides={{
-      size: 'iconSize020',
-    }}
-  />
-);
-
-const commonPropsRows = [
+const commonPropsRows = (type?: string) => [
+  {
+    name: 'state',
+    type: ['valid', 'invalid', 'disabled'],
+    description: `If provided, renders the ${type} Select in a valid, invalid, or disabled state. It can be submitted within a form.`,
+  },
   {
     name: 'size',
     type: ['small', 'medium', 'large'],
     default: 'medium',
-    description: 'Defines the size of the Select.',
-  },
-  {
-    name: 'state',
-    type: ['valid', 'invalid', 'disabled'],
-    description:
-      'If provided, renders the FormInput Select in a valid, invalid, or disabled state. It can be submitted within a form.',
+    description: `Defines the size of the Select.`,
   },
   {
     name: 'useModal',
+    type: ['boolean'],
     default: 'false',
-    type: 'MQ<boolean>',
     description: (
       <>
-        If provided, Select options appear in a
-        <LinkInline href="/components/modal" target="_blank">
-          Modal
-        </LinkInline>{' '}
-        (with overlay).
+        If provided, Select options appear in a{' '}
+        <LinkInline href="/components/modal">Modal</LinkInline> (with overlay).
       </>
     ),
   },
   {
     name: 'startEnhancer',
     type: 'React.ReactNode',
-    description: `If provided, gives the ability to add a component to the start of the input container.`,
+    default: '',
+    description:
+      'If provided, gives the ability to add a component to the start of the input container.',
   },
   {
     name: 'endEnhancer',
     type: 'React.ReactNode',
-    description: `If provided, gives the ability to add a component to the end of the input container.`,
-  },
-  {
-    name: 'virtualized',
-    type: 'number',
-    description: `When the amount of options is greater than this number, the options list will be virtualized.`,
-    default: '50',
+    default: '',
+    description:
+      'If provided, gives the ability to add a component to the end of the input container.',
   },
 ];
 
@@ -175,31 +162,22 @@ const commonOverridesRows = [
       'If provided, this overrides the stack space of the Select panel.',
   },
   {
-    attribute: 'modal.panel.width',
-    type: 'MQ<string>',
-    default: '60vw',
-    description:
-      'If provided, this overrides the width property of the Modal panel.',
-  },
-];
-
-const selectOptionOverrides = [
-  {
-    attribute: 'stylePreset',
+    attribute: 'selectOption.stylePreset',
     type: 'MQ<string>',
     default: 'selectOptionItem',
     description:
       'If provided, this overrides the stylePreset of the Select option.',
   },
+
   {
-    attribute: 'minHeight',
+    attribute: 'selectOption.minHeight',
     type: 'MQ<string>',
     default: ['small = sizing060', 'medium = sizing080', 'large = sizing090'],
     description:
       'If provided, this overrides the minHeight of the Select option.',
   },
   {
-    attribute: 'typographyPreset',
+    attribute: 'selectOption.typographyPreset',
     type: 'MQ<string>',
     default: [
       'small = utilityBody020',
@@ -210,7 +188,7 @@ const selectOptionOverrides = [
       'If provided, this overrides the typographyPreset of the Select option.',
   },
   {
-    attribute: 'spaceInset',
+    attribute: 'selectOption.spaceInset',
     type: 'MQ<string>',
     default: [
       'small = spaceInsetSquish010',
@@ -221,27 +199,42 @@ const selectOptionOverrides = [
       'If provided, this overrides the inset space within the Select option.',
   },
   {
-    attribute: 'spaceInline',
+    attribute: 'selectOption.spaceInline',
     type: 'MQ<string>',
     default: 'space020',
     description:
       'If provided, this overrides the inline space of the Select option.',
   },
+  {
+    attribute: 'selectOptionItemIcon.stylePreset',
+    type: 'MQ<string>',
+    default: 'selectOptionItemIcon',
+    description:
+      'If provided, this overrides the stylePreset of the Select option icon.',
+  },
+  {
+    attribute: 'selectOption.icon.size',
+    type: 'MQ<string>',
+    default: 'iconSize020',
+    description:
+      'If provided, this overrides the icon size of the Select option icon.',
+  },
 ];
 
-const selectOptionProps = [
+const selectOptionPropsRows = [
   {
     name: 'value',
     type: 'string',
-    required: true,
+    default: '',
     description: 'Defines the value of the SelectOption',
+    required: true,
   },
   {
     name: 'children',
     type: 'React.ReactNode',
-    required: true,
     default: '',
     description: 'Label and icon(s) of the SelectOption.',
+    required: true,
   },
   {
     name: 'selected',
@@ -272,10 +265,30 @@ const selectOptionProps = [
 ];
 
 const selectOverridesFooter = (
-  <InlineMessage>
-    Checkout <LinkInline href="/components/modal">Modal component</LinkInline>{' '}
-    for all props and overrides
-  </InlineMessage>
+  <>
+    <Block spaceStack="space030" />
+    <InlineMessage>
+      The name & rules props are set on the form input level. If you want to add
+      validation rules or set the name of this component,{' '}
+      <LinkInline href="/components/form">
+        please refer to the Form component
+      </LinkInline>
+      .
+    </InlineMessage>
+    <Block spaceStack="space030" />
+    <InlineMessage>
+      The Select component can support rendering in a read-only state (can be
+      selected but not changed by the user).
+    </InlineMessage>
+  </>
+);
+
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
 );
 
 const SelectComponent = (layoutProps: LayoutProps) => (
@@ -357,7 +370,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
     }}
     options={{
       introduction:
-        'The Radio Button has options that can be used to provide an appropriate experience for different use cases.',
+        'The Select component has options that can be used to provide an appropriate experience for different use cases.',
       cards: [
         {
           title: 'Size',
@@ -664,52 +677,6 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    componentAPI={{
-      introduction: (
-        <>
-          The Select component is compromised of four key elements, these have a
-          range of props that can be used to define an appropriate experience
-          for different use cases.
-          <Block spaceStack="space080" />
-          <InlineMessage>
-            There are two components exported from the package, one for use
-            within the NewsKit Form component, and one for use as a controlled
-            component.
-          </InlineMessage>
-        </>
-      ),
-      components: [
-        {
-          title: 'FormInputSelect',
-          summary: `The FormInputSelect has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.`,
-          propsRows: commonPropsRows,
-          overridesRows: commonOverridesRows,
-          overridesFooter: selectOverridesFooter,
-        },
-        {
-          title: 'Select',
-          summary: `The Select has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.`,
-          propsRows: [
-            {
-              name: 'name',
-              type: 'string',
-              description:
-                'If provided, defines name of the input element, used when submitting an HTML form.',
-            },
-            ...commonPropsRows,
-          ],
-          overridesRows: commonOverridesRows,
-          overridesFooter: selectOverridesFooter,
-        },
-        {
-          title: 'SelectOption',
-          summary:
-            'The SelectOption has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.',
-          propsRows: selectOptionProps,
-          overridesRows: selectOptionOverrides,
-        },
-      ],
-    }}
     usage={{
       introduction:
         'The following guidance describes how and when to appropriately use a Select component.',
@@ -764,6 +731,205 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/select/usage/dont-4'),
         },
       ],
+    }}
+    accessibility={{
+      introduction: (
+        <>
+          The Select component has the following accessibility considerations:
+          <Block spaceStack="space100" />
+          <ContentText title="Grouping Selects" titleAs="span">
+            It is recommended to{' '}
+            <Link
+              target="_blank"
+              href="https://www.w3.org/TR/wai-aria-1.2/#group"
+            >
+              group
+            </Link>{' '}
+            selects and other related elements such as Labels and Assistive Text
+            together using the Fieldset component, with a title attributed to
+            the elements that appear in the Fieldset, called a Legend.
+          </ContentText>
+        </>
+      ),
+      focusOrder: {
+        title: 'Focus order',
+        tableRows: [
+          {
+            order: 1,
+            element: 'Start enhancer',
+            role:
+              'Focusses to the start enhancer (if provided, and interactive)',
+          },
+          {
+            order: 2,
+            element: 'Select',
+            role: 'Focusses to the input container',
+          },
+          {
+            order: 3,
+            element: 'End enhancer',
+            role:
+              'Focusses to the end enhancer  (if provided, and interactive)',
+          },
+        ],
+      },
+      interaction: {
+        title: 'Keyboard Interactions',
+        tableRows: [
+          {
+            command: ['Tab'],
+            description:
+              'When focus is outside of the Select, it moves focus to the input container. If focus is on the input container it moves focus to the end enhancer (if provided, and interactive)',
+          },
+          {
+            command: ['Space'],
+            description: 'Launches/closes the Select panel',
+          },
+          {
+            command: ['Up'],
+            description:
+              'When focus is inside the Select panel, it moves focus upwards through the option items in the Select panel',
+          },
+          {
+            command: ['Down'],
+            description:
+              'When focus is inside the Select panel, it moves focus downwards through the option items in the Select panel',
+          },
+          {
+            command: ['Home'],
+            description:
+              'When focus is inside the Select panel, it moves to the first available option item in the Select panel',
+          },
+          {
+            command: ['End'],
+            description:
+              'When focus is inside the Select panel, it moves to the last available option item in the Select panel',
+          },
+        ],
+      },
+      aria: {
+        title: 'WAI-ARIA',
+        tableRows: [
+          {
+            element: 'label',
+            attribute: 'ariaLabel',
+            value: 'string',
+            description:
+              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the Select.',
+            userSupplied: true,
+          },
+          {
+            element: 'Label',
+            attribute: 'aria-required',
+            value: 'object',
+            description:
+              'This attribute informs the user that a field is required. When set to true, screen readers notify users that the field is required.',
+            userSupplied: true,
+          },
+          {
+            element: 'Label',
+            attribute: 'aria-required',
+            value: 'object',
+            description:
+              'This attribute informs the user when there is an error. By default it’s set to false. Values include true, spelling, and grammar. Screen readers will alert users when the field is set to any value other than false',
+            userSupplied: true,
+          },
+        ],
+      },
+    }}
+    componentAPI={{
+      introduction: (
+        <>
+          The Select component is compromised of four key elements, these have a
+          range of props that can be used to define an appropriate experience
+          for different use cases.
+          <Block spaceStack="space080" />
+          <InlineMessage>
+            There are two components exported from the package, one for use
+            within the NewsKit{' '}
+            <Link href="/components/form/">NewsKit Form component</Link>, and
+            one for use as a controlled component.
+          </InlineMessage>
+        </>
+      ),
+      components: [
+        {
+          title: 'FormInput Select',
+          summary: (
+            <>
+              The FormInput Select has a range of props that can be used to
+              define an appropriate experience for different use cases. Use this
+              component within the{' '}
+              <Link href="/components/form/">NewsKit Form component</Link>.
+            </>
+          ),
+          propsRows: commonPropsRows('FormInput'),
+          propsFooter: selectOverridesFooter,
+          overridesRows: commonOverridesRows,
+        },
+        {
+          title: 'Select',
+          summary: (
+            <>
+              The Select has a range of props that can be used to define an
+              appropriate experience for different use cases. Use this component
+              within the{' '}
+              <Link href="/components/form/">NewsKit Form component</Link>.
+            </>
+          ),
+          propsRows: [
+            {
+              name: 'name',
+              type: 'string',
+              description: (
+                <>
+                  If provided, defines name of the input element, used when
+                  submitting an{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefname"
+                    target="_blank"
+                  >
+                    HTML form
+                  </Link>
+                  .
+                </>
+              ),
+            },
+            ...commonPropsRows(),
+          ],
+          overridesRows: commonOverridesRows,
+        },
+        {
+          title: 'SelectOption',
+          summary: (
+            <>
+              The SelectOption has a range of props that can be used to define
+              an appropriate experience for different use cases. Use this
+              component within the{' '}
+              <Link href="/components/form/">NewsKit Form component</Link>.
+            </>
+          ),
+          propsRows: selectOptionPropsRows,
+          overridesRows: commonOverridesRows,
+        },
+      ],
+    }}
+    compliance={{
+      variations: true,
+      states: true,
+      behaviours: true,
+      usage: true,
+      accessibility: true,
+      performance: true,
+      seo: true,
+      props: true,
+      uiKit: false,
+      design: true,
+      themes: true,
+    }}
+    related={{
+      introduction: '',
+      related: ['Form', 'Checkbox'],
     }}
   />
 );
