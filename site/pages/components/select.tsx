@@ -275,7 +275,7 @@ const infoIcon = (
 const selectPropsFooter = (
   <>
     <Block spaceStack="space050" />
-    <InlineMessage icon={infoIcon} role="region" aria-label="rules props">
+    <InlineMessage icon={infoIcon} role="region" aria-label="Rules props">
       The name & rules props are set on the form input level. If you want to add
       validation rules or set the name of this component,{' '}
       <LinkInline href="/components/form">
@@ -284,7 +284,7 @@ const selectPropsFooter = (
       .
     </InlineMessage>
     <Block spaceStack="space030" />
-    <InlineMessage icon={infoIcon} role="region" aria-label="select component">
+    <InlineMessage icon={infoIcon} role="region" aria-label="Select component">
       The Select component can support rendering in a read-only state (can be
       selected but not changed by the user).
     </InlineMessage>
@@ -855,7 +855,11 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           range of props that can be used to define an appropriate experience
           for different use cases.
           <Block spaceStack="space080" />
-          <InlineMessage>
+          <InlineMessage
+            icon={infoIcon}
+            role="region"
+            aria-label="Components exported"
+          >
             There are two components exported from the package, one for use
             within the NewsKit{' '}
             <Link href="/components/form/">NewsKit Form component</Link>, and
