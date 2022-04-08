@@ -683,5 +683,53 @@ describe('Audio Player Composable', () => {
       userEvent.keyboard('{Home}');
       expect(audioElement.currentTime).toBe(0);
     });
+
+    it('should forward and replay 10 sec when press j / l', () => {
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        recordedAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const playPauseButton = getByTestId('audio-player-play-pause-button');
+      playPauseButton.focus();
+      fireEvent.durationChange(audioElement, {
+        target: {
+          duration: 6610,
+        },
+      });
+
+      userEvent.keyboard('l');
+      userEvent.keyboard('l');
+
+      expect(audioElement.currentTime).toEqual(20);
+
+      userEvent.keyboard('j');
+      expect(audioElement.currentTime).toEqual(10);
+    });
+
+    it('should move to prev/next track on shift + p / shift + n', () => {
+      const mockOnPrevClick = jest.fn();
+      const mockOnNextClick = jest.fn();
+      const {getByTestId} = renderWithTheme(AudioPlayerComposable, {
+        ...recordedAudioProps,
+        children: (
+          <>
+            <AudioPlayerSkipPreviousButton
+              onClick={mockOnPrevClick}
+              data-testid="skip"
+            />
+            <AudioPlayerSkipNextButton onClick={mockOnNextClick} />
+          </>
+        ),
+      });
+      const button = getByTestId('skip');
+      button.focus();
+
+      userEvent.keyboard('{shift}{p}');
+      userEvent.keyboard('{Shift}{n}');
+      expect(mockOnPrevClick).toHaveBeenCalled();
+      expect(mockOnNextClick).toHaveBeenCalled();
+    });
   });
 });

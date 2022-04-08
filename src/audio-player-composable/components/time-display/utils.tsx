@@ -1,4 +1,4 @@
-import {FormatFn} from './types';
+import {AudioPlayerTimeFormatFn} from './types';
 
 export const calculateTime = (secs: number) => {
   const hours = Math.floor(secs / 3600);
@@ -12,8 +12,11 @@ export const calculateTime = (secs: number) => {
   }
   return `${returnedMinutes}:${returnedSeconds}`;
 };
-// change to formattedcurrentime
-export const formatFunction: FormatFn = ({currentTime, duration}) => {
+
+export const formatFunction: AudioPlayerTimeFormatFn = ({
+  currentTime,
+  duration,
+}) => {
   const currentFormattedTime = calculateTime(
     (currentTime as unknown) as number,
   );
