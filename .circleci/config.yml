@@ -604,19 +604,18 @@ jobs:
   bump_version:
     executor: node
     parameters:
-      tag2:
+      version:
         type: string
     steps:
       - checkout
-      - run: echo << parameters.tag2 >>
-      # - run:
-      #     name: Set github identity
-      #     command: make set_git_identity
-      # - run:
-      #     name: Bump version
-      #     command: make bump_version NEW_VERSION=<< parameters.tag >> | cut -f2 -d "@"
-      # - slack/status:
-      #     <<: *slack_status
+      - run:
+          name: Set github identity
+          command: make set_git_identity
+      - run:
+          name: Bump version
+          command: make bump_version NEW_VERSION=<< parameters.version >>
+      - slack/status:
+          <<: *slack_status
 
   delete_trigger_release_tag:
     executor: node 
@@ -892,9 +891,8 @@ workflows:
     jobs:
       - bump_version:
           context: ncu-product-platforms-context
-          tag2: << pipeline.git.tag >>
-
-      # TODO uncomment everything when done with bump_version
+          # version: << pipeline.git.tag >> | cut -f2 -d "@"
+          version: 5.4.1
       # - install_deps
       # - install_cypress
       # - build_icons:
@@ -1179,14 +1177,13 @@ workflows:
           requires:
             - eks_flux_deploy_dev_to_prod
       # end
-  
-  #  TODO bring it back with right parameter name and value
-  # on_trigger_release_tag:
-  #   jobs: 
-      # - bump_version:
-      #     <<: *only_on_trigger_release_tag
-      #     context: ncu-product-platforms-context
-      #     version: << pipeline.git.tag >> | cut -f2 -d "@"
+
+  on_trigger_release_tag:
+    jobs: 
+      - bump_version:
+          <<: *only_on_trigger_release_tag
+          context: ncu-product-platforms-context
+          version: << pipeline.git.tag >> | cut -f2 -d "@"
   
   on_release_version_tag:
     # Workflow's jobs triggered by the bump_version make script, which creates and pushes a new version tag e.g: "v5.0.1". 
