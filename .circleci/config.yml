@@ -604,11 +604,11 @@ jobs:
   bump_version:
     executor: node
     parameters:
-      tag:
+      tag2:
         type: string
     steps:
       - checkout
-      - run: echo << parameters.tag >>
+      - run: echo << parameters.tag2 >>
       # - run:
       #     name: Set github identity
       #     command: make set_git_identity
@@ -892,10 +892,9 @@ workflows:
     jobs:
       - bump_version:
           context: ncu-product-platforms-context
-          tag: << pipeline.git.tag >>
+          tag2: << pipeline.git.tag >>
 
       # TODO uncomment everything when done with bump_version
-
       # - install_deps
       # - install_cypress
       # - build_icons:
