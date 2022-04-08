@@ -83,6 +83,7 @@ bump_version:
 	yarn config set version-git-message "Bumping to version v%s - [skip ci]"
 	echo "Updating package.json to version `${NEW_VERSION}`"
 	yarn version --new-version ${NEW_VERSION}
+	# TODO uncomment
 	# git push
 	# echo "Creating and pushing version tag"
 	# git tag -a v${NEW_VERSION} -m "Bumped to v${NEW_VERSION}"

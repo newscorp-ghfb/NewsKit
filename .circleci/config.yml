@@ -608,14 +608,15 @@ jobs:
         type: string
     steps:
       - checkout
-      - run:
-          name: Set github identity
-          command: make set_git_identity
-      - run:
-          name: Bump version
-          command: make bump_version NEW_VERSION=<< parameters.tag >> | cut -f2 -d "@"
-      - slack/status:
-          <<: *slack_status
+      - run: echo << parameters.tag >>
+      # - run:
+      #     name: Set github identity
+      #     command: make set_git_identity
+      # - run:
+      #     name: Bump version
+      #     command: make bump_version NEW_VERSION=<< parameters.tag >> | cut -f2 -d "@"
+      # - slack/status:
+      #     <<: *slack_status
 
   delete_trigger_release_tag:
     executor: node 
