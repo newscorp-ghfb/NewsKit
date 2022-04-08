@@ -1,6 +1,6 @@
 import {fireEvent, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useRef, useState} from 'react';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
@@ -9,54 +9,6 @@ import {createTheme} from '../../theme';
 import {Modal} from '../modal';
 import {TextBlock} from '../../text-block';
 import {sharedDialogTests} from '../../dialog/base-dialog-tests';
-
-// @ts-ignore
-const callIfExist = (props, method) => method in props && props[method]();
-
-jest.mock('react-transition-group', () => {
-  const FakeTransition = jest.fn(({children}) => children);
-  const FakeCSSTransition = jest.fn(props => {
-    const modifyChildren = (
-      child: React.DetailedReactHTMLElement<{className: string}, HTMLElement>,
-    ) => {
-      const className = `nk-modal-enter-done`;
-
-      return React.cloneElement(child, {
-        className,
-      });
-    };
-
-    const onEnter = React.useCallback(() => callIfExist(props, 'onEnter'), [
-      props,
-    ]);
-    const onExited = React.useCallback(() => callIfExist(props, 'onExited'), [
-      props,
-    ]);
-
-    useEffect(() => {
-      if (props.in) {
-        onEnter();
-      } else {
-        onExited();
-      }
-    }, [props.in, onEnter, onExited]);
-
-    // check only for `in` prop and ignore `appear` since its always applied it does not play role
-    if (props.in) {
-      return (
-        <FakeTransition>
-          {React.Children.map(props.children, child => modifyChildren(child))}
-        </FakeTransition>
-      );
-    }
-    // modal is not in the DOM when is not open
-    return null;
-  });
-  return {
-    CSSTransition: FakeCSSTransition,
-    Transition: FakeTransition,
-  };
-});
 
 const modalBody = <TextBlock>Modal body content</TextBlock>;
 

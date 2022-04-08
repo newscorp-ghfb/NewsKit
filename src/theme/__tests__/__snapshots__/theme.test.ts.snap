@@ -1133,6 +1133,15 @@ Object {
       },
     },
   },
+  "audioPlayerForwardButton": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
+  "audioPlayerPlayPauseButton": Object {
+    "stylePreset": "iconButtonSolidPrimary",
+  },
+  "audioPlayerReplayButton": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
   "audioPlayerSeekBar": Object {
     "buffering": Object {
       "stylePreset": "seekBarBuffering",
@@ -1150,6 +1159,12 @@ Object {
         "stylePreset": "seekBarTrack",
       },
     },
+  },
+  "audioPlayerSkipNextButton": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
+  "audioPlayerSkipPreviousButton": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
   },
   "audioPlayerTimeDisplay": Object {
     "stylePreset": "timeDisplay",

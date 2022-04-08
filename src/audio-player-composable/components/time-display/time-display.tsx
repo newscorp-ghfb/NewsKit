@@ -4,24 +4,25 @@ import {useAudioPlayerContext} from '../../context';
 import {withOwnTheme} from '../../../utils/with-own-theme';
 import defaults from './defaults';
 import stylePresets from './style-presets';
-import {StyledLabelProps} from './types';
+import {AudioPlayerTimeDisplayProps} from './types';
 import {TextBlock} from '../../../text-block';
 
-const StyledTextBlock = styled(TextBlock)<StyledLabelProps>`
+const StyledTextBlock = styled(TextBlock)<AudioPlayerTimeDisplayProps>`
   display: block;
   ${getStylePreset(`audioPlayerTimeDisplay`, '')}
   ${getTypographyPreset(`audioPlayerTimeDisplay`, '')};
 `;
 
-export const ThemelessTimeDisplay = ({
+const ThemelessTimeDisplay = ({
   overrides = {},
   format,
-}: StyledLabelProps) => {
+  ...restProps
+}: AudioPlayerTimeDisplayProps) => {
   const {getTimeDisplayProps} = useAudioPlayerContext();
   const {format: defaultFormat, currentTime, duration} = getTimeDisplayProps!();
   const formatFn = typeof format === 'function' ? format : defaultFormat;
   return (
-    <StyledTextBlock as="span" overrides={overrides}>
+    <StyledTextBlock as="span" overrides={overrides} {...restProps}>
       {formatFn({currentTime, duration})}
     </StyledTextBlock>
   );
