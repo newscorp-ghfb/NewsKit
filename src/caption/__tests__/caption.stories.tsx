@@ -21,14 +21,16 @@ export const StoryCaption = () => (
   <Container>
     <StorybookHeading>Caption</StorybookHeading>
     <StyledDiv>
-      <Caption creditText="credit">
+      <Caption creditText="credit" overrides={{marginBlockEnd: 'token'}}>
         Caption component with both caption and credit text
       </Caption>
     </StyledDiv>
     <br />
     <br />
     <StyledDiv>
-      <Caption>Caption component with only caption text</Caption>
+      <Caption overrides={{marginBlock: 'token'}}>
+        Caption component with only caption text
+      </Caption>
     </StyledDiv>
     <br />
     <br />
@@ -60,13 +62,11 @@ export const StoryCaptionInset = () => (
         CaptionInset with both caption and credit text
       </CaptionInset>
     </StyledDiv>
-    <br />
-    <br />
+
     <StyledDiv>
       <CaptionInset>CaptionInset with only caption text</CaptionInset>
     </StyledDiv>
-    <br />
-    <br />
+
     <StyledDiv>
       <CaptionInset
         overrides={{

@@ -1,10 +1,11 @@
+import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
-export interface CaptionOverrides {
+export interface CaptionOverrides extends LogicalProps {
   typographyPreset?: MQ<string>;
   stylePreset?: MQ<string>;
-  spaceStack?: MQ<string>;
-  spaceInset?: MQ<string>;
+  spaceStack?: MQ<string>; // deppricated
+  spaceInset?: MQ<string>; // deppricated
   credit?: {
     typographyPreset?: MQ<string>;
     stylePreset?: MQ<string>;
