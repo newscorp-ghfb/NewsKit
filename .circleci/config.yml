@@ -889,6 +889,10 @@ workflows:
           pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert\/.*|style\/.*|test\/.*'
           value: << pipeline.git.branch >>
     jobs:
+      # TODO remove bump_version
+      - bump_version:
+          context: ncu-product-platforms-context
+          version: $(echo << pipeline.git.tag >> | cut -f2 -d "@")
       - install_deps
       - install_cypress
       - build_icons:
