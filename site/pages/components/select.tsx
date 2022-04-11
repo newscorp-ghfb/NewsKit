@@ -276,8 +276,9 @@ const selectPropsFooter = (
   <>
     <Block spaceStack="space050" />
     <InlineMessage icon={infoIcon} role="region" aria-label="Rules props">
-      The name & rules props are set on the form input level. If you want to add
-      validation rules or set the name of this component,{' '}
+      The <InlineCode>name</InlineCode> & <InlineCode>rules</InlineCode> props
+      are set on the form input level. If you want to add validation rules or
+      set the name of this component,{' '}
       <LinkInline href="/components/form">
         please refer to the Form component
       </LinkInline>
@@ -430,9 +431,9 @@ const SelectComponent = (layoutProps: LayoutProps) => (
                 user enters a value.
               </Block>
               <InlineMessage
-                icon={infoIcon}
                 role="region"
                 aria-label="Placeholder accessible"
+                title="Note"
               >
                 Placeholder text is not accessible; use assistive text when
                 providing instructions on completing a Select for clarity.
@@ -565,7 +566,8 @@ const SelectComponent = (layoutProps: LayoutProps) => (
               user types a valid entry in the input or on submit.
               <br />
               <br />
-              The Form component is used to define this validation behaviour.
+              The <Link href="/components/form/">Form</Link> component is used
+              to define this validation behaviour.
             </>
           ),
           media: getIllustrationComponent('components/select/states/invalid'),
@@ -659,7 +661,6 @@ const SelectComponent = (layoutProps: LayoutProps) => (
               .
               <Block spaceStack="space050" />
               <InlineMessage
-                icon={infoIcon}
                 role="region"
                 aria-label="Select validation"
                 title="Note"
@@ -874,8 +875,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
             <>
               The FormInput Select has a range of props that can be used to
               define an appropriate experience for different use cases. Use this
-              component within the{' '}
-              <Link href="/components/form/">NewsKit Form component</Link>.
+              component within the NewsKit Form component.
             </>
           ),
           propsRows: commonPropsRows('FormInput'),
@@ -888,8 +888,8 @@ const SelectComponent = (layoutProps: LayoutProps) => (
             <>
               The Select has a range of props that can be used to define an
               appropriate experience for different use cases. Use this component
-              within the{' '}
-              <Link href="/components/form/">NewsKit Form component</Link>.
+              within the NewsKit{' '}
+              <Link href="/components/form/">Form component</Link>.
             </>
           ),
           propsRows: [
@@ -920,8 +920,8 @@ const SelectComponent = (layoutProps: LayoutProps) => (
             <>
               The SelectOption has a range of props that can be used to define
               an appropriate experience for different use cases. Use this
-              component within the{' '}
-              <Link href="/components/form/">NewsKit Form component</Link>.
+              component within the NewsKit{' '}
+              <Link href="/components/form/">Form component</Link>.
             </>
           ),
           propsRows: selectOptionPropsRows,
@@ -945,7 +945,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
     }}
     related={{
       introduction: '',
-      related: ['Form', 'Checkbox'],
+      related: ['Form'],
     }}
   />
 );
