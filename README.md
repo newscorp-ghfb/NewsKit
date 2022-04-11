@@ -35,7 +35,7 @@ You need to be on version: <b>>=16.5.0</b> to run the application. In your termi
 
 ## 📦  Getting Started
 
-Once you have the above installed, run the following commands:
+Once you have the above installed, run the following commands: 
 Note that if you are on Windows machine, you need to run the `wsl` command first to run which ever linux environment you've installed on your machine.
 
 ```sh
