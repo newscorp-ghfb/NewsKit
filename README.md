@@ -9,12 +9,12 @@
 
 NewsKit is News UK’s design system. It provides interactive building blocks and guidelines for crafting cohesive digital product interfaces and accelerating development. Build better products faster.
 
-| Branch  | Link                                                                                   |
+| Environment  | Link                                                                                   |
 | ------- | -------------------------------------------------------------------------------------- |
-| develop | [https://www.newskit.dev-news.co.uk/](https://www.newskit.dev-news.co.uk/)             |
-| develop | [https://storybook.newskit.dev-news.co.uk/](https://storybook.newskit.dev-news.co.uk/) |
-| main    | [https://www.newskit.co.uk/](https://www.newskit.co.uk/)                               |
-| main    | [https://storybook.newskit.co.uk/](https://storybook.newskit.co.uk/)                   |
+| Develop | [https://www.newskit.dev-news.co.uk/](https://www.newskit.dev-news.co.uk/)             |
+| Develop | [https://storybook.newskit.dev-news.co.uk/](https://storybook.newskit.dev-news.co.uk/) |
+| Prod    | [https://www.newskit.co.uk/](https://www.newskit.co.uk/)                               |
+| Prod    | [https://storybook.newskit.co.uk/](https://storybook.newskit.co.uk/)                   |
 
 ## 🙌 Browser support
 
