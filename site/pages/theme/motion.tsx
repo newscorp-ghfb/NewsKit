@@ -5,7 +5,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-  ChildrenColSpan,
+  ContentColSpan,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {LayoutProps} from '../../components/layout';
@@ -174,7 +174,7 @@ const Motion = (layoutProps: LayoutProps) => (
           }
         />
 
-        <ContentSecondary showSeparator childrenColSpan={ChildrenColSpan.TEXT}>
+        <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage
             role="region"
             title="Overrides"
@@ -209,7 +209,7 @@ const Motion = (layoutProps: LayoutProps) => (
           id="duration"
           headline="Duration"
           description="Determining which timing to use is a matter of context, including the complexity of the action and the distance over which the animation occurs."
-          childrenColSpan={ChildrenColSpan.TEXT}
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <ReduceMotionMessage />
         </ContentPrimary>
@@ -221,7 +221,7 @@ const Motion = (layoutProps: LayoutProps) => (
           />
         </ContentSecondary>
 
-        <ContentSecondary showSeparator childrenColSpan={ChildrenColSpan.TEXT}>
+        <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage role="region" aria-label="Duration">
             These should use the{' '}
             <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration">
@@ -238,7 +238,7 @@ const Motion = (layoutProps: LayoutProps) => (
           id="timing"
           headline="Timing"
           description="Timing controls the velocity of motion over its duration. It helps determine an animation’s feeling and can aid in matching the appearance of real-world physics by controlling how objects accelerate and decelerate as they move on the screen. NewsKit uses four different types of timing."
-          childrenColSpan={ChildrenColSpan.TEXT}
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <ReduceMotionMessage />
         </ContentPrimary>
@@ -250,7 +250,7 @@ const Motion = (layoutProps: LayoutProps) => (
           />
         </ContentSecondary>
 
-        <ContentSecondary showSeparator childrenColSpan={ChildrenColSpan.TEXT}>
+        <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage role="region" aria-label="Timing">
             These should use the{' '}
             <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function">
@@ -283,7 +283,7 @@ const Motion = (layoutProps: LayoutProps) => (
           toc="Accessibility"
           headline="Accessibility considerations"
           description="When creating custom animations using the motion foundations, the following should be considered to help ensure the quality and usability of your implementation:"
-          childrenColSpan={ChildrenColSpan.TEXT}
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
             listItemMarker={IconFilledCircle}
@@ -304,7 +304,7 @@ const Motion = (layoutProps: LayoutProps) => (
           </UnorderedList>
         </ContentPrimary>
 
-        <ContentSecondary showSeparator childrenColSpan={ChildrenColSpan.TEXT}>
+        <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <Link
             overrides={{typographyPreset: 'editorialParagraph030'}}
             href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/3446341702/Motion+Presets+-+Web+Documentation#Reduced-Motion-For-Motion-Sensitivities"

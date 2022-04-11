@@ -9,7 +9,7 @@ import {HeadNextSeo} from '../../components/head-next-seo';
 import {
   ContentSection,
   ContentSecondary,
-  ChildrenColSpan,
+  ContentColSpan,
 } from '../../components/content-structure';
 
 const contentOverrides = {
@@ -101,7 +101,7 @@ const Introduction = ({path, ...props}: LayoutProps) => (
               accurate, complete or up-to-date.
             </>
           }
-          childrenColSpan={ChildrenColSpan.TEXT}
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <P overrides={contentOverrides}>
             In accessing any part of our Website, you agree not to:
@@ -236,7 +236,7 @@ const Introduction = ({path, ...props}: LayoutProps) => (
 
       <ContentSecondary
         headline="Other information"
-        childrenColSpan={ChildrenColSpan.TEXT}
+        childrenColSpan={ContentColSpan.TEXT}
       >
         <P overrides={contentOverrides}>
           In these Terms, the following words and expressions have the following

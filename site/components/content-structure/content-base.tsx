@@ -9,15 +9,15 @@ import {
 import React, {useMemo} from 'react';
 import {ContentBaseProps} from './types';
 
-export enum ChildrenColSpan {
+export enum ContentColSpan {
   FULL = 12,
   TEXT = 10,
 }
 
-const fullGridColumns = `auto / span ${ChildrenColSpan.FULL}`;
+const fullGridColumns = `auto / span ${ContentColSpan.FULL}`;
 
 const textGridColumns: (cols?: number) => MQ<string> = (
-  cols = ChildrenColSpan.TEXT,
+  cols = ContentColSpan.TEXT,
 ) => ({
   xs: fullGridColumns,
   lg: `auto / span ${cols}`,
@@ -30,7 +30,7 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
   children,
   toc,
   id,
-  childrenColSpan = ChildrenColSpan.FULL,
+  childrenColSpan = ContentColSpan.FULL,
   showSeparator: showDivider,
 }) => {
   const {
@@ -54,7 +54,7 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
   ]);
 
   return (
-    <GridLayout columns={`repeat(${ChildrenColSpan.FULL}, 1fr)`}>
+    <GridLayout columns={`repeat(${ContentColSpan.FULL}, 1fr)`}>
       {headline && (
         <GridLayoutItem column={textColumns}>
           <TextBlock

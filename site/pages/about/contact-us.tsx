@@ -8,7 +8,7 @@ import {Link} from '../../components/link';
 import {
   ContentSection,
   ContentPrimary,
-  ChildrenColSpan,
+  ContentColSpan,
 } from '../../components/content-structure';
 
 const PageIntroductionContainer = styled.div`
@@ -51,7 +51,7 @@ const ContactUs = ({path, ...props}: LayoutProps) => (
             </>
           }
           showSeparator
-          childrenColSpan={ChildrenColSpan.TEXT}
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <InlineMessage role="region" aria-label="contact" title="Note">
             For internal News Corp users only.

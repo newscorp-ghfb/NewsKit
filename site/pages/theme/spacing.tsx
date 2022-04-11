@@ -16,7 +16,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-  ChildrenColSpan,
+  ContentColSpan,
 } from '../../components/content-structure';
 import {InlineCode} from '../../components/markdown-elements';
 
@@ -282,7 +282,7 @@ const Spacing = (layoutProps: LayoutProps) => (
           />
         </ContentSecondary>
 
-        <ContentSecondary childrenColSpan={ChildrenColSpan.TEXT}>
+        <ContentSecondary childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage>
             Avoid using generic spacing tokens directly, in favor use the more
             specific options such as: spaceInset, spaceInline, and spaceStack as

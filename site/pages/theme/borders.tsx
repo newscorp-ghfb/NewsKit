@@ -9,7 +9,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-  ChildrenColSpan,
+  ContentColSpan,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
 
@@ -97,7 +97,7 @@ const Borders = (layoutProps: LayoutProps) => (
 
         <ExampleSection section="borderWidth" />
 
-        <ContentSecondary childrenColSpan={ChildrenColSpan.TEXT} showSeparator>
+        <ContentSecondary childrenColSpan={ContentColSpan.TEXT} showSeparator>
           <InlineMessage title="Note">
             In addition to the Border Radius and Border Width foundations,
             Border Colour and Border Style can be applied to a UI element using

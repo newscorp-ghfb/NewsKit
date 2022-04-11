@@ -10,7 +10,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-  ChildrenColSpan,
+  ContentColSpan,
 } from '../../components/content-structure';
 
 const cardoverrides = {
@@ -262,7 +262,7 @@ const Contribute = (
 
         <ContentSecondary
           headline="Write some code"
-          childrenColSpan={ChildrenColSpan.TEXT}
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <InlineMessage role="region" aria-label="contribute">
             Currently only applicable for News UK teams.

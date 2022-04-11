@@ -19,6 +19,7 @@ import {
   ContentPrimary,
   ContentSecondary,
   ContentTertiary,
+  ContentColSpan,
 } from '../../../components/content-structure';
 
 const orderedListOverrides = {
@@ -91,6 +92,7 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
           toc="Access to Figma"
           headline="Access to Figma"
           description="News UK Designers are given access to the News UK Figma account when onboarding to the company. To access a Figma account, follow these simple steps:"
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <OrderedList overrides={orderedListOverrides}>
             <>
@@ -150,7 +152,7 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
           </OrderedList>
         </ContentPrimary>
 
-        <ContentSecondary showSeparator>
+        <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage role="region" aria-label="NewsCorp teams">
             For other NewsCorp teams, please get in touch with the design
             systems team via Slack:{' '}
@@ -189,6 +191,7 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
           toc="Joining a team workspace"
           headline="Joining a team workspace"
           description="To join a team workspace, follow these simple steps:"
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <OrderedList overrides={orderedListOverrides}>
             <>
@@ -215,7 +218,7 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
           </OrderedList>
         </ContentPrimary>
 
-        <ContentSecondary showSeparator>
+        <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage role="region" aria-label="Tip">
             Tip - to see projects in a team in the left-hand navigation on the
             main Figma screen,be sure to “star” them in the team view screen.
@@ -259,6 +262,7 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               to install and set up:
             </>
           }
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <OrderedList overrides={orderedListOverrides}>
             <>
@@ -290,7 +294,7 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
           </OrderedList>
         </ContentPrimary>
 
-        <ContentSecondary showSeparator>
+        <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage role="region" aria-label="Figma plugins">
             In addition to the above, view a list of optional{' '}
             <Link
@@ -320,6 +324,7 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
           toc="Starting a Figma project"
           headline="Starting a Figma project"
           description="To start a Figma project, follow these simple steps:"
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <OrderedList overrides={orderedListOverrides}>
             <>
@@ -385,7 +390,7 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
             </>
           }
         />
-        <ContentTertiary showSeparator>
+        <ContentTertiary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <OrderedList overrides={orderedListOverrides}>
             <>
               Select “Duplicate” from the dropdown of options next to the file
@@ -431,6 +436,7 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
           toc="Linking NewsKit Figma libraries"
           headline="Linking NewsKit Figma libraries"
           description="To link a NewsKit Figma library to a project, follow these simple steps:"
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <OrderedList overrides={orderedListOverrides}>
             <>
@@ -486,7 +492,7 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
           </OrderedList>
         </ContentPrimary>
 
-        <ContentSecondary showSeparator>
+        <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage role="region" aria-label="library">
             Note - Any library that you link to your design file will give you
             access to all the components in that library. If your team has its
@@ -501,7 +507,7 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
           </InlineMessage>
         </ContentSecondary>
 
-        <ContentTertiary showSeparator>
+        <ContentTertiary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage role="region" aria-label="Design community">
             <Link href="https://www.figma.com/@newsuk" target="_blank">
               Follow the News UK Figma design community
@@ -518,6 +524,7 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
           headline="What’s next?"
           description="To link a NewsKit Figma library to a project, follow these simple steps:"
           showSeparator
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
             markerAlign="start"

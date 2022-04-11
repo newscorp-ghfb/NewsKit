@@ -6,7 +6,7 @@ import {
   ContentPrimary,
   ContentSecondary,
   ContentTertiary,
-  ChildrenColSpan,
+  ContentColSpan,
 } from '../../components/content-structure';
 import {LayoutProps} from '../../components/layout';
 import {InlineCode} from '../../components/markdown-elements';
@@ -314,7 +314,7 @@ const Fonts = (layoutProps: LayoutProps) => (
           />
         </ContentSecondary>
 
-        <ContentSecondary childrenColSpan={ChildrenColSpan.TEXT}>
+        <ContentSecondary childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage
             overrides={{stylePreset: 'inlineMessageInformative'}}
             icon={icon}
@@ -406,7 +406,7 @@ const Fonts = (layoutProps: LayoutProps) => (
           </Code>
         </ContentSecondary>
 
-        <ContentSecondary childrenColSpan={ChildrenColSpan.TEXT}>
+        <ContentSecondary childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage
             overrides={{stylePreset: 'inlineMessageInformative'}}
             icon={icon}
@@ -462,7 +462,7 @@ const Fonts = (layoutProps: LayoutProps) => (
           <CodeFromFile path="examples/fonts/font-properties.tsx" />
         </ContentSecondary>
 
-        <ContentSecondary showSeparator childrenColSpan={ChildrenColSpan.TEXT}>
+        <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage
             title="Font smooth"
             overrides={{stylePreset: 'inlineMessageInformative'}}

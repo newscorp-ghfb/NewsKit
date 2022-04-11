@@ -16,7 +16,11 @@ export const Step = ({media, stepText, timerText}: StepProps) => (
         <Illustration path={media} />
       </Block>
     )}
-    <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
+    <Stack
+      flow={Flow.HorizontalCenter}
+      stackDistribution="space-between"
+      height="auto"
+    >
       <Flag
         size={FlagSize.Medium}
         overrides={{

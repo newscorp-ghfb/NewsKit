@@ -13,7 +13,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-  ChildrenColSpan,
+  ContentColSpan,
 } from '../../../components/content-structure';
 
 const whatNextCards = [
@@ -62,7 +62,7 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
           toc="Prerequisites"
           headline="Prerequisites"
           description="To start using NewsKit components in your projects you will need the following:"
-          childrenColSpan={ChildrenColSpan.TEXT}
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
             markerAlign="center"
@@ -100,7 +100,7 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
           </UnorderedList>
         </ContentPrimary>
 
-        <ContentSecondary childrenColSpan={ChildrenColSpan.TEXT} showSeparator>
+        <ContentSecondary childrenColSpan={ContentColSpan.TEXT} showSeparator>
           <InlineMessage>
             It’s recommended to use{' '}
             <Link href="https://www.typescriptlang.org/" target="_blank">

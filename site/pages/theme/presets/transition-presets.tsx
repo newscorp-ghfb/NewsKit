@@ -17,7 +17,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-  ChildrenColSpan,
+  ContentColSpan,
 } from '../../../components/content-structure';
 
 const PROPERTIES = [
@@ -469,7 +469,7 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
           />
         </ContentPrimary>
 
-        <ContentSecondary showSeparator childrenColSpan={ChildrenColSpan.TEXT}>
+        <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage
             icon={infoIcon}
             role="region"
@@ -507,7 +507,7 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
         </ContentPrimary>
         <ContentSecondary
           description="There are two distinct approaches to defining transitions based on the following:"
-          childrenColSpan={ChildrenColSpan.TEXT}
+          childrenColSpan={ContentColSpan.TEXT}
         />
 
         <ContentSecondary
@@ -718,7 +718,7 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
           <VideoElement url="static/examples/transition-presets/background-border-colours.mp4" />
         </ContentSecondary>
 
-        <ContentSecondary childrenColSpan={ChildrenColSpan.TEXT}>
+        <ContentSecondary childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage
             icon={infoIcon}
             role="region"

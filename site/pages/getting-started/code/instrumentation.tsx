@@ -12,7 +12,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-  ChildrenColSpan,
+  ContentColSpan,
 } from '../../../components/content-structure';
 
 const customEventRows = [
@@ -102,7 +102,7 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
             </>
           }
           showSeparator
-          childrenColSpan={ChildrenColSpan.TEXT}
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <InlineMessage role="region" aria-label="Github">
             For more information, users with the relevant access can read the
@@ -128,7 +128,7 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
               This function takes two arguments;
             </>
           }
-          childrenColSpan={ChildrenColSpan.TEXT}
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
             markerAlign="start"
@@ -222,7 +222,7 @@ const MyPage = (
 
         <ContentSecondary
           description="InstrumentationProvider components can be nested if you wish to extend the context object to add extra data. See the relevant section below for more information and examples."
-          childrenColSpan={ChildrenColSpan.TEXT}
+          childrenColSpan={ContentColSpan.TEXT}
         />
 
         <ContentSecondary
@@ -285,7 +285,7 @@ const instrumentation = createEventInstrumentation(handlers, {
         <ContentSecondary
           headline="Custom Event Firing"
           description="You should not need to add any instrumentation event firing to NewsKit components as this is already provided, but there may be a case where you have pre-existing custom components and wish to utilise the single NewsKit event instrumentation. This can be done easily in two ways;"
-          childrenColSpan={ChildrenColSpan.TEXT}
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
             markerAlign="start"
