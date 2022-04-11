@@ -78,7 +78,7 @@ set_git_identity:
 	git config --global user.name "Product Platforms Service"
 
 bump_version:
-  git config --list
+	git config --list
 
 # The tag deleted should match the expected tag in the `only_on_trigger_release_tag` filter.
 delete_trigger_release_tag:
