@@ -299,16 +299,16 @@ const selectPropsFooter = (
   </>
 );
 
-const selectOptionPropsFooter = (
-  <>
-    <Block spaceStack="space050" />
-    <InlineMessage icon={infoIcon} role="region" aria-label="modal component">
-      Please refer to the{' '}
-      <LinkInline href="/components/modal">Modal component</LinkInline> for all
-      props and overrides.
-    </InlineMessage>
-  </>
-);
+// const selectOptionPropsFooter = (
+//   <>
+//     <Block spaceStack="space050" />
+//     <InlineMessage icon={infoIcon} role="region" aria-label="modal component">
+//       Please refer to the{' '}
+//       <LinkInline href="/components/modal">Modal component</LinkInline> for all
+//       props and overrides.
+//     </InlineMessage>
+//   </>
+// );
 
 const SelectComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -932,7 +932,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           propsRows: selectOptionPropsRows,
-          propsFooter: selectOptionPropsFooter,
+          // propsFooter: selectOptionPropsFooter,
           overridesRows: commonOverridesRows,
         },
       ],
