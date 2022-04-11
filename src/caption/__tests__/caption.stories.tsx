@@ -90,3 +90,34 @@ export const StoryCaptionInset = () => (
   </Container>
 );
 StoryCaptionInset.storyName = 'caption-inset';
+
+export const StoryCaptionLogicalOverrides = () => (
+  <Container>
+    <StorybookHeading>Caption with logical overrides</StorybookHeading>
+    <StyledDiv>
+      <Caption
+        creditText="Credit text"
+        overrides={{
+          marginBlockEnd: 'space050',
+        }}
+      >
+        Caption with both caption and credit text
+      </Caption>
+    </StyledDiv>
+    <StyledDiv>
+      <CaptionInset
+        overrides={{
+          marginBlockEnd: 'space050',
+          gap: 'space090',
+          spaceInset: {
+            xs: 'spaceInset060',
+          },
+        }}
+        creditText="Credit text"
+      >
+        CaptionInset with overrides and both caption and credit text
+      </CaptionInset>
+    </StyledDiv>
+  </Container>
+);
+StoryCaptionLogicalOverrides.storyName = 'caption-logical-overrides';

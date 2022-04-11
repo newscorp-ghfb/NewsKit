@@ -13,7 +13,8 @@ const ThemelessCaption: React.FC<CaptionProps> = ({
   creditText,
 }) => {
   const theme = useTheme();
-  // const captionSpaceStack = creditText && getToken({theme, overrides}, 'caption', '', 'spaceStack');
+  const captionGap =
+    creditText && getToken({theme, overrides}, 'caption', '', 'gap');
 
   const captionStylePreset = getToken(
     {theme, overrides},
@@ -49,17 +50,22 @@ const ThemelessCaption: React.FC<CaptionProps> = ({
     'spaceInset',
   );
 
-  const StyledBlock = styled(Block)`
-  ${logicalProps('caption')};
-  `
+  const {
+    typographyPreset,
+    stylePreset,
+    spaceStack,
+    gap,
+    spaceInset,
+    credit,
+    ...logicalMarginProps
+  } = overrides!;
 
-  // paddingBlock={captionInset} paddingInline={captionInset} marginBlockEnd
   return (
-    <StyledBlock overrides={overrides}>
+    <Block spaceInset={captionInset} {...logicalMarginProps}>
       <TextBlock
         stylePreset={captionStylePreset}
         typographyPreset={captionTypographyPreset}
-        marginBlockEnd={captionSpaceStack}
+        marginBlockEnd={captionGap}
       >
         {children}
       </TextBlock>
@@ -71,7 +77,7 @@ const ThemelessCaption: React.FC<CaptionProps> = ({
           {creditText}
         </TextBlock>
       )}
-    </StyledBlock>
+    </Block>
   );
 };
 

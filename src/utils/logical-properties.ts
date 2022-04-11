@@ -4,7 +4,7 @@ import {deepMerge} from './deep-merge';
 import {get} from './get';
 import {rejectObject} from './filter-object';
 
-interface LogicalMargins {
+export interface LogicalMargins {
   marginInlineStart?: MQ<string>;
   marginInlineEnd?: MQ<string>;
   marginInline?: MQ<string>;
@@ -121,3 +121,8 @@ export const omitLogicalPropsFromOverrides = (
     'paddingBlockEnd',
     'paddingBlock',
   ]);
+
+export const omitLogicalProps = (
+  props: Record<string, unknown>,
+  rejectedLogicalProp: Array<string>,
+) => rejectObject(props, rejectedLogicalProp);
