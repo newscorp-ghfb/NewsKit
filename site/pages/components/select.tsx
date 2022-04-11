@@ -526,7 +526,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
               user types a valid entry in the input or on submit.
               <br />
               <br />
-              The <Link href="/components/form/">Form.</Link> component is used
+              The <Link href="/components/form/">Form</Link> component is used
               to define this validation behaviour.
             </>
           ),
