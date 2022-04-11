@@ -46,6 +46,13 @@ const commonPropsRows = (type?: string) => [
     description:
       'If provided, gives the ability to add a component to the end of the input container.',
   },
+  {
+    name: 'virtualized',
+    type: 'number',
+    default: '50',
+    description:
+      'When the amount of options is greater than this number, the options list will be virtualized.',
+  },
 ];
 
 const commonOverridesRows = [
