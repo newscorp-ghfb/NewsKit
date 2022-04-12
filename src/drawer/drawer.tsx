@@ -45,8 +45,10 @@ const ThemelessDrawer: React.FC<DrawerProps> = ({
     setDrawerElementFocusability(open, drawerRef);
   }, [open, drawerRef]);
 
+  const OuterWrapper = inline ? React.Fragment : Layer;
+
   return (
-    <Layer>
+    <OuterWrapper>
       <BaseDialogFunction
         open={open}
         restoreFocusTo={restoreFocusTo}
@@ -90,7 +92,7 @@ const ThemelessDrawer: React.FC<DrawerProps> = ({
           </CSSTransition>
         )}
       </BaseDialogFunction>
-    </Layer>
+    </OuterWrapper>
   );
 };
 

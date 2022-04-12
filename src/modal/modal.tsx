@@ -38,8 +38,10 @@ const ThemelessModal: React.FC<ModalProps> = ({
 
   const [showWrapper, setShowWrapper] = React.useState(false);
 
+  const OuterWrapper = props.inline ? React.Fragment : Layer;
+
   return (
-    <Layer>
+    <OuterWrapper>
       <BaseDialogFunction
         open={open}
         restoreFocusTo={restoreFocusTo}
@@ -89,7 +91,7 @@ const ThemelessModal: React.FC<ModalProps> = ({
           </StyledModalWrapper>
         )}
       </BaseDialogFunction>
-    </Layer>
+    </OuterWrapper>
   );
 };
 

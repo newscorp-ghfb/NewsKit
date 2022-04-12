@@ -189,18 +189,8 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
 
     useEffect(() => {
       if (isOpen && selectRef.current) {
-        const {
-          clientWidth,
-          offsetTop,
-          clientHeight,
-          offsetLeft,
-        } = selectRef.current;
-        setSelectRect({
-          width: clientWidth,
-          top: offsetTop,
-          height: clientHeight,
-          left: offsetLeft,
-        });
+        // getting width, height, left, top of the select
+        setSelectRect(selectRef.current.getBoundingClientRect());
       }
     }, [isOpen, selectRef]);
 
