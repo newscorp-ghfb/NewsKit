@@ -222,13 +222,15 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
             </Visible>
           </Cell>
           <Cell xs={2} lg={2} xsOrder={2} lgOrder={3}>
-            <Stack
-              flow={Flow.HorizontalCenter}
-              stackDistribution={StackDistribution.End}
-              spaceInline="space070"
-            >
-              <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />
-            </Stack>
+            <Visible lg xl>
+              <Stack
+                flow={Flow.HorizontalCenter}
+                stackDistribution={StackDistribution.End}
+                spaceInline="space070"
+              >
+                <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />
+              </Stack>
+            </Visible>
           </Cell>
         </StyledGrid>
       </Header>
