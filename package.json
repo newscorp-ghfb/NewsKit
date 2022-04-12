@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "5.4.0",
+  "version": "5.4.1",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
@@ -63,7 +63,6 @@
     "serve:docs": "http-server public -p 8081 -c300",
     "serve:storybook": "http-server dist-storybook -p 6006",
     "dependencies:check": "package-change-checker --install-cmd=\"yarn install --pure-lockfile\" HEAD@{1} HEAD",
-    "create:release": "sh ./scripts/release.sh",
     "storybook": "start-storybook -c .storybook -p 6006 -s ./fonts,./static"
   },
   "devDependencies": {
