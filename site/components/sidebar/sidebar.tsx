@@ -3,7 +3,6 @@ import {
   Visible,
   getMediaQueryFromTheme,
   styled,
-  IconFilledClose,
   Devices,
   getDeviceQueryFromTheme,
   css,
@@ -86,12 +85,12 @@ const Sidebar: React.FC<SidebarProps> = ({
               tabIndex={0}
               data-testid="close-icon"
             >
-              <IconFilledClose
+              {/* <IconFilledClose
                 overrides={{
                   stylePreset: 'closeIcon',
                   size: 'iconSize010',
                 }}
-              />
+              /> */}
             </IconWrapper>
           </LegacyBlock>
         </Visible>

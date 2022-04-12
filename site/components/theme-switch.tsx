@@ -14,7 +14,7 @@ export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
 
   return (
     <IconButton
-      size={ButtonSize.Medium}
+      size={ButtonSize.Small}
       eventContext={{
         currentThemeMode: themeMode,
       }}
@@ -28,7 +28,11 @@ export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
         stylePreset: 'buttonLightDarkToggle',
       }}
     >
-      {isDark() ? <IconFilledLight /> : <IconFilledDark />}
+      {isDark() ? (
+        <IconFilledLight overrides={{size: 'iconSize010'}} />
+      ) : (
+        <IconFilledDark overrides={{size: 'iconSize010'}} />
+      )}
     </IconButton>
   );
 };
