@@ -1,8 +1,9 @@
 import React from 'react';
-import {LinkInline, InlineMessage, Block} from 'newskit';
+import {InlineMessage, Block} from 'newskit';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
+import {Link} from '../../components/link';
 
 const commonPropsRows = [
   {
@@ -24,9 +25,9 @@ const commonPropsRows = [
     description: (
       <>
         If provided, Select options appear in a
-        <LinkInline href="/components/modal" target="_blank">
+        <Link href="/components/modal" target="_blank">
           Modal
-        </LinkInline>{' '}
+        </Link>{' '}
         (with overlay).
       </>
     ),
@@ -261,8 +262,8 @@ const selectOptionProps = [
 
 const selectOverridesFooter = (
   <InlineMessage>
-    Checkout <LinkInline href="/components/modal">Modal component</LinkInline>{' '}
-    for all props and overrides
+    Checkout <Link href="/components/modal">Modal component</Link> for all props
+    and overrides
   </InlineMessage>
 );
 
