@@ -15,10 +15,8 @@ import {
   getSizingCssFromTheme,
   getStylePresetFromTheme,
   Block,
-  getColorFromTheme,
-  getBorderFromTheme,
-  getSizingFromTheme,
   IconFilledClose,
+  getBorderCssFromTheme,
 } from 'newskit';
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
@@ -35,8 +33,9 @@ const Header = styled.header`
   left: 0;
   z-index: 4;
   border-bottom-style: solid;
-  border-bottom-width: ${getBorderFromTheme('borderWidth010')};
-  border-bottom-color: ${getColorFromTheme('interface040')};
+
+  ${getBorderCssFromTheme('border-bottom-width', 'borderWidth010')};
+  ${getColorCssFromTheme('borderBottomColor', 'interface040')};
   ${getColorCssFromTheme('backgroundColor', 'interfaceBackground')};
   ${getTypographyPresetFromTheme('utilityLabel020')}
   ${getSpacingCssFromTheme('paddingTop', 'space000')};
@@ -69,14 +68,19 @@ export const StyledLinkItem = styled.div<{
     getStylePresetFromTheme('headerNavItem', undefined, {
       isSelected: $selected,
     })(props)}
+  ${({$selected, ...props}) =>
+    getStylePresetFromTheme('headerNavItem', undefined, {
+      isSelected: $selected,
+    })(props)}
+
   box-sizing: border-box;
   &.selected {
     ::after {
       position: relative;
       border-radius: ${getBorderRadius({first: true, last: false})};
-      background: ${getColorFromTheme('blue060')};
-      height: ${getSizingFromTheme('sizing010')};
-      top: ${getSizingFromTheme('sizing060')};
+      ${getColorCssFromTheme('background', 'interactivePrimary030')};
+      ${getSizingCssFromTheme('height', 'sizing010')};
+      ${getSizingCssFromTheme('top', 'sizing060')};
     }
   }
 `;
