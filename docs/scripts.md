@@ -94,5 +94,3 @@ Scripts should be named using the following naming convention:
 * `preinstall` -> stops npm being used for install, please use yarn instead.
 
 * `dependencies:check` -> runs the package-change-checker module, this runs `yarn install` if dependencies or dev dependencies have changed between `HEAD@{1}` and `HEAD`. Used via husky post-checkout and post-merge hooks.
-
-* `create:release` -> Creates a branch "trigger-release-*" for patch, minor, and major releases.

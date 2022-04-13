@@ -221,6 +221,7 @@ Array [
   "styled",
   "toNewsKitIcon",
   "toast",
+  "useAudioPlayerContext",
   "useBreakpointKey",
   "useClientSide",
   "useFormContext",
