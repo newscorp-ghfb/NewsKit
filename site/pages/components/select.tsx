@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, LinkInline, InlineMessage, IconFilledInfo} from 'newskit';
+import {Block, LinkInline, InlineMessage} from 'newskit';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
@@ -9,49 +9,48 @@ import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 
-const commonPropsRows = (type?: string) => [
-  {
-    name: 'state',
-    type: ['valid', 'invalid', 'disabled'],
-    description: `If provided, renders the ${type} Select in a valid, invalid, or disabled state. It can be submitted within a form.`,
-  },
+const commonPropsRows = [
   {
     name: 'size',
     type: ['small', 'medium', 'large'],
     default: 'medium',
-    description: `Defines the size of the Select.`,
+    description: 'Defines the size of the Select.',
+  },
+  {
+    name: 'state',
+    type: ['valid', 'invalid', 'disabled'],
+    description:
+      'If provided, renders the FormInput Select in a valid, invalid, or disabled state. It can be submitted within a form.',
   },
   {
     name: 'useModal',
-    type: ['MQ<boolean>'],
     default: 'false',
+    type: 'MQ<boolean>',
     description: (
       <>
         If provided, Select options appear in a{' '}
-        <LinkInline href="/components/modal">Modal</LinkInline> (with overlay).
+        <LinkInline href="/components/modal" target="_blank">
+          Modal
+        </LinkInline>{' '}
+        (with overlay).
       </>
     ),
   },
   {
     name: 'startEnhancer',
     type: 'React.ReactNode',
-    default: '',
-    description:
-      'If provided, gives the ability to add a component to the start of the input container.',
+    description: `If provided, gives the ability to add a component to the start of the input container.`,
   },
   {
     name: 'endEnhancer',
     type: 'React.ReactNode',
-    default: '',
-    description:
-      'If provided, gives the ability to add a component to the end of the input container.',
+    description: `If provided, gives the ability to add a component to the end of the input container.`,
   },
   {
     name: 'virtualized',
     type: 'number',
+    description: `When the amount of options is greater than this number, the options list will be virtualized.`,
     default: '50',
-    description:
-      'When the amount of options is greater than this number, the options list will be virtualized.',
   },
 ];
 
@@ -169,22 +168,31 @@ const commonOverridesRows = [
       'If provided, this overrides the stack space of the Select panel.',
   },
   {
-    attribute: 'selectOption.stylePreset',
+    attribute: 'modal.panel.width',
+    type: 'MQ<string>',
+    default: '60vw',
+    description:
+      'If provided, this overrides the width property of the Modal panel.',
+  },
+];
+
+const selectOptionOverrides = [
+  {
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: 'selectOptionItem',
     description:
       'If provided, this overrides the stylePreset of the Select option.',
   },
-
   {
-    attribute: 'selectOption.minHeight',
+    attribute: 'minHeight',
     type: 'MQ<string>',
     default: ['small = sizing060', 'medium = sizing080', 'large = sizing090'],
     description:
       'If provided, this overrides the minHeight of the Select option.',
   },
   {
-    attribute: 'selectOption.typographyPreset',
+    attribute: 'typographyPreset',
     type: 'MQ<string>',
     default: [
       'small = utilityBody020',
@@ -195,7 +203,7 @@ const commonOverridesRows = [
       'If provided, this overrides the typographyPreset of the Select option.',
   },
   {
-    attribute: 'selectOption.spaceInset',
+    attribute: 'spaceInset',
     type: 'MQ<string>',
     default: [
       'small = spaceInsetSquish010',
@@ -206,42 +214,27 @@ const commonOverridesRows = [
       'If provided, this overrides the inset space within the Select option.',
   },
   {
-    attribute: 'selectOption.spaceInline',
+    attribute: 'spaceInline',
     type: 'MQ<string>',
     default: 'space020',
     description:
       'If provided, this overrides the inline space of the Select option.',
   },
-  {
-    attribute: 'selectOptionItemIcon.stylePreset',
-    type: 'MQ<string>',
-    default: 'selectOptionItemIcon',
-    description:
-      'If provided, this overrides the stylePreset of the Select option icon.',
-  },
-  {
-    attribute: 'selectOption.icon.size',
-    type: 'MQ<string>',
-    default: 'iconSize020',
-    description:
-      'If provided, this overrides the icon size of the Select option icon.',
-  },
 ];
 
-const selectOptionPropsRows = [
+const selectOptionProps = [
   {
     name: 'value',
     type: 'string',
-    default: '',
-    description: 'Defines the value of the SelectOption',
     required: true,
+    description: 'Defines the value of the SelectOption',
   },
   {
     name: 'children',
     type: 'React.ReactNode',
+    required: true,
     default: '',
     description: 'Label and icon(s) of the SelectOption.',
-    required: true,
   },
   {
     name: 'selected',
@@ -271,43 +264,11 @@ const selectOptionPropsRows = [
   },
 ];
 
-const infoIcon = (
-  <IconFilledInfo
-    overrides={{
-      size: 'iconSize020',
-    }}
-  />
-);
-
-const selectPropsFooter = (
-  <>
-    <Block spaceStack="space050" />
-    <InlineMessage icon={infoIcon} role="region" aria-label="Rules props">
-      The <InlineCode>name</InlineCode> & <InlineCode>rules</InlineCode> props
-      are set on the form input level. If you want to add validation rules or
-      set the name of this component,{' '}
-      <LinkInline href="/components/form">
-        please refer to the Form component
-      </LinkInline>
-      .
-    </InlineMessage>
-    <Block spaceStack="space030" />
-    <InlineMessage icon={infoIcon} role="region" aria-label="Select component">
-      The Select component can support rendering in a read-only state (can be
-      selected but not changed by the user).
-    </InlineMessage>
-  </>
-);
-
-const selectOptionPropsFooter = (
-  <>
-    <Block spaceStack="space050" />
-    <InlineMessage icon={infoIcon} role="region" aria-label="modal component">
-      Please refer to the{' '}
-      <LinkInline href="/components/modal">Modal component</LinkInline> for all
-      props and overrides.
-    </InlineMessage>
-  </>
+const selectOverridesFooter = (
+  <InlineMessage>
+    Checkout <LinkInline href="/components/modal">Modal component</LinkInline>{' '}
+    for all props and overrides
+  </InlineMessage>
 );
 
 const SelectComponent = (layoutProps: LayoutProps) => (
@@ -863,77 +824,42 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           range of props that can be used to define an appropriate experience
           for different use cases.
           <Block spaceStack="space080" />
-          <InlineMessage
-            icon={infoIcon}
-            role="region"
-            aria-label="Components exported"
-          >
+          <InlineMessage>
             There are two components exported from the package, one for use
-            within the NewsKit{' '}
-            <Link href="/components/form/">NewsKit Form component</Link>, and
-            one for use as a controlled component.
+            within the NewsKit Form component, and one for use as a controlled
+            component.
           </InlineMessage>
         </>
       ),
       components: [
         {
-          title: 'FormInput Select',
-          summary: (
-            <>
-              The FormInput Select has a range of props that can be used to
-              define an appropriate experience for different use cases. Use this
-              component within the NewsKit Form component.
-            </>
-          ),
-          propsRows: commonPropsRows('FormInput'),
-          propsFooter: selectPropsFooter,
+          title: 'FormInputSelect',
+          summary: `The FormInputSelect has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.`,
+          propsRows: commonPropsRows,
           overridesRows: commonOverridesRows,
+          overridesFooter: selectOverridesFooter,
         },
         {
           title: 'Select',
-          summary: (
-            <>
-              The Select has a range of props that can be used to define an
-              appropriate experience for different use cases. Use this component
-              within the NewsKit{' '}
-              <Link href="/components/form/">Form component</Link>.
-            </>
-          ),
+          summary: `The Select has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.`,
           propsRows: [
             {
               name: 'name',
               type: 'string',
-              description: (
-                <>
-                  If provided, defines name of the input element, used when
-                  submitting an{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefname"
-                    target="_blank"
-                  >
-                    HTML form
-                  </Link>
-                  .
-                </>
-              ),
+              description:
+                'If provided, defines name of the input element, used when submitting an HTML form.',
             },
-            ...commonPropsRows(),
+            ...commonPropsRows,
           ],
           overridesRows: commonOverridesRows,
+          overridesFooter: selectOverridesFooter,
         },
         {
           title: 'SelectOption',
-          summary: (
-            <>
-              The SelectOption has a range of props that can be used to define
-              an appropriate experience for different use cases. Use this
-              component within the NewsKit{' '}
-              <Link href="/components/form/">Form component</Link>.
-            </>
-          ),
-          propsRows: selectOptionPropsRows,
-          propsFooter: selectOptionPropsFooter,
-          overridesRows: commonOverridesRows,
+          summary:
+            'The SelectOption has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.',
+          propsRows: selectOptionProps,
+          overridesRows: selectOptionOverrides,
         },
       ],
     }}
