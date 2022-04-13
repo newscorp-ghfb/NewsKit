@@ -324,11 +324,12 @@ export default [
             illustration: 'components/slider-illustration',
           },
           {
-            title: 'Text Input',
+            title: 'Text Field',
             page: true,
-            id: '/components/text-input',
-            description: 'Lets users enter and edit text.',
-            illustration: 'components/text-input-illustration',
+            id: '/components/text-field',
+            description:
+              'Text Fields allow users to enter and edit text content into a UI. They typically appear in forms.',
+            illustration: 'components/text-input/hero',
           },
           {
             title: 'Select',
