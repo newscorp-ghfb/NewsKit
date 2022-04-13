@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, LinkInline, InlineMessage, IconFilledInfo} from 'newskit';
+import {Block, InlineMessage} from 'newskit';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
@@ -8,307 +8,6 @@ import {ContentText} from '../../components/text-section/content-text';
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
-
-const commonPropsRows = (type?: string) => [
-  {
-    name: 'state',
-    type: ['valid', 'invalid', 'disabled'],
-    description: `If provided, renders the ${type} Select in a valid, invalid, or disabled state. It can be submitted within a form.`,
-  },
-  {
-    name: 'size',
-    type: ['small', 'medium', 'large'],
-    default: 'medium',
-    description: `Defines the size of the Select.`,
-  },
-  {
-    name: 'useModal',
-    type: ['boolean'],
-    default: 'false',
-    description: (
-      <>
-        If provided, Select options appear in a{' '}
-        <LinkInline href="/components/modal">Modal</LinkInline> (with overlay).
-      </>
-    ),
-  },
-  {
-    name: 'startEnhancer',
-    type: 'React.ReactNode',
-    default: '',
-    description:
-      'If provided, gives the ability to add a component to the start of the input container.',
-  },
-  {
-    name: 'endEnhancer',
-    type: 'React.ReactNode',
-    default: '',
-    description:
-      'If provided, gives the ability to add a component to the end of the input container.',
-  },
-  {
-    name: 'virtualized',
-    type: 'number',
-    default: '50',
-    description:
-      'When the amount of options is greater than this number, the options list will be virtualized.',
-  },
-];
-
-const commonOverridesRows = [
-  {
-    attribute: 'width',
-    type: 'MQ<string>',
-    default: '100%',
-    description: `If provided, this overrides the minWidth of the Select.`,
-  },
-  {
-    attribute: 'button.stylePreset',
-    type: 'MQ<string>',
-    default: 'inputField',
-    description:
-      'If provided, overrides the stylePreset of the Select input container.',
-  },
-  {
-    attribute: 'button.typographyPreset',
-    type: 'MQ<string>',
-    default: [
-      'small = utilityBody020',
-      'medium = utilityBody020',
-      'large = utilityBody030',
-    ],
-    description: 'If provided, this overrides the input & placeholder text.',
-  },
-  {
-    attribute: 'button.spaceInset',
-    type: 'MQ<string>',
-    default: [
-      'small = spaceInset020',
-      'medium = spaceInset020',
-      'large = spaceInset030',
-    ],
-    description:
-      'If provided, this overrides the inset space within the Select input container.',
-  },
-  {
-    attribute: 'button.spaceStack',
-    type: 'MQ<string>',
-    default: 'space020',
-    description:
-      'If provided, this overrides the stack space of the Select input container.',
-  },
-  {
-    attribute: 'button.spaceInline',
-    type: 'MQ<string>',
-    default: 'space020',
-    description:
-      'If provided, this overrides the inline space of the Select input container.',
-  },
-
-  {
-    attribute: 'button.loadingIndicator.stylePreset',
-    type: 'MQ<string>',
-    default: 'indeterminateProgressIndicatorPrimary',
-    description:
-      'If provided, this overrides the stylePreset of the Select input container loading indicator.',
-  },
-  {
-    attribute: 'button.startEnhancer.iconSize',
-    type: 'MQ<string>',
-    default: 'iconSize020',
-    description:
-      'If provided, this overrides the component passed to the start enhancer.',
-  },
-  {
-    attribute: 'button.startEnhancer.inlineSpace',
-    type: 'MQ<string>',
-    default: 'space020',
-    description:
-      'If provided, this overrides the inline space of the start enhancer.',
-  },
-  {
-    attribute: 'button.endEnhancer.iconSize',
-    type: 'MQ<string>',
-    default: 'iconSize020',
-    description:
-      'If provided, this overrides the component passed to the end enhancer.',
-  },
-  {
-    attribute: 'button.endEnhancer.inlineSpace',
-    type: 'MQ<string>',
-    default: 'space020',
-    description:
-      'If provided, this overrides the inline space of the end enhancer.',
-  },
-  {
-    attribute: 'panel.stylePreset',
-    type: 'MQ<string>',
-    default: 'selectPanel',
-    description:
-      'If provided, this overrides the stylePreset of the Select panel.',
-  },
-  {
-    attribute: 'panel.maxHeight',
-    type: 'MQ<string>',
-    default: ['small = 184px', 'medium = 272px', 'large = 360px'],
-    description:
-      'If provided, this overrides the maxHeight of the Select panel.',
-  },
-  {
-    attribute: 'panel.spaceInset',
-    type: 'MQ<string>',
-    default: 'spaceInset020',
-    description:
-      'If provided, this overrides the inset space within the Select panel.',
-  },
-  {
-    attribute: 'panel.spaceStack',
-    type: 'MQ<string>',
-    default: 'spaceStack010',
-    description:
-      'If provided, this overrides the stack space of the Select panel.',
-  },
-  {
-    attribute: 'selectOption.stylePreset',
-    type: 'MQ<string>',
-    default: 'selectOptionItem',
-    description:
-      'If provided, this overrides the stylePreset of the Select option.',
-  },
-
-  {
-    attribute: 'selectOption.minHeight',
-    type: 'MQ<string>',
-    default: ['small = sizing060', 'medium = sizing080', 'large = sizing090'],
-    description:
-      'If provided, this overrides the minHeight of the Select option.',
-  },
-  {
-    attribute: 'selectOption.typographyPreset',
-    type: 'MQ<string>',
-    default: [
-      'small = utilityBody020',
-      'medium = utilityBody020',
-      'large = utilityBody030',
-    ],
-    description:
-      'If provided, this overrides the typographyPreset of the Select option.',
-  },
-  {
-    attribute: 'selectOption.spaceInset',
-    type: 'MQ<string>',
-    default: [
-      'small = spaceInsetSquish010',
-      'medium = spaceInset020',
-      'large = spaceInsetStretch030',
-    ],
-    description:
-      'If provided, this overrides the inset space within the Select option.',
-  },
-  {
-    attribute: 'selectOption.spaceInline',
-    type: 'MQ<string>',
-    default: 'space020',
-    description:
-      'If provided, this overrides the inline space of the Select option.',
-  },
-  {
-    attribute: 'selectOptionItemIcon.stylePreset',
-    type: 'MQ<string>',
-    default: 'selectOptionItemIcon',
-    description:
-      'If provided, this overrides the stylePreset of the Select option icon.',
-  },
-  {
-    attribute: 'selectOption.icon.size',
-    type: 'MQ<string>',
-    default: 'iconSize020',
-    description:
-      'If provided, this overrides the icon size of the Select option icon.',
-  },
-];
-
-const selectOptionPropsRows = [
-  {
-    name: 'value',
-    type: 'string',
-    default: '',
-    description: 'Defines the value of the SelectOption',
-    required: true,
-  },
-  {
-    name: 'children',
-    type: 'React.ReactNode',
-    default: '',
-    description: 'Label and icon(s) of the SelectOption.',
-    required: true,
-  },
-  {
-    name: 'selected',
-    type: 'boolean',
-    default: '',
-    description: 'If provided, renders the SelectOption in a selected state.',
-  },
-  {
-    name: 'defaultSelected',
-    type: 'boolean',
-    default: '',
-    description:
-      'If provided, renders the SelectOption in a selected state by default.',
-  },
-  {
-    name: 'selectedIcon',
-    type: 'React.ReactNode',
-    default: '',
-    description: 'Icon rendered inside the SelectOption.',
-  },
-  {
-    name: 'selectedDisplay',
-    type: 'React.ReactNode',
-    default: '',
-    description:
-      'Display value rendered inside the SelectOption (supports custom display).',
-  },
-];
-
-const infoIcon = (
-  <IconFilledInfo
-    overrides={{
-      size: 'iconSize020',
-    }}
-  />
-);
-
-const selectPropsFooter = (
-  <>
-    <Block spaceStack="space050" />
-    <InlineMessage icon={infoIcon} role="region" aria-label="Rules props">
-      The <InlineCode>name</InlineCode> & <InlineCode>rules</InlineCode> props
-      are set on the form input level. If you want to add validation rules or
-      set the name of this component,{' '}
-      <LinkInline href="/components/form">
-        please refer to the Form component
-      </LinkInline>
-      .
-    </InlineMessage>
-    <Block spaceStack="space030" />
-    <InlineMessage icon={infoIcon} role="region" aria-label="Select component">
-      The Select component can support rendering in a read-only state (can be
-      selected but not changed by the user).
-    </InlineMessage>
-  </>
-);
-
-const selectOptionPropsFooter = (
-  <>
-    <Block spaceStack="space050" />
-    <InlineMessage icon={infoIcon} role="region" aria-label="modal component">
-      Please refer to the{' '}
-      <LinkInline href="/components/modal">Modal component</LinkInline> for all
-      props and overrides.
-    </InlineMessage>
-  </>
-);
 
 const TextFieldComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -337,8 +36,8 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The select component contains five required elements and two optional elements.',
-      media: getIllustrationComponent('components/text-input/anatomy'),
+        'Text Fields contain four required elements and two optional elements.',
+      media: getIllustrationComponent('components/text-field/anatomy'),
       rows: [
         {
           name: 'Input Container',
@@ -354,16 +53,23 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           optional: true,
         },
         {
+          name: 'Caret',
+          description:
+            'Thin vertical line that blinks to indicate where input will be inserted',
+          component: 'HTML Input',
+          optional: undefined,
+        },
+        {
           name: 'Input & Placeholder Text',
           description:
             'Input text - a value the user has entered into a input. Placeholder text - a short hint that describes the expected value of an input',
-          component: 'Text block',
+          component: 'Text Block',
           optional: undefined,
         },
         {
           name: 'Validation icon',
           description:
-            'An icon used to indicate if the input is required and in a valid or invalid state. Validation is set on the Form',
+            'An icon used to indicate if the input is required and in a valid or invalid state. Validation is set on the Form component',
           component: 'Icon',
           optional: undefined,
         },
@@ -371,61 +77,27 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           name: 'End Enhancer',
           description:
             'Used to add a component to the end of the input container. Eg. an Icon or Button',
-          component: 'React.Reactnode',
+          component: 'React.ReactNode',
           optional: true,
-        },
-        {
-          name: 'Panel',
-          description: 'Container that contained a list of option items',
-          component: 'Block',
-          optional: undefined,
-        },
-        {
-          name: 'Option Item',
-          description: 'Option item that can be selected from multiple options',
-          component: 'Div',
-          optional: undefined,
         },
       ],
     }}
     options={{
       introduction:
-        'The Select component has options that can be used to provide an appropriate experience for different use cases.',
+        'The Text Field has options that can be used to provide an appropriate experience for different use cases.',
       cards: [
         {
           title: 'Size',
           description:
-            'There are three sizes of Select; small, medium, and large. The input container, placeholder/input text, start and end enhancers change size. Selects match the same height as the Button and other inputs such as the Text Field, to align when used together.',
-          media: getIllustrationComponent('components/text-input/options/size'),
-        },
-        {
-          title: 'Select for mobile',
-          description: (
-            <>
-              There is an option for Select options to appear in a Modal (with
-              overlay), which is intended for long lists of options eg.
-              presenting a list of countries to select from in a{' '}
-              <Link href="/components/form/">Form.</Link>
-            </>
-          ),
-          media: getIllustrationComponent(
-            'components/text-input/options/mobile',
-          ),
+            'There are three sizes of Text Field; small, medium, and large. The label, input container, placeholder/input text, start and end enhancers, and assistive text change size. Text Inputs match the same height as the Button, to align when used together.',
+          media: getIllustrationComponent('components/text-field/options/size'),
         },
         {
           title: 'Width',
           description:
-            'The width of a Select can be customised appropriately for its context, using full-width or a fixed-width value.',
+            'The width of a Text Field can be customised appropriately for its context, using full-width or a fixed-width value.',
           media: getIllustrationComponent(
-            'components/text-input/options/width',
-          ),
-        },
-        {
-          title: 'Min-height',
-          description:
-            'The minimum height of a Select input can be customised appropriately for its context. Additionally, the minimum height of the Select panel (containing the option items) can be customised appropriately for its context.',
-          media: getIllustrationComponent(
-            'components/text-input/options/min-height',
+            'components/text-field/options/mobile',
           ),
         },
         {
@@ -448,44 +120,113 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
                 title="Note"
               >
                 Placeholder text is not accessible; use assistive text when
-                providing instructions on completing a Select for clarity.
+                providing instructions on completing a Text Field for clarity.
               </InlineMessage>
             </>
           ),
           media: getIllustrationComponent(
-            'components/text-input/options/placeholder-text',
+            'components/text-field/options/placeholder-text',
           ),
         },
         {
           title: 'Start enhancer',
           description:
-            'The Select supports start enhancer property that allows for a component to be added to the start or end of the input container, for example, an icon.',
+            'The Text Field supports start enhancer property that allows for a component to be added to the start or end of the input container, for example, an icon.',
           media: getIllustrationComponent(
-            'components/text-input/options/start-enhancer',
+            'components/text-field/options/start-enhancer',
           ),
         },
         {
           title: 'End enhancer',
           description:
-            'The Select supports end enhancer property that allows for a component to be added to the start or end of the input container, for example, an icon.',
+            'The Text Field supports end enhancer property that allows for a component to be added to the start or end of the input container, for example, a Button.',
           media: getIllustrationComponent(
-            'components/text-input/options/end-enhancer',
+            'components/text-field/options/end-enhancer',
           ),
         },
         {
-          title: 'Pre-selected options',
-          description:
-            'A pre-selected option can be set on the Select. When specified, the option is displayed in the Select upon page load.',
+          title: 'Autocomplete',
+          description: (
+            <>
+              The Text Field supports native HTML autocomplete functionality
+              that provides a visual hint to users if enabled.{' '}
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete"
+                target="_blank"
+              >
+                For more information, please refer to the HTML autocomplete
+                attribute
+              </Link>
+              .
+            </>
+          ),
           media: getIllustrationComponent(
-            'components/text-input/options/pre-selected-option',
+            'components/text-field/options/pre-selected-option',
           ),
         },
         {
-          title: 'Custom selected display',
-          description:
-            'The Select option item and the Select input can be defined independently. For example, a list of countries may be displayed in a text format in the Select option items and upon user selection, the selected item may display a country flag in the Select input.',
+          title: 'Max length',
+          description: (
+            <>
+              The Text Field supports native HTML max length value functionality
+              that sets a maximum length of the number of characters entered.{' '}
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes"
+                target="_blank"
+              >
+                For more information, please refer to the HTML input attribute
+                types
+              </Link>
+              .
+            </>
+          ),
           media: getIllustrationComponent(
-            'components/text-input/options/custom-selected-display',
+            'components/text-field/options/pre-selected-option',
+          ),
+        },
+        {
+          title: 'Pattern',
+          description: (
+            <>
+              The Text Field supports native HTML regex pattern functionality
+              that the value of the input must match to be valid.{' '}
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes"
+                target="_blank"
+              >
+                For more information, please refer to the HTML input attribute
+                types
+              </Link>
+              .
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/text-field/options/pre-selected-option',
+          ),
+        },
+        {
+          title: 'Input mode',
+          description: (
+            <>
+              Selection controls (inputs), such as the Form Input TextField, can
+              be grouped together with other selection controls, Labels, and
+              Assistive Text together in a Fieldset. The Fieldset has a caption
+              that gives a title attributed to the elements that appear in the
+              Fieldset, called a Legend.
+              <br />
+              <br />
+              The Fieldset can also support other selection controls (inputs)
+              such as the{' '}
+              <Link href="/components/radio-button/">FormInput Radio</Link>,
+              FormInput Switch, and{' '}
+              <Link href="/components/checkbox/">FormInput Checkbox</Link>.
+              <br />
+              <br />
+              For more information, please refer to the Fieldset component.
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/text-field/options/pre-selected-option',
           ),
         },
       ],
@@ -498,26 +239,26 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Base',
           description:
             'The select has a base state. This is the base style of the input before it has been interacted with by a user.',
-          media: getIllustrationComponent('components/text-input/states/base'),
+          media: getIllustrationComponent('components/text-field/states/base'),
         },
         {
           title: 'Focus',
           description:
             'The select has a focus state. This is the style of the input when the element is focused via keyboard control.',
-          media: getIllustrationComponent('components/text-input/states/focus'),
+          media: getIllustrationComponent('components/text-field/states/focus'),
         },
         {
           title: 'Hover',
           description:
             'The select has a hover state. The style of the input changes to visually communicate and provide feedback to the user that the Select input is an interactive element.',
-          media: getIllustrationComponent('components/text-input/states/hover'),
+          media: getIllustrationComponent('components/text-field/states/hover'),
         },
         {
           title: 'Selected',
           description:
             'The Select in a selected state changes style when the Select selection conforms to a specific condition eg. the panel appearing. This is the style of the input when the panel element is visible (open).',
           media: getIllustrationComponent(
-            'components/text-input/states/selected',
+            'components/text-field/states/selected',
           ),
         },
         {
@@ -537,7 +278,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               to define this validation behaviour.
             </>
           ),
-          media: getIllustrationComponent('components/text-input/states/valid'),
+          media: getIllustrationComponent('components/text-field/states/valid'),
         },
         {
           title: 'Valid focus',
@@ -556,7 +297,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/text-input/states/valid-focus',
+            'components/text-field/states/valid-focus',
           ),
         },
         {
@@ -564,7 +305,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           description:
             'The select in a valid hover state changes style when the selected option conforms to a specific condition eg. updating preferences in a form, while hovering.',
           media: getIllustrationComponent(
-            'components/text-input/states/valid-focus',
+            'components/text-field/states/valid-focus',
           ),
         },
         {
@@ -585,7 +326,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/text-input/states/invalid',
+            'components/text-field/states/invalid',
           ),
         },
         {
@@ -593,7 +334,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           description:
             'The select in an invalid focus state changes style when the selected option conforms to a specific condition eg. not making a selection in a form, while focused.',
           media: getIllustrationComponent(
-            'components/text-input/states/invalid-focus',
+            'components/text-field/states/invalid-focus',
           ),
         },
         {
@@ -601,7 +342,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           description:
             'The select in an invalid hover state changes style when the selected option conforms to a specific condition eg. not making a selection in a Form, while hovering',
           media: getIllustrationComponent(
-            'components/text-input/states/invalid-hover',
+            'components/text-field/states/invalid-hover',
           ),
         },
         {
@@ -619,7 +360,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/text-input/states/disabled',
+            'components/text-field/states/disabled',
           ),
         },
         {
@@ -641,7 +382,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/text-input/states/read-only',
+            'components/text-field/states/read-only',
           ),
         },
       ],
@@ -664,7 +405,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/text-input/behaviours/checked-vs-unchecked',
+            'components/text-field/behaviours/checked-vs-unchecked',
           ),
         },
         {
@@ -691,7 +432,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/text-input/behaviours/validation',
+            'components/text-field/behaviours/validation',
           ),
         },
         {
@@ -704,7 +445,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/text-input/behaviours/validation-icon',
+            'components/text-field/behaviours/validation-icon',
           ),
         },
       ],
@@ -717,7 +458,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           description:
             'Use a Select to present multiple options where only one can be selected.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-input/usage/do-1'),
+          media: getIllustrationComponent('components/text-field/usage/do-1'),
         },
         {
           description: (
@@ -731,36 +472,36 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/text-input/usage/dont-1'),
+          media: getIllustrationComponent('components/text-field/usage/dont-1'),
         },
         {
           description:
             'Use a Select when there are four or more options for a user to choose from.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-input/usage/do-2'),
+          media: getIllustrationComponent('components/text-field/usage/do-2'),
         },
         {
           description:
             'Don’t use a Select when a user can select more than one option, use a checkbox.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/text-input/usage/dont-2'),
+          media: getIllustrationComponent('components/text-field/usage/dont-2'),
         },
         {
           description: 'Where possible, define a default option.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-input/usage/do-2'),
+          media: getIllustrationComponent('components/text-field/usage/do-2'),
         },
         {
           description:
             'Have an empty Select upon page load. If a default option isn’t appropriate, define a placeholder such as “Select an option”.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/text-input/usage/dont-3'),
+          media: getIllustrationComponent('components/text-field/usage/dont-3'),
         },
         {
           description:
             'Don’t use a Select when a users can add and remove options, consider a Text Field with Tags or a Combobox.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/text-input/usage/dont-4'),
+          media: getIllustrationComponent('components/text-field/usage/dont-4'),
         },
       ],
     }}
@@ -868,87 +609,6 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           },
         ],
       },
-    }}
-    componentAPI={{
-      introduction: (
-        <>
-          The Select component is compromised of four key elements, these have a
-          range of props that can be used to define an appropriate experience
-          for different use cases.
-          <Block spaceStack="space080" />
-          <InlineMessage
-            icon={infoIcon}
-            role="region"
-            aria-label="Components exported"
-          >
-            There are two components exported from the package, one for use
-            within the NewsKit{' '}
-            <Link href="/components/form/">NewsKit Form component</Link>, and
-            one for use as a controlled component.
-          </InlineMessage>
-        </>
-      ),
-      components: [
-        {
-          title: 'FormInput Select',
-          summary: (
-            <>
-              The FormInput Select has a range of props that can be used to
-              define an appropriate experience for different use cases. Use this
-              component within the NewsKit Form component.
-            </>
-          ),
-          propsRows: commonPropsRows('FormInput'),
-          propsFooter: selectPropsFooter,
-          overridesRows: commonOverridesRows,
-        },
-        {
-          title: 'Select',
-          summary: (
-            <>
-              The Select has a range of props that can be used to define an
-              appropriate experience for different use cases. Use this component
-              within the NewsKit{' '}
-              <Link href="/components/form/">Form component</Link>.
-            </>
-          ),
-          propsRows: [
-            {
-              name: 'name',
-              type: 'string',
-              description: (
-                <>
-                  If provided, defines name of the input element, used when
-                  submitting an{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefname"
-                    target="_blank"
-                  >
-                    HTML form
-                  </Link>
-                  .
-                </>
-              ),
-            },
-            ...commonPropsRows(),
-          ],
-          overridesRows: commonOverridesRows,
-        },
-        {
-          title: 'SelectOption',
-          summary: (
-            <>
-              The SelectOption has a range of props that can be used to define
-              an appropriate experience for different use cases. Use this
-              component within the NewsKit{' '}
-              <Link href="/components/form/">Form component</Link>.
-            </>
-          ),
-          propsRows: selectOptionPropsRows,
-          propsFooter: selectOptionPropsFooter,
-          overridesRows: commonOverridesRows,
-        },
-      ],
     }}
     compliance={{
       variations: true,
