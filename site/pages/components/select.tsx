@@ -23,7 +23,7 @@ const commonPropsRows = (type?: string) => [
   },
   {
     name: 'useModal',
-    type: ['boolean'],
+    type: ['MQ<boolean>'],
     default: 'false',
     description: (
       <>
