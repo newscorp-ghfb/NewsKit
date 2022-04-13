@@ -12,14 +12,29 @@ import {
   useTheme,
 } from 'newskit';
 import {getToken} from '../../../src/utils/get-token';
-import {FeatureCardProps} from './types';
+import {FeatureCardProps, OptionalLinkWrapperProps} from './types';
 import {
   StyledCardHorizontalInset,
   StyledCardVerticalInset,
   StyledFeatureCardHorizontalMedia,
   StyledFeatureCardVerticalMedia,
+  StyledCardLink,
 } from './styled';
 import {LineTruncation} from '../line-truncation';
+
+const OptionalLinkWrapper: React.FC<OptionalLinkWrapperProps> = ({
+  href,
+  children,
+}) => {
+  if (href) {
+    return (
+      <StyledCardLink href={href as string}>
+        <>{children}</>
+      </StyledCardLink>
+    );
+  }
+  return <>{children}</>;
+};
 
 const FeatureCardHorizontal = React.forwardRef<
   HTMLDivElement,
@@ -53,7 +68,7 @@ const FeatureCardHorizontal = React.forwardRef<
     );
 
     return (
-      <>
+      <OptionalLinkWrapper href={href}>
         <Visible xs sm>
           <StyledCardHorizontalInset
             ref={ref}
@@ -63,7 +78,6 @@ const FeatureCardHorizontal = React.forwardRef<
                 stylePreset={`${stylePrefix}Media`}
               />
             )}
-            href={href}
             layout="vertical"
             overrides={{
               ...overrides,
@@ -125,7 +139,6 @@ const FeatureCardHorizontal = React.forwardRef<
                 stylePreset={`${stylePrefix}Media`}
               />
             )}
-            href={href}
             layout="horizontal-reverse"
             overrides={{
               ...overrides,
@@ -178,7 +191,7 @@ const FeatureCardHorizontal = React.forwardRef<
             </Stack>
           </StyledCardHorizontalInset>
         </Visible>
-      </>
+      </OptionalLinkWrapper>
     );
   },
 );
@@ -216,62 +229,65 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
       'typographyPreset',
     );
     return (
-      <StyledCardVerticalInset
-        {...props}
-        media={indexCards.includes(stylePrefix as string) ? mediaValue : media}
-        href={href}
-        ref={ref}
-        overrides={{
-          stylePreset: `${stylePrefix}Container${
-            href ? 'Interactive' : 'NonInteractive'
-          }`,
+      <OptionalLinkWrapper href={href}>
+        <StyledCardVerticalInset
+          {...props}
+          media={
+            indexCards.includes(stylePrefix as string) ? mediaValue : media
+          }
+          ref={ref}
+          overrides={{
+            stylePreset: `${stylePrefix}Container${
+              href ? 'Interactive' : 'NonInteractive'
+            }`,
 
-          teaserContainer: {
-            spaceInset: 'space050',
-          },
-        }}
-      >
-        {title && (
-          <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
-            <Headline
-              overrides={{
-                typographyPreset: titleTypographyPreset,
+            teaserContainer: {
+              spaceInset: 'space050',
+            },
+          }}
+        >
+          {title && (
+            <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
+              <Headline
+                overrides={{
+                  typographyPreset: titleTypographyPreset,
 
-                heading: {
-                  stylePreset: 'inkWhiteContrast',
-                },
-              }}
-            >
-              {title}
-            </Headline>
-          </Block>
-        )}
-        {description && (
-          <Block spaceStack={{xs: 'space050', lg: 'space060'}}>
-            <TextBlock
-              stylePreset="inkWhiteSubtle"
-              typographyPreset={descriptionTypographyPreset}
-            >
-              {description}
-            </TextBlock>
-          </Block>
-        )}
-        {buttonLabel && (
-          <Block spaceStack="space020">
-            <Button
-              href={buttonHref}
-              size={ButtonSize.Small}
-              overrides={{
-                stylePreset: `${stylePrefix}Button`,
-                typographyPreset: 'utilityButton010',
-              }}
-            >
-              {buttonLabel}
-              <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
-            </Button>
-          </Block>
-        )}
-      </StyledCardVerticalInset>
+                  heading: {
+                    stylePreset: 'inkWhiteContrast',
+                  },
+                }}
+              >
+                {title}
+              </Headline>
+            </Block>
+          )}
+          {description && (
+            <Block spaceStack={{xs: 'space050', lg: 'space060'}}>
+              <TextBlock
+                stylePreset="inkWhiteSubtle"
+                typographyPreset={descriptionTypographyPreset}
+              >
+                {description}
+              </TextBlock>
+            </Block>
+          )}
+          {buttonLabel && (
+            <Block spaceStack="space020">
+              <Button
+                href={buttonHref}
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: `${stylePrefix}Button`,
+                  typographyPreset: 'utilityButton010',
+                }}
+              >
+                {buttonLabel}
+                <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
+              </Button>
+            </Block>
+          )}
+        </StyledCardVerticalInset>
+      </OptionalLinkWrapper>
     );
   },
 );
