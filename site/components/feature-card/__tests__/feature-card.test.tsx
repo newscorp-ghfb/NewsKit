@@ -16,6 +16,19 @@ describe('FeatureCard', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('Renders horizontal card with clickable button only', () => {
+    const props: FeatureCardProps = {
+      title: 'Interactive Horizontal Card',
+      description: 'I am interactive',
+      stylePrefix: 'patternsCard',
+      layout: 'horizontal',
+      buttonLabel: 'Read more',
+      buttonHref: 'href',
+    };
+    const fragment = renderToFragmentWithTheme(FeatureCard, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('Renders interactive horizontal card without button', () => {
     const props: FeatureCardProps = {
       title: 'Interactive Horizontal Card',
@@ -79,6 +92,19 @@ describe('FeatureCard', () => {
       stylePrefix: 'contributeCard',
       layout: 'vertical',
       href: 'href',
+    };
+    const fragment = renderToFragmentWithTheme(FeatureCard, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('Renders vertical card with clickable button only', () => {
+    const props: FeatureCardProps = {
+      title: 'Interactive Horizontal Card',
+      description: 'I am interactive',
+      buttonLabel: 'Read more',
+      buttonHref: 'href',
+      stylePrefix: 'contributeCard',
+      layout: 'vertical',
     };
     const fragment = renderToFragmentWithTheme(FeatureCard, props);
     expect(fragment).toMatchSnapshot();

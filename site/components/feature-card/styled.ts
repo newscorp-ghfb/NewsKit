@@ -43,9 +43,5 @@ export const StyledFeatureCardVerticalMedia = styled.div<{stylePreset: string}>`
 
 export const StyledCardLink = styled(Link)`
   height: 100%;
-  text-decoration: none;
-  &:hover,
-  &:hover:not(:disabled) {
-    text-decoration: none;
-  }
+  display: block;
 `;

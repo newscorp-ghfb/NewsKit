@@ -964,12 +964,10 @@ exports[`Media List renders with feature cardscards 1`] = `
 
 .emotion-4 {
   display: inline-block;
-  color: #577FFB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  height: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
+  height: 100%;
+  display: block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -988,51 +986,6 @@ exports[`Media List renders with feature cardscards 1`] = `
   }
 }
 
-.emotion-4 svg {
-  fill: #577FFB;
-}
-
-.emotion-4:hover:not(:disabled) {
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-4:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-4:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-4:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-4:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-4:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-4:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-4:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-4:hover,
 .emotion-4:hover:not(:disabled) {
   -webkit-text-decoration: none;
   text-decoration: none;
