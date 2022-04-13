@@ -65,3 +65,36 @@ stylePresets.controlLabel = {
     color: '{{colors.inkNonEssential}}',
   },
 };
+
+stylePresets.feedback = {
+  base: {
+    backgroundColor: '{{colors.interactiveInput040}}',
+    borderRadius: '{{borders.borderRadiusCircle}}',
+    opacity: '0',
+  },
+  hover: {
+    opacity: '0.2',
+  },
+  disabled: {
+    opacity: '0',
+  },
+  'hover:active': {
+    opacity: '0.4',
+  },
+  'valid:hover': {
+    backgroundColor: '{{colors.interactivePositive040}}',
+    opacity: '0.2',
+  },
+  'valid:hover:active': {
+    backgroundColor: '{{colors.interactivePositive040}}',
+    opacity: '0.4',
+  },
+  'invalid:hover': {
+    backgroundColor: '{{colors.interactiveNegative040}}',
+    opacity: '0.2',
+  },
+  'invalid:hover:active': {
+    backgroundColor: '{{colors.interactiveNegative040}}',
+    opacity: '0.4',
+  },
+};

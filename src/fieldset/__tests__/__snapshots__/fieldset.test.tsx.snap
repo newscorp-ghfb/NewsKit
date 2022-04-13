@@ -187,9 +187,9 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0.7;
-  background-color: transparent;
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 64px;
   height: 64px;
   -webkit-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
@@ -198,32 +198,48 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
 }
 
-.emotion-6:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-6:disabled {
+  opacity: 0;
 }
 
-.emotion-6:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-6:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-6:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-6:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
 }
 
 .emotion-6:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
+  background-color: #D20600;
+  opacity: 0.2;
 }
 
-.emotion-6:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
+.emotion-6:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
 }
 
-.emotion-6:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
-.emotion-6:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-6:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-7 {
@@ -650,9 +666,9 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0.7;
-  background-color: transparent;
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -661,32 +677,48 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-6:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-6:disabled {
+  opacity: 0;
 }
 
-.emotion-6:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-6:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-6:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-6:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
 }
 
 .emotion-6:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
+  background-color: #D20600;
+  opacity: 0.2;
 }
 
-.emotion-6:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
+.emotion-6:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
 }
 
-.emotion-6:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
-.emotion-6:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-6:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-7 {
@@ -1113,9 +1145,9 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0.7;
-  background-color: transparent;
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 40px;
   height: 40px;
   -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
@@ -1124,32 +1156,48 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
-.emotion-6:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-6:disabled {
+  opacity: 0;
 }
 
-.emotion-6:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-6:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-6:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-6:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
 }
 
 .emotion-6:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
+  background-color: #D20600;
+  opacity: 0.2;
 }
 
-.emotion-6:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
+.emotion-6:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
 }
 
-.emotion-6:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
-.emotion-6:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-6:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-7 {

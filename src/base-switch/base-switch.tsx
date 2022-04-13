@@ -38,6 +38,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
   ) => {
     const ref = useRef<HTMLInputElement>(null);
     const [isInputFocused, setIsInputFocused] = React.useState(false);
+    const [isInputActive, setIsInputActive] = React.useState(false);
     const [isLabelHovered, setIsLabelHovered] = React.useState(false);
 
     const [checked, setCheckedState] = useControlled({
@@ -69,6 +70,14 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
       setIsInputFocused(false);
     }, [setIsInputFocused]);
 
+    const onMouseDown = useCallback(() => {
+      setIsInputActive(true);
+    }, [setIsInputActive]);
+
+    const onMouseUp = useCallback(() => {
+      setIsInputActive(false);
+    }, [setIsInputActive]);
+
     const onLabelMouseOver = useCallback(() => {
       if (state !== 'disabled') {
         setIsLabelHovered(true);
@@ -78,6 +87,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
     const onLabelMouseLeave = useCallback(() => {
       if (state !== 'disabled') {
         setIsLabelHovered(false);
+        setIsInputActive(false);
       }
     }, [setIsLabelHovered, state]);
 
@@ -115,6 +125,8 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
         {...(label ? labelAttributes : {})}
         onMouseOver={onLabelMouseOver}
         onMouseLeave={onLabelMouseLeave}
+        onMouseDown={onMouseDown}
+        onMouseUp={onMouseUp}
         path={path}
       >
         {labelPosition === 'start' && labelElement}
@@ -132,8 +144,8 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
             state={state}
             onClick={onFeedbackClick}
             data-testid={`${type}-feedback`}
-            isFocused={isInputFocused}
-            isHovered={isLabelHovered || isInputFocused}
+            isActive={isInputActive}
+            isHovered={isLabelHovered}
             path={path}
           />
           <StyledSwitch

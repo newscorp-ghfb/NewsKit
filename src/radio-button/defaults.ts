@@ -14,7 +14,8 @@ export default {
       },
       feedback: {
         size: 'sizing070',
-        stylePreset: 'radioButtonFeedback',
+        stylePreset: 'feedback',
+        transitionPreset: 'opacityChange',
       },
       label: {
         stylePreset: 'controlLabel',
@@ -38,7 +39,8 @@ export default {
       },
       feedback: {
         size: 'sizing080',
-        stylePreset: 'radioButtonFeedback',
+        stylePreset: 'feedback',
+        transitionPreset: 'opacityChange',
       },
       label: {
         stylePreset: 'controlLabel',
@@ -62,7 +64,8 @@ export default {
       },
       feedback: {
         size: 'sizing090',
-        stylePreset: 'radioButtonFeedback',
+        stylePreset: 'feedback',
+        transitionPreset: 'opacityChange',
       },
       label: {
         stylePreset: 'controlLabel',

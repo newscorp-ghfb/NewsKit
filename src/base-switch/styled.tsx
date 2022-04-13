@@ -85,6 +85,12 @@ export const StyledSwitch = styled.div<
       isFocused,
       isHovered,
     })};
+  ${({isFocused}) =>
+    isFocused &&
+    ` outline: 5px auto Highlight;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: 3px;
+  `}
   ${({feedbackIsVisible}) =>
     feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`};
 
@@ -93,21 +99,20 @@ export const StyledSwitch = styled.div<
 
 export const StyledFeedback = styled.div<
   Pick<BaseSwitchProps, 'size' | 'overrides' | 'state' | 'path'> & {
-    isFocused: boolean;
     isHovered: boolean;
+    isActive: boolean;
   }
 >`
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0.7;
-  ${({isHovered, isFocused}) =>
-    (isHovered || isFocused) && `z-index: ${STACKING_CONTEXT.feedback}`};
+  ${({isHovered}) => isHovered && `z-index: ${STACKING_CONTEXT.feedback}`};
 
-  ${({size, isHovered, isFocused, state, path}) =>
+  ${({size, isHovered, isActive, state, path}) =>
     getStylePreset(`${path}.${size}.feedback`, 'feedback', {
       isHovered,
-      isFocused,
+      isActive,
+      isDisabled: state === 'disabled',
       isInvalid: state === 'invalid',
       isValid: state === 'valid',
       // when is not HOVER we need to remove the hover so it does not apply as class:hover
@@ -124,6 +129,8 @@ export const StyledFeedback = styled.div<
       'feedback',
       'size',
     )};
+  ${({size, path}) =>
+    getTransitionPreset(`${path}.${size}.feedback`, 'feedback')};
 `;
 
 export const StyledInput = styled.input<

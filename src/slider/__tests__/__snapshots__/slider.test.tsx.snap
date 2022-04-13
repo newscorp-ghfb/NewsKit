@@ -824,12 +824,80 @@ exports[`slider react-range Range function props renderThumb should render custo
   fill: #C0C0C0;
 }
 
+.emotion-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-1:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-1:disabled {
+  opacity: 0;
+}
+
+.emotion-1:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-1:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-1:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-1:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-1:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 <div
     aria-label="my custom aria label"
     class="emotion-0"
     data-testid="slider-thumb"
     values="25"
-  />
+  >
+    <span
+      class="emotion-1"
+      data-testid="slider-feedback"
+    />
+  </div>
 </DocumentFragment>
 `;
 
@@ -889,12 +957,79 @@ exports[`slider react-range Range function props renderThumb should render custo
   fill: #C0C0C0;
 }
 
+.emotion-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-1:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-1:disabled {
+  opacity: 0;
+}
+
+.emotion-1:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-1:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-1:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-1:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-1:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 <div
     aria-label="slider"
     class="emotion-0"
     data-testid="slider-thumb"
     values="10,20,30"
   >
+    <span
+      class="emotion-1"
+      data-testid="slider-feedback"
+    />
     <span />
   </div>
 </DocumentFragment>
@@ -998,12 +1133,80 @@ exports[`slider react-range Range function props renderThumb should render dragg
   fill: #C0C0C0;
 }
 
+.emotion-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-1:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-1:disabled {
+  opacity: 0;
+}
+
+.emotion-1:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-1:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-1:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-1:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-1:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 <div
     aria-label="slider"
     class="emotion-0"
     data-testid="slider-thumb"
     values="25"
-  />
+  >
+    <span
+      class="emotion-1"
+      data-testid="slider-feedback"
+    />
+  </div>
 </DocumentFragment>
 `;
 
@@ -1062,12 +1265,80 @@ exports[`slider react-range Range function props renderThumb should render multi
   fill: #C0C0C0;
 }
 
+.emotion-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-1:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-1:disabled {
+  opacity: 0;
+}
+
+.emotion-1:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-1:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-1:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-1:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-1:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 <div
     aria-label="slider"
     class="emotion-0"
     data-testid="slider-thumb"
     values="10,20,30"
-  />
+  >
+    <span
+      class="emotion-1"
+      data-testid="slider-feedback"
+    />
+  </div>
 </DocumentFragment>
 `;
 
@@ -1127,6 +1398,69 @@ exports[`slider react-range Range function props renderThumb should render range
 }
 
 .emotion-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-1:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-1:disabled {
+  opacity: 0;
+}
+
+.emotion-1:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-1:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-1:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-1:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-1:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 {
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1142,19 +1476,19 @@ exports[`slider react-range Range function props renderThumb should render range
   width: 100%;
 }
 
-.emotion-1::before {
+.emotion-2::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-1::after {
+.emotion-2::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-1:disabled {
+.emotion-2:disabled {
   color: #C0C0C0;
 }
 
@@ -1164,8 +1498,12 @@ exports[`slider react-range Range function props renderThumb should render range
     data-testid="slider-thumb"
     values="25"
   >
-    <div
+    <span
       class="emotion-1"
+      data-testid="slider-feedback"
+    />
+    <div
+      class="emotion-2"
     >
       25
     </div>
@@ -1229,6 +1567,69 @@ exports[`slider react-range Range function props renderThumb should render slide
 }
 
 .emotion-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-1:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-1:disabled {
+  opacity: 0;
+}
+
+.emotion-1:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-1:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-1:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-1:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-1:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1238,7 +1639,7 @@ exports[`slider react-range Range function props renderThumb should render slide
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-1 {
+  .emotion-2 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1246,7 +1647,7 @@ exports[`slider react-range Range function props renderThumb should render slide
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-1 {
+  .emotion-2 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1259,9 +1660,13 @@ exports[`slider react-range Range function props renderThumb should render slide
     data-testid="slider-thumb"
     values="25"
   >
+    <span
+      class="emotion-1"
+      data-testid="slider-feedback"
+    />
     <svg
       aria-hidden="true"
-      class="emotion-1 emotion-2"
+      class="emotion-2 emotion-3"
       fill="currentColor"
       focusable="false"
       viewBox="0 0 24 24"
@@ -1334,12 +1739,80 @@ exports[`slider react-range Range function props renderThumb should render undra
   fill: #C0C0C0;
 }
 
+.emotion-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-1:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-1:disabled {
+  opacity: 0;
+}
+
+.emotion-1:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-1:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-1:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-1:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-1:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 <div
     aria-label="slider"
     class="emotion-0"
     data-testid="slider-thumb"
     values="25"
-  />
+  >
+    <span
+      class="emotion-1"
+      data-testid="slider-feedback"
+    />
+  </div>
 </DocumentFragment>
 `;
 
@@ -1399,6 +1872,69 @@ exports[`slider react-range Range function props renderThumb should render verti
 }
 
 .emotion-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-1:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-1:disabled {
+  opacity: 0;
+}
+
+.emotion-1:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-1:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-1:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-1:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-1:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 {
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1414,19 +1950,19 @@ exports[`slider react-range Range function props renderThumb should render verti
   width: 100%;
 }
 
-.emotion-1::before {
+.emotion-2::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-1::after {
+.emotion-2::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-1:disabled {
+.emotion-2:disabled {
   color: #C0C0C0;
 }
 
@@ -1436,8 +1972,12 @@ exports[`slider react-range Range function props renderThumb should render verti
     data-testid="slider-thumb"
     values="25"
   >
-    <div
+    <span
       class="emotion-1"
+      data-testid="slider-feedback"
+    />
+    <div
+      class="emotion-2"
     >
       25
     </div>

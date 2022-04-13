@@ -6,6 +6,8 @@ import {
   getSize,
   getSpace,
   getStylePreset,
+  getResponsiveSize,
+  getTransitionPreset,
 } from '../utils/style';
 import {
   StyledTrackProps,
@@ -148,6 +150,29 @@ export const StyledThumb = styled.div<StyledThumbProps>`
   align-items: center;
   box-sizing: border-box;
   cursor: ${getCursor};
+`;
+
+export const StyledFeedback = styled.span<
+  Pick<StyledThumbProps, 'disabled' | 'overrides'>
+>`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  ${({disabled}) =>
+    getStylePreset('slider.feedback', 'feedback', {
+      isDisabled: disabled,
+    })}
+  ${getResponsiveSize(
+    rectSize => ({
+      width: rectSize,
+      height: rectSize,
+      transform: `translate3d(calc(${rectSize} / -2), calc(${rectSize} / -2), 0)`,
+    }),
+    `slider.feedback`,
+    'feedback',
+    'size',
+  )};
+  ${getTransitionPreset(`slider.feedback`, 'feedback')};
 `;
 
 type StyledThumbValueProps = VerticalProp &
