@@ -14,7 +14,7 @@ export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
 
   return (
     <IconButton
-      size={ButtonSize.Small}
+      size={ButtonSize.Medium}
       eventContext={{
         currentThemeMode: themeMode,
       }}

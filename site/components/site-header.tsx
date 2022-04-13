@@ -17,6 +17,11 @@ import {
   Block,
   IconFilledClose,
   getBorderCssFromTheme,
+  Button,
+  ButtonSize,
+  IconFilledGitHub,
+  StackChild,
+  AlignSelfValues,
 } from 'newskit';
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
@@ -25,6 +30,34 @@ import routes from '../routes';
 import {Link} from './link';
 import {getBorderRadius} from './theming-values/colors/utils';
 
+export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
+  href ? (
+    <Stack
+      flow="horizontal-center"
+      spaceInline="space040"
+      spaceStack="space000"
+    >
+      {/* <StackChild alignSelf={AlignSelfValues.Stretch}> */}
+      <Button
+        size={ButtonSize.Small}
+        overrides={{
+          typographyPreset: 'utilityButton010',
+
+          stylePreset: 'buttonOutlinedSecondary',
+          minWidth: '130px',
+          height: '30px',
+          // width: '500%',
+          // minHeight: '18px',
+        }}
+        href={href}
+        target="_blank"
+      >
+        <IconFilledGitHub />
+        View Github
+      </Button>
+      {/* </StackChild> */}
+    </Stack>
+  ) : null;
 const Header = styled.header`
   flex-shrink: 0;
   position: fixed;
@@ -226,8 +259,13 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
               <Stack
                 flow={Flow.HorizontalCenter}
                 stackDistribution={StackDistribution.End}
-                spaceInline="space070"
+                spaceInline="space020"
+                // spaceStack='space000'
               >
+                <StackChild alignSelf={AlignSelfValues.Stretch}>
+                  <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
+                </StackChild>
+
                 <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />
               </Stack>
             </Visible>

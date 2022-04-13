@@ -1,4 +1,15 @@
 export const stylePresets = {
+  buttonOutlinedSecondary: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interactiveSecondary030}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderRadius: '{{borders.borderRadiusRounded050}}',
+      color: '{{colors.inkBase}}',
+      iconColor: '{{colors.inkBase}}',
+    },
+  },
   buttonLightDarkToggle: {
     base: {
       backgroundColor: '{{colors.interactiveSecondary010}}',
