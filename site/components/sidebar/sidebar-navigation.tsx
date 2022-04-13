@@ -17,6 +17,8 @@ import {
   NavigationSectionType,
   PageType,
 } from './types';
+import { MenuNav } from 'components/menu-collapsable';
+import { Visible } from '../../../src/grid/visibility';
 
 const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -95,6 +97,10 @@ export const SidebarNav: React.FC = () => {
 
   return (
     <StyledSidebarNav role="navigation" aria-label="Sidebar">
+       <Visible xs sm md>
+        <MenuNav path={path} menu={routes} />
+      </Visible>
+      <Visible lg xl></Visible>
       <StyledNavigationWrapper role="list">
         {currentSection &&
           currentSection.map(section => (
