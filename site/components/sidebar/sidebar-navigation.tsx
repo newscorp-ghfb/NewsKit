@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import {useRouter} from 'next/router';
+import {Divider, getSpacingCssFromTheme, styled} from 'newskit';
 import {MenuNav} from '../menu-collapsable/menu-collapsable';
 import {Link} from '../link';
 import routes from '../../routes';
@@ -20,6 +21,10 @@ import {
 } from './types';
 import {Visible} from '../../../src/grid/visibility';
 
+const NavigationDivider = styled.div`
+  ${getSpacingCssFromTheme('marginTop', 'space050')};
+  ${getSpacingCssFromTheme('marginBottom', 'space050')};
+`;
 const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -36,7 +41,11 @@ const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
         href={page.id}
         overrides={{stylePreset: 'linkNoUnderline'}}
       >
-        <StyledLinkItem data-testid={page.id} $selected={active}>
+        <StyledLinkItem
+          data-testid={page.id}
+          $selected={active}
+          className={active ? 'selected' : undefined}
+        >
           {page.title}
         </StyledLinkItem>
       </Link>
@@ -59,6 +68,9 @@ const NavigationSection: React.FC<NavigationSectionProps> = ({
         active={activePagePath.includes(page.id)}
       />
     ))}
+    <NavigationDivider>
+      <Divider />
+    </NavigationDivider>
   </>
 );
 
