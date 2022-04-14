@@ -41,7 +41,7 @@ export const MenuNav = ({
                   overrides={{
                     typographyPreset: 'utilityButton020',
                     spaceInset: 'space030',
-                    stylePreset: 'sideNavItemHorizontal',
+                    stylePreset: 'sidebarNavItem',
                   }}
                   selected={path.includes(id)}
                   size="small"
