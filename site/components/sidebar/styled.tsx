@@ -4,6 +4,8 @@ import {
   getStylePresetFromTheme,
   getSizingFromTheme,
   getSpacingFromTheme,
+  getColorFromTheme,
+  getBorderCssFromTheme,
 } from 'newskit';
 
 export const StyledLinkItem = styled.div<{
@@ -20,9 +22,21 @@ export const StyledLinkItem = styled.div<{
 
   cursor: 'pointer';
   min-width: 230px;
-  padding: ${getSpacingFromTheme('spaceInset030')};
+  padding: ${getSpacingFromTheme('spaceInset030')} 0;
   margin: ${({theme}) => `${theme.spacePresets.space010} 0`};
   text-overflow: ellipsis;
+  position: relative;
+  &.selected {
+    ::before {
+      position: absolute;
+      left: -${getSizingFromTheme('sizing060')};
+      background: ${getColorFromTheme('blue060')};
+      height: ${getSizingFromTheme('sizing070')};
+      width: ${getSizingFromTheme('sizing030')};
+      top: ${getSizingFromTheme('sizing000')};
+      ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
+    }
+  }
 `;
 
 export const StyledFirstLevelHeader = styled.div`
@@ -32,14 +46,17 @@ export const StyledFirstLevelHeader = styled.div`
   padding: ${getSpacingFromTheme('space040')} ${getSpacingFromTheme('space000')};
 `;
 export const StyledSecondLevelHeader = styled.div`
-  ${getTypographyPresetFromTheme('utilityLabel020')};
+  ${getTypographyPresetFromTheme('sidebarFirstLevelHeader')};
   ${getStylePresetFromTheme('sidebarHeader')};
   min-height: ${getSizingFromTheme('sizing060')};
-  margin-top: ${getSpacingFromTheme('space045')};
+  margin-top: ${getSpacingFromTheme('space010')};
 `;
 
-export const StyledSidebarNav = styled.nav`
-  ${getTypographyPresetFromTheme('utilityBody030')};
+export const StyledSidebarNav = styled.div`
+  ${getTypographyPresetFromTheme('utilityHeading030')};
+  & ul > li > div {
+    display: block;
+  }
 `;
 
 export const StyledSectionContainer = styled.li`

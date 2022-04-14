@@ -114,7 +114,7 @@ export const SidebarNav: React.FC = () => {
           <MenuNav path={path} menu={routes} />
         </Visible>
         <Visible lg xl>
-          <StyledNavigationWrapper role="list" className="poo">
+          <StyledNavigationWrapper role="list">
             {currentSection &&
               currentSection.map(section => (
                 <Section
