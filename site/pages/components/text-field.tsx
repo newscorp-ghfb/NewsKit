@@ -4,7 +4,6 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-import {ContentText} from '../../components/text-section/content-text';
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
@@ -616,24 +615,8 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     accessibility={{
-      introduction: (
-        <>
-          The Select component has the following accessibility considerations:
-          <Block spaceStack="space100" />
-          <ContentText title="Grouping Selects" titleAs="span">
-            It is recommended to{' '}
-            <Link
-              target="_blank"
-              href="https://www.w3.org/TR/wai-aria-1.2/#group"
-            >
-              group
-            </Link>{' '}
-            selects and other related elements such as Labels and Assistive Text
-            together using the Fieldset component, with a title attributed to
-            the elements that appear in the Fieldset, called a Legend.
-          </ContentText>
-        </>
-      ),
+      introduction:
+        'The Text Field has the following accessibility considerations:',
       focusOrder: {
         title: 'Focus order',
         tableRows: [
@@ -645,7 +628,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           },
           {
             order: 2,
-            element: 'Select',
+            element: 'Text Field',
             role: 'Focusses to the input container',
           },
           {
@@ -662,31 +645,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           {
             command: ['Tab'],
             description:
-              'When focus is outside of the Select, it moves focus to the input container. If focus is on the input container it moves focus to the end enhancer (if provided, and interactive)',
-          },
-          {
-            command: ['Space'],
-            description: 'Launches/closes the Select panel',
-          },
-          {
-            command: ['Up'],
-            description:
-              'When focus is inside the Select panel, it moves focus upwards through the option items in the Select panel',
-          },
-          {
-            command: ['Down'],
-            description:
-              'When focus is inside the Select panel, it moves focus downwards through the option items in the Select panel',
-          },
-          {
-            command: ['Home'],
-            description:
-              'When focus is inside the Select panel, it moves to the first available option item in the Select panel',
-          },
-          {
-            command: ['End'],
-            description:
-              'When focus is inside the Select panel, it moves to the last available option item in the Select panel',
+              'When focus is outside of the Text Field, it moves focus to the input container. If focus is on the input container it moves focus to the end enhancer (if provided, and interactive).',
           },
         ],
       },
@@ -698,11 +657,11 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             attribute: 'ariaLabel',
             value: 'string',
             description:
-              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the Select.',
+              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the Text Field.',
             userSupplied: true,
           },
           {
-            element: 'Label',
+            element: 'required',
             attribute: 'aria-required',
             value: 'object',
             description:
@@ -710,7 +669,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             userSupplied: true,
           },
           {
-            element: 'Label',
+            element: 'invalid',
             attribute: 'aria-required',
             value: 'object',
             description:
@@ -726,10 +685,10 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
       behaviours: true,
       usage: true,
       accessibility: true,
-      performance: true,
+      performance: false,
       seo: true,
       props: true,
-      uiKit: false,
+      uiKit: true,
       design: true,
       themes: true,
     }}
