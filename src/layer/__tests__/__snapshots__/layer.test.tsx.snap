@@ -26,7 +26,7 @@ exports[`Layer add element to default layer LayerOrganizer 1`] = `
     class="nk-layer-organizer"
   >
     <div
-      class="nk-layer"
+      class="nk-layer some-class-1 some-class-2"
     >
       inside layer
     </div>
@@ -71,6 +71,106 @@ exports[`Layer add zIndex to layer organizer 1`] = `
         class="nk-layer"
       >
         layer
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layer append layer 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      parent
+      <div
+        class="nk-layer"
+      >
+        Child layer A
+      </div>
+      <div
+        class="nk-layer"
+      >
+        Child layer B
+      </div>
+    </div>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  />
+</DocumentFragment>
+`;
+
+exports[`Layer append nested layers 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      parent
+      <div
+        class="nk-layer"
+      >
+        Child layer A
+      </div>
+      <div
+        class="nk-layer"
+      >
+        Child layer B
+      </div>
+    </div>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layer multiple layers at same level 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      outside the layer
+    </div>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      inside layer 1
+    </div>
+    <div
+      class="nk-layer"
+    >
+      inside layer 2
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layer nested layers 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      outside the layer
+    </div>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div>
+        inside layer lvl 1
+      </div>
+      <div
+        class="nk-layer"
+      >
+        nested layer lvl 2
       </div>
     </div>
   </div>
