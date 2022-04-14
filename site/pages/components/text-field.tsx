@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage} from 'newskit';
+import {Block, InlineMessage, IconFilledInfo} from 'newskit';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
@@ -8,6 +8,14 @@ import {ContentText} from '../../components/text-section/content-text';
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
+
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
+);
 
 const TextFieldComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -97,7 +105,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           description:
             'The width of a Text Field can be customised appropriately for its context, using full-width or a fixed-width value.',
           media: getIllustrationComponent(
-            'components/text-field/options/mobile',
+            'components/text-field/options/width',
           ),
         },
         {
@@ -115,6 +123,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
                 user enters a value.
               </Block>
               <InlineMessage
+                icon={infoIcon}
                 role="region"
                 aria-label="Placeholder accessible"
                 title="Note"
@@ -161,7 +170,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/text-field/options/pre-selected-option',
+            'components/text-field/options/autocomplete',
           ),
         },
         {
@@ -181,15 +190,15 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/text-field/options/pre-selected-option',
+            'components/text-field/options/max-length',
           ),
         },
         {
-          title: 'Pattern',
+          title: 'Min length',
           description: (
             <>
-              The Text Field supports native HTML regex pattern functionality
-              that the value of the input must match to be valid.{' '}
+              The Text Field supports native HTML max length value functionality
+              that sets a minimum length of the number of characters entered.{' '}
               <Link
                 href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes"
                 target="_blank"
@@ -201,8 +210,48 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/text-field/options/pre-selected-option',
+            'components/text-field/options/min-length',
           ),
+        },
+        {
+          title: 'Pattern',
+          description: (
+            <>
+              The Text Field supports native HTML regex pattern functionality
+              that the value of the input must match to be valid.
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes"
+                target="_blank"
+              >
+                For more information, please refer to the HTML input attribute
+                types
+              </Link>
+              .
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/text-field/options/pattern',
+          ),
+        },
+        {
+          title: 'Type',
+          description: (
+            <>
+              The Text Field supports type functionality that sets the type of
+              text field to render to the user. The types supported include
+              &apos;text&apos; (default for the Text Field component),
+              &apos;email&apos;, &apos;password&apos;, &apos;tel&apos;, and
+              &apos;number&apos;.
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types"
+                target="_blank"
+              >
+                For more information, please refer to the HTML input types.
+              </Link>
+              .
+            </>
+          ),
+          media: getIllustrationComponent('components/text-field/options/type'),
         },
         {
           title: 'Input mode',
@@ -226,7 +275,32 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/text-field/options/pre-selected-option',
+            'components/text-field/options/input-mode',
+          ),
+        },
+        {
+          title: 'Handling multiple Text Fields',
+          description: (
+            <>
+              Selection controls (inputs), such as the Form Input TextField, can
+              be grouped together with other selection controls, Labels, and
+              Assistive Text together in a Fieldset. The Fieldset has a caption
+              that gives a title attributed to the elements that appear in the
+              Fieldset, called a Legend.
+              <br />
+              <br />
+              The Fieldset can also support other selection controls (inputs)
+              such as the{' '}
+              <Link href="/components/radio-button/">FormInput Radio</Link>,
+              FormInput Switch, and{' '}
+              <Link href="/components/checkbox/">FormInput Checkbox</Link>.
+              <br />
+              <br />
+              For more information, please refer to the Fieldset component.
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/text-field/options/multiple-fields',
           ),
         },
       ],
