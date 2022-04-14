@@ -193,7 +193,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
       },
       introduction: `Text Fields allow users to enter and edit text content into a UI. They typically appear in forms.`,
     }}
-    componentDefaultsKey="textfield"
+    componentDefaultsKey="textField"
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v3.13.0',
