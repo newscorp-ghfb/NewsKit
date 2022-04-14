@@ -38,6 +38,7 @@ const ThemelessModal: React.FC<ModalProps> = ({
 
   const [showWrapper, setShowWrapper] = React.useState(false);
 
+  // When Modal is used inline, it should not be in a layer
   const OuterWrapper = props.inline ? React.Fragment : Layer;
 
   return (

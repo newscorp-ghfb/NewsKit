@@ -132,7 +132,6 @@ export const StyledSelectPanel = styled.div<{
   ${({$isOpen}) => `display: ${$isOpen ? 'block' : 'none'};`}
 
   ${({$size}) => getStylePreset(`select.${$size}.panel`, '')};
-  background: yellow;
 
   ${({$size}) =>
     getResponsiveSize('maxHeight', `select.${$size}.panel`, '', 'maxHeight')};

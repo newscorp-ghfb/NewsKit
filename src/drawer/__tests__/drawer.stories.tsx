@@ -19,14 +19,11 @@ const Box = styled.div`
 const DrawerContainer = styled.div`
   margin-left: 10vw;
   margin-right: 10vw;
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-  background: #f9f9f9;
-
+  background: #f1f1f1;
   position: relative;
-  // border: 1px dotted gray;
-  width: 20vw;
-  height: 30vh;
+  border: 1px solid red;
+  width: 80vw;
+  height: 80vh;
   overflow: hidden;
 `;
 

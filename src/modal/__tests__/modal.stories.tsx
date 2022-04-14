@@ -125,6 +125,35 @@ export const StoryOpenOnPageLoad = () =>
 StoryOpenOnPageLoad.storyName = 'open on page load';
 StoryOpenOnPageLoad.parameters = {eyes: {include: false}};
 
+const items = [
+  'Neptunium',
+  'Plutonium',
+  'Americium',
+  'Curium',
+  'Berkelium',
+  'Californium',
+  'Einsteinium',
+  'Fermium',
+  'Mendelevium',
+  'Nobelium',
+  'Lawrencium',
+  'Rutherfordium',
+  'Dubnium',
+  'Seaborgium',
+  'Bohrium',
+  'Hassium',
+  'Meitnerium',
+  'Darmstadtium',
+  'Roentgenium',
+  'Copernicium',
+  'Nihonium',
+  'Flerovium',
+  'Moscovium',
+  'Livermorium',
+  'Tennessine',
+  'Oganesson',
+];
+
 export const StoryWithAriaAttributes = () =>
   React.createElement(() => {
     const [isActive, open, close] = useActiveState();
@@ -378,6 +407,13 @@ export const StoryModelessInlineModal = () =>
             disableFocusTrap
             inline
           >
+            <Select aria-describedby="id-2-at" id="id-2" size="medium">
+              {items.map(item => (
+                <SelectOption key={item} value={item}>
+                  {item}
+                </SelectOption>
+              ))}
+            </Select>
             {modalContent}
           </Modal>
         </ModalWrapper>
@@ -429,35 +465,6 @@ export const StoryOptionalHeaderClose = () =>
   });
 StoryOptionalHeaderClose.storyName = 'optional header & close';
 StoryOptionalHeaderClose.parameters = {eyes: {include: false}};
-
-const items = [
-  'Neptunium',
-  'Plutonium',
-  'Americium',
-  'Curium',
-  'Berkelium',
-  'Californium',
-  'Einsteinium',
-  'Fermium',
-  'Mendelevium',
-  'Nobelium',
-  'Lawrencium',
-  'Rutherfordium',
-  'Dubnium',
-  'Seaborgium',
-  'Bohrium',
-  'Hassium',
-  'Meitnerium',
-  'Darmstadtium',
-  'Roentgenium',
-  'Copernicium',
-  'Nihonium',
-  'Flerovium',
-  'Moscovium',
-  'Livermorium',
-  'Tennessine',
-  'Oganesson',
-];
 
 export const StoryNestedModals = () =>
   React.createElement(() => {

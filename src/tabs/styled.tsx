@@ -91,8 +91,6 @@ export const StyledInnerTabGroup = styled(Stack)<Pick<TabsProps, 'overrides'>>`
   border-width: 0;
   position: relative;
   display: flex;
-
-  background: aqua;
 `;
 
 export const StyledDistributionWrapper = styled.div<DistributionWrapperProps>`

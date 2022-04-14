@@ -45,6 +45,7 @@ const ThemelessDrawer: React.FC<DrawerProps> = ({
     setDrawerElementFocusability(open, drawerRef);
   }, [open, drawerRef]);
 
+  // When Drawer is used inline, it should not be in a layer
   const OuterWrapper = inline ? React.Fragment : Layer;
 
   return (

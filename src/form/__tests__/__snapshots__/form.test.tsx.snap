@@ -4008,28 +4008,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   display: flex;
 }
 
-.emotion-19 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  width: 0px;
-  top: 0px;
-  left: 0px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-.emotion-22 {
+.emotion-21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4042,7 +4021,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-23 {
+.emotion-22 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -4056,11 +4035,11 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   margin-right: 12px;
 }
 
-.emotion-23 * {
+.emotion-22 * {
   box-sizing: border-box;
 }
 
-.emotion-24 {
+.emotion-23 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4075,35 +4054,35 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-24:valid:hover:not(:disabled) {
+.emotion-23:valid:hover:not(:disabled) {
   background-color: #E6FAEB;
 }
 
-.emotion-24:valid:focus:hover:not(:disabled) {
+.emotion-23:valid:focus:hover:not(:disabled) {
   background-color: #E6FAEB;
 }
 
-.emotion-24:invalid:hover:not(:disabled) {
+.emotion-23:invalid:hover:not(:disabled) {
   background-color: #FFE6E5;
 }
 
-.emotion-24:invalid:focus:hover:not(:disabled) {
+.emotion-23:invalid:focus:hover:not(:disabled) {
   background-color: #FFE6E5;
 }
 
-.emotion-24:focus:not(:disabled) {
+.emotion-23:focus:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-24:valid:focus:not(:disabled) {
+.emotion-23:valid:focus:not(:disabled) {
   background-color: #E6FAEB;
 }
 
-.emotion-24:invalid:focus:not(:disabled) {
+.emotion-23:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
-.emotion-25 {
+.emotion-24 {
   position: absolute;
   top: 0;
   left: 0;
@@ -4128,125 +4107,125 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   border-style: solid;
 }
 
-.emotion-25 svg {
+.emotion-24 svg {
   fill: #FFFFFF;
 }
 
-.emotion-25:hover:not(:disabled) {
+.emotion-24:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-25:focus:hover:not(:disabled) {
+.emotion-24:focus:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-25:checked:not(:disabled) {
+.emotion-24:checked:not(:disabled) {
   background-color: #3358CC;
   border-color: #3358CC;
 }
 
-.emotion-25:checked:hover:not(:disabled) {
+.emotion-24:checked:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-25:checked:focus:not(:disabled) {
+.emotion-24:checked:focus:not(:disabled) {
   background-color: #3358CC;
   border-color: #3358CC;
 }
 
-.emotion-25:checked:focus:hover:not(:disabled) {
+.emotion-24:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-25:invalid:hover:not(:disabled) {
+.emotion-24:invalid:hover:not(:disabled) {
   background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-25:invalid:focus:not(:disabled) {
+.emotion-24:invalid:focus:not(:disabled) {
   border-color: #D20600;
 }
 
-.emotion-25:invalid:focus:hover:not(:disabled) {
+.emotion-24:invalid:focus:hover:not(:disabled) {
   background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-25:checked:invalid:not(:disabled) {
+.emotion-24:checked:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-25:checked:invalid:focus:not(:disabled) {
+.emotion-24:checked:invalid:focus:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-25:checked:invalid:hover:not(:disabled) {
+.emotion-24:checked:invalid:hover:not(:disabled) {
   background-color: #A60100;
   border-color: #A60100;
 }
 
-.emotion-25:checked:invalid:focus:hover:not(:disabled) {
+.emotion-24:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
   border-color: #A60100;
 }
 
-.emotion-25:valid:hover:not(:disabled) {
+.emotion-24:valid:hover:not(:disabled) {
   background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-25:valid:focus:not(:disabled) {
+.emotion-24:valid:focus:not(:disabled) {
   background-color: #FAFAFA;
   border-color: #148F39;
 }
 
-.emotion-25:valid:focus:hover:not(:disabled) {
+.emotion-24:valid:focus:hover:not(:disabled) {
   background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-25:checked:valid:not(:disabled) {
+.emotion-24:checked:valid:not(:disabled) {
   background-color: #148F39;
   border-color: #148F39;
 }
 
-.emotion-25:checked:valid:focus:not(:disabled) {
+.emotion-24:checked:valid:focus:not(:disabled) {
   background-color: #148F39;
   border-color: #148F39;
 }
 
-.emotion-25:checked:valid:hover:not(:disabled) {
+.emotion-24:checked:valid:hover:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-25:checked:valid:focus:hover:not(:disabled) {
+.emotion-24:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-25:disabled {
+.emotion-24:disabled {
   background-color: transparent;
   border-color: #F4F4F4;
 }
 
-.emotion-25:checked:disabled:not(:disabled) {
+.emotion-24:checked:disabled:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-25:checked:disabled:not(:disabled) svg {
+.emotion-24:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-25 {
+  .emotion-24 {
     transition-property: background-color,border-color;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -4254,14 +4233,14 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-25 {
+  .emotion-24 {
     transition-property: background-color,border-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-26 {
+.emotion-25 {
   position: absolute;
   top: 0;
   left: 0;
@@ -4272,7 +4251,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   cursor: inherit;
 }
 
-.emotion-27 {
+.emotion-26 {
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -4281,11 +4260,11 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-27:disabled {
+.emotion-26:disabled {
   color: #C0C0C0;
 }
 
-.emotion-32 {
+.emotion-31 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4300,35 +4279,35 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-32:valid:focus:hover:not(:disabled) {
+.emotion-31:valid:focus:hover:not(:disabled) {
   background-color: #E6FAEB;
 }
 
-.emotion-32:valid:hover:not(:disabled) {
+.emotion-31:valid:hover:not(:disabled) {
   background-color: #E6FAEB;
 }
 
-.emotion-32:invalid:hover:not(:disabled) {
+.emotion-31:invalid:hover:not(:disabled) {
   background-color: #FFE6E5;
 }
 
-.emotion-32:invalid:focus:hover:not(:disabled) {
+.emotion-31:invalid:focus:hover:not(:disabled) {
   background-color: #FFE6E5;
 }
 
-.emotion-32:focus:not(:disabled) {
+.emotion-31:focus:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-32:valid:focus:not(:disabled) {
+.emotion-31:valid:focus:not(:disabled) {
   background-color: #E6FAEB;
 }
 
-.emotion-32:invalid:focus:not(:disabled) {
+.emotion-31:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
-.emotion-33 {
+.emotion-32 {
   position: absolute;
   top: 0;
   left: 0;
@@ -4353,166 +4332,166 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   border-style: solid;
 }
 
-.emotion-33:hover:not(:disabled) {
+.emotion-32:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-33:focus:hover:not(:disabled) {
+.emotion-32:focus:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-33:checked:not(:disabled) {
+.emotion-32:checked:not(:disabled) {
   background-color: #FAFAFA;
   border-color: #3358CC;
 }
 
-.emotion-33:checked:not(:disabled) svg {
+.emotion-32:checked:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-33:checked:hover:not(:disabled) {
+.emotion-32:checked:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-33:checked:hover:not(:disabled) svg {
+.emotion-32:checked:hover:not(:disabled) svg {
   fill: #2B4AAB;
 }
 
-.emotion-33:checked:focus:not(:disabled) {
+.emotion-32:checked:focus:not(:disabled) {
   background-color: #FAFAFA;
   border-color: #3358CC;
 }
 
-.emotion-33:checked:focus:not(:disabled) svg {
+.emotion-32:checked:focus:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-33:checked:focus:hover:not(:disabled) {
+.emotion-32:checked:focus:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-33:checked:focus:hover:not(:disabled) svg {
+.emotion-32:checked:focus:hover:not(:disabled) svg {
   fill: #2B4AAB;
 }
 
-.emotion-33:invalid:focus:not(:disabled) {
+.emotion-32:invalid:focus:not(:disabled) {
   border-color: #D20600;
 }
 
-.emotion-33:invalid:hover:not(:disabled) {
+.emotion-32:invalid:hover:not(:disabled) {
   background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-33:invalid:focus:hover:not(:disabled) {
+.emotion-32:invalid:focus:hover:not(:disabled) {
   background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-33:checked:invalid:not(:disabled) {
+.emotion-32:checked:invalid:not(:disabled) {
   background-color: #FAFAFA;
   border-color: #D20600;
 }
 
-.emotion-33:checked:invalid:not(:disabled) svg {
+.emotion-32:checked:invalid:not(:disabled) svg {
   fill: #D20600;
 }
 
-.emotion-33:checked:invalid:focus:not(:disabled) {
+.emotion-32:checked:invalid:focus:not(:disabled) {
   border-color: #D20600;
 }
 
-.emotion-33:checked:invalid:focus:not(:disabled) svg {
+.emotion-32:checked:invalid:focus:not(:disabled) svg {
   fill: #D20600;
 }
 
-.emotion-33:checked:invalid:hover:not(:disabled) {
+.emotion-32:checked:invalid:hover:not(:disabled) {
   background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-33:checked:invalid:hover:not(:disabled) svg {
+.emotion-32:checked:invalid:hover:not(:disabled) svg {
   fill: #A60100;
 }
 
-.emotion-33:checked:invalid:focus:hover:not(:disabled) {
+.emotion-32:checked:invalid:focus:hover:not(:disabled) {
   background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-33:checked:invalid:focus:hover:not(:disabled) svg {
+.emotion-32:checked:invalid:focus:hover:not(:disabled) svg {
   fill: #A60100;
 }
 
-.emotion-33:valid:focus:not(:disabled) {
+.emotion-32:valid:focus:not(:disabled) {
   border-color: #0A782A;
 }
 
-.emotion-33:valid:hover:not(:disabled) {
+.emotion-32:valid:hover:not(:disabled) {
   background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-33:valid:focus:hover:not(:disabled) {
+.emotion-32:valid:focus:hover:not(:disabled) {
   background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-33:checked:valid:not(:disabled) {
+.emotion-32:checked:valid:not(:disabled) {
   background-color: #FAFAFA;
   border-color: #148F39;
 }
 
-.emotion-33:checked:valid:not(:disabled) svg {
+.emotion-32:checked:valid:not(:disabled) svg {
   fill: #148F39;
 }
 
-.emotion-33:checked:valid:focus:not(:disabled) {
+.emotion-32:checked:valid:focus:not(:disabled) {
   border-color: #148F39;
 }
 
-.emotion-33:checked:valid:focus:not(:disabled) svg {
+.emotion-32:checked:valid:focus:not(:disabled) svg {
   fill: #148F39;
 }
 
-.emotion-33:checked:valid:hover:not(:disabled) {
+.emotion-32:checked:valid:hover:not(:disabled) {
   background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-33:checked:valid:hover:not(:disabled) svg {
+.emotion-32:checked:valid:hover:not(:disabled) svg {
   fill: #0A782A;
 }
 
-.emotion-33:checked:valid:focus:hover:not(:disabled) {
+.emotion-32:checked:valid:focus:hover:not(:disabled) {
   background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-33:checked:valid:focus:hover:not(:disabled) svg {
+.emotion-32:checked:valid:focus:hover:not(:disabled) svg {
   fill: #0A782A;
 }
 
-.emotion-33:disabled {
+.emotion-32:disabled {
   background-color: transparent;
   border-color: #F4F4F4;
 }
 
-.emotion-33:checked:disabled:not(:disabled) {
+.emotion-32:checked:disabled:not(:disabled) {
   background-color: transparent;
   border-color: #F4F4F4;
 }
 
-.emotion-33:checked:disabled:not(:disabled) svg {
+.emotion-32:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-33 {
+  .emotion-32 {
     transition-property: background-color,border-color,fill;
     transition-duration: 200ms,200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -4520,7 +4499,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-33 {
+  .emotion-32 {
     transition-property: background-color,border-color,fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -4675,14 +4654,6 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
       </div>
     </div>
     <div
-      aria-labelledby="downshift-3-label"
-      class="emotion-19"
-      data-testid="select-panel"
-      id="downshift-3-menu"
-      role="listbox"
-      tabindex="-1"
-    />
-    <div
       class="emotion-6"
     >
       <p
@@ -4693,22 +4664,22 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
       </p>
     </div>
     <label
-      class="emotion-22"
+      class="emotion-21"
     >
       <div
-        class="emotion-23"
+        class="emotion-22"
         role="presentation"
       >
         <div
-          class="emotion-24"
+          class="emotion-23"
           data-testid="checkbox-feedback"
         />
         <div
-          class="emotion-25"
+          class="emotion-24"
         >
           <input
             aria-describedby="email-assistive-text"
-            class="emotion-26"
+            class="emotion-25"
             data-testid="checkbox-input"
             id="email"
             name="email"
@@ -4718,7 +4689,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
         </div>
       </div>
       <span
-        class="emotion-27"
+        class="emotion-26"
       >
         Checkbox
       </span>
@@ -4735,22 +4706,22 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
     </div>
     <div>
       <label
-        class="emotion-22"
+        class="emotion-21"
       >
         <div
-          class="emotion-23"
+          class="emotion-22"
           role="presentation"
         >
           <div
-            class="emotion-32"
+            class="emotion-31"
             data-testid="radio-feedback"
           />
           <div
-            class="emotion-33"
+            class="emotion-32"
           >
             <input
               aria-describedby="email-assistive-text"
-              class="emotion-26"
+              class="emotion-25"
               data-testid="radio-input"
               id="email"
               name="email"
@@ -4760,28 +4731,28 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
           </div>
         </div>
         <span
-          class="emotion-27"
+          class="emotion-26"
         >
           Option 1
         </span>
       </label>
       <label
-        class="emotion-22"
+        class="emotion-21"
       >
         <div
-          class="emotion-23"
+          class="emotion-22"
           role="presentation"
         >
           <div
-            class="emotion-32"
+            class="emotion-31"
             data-testid="radio-feedback"
           />
           <div
-            class="emotion-33"
+            class="emotion-32"
           >
             <input
               aria-describedby="email-assistive-text"
-              class="emotion-26"
+              class="emotion-25"
               data-testid="radio-input"
               id="email"
               name="email"
@@ -4791,28 +4762,28 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
           </div>
         </div>
         <span
-          class="emotion-27"
+          class="emotion-26"
         >
           Option 2
         </span>
       </label>
       <label
-        class="emotion-22"
+        class="emotion-21"
       >
         <div
-          class="emotion-23"
+          class="emotion-22"
           role="presentation"
         >
           <div
-            class="emotion-32"
+            class="emotion-31"
             data-testid="radio-feedback"
           />
           <div
-            class="emotion-33"
+            class="emotion-32"
           >
             <input
               aria-describedby="email-assistive-text"
-              class="emotion-26"
+              class="emotion-25"
               data-testid="radio-input"
               id="email"
               name="email"
@@ -4822,7 +4793,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
           </div>
         </div>
         <span
-          class="emotion-27"
+          class="emotion-26"
         >
           Option 3
         </span>
@@ -5137,28 +5108,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   display: flex;
 }
 
-.emotion-19 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  width: 0px;
-  top: 0px;
-  left: 0px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-.emotion-22 {
+.emotion-21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5171,7 +5121,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-23 {
+.emotion-22 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -5185,11 +5135,11 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   margin-right: 12px;
 }
 
-.emotion-23 * {
+.emotion-22 * {
   box-sizing: border-box;
 }
 
-.emotion-24 {
+.emotion-23 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5204,35 +5154,35 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-24:valid:hover:not(:disabled) {
+.emotion-23:valid:hover:not(:disabled) {
   background-color: #E6FAEB;
 }
 
-.emotion-24:valid:focus:hover:not(:disabled) {
+.emotion-23:valid:focus:hover:not(:disabled) {
   background-color: #E6FAEB;
 }
 
-.emotion-24:invalid:hover:not(:disabled) {
+.emotion-23:invalid:hover:not(:disabled) {
   background-color: #FFE6E5;
 }
 
-.emotion-24:invalid:focus:hover:not(:disabled) {
+.emotion-23:invalid:focus:hover:not(:disabled) {
   background-color: #FFE6E5;
 }
 
-.emotion-24:focus:not(:disabled) {
+.emotion-23:focus:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-24:valid:focus:not(:disabled) {
+.emotion-23:valid:focus:not(:disabled) {
   background-color: #E6FAEB;
 }
 
-.emotion-24:invalid:focus:not(:disabled) {
+.emotion-23:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
-.emotion-25 {
+.emotion-24 {
   position: absolute;
   top: 0;
   left: 0;
@@ -5257,125 +5207,125 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   border-style: solid;
 }
 
-.emotion-25 svg {
+.emotion-24 svg {
   fill: #FFFFFF;
 }
 
-.emotion-25:hover:not(:disabled) {
+.emotion-24:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-25:focus:hover:not(:disabled) {
+.emotion-24:focus:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-25:checked:not(:disabled) {
+.emotion-24:checked:not(:disabled) {
   background-color: #3358CC;
   border-color: #3358CC;
 }
 
-.emotion-25:checked:hover:not(:disabled) {
+.emotion-24:checked:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-25:checked:focus:not(:disabled) {
+.emotion-24:checked:focus:not(:disabled) {
   background-color: #3358CC;
   border-color: #3358CC;
 }
 
-.emotion-25:checked:focus:hover:not(:disabled) {
+.emotion-24:checked:focus:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-25:invalid:hover:not(:disabled) {
+.emotion-24:invalid:hover:not(:disabled) {
   background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-25:invalid:focus:not(:disabled) {
+.emotion-24:invalid:focus:not(:disabled) {
   border-color: #D20600;
 }
 
-.emotion-25:invalid:focus:hover:not(:disabled) {
+.emotion-24:invalid:focus:hover:not(:disabled) {
   background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-25:checked:invalid:not(:disabled) {
+.emotion-24:checked:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-25:checked:invalid:focus:not(:disabled) {
+.emotion-24:checked:invalid:focus:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-25:checked:invalid:hover:not(:disabled) {
+.emotion-24:checked:invalid:hover:not(:disabled) {
   background-color: #A60100;
   border-color: #A60100;
 }
 
-.emotion-25:checked:invalid:focus:hover:not(:disabled) {
+.emotion-24:checked:invalid:focus:hover:not(:disabled) {
   background-color: #A60100;
   border-color: #A60100;
 }
 
-.emotion-25:valid:hover:not(:disabled) {
+.emotion-24:valid:hover:not(:disabled) {
   background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-25:valid:focus:not(:disabled) {
+.emotion-24:valid:focus:not(:disabled) {
   background-color: #FAFAFA;
   border-color: #148F39;
 }
 
-.emotion-25:valid:focus:hover:not(:disabled) {
+.emotion-24:valid:focus:hover:not(:disabled) {
   background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-25:checked:valid:not(:disabled) {
+.emotion-24:checked:valid:not(:disabled) {
   background-color: #148F39;
   border-color: #148F39;
 }
 
-.emotion-25:checked:valid:focus:not(:disabled) {
+.emotion-24:checked:valid:focus:not(:disabled) {
   background-color: #148F39;
   border-color: #148F39;
 }
 
-.emotion-25:checked:valid:hover:not(:disabled) {
+.emotion-24:checked:valid:hover:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-25:checked:valid:focus:hover:not(:disabled) {
+.emotion-24:checked:valid:focus:hover:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-25:disabled {
+.emotion-24:disabled {
   background-color: transparent;
   border-color: #F4F4F4;
 }
 
-.emotion-25:checked:disabled:not(:disabled) {
+.emotion-24:checked:disabled:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-25:checked:disabled:not(:disabled) svg {
+.emotion-24:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-25 {
+  .emotion-24 {
     transition-property: background-color,border-color;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -5383,14 +5333,14 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-25 {
+  .emotion-24 {
     transition-property: background-color,border-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-26 {
+.emotion-25 {
   position: absolute;
   top: 0;
   left: 0;
@@ -5401,7 +5351,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   cursor: inherit;
 }
 
-.emotion-27 {
+.emotion-26 {
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -5410,11 +5360,11 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-27:disabled {
+.emotion-26:disabled {
   color: #C0C0C0;
 }
 
-.emotion-32 {
+.emotion-31 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5429,35 +5379,35 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-32:valid:focus:hover:not(:disabled) {
+.emotion-31:valid:focus:hover:not(:disabled) {
   background-color: #E6FAEB;
 }
 
-.emotion-32:valid:hover:not(:disabled) {
+.emotion-31:valid:hover:not(:disabled) {
   background-color: #E6FAEB;
 }
 
-.emotion-32:invalid:hover:not(:disabled) {
+.emotion-31:invalid:hover:not(:disabled) {
   background-color: #FFE6E5;
 }
 
-.emotion-32:invalid:focus:hover:not(:disabled) {
+.emotion-31:invalid:focus:hover:not(:disabled) {
   background-color: #FFE6E5;
 }
 
-.emotion-32:focus:not(:disabled) {
+.emotion-31:focus:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-32:valid:focus:not(:disabled) {
+.emotion-31:valid:focus:not(:disabled) {
   background-color: #E6FAEB;
 }
 
-.emotion-32:invalid:focus:not(:disabled) {
+.emotion-31:invalid:focus:not(:disabled) {
   background-color: #FFE6E5;
 }
 
-.emotion-33 {
+.emotion-32 {
   position: absolute;
   top: 0;
   left: 0;
@@ -5482,166 +5432,166 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   border-style: solid;
 }
 
-.emotion-33:hover:not(:disabled) {
+.emotion-32:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-33:focus:hover:not(:disabled) {
+.emotion-32:focus:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-33:checked:not(:disabled) {
+.emotion-32:checked:not(:disabled) {
   background-color: #FAFAFA;
   border-color: #3358CC;
 }
 
-.emotion-33:checked:not(:disabled) svg {
+.emotion-32:checked:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-33:checked:hover:not(:disabled) {
+.emotion-32:checked:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-33:checked:hover:not(:disabled) svg {
+.emotion-32:checked:hover:not(:disabled) svg {
   fill: #2B4AAB;
 }
 
-.emotion-33:checked:focus:not(:disabled) {
+.emotion-32:checked:focus:not(:disabled) {
   background-color: #FAFAFA;
   border-color: #3358CC;
 }
 
-.emotion-33:checked:focus:not(:disabled) svg {
+.emotion-32:checked:focus:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-33:checked:focus:hover:not(:disabled) {
+.emotion-32:checked:focus:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-color: #2B4AAB;
 }
 
-.emotion-33:checked:focus:hover:not(:disabled) svg {
+.emotion-32:checked:focus:hover:not(:disabled) svg {
   fill: #2B4AAB;
 }
 
-.emotion-33:invalid:focus:not(:disabled) {
+.emotion-32:invalid:focus:not(:disabled) {
   border-color: #D20600;
 }
 
-.emotion-33:invalid:hover:not(:disabled) {
+.emotion-32:invalid:hover:not(:disabled) {
   background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-33:invalid:focus:hover:not(:disabled) {
+.emotion-32:invalid:focus:hover:not(:disabled) {
   background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-33:checked:invalid:not(:disabled) {
+.emotion-32:checked:invalid:not(:disabled) {
   background-color: #FAFAFA;
   border-color: #D20600;
 }
 
-.emotion-33:checked:invalid:not(:disabled) svg {
+.emotion-32:checked:invalid:not(:disabled) svg {
   fill: #D20600;
 }
 
-.emotion-33:checked:invalid:focus:not(:disabled) {
+.emotion-32:checked:invalid:focus:not(:disabled) {
   border-color: #D20600;
 }
 
-.emotion-33:checked:invalid:focus:not(:disabled) svg {
+.emotion-32:checked:invalid:focus:not(:disabled) svg {
   fill: #D20600;
 }
 
-.emotion-33:checked:invalid:hover:not(:disabled) {
+.emotion-32:checked:invalid:hover:not(:disabled) {
   background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-33:checked:invalid:hover:not(:disabled) svg {
+.emotion-32:checked:invalid:hover:not(:disabled) svg {
   fill: #A60100;
 }
 
-.emotion-33:checked:invalid:focus:hover:not(:disabled) {
+.emotion-32:checked:invalid:focus:hover:not(:disabled) {
   background-color: #FFE6E5;
   border-color: #A60100;
 }
 
-.emotion-33:checked:invalid:focus:hover:not(:disabled) svg {
+.emotion-32:checked:invalid:focus:hover:not(:disabled) svg {
   fill: #A60100;
 }
 
-.emotion-33:valid:focus:not(:disabled) {
+.emotion-32:valid:focus:not(:disabled) {
   border-color: #0A782A;
 }
 
-.emotion-33:valid:hover:not(:disabled) {
+.emotion-32:valid:hover:not(:disabled) {
   background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-33:valid:focus:hover:not(:disabled) {
+.emotion-32:valid:focus:hover:not(:disabled) {
   background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-33:checked:valid:not(:disabled) {
+.emotion-32:checked:valid:not(:disabled) {
   background-color: #FAFAFA;
   border-color: #148F39;
 }
 
-.emotion-33:checked:valid:not(:disabled) svg {
+.emotion-32:checked:valid:not(:disabled) svg {
   fill: #148F39;
 }
 
-.emotion-33:checked:valid:focus:not(:disabled) {
+.emotion-32:checked:valid:focus:not(:disabled) {
   border-color: #148F39;
 }
 
-.emotion-33:checked:valid:focus:not(:disabled) svg {
+.emotion-32:checked:valid:focus:not(:disabled) svg {
   fill: #148F39;
 }
 
-.emotion-33:checked:valid:hover:not(:disabled) {
+.emotion-32:checked:valid:hover:not(:disabled) {
   background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-33:checked:valid:hover:not(:disabled) svg {
+.emotion-32:checked:valid:hover:not(:disabled) svg {
   fill: #0A782A;
 }
 
-.emotion-33:checked:valid:focus:hover:not(:disabled) {
+.emotion-32:checked:valid:focus:hover:not(:disabled) {
   background-color: #E6FAEB;
   border-color: #0A782A;
 }
 
-.emotion-33:checked:valid:focus:hover:not(:disabled) svg {
+.emotion-32:checked:valid:focus:hover:not(:disabled) svg {
   fill: #0A782A;
 }
 
-.emotion-33:disabled {
+.emotion-32:disabled {
   background-color: transparent;
   border-color: #F4F4F4;
 }
 
-.emotion-33:checked:disabled:not(:disabled) {
+.emotion-32:checked:disabled:not(:disabled) {
   background-color: transparent;
   border-color: #F4F4F4;
 }
 
-.emotion-33:checked:disabled:not(:disabled) svg {
+.emotion-32:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-33 {
+  .emotion-32 {
     transition-property: background-color,border-color,fill;
     transition-duration: 200ms,200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -5649,7 +5599,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-33 {
+  .emotion-32 {
     transition-property: background-color,border-color,fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -5804,14 +5754,6 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
       </div>
     </div>
     <div
-      aria-labelledby="downshift-9-label"
-      class="emotion-19"
-      data-testid="select-panel"
-      id="downshift-9-menu"
-      role="listbox"
-      tabindex="-1"
-    />
-    <div
       class="emotion-6"
     >
       <p
@@ -5822,22 +5764,22 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
       </p>
     </div>
     <label
-      class="emotion-22"
+      class="emotion-21"
     >
       <div
-        class="emotion-23"
+        class="emotion-22"
         role="presentation"
       >
         <div
-          class="emotion-24"
+          class="emotion-23"
           data-testid="checkbox-feedback"
         />
         <div
-          class="emotion-25"
+          class="emotion-24"
         >
           <input
             aria-describedby="email-assistive-text"
-            class="emotion-26"
+            class="emotion-25"
             data-testid="checkbox-input"
             id="email"
             name="email"
@@ -5847,7 +5789,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
         </div>
       </div>
       <span
-        class="emotion-27"
+        class="emotion-26"
       >
         Checkbox
       </span>
@@ -5864,22 +5806,22 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
     </div>
     <div>
       <label
-        class="emotion-22"
+        class="emotion-21"
       >
         <div
-          class="emotion-23"
+          class="emotion-22"
           role="presentation"
         >
           <div
-            class="emotion-32"
+            class="emotion-31"
             data-testid="radio-feedback"
           />
           <div
-            class="emotion-33"
+            class="emotion-32"
           >
             <input
               aria-describedby="email-assistive-text"
-              class="emotion-26"
+              class="emotion-25"
               data-testid="radio-input"
               id="email"
               name="email"
@@ -5889,28 +5831,28 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
           </div>
         </div>
         <span
-          class="emotion-27"
+          class="emotion-26"
         >
           Option 1
         </span>
       </label>
       <label
-        class="emotion-22"
+        class="emotion-21"
       >
         <div
-          class="emotion-23"
+          class="emotion-22"
           role="presentation"
         >
           <div
-            class="emotion-32"
+            class="emotion-31"
             data-testid="radio-feedback"
           />
           <div
-            class="emotion-33"
+            class="emotion-32"
           >
             <input
               aria-describedby="email-assistive-text"
-              class="emotion-26"
+              class="emotion-25"
               data-testid="radio-input"
               id="email"
               name="email"
@@ -5920,28 +5862,28 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
           </div>
         </div>
         <span
-          class="emotion-27"
+          class="emotion-26"
         >
           Option 2
         </span>
       </label>
       <label
-        class="emotion-22"
+        class="emotion-21"
       >
         <div
-          class="emotion-23"
+          class="emotion-22"
           role="presentation"
         >
           <div
-            class="emotion-32"
+            class="emotion-31"
             data-testid="radio-feedback"
           />
           <div
-            class="emotion-33"
+            class="emotion-32"
           >
             <input
               aria-describedby="email-assistive-text"
-              class="emotion-26"
+              class="emotion-25"
               data-testid="radio-input"
               id="email"
               name="email"
@@ -5951,7 +5893,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
           </div>
         </div>
         <span
-          class="emotion-27"
+          class="emotion-26"
         >
           Option 3
         </span>
@@ -6551,35 +6493,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
       </div>
     </div>
   </div>
-  .emotion-0 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  width: 0px;
-  top: 0px;
-  left: 0px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-<div
-    aria-labelledby="downshift-0-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-0-menu"
-    role="listbox"
-    tabindex="-1"
-  />
   .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;

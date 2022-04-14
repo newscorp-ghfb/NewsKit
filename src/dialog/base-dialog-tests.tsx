@@ -1,8 +1,12 @@
 /* istanbul ignore file */
 // eslint-disable-next-line
-import {fireEvent} from '@testing-library/react';
+import {fireEvent, RenderResult} from '@testing-library/react';
 import React from 'react';
-import {renderToFragmentWithTheme, renderWithTheme} from '../test/test-utils';
+import {
+  renderToFragmentInBody,
+  renderWithTheme,
+  renderWithThemeInBody,
+} from '../test/test-utils';
 import {BaseDialogProps} from './types';
 
 export const sharedDialogTests = (
@@ -11,7 +15,7 @@ export const sharedDialogTests = (
   body: JSX.Element,
 ) => {
   test('renders default', () => {
-    const fragment = renderToFragmentWithTheme(Dialog, {
+    const fragment = renderToFragmentInBody(Dialog, {
       open: true,
       header,
       children: body,
@@ -20,7 +24,7 @@ export const sharedDialogTests = (
     expect(fragment).toMatchSnapshot();
   });
   test('renders without header', () => {
-    const fragment = renderToFragmentWithTheme(Dialog, {
+    const fragment = renderToFragmentInBody(Dialog, {
       open: true,
       onDismiss: () => {},
       children: body,
@@ -28,7 +32,7 @@ export const sharedDialogTests = (
     expect(fragment).toMatchSnapshot();
   });
   test('renders with aria-ariaLabelledby attribute', () => {
-    const fragment = renderToFragmentWithTheme(Dialog, {
+    const fragment = renderToFragmentInBody(Dialog, {
       open: true,
       onDismiss: () => {},
       ariaLabelledby: 'headerLabel',
@@ -42,7 +46,7 @@ export const sharedDialogTests = (
     expect(fragment).toMatchSnapshot();
   });
   test('renders with aria-describedby attribute', () => {
-    const fragment = renderToFragmentWithTheme(Dialog, {
+    const fragment = renderToFragmentInBody(Dialog, {
       open: true,
       onDismiss: () => {},
       ariaDescribedby: 'description purpose',
@@ -56,7 +60,7 @@ export const sharedDialogTests = (
     expect(fragment).toMatchSnapshot();
   });
   test('renders without overlay', () => {
-    const fragment = renderToFragmentWithTheme(Dialog, {
+    const fragment = renderToFragmentInBody(Dialog, {
       open: true,
       header,
       children: body,
@@ -66,7 +70,7 @@ export const sharedDialogTests = (
     expect(fragment).toMatchSnapshot();
   });
   test('renders screen reader message when focus trapping disabled', () => {
-    const fragment = renderToFragmentWithTheme(Dialog, {
+    const fragment = renderToFragmentInBody(Dialog, {
       open: true,
       header,
       children: body,
@@ -89,6 +93,7 @@ export const sharedDialogTests = (
 
     expect(mockCallBack).toHaveBeenCalled();
   });
+
   test('invokes onDismiss callback when clicking on the overlay', () => {
     const mockCallBack = jest.fn();
     const overlay = renderWithTheme(Dialog, {
@@ -102,6 +107,7 @@ export const sharedDialogTests = (
 
     expect(mockCallBack).toHaveBeenCalled();
   });
+
   test('invokes onDismiss callback when clicking on the close button', () => {
     const mockCallBack = jest.fn();
     const dialogCloseIcon = renderWithTheme(Dialog, {
@@ -117,7 +123,7 @@ export const sharedDialogTests = (
   });
 
   test('renders without close button', () => {
-    const fragment = renderToFragmentWithTheme(Dialog, {
+    const fragment = renderToFragmentInBody(Dialog, {
       open: true,
       header,
       children: body,
@@ -128,7 +134,7 @@ export const sharedDialogTests = (
   });
 
   test('renders without header and close', () => {
-    const fragment = renderToFragmentWithTheme(Dialog, {
+    const fragment = renderToFragmentInBody(Dialog, {
       open: true,
       children: body,
       onDismiss: () => {},
@@ -151,18 +157,18 @@ export const sharedDialogTests = (
       );
     };
 
-    const {getByTestId, asFragment} = renderWithTheme(Component);
+    const {getByTestId, asFragment, container} = renderWithThemeInBody(
+      Component,
+    );
 
     // outside content is hidden for screen readers when dialog is open
-    expect(getByTestId('outside-content')).toHaveAttribute(
-      'aria-hidden',
-      'true',
-    );
+    // since the dialog is rendered inside a portal the outside content is the "container"
+    expect(container).toHaveAttribute('aria-hidden', 'true');
     expect(asFragment()).toMatchSnapshot();
 
     // outside content should be visible when dialog is closed
     fireEvent.click(getByTestId('button'));
-    expect(getByTestId('outside-content')).not.toHaveAttribute('aria-hidden');
+    expect(container).not.toHaveAttribute('aria-hidden');
     expect(asFragment()).toMatchSnapshot();
   });
 };

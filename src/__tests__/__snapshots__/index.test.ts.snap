@@ -75,6 +75,8 @@ Array [
   "InstrumentationProvider",
   "Label",
   "LabelPosition",
+  "Layer",
+  "LayerOrganizer",
   "Link",
   "LinkInline",
   "LinkStandalone",
