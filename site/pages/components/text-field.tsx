@@ -529,53 +529,89 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         'The following guidance describes how and when to appropriately use a Select component.',
       cards: [
         {
-          description:
-            'Use a Select to present multiple options where only one can be selected.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-field/usage/do-1'),
-        },
-        {
           description: (
             <>
-              Don&apos;t use a Select when you have only a few options and
-              enough space; use a radio.
+              The width of the Text Field should be proportional to the expected
+              user input. For example, when capturing date of birth, the format
+              should be split up into day/month/year i.e DD - MM - YYYY using
+              multiple Text Fields, as this allows users to focus on inputting a
+              specific value, reducing cognitive load. Using identical input
+              widths for all Text Inputs in your forms will make them visually
+              pleasing, but will be harder for a user to complete.
               <br />
-              <br />A select can cause usability issues due to the number of
-              interactions it takes to select an option.This can increase the
-              likelihood of abandonment of a user task.
+              <br />
+              Avoid using the Text Field if you need to let users enter longer
+              answers that might span multiple lines.{' '}
+              <Link
+                target="_blank"
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea"
+              >
+                Consider using an alternative, such as Textarea.
+              </Link>
             </>
           ),
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/text-field/usage/dont-1'),
-        },
-        {
-          description:
-            'Use a Select when there are four or more options for a user to choose from.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-field/usage/do-2'),
+          media: getIllustrationComponent('components/text-field/usage/do1'),
         },
         {
           description:
-            'Don’t use a Select when a user can select more than one option, use a checkbox.',
+            'Avoid using Text Fields to capture multiple pieces of information from users, as this increases cognitive load. Instead, consider using multiple text fields in these cases.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/text-field/usage/dont-2'),
+          media: getIllustrationComponent('components/text-field/usage/dont1'),
         },
         {
-          description: 'Where possible, define a default option.',
+          description:
+            'Input labels and placeholder text should be in sentence case. This helps with scannability and legibility.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-field/usage/do-2'),
+          media: getIllustrationComponent('components/text-field/usage/do2'),
         },
         {
           description:
-            'Have an empty Select upon page load. If a default option isn’t appropriate, define a placeholder such as “Select an option”.',
+            "Input label text shouldn't be truncated or wrap over two or more lines. Keep it short, clear, and fully visible.",
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/text-field/usage/dont-3'),
+          media: getIllustrationComponent('components/text-field/usage/dont2'),
         },
         {
           description:
-            'Don’t use a Select when a users can add and remove options, consider a Text Field with Tags or a Combobox.',
+            'Use an appropriate input type for the data you collect. Providing the right type of input field for requested data will help users enter information in the right format and avoid mistakes, making the process as easy and efficient as possible. e.g. use a Password Input Field for users to input their password.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/text-field/usage/do3'),
+        },
+        {
+          description:
+            'Use an appropriate input type for the data you collect. Providing the right type of input field for requested data will help users enter information in the right format and avoid mistakes, making the process as easy and efficient as possible. e.g. use a Password Input Field for users to input their password.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/text-field/usage/dont-4'),
+          media: getIllustrationComponent('components/text-field/usage/dont3'),
+        },
+        {
+          description:
+            'Swap Assistive Text with error text if the Text Field is invalid. Once the input is valid then the assistive is then shown again.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/text-field/usage/do4'),
+        },
+        {
+          description:
+            'Avoid prematurely validating the input e.g. avoid setting the input to invalid before the user has finished typing.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/text-field/usage/dont4'),
+        },
+        {
+          description:
+            'Where possible, use onBlur validation (when the user clicks out the input, the input is validated). When the user’s inputs are checked as the user progresses through the form, as opposed to checking all the inputs in one process on submitting the form. This way is an improved user experience and guides the user through the form completion.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/text-field/usage/do5'),
+        },
+        {
+          description:
+            'Write error text that communicates a solution. Error text should be written in no more than a few clear, concise and complete sentences.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/text-field/usage/do6'),
+        },
+        {
+          description:
+            'Write error messaging in a human-centered way by guiding a user and communicating a solution. For example, if a user didn’t complete a required Text Field that asks for their date of birth, write the error text like you’re offering a hint to help them to understand what needs to go in the missing Text Input e.g: “Enter your date of birth.”',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/text-field/usage/do7'),
         },
       ],
     }}
