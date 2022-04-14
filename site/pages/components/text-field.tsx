@@ -306,31 +306,34 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     states={{
-      introduction: 'The Select component has the following states:',
+      introduction:
+        'The Text Field has the following states. They can be displayed with both placeholder content or user-inputted content:',
       layout: '3-span',
       cards: [
         {
           title: 'Base',
           description:
-            'The select has a base state. This is the base style of the input before it has been interacted with by a user.',
+            'Text Fields have a base state. This is the base style of the input before it has been interacted with by a user.',
           media: getIllustrationComponent('components/text-field/states/base'),
-        },
-        {
-          title: 'Focus',
-          description:
-            'The select has a focus state. This is the style of the input when the element is focused via keyboard control.',
-          media: getIllustrationComponent('components/text-field/states/focus'),
         },
         {
           title: 'Hover',
           description:
-            'The select has a hover state. The style of the input changes to visually communicate and provide feedback to the user that the Select input is an interactive element.',
+            'Text Fields have a hover state. The style of the input changes to visually communicate and provide feedback to the user that the Text Field is an interactive element.',
           media: getIllustrationComponent('components/text-field/states/hover'),
         },
         {
-          title: 'Selected',
+          title: 'Active',
           description:
-            'The Select in a selected state changes style when the Select selection conforms to a specific condition eg. the panel appearing. This is the style of the input when the panel element is visible (open).',
+            'Text Fields have an active state. The style of the input changes to visually communicate and provide feedback to the user that the Text Field has been interacted with.',
+          media: getIllustrationComponent(
+            'components/text-field/states/active',
+          ),
+        },
+        {
+          title: 'Selected (Focus)',
+          description:
+            'Text Fields have a selected state. The style of the input changes and a caret element in the input is also visible to visually communicate and provide feedback to the user that the Text Field has been selected and they can input content.',
           media: getIllustrationComponent(
             'components/text-field/states/selected',
           ),
@@ -339,9 +342,10 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Valid',
           description: (
             <>
-              The select in a valid state changes style when the selected option
-              conforms to a specific condition eg. updating preferences in a
-              form.
+              Text Fields in a valid state change style and can display a valid
+              icon when the inputted entry conforms to a specific format (e.g.,
+              email address, credit card number, password creation requirements,
+              etc.).
               <br />
               <br />
               The input style change and validation icon can appear as soon as a
@@ -356,20 +360,8 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'Valid focus',
-          description: (
-            <>
-              The select in a valid state changes style when the selected option
-              conforms to a specific condition eg. updating preferences in a
-              form.
-              <br />
-              <br />
-              The input style change and validation icon can appear as soon as a
-              user types a valid entry in the input or on submit.
-              <br />
-              <br />
-              The Form component is used to define this validation behaviour.
-            </>
-          ),
+          description:
+            'Text Fields in a valid focus state changes style when the inputted entry conforms to a specific condition or format, while focused.',
           media: getIllustrationComponent(
             'components/text-field/states/valid-focus',
           ),
@@ -377,18 +369,19 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Valid hover',
           description:
-            'The select in a valid hover state changes style when the selected option conforms to a specific condition eg. updating preferences in a form, while hovering.',
+            'Text Fields in a valid hover state changes style when the inputted entry conforms to a specific condition or format, while hovering.',
           media: getIllustrationComponent(
-            'components/text-field/states/valid-focus',
+            'components/text-field/states/valid-hover',
           ),
         },
         {
           title: 'Invalid',
           description: (
             <>
-              The select in an invalid state changes style when the selected
-              option doesn’t conform to a specific condition eg. not making a
-              selection in a form.
+              Text Fields in an invalid state change style and can display an
+              invalid icon when the inputted entry doesn’t conform to a specific
+              format (e.g., email address, credit card number, password creation
+              requirements, etc.).
               <br />
               <br />
               The input style change and validation icon can appear as soon as a
@@ -406,7 +399,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Invalid focus',
           description:
-            'The select in an invalid focus state changes style when the selected option conforms to a specific condition eg. not making a selection in a form, while focused.',
+            'Text Fields in an invalid focus state changes style when the inputted entry doesn’t conform to a specific condition or format, while focused.',
           media: getIllustrationComponent(
             'components/text-field/states/invalid-focus',
           ),
@@ -414,7 +407,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Invalid hover',
           description:
-            'The select in an invalid hover state changes style when the selected option conforms to a specific condition eg. not making a selection in a Form, while hovering',
+            'Text Fields in an invalid hover state changes style when the inputted entry doesn’t conform to a specific condition or format, while hovering.',
           media: getIllustrationComponent(
             'components/text-field/states/invalid-hover',
           ),
@@ -423,14 +416,19 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Disabled',
           description: (
             <>
-              The select in a disabled state communicates to the user that an
-              input exists, but cannot be modified in that scenario.
+              Text Fields in a disabled state show that an input exists, but is
+              not available to the user in that scenario. When a user’s cursor
+              hovers over a Text Fields in a disabled state the cursor shows as
+              not-allowed.
               <br />
               <br />
-              Disabled selects are often used to maintain layout consistency and
-              communicate that an input may become available if another
-              condition has been met, e.g. selecting a previous option in a
-              form.
+              Disabled Text Fields are often used to maintain layout consistency
+              and communicate that an input may become available if another
+              condition has been met, e.g.selected a previous option in a form.
+              <br />
+              <br />
+              Content and data in a disabled Text Field can not be submitted in
+              a form.
             </>
           ),
           media: getIllustrationComponent(
@@ -441,18 +439,19 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Read-only',
           description: (
             <>
-              The select in a read-only state communicates to the user that an
+              Text Fields in a read-only state communicate to the user that an
               input exists, but cannot be modified in that scenario (however, a
               user can tab to it, highlight it, and copy the text from it).
               <br />
               <br />
-              Read-only selects are often used to maintain layout consistency
-              and communicate that an input may become available if another
-              condition has been met, e.g. selecting a previous option in a
+              Read-only Text Fields are often used to maintain layout
+              consistency and communicate that an input may become available if
+              another condition has been met, e.g. selected a previous option in
+              a form.
+              <br />
+              <br />
+              Content and data in a read-only Text Field can be submitted in a
               form.
-              <br />
-              <br />
-              Content and data in a read-only select can be submitted in a form.
             </>
           ),
           media: getIllustrationComponent(
