@@ -675,7 +675,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             <>
               An icon is used to indicate if the select is in a valid or invalid
               state. Validation is set on the{' '}
-              <Link href="/components/form/">Form</Link> component.
+              <Link href="/components/form/">Form component</Link>.
             </>
           ),
           media: getIllustrationComponent(
