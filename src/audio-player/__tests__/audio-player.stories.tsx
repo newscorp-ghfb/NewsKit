@@ -249,7 +249,7 @@ export const StoryAudioPlayerLogicalOverrides = () => (
       <AudioPlayer
         {...recordedAudioProps}
         popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
-        ariaLandmark="audio player with overrides"
+        ariaLandmark="audio player with logical overrides"
         overrides={{
           marginBlock: 'space050',
           paddingBlock: 'space050',
@@ -260,7 +260,6 @@ export const StoryAudioPlayerLogicalOverrides = () => (
   </>
 );
 StoryAudioPlayerLogicalOverrides.storyName = 'audio-player-logical-overrides';
-StoryAudioPlayerLogicalOverrides.parameters = {eyes: false};
 
 export const StoryRecordedAudioPlayerWithOnplay = () => (
   <AudioPlayerContainer>

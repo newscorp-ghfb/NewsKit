@@ -526,7 +526,7 @@ export const StoryBannerWithLogicalPaddingOverrides = () => (
 
     <Banner
       title="Banner title"
-      aria-label="Banner with breakpoint padding overrides"
+      aria-label="Banner with breakpoint and logical padding overrides"
       overrides={{
         paddingBlock: {
           xs: 'space050',
@@ -576,7 +576,7 @@ export const StoryBannerWithLogicalMarginOverrides = () => (
     <StyledDiv>
       <Banner
         title="Banner title"
-        aria-label="Banner with breakpoint margin overrides"
+        aria-label="Banner with breakpoint and logical margin overrides"
         overrides={{
           marginBlock: {
             xs: 'space050',
@@ -613,7 +613,7 @@ export const StoryBannerWithLogicalMarginOverridesOnIconAndContent = () => (
     </StorybookSubHeading>
     <StyledDiv>
       <BannerWithState
-        aria-label="Banner with logical margin overrides"
+        aria-label="Banner with logical margin overrides on icon"
         overrides={{
           icon: {
             marginInlineEnd: 'space040',
@@ -628,7 +628,7 @@ export const StoryBannerWithLogicalMarginOverridesOnIconAndContent = () => (
     </StorybookSubHeading>
     <StyledDiv>
       <BannerWithState
-        aria-label="Banner with logical margin overrides"
+        aria-label="Banner with logical margin overrides on title"
         overrides={{
           content: {
             title: {
@@ -645,7 +645,7 @@ export const StoryBannerWithLogicalMarginOverridesOnIconAndContent = () => (
     </StorybookSubHeading>
     <StyledDiv>
       <BannerWithState
-        aria-label="Banner with logical margin overrides"
+        aria-label="Banner with logical margin overrides on content"
         overrides={{
           content: {
             marginInlineEnd: 'space000',
