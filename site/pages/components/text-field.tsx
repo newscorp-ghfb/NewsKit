@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, InlineMessage, IconFilledInfo} from 'newskit';
+import {Block, InlineMessage, IconFilledInfo, LinkInline} from 'newskit';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
@@ -14,6 +14,167 @@ const infoIcon = (
       size: 'iconSize020',
     }}
   />
+);
+
+const commonPropsRows = [
+  {
+    name: 'size',
+    type: ['small', 'medium', 'large'],
+    default: 'medium',
+    description: 'Defines the size of the FormInput TextField.',
+  },
+  {
+    name: 'state',
+    type: ['valid', 'invalid', 'disabled'],
+    description:
+      'If provided, renders the FormInput TextField in a valid, invalid, or disabled state. It can be submitted within a form.',
+  },
+  {
+    name: 'readOnly',
+    default: 'false',
+    type: 'boolean',
+    description:
+      'If true, renders the FormInput TextField in a read-only state. It can be selected but not changed by the user.',
+  },
+  {
+    name: 'pattern',
+    type: 'string',
+    description: (
+      <>
+        If provided, defines the{' '}
+        <LinkInline
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefpattern"
+          target="_blank"
+        >
+          Regex pattern
+        </LinkInline>{' '}
+        that the value of the input must match to be valid.
+      </>
+    ),
+  },
+  {
+    name: 'startEnhancer',
+    type: 'React.ReactNode',
+    description: `If provided, gives the ability to add a component to the start of the input container.`,
+  },
+  {
+    name: 'endEnhancer',
+    type: 'React.ReactNode',
+    description: `If provided, gives the ability to add a component to the end of the input container.`,
+  },
+  {
+    name: 'spellCheck',
+    type: 'boolean',
+    description: `If provided, defines whether the HTML element will be checked for spelling errors or not.`,
+    default: 'true',
+  },
+];
+
+const commonOverridesRows = [
+  {
+    attribute: 'width',
+    type: 'MQ<string>',
+    default: '100%',
+    description: `If provided, this overrides the minWidth of the Text Field.`,
+  },
+  {
+    attribute: 'minHeight',
+    type: 'MQ<string>',
+    default: ['small = sizing060', 'medium = sizing080', 'large = sizing090'],
+    description: 'If provided, this overrides the minHeight of the Text Field.',
+  },
+  {
+    attribute: 'button.stylePreset',
+    type: 'MQ<string>',
+    default: 'inputField',
+    description: 'If provided, overrides the stylePreset of the Text Field.',
+  },
+  {
+    attribute: 'button.typographyPreset',
+    type: 'MQ<string>',
+    default: [
+      'small = utilityBody020',
+      'medium = utilityBody020',
+      'large = utilityBody030',
+    ],
+    description: 'If provided, this overrides the input & placeholder text.',
+  },
+  {
+    attribute: 'button.spaceInset',
+    type: 'MQ<string>',
+    default: [
+      'small = spaceInset020',
+      'medium = spaceInset030',
+      'large = spaceInset030',
+    ],
+    description:
+      'If provided, this overrides the inset space within the Text Field.',
+  },
+  {
+    attribute: 'button.startEnhancer.iconSize',
+    type: 'MQ<string>',
+    default: 'iconSize020',
+    description:
+      'If provided, this overrides the component passed to the start enhancer.',
+  },
+  {
+    attribute: 'startEnhancer.inlineSpace',
+    type: 'MQ<string>',
+    default: 'spaceInline: space020',
+    description:
+      'If provided, this overrides the lnline space of the start enhancer.',
+  },
+  {
+    attribute: 'endEnhancer.iconSize',
+    type: 'MQ<string>',
+    default: 'iconSize020',
+    description:
+      'If provided, this overrides the component passed to the end enhancer. ',
+  },
+  {
+    attribute: 'endEnhancer.inlineSpace',
+    type: 'MQ<string>',
+    default: 'spaceInline: space020',
+    description:
+      'If provided, this overrides the lnline space of the end enhancer.',
+  },
+];
+
+const formInputPropsFooter = (
+  <>
+    <Block spaceStack="space050" />
+    <InlineMessage icon={infoIcon} role="region" aria-label="Rules props">
+      The <InlineCode>name</InlineCode> & <InlineCode>rules</InlineCode> props
+      are set on the form input level. If you want to add validation rules or
+      set the name of this component,{' '}
+      <LinkInline href="/components/form">
+        please refer to the Form component
+      </LinkInline>
+      .
+    </InlineMessage>
+    <Block spaceStack="space030" />
+    <InlineMessage
+      icon={infoIcon}
+      role="region"
+      aria-label="TextField component"
+    >
+      The NewsKit FormInput TextField supports different native HTML attributes,
+      eg. defining the input type as password, or email etc.
+    </InlineMessage>
+  </>
+);
+
+const textFieldPropsFooter = (
+  <InlineMessage icon={infoIcon} role="region" aria-label="Text Field supports">
+    The NewsKit Text Field supports different{' '}
+    <LinkInline
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types"
+      target="_blank"
+    >
+      native HTML attributes
+    </LinkInline>
+    , eg. defining the input type as password, or email etc.
+  </InlineMessage>
 );
 
 const TextFieldComponent = (layoutProps: LayoutProps) => (
@@ -678,6 +839,52 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           },
         ],
       },
+    }}
+    componentAPI={{
+      introduction: (
+        <>
+          The Text Field has a range of props that can be used to define an
+          appropriate experience for different use cases.
+          <Block spaceStack="space080" />
+          <InlineMessage>
+            There are two components exported from the package, one for use
+            within the NewsKit{' '}
+            <Link href="/components/form/">Form component</Link>, and one for
+            use as a controlled component.
+          </InlineMessage>
+        </>
+      ),
+      components: [
+        {
+          title: 'FormInput TextField',
+          summary: (
+            <>
+              The FormInput TextField has a range of props that can be used to
+              define an appropriate experience for different use cases. Use this
+              component within the NewsKit{' '}
+              <Link href="/components/form/">Form component</Link>.
+            </>
+          ),
+          propsRows: commonPropsRows,
+          propsFooter: formInputPropsFooter,
+          overridesRows: commonOverridesRows,
+        },
+        {
+          title: 'TextField',
+          summary: `The TextField has a range of props that can be used to define an appropriate experience for different use cases. Use this component as a controlled component, for instance where you have a custom validation mechanism.`,
+          propsRows: [
+            {
+              name: 'name',
+              type: 'string',
+              description:
+                'If provided, defines name of the input element, used when submitting an HTML form.',
+            },
+            ...commonPropsRows,
+          ],
+          propsFooter: textFieldPropsFooter,
+          overridesRows: commonOverridesRows,
+        },
+      ],
     }}
     compliance={{
       variations: true,
