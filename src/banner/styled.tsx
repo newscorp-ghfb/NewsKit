@@ -8,6 +8,10 @@ import {
 } from '../utils/style';
 import {Stack} from '../stack';
 import {TextBlock} from '../text-block';
+import {
+  logicalProps,
+  logicalPropsWithCSSProperty,
+} from '../utils/logical-properties';
 
 export const StyledBannerContainer = styled.div<BannerProps>`
   box-sizing: border-box;
@@ -16,6 +20,7 @@ export const StyledBannerContainer = styled.div<BannerProps>`
     getResponsiveSpace('padding', `banner.${layout}`, '', 'spaceInset')}
   ${({layout}) =>
     getResponsiveSize('minHeight', `banner.${layout}`, '', 'minHeight')}
+  ${({layout}) => logicalProps(`${layout}`)}
 `;
 
 export const StyledMaxWidthContainer = styled(Stack)<
@@ -31,27 +36,43 @@ export const StyledIconContentContainer = styled(Stack)<
   Pick<BannerProps, 'overrides' | 'layout'>
 >`
   flex: 1;
-  ${({layout}) => layout === 'vertical' && 'align-self: stretch;'}
+  ${({layout}) => layout === 'vertical' && 'align-self: stretch;'};
+  // To be removed once logical props are used in defaults
   ${({layout}) =>
     getResponsiveSpace(
       layout === 'vertical' ? 'marginBottom' : 'marginRight',
       `banner.${layout}.content`,
       'content',
       'spaceInline',
-    )}
+    )};
+  ${({layout}) =>
+    layout === 'vertical'
+      ? logicalPropsWithCSSProperty(
+          'marginBlockEnd',
+          `banner.${layout}.content`,
+          'content',
+        )
+      : logicalPropsWithCSSProperty(
+          'marginInlineEnd',
+          `banner.${layout}.content`,
+          'content',
+        )};
 `;
 
 export const StyledIconContainer = styled.div<
   Pick<BannerProps, 'overrides' | 'layout'>
 >`
   display: flex;
+  // To be removed once logical props are used in defaults
   ${({layout}) =>
     getResponsiveSpace(
       'marginRight',
       `banner.${layout}.icon`,
       'icon',
       'spaceInline',
-    )}
+    )};
+
+  ${({layout}) => logicalProps(`banner.${layout}.icon`, 'icon')};
 `;
 
 export const StyledTitleContainer = styled(TextBlock)<
@@ -65,6 +86,7 @@ export const StyledTitleContainer = styled(TextBlock)<
   ${({layout}) =>
     getStylePreset(`banner.${layout}.content.title`, 'content.title')};
 
+  // To be removed once logical props are used in defaults
   ${({layout}) =>
     getResponsiveSpace(
       'marginBottom',
@@ -72,6 +94,8 @@ export const StyledTitleContainer = styled(TextBlock)<
       'content.title',
       'spaceStack',
     )}
+  ${({layout}) =>
+    logicalProps(`banner.${layout}.content.title`, 'content.title')};
 `;
 
 export const StyledContentContainer = styled.div`

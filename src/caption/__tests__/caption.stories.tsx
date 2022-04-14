@@ -108,7 +108,7 @@ export const StoryCaptionLogicalOverrides = () => (
       <CaptionInset
         overrides={{
           marginBlockEnd: 'space050',
-          gap: 'space090',
+          spaceStack: 'space030',
           spaceInset: {
             xs: 'spaceInset060',
           },

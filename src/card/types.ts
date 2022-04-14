@@ -1,9 +1,10 @@
 import React from 'react';
 import {ImageProps} from '../image/types';
 import {BaseLinkProps} from '../link/types';
+import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
-export interface CardOverridesProps {
+export interface CardOverridesProps extends LogicalProps {
   stylePreset?: MQ<string>;
   horizontalRatio?: string;
   mediaContainer?: {
@@ -12,12 +13,22 @@ export interface CardOverridesProps {
   };
   teaserContainer?: {
     stylePreset?: MQ<string>;
+    /**
+     * @deprecated This property is deprecated and will be removed in the next major release. Use `PaddingInline` & `PaddingBlock` instead.
+     */
     spaceInset?: MQ<string>;
+    paddingBlock?: MQ<string>;
+    paddingInline?: MQ<string>;
   };
   actionsContainer?: {
     stylePreset?: MQ<string>;
+    /**
+     * @deprecated This property is deprecated and will be removed in the next major release. Use `PaddingInline` & `PaddingBlock` instead.
+     */
     spaceInset?: MQ<string>;
     minHeight?: string;
+    paddingBlock?: MQ<string>;
+    paddingInline?: MQ<string>;
   };
 }
 

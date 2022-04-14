@@ -346,3 +346,87 @@ export const StoryRadioButtonOverrides = () => {
   );
 };
 StoryRadioButtonOverrides.storyName = 'radio-button-overrides';
+
+export const StoryRadioButtonLogicalPropsOverrides = () => (
+  <>
+    <StorybookSubHeading>
+      Logical props override - root level
+    </StorybookSubHeading>
+    <Fieldset legend="Select an option">
+      <RadioGroup name="icon" defaultValue="1">
+        <GridLayout rowGap="space040" columns="max-content">
+          <RadioButton
+            value="1"
+            label="Option 1"
+            overrides={{
+              marginBlockEnd: 'space030',
+            }}
+          />
+          <RadioButton
+            value="2"
+            label="Option 2"
+            overrides={{
+              marginBlockEnd: 'space030',
+            }}
+          />
+          <RadioButton
+            value="3"
+            label="Option 3"
+            overrides={{
+              marginBlockEnd: 'space030',
+            }}
+          />
+        </GridLayout>
+      </RadioGroup>
+    </Fieldset>
+    <StorybookSubHeading>
+      Logical props override - input level
+    </StorybookSubHeading>
+    <Fieldset legend="Select an option">
+      <RadioGroup name="icon" defaultValue="1">
+        <GridLayout rowGap="space040" columns="max-content">
+          <RadioButton
+            value="1"
+            label="Option 1"
+            overrides={{
+              input: {
+                marginInlineEnd: 'space050',
+              },
+            }}
+          />
+          <RadioButton
+            value="2"
+            label="Option 2"
+            overrides={{
+              input: {
+                marginInlineEnd: 'space050',
+              },
+            }}
+          />
+          <RadioButton
+            value="3"
+            label="Option 3"
+            labelPosition="start"
+            overrides={{
+              input: {
+                marginInlineStart: 'space050',
+              },
+            }}
+          />
+          <RadioButton
+            value="4"
+            label="Option 4"
+            labelPosition="start"
+            overrides={{
+              input: {
+                marginInlineStart: 'space050',
+              },
+            }}
+          />
+        </GridLayout>
+      </RadioGroup>
+    </Fieldset>
+  </>
+);
+StoryRadioButtonLogicalPropsOverrides.storyName =
+  'radio-button-logical-overrides';

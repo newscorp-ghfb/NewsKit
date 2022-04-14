@@ -2,7 +2,7 @@ export default {
   caption: {
     typographyPreset: 'editorialCaption010',
     stylePreset: 'inkBase',
-    gap: 'space040',
+    spaceStack: 'space040',
     credit: {
       typographyPreset: 'utilityMeta010',
       stylePreset: 'uppercaseInkSubtle',
@@ -11,7 +11,7 @@ export default {
   captionInset: {
     typographyPreset: 'editorialCaption010',
     stylePreset: 'inkBase',
-    gap: 'space040',
+    spaceStack: 'space040',
     spaceInset: {
       xs: 'spaceInset040',
       md: 'spaceInset050',

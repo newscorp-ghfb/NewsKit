@@ -10,13 +10,15 @@ export type BaseSwitchIconProps = NewsKitIconProps &
 
 type BaseSwitchOverrides = {
   /**
-   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlock` instead.
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlockEnd` instead.
    */
   spaceStack?: MQ<string>;
   input?: {
     size?: MQ<string>;
     stylePreset?: MQ<string>;
     spaceInline?: MQ<string>;
+    marginInlineEnd?: MQ<string>;
+    marginInlineStart?: MQ<string>;
     transitionPreset?: TransitionToken | TransitionToken[];
   };
   feedback?: {

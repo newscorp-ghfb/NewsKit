@@ -7,6 +7,10 @@ import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {
+  extractLogicalPropsFromOverrides,
+  logicalProps,
+} from '../utils/logical-properties';
 
 const StyledDateText = styled(TextBlock)`
   white-space: pre;
@@ -49,8 +53,15 @@ const ThemelessDateTime: React.FC<DateTimeProps> = ({
   const datePresets = getPresets('');
   const suffixPresets = getPresets('suffix');
 
+  const StyledTime = styled.time`
+    ${logicalProps('dateTime')}
+  `;
+
+  const logicalPropsOverrides =
+    overrides && extractLogicalPropsFromOverrides(overrides);
+
   return (
-    <time>
+    <StyledTime {...logicalPropsOverrides}>
       {prefix && (
         <StyledPrefix as="span" {...prefixPresets}>
           {`${prefix} `}
@@ -65,7 +76,7 @@ const ThemelessDateTime: React.FC<DateTimeProps> = ({
           {suffix}
         </StyledSuffix>
       )}
-    </time>
+    </StyledTime>
   );
 };
 

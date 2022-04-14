@@ -1,15 +1,14 @@
-import {LogicalMargins} from '../utils/logical-properties';
+import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
-export interface CaptionOverrides extends LogicalMargins {
+// Caption component will be rebuilt in https://nidigitalsolutions.jira.com/browse/PPDSC-2091 to introduce breaking changes on the interface.
+export interface CaptionOverrides extends LogicalProps {
   typographyPreset?: MQ<string>;
   stylePreset?: MQ<string>;
   /**
-   * @deprecated This property is deprecated and will be removed in the next major release. Use `gap` instead.
+   * @deprecated This property is deprecated and will be removed in the next major release.
    */
   spaceStack?: MQ<string>;
-
-  gap?: MQ<string>;
   /**
    * @deprecated This property is deprecated and will be removed in the next major release. Use `PaddingInline` & `PaddingBlock` instead.
    */

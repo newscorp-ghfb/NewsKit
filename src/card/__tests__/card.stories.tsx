@@ -20,7 +20,9 @@ const ContainerWithBackground = styled.div<{colorToken?: string}>`
   ${({colorToken = 'white', ...props}) =>
     getColorCssFromTheme('background', colorToken)(props)};
 `;
-
+const StyledDiv = styled.div`
+  border: 1px red dotted;
+`;
 // Spacing
 const cardLabel = 'space040';
 const cardTeaserHeadline = {
@@ -1261,6 +1263,117 @@ export const StoryCardWithResponsiveLayout = () => (
   </Card>
 );
 StoryCardWithResponsiveLayout.storyName = 'card-with-responsive-layout';
+
+export const StoryCardLogicalOverrides = () => (
+  <>
+    <StorybookHeading>
+      Card - logical margin & padding overrides - root level
+    </StorybookHeading>
+    <Grid>
+      <Cell xs={12} sm={4}>
+        <StyledDiv>
+          <Card
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              marginBlock: 'space050',
+              marginInline: 'space050',
+            }}
+            data-testid="card"
+          >
+            {cardSmallBody}
+          </Card>
+        </StyledDiv>
+      </Cell>
+      <Cell xs={12} sm={4}>
+        <StyledDiv>
+          <CardInset
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              paddingBlock: 'space050',
+              paddingInline: 'space050',
+            }}
+            data-testid="card-inset"
+          >
+            {cardInsetSmallBody}
+          </CardInset>
+        </StyledDiv>
+      </Cell>
+    </Grid>
+
+    <StorybookHeading>
+      Card - logical padding overrides - teaserContainer & actionsContainer
+    </StorybookHeading>
+    <Grid>
+      <Cell xs={12} sm={4}>
+        <StyledDiv>
+          <CardInset
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              teaserContainer: {
+                paddingBlock: {
+                  xs: 'spaceInset060',
+                  sm: 'spaceInset060',
+                  md: 'spaceInset070',
+                  lg: 'spaceInset070',
+                },
+                paddingInline: {
+                  xs: 'spaceInset060',
+                  sm: 'spaceInset060',
+                  md: 'spaceInset070',
+                  lg: 'spaceInset070',
+                },
+              },
+            }}
+          >
+            {cardSmallBody}
+          </CardInset>
+        </StyledDiv>
+      </Cell>
+      <Cell xs={12} sm={4}>
+        <StyledDiv>
+          <CardInset
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              actionsContainer: {
+                paddingBlock: {
+                  xs: 'spaceInset060',
+                  sm: 'spaceInset060',
+                  md: 'spaceInset070',
+                  lg: 'spaceInset070',
+                },
+                paddingInline: {
+                  xs: 'spaceInset070',
+                  sm: 'spaceInset070',
+                  md: 'spaceInset080',
+                  lg: 'spaceInset080',
+                },
+              },
+            }}
+          >
+            {cardInsetSmallBody}
+          </CardInset>
+        </StyledDiv>
+      </Cell>
+    </Grid>
+  </>
+);
+StoryCardLogicalOverrides.storyName = 'card-logical-overrides';
 
 export const StoryCardSlices = () => (
   <>
