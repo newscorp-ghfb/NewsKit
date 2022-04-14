@@ -462,44 +462,45 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
     }}
     behaviors={{
       introduction:
-        'The following guidance describes how the Select component behaves.',
+        'The following guidance describes how the Text Field component behaves.',
       cards: [
         {
-          title: 'Select Input and Select option item text-overflow truncation',
+          title: 'Input Text Overflow Truncationn',
           description: (
             <>
-              When the Select input text or the Select option item text is too
-              long for the available horizontal space, the text truncates.
+              When the Text Field text is too long for the available horizontal
+              space, the text truncates when text is inputted.
               <br />
               <br />
               Truncation is visually indicated using{' '}
-              <InlineCode>text-overflow:elipsis</InlineCode> via the style
+              <InlineCode>text-overflow: elipsis</InlineCode> via the style
               presets.
             </>
           ),
           media: getIllustrationComponent(
-            'components/text-field/behaviours/checked-vs-unchecked',
+            'components/text-field/behaviours/input-text-overflow',
           ),
         },
         {
           title: 'Validation',
           description: (
             <>
-              The Select validation rules can be defined for onSubmit or onBlur,
-              for both the initial validation and re-validation using the Form.
+              The Text Field validation rules can be defined for onSubmit or
+              onBlur, for both the initial validation and re-validation using
+              the Form.
               <br />
               <br />
               <Link href="/components/form/">
                 For more information, please refer to the Form component.
               </Link>
-              .
               <Block spaceStack="space050" />
               <InlineMessage
+                icon={infoIcon}
                 role="region"
-                aria-label="Select validation"
+                aria-label="TextField validation"
                 title="Note"
               >
-                Validation only works if the Select component uses the Form
+                Validation only works if the FormInput TextField uses the Form
                 component.
               </InlineMessage>
             </>
