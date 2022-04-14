@@ -488,6 +488,13 @@ describe('Select', () => {
   });
 
   describe('in Modal', () => {
+    afterEach(() => {
+      cleanup();
+      // Clean up the accesibility message which is added to the body by Downshift
+      const msg = document.getElementById('a11y-status-message');
+      if (msg) msg.remove();
+    });
+
     const commonProps: SelectProps = {
       children: [
         <SelectOption key="1" value="option 1">

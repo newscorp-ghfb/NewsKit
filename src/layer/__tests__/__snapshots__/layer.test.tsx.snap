@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layer add element to body when there is not LayerOrganizer 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      outside the layer
+    </div>
+  </div>
+  <div
+    class="nk-layer"
+  >
+    inside layer
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layer add element to default layer LayerOrganizer 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      outside the layer
+    </div>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      inside layer
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layer add element to most parent layer organizer 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      outside the layer
+    </div>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer-organizer"
+    >
+      <div
+        class="nk-layer"
+      >
+        layer
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layer add zIndex to layer organizer 1`] = `
+<DocumentFragment>
+  <div />
+  <div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer-organizer"
+      style="position: absolute; top: 0px; left: 0px; right: 0px; z-index: 100;"
+    >
+      <div
+        class="nk-layer"
+      >
+        layer
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

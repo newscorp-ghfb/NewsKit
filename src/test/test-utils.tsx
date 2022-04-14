@@ -101,6 +101,30 @@ export const renderWithThemeInBody = <T extends {}>(
   };
 };
 
+// same as renderWithThemeInBody but without theme
+export const renderInBody = <T extends {}>(
+  Component: React.ComponentType<T>,
+  props?: T & {children?: React.ReactNode},
+): RenderResult => {
+  const {baseElement, ...rest} = renderer(<Component {...(props as T)} />);
+
+  // TODO: asFragment takes the HTML only from the container, NOT the whole body
+  // and the portals are rendered outside the container
+  // that's why we need to use baseElement for snapshots
+  // https://github.com/testing-library/react-testing-library/blob/c8c93f83228a68a270583c139972e79b1812b7d3/src/pure.js
+  const asFragment = () => {
+    const template = document.createElement('template');
+    template.innerHTML = baseElement.innerHTML;
+    return template.content;
+  };
+
+  return {
+    ...rest,
+    baseElement,
+    asFragment,
+  };
+};
+
 export const renderToFragmentInBody = <T extends {}>(
   Component: React.ComponentType<T>,
   props?: T & {children?: React.ReactNode},
