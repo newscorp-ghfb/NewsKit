@@ -14,6 +14,7 @@ import {
 } from '../../utils';
 import {
   Cell,
+  Fieldset,
   Grid,
   GridLayout,
   IconFilledCancel,
@@ -389,6 +390,7 @@ const ThemelessToggle = React.forwardRef<HTMLInputElement, CheckboxProps>(
       path="toggle"
       ref={inputRef}
       type="checkbox"
+      role="switch"
       {...props}
       defaultSwitchSelectorComponent={DefaultToggleComponent}
     />
@@ -412,6 +414,14 @@ export const StoryCheckboxAsToggle = () => (
       label="change theme"
       overrides={{icon: MultipleIconsComponent, input: {blockSize: '26px'}}}
     />
+    <br />
+    <br />
+    <Fieldset legend="Breakfast menu">
+      <Toggle defaultChecked />
+      <br />
+      <br />
+      <Toggle label="change theme" overrides={{icon: ThemeToggleComponent}} />
+    </Fieldset>
   </div>
 );
 
