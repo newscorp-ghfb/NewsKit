@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import {useRouter} from 'next/router';
+import {MenuNav} from '../menu-collapsable/menu-collapsable';
 import {Link} from '../link';
 import routes from '../../routes';
 import {
@@ -17,8 +18,7 @@ import {
   NavigationSectionType,
   PageType,
 } from './types';
-import { MenuNav } from 'components/menu-collapsable';
-import { Visible } from '../../../src/grid/visibility';
+import {Visible} from '../../../src/grid/visibility';
 
 const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -97,16 +97,23 @@ export const SidebarNav: React.FC = () => {
 
   return (
     <StyledSidebarNav role="navigation" aria-label="Sidebar">
-       <Visible xs sm md>
-        <MenuNav path={path} menu={routes} />
-      </Visible>
-      <Visible lg xl></Visible>
-      <StyledNavigationWrapper role="list">
-        {currentSection &&
-          currentSection.map(section => (
-            <Section key={section.id} section={section} activePagePath={path} />
-          ))}
-      </StyledNavigationWrapper>
+      <>
+        <Visible xs sm md>
+          <MenuNav path={path} menu={routes} />
+        </Visible>
+        <Visible lg xl>
+          <StyledNavigationWrapper role="list" className="poo">
+            {currentSection &&
+              currentSection.map(section => (
+                <Section
+                  key={section.id}
+                  section={section}
+                  activePagePath={path}
+                />
+              ))}
+          </StyledNavigationWrapper>
+        </Visible>
+      </>
     </StyledSidebarNav>
   );
 };
