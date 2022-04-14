@@ -319,19 +319,16 @@ const toggleDefaults = {
   toggle: {
     medium: {
       spaceStack: 'space000',
-      track: {
-        stylePreset: 'toggleTrack',
-        size: '16px',
-      },
       thumb: {
         stylePreset: 'toggleThumb',
         size: '24px',
       },
-      // this is coming from base-switch
+      // this is track coming from base-switch
       input: {
-        blockSize: '32px',
+        blockSize: '16px',
         inlineSize: '48px',
         spaceInline: 'space030',
+        stylePreset: 'toggleTrack',
       },
       label: {
         stylePreset: 'controlLabel',
@@ -341,16 +338,6 @@ const toggleDefaults = {
   },
 };
 
-const Track = styled.div<{checked: boolean}>`
-  width: 100%;
-  position: relative;
-  display: grid;
-  place-items: center;
-  ${props =>
-    getStylePreset('toggle.medium.track', 'track', {isChecked: props.checked})}
-  ${getResponsiveSize('height', 'toggle.medium.track', 'track', 'size')};
-  transition: all 0.2s ease-in-out;
-`;
 const Thumb = styled.div<{checked: boolean}>`
   ${props =>
     getStylePreset('toggle.medium.thumb', 'thumb', {isChecked: props.checked})}
@@ -369,21 +356,31 @@ const Thumb = styled.div<{checked: boolean}>`
 `;
 
 const DefaultToggleComponent = ({checked}: CheckboxIconProps) => (
-  <Track checked={checked}>
-    <Thumb checked={checked} />
-  </Track>
+  <Thumb checked={checked} />
 );
 
 const ThemeToggleComponent = ({checked}: CheckboxIconProps) => (
-  <Track checked={checked}>
-    <Thumb checked={checked}>
+  <Thumb checked={checked}>
+    {checked ? (
+      <IconFilledLight overrides={{size: 'iconSize010'}} />
+    ) : (
+      <IconFilledDark overrides={{size: 'iconSize010'}} />
+    )}
+  </Thumb>
+);
+
+const MultipleIconsComponent = ({checked}: CheckboxIconProps) => (
+  <GridLayout columns="1fr 1fr" columnGap="5px">
+    <IconFilledLight overrides={{size: 'iconSize010'}} />
+    <IconFilledLight overrides={{size: 'iconSize010'}} />
+    <Thumb checked={checked} style={{top: 1}}>
       {checked ? (
         <IconFilledLight overrides={{size: 'iconSize010'}} />
       ) : (
         <IconFilledDark overrides={{size: 'iconSize010'}} />
       )}
     </Thumb>
-  </Track>
+  </GridLayout>
 );
 
 const ThemelessToggle = React.forwardRef<HTMLInputElement, CheckboxProps>(
@@ -404,10 +401,18 @@ export const Toggle = withOwnTheme(ThemelessToggle)({
 });
 
 export const StoryCheckboxAsToggle = () => (
-  <>
+  <div style={{padding: '20px'}}>
     <Toggle defaultChecked />
+    <br />
+    <br />
     <Toggle label="change theme" overrides={{icon: ThemeToggleComponent}} />
-  </>
+    <br />
+    <br />
+    <Toggle
+      label="change theme"
+      overrides={{icon: MultipleIconsComponent, input: {blockSize: '26px'}}}
+    />
+  </div>
 );
 
 const Dark: React.FC<SvgProps> = props => (
