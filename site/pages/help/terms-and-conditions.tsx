@@ -13,7 +13,12 @@ import {
 } from '../../components/content-structure';
 
 const contentOverrides = {
-  typographyPreset: 'editorialParagraph030',
+  typographyPreset: {
+    xs: 'editorialParagraph020',
+    md: 'editorialParagraph030',
+    lg: 'editorialParagraph030',
+    xl: 'editorialParagraph030',
+  },
 };
 
 const unorderedListOverrides = {

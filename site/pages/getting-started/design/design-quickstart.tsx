@@ -4,8 +4,10 @@ import {
   InlineMessage,
   styled,
   getSizingCssFromTheme,
-  OrderedList,
   UnorderedList,
+  GridLayoutItem,
+  GridLayout,
+  TextBlock,
 } from 'newskit';
 import {LayoutProps} from '../../../components/layout';
 import {Link} from '../../../components/link';
@@ -22,21 +24,54 @@ import {
   ContentColSpan,
 } from '../../../components/content-structure';
 
-const orderedListOverrides = {
-  spaceInline: 'space040',
-  content: {
-    typographyPreset: 'editorialParagraph020',
+type WrapperProps = {
+  children: React.ReactNode;
+};
+
+const defaultGridColumns = `repeat(${ContentColSpan.FULL}, 1fr)`;
+const fullGridColumns = `auto / span ${ContentColSpan.FULL}`;
+const textGridColumns = {
+  xs: fullGridColumns,
+  lg: `auto / span ${ContentColSpan.TEXT}`,
+};
+
+const contentOverrides = {
+  typographyPreset: {
+    xs: 'editorialParagraph020',
+    md: 'editorialParagraph030',
+    lg: 'editorialParagraph030',
+    xl: 'editorialParagraph030',
   },
-  counter: {
-    typographyPreset: 'editorialParagraph020',
-    minWidth: 'sizing040',
-  },
+  stylePreset: 'inkBase',
 };
 
 const ImageContainer = styled.div`
   ${getSizingCssFromTheme('marginTop', 'sizing040')};
   ${getSizingCssFromTheme('marginBottom', 'sizing050')}
 `;
+
+const ImageWrapper = ({children}: WrapperProps) => (
+  <GridLayoutItem column={fullGridColumns}>
+    <ImageContainer>{children}</ImageContainer>
+  </GridLayoutItem>
+);
+
+const TextWrapper = ({children}: WrapperProps) => (
+  <GridLayoutItem column={textGridColumns}>
+    <TextBlock
+      stylePreset={contentOverrides.stylePreset}
+      typographyPreset={contentOverrides.typographyPreset}
+      marginBlockEnd={{
+        xs: 'space045',
+        md: 'space050',
+        lg: 'space050',
+        xl: 'space050',
+      }}
+    >
+      {children}
+    </TextBlock>
+  </GridLayoutItem>
+);
 
 const DesignQuickstart = (layoutProps: LayoutProps) => (
   <GuidePageTemplate
@@ -92,64 +127,69 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
           toc="Access to Figma"
           headline="Access to Figma"
           description="News UK Designers are given access to the News UK Figma account when onboarding to the company. To access a Figma account, follow these simple steps:"
-          childrenColSpan={ContentColSpan.TEXT}
         >
-          <OrderedList overrides={orderedListOverrides}>
-            <>
+          <GridLayout columns={defaultGridColumns}>
+            <TextWrapper>
+              1.{' '}
               <Link
                 href="https://www.figma.com/downloads/?fuid=991535588482779467"
                 target="_blank"
               >
                 Download the Figma desktop app.
               </Link>
-            </>
-            <>
-              Go to the{' '}
+            </TextWrapper>
+            <TextWrapper>
+              2. Go to the{' '}
               <Link href="https://www.figma.com/login" target="_blank">
                 Figma login page.
               </Link>
-            </>
-            <>
-              Select the “Log in with SAML SSO” link at the bottom of the form.
-              <ImageContainer>
-                <Illustration path="guides/design-quickstart/step1/access-to-figma-log-in" />
-              </ImageContainer>
-            </>
-            <>
-              Enter a work email address in the form e.g. Joe.Bloggs@news.co.uk.
-            </>
-            <>
-              Press “Log in” button - you will be taken to OKTA (account
+            </TextWrapper>
+            <TextWrapper>
+              3. Select the “Log in with SAML SSO” link at the bottom of the
+              form.
+            </TextWrapper>
+            <ImageWrapper>
+              <Illustration path="guides/design-quickstart/step1/access-to-figma-log-in" />
+            </ImageWrapper>
+            <TextWrapper>
+              4. Enter a work email address in the form e.g.
+              Joe.Bloggs@news.co.uk.
+            </TextWrapper>
+            <TextWrapper>
+              5. Press “Log in” button - you will be taken to OKTA (account
               management). If you have not already been assigned the app in
               OKTA,{' '}
               <Link href="https://newscorp.service-now.com/sp" target="_blank">
                 contact the service desk to gain access.
               </Link>
-            </>
-            <>
-              Enter OKTA credentials for work email address (you may be asked to
-              authenticate via your phone).
-            </>
-            <>
-              Once Figma has opened in the browser, open the Figma desktop app.
-            </>
-            <>
-              In the Figma desktop app, press “Log in with browser” - a new
+            </TextWrapper>
+            <TextWrapper>
+              6. Enter OKTA credentials for work email address (you may be asked
+              to authenticate via your phone).
+            </TextWrapper>
+            <TextWrapper>
+              7. Once Figma has opened in the browser, open the Figma desktop
+              app.
+            </TextWrapper>
+            <TextWrapper>
+              8. In the Figma desktop app, press “Log in with browser” - a new
               browser window will open.
-              <ImageContainer>
-                <Illustration path="guides/design-quickstart/step1/access-to-figma-browser-launch" />
-              </ImageContainer>
-            </>
-            <>
-              In the newly opened browser window, press “Open the desktop app”.
-              A browser dialog screen will appear, check the “Always allow Figma
-              to open links of this type in the associated app”
-              <ImageContainer>
-                <Illustration path="guides/design-quickstart/step1/access-to-figma-open-in-app" />
-              </ImageContainer>
-            </>
-            <>You will now be taken to the Figma desktop app - enjoy!</>
-          </OrderedList>
+            </TextWrapper>
+            <ImageWrapper>
+              <Illustration path="guides/design-quickstart/step1/access-to-figma-browser-launch" />
+            </ImageWrapper>
+            <TextWrapper>
+              9. In the newly opened browser window, press “Open the desktop
+              app”. A browser dialog screen will appear, check the “Always allow
+              Figma to open links of this type in the associated app”
+            </TextWrapper>
+            <ImageWrapper>
+              <Illustration path="guides/design-quickstart/step1/access-to-figma-open-in-app" />
+            </ImageWrapper>
+            <TextWrapper>
+              10. You will now be taken to the Figma desktop app - enjoy!
+            </TextWrapper>
+          </GridLayout>
         </ContentPrimary>
 
         <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
@@ -191,37 +231,37 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
           toc="Joining a team workspace"
           headline="Joining a team workspace"
           description="To join a team workspace, follow these simple steps:"
-          childrenColSpan={ContentColSpan.TEXT}
         >
-          <OrderedList overrides={orderedListOverrides}>
-            <>
+          <GridLayout columns={defaultGridColumns}>
+            <TextWrapper>
+              1.{' '}
               <Link
                 href="https://www.figma.com/files/885972051699405879?fuid=991535588482779467"
                 target="_blank"
               >
                 View teams in the News UK Figma organisation.
               </Link>
-            </>
-            <>
-              Find your team(s), and press “Request to join” or “Join” button(s)
-              to get access to a team workspace.
-              <ImageContainer>
-                <Illustration path="guides/design-quickstart/step2/joining-a-workspace-request" />
-              </ImageContainer>
-            </>
-            <>
-              Once you have access to a team(s), you will see the structure of
-              project files and associated libraries on the main Figma screen.
-              News UK Figma workspaces are structured in a particular way, learn
-              more about News UK Figma workspaces.
-            </>
-          </OrderedList>
+            </TextWrapper>
+            <TextWrapper>
+              2. Find your team(s), and press “Request to join” or “Join”
+              button(s) to get access to a team workspace.
+            </TextWrapper>
+            <ImageWrapper>
+              <Illustration path="guides/design-quickstart/step2/joining-a-workspace-request" />
+            </ImageWrapper>
+            <TextWrapper>
+              3. Once you have access to a team(s), you will see the structure
+              of project files and associated libraries on the main Figma
+              screen. News UK Figma workspaces are structured in a particular
+              way, learn more about News UK Figma workspaces.
+            </TextWrapper>
+          </GridLayout>
         </ContentPrimary>
 
         <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage role="region" aria-label="Tip">
             Tip - to see projects in a team in the left-hand navigation on the
-            main Figma screen,be sure to “star” them in the team view screen.
+            main Figma screen, be sure to “star” them in the team view screen.
           </InlineMessage>
           <Block spaceStack="space050" />
           <InlineMessage role="region" aria-label="Having trouble">
@@ -262,26 +302,28 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               to install and set up:
             </>
           }
-          childrenColSpan={ContentColSpan.TEXT}
         >
-          <OrderedList overrides={orderedListOverrides}>
-            <>
+          <GridLayout columns={defaultGridColumns}>
+            <TextWrapper>
+              1.{' '}
               <Link
                 href="https://www.figma.com/proto/44FDCMcOPHd5m29NKTESm7/NK-Component-Overviews?page-id=190%3A60380&node-id=204%3A0&viewport=368%2C48%2C0.5&scaling=scale-down-width&hide-ui=1"
                 target="_blank"
               >
                 View setup & installation guidance for the Theme Swapper plugin.
               </Link>
-            </>
-            <>
+            </TextWrapper>
+            <TextWrapper>
+              2.{' '}
               <Link
                 href="https://www.figma.com/proto/44FDCMcOPHd5m29NKTESm7/NK-Component-Overviews?page-id=218%3A62928&node-id=218%3A62929&viewport=410%2C48%2C0.06&scaling=scale-down-width&hide-ui=1"
                 target="_blank"
               >
                 View setup & installation guidance for the Text Crop plugin.
               </Link>
-            </>
-            <>
+            </TextWrapper>
+            <TextWrapper>
+              3.{' '}
               <Link
                 href="https://www.figma.com/proto/44FDCMcOPHd5m29NKTESm7/NK-Component-Overviews?page-id=190%3A60380&node-id=204%3A0&viewport=368%2C48%2C0.5&scaling=scale-down-width&hide-ui=1"
                 target="_blank"
@@ -290,8 +332,8 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               </Link>{' '}
               (optional - only required if you are going to be managing a
               brand’s theme).
-            </>
-          </OrderedList>
+            </TextWrapper>
+          </GridLayout>
         </ContentPrimary>
 
         <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
@@ -324,44 +366,44 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
           toc="Starting a Figma project"
           headline="Starting a Figma project"
           description="To start a Figma project, follow these simple steps:"
-          childrenColSpan={ContentColSpan.TEXT}
         >
-          <OrderedList overrides={orderedListOverrides}>
-            <>
-              In your team area, hover over the team name, and press the “+”
+          <GridLayout columns={defaultGridColumns}>
+            <TextWrapper>
+              1. In your team area, hover over the team name, and press the “+”
               icon (labeled “New project” on hover) to add a new project.
-              <ImageContainer>
-                <Illustration path="guides/design-quickstart/step4/starting-a-figma-project-new-project-01" />
-              </ImageContainer>
-            </>
-            <>
-              Give your new project a clear and distinctive name [Product/Brand
-              Name], with an emoji to identify the project’s purpose (optional).
-            </>
-            <>
-              You will also see permissions options for the new project -
+            </TextWrapper>
+            <ImageWrapper>
+              <Illustration path="guides/design-quickstart/step4/starting-a-figma-project-new-project-01" />
+            </ImageWrapper>
+            <TextWrapper>
+              2. Give your new project a clear and distinctive name
+              [Product/Brand Name], with an emoji to identify the project’s
+              purpose (optional).
+            </TextWrapper>
+            <TextWrapper>
+              3. You will also see permissions options for the new project -
               everyone in the team can edit, everyone in the team can view, or
               via invite-only.
-            </>
-            <>
-              In your newly created project, hover over the project name, and
+            </TextWrapper>
+            <TextWrapper>
+              4. In your newly created project, hover over the project name, and
               press the “+” icon (New file) to add a new project.
-              <ImageContainer>
-                <Illustration path="guides/design-quickstart/step4/starting-a-figma-project-new-project-02" />
-              </ImageContainer>
-            </>
-            <>
-              You will see options to add a design file, FigJam file, or to
+            </TextWrapper>
+            <ImageWrapper>
+              <Illustration path="guides/design-quickstart/step4/starting-a-figma-project-new-project-02" />
+            </ImageWrapper>
+            <TextWrapper>
+              5. You will see options to add a design file, FigJam file, or to
               import a file locally.
-            </>
-            <>
-              Select the “Design file” option to create a new file, and the new
-              file will open in a tab.
-              <ImageContainer>
-                <Illustration path="guides/design-quickstart/step4/starting-a-figma-project-new-project-03" />
-              </ImageContainer>
-            </>
-          </OrderedList>
+            </TextWrapper>
+            <TextWrapper>
+              6. Select the “Design file” option to create a new file, and the
+              new file will open in a tab.
+            </TextWrapper>
+            <ImageWrapper>
+              <Illustration path="guides/design-quickstart/step4/starting-a-figma-project-new-project-03" />
+            </ImageWrapper>
+          </GridLayout>
         </ContentPrimary>
 
         <ContentSecondary
@@ -390,33 +432,33 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
             </>
           }
         />
-        <ContentTertiary showSeparator childrenColSpan={ContentColSpan.TEXT}>
-          <OrderedList overrides={orderedListOverrides}>
-            <>
-              Select “Duplicate” from the dropdown of options next to the file
-              name.
-              <ImageContainer>
-                <Illustration path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-01" />
-              </ImageContainer>
-            </>
-            <>
-              At the bottom of the screen, a notification telling you that the
-              file was duplicated will appear. Press “Open”, and the newly
+        <ContentTertiary showSeparator>
+          <GridLayout columns={defaultGridColumns}>
+            <TextWrapper>
+              1. Select “Duplicate” from the dropdown of options next to the
+              file name.
+            </TextWrapper>
+            <ImageWrapper>
+              <Illustration path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-01" />
+            </ImageWrapper>
+            <TextWrapper>
+              2. At the bottom of the screen, a notification telling you that
+              the file was duplicated will appear. Press “Open”, and the newly
               duplicated project template file will open in a new tab.
-              <ImageContainer>
-                <Illustration path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-02" />
-              </ImageContainer>
-            </>
-            <>
-              Select “Move to project…” from the dropdown of options next to the
-              file name, and you will be given the option of selecting a project
-              from a list, or you can search for a project name to move the file
-              to.
-              <ImageContainer>
-                <Illustration path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-03" />
-              </ImageContainer>
-            </>
-          </OrderedList>
+            </TextWrapper>
+            <ImageWrapper>
+              <Illustration path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-02" />
+            </ImageWrapper>
+            <TextWrapper>
+              3. Select “Move to project…” from the dropdown of options next to
+              the file name, and you will be given the option of selecting a
+              project from a list, or you can search for a project name to move
+              the file to.
+            </TextWrapper>
+            <ImageWrapper>
+              <Illustration path="guides/design-quickstart/step4/using-the-newskit-project-template-files-using-template-03" />
+            </ImageWrapper>
+          </GridLayout>
         </ContentTertiary>
       </ContentSection>
 
@@ -436,34 +478,33 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
           toc="Linking NewsKit Figma libraries"
           headline="Linking NewsKit Figma libraries"
           description="To link a NewsKit Figma library to a project, follow these simple steps:"
-          childrenColSpan={ContentColSpan.TEXT}
         >
-          <OrderedList overrides={orderedListOverrides}>
-            <>
-              In your design file, select the “Assets” tab in the left-hand
+          <GridLayout columns={defaultGridColumns}>
+            <TextWrapper>
+              1. In your design file, select the “Assets” tab in the left-hand
               panel.
-              <ImageContainer>
-                <Illustration path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-01" />
-              </ImageContainer>
-            </>
-            <>
-              Press the “book” icon (labeled “Team library” on hover), to bring
-              up a list of libraries in a modal dialog.
-              <ImageContainer>
-                <Illustration path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-02" />
-              </ImageContainer>
-            </>
-            <>
-              In the list, you will see the available libraries available to
+            </TextWrapper>
+            <ImageWrapper>
+              <Illustration path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-01" />
+            </ImageWrapper>
+            <TextWrapper>
+              2. Press the “book” icon (labeled “Team library” on hover), to
+              bring up a list of libraries in a modal dialog.
+            </TextWrapper>
+            <ImageWrapper>
+              <Illustration path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-02" />
+            </ImageWrapper>
+            <TextWrapper>
+              3. In the list, you will see the available libraries available to
               link to your design file, categorised by teams.
-            </>
-            <>
-              The libraries that are already enabled are indicated in the list
-              with a switch on the left-hand side of each library set to
+            </TextWrapper>
+            <TextWrapper>
+              4. The libraries that are already enabled are indicated in the
+              list with a switch on the left-hand side of each library set to
               “Enabled”.
-            </>
-            <>
-              The{' '}
+            </TextWrapper>
+            <TextWrapper>
+              5. The{' '}
               <Link
                 href="https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components"
                 target="_blank"
@@ -479,17 +520,17 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
               </Link>
               Figma libraries are automatically linked when you add a new design
               file or duplicate one of the NewsKit project template files.
-            </>
-            <>
-              To link your design file to one of your team’s libraries, or the
-              available NewsKit Design Systems libraries simply enable the
+            </TextWrapper>
+            <TextWrapper>
+              6. To link your design file to one of your team’s libraries, or
+              the available NewsKit Design Systems libraries simply enable the
               library you want to link to via the corresponding switch on the
               left-hand side.
-              <ImageContainer>
-                <Illustration path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-03" />
-              </ImageContainer>
-            </>
-          </OrderedList>
+            </TextWrapper>
+            <ImageWrapper>
+              <Illustration path="guides/design-quickstart/step5/linking-newskit-figma-libraries-libraries-03" />
+            </ImageWrapper>
+          </GridLayout>
         </ContentPrimary>
 
         <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
@@ -535,7 +576,12 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
                 spaceInline: 'space020',
               },
               content: {
-                typographyPreset: 'editorialParagraph030',
+                typographyPreset: {
+                  xs: 'editorialParagraph020',
+                  md: 'editorialParagraph030',
+                  lg: 'editorialParagraph030',
+                  xl: 'editorialParagraph030',
+                },
               },
             }}
           >
