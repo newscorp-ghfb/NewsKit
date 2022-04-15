@@ -10,33 +10,7 @@ import {
   renderWithThemeInBody,
 } from '../../test/test-utils';
 
-jest.mock('react-transition-group', () => {
-  const FakeTransition = jest.fn(({children}) => children);
-  const FakeCSSTransition = jest.fn(props => {
-    const modifyChildren = (
-      child: React.DetailedReactHTMLElement<{className: string}, HTMLElement>,
-    ) => {
-      const className = `nk-drawer-enter-done`;
-
-      return React.cloneElement(child, {
-        className,
-      });
-    };
-
-    if (props.in) {
-      return (
-        <FakeTransition>
-          {React.Children.map(props.children, child => modifyChildren(child))}
-        </FakeTransition>
-      );
-    }
-    return <FakeTransition>{props.children}</FakeTransition>;
-  });
-  return {CSSTransition: FakeCSSTransition, Transition: FakeTransition};
-});
-
 const drawerBody = <TextBlock>Drawer body content</TextBlock>;
-
 const drawerHeader = <TextBlock>Drawer header content</TextBlock>;
 
 describe('Drawer', () => {

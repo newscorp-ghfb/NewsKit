@@ -2,11 +2,14 @@
 // eslint-disable-next-line
 import {fireEvent, RenderResult} from '@testing-library/react';
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import userEvent from '@testing-library/user-event';
 import {
   renderToFragmentInBody,
   renderWithTheme,
   renderWithThemeInBody,
 } from '../test/test-utils';
+
 import {BaseDialogProps} from './types';
 
 export const sharedDialogTests = (
@@ -89,7 +92,7 @@ export const sharedDialogTests = (
       children: body,
     });
 
-    fireEvent.keyUp(document, {key: 'Escape'});
+    userEvent.keyboard('{esc}');
 
     expect(mockCallBack).toHaveBeenCalled();
   });
@@ -132,7 +135,6 @@ export const sharedDialogTests = (
     });
     expect(fragment).toMatchSnapshot();
   });
-
   test('renders without header and close', () => {
     const fragment = renderToFragmentInBody(Dialog, {
       open: true,
@@ -142,7 +144,6 @@ export const sharedDialogTests = (
     });
     expect(fragment).toMatchSnapshot();
   });
-
   test('toggle aria-hidden to content outside dialog', () => {
     const Component = () => {
       const [open, setOpen] = React.useState(true);

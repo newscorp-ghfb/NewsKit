@@ -1,11 +1,13 @@
 import {IconButtonProps} from '../icon-button/types';
-import {Optional} from '../utils/types';
+import {AudioPlayerForwardButtonProps} from './components/forward-button/types';
+import {AudioPlayerPlayPauseButtonProps} from './components/play-pause-button/types';
+import {AudioPlayerReplayButtonProps} from './components/replay-button/types';
+import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/types';
+import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
+import {AudioPlayerTimeFormatFn} from './components/time-display/types';
 
 export interface AudioFunctionDependencies {
-  onPreviousTrack: () => void;
-  onNextTrack: () => void;
   autoPlay: boolean;
-  disablePreviousTrack: boolean;
   src: string;
   live: NonNullable<boolean>;
 
@@ -24,21 +26,65 @@ export interface AudioFunctionDependencies {
   setDuration: React.Dispatch<React.SetStateAction<number>>;
   setDisplayDuration: React.Dispatch<React.SetStateAction<number>>;
   setBuffered: React.Dispatch<React.SetStateAction<TimeRanges | undefined>>;
-  setIsPrevTrackBtnDisabled: React.Dispatch<React.SetStateAction<boolean>>;
-}
-export interface TrackControlProps {
-  onNextTrack?: () => void;
-  disableNextTrack?: boolean;
-  onPreviousTrack?: () => void;
-  disablePreviousTrack?: boolean;
 }
 
-export interface AudioPlayerComposableProps {
+export interface AudioPlayerProviderContext {
+  id: string;
+  playing: boolean;
+  canPause: boolean;
+  loading: boolean;
+  audioRef: React.RefObject<HTMLAudioElement>;
+  audioSectionRef: React.RefObject<HTMLDivElement>;
+  togglePlay: () => void;
+
+  // Getter functions
+  getPlayPauseButtonProps: (
+    props: AudioPlayerPlayPauseButtonProps,
+  ) => IconButtonProps & {
+    playing: boolean;
+    canPause: boolean;
+  };
+  getTimeDisplayProps: () => {
+    format: AudioPlayerTimeFormatFn;
+    currentTime: number;
+    duration: number;
+  };
+  getSeekBarProps: () => {
+    duration: number;
+    currentTime: number;
+    onChange: (value: number) => void;
+    buffered: TimeRanges | undefined;
+  };
+  getSkipPreviousButtonProps: (
+    props: AudioPlayerSkipPreviousButtonProps,
+  ) => IconButtonProps;
+  getSkipNextButtonProps: (
+    props: AudioPlayerSkipNextButtonProps,
+  ) => IconButtonProps;
+  getForwardButtonProps: (
+    props: AudioPlayerForwardButtonProps,
+  ) => IconButtonProps;
+  getReplayButtonProps: (
+    props: AudioPlayerReplayButtonProps,
+  ) => IconButtonProps;
+}
+
+export interface AudioElementProps
+  extends Omit<React.AudioHTMLAttributes<HTMLAudioElement>, 'controls'> {
+  audioRef?: React.RefObject<HTMLAudioElement>;
+}
+
+export interface AudioPlayerComposableProps
+  extends Omit<React.AudioHTMLAttributes<HTMLAudioElement>, 'controls'> {
   children: React.ReactNode;
-  src: string;
-  autoPlay?: boolean;
   live?: boolean;
+  autoPlay?: boolean;
+  src: string;
   ariaLandmark?: string;
+  keyboardShortcuts?: {
+    jumpToStart: string | string[];
+    jumpToEnd: string | string[];
+  };
 }
 
 export enum AudioEvents {
@@ -47,13 +93,8 @@ export enum AudioEvents {
   Waiting = 'onWaiting',
   CanPlay = 'onCanPlay',
   Ended = 'onEnded',
-  VolumeChange = 'onVolumeChange',
+  // VolumeChange = 'onVolumeChange',
   DurationChange = 'onDurationChange',
   TimeUpdate = 'onTimeUpdate',
   Progress = 'onProgress',
 }
-
-export type AudioPlayerIconButtonProps = Optional<
-  IconButtonProps,
-  'aria-label'
->;

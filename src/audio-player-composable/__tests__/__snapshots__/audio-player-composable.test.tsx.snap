@@ -136,7 +136,7 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
     />
     <button
       aria-busy="true"
-      aria-label="Stop"
+      aria-label="Pause"
       aria-live="polite"
       aria-pressed="true"
       class="emotion-0"
@@ -423,9 +423,9 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -433,9 +433,9 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3358CC;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
   margin: 0;
   cursor: pointer;
 }
@@ -446,19 +446,19 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-10 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #2B4AAB;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #213A82;
 }
 
 .emotion-10:disabled {
-  background-color: transparent;
+  background-color: #F4F4F4;
   color: #C0C0C0;
 }
 
@@ -477,6 +477,126 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-10 {
     transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-13 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-13::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-13::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-14 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3358CC;
+  margin: 0;
+  cursor: pointer;
+}
+
+.emotion-14 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-14 svg {
+  fill: #3358CC;
+}
+
+.emotion-14:hover:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-14:active:not(:disabled) {
+  background-color: #AEBFFF;
+}
+
+.emotion-14:disabled {
+  background-color: transparent;
+  color: #C0C0C0;
+}
+
+.emotion-14:disabled svg {
+  fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-14 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-14 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-27 {
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-27 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-27 {
+    transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
@@ -561,9 +681,90 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
     >
       00:10/01:50:10 
     </span>
+    <a
+      class="emotion-10"
+      data-testid="buttonLink"
+      href="/"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <span
+            class="emotion-13"
+          >
+            read more
+          </span>
+        </div>
+      </div>
+    </a>
+    <button
+      aria-label="next"
+      class="emotion-14"
+      data-testid="audio-player-skip-next-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-7 emotion-8"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+    <button
+      aria-label="previous"
+      class="emotion-14"
+      data-testid="audio-player-skip-previous-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-7 emotion-8"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
     <button
       aria-label="Fast forward for 10 seconds"
-      class="emotion-10"
+      class="emotion-14"
       data-testid="audio-player-forward-button"
       type="button"
     >
@@ -575,25 +776,15 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
         >
           <svg
             aria-hidden="true"
-            class="emotion-7 emotion-8"
+            class="emotion-27"
             fill="currentColor"
-            focusable="false"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect
-              fill="none"
-              height="24"
-              width="24"
-            />
             <path
-              d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
-            />
-            <polygon
-              points="10.86,15.94 10.86,11.67 10.77,11.67 9,12.3 9,12.99 10.01,12.68 10.01,15.94"
-            />
-            <path
-              d="M12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+              clip-rule="evenodd"
+              d="M18.7719 10.7169C18.9316 10.2146 19 9.57534 19 8.84475V7.15525C19 6.42466 18.9088 5.80822 18.7491 5.2831C18.5895 4.75799 18.3615 4.3242 18.0651 3.98174C17.7687 3.63927 17.4267 3.38813 17.0162 3.22831C16.6058 3.06849 16.1726 3 15.671 3C15.1693 3 14.7133 3.06849 14.3257 3.22831C13.9381 3.38813 13.5732 3.63927 13.2996 3.98174C13.026 4.3242 12.798 4.78082 12.6384 5.2831C12.4788 5.78539 12.4104 6.42466 12.4104 7.15525V8.84475C12.4104 9.57534 12.5016 10.1918 12.6612 10.7169C12.8208 11.242 13.0488 11.6758 13.3452 12.0183C13.6416 12.3607 13.9837 12.6119 14.3941 12.7717C14.8045 12.9315 15.2377 13 15.7394 13C16.241 13 16.697 12.9315 17.0846 12.7717C17.4723 12.6119 17.8371 12.3607 18.1107 12.0183C18.3843 11.6758 18.6123 11.2192 18.7719 10.7169ZM7.30293 12.8626H9.24104V3.11373H9.03583L5 4.55209V6.12743L7.30293 5.41967V12.8626ZM17.062 6.88113C17.062 6.44734 17.0392 6.08204 16.9708 5.78524C16.9024 5.48844 16.8112 5.26013 16.6972 5.07748C16.5832 4.89483 16.4464 4.75784 16.264 4.68935C16.0815 4.62086 15.8991 4.5752 15.6939 4.5752C15.4887 4.5752 15.2835 4.62086 15.1239 4.68935C14.9643 4.75784 14.8047 4.89483 14.6907 5.07748C14.5767 5.26013 14.4855 5.48844 14.4171 5.78524C14.3486 6.08204 14.3258 6.44734 14.3258 6.88113V9.09574C14.3258 9.52953 14.3486 9.89483 14.4171 10.1916C14.4855 10.4884 14.5767 10.7396 14.6907 10.9222C14.8047 11.1049 14.9415 11.2419 15.1239 11.3104C15.3063 11.3788 15.4887 11.4245 15.6939 11.4245C15.8991 11.4245 16.1043 11.3788 16.264 11.3104C16.4236 11.2419 16.5832 11.1049 16.6972 10.9222C16.8112 10.7396 16.9024 10.4884 16.948 10.1916C16.9936 9.89483 17.0392 9.52953 17.0392 9.09574V6.88113H17.062ZM12.6287 21L17.0002 18L12.6287 15V21ZM8.00007 21L12.3715 18L8.00007 15V21Z"
+              fill-rule="evenodd"
             />
           </svg>
         </div>
@@ -601,7 +792,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
     </button>
     <button
       aria-label="Rewind 10 seconds"
-      class="emotion-10"
+      class="emotion-14"
       data-testid="audio-player-replay-button"
       type="button"
     >
@@ -613,22 +804,15 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
         >
           <svg
             aria-hidden="true"
-            class="emotion-7 emotion-8"
+            class="emotion-27"
             fill="currentColor"
-            focusable="false"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect
-              fill="none"
-              height="24"
-              width="24"
-            />
             <path
-              d="M11.99 5V1l-5 5 5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6h-2c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"
-            />
-            <path
-              d="M10.89 16h-.85v-3.26l-1.01.31v-.69l1.77-.63h.09V16zM15.17 14.24c0 .32-.03.6-.1.82s-.17.42-.29.57-.28.26-.45.33-.37.1-.59.1-.41-.03-.59-.1-.33-.18-.46-.33-.23-.34-.3-.57-.11-.5-.11-.82v-.74c0-.32.03-.6.1-.82s.17-.42.29-.57.28-.26.45-.33.37-.1.59-.1.41.03.59.1.33.18.46.33.23.34.3.57.11.5.11.82v.74zm-.85-.86c0-.19-.01-.35-.04-.48s-.07-.23-.12-.31-.11-.14-.19-.17-.16-.05-.25-.05-.18.02-.25.05-.14.09-.19.17-.09.18-.12.31-.04.29-.04.48v.97c0 .19.01.35.04.48s.07.24.12.32.11.14.19.17.16.05.25.05.18-.02.25-.05.14-.09.19-.17.09-.19.11-.32.04-.29.04-.48v-.97z"
+              clip-rule="evenodd"
+              d="M18.7719 10.7169C18.9316 10.2146 19 9.57534 19 8.84475V7.15525C19 6.42466 18.9088 5.80822 18.7491 5.2831C18.5895 4.75799 18.3615 4.3242 18.0651 3.98174C17.7687 3.63927 17.4267 3.38813 17.0162 3.22831C16.6058 3.06849 16.1726 3 15.671 3C15.1693 3 14.7133 3.06849 14.3257 3.22831C13.9381 3.38813 13.5732 3.63927 13.2996 3.98174C13.026 4.3242 12.798 4.78082 12.6384 5.2831C12.4788 5.78539 12.4104 6.42466 12.4104 7.15525V8.84475C12.4104 9.57534 12.5016 10.1918 12.6612 10.7169C12.8208 11.242 13.0488 11.6758 13.3452 12.0183C13.6416 12.3607 13.9837 12.6119 14.3941 12.7717C14.8045 12.9315 15.2377 13 15.7394 13C16.241 13 16.697 12.9315 17.0846 12.7717C17.4723 12.6119 17.8371 12.3607 18.1107 12.0183C18.3843 11.6758 18.6123 11.2192 18.7719 10.7169ZM7.30293 12.8626H9.24104V3.11373H9.03583L5 4.55209V6.12743L7.30293 5.41967V12.8626ZM17.062 6.88113C17.062 6.44734 17.0392 6.08204 16.9708 5.78524C16.9024 5.48844 16.8112 5.26013 16.6972 5.07748C16.5832 4.89483 16.4464 4.75784 16.264 4.68935C16.0815 4.62086 15.8991 4.5752 15.6939 4.5752C15.4887 4.5752 15.2835 4.62086 15.1239 4.68935C14.9643 4.75784 14.8047 4.89483 14.6907 5.07748C14.5767 5.26013 14.4855 5.48844 14.4171 5.78524C14.3486 6.08204 14.3258 6.44734 14.3258 6.88113V9.09574C14.3258 9.52953 14.3486 9.89483 14.4171 10.1916C14.4855 10.4884 14.5767 10.7396 14.6907 10.9222C14.8047 11.1049 14.9415 11.2419 15.1239 11.3104C15.3063 11.3788 15.4887 11.4245 15.6939 11.4245C15.8991 11.4245 16.1043 11.3788 16.264 11.3104C16.4236 11.2419 16.5832 11.1049 16.6972 10.9222C16.8112 10.7396 16.9024 10.4884 16.948 10.1916C16.9936 9.89483 17.0392 9.52953 17.0392 9.09574V6.88113H17.062ZM16.0001 21L11.6287 18L16.0001 15V21ZM11.3714 21L7 18L11.3714 15V21Z"
+              fill-rule="evenodd"
             />
           </svg>
         </div>
@@ -1668,7 +1852,7 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
     </span>
     <button
       aria-busy="true"
-      aria-label="Stop"
+      aria-label="Pause"
       aria-live="polite"
       aria-pressed="true"
       class="emotion-4"
@@ -1691,752 +1875,6 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
             <circle
               cx="50%"
               cy="50%"
-            />
-          </svg>
-        </div>
-      </div>
-    </button>
-  </section>
-</DocumentFragment>
-`;
-
-exports[`Audio Player Composable should render correctly when in autoplay 2`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  box-sizing: border-box;
-  background-color: #FAFAFA;
-  border-radius: 20rem;
-  margin: calc(16px/2 - 8px/2) calc(16px/2);
-  height: 8px;
-  width: 100%;
-}
-
-.emotion-2 {
-  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 50%;
-  background-color: #3358CC;
-  border-color: #FFFFFF;
-  height: 16px;
-  width: 16px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.emotion-2 svg {
-  fill: #C0C0C0;
-}
-
-.emotion-2:hover:not(:disabled) {
-  background-color: #2B4AAB;
-}
-
-.emotion-2:active:not(:disabled) {
-  background-color: #213A82;
-}
-
-.emotion-2:active:not(:disabled) svg {
-  fill: #535353;
-}
-
-.emotion-3 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.emotion-4 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 64px;
-  height: 64px;
-  padding: 16px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: #AEBFFF;
-  border-radius: 50%;
-  color: #3358CC;
-  margin: 0;
-  cursor: progress;
-}
-
-.emotion-4 svg {
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-4 svg {
-  fill: #3358CC;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-7 {
-  width: 32px;
-  height: 32px;
-  stroke: #3358CC;
-}
-
-.emotion-7 circle {
-  r: calc(50% - 2px);
-  fill: transparent;
-  stroke-width: 2px;
-  stroke-dasharray: 502;
-  stroke-dashoffset: 360;
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  transform-origin: 50% 50%;
-  will-change: stroke-dasharray;
-  will-change: stroke-dashoffset;
-  will-change: transform;
-  -webkit-animation: rotate 1s linear infinite;
-  animation: rotate 1s linear infinite;
-}
-
-<section
-    aria-label="Audio Player"
-  >
-    <audio
-      autoplay=""
-      data-testid="audio-element"
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    />
-    <div
-      class="emotion-0"
-      data-testid="audio-slider"
-    >
-      <div
-        class="emotion-1"
-        data-testid="audio-slider-track"
-        style="background: rgb(255, 255, 0);"
-        values="0"
-      >
-        <div
-          aria-describedby="mock-nk-1"
-          aria-label="seek bar"
-          aria-valuemax="1"
-          aria-valuemin="0"
-          aria-valuenow="0"
-          aria-valuetext="Playback time: 0 seconds of 0 seconds"
-          class="emotion-2"
-          data-testid="audio-slider-thumb"
-          draggable="false"
-          role="slider"
-          style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-          tabindex="0"
-          values="0"
-        />
-      </div>
-    </div>
-    <span
-      aria-hidden="true"
-      class="emotion-3"
-      id="mock-nk-1"
-    >
-      Use the arrow keys to fast forward or rewind
-    </span>
-    <button
-      aria-busy="true"
-      aria-label="Stop"
-      aria-live="polite"
-      aria-pressed="true"
-      class="emotion-4"
-      data-testid="audio-player-play-pause-button"
-      type="button"
-    >
-      <div
-        class="emotion-5"
-      >
-        <div
-          class="emotion-6"
-        >
-          <svg
-            aria-hidden="true"
-            class="emotion-7"
-            fill="currentColor"
-            viewBox="0 0 64 64"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="50%"
-              cy="50%"
-            />
-          </svg>
-        </div>
-      </div>
-    </button>
-  </section>
-</DocumentFragment>
-`;
-
-exports[`Audio Player Composable should render default display time label 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  box-sizing: border-box;
-  background-color: #FAFAFA;
-  border-radius: 20rem;
-  margin: calc(16px/2 - 8px/2) calc(16px/2);
-  height: 8px;
-  width: 100%;
-}
-
-.emotion-2 {
-  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 50%;
-  background-color: #3358CC;
-  border-color: #FFFFFF;
-  height: 16px;
-  width: 16px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.emotion-2 svg {
-  fill: #C0C0C0;
-}
-
-.emotion-2:hover:not(:disabled) {
-  background-color: #2B4AAB;
-}
-
-.emotion-2:active:not(:disabled) {
-  background-color: #213A82;
-}
-
-.emotion-2:active:not(:disabled) svg {
-  fill: #535353;
-}
-
-.emotion-3 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.emotion-4 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 64px;
-  height: 64px;
-  padding: 16px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: #AEBFFF;
-  border-radius: 50%;
-  color: #3358CC;
-  margin: 0;
-  cursor: progress;
-}
-
-.emotion-4 svg {
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-4 svg {
-  fill: #3358CC;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-7 {
-  width: 32px;
-  height: 32px;
-  stroke: #3358CC;
-}
-
-.emotion-7 circle {
-  r: calc(50% - 2px);
-  fill: transparent;
-  stroke-width: 2px;
-  stroke-dasharray: 502;
-  stroke-dashoffset: 360;
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  transform-origin: 50% 50%;
-  will-change: stroke-dasharray;
-  will-change: stroke-dashoffset;
-  will-change: transform;
-  -webkit-animation: rotate 1s linear infinite;
-  animation: rotate 1s linear infinite;
-}
-
-.emotion-8 {
-  margin: 0;
-  display: inline-block;
-  display: block;
-  background-color: transparent;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
-}
-
-.emotion-9 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3358CC;
-  margin: 0;
-  cursor: pointer;
-}
-
-.emotion-9 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-9 svg {
-  fill: #3358CC;
-}
-
-.emotion-9:hover:not(:disabled) {
-  background-color: #E0E7FF;
-}
-
-.emotion-9:active:not(:disabled) {
-  background-color: #AEBFFF;
-}
-
-.emotion-9:disabled {
-  background-color: transparent;
-  color: #C0C0C0;
-}
-
-.emotion-9:disabled svg {
-  fill: #C0C0C0;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-12 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #2E2E2E;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
-    transition-property: fill;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
-    transition-property: fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-<section
-    aria-label="Audio Player"
-  >
-    <audio
-      data-testid="audio-element"
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    />
-    <div
-      class="emotion-0"
-      data-testid="audio-slider"
-    >
-      <div
-        class="emotion-1"
-        data-testid="audio-slider-track"
-        style="background: rgb(255, 255, 0);"
-        values="0"
-      >
-        <div
-          aria-describedby="mock-nk-1"
-          aria-label="seek bar"
-          aria-valuemax="1"
-          aria-valuemin="0"
-          aria-valuenow="0"
-          aria-valuetext="Playback time: 0 seconds of 0 seconds"
-          class="emotion-2"
-          data-testid="audio-slider-thumb"
-          draggable="false"
-          role="slider"
-          style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-          tabindex="0"
-          values="0"
-        />
-      </div>
-    </div>
-    <span
-      aria-hidden="true"
-      class="emotion-3"
-      id="mock-nk-1"
-    >
-      Use the arrow keys to fast forward or rewind
-    </span>
-    <button
-      aria-busy="true"
-      aria-label="Play"
-      aria-live="polite"
-      aria-pressed="false"
-      class="emotion-4"
-      data-testid="audio-player-play-pause-button"
-      type="button"
-    >
-      <div
-        class="emotion-5"
-      >
-        <div
-          class="emotion-6"
-        >
-          <svg
-            aria-hidden="true"
-            class="emotion-7"
-            fill="currentColor"
-            viewBox="0 0 64 64"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="50%"
-              cy="50%"
-            />
-          </svg>
-        </div>
-      </div>
-    </button>
-    <span
-      class="emotion-8"
-      data-testid="audio-player-time-display"
-    >
-      00:00/00:00 
-    </span>
-    <button
-      aria-label="Fast forward for 10 seconds"
-      class="emotion-9"
-      data-testid="audio-player-forward-button"
-      type="button"
-    >
-      <div
-        class="emotion-5"
-      >
-        <div
-          class="emotion-6"
-        >
-          <svg
-            aria-hidden="true"
-            class="emotion-12 emotion-13"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="none"
-              height="24"
-              width="24"
-            />
-            <path
-              d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
-            />
-            <polygon
-              points="10.86,15.94 10.86,11.67 10.77,11.67 9,12.3 9,12.99 10.01,12.68 10.01,15.94"
-            />
-            <path
-              d="M12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
-            />
-          </svg>
-        </div>
-      </div>
-    </button>
-    <button
-      aria-label="Rewind 10 seconds"
-      class="emotion-9"
-      data-testid="audio-player-replay-button"
-      type="button"
-    >
-      <div
-        class="emotion-5"
-      >
-        <div
-          class="emotion-6"
-        >
-          <svg
-            aria-hidden="true"
-            class="emotion-12 emotion-13"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="none"
-              height="24"
-              width="24"
-            />
-            <path
-              d="M11.99 5V1l-5 5 5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6h-2c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"
-            />
-            <path
-              d="M10.89 16h-.85v-3.26l-1.01.31v-.69l1.77-.63h.09V16zM15.17 14.24c0 .32-.03.6-.1.82s-.17.42-.29.57-.28.26-.45.33-.37.1-.59.1-.41-.03-.59-.1-.33-.18-.46-.33-.23-.34-.3-.57-.11-.5-.11-.82v-.74c0-.32.03-.6.1-.82s.17-.42.29-.57.28-.26.45-.33.37-.1.59-.1.41.03.59.1.33.18.46.33.23.34.3.57.11.5.11.82v.74zm-.85-.86c0-.19-.01-.35-.04-.48s-.07-.23-.12-.31-.11-.14-.19-.17-.16-.05-.25-.05-.18.02-.25.05-.14.09-.19.17-.09.18-.12.31-.04.29-.04.48v.97c0 .19.01.35.04.48s.07.24.12.32.11.14.19.17.16.05.25.05.18-.02.25-.05.14-.09.19-.17.09-.19.11-.32.04-.29.04-.48v-.97z"
             />
           </svg>
         </div>
@@ -2676,9 +2114,9 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -2686,9 +2124,9 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3358CC;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
   margin: 0;
   cursor: pointer;
 }
@@ -2699,19 +2137,19 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-9 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
 }
 
 .emotion-9:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  background-color: #2B4AAB;
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #AEBFFF;
+  background-color: #213A82;
 }
 
 .emotion-9:disabled {
-  background-color: transparent;
+  background-color: #F4F4F4;
   color: #C0C0C0;
 }
 
@@ -2736,6 +2174,104 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-12 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-12::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-12::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-13 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #3358CC;
+  margin: 0;
+  cursor: pointer;
+}
+
+.emotion-13 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-13 svg {
+  fill: #3358CC;
+}
+
+.emotion-13:hover:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-13:active:not(:disabled) {
+  background-color: #AEBFFF;
+}
+
+.emotion-13:disabled {
+  background-color: transparent;
+  color: #C0C0C0;
+}
+
+.emotion-13:disabled svg {
+  fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-13 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-13 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-16 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2745,7 +2281,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
+  .emotion-16 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2753,7 +2289,29 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
+  .emotion-16 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-26 {
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-26 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-26 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2837,9 +2395,90 @@ exports[`Audio Player Composable should render with no errors 1`] = `
     >
       00:00/00:00 
     </span>
+    <a
+      class="emotion-9"
+      data-testid="buttonLink"
+      href="/"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <span
+            class="emotion-12"
+          >
+            read more
+          </span>
+        </div>
+      </div>
+    </a>
+    <button
+      aria-label="next"
+      class="emotion-13"
+      data-testid="audio-player-skip-next-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-16 emotion-17"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+    <button
+      aria-label="previous"
+      class="emotion-13"
+      data-testid="audio-player-skip-previous-button"
+      type="button"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-16 emotion-17"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
     <button
       aria-label="Fast forward for 10 seconds"
-      class="emotion-9"
+      class="emotion-13"
       data-testid="audio-player-forward-button"
       type="button"
     >
@@ -2851,25 +2490,15 @@ exports[`Audio Player Composable should render with no errors 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="emotion-12 emotion-13"
+            class="emotion-26"
             fill="currentColor"
-            focusable="false"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect
-              fill="none"
-              height="24"
-              width="24"
-            />
             <path
-              d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
-            />
-            <polygon
-              points="10.86,15.94 10.86,11.67 10.77,11.67 9,12.3 9,12.99 10.01,12.68 10.01,15.94"
-            />
-            <path
-              d="M12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+              clip-rule="evenodd"
+              d="M18.7719 10.7169C18.9316 10.2146 19 9.57534 19 8.84475V7.15525C19 6.42466 18.9088 5.80822 18.7491 5.2831C18.5895 4.75799 18.3615 4.3242 18.0651 3.98174C17.7687 3.63927 17.4267 3.38813 17.0162 3.22831C16.6058 3.06849 16.1726 3 15.671 3C15.1693 3 14.7133 3.06849 14.3257 3.22831C13.9381 3.38813 13.5732 3.63927 13.2996 3.98174C13.026 4.3242 12.798 4.78082 12.6384 5.2831C12.4788 5.78539 12.4104 6.42466 12.4104 7.15525V8.84475C12.4104 9.57534 12.5016 10.1918 12.6612 10.7169C12.8208 11.242 13.0488 11.6758 13.3452 12.0183C13.6416 12.3607 13.9837 12.6119 14.3941 12.7717C14.8045 12.9315 15.2377 13 15.7394 13C16.241 13 16.697 12.9315 17.0846 12.7717C17.4723 12.6119 17.8371 12.3607 18.1107 12.0183C18.3843 11.6758 18.6123 11.2192 18.7719 10.7169ZM7.30293 12.8626H9.24104V3.11373H9.03583L5 4.55209V6.12743L7.30293 5.41967V12.8626ZM17.062 6.88113C17.062 6.44734 17.0392 6.08204 16.9708 5.78524C16.9024 5.48844 16.8112 5.26013 16.6972 5.07748C16.5832 4.89483 16.4464 4.75784 16.264 4.68935C16.0815 4.62086 15.8991 4.5752 15.6939 4.5752C15.4887 4.5752 15.2835 4.62086 15.1239 4.68935C14.9643 4.75784 14.8047 4.89483 14.6907 5.07748C14.5767 5.26013 14.4855 5.48844 14.4171 5.78524C14.3486 6.08204 14.3258 6.44734 14.3258 6.88113V9.09574C14.3258 9.52953 14.3486 9.89483 14.4171 10.1916C14.4855 10.4884 14.5767 10.7396 14.6907 10.9222C14.8047 11.1049 14.9415 11.2419 15.1239 11.3104C15.3063 11.3788 15.4887 11.4245 15.6939 11.4245C15.8991 11.4245 16.1043 11.3788 16.264 11.3104C16.4236 11.2419 16.5832 11.1049 16.6972 10.9222C16.8112 10.7396 16.9024 10.4884 16.948 10.1916C16.9936 9.89483 17.0392 9.52953 17.0392 9.09574V6.88113H17.062ZM12.6287 21L17.0002 18L12.6287 15V21ZM8.00007 21L12.3715 18L8.00007 15V21Z"
+              fill-rule="evenodd"
             />
           </svg>
         </div>
@@ -2877,7 +2506,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
     </button>
     <button
       aria-label="Rewind 10 seconds"
-      class="emotion-9"
+      class="emotion-13"
       data-testid="audio-player-replay-button"
       type="button"
     >
@@ -2889,22 +2518,15 @@ exports[`Audio Player Composable should render with no errors 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="emotion-12 emotion-13"
+            class="emotion-26"
             fill="currentColor"
-            focusable="false"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect
-              fill="none"
-              height="24"
-              width="24"
-            />
             <path
-              d="M11.99 5V1l-5 5 5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6h-2c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"
-            />
-            <path
-              d="M10.89 16h-.85v-3.26l-1.01.31v-.69l1.77-.63h.09V16zM15.17 14.24c0 .32-.03.6-.1.82s-.17.42-.29.57-.28.26-.45.33-.37.1-.59.1-.41-.03-.59-.1-.33-.18-.46-.33-.23-.34-.3-.57-.11-.5-.11-.82v-.74c0-.32.03-.6.1-.82s.17-.42.29-.57.28-.26.45-.33.37-.1.59-.1.41.03.59.1.33.18.46.33.23.34.3.57.11.5.11.82v.74zm-.85-.86c0-.19-.01-.35-.04-.48s-.07-.23-.12-.31-.11-.14-.19-.17-.16-.05-.25-.05-.18.02-.25.05-.14.09-.19.17-.09.18-.12.31-.04.29-.04.48v.97c0 .19.01.35.04.48s.07.24.12.32.11.14.19.17.16.05.25.05.18-.02.25-.05.14-.09.19-.17.09-.19.11-.32.04-.29.04-.48v-.97z"
+              clip-rule="evenodd"
+              d="M18.7719 10.7169C18.9316 10.2146 19 9.57534 19 8.84475V7.15525C19 6.42466 18.9088 5.80822 18.7491 5.2831C18.5895 4.75799 18.3615 4.3242 18.0651 3.98174C17.7687 3.63927 17.4267 3.38813 17.0162 3.22831C16.6058 3.06849 16.1726 3 15.671 3C15.1693 3 14.7133 3.06849 14.3257 3.22831C13.9381 3.38813 13.5732 3.63927 13.2996 3.98174C13.026 4.3242 12.798 4.78082 12.6384 5.2831C12.4788 5.78539 12.4104 6.42466 12.4104 7.15525V8.84475C12.4104 9.57534 12.5016 10.1918 12.6612 10.7169C12.8208 11.242 13.0488 11.6758 13.3452 12.0183C13.6416 12.3607 13.9837 12.6119 14.3941 12.7717C14.8045 12.9315 15.2377 13 15.7394 13C16.241 13 16.697 12.9315 17.0846 12.7717C17.4723 12.6119 17.8371 12.3607 18.1107 12.0183C18.3843 11.6758 18.6123 11.2192 18.7719 10.7169ZM7.30293 12.8626H9.24104V3.11373H9.03583L5 4.55209V6.12743L7.30293 5.41967V12.8626ZM17.062 6.88113C17.062 6.44734 17.0392 6.08204 16.9708 5.78524C16.9024 5.48844 16.8112 5.26013 16.6972 5.07748C16.5832 4.89483 16.4464 4.75784 16.264 4.68935C16.0815 4.62086 15.8991 4.5752 15.6939 4.5752C15.4887 4.5752 15.2835 4.62086 15.1239 4.68935C14.9643 4.75784 14.8047 4.89483 14.6907 5.07748C14.5767 5.26013 14.4855 5.48844 14.4171 5.78524C14.3486 6.08204 14.3258 6.44734 14.3258 6.88113V9.09574C14.3258 9.52953 14.3486 9.89483 14.4171 10.1916C14.4855 10.4884 14.5767 10.7396 14.6907 10.9222C14.8047 11.1049 14.9415 11.2419 15.1239 11.3104C15.3063 11.3788 15.4887 11.4245 15.6939 11.4245C15.8991 11.4245 16.1043 11.3788 16.264 11.3104C16.4236 11.2419 16.5832 11.1049 16.6972 10.9222C16.8112 10.7396 16.9024 10.4884 16.948 10.1916C16.9936 9.89483 17.0392 9.52953 17.0392 9.09574V6.88113H17.062ZM16.0001 21L11.6287 18L16.0001 15V21ZM11.3714 21L7 18L11.3714 15V21Z"
+              fill-rule="evenodd"
             />
           </svg>
         </div>
