@@ -10,6 +10,11 @@ import {getColorCssFromTheme, styled} from '../../utils/style';
 export default {
   title: 'NewsKit Light/layer',
   component: () => 'None',
+  // this story is only for testing purposes so we can ignore all rules
+  disabledRules: [
+    // colored layers in this story are only for demo purposes that's why this is disabled
+    'color-contrast',
+  ],
 };
 
 const Layer = styled(UnstyledLayer)<{color?: string}>`

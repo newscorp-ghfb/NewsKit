@@ -126,14 +126,14 @@ export const StorySelect = () =>
           <Label htmlFor="id-2" size={'medium' as TextFieldSize}>
             Label
           </Label>
-          <Select aria-describedby="id-2-at" id="id-2" size="medium">
+          <Select aria-describedby="id-1-at" id="id-1" size="medium">
             {items.map(item => (
               <SelectOption key={item} value={item}>
                 {item}
               </SelectOption>
             ))}
           </Select>
-          <AssistiveText id="id-2-at" size={'medium' as TextFieldSize}>
+          <AssistiveText id="id-1-at" size={'medium' as TextFieldSize}>
             Assistive Text
           </AssistiveText>
         </div>
