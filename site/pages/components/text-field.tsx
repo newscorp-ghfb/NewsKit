@@ -84,13 +84,13 @@ const commonOverridesRows = [
     description: 'If provided, this overrides the minHeight of the Text Field.',
   },
   {
-    attribute: 'button.stylePreset',
+    attribute: 'stylePreset',
     type: 'MQ<string>',
     default: 'inputField',
     description: 'If provided, overrides the stylePreset of the Text Field.',
   },
   {
-    attribute: 'button.typographyPreset',
+    attribute: 'typographyPreset',
     type: 'MQ<string>',
     default: [
       'small = utilityBody020',
@@ -100,7 +100,7 @@ const commonOverridesRows = [
     description: 'If provided, this overrides the input & placeholder text.',
   },
   {
-    attribute: 'button.spaceInset',
+    attribute: 'spaceInset',
     type: 'MQ<string>',
     default: [
       'small = spaceInset020',
@@ -111,7 +111,7 @@ const commonOverridesRows = [
       'If provided, this overrides the inset space within the Text Field.',
   },
   {
-    attribute: 'button.startEnhancer.iconSize',
+    attribute: 'startEnhancer.iconSize',
     type: 'MQ<string>',
     default: 'iconSize020',
     description:
