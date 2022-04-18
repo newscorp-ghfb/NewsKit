@@ -161,6 +161,11 @@ const formInputPropsFooter = (
       The NewsKit FormInput TextField supports different native HTML attributes,
       eg. defining the input type as password, or email etc.
     </InlineMessage>
+    <Block spaceStack="space030" />
+    <InlineMessage icon={infoIcon} role="region" aria-label="Engineer check">
+      Engineer to check the validation related props at the time of
+      implementation.
+    </InlineMessage>
   </>
 );
 
@@ -846,11 +851,15 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           The Text Field has a range of props that can be used to define an
           appropriate experience for different use cases.
           <Block spaceStack="space080" />
-          <InlineMessage>
+          <InlineMessage
+            icon={infoIcon}
+            role="region"
+            aria-label="components exported"
+          >
             There are two components exported from the package, one for use
-            within the NewsKit{' '}
-            <Link href="/components/form/">Form component</Link>, and one for
-            use as a controlled component.
+            within the{' '}
+            <Link href="/components/form/">NewsKit Form component</Link>, and
+            one for use as a controlled component.
           </InlineMessage>
         </>
       ),
@@ -861,8 +870,8 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             <>
               The FormInput TextField has a range of props that can be used to
               define an appropriate experience for different use cases. Use this
-              component within the NewsKit{' '}
-              <Link href="/components/form/">Form component</Link>.
+              component within the{' '}
+              <Link href="/components/form/">NewsKit Form component</Link>.
             </>
           ),
           propsRows: commonPropsRows,
