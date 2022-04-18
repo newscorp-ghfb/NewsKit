@@ -11,13 +11,13 @@ export const INK_DESCRIPTION = {
   inkPositive: (
     <>
       Text and icons for success messages, & feedback notifications (valid) e.g.
-      assistive text in a <Link href="/components/text-field/">Text Field</Link>
+      assistive text in a <Link href="/components/text-input/">Text Input</Link>
     </>
   ),
   inkNegative: (
     <>
       Text and icons for error messages, & feedback notifications (invalid) e.g.
-      assistive text in a <Link href="/components/text-field/">Text Field</Link>
+      assistive text in a <Link href="/components/text-input/">Text Input</Link>
     </>
   ),
   inkNotice:
@@ -271,7 +271,7 @@ export const INTERACTIVE_DESCRIPTION = {
   interactiveInput010: (
     <>
       Background colour applied to the Hover state of the{' '}
-      <Link href="/components/text-field/">Text Field</Link>, & the Select
+      <Link href="/components/text-input/">Text Input</Link>, & the Select
       component button, & the list item
     </>
   ),
