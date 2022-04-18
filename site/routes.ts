@@ -340,6 +340,13 @@ export default [
             illustration: 'components/select/select-illustration',
           },
           {
+            title: 'Text Input',
+            page: true,
+            id: '/components/text-input',
+            description: 'Lets users enter and edit text.',
+            illustration: 'components/text-input-illustration',
+          },
+          {
             title: 'Text Field',
             page: true,
             id: '/components/text-field',
