@@ -19,7 +19,7 @@ export default {
 
 export const ResponsiveExample = () => (
   <>
-    <StorybookHeading>Responsive grid with mixed sizing</StorybookHeading>
+    <StorybookSubHeading>Responsive grid with mixed sizing</StorybookSubHeading>
     <GridLayout
       columns={{md: '1fr 1fr', lg: '1fr sizing120 300px 1fr'}}
       rows={{md: '1fr 1fr', lg: '1fr sizing120 300px 1fr'}}
@@ -74,11 +74,17 @@ export const ResponsiveExample = () => (
           "A E"
     `,
       }}
+      columns={{xs: '1fr', md: '1fr 1fr', lg: '1fr 200px'}}
+      rows={{
+        xs: '100px repeat(4, 50px)',
+        md: '100px repeat(2, 50px)',
+        lg: 'repeat(4, 50px)',
+      }}
       rowGap={{xs: 'space010', md: 'space040'}}
       columnGap={{md: 'space030', lg: 'space050'}}
     >
       <GridLayoutItem area="A">
-        <GridBox>A</GridBox>
+        <GridBox style={{minHeight: '100%'}}>A</GridBox>
       </GridLayoutItem>
       <GridLayoutItem area="B">
         <GridBox>B</GridBox>
@@ -124,13 +130,19 @@ export const ResponsiveExample = () => (
           "A E"  
     `,
       }}
+      columns={{xs: '1fr', md: '1fr 1fr', lg: '1fr 200px'}}
+      rows={{
+        xs: '100px repeat(4, 50px)',
+        md: '100px repeat(2, 50px)',
+        lg: 'repeat(4, 50px)',
+      }}
       rowGap={{xs: 'space010', md: 'space040'}}
       columnGap={{md: 'space030', lg: 'space050'}}
     >
       {Areas => (
         <>
           <Areas.A>
-            <GridBox>A</GridBox>
+            <GridBox style={{minHeight: '100%'}}>A</GridBox>
           </Areas.A>
           <Areas.B>
             <GridBox>B</GridBox>
@@ -154,9 +166,9 @@ export const MinMaxRepeat = () => {
   const boxes = Array.from(Array(20)).map((_, i) => <GridBox>{i} box</GridBox>);
   return (
     <>
-      <StorybookHeading>MinMax with repeat</StorybookHeading>
+      <StorybookHeading>Repeat with auto-fill and minmax</StorybookHeading>
       <GridLayout
-        columns="repeat(4, minmax(100px, 200px))"
+        columns="repeat(auto-fill, minmax(200px, 1fr))"
         columnGap="20px"
         rowGap="20px"
       >
@@ -246,7 +258,7 @@ export const CardWithGrid = () => (
       teaser="this is the teaser"
     />
     <Block spaceStack="100px" />
-    <hr />
+    <Divider />
     <Block spaceStack="100px" />
     <GridTeaser
       image="/placeholder-3x2.png"

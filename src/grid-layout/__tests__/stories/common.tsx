@@ -116,4 +116,5 @@ export const BlockLayout3H = ({
 export const GridBox = styled.div`
   padding: 10px;
   border: 1px solid orange;
+  box-sizing: border-box;
 `;
