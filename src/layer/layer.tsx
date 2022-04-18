@@ -19,8 +19,14 @@ export const Layer: React.FC<LayerProps> = ({
 
   const parentLayer = useLayer(); // Needed for nesting
 
-  const container = React.useMemo(() => document.createElement('div'), []);
+  const container = React.useMemo(
+    () => typeof document !== 'undefined' && document.createElement('div'),
+    [],
+  );
   useLayoutEffect(() => {
+    // SSR only
+    if (!container || typeof document === 'undefined') return;
+
     let target = layerOrganizerHost || document.body;
     if (appendToRef && appendToRef.current && appendToRef.current.appendChild) {
       target = appendToRef.current;
@@ -28,18 +34,27 @@ export const Layer: React.FC<LayerProps> = ({
       target = parentLayer;
     }
 
+    if (!target) return;
+
     const classList = [LAYER_CLASSNAME];
     if (className) className.split(' ').forEach(item => classList.push(item));
     classList.forEach(item => container.classList.add(item));
 
     target.appendChild(container);
+    // eslint-disable-next-line consistent-return
     return () => {
-      target.removeChild(container);
+      if (target) {
+        target.removeChild(container);
+      }
     };
   }, [container, parentLayer, layerOrganizerHost, appendToRef, className]);
 
-  return createPortal(
-    <LayerContextProvider value={container}>{children}</LayerContextProvider>,
-    container,
-  );
+  return typeof document === 'undefined' || !container
+    ? null
+    : createPortal(
+        <LayerContextProvider value={container}>
+          {children}
+        </LayerContextProvider>,
+        container,
+      );
 };
