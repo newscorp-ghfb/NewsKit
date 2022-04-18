@@ -345,7 +345,7 @@ export default [
             id: '/components/text-field',
             description:
               'Text Fields allow users to enter and edit text content into a UI. They typically appear in forms.',
-            illustration: 'components/text-input/hero',
+            illustration: 'components/text-field/hero',
           },
         ],
       },
