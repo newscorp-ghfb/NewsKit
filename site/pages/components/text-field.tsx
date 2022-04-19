@@ -329,9 +329,8 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
                 target="_blank"
               >
                 For more information, please refer to the HTML autocomplete
-                attribute
+                attribute.
               </Link>
-              .
             </>
           ),
           media: getIllustrationComponent(
@@ -349,9 +348,8 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
                 target="_blank"
               >
                 For more information, please refer to the HTML input attribute
-                types
+                types.
               </Link>
-              .
             </>
           ),
           media: getIllustrationComponent(
@@ -369,9 +367,8 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
                 target="_blank"
               >
                 For more information, please refer to the HTML input attribute
-                types
+                types.
               </Link>
-              .
             </>
           ),
           media: getIllustrationComponent(
@@ -389,9 +386,8 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
                 target="_blank"
               >
                 For more information, please refer to the HTML input attribute
-                types
+                types.
               </Link>
-              .
             </>
           ),
           media: getIllustrationComponent(
@@ -413,7 +409,6 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               >
                 For more information, please refer to the HTML input types.
               </Link>
-              .
             </>
           ),
           media: getIllustrationComponent('components/text-field/options/type'),
