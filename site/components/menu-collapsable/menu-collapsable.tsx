@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import {
   Block,
+  ButtonSize,
   Divider,
   Flow,
   H2,
+  IconButton,
   IconOutlinedLaunch,
   Menu,
   MenuGroup,
@@ -14,6 +16,26 @@ import {ThemeSwitch} from '../theme-switch';
 import {IconExpandLess, IconExpandMore} from '../icons';
 import {MenuCollapsable} from './menu-styled';
 
+export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
+  href ? (
+    <Stack
+      flow="horizontal-center"
+      spaceInline="space040"
+      spaceStack="space000"
+    >
+      <IconButton
+        size={ButtonSize.Small}
+        aria-label="github link"
+        href={href}
+        target="_blank"
+        overrides={{
+          stylePreset: 'iconButtonMinimalSecondary',
+        }}
+      >
+        <IconOutlinedLaunch overrides={{size: 'iconSize020'}} />
+      </IconButton>
+    </Stack>
+  ) : null;
 type NavProps = {
   title: string;
   id: string;
@@ -130,7 +152,7 @@ export const MenuNav = ({
       <Block spaceStack="space050" />
       <Stack flow={Flow.HorizontalStretch} stackDistribution="space-between">
         <H2 overrides={{typographyPreset: 'utilityLabel030'}}>Github</H2>
-        <IconOutlinedLaunch overrides={{size: 'iconSize020'}} />
+        <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
       </Stack>
       <Block spaceStack="space050" />
       <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
