@@ -44,4 +44,7 @@ export const StyledFeatureCardVerticalMedia = styled.div<{stylePreset: string}>`
 export const StyledCardLink = styled(Link)`
   height: 100%;
   display: block;
+  > span > div {
+    width: 100%;
+  }
 `;

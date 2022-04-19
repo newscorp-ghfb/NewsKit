@@ -1070,6 +1070,10 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   }
 }
 
+.emotion-0>span>div {
+  width: 100%;
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1810,6 +1814,10 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
   }
 }
 
+.emotion-0>span>div {
+  width: 100%;
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2330,6 +2338,10 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   }
 }
 
+.emotion-0>span>div {
+  width: 100%;
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2783,6 +2795,10 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-0>span>div {
+  width: 100%;
 }
 
 .emotion-1 {
@@ -3877,6 +3893,10 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
+}
+
+.emotion-0>span>div {
+  width: 100%;
 }
 
 .emotion-1 {

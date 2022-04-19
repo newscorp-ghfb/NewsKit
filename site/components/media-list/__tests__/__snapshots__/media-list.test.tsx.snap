@@ -991,6 +991,10 @@ exports[`Media List renders with feature cardscards 1`] = `
   text-decoration: none;
 }
 
+.emotion-4>span>div {
+  width: 100%;
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
