@@ -71,7 +71,10 @@ export const MenuNav = ({
                   title={title}
                   overrides={{
                     title: {
-                      typographyPreset: 'utilityButton030',
+                      typographyPreset: {
+                        xs: 'utilityHeading010',
+                        lg: 'utilityHeading030',
+                      },
                       stylePreset: 'inkContrast',
                       spaceInset: 'space030',
                       spaceInline: 'space040',
