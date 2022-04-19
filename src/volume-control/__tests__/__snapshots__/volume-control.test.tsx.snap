@@ -301,9 +301,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="0"
@@ -311,8 +308,9 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
-        aria-valuemax="1"
-        aria-valuemin="0"
+        aria-orientation="horizontal"
+        aria-valuemax="0"
+        aria-valuemin="1"
         aria-valuenow="0"
         aria-valuetext="volume level 0 of 10"
         class="emotion-8"
@@ -685,9 +683,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="0.8"
@@ -695,8 +690,9 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
-        aria-valuemax="1"
-        aria-valuemin="0"
+        aria-orientation="horizontal"
+        aria-valuemax="0"
+        aria-valuemin="1"
         aria-valuenow="0.8"
         aria-valuetext="volume level 8 of 10"
         class="emotion-8"
@@ -1069,9 +1065,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="1"
@@ -1079,8 +1072,9 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
-        aria-valuemax="1"
-        aria-valuemin="0"
+        aria-orientation="horizontal"
+        aria-valuemax="0"
+        aria-valuemin="1"
         aria-valuenow="1"
         aria-valuetext="volume level 10 of 10"
         class="emotion-8"
@@ -1452,9 +1446,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
       </button>
     </div>
     <div
-      aria-orientation="vertical"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="1"
@@ -1462,8 +1453,9 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
-        aria-valuemax="1"
-        aria-valuemin="0"
+        aria-orientation="vertical"
+        aria-valuemax="0"
+        aria-valuemin="1"
         aria-valuenow="1"
         aria-valuetext="volume level 10 of 10"
         class="emotion-8"
@@ -1836,9 +1828,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="0"
@@ -1846,8 +1835,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
-        aria-valuemax="1"
-        aria-valuemin="0"
+        aria-orientation="horizontal"
+        aria-valuemax="0"
+        aria-valuemin="1"
         aria-valuenow="0"
         aria-valuetext="volume level 0 of 10"
         class="emotion-8"
@@ -2220,9 +2210,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="0.7"
@@ -2230,8 +2217,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
-        aria-valuemax="1"
-        aria-valuemin="0"
+        aria-orientation="horizontal"
+        aria-valuemax="0"
+        aria-valuemin="1"
         aria-valuenow="0.7"
         aria-valuetext="volume level 7 of 10"
         class="emotion-8"
@@ -2604,9 +2592,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="0"
@@ -2614,8 +2599,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
-        aria-valuemax="1"
-        aria-valuemin="0"
+        aria-orientation="horizontal"
+        aria-valuemax="0"
+        aria-valuemin="1"
         aria-valuenow="0"
         aria-valuetext="volume level 0 of 10"
         class="emotion-8"
@@ -2988,9 +2974,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="0.7"
@@ -2998,8 +2981,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
-        aria-valuemax="1"
-        aria-valuemin="0"
+        aria-orientation="horizontal"
+        aria-valuemax="0"
+        aria-valuemin="1"
         aria-valuenow="0.7"
         aria-valuetext="volume level 7 of 10"
         class="emotion-8"
@@ -3372,9 +3356,6 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="1"
@@ -3382,8 +3363,9 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
-        aria-valuemax="1"
-        aria-valuemin="0"
+        aria-orientation="horizontal"
+        aria-valuemax="0"
+        aria-valuemin="1"
         aria-valuenow="1"
         aria-valuetext="volume level 10 of 10"
         class="emotion-8"
