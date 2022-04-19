@@ -236,6 +236,10 @@ commands:
       - run:
           name: Close the Applitools Batch
           command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
+      - store_test_results:
+          path: applitools-logs
+      - store_artifacts:
+          path: applitools-logs
       - store_artifacts:
           path: cypress/screenshots
       - store_artifacts:
@@ -551,6 +555,10 @@ jobs:
       - run:
           name: Close the Applitools Batch
           command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
+      - store_test_results:
+          path: applitools-logs
+      - store_artifacts:
+          path: applitools-logs
       - slack/status:
           <<: *slack_status
 
