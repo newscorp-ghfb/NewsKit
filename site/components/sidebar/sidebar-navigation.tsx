@@ -100,7 +100,13 @@ const Section: React.FC<SectionProps> = ({section, activePagePath}) => (
   </StyledSectionContainer>
 );
 
-export const SidebarNav: React.FC = () => {
+export const SidebarNav = ({
+  toggleTheme,
+  themeMode,
+}: {
+  toggleTheme: () => void;
+  themeMode: string;
+}) => {
   const path = useRouter().pathname;
 
   const currentRoute = path.match(/\/[A-z\d-]*/g);
@@ -111,7 +117,12 @@ export const SidebarNav: React.FC = () => {
     <StyledSidebarNav role="navigation" aria-label="Sidebar">
       <>
         <Visible xs sm md>
-          <MenuNav path={path} menu={routes} />
+          <MenuNav
+            path={path}
+            menu={routes}
+            toggleTheme={toggleTheme}
+            themeMode={themeMode}
+          />
         </Visible>
         <Visible lg xl>
           <StyledNavigationWrapper role="list">

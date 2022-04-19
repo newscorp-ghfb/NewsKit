@@ -16,6 +16,8 @@ interface SidebarProps {
   sidebarOpen: boolean;
   handleSidebarClick: () => void;
   hideSidebar?: boolean;
+  toggleTheme: () => void;
+  themeMode: string;
 }
 interface SidebarWrapperProps {
   open: boolean;
@@ -63,6 +65,8 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
 
 const Sidebar: React.FC<SidebarProps> = ({
   sidebarOpen,
+  toggleTheme,
+  themeMode,
   handleSidebarClick,
   hideSidebar,
 }) => (
@@ -75,7 +79,7 @@ const Sidebar: React.FC<SidebarProps> = ({
     >
       <Block spaceInset="space010" />
 
-      <SidebarNav />
+      <SidebarNav toggleTheme={toggleTheme} themeMode={themeMode} />
     </SidebarWrapper>
 
     <Overlay

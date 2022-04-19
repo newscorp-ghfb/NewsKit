@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Flow, H2, Menu, MenuGroup, MenuItem, Stack} from 'newskit';
+import {ThemeSwitch} from '../theme-switch';
 import {IconExpandLess, IconExpandMore} from '../icons';
 import {MenuCollapsable} from './menu-styled';
 
@@ -18,9 +19,13 @@ type SubNavItemProps = NavProps & SubNavProps;
 
 export const MenuNav = ({
   path,
+  toggleTheme,
+  themeMode,
   menu,
 }: {
   path: string;
+  toggleTheme: () => void;
+  themeMode: string;
   menu: SubNavItemProps[];
 }) => {
   const [openPanelIds, setOpenPanelIds] = useState<Array<number>>([]);
@@ -107,6 +112,10 @@ export const MenuNav = ({
           {subNav && createMenuItem(subNav)}
         </MenuCollapsable>
       ))}
+      <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
+        <H2 overrides={{typographyPreset: 'utilityLabel030'}}>Dark theme</H2>
+        <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />
+      </Stack>
     </Menu>
   );
 };
