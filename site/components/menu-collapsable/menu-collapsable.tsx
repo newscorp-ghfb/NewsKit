@@ -1,5 +1,15 @@
 import React, {useEffect, useState} from 'react';
-import {Flow, H2, Menu, MenuGroup, MenuItem, Stack} from 'newskit';
+import {
+  Block,
+  Divider,
+  Flow,
+  H2,
+  IconOutlinedLaunch,
+  Menu,
+  MenuGroup,
+  MenuItem,
+  Stack,
+} from 'newskit';
 import {ThemeSwitch} from '../theme-switch';
 import {IconExpandLess, IconExpandMore} from '../icons';
 import {MenuCollapsable} from './menu-styled';
@@ -112,6 +122,14 @@ export const MenuNav = ({
           {subNav && createMenuItem(subNav)}
         </MenuCollapsable>
       ))}
+      <Block spaceStack="space050" />
+      <Divider />
+      <Block spaceStack="space050" />
+      <Stack flow={Flow.HorizontalStretch} stackDistribution="space-between">
+        <H2 overrides={{typographyPreset: 'utilityLabel030'}}>Github</H2>
+        <IconOutlinedLaunch overrides={{size: 'iconSize020'}} />
+      </Stack>
+      <Block spaceStack="space050" />
       <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
         <H2 overrides={{typographyPreset: 'utilityLabel030'}}>Dark theme</H2>
         <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />
