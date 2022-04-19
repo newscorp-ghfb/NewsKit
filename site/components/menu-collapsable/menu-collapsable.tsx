@@ -155,10 +155,8 @@ export const MenuNav = ({
         <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
       </Stack>
       <Block spaceStack="space050" />
-      <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
-        <H2 overrides={{typographyPreset: 'utilityLabel030'}}>Dark theme</H2>
-        <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />
-      </Stack>
+
+      <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} textTheme />
     </Menu>
   );
 };
