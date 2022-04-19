@@ -266,7 +266,11 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                   <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
                 </StackChild>
 
-                <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />
+                <ThemeSwitch
+                  size={ButtonSize.Medium}
+                  toggle={toggleTheme}
+                  themeMode={themeMode}
+                />
               </Stack>
             </Visible>
           </Cell>

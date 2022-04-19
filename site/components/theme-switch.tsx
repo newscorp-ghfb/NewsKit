@@ -1,20 +1,19 @@
 import * as React from 'react';
-import {ButtonSize, IconButton} from 'newskit';
+import {FlagProps, IconButton} from 'newskit';
 import {IconFilledLight, IconFilledDark} from './icons';
 
 interface ThemeSwitchProps {
   toggle: () => void;
   themeMode: string;
 }
-export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
-  toggle,
-  themeMode,
-}) => {
+export const ThemeSwitch: React.FC<
+  ThemeSwitchProps & {size?: FlagProps['size']}
+> = ({size, toggle, themeMode}) => {
   const isDark = () => themeMode === 'dark';
 
   return (
     <IconButton
-      size={ButtonSize.Medium}
+      size={size}
       eventContext={{
         currentThemeMode: themeMode,
       }}
