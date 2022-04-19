@@ -5,7 +5,7 @@ import {
   getSizingFromTheme,
   getSpacingCssFromTheme,
   styled,
-} from 'newskit*';
+} from 'newskit';
 
 import React from 'react';
 import {useMenuContext} from '../../../src/menu/context';
@@ -24,9 +24,7 @@ const StyledMenuCollapsableItem = styled.li<
 >`
   ${getSpacingCssFromTheme('marginTop', 'space030')};
   ${getSpacingCssFromTheme('marginBottom', 'space000')};
-  & .nk-menu-group {
-    ${getSpacingCssFromTheme('marginTop', 'space030')};
-  }
+
   & h2 {
     ${getSpacingCssFromTheme('marginBottom', 'space030')};
   }
@@ -34,8 +32,10 @@ const StyledMenuCollapsableItem = styled.li<
     overflow: hidden;
     max-height: 0px;
     transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
+    ${getSpacingCssFromTheme('marginBottom', 'space000')};
   }
   &.expanded > li {
+    ${getSpacingCssFromTheme('marginBottom', 'space030')};
     max-height: 9999px;
     transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
     transition-delay: 0s;
@@ -51,6 +51,7 @@ const StyledMenuCollapsableItem = styled.li<
       height: ${getSizingFromTheme('sizing070')};
       width: ${getSizingFromTheme('sizing030')};
       top: ${getSizingFromTheme('sizing010')};
+
       ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
     }
   }

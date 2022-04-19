@@ -100,14 +100,15 @@ export default [
     id: '/theme',
     subNav: [
       {
+        title: 'Overview',
+        page: true,
+        id: '/theme/overview',
+      },
+      {
         title: 'Foundation',
         id: '/theme/foundation',
+
         subNav: [
-          {
-            title: 'Overview',
-            page: true,
-            id: '/theme/overview',
-          },
           {
             title: 'Borders',
             page: true,
