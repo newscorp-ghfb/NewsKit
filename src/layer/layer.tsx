@@ -23,6 +23,7 @@ export const Layer: React.FC<LayerProps> = ({
     () => typeof document !== 'undefined' && document.createElement('div'),
     [],
   );
+
   useLayoutEffect(() => {
     // SSR only
     if (!container || typeof document === 'undefined') return;
@@ -50,7 +51,7 @@ export const Layer: React.FC<LayerProps> = ({
   }, [container, parentLayer, layerOrganizerHost, appendToRef, className]);
 
   return typeof document === 'undefined' || !container
-    ? null
+    ? children
     : createPortal(
         <LayerContextProvider value={container}>
           {children}
