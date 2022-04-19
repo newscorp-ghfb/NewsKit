@@ -5,6 +5,7 @@ import {
   getStylePresetFromTheme,
   styled,
 } from 'newskit';
+import {Link} from '../link';
 
 export const StyledCardHorizontalInset = styled(CardInset)`
   transition-property: box-shadow;
@@ -37,5 +38,13 @@ export const StyledFeatureCardVerticalMedia = styled.div<{stylePreset: string}>`
   height: 18vh;
   ${getMediaQueryFromTheme('lg')} {
     height: 200px;
+  }
+`;
+
+export const StyledCardLink = styled(Link)`
+  height: 100%;
+  display: block;
+  > span > div {
+    width: 100%;
   }
 `;

@@ -17,3 +17,8 @@ export interface FeatureCardProps
     };
   };
 }
+
+export type OptionalLinkWrapperProps = Pick<CardProps, 'href'>;
+export type OptionalButtonLinkWrapperProps = Pick<CardProps, 'href'> & {
+  buttonHref?: string;
+};
