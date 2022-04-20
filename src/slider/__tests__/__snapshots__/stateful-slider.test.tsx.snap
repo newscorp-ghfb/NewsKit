@@ -115,8 +115,8 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
       <div
         aria-label="slider"
         aria-orientation="horizontal"
-        aria-valuemax="25"
-        aria-valuemin="75"
+        aria-valuemax="75"
+        aria-valuemin="25"
         aria-valuenow="40"
         class="emotion-2"
         data-testid="slider-thumb"
