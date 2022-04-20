@@ -288,10 +288,10 @@ const Index = (layoutProps: LayoutProps) => {
       <div>
         <Button onClick={() => setShowModal(true)}>Open modal</Button>
         <Button onClick={() => setShowDrawer(true)}>Open drawer</Button>
-        {/* <Select placeholder="select">
+        <Select placeholder="select">
           <SelectOption value="1">uno</SelectOption>
           <SelectOption value="2">duo</SelectOption>
-        </Select> */}
+        </Select>
         <Drawer open={showDrawer} onDismiss={() => setShowDrawer(false)}>
           Drawer
         </Drawer>

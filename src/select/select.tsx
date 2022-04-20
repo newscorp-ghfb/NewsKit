@@ -220,24 +220,22 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           {...restProps}
         />
         <Portal>
-          <ThemeProvider theme={useTheme()}>
-            <SelectPanel
-              isOpen={isOpen}
-              overrides={overrides}
-              width={width}
-              height={height}
-              top={top}
-              left={left}
-              size={size}
-              buttonRef={localInputRef}
-              renderInModal={renderInModal}
-              closeMenu={closeMenu}
-              {...downshiftMenuPropsExceptRef}
-              ref={composeRefs(panelRef, downshiftMenuPropsRef)}
-            >
-              {optionsAsChildren}
-            </SelectPanel>
-          </ThemeProvider>
+          <SelectPanel
+            isOpen={isOpen}
+            overrides={overrides}
+            width={width}
+            height={height}
+            top={top}
+            left={left}
+            size={size}
+            buttonRef={localInputRef}
+            renderInModal={renderInModal}
+            closeMenu={closeMenu}
+            {...downshiftMenuPropsExceptRef}
+            ref={composeRefs(panelRef, downshiftMenuPropsRef)}
+          >
+            {optionsAsChildren}
+          </SelectPanel>
         </Portal>
       </>
     );

@@ -1,6 +1,5 @@
 import React, {useRef, useEffect} from 'react';
 import {CSSTransition} from 'react-transition-group';
-import {ThemeProvider} from '@emotion/react';
 import {DrawerProps} from './types';
 import {StyledDrawer} from './styled';
 import {BaseDialogFunction} from '../dialog';
@@ -51,51 +50,49 @@ const ThemelessDrawer: React.FC<DrawerProps> = ({
 
   return (
     <OuterWrapper>
-      <ThemeProvider theme={useTheme()}>
-        <BaseDialogFunction
-          open={open}
-          restoreFocusTo={restoreFocusTo}
-          onDismiss={onDismiss}
-          hideOverlay={hideOverlay}
-          disableFocusTrap={disableFocusTrap}
-          renderOverlay={handleOverlayClick => (
-            <Overlay
+      <BaseDialogFunction
+        open={open}
+        restoreFocusTo={restoreFocusTo}
+        onDismiss={onDismiss}
+        hideOverlay={hideOverlay}
+        disableFocusTrap={disableFocusTrap}
+        renderOverlay={handleOverlayClick => (
+          <Overlay
+            open={open}
+            onClick={handleOverlayClick}
+            overrides={overlayOverrides}
+          />
+        )}
+      >
+        {handleCloseButtonClick => (
+          <CSSTransition
+            in={open}
+            timeout={getTransitionDuration(
+              `${drawerPath}.panel.${placement}`,
+              '',
+            )({theme, overrides})}
+            classNames="nk-drawer"
+            appear
+          >
+            <StyledDrawer
+              aria-hidden={!open}
               open={open}
-              onClick={handleOverlayClick}
-              overrides={overlayOverrides}
-            />
-          )}
-        >
-          {handleCloseButtonClick => (
-            <CSSTransition
-              in={open}
-              timeout={getTransitionDuration(
-                `${drawerPath}.panel.${placement}`,
-                '',
-              )({theme, overrides})}
-              classNames="nk-drawer"
-              appear
+              disableFocusTrap={disableFocusTrap}
+              handleCloseButtonClick={handleCloseButtonClick}
+              path={drawerPath}
+              data-testid={drawerPath}
+              placement={placement}
+              closePosition={closePosition}
+              overrides={overrides}
+              ref={drawerRef}
+              inline={inline}
+              {...props}
             >
-              <StyledDrawer
-                aria-hidden={!open}
-                open={open}
-                disableFocusTrap={disableFocusTrap}
-                handleCloseButtonClick={handleCloseButtonClick}
-                path={drawerPath}
-                data-testid={drawerPath}
-                placement={placement}
-                closePosition={closePosition}
-                overrides={overrides}
-                ref={drawerRef}
-                inline={inline}
-                {...props}
-              >
-                {children}
-              </StyledDrawer>
-            </CSSTransition>
-          )}
-        </BaseDialogFunction>
-      </ThemeProvider>
+              {children}
+            </StyledDrawer>
+          </CSSTransition>
+        )}
+      </BaseDialogFunction>
     </OuterWrapper>
   );
 };

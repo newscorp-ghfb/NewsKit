@@ -10,6 +10,7 @@ interface LayerProps {
 
 const LAYER_CLASSNAME = 'nk-layer';
 
+// @ts-ignore
 export const Layer: React.FC<LayerProps> = ({
   children,
   appendToRef,

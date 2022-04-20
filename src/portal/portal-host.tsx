@@ -6,21 +6,21 @@ const PortalHostComponent = ({name}: PortalHostProps) => {
   // #region hooks
   const state = usePortalState(name);
   const {registerHost, deregisterHost} = usePortal(name);
-  // #endregion
 
-  // #region effects
   useEffect(() => {
     registerHost();
     return () => {
       deregisterHost();
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  // #endregion
 
-  // #region render
-  return <>{state.map(item => item.node)}</>;
-  // #endregion
+  return (
+    <div className="nk-portal-host">
+      {state.map(item => (
+        <React.Fragment key={item.name}>{item.node}</React.Fragment>
+      ))}
+    </div>
+  );
 };
 
 export const PortalHost = memo(PortalHostComponent);

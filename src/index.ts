@@ -27,7 +27,7 @@ export * from './image';
 export * from './inline-message';
 export * from './instrumentation';
 export * from './label';
-export * from './layer';
+// export * from './layer';
 export * from './link';
 export * from './menu';
 export * from './modal';

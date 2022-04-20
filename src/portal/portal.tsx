@@ -1,7 +1,8 @@
-import {memo, useCallback, useEffect, useMemo, useRef} from 'react';
+import React, {memo, useEffect, useMemo} from 'react';
 import {nanoid} from 'nanoid/non-secure';
 import {usePortal} from './hooks';
 import type {PortalProps} from './types';
+import {useTheme, ThemeProvider} from '../theme';
 
 const PortalComponent = ({
   name: _providedName,
@@ -11,9 +12,13 @@ const PortalComponent = ({
   const {addPortal: addUpdatePortal, removePortal} = usePortal(hostName);
 
   const name = useMemo(() => _providedName || nanoid(), [_providedName]);
+  const theme = useTheme();
 
   useEffect(() => {
-    addUpdatePortal(name, children);
+    addUpdatePortal(
+      name,
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>,
+    );
     return () => {
       removePortal(name);
     };
