@@ -163,6 +163,58 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
+    states={{
+      introduction:
+        'The Text Field has the following states. They can be displayed with both placeholder content or user-inputted content:',
+      layout: '3-span',
+      cards: [
+        {
+          title: 'Base',
+          description:
+            'The Button has a base state. This is the base style of the Button before it has been interacted with by a user.',
+          media: getIllustrationComponent('components/button/states/base'),
+        },
+        {
+          title: 'Hover',
+          description:
+            'The Button has a hover state. The style of the Button changes to visually communicate and provide feedback to the user that the Button is an interactive element.',
+          media: getIllustrationComponent('components/button/states/hover'),
+        },
+        {
+          title: 'Focus',
+          description:
+            'The Button in a focus state communicates that a user has highlighted a Button, using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent('components/button/states/focus'),
+        },
+        {
+          title: 'Active',
+          description:
+            'The Button has an active state. The style of the Button changes to visually communicate and provide feedback to the user that the Button has been interacted with.',
+          media: getIllustrationComponent('components/button/states/active'),
+        },
+        {
+          title: 'Disabled',
+          description:
+            "The Button in a disabled state communicates that a Button exists, but is not available to the user in that scenario. When the user's cursor hovers over a Button in a disabled state, the cursor shows as not allowed. Disabled Buttons are often used to maintain layout consistency and communicate that a Button may become available if another condition has been met.",
+          media: getIllustrationComponent('components/button/states/disabled'),
+        },
+        {
+          title: 'Loading',
+          description: (
+            <>
+              The Button in a loading state communicates that an action will
+              become available when loading is complete, or that an action is
+              being completed.
+              <br />
+              <br />
+              The background colour of the Button changes, and a loading
+              indicator is displayed.
+            </>
+          ),
+          media: getIllustrationComponent('components/button/states/loading'),
+        },
+      ],
+    }}
     behaviors={{
       introduction: 'The following guidance describes how a Button behaves.',
       cards: [
