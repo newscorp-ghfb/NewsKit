@@ -203,7 +203,7 @@ const bannerLink = (
 export default {
   title: 'NewsKit Light/banner',
   component: () => 'None',
-  disabledRules: ['color-contrast'],
+  disabledRules: [],
 };
 
 export const StoryBannerDefault = () => (

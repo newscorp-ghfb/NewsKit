@@ -1,32 +1,33 @@
 import React from 'react';
 import {IconButton} from '../../../icon-button';
-import {ButtonOverrides, ButtonSize} from '../../../button/types';
+import {ButtonSize} from '../../../button/types';
 import {useAudioPlayerContext} from '../../context';
-import {AudioPlayerIconButtonProps} from '../../types';
 import defaults from './defaults';
 import {withOwnTheme} from '../../../utils/with-own-theme';
-import {useTheme} from '../../../theme';
-import {filterOutFalsyProperties} from '../../../utils/filter-object';
-import {get} from '../../../utils/get';
+import {useButtonOverrides, useKeyboardShortcutsOnButton} from '../../utils';
+import {AudioPlayerSkipNextButtonProps} from './types';
 
-const ThemelessAudioPlayerSkipNextButton: React.FC<AudioPlayerIconButtonProps> = React.memo(
-  ({overrides, ...props}) => {
+const defaultKeyboardShortcuts = ['shift + n'];
+
+const ThemelessAudioPlayerSkipNextButton: React.FC<AudioPlayerSkipNextButtonProps> = React.memo(
+  props => {
     const {getSkipNextButtonProps} = useAudioPlayerContext();
 
-    const theme = useTheme();
-    const buttonOverrides: ButtonOverrides = {
-      ...get(theme, 'componentDefaults.audioPlayerSkipNextButton'),
-      ...filterOutFalsyProperties(overrides),
-    };
+    const overrides = useButtonOverrides(props, 'audioPlayerSkipNextButton');
 
     const propsFromContext =
       getSkipNextButtonProps! && getSkipNextButtonProps(props);
+
+    useKeyboardShortcutsOnButton({
+      props: propsFromContext as AudioPlayerSkipNextButtonProps,
+      defaults: defaultKeyboardShortcuts,
+    });
 
     return (
       <IconButton
         data-testid="audio-player-skip-next-button"
         size={ButtonSize.Medium}
-        overrides={buttonOverrides}
+        overrides={overrides}
         {...propsFromContext}
       />
     );
