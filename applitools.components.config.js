@@ -10,5 +10,6 @@ module.exports = {
   ],
   concurrency: 100,
   viewportSize: {width: 1027, height: 768},
+  showLogs: true,
   dontCloseBatches: true,
 };
