@@ -8,6 +8,7 @@ import {
   newskitLightTheme,
   styled,
   LayerOrganizer,
+  PortalProvider,
 } from '../src';
 
 const unlimitedScenarios = [
@@ -81,9 +82,9 @@ export const decorators = [
   (Story, context) => {
     return (
       <ThemeProvider theme={getThemeFromContext(context)}>
-        <LayerOrganizer>
-           <Story />
-        </LayerOrganizer>
+        <PortalProvider>
+          <Story />
+        </PortalProvider>
       </ThemeProvider>
     );
   },

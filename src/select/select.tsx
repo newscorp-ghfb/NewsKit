@@ -1,6 +1,7 @@
 import React, {ChangeEvent, useEffect, useRef, useState} from 'react';
 import {useSelect, UseSelectStateChange} from 'downshift';
 import composeRefs from '@seznam/compose-react-refs';
+import {useTheme} from '@emotion/react';
 import {SelectProps, SelectOptionProps} from './types';
 import {SelectPanel} from './select-panel';
 import {SelectButton} from './select-button';
@@ -11,7 +12,8 @@ import {shouldRenderInModal} from './utils';
 import {withMediaQueryProvider} from '../utils/hooks/use-media-query/context';
 import {useBreakpointKey} from '../utils/hooks/use-media-query';
 import {useVirtualizedList} from './use-virtualized-list';
-import {Layer} from '../layer';
+import {Portal} from '../portal';
+import {ThemeProvider} from '../theme';
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -217,24 +219,26 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           {...downshiftButtonPropsExceptRef}
           {...restProps}
         />
-        <Layer>
-          <SelectPanel
-            isOpen={isOpen}
-            overrides={overrides}
-            width={width}
-            height={height}
-            top={top}
-            left={left}
-            size={size}
-            buttonRef={localInputRef}
-            renderInModal={renderInModal}
-            closeMenu={closeMenu}
-            {...downshiftMenuPropsExceptRef}
-            ref={composeRefs(panelRef, downshiftMenuPropsRef)}
-          >
-            {optionsAsChildren}
-          </SelectPanel>
-        </Layer>
+        <Portal>
+          <ThemeProvider theme={useTheme()}>
+            <SelectPanel
+              isOpen={isOpen}
+              overrides={overrides}
+              width={width}
+              height={height}
+              top={top}
+              left={left}
+              size={size}
+              buttonRef={localInputRef}
+              renderInModal={renderInModal}
+              closeMenu={closeMenu}
+              {...downshiftMenuPropsExceptRef}
+              ref={composeRefs(panelRef, downshiftMenuPropsRef)}
+            >
+              {optionsAsChildren}
+            </SelectPanel>
+          </ThemeProvider>
+        </Portal>
       </>
     );
   },

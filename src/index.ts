@@ -58,3 +58,4 @@ export * from './utils/hooks/use-media-query';
 export * from './utils';
 export * from './video-player';
 export * from './volume-control';
+export * from './portal';

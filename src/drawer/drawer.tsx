@@ -1,5 +1,6 @@
 import React, {useRef, useEffect} from 'react';
 import {CSSTransition} from 'react-transition-group';
+import {ThemeProvider} from '@emotion/react';
 import {DrawerProps} from './types';
 import {StyledDrawer} from './styled';
 import {BaseDialogFunction} from '../dialog';
@@ -13,7 +14,7 @@ import {getTransitionDuration} from '../utils/get-transition-duration';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {Layer} from '../layer';
+import {Portal} from '../portal';
 
 const ThemelessDrawer: React.FC<DrawerProps> = ({
   children,
@@ -46,53 +47,55 @@ const ThemelessDrawer: React.FC<DrawerProps> = ({
   }, [open, drawerRef]);
 
   // When Drawer is used inline, it should not be in a layer
-  const OuterWrapper = inline ? React.Fragment : Layer;
+  const OuterWrapper = inline ? React.Fragment : Portal;
 
   return (
     <OuterWrapper>
-      <BaseDialogFunction
-        open={open}
-        restoreFocusTo={restoreFocusTo}
-        onDismiss={onDismiss}
-        hideOverlay={hideOverlay}
-        disableFocusTrap={disableFocusTrap}
-        renderOverlay={handleOverlayClick => (
-          <Overlay
-            open={open}
-            onClick={handleOverlayClick}
-            overrides={overlayOverrides}
-          />
-        )}
-      >
-        {handleCloseButtonClick => (
-          <CSSTransition
-            in={open}
-            timeout={getTransitionDuration(
-              `${drawerPath}.panel.${placement}`,
-              '',
-            )({theme, overrides})}
-            classNames="nk-drawer"
-            appear
-          >
-            <StyledDrawer
-              aria-hidden={!open}
+      <ThemeProvider theme={useTheme()}>
+        <BaseDialogFunction
+          open={open}
+          restoreFocusTo={restoreFocusTo}
+          onDismiss={onDismiss}
+          hideOverlay={hideOverlay}
+          disableFocusTrap={disableFocusTrap}
+          renderOverlay={handleOverlayClick => (
+            <Overlay
               open={open}
-              disableFocusTrap={disableFocusTrap}
-              handleCloseButtonClick={handleCloseButtonClick}
-              path={drawerPath}
-              data-testid={drawerPath}
-              placement={placement}
-              closePosition={closePosition}
-              overrides={overrides}
-              ref={drawerRef}
-              inline={inline}
-              {...props}
+              onClick={handleOverlayClick}
+              overrides={overlayOverrides}
+            />
+          )}
+        >
+          {handleCloseButtonClick => (
+            <CSSTransition
+              in={open}
+              timeout={getTransitionDuration(
+                `${drawerPath}.panel.${placement}`,
+                '',
+              )({theme, overrides})}
+              classNames="nk-drawer"
+              appear
             >
-              {children}
-            </StyledDrawer>
-          </CSSTransition>
-        )}
-      </BaseDialogFunction>
+              <StyledDrawer
+                aria-hidden={!open}
+                open={open}
+                disableFocusTrap={disableFocusTrap}
+                handleCloseButtonClick={handleCloseButtonClick}
+                path={drawerPath}
+                data-testid={drawerPath}
+                placement={placement}
+                closePosition={closePosition}
+                overrides={overrides}
+                ref={drawerRef}
+                inline={inline}
+                {...props}
+              >
+                {children}
+              </StyledDrawer>
+            </CSSTransition>
+          )}
+        </BaseDialogFunction>
+      </ThemeProvider>
     </OuterWrapper>
   );
 };
