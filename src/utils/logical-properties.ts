@@ -31,26 +31,20 @@ const getResponsiveSpace = (
   overridesPath?: string,
 ) => {
   let defaultToken;
-  let overrideToken;
   if (defaultsPath) {
     defaultToken = get(
       props.theme.componentDefaults,
       `${defaultsPath}.${cssProperty}`,
     );
   }
-  if (overridesPath) {
-    overrideToken = get(
-      props,
-      props.overrides
-        ? `overrides.${overridesPath}.${cssProperty}`
-        : cssProperty,
-    );
-  } else {
-    overrideToken = get(
-      props,
-      props.overrides ? `overrides.${cssProperty}` : cssProperty,
-    );
-  }
+  const overrideToken = props.overrides
+    ? get(
+        props,
+        overridesPath
+          ? `overrides.${overridesPath}.${cssProperty}`
+          : `overrides.${cssProperty}`,
+      )
+    : get(props, cssProperty);
 
   return getXFromTheme('spacePresets')(
     cssProperty,
@@ -130,65 +124,24 @@ export const logicalProps = (defaultsPath?: string, overridesPath?: string) => (
   return deepMerge(margin, padding);
 };
 
-const generateLogicalWithCSSProperty = (
-  CSSProperty: string,
-  defaultsPath?: string,
-  overridesPath?: string,
-) => (props: ThemeProp) =>
-  getResponsiveSpace(
-    CSSProperty,
-    props,
-    defaultsPath,
-    overridesPath,
-  ) as CSSObject;
+const logicalPropsArray = [
+  'marginInlineStart',
+  'marginInlineEnd',
+  'marginInline',
+  'marginBlockStart',
+  'marginBlockEnd',
+  'marginBlock',
+  'paddingInlineStart',
+  'paddingInlineEnd',
+  'paddingInline',
+  'paddingBlockStart',
+  'paddingBlockEnd',
+  'paddingBlock',
+];
 
-export const logicalPropsWithCSSProperty = (
-  CSSProperty: string,
-  defaultsPath?: string,
-  overridesPath?: string,
-) => (props: ThemeProp): CSSObject =>
-  generateLogicalWithCSSProperty(
-    CSSProperty,
-    defaultsPath,
-    overridesPath,
-  )(props);
-
-export const omitLogicalPropsFromOverrides = (
-  // https://github.com/microsoft/TypeScript/issues/15300
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  overrides: any,
-) =>
-  rejectObject(overrides, [
-    'marginInlineStart',
-    'marginInlineEnd',
-    'marginInline',
-    'marginBlockStart',
-    'marginBlockEnd',
-    'marginBlock',
-    'paddingInlineStart',
-    'paddingInlineEnd',
-    'paddingInline',
-    'paddingBlockStart',
-    'paddingBlockEnd',
-    'paddingBlock',
-  ]);
+export const omitLogicalPropsFromOverrides = (overrides: object | undefined) =>
+  rejectObject(overrides || {}, logicalPropsArray as keyof object);
 
 export const extractLogicalPropsFromOverrides = (
-  // https://github.com/microsoft/TypeScript/issues/15300
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  overrides: any,
-) =>
-  filterObject(overrides, [
-    'marginInlineStart',
-    'marginInlineEnd',
-    'marginInline',
-    'marginBlockStart',
-    'marginBlockEnd',
-    'marginBlock',
-    'paddingInlineStart',
-    'paddingInlineEnd',
-    'paddingInline',
-    'paddingBlockStart',
-    'paddingBlockEnd',
-    'paddingBlock',
-  ]);
+  overrides: object | undefined,
+) => filterObject(overrides || {}, logicalPropsArray as keyof object);

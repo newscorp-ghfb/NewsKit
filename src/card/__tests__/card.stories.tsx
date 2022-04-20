@@ -1306,6 +1306,24 @@ export const StoryCardLogicalOverrides = () => (
           </CardInset>
         </StyledDiv>
       </Cell>
+      <Cell xs={12} sm={4}>
+        <StyledDiv>
+          <CardInset
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              paddingBlockStart: 'space050',
+              paddingInlineStart: 'space050',
+            }}
+            data-testid="card-inset-2"
+          >
+            {cardInsetSmallBody}
+          </CardInset>
+        </StyledDiv>
+      </Cell>
     </Grid>
 
     <StorybookHeading>

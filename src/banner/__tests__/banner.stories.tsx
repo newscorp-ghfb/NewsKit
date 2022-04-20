@@ -504,7 +504,7 @@ export const StoryBannerWithGridLayoutAlignment = () => (
 StoryBannerWithGridLayoutAlignment.storyName =
   'banner-with-grid-layout-alignment';
 
-export const StoryBannerWithLogicalPaddingOverrides = () => (
+export const StoryBannerWithLogicalOverrides = () => (
   <>
     <StorybookHeading>Banner</StorybookHeading>
     <StorybookSubHeading>with logical padding overrides</StorybookSubHeading>
@@ -523,7 +523,6 @@ export const StoryBannerWithLogicalPaddingOverrides = () => (
     <StorybookSubHeading>
       with logical padding overrides on each breakpoint
     </StorybookSubHeading>
-
     <Banner
       title="Banner title"
       aria-label="Banner with breakpoint and logical padding overrides"
@@ -549,14 +548,6 @@ export const StoryBannerWithLogicalPaddingOverrides = () => (
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing eli
     </Banner>
-  </>
-);
-StoryBannerWithLogicalPaddingOverrides.storyName =
-  'banner-with-logical-padding-overrides';
-
-export const StoryBannerWithLogicalMarginOverrides = () => (
-  <>
-    <StorybookHeading>Banner</StorybookHeading>
     <StorybookSubHeading>with logical margin overrides</StorybookSubHeading>
     <StyledDiv>
       <BannerWithState
@@ -570,93 +561,6 @@ export const StoryBannerWithLogicalMarginOverrides = () => (
         tempor incididunt ut labore et dolore magna aliqua.
       </BannerWithState>
     </StyledDiv>
-    <StorybookSubHeading>
-      with logical margin overrides on each breakpoint
-    </StorybookSubHeading>
-    <StyledDiv>
-      <Banner
-        title="Banner title"
-        aria-label="Banner with breakpoint and logical margin overrides"
-        overrides={{
-          marginBlock: {
-            xs: 'space050',
-            lg: 'space010',
-          },
-          marginInline: {
-            xs: 'space045',
-            md: 'space070',
-            lg: 'space010',
-          },
-          marginBlockStart: {
-            md: 'space040',
-            lg: 'space030',
-          },
-          marginBlockEnd: {
-            md: 'space050',
-            lg: 'space020',
-          },
-        }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing eli
-      </Banner>
-    </StyledDiv>
   </>
 );
-StoryBannerWithLogicalMarginOverrides.storyName =
-  'banner-with-logical-margin-overrides';
-
-export const StoryBannerWithLogicalMarginOverridesOnIconAndContent = () => (
-  <>
-    <StorybookHeading>Banner</StorybookHeading>
-    <StorybookSubHeading>
-      with logical margin overrides on icon
-    </StorybookSubHeading>
-    <StyledDiv>
-      <BannerWithState
-        aria-label="Banner with logical margin overrides on icon"
-        overrides={{
-          icon: {
-            marginInlineEnd: 'space040',
-          },
-        }}
-      >
-        Lorem ipsum dolor
-      </BannerWithState>
-    </StyledDiv>
-    <StorybookSubHeading>
-      with logical margin overrides on Title
-    </StorybookSubHeading>
-    <StyledDiv>
-      <BannerWithState
-        aria-label="Banner with logical margin overrides on title"
-        overrides={{
-          content: {
-            title: {
-              marginBlockEnd: 'space040',
-            },
-          },
-        }}
-      >
-        Lorem ipsum dolor
-      </BannerWithState>
-    </StyledDiv>
-    <StorybookSubHeading>
-      with logical margin overrides on Content
-    </StorybookSubHeading>
-    <StyledDiv>
-      <BannerWithState
-        aria-label="Banner with logical margin overrides on content"
-        overrides={{
-          content: {
-            marginInlineEnd: 'space000',
-            marginBlockEnd: 'space040',
-          },
-        }}
-      >
-        Lorem ipsum dolor
-      </BannerWithState>
-    </StyledDiv>
-  </>
-);
-StoryBannerWithLogicalMarginOverridesOnIconAndContent.storyName =
-  'banner-with-logical-margin-overrides-on-content-and-icon';
+StoryBannerWithLogicalOverrides.storyName = 'banner-with-logical-overrides';

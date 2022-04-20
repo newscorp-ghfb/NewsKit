@@ -256,7 +256,6 @@ export const StoryAudioPlayerLogicalOverrides = () => (
         }}
       />
     </AudioPlayerContainer>
-    <StorybookHeading>Live Audio Player</StorybookHeading>
   </>
 );
 StoryAudioPlayerLogicalOverrides.storyName = 'audio-player-logical-overrides';

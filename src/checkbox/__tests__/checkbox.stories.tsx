@@ -208,39 +208,13 @@ export const StoryCheckboxOverrides = () => (
         }}
       />
     </Container>
-    <StorybookSubHeading>
-      Logical Margin Override - root level
-    </StorybookSubHeading>
+    <StorybookSubHeading>Logical Overrides</StorybookSubHeading>
     <Container>
       <Checkbox
         label="overrides"
         overrides={{
           marginBlockEnd: 'space030',
           paddingBlock: 'space030',
-        }}
-      />
-    </Container>
-    <StorybookSubHeading>
-      Logical Margin Override - input level
-    </StorybookSubHeading>
-    <Container>
-      <Checkbox
-        label="overrides"
-        overrides={{
-          input: {
-            marginInlineEnd: 'space050',
-          },
-        }}
-      />
-    </Container>
-    <Container>
-      <Checkbox
-        label="overrides"
-        labelPosition="start"
-        overrides={{
-          input: {
-            marginInlineStart: 'space050',
-          },
         }}
       />
     </Container>

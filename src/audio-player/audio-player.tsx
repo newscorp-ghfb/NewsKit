@@ -232,8 +232,9 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
     : '';
 
   const [srOnlyForwardRewind] = useReactKeys(1);
-  const logicalPropsOverrides =
-    overrides && extractLogicalPropsFromOverrides(overrides);
+  const logicalPropsOverrides = extractLogicalPropsFromOverrides(overrides);
+
+  console.log(logicalPropsOverrides);
 
   return (
     <PlayerContainer

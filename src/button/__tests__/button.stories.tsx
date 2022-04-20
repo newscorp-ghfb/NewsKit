@@ -428,14 +428,14 @@ StoryButtonStyleAtBreakpoints.storyName = 'button-style-at-breakpoints';
 export const StoryButtonWithLogicalPropsOverrides = () => (
   <>
     <StorybookSubHeading>
-      Banner with logical padding overrides
+      Button with logical padding overrides
     </StorybookSubHeading>
     <Border>
       <Button overrides={{paddingBlock: 'space050'}}>button</Button>
     </Border>
     <Spacer />
     <StorybookSubHeading>
-      Banner with logical margin overrides
+      Button with logical margin overrides
     </StorybookSubHeading>
     <Border>
       <Button overrides={{marginBlock: 'space050'}}>button</Button>

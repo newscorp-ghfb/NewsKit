@@ -51,7 +51,7 @@ const ThemelessCaption: React.FC<CaptionProps> = ({
     'spaceInset',
   );
 
-  const logicalProps = overrides && extractLogicalPropsFromOverrides(overrides);
+  const logicalProps = extractLogicalPropsFromOverrides(overrides);
 
   return (
     <Block spaceInset={captionInset} {...logicalProps}>

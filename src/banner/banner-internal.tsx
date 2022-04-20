@@ -52,8 +52,7 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
     overrides?.actions?.spaceInline ||
     theme.componentDefaults.banner[layout].actions.spaceInline;
 
-  const nonLogicalOverrides =
-    overrides && omitLogicalPropsFromOverrides(overrides);
+  const nonLogicalOverrides = omitLogicalPropsFromOverrides(overrides);
 
   return (
     <StyledBannerContainer

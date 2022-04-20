@@ -18,7 +18,11 @@ export interface CardOverridesProps extends LogicalProps {
      */
     spaceInset?: MQ<string>;
     paddingBlock?: MQ<string>;
+    paddingBlockStart?: MQ<string>;
+    paddingBlockEnd?: MQ<string>;
     paddingInline?: MQ<string>;
+    paddingInlineStart?: MQ<string>;
+    paddingInlineEnd?: MQ<string>;
   };
   actionsContainer?: {
     stylePreset?: MQ<string>;
@@ -28,7 +32,11 @@ export interface CardOverridesProps extends LogicalProps {
     spaceInset?: MQ<string>;
     minHeight?: string;
     paddingBlock?: MQ<string>;
+    paddingBlockStart?: MQ<string>;
+    paddingBlockEnd?: MQ<string>;
     paddingInline?: MQ<string>;
+    paddingInlineStart?: MQ<string>;
+    paddingInlineEnd?: MQ<string>;
   };
 }
 

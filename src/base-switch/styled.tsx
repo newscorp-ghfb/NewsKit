@@ -6,10 +6,7 @@ import {
   getTypographyPreset,
   styled,
 } from '../utils';
-import {
-  logicalProps,
-  logicalPropsWithCSSProperty,
-} from '../utils/logical-properties';
+import {logicalProps} from '../utils/logical-properties';
 import {BaseSwitchProps} from './types';
 
 const STACKING_CONTEXT = {
@@ -53,7 +50,7 @@ export const StyledSwitchContainer = styled.div<
       'input',
       'size',
     )}
-  // To be removed once logical props are used in defaults
+
   ${({size, labelPosition, path}) =>
     getResponsiveSpace(
       labelPosition === 'end' ? 'marginRight' : 'marginLeft',
@@ -61,18 +58,6 @@ export const StyledSwitchContainer = styled.div<
       'input',
       'spaceInline',
     )}
-    ${({size, labelPosition, path}) =>
-    labelPosition === 'end'
-      ? logicalPropsWithCSSProperty(
-          'marginInlineEnd',
-          `${path}.${size}.input`,
-          'input',
-        )
-      : logicalPropsWithCSSProperty(
-          'marginInlineStart',
-          `${path}.${size}.input`,
-          'input',
-        )}
 `;
 
 const insetCSS = `

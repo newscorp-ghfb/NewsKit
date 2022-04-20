@@ -17,8 +17,7 @@ const ThemelessAssistiveText = ({
   endEnhancer,
   ...props
 }: AssistiveTextProps) => {
-  const nonLogicalOverrides =
-    overrides && omitLogicalPropsFromOverrides(overrides);
+  const nonLogicalOverrides = omitLogicalPropsFromOverrides(overrides);
 
   return (
     <WithEnhancers

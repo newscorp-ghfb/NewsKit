@@ -2,7 +2,6 @@ import {
   omitLogicalPropsFromOverrides,
   logicalProps,
   extractLogicalPropsFromOverrides,
-  logicalPropsWithCSSProperty,
 } from '../logical-properties';
 import {compileTheme, newskitLightTheme} from '../../theme';
 
@@ -20,7 +19,7 @@ describe('logical properties', () => {
     });
   });
 
-  it('should return a css Object when logical in overrides', () => {
+  it('should return a css Object when logical props are in overrides', () => {
     const props = {
       theme: compileTheme(newskitLightTheme),
       overrides: {
@@ -137,11 +136,15 @@ describe('logical properties', () => {
       },
     };
 
-    const dummyProps = {someOtherProps: true, ...logicalProps()(props as any)};
-    expect(omitLogicalPropsFromOverrides(dummyProps)).toEqual({
-      someOtherProps: true,
+    expect(omitLogicalPropsFromOverrides(props.overrides)).toEqual({
+      title: {
+        paddingBlock: 'space020',
+        paddingInline: 'space030',
+        stylePreset: 'inkContrast',
+      },
     });
   });
+
   it('should filter out logical properties from the root level of an object', () => {
     const props = {
       theme: compileTheme(newskitLightTheme),
@@ -156,58 +159,12 @@ describe('logical properties', () => {
         },
       },
     };
-
-    const dummyProps = {someOtherProps: true, ...logicalProps()(props as any)};
-
-    expect(extractLogicalPropsFromOverrides(dummyProps)).toEqual({
-      marginBlock: '8px',
-      paddingBlock: '8px',
+    expect(extractLogicalPropsFromOverrides(props.overrides)).toEqual({
+      marginBlock: 'space020',
+      paddingBlock: 'space020',
     });
   });
-
-  describe('logicalPropsWithCSSProperty', () => {
-    it('should only return the CSS object contains the cssProperty passed', () => {
-      const props = {
-        theme: compileTheme(newskitLightTheme),
-        marginBlockEnd: 'space020',
-        marginInlineEnd: 'space020',
-        paddingInline: 'space030',
-      };
-
-      expect(
-        logicalPropsWithCSSProperty('marginBlockEnd')(props as any),
-      ).toEqual({
-        marginBlockEnd: '8px',
-      });
-    });
-    it('should return an empty string when no CSSProperty is passed', () => {
-      const props = {
-        theme: compileTheme(newskitLightTheme),
-        content: {
-          title: {
-            marginBlockEnd: 'space020',
-            marginInlineEnd: 'space020',
-          },
-        },
-      };
-      expect(
-        logicalPropsWithCSSProperty('content.title', 'title')(props as any),
-      ).toEqual('');
-    });
-
-    it('should return the CSS object contains the CSS property in overrides', () => {
-      const props = {
-        theme: compileTheme(newskitLightTheme),
-        overrides: {
-          marginBlockEnd: 'space020',
-          marginInlineEnd: 'space020',
-        },
-      };
-      expect(
-        logicalPropsWithCSSProperty('marginBlockEnd')(props as any),
-      ).toEqual({
-        marginBlockEnd: '8px',
-      });
-    });
+  it('should return an empty object if overrides is undefined', () => {
+    expect(extractLogicalPropsFromOverrides(undefined)).toEqual({});
   });
 });

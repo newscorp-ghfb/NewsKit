@@ -8,10 +8,7 @@ import {
 } from '../utils/style';
 import {Stack} from '../stack';
 import {TextBlock} from '../text-block';
-import {
-  logicalProps,
-  logicalPropsWithCSSProperty,
-} from '../utils/logical-properties';
+import {logicalProps} from '../utils/logical-properties';
 
 export const StyledBannerContainer = styled.div<BannerProps>`
   box-sizing: border-box;
@@ -37,7 +34,6 @@ export const StyledIconContentContainer = styled(Stack)<
 >`
   flex: 1;
   ${({layout}) => layout === 'vertical' && 'align-self: stretch;'};
-  // To be removed once logical props are used in defaults
   ${({layout}) =>
     getResponsiveSpace(
       layout === 'vertical' ? 'marginBottom' : 'marginRight',
@@ -45,25 +41,12 @@ export const StyledIconContentContainer = styled(Stack)<
       'content',
       'spaceInline',
     )};
-  ${({layout}) =>
-    layout === 'vertical'
-      ? logicalPropsWithCSSProperty(
-          'marginBlockEnd',
-          `banner.${layout}.content`,
-          'content',
-        )
-      : logicalPropsWithCSSProperty(
-          'marginInlineEnd',
-          `banner.${layout}.content`,
-          'content',
-        )};
 `;
 
 export const StyledIconContainer = styled.div<
   Pick<BannerProps, 'overrides' | 'layout'>
 >`
   display: flex;
-  // To be removed once logical props are used in defaults
   ${({layout}) =>
     getResponsiveSpace(
       'marginRight',
@@ -71,8 +54,6 @@ export const StyledIconContainer = styled.div<
       'icon',
       'spaceInline',
     )};
-
-  ${({layout}) => logicalProps(`banner.${layout}.icon`, 'icon')};
 `;
 
 export const StyledTitleContainer = styled(TextBlock)<
@@ -86,7 +67,6 @@ export const StyledTitleContainer = styled(TextBlock)<
   ${({layout}) =>
     getStylePreset(`banner.${layout}.content.title`, 'content.title')};
 
-  // To be removed once logical props are used in defaults
   ${({layout}) =>
     getResponsiveSpace(
       'marginBottom',
@@ -94,8 +74,6 @@ export const StyledTitleContainer = styled(TextBlock)<
       'content.title',
       'spaceStack',
     )}
-  ${({layout}) =>
-    logicalProps(`banner.${layout}.content.title`, 'content.title')};
 `;
 
 export const StyledContentContainer = styled.div`

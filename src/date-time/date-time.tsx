@@ -57,8 +57,7 @@ const ThemelessDateTime: React.FC<DateTimeProps> = ({
     ${logicalProps('dateTime')}
   `;
 
-  const logicalPropsOverrides =
-    overrides && extractLogicalPropsFromOverrides(overrides);
+  const logicalPropsOverrides = extractLogicalPropsFromOverrides(overrides);
 
   return (
     <StyledTime {...logicalPropsOverrides}>

@@ -179,8 +179,7 @@ const ThemelessCard = React.forwardRef<HTMLDivElement, CardProps>(
   ) => {
     const hasHref = Boolean(href);
 
-    const nonLogicalOverrides =
-      overrides && omitLogicalPropsFromOverrides(overrides);
+    const nonLogicalOverrides = omitLogicalPropsFromOverrides(overrides);
 
     return (
       <StyledCardContainer
