@@ -33,6 +33,7 @@ const StyledMenuCollapsableItem = styled.li<
     max-height: 0px;
     transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
     ${getSpacingCssFromTheme('marginBottom', 'space000')};
+    visibility: hidden;
   }
   &.expanded > li {
     ${getSpacingCssFromTheme('marginBottom', 'space030')};
@@ -75,40 +76,6 @@ export const StyledMenuGroupTitle = styled.div<MenuGroupProps>`
   )}
 `;
 
-// const renderTitle = (
-//   {title: MenuTitle, overrides}: Partial<MenuGroupProps>,
-//   titleID: string,
-//   theme: Theme,
-// ) => {
-//   if (typeof MenuTitle === 'string') {
-//     const stylePreset = getToken(
-//       {theme, overrides},
-//       'menuGroup.title',
-//       'title',
-//       'stylePreset',
-//     );
-
-//     const typographyPreset = getToken(
-//       {theme, overrides},
-//       'menuGroup.title',
-//       'title',
-//       'typographyPreset',
-//     );
-
-//     const titleOverrides = {
-//       stylePreset,
-//       typographyPreset,
-//     };
-
-//     return (
-//       <TextBlock as="h2" id={titleID} {...titleOverrides}>
-//         {MenuTitle}
-//       </TextBlock>
-//     );
-//   }
-
-//   return renderIfReactComponent(MenuTitle);
-// };
 type MenuCollapsableProps = {
   className?: string;
 };

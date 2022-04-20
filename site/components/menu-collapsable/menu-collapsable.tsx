@@ -4,7 +4,7 @@ import {
   ButtonSize,
   Divider,
   Flow,
-  H2,
+  H3,
   IconButton,
   IconOutlinedLaunch,
   Menu,
@@ -123,7 +123,9 @@ export const MenuNav = ({
         <MenuCollapsable
           className={openPanelIds.includes(index) ? 'expanded' : 'collapsed'}
         >
-          <H2
+          <H3
+            role="menuitem"
+            aria-expanded={openPanelIds.includes(index) ? 'true' : 'false'}
             overrides={{typographyPreset: 'utilityHeading020'}}
             onClick={() =>
               openPanelIds.includes(index)
@@ -135,15 +137,15 @@ export const MenuNav = ({
               flow={Flow.HorizontalCenter}
               stackDistribution="space-between"
             >
-              <span>{title}</span>
+              <span aria-label={title}>{title}</span>
 
               {openPanelIds.includes(index) ? (
-                <IconExpandLess />
+                <IconExpandLess aria-haspopup="true" aria-expanded="true" />
               ) : (
-                <IconExpandMore />
+                <IconExpandMore aria-haspopup="false" aria-expanded="false" />
               )}
             </Stack>
-          </H2>
+          </H3>
           {subNav && createMenuItem(subNav)}
         </MenuCollapsable>
       ))}
@@ -151,7 +153,7 @@ export const MenuNav = ({
       <Divider />
       <Block spaceStack="space050" />
       <Stack flow={Flow.HorizontalStretch} stackDistribution="space-between">
-        <H2 overrides={{typographyPreset: 'utilityLabel030'}}>Github</H2>
+        <H3 overrides={{typographyPreset: 'utilityLabel030'}}>Github</H3>
         <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
       </Stack>
       <Block spaceStack="space050" />
