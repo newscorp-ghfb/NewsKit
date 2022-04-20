@@ -33,9 +33,6 @@ export interface BannerBaseProps extends React.AriaAttributes {
       title?: {
         stylePreset?: MQ<string>;
         typographyPreset?: MQ<string>;
-        /**
-         * @deprecated This property is deprecated and will be removed in the next major release. Use `MarginBlockEnd` instead.
-         */
         spaceStack?: MQ<string>; // Note: spaceStack is used as a gap. Should rename this to gap instead of using logical props.
       };
       message?: {

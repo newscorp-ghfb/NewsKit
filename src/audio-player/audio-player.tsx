@@ -33,7 +33,6 @@ import {useReactKeys} from '../utils/hooks';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {extractLogicalPropsFromOverrides} from '../utils/logical-properties';
 
 const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
   const {
@@ -232,15 +231,9 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
     : '';
 
   const [srOnlyForwardRewind] = useReactKeys(1);
-  const logicalPropsOverrides = extractLogicalPropsFromOverrides(overrides);
-
-  console.log(logicalPropsOverrides);
 
   return (
-    <PlayerContainer
-      aria-label={ariaLandmark}
-      overrides={logicalPropsOverrides}
-    >
+    <PlayerContainer aria-label={ariaLandmark} overrides={overrides}>
       <PlayerGrid
         xsMargin="space000"
         xsColumnGutter="space000"

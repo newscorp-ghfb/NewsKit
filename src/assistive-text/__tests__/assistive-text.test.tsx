@@ -45,30 +45,4 @@ describe('Assistive Text', () => {
     const fragment = renderToFragmentWithTheme(AssistiveText, props);
     expect(fragment).toMatchSnapshot();
   });
-  test('should render with logical overrides with enhancers', () => {
-    const props: AssistiveTextProps = {
-      children: 'Assistive Text',
-      startEnhancer: 'start',
-      endEnhancer: 'start',
-      overrides: {
-        paddingBlock: 'space030',
-        stylePreset: 'inkPositive',
-      },
-    };
-
-    const fragment = renderToFragmentWithTheme(AssistiveText, props);
-    expect(fragment).toMatchSnapshot();
-  });
-  test('should render with logical overrides and no enhancer', () => {
-    const props: AssistiveTextProps = {
-      children: 'Assistive Text',
-      overrides: {
-        paddingBlock: 'space030',
-        stylePreset: 'inkPositive',
-      },
-    };
-
-    const fragment = renderToFragmentWithTheme(AssistiveText, props);
-    expect(fragment).toMatchSnapshot();
-  });
 });

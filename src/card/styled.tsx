@@ -113,7 +113,7 @@ export const StyledCardContainerTeaser = styled.div<
   }))}
   ${({hasHref, ...props}) =>
     filterInteractiveStates('teaserContainer', hasHref)(props)}
-  // To be removed once logical props are used in defaults
+  // getResponsiveSpace to be removed once logical props are used in defaults
   ${getResponsiveSpace(
     'padding',
     'card.teaserContainer',
@@ -157,7 +157,7 @@ export const StyledCardContainerActions = styled(Stack)<
 >`
   height: auto;
   box-sizing: border-box;
-  // To be removed once logical props are used in defaults
+  // getResponsiveSpace to be removed once logical props are used in defaults
   ${getResponsiveSpace(
     'padding',
     'card.actionsContainer',

@@ -14,7 +14,7 @@ export interface CardOverridesProps extends LogicalProps {
   teaserContainer?: {
     stylePreset?: MQ<string>;
     /**
-     * @deprecated This property is deprecated and will be removed in the next major release. Use `PaddingInline` & `PaddingBlock` instead.
+     * @deprecated This property is deprecated and will be removed in the next major release. Use padding logical props instead.
      */
     spaceInset?: MQ<string>;
     paddingBlock?: MQ<string>;
@@ -27,7 +27,7 @@ export interface CardOverridesProps extends LogicalProps {
   actionsContainer?: {
     stylePreset?: MQ<string>;
     /**
-     * @deprecated This property is deprecated and will be removed in the next major release. Use `PaddingInline` & `PaddingBlock` instead.
+     * @deprecated This property is deprecated and will be removed in the next major release. Use padding logical props instead.
      */
     spaceInset?: MQ<string>;
     minHeight?: string;
