@@ -34,7 +34,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
     componentDefaultsKey="textField"
     meta={{
       status: MetaStatus.Supported,
-      introduced: 'v0.2.0',
+      introduced: 'v0.20.1',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/develop/src/button',
       figmaUrl:
