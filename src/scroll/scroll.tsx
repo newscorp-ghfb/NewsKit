@@ -18,8 +18,7 @@ import {useIsomorphicLayoutEffect} from '../utils/hooks';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-
-const SCROLL_THRESHOLD = 0.99;
+import {SCROLL_THRESHOLD} from './utils';
 
 const ThemelessScroll = React.forwardRef<HTMLDivElement, ScrollProps>(
   (
