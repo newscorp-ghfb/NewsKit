@@ -163,6 +163,58 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
+    behaviors={{
+      introduction: 'The following guidance describes how a Button behaves.',
+      cards: [
+        {
+          title: 'Fixed and full width',
+          description: (
+            <>
+              Buttons can be displayed in two ways, but consideration should be
+              made to how they will respond and react to containers around them;
+              <br />
+              <br />
+              Fixed width - size dependant on content (Label, Icons)
+              <br />
+              <br />
+              Full width - size responsive to the container it is applied to.
+              <br />
+              <br />
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="Inverse Buttons"
+                title="Note"
+              >
+                Full width Buttons are intended for use on smaller screen sizes
+                or in other components (such as{' '}
+                <Link href="/components/card/">Cards</Link>), where the width is
+                restricted.
+              </InlineMessage>
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/button/behaviours/fixed-and-full-width',
+          ),
+        },
+        {
+          title: 'Transition',
+          description:
+            'When the Button is hovered over, or active, the backgroundColor, and/or borderColor transitions.',
+          media: getIllustrationComponent(
+            'components/button/behaviours/transition',
+          ),
+        },
+        {
+          title: 'Clickable area',
+          description:
+            'The Button has a minimum clickable area (also known as hit area, or touch target area). The size of the clickable area changes according to the size of the Button.',
+          media: getIllustrationComponent(
+            'components/button/behaviours/clickable-area',
+          ),
+        },
+      ],
+    }}
   />
 );
 
