@@ -2,6 +2,7 @@ import React from 'react';
 import {Block, InlineMessage, IconFilledInfo} from 'newskit';
 import {Link} from '../../components/link';
 import {MetaStatus} from '../../components/meta/types';
+import {UsageKind} from '../../components/usage-card';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
@@ -264,6 +265,48 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent(
             'components/button/behaviours/clickable-area',
           ),
+        },
+      ],
+    }}
+    usage={{
+      introduction:
+        'The following guidance describes how and when to appropriately use the Button component.',
+      cards: [
+        {
+          description:
+            'When Buttons are to be placed inline, they should maintain at least an 8px gap between the two (or more) Buttons.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/button/usage/do1'),
+        },
+        {
+          description:
+            'Avoid using full-width Buttons in wide containers. They are generally appropriate for small devices or contained components.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/button/usage/dont1'),
+        },
+        {
+          description:
+            'Buttons can be displayed in two ways (fixed or full width), but consideration should be made to how they will respond and react to containers around them.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/button/usage/do2'),
+        },
+        {
+          description:
+            'Avoid placing multiple buttons relating to action too far apart, ensure that they are placed next to each other so that associated actions are relative, and reduce cognitive load.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/button/usage/dont2'),
+        },
+        {
+          description:
+            'Avoid placing more than one primary (high emphasis) Button on a screen to help guide the user to the primary action.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/button/usage/dont3'),
+        },
+        {
+          description:
+            'Avoid stacking Buttons when there is enough space to place side by side.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/button/usage/dont4'),
         },
       ],
     }}
