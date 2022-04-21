@@ -4,6 +4,7 @@ import {
   ButtonSize,
   Divider,
   Flow,
+  getSpacingCssFromTheme,
   H3,
   IconButton,
   IconOutlinedLaunch,
@@ -11,10 +12,20 @@ import {
   MenuGroup,
   MenuItem,
   Stack,
+  styled,
 } from 'newskit';
 import {ThemeSwitch} from '../theme-switch';
 import {IconExpandLess, IconExpandMore} from '../icons';
 import {MenuCollapsable} from './menu-styled';
+
+const MobileNavigationDivider = styled.div`
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+
+  ${getSpacingCssFromTheme('marginTop', 'space050')};
+  ${getSpacingCssFromTheme('marginBottom', 'space050')};
+`;
 
 export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
   href ? (
@@ -150,7 +161,11 @@ export const MenuNav = ({
         </MenuCollapsable>
       ))}
       <Block spaceStack="space050" />
-      <Divider />
+
+      <MobileNavigationDivider>
+        <Divider />
+      </MobileNavigationDivider>
+
       <Block spaceStack="space050" />
       <Stack flow={Flow.HorizontalStretch} stackDistribution="space-between">
         <H3 overrides={{typographyPreset: 'utilityLabel030'}}>Github</H3>

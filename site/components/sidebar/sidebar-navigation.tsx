@@ -21,10 +21,14 @@ import {
 } from './types';
 import {Visible} from '../../../src/grid/visibility';
 
-const NavigationDivider = styled.div`
-  ${getSpacingCssFromTheme('marginTop', 'space050')};
-  ${getSpacingCssFromTheme('marginBottom', 'space050')};
+export const DesktopNavigationDivider = styled.div`
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  ${getSpacingCssFromTheme('marginTop', 'space045')};
+  ${getSpacingCssFromTheme('marginBottom', 'space060')};
 `;
+
 const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -68,9 +72,11 @@ const NavigationSection: React.FC<NavigationSectionProps> = ({
         active={activePagePath.includes(page.id)}
       />
     ))}
-    <NavigationDivider>
-      <Divider />
-    </NavigationDivider>
+    <Visible lg xl>
+      <DesktopNavigationDivider>
+        <Divider />
+      </DesktopNavigationDivider>
+    </Visible>
   </>
 );
 
@@ -114,29 +120,31 @@ export const SidebarNav = ({
     currentRoute && routes.filter(({id}) => id === currentRoute[0]);
 
   return (
-    <StyledSidebarNav role="navigation" aria-label="Sidebar">
-      <>
-        <Visible xs sm md>
-          <MenuNav
-            path={path}
-            menu={routes}
-            toggleTheme={toggleTheme}
-            themeMode={themeMode}
-          />
-        </Visible>
-        <Visible lg xl>
-          <StyledNavigationWrapper role="list">
-            {currentSection &&
-              currentSection.map(section => (
-                <Section
-                  key={section.id}
-                  section={section}
-                  activePagePath={path}
-                />
-              ))}
-          </StyledNavigationWrapper>
-        </Visible>
-      </>
-    </StyledSidebarNav>
+    <>
+      <StyledSidebarNav role="navigation" aria-label="Sidebar">
+        <>
+          <Visible xs sm md>
+            <MenuNav
+              path={path}
+              menu={routes}
+              toggleTheme={toggleTheme}
+              themeMode={themeMode}
+            />
+          </Visible>
+          <Visible lg xl>
+            <StyledNavigationWrapper role="list">
+              {currentSection &&
+                currentSection.map(section => (
+                  <Section
+                    key={section.id}
+                    section={section}
+                    activePagePath={path}
+                  />
+                ))}
+            </StyledNavigationWrapper>
+          </Visible>
+        </>
+      </StyledSidebarNav>
+    </>
   );
 };
