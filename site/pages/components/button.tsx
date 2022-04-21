@@ -15,6 +15,160 @@ const infoIcon = (
   />
 );
 
+const commonPropsRows = (type?: string) => [
+  {
+    name: 'children',
+    type: 'string',
+    description: (
+      <>
+        The content of the ${type} Button is passed as the child of the
+        component.
+        {!type && (
+          <>
+            <Block spaceStack="space050" />
+            <InlineMessage
+              icon={infoIcon}
+              role="region"
+              aria-label="Children type"
+              title="Note"
+            >
+              Only if the children type supplied is a string or number it will
+              be rendered inside a Text Block.
+            </InlineMessage>
+          </>
+        )}
+      </>
+    ),
+    required: true,
+  },
+  {
+    name: 'size',
+    type: ['small', 'medium', 'large'],
+    default: 'medium',
+    description: `Defines the size of the ${type} Button.`,
+  },
+  {
+    name: 'state',
+    type: ['valid', 'invalid', 'disabled'],
+    description: `If true, renders the ${type} Button in a valid, invalid, or disabled state.`,
+  },
+  {
+    name: 'loading',
+    type: 'boolean',
+    default: 'false',
+    description: `If true, this will render the loading state of the ${type} Button.`,
+  },
+  {
+    name: 'eventOriginator',
+    type: 'string',
+    default: 'button',
+    description:
+      "Allows users to add event originator custom name eg. 'play-button'.",
+  },
+  {
+    name: 'href',
+    type: 'string',
+    description: `If provided, the ${type} Button component turns into an anchor element.`,
+  },
+];
+
+const commonOverridesRows = [
+  {
+    attribute: 'button.size',
+    type: 'buttonSize',
+    default: 'medium',
+    description: `If provided, this overrides the size of the Button.`,
+  },
+  {
+    attribute: 'width',
+    type: 'MQ<string>',
+    description: `If provided, this sets a fixed width to the Button. This can be a sizing token from the theme, or any CSS length value, e.g. 100% for a full-width element.`,
+  },
+  {
+    attribute: 'height',
+    type: 'MQ<string>',
+    description: `If provided, this sets a fixed height to the Button. This can be a sizing token from the theme, or any CSS length value.`,
+  },
+  {
+    attribute: 'minWidth',
+    type: 'MQ<string>',
+    default: ['small = sizing090', 'medium = sizing100', 'large = sizing110'],
+    description: `If provided, this sets a minimum width to the Button. This can be a sizing token from the theme, or any CSS length value.`,
+  },
+  {
+    attribute: 'minHeight',
+    type: 'MQ<string>',
+    default: ['small = sizing060', 'medium = sizing080', 'large = sizing090'],
+    description:
+      'If provided, this sets a maximum height to the Button. This can be a sizing token from the theme, or any CSS length value.',
+  },
+  {
+    attribute: 'button.stylePreset',
+    type: 'MQ<string>',
+    default: 'buttonSolidPrimary',
+    description: 'If provided, overrides the stylePreset of the Button.',
+  },
+  {
+    attribute: 'button.typographyPreset',
+    type: 'MQ<string>',
+    default: [
+      'small = utilityBody020',
+      'medium = utilityBody020',
+      'large = utilityBody030',
+    ],
+    description: 'If provided, overrides the typographyPreset of the Button.',
+  },
+  {
+    attribute: 'button.transitionPreset',
+    type: 'MQ<string>',
+    default: ['backgroundColorChange', 'borderColorChange'],
+    description: 'If provided, overrides the transitionPreset of the Button.',
+  },
+  {
+    attribute: 'button.spaceInset',
+    type: 'MQ<string>',
+    default: [
+      'small = spaceInsetSquish020',
+      'medium = spaceInsetSquish030',
+      'large = spaceInsetSquish040',
+    ],
+    description: 'If provided, this overrides the inset space of the Button.',
+  },
+  {
+    attribute: 'button.spaceInline',
+    type: 'MQ<string>',
+    default: ['small = space020', 'medium = space020', 'large = space020'],
+    description:
+      'If provided, overrides the space between multiple children in the underlying Stack.',
+  },
+  {
+    attribute: 'button.icon.size',
+    type: 'MQ<string>',
+    default: [
+      'small = iconSize010',
+      'medium = iconSize020',
+      'large = iconSize030',
+    ],
+    description: (
+      <>
+        If provided, this overrides the size of any icons applied to the Button.
+        <br />
+        <br />
+        Note: You can also set the icon size by passing it directly as a size
+        prop to the icon, but by doing this you will override the iconSize
+        passed from overrides.
+      </>
+    ),
+  },
+  {
+    attribute: 'loadingIndicator.stylePreset',
+    type: 'MQ<string>',
+    default: 'indeterminateProgressIndicatorPrimary',
+    description:
+      'If provided, this overrides the style preset applied to the underlying indeterminate progress indicator icon. The loading indicator icon is shown only when the loading prop is set to true.',
+  },
+];
+
 const ButtonComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
@@ -384,6 +538,25 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
     seo={{
       title: 'SEO',
       introduction: 'Ensure icons have Alt Text applied.',
+    }}
+    componentAPI={{
+      introduction:
+        'The Button has a range of props that can be used to define an appropriate experience for different use cases.',
+      components: [
+        {
+          title: 'Button',
+          summary:
+            'The Button has a range of props that can be used to define an appropriate experience for different use cases.',
+          propsRows: commonPropsRows(),
+          overridesRows: commonOverridesRows,
+        },
+        {
+          title: 'Icon Button',
+          summary: `The Icon Button has a range of props that can be used to define an appropriate experience for different use cases.`,
+          propsRows: commonPropsRows('Icon'),
+          overridesRows: commonOverridesRows,
+        },
+      ],
     }}
   />
 );
