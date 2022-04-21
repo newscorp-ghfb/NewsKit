@@ -78,9 +78,6 @@ const ThemelessSlider: React.FC<SliderProps> = ({
         dragged={isDragged}
         disabled={disabled}
         vertical={vertical}
-        aria-valuemin={min}
-        aria-valuemax={Math.floor(max)}
-        aria-orientation={vertical ? 'vertical' : 'horizontal'}
         labelPosition={labelPosition}
         style={getTrackBackgroundStyle(
           theme,
@@ -112,6 +109,7 @@ const ThemelessSlider: React.FC<SliderProps> = ({
         {...p}
         disabled={disabled}
         aria-label={ariaLabel}
+        aria-orientation={vertical ? 'vertical' : 'horizontal'}
         aria-valuetext={ariaValueText}
         aria-describedby={ariaDescribedBy}
         values={values}

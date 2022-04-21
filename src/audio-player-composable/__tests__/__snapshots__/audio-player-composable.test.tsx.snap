@@ -622,6 +622,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
         <div
           aria-describedby="mock-nk-1"
           aria-label="seek bar"
+          aria-orientation="horizontal"
           aria-valuemax="6610"
           aria-valuemin="0"
           aria-valuenow="10"
@@ -864,6 +865,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 <div
   aria-describedby="mock-nk-1"
   aria-label="seek bar"
+  aria-orientation="horizontal"
   aria-valuemax="6610"
   aria-valuemin="0"
   aria-valuenow="35"
@@ -1091,6 +1093,7 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
         <div
           aria-describedby="mock-nk-1"
           aria-label="seek bar"
+          aria-orientation="horizontal"
           aria-valuemax="1"
           aria-valuemin="0"
           aria-valuenow="0"
@@ -1829,6 +1832,7 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
         <div
           aria-describedby="mock-nk-1"
           aria-label="seek bar"
+          aria-orientation="horizontal"
           aria-valuemax="1"
           aria-valuemin="0"
           aria-valuenow="0"
@@ -2338,6 +2342,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
         <div
           aria-describedby="mock-nk-1"
           aria-label="seek bar"
+          aria-orientation="horizontal"
           aria-valuemax="1"
           aria-valuemin="0"
           aria-valuenow="0"
