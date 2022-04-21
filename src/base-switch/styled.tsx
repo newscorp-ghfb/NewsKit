@@ -70,12 +70,14 @@ export const StyledSwitch = styled.div<
     isFocused: boolean;
     isHovered: boolean;
     feedbackIsVisible: boolean;
+    isFocusedVisible: boolean;
   }
 >`
   ${insetCSS}
   display: flex;
   justify-content: center;
   align-items: center;
+
   ${({size, checked, state, isFocused, isHovered, path}) =>
     getStylePreset(`${path}.${size}.input`, 'input', {
       isChecked: checked,
@@ -85,8 +87,9 @@ export const StyledSwitch = styled.div<
       isFocused,
       isHovered,
     })};
-  ${({isFocused}) =>
-    isFocused &&
+
+  ${({isFocusedVisible}) =>
+    isFocusedVisible &&
     ` outline: 5px auto Highlight;
       outline: 5px auto -webkit-focus-ring-color;
       outline-offset: 3px;

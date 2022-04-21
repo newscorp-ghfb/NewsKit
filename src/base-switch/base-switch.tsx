@@ -14,6 +14,7 @@ import {getComponentOverrides} from '../utils/overrides';
 import {useControlled} from '../utils/hooks';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
+import {isFocusVisible} from '../utils/focus-visible';
 
 export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
   (
@@ -38,6 +39,9 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
   ) => {
     const ref = useRef<HTMLInputElement>(null);
     const [isInputFocused, setIsInputFocused] = React.useState(false);
+    const [isInputFocusedVisible, setIsInputFocusedVisible] = React.useState(
+      false,
+    );
     const [isInputActive, setIsInputActive] = React.useState(false);
     const [isLabelHovered, setIsLabelHovered] = React.useState(false);
 
@@ -62,13 +66,22 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
       [setCheckedState],
     );
 
-    const onInputFocus = useCallback(() => {
-      setIsInputFocused(true);
-    }, [setIsInputFocused]);
+    const onInputFocus = useCallback(
+      (e: React.FocusEvent<HTMLInputElement>) => {
+        if (isFocusVisible(e)) {
+          setIsInputFocusedVisible(true);
+        }
+        setIsInputFocused(true);
+      },
+      [setIsInputFocused],
+    );
 
     const onInputBlur = useCallback(() => {
+      if (isInputFocusedVisible) {
+        setIsInputFocusedVisible(false);
+      }
       setIsInputFocused(false);
-    }, [setIsInputFocused]);
+    }, [isInputFocusedVisible]);
 
     const onMouseDown = useCallback(() => {
       setIsInputActive(true);
@@ -154,6 +167,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
             overrides={overrides}
             size={size}
             isFocused={isInputFocused}
+            isFocusedVisible={isInputFocusedVisible}
             isHovered={isLabelHovered}
             feedbackIsVisible={isLabelHovered || isInputFocused}
             path={path}
