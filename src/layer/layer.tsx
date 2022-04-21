@@ -27,6 +27,7 @@ export const Layer: React.FC<LayerProps> = ({
 
   useIsomorphicLayoutEffect(() => {
     // SSR only
+    /* istanbul ignore next */
     if (!container || typeof document === 'undefined') return;
 
     let target = layerOrganizerHost || document.body;
@@ -36,6 +37,7 @@ export const Layer: React.FC<LayerProps> = ({
       target = parentLayer;
     }
 
+    /* istanbul ignore next */
     if (!target) return;
 
     const classList = [LAYER_CLASSNAME];
@@ -52,6 +54,7 @@ export const Layer: React.FC<LayerProps> = ({
   }, [container, parentLayer, layerOrganizerHost, appendToRef, className]);
 
   return typeof document === 'undefined' || !container ? (
+    /* istanbul ignore next */
     <>{children}</>
   ) : (
     createPortal(
