@@ -512,7 +512,7 @@ const StylePresets = (layoutProps: LayoutProps) => (
             <>
               Style Presets can be applied to NewsKit components in a number of
               ways,{' '}
-              <Link href="theme/theming/using-a-theme/">
+              <Link href="/theme/theming/using-a-theme/">
                 learn more about using a theme in code
               </Link>{' '}
               to better understand the trade-offs associated with each approach.

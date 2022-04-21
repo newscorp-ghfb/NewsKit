@@ -785,7 +785,6 @@ exports[`TabsWithTable renders with default data 1`] = `
             class="emotion-10"
           >
             <div
-              aria-orientation="horizontal"
               class="emotion-11"
               data-testid="scroll-container"
             >
