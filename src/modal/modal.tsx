@@ -12,7 +12,7 @@ import {getTransitionDuration} from '../utils/get-transition-duration';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {Portal} from '../portal';
+import {Layer} from '../layer';
 
 const ThemelessModal: React.FC<ModalProps> = ({
   children,
@@ -39,7 +39,7 @@ const ThemelessModal: React.FC<ModalProps> = ({
   const [showWrapper, setShowWrapper] = React.useState(false);
 
   // When Modal is used inline, it should not be in a layer
-  const OuterWrapper = props.inline ? React.Fragment : Portal;
+  const OuterWrapper = props.inline ? React.Fragment : Layer;
 
   return (
     <OuterWrapper>

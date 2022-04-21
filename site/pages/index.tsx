@@ -16,9 +16,7 @@ import {
   TextBlock,
   Visible,
   Drawer,
-  Select,
   Modal,
-  SelectOption,
 } from 'newskit';
 import LinkNext from 'next/link';
 import {SectionIntroduction} from '../components/section-introduction';
@@ -288,12 +286,9 @@ const Index = (layoutProps: LayoutProps) => {
       <div>
         <Button onClick={() => setShowModal(true)}>Open modal</Button>
         <Button onClick={() => setShowDrawer(true)}>Open drawer</Button>
-        <Select placeholder="select">
-          <SelectOption value="1">uno</SelectOption>
-          <SelectOption value="2">duo</SelectOption>
-        </Select>
+
         <Drawer open={showDrawer} onDismiss={() => setShowDrawer(false)}>
-          Drawer
+          Drawer content
         </Drawer>
         <Modal open={showModal} onDismiss={() => setShowModal(false)}>
           Drawer
