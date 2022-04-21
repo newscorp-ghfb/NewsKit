@@ -16,8 +16,6 @@ const contentOverrides = {
   typographyPreset: {
     xs: 'editorialParagraph020',
     md: 'editorialParagraph030',
-    lg: 'editorialParagraph030',
-    xl: 'editorialParagraph030',
   },
 };
 

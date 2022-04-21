@@ -1,9 +1,8 @@
 import React from 'react';
-import {GridLayout, GridLayoutItem, Tab, Tabs, TabSize} from 'newskit';
+import {Tab, Tabs, TabSize} from 'newskit';
 import {Table} from '../table';
 import {ComponentTabsWithTableProps} from './types';
-import {ContentText} from '../text-section/content-text';
-import {ContentColSpan, ContentSecondary} from '../content-structure';
+import {ContentSecondary, ContentTertiary} from '../content-structure';
 
 export const TabsWithTable: React.FC<ComponentTabsWithTableProps> = ({
   components,
@@ -17,14 +16,9 @@ export const TabsWithTable: React.FC<ComponentTabsWithTableProps> = ({
         tabList.push({
           label: header,
           content: (
-            <GridLayout columns={`repeat(${ContentColSpan.FULL}, 1fr)`}>
-              <GridLayoutItem column={`auto / span ${ContentColSpan.TEXT}`}>
-                <ContentText>{description}</ContentText>
-              </GridLayoutItem>
-              <GridLayoutItem column={`auto / span ${ContentColSpan.FULL}`}>
-                <Table columns={columnHeader} rows={rows} />
-              </GridLayoutItem>
-            </GridLayout>
+            <ContentTertiary description={description}>
+              <Table columns={columnHeader} rows={rows} />
+            </ContentTertiary>
           ),
         }),
       );
