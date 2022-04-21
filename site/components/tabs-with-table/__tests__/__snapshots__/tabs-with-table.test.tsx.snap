@@ -592,73 +592,6 @@ exports[`TabsWithTable renders with default data 1`] = `
   width: 100%;
 }
 
-.emotion-29 {
-  grid-column: auto/span 10;
-}
-
-.emotion-30 {
-  margin-bottom: 40px;
-}
-
-.emotion-31 {
-  margin: 0;
-  color: #2E2E2E;
-}
-
-.emotion-31 svg {
-  fill: #2E2E2E;
-}
-
-@media screen and (max-width: 1439px) {
-  .emotion-31 {
-    font-family: "DM Sans",sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    letter-spacing: 0;
-    padding: 0.5px 0px;
-  }
-
-  .emotion-31::before {
-    content: '';
-    margin-bottom: -0.391em;
-    display: block;
-  }
-
-  .emotion-31::after {
-    content: '';
-    margin-top: -0.409em;
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-31 {
-    font-family: "DM Sans",sans-serif;
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 400;
-    letter-spacing: 0;
-    padding: 0.5px 0px;
-  }
-
-  .emotion-31::before {
-    content: '';
-    margin-bottom: -0.391em;
-    display: block;
-  }
-
-  .emotion-31::after {
-    content: '';
-    margin-top: -0.409em;
-    display: block;
-  }
-}
-
-.emotion-32 {
-  grid-column: auto/span 12;
-}
-
 .emotion-33 {
   overflow-x: auto;
 }
@@ -719,26 +652,30 @@ exports[`TabsWithTable renders with default data 1`] = `
   border-width: 0;
 }
 
+.emotion-43 {
+  grid-column: auto/span 12;
+}
+
 @media screen and (max-width: 767px) {
-  .emotion-60 {
+  .emotion-44 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-60 {
+  .emotion-44 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-60 {
+  .emotion-44 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-60 {
+  .emotion-44 {
     margin-bottom: 80px;
   }
 }
@@ -887,20 +824,19 @@ exports[`TabsWithTable renders with default data 1`] = `
             class="emotion-0"
           >
             <div
-              class="emotion-29"
+              class="emotion-1"
             >
-              <div
-                class="emotion-30"
+              <p
+                class="emotion-5"
               >
-                <p
-                  class="emotion-31"
-                >
-                   Tab1 description
-                </p>
-              </div>
+                 Tab1 description
+              </p>
+              <div
+                class="emotion-6"
+              />
             </div>
             <div
-              class="emotion-32"
+              class="emotion-7"
             >
               <div
                 class="emotion-33"
@@ -954,6 +890,13 @@ exports[`TabsWithTable renders with default data 1`] = `
                   </tbody>
                 </table>
               </div>
+            </div>
+            <div
+              class="emotion-43"
+            >
+              <div
+                class="emotion-44"
+              />
             </div>
           </div>
         </div>
@@ -970,20 +913,19 @@ exports[`TabsWithTable renders with default data 1`] = `
             class="emotion-0"
           >
             <div
-              class="emotion-29"
+              class="emotion-1"
             >
-              <div
-                class="emotion-30"
+              <p
+                class="emotion-5"
               >
-                <p
-                  class="emotion-31"
-                >
-                   Tab2 description
-                </p>
-              </div>
+                 Tab2 description
+              </p>
+              <div
+                class="emotion-6"
+              />
             </div>
             <div
-              class="emotion-32"
+              class="emotion-7"
             >
               <div
                 class="emotion-33"
@@ -1038,15 +980,22 @@ exports[`TabsWithTable renders with default data 1`] = `
                 </table>
               </div>
             </div>
+            <div
+              class="emotion-43"
+            >
+              <div
+                class="emotion-44"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div
-      class="emotion-32"
+      class="emotion-43"
     >
       <div
-        class="emotion-60"
+        class="emotion-44"
       />
     </div>
   </div>
