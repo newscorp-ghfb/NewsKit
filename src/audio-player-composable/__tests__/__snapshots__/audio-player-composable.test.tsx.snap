@@ -260,12 +260,12 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  width: 32px;
+  height: 32px;
+  -webkit-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  -moz-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  -ms-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -937,12 +937,12 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  width: 32px;
+  height: 32px;
+  -webkit-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  -moz-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  -ms-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -1080,12 +1080,12 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  width: 32px;
+  height: 32px;
+  -webkit-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  -moz-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  -ms-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1898,12 +1898,12 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  width: 32px;
+  height: 32px;
+  -webkit-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  -moz-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  -ms-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2245,12 +2245,12 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  width: 32px;
+  height: 32px;
+  -webkit-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  -moz-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  -ms-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
 }
 
 .emotion-3:hover:not(:disabled) {

@@ -1186,6 +1186,9 @@ Object {
       "stylePreset": "seekBarBuffering",
     },
     "slider": Object {
+      "feedback": Object {
+        "size": "sizing060",
+      },
       "indicator": Object {
         "stylePreset": "seekBarIndicator",
       },
