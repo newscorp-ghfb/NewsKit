@@ -310,6 +310,81 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
+    accessibility={{
+      introduction:
+        'The Button has the following accessibility considerations:',
+      focusOrder: {
+        title: 'Focus order',
+        tableRows: [
+          {
+            order: 1,
+            element: 'Button container',
+            role: 'Focusses to the Button container',
+          },
+        ],
+      },
+      interaction: {
+        title: 'Keyboard Interactions',
+        tableRows: [
+          {
+            command: ['_Space', '_Enter'],
+            description: 'Activates the Button.',
+          },
+        ],
+      },
+      aria: {
+        title: 'WAI-ARIA',
+        tableRows: [
+          {
+            element: 'label',
+            attribute: 'ariaLabel',
+            value: 'string',
+            description:
+              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the Button.',
+            userSupplied: true,
+          },
+          {
+            element: 'required',
+            attribute: 'aria-required',
+            value: 'object',
+            description:
+              'This attribute informs the user that an element is required. When set to true, screen readers notify users that the element is required.',
+            userSupplied: true,
+          },
+          {
+            element: 'invalid',
+            attribute: 'aria-required',
+            value: 'object',
+            description:
+              'This attribute informs the user when there is an error. By default it’s set to false. Screen readers will alert users when the element is set to any value other than false.',
+            userSupplied: true,
+          },
+        ],
+      },
+      infoNoticeAria: (
+        <>
+          The Button supports native{' '}
+          <Link
+            href="https://www.w3.org/TR/html-aria/#docconformance"
+            target="_blank"
+          >
+            HTML
+          </Link>{' '}
+          and{' '}
+          <Link
+            href="https://www.w3.org/TR/wai-aria-1.1/#button"
+            target="_blank"
+          >
+            aria attributes
+          </Link>
+          .
+        </>
+      ),
+    }}
+    seo={{
+      title: 'SEO',
+      introduction: 'Ensure icons have Alt Text applied.',
+    }}
   />
 );
 
