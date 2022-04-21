@@ -72,11 +72,15 @@ export const LabelWithLogicalPropsOverrides = () => (
   <>
     <StorybookSubHeading>With Logical Paddings</StorybookSubHeading>
     <StyledDiv>
-      <Label overrides={{paddingBlock: 'space030'}}>Test</Label>
+      <Label overrides={{paddingBlockEnd: 'space030'}}>Test</Label>
     </StyledDiv>
     <StorybookSubHeading>With Logical Margins</StorybookSubHeading>
     <StyledDiv>
-      <Label overrides={{marginBlock: 'space030'}}>Test</Label>
+      <Label
+        overrides={{marginBlockEnd: 'space030', marginInlineEnd: 'space030'}}
+      >
+        Test
+      </Label>
     </StyledDiv>
   </>
 );
