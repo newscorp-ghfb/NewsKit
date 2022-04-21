@@ -19,8 +19,8 @@ export const StyledLinkItem = styled.div<{
       isSelected: $selected,
     })(props)}
   box-sizing: border-box;
-
   cursor: 'pointer';
+  height: ${getSizingFromTheme('sizing070')};
   min-width: 230px;
   padding: ${getSpacingFromTheme('spaceInset030')} 0;
   margin: ${({theme}) => `${theme.spacePresets.space010} 0`};

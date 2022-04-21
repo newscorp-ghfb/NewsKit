@@ -86,12 +86,8 @@ export const MenuCollapsable = React.forwardRef<
   HTMLLIElement,
   MenuCollapsablePropsTypes
 >(({overrides, children, title, ...restProps}, ref) => {
-  // const theme = useTheme();
   const {vertical} = useMenuContext();
   const {rest} = splitAriaProps(restProps);
-  // const titleID = useReactKeys(1)[0];
-
-  // const shouldRenderTitle = vertical && Boolean(title);
 
   return (
     <StyledMenuCollapsable>
