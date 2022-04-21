@@ -8,16 +8,19 @@ import {
   getSpacingCssFromTheme,
   getStylePresetFromTheme,
   Block,
+  Visible,
 } from 'newskit';
 import {Overlay} from '../overlay';
 import {SidebarNav} from './sidebar-navigation';
+import {ThemeSwitch} from '../theme-switch';
+import {GitHubLaunch} from '../menu-collapsable/menu-collapsable';
 
 interface SidebarProps {
   sidebarOpen: boolean;
   handleSidebarClick: () => void;
   hideSidebar?: boolean;
-  toggleTheme: () => void;
-  themeMode: string;
+  toggleTheme?: () => void;
+  themeMode?: string;
 }
 interface SidebarWrapperProps {
   open: boolean;
@@ -79,7 +82,13 @@ const Sidebar: React.FC<SidebarProps> = ({
     >
       <Block spaceInset="space010" />
 
-      <SidebarNav toggleTheme={toggleTheme} themeMode={themeMode} />
+      <SidebarNav />
+      <Visible xs sm md>
+        <Block spaceStack="space050" />
+        <GitHubLaunch href="https://github.com/newscorp-ghfb/newskit" />
+        <Block spaceStack="space040" />
+        <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} textTheme />
+      </Visible>
     </SidebarWrapper>
 
     <Overlay

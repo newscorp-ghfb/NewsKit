@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import {useRouter} from 'next/router';
 import {Divider, getSpacingCssFromTheme, styled} from 'newskit';
+
 import {MenuNav} from '../menu-collapsable/menu-collapsable';
 import {Link} from '../link';
 import routes from '../../routes';
@@ -106,13 +107,7 @@ const Section: React.FC<SectionProps> = ({section, activePagePath}) => (
   </StyledSectionContainer>
 );
 
-export const SidebarNav = ({
-  toggleTheme,
-  themeMode,
-}: {
-  toggleTheme: () => void;
-  themeMode: string;
-}) => {
+export const SidebarNav = () => {
   const path = useRouter().pathname;
 
   const currentRoute = path.match(/\/[A-z\d-]*/g);
@@ -124,12 +119,7 @@ export const SidebarNav = ({
       <StyledSidebarNav role="navigation" aria-label="Sidebar">
         <>
           <Visible xs sm md>
-            <MenuNav
-              path={path}
-              menu={routes}
-              toggleTheme={toggleTheme}
-              themeMode={themeMode}
-            />
+            <MenuNav path={path} menu={routes} />
           </Visible>
           <Visible lg xl>
             <StyledNavigationWrapper role="list">

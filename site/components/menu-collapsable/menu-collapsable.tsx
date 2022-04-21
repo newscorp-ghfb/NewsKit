@@ -14,7 +14,6 @@ import {
   Stack,
   styled,
 } from 'newskit';
-import {ThemeSwitch} from '../theme-switch';
 import {IconExpandLess, IconExpandMore} from '../icons';
 import {MenuCollapsable} from './menu-styled';
 
@@ -59,13 +58,9 @@ type SubNavItemProps = NavProps & SubNavProps;
 
 export const MenuNav = ({
   path,
-  toggleTheme,
-  themeMode,
   menu,
 }: {
   path: string;
-  toggleTheme: () => void;
-  themeMode: string;
   menu: SubNavItemProps[];
 }) => {
   const [openPanelIds, setOpenPanelIds] = useState<Array<number>>([]);
@@ -73,7 +68,6 @@ export const MenuNav = ({
     const index = menu.findIndex(obj => path.includes(obj.id)) || 0;
     setOpenPanelIds([index]);
   }, []);
-
   const createMenuItem = (list: SubNavItemProps[]) => (
     <>
       {list &&
@@ -162,14 +156,6 @@ export const MenuNav = ({
       <MobileNavigationDivider>
         <Divider />
       </MobileNavigationDivider>
-
-      <Block spaceStack="space050" />
-
-      <GitHubLaunch href="https://github.com/newscorp-ghfb/newskit" />
-
-      <Block spaceStack="space040" />
-
-      <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} textTheme />
     </Menu>
   );
 };
