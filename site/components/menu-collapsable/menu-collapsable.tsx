@@ -27,13 +27,10 @@ const MobileNavigationDivider = styled.div`
   ${getSpacingCssFromTheme('marginBottom', 'space050')};
 `;
 
-export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
+export const GitHubLaunch: React.FC<{href?: string}> = ({href}) =>
   href ? (
-    <Stack
-      flow="horizontal-center"
-      spaceInline="space040"
-      spaceStack="space000"
-    >
+    <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
+      <H3 overrides={{typographyPreset: 'utilityLabel030'}}>Github</H3>
       <IconButton
         size={ButtonSize.Small}
         aria-label="github link"
@@ -167,11 +164,10 @@ export const MenuNav = ({
       </MobileNavigationDivider>
 
       <Block spaceStack="space050" />
-      <Stack flow={Flow.HorizontalStretch} stackDistribution="space-between">
-        <H3 overrides={{typographyPreset: 'utilityLabel030'}}>Github</H3>
-        <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
-      </Stack>
-      <Block spaceStack="space050" />
+
+      <GitHubLaunch href="https://github.com/newscorp-ghfb/newskit" />
+
+      <Block spaceStack="space040" />
 
       <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} textTheme />
     </Menu>

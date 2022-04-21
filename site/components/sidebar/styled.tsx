@@ -6,6 +6,7 @@ import {
   getSpacingFromTheme,
   getColorFromTheme,
   getBorderCssFromTheme,
+  getSpacingCssFromTheme,
 } from 'newskit';
 
 export const StyledLinkItem = styled.div<{
@@ -49,7 +50,8 @@ export const StyledSecondLevelHeader = styled.div`
   ${getTypographyPresetFromTheme('sidebarFirstLevelHeader')};
   ${getStylePresetFromTheme('sidebarHeader')};
   min-height: ${getSizingFromTheme('sizing060')};
-  margin-top: ${getSpacingFromTheme('space010')};
+  ${getSpacingCssFromTheme('marginTop', 'space010')};
+  ${getSpacingCssFromTheme('marginBottom', 'space040')};
 `;
 
 export const StyledSidebarNav = styled.div`
