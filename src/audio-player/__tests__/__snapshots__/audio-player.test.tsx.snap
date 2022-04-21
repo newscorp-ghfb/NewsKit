@@ -1179,9 +1179,6 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                     </button>
                   </div>
                   <div
-                    aria-orientation="horizontal"
-                    aria-valuemax="1"
-                    aria-valuemin="0"
                     class="emotion-45"
                     data-testid="volume-control-track"
                     style="background: rgb(255, 255, 0);"
@@ -1190,6 +1187,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                     <div
                       aria-describedby="mock-nk-1"
                       aria-label="Volume Control"
+                      aria-orientation="horizontal"
                       aria-valuemax="1"
                       aria-valuemin="0"
                       aria-valuenow="0.1"
@@ -1279,6 +1277,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
               <div
                 aria-describedby="mock-nk-1"
                 aria-label="seek bar"
+                aria-orientation="horizontal"
                 aria-valuemax="1"
                 aria-valuemin="0"
                 aria-valuenow="0"
@@ -2402,9 +2401,6 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                     </button>
                   </div>
                   <div
-                    aria-orientation="horizontal"
-                    aria-valuemax="1"
-                    aria-valuemin="0"
                     class="emotion-37"
                     data-testid="volume-control-track"
                     style="background: rgb(255, 255, 0);"
@@ -2413,6 +2409,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                     <div
                       aria-describedby="mock-nk-1"
                       aria-label="Volume Control"
+                      aria-orientation="horizontal"
                       aria-valuemax="1"
                       aria-valuemin="0"
                       aria-valuenow="0.1"
@@ -2502,6 +2499,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
               <div
                 aria-describedby="mock-nk-1"
                 aria-label="seek bar"
+                aria-orientation="horizontal"
                 aria-valuemax="1"
                 aria-valuemin="0"
                 aria-valuenow="0"
@@ -3607,6 +3605,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
               <div
                 aria-describedby="mock-nk-1"
                 aria-label="seek bar"
+                aria-orientation="horizontal"
                 aria-valuemax="1"
                 aria-valuemin="0"
                 aria-valuenow="0"
@@ -4537,9 +4536,6 @@ exports[`Audio Player live player renders as expected 1`] = `
                     </button>
                   </div>
                   <div
-                    aria-orientation="horizontal"
-                    aria-valuemax="1"
-                    aria-valuemin="0"
                     class="emotion-27"
                     data-testid="volume-control-track"
                     style="background: rgb(255, 255, 0);"
@@ -4548,6 +4544,7 @@ exports[`Audio Player live player renders as expected 1`] = `
                     <div
                       aria-describedby="mock-nk-1"
                       aria-label="Volume Control"
+                      aria-orientation="horizontal"
                       aria-valuemax="1"
                       aria-valuemin="0"
                       aria-valuenow="0.7"
@@ -6305,9 +6302,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                     </button>
                   </div>
                   <div
-                    aria-orientation="horizontal"
-                    aria-valuemax="1"
-                    aria-valuemin="0"
                     class="emotion-46"
                     data-testid="volume-control-track"
                     style="background: rgb(255, 255, 0);"
@@ -6316,6 +6310,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                     <div
                       aria-describedby="mock-nk-1"
                       aria-label="Volume Control"
+                      aria-orientation="horizontal"
                       aria-valuemax="1"
                       aria-valuemin="0"
                       aria-valuenow="0.1"
@@ -6405,6 +6400,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
               <div
                 aria-describedby="mock-nk-1"
                 aria-label="seek bar"
+                aria-orientation="horizontal"
                 aria-valuemax="6610"
                 aria-valuemin="0"
                 aria-valuenow="10"
@@ -6495,6 +6491,7 @@ exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 <div
   aria-describedby="mock-nk-1"
   aria-label="seek bar"
+  aria-orientation="horizontal"
   aria-valuemax="6610"
   aria-valuemin="0"
   aria-valuenow="35"
@@ -7745,9 +7742,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                     </button>
                   </div>
                   <div
-                    aria-orientation="horizontal"
-                    aria-valuemax="1"
-                    aria-valuemin="0"
                     class="emotion-45"
                     data-testid="volume-control-track"
                     style="background: rgb(255, 255, 0);"
@@ -7756,6 +7750,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                     <div
                       aria-describedby="mock-nk-1"
                       aria-label="Volume Control"
+                      aria-orientation="horizontal"
                       aria-valuemax="1"
                       aria-valuemin="0"
                       aria-valuenow="0.7"
@@ -7845,6 +7840,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
               <div
                 aria-describedby="mock-nk-1"
                 aria-label="seek bar"
+                aria-orientation="horizontal"
                 aria-valuemax="1"
                 aria-valuemin="0"
                 aria-valuenow="0"
@@ -9123,9 +9119,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                     </button>
                   </div>
                   <div
-                    aria-orientation="horizontal"
-                    aria-valuemax="1"
-                    aria-valuemin="0"
                     class="emotion-45"
                     data-testid="volume-control-track"
                     style="background: rgb(255, 255, 0);"
@@ -9134,6 +9127,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                     <div
                       aria-describedby="mock-nk-1"
                       aria-label="Volume Control"
+                      aria-orientation="horizontal"
                       aria-valuemax="1"
                       aria-valuemin="0"
                       aria-valuenow="0.7"
@@ -9223,6 +9217,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
               <div
                 aria-describedby="mock-nk-1"
                 aria-label="seek bar"
+                aria-orientation="horizontal"
                 aria-valuemax="1"
                 aria-valuemin="0"
                 aria-valuenow="0"
@@ -10472,9 +10467,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                     </button>
                   </div>
                   <div
-                    aria-orientation="horizontal"
-                    aria-valuemax="1"
-                    aria-valuemin="0"
                     class="emotion-45"
                     data-testid="volume-control-track"
                     style="background: rgb(255, 255, 0);"
@@ -10483,6 +10475,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                     <div
                       aria-describedby="mock-nk-1"
                       aria-label="Volume Control"
+                      aria-orientation="horizontal"
                       aria-valuemax="1"
                       aria-valuemin="0"
                       aria-valuenow="0.1"
@@ -10572,6 +10565,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
               <div
                 aria-describedby="mock-nk-1"
                 aria-label="seek bar"
+                aria-orientation="horizontal"
                 aria-valuemax="1"
                 aria-valuemin="0"
                 aria-valuenow="0"
