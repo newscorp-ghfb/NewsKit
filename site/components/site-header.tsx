@@ -20,8 +20,6 @@ import {
   Button,
   ButtonSize,
   IconFilledGitHub,
-  StackChild,
-  AlignSelfValues,
 } from 'newskit';
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
@@ -61,6 +59,8 @@ export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
 const Header = styled.header`
   flex-shrink: 0;
   position: fixed;
+  display: flex;
+  align-items: center;
   top: 0;
   right: 0;
   left: 0;
@@ -121,14 +121,8 @@ export const StyledLinkItem = styled.div<{
 const StyledVisible = styled(Visible)`
   height: 100%;
   z-index: 1;
-  ${getSizingCssFromTheme('marginLeft', 'sizing110')};
+  ${getSpacingCssFromTheme('marginLeft', 'space100')};
 `;
-
-// const MobileLogo: React.FC = () => (
-//   <Link type="standalone" href="/" overrides={{stylePreset: 'inkBase'}}>
-//     <NewsKitMobileLogo color="inkBase" />
-//   </Link>
-// );
 
 interface HeaderProps {
   handleSidebarClick: () => void;
@@ -259,13 +253,9 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
               <Stack
                 flow={Flow.HorizontalCenter}
                 stackDistribution={StackDistribution.End}
-                spaceInline="space020"
-                // spaceStack='space000'
+                spaceInline="space045"
               >
-                <StackChild alignSelf={AlignSelfValues.Stretch}>
-                  <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
-                </StackChild>
-
+                <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
                 <ThemeSwitch
                   size={ButtonSize.Medium}
                   toggle={toggleTheme}
