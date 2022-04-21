@@ -1,16 +1,16 @@
-import React, {useLayoutEffect} from 'react';
+import React from 'react';
 import {createPortal} from 'react-dom';
+import {useIsomorphicLayoutEffect} from '../utils/hooks';
 import {LayerContextProvider, useLayerOrganizer, useLayer} from './context';
 
 interface LayerProps {
   appendToRef?: React.RefObject<HTMLElement | null>;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
 }
 
 const LAYER_CLASSNAME = 'nk-layer';
 
-// @ts-ignore
 export const Layer: React.FC<LayerProps> = ({
   children,
   appendToRef,
@@ -25,7 +25,7 @@ export const Layer: React.FC<LayerProps> = ({
     [],
   );
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     // SSR only
     if (!container || typeof document === 'undefined') return;
 
@@ -51,12 +51,12 @@ export const Layer: React.FC<LayerProps> = ({
     };
   }, [container, parentLayer, layerOrganizerHost, appendToRef, className]);
 
-  return typeof document === 'undefined' || !container
-    ? children
-    : createPortal(
-        <LayerContextProvider value={container}>
-          {children}
-        </LayerContextProvider>,
-        container,
-      );
+  return typeof document === 'undefined' || !container ? (
+    <>{children}</>
+  ) : (
+    createPortal(
+      <LayerContextProvider value={container}>{children}</LayerContextProvider>,
+      container,
+    )
+  );
 };
