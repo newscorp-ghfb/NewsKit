@@ -1,4 +1,5 @@
-import React, {useLayoutEffect, useState} from 'react';
+import React, {useState} from 'react';
+import {useIsomorphicLayoutEffect} from '../utils/hooks';
 import {LayerOganizerContextProvider, useLayerOrganizer} from './context';
 
 interface LayerOrganizerProps {
@@ -19,9 +20,15 @@ export const LayerOrganizer: React.FC<LayerOrganizerProps> = ({
   // Create host when additional layers
   // Otherwise don't add div to DOM ??
   // Remove host when needed
-  const container = React.useMemo(() => document.createElement('div'), []);
+  const container = React.useMemo(
+    () => typeof document !== 'undefined' && document.createElement('div'),
+    [],
+  );
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
+    /* istanbul ignore next */
+    if (!container || typeof document === 'undefined') return;
+
     const target = parentLayerOrganizer.host || document.body;
     container.setAttribute('class', LAYER_ORGANIZER_CLASSNAME);
 
@@ -36,6 +43,7 @@ export const LayerOrganizer: React.FC<LayerOrganizerProps> = ({
     target.appendChild(container);
     setHost(container);
 
+    // eslint-disable-next-line consistent-return
     return () => {
       if (host && target.contains(host)) {
         target.removeChild(host);

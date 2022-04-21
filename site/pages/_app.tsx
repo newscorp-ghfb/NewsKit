@@ -5,6 +5,7 @@ import {
   InstrumentationProvider,
   instrumentationHandlers,
   UncompiledTheme,
+  LayerOrganizer,
 } from 'newskit';
 import App, {AppContext} from 'next/app';
 import {HeadNextSeo} from '../components/head-next-seo/head-next-seo';
@@ -141,15 +142,17 @@ export default class MyApp extends App<Props, State> {
           })}
         >
           <ThemeProvider theme={theme}>
-            <ThemeMode.Provider value={themeMode}>
-              <PageLoadInstrumentation />
-              <Component
-                {...pageProps}
-                path={path}
-                toggleTheme={this.toggleTheme}
-                themeMode={themeMode}
-              />
-            </ThemeMode.Provider>
+            <LayerOrganizer>
+              <ThemeMode.Provider value={themeMode}>
+                <PageLoadInstrumentation />
+                <Component
+                  {...pageProps}
+                  path={path}
+                  toggleTheme={this.toggleTheme}
+                  themeMode={themeMode}
+                />
+              </ThemeMode.Provider>
+            </LayerOrganizer>
           </ThemeProvider>
         </InstrumentationProvider>
       </>
