@@ -1369,13 +1369,13 @@ export const StoryCardLogicalOverrides = () => (
             actions={cardSmallTags}
             overrides={{
               actionsContainer: {
-                paddingBlock: {
+                paddingBlockStart: {
                   xs: 'spaceInset060',
                   sm: 'spaceInset060',
                   md: 'spaceInset070',
                   lg: 'spaceInset070',
                 },
-                paddingInline: {
+                paddingInlineStart: {
                   xs: 'spaceInset070',
                   sm: 'spaceInset070',
                   md: 'spaceInset080',

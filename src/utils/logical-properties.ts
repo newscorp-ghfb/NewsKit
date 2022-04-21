@@ -4,7 +4,7 @@ import {deepMerge} from './deep-merge';
 import {get} from './get';
 import {filterObject, rejectObject} from './filter-object';
 
-interface LogicalMarginProps {
+export interface LogicalMarginProps {
   marginInlineStart?: MQ<string>;
   marginInlineEnd?: MQ<string>;
   marginInline?: MQ<string>;
@@ -13,7 +13,7 @@ interface LogicalMarginProps {
   marginBlock?: MQ<string>;
 }
 
-interface LogicalPaddingProps {
+export interface LogicalPaddingProps {
   paddingInlineStart?: MQ<string>;
   paddingInlineEnd?: MQ<string>;
   paddingInline?: MQ<string>;
