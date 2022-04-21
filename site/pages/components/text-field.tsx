@@ -417,21 +417,18 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Input mode',
           description: (
             <>
-              Selection controls (inputs), such as the Form Input TextField, can
-              be grouped together with other selection controls, Labels, and
-              Assistive Text together in a Fieldset. The Fieldset has a caption
-              that gives a title attributed to the elements that appear in the
-              Fieldset, called a Legend.
-              <br />
-              <br />
-              The Fieldset can also support other selection controls (inputs)
-              such as the{' '}
-              <Link href="/components/radio-button/">FormInput Radio</Link>,
-              FormInput Switch, and{' '}
-              <Link href="/components/checkbox/">FormInput Checkbox</Link>.
-              <br />
-              <br />
-              For more information, please refer to the Fieldset component.
+              The Text Field supports input mode functionality that hints at the
+              type of data that might be entered by the user while editing the
+              element or its contents. The input modes supported include
+              &apos;text&apos;, &apos;email&apos;, &apos;tel&apos;, and
+              &apos;numeric&apos;.
+              <Link
+                href=" https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute"
+                target="_blank"
+              >
+                For more information, please refer to the HTML inputmode
+                attribute types.
+              </Link>
             </>
           ),
           media: getIllustrationComponent(
