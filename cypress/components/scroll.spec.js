@@ -1,3 +1,13 @@
+import {SCROLL_THRESHOLD} from '../../src/scroll/utils';
+
+const assertScrollValueZoomAgnostic = ($el, prop, expectedValue) => {
+  cy.wrap($el)
+    .invoke(prop)
+    .then(value =>
+      expect(value).to.be.closeTo(expectedValue, SCROLL_THRESHOLD),
+    );
+};
+
 describe('scroll', () => {
   it('horizontal flow', () => {
     const defaultStepDistance = 160;
@@ -11,7 +21,7 @@ describe('scroll', () => {
       cy.get('[data-testid="scroll-arrow-left"]').should('not.exist');
       cy.get('@scrollArrowRight').should('be.enabled');
       cy.get('@scrollContainer').then($element => {
-        cy.wrap($element).should('have.prop', 'scrollLeft', 0);
+        assertScrollValueZoomAgnostic($element, 'scrollLeft', 0);
       });
 
       // 2. Click right arrow - left arrow enabled, new scroll position
@@ -21,8 +31,8 @@ describe('scroll', () => {
 
       cy.get('@scrollArrowLeft').should('be.enabled');
       cy.get('@scrollContainer').then($element => {
-        cy.wrap($element).should(
-          'have.prop',
+        assertScrollValueZoomAgnostic(
+          $element,
           'scrollLeft',
           defaultStepDistance,
         );
@@ -51,8 +61,8 @@ describe('scroll', () => {
         const element = $element[0];
         const currentScrollPosition =
           element.scrollWidth - element.clientWidth - defaultStepDistance;
-        cy.wrap($element).should(
-          'have.prop',
+        assertScrollValueZoomAgnostic(
+          $element,
           'scrollLeft',
           currentScrollPosition,
         );
@@ -82,7 +92,7 @@ describe('scroll', () => {
       cy.get('[data-testid="scroll-arrow-top"]').should('not.exist');
       cy.get('@scrollArrowBottom').should('be.enabled');
       cy.get('@scrollContainer').then($element => {
-        cy.wrap($element).should('have.prop', 'scrollTop', 0);
+        assertScrollValueZoomAgnostic($element, 'scrollTop', 0);
       });
 
       // 2. Click bottom arrow - top arrow enabled, new scroll position
@@ -92,7 +102,11 @@ describe('scroll', () => {
 
       cy.get('@scrollArrowTop').should('be.enabled');
       cy.get('@scrollContainer').then($element => {
-        cy.wrap($element).should('have.prop', 'scrollTop', defaultStepDistance);
+        assertScrollValueZoomAgnostic(
+          $element,
+          'scrollTop',
+          defaultStepDistance,
+        );
       });
 
       // 3. Manual scroll to the right end - left arrow enabled, right arrow disabled, scroll position right end
@@ -117,8 +131,8 @@ describe('scroll', () => {
         const element = $element[0];
         const currentScrollPosition =
           element.scrollHeight - element.clientHeight - defaultStepDistance;
-        cy.wrap($element).should(
-          'have.prop',
+        assertScrollValueZoomAgnostic(
+          $element,
           'scrollTop',
           currentScrollPosition,
         );
