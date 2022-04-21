@@ -110,7 +110,7 @@ const listItemWithOneCell = (
 export default {
   title: 'NewsKit Light/structured-list',
   component: () => 'None',
-  disabledRules: ['listitem'],
+  disabledRules: [],
 };
 
 export const StoryStructuredListDefault = () => (

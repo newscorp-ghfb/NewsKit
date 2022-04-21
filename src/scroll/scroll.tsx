@@ -122,7 +122,6 @@ const ThemelessScroll = React.forwardRef<HTMLDivElement, ScrollProps>(
           tabIndex={0}
           {...props}
           vertical={vertical}
-          aria-orientation={vertical ? 'vertical' : 'horizontal'}
           snapAlign={snapAlign}
           scrollBar={scrollBar}
           ref={composeRefs(scrollContainerRef, ref)}
