@@ -195,38 +195,71 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=1817%3A8822',
     }}
     anatomy={{
-      introduction:
-        'The Button contains two required elements and one optional element.',
-      rows: [
+      tabs: [
         {
-          name: 'Container',
-          description: 'The Button container, HTML Button element',
-          optional: undefined,
+          title: 'Button',
+          summary:
+            'The Button contains two required elements and one optional element.',
+          media: getIllustrationComponent('components/button/anatomy-button'),
+          rows: [
+            {
+              name: 'Container',
+              description: 'The Button container, HTML Button element',
+              optional: undefined,
+            },
+            {
+              name: 'Icon',
+              description:
+                'Icon that can be positioned either before (leading) or after (trailing) the Label',
+              component: 'Icon',
+              optional: true,
+            },
+            {
+              name: 'Label',
+              description: (
+                <>
+                  The Label is the text attributed to the Button that provides
+                  context
+                  <br />
+                  <br />
+                  Note - only if the children type supplied is a string or
+                  number it will be rendered inside a Text Block
+                </>
+              ),
+              component: 'Text Block',
+              optional: undefined,
+            },
+          ],
         },
         {
-          name: 'Icon',
-          description:
-            'Icon that can be positioned either before (leading) or after (trailing) the Label',
-          component: 'Icon',
-          optional: true,
-        },
-        {
-          name: 'Label',
-          description: (
-            <>
-              The Label is the text attributed to the Button that provides
-              context
-              <br />
-              <br />
-              Note - only if the children type supplied is a string or number it
-              will be rendered inside a Text Block
-            </>
-          ),
-          component: 'Text Block',
-          optional: undefined,
+          title: 'Icon Button',
+          summary:
+            'The Icon Button contains one required element and one optional element.',
+          media: getIllustrationComponent('components/button/anatomy-icon'),
+          rows: [
+            {
+              name: 'Container',
+              description: 'The Icon Button container, HTML Button element',
+              optional: undefined,
+            },
+            {
+              name: 'Icon',
+              description: (
+                <>
+                  Icon that positioned the centre of the container.
+                  <br />
+                  <br />
+                  If you are using an Icon Button an icon should always be
+                  supplied.
+                </>
+              ),
+              component: 'Icon',
+              optional: true,
+            },
+          ],
         },
       ],
-      media: getIllustrationComponent('components/button/anatomy-button'),
+      rows: [],
     }}
     options={{
       introduction:
