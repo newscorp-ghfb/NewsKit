@@ -19,7 +19,7 @@ const StyledMenuCollapsable = styled.ul`
   padding: 0;
 `;
 
-const StyledMenuCollapsableItem = styled.li<
+const StyledMenuCollapsableItem = styled.div<
   Pick<MenuProps, 'vertical'> & MenuGroupProps
 >`
   ${getSpacingCssFromTheme('marginTop', 'space030')};
@@ -83,7 +83,7 @@ type MenuCollapsableProps = {
 type MenuCollapsablePropsTypes = MenuCollapsableProps & MenuGroupProps;
 
 export const MenuCollapsable = React.forwardRef<
-  HTMLLIElement,
+  HTMLDivElement,
   MenuCollapsablePropsTypes
 >(({overrides, children, title, ...restProps}, ref) => {
   const {vertical} = useMenuContext();

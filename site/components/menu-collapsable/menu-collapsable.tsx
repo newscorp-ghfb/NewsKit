@@ -72,7 +72,7 @@ export const MenuNav = ({
     <>
       {list &&
         list.map(({title, id, subNav, page}) => (
-          <>
+          <React.Fragment key={id}>
             {page ? (
               <>
                 <MenuItem
@@ -109,7 +109,7 @@ export const MenuNav = ({
                 </MenuGroup>
               </>
             )}
-          </>
+          </React.Fragment>
         ))}
     </>
   );
@@ -124,6 +124,7 @@ export const MenuNav = ({
       {menu.map(({title, subNav}, index) => (
         <MenuCollapsable
           className={openPanelIds.includes(index) ? 'expanded' : 'collapsed'}
+          key={title}
         >
           <H3
             role="menuitem"

@@ -19,8 +19,8 @@ interface SidebarProps {
   sidebarOpen: boolean;
   handleSidebarClick: () => void;
   hideSidebar?: boolean;
-  toggleTheme?: () => void;
-  themeMode?: string;
+  toggleTheme: () => void;
+  themeMode: string;
 }
 interface SidebarWrapperProps {
   open: boolean;
