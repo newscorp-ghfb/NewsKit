@@ -621,7 +621,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
           <ul
             class="emotion-3"
           >
-            <li
+            <div
               class="expanded emotion-4"
             >
               <h3
@@ -658,36 +658,36 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                   </svg>
                 </div>
               </h3>
-            </li>
-            <li
-              class="nk-menu-item emotion-8"
-            >
-              <a
-                aria-current="page"
-                class="selected emotion-9"
-                data-testid="buttonLink"
-                href="/group1/page1"
+              <li
+                class="nk-menu-item emotion-8"
               >
-                <div
-                  class="emotion-10"
+                <a
+                  aria-current="page"
+                  class="selected emotion-9"
+                  data-testid="buttonLink"
+                  href="/group1/page1"
                 >
                   <div
-                    class="emotion-11"
+                    class="emotion-10"
                   >
-                    <span
-                      class="emotion-12"
+                    <div
+                      class="emotion-11"
                     >
-                      Group 1 Page 1
-                    </span>
+                      <span
+                        class="emotion-12"
+                      >
+                        Group 1 Page 1
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
+                </a>
+              </li>
+            </div>
           </ul>
           <ul
             class="emotion-3"
           >
-            <li
+            <div
               class="collapsed emotion-4"
             >
               <h3
@@ -725,139 +725,139 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                   </svg>
                 </div>
               </h3>
-            </li>
-            <li
-              class="nk-menu-group emotion-18"
-            >
-              <div
-                class="emotion-19"
+              <li
+                class="nk-menu-group emotion-18"
               >
-                <h2
-                  class="emotion-20"
-                  id="mock-nk-1"
+                <div
+                  class="emotion-19"
                 >
-                  Group 2 Page 1
-                </h2>
-              </div>
-              <ul
-                aria-labelledby="mock-nk-1"
-              >
-                <li
-                  class="nk-menu-item emotion-8"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-22"
-                    data-testid="buttonLink"
-                    href="/group2/page1/a"
+                  <h2
+                    class="emotion-20"
+                    id="mock-nk-1"
                   >
-                    <div
-                      class="emotion-10"
+                    Group 2 Page 1
+                  </h2>
+                </div>
+                <ul
+                  aria-labelledby="mock-nk-1"
+                >
+                  <li
+                    class="nk-menu-item emotion-8"
+                  >
+                    <a
+                      aria-current="false"
+                      class="emotion-22"
+                      data-testid="buttonLink"
+                      href="/group2/page1/a"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <span
-                          class="emotion-12"
+                        <div
+                          class="emotion-11"
                         >
-                          Group 2 Page 1 a
-                        </span>
+                          <span
+                            class="emotion-12"
+                          >
+                            Group 2 Page 1 a
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-8"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-22"
-                    data-testid="buttonLink"
-                    href="/group2/page1/b"
+                    </a>
+                  </li>
+                  <li
+                    class="nk-menu-item emotion-8"
                   >
-                    <div
-                      class="emotion-10"
+                    <a
+                      aria-current="false"
+                      class="emotion-22"
+                      data-testid="buttonLink"
+                      href="/group2/page1/b"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <span
-                          class="emotion-12"
+                        <div
+                          class="emotion-11"
                         >
-                          Group 2 Page 1 b
-                        </span>
+                          <span
+                            class="emotion-12"
+                          >
+                            Group 2 Page 1 b
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li
-              class="nk-menu-group emotion-18"
-            >
-              <div
-                class="emotion-19"
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="nk-menu-group emotion-18"
               >
-                <h2
-                  class="emotion-20"
-                  id="mock-nk-1"
+                <div
+                  class="emotion-19"
                 >
-                  Group 2 Page 2
-                </h2>
-              </div>
-              <ul
-                aria-labelledby="mock-nk-1"
-              >
-                <li
-                  class="nk-menu-item emotion-8"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-22"
-                    data-testid="buttonLink"
-                    href="/group2/page2/a"
+                  <h2
+                    class="emotion-20"
+                    id="mock-nk-1"
                   >
-                    <div
-                      class="emotion-10"
+                    Group 2 Page 2
+                  </h2>
+                </div>
+                <ul
+                  aria-labelledby="mock-nk-1"
+                >
+                  <li
+                    class="nk-menu-item emotion-8"
+                  >
+                    <a
+                      aria-current="false"
+                      class="emotion-22"
+                      data-testid="buttonLink"
+                      href="/group2/page2/a"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <span
-                          class="emotion-12"
+                        <div
+                          class="emotion-11"
                         >
-                          Group 2 Page 2 a
-                        </span>
+                          <span
+                            class="emotion-12"
+                          >
+                            Group 2 Page 2 a
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-8"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-22"
-                    data-testid="buttonLink"
-                    href="/group2/page2/b"
+                    </a>
+                  </li>
+                  <li
+                    class="nk-menu-item emotion-8"
                   >
-                    <div
-                      class="emotion-10"
+                    <a
+                      aria-current="false"
+                      class="emotion-22"
+                      data-testid="buttonLink"
+                      href="/group2/page2/b"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <span
-                          class="emotion-12"
+                        <div
+                          class="emotion-11"
                         >
-                          Group 2 Page 2 b
-                        </span>
+                          <span
+                            class="emotion-12"
+                          >
+                            Group 2 Page 2 b
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </li>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </div>
           </ul>
           <div
             class="emotion-44"
@@ -1374,7 +1374,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
           <ul
             class="emotion-3"
           >
-            <li
+            <div
               class="collapsed emotion-4"
             >
               <h3
@@ -1412,36 +1412,36 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                   </svg>
                 </div>
               </h3>
-            </li>
-            <li
-              class="nk-menu-item emotion-8"
-            >
-              <a
-                aria-current="false"
-                class="emotion-9"
-                data-testid="buttonLink"
-                href="/group1/page1"
+              <li
+                class="nk-menu-item emotion-8"
               >
-                <div
-                  class="emotion-10"
+                <a
+                  aria-current="false"
+                  class="emotion-9"
+                  data-testid="buttonLink"
+                  href="/group1/page1"
                 >
                   <div
-                    class="emotion-11"
+                    class="emotion-10"
                   >
-                    <span
-                      class="emotion-12"
+                    <div
+                      class="emotion-11"
                     >
-                      Group 1 Page 1
-                    </span>
+                      <span
+                        class="emotion-12"
+                      >
+                        Group 1 Page 1
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
+                </a>
+              </li>
+            </div>
           </ul>
           <ul
             class="emotion-3"
           >
-            <li
+            <div
               class="collapsed emotion-4"
             >
               <h3
@@ -1479,139 +1479,139 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                   </svg>
                 </div>
               </h3>
-            </li>
-            <li
-              class="nk-menu-group emotion-18"
-            >
-              <div
-                class="emotion-19"
+              <li
+                class="nk-menu-group emotion-18"
               >
-                <h2
-                  class="emotion-20"
-                  id="mock-nk-1"
+                <div
+                  class="emotion-19"
                 >
-                  Group 2 Page 1
-                </h2>
-              </div>
-              <ul
-                aria-labelledby="mock-nk-1"
-              >
-                <li
-                  class="nk-menu-item emotion-8"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-9"
-                    data-testid="buttonLink"
-                    href="/group2/page1/a"
+                  <h2
+                    class="emotion-20"
+                    id="mock-nk-1"
                   >
-                    <div
-                      class="emotion-10"
+                    Group 2 Page 1
+                  </h2>
+                </div>
+                <ul
+                  aria-labelledby="mock-nk-1"
+                >
+                  <li
+                    class="nk-menu-item emotion-8"
+                  >
+                    <a
+                      aria-current="false"
+                      class="emotion-9"
+                      data-testid="buttonLink"
+                      href="/group2/page1/a"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <span
-                          class="emotion-12"
+                        <div
+                          class="emotion-11"
                         >
-                          Group 2 Page 1 a
-                        </span>
+                          <span
+                            class="emotion-12"
+                          >
+                            Group 2 Page 1 a
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-8"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-9"
-                    data-testid="buttonLink"
-                    href="/group2/page1/b"
+                    </a>
+                  </li>
+                  <li
+                    class="nk-menu-item emotion-8"
                   >
-                    <div
-                      class="emotion-10"
+                    <a
+                      aria-current="false"
+                      class="emotion-9"
+                      data-testid="buttonLink"
+                      href="/group2/page1/b"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <span
-                          class="emotion-12"
+                        <div
+                          class="emotion-11"
                         >
-                          Group 2 Page 1 b
-                        </span>
+                          <span
+                            class="emotion-12"
+                          >
+                            Group 2 Page 1 b
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li
-              class="nk-menu-group emotion-18"
-            >
-              <div
-                class="emotion-19"
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="nk-menu-group emotion-18"
               >
-                <h2
-                  class="emotion-20"
-                  id="mock-nk-1"
+                <div
+                  class="emotion-19"
                 >
-                  Group 2 Page 2
-                </h2>
-              </div>
-              <ul
-                aria-labelledby="mock-nk-1"
-              >
-                <li
-                  class="nk-menu-item emotion-8"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-9"
-                    data-testid="buttonLink"
-                    href="/group2/page2/a"
+                  <h2
+                    class="emotion-20"
+                    id="mock-nk-1"
                   >
-                    <div
-                      class="emotion-10"
+                    Group 2 Page 2
+                  </h2>
+                </div>
+                <ul
+                  aria-labelledby="mock-nk-1"
+                >
+                  <li
+                    class="nk-menu-item emotion-8"
+                  >
+                    <a
+                      aria-current="false"
+                      class="emotion-9"
+                      data-testid="buttonLink"
+                      href="/group2/page2/a"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <span
-                          class="emotion-12"
+                        <div
+                          class="emotion-11"
                         >
-                          Group 2 Page 2 a
-                        </span>
+                          <span
+                            class="emotion-12"
+                          >
+                            Group 2 Page 2 a
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-8"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-9"
-                    data-testid="buttonLink"
-                    href="/group2/page2/b"
+                    </a>
+                  </li>
+                  <li
+                    class="nk-menu-item emotion-8"
                   >
-                    <div
-                      class="emotion-10"
+                    <a
+                      aria-current="false"
+                      class="emotion-9"
+                      data-testid="buttonLink"
+                      href="/group2/page2/b"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <span
-                          class="emotion-12"
+                        <div
+                          class="emotion-11"
                         >
-                          Group 2 Page 2 b
-                        </span>
+                          <span
+                            class="emotion-12"
+                          >
+                            Group 2 Page 2 b
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </li>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </div>
           </ul>
           <div
             class="emotion-44"
@@ -2201,7 +2201,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
           <ul
             class="emotion-3"
           >
-            <li
+            <div
               class="expanded emotion-4"
             >
               <h3
@@ -2238,36 +2238,36 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                   </svg>
                 </div>
               </h3>
-            </li>
-            <li
-              class="nk-menu-item emotion-8"
-            >
-              <a
-                aria-current="false"
-                class="emotion-9"
-                data-testid="buttonLink"
-                href="/group1/page1"
+              <li
+                class="nk-menu-item emotion-8"
               >
-                <div
-                  class="emotion-10"
+                <a
+                  aria-current="false"
+                  class="emotion-9"
+                  data-testid="buttonLink"
+                  href="/group1/page1"
                 >
                   <div
-                    class="emotion-11"
+                    class="emotion-10"
                   >
-                    <span
-                      class="emotion-12"
+                    <div
+                      class="emotion-11"
                     >
-                      Group 1 Page 1
-                    </span>
+                      <span
+                        class="emotion-12"
+                      >
+                        Group 1 Page 1
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
+                </a>
+              </li>
+            </div>
           </ul>
           <ul
             class="emotion-3"
           >
-            <li
+            <div
               class="collapsed emotion-4"
             >
               <h3
@@ -2305,139 +2305,139 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                   </svg>
                 </div>
               </h3>
-            </li>
-            <li
-              class="nk-menu-group emotion-18"
-            >
-              <div
-                class="emotion-19"
+              <li
+                class="nk-menu-group emotion-18"
               >
-                <h2
-                  class="emotion-20"
-                  id="mock-nk-1"
+                <div
+                  class="emotion-19"
                 >
-                  Group 2 Page 1
-                </h2>
-              </div>
-              <ul
-                aria-labelledby="mock-nk-1"
-              >
-                <li
-                  class="nk-menu-item emotion-8"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-9"
-                    data-testid="buttonLink"
-                    href="/group2/page1/a"
+                  <h2
+                    class="emotion-20"
+                    id="mock-nk-1"
                   >
-                    <div
-                      class="emotion-10"
+                    Group 2 Page 1
+                  </h2>
+                </div>
+                <ul
+                  aria-labelledby="mock-nk-1"
+                >
+                  <li
+                    class="nk-menu-item emotion-8"
+                  >
+                    <a
+                      aria-current="false"
+                      class="emotion-9"
+                      data-testid="buttonLink"
+                      href="/group2/page1/a"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <span
-                          class="emotion-12"
+                        <div
+                          class="emotion-11"
                         >
-                          Group 2 Page 1 a
-                        </span>
+                          <span
+                            class="emotion-12"
+                          >
+                            Group 2 Page 1 a
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-8"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-9"
-                    data-testid="buttonLink"
-                    href="/group2/page1/b"
+                    </a>
+                  </li>
+                  <li
+                    class="nk-menu-item emotion-8"
                   >
-                    <div
-                      class="emotion-10"
+                    <a
+                      aria-current="false"
+                      class="emotion-9"
+                      data-testid="buttonLink"
+                      href="/group2/page1/b"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <span
-                          class="emotion-12"
+                        <div
+                          class="emotion-11"
                         >
-                          Group 2 Page 1 b
-                        </span>
+                          <span
+                            class="emotion-12"
+                          >
+                            Group 2 Page 1 b
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li
-              class="nk-menu-group emotion-18"
-            >
-              <div
-                class="emotion-19"
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="nk-menu-group emotion-18"
               >
-                <h2
-                  class="emotion-20"
-                  id="mock-nk-1"
+                <div
+                  class="emotion-19"
                 >
-                  Group 2 Page 2
-                </h2>
-              </div>
-              <ul
-                aria-labelledby="mock-nk-1"
-              >
-                <li
-                  class="nk-menu-item emotion-8"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-9"
-                    data-testid="buttonLink"
-                    href="/group2/page2/a"
+                  <h2
+                    class="emotion-20"
+                    id="mock-nk-1"
                   >
-                    <div
-                      class="emotion-10"
+                    Group 2 Page 2
+                  </h2>
+                </div>
+                <ul
+                  aria-labelledby="mock-nk-1"
+                >
+                  <li
+                    class="nk-menu-item emotion-8"
+                  >
+                    <a
+                      aria-current="false"
+                      class="emotion-9"
+                      data-testid="buttonLink"
+                      href="/group2/page2/a"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <span
-                          class="emotion-12"
+                        <div
+                          class="emotion-11"
                         >
-                          Group 2 Page 2 a
-                        </span>
+                          <span
+                            class="emotion-12"
+                          >
+                            Group 2 Page 2 a
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-8"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-9"
-                    data-testid="buttonLink"
-                    href="/group2/page2/b"
+                    </a>
+                  </li>
+                  <li
+                    class="nk-menu-item emotion-8"
                   >
-                    <div
-                      class="emotion-10"
+                    <a
+                      aria-current="false"
+                      class="emotion-9"
+                      data-testid="buttonLink"
+                      href="/group2/page2/b"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <span
-                          class="emotion-12"
+                        <div
+                          class="emotion-11"
                         >
-                          Group 2 Page 2 b
-                        </span>
+                          <span
+                            class="emotion-12"
+                          >
+                            Group 2 Page 2 b
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </li>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </div>
           </ul>
           <div
             class="emotion-44"
