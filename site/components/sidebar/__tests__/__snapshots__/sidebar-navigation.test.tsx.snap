@@ -3,35 +3,525 @@
 exports[`Sidebar navigation should match snapshot with active link 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Poppins",sans-serif;
+  font-size: 20px;
+  line-height: 1.125;
+  font-weight: 700;
   letter-spacing: 0;
 }
 
-.emotion-1 {
+.emotion-0 ul>li>div {
+  display: block;
+}
+
+@media screen {
+  .emotion-1 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-1 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-1 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    display: none;
+  }
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.emotion-2>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.emotion-2 li:last-of-type {
+  margin-bottom: 0;
+}
+
+.emotion-3 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-4 {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.emotion-4 h2 {
+  margin-bottom: 12px;
+}
+
+.emotion-4.collapsed>li {
+  overflow: hidden;
+  max-height: 0px;
+  -webkit-transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
+  transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
+  margin-bottom: 0;
+  visibility: hidden;
+}
+
+.emotion-4.expanded>li {
+  margin-bottom: 12px;
+  max-height: 9999px;
+  transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
+  transition-delay: 0s;
+}
+
+.emotion-4.expanded .selected {
+  position: relative;
+  overflow: visible;
+}
+
+.emotion-4.expanded .selected::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  background: #3358CC;
+  height: 40px;
+  width: 12px;
+  top: 4px;
+  border-radius: 8px;
+}
+
+.emotion-5 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 18px;
+  line-height: 20.25px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  color: #0A0A0A;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.2155em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.2125em;
+  display: block;
+}
+
+.emotion-5 svg {
+  fill: #0A0A0A;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-7 {
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #535353;
+  margin: 0;
+  cursor: pointer;
+  background-color: transparent;
+  color: #3358CC;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.emotion-9 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-9:hover:not(:disabled) {
+  color: #3358CC;
+}
+
+.emotion-9:active:not(:disabled) {
+  color: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-12 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-12::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-12::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-18 {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+.emotion-18>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-19 {
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.emotion-20 {
+  margin: 0;
+  color: #0A0A0A;
+}
+
+.emotion-20 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-20 {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-20::before {
+    content: '';
+    margin-bottom: -0.2155em;
+    display: block;
+  }
+
+  .emotion-20::after {
+    content: '';
+    margin-top: -0.2125em;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-20 {
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    line-height: 22.5px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-20::before {
+    content: '';
+    margin-bottom: -0.2155em;
+    display: block;
+  }
+
+  .emotion-20::after {
+    content: '';
+    margin-top: -0.2125em;
+    display: block;
+  }
+}
+
+.emotion-22 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #535353;
+  margin: 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.emotion-22 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-22:hover:not(:disabled) {
+  color: #3358CC;
+}
+
+.emotion-22:active:not(:disabled) {
+  color: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-22 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-22 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-44 {
+  margin-bottom: 24px;
+}
+
+.emotion-45 {
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.emotion-46 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+@media screen {
+  .emotion-47 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-47 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-47 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-47 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-47 {
+    display: block;
+  }
+}
+
+.emotion-48 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-1:last-child {
+.emotion-48:last-child {
   margin-bottom: 24px;
 }
 
-.emotion-2 {
+.emotion-49 {
   margin-bottom: 24px;
 }
 
-.emotion-4 {
+.emotion-51 {
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
+  .emotion-51 {
     transition-property: color,fill;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -39,19 +529,19 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
+  .emotion-51 {
     transition-property: color,fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-51:hover:not(:disabled) {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-5 {
+.emotion-52 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -70,7 +560,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-6 {
+.emotion-53 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -78,131 +568,1532 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   background-color: transparent;
-  color: #0A0A0A;
+  color: #3358CC;
   box-sizing: border-box;
   cursor: 'pointer';
+  height: 40px;
   min-width: 230px;
-  padding: 12px;
+  padding: 12px 0;
   margin: 4px 0;
   text-overflow: ellipsis;
+  position: relative;
 }
 
-.emotion-6::before {
+.emotion-53::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-53::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-<nav
+.emotion-53.selected::before {
+  position: absolute;
+  left: -32px;
+  background: #3358CC;
+  height: 40px;
+  width: 12px;
+  top: 0;
+  border-radius: 8px;
+}
+
+<div
     aria-label="Sidebar"
     class="emotion-0"
     role="navigation"
   >
-    <ul
+    <div
       class="emotion-1"
-      role="list"
     >
-      <li
+      <nav
+        aria-label="menu"
         class="emotion-2"
+        data-testid="menu-container"
+        role="navigation"
       >
-        <div
-          class="emotion-2"
+        <ul
+          role="list"
         >
-          <div>
-            <a
-              class="emotion-4"
-              href="/group1/page1"
+          <ul
+            class="emotion-3"
+          >
+            <li
+              class="expanded emotion-4"
             >
-              <span
+              <h3
+                aria-expanded="true"
                 class="emotion-5"
+                role="menuitem"
               >
                 <div
                   class="emotion-6"
-                  data-testid="/group1/page1"
                 >
-                  Group 1 Page 1
+                  <span
+                    aria-label="Group 1"
+                  >
+                    Group 1
+                  </span>
+                  <svg
+                    aria-expanded="true"
+                    aria-haspopup="true"
+                    aria-hidden="true"
+                    class="emotion-7"
+                    fill="currentColor"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z"
+                    />
+                  </svg>
                 </div>
-              </span>
-            </a>
+              </h3>
+            </li>
+            <li
+              class="nk-menu-item emotion-8"
+            >
+              <a
+                aria-current="page"
+                class="selected emotion-9"
+                data-testid="buttonLink"
+                href="/group1/page1"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      Group 1 Page 1
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul
+            class="emotion-3"
+          >
+            <li
+              class="collapsed emotion-4"
+            >
+              <h3
+                aria-expanded="false"
+                class="emotion-5"
+                role="menuitem"
+              >
+                <div
+                  class="emotion-6"
+                >
+                  <span
+                    aria-label="Group 2"
+                  >
+                    Group 2
+                  </span>
+                  <svg
+                    aria-expanded="false"
+                    aria-haspopup="false"
+                    aria-hidden="true"
+                    class="emotion-7"
+                    fill="currentColor"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24 24H0V0h24v24z"
+                      fill="none"
+                      opacity=".87"
+                    />
+                    <path
+                      d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+              </h3>
+            </li>
+            <li
+              class="nk-menu-group emotion-18"
+            >
+              <div
+                class="emotion-19"
+              >
+                <h2
+                  class="emotion-20"
+                  id="mock-nk-1"
+                >
+                  Group 2 Page 1
+                </h2>
+              </div>
+              <ul
+                aria-labelledby="mock-nk-1"
+              >
+                <li
+                  class="nk-menu-item emotion-8"
+                >
+                  <a
+                    aria-current="false"
+                    class="emotion-22"
+                    data-testid="buttonLink"
+                    href="/group2/page1/a"
+                  >
+                    <div
+                      class="emotion-10"
+                    >
+                      <div
+                        class="emotion-11"
+                      >
+                        <span
+                          class="emotion-12"
+                        >
+                          Group 2 Page 1 a
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li
+                  class="nk-menu-item emotion-8"
+                >
+                  <a
+                    aria-current="false"
+                    class="emotion-22"
+                    data-testid="buttonLink"
+                    href="/group2/page1/b"
+                  >
+                    <div
+                      class="emotion-10"
+                    >
+                      <div
+                        class="emotion-11"
+                      >
+                        <span
+                          class="emotion-12"
+                        >
+                          Group 2 Page 1 b
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="nk-menu-group emotion-18"
+            >
+              <div
+                class="emotion-19"
+              >
+                <h2
+                  class="emotion-20"
+                  id="mock-nk-1"
+                >
+                  Group 2 Page 2
+                </h2>
+              </div>
+              <ul
+                aria-labelledby="mock-nk-1"
+              >
+                <li
+                  class="nk-menu-item emotion-8"
+                >
+                  <a
+                    aria-current="false"
+                    class="emotion-22"
+                    data-testid="buttonLink"
+                    href="/group2/page2/a"
+                  >
+                    <div
+                      class="emotion-10"
+                    >
+                      <div
+                        class="emotion-11"
+                      >
+                        <span
+                          class="emotion-12"
+                        >
+                          Group 2 Page 2 a
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li
+                  class="nk-menu-item emotion-8"
+                >
+                  <a
+                    aria-current="false"
+                    class="emotion-22"
+                    data-testid="buttonLink"
+                    href="/group2/page2/b"
+                  >
+                    <div
+                      class="emotion-10"
+                    >
+                      <div
+                        class="emotion-11"
+                      >
+                        <span
+                          class="emotion-12"
+                        >
+                          Group 2 Page 2 b
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div
+            class="emotion-44"
+          />
+          <div
+            class="emotion-45"
+          >
+            <hr
+              aria-hidden="true"
+              class="emotion-46"
+              data-testid="divider"
+            />
           </div>
-        </div>
-      </li>
-    </ul>
-  </nav>
+        </ul>
+      </nav>
+    </div>
+    <div
+      class="emotion-47"
+    >
+      <ul
+        class="emotion-48"
+        role="list"
+      >
+        <li
+          class="emotion-49"
+        >
+          <div
+            class="emotion-49"
+          >
+            <div>
+              <a
+                class="emotion-51"
+                href="/group1/page1"
+              >
+                <span
+                  class="emotion-52"
+                >
+                  <div
+                    class="selected emotion-53"
+                    data-testid="/group1/page1"
+                  >
+                    Group 1 Page 1
+                  </div>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Poppins",sans-serif;
+  font-size: 20px;
+  line-height: 1.125;
+  font-weight: 700;
   letter-spacing: 0;
 }
 
-.emotion-1 {
+.emotion-0 ul>li>div {
+  display: block;
+}
+
+@media screen {
+  .emotion-1 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-1 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-1 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    display: none;
+  }
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.emotion-2>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.emotion-2 li:last-of-type {
+  margin-bottom: 0;
+}
+
+.emotion-3 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-4 {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.emotion-4 h2 {
+  margin-bottom: 12px;
+}
+
+.emotion-4.collapsed>li {
+  overflow: hidden;
+  max-height: 0px;
+  -webkit-transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
+  transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
+  margin-bottom: 0;
+  visibility: hidden;
+}
+
+.emotion-4.expanded>li {
+  margin-bottom: 12px;
+  max-height: 9999px;
+  transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
+  transition-delay: 0s;
+}
+
+.emotion-4.expanded .selected {
+  position: relative;
+  overflow: visible;
+}
+
+.emotion-4.expanded .selected::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  background: #3358CC;
+  height: 40px;
+  width: 12px;
+  top: 4px;
+  border-radius: 8px;
+}
+
+.emotion-5 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 18px;
+  line-height: 20.25px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  color: #0A0A0A;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.2155em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.2125em;
+  display: block;
+}
+
+.emotion-5 svg {
+  fill: #0A0A0A;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-7 {
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #535353;
+  margin: 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.emotion-9 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-9:hover:not(:disabled) {
+  color: #3358CC;
+}
+
+.emotion-9:active:not(:disabled) {
+  color: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-12 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-12::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-12::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-18 {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+.emotion-18>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-19 {
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.emotion-20 {
+  margin: 0;
+  color: #0A0A0A;
+}
+
+.emotion-20 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-20 {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-20::before {
+    content: '';
+    margin-bottom: -0.2155em;
+    display: block;
+  }
+
+  .emotion-20::after {
+    content: '';
+    margin-top: -0.2125em;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-20 {
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    line-height: 22.5px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-20::before {
+    content: '';
+    margin-bottom: -0.2155em;
+    display: block;
+  }
+
+  .emotion-20::after {
+    content: '';
+    margin-top: -0.2125em;
+    display: block;
+  }
+}
+
+.emotion-44 {
+  margin-bottom: 24px;
+}
+
+.emotion-45 {
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.emotion-46 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+@media screen {
+  .emotion-47 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-47 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-47 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-47 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-47 {
+    display: block;
+  }
+}
+
+.emotion-48 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-1:last-child {
+.emotion-48:last-child {
   margin-bottom: 24px;
 }
 
-<nav
+<div
     aria-label="Sidebar"
     class="emotion-0"
     role="navigation"
   >
-    <ul
+    <div
       class="emotion-1"
-      role="list"
-    />
-  </nav>
+    >
+      <nav
+        aria-label="menu"
+        class="emotion-2"
+        data-testid="menu-container"
+        role="navigation"
+      >
+        <ul
+          role="list"
+        >
+          <ul
+            class="emotion-3"
+          >
+            <li
+              class="collapsed emotion-4"
+            >
+              <h3
+                aria-expanded="false"
+                class="emotion-5"
+                role="menuitem"
+              >
+                <div
+                  class="emotion-6"
+                >
+                  <span
+                    aria-label="Group 1"
+                  >
+                    Group 1
+                  </span>
+                  <svg
+                    aria-expanded="false"
+                    aria-haspopup="false"
+                    aria-hidden="true"
+                    class="emotion-7"
+                    fill="currentColor"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24 24H0V0h24v24z"
+                      fill="none"
+                      opacity=".87"
+                    />
+                    <path
+                      d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+              </h3>
+            </li>
+            <li
+              class="nk-menu-item emotion-8"
+            >
+              <a
+                aria-current="false"
+                class="emotion-9"
+                data-testid="buttonLink"
+                href="/group1/page1"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      Group 1 Page 1
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul
+            class="emotion-3"
+          >
+            <li
+              class="collapsed emotion-4"
+            >
+              <h3
+                aria-expanded="false"
+                class="emotion-5"
+                role="menuitem"
+              >
+                <div
+                  class="emotion-6"
+                >
+                  <span
+                    aria-label="Group 2"
+                  >
+                    Group 2
+                  </span>
+                  <svg
+                    aria-expanded="false"
+                    aria-haspopup="false"
+                    aria-hidden="true"
+                    class="emotion-7"
+                    fill="currentColor"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24 24H0V0h24v24z"
+                      fill="none"
+                      opacity=".87"
+                    />
+                    <path
+                      d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+              </h3>
+            </li>
+            <li
+              class="nk-menu-group emotion-18"
+            >
+              <div
+                class="emotion-19"
+              >
+                <h2
+                  class="emotion-20"
+                  id="mock-nk-1"
+                >
+                  Group 2 Page 1
+                </h2>
+              </div>
+              <ul
+                aria-labelledby="mock-nk-1"
+              >
+                <li
+                  class="nk-menu-item emotion-8"
+                >
+                  <a
+                    aria-current="false"
+                    class="emotion-9"
+                    data-testid="buttonLink"
+                    href="/group2/page1/a"
+                  >
+                    <div
+                      class="emotion-10"
+                    >
+                      <div
+                        class="emotion-11"
+                      >
+                        <span
+                          class="emotion-12"
+                        >
+                          Group 2 Page 1 a
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li
+                  class="nk-menu-item emotion-8"
+                >
+                  <a
+                    aria-current="false"
+                    class="emotion-9"
+                    data-testid="buttonLink"
+                    href="/group2/page1/b"
+                  >
+                    <div
+                      class="emotion-10"
+                    >
+                      <div
+                        class="emotion-11"
+                      >
+                        <span
+                          class="emotion-12"
+                        >
+                          Group 2 Page 1 b
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="nk-menu-group emotion-18"
+            >
+              <div
+                class="emotion-19"
+              >
+                <h2
+                  class="emotion-20"
+                  id="mock-nk-1"
+                >
+                  Group 2 Page 2
+                </h2>
+              </div>
+              <ul
+                aria-labelledby="mock-nk-1"
+              >
+                <li
+                  class="nk-menu-item emotion-8"
+                >
+                  <a
+                    aria-current="false"
+                    class="emotion-9"
+                    data-testid="buttonLink"
+                    href="/group2/page2/a"
+                  >
+                    <div
+                      class="emotion-10"
+                    >
+                      <div
+                        class="emotion-11"
+                      >
+                        <span
+                          class="emotion-12"
+                        >
+                          Group 2 Page 2 a
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li
+                  class="nk-menu-item emotion-8"
+                >
+                  <a
+                    aria-current="false"
+                    class="emotion-9"
+                    data-testid="buttonLink"
+                    href="/group2/page2/b"
+                  >
+                    <div
+                      class="emotion-10"
+                    >
+                      <div
+                        class="emotion-11"
+                      >
+                        <span
+                          class="emotion-12"
+                        >
+                          Group 2 Page 2 b
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div
+            class="emotion-44"
+          />
+          <div
+            class="emotion-45"
+          >
+            <hr
+              aria-hidden="true"
+              class="emotion-46"
+              data-testid="divider"
+            />
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <div
+      class="emotion-47"
+    >
+      <ul
+        class="emotion-48"
+        role="list"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Sidebar navigation should render only routes under current section 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Poppins",sans-serif;
+  font-size: 20px;
+  line-height: 1.125;
+  font-weight: 700;
   letter-spacing: 0;
 }
 
-.emotion-1 {
+.emotion-0 ul>li>div {
+  display: block;
+}
+
+@media screen {
+  .emotion-1 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-1 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-1 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    display: none;
+  }
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.emotion-2>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.emotion-2 li:last-of-type {
+  margin-bottom: 0;
+}
+
+.emotion-3 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-4 {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.emotion-4 h2 {
+  margin-bottom: 12px;
+}
+
+.emotion-4.collapsed>li {
+  overflow: hidden;
+  max-height: 0px;
+  -webkit-transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
+  transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
+  margin-bottom: 0;
+  visibility: hidden;
+}
+
+.emotion-4.expanded>li {
+  margin-bottom: 12px;
+  max-height: 9999px;
+  transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
+  transition-delay: 0s;
+}
+
+.emotion-4.expanded .selected {
+  position: relative;
+  overflow: visible;
+}
+
+.emotion-4.expanded .selected::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  background: #3358CC;
+  height: 40px;
+  width: 12px;
+  top: 4px;
+  border-radius: 8px;
+}
+
+.emotion-5 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 18px;
+  line-height: 20.25px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  color: #0A0A0A;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.2155em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.2125em;
+  display: block;
+}
+
+.emotion-5 svg {
+  fill: #0A0A0A;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-7 {
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #535353;
+  margin: 0;
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.emotion-9 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-9:hover:not(:disabled) {
+  color: #3358CC;
+}
+
+.emotion-9:active:not(:disabled) {
+  color: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-12 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-12::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-12::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-18 {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+.emotion-18>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-19 {
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.emotion-20 {
+  margin: 0;
+  color: #0A0A0A;
+}
+
+.emotion-20 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-20 {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-20::before {
+    content: '';
+    margin-bottom: -0.2155em;
+    display: block;
+  }
+
+  .emotion-20::after {
+    content: '';
+    margin-top: -0.2125em;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-20 {
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    line-height: 22.5px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-20::before {
+    content: '';
+    margin-bottom: -0.2155em;
+    display: block;
+  }
+
+  .emotion-20::after {
+    content: '';
+    margin-top: -0.2125em;
+    display: block;
+  }
+}
+
+.emotion-44 {
+  margin-bottom: 24px;
+}
+
+.emotion-45 {
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.emotion-46 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+@media screen {
+  .emotion-47 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-47 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-47 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-47 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-47 {
+    display: block;
+  }
+}
+
+.emotion-48 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-1:last-child {
+.emotion-48:last-child {
   margin-bottom: 24px;
 }
 
-.emotion-2 {
+.emotion-49 {
   margin-bottom: 24px;
 }
 
-.emotion-4 {
+.emotion-51 {
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
+  .emotion-51 {
     transition-property: color,fill;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -210,19 +2101,19 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
+  .emotion-51 {
     transition-property: color,fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-51:hover:not(:disabled) {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-5 {
+.emotion-52 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -241,7 +2132,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   justify-content: flex-start;
 }
 
-.emotion-6 {
+.emotion-53 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -252,71 +2143,351 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   color: #535353;
   box-sizing: border-box;
   cursor: 'pointer';
+  height: 40px;
   min-width: 230px;
-  padding: 12px;
+  padding: 12px 0;
   margin: 4px 0;
   text-overflow: ellipsis;
+  position: relative;
 }
 
-.emotion-6::before {
+.emotion-53::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-53::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-6:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-radius: 8px;
+.emotion-53:hover:not(:disabled) {
+  color: #3358CC;
+}
+
+.emotion-53:active:not(:disabled) {
   color: #0A0A0A;
 }
 
-.emotion-6:active:not(:disabled) {
-  background-color: #AEBFFF;
+.emotion-53.selected::before {
+  position: absolute;
+  left: -32px;
+  background: #3358CC;
+  height: 40px;
+  width: 12px;
+  top: 0;
   border-radius: 8px;
-  color: #0A0A0A;
 }
 
-<nav
+<div
     aria-label="Sidebar"
     class="emotion-0"
     role="navigation"
   >
-    <ul
+    <div
       class="emotion-1"
-      role="list"
     >
-      <li
+      <nav
+        aria-label="menu"
         class="emotion-2"
+        data-testid="menu-container"
+        role="navigation"
       >
-        <div
-          class="emotion-2"
+        <ul
+          role="list"
         >
-          <div>
-            <a
-              class="emotion-4"
-              href="/group1/page1"
+          <ul
+            class="emotion-3"
+          >
+            <li
+              class="expanded emotion-4"
             >
-              <span
+              <h3
+                aria-expanded="true"
                 class="emotion-5"
+                role="menuitem"
               >
                 <div
                   class="emotion-6"
-                  data-testid="/group1/page1"
                 >
-                  Group 1 Page 1
+                  <span
+                    aria-label="Group 1"
+                  >
+                    Group 1
+                  </span>
+                  <svg
+                    aria-expanded="true"
+                    aria-haspopup="true"
+                    aria-hidden="true"
+                    class="emotion-7"
+                    fill="currentColor"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z"
+                    />
+                  </svg>
                 </div>
-              </span>
-            </a>
+              </h3>
+            </li>
+            <li
+              class="nk-menu-item emotion-8"
+            >
+              <a
+                aria-current="false"
+                class="emotion-9"
+                data-testid="buttonLink"
+                href="/group1/page1"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      Group 1 Page 1
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul
+            class="emotion-3"
+          >
+            <li
+              class="collapsed emotion-4"
+            >
+              <h3
+                aria-expanded="false"
+                class="emotion-5"
+                role="menuitem"
+              >
+                <div
+                  class="emotion-6"
+                >
+                  <span
+                    aria-label="Group 2"
+                  >
+                    Group 2
+                  </span>
+                  <svg
+                    aria-expanded="false"
+                    aria-haspopup="false"
+                    aria-hidden="true"
+                    class="emotion-7"
+                    fill="currentColor"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24 24H0V0h24v24z"
+                      fill="none"
+                      opacity=".87"
+                    />
+                    <path
+                      d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+              </h3>
+            </li>
+            <li
+              class="nk-menu-group emotion-18"
+            >
+              <div
+                class="emotion-19"
+              >
+                <h2
+                  class="emotion-20"
+                  id="mock-nk-1"
+                >
+                  Group 2 Page 1
+                </h2>
+              </div>
+              <ul
+                aria-labelledby="mock-nk-1"
+              >
+                <li
+                  class="nk-menu-item emotion-8"
+                >
+                  <a
+                    aria-current="false"
+                    class="emotion-9"
+                    data-testid="buttonLink"
+                    href="/group2/page1/a"
+                  >
+                    <div
+                      class="emotion-10"
+                    >
+                      <div
+                        class="emotion-11"
+                      >
+                        <span
+                          class="emotion-12"
+                        >
+                          Group 2 Page 1 a
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li
+                  class="nk-menu-item emotion-8"
+                >
+                  <a
+                    aria-current="false"
+                    class="emotion-9"
+                    data-testid="buttonLink"
+                    href="/group2/page1/b"
+                  >
+                    <div
+                      class="emotion-10"
+                    >
+                      <div
+                        class="emotion-11"
+                      >
+                        <span
+                          class="emotion-12"
+                        >
+                          Group 2 Page 1 b
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="nk-menu-group emotion-18"
+            >
+              <div
+                class="emotion-19"
+              >
+                <h2
+                  class="emotion-20"
+                  id="mock-nk-1"
+                >
+                  Group 2 Page 2
+                </h2>
+              </div>
+              <ul
+                aria-labelledby="mock-nk-1"
+              >
+                <li
+                  class="nk-menu-item emotion-8"
+                >
+                  <a
+                    aria-current="false"
+                    class="emotion-9"
+                    data-testid="buttonLink"
+                    href="/group2/page2/a"
+                  >
+                    <div
+                      class="emotion-10"
+                    >
+                      <div
+                        class="emotion-11"
+                      >
+                        <span
+                          class="emotion-12"
+                        >
+                          Group 2 Page 2 a
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li
+                  class="nk-menu-item emotion-8"
+                >
+                  <a
+                    aria-current="false"
+                    class="emotion-9"
+                    data-testid="buttonLink"
+                    href="/group2/page2/b"
+                  >
+                    <div
+                      class="emotion-10"
+                    >
+                      <div
+                        class="emotion-11"
+                      >
+                        <span
+                          class="emotion-12"
+                        >
+                          Group 2 Page 2 b
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div
+            class="emotion-44"
+          />
+          <div
+            class="emotion-45"
+          >
+            <hr
+              aria-hidden="true"
+              class="emotion-46"
+              data-testid="divider"
+            />
           </div>
-        </div>
-      </li>
-    </ul>
-  </nav>
+        </ul>
+      </nav>
+    </div>
+    <div
+      class="emotion-47"
+    >
+      <ul
+        class="emotion-48"
+        role="list"
+      >
+        <li
+          class="emotion-49"
+        >
+          <div
+            class="emotion-49"
+          >
+            <div>
+              <a
+                class="emotion-51"
+                href="/group1/page1"
+              >
+                <span
+                  class="emotion-52"
+                >
+                  <div
+                    class="emotion-53"
+                    data-testid="/group1/page1"
+                  >
+                    Group 1 Page 1
+                  </div>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </DocumentFragment>
 `;
