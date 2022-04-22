@@ -558,6 +558,23 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
+    compliance={{
+      variations: true,
+      states: true,
+      behaviours: true,
+      usage: true,
+      accessibility: true,
+      performance: undefined,
+      seo: undefined,
+      props: true,
+      uiKit: true,
+      design: true,
+      themes: true,
+    }}
+    related={{
+      introduction: '',
+      related: ['Tag', 'Link', 'Share Bar'],
+    }}
   />
 );
 
