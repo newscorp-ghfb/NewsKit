@@ -16,10 +16,10 @@ import {
   getStylePresetFromTheme,
   Block,
   IconFilledClose,
-  getBorderCssFromTheme,
   Button,
   ButtonSize,
   IconFilledGitHub,
+  getBorderCssFromTheme,
 } from 'newskit';
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
@@ -35,7 +35,6 @@ export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
       spaceInline="space040"
       spaceStack="space000"
     >
-      {/* <StackChild alignSelf={AlignSelfValues.Stretch}> */}
       <Button
         size={ButtonSize.Small}
         overrides={{
@@ -44,8 +43,6 @@ export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
           stylePreset: 'buttonOutlinedSecondary',
           minWidth: '130px',
           height: '30px',
-          // width: '500%',
-          // minHeight: '18px',
         }}
         href={href}
         target="_blank"
@@ -53,7 +50,6 @@ export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
         <IconFilledGitHub />
         View Github
       </Button>
-      {/* </StackChild> */}
     </Stack>
   ) : null;
 const Header = styled.header`
@@ -66,8 +62,7 @@ const Header = styled.header`
   left: 0;
   z-index: 4;
   border-bottom-style: solid;
-
-  ${getBorderCssFromTheme('border-bottom-width', 'borderWidth010')};
+  ${getBorderCssFromTheme('borderBottomWidth', 'borderWidth010')};
   ${getColorCssFromTheme('borderBottomColor', 'interface040')};
   ${getColorCssFromTheme('backgroundColor', 'interfaceBackground')};
   ${getTypographyPresetFromTheme('utilityLabel020')}
