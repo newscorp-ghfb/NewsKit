@@ -11,6 +11,8 @@ describe('Sidebar', () => {
       const fragment = renderToFragmentWithTheme(Sidebar, {
         sidebarOpen: true,
         handleSidebarClick: () => {},
+        toggleTheme: () => {},
+        themeMode: '',
       });
       expect(fragment).toMatchSnapshot();
     });
@@ -19,6 +21,8 @@ describe('Sidebar', () => {
       const fragment = renderToFragmentWithTheme(Sidebar, {
         sidebarOpen: false,
         handleSidebarClick: () => {},
+        toggleTheme: () => {},
+        themeMode: '',
       });
       expect(fragment).toMatchSnapshot();
     });
