@@ -68,7 +68,7 @@ executors:
 
   cypress:
     docker:
-      - image: cypress/browsers:node16.5.0-chrome94-ff93
+      - image: cypress/browsers:node16.13.0-chrome95-ff94
     resource_class: large
 
   java:
@@ -475,7 +475,7 @@ jobs:
         type: string
         default: 'default'
     executor: python
-    steps:  
+    steps:
       - checkout
       - attach_workspace:
           at: ~/project
@@ -604,7 +604,7 @@ jobs:
           path: cypress/videos
       - slack/status:
           <<: *slack_status
-  
+
   bump_version:
     executor: node
     parameters:
@@ -622,12 +622,12 @@ jobs:
           <<: *slack_status
 
   delete_trigger_release_tag:
-    executor: node 
+    executor: node
     parameters:
       version:
         type: string
     steps:
-      - checkout 
+      - checkout
       - run:
           name: Set github identity
           command: make set_git_identity
@@ -733,7 +733,7 @@ jobs:
             make build_docker
             make push_docker
       - slack/status:
-          <<: *slack_status 
+          <<: *slack_status
 
   push_s3:
     executor: aws-cli/default #TODO: refactor other steps to use this orb it's much cleaner, install and setup can then be moved into the shared aws step
@@ -1025,9 +1025,9 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_to_s3
-  
+
   main:
-    when: 
+    when:
       equal: [ main, << pipeline.git.branch >> ]
     jobs:
       - init_aws:
@@ -1179,14 +1179,14 @@ workflows:
       # end
 
   on_trigger_release_tag:
-    jobs: 
+    jobs:
       - bump_version:
           <<: *only_on_trigger_release_tag
           context: ncu-product-platforms-context
           version: $(echo << pipeline.git.tag >> | cut -f2 -d "@")
-             
+
   on_release_version_tag:
-    # Workflow's jobs triggered by the bump_version make script, which creates and pushes a new version tag e.g: "v5.0.1". 
+    # Workflow's jobs triggered by the bump_version make script, which creates and pushes a new version tag e.g: "v5.0.1".
     jobs:
       - delete_trigger_release_tag:
           <<: *only_on_version_tag
@@ -1318,4 +1318,4 @@ workflows:
           environment: prod
           requires:
             - eks_flux_deploy_prod
-      # 
+      #

@@ -30,7 +30,6 @@ exports[`Scroll renders horizontal scroll when no properties are set 1`] = `
     class="emotion-0"
   >
     <div
-      aria-orientation="horizontal"
       class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
@@ -93,7 +92,6 @@ exports[`Scroll renders horizontal scroll with hidden controls 1`] = `
     class="emotion-0"
   >
     <div
-      aria-orientation="horizontal"
       class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
@@ -138,7 +136,6 @@ exports[`Scroll renders horizontal scroll with visible controls 1`] = `
     class="emotion-0"
   >
     <div
-      aria-orientation="horizontal"
       class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
@@ -183,7 +180,6 @@ exports[`Scroll renders scroll with overriden controls style 1`] = `
     class="emotion-0"
   >
     <div
-      aria-orientation="horizontal"
       class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
@@ -228,7 +224,6 @@ exports[`Scroll renders vertical scroll 1`] = `
     class="emotion-0"
   >
     <div
-      aria-orientation="vertical"
       class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
@@ -291,7 +286,6 @@ exports[`Scroll renders vertical scroll with hidden controls 1`] = `
     class="emotion-0"
   >
     <div
-      aria-orientation="vertical"
       class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
@@ -336,7 +330,6 @@ exports[`Scroll renders vertical scroll with visible controls 1`] = `
     class="emotion-0"
   >
     <div
-      aria-orientation="vertical"
       class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
@@ -381,7 +374,6 @@ exports[`ScrollSnapAlignment ScrollBar Hide horizontal scroll bar on a horizonta
     class="emotion-0"
   >
     <div
-      aria-orientation="horizontal"
       class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
@@ -417,7 +409,6 @@ exports[`ScrollSnapAlignment ScrollBar Show horizontal scroll bar on a horizonta
     class="emotion-0"
   >
     <div
-      aria-orientation="horizontal"
       class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
@@ -453,7 +444,6 @@ exports[`ScrollSnapAlignment ScrollBar Show vertical scroll bar on a vertical sc
     class="emotion-0"
   >
     <div
-      aria-orientation="vertical"
       class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
@@ -521,7 +511,6 @@ exports[`ScrollSnapAlignment renders scroll with snapping enabled 1`] = `
     class="emotion-0"
   >
     <div
-      aria-orientation="horizontal"
       class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
@@ -590,7 +579,6 @@ exports[`ScrollSnapAlignment renders vertical scroll with snapping enabled 1`] =
     class="emotion-0"
   >
     <div
-      aria-orientation="vertical"
       class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
