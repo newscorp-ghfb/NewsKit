@@ -423,7 +423,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="Inverse Buttons"
+                aria-label="Full width Buttons"
                 title="Note"
               >
                 Full width Buttons are intended for use on smaller screen sizes
