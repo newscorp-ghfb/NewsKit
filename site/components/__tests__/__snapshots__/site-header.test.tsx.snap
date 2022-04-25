@@ -440,7 +440,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   letter-spacing: 0;
   padding: 0.5px 0px;
   color: #0A0A0A;
-  color: #0A0A0A;
   box-sizing: border-box;
 }
 
@@ -471,7 +470,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #535353;
   color: #535353;
   box-sizing: border-box;
 }
@@ -1021,6 +1019,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                           >
                             <div
                               aria-current="true"
+                              aria-label="Sidebar"
                               class="selected emotion-24"
                             >
                               About
@@ -1043,6 +1042,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                             class="emotion-4"
                           >
                             <div
+                              aria-label="Sidebar"
                               class="emotion-29"
                             >
                               Guides
@@ -1065,6 +1065,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                             class="emotion-4"
                           >
                             <div
+                              aria-label="Sidebar"
                               class="emotion-29"
                             >
                               Theme
@@ -1087,6 +1088,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                             class="emotion-4"
                           >
                             <div
+                              aria-label="Sidebar"
                               class="emotion-29"
                             >
                               Components
@@ -1721,7 +1723,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   letter-spacing: 0;
   padding: 0.5px 0px;
   color: #0A0A0A;
-  color: #0A0A0A;
   box-sizing: border-box;
 }
 
@@ -1752,7 +1753,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #535353;
   color: #535353;
   box-sizing: border-box;
 }
@@ -2302,6 +2302,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                           >
                             <div
                               aria-current="true"
+                              aria-label="Sidebar"
                               class="selected emotion-24"
                             >
                               About
@@ -2324,6 +2325,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                             class="emotion-4"
                           >
                             <div
+                              aria-label="Sidebar"
                               class="emotion-29"
                             >
                               Guides
@@ -2346,6 +2348,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                             class="emotion-4"
                           >
                             <div
+                              aria-label="Sidebar"
                               class="emotion-29"
                             >
                               Theme
@@ -2368,6 +2371,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                             class="emotion-4"
                           >
                             <div
+                              aria-label="Sidebar"
                               class="emotion-29"
                             >
                               Components
@@ -3002,7 +3006,6 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   color: #535353;
-  color: #535353;
   box-sizing: border-box;
 }
 
@@ -3550,6 +3553,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                             class="emotion-4"
                           >
                             <div
+                              aria-label="Sidebar"
                               class="emotion-24"
                             >
                               About
@@ -3572,6 +3576,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                             class="emotion-4"
                           >
                             <div
+                              aria-label="Sidebar"
                               class="emotion-24"
                             >
                               Guides
@@ -3594,6 +3599,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                             class="emotion-4"
                           >
                             <div
+                              aria-label="Sidebar"
                               class="emotion-24"
                             >
                               Theme
@@ -3616,6 +3622,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                             class="emotion-4"
                           >
                             <div
+                              aria-label="Sidebar"
                               class="emotion-24"
                             >
                               Components
