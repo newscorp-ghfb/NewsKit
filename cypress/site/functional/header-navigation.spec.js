@@ -13,12 +13,9 @@ describe('Documentation Site - header-navigation component', () => {
     it('should contain logo', () => {
       cy.get('[data-testid="logo-container"]').should('exist');
     });
-
     it('should highlight active section', () => {
       cy.visit('/about/introduction');
-      cy.contains('About').within(() =>
-        cy.get('div').should('have.attr', 'aria-current'),
-      );
+      cy.get('*[class^="selected"]').should('have.attr', 'aria-current');
     });
   });
 
