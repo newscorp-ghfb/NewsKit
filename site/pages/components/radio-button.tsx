@@ -169,7 +169,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       type: 'Actions & Inputs',
       name: 'Radio Button',
       hero: {
-        illustration: 'components/radio-button/radio-button-illustration',
+        illustration: 'components/radio-button/hero',
       },
       introduction: `Radio Buttons are selection controls that are typically used in forms. They are used for exclusive selection - allowing users to select one of multiple options in a Radio Group.`,
     }}

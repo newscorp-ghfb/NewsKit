@@ -313,7 +313,7 @@ export default [
             id: '/components/radio-button',
             description:
               'Radio Buttons are selection controls that are typically used in forms',
-            illustration: 'components/radio-button/radio-button-illustration',
+            illustration: 'components/radio-button/hero',
           },
           {
             title: 'Select',
