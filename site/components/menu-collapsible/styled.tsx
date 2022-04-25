@@ -1,7 +1,6 @@
 import {
   getBorderCssFromTheme,
   getColorFromTheme,
-  getResponsiveSpace,
   getSizingFromTheme,
   getSpacingCssFromTheme,
   styled,
@@ -56,24 +55,6 @@ const StyledMenuCollapsibleItem = styled.div<
       ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
     }
   }
-`;
-
-export const StyledMenuGroupTitle = styled.div<MenuGroupProps>`
-  box-sizing: border-box;
-
-  ${getResponsiveSpace(
-    'marginBottom',
-    'menuGroup.title',
-    'title',
-    'spaceInline',
-  )}
-
-  ${getResponsiveSpace(
-    space => ({paddingLeft: space, paddingRight: space}),
-    'menuGroup.title',
-    'title',
-    'spaceInset',
-  )}
 `;
 
 type MenuCollapsibleProps = {

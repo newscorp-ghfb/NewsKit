@@ -666,7 +666,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                   class="selected emotion-9"
                   data-testid="buttonLink"
                   href="/group1/page1"
-                  id="hello"
                 >
                   <div
                     class="emotion-10"
@@ -750,7 +749,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                       class="emotion-22"
                       data-testid="buttonLink"
                       href="/group2/page1/a"
-                      id="hello"
                     >
                       <div
                         class="emotion-10"
@@ -775,7 +773,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                       class="emotion-22"
                       data-testid="buttonLink"
                       href="/group2/page1/b"
-                      id="hello"
                     >
                       <div
                         class="emotion-10"
@@ -818,7 +815,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                       class="emotion-22"
                       data-testid="buttonLink"
                       href="/group2/page2/a"
-                      id="hello"
                     >
                       <div
                         class="emotion-10"
@@ -843,7 +839,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                       class="emotion-22"
                       data-testid="buttonLink"
                       href="/group2/page2/b"
-                      id="hello"
                     >
                       <div
                         class="emotion-10"
@@ -1427,7 +1422,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                   class="emotion-9"
                   data-testid="buttonLink"
                   href="/group1/page1"
-                  id="hello"
                 >
                   <div
                     class="emotion-10"
@@ -1511,7 +1505,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                       class="emotion-9"
                       data-testid="buttonLink"
                       href="/group2/page1/a"
-                      id="hello"
                     >
                       <div
                         class="emotion-10"
@@ -1536,7 +1529,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                       class="emotion-9"
                       data-testid="buttonLink"
                       href="/group2/page1/b"
-                      id="hello"
                     >
                       <div
                         class="emotion-10"
@@ -1579,7 +1571,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                       class="emotion-9"
                       data-testid="buttonLink"
                       href="/group2/page2/a"
-                      id="hello"
                     >
                       <div
                         class="emotion-10"
@@ -1604,7 +1595,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                       class="emotion-9"
                       data-testid="buttonLink"
                       href="/group2/page2/b"
-                      id="hello"
                     >
                       <div
                         class="emotion-10"
@@ -2258,7 +2248,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                   class="emotion-9"
                   data-testid="buttonLink"
                   href="/group1/page1"
-                  id="hello"
                 >
                   <div
                     class="emotion-10"
@@ -2342,7 +2331,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                       class="emotion-9"
                       data-testid="buttonLink"
                       href="/group2/page1/a"
-                      id="hello"
                     >
                       <div
                         class="emotion-10"
@@ -2367,7 +2355,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                       class="emotion-9"
                       data-testid="buttonLink"
                       href="/group2/page1/b"
-                      id="hello"
                     >
                       <div
                         class="emotion-10"
@@ -2410,7 +2397,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                       class="emotion-9"
                       data-testid="buttonLink"
                       href="/group2/page2/a"
-                      id="hello"
                     >
                       <div
                         class="emotion-10"
@@ -2435,7 +2421,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                       class="emotion-9"
                       data-testid="buttonLink"
                       href="/group2/page2/b"
-                      id="hello"
                     >
                       <div
                         class="emotion-10"
