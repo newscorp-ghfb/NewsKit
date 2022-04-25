@@ -13,7 +13,7 @@ import {
 import {Overlay} from '../overlay';
 import {SidebarNav} from './sidebar-navigation';
 import {ThemeSwitch} from '../theme-switch';
-import {GitHubLaunch} from '../menu-collapsable/menu-collapsable';
+import {GitHubLaunch} from '../menu-collapsible/menu-collapsible';
 
 interface SidebarProps {
   sidebarOpen: boolean;

@@ -7,7 +7,6 @@ import {
   styled,
 } from 'newskit';
 
-import {MenuNav} from '../menu-collapsable/menu-collapsable';
 import {Link} from '../link';
 import routes from '../../routes';
 import {
@@ -26,6 +25,7 @@ import {
   PageType,
 } from './types';
 import {Visible} from '../../../src/grid/visibility';
+import {MenuNavCollapsible} from '../menu-collapsible/menu-collapsible';
 
 export const DesktopNavigationDivider = styled.div`
   width: 100vw;
@@ -127,7 +127,7 @@ export const SidebarNav = () => {
       <StyledSidebarNav role="navigation" aria-label="Sidebar">
         <>
           <Visible xs sm md>
-            <MenuNav path={path} menu={routes} />
+            <MenuNavCollapsible path={path} menu={routes} />
           </Visible>
           <Visible lg xl>
             <StyledNavigationWrapper role="list">

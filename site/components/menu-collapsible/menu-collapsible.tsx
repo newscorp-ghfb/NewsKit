@@ -15,7 +15,7 @@ import {
   styled,
 } from 'newskit';
 import {IconExpandLess, IconExpandMore} from '../icons';
-import {MenuCollapsable} from './menu-styled';
+import {MenuCollapsible} from './styled';
 
 const MobileNavigationDivider = styled.div`
   width: 100vw;
@@ -56,7 +56,7 @@ type SubNavProps = {
 
 type SubNavItemProps = NavProps & SubNavProps;
 
-export const MenuNav = ({
+export const MenuNavCollapsible = ({
   path,
   menu,
 }: {
@@ -76,11 +76,16 @@ export const MenuNav = ({
             {page ? (
               <>
                 <MenuItem
+                  id="hello"
                   href={id}
                   overrides={{
                     typographyPreset: 'utilityButton020',
                     spaceInset: 'space030',
                     stylePreset: 'sidebarNavItem',
+                    minHeight: '40px',
+                    // if i remove min-height then it is 48px
+                    // added here as it adds height to unselected
+                    // unselected and selected are now the same height
                   }}
                   selected={path.includes(id)}
                   size="small"
@@ -122,7 +127,7 @@ export const MenuNav = ({
       overrides={{spaceInline: 'space000'}}
     >
       {menu.map(({title, subNav}, index) => (
-        <MenuCollapsable
+        <MenuCollapsible
           className={openPanelIds.includes(index) ? 'expanded' : 'collapsed'}
           key={title}
         >
@@ -150,7 +155,7 @@ export const MenuNav = ({
             </Stack>
           </H3>
           {subNav && createMenuItem(subNav)}
-        </MenuCollapsable>
+        </MenuCollapsible>
       ))}
       <Block spaceStack="space050" />
 

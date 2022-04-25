@@ -13,13 +13,13 @@ import {MenuGroupProps, MenuProps} from '../../../src/menu/types';
 
 import {splitAriaProps} from '../../../src/utils/a11y';
 
-const StyledMenuCollapsable = styled.ul`
+const StyledMenuCollapsible = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
 `;
 
-const StyledMenuCollapsableItem = styled.div<
+const StyledMenuCollapsibleItem = styled.div<
   Pick<MenuProps, 'vertical'> & MenuGroupProps
 >`
   ${getSpacingCssFromTheme('marginTop', 'space030')};
@@ -76,22 +76,22 @@ export const StyledMenuGroupTitle = styled.div<MenuGroupProps>`
   )}
 `;
 
-type MenuCollapsableProps = {
-  className?: string;
+type MenuCollapsibleProps = {
+  className: string;
 };
 
-type MenuCollapsablePropsTypes = MenuCollapsableProps & MenuGroupProps;
+type MenuCollapsiblePropsTypes = MenuCollapsibleProps & MenuGroupProps;
 
-export const MenuCollapsable = React.forwardRef<
+export const MenuCollapsible = React.forwardRef<
   HTMLDivElement,
-  MenuCollapsablePropsTypes
+  MenuCollapsiblePropsTypes
 >(({overrides, children, title, ...restProps}, ref) => {
   const {vertical} = useMenuContext();
   const {rest} = splitAriaProps(restProps);
 
   return (
-    <StyledMenuCollapsable>
-      <StyledMenuCollapsableItem
+    <StyledMenuCollapsible>
+      <StyledMenuCollapsibleItem
         className="nk-menu-group"
         {...rest}
         overrides={overrides}
@@ -99,9 +99,9 @@ export const MenuCollapsable = React.forwardRef<
         ref={ref}
       >
         {children}
-      </StyledMenuCollapsableItem>
-    </StyledMenuCollapsable>
+      </StyledMenuCollapsibleItem>
+    </StyledMenuCollapsible>
   );
 });
 
-MenuCollapsable.displayName = 'MenuCollapsable';
+MenuCollapsible.displayName = 'MenuCollapsible';
