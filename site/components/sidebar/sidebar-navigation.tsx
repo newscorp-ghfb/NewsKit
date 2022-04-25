@@ -1,6 +1,11 @@
 import React, {useEffect, useRef} from 'react';
 import {useRouter} from 'next/router';
-import {Divider, getSpacingCssFromTheme, styled} from 'newskit';
+import {
+  Divider,
+  getSizingFromTheme,
+  getSpacingCssFromTheme,
+  styled,
+} from 'newskit';
 
 import {MenuNav} from '../menu-collapsable/menu-collapsable';
 import {Link} from '../link';
@@ -30,6 +35,9 @@ export const DesktopNavigationDivider = styled.div`
   ${getSpacingCssFromTheme('marginBottom', 'space060')};
 `;
 
+const StyledHeightDiv = styled.div`
+  height: ${getSizingFromTheme('sizing070')};
+`;
 const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -40,7 +48,7 @@ const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
   });
 
   return (
-    <div ref={ref}>
+    <StyledHeightDiv ref={ref}>
       <Link
         type="standalone"
         href={page.id}
@@ -54,7 +62,7 @@ const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
           {page.title}
         </StyledLinkItem>
       </Link>
-    </div>
+    </StyledHeightDiv>
   );
 };
 
