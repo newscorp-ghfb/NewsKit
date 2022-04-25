@@ -284,20 +284,12 @@ export default [
         id: '/components/action-and-inputs',
         subNav: [
           {
-            title: 'Button-Old',
-            page: true,
-            id: '/components/button-old',
-            description:
-              'Allows users to take actions, and make choices, with a single tap.',
-            illustration: 'components/button-illustration',
-          },
-          {
             title: 'Button',
             page: true,
             id: '/components/button',
             description:
               'Allows users to take actions, and make choices, with a single tap.',
-            illustration: 'components/button-illustration',
+            illustration: 'components/button/hero',
           },
           {
             title: 'Checkbox',
