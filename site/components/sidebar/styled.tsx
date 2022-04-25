@@ -4,9 +4,10 @@ import {
   getStylePresetFromTheme,
   getSizingFromTheme,
   getSpacingFromTheme,
-  getColorFromTheme,
   getBorderCssFromTheme,
   getSpacingCssFromTheme,
+  getSizingCssFromTheme,
+  getColorCssFromTheme,
 } from 'newskit';
 
 export const StyledLinkItem = styled.div<{
@@ -21,7 +22,7 @@ export const StyledLinkItem = styled.div<{
     })(props)}
   box-sizing: border-box;
   cursor: 'pointer';
-
+  ${getSizingCssFromTheme('height', 'sizing060')};
   min-width: 230px;
   padding: ${getSpacingFromTheme('spaceInset030')} 0;
   margin: ${({theme}) => `${theme.spacePresets.space010} 0`};
@@ -31,10 +32,10 @@ export const StyledLinkItem = styled.div<{
     ::before {
       position: absolute;
       left: -${getSizingFromTheme('sizing060')};
-      background: ${getColorFromTheme('blue060')};
-      height: ${getSizingFromTheme('sizing070')};
-      width: ${getSizingFromTheme('sizing030')};
-      top: ${getSizingFromTheme('sizing000')};
+      ${getColorCssFromTheme('background', 'blue060')}
+      ${getSizingCssFromTheme('height', 'sizing070')};
+      ${getSizingCssFromTheme('width', 'sizing030')};
+      ${getSizingCssFromTheme('top', 'sizing000')};
       ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
     }
   }

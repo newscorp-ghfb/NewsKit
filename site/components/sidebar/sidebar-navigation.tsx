@@ -1,11 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import {useRouter} from 'next/router';
-import {
-  Divider,
-  getSizingFromTheme,
-  getSpacingCssFromTheme,
-  styled,
-} from 'newskit';
+import {Divider, getSpacingCssFromTheme, styled} from 'newskit';
 
 import {Link} from '../link';
 import routes from '../../routes';
@@ -35,9 +30,7 @@ export const DesktopNavigationDivider = styled.div`
   ${getSpacingCssFromTheme('marginBottom', 'space060')};
 `;
 
-const StyledHeightDiv = styled.div`
-  height: ${getSizingFromTheme('sizing070')};
-`;
+const StyledHeightDiv = styled.div``;
 const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -48,6 +41,7 @@ const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
   });
 
   return (
+    // can add height here if needed
     <StyledHeightDiv ref={ref}>
       <Link
         type="standalone"

@@ -757,7 +757,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   >
                     <span
                       aria-label="About"
-                      id="span"
                     >
                       About
                     </span>
@@ -926,7 +925,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   >
                     <span
                       aria-label="Guides"
-                      id="span"
                     >
                       Guides
                     </span>
@@ -1181,7 +1179,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   >
                     <span
                       aria-label="Theme"
-                      id="span"
                     >
                       Theme
                     </span>
@@ -1729,7 +1726,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   >
                     <span
                       aria-label="Components"
-                      id="span"
                     >
                       Components
                     </span>
@@ -4106,7 +4102,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   >
                     <span
                       aria-label="About"
-                      id="span"
                     >
                       About
                     </span>
@@ -4275,7 +4270,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   >
                     <span
                       aria-label="Guides"
-                      id="span"
                     >
                       Guides
                     </span>
@@ -4530,7 +4524,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   >
                     <span
                       aria-label="Theme"
-                      id="span"
                     >
                       Theme
                     </span>
@@ -5078,7 +5071,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   >
                     <span
                       aria-label="Components"
-                      id="span"
                     >
                       Components
                     </span>

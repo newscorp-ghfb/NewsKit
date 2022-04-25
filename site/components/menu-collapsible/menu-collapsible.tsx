@@ -67,7 +67,7 @@ export const MenuNavCollapsible = ({
   useEffect(() => {
     const index = menu.findIndex(obj => path.includes(obj.id)) || 0;
     setOpenPanelIds([index]);
-  }, []);
+  }, [menu, path]);
   const createMenuItem = (list: SubNavItemProps[]) => (
     <>
       {list &&
@@ -76,7 +76,6 @@ export const MenuNavCollapsible = ({
             {page ? (
               <>
                 <MenuItem
-                  id="hello"
                   href={id}
                   overrides={{
                     typographyPreset: 'utilityButton020',

@@ -514,10 +514,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-51 {
-  height: 40px;
-}
-
 .emotion-52 {
   display: inline-block;
   -webkit-text-decoration: none;
@@ -575,6 +571,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   color: #3358CC;
   box-sizing: border-box;
   cursor: 'pointer';
+  height: 32px;
   min-width: 230px;
   padding: 12px 0;
   margin: 4px 0;
@@ -2101,10 +2098,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   margin-bottom: 24px;
 }
 
-.emotion-51 {
-  height: 40px;
-}
-
 .emotion-52 {
   display: inline-block;
   -webkit-text-decoration: none;
@@ -2162,6 +2155,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   color: #535353;
   box-sizing: border-box;
   cursor: 'pointer';
+  height: 32px;
   min-width: 230px;
   padding: 12px 0;
   margin: 4px 0;
