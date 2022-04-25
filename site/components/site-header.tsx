@@ -96,11 +96,6 @@ export const StyledLinkItem = styled.div<{
     getStylePresetFromTheme('headerNavItem', undefined, {
       isSelected: $selected,
     })(props)}
-  ${({$selected, ...props}) =>
-    getStylePresetFromTheme('headerNavItem', undefined, {
-      isSelected: $selected,
-    })(props)}
-
   box-sizing: border-box;
   &.selected {
     ::after {
@@ -169,6 +164,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
             }}
           >
             <StyledLinkItem
+              aria-label="Sidebar"
               aria-current={
                 currentRoute.split('/')[1].includes(id.split('/')[1]) ||
                 undefined

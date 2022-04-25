@@ -38,10 +38,5 @@ describe('Documentation Site - header-navigation component', () => {
       cy.get('body').should('have.css', 'overflow', 'visible');
       cy.get(overlayTestID).should('have.css', 'visibility', 'hidden');
     });
-
-    it('burger menu should not be visible on the homepage', () => {
-      cy.visit('/');
-      cy.get(hamburgerIconTestID).should('not.exist');
-    });
   });
 });

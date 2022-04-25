@@ -25,7 +25,7 @@ const StyledMenuCollapsableItem = styled.div<
   ${getSpacingCssFromTheme('marginTop', 'space030')};
   ${getSpacingCssFromTheme('marginBottom', 'space000')};
 
-  & h2 {
+  & h3 {
     ${getSpacingCssFromTheme('marginBottom', 'space030')};
   }
   &.collapsed > li {

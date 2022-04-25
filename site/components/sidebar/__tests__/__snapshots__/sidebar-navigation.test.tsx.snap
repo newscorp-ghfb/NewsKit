@@ -627,6 +627,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
               <h3
                 aria-expanded="true"
                 class="emotion-5"
+                data-testid="h3-button"
                 role="menuitem"
               >
                 <div
@@ -693,6 +694,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
               <h3
                 aria-expanded="false"
                 class="emotion-5"
+                data-testid="h3-button"
                 role="menuitem"
               >
                 <div
@@ -1380,6 +1382,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
               <h3
                 aria-expanded="false"
                 class="emotion-5"
+                data-testid="h3-button"
                 role="menuitem"
               >
                 <div
@@ -1447,6 +1450,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
               <h3
                 aria-expanded="false"
                 class="emotion-5"
+                data-testid="h3-button"
                 role="menuitem"
               >
                 <div
@@ -2207,6 +2211,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
               <h3
                 aria-expanded="true"
                 class="emotion-5"
+                data-testid="h3-button"
                 role="menuitem"
               >
                 <div
@@ -2273,6 +2278,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
               <h3
                 aria-expanded="false"
                 class="emotion-5"
+                data-testid="h3-button"
                 role="menuitem"
               >
                 <div
