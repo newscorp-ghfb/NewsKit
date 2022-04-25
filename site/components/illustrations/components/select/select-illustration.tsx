@@ -3,7 +3,7 @@ import {Svg} from '../../svg';
 import {Path} from '../../path';
 import {Rect} from '../../rect';
 
-const Hero: React.FC = () => (
+const SelectIllustration: React.FC = () => (
   <Svg
     width="1490"
     height="838"
@@ -77,4 +77,4 @@ const Hero: React.FC = () => (
   </Svg>
 );
 
-export default Hero;
+export default SelectIllustration;

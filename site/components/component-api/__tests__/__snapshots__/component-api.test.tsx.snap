@@ -1401,7 +1401,6 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
             class="emotion-35"
           >
             <div
-              aria-orientation="horizontal"
               class="emotion-36"
               data-testid="scroll-container"
             >
