@@ -49,7 +49,7 @@ const validateUserName = async (value: string) => {
 export default {
   title: 'NewsKit Light/form-input',
   component: () => 'None',
-  disabledRules: ['color-contrast'],
+  disabledRules: [],
 };
 
 export const StoryFormField = () => (
