@@ -4,7 +4,6 @@ import {renderIfReactComponent} from 'newskit/utils/component';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
-import {Separator} from '../../components/separator';
 import {Table} from '../../components/table';
 
 const tabOverrides = {
@@ -59,33 +58,25 @@ export const AnatomySection: React.FC<AnatomySectionProps> = ({
   return (
     <>
       {tabs ? (
-        <ComponentPageCell>
-          <Tabs size={TabSize.Medium}>
-            {tabs.map(({title, summary, rows: tabRows, media: tabMedia}) => (
-              <Tab label={title} overrides={tabOverrides}>
-                <Block spaceStack="space060">
-                  <TextBlock
-                    stylePreset="inkContrast"
-                    typographyPreset="editorialHeadline050"
-                    as="h2"
-                  >
-                    Anatomy
-                  </TextBlock>
-                </Block>
-                <Block spaceStack="space080">
-                  <TextBlock
-                    stylePreset="inkBase"
-                    typographyPreset="editorialSubheadline020"
-                  >
-                    {summary}
-                  </TextBlock>
-                </Block>
-                {renderAnatomy(tabMedia, tabRows)}
-              </Tab>
-            ))}
-          </Tabs>
-          <Separator />
-        </ComponentPageCell>
+        <CommonSection title="Anatomy" id="anatomy">
+          <ComponentPageCell>
+            <Tabs size={TabSize.Medium}>
+              {tabs.map(({title, summary, rows: tabRows, media: tabMedia}) => (
+                <Tab label={title} overrides={tabOverrides}>
+                  <Block spaceStack="space080">
+                    <TextBlock
+                      stylePreset="inkBase"
+                      typographyPreset="editorialSubheadline020"
+                    >
+                      {summary}
+                    </TextBlock>
+                  </Block>
+                  {renderAnatomy(tabMedia, tabRows)}
+                </Tab>
+              ))}
+            </Tabs>
+          </ComponentPageCell>
+        </CommonSection>
       ) : (
         <>
           <CommonSection
