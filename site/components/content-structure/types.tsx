@@ -7,6 +7,7 @@ export interface ContentBaseProps {
   id?: string;
   children?: React.ReactNode;
   childrenColSpan?: number;
+  hideBottomSpacing?: boolean;
   overrides: {
     headline?: {
       as: 'h2' | 'h3' | 'h4';

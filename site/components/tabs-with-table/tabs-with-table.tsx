@@ -16,7 +16,7 @@ export const TabsWithTable: React.FC<ComponentTabsWithTableProps> = ({
         tabList.push({
           label: header,
           content: (
-            <ContentTertiary description={description}>
+            <ContentTertiary hideBottomSpacing description={description}>
               <Table columns={columnHeader} rows={rows} />
             </ContentTertiary>
           ),

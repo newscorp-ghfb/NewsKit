@@ -31,6 +31,7 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
   toc,
   id,
   childrenColSpan = ContentColSpan.FULL,
+  hideBottomSpacing = false,
   showSeparator: showDivider,
 }) => {
   const {
@@ -80,9 +81,11 @@ export const ContentBase: React.FC<ContentBaseProps> = ({
         <GridLayoutItem column={childrenColumns}>{children}</GridLayoutItem>
       )}
 
-      <GridLayoutItem column={fullGridColumns}>
-        <Block {...separatorOverrides} />
-      </GridLayoutItem>
+      {!hideBottomSpacing && (
+        <GridLayoutItem column={fullGridColumns}>
+          <Block {...separatorOverrides} />
+        </GridLayoutItem>
+      )}
 
       {showDivider && (
         <GridLayoutItem column={fullGridColumns}>

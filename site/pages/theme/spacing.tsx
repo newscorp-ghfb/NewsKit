@@ -340,9 +340,7 @@ const Spacing = (layoutProps: LayoutProps) => (
           <Illustration path="theme/spacing/space-inset" />
         </ContentPrimary>
 
-        <ContentSecondary>
-          <TabsWithTable components={spaceInsetTable} />
-        </ContentSecondary>
+        <TabsWithTable components={spaceInsetTable} />
 
         <ContentSecondary
           headline="Code usage"
