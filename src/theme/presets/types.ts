@@ -25,6 +25,8 @@ export interface StylePresetStyles {
   textTransform?: string;
   whiteSpace?: string;
   wordBreak?: string;
+  outline?: string;
+  outlineOffset?: string;
 }
 export type StylePresetStyleKeys = keyof StylePresetStyles;
 
@@ -76,6 +78,7 @@ export interface StylePreset {
   'invalid:focus:hover'?: StylePresetStyles;
   'visited:hover'?: StylePresetStyles;
   'visited:focus'?: StylePresetStyles;
+  'focus-visible'?: StylePresetStyles;
 }
 export type StylePresetStates = keyof StylePreset;
 

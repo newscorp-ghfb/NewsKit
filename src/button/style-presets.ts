@@ -24,6 +24,10 @@ export default {
       color: '{{colors.inkBrand010}}',
       iconColor: '{{colors.inkBrand010}}',
     },
+    'focus-visible': {
+      outline: '{{outline.outlineDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+    },
   },
   buttonSolidSecondary: {
     base: {

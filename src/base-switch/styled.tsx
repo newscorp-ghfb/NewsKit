@@ -84,7 +84,9 @@ export const StyledSwitch = styled.div<
       isValid: state === 'valid',
       isFocused,
       isHovered,
+      // isFocusedVisible: true, for this to work we need to PPDSC-2054
     })};
+
   ${({feedbackIsVisible}) =>
     feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`};
 

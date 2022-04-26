@@ -108,6 +108,10 @@ export default {
       borderColor: '{{colors.interactiveDisabled010}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
+    'focus-visible': {
+      outline: '{{outline.outlineDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+    },
   },
 
   checkboxFeedback: {

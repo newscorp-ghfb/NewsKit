@@ -184,4 +184,6 @@ export const colors = {
   interactiveInput030: '{{colors.blue010}}',
   interactiveInput040: '{{colors.blue060}}',
   interactiveInput050: '{{colors.blue070}}',
+
+  outlinePrimary010: '#3768FB',
 };

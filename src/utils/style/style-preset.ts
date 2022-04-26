@@ -26,6 +26,7 @@ export interface GetStylePresetFromThemeOptions {
   filterStates?: StylePresetStates[];
   omitStyles?: StylePresetStyleKeys[];
   filterStyles?: StylePresetStyleKeys[];
+  isFocusedVisible?: boolean;
 }
 
 /* When we are not on directly on a svg we need to add an 
@@ -83,6 +84,7 @@ const getPresetStates = (
     isValid = false,
     isFocused = false,
     isHovered = false,
+    isFocusedVisible = false,
   } = options || {};
   const {selected, loading, invalid, valid, ...presetStates} =
     filterStates && filterStates.length
@@ -97,6 +99,7 @@ const getPresetStates = (
     (isChecked && presetStates.checked) ||
     (isInvalid && invalid) ||
     (isValid && valid) ||
+    (isFocusedVisible && presetStates['focus-visible']) ||
     undefined;
 
   const forcedStates = [];
