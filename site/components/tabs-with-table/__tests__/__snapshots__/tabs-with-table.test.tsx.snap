@@ -652,30 +652,30 @@ exports[`TabsWithTable renders with default data 1`] = `
   border-width: 0;
 }
 
-.emotion-43 {
+.emotion-59 {
   grid-column: auto/span 12;
 }
 
 @media screen and (max-width: 767px) {
-  .emotion-44 {
+  .emotion-60 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-44 {
+  .emotion-60 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-44 {
+  .emotion-60 {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-44 {
+  .emotion-60 {
     margin-bottom: 80px;
   }
 }
@@ -891,13 +891,6 @@ exports[`TabsWithTable renders with default data 1`] = `
                 </table>
               </div>
             </div>
-            <div
-              class="emotion-43"
-            >
-              <div
-                class="emotion-44"
-              />
-            </div>
           </div>
         </div>
         <div
@@ -980,22 +973,15 @@ exports[`TabsWithTable renders with default data 1`] = `
                 </table>
               </div>
             </div>
-            <div
-              class="emotion-43"
-            >
-              <div
-                class="emotion-44"
-              />
-            </div>
           </div>
         </div>
       </div>
     </div>
     <div
-      class="emotion-43"
+      class="emotion-59"
     >
       <div
-        class="emotion-44"
+        class="emotion-60"
       />
     </div>
   </div>
