@@ -152,7 +152,7 @@ export const StyledThumb = styled.div<StyledThumbProps>`
   cursor: ${getCursor};
 `;
 
-export const StyledFeedback = styled.span<
+export const StyledThumbFeedback = styled.span<
   Pick<StyledThumbProps, 'disabled' | 'overrides'>
 >`
   position: absolute;

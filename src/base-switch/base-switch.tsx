@@ -5,8 +5,8 @@ import {
   StyledSwitch,
   StyledInput,
   StyledSwitchContainer,
-  StyledFeedback,
-  StyledContainer,
+  StyledSwitchFeedback,
+  StyledSwitchAndLabelWrapper,
   StyledLabel,
 } from './styled';
 import {BaseSwitchProps, BaseSwitchIconProps} from './types';
@@ -39,9 +39,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
   ) => {
     const ref = useRef<HTMLInputElement>(null);
     const [isInputFocused, setIsInputFocused] = React.useState(false);
-    const [isInputFocusedVisible, setIsInputFocusedVisible] = React.useState(
-      false,
-    );
+    const [isInputFocusVisible, setIsInputFocusVisible] = React.useState(false);
     const [isInputActive, setIsInputActive] = React.useState(false);
     const [isLabelHovered, setIsLabelHovered] = React.useState(false);
 
@@ -68,14 +66,14 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
 
     const onInputFocus = useCallback(
       (e: React.FocusEvent<HTMLInputElement>) => {
-        setIsInputFocusedVisible(isFocusVisible(e));
+        setIsInputFocusVisible(isFocusVisible(e));
         setIsInputFocused(true);
       },
       [setIsInputFocused],
     );
 
     const onInputBlur = useCallback(() => {
-      setIsInputFocusedVisible(false);
+      setIsInputFocusVisible(false);
       setIsInputFocused(false);
     }, []);
 
@@ -126,7 +124,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
     );
 
     return (
-      <StyledContainer
+      <StyledSwitchAndLabelWrapper
         as={label ? 'label' : 'div'}
         state={state}
         size={size}
@@ -147,7 +145,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
           role="presentation"
           path={path}
         >
-          <StyledFeedback
+          <StyledSwitchFeedback
             size={size}
             overrides={overrides}
             state={state}
@@ -163,7 +161,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
             overrides={overrides}
             size={size}
             isFocused={isInputFocused}
-            isFocusedVisible={isInputFocusedVisible}
+            isFocusedVisible={isInputFocusVisible}
             isHovered={isLabelHovered}
             feedbackIsVisible={isLabelHovered || isInputFocused}
             path={path}
@@ -186,7 +184,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
           </StyledSwitch>
         </StyledSwitchContainer>
         {labelPosition === 'end' && labelElement}
-      </StyledContainer>
+      </StyledSwitchAndLabelWrapper>
     );
   },
 );

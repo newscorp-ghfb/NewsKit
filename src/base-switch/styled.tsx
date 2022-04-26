@@ -13,7 +13,7 @@ const STACKING_CONTEXT = {
   input: '2',
 };
 
-export const StyledContainer = styled.label<
+export const StyledSwitchAndLabelWrapper = styled.label<
   Pick<BaseSwitchProps, 'state' | 'size' | 'overrides' | 'path'>
 >`
   display: flex;
@@ -100,7 +100,7 @@ export const StyledSwitch = styled.div<
   ${({size, path}) => getTransitionPreset(`${path}.${size}.input`, 'input')};
 `;
 
-export const StyledFeedback = styled.div<
+export const StyledSwitchFeedback = styled.div<
   Pick<BaseSwitchProps, 'size' | 'overrides' | 'state' | 'path'> & {
     isHovered: boolean;
     isActive: boolean;
