@@ -2,6 +2,9 @@ import React from 'react';
 import {useRouter} from 'next/router';
 import {
   Divider,
+  getBorderCssFromTheme,
+  getColorFromTheme,
+  getSizingFromTheme,
   getSpacingCssFromTheme,
   Menu,
   MenuGroup,
@@ -20,6 +23,25 @@ export const DesktopNavigationDivider = styled.div`
   ${getSpacingCssFromTheme('marginTop', 'space045')};
   ${getSpacingCssFromTheme('marginBottom', 'space060')};
 `;
+
+const Highlighted = styled.div`
+  &.selected {
+    position: relative;
+    overflow: visible;
+    ::before {
+      content: '';
+      position: absolute;
+      left: -${getSizingFromTheme('sizing060')};
+      background: ${getColorFromTheme('blue060')};
+      height: ${getSizingFromTheme('sizing070')};
+      width: ${getSizingFromTheme('sizing030')};
+      top: ${getSizingFromTheme('sizing010')};
+
+      ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
+    }
+  }
+`;
+
 const Test = () => {
   const path = useRouter().pathname;
   const currentRoute = path.match(/\/[A-z\d-]*/g);
@@ -45,7 +67,9 @@ const Test = () => {
         list.map(({title, id, subNav, page}) => (
           <React.Fragment key={id}>
             {page ? (
-              <>
+              <Highlighted
+                className={path.includes(id) ? 'selected' : undefined}
+              >
                 <MenuItem
                   href={id}
                   overrides={{
@@ -59,7 +83,7 @@ const Test = () => {
                 >
                   {title}
                 </MenuItem>
-              </>
+              </Highlighted>
             ) : (
               <>
                 <DesktopNavigationDivider>
