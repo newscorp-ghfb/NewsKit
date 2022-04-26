@@ -42,7 +42,7 @@ const Highlighted = styled.div`
   }
 `;
 
-const Test = () => {
+const MenuNavDesktop = () => {
   const path = useRouter().pathname;
   const currentRoute = path.match(/\/[A-z\d-]*/g);
   const currentSection =
@@ -137,7 +137,7 @@ export const SidebarNav = () => {
         <MenuNavCollapsible path={path} menu={routes} />
       </Visible>
       <Visible lg xl>
-        <Test />
+        <MenuNavDesktop />
       </Visible>
     </>
   );
