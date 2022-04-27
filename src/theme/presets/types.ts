@@ -25,6 +25,7 @@ export interface StylePresetStyles {
   textTransform?: string;
   whiteSpace?: string;
   wordBreak?: string;
+  opacity?: string;
 }
 export type StylePresetStyleKeys = keyof StylePresetStyles;
 
@@ -68,12 +69,15 @@ export interface StylePreset {
   'checked:invalid:focus'?: StylePresetStyles;
   'checked:invalid:hover'?: StylePresetStyles;
   'checked:invalid:focus:hover'?: StylePresetStyles;
+  'hover:active'?: StylePresetStyles;
   'valid:hover'?: StylePresetStyles;
   'valid:focus'?: StylePresetStyles;
   'valid:focus:hover'?: StylePresetStyles;
+  'valid:hover:active'?: StylePresetStyles;
   'invalid:hover'?: StylePresetStyles;
   'invalid:focus'?: StylePresetStyles;
   'invalid:focus:hover'?: StylePresetStyles;
+  'invalid:hover:active'?: StylePresetStyles;
   'visited:hover'?: StylePresetStyles;
   'visited:focus'?: StylePresetStyles;
 }
