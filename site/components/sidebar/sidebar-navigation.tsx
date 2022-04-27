@@ -1,12 +1,13 @@
 import React from 'react';
 import {useRouter} from 'next/router';
 import {
-  Divider,
-  getBorderCssFromTheme,
   getColorFromTheme,
   getSizingFromTheme,
   getSpacingCssFromTheme,
+  getStylePresetFromTheme,
+  Label,
   Menu,
+  MenuDivider,
   MenuGroup,
   MenuItem,
   styled,
@@ -24,20 +25,20 @@ export const DesktopNavigationDivider = styled.div`
   ${getSpacingCssFromTheme('marginBottom', 'space060')};
 `;
 
-const Highlighted = styled.div`
+const Indicator = styled.div`
   &.selected {
     position: relative;
     overflow: visible;
     ::before {
       content: '';
       position: absolute;
-      left: -${getSizingFromTheme('sizing060')};
       background: ${getColorFromTheme('blue060')};
       height: ${getSizingFromTheme('sizing070')};
-      width: ${getSizingFromTheme('sizing030')};
-      top: ${getSizingFromTheme('sizing010')};
+      width: ${getSizingFromTheme('sizing010')};
 
-      ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
+      ${getStylePresetFromTheme('interactivePrimary030')};
+      border-width: 4px;
+      border-radius: 0 4px 4px 0;
     }
   }
 `;
@@ -67,27 +68,39 @@ const MenuNavDesktop = () => {
         list.map(({title, id, subNav, page}) => (
           <React.Fragment key={id}>
             {page ? (
-              <Highlighted
-                className={path.includes(id) ? 'selected' : undefined}
-              >
-                <MenuItem
-                  href={id}
-                  overrides={{
-                    typographyPreset: 'utilityButton020',
-                    spaceInset: 'space030',
-                    stylePreset: 'sidebarNavItem',
-                  }}
-                  selected={path.includes(id)}
-                  size="small"
+              <>
+                <Indicator
+                  id="hello"
                   className={path.includes(id) ? 'selected' : undefined}
                 >
-                  {title}
-                </MenuItem>
-              </Highlighted>
+                  <MenuItem
+                    href={id}
+                    overrides={{
+                      typographyPreset: 'utilityButton020',
+                      // spaceInset: 'space030',
+                      minHeight: '40px',
+                      // had to add minWidth here in order for hoover to spread full width of container
+                      minWidth: '276px',
+                    }}
+                    size="small"
+                    className={path.includes(id) ? 'selected' : undefined}
+                  >
+                    <Label
+                      overrides={{
+                        stylePreset: 'interactivePrimary030',
+                        typographyPreset: 'utilityButton020',
+                        spaceStack: 'space000',
+                      }}
+                    >
+                      {title}
+                    </Label>
+                  </MenuItem>
+                </Indicator>
+              </>
             ) : (
               <>
                 <DesktopNavigationDivider>
-                  <Divider />
+                  <MenuDivider />
                 </DesktopNavigationDivider>
                 <MenuGroup
                   title={title}
@@ -97,7 +110,7 @@ const MenuNavDesktop = () => {
                         xs: 'utilityHeading010',
                         lg: 'utilityHeading030',
                       },
-                      stylePreset: 'inkContrast',
+                      // stylePreset: 'inkContrast',
                       spaceInset: 'space030',
                       spaceInline: 'space040',
                     },

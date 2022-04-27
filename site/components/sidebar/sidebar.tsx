@@ -29,7 +29,6 @@ interface SidebarWrapperProps {
 
 const SidebarWrapper = styled.div<SidebarWrapperProps>`
   width: 100%;
-  ${getSpacingCssFromTheme('paddingLeft', 'space050')};
   ${getSpacingCssFromTheme('paddingRight', 'space050')};
   position: fixed;
   overflow: auto;
