@@ -113,36 +113,4 @@ export default {
       outlineOffset: '{{outline.outlineOffsetDefault}}',
     },
   },
-
-  checkboxFeedback: {
-    base: {
-      backgroundColor: '{{colors.transparent}}',
-      borderRadius: '{{borders.borderRadiusCircle}}',
-    },
-    hover: {
-      backgroundColor: '{{colors.interactiveInput030}}',
-    },
-    'valid:hover': {
-      backgroundColor: '{{colors.interactivePositive010}}',
-    },
-    'valid:focus:hover': {
-      backgroundColor: '{{colors.interactivePositive010}}',
-    },
-    'invalid:hover': {
-      backgroundColor: '{{colors.interactiveNegative010}}',
-    },
-    'invalid:focus:hover': {
-      backgroundColor: '{{colors.interactiveNegative010}}',
-    },
-    // TODO: Remove when we have generic focus style
-    focus: {
-      backgroundColor: '{{colors.interactiveInput030}}',
-    },
-    'valid:focus': {
-      backgroundColor: '{{colors.interactivePositive010}}',
-    },
-    'invalid:focus': {
-      backgroundColor: '{{colors.interactiveNegative010}}',
-    },
-  },
 } as Record<string, StylePreset>;

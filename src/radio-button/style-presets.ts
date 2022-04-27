@@ -116,36 +116,4 @@ export default {
       iconColor: '{{colors.inkNonEssential}}',
     },
   },
-
-  radioButtonFeedback: {
-    base: {
-      backgroundColor: '{{colors.transparent}}',
-      borderRadius: '{{borders.borderRadiusCircle}}',
-    },
-    hover: {
-      backgroundColor: '{{colors.interactiveInput030}}',
-    },
-    'valid:focus:hover': {
-      backgroundColor: '{{colors.interactivePositive010}}',
-    },
-    'valid:hover': {
-      backgroundColor: '{{colors.interactivePositive010}}',
-    },
-    'invalid:hover': {
-      backgroundColor: '{{colors.interactiveNegative010}}',
-    },
-    'invalid:focus:hover': {
-      backgroundColor: '{{colors.interactiveNegative010}}',
-    },
-    // TODO: remove when we have generic focus state
-    focus: {
-      backgroundColor: '{{colors.interactiveInput030}}',
-    },
-    'valid:focus': {
-      backgroundColor: '{{colors.interactivePositive010}}',
-    },
-    'invalid:focus': {
-      backgroundColor: '{{colors.interactiveNegative010}}',
-    },
-  },
 } as Record<string, StylePreset>;
