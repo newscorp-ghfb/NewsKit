@@ -188,7 +188,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
     componentDefaultsKey="textField"
     meta={{
       status: MetaStatus.Supported,
-      introduced: 'v0.20.1',
+      introduced: 'v0.2.0',
       introducedLink: false,
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/develop/src/button',
