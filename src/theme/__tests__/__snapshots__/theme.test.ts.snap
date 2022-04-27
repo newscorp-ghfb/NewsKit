@@ -2162,6 +2162,74 @@ Object {
     "spaceInset": "spaceInsetStretch040",
     "stylePreset": "structuredListItem",
   },
+  "switch": Object {
+    "large": Object {
+      "feedback": Object {
+        "size": "sizing090",
+        "stylePreset": "switchFeedback",
+      },
+      "input": Object {
+        "blockSize": "sizing070",
+        "inlineSize": "76px",
+        "spaceInline": "space040",
+        "spaceInset": "sizing010",
+        "stylePreset": "switchTrack",
+      },
+      "label": Object {
+        "stylePreset": "controlLabel",
+        "typographyPreset": "utilityBody030",
+      },
+      "thumb": Object {
+        "size": "sizing060",
+        "spaceInset": "sizing010",
+        "stylePreset": "switchThumb",
+      },
+    },
+    "medium": Object {
+      "feedback": Object {
+        "size": "sizing080",
+        "stylePreset": "switchFeedback",
+      },
+      "input": Object {
+        "blockSize": "sizing060",
+        "inlineSize": "60px",
+        "spaceInline": "space030",
+        "spaceInset": "sizing010",
+        "stylePreset": "switchTrack",
+      },
+      "label": Object {
+        "stylePreset": "controlLabel",
+        "typographyPreset": "utilityBody020",
+      },
+      "thumb": Object {
+        "size": "sizing050",
+        "spaceInset": "sizing010",
+        "stylePreset": "switchThumb",
+      },
+    },
+    "small": Object {
+      "feedback": Object {
+        "size": "sizing070",
+        "stylePreset": "switchFeedback",
+      },
+      "input": Object {
+        "blockSize": "sizing050",
+        "inlineSize": "44px",
+        "spaceInline": "space030",
+        "spaceInset": "sizing010",
+        "stylePreset": "switchTrack",
+      },
+      "label": Object {
+        "stylePreset": "controlLabel",
+        "typographyPreset": "utilityBody020",
+      },
+      "thumb": Object {
+        "size": "sizing040",
+        "spaceInset": "sizing010",
+        "stylePreset": "switchThumb",
+      },
+    },
+  },
   "tab": Object {
     "large": Object {
       "iconSize": "iconSize030",
@@ -4422,6 +4490,45 @@ Object {
     },
     "hover": Object {
       "backgroundColor": "{{colors.interactiveSecondary010}}",
+    },
+  },
+  "switchFeedback": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+    },
+    "focus": Object {
+      "backgroundColor": "{{colors.interactiveInput030}}",
+    },
+    "hover": Object {
+      "backgroundColor": "{{colors.interactiveInput030}}",
+    },
+  },
+  "switchThumb": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.inkInverse}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "iconColor": "{{colors.inkContrast}}",
+    },
+    "focus": Object {
+      "iconColor": "{{colors.inkContrast}}",
+    },
+    "hover": Object {
+      "iconColor": "{{colors.inkContrast}}",
+    },
+  },
+  "switchTrack": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interactiveInput020}}",
+      "borderRadius": "{{borders.borderRadiusPill}}",
+      "iconColor": "{{colors.inkInverse}}",
+    },
+    "checked": Object {
+      "backgroundColor": "{{colors.interactiveInput040}}",
+    },
+    "disabled": Object {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "iconColor": "{{colors.inkNonEssential}}",
     },
   },
   "tab": Object {
