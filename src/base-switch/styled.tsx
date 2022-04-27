@@ -78,7 +78,7 @@ export const StyledSwitch = styled.div<
   justify-content: center;
   align-items: center;
 
-  ${({size, checked, state, isFocused, isHovered, path}) =>
+  ${({size, checked, state, isFocused, isHovered, isFocusedVisible, path}) =>
     getStylePreset(`${path}.${size}.input`, 'input', {
       isChecked: checked,
       isDisabled: state === 'disabled',
@@ -86,15 +86,9 @@ export const StyledSwitch = styled.div<
       isValid: state === 'valid',
       isFocused,
       isHovered,
-      // isFocusedVisible: true, for this to work we need to PPDSC-2054
+      isFocusedVisible,
     })};
 
-  ${({isFocusedVisible}) =>
-    isFocusedVisible &&
-    ` outline: 5px auto Highlight;
-      outline: 5px auto -webkit-focus-ring-color;
-      outline-offset: 3px;
-  `}
   ${({feedbackIsVisible}) =>
     feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`};
 

@@ -95,6 +95,7 @@ const getPresetStates = (
   const stateOverrides =
     (isDisabled && presetStates.disabled) ||
     (isLoading && loading) ||
+    (isFocusedVisible && presetStates['focus-visible']) ||
     (isFocused && presetStates.focus) ||
     (isHovered && presetStates.hover) ||
     (isActive && presetStates.active) ||
@@ -102,7 +103,6 @@ const getPresetStates = (
     (isChecked && presetStates.checked) ||
     (isInvalid && invalid) ||
     (isValid && valid) ||
-    (isFocusedVisible && presetStates['focus-visible']) ||
     undefined;
 
   const forcedStates = [];

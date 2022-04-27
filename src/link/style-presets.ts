@@ -61,6 +61,10 @@ export default {
       iconColor: '{{colors.interactiveVisited010}}',
       textDecoration: 'underline',
     },
+    'focus-visible': {
+      outline: '{{outline.outlineDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+    },
   },
   linkInlineInverse: {
     base: {
