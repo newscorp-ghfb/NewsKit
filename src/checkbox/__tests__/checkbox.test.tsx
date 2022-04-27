@@ -67,6 +67,18 @@ describe('Checkbox', () => {
     expect(asFragment()).toMatchSnapshot('with blur');
   });
 
+  test('active state', () => {
+    const {getByRole, asFragment} = renderWithTheme(() => (
+      <Checkbox defaultChecked={false} />
+    ));
+    const checkbox = getByRole('checkbox') as HTMLInputElement;
+    fireEvent.mouseDown(checkbox);
+    expect(asFragment()).toMatchSnapshot('active on');
+
+    fireEvent.mouseUp(checkbox);
+    expect(asFragment()).toMatchSnapshot('active off');
+  });
+
   test('with overrides', () => {
     const fragment = renderToFragmentWithTheme(() => (
       <Checkbox
