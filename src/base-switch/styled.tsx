@@ -48,6 +48,21 @@ export const StyledSwitchContainer = styled.div<
       'size',
     )}
 
+  ${({size, path}) =>
+    getResponsiveSize(
+      'blockSize',
+      `${path}.${size}.input`,
+      'input',
+      'blockSize',
+    )}
+  ${({size, path}) =>
+    getResponsiveSize(
+      'inlineSize',
+      `${path}.${size}.input`,
+      'input',
+      'inlineSize',
+    )}
+
   ${({size, labelPosition, path}) =>
     getResponsiveSpace(
       labelPosition === 'end' ? 'marginRight' : 'marginLeft',
@@ -92,14 +107,43 @@ export const StyledSwitch = styled.div<
 `;
 
 export const StyledFeedback = styled.div<
-  Pick<BaseSwitchProps, 'size' | 'overrides' | 'state' | 'path'> & {
+  Pick<BaseSwitchProps, 'size' | 'overrides' | 'state' | 'path' | 'checked'> & {
     isFocused: boolean;
     isHovered: boolean;
+    centreOnThumb?: boolean;
   }
 >`
   position: absolute;
   top: 50%;
-  left: 50%;
+
+  ${({centreOnThumb, size, checked, path, ...rest}) =>
+    centreOnThumb
+      ? getResponsiveSize(
+          rectSize => ({
+            left: checked
+              ? `calc(100% - (${rectSize} / 2))`
+              : `calc(${rectSize} / 2)`,
+            transition: 'all 0.2s ease-in-out', // todo: remove when PPDSC-2054 merged
+          }),
+          `${path}.${size}.thumb`,
+          'thumb',
+          'size',
+        )(rest)
+      : {
+          left: '50%',
+        }}
+  ${({centreOnThumb, size, checked, path, ...rest}) =>
+    centreOnThumb
+      ? getResponsiveSize(
+          thumbPadding => ({
+            marginLeft: `${checked ? '-' : ''}${thumbPadding}`,
+          }),
+          `${path}.${size}.input`,
+          'input',
+          'spaceInset',
+        )(rest)
+      : ''}
+  
   opacity: 0.7;
   ${({isHovered, isFocused}) =>
     (isHovered || isFocused) && `z-index: ${STACKING_CONTEXT.feedback}`};

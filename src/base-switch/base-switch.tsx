@@ -97,6 +97,9 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
         checked,
         size,
         iconSize,
+        parentOverrides: overrides,
+        isFocused: isInputFocused,
+        isHovered: isLabelHovered || isInputFocused,
       },
     );
 
@@ -127,6 +130,8 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
           path={path}
         >
           <StyledFeedback
+            centreOnThumb={path === 'switch'}
+            checked={checked}
             size={size}
             overrides={overrides}
             state={state}
