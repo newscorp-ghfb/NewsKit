@@ -383,6 +383,38 @@ Object {
         "color": "{{colors.inkNonEssential}}",
       },
     },
+    "feedback": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput040}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "opacity": "0",
+      },
+      "disabled": Object {
+        "opacity": "0",
+      },
+      "hover": Object {
+        "opacity": "0.2",
+      },
+      "hover:active": Object {
+        "opacity": "0.4",
+      },
+      "invalid:hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.2",
+      },
+      "invalid:hover:active": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.4",
+      },
+      "valid:hover": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.2",
+      },
+      "valid:hover:active": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.4",
+      },
+    },
     "inputField": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -551,6 +583,13 @@ Object {
       },
       "exitDone": Object {
         "transform": "translate(0, 20px)",
+      },
+    },
+    "opacityChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "opacity",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "slideBottom": Object {
@@ -1147,6 +1186,9 @@ Object {
       "stylePreset": "seekBarBuffering",
     },
     "slider": Object {
+      "feedback": Object {
+        "size": "sizing060",
+      },
       "indicator": Object {
         "stylePreset": "seekBarIndicator",
       },
@@ -1389,7 +1431,8 @@ Object {
     "large": Object {
       "feedback": Object {
         "size": "sizing090",
-        "stylePreset": "checkboxFeedback",
+        "stylePreset": "feedback",
+        "transitionPreset": "opacityChange",
       },
       "input": Object {
         "size": "sizing070",
@@ -1409,7 +1452,8 @@ Object {
     "medium": Object {
       "feedback": Object {
         "size": "sizing080",
-        "stylePreset": "checkboxFeedback",
+        "stylePreset": "feedback",
+        "transitionPreset": "opacityChange",
       },
       "input": Object {
         "size": "sizing060",
@@ -1429,7 +1473,8 @@ Object {
     "small": Object {
       "feedback": Object {
         "size": "sizing070",
-        "stylePreset": "checkboxFeedback",
+        "stylePreset": "feedback",
+        "transitionPreset": "opacityChange",
       },
       "input": Object {
         "size": "sizing050",
@@ -1870,7 +1915,8 @@ Object {
     "large": Object {
       "feedback": Object {
         "size": "sizing090",
-        "stylePreset": "radioButtonFeedback",
+        "stylePreset": "feedback",
+        "transitionPreset": "opacityChange",
       },
       "icon": Object {
         "size": "iconSize030",
@@ -1894,7 +1940,8 @@ Object {
     "medium": Object {
       "feedback": Object {
         "size": "sizing080",
-        "stylePreset": "radioButtonFeedback",
+        "stylePreset": "feedback",
+        "transitionPreset": "opacityChange",
       },
       "icon": Object {
         "size": "iconSize020",
@@ -1918,7 +1965,8 @@ Object {
     "small": Object {
       "feedback": Object {
         "size": "sizing070",
-        "stylePreset": "radioButtonFeedback",
+        "stylePreset": "feedback",
+        "transitionPreset": "opacityChange",
       },
       "icon": Object {
         "size": "iconSize010",
@@ -2117,6 +2165,11 @@ Object {
     },
   },
   "slider": Object {
+    "feedback": Object {
+      "size": "sizing080",
+      "stylePreset": "feedback",
+      "transitionPreset": "opacityChange",
+    },
     "indicator": Object {
       "stylePreset": "sliderIndicator",
     },
@@ -2994,36 +3047,6 @@ Object {
       "color": "{{colors.inkBase}}",
     },
   },
-  "checkboxFeedback": Object {
-    "base": Object {
-      "backgroundColor": "{{colors.transparent}}",
-      "borderRadius": "{{borders.borderRadiusCircle}}",
-    },
-    "focus": Object {
-      "backgroundColor": "{{colors.interactiveInput030}}",
-    },
-    "hover": Object {
-      "backgroundColor": "{{colors.interactiveInput030}}",
-    },
-    "invalid:focus": Object {
-      "backgroundColor": "{{colors.interactiveNegative010}}",
-    },
-    "invalid:focus:hover": Object {
-      "backgroundColor": "{{colors.interactiveNegative010}}",
-    },
-    "invalid:hover": Object {
-      "backgroundColor": "{{colors.interactiveNegative010}}",
-    },
-    "valid:focus": Object {
-      "backgroundColor": "{{colors.interactivePositive010}}",
-    },
-    "valid:focus:hover": Object {
-      "backgroundColor": "{{colors.interactivePositive010}}",
-    },
-    "valid:hover": Object {
-      "backgroundColor": "{{colors.interactivePositive010}}",
-    },
-  },
   "checkboxInput": Object {
     "base": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
@@ -3157,6 +3180,38 @@ Object {
       "backgroundColor": "{{colors.interface010}}",
       "borderRadius": "{{borders.borderRadiusSharp}}",
       "boxShadow": "{{shadows.shadow060}}",
+    },
+  },
+  "feedback": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interactiveInput040}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "opacity": "0",
+    },
+    "disabled": Object {
+      "opacity": "0",
+    },
+    "hover": Object {
+      "opacity": "0.2",
+    },
+    "hover:active": Object {
+      "opacity": "0.4",
+    },
+    "invalid:hover": Object {
+      "backgroundColor": "{{colors.interactiveNegative040}}",
+      "opacity": "0.2",
+    },
+    "invalid:hover:active": Object {
+      "backgroundColor": "{{colors.interactiveNegative040}}",
+      "opacity": "0.4",
+    },
+    "valid:hover": Object {
+      "backgroundColor": "{{colors.interactivePositive040}}",
+      "opacity": "0.2",
+    },
+    "valid:hover:active": Object {
+      "backgroundColor": "{{colors.interactivePositive040}}",
+      "opacity": "0.4",
     },
   },
   "flagMinimalInformative": Object {
@@ -4089,36 +4144,6 @@ Object {
   "overlay": Object {
     "base": Object {
       "backgroundColor": "{{overlays.overlayTintBase040}}",
-    },
-  },
-  "radioButtonFeedback": Object {
-    "base": Object {
-      "backgroundColor": "{{colors.transparent}}",
-      "borderRadius": "{{borders.borderRadiusCircle}}",
-    },
-    "focus": Object {
-      "backgroundColor": "{{colors.interactiveInput030}}",
-    },
-    "hover": Object {
-      "backgroundColor": "{{colors.interactiveInput030}}",
-    },
-    "invalid:focus": Object {
-      "backgroundColor": "{{colors.interactiveNegative010}}",
-    },
-    "invalid:focus:hover": Object {
-      "backgroundColor": "{{colors.interactiveNegative010}}",
-    },
-    "invalid:hover": Object {
-      "backgroundColor": "{{colors.interactiveNegative010}}",
-    },
-    "valid:focus": Object {
-      "backgroundColor": "{{colors.interactivePositive010}}",
-    },
-    "valid:focus:hover": Object {
-      "backgroundColor": "{{colors.interactivePositive010}}",
-    },
-    "valid:hover": Object {
-      "backgroundColor": "{{colors.interactivePositive010}}",
     },
   },
   "radioButtonInput": Object {
