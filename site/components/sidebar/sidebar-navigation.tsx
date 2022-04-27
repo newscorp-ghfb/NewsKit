@@ -43,6 +43,9 @@ const Indicator = styled.div`
   }
 `;
 
+const MenuItemStyled = styled(MenuItem)`
+  width: 276px;
+`;
 const MenuNavDesktop = () => {
   const path = useRouter().pathname;
   const currentRoute = path.match(/\/[A-z\d-]*/g);
@@ -74,15 +77,13 @@ const MenuNavDesktop = () => {
                   className={path.includes(id) ? 'selected' : undefined}
                 />
 
-                <MenuItem
+                <MenuItemStyled
                   href={id}
                   overrides={{
                     typographyPreset: 'utilityButton020',
                     // tier 1
+                    // add minHeight to make sure indicator and container remain same height
                     minHeight: '40px',
-                    marginInline: 'space045',
-                    // had to add minWidth here in order for hoover to spread full width of container
-                    minWidth: '276px',
                   }}
                   size="small"
                   className={path.includes(id) ? 'selected' : undefined}
@@ -92,11 +93,13 @@ const MenuNavDesktop = () => {
                       stylePreset: 'interactivePrimary030',
                       typographyPreset: 'utilityButton020',
                       spaceStack: 'space000',
+
+                      marginInline: 'space045',
                     }}
                   >
                     {title}
                   </Label>
-                </MenuItem>
+                </MenuItemStyled>
               </>
             ) : (
               <>
@@ -107,11 +110,7 @@ const MenuNavDesktop = () => {
                   title={title}
                   overrides={{
                     title: {
-                      typographyPreset: {
-                        xs: 'utilityHeading010',
-                        lg: 'utilityHeading030',
-                      },
-                      // stylePreset: 'inkContrast',
+                      typographyPreset: 'utilityHeading030',
                       spaceInset: 'space030',
                       spaceInline: 'space040',
                     },
