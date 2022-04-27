@@ -72,30 +72,31 @@ const MenuNavDesktop = () => {
                 <Indicator
                   id="hello"
                   className={path.includes(id) ? 'selected' : undefined}
+                />
+
+                <MenuItem
+                  href={id}
+                  overrides={{
+                    typographyPreset: 'utilityButton020',
+                    // tier 1
+                    minHeight: '40px',
+                    marginInline: 'space045',
+                    // had to add minWidth here in order for hoover to spread full width of container
+                    minWidth: '276px',
+                  }}
+                  size="small"
+                  className={path.includes(id) ? 'selected' : undefined}
                 >
-                  <MenuItem
-                    href={id}
+                  <Label
                     overrides={{
+                      stylePreset: 'interactivePrimary030',
                       typographyPreset: 'utilityButton020',
-                      // spaceInset: 'space030',
-                      minHeight: '40px',
-                      // had to add minWidth here in order for hoover to spread full width of container
-                      minWidth: '276px',
+                      spaceStack: 'space000',
                     }}
-                    size="small"
-                    className={path.includes(id) ? 'selected' : undefined}
                   >
-                    <Label
-                      overrides={{
-                        stylePreset: 'interactivePrimary030',
-                        typographyPreset: 'utilityButton020',
-                        spaceStack: 'space000',
-                      }}
-                    >
-                      {title}
-                    </Label>
-                  </MenuItem>
-                </Indicator>
+                    {title}
+                  </Label>
+                </MenuItem>
               </>
             ) : (
               <>
