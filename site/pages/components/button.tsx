@@ -189,6 +189,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v0.20.1',
+      introducedLink: false,
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/develop/src/button',
       figmaUrl:
@@ -352,8 +353,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     states={{
-      introduction:
-        'The Text Field has the following states. They can be displayed with both placeholder content or user-inputted content:',
+      introduction: 'The Button has the following states:',
       layout: '3-span',
       cards: [
         {
