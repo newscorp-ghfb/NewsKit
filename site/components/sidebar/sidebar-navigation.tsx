@@ -1,6 +1,7 @@
 import React from 'react';
 import {useRouter} from 'next/router';
 import {
+  Block,
   getColorFromTheme,
   getSizingFromTheme,
   getSpacingCssFromTheme,
@@ -46,6 +47,7 @@ const Indicator = styled.div`
 const MenuItemStyled = styled(MenuItem)`
   width: 276px;
 `;
+
 const MenuNavDesktop = () => {
   const path = useRouter().pathname;
   const currentRoute = path.match(/\/[A-z\d-]*/g);
@@ -98,6 +100,12 @@ const MenuNavDesktop = () => {
                     }}
                   >
                     {title}
+                    <Block
+                      spaceStack={
+                        // The row spacing between multiple flags in the cell
+                        title === 'Hooks' ? 'space045' : undefined
+                      }
+                    />
                   </Label>
                 </MenuItemStyled>
               </>
@@ -106,17 +114,21 @@ const MenuNavDesktop = () => {
                 <DesktopNavigationDivider>
                   <MenuDivider />
                 </DesktopNavigationDivider>
+                {/* <SideBarNavigationWrapper id="wrapper test"> */}
                 <MenuGroup
                   title={title}
                   overrides={{
                     title: {
                       typographyPreset: 'utilityHeading030',
-                      spaceInset: 'space030',
+                      stylePreset: ' menuItemVertical',
                       spaceInline: 'space040',
+                      spaceInset: 'space060',
                     },
                   }}
                 >
                   {subNav && createMenuItem(subNav)}
+                  {/* added this cause last item needs space */}
+                  <Block spaceStack="space045" />
                 </MenuGroup>
               </>
             )}
@@ -124,6 +136,7 @@ const MenuNavDesktop = () => {
         ))}
     </>
   );
+
   return (
     <>
       <Menu
