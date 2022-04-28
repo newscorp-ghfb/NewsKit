@@ -74,41 +74,51 @@ const MenuNavDesktop = () => {
           <React.Fragment key={id}>
             {page ? (
               <>
-                <Indicator
-                  id="hello"
-                  className={path.includes(id) ? 'selected' : undefined}
-                />
+                {title.includes('Overview') ||
+                title.includes('Getting started') ? (
+                  <Block spaceStack="space060" />
+                ) : (
+                  <>
+                    <Indicator
+                      className={path.includes(id) ? 'selected' : undefined}
+                    />
+                    <MenuItemStyled
+                      href={id}
+                      overrides={{
+                        typographyPreset: 'utilityButton020',
+                        // tier 1
+                        // add minHeight to make sure indicator and container remain same height
+                        minHeight: '40px',
+                      }}
+                      size="small"
+                      className={path.includes(id) ? 'selected' : undefined}
+                    >
+                      <Label
+                        overrides={{
+                          stylePreset: 'interactivePrimary030',
+                          typographyPreset: 'utilityButton020',
+                          spaceStack: 'space000',
 
-                <MenuItemStyled
-                  href={id}
-                  overrides={{
-                    typographyPreset: 'utilityButton020',
-                    // tier 1
-                    // add minHeight to make sure indicator and container remain same height
-                    minHeight: '40px',
-                  }}
-                  size="small"
-                  className={path.includes(id) ? 'selected' : undefined}
-                >
-                  <Label
-                    overrides={{
-                      stylePreset: 'interactivePrimary030',
-                      typographyPreset: 'utilityButton020',
-                      spaceStack: 'space000',
-
-                      marginInline: 'space045',
-                    }}
-                  >
-                    {title}
-                  </Label>
-                </MenuItemStyled>
+                          marginInline: 'space045',
+                        }}
+                      >
+                        {title}
+                      </Label>
+                    </MenuItemStyled>
+                  </>
+                )}
               </>
             ) : (
               <>
-                <DesktopNavigationDivider>
-                  <MenuDivider />
-                </DesktopNavigationDivider>
-
+                {/* I cant get the first item in the array
+              as this returns each title individually  */}
+                {title === 'Foundation' ||
+                title === 'Actions & Inputs' ||
+                title === 'Design' ? undefined : (
+                  <DesktopNavigationDivider>
+                    <MenuDivider />
+                  </DesktopNavigationDivider>
+                )}
                 <MenuGroup
                   title={title}
                   overrides={{
