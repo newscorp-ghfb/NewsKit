@@ -18,7 +18,7 @@ const SwitchSelector = ({
   const overrides = parentOverrides as SwitchOverrides;
   const {onIcon: OnIcon, offIcon: OffIcon} = overrides;
   return (
-    <StyledSwitchContainer size={size} overrides={overrides}>
+    <StyledSwitchContainer size={size} overrides={overrides} aria-hidden>
       <StyledTrackColumn
         size={size}
         overrides={overrides}
@@ -57,6 +57,7 @@ const ThemelessSwitch = React.forwardRef<HTMLInputElement, SwitchProps>(
         path="switch"
         ref={inputRef}
         type="checkbox"
+        role="switch"
         overrides={{
           ...(overrides || {}),
           icon: undefined,

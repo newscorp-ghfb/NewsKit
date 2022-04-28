@@ -36,7 +36,9 @@ export interface SwitchProps
     | 'CheckIconContainer'
     | 'overrides'
     | 'state'
+    | 'label'
   > {
   overrides?: SwitchOverrides;
   state?: SwitchState;
+  label: React.ReactNode;
 }

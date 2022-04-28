@@ -5,7 +5,7 @@ import {
 } from '../../test/storybook-comps';
 import {Switch} from '..';
 import {styled} from '../../utils';
-import {Cell, Grid, IconFilledCheck, IconFilledClose} from '../..';
+import {Cell, Fieldset, Grid, IconFilledCheck, IconFilledClose} from '../..';
 import {
   icons,
   labels,
@@ -139,3 +139,30 @@ export const StorySwitchLabels = () => (
 );
 
 StorySwitchLabels.storyName = 'switch-labels';
+
+export const StorySwitchFieldset = () => (
+  <>
+    <StorybookHeading>Switch</StorybookHeading>
+    <Grid>
+      <Cell xs={8} md={4}>
+        <StorybookSubHeading>Fieldset</StorybookSubHeading>
+
+        <Container>
+          <Fieldset legend="Accessibility Preferences">
+            <Switch
+              label="Reduced motion"
+              defaultChecked
+              overrides={{
+                icon: ThumbIcon,
+                onIcon: IconFilledCheck,
+                offIcon: IconFilledClose,
+              }}
+            />
+          </Fieldset>
+        </Container>
+      </Cell>
+    </Grid>
+  </>
+);
+
+StorySwitchFieldset.storyName = 'switch-fieldset';

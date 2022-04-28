@@ -196,6 +196,7 @@ exports[`Switch hover on feedback shows it: with hover 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -211,6 +212,7 @@ exports[`Switch hover on feedback shows it: with hover 1`] = `
         <input
           class="emotion-8"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
@@ -430,6 +432,7 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -445,6 +448,7 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
         <input
           class="emotion-8"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
@@ -648,6 +652,7 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -664,6 +669,7 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
           class="emotion-8"
           data-testid="checkbox-input"
           disabled=""
+          role="switch"
           type="checkbox"
         />
       </div>
@@ -867,6 +873,7 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -883,6 +890,7 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
           class="emotion-8"
           data-testid="checkbox-input"
           disabled=""
+          role="switch"
           type="checkbox"
         />
       </div>
@@ -1092,6 +1100,7 @@ exports[`Switch hover on label trigger Switch hover styles: with hover 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -1107,6 +1116,7 @@ exports[`Switch hover on label trigger Switch hover styles: with hover 1`] = `
         <input
           class="emotion-8"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
@@ -1326,6 +1336,7 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -1341,6 +1352,7 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
         <input
           class="emotion-8"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
@@ -1544,6 +1556,7 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -1560,6 +1573,7 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
           class="emotion-8"
           data-testid="checkbox-input"
           disabled=""
+          role="switch"
           type="checkbox"
         />
       </div>
@@ -1763,6 +1777,7 @@ exports[`Switch hover on label with disabled do not change hover state: without 
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -1779,6 +1794,7 @@ exports[`Switch hover on label with disabled do not change hover state: without 
           class="emotion-8"
           data-testid="checkbox-input"
           disabled=""
+          role="switch"
           type="checkbox"
         />
       </div>
@@ -2000,6 +2016,7 @@ exports[`Switch label attributes 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -2015,6 +2032,7 @@ exports[`Switch label attributes 1`] = `
         <input
           class="emotion-8"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
@@ -2239,6 +2257,7 @@ exports[`Switch label position start 1`] = `
         class="emotion-4"
       >
         <div
+          aria-hidden="true"
           class="emotion-5"
         >
           <div
@@ -2254,6 +2273,7 @@ exports[`Switch label position start 1`] = `
         <input
           class="emotion-9"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
@@ -2440,7 +2460,20 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
   cursor: inherit;
 }
 
-<div
+.emotion-9 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-9:disabled {
+  color: #C0C0C0;
+}
+
+<label
     class="emotion-0"
   >
     <div
@@ -2455,6 +2488,7 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -2470,11 +2504,17 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
         <input
           class="emotion-8"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
     </div>
-  </div>
+    <span
+      class="emotion-9"
+    >
+      label
+    </span>
+  </label>
 </DocumentFragment>
 `;
 
@@ -2646,7 +2686,20 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
   cursor: inherit;
 }
 
-<div
+.emotion-9 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-9:disabled {
+  color: #C0C0C0;
+}
+
+<label
     class="emotion-0"
   >
     <div
@@ -2661,6 +2714,7 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -2676,11 +2730,17 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
         <input
           class="emotion-8"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
     </div>
-  </div>
+    <span
+      class="emotion-9"
+    >
+      label
+    </span>
+  </label>
 </DocumentFragment>
 `;
 
@@ -2850,7 +2910,20 @@ exports[`Switch render with size: large & checked 1`] = `
   cursor: inherit;
 }
 
-<div
+.emotion-9 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-9:disabled {
+  color: #C0C0C0;
+}
+
+<label
     class="emotion-0"
   >
     <div
@@ -2865,6 +2938,7 @@ exports[`Switch render with size: large & checked 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -2881,11 +2955,17 @@ exports[`Switch render with size: large & checked 1`] = `
           checked=""
           class="emotion-8"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
     </div>
-  </div>
+    <span
+      class="emotion-9"
+    >
+      label
+    </span>
+  </label>
 </DocumentFragment>
 `;
 
@@ -3055,7 +3135,16 @@ exports[`Switch render with size: large & disabled 1`] = `
   cursor: inherit;
 }
 
-<div
+.emotion-9 {
+  color: #C0C0C0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+<label
     class="emotion-0"
   >
     <div
@@ -3070,6 +3159,7 @@ exports[`Switch render with size: large & disabled 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -3086,15 +3176,21 @@ exports[`Switch render with size: large & disabled 1`] = `
           class="emotion-8"
           data-testid="checkbox-input"
           disabled=""
+          role="switch"
           type="checkbox"
         />
       </div>
     </div>
-  </div>
+    <span
+      class="emotion-9"
+    >
+      label
+    </span>
+  </label>
 </DocumentFragment>
 `;
 
-exports[`Switch render with size: large & label 1`] = `
+exports[`Switch render with size: large 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -3300,6 +3396,7 @@ exports[`Switch render with size: large & label 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -3315,6 +3412,7 @@ exports[`Switch render with size: large & label 1`] = `
         <input
           class="emotion-8"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
@@ -3322,225 +3420,9 @@ exports[`Switch render with size: large & label 1`] = `
     <span
       class="emotion-9"
     >
-      large
+      label
     </span>
   </label>
-</DocumentFragment>
-`;
-
-exports[`Switch render with size: large 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.emotion-1 {
-  position: relative;
-  display: inline-block;
-  -webkit-align-self: start;
-  -ms-flex-item-align: start;
-  align-self: start;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  block-size: 40px;
-  inline-size: 76px;
-  margin-right: 16px;
-}
-
-.emotion-1 * {
-  box-sizing: border-box;
-}
-
-.emotion-2 {
-  position: absolute;
-  top: 50%;
-  left: calc(32px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
-  border-radius: 50%;
-  width: 64px;
-  height: 64px;
-  -webkit-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
-  -moz-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
-  -ms-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
-  transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
-}
-
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
-}
-
-.emotion-3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #CCCCCC;
-  border-radius: 20rem;
-}
-
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-3:checked:not(:disabled) {
-  background-color: #3358CC;
-}
-
-.emotion-3:disabled {
-  background-color: #F4F4F4;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
-}
-
-.emotion-4 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-  margin: 4px;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
-}
-
-.emotion-5 svg {
-  height: 100%;
-  width: 100%;
-  max-width: 32px;
-  max-height: 40px;
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
-}
-
-.emotion-6 svg {
-  height: 100%;
-  width: 100%;
-  max-width: 32px;
-  max-height: 40px;
-}
-
-.emotion-7 {
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  left: 0;
-  padding: 4px;
-  position: absolute;
-  aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  display: grid;
-  place-items: center;
-}
-
-.emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-8 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  opacity: 0;
-  cursor: inherit;
-}
-
-<div
-    class="emotion-0"
-  >
-    <div
-      class="emotion-1"
-      role="presentation"
-    >
-      <div
-        class="emotion-2"
-        data-testid="checkbox-feedback"
-      />
-      <div
-        class="emotion-3"
-      >
-        <div
-          class="emotion-4"
-        >
-          <div
-            class="emotion-5"
-          />
-          <div
-            class="emotion-6"
-          />
-          <div
-            class="emotion-7"
-          />
-        </div>
-        <input
-          class="emotion-8"
-          data-testid="checkbox-input"
-          type="checkbox"
-        />
-      </div>
-    </div>
-  </div>
 </DocumentFragment>
 `;
 
@@ -3710,7 +3592,20 @@ exports[`Switch render with size: medium & checked 1`] = `
   cursor: inherit;
 }
 
-<div
+.emotion-9 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-9:disabled {
+  color: #C0C0C0;
+}
+
+<label
     class="emotion-0"
   >
     <div
@@ -3725,6 +3620,7 @@ exports[`Switch render with size: medium & checked 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -3741,11 +3637,17 @@ exports[`Switch render with size: medium & checked 1`] = `
           checked=""
           class="emotion-8"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
     </div>
-  </div>
+    <span
+      class="emotion-9"
+    >
+      label
+    </span>
+  </label>
 </DocumentFragment>
 `;
 
@@ -3915,234 +3817,13 @@ exports[`Switch render with size: medium & disabled 1`] = `
   cursor: inherit;
 }
 
-<div
-    class="emotion-0"
-  >
-    <div
-      class="emotion-1"
-      role="presentation"
-    >
-      <div
-        class="emotion-2"
-        data-testid="checkbox-feedback"
-      />
-      <div
-        class="emotion-3"
-      >
-        <div
-          class="emotion-4"
-        >
-          <div
-            class="emotion-5"
-          />
-          <div
-            class="emotion-6"
-          />
-          <div
-            class="emotion-7"
-          />
-        </div>
-        <input
-          class="emotion-8"
-          data-testid="checkbox-input"
-          disabled=""
-          type="checkbox"
-        />
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Switch render with size: medium & label 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.emotion-1 {
-  position: relative;
-  display: inline-block;
-  -webkit-align-self: start;
-  -ms-flex-item-align: start;
-  align-self: start;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  block-size: 32px;
-  inline-size: 60px;
-  margin-right: 12px;
-}
-
-.emotion-1 * {
-  box-sizing: border-box;
-}
-
-.emotion-2 {
-  position: absolute;
-  top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-}
-
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
-}
-
-.emotion-3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #CCCCCC;
-  border-radius: 20rem;
-}
-
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-3:checked:not(:disabled) {
-  background-color: #3358CC;
-}
-
-.emotion-3:disabled {
-  background-color: #F4F4F4;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
-}
-
-.emotion-4 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-  margin: 4px;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
-}
-
-.emotion-5 svg {
-  height: 100%;
-  width: 100%;
-  max-width: 24px;
-  max-height: 32px;
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
-}
-
-.emotion-6 svg {
-  height: 100%;
-  width: 100%;
-  max-width: 24px;
-  max-height: 32px;
-}
-
-.emotion-7 {
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  left: 0;
-  padding: 4px;
-  position: absolute;
-  aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  display: grid;
-  place-items: center;
-}
-
-.emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-8 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  opacity: 0;
-  cursor: inherit;
-}
-
 .emotion-9 {
-  color: #2E2E2E;
+  color: #C0C0C0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-}
-
-.emotion-9:disabled {
-  color: #C0C0C0;
 }
 
 <label
@@ -4160,6 +3841,7 @@ exports[`Switch render with size: medium & label 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -4175,6 +3857,8 @@ exports[`Switch render with size: medium & label 1`] = `
         <input
           class="emotion-8"
           data-testid="checkbox-input"
+          disabled=""
+          role="switch"
           type="checkbox"
         />
       </div>
@@ -4182,7 +3866,7 @@ exports[`Switch render with size: medium & label 1`] = `
     <span
       class="emotion-9"
     >
-      medium
+      label
     </span>
   </label>
 </DocumentFragment>
@@ -4366,7 +4050,20 @@ exports[`Switch render with size: medium 1`] = `
   cursor: inherit;
 }
 
-<div
+.emotion-9 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-9:disabled {
+  color: #C0C0C0;
+}
+
+<label
     class="emotion-0"
   >
     <div
@@ -4381,6 +4078,7 @@ exports[`Switch render with size: medium 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -4396,11 +4094,17 @@ exports[`Switch render with size: medium 1`] = `
         <input
           class="emotion-8"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
     </div>
-  </div>
+    <span
+      class="emotion-9"
+    >
+      label
+    </span>
+  </label>
 </DocumentFragment>
 `;
 
@@ -4570,7 +4274,20 @@ exports[`Switch render with size: small & checked 1`] = `
   cursor: inherit;
 }
 
-<div
+.emotion-9 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-9:disabled {
+  color: #C0C0C0;
+}
+
+<label
     class="emotion-0"
   >
     <div
@@ -4585,6 +4302,7 @@ exports[`Switch render with size: small & checked 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -4601,11 +4319,17 @@ exports[`Switch render with size: small & checked 1`] = `
           checked=""
           class="emotion-8"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
     </div>
-  </div>
+    <span
+      class="emotion-9"
+    >
+      label
+    </span>
+  </label>
 </DocumentFragment>
 `;
 
@@ -4775,7 +4499,16 @@ exports[`Switch render with size: small & disabled 1`] = `
   cursor: inherit;
 }
 
-<div
+.emotion-9 {
+  color: #C0C0C0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+<label
     class="emotion-0"
   >
     <div
@@ -4790,6 +4523,7 @@ exports[`Switch render with size: small & disabled 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -4806,15 +4540,21 @@ exports[`Switch render with size: small & disabled 1`] = `
           class="emotion-8"
           data-testid="checkbox-input"
           disabled=""
+          role="switch"
           type="checkbox"
         />
       </div>
     </div>
-  </div>
+    <span
+      class="emotion-9"
+    >
+      label
+    </span>
+  </label>
 </DocumentFragment>
 `;
 
-exports[`Switch render with size: small & label 1`] = `
+exports[`Switch render with size: small 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -5020,6 +4760,7 @@ exports[`Switch render with size: small & label 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -5035,6 +4776,7 @@ exports[`Switch render with size: small & label 1`] = `
         <input
           class="emotion-8"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
@@ -5042,225 +4784,9 @@ exports[`Switch render with size: small & label 1`] = `
     <span
       class="emotion-9"
     >
-      small
+      label
     </span>
   </label>
-</DocumentFragment>
-`;
-
-exports[`Switch render with size: small 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.emotion-1 {
-  position: relative;
-  display: inline-block;
-  -webkit-align-self: start;
-  -ms-flex-item-align: start;
-  align-self: start;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  block-size: 24px;
-  inline-size: 44px;
-  margin-right: 12px;
-}
-
-.emotion-1 * {
-  box-sizing: border-box;
-}
-
-.emotion-2 {
-  position: absolute;
-  top: 50%;
-  left: calc(16px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
-  -moz-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
-  -ms-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
-  transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
-}
-
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
-}
-
-.emotion-3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #CCCCCC;
-  border-radius: 20rem;
-}
-
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-3:checked:not(:disabled) {
-  background-color: #3358CC;
-}
-
-.emotion-3:disabled {
-  background-color: #F4F4F4;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
-}
-
-.emotion-4 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-  margin: 4px;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
-}
-
-.emotion-5 svg {
-  height: 100%;
-  width: 100%;
-  max-width: 16px;
-  max-height: 24px;
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
-}
-
-.emotion-6 svg {
-  height: 100%;
-  width: 100%;
-  max-width: 16px;
-  max-height: 24px;
-}
-
-.emotion-7 {
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  left: 0;
-  padding: 4px;
-  position: absolute;
-  aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  display: grid;
-  place-items: center;
-}
-
-.emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-8 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  opacity: 0;
-  cursor: inherit;
-}
-
-<div
-    class="emotion-0"
-  >
-    <div
-      class="emotion-1"
-      role="presentation"
-    >
-      <div
-        class="emotion-2"
-        data-testid="checkbox-feedback"
-      />
-      <div
-        class="emotion-3"
-      >
-        <div
-          class="emotion-4"
-        >
-          <div
-            class="emotion-5"
-          />
-          <div
-            class="emotion-6"
-          />
-          <div
-            class="emotion-7"
-          />
-        </div>
-        <input
-          class="emotion-8"
-          data-testid="checkbox-input"
-          type="checkbox"
-        />
-      </div>
-    </div>
-  </div>
 </DocumentFragment>
 `;
 
@@ -5442,7 +4968,20 @@ exports[`Switch render with state: base 1`] = `
   cursor: inherit;
 }
 
-<div
+.emotion-9 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-9:disabled {
+  color: #C0C0C0;
+}
+
+<label
     class="emotion-0"
   >
     <div
@@ -5457,6 +4996,7 @@ exports[`Switch render with state: base 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -5473,11 +5013,17 @@ exports[`Switch render with state: base 1`] = `
           class="emotion-8"
           data-testid="checkbox-input"
           id="base"
+          role="switch"
           type="checkbox"
         />
       </div>
     </div>
-  </div>
+    <span
+      class="emotion-9"
+    >
+      label
+    </span>
+  </label>
 </DocumentFragment>
 `;
 
@@ -5647,7 +5193,20 @@ exports[`Switch render with state: checked 1`] = `
   cursor: inherit;
 }
 
-<div
+.emotion-9 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-9:disabled {
+  color: #C0C0C0;
+}
+
+<label
     class="emotion-0"
   >
     <div
@@ -5662,6 +5221,7 @@ exports[`Switch render with state: checked 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -5679,11 +5239,17 @@ exports[`Switch render with state: checked 1`] = `
           class="emotion-8"
           data-testid="checkbox-input"
           id="checked"
+          role="switch"
           type="checkbox"
         />
       </div>
     </div>
-  </div>
+    <span
+      class="emotion-9"
+    >
+      label
+    </span>
+  </label>
 </DocumentFragment>
 `;
 
@@ -5853,7 +5419,16 @@ exports[`Switch render with state: checked-disabled 1`] = `
   cursor: inherit;
 }
 
-<div
+.emotion-9 {
+  color: #C0C0C0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+<label
     class="emotion-0"
   >
     <div
@@ -5868,6 +5443,7 @@ exports[`Switch render with state: checked-disabled 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -5886,11 +5462,17 @@ exports[`Switch render with state: checked-disabled 1`] = `
           data-testid="checkbox-input"
           disabled=""
           id="checked-disabled"
+          role="switch"
           type="checkbox"
         />
       </div>
     </div>
-  </div>
+    <span
+      class="emotion-9"
+    >
+      label
+    </span>
+  </label>
 </DocumentFragment>
 `;
 
@@ -6060,7 +5642,16 @@ exports[`Switch render with state: disabled 1`] = `
   cursor: inherit;
 }
 
-<div
+.emotion-9 {
+  color: #C0C0C0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+<label
     class="emotion-0"
   >
     <div
@@ -6075,6 +5666,7 @@ exports[`Switch render with state: disabled 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -6092,11 +5684,17 @@ exports[`Switch render with state: disabled 1`] = `
           data-testid="checkbox-input"
           disabled=""
           id="disabled"
+          role="switch"
           type="checkbox"
         />
       </div>
     </div>
-  </div>
+    <span
+      class="emotion-9"
+    >
+      label
+    </span>
+  </label>
 </DocumentFragment>
 `;
 
@@ -6266,7 +5864,20 @@ exports[`Switch with overrides 1`] = `
   cursor: inherit;
 }
 
-<div
+.emotion-15 {
+  color: #535353;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.125;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.emotion-15 svg {
+  fill: #535353;
+}
+
+<label
     class="emotion-0"
   >
     <div
@@ -6281,6 +5892,7 @@ exports[`Switch with overrides 1`] = `
         class="emotion-3"
       >
         <div
+          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -6348,10 +5960,16 @@ exports[`Switch with overrides 1`] = `
           checked=""
           class="emotion-14"
           data-testid="checkbox-input"
+          role="switch"
           type="checkbox"
         />
       </div>
     </div>
-  </div>
+    <span
+      class="emotion-15"
+    >
+      label
+    </span>
+  </label>
 </DocumentFragment>
 `;

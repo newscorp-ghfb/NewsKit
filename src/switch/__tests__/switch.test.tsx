@@ -12,7 +12,7 @@ describe('Switch', () => {
   states.forEach(([id, props]) => {
     test(`render with state: ${id}`, () => {
       const fragment = renderToFragmentWithTheme(() => (
-        <Switch {...props} id={id as string} />
+        <Switch label="label" {...props} id={id as string} />
       ));
       expect(fragment).toMatchSnapshot();
     });
@@ -20,24 +20,20 @@ describe('Switch', () => {
 
   sizes.forEach(size => {
     test(`render with size: ${size}`, () => {
-      const fragment = renderToFragmentWithTheme(() => <Switch size={size} />);
+      const fragment = renderToFragmentWithTheme(() => (
+        <Switch label="label" size={size} />
+      ));
       expect(fragment).toMatchSnapshot();
     });
     test(`render with size: ${size} & checked`, () => {
       const fragment = renderToFragmentWithTheme(() => (
-        <Switch size={size} checked />
-      ));
-      expect(fragment).toMatchSnapshot();
-    });
-    test(`render with size: ${size} & label`, () => {
-      const fragment = renderToFragmentWithTheme(() => (
-        <Switch size={size} label={size} />
+        <Switch label="label" size={size} checked />
       ));
       expect(fragment).toMatchSnapshot();
     });
     test(`render with size: ${size} & disabled`, () => {
       const fragment = renderToFragmentWithTheme(() => (
-        <Switch size={size} state="disabled" />
+        <Switch label="label" size={size} state="disabled" />
       ));
       expect(fragment).toMatchSnapshot();
     });
@@ -62,9 +58,9 @@ describe('Switch', () => {
 
   test('onBlur and onFocus', () => {
     const {getByRole, asFragment} = renderWithTheme(() => (
-      <Switch defaultChecked={false} />
+      <Switch label="label" defaultChecked={false} />
     ));
-    const switchEl = getByRole('checkbox') as HTMLInputElement;
+    const switchEl = getByRole('switch') as HTMLInputElement;
     fireEvent.focus(switchEl);
     expect(asFragment()).toMatchSnapshot('with focus');
 
@@ -75,6 +71,7 @@ describe('Switch', () => {
   test('with overrides', () => {
     const fragment = renderToFragmentWithTheme(() => (
       <Switch
+        label="label"
         checked
         overrides={{
           spaceStack: 'space060',
@@ -108,16 +105,16 @@ describe('Switch', () => {
 
   test('toggle checked', () => {
     const {getByRole} = renderWithTheme(() => (
-      <Switch defaultChecked={false} />
+      <Switch label="label" defaultChecked={false} />
     ));
-    const switchEl = getByRole('checkbox') as HTMLInputElement;
+    const switchEl = getByRole('switch') as HTMLInputElement;
     fireEvent.click(switchEl);
     expect(switchEl?.checked).toBe(true);
   });
 
   test('click on feedback', () => {
     const {container, getByTestId} = renderWithTheme(() => (
-      <Switch defaultChecked={false} />
+      <Switch label="label" defaultChecked={false} />
     ));
     const feedback = getByTestId('checkbox-feedback');
     fireEvent.click(feedback);
