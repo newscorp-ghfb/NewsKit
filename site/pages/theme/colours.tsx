@@ -23,6 +23,7 @@ import {
   ContentPrimary,
   ContentSecondary,
   ContentTertiary,
+  ContentColSpan,
 } from '../../components/content-structure';
 
 const themeColorRows = (
@@ -371,6 +372,7 @@ const Colours = (layoutProps: LayoutProps) => (
           headline="Understanding the swatches"
           description="Utilise the swatches below to determine the accessibility of the
         palette colour in contrast to the background colour of this page"
+          childrenColSpan={ContentColSpan.TEXT}
         >
           {CUSTOM_ICONS.map(({icon, label}) => (
             <UnorderedList
@@ -392,7 +394,7 @@ const Colours = (layoutProps: LayoutProps) => (
           ))}
         </ContentSecondary>
 
-        <ContentSecondary>
+        <ContentSecondary childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage role="region" title="" aria-label="Palettecolours">
             Normal and large size text is defined by the WCAG AA standards as
             the the following: <br />
@@ -425,7 +427,7 @@ const Colours = (layoutProps: LayoutProps) => (
           <Illustration path="theme/colours/overview" />
         </ContentPrimary>
 
-        <ContentSecondary>
+        <ContentSecondary childrenColSpan={ContentColSpan.TEXT}>
           <Link
             overrides={{typographyPreset: 'editorialParagraph030'}}
             href="/components/icons"
@@ -434,9 +436,7 @@ const Colours = (layoutProps: LayoutProps) => (
           </Link>
         </ContentSecondary>
 
-        <ContentSecondary>
-          <TabsWithTable components={coloursTable} showSeparator />
-        </ContentSecondary>
+        <TabsWithTable components={coloursTable} showSeparator />
 
         <ContentSecondary
           description={
