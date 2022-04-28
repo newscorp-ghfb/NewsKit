@@ -172,6 +172,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
               overrides={overrides}
               checked={checked}
               disabled={state === 'disabled'}
+              data-testid={`${type}-input`}
               {...restProps}
               state={state}
               onFocus={composeEventHandlers([onInputFocus, onFocus])}
@@ -179,7 +180,6 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
               onChange={composeEventHandlers([onInputChange, onChange])}
               path={path}
               type={type}
-              data-testid={`${type}-input`}
             />
           </StyledSwitch>
         </StyledSwitchContainer>
