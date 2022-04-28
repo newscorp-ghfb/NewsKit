@@ -192,6 +192,11 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-14:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-14 {
     transition-property: background-color;
@@ -580,6 +585,11 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
 
 .emotion-18:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-18:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1022,6 +1032,11 @@ exports[`Form renders with error and with submit validation and revalidation mod
 
 .emotion-20:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-20:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1574,6 +1589,11 @@ exports[`Form renders with error on blur 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-17:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-17 {
     transition-property: background-color;
@@ -2009,6 +2029,11 @@ exports[`Form renders with error on submit 1`] = `
 
 .emotion-20:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-20:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2559,6 +2584,11 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 
 .emotion-17:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-17:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3166,6 +3196,11 @@ exports[`Form renders with nested inputs 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-14:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-14 {
     transition-property: background-color;
@@ -3531,6 +3566,11 @@ exports[`Form renders with onBlur validation 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-14:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-14 {
     transition-property: background-color;
@@ -3765,7 +3805,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-1:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -4261,6 +4301,11 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-25:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-25 {
     transition-property: background-color,border-color;
@@ -4482,6 +4527,11 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 
 .emotion-33:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+.emotion-33:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4867,7 +4917,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-1:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -5363,6 +5413,11 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-25:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-25 {
     transition-property: background-color,border-color;
@@ -5584,6 +5639,11 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 
 .emotion-33:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+.emotion-33:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -5976,7 +6036,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -6289,7 +6349,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -6820,6 +6880,11 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-3 {
     transition-property: background-color,border-color;
@@ -7226,6 +7291,11 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-3 {
     transition-property: background-color,border-color,fill;
@@ -7419,6 +7489,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  outline: #3768FB auto 2px;
 }
 
 .emotion-1 svg {
@@ -7705,6 +7776,11 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 
 .emotion-19:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-19:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -8026,7 +8102,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -8339,7 +8415,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -8552,6 +8628,11 @@ exports[`FormInput renders with nested inputs 1`] = `
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

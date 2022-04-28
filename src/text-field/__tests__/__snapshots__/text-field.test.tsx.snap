@@ -72,7 +72,7 @@ exports[`TextField renders TextField Correctly 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -454,7 +454,7 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -641,7 +641,7 @@ exports[`TextField renders disabled text field 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -898,7 +898,7 @@ exports[`TextField renders large TextField 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -1023,7 +1023,7 @@ exports[`TextField renders medium TextField 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -1148,7 +1148,7 @@ exports[`TextField renders small TextField 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -1273,7 +1273,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -1529,7 +1529,7 @@ exports[`TextField should render custom placeholder 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 

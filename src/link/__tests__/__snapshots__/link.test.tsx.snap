@@ -69,6 +69,11 @@ exports[`Link does not render the external icon even if the href is external 1`]
   fill: #5E44E4;
 }
 
+.emotion-0:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -178,6 +183,11 @@ exports[`Link does not render the external icon if the href is internal 1`] = `
 
 .emotion-0:visited:hover:not(:disabled) svg {
   fill: #5E44E4;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 .emotion-1 {
@@ -291,6 +301,11 @@ exports[`Link renders as expected in default state 1`] = `
   fill: #5E44E4;
 }
 
+.emotion-0:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -400,6 +415,11 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
 
 .emotion-0:visited:hover:not(:disabled) svg {
   fill: #5E44E4;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 .emotion-1 {
@@ -579,6 +599,11 @@ exports[`Link renders the external icon if the href is external 1`] = `
 
 .emotion-0:visited:hover:not(:disabled) svg {
   fill: #5E44E4;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 .emotion-1 {

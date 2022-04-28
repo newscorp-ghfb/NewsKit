@@ -291,6 +291,11 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
   fill: #5E44E4;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -943,6 +948,11 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   fill: #5E44E4;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1046,6 +1056,11 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 
 .emotion-12:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1345,6 +1360,11 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   fill: #5E44E4;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1448,6 +1468,11 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 .emotion-12:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1742,6 +1767,11 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   fill: #5E44E4;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1845,6 +1875,11 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 
 .emotion-12:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2139,6 +2174,11 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   fill: #5E44E4;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2242,6 +2282,11 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 
 .emotion-12:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2590,6 +2635,11 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   fill: #5E44E4;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2693,6 +2743,11 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 
 .emotion-12:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2996,6 +3051,11 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
   fill: #5E44E4;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3099,6 +3159,11 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 
 .emotion-12:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3402,6 +3467,11 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   fill: #5E44E4;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3505,6 +3575,11 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 
 .emotion-12:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

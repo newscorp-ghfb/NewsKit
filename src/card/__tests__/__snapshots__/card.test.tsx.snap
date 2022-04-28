@@ -403,6 +403,11 @@ exports[`Card renders actions section with given component 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-11:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-11 {
     transition-property: background-color;
@@ -804,6 +809,11 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-11:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-11 {
     transition-property: background-color;
@@ -1203,6 +1213,11 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 
 .emotion-11:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-11:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2795,6 +2810,11 @@ exports[`Card renders with card items 1`] = `
 
 .emotion-15:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-15:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4786,6 +4806,11 @@ exports[`Card with href renders correctly with actions 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-12:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-12 {
     transition-property: background-color;
@@ -6625,6 +6650,11 @@ exports[`CardInset renders with card items 1`] = `
 
 .emotion-15:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-15:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

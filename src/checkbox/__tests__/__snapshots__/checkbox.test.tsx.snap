@@ -234,6 +234,11 @@ exports[`Checkbox active state: active off 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-3 {
     transition-property: background-color,border-color;
@@ -518,6 +523,11 @@ exports[`Checkbox active state: active on 1`] = `
 
 .emotion-3:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -973,6 +983,11 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
 
 .emotion-3:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1768,6 +1783,11 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   fill: #C0C0C0;
 }
 
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-3 {
     transition-property: background-color,border-color;
@@ -2392,6 +2412,11 @@ exports[`Checkbox label attributes 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-3 {
     transition-property: background-color,border-color;
@@ -2711,6 +2736,11 @@ exports[`Checkbox label position start 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-4 {
     transition-property: background-color,border-color;
@@ -3002,6 +3032,11 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-3 {
     transition-property: background-color,border-color;
@@ -3169,8 +3204,7 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
-  outline: 5px auto Highlight;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: #3768FB auto 2px;
   outline-offset: 3px;
   z-index: 2;
 }
@@ -3719,6 +3753,11 @@ exports[`Checkbox render with size: large & label 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-3 {
     transition-property: background-color,border-color;
@@ -4021,6 +4060,11 @@ exports[`Checkbox render with size: large 1`] = `
 
 .emotion-3:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4558,6 +4602,11 @@ exports[`Checkbox render with size: medium & label 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-3 {
     transition-property: background-color,border-color;
@@ -4860,6 +4909,11 @@ exports[`Checkbox render with size: medium 1`] = `
 
 .emotion-3:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -5397,6 +5451,11 @@ exports[`Checkbox render with size: small & label 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-3 {
     transition-property: background-color,border-color;
@@ -5701,6 +5760,11 @@ exports[`Checkbox render with size: small 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-3 {
     transition-property: background-color,border-color;
@@ -5985,6 +6049,11 @@ exports[`Checkbox render with state: base 1`] = `
 
 .emotion-3:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

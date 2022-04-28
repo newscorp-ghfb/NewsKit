@@ -140,6 +140,7 @@ Object {
     "neutral080": "#535353",
     "neutral090": "#2E2E2E",
     "neutral100": "#0A0A0A",
+    "outlinePrimary010": "#3768FB",
     "purple010": "#E5E0FF",
     "purple020": "#BBAEFF",
     "purple030": "#9B87FC",
@@ -278,6 +279,16 @@ Object {
     "motionTimingLinear": "linear",
   },
   "name": "default-theme",
+  "outline": Object {
+    "outlineDefault": "{{colors.outlinePrimary010}} {{outline.outlineStyleAuto}} {{borders.borderWidth020}}",
+    "outlineOffsetDefault": "{{outline.outlineSizing030}}",
+    "outlineSizing000": "0",
+    "outlineSizing010": "1px",
+    "outlineSizing020": "2px",
+    "outlineSizing030": "3px",
+    "outlineStyleAuto": "auto",
+    "outlineStyleSolid": "solid",
+  },
   "overlays": Object {
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
@@ -421,7 +432,7 @@ Object {
       },
       "focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{colors.interactiveInput040}}",
+        "outline": "{{outline.outlineDefault}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",

@@ -819,6 +819,11 @@ exports[`Banner renders with content as string and link 1`] = `
   fill: #5E44E4;
 }
 
+.emotion-9:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 .emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1177,6 +1182,11 @@ exports[`Banner renders with content as string and link 1`] = `
 
 .emotion-9:visited:hover:not(:disabled) svg {
   fill: #5E44E4;
+}
+
+.emotion-9:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 .emotion-10 {
@@ -2724,6 +2734,11 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   fill: #C0C0C0;
 }
 
+.emotion-10:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-10 {
     transition-property: background-color;
@@ -3160,6 +3175,11 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 
 .emotion-10:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-10:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3601,6 +3621,11 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-10:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-10 {
     transition-property: background-color;
@@ -4018,6 +4043,11 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
 
 .emotion-10:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-10:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -5020,6 +5050,11 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   fill: #C0C0C0;
 }
 
+.emotion-10:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-10 {
     transition-property: background-color;
@@ -5714,6 +5749,11 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 
 .emotion-15:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-15:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -6996,6 +7036,11 @@ exports[`renders grid and cell overrides on banner 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-11:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-11 {
     transition-property: background-color;
@@ -7472,6 +7517,11 @@ exports[`renders grid and cell overrides on banner 1`] = `
 
 .emotion-11:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-11:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

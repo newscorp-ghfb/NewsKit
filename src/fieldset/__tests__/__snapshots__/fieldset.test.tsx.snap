@@ -72,7 +72,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
 }
 
 .emotion-2:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -384,6 +384,11 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color,border-color;
@@ -551,7 +556,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
 }
 
 .emotion-2:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -863,6 +868,11 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color,border-color;
@@ -1030,7 +1040,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 }
 
 .emotion-2:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline: #3768FB auto 2px;
   background-color: #FAFAFA;
 }
 
@@ -1340,6 +1350,11 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 
 .emotion-7:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+.emotion-7:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

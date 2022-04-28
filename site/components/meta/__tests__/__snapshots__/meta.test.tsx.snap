@@ -363,6 +363,11 @@ exports[`Meta renders with mandatory props 1`] = `
   fill: #5E44E4;
 }
 
+.emotion-23:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
+}
+
 .emotion-24 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1613,6 +1618,11 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-23:visited:hover:not(:disabled) svg {
   fill: #5E44E4;
+}
+
+.emotion-23:focus-visible:not(:disabled) {
+  outline: #3768FB auto 2px;
+  outline-offset: 3px;
 }
 
 .emotion-24 {
