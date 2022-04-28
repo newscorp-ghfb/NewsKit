@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "5.4.1",
+  "version": "5.4.2",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
@@ -209,7 +209,7 @@
     "react-focus-lock": "^2.5.0",
     "react-hook-form": "^7.5.3",
     "react-hot-toast": "^1.0.2",
-    "react-range": "^1.5.3",
+    "react-range": "^1.8.12",
     "react-transition-group": "^4.4.1",
     "react-virtual": "^2.10.4"
   },

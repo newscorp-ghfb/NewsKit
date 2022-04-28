@@ -34,6 +34,14 @@ transitionPresets.borderColorChange = {
   },
 };
 
+transitionPresets.opacityChange = {
+  base: {
+    transitionProperty: 'opacity',
+    transitionDuration: '{{motions.motionDuration020}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+  },
+};
+
 transitionPresets.fade = {
   base: {
     opacity: '0',
