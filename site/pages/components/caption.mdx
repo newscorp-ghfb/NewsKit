@@ -3,6 +3,7 @@ import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
 import {Caption, CaptionInset} from 'newskit';
 
@@ -41,7 +42,7 @@ The are two variants of the caption component - a caption without inset `<Captio
         If provided, this overrides the typography preset of the component..
       </Prop>
       <Prop name="spaceStack" type="MQ<string>">
-        If provided, this overrides the spacing between the caption and the
+        This property is deprecated. Use marginBlockEnd instead. If provided, this overrides the spacing between the caption and the
         credit.
       </Prop>
       <Prop name="credit" type="object" >
@@ -54,8 +55,9 @@ The are two variants of the caption component - a caption without inset `<Captio
           </Prop>
       </Prop>
       <Prop name="spaceInset" type="MQ<string>">
-       If provided, this overrides the padding of the Caption. This override should only be used with CaptionInset. Otherwise, spaceInset040 or spaceInset050  is used depending on the `size` prop.
+       This property is deprecated. Use paddingInline and paddingBlock instead. If provided, this overrides the padding of the Caption. This override should only be used with CaptionInset. Otherwise, spaceInset040 or spaceInset050  is used depending on the `size` prop.
       </Prop>
+      <CommonLogicalPropsMDX/>
 
   </Prop>
 </LegacyBlock>

@@ -13,6 +13,7 @@ import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {LogicalProps} from '../utils/logical-properties';
 
 export interface ShareBarProps extends React.HTMLAttributes<HTMLElement> {
   label?: string;
@@ -22,13 +23,13 @@ export interface ShareBarProps extends React.HTMLAttributes<HTMLElement> {
     label?: {
       typographyPreset?: MQ<string>;
       stylePreset?: MQ<string>;
-      spaceInline?: MQ<string>; // Note: LogicalProps can not replace spaceInline! spaceInline = Stack's gap
-      spaceInset?: MQ<string>;
+      spaceInline?: MQ<string>; // Note: LogicalProps can not replace spaceInline!
+      spaceInset?: MQ<string>; // Note: LogicalProps can not replace spaceInset!
     };
     items?: {
       spaceInline?: MQ<string>; // Note: LogicalProps can not replace spaceInline! spaceInline = Stack's gap
     };
-  };
+  } & LogicalProps;
 }
 
 interface StyledShareBarContainerProps extends StackProps {

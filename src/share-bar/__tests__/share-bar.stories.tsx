@@ -6,6 +6,7 @@ import {IconFilledFacebook, IconFilledTwitter} from '../../icons';
 import {Button, ButtonSize} from '../../button';
 import {IconButton} from '../../icon-button';
 import {createTheme, ThemeProvider} from '../../theme';
+import {styled} from '../../utils';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-share-bar-theme',
@@ -33,6 +34,10 @@ const myCustomTheme = createTheme({
     },
   },
 });
+
+const Border = styled.div`
+  border: solid 1px red;
+`;
 
 const ShareOnTwitterBtn = () => (
   <IconButton
@@ -135,6 +140,24 @@ export const StoryHorizontal = () => (
         <Button>More options</Button>
       </ShareBar>
     </ThemeProvider>
+    <StorybookSubHeading>
+      Share bar with horizontal items and logical props overrides
+    </StorybookSubHeading>
+    <Border>
+      <ShareBar
+        label="Share"
+        role="region"
+        aria-label="share bar with horizontal items and logical props overrides"
+        overrides={{
+          marginBlock: 'space030',
+          paddingBlock: 'space030',
+        }}
+      >
+        <ShareOnTwitterBtn />
+        <ShareOnFacebookBtn />
+        <Button>More options</Button>
+      </ShareBar>
+    </Border>
   </>
 );
 StoryHorizontal.storyName = 'horizontal';
