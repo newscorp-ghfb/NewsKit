@@ -29,8 +29,8 @@ interface SidebarWrapperProps {
 }
 
 const SidebarWrapper = styled.div<SidebarWrapperProps>`
-  width: 100%;
-  ${getSpacingCssFromTheme('paddingRight', 'space050')};
+  width: 100vw;
+  ${getSpacingCssFromTheme('paddingRight', 'space045')};
   position: fixed;
   overflow: auto;
   bottom: 0;
@@ -39,10 +39,11 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   z-index: 3;
   transform: ${({open}) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   transition: transform 300ms;
-  ${getSpacingCssFromTheme('paddingTop', 'space020')};
+  ${getSpacingCssFromTheme('paddingTop', 'space040')};
   ${getSpacingCssFromTheme('marginTop', 'space080')};
   ${getStylePresetFromTheme('sidebar')};
-  ${getColorCssFromTheme('background', 'interface030')};
+  // check with DJ as this is wrong on dark
+  // ${getColorCssFromTheme('background', 'interface030')};
   ${getMediaQueryFromTheme('lg')} {
     width: 276px;
     display: ${({hideSidebar}) => hideSidebar && 'none'};
