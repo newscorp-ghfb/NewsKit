@@ -100,12 +100,6 @@ const MenuNavDesktop = () => {
                     }}
                   >
                     {title}
-                    <Block
-                      spaceStack={
-                        // The row spacing between multiple flags in the cell
-                        title === 'Hooks' ? 'space045' : undefined
-                      }
-                    />
                   </Label>
                 </MenuItemStyled>
               </>
@@ -114,7 +108,7 @@ const MenuNavDesktop = () => {
                 <DesktopNavigationDivider>
                   <MenuDivider />
                 </DesktopNavigationDivider>
-                {/* <SideBarNavigationWrapper id="wrapper test"> */}
+
                 <MenuGroup
                   title={title}
                   overrides={{

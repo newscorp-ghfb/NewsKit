@@ -24,8 +24,11 @@ const StyledMenuCollapsibleItem = styled.div<
   ${getSpacingCssFromTheme('marginTop', 'space030')};
   ${getSpacingCssFromTheme('marginBottom', 'space000')};
 
-  & h3 {
-    ${getSpacingCssFromTheme('marginBottom', 'space030')};
+  &.collapsed > label {
+    ${getSpacingCssFromTheme('marginBottom', 'space050')};
+  }
+  &.expanded > label {
+    ${getSpacingCssFromTheme('marginBottom', 'space040')};
   }
   &.collapsed > li {
     overflow: hidden;

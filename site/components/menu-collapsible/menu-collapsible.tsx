@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {
-  Block,
   ButtonSize,
   Divider,
   Flow,
@@ -8,6 +7,7 @@ import {
   H3,
   IconButton,
   IconOutlinedLaunch,
+  Label,
   Menu,
   MenuGroup,
   MenuItem,
@@ -68,6 +68,7 @@ export const MenuNavCollapsible = ({
     const index = menu.findIndex(obj => path.includes(obj.id)) || 0;
     setOpenPanelIds([index]);
   }, [menu, path]);
+
   const createMenuItem = (list: SubNavItemProps[]) => (
     <>
       {list &&
@@ -78,19 +79,22 @@ export const MenuNavCollapsible = ({
                 <MenuItem
                   href={id}
                   overrides={{
-                    typographyPreset: 'utilityButton020',
-                    spaceInset: 'space030',
-                    stylePreset: 'sidebarNavItem',
                     minHeight: '40px',
-                    // if i remove min-height then it is 48px
-                    // added here as it adds height to unselected
-                    // unselected and selected are now the same height
                   }}
-                  selected={path.includes(id)}
                   size="small"
                   className={path.includes(id) ? 'selected' : undefined}
                 >
-                  {title}
+                  <Label
+                    overrides={{
+                      stylePreset: 'interactivePrimary030',
+                      typographyPreset: 'utilityButton020',
+                      spaceStack: 'space000',
+
+                      marginInline: 'space045',
+                    }}
+                  >
+                    {title}
+                  </Label>
                 </MenuItem>
               </>
             ) : (
@@ -99,13 +103,11 @@ export const MenuNavCollapsible = ({
                   title={title}
                   overrides={{
                     title: {
-                      typographyPreset: {
-                        xs: 'utilityHeading010',
-                        lg: 'utilityHeading030',
-                      },
-                      stylePreset: 'inkContrast',
-                      spaceInset: 'space030',
-                      spaceInline: 'space040',
+                      typographyPreset: 'utilityHeading010',
+                      stylePreset: ' menuItemVertical',
+                      spaceInline: 'space030',
+                      // to make spaceinset work you need to check marginInline on the titles
+                      spaceInset: 'space060',
                     },
                   }}
                 >
@@ -130,10 +132,13 @@ export const MenuNavCollapsible = ({
           className={openPanelIds.includes(index) ? 'expanded' : 'collapsed'}
           key={title}
         >
-          <H3
-            role="menuitem"
+          <Label
+            // role="menuitem"
             aria-expanded={openPanelIds.includes(index) ? 'true' : 'false'}
-            overrides={{typographyPreset: 'utilityHeading020'}}
+            overrides={{
+              // spaceInline: cardLabel,
+              typographyPreset: 'utilityHeading020',
+            }}
             onClick={() =>
               openPanelIds.includes(index)
                 ? setOpenPanelIds([])
@@ -147,16 +152,24 @@ export const MenuNavCollapsible = ({
               <span aria-label={title}>{title}</span>
 
               {openPanelIds.includes(index) ? (
-                <IconExpandLess aria-haspopup="true" aria-expanded="true" />
+                <IconExpandLess
+                  aria-haspopup="true"
+                  aria-expanded="true"
+                  overrides={{size: 'iconSize020', stylePreset: 'inkContrast'}}
+                />
               ) : (
-                <IconExpandMore aria-haspopup="false" aria-expanded="false" />
+                <IconExpandMore
+                  aria-haspopup="false"
+                  aria-expanded="false"
+                  overrides={{size: 'iconSize020', stylePreset: 'inkContrast'}}
+                />
               )}
             </Stack>
-          </H3>
+          </Label>
+
           {subNav && createMenuItem(subNav)}
         </MenuCollapsible>
       ))}
-      <Block spaceStack="space050" />
 
       <MobileNavigationDivider>
         <Divider />

@@ -9,6 +9,7 @@ import {
   getStylePresetFromTheme,
   Block,
   Visible,
+  getColorCssFromTheme,
 } from 'newskit';
 import {Overlay} from '../overlay';
 import {SidebarNav} from './sidebar-navigation';
@@ -41,7 +42,7 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   ${getSpacingCssFromTheme('paddingTop', 'space020')};
   ${getSpacingCssFromTheme('marginTop', 'space080')};
   ${getStylePresetFromTheme('sidebar')};
-
+  ${getColorCssFromTheme('background', 'interface030')};
   ${getMediaQueryFromTheme('lg')} {
     width: 276px;
     display: ${({hideSidebar}) => hideSidebar && 'none'};
