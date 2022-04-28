@@ -5,8 +5,8 @@ import {
   renderWithTheme,
 } from '../../test/test-utils';
 import {Switch} from '..';
-import {sizes, states, ThumbIcon} from './helpers';
-import {IconFilledCheck, IconFilledClose} from '../../icons';
+import {sizes, states} from './helpers';
+import {IconFilledCheck, IconFilledClose, IconFilledError} from '../../icons';
 
 describe('Switch', () => {
   states.forEach(([id, props]) => {
@@ -94,7 +94,7 @@ describe('Switch', () => {
             typographyPreset: 'utilityHeading010',
             stylePreset: 'inkSubtle',
           },
-          icon: ThumbIcon,
+          icon: IconFilledError,
           onIcon: IconFilledCheck,
           offIcon: IconFilledClose,
         }}

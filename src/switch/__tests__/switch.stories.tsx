@@ -5,15 +5,15 @@ import {
 } from '../../test/storybook-comps';
 import {Switch} from '..';
 import {styled} from '../../utils';
-import {Cell, Fieldset, Grid, IconFilledCheck, IconFilledClose} from '../..';
 import {
-  icons,
-  labels,
-  sizeOverrides,
-  sizes,
-  states,
-  ThumbIcon,
-} from './helpers';
+  Cell,
+  Fieldset,
+  Grid,
+  IconFilledCheck,
+  IconFilledClose,
+  IconFilledError,
+} from '../..';
+import {icons, labels, sizeOverrides, sizes, states} from './helpers';
 
 export default {
   title: 'NewsKit Light/switch',
@@ -101,7 +101,7 @@ export const StorySwitchOverrides = () => (
               label={id}
               overrides={{
                 ...o,
-                icon: ThumbIcon,
+                icon: IconFilledError,
                 onIcon: IconFilledCheck,
                 offIcon: IconFilledClose,
               }}
@@ -153,7 +153,7 @@ export const StorySwitchFieldset = () => (
               label="Reduced motion"
               defaultChecked
               overrides={{
-                icon: ThumbIcon,
+                icon: IconFilledError,
                 onIcon: IconFilledCheck,
                 offIcon: IconFilledClose,
               }}

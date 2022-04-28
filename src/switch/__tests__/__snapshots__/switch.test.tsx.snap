@@ -5943,7 +5943,9 @@ exports[`Switch with overrides 1`] = `
               class="emotion-6 emotion-7"
               fill="currentColor"
               focusable="false"
+              height="medium"
               viewBox="0 0 24 24"
+              width="medium"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -5951,7 +5953,7 @@ exports[`Switch with overrides 1`] = `
                 fill="none"
               />
               <path
-                d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
               />
             </svg>
           </div>

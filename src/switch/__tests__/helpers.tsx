@@ -1,10 +1,6 @@
-import React from 'react';
 import {SwitchOverrides, SwitchProps, SwitchState} from '../types';
 import {BaseSwitchSize} from '../../base-switch/types';
-import {IconFilledCheck, IconFilledClose} from '../..';
-
-export const ThumbIcon = ({checked}: {checked?: boolean}) =>
-  checked ? <IconFilledCheck /> : <IconFilledClose />;
+import {IconFilledCheck, IconFilledClose, IconFilledError} from '../..';
 
 export const states: [string, {checked?: boolean; state?: SwitchState}][] = [
   ['base', {}],
@@ -19,13 +15,13 @@ export const icons: [
   string,
   Pick<SwitchOverrides, 'icon' | 'offIcon' | 'onIcon'>,
 ][] = [
-  ['thumb-icon', {icon: ThumbIcon}],
+  ['thumb-icon', {icon: IconFilledError}],
   ['on-icon', {onIcon: IconFilledCheck}],
   ['off-icon', {offIcon: IconFilledClose}],
   ['on-and-off-icon', {onIcon: IconFilledCheck, offIcon: IconFilledClose}],
   [
     'thumb-and-on-and-off-icon',
-    {icon: ThumbIcon, onIcon: IconFilledCheck, offIcon: IconFilledClose},
+    {icon: IconFilledError, onIcon: IconFilledCheck, offIcon: IconFilledClose},
   ],
 ];
 
