@@ -86,7 +86,7 @@ export const StyledSwitch = styled.div<
       isValid: state === 'valid',
       isFocused,
       isHovered,
-      isFocusedVisible,
+      isFocusedVisible, // Build of Evgeni's PPDSC-2054 so outline comes from styled preset
     })};
 
   ${({feedbackIsVisible}) =>

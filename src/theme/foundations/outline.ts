@@ -1,3 +1,7 @@
+/*
+ * Created outline foundation tokens to be used in style presets.
+ * Have a default outline and outline offset that can be used across components
+ */
 export const outline = {
   outlineStyleAuto: 'auto',
   outlineStyleSolid: 'solid',
