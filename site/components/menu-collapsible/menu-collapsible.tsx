@@ -15,7 +15,7 @@ import {
   styled,
 } from 'newskit';
 import {IconExpandLess, IconExpandMore} from '../icons';
-import {MenuCollapsible} from './styled';
+import {Indicator, MenuCollapsible} from './styled';
 
 const MobileNavigationDivider = styled.div`
   width: 100vw;
@@ -25,7 +25,9 @@ const MobileNavigationDivider = styled.div`
   ${getSpacingCssFromTheme('marginTop', 'space050')};
   ${getSpacingCssFromTheme('marginBottom', 'space050')};
 `;
-
+const MenuItemStyled = styled(MenuItem)`
+  width: 100vw;
+`;
 export const GitHubLaunch: React.FC<{href?: string}> = ({href}) =>
   href ? (
     <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
@@ -76,13 +78,16 @@ export const MenuNavCollapsible = ({
           <React.Fragment key={id}>
             {page ? (
               <>
-                <MenuItem
+                <Indicator
+                  id="indicator"
+                  className={path.includes(id) ? 'selected' : undefined}
+                />
+                <MenuItemStyled
                   href={id}
                   overrides={{
                     minHeight: '40px',
                   }}
                   size="small"
-                  className={path.includes(id) ? 'selected' : undefined}
                 >
                   <Label
                     overrides={{
@@ -90,12 +95,12 @@ export const MenuNavCollapsible = ({
                       typographyPreset: 'utilityButton020',
                       spaceStack: 'space000',
 
-                      marginInline: 'space045',
+                      marginInline: 'space060',
                     }}
                   >
                     {title}
                   </Label>
-                </MenuItem>
+                </MenuItemStyled>
               </>
             ) : (
               <>
@@ -136,7 +141,8 @@ export const MenuNavCollapsible = ({
             // role="menuitem"
             aria-expanded={openPanelIds.includes(index) ? 'true' : 'false'}
             overrides={{
-              // spaceInline: cardLabel,
+              // for About right spacing
+              marginInline: 'space060',
               typographyPreset: 'utilityHeading020',
             }}
             onClick={() =>
@@ -149,7 +155,7 @@ export const MenuNavCollapsible = ({
               flow={Flow.HorizontalCenter}
               stackDistribution="space-between"
             >
-              <span aria-label={title}>{title}</span>
+              {title}
 
               {openPanelIds.includes(index) ? (
                 <IconExpandLess

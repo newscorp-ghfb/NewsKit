@@ -1,8 +1,8 @@
 import {
-  getBorderCssFromTheme,
   getColorFromTheme,
   getSizingFromTheme,
   getSpacingCssFromTheme,
+  getStylePresetFromTheme,
   styled,
 } from 'newskit';
 
@@ -49,16 +49,18 @@ const StyledMenuCollapsibleItem = styled.div<
     ::before {
       content: '';
       position: absolute;
-      left: -${getSizingFromTheme('sizing060')};
       background: ${getColorFromTheme('blue060')};
       height: ${getSizingFromTheme('sizing070')};
-      width: ${getSizingFromTheme('sizing030')};
-      top: ${getSizingFromTheme('sizing010')};
+      width: ${getSizingFromTheme('sizing010')};
 
-      ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
+      ${getStylePresetFromTheme('interactivePrimary030')};
+      border-width: 4px;
+      border-radius: 0 4px 4px 0;
     }
   }
 `;
+
+export const Indicator = styled.div``;
 
 type MenuCollapsibleProps = {
   className: string;
