@@ -168,4 +168,15 @@ describe('Checkbox', () => {
     fireEvent.mouseLeave(feedback);
     expect(asFragment()).toMatchSnapshot('without hover');
   });
+
+  test('override data-testid', () => {
+    const dataTestId = 'override-testid';
+
+    const {getByTestId} = renderWithTheme(() => (
+      <Checkbox data-testid={dataTestId} />
+    ));
+    const checkbox = getByTestId(dataTestId);
+
+    expect(checkbox).toBeInTheDocument();
+  });
 });
