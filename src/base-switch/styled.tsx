@@ -13,7 +13,7 @@ const STACKING_CONTEXT = {
   input: '2',
 };
 
-export const StyledContainer = styled.label<
+export const StyledSwitchAndLabelWrapper = styled.label<
   Pick<BaseSwitchProps, 'state' | 'size' | 'overrides' | 'path'>
 >`
   display: flex;
@@ -85,12 +85,14 @@ export const StyledSwitch = styled.div<
     isFocused: boolean;
     isHovered: boolean;
     feedbackIsVisible: boolean;
+    isFocusedVisible: boolean;
   }
 >`
   ${insetCSS}
   display: flex;
   justify-content: center;
   align-items: center;
+
   ${({size, checked, state, isFocused, isHovered, path}) =>
     getStylePreset(`${path}.${size}.input`, 'input', {
       isChecked: checked,
@@ -100,16 +102,23 @@ export const StyledSwitch = styled.div<
       isFocused,
       isHovered,
     })};
+
+  ${({isFocusedVisible}) =>
+    isFocusedVisible &&
+    ` outline: 5px auto Highlight;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: 3px;
+  `}
   ${({feedbackIsVisible}) =>
     feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`};
 
   ${({size, path}) => getTransitionPreset(`${path}.${size}.input`, 'input')};
 `;
 
-export const StyledFeedback = styled.div<
+export const StyledSwitchFeedback = styled.div<
   Pick<BaseSwitchProps, 'size' | 'overrides' | 'state' | 'path' | 'checked'> & {
-    isFocused: boolean;
     isHovered: boolean;
+    isActive: boolean;
     centreOnThumb?: boolean;
   }
 >`
@@ -143,15 +152,14 @@ export const StyledFeedback = styled.div<
           'spaceInset',
         )(rest)
       : ''}
-  
-  opacity: 0.7;
-  ${({isHovered, isFocused}) =>
-    (isHovered || isFocused) && `z-index: ${STACKING_CONTEXT.feedback}`};
 
-  ${({size, isHovered, isFocused, state, path}) =>
+  ${({isHovered}) => isHovered && `z-index: ${STACKING_CONTEXT.feedback}`};
+
+  ${({size, isHovered, isActive, state, path}) =>
     getStylePreset(`${path}.${size}.feedback`, 'feedback', {
       isHovered,
-      isFocused,
+      isActive,
+      isDisabled: state === 'disabled',
       isInvalid: state === 'invalid',
       isValid: state === 'valid',
       // when is not HOVER we need to remove the hover so it does not apply as class:hover
@@ -168,6 +176,8 @@ export const StyledFeedback = styled.div<
       'feedback',
       'size',
     )};
+  ${({size, path}) =>
+    getTransitionPreset(`${path}.${size}.feedback`, 'feedback')};
 `;
 
 export const StyledInput = styled.input<
