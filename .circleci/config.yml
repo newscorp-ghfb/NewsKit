@@ -860,6 +860,35 @@ jobs:
       - slack/status:
           <<: *slack_status
 
+  test_newskit_in_nextjs_app:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Yarn link built Newskit components
+          command: cd dist && yarn link && cd ..
+      - run:
+          name: Create NextJs App
+          command: | 
+            yarn add create-next-app@latest 
+            npx create-next-app@latest newskit-integration-test
+      - run: 
+          name: Preparing NextJs app and testing NewsKit in it.
+          command: |
+            cp ./scripts/indexjs-template-for-integration-test.txt ./newskit-integration-test/pages/index.js
+            cd newskit-integration-test
+            yarn add newskit && yarn add start-server-and-test
+            yarn link "newskit"
+            yarn build
+            yarn start-test start 3000 'curl http://localhost:3000'
+      - slack/status:
+          <<: *slack_status
+
+            
+  
+
 # ========== FILTERS START    ==========
 
 only_on_trigger_release_tag: &only_on_trigger_release_tag
