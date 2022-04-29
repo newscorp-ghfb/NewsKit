@@ -99,7 +99,7 @@ const MenuNavDesktop = () => {
                           typographyPreset: 'utilityButton020',
                           spaceStack: 'space000',
 
-                          marginInline: 'space045',
+                          marginInline: 'space040',
                         }}
                       >
                         {title}
