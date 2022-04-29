@@ -9,7 +9,6 @@ import {
   getStylePresetFromTheme,
   Block,
   Visible,
-  getColorCssFromTheme,
 } from 'newskit';
 import {Overlay} from '../overlay';
 import {SidebarNav} from './sidebar-navigation';
@@ -30,7 +29,7 @@ interface SidebarWrapperProps {
 
 const SidebarWrapper = styled.div<SidebarWrapperProps>`
   width: 100vw;
-  ${getSpacingCssFromTheme('paddingRight', 'space045')};
+  // i had padding-right here space 045 check with dj if needed
   position: fixed;
   overflow: auto;
   bottom: 0;
@@ -42,8 +41,6 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   ${getSpacingCssFromTheme('paddingTop', 'space040')};
   ${getSpacingCssFromTheme('marginTop', 'space080')};
   ${getStylePresetFromTheme('sidebar')};
-  // check with DJ as this is wrong on dark
-  // ${getColorCssFromTheme('background', 'interface030')};
   ${getMediaQueryFromTheme('lg')} {
     width: 276px;
     display: ${({hideSidebar}) => hideSidebar && 'none'};
@@ -85,10 +82,12 @@ const Sidebar: React.FC<SidebarProps> = ({
 
       <SidebarNav />
       <Visible xs sm md>
-        <Block spaceStack="space050" />
-        <GitHubLaunch href="https://github.com/newscorp-ghfb/newskit" />
-        <Block spaceStack="space040" />
-        <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} textTheme />
+        <Block spaceInset="space060">
+          <Block spaceStack="space050" />
+          <GitHubLaunch href="https://github.com/newscorp-ghfb/newskit" />
+          <Block spaceStack="space040" />
+          <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} textTheme />
+        </Block>
       </Visible>
     </SidebarWrapper>
 
