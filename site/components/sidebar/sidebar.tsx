@@ -41,10 +41,13 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   ${getSpacingCssFromTheme('paddingTop', 'space040')};
   ${getSpacingCssFromTheme('marginTop', 'space080')};
   ${getStylePresetFromTheme('sidebar')};
+
   ${getMediaQueryFromTheme('lg')} {
     width: 276px;
     display: ${({hideSidebar}) => hideSidebar && 'none'};
     ${getSpacingCssFromTheme('marginTop', 'space100')};
+    // on div sidebar i have removed padding check with dj
+    ${getSpacingCssFromTheme('paddingTop', 'space000')};
     transform: translateX(0);
     overflow: hidden;
     &:hover {
