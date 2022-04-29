@@ -7,6 +7,7 @@ import {getToken} from '../utils/get-token';
 import defaults from './defaults';
 import {getSingleStylePreset} from '../utils/style/style-preset';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {EventTrigger, useInstrumentation} from '../instrumentation';
 
 const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
   (
@@ -19,21 +20,32 @@ const ThemelessTextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
       onBlur,
       onFocus,
       onChange,
+      eventContext,
+      eventOriginator = 'text field',
       ...restProps
     },
     inputRef,
   ) => {
+    const {fireEvent} = useInstrumentation();
+
     const theme = useTheme();
     const [isFocused, setIsFocused] = React.useState(false);
 
     const onInputFocus = React.useCallback(
       event => {
         setIsFocused(true);
+        fireEvent({
+          originator: eventOriginator,
+          trigger: EventTrigger.Focus,
+          context: {
+            ...eventContext,
+          },
+        });
         if (onFocus) {
           onFocus(event);
         }
       },
-      [onFocus],
+      [eventContext, eventOriginator, fireEvent, onFocus],
     );
 
     const onInputBlur = React.useCallback(
