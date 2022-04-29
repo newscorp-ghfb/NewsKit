@@ -881,6 +881,7 @@ jobs:
             cd newskit-integration-test
             yarn add newskit && yarn add start-server-and-test
             yarn link "newskit"
+            yarn build
             yarn start-test start 3000 'curl http://localhost:3000'
       - slack/status:
           <<: *slack_status

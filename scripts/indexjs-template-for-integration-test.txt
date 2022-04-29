@@ -1,5 +1,5 @@
-// Template for populating the index.js file in the NextJS app 
-// built in the `test_newskit_in_nextjs_app` CircleCi job.
+// Template for populating the index.js file in the NextJS app;
+// built from the `test_newskit_in_nextjs_app` CircleCi job.
 
 import {ThemeChecker, newskitLightTheme, ThemeProvider} from 'newskit'
 
