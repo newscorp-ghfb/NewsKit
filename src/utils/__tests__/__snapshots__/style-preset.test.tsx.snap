@@ -1,5 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`getStylePresetFromTheme renders with active state when prop isActive is passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
 exports[`getStylePresetFromTheme renders with checked state when prop isChecked is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {

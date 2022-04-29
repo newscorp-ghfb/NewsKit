@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, P, styled, IconFilledInfo, InlineMessage} from 'newskit*';
+import {styled, IconFilledInfo, InlineMessage} from 'newskit*';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
 import {InlineCode} from '../../../components/markdown-elements';
@@ -17,6 +17,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
+  ContentColSpan,
 } from '../../../components/content-structure';
 
 const PROPERTIES = [
@@ -384,10 +385,6 @@ const ENTER_EXIT_COMPONENT = [
   },
 ];
 
-const contentOverrides = {
-  typographyPreset: 'editorialParagraph030',
-};
-
 const VideoElement = ({url}: {url: string}) => (
   <video
     autoPlay
@@ -472,7 +469,7 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
           />
         </ContentPrimary>
 
-        <ContentSecondary showSeparator>
+        <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage
             icon={infoIcon}
             role="region"
@@ -507,12 +504,11 @@ const TransitionPresets = (layoutProps: LayoutProps) => (
           }
         >
           <Illustration path="theme/transition-presets/transition-preset-states/overview" />
-          <Block spaceStack="space060" />
-          <P overrides={contentOverrides}>
-            There are two distinct approaches to defining transitions based on
-            the following:
-          </P>
         </ContentPrimary>
+        <ContentSecondary
+          description="There are two distinct approaches to defining transitions based on the following:"
+          childrenColSpan={ContentColSpan.TEXT}
+        />
 
         <ContentSecondary
           headline="1. States for transitions triggered upon user interaction"
@@ -722,7 +718,7 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
           <VideoElement url="static/examples/transition-presets/background-border-colours.mp4" />
         </ContentSecondary>
 
-        <ContentSecondary>
+        <ContentSecondary childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage
             icon={infoIcon}
             role="region"
@@ -795,7 +791,7 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
     'nk-drawer',
     )};
 \`;
- 
+
  <Drawer
   open
   onDismiss={close}
@@ -927,7 +923,6 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
         <ContentPrimary
           headline="Communicating Transition Presets in Figma"
           description="The inability to communicate motion in static layouts has been a long-standing problem in the design world. In the absence of this information, it is often up to the developer to interpret how to implement it."
-          showSeparator
         >
           <MediaList
             layout="1-span"
@@ -942,19 +937,22 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
               },
             ]}
           />
-
-          <Block spaceStack="space060" />
-          <P overrides={contentOverrides}>
-            For additional guidance on how to communicate a design to the
-            product team for engineers to build, refer to the{' '}
-            <Link
-              href="https://www.figma.com/proto/kXCrh9MHKAJ878KE2dQOz8/Handoff-Guides---for-engineers-%26-designers?page-id=1%3A544&node-id=275%3A21221&viewport=350%2C48%2C0.13&scaling=min-zoom&starting-point-node-id=275%3A21221&show-proto-sidebar=1&hide-ui=1"
-              target="_blank"
-            >
-              NewsKit Handoff guidance.
-            </Link>
-          </P>
         </ContentPrimary>
+        <ContentSecondary
+          description={
+            <>
+              For additional guidance on how to communicate a design to the
+              product team for engineers to build, refer to the{' '}
+              <Link
+                href="https://www.figma.com/proto/kXCrh9MHKAJ878KE2dQOz8/Handoff-Guides---for-engineers-%26-designers?page-id=1%3A544&node-id=275%3A21221&viewport=350%2C48%2C0.13&scaling=min-zoom&starting-point-node-id=275%3A21221&show-proto-sidebar=1&hide-ui=1"
+                target="_blank"
+              >
+                NewsKit Handoff guidance.
+              </Link>
+            </>
+          }
+          showSeparator
+        />
       </ContentSection>
 
       <ContentSection sectionName="accessibility considerations">
@@ -1020,7 +1018,7 @@ $\{getTransitionPresetFromTheme(['backgroundColorChange', 'borderColorChange'])}
         >
           <Code>
             {`@media (prefers-reduced-motion: reduce) {
-    /* reduced behaviour */   
+    /* reduced behaviour */
 }`}
           </Code>
         </ContentSecondary>

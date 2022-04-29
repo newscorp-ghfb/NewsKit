@@ -549,6 +549,7 @@ describe('getStylePresetFromTheme', () => {
     ['valid', 'isValid'],
     ['invalid', 'isInvalid'],
     ['hover', 'isHovered'],
+    ['active', 'isActive'],
   ].forEach(([state, prop]) => {
     test(`renders with ${state} state when prop ${prop} is passed`, () => {
       const fragment = renderToFragmentWithTheme(
