@@ -164,7 +164,4 @@ describe('logical properties', () => {
       paddingBlock: 'space020',
     });
   });
-  it('should return an empty object if overrides is undefined', () => {
-    expect(extractLogicalPropsFromOverrides(undefined)).toEqual({});
-  });
 });

@@ -61,7 +61,7 @@ export const StyledCardContainerMedia = styled.div<
       return {};
     },
   )}
-
+  // getResponsiveSpace to be removed once logical props are used in defaults
   ${handleResponsiveProp({layout: DEFAULT_PROPS.layout}, ({layout}, props) => {
     let marginDirection = 'marginBottom';
     if (isHorizontal(layout) && isReverse(layout)) {
@@ -69,6 +69,7 @@ export const StyledCardContainerMedia = styled.div<
     } else if (isHorizontal(layout)) {
       marginDirection = 'marginRight';
     }
+
     return getResponsiveSpace(
       marginDirection,
       'card.mediaContainer',
@@ -76,6 +77,7 @@ export const StyledCardContainerMedia = styled.div<
       'spaceInline',
     )(props);
   })}
+  ${logicalProps('card.mediaContainer', 'mediaContainer')};
 
   ${({mediaInteractive}) => (mediaInteractive ? 'z-index: 2;' : null)}
   ${({hasHref, ...props}) =>

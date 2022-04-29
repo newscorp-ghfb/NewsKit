@@ -1,7 +1,7 @@
 import React from 'react';
 import {ImageProps} from '../image/types';
 import {BaseLinkProps} from '../link/types';
-import {LogicalPaddingProps, LogicalProps} from '../utils/logical-properties';
+import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
 export interface CardOverridesProps extends LogicalProps {
@@ -10,14 +10,14 @@ export interface CardOverridesProps extends LogicalProps {
   mediaContainer?: {
     stylePreset?: MQ<string>;
     spaceInline?: MQ<string>;
-  };
+  } & LogicalProps;
   teaserContainer?: {
     stylePreset?: MQ<string>;
     /**
      * @deprecated This property is deprecated and will be removed in the next major release. Use `LogicalPaddingProps` instead.
      */
     spaceInset?: MQ<string>;
-  } & LogicalPaddingProps;
+  } & LogicalProps;
   actionsContainer?: {
     stylePreset?: MQ<string>;
     /**
@@ -25,7 +25,7 @@ export interface CardOverridesProps extends LogicalProps {
      */
     spaceInset?: MQ<string>;
     minHeight?: string;
-  } & LogicalPaddingProps;
+  } & LogicalProps;
 }
 
 export type HasHref = {
