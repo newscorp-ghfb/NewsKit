@@ -1,6 +1,11 @@
 import {SwitchOverrides, SwitchProps, SwitchState} from '../types';
 import {BaseSwitchSize} from '../../base-switch/types';
-import {IconFilledCheck, IconFilledClose, IconFilledError} from '../..';
+import {
+  IconFilledCheck,
+  IconFilledClose,
+  IconFilledError,
+  TransitionToken,
+} from '../..';
 
 export const states: [string, {checked?: boolean; state?: SwitchState}][] = [
   ['base', {}],
@@ -25,6 +30,13 @@ export const icons: [
   ],
 ];
 
+const slowTransition: TransitionToken = {
+  extend: 'shiftAbsolute',
+  base: {
+    transitionDuration: '1000ms',
+  },
+};
+
 export const sizeOverrides: [string, SwitchOverrides][] = [
   ['small-margin', {input: {spaceInline: '5px'}}],
   ['large-margin', {input: {spaceInline: '100px'}}],
@@ -38,6 +50,13 @@ export const sizeOverrides: [string, SwitchOverrides][] = [
     {feedback: {size: '27px'}, input: {blockSize: '12px', spaceInset: '0px'}},
   ],
   ['large-feedback', {feedback: {size: '100px'}}],
+  [
+    'slow-transition',
+    {
+      feedback: {transitionPreset: [slowTransition, 'opacityChange']},
+      thumb: {transitionPreset: [slowTransition]},
+    },
+  ],
 ];
 
 const shortLabel = 'Short label';

@@ -592,6 +592,13 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+      },
+    },
     "slideBottom": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -2219,7 +2226,11 @@ Object {
     "large": Object {
       "feedback": Object {
         "size": "sizing090",
-        "stylePreset": "switchFeedback",
+        "stylePreset": "feedback",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+          "opacityChange",
+        ],
       },
       "input": Object {
         "blockSize": "sizing070",
@@ -2236,12 +2247,19 @@ Object {
         "size": "sizing060",
         "spaceInset": "sizing010",
         "stylePreset": "switchThumb",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+        ],
       },
     },
     "medium": Object {
       "feedback": Object {
         "size": "sizing080",
-        "stylePreset": "switchFeedback",
+        "stylePreset": "feedback",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+          "opacityChange",
+        ],
       },
       "input": Object {
         "blockSize": "sizing060",
@@ -2258,12 +2276,19 @@ Object {
         "size": "sizing050",
         "spaceInset": "sizing010",
         "stylePreset": "switchThumb",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+        ],
       },
     },
     "small": Object {
       "feedback": Object {
         "size": "sizing070",
-        "stylePreset": "switchFeedback",
+        "stylePreset": "feedback",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+          "opacityChange",
+        ],
       },
       "input": Object {
         "blockSize": "sizing050",
@@ -2280,6 +2305,9 @@ Object {
         "size": "sizing040",
         "spaceInset": "sizing010",
         "stylePreset": "switchThumb",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+        ],
       },
     },
   },
@@ -4515,18 +4543,6 @@ Object {
     },
     "hover": Object {
       "backgroundColor": "{{colors.interactiveSecondary010}}",
-    },
-  },
-  "switchFeedback": Object {
-    "base": Object {
-      "backgroundColor": "{{colors.transparent}}",
-      "borderRadius": "{{borders.borderRadiusCircle}}",
-    },
-    "focus": Object {
-      "backgroundColor": "{{colors.interactiveInput030}}",
-    },
-    "hover": Object {
-      "backgroundColor": "{{colors.interactiveInput030}}",
     },
   },
   "switchThumb": Object {

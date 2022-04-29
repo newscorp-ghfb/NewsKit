@@ -1685,6 +1685,13 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+      },
+    },
     "slideBottom": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -3854,6 +3861,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -6027,6 +6041,13 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+      },
+    },
     "slideBottom": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -8196,6 +8217,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -10369,6 +10397,13 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+      },
+    },
     "slideBottom": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -12538,6 +12573,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -14711,6 +14753,13 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+      },
+    },
     "slideBottom": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -16880,6 +16929,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {

@@ -5,6 +5,7 @@ export default {
         stylePreset: 'switchThumb',
         size: 'sizing040',
         spaceInset: 'sizing010',
+        transitionPreset: ['shiftAbsolute'],
       },
       input: {
         stylePreset: 'switchTrack',
@@ -18,8 +19,9 @@ export default {
         typographyPreset: 'utilityBody020',
       },
       feedback: {
-        stylePreset: 'switchFeedback',
+        stylePreset: 'feedback',
         size: 'sizing070',
+        transitionPreset: ['shiftAbsolute', 'opacityChange'],
       },
     },
     medium: {
@@ -27,6 +29,7 @@ export default {
         stylePreset: 'switchThumb',
         size: 'sizing050',
         spaceInset: 'sizing010',
+        transitionPreset: ['shiftAbsolute'],
       },
       input: {
         stylePreset: 'switchTrack',
@@ -40,8 +43,9 @@ export default {
         typographyPreset: 'utilityBody020',
       },
       feedback: {
-        stylePreset: 'switchFeedback',
+        stylePreset: 'feedback',
         size: 'sizing080',
+        transitionPreset: ['shiftAbsolute', 'opacityChange'],
       },
     },
     large: {
@@ -49,6 +53,7 @@ export default {
         stylePreset: 'switchThumb',
         size: 'sizing060',
         spaceInset: 'sizing010',
+        transitionPreset: ['shiftAbsolute'],
       },
       input: {
         stylePreset: 'switchTrack',
@@ -62,8 +67,9 @@ export default {
         typographyPreset: 'utilityBody030',
       },
       feedback: {
-        stylePreset: 'switchFeedback',
+        stylePreset: 'feedback',
         size: 'sizing090',
+        transitionPreset: ['shiftAbsolute', 'opacityChange'],
       },
     },
   },

@@ -1,3 +1,4 @@
+import {CSSObject} from '@emotion/styled';
 import {
   getResponsiveSize,
   getResponsiveSpace,
@@ -125,33 +126,27 @@ export const StyledSwitchFeedback = styled.div<
   position: absolute;
   top: 50%;
 
-  ${({centreOnThumb, size, checked, path, ...rest}) =>
-    centreOnThumb
-      ? getResponsiveSize(
-          rectSize => ({
-            left: checked
-              ? `calc(100% - (${rectSize} / 2))`
-              : `calc(${rectSize} / 2)`,
-            transition: 'all 0.2s ease-in-out', // todo: remove when PPDSC-2054 merged
-          }),
-          `${path}.${size}.thumb`,
-          'thumb',
-          'size',
-        )(rest)
-      : {
-          left: '50%',
-        }}
-  ${({centreOnThumb, size, checked, path, ...rest}) =>
-    centreOnThumb
-      ? getResponsiveSize(
-          thumbPadding => ({
-            marginLeft: `${checked ? '-' : ''}${thumbPadding}`,
-          }),
-          `${path}.${size}.input`,
-          'input',
-          'spaceInset',
-        )(rest)
-      : ''}
+  ${({centreOnThumb, size, checked, path, ...rest}) => {
+    if (!centreOnThumb) {
+      return {left: '50%'};
+    }
+    const {padding} = getResponsiveSize(
+      'padding',
+      `${path}.${size}.input`,
+      'input',
+      'spaceInset',
+    )(rest) as CSSObject;
+    return getResponsiveSize(
+      rectSize => ({
+        left: checked
+          ? `calc(100% - (${rectSize} / 2) - ${padding})`
+          : `calc((${rectSize} / 2) + ${padding})`,
+      }),
+      `${path}.${size}.thumb`,
+      'thumb',
+      'size',
+    )(rest);
+  }}
 
   ${({isHovered}) => isHovered && `z-index: ${STACKING_CONTEXT.feedback}`};
 

@@ -1,4 +1,9 @@
-import {getResponsiveSize, getStylePreset, styled} from '../utils';
+import {
+  getResponsiveSize,
+  getStylePreset,
+  getTransitionPreset,
+  styled,
+} from '../utils';
 import {SwitchProps} from './types';
 
 export const StyledSwitchContainer = styled.div<
@@ -73,7 +78,7 @@ export const StyledThumb = styled.div<
     getResponsiveSize('padding', `switch.${size}.thumb`, 'thumb', 'spaceInset')}
   position: absolute;
   aspect-ratio: 1/1;
-  transition: all 0.2s ease-in-out; // todo: remove when PPDSC-2054 merged
+  ${({size}) => getTransitionPreset(`switch.${size}.thumb`, 'thumb')}
   display: grid;
   place-items: center;
 `;

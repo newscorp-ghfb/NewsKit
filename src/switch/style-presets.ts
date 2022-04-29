@@ -28,16 +28,4 @@ export default {
       iconColor: '{{colors.inkContrast}}',
     },
   },
-  switchFeedback: {
-    base: {
-      backgroundColor: '{{colors.transparent}}',
-      borderRadius: '{{borders.borderRadiusCircle}}',
-    },
-    hover: {
-      backgroundColor: '{{colors.interactiveInput030}}',
-    },
-    focus: {
-      backgroundColor: '{{colors.interactiveInput030}}',
-    },
-  },
 };

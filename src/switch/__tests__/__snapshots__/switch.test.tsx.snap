@@ -35,20 +35,37 @@ exports[`Switch hover on feedback shows it: with hover 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
+  left: calc((24px / 2) + 4px);
   z-index: 1;
-  background-color: #E0E7FF;
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0.2;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -147,14 +164,28 @@ exports[`Switch hover on feedback shows it: with hover 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
 
 .emotion-7 svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -261,13 +292,10 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((24px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -276,8 +304,48 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:disabled {
+  opacity: 0;
+}
+
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -375,8 +443,6 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -391,6 +457,22 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -497,13 +579,10 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((24px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -512,8 +591,20 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -599,8 +690,6 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -615,6 +704,22 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -718,13 +823,10 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((24px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -733,8 +835,20 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -820,8 +934,6 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -836,6 +948,22 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -939,20 +1067,37 @@ exports[`Switch hover on label trigger Switch hover styles: with hover 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
+  left: calc((24px / 2) + 4px);
   z-index: 1;
-  background-color: #E0E7FF;
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0.2;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -1051,14 +1196,28 @@ exports[`Switch hover on label trigger Switch hover styles: with hover 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
 
 .emotion-7 svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -1165,13 +1324,10 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((24px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -1180,8 +1336,48 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:disabled {
+  opacity: 0;
+}
+
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -1279,8 +1475,6 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -1295,6 +1489,22 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -1401,13 +1611,10 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((24px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -1416,8 +1623,20 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -1503,8 +1722,6 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -1519,6 +1736,22 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -1622,13 +1855,10 @@ exports[`Switch hover on label with disabled do not change hover state: without 
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((24px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -1637,8 +1867,20 @@ exports[`Switch hover on label with disabled do not change hover state: without 
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -1724,8 +1966,6 @@ exports[`Switch hover on label with disabled do not change hover state: without 
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -1740,6 +1980,22 @@ exports[`Switch hover on label with disabled do not change hover state: without 
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -1843,13 +2099,10 @@ exports[`Switch label attributes 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((24px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -1858,8 +2111,48 @@ exports[`Switch label attributes 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:disabled {
+  opacity: 0;
+}
+
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -1957,8 +2250,6 @@ exports[`Switch label attributes 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -1973,6 +2264,22 @@ exports[`Switch label attributes 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -2094,13 +2401,10 @@ exports[`Switch label position start 1`] = `
 .emotion-3 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((24px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -2109,8 +2413,48 @@ exports[`Switch label position start 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-3:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-3:disabled {
+  opacity: 0;
+}
+
+.emotion-3:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-3:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-3:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-4 {
@@ -2208,8 +2552,6 @@ exports[`Switch label position start 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -2224,6 +2566,22 @@ exports[`Switch label position start 1`] = `
 
 .emotion-8:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-9 {
@@ -2317,13 +2675,10 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((24px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -2332,8 +2687,48 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:disabled {
+  opacity: 0;
+}
+
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -2431,8 +2826,6 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -2447,6 +2840,22 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -2553,20 +2962,60 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  z-index: 1;
-  background-color: #E0E7FF;
+  left: calc((24px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:disabled {
+  opacity: 0;
+}
+
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -2589,6 +3038,9 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
   align-items: center;
   background-color: #CCCCCC;
   border-radius: 20rem;
+  outline: 5px auto Highlight;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: 3px;
   z-index: 2;
 }
 
@@ -2665,14 +3117,28 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
 
 .emotion-7 svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -2779,13 +3245,10 @@ exports[`Switch render with size: large & checked 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(100% - (32px / 2));
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: -4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc(100% - (32px / 2) - 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 64px;
   height: 64px;
   -webkit-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
@@ -2794,8 +3257,48 @@ exports[`Switch render with size: large & checked 1`] = `
   transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:disabled {
+  opacity: 0;
+}
+
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -2881,8 +3384,6 @@ exports[`Switch render with size: large & checked 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -2897,6 +3398,22 @@ exports[`Switch render with size: large & checked 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -3004,13 +3521,10 @@ exports[`Switch render with size: large & disabled 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(32px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((32px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 64px;
   height: 64px;
   -webkit-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
@@ -3019,8 +3533,20 @@ exports[`Switch render with size: large & disabled 1`] = `
   transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -3106,8 +3632,6 @@ exports[`Switch render with size: large & disabled 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -3122,6 +3646,22 @@ exports[`Switch render with size: large & disabled 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -3225,13 +3765,10 @@ exports[`Switch render with size: large 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(32px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((32px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 64px;
   height: 64px;
   -webkit-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
@@ -3240,8 +3777,48 @@ exports[`Switch render with size: large 1`] = `
   transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:disabled {
+  opacity: 0;
+}
+
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -3339,8 +3916,6 @@ exports[`Switch render with size: large 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -3355,6 +3930,22 @@ exports[`Switch render with size: large 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -3461,13 +4052,10 @@ exports[`Switch render with size: medium & checked 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(100% - (24px / 2));
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: -4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc(100% - (24px / 2) - 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -3476,8 +4064,48 @@ exports[`Switch render with size: medium & checked 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:disabled {
+  opacity: 0;
+}
+
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -3563,8 +4191,6 @@ exports[`Switch render with size: medium & checked 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -3579,6 +4205,22 @@ exports[`Switch render with size: medium & checked 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -3686,13 +4328,10 @@ exports[`Switch render with size: medium & disabled 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((24px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -3701,8 +4340,20 @@ exports[`Switch render with size: medium & disabled 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -3788,8 +4439,6 @@ exports[`Switch render with size: medium & disabled 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -3804,6 +4453,22 @@ exports[`Switch render with size: medium & disabled 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -3907,13 +4572,10 @@ exports[`Switch render with size: medium 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((24px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -3922,8 +4584,48 @@ exports[`Switch render with size: medium 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:disabled {
+  opacity: 0;
+}
+
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -4021,8 +4723,6 @@ exports[`Switch render with size: medium 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -4037,6 +4737,22 @@ exports[`Switch render with size: medium 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -4143,13 +4859,10 @@ exports[`Switch render with size: small & checked 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(100% - (16px / 2));
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: -4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc(100% - (16px / 2) - 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 40px;
   height: 40px;
   -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
@@ -4158,8 +4871,48 @@ exports[`Switch render with size: small & checked 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:disabled {
+  opacity: 0;
+}
+
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -4245,8 +4998,6 @@ exports[`Switch render with size: small & checked 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -4261,6 +5012,22 @@ exports[`Switch render with size: small & checked 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -4368,13 +5135,10 @@ exports[`Switch render with size: small & disabled 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(16px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((16px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 40px;
   height: 40px;
   -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
@@ -4383,8 +5147,20 @@ exports[`Switch render with size: small & disabled 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -4470,8 +5246,6 @@ exports[`Switch render with size: small & disabled 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -4486,6 +5260,22 @@ exports[`Switch render with size: small & disabled 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -4589,13 +5379,10 @@ exports[`Switch render with size: small 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(16px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((16px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 40px;
   height: 40px;
   -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
@@ -4604,8 +5391,48 @@ exports[`Switch render with size: small 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:disabled {
+  opacity: 0;
+}
+
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -4703,8 +5530,6 @@ exports[`Switch render with size: small 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -4719,6 +5544,22 @@ exports[`Switch render with size: small 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -4825,13 +5666,10 @@ exports[`Switch render with state: base 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((24px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -4840,8 +5678,48 @@ exports[`Switch render with state: base 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:disabled {
+  opacity: 0;
+}
+
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -4939,8 +5817,6 @@ exports[`Switch render with state: base 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -4955,6 +5831,22 @@ exports[`Switch render with state: base 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -5062,13 +5954,10 @@ exports[`Switch render with state: checked 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(100% - (24px / 2));
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: -4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc(100% - (24px / 2) - 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5077,8 +5966,48 @@ exports[`Switch render with state: checked 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+.emotion-2:disabled {
+  opacity: 0;
+}
+
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-2:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -5164,8 +6093,6 @@ exports[`Switch render with state: checked 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -5180,6 +6107,22 @@ exports[`Switch render with state: checked 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -5288,13 +6231,10 @@ exports[`Switch render with state: checked-disabled 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(100% - (24px / 2));
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: -4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc(100% - (24px / 2) - 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5303,8 +6243,20 @@ exports[`Switch render with state: checked-disabled 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -5390,8 +6342,6 @@ exports[`Switch render with state: checked-disabled 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -5406,6 +6356,22 @@ exports[`Switch render with state: checked-disabled 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -5511,13 +6477,10 @@ exports[`Switch render with state: disabled 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(24px / 2);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: 4px;
-  opacity: 0.7;
-  background-color: transparent;
+  left: calc((24px / 2) + 4px);
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5526,8 +6489,20 @@ exports[`Switch render with state: disabled 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -5613,8 +6588,6 @@ exports[`Switch render with state: disabled 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
 }
@@ -5629,6 +6602,22 @@ exports[`Switch render with state: disabled 1`] = `
 
 .emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-8 {
@@ -5734,17 +6723,29 @@ exports[`Switch with overrides 1`] = `
 .emotion-2 {
   position: absolute;
   top: 50%;
-  left: calc(100% - (95px / 2));
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-left: -20px;
-  opacity: 0.7;
+  left: calc(100% - (95px / 2) - 20px);
   width: 120px;
   height: 120px;
   -webkit-transform: translate3d(calc(120px / -2), calc(120px / -2), 0);
   -moz-transform: translate3d(calc(120px / -2), calc(120px / -2), 0);
   -ms-transform: translate3d(calc(120px / -2), calc(120px / -2), 0);
   transform: translate3d(calc(120px / -2), calc(120px / -2), 0);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -5847,10 +6848,24 @@ exports[`Switch with overrides 1`] = `
   padding: 4px;
   position: absolute;
   aspect-ratio: 1/1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   display: grid;
   place-items: center;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-11 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-11 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
 }
 
 .emotion-14 {
