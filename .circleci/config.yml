@@ -881,7 +881,6 @@ jobs:
             cd newskit-integration-test
             yarn add newskit && yarn add start-server-and-test
             yarn link "newskit"
-            yarn build
             yarn start-test start 3000 'curl http://localhost:3000'
       - slack/status:
           <<: *slack_status
@@ -981,6 +980,7 @@ workflows:
       - approve_publish_npm_pr:
           type: approval
           requires:
+            - test_newskit_in_nextjs_app
             - build_components
             - lint
             - test_unit_comps
