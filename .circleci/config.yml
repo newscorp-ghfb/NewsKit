@@ -880,7 +880,7 @@ jobs:
       - run: 
           name: Prepare the NextJs app
           command: |
-            echo "Adding nedded files"
+            echo "Adding nedded files into the NextJs app"
 
             cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.js
             cp ./scripts/templates-integration-test/cypress.json ./newskit-integration-test/
@@ -888,12 +888,12 @@ jobs:
             cp ./scripts/templates-integration-test/theme-checker.spec.js ./newskit-integration-test/cypress/integration
 
         
-            echo "Installing needed packages into NextJS app"
+            echo "Installing needed packages into the NextJS app"
 
             cd newskit-integration-test
             yalc add newskit
             yarn add start-server-and-test
-            # Temp downgrade  needed for avoiding Hydration error with React v18 https://github.com/vercel/next.js/discussions/35773
+            # Temp downgrading React. Needed for avoiding Hydration error with React v18 https://github.com/vercel/next.js/discussions/35773
             yarn add react@17.0.1
             yarn add react-dom@17.0.1
             yarn add -D cypress@9.1.0;
@@ -1002,7 +1002,6 @@ workflows:
           type: approval
           requires:
             - test_newskit_in_nextjs_app
-            - build_components
             - lint
             - test_unit_comps
             - test_unit_docs
@@ -1139,12 +1138,15 @@ workflows:
           requires:
             - build_docs_dev
             - install_cypress
+      - test_newskit_in_nextjs_app:
+          requires: 
+            - build_components
 
       # Jobs for deploying unstable NewsKit version
       - approve_publish_npm_dev:
           type: approval
           requires:
-            - build_components
+            - test_newskit_in_nextjs_app
             - lint
             - test_unit_comps
             - test_unit_docs
@@ -1323,7 +1325,10 @@ workflows:
             - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs_prod
-
+      - test_newskit_in_nextjs_app:
+          requires: 
+            - build_components
+            
       - publish_npm:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
@@ -1333,7 +1338,7 @@ workflows:
             - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs_prod
-            - build_components
+            - test_newskit_in_nextjs_app
 
       # Deploying newskit.co.uk and storybook to Staging then to Prod environment.
       - eks_flux_deploy:
