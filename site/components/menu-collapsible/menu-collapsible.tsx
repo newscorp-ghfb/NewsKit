@@ -95,7 +95,7 @@ export const MenuNavCollapsible = ({
                       typographyPreset: 'utilityButton020',
                       spaceStack: 'space000',
                       spaceInline: 'space070',
-                      marginInline: 'space060',
+                      marginInline: 'space040',
                     }}
                   >
                     {title}
@@ -112,7 +112,7 @@ export const MenuNavCollapsible = ({
                       stylePreset: ' menuItemVertical',
                       spaceInline: 'space030',
                       // to make spaceinset work you need to check marginInline on the titles
-                      spaceInset: 'space080',
+                      spaceInset: 'space060',
                     },
                   }}
                 >
