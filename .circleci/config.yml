@@ -240,8 +240,6 @@ commands:
           path: cypress/screenshots
       - store_artifacts:
           path: cypress/videos
-      - store_artifacts:
-          path: applitools.cypress.log
       - slack/status:
           <<: *slack_status
 
@@ -553,8 +551,6 @@ jobs:
       - run:
           name: Close the Applitools Batch
           command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
-      - store_artifacts:
-          path: applitools.storybook.log
       - slack/status:
           <<: *slack_status
 
