@@ -880,21 +880,26 @@ jobs:
       - run: 
           name: Prepare the NextJs app
           command: |
+            echo "Adding nedded files"
+
             cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.js
             cp ./scripts/templates-integration-test/cypress.json ./newskit-integration-test/
-            mkdir ./newskit-integration-test/cypress/integration
+            mkdir -p ./newskit-integration-test/cypress/integration
             cp ./scripts/templates-integration-test/theme-checker.spec.js ./newskit-integration-test/cypress/integration
 
-            cd newskit-integration-test
+        
+            echo "Installing needed packages into NextJS app"
 
+            cd newskit-integration-test
             yalc add newskit@5.4.2
             yarn add start-server-and-test
-            # Temp downgrade  deeded for avoiding Hydration error https://github.com/vercel/next.js/discussions/35773
+            # Temp downgrade  needed for avoiding Hydration error with React v18 https://github.com/vercel/next.js/discussions/35773
             yarn add react@17.0.1
             yarn add react-dom@17.0.1
             yarn add cypress --save-dev
-  
-
+      - run:
+          name: Test app with ThemeChecker
+          command: |
             yarn build
             yarn start-test start 3000 'yarn cypress run'
       - slack/status:
