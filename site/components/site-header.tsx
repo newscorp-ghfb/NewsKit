@@ -56,9 +56,11 @@ export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
   ) : null;
 const Header = styled.header`
   flex-shrink: 0;
+  flex-direction: row;
   position: fixed;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   right: 0;
   left: 0;
   z-index: 4;
@@ -84,7 +86,7 @@ const StyledGrid = styled(Grid)`
 const MobileMenu = styled.div`
   font-size: 0;
   align-self: center;
-  ${getSpacingCssFromTheme('marginRight', 'space040')};
+  ${getSpacingCssFromTheme('marginLeft', 'space020')};
 `;
 
 export const StyledLinkItem = styled.div<{
@@ -137,7 +139,11 @@ const navItems = routes.map(({title, subNav}) => ({title, id: subNav[0].id}));
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
   ({handleSidebarClick, toggleTheme, themeMode, path, sidebarOpen}, ref) => {
     const renderMobileNavigation = (handleClick: () => void) => (
-      <Stack data-testid="logo-container" flow={Flow.HorizontalCenter}>
+      <Stack
+        data-testid="logo-container"
+        flow={Flow.HorizontalCenter}
+        // stackDistribution="space-between"
+      >
         <MobileMenu
           onClick={handleClick}
           onKeyDown={handleEnterKeyPress(handleClick)}
@@ -186,7 +192,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
 
     return (
       <Header data-testid="header-navigation" ref={ref}>
-        <StyledGrid>
+        <StyledGrid id="here" xsMargin="space000">
           <Cell xs={2} lg={2} xsOrder={1}>
             <Stack
               flow={Flow.HorizontalCenter}
@@ -211,13 +217,8 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                   flow={Flow.HorizontalCenter}
                   stackDistribution={StackDistribution.Start}
                   flexGrow={1}
-                  // spaceInline="space070"
                 >
-                  <Stack
-                    flow={Flow.HorizontalCenter}
-
-                    // spaceInline="space070"
-                  >
+                  <Stack flow={Flow.HorizontalCenter}>
                     <Menu>{renderNavItems(navItems, path)}</Menu>
                   </Stack>
                 </Stack>
@@ -229,7 +230,6 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
               <Stack
                 flow={Flow.HorizontalCenter}
                 stackDistribution={StackDistribution.SpaceAround}
-                spaceInline="space070"
               >
                 <Link
                   type="standalone"
