@@ -86,7 +86,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       <SidebarNav />
       <Visible xs sm md>
         <Block spaceInset="space060">
-          <Block spaceStack="space050" />
+          {/* <Block spaceStack="space050" /> */}
           <GitHubLaunch href="https://github.com/newscorp-ghfb/newskit" />
           <Block spaceStack="space040" />
           <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} textTheme />

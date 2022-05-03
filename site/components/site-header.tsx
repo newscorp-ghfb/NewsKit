@@ -55,6 +55,7 @@ export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
     </Stack>
   ) : null;
 const Header = styled.header`
+  border-bottom-style: solid;
   flex-shrink: 0;
   flex-direction: row;
   position: fixed;
@@ -64,7 +65,6 @@ const Header = styled.header`
   right: 0;
   left: 0;
   z-index: 4;
-  border-bottom-style: solid;
   ${getBorderCssFromTheme('borderBottomWidth', 'borderWidth010')};
   ${getColorCssFromTheme('borderBottomColor', 'interface040')};
   ${getColorCssFromTheme('backgroundColor', 'interfaceBackground')};
@@ -76,6 +76,9 @@ const Header = styled.header`
     ${getSpacingCssFromTheme('paddingTop', 'space030')};
     ${getSpacingCssFromTheme('paddingBottom', 'space030')};
     ${getSizingCssFromTheme('height', 'sizing100')};
+    // width:100vw;
+    // ${getSpacingCssFromTheme('marginLeft', 'space050')};
+    // ${getSpacingCssFromTheme('marginRight', 'space050')};
   }
 `;
 
@@ -192,8 +195,8 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
 
     return (
       <Header data-testid="header-navigation" ref={ref}>
-        <StyledGrid id="here" xsMargin="space000">
-          <Cell xs={2} lg={2} xsOrder={1}>
+        <StyledGrid id="here" maxWidth="9999px">
+          <Cell xs={2}>
             <Stack
               flow={Flow.HorizontalCenter}
               stackDistribution={StackDistribution.Start}
