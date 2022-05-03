@@ -26,14 +26,14 @@ export interface BannerBaseProps extends React.AriaAttributes {
       props: CellProps;
     };
     icon?: {
-      spaceInline?: MQ<string>; // Note: spaceInline is used as a gap. Should rename this to gap instead of using logical props.
+      spaceInline?: MQ<string>; // Note: spaceInline is used as a gap. Should rename this instead of using logical props.
     };
     content?: {
       spaceInline?: MQ<string>; // Note: LogicalProps can not replace spaceInline! spaceInline = Stack's gap
       title?: {
         stylePreset?: MQ<string>;
         typographyPreset?: MQ<string>;
-        spaceStack?: MQ<string>; // Note: spaceStack is used as a gap. Should rename this to gap instead of using logical props.
+        spaceStack?: MQ<string>; // Note: spaceStack is used as a gap. Should rename this instead of using logical props.
       };
       message?: {
         stylePreset?: MQ<string>;

@@ -16,7 +16,7 @@ type BaseSwitchOverrides = {
   input?: {
     size?: MQ<string>;
     stylePreset?: MQ<string>;
-    spaceInline?: MQ<string>; // Note: spaceInline is used as a gap. Should rename this to gap instead of using logical props.
+    spaceInline?: MQ<string>; // Note: spaceInline is used as a gap. Should rename this instead of using logical props.
     transitionPreset?: TransitionToken | TransitionToken[];
   };
   feedback?: {
