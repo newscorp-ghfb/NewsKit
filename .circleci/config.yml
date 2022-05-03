@@ -861,7 +861,7 @@ jobs:
           <<: *slack_status
 
   test_newskit_in_nextjs_app:
-    executor: node
+    executor: cypress
     steps:
       - checkout
       - attach_workspace:
@@ -900,7 +900,7 @@ jobs:
             # Temp downgrade  needed for avoiding Hydration error with React v18 https://github.com/vercel/next.js/discussions/35773
             yarn add react@17.0.1
             yarn add react-dom@17.0.1
-            yarn add cypress --save-dev
+            make install_cypress
       - save_cache:
           key: yarn-deps-v1.1-{{ checksum "yarn.lock" }}
           paths:
