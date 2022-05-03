@@ -90,11 +90,15 @@ const generateLogicalProps = (prefix: string, defaultsPath?: string) => (
   return deepMerge(inlineStart, inlineEnd, inline, blockStart, blockEnd, block);
 };
 
-const logicalMargins = (props: ThemeProp, defaultsPath?: string): CSSObject =>
-  generateLogicalProps('margin', defaultsPath)(props);
+export const logicalMargins = (
+  props: ThemeProp,
+  defaultsPath?: string,
+): CSSObject => generateLogicalProps('margin', defaultsPath)(props);
 
-const logicalPadding = (props: ThemeProp, defaultsPath?: string): CSSObject =>
-  generateLogicalProps('padding', defaultsPath)(props);
+export const logicalPadding = (
+  props: ThemeProp,
+  defaultsPath?: string,
+): CSSObject => generateLogicalProps('padding', defaultsPath)(props);
 
 export const logicalProps = (defaultsPath?: string) => (
   props: ThemeProp,

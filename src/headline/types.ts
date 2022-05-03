@@ -1,10 +1,11 @@
 import {MQ} from '../utils/style';
+import {LogicalProps} from '../utils/logical-properties';
 
-export interface HeadlineOverrides {
+export interface HeadlineOverrides extends LogicalProps {
   typographyPreset?: MQ<string>;
   kicker?: {
     stylePreset?: MQ<string>;
-    spaceInline?: MQ<string>;
+    spaceInline?: MQ<string>; // used as a gap?
   };
   heading?: {
     stylePreset?: MQ<string>;

@@ -44,4 +44,24 @@ describe('headline', () => {
 
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders correctly with logical prop padding overrides and crop padding is not applied', () => {
+    const fragment = renderToFragmentWithTheme(Headline, {
+      overrides: {
+        paddingInline: '30px',
+      },
+    } as any) as any;
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders correctly with logical prop margin overrides and crop padding is applied', () => {
+    const fragment = renderToFragmentWithTheme(Headline, {
+      overrides: {
+        marginInline: '30px',
+      },
+    } as any) as any;
+
+    expect(fragment).toMatchSnapshot();
+  });
 });
