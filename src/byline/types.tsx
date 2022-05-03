@@ -1,3 +1,4 @@
+import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
 export interface BylineData {
@@ -8,20 +9,19 @@ export interface BylineData {
   ariaLabel?: string;
   key?: string | number;
 }
-
 export interface BylineProps {
   bylineData: BylineData[];
   overrides?: {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
-    spaceStack?: MQ<string>;
+    spaceStack?: MQ<string>; // Note: LogicalProps can not replace spaceStack! spaceStack = Stack's gap
     link?: {
       stylePreset?: MQ<string>;
       typographyPreset?: MQ<string>;
     };
     divider?: {
       stylePreset?: MQ<string>;
-      spaceInline?: MQ<string>;
+      spaceInline?: MQ<string>; // Note: LogicalProps can not simply replace spaceInline as it's used if whitespace
     };
-  };
+  } & LogicalProps;
 }

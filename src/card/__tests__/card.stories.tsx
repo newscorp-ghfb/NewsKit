@@ -20,7 +20,9 @@ const ContainerWithBackground = styled.div<{colorToken?: string}>`
   ${({colorToken = 'white', ...props}) =>
     getColorCssFromTheme('background', colorToken)(props)};
 `;
-
+const StyledDiv = styled.div`
+  border: 1px red dotted;
+`;
 // Spacing
 const cardLabel = 'space040';
 const cardTeaserHeadline = {
@@ -1261,6 +1263,254 @@ export const StoryCardWithResponsiveLayout = () => (
   </Card>
 );
 StoryCardWithResponsiveLayout.storyName = 'card-with-responsive-layout';
+
+export const StoryCardLogicalOverrides = () => (
+  <>
+    <StorybookHeading>
+      Card - logical margin & padding overrides - root level
+    </StorybookHeading>
+    <Grid>
+      <Cell xs={12} sm={4}>
+        <StorybookSubHeading>
+          Card - logical margin overrides
+        </StorybookSubHeading>
+        <StyledDiv>
+          <Card
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              marginBlock: 'space050',
+              marginInline: 'space050',
+            }}
+            data-testid="card"
+          >
+            {cardSmallBody}
+          </Card>
+        </StyledDiv>
+      </Cell>
+      <Cell xs={12} sm={4}>
+        <StorybookSubHeading>
+          Card - logical padding overrides
+        </StorybookSubHeading>
+        <StyledDiv>
+          <CardInset
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              paddingBlock: 'space050',
+              paddingInline: 'space050',
+            }}
+            data-testid="card-inset"
+          >
+            {cardInsetSmallBody}
+          </CardInset>
+        </StyledDiv>
+      </Cell>
+    </Grid>
+    <StorybookHeading>
+      Card - logical margin & padding overrides - teaserContainer
+    </StorybookHeading>
+    <Grid>
+      <Cell xs={12} sm={4}>
+        <StorybookSubHeading>
+          Card - logical margin overrides
+        </StorybookSubHeading>
+        <StyledDiv>
+          <CardInset
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              teaserContainer: {
+                marginBlock: 'space050',
+                marginInline: 'space050',
+              },
+            }}
+          >
+            {cardSmallBody}
+          </CardInset>
+        </StyledDiv>
+      </Cell>
+      <Cell xs={12} sm={4}>
+        <StorybookSubHeading>
+          Card - logical padding overrides
+        </StorybookSubHeading>
+        <StyledDiv>
+          <CardInset
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              teaserContainer: {
+                paddingBlock: 'space050',
+                paddingInline: 'space050',
+              },
+            }}
+          >
+            {cardSmallBody}
+          </CardInset>
+        </StyledDiv>
+      </Cell>
+    </Grid>
+    <StorybookHeading>
+      Card - logical margin & padding overrides - actionContainer
+    </StorybookHeading>
+    <Grid>
+      <Cell xs={12} sm={4}>
+        <StorybookSubHeading>
+          Card - logical margin overrides
+        </StorybookSubHeading>
+        <StyledDiv>
+          <CardInset
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              actionsContainer: {
+                marginBlock: 'space050',
+                marginInline: 'space050',
+              },
+            }}
+          >
+            {cardInsetSmallBody}
+          </CardInset>
+        </StyledDiv>
+      </Cell>
+      <Cell xs={12} sm={4}>
+        <StorybookSubHeading>
+          Card - logical padding overrides
+        </StorybookSubHeading>
+        <StyledDiv>
+          <CardInset
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              actionsContainer: {
+                paddingBlock: 'space050',
+                paddingInline: 'space050',
+              },
+            }}
+          >
+            {cardInsetSmallBody}
+          </CardInset>
+        </StyledDiv>
+      </Cell>
+    </Grid>
+    <StorybookHeading>
+      Card - logical margin & padding overrides - mediaContainer
+    </StorybookHeading>
+    <Grid>
+      <Cell xs={12} sm={6}>
+        <StorybookSubHeading>
+          Card - logical margin overrides
+        </StorybookSubHeading>
+        <StyledDiv>
+          <Card
+            layout="horizontal"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              mediaContainer: {
+                marginBlock: 'space050',
+                marginInline: 'space050',
+              },
+            }}
+          >
+            {cardInsetSmallBody}
+          </Card>
+        </StyledDiv>
+      </Cell>
+      <Cell xs={12} sm={6}>
+        <StorybookSubHeading>
+          Card - logical padding overrides
+        </StorybookSubHeading>
+        <StyledDiv>
+          <Card
+            layout="horizontal"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              mediaContainer: {
+                paddingBlock: 'space050',
+                paddingInline: 'space050',
+              },
+            }}
+          >
+            {cardInsetSmallBody}
+          </Card>
+        </StyledDiv>
+      </Cell>
+      <Cell xs={12} sm={6}>
+        <StorybookSubHeading>
+          Card - logical margin overrides - vertical
+        </StorybookSubHeading>
+        <StyledDiv>
+          <Card
+            layout="vertical"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              mediaContainer: {
+                marginBlock: 'space050',
+                marginInline: 'space050',
+              },
+            }}
+          >
+            {cardInsetSmallBody}
+          </Card>
+        </StyledDiv>
+      </Cell>
+      <Cell xs={12} sm={6}>
+        <StorybookSubHeading>
+          Card - logical padding overrides - vertical
+        </StorybookSubHeading>
+        <StyledDiv>
+          <Card
+            layout="vertical"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              mediaContainer: {
+                paddingBlock: 'space050',
+                paddingInline: 'space050',
+              },
+            }}
+          >
+            {cardInsetSmallBody}
+          </Card>
+        </StyledDiv>
+      </Cell>
+    </Grid>
+  </>
+);
+StoryCardLogicalOverrides.storyName = 'card-logical-overrides';
 
 export const StoryCardSlices = () => (
   <>

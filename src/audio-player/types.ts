@@ -2,6 +2,7 @@ import {TrackControlProps, ControlsOverrideProps} from './controls';
 import {SliderOverrideProps} from '../slider';
 import {VolumeControlOverrideProps} from '../volume-control';
 import {MQ} from '../utils/style';
+import {LogicalProps} from '../utils/logical-properties';
 
 export interface AudioPlayerProps
   extends Omit<React.AudioHTMLAttributes<HTMLAudioElement>, 'controls'>,
@@ -22,7 +23,7 @@ export interface AudioPlayerProps
     };
     controls?: ControlsOverrideProps;
     volumeControl?: VolumeControlOverrideProps;
-  };
+  } & LogicalProps;
 }
 
 export enum AudioEvents {

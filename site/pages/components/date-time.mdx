@@ -4,6 +4,7 @@ import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {CodeFromDefaultPresets} from '../../components/code';
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
 import {DateTime, Link} from 'newskit';
 
@@ -63,6 +64,7 @@ Date formatting is powered by the [date-fns](https://date-fns.org/v2.6.0/docs/fo
         If provided, this overrides the typography preset of the suffix.
       </Prop>
     </Prop>
+     <CommonLogicalPropsMDX/>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="dateTime" />
   </Prop>

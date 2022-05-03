@@ -7,6 +7,8 @@ import {
   CodeFromDefaultPresets,
   Code,
 } from '../../components/code';
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
+
 
 import {Byline} from 'newskit';
 
@@ -77,6 +79,7 @@ interface BylineData {
         the text.
       </Prop>
     </Prop>
+    <CommonLogicalPropsMDX/>
     Refer to the defaults below for the full object structure:
     <CodeFromDefaultPresets componentName="byline" />
   </Prop>
