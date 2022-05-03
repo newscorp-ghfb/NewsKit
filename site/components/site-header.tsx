@@ -14,12 +14,13 @@ import {
   getSpacingCssFromTheme,
   getSizingCssFromTheme,
   getStylePresetFromTheme,
-  Block,
   IconFilledClose,
   Button,
   ButtonSize,
   IconFilledGitHub,
   getBorderCssFromTheme,
+  MenuItem,
+  Menu,
 } from 'newskit';
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
@@ -27,6 +28,7 @@ import {handleEnterKeyPress} from '../helpers/a11y';
 import routes from '../routes';
 import {Link} from './link';
 import {getBorderRadius} from './theming-values/colors/utils';
+import {MenuItemSize} from '../../src/menu/types';
 
 export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
   href ? (
@@ -57,7 +59,6 @@ const Header = styled.header`
   position: fixed;
   display: flex;
   align-items: center;
-  top: 0;
   right: 0;
   left: 0;
   z-index: 4;
@@ -96,14 +97,16 @@ export const StyledLinkItem = styled.div<{
     getStylePresetFromTheme('headerNavItem', undefined, {
       isSelected: $selected,
     })(props)}
+  ${getSpacingCssFromTheme('marginRight', 'space070')};
+
   box-sizing: border-box;
   &.selected {
     ::after {
-      position: relative;
       border-radius: ${getBorderRadius({first: true, last: false})};
       ${getColorCssFromTheme('background', 'interactivePrimary030')};
       ${getSizingCssFromTheme('height', 'sizing010')};
-      ${getSizingCssFromTheme('top', 'sizing060')};
+      position: relative;
+      ${getSizingCssFromTheme('top', 'sizing045')};
     }
   }
 `;
@@ -146,7 +149,9 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
               overrides={{size: 'iconSize020', stylePreset: 'closeIcon'}}
             />
           ) : (
-            <IconFilledMenu overrides={{size: 'iconSize020'}} />
+            <IconFilledMenu
+              overrides={{size: 'iconSize020', stylePreset: 'inkContrast'}}
+            />
           )}
         </MobileMenu>
       </Stack>
@@ -154,37 +159,34 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
 
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
       items.map(({title, id}) => (
-        <Block spaceInset="spaceInset010" key={id}>
-          <Link
-            type="standalone"
+        <StyledLinkItem
+          aria-current={
+            currentRoute.split('/')[1].includes(id.split('/')[1]) || undefined
+          }
+          $selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
+          className={
+            currentRoute.split('/')[1].includes(id.split('/')[1])
+              ? 'selected'
+              : undefined
+          }
+        >
+          <MenuItem
             href={id}
-            overrides={{
-              stylePreset: 'linkTopNavigation',
-              typographyPreset: 'utilityButton020',
-            }}
+            selected={false}
+            size={MenuItemSize.Small}
+            className={path.includes(id) ? 'selected' : undefined}
+            // overrides={{
+            //   spaceInline: 'space070',
+            // }}
           >
-            <StyledLinkItem
-              aria-label="Sidebar"
-              aria-current={
-                currentRoute.split('/')[1].includes(id.split('/')[1]) ||
-                undefined
-              }
-              $selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
-              className={
-                currentRoute.split('/')[1].includes(id.split('/')[1])
-                  ? 'selected'
-                  : undefined
-              }
-            >
-              {title}
-            </StyledLinkItem>
-          </Link>
-        </Block>
+            {title}
+          </MenuItem>
+        </StyledLinkItem>
       ));
 
     return (
       <Header data-testid="header-navigation" ref={ref}>
-        <StyledGrid maxWidth="9999px">
+        <StyledGrid>
           <Cell xs={2} lg={2} xsOrder={1}>
             <Stack
               flow={Flow.HorizontalCenter}
@@ -209,14 +211,14 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                   flow={Flow.HorizontalCenter}
                   stackDistribution={StackDistribution.Start}
                   flexGrow={1}
-                  spaceInline="space070"
+                  // spaceInline="space070"
                 >
                   <Stack
                     flow={Flow.HorizontalCenter}
-                    stackDistribution={StackDistribution.End}
-                    spaceInline="space070"
+
+                    // spaceInline="space070"
                   >
-                    {renderNavItems(navItems, path)}
+                    <Menu>{renderNavItems(navItems, path)}</Menu>
                   </Stack>
                 </Stack>
               </StyledVisible>
