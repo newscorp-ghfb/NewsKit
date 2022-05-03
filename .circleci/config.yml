@@ -866,12 +866,16 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
+      - restore_cache:
+          keys:
+            - yarn-deps-v1-{{ checksum "yarn.lock" }}
+            - yarn-build-v1-
       - run:
           name: Install yalc and create-next-app
           command: | 
             yarn global add yalc && yarn add create-next-app@latest 
       - run:
-          name: yalc publish and run create nextjs app
+          name: Yalc publish and run create-nextjs-app
           command: | 
             cd dist
             yalc publish
@@ -897,9 +901,14 @@ jobs:
             yarn add react@17.0.1
             yarn add react-dom@17.0.1
             yarn add cypress --save-dev
+      - save_cache:
+          key: yarn-deps-v1-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache
       - run:
           name: Test app with ThemeChecker
           command: |
+            cd newskit-integration-test
             yarn build
             yarn start-test start 3000 'yarn cypress run'
       - slack/status:
