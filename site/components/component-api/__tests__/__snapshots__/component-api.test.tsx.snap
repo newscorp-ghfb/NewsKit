@@ -1081,6 +1081,14 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   outline-offset: -1px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-40:focus {
+      outline-offset: -5px;
+    }
+  }
+}
+
 .emotion-41 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1204,6 +1212,14 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   outline-offset: -1px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-46:focus {
+      outline-offset: -5px;
+    }
+  }
+}
+
 .emotion-50 {
   background-color: #577FFB;
   position: absolute;
@@ -1226,6 +1242,14 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 .emotion-52 {
   margin: 0;
   width: 100%;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-52:focus {
+      outline-offset: -5px;
+    }
+  }
 }
 
 .emotion-84 {

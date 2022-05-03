@@ -51,6 +51,7 @@ export interface TabsProps {
   align?: TabAlign;
   onChange?: (selectedIndex: number) => void;
   overrides?: {
+    safariOutlineOffset?: string;
     spaceInline?: MQ<string>;
     divider?: DividerOverrides;
     tab?: {
@@ -77,6 +78,7 @@ export interface TabPanelProps {
   children: React.ReactNode;
   id?: string;
   selected?: boolean;
+  safariOutlineOffset?: string;
   overrides?: {
     typographyPreset?: MQ<string>;
   };
@@ -113,4 +115,5 @@ export interface TabInternalProps extends BaseFlagProps<BaseFlagOverrides> {
   onMouseDown?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   id?: string;
   align?: TabAlign;
+  safariOutlineOffset?: string;
 }

@@ -180,12 +180,28 @@ export const StyledTabButton = styled(Button)<
   :focus {
     outline-offset: -1px;
   }
+  @media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+      :focus {
+        outline-offset: ${({safariOutlineOffset}) =>
+          safariOutlineOffset || '-5px'};
+      }
+    }
+  }
 `;
 
 export const StyledTabPanelBlock = styled(TextBlock)<
-  TextBlockProps & {selected: boolean}
+  TextBlockProps & {selected: boolean; safariOutlineOffset?: string}
 >`
   width: 100%;
+  @media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+      :focus {
+        outline-offset: ${({safariOutlineOffset}) =>
+          safariOutlineOffset || '-5px'};
+      }
+    }
+  }
 `;
 
 export const StyledDividerWrapper = styled.div<

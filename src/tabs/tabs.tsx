@@ -247,6 +247,7 @@ const ThemelessTabs: React.FC<TabsProps> = ({
         children: child.props.children,
         selected: index === activeTabIndex,
         id: ariaIds[index],
+        safariOutlineOffset: overrides.safariOutlineOffset,
       };
 
       return <TabPanel {...tabPanelProps} />;
@@ -314,6 +315,7 @@ const ThemelessTabs: React.FC<TabsProps> = ({
               width: '100%',
               height: vertical ? '100%' : '',
             }}
+            safariOutlineOffset={overrides.safariOutlineOffset}
           >
             {getChildren(tab.label)}
           </TabInternal>
