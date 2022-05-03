@@ -866,11 +866,6 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
-      # TODO test speed with no restoring, IS CHECKsun needed? it will  never pass
-      # - restore_cache:
-      #     keys:
-      #       - yarn-deps-v1.1-{{ checksum "yarn.lock" }}
-      #       - yarn-deps-v1.1-
       - run:
           name: Install yalc and create-next-app
           command: | 
@@ -896,17 +891,12 @@ jobs:
             echo "Installing needed packages into NextJS app"
 
             cd newskit-integration-test
-            yalc add newskit@5.4.2
+            yalc add newskit
             yarn add start-server-and-test
             # Temp downgrade  needed for avoiding Hydration error with React v18 https://github.com/vercel/next.js/discussions/35773
             yarn add react@17.0.1
             yarn add react-dom@17.0.1
             yarn add -D cypress@9.1.0;
-      # - save_cache:
-      #     # TODO IS CHECKsun needed?
-      #     key: yarn-deps-v1.1-{{ checksum "yarn.lock" }}
-      #     paths:
-      #       - ~/.cache
       - run:
           name: Test app with ThemeChecker
           command: |
