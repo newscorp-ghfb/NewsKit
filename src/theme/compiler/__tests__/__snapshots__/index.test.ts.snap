@@ -371,6 +371,38 @@ Object {
         "color": "#C0C0C0",
       },
     },
+    "feedback": Object {
+      "base": Object {
+        "backgroundColor": "#3358CC",
+        "borderRadius": "50%",
+        "opacity": "0",
+      },
+      "disabled": Object {
+        "opacity": "0",
+      },
+      "hover": Object {
+        "opacity": "0.2",
+      },
+      "hover:active": Object {
+        "opacity": "0.4",
+      },
+      "invalid:hover": Object {
+        "backgroundColor": "#D20600",
+        "opacity": "0.2",
+      },
+      "invalid:hover:active": Object {
+        "backgroundColor": "#D20600",
+        "opacity": "0.4",
+      },
+      "valid:hover": Object {
+        "backgroundColor": "#148F39",
+        "opacity": "0.2",
+      },
+      "valid:hover:active": Object {
+        "backgroundColor": "#148F39",
+        "opacity": "0.4",
+      },
+    },
     "inkBase": Object {
       "base": Object {
         "color": "#2E2E2E",
@@ -682,6 +714,13 @@ Object {
       },
       "exitDone": Object {
         "transform": "translate(0, 20px)",
+      },
+    },
+    "opacityChange": Object {
+      "base": Object {
+        "transitionDuration": "200ms",
+        "transitionProperty": "opacity",
+        "transitionTimingFunction": "cubic-bezier(0, 0, .5, 1)",
       },
     },
     "slideBottom": Object {

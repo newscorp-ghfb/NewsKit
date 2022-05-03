@@ -21,5 +21,10 @@ export default {
       typographyPreset: 'utilityLabel020',
       space: 'space030',
     },
+    feedback: {
+      size: 'sizing080',
+      stylePreset: 'feedback',
+      transitionPreset: 'opacityChange',
+    },
   },
 };

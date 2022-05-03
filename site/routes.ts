@@ -308,6 +308,22 @@ export default [
             illustration: 'components/form/hero',
           },
           {
+            title: 'Radio Button',
+            page: true,
+            id: '/components/radio-button',
+            description:
+              'Radio Buttons are selection controls that are typically used in forms',
+            illustration: 'components/radio-button/radio-button-illustration',
+          },
+          {
+            title: 'Select',
+            page: true,
+            id: '/components/select',
+            description:
+              'Select components allow users to select one option from a list.',
+            illustration: 'components/select/select-illustration',
+          },
+          {
             title: 'Share Bar',
             page: true,
             id: '/components/share-bar',
@@ -324,27 +340,19 @@ export default [
             illustration: 'components/slider-illustration',
           },
           {
+            title: 'Text Field',
+            page: true,
+            id: '/components/text-field',
+            description:
+              'Text Fields allow users to enter and edit text content into a UI. They typically appear in forms.',
+            illustration: 'components/text-field/hero',
+          },
+          {
             title: 'Text Input',
             page: true,
             id: '/components/text-input',
             description: 'Lets users enter and edit text.',
             illustration: 'components/text-input-illustration',
-          },
-          {
-            title: 'Select',
-            page: true,
-            id: '/components/select',
-            description:
-              'Select components allow users to select one option from a list.',
-            illustration: 'components/select/select-illustration',
-          },
-          {
-            title: 'Radio Button',
-            page: true,
-            id: '/components/radio-button',
-            description:
-              'Radio Buttons are selection controls that are typically used in forms',
-            illustration: 'components/radio-button/radio-button-illustration',
           },
         ],
       },

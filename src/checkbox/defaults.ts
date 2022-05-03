@@ -10,7 +10,8 @@ export default {
       },
       feedback: {
         size: 'sizing070',
-        stylePreset: 'checkboxFeedback',
+        stylePreset: 'feedback',
+        transitionPreset: 'opacityChange',
       },
       label: {
         stylePreset: 'controlLabel',
@@ -27,7 +28,8 @@ export default {
       },
       feedback: {
         size: 'sizing080',
-        stylePreset: 'checkboxFeedback',
+        stylePreset: 'feedback',
+        transitionPreset: 'opacityChange',
       },
       label: {
         stylePreset: 'controlLabel',
@@ -44,7 +46,8 @@ export default {
       },
       feedback: {
         size: 'sizing090',
-        stylePreset: 'checkboxFeedback',
+        stylePreset: 'feedback',
+        transitionPreset: 'opacityChange',
       },
       label: {
         stylePreset: 'controlLabel',
