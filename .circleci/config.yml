@@ -898,7 +898,7 @@ jobs:
             yarn add react-dom@17.0.1
             yarn add -D cypress@9.1.0;
       - run:
-          name: Test app with ThemeChecker
+          name: Serve and test app with Cypress
           command: |
             cd newskit-integration-test
             yarn build
@@ -1328,7 +1328,7 @@ workflows:
       - test_newskit_in_nextjs_app:
           requires: 
             - build_components
-            
+
       - publish_npm:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
