@@ -868,8 +868,8 @@ jobs:
           at: ~/project
       - restore_cache:
           keys:
-            - yarn-deps-v1-{{ checksum "yarn.lock" }}
-            - yarn-build-v1-
+            - yarn-deps-v1.1-{{ checksum "yarn.lock" }}
+            - yarn-deps-v1.1-
       - run:
           name: Install yalc and create-next-app
           command: | 
@@ -902,7 +902,7 @@ jobs:
             yarn add react-dom@17.0.1
             yarn add cypress --save-dev
       - save_cache:
-          key: yarn-deps-v1-{{ checksum "yarn.lock" }}
+          key: yarn-deps-v1.1-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache
       - run:
