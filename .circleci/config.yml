@@ -867,22 +867,36 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run:
-          name: Yarn link built Newskit components
-          command: cd dist && yarn link && cd ..
-      - run:
-          name: Create NextJs App
+          name: Install yalc and create-next-app
           command: | 
-            yarn add create-next-app@latest 
+            yarn global add yalc && yarn add create-next-app@latest 
+      - run:
+          name: yalc publish and run create nextjs app
+          command: | 
+            cd dist
+            yalc publish
+            cd ..
             npx create-next-app@latest newskit-integration-test
       - run: 
-          name: Preparing NextJs app and testing NewsKit in it.
+          name: Prepare the NextJs app
           command: |
-            cp ./scripts/indexjs-template-for-integration-test.txt ./newskit-integration-test/pages/index.js
+            cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.js
+            cp ./scripts/templates-integration-test/cypress.json ./newskit-integration-test/
+            mkdir ./newskit-integration-test/cypress/integration
+            cp ./scripts/templates-integration-test/theme-checker.spec.js ./newskit-integration-test/cypress/integration
+
             cd newskit-integration-test
-            yarn add newskit && yarn add start-server-and-test
-            yarn link "newskit"
+
+            yalc add newskit@5.4.2
+            yarn add start-server-and-test
+            # Temp downgrade  deeded for avoiding Hydration error https://github.com/vercel/next.js/discussions/35773
+            yarn add react@17.0.1
+            yarn add react-dom@17.0.1
+            yarn add cypress --save-dev
+  
+
             yarn build
-            yarn start-test start 3000 'curl http://localhost:3000'
+            yarn start-test start 3000 'yarn cypress run'
       - slack/status:
           <<: *slack_status
 
