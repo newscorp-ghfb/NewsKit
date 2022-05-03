@@ -15,6 +15,7 @@ BASE_URI = ${SITE_BASE_URL}${BASE_PATH}/
 install:
 	yarn install --frozen-lockfile
 
+# When changing the version, make sure is the same in the `test_newskit_in_nextjs_app` CircleCI job
 install_cypress:
 	yarn add -D cypress@9.1.0;
 

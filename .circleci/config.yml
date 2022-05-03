@@ -900,7 +900,7 @@ jobs:
             # Temp downgrade  needed for avoiding Hydration error with React v18 https://github.com/vercel/next.js/discussions/35773
             yarn add react@17.0.1
             yarn add react-dom@17.0.1
-            make install_cypress
+            yarn add -D cypress@9.1.0;
       - save_cache:
           key: yarn-deps-v1.1-{{ checksum "yarn.lock" }}
           paths:
