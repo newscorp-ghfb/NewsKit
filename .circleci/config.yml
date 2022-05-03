@@ -866,10 +866,11 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
-      - restore_cache:
-          keys:
-            - yarn-deps-v1.1-{{ checksum "yarn.lock" }}
-            - yarn-deps-v1.1-
+      # TODO test speed with no restoring, IS CHECKsun needed? it will  never pass
+      # - restore_cache:
+      #     keys:
+      #       - yarn-deps-v1.1-{{ checksum "yarn.lock" }}
+      #       - yarn-deps-v1.1-
       - run:
           name: Install yalc and create-next-app
           command: | 
@@ -901,10 +902,11 @@ jobs:
             yarn add react@17.0.1
             yarn add react-dom@17.0.1
             yarn add -D cypress@9.1.0;
-      - save_cache:
-          key: yarn-deps-v1.1-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache
+      # - save_cache:
+      #     # TODO IS CHECKsun needed?
+      #     key: yarn-deps-v1.1-{{ checksum "yarn.lock" }}
+      #     paths:
+      #       - ~/.cache
       - run:
           name: Test app with ThemeChecker
           command: |
