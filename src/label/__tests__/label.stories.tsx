@@ -18,6 +18,10 @@ const Container = styled.div`
   })};
 `;
 
+const StyledDiv = styled.div`
+  border: 1px red dotted;
+`;
+
 export default {
   title: 'NewsKit Light/label',
   component: () => 'None',
@@ -63,3 +67,21 @@ export const LabelVariants = () => (
   </>
 );
 LabelVariants.storyName = 'label-variations';
+
+export const LabelWithLogicalPropsOverrides = () => (
+  <>
+    <StorybookSubHeading>With Logical Paddings</StorybookSubHeading>
+    <StyledDiv>
+      <Label overrides={{paddingBlockEnd: 'space030'}}>Test</Label>
+    </StyledDiv>
+    <StorybookSubHeading>With Logical Margins</StorybookSubHeading>
+    <StyledDiv>
+      <Label
+        overrides={{marginBlockEnd: 'space030', marginInlineEnd: 'space030'}}
+      >
+        Test
+      </Label>
+    </StyledDiv>
+  </>
+);
+LabelWithLogicalPropsOverrides.storyName = 'label-with-logical-props-overrides';

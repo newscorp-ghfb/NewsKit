@@ -13,6 +13,11 @@ const Block = styled.div`
   margin: 10px;
 `;
 
+const StyledDiv = styled.div`
+  border: dotted 1px red;
+  margin-bottom: 5px;
+`;
+
 const Container = styled.div<{hasBlackBackground?: boolean}>`
   margin: 24px;
   ${({hasBlackBackground}) =>
@@ -307,8 +312,7 @@ const myCustomTheme = createTheme({
 
 export const StoryFlagWithSize = () => (
   <>
-    <StorybookHeading>Flag</StorybookHeading>
-    <StorybookSubHeading>With long text and overflow</StorybookSubHeading>
+    <StorybookSubHeading>Flag with long text and overflow</StorybookSubHeading>
     <ThemeProvider theme={myCustomTheme}>
       <Flag
         overrides={{
@@ -322,4 +326,33 @@ export const StoryFlagWithSize = () => (
     </ThemeProvider>
   </>
 );
-StoryFlagWithSize.storyName = 'flag with fixed size and overflow';
+StoryFlagWithSize.storyName = 'flag-with-fixed-size-and-overflow';
+
+export const StoryFlagWithLogicalPropsOverrides = () => (
+  <>
+    <StorybookSubHeading>With logical padding overrides</StorybookSubHeading>
+    <StyledDiv>
+      <Flag
+        overrides={{
+          paddingBlock: 'space050',
+          paddingInline: 'space050',
+        }}
+      >
+        Text
+      </Flag>
+    </StyledDiv>
+    <StorybookSubHeading>With logical margin overrides</StorybookSubHeading>
+    <StyledDiv>
+      <Flag
+        overrides={{
+          marginBlock: 'space030',
+          marginInline: 'space030',
+        }}
+      >
+        Text
+      </Flag>
+    </StyledDiv>
+  </>
+);
+StoryFlagWithLogicalPropsOverrides.storyName =
+  'flag-with-logical-props-overrides';

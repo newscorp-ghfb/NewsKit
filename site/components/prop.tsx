@@ -7,6 +7,8 @@ import {
   getSizingFromTheme,
   getBorderFromTheme,
   getColorFromTheme,
+  getSizingCssFromTheme,
+  getColorCssFromTheme,
 } from 'newskit';
 
 export interface PropProps {
@@ -24,13 +26,13 @@ export interface DefaultValueProps {
   enumObj?: any;
 }
 
-const StyledContainer = styled.div<Pick<PropProps, 'nested'>>`
+export const StyledContainer = styled.div<Pick<PropProps, 'nested'>>`
   ${getTypographyPresetFromTheme('utilityBody020')}
   line-height: 1.3;
-  margin-bottom: ${getSizingFromTheme('sizing060')};
-  color: ${getColorFromTheme('inkBase')};
-  margin-top: ${({nested}) => nested && getSizingFromTheme('sizing060')};
-  margin-left: ${({nested}) => nested && getSizingFromTheme('sizing060')};
+  ${getSizingCssFromTheme('marginBottom', 'sizing060')};
+  ${getColorCssFromTheme('color', 'inkBase')};
+  ${({nested}) => nested && getSizingCssFromTheme('marginTop', 'sizing060')};
+  ${({nested}) => nested && getSizingCssFromTheme('marginLeft', 'sizing060')};
 `;
 
 const PropsRow = styled.div`
