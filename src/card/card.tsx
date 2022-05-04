@@ -177,6 +177,7 @@ const ThemelessCard = React.forwardRef<HTMLDivElement, CardProps>(
     ref,
   ) => {
     const hasHref = Boolean(href);
+
     return (
       <StyledCardContainer
         hasHref={hasHref}

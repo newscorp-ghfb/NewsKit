@@ -346,3 +346,39 @@ export const StoryRadioButtonOverrides = () => {
   );
 };
 StoryRadioButtonOverrides.storyName = 'radio-button-overrides';
+
+export const StoryRadioButtonLogicalPropsOverrides = () => (
+  <>
+    <StorybookSubHeading>Logical props override</StorybookSubHeading>
+    <Fieldset legend="Select an option">
+      <RadioGroup name="icon" defaultValue="1">
+        <RadioButton
+          value="1"
+          label="Option 1"
+          overrides={{
+            marginBlockEnd: 'space030',
+            marginInlineStart: 'space030',
+          }}
+        />
+        <RadioButton
+          value="2"
+          label="Option 2"
+          overrides={{
+            marginBlockEnd: 'space030',
+            marginInlineStart: 'space030',
+          }}
+        />
+        <RadioButton
+          value="3"
+          label="Option 3"
+          overrides={{
+            marginBlockEnd: 'space030',
+            marginInlineStart: 'space030',
+          }}
+        />
+      </RadioGroup>
+    </Fieldset>
+  </>
+);
+StoryRadioButtonLogicalPropsOverrides.storyName =
+  'radio-button-logical-overrides';

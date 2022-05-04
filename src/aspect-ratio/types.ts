@@ -19,6 +19,9 @@ export interface StyledContainerProps {
   $width?: WidthProperty<string>;
 }
 
+/**
+ * @deprecated AspectRatioProps is deprecated and will be removed in the next major release.
+ */
 export interface AspectRatioProps
   extends GetAspectRatioProp,
     Omit<ContainerProp, 'paddingTop'> {}

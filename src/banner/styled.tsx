@@ -8,6 +8,7 @@ import {
 } from '../utils/style';
 import {Stack} from '../stack';
 import {TextBlock} from '../text-block';
+import {logicalProps} from '../utils/logical-properties';
 
 export const StyledBannerContainer = styled.div<BannerProps>`
   box-sizing: border-box;
@@ -16,6 +17,7 @@ export const StyledBannerContainer = styled.div<BannerProps>`
     getResponsiveSpace('padding', `banner.${layout}`, '', 'spaceInset')}
   ${({layout}) =>
     getResponsiveSize('minHeight', `banner.${layout}`, '', 'minHeight')}
+  ${({layout}) => logicalProps(`${layout}`)}
 `;
 
 export const StyledMaxWidthContainer = styled(Stack)<
@@ -31,14 +33,14 @@ export const StyledIconContentContainer = styled(Stack)<
   Pick<BannerProps, 'overrides' | 'layout'>
 >`
   flex: 1;
-  ${({layout}) => layout === 'vertical' && 'align-self: stretch;'}
+  ${({layout}) => layout === 'vertical' && 'align-self: stretch;'};
   ${({layout}) =>
     getResponsiveSpace(
       layout === 'vertical' ? 'marginBottom' : 'marginRight',
       `banner.${layout}.content`,
       'content',
       'spaceInline',
-    )}
+    )};
 `;
 
 export const StyledIconContainer = styled.div<
@@ -51,7 +53,7 @@ export const StyledIconContainer = styled.div<
       `banner.${layout}.icon`,
       'icon',
       'spaceInline',
-    )}
+    )};
 `;
 
 export const StyledTitleContainer = styled(TextBlock)<
