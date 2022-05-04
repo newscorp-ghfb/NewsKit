@@ -49,7 +49,7 @@ const MenuItemStyled = styled(MenuItem)`
 `;
 
 const MenuNavDesktop = () => {
-  const path = useRouter().pathname;
+  const path = useRouter()?.pathname || '';
   const currentRoute = path.match(/\/[A-z\d-]*/g);
   const currentSection =
     currentRoute && routes.filter(({id}) => id === currentRoute[0]);
