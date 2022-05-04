@@ -83,4 +83,17 @@ describe('InlineMessage', () => {
     ) as any;
     expect(fragment).toMatchSnapshot();
   });
+  it('renders with logical prop overrides', () => {
+    const props = {
+      title,
+      icon,
+      children: message,
+      overrides: {
+        paddingInline: '30px',
+        marginInline: '50px',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(InlineMessage, props) as any;
+    expect(fragment).toMatchSnapshot();
+  });
 });

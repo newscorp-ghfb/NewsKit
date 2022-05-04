@@ -19,9 +19,10 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {childrenIsString} from '../utils/react-children-utilities';
+import {omitLogicalPropsFromOverrides} from '../utils/logical-properties';
 
 const ThemelessToast: React.FC<ToastProps> = ({
-  overrides,
+  overrides = {},
   children,
   icon,
   actions,
@@ -38,6 +39,10 @@ const ThemelessToast: React.FC<ToastProps> = ({
 
   const {aria, rest} = splitAriaProps(restProps);
 
+  const nonLogicalOverrides = omitLogicalPropsFromOverrides(
+    overrides as Record<string, unknown>,
+  );
+
   return (
     <StyledToastContainer
       data-testid="toast-container"
@@ -46,7 +51,10 @@ const ThemelessToast: React.FC<ToastProps> = ({
     >
       <StyledToastInnerContainer>
         {icon && (
-          <StyledIconContainer aria-hidden="true" overrides={overrides}>
+          <StyledIconContainer
+            aria-hidden="true"
+            overrides={nonLogicalOverrides}
+          >
             {icon}
           </StyledIconContainer>
         )}
@@ -54,16 +62,16 @@ const ThemelessToast: React.FC<ToastProps> = ({
           role={role}
           aria-live={ariaLive}
           {...aria}
-          overrides={overrides}
+          overrides={nonLogicalOverrides}
           actions={actions}
         >
           {title && (
-            <StyledTitleContainer overrides={overrides}>
+            <StyledTitleContainer overrides={nonLogicalOverrides}>
               {title}
             </StyledTitleContainer>
           )}
           <StyledMessageContainer
-            overrides={overrides}
+            overrides={nonLogicalOverrides}
             as={childrenIsString(children) ? 'p' : 'div'}
           >
             {children}
@@ -71,7 +79,7 @@ const ThemelessToast: React.FC<ToastProps> = ({
         </StyledContentContainer>
       </StyledToastInnerContainer>
       {actions && (
-        <StyledDividerContainer overrides={overrides}>
+        <StyledDividerContainer overrides={nonLogicalOverrides}>
           <Divider vertical overrides={dividerOverrides} />
         </StyledDividerContainer>
       )}

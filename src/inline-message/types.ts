@@ -1,6 +1,5 @@
 import {ToastProps} from '../toast';
-
-type ToastOverrides = ToastProps['overrides'];
+import {ToastOverrides} from '../toast/types';
 
 type InlineMessageOverrides = Omit<
   ToastOverrides,
