@@ -2,6 +2,7 @@ import {MouseEvent} from 'react';
 import {DividerOverrides} from '../divider';
 import {BaseFlagOverrides, BaseFlagProps} from '../flag';
 import {MQ} from '../utils';
+import {LogicalProps} from '../utils/logical-properties';
 
 export enum MenuItemAlign {
   Start = 'start',
@@ -23,7 +24,7 @@ export interface MenuProps extends React.AriaAttributes {
   align?: MenutItemAlignTypes;
   overrides?: {
     spaceInline?: MQ<string>; // -> space between menuItems
-  };
+  } & LogicalProps;
 }
 
 export interface MenuGroupProps extends React.AriaAttributes {
