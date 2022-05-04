@@ -218,6 +218,8 @@ exports[`Material icons should render icons with props IconFilledAccountBalance 
   overflow: hidden;
   vertical-align: unset;
   display: inline-block;
+  margin-inline: 20px;
+  margin-block: 30px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -312,6 +314,8 @@ exports[`Material icons should render icons with props IconFilledAccountTree 1`]
   overflow: hidden;
   vertical-align: unset;
   display: inline-block;
+  margin-inline: 20px;
+  margin-block: 30px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -381,6 +385,8 @@ exports[`Material icons should render icons with props IconOutlinedAccountBalanc
   overflow: hidden;
   vertical-align: unset;
   display: inline-block;
+  margin-inline: 20px;
+  margin-block: 30px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -450,6 +456,8 @@ exports[`Material icons should render icons with props IconOutlinedAccountTree 1
   overflow: hidden;
   vertical-align: unset;
   display: inline-block;
+  margin-inline: 20px;
+  margin-block: 30px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
