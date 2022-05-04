@@ -425,6 +425,26 @@ export const StoryButtonStyleAtBreakpoints = () => (
 );
 StoryButtonStyleAtBreakpoints.storyName = 'button-style-at-breakpoints';
 
+export const StoryButtonWithLogicalPropsOverrides = () => (
+  <>
+    <StorybookSubHeading>
+      Button with logical padding overrides
+    </StorybookSubHeading>
+    <Border>
+      <Button overrides={{paddingBlock: 'space050'}}>button</Button>
+    </Border>
+    <Spacer />
+    <StorybookSubHeading>
+      Button with logical margin overrides
+    </StorybookSubHeading>
+    <Border>
+      <Button overrides={{marginBlock: 'space050'}}>button</Button>
+    </Border>
+  </>
+);
+StoryButtonWithLogicalPropsOverrides.storyName =
+  'button-with-logical-props-overrides';
+
 export const StoryButtonLink = () => (
   <>
     <StorybookSubHeading>Button link</StorybookSubHeading>

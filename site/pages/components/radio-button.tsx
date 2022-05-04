@@ -8,6 +8,8 @@ import {ContentText} from '../../components/text-section/content-text';
 import {InlineCode} from '../../components/markdown-elements';
 import {UsageKind} from '../../components/usage-card';
 import {Link} from '../../components/link';
+import {commonLogicalProps} from '../../components/component-api/common-logical-props';
+import {OverridesRowsProps} from '../../components/component-api';
 
 const infoIcon = (
   <IconFilledInfo
@@ -45,10 +47,10 @@ const commonPropsRows = (type?: string) => [
 
 const commonOverridesRows = [
   {
-    attribute: 'spaceStack',
+    attribute: 'spaceStack(deprecated)',
     type: 'MQ<string>',
     default: 'space000',
-    description: `If provided, this overrides the stack space applied to the Radio Button.`,
+    description: `This property is deprecated. Use marginBlockEnd instead. If provided, this overrides the stack space applied to the Radio Button.`,
   },
   {
     attribute: 'input.stylePreset',
@@ -127,6 +129,7 @@ const commonOverridesRows = [
     ],
     description: 'If provided, overrides the size of the Radio Button icon.',
   },
+  ...(commonLogicalProps() as OverridesRowsProps[]),
 ];
 
 const radioButtonPropsRows = [

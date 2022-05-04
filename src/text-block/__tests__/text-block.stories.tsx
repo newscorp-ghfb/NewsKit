@@ -5,6 +5,7 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
+import {styled} from '../../utils';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-textblock-theme',
@@ -33,6 +34,9 @@ const myCustomTheme = createTheme({
 const bodyString =
   'Telling the stories that matter, seeding ideas and stirring emotion. Capturing moments, meaning and magic. Making sense of the world. On the shoulders of giants, in the thick of it, behind the scenes and fighting the good fight. Long form and rapid-fire, pragmatic and poetic, comical and critical. Being at the biggest events with the biggest names noticing the smallest details, and sticking up for the little guy.';
 
+const StyledDiv = styled.div`
+  border: 1px purple dotted;
+`;
 export default {
   title: 'NewsKit Light/text-block',
   component: () => 'None',
@@ -64,7 +68,6 @@ export const StoryWithOverriddenPresets = () => (
       <StorybookHeading>TextBlock</StorybookHeading>
       <StorybookSubHeading>With style-preset override</StorybookSubHeading>
       <TextBlock stylePreset="textblockCustom">{bodyString}</TextBlock>
-
       <StorybookSubHeading>With typography-preset override</StorybookSubHeading>
       <TextBlock typographyPreset="editorialParagraph010">
         {bodyString}
@@ -73,3 +76,23 @@ export const StoryWithOverriddenPresets = () => (
   </>
 );
 StoryWithOverriddenPresets.storyName = 'with overridden presets';
+
+export const StoryWithLogicalPropsOverrides = () => (
+  <>
+    <ThemeProvider theme={myCustomTheme}>
+      <StorybookHeading>TextBlock</StorybookHeading>
+      <StorybookSubHeading>With logical padding overrides</StorybookSubHeading>
+      <TextBlock stylePreset="textblockCustom" paddingBlock="space040">
+        {bodyString}
+      </TextBlock>
+
+      <StorybookSubHeading>With logical margin overrides</StorybookSubHeading>
+      <StyledDiv>
+        <TextBlock marginBlock="space040" stylePreset="textblockCustom">
+          {bodyString}
+        </TextBlock>
+      </StyledDiv>
+    </ThemeProvider>
+  </>
+);
+StoryWithLogicalPropsOverrides.storyName = 'with-logical-overrides';

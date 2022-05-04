@@ -1,24 +1,31 @@
 import React from 'react';
 import {ImageProps} from '../image/types';
 import {BaseLinkProps} from '../link/types';
+import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
-export interface CardOverridesProps {
+export interface CardOverridesProps extends LogicalProps {
   stylePreset?: MQ<string>;
   horizontalRatio?: string;
   mediaContainer?: {
     stylePreset?: MQ<string>;
     spaceInline?: MQ<string>;
-  };
+  } & LogicalProps;
   teaserContainer?: {
     stylePreset?: MQ<string>;
+    /**
+     * @deprecated This property is deprecated and will be removed in the next major release. Use `LogicalPaddingProps` instead.
+     */
     spaceInset?: MQ<string>;
-  };
+  } & LogicalProps;
   actionsContainer?: {
     stylePreset?: MQ<string>;
+    /**
+     * @deprecated This property is deprecated and will be removed in the next major release. Use `LogicalPaddingProps` instead.
+     */
     spaceInset?: MQ<string>;
     minHeight?: string;
-  };
+  } & LogicalProps;
 }
 
 export type HasHref = {
