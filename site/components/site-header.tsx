@@ -148,6 +148,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
         // stackDistribution="space-between"
       >
         <MobileMenu
+          // key={id}
           onClick={handleClick}
           onKeyDown={handleEnterKeyPress(handleClick)}
           tabIndex={0}
@@ -169,6 +170,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
       items.map(({title, id}) => (
         <StyledLinkItem
+          key={id}
           aria-current={
             currentRoute.split('/')[1].includes(id.split('/')[1]) || undefined
           }
