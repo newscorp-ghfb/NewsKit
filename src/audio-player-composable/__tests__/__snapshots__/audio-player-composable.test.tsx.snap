@@ -534,6 +534,14 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-11:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-11 {
     transition-property: background-color;
@@ -2504,6 +2512,14 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 .emotion-10:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

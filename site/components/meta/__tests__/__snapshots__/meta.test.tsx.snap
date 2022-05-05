@@ -368,6 +368,14 @@ exports[`Meta renders with mandatory props 1`] = `
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-23:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 .emotion-24 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1623,6 +1631,14 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 .emotion-23:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-23:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
 }
 
 .emotion-24 {

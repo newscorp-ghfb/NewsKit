@@ -384,6 +384,14 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   fill: #C0C0C0;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7 {
+      outline-offset: 2px;
+    }
+  }
+}
+
 .emotion-7:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
@@ -868,6 +876,14 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   fill: #C0C0C0;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7 {
+      outline-offset: 2px;
+    }
+  }
+}
+
 .emotion-7:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
@@ -1350,6 +1366,14 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 
 .emotion-7:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7 {
+      outline-offset: 2px;
+    }
+  }
 }
 
 .emotion-7:focus-visible:not(:disabled) {

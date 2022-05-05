@@ -147,6 +147,14 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -524,6 +532,14 @@ exports[`Byline renders correctly with authors and links 1`] = `
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -825,6 +841,14 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 .emotion-4:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
 }
 
 .emotion-5 {

@@ -356,6 +356,14 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -511,6 +519,14 @@ exports[`Button Loading Button renders a button with fixed for width and height 
 .emotion-0:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -670,6 +686,14 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -825,6 +849,14 @@ exports[`Button Loading Button renders a button with percentage for width and he
 .emotion-0:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -984,6 +1016,14 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -1139,6 +1179,14 @@ exports[`Button Loading Button renders a button with token set for width and hei
 .emotion-0:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1298,6 +1346,14 @@ exports[`Button renders Large Button 1`] = `
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -1455,6 +1511,14 @@ exports[`Button renders Small Button 1`] = `
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -1610,6 +1674,14 @@ exports[`Button renders button link when href passed 1`] = `
 .emotion-0:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1904,6 +1976,14 @@ exports[`Button renders fixed-width Button 1`] = `
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -2061,6 +2141,14 @@ exports[`Button renders full-width Button 1`] = `
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -2216,6 +2304,14 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 .emotion-0:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2418,6 +2514,14 @@ exports[`Button renders with different spaceInset preset 1`] = `
 .emotion-0:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2734,6 +2838,14 @@ exports[`Button renders with different typography preset 1`] = `
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -2889,6 +3001,14 @@ exports[`Button renders with fallback formatting 1`] = `
 .emotion-0:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

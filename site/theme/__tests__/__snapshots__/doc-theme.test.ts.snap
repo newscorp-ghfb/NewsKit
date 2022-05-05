@@ -608,6 +608,7 @@ Object {
     "outlineSizing030": "3px",
     "outlineStyleAuto": "auto",
     "outlineStyleSolid": "solid",
+    "safariOutlineOffsetDefault": "{{outline.outlineSizing020}}",
   },
   "overlays": Object {
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
@@ -2790,6 +2791,7 @@ Object {
     "outlineSizing030": "3px",
     "outlineStyleAuto": "auto",
     "outlineStyleSolid": "solid",
+    "safariOutlineOffsetDefault": "{{outline.outlineSizing020}}",
   },
   "overlays": Object {
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
@@ -4972,6 +4974,7 @@ Object {
     "outlineSizing030": "3px",
     "outlineStyleAuto": "auto",
     "outlineStyleSolid": "solid",
+    "safariOutlineOffsetDefault": "{{outline.outlineSizing020}}",
   },
   "overlays": Object {
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
@@ -7154,6 +7157,7 @@ Object {
     "outlineSizing030": "3px",
     "outlineStyleAuto": "auto",
     "outlineStyleSolid": "solid",
+    "safariOutlineOffsetDefault": "{{outline.outlineSizing020}}",
   },
   "overlays": Object {
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
@@ -9336,6 +9340,7 @@ Object {
     "outlineSizing030": "3px",
     "outlineStyleAuto": "auto",
     "outlineStyleSolid": "solid",
+    "safariOutlineOffsetDefault": "{{outline.outlineSizing020}}",
   },
   "overlays": Object {
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
@@ -11518,6 +11523,7 @@ Object {
     "outlineSizing030": "3px",
     "outlineStyleAuto": "auto",
     "outlineStyleSolid": "solid",
+    "safariOutlineOffsetDefault": "{{outline.outlineSizing020}}",
   },
   "overlays": Object {
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
@@ -13700,6 +13706,7 @@ Object {
     "outlineSizing030": "3px",
     "outlineStyleAuto": "auto",
     "outlineStyleSolid": "solid",
+    "safariOutlineOffsetDefault": "{{outline.outlineSizing020}}",
   },
   "overlays": Object {
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
@@ -15882,6 +15889,7 @@ Object {
     "outlineSizing030": "3px",
     "outlineStyleAuto": "auto",
     "outlineStyleSolid": "solid",
+    "safariOutlineOffsetDefault": "{{outline.outlineSizing020}}",
   },
   "overlays": Object {
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",

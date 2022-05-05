@@ -289,6 +289,7 @@ Object {
     "outlineSizing030": "3px",
     "outlineStyleAuto": "auto",
     "outlineStyleSolid": "solid",
+    "safariOutlineOffsetDefault": "2px",
   },
   "overlays": Object {
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",

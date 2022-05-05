@@ -87,6 +87,14 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-2 {
     transition-property: background-color;
@@ -1719,6 +1727,14 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 .emotion-2:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

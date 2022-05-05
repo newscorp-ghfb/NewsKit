@@ -74,6 +74,14 @@ exports[`Link does not render the external icon even if the href is external 1`]
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -188,6 +196,14 @@ exports[`Link does not render the external icon if the href is internal 1`] = `
 .emotion-0:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
 }
 
 .emotion-1 {
@@ -306,6 +322,14 @@ exports[`Link renders as expected in default state 1`] = `
   outline-offset: 3px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
+}
+
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -420,6 +444,14 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
 .emotion-0:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
 }
 
 .emotion-1 {
@@ -604,6 +636,14 @@ exports[`Link renders the external icon if the href is external 1`] = `
 .emotion-0:focus-visible:not(:disabled) {
   outline: #3768FB auto 2px;
   outline-offset: 3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: 2px;
+    }
+  }
 }
 
 .emotion-1 {
