@@ -16,6 +16,8 @@ import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
+import {commonLogicalProps} from '../../components/component-api/common-logical-props';
+import {OverridesRowsProps} from '../../components/component-api';
 
 const CTABtn = ({overrides, ...restProps}: ButtonOrButtonLinkProps) => (
   <Button
@@ -504,11 +506,11 @@ const BannerComponent = (layoutProps: LayoutProps) => (
                 'Overrides the stylePreset applied to the Banner container and the Icon color.',
             },
             {
-              attribute: 'spaceInset',
+              attribute: 'spaceInset(deprecated)',
               type: 'MQ<string>',
               default: 'spaceInset045',
               description:
-                'Overrides the space inset applied to the Banner container. It can take four space tokens to specify the padding for each side of the Banner. These four space tokens can also be used on breakpoints.	',
+                'Use paddingInline & paddingBlock instead. Overrides the space inset applied to the Banner container. It can take four space tokens to specify the padding for each side of the Banner. These four space tokens can also be used on breakpoints.	',
             },
             {
               attribute: 'minHeight',
@@ -602,6 +604,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
               description:
                 'Overrides the spacing between the action buttons and the close button.',
             },
+            ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
         },
       ],

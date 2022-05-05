@@ -233,7 +233,7 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
   const [srOnlyForwardRewind] = useReactKeys(1);
 
   return (
-    <PlayerContainer aria-label={ariaLandmark}>
+    <PlayerContainer aria-label={ariaLandmark} overrides={overrides}>
       <PlayerGrid
         xsMargin="space000"
         xsColumnGutter="space000"
