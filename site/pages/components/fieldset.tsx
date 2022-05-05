@@ -5,6 +5,7 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
+import {Link} from '../../components/link';
 
 const infoIcon = (
   <IconFilledInfo
@@ -59,6 +60,40 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
           description: 'Provides a caption for the Fieldset',
           component: 'Text Block',
           optional: true,
+        },
+      ],
+    }}
+    options={{
+      introduction:
+        'The Fieldset has options that can be used to provide an appropriate experience for different use cases.',
+      cards: [
+        {
+          title: 'Legend',
+          description:
+            'The Fieldset has a caption that gives a title attributed to the elements that appear in the Fieldset, called a Legend.',
+          media: getIllustrationComponent('components/fieldset/options/legend'),
+        },
+        {
+          title: 'Size',
+          description: (
+            <>
+              <Block spaceStack="space030">
+                There are three sizes of Fieldset Legend; small, medium, and
+                large.
+              </Block>
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="Size"
+                title="Note"
+              >
+                The size of the Legend, and any{' '}
+                <Link href="/components/form/">Form</Link> selection controls,
+                Labels, and Assistive Text can also be customised as required.
+              </InlineMessage>
+            </>
+          ),
+          media: getIllustrationComponent('components/fieldset/options/size'),
         },
       ],
     }}
