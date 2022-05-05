@@ -242,6 +242,24 @@ export const StoryAudioPlayer = () => (
 StoryAudioPlayer.storyName = 'audio-player';
 StoryAudioPlayer.parameters = {eyes: {waitBeforeCapture: 10000}};
 
+export const StoryAudioPlayerLogicalOverrides = () => (
+  <>
+    <StorybookSubHeading>with overrides</StorybookSubHeading>
+    <AudioPlayerContainer>
+      <AudioPlayer
+        {...recordedAudioProps}
+        popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
+        ariaLandmark="audio player with logical overrides"
+        overrides={{
+          marginBlock: 'space050',
+          paddingBlock: 'space050',
+        }}
+      />
+    </AudioPlayerContainer>
+  </>
+);
+StoryAudioPlayerLogicalOverrides.storyName = 'audio-player-logical-overrides';
+
 export const StoryRecordedAudioPlayerWithOnplay = () => (
   <AudioPlayerContainer>
     <AudioPlayer

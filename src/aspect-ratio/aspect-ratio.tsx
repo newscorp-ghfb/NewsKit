@@ -3,6 +3,9 @@ import {getAspectRatioStyles} from '../utils/get-aspect-ratio';
 import {Container, StyledDiv} from './styled';
 import {AspectRatioProps} from './types';
 
+/**
+ * @deprecated AspectRatio is deprecated and will be removed in the next major release.
+ */
 export const AspectRatio: React.FC<AspectRatioProps> = ({
   aspectRatio,
   width,

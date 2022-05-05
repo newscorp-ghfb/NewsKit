@@ -19,6 +19,10 @@ const Container = styled.div`
   })};
 `;
 
+const StyledDiv = styled.div`
+  border: 1px red dotted;
+`;
+
 export default {
   title: 'NewsKit Light/assistive-text',
   component: () => 'None',
@@ -128,3 +132,38 @@ export const AssistiveTextEnhancers = () => (
   </>
 );
 AssistiveTextEnhancers.storyName = 'assistive-text-enhancers';
+
+export const AssistiveTextWithLogicalPropsOverrides = () => (
+  <>
+    <StorybookSubHeading>
+      Assistive Text With Logical Paddings and Margins
+    </StorybookSubHeading>
+    <StyledDiv>
+      <AssistiveText
+        overrides={{paddingBlock: 'space050', marginBlock: 'space050'}}
+      >
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industrys standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </AssistiveText>
+    </StyledDiv>
+    <StorybookSubHeading>
+      Assistive Text With Logical Paddings, Margins and Enhancers
+    </StorybookSubHeading>
+    <StyledDiv>
+      <AssistiveText
+        startEnhancer={enhancer}
+        endEnhancer={enhancer}
+        overrides={{paddingBlock: 'space050', marginBlock: 'space050'}}
+      >
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industrys standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </AssistiveText>
+    </StyledDiv>
+  </>
+);
+AssistiveTextWithLogicalPropsOverrides.storyName =
+  'assistive-text-enhancers-with-logical-props-overrides';

@@ -5,6 +5,7 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
+import {styled} from '../../utils';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-byline-theme',
@@ -28,6 +29,10 @@ const myCustomTheme = createTheme({
     },
   },
 });
+
+const StyledDiv = styled.div`
+  border: 1px black solid;
+`;
 
 export default {
   title: 'NewsKit Light/byline',
@@ -197,6 +202,37 @@ export const StoryByline = () => (
         ]}
       />
     </ThemeProvider>
+    <StorybookHeading>with logical overrides</StorybookHeading>
+    <StyledDiv>
+      <Byline
+        overrides={{
+          marginBlock: 'space030',
+          paddingBlock: 'space030',
+        }}
+        bylineData={[
+          {
+            author: 'Alex Lowe',
+            href: 'https://www.thetimes.co.uk/profile/alex-lowe',
+            title: 'Deputy Rugby Correspondent',
+          },
+          {
+            author: 'Tom Knowles',
+            href: 'https://www.thetimes.co.uk/profile/tom-knowles',
+            title: 'West Coast Technology Reporter',
+          },
+          {
+            author: 'David Aaronovitch',
+            href: 'https://www.thetimes.co.uk/profile/david-aaronovitch',
+            title: 'Columnist',
+          },
+          {
+            author: 'Catherine Philp',
+            href: 'https://www.thetimes.co.uk/profile/catherine-philp',
+            title: 'Diplomatic Correspondent',
+          },
+        ]}
+      />
+    </StyledDiv>
   </>
 );
 StoryByline.storyName = 'byline';
