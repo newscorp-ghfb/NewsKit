@@ -1,4 +1,5 @@
 import {MQ} from '../utils/style';
+import {LogicalProps} from '../utils/logical-properties';
 
 export interface OrderedListProps {
   overrides?: {
@@ -12,5 +13,5 @@ export interface OrderedListProps {
       typographyPreset?: MQ<string>;
       minWidth?: MQ<string>;
     };
-  };
+  } & LogicalProps;
 }
