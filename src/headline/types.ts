@@ -5,7 +5,7 @@ export interface HeadlineOverrides extends LogicalProps {
   typographyPreset?: MQ<string>;
   kicker?: {
     stylePreset?: MQ<string>;
-    spaceInline?: MQ<string>; // used as a gap?
+    spaceInline?: MQ<string>;
   };
   heading?: {
     stylePreset?: MQ<string>;

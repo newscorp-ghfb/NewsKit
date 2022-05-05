@@ -1,4 +1,3 @@
-import {MouseEvent} from 'react';
 import {DividerOverrides} from '../divider';
 import {BaseFlagOverrides, BaseFlagProps} from '../flag';
 import {MQ} from '../utils';
@@ -23,7 +22,7 @@ export interface MenuProps extends React.AriaAttributes {
   size?: MenuSizeType;
   align?: MenutItemAlignTypes;
   overrides?: {
-    spaceInline?: MQ<string>; // -> space between menuItems
+    spaceInline?: MQ<string>; // Used as the gap between items. Should be renamed but not deprecated.
   } & LogicalProps;
 }
 
