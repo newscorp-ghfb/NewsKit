@@ -4,40 +4,13 @@ import {
   getStylePresetFromTheme,
   getSizingFromTheme,
   getSpacingFromTheme,
-  getBorderCssFromTheme,
   getSpacingCssFromTheme,
-  getSizingCssFromTheme,
-  getColorCssFromTheme,
 } from 'newskit';
 
 export const StyledLinkItem = styled.div<{
   $selected: boolean;
 }>`
-  ${getTypographyPresetFromTheme('utilityButton020', undefined, {
-    withCrop: true,
-  })};
-  ${({$selected, ...props}) =>
-    getStylePresetFromTheme('sidebarNavItem', undefined, {
-      isSelected: $selected,
-    })(props)}
-  box-sizing: border-box;
-  cursor: 'pointer';
-  ${getSizingCssFromTheme('height', 'sizing060')};
-  min-width: 230px;
-  padding: ${getSpacingFromTheme('spaceInset030')} 0;
-  margin: ${({theme}) => `${theme.spacePresets.space010} 0`};
-  text-overflow: ellipsis;
-  position: relative;
-  &.selected {
-    ::before {
-      position: absolute;
-      left: -${getSizingFromTheme('sizing060')};
-      ${getColorCssFromTheme('background', 'blue060')}
-      ${getSizingCssFromTheme('height', 'sizing070')};
-      ${getSizingCssFromTheme('width', 'sizing030')};
-      ${getSizingCssFromTheme('top', 'sizing000')};
-      ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
-    }
+
   }
 `;
 

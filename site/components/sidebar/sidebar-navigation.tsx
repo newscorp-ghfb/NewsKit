@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {HTMLAttributes, useEffect, useRef} from 'react';
 import {useRouter} from 'next/router';
 import {
   Block,
@@ -17,6 +17,8 @@ import {
 import routes from '../../routes';
 import {Visible} from '../../../src/grid/visibility';
 import {MenuNavCollapsible} from '../menu-collapsible/menu-collapsible';
+import {PageLinkProps} from './types';
+import {StyledLinkItem} from './styled';
 
 export const DesktopNavigationDivider = styled.div`
   width: 100vw;
@@ -74,46 +76,36 @@ type SiteMenuItemProps = {
   }>;
 };
 
-// const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
-//   const ref = useRef<HTMLDivElement>(null);
+const PageLink: React.FC<PageLinkProps & HTMLAttributes<HTMLDivElement>> = ({
+  page,
+  active,
+}) => {
+  const ref = useRef<HTMLDivElement>(null);
 
-//   useEffect(() => {
-//     if (active && ref && ref.current) {
-//       ref.current.scrollIntoView({block: 'center'});
-//     }
-//   });
+  useEffect(() => {
+    if (active && ref && ref.current) {
+      ref.current.scrollIntoView({block: 'center'});
+    }
+  });
 
-//   return (
-//     <div ref={ref}>
-//       <StyledLinkItem data-testid={page} $selected={active}>
-//         {page}
-//       </StyledLinkItem>
-//     </div>
-//   );
-// };
+  return (
+    <div ref={ref}>
+      {/* <Link
+        type="standalone"
+        href={page.id}
+        overrides={{stylePreset: 'linkNoUnderline'}}
+      > */}
+      <StyledLinkItem data-testid={page} $selected={active}>
+        {page}
+      </StyledLinkItem>
+      {/* </Link> */}
+    </div>
+  );
+};
 const SiteMenuItem = React.forwardRef<HTMLDivElement, SiteMenuItemProps>(
   ({menuItemList}) => {
     const path = useRouter()?.pathname || '';
 
-    // useEffect(() => {
-    //   if (ref && ref.current) {
-    //     ref.current.scrollIntoView();
-    //     console.log(ref.current);
-    //   }
-    // });
-    // console.log(ref);
-    // const executeScroll = () => myRef.current.scrollIntoView();
-    // const currentRoute = path.match(/\/[A-z\d-]*/g);
-    // const currentSection =
-    //   currentRoute && routes.filter(({id}) => id === currentRoute[0]);
-    // const ref = useRef<HTMLDivElement>(null);
-
-    // useEffect(() => {
-    //   if (path && ref && ref.current && ref !== null) {
-    //     ref.current.scrollIntoView({block: 'center'});
-    //     console.log(ref.current);
-    //   }
-    // });
     return (
       <div>
         {menuItemList &&
@@ -125,13 +117,15 @@ const SiteMenuItem = React.forwardRef<HTMLDivElement, SiteMenuItemProps>(
                   title.includes('Getting started') ? (
                     <Block spaceStack="space060" />
                   ) : (
-                    <div>
+                    <>
+                      <PageLink
+                        className={path.includes(id) ? 'selected' : undefined}
+                        active={path.includes(id)}
+                      />
                       <Indicator
                         className={path.includes(id) ? 'selected' : undefined}
                       />
-
                       <MenuItemStyled
-                        //  onClick={onBackClick}
                         href={id}
                         overrides={{
                           typographyPreset: 'utilityButton020',
@@ -152,15 +146,15 @@ const SiteMenuItem = React.forwardRef<HTMLDivElement, SiteMenuItemProps>(
                           }}
                         >
                           {/* <PageLink
-                            //  key={subNav}
-                            page={(subNav as unknown) as PageType}
-                            active={path.includes(id) ? 'selected' : undefined}
-                          > */}
+      //  key={subNav}
+      page={(subNav as unknown) as PageType}
+      active={path.includes(id) ? 'selected' : undefined}
+    > */}
                           {title}
                           {/* </PageLink> */}
                         </Label>
                       </MenuItemStyled>
-                    </div>
+                    </>
                   )}
                 </>
               ) : (
@@ -204,14 +198,6 @@ const MenuNavDesktop = () => {
   const currentSection =
     currentRoute && routes.filter(({id}) => id === currentRoute[0]);
 
-  const testRef = useRef<HTMLDivElement>(null);
-  // function handleBackClick() {
-  //   if (testRef && testRef.current && testRef) {
-  //     testRef.current.scrollIntoView({block: 'center'});
-  //   }
-  // }
-  console.log(testRef, 'test');
-
   return (
     <>
       <Menu
@@ -224,12 +210,7 @@ const MenuNavDesktop = () => {
         {currentSection &&
           currentSection.map(({title, subNav}) => (
             <div key={title}>
-              <SiteMenuItem
-                // ref={testRef}
-
-                // onBackClick={handleBackClick}
-                menuItemList={subNav}
-              />
+              <SiteMenuItem menuItemList={subNav} />
             </div>
           ))}
       </Menu>

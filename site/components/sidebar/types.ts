@@ -29,7 +29,7 @@ type SectionPropType = {
 };
 
 export interface PageLinkProps {
-  page: PageType;
+  page?: PageType;
   active: boolean;
 }
 
