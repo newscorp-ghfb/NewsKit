@@ -32,6 +32,10 @@ const myCustomTheme = createTheme({
   },
 });
 
+const StyledDiv = styled.div`
+  border: 1px red dotted;
+`;
+
 const Container = styled.div<{hasBackground?: boolean}>`
   max-width: 600px;
   margin: 0 auto;
@@ -499,3 +503,67 @@ export const StoryLinkStandAloneTransition = () => (
   </Container>
 );
 StoryLinkStandAloneTransition.storyName = 'link-standalone-transition';
+export const StoryLinkWithLogicalPropsOverrides = () => (
+  <Container>
+    <StorybookHeading>Standalone link with logical padding</StorybookHeading>
+    <StyledDiv>
+      <LinkStandalone href="/" overrides={{paddingBlock: 'space030'}}>
+        Standalone link
+      </LinkStandalone>
+    </StyledDiv>
+    <br />
+    <br />
+    <StorybookHeading>Standalone link with logical margin</StorybookHeading>
+    <StyledDiv>
+      <LinkStandalone href="/" overrides={{marginBlock: 'space030'}}>
+        Standalone link
+      </LinkStandalone>
+    </StyledDiv>
+    <br />
+    <br />
+    <StorybookHeading>Inline link with logical padding</StorybookHeading>
+    <StyledDiv>
+      <LinkInline href="/" overrides={{paddingBlock: 'space030'}}>
+        Inline link
+      </LinkInline>
+    </StyledDiv>
+    <br />
+    <br />
+    <StorybookHeading>Inline link with logical margin</StorybookHeading>
+    <StyledDiv>
+      <LinkInline href="/" overrides={{marginBlock: 'space030'}}>
+        Inline link
+      </LinkInline>
+    </StyledDiv>
+    <StorybookHeading>
+      Inline link in a parapgraph with logical margin & padding
+    </StorybookHeading>
+    <CustomPragraph>
+      Officials said that the{' '}
+      <LinkInline
+        href="http://localhost:6006"
+        overrides={{
+          paddingInline: 'space030',
+        }}
+      >
+        Apple-Google model
+      </LinkInline>{' '}
+      was unable to differentiate between a phone that was in someone’s hand
+      three metres away from a phone that was in someone’s pocket
+    </CustomPragraph>
+    <CustomPragraph>
+      <LinkInline
+        href="http://localhost:6006"
+        overrides={{
+          marginInline: 'space030',
+        }}
+      >
+        one metre away.
+      </LinkInline>{' '}
+      “That is a really important distinction if you’re going to use the app to
+      determine whether or not you spend 14 days at home,” one said.
+    </CustomPragraph>
+  </Container>
+);
+StoryLinkWithLogicalPropsOverrides.storyName =
+  'link-with-logical-props-overrides';

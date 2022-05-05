@@ -8,6 +8,8 @@ import {ContentText} from '../../components/text-section/content-text';
 import {InlineCode} from '../../components/markdown-elements';
 import {UsageKind} from '../../components/usage-card';
 import {Link} from '../../components/link';
+import {commonLogicalProps} from '../../components/component-api/common-logical-props';
+import {OverridesRowsProps} from '../../components/component-api';
 
 const infoIcon = (
   <IconFilledInfo
@@ -44,27 +46,27 @@ const commonPropsRows = (type?: string) => [
 
 const commonOverridesRows = [
   {
-    attribute: 'checkbox.size',
+    attribute: 'input.size',
     type: 'checkboxSize',
     default: ['Small = sizing050', 'Medium = sizing060', 'Large =sizing070'],
     description: 'If provided, this overrides the size of the Checkbox input.',
   },
   {
-    attribute: 'checkbox.stylePreset',
+    attribute: 'input.stylePreset',
     type: 'MQ<string>',
     default: 'inputField',
     description:
       'If provided, overrides the stylePreset of the Checkbox input.',
   },
   {
-    attribute: 'checkbox.transitionPreset',
+    attribute: 'input.transitionPreset',
     type: 'MQ<string>',
     default: 'backgroundColorChange, borderColorChange',
     description:
       'If provided, overrides the transitionPreset of the Checkbox input.',
   },
   {
-    attribute: 'checkbox.spaceInline',
+    attribute: 'input.spaceInline',
     type: 'MQ<string>',
     default: [
       'spaceInline030',
@@ -75,26 +77,26 @@ const commonOverridesRows = [
       'If provided, this overrides the inline space between the Checkbox input and Label.',
   },
   {
-    attribute: 'checkbox.spaceStack',
+    attribute: 'spaceStack(deprecated)',
     type: 'MQ<string>',
     default: '',
     description:
-      'If provided, this overrides the stack space applied to the Checkbox.',
+      'This property is deprecated. Use marginBlockEnd instead. If provided, this overrides the stack space applied to the Checkbox.',
   },
   {
-    attribute: 'checkbox.icon',
+    attribute: 'icon',
     type: 'MQ<string>',
     default: 'check',
     description: 'If provided, overrides the Checkbox icon.',
   },
   {
-    attribute: 'checkbox.icon.size',
+    attribute: 'icon.size',
     type: 'MQ<string>',
     default: 'iconSize020',
     description: 'If provided, overrides the size of the Checkbox icon.',
   },
   {
-    attribute: 'checkbox.icon.stylePreset',
+    attribute: 'icon.stylePreset',
     type: 'MQ<string>',
     default: 'inkInverse',
     description: 'If provided, overrides the stylePreset of the Checkbox icon.',
@@ -121,7 +123,7 @@ const commonOverridesRows = [
       'If provided, overrides the transitionPreset of the feedback element.',
   },
   {
-    attribute: 'checkbox.label.typographyPreset',
+    attribute: 'label.typographyPreset',
     type: 'MQ<string>',
     default: [
       'Small = utilityBody020',
@@ -132,11 +134,12 @@ const commonOverridesRows = [
       'If provided, this overrides the typographyPreset of the Label.',
   },
   {
-    attribute: 'checkbox.label.stylePreset',
+    attribute: 'label.stylePreset',
     type: 'MQ<string>',
     default: 'inkBase',
     description: 'If provided, this overrides the stylePreset of the Label.',
   },
+  ...(commonLogicalProps() as OverridesRowsProps[]),
 ];
 
 const CheckboxComponent = (layoutProps: LayoutProps) => (
@@ -869,7 +872,6 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
                 </>
               ),
             },
-            ...commonPropsRows(),
           ],
           overridesRows: commonOverridesRows,
         },
