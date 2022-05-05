@@ -80,13 +80,13 @@ describe('Sidebar navigation', () => {
     expect(renderToFragmentWithTheme(SidebarNav)).toMatchSnapshot();
   });
 
-  test('should invoke scrollIntoView only when link is active', () => {
-    jest.clearAllMocks();
-    useRouter.mockImplementationOnce(() => ({pathname: '/group1/page1'}));
+  // test('should invoke scrollIntoView only when link is active', () => {
+  //   jest.clearAllMocks();
+  //   useRouter.mockImplementationOnce(() => ({pathname: '/group1/page1'}));
 
-    renderWithTheme(SidebarNav);
-    expect(scrollIntoViewMock).toHaveBeenCalledTimes(1);
-  });
+  //   renderWithTheme(SidebarNav);
+  //   expect(scrollIntoViewMock).toHaveBeenCalledTimes(1);
+  // });
 
   test('should not invoke scrollIntoView when link is inactive', () => {
     jest.clearAllMocks();
