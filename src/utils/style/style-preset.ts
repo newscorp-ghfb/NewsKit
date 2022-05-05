@@ -28,6 +28,7 @@ export interface GetStylePresetFromThemeOptions {
   omitStyles?: StylePresetStyleKeys[];
   filterStyles?: StylePresetStyleKeys[];
   isFocusedVisible?: boolean;
+  isDivWrapper?: boolean;
 }
 
 /* When we are not on directly on a svg we need to add an
@@ -188,7 +189,25 @@ const getStylePresetValueFromTheme = (
             ? `:${stateKey} ${nestedCssSelector || ''}`
             : `:${stateKey}:not(:disabled) ${nestedCssSelector || ''}`;
 
-        const styles = getPresetStyles(presetState, options);
+        const {safariOutlineOffset, ...styles} = getPresetStyles(
+          presetState,
+          options,
+        );
+        if (safariOutlineOffset) {
+          if (options?.isDivWrapper) {
+            acc['@media not all and (min-resolution: 0.001dpcm)'] = {
+              '@supports (-webkit-appearance: none) and (stroke-color: transparent)': {
+                outlineOffset: safariOutlineOffset as string,
+              },
+            };
+          } else {
+            styles['@media not all and (min-resolution: 0.001dpcm)'] = {
+              '@supports (-webkit-appearance: none) and (stroke-color: transparent)': {
+                outlineOffset: safariOutlineOffset as string,
+              },
+            };
+          }
+        }
         if (stateKey === 'base') {
           if (nestedCssSelector) {
             acc[nestedCssSelector] = styles;

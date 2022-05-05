@@ -27,6 +27,7 @@ export interface StylePresetStyles {
   wordBreak?: string;
   outline?: string;
   outlineOffset?: string;
+  safariOutlineOffset?: string;
   opacity?: string;
 }
 export type StylePresetStyleKeys = keyof StylePresetStyles;

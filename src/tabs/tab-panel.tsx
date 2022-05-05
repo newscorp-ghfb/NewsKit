@@ -23,7 +23,6 @@ export const TabPanel: React.FC<TabPanelProps> = ({
   id,
   /* istanbul ignore next */
   selected = false,
-  safariOutlineOffset,
 }) => (
   <StyledTabPanelBlock
     onMouseDown={preventClickFocus}
@@ -35,7 +34,6 @@ export const TabPanel: React.FC<TabPanelProps> = ({
     selected={selected}
     tabIndex={selected ? 0 : -1}
     hidden={!selected}
-    safariOutlineOffset={safariOutlineOffset}
   >
     {children}
   </StyledTabPanelBlock>

@@ -21,7 +21,6 @@ export const TabInternal = React.forwardRef<
       /* istanbul ignore next */
       align = TabAlign.Center,
       dataTestId = 'tab',
-      safariOutlineOffset,
       ...props
     },
     ref,
@@ -58,7 +57,6 @@ export const TabInternal = React.forwardRef<
         {...props}
         overrides={tabSettings}
         align={align}
-        safariOutlineOffset={safariOutlineOffset}
       >
         {children}
       </StyledTabButton>

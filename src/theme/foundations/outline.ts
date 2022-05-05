@@ -14,4 +14,6 @@ export const outline = {
   outlineDefault:
     '{{colors.outlinePrimary010}} {{outline.outlineStyleAuto}} {{borders.borderWidth020}}',
   outlineOffsetDefault: '{{outline.outlineSizing030}}',
+
+  safariOutlineOffsetDefault: '{{outline.outlineSizing020}}',
 };
