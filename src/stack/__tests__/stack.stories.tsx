@@ -767,6 +767,28 @@ export const StoryResponsive = () => (
 
 StoryResponsive.storyName = 'responsive';
 
+export const StoryStackWithLogicalProps = () => (
+  <MainContainer>
+    <StorybookHeading>Stack with logical margin</StorybookHeading>
+    <Container>
+      <Stack marginBlock="space050">
+        <Tag>Example 1</Tag>
+        <Tag>Example 2</Tag>
+        <Tag>Example 3</Tag>
+      </Stack>
+    </Container>
+    <StorybookHeading>Stack with logical padding</StorybookHeading>
+    <Container>
+      <Stack paddingBlock="space050">
+        <Tag>Example 1</Tag>
+        <Tag>Example 2</Tag>
+        <Tag>Example 3</Tag>
+      </Stack>
+    </Container>
+  </MainContainer>
+);
+StoryStackWithLogicalProps.storyName = 'stack-with-logical-props';
+
 // @ts-ignore
 const StoryStackTemplate = ({wrap, ...args}) => (
   <Stack {...args} wrap={wrap}>

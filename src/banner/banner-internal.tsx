@@ -23,6 +23,7 @@ import {deepMerge} from '../utils';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 import {Cell, Grid} from '../grid';
 import {childrenIsString} from '../utils/react-children-utilities';
+import {omitLogicalPropsFromOverrides} from '../utils/logical-properties';
 
 export const BannerInternal: React.FC<BannerInternalProps> = ({
   actions,
@@ -51,6 +52,8 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
     overrides?.actions?.spaceInline ||
     theme.componentDefaults.banner[layout].actions.spaceInline;
 
+  const nonLogicalOverrides = omitLogicalPropsFromOverrides(overrides);
+
   return (
     <StyledBannerContainer
       role="region"
@@ -70,18 +73,21 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
             stackDistribution="flex-start"
             wrap="nowrap"
             layout={layout}
-            overrides={overrides}
+            overrides={nonLogicalOverrides}
           >
             <StyledIconContentContainer
               flow={Flow.HorizontalTop}
               stackDistribution="flex-start"
               wrap="nowrap"
               layout={layout}
-              overrides={overrides}
+              overrides={nonLogicalOverrides}
               height="auto"
             >
               {icon && (
-                <StyledIconContainer layout={layout} overrides={overrides}>
+                <StyledIconContainer
+                  layout={layout}
+                  overrides={nonLogicalOverrides}
+                >
                   {icon}
                 </StyledIconContainer>
               )}
@@ -90,14 +96,14 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
                   <StyledTitleContainer
                     as="span"
                     layout={layout}
-                    overrides={overrides}
+                    overrides={nonLogicalOverrides}
                   >
                     {title}
                   </StyledTitleContainer>
                 )}
                 <StyledMessageContainer
                   layout={layout}
-                  overrides={overrides}
+                  overrides={nonLogicalOverrides}
                   as={childrenIsString(children) ? 'p' : 'div'}
                 >
                   {children}

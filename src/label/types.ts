@@ -7,11 +7,11 @@ export interface LabelOverrides extends LogicalProps {
   stylePreset?: MQ<string>;
   typographyPreset?: MQ<string>;
   /**
-   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlock` instead.
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlockEnd` instead.
    */
   spaceStack?: MQ<string>;
   /**
-   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginInline` instead.
+   * @deprecated This property is deprecated and will be removed in the next major release. Use `marginInlineEnd` instead.
    */
   spaceInline?: MQ<string>;
 }

@@ -1,17 +1,21 @@
+import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
-export interface CaptionOverrides {
-  typographyPreset?: MQ<string>;
-  stylePreset?: MQ<string>;
-  spaceStack?: MQ<string>;
-  spaceInset?: MQ<string>;
-  credit?: {
-    typographyPreset?: MQ<string>;
-    stylePreset?: MQ<string>;
-  };
-}
+// Caption component will be rebuilt in https://nidigitalsolutions.jira.com/browse/PPDSC-2091 to introduce breaking changes on the interface.
 export interface CaptionProps {
   captionText?: string;
   creditText?: string;
-  overrides?: CaptionOverrides;
+  overrides?: {
+    typographyPreset?: MQ<string>;
+    stylePreset?: MQ<string>;
+    spaceStack?: MQ<string>; // Note: spaceStack is used as a gap. Should rename this instead of using logical props.
+    /**
+     * @deprecated This property is deprecated and will be removed in the next major release. Use `PaddingInline` & `PaddingBlock` instead.
+     */
+    spaceInset?: MQ<string>;
+    credit?: {
+      typographyPreset?: MQ<string>;
+      stylePreset?: MQ<string>;
+    };
+  } & LogicalProps;
 }
