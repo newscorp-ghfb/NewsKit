@@ -176,6 +176,19 @@ const getPresetStates = (
   return presetStates;
 };
 
+// funtion to add Sarafri speific CSS
+const addSafariMediaTag = (
+  cssObject: CSSObject,
+  safariOutlineOffset: string,
+) => {
+  // eslint-disable-next-line no-param-reassign
+  cssObject['@media not all and (min-resolution: 0.001dpcm)'] = {
+    '@supports (-webkit-appearance: none) and (stroke-color: transparent)': {
+      outlineOffset: safariOutlineOffset,
+    },
+  };
+};
+
 const getStylePresetValueFromTheme = (
   stylePreset: StylePreset,
   options?: GetStylePresetFromThemeOptions,
@@ -193,19 +206,13 @@ const getStylePresetValueFromTheme = (
           presetState,
           options,
         );
+        // check if sttle preset has Safari outline offset
         if (safariOutlineOffset) {
+          // check if component is wrapped in dev where the css needs to be assigned
           if (options?.isDivWrapper) {
-            acc['@media not all and (min-resolution: 0.001dpcm)'] = {
-              '@supports (-webkit-appearance: none) and (stroke-color: transparent)': {
-                outlineOffset: safariOutlineOffset as string,
-              },
-            };
+            addSafariMediaTag(acc, safariOutlineOffset as string);
           } else {
-            styles['@media not all and (min-resolution: 0.001dpcm)'] = {
-              '@supports (-webkit-appearance: none) and (stroke-color: transparent)': {
-                outlineOffset: safariOutlineOffset as string,
-              },
-            };
+            addSafariMediaTag(styles, safariOutlineOffset as string);
           }
         }
         if (stateKey === 'base') {

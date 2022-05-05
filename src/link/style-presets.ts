@@ -64,6 +64,7 @@ export default {
     'focus-visible': {
       outline: '{{outline.outlineDefault}}',
       outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineOffset: '{{outline.safariOutlineOffsetDefault}}',
     },
   },
   linkInlineInverse: {
