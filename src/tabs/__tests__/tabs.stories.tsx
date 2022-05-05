@@ -201,7 +201,6 @@ export const StoryTabsDistributionStart = () => (
       distribution={TabsDistribution.Start}
       divider
       initialSelectedIndex={10}
-      overrides={{safariOutlineOffset: '-5px'}}
     >
       <Tab label="H tab 1" key="tab-1">
         <LoremIpsum textNumber={1} />
