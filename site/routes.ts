@@ -300,6 +300,14 @@ export default [
             illustration: 'components/checkbox/hero',
           },
           {
+            title: 'Fieldset',
+            page: true,
+            id: '/components/fieldset',
+            description:
+              'The Fieldset is used to provide contextual information around a group of form controls in a web form.',
+            illustration: 'components/fieldset/hero',
+          },
+          {
             title: 'Form',
             page: true,
             id: '/components/form',
