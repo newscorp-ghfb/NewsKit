@@ -44,7 +44,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
         <Block
           spaceStack={
             // we want larger stack when children is not present so align with the rest of titles
-            children ? {xs: 'space050', md: 'space060'} : subHeadingSpaceStack
+            children ? {xs: 'space050', md: 'space060'} : 'space060'
           }
         >
           <TitleBar
