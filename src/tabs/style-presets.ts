@@ -31,6 +31,10 @@ export default {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
+    focus: {
+      outlineOffset: '-1px',
+      safariOutlineOffset: '-5px',
+    },
   },
   tabsBarTrack: {
     base: {

@@ -8,7 +8,7 @@ export const outline = {
 
   outlineSizing000: '0',
   outlineSizing010: '1px',
-  outlineSizing020: '2px',
+  outlineSizing020: '12px',
   outlineSizing030: '3px',
 
   outlineDefault:
