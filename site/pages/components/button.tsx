@@ -6,6 +6,8 @@ import {UsageKind} from '../../components/usage-card';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {commonLogicalProps} from '../../components/component-api/common-logical-props';
+import {OverridesRowsProps} from '../../components/component-api';
 
 const infoIcon = (
   <IconFilledInfo
@@ -167,6 +169,7 @@ const commonOverridesRows = [
     description:
       'If provided, this overrides the style preset applied to the underlying indeterminate progress indicator icon. The loading indicator icon is shown only when the loading prop is set to true.',
   },
+  ...(commonLogicalProps() as OverridesRowsProps[]),
 ];
 
 const ButtonComponent = (layoutProps: LayoutProps) => (
