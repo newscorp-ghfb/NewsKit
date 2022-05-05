@@ -97,6 +97,25 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
+    states={{
+      introduction: 'The Fieldset has the following states:',
+      layout: '2-span',
+      cards: [
+        {
+          title: 'Base',
+          description: 'The Fieldset has a base (default) state.',
+          media: getIllustrationComponent('components/fieldset/states/base'),
+        },
+        {
+          title: 'Disabled',
+          description:
+            'The Fieldset in a disabled state communicates that the grouped form selection controls exist, but are not available to the user in that scenario. Disabled Fieldsets are often used to maintain layout consistency in a Form, and communicate that a form selection control may become available if another condition has been met. The style of the Legend (colour) also changes to indicate that the form selection controls grouped with the Fieldset are disabled.',
+          media: getIllustrationComponent(
+            'components/fieldset/states/disabled',
+          ),
+        },
+      ],
+    }}
     accessibility={{
       introduction: (
         <>
