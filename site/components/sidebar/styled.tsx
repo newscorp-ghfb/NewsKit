@@ -5,13 +5,40 @@ import {
   getSizingFromTheme,
   getSpacingFromTheme,
   getSpacingCssFromTheme,
+  MenuItem,
+  getColorFromTheme,
 } from 'newskit';
 
-export const StyledLinkItem = styled.div<{
+export const DesktopNavigationDivider = styled.div`
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  ${getSpacingCssFromTheme('marginTop', 'space045')};
+  ${getSpacingCssFromTheme('marginBottom', 'space060')};
+`;
+
+export const Indicator = styled.div`
+  &.selected {
+    position: relative;
+    overflow: visible;
+    ::before {
+      content: '';
+      position: absolute;
+      background: ${getColorFromTheme('blue060')};
+      height: ${getSizingFromTheme('sizing070')};
+      width: ${getSizingFromTheme('sizing010')};
+
+      ${getStylePresetFromTheme('interactivePrimary030')};
+      border-width: 4px;
+      border-radius: 0 4px 4px 0;
+    }
+  }
+`;
+
+export const MenuItemStyled = styled(MenuItem)<{
   $selected: boolean;
 }>`
-
-  }
+  width: 276px;
 `;
 
 export const StyledFirstLevelHeader = styled.div`
