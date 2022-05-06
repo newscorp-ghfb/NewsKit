@@ -1,4 +1,4 @@
-import React, {MouseEvent} from 'react';
+import React, {MouseEvent, useState} from 'react';
 import {TabPanelProps} from './types';
 import {StyledTabPanelBlock} from './styled';
 
@@ -23,18 +23,27 @@ export const TabPanel: React.FC<TabPanelProps> = ({
   id,
   /* istanbul ignore next */
   selected = false,
-}) => (
-  <StyledTabPanelBlock
-    onMouseDown={preventClickFocus}
-    data-testid="tab-panel"
-    as="div"
-    aria-labelledby={id}
-    role="tabpanel"
-    aria-hidden={!selected}
-    selected={selected}
-    tabIndex={selected ? 0 : -1}
-    hidden={!selected}
-  >
-    {children}
-  </StyledTabPanelBlock>
-);
+}) => {
+  const [focused, setFocused] = useState(false);
+  return (
+    <StyledTabPanelBlock
+      onMouseDown={preventClickFocus}
+      data-testid="tab-panel"
+      as="div"
+      aria-labelledby={id}
+      role="tabpanel"
+      aria-hidden={!selected}
+      selected={selected}
+      tabIndex={selected ? 0 : -1}
+      hidden={!selected}
+      onFocus={() => setFocused(true)}
+      onBlur={() => setFocused(false)}
+      isFocused={focused}
+      overrides={{
+        stylePreset: 'tabPanel',
+      }}
+    >
+      {children}
+    </StyledTabPanelBlock>
+  );
+};

@@ -441,10 +441,6 @@ exports[`TabsWithTable renders with default data 1`] = `
   }
 }
 
-.emotion-15:focus {
-  outline-offset: -1px;
-}
-
 .emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -564,10 +560,6 @@ exports[`TabsWithTable renders with default data 1`] = `
   }
 }
 
-.emotion-21:focus {
-  outline-offset: -1px;
-}
-
 .emotion-25 {
   background-color: #577FFB;
   position: absolute;
@@ -590,6 +582,18 @@ exports[`TabsWithTable renders with default data 1`] = `
 .emotion-27 {
   margin: 0;
   width: 100%;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-27 {
+      outline-offset: -5px;
+    }
+  }
+}
+
+.emotion-27:focus:not(:disabled) {
+  outline-offset: -1px;
 }
 
 .emotion-33 {

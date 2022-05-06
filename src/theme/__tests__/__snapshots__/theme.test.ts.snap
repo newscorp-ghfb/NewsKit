@@ -4497,6 +4497,10 @@ Object {
       "color": "{{colors.inkNonEssential}}",
       "iconColor": "{{colors.inkNonEssential}}",
     },
+    "focus": Object {
+      "outlineOffset": "-1px",
+      "safariOutlineOffset": "-5px",
+    },
     "hover": Object {
       "backgroundColor": "{{colors.interactivePrimary010}}",
       "color": "{{colors.inkBrand010}}",
@@ -4510,6 +4514,12 @@ Object {
       "backgroundColor": "{{colors.transparent}}",
       "color": "{{colors.inkBrand010}}",
       "iconColor": "{{colors.inkBrand010}}",
+    },
+  },
+  "tabPanel": Object {
+    "focus": Object {
+      "outlineOffset": "-1px",
+      "safariOutlineOffset": "-5px",
     },
   },
   "tabsBarIndicator": Object {

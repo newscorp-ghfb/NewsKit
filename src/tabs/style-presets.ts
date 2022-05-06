@@ -31,6 +31,10 @@ export default {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
+    focus: {
+      outlineOffset: '-1px',
+      safariOutlineOffset: '-5px',
+    },
   },
   tabsBarTrack: {
     base: {
@@ -40,6 +44,12 @@ export default {
   tabsBarIndicator: {
     base: {
       backgroundColor: '{{colors.interactivePrimary030}}',
+    },
+  },
+  tabPanel: {
+    focus: {
+      outlineOffset: '-1px',
+      safariOutlineOffset: '-5px',
     },
   },
 } as Record<string, StylePreset>;
