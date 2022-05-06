@@ -158,12 +158,18 @@ export const StoryLogicalProps = () => (
   <>
     <StorybookHeading>Inline message</StorybookHeading>
     <StorybookSubHeading>With logical padding props</StorybookSubHeading>
-    <InlineMessage overrides={{paddingInline: '50px'}}>
+    <InlineMessage
+      aria-label="with logical padding overrides"
+      overrides={{paddingInline: '50px'}}
+    >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
     </InlineMessage>
     <StorybookSubHeading>With logical margin props</StorybookSubHeading>
-    <InlineMessage overrides={{marginInline: '50px'}}>
+    <InlineMessage
+      aria-label="with logical margin overrides"
+      overrides={{marginInline: '50px'}}
+    >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
     </InlineMessage>
