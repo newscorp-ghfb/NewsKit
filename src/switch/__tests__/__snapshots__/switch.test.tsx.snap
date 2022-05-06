@@ -227,7 +227,6 @@ exports[`Switch hover on feedback shows it: with hover 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -514,7 +513,6 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -757,7 +755,6 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -1001,7 +998,6 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -1259,7 +1255,6 @@ exports[`Switch hover on label trigger Switch hover styles: with hover 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -1546,7 +1541,6 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -1789,7 +1783,6 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -2033,7 +2026,6 @@ exports[`Switch hover on label with disabled do not change hover state: without 
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -2323,7 +2315,6 @@ exports[`Switch label attributes 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -2615,7 +2606,6 @@ exports[`Switch label position start 1`] = `
         class="emotion-4"
       >
         <div
-          aria-hidden="true"
           class="emotion-5"
         >
           <div
@@ -2897,7 +2887,6 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -3180,7 +3169,6 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -3455,7 +3443,6 @@ exports[`Switch render with size: large & checked 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -3699,7 +3686,6 @@ exports[`Switch render with size: large & disabled 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -3987,7 +3973,6 @@ exports[`Switch render with size: large 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -4262,7 +4247,6 @@ exports[`Switch render with size: medium & checked 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -4506,7 +4490,6 @@ exports[`Switch render with size: medium & disabled 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -4794,7 +4777,6 @@ exports[`Switch render with size: medium 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -5069,7 +5051,6 @@ exports[`Switch render with size: small & checked 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -5313,7 +5294,6 @@ exports[`Switch render with size: small & disabled 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -5601,7 +5581,6 @@ exports[`Switch render with size: small 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -5888,7 +5867,6 @@ exports[`Switch render with state: base 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -6164,7 +6142,6 @@ exports[`Switch render with state: checked 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -6409,7 +6386,6 @@ exports[`Switch render with state: checked-disabled 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -6655,7 +6631,6 @@ exports[`Switch render with state: disabled 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div
@@ -6907,7 +6882,6 @@ exports[`Switch with overrides 1`] = `
         class="emotion-3"
       >
         <div
-          aria-hidden="true"
           class="emotion-4"
         >
           <div

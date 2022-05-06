@@ -18,7 +18,7 @@ const SwitchSelector = ({
   const overrides = parentOverrides as SwitchOverrides;
   const {onIcon: OnIcon, offIcon: OffIcon} = overrides;
   return (
-    <StyledSwitchContainer size={size} overrides={overrides} aria-hidden>
+    <StyledSwitchContainer size={size} overrides={overrides}>
       <StyledTrackColumn
         size={size}
         overrides={overrides}
