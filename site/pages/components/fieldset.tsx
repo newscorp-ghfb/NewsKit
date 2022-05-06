@@ -134,6 +134,47 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
           </InlineMessage>
         </>
       ),
+      focusOrder: {
+        title: 'Focus order',
+        tableRows: [
+          {
+            order: 1,
+            element: 'Children',
+            role:
+              'Focusses on the children passed to in the Fieldset in the order they appear.',
+          },
+        ],
+      },
+      aria: {
+        title: 'WAI-ARIA',
+        tableRows: [
+          {
+            element: 'labelledby',
+            attribute: 'ariaLabel',
+            value: 'string',
+            description:
+              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the elements in the Fieldset. Should be used when a legend prop is not provided.',
+            userSupplied: true,
+          },
+        ],
+      },
+    }}
+    compliance={{
+      variations: true,
+      states: true,
+      behaviours: undefined,
+      usage: true,
+      accessibility: true,
+      performance: false,
+      seo: true,
+      props: true,
+      uiKit: true,
+      design: true,
+      themes: true,
+    }}
+    related={{
+      introduction: '',
+      related: ['Form', 'Checkbox', 'Radio Button'],
     }}
   />
 );
