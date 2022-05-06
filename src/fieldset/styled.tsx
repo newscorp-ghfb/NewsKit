@@ -7,6 +7,7 @@ import {
   getResponsiveSpacingStackHorizontal,
   styled,
 } from '../utils/style';
+import {logicalProps} from '../utils/logical-properties';
 
 const legendStyleReset = `
   display: table;
@@ -38,5 +39,7 @@ export const StyledFieldset = styled.fieldset<FieldsetProps>`
   ${fieldsetStyleReset}
 
   ${getStylePreset('fieldset', '')};
+  // getResponsiveSpacingInset to be removed once logical props are used in defaults
   ${getResponsiveSpacingInset('fieldset', '')}
+  ${logicalProps('fieldset')}
 `;

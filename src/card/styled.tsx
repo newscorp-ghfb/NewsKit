@@ -17,7 +17,7 @@ import {
   isHorizontal,
   isReverse,
 } from './utils';
-import {logicalProps} from '../utils/logical-properties';
+import {logicalPaddingProps, logicalProps} from '../utils/logical-properties';
 
 const DEFAULT_PROPS: {layout: CardLayout} = {
   layout: 'vertical',
@@ -122,7 +122,7 @@ export const StyledCardContainerTeaser = styled.div<
     'teaserContainer',
     'spaceInset',
   )}
-  ${logicalProps('card.teaserContainer', 'teaserContainer')};
+  ${logicalPaddingProps('card.teaserContainer', 'teaserContainer')};
 
   a:not(.nk-card-link) {
     z-index: 2;
@@ -166,7 +166,7 @@ export const StyledCardContainerActions = styled(Stack)<
     'actionsContainer',
     'spaceInset',
   )}
-  ${logicalProps('card.actionsContainer', 'actionsContainer')};
+  ${logicalPaddingProps('card.actionsContainer', 'actionsContainer')};
   ${({hasHref, ...props}) =>
     filterInteractiveStates('actionsContainer', hasHref)(props)}
   ${getResponsiveSize(

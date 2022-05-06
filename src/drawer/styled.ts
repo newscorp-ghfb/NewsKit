@@ -4,6 +4,7 @@ import {BaseDialogView} from '../dialog';
 import {DrawerProps} from './types';
 import {getTransitionPreset} from '../utils/style/transition-preset';
 import {BaseDialogViewProps} from '../dialog/types';
+import {logicalPaddingProps, logicalProps} from '../utils/logical-properties';
 
 type DrawerPanelProps = Pick<DrawerProps, 'placement' | 'overrides' | 'open'>;
 
@@ -62,4 +63,8 @@ export const StyledDrawer = styled(BaseDialogView)<
         'nk-drawer',
       )(props)};
     `};
+  ${({path, inline}) =>
+    inline
+      ? logicalProps(`${path}.panel`, 'panel')
+      : logicalPaddingProps(`${path}.panel`, 'panel')};
 `;
