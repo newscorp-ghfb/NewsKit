@@ -466,11 +466,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
   color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -485,43 +483,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   height: 24px;
 }
 
-.emotion-22 svg {
-  fill: #535353;
-}
-
 .emotion-22:hover:not(:disabled) {
-  border-color: #577FFB;
-  color: #2E2E2E;
-}
-
-.emotion-22:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-22:active:not(:disabled) {
-  border-color: #3358CC;
   color: #0A0A0A;
-}
-
-.emotion-22:active:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-22:selected:hover:not(:disabled) {
-  border-color: #577FFB;
-  color: #2E2E2E;
-}
-
-.emotion-22:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
-}
-
-.emotion-22:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-22:disabled svg {
-  fill: #C0C0C0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -989,11 +960,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
     >
       <div
         class="emotion-2"
-        id="here"
       >
         <div
           class="emotion-3"
-          id="here"
         >
           <div
             class="emotion-4"
@@ -1232,7 +1201,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
         </div>
         <div
           class="emotion-44"
-          id="here"
         >
           <div
             class="emotion-5"
@@ -1305,7 +1273,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
         </div>
         <div
           class="emotion-52"
-          id="here"
         >
           <div
             class="emotion-10"
@@ -1874,11 +1841,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
   color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -1893,43 +1858,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   height: 24px;
 }
 
-.emotion-22 svg {
-  fill: #535353;
-}
-
 .emotion-22:hover:not(:disabled) {
-  border-color: #577FFB;
-  color: #2E2E2E;
-}
-
-.emotion-22:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-22:active:not(:disabled) {
-  border-color: #3358CC;
   color: #0A0A0A;
-}
-
-.emotion-22:active:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-22:selected:hover:not(:disabled) {
-  border-color: #577FFB;
-  color: #2E2E2E;
-}
-
-.emotion-22:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
-}
-
-.emotion-22:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-22:disabled svg {
-  fill: #C0C0C0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2397,11 +2335,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
     >
       <div
         class="emotion-2"
-        id="here"
       >
         <div
           class="emotion-3"
-          id="here"
         >
           <div
             class="emotion-4"
@@ -2640,7 +2576,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
         </div>
         <div
           class="emotion-44"
-          id="here"
         >
           <div
             class="emotion-5"
@@ -2713,7 +2648,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
         </div>
         <div
           class="emotion-52"
-          id="here"
         >
           <div
             class="emotion-10"
@@ -3282,11 +3216,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
   color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   margin: 0;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -3301,43 +3233,16 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   height: 24px;
 }
 
-.emotion-22 svg {
-  fill: #535353;
-}
-
 .emotion-22:hover:not(:disabled) {
-  border-color: #577FFB;
-  color: #2E2E2E;
-}
-
-.emotion-22:hover:not(:disabled) svg {
-  fill: #2E2E2E;
+  color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-22:active:not(:disabled) {
-  border-color: #3358CC;
   color: #0A0A0A;
-}
-
-.emotion-22:active:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-22:selected:hover:not(:disabled) {
-  border-color: #577FFB;
-  color: #2E2E2E;
-}
-
-.emotion-22:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
-}
-
-.emotion-22:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-22:disabled svg {
-  fill: #C0C0C0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3773,11 +3678,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
     >
       <div
         class="emotion-2"
-        id="here"
       >
         <div
           class="emotion-3"
-          id="here"
         >
           <div
             class="emotion-4"
@@ -4015,7 +3918,6 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
         </div>
         <div
           class="emotion-44"
-          id="here"
         >
           <div
             class="emotion-5"
@@ -4088,7 +3990,6 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
         </div>
         <div
           class="emotion-52"
-          id="here"
         >
           <div
             class="emotion-10"
