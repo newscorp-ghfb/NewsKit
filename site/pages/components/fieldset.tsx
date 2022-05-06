@@ -116,6 +116,19 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
         },
       ],
     }}
+    commonSection={{
+      id: 'formstructure',
+      title: 'Form structure',
+      introduction: (
+        <>
+          The below diagram outlines how form controls are grouped together
+          using the Fieldset, and wrapped with the{' '}
+          <Link href="/components/form/">Form</Link> component that applies
+          validation:
+        </>
+      ),
+      media: getIllustrationComponent('components/fieldset/form-structure'),
+    }}
     accessibility={{
       introduction: (
         <>

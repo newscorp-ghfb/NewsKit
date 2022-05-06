@@ -16,6 +16,7 @@ import {
   StatesSection,
   UsageSection,
   OnwardJourneySectionProps,
+  CommonSection,
 } from '../template-sections';
 import {ComponentPageTemplateProps} from './types';
 
@@ -44,6 +45,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
   related,
   featureCard,
   headTags,
+  commonSection,
   ...rest
 }: ComponentPageTemplateProps) => (
   <Layout {...layoutProps} newPage>
@@ -69,6 +71,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
       {behaviors && <BehaviorsSection {...behaviors} />}
       {codeExamples && <CodeExamplesSection {...codeExamples} />}
       {usage && <UsageSection {...usage} />}
+      {commonSection && <CommonSection {...commonSection} />}
       {accessibility && <AccessibilitySection {...accessibility} />}
       {seo && <SEOSection {...seo} />}
       {componentAPI && <ComponentAPISection {...componentAPI} />}

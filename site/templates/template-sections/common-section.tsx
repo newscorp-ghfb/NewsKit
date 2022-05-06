@@ -1,5 +1,6 @@
-import {Cell, Grid} from 'newskit';
 import React from 'react';
+import {Block, Cell, Grid, Image, ImageProps} from 'newskit';
+import {renderIfReactComponent} from 'newskit/utils/component';
 import {SectionIntroduction} from '../../components/section-introduction';
 import {Separator} from '../../components/separator';
 import {StyledSection} from './styled';
@@ -12,6 +13,7 @@ export type CommonSectionProps = {
   id: string;
   toc?: string;
   hideSeparator?: boolean;
+  media?: ImageProps | JSX.Element | React.ComponentType | undefined;
 };
 
 export const CommonSection: React.FC<CommonSectionProps> = ({
@@ -20,6 +22,7 @@ export const CommonSection: React.FC<CommonSectionProps> = ({
   introduction,
   id,
   toc,
+  media,
   hideSeparator,
 }) => (
   <>
@@ -36,6 +39,15 @@ export const CommonSection: React.FC<CommonSectionProps> = ({
             {introduction}
           </SectionIntroduction>
           {children}
+          {media && (
+            <ComponentPageCell>
+              <Block stylePreset="blockRoundedMedium">
+                {renderIfReactComponent(media) || (
+                  <Image {...(media as ImageProps)} />
+                )}
+              </Block>
+            </ComponentPageCell>
+          )}
         </Grid>
       </StyledSection>
     </Cell>
