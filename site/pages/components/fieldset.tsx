@@ -159,6 +159,97 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
         ],
       },
     }}
+    seo={{
+      title: 'SEO',
+      introduction: (
+        <>
+          If another form of{' '}
+          <Link
+            href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#phrasing_content"
+            target="_blank"
+          >
+            phrasing content
+          </Link>{' '}
+          is used (eg. an image, or button), ensure that Alt Text is applied if
+          required.
+        </>
+      ),
+    }}
+    componentAPI={{
+      components: [
+        {
+          propsSummary:
+            'The Fieldset has a range of props that can be used to define an appropriate experience for different use cases.',
+          overridesSummary:
+            'The Fieldset has a range of predefined elements and attributes that can be overridden to define their appearance.',
+          propsRows: [
+            {
+              name: 'legend',
+              type: 'React.ReactNode',
+              default: 'heading (text)',
+              description:
+                'Defines the Legend (caption displayed at the top of the Fieldset).',
+            },
+            {
+              name: 'children',
+              type: 'React.ReactNode',
+              description:
+                'If provided, the form selection controls are passed as the children of the Fieldset component',
+            },
+            {
+              name: 'size',
+              type: ['small', 'medium', 'large'],
+              description: 'Defines the size of the Fieldset Legend.',
+            },
+            {
+              name: 'disabled',
+              type: 'state',
+              default: 'false',
+              description: 'If true, renders the Fieldset in a disabled state.',
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'fieldset.spaceInset',
+              type: 'MQ<string>',
+              description:
+                'If provided, this overrides the inset space (padding) applied to the Fieldset.',
+            },
+            {
+              attribute: 'fieldset.stylePreset',
+              type: 'MQ<string>',
+              description:
+                'If provided, overrides the stylePreset of the Fieldset.',
+            },
+            {
+              attribute: 'legend.typographyPreset',
+              type: 'MQ<string>',
+              default: [
+                'Small = utilityLabel010',
+                'Medium = utilityLabel020',
+                'Large = utilityLabel030',
+              ],
+              description:
+                'If provided, overrides the typographyPreset of the Legend.',
+            },
+            {
+              attribute: 'legend.stylePreset',
+              type: 'MQ<string>',
+              default: ['base = inkContrast', 'disabled = inkNonEssential'],
+              description:
+                'If provided, overrides the stylePreset of the Legend.',
+            },
+            {
+              attribute: 'legend.spaceStack',
+              type: 'MQ<string>',
+              default: ["spaceStack: 'space030'"],
+              description:
+                'If provided, this overrides the stack space (margin) applied to the Legend.',
+            },
+          ],
+        },
+      ],
+    }}
     compliance={{
       variations: true,
       states: true,
