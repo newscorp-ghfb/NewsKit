@@ -78,6 +78,35 @@ describe('Consent', () => {
         expect(fragment).toMatchSnapshot();
       });
 
+      describe('Unified Consent V2', () => {
+        test('the Unified Consent V2 renders correctly with default baseEndpoint', () => {
+          const fragment = renderToFragment(
+            <Consent
+              sourcePointConfigUnifiedTCF={{
+                accountId: 259,
+                propertyHref: 'https://newskit.dev-news.co.uk',
+              }}
+              reactHelmet={helmet}
+            />,
+          );
+          expect(fragment).toMatchSnapshot();
+        });
+
+        test('the Unified Consent V2 renders correctly with trailing slash on baseEndpoint', () => {
+          const fragment = renderToFragment(
+            <Consent
+              sourcePointConfigUnifiedTCF={{
+                accountId: 259,
+                propertyHref: 'https://newskit.dev-news.co.uk',
+                baseEndpoint: 'https://cmp.newskit.co.uk/',
+              }}
+              reactHelmet={helmet}
+            />,
+          );
+          expect(fragment).toMatchSnapshot();
+        });
+      });
+
       describe('nonTCF', () => {
         test('the Consent version 2 renders correctly with default baseEndpoint', () => {
           const fragment = renderToFragment(
