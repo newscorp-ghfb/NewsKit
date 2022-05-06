@@ -197,7 +197,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
 
     return (
       <Header data-testid="header-navigation" ref={ref}>
-        <StyledGrid id="here" maxWidth="9999px">
+        <StyledGrid maxWidth="9999px">
           <Cell xs={2}>
             <Stack
               flow={Flow.HorizontalCenter}
