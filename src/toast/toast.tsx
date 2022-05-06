@@ -34,7 +34,7 @@ const ThemelessToast: React.FC<ToastProps> = ({
   const theme = useTheme();
   const dividerOverrides: DividerOverrides = {
     ...theme.componentDefaults.toast.divider,
-    ...filterOutFalsyProperties(overrides?.divider),
+    ...filterOutFalsyProperties(overrides.divider),
   };
 
   const {aria, rest} = splitAriaProps(restProps);
