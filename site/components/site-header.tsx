@@ -186,9 +186,9 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
             selected={false}
             size={MenuItemSize.Small}
             className={path.includes(id) ? 'selected' : undefined}
-            // overrides={{
-            //   spaceInline: 'space070',
-            // }}
+            overrides={{
+              stylePreset: 'linkTopNavigation',
+            }}
           >
             {title}
           </MenuItem>
