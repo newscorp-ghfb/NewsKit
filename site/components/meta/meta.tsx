@@ -16,7 +16,13 @@ import {FigmaButton} from './figma-button';
 import {Status} from './status';
 import {Introduced} from './introduce';
 
-export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
+export const Meta = ({
+  status,
+  introduced,
+  introducedLink = true,
+  codeUrl,
+  figmaUrl,
+}: MetaProps) => (
   <>
     <Block spaceStack={{xs: 'space080', md: 'space050'}}>
       <Hidden xs sm>
@@ -36,7 +42,10 @@ export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
                 }}
               />
             </StackChild>
-            <Introduced introduced={introduced} />
+            <Introduced
+              introduced={introduced}
+              introducedLink={introducedLink}
+            />
           </Stack>
           <Stack flow="horizontal-center" spaceInline="space040">
             <StackChild alignSelf={AlignSelfValues.Stretch}>
@@ -64,7 +73,10 @@ export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
                   spaceInline="space020"
                   stackDistribution="space-evenly"
                 />
-                <Introduced introduced={introduced} />
+                <Introduced
+                  introduced={introduced}
+                  introducedLink={introducedLink}
+                />
               </Stack>
             </Cell>
           </StackChild>
