@@ -7,6 +7,7 @@ import {
   getTypographyPreset,
   styled,
 } from '../utils';
+import {logicalProps} from '../utils/logical-properties';
 import {BaseSwitchProps} from './types';
 
 const STACKING_CONTEXT = {
@@ -24,6 +25,8 @@ export const StyledSwitchAndLabelWrapper = styled.label<
 
   ${({size, path}) =>
     getResponsiveSpace('marginBottom', `${path}.${size}`, '', 'spaceStack')}
+
+  ${({size, path}) => logicalProps(`${path}.${size}`)}
 `;
 
 export const StyledSwitchContainer = styled.div<

@@ -16,7 +16,7 @@ export const CheckedDisabled: React.FC = () => (
       fill="illustrationDisabled"
     />
     <Path
-      d="M516.877 453.511L479.868 416.502L467.266 429.016L516.877 478.627L623.377 372.127L610.863 359.613L516.877 453.511Z"
+      d="M516.875 453.509L479.866 416.5L467.264 429.014L516.875 478.625L623.375 372.125L610.861 359.611L516.875 453.509Z"
       fill="illustrationBorder020"
     />
     <Path

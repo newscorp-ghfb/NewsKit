@@ -1,5 +1,5 @@
 import React from 'react';
-import {styled, getSpacingFromTheme, getStylePreset, MQ} from '../utils/style';
+import {styled, getStylePreset, MQ, getResponsiveSpace} from '../utils/style';
 import {LinkInline} from '../link';
 import {Stack} from '../stack';
 import {getToken} from '../utils/get-token';
@@ -9,6 +9,7 @@ import {TextBlock} from '../text-block';
 import {BylineProps, BylineData} from './types';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {extractLogicalPropsFromOverrides} from '../utils/logical-properties';
 
 const InlineBlock = styled(Block)`
   display: inline-flex;
@@ -68,7 +69,10 @@ const renderLink = (
 const isLastItem = (currentIndex: number, length: number) =>
   currentIndex === length - 1;
 
-const ThemelessByline: React.FC<BylineProps> = ({bylineData, overrides}) => {
+const ThemelessByline: React.FC<BylineProps> = ({
+  bylineData,
+  overrides = {},
+}) => {
   const theme = useTheme();
   const spaceStack = getToken({theme, overrides}, 'byline', '', 'spaceStack');
 
@@ -101,7 +105,12 @@ const ThemelessByline: React.FC<BylineProps> = ({bylineData, overrides}) => {
   );
 
   const PipeContainer = styled.span<{overrides: BylineProps['overrides']}>`
-    margin-left: ${getSpacingFromTheme(dividerSpace)};
+    ${getResponsiveSpace(
+      'marginLeft',
+      'byline.divider',
+      'divider',
+      'spaceInline',
+    )}
     ${getStylePreset('byline.divider', 'divider')}
     user-select: none;
   `;
@@ -134,8 +143,16 @@ const ThemelessByline: React.FC<BylineProps> = ({bylineData, overrides}) => {
     return location;
   };
 
+  const logicalProps = extractLogicalPropsFromOverrides(overrides);
+
   return (
-    <Stack flow="horizontal-center" inline wrap="wrap" spaceStack={spaceStack}>
+    <Stack
+      flow="horizontal-center"
+      inline
+      wrap="wrap"
+      spaceStack={spaceStack}
+      {...logicalProps}
+    >
       {bylineData.map(
         ({author, href, title, location, ariaLabel, key}: BylineData, i) => {
           const lastItem = isLastItem(i, bylineData.length);

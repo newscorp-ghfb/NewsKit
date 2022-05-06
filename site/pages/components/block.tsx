@@ -1,5 +1,6 @@
 import React from 'react';
 import {Block, BlockProps, InlineMessage, styled} from 'newskit';
+import {PropsRowsProps} from '../../components/component-api';
 import {Link} from '../../components/link/link';
 import {LegacyBlock} from '../../components/legacy-block';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
@@ -7,6 +8,7 @@ import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
+import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 
 const PlaygroundContainer = styled.div`
   width: 100%;
@@ -230,28 +232,27 @@ const BlockComponent = (layoutProps: LayoutProps) => (
               description: `If provided, applies style on the Block.`,
             },
             {
-              name: 'spaceInline',
+              name: 'spaceInline(deprecated)',
               type: 'MQ<string>',
-              description: `Set the spacing which is applied as a margin on the right of the Block.`,
+              description: `Use marginInlineEnd instead. Set the spacing which is applied as a margin on the right of the Block.`,
             },
             {
-              name: 'spaceStack',
+              name: 'spaceStack(deprecated)',
               type: 'MQ<string>',
-              description: `This is a spacing preset token which is applied as a margin on the bottom of the Block. Use this to space stacking content down the page.`,
+              description: `Use marginBlockEnd instead. This is a spacing preset token which is applied as a margin on the bottom of the Block. Use this to space stacking content down the page.`,
             },
             {
-              name: 'spaceInset',
+              name: 'spaceInset(deprecated)',
               type: 'MQ<string>',
-              description: `Overrides the space inset applied to the Block.`,
+              description: `Use paddingBlock and paddingInline instead. Apply space inset to the Block.`,
             },
-          ],
-          overridesRows: [
             {
-              attribute: 'block.transitionPreset',
+              name: 'transitionPreset',
               type: 'TransitionToken | TransitionToken[]',
               default: 'backgroundColorChange',
-              description: `Overrides the transitionPreset of the Menu Item.`,
+              description: `Apply transitionPreset to the Block component.`,
             },
+            ...(commonLogicalProps('propsRow') as PropsRowsProps[]),
           ],
           propsFooter: (
             <InlineMessage>
@@ -278,5 +279,4 @@ const BlockComponent = (layoutProps: LayoutProps) => (
     }}
   />
 );
-
 export default BlockComponent;
