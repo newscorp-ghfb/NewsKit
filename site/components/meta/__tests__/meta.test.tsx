@@ -16,7 +16,8 @@ describe('Meta', () => {
     const props = {
       status: MetaStatus.Supported,
       introduced: 'v0.1',
-      introducedLink:
+      introducedLink: false,
+      introducedUrl:
         'https://github.com/newscorp-ghfb/ncu-newskit/releases/tag/v0.19.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit',
       figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
