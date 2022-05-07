@@ -22,22 +22,19 @@ const PageMenuLinks: React.FC<PageLinkProps> = ({
   });
 
   return (
-    <div ref={ref}>
-      <MenuItemStyled
-        href={href}
-        data-testid={page}
-        $selected={active}
-        overrides={{
-          typographyPreset: 'utilityButton020',
-          // tier 1
-          // add minHeight to make sure indicator and container remain same height
-          minHeight: '40px',
-        }}
-        size="small"
-      >
-        {children}
-      </MenuItemStyled>
-    </div>
+    <MenuItemStyled
+      href={href}
+      data-testid={page}
+      $selected={active}
+      overrides={{
+        // tier 1
+        // add minHeight to make sure indicator and container remain same height
+        minHeight: '40px',
+      }}
+      size="small"
+    >
+      <div ref={ref}>{children}</div>
+    </MenuItemStyled>
   );
 };
 export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
@@ -123,10 +120,10 @@ const MenuNavDesktop = () => {
         overrides={{spaceInline: 'space000'}}
       >
         {currentSection &&
-          currentSection.map(({title, subNav}) => (
-            <div key={title}>
-              <SiteMenuItem menuItemList={subNav} />
-            </div>
+          currentSection.map(({subNav}) => (
+            // <div id='isthisit' key={title}>
+            <SiteMenuItem menuItemList={subNav} />
+            // </div>
           ))}
       </Menu>
     </>

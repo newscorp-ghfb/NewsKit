@@ -45,6 +45,7 @@ export const GitHubLaunch: React.FC<{href?: string}> = ({href}) =>
       </IconButton>
     </Stack>
   ) : null;
+
 type NavProps = {
   title: string;
   id: string;
@@ -79,7 +80,6 @@ export const MenuNavCollapsible = ({
             {page ? (
               <>
                 <Indicator
-                  id="indicator"
                   className={path.includes(id) ? 'selected' : undefined}
                 />
                 <MenuItemStyled
