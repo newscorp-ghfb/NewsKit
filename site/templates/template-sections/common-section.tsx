@@ -38,7 +38,6 @@ export const CommonSection: React.FC<CommonSectionProps> = ({
           >
             {introduction}
           </SectionIntroduction>
-          {children}
           {media && (
             <ComponentPageCell>
               <Block stylePreset="blockRoundedMedium">
@@ -48,6 +47,7 @@ export const CommonSection: React.FC<CommonSectionProps> = ({
               </Block>
             </ComponentPageCell>
           )}
+          {children}
         </Grid>
       </StyledSection>
     </Cell>
