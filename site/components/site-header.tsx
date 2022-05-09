@@ -92,7 +92,7 @@ const MobileMenu = styled.div`
   ${getSpacingCssFromTheme('marginLeft', 'space020')};
 `;
 
-export const StyledLinkItem = styled.div<{
+export const Indicator = styled.div<{
   $selected: boolean;
 }>`
   ${getTypographyPresetFromTheme('utilityButton020', undefined, {
@@ -104,14 +104,22 @@ export const StyledLinkItem = styled.div<{
     })(props)}
   ${getSpacingCssFromTheme('marginRight', 'space070')};
 
-  box-sizing: border-box;
   &.selected {
+    position: static;
+    ::before {
+      ${getSpacingCssFromTheme('marginTop', 'space000')};
+      margin-bottom: 0px;
+    }
     ::after {
       border-radius: ${getBorderRadius({first: true, last: false})};
       ${getColorCssFromTheme('background', 'interactivePrimary030')};
-      ${getSizingCssFromTheme('height', 'sizing010')};
+      content: ' ';
       position: relative;
-      ${getSizingCssFromTheme('top', 'sizing045')};
+      ${getSizingCssFromTheme('height', 'sizing050')};
+      margin-top: -10px;
+      ${getSpacingCssFromTheme('marginBottom', 'space020')};
+      ${getSizingCssFromTheme('top', 'sizing070')};
+      ${getSizingCssFromTheme('bottom', 'sizing000')};
     }
   }
 `;
@@ -169,30 +177,29 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
 
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
       items.map(({title, id}) => (
-        <StyledLinkItem
-          key={id}
-          aria-current={
-            currentRoute.split('/')[1].includes(id.split('/')[1]) || undefined
-          }
-          $selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
-          className={
-            currentRoute.split('/')[1].includes(id.split('/')[1])
-              ? 'selected'
-              : undefined
-          }
+        <MenuItem
+          href={id}
+          size={MenuItemSize.Small}
+          overrides={{
+            stylePreset: 'linkTopNavigation',
+          }}
         >
-          <MenuItem
-            href={id}
-            selected={false}
-            size={MenuItemSize.Small}
-            className={path.includes(id) ? 'selected' : undefined}
-            overrides={{
-              stylePreset: 'linkTopNavigation',
-            }}
+          <Indicator
+            data-testid="styled-indicator"
+            key={id}
+            aria-current={
+              currentRoute.split('/')[1].includes(id.split('/')[1]) || undefined
+            }
+            $selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
+            className={
+              currentRoute.split('/')[1].includes(id.split('/')[1])
+                ? 'selected'
+                : undefined
+            }
           >
             {title}
-          </MenuItem>
-        </StyledLinkItem>
+          </Indicator>
+        </MenuItem>
       ));
 
     return (
@@ -221,11 +228,11 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                 <Stack
                   flow={Flow.HorizontalCenter}
                   stackDistribution={StackDistribution.Start}
-                  flexGrow={1}
+                  // flexGrow={1}
                 >
-                  <Stack flow={Flow.HorizontalCenter}>
-                    <Menu>{renderNavItems(navItems, path)}</Menu>
-                  </Stack>
+                  {/* <Stack flow={Flow.HorizontalCenter}> */}
+                  <Menu>{renderNavItems(navItems, path)}</Menu>
+                  {/* </Stack> */}
                 </Stack>
               </StyledVisible>
             </Stack>

@@ -3,6 +3,7 @@
 const hamburgerIconTestID = '[data-testid="mobile-menu-icon"]';
 const sidebarTestID = '[data-testid="sidebar"]';
 const overlayTestID = '[data-testid="overlay"]';
+const indicatorID = '[data-testid="styled-indicator"]';
 
 describe('Documentation Site - header-navigation component', () => {
   before(() => {
@@ -15,7 +16,7 @@ describe('Documentation Site - header-navigation component', () => {
     });
     it('should highlight active section', () => {
       cy.visit('/about/introduction');
-      cy.get('*[class^="selected"]').should('have.attr', 'aria-current');
+      cy.get(indicatorID).should('have.attr', 'aria-current');
     });
   });
 
