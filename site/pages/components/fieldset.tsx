@@ -24,7 +24,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Actions & Inputs',
+      type: 'Layout',
       name: 'Fieldset',
       hero: {
         illustration: 'components/fieldset/hero',
