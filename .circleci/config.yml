@@ -382,9 +382,9 @@ jobs:
       - run:
           name: Checking context var
           command: |
-            $(echo "${SITE_ENV}")
+            echo "${SITE_ENV}"
             export SITE_ENV=${SITE_ENV}
-            $(echo "${SITE_ENV}")
+            echo "${SITE_ENV}"
 
   build_docs_pr_with_no_base_url:
     executor: node-xlarge
