@@ -363,6 +363,7 @@ jobs:
           name: Build
           command: |
             export SITE_ENV=${SITE_ENV}
+            $(echo "${SITE_ENV}")
             export SITE_BASE_URL=${SITE_BASE_URL}
             make build_docs
       - persist_to_workspace:
@@ -371,6 +372,19 @@ jobs:
             - public/*
       - slack/status:
           <<: *slack_status
+  
+  build_docs:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Checking context var
+          command: |
+            $(echo "${SITE_ENV}")
+            export SITE_ENV=${SITE_ENV}
+            $(echo "${SITE_ENV}")
 
   build_docs_pr_with_no_base_url:
     executor: node-xlarge
@@ -890,6 +904,9 @@ workflows:
           value: << pipeline.git.branch >>
     jobs:
       - install_deps
+      - build_docs:
+          context: ncu-newskit-site-prod
+
       - install_cypress
       - build_icons:
           requires:

@@ -38,6 +38,7 @@ export default class MyDocument extends Document<Props> {
   }
 
   render() {
+    console.log(process.env.SITE_ENV, '🔥🔥🔥🔥process.env.SITE_ENV🔥🔥🔥🔥');
     const helmet = Helmet.rewind();
     return (
       <Html lang="en">
