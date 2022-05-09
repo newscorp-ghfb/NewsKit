@@ -44,6 +44,10 @@ const customEventRows = [
     key: 'Pulse',
     value: 'pulse',
   },
+  {
+    key: 'Focus',
+    value: 'focus',
+  },
 ];
 
 const contentOverrides = {
