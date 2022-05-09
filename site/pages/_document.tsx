@@ -28,7 +28,6 @@ const Base = () => <base href={baseHref} />;
 export default class MyDocument extends Document<Props> {
   static async getStaticProps(ctx: DocumentContext) {
     const {html} = await ctx.renderPage();
-    console.log(process.env);
     return {
       html,
       // Are we in local dev mode or "built and served"?
