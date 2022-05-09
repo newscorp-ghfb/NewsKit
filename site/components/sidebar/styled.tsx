@@ -28,7 +28,6 @@ export const Indicator = styled.div`
       height: ${getSizingFromTheme('sizing070')};
       width: ${getSizingFromTheme('sizing010')};
 
-      ${getStylePresetFromTheme('interactivePrimary030')};
       border-width: 4px;
       border-radius: 0 4px 4px 0;
     }
@@ -38,6 +37,10 @@ export const Indicator = styled.div`
 export const MenuItemStyled = styled(MenuItem)<{
   $selected: boolean;
 }>`
+  ${({$selected, ...props}) =>
+    getStylePresetFromTheme('sidebarNavItem', undefined, {
+      isSelected: $selected,
+    })(props)}
   width: 276px;
 `;
 

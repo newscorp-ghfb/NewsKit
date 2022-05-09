@@ -96,7 +96,7 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
                   // title={title}
                   overrides={{
                     typographyPreset: 'utilityHeading030',
-                    stylePreset: ' menuItemVertical',
+                    stylePreset: 'sidebarHeader',
                   }}
                 >
                   {title}

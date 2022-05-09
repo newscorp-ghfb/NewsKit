@@ -42,8 +42,8 @@ export const stylePresets = {
       color: '{{colors.inkSubtle}}',
       textDecoration: 'none',
     },
-    active: {
-      color: '{{colors.inkContrast}}',
+    selected: {
+      color: '{{colors.interactivePrimary030}}',
       textDecoration: 'none',
     },
   },
@@ -103,17 +103,14 @@ export const stylePresets = {
   },
   sidebarNavItem: {
     base: {
-      backgroundColor: '{{colors.transparent}}',
       color: '{{colors.inkSubtle}}',
     },
     hover: {
-      color: '{{colors.interactivePrimary040}}',
+      color: '{{colors.interactivePrimary030}}',
     },
-    active: {
-      color: '{{colors.inkContrast}}',
-    },
+
     selected: {
-      color: '{{colors.interactivePrimary040}}',
+      color: '{{colors.interactivePrimary030}}',
     },
   },
   sidebarHeader: {

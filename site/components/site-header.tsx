@@ -98,13 +98,14 @@ export const Indicator = styled.div<{
   ${getTypographyPresetFromTheme('utilityButton020', undefined, {
     withCrop: true,
   })};
-  ${({$selected, ...props}) =>
-    getStylePresetFromTheme('headerNavItem', undefined, {
-      isSelected: $selected,
-    })(props)}
+
   ${getSpacingCssFromTheme('marginRight', 'space070')};
 
   &.selected {
+    ${({$selected, ...props}) =>
+      getStylePresetFromTheme('linkTopNavigation', undefined, {
+        isSelected: $selected,
+      })(props)}
     position: static;
     ::before {
       ${getSpacingCssFromTheme('marginTop', 'space000')};
