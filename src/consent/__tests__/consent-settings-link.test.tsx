@@ -26,6 +26,12 @@ describe('ConsentSettingsLink', () => {
         expectedFunction = jest.fn();
         const sp = {
           loadPrivacyManagerModal: expectedFunction,
+          gdpr: {
+            loadPrivacyManagerModal: expectedFunction,
+          },
+          ccpa: {
+            loadPrivacyManagerModal: expectedFunction,
+          },
         };
         (global as any).window._sp_ = sp;
       });
@@ -47,6 +53,30 @@ describe('ConsentSettingsLink', () => {
       test('calls the expected SourcePoint function when siteId is undefined', async () => {
         const link = await renderWithTheme(ConsentSettingsLink, {
           privacyManagerId,
+        }).findByRole('button');
+        fireEvent.click(link);
+
+        expect(expectedFunction).toHaveBeenCalledWith(privacyManagerId);
+      });
+
+      test('call unified gdpr SourcePoint function', async () => {
+        const link = await renderWithTheme(ConsentSettingsLink, {
+          privacyManagerId,
+          gdpr: true,
+          tabToOpen: 'purposes',
+        }).findByRole('button');
+        fireEvent.click(link);
+
+        expect(expectedFunction).toHaveBeenCalledWith(
+          privacyManagerId,
+          'purposes',
+        );
+      });
+
+      test('call unified ccpa SourcePoint function', async () => {
+        const link = await renderWithTheme(ConsentSettingsLink, {
+          privacyManagerId,
+          ccpa: true,
         }).findByRole('button');
         fireEvent.click(link);
 
