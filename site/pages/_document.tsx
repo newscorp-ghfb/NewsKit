@@ -28,18 +28,18 @@ const Base = () => <base href={baseHref} />;
 export default class MyDocument extends Document<Props> {
   static async getStaticProps(ctx: DocumentContext) {
     const {html} = await ctx.renderPage();
-    console.log(process.env);
     return {
       html,
       // Are we in local dev mode or "built and served"?
       production: process.env.NODE_ENV === 'production',
       // Are we production "newskit.co.uk" or not?
-      productionSiteEnv: process.env.SITE_ENV === 'production',
+      // TODO to remove hardcoded value
+      // eslint-disable-next-line
+      productionSiteEnv: 'production' === 'production',
     };
   }
 
   render() {
-    console.log(process.env.SITE_ENV, '🔥🔥🔥🔥process.env.SITE_ENV🔥🔥🔥🔥');
     const helmet = Helmet.rewind();
     return (
       <Html lang="en">
