@@ -13,7 +13,7 @@ export type CommonSectionProps = {
   id: string;
   toc?: string;
   hideSeparator?: boolean;
-  media?: ImageProps | JSX.Element | React.ComponentType | undefined;
+  media?: ImageProps | JSX.Element | React.ComponentType;
 };
 
 export const CommonSection: React.FC<CommonSectionProps> = ({
