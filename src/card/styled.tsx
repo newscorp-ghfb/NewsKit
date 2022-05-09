@@ -7,6 +7,7 @@ import {
   handleResponsiveProp,
   getResponsiveSpace,
   getResponsiveSize,
+  getBorderCssFromTheme,
 } from '../utils/style';
 
 import {Stack} from '../stack';
@@ -45,6 +46,9 @@ export const StyledCardContainerMedia = styled.div<
   box-sizing: border-box;
   display: block;
   position: relative;
+  svg {
+    ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded010')};
+  }
 
   ${handleResponsiveProp(
     {layout: DEFAULT_PROPS.layout},
