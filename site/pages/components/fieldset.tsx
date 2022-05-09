@@ -1,10 +1,10 @@
 import React from 'react';
 import {Block, InlineMessage, IconFilledInfo} from 'newskit';
-import {ContentText} from '../../components/text-section/content-text';
-import {MetaStatus} from '../../components/meta/types';
-import {LayoutProps} from '../../components/layout';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
+import {LayoutProps} from '../../components/layout';
+import {ContentText} from '../../components/text-section/content-text';
+import {MetaStatus} from '../../components/meta/types';
 import {Link} from '../../components/link';
 
 const infoIcon = (
@@ -272,7 +272,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
       performance: false,
       seo: true,
       props: true,
-      uiKit: true,
+      uiKit: undefined,
       design: true,
       themes: true,
     }}
