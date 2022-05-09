@@ -15,6 +15,7 @@ import {HTMLMeta} from '../components/html-meta';
 interface Props {
   production: boolean;
   productionSiteEnv: boolean;
+  marco: string;
 }
 
 // Is added so relative paths work when we are on a sub dir e.g. s-3.com/ppdsc-123-foo/
@@ -26,7 +27,8 @@ const baseHref =
 const Base = () => <base href={baseHref} />;
 
 export default class MyDocument extends Document<Props> {
-  static async getStaticProps(ctx: DocumentContext) {
+  // TODO back to static props
+  static async getInitialProps(ctx: DocumentContext) {
     const {html} = await ctx.renderPage();
     return {
       html,
@@ -35,8 +37,8 @@ export default class MyDocument extends Document<Props> {
       // Are we production "newskit.co.uk" or not?
       // TODO to remove hardcoded value
 
-      // productionSiteEnv: process.env.SITE_ENV === 'production',
-      productionSiteEnv: 'marco',
+      productionSiteEnv: process.env.SITE_ENV === 'production',
+      marco: 'marco',
     };
   }
 
@@ -259,11 +261,11 @@ export default class MyDocument extends Document<Props> {
           />
           {console.log(this.props, '🔥🔥🔥🔥🔥🔥🔥')}
           {console.log(this.props.productionSiteEnv, '✅✅✅✅✅✅✅✅')}
+          {console.log(this.props.marco, '🎨🎨🎨🎨🎨🎨')}
           <Tealium
             accountId="newsinternational"
             profileId="thetimes.newskit"
-            env={true ? 'prod' : 'dev'}
-            // env={this.props.productionSiteEnv ? 'prod' : 'dev'}
+            env={this.props.productionSiteEnv ? 'prod' : 'dev'}
           />
           <Main />
           <NextScript />
