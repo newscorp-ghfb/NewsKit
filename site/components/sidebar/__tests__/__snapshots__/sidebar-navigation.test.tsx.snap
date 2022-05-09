@@ -744,7 +744,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
     class="emotion-0"
   >
     <nav
-      aria-label="menu"
+      aria-label="menu-sidebar"
       class="emotion-1"
       data-testid="menu-container"
       role="navigation"
@@ -1502,7 +1502,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
     class="emotion-0"
   >
     <nav
-      aria-label="menu"
+      aria-label="menu-sidebar"
       class="emotion-1"
       data-testid="menu-container"
       role="navigation"
@@ -2259,7 +2259,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
     class="emotion-0"
   >
     <nav
-      aria-label="menu"
+      aria-label="menu-sidebar"
       class="emotion-1"
       data-testid="menu-container"
       role="navigation"

@@ -3282,7 +3282,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
       class="emotion-557"
     >
       <nav
-        aria-label="menu"
+        aria-label="menu-sidebar"
         class="emotion-3"
         data-testid="menu-container"
         role="navigation"
@@ -6699,7 +6699,7 @@ exports[`Sidebar renders correctly when open 1`] = `
       class="emotion-557"
     >
       <nav
-        aria-label="menu"
+        aria-label="menu-sidebar"
         class="emotion-3"
         data-testid="menu-container"
         role="navigation"

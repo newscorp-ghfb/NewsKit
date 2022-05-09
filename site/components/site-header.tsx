@@ -150,13 +150,8 @@ const navItems = routes.map(({title, subNav}) => ({title, id: subNav[0].id}));
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
   ({handleSidebarClick, toggleTheme, themeMode, path, sidebarOpen}, ref) => {
     const renderMobileNavigation = (handleClick: () => void) => (
-      <Stack
-        data-testid="logo-container"
-        flow={Flow.HorizontalCenter}
-        // stackDistribution="space-between"
-      >
+      <Stack data-testid="logo-container" flow={Flow.HorizontalCenter}>
         <MobileMenu
-          // key={id}
           onClick={handleClick}
           onKeyDown={handleEnterKeyPress(handleClick)}
           tabIndex={0}
