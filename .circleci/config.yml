@@ -1007,9 +1007,7 @@ workflows:
             - init_aws
       - build_docs:
           name: build_docs_pr
-          # TODO to bring back to pr context
           context: ncu-newskit-site-prod
-          # context: ncu-newskit-site-pr
           requires:
             - build_icons
       - push_s3:
