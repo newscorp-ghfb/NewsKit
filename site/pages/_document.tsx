@@ -34,8 +34,8 @@ export default class MyDocument extends Document<Props> {
       production: process.env.NODE_ENV === 'production',
       // Are we production "newskit.co.uk" or not?
       // TODO to remove hardcoded value
-      // eslint-disable-next-line
-      productionSiteEnv: 'production' === 'production',
+
+      productionSiteEnv: true,
     };
   }
 
@@ -256,10 +256,12 @@ export default class MyDocument extends Document<Props> {
               }
             `}
           />
+          {console.log(this.props, '🔥🔥🔥🔥🔥🔥🔥')}
           <Tealium
             accountId="newsinternational"
             profileId="thetimes.newskit"
-            env={this.props.productionSiteEnv ? 'prod' : 'dev'}
+            env={true ? 'prod' : 'dev'}
+            // env={this.props.productionSiteEnv ? 'prod' : 'dev'}
           />
           <Main />
           <NextScript />
