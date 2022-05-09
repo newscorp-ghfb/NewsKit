@@ -14,7 +14,7 @@ The consent component is a non-visual component for the consent of the use of 3r
 Unless you are utilising React Helmet, it must be placed inside the body of the document during server-side rendering. NewsKit has both an AMP and non-AMP version of this component. The two are not interchangeable so you must ensure you use the correct one.
 
 At the moment this component is supporting three versions of the Sourcepoint config. Versions GDPR TCF V2 and GDPR Non-TCF, these are both legacy implementations (SourcePoint clients implemented before May 5th, 2021 will used these and should be migrated to the Unified Script). 
-The most upto date version is the Unified Script (currently supports GDPR TCF only).
+The most upto date version is the Unified Script.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
 ## Props Unified Script GDPR TCF
 
 <LegacyBlock marginTop="sizing040">
-  <Prop name="sourcePointConfigUnifiedTCF" required>
+  <Prop name="sourcePointConfigUnified" required>
     The config object that initialises SourcePoint. See{' '}
     <a href="https://docs.sourcepoint.com/hc/en-us/articles/4405412419731">
       Sourcepoint documentation
@@ -101,6 +101,22 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
       </Prop>
       <Prop name="groupPmId" type="number">
         Allows your organization to use the privacy manager ID for the property group's privacy manager.
+      </Prop>
+      <Prop name="targetingParams" type="object">
+        Targeting params allow a developer to set arbitrary key/value pairs. These
+        key/value pairs are sent to Sourcepoint servers where they can be used to
+        take a decision within the scenario builder.
+        <br/>
+        <br/>
+        targetingParams set within the gdpr object will override overall targetingParams
+      </Prop>
+      <Prop name="ccpa" type="object">
+      In order to surface a CCPA message to your clients, you will need to include the ccpa:{ } object in your client configuration script regardless of whether you configure any optional parameters.
+      <Prop name="alwaysDisplayDNS" type="boolean">
+        Setting this parameter to true enables use cases where a Sourcepoint Do Not Sell (my data) notification is hardcoded.
+      </Prop>
+      <Prop name="groupPmId" type="number">
+        Allows your organization to use the Privacy Manager ID for the property group's Privacy Manager ID.
       </Prop>
       <Prop name="targetingParams" type="object">
         Targeting params allow a developer to set arbitrary key/value pairs. These

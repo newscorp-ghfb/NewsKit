@@ -4,10 +4,10 @@ import {ConsentProps} from './types';
 import {
   getNonTCFScripts,
   getV2Scripts,
-  getUnifiedTCFScripts,
+  getUnifiedScripts,
   isNonTCFV1Props,
   isV2Props,
-  isUnifiedTCFProps,
+  isUnifiedProps,
 } from './consent-utils';
 
 export const Consent: React.FC<ConsentProps> = ({reactHelmet, ...props}) => {
@@ -19,10 +19,10 @@ export const Consent: React.FC<ConsentProps> = ({reactHelmet, ...props}) => {
       />
     );
   }
-  if (isUnifiedTCFProps(props)) {
+  if (isUnifiedProps(props)) {
     return (
       <RenderScripts
-        scripts={getUnifiedTCFScripts(props.sourcePointConfigUnifiedTCF)}
+        scripts={getUnifiedScripts(props.sourcePointConfigUnified)}
         reactHelmet={reactHelmet}
       />
     );

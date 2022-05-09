@@ -57,9 +57,10 @@ export default class MyDocument extends Document<Props> {
           {helmet.script.toComponent()}
           <HTMLMeta />
           <Consent
-            sourcePointConfigUnifiedTCF={{
+            sourcePointConfigUnified={{
               accountId: 259,
               propertyHref: 'https://newskit.co.uk',
+              gdpr: {},
             }}
             reactHelmet={Helmet}
           />
