@@ -363,7 +363,6 @@ jobs:
           name: Build
           command: |
             export SITE_ENV=${SITE_ENV}
-            $(echo "${SITE_ENV}")
             export SITE_BASE_URL=${SITE_BASE_URL}
             make build_docs
       - persist_to_workspace:
