@@ -297,8 +297,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 52px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-13 {
+    margin-bottom: 16px;
+  }
 }
 
 .emotion-14 {
@@ -359,35 +364,12 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   }
 }
 
-.emotion-17 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-.emotion-19 {
+.emotion-18 {
   box-sizing: border-box;
   width: 100%;
 }
 
-.emotion-19>ul {
+.emotion-18>ul {
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
@@ -399,48 +381,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   width: 100%;
 }
 
-.emotion-19 li:last-of-type {
+.emotion-18 li:last-of-type {
   margin-right: 0;
 }
 
-.emotion-20 {
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 600;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  color: #0A0A0A;
-  margin-right: 40px;
-  box-sizing: border-box;
-}
-
-.emotion-20::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-20::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-20.selected::after {
-  border-radius: 8px 8px 0 0;
-  background: #577FFB;
-  height: 4px;
-  position: relative;
-  top: 20px;
-}
-
-.emotion-21 {
+.emotion-19 {
   box-sizing: border-box;
   margin-right: 8px;
 }
 
-.emotion-22 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -478,25 +428,19 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   text-align: center;
 }
 
-.emotion-22 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-22:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-22:active:not(:disabled) {
-  color: #0A0A0A;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-22 {
+  .emotion-20 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -504,14 +448,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-22 {
+  .emotion-20 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-23 {
+.emotion-21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -532,7 +476,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   margin-right: calc(-8px/2);
 }
 
-.emotion-24 {
+.emotion-22 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -541,62 +485,103 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   margin-right: calc(8px/2);
 }
 
-.emotion-25 {
-  margin: 0;
+.emotion-23 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-25::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-25::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-26 {
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 600;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  color: #535353;
   margin-right: 40px;
-  box-sizing: border-box;
 }
 
-.emotion-26::before {
+.emotion-23::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-26::after {
+.emotion-23::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-26.selected::after {
+.emotion-23.selected {
+  color: #577FFB;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: static;
+}
+
+.emotion-23.selected::before {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.emotion-23.selected::after {
   border-radius: 8px 8px 0 0;
   background: #577FFB;
-  height: 4px;
+  content: ' ';
   position: relative;
-  top: 20px;
+  height: 24px;
+  margin-top: -10px;
+  margin-bottom: 8px;
+  top: 40px;
 }
 
-.emotion-44 {
+.emotion-28 {
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  margin-right: 40px;
+}
+
+.emotion-28::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-28::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-28.selected {
+  color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: static;
+}
+
+.emotion-28.selected:hover:not(:disabled) {
+  color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-28.selected::before {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.emotion-28.selected::after {
+  border-radius: 8px 8px 0 0;
+  background: #577FFB;
+  content: ' ';
+  position: relative;
+  height: 24px;
+  margin-top: -10px;
+  margin-bottom: 8px;
+  top: 40px;
+}
+
+.emotion-39 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -606,7 +591,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen {
-  .emotion-44 {
+  .emotion-39 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -620,13 +605,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-44 {
+  .emotion-39 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-46 {
+.emotion-41 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -645,7 +630,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   justify-content: space-around;
 }
 
-.emotion-52 {
+.emotion-47 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -655,7 +640,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen {
-  .emotion-52 {
+  .emotion-47 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -669,7 +654,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-52 {
+  .emotion-47 {
     -webkit-order: 3;
     -ms-flex-order: 3;
     order: 3;
@@ -678,7 +663,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   }
 }
 
-.emotion-54 {
+.emotion-49 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -699,7 +684,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   margin-right: calc(-20px/2);
 }
 
-.emotion-55 {
+.emotion-50 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -708,7 +693,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   margin-right: calc(20px/2);
 }
 
-.emotion-56 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -729,7 +714,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   margin-right: calc(-16px/2);
 }
 
-.emotion-57 {
+.emotion-52 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -738,7 +723,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   margin-right: calc(16px/2);
 }
 
-.emotion-58 {
+.emotion-53 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -774,36 +759,36 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   cursor: pointer;
 }
 
-.emotion-58 svg {
+.emotion-53 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-58 svg {
+.emotion-53 svg {
   fill: #2E2E2E;
 }
 
-.emotion-58:hover:not(:disabled) {
+.emotion-53:hover:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #2E2E2E;
 }
 
-.emotion-58:active:not(:disabled) {
+.emotion-53:active:not(:disabled) {
   background-color: #CCCCCC;
   border-color: #0A0A0A;
 }
 
-.emotion-58:disabled {
+.emotion-53:disabled {
   border-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-58:disabled svg {
+.emotion-53:disabled svg {
   fill: #C0C0C0;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-58 {
+  .emotion-53 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -811,21 +796,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-58 {
+  .emotion-53 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-61 {
+.emotion-56 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-61 {
+  .emotion-56 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -833,14 +818,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-61 {
+  .emotion-56 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-63 {
+.emotion-58 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -851,19 +836,19 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   display: inline-block;
 }
 
-.emotion-63::before {
+.emotion-58::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-63::after {
+.emotion-58::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-65 {
+.emotion-60 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -895,21 +880,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   cursor: pointer;
 }
 
-.emotion-65 svg {
+.emotion-60 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-65:hover:not(:disabled) {
+.emotion-60:hover:not(:disabled) {
   background-color: #CCCCCC;
 }
 
-.emotion-65:active:not(:disabled) {
+.emotion-60:active:not(:disabled) {
   background-color: #CCCCCC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-65 {
+  .emotion-60 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -917,21 +902,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-65 {
+  .emotion-60 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-68 {
+.emotion-63 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-68 {
+  .emotion-63 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -939,14 +924,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-68 {
+  .emotion-63 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-68.emotion-68 {
+.emotion-63.emotion-63 {
   width: 16px;
   height: 16px;
 }
@@ -1066,147 +1051,127 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
               class="emotion-16"
             >
               <div
-                class="emotion-17"
+                class="emotion-4"
               >
-                <div
-                  class="emotion-4"
+                <nav
+                  class="emotion-18"
+                  data-testid="menu-container"
+                  role="navigation"
                 >
-                  <nav
-                    class="emotion-19"
-                    data-testid="menu-container"
-                    role="navigation"
+                  <ul
+                    role="list"
                   >
-                    <ul
-                      role="list"
+                    <li
+                      class="nk-menu-item emotion-19"
                     >
-                      <div
-                        aria-current="true"
-                        class="selected emotion-20"
+                      <a
+                        class="emotion-20"
+                        data-testid="buttonLink"
+                        href="/about/introduction"
                       >
-                        <li
-                          class="nk-menu-item emotion-21"
+                        <div
+                          class="emotion-21"
                         >
-                          <a
-                            aria-current="false"
-                            class="selected emotion-22"
-                            data-testid="buttonLink"
-                            href="/about/introduction"
-                          >
-                            <div
-                              class="emotion-23"
-                            >
-                              <div
-                                class="emotion-24"
-                              >
-                                <span
-                                  class="emotion-25"
-                                >
-                                  About
-                                </span>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                      </div>
-                      <div
-                        class="emotion-26"
-                      >
-                        <li
-                          class="nk-menu-item emotion-21"
-                        >
-                          <a
-                            aria-current="false"
+                          <div
                             class="emotion-22"
-                            data-testid="buttonLink"
-                            href="/getting-started/overview"
                           >
                             <div
-                              class="emotion-23"
+                              aria-current="true"
+                              class="selected emotion-23"
+                              data-testid="styled-indicator"
                             >
-                              <div
-                                class="emotion-24"
-                              >
-                                <span
-                                  class="emotion-25"
-                                >
-                                  Guides
-                                </span>
-                              </div>
+                              About
                             </div>
-                          </a>
-                        </li>
-                      </div>
-                      <div
-                        class="emotion-26"
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-19"
+                    >
+                      <a
+                        class="emotion-20"
+                        data-testid="buttonLink"
+                        href="/getting-started/overview"
                       >
-                        <li
-                          class="nk-menu-item emotion-21"
+                        <div
+                          class="emotion-21"
                         >
-                          <a
-                            aria-current="false"
+                          <div
                             class="emotion-22"
-                            data-testid="buttonLink"
-                            href="/theme/overview"
                           >
                             <div
-                              class="emotion-23"
+                              class="emotion-28"
+                              data-testid="styled-indicator"
                             >
-                              <div
-                                class="emotion-24"
-                              >
-                                <span
-                                  class="emotion-25"
-                                >
-                                  Theme
-                                </span>
-                              </div>
+                              Guides
                             </div>
-                          </a>
-                        </li>
-                      </div>
-                      <div
-                        class="emotion-26"
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-19"
+                    >
+                      <a
+                        class="emotion-20"
+                        data-testid="buttonLink"
+                        href="/theme/overview"
                       >
-                        <li
-                          class="nk-menu-item emotion-21"
+                        <div
+                          class="emotion-21"
                         >
-                          <a
-                            aria-current="false"
+                          <div
                             class="emotion-22"
-                            data-testid="buttonLink"
-                            href="/components/overview"
                           >
                             <div
-                              class="emotion-23"
+                              class="emotion-28"
+                              data-testid="styled-indicator"
                             >
-                              <div
-                                class="emotion-24"
-                              >
-                                <span
-                                  class="emotion-25"
-                                >
-                                  Components
-                                </span>
-                              </div>
+                              Theme
                             </div>
-                          </a>
-                        </li>
-                      </div>
-                    </ul>
-                  </nav>
-                </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-19"
+                    >
+                      <a
+                        class="emotion-20"
+                        data-testid="buttonLink"
+                        href="/components/overview"
+                      >
+                        <div
+                          class="emotion-21"
+                        >
+                          <div
+                            class="emotion-22"
+                          >
+                            <div
+                              class="emotion-28"
+                              data-testid="styled-indicator"
+                            >
+                              Components
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="emotion-44"
+          class="emotion-39"
         >
           <div
             class="emotion-5"
           >
             <div
-              class="emotion-46"
+              class="emotion-41"
             >
               <a
                 class="emotion-11"
@@ -1272,38 +1237,38 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
           </div>
         </div>
         <div
-          class="emotion-52"
+          class="emotion-47"
         >
           <div
             class="emotion-10"
           >
             <div
-              class="emotion-54"
+              class="emotion-49"
             >
               <div
-                class="emotion-55"
+                class="emotion-50"
               >
                 <div
-                  class="emotion-56"
+                  class="emotion-51"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-52"
                   >
                     <a
-                      class="emotion-58"
+                      class="emotion-53"
                       data-testid="buttonLink"
                       href="https://github.com/newscorp-ghfb/newskit"
                       target="_blank"
                     >
                       <div
-                        class="emotion-23"
+                        class="emotion-21"
                       >
                         <div
-                          class="emotion-24"
+                          class="emotion-22"
                         >
                           <svg
                             aria-hidden="true"
-                            class="emotion-61"
+                            class="emotion-56"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg"
@@ -1315,10 +1280,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                           </svg>
                         </div>
                         <div
-                          class="emotion-24"
+                          class="emotion-22"
                         >
                           <span
-                            class="emotion-63"
+                            class="emotion-58"
                           >
                             View Github
                           </span>
@@ -1329,24 +1294,24 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                 </div>
               </div>
               <div
-                class="emotion-55"
+                class="emotion-50"
               >
                 <button
                   aria-label="Enable Dark Theme"
                   aria-pressed="false"
-                  class="emotion-65"
+                  class="emotion-60"
                   data-testid="theme-switch-button"
                   title="Enable Dark Theme"
                   type="button"
                 >
                   <div
-                    class="emotion-23"
+                    class="emotion-21"
                   >
                     <div
-                      class="emotion-24"
+                      class="emotion-22"
                     >
                       <svg
-                        class="emotion-68"
+                        class="emotion-63"
                         fill="currentColor"
                         role="img"
                         viewBox="0 0 17 17"
@@ -1672,8 +1637,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 52px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-13 {
+    margin-bottom: 16px;
+  }
 }
 
 .emotion-14 {
@@ -1734,35 +1704,12 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   }
 }
 
-.emotion-17 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-.emotion-19 {
+.emotion-18 {
   box-sizing: border-box;
   width: 100%;
 }
 
-.emotion-19>ul {
+.emotion-18>ul {
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
@@ -1774,48 +1721,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   width: 100%;
 }
 
-.emotion-19 li:last-of-type {
+.emotion-18 li:last-of-type {
   margin-right: 0;
 }
 
-.emotion-20 {
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 600;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  color: #0A0A0A;
-  margin-right: 40px;
-  box-sizing: border-box;
-}
-
-.emotion-20::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-20::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-20.selected::after {
-  border-radius: 8px 8px 0 0;
-  background: #577FFB;
-  height: 4px;
-  position: relative;
-  top: 20px;
-}
-
-.emotion-21 {
+.emotion-19 {
   box-sizing: border-box;
   margin-right: 8px;
 }
 
-.emotion-22 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1853,25 +1768,19 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   text-align: center;
 }
 
-.emotion-22 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-22:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-22:active:not(:disabled) {
-  color: #0A0A0A;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-22 {
+  .emotion-20 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1879,14 +1788,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-22 {
+  .emotion-20 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-23 {
+.emotion-21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1907,7 +1816,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   margin-right: calc(-8px/2);
 }
 
-.emotion-24 {
+.emotion-22 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1916,62 +1825,103 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   margin-right: calc(8px/2);
 }
 
-.emotion-25 {
-  margin: 0;
+.emotion-23 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-25::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-25::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-26 {
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 600;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  color: #535353;
   margin-right: 40px;
-  box-sizing: border-box;
 }
 
-.emotion-26::before {
+.emotion-23::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-26::after {
+.emotion-23::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-26.selected::after {
+.emotion-23.selected {
+  color: #577FFB;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: static;
+}
+
+.emotion-23.selected::before {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.emotion-23.selected::after {
   border-radius: 8px 8px 0 0;
   background: #577FFB;
-  height: 4px;
+  content: ' ';
   position: relative;
-  top: 20px;
+  height: 24px;
+  margin-top: -10px;
+  margin-bottom: 8px;
+  top: 40px;
 }
 
-.emotion-44 {
+.emotion-28 {
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  margin-right: 40px;
+}
+
+.emotion-28::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-28::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-28.selected {
+  color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: static;
+}
+
+.emotion-28.selected:hover:not(:disabled) {
+  color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-28.selected::before {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.emotion-28.selected::after {
+  border-radius: 8px 8px 0 0;
+  background: #577FFB;
+  content: ' ';
+  position: relative;
+  height: 24px;
+  margin-top: -10px;
+  margin-bottom: 8px;
+  top: 40px;
+}
+
+.emotion-39 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -1981,7 +1931,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen {
-  .emotion-44 {
+  .emotion-39 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -1995,13 +1945,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-44 {
+  .emotion-39 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-46 {
+.emotion-41 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2020,7 +1970,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   justify-content: space-around;
 }
 
-.emotion-52 {
+.emotion-47 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -2030,7 +1980,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen {
-  .emotion-52 {
+  .emotion-47 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -2044,7 +1994,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-52 {
+  .emotion-47 {
     -webkit-order: 3;
     -ms-flex-order: 3;
     order: 3;
@@ -2053,7 +2003,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   }
 }
 
-.emotion-54 {
+.emotion-49 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2074,7 +2024,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   margin-right: calc(-20px/2);
 }
 
-.emotion-55 {
+.emotion-50 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2083,7 +2033,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   margin-right: calc(20px/2);
 }
 
-.emotion-56 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2104,7 +2054,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   margin-right: calc(-16px/2);
 }
 
-.emotion-57 {
+.emotion-52 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2113,7 +2063,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   margin-right: calc(16px/2);
 }
 
-.emotion-58 {
+.emotion-53 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2149,36 +2099,36 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   cursor: pointer;
 }
 
-.emotion-58 svg {
+.emotion-53 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-58 svg {
+.emotion-53 svg {
   fill: #2E2E2E;
 }
 
-.emotion-58:hover:not(:disabled) {
+.emotion-53:hover:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #2E2E2E;
 }
 
-.emotion-58:active:not(:disabled) {
+.emotion-53:active:not(:disabled) {
   background-color: #CCCCCC;
   border-color: #0A0A0A;
 }
 
-.emotion-58:disabled {
+.emotion-53:disabled {
   border-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-58:disabled svg {
+.emotion-53:disabled svg {
   fill: #C0C0C0;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-58 {
+  .emotion-53 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2186,21 +2136,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-58 {
+  .emotion-53 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-61 {
+.emotion-56 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-61 {
+  .emotion-56 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2208,14 +2158,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-61 {
+  .emotion-56 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-63 {
+.emotion-58 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -2226,19 +2176,19 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   display: inline-block;
 }
 
-.emotion-63::before {
+.emotion-58::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-63::after {
+.emotion-58::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-65 {
+.emotion-60 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2270,21 +2220,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   cursor: pointer;
 }
 
-.emotion-65 svg {
+.emotion-60 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-65:hover:not(:disabled) {
+.emotion-60:hover:not(:disabled) {
   background-color: #CCCCCC;
 }
 
-.emotion-65:active:not(:disabled) {
+.emotion-60:active:not(:disabled) {
   background-color: #CCCCCC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-65 {
+  .emotion-60 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2292,21 +2242,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-65 {
+  .emotion-60 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-68 {
+.emotion-63 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-68 {
+  .emotion-63 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2314,14 +2264,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-68 {
+  .emotion-63 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-68.emotion-68 {
+.emotion-63.emotion-63 {
   width: 16px;
   height: 16px;
 }
@@ -2441,147 +2391,127 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
               class="emotion-16"
             >
               <div
-                class="emotion-17"
+                class="emotion-4"
               >
-                <div
-                  class="emotion-4"
+                <nav
+                  class="emotion-18"
+                  data-testid="menu-container"
+                  role="navigation"
                 >
-                  <nav
-                    class="emotion-19"
-                    data-testid="menu-container"
-                    role="navigation"
+                  <ul
+                    role="list"
                   >
-                    <ul
-                      role="list"
+                    <li
+                      class="nk-menu-item emotion-19"
                     >
-                      <div
-                        aria-current="true"
-                        class="selected emotion-20"
+                      <a
+                        class="emotion-20"
+                        data-testid="buttonLink"
+                        href="/about/introduction"
                       >
-                        <li
-                          class="nk-menu-item emotion-21"
+                        <div
+                          class="emotion-21"
                         >
-                          <a
-                            aria-current="false"
+                          <div
                             class="emotion-22"
-                            data-testid="buttonLink"
-                            href="/about/introduction"
                           >
                             <div
-                              class="emotion-23"
+                              aria-current="true"
+                              class="selected emotion-23"
+                              data-testid="styled-indicator"
                             >
-                              <div
-                                class="emotion-24"
-                              >
-                                <span
-                                  class="emotion-25"
-                                >
-                                  About
-                                </span>
-                              </div>
+                              About
                             </div>
-                          </a>
-                        </li>
-                      </div>
-                      <div
-                        class="emotion-26"
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-19"
+                    >
+                      <a
+                        class="emotion-20"
+                        data-testid="buttonLink"
+                        href="/getting-started/overview"
                       >
-                        <li
-                          class="nk-menu-item emotion-21"
+                        <div
+                          class="emotion-21"
                         >
-                          <a
-                            aria-current="false"
+                          <div
                             class="emotion-22"
-                            data-testid="buttonLink"
-                            href="/getting-started/overview"
                           >
                             <div
-                              class="emotion-23"
+                              class="emotion-28"
+                              data-testid="styled-indicator"
                             >
-                              <div
-                                class="emotion-24"
-                              >
-                                <span
-                                  class="emotion-25"
-                                >
-                                  Guides
-                                </span>
-                              </div>
+                              Guides
                             </div>
-                          </a>
-                        </li>
-                      </div>
-                      <div
-                        class="emotion-26"
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-19"
+                    >
+                      <a
+                        class="emotion-20"
+                        data-testid="buttonLink"
+                        href="/theme/overview"
                       >
-                        <li
-                          class="nk-menu-item emotion-21"
+                        <div
+                          class="emotion-21"
                         >
-                          <a
-                            aria-current="false"
+                          <div
                             class="emotion-22"
-                            data-testid="buttonLink"
-                            href="/theme/overview"
                           >
                             <div
-                              class="emotion-23"
+                              class="emotion-28"
+                              data-testid="styled-indicator"
                             >
-                              <div
-                                class="emotion-24"
-                              >
-                                <span
-                                  class="emotion-25"
-                                >
-                                  Theme
-                                </span>
-                              </div>
+                              Theme
                             </div>
-                          </a>
-                        </li>
-                      </div>
-                      <div
-                        class="emotion-26"
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-19"
+                    >
+                      <a
+                        class="emotion-20"
+                        data-testid="buttonLink"
+                        href="/components/overview"
                       >
-                        <li
-                          class="nk-menu-item emotion-21"
+                        <div
+                          class="emotion-21"
                         >
-                          <a
-                            aria-current="false"
+                          <div
                             class="emotion-22"
-                            data-testid="buttonLink"
-                            href="/components/overview"
                           >
                             <div
-                              class="emotion-23"
+                              class="emotion-28"
+                              data-testid="styled-indicator"
                             >
-                              <div
-                                class="emotion-24"
-                              >
-                                <span
-                                  class="emotion-25"
-                                >
-                                  Components
-                                </span>
-                              </div>
+                              Components
                             </div>
-                          </a>
-                        </li>
-                      </div>
-                    </ul>
-                  </nav>
-                </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="emotion-44"
+          class="emotion-39"
         >
           <div
             class="emotion-5"
           >
             <div
-              class="emotion-46"
+              class="emotion-41"
             >
               <a
                 class="emotion-11"
@@ -2647,38 +2577,38 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
           </div>
         </div>
         <div
-          class="emotion-52"
+          class="emotion-47"
         >
           <div
             class="emotion-10"
           >
             <div
-              class="emotion-54"
+              class="emotion-49"
             >
               <div
-                class="emotion-55"
+                class="emotion-50"
               >
                 <div
-                  class="emotion-56"
+                  class="emotion-51"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-52"
                   >
                     <a
-                      class="emotion-58"
+                      class="emotion-53"
                       data-testid="buttonLink"
                       href="https://github.com/newscorp-ghfb/newskit"
                       target="_blank"
                     >
                       <div
-                        class="emotion-23"
+                        class="emotion-21"
                       >
                         <div
-                          class="emotion-24"
+                          class="emotion-22"
                         >
                           <svg
                             aria-hidden="true"
-                            class="emotion-61"
+                            class="emotion-56"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg"
@@ -2690,10 +2620,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                           </svg>
                         </div>
                         <div
-                          class="emotion-24"
+                          class="emotion-22"
                         >
                           <span
-                            class="emotion-63"
+                            class="emotion-58"
                           >
                             View Github
                           </span>
@@ -2704,24 +2634,24 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                 </div>
               </div>
               <div
-                class="emotion-55"
+                class="emotion-50"
               >
                 <button
                   aria-label="Enable Dark Theme"
                   aria-pressed="false"
-                  class="emotion-65"
+                  class="emotion-60"
                   data-testid="theme-switch-button"
                   title="Enable Dark Theme"
                   type="button"
                 >
                   <div
-                    class="emotion-23"
+                    class="emotion-21"
                   >
                     <div
-                      class="emotion-24"
+                      class="emotion-22"
                     >
                       <svg
-                        class="emotion-68"
+                        class="emotion-63"
                         fill="currentColor"
                         role="img"
                         viewBox="0 0 17 17"
@@ -3047,8 +2977,13 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 52px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-13 {
+    margin-bottom: 16px;
+  }
 }
 
 .emotion-14 {
@@ -3109,35 +3044,12 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   }
 }
 
-.emotion-17 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-.emotion-19 {
+.emotion-18 {
   box-sizing: border-box;
   width: 100%;
 }
 
-.emotion-19>ul {
+.emotion-18>ul {
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
@@ -3149,48 +3061,16 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   width: 100%;
 }
 
-.emotion-19 li:last-of-type {
+.emotion-18 li:last-of-type {
   margin-right: 0;
 }
 
-.emotion-20 {
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 600;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  color: #535353;
-  margin-right: 40px;
-  box-sizing: border-box;
-}
-
-.emotion-20::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-20::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-20.selected::after {
-  border-radius: 8px 8px 0 0;
-  background: #577FFB;
-  height: 4px;
-  position: relative;
-  top: 20px;
-}
-
-.emotion-21 {
+.emotion-19 {
   box-sizing: border-box;
   margin-right: 8px;
 }
 
-.emotion-22 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3228,25 +3108,19 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   text-align: center;
 }
 
-.emotion-22 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-22:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-22:active:not(:disabled) {
-  color: #0A0A0A;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-22 {
+  .emotion-20 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3254,14 +3128,14 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-22 {
+  .emotion-20 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-23 {
+.emotion-21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3282,7 +3156,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-24 {
+.emotion-22 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3291,30 +3165,58 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-25 {
-  margin: 0;
+.emotion-23 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
+  margin-right: 40px;
 }
 
-.emotion-25::before {
+.emotion-23::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-25::after {
+.emotion-23::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-44 {
+.emotion-23.selected {
+  color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: static;
+}
+
+.emotion-23.selected:hover:not(:disabled) {
+  color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-23.selected::before {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.emotion-23.selected::after {
+  border-radius: 8px 8px 0 0;
+  background: #577FFB;
+  content: ' ';
+  position: relative;
+  height: 24px;
+  margin-top: -10px;
+  margin-bottom: 8px;
+  top: 40px;
+}
+
+.emotion-39 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -3324,7 +3226,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen {
-  .emotion-44 {
+  .emotion-39 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -3338,13 +3240,13 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-44 {
+  .emotion-39 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-46 {
+.emotion-41 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3363,7 +3265,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   justify-content: space-around;
 }
 
-.emotion-52 {
+.emotion-47 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -3373,7 +3275,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen {
-  .emotion-52 {
+  .emotion-47 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -3387,7 +3289,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-52 {
+  .emotion-47 {
     -webkit-order: 3;
     -ms-flex-order: 3;
     order: 3;
@@ -3396,7 +3298,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   }
 }
 
-.emotion-54 {
+.emotion-49 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3417,7 +3319,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   margin-right: calc(-20px/2);
 }
 
-.emotion-55 {
+.emotion-50 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3426,7 +3328,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   margin-right: calc(20px/2);
 }
 
-.emotion-56 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3447,7 +3349,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   margin-right: calc(-16px/2);
 }
 
-.emotion-57 {
+.emotion-52 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3456,7 +3358,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   margin-right: calc(16px/2);
 }
 
-.emotion-58 {
+.emotion-53 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3492,36 +3394,36 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   cursor: pointer;
 }
 
-.emotion-58 svg {
+.emotion-53 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-58 svg {
+.emotion-53 svg {
   fill: #2E2E2E;
 }
 
-.emotion-58:hover:not(:disabled) {
+.emotion-53:hover:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #2E2E2E;
 }
 
-.emotion-58:active:not(:disabled) {
+.emotion-53:active:not(:disabled) {
   background-color: #CCCCCC;
   border-color: #0A0A0A;
 }
 
-.emotion-58:disabled {
+.emotion-53:disabled {
   border-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-58:disabled svg {
+.emotion-53:disabled svg {
   fill: #C0C0C0;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-58 {
+  .emotion-53 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3529,21 +3431,21 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-58 {
+  .emotion-53 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-61 {
+.emotion-56 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-61 {
+  .emotion-56 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3551,14 +3453,14 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-61 {
+  .emotion-56 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-63 {
+.emotion-58 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -3569,19 +3471,19 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   display: inline-block;
 }
 
-.emotion-63::before {
+.emotion-58::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-63::after {
+.emotion-58::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-65 {
+.emotion-60 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3613,21 +3515,21 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   cursor: pointer;
 }
 
-.emotion-65 svg {
+.emotion-60 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-65:hover:not(:disabled) {
+.emotion-60:hover:not(:disabled) {
   background-color: #CCCCCC;
 }
 
-.emotion-65:active:not(:disabled) {
+.emotion-60:active:not(:disabled) {
   background-color: #CCCCCC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-65 {
+  .emotion-60 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3635,21 +3537,21 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-65 {
+  .emotion-60 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-68 {
+.emotion-63 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-68 {
+  .emotion-63 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3657,14 +3559,14 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-68 {
+  .emotion-63 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-68.emotion-68 {
+.emotion-63.emotion-63 {
   width: 16px;
   height: 16px;
 }
@@ -3784,146 +3686,126 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
               class="emotion-16"
             >
               <div
-                class="emotion-17"
+                class="emotion-4"
               >
-                <div
-                  class="emotion-4"
+                <nav
+                  class="emotion-18"
+                  data-testid="menu-container"
+                  role="navigation"
                 >
-                  <nav
-                    class="emotion-19"
-                    data-testid="menu-container"
-                    role="navigation"
+                  <ul
+                    role="list"
                   >
-                    <ul
-                      role="list"
+                    <li
+                      class="nk-menu-item emotion-19"
                     >
-                      <div
+                      <a
                         class="emotion-20"
+                        data-testid="buttonLink"
+                        href="/about/introduction"
                       >
-                        <li
-                          class="nk-menu-item emotion-21"
+                        <div
+                          class="emotion-21"
                         >
-                          <a
-                            aria-current="false"
+                          <div
                             class="emotion-22"
-                            data-testid="buttonLink"
-                            href="/about/introduction"
                           >
                             <div
                               class="emotion-23"
+                              data-testid="styled-indicator"
                             >
-                              <div
-                                class="emotion-24"
-                              >
-                                <span
-                                  class="emotion-25"
-                                >
-                                  About
-                                </span>
-                              </div>
+                              About
                             </div>
-                          </a>
-                        </li>
-                      </div>
-                      <div
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-19"
+                    >
+                      <a
                         class="emotion-20"
+                        data-testid="buttonLink"
+                        href="/getting-started/overview"
                       >
-                        <li
-                          class="nk-menu-item emotion-21"
+                        <div
+                          class="emotion-21"
                         >
-                          <a
-                            aria-current="false"
+                          <div
                             class="emotion-22"
-                            data-testid="buttonLink"
-                            href="/getting-started/overview"
                           >
                             <div
                               class="emotion-23"
+                              data-testid="styled-indicator"
                             >
-                              <div
-                                class="emotion-24"
-                              >
-                                <span
-                                  class="emotion-25"
-                                >
-                                  Guides
-                                </span>
-                              </div>
+                              Guides
                             </div>
-                          </a>
-                        </li>
-                      </div>
-                      <div
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-19"
+                    >
+                      <a
                         class="emotion-20"
+                        data-testid="buttonLink"
+                        href="/theme/overview"
                       >
-                        <li
-                          class="nk-menu-item emotion-21"
+                        <div
+                          class="emotion-21"
                         >
-                          <a
-                            aria-current="false"
+                          <div
                             class="emotion-22"
-                            data-testid="buttonLink"
-                            href="/theme/overview"
                           >
                             <div
                               class="emotion-23"
+                              data-testid="styled-indicator"
                             >
-                              <div
-                                class="emotion-24"
-                              >
-                                <span
-                                  class="emotion-25"
-                                >
-                                  Theme
-                                </span>
-                              </div>
+                              Theme
                             </div>
-                          </a>
-                        </li>
-                      </div>
-                      <div
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-19"
+                    >
+                      <a
                         class="emotion-20"
+                        data-testid="buttonLink"
+                        href="/components/overview"
                       >
-                        <li
-                          class="nk-menu-item emotion-21"
+                        <div
+                          class="emotion-21"
                         >
-                          <a
-                            aria-current="false"
+                          <div
                             class="emotion-22"
-                            data-testid="buttonLink"
-                            href="/components/overview"
                           >
                             <div
                               class="emotion-23"
+                              data-testid="styled-indicator"
                             >
-                              <div
-                                class="emotion-24"
-                              >
-                                <span
-                                  class="emotion-25"
-                                >
-                                  Components
-                                </span>
-                              </div>
+                              Components
                             </div>
-                          </a>
-                        </li>
-                      </div>
-                    </ul>
-                  </nav>
-                </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="emotion-44"
+          class="emotion-39"
         >
           <div
             class="emotion-5"
           >
             <div
-              class="emotion-46"
+              class="emotion-41"
             >
               <a
                 class="emotion-11"
@@ -3989,38 +3871,38 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
           </div>
         </div>
         <div
-          class="emotion-52"
+          class="emotion-47"
         >
           <div
             class="emotion-10"
           >
             <div
-              class="emotion-54"
+              class="emotion-49"
             >
               <div
-                class="emotion-55"
+                class="emotion-50"
               >
                 <div
-                  class="emotion-56"
+                  class="emotion-51"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-52"
                   >
                     <a
-                      class="emotion-58"
+                      class="emotion-53"
                       data-testid="buttonLink"
                       href="https://github.com/newscorp-ghfb/newskit"
                       target="_blank"
                     >
                       <div
-                        class="emotion-23"
+                        class="emotion-21"
                       >
                         <div
-                          class="emotion-24"
+                          class="emotion-22"
                         >
                           <svg
                             aria-hidden="true"
-                            class="emotion-61"
+                            class="emotion-56"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg"
@@ -4032,10 +3914,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                           </svg>
                         </div>
                         <div
-                          class="emotion-24"
+                          class="emotion-22"
                         >
                           <span
-                            class="emotion-63"
+                            class="emotion-58"
                           >
                             View Github
                           </span>
@@ -4046,24 +3928,24 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                 </div>
               </div>
               <div
-                class="emotion-55"
+                class="emotion-50"
               >
                 <button
                   aria-label="Enable Dark Theme"
                   aria-pressed="false"
-                  class="emotion-65"
+                  class="emotion-60"
                   data-testid="theme-switch-button"
                   title="Enable Dark Theme"
                   type="button"
                 >
                   <div
-                    class="emotion-23"
+                    class="emotion-21"
                   >
                     <div
-                      class="emotion-24"
+                      class="emotion-22"
                     >
                       <svg
-                        class="emotion-68"
+                        class="emotion-63"
                         fill="currentColor"
                         role="img"
                         viewBox="0 0 17 17"

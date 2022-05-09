@@ -178,6 +178,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
       items.map(({title, id}) => (
         <MenuItem
+          key={id}
           href={id}
           size={MenuItemSize.Small}
           overrides={{

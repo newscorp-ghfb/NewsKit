@@ -1201,16 +1201,16 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "selected": Object {
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
     },
@@ -1393,18 +1393,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -3340,16 +3336,16 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "selected": Object {
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
     },
@@ -3532,18 +3528,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -5479,16 +5471,16 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "selected": Object {
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
     },
@@ -5671,18 +5663,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -7618,16 +7606,16 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "selected": Object {
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
     },
@@ -7810,18 +7798,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -9757,16 +9741,16 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "selected": Object {
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
     },
@@ -9949,18 +9933,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -11896,16 +11876,16 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "selected": Object {
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
     },
@@ -12088,18 +12068,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -14035,16 +14011,16 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "selected": Object {
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
     },
@@ -14227,18 +14203,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -16174,16 +16146,16 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "selected": Object {
+        "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
     },
@@ -16366,18 +16338,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.interactivePrimary040}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {

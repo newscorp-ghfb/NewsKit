@@ -786,7 +786,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </label>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -813,7 +812,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </li>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -840,7 +838,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </li>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -867,7 +864,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </li>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -894,7 +890,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </li>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -959,7 +954,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </label>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -1002,7 +996,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1029,7 +1022,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1074,7 +1066,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1101,7 +1092,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1128,7 +1118,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1155,7 +1144,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1222,7 +1210,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </label>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -1265,7 +1252,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1292,7 +1278,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1319,7 +1304,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1346,7 +1330,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1373,7 +1356,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1400,7 +1382,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1427,7 +1408,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1454,7 +1434,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1481,7 +1460,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1508,7 +1486,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1553,7 +1530,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1580,7 +1556,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1607,7 +1582,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1652,7 +1626,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1679,7 +1652,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1706,7 +1678,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1733,7 +1704,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1800,7 +1770,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </label>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -1843,7 +1812,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1870,7 +1838,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1897,7 +1864,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1924,7 +1890,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1951,7 +1916,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -1978,7 +1942,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2005,7 +1968,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2032,7 +1994,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2077,7 +2038,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2104,7 +2064,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2131,7 +2090,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2158,7 +2116,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2185,7 +2142,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2230,7 +2186,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2257,7 +2212,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2284,7 +2238,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2311,7 +2264,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2338,7 +2290,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2365,7 +2316,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2392,7 +2342,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2419,7 +2368,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2446,7 +2394,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2473,7 +2420,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2518,7 +2464,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2545,7 +2490,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2572,7 +2516,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2599,7 +2542,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2644,7 +2586,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2671,7 +2612,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2698,7 +2638,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2725,7 +2664,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2752,7 +2690,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2779,7 +2716,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2824,7 +2760,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2851,7 +2786,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2878,7 +2812,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2905,7 +2838,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2932,7 +2864,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2959,7 +2890,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -2986,7 +2916,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -3013,7 +2942,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -3058,7 +2986,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -3085,7 +3012,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -3112,7 +3038,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -3139,7 +3064,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -3184,7 +3108,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -3211,7 +3134,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -3238,7 +3160,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -3265,7 +3186,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -3292,7 +3212,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -3319,7 +3238,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4285,7 +4203,6 @@ exports[`Sidebar renders correctly when open 1`] = `
               </label>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -4312,7 +4229,6 @@ exports[`Sidebar renders correctly when open 1`] = `
               </li>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -4339,7 +4255,6 @@ exports[`Sidebar renders correctly when open 1`] = `
               </li>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -4366,7 +4281,6 @@ exports[`Sidebar renders correctly when open 1`] = `
               </li>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -4393,7 +4307,6 @@ exports[`Sidebar renders correctly when open 1`] = `
               </li>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -4458,7 +4371,6 @@ exports[`Sidebar renders correctly when open 1`] = `
               </label>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -4501,7 +4413,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4528,7 +4439,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4573,7 +4483,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4600,7 +4509,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4627,7 +4535,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4654,7 +4561,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4721,7 +4627,6 @@ exports[`Sidebar renders correctly when open 1`] = `
               </label>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -4764,7 +4669,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4791,7 +4695,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4818,7 +4721,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4845,7 +4747,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4872,7 +4773,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4899,7 +4799,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4926,7 +4825,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4953,7 +4851,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -4980,7 +4877,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5007,7 +4903,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5052,7 +4947,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5079,7 +4973,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5106,7 +4999,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5151,7 +5043,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5178,7 +5069,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5205,7 +5095,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5232,7 +5121,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5299,7 +5187,6 @@ exports[`Sidebar renders correctly when open 1`] = `
               </label>
               <div
                 class="emotion-9"
-                id="indicator"
               />
               <li
                 class="nk-menu-item emotion-10"
@@ -5342,7 +5229,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5369,7 +5255,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5396,7 +5281,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5423,7 +5307,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5450,7 +5333,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5477,7 +5359,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5504,7 +5385,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5531,7 +5411,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5576,7 +5455,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5603,7 +5481,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5630,7 +5507,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5657,7 +5533,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5684,7 +5559,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5729,7 +5603,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5756,7 +5629,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5783,7 +5655,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5810,7 +5681,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5837,7 +5707,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5864,7 +5733,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5891,7 +5759,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5918,7 +5785,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5945,7 +5811,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -5972,7 +5837,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6017,7 +5881,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6044,7 +5907,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6071,7 +5933,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6098,7 +5959,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6143,7 +6003,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6170,7 +6029,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6197,7 +6055,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6224,7 +6081,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6251,7 +6107,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6278,7 +6133,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6323,7 +6177,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6350,7 +6203,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6377,7 +6229,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6404,7 +6255,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6431,7 +6281,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6458,7 +6307,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6485,7 +6333,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6512,7 +6359,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6557,7 +6403,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6584,7 +6429,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6611,7 +6455,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6638,7 +6481,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6683,7 +6525,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                 >
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6710,7 +6551,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6737,7 +6577,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6764,7 +6603,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6791,7 +6629,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"
@@ -6818,7 +6655,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                   </li>
                   <div
                     class="emotion-9"
-                    id="indicator"
                   />
                   <li
                     class="nk-menu-item emotion-10"

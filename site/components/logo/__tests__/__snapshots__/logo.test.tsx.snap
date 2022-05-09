@@ -11,8 +11,13 @@ exports[`Logo Default logo renders as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 52px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    margin-bottom: 16px;
+  }
 }
 
 .emotion-1 {

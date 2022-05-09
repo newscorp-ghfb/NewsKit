@@ -470,7 +470,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
             </label>
             <div
               class="selected emotion-7"
-              id="indicator"
             />
             <li
               class="nk-menu-item emotion-8"
@@ -551,7 +550,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
               >
                 <div
                   class="emotion-7"
-                  id="indicator"
                 />
                 <li
                   class="nk-menu-item emotion-8"
@@ -578,7 +576,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                 </li>
                 <div
                   class="emotion-7"
-                  id="indicator"
                 />
                 <li
                   class="nk-menu-item emotion-8"
@@ -623,7 +620,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
               >
                 <div
                   class="emotion-7"
-                  id="indicator"
                 />
                 <li
                   class="nk-menu-item emotion-8"
@@ -650,7 +646,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                 </li>
                 <div
                   class="emotion-7"
-                  id="indicator"
                 />
                 <li
                   class="nk-menu-item emotion-8"
@@ -1233,7 +1228,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
             </label>
             <div
               class="emotion-7"
-              id="indicator"
             />
             <li
               class="nk-menu-item emotion-8"
@@ -1314,7 +1308,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
               >
                 <div
                   class="emotion-7"
-                  id="indicator"
                 />
                 <li
                   class="nk-menu-item emotion-8"
@@ -1341,7 +1334,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                 </li>
                 <div
                   class="emotion-7"
-                  id="indicator"
                 />
                 <li
                   class="nk-menu-item emotion-8"
@@ -1386,7 +1378,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
               >
                 <div
                   class="emotion-7"
-                  id="indicator"
                 />
                 <li
                   class="nk-menu-item emotion-8"
@@ -1413,7 +1404,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                 </li>
                 <div
                   class="emotion-7"
-                  id="indicator"
                 />
                 <li
                   class="nk-menu-item emotion-8"
@@ -1995,7 +1985,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
             </label>
             <div
               class="emotion-7"
-              id="indicator"
             />
             <li
               class="nk-menu-item emotion-8"
@@ -2076,7 +2065,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
               >
                 <div
                   class="emotion-7"
-                  id="indicator"
                 />
                 <li
                   class="nk-menu-item emotion-8"
@@ -2103,7 +2091,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                 </li>
                 <div
                   class="emotion-7"
-                  id="indicator"
                 />
                 <li
                   class="nk-menu-item emotion-8"
@@ -2148,7 +2135,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
               >
                 <div
                   class="emotion-7"
-                  id="indicator"
                 />
                 <li
                   class="nk-menu-item emotion-8"
@@ -2175,7 +2161,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                 </li>
                 <div
                   class="emotion-7"
-                  id="indicator"
                 />
                 <li
                   class="nk-menu-item emotion-8"

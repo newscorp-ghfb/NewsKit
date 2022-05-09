@@ -65,6 +65,7 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
                   <>
                     <Indicator
                       className={path.includes(id) ? 'selected' : undefined}
+                      id={id}
                     />
                     <PageMenuLinks active={path.includes(id)} href={id}>
                       <Label
