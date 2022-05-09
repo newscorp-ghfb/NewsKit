@@ -120,7 +120,6 @@ export const Indicator = styled.div<{
       margin-top: -10px;
       ${getSpacingCssFromTheme('marginBottom', 'space020')};
       ${getSizingCssFromTheme('top', 'sizing070')};
-      ${getSizingCssFromTheme('bottom', 'sizing000')};
     }
   }
 `;

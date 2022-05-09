@@ -10,8 +10,8 @@ import {
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  height: 52px;
   overflow: hidden;
+  ${getSpacingCssFromTheme('marginBottom', {lg: '16px'})};
 `;
 
 interface StyledLogoProps {
