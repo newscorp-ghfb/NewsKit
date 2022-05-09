@@ -122,7 +122,7 @@ const MenuNavDesktop = () => {
   return (
     <>
       <Menu
-        aria-label="menu"
+        aria-label="menu-sidebar"
         vertical
         size="small"
         align="start"
