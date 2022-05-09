@@ -373,7 +373,7 @@ jobs:
       - slack/status:
           <<: *slack_status
   
-  build_docs:
+  test_var:
     executor: node
     steps:
       - checkout
@@ -899,14 +899,13 @@ workflows:
   pull_request:
     when:
       matches:
-          # Supporting Pr branches starting with feat/, docs/, fix/, chore/, style/, refactor/, perf/, test/, etc.
-          pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert\/.*|style\/.*|test\/.*|^dependabot\/.*'
-          value: << pipeline.git.branch >>
+        # Supporting Pr branches starting with feat/, docs/, fix/, chore/, style/, refactor/, perf/, test/, etc.
+        pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert\/.*|style\/.*|test\/.*|^dependabot\/.*'
+        value: << pipeline.git.branch >>
     jobs:
       - install_deps
-      - build_docs:
+      - test_var:
           context: ncu-newskit-site-prod
-
       - install_cypress
       - build_icons:
           requires:
