@@ -17,6 +17,7 @@ import {
   isHorizontal,
   isReverse,
 } from './utils';
+import {logicalProps} from '../utils/logical-properties';
 
 const DEFAULT_PROPS: {layout: CardLayout} = {
   layout: 'vertical',
@@ -35,6 +36,7 @@ export const StyledCardContainer = styled.div<
       ? `row${isReverse(layout) && '-reverse'}`
       : 'column') as FlexDirectionProperty,
   }))}
+  ${logicalProps('card')};
 `;
 
 export const StyledCardContainerMedia = styled.div<
@@ -59,7 +61,7 @@ export const StyledCardContainerMedia = styled.div<
       return {};
     },
   )}
-
+  // handleResponsiveProp below to be removed once logical props are used in defaults
   ${handleResponsiveProp({layout: DEFAULT_PROPS.layout}, ({layout}, props) => {
     let marginDirection = 'marginBottom';
     if (isHorizontal(layout) && isReverse(layout)) {
@@ -67,6 +69,7 @@ export const StyledCardContainerMedia = styled.div<
     } else if (isHorizontal(layout)) {
       marginDirection = 'marginRight';
     }
+
     return getResponsiveSpace(
       marginDirection,
       'card.mediaContainer',
@@ -74,6 +77,7 @@ export const StyledCardContainerMedia = styled.div<
       'spaceInline',
     )(props);
   })}
+  ${logicalProps('card.mediaContainer', 'mediaContainer')};
 
   ${({mediaInteractive}) => (mediaInteractive ? 'z-index: 2;' : null)}
   ${({hasHref, ...props}) =>
@@ -111,12 +115,14 @@ export const StyledCardContainerTeaser = styled.div<
   }))}
   ${({hasHref, ...props}) =>
     filterInteractiveStates('teaserContainer', hasHref)(props)}
+  // getResponsiveSpace to be removed once logical props are used in defaults
   ${getResponsiveSpace(
     'padding',
     'card.teaserContainer',
     'teaserContainer',
     'spaceInset',
   )}
+  ${logicalProps('card.teaserContainer', 'teaserContainer')};
 
   a:not(.nk-card-link) {
     z-index: 2;
@@ -153,12 +159,14 @@ export const StyledCardContainerActions = styled(Stack)<
 >`
   height: auto;
   box-sizing: border-box;
+  // getResponsiveSpace to be removed once logical props are used in defaults
   ${getResponsiveSpace(
     'padding',
     'card.actionsContainer',
     'actionsContainer',
     'spaceInset',
   )}
+  ${logicalProps('card.actionsContainer', 'actionsContainer')};
   ${({hasHref, ...props}) =>
     filterInteractiveStates('actionsContainer', hasHref)(props)}
   ${getResponsiveSize(

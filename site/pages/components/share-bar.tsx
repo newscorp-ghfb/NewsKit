@@ -13,6 +13,8 @@ import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
+import {OverridesRowsProps} from '../../components/component-api';
+import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 
 const PlaygroundContainer = styled.div`
   display: flex;
@@ -300,6 +302,7 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
               default: 'space020',
               description: 'If provided, this sets the space between the items',
             },
+            ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
         },
       ],
