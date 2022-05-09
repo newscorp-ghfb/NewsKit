@@ -82,7 +82,7 @@ describe('Consent', () => {
         test('the Unified Consent V2 renders correctly with default baseEndpoint', () => {
           const fragment = renderToFragment(
             <Consent
-              sourcePointConfigUnifiedTCF={{
+              sourcePointConfigUnified={{
                 accountId: 259,
                 propertyHref: 'https://newskit.dev-news.co.uk',
               }}
@@ -95,7 +95,7 @@ describe('Consent', () => {
         test('the Unified Consent V2 renders correctly with trailing slash on baseEndpoint', () => {
           const fragment = renderToFragment(
             <Consent
-              sourcePointConfigUnifiedTCF={{
+              sourcePointConfigUnified={{
                 accountId: 259,
                 propertyHref: 'https://newskit.dev-news.co.uk',
                 baseEndpoint: 'https://cmp.newskit.co.uk/',
