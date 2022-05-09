@@ -7,13 +7,11 @@ import {
 } from '../../test/test-utils';
 
 describe('ConsentSettingsLink', () => {
-  const siteId = 'test-siteId';
   const privacyManagerId = 'test-privacyManagerId';
 
   describe('with no children', () => {
     test('renders link with default text', () => {
       const fragment = renderToFragmentWithTheme(ConsentSettingsLink, {
-        siteId,
         privacyManagerId,
       });
       expect(fragment).toMatchSnapshot();
@@ -40,17 +38,7 @@ describe('ConsentSettingsLink', () => {
         delete (global as any).window._sp_;
       });
 
-      test('calls the expected SourcePoint function', async () => {
-        const link = await renderWithTheme(ConsentSettingsLink, {
-          siteId,
-          privacyManagerId,
-        }).findByRole('button');
-        fireEvent.click(link);
-
-        expect(expectedFunction).toHaveBeenCalledWith(siteId, privacyManagerId);
-      });
-
-      test('calls the expected SourcePoint function when siteId is undefined', async () => {
+      test('calls legacy TCFv2 SourcePoint function', async () => {
         const link = await renderWithTheme(ConsentSettingsLink, {
           privacyManagerId,
         }).findByRole('button');
@@ -88,7 +76,6 @@ describe('ConsentSettingsLink', () => {
   describe('with children', () => {
     test('renders link with custom text', () => {
       const fragment = renderToFragmentWithTheme(ConsentSettingsLink, {
-        siteId,
         privacyManagerId,
         children: 'Some Custom Link Text',
       });
@@ -101,7 +88,6 @@ describe('ConsentSettingsLink', () => {
       jest.spyOn(console, 'warn');
 
       const link = await renderWithTheme(ConsentSettingsLink, {
-        siteId,
         privacyManagerId,
       }).findByRole('button');
       fireEvent.click(link);
@@ -114,7 +100,6 @@ describe('ConsentSettingsLink', () => {
   describe('with link props', () => {
     test('renders link with styles', () => {
       const fragment = renderToFragmentWithTheme(ConsentSettingsLink, {
-        siteId,
         privacyManagerId,
         children: 'Some Custom Link Text With Styles',
         overrides: {
@@ -128,7 +113,6 @@ describe('ConsentSettingsLink', () => {
       const onClick = jest.fn();
 
       const link = await renderWithTheme(ConsentSettingsLink, {
-        siteId,
         privacyManagerId,
         children: 'Some Custom Link Text With Styles',
         onClick,

@@ -1,5 +1,5 @@
 import { Consent } from 'newskit';
 
 <body>
-  <Consent sourcePointConfigUnifiedTCF={{accountId: 259}} />
+  <Consent sourcePointConfigUnified={{accountId: 259, gdpr: {}}} />
 </body>;

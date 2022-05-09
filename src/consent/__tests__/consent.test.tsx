@@ -79,12 +79,27 @@ describe('Consent', () => {
       });
 
       describe('Unified Consent V2', () => {
-        test('the Unified Consent V2 renders correctly with default baseEndpoint', () => {
+        test('the Unified Consent V2 renders GDPR correctly with default baseEndpoint', () => {
           const fragment = renderToFragment(
             <Consent
               sourcePointConfigUnified={{
                 accountId: 259,
                 propertyHref: 'https://newskit.dev-news.co.uk',
+                gdpr: {},
+              }}
+              reactHelmet={helmet}
+            />,
+          );
+          expect(fragment).toMatchSnapshot();
+        });
+
+        test('the Unified Consent V2 renders CCPA correctly', () => {
+          const fragment = renderToFragment(
+            <Consent
+              sourcePointConfigUnified={{
+                accountId: 259,
+                propertyHref: 'https://newskit.dev-news.co.uk',
+                ccpa: {},
               }}
               reactHelmet={helmet}
             />,
@@ -97,6 +112,7 @@ describe('Consent', () => {
             <Consent
               sourcePointConfigUnified={{
                 accountId: 259,
+                gdpr: {},
                 propertyHref: 'https://newskit.dev-news.co.uk',
                 baseEndpoint: 'https://cmp.newskit.co.uk/',
               }}

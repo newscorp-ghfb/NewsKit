@@ -18,12 +18,6 @@ type SPWindowUnifiedCCPA = Window & {
   };
 };
 
-type SPWindowTCF1 = Window & {
-  _sp_?: {
-    loadPrivacyManagerModal: (siteId?: string, managerId?: string) => void;
-  };
-};
-
 type SPWindowTCF2 = Window & {
   _sp_?: {
     loadPrivacyManagerModal: (managerId?: string) => void;
@@ -65,15 +59,9 @@ export const ConsentSettingsLink: React.FC<ConsentSettingsLinkProps> = ({
           (window as SPWindowUnifiedCCPA)._sp_!.ccpa!.loadPrivacyManagerModal(
             privacyManagerId,
           );
-        } else if (!siteId) {
-          // eslint-disable-next-line no-underscore-dangle
-          (window as SPWindowTCF2)._sp_!.loadPrivacyManagerModal(
-            privacyManagerId,
-          );
         } else {
           // eslint-disable-next-line no-underscore-dangle
-          (window as SPWindowTCF1)._sp_!.loadPrivacyManagerModal(
-            siteId,
+          (window as SPWindowTCF2)._sp_!.loadPrivacyManagerModal(
             privacyManagerId,
           );
         }
