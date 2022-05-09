@@ -35,7 +35,8 @@ export default class MyDocument extends Document<Props> {
       // Are we production "newskit.co.uk" or not?
       // TODO to remove hardcoded value
 
-      productionSiteEnv: true,
+      // productionSiteEnv: process.env.SITE_ENV === 'production',
+      productionSiteEnv: 'marco',
     };
   }
 
@@ -257,6 +258,7 @@ export default class MyDocument extends Document<Props> {
             `}
           />
           {console.log(this.props, '🔥🔥🔥🔥🔥🔥🔥')}
+          {console.log(this.props.productionSiteEnv, '✅✅✅✅✅✅✅✅')}
           <Tealium
             accountId="newsinternational"
             profileId="thetimes.newskit"
