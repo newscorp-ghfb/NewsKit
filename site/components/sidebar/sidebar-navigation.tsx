@@ -1,11 +1,22 @@
 import React, {useEffect, useRef} from 'react';
 import {useRouter} from 'next/router';
-import {Block, Label, Menu, MenuDivider, MenuGroup} from 'newskit';
+import {
+  Block,
+  getSpacingCssFromTheme,
+  Label,
+  Menu,
+  MenuDivider,
+  styled,
+} from 'newskit';
 import routes from '../../routes';
 import {Visible} from '../../../src/grid/visibility';
 import {MenuNavCollapsible} from '../menu-collapsible/menu-collapsible';
 import {PageLinkProps, SiteMenuItemProps, SubNavProps} from './types';
 import {DesktopNavigationDivider, Indicator, MenuItemStyled} from './styled';
+
+const StyledLabel = styled(Label)`
+  ${getSpacingCssFromTheme('marginLeft', 'space060')};
+`;
 
 const PageMenuLinks: React.FC<PageLinkProps> = ({
   page,
@@ -81,21 +92,18 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
                     <MenuDivider />
                   </DesktopNavigationDivider>
                 )}
-                <MenuGroup
-                  title={title}
+                <StyledLabel
+                  // title={title}
                   overrides={{
-                    title: {
-                      typographyPreset: 'utilityHeading030',
-                      stylePreset: ' menuItemVertical',
-                      spaceInline: 'space040',
-                      spaceInset: 'space060',
-                    },
+                    typographyPreset: 'utilityHeading030',
+                    stylePreset: ' menuItemVertical',
                   }}
                 >
-                  <SiteMenuItem menuItemList={subNav as SubNavProps} />
-                  {/* added this cause last item needs space */}
-                  <Block spaceStack="space045" />
-                </MenuGroup>
+                  {title}
+                </StyledLabel>
+                <SiteMenuItem menuItemList={subNav as SubNavProps} />
+                {/* added this cause last item needs space */}
+                <Block spaceStack="space045" />
               </>
             )}
           </React.Fragment>
