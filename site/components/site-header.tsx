@@ -28,7 +28,6 @@ import {handleEnterKeyPress} from '../helpers/a11y';
 import routes from '../routes';
 import {Link} from './link';
 import {getBorderRadius} from './theming-values/colors/utils';
-import {MenuItemSize} from '../../src/menu/types';
 
 export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
   href ? (
@@ -176,7 +175,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
         <MenuItem
           key={id}
           href={id}
-          size={MenuItemSize.Small}
+          size="small"
           overrides={{
             stylePreset: 'linkTopNavigation',
           }}

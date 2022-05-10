@@ -4,6 +4,7 @@ import {
   Divider,
   Flow,
   getSpacingCssFromTheme,
+  getStylePresetFromTheme,
   H3,
   IconButton,
   IconOutlinedLaunch,
@@ -25,7 +26,13 @@ const MobileNavigationDivider = styled.div`
   ${getSpacingCssFromTheme('marginTop', 'space050')};
   ${getSpacingCssFromTheme('marginBottom', 'space050')};
 `;
-const MenuItemStyled = styled(MenuItem)`
+const MenuItemStyled = styled(MenuItem)<{
+  $selected: boolean;
+}>`
+  ${({$selected, ...props}) =>
+    getStylePresetFromTheme('sidebarNavItem', undefined, {
+      isSelected: $selected,
+    })(props)}
   width: 100vw;
 `;
 export const GitHubLaunch: React.FC<{href?: string}> = ({href}) =>
@@ -84,6 +91,7 @@ export const MenuNavCollapsible = ({
                 />
                 <MenuItemStyled
                   href={id}
+                  $selected={path.includes(id)}
                   overrides={{
                     minHeight: '40px',
                   }}
@@ -109,7 +117,7 @@ export const MenuNavCollapsible = ({
                   overrides={{
                     title: {
                       typographyPreset: 'utilityHeading010',
-                      stylePreset: ' menuItemVertical',
+                      stylePreset: 'sidebarHeader',
                       spaceInline: 'space030',
                       // to make spaceinset work you need to check marginInline on the titles
                       spaceInset: 'space060',
