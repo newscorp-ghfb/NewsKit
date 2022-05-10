@@ -7,7 +7,13 @@ import {
 } from '../../test/test-utils';
 import {AssistiveText} from '../../assistive-text';
 import {Label, LabelProps} from '../../label';
-import {createTheme, IconFilledClose, IconFilledSearch} from '../..';
+import {
+  createTheme,
+  EventTrigger,
+  IconFilledClose,
+  IconFilledSearch,
+  InstrumentationProvider,
+} from '../..';
 
 const renderInvalidLabel = () => <Label state="invalid">AssistiveText</Label>;
 const renderTextFieldWithComponents = () => (
@@ -217,5 +223,30 @@ describe('TextField', () => {
     ) as any;
 
     expect(fragment).toMatchSnapshot();
+  });
+
+  test('fires focus event onFocus with custom originator', async () => {
+    const mockFireEvent = jest.fn();
+
+    const props: TextFieldProps = {
+      eventContext: {event: 'other event data'},
+      eventOriginator: 'custom-originator',
+    };
+
+    const textField = await renderWithTheme((() => (
+      <InstrumentationProvider fireEvent={mockFireEvent}>
+        {renderTextField(props)}
+      </InstrumentationProvider>
+    )) as React.FC).findByTestId('text-field-email');
+
+    fireEvent.focus(textField);
+
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'custom-originator',
+      trigger: EventTrigger.Focus,
+      context: {
+        event: 'other event data',
+      },
+    });
   });
 });
