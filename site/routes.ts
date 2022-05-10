@@ -636,6 +636,14 @@ export default [
             illustration: 'components/standfirst-illustration',
           },
           {
+            title: 'Structured List',
+            page: true,
+            id: '/components/structured-list',
+            description:
+              'Structured lists group content that is similar or related.',
+            illustration: 'components/standfirst-illustration',
+          },
+          {
             title: 'Text Block',
             page: true,
             id: '/components/text-block',

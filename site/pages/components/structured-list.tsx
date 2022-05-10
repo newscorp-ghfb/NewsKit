@@ -22,7 +22,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Component',
+      type: 'Text',
       name: 'Structured List',
       hero: {
         src: 'static/button-hero.svg',
