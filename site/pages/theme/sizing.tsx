@@ -12,6 +12,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
+  ContentColSpan,
 } from '../../components/content-structure';
 
 const sizingRows = getTokenType(newskitLightTheme.sizing, 'sizing').map(
@@ -142,6 +143,7 @@ const Sizing = (layoutProps: LayoutProps) => (
             </>
           }
           showSeparator
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <InlineMessage icon={infoIcon} aria-label="Distribution">
             Text that is centered within a component e.g. a button, does not
@@ -204,7 +206,7 @@ const Sizing = (layoutProps: LayoutProps) => (
           <Illustration path="theme/sizing/touch-target-areas" />
         </ContentPrimary>
 
-        <ContentSecondary showSeparator>
+        <ContentSecondary showSeparator childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage icon={infoIcon} aria-label="Touch Target Areas">
             In most cases when there are multiple interactive elements in close
             proximity to one another, it is recommended to make sure touch

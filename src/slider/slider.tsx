@@ -8,6 +8,7 @@ import {
   StyledThumb,
   StyledSliderLabel,
   LabelContainer,
+  StyledThumbFeedback,
 } from './styled';
 import {ThumbLabelWrapper} from './thumb-label-wrapper';
 import {renderLabel, getTrackBackgroundStyle} from './utils';
@@ -78,9 +79,6 @@ const ThemelessSlider: React.FC<SliderProps> = ({
         dragged={isDragged}
         disabled={disabled}
         vertical={vertical}
-        aria-valuemin={min}
-        aria-valuemax={Math.floor(max)}
-        aria-orientation={vertical ? 'vertical' : 'horizontal'}
         labelPosition={labelPosition}
         style={getTrackBackgroundStyle(
           theme,
@@ -112,6 +110,7 @@ const ThemelessSlider: React.FC<SliderProps> = ({
         {...p}
         disabled={disabled}
         aria-label={ariaLabel}
+        aria-orientation={vertical ? 'vertical' : 'horizontal'}
         aria-valuetext={ariaValueText}
         aria-describedby={ariaDescribedBy}
         values={values}
@@ -119,6 +118,11 @@ const ThemelessSlider: React.FC<SliderProps> = ({
         data-testid={`${dataTestId}-thumb`}
         overrides={overrides}
       >
+        <StyledThumbFeedback
+          disabled={disabled}
+          overrides={overrides}
+          data-testid={`${dataTestId}-feedback`}
+        />
         {ThumbIcon && <ThumbIcon />}
         <ThumbLabelWrapper
           values={values}

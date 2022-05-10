@@ -4043,9 +4043,9 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0.7;
-  background-color: transparent;
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -4054,32 +4054,48 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-23:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-23:disabled {
+  opacity: 0;
 }
 
-.emotion-23:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-23:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-23:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-23:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
 }
 
 .emotion-23:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
+  background-color: #D20600;
+  opacity: 0.2;
 }
 
-.emotion-23:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
+.emotion-23:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
 }
 
-.emotion-23:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-23 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
-.emotion-23:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-23:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-23 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-24 {
@@ -4262,49 +4278,6 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 
 .emotion-26:disabled {
   color: #C0C0C0;
-}
-
-.emotion-31 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0.7;
-  background-color: transparent;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-}
-
-.emotion-31:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-31:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-31:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
-}
-
-.emotion-31:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
-}
-
-.emotion-31:focus:not(:disabled) {
-  background-color: #E0E7FF;
-}
-
-.emotion-31:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-31:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
 }
 
 .emotion-32 {
@@ -4713,7 +4686,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
           role="presentation"
         >
           <div
-            class="emotion-31"
+            class="emotion-23"
             data-testid="radio-feedback"
           />
           <div
@@ -4744,7 +4717,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
           role="presentation"
         >
           <div
-            class="emotion-31"
+            class="emotion-23"
             data-testid="radio-feedback"
           />
           <div
@@ -4775,7 +4748,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
           role="presentation"
         >
           <div
-            class="emotion-31"
+            class="emotion-23"
             data-testid="radio-feedback"
           />
           <div
@@ -5143,9 +5116,9 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0.7;
-  background-color: transparent;
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5154,32 +5127,48 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-23:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-23:disabled {
+  opacity: 0;
 }
 
-.emotion-23:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-23:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-23:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-23:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
 }
 
 .emotion-23:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
+  background-color: #D20600;
+  opacity: 0.2;
 }
 
-.emotion-23:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
+.emotion-23:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
 }
 
-.emotion-23:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-23 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
-.emotion-23:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-23:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-23 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-24 {
@@ -5362,49 +5351,6 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 
 .emotion-26:disabled {
   color: #C0C0C0;
-}
-
-.emotion-31 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0.7;
-  background-color: transparent;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-}
-
-.emotion-31:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-31:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-31:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
-}
-
-.emotion-31:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
-}
-
-.emotion-31:focus:not(:disabled) {
-  background-color: #E0E7FF;
-}
-
-.emotion-31:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-31:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
 }
 
 .emotion-32 {
@@ -5813,7 +5759,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
           role="presentation"
         >
           <div
-            class="emotion-31"
+            class="emotion-23"
             data-testid="radio-feedback"
           />
           <div
@@ -5844,7 +5790,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
           role="presentation"
         >
           <div
-            class="emotion-31"
+            class="emotion-23"
             data-testid="radio-feedback"
           />
           <div
@@ -5875,7 +5821,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
           role="presentation"
         >
           <div
-            class="emotion-31"
+            class="emotion-23"
             data-testid="radio-feedback"
           />
           <div
@@ -6590,9 +6536,9 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0.7;
-  background-color: transparent;
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -6601,32 +6547,48 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-2:disabled {
+  opacity: 0;
 }
 
-.emotion-2:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-2:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
 }
 
 .emotion-2:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
+  background-color: #D20600;
+  opacity: 0.2;
 }
 
-.emotion-2:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
-.emotion-2:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-2:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {
@@ -6939,9 +6901,9 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0.7;
-  background-color: transparent;
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -6950,32 +6912,48 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-2:disabled {
+  opacity: 0;
+}
+
+.emotion-2:hover:active:not(:disabled) {
+  opacity: 0.4;
 }
 
 .emotion-2:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-2:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
 }
 
 .emotion-2:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
+  background-color: #D20600;
+  opacity: 0.2;
 }
 
-.emotion-2:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
+.emotion-2:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
-.emotion-2:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-2:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-3 {

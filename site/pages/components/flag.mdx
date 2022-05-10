@@ -7,6 +7,7 @@ import {Flag, FlagSize, Sub} from 'newskit';
 import {CodeFromDefaultPresets} from '../../components/code';
 export default Layout;
 import {InverseTheme} from '../../components/inverse-theme';
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
 # Flag
 
@@ -41,7 +42,7 @@ Flags have a number of props to facilitate a variety of uses:
     If provided, overrides the respective presets for the component and provided
     elements. Here are the overrides that the Flag accepts:
     <Prop name="spaceInset" type="MQ<string>">
-      If provided, this overrides the padding of the Flag. Otherwise,
+      This property is deprecated. Use the below logical padding props instead. If provided, this overrides the padding of the Flag. Otherwise,
       spaceInsetSquish010 or spaceInsetSquish020 is used depending on the `size`
       prop.
     </Prop>
@@ -92,6 +93,7 @@ Flags have a number of props to facilitate a variety of uses:
       If provided, this sets a maximum width to the Flag. This can be a sizing
       token from the theme, or any CSS length value.
     </Prop>
+     <CommonLogicalPropsMDX/>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="flag" />
   </Prop>

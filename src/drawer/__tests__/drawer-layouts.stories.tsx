@@ -74,7 +74,7 @@ const CategoryRow = ({children}: {children: string}) => (
 export default {
   title: 'NewsKit Light/drawer-layouts-only',
   component: () => 'None',
-  disabledRules: ['tabindex', 'heading-order'],
+  disabledRules: ['tabindex'],
 };
 
 const items = [

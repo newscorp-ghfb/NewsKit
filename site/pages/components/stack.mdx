@@ -3,6 +3,7 @@ import Playground from '../../components/playground';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Prop} from '../../components/prop';
 import {Code} from '../../components/code';
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
 import {Stack, Tag, Flow, StackChild} from 'newskit';
 
@@ -84,6 +85,7 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
     rendered as a list. This will allow screen readers to label the content of
     the list.
   </Prop>
+  <CommonLogicalPropsMDX nested={false}/>
 </LegacyBlock>
 ## Playground
 <Playground

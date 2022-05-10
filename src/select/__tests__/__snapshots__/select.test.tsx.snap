@@ -886,6 +886,13 @@ exports[`Select in Modal render Select 1`] = `
       </div>
     </div>
   </div>
+  <div
+    aria-live="polite"
+    aria-relevant="additions text"
+    id="a11y-status-message"
+    role="status"
+    style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;"
+  />
 </DocumentFragment>
 `;
 
@@ -1621,6 +1628,13 @@ exports[`Select in Modal render Select with overrides props 1`] = `
       </div>
     </div>
   </div>
+  <div
+    aria-live="polite"
+    aria-relevant="additions text"
+    id="a11y-status-message"
+    role="status"
+    style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;"
+  />
 </DocumentFragment>
 `;
 
@@ -2500,6 +2514,13 @@ exports[`Select in Modal render Select with overrides style 1`] = `
       </div>
     </div>
   </div>
+  <div
+    aria-live="polite"
+    aria-relevant="additions text"
+    id="a11y-status-message"
+    role="status"
+    style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;"
+  />
 </DocumentFragment>
 `;
 

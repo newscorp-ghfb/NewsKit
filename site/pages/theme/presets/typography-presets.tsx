@@ -13,6 +13,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
+  ContentColSpan,
 } from '../../../components/content-structure';
 
 const commonUses: Record<string, string> = {
@@ -170,12 +171,9 @@ const TypographyPresets = (layoutProps: LayoutProps) => (
               provide the visual attributes of a component.
             </>
           }
-          showSeparator
-        >
-          <TabsWithTable components={typographyPresetsTable} />
-        </ContentPrimary>
+        />
+        <TabsWithTable showSeparator components={typographyPresetsTable} />
       </ContentSection>
-
       <ContentSection sectionName="apply-typography-presets">
         <ContentPrimary
           id="apply-typography-presets"
@@ -209,6 +207,7 @@ const TypographyPresets = (layoutProps: LayoutProps) => (
               guide for more details.
             </>
           }
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <InlineMessage icon={infoIcon}>
             Thoroughly consider adding additional Typography Presets due to the
