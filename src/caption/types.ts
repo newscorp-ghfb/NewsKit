@@ -8,7 +8,7 @@ export interface CaptionProps {
   overrides?: {
     typographyPreset?: MQ<string>;
     stylePreset?: MQ<string>;
-    spaceStack?: MQ<string>; // Note: spaceStack is used as a gap. Should rename this instead of using logical props.
+    spaceStack?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
     /**
      * @deprecated This property is deprecated and will be removed in the next major release. Use `PaddingInline` & `PaddingBlock` instead.
      */

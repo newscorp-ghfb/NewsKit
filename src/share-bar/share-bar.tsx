@@ -23,11 +23,11 @@ export interface ShareBarProps extends React.HTMLAttributes<HTMLElement> {
     label?: {
       typographyPreset?: MQ<string>;
       stylePreset?: MQ<string>;
-      spaceInline?: MQ<string>; // Note: LogicalProps can not replace spaceInline!
-      spaceInset?: MQ<string>; // Note: LogicalProps can not replace spaceInset!
+      spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
+      spaceInset?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
     };
     items?: {
-      spaceInline?: MQ<string>; // Note: LogicalProps can not replace spaceInline! spaceInline = Stack's gap
+      spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
     };
   } & LogicalProps;
 }

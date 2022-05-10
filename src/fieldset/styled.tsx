@@ -39,7 +39,7 @@ export const StyledFieldset = styled.fieldset<FieldsetProps>`
   ${fieldsetStyleReset}
 
   ${getStylePreset('fieldset', '')};
-  // getResponsiveSpacingInset to be removed once logical props are used in defaults
+  // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
   ${getResponsiveSpacingInset('fieldset', '')}
   ${logicalProps('fieldset')}
 `;
