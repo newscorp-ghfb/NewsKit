@@ -8,6 +8,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
+  ContentColSpan,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
 
@@ -59,7 +60,7 @@ const Roadmap = (
           />
         </ContentPrimary>
 
-        <ContentSecondary>
+        <ContentSecondary childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage>
             If you’d like to influence the roadmap,see the{' '}
             <Link href="/about/contribute">contribution page</Link> for further

@@ -339,6 +339,16 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
               description:
                 'Vertically align the Icon when the StructuredListItem is Link',
             },
+            {
+              name: 'eventOriginator',
+              type: 'string',
+              description: `This prop allows users to add event originator custom name.`,
+            },
+            {
+              name: 'eventContext',
+              type: 'object',
+              description: `This prop allows users to add extra event data to click events.`,
+            },
           ],
           overridesRows: [
             {

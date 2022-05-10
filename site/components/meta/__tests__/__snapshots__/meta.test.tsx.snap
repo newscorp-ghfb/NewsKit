@@ -1549,148 +1549,33 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-23 {
-  display: inline-block;
-  color: #577FFB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-23 {
-    transition-property: color,fill;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-23 {
-    transition-property: color,fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-23 svg {
-  fill: #577FFB;
-}
-
-.emotion-23:hover:not(:disabled) {
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-23:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-23:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-23:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-23:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-23:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-23:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-23:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-24 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-26 {
   margin: 0;
+  color: #577FFB;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
 }
 
-.emotion-26::before {
+.emotion-23 svg {
+  fill: #577FFB;
+}
+
+.emotion-23::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-26::after {
+.emotion-23::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-28 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #2E2E2E;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-28 {
-    transition-property: fill;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-28 {
-    transition-property: fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-28.emotion-28 {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-30 {
+.emotion-24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1711,7 +1596,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(-16px/2);
 }
 
-.emotion-31 {
+.emotion-25 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1723,7 +1608,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   align-self: stretch;
 }
 
-.emotion-32 {
+.emotion-26 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1759,36 +1644,36 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   cursor: pointer;
 }
 
-.emotion-32 svg {
+.emotion-26 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-32 svg {
+.emotion-26 svg {
   fill: #2E2E2E;
 }
 
-.emotion-32:hover:not(:disabled) {
+.emotion-26:hover:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #2E2E2E;
 }
 
-.emotion-32:active:not(:disabled) {
+.emotion-26:active:not(:disabled) {
   background-color: #CCCCCC;
   border-color: #0A0A0A;
 }
 
-.emotion-32:disabled {
+.emotion-26:disabled {
   border-color: #F4F4F4;
   color: #C0C0C0;
 }
 
-.emotion-32:disabled svg {
+.emotion-26:disabled svg {
   fill: #C0C0C0;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-32 {
+  .emotion-26 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1796,14 +1681,14 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-32 {
+  .emotion-26 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-33 {
+.emotion-27 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1824,7 +1709,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-34 {
+.emotion-28 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1833,14 +1718,14 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-35 {
+.emotion-29 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-35 {
+  .emotion-29 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1848,14 +1733,14 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-35 {
+  .emotion-29 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-37 {
+.emotion-31 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -1866,19 +1751,19 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: inline-block;
 }
 
-.emotion-37::before {
+.emotion-31::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-37::after {
+.emotion-31::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-38 {
+.emotion-32 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1887,11 +1772,11 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(16px/2);
 }
 
-.emotion-45 {
+.emotion-39 {
   margin-bottom: 24px;
 }
 
-.emotion-46 {
+.emotion-40 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -1902,36 +1787,36 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-47 {
+  .emotion-41 {
     display: block;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-47 {
+  .emotion-41 {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-47 {
+  .emotion-41 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-47 {
+  .emotion-41 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-47 {
+  .emotion-41 {
     display: none;
   }
 }
 
-.emotion-49 {
+.emotion-43 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1943,7 +1828,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   align-self: stretch;
 }
 
-.emotion-50 {
+.emotion-44 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -1953,7 +1838,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-50 {
+  .emotion-44 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 50%;
@@ -1964,17 +1849,17 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-50 {
+  .emotion-44 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-64 {
+.emotion-58 {
   margin-right: 32px;
 }
 
-.emotion-65 {
+.emotion-59 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1995,19 +1880,19 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-65:before,
-.emotion-65:after {
+.emotion-59:before,
+.emotion-59:after {
   content: '';
   display: block;
 }
 
-.emotion-79 {
+.emotion-67 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-80 {
+.emotion-68 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -2025,36 +1910,36 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-80 {
+  .emotion-68 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-80 {
+  .emotion-68 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-80 {
+  .emotion-68 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-80 {
+  .emotion-68 {
     margin: -24px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-80 {
+  .emotion-68 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-81 {
+.emotion-69 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -2064,7 +1949,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-81 {
+  .emotion-69 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -2075,7 +1960,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-81 {
+  .emotion-69 {
     padding: 0 12px;
     margin-top: 24px;
   }
@@ -2170,72 +2055,35 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
             <div
               class="emotion-19"
             >
-              <a
+              <p
                 class="emotion-23"
-                href="https://github.com/newscorp-ghfb/ncu-newskit/releases/tag/v0.1"
-                target="_blank"
               >
-                <span
-                  class="emotion-24"
-                >
-                  <span
-                    class="emotion-11"
-                  >
-                    <span
-                      class="emotion-26"
-                    >
-                      v0.1
-                    </span>
-                  </span>
-                  <span
-                    class="emotion-11"
-                  >
-                    <svg
-                      class="emotion-28 emotion-29"
-                      fill="currentColor"
-                      focusable="false"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>
-                        External link
-                      </title>
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                      />
-                    </svg>
-                  </span>
-                </span>
-              </a>
+                v0.1
+              </p>
             </div>
           </div>
         </div>
         <div
-          class="emotion-30"
+          class="emotion-24"
         >
           <div
-            class="emotion-31"
+            class="emotion-25"
           >
             <a
-              class="emotion-32"
+              class="emotion-26"
               data-testid="buttonLink"
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
               <div
-                class="emotion-33"
+                class="emotion-27"
               >
                 <div
-                  class="emotion-34"
+                  class="emotion-28"
                 >
                   <svg
                     aria-hidden="true"
-                    class="emotion-35"
+                    class="emotion-29"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2247,10 +2095,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   </svg>
                 </div>
                 <div
-                  class="emotion-34"
+                  class="emotion-28"
                 >
                   <span
-                    class="emotion-37"
+                    class="emotion-31"
                   >
                     View code
                   </span>
@@ -2259,23 +2107,23 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
             </a>
           </div>
           <div
-            class="emotion-38"
+            class="emotion-32"
           >
             <a
-              class="emotion-32"
+              class="emotion-26"
               data-testid="buttonLink"
               href="https://github.com/newscorp-ghfb/newskit"
               target="_blank"
             >
               <div
-                class="emotion-33"
+                class="emotion-27"
               >
                 <div
-                  class="emotion-34"
+                  class="emotion-28"
                 >
                   <svg
                     aria-hidden="true"
-                    class="emotion-35"
+                    class="emotion-29"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2303,10 +2151,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   </svg>
                 </div>
                 <div
-                  class="emotion-34"
+                  class="emotion-28"
                 >
                   <span
-                    class="emotion-37"
+                    class="emotion-31"
                   >
                     View Design
                   </span>
@@ -2317,25 +2165,25 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
         </div>
       </div>
       <div
-        class="emotion-45"
+        class="emotion-39"
       />
       <hr
         aria-hidden="true"
-        class="emotion-46"
+        class="emotion-40"
         data-testid="divider"
       />
     </div>
     <div
-      class="emotion-47"
+      class="emotion-41"
     >
       <div
         class="emotion-18"
       >
         <div
-          class="emotion-49"
+          class="emotion-43"
         >
           <div
-            class="emotion-50"
+            class="emotion-44"
           >
             <div
               class="emotion-4"
@@ -2382,7 +2230,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
             </div>
           </div>
           <div
-            class="emotion-50"
+            class="emotion-44"
           >
             <div
               class="emotion-3"
@@ -2393,10 +2241,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                 data-testid="divider"
               />
               <div
-                class="emotion-64"
+                class="emotion-58"
               />
               <div
-                class="emotion-65"
+                class="emotion-59"
               />
               <div
                 class="emotion-18"
@@ -2417,88 +2265,51 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                 <div
                   class="emotion-19"
                 >
-                  <a
+                  <p
                     class="emotion-23"
-                    href="https://github.com/newscorp-ghfb/ncu-newskit/releases/tag/v0.1"
-                    target="_blank"
                   >
-                    <span
-                      class="emotion-24"
-                    >
-                      <span
-                        class="emotion-11"
-                      >
-                        <span
-                          class="emotion-26"
-                        >
-                          v0.1
-                        </span>
-                      </span>
-                      <span
-                        class="emotion-11"
-                      >
-                        <svg
-                          class="emotion-28 emotion-29"
-                          fill="currentColor"
-                          focusable="false"
-                          role="img"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <title>
-                            External link
-                          </title>
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                          />
-                        </svg>
-                      </span>
-                    </span>
-                  </a>
+                    v0.1
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="emotion-49"
+          class="emotion-43"
         >
           <div
-            class="emotion-79"
+            class="emotion-67"
           >
             <div
-              class="emotion-80"
+              class="emotion-68"
             >
               <div
-                class="emotion-81"
+                class="emotion-69"
               >
                 <hr
                   aria-hidden="true"
-                  class="emotion-46"
+                  class="emotion-40"
                   data-testid="divider"
                 />
                 <div
-                  class="emotion-45"
+                  class="emotion-39"
                 />
                 <a
-                  class="emotion-32"
+                  class="emotion-26"
                   data-testid="buttonLink"
                   href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
                   <div
-                    class="emotion-33"
+                    class="emotion-27"
                   >
                     <div
-                      class="emotion-34"
+                      class="emotion-28"
                     >
                       <svg
                         aria-hidden="true"
-                        class="emotion-35"
+                        class="emotion-29"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
@@ -2510,10 +2321,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                       </svg>
                     </div>
                     <div
-                      class="emotion-34"
+                      class="emotion-28"
                     >
                       <span
-                        class="emotion-37"
+                        class="emotion-31"
                       >
                         View code
                       </span>
@@ -2522,23 +2333,23 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                 </a>
               </div>
               <div
-                class="emotion-81"
+                class="emotion-69"
               >
                 <a
-                  class="emotion-32"
+                  class="emotion-26"
                   data-testid="buttonLink"
                   href="https://github.com/newscorp-ghfb/newskit"
                   target="_blank"
                 >
                   <div
-                    class="emotion-33"
+                    class="emotion-27"
                   >
                     <div
-                      class="emotion-34"
+                      class="emotion-28"
                     >
                       <svg
                         aria-hidden="true"
-                        class="emotion-35"
+                        class="emotion-29"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
@@ -2566,10 +2377,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                       </svg>
                     </div>
                     <div
-                      class="emotion-34"
+                      class="emotion-28"
                     >
                       <span
-                        class="emotion-37"
+                        class="emotion-31"
                       >
                         View Design
                       </span>
@@ -2577,11 +2388,11 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   </div>
                 </a>
                 <div
-                  class="emotion-45"
+                  class="emotion-39"
                 />
                 <hr
                   aria-hidden="true"
-                  class="emotion-46"
+                  class="emotion-40"
                   data-testid="divider"
                 />
               </div>

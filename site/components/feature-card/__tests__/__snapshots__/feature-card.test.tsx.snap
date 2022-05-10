@@ -67,6 +67,10 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   margin-bottom: 0;
 }
 
+.emotion-2 svg {
+  border-radius: 4px;
+}
+
 .emotion-3 {
   -webkit-background-size: cover;
   background-size: cover;
@@ -561,6 +565,10 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   -ms-flex: 1;
   flex: 1;
   margin-left: 0;
+}
+
+.emotion-2 svg {
+  border-radius: 4px;
 }
 
 .emotion-3 {
@@ -1158,6 +1166,10 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   margin-bottom: 0;
 }
 
+.emotion-4 svg {
+  border-radius: 4px;
+}
+
 .emotion-5 {
   -webkit-background-size: cover;
   background-size: cover;
@@ -1516,6 +1528,10 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   -ms-flex: 1;
   flex: 1;
   margin-left: 0;
+}
+
+.emotion-23 svg {
+  border-radius: 4px;
 }
 
 .emotion-24 {
@@ -1902,6 +1918,10 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
   margin-bottom: 0;
 }
 
+.emotion-4 svg {
+  border-radius: 4px;
+}
+
 .emotion-5 {
   -webkit-background-size: cover;
   background-size: cover;
@@ -2122,6 +2142,10 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
   -ms-flex: 1;
   flex: 1;
   margin-left: 0;
+}
+
+.emotion-15 svg {
+  border-radius: 4px;
 }
 
 .emotion-16 {
@@ -2383,6 +2407,10 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   display: block;
   position: relative;
   margin-bottom: 0;
+}
+
+.emotion-3 svg {
+  border-radius: 4px;
 }
 
 .emotion-4 {
@@ -2844,6 +2872,10 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
   margin-bottom: 0;
 }
 
+.emotion-3 svg {
+  border-radius: 4px;
+}
+
 .emotion-4 {
   -webkit-background-size: cover;
   background-size: cover;
@@ -3118,6 +3150,10 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
   margin-bottom: 0;
 }
 
+.emotion-2 svg {
+  border-radius: 4px;
+}
+
 .emotion-3 {
   -webkit-background-size: cover;
   background-size: cover;
@@ -3383,6 +3419,10 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
   -ms-flex: 1;
   flex: 1;
   margin-left: 0;
+}
+
+.emotion-2 svg {
+  border-radius: 4px;
 }
 
 .emotion-3 {
@@ -3671,6 +3711,10 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
   display: block;
   position: relative;
   margin-bottom: 0;
+}
+
+.emotion-1 svg {
+  border-radius: 4px;
 }
 
 .emotion-2 {
@@ -3983,6 +4027,10 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   margin-bottom: 0;
 }
 
+.emotion-4 svg {
+  border-radius: 4px;
+}
+
 .emotion-5 {
   -webkit-background-size: cover;
   background-size: cover;
@@ -4150,6 +4198,10 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   -ms-flex: 1;
   flex: 1;
   margin-left: 0;
+}
+
+.emotion-15 svg {
+  border-radius: 4px;
 }
 
 .emotion-16 {
@@ -4366,6 +4418,10 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
   display: block;
   position: relative;
   margin-bottom: 0;
+}
+
+.emotion-1 svg {
+  border-radius: 4px;
 }
 
 .emotion-2 {

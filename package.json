@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "5.4.1",
+  "version": "5.4.2",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
@@ -12,13 +12,13 @@
   "repository": "",
   "sideEffects": false,
   "engines": {
-    "node": ">=16.5.0"
+    "node": ">=16.9.1"
   },
   "scripts": {
     "dev": "concurrently --names \"src,storybook,docs\" \"yarn build:ts --watch\" \"yarn dev:storybook\" \"next site -p 8081\"",
     "dev:docs": "yarn build:icons:dev && concurrently --names \"src,docs\" \"yarn build:ts --watch\" \"next site -p 8081\"",
     "dev:storybook": "yarn build:icons:dev && start-storybook --ci -p 6006 -s ./fonts,./static",
-    "eyes:storybook": "eyes-storybook --conf applitools.components.config.js",
+    "eyes:storybook": "APPLITOOLS_SHOW_LOGS=true eyes-storybook --conf applitools.components.config.js",
     "lint:code:base": "eslint --report-unused-disable-directives --ext=.js,.ts,.jsx,.tsx --cache",
     "lint:code": "scripts/assert-files-and-folders.js && yarn lint:code:base .",
     "lint:code:fix": "yarn lint:code --fix",
@@ -55,7 +55,7 @@
     "e2e:docs": "cypress open --config-file cypress/config/cypress.docs.json",
     "e2e:comps:ci": "start-server-and-test e2e:serve 8080 'TZ=UTC cypress run --config-file cypress/config/cypress.components.json'",
     "e2e:docs:ci": "start-server-and-test serve:docs 8081 'TZ=UTC cypress run --config-file cypress/config/cypress.docs.json'",
-    "e2e:visual:docs:ci": "start-server-and-test serve:docs 8081 'TZ=UTC cypress run --config-file cypress/config/cypress.docs.visual.json'",
+    "e2e:visual:docs:ci": "start-server-and-test serve:docs 8081 'TZ=UTC APPLITOOLS_SHOW_LOGS=true cypress run --config-file cypress/config/cypress.docs.visual.json'",
     "e2e:generate:a11ytests": "node scripts/generate-a11y-tests.js",
     "e2e:findbrokenlinks": "linkinator http://localhost:8081 --recurse --skip '^(?!http://localhost:8081)'",
     "e2e:findbrokenlinks:ci": "start-server-and-test serve:docs 8081 e2e:findbrokenlinks",
@@ -66,8 +66,8 @@
     "storybook": "start-storybook -c .storybook -p 6006 -s ./fonts,./static"
   },
   "devDependencies": {
-    "@applitools/eyes-cypress": "^3.23.3",
-    "@applitools/eyes-storybook": "^3.27.4",
+    "@applitools/eyes-cypress": "^3.25.6",
+    "@applitools/eyes-storybook": "^3.27.6",
     "@babel/core": "^7.13.15",
     "@babel/parser": "^7.14.6",
     "@commitlint/cli": "^8.0.0",
@@ -122,14 +122,14 @@
     "@types/webpack": "^4.4.34",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
-    "axe-core": "^4.3.5",
+    "axe-core": "^4.4.1",
     "babel-loader": "^8.0.6",
     "chalk": "2.4.1",
     "concurrently": "^4.1.1",
     "copy-webpack-plugin": "^5.1.1",
     "csstype": "2",
     "cypress": "^9.1.0",
-    "cypress-axe": "0.13.0",
+    "cypress-axe": "^0.14.0",
     "eslint": "^8.3.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-prettier": "8.3.0",
@@ -209,7 +209,7 @@
     "react-focus-lock": "^2.5.0",
     "react-hook-form": "^7.5.3",
     "react-hot-toast": "^1.0.2",
-    "react-range": "^1.5.3",
+    "react-range": "^1.8.12",
     "react-transition-group": "^4.4.1",
     "react-virtual": "^2.10.4"
   },

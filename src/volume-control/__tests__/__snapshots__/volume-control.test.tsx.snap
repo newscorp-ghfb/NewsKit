@@ -238,6 +238,69 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-9:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-9:disabled {
+  opacity: 0;
+}
+
+.emotion-9:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-9:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-9:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-9:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-9:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -247,13 +310,13 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   margin-left: 12px;
 }
 
-.emotion-9::before {
+.emotion-10::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-9::after {
+.emotion-10::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -301,9 +364,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="0"
@@ -311,6 +371,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
+        aria-orientation="horizontal"
         aria-valuemax="1"
         aria-valuemin="0"
         aria-valuenow="0"
@@ -322,10 +383,15 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
         style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
         tabindex="0"
         values="0"
-      />
+      >
+        <span
+          class="emotion-9"
+          data-testid="volume-control-feedback"
+        />
+      </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-10"
       data-testid="max-label"
     >
       <button
@@ -622,6 +688,69 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-9:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-9:disabled {
+  opacity: 0;
+}
+
+.emotion-9:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-9:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-9:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-9:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-9:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -631,13 +760,13 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   margin-left: 12px;
 }
 
-.emotion-9::before {
+.emotion-10::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-9::after {
+.emotion-10::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -685,9 +814,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="0.8"
@@ -695,6 +821,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
+        aria-orientation="horizontal"
         aria-valuemax="1"
         aria-valuemin="0"
         aria-valuenow="0.8"
@@ -706,10 +833,15 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
         style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
         tabindex="0"
         values="0.8"
-      />
+      >
+        <span
+          class="emotion-9"
+          data-testid="volume-control-feedback"
+        />
+      </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-10"
       data-testid="max-label"
     >
       <button
@@ -1006,6 +1138,69 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-9:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-9:disabled {
+  opacity: 0;
+}
+
+.emotion-9:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-9:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-9:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-9:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-9:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1015,13 +1210,13 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   margin-left: 12px;
 }
 
-.emotion-9::before {
+.emotion-10::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-9::after {
+.emotion-10::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1069,9 +1264,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="1"
@@ -1079,6 +1271,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
+        aria-orientation="horizontal"
         aria-valuemax="1"
         aria-valuemin="0"
         aria-valuenow="1"
@@ -1090,10 +1283,15 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
         style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
         tabindex="0"
         values="1"
-      />
+      >
+        <span
+          class="emotion-9"
+          data-testid="volume-control-feedback"
+        />
+      </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-10"
       data-testid="max-label"
     >
       <button
@@ -1389,6 +1587,69 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-9:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-9:disabled {
+  opacity: 0;
+}
+
+.emotion-9:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-9:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-9:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-9:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-9:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1398,13 +1659,13 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   margin-bottom: 12px;
 }
 
-.emotion-9::before {
+.emotion-10::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-9::after {
+.emotion-10::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1452,9 +1713,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
       </button>
     </div>
     <div
-      aria-orientation="vertical"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="1"
@@ -1462,6 +1720,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
+        aria-orientation="vertical"
         aria-valuemax="1"
         aria-valuemin="0"
         aria-valuenow="1"
@@ -1473,10 +1732,15 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
         style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
         tabindex="0"
         values="1"
-      />
+      >
+        <span
+          class="emotion-9"
+          data-testid="volume-control-feedback"
+        />
+      </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-10"
       data-testid="max-label"
     >
       <button
@@ -1773,6 +2037,69 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-9:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-9:disabled {
+  opacity: 0;
+}
+
+.emotion-9:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-9:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-9:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-9:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-9:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1782,13 +2109,13 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-left: 12px;
 }
 
-.emotion-9::before {
+.emotion-10::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-9::after {
+.emotion-10::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -1836,9 +2163,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="0"
@@ -1846,6 +2170,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
+        aria-orientation="horizontal"
         aria-valuemax="1"
         aria-valuemin="0"
         aria-valuenow="0"
@@ -1857,10 +2182,15 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
         style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
         tabindex="0"
         values="0"
-      />
+      >
+        <span
+          class="emotion-9"
+          data-testid="volume-control-feedback"
+        />
+      </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-10"
       data-testid="max-label"
     >
       <button
@@ -2157,6 +2487,69 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-9:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-9:disabled {
+  opacity: 0;
+}
+
+.emotion-9:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-9:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-9:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-9:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-9:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2166,13 +2559,13 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-left: 12px;
 }
 
-.emotion-9::before {
+.emotion-10::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-9::after {
+.emotion-10::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2220,9 +2613,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="0.7"
@@ -2230,6 +2620,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
+        aria-orientation="horizontal"
         aria-valuemax="1"
         aria-valuemin="0"
         aria-valuenow="0.7"
@@ -2241,10 +2632,15 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
         style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
         tabindex="0"
         values="0.7"
-      />
+      >
+        <span
+          class="emotion-9"
+          data-testid="volume-control-feedback"
+        />
+      </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-10"
       data-testid="max-label"
     >
       <button
@@ -2541,6 +2937,69 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-9:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-9:disabled {
+  opacity: 0;
+}
+
+.emotion-9:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-9:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-9:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-9:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-9:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2550,13 +3009,13 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-left: 12px;
 }
 
-.emotion-9::before {
+.emotion-10::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-9::after {
+.emotion-10::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2604,9 +3063,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="0"
@@ -2614,6 +3070,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
+        aria-orientation="horizontal"
         aria-valuemax="1"
         aria-valuemin="0"
         aria-valuenow="0"
@@ -2625,10 +3082,15 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
         style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
         tabindex="0"
         values="0"
-      />
+      >
+        <span
+          class="emotion-9"
+          data-testid="volume-control-feedback"
+        />
+      </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-10"
       data-testid="max-label"
     >
       <button
@@ -2925,6 +3387,69 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-9:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-9:disabled {
+  opacity: 0;
+}
+
+.emotion-9:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-9:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-9:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-9:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-9:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2934,13 +3459,13 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-left: 12px;
 }
 
-.emotion-9::before {
+.emotion-10::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-9::after {
+.emotion-10::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -2988,9 +3513,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="0.7"
@@ -2998,6 +3520,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
+        aria-orientation="horizontal"
         aria-valuemax="1"
         aria-valuemin="0"
         aria-valuenow="0.7"
@@ -3009,10 +3532,15 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
         style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
         tabindex="0"
         values="0.7"
-      />
+      >
+        <span
+          class="emotion-9"
+          data-testid="volume-control-feedback"
+        />
+      </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-10"
       data-testid="max-label"
     >
       <button
@@ -3309,6 +3837,69 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-9:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-9:disabled {
+  opacity: 0;
+}
+
+.emotion-9:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-9:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-9:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-9:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-9:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -3318,13 +3909,13 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   margin-left: 12px;
 }
 
-.emotion-9::before {
+.emotion-10::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-9::after {
+.emotion-10::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -3372,9 +3963,6 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
       </button>
     </div>
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="1"
-      aria-valuemin="0"
       class="emotion-7"
       data-testid="volume-control-track"
       values="1"
@@ -3382,6 +3970,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
       <div
         aria-describedby="mock-nk-1"
         aria-label="Volume Control"
+        aria-orientation="horizontal"
         aria-valuemax="1"
         aria-valuemin="0"
         aria-valuenow="1"
@@ -3393,10 +3982,15 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
         style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
         tabindex="0"
         values="1"
-      />
+      >
+        <span
+          class="emotion-9"
+          data-testid="volume-control-feedback"
+        />
+      </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-10"
       data-testid="max-label"
     >
       <button

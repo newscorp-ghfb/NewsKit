@@ -9,10 +9,14 @@ import {HeadNextSeo} from '../../components/head-next-seo';
 import {
   ContentSection,
   ContentSecondary,
+  ContentColSpan,
 } from '../../components/content-structure';
 
 const contentOverrides = {
-  typographyPreset: 'editorialParagraph030',
+  typographyPreset: {
+    xs: 'editorialParagraph020',
+    md: 'editorialParagraph030',
+  },
 };
 
 const unorderedListOverrides = {
@@ -100,6 +104,7 @@ const Introduction = ({path, ...props}: LayoutProps) => (
               accurate, complete or up-to-date.
             </>
           }
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <P overrides={contentOverrides}>
             In accessing any part of our Website, you agree not to:
@@ -232,7 +237,10 @@ const Introduction = ({path, ...props}: LayoutProps) => (
         description="Any dispute or claim arising out of or in connection with our Website, these Terms and/or our Privacy Policy (including non-contractual disputes or claims) shall be governed by and construed in accordance with the laws of England and Wales and will be subject to the exclusive jurisdiction of the English courts."
       />
 
-      <ContentSecondary headline="Other information">
+      <ContentSecondary
+        headline="Other information"
+        childrenColSpan={ContentColSpan.TEXT}
+      >
         <P overrides={contentOverrides}>
           In these Terms, the following words and expressions have the following
           meanings:

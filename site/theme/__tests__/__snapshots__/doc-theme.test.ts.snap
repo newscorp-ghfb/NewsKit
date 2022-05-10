@@ -1012,6 +1012,38 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
+    "feedback": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput040}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "opacity": "0",
+      },
+      "disabled": Object {
+        "opacity": "0",
+      },
+      "hover": Object {
+        "opacity": "0.2",
+      },
+      "hover:active": Object {
+        "opacity": "0.4",
+      },
+      "invalid:hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.2",
+      },
+      "invalid:hover:active": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.4",
+      },
+      "valid:hover": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.2",
+      },
+      "valid:hover:active": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.4",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -1647,6 +1679,13 @@ Object {
       },
       "exitDone": Object {
         "transform": "translate(0, 20px)",
+      },
+    },
+    "opacityChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "opacity",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "slideBottom": Object {
@@ -3147,6 +3186,38 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
+    "feedback": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput040}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "opacity": "0",
+      },
+      "disabled": Object {
+        "opacity": "0",
+      },
+      "hover": Object {
+        "opacity": "0.2",
+      },
+      "hover:active": Object {
+        "opacity": "0.4",
+      },
+      "invalid:hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.2",
+      },
+      "invalid:hover:active": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.4",
+      },
+      "valid:hover": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.2",
+      },
+      "valid:hover:active": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.4",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -3782,6 +3853,13 @@ Object {
       },
       "exitDone": Object {
         "transform": "translate(0, 20px)",
+      },
+    },
+    "opacityChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "opacity",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "slideBottom": Object {
@@ -5282,6 +5360,38 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
+    "feedback": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput040}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "opacity": "0",
+      },
+      "disabled": Object {
+        "opacity": "0",
+      },
+      "hover": Object {
+        "opacity": "0.2",
+      },
+      "hover:active": Object {
+        "opacity": "0.4",
+      },
+      "invalid:hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.2",
+      },
+      "invalid:hover:active": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.4",
+      },
+      "valid:hover": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.2",
+      },
+      "valid:hover:active": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.4",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -5917,6 +6027,13 @@ Object {
       },
       "exitDone": Object {
         "transform": "translate(0, 20px)",
+      },
+    },
+    "opacityChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "opacity",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "slideBottom": Object {
@@ -7417,6 +7534,38 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
+    "feedback": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput040}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "opacity": "0",
+      },
+      "disabled": Object {
+        "opacity": "0",
+      },
+      "hover": Object {
+        "opacity": "0.2",
+      },
+      "hover:active": Object {
+        "opacity": "0.4",
+      },
+      "invalid:hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.2",
+      },
+      "invalid:hover:active": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.4",
+      },
+      "valid:hover": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.2",
+      },
+      "valid:hover:active": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.4",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -8052,6 +8201,13 @@ Object {
       },
       "exitDone": Object {
         "transform": "translate(0, 20px)",
+      },
+    },
+    "opacityChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "opacity",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "slideBottom": Object {
@@ -9552,6 +9708,38 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
+    "feedback": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput040}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "opacity": "0",
+      },
+      "disabled": Object {
+        "opacity": "0",
+      },
+      "hover": Object {
+        "opacity": "0.2",
+      },
+      "hover:active": Object {
+        "opacity": "0.4",
+      },
+      "invalid:hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.2",
+      },
+      "invalid:hover:active": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.4",
+      },
+      "valid:hover": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.2",
+      },
+      "valid:hover:active": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.4",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -10187,6 +10375,13 @@ Object {
       },
       "exitDone": Object {
         "transform": "translate(0, 20px)",
+      },
+    },
+    "opacityChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "opacity",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "slideBottom": Object {
@@ -11687,6 +11882,38 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
+    "feedback": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput040}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "opacity": "0",
+      },
+      "disabled": Object {
+        "opacity": "0",
+      },
+      "hover": Object {
+        "opacity": "0.2",
+      },
+      "hover:active": Object {
+        "opacity": "0.4",
+      },
+      "invalid:hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.2",
+      },
+      "invalid:hover:active": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.4",
+      },
+      "valid:hover": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.2",
+      },
+      "valid:hover:active": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.4",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -12322,6 +12549,13 @@ Object {
       },
       "exitDone": Object {
         "transform": "translate(0, 20px)",
+      },
+    },
+    "opacityChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "opacity",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "slideBottom": Object {
@@ -13822,6 +14056,38 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
+    "feedback": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput040}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "opacity": "0",
+      },
+      "disabled": Object {
+        "opacity": "0",
+      },
+      "hover": Object {
+        "opacity": "0.2",
+      },
+      "hover:active": Object {
+        "opacity": "0.4",
+      },
+      "invalid:hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.2",
+      },
+      "invalid:hover:active": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.4",
+      },
+      "valid:hover": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.2",
+      },
+      "valid:hover:active": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.4",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -14457,6 +14723,13 @@ Object {
       },
       "exitDone": Object {
         "transform": "translate(0, 20px)",
+      },
+    },
+    "opacityChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "opacity",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "slideBottom": Object {
@@ -15957,6 +16230,38 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
+    "feedback": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInput040}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "opacity": "0",
+      },
+      "disabled": Object {
+        "opacity": "0",
+      },
+      "hover": Object {
+        "opacity": "0.2",
+      },
+      "hover:active": Object {
+        "opacity": "0.4",
+      },
+      "invalid:hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.2",
+      },
+      "invalid:hover:active": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+        "opacity": "0.4",
+      },
+      "valid:hover": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.2",
+      },
+      "valid:hover:active": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+        "opacity": "0.4",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -16592,6 +16897,13 @@ Object {
       },
       "exitDone": Object {
         "transform": "translate(0, 20px)",
+      },
+    },
+    "opacityChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "opacity",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
     "slideBottom": Object {

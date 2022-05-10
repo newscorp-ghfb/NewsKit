@@ -1174,9 +1174,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
             <div
               class="emotion-41"
             >
-              <a
-                class="emotion-11"
-                href="/"
+              <div
+                class="emotion-57"
+                data-testid="scroll-container"
+                tabindex="0"
               >
                 <span
                   class="emotion-4"
@@ -2515,9 +2516,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
             <div
               class="emotion-41"
             >
-              <a
-                class="emotion-11"
-                href="/"
+              <div
+                class="emotion-57"
+                data-testid="scroll-container"
+                tabindex="0"
               >
                 <span
                   class="emotion-4"
@@ -3810,9 +3812,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
             <div
               class="emotion-41"
             >
-              <a
-                class="emotion-11"
-                href="/"
+              <div
+                class="emotion-57"
+                data-testid="scroll-container"
+                tabindex="0"
               >
                 <span
                   class="emotion-4"

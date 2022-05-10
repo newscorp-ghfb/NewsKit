@@ -1,6 +1,7 @@
+import {fireEvent} from '@testing-library/react';
 import React from 'react';
 import {StructuredListItem} from '..';
-import {TextBlock} from '../..';
+import {EventTrigger, InstrumentationProvider, TextBlock} from '../..';
 import {IconOutlinedKeyboardArrowRight} from '../../icons';
 import {
   renderToFragmentWithTheme,
@@ -309,6 +310,36 @@ describe('StructuredList', () => {
         'target',
         '_blank',
       );
+    });
+
+    test('fires click event onClick with custom originator for list item', async () => {
+      const mockFireEvent = jest.fn();
+
+      const firstListItemProps: StructuredListItemProps = {
+        children: StructuredListCellDefault,
+        href: 'https://test-url.co.uk',
+        eventContext: {
+          event: 'other event data',
+        },
+        eventOriginator: 'custom-originator',
+      };
+
+      const structuredListItem = await renderWithTheme((() => (
+        <InstrumentationProvider fireEvent={mockFireEvent}>
+          {renderWithExternalLink(firstListItemProps)}
+        </InstrumentationProvider>
+      )) as React.FC).getAllByTestId('list-item-link')[0];
+
+      fireEvent.click(structuredListItem);
+
+      expect(mockFireEvent).toHaveBeenCalledWith({
+        originator: 'custom-originator',
+        trigger: EventTrigger.Click,
+        context: {
+          href: 'https://test-url.co.uk',
+          event: 'other event data',
+        },
+      });
     });
   });
 });
