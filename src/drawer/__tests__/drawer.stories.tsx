@@ -168,50 +168,6 @@ export const StoryDefault = () =>
 StoryDefault.storyName = 'default';
 StoryDefault.parameters = {eyes: {include: false}};
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-drawer-theme',
-  overrides: {
-    stylePresets: {
-      overlayCustom: {
-        base: {
-          backgroundColor: '{{colors.purple050}}',
-        },
-      },
-      drawerPanelCustom: {
-        base: {
-          // backgroundColor: '{{colors.purple030}}',
-          boxShadow: '0px 0px 16px 14px rgba(169,183,172,0.9)',
-          borderWidth: '{{borders.borderWidth010}}',
-          borderStyle: 'dotted',
-          borderColor: '{{colors.purple070}}',
-        },
-      },
-      drawerHeaderCustom: {
-        base: {
-          backgroundColor: '{{colors.purple030}}',
-          // borderStyle: 'none none solid none',
-          // borderWidth: '{{borders.borderWidth010}}',
-          // borderColor: '{{colors.red060}}',
-        },
-      },
-      drawerCloseButtonCustom: {
-        base: {
-          // borderWidth: '{{borders.borderWidth010}}',
-          // borderStyle: 'solid',
-          // borderColor: '{{colors.teal030}}',
-          backgroundColor: '{{colors.purple030}}',
-          // borderRadius: '{{borders.borderRadiusCircle}}',
-          iconColor: '{{colors.purple070}}',
-        },
-        hover: {
-          backgroundColor: '{{colors.purple030}}',
-          iconColor: '{{colors.purple090}}',
-        },
-      },
-    },
-  },
-});
-
 export const StoryInline = () =>
   React.createElement(() => {
     const [isActive, open, close, toggle] = useActiveState();
@@ -266,43 +222,41 @@ export const StoryInline = () =>
           </label>
         </Block>
 
-        <ThemeProvider theme={myCustomTheme}>
-          <DrawerContainer>
-            <Drawer
-              aria-label="Drawer example"
-              open={isActive}
-              onDismiss={close}
-              inline
-              disableFocusTrap
-              hideOverlay
-              placement={placement as 'top' | 'left' | 'right' | 'bottom'}
-              header="Drawer"
-              overrides={{
-                overlay: {
-                  stylePreset: 'overlayCustom',
-                },
-                panel: {
-                  stylePreset: 'drawerPanelCustom',
-                  minSize: '20vh',
-                  maxSize: '40%',
-                },
-                header: {
-                  spaceInset: 'spaceInset000',
-                  stylePreset: 'drawerHeaderCustom',
-                },
-                content: {
-                  spaceInset: 'spaceInset000',
-                },
-                closeButton: {
-                  stylePreset: 'drawerCloseButtonCustom',
-                  spaceInset: 'spaceInset000',
-                },
-              }}
-            >
-              <DrawerContent />
-            </Drawer>
-          </DrawerContainer>
-        </ThemeProvider>
+        <DrawerContainer>
+          <Drawer
+            aria-label="Drawer example"
+            open={isActive}
+            onDismiss={close}
+            inline
+            disableFocusTrap
+            hideOverlay
+            placement={placement as 'top' | 'left' | 'right' | 'bottom'}
+            header="Drawer"
+            overrides={{
+              overlay: {
+                stylePreset: 'overlayCustom',
+              },
+              panel: {
+                stylePreset: 'drawerPanelCustom',
+                minSize: '20vh',
+                maxSize: '40%',
+              },
+              header: {
+                spaceInset: 'spaceInset000',
+                stylePreset: 'drawerHeaderCustom',
+              },
+              content: {
+                spaceInset: 'spaceInset000',
+              },
+              closeButton: {
+                stylePreset: 'drawerCloseButtonCustom',
+                spaceInset: 'spaceInset000',
+              },
+            }}
+          >
+            <DrawerContent />
+          </Drawer>
+        </DrawerContainer>
 
         <BoxWithContent open={open} />
       </div>

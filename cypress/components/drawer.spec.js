@@ -3,7 +3,6 @@ describe('drawer', () => {
     cy.visit('?name=drawer-e2e');
   });
 
-  // TODO: Fix later
   it('page cant scroll when drawer panel is open', () => {
     cy.get('[data-testid="drawer-open-button"]').first().click();
 
