@@ -14,6 +14,7 @@ import {
   ComplianceSectionProps,
   RelatedComponentsSectionProps,
   OnwardJourneySectionProps,
+  CommonSectionProps,
 } from '../template-sections';
 
 export interface ComponentPageTemplateProps
@@ -34,4 +35,5 @@ export interface ComponentPageTemplateProps
   related?: RelatedComponentsSectionProps;
   featureCard?: Partial<OnwardJourneySectionProps>;
   children?: React.ReactNode;
+  commonSection?: CommonSectionProps;
 }
