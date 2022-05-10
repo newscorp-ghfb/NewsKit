@@ -129,7 +129,7 @@ const Contribute = (
               via the{' '}
               <Link
                 target="_blank"
-                href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2294973413/Help+-+Web+Documentation"
+                href="https://newskit.co.uk/about/contact-us/"
               >
                 contact form
               </Link>
@@ -148,7 +148,7 @@ const Contribute = (
               the{' '}
               <Link
                 target="_blank"
-                href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2294973413/Help+-+Web+Documentation"
+                href="https://github.com/newscorp-ghfb/newskit/issues"
               >
                 bug submission form
               </Link>
