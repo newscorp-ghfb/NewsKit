@@ -65,11 +65,12 @@ const Header = styled.header`
   right: 0;
   left: 0;
   z-index: 4;
+  ${getSizingCssFromTheme('height', 'sizing080')};
   ${getBorderCssFromTheme('borderBottomWidth', 'borderWidth010')};
   ${getColorCssFromTheme('borderBottomColor', 'interface040')};
   ${getColorCssFromTheme('backgroundColor', 'interfaceBackground')};
   ${getTypographyPresetFromTheme('utilityLabel020')}
-  ${getSpacingCssFromTheme('paddingTop', 'space000')};
+  ${getSpacingCssFromTheme('paddingTop', 'space010')};
   ${getSpacingCssFromTheme('paddingBottom', 'space000')};
 
   ${getMediaQueryFromTheme('lg')} {
