@@ -261,9 +261,9 @@ export default class MyDocument extends Document<Props> {
               }
             `}
           />
-          {console.log(this.props, '🔥🔥🔥🔥🔥🔥🔥')}
+          {/* {console.log(this.props, '🔥🔥🔥🔥🔥🔥🔥')}
           {console.log(this.props.productionSiteEnv, '✅✅✅✅✅✅✅✅')}
-          {console.log(this.props.marco, '🎨🎨🎨🎨🎨🎨')}
+          {console.log(this.props.marco, '🎨🎨🎨🎨🎨🎨')} */}
           <Tealium
             accountId="newsinternational"
             profileId="thetimes.newskit"
