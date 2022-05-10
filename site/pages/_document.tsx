@@ -32,13 +32,15 @@ export default class MyDocument extends Document<Props> {
     const {html} = await ctx.renderPage();
     return {
       html,
-      // Are we in local dev mode or "built and served"?
-      production: process.env.NODE_ENV === 'production',
-      // Are we production "newskit.co.uk" or not?
-      // TODO to remove hardcoded value
+      props: {
+        // Are we in local dev mode or "built and served"?
+        production: process.env.NODE_ENV === 'production',
+        // Are we production "newskit.co.uk" or not?
+        // TODO to remove hardcoded value
 
-      productionSiteEnv: process.env.SITE_ENV === 'production',
-      marco: 'marco',
+        productionSiteEnv: process.env.SITE_ENV === 'production',
+        marco: 'marco',
+      },
     };
   }
 
