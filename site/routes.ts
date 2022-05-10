@@ -482,6 +482,14 @@ export default [
             illustration: 'components/stack-illustration',
           },
           {
+            title: 'Structured List',
+            page: true,
+            id: '/components/structured-list',
+            description:
+              'Structured lists group content that is similar or related.',
+            illustration: 'components/standfirst-illustration',
+          },
+          {
             title: 'Visibility',
             page: true,
             id: '/components/visibility',
@@ -633,14 +641,6 @@ export default [
             id: '/components/standfirst',
             description:
               'An introductory paragraph in an article, which summarises the article’s content.',
-            illustration: 'components/standfirst-illustration',
-          },
-          {
-            title: 'Structured List',
-            page: true,
-            id: '/components/structured-list',
-            description:
-              'Structured lists group content that is similar or related.',
             illustration: 'components/standfirst-illustration',
           },
           {
