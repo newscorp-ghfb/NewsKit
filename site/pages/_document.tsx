@@ -25,33 +25,16 @@ const baseHref =
     : '/';
 
 const Base = () => <base href={baseHref} />;
-
-const TealiumWithProps = () => {
-  const isEnvProduction = process.env.SITE_ENV === 'production';
-  return (
-    <Tealium
-      accountId="newsinternational"
-      profileId="thetimes.newskit"
-      env={isEnvProduction ? 'prod' : 'dev'}
-    />
-  );
-};
-
 export default class MyDocument extends Document<Props> {
   static async getStaticProps(ctx: DocumentContext) {
     const {html} = await ctx.renderPage();
     return {
       html,
-      // Are we in local dev mode or "built and served"?
-      // TODO is production even been used?
-      production: process.env.NODE_ENV === 'production',
-      // Are we production "newskit.co.uk" or not?
-      // TODO to remove hardcoded value
-      productionSiteEnv: process.env.SITE_ENV === 'production',
     };
   }
 
   render() {
+    const isEnvProduction = process.env.SITE_ENV === 'production';
     const helmet = Helmet.rewind();
     return (
       <Html lang="en">
@@ -270,7 +253,11 @@ export default class MyDocument extends Document<Props> {
           />
           {console.log(process.env.SITE_ENV, '🔥🔥🔥🔥🔥🔥🔥')}
           {console.log(process.env.NODE_ENV, '✅✅✅✅✅✅✅✅')}
-          <TealiumWithProps />
+          <Tealium
+            accountId="newsinternational"
+            profileId="thetimes.newskit"
+            env={isEnvProduction ? 'prod' : 'dev'}
+          />
           <Main />
           <NextScript />
         </body>
