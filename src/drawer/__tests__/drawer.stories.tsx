@@ -231,33 +231,27 @@ export const StoryInline = () =>
             disableFocusTrap
             hideOverlay
             placement={placement as 'top' | 'left' | 'right' | 'bottom'}
-            header="Drawer"
+            header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
             overrides={{
-              overlay: {
-                stylePreset: 'overlayCustom',
-              },
-              panel: {
-                stylePreset: 'drawerPanelCustom',
-                minSize: '20vh',
-                maxSize: '40%',
-              },
-              header: {
-                spaceInset: 'spaceInset000',
-                stylePreset: 'drawerHeaderCustom',
-              },
-              content: {
-                spaceInset: 'spaceInset000',
-              },
-              closeButton: {
-                stylePreset: 'drawerCloseButtonCustom',
-                spaceInset: 'spaceInset000',
-              },
+              panel: {minSize: '20vh', maxSize: '50%'},
             }}
           >
             <DrawerContent />
           </Drawer>
         </DrawerContainer>
-
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
+          lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
+          lacus. Pellentesque eu odio <Link href="/">Test link 1</Link> sapien.
+          Donec finibus pellentesque est porta dictum. Suspendisse venenatis
+          vitae augue nec hendrerit. In ut quam tempus, feugiat risus quis,
+          porta eros. Aliquam ultricies ac orci viverra gravida. Ut sodales odio
+          tempor sodales viverra. In condimentum tincidunt fermentum. Nullam
+          imperdiet est vel tincidunt suscipit. Vestibulum vel pulvinar nibh, at
+          molestie lectus. Curabitur ultricies massa eu sem varius volutpat. Ut
+          vitae purus et enim imperdiet finibus. Quisque posuere lacus a nunc
+          tempor accumsan. Aliquam odio nunc, interdum.
+        </p>
         <BoxWithContent open={open} />
       </div>
     );
