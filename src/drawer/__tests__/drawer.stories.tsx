@@ -238,20 +238,21 @@ export const StoryInline = () =>
           >
             <DrawerContent />
           </Drawer>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
+            lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
+            lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
+            sapien. Donec finibus pellentesque est porta dictum. Suspendisse
+            venenatis vitae augue nec hendrerit. In ut quam tempus, feugiat
+            risus quis, porta eros. Aliquam ultricies ac orci viverra gravida.
+            Ut sodales odio tempor sodales viverra. In condimentum tincidunt
+            fermentum. Nullam imperdiet est vel tincidunt suscipit. Vestibulum
+            vel pulvinar nibh, at molestie lectus. Curabitur ultricies massa eu
+            sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
+            Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
+            interdum.
+          </p>
         </DrawerContainer>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
-          lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
-          lacus. Pellentesque eu odio <Link href="/">Test link 1</Link> sapien.
-          Donec finibus pellentesque est porta dictum. Suspendisse venenatis
-          vitae augue nec hendrerit. In ut quam tempus, feugiat risus quis,
-          porta eros. Aliquam ultricies ac orci viverra gravida. Ut sodales odio
-          tempor sodales viverra. In condimentum tincidunt fermentum. Nullam
-          imperdiet est vel tincidunt suscipit. Vestibulum vel pulvinar nibh, at
-          molestie lectus. Curabitur ultricies massa eu sem varius volutpat. Ut
-          vitae purus et enim imperdiet finibus. Quisque posuere lacus a nunc
-          tempor accumsan. Aliquam odio nunc, interdum.
-        </p>
         <BoxWithContent open={open} />
       </div>
     );
