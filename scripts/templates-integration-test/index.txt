@@ -5,10 +5,8 @@ import {ThemeChecker, newskitLightTheme, ThemeProvider} from 'newskit';
 
 export default function Home() {
   return (
-    <>
-      <ThemeProvider theme={newskitLightTheme}>
-        <ThemeChecker />
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={newskitLightTheme}>
+      <ThemeChecker />
+    </ThemeProvider>
   );
 }
