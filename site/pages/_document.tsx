@@ -28,7 +28,7 @@ const Base = () => <base href={baseHref} />;
 
 export default class MyDocument extends Document<Props> {
   // TODO back to static props
-  static async getInitialProps(ctx: DocumentContext) {
+  static async getStaticProps(ctx: DocumentContext) {
     const {html} = await ctx.renderPage();
     return {
       html,
