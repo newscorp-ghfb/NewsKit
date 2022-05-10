@@ -26,21 +26,28 @@ const baseHref =
 
 const Base = () => <base href={baseHref} />;
 
+const TealiumWithProps = () => {
+  const isEnvProduction = process.env.SITE_ENV === 'production';
+  return (
+    <Tealium
+      accountId="newsinternational"
+      profileId="thetimes.newskit"
+      env={isEnvProduction ? 'prod' : 'dev'}
+    />
+  );
+};
+
 export default class MyDocument extends Document<Props> {
-  // TODO back to static props
   static async getStaticProps(ctx: DocumentContext) {
     const {html} = await ctx.renderPage();
     return {
       html,
-      props: {
-        // Are we in local dev mode or "built and served"?
-        production: process.env.NODE_ENV === 'production',
-        // Are we production "newskit.co.uk" or not?
-        // TODO to remove hardcoded value
-
-        productionSiteEnv: process.env.SITE_ENV === 'production',
-        marco: 'marco',
-      },
+      // Are we in local dev mode or "built and served"?
+      // TODO is production even been used?
+      production: process.env.NODE_ENV === 'production',
+      // Are we production "newskit.co.uk" or not?
+      // TODO to remove hardcoded value
+      productionSiteEnv: process.env.SITE_ENV === 'production',
     };
   }
 
@@ -261,14 +268,9 @@ export default class MyDocument extends Document<Props> {
               }
             `}
           />
-          {/* {console.log(this.props, '🔥🔥🔥🔥🔥🔥🔥')}
-          {console.log(this.props.productionSiteEnv, '✅✅✅✅✅✅✅✅')}
-          {console.log(this.props.marco, '🎨🎨🎨🎨🎨🎨')} */}
-          <Tealium
-            accountId="newsinternational"
-            profileId="thetimes.newskit"
-            env={this.props.productionSiteEnv ? 'prod' : 'dev'}
-          />
+          {console.log(process.env.SITE_ENV, '🔥🔥🔥🔥🔥🔥🔥')}
+          {console.log(process.env.NODE_ENV, '✅✅✅✅✅✅✅✅')}
+          <TealiumWithProps />
           <Main />
           <NextScript />
         </body>

@@ -42,8 +42,6 @@ export default class MyApp extends App<Props, State> {
   }
 
   static async getInitialProps({Component, ctx}: AppContext) {
-    console.log(Component, '🏅🏅🏅🏅🏅🏅🏅 component');
-    console.log(ctx, '🟪🟪🟪🟪🟪🟪🟪🟪🟪 ctx');
     let pageProps = {};
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx);
