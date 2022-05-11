@@ -33,6 +33,7 @@ export const stylePresets = {
       color: '{{colors.interactivePrimary050}}',
     },
   },
+
   linkTopNavigation: {
     base: {
       color: '{{colors.inkSubtle}}',
@@ -43,8 +44,12 @@ export const stylePresets = {
       textDecoration: 'none',
     },
     selected: {
+      borderColor:
+        '{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}',
       color: '{{colors.interactivePrimary030}}',
       textDecoration: 'none',
+      border: '4px solid transparent',
+      borderBottomColor: '{{colors.interactivePrimary030}}',
     },
   },
   tableHeader: {

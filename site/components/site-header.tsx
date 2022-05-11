@@ -13,7 +13,6 @@ import {
   getColorCssFromTheme,
   getSpacingCssFromTheme,
   getSizingCssFromTheme,
-  getStylePresetFromTheme,
   IconFilledClose,
   Button,
   ButtonSize,
@@ -27,7 +26,6 @@ import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
 import routes from '../routes';
 import {Link} from './link';
-import {getBorderRadius} from './theming-values/colors/utils';
 
 export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
   href ? (
@@ -92,38 +90,6 @@ const MobileMenu = styled.div`
   ${getSpacingCssFromTheme('marginLeft', 'space020')};
 `;
 
-export const Indicator = styled.div<{
-  $selected: boolean;
-}>`
-  ${getTypographyPresetFromTheme('utilityButton020', undefined, {
-    withCrop: true,
-  })};
-
-  ${getSpacingCssFromTheme('marginRight', 'space070')};
-
-  &.selected {
-    ${({$selected, ...props}) =>
-      getStylePresetFromTheme('linkTopNavigation', undefined, {
-        isSelected: $selected,
-      })(props)}
-    position: static;
-    ::before {
-      ${getSpacingCssFromTheme('marginTop', 'space000')};
-      margin-bottom: 0px;
-    }
-    ::after {
-      border-radius: ${getBorderRadius({first: true, last: false})};
-      ${getColorCssFromTheme('background', 'interactivePrimary030')};
-      content: ' ';
-      position: relative;
-      ${getSizingCssFromTheme('height', 'sizing050')};
-      margin-top: -10px;
-      ${getSpacingCssFromTheme('marginBottom', 'space020')};
-      ${getSizingCssFromTheme('top', 'sizing070')};
-    }
-  }
-`;
-
 const StyledVisible = styled(Visible)`
   height: 100%;
   z-index: 1;
@@ -176,25 +142,13 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           key={id}
           href={id}
           size="small"
+          selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
           overrides={{
             stylePreset: 'linkTopNavigation',
+            minHeight: '68px',
           }}
         >
-          <Indicator
-            data-testid="styled-indicator"
-            key={id}
-            aria-current={
-              currentRoute.split('/')[1].includes(id.split('/')[1]) || undefined
-            }
-            $selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
-            className={
-              currentRoute.split('/')[1].includes(id.split('/')[1])
-                ? 'selected'
-                : undefined
-            }
-          >
-            {title}
-          </Indicator>
+          {title}
         </MenuItem>
       ));
 
