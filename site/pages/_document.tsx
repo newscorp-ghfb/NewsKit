@@ -13,6 +13,7 @@ const baseHref =
     : '/';
 
 const Base = () => <base href={baseHref} />;
+
 export default class MyDocument extends Document {
   render() {
     const isEnvProduction = process.env.SITE_ENV === 'production';
