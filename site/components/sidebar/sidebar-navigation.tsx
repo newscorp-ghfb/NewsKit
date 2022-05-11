@@ -6,13 +6,14 @@ import {
   Label,
   Menu,
   MenuDivider,
+  MenuItem,
   styled,
 } from 'newskit';
 import routes from '../../routes';
 import {Visible} from '../../../src/grid/visibility';
 import {MenuNavCollapsible} from '../menu-collapsible/menu-collapsible';
 import {PageLinkProps, SiteMenuItemProps, SubNavProps} from './types';
-import {DesktopNavigationDivider, Indicator, MenuItemStyled} from './styled';
+import {DesktopNavigationDivider} from './styled';
 
 const StyledLabel = styled(Label)`
   ${getSpacingCssFromTheme('marginLeft', 'space060')};
@@ -33,11 +34,12 @@ const PageMenuLinks: React.FC<PageLinkProps> = ({
   });
 
   return (
-    <MenuItemStyled
+    <MenuItem
       href={href}
       data-testid={page}
-      $selected={active}
+      selected={active}
       overrides={{
+        stylePreset: 'sideBarNavigation',
         // tier 1
         // add minHeight to make sure indicator and container remain same height
         minHeight: '40px',
@@ -45,7 +47,7 @@ const PageMenuLinks: React.FC<PageLinkProps> = ({
       size="small"
     >
       <div ref={ref}>{children}</div>
-    </MenuItemStyled>
+    </MenuItem>
   );
 };
 export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
@@ -63,10 +65,6 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
                   <Block spaceStack="space060" />
                 ) : (
                   <>
-                    <Indicator
-                      className={path.includes(id) ? 'selected' : undefined}
-                      id={id}
-                    />
                     <PageMenuLinks active={path.includes(id)} href={id}>
                       <Label
                         overrides={{

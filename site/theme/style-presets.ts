@@ -52,6 +52,24 @@ export const stylePresets = {
       borderBottomColor: '{{colors.interactivePrimary030}}',
     },
   },
+  sideBarNavigation: {
+    base: {
+      color: '{{colors.inkSubtle}}',
+      textDecoration: 'none',
+    },
+    hover: {
+      color: '{{colors.inkSubtle}}',
+      textDecoration: 'none',
+    },
+    selected: {
+      borderColor:
+        '{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}',
+      color: '{{colors.interactivePrimary030}}',
+      textDecoration: 'none',
+      border: '4px solid transparent',
+      borderLeftColor: '{{colors.interactivePrimary030}}',
+    },
+  },
   tableHeader: {
     base: {
       borderStyle: 'solid',
