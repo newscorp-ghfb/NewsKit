@@ -905,4 +905,36 @@ export const SelectVirtualization = () => {
   );
 };
 
-// StorySelectVirtualized.name = "sel"
+export const StorySelectControlled = () => {
+  const [selectedValue, setSelectedValue] = React.useState('');
+  const handleChange = e => {
+    console.log(e.target.value);
+    setSelectedValue(e.target.value);
+  };
+  return (
+    <Container>
+      <Block>
+        <Select
+          aria-describedby="id-2-at"
+          id="id-2"
+          size="medium"
+          onChange={handleChange}
+        >
+          {items.map(item => (
+            <SelectOption
+              key={item}
+              value={item}
+              selected={item === selectedValue}
+            >
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <Button onClick={() => setSelectedValue('Fermium')}>
+          Make Fermium selected value
+        </Button>
+      </Block>
+    </Container>
+  );
+};
+StorySelectControlled.storyName = 'Select controlled';
