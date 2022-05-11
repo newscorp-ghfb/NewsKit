@@ -117,6 +117,10 @@ exports[`Media List renders with custom layout 1`] = `
   margin-bottom: 0;
 }
 
+.emotion-5 svg {
+  border-radius: 4px;
+}
+
 .emotion-6 {
   position: relative;
   width: 100%;
@@ -571,6 +575,10 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   position: relative;
   margin-bottom: 0;
+}
+
+.emotion-5 svg {
+  border-radius: 4px;
 }
 
 .emotion-6 {
@@ -1080,6 +1088,10 @@ exports[`Media List renders with feature cardscards 1`] = `
   margin-bottom: 0;
 }
 
+.emotion-8 svg {
+  border-radius: 4px;
+}
+
 .emotion-9 {
   -webkit-background-size: cover;
   background-size: cover;
@@ -1449,6 +1461,10 @@ exports[`Media List renders with feature cardscards 1`] = `
   -ms-flex: 1;
   flex: 1;
   margin-left: 0;
+}
+
+.emotion-27 svg {
+  border-radius: 4px;
 }
 
 .emotion-28 {

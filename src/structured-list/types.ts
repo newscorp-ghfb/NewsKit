@@ -1,6 +1,7 @@
 import React from 'react';
 import {DividerProps} from '../divider';
 import {CellProps} from '../grid';
+import {EventData} from '../instrumentation';
 import {MQ} from '../utils/style';
 
 export interface StructuredListProps {
@@ -17,7 +18,8 @@ export interface StructuredListProps {
 export type StructuredListCellAlign = 'start' | 'center' | 'end';
 
 export interface StructuredListItemProps
-  extends React.AnchorHTMLAttributes<HTMLElement> {
+  extends React.AnchorHTMLAttributes<HTMLElement>,
+    EventData {
   children: React.ReactNode | React.ReactNode[];
   ariaLabel?: string;
   disabled?: boolean;
