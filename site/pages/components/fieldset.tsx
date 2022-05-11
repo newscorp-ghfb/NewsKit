@@ -6,6 +6,8 @@ import {LayoutProps} from '../../components/layout';
 import {ContentText} from '../../components/text-section/content-text';
 import {MetaStatus} from '../../components/meta/types';
 import {Link} from '../../components/link';
+import {commonLogicalProps} from '../../components/component-api/common-logical-props';
+import {OverridesRowsProps} from '../../components/component-api';
 
 const infoIcon = (
   <IconFilledInfo
@@ -223,13 +225,13 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'fieldset.spaceInset',
+              attribute: 'spaceInset',
               type: 'MQ<string>',
               description:
                 'If provided, this overrides the inset space (padding) applied to the Fieldset.',
             },
             {
-              attribute: 'fieldset.stylePreset',
+              attribute: 'stylePreset',
               type: 'MQ<string>',
               description:
                 'If provided, overrides the stylePreset of the Fieldset.',
@@ -259,6 +261,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, this overrides the stack space (margin) applied to the Legend.',
             },
+            ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
         },
       ],

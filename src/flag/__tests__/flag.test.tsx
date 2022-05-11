@@ -194,4 +194,15 @@ describe('Flag', () => {
     const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders with logical props overrides', () => {
+    const props: FlagProps = {
+      overrides: {
+        paddingBlock: '30px',
+        marginBlock: '30px',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
+    expect(fragment).toMatchSnapshot();
+  });
 });

@@ -42,4 +42,18 @@ describe('DateTime', () => {
     });
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders with logical props overrides', () => {
+    const fragment = renderToFragmentWithTheme(DateTime, {
+      date: '2017-01-01T04:32:00.000Z',
+      dateFormat: 'd MMM yyyy, H:mm',
+      suffix: ', The Times',
+      prefix: 'Updated:',
+      overrides: {
+        marginInline: '30px',
+        paddingInline: '30px',
+      },
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });

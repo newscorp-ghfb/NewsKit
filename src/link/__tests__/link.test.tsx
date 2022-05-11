@@ -57,6 +57,22 @@ describe('Link', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders with logical props overrides', () => {
+    const fragment = renderToFragmentWithTheme(
+      Link,
+      {
+        href: '#',
+        children: 'test link test',
+        overrides: {
+          paddingInline: '30px',
+          marginInline: '30px',
+        },
+      },
+      myCustomTheme,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders the external icon even if the href is internal', () => {
     const fragment = renderToFragmentWithTheme(Link, {
       href: '/relative',
@@ -154,6 +170,21 @@ describe('LinkStandalone', () => {
       href: '#',
       children: 'test link test',
     });
+    expect(fragment).toMatchSnapshot();
+  });
+  test('renders with logical props overrides', () => {
+    const fragment = renderToFragmentWithTheme(
+      LinkStandalone,
+      {
+        href: '#',
+        children: 'test link test',
+        overrides: {
+          paddingInline: '30px',
+          marginInline: '30px',
+        },
+      },
+      myCustomTheme,
+    );
     expect(fragment).toMatchSnapshot();
   });
 });
