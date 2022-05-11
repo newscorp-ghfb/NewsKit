@@ -10,7 +10,7 @@ import {
 export const DesktopNavigationDivider = styled.div`
   width: 100vw;
   position: relative;
-  left: calc(-50vw + 50%);
+
   ${getSpacingCssFromTheme('marginTop', 'space045')};
   ${getSpacingCssFromTheme('marginBottom', 'space060')};
 `;
