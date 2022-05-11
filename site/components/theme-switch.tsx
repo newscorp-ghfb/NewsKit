@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {FlagProps, Flow, H2, IconButton, Stack} from 'newskit';
+import {FlagProps, GridLayout, H2, IconButton} from 'newskit';
 import {IconFilledLight, IconFilledDark} from './icons';
 
 interface ThemeSwitchProps {
@@ -14,7 +14,7 @@ export const ThemeSwitch: React.FC<
 
   return textTheme ? (
     <>
-      <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
+      <GridLayout columns="1fr 30px">
         <H2 overrides={{typographyPreset: 'utilityLabel030'}}>
           {`${isDark() ? 'Light' : 'Dark'}  Theme`} {textTheme}
         </H2>
@@ -39,7 +39,7 @@ export const ThemeSwitch: React.FC<
             <IconFilledDark overrides={{size: 'iconSize010'}} />
           )}
         </IconButton>
-      </Stack>
+      </GridLayout>
     </>
   ) : (
     <IconButton
