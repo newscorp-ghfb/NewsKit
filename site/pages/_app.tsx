@@ -1,11 +1,10 @@
 import * as React from 'react';
 import {
-  ThemeProvider,
   createEventInstrumentation,
   InstrumentationProvider,
   instrumentationHandlers,
   UncompiledTheme,
-  LayerOrganizer,
+  NewskitProvider,
 } from 'newskit';
 import App, {AppContext} from 'next/app';
 import {HeadNextSeo} from '../components/head-next-seo/head-next-seo';
@@ -141,19 +140,17 @@ export default class MyApp extends App<Props, State> {
             ...pageProps,
           })}
         >
-          <ThemeProvider theme={theme}>
-            <LayerOrganizer>
-              <ThemeMode.Provider value={themeMode}>
-                <PageLoadInstrumentation />
-                <Component
-                  {...pageProps}
-                  path={path}
-                  toggleTheme={this.toggleTheme}
-                  themeMode={themeMode}
-                />
-              </ThemeMode.Provider>
-            </LayerOrganizer>
-          </ThemeProvider>
+          <NewskitProvider theme={theme} zIndex={1000}>
+            <ThemeMode.Provider value={themeMode}>
+              <PageLoadInstrumentation />
+              <Component
+                {...pageProps}
+                path={path}
+                toggleTheme={this.toggleTheme}
+                themeMode={themeMode}
+              />
+            </ThemeMode.Provider>
+          </NewskitProvider>
         </InstrumentationProvider>
       </>
     );

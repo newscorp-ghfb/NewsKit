@@ -2,13 +2,7 @@ import React from 'react';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {withPerformance} from 'storybook-addon-performance';
 
-import {
-  ThemeProvider,
-  MediaQueryProvider,
-  newskitLightTheme,
-  styled,
-  LayerOrganizer,
-} from '../src';
+import {NewskitProvider, newskitLightTheme, styled} from '../src';
 
 const unlimitedScenarios = [
   'grid',
@@ -61,30 +55,11 @@ export const decorators = [
       </Decorator>
     );
   },
-  // Disabled MediaQueryProvider for some stories,
-  // this needs to placed before theme Decorator so that the order matters
   (Story, context) => {
-    const {parameters} = context;
-    const shouldDisableMQDecorator =
-      parameters && parameters.disableMediaQueryDecorator;
-
-    const Decorator = shouldDisableMQDecorator
-      ? NoDecorator
-      : MediaQueryProvider;
-
     return (
-      <Decorator>
+      <NewskitProvider theme={getThemeFromContext(context)}>
         <Story />
-      </Decorator>
-    );
-  },
-  (Story, context) => {
-    return (
-      <ThemeProvider theme={getThemeFromContext(context)}>
-        <LayerOrganizer>
-          <Story />
-        </LayerOrganizer>
-      </ThemeProvider>
+      </NewskitProvider>
     );
   },
   withPerformance,

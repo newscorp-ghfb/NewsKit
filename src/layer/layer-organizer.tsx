@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {useIsomorphicLayoutEffect} from '../utils/hooks';
 import {LayerOganizerContextProvider, useLayerOrganizer} from './context';
 
-interface LayerOrganizerProps {
+export interface LayerOrganizerProps {
   children?: React.ReactNode;
   zIndex?: number;
 }
