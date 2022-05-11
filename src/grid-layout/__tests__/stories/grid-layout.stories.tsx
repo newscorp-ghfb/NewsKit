@@ -236,6 +236,49 @@ export const WithOverrides = () => (
   </>
 );
 
+export const WithLogicalPropsOverrides = () => (
+  <>
+    <StorybookHeading>With logical props overrides</StorybookHeading>
+    <StorybookSubHeading>logical padding</StorybookSubHeading>
+    <GridLayout
+      columns="1fr 1fr"
+      rowGap="20px"
+      columnGap="20px"
+      overrides={{paddingBlock: 'space030', paddingInline: 'space030'}}
+      style={{border: '1px solid red'}}
+    >
+      <GridLayoutItem>
+        <BigRedBlock />
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <BigRedBlock />
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <BigRedBlock />
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <BigRedBlock />
+      </GridLayoutItem>
+    </GridLayout>
+    <StorybookSubHeading>logical margin</StorybookSubHeading>
+    <div style={{border: '1px solid green'}}>
+      <GridLayout
+        columns="1fr 1fr"
+        columnGap="20px"
+        overrides={{marginBlock: 'space030', marginInline: 'space030'}}
+        style={{border: '1px solid red'}}
+      >
+        <GridLayoutItem>
+          <BigRedBlock />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <BigRedBlock />
+        </GridLayoutItem>
+      </GridLayout>
+    </div>
+  </>
+);
+
 export const CardWithGrid = () => (
   <>
     <StorybookHeading>Card with grid</StorybookHeading>

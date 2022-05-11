@@ -179,4 +179,16 @@ describe('Checkbox', () => {
 
     expect(checkbox).toBeInTheDocument();
   });
+  test('with logical props overrides', () => {
+    const fragment = renderToFragmentWithTheme(() => (
+      <Checkbox
+        checked
+        overrides={{
+          marginBlock: '30px',
+          paddingBlock: '30px',
+        }}
+      />
+    ));
+    expect(fragment).toMatchSnapshot();
+  });
 });

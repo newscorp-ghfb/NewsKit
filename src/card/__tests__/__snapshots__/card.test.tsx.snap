@@ -1320,6 +1320,90 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Card renders card with logical props overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  overflow: hidden;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-block: 30px;
+  padding-block: 30px;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  padding: 0;
+  padding-inline: 30px;
+}
+
+.emotion-2 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+.emotion-3 {
+  margin-bottom: 4px;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <p
+            class="emotion-4"
+          >
+            Example Card text
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Card renders card with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {

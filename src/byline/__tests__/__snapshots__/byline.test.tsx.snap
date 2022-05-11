@@ -934,6 +934,272 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 </DocumentFragment>
 `;
 
+exports[`Byline renders correctly with logical props overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+  margin-block: 30px;
+  padding-block: 30px;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-2 {
+  margin-right: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-3 {
+  margin: 0;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-3 svg {
+  fill: #535353;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-4 {
+  display: inline-block;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-4 svg {
+  fill: #3358CC;
+}
+
+.emotion-4:hover:not(:disabled) {
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:hover:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
+.emotion-4:active:not(:disabled) {
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:active:not(:disabled) svg {
+  fill: #213A82;
+}
+
+.emotion-4:visited:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited:not(:disabled) svg {
+  fill: #5E44E4;
+}
+
+.emotion-4:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-6 {
+  margin: 0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  display: block;
+}
+
+.emotion-8 {
+  margin-left: 8px;
+  color: #C0C0C0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-8 svg {
+  fill: #C0C0C0;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <span
+          class="emotion-3"
+        >
+          <a
+            aria-label="more by Jane Smith"
+            class="emotion-4"
+            data-author="Jane Smith"
+            href="www.example.com"
+            rel="author"
+          >
+            <span
+              class="emotion-5"
+            >
+              <span
+                class="emotion-6"
+              >
+                Jane Smith
+              </span>
+            </span>
+          </a>
+          <span
+            aria-hidden="true"
+            class="emotion-3"
+          >
+            , 
+          </span>
+          Author, London
+          <span
+            class="emotion-8"
+          >
+            |
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <span
+        class="emotion-3"
+      >
+        <a
+          aria-label="more by John Smith"
+          class="emotion-4"
+          data-author="John Smith"
+          href="www.example.com"
+          rel="author"
+        >
+          <span
+            class="emotion-5"
+          >
+            <span
+              class="emotion-6"
+            >
+              John Smith
+            </span>
+          </span>
+        </a>
+        <span
+          aria-hidden="true"
+          class="emotion-3"
+        >
+          , 
+        </span>
+        Other Author, London
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Byline renders correctly with multiple authors 1`] = `
 <DocumentFragment>
   .emotion-0 {

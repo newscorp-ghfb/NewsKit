@@ -38,4 +38,11 @@ describe('TextBlock', () => {
     });
     expect(fragment).toMatchSnapshot();
   });
+  test('renders with logical props', () => {
+    const fragment = renderToFragmentWithTheme(TextBlock, {
+      paddingBlock: '30px',
+      marginBlock: '30px',
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });

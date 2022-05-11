@@ -99,5 +99,13 @@ describe('Block', () => {
       const fragment = renderToFragmentWithTheme(Block, props, myCustomTheme);
       expect(fragment).toMatchSnapshot();
     });
+    test('renders with logical props', () => {
+      const props: BlockProps = {
+        paddingBlock: '30px',
+        marginBlock: '30px',
+      };
+      const fragment = renderToFragmentWithTheme(Block, props);
+      expect(fragment).toMatchSnapshot();
+    });
   });
 });

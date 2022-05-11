@@ -24,4 +24,16 @@ describe('Label', () => {
     const fragment = renderToFragmentWithTheme(Label, props);
     expect(fragment).toMatchSnapshot();
   });
+  test('should render with logical props overrides', () => {
+    const props: LabelProps = {
+      children: 'Label',
+      overrides: {
+        paddingBlock: '30px',
+        marginBlock: '30px',
+      },
+    };
+
+    const fragment = renderToFragmentWithTheme(Label, props);
+    expect(fragment).toMatchSnapshot();
+  });
 });

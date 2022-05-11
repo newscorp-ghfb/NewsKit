@@ -199,3 +199,16 @@ test(`renders grid and cell overrides on banner`, () => {
 
   expect(fragment).toMatchSnapshot();
 });
+
+test(`renders with logical props overrides`, () => {
+  const props: BannerProps = {
+    children: bannerMessage,
+    overrides: {
+      paddingBlock: '30px',
+      marginBlock: '30px',
+    },
+  };
+  const fragment = renderToFragmentWithTheme(Banner, props) as any;
+
+  expect(fragment).toMatchSnapshot();
+});

@@ -21,6 +21,10 @@ export default {
   disabledRules: ['heading-order'],
 };
 
+const StyledDiv = styled.div`
+  border: 1px red dotted;
+`;
+
 export const FieldsetSimpleExample = () => (
   <>
     <StorybookHeading>Fieldset default</StorybookHeading>
@@ -223,3 +227,47 @@ export const FieldsetWithCustomLegend = () => (
   </>
 );
 FieldsetWithCustomLegend.storyName = 'fieldset-with-custom-legend';
+
+export const FieldsetWithLogicalPropsOverrides = () => (
+  <>
+    <StorybookHeading>Fieldset with logical props overrides</StorybookHeading>
+    <ThemeProvider theme={myCustomTheme}>
+      <Fieldset
+        legend="Logical padding"
+        overrides={{
+          stylePreset: 'fieldsetCustom',
+          paddingBlock: 'space040',
+          marginInline: 'space040',
+          legend: {
+            stylePreset: 'legendCustom',
+            typographyPreset: 'utilityBody030',
+            spaceStack: 'space000',
+          },
+        }}
+      >
+        <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
+        <AssistiveText>Assistive Text</AssistiveText>
+      </Fieldset>
+      <br />
+      <StyledDiv>
+        <Fieldset
+          legend="Logical margin"
+          overrides={{
+            stylePreset: 'fieldsetCustom',
+            marginBlock: 'space040',
+            marginInline: 'space040',
+            legend: {
+              stylePreset: 'legendCustom',
+              typographyPreset: 'utilityBody030',
+            },
+          }}
+        >
+          <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
+          <AssistiveText>Assistive Text</AssistiveText>
+        </Fieldset>
+      </StyledDiv>
+    </ThemeProvider>
+  </>
+);
+FieldsetWithLogicalPropsOverrides.storyName =
+  'fieldset-with-logical-props-overrides';

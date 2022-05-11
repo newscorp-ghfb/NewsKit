@@ -178,6 +178,18 @@ describe('Button', () => {
     expect(mockFunc).toHaveBeenCalledWith(42);
   });
 
+  test('renders with logical props overrides', () => {
+    const props: ButtonProps = {
+      overrides: {
+        paddingBlock: '30px',
+        marginBlock: '30px',
+      },
+    };
+
+    const fragment = renderToFragmentWithTheme(renderButtonWithText, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
   describe('Loading Button', () => {
     test('renders Small Button', () => {
       const props: ButtonProps = {

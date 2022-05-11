@@ -3,13 +3,14 @@ import {styled, getStylePreset, handleResponsiveProp, MQ} from '../utils/style';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {logicalProps, LogicalProps} from '../utils/logical-properties';
 
 export interface DividerOverrides {
   stylePreset?: MQ<string>;
 }
 export interface DividerProps {
   vertical?: MQ<boolean>;
-  overrides?: DividerOverrides;
+  overrides?: DividerOverrides & LogicalProps;
 }
 
 const StyledDivider = styled.hr<DividerProps>`
@@ -29,6 +30,7 @@ const StyledDivider = styled.hr<DividerProps>`
           width: '100%',
         };
   })}
+  ${logicalProps('divider')}
 `;
 
 const ThemelessDivider: React.FC<DividerProps> = props => (
