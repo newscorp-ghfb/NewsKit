@@ -58,8 +58,11 @@ export const stylePresets = {
       textDecoration: 'none',
     },
     hover: {
-      color: '{{colors.inkSubtle}}',
-      textDecoration: 'none',
+      color: '{{colors.interactivePrimary030}}',
+      backgroundColor: '{{colors.interactivePrimary010}}',
+    },
+    active: {
+      color: '{{colors.interactivePrimary050}}',
     },
     selected: {
       borderColor:

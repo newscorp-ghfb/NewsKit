@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import {
-  ButtonSize,
   Divider,
   Flow,
   getSpacingCssFromTheme,
-  getStylePresetFromTheme,
+  GridLayout,
+  GridLayoutItem,
   H3,
-  IconButton,
   IconOutlinedLaunch,
   Label,
   Menu,
@@ -14,9 +13,10 @@ import {
   MenuItem,
   Stack,
   styled,
+  TextBlock,
 } from 'newskit';
 import {IconExpandLess, IconExpandMore} from '../icons';
-import {Indicator, MenuCollapsible} from './styled';
+import {MenuCollapsible} from './styled';
 
 const MobileNavigationDivider = styled.div`
   width: 100vw;
@@ -26,32 +26,26 @@ const MobileNavigationDivider = styled.div`
   ${getSpacingCssFromTheme('marginTop', 'space050')};
   ${getSpacingCssFromTheme('marginBottom', 'space050')};
 `;
-const MenuItemStyled = styled(MenuItem)<{
-  $selected: boolean;
-}>`
-  ${({$selected, ...props}) =>
-    getStylePresetFromTheme('sidebarNavItem', undefined, {
-      isSelected: $selected,
-    })(props)}
+
+const StyledAnchor = styled.a`
+  text-decoration: none;
+`;
+
+const MenuItemStyled = styled(MenuItem)`
   width: 100vw;
 `;
-export const GitHubLaunch: React.FC<{href?: string}> = ({href}) =>
-  href ? (
-    <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
-      <H3 overrides={{typographyPreset: 'utilityLabel030'}}>Github</H3>
-      <IconButton
-        size={ButtonSize.Small}
-        aria-label="github link"
-        href={href}
-        target="_blank"
-        overrides={{
-          stylePreset: 'iconButtonMinimalSecondary',
-        }}
-      >
+export const GitHubLaunch: React.FC<{href?: string}> = () => (
+  <StyledAnchor href="https://github.com/newscorp-ghfb/newskit">
+    <GridLayout columns="1fr 24px">
+      <GridLayoutItem>
+        <H3 overrides={{typographyPreset: 'utilityLabel030'}}>Github</H3>
+      </GridLayoutItem>
+      <GridLayoutItem>
         <IconOutlinedLaunch overrides={{size: 'iconSize020'}} />
-      </IconButton>
-    </Stack>
-  ) : null;
+      </GridLayoutItem>
+    </GridLayout>
+  </StyledAnchor>
+);
 
 type NavProps = {
   title: string;
@@ -86,28 +80,22 @@ export const MenuNavCollapsible = ({
           <React.Fragment key={id}>
             {page ? (
               <>
-                <Indicator
-                  className={path.includes(id) ? 'selected' : undefined}
-                />
                 <MenuItemStyled
                   href={id}
-                  $selected={path.includes(id)}
+                  selected={path.includes(id)}
                   overrides={{
                     minHeight: '40px',
+                    stylePreset: 'sideBarNavigation',
+                    typographyPreset: 'utilityButton020',
                   }}
                   size="small"
                 >
-                  <Label
-                    overrides={{
-                      stylePreset: 'interactivePrimary030',
-                      typographyPreset: 'utilityButton020',
-                      spaceStack: 'space000',
-                      spaceInline: 'space070',
-                      marginInline: 'space040',
-                    }}
+                  <TextBlock
+                    typographyPreset="utilityButton020"
+                    marginInline="space040"
                   >
                     {title}
-                  </Label>
+                  </TextBlock>
                 </MenuItemStyled>
               </>
             ) : (
