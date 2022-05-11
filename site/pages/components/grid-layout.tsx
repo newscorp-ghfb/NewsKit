@@ -56,7 +56,7 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
         componentName: 'GridLayout',
         component: state => (
           <PlaygroundContainer>
-            <GridLayout {...state} columns="1fr 1fr 1fr">
+            <GridLayout {...state} cols="1fr 1fr 1fr">
               <GridLayoutItem>
                 <BigRedBlock />
               </GridLayoutItem>

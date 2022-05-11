@@ -11,6 +11,7 @@ import {
   getSizingCssFromTheme,
   getSpacingCssFromTheme,
   Grid,
+  RadioButton,
   Stack,
   styled,
   TextBlock,
@@ -408,6 +409,14 @@ const Index = (layoutProps: LayoutProps) => {
           <FeatureCardsForIndex />
         </Grid>
       </FindOutMore>
+      <RadioButton
+        overrides={{
+          spaceStack: 'space050',
+          input: {
+            spaceInline: 'space020',
+          },
+        }}
+      />
     </Layout>
   );
 };
