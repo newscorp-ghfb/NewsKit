@@ -371,7 +371,7 @@ jobs:
             - public/*
       - slack/status:
           <<: *slack_status
-  
+
   build_docs_pr_with_no_base_url:
     executor: node-xlarge
     steps:
@@ -1006,7 +1006,7 @@ workflows:
             - init_aws
       - build_docs:
           name: build_docs_pr
-          context: ncu-newskit-site-prod
+          context: ncu-newskit-site-pr
           requires:
             - build_icons
       - push_s3:
