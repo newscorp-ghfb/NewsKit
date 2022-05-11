@@ -12,6 +12,7 @@ import {StructuredListCell} from './structured-list';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {EventTrigger, useInstrumentation} from '../instrumentation';
 
 const getCellAlign = (child: React.ReactNode): StructuredListCellAlign =>
   React.isValidElement(child) && child.props.align;
@@ -24,9 +25,20 @@ const ThemelessStructuredListItem = React.forwardRef<
   StructuredListItemProps
 >(
   (
-    {children, ariaLabel, disabled, overrides, href, linkIconAlign, ...props},
+    {
+      children,
+      ariaLabel,
+      disabled,
+      overrides,
+      href,
+      linkIconAlign,
+      eventContext,
+      eventOriginator = 'list item',
+      ...props
+    },
     ref,
   ) => {
+    const {fireEvent} = useInstrumentation();
     const childrenArray = React.Children.toArray(children);
     const hasHref = Boolean(href);
 
@@ -143,6 +155,16 @@ const ThemelessStructuredListItem = React.forwardRef<
             href={href}
             data-testid="list-item-link"
             aria-disabled={disabled && 'true'}
+            onClick={() => {
+              fireEvent({
+                originator: eventOriginator,
+                trigger: EventTrigger.Click,
+                context: {
+                  href,
+                  ...eventContext,
+                },
+              });
+            }}
             ref={ref}
             {...props}
           >

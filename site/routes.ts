@@ -289,7 +289,7 @@ export default [
             id: '/components/button',
             description:
               'Allows users to take actions, and make choices, with a single tap.',
-            illustration: 'components/button-illustration',
+            illustration: 'components/button/hero',
           },
           {
             title: 'Checkbox',
@@ -313,7 +313,7 @@ export default [
             id: '/components/radio-button',
             description:
               'Radio Buttons are selection controls that are typically used in forms',
-            illustration: 'components/radio-button/radio-button-illustration',
+            illustration: 'components/radio-button/hero',
           },
           {
             title: 'Select',
@@ -448,6 +448,14 @@ export default [
             description:
               'A layout panel that slides out the side of the screen revealing content like navigation or filters.',
             illustration: 'components/drawer/drawer-illustration',
+          },
+          {
+            title: 'Fieldset',
+            page: true,
+            id: '/components/fieldset',
+            description:
+              'The Fieldset is used to provide contextual information around a group of form controls in a web form.',
+            illustration: 'components/fieldset/hero',
           },
           {
             title: 'Grid',

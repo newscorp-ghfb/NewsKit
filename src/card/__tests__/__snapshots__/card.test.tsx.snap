@@ -1676,6 +1676,10 @@ exports[`Card renders media section if the media data is provided 1`] = `
   position: relative;
 }
 
+.emotion-1 svg {
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 479px) {
   .emotion-1 {
     margin-bottom: 16px;
@@ -1847,6 +1851,10 @@ exports[`Card renders media section with a custom component 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
+}
+
+.emotion-1 svg {
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 479px) {
@@ -2022,6 +2030,10 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   position: relative;
 }
 
+.emotion-1 svg {
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 479px) {
   .emotion-1 {
     margin-bottom: 16px;
@@ -2193,6 +2205,10 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   box-sizing: border-box;
   display: block;
   position: relative;
+}
+
+.emotion-1 svg {
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 479px) {
@@ -2369,6 +2385,10 @@ exports[`Card renders media section with overrides 1`] = `
   border-radius: 8px;
 }
 
+.emotion-1 svg {
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 479px) {
   .emotion-1 {
     margin-bottom: 16px;
@@ -2540,6 +2560,10 @@ exports[`Card renders with card items 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
+}
+
+.emotion-1 svg {
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 479px) {
@@ -3035,6 +3059,10 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
   position: relative;
 }
 
+.emotion-1 svg {
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 479px) {
   .emotion-1 {
     margin-bottom: 16px;
@@ -3243,6 +3271,10 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   flex: 1;
 }
 
+.emotion-1 svg {
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 479px) {
   .emotion-1 {
     margin-right: 16px;
@@ -3428,6 +3460,10 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   position: relative;
 }
 
+.emotion-1 svg {
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 479px) {
   .emotion-1 {
     margin-right: 16px;
@@ -3611,6 +3647,10 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+.emotion-1 svg {
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 479px) {
@@ -3801,6 +3841,10 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   flex: 1;
 }
 
+.emotion-1 svg {
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 479px) {
   .emotion-1 {
     margin-right: 16px;
@@ -3987,6 +4031,10 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
+}
+
+.emotion-1 svg {
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 479px) {
@@ -4177,6 +4225,10 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   flex: 1;
 }
 
+.emotion-1 svg {
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 479px) {
   .emotion-1 {
     margin-left: 16px;
@@ -4363,6 +4415,10 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+.emotion-1 svg {
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 479px) {
@@ -5012,6 +5068,10 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   display: block;
   position: relative;
   z-index: 2;
+}
+
+.emotion-1 svg {
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 479px) {
@@ -6348,6 +6408,10 @@ exports[`CardInset renders with card items 1`] = `
   display: block;
   position: relative;
   margin-bottom: 0;
+}
+
+.emotion-1 svg {
+  border-radius: 4px;
 }
 
 .emotion-2 {
