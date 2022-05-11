@@ -1,22 +1,10 @@
 /* eslint react/no-array-index-key: 0 */
 
 import * as React from 'react';
-import Document, {
-  Head,
-  Main,
-  NextScript,
-  Html,
-  DocumentContext,
-} from 'next/document';
+import Document, {Head, Main, NextScript, Html} from 'next/document';
 import {Consent, Global, css, Tealium} from 'newskit';
 import Helmet from 'react-helmet';
 import {HTMLMeta} from '../components/html-meta';
-
-interface Props {
-  production: boolean;
-  productionSiteEnv: boolean;
-  marco: string;
-}
 
 // Is added so relative paths work when we are on a sub dir e.g. s-3.com/ppdsc-123-foo/
 const baseHref =
@@ -25,14 +13,7 @@ const baseHref =
     : '/';
 
 const Base = () => <base href={baseHref} />;
-export default class MyDocument extends Document<Props> {
-  static async getStaticProps(ctx: DocumentContext) {
-    const {html} = await ctx.renderPage();
-    return {
-      html,
-    };
-  }
-
+export default class MyDocument extends Document {
   render() {
     const isEnvProduction = process.env.SITE_ENV === 'production';
     const helmet = Helmet.rewind();
@@ -251,8 +232,6 @@ export default class MyDocument extends Document<Props> {
               }
             `}
           />
-          {console.log(process.env.SITE_ENV, '🔥🔥🔥🔥🔥🔥🔥')}
-          {console.log(process.env.NODE_ENV, '✅✅✅✅✅✅✅✅')}
           <Tealium
             accountId="newsinternational"
             profileId="thetimes.newskit"
