@@ -134,7 +134,7 @@ export const MenuNavCollapsible = ({
   );
   return (
     <Menu
-      aria-label="menu"
+      aria-label="sidebar-secondary-navigation"
       vertical
       size="small"
       align="start"

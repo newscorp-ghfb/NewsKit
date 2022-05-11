@@ -227,7 +227,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                   // flexGrow={1}
                 >
                   {/* <Stack flow={Flow.HorizontalCenter}> */}
-                  <Menu aria-label="menu-header">
+                  <Menu aria-label="main-navigation">
                     {renderNavItems(navItems, path)}
                   </Menu>
                   {/* </Stack> */}
