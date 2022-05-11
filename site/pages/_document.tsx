@@ -16,7 +16,7 @@ const Base = () => <base href={baseHref} />;
 
 export default class MyDocument extends Document {
   render() {
-    const isEnvProduction = process.env.SITE_ENV === 'production';
+    const isSiteEnvProduction = process.env.SITE_ENV === 'production';
     const helmet = Helmet.rewind();
     return (
       <Html lang="en">
@@ -236,7 +236,7 @@ export default class MyDocument extends Document {
           <Tealium
             accountId="newsinternational"
             profileId="thetimes.newskit"
-            env={isEnvProduction ? 'prod' : 'dev'}
+            env={isSiteEnvProduction ? 'prod' : 'dev'}
           />
           <Main />
           <NextScript />
