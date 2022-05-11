@@ -1314,79 +1314,7 @@ export const StoryCardLogicalOverrides = () => (
       </Cell>
     </Grid>
     <Grid>
-      <Cell xs={12} sm={6}>
-        <StorybookHeading>
-          Card - logical padding overrides - teaserContainer
-        </StorybookHeading>
-        <StyledDiv>
-          <CardInset
-            media={{
-              src: '/placeholder-3x2.png',
-              alt: 'Card Media',
-            }}
-            actions={cardSmallTags}
-            overrides={{
-              teaserContainer: {
-                paddingBlock: {xs: 'space000'},
-                paddingInline: {xs: 'space000'},
-              },
-            }}
-            data-testid="card-logical-padding-teaser"
-          >
-            {cardSmallBody}
-          </CardInset>
-        </StyledDiv>
-      </Cell>
-      <Cell xs={12} sm={6}>
-        <StorybookHeading>
-          Card - logical padding overrides - actionContainer
-        </StorybookHeading>
-        <StyledDiv>
-          <CardInset
-            media={{
-              src: '/placeholder-3x2.png',
-              alt: 'Card Media',
-            }}
-            actions={cardSmallTags}
-            overrides={{
-              actionsContainer: {
-                paddingBlock: {xs: 'space000'},
-                paddingInline: {xs: 'space000'},
-              },
-            }}
-            data-testid="card-logical-padding-actions"
-          >
-            {cardInsetSmallBody}
-          </CardInset>
-        </StyledDiv>
-      </Cell>
-    </Grid>
-    <Grid>
-      <Cell xs={12} sm={6}>
-        <StorybookHeading>
-          Card - logical margin overrides - mediaContainer
-        </StorybookHeading>
-        <StyledDiv>
-          <Card
-            layout="vertical"
-            media={{
-              src: '/placeholder-3x2.png',
-              alt: 'Card Media',
-            }}
-            actions={cardSmallTags}
-            overrides={{
-              mediaContainer: {
-                marginBlock: {xs: 'space050'},
-                marginInline: {xs: 'space050'},
-              },
-            }}
-            data-testid="card-logical-margin-media"
-          >
-            {cardSmallBody}
-          </Card>
-        </StyledDiv>
-      </Cell>
-      <Cell xs={12} sm={6}>
+      <Cell xs={12} sm={4}>
         <StorybookHeading>
           Card - logical padding overrides - mediaContainer
         </StorybookHeading>
@@ -1404,9 +1332,55 @@ export const StoryCardLogicalOverrides = () => (
                 paddingInline: {xs: 'space050'},
               },
             }}
-            data-testid="card-logical-margin-media"
+            data-testid="card-logical-padding-media"
           >
             {cardSmallBody}
+          </Card>
+        </StyledDiv>
+      </Cell>
+      <Cell xs={12} sm={4}>
+        <StorybookHeading>
+          Card - logical padding overrides - teaserContainer
+        </StorybookHeading>
+        <StyledDiv>
+          <Card
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              teaserContainer: {
+                paddingBlock: {xs: 'space030'},
+                paddingInline: {xs: 'space030'},
+              },
+            }}
+            data-testid="card-logical-padding-teaser"
+          >
+            {cardSmallBody}
+          </Card>
+        </StyledDiv>
+      </Cell>
+      <Cell xs={12} sm={4}>
+        <StorybookHeading>
+          Card - logical padding overrides - actionContainer
+        </StorybookHeading>
+        <StyledDiv>
+          <Card
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              actionsContainer: {
+                paddingBlock: {xs: 'space030'},
+                paddingInline: {xs: 'space030'},
+              },
+            }}
+            data-testid="card-logical-padding-actions"
+          >
+            {cardInsetSmallBody}
           </Card>
         </StyledDiv>
       </Cell>

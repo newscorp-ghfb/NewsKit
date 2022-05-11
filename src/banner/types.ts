@@ -15,7 +15,7 @@ export interface BannerBaseProps extends React.AriaAttributes {
     stylePreset?: MQ<string>;
     minHeight?: MQ<string>;
     /**
-     * @deprecated This property is deprecated and will be removed in the next major release. Use `PaddingInline` & `PaddingBlock` instead.
+     * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingInline` & `paddingBlock` instead.
      */
     spaceInset?: MQ<string>;
     maxWidth?: MQ<string>;

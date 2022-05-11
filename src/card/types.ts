@@ -9,19 +9,19 @@ export interface CardOverridesProps extends LogicalProps {
   horizontalRatio?: string;
   mediaContainer?: {
     stylePreset?: MQ<string>;
-    spaceInline?: MQ<string>;
-  } & LogicalProps;
+    spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
+  } & LogicalPaddingProps;
   teaserContainer?: {
     stylePreset?: MQ<string>;
     /**
-     * @deprecated This property is deprecated and will be removed in the next major release. Use `PaddingInline` & `PaddingBlock` instead.
+     * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingInline` & `paddingBlock` instead.
      */
     spaceInset?: MQ<string>;
   } & LogicalPaddingProps;
   actionsContainer?: {
     stylePreset?: MQ<string>;
     /**
-     * @deprecated This property is deprecated and will be removed in the next major release. Use `PaddingInline` & `PaddingBlock` instead.
+     * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingInline` & `paddingBlock` instead.
      */
     spaceInset?: MQ<string>;
     minHeight?: string;

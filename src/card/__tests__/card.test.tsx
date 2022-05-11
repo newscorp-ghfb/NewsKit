@@ -365,7 +365,7 @@ describe('Card', () => {
           marginBlock: '30px',
           paddingBlock: '30px',
           mediaContainer: {
-            marginInline: {
+            paddingInline: {
               xs: '20px',
               sm: '20px',
               md: '30px',

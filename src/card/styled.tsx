@@ -65,7 +65,7 @@ export const StyledCardContainerMedia = styled.div<
       return {};
     },
   )}
-  // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
+
   ${handleResponsiveProp({layout: DEFAULT_PROPS.layout}, ({layout}, props) => {
     let marginDirection = 'marginBottom';
     if (isHorizontal(layout) && isReverse(layout)) {
@@ -81,7 +81,7 @@ export const StyledCardContainerMedia = styled.div<
       'spaceInline',
     )(props);
   })}
-  ${logicalProps('card.mediaContainer', 'mediaContainer')};
+  ${logicalPaddingProps('card.mediaContainer', 'mediaContainer')};
 
   ${({mediaInteractive}) => (mediaInteractive ? 'z-index: 2;' : null)}
   ${({hasHref, ...props}) =>

@@ -13,8 +13,10 @@ import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {LogicalProps} from '../utils/logical-properties';
 
+/**
+ * @deprecated ShareBarProps is deprecated and will be removed in the next major release.
+ */
 export interface ShareBarProps extends React.HTMLAttributes<HTMLElement> {
   label?: string;
   vertical?: boolean;
@@ -23,13 +25,13 @@ export interface ShareBarProps extends React.HTMLAttributes<HTMLElement> {
     label?: {
       typographyPreset?: MQ<string>;
       stylePreset?: MQ<string>;
-      spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
-      spaceInset?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
+      spaceInline?: MQ<string>;
+      spaceInset?: MQ<string>;
     };
     items?: {
-      spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
+      spaceInline?: MQ<string>;
     };
-  } & LogicalProps;
+  };
 }
 
 interface StyledShareBarContainerProps extends StackProps {
@@ -95,6 +97,9 @@ const ThemelessShareBar: React.FC<ShareBarProps> = ({
 
 ThemelessShareBar.displayName = 'ShareBar';
 
+/**
+ * @deprecated ShareBar is deprecated and will be removed in the next major release.
+ */
 export const ShareBar = withOwnTheme(ThemelessShareBar)({
   defaults,
 });

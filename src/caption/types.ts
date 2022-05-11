@@ -10,7 +10,7 @@ export interface CaptionProps {
     stylePreset?: MQ<string>;
     spaceStack?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
     /**
-     * @deprecated This property is deprecated and will be removed in the next major release. Use `PaddingInline` & `PaddingBlock` instead.
+     * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingInline` & `paddingBlock` instead.
      */
     spaceInset?: MQ<string>;
     credit?: {
