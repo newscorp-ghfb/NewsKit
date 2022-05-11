@@ -69,4 +69,16 @@ describe('CaptionInset', () => {
     });
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders correctly with logical props overrides ', () => {
+    const fragment = renderToFragmentWithTheme(CaptionInset, {
+      children: 'test',
+      creditText: 'this is credit text',
+      overrides: {
+        marginBlock: '30px',
+        paddingBlock: '30px',
+      },
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });

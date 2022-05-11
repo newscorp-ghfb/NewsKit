@@ -1770,6 +1770,71 @@ exports[`Fieldset should render with legend 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Fieldset should render with logical props overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+  min-inline-size: 0;
+  margin-inline: 30px;
+  padding-inline: 30px;
+}
+
+.emotion-1 {
+  display: table;
+  margin: 0;
+  padding: 0;
+  padding: 1px 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  margin-bottom: 12px;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<fieldset
+    class="emotion-0"
+  >
+    <legend
+      class="emotion-1"
+    >
+      Search Legend
+    </legend>
+    <label
+      for="search"
+    >
+      <input
+        id="search"
+        name="search"
+        type="text"
+      />
+      Search input:
+    </label>
+  </fieldset>
+</DocumentFragment>
+`;
+
 exports[`Fieldset should render with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
