@@ -8,10 +8,11 @@ import {
 } from 'newskit';
 
 const LogoWrapper = styled.div`
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   overflow: hidden;
-  ${getSpacingCssFromTheme('marginBottom', {lg: '16px'})};
+  ${getSpacingCssFromTheme('marginLeft', {lg: '24px'})};
+  //${getSpacingCssFromTheme('marginBottom', {lg: '16px'})};
 `;
 
 interface StyledLogoProps {

@@ -1,15 +1,10 @@
 import * as React from 'react';
 import {
-  Grid,
-  Cell,
   getMediaQueryFromTheme,
   getTypographyPresetFromTheme,
   styled,
   IconFilledMenu,
   Visible,
-  Stack,
-  StackDistribution,
-  Flow,
   getColorCssFromTheme,
   getSpacingCssFromTheme,
   getSizingCssFromTheme,
@@ -20,6 +15,8 @@ import {
   getBorderCssFromTheme,
   MenuItem,
   Menu,
+  GridLayout,
+  GridLayoutItem,
 } from 'newskit';
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
@@ -27,38 +24,26 @@ import {handleEnterKeyPress} from '../helpers/a11y';
 import routes from '../routes';
 import {Link} from './link';
 
-export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
-  href ? (
-    <Stack
-      flow="horizontal-center"
-      spaceInline="space040"
-      spaceStack="space000"
-    >
-      <Button
-        size={ButtonSize.Small}
-        overrides={{
-          typographyPreset: 'utilityButton010',
+export const GitHubButton: React.FC<{href?: string}> = () => (
+  <Button
+    size={ButtonSize.Small}
+    overrides={{
+      typographyPreset: 'utilityButton010',
+      stylePreset: 'buttonOutlinedSecondary',
+      minWidth: '130px',
+      height: '30px',
+    }}
+    href="https://github.com/newscorp-ghfb/newskit"
+    target="_blank"
+  >
+    <IconFilledGitHub />
+    View Github
+  </Button>
+);
 
-          stylePreset: 'buttonOutlinedSecondary',
-          minWidth: '130px',
-          height: '30px',
-        }}
-        href={href}
-        target="_blank"
-      >
-        <IconFilledGitHub />
-        View Github
-      </Button>
-    </Stack>
-  ) : null;
 const Header = styled.header`
   border-bottom-style: solid;
-  flex-shrink: 0;
-  flex-direction: row;
   position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   right: 0;
   left: 0;
   z-index: 4;
@@ -80,20 +65,10 @@ const Header = styled.header`
   }
 `;
 
-const StyledGrid = styled(Grid)`
-  position: sticky;
-`;
-
 const MobileMenu = styled.div`
   font-size: 0;
-  align-self: center;
-  ${getSpacingCssFromTheme('marginLeft', 'space020')};
-`;
-
-const StyledVisible = styled(Visible)`
-  height: 100%;
-  z-index: 1;
-  ${getSpacingCssFromTheme('marginLeft', 'space100')};
+  // align-self: center;
+  ${getSpacingCssFromTheme('marginLeft', 'space040')};
 `;
 
 interface HeaderProps {
@@ -112,28 +87,29 @@ type NavItemProps = {
 };
 
 const navItems = routes.map(({title, subNav}) => ({title, id: subNav[0].id}));
+const fullAudioPlayerAreasMobile = `
+logo menu . github theme 
 
+ `;
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
   ({handleSidebarClick, toggleTheme, themeMode, path, sidebarOpen}, ref) => {
     const renderMobileNavigation = (handleClick: () => void) => (
-      <Stack data-testid="logo-container" flow={Flow.HorizontalCenter}>
-        <MobileMenu
-          onClick={handleClick}
-          onKeyDown={handleEnterKeyPress(handleClick)}
-          tabIndex={0}
-          data-testid="mobile-menu-icon"
-        >
-          {sidebarOpen ? (
-            <IconFilledClose
-              overrides={{size: 'iconSize020', stylePreset: 'closeIcon'}}
-            />
-          ) : (
-            <IconFilledMenu
-              overrides={{size: 'iconSize020', stylePreset: 'inkContrast'}}
-            />
-          )}
-        </MobileMenu>
-      </Stack>
+      <MobileMenu
+        onClick={handleClick}
+        onKeyDown={handleEnterKeyPress(handleClick)}
+        tabIndex={0}
+        data-testid="mobile-menu-icon"
+      >
+        {sidebarOpen ? (
+          <IconFilledClose
+            overrides={{size: 'iconSize020', stylePreset: 'closeIcon'}}
+          />
+        ) : (
+          <IconFilledMenu
+            overrides={{size: 'iconSize020', stylePreset: 'inkContrast'}}
+          />
+        )}
+      </MobileMenu>
     );
 
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
@@ -146,6 +122,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           overrides={{
             stylePreset: 'linkTopNavigation',
             minHeight: '68px',
+            // marginInline: '40px',
           }}
         >
           {title}
@@ -154,74 +131,63 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
 
     return (
       <Header data-testid="header-navigation" ref={ref}>
-        <StyledGrid maxWidth="9999px">
-          <Cell xs={2}>
-            <Stack
-              flow={Flow.HorizontalCenter}
-              stackDistribution={StackDistribution.Start}
-            >
-              <Visible xs sm md>
-                {renderMobileNavigation(handleSidebarClick)}
-              </Visible>
+        <Visible xs sm md>
+          <GridLayout columns={{xs: 'repeat(3, auto)'}}>
+            <GridLayoutItem justifySelf="start" alignSelf="center">
+              {renderMobileNavigation(handleSidebarClick)}
+            </GridLayoutItem>
+            <GridLayoutItem justifySelf="center" alignSelf="center">
+              <Link
+                type="standalone"
+                href="/"
+                overrides={{stylePreset: 'inkBase'}}
+              >
+                <NewsKitLogo />
+              </Link>
+            </GridLayoutItem>
+          </GridLayout>
+        </Visible>
 
-              <Visible lg xl>
-                <Link
-                  type="standalone"
-                  href="/"
-                  overrides={{stylePreset: 'inkBase'}}
-                >
-                  <NewsKitLogo />
-                </Link>
-              </Visible>
-
-              <StyledVisible lg xl>
-                <Stack
-                  flow={Flow.HorizontalCenter}
-                  stackDistribution={StackDistribution.Start}
-                  // flexGrow={1}
-                >
-                  {/* <Stack flow={Flow.HorizontalCenter}> */}
+        <Visible lg xl>
+          <GridLayout
+            columns={{lg: 'repeat(5, auto)'}}
+            columnGap="20px"
+            //  alignItems="center"
+            areas={{
+              lg: fullAudioPlayerAreasMobile,
+            }}
+          >
+            {Areas => (
+              <>
+                <Areas.Logo alignSelf="center">
+                  <Link
+                    type="standalone"
+                    href="/"
+                    overrides={{stylePreset: 'inkBase'}}
+                  >
+                    <NewsKitLogo />
+                  </Link>
+                </Areas.Logo>
+                <Areas.Menu alignSelf="center" justifySelf="start">
                   <Menu aria-label="main-navigation">
                     {renderNavItems(navItems, path)}
                   </Menu>
-                  {/* </Stack> */}
-                </Stack>
-              </StyledVisible>
-            </Stack>
-          </Cell>
-          <Cell xs={8} lg={8} xsOrder={2}>
-            <Visible xs sm md>
-              <Stack
-                flow={Flow.HorizontalCenter}
-                stackDistribution={StackDistribution.SpaceAround}
-              >
-                <Link
-                  type="standalone"
-                  href="/"
-                  overrides={{stylePreset: 'inkBase'}}
-                >
-                  <NewsKitLogo />
-                </Link>
-              </Stack>
-            </Visible>
-          </Cell>
-          <Cell xs={2} lg={2} xsOrder={2} lgOrder={3}>
-            <Visible lg xl>
-              <Stack
-                flow={Flow.HorizontalCenter}
-                stackDistribution={StackDistribution.End}
-                spaceInline="space045"
-              >
-                <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
-                <ThemeSwitch
-                  size={ButtonSize.Medium}
-                  toggle={toggleTheme}
-                  themeMode={themeMode}
-                />
-              </Stack>
-            </Visible>
-          </Cell>
-        </StyledGrid>
+                </Areas.Menu>
+                {/* should I add these into one area? */}
+                <Areas.Github alignSelf="center" justifySelf="end">
+                  <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
+                </Areas.Github>
+                <Areas.Theme alignSelf="center" justifySelf="start">
+                  <ThemeSwitch
+                    size={ButtonSize.Medium}
+                    toggle={toggleTheme}
+                    themeMode={themeMode}
+                  />
+                </Areas.Theme>
+              </>
+            )}
+          </GridLayout>
+        </Visible>
       </Header>
     );
   },

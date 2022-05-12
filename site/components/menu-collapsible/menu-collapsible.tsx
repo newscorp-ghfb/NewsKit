@@ -13,7 +13,6 @@ import {
   MenuItem,
   Stack,
   styled,
-  TextBlock,
 } from 'newskit';
 import {IconExpandLess, IconExpandMore} from '../icons';
 import {MenuCollapsible} from './styled';
@@ -87,15 +86,16 @@ export const MenuNavCollapsible = ({
                     minHeight: '40px',
                     stylePreset: 'sideBarNavigation',
                     typographyPreset: 'utilityButton020',
+                    paddingInline: 'space060',
                   }}
                   size="small"
                 >
-                  <TextBlock
+                  {/* <TextBlock
                     typographyPreset="utilityButton020"
-                    marginInline="space040"
-                  >
-                    {title}
-                  </TextBlock>
+                    paddingInline="space030"
+                  > */}
+                  {title}
+                  {/* </TextBlock> */}
                 </MenuItemStyled>
               </>
             ) : (
