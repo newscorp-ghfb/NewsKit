@@ -489,14 +489,14 @@ export default [
               'A low-level foundational component used to layout items in a horizontal or vertical stack.',
             illustration: 'components/stack-illustration',
           },
-          // {
-          //   title: 'Structured List',
-          //   page: true,
-          //   id: '/components/structured-list',
-          //   description:
-          //     'Structured lists group content that is similar or related.',
-          //   illustration: 'components/standfirst-illustration',
-          // },
+          {
+            title: 'Structured List',
+            page: true,
+            id: '/components/structured-list',
+            description:
+              'Structured lists group content that is similar or related.',
+            illustration: 'components/standfirst-illustration',
+          },
           {
             title: 'Visibility',
             page: true,
