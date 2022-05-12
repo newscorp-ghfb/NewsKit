@@ -490,6 +490,14 @@ export default [
             illustration: 'components/stack-illustration',
           },
           {
+            title: 'Structured List',
+            page: true,
+            id: '/components/structured-list',
+            description:
+              'Structured lists group content that is similar or related.',
+            illustration: 'components/standfirst-illustration',
+          },
+          {
             title: 'Visibility',
             page: true,
             id: '/components/visibility',
