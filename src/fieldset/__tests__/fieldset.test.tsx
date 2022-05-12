@@ -141,4 +141,22 @@ describe('Fieldset', () => {
       expect(fragment).toMatchSnapshot();
     });
   });
+  test('should render with logical props overrides', () => {
+    const props: FieldsetProps = {
+      legend: 'Search Legend',
+      children: [
+        <label key="1" htmlFor="search">
+          <input type="text" id="search" name="search" />
+          Search input:
+        </label>,
+      ],
+      overrides: {
+        paddingInline: '30px',
+        marginInline: '30px',
+      },
+    };
+
+    const fragment = renderToFragmentWithTheme(Fieldset, props);
+    expect(fragment).toMatchSnapshot();
+  });
 });

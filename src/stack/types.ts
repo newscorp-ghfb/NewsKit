@@ -5,8 +5,8 @@ import {LogicalProps} from '../utils/logical-properties';
 export type FlexWrap = boolean | 'wrap' | 'nowrap' | 'wrap-reverse';
 
 export interface CommonStackPropsWithoutMQ {
-  spaceStack: string; // Note: LogicalProps can not replace spaceStack! spaceStack = Stack's gap
-  spaceInline: string; // Note: LogicalProps can not replace spaceInline! spaceInline = Stack's gap
+  spaceStack: string; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
+  spaceInline: string; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
   flexGrow: boolean | number;
   flexShrink: boolean | number;
   flowReverse: boolean;

@@ -103,7 +103,7 @@ export const StoryCaptionLogicalOverrides = () => (
       </Caption>
     </StyledDiv>
     <StyledDiv>
-      <CaptionInset
+      <Caption
         overrides={{
           marginBlockEnd: 'space050',
           spaceStack: 'space030',
@@ -114,7 +114,7 @@ export const StoryCaptionLogicalOverrides = () => (
         creditText="Credit text"
       >
         CaptionInset with overrides and both caption and credit text
-      </CaptionInset>
+      </Caption>
     </StyledDiv>
   </Container>
 );

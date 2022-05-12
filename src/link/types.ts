@@ -14,7 +14,7 @@ interface LinkOverrides extends LogicalProps {
   stylePreset?: MQ<string>;
   transitionPreset?: TransitionToken | TransitionToken[];
   typographyPreset?: MQ<string>;
-  spaceInline?: MQ<string>; // Note: LogicalProps can not replace spaceInline! spaceInline = Stack's gap
+  spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
   externalIcon?: {
     size?: string;
   };

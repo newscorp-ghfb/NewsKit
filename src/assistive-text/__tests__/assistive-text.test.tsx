@@ -45,4 +45,13 @@ describe('Assistive Text', () => {
     const fragment = renderToFragmentWithTheme(AssistiveText, props);
     expect(fragment).toMatchSnapshot();
   });
+  test('should render logical props overrides', () => {
+    const props: AssistiveTextProps = {
+      children: 'Assistive Text',
+      overrides: {paddingBlock: '30px', marginBlock: '30px'},
+    };
+
+    const fragment = renderToFragmentWithTheme(AssistiveText, props);
+    expect(fragment).toMatchSnapshot();
+  });
 });
