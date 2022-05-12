@@ -132,29 +132,6 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         ] as any,
       },
     }}
-    anatomy={{
-      introduction: 'Structure Lists contain three required elements.',
-      rows: [
-        {
-          name: 'StructuredList',
-          description: 'Includes a list of structuredListItem',
-          component: ['Grid, Cell'],
-          optional: undefined,
-        },
-        {
-          name: 'structuredListItem',
-          description: 'Includes a list of structuredListCell',
-          component: ['Grid, Cell'],
-          optional: undefined,
-        },
-        {
-          name: 'structuredListCell',
-          description: 'Includes content within the cells',
-          component: 'Cell',
-          optional: undefined,
-        },
-      ],
-    }}
     states={{
       introduction:
         'When a structured list is interactive, it has states including, base, hover, active, disabled, and focus.',
