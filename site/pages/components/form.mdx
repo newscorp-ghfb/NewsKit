@@ -5,6 +5,7 @@ import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {CodeFromFile} from '../../components/code';
 import {Form, TextInput, Block, Button, styled, EmailInput} from 'newskit';
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
 export default Layout;
 
@@ -82,6 +83,7 @@ The Form component also supports schema validation. To use an external validatio
     The resolver will validate your input data against the schema and return
     with either errors or a valid result.
   </Prop>
+  <CommonLogicalPropsMDX nested={false}/>
 </LegacyBlock>
 
 <Playground

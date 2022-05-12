@@ -5,6 +5,8 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {Mono} from '../../components/flags';
+import {OverridesRowsProps} from '../../components/component-api';
+import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 
 const DividerComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -163,6 +165,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the style preset applied to the Divider. The style preset can modify the borderStyle, borderColor and borderWidth.',
             },
+            ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
         },
       ],

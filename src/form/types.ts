@@ -15,7 +15,9 @@ export interface FormError extends Object {
   ref: React.RefObject<HTMLInputElement>;
 }
 
-export interface FormProps extends React.HtmlHTMLAttributes<HTMLFormElement> {
+export interface FormProps
+  extends React.HtmlHTMLAttributes<HTMLFormElement>,
+    LogicalProps {
   children: React.ReactNode;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   onSubmit: SubmitHandler<Record<string, any>>;
