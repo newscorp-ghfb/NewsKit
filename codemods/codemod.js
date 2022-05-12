@@ -51,14 +51,13 @@ var start = function () {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    transformPath = path.join(__dirname, 'rename-override.js');
-                    files = ['../site/pages/index.tsx'];
+                    transformPath = path.join(__dirname, 'transforms/rename-defaults.js');
+                    files = ['../site/theme/component-defaults.ts'];
                     filesFullPath = files.map(function (filePath) { return path.join(__dirname, filePath); });
                     options = {
                         //dry: true,
                         //print: true,
                         verbose: 1,
-                        // ...
                         parser: 'tsx'
                     };
                     filesExpanded = expandFilePathsIfNeeded(filesFullPath);

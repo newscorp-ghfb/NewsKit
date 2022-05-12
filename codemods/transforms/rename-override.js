@@ -4,7 +4,7 @@ function renameOverrides({root, componentName, overrides}) {
       if (node.type === 'JSXAttribute' && node.name.name === 'overrides') {
         node.value.expression.properties.forEach(child => {
           if (overrides[child.key.name]) {
-            if (typeof overrides[ov.key.name] === 'string') {
+            if (typeof overrides[child.key.name] === 'string') {
               child.key.name = overrides[child.key.name];
             }
             if (typeof overrides[child.key.name] === 'object') {
