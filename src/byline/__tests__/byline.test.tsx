@@ -194,4 +194,32 @@ describe('Byline', () => {
 
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders correctly with logical props overrides', () => {
+    const props: BylineProps = {
+      overrides: {
+        marginBlock: '30px',
+        paddingBlock: '30px',
+      },
+      bylineData: [
+        {
+          key: 1,
+          author: 'Jane Smith',
+          title: 'Author',
+          location: 'London',
+          href: 'www.example.com',
+        },
+        {
+          key: 2,
+          author: 'John Smith',
+          title: 'Other Author',
+          location: 'London',
+          href: 'www.example.com',
+        },
+      ],
+    };
+    const fragment = renderToFragmentWithTheme(Byline, props) as any;
+
+    expect(fragment).toMatchSnapshot();
+  });
 });

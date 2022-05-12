@@ -14,6 +14,9 @@ import {getToken} from '../utils/get-token';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
 
+/**
+ * @deprecated ShareBarProps is deprecated and will be removed in the next major release.
+ */
 export interface ShareBarProps extends React.HTMLAttributes<HTMLElement> {
   label?: string;
   vertical?: boolean;
@@ -94,6 +97,9 @@ const ThemelessShareBar: React.FC<ShareBarProps> = ({
 
 ThemelessShareBar.displayName = 'ShareBar';
 
+/**
+ * @deprecated ShareBar is deprecated and will be removed in the next major release.
+ */
 export const ShareBar = withOwnTheme(ThemelessShareBar)({
   defaults,
 });

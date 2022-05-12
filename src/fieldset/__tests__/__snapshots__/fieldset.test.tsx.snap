@@ -187,9 +187,9 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0.7;
-  background-color: transparent;
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 64px;
   height: 64px;
   -webkit-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
@@ -198,32 +198,48 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
 }
 
-.emotion-6:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-6:disabled {
+  opacity: 0;
 }
 
-.emotion-6:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-6:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-6:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-6:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
 }
 
 .emotion-6:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
+  background-color: #D20600;
+  opacity: 0.2;
 }
 
-.emotion-6:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
+.emotion-6:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
 }
 
-.emotion-6:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
-.emotion-6:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-6:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-7 {
@@ -650,9 +666,9 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0.7;
-  background-color: transparent;
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 48px;
   height: 48px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -661,32 +677,48 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-6:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-6:disabled {
+  opacity: 0;
 }
 
-.emotion-6:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-6:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-6:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-6:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
 }
 
 .emotion-6:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
+  background-color: #D20600;
+  opacity: 0.2;
 }
 
-.emotion-6:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
+.emotion-6:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
 }
 
-.emotion-6:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
-.emotion-6:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-6:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-7 {
@@ -1113,9 +1145,9 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0.7;
-  background-color: transparent;
+  background-color: #3358CC;
   border-radius: 50%;
+  opacity: 0;
   width: 40px;
   height: 40px;
   -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
@@ -1124,32 +1156,48 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
-.emotion-6:valid:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-6:disabled {
+  opacity: 0;
 }
 
-.emotion-6:valid:focus:hover:not(:disabled) {
-  background-color: #E6FAEB;
+.emotion-6:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-6:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-6:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
 }
 
 .emotion-6:invalid:hover:not(:disabled) {
-  background-color: #FFE6E5;
+  background-color: #D20600;
+  opacity: 0.2;
 }
 
-.emotion-6:invalid:focus:hover:not(:disabled) {
-  background-color: #FFE6E5;
+.emotion-6:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
 }
 
-.emotion-6:focus:not(:disabled) {
-  background-color: #E0E7FF;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
-.emotion-6:valid:focus:not(:disabled) {
-  background-color: #E6FAEB;
-}
-
-.emotion-6:invalid:focus:not(:disabled) {
-  background-color: #FFE6E5;
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-7 {
@@ -1667,6 +1715,71 @@ exports[`Fieldset should render with legend 1`] = `
   margin: 0;
   min-width: 0;
   min-inline-size: 0;
+}
+
+.emotion-1 {
+  display: table;
+  margin: 0;
+  padding: 0;
+  padding: 1px 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  margin-bottom: 12px;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<fieldset
+    class="emotion-0"
+  >
+    <legend
+      class="emotion-1"
+    >
+      Search Legend
+    </legend>
+    <label
+      for="search"
+    >
+      <input
+        id="search"
+        name="search"
+        type="text"
+      />
+      Search input:
+    </label>
+  </fieldset>
+</DocumentFragment>
+`;
+
+exports[`Fieldset should render with logical props overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+  min-inline-size: 0;
+  margin-inline: 30px;
+  padding-inline: 30px;
 }
 
 .emotion-1 {

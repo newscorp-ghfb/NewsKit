@@ -177,6 +177,9 @@ export const StorySlider1And2Thumbs = () => (
     <ContainerWithBorder>
       <StatefulSlider values={[50]} max={100} min={0} />
     </ContainerWithBorder>
+    <ContainerWithBorder>
+      <StatefulSlider disabled values={[50]} max={100} min={0} />
+    </ContainerWithBorder>
     <StorybookHeading>2 thumb slider</StorybookHeading>
     <ContainerWithBorder>
       <StatefulSlider values={[30, 60]} max={100} min={0} />

@@ -21,6 +21,7 @@ export interface GetStylePresetFromThemeOptions {
   isValid?: boolean;
   isFocused?: boolean;
   isHovered?: boolean;
+  isActive?: boolean;
   isSvg?: boolean;
   omitStates?: StylePresetStates[];
   filterStates?: StylePresetStates[];
@@ -28,9 +29,9 @@ export interface GetStylePresetFromThemeOptions {
   filterStyles?: StylePresetStyleKeys[];
 }
 
-/* When we are not on directly on a svg we need to add an 
+/* When we are not on directly on a svg we need to add an
   additional css selector to increase the specificity, allowing
-  us to overrule the default color. Icon button is an example 
+  us to overrule the default color. Icon button is an example
   of this in action */
 const getCssSvgFillObject = (iconColor: string, isSvg: boolean): object =>
   isSvg
@@ -83,6 +84,7 @@ const getPresetStates = (
     isValid = false,
     isFocused = false,
     isHovered = false,
+    isActive = false,
   } = options || {};
   const {selected, loading, invalid, valid, ...presetStates} =
     filterStates && filterStates.length
@@ -93,6 +95,7 @@ const getPresetStates = (
     (isLoading && loading) ||
     (isFocused && presetStates.focus) ||
     (isHovered && presetStates.hover) ||
+    (isActive && presetStates.active) ||
     (isSelected && selected) ||
     (isChecked && presetStates.checked) ||
     (isInvalid && invalid) ||
@@ -123,6 +126,9 @@ const getPresetStates = (
   }
   if (isHovered) {
     forcedStates.push('hover');
+  }
+  if (isActive) {
+    forcedStates.push('active');
   }
 
   if (stateOverrides) {

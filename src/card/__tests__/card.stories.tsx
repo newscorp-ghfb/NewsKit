@@ -20,7 +20,9 @@ const ContainerWithBackground = styled.div<{colorToken?: string}>`
   ${({colorToken = 'white', ...props}) =>
     getColorCssFromTheme('background', colorToken)(props)};
 `;
-
+const StyledDiv = styled.div`
+  border: 1px red dotted;
+`;
 // Spacing
 const cardLabel = 'space040';
 const cardTeaserHeadline = {
@@ -1261,6 +1263,131 @@ export const StoryCardWithResponsiveLayout = () => (
   </Card>
 );
 StoryCardWithResponsiveLayout.storyName = 'card-with-responsive-layout';
+
+export const StoryCardLogicalOverrides = () => (
+  <>
+    <StorybookHeading>
+      Card - logical margin & padding overrides - root level
+    </StorybookHeading>
+    <Grid>
+      <Cell xs={12} sm={6}>
+        <StorybookSubHeading>
+          Card - logical margin overrides
+        </StorybookSubHeading>
+        <StyledDiv>
+          <Card
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              marginBlock: 'space050',
+              marginInline: 'space050',
+            }}
+            data-testid="card-logical-margin"
+          >
+            {cardSmallBody}
+          </Card>
+        </StyledDiv>
+      </Cell>
+      <Cell xs={12} sm={6}>
+        <StorybookSubHeading>
+          Card - logical padding overrides
+        </StorybookSubHeading>
+        <StyledDiv>
+          <Card
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              paddingBlock: 'space050',
+              paddingInline: 'space050',
+            }}
+            data-testid="card-logical-padding"
+          >
+            {cardSmallBody}
+          </Card>
+        </StyledDiv>
+      </Cell>
+    </Grid>
+    <Grid>
+      <Cell xs={12} sm={4}>
+        <StorybookHeading>
+          Card - logical padding overrides - mediaContainer
+        </StorybookHeading>
+        <StyledDiv>
+          <Card
+            layout="vertical"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              mediaContainer: {
+                paddingBlock: {xs: 'space050'},
+                paddingInline: {xs: 'space050'},
+              },
+            }}
+            data-testid="card-logical-padding-media"
+          >
+            {cardSmallBody}
+          </Card>
+        </StyledDiv>
+      </Cell>
+      <Cell xs={12} sm={4}>
+        <StorybookHeading>
+          Card - logical padding overrides - teaserContainer
+        </StorybookHeading>
+        <StyledDiv>
+          <Card
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              teaserContainer: {
+                paddingBlock: {xs: 'space030'},
+                paddingInline: {xs: 'space030'},
+              },
+            }}
+            data-testid="card-logical-padding-teaser"
+          >
+            {cardSmallBody}
+          </Card>
+        </StyledDiv>
+      </Cell>
+      <Cell xs={12} sm={4}>
+        <StorybookHeading>
+          Card - logical padding overrides - actionContainer
+        </StorybookHeading>
+        <StyledDiv>
+          <Card
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              actionsContainer: {
+                paddingBlock: {xs: 'space030'},
+                paddingInline: {xs: 'space030'},
+              },
+            }}
+            data-testid="card-logical-padding-actions"
+          >
+            {cardInsetSmallBody}
+          </Card>
+        </StyledDiv>
+      </Cell>
+    </Grid>
+  </>
+);
+StoryCardLogicalOverrides.storyName = 'card-logical-overrides';
 
 export const StoryCardSlices = () => (
   <>

@@ -6,6 +6,7 @@ import {useTheme} from '../theme';
 import {TextBlock} from '../text-block';
 import {withOwnTheme} from '../utils/with-own-theme';
 import defaults from './defaults';
+import {extractLogicalPropsFromOverrides} from '../utils/logical-properties';
 
 const ThemelessCaption: React.FC<CaptionProps> = ({
   overrides,
@@ -13,7 +14,7 @@ const ThemelessCaption: React.FC<CaptionProps> = ({
   creditText,
 }) => {
   const theme = useTheme();
-  const captionSpaceStack =
+  const captionGap =
     creditText && getToken({theme, overrides}, 'caption', '', 'spaceStack');
 
   const captionStylePreset = getToken(
@@ -49,16 +50,18 @@ const ThemelessCaption: React.FC<CaptionProps> = ({
     '',
     'spaceInset',
   );
+
+  const logicalProps = extractLogicalPropsFromOverrides(overrides);
+
   return (
-    <Block spaceInset={captionInset}>
-      <Block spaceStack={captionSpaceStack}>
-        <TextBlock
-          stylePreset={captionStylePreset}
-          typographyPreset={captionTypographyPreset}
-        >
-          {children}
-        </TextBlock>
-      </Block>
+    <Block spaceInset={captionInset} {...logicalProps}>
+      <TextBlock
+        stylePreset={captionStylePreset}
+        typographyPreset={captionTypographyPreset}
+        marginBlockEnd={captionGap}
+      >
+        {children}
+      </TextBlock>
       {creditText && (
         <TextBlock
           stylePreset={creditStylePreset}
@@ -71,6 +74,7 @@ const ThemelessCaption: React.FC<CaptionProps> = ({
   );
 };
 
+// Caption will be rebuilt in https://nidigitalsolutions.jira.com/browse/PPDSC-2091
 export const Caption = withOwnTheme(ThemelessCaption)({
   defaults,
 });

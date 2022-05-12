@@ -289,7 +289,7 @@ export default [
             id: '/components/button',
             description:
               'Allows users to take actions, and make choices, with a single tap.',
-            illustration: 'components/button-illustration',
+            illustration: 'components/button/hero',
           },
           {
             title: 'Checkbox',
@@ -308,6 +308,22 @@ export default [
             illustration: 'components/form/hero',
           },
           {
+            title: 'Radio Button',
+            page: true,
+            id: '/components/radio-button',
+            description:
+              'Radio Buttons are selection controls that are typically used in forms',
+            illustration: 'components/radio-button/hero',
+          },
+          {
+            title: 'Select',
+            page: true,
+            id: '/components/select',
+            description:
+              'Select components allow users to select one option from a list.',
+            illustration: 'components/select/select-illustration',
+          },
+          {
             title: 'Share Bar',
             page: true,
             id: '/components/share-bar',
@@ -324,27 +340,19 @@ export default [
             illustration: 'components/slider-illustration',
           },
           {
+            title: 'Text Field',
+            page: true,
+            id: '/components/text-field',
+            description:
+              'Text Fields allow users to enter and edit text content into a UI. They typically appear in forms.',
+            illustration: 'components/text-field/hero',
+          },
+          {
             title: 'Text Input',
             page: true,
             id: '/components/text-input',
             description: 'Lets users enter and edit text.',
             illustration: 'components/text-input-illustration',
-          },
-          {
-            title: 'Select',
-            page: true,
-            id: '/components/select',
-            description:
-              'Select components allow users to select one option from a list.',
-            illustration: 'components/select/select-illustration',
-          },
-          {
-            title: 'Radio Button',
-            page: true,
-            id: '/components/radio-button',
-            description:
-              'Radio Buttons are selection controls that are typically used in forms',
-            illustration: 'components/radio-button/radio-button-illustration',
           },
         ],
       },
@@ -442,6 +450,14 @@ export default [
             illustration: 'components/drawer/drawer-illustration',
           },
           {
+            title: 'Fieldset',
+            page: true,
+            id: '/components/fieldset',
+            description:
+              'The Fieldset is used to provide contextual information around a group of form controls in a web form.',
+            illustration: 'components/fieldset/hero',
+          },
+          {
             title: 'Grid',
             page: true,
             id: '/components/grid',
@@ -472,6 +488,14 @@ export default [
             description:
               'A low-level foundational component used to layout items in a horizontal or vertical stack.',
             illustration: 'components/stack-illustration',
+          },
+          {
+            title: 'Structured List',
+            page: true,
+            id: '/components/structured-list',
+            description:
+              'Structured lists group content that is similar or related.',
+            illustration: 'components/standfirst-illustration',
           },
           {
             title: 'Visibility',

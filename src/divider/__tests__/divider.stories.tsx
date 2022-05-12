@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
 import {ThemeProvider} from '@emotion/react';
-import {Divider} from '..';
+import {Divider, DividerProps} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -28,8 +28,11 @@ const BlockWithBorder = styled(Block)`
   border: 1px solid salmon;
 `;
 
-const BlockForHorizontalDivider = styled(Block)`
-  ${getSizingCssFromTheme('width', 'iconSize040')};
+const BlockForDivider = styled(Block)<Pick<DividerProps, 'vertical'>>`
+  ${({vertical}) =>
+    vertical
+      ? getSizingCssFromTheme('height', 'iconSize050')
+      : getSizingCssFromTheme('width', 'iconSize040')};
   border: 1px solid salmon;
 `;
 
@@ -80,7 +83,7 @@ export const StoryHorizontal = () => (
     <Divider />
     <br />
     <StorybookSubHeading>in vertical block</StorybookSubHeading>
-    <BlockForHorizontalDivider>
+    <BlockForDivider>
       <IconContainer spaceStack="space020">
         <IconFilledFacebook overrides={{size: 'iconSize040'}} />
       </IconContainer>
@@ -90,7 +93,7 @@ export const StoryHorizontal = () => (
       <IconContainer>
         <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
       </IconContainer>
-    </BlockForHorizontalDivider>
+    </BlockForDivider>
     <br />
     <StorybookSubHeading>in vertical stack without spacing</StorybookSubHeading>
     <BlockWithBorder>
@@ -195,3 +198,32 @@ export const StoryResponsive = () => (
   </>
 );
 StoryResponsive.storyName = 'responsive';
+
+export const StoryLogicalPropsOverrides = () => (
+  <>
+    <StorybookHeading>Divider - Logical Props</StorybookHeading>
+    <StorybookSubHeading>Logical padding</StorybookSubHeading>
+    <BlockForDivider vertical>
+      <IconFilledFacebook overrides={{size: 'iconSize040'}} />
+      <Divider vertical overrides={{paddingInline: 'space030'}} />
+      <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
+    </BlockForDivider>
+    <BlockForDivider>
+      <IconFilledFacebook overrides={{size: 'iconSize040'}} />
+      <Divider overrides={{paddingBlock: 'space030'}} />
+      <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
+    </BlockForDivider>
+    <StorybookSubHeading>Logical margin</StorybookSubHeading>
+    <BlockForDivider vertical>
+      <IconFilledFacebook overrides={{size: 'iconSize040'}} />
+      <Divider vertical overrides={{marginInline: 'space030'}} />
+      <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
+    </BlockForDivider>
+    <BlockForDivider>
+      <IconFilledFacebook overrides={{size: 'iconSize040'}} />
+      <Divider overrides={{marginBlock: 'space030'}} />
+      <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
+    </BlockForDivider>
+  </>
+);
+StoryLogicalPropsOverrides.storyName = 'logical-props-overrides';

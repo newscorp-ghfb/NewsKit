@@ -16,6 +16,7 @@ import {CardVerticalMediumWithoutInset} from '../../demo-components/card/card-ve
 import {CardVerticalSmallWithInset} from '../../demo-components/card/card-vertical-small-with-inset';
 import {CardHorizontalMediumWithoutInset} from '../../demo-components/card/card-horizontal-medium-without-inset';
 import {InlineCode} from '../../components/markdown-elements';
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
 export default Layout;
 
@@ -107,13 +108,57 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
       <Prop name="spaceInline" type="MQ<SpacingPresetKeys>">
         If provided, this overrides the space between the media container and the container that holds the content and actions area.
       </Prop>
+      <Prop name="paddingInline" type="MQ<string>">
+        It can take one space token to specify the logical inline start and end
+        padding of the container. This space token can also be used on
+        breakpoints.
+      </Prop>
+      <Prop name="paddingInlineStart" type="MQ<string>">
+        It can take one space token to specify the logical inline start padding of
+        the container. This space token can also be used on breakpoints.
+      </Prop>
+      <Prop name="paddingInlineEnd" type="MQ<string>">
+        It can take one space token to specify the logical inline end padding of
+        the container. This space token can also be used on breakpoints.
+      </Prop>
+      <Prop name="paddingBlock" type="MQ<string>">
+        It can take one space token to specify the logical block start and end
+        padding of the container. This space token can also be used on
+        breakpoints.
+      </Prop>
+      <Prop name="paddingBlockStart" type="MQ<string>">
+        It can take one space token to specify the logical block start padding of
+        the container. This space token can also be used on breakpoints.
+      </Prop>
+      <Prop name="paddingBlockEnd" type="MQ<string>">
+        It can take one space token to specify the logical block end padding of
+        the container. This space token can also be used on breakpoints.
+      </Prop>
     </Prop>
     <Prop name="teaserContainer" type="object">
       <Prop name="stylePreset" type="MQ<string>" >
         If provided, this overrides the style preset applied to the teaser container.
       </Prop>
       <Prop name="spaceInset" type="MQ<string>">
-        If provided, applies padding to the teaser container.
+        This property is deprecated. Use the below logical padding props instead. If provided, applies padding to the teaser container.
+      </Prop>
+      <Prop name="paddingInline" type="MQ<string>">
+      It can take one space token to specify the logical inline start and end padding of the container. This space token can also be used on breakpoints.
+      </Prop>
+      <Prop name="paddingInlineStart" type="MQ<string>">
+        It can take one space token to specify the logical inline start padding of the container. This space token can also be used on breakpoints.
+      </Prop>
+      <Prop name="paddingInlineEnd" type="MQ<string>">
+        It can take one space token to specify the logical inline end padding of the container. This space token can also be used on breakpoints.
+      </Prop>
+      <Prop name="paddingBlock" type="MQ<string>">
+        It can take one space token to specify the logical block start and end padding of the container. This space token can also be used on breakpoints.
+      </Prop>
+      <Prop name="paddingBlockStart" type="MQ<string>">
+        It can take one space token to specify the logical block start padding of the container. This space token can also be used on breakpoints.
+      </Prop>
+      <Prop name="paddingBlockEnd" type="MQ<string>">
+        It can take one space token to specify the logical block end padding of the container. This space token can also be used on breakpoints.
       </Prop>
     </Prop>
     <Prop name="actionsContainer" type="object">
@@ -125,9 +170,28 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
         token from the theme, or any CSS length value.
       </Prop>
       <Prop name="spaceInset" type="MQ<string>">
-        If provided, applies padding to the actions container.
+        This property is deprecated. Use the below logical padding props instead. If provided, applies padding to the actions container.
+      </Prop>
+      <Prop name="paddingInline" type="MQ<string>">
+      It can take one space token to specify the logical inline start and end padding of the container. This space token can also be used on breakpoints.
+      </Prop>
+      <Prop name="paddingInlineStart" type="MQ<string>">
+        It can take one space token to specify the logical inline start padding of the container. This space token can also be used on breakpoints.
+      </Prop>
+      <Prop name="paddingInlineEnd" type="MQ<string>">
+        It can take one space token to specify the logical inline end padding of the container. This space token can also be used on breakpoints.
+      </Prop>
+      <Prop name="paddingBlock" type="MQ<string>">
+        It can take one space token to specify the logical block start and end padding of the container. This space token can also be used on breakpoints.
+      </Prop>
+      <Prop name="paddingBlockStart" type="MQ<string>">
+        It can take one space token to specify the logical block start padding of the container. This space token can also be used on breakpoints.
+      </Prop>
+      <Prop name="paddingBlockEnd" type="MQ<string>">
+        It can take one space token to specify the logical block end padding of the container. This space token can also be used on breakpoints.
       </Prop>
     </Prop>
+    <CommonLogicalPropsMDX/>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName='card'/>
     <br/>

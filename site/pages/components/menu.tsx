@@ -674,13 +674,13 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               description: `If provided, will render the Menu item as a link.`,
             },
             {
-              name: 'eventOriginatorstring',
+              name: 'eventOriginator',
               type: 'string',
               description: `This prop allows users to add event originator custom name.`,
             },
             {
               name: 'eventContext',
-              type: 'string',
+              type: 'object',
               description: `This prop allows users to add extra event data to click events.`,
             },
             {

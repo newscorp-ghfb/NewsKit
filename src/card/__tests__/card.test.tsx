@@ -356,6 +356,34 @@ describe('Card', () => {
     });
     expect(fragment).toMatchSnapshot();
   });
+  test('renders card with logical props overrides', () => {
+    const fragment = renderToFragmentWithTheme(
+      Card,
+      {
+        children: cardBody,
+        overrides: {
+          marginBlock: '30px',
+          paddingBlock: '30px',
+          mediaContainer: {
+            paddingInline: {
+              xs: '20px',
+              sm: '20px',
+              md: '30px',
+              lg: '30px',
+            },
+          },
+          teaserContainer: {
+            paddingInline: '30px',
+          },
+          actionsContainer: {
+            paddingInline: '30px',
+          },
+        },
+      },
+      myCustomCardTheme,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
 });
 
 describe('Card with horizontal layout', () => {

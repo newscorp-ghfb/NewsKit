@@ -13,6 +13,8 @@ import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
+import {OverridesRowsProps} from '../../components/component-api';
+import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 
 const PlaygroundContainer = styled.div`
   display: flex;
@@ -32,12 +34,12 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Actions & Inputs',
-      name: 'Share Bar',
+      name: 'Share Bar (deprecated)',
       hero: {
         illustration: 'components/share-bar/share-bar-illustration',
       },
       introduction:
-        'The Share Bar component allows users to share hyperlinks of content across their various social media and communication channels. It is usually embedded within article pages in order to increase the reach of a story.',
+        'The Share Bar component allows users to share hyperlinks of content across their various social media and communication channels. It is usually embedded within article pages in order to increase the reach of a story. The Share Bar component is now deprecated and will be removed in the next major release.',
     }}
     componentDefaultsKey="shareBar"
     meta={{
@@ -300,6 +302,7 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
               default: 'space020',
               description: 'If provided, this sets the space between the items',
             },
+            ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
         },
       ],

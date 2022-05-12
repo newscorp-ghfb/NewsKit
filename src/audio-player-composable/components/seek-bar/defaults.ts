@@ -12,6 +12,9 @@ export default {
         stylePreset: 'seekBarThumb',
         size: 'sizing040',
       },
+      feedback: {
+        size: 'sizing060',
+      },
     },
     buffering: {
       stylePreset: 'seekBarBuffering',

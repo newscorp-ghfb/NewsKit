@@ -3,10 +3,6 @@
 exports[`Caption renders correctly with default props and caption and credit text 1`] = `
 <DocumentFragment>
   .emotion-1 {
-  margin-bottom: 16px;
-}
-
-.emotion-2 {
   margin: 0;
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
@@ -15,10 +11,39 @@ exports[`Caption renders correctly with default props and caption and credit tex
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  margin-block-end: 16px;
+}
+
+.emotion-1 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-2 {
+  margin: 0;
+  color: #535353;
+  text-transform: uppercase;
+  font-family: "DM Sans",sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #535353;
 }
 
 .emotion-2::before {
@@ -33,48 +58,16 @@ exports[`Caption renders correctly with default props and caption and credit tex
   display: block;
 }
 
-.emotion-3 {
-  margin: 0;
-  color: #535353;
-  text-transform: uppercase;
-  font-family: "DM Sans",sans-serif;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-}
-
-.emotion-3 svg {
-  fill: #535353;
-}
-
-.emotion-3::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-3::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
 <div
     class="emotion-0"
   >
-    <div
+    <p
       class="emotion-1"
     >
-      <p
-        class="emotion-2"
-      >
-        test
-      </p>
-    </div>
+      test
+    </p>
     <p
-      class="emotion-3"
+      class="emotion-2"
     >
       this is credit text
     </p>
@@ -97,10 +90,6 @@ exports[`CaptionInset renders correctly with default props and caption and credi
 }
 
 .emotion-1 {
-  margin-bottom: 16px;
-}
-
-.emotion-2 {
   margin: 0;
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
@@ -109,10 +98,39 @@ exports[`CaptionInset renders correctly with default props and caption and credi
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  margin-block-end: 16px;
+}
+
+.emotion-1 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-2 {
+  margin: 0;
+  color: #535353;
+  text-transform: uppercase;
+  font-family: "DM Sans",sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-2 svg {
-  fill: #2E2E2E;
+  fill: #535353;
 }
 
 .emotion-2::before {
@@ -127,48 +145,16 @@ exports[`CaptionInset renders correctly with default props and caption and credi
   display: block;
 }
 
-.emotion-3 {
-  margin: 0;
-  color: #535353;
-  text-transform: uppercase;
-  font-family: "DM Sans",sans-serif;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-}
-
-.emotion-3 svg {
-  fill: #535353;
-}
-
-.emotion-3::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-3::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
 <div
     class="emotion-0"
   >
-    <div
+    <p
       class="emotion-1"
     >
-      <p
-        class="emotion-2"
-      >
-        test
-      </p>
-    </div>
+      test
+    </p>
     <p
-      class="emotion-3"
+      class="emotion-2"
     >
       this is credit text
     </p>
@@ -190,7 +176,7 @@ exports[`CaptionInset renders correctly with default props and only caption text
   }
 }
 
-.emotion-2 {
+.emotion-1 {
   margin: 0;
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
@@ -201,8 +187,95 @@ exports[`CaptionInset renders correctly with default props and only caption text
   padding: 0.5px 0px;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   fill: #2E2E2E;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+<div
+    class="emotion-0"
+  >
+    <p
+      class="emotion-1"
+    >
+      test
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CaptionInset renders correctly with logical props overrides  1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-block: 30px;
+  padding-block: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    padding: 24px;
+  }
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  margin-block-end: 16px;
+}
+
+.emotion-1 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-2 {
+  margin: 0;
+  color: #535353;
+  text-transform: uppercase;
+  font-family: "DM Sans",sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-2 svg {
+  fill: #535353;
 }
 
 .emotion-2::before {
@@ -220,15 +293,16 @@ exports[`CaptionInset renders correctly with default props and only caption text
 <div
     class="emotion-0"
   >
-    <div
+    <p
       class="emotion-1"
     >
-      <p
-        class="emotion-2"
-      >
-        test
-      </p>
-    </div>
+      test
+    </p>
+    <p
+      class="emotion-2"
+    >
+      this is credit text
+    </p>
   </div>
 </DocumentFragment>
 `;
@@ -248,10 +322,6 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
 }
 
 .emotion-1 {
-  margin-bottom: 64px;
-}
-
-.emotion-2 {
   margin: 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
@@ -260,25 +330,26 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  margin-block-end: 64px;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   fill: #0A0A0A;
 }
 
-.emotion-2::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.2155em;
   display: block;
 }
 
-.emotion-2::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.2125em;
   display: block;
 }
 
-.emotion-3 {
+.emotion-2 {
   margin: 0;
   color: #0A0A0A;
   text-transform: uppercase;
@@ -290,17 +361,17 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
   padding: 0.5px 0px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #0A0A0A;
 }
 
-.emotion-3::before {
+.emotion-2::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-2::after {
   content: '';
   margin-top: -0.409em;
   display: block;
@@ -309,17 +380,13 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
 <div
     class="emotion-0"
   >
-    <div
+    <p
       class="emotion-1"
     >
-      <p
-        class="emotion-2"
-      >
-        test
-      </p>
-    </div>
+      test
+    </p>
     <p
-      class="emotion-3"
+      class="emotion-2"
     >
       this is credit text
     </p>
@@ -329,7 +396,7 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
 
 exports[`renders correctly with default props and only caption text 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-1 {
   margin: 0;
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
@@ -340,17 +407,17 @@ exports[`renders correctly with default props and only caption text 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   fill: #2E2E2E;
 }
 
-.emotion-2::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-2::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.409em;
   display: block;
@@ -359,15 +426,11 @@ exports[`renders correctly with default props and only caption text 1`] = `
 <div
     class="emotion-0"
   >
-    <div
-      class="emotion-0"
+    <p
+      class="emotion-1"
     >
-      <p
-        class="emotion-2"
-      >
-        test
-      </p>
-    </div>
+      test
+    </p>
   </div>
 </DocumentFragment>
 `;
@@ -375,10 +438,6 @@ exports[`renders correctly with default props and only caption text 1`] = `
 exports[`renders correctly with overriden props and caption and credit text 1`] = `
 <DocumentFragment>
   .emotion-1 {
-  margin-bottom: 64px;
-}
-
-.emotion-2 {
   margin: 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
@@ -387,25 +446,26 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  margin-block-end: 64px;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   fill: #0A0A0A;
 }
 
-.emotion-2::before {
+.emotion-1::before {
   content: '';
   margin-bottom: -0.2155em;
   display: block;
 }
 
-.emotion-2::after {
+.emotion-1::after {
   content: '';
   margin-top: -0.2125em;
   display: block;
 }
 
-.emotion-3 {
+.emotion-2 {
   margin: 0;
   color: #0A0A0A;
   text-transform: uppercase;
@@ -417,17 +477,17 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
   padding: 0.5px 0px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #0A0A0A;
 }
 
-.emotion-3::before {
+.emotion-2::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-2::after {
   content: '';
   margin-top: -0.409em;
   display: block;
@@ -436,17 +496,13 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
 <div
     class="emotion-0"
   >
-    <div
+    <p
       class="emotion-1"
     >
-      <p
-        class="emotion-2"
-      >
-        test
-      </p>
-    </div>
+      test
+    </p>
     <p
-      class="emotion-3"
+      class="emotion-2"
     >
       this is credit text
     </p>

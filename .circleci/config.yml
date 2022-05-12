@@ -68,7 +68,7 @@ executors:
 
   cypress:
     docker:
-      - image: cypress/browsers:node16.5.0-chrome94-ff93
+      - image: cypress/browsers:node16.13.0-chrome95-ff94
     resource_class: large
 
   java:
@@ -473,7 +473,7 @@ jobs:
         type: string
         default: 'default'
     executor: python
-    steps:  
+    steps:
       - checkout
       - attach_workspace:
           at: ~/project
@@ -600,7 +600,7 @@ jobs:
           path: cypress/videos
       - slack/status:
           <<: *slack_status
-  
+
   bump_version:
     executor: node
     parameters:
@@ -618,12 +618,12 @@ jobs:
           <<: *slack_status
 
   delete_trigger_release_tag:
-    executor: node 
+    executor: node
     parameters:
       version:
         type: string
     steps:
-      - checkout 
+      - checkout
       - run:
           name: Set github identity
           command: make set_git_identity
@@ -729,7 +729,7 @@ jobs:
             make build_docker
             make push_docker
       - slack/status:
-          <<: *slack_status 
+          <<: *slack_status
 
   push_s3:
     executor: aws-cli/default #TODO: refactor other steps to use this orb it's much cleaner, install and setup can then be moved into the shared aws step
@@ -860,6 +860,55 @@ jobs:
       - slack/status:
           <<: *slack_status
 
+  test_newskit_in_nextjs_app:
+    executor: cypress
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Install yalc and create-next-app
+          command: | 
+            yarn global add yalc && yarn add create-next-app@latest 
+      - run:
+          name: Yalc publish and run create-nextjs-app
+          command: | 
+            cd dist
+            yalc publish
+            cd ..
+            npx create-next-app@latest newskit-integration-test
+      - run: 
+          name: Prepare the NextJs app
+          command: |
+            echo "Adding nedded files into the NextJs app"
+
+            cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.js
+            cp ./scripts/templates-integration-test/cypress.json ./newskit-integration-test/
+            mkdir -p ./newskit-integration-test/cypress/integration
+            cp ./scripts/templates-integration-test/theme-checker.spec.js ./newskit-integration-test/cypress/integration
+
+        
+            echo "Installing needed packages into the NextJS app"
+
+            cd newskit-integration-test
+            yalc add newskit
+            yarn add start-server-and-test
+            # Temp downgrading React. Needed for avoiding Hydration error with React v18 https://github.com/vercel/next.js/discussions/35773
+            yarn add react@17.0.1
+            yarn add react-dom@17.0.1
+            yarn add -D cypress@9.1.0;
+      - run:
+          name: Serve and test app with Cypress
+          command: |
+            cd newskit-integration-test
+            yarn build
+            yarn start-test start 3000 'yarn cypress run'
+      - slack/status:
+          <<: *slack_status
+
+            
+  
+
 # ========== FILTERS START    ==========
 
 only_on_trigger_release_tag: &only_on_trigger_release_tag
@@ -912,6 +961,9 @@ workflows:
       - test_unit_docs:
           requires:
             - build_icons
+      - test_newskit_in_nextjs_app:
+          requires: 
+            - build_components
       - test_e2e_comps:
           context: ncu-product-platforms-context
           requires:
@@ -949,7 +1001,7 @@ workflows:
       - approve_publish_npm_pr:
           type: approval
           requires:
-            - build_components
+            - test_newskit_in_nextjs_app
             - lint
             - test_unit_comps
             - test_unit_docs
@@ -1021,9 +1073,9 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_to_s3
-  
+
   main:
-    when: 
+    when:
       equal: [ main, << pipeline.git.branch >> ]
     jobs:
       - init_aws:
@@ -1086,12 +1138,15 @@ workflows:
           requires:
             - build_docs_dev
             - install_cypress
+      - test_newskit_in_nextjs_app:
+          requires: 
+            - build_components
 
       # Jobs for deploying unstable NewsKit version
       - approve_publish_npm_dev:
           type: approval
           requires:
-            - build_components
+            - test_newskit_in_nextjs_app
             - lint
             - test_unit_comps
             - test_unit_docs
@@ -1175,14 +1230,14 @@ workflows:
       # end
 
   on_trigger_release_tag:
-    jobs: 
+    jobs:
       - bump_version:
           <<: *only_on_trigger_release_tag
           context: ncu-product-platforms-context
           version: $(echo << pipeline.git.tag >> | cut -f2 -d "@")
-             
+
   on_release_version_tag:
-    # Workflow's jobs triggered by the bump_version make script, which creates and pushes a new version tag e.g: "v5.0.1". 
+    # Workflow's jobs triggered by the bump_version make script, which creates and pushes a new version tag e.g: "v5.0.1".
     jobs:
       - delete_trigger_release_tag:
           <<: *only_on_version_tag
@@ -1270,6 +1325,9 @@ workflows:
             - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs_prod
+      - test_newskit_in_nextjs_app:
+          requires: 
+            - build_components
 
       - publish_npm:
           <<: *only_on_version_tag
@@ -1280,7 +1338,7 @@ workflows:
             - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs_prod
-            - build_components
+            - test_newskit_in_nextjs_app
 
       # Deploying newskit.co.uk and storybook to Staging then to Prod environment.
       - eks_flux_deploy:
@@ -1314,4 +1372,4 @@ workflows:
           environment: prod
           requires:
             - eks_flux_deploy_prod
-      # 
+      #

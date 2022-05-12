@@ -24,6 +24,7 @@ import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 import {withOwnTheme} from '../utils/with-own-theme';
 import defaults from './defaults';
 import stylePresets from './style-presets';
+import {omitLogicalPropsFromOverrides} from '../utils/logical-properties';
 
 // This key is needed to for the card headline (and to the link when it is wrapped)
 // to avoid missing key prop warning from react.
@@ -177,6 +178,8 @@ const ThemelessCard = React.forwardRef<HTMLDivElement, CardProps>(
     ref,
   ) => {
     const hasHref = Boolean(href);
+    const nonLogicalOverrides = omitLogicalPropsFromOverrides(overrides);
+
     return (
       <StyledCardContainer
         hasHref={hasHref}
@@ -215,7 +218,7 @@ const ThemelessCard = React.forwardRef<HTMLDivElement, CardProps>(
               stackDistribution={StackDistribution.Start}
               hasHref={hasHref}
               wrap="nowrap"
-              overrides={overrides}
+              overrides={nonLogicalOverrides}
             >
               {renderIfReactComponent(actions)}
             </StyledCardContainerActions>

@@ -3,6 +3,7 @@ import Playground from '../../components/playground';
 import Prop from '../../components/prop';
 import {CodeFromDefaultPresets} from '../../components/code';
 import {AudioPlayer, UnorderedList, Block} from 'newskit';
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
 export default Layout;
 
@@ -139,7 +140,8 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       VolumeControl. The volume control overrides structure can be found in the {' '}
       <a href="/components/volume-control">volume control documentation page</a>.
     </Prop>
-    <CodeFromDefaultPresets componentName="audioPlayer" />
+    <CommonLogicalPropsMDX/>
+  <CodeFromDefaultPresets componentName="audioPlayer" />
   </Prop>
 </Block>
 

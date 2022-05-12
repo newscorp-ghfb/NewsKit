@@ -81,6 +81,9 @@ const StyledFullWidthVisible = styled(Visible)`
   width: 100%;
 `;
 
+const StyledDiv = styled.div`
+  border: 1px red dotted;
+`;
 const CTABtn = ({
   children,
   overrides,
@@ -200,7 +203,7 @@ const bannerLink = (
 export default {
   title: 'NewsKit Light/banner',
   component: () => 'None',
-  disabledRules: ['color-contrast'],
+  disabledRules: [],
 };
 
 export const StoryBannerDefault = () => (
@@ -500,3 +503,64 @@ export const StoryBannerWithGridLayoutAlignment = () => (
 
 StoryBannerWithGridLayoutAlignment.storyName =
   'banner-with-grid-layout-alignment';
+
+export const StoryBannerWithLogicalOverrides = () => (
+  <>
+    <StorybookHeading>Banner</StorybookHeading>
+    <StorybookSubHeading>with logical padding overrides</StorybookSubHeading>
+    <BannerWrapper>
+      <BannerWithState
+        aria-label="Banner with logical padding overrides"
+        overrides={{
+          paddingBlock: 'spaceInset060',
+          paddingInline: 'spaceInset060',
+        }}
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </BannerWithState>
+    </BannerWrapper>
+    <StorybookSubHeading>
+      with logical padding overrides on each breakpoint
+    </StorybookSubHeading>
+    <Banner
+      title="Banner title"
+      aria-label="Banner with breakpoint and logical padding overrides"
+      overrides={{
+        paddingBlock: {
+          xs: 'space050',
+          lg: 'space040',
+        },
+        paddingInline: {
+          xs: 'space045',
+          md: 'space070',
+          lg: 'space040',
+        },
+        paddingBlockStart: {
+          md: 'space040',
+          lg: 'space030',
+        },
+        paddingBlockEnd: {
+          md: 'space050',
+          lg: 'space030',
+        },
+      }}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing eli
+    </Banner>
+    <StorybookSubHeading>with logical margin overrides</StorybookSubHeading>
+    <StyledDiv>
+      <BannerWithState
+        aria-label="Banner with logical margin overrides"
+        overrides={{
+          marginBlock: 'space050',
+          marginInline: 'space050',
+        }}
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </BannerWithState>
+    </StyledDiv>
+  </>
+);
+StoryBannerWithLogicalOverrides.storyName = 'banner-with-logical-overrides';

@@ -1,5 +1,6 @@
 import {BaseDialogProps} from '../dialog/types';
 import {MQ} from '../utils';
+import {LogicalProps} from '../utils/logical-properties';
 
 // Refactor into interface -> https://stackoverflow.com/questions/53636756/typescript-interface-extending-another-interface-with-nested-properties
 export type DrawerProps = BaseDialogProps & {
@@ -9,6 +10,6 @@ export type DrawerProps = BaseDialogProps & {
       size?: MQ<string>;
       maxSize?: MQ<string>;
       minSize?: MQ<string>;
-    };
+    } & LogicalProps;
   };
 };

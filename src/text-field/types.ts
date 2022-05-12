@@ -4,6 +4,7 @@ import {
   CommonInputProps,
   FormInputState,
 } from '../form/types';
+import {EventData} from '../instrumentation';
 import {MQ} from '../utils/style';
 
 export type TextFieldSizeType = TextFieldSize | 'small' | 'medium' | 'large';
@@ -29,7 +30,7 @@ export interface FormInputTextFieldProps
   spellCheck?: boolean;
 }
 
-export interface TextFieldProps extends FormInputTextFieldProps {
+export interface TextFieldProps extends FormInputTextFieldProps, EventData {
   rules?: FormValidationRules;
   name?: string;
 }

@@ -103,20 +103,81 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-3:hover:not(:disabled) {
+  opacity: 0.2;
+}
+
+.emotion-3:disabled {
+  opacity: 0;
+}
+
+.emotion-3:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-3:valid:hover:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.2;
+}
+
+.emotion-3:valid:hover:active:not(:disabled) {
+  background-color: #148F39;
+  opacity: 0.4;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.2;
+}
+
+.emotion-3:invalid:hover:active:not(:disabled) {
+  background-color: #D20600;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 <div
     class="emotion-0"
     data-testid="slider"
   >
     <div
-      aria-orientation="horizontal"
-      aria-valuemax="75"
-      aria-valuemin="25"
       class="emotion-1"
       data-testid="slider-track"
       values="40"
     >
       <div
         aria-label="slider"
+        aria-orientation="horizontal"
         aria-valuemax="75"
         aria-valuemin="25"
         aria-valuenow="40"
@@ -127,7 +188,12 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
         style="position: absolute; z-index: 0; cursor: grabbing; user-select: none; transform: translate(NaNpx, NaNpx);"
         tabindex="0"
         values="40"
-      />
+      >
+        <span
+          class="emotion-3"
+          data-testid="slider-feedback"
+        />
+      </div>
     </div>
   </div>
 </DocumentFragment>

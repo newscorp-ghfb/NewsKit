@@ -460,6 +460,16 @@ describe('Form', () => {
     expect(ref.current!.trigger).toBe(useFormReturnMock.trigger);
     expect(ref.current!.element).toMatchSnapshot();
   });
+
+  test('renders with logical props', () => {
+    const fragment = renderToFragmentWithTheme(Form, {
+      ...props,
+      marginInline: '30px',
+      paddingInline: '30px',
+      children: (formBody as unknown) as Array<React.ReactElement>,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });
 
 describe('FormInput', () => {
