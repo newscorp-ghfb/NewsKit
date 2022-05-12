@@ -25,8 +25,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
       type: 'Layout',
       name: 'Structured List',
       hero: {
-        src: 'static/button-hero.svg',
-        alt: 'structured-list-demo-image',
+        illustration: 'components/fieldset/hero',
       },
       introduction:
         'Structured lists group content that is similar or related.',

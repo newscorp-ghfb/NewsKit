@@ -495,7 +495,7 @@ export default [
             id: '/components/structured-list',
             description:
               'Structured lists group content that is similar or related.',
-            illustration: 'components/standfirst-illustration',
+            illustration: 'components/stack-illustration',
           },
           {
             title: 'Visibility',
