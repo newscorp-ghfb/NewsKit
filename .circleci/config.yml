@@ -903,9 +903,6 @@ jobs:
             cd newskit-integration-test
             yarn build
             yarn start-test start 3000 'yarn cypress run'
-            # TODO add it back after testing in unstable release
-            # echo "Back to Newskit folder so we can correctly publish"
-            # cd ..
       - slack/status:
           <<: *slack_status
 
