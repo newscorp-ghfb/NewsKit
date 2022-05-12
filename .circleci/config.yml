@@ -903,8 +903,6 @@ jobs:
             cd newskit-integration-test
             yarn build
             yarn start-test start 3000 'yarn cypress run'
-            echo "Back to Newskit folder so we can correctly publish"
-            cd ..
       - slack/status:
           <<: *slack_status
 
@@ -1328,6 +1326,7 @@ workflows:
             - test_e2e_comps
             - test_e2e_docs_prod
       - test_newskit_in_nextjs_app:
+          <<: *only_on_version_tag
           requires: 
             - build_components
 
