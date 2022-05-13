@@ -8,6 +8,7 @@ import {
   MenuDivider,
   MenuItem,
   styled,
+  TextBlock,
 } from 'newskit';
 import routes from '../../routes';
 import {Visible} from '../../../src/grid/visibility';
@@ -15,8 +16,9 @@ import {MenuNavCollapsible} from '../menu-collapsible/menu-collapsible';
 import {PageLinkProps, SiteMenuItemProps, SubNavProps} from './types';
 import {DesktopNavigationDivider} from './styled';
 
-const StyledLabel = styled(Label)`
+const StyledTitle = styled(TextBlock)`
   ${getSpacingCssFromTheme('marginLeft', 'space060')};
+  ${getSpacingCssFromTheme('marginBottom', 'space040')};
 `;
 
 const PageMenuLinks: React.FC<PageLinkProps> = ({
@@ -61,9 +63,7 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
             {page ? (
               <>
                 {title.includes('Overview') ||
-                title.includes('Getting started') ? (
-                  <Block spaceStack="space060" />
-                ) : (
+                title.includes('Getting started') ? undefined : (
                   <>
                     <PageMenuLinks active={path.includes(id)} href={id}>
                       <Label
@@ -86,20 +86,21 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
               as this returns each title individually  */}
                 {title === 'Foundation' ||
                 title === 'Actions & Inputs' ||
-                title === 'Design' ? undefined : (
+                title === 'Design' ? (
+                  <Block spaceStack="space060" />
+                ) : (
                   <DesktopNavigationDivider>
                     <MenuDivider />
                   </DesktopNavigationDivider>
                 )}
-                <StyledLabel
-                  // title={title}
-                  overrides={{
-                    typographyPreset: 'utilityHeading030',
-                    stylePreset: 'sidebarHeader',
-                  }}
+
+                <StyledTitle
+                  typographyPreset="utilityHeading030"
+                  stylePreset="sidebarHeader"
                 >
                   {title}
-                </StyledLabel>
+                </StyledTitle>
+
                 <SiteMenuItem menuItemList={subNav as SubNavProps} />
                 {/* added this cause last item needs space */}
               </>
