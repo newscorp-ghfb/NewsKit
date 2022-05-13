@@ -12,15 +12,22 @@ function expandFilePathsIfNeeded(filesBeforeExpansion) {
 }
 
 const start = async function () {
+  console.log(process.argv);
+
+  const argPath = process.argv[2];
+  const argName = process.argv[3];
+
   //const transformPath = path.join(__dirname, 'rename-token.js');
   //const transformPath = path.join(__dirname, 'rename-prop.js');
   //const transformPath = path.join(__dirname, 'transforms/rename-override.js');
   //const transformPath = path.join(__dirname, 'transforms/remove-component.js');
-  const transformPath = path.join(__dirname, 'transforms/rename-defaults.js');
+  // const transformPath = path.join(__dirname, `transforms/rename-defaults.js`);
+  const transformPath = path.join(__dirname, `transforms/${argName}.js`);
 
   //const files = ['../site/**/*.+(ts|tsx|json)'];
   //const files = ['../site/pages/index.tsx'];
-  const files = ['../site/theme/component-defaults.ts'];
+  //const files = ['../site/theme/component-defaults.ts'];
+  const files = [argPath];
 
   const filesFullPath = files.map(filePath => path.join(__dirname, filePath));
 

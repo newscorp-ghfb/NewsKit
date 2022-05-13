@@ -19,11 +19,11 @@ module.exports = function transformer(file, api, options) {
 
   return renameProps({
     root,
-    componentName: 'GridLayout',
+    componentName: 'RadioButton',
     props: {
-      rowGap: 'gapRow',
-      columnGap: 'gapColumn',
-      columns: 'cols',
+      value: 'newValue',
+      checked: 'selected',
+      onChange: 'onSelect',
     },
   }).toSource(printOptions);
 };

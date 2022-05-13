@@ -47,12 +47,15 @@ function expandFilePathsIfNeeded(filesBeforeExpansion) {
 }
 var start = function () {
     return __awaiter(this, void 0, void 0, function () {
-        var transformPath, files, filesFullPath, options, filesExpanded, res;
+        var argPath, argName, transformPath, files, filesFullPath, options, filesExpanded, res;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    transformPath = path.join(__dirname, 'transforms/rename-defaults.js');
-                    files = ['../site/theme/component-defaults.ts'];
+                    console.log(process.argv);
+                    argPath = process.argv[2];
+                    argName = process.argv[3];
+                    transformPath = path.join(__dirname, "transforms/".concat(argName, ".js"));
+                    files = [argPath];
                     filesFullPath = files.map(function (filePath) { return path.join(__dirname, filePath); });
                     options = {
                         //dry: true,
