@@ -272,7 +272,7 @@ describe('Audio Player Composable', () => {
     expect(playPauseButton.getAttribute('aria-label')).toBe('Play');
   });
 
-  it('should have play or pause label when live', () => {
+  it('should have play or pause label when recorded', () => {
     const {getByTestId} = renderWithTheme(
       AudioPlayerComposable,
       recordedAudioProps,

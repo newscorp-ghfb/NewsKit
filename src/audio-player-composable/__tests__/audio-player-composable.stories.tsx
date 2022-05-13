@@ -31,6 +31,7 @@ import {Flag} from '../../flag';
 
 const AUDIO_SRC =
   'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3';
+const LIVE_AUDIO_SRC = 'https://radio.talkradio.co.uk/stream';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-audio-player-theme',
@@ -176,7 +177,7 @@ const AudioPlayerFullLive = (props: {
   src?: string;
   autoPlay?: boolean;
 }) => (
-  <AudioPlayerComposable src={AUDIO_SRC} live {...props}>
+  <AudioPlayerComposable src={LIVE_AUDIO_SRC} live {...props}>
     <GridLayout
       columns={{
         xs: '1fr auto auto auto 1fr',
@@ -274,7 +275,7 @@ const AudioPlayerInlineRecorded = (props: {
 );
 
 const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
-  <AudioPlayerComposable src={AUDIO_SRC} live {...props}>
+  <AudioPlayerComposable src={LIVE_AUDIO_SRC} live {...props}>
     <GridLayout
       columns="auto auto"
       columnGap="space040"
