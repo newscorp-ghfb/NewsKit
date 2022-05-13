@@ -337,6 +337,13 @@ export const AudioSubComponents = () => (
           />
         </GridLayoutItem>
         <GridLayoutItem>
+          <StorybookSubHeading>live</StorybookSubHeading>
+          <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
+            <IconFilledGraphicEq />
+            Live
+          </Flag>
+        </GridLayoutItem>
+        <GridLayoutItem>
           <StorybookSubHeading>default</StorybookSubHeading>
           <AudioPlayerTimeDisplay />
         </GridLayoutItem>
