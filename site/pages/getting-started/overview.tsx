@@ -26,9 +26,9 @@ const codeRouteList: Item[] =
 const getCardList = (routeList: Item[]) =>
   routeList
     .filter(route => route.page && route?.illustration)
-    .map(({title, description, id, illustration}) => ({
+    .map(({cardTitle, description, id, illustration}) => ({
       media: getIllustrationComponent(illustration as string),
-      title,
+      title: cardTitle,
       href: id,
       description,
     })) as MediaItem[];

@@ -50,6 +50,7 @@ export default [
             description:
               'Everything you need to know about using NewsKit to design digital products.',
             illustration: 'guides/design-overview/hero',
+            cardTitle: 'Design Overview',
           },
           {
             title: 'Quickstart',
@@ -58,6 +59,7 @@ export default [
             description:
               'A step by step guide to get you up and running using NewsKit.',
             illustration: 'guides/design-quickstart/hero',
+            cardTitle: 'Design Quickstart Guide',
           },
         ],
       },
@@ -72,6 +74,7 @@ export default [
             description:
               'Everything you need to know about using NewsKit’s library of React web components.',
             illustration: 'guides/engineering-overview/hero',
+            cardTitle: 'Engineering Overview',
           },
           {
             title: 'Quickstart',
@@ -80,6 +83,7 @@ export default [
             description:
               'Guides on how to get started building a web application with NewsKit.',
             illustration: 'guides/engineering-quickstart/hero',
+            cardTitle: 'Engineering Quickstart Guide',
           },
           {
             title: 'Instrumentation setup',
@@ -88,6 +92,7 @@ export default [
             description:
               'NewsKit components are built to emit events "out of the box".',
             illustration: 'guides/overview/instrumentation-setup',
+            cardTitle: 'Instrumentation Setup',
           },
           {
             title: 'Testing',
@@ -96,6 +101,7 @@ export default [
             description:
               'NewsKit uses Jest and React Testing Library for unit testing.',
             illustration: 'guides/overview/testing',
+            cardTitle: 'Testing',
           },
         ],
       },
