@@ -27,10 +27,7 @@ const getCardList = (routeList: Item[]) =>
   routeList
     .filter(route => route.page && route?.illustration)
     .map(({title, description, id, illustration}) => ({
-      media: illustration?.endsWith('.svg')
-        ? {src: illustration, alt: ''}
-        : getIllustrationComponent(illustration as string),
-
+      media: getIllustrationComponent(illustration as string),
       title,
       href: id,
       description,
