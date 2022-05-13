@@ -21,7 +21,7 @@ const StyledMenuCollapsible = styled.ul`
 const StyledMenuCollapsibleItem = styled.div<
   Pick<MenuProps, 'vertical'> & MenuGroupProps
 >`
-  ${getSpacingCssFromTheme('marginTop', 'space030')};
+  ${getSpacingCssFromTheme('marginTop', 'space040')};
   ${getSpacingCssFromTheme('marginBottom', 'space000')};
 
   &.collapsed > label {

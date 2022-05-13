@@ -9,8 +9,8 @@ import {
   getStylePresetFromTheme,
   Block,
   Visible,
+  Drawer,
 } from 'newskit';
-import {Overlay} from '../overlay';
 import {SidebarNav} from './sidebar-navigation';
 import {ThemeSwitch} from '../theme-switch';
 import {GitHubLaunch} from '../menu-collapsible/menu-collapsible';
@@ -27,9 +27,13 @@ interface SidebarWrapperProps {
   hideSidebar?: boolean;
 }
 
-const SidebarWrapper = styled.div<SidebarWrapperProps>`
+const StyledDrawer = styled(Drawer)`
+  // not working on scroll
+  ${getSpacingCssFromTheme('marginTop', '48px')};
+`;
+
+const SidebarDesktop = styled.div<SidebarWrapperProps>`
   width: 100vw;
-  // i had padding-right here space 045 check with dj if needed
   position: fixed;
   overflow: auto;
   bottom: 0;
@@ -46,7 +50,6 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
     width: 276px;
     display: ${({hideSidebar}) => hideSidebar && 'none'};
     ${getSpacingCssFromTheme('marginTop', 'space100')};
-    // on div sidebar i have removed padding check with dj
     ${getSpacingCssFromTheme('paddingTop', 'space000')};
     transform: translateX(0);
     overflow: hidden;
@@ -63,10 +66,6 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   )};
 `;
 
-// const IconWrapper = styled.div`
-//   align-self: center;
-// `;
-
 const Sidebar: React.FC<SidebarProps> = ({
   sidebarOpen,
   toggleTheme,
@@ -75,32 +74,46 @@ const Sidebar: React.FC<SidebarProps> = ({
   hideSidebar,
 }) => (
   <>
-    <SidebarWrapper
-      open={sidebarOpen}
-      data-testid="sidebar"
-      role="complementary"
-      hideSidebar={hideSidebar}
-    >
-      <Block spaceInset="space010" />
-
-      <SidebarNav />
-      <Visible xs sm md>
-        <Block spaceInset="space060">
-          {/* <Block spaceStack="space050" /> */}
+    <Visible xs sm md>
+      <StyledDrawer
+        id="i am a drawer"
+        aria-label="drawer on the the bottom"
+        open={sidebarOpen}
+        onDismiss={handleSidebarClick}
+        placement="left"
+        closePosition="none"
+        hideOverlay
+        overrides={{
+          content: {
+            spaceInset: 'spaceInset000',
+          },
+          panel: {
+            spaceStack: '50px',
+            minSize: '100%',
+            marginBlock: '0px',
+          },
+        }}
+      >
+        <SidebarNav />
+        <Block marginInline="space060">
           <GitHubLaunch href="https://github.com/newscorp-ghfb/newskit" />
-          <Block spaceStack="space040" />
+          <Block spaceStack="space050" />
           <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} textTheme />
         </Block>
-      </Visible>
-    </SidebarWrapper>
+      </StyledDrawer>
+    </Visible>
+    <Visible lg xl>
+      <SidebarDesktop
+        open={sidebarOpen}
+        data-testid="sidebar"
+        role="complementary"
+        hideSidebar={hideSidebar}
+      >
+        <Block spaceInset="space010" />
 
-    <Overlay
-      open={sidebarOpen}
-      handleSidebarClick={handleSidebarClick}
-      zIndex={2}
-      lockScroll={sidebarOpen}
-      hideAtBreakpoint="lg"
-    />
+        <SidebarNav />
+      </SidebarDesktop>
+    </Visible>
   </>
 );
 

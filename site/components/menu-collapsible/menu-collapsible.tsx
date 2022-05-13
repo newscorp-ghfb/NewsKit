@@ -90,12 +90,7 @@ export const MenuNavCollapsible = ({
                   }}
                   size="small"
                 >
-                  {/* <TextBlock
-                    typographyPreset="utilityButton020"
-                    paddingInline="space030"
-                  > */}
                   {title}
-                  {/* </TextBlock> */}
                 </MenuItemStyled>
               </>
             ) : (
