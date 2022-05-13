@@ -51,6 +51,13 @@ const codeCards = [
       'NewsKit components are built to emit events "out of the box".',
     href: '/getting-started/code/instrumentation/',
   },
+  {
+    media: getIllustrationComponent('guides/overview/testing'),
+    title: 'Testing',
+    description:
+      'NewsKit uses Jest and React Testing Library for unit testing.',
+    href: '/getting-started/code/testing/',
+  },
 ];
 
 const Overview = (layoutProps: LayoutProps) => (
