@@ -125,8 +125,8 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           overrides={{
             stylePreset: 'linkTopNavigation',
             minHeight: '80px',
-            paddingInline: '10px',
-            marginInline: '20px',
+            // paddingInline: '8px',
+            marginInline: '10px',
           }}
         >
           {title}
@@ -153,7 +153,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
         </Visible>
         <Visible lg xl>
           <GridLayout
-            columns={{lg: '276px auto 1fr  1fr 80px'}}
+            columns={{lg: '276px 400px 1fr  1fr 80px'}}
             columnGap="20px"
             areas={{
               lg: siteheaderAreas,
@@ -170,6 +170,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                     <NewsKitLogo />
                   </Link>
                 </Areas.Logo>
+
                 <Areas.Menu alignSelf="center" justifySelf="center">
                   <Menu aria-label="main-navigation">
                     {renderNavItems(navItems, path)}
