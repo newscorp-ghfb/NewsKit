@@ -218,16 +218,11 @@ const AudioPlayerFullLive = (props: {
           </Areas.Next>
 
           <Areas.Volume alignSelf="center" justifySelf="start">
-            <Hidden xs sm>
-              Not yet
-            </Hidden>
-          </Areas.Volume>
-          <Areas.SeekBar alignSelf="center" justifySelf="end">
             <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
               <IconFilledGraphicEq />
               Live
             </Flag>
-          </Areas.SeekBar>
+          </Areas.Volume>
 
           <Areas.Link alignSelf="center" justifySelf="end">
             <Hidden xs sm>
@@ -280,7 +275,7 @@ const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
       columns="auto auto"
       columnGap="space040"
       alignItems="center"
-      justifyContent="space-between"
+      justifyContent="flex-start"
     >
       <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
       <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
