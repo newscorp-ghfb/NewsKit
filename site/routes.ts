@@ -483,7 +483,7 @@ export default [
             id: '/components/grid-layout',
             description:
               'Used to construct a visual grid for responsive page layout. A Proxy for CSS grid.',
-            illustration: 'static/placeholder-3x2.png',
+            illustration: 'components/grid-layout-illustration',
           },
           {
             title: 'Modal',
