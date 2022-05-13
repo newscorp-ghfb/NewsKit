@@ -48,7 +48,7 @@ export default [
             page: true,
             id: '/getting-started/design/design-overview',
             description:
-              'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
+              'Everything you need to know about using NewsKit to design digital products.',
             illustration: 'guides/design-overview/hero',
           },
           {
@@ -56,7 +56,7 @@ export default [
             page: true,
             id: '/getting-started/design/design-quickstart',
             description:
-              'This page describes how to get started designing a digital product with NewsKit.',
+              'A step by step guide to get you up and running using NewsKit.',
             illustration: 'guides/design-quickstart/hero',
           },
         ],
@@ -70,7 +70,7 @@ export default [
             page: true,
             id: '/getting-started/code/engineering-overview',
             description:
-              'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
+              'Everything you need to know about using NewsKit’s library of React web components.',
             illustration: 'guides/engineering-overview/hero',
           },
           {
@@ -78,18 +78,24 @@ export default [
             page: true,
             id: '/getting-started/code/engineering-quickstart',
             description:
-              'This page describes how to get started building a web application with NewsKit.',
+              'Guides on how to get started building a web application with NewsKit.',
             illustration: 'guides/engineering-quickstart/hero',
           },
           {
             title: 'Instrumentation setup',
             page: true,
             id: '/getting-started/code/instrumentation',
+            description:
+              'NewsKit components are built to emit events "out of the box".',
+            illustration: 'guides/overview/instrumentation-setup',
           },
           {
             title: 'Testing',
             page: true,
             id: '/getting-started/code/testing',
+            description:
+              'NewsKit uses Jest and React Testing Library for unit testing.',
+            illustration: 'guides/overview/testing',
           },
         ],
       },

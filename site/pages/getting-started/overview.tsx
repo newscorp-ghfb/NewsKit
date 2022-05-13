@@ -1,64 +1,43 @@
 import React from 'react';
 import {Grid} from 'newskit';
-import {HeaderImage} from '../../components/illustrations/guides/overview/header-image';
+import routes from '../../routes';
 import Layout, {LayoutProps} from '../../components/layout';
-import {MediaList} from '../../components/media-list';
+import {Item} from '../../components/sidebar/types';
 import {HeaderIndex} from '../../components/header-index/index';
+import {HeadNextSeo} from '../../components/head-next-seo';
+import {HeaderImage} from '../../components/illustrations/guides/overview/header-image';
+import {MediaItem, MediaList} from '../../components/media-list';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-import {HeadNextSeo} from '../../components/head-next-seo';
 import {
   ContentSection,
   ContentPrimary,
 } from '../../components/content-structure';
 
-const designCards = [
-  {
-    media: getIllustrationComponent('guides/overview/design-overview'),
-    title: 'Design Overview',
-    description:
-      'Everything you need to know about using NewsKit to design digital products.',
-    href: '/getting-started/design/design-overview',
-  },
-  {
-    media: getIllustrationComponent('guides/design-quickstart/hero'),
-    title: 'Design Quickstart Guide',
-    description:
-      'A step by step guide to get you up and running using NewsKit.',
-    href: '/getting-started/design/design-quickstart',
-  },
-];
+const guidesRouteList: Item[] =
+  routes.filter(route => route.title === 'Guides')[0].subNav || [];
 
-const codeCards = [
-  {
-    media: getIllustrationComponent('guides/overview/engineering-overview'),
-    title: 'Engineering Overview',
-    description:
-      'Everything you need to know about using NewsKit’s library of React web components.',
-    href: '/getting-started/code/engineering-overview',
-  },
-  {
-    media: getIllustrationComponent('guides/engineering-quickstart/hero'),
-    title: 'Engineering Quickstart Guide',
-    description:
-      'Guides on how to get started building a web application with NewsKit.',
-    href: '/getting-started/code/engineering-quickstart/',
-  },
-  {
-    media: getIllustrationComponent('guides/overview/instrumentation-setup'),
-    title: 'Instrumentation Setup',
-    description:
-      'NewsKit components are built to emit events "out of the box".',
-    href: '/getting-started/code/instrumentation/',
-  },
-  {
-    media: getIllustrationComponent('guides/overview/testing'),
-    title: 'Testing',
-    description:
-      'NewsKit uses Jest and React Testing Library for unit testing.',
-    href: '/getting-started/code/testing/',
-  },
-];
+const designRouteList: Item[] =
+  guidesRouteList.filter(route => route.title === 'Design')[0].subNav || [];
+
+const codeRouteList: Item[] =
+  guidesRouteList.filter(route => route.title === 'Code')[0].subNav || [];
+
+const getCardList = (routeList: Item[]) =>
+  routeList
+    .filter(route => route.page && route?.illustration)
+    .map(({title, description, id, illustration}) => ({
+      media: illustration?.endsWith('.svg')
+        ? {src: illustration, alt: ''}
+        : getIllustrationComponent(illustration as string),
+
+      title,
+      href: id,
+      description,
+    })) as MediaItem[];
+
+const designRouteListCards = getCardList(designRouteList);
+const codeRouteListCards = getCardList(codeRouteList);
 
 const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
@@ -81,7 +60,7 @@ const Overview = (layoutProps: LayoutProps) => (
             description="Essential reading to kickstart your first NewsKit project in Figma."
           >
             <MediaList
-              cards={designCards}
+              cards={designRouteListCards}
               gridProps={{xsRowGutter: 'space050'}}
             />
           </ContentPrimary>
@@ -92,7 +71,7 @@ const Overview = (layoutProps: LayoutProps) => (
             description="Essential reading to kickstart using NewsKit in your codebase."
           >
             <MediaList
-              cards={codeCards}
+              cards={codeRouteListCards}
               gridProps={{xsRowGutter: 'space050'}}
             />
           </ContentPrimary>
