@@ -25,7 +25,12 @@ import {
   IconFilledLaunch,
   IconFilledReplay5,
   IconFilledForward5,
+  IconFilledGraphicEq,
 } from '../../icons';
+import {Flag} from '../../flag';
+
+const AUDIO_SRC =
+  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-audio-player-theme',
@@ -68,25 +73,22 @@ export default {
 
 const fullAudioPlayerAreasDesktop = `
   seekBar     seekBar   seekBar   seekBar   seekBar   seekBar   seekBar
-  currentTime none      none      none      none      none      totalTime  
+  currentTime none      none      none      none      none      totalTime
   volume      prev      backward  play      forward   next      link
  `;
 
 const fullAudioPlayerAreasMobile = `
   seekBar     seekBar   seekBar   seekBar   seekBar
-  currentTime volume    none      link      totalTime  
+  currentTime volume    none      link      totalTime
   prev        backward  play      forward   next
  `;
 
-const AudioPlayerFull = (props: {
+const AudioPlayerFullRecorded = (props: {
   ariaLandmark: string;
   src?: string;
   autoPlay?: boolean;
 }) => (
-  <AudioPlayerComposable
-    src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    {...props}
-  >
+  <AudioPlayerComposable src={AUDIO_SRC} {...props}>
     <GridLayout
       columns={{
         xs: '1fr auto auto auto 1fr',
@@ -169,12 +171,91 @@ const AudioPlayerFull = (props: {
     </GridLayout>
   </AudioPlayerComposable>
 );
+const AudioPlayerFullLive = (props: {
+  ariaLandmark: string;
+  src?: string;
+  autoPlay?: boolean;
+}) => (
+  <AudioPlayerComposable src={AUDIO_SRC} live {...props}>
+    <GridLayout
+      columns={{
+        xs: '1fr auto auto auto 1fr',
+        md: '50px 1fr auto auto auto 1fr 50px',
+      }}
+      rowGap="space040"
+      columnGap="space040"
+      areas={{
+        xs: fullAudioPlayerAreasMobile,
+        md: fullAudioPlayerAreasDesktop,
+      }}
+    >
+      {Areas => (
+        <>
+          <Areas.Play alignSelf="center">
+            <AudioPlayerPlayPauseButton />
+          </Areas.Play>
 
-const AudioPlayerInline = (props: {ariaLandmark: string; src?: string}) => (
-  <AudioPlayerComposable
-    src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    {...props}
-  >
+          <Areas.Backward alignSelf="center">
+            <AudioPlayerReplayButton />
+          </Areas.Backward>
+
+          <Areas.Forward alignSelf="center">
+            <AudioPlayerForwardButton disabled />
+          </Areas.Forward>
+
+          <Areas.Prev alignSelf="center" justifySelf="end">
+            <AudioPlayerSkipPreviousButton
+              onClick={() => console.log('on skip Prev track')}
+            />
+          </Areas.Prev>
+
+          <Areas.Next alignSelf="center">
+            <AudioPlayerSkipNextButton
+              disabled
+              onClick={() => console.log('on skip Next track')}
+            />
+          </Areas.Next>
+
+          <Areas.Volume alignSelf="center" justifySelf="start">
+            <Hidden xs sm>
+              Not yet
+            </Hidden>
+          </Areas.Volume>
+          <Areas.SeekBar alignSelf="center" justifySelf="end">
+            <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
+              <IconFilledGraphicEq />
+              Live
+            </Flag>
+          </Areas.SeekBar>
+
+          <Areas.Link alignSelf="center" justifySelf="end">
+            <Hidden xs sm>
+              <IconButton
+                aria-label="Open popout player"
+                overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
+                onClick={() => {
+                  window.open(
+                    'https://www.newskit.co.uk/',
+                    '',
+                    'width=380,height=665',
+                  );
+                }}
+              >
+                <IconFilledLaunch />
+              </IconButton>
+            </Hidden>
+          </Areas.Link>
+        </>
+      )}
+    </GridLayout>
+  </AudioPlayerComposable>
+);
+
+const AudioPlayerInlineRecorded = (props: {
+  ariaLandmark: string;
+  src?: string;
+}) => (
+  <AudioPlayerComposable src={AUDIO_SRC} {...props}>
     <GridLayout
       columns="auto 40px 1fr auto"
       columnGap="space040"
@@ -192,14 +273,37 @@ const AudioPlayerInline = (props: {ariaLandmark: string; src?: string}) => (
   </AudioPlayerComposable>
 );
 
+const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
+  <AudioPlayerComposable src={AUDIO_SRC} live {...props}>
+    <GridLayout
+      columns="auto auto"
+      columnGap="space040"
+      alignItems="center"
+      justifyContent="space-between"
+    >
+      <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+      <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
+        <IconFilledGraphicEq />
+        Live
+      </Flag>
+    </GridLayout>
+  </AudioPlayerComposable>
+);
+
 export const AudioPlayer = () => (
   <>
-    <StorybookSubHeading>Full player-recorded</StorybookSubHeading>
-    <AudioPlayerFull ariaLandmark="audio player full" />
+    <StorybookSubHeading>Audio Player - full recorded</StorybookSubHeading>
+    <AudioPlayerFullRecorded ariaLandmark="audio player full recorded" />
+    <br />
+    <StorybookSubHeading>Audio Player - full live</StorybookSubHeading>
+    <AudioPlayerFullLive ariaLandmark="audio player full live" />
     <br />
     <br />
-    <StorybookSubHeading>Audio player inline recorded </StorybookSubHeading>
-    <AudioPlayerInline ariaLandmark="audio player inline" />
+    <StorybookSubHeading>Audio Player - inline recorded</StorybookSubHeading>
+    <AudioPlayerInlineRecorded ariaLandmark="audio player inline recorded" />
+    <br />
+    <StorybookSubHeading>Audio Player - inline live</StorybookSubHeading>
+    <AudioPlayerInlineLive ariaLandmark="audio player inline live" />
   </>
 );
 AudioPlayer.storyName = 'audio-player';
@@ -211,7 +315,7 @@ export const AudioSubComponents = () => (
     <br />
 
     <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      src={AUDIO_SRC}
       ariaLandmark="audio player time display"
     >
       <GridLayout
@@ -276,7 +380,7 @@ export const AudioPlayerOverrides = () => (
   <ThemeProvider theme={myCustomTheme}>
     <StorybookSubHeading>Audio player with overrides</StorybookSubHeading>
     <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      src={AUDIO_SRC}
       ariaLandmark="audio player overrides"
     >
       <GridLayout
@@ -416,7 +520,7 @@ AudioPlayerOverrides.storyName = 'audio-player-overrides';
 export const AudioPlayPauseButtonAutoplay = () => (
   <>
     <StorybookSubHeading>Autoplay</StorybookSubHeading>
-    <AudioPlayerFull ariaLandmark="audio player autoplay" autoPlay />
+    <AudioPlayerFullRecorded ariaLandmark="audio player autoplay" autoPlay />
   </>
 );
 
@@ -425,7 +529,7 @@ AudioPlayPauseButtonAutoplay.storyName = 'audio-play-pause-button-autoplay';
 export const AudioPlayerKeyboard = () => (
   <>
     <StorybookSubHeading>Audio Player Keyboard shortcuts</StorybookSubHeading>
-    <AudioPlayerFull ariaLandmark="audio player keyboard" />
+    <AudioPlayerFullRecorded ariaLandmark="audio player keyboard" />
     <Block marginBlockEnd="space040" />
     <GridLayout columns="auto 1fr" rowGap="space020" as="dl">
       <dt>k / space</dt>
@@ -449,7 +553,7 @@ export const AudioPlayerKeyboard = () => (
       Audio Player Keyboard overrides shortcuts
     </StorybookSubHeading>
     <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      src={AUDIO_SRC}
       ariaLandmark="audio player keyboard overrides"
       keyboardShortcuts={{
         jumpToStart: '1',
