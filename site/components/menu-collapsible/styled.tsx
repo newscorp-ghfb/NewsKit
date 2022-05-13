@@ -38,8 +38,6 @@ const StyledMenuCollapsibleItem = styled.div<
     visibility: hidden;
   }
   &.expanded > li {
-    ${getSpacingCssFromTheme('marginBottom', 'space040')};
-    max-height: 9999px;
     transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
     transition-delay: 0s;
   }

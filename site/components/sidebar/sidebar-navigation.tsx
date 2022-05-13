@@ -102,7 +102,6 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
                 </StyledLabel>
                 <SiteMenuItem menuItemList={subNav as SubNavProps} />
                 {/* added this cause last item needs space */}
-                <Block spaceStack="space045" />
               </>
             )}
           </React.Fragment>
