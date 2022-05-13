@@ -17,6 +17,7 @@ import {
   Menu,
   GridLayout,
   GridLayoutItem,
+  IconButton,
 } from 'newskit';
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
@@ -44,6 +45,7 @@ export const GitHubButton: React.FC<{href?: string}> = () => (
 const Header = styled.header`
   border-bottom-style: solid;
   position: fixed;
+
   right: 0;
   left: 0;
   z-index: 4;
@@ -52,16 +54,11 @@ const Header = styled.header`
   ${getColorCssFromTheme('borderBottomColor', 'interface040')};
   ${getColorCssFromTheme('backgroundColor', 'interfaceBackground')};
   ${getTypographyPresetFromTheme('utilityLabel020')}
-  ${getSpacingCssFromTheme('paddingTop', 'space010')};
+  ${getSpacingCssFromTheme('paddingTop', 'space000')};
   ${getSpacingCssFromTheme('paddingBottom', 'space000')};
 
   ${getMediaQueryFromTheme('lg')} {
-    ${getSpacingCssFromTheme('paddingTop', 'space030')};
-    ${getSpacingCssFromTheme('paddingBottom', 'space030')};
     ${getSizingCssFromTheme('height', 'sizing100')};
-    // width:100vw;
-    // ${getSpacingCssFromTheme('marginLeft', 'space050')};
-    // ${getSpacingCssFromTheme('marginRight', 'space050')};
   }
 `;
 
@@ -87,28 +84,34 @@ type NavItemProps = {
 };
 
 const navItems = routes.map(({title, subNav}) => ({title, id: subNav[0].id}));
-const fullAudioPlayerAreasMobile = `
+const siteheaderAreas = `
 logo menu . github theme 
 
  `;
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
   ({handleSidebarClick, toggleTheme, themeMode, path, sidebarOpen}, ref) => {
     const renderMobileNavigation = (handleClick: () => void) => (
-      <MobileMenu
-        onClick={handleClick}
-        onKeyDown={handleEnterKeyPress(handleClick)}
-        tabIndex={0}
-        data-testid="mobile-menu-icon"
-      >
-        {sidebarOpen ? (
-          <IconFilledClose
-            overrides={{size: 'iconSize020', stylePreset: 'closeIcon'}}
-          />
-        ) : (
-          <IconFilledMenu
-            overrides={{size: 'iconSize020', stylePreset: 'inkContrast'}}
-          />
-        )}
+      <MobileMenu>
+        <IconButton
+          aria-label="menu button"
+          onClick={handleClick}
+          onKeyDown={handleEnterKeyPress(handleClick)}
+          tabIndex={0}
+          data-testid="mobile-menu-icon"
+          overrides={{
+            stylePreset: 'iconButtonMinimalPrimary',
+          }}
+        >
+          {sidebarOpen ? (
+            <IconFilledClose
+              overrides={{size: 'iconSize020', stylePreset: 'closeIcon'}}
+            />
+          ) : (
+            <IconFilledMenu
+              overrides={{size: 'iconSize020', stylePreset: 'inkContrast'}}
+            />
+          )}
+        </IconButton>
       </MobileMenu>
     );
 
@@ -121,8 +124,9 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
           overrides={{
             stylePreset: 'linkTopNavigation',
-            minHeight: '68px',
-            // marginInline: '40px',
+            minHeight: '80px',
+            paddingInline: '10px',
+            marginInline: '20px',
           }}
         >
           {title}
@@ -147,19 +151,17 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
             </GridLayoutItem>
           </GridLayout>
         </Visible>
-
         <Visible lg xl>
           <GridLayout
-            columns={{lg: 'repeat(5, auto)'}}
+            columns={{lg: '276px auto 1fr  1fr 80px'}}
             columnGap="20px"
-            //  alignItems="center"
             areas={{
-              lg: fullAudioPlayerAreasMobile,
+              lg: siteheaderAreas,
             }}
           >
             {Areas => (
               <>
-                <Areas.Logo alignSelf="center">
+                <Areas.Logo alignSelf="center" justifySelf="start">
                   <Link
                     type="standalone"
                     href="/"
@@ -168,7 +170,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                     <NewsKitLogo />
                   </Link>
                 </Areas.Logo>
-                <Areas.Menu alignSelf="center" justifySelf="start">
+                <Areas.Menu alignSelf="center" justifySelf="center">
                   <Menu aria-label="main-navigation">
                     {renderNavItems(navItems, path)}
                   </Menu>
