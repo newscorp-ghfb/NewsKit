@@ -84,6 +84,15 @@ const fullAudioPlayerAreasMobile = `
   prev        backward  play      forward   next
  `;
 
+const fullAudioPlayerLiveAreasDesktop = `
+  live   prev   backward   play   forward   next   link
+ `;
+
+const fullAudioPlayerLiveAreasMobile = `
+  none        none      none      link      live
+  prev        backward  play      forward   next
+`;
+
 const AudioPlayerFullRecorded = (props: {
   ariaLandmark: string;
   src?: string;
@@ -186,8 +195,8 @@ const AudioPlayerFullLive = (props: {
       rowGap="space040"
       columnGap="space040"
       areas={{
-        xs: fullAudioPlayerAreasMobile,
-        md: fullAudioPlayerAreasDesktop,
+        xs: fullAudioPlayerLiveAreasMobile,
+        md: fullAudioPlayerLiveAreasDesktop,
       }}
     >
       {Areas => (
@@ -217,12 +226,12 @@ const AudioPlayerFullLive = (props: {
             />
           </Areas.Next>
 
-          <Areas.Volume alignSelf="center" justifySelf="start">
+          <Areas.Live alignSelf="center" justifySelf={{xs: 'end', md: 'start'}}>
             <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
               <IconFilledGraphicEq />
               Live
             </Flag>
-          </Areas.Volume>
+          </Areas.Live>
 
           <Areas.Link alignSelf="center" justifySelf="end">
             <Hidden xs sm>
