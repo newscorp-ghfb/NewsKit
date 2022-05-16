@@ -136,11 +136,11 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
     return (
       <Header data-testid="header-navigation" ref={ref}>
         <Visible xs sm md>
-          <GridLayout columns={{xs: 'repeat(3, auto)'}}>
+          <GridLayout columns={{xs: '1fr 60%'}}>
             <GridLayoutItem justifySelf="start" alignSelf="center">
               {renderMobileNavigation(handleSidebarClick)}
             </GridLayoutItem>
-            <GridLayoutItem justifySelf="center" alignSelf="center">
+            <GridLayoutItem justifySelf="start" alignSelf="center">
               <Link
                 type="standalone"
                 href="/"
