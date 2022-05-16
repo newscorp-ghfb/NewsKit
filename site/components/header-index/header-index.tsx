@@ -6,9 +6,9 @@ import {
   styled,
   getMediaQueryFromTheme,
   Block,
-  getColorFromTheme,
   getSpacingFromTheme,
   ImageProps,
+  getColorCssFromTheme,
 } from 'newskit';
 import {renderIfReactComponent} from 'newskit/utils/component';
 import React from 'react';
@@ -22,7 +22,8 @@ const StyledGrid = styled(Grid)`
 `;
 
 const HeaderIndexContainer = styled.div`
-  background-color: ${getColorFromTheme('interface020')};
+  border-bottom: 1px solid;
+  ${getColorCssFromTheme('borderColor', 'interface040')}
   ${getSpacingFromTheme(
     {xs: 'space080', md: 'space090'},
     undefined,
