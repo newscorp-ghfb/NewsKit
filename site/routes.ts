@@ -48,16 +48,18 @@ export default [
             page: true,
             id: '/getting-started/design/design-overview',
             description:
-              'NewsKit has everything you need to efficiently build scalable digital products, including Figma toolkits such as web UI components, theme libraries, plugins, and guidance.',
+              'Everything you need to know about using NewsKit to design digital products.',
             illustration: 'guides/design-overview/hero',
+            cardTitle: 'Design Overview',
           },
           {
             title: 'Quickstart',
             page: true,
             id: '/getting-started/design/design-quickstart',
             description:
-              'This page describes how to get started designing a digital product with NewsKit.',
+              'A step by step guide to get you up and running using NewsKit.',
             illustration: 'guides/design-quickstart/hero',
+            cardTitle: 'Design Quickstart Guide',
           },
         ],
       },
@@ -70,26 +72,36 @@ export default [
             page: true,
             id: '/getting-started/code/engineering-overview',
             description:
-              'The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.',
+              'Everything you need to know about using NewsKit’s library of React web components.',
             illustration: 'guides/engineering-overview/hero',
+            cardTitle: 'Engineering Overview',
           },
           {
             title: 'Quickstart',
             page: true,
             id: '/getting-started/code/engineering-quickstart',
             description:
-              'This page describes how to get started building a web application with NewsKit.',
+              'Guides on how to get started building a web application with NewsKit.',
             illustration: 'guides/engineering-quickstart/hero',
+            cardTitle: 'Engineering Quickstart Guide',
           },
           {
             title: 'Instrumentation setup',
             page: true,
             id: '/getting-started/code/instrumentation',
+            description:
+              'NewsKit components are built to emit events "out of the box".',
+            illustration: 'guides/overview/instrumentation-setup',
+            cardTitle: 'Instrumentation Setup',
           },
           {
             title: 'Testing',
             page: true,
             id: '/getting-started/code/testing',
+            description:
+              'NewsKit uses Jest and React Testing Library for unit testing.',
+            illustration: 'guides/overview/testing',
+            cardTitle: 'Testing',
           },
         ],
       },
@@ -450,6 +462,14 @@ export default [
             illustration: 'components/drawer/drawer-illustration',
           },
           {
+            title: 'Fieldset',
+            page: true,
+            id: '/components/fieldset',
+            description:
+              'The Fieldset is used to provide contextual information around a group of form controls in a web form.',
+            illustration: 'components/fieldset/hero',
+          },
+          {
             title: 'Grid',
             page: true,
             id: '/components/grid',
@@ -463,7 +483,7 @@ export default [
             id: '/components/grid-layout',
             description:
               'Used to construct a visual grid for responsive page layout. A Proxy for CSS grid.',
-            illustration: 'static/placeholder-3x2.png',
+            illustration: 'components/grid-layout-illustration',
           },
           {
             title: 'Modal',
@@ -480,6 +500,14 @@ export default [
             description:
               'A low-level foundational component used to layout items in a horizontal or vertical stack.',
             illustration: 'components/stack-illustration',
+          },
+          {
+            title: 'Structured List',
+            page: true,
+            id: '/components/structured-list',
+            description:
+              'Structured lists group content that is similar or related.',
+            illustration: 'components/standfirst-illustration',
           },
           {
             title: 'Visibility',

@@ -84,6 +84,20 @@ exports[`TextBlock renders with default styles 1`] = `
 </DocumentFragment>
 `;
 
+exports[`TextBlock renders with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  margin-block: 30px;
+  padding-block: 30px;
+}
+
+<p
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
 exports[`TextBlock renders with no text cropping 1`] = `
 <DocumentFragment>
   .emotion-0 {

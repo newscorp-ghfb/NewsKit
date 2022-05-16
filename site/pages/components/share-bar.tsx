@@ -34,12 +34,12 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Actions & Inputs',
-      name: 'Share Bar',
+      name: 'Share Bar (deprecated)',
       hero: {
         illustration: 'components/share-bar/share-bar-illustration',
       },
       introduction:
-        'The Share Bar component allows users to share hyperlinks of content across their various social media and communication channels. It is usually embedded within article pages in order to increase the reach of a story.',
+        'The Share Bar component allows users to share hyperlinks of content across their various social media and communication channels. It is usually embedded within article pages in order to increase the reach of a story. The Share Bar component is now deprecated and will be removed in the next major release.',
     }}
     componentDefaultsKey="shareBar"
     meta={{

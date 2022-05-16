@@ -10,6 +10,12 @@ import {useForm, FormProvider} from 'react-hook-form';
 import {FormProps, FormRef, FieldsHadErrorObject} from './types';
 import {FormValidationContextProvider} from './context';
 import {excludeReactHookFormProps} from './utils';
+import {logicalProps} from '../utils/logical-properties';
+import {styled} from '../utils';
+
+const StyledForm = styled.form`
+  ${logicalProps()}
+`;
 
 export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
   const {
@@ -93,14 +99,14 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
       value={{validationMode, fieldsHadError, setFieldsHadError}}
     >
       <FormProvider {...formContext}>
-        <form
+        <StyledForm
           {...excludeReactHookFormProps(props)}
           ref={formRef}
           onSubmit={formContext.handleSubmit(onSubmit, onSubmitInvalid)}
           noValidate
         >
           {children}
-        </form>
+        </StyledForm>
       </FormProvider>
     </FormValidationContextProvider>
   );

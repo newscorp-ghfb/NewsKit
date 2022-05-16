@@ -7634,3 +7634,523 @@ exports[`renders grid and cell overrides on banner 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`renders with logical props overrides 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  background-color: #05717D;
+  padding: 20px;
+  min-height: 64px;
+  margin-block: 30px;
+  padding-block: 30px;
+}
+
+.emotion-1 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: flex-start;
+  align-content: flex-start;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  margin-bottom: 24px;
+}
+
+.emotion-7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-8 {
+  margin: 0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  color: #FFFFFF;
+}
+
+.emotion-8::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-8::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-8 svg {
+  fill: #FFFFFF;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="banner-container"
+      role="region"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <p
+                    class="emotion-8"
+                  >
+                    Banner text
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @media screen {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  background-color: #05717D;
+  padding: 20px;
+  min-height: 64px;
+  margin-block: 30px;
+  padding-block: 30px;
+}
+
+.emotion-1 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: flex-start;
+  align-content: flex-start;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-right: 12px;
+}
+
+.emotion-7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-8 {
+  margin: 0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  color: #FFFFFF;
+}
+
+.emotion-8::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-8::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-8 svg {
+  fill: #FFFFFF;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="banner-container"
+      role="region"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <p
+                    class="emotion-8"
+                  >
+                    Banner text
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -16,7 +16,7 @@ export interface BaseFlagOverrides extends LogicalProps {
    * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingBlock` and `paddingInline` instead.
    */
   spaceInset?: MQ<string>;
-  spaceInline?: MQ<string>; // Note: LogicalProps can not replace spaceInline! spaceInline = Stack's gap
+  spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
   width?: MQ<string>;
   height?: MQ<string>;
   minWidth?: MQ<string>;

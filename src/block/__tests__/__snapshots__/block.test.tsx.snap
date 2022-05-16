@@ -33,6 +33,19 @@ exports[`Block with props renders with customBlock style preset 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Block with props renders with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-block: 30px;
+  padding-block: 30px;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
 exports[`Block with props renders with spaceInline020 1`] = `
 <DocumentFragment>
   .emotion-0 {
