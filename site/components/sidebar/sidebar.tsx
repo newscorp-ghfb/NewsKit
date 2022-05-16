@@ -28,8 +28,8 @@ interface SidebarWrapperProps {
 }
 
 const StyledDrawer = styled(Drawer)`
-  // not working on scroll
   ${getSpacingCssFromTheme('marginTop', '48px')};
+  height: calc(100vh - 48px);
 `;
 
 const SidebarDesktop = styled.div<SidebarWrapperProps>`
@@ -88,12 +88,12 @@ const Sidebar: React.FC<SidebarProps> = ({
             spaceInset: 'spaceInset000',
           },
           panel: {
-            spaceStack: '50px',
             minSize: '100%',
             marginBlock: '0px',
           },
         }}
       >
+        <Block spaceInset="space020" id="i am space" />
         <SidebarNav />
         <Block marginInline="space060">
           <GitHubLaunch href="https://github.com/newscorp-ghfb/newskit" />

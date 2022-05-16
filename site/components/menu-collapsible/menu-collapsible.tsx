@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {
   Divider,
-  Flow,
   getSpacingCssFromTheme,
   GridLayout,
   GridLayoutItem,
@@ -10,7 +9,6 @@ import {
   Menu,
   MenuGroup,
   MenuItem,
-  Stack,
   styled,
   TextBlock,
 } from 'newskit';
@@ -91,7 +89,7 @@ export const MenuNavCollapsible = ({
                       stylePreset: 'sideBarNavigation',
                       typographyPreset: 'utilityButton020',
                       paddingInline: 'space060',
-                      marginBlock: 'space020',
+                      marginBlockEnd: 'space030',
                     }}
                     size="small"
                   >
@@ -122,7 +120,6 @@ export const MenuNavCollapsible = ({
                       typographyPreset: 'utilityHeading010',
                       stylePreset: 'sidebarHeader',
                       spaceInline: 'space030',
-                      // to make spaceinset work you need to check marginInline on the titles
                       spaceInset: 'space060',
                     },
                   }}
@@ -158,26 +155,29 @@ export const MenuNavCollapsible = ({
                 : setOpenPanelIds([index])
             }
           >
-            <Stack
-              flow={Flow.HorizontalCenter}
-              stackDistribution="space-between"
-            >
+            <GridLayout columns="1fr auto" columnGap="20px">
               {title}
 
               {openPanelIds.includes(index) ? (
                 <IconExpandLess
                   aria-haspopup="true"
                   aria-expanded="true"
-                  overrides={{size: 'iconSize020', stylePreset: 'inkContrast'}}
+                  overrides={{
+                    size: 'iconSize020',
+                    stylePreset: 'inkContrast',
+                  }}
                 />
               ) : (
                 <IconExpandMore
                   aria-haspopup="false"
                   aria-expanded="false"
-                  overrides={{size: 'iconSize020', stylePreset: 'inkContrast'}}
+                  overrides={{
+                    size: 'iconSize020',
+                    stylePreset: 'inkContrast',
+                  }}
                 />
               )}
-            </Stack>
+            </GridLayout>
           </TextBlock>
 
           {subNav && createMenuItem(subNav)}
