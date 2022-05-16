@@ -176,7 +176,6 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                     {renderNavItems(navItems, path)}
                   </Menu>
                 </Areas.Menu>
-                {/* should I add these into one area? */}
                 <Areas.Github alignSelf="center" justifySelf="end">
                   <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
                 </Areas.Github>

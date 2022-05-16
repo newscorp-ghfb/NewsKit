@@ -7,12 +7,12 @@ import {
   GridLayoutItem,
   H3,
   IconOutlinedLaunch,
-  Label,
   Menu,
   MenuGroup,
   MenuItem,
   Stack,
   styled,
+  TextBlock,
 } from 'newskit';
 import {IconExpandLess, IconExpandMore} from '../icons';
 import {MenuCollapsible} from './styled';
@@ -148,14 +148,14 @@ export const MenuNavCollapsible = ({
           className={openPanelIds.includes(index) ? 'expanded' : 'collapsed'}
           key={title}
         >
-          <Label
+          <TextBlock
             // role="menuitem"
             aria-expanded={openPanelIds.includes(index) ? 'true' : 'false'}
-            overrides={{
-              // for About right spacing
-              marginInline: 'space060',
-              typographyPreset: 'utilityHeading020',
-            }}
+            // overrides={{
+            // for About right spacing
+            marginInline="space060"
+            typographyPreset="utilityHeading020"
+            // }}
             onClick={() =>
               openPanelIds.includes(index)
                 ? setOpenPanelIds([])
@@ -182,7 +182,7 @@ export const MenuNavCollapsible = ({
                 />
               )}
             </Stack>
-          </Label>
+          </TextBlock>
 
           {subNav && createMenuItem(subNav)}
         </MenuCollapsible>

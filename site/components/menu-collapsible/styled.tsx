@@ -24,10 +24,10 @@ const StyledMenuCollapsibleItem = styled.div<
   ${getSpacingCssFromTheme('marginTop', 'space040')};
   ${getSpacingCssFromTheme('marginBottom', 'space000')};
 
-  &.collapsed > label {
+  &.collapsed > p {
     ${getSpacingCssFromTheme('marginBottom', 'space050')};
   }
-  &.expanded > label {
+  &.expanded > p {
     ${getSpacingCssFromTheme('marginBottom', 'space040')};
   }
   &.collapsed > li {
