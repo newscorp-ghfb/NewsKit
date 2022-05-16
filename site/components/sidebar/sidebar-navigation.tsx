@@ -3,7 +3,6 @@ import {useRouter} from 'next/router';
 import {
   Block,
   getSpacingCssFromTheme,
-  Label,
   Menu,
   MenuDivider,
   MenuItem,
@@ -21,6 +20,12 @@ const StyledTitle = styled(TextBlock)`
   ${getSpacingCssFromTheme('marginBottom', 'space040')};
 `;
 
+const MenuItemStyled = styled(MenuItem)`
+  ${({selected}) =>
+    selected ? getSpacingCssFromTheme('paddingInline', '12px') : undefined}
+  width: 100vw;
+`;
+
 const PageMenuLinks: React.FC<PageLinkProps> = ({
   page,
   active,
@@ -36,12 +41,13 @@ const PageMenuLinks: React.FC<PageLinkProps> = ({
   });
 
   return (
-    <MenuItem
+    <MenuItemStyled
       href={href}
       data-testid={page}
       selected={active}
       overrides={{
         stylePreset: 'sideBarNavigation',
+
         // tier 1
         // add minHeight to make sure indicator and container remain same height
         minHeight: '40px',
@@ -49,7 +55,7 @@ const PageMenuLinks: React.FC<PageLinkProps> = ({
       size="small"
     >
       <div ref={ref}>{children}</div>
-    </MenuItem>
+    </MenuItemStyled>
   );
 };
 export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
@@ -66,16 +72,13 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
                 title.includes('Getting started') ? undefined : (
                   <>
                     <PageMenuLinks active={path.includes(id)} href={id}>
-                      <Label
-                        overrides={{
-                          stylePreset: 'interactivePrimary030',
-                          typographyPreset: 'utilityButton020',
-                          spaceStack: 'space000',
-                          marginInline: 'space040',
-                        }}
+                      <TextBlock
+                        stylePreset="interactivePrimary030"
+                        typographyPreset="utilityButton020"
+                        marginInline="space040"
                       >
                         {title}
-                      </Label>
+                      </TextBlock>
                     </PageMenuLinks>
                   </>
                 )}
@@ -128,9 +131,7 @@ const MenuNavDesktop = () => {
       >
         {currentSection &&
           currentSection.map(({subNav}) => (
-            // <div id='isthisit' key={title}>
             <SiteMenuItem menuItemList={subNav} />
-            // </div>
           ))}
       </Menu>
     </>

@@ -31,6 +31,8 @@ const StyledAnchor = styled.a`
 `;
 
 const MenuItemStyled = styled(MenuItem)`
+  ${({selected}) =>
+    selected ? getSpacingCssFromTheme('paddingInline', '28px') : undefined}
   width: 100vw;
 `;
 export const GitHubLaunch: React.FC<{href?: string}> = () => (
@@ -79,19 +81,37 @@ export const MenuNavCollapsible = ({
           <React.Fragment key={id}>
             {page ? (
               <>
-                <MenuItemStyled
-                  href={id}
-                  selected={path.includes(id)}
-                  overrides={{
-                    minHeight: '40px',
-                    stylePreset: 'sideBarNavigation',
-                    typographyPreset: 'utilityButton020',
-                    paddingInline: 'space060',
-                  }}
-                  size="small"
-                >
-                  {title}
-                </MenuItemStyled>
+                {title.includes('Getting started') ||
+                title.includes('Overview') ? (
+                  <MenuItemStyled
+                    href={id}
+                    selected={path.includes(id)}
+                    overrides={{
+                      minHeight: '40px',
+                      stylePreset: 'sideBarNavigation',
+                      typographyPreset: 'utilityButton020',
+                      paddingInline: 'space060',
+                      marginBlock: 'space020',
+                    }}
+                    size="small"
+                  >
+                    {title}
+                  </MenuItemStyled>
+                ) : (
+                  <MenuItemStyled
+                    href={id}
+                    selected={path.includes(id)}
+                    overrides={{
+                      minHeight: '40px',
+                      stylePreset: 'sideBarNavigation',
+                      typographyPreset: 'utilityButton020',
+                      paddingInline: 'space060',
+                    }}
+                    size="small"
+                  >
+                    {title}
+                  </MenuItemStyled>
+                )}
               </>
             ) : (
               <>
