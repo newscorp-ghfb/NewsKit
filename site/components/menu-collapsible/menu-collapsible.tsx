@@ -149,13 +149,9 @@ export const MenuNavCollapsible = ({
           key={title}
         >
           <TextBlock
-            // role="menuitem"
             aria-expanded={openPanelIds.includes(index) ? 'true' : 'false'}
-            // overrides={{
-            // for About right spacing
             marginInline="space060"
             typographyPreset="utilityHeading020"
-            // }}
             onClick={() =>
               openPanelIds.includes(index)
                 ? setOpenPanelIds([])
