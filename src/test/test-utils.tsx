@@ -4,17 +4,9 @@ import {
   RenderOptions,
   RenderResult,
 } from '@testing-library/react';
-import {
-  newskitLightTheme,
-  ThemeProvider,
-  ThemeProviderProps,
-  UncompiledTheme,
-} from '../theme';
-import {
-  InstrumentationProvider,
-  InstrumentationEvent,
-} from '../instrumentation';
-import {LayerOrganizer} from '../layer';
+import {newskitLightTheme, ThemeProviderProps, UncompiledTheme} from '../theme';
+import {InstrumentationEvent} from '../instrumentation';
+import {NewskitProvider} from '../newskitprovider';
 
 export const renderToFragment = (
   ui: React.ReactElement,
@@ -30,9 +22,9 @@ export const renderWithImplementation = <T extends {}>(
   renderer(<Component {...(props as T)} />, {
     ...options,
     wrapper: ({children}) => (
-      <InstrumentationProvider fireEvent={fireEvent}>
-        <ThemeProvider theme={newskitLightTheme}>{children}</ThemeProvider>
-      </InstrumentationProvider>
+      <NewskitProvider theme={newskitLightTheme} instrumentation={{fireEvent}}>
+        {children}
+      </NewskitProvider>
     ),
   });
 
@@ -47,9 +39,7 @@ export const renderWithThemeFactory = (
   renderer(<Component {...(props as T)} />, {
     ...options,
     wrapper: ({children}) => (
-      <ThemeProvider theme={theme}>
-        <LayerOrganizer>{children}</LayerOrganizer>
-      </ThemeProvider>
+      <NewskitProvider theme={theme}>{children}</NewskitProvider>
     ),
   });
 
