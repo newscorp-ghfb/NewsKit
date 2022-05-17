@@ -1,38 +1,22 @@
 import React, {useEffect, useState} from 'react';
 import {
   Divider,
-  getSpacingCssFromTheme,
   GridLayout,
   GridLayoutItem,
   H3,
   IconOutlinedLaunch,
   Menu,
   MenuGroup,
-  MenuItem,
-  styled,
   TextBlock,
 } from 'newskit';
 import {IconExpandLess, IconExpandMore} from '../icons';
-import {MenuCollapsible} from './styled';
+import {
+  MenuCollapsible,
+  MenuItemStyled,
+  MobileNavigationDivider,
+  StyledAnchor,
+} from './styled';
 
-const MobileNavigationDivider = styled.div`
-  width: 100vw;
-  position: relative;
-  left: calc(-50vw + 50%);
-
-  ${getSpacingCssFromTheme('marginTop', 'space050')};
-  ${getSpacingCssFromTheme('marginBottom', 'space050')};
-`;
-
-const StyledAnchor = styled.a`
-  text-decoration: none;
-`;
-
-const MenuItemStyled = styled(MenuItem)`
-  ${({selected}) =>
-    selected ? getSpacingCssFromTheme('paddingInline', '28px') : undefined}
-  width: 100vw;
-`;
 export const GitHubLaunch: React.FC<{href?: string}> = () => (
   <StyledAnchor href="https://github.com/newscorp-ghfb/newskit">
     <GridLayout columns="1fr 24px">

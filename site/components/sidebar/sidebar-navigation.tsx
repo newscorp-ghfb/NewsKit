@@ -48,8 +48,6 @@ const PageMenuLinks: React.FC<PageLinkProps> = ({
       overrides={{
         stylePreset: 'sideBarNavigation',
 
-        // tier 1
-        // add minHeight to make sure indicator and container remain same height
         minHeight: '40px',
       }}
       size="small"

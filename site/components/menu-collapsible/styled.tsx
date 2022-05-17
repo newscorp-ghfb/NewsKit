@@ -3,6 +3,7 @@ import {
   getSizingFromTheme,
   getSpacingCssFromTheme,
   getStylePresetFromTheme,
+  MenuItem,
   styled,
 } from 'newskit';
 
@@ -87,5 +88,22 @@ export const MenuCollapsible = React.forwardRef<
     </StyledMenuCollapsible>
   );
 });
+export const MobileNavigationDivider = styled.div`
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
 
+  ${getSpacingCssFromTheme('marginTop', 'space050')};
+  ${getSpacingCssFromTheme('marginBottom', 'space050')};
+`;
+
+export const StyledAnchor = styled.a`
+  text-decoration: none;
+`;
+
+export const MenuItemStyled = styled(MenuItem)`
+  ${({selected}) =>
+    selected ? getSpacingCssFromTheme('paddingInline', '28px') : undefined}
+  width: 100vw;
+`;
 MenuCollapsible.displayName = 'MenuCollapsible';
