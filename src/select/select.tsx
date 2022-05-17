@@ -8,7 +8,6 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {shouldRenderInModal} from './utils';
-import {withMediaQueryProvider} from '../utils/hooks/use-media-query/context';
 import {useBreakpointKey} from '../utils/hooks/use-media-query';
 import {useVirtualizedList} from './use-virtualized-list';
 import {Layer} from '../layer';
@@ -242,9 +241,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
 
 ThemelessSelect.displayName = 'Select';
 
-export const Select = withMediaQueryProvider(
-  withOwnTheme(ThemelessSelect)({
-    defaults,
-    stylePresets,
-  }),
-);
+export const Select = withOwnTheme(ThemelessSelect)({
+  defaults,
+  stylePresets,
+});
