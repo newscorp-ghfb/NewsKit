@@ -41,9 +41,7 @@ const defaultKeyboardShortcuts = {
 export const AudioPlayerComposable = ({
   children,
   src,
-  /* istanbul ignore next */
   autoPlay = false,
-  /* istanbul ignore next */
   live = false,
   ariaLandmark,
   keyboardShortcuts: keyboardShortcutsProp,
@@ -73,7 +71,6 @@ export const AudioPlayerComposable = ({
     setDisplayDuration(0);
   }, [src]);
 
-  // @ts-ignore as we are not passing all the parameters yet.
   const {
     audioEvents,
     togglePlay,
@@ -95,6 +92,7 @@ export const AudioPlayerComposable = ({
     duration,
     setDuration,
     src,
+    live,
   } as AudioFunctionDependencies);
 
   const getPlayPauseButtonProps = useCallback(
@@ -113,8 +111,6 @@ export const AudioPlayerComposable = ({
 
       if (playing) {
         ariaPressed = true;
-        // TODO remove ignore as we implement the "live" functionality back and write test for it
-        /* istanbul ignore next */
         if (canPause) {
           playStateIcon = <IconFilledPause />;
           ariaLabel = 'Pause';

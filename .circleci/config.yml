@@ -1326,6 +1326,7 @@ workflows:
             - test_e2e_comps
             - test_e2e_docs_prod
       - test_newskit_in_nextjs_app:
+          <<: *only_on_version_tag
           requires: 
             - build_components
 
