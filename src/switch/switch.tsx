@@ -1,22 +1,32 @@
 import React from 'react';
-import {SwitchOverrides, SwitchProps} from './types';
+import {isValidElementType} from 'react-is';
+import {SwitchProps} from './types';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {BaseSwitch} from '../base-switch';
-import {StyledTrackColumn, StyledThumb, StyledSwitchContainer} from './styled';
+import {StyledSwitchContainer, StyledThumb, StyledTrackColumn} from './styled';
 import {BaseSwitchIconProps} from '../base-switch/types';
+import {Override} from '../utils/overrides';
+
+// TODO: Contains similar logic to getComponentOverrides to cast the override icon as a component. But why is this necessary?
+const iconAsComponent = (OverridesValue?: Override<BaseSwitchIconProps>) => {
+  if (OverridesValue && isValidElementType(OverridesValue)) {
+    return OverridesValue as React.ComponentType<BaseSwitchIconProps>;
+  }
+  return null;
+};
 
 const SwitchSelector = ({
   size,
   checked,
-  parentOverrides,
+  parentOverrides: overrides,
   children,
   isFocused,
   isHovered,
 }: BaseSwitchIconProps & {children?: React.ReactNode}) => {
-  const overrides = parentOverrides as SwitchOverrides;
-  const {onIcon: OnIcon, offIcon: OffIcon} = overrides;
+  const OnIcon = iconAsComponent(overrides?.onIcon);
+  const OffIcon = iconAsComponent(overrides?.offIcon);
   return (
     <StyledSwitchContainer size={size} overrides={overrides}>
       <StyledTrackColumn
@@ -44,7 +54,7 @@ const SwitchSelector = ({
 
 const ThemelessSwitch = React.forwardRef<HTMLInputElement, SwitchProps>(
   ({overrides, ...rest}, inputRef) => {
-    const ThumbIcon = overrides?.icon;
+    const ThumbIcon = iconAsComponent(overrides?.icon);
 
     const SwitchSelectorWithIcon = (props: BaseSwitchIconProps) => (
       <SwitchSelector {...props}>

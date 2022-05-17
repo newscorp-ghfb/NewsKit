@@ -1,10 +1,6 @@
 import React from 'react';
 import {BaseSwitchProps} from '../base-switch';
-import {
-  BaseSwitchIconProps,
-  BaseSwitchOverrides,
-  BaseSwitchState,
-} from '../base-switch/types';
+import {BaseSwitchOverrides, BaseSwitchState} from '../base-switch/types';
 
 export type SwitchOverrides = {
   spaceStack?: BaseSwitchOverrides['spaceStack'];
@@ -20,9 +16,9 @@ export type SwitchOverrides = {
   thumb?: BaseSwitchOverrides['thumb'];
   feedback?: BaseSwitchOverrides['feedback'];
   label?: BaseSwitchOverrides['label'];
-  onIcon?: React.ComponentType<BaseSwitchIconProps>;
-  offIcon?: React.ComponentType<BaseSwitchIconProps>;
-  icon?: React.ComponentType<BaseSwitchIconProps>;
+  onIcon?: BaseSwitchOverrides['onIcon'];
+  offIcon?: BaseSwitchOverrides['offIcon'];
+  icon?: BaseSwitchOverrides['icon'];
 };
 
 export type SwitchState = Extract<BaseSwitchState, 'disabled'>;
