@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {
   createEventInstrumentation,
-  InstrumentationProvider,
   instrumentationHandlers,
   UncompiledTheme,
   NewskitProvider,
@@ -135,23 +134,24 @@ export default class MyApp extends App<Props, State> {
             alt: 'NewsKit design system',
           }}
         />
-        <InstrumentationProvider
-          {...createEventInstrumentation(handlers, {
+
+        <NewskitProvider
+          theme={theme}
+          layer={{zIndex: 1000}}
+          instrumentation={createEventInstrumentation(handlers, {
             ...pageProps,
           })}
         >
-          <NewskitProvider theme={theme} zIndex={1000}>
-            <ThemeMode.Provider value={themeMode}>
-              <PageLoadInstrumentation />
-              <Component
-                {...pageProps}
-                path={path}
-                toggleTheme={this.toggleTheme}
-                themeMode={themeMode}
-              />
-            </ThemeMode.Provider>
-          </NewskitProvider>
-        </InstrumentationProvider>
+          <ThemeMode.Provider value={themeMode}>
+            <PageLoadInstrumentation />
+            <Component
+              {...pageProps}
+              path={path}
+              toggleTheme={this.toggleTheme}
+              themeMode={themeMode}
+            />
+          </ThemeMode.Provider>
+        </NewskitProvider>
       </>
     );
   }
