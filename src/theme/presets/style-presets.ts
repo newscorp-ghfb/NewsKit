@@ -70,31 +70,31 @@ stylePresets.feedback = {
   base: {
     backgroundColor: '{{colors.interactiveInput040}}',
     borderRadius: '{{borders.borderRadiusCircle}}',
-    opacity: '0',
+    opacity: '{{overlays.opacity000}}',
   },
   hover: {
-    opacity: '0.2',
+    opacity: '{{overlays.opacity020}}',
   },
   disabled: {
-    opacity: '0',
+    opacity: '{{overlays.opacity000}}',
   },
   'hover:active': {
-    opacity: '0.4',
+    opacity: '{{overlays.opacity040}}',
   },
   'valid:hover': {
     backgroundColor: '{{colors.interactivePositive040}}',
-    opacity: '0.2',
+    opacity: '{{overlays.opacity020}}',
   },
   'valid:hover:active': {
     backgroundColor: '{{colors.interactivePositive040}}',
-    opacity: '0.4',
+    opacity: '{{overlays.opacity040}}',
   },
   'invalid:hover': {
     backgroundColor: '{{colors.interactiveNegative040}}',
-    opacity: '0.2',
+    opacity: '{{overlays.opacity020}}',
   },
   'invalid:hover:active': {
     backgroundColor: '{{colors.interactiveNegative040}}',
-    opacity: '0.4',
+    opacity: '{{overlays.opacity040}}',
   },
 };
