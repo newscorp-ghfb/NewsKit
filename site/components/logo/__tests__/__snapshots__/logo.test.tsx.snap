@@ -3,20 +3,12 @@
 exports[`Logo Default logo renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   overflow: hidden;
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    margin-bottom: 16px;
+    margin-left: 24px;
   }
 }
 

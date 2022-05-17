@@ -146,8 +146,10 @@ export const MenuNavCollapsible = ({
           key={title}
         >
           <TextBlock
+            as="h5"
             aria-expanded={openPanelIds.includes(index) ? 'true' : 'false'}
             marginInline="space060"
+            marginBlock="space040"
             typographyPreset="utilityHeading020"
             onClick={() =>
               openPanelIds.includes(index)

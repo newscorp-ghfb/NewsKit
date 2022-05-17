@@ -63,15 +63,15 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-3 {
-  margin-top: 12px;
+  margin-top: 16px;
   margin-bottom: 0;
 }
 
-.emotion-3.collapsed>label {
+.emotion-3.collapsed>p {
   margin-bottom: 24px;
 }
 
-.emotion-3.expanded>label {
+.emotion-3.expanded>p {
   margin-bottom: 16px;
 }
 
@@ -85,8 +85,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-3.expanded>li {
-  margin-bottom: 16px;
-  max-height: 9999px;
   transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
   transition-delay: 0s;
 }
@@ -107,21 +105,15 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-4 {
-  display: block;
-  color: #0A0A0A;
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 18px;
   line-height: 20.25px;
   font-weight: 700;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
   margin-inline: 32px;
-}
-
-.emotion-4:disabled {
-  color: #C0C0C0;
+  margin-block: 16px;
 }
 
 .emotion-4::before {
@@ -137,21 +129,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  display: grid;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  grid-template-columns: 1fr auto;
 }
 
 .emotion-6 {
@@ -200,12 +181,12 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   }
 }
 
-.emotion-8 {
+.emotion-7 {
   box-sizing: border-box;
   margin-bottom: 0;
 }
 
-.emotion-9 {
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -224,6 +205,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   min-height: 40px;
   width: 100%;
   padding: 12px 16px;
+  padding-inline: 32px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -231,68 +213,43 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 2px 0 0;
   color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   margin: 0;
   cursor: pointer;
+  padding-inline: 32px;
+  color: #577FFB;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-color: transparent transparent #577FFB transparent;
+  border: 4px solid transparent;
+  border-left-color: #577FFB;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   text-align: left;
+  padding-inline: 28px;
   width: 100vw;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-9 svg {
-  fill: #535353;
-}
-
-.emotion-9:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
+  color: #577FFB;
   background-color: #E0E7FF;
-  color: #577FFB;
 }
 
-.emotion-9:hover:not(:disabled) svg {
-  fill: #577FFB;
-}
-
-.emotion-9:active:not(:disabled) {
-  background-color: #AEBFFF;
-  color: #577FFB;
-}
-
-.emotion-9:active:not(:disabled) svg {
-  fill: #577FFB;
-}
-
-.emotion-9:selected:hover:not(:disabled) {
-  background-color: transparent;
-  border-color: #577FFB;
-  color: #577FFB;
-}
-
-.emotion-9:selected:hover:not(:disabled) svg {
-  fill: #577FFB;
-}
-
-.emotion-9:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-9:disabled svg {
-  fill: #C0C0C0;
+.emotion-8:active:not(:disabled) {
+  color: #213A82;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -300,14 +257,14 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -328,7 +285,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -337,52 +294,52 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-12 {
-  display: block;
+.emotion-11 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  margin-bottom: 0;
-  margin-right: 40px;
-  margin-inline: 16px;
+  display: inline-block;
 }
 
-.emotion-12::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-12::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-18 {
+.emotion-17 {
   box-sizing: border-box;
   margin-bottom: 24px;
 }
 
-.emotion-18>ul {
+.emotion-17>ul {
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.emotion-19 {
+.emotion-18 {
   box-sizing: border-box;
   margin-bottom: 12px;
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.emotion-20 {
+.emotion-19 {
   margin: 0;
+  background-color: transparent;
+  color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -391,19 +348,90 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-20::before {
+.emotion-19::before {
   content: '';
   margin-bottom: -0.2155em;
   display: block;
 }
 
-.emotion-20::after {
+.emotion-19::after {
   content: '';
   margin-top: -0.2125em;
   display: block;
 }
 
-.emotion-48 {
+.emotion-21 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 40px;
+  width: 100%;
+  padding: 12px 16px;
+  padding-inline: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin: 0;
+  cursor: pointer;
+  padding-inline: 32px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100vw;
+}
+
+.emotion-21 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-21:hover:not(:disabled) {
+  color: #577FFB;
+  background-color: #E0E7FF;
+}
+
+.emotion-21:active:not(:disabled) {
+  color: #213A82;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-21 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-21 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-43 {
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
@@ -411,7 +439,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-49 {
+.emotion-44 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -425,7 +453,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
     class="emotion-0"
   >
     <nav
-      aria-label="menu"
+      aria-label="sidebar-secondary-navigation"
       class="emotion-1"
       data-testid="menu-container"
       role="navigation"
@@ -439,7 +467,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
           <div
             class="expanded emotion-3"
           >
-            <label
+            <h5
               aria-expanded="true"
               class="emotion-4"
             >
@@ -467,29 +495,27 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                   />
                 </svg>
               </div>
-            </label>
-            <div
-              class="selected emotion-7"
-            />
+            </h5>
             <li
-              class="nk-menu-item emotion-8"
+              class="nk-menu-item emotion-7"
             >
               <a
-                class="emotion-9"
+                aria-current="page"
+                class="emotion-8"
                 data-testid="buttonLink"
                 href="/group1/page1"
               >
                 <div
-                  class="emotion-10"
+                  class="emotion-9"
                 >
                   <div
-                    class="emotion-11"
+                    class="emotion-10"
                   >
-                    <label
-                      class="emotion-12"
+                    <span
+                      class="emotion-11"
                     >
                       Group 1 Page 1
-                    </label>
+                    </span>
                   </div>
                 </div>
               </a>
@@ -502,7 +528,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
           <div
             class="collapsed emotion-3"
           >
-            <label
+            <h5
               aria-expanded="false"
               class="emotion-4"
             >
@@ -531,15 +557,15 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                   />
                 </svg>
               </div>
-            </label>
+            </h5>
             <li
-              class="nk-menu-group emotion-18"
+              class="nk-menu-group emotion-17"
             >
               <div
-                class="emotion-19"
+                class="emotion-18"
               >
                 <h2
-                  class="emotion-20"
+                  class="emotion-19"
                   id="mock-nk-1"
                 >
                   Group 2 Page 1
@@ -548,54 +574,50 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
               <ul
                 aria-labelledby="mock-nk-1"
               >
-                <div
-                  class="emotion-7"
-                />
                 <li
-                  class="nk-menu-item emotion-8"
+                  class="nk-menu-item emotion-7"
                 >
                   <a
-                    class="emotion-9"
+                    aria-current="false"
+                    class="emotion-21"
                     data-testid="buttonLink"
                     href="/group2/page1/a"
                   >
                     <div
-                      class="emotion-10"
+                      class="emotion-9"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <label
-                          class="emotion-12"
+                        <span
+                          class="emotion-11"
                         >
                           Group 2 Page 1 a
-                        </label>
+                        </span>
                       </div>
                     </div>
                   </a>
                 </li>
-                <div
-                  class="emotion-7"
-                />
                 <li
-                  class="nk-menu-item emotion-8"
+                  class="nk-menu-item emotion-7"
                 >
                   <a
-                    class="emotion-9"
+                    aria-current="false"
+                    class="emotion-21"
                     data-testid="buttonLink"
                     href="/group2/page1/b"
                   >
                     <div
-                      class="emotion-10"
+                      class="emotion-9"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <label
-                          class="emotion-12"
+                        <span
+                          class="emotion-11"
                         >
                           Group 2 Page 1 b
-                        </label>
+                        </span>
                       </div>
                     </div>
                   </a>
@@ -603,13 +625,13 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
               </ul>
             </li>
             <li
-              class="nk-menu-group emotion-18"
+              class="nk-menu-group emotion-17"
             >
               <div
-                class="emotion-19"
+                class="emotion-18"
               >
                 <h2
-                  class="emotion-20"
+                  class="emotion-19"
                   id="mock-nk-1"
                 >
                   Group 2 Page 2
@@ -618,54 +640,50 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
               <ul
                 aria-labelledby="mock-nk-1"
               >
-                <div
-                  class="emotion-7"
-                />
                 <li
-                  class="nk-menu-item emotion-8"
+                  class="nk-menu-item emotion-7"
                 >
                   <a
-                    class="emotion-9"
+                    aria-current="false"
+                    class="emotion-21"
                     data-testid="buttonLink"
                     href="/group2/page2/a"
                   >
                     <div
-                      class="emotion-10"
+                      class="emotion-9"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <label
-                          class="emotion-12"
+                        <span
+                          class="emotion-11"
                         >
                           Group 2 Page 2 a
-                        </label>
+                        </span>
                       </div>
                     </div>
                   </a>
                 </li>
-                <div
-                  class="emotion-7"
-                />
                 <li
-                  class="nk-menu-item emotion-8"
+                  class="nk-menu-item emotion-7"
                 >
                   <a
-                    class="emotion-9"
+                    aria-current="false"
+                    class="emotion-21"
                     data-testid="buttonLink"
                     href="/group2/page2/b"
                   >
                     <div
-                      class="emotion-10"
+                      class="emotion-9"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <label
-                          class="emotion-12"
+                        <span
+                          class="emotion-11"
                         >
                           Group 2 Page 2 b
-                        </label>
+                        </span>
                       </div>
                     </div>
                   </a>
@@ -675,11 +693,11 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
           </div>
         </ul>
         <div
-          class="emotion-48"
+          class="emotion-43"
         >
           <hr
             aria-hidden="true"
-            class="emotion-49"
+            class="emotion-44"
             data-testid="divider"
           />
         </div>
@@ -820,15 +838,15 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-3 {
-  margin-top: 12px;
+  margin-top: 16px;
   margin-bottom: 0;
 }
 
-.emotion-3.collapsed>label {
+.emotion-3.collapsed>p {
   margin-bottom: 24px;
 }
 
-.emotion-3.expanded>label {
+.emotion-3.expanded>p {
   margin-bottom: 16px;
 }
 
@@ -842,8 +860,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-3.expanded>li {
-  margin-bottom: 16px;
-  max-height: 9999px;
   transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
   transition-delay: 0s;
 }
@@ -864,21 +880,15 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-4 {
-  display: block;
-  color: #0A0A0A;
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 18px;
   line-height: 20.25px;
   font-weight: 700;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
   margin-inline: 32px;
-}
-
-.emotion-4:disabled {
-  color: #C0C0C0;
+  margin-block: 16px;
 }
 
 .emotion-4::before {
@@ -894,21 +904,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  display: grid;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  grid-template-columns: 1fr auto;
 }
 
 .emotion-6 {
@@ -957,12 +956,12 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   }
 }
 
-.emotion-8 {
+.emotion-7 {
   box-sizing: border-box;
   margin-bottom: 0;
 }
 
-.emotion-9 {
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -981,6 +980,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   min-height: 40px;
   width: 100%;
   padding: 12px 16px;
+  padding-inline: 32px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -988,13 +988,12 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 2px 0 0;
   color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   margin: 0;
   cursor: pointer;
+  padding-inline: 32px;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -1003,53 +1002,22 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   width: 100vw;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-9 svg {
-  fill: #535353;
-}
-
-.emotion-9:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
+  color: #577FFB;
   background-color: #E0E7FF;
-  color: #577FFB;
 }
 
-.emotion-9:hover:not(:disabled) svg {
-  fill: #577FFB;
-}
-
-.emotion-9:active:not(:disabled) {
-  background-color: #AEBFFF;
-  color: #577FFB;
-}
-
-.emotion-9:active:not(:disabled) svg {
-  fill: #577FFB;
-}
-
-.emotion-9:selected:hover:not(:disabled) {
-  background-color: transparent;
-  border-color: #577FFB;
-  color: #577FFB;
-}
-
-.emotion-9:selected:hover:not(:disabled) svg {
-  fill: #577FFB;
-}
-
-.emotion-9:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-9:disabled svg {
-  fill: #C0C0C0;
+.emotion-8:active:not(:disabled) {
+  color: #213A82;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1057,14 +1025,14 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1085,7 +1053,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1094,52 +1062,52 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-12 {
-  display: block;
+.emotion-11 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  margin-bottom: 0;
-  margin-right: 40px;
-  margin-inline: 16px;
+  display: inline-block;
 }
 
-.emotion-12::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-12::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-18 {
+.emotion-17 {
   box-sizing: border-box;
   margin-bottom: 24px;
 }
 
-.emotion-18>ul {
+.emotion-17>ul {
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.emotion-19 {
+.emotion-18 {
   box-sizing: border-box;
   margin-bottom: 12px;
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.emotion-20 {
+.emotion-19 {
   margin: 0;
+  background-color: transparent;
+  color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -1148,19 +1116,19 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-20::before {
+.emotion-19::before {
   content: '';
   margin-bottom: -0.2155em;
   display: block;
 }
 
-.emotion-20::after {
+.emotion-19::after {
   content: '';
   margin-top: -0.2125em;
   display: block;
 }
 
-.emotion-48 {
+.emotion-43 {
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
@@ -1168,7 +1136,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-49 {
+.emotion-44 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -1182,7 +1150,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
     class="emotion-0"
   >
     <nav
-      aria-label="menu"
+      aria-label="sidebar-secondary-navigation"
       class="emotion-1"
       data-testid="menu-container"
       role="navigation"
@@ -1196,7 +1164,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
           <div
             class="collapsed emotion-3"
           >
-            <label
+            <h5
               aria-expanded="false"
               class="emotion-4"
             >
@@ -1225,29 +1193,27 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                   />
                 </svg>
               </div>
-            </label>
-            <div
-              class="emotion-7"
-            />
+            </h5>
             <li
-              class="nk-menu-item emotion-8"
+              class="nk-menu-item emotion-7"
             >
               <a
-                class="emotion-9"
+                aria-current="false"
+                class="emotion-8"
                 data-testid="buttonLink"
                 href="/group1/page1"
               >
                 <div
-                  class="emotion-10"
+                  class="emotion-9"
                 >
                   <div
-                    class="emotion-11"
+                    class="emotion-10"
                   >
-                    <label
-                      class="emotion-12"
+                    <span
+                      class="emotion-11"
                     >
                       Group 1 Page 1
-                    </label>
+                    </span>
                   </div>
                 </div>
               </a>
@@ -1260,7 +1226,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
           <div
             class="collapsed emotion-3"
           >
-            <label
+            <h5
               aria-expanded="false"
               class="emotion-4"
             >
@@ -1289,15 +1255,15 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                   />
                 </svg>
               </div>
-            </label>
+            </h5>
             <li
-              class="nk-menu-group emotion-18"
+              class="nk-menu-group emotion-17"
             >
               <div
-                class="emotion-19"
+                class="emotion-18"
               >
                 <h2
-                  class="emotion-20"
+                  class="emotion-19"
                   id="mock-nk-1"
                 >
                   Group 2 Page 1
@@ -1306,54 +1272,50 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
               <ul
                 aria-labelledby="mock-nk-1"
               >
-                <div
-                  class="emotion-7"
-                />
                 <li
-                  class="nk-menu-item emotion-8"
+                  class="nk-menu-item emotion-7"
                 >
                   <a
-                    class="emotion-9"
+                    aria-current="false"
+                    class="emotion-8"
                     data-testid="buttonLink"
                     href="/group2/page1/a"
                   >
                     <div
-                      class="emotion-10"
+                      class="emotion-9"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <label
-                          class="emotion-12"
+                        <span
+                          class="emotion-11"
                         >
                           Group 2 Page 1 a
-                        </label>
+                        </span>
                       </div>
                     </div>
                   </a>
                 </li>
-                <div
-                  class="emotion-7"
-                />
                 <li
-                  class="nk-menu-item emotion-8"
+                  class="nk-menu-item emotion-7"
                 >
                   <a
-                    class="emotion-9"
+                    aria-current="false"
+                    class="emotion-8"
                     data-testid="buttonLink"
                     href="/group2/page1/b"
                   >
                     <div
-                      class="emotion-10"
+                      class="emotion-9"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <label
-                          class="emotion-12"
+                        <span
+                          class="emotion-11"
                         >
                           Group 2 Page 1 b
-                        </label>
+                        </span>
                       </div>
                     </div>
                   </a>
@@ -1361,13 +1323,13 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
               </ul>
             </li>
             <li
-              class="nk-menu-group emotion-18"
+              class="nk-menu-group emotion-17"
             >
               <div
-                class="emotion-19"
+                class="emotion-18"
               >
                 <h2
-                  class="emotion-20"
+                  class="emotion-19"
                   id="mock-nk-1"
                 >
                   Group 2 Page 2
@@ -1376,54 +1338,50 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
               <ul
                 aria-labelledby="mock-nk-1"
               >
-                <div
-                  class="emotion-7"
-                />
                 <li
-                  class="nk-menu-item emotion-8"
+                  class="nk-menu-item emotion-7"
                 >
                   <a
-                    class="emotion-9"
+                    aria-current="false"
+                    class="emotion-8"
                     data-testid="buttonLink"
                     href="/group2/page2/a"
                   >
                     <div
-                      class="emotion-10"
+                      class="emotion-9"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <label
-                          class="emotion-12"
+                        <span
+                          class="emotion-11"
                         >
                           Group 2 Page 2 a
-                        </label>
+                        </span>
                       </div>
                     </div>
                   </a>
                 </li>
-                <div
-                  class="emotion-7"
-                />
                 <li
-                  class="nk-menu-item emotion-8"
+                  class="nk-menu-item emotion-7"
                 >
                   <a
-                    class="emotion-9"
+                    aria-current="false"
+                    class="emotion-8"
                     data-testid="buttonLink"
                     href="/group2/page2/b"
                   >
                     <div
-                      class="emotion-10"
+                      class="emotion-9"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <label
-                          class="emotion-12"
+                        <span
+                          class="emotion-11"
                         >
                           Group 2 Page 2 b
-                        </label>
+                        </span>
                       </div>
                     </div>
                   </a>
@@ -1433,11 +1391,11 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
           </div>
         </ul>
         <div
-          class="emotion-48"
+          class="emotion-43"
         >
           <hr
             aria-hidden="true"
-            class="emotion-49"
+            class="emotion-44"
             data-testid="divider"
           />
         </div>
@@ -1578,15 +1536,15 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-3 {
-  margin-top: 12px;
+  margin-top: 16px;
   margin-bottom: 0;
 }
 
-.emotion-3.collapsed>label {
+.emotion-3.collapsed>p {
   margin-bottom: 24px;
 }
 
-.emotion-3.expanded>label {
+.emotion-3.expanded>p {
   margin-bottom: 16px;
 }
 
@@ -1600,8 +1558,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-3.expanded>li {
-  margin-bottom: 16px;
-  max-height: 9999px;
   transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
   transition-delay: 0s;
 }
@@ -1622,21 +1578,15 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-4 {
-  display: block;
-  color: #0A0A0A;
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 18px;
   line-height: 20.25px;
   font-weight: 700;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
   margin-inline: 32px;
-}
-
-.emotion-4:disabled {
-  color: #C0C0C0;
+  margin-block: 16px;
 }
 
 .emotion-4::before {
@@ -1652,21 +1602,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  display: grid;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  grid-template-columns: 1fr auto;
 }
 
 .emotion-6 {
@@ -1715,12 +1654,12 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   }
 }
 
-.emotion-8 {
+.emotion-7 {
   box-sizing: border-box;
   margin-bottom: 0;
 }
 
-.emotion-9 {
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1739,6 +1678,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   min-height: 40px;
   width: 100%;
   padding: 12px 16px;
+  padding-inline: 32px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -1746,13 +1686,12 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 2px 0 0;
   color: #535353;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   margin: 0;
   cursor: pointer;
+  padding-inline: 32px;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -1761,53 +1700,22 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   width: 100vw;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-9 svg {
-  fill: #535353;
-}
-
-.emotion-9:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
+  color: #577FFB;
   background-color: #E0E7FF;
-  color: #577FFB;
 }
 
-.emotion-9:hover:not(:disabled) svg {
-  fill: #577FFB;
-}
-
-.emotion-9:active:not(:disabled) {
-  background-color: #AEBFFF;
-  color: #577FFB;
-}
-
-.emotion-9:active:not(:disabled) svg {
-  fill: #577FFB;
-}
-
-.emotion-9:selected:hover:not(:disabled) {
-  background-color: transparent;
-  border-color: #577FFB;
-  color: #577FFB;
-}
-
-.emotion-9:selected:hover:not(:disabled) svg {
-  fill: #577FFB;
-}
-
-.emotion-9:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-9:disabled svg {
-  fill: #C0C0C0;
+.emotion-8:active:not(:disabled) {
+  color: #213A82;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1815,14 +1723,14 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1843,7 +1751,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1852,52 +1760,52 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   margin-right: calc(8px/2);
 }
 
-.emotion-12 {
-  display: block;
+.emotion-11 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  margin-bottom: 0;
-  margin-right: 40px;
-  margin-inline: 16px;
+  display: inline-block;
 }
 
-.emotion-12::before {
+.emotion-11::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-12::after {
+.emotion-11::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-18 {
+.emotion-17 {
   box-sizing: border-box;
   margin-bottom: 24px;
 }
 
-.emotion-18>ul {
+.emotion-17>ul {
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.emotion-19 {
+.emotion-18 {
   box-sizing: border-box;
   margin-bottom: 12px;
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.emotion-20 {
+.emotion-19 {
   margin: 0;
+  background-color: transparent;
+  color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -1906,19 +1814,19 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   padding: 0.5px 0px;
 }
 
-.emotion-20::before {
+.emotion-19::before {
   content: '';
   margin-bottom: -0.2155em;
   display: block;
 }
 
-.emotion-20::after {
+.emotion-19::after {
   content: '';
   margin-top: -0.2125em;
   display: block;
 }
 
-.emotion-48 {
+.emotion-43 {
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
@@ -1926,7 +1834,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   margin-bottom: 24px;
 }
 
-.emotion-49 {
+.emotion-44 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -1940,7 +1848,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
     class="emotion-0"
   >
     <nav
-      aria-label="menu"
+      aria-label="sidebar-secondary-navigation"
       class="emotion-1"
       data-testid="menu-container"
       role="navigation"
@@ -1954,7 +1862,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
           <div
             class="expanded emotion-3"
           >
-            <label
+            <h5
               aria-expanded="true"
               class="emotion-4"
             >
@@ -1982,29 +1890,27 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                   />
                 </svg>
               </div>
-            </label>
-            <div
-              class="emotion-7"
-            />
+            </h5>
             <li
-              class="nk-menu-item emotion-8"
+              class="nk-menu-item emotion-7"
             >
               <a
-                class="emotion-9"
+                aria-current="false"
+                class="emotion-8"
                 data-testid="buttonLink"
                 href="/group1/page1"
               >
                 <div
-                  class="emotion-10"
+                  class="emotion-9"
                 >
                   <div
-                    class="emotion-11"
+                    class="emotion-10"
                   >
-                    <label
-                      class="emotion-12"
+                    <span
+                      class="emotion-11"
                     >
                       Group 1 Page 1
-                    </label>
+                    </span>
                   </div>
                 </div>
               </a>
@@ -2017,7 +1923,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
           <div
             class="collapsed emotion-3"
           >
-            <label
+            <h5
               aria-expanded="false"
               class="emotion-4"
             >
@@ -2046,15 +1952,15 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                   />
                 </svg>
               </div>
-            </label>
+            </h5>
             <li
-              class="nk-menu-group emotion-18"
+              class="nk-menu-group emotion-17"
             >
               <div
-                class="emotion-19"
+                class="emotion-18"
               >
                 <h2
-                  class="emotion-20"
+                  class="emotion-19"
                   id="mock-nk-1"
                 >
                   Group 2 Page 1
@@ -2063,54 +1969,50 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
               <ul
                 aria-labelledby="mock-nk-1"
               >
-                <div
-                  class="emotion-7"
-                />
                 <li
-                  class="nk-menu-item emotion-8"
+                  class="nk-menu-item emotion-7"
                 >
                   <a
-                    class="emotion-9"
+                    aria-current="false"
+                    class="emotion-8"
                     data-testid="buttonLink"
                     href="/group2/page1/a"
                   >
                     <div
-                      class="emotion-10"
+                      class="emotion-9"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <label
-                          class="emotion-12"
+                        <span
+                          class="emotion-11"
                         >
                           Group 2 Page 1 a
-                        </label>
+                        </span>
                       </div>
                     </div>
                   </a>
                 </li>
-                <div
-                  class="emotion-7"
-                />
                 <li
-                  class="nk-menu-item emotion-8"
+                  class="nk-menu-item emotion-7"
                 >
                   <a
-                    class="emotion-9"
+                    aria-current="false"
+                    class="emotion-8"
                     data-testid="buttonLink"
                     href="/group2/page1/b"
                   >
                     <div
-                      class="emotion-10"
+                      class="emotion-9"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <label
-                          class="emotion-12"
+                        <span
+                          class="emotion-11"
                         >
                           Group 2 Page 1 b
-                        </label>
+                        </span>
                       </div>
                     </div>
                   </a>
@@ -2118,13 +2020,13 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
               </ul>
             </li>
             <li
-              class="nk-menu-group emotion-18"
+              class="nk-menu-group emotion-17"
             >
               <div
-                class="emotion-19"
+                class="emotion-18"
               >
                 <h2
-                  class="emotion-20"
+                  class="emotion-19"
                   id="mock-nk-1"
                 >
                   Group 2 Page 2
@@ -2133,54 +2035,50 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
               <ul
                 aria-labelledby="mock-nk-1"
               >
-                <div
-                  class="emotion-7"
-                />
                 <li
-                  class="nk-menu-item emotion-8"
+                  class="nk-menu-item emotion-7"
                 >
                   <a
-                    class="emotion-9"
+                    aria-current="false"
+                    class="emotion-8"
                     data-testid="buttonLink"
                     href="/group2/page2/a"
                   >
                     <div
-                      class="emotion-10"
+                      class="emotion-9"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <label
-                          class="emotion-12"
+                        <span
+                          class="emotion-11"
                         >
                           Group 2 Page 2 a
-                        </label>
+                        </span>
                       </div>
                     </div>
                   </a>
                 </li>
-                <div
-                  class="emotion-7"
-                />
                 <li
-                  class="nk-menu-item emotion-8"
+                  class="nk-menu-item emotion-7"
                 >
                   <a
-                    class="emotion-9"
+                    aria-current="false"
+                    class="emotion-8"
                     data-testid="buttonLink"
                     href="/group2/page2/b"
                   >
                     <div
-                      class="emotion-10"
+                      class="emotion-9"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-10"
                       >
-                        <label
-                          class="emotion-12"
+                        <span
+                          class="emotion-11"
                         >
                           Group 2 Page 2 b
-                        </label>
+                        </span>
                       </div>
                     </div>
                   </a>
@@ -2190,11 +2088,11 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
           </div>
         </ul>
         <div
-          class="emotion-48"
+          class="emotion-43"
         >
           <hr
             aria-hidden="true"
-            class="emotion-49"
+            class="emotion-44"
             data-testid="divider"
           />
         </div>
