@@ -63,6 +63,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-3 {
+  background-color: transparent;
+  color: #0A0A0A;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -838,6 +840,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-3 {
+  background-color: transparent;
+  color: #0A0A0A;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -1536,6 +1540,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-3 {
+  background-color: transparent;
+  color: #0A0A0A;
   margin-top: 16px;
   margin-bottom: 0;
 }

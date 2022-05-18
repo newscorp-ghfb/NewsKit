@@ -118,6 +118,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
       items.map(({title, id}) => (
         <MenuItem
+          data-testid="styled-indicator"
           key={id}
           href={id}
           size="small"
@@ -136,7 +137,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
     return (
       <Header data-testid="header-navigation" ref={ref}>
         <Visible xs sm md>
-          <GridLayout columns={{xs: '1fr 60%'}}>
+          <GridLayout data-testid="logo-container" columns={{xs: '1fr 60%'}}>
             <GridLayoutItem justifySelf="start" alignSelf="center">
               {renderMobileNavigation(handleSidebarClick)}
             </GridLayoutItem>

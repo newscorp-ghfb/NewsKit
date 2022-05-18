@@ -24,6 +24,7 @@ const Sidebar: React.FC<SidebarProps> = ({
     <Visible xs sm md>
       <StyledDrawer
         id="i am a drawer"
+        data-testid="sidebar"
         aria-label="drawer on the the bottom"
         open={sidebarOpen}
         onDismiss={handleSidebarClick}

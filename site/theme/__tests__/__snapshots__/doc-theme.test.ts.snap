@@ -1000,11 +1000,6 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "drawerBackground": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
     "featureCard": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand040}}",
@@ -3200,11 +3195,6 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
-      },
-    },
-    "drawerBackground": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
       },
     },
     "featureCard": Object {
@@ -5404,11 +5394,6 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "drawerBackground": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
     "featureCard": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand040}}",
@@ -7604,11 +7589,6 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
-      },
-    },
-    "drawerBackground": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
       },
     },
     "featureCard": Object {
@@ -9808,11 +9788,6 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "drawerBackground": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
     "featureCard": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand040}}",
@@ -12008,11 +11983,6 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
-      },
-    },
-    "drawerBackground": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
       },
     },
     "featureCard": Object {
@@ -14212,11 +14182,6 @@ Object {
         "borderWidth": "{{borders.borderWidth030}}",
       },
     },
-    "drawerBackground": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
     "featureCard": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand040}}",
@@ -16412,11 +16377,6 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth030}}",
-      },
-    },
-    "drawerBackground": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
       },
     },
     "featureCard": Object {
