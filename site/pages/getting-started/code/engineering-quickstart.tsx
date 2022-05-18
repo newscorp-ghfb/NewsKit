@@ -156,14 +156,34 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
               >
                 react components
               </Link>
-              . One thing to bear in mind is that they will need to be
+              .
+              {/* . One thing to bear in mind is that they will need to be
               descendants of a <InlineCode>NewskitProvider</InlineCode>, this
               can be thought of as the theme context, this theme will be applied
               to all of its descendants. The following example shows the
               &quot;Hello World!&quot; example of using a NewsKit{' '}
               <Link href="/components/tag/">Tag component</Link> with the{' '}
               <Link href="/theme/theming/using-a-theme/">Newskit Provider</Link>
-              .
+              . */}
+              One thing to bear in mind is that they will need to be descendants
+              of a <InlineCode>NewskitProvider</InlineCode> which provides a
+              single wrapper to configure your application. It adds a{' '}
+              <Link href="/theme/theming/using-a-theme/">ThemeProvider</Link>,{' '}
+              <Link href="/components/utils/hooks/#usemediaqueryobject">
+                MediaQueryProvider
+              </Link>
+              ,{' '}
+              <Link href="/getting-started/code/instrumentation/">
+                InstrumentationProvider
+              </Link>{' '}
+              and a LayerOrganizer to handle theming, media queries,
+              instrumentation and stacking context in the application.
+              <br />
+              <br />
+              The following example shows the &quot;Hello World!&quot; example
+              of using a NewsKit{' '}
+              <Link href="/components/tag/">Tag component</Link> with the
+              NewskitProvider.
             </>
           }
           showSeparator
@@ -174,7 +194,11 @@ import React from 'react';
 export default class App extends React.Component {
   render() {
     return (
-      <NewskitProvider theme={newskitLightTheme}>
+      <NewskitProvider 
+        theme={newskitLightTheme}
+        instrumentation={'instrumentation provider props'}
+        layer={'layer organizer props'}
+        >
         <Tag
           href="http://example.com"
           size={TagSize.Medium}>

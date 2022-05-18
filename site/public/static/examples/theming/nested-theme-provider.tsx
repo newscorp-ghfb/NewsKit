@@ -1,14 +1,18 @@
-import { ThemeProvider, newskitDarkTheme, newskitLightTheme } from 'newskit';
+import { NewskitProvider, ThemeProvider, newskitDarkTheme, newskitLightTheme } from 'newskit';
 
 render() {
   return (
-    <ThemeProvider theme={newskitLightTheme}>
+    <NewskitProvider theme={newskitLightTheme}>
       <Component>Light theme style!</Component>
 
       <ThemeProvider theme={newskitDarkTheme}>
         <Component>Dark theme style!</Component>
+
+        <ThemeProvider theme={otherTheme}>
+          <Component>Other theme style!</Component>
+        </ThemeProvider>
+
       </ThemeProvider>
-    </ThemeProvider>
+    </NewskitProvider>
   )
 }
-

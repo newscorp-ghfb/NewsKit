@@ -18,7 +18,7 @@ You can switch between these two themes on this documentation site by clicking t
 
 ## createTheme Function
 
-To create a theme you use the `createTheme` function exported from NewsKit. The createTheme function returns an `UncompiledTheme` object which can be passed to the `ThemeProvider` component. When the ThemeProvider is passed an uncompiled theme object, it will compile it automatically. If you wish to pre-compile your theme, you can do this by passing your theme to the `compileTheme` function exported from NewsKit. It is recommended you let the ThemeProvider compile your theme automatically - you should not need to compile your theme yourself. More information on theme compilation is below.
+To create a theme you use the `createTheme` function exported from NewsKit. The createTheme function returns an `UncompiledTheme` object which can be passed to the `NewskitProvider` or `ThemeProvider` component. When the provider is passed an uncompiled theme object, it will compile it automatically. If you wish to pre-compile your theme, you can do this by passing your theme to the `compileTheme` function exported from NewsKit. It is recommended you let the provider compile your theme automatically - you should not need to compile your theme yourself. More information on theme compilation is below.
 
 `createTheme` takes one argument - an object - with the following properties:
 

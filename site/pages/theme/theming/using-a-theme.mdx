@@ -1,5 +1,6 @@
 import Layout from '../../../components/layout';
 import {Code, CodeFromFile} from '../../../components/code';
+import { InlineMessage } from 'newskit';
 
 export default Layout;
 
@@ -11,7 +12,10 @@ To render NewsKit components you must have a theme available for them to utilise
 
 ## Setting a theme
 
-### ThemeProvider component
+### NewskitProvider & ThemeProvider components
+
+NewskitProvider provides a single wrapper to configure your application. It adds a ThemeProvider to handle styling.
+
 
 A ThemeProvider utilises a React Context to provide a theme to all NewsKit components descended under it. You pass your theme (or a NewsKit default) to the `theme` prop. This will typically be an uncompiled theme, but you can pass a pre-compiled theme if you wish.
 
@@ -22,6 +26,14 @@ The theme provided is then available to any NewsKit component under it. The them
 <CodeFromFile path="examples/theming/styled.tsx" />
 
 ThemeProvider's can also be nested - allowing the child to override the parent theme. This will only cause a shallow merge of the child theme over the parent. To create a sub-theme which inherits from a base theme, see the `createTheme` documentation [here](/theme/theming/creating-a-theme).
+
+<InlineMessage overri>ThemeProvider can be nested, however, we do NOT recommend nesting NewskitProviders, as it can lead to unexpected behaviour. NewskitProvider should only be used once per application on a very top level.
+</InlineMessage>
+
+<br />
+<br />
+<br />
+
 
 <CodeFromFile path="examples/theming/nested-theme-provider.tsx" />
 

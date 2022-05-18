@@ -1,10 +1,9 @@
-import { ThemeProvider, newskitLightTheme } from 'newskit';
+import { NewskitProvider, newskitLightTheme } from 'newskit';
 
 render() {
     return (
-        <ThemeProvider theme={newskitLightTheme}>
+        <NewskitProvider theme={newskitLightTheme}>
             <MyApp />
-        </ThemeProvider>
+        </NewskitProvider>
     )
 }
-
