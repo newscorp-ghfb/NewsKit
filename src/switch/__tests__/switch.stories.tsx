@@ -166,3 +166,20 @@ export const StorySwitchFieldset = () => (
 );
 
 StorySwitchFieldset.storyName = 'switch-fieldset';
+
+export const StorySwitchHideFeedback = () => (
+  <>
+    <StorybookHeading>Switch</StorybookHeading>
+    <Grid>
+      <Cell xs={8} md={4}>
+        <StorybookSubHeading>Hide feedback</StorybookSubHeading>
+
+        <Container>
+          <Switch label="Feedback hidden" defaultChecked hideFeedback />
+        </Container>
+      </Cell>
+    </Grid>
+  </>
+);
+
+StorySwitchHideFeedback.storyName = 'hide-feedback';

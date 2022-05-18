@@ -65,4 +65,5 @@ export interface BaseSwitchProps
   labelPosition?: BaseSwitchLabelPosition;
   path: string;
   defaultSwitchSelectorComponent: React.ComponentType<BaseSwitchIconProps>;
+  hideFeedback?: boolean;
 }

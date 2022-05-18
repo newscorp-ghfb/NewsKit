@@ -170,4 +170,14 @@ describe('Switch', () => {
     fireEvent.mouseLeave(feedback);
     expect(asFragment()).toMatchSnapshot('without hover');
   });
+
+  test('hide feedback', () => {
+    const {queryByTestId, asFragment} = renderWithTheme(() => (
+      <Switch label="label" hideFeedback />
+    ));
+    const feedback = queryByTestId('checkbox-feedback');
+    expect(feedback).toBeNull();
+
+    expect(asFragment()).toMatchSnapshot();
+  });
 });

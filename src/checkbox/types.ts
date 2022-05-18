@@ -24,7 +24,11 @@ export type CheckboxOverrides = {
 
 export type CheckboxProps = Omit<
   BaseSwitchProps,
-  'path' | 'defaultSwitchSelectorComponent' | 'type' | 'overrides'
+  | 'path'
+  | 'defaultSwitchSelectorComponent'
+  | 'type'
+  | 'overrides'
+  | 'hideFeedback'
 > & {overrides?: CheckboxOverrides};
 
 export type CheckboxSize = BaseSwitchSize;

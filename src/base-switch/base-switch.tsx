@@ -33,6 +33,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
       path,
       defaultSwitchSelectorComponent: defaultSwitchComponent,
       type,
+      hideFeedback,
       ...restProps
     },
     inputRef,
@@ -154,19 +155,21 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
           role="presentation"
           path={path}
         >
-          <StyledSwitchFeedback
-            thumbOffset={switchPadding}
-            centreOnThumb={path === 'switch'}
-            checked={checked}
-            size={size}
-            overrides={overrides}
-            state={state}
-            onClick={onFeedbackClick}
-            data-testid={`${type}-feedback`}
-            isActive={isInputActive}
-            isHovered={isLabelHovered}
-            path={path}
-          />
+          {!hideFeedback && (
+            <StyledSwitchFeedback
+              thumbOffset={switchPadding}
+              centreOnThumb={path === 'switch'}
+              checked={checked}
+              size={size}
+              overrides={overrides}
+              state={state}
+              onClick={onFeedbackClick}
+              data-testid={`${type}-feedback`}
+              isActive={isInputActive}
+              isHovered={isLabelHovered}
+              path={path}
+            />
+          )}
           <StyledSwitch
             ref={switchRef}
             checked={checked}
