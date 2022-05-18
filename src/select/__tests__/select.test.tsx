@@ -448,6 +448,12 @@ describe('Select', () => {
       if (msg) msg.remove();
     });
 
+    afterEach(() => {
+      cleanup();
+      const msg = document.getElementById('a11y-status-message');
+      if (msg) msg.remove();
+    });
+
     const commonProps: SelectProps = {
       children: [
         <SelectOption key="1" value="option 1">
