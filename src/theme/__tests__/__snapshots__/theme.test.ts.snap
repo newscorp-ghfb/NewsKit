@@ -2224,6 +2224,9 @@ Object {
   },
   "switch": Object {
     "large": Object {
+      "column": Object {
+        "stylePreset": "switchTrackColumn",
+      },
       "feedback": Object {
         "size": "sizing090",
         "stylePreset": "feedback",
@@ -2235,8 +2238,8 @@ Object {
       "input": Object {
         "blockSize": "sizing070",
         "inlineSize": "76px",
+        "paddingInline": "space010",
         "spaceInline": "space040",
-        "spaceInset": "sizing010",
         "stylePreset": "switchTrack",
       },
       "label": Object {
@@ -2253,6 +2256,9 @@ Object {
       },
     },
     "medium": Object {
+      "column": Object {
+        "stylePreset": "switchTrackColumn",
+      },
       "feedback": Object {
         "size": "sizing080",
         "stylePreset": "feedback",
@@ -2264,8 +2270,8 @@ Object {
       "input": Object {
         "blockSize": "sizing060",
         "inlineSize": "60px",
+        "paddingInline": "space010",
         "spaceInline": "space030",
-        "spaceInset": "sizing010",
         "stylePreset": "switchTrack",
       },
       "label": Object {
@@ -2282,6 +2288,9 @@ Object {
       },
     },
     "small": Object {
+      "column": Object {
+        "stylePreset": "switchTrackColumn",
+      },
       "feedback": Object {
         "size": "sizing070",
         "stylePreset": "feedback",
@@ -2293,8 +2302,8 @@ Object {
       "input": Object {
         "blockSize": "sizing050",
         "inlineSize": "44px",
+        "paddingInline": "space010",
         "spaceInline": "space030",
-        "spaceInset": "sizing010",
         "stylePreset": "switchTrack",
       },
       "label": Object {
@@ -4551,24 +4560,24 @@ Object {
       "borderRadius": "{{borders.borderRadiusCircle}}",
       "iconColor": "{{colors.inkContrast}}",
     },
-    "focus": Object {
-      "iconColor": "{{colors.inkContrast}}",
-    },
-    "hover": Object {
-      "iconColor": "{{colors.inkContrast}}",
-    },
   },
   "switchTrack": Object {
     "base": Object {
       "backgroundColor": "{{colors.interactiveInput020}}",
       "borderRadius": "{{borders.borderRadiusPill}}",
-      "iconColor": "{{colors.inkInverse}}",
     },
     "checked": Object {
       "backgroundColor": "{{colors.interactiveInput040}}",
     },
     "disabled": Object {
       "backgroundColor": "{{colors.interactiveDisabled010}}",
+    },
+  },
+  "switchTrackColumn": Object {
+    "base": Object {
+      "iconColor": "{{colors.inkInverse}}",
+    },
+    "disabled": Object {
       "iconColor": "{{colors.inkNonEssential}}",
     },
   },

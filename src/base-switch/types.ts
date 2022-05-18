@@ -1,7 +1,7 @@
 import React from 'react';
 import {NewsKitIconProps} from '../icons';
 import {TransitionToken} from '../theme/presets/types';
-import {LogicalProps} from '../utils/logical-properties';
+import {LogicalPaddingProps, LogicalProps} from '../utils/logical-properties';
 import {Override} from '../utils/overrides';
 import {MQ} from '../utils/style/types';
 
@@ -25,7 +25,7 @@ export type BaseSwitchOverrides = {
     transitionPreset?: TransitionToken | TransitionToken[];
     blockSize?: MQ<string>;
     inlineSize?: MQ<string>;
-    spaceInset?: MQ<string>;
+    paddingInline?: LogicalPaddingProps['paddingInline'];
   };
   feedback?: {
     size?: MQ<string>;

@@ -40,14 +40,20 @@ const slowTransition: TransitionToken = {
 export const sizeOverrides: [string, SwitchOverrides][] = [
   ['small-margin', {input: {spaceInline: '5px'}}],
   ['large-margin', {input: {spaceInline: '100px'}}],
-  ['narrow-track-no-padding', {input: {blockSize: '12px', spaceInset: '0px'}}],
+  [
+    'narrow-track-no-padding',
+    {input: {blockSize: '12px', paddingInline: '0px'}},
+  ],
   ['wide-track', {input: {blockSize: '120px'}}],
   ['long-track', {input: {inlineSize: '200px'}}],
   ['small-thumb', {thumb: {size: '10px'}}],
   ['large-thumb', {thumb: {size: '32px'}}],
   [
     'small-feedback',
-    {feedback: {size: '27px'}, input: {blockSize: '12px', spaceInset: '0px'}},
+    {
+      feedback: {size: '27px'},
+      input: {blockSize: '12px', paddingInline: '0px'},
+    },
   ],
   ['large-feedback', {feedback: {size: '100px'}}],
   [
@@ -62,7 +68,7 @@ export const sizeOverrides: [string, SwitchOverrides][] = [
     {
       input: {
         inlineSize: '200px',
-        spaceInset: {
+        paddingInline: {
           xs: '4px',
           lg: '12px',
         },

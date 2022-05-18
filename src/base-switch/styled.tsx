@@ -116,15 +116,7 @@ export const StyledSwitch = styled.div<
     feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`};
 
   ${({size, path}) => getTransitionPreset(`${path}.${size}.input`, 'input')};
-  ${({size}) =>
-    getResponsiveSize(
-      spaceInset => ({
-        padding: `0px ${spaceInset}`,
-      }),
-      `switch.${size}.input`,
-      'input',
-      'spaceInset',
-    )}
+  ${({size, path}) => logicalProps(`${path}.${size}.input`, 'input')}
 `;
 
 export const StyledSwitchFeedback = styled.div<

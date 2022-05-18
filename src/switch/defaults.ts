@@ -11,7 +11,7 @@ export default {
         stylePreset: 'switchTrack',
         blockSize: 'sizing050',
         inlineSize: '44px',
-        spaceInset: 'sizing010',
+        paddingInline: 'space010',
         spaceInline: 'space030',
       },
       label: {
@@ -38,7 +38,7 @@ export default {
         stylePreset: 'switchTrack',
         blockSize: 'sizing060',
         inlineSize: '60px',
-        spaceInset: 'sizing010',
+        paddingInline: 'space010',
         spaceInline: 'space030',
       },
       label: {
@@ -65,7 +65,7 @@ export default {
         stylePreset: 'switchTrack',
         blockSize: 'sizing070',
         inlineSize: '76px',
-        spaceInset: 'sizing010',
+        paddingInline: 'space010',
         spaceInline: 'space040',
       },
       label: {

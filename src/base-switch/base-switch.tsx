@@ -129,9 +129,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
     const [switchPadding, setSwitchPadding] = useState('');
     const switchRef = useRef<HTMLDivElement>(null);
     useLayoutEffect(() => {
-      setSwitchPadding(
-        getComputedStyle(switchRef.current!).padding.split(' ')[1],
-      );
+      setSwitchPadding(getComputedStyle(switchRef.current!).paddingInline);
     }, []);
 
     return (

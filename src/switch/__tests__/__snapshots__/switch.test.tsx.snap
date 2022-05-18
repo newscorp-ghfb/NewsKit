@@ -89,7 +89,7 @@ exports[`Switch hover on feedback shows it: with hover 1`] = `
   background-color: #CCCCCC;
   border-radius: 20rem;
   z-index: 2;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -375,7 +375,7 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
   align-items: center;
   background-color: #CCCCCC;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -633,7 +633,7 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
   align-items: center;
   background-color: #F4F4F4;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-4 {
@@ -872,7 +872,7 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
   align-items: center;
   background-color: #F4F4F4;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-4 {
@@ -1117,7 +1117,7 @@ exports[`Switch hover on label trigger Switch hover styles: with hover 1`] = `
   background-color: #CCCCCC;
   border-radius: 20rem;
   z-index: 2;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -1403,7 +1403,7 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
   align-items: center;
   background-color: #CCCCCC;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -1661,7 +1661,7 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
   align-items: center;
   background-color: #F4F4F4;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-4 {
@@ -1900,7 +1900,7 @@ exports[`Switch hover on label with disabled do not change hover state: without 
   align-items: center;
   background-color: #F4F4F4;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-4 {
@@ -2167,7 +2167,7 @@ exports[`Switch label attributes 1`] = `
   align-items: center;
   background-color: #CCCCCC;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -2468,7 +2468,7 @@ exports[`Switch label position start 1`] = `
   align-items: center;
   background-color: #CCCCCC;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-4:checked:not(:disabled) {
@@ -2741,7 +2741,7 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
   align-items: center;
   background-color: #CCCCCC;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -3031,7 +3031,7 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: 3px;
   z-index: 2;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -3317,7 +3317,7 @@ exports[`Switch render with size: large & checked 1`] = `
   align-items: center;
   background-color: #3358CC;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-4 {
@@ -3568,7 +3568,7 @@ exports[`Switch render with size: large & disabled 1`] = `
   align-items: center;
   background-color: #F4F4F4;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-4 {
@@ -3835,7 +3835,7 @@ exports[`Switch render with size: large 1`] = `
   align-items: center;
   background-color: #CCCCCC;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -4121,7 +4121,7 @@ exports[`Switch render with size: medium & checked 1`] = `
   align-items: center;
   background-color: #3358CC;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-4 {
@@ -4372,7 +4372,7 @@ exports[`Switch render with size: medium & disabled 1`] = `
   align-items: center;
   background-color: #F4F4F4;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-4 {
@@ -4639,7 +4639,7 @@ exports[`Switch render with size: medium 1`] = `
   align-items: center;
   background-color: #CCCCCC;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -4925,7 +4925,7 @@ exports[`Switch render with size: small & checked 1`] = `
   align-items: center;
   background-color: #3358CC;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-4 {
@@ -5176,7 +5176,7 @@ exports[`Switch render with size: small & disabled 1`] = `
   align-items: center;
   background-color: #F4F4F4;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-4 {
@@ -5443,7 +5443,7 @@ exports[`Switch render with size: small 1`] = `
   align-items: center;
   background-color: #CCCCCC;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -5729,7 +5729,7 @@ exports[`Switch render with state: base 1`] = `
   align-items: center;
   background-color: #CCCCCC;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-3:checked:not(:disabled) {
@@ -6016,7 +6016,7 @@ exports[`Switch render with state: checked 1`] = `
   align-items: center;
   background-color: #3358CC;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-4 {
@@ -6268,7 +6268,7 @@ exports[`Switch render with state: checked-disabled 1`] = `
   align-items: center;
   background-color: #F4F4F4;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-4 {
@@ -6509,7 +6509,7 @@ exports[`Switch render with state: disabled 1`] = `
   align-items: center;
   background-color: #F4F4F4;
   border-radius: 20rem;
-  padding: 0px 4px;
+  padding-inline: 4px;
 }
 
 .emotion-4 {
@@ -6745,7 +6745,7 @@ exports[`Switch with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 20px;
+  padding-inline: 20px;
 }
 
 .emotion-4 {

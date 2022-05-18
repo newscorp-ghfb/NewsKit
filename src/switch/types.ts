@@ -23,7 +23,7 @@ export type SwitchOverrides = {
     | 'stylePreset'
     | 'transitionPreset'
     | 'spaceInline'
-    | 'spaceInset'
+    | 'paddingInline'
   >;
   thumb?: BaseSwitchOverrides['thumb'];
   feedback?: BaseSwitchOverrides['feedback'];

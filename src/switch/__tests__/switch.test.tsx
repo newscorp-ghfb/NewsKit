@@ -83,7 +83,7 @@ describe('Switch', () => {
             stylePreset: 'customSwitchInput',
             blockSize: '100px',
             inlineSize: '100px',
-            spaceInset: '20px',
+            paddingInline: '20px',
             spaceInline: '10px',
           },
           feedback: {
