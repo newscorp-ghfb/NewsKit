@@ -6,6 +6,7 @@ import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
 import {Tooltip} from '../tooltip';
 import {IconFilledTwitter} from '../../icons';
+import {IconButton} from '../../icon-button';
 
 export default {
   title: 'NewsKit Light/tooltip',
@@ -272,14 +273,14 @@ export const StoryTooltipAccessibility = () => (
       </Button>
     </Tooltip>
     <StorybookSubHeading>Tooltip as a label</StorybookSubHeading>
-    <Tooltip title="Add" placement="right" labelTooltip aria-label="Add">
-      <Button
+    <Tooltip title="Share" placement="right" labelTooltip>
+      <IconButton
         size={ButtonSize.Small}
-        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+        overrides={{stylePreset: 'iconButtonMinimalSecondary'}}
         aria-label="share on twitter"
       >
         <IconFilledTwitter />
-      </Button>
+      </IconButton>
     </Tooltip>
   </>
 );

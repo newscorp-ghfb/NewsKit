@@ -1,5 +1,5 @@
 import React from 'react';
-import {cleanup, fireEvent} from '@testing-library/react';
+import {fireEvent} from '@testing-library/react';
 import {renderWithTheme} from '../../test/test-utils';
 import {Tooltip} from '..';
 import {TriggerType} from '../types';
@@ -13,22 +13,18 @@ describe('Tooltip', () => {
     defaultOpen: true,
   };
 
-  afterEach(() => {
-    cleanup();
+  // Mocking ResizeObserver
+  const mockResizeObserver = jest.fn(() => ({
+    observe: jest.fn(),
+    disconnect: jest.fn(),
+  }));
+
+  beforeAll(() => {
+    // @ts-ignore
+    global.ResizeObserver = mockResizeObserver;
   });
 
   describe('should render correct styles:', () => {
-    // Mocking ResizeObserver
-    const mockResizeObserver = jest.fn(() => ({
-      observe: jest.fn(),
-      disconnect: jest.fn(),
-    }));
-
-    beforeAll(() => {
-      // @ts-ignore
-      global.ResizeObserver = mockResizeObserver;
-    });
-
     test('default', () => {
       const {getByRole, asFragment} = renderWithTheme(Tooltip, defaultProps);
       expect(getByRole('tooltip').textContent).toBe('hello');
@@ -37,7 +33,6 @@ describe('Tooltip', () => {
       });
       expect(asFragment()).toMatchSnapshot();
     });
-
     test('not render if title is an empty string', () => {
       const {queryByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
@@ -45,7 +40,6 @@ describe('Tooltip', () => {
       });
       expect(queryByRole('tooltip')).not.toBeInTheDocument();
     });
-
     // Cannot test the exact position with unit tests but will be covered in visual tests
     test('with different placement', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
@@ -56,7 +50,6 @@ describe('Tooltip', () => {
         position: 'absolute',
       });
     });
-
     test('with overrides', () => {
       const myCustomTheme = createTheme({
         name: 'my-custom-tooltip-theme',
@@ -94,7 +87,7 @@ describe('Tooltip', () => {
     });
   });
 
-  describe('with different triggers', () => {
+  describe('with different triggers:', () => {
     test('opens on mouseover by default', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
@@ -156,7 +149,7 @@ describe('Tooltip', () => {
     });
   });
 
-  describe('pass the correct a11y attributes', () => {
+  describe('pass the correct a11y attributes:', () => {
     test('have role tooltip when used as a description', () => {
       const {queryByRole} = renderWithTheme(Tooltip, defaultProps);
       expect(queryByRole('tooltip')).toBeInTheDocument();

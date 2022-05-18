@@ -3,7 +3,7 @@
 exports[`Tooltip should render correct styles: default 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-0"
+    aria-describedby="floating-ui-2"
     type="submit"
   >
     Add
@@ -46,7 +46,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
 exports[`Tooltip should render correct styles: with overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-9"
+    aria-describedby="floating-ui-11"
     type="submit"
   >
     Add

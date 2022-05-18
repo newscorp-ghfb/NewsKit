@@ -48,18 +48,23 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
     useDismiss(context),
   ]);
 
-  // If tooltip is used as a label, add aria-labelledby to childrenProps and id to StyledTooltip
+  // If tooltip is used as a label, add aria-labelledby to childrenProps and id to StyledTooltip;
+  // Because of above, 'aria-describedby' has different id for reference and floating, hence manually set below as well;
   const id = useId();
-  const nameOrDescProps = {} as {
+
+  const labelOrDescProps = {} as {
     'aria-labelledby': string | null;
+    'aria-describedby': string | null;
   };
 
   if (labelTooltip) {
-    nameOrDescProps['aria-labelledby'] = open ? id : null;
+    labelOrDescProps['aria-labelledby'] = open ? id : null;
+  } else {
+    labelOrDescProps['aria-describedby'] = open ? id : null;
   }
 
   const childrenProps = {
-    ...nameOrDescProps,
+    ...labelOrDescProps,
     ...children.props,
   };
 
@@ -77,6 +82,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
         <StyledTooltip
           {...getFloatingProps({
             ref: floating,
+            id,
             className: 'Tooltip',
             style: {
               position: strategy,
@@ -84,7 +90,6 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
               left: x ?? '',
             },
           })}
-          id={id}
           data-testid="tooltip"
           overrides={overrides}
           {...props}
