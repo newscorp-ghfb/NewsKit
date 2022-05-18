@@ -402,11 +402,6 @@ export const stylePresets = {
       iconColor: '{{colors.inkBrand020}}',
     },
   },
-  drawerBackground: {
-    base: {
-      backgroundColor: '{{colors.interactiveSecondary010}}',
-    },
-  },
   linkFooter: {
     base: {
       color: '{{colors.interactivePrimary040}}',

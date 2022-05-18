@@ -35,7 +35,7 @@ const Sidebar: React.FC<SidebarProps> = ({
             spaceInset: 'spaceInset000',
           },
           panel: {
-            stylePreset: 'drawerBackground',
+            stylePreset: 'sidebar',
             minSize: '100%',
             marginBlock: '0px',
           },

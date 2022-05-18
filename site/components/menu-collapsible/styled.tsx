@@ -22,6 +22,7 @@ const StyledMenuCollapsible = styled.ul`
 const StyledMenuCollapsibleItem = styled.div<
   Pick<MenuProps, 'vertical'> & MenuGroupProps
 >`
+  ${getStylePresetFromTheme('sidebarHeader')};
   ${getSpacingCssFromTheme('marginTop', 'space040')};
   ${getSpacingCssFromTheme('marginBottom', 'space000')};
 
