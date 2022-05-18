@@ -5,6 +5,7 @@ import {
   BaseSwitchState,
   BaseSwitchOverrides,
 } from '../base-switch/types';
+import {LogicalProps} from '../utils/logical-properties';
 
 export type CheckboxIconProps = BaseSwitchIconProps;
 
@@ -20,7 +21,7 @@ export type CheckboxOverrides = {
   >;
   label?: BaseSwitchOverrides['label'];
   icon?: BaseSwitchOverrides['icon'];
-};
+} & LogicalProps;
 
 export type CheckboxProps = Omit<
   BaseSwitchProps,

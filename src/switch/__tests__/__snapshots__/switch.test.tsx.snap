@@ -7182,6 +7182,8 @@ exports[`Switch with overrides 1`] = `
   align-items: center;
   cursor: pointer;
   margin-bottom: 32px;
+  margin-block: 15px;
+  padding-inline: 20px;
 }
 
 .emotion-1 {

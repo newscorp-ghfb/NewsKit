@@ -97,6 +97,8 @@ describe('Switch', () => {
           icon: IconFilledError,
           onIcon: IconFilledCheck,
           offIcon: IconFilledClose,
+          paddingInline: '20px',
+          marginBlock: '15px',
         }}
       />
     ));

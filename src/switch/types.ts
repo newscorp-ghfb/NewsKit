@@ -5,6 +5,7 @@ import {
   BaseSwitchOverrides,
   BaseSwitchState,
 } from '../base-switch/types';
+import {LogicalProps} from '../utils/logical-properties';
 
 export type SwitchIconProps = Omit<
   BaseSwitchIconProps,
@@ -31,7 +32,7 @@ export type SwitchOverrides = {
   onIcon?: BaseSwitchOverrides['onIcon'];
   offIcon?: BaseSwitchOverrides['offIcon'];
   icon?: BaseSwitchOverrides['icon'];
-};
+} & LogicalProps;
 
 export type SwitchState = Extract<BaseSwitchState, 'disabled'>;
 

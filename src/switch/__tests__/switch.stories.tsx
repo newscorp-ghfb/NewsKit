@@ -183,3 +183,27 @@ export const StorySwitchHideFeedback = () => (
 );
 
 StorySwitchHideFeedback.storyName = 'hide-feedback';
+
+export const StorySwitchLogicalProps = () => (
+  <>
+    <StorybookHeading>Switch</StorybookHeading>
+    <Grid>
+      <Cell xs={8}>
+        <StorybookSubHeading>Logical props</StorybookSubHeading>
+
+        <Container>
+          <Switch
+            defaultChecked
+            label="Margin and padding"
+            overrides={{
+              marginBlock: '50px',
+              paddingInline: '100px',
+            }}
+          />
+        </Container>
+      </Cell>
+    </Grid>
+  </>
+);
+
+StorySwitchLogicalProps.storyName = 'switch-logical-props';

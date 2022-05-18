@@ -3,6 +3,7 @@ import {
   BaseSwitchOverrides,
   BaseSwitchProps,
 } from '../base-switch/types';
+import {LogicalProps} from '../utils/logical-properties';
 
 export type RadioButtonIconProps = BaseSwitchIconProps;
 
@@ -18,7 +19,7 @@ export type RadioButtonOverrides = {
   >;
   label?: BaseSwitchOverrides['label'];
   icon?: BaseSwitchOverrides['icon'];
-};
+} & LogicalProps;
 
 export type RadioButtonProps = Omit<
   BaseSwitchProps,
