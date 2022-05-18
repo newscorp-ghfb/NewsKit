@@ -19,7 +19,10 @@ import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {IconFilledCircle} from '../../components/icons';
 import {ModalProps} from '../../../src/modal/types';
 import {Mono} from '../../components/flags';
-import {logicalPaddingOverrideProps} from '../../components/component-api/common-logical-props';
+import {
+  logicalPaddingOverrideProps,
+  prefixLogicalProps,
+} from '../../components/component-api/common-logical-props';
 
 const modalContent = (
   <Stack
@@ -603,10 +606,7 @@ const ModalComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, this overrides the maxHeight property of the Modal panel.',
             },
-            ...logicalPaddingOverrideProps.map(({attribute, ...rest}) => ({
-              attribute: `modal.panel.${attribute}`,
-              ...rest,
-            })),
+            ...prefixLogicalProps(logicalPaddingOverrideProps, 'modal.panel'),
             {
               attribute: 'modal.header.stylePreset',
               type: 'MQ<string>',

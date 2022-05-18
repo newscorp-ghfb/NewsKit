@@ -124,3 +124,12 @@ export const CommonLogicalPropsMDX: React.FC<CommonLogicalPropsMDXProps> = ({
     <CommonLogicalMarginPropsMDX nested={nested} />
   </>
 );
+
+export const prefixLogicalProps = (
+  logicalPropsOverrides: OverridesRowsProps[],
+  prefix: string,
+) =>
+  logicalPropsOverrides.map(({attribute, ...rest}) => ({
+    ...rest,
+    attribute: `${prefix}.${attribute}`,
+  }));
