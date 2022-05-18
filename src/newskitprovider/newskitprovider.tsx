@@ -18,6 +18,7 @@ export type NewskitProviderProps = ThemeProviderProps & {
 export const NewskitProvider = ({
   children,
   theme,
+  /* istanbul ignore next */
   layer: layerProps = {},
   instrumentation: instrumentationProps = {},
 }: NewskitProviderProps) => {
