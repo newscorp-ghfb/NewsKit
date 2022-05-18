@@ -2,12 +2,12 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import tests from './tests';
-import {newskitLightTheme, ThemeProvider, compileTheme} from '../src/theme';
+import {newskitLightTheme, compileTheme, NewskitProvider} from '../src';
 
 const app = (
-  <ThemeProvider theme={compileTheme(newskitLightTheme)}>
+  <NewskitProvider theme={compileTheme(newskitLightTheme)}>
     {tests()}
-  </ThemeProvider>
+  </NewskitProvider>
 );
 
 ReactDOM.render(app, document.getElementById('root'));

@@ -914,9 +914,10 @@ export const StorySelectControlled = () => {
   return (
     <Container>
       <Block>
+        <Label htmlFor="controlled">Controlled</Label>
         <Select
-          aria-describedby="id-2-at"
-          id="id-2"
+          aria-describedby="id-controlled-at"
+          id="controlled"
           size="medium"
           onChange={handleChange}
         >
@@ -930,6 +931,7 @@ export const StorySelectControlled = () => {
             </SelectOption>
           ))}
         </Select>
+        <AssistiveText id="id-controlled-at">Assistive text</AssistiveText>
         <Button onClick={() => setSelectedValue('Fermium')}>
           Make Fermium selected value
         </Button>
