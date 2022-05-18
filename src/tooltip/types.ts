@@ -1,38 +1,26 @@
 import React from 'react';
+import {Placement} from '@floating-ui/react-dom-interactions';
 import {MQ} from '../utils/style';
+import {LogicalPaddingProps} from '../utils/logical-properties';
 
-export type TooltipPlacement =
-  | 'top'
-  | 'top-start'
-  | 'top-end'
-  | 'right'
-  | 'right-start'
-  | 'right-end'
-  | 'bottom'
-  | 'bottom-start'
-  | 'bottom-end'
-  | 'left'
-  | 'left-start'
-  | 'left-end';
+export type TriggerType = 'hover' | 'focus';
 
 export interface TooltipProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title'> {
-  children?: React.ReactNode;
-  title?: React.ReactNode;
-  trigger: ('click' | 'hover' | 'focus')[];
-  placement?: TooltipPlacement;
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title' | 'defaultValue'> {
+  children: React.ReactElement;
+  title: React.ReactNode;
   open?: boolean;
-  onOpen?: (event: React.SyntheticEvent) => void;
-  onDismiss?: (event: React.SyntheticEvent) => void;
-
+  defaultOpen?: boolean;
+  trigger?: TriggerType | TriggerType[];
+  placement?: Placement;
+  labelTooltip?: boolean;
   overrides?: {
+    zIndex?: number;
+    maxWidth?: MQ<string>;
+    minWidth?: MQ<string>;
     panel?: {
-      maxWidth?: MQ<string>;
-      minWidth?: MQ<string>;
-      space?: MQ<string>;
       stylePreset?: MQ<string>;
       typographyPreset?: MQ<string>;
-    };
-    zIndex?: number;
+    } & LogicalPaddingProps;
   };
 }

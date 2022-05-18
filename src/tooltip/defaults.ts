@@ -1,19 +1,11 @@
 export default {
-  legend: {
-    small: {
-      stylePreset: 'legend',
+  tooltip: {
+    zIndex: 80,
+    panel: {
+      paddingBlock: 'spaceInset020',
+      paddingInline: 'spaceInset020',
+      stylePreset: 'tooltipPanel',
       typographyPreset: 'utilityLabel010',
-      spaceStack: 'space030',
-    },
-    medium: {
-      stylePreset: 'legend',
-      typographyPreset: 'utilityLabel020',
-      spaceStack: 'space030',
-    },
-    large: {
-      stylePreset: 'legend',
-      typographyPreset: 'utilityLabel030',
-      spaceStack: 'space030',
     },
   },
 };

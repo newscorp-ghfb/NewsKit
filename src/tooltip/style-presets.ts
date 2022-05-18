@@ -1,12 +1,11 @@
 import {StylePreset} from '../theme/types';
 
 export default {
-  legend: {
+  tooltipPanel: {
     base: {
-      color: '{{colors.inkContrast}}',
-    },
-    disabled: {
-      color: '{{colors.inkNonEssential}}',
+      backgroundColor: '{{colors.interface060}}',
+      color: '{{colors.inkInverse}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
     },
   },
 } as Record<string, StylePreset>;
