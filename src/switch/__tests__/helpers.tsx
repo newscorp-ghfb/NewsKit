@@ -80,12 +80,41 @@ export const sizeOverrides: [string, SwitchOverrides][] = [
 const shortLabel = 'Short label';
 const longLabel =
   'Very long label... The array of dependencies is not passed as arguments to the effect function.';
-export const labels: [
-  string,
-  {label: string; labelPosition: SwitchProps['labelPosition']},
-][] = [
+export const labels: [string, SwitchProps][] = [
   ['start-short', {label: shortLabel, labelPosition: 'start'}],
   ['start-long', {label: longLabel, labelPosition: 'start'}],
   ['end-short', {label: shortLabel, labelPosition: 'end'}],
   ['end-long', {label: longLabel, labelPosition: 'end'}],
+  [
+    'narrow-track-short',
+    {
+      label: `${shortLabel} (narrow track)`,
+      labelPosition: 'end',
+      overrides: {input: {blockSize: '12px'}},
+    },
+  ],
+  [
+    'narrow-track-long',
+    {
+      label: `${longLabel} (narrow track)`,
+      labelPosition: 'end',
+      overrides: {input: {blockSize: '12px'}},
+    },
+  ],
+  [
+    'responsive-track-short',
+    {
+      label: `${shortLabel} (responsive track)`,
+      labelPosition: 'end',
+      overrides: {input: {blockSize: {xs: '12px', md: '48px'}}},
+    },
+  ],
+  [
+    'responsive-track-long',
+    {
+      label: `${longLabel} (responsive track)`,
+      labelPosition: 'end',
+      overrides: {input: {blockSize: {xs: '12px', md: '48px'}}},
+    },
+  ],
 ];

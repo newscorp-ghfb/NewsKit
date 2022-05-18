@@ -123,7 +123,7 @@ export const StorySwitchLabels = () => (
       <Cell xs={8} md={4}>
         <StorybookSubHeading>Labels</StorybookSubHeading>
 
-        {labels.map(([id, {label, labelPosition}, ...props]) => (
+        {labels.map(([id, {label, labelPosition, ...props}]) => (
           <Container key={id}>
             <Switch
               defaultChecked
