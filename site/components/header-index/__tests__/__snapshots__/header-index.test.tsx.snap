@@ -3,7 +3,8 @@
 exports[`HeaderIndex renders without crashing 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #F4F4F4;
+  border-bottom: 1px solid;
+  border-color: #E4E4E4;
 }
 
 @media screen and (max-width: 767px) {
