@@ -845,7 +845,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
           aria-label="drawer on the the bottom"
           aria-modal="true"
           class="emotion-1"
-          data-testid="drawer"
+          data-testid="sidebar"
           id="i am a drawer"
           role="dialog"
         >
@@ -7161,7 +7161,7 @@ exports[`Sidebar renders correctly when open 1`] = `
           aria-label="drawer on the the bottom"
           aria-modal="true"
           class="emotion-1 nk-drawer-appear nk-drawer-appear-active"
-          data-testid="drawer"
+          data-testid="sidebar"
           id="i am a drawer"
           role="dialog"
         >

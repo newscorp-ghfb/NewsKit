@@ -800,6 +800,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
     >
       <div
         class="emotion-2"
+        data-testid="logo-container"
       >
         <div
           class="emotion-3"
@@ -995,7 +996,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                 <a
                   aria-current="page"
                   class="emotion-27"
-                  data-testid="buttonLink"
+                  data-testid="styled-indicator"
                   href="/about/introduction"
                 >
                   <div
@@ -1019,7 +1020,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                 <a
                   aria-current="false"
                   class="emotion-32"
-                  data-testid="buttonLink"
+                  data-testid="styled-indicator"
                   href="/getting-started/overview"
                 >
                   <div
@@ -1043,7 +1044,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                 <a
                   aria-current="false"
                   class="emotion-32"
-                  data-testid="buttonLink"
+                  data-testid="styled-indicator"
                   href="/theme/overview"
                 >
                   <div
@@ -1067,7 +1068,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                 <a
                   aria-current="false"
                   class="emotion-32"
-                  data-testid="buttonLink"
+                  data-testid="styled-indicator"
                   href="/components/overview"
                 >
                   <div
@@ -1972,6 +1973,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
     >
       <div
         class="emotion-2"
+        data-testid="logo-container"
       >
         <div
           class="emotion-3"
@@ -2167,7 +2169,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                 <a
                   aria-current="page"
                   class="emotion-27"
-                  data-testid="buttonLink"
+                  data-testid="styled-indicator"
                   href="/about/introduction"
                 >
                   <div
@@ -2191,7 +2193,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                 <a
                   aria-current="false"
                   class="emotion-32"
-                  data-testid="buttonLink"
+                  data-testid="styled-indicator"
                   href="/getting-started/overview"
                 >
                   <div
@@ -2215,7 +2217,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                 <a
                   aria-current="false"
                   class="emotion-32"
-                  data-testid="buttonLink"
+                  data-testid="styled-indicator"
                   href="/theme/overview"
                 >
                   <div
@@ -2239,7 +2241,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                 <a
                   aria-current="false"
                   class="emotion-32"
-                  data-testid="buttonLink"
+                  data-testid="styled-indicator"
                   href="/components/overview"
                 >
                   <div
@@ -3071,6 +3073,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="logo-container"
       >
         <div
           class="emotion-3"
@@ -3266,7 +3269,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                 <a
                   aria-current="false"
                   class="emotion-27"
-                  data-testid="buttonLink"
+                  data-testid="styled-indicator"
                   href="/about/introduction"
                 >
                   <div
@@ -3290,7 +3293,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                 <a
                   aria-current="false"
                   class="emotion-27"
-                  data-testid="buttonLink"
+                  data-testid="styled-indicator"
                   href="/getting-started/overview"
                 >
                   <div
@@ -3314,7 +3317,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                 <a
                   aria-current="false"
                   class="emotion-27"
-                  data-testid="buttonLink"
+                  data-testid="styled-indicator"
                   href="/theme/overview"
                 >
                   <div
@@ -3338,7 +3341,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                 <a
                   aria-current="false"
                   class="emotion-27"
-                  data-testid="buttonLink"
+                  data-testid="styled-indicator"
                   href="/components/overview"
                 >
                   <div
