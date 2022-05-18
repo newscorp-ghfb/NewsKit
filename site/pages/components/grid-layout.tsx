@@ -29,7 +29,7 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
       type: 'Layout',
       name: 'Grid Layout',
       hero: {
-        illustration: 'static/placeholder-3x2.png',
+        illustration: 'components/grid-layout-illustration',
       },
       introduction: (
         <>

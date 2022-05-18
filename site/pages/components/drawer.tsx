@@ -9,6 +9,7 @@ import {
   styled,
 } from 'newskit';
 
+import {logicalPaddingOverrideProps} from '../../components/component-api/common-logical-props';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
@@ -559,6 +560,40 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
               default: '80',
               description:
                 'If provided, this overrides the zIndex of the Drawer panel.',
+            },
+            ...logicalPaddingOverrideProps.map(({attribute, ...rest}) => ({
+              attribute: `panel.${attribute}`,
+              ...rest,
+            })),
+            {
+              attribute: 'panel.marginInline',
+              type: 'MQ<string>',
+              description: `This attribute only applies to inline drawer. It can take one space token to specify the logical inline start and end margin of the container. This space token can also be used on breakpoints.       `,
+            },
+            {
+              attribute: 'panel.marginInlineStart',
+              type: 'MQ<string>',
+              description: `This attribute only applies to inline drawer. It can take one space token to specify the logical inline start margin of thecontainer. This space token can also be used on breakpoints.       `,
+            },
+            {
+              attribute: 'panel.marginInlineEnd',
+              type: 'MQ<string>',
+              description: `This attribute only applies to inline drawer. It can take one space token to specify the logical inline end margin of the container. This space token can also be used on breakpoints.       `,
+            },
+            {
+              attribute: 'panel.marginBlock',
+              type: 'MQ<string>',
+              description: `This attribute only applies to inline drawer. It can take one space token to specify the logical block start and end margin of the container. This space token can also be used on breakpoints.       `,
+            },
+            {
+              attribute: 'panel.marginBlockStart',
+              type: 'MQ<string>',
+              description: `This attribute only applies to inline drawer. It can take one space token to specify the logical block start margin of the container. This space token can also be used on breakpoints.       `,
+            },
+            {
+              attribute: 'panel.marginBlockEnd',
+              type: 'MQ<string>',
+              description: `This attribute only applies to inline drawer. It can take one space token to specify the logical block end margin of the container. This space token can also be used on breakpoints.       `,
             },
             {
               attribute: 'header.stylePreset',
