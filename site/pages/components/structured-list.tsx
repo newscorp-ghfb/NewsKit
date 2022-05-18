@@ -22,7 +22,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Component',
+      type: 'Layout',
       name: 'Structured List',
       hero: {
         src: 'static/button-hero.svg',
@@ -154,7 +154,6 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
           optional: undefined,
         },
       ],
-      media: {},
     }}
     states={{
       introduction:

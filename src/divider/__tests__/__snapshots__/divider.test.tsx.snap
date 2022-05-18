@@ -40,3 +40,26 @@ exports[`Divider renders with default styles 1`] = `
   />
 </DocumentFragment>
 `;
+
+exports[`Divider renders with logical prop overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-left-width: 1px;
+  display: inline-block;
+  height: 100%;
+  margin-block: 20px;
+  padding-inline: 30px;
+}
+
+<hr
+    aria-hidden="true"
+    class="emotion-0"
+    data-testid="divider"
+  />
+</DocumentFragment>
+`;

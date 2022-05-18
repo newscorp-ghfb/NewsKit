@@ -427,3 +427,45 @@ export const StoryWithOverrides = () =>
     </>
   ));
 StoryWithOverrides.storyName = 'with overrides';
+
+export const StoryDrawerLogicalPropsOverrides = () =>
+  React.createElement(() => (
+    <div data-testid="scrollable-drawer">
+      <StorybookHeading>right drawer</StorybookHeading>
+      <ThemeProvider theme={myCustomTheme}>
+        <Drawer
+          aria-label="Drawer example"
+          open
+          onDismiss={() => {}}
+          placement="right"
+          header="This is a drawer header."
+          overrides={{
+            overlay: {
+              stylePreset: 'overlayCustom',
+            },
+            panel: {
+              size: '50%',
+              maxSize: '60%',
+              minSize: '200px',
+              paddingBlock: 'space030',
+              paddingInline: 'space050',
+            },
+            header: {
+              spaceInset: 'spaceInset050',
+              stylePreset: 'drawerHeaderCustom',
+            },
+            content: {
+              spaceInset: 'spaceInset050',
+            },
+            closeButton: {
+              stylePreset: 'drawerCloseButtonCustom',
+              spaceInset: 'spaceInset020',
+            },
+          }}
+        >
+          Content area
+        </Drawer>
+      </ThemeProvider>
+    </div>
+  ));
+StoryDrawerLogicalPropsOverrides.storyName = 'drawer-logical-props-overrides';

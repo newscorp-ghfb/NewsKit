@@ -267,6 +267,41 @@ exports[`GridLayout renders GridLayout with different areas for different breakp
 </DocumentFragment>
 `;
 
+exports[`GridLayout renders GridLayout with logical overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: grid;
+  margin-inline: 30px;
+  padding-inline: 30px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+    <div
+      class="emotion-1"
+    >
+      TEST
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`GridLayout renders GridLayout with mixed values in columns and rows 1`] = `
 <DocumentFragment>
   .emotion-0 {

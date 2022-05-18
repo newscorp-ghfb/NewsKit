@@ -696,3 +696,132 @@ export const StoryDreawerTest = () =>
   });
 StoryDreawerTest.storyName = 'drawer-transitions-mq';
 StoryDreawerTest.parameters = {eyes: {include: false}};
+
+export const StoryDrawerLogicalPaddingOnPanel = () =>
+  React.createElement(() => {
+    const [isActive, setIsActive] = React.useState(false);
+    const [placement, setPlacement] = React.useState('left');
+
+    const open = () => setIsActive(true);
+    const close = () => setIsActive(false);
+
+    const onChangeValue = (ev: React.ChangeEvent<HTMLDivElement>) =>
+      setPlacement((ev.target as HTMLInputElement).value);
+
+    return (
+      <div data-testid="drawer-with-logical-padding">
+        <StorybookHeading>Default drawer</StorybookHeading>
+        <Button onClick={open} data-testid="drawer-open-button">
+          Open Drawer
+        </Button>
+        <Block as="span" spaceInset="space030" onChange={onChangeValue}>
+          <label htmlFor="drawer_top_logical">
+            top:
+            <input
+              type="radio"
+              value="top"
+              id="drawer_top_logical"
+              name="placement"
+            />
+          </label>
+          <label htmlFor="drawer_left_logical">
+            left:
+            <input
+              type="radio"
+              value="left"
+              id="drawer_left_logical"
+              name="placement"
+              defaultChecked
+            />
+          </label>
+          <label htmlFor="drawer_bottom_logical">
+            bottom:
+            <input
+              type="radio"
+              value="bottom"
+              id="drawer_bottom_logical"
+              name="placement"
+            />
+          </label>
+          <label htmlFor="drawer_right_logical">
+            right:
+            <input
+              type="radio"
+              value="right"
+              id="drawer_right_logical"
+              name="placement"
+            />
+          </label>
+        </Block>
+
+        <Drawer
+          aria-label="Drawer example"
+          open={isActive}
+          onDismiss={close}
+          placement={placement as 'top' | 'left' | 'right' | 'bottom'}
+          header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          overrides={{
+            panel: {paddingBlock: 'space050', paddingInline: 'space050'},
+          }}
+        >
+          <DrawerContent />
+        </Drawer>
+      </div>
+    );
+  });
+StoryDrawerLogicalPaddingOnPanel.storyName = 'logical padding on panel';
+StoryDrawerLogicalPaddingOnPanel.parameters = {eyes: {include: false}};
+
+export const StoryInlineDrawerLogicalPropsOnPanel = () =>
+  React.createElement(() => {
+    const [isActive, open, close] = useActiveState();
+
+    return (
+      <div data-testid="inline-drawer-with-logical-props">
+        <StorybookHeading>
+          Inline drawer with logical padding & margin
+        </StorybookHeading>
+        <Button onClick={open} data-testid="drawer-open-button">
+          Open Drawer
+        </Button>
+        <DrawerContainer>
+          <Drawer
+            aria-label="Drawer example one"
+            open={isActive}
+            onDismiss={close}
+            inline
+            disableFocusTrap
+            hideOverlay
+            placement="top"
+            header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+            overrides={{
+              panel: {
+                marginBlock: 'space090',
+                paddingBlock: 'space050',
+                maxSize: '50%',
+              },
+            }}
+          >
+            <DrawerContent />
+          </Drawer>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
+            lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
+            lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
+            sapien. Donec finibus pellentesque est porta dictum. Suspendisse
+            venenatis vitae augue nec hendrerit. In ut quam tempus, feugiat
+            risus quis, porta eros. Aliquam ultricies ac orci viverra gravida.
+            Ut sodales odio tempor sodales viverra. In condimentum tincidunt
+            fermentum. Nullam imperdiet est vel tincidunt suscipit. Vestibulum
+            vel pulvinar nibh, at molestie lectus. Curabitur ultricies massa eu
+            sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
+            Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
+            interdum.
+          </p>
+        </DrawerContainer>
+      </div>
+    );
+  });
+StoryInlineDrawerLogicalPropsOnPanel.storyName =
+  'inline drawer with logical padding & margin';
+StoryInlineDrawerLogicalPropsOnPanel.parameters = {eyes: {include: false}};

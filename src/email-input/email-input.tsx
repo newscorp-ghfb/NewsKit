@@ -2,6 +2,9 @@ import {EmailInputProps} from './types';
 import {TextInput} from '../text-input';
 import {withDefaultProps} from '../utils';
 
+/**
+ * @deprecated EmailInput is deprecated and will be removed in the next major release.
+ */
 export const EmailInput = withDefaultProps<EmailInputProps>(TextInput, {
   type: 'email',
   rules: {

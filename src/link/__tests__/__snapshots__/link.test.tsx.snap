@@ -623,6 +623,119 @@ exports[`Link renders the external icon if the href is external 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Link renders with logical props overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin-inline: 30px;
+  padding-inline: 30px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #3358CC;
+}
+
+.emotion-0:hover:not(:disabled) {
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:hover:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:active:not(:disabled) svg {
+  fill: #213A82;
+}
+
+.emotion-0:visited:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:not(:disabled) svg {
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-2 {
+  margin: 0;
+  display: inline-block;
+  display: block;
+}
+
+<a
+    class="emotion-0"
+    href="#"
+  >
+    <span
+      class="emotion-1"
+    >
+      <span
+        class="emotion-2"
+      >
+        test link test
+      </span>
+    </span>
+  </a>
+</DocumentFragment>
+`;
+
 exports[`Link renders with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -721,6 +834,117 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0 svg {
+  fill: #3358CC;
+}
+
+.emotion-0:hover:not(:disabled) {
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:hover:not(:disabled) svg {
+  fill: #2B4AAB;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:active:not(:disabled) svg {
+  fill: #213A82;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-2 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-2::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-2::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<a
+    class="emotion-0"
+    href="#"
+  >
+    <span
+      class="emotion-1"
+    >
+      <span
+        class="emotion-2"
+      >
+        test link test
+      </span>
+    </span>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`LinkStandalone renders with logical props overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  color: #3358CC;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin-inline: 30px;
+  padding-inline: 30px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

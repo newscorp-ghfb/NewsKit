@@ -459,4 +459,47 @@ describe('Drawer focus management when focus trap is disabled', () => {
       expect(restoreFocusButton).toHaveFocus();
     });
   });
+
+  test('render inline-drawer', () => {
+    const fragment = renderToFragmentInBody(Drawer, {
+      open: true,
+      inline: true,
+      onDismiss: () => {},
+      header: drawerHeader,
+      children: drawerBody,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('render inline-drawer with logical props overrides', () => {
+    const fragment = renderToFragmentInBody(Drawer, {
+      open: true,
+      inline: true,
+      onDismiss: () => {},
+      header: drawerHeader,
+      children: drawerBody,
+      overrides: {
+        panel: {
+          paddingInline: '30px',
+          marginBlock: '20px',
+        },
+      },
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('render drawer with logical padding overrides', () => {
+    const fragment = renderToFragmentInBody(Drawer, {
+      open: true,
+      onDismiss: () => {},
+      header: drawerHeader,
+      children: drawerBody,
+      overrides: {
+        panel: {
+          paddingInline: '30px',
+        },
+      },
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });
