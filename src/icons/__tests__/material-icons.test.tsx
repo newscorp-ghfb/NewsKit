@@ -46,6 +46,8 @@ const props = {
     size: 'sizing010',
     marginInline: '20px',
     marginBlock: '30px',
+    paddingInline: '20px',
+    paddingBlock: '30px',
   },
 };
 // These tests will run on CI only as default, to make local dev experience quicker, to generate snaps run test:unit:run

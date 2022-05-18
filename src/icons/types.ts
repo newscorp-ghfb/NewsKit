@@ -1,7 +1,7 @@
 import {ComponentType} from 'react';
 import {MQ} from '../utils/style/types';
 import {Theme} from '../theme';
-import {LogicalMarginProps} from '../utils/logical-properties';
+import {LogicalProps} from '../utils/logical-properties';
 
 export interface SvgProps extends React.SVGAttributes<SVGElement> {
   title?: string;
@@ -11,7 +11,7 @@ export interface NewsKitIconProps extends SvgProps {
   overrides?: {
     stylePreset?: MQ<string>;
     size?: MQ<string>;
-  } & LogicalMarginProps;
+  } & LogicalProps;
 }
 
 export type NewsKitIcon = ComponentType<
