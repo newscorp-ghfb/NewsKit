@@ -84,7 +84,9 @@ export const AnatomySection: React.FC<AnatomySectionProps> = ({
             id="anatomy"
             introduction={introduction}
           >
-            <ComponentPageCell>{renderAnatomy(media, rows)}</ComponentPageCell>
+            <ComponentPageCell>
+              {media && renderAnatomy(media, rows)}
+            </ComponentPageCell>
           </CommonSection>
         </>
       )}

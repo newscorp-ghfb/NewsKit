@@ -22,7 +22,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Component',
+      type: 'Layout',
       name: 'Structured List',
       hero: {
         src: 'static/button-hero.svg',
@@ -154,7 +154,6 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
           optional: undefined,
         },
       ],
-      media: {},
     }}
     states={{
       introduction:
@@ -338,6 +337,16 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
               default: 'start',
               description:
                 'Vertically align the Icon when the StructuredListItem is Link',
+            },
+            {
+              name: 'eventOriginator',
+              type: 'string',
+              description: `This prop allows users to add event originator custom name.`,
+            },
+            {
+              name: 'eventContext',
+              type: 'object',
+              description: `This prop allows users to add extra event data to click events.`,
             },
           ],
           overridesRows: [

@@ -453,4 +453,14 @@ describe('Stack as list', () => {
 
     expect(fragment).toMatchSnapshot();
   });
+
+  test(`renders with logical props`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      children,
+      marginBlock: '30px',
+      paddingBlock: '30px',
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
 });

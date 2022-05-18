@@ -14,14 +14,14 @@ export interface BylineProps {
   overrides?: {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
-    spaceStack?: MQ<string>; // Note: LogicalProps can not replace spaceStack! spaceStack = Stack's gap
+    spaceStack?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
     link?: {
       stylePreset?: MQ<string>;
       typographyPreset?: MQ<string>;
     };
     divider?: {
       stylePreset?: MQ<string>;
-      spaceInline?: MQ<string>; // Note: LogicalProps can not simply replace spaceInline as it's used if whitespace
+      spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
     };
   } & LogicalProps;
 }

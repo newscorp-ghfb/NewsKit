@@ -198,4 +198,17 @@ describe('GridLayout', () => {
     const fragment = renderToFragmentWithTheme(GridLayout, props);
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders GridLayout with logical overrides', async () => {
+    const props: GridLayoutProps = {
+      overrides: {
+        paddingInline: '30px',
+        marginInline: '30px',
+      },
+      children: defaultChildren,
+    };
+
+    const fragment = renderToFragmentWithTheme(GridLayout, props) as any;
+    expect(fragment).toMatchSnapshot();
+  });
 });

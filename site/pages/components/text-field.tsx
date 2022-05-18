@@ -68,6 +68,16 @@ const commonPropsRows = [
     description: `If provided, defines whether the HTML element will be checked for spelling errors or not.`,
     default: 'true',
   },
+  {
+    name: 'eventOriginator',
+    type: 'string',
+    description: `This prop allows users to add event originator custom name.`,
+  },
+  {
+    name: 'eventContext',
+    type: 'object',
+    description: `This prop allows users to add extra event data to focus events.`,
+  },
 ];
 
 const commonOverridesRows = [
