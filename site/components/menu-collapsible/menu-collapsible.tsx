@@ -3,10 +3,10 @@ import {
   Divider,
   GridLayout,
   GridLayoutItem,
-  H3,
   IconOutlinedLaunch,
   Menu,
   MenuGroup,
+  P,
   TextBlock,
 } from 'newskit';
 import {IconExpandLess, IconExpandMore} from '../icons';
@@ -21,7 +21,7 @@ export const GitHubLaunch: React.FC<{href?: string}> = () => (
   <StyledAnchor href="https://github.com/newscorp-ghfb/newskit">
     <GridLayout columns="1fr 24px">
       <GridLayoutItem>
-        <H3 overrides={{typographyPreset: 'utilityLabel030'}}>Github</H3>
+        <P overrides={{typographyPreset: 'utilityLabel030'}}>Github</P>
       </GridLayoutItem>
       <GridLayoutItem>
         <IconOutlinedLaunch overrides={{size: 'iconSize020'}} />

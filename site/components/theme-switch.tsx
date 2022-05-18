@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {FlagProps, GridLayout, H2, IconButton, styled} from 'newskit';
+import {FlagProps, GridLayout, IconButton, P, styled} from 'newskit';
 import {IconFilledLight, IconFilledDark} from './icons';
 
 interface ThemeSwitchProps {
@@ -19,9 +19,9 @@ export const ThemeSwitch: React.FC<
     <>
       <StyledAnchor onClick={toggle}>
         <GridLayout columns="1fr 30px">
-          <H2 overrides={{typographyPreset: 'utilityLabel030'}}>
+          <P overrides={{typographyPreset: 'utilityLabel030'}}>
             {`${isDark() ? 'Light' : 'Dark'}  Theme`} {textTheme}
-          </H2>
+          </P>
           <IconButton
             size={size}
             eventContext={{
