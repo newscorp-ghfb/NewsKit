@@ -22,7 +22,7 @@ export interface MenuProps extends React.AriaAttributes {
   size?: MenuSizeType;
   align?: MenutItemAlignTypes;
   overrides?: {
-    spaceInline?: MQ<string>; // Used as the gap between items. Should be renamed but not deprecated.
+    spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
   } & LogicalProps;
 }
 
