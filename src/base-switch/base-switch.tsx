@@ -1,4 +1,4 @@
-import React, {useCallback, useRef} from 'react';
+import React, {useCallback, useLayoutEffect, useRef, useState} from 'react';
 import composeRefs from '@seznam/compose-react-refs';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
 import {
@@ -126,6 +126,14 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
       </StyledLabel>
     );
 
+    const [switchPadding, setSwitchPadding] = useState('');
+    const switchRef = useRef<HTMLDivElement>(null);
+    useLayoutEffect(() => {
+      setSwitchPadding(
+        getComputedStyle(switchRef.current!).padding.split(' ')[1],
+      );
+    }, []);
+
     return (
       <StyledSwitchAndLabelWrapper
         as={label ? 'label' : 'div'}
@@ -149,6 +157,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
           path={path}
         >
           <StyledSwitchFeedback
+            thumbOffset={switchPadding}
             centreOnThumb={path === 'switch'}
             checked={checked}
             size={size}
@@ -161,6 +170,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
             path={path}
           />
           <StyledSwitch
+            ref={switchRef}
             checked={checked}
             state={state}
             overrides={overrides}

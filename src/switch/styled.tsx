@@ -15,8 +15,6 @@ export const StyledSwitchContainer = styled.div<
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  ${({size}) =>
-    getResponsiveSize('margin', `switch.${size}.input`, 'input', 'spaceInset')}
 `;
 
 export const StyledTrackColumn = styled.div<

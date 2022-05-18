@@ -1,4 +1,3 @@
-import {CSSObject} from '@emotion/styled';
 import {
   getResponsiveSize,
   getResponsiveSpace,
@@ -117,6 +116,15 @@ export const StyledSwitch = styled.div<
     feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`};
 
   ${({size, path}) => getTransitionPreset(`${path}.${size}.input`, 'input')};
+  ${({size}) =>
+    getResponsiveSize(
+      spaceInset => ({
+        padding: `0px ${spaceInset}`,
+      }),
+      `switch.${size}.input`,
+      'input',
+      'spaceInset',
+    )}
 `;
 
 export const StyledSwitchFeedback = styled.div<
@@ -124,26 +132,21 @@ export const StyledSwitchFeedback = styled.div<
     isHovered: boolean;
     isActive: boolean;
     centreOnThumb?: boolean;
+    thumbOffset: string;
   }
 >`
   position: absolute;
   top: 50%;
 
-  ${({centreOnThumb, size, checked, path, ...rest}) => {
+  ${({centreOnThumb, size, checked, path, thumbOffset, ...rest}) => {
     if (!centreOnThumb) {
       return {left: '50%'};
     }
-    const {padding} = getResponsiveSize(
-      'padding',
-      `${path}.${size}.input`,
-      'input',
-      'spaceInset',
-    )(rest) as CSSObject;
     return getResponsiveSize(
-      rectSize => ({
+      thumbSize => ({
         left: checked
-          ? `calc(100% - (${rectSize} / 2) - ${padding})`
-          : `calc((${rectSize} / 2) + ${padding})`,
+          ? `calc(100% - (${thumbSize} / 2) - ${thumbOffset || `0px`})`
+          : `calc((${thumbSize} / 2) + ${thumbOffset || `0px`})`,
       }),
       `${path}.${size}.thumb`,
       'thumb',

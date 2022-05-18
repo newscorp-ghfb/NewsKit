@@ -57,6 +57,18 @@ export const sizeOverrides: [string, SwitchOverrides][] = [
       thumb: {transitionPreset: [slowTransition]},
     },
   ],
+  [
+    'responsive-padding',
+    {
+      input: {
+        inlineSize: '200px',
+        spaceInset: {
+          xs: '4px',
+          lg: '12px',
+        },
+      },
+    },
+  ],
 ];
 
 const shortLabel = 'Short label';

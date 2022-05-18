@@ -25,8 +25,8 @@ const SwitchSelector = ({
   isFocused,
   isHovered,
 }: BaseSwitchIconProps & {children?: React.ReactNode}) => {
-  const OnIcon = iconAsComponent(overrides?.onIcon);
-  const OffIcon = iconAsComponent(overrides?.offIcon);
+  const OnIcon = iconAsComponent(overrides!.onIcon);
+  const OffIcon = iconAsComponent(overrides!.offIcon);
   return (
     <StyledSwitchContainer size={size} overrides={overrides}>
       <StyledTrackColumn
