@@ -441,17 +441,8 @@ describe('Select', () => {
   });
 
   describe('in Modal', () => {
-    beforeEach(() => {
-      cleanup();
-      // Clean up the accesibility message which is added to the body by Downshift
-      const msg = document.getElementById('a11y-status-message');
-      if (msg) msg.remove();
-    });
-
     afterEach(() => {
       cleanup();
-      const msg = document.getElementById('a11y-status-message');
-      if (msg) msg.remove();
     });
 
     const commonProps: SelectProps = {
@@ -483,7 +474,6 @@ describe('Select', () => {
 
       expect(asFragment()).toMatchSnapshot();
       unmount();
-      cleanup();
     });
 
     test('render Select with overrides props', async () => {
@@ -511,7 +501,6 @@ describe('Select', () => {
 
       expect(asFragment()).toMatchSnapshot();
       unmount();
-      cleanup();
     });
 
     test('render Select with overrides style', async () => {
@@ -538,7 +527,6 @@ describe('Select', () => {
 
       expect(asFragment()).toMatchSnapshot();
       unmount();
-      cleanup();
     });
 
     test('correct focus order', async () => {
@@ -561,7 +549,6 @@ describe('Select', () => {
       expect(getByTestId('select-panel')).toHaveFocus();
 
       unmount();
-      cleanup();
     });
 
     test('can close modal', async () => {
@@ -579,7 +566,6 @@ describe('Select', () => {
       userEvent.click(getByTestId('button'));
       expect(queryByTestId('modal')).not.toBeInTheDocument();
       unmount();
-      cleanup();
     });
 
     test('do not close modal when click outside the panel', async () => {
@@ -614,7 +600,6 @@ describe('Select', () => {
       // the modal should not close
       expect(queryByTestId('modal')).toBeInTheDocument();
       unmount();
-      cleanup();
     });
   });
 });

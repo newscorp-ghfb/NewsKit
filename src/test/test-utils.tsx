@@ -81,6 +81,11 @@ export const renderWithThemeInBody = <T extends {}>(
   const asFragment = () => {
     const template = document.createElement('template');
     template.innerHTML = baseElement.innerHTML;
+
+    // downshift adds this element to the body, we don't want to be part of the snapshots
+    const msg = template.content.getElementById('a11y-status-message');
+    if (msg) msg.remove();
+
     return template.content;
   };
 
@@ -105,6 +110,11 @@ export const renderInBody = <T extends {}>(
   const asFragment = () => {
     const template = document.createElement('template');
     template.innerHTML = baseElement.innerHTML;
+
+    // downshift adds this element to the body, we don't want to be part of the snapshots
+    const msg = template.content.getElementById('a11y-status-message');
+    if (msg) msg.remove();
+
     return template.content;
   };
 
