@@ -1,6 +1,6 @@
 import React from 'react';
 import {isValidElementType} from 'react-is';
-import {SwitchProps, SwitchState} from './types';
+import {SwitchIconProps, SwitchProps} from './types';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
@@ -25,13 +25,13 @@ const SwitchSelector = ({
   isFocused,
   isHovered,
   state,
-}: BaseSwitchIconProps & {children?: React.ReactNode}) => {
+}: SwitchIconProps & {children?: React.ReactNode}) => {
   const OnIcon = iconAsComponent(overrides!.onIcon);
   const OffIcon = iconAsComponent(overrides!.offIcon);
   return (
     <StyledSwitchContainer size={size} overrides={overrides}>
       <StyledTrackColumn
-        state={state as SwitchState}
+        state={state}
         size={size}
         overrides={overrides}
         justifyContent="start"
@@ -39,7 +39,7 @@ const SwitchSelector = ({
         {OnIcon && <OnIcon />}
       </StyledTrackColumn>
       <StyledTrackColumn
-        state={state as SwitchState}
+        state={state}
         size={size}
         overrides={overrides}
         justifyContent="end"
@@ -64,7 +64,7 @@ const ThemelessSwitch = React.forwardRef<HTMLInputElement, SwitchProps>(
     const ThumbIcon = iconAsComponent(overrides?.icon);
 
     const SwitchSelectorWithIcon = (props: BaseSwitchIconProps) => (
-      <SwitchSelector {...props}>
+      <SwitchSelector {...(props as SwitchIconProps)}>
         {!!ThumbIcon && <ThumbIcon {...props} />}
       </SwitchSelector>
     );

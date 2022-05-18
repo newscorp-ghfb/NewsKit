@@ -1,6 +1,18 @@
 import React from 'react';
 import {BaseSwitchProps} from '../base-switch';
-import {BaseSwitchOverrides, BaseSwitchState} from '../base-switch/types';
+import {
+  BaseSwitchIconProps,
+  BaseSwitchOverrides,
+  BaseSwitchState,
+} from '../base-switch/types';
+
+export type SwitchIconProps = Omit<
+  BaseSwitchIconProps,
+  'state' | 'parentOverrides'
+> & {
+  state: SwitchState;
+  parentOverrides: SwitchOverrides;
+};
 
 export type SwitchOverrides = {
   spaceStack?: BaseSwitchOverrides['spaceStack'];
