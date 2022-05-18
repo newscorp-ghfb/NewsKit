@@ -18,13 +18,18 @@ export const StyledSwitchContainer = styled.div<
 `;
 
 export const StyledTrackColumn = styled.div<
-  Pick<SwitchProps, 'size' | 'checked' | 'overrides'> & {
+  Pick<SwitchProps, 'size' | 'checked' | 'overrides' | 'state'> & {
     justifyContent: 'start' | 'end';
   }
 >`
   display: flex;
   width: 100%;
   ${({justifyContent}) => ({justifyContent})};
+
+  ${({size, state}) =>
+    getStylePreset(`switch.${size}.column`, 'column', {
+      isDisabled: state === 'disabled',
+    })};
 
   svg {
     height: 100%;

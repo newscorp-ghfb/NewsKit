@@ -92,20 +92,12 @@ exports[`Switch hover on feedback shows it: with hover 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-3:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
 .emotion-3:disabled {
   background-color: #F4F4F4;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -130,6 +122,14 @@ exports[`Switch hover on feedback shows it: with hover 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -146,6 +146,14 @@ exports[`Switch hover on feedback shows it: with hover 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -370,20 +378,12 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-3:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
 .emotion-3:disabled {
   background-color: #F4F4F4;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -408,6 +408,14 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -424,6 +432,14 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -447,14 +463,6 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -628,10 +636,6 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #C0C0C0;
-}
-
 .emotion-4 {
   position: relative;
   width: 100%;
@@ -654,6 +658,10 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
 }
 
 .emotion-5 svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -670,6 +678,10 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -693,14 +705,6 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -871,10 +875,6 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #C0C0C0;
-}
-
 .emotion-4 {
   position: relative;
   width: 100%;
@@ -897,6 +897,10 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
 }
 
 .emotion-5 svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -913,6 +917,10 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -936,14 +944,6 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -1120,20 +1120,12 @@ exports[`Switch hover on label trigger Switch hover styles: with hover 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-3:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
 .emotion-3:disabled {
   background-color: #F4F4F4;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -1158,6 +1150,14 @@ exports[`Switch hover on label trigger Switch hover styles: with hover 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -1174,6 +1174,14 @@ exports[`Switch hover on label trigger Switch hover styles: with hover 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -1398,20 +1406,12 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-3:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
 .emotion-3:disabled {
   background-color: #F4F4F4;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -1436,6 +1436,14 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -1452,6 +1460,14 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -1475,14 +1491,6 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -1656,10 +1664,6 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #C0C0C0;
-}
-
 .emotion-4 {
   position: relative;
   width: 100%;
@@ -1682,6 +1686,10 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
 }
 
 .emotion-5 svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -1698,6 +1706,10 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -1721,14 +1733,6 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -1899,10 +1903,6 @@ exports[`Switch hover on label with disabled do not change hover state: without 
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #C0C0C0;
-}
-
 .emotion-4 {
   position: relative;
   width: 100%;
@@ -1925,6 +1925,10 @@ exports[`Switch hover on label with disabled do not change hover state: without 
 }
 
 .emotion-5 svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -1941,6 +1945,10 @@ exports[`Switch hover on label with disabled do not change hover state: without 
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -1964,14 +1972,6 @@ exports[`Switch hover on label with disabled do not change hover state: without 
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -2170,20 +2170,12 @@ exports[`Switch label attributes 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-3:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
 .emotion-3:disabled {
   background-color: #F4F4F4;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -2208,6 +2200,14 @@ exports[`Switch label attributes 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -2224,6 +2224,14 @@ exports[`Switch label attributes 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -2247,14 +2255,6 @@ exports[`Switch label attributes 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -2471,20 +2471,12 @@ exports[`Switch label position start 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-4 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-4:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
 .emotion-4:disabled {
   background-color: #F4F4F4;
-}
-
-.emotion-4:disabled svg {
-  fill: #C0C0C0;
 }
 
 .emotion-5 {
@@ -2509,6 +2501,14 @@ exports[`Switch label position start 1`] = `
 }
 
 .emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-6 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -2525,6 +2525,14 @@ exports[`Switch label position start 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-7 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-7:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-7 svg {
@@ -2548,14 +2556,6 @@ exports[`Switch label position start 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-8:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-8:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -2744,20 +2744,12 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-3:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
 .emotion-3:disabled {
   background-color: #F4F4F4;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -2782,6 +2774,14 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -2798,6 +2798,14 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -2821,14 +2829,6 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -3034,20 +3034,12 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-3:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
 .emotion-3:disabled {
   background-color: #F4F4F4;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -3072,6 +3064,14 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -3088,6 +3088,14 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -3312,10 +3320,6 @@ exports[`Switch render with size: large & checked 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-4 {
   position: relative;
   width: 100%;
@@ -3338,6 +3342,14 @@ exports[`Switch render with size: large & checked 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 32px;
@@ -3354,6 +3366,14 @@ exports[`Switch render with size: large & checked 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -3377,14 +3397,6 @@ exports[`Switch render with size: large & checked 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -3559,10 +3571,6 @@ exports[`Switch render with size: large & disabled 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #C0C0C0;
-}
-
 .emotion-4 {
   position: relative;
   width: 100%;
@@ -3585,6 +3593,10 @@ exports[`Switch render with size: large & disabled 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 32px;
@@ -3601,6 +3613,10 @@ exports[`Switch render with size: large & disabled 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -3624,14 +3640,6 @@ exports[`Switch render with size: large & disabled 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -3830,20 +3838,12 @@ exports[`Switch render with size: large 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-3:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
 .emotion-3:disabled {
   background-color: #F4F4F4;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -3868,6 +3868,14 @@ exports[`Switch render with size: large 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 32px;
@@ -3884,6 +3892,14 @@ exports[`Switch render with size: large 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -3907,14 +3923,6 @@ exports[`Switch render with size: large 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -4116,10 +4124,6 @@ exports[`Switch render with size: medium & checked 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-4 {
   position: relative;
   width: 100%;
@@ -4142,6 +4146,14 @@ exports[`Switch render with size: medium & checked 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -4158,6 +4170,14 @@ exports[`Switch render with size: medium & checked 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -4181,14 +4201,6 @@ exports[`Switch render with size: medium & checked 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -4363,10 +4375,6 @@ exports[`Switch render with size: medium & disabled 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #C0C0C0;
-}
-
 .emotion-4 {
   position: relative;
   width: 100%;
@@ -4389,6 +4397,10 @@ exports[`Switch render with size: medium & disabled 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -4405,6 +4417,10 @@ exports[`Switch render with size: medium & disabled 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -4428,14 +4444,6 @@ exports[`Switch render with size: medium & disabled 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -4634,20 +4642,12 @@ exports[`Switch render with size: medium 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-3:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
 .emotion-3:disabled {
   background-color: #F4F4F4;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -4672,6 +4672,14 @@ exports[`Switch render with size: medium 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -4688,6 +4696,14 @@ exports[`Switch render with size: medium 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -4711,14 +4727,6 @@ exports[`Switch render with size: medium 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -4920,10 +4928,6 @@ exports[`Switch render with size: small & checked 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-4 {
   position: relative;
   width: 100%;
@@ -4946,6 +4950,14 @@ exports[`Switch render with size: small & checked 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 16px;
@@ -4962,6 +4974,14 @@ exports[`Switch render with size: small & checked 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -4985,14 +5005,6 @@ exports[`Switch render with size: small & checked 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -5167,10 +5179,6 @@ exports[`Switch render with size: small & disabled 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #C0C0C0;
-}
-
 .emotion-4 {
   position: relative;
   width: 100%;
@@ -5193,6 +5201,10 @@ exports[`Switch render with size: small & disabled 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 16px;
@@ -5209,6 +5221,10 @@ exports[`Switch render with size: small & disabled 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -5232,14 +5248,6 @@ exports[`Switch render with size: small & disabled 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -5438,20 +5446,12 @@ exports[`Switch render with size: small 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-3:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
 .emotion-3:disabled {
   background-color: #F4F4F4;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -5476,6 +5476,14 @@ exports[`Switch render with size: small 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 16px;
@@ -5492,6 +5500,14 @@ exports[`Switch render with size: small 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -5515,14 +5531,6 @@ exports[`Switch render with size: small 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -5724,20 +5732,12 @@ exports[`Switch render with state: base 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-3:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
 .emotion-3:disabled {
   background-color: #F4F4F4;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -5762,6 +5762,14 @@ exports[`Switch render with state: base 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -5778,6 +5786,14 @@ exports[`Switch render with state: base 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -5801,14 +5817,6 @@ exports[`Switch render with state: base 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -6011,10 +6019,6 @@ exports[`Switch render with state: checked 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #FFFFFF;
-}
-
 .emotion-4 {
   position: relative;
   width: 100%;
@@ -6037,6 +6041,14 @@ exports[`Switch render with state: checked 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -6053,6 +6065,14 @@ exports[`Switch render with state: checked 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -6076,14 +6096,6 @@ exports[`Switch render with state: checked 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -6259,10 +6271,6 @@ exports[`Switch render with state: checked-disabled 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #C0C0C0;
-}
-
 .emotion-4 {
   position: relative;
   width: 100%;
@@ -6285,6 +6293,10 @@ exports[`Switch render with state: checked-disabled 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -6301,6 +6313,10 @@ exports[`Switch render with state: checked-disabled 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -6324,14 +6340,6 @@ exports[`Switch render with state: checked-disabled 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -6504,10 +6512,6 @@ exports[`Switch render with state: disabled 1`] = `
   padding: 0px 4px;
 }
 
-.emotion-3 svg {
-  fill: #C0C0C0;
-}
-
 .emotion-4 {
   position: relative;
   width: 100%;
@@ -6530,6 +6534,10 @@ exports[`Switch render with state: disabled 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
@@ -6546,6 +6554,10 @@ exports[`Switch render with state: disabled 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-6 svg {
+  fill: #C0C0C0;
 }
 
 .emotion-6 svg {
@@ -6569,14 +6581,6 @@ exports[`Switch render with state: disabled 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-7:focus:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
@@ -6766,6 +6770,14 @@ exports[`Switch with overrides 1`] = `
 }
 
 .emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 svg {
   height: 100%;
   width: 100%;
   max-width: 95px;
@@ -6807,6 +6819,14 @@ exports[`Switch with overrides 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: end;
   justify-content: end;
+}
+
+.emotion-8 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-8:disabled svg {
+  fill: #C0C0C0;
 }
 
 .emotion-8 svg {

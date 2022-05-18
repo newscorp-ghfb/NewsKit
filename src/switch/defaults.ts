@@ -23,6 +23,9 @@ export default {
         size: 'sizing070',
         transitionPreset: ['shiftAbsolute', 'opacityChange'],
       },
+      column: {
+        stylePreset: 'switchTrackColumn',
+      },
     },
     medium: {
       thumb: {
@@ -47,6 +50,9 @@ export default {
         size: 'sizing080',
         transitionPreset: ['shiftAbsolute', 'opacityChange'],
       },
+      column: {
+        stylePreset: 'switchTrackColumn',
+      },
     },
     large: {
       thumb: {
@@ -70,6 +76,9 @@ export default {
         stylePreset: 'feedback',
         size: 'sizing090',
         transitionPreset: ['shiftAbsolute', 'opacityChange'],
+      },
+      column: {
+        stylePreset: 'switchTrackColumn',
       },
     },
   },

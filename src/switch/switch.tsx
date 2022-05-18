@@ -1,6 +1,6 @@
 import React from 'react';
 import {isValidElementType} from 'react-is';
-import {SwitchProps} from './types';
+import {SwitchProps, SwitchState} from './types';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
@@ -24,19 +24,26 @@ const SwitchSelector = ({
   children,
   isFocused,
   isHovered,
+  state,
 }: BaseSwitchIconProps & {children?: React.ReactNode}) => {
   const OnIcon = iconAsComponent(overrides!.onIcon);
   const OffIcon = iconAsComponent(overrides!.offIcon);
   return (
     <StyledSwitchContainer size={size} overrides={overrides}>
       <StyledTrackColumn
+        state={state as SwitchState}
         size={size}
         overrides={overrides}
         justifyContent="start"
       >
         {OnIcon && <OnIcon />}
       </StyledTrackColumn>
-      <StyledTrackColumn size={size} overrides={overrides} justifyContent="end">
+      <StyledTrackColumn
+        state={state as SwitchState}
+        size={size}
+        overrides={overrides}
+        justifyContent="end"
+      >
         {OffIcon && <OffIcon />}
       </StyledTrackColumn>
       <StyledThumb
