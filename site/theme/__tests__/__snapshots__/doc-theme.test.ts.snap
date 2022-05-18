@@ -1596,29 +1596,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -3786,29 +3786,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -5976,29 +5976,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -8166,29 +8166,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -10356,29 +10356,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -12546,29 +12546,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -14736,29 +14736,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -16926,29 +16926,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
