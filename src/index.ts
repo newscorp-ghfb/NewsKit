@@ -51,6 +51,7 @@ export * from './theme';
 export * from './theme-checker';
 export * from './title-bar';
 export * from './toast';
+export * from './tooltip';
 export * from './typography';
 export * from './unordered-list';
 export * from './utils/hooks/use-media-query';

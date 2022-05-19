@@ -133,6 +133,7 @@ Array [
   "TitleBar",
   "Toast",
   "ToastProvider",
+  "Tooltip",
   "UnorderedList",
   "VideoPlayer",
   "Visible",
