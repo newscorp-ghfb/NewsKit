@@ -29,6 +29,7 @@ export type RadioButtonProps = Omit<
   | 'defaultChecked'
   | 'defaultValue'
   | 'overrides'
+  | 'hideFeedback'
 > & {overrides?: RadioButtonOverrides};
 
 export type RadioGroupContextValue = {
