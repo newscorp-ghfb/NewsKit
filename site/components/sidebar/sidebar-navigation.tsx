@@ -102,8 +102,7 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
   );
 };
 
-const MenuNavDesktop = () => {
-  const path = useRouter()?.pathname || '';
+const MenuNavDesktop = ({path}: {path: string}) => {
   const currentRoute = path.match(/\/[A-z\d-]*/g);
   const currentSection =
     currentRoute && routes.filter(({id}) => id === currentRoute[0]);
@@ -135,7 +134,7 @@ export const SidebarNav = () => {
         <MenuNavCollapsible path={path} menu={routes} />
       </Visible>
       <Visible lg xl>
-        <MenuNavDesktop />
+        <MenuNavDesktop path={path} />
         <Block spaceStack="space060" />
       </Visible>
     </>
