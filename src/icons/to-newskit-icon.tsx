@@ -7,6 +7,7 @@ import {getTransitionPresetFromTheme} from '../utils/style/transition-preset';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {logicalProps} from '../utils/logical-properties';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const renderIconStylePreset = (overridesOnly: boolean) => (props: any) => {
@@ -47,6 +48,8 @@ const StyledIcon = styled.svg<NewsKitIconProps>`
       // If overridden, render SP CSS here instead - this ensures we override fill color from parent SP.
       ${renderIconStylePreset(true)}
   }
+
+  ${logicalProps()}
 `;
 
 export const toNewsKitIcon = (

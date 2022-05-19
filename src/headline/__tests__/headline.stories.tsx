@@ -73,6 +73,26 @@ export const StoryHeadline = () => (
     >
       Heading Headline
     </Headline>
+    <br />
+    <Headline
+      kickerText="Using logical props"
+      overrides={{
+        paddingInline: '30px',
+        paddingBlock: '15px',
+      }}
+    >
+      For Padding
+    </Headline>
+    <br />
+    <Headline
+      kickerText="Using logical props"
+      overrides={{
+        marginInline: '30px',
+        marginBlock: '15px',
+      }}
+    >
+      For Margin
+    </Headline>
   </ThemeProvider>
 );
 StoryHeadline.storyName = 'headline';

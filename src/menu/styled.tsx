@@ -3,6 +3,7 @@ import {TextAlignProperty} from 'csstype';
 import {Button} from '../button';
 import {getStylePreset, getResponsiveSpace, styled} from '../utils/style';
 import {MenuGroupProps, MenuProps, MenutItemAlignTypes} from './types';
+import {logicalProps} from '../utils/logical-properties';
 
 export const StyledMenu = styled.nav<MenuProps>`
   box-sizing: border-box;
@@ -26,6 +27,7 @@ export const StyledMenu = styled.nav<MenuProps>`
   }
 
   ${getStylePreset('menu', '')};
+  ${logicalProps()}
 `;
 
 export const StyledMenuGroup = styled.li<
