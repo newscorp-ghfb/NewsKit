@@ -42,9 +42,9 @@ const Sidebar: React.FC<SidebarProps> = ({
           },
         }}
       >
-        <Block paddingBlock="space020" id="i am space" />
+        <Block paddingBlock="space020" />
         <SidebarNav />
-        <Block marginInline="space060">
+        <Block marginInline="space060" marginBlock="space050">
           <GitHubLaunch />
           <Block marginBlock="space050" />
           <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} textTheme />
