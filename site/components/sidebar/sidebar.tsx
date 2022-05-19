@@ -23,9 +23,9 @@ const Sidebar: React.FC<SidebarProps> = ({
   <>
     <Visible xs sm md>
       <StyledDrawer
-        id="i am a drawer"
         data-testid="sidebar"
-        aria-label="drawer on the the bottom"
+        onClick={handleSidebarClick}
+        aria-label="drawer menu on the left"
         open={sidebarOpen}
         onDismiss={handleSidebarClick}
         placement="left"
@@ -37,16 +37,16 @@ const Sidebar: React.FC<SidebarProps> = ({
           },
           panel: {
             stylePreset: 'sidebar',
+
             minSize: '100%',
-            marginBlock: '0px',
           },
         }}
       >
-        <Block spaceInset="space020" id="i am space" />
+        <Block paddingBlock="space020" id="i am space" />
         <SidebarNav />
         <Block marginInline="space060">
           <GitHubLaunch href="https://github.com/newscorp-ghfb/newskit" />
-          <Block spaceStack="space050" />
+          <Block marginBlock="space050" />
           <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} textTheme />
         </Block>
       </StyledDrawer>

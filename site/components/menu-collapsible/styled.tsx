@@ -98,10 +98,6 @@ export const MobileNavigationDivider = styled.div`
   ${getSpacingCssFromTheme('marginBottom', 'space050')};
 `;
 
-export const StyledAnchor = styled.a`
-  text-decoration: none;
-`;
-
 export const MenuItemStyled = styled(MenuItem)`
   ${({selected}) =>
     selected ? getSpacingCssFromTheme('paddingInline', '28px') : undefined}

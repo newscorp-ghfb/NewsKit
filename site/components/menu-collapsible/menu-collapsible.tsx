@@ -14,20 +14,22 @@ import {
   MenuCollapsible,
   MenuItemStyled,
   MobileNavigationDivider,
-  StyledAnchor,
 } from './styled';
 
-export const GitHubLaunch: React.FC<{href?: string}> = () => (
-  <StyledAnchor href="https://github.com/newscorp-ghfb/newskit">
-    <GridLayout columns="1fr 24px">
-      <GridLayoutItem>
-        <P overrides={{typographyPreset: 'utilityLabel030'}}>Github</P>
-      </GridLayoutItem>
-      <GridLayoutItem>
-        <IconOutlinedLaunch overrides={{size: 'iconSize020'}} />
-      </GridLayoutItem>
-    </GridLayout>
-  </StyledAnchor>
+export const GitHubLaunch: React.FC = () => (
+  <GridLayout
+    columns="1fr 24px"
+    onClick={() => {
+      window.open('https://github.com/newscorp-ghfb/newskit', '', '');
+    }}
+  >
+    <GridLayoutItem>
+      <P overrides={{typographyPreset: 'utilityLabel030'}}>Github</P>
+    </GridLayoutItem>
+    <GridLayoutItem>
+      <IconOutlinedLaunch overrides={{size: 'iconSize020'}} />
+    </GridLayoutItem>
+  </GridLayout>
 );
 
 type NavProps = {
