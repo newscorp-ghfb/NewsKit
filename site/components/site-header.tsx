@@ -16,7 +16,6 @@ import {
   MenuItem,
   Menu,
   GridLayout,
-  GridLayoutItem,
   IconButton,
 } from 'newskit';
 import {NewsKitLogo} from './logo';
@@ -82,13 +81,10 @@ type NavItemProps = {
   title: string;
   id: string;
 };
-const MenuItemStyled = styled(MenuItem)`
-  ${({selected}) =>
-    selected ? getSpacingCssFromTheme('paddingInline', '0px') : undefined}
-`;
+
 const navItems = routes.map(({title, subNav}) => ({title, id: subNav[0].id}));
 const siteheaderAreas = `
-logo menu . github theme 
+logo menu  github theme 
  `;
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
   ({handleSidebarClick, toggleTheme, themeMode, path, sidebarOpen}, ref) => {
@@ -119,7 +115,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
 
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
       items.map(({title, id}) => (
-        <MenuItemStyled
+        <MenuItem
           data-testid="styled-indicator"
           key={id}
           href={id}
@@ -133,38 +129,40 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           }}
         >
           {title}
-        </MenuItemStyled>
+        </MenuItem>
       ));
 
     return (
       <Header data-testid="header-navigation" ref={ref}>
         <Visible xs sm md>
-          <GridLayout data-testid="logo-container" columns={{xs: '1fr 60%'}}>
-            <GridLayoutItem justifySelf="start" alignSelf="center">
-              {renderMobileNavigation(handleSidebarClick)}
-            </GridLayoutItem>
-            <GridLayoutItem justifySelf="start" alignSelf="center">
-              <Link
-                type="standalone"
-                href="/"
-                overrides={{stylePreset: 'inkBase'}}
-              >
-                <NewsKitLogo />
-              </Link>
-            </GridLayoutItem>
+          <GridLayout
+            data-testid="logo-container"
+            columns={{xs: '50px 1fr 50px'}}
+            alignItems="center"
+            justifyItems="center"
+          >
+            {renderMobileNavigation(handleSidebarClick)}
+            <Link
+              type="standalone"
+              href="/"
+              overrides={{stylePreset: 'inkBase'}}
+            >
+              <NewsKitLogo />
+            </Link>
           </GridLayout>
         </Visible>
         <Visible lg xl>
           <GridLayout
-            columns={{lg: '276px 400px 1fr  1fr 80px'}}
+            columns={{lg: '276px 1fr auto 80px'}}
             columnGap="20px"
+            alignItems="center"
             areas={{
               lg: siteheaderAreas,
             }}
           >
             {Areas => (
               <>
-                <Areas.Logo alignSelf="center" justifySelf="start">
+                <Areas.Logo justifySelf="start">
                   <Link
                     type="standalone"
                     href="/"
@@ -174,15 +172,15 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                   </Link>
                 </Areas.Logo>
 
-                <Areas.Menu alignSelf="center" justifySelf="center">
+                <Areas.Menu justifySelf="start">
                   <Menu aria-label="main-navigation">
                     {renderNavItems(navItems, path)}
                   </Menu>
                 </Areas.Menu>
-                <Areas.Github alignSelf="center" justifySelf="end">
+                <Areas.Github>
                   <GitHubButton href="https://github.com/newscorp-ghfb/newskit" />
                 </Areas.Github>
-                <Areas.Theme alignSelf="center" justifySelf="start">
+                <Areas.Theme>
                   <ThemeSwitch
                     size={ButtonSize.Medium}
                     toggle={toggleTheme}

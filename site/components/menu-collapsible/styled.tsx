@@ -1,11 +1,4 @@
-import {
-  getColorFromTheme,
-  getSizingFromTheme,
-  getSpacingCssFromTheme,
-  getStylePresetFromTheme,
-  MenuItem,
-  styled,
-} from 'newskit';
+import {getSpacingCssFromTheme, getStylePresetFromTheme, styled} from 'newskit';
 
 import React from 'react';
 import {useMenuContext} from '../../../src/menu/context';
@@ -43,24 +36,8 @@ const StyledMenuCollapsibleItem = styled.div<
     transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
     transition-delay: 0s;
   }
-  &.expanded .selected {
-    position: relative;
-    overflow: visible;
-    ::before {
-      content: '';
-      position: absolute;
-      background: ${getColorFromTheme('blue060')};
-      height: ${getSizingFromTheme('sizing070')};
-      width: ${getSizingFromTheme('sizing010')};
-
-      ${getStylePresetFromTheme('interactivePrimary030')};
-      border-width: 4px;
-      border-radius: 0 4px 4px 0;
-    }
   }
 `;
-
-export const Indicator = styled.div``;
 
 type MenuCollapsibleProps = {
   className: string;
@@ -98,9 +75,4 @@ export const MobileNavigationDivider = styled.div`
   ${getSpacingCssFromTheme('marginBottom', 'space050')};
 `;
 
-export const MenuItemStyled = styled(MenuItem)`
-  ${({selected}) =>
-    selected ? getSpacingCssFromTheme('paddingInline', '28px') : undefined}
-  width: 100vw;
-`;
 MenuCollapsible.displayName = 'MenuCollapsible';

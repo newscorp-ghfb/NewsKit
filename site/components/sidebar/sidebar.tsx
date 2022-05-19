@@ -45,7 +45,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         <Block paddingBlock="space020" id="i am space" />
         <SidebarNav />
         <Block marginInline="space060">
-          <GitHubLaunch href="https://github.com/newscorp-ghfb/newskit" />
+          <GitHubLaunch />
           <Block marginBlock="space050" />
           <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} textTheme />
         </Block>

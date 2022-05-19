@@ -6,15 +6,12 @@ import {
   IconOutlinedLaunch,
   Menu,
   MenuGroup,
+  MenuItem,
   P,
   TextBlock,
 } from 'newskit';
 import {IconExpandLess, IconExpandMore} from '../icons';
-import {
-  MenuCollapsible,
-  MenuItemStyled,
-  MobileNavigationDivider,
-} from './styled';
+import {MenuCollapsible, MobileNavigationDivider} from './styled';
 
 export const GitHubLaunch: React.FC = () => (
   <GridLayout
@@ -67,7 +64,7 @@ export const MenuNavCollapsible = ({
               <>
                 {title.includes('Getting started') ||
                 title.includes('Overview') ? (
-                  <MenuItemStyled
+                  <MenuItem
                     href={id}
                     selected={path.includes(id)}
                     overrides={{
@@ -80,9 +77,9 @@ export const MenuNavCollapsible = ({
                     size="small"
                   >
                     {title}
-                  </MenuItemStyled>
+                  </MenuItem>
                 ) : (
-                  <MenuItemStyled
+                  <MenuItem
                     href={id}
                     selected={path.includes(id)}
                     overrides={{
@@ -94,7 +91,7 @@ export const MenuNavCollapsible = ({
                     size="small"
                   >
                     {title}
-                  </MenuItemStyled>
+                  </MenuItem>
                 )}
               </>
             ) : (
