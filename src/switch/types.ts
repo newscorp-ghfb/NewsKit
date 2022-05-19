@@ -24,8 +24,8 @@ export type SwitchOverrides = {
     | 'stylePreset'
     | 'transitionPreset'
     | 'spaceInline'
-    | 'paddingInline'
-  >;
+  > &
+    LogicalProps;
   thumb?: BaseSwitchOverrides['thumb'];
   feedback?: BaseSwitchOverrides['feedback'];
   label?: BaseSwitchOverrides['label'];

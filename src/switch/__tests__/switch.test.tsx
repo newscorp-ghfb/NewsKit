@@ -84,6 +84,7 @@ describe('Switch', () => {
             blockSize: '100px',
             inlineSize: '100px',
             paddingInline: '20px',
+            marginBlock: '20px',
             spaceInline: '10px',
           },
           feedback: {
