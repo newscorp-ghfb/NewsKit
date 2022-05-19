@@ -229,6 +229,17 @@ describe('Image', () => {
       });
       expect(fragment).toMatchSnapshot();
     });
+
+    test('renders with logical margin props', () => {
+      const fragment = renderToFragmentWithTheme(Image, {
+        ...props,
+        overrides: {
+          marginInline: '25px',
+          marginBlock: '50px',
+        },
+      });
+      expect(fragment).toMatchSnapshot();
+    });
   });
 
   describe('client side hook', () => {

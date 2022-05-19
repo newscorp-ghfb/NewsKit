@@ -10,6 +10,7 @@ import {isValidNode} from '../utils/component';
 import {OrderedListProps} from './types';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {logicalProps} from '../utils/logical-properties';
 
 const ListItem = styled.li<OrderedListProps>`
   ${getSpacingInlineVertical('orderedList', '')}
@@ -27,18 +28,20 @@ const ListItem = styled.li<OrderedListProps>`
   }
 `;
 
-const List = styled.ol`
+const List = styled.ol<Pick<OrderedListProps, 'overrides'>>`
   margin: 0;
   padding: 0;
   list-style: none;
   counter-reset: item-counter;
+
+  ${logicalProps()}
 `;
 
 const ThemelessOrderedList: React.FC<OrderedListProps> = ({
   children,
   overrides,
 }) => (
-  <List role="list">
+  <List role="list" overrides={overrides}>
     {React.Children.map(children, node =>
       isValidNode(node) ? (
         <ListItem overrides={overrides}>{node}</ListItem>
