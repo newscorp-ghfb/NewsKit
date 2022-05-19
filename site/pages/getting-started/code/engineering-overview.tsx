@@ -236,11 +236,22 @@ const EngineeringOverview = (layoutProps: LayoutProps) => (
                 ),
               },
               {
-                title: 'Guidance',
-                description:
-                  'Comprehensive online documentation and guidelines.',
+                title: 'NewsKit Handoff guidance',
+                description: (
+                  <>
+                    Guidance on how to find the information needed in designs
+                    for engineers to build.
+                    <Block spaceStack="space050" />
+                    <Link
+                      href="https://www.figma.com/proto/kXCrh9MHKAJ878KE2dQOz8/Handoff-Guides---for-engineers-%26-designers?page-id=74%3A13186&node-id=92%3A1434&viewport=332%2C48%2C0.11&scaling=min-zoom&starting-point-node-id=92%3A1434&hide-ui=1"
+                      target="_blank"
+                    >
+                      View NewsKit Handoff guidance
+                    </Link>
+                  </>
+                ),
                 media: getIllustrationComponent(
-                  'guides/engineering-overview/guidance',
+                  'guides/design-overview/handoff-guidance',
                 ),
               },
             ]}
