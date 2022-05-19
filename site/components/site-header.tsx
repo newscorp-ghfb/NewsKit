@@ -82,11 +82,13 @@ type NavItemProps = {
   title: string;
   id: string;
 };
-
+const MenuItemStyled = styled(MenuItem)`
+  ${({selected}) =>
+    selected ? getSpacingCssFromTheme('paddingInline', '0px') : undefined}
+`;
 const navItems = routes.map(({title, subNav}) => ({title, id: subNav[0].id}));
 const siteheaderAreas = `
 logo menu . github theme 
-
  `;
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
   ({handleSidebarClick, toggleTheme, themeMode, path, sidebarOpen}, ref) => {
@@ -117,7 +119,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
 
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
       items.map(({title, id}) => (
-        <MenuItem
+        <MenuItemStyled
           data-testid="styled-indicator"
           key={id}
           href={id}
@@ -126,12 +128,12 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           overrides={{
             stylePreset: 'linkTopNavigation',
             minHeight: '80px',
-            // paddingInline: '8px',
+
             marginInline: '10px',
           }}
         >
           {title}
-        </MenuItem>
+        </MenuItemStyled>
       ));
 
     return (
