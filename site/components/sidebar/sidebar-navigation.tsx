@@ -20,12 +20,6 @@ const StyledTitle = styled(TextBlock)`
   ${getSpacingCssFromTheme('marginBottom', 'space040')};
 `;
 
-const MenuItemStyled = styled(MenuItem)`
-  ${({selected}) =>
-    selected ? getSpacingCssFromTheme('paddingInline', '12px') : undefined}
-  width: 100vw;
-`;
-
 const PageMenuLinks: React.FC<PageLinkProps> = ({
   page,
   active,
@@ -41,19 +35,20 @@ const PageMenuLinks: React.FC<PageLinkProps> = ({
   });
 
   return (
-    <MenuItemStyled
+    <MenuItem
       href={href}
       data-testid={page}
       selected={active}
       overrides={{
         stylePreset: 'sideBarNavigation',
-
+        typographyPreset: 'utilityButton020',
         minHeight: '40px',
+        paddingInlineStart: 'space060',
       }}
       size="small"
     >
-      <div ref={ref}>{children}</div>
-    </MenuItemStyled>
+      {children} <span ref={ref} />
+    </MenuItem>
   );
 };
 export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
@@ -70,13 +65,7 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
                 title.includes('Getting started') ? undefined : (
                   <>
                     <PageMenuLinks active={path.includes(id)} href={id}>
-                      <TextBlock
-                        stylePreset="interactivePrimary030"
-                        typographyPreset="utilityButton020"
-                        marginInline="space040"
-                      >
-                        {title}
-                      </TextBlock>
+                      {title}
                     </PageMenuLinks>
                   </>
                 )}
@@ -103,7 +92,7 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
                 </StyledTitle>
 
                 <SiteMenuItem menuItemList={subNav as SubNavProps} />
-                <Block marginBlock="space045" />
+
                 {/* added this cause last item needs space */}
               </>
             )}
@@ -147,6 +136,7 @@ export const SidebarNav = () => {
       </Visible>
       <Visible lg xl>
         <MenuNavDesktop />
+        <Block spaceStack="space060" />
       </Visible>
     </>
   );

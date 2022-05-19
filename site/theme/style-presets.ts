@@ -38,6 +38,9 @@ export const stylePresets = {
     base: {
       color: '{{colors.inkSubtle}}',
       textDecoration: 'none',
+      borderColor: '{{colors.transparent}}',
+      borderWidth: '4px',
+      borderStyle: 'solid',
     },
     hover: {
       color: '{{colors.inkSubtle}}',
@@ -48,14 +51,15 @@ export const stylePresets = {
         '{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}',
       color: '{{colors.interactivePrimary030}}',
       textDecoration: 'none',
-      border: '4px solid transparent',
-      borderBottomColor: '{{colors.interactivePrimary030}}',
     },
   },
   sideBarNavigation: {
     base: {
-      color: '{{colors.inkSubtle}}',
       textDecoration: 'none',
+      borderColor: '{{colors.transparent}}',
+      borderWidth: '4px',
+      borderStyle: 'solid',
+      color: '{{colors.inkSubtle}}', // TODO write color
     },
     hover: {
       color: '{{colors.interactivePrimary030}}',
@@ -66,11 +70,9 @@ export const stylePresets = {
     },
     selected: {
       borderColor:
-        '{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}',
+        '{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ',
       color: '{{colors.interactivePrimary030}}',
       textDecoration: 'none',
-      border: '4px solid transparent',
-      borderLeftColor: '{{colors.interactivePrimary030}}',
     },
   },
   tableHeader: {
