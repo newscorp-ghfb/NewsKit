@@ -6,7 +6,11 @@ import {
   getTypographyPreset,
   styled,
 } from '../utils';
-import {logicalProps} from '../utils/logical-properties';
+import {
+  logicalMarginProps,
+  logicalProps,
+  logicalPaddingProps,
+} from '../utils/logical-properties';
 import {BaseSwitchProps} from './types';
 
 const STACKING_CONTEXT = {
@@ -28,8 +32,7 @@ export const StyledSwitchAndLabelWrapper = styled.label<
   ${({size, path}) => logicalProps(`${path}.${size}`)}
 `;
 
-const parsePx = (px: string) => parseInt(px.replace('px', ''), 10);
-
+// todo: is this container element necessary?
 export const StyledSwitchContainer = styled.div<
   Pick<
     BaseSwitchProps,
@@ -60,32 +63,7 @@ export const StyledSwitchContainer = styled.div<
       'input',
       'blockSize',
     )}
-
-  // If the blockSize is overridden to a low value, the Switch aligns above the
-  // label. We can't vertically align the Switch centrally because by
-  // design it is supposed to be aligned at the top (e.g. consider multi-line
-  // labels). Instead, use margins if the blockSize is smaller than the default. 
-  ${({size, path, ...rest}) => {
-    const {blockSize: defaultBlockSize} = getResponsiveSize(
-      'blockSize',
-      `${path}.${size}.input`,
-      '',
-      'blockSize',
-    )(rest) as {blockSize: string};
-    return getResponsiveSize(
-      blockSize => {
-        if (parsePx(blockSize) < parsePx(defaultBlockSize)) {
-          return {
-            marginBlock: `calc((${defaultBlockSize} - ${blockSize}) / 2)`,
-          };
-        }
-        return {};
-      },
-      `${path}.${size}.input`,
-      'input',
-      'blockSize',
-    );
-  }}
+  
   ${({size, path}) =>
     getResponsiveSize(
       'inlineSize',
@@ -101,6 +79,7 @@ export const StyledSwitchContainer = styled.div<
       'input',
       'spaceInline',
     )}
+  ${({size, path}) => logicalMarginProps(`${path}.${size}.input`, 'input')}
 `;
 
 const insetCSS = `
@@ -144,7 +123,7 @@ export const StyledSwitch = styled.div<
     feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`};
 
   ${({size, path}) => getTransitionPreset(`${path}.${size}.input`, 'input')};
-  ${({size, path}) => logicalProps(`${path}.${size}.input`, 'input')}
+  ${({size, path}) => logicalPaddingProps(`${path}.${size}.input`, 'input')}
 `;
 
 export const StyledSwitchFeedback = styled.div<

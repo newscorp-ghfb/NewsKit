@@ -41,8 +41,8 @@ export const sizeOverrides: [string, SwitchOverrides][] = [
   ['small-margin', {input: {spaceInline: '5px'}}],
   ['large-margin', {input: {spaceInline: '100px'}}],
   [
-    'narrow-track-no-padding',
-    {input: {blockSize: '12px', paddingInline: '0px'}},
+    'narrow-track-with-long-text-to-show-vertical-alignment',
+    {input: {blockSize: '12px', paddingInline: '0px', marginBlock: '10px'}},
   ],
   ['wide-track', {input: {blockSize: '120px'}}],
   ['long-track', {input: {inlineSize: '200px'}}],
@@ -52,7 +52,7 @@ export const sizeOverrides: [string, SwitchOverrides][] = [
     'small-feedback',
     {
       feedback: {size: '27px'},
-      input: {blockSize: '12px', paddingInline: '0px'},
+      input: {blockSize: '12px', marginBlock: '10px', paddingInline: '0px'},
     },
   ],
   ['large-feedback', {feedback: {size: '100px'}}],

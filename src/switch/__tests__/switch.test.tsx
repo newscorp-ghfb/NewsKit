@@ -106,21 +106,6 @@ describe('Switch', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('adds margin when blockSize overridden smaller than default', () => {
-    const fragment = renderToFragmentWithTheme(() => (
-      <Switch
-        label="label"
-        checked
-        overrides={{
-          input: {
-            blockSize: '10px',
-          },
-        }}
-      />
-    ));
-    expect(fragment).toMatchSnapshot();
-  });
-
   test('toggle checked', () => {
     const {getByRole} = renderWithTheme(() => (
       <Switch label="label" defaultChecked={false} />
