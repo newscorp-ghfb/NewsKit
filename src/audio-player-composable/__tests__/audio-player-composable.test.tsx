@@ -595,7 +595,7 @@ describe('Audio Player Composable', () => {
           `${seekBarIndicator.base!.backgroundColor}`, // indicator
           `${seekBarBuffering.base!.backgroundColor}`, // buffered
           `${seekBarTrack.base!.backgroundColor}`, // track background
-          `${seekBarBuffering.base!.backgroundColor}`, // buffered
+          `${seekBarTrack.base!.backgroundColor}`, // track background
           `${seekBarTrack.base!.backgroundColor}`, // track background
         ],
         max: 6610,

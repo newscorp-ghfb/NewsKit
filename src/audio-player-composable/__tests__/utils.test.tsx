@@ -60,6 +60,7 @@ describe('formatTrackData', () => {
   test('when multiple buffered sections exist', () => {
     // This can occur when a user moves ahead then back again, multiple disparate buffered sections can exist.
     // Example here is buffered sections exist between 0-125 and 216-228. The current play position is at 32.
+    // It has been diecided to only show the first buffer section similar to how youtube does it.
     expect(
       formatTrackData('track', 'indicator', 'buffer', [32], {
         length: 2,
@@ -67,8 +68,21 @@ describe('formatTrackData', () => {
         end: (i: number) => [125, 228][i],
       }),
     ).toEqual({
-      colors: ['indicator', 'buffer', 'track', 'buffer', 'track'],
+      colors: ['indicator', 'buffer', 'track', 'track', 'track'],
       values: [32, 125, 216, 228],
+    });
+  });
+
+  test('Ensure start is not first value in buffer array', () => {
+    expect(
+      formatTrackData('track', 'indicator', 'buffer', [50], {
+        length: 3,
+        start: (i: number) => [0, 100, 150][i],
+        end: (i: number) => [49, 149, 199][i],
+      }),
+    ).toEqual({
+      colors: ['indicator', 'buffer', 'track', 'track', 'track'],
+      values: [50, 149, 150, 199],
     });
   });
 
