@@ -65,7 +65,7 @@ const ThemelessSwitch = React.forwardRef<HTMLInputElement, SwitchProps>(
 
     const SwitchSelectorWithIcon = (props: BaseSwitchIconProps) => (
       <SwitchSelector {...(props as SwitchIconProps)}>
-        {!!ThumbIcon && <ThumbIcon {...props} />}
+        {!!ThumbIcon && <ThumbIcon />}
       </SwitchSelector>
     );
 

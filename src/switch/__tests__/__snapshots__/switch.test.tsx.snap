@@ -7178,9 +7178,7 @@ exports[`Switch with overrides 1`] = `
               class="emotion-6 emotion-7"
               fill="currentColor"
               focusable="false"
-              height="medium"
               viewBox="0 0 24 24"
-              width="medium"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
