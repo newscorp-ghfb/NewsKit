@@ -30,7 +30,12 @@ export interface ConsentSettingsLinkProps extends Omit<LinkProps, 'href'> {
   children?: string;
   gdpr?: boolean;
   ccpa?: boolean;
-  tabToOpen?: string;
+  tabToOpen?:
+    | 'purposes'
+    | 'vendors'
+    | 'features'
+    | 'purposes-li'
+    | 'vendors-li';
 }
 
 export const ConsentSettingsLink: React.FC<ConsentSettingsLinkProps> = ({
