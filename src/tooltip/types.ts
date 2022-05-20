@@ -7,20 +7,20 @@ export type TriggerType = 'hover' | 'focus';
 
 export interface TooltipProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title' | 'defaultValue'> {
-  children: React.ReactElement;
+  children: React.ReactElement & {
+    ref?: React.Ref<unknown>;
+  };
   title: React.ReactNode;
   open?: boolean;
   defaultOpen?: boolean;
   trigger?: TriggerType | TriggerType[];
   placement?: Placement;
-  labelTooltip?: boolean;
+  asLabel?: boolean;
   overrides?: {
     zIndex?: number;
     maxWidth?: MQ<string>;
     minWidth?: MQ<string>;
-    panel?: {
-      stylePreset?: MQ<string>;
-      typographyPreset?: MQ<string>;
-    } & LogicalPaddingProps;
-  };
+    stylePreset?: MQ<string>;
+    typographyPreset?: MQ<string>;
+  } & LogicalPaddingProps;
 }

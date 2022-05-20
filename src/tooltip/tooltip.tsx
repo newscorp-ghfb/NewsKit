@@ -9,9 +9,10 @@ import {
   useDismiss,
   useId,
 } from '@floating-ui/react-dom-interactions';
+import composeRefs from '@seznam/compose-react-refs';
 import {TooltipProps} from './types';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {StyledTooltip, StyledTooltipPanel} from './styled';
+import {StyledTooltip} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {useControlled} from '../utils/hooks';
@@ -23,7 +24,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
   trigger = 'hover',
   open: openProp,
   defaultOpen,
-  labelTooltip,
+  asLabel,
   overrides,
   ...props
 }) => {
@@ -44,7 +45,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
       enabled: trigger.includes('hover'),
     }),
     useFocus(context, {enabled: trigger.includes('focus')}),
-    useRole(context, {enabled: !labelTooltip, role: 'tooltip'}),
+    useRole(context, {enabled: !asLabel, role: 'tooltip'}),
     useDismiss(context),
   ]);
 
@@ -53,11 +54,11 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
   const id = useId();
 
   const labelOrDescProps = {} as {
-    'aria-labelledby': string | null;
-    'aria-describedby': string | null;
+    'aria-labelledby'?: string | null;
+    'aria-describedby'?: string | null;
   };
 
-  if (labelTooltip) {
+  if (asLabel) {
     labelOrDescProps['aria-labelledby'] = open ? id : null;
   } else {
     labelOrDescProps['aria-describedby'] = open ? id : null;
@@ -76,7 +77,10 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
     <>
       {React.cloneElement(
         children,
-        getReferenceProps({ref: reference, ...childrenProps}),
+        getReferenceProps({
+          ref: composeRefs(reference, children.ref),
+          ...childrenProps,
+        }),
       )}
       {open && (
         <StyledTooltip
@@ -94,7 +98,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
           overrides={overrides}
           {...props}
         >
-          <StyledTooltipPanel overrides={overrides}>{title}</StyledTooltipPanel>
+          {title}
         </StyledTooltip>
       )}
     </>

@@ -11,9 +11,6 @@ exports[`Tooltip should render correct styles: default 1`] = `
   .emotion-0 {
   pointer-events: none;
   z-index: 80;
-}
-
-.emotion-1 {
   background-color: #0A0A0A;
   color: #FFFFFF;
   border-radius: 8px;
@@ -34,11 +31,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
     style="position: absolute;"
     tabindex="-1"
   >
-    <div
-      class="emotion-1"
-    >
-      hello
-    </div>
+    hello
   </div>
 </DocumentFragment>
 `;
@@ -56,9 +49,6 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
   z-index: 70;
   max-width: 80px;
   min-width: 50px;
-}
-
-.emotion-1 {
   background-color: #EF1703;
   border-radius: 0;
   color: #0A0A0A;
@@ -79,11 +69,7 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
     style="position: absolute;"
     tabindex="-1"
   >
-    <div
-      class="emotion-1"
-    >
-      hello
-    </div>
+    hello
   </div>
 </DocumentFragment>
 `;

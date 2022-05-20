@@ -23,7 +23,7 @@ const myCustomTheme = createTheme({
   name: 'my-custom-modal-theme',
   overrides: {
     stylePresets: {
-      tooltipPanelCustom: {
+      tooltipCustom: {
         base: {
           backgroundColor: '{{colors.red080}}',
           borderRadius: '{{borders.borderRadiusDefault}}',
@@ -273,7 +273,7 @@ export const StoryTooltipAccessibility = () => (
       </Button>
     </Tooltip>
     <StorybookSubHeading>Tooltip as a label</StorybookSubHeading>
-    <Tooltip title="Share" placement="right" labelTooltip>
+    <Tooltip title="Share" placement="right" asLabel>
       <IconButton
         size={ButtonSize.Small}
         overrides={{stylePreset: 'iconButtonMinimalSecondary'}}
@@ -300,13 +300,11 @@ export const StoryTooltipOverrides = () => (
         overrides={{
           minWidth: '50px',
           maxWidth: '80px',
-          zIndex: 80,
-          panel: {
-            paddingBlock: 'space040',
-            paddingInline: 'space020',
-            stylePreset: 'tooltipPanelCustom',
-            typographyPreset: 'utilityLabel020',
-          },
+          zIndex: 70,
+          paddingBlock: 'space040',
+          paddingInline: 'space020',
+          stylePreset: 'tooltipCustom',
+          typographyPreset: 'utilityLabel020',
         }}
       >
         <Button

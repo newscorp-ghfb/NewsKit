@@ -2473,12 +2473,10 @@ Object {
     "stylePreset": "toastNeutral",
   },
   "tooltip": Object {
-    "panel": Object {
-      "paddingBlock": "spaceInset020",
-      "paddingInline": "spaceInset020",
-      "stylePreset": "tooltipPanel",
-      "typographyPreset": "utilityLabel010",
-    },
+    "paddingBlock": "spaceInset020",
+    "paddingInline": "spaceInset020",
+    "stylePreset": "tooltip",
+    "typographyPreset": "utilityLabel010",
     "zIndex": 80,
   },
   "unorderedList": Object {
@@ -4631,7 +4629,7 @@ Object {
       "iconColor": "{{colors.inkInverse}}",
     },
   },
-  "tooltipPanel": Object {
+  "tooltip": Object {
     "base": Object {
       "backgroundColor": "{{colors.interface060}}",
       "borderRadius": "{{borders.borderRadiusDefault}}",

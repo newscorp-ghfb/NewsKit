@@ -1,7 +1,7 @@
 import {StylePreset} from '../theme/types';
 
 export default {
-  tooltipPanel: {
+  tooltip: {
     base: {
       backgroundColor: '{{colors.interface060}}',
       color: '{{colors.inkInverse}}',

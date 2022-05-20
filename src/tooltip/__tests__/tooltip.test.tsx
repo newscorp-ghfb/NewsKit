@@ -55,7 +55,7 @@ describe('Tooltip', () => {
         name: 'my-custom-tooltip-theme',
         overrides: {
           stylePresets: {
-            tooltipPanelCustom: {
+            tooltipCustom: {
               base: {
                 backgroundColor: '{{colors.red060}}',
                 borderRadius: '{{borders.borderRadiusSharp}}',
@@ -73,12 +73,10 @@ describe('Tooltip', () => {
             minWidth: '50px',
             maxWidth: '80px',
             zIndex: 70,
-            panel: {
-              paddingBlock: 'space040',
-              paddingInline: 'space020',
-              stylePreset: 'tooltipPanelCustom',
-              typographyPreset: 'utilityLabel020',
-            },
+            paddingBlock: 'space040',
+            paddingInline: 'space020',
+            stylePreset: 'tooltipCustom',
+            typographyPreset: 'utilityLabel020',
           },
         },
         myCustomTheme,
@@ -157,7 +155,7 @@ describe('Tooltip', () => {
     test('do not have role tooltip when used as a label', () => {
       const {queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        labelTooltip: true,
+        asLabel: true,
       });
       expect(queryByRole('tooltip')).not.toBeInTheDocument();
     });
@@ -188,7 +186,7 @@ describe('Tooltip', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         defaultOpen: false,
-        labelTooltip: true,
+        asLabel: true,
       });
       const button = getByRole('button');
       fireEvent.mouseEnter(button);
@@ -201,7 +199,7 @@ describe('Tooltip', () => {
         children: <button type="submit">Add</button>,
         title: <div>the title</div>,
         defaultOpen: false,
-        labelTooltip: true,
+        asLabel: true,
       });
       const button = getByRole('button');
       fireEvent.mouseEnter(button);
