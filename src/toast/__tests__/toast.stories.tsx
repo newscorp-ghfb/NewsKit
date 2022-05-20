@@ -330,6 +330,21 @@ export const StoryToastOverrides = () => (
 );
 StoryToastOverrides.storyName = 'toast-overrides';
 
+export const StoryToastLogicalProps = () => (
+  <ThemeProvider theme={myCustomTheme}>
+    <StorybookHeading>Toast with logical props</StorybookHeading>
+    <Toast
+      overrides={{
+        paddingInline: '50px',
+        paddingBlock: '25px',
+      }}
+    >
+      Uses logical padding props
+    </Toast>
+  </ThemeProvider>
+);
+StoryToastLogicalProps.storyName = 'toast-logical-props';
+
 export const StoryToastApi = () => {
   const ToastWithState = () => {
     const [state, setState] = React.useState(false);

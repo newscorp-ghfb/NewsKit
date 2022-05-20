@@ -156,6 +156,18 @@ describe('Toast', () => {
       ) as any;
       expect(fragment).toMatchSnapshot();
     });
+
+    test('renders with logical props', () => {
+      const props: ToastProps = {
+        children: toastMessage,
+        overrides: {
+          paddingInline: '30px',
+          marginBlock: '50px',
+        },
+      };
+      const fragment = renderToFragmentWithTheme(Toast, props) as any;
+      expect(fragment).toMatchSnapshot();
+    });
   });
 
   describe('API', () => {

@@ -44,29 +44,29 @@ transitionPresets.opacityChange = {
 
 transitionPresets.fade = {
   base: {
-    opacity: '0',
+    opacity: '{{overlays.opacity000}}',
   },
   enter: {
-    opacity: '0',
+    opacity: '{{overlays.opacity000}}',
   },
   enterActive: {
-    opacity: '1',
+    opacity: '{{overlays.opacity100}}',
     transitionProperty: 'opacity',
     transitionDuration: '{{motions.motionDuration020}}',
   },
   enterDone: {
-    opacity: '1',
+    opacity: '{{overlays.opacity100}}',
   },
   exit: {
-    opacity: '1',
+    opacity: '{{overlays.opacity100}}',
   },
   exitActive: {
-    opacity: '0',
+    opacity: '{{overlays.opacity000}}',
     transitionProperty: 'opacity',
     transitionDuration: '{{motions.motionDuration020}}',
   },
   exitDone: {
-    opacity: '0',
+    opacity: '{{overlays.opacity000}}',
   },
 };
 

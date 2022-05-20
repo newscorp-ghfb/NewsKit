@@ -12,6 +12,10 @@ import {Mono} from '../../components/flags';
 import {UsageKind} from '../../components/usage-card';
 
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {
+  logicalMarginOverrideProps,
+  logicalPaddingOverrideProps,
+} from '../../components/component-api/common-logical-props';
 
 const PlaygroundContainer = styled.div`
   display: flex;
@@ -316,11 +320,11 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'spaceInset',
+              attribute: 'spaceInset(deprecated)',
               type: 'MQ<string>',
               default: 'spaceInset030',
               description:
-                'Overrides the spaceInset of the inline message container.',
+                'This property is deprecated. Use paddingInline and paddingBlock instead.',
             },
             {
               attribute: 'content.title.stylePreset',
@@ -358,6 +362,8 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
               default: 'space030',
               description: 'Overrides the spaceInline of the icon.',
             },
+            ...logicalMarginOverrideProps,
+            ...logicalPaddingOverrideProps,
           ],
         },
       ],
