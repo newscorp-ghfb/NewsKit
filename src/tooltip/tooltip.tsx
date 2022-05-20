@@ -28,7 +28,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
   overrides,
   ...props
 }) => {
-  const [open, onOpenChange] = useControlled({
+  const [open, setOpenState] = useControlled({
     controlledValue: openProp,
     defaultValue: Boolean(defaultOpen),
   });
@@ -36,7 +36,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
   const {x, y, reference, floating, strategy, context} = useFloating({
     placement,
     open,
-    onOpenChange,
+    onOpenChange: setOpenState,
     whileElementsMounted: autoUpdate,
   });
 

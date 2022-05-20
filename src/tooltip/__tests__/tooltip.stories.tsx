@@ -7,16 +7,22 @@ import {styled} from '../../utils';
 import {Tooltip} from '../tooltip';
 import {IconFilledTwitter} from '../../icons';
 import {IconButton} from '../../icon-button';
+import {Flow, Stack} from '../../stack';
+import {LinkInline, LinkStandalone} from '../../link';
 
 export default {
   title: 'NewsKit Light/tooltip',
   component: () => 'None',
 };
 
-const Box = styled.div`
-  justify-content: center;
-  padding: 24px;
-  margin: 24px;
+const StyledDiv = styled.div`
+  margin-left: 200px;
+  margin-top: 48px;
+`;
+
+const Container = styled.div`
+  max-width: 600px;
+  margin: 50px auto;
 `;
 
 const myCustomTheme = createTheme({
@@ -34,10 +40,120 @@ const myCustomTheme = createTheme({
   },
 });
 
+export const StoryTooltip = () => (
+  <Container>
+    <StorybookSubHeading>Tooltip with icon button</StorybookSubHeading>
+    <Tooltip
+      title="Share"
+      asLabel
+      placement="right"
+      trigger={['focus', 'hover']}
+    >
+      <IconButton
+        size={ButtonSize.Small}
+        overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
+        aria-label="share on twitter"
+      >
+        <IconFilledTwitter />
+      </IconButton>
+    </Tooltip>
+    <StorybookSubHeading>Tooltip with button</StorybookSubHeading>
+    <Tooltip
+      title="Lorem ipsum dolor sit amet"
+      placement="right"
+      trigger={['focus', 'hover']}
+    >
+      <Button
+        size={ButtonSize.Small}
+        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+      >
+        Button
+      </Button>
+    </Tooltip>
+    <StorybookSubHeading>Tooltip with inline link</StorybookSubHeading>
+    <Tooltip
+      title="Lorem ipsum dolor sit amet"
+      placement="right"
+      trigger={['focus', 'hover']}
+    >
+      <LinkInline href="/">Inline link</LinkInline>
+    </Tooltip>
+    <StorybookSubHeading>Tooltip with standalone link</StorybookSubHeading>
+    <Tooltip
+      title="Lorem ipsum dolor sit amet"
+      placement="right"
+      trigger={['focus', 'hover']}
+    >
+      <LinkStandalone href="/">Standalone link</LinkStandalone>
+    </Tooltip>
+    <StorybookSubHeading>
+      When title is empty, no tooltip is displayed
+    </StorybookSubHeading>
+    <Tooltip title="" placement="right" trigger={['focus', 'hover']}>
+      <Button
+        size={ButtonSize.Small}
+        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+      >
+        Button
+      </Button>
+    </Tooltip>
+    <StorybookSubHeading>When title is not a string</StorybookSubHeading>
+    <Tooltip
+      title={<div>Lorem ipsum dolor sit amet</div>}
+      placement="right"
+      trigger={['focus', 'hover']}
+    >
+      <Button
+        size={ButtonSize.Small}
+        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+      >
+        Button
+      </Button>
+    </Tooltip>
+    <StorybookSubHeading>
+      When title is long and without maxWidth
+    </StorybookSubHeading>
+    <StyledDiv>
+      <Tooltip
+        title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        trigger={['focus', 'hover']}
+      >
+        <Button
+          size={ButtonSize.Small}
+          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+        >
+          Button
+        </Button>
+      </Tooltip>
+    </StyledDiv>
+    <StorybookSubHeading>
+      When title is long and with maxWidth
+    </StorybookSubHeading>
+    <StyledDiv>
+      <Tooltip
+        title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        trigger={['focus', 'hover']}
+        overrides={{maxWidth: '100px'}}
+      >
+        <Button
+          size={ButtonSize.Small}
+          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+        >
+          Button
+        </Button>
+      </Tooltip>
+    </StyledDiv>
+  </Container>
+);
+StoryTooltip.storyName = 'tooltip';
+StoryTooltip.parameters = {
+  eyes: {include: false},
+};
+
 export const StoryTooltipPlacements = () => (
   <>
-    <StorybookSubHeading>Tooltip</StorybookSubHeading>
-    <Box>
+    <StorybookSubHeading>Tooltip Placements</StorybookSubHeading>
+    <Container>
       <GridLayout
         columns="repeat(3, 1fr)"
         rows="repeat(3, 1fr)"
@@ -50,32 +166,43 @@ export const StoryTooltipPlacements = () => (
           justifySelf="flex-start"
           alignSelf="center"
         >
-          <Tooltip title="Add" placement="left-start">
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary', height: '50px'}}
-            >
-              left-start
-            </Button>
-          </Tooltip>
-          <br />
-          <Tooltip title="Add" placement="left">
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary', height: '50px'}}
-            >
-              left
-            </Button>
-          </Tooltip>
-          <br />
-          <Tooltip title="Add" placement="left-end">
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary', height: '50px'}}
-            >
-              left-end
-            </Button>
-          </Tooltip>
+          <Stack spaceInline="space050">
+            <Tooltip title="Tooltip content" placement="left-start">
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  height: '50px',
+                }}
+              >
+                left-start
+              </Button>
+            </Tooltip>
+
+            <Tooltip title="Tooltip content" placement="left">
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  height: '50px',
+                }}
+              >
+                left
+              </Button>
+            </Tooltip>
+
+            <Tooltip title="Tooltip content" placement="left-end">
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  height: '50px',
+                }}
+              >
+                left-end
+              </Button>
+            </Tooltip>
+          </Stack>
         </GridLayoutItem>
         <GridLayoutItem
           column="3"
@@ -83,33 +210,41 @@ export const StoryTooltipPlacements = () => (
           justifySelf="flex-end"
           alignSelf="center"
         >
-          <Tooltip title="Add" placement="right-start">
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary', height: '50px'}}
-            >
-              right-start
-            </Button>
-          </Tooltip>
-          <br />
-          <Tooltip title="Add" placement="right">
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary', height: '50px'}}
-            >
-              right
-            </Button>
-          </Tooltip>
-          <br />
-          <Tooltip title="Add" placement="right-end">
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary', height: '50px'}}
-            >
-              right-end
-            </Button>
-          </Tooltip>
-          <br />
+          <Stack spaceInline="space050">
+            <Tooltip title="Tooltip content" placement="right-start">
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  height: '50px',
+                }}
+              >
+                right-start
+              </Button>
+            </Tooltip>
+            <Tooltip title="Tooltip content" placement="right">
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  height: '50px',
+                }}
+              >
+                right
+              </Button>
+            </Tooltip>
+            <Tooltip title="Tooltip content" placement="right-end">
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  height: '50px',
+                }}
+              >
+                right-end
+              </Button>
+            </Tooltip>
+          </Stack>
         </GridLayoutItem>
         <GridLayoutItem
           column="2"
@@ -117,30 +252,41 @@ export const StoryTooltipPlacements = () => (
           justifySelf="center"
           alignSelf="flex-start"
         >
-          <Tooltip title="Add" placement="top-start">
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-            >
-              top-start
-            </Button>
-          </Tooltip>
-          <Tooltip title="Add" placement="top">
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-            >
-              top
-            </Button>
-          </Tooltip>
-          <Tooltip title="Add" placement="top-end">
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-            >
-              top-end
-            </Button>
-          </Tooltip>
+          <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+            <Tooltip title="Tooltip content" placement="top-start">
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  width: '150px',
+                }}
+              >
+                top-start
+              </Button>
+            </Tooltip>
+            <Tooltip title="Tooltip content" placement="top">
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  width: '150px',
+                }}
+              >
+                top
+              </Button>
+            </Tooltip>
+            <Tooltip title="Tooltip content" placement="top-end">
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  width: '150px',
+                }}
+              >
+                top-end
+              </Button>
+            </Tooltip>
+          </Stack>
         </GridLayoutItem>
         <GridLayoutItem
           column="2/3"
@@ -148,33 +294,44 @@ export const StoryTooltipPlacements = () => (
           justifySelf="center"
           alignSelf="flex-end"
         >
-          <Tooltip title="Add" placement="bottom-start">
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-            >
-              bottom-start
-            </Button>
-          </Tooltip>
-          <Tooltip title="Add" placement="bottom">
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-            >
-              bottom
-            </Button>
-          </Tooltip>
-          <Tooltip title="Add" placement="bottom-end">
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-            >
-              bottom-end
-            </Button>
-          </Tooltip>
+          <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+            <Tooltip title="Tooltip content" placement="bottom-start">
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  width: '150px',
+                }}
+              >
+                bottom-start
+              </Button>
+            </Tooltip>
+            <Tooltip title="Tooltip content" placement="bottom">
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  width: '150px',
+                }}
+              >
+                bottom
+              </Button>
+            </Tooltip>
+            <Tooltip title="Tooltip content" placement="bottom-end">
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  width: '150px',
+                }}
+              >
+                bottom-end
+              </Button>
+            </Tooltip>
+          </Stack>
         </GridLayoutItem>
       </GridLayout>
-    </Box>
+    </Container>
   </>
 );
 StoryTooltipPlacements.storyName = 'tooltip-placements';
@@ -184,22 +341,26 @@ StoryTooltipPlacements.parameters = {
 
 export const StoryTooltipTriggers = () => (
   <>
-    <StorybookSubHeading>Triggered by focus</StorybookSubHeading>
-    <Tooltip title="Add" placement="right" trigger="focus">
+    <StorybookSubHeading>Triggered by focus only</StorybookSubHeading>
+    <Tooltip title="Tooltip content" placement="right" trigger="focus">
       <Button
         size={ButtonSize.Small}
         overrides={{stylePreset: 'buttonOutlinedPrimary'}}
       >
-        right
+        Button
       </Button>
     </Tooltip>
     <StorybookSubHeading>Triggered by hover & focus</StorybookSubHeading>
-    <Tooltip title="Add" placement="right" trigger={['focus', 'hover']}>
+    <Tooltip
+      title="Tooltip content"
+      placement="right"
+      trigger={['focus', 'hover']}
+    >
       <Button
         size={ButtonSize.Small}
         overrides={{stylePreset: 'buttonOutlinedPrimary'}}
       >
-        right
+        Button
       </Button>
     </Tooltip>
   </>
@@ -212,12 +373,12 @@ StoryTooltipTriggers.parameters = {
 export const StoryTooltipDefaultOpen = () => (
   <>
     <StorybookSubHeading>Tooltip default open</StorybookSubHeading>
-    <Tooltip title="Add" placement="bottom-end" defaultOpen>
+    <Tooltip title="Tooltip content" placement="right" defaultOpen>
       <Button
         size={ButtonSize.Small}
         overrides={{stylePreset: 'buttonOutlinedPrimary'}}
       >
-        bottom-end
+        Button
       </Button>
     </Tooltip>
   </>
@@ -229,12 +390,17 @@ export const StoryTooltipControlled = () => {
   return (
     <>
       <StorybookSubHeading>Tooltip Controlled</StorybookSubHeading>
-      <Tooltip title="Add" placement="right" defaultOpen open={open}>
+      <Tooltip
+        title="Tooltip content"
+        placement="right"
+        defaultOpen
+        open={open}
+      >
         <Button
           size={ButtonSize.Small}
           overrides={{stylePreset: 'buttonOutlinedPrimary'}}
         >
-          right
+          Button
         </Button>
       </Tooltip>
       <p>
@@ -250,56 +416,17 @@ StoryTooltipControlled.parameters = {
   eyes: {include: false},
 };
 
-export const StoryTooltipAccessibility = () => (
-  <>
-    <StorybookSubHeading>
-      When title is empty, no tooltip is displayed
-    </StorybookSubHeading>
-    <Tooltip title="" placement="right">
-      <Button
-        size={ButtonSize.Small}
-        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-      >
-        right
-      </Button>
-    </Tooltip>
-    <StorybookSubHeading>Title is not a string</StorybookSubHeading>
-    <Tooltip title={<div>Hello</div>} placement="right">
-      <Button
-        size={ButtonSize.Small}
-        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-      >
-        right
-      </Button>
-    </Tooltip>
-    <StorybookSubHeading>Tooltip as a label</StorybookSubHeading>
-    <Tooltip title="Share" placement="right" asLabel>
-      <IconButton
-        size={ButtonSize.Small}
-        overrides={{stylePreset: 'iconButtonMinimalSecondary'}}
-        aria-label="share on twitter"
-      >
-        <IconFilledTwitter />
-      </IconButton>
-    </Tooltip>
-  </>
-);
-StoryTooltipAccessibility.storyName = 'tooltip-accessibility';
-StoryTooltipAccessibility.parameters = {
-  eyes: {include: false},
-};
-
 export const StoryTooltipOverrides = () => (
   <>
     <StorybookSubHeading>Tooltip Overrides</StorybookSubHeading>
     <ThemeProvider theme={myCustomTheme}>
       <Tooltip
-        title="Add"
+        title="Tooltip content"
         open
         placement="right"
         overrides={{
           minWidth: '50px',
-          maxWidth: '80px',
+          maxWidth: '150px',
           zIndex: 70,
           paddingBlock: 'space040',
           paddingInline: 'space020',
@@ -311,7 +438,7 @@ export const StoryTooltipOverrides = () => (
           size={ButtonSize.Small}
           overrides={{stylePreset: 'buttonOutlinedPrimary'}}
         >
-          right
+          Button
         </Button>
       </Tooltip>
     </ThemeProvider>
@@ -321,8 +448,8 @@ StoryTooltipOverrides.storyName = 'tooltip-overrides';
 
 export const StoryTooltipPlacementsVisualTest = () => (
   <>
-    <StorybookSubHeading>Tooltip</StorybookSubHeading>
-    <Box>
+    <StorybookSubHeading>Tooltip Visual</StorybookSubHeading>
+    <Container>
       <GridLayout
         columns="repeat(3, 1fr)"
         rows="repeat(3, 1fr)"
@@ -335,32 +462,43 @@ export const StoryTooltipPlacementsVisualTest = () => (
           justifySelf="flex-start"
           alignSelf="center"
         >
-          <Tooltip title="Add" placement="left-start" open>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary', height: '50px'}}
-            >
-              left-start
-            </Button>
-          </Tooltip>
-          <br />
-          <Tooltip title="Add" placement="left" open>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary', height: '50px'}}
-            >
-              left
-            </Button>
-          </Tooltip>
-          <br />
-          <Tooltip title="Add" placement="left-end" open>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary', height: '50px'}}
-            >
-              left-end
-            </Button>
-          </Tooltip>
+          <Stack spaceInline="space050">
+            <Tooltip title="Tooltip content" placement="left-start" open>
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  height: '50px',
+                }}
+              >
+                left-start
+              </Button>
+            </Tooltip>
+
+            <Tooltip title="Tooltip content" placement="left" open>
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  height: '50px',
+                }}
+              >
+                left
+              </Button>
+            </Tooltip>
+
+            <Tooltip title="Tooltip content" placement="left-end" open>
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  height: '50px',
+                }}
+              >
+                left-end
+              </Button>
+            </Tooltip>
+          </Stack>
         </GridLayoutItem>
         <GridLayoutItem
           column="3"
@@ -368,33 +506,41 @@ export const StoryTooltipPlacementsVisualTest = () => (
           justifySelf="flex-end"
           alignSelf="center"
         >
-          <Tooltip title="Add" placement="right-start" open>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary', height: '50px'}}
-            >
-              right-start
-            </Button>
-          </Tooltip>
-          <br />
-          <Tooltip title="Add" placement="right" open>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary', height: '50px'}}
-            >
-              right
-            </Button>
-          </Tooltip>
-          <br />
-          <Tooltip title="Add" placement="right-end" open>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary', height: '50px'}}
-            >
-              right-end
-            </Button>
-          </Tooltip>
-          <br />
+          <Stack spaceInline="space050">
+            <Tooltip title="Tooltip content" placement="right-start" open>
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  height: '50px',
+                }}
+              >
+                right-start
+              </Button>
+            </Tooltip>
+            <Tooltip title="Tooltip content" placement="right" open>
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  height: '50px',
+                }}
+              >
+                right
+              </Button>
+            </Tooltip>
+            <Tooltip title="Tooltip content" placement="right-end" open>
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  height: '50px',
+                }}
+              >
+                right-end
+              </Button>
+            </Tooltip>
+          </Stack>
         </GridLayoutItem>
         <GridLayoutItem
           column="2"
@@ -402,30 +548,41 @@ export const StoryTooltipPlacementsVisualTest = () => (
           justifySelf="center"
           alignSelf="flex-start"
         >
-          <Tooltip title="Add" placement="top-start" open>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-            >
-              top-start
-            </Button>
-          </Tooltip>
-          <Tooltip title="Add" placement="top" open>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-            >
-              top
-            </Button>
-          </Tooltip>
-          <Tooltip title="Add" placement="top-end" open>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-            >
-              top-end
-            </Button>
-          </Tooltip>
+          <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+            <Tooltip title="Tooltip content" placement="top-start" open>
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  width: '150px',
+                }}
+              >
+                top-start
+              </Button>
+            </Tooltip>
+            <Tooltip title="Tooltip content" placement="top" open>
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  width: '150px',
+                }}
+              >
+                top
+              </Button>
+            </Tooltip>
+            <Tooltip title="Tooltip content" placement="top-end" open>
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  width: '150px',
+                }}
+              >
+                top-end
+              </Button>
+            </Tooltip>
+          </Stack>
         </GridLayoutItem>
         <GridLayoutItem
           column="2/3"
@@ -433,33 +590,44 @@ export const StoryTooltipPlacementsVisualTest = () => (
           justifySelf="center"
           alignSelf="flex-end"
         >
-          <Tooltip title="Add" placement="bottom-start" open>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-            >
-              bottom-start
-            </Button>
-          </Tooltip>
-          <Tooltip title="Add" placement="bottom" open>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-            >
-              bottom
-            </Button>
-          </Tooltip>
-          <Tooltip title="Add" placement="bottom-end" open>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-            >
-              bottom-end
-            </Button>
-          </Tooltip>
+          <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+            <Tooltip title="Tooltip content" placement="bottom-start" open>
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  width: '150px',
+                }}
+              >
+                bottom-start
+              </Button>
+            </Tooltip>
+            <Tooltip title="Tooltip content" placement="bottom" open>
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  width: '150px',
+                }}
+              >
+                bottom
+              </Button>
+            </Tooltip>
+            <Tooltip title="Tooltip content" placement="bottom-end" open>
+              <Button
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  width: '150px',
+                }}
+              >
+                bottom-end
+              </Button>
+            </Tooltip>
+          </Stack>
         </GridLayoutItem>
       </GridLayout>
-    </Box>
+    </Container>
   </>
 );
 StoryTooltipPlacementsVisualTest.storyName = 'tooltip-placements-visual-test';
