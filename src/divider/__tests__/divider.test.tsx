@@ -13,4 +13,14 @@ describe('Divider', () => {
 
     expect(fragment).toMatchSnapshot();
   });
+  test(`renders with logical prop overrides`, () => {
+    const fragment = renderToFragmentWithTheme(Divider, {
+      vertical: true,
+      overrides: {
+        paddingInline: '30px',
+        marginBlock: '20px',
+      },
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });

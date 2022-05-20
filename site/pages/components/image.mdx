@@ -6,6 +6,7 @@ import {LegacyBlock} from '../../components/legacy-block';
 import {CodeFromDefaultPresets, CodeFromFile} from '../../components/code';
 import {Image, ImageShape} from 'newskit';
 import {InlineCode} from '../../components/markdown-elements';
+import {CommonLogicalMarginPropsMDX} from '../../components/component-api/common-logical-props';
 
 export default Layout;
 
@@ -45,7 +46,7 @@ The image component provides a `<picture>` and an `<img>` element inside it to p
     works check out{' '}
     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">
       MDN
-    </a>. 
+    </a>.
     ImageSource exnteds <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSourceElement">
       Image Source element
     </a>, the only difference is that you can use breakpoint key  <InlineCode>(xs | sm | md | lg | xl)</InlineCode>  as <InlineCode>media</InlineCode> instead
@@ -84,6 +85,7 @@ The image component provides a `<picture>` and an `<img>` element inside it to p
     <Prop name="placeholderIcon" type="Override<NewsKitIcon>">
       If provided, this overrides the default placeholder icon.
     </Prop>
+    <CommonLogicalMarginPropsMDX nested />
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="image" />
   </Prop>

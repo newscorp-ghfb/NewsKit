@@ -18,6 +18,10 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {MenuItemAlign, MenuItemSize} from '../../../src/menu/types';
 import {Link} from '../../components/link';
+import {
+  logicalMarginOverrideProps,
+  logicalPaddingOverrideProps,
+} from '../../components/component-api/common-logical-props';
 
 const PlaygroundContainer = styled.div`
   display: flex;
@@ -586,6 +590,8 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               default: 'space020',
               description: `Overrides the space between Menu Items.`,
             },
+            ...logicalMarginOverrideProps,
+            ...logicalPaddingOverrideProps,
           ],
         },
         {
@@ -674,13 +680,13 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               description: `If provided, will render the Menu item as a link.`,
             },
             {
-              name: 'eventOriginatorstring',
+              name: 'eventOriginator',
               type: 'string',
               description: `This prop allows users to add event originator custom name.`,
             },
             {
               name: 'eventContext',
-              type: 'string',
+              type: 'object',
               description: `This prop allows users to add extra event data to click events.`,
             },
             {

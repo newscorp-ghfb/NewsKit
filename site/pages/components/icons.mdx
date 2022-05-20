@@ -5,6 +5,7 @@ import {PropRenderer as Icon} from '../../components/prop-renderer';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Code} from '../../components/code';
+import {CommonLogicalMarginPropsMDX} from '../../components/component-api/common-logical-props';
 
 import {
   IconFilledFacebook,
@@ -29,7 +30,7 @@ Icons can be used to enhance other elements and content, as well as used inside 
 
 ### Available Icons
 
-| Name                   |                        Preview              
+| Name                   |                        Preview
 | ---------------------- | :---------------------------------------------------------------------------: |
 | IconFilledYoutube      |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledYoutube} />    |
 | IconFilledGitHub       |   <Icon overrides={{size: 'iconSize050'}} Component={IconFilledGitHub}/>      |
@@ -58,6 +59,7 @@ Icons must have a size specified, and some also support an optional colour overr
     <Prop name="size" type="MQ<string>">
       If provided, this overrides the size of the icon.
     </Prop>
+    <CommonLogicalMarginPropsMDX nested />
   </Prop>
 </LegacyBlock>
 

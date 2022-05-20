@@ -147,6 +147,84 @@ exports[`OrderedList renders with invalid nodes 1`] = `
 </DocumentFragment>
 `;
 
+exports[`OrderedList renders with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: item-counter;
+  margin-block: 30px;
+  padding-inline: 30px;
+}
+
+.emotion-1 {
+  margin-bottom: 16px;
+  counter-increment: item-counter;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-1 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-1::before {
+  content: counter(item-counter) '. ';
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  display: inline-block;
+  min-width: 24px;
+}
+
+.emotion-1::before svg {
+  fill: #2E2E2E;
+}
+
+<ol
+    class="emotion-0"
+    role="list"
+  >
+    <li
+      class="emotion-1"
+    >
+      first node
+    </li>
+    <li
+      class="emotion-1"
+    >
+      second node
+    </li>
+    <li
+      class="emotion-1"
+    >
+      third node
+    </li>
+  </ol>
+</DocumentFragment>
+`;
+
 exports[`OrderedList renders with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {

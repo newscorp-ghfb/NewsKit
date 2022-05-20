@@ -1,5 +1,5 @@
 import React, {createRef} from 'react';
-import {act} from 'react-test-renderer';
+import {act} from '@testing-library/react';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
@@ -95,5 +95,17 @@ describe('IconButton', () => {
       }
     });
     expect(iconButtonRef.current).toHaveFocus();
+  });
+
+  test('renders icon button with logical prop overrides', () => {
+    const props: IconButtonProps = {
+      'aria-label': 'Test icon button',
+      overrides: {
+        paddingInline: '20px',
+        marginBlock: '30px',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(renderIconButton, props);
+    expect(fragment).toMatchSnapshot();
   });
 });

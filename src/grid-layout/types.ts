@@ -2,6 +2,7 @@ import React from 'react';
 import {MQ} from '../utils/style';
 
 import {BlockProps} from '../block';
+import {LogicalProps} from '../utils/logical-properties';
 
 export type GridLayoutItemProps = BlockProps & {
   area?: string;
@@ -39,5 +40,5 @@ export type GridLayoutProps = {
     height?: MQ<string>;
     minHeight?: MQ<string>;
     maxHeight?: MQ<string>;
-  };
+  } & LogicalProps;
 } & React.HTMLAttributes<HTMLDivElement>;
