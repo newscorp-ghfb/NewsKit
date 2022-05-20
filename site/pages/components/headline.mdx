@@ -5,6 +5,7 @@ import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Headline} from 'newskit';
 import {CodeFromDefaultPresets} from '../../components/code';
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
 export default Layout;
 
@@ -63,6 +64,7 @@ No special requirements.
         If provided, this overrides the horizontal space between the kicker and heading.
       </Prop>
     </Prop>
+    <CommonLogicalPropsMDX nested/>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="headline" />
   </Prop>

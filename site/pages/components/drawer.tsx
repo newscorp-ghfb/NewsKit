@@ -9,7 +9,10 @@ import {
   styled,
 } from 'newskit';
 
-import {logicalPaddingOverrideProps} from '../../components/component-api/common-logical-props';
+import {
+  logicalPaddingOverrideProps,
+  prefixLogicalProps,
+} from '../../components/component-api/common-logical-props';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
@@ -561,10 +564,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, this overrides the zIndex of the Drawer panel.',
             },
-            ...logicalPaddingOverrideProps.map(({attribute, ...rest}) => ({
-              attribute: `panel.${attribute}`,
-              ...rest,
-            })),
+            ...prefixLogicalProps(logicalPaddingOverrideProps, 'panel'),
             {
               attribute: 'panel.marginInline',
               type: 'MQ<string>',

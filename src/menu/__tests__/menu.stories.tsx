@@ -1227,3 +1227,24 @@ export const StoryMenuWithCloseButtons = () => {
   );
 };
 StoryMenuWithCloseButtons.storyName = 'menu - menu with close buttons';
+
+export const StoryMenuLogicalProps = () => (
+  <>
+    <StorybookHeading>Menu with logical props</StorybookHeading>
+    <Menu
+      aria-label={`Menu ${getSSRId()}`}
+      overrides={{
+        paddingInline: '30px',
+        marginBlock: '30px',
+      }}
+    >
+      <MenuItem href={href}>Menu item 1</MenuItem>
+      <MenuItem href={href}>Menu item 2</MenuItem>
+      <MenuItem href={href}>Menu item 3</MenuItem>
+      <MenuItem href={href}>Menu item 4</MenuItem>
+      <MenuItem href={href}>Menu item 5</MenuItem>
+      <MenuItem href={href}>Menu item 6</MenuItem>
+    </Menu>
+  </>
+);
+StoryMenuLogicalProps.storyName = 'menu - logical props';

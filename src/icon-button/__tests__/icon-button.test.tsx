@@ -73,4 +73,16 @@ describe('IconButton', () => {
     const fragment = renderToFragmentWithTheme(renderIconButton, props);
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders icon button with logical prop overrides', () => {
+    const props: IconButtonProps = {
+      'aria-label': 'Test icon button',
+      overrides: {
+        paddingInline: '20px',
+        marginBlock: '30px',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(renderIconButton, props);
+    expect(fragment).toMatchSnapshot();
+  });
 });
