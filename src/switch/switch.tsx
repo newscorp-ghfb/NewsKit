@@ -61,7 +61,7 @@ const SwitchSelector = ({
 
 const ThemelessSwitch = React.forwardRef<HTMLInputElement, SwitchProps>(
   ({overrides, ...rest}, inputRef) => {
-    const ThumbIcon = iconAsComponent(overrides?.icon);
+    const ThumbIcon = iconAsComponent(overrides?.thumbIcon);
 
     const SwitchSelectorWithIcon = (props: BaseSwitchIconProps) => (
       <SwitchSelector {...(props as SwitchIconProps)}>
@@ -75,10 +75,7 @@ const ThemelessSwitch = React.forwardRef<HTMLInputElement, SwitchProps>(
         ref={inputRef}
         type="checkbox"
         role="switch"
-        overrides={{
-          ...(overrides || {}),
-          icon: undefined,
-        }}
+        overrides={overrides || {}}
         {...rest}
         defaultSwitchSelectorComponent={SwitchSelectorWithIcon}
       />

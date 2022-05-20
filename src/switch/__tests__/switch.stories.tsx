@@ -66,13 +66,13 @@ export const StorySwitchIcons = () => (
       <Cell xs={8} md={4}>
         <StorybookSubHeading>Icons</StorybookSubHeading>
 
-        {icons.map(([id, {icon, onIcon, offIcon, ...props}]) => (
+        {icons.map(([id, {thumbIcon, onIcon, offIcon, ...props}]) => (
           <Container key={id}>
             <Switch
               defaultChecked
               label={id}
               overrides={{
-                icon,
+                thumbIcon,
                 onIcon,
                 offIcon,
               }}
@@ -101,7 +101,7 @@ export const StorySwitchOverrides = () => (
               label={id}
               overrides={{
                 ...o,
-                icon: IconFilledError,
+                thumbIcon: IconFilledError,
                 onIcon: IconFilledCheck,
                 offIcon: IconFilledClose,
               }}
@@ -153,7 +153,7 @@ export const StorySwitchFieldset = () => (
               label="Reduced motion"
               defaultChecked
               overrides={{
-                icon: IconFilledError,
+                thumbIcon: IconFilledError,
                 onIcon: IconFilledCheck,
                 offIcon: IconFilledClose,
               }}

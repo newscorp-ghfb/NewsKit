@@ -31,7 +31,7 @@ export type SwitchOverrides = {
   label?: BaseSwitchOverrides['label'];
   onIcon?: BaseSwitchOverrides['onIcon'];
   offIcon?: BaseSwitchOverrides['offIcon'];
-  icon?: BaseSwitchOverrides['icon'];
+  thumbIcon?: BaseSwitchOverrides['icon'];
 } & LogicalProps;
 
 export type SwitchState = Extract<BaseSwitchState, 'disabled'>;

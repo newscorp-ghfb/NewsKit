@@ -18,15 +18,19 @@ export const sizes: BaseSwitchSize[] = ['small', 'medium', 'large'];
 
 export const icons: [
   string,
-  Pick<SwitchOverrides, 'icon' | 'offIcon' | 'onIcon'>,
+  Pick<SwitchOverrides, 'thumbIcon' | 'offIcon' | 'onIcon'>,
 ][] = [
-  ['thumb-icon', {icon: IconFilledError}],
+  ['thumb-icon', {thumbIcon: IconFilledError}],
   ['on-icon', {onIcon: IconFilledCheck}],
   ['off-icon', {offIcon: IconFilledClose}],
   ['on-and-off-icon', {onIcon: IconFilledCheck, offIcon: IconFilledClose}],
   [
     'thumb-and-on-and-off-icon',
-    {icon: IconFilledError, onIcon: IconFilledCheck, offIcon: IconFilledClose},
+    {
+      thumbIcon: IconFilledError,
+      onIcon: IconFilledCheck,
+      offIcon: IconFilledClose,
+    },
   ],
 ];
 

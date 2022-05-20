@@ -95,7 +95,7 @@ describe('Switch', () => {
             typographyPreset: 'utilityHeading010',
             stylePreset: 'inkSubtle',
           },
-          icon: IconFilledError,
+          thumbIcon: IconFilledError,
           onIcon: IconFilledCheck,
           offIcon: IconFilledClose,
           paddingInline: '20px',
