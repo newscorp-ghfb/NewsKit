@@ -327,6 +327,17 @@ describe('Menu', () => {
     const fragment = renderToFragmentWithTheme(Menu, props);
     expect(fragment).toMatchSnapshot();
   });
+  it(`renders with logical prop overrides`, () => {
+    const props = {
+      children: menuItems,
+      overrides: {
+        paddingInline: '30px',
+        marginBlock: '20px',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(Menu, props);
+    expect(fragment).toMatchSnapshot();
+  });
 
   const verticalValues = [true, false];
   verticalValues.forEach(verticalValue => {

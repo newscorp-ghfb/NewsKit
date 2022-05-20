@@ -9,11 +9,19 @@ import {
 import {HeadlineProps, HeadlinePropsWithRenderAs} from './types';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {logicalPadding, logicalMargins} from '../utils/logical-properties';
+import {deepMerge} from '../utils';
 
 const HeadlineContainer = styled.section<Pick<HeadlineProps, 'overrides'>>`
-  ${getTypographyPreset('headline', '', {
-    withCrop: true,
-  })}
+  ${props => {
+    const padding = logicalPadding(props, 'headline');
+    const margins = logicalMargins(props, 'headline');
+    const typographyPreset = getTypographyPreset('headline', '', {
+      // Only apply the crop padding if there are no padding overrides.
+      withCrop: !Object.keys(padding).length,
+    })(props);
+    return deepMerge(margins, padding, typographyPreset);
+  }}
 `;
 
 const cssReset = css`

@@ -16,6 +16,7 @@ import {
   getVerticalPosition,
   getSpaceBetweenToasts,
 } from './utils';
+import {logicalProps} from '../utils/logical-properties';
 
 const enterAnimation = (factor: number) => keyframes`
   0% {transform: translate3d(0, ${factor * -100}%, 0) scale(0.1); opacity: 0;}
@@ -96,6 +97,7 @@ export const StyledToastContainer = styled.div<ToastProps>`
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
+  ${logicalProps()}
 `;
 
 export const StyledToastInnerContainer = styled.div`
