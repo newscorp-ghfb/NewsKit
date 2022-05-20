@@ -17,7 +17,7 @@ export const StyledSwitchContainer = styled.div<
   place-items: center;
 `;
 
-export const StyledTrackColumn = styled.div<
+export const StyledTrackIcon = styled.div<
   Pick<SwitchProps, 'size' | 'checked' | 'overrides' | 'state'> & {
     justifyContent: 'start' | 'end';
   }
@@ -27,7 +27,7 @@ export const StyledTrackColumn = styled.div<
   ${({justifyContent}) => ({justifyContent})};
 
   ${({size, state}) =>
-    getStylePreset(`switch.${size}.column`, 'column', {
+    getStylePreset(`switch.${size}.trackIcon`, 'trackIcon', {
       isDisabled: state === 'disabled',
     })};
 

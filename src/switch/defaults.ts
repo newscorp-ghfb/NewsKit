@@ -23,8 +23,8 @@ export default {
         size: 'sizing070',
         transitionPreset: ['shiftAbsolute', 'opacityChange'],
       },
-      column: {
-        stylePreset: 'switchTrackColumn',
+      trackIcon: {
+        stylePreset: 'switchTrackIcon',
       },
     },
     medium: {
@@ -50,8 +50,8 @@ export default {
         size: 'sizing080',
         transitionPreset: ['shiftAbsolute', 'opacityChange'],
       },
-      column: {
-        stylePreset: 'switchTrackColumn',
+      trackIcon: {
+        stylePreset: 'switchTrackIcon',
       },
     },
     large: {
@@ -77,8 +77,8 @@ export default {
         size: 'sizing090',
         transitionPreset: ['shiftAbsolute', 'opacityChange'],
       },
-      column: {
-        stylePreset: 'switchTrackColumn',
+      trackIcon: {
+        stylePreset: 'switchTrackIcon',
       },
     },
   },

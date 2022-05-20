@@ -2224,9 +2224,6 @@ Object {
   },
   "switch": Object {
     "large": Object {
-      "column": Object {
-        "stylePreset": "switchTrackColumn",
-      },
       "feedback": Object {
         "size": "sizing090",
         "stylePreset": "feedback",
@@ -2254,11 +2251,11 @@ Object {
           "shiftAbsolute",
         ],
       },
+      "trackIcon": Object {
+        "stylePreset": "switchTrackIcon",
+      },
     },
     "medium": Object {
-      "column": Object {
-        "stylePreset": "switchTrackColumn",
-      },
       "feedback": Object {
         "size": "sizing080",
         "stylePreset": "feedback",
@@ -2286,11 +2283,11 @@ Object {
           "shiftAbsolute",
         ],
       },
+      "trackIcon": Object {
+        "stylePreset": "switchTrackIcon",
+      },
     },
     "small": Object {
-      "column": Object {
-        "stylePreset": "switchTrackColumn",
-      },
       "feedback": Object {
         "size": "sizing070",
         "stylePreset": "feedback",
@@ -2317,6 +2314,9 @@ Object {
         "transitionPreset": Array [
           "shiftAbsolute",
         ],
+      },
+      "trackIcon": Object {
+        "stylePreset": "switchTrackIcon",
       },
     },
   },
@@ -4573,7 +4573,7 @@ Object {
       "backgroundColor": "{{colors.interactiveDisabled010}}",
     },
   },
-  "switchTrackColumn": Object {
+  "switchTrackIcon": Object {
     "base": Object {
       "iconColor": "{{colors.inkInverse}}",
     },

@@ -5,7 +5,7 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {BaseSwitch} from '../base-switch';
-import {StyledSwitchContainer, StyledThumb, StyledTrackColumn} from './styled';
+import {StyledSwitchContainer, StyledThumb, StyledTrackIcon} from './styled';
 import {BaseSwitchIconProps} from '../base-switch/types';
 import {Override} from '../utils/overrides';
 
@@ -30,22 +30,22 @@ const SwitchSelector = ({
   const OffIcon = iconAsComponent(overrides!.offIcon);
   return (
     <StyledSwitchContainer size={size} overrides={overrides}>
-      <StyledTrackColumn
+      <StyledTrackIcon
         state={state}
         size={size}
         overrides={overrides}
         justifyContent="start"
       >
         {OnIcon && <OnIcon />}
-      </StyledTrackColumn>
-      <StyledTrackColumn
+      </StyledTrackIcon>
+      <StyledTrackIcon
         state={state}
         size={size}
         overrides={overrides}
         justifyContent="end"
       >
         {OffIcon && <OffIcon />}
-      </StyledTrackColumn>
+      </StyledTrackIcon>
       <StyledThumb
         size={size}
         checked={checked}

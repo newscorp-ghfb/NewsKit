@@ -11,7 +11,9 @@ export default {
       backgroundColor: '{{colors.interactiveDisabled010}}',
     },
   },
-  switchTrackColumn: {
+  // A separate style preset is required for track icons. We cannot put this
+  // styling in the switchTrack preset as this overrides the thumb icon styling.
+  switchTrackIcon: {
     base: {
       iconColor: '{{colors.inkInverse}}',
     },
