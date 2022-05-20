@@ -1,7 +1,10 @@
 import React from 'react';
 import {
+  Block,
   Flow,
   IconOutlinedArrowForwardIos,
+  InlineMessage,
+  IconFilledInfo,
   Stack,
   StackDistribution,
   StructuredListCell,
@@ -9,10 +12,20 @@ import {
   StructuredList,
   TextBlock,
 } from 'newskit';
+import {Link} from '../../components/link';
+import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
-import {Link} from '../../components/link';
+import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
+);
 
 const StructuredListComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -25,22 +38,21 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
       type: 'Layout',
       name: 'Structured List',
       hero: {
-        src: 'static/button-hero.svg',
-        alt: 'structured-list-demo-image',
+        illustration: 'components/structured-list/hero',
       },
       introduction:
-        'Structured lists group content that is similar or related.',
+        'The Structured List is a layout component that groups similar or related content.',
     }}
     componentDefaultsKey="structuredList"
     meta={{
       status: MetaStatus.Beta,
-      introduced: 'v3.3.0',
-      codeUrl: 'https://github.com/newscorp-ghfb/newskit',
-      figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
+      introduced: 'v3.5.0',
+      codeUrl:
+        'https://github.com/newscorp-ghfb/newskit/tree/main/src/structured-list',
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the StructuredList component, its variations, and configuration options.',
+        'This demo allows you to preview the Structured List component, its variations, and configuration options.',
       playground: {
         componentName: 'StructuredList',
         component: state => (
@@ -133,25 +145,92 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
       },
     }}
     anatomy={{
-      introduction: 'Structure Lists contain three required elements.',
+      introduction:
+        'The Structured List contains three required elements and one optional element.',
+      media: getIllustrationComponent('components/structured-list/anatomy'),
       rows: [
         {
-          name: 'StructuredList',
-          description: 'Includes a list of structuredListItem',
+          name: 'Wrapper',
+          description: 'Includes the list item(s)',
           component: ['Grid, Cell'],
           optional: undefined,
         },
         {
-          name: 'structuredListItem',
-          description: 'Includes a list of structuredListCell',
+          name: 'List Item',
+          description: 'Includes cells',
           component: ['Grid, Cell'],
           optional: undefined,
         },
         {
-          name: 'structuredListCell',
-          description: 'Includes content within the cells',
-          component: 'Cell',
+          name: 'Cell',
+          description:
+            'Content within the cells. Any component can be parsed to each cell (ReactNode)',
+          component: ['Grid, Cell'],
           optional: undefined,
+        },
+        {
+          name: 'Divider',
+          description: 'Divider that appears at the bottom of a list item',
+          component: 'Divider',
+          optional: true,
+        },
+      ],
+    }}
+    options={{
+      introduction:
+        'The Structured List has options that can be used to provide an appropriate experience for different use cases.',
+      cards: [
+        {
+          title: 'List item and cell layouts',
+          description: (
+            <>
+              The Structured List Cell can be configured to achieve multiple
+              layouts by using nested grids and the{' '}
+              <InlineCode>pullRight</InlineCode> prop.
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/structured-list/options/options-item-and-cell-layouts',
+          ),
+        },
+        {
+          title: 'List item dividers',
+          description: (
+            <>
+              <Link target="_blank" href="/components/divider">
+                Dividers
+              </Link>{' '}
+              can applied to the bottom of List items to provide visual
+              separation, set via the <InlineCode>divider</InlineCode> prop.
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/structured-list/options/options-divider',
+          ),
+        },
+        {
+          title: 'Interactive items',
+          description: (
+            <>
+              <Block spaceStack="space030">
+                Structured List items can be set to be interactive by supplying
+                a link for an item.
+              </Block>
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="checkbox label position"
+              >
+                If a HREF is passed to the component then a chevron is rendered
+                in the last cell and the item becomes interactive (to indicate
+                that the item is interactive the stylePreset and cursor is set
+                to pointer).
+              </InlineMessage>
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/structured-list/options/options-interactive',
+          ),
         },
       ],
     }}
