@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Block, Visible} from 'newskit';
+import {Block, styled, Visible} from 'newskit';
 import {SidebarNav} from './sidebar-navigation';
 import {ThemeSwitch} from '../theme-switch';
 import {GitHubLaunch} from '../menu-collapsible/menu-collapsible';
@@ -12,7 +12,7 @@ interface SidebarProps {
   toggleTheme: () => void;
   themeMode: string;
 }
-
+const ThemeWrapper = styled.div``;
 const Sidebar: React.FC<SidebarProps> = ({
   sidebarOpen,
   toggleTheme,
@@ -24,7 +24,6 @@ const Sidebar: React.FC<SidebarProps> = ({
     <Visible xs sm md>
       <StyledDrawer
         data-testid="sidebar"
-        onClick={handleSidebarClick}
         aria-label="drawer menu on the left"
         open={sidebarOpen}
         onDismiss={handleSidebarClick}
@@ -47,7 +46,9 @@ const Sidebar: React.FC<SidebarProps> = ({
         <Block marginInline="space060" marginBlock="space050">
           <GitHubLaunch />
           <Block marginBlock="space050" />
-          <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} textTheme />
+          <ThemeWrapper onClick={handleSidebarClick}>
+            <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} textTheme />
+          </ThemeWrapper>
         </Block>
       </StyledDrawer>
     </Visible>
