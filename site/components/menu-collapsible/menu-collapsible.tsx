@@ -42,6 +42,12 @@ type SubNavProps = {
 
 type SubNavItemProps = NavProps & SubNavProps;
 
+// const StyledMenuItem = styled(MenuItem)`
+//   [class~='nk-menu-item']:last-of-type {
+//     ${getSpacingCssFromTheme('marginBottom', 'space060')};
+//   }
+// `;
+
 export const MenuNavCollapsible = ({
   path,
   menu,
@@ -71,7 +77,7 @@ export const MenuNavCollapsible = ({
                       minHeight: '40px',
                       stylePreset: 'sideBarNavigation',
                       typographyPreset: 'utilityButton020',
-                      paddingInline: 'space060',
+                      paddingInline: 'space070',
                       marginBlockEnd: 'space030',
                     }}
                     size="small"
@@ -79,19 +85,21 @@ export const MenuNavCollapsible = ({
                     {title}
                   </MenuItem>
                 ) : (
-                  <MenuItem
-                    href={id}
-                    selected={path.includes(id)}
-                    overrides={{
-                      minHeight: '40px',
-                      stylePreset: 'sideBarNavigation',
-                      typographyPreset: 'utilityButton020',
-                      paddingInline: 'space060',
-                    }}
-                    size="small"
-                  >
-                    {title}
-                  </MenuItem>
+                  <>
+                    <MenuItem
+                      href={id}
+                      selected={path.includes(id)}
+                      overrides={{
+                        minHeight: '40px',
+                        stylePreset: 'sideBarNavigation',
+                        typographyPreset: 'utilityButton020',
+                        paddingInline: 'space070',
+                      }}
+                      size="small"
+                    >
+                      {title}
+                    </MenuItem>
+                  </>
                 )}
               </>
             ) : (
@@ -102,6 +110,7 @@ export const MenuNavCollapsible = ({
                     title: {
                       typographyPreset: 'utilityHeading010',
                       stylePreset: 'sidebarHeader',
+                      //  marginInline: 'space030',
                       spaceInline: 'space030',
                       spaceInset: 'space060',
                     },
@@ -132,7 +141,7 @@ export const MenuNavCollapsible = ({
             as="h5"
             aria-expanded={openPanelIds.includes(index) ? 'true' : 'false'}
             marginInline="space060"
-            marginBlock="space040"
+            marginBlock="space010"
             typographyPreset="utilityHeading020"
             onClick={() =>
               openPanelIds.includes(index)

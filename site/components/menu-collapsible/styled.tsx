@@ -19,10 +19,12 @@ const StyledMenuCollapsibleItem = styled.div<
   ${getSpacingCssFromTheme('marginTop', 'space040')};
   ${getSpacingCssFromTheme('marginBottom', 'space000')};
 
-  &.collapsed > p {
+  &.collapsed > h5 {
     ${getSpacingCssFromTheme('marginBottom', 'space050')};
+ 
+    
   }
-  &.expanded > p {
+  &.expanded > h5 {
     ${getSpacingCssFromTheme('marginBottom', 'space040')};
   }
   &.collapsed > li {
@@ -35,6 +37,10 @@ const StyledMenuCollapsibleItem = styled.div<
   &.expanded > li {
     transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
     transition-delay: 0s;
+  }
+
+  &.expanded > li:last-of-type {
+    ${getSpacingCssFromTheme('marginBottom', 'space060')};
   }
   }
 `;
@@ -71,8 +77,8 @@ export const MobileNavigationDivider = styled.div`
   position: relative;
   left: calc(-50vw + 50%);
 
-  ${getSpacingCssFromTheme('marginTop', 'space050')};
-  ${getSpacingCssFromTheme('marginBottom', 'space050')};
+  ${getSpacingCssFromTheme('marginTop', 'space010')};
+  ${getSpacingCssFromTheme('marginBottom', 'space020')};
 `;
 
 MenuCollapsible.displayName = 'MenuCollapsible';
