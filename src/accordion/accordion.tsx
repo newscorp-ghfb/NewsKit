@@ -10,8 +10,8 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
     <StyledAccodionContainer>
       {header && (
         <StyledHeader as="h3">
-            {header}
-            <Icon></Icon>
+          {header}
+          <Icon />
         </StyledHeader>
       )}
       {children}

@@ -13,9 +13,7 @@ export default {
 export const StoryAccordion = () => (
   <>
     <StorybookHeading>Accordion</StorybookHeading>
-    <Accordion
-      header={}
-    >
+    <Accordion header={}>
       <TextBlock>This is a text block</TextBlock>
     </Accordion>
   </>
