@@ -1,11 +1,6 @@
 import {SwitchOverrides, SwitchProps, SwitchState} from '../types';
 import {BaseSwitchSize} from '../../base-switch/types';
-import {
-  IconFilledCheck,
-  IconFilledClose,
-  IconFilledDragHandle,
-  TransitionToken,
-} from '../..';
+import {IconFilledCheck, IconFilledClose, IconFilledDragHandle} from '../..';
 
 export const states: [string, {checked?: boolean; state?: SwitchState}][] = [
   ['base', {}],
@@ -34,13 +29,6 @@ export const icons: [
   ],
 ];
 
-const slowTransition: TransitionToken = {
-  extend: 'shiftAbsolute',
-  base: {
-    transitionDuration: '1000ms',
-  },
-};
-
 export const sizeOverrides: [string, SwitchOverrides][] = [
   ['small-margin', {input: {spaceInline: '5px'}}],
   ['large-margin', {input: {spaceInline: '100px'}}],
@@ -49,26 +37,6 @@ export const sizeOverrides: [string, SwitchOverrides][] = [
     {
       input: {blockSize: '12px', paddingInline: '0px', marginBlock: '10px'},
       thumb: {stylePreset: 'borderedThumb'},
-    },
-  ],
-  ['wide-track', {input: {blockSize: '120px'}}],
-  ['long-track', {input: {inlineSize: '200px'}}],
-  ['small-thumb', {thumb: {size: '10px'}}],
-  ['large-thumb', {thumb: {size: '32px'}}],
-  [
-    'small-feedback',
-    {
-      feedback: {size: '27px'},
-      input: {blockSize: '12px', marginBlock: '10px', paddingInline: '0px'},
-      thumb: {stylePreset: 'borderedThumb'},
-    },
-  ],
-  ['large-feedback', {feedback: {size: '100px'}}],
-  [
-    'slow-transition',
-    {
-      feedback: {transitionPreset: [slowTransition, 'opacityChange']},
-      thumb: {transitionPreset: [slowTransition]},
     },
   ],
 ];
