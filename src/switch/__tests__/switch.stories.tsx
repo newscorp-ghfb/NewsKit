@@ -7,11 +7,14 @@ import {Switch} from '..';
 import {styled} from '../../utils';
 import {
   Cell,
+  compileTheme,
+  createTheme,
   Fieldset,
   Grid,
   IconFilledCheck,
   IconFilledClose,
-  IconFilledError,
+  IconFilledDragHandle,
+  ThemeProvider,
 } from '../..';
 import {icons, labels, sizeOverrides, sizes, states} from './helpers';
 
@@ -25,6 +28,26 @@ const Container = styled.div`
   margin: 20px;
   display: flex;
 `;
+
+const borderedThumbTheme = compileTheme(
+  createTheme({
+    name: 'bordered-thumb-theme',
+    overrides: {
+      stylePresets: {
+        borderedThumb: {
+          base: {
+            backgroundColor: '{{colors.inkInverse}}',
+            borderRadius: '{{borders.borderRadiusCircle}}',
+            iconColor: '{{colors.inkContrast}}',
+            borderColor: '{{colors.interactiveInput040}}',
+            borderStyle: 'solid',
+            borderWidth: '{{borders.borderWidth010}}',
+          },
+        },
+      },
+    },
+  }),
+);
 
 export const StorySwitchDefault = () => (
   <>
@@ -88,7 +111,7 @@ export const StorySwitchIcons = () => (
 StorySwitchIcons.storyName = 'switch-icons';
 
 export const StorySwitchOverrides = () => (
-  <>
+  <ThemeProvider theme={borderedThumbTheme}>
     <StorybookHeading>Switch</StorybookHeading>
     <Grid>
       <Cell xs={8} md={4}>
@@ -101,7 +124,7 @@ export const StorySwitchOverrides = () => (
               label={id}
               overrides={{
                 ...o,
-                thumbIcon: IconFilledError,
+                thumbIcon: IconFilledDragHandle,
                 onIcon: IconFilledCheck,
                 offIcon: IconFilledClose,
               }}
@@ -111,13 +134,13 @@ export const StorySwitchOverrides = () => (
         ))}
       </Cell>
     </Grid>
-  </>
+  </ThemeProvider>
 );
 
 StorySwitchOverrides.storyName = 'switch-overrides';
 
 export const StorySwitchLabels = () => (
-  <>
+  <ThemeProvider theme={borderedThumbTheme}>
     <StorybookHeading>Switch</StorybookHeading>
     <Grid>
       <Cell xs={8} md={4}>
@@ -135,7 +158,7 @@ export const StorySwitchLabels = () => (
         ))}
       </Cell>
     </Grid>
-  </>
+  </ThemeProvider>
 );
 
 StorySwitchLabels.storyName = 'switch-labels';
@@ -153,7 +176,7 @@ export const StorySwitchFieldset = () => (
               label="Reduced motion"
               defaultChecked
               overrides={{
-                thumbIcon: IconFilledError,
+                thumbIcon: IconFilledDragHandle,
                 onIcon: IconFilledCheck,
                 offIcon: IconFilledClose,
               }}

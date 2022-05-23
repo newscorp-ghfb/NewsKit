@@ -3,7 +3,7 @@ import {BaseSwitchSize} from '../../base-switch/types';
 import {
   IconFilledCheck,
   IconFilledClose,
-  IconFilledError,
+  IconFilledDragHandle,
   TransitionToken,
 } from '../..';
 
@@ -20,14 +20,14 @@ export const icons: [
   string,
   Pick<SwitchOverrides, 'thumbIcon' | 'offIcon' | 'onIcon'>,
 ][] = [
-  ['thumb-icon', {thumbIcon: IconFilledError}],
+  ['thumb-icon', {thumbIcon: IconFilledDragHandle}],
   ['on-icon', {onIcon: IconFilledCheck}],
   ['off-icon', {offIcon: IconFilledClose}],
   ['on-and-off-icon', {onIcon: IconFilledCheck, offIcon: IconFilledClose}],
   [
     'thumb-and-on-and-off-icon',
     {
-      thumbIcon: IconFilledError,
+      thumbIcon: IconFilledDragHandle,
       onIcon: IconFilledCheck,
       offIcon: IconFilledClose,
     },
@@ -46,7 +46,10 @@ export const sizeOverrides: [string, SwitchOverrides][] = [
   ['large-margin', {input: {spaceInline: '100px'}}],
   [
     'narrow-track-with-long-text-to-show-vertical-alignment',
-    {input: {blockSize: '12px', paddingInline: '0px', marginBlock: '10px'}},
+    {
+      input: {blockSize: '12px', paddingInline: '0px', marginBlock: '10px'},
+      thumb: {stylePreset: 'borderedThumb'},
+    },
   ],
   ['wide-track', {input: {blockSize: '120px'}}],
   ['long-track', {input: {inlineSize: '200px'}}],
@@ -57,6 +60,7 @@ export const sizeOverrides: [string, SwitchOverrides][] = [
     {
       feedback: {size: '27px'},
       input: {blockSize: '12px', marginBlock: '10px', paddingInline: '0px'},
+      thumb: {stylePreset: 'borderedThumb'},
     },
   ],
   ['large-feedback', {feedback: {size: '100px'}}],
@@ -65,18 +69,6 @@ export const sizeOverrides: [string, SwitchOverrides][] = [
     {
       feedback: {transitionPreset: [slowTransition, 'opacityChange']},
       thumb: {transitionPreset: [slowTransition]},
-    },
-  ],
-  [
-    'responsive-padding',
-    {
-      input: {
-        inlineSize: '200px',
-        paddingInline: {
-          xs: '4px',
-          lg: '12px',
-        },
-      },
     },
   ],
 ];
@@ -94,7 +86,10 @@ export const labels: [string, SwitchProps][] = [
     {
       label: `${shortLabel} (narrow track)`,
       labelPosition: 'end',
-      overrides: {input: {blockSize: '12px'}},
+      overrides: {
+        input: {blockSize: '12px', marginBlock: '10px'},
+        thumb: {stylePreset: 'borderedThumb'},
+      },
     },
   ],
   [
@@ -102,23 +97,10 @@ export const labels: [string, SwitchProps][] = [
     {
       label: `${longLabel} (narrow track)`,
       labelPosition: 'end',
-      overrides: {input: {blockSize: '12px'}},
-    },
-  ],
-  [
-    'responsive-track-short',
-    {
-      label: `${shortLabel} (responsive track)`,
-      labelPosition: 'end',
-      overrides: {input: {blockSize: {xs: '12px', md: '48px'}}},
-    },
-  ],
-  [
-    'responsive-track-long',
-    {
-      label: `${longLabel} (responsive track)`,
-      labelPosition: 'end',
-      overrides: {input: {blockSize: {xs: '12px', md: '48px'}}},
+      overrides: {
+        input: {blockSize: '12px', marginBlock: '10px'},
+        thumb: {stylePreset: 'borderedThumb'},
+      },
     },
   ],
 ];
