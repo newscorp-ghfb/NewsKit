@@ -52,7 +52,6 @@ export const StoryTooltip = () => (
       <IconButton
         size={ButtonSize.Small}
         overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
-        aria-label="share on twitter"
       >
         <IconFilledTwitter />
       </IconButton>

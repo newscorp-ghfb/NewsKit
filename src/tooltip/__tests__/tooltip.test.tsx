@@ -170,7 +170,7 @@ describe('Tooltip', () => {
       fireEvent.mouseLeave(button);
       expect(button.hasAttribute('aria-describedby')).toBe(false);
     });
-    test('can describe the exotic child when open and remove aria attribute when closed', () => {
+    test('can render with exotic title when open and remove aria attribute when closed', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
         title: <div>the title</div>,

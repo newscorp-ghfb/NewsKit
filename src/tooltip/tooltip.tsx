@@ -28,7 +28,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
   overrides,
   ...props
 }) => {
-  const [open, setOpenState] = useControlled({
+  const [open, setOpen] = useControlled({
     controlledValue: openProp,
     defaultValue: Boolean(defaultOpen),
   });
@@ -36,7 +36,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
   const {x, y, reference, floating, strategy, context} = useFloating({
     placement,
     open,
-    onOpenChange: setOpenState,
+    onOpenChange: setOpen,
     whileElementsMounted: autoUpdate,
   });
 
@@ -84,6 +84,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
       )}
       {open && (
         <StyledTooltip
+          as={['string', 'number'].includes(typeof title) ? 'p' : 'div'}
           {...getFloatingProps({
             ref: floating,
             id,
@@ -94,7 +95,6 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
               left: x ?? '',
             },
           })}
-          data-testid="tooltip"
           overrides={overrides}
           {...props}
         >

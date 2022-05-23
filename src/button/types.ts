@@ -34,4 +34,4 @@ export const isButtonLink = (
   props: ButtonOrButtonLinkProps,
 ): props is ButtonLinkProps => (props as ButtonLinkProps).href !== undefined;
 
-export type IconButtonProps = {'aria-label': string} & ButtonOrButtonLinkProps;
+export type IconButtonProps = {'aria-label'?: string} & ButtonOrButtonLinkProps;

@@ -9,6 +9,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
     Add
   </button>
   .emotion-0 {
+  margin: 0;
   pointer-events: none;
   z-index: 80;
   background-color: #0A0A0A;
@@ -23,16 +24,15 @@ exports[`Tooltip should render correct styles: default 1`] = `
   padding-block: 8px;
 }
 
-<div
+<p
     class="Tooltip emotion-0"
-    data-testid="tooltip"
     id="floating-ui-2"
     role="tooltip"
     style="position: absolute;"
     tabindex="-1"
   >
     hello
-  </div>
+  </p>
 </DocumentFragment>
 `;
 
@@ -45,6 +45,9 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
     Add
   </button>
   .emotion-0 {
+  margin: 0;
+  padding-inline: 8px;
+  padding-block: 16px;
   pointer-events: none;
   z-index: 70;
   max-width: 80px;
@@ -61,15 +64,14 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
   padding-block: 16px;
 }
 
-<div
+<p
     class="Tooltip emotion-0"
-    data-testid="tooltip"
     id="floating-ui-11"
     role="tooltip"
     style="position: absolute;"
     tabindex="-1"
   >
     hello
-  </div>
+  </p>
 </DocumentFragment>
 `;
