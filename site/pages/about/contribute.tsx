@@ -1,8 +1,7 @@
 import React from 'react';
-import {Image, getSizingCssFromTheme, styled} from 'newskit';
+import {getSizingCssFromTheme, styled} from 'newskit';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
-import {MediaList} from '../../components/media-list';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {HeadNextSeo} from '../../components/head-next-seo';
 import {Link} from '../../components/link';
@@ -13,56 +12,10 @@ import {
   ContentColSpan,
 } from '../../components/content-structure';
 
-const cardoverrides = {
-  title: {
-    typographyPreset: 'editorialHeadline030',
-  },
-  description: {
-    typographyPreset: 'editorialParagraph020',
-  },
-};
-
 const PageIntroductionContainer = styled.div`
   ${getSizingCssFromTheme('marginTop', 'sizing100')};
   ${getSizingCssFromTheme('marginBottom', 'sizing090')}
 `;
-
-const cards = [
-  {
-    media: {
-      src: 'static/about/contribute/contribute-card-feedback.svg',
-      alt: 'Feedback Media',
-    },
-
-    title: 'Feedback',
-    description:
-      'Stay in contact with the NewsKit team and help it progress in a positive direction.',
-    stylePrefix: 'featureCard',
-    overrides: cardoverrides,
-  },
-  {
-    media: {
-      src: 'static/about/contribute/contribute-card-share.svg',
-      alt: 'Share Media',
-    },
-    title: 'Share',
-    description:
-      'Promote the Design System, answer questions and help your team integrate.',
-    stylePrefix: 'featureCard',
-    overrides: cardoverrides,
-  },
-  {
-    media: {
-      src: 'static/about/contribute/contribute-card-create.svg',
-      alt: 'Create Media',
-    },
-    title: 'Create',
-    stylePrefix: 'featureCard',
-    description:
-      'Write code or design assets for the Design System for other users to reuse.',
-    overrides: cardoverrides,
-  },
-];
 
 const Contribute = (
   {path, ...props}: LayoutProps, //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
@@ -70,7 +23,7 @@ const Contribute = (
   <Layout {...props} path={`${path}-new`}>
     <HeadNextSeo
       title="Contribute"
-      description="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
+      description="There are a lot of ways to contribute to the NewsKit community and Design System; from submitting a proposal to designing a new feature for other users to benefit from."
       image={{
         url: 'social/about.png',
         alt: 'Contribute',
@@ -81,47 +34,17 @@ const Contribute = (
       <PageIntroduction
         type="About"
         name="Contribute"
-        introduction="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
+        introduction="There are a lot of ways to contribute to the NewsKit community and Design System; from submitting a proposal to designing a new feature for other users to benefit from."
         hero={{illustration: 'about/hero-contribute-illustration'}}
       />
     </PageIntroductionContainer>
 
     <ComponentPageCell>
-      <ContentSection sectionName="how to contribute">
-        <ContentPrimary
-          headline="How to contribute"
-          description={
-            <>
-              There are a lot of ways to contribute to the{' '}
-              <Link
-                target="_blank"
-                href="https://github.com/newscorp-ghfb/newskit"
-              >
-                NewsKit community and Design System;
-              </Link>{' '}
-              from{' '}
-              <Link
-                target="_blank"
-                href="https://github.com/newscorp-ghfb/newskit/issues/new/choose"
-              >
-                submitting a proposal
-              </Link>{' '}
-              to designing a new feature for other users to benefit from.
-            </>
-          }
-          showSeparator
-        >
-          <MediaList layout="3-span" cardType="feature" cards={cards} />
-        </ContentPrimary>
-      </ContentSection>
-
       <ContentSection sectionName="feedback">
-        <ContentPrimary headline="Feedback">
-          <Image
-            src="static/about/contribute/contribute-banner-feedback.svg"
-            alt="Feedback Media"
-          />
-        </ContentPrimary>
+        <ContentPrimary
+          headline="Feedback"
+          description="Stay in contact with the NewsKit team and help it progress in a positive direction."
+        />
 
         <ContentSecondary
           headline="Report a bug"
@@ -169,12 +92,10 @@ const Contribute = (
       </ContentSection>
 
       <ContentSection sectionName="share">
-        <ContentPrimary headline="Share">
-          <Image
-            src="static/about/contribute/contribute-banner-share.svg"
-            alt="Share Media"
-          />
-        </ContentPrimary>
+        <ContentPrimary
+          headline="Share"
+          description="Promote the NewsKit Design System, answer questions and help your team integrate."
+        />
 
         <ContentSecondary
           headline="Promote it"
@@ -208,12 +129,10 @@ const Contribute = (
       </ContentSection>
 
       <ContentSection sectionName="create">
-        <ContentPrimary headline="Create">
-          <Image
-            src="static/about/contribute/contribute-banner-create.svg"
-            alt="Create Media"
-          />
-        </ContentPrimary>
+        <ContentPrimary
+          headline="Create"
+          description="Write code or design assets for the NewsKit Design System for other users to reuse."
+        />
 
         <ContentSecondary
           headline="Build design assets"
