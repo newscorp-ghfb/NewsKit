@@ -1,3 +1,4 @@
+export * from './accordion';
 export * from './aspect-ratio';
 export * from './assistive-text';
 export * from './audio-player';
