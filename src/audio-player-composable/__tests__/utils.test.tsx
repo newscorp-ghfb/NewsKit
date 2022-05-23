@@ -57,7 +57,7 @@ describe('formatTrackData', () => {
     });
   });
 
-  test('when multiple buffered sections exist', () => {
+  test('when multiple buffered sections take the nearest to the curser time (start time is closest)', () => {
     // This can occur when a user moves ahead then back again, multiple disparate buffered sections can exist.
     // Example here is buffered sections exist between 0-125 and 216-228. The current play position is at 32.
     // It has been diecided to only show the first buffer section similar to how youtube does it.
@@ -68,21 +68,21 @@ describe('formatTrackData', () => {
         end: (i: number) => [125, 228][i],
       }),
     ).toEqual({
-      colors: ['indicator', 'buffer', 'track', 'track', 'track'],
-      values: [32, 125, 216, 228],
+      colors: ['indicator', 'buffer', 'track'],
+      values: [32, 125],
     });
   });
 
-  test('Ensure start is not first value in buffer array', () => {
+  test('when multiple buffered sections take the nearest to the curser time (end time is closest', () => {
     expect(
-      formatTrackData('track', 'indicator', 'buffer', [50], {
-        length: 3,
-        start: (i: number) => [0, 100, 150][i],
-        end: (i: number) => [49, 149, 199][i],
+      formatTrackData('track', 'indicator', 'buffer', [122], {
+        length: 2,
+        start: (i: number) => [0, 216][i],
+        end: (i: number) => [125, 228][i],
       }),
     ).toEqual({
-      colors: ['indicator', 'buffer', 'track', 'track', 'track'],
-      values: [50, 149, 150, 199],
+      colors: ['indicator', 'buffer', 'track'],
+      values: [122, 125],
     });
   });
 
