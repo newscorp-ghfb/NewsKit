@@ -236,32 +236,48 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
     }}
     states={{
       introduction:
-        'When a structured list is interactive, it has states including, base, hover, active, disabled, and focus.',
+        'When a Structured List is interactive, it has states including, base, hover, active, disabled, and focus.',
+      layout: '3-span',
       cards: [
         {
           title: 'Base',
           description:
-            'Structured List has a base state. This is the base style of the list item before it has been interacted with by a user.',
+            'The Structured List has a base state. This is the base style of the list item before it has been interacted with by a user.',
+          media: getIllustrationComponent(
+            'components/structured-list/states/base',
+          ),
         },
         {
           title: 'Hover',
           description:
-            'Structured List has a hover state. The style of the list item changes to visually communicate and provide feedback to the user that the list item is an interactive element.',
+            'The Structured List has a hover state. The style of the list item changes to visually communicate and provide feedback to the user that the list item is an interactive element.',
+          media: getIllustrationComponent(
+            'components/structured-list/states/hover',
+          ),
         },
         {
           title: 'Active',
           description:
-            'Structured List has an active state. The style of the list item changes to visually communicate and provide feedback to the user that the structured list item has been interacted with.',
+            'The Structured List has an active state. The style of the list item changes to visually communicate and provide feedback to the user that the Tab item has been interacted with.',
+          media: getIllustrationComponent(
+            'components/structured-list/states/active',
+          ),
         },
         {
           title: 'Disabled',
           description:
-            'Structured List in a disabled state communicates that a list item exists, but is not available to the user in that scenario. When the user’s cursor hovers over a list item in a disabled state, the cursor shows as not-allowed. Disabled structured list items are often used to maintain layout consistency and communicate that a list item may become available if another condition has been met.',
+            'The Structured List in a disabled state communicates that a list item exists, but is not available to the user in that scenario. When the user’s cursor hovers over a list item in a disabled state, the cursor shows as not-allowed. Disabled list items are often used to maintain layout consistency and communicate that a list item may become available if another condition has been met.',
+          media: getIllustrationComponent(
+            'components/structured-list/states/disabled',
+          ),
         },
         {
           title: 'Focus',
           description:
-            'Structured List in a focus state communicates that a user has highlighted an ist item, using an input method such as a keyboard or voice.',
+            'Structured List in a focus state communicates that a user has highlighted a list item, using an input method such as a keyboard or voice.',
+          media: getIllustrationComponent(
+            'components/structured-list/states/focus',
+          ),
         },
       ],
     }}
