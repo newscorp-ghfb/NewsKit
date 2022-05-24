@@ -11,7 +11,7 @@ export const formatTrackData = (
 
   const time = timeArr[0];
   const bufferPositions: {type: 'start' | 'end'; value: number}[] = [];
-  const closestBuffer = [];
+  let closestBuffer: number = 0;
 
   const {length} = buffered;
   for (let i = 0; i < length; i += 1) {
@@ -41,17 +41,17 @@ export const formatTrackData = (
 
     if (value) {
       // set value for buffer
-      closestBuffer.push(value);
+      closestBuffer = value;
     }
   }
 
   const colors = [
     indicatorColor,
-    ...closestBuffer.map(() => bufferColor),
+    ...(closestBuffer ? [closestBuffer] : []).map(() => bufferColor),
     trackColor,
   ];
 
-  const values = [time, ...closestBuffer];
+  const values = closestBuffer ? [time, closestBuffer] : [time];
   return {colors, values};
 };
 
