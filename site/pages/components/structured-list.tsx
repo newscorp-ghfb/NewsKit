@@ -530,6 +530,10 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
       uiKit: false,
       themes: true,
     }}
+    related={{
+      introduction: '',
+      related: ['Grid', 'Block'],
+    }}
   />
 );
 
