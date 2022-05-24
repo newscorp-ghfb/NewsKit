@@ -17,6 +17,7 @@ import {
   AudioPlayerForwardButton,
   AudioPlayerReplayButton,
   AudioPlayerSeekBar,
+  AudioPlayerVolumeControl,
 } from '..';
 
 const version = '0.10.0';
@@ -34,6 +35,7 @@ const recordedAudioProps: AudioPlayerComposableProps = {
       />
       <AudioPlayerTimeDisplay data-testid="audio-player-time-display" />
       <Button href="/">read more</Button>
+      <AudioPlayerVolumeControl />
       <AudioPlayerSkipNextButton
         onClick={() => {
           console.log('customer click function for skip next');
@@ -54,6 +56,15 @@ const recordedAudioProps: AudioPlayerComposableProps = {
           console.log('customer click function for replay');
         }}
       />
+    </>
+  ),
+};
+
+const AudioAndVolumeControlWithProps: AudioPlayerComposableProps = {
+  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  children: (
+    <>
+      <AudioPlayerVolumeControl collapsed initialVolume={0.2}/>
     </>
   ),
 };
@@ -732,4 +743,56 @@ describe('Audio Player Composable', () => {
       expect(mockOnNextClick).toHaveBeenCalled();
     });
   });
+
+  describe('VolumeControl', () => {
+    it('should have mute unmute functionality', () => {
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        recordedAudioProps,
+      );
+      const audioElement = getByTestId('audio-element') as any;
+      
+      // Should default to 0.7
+      expect(audioElement.volume).toEqual(0.7);
+      // Mute with button click
+      fireEvent.click(getByTestId('mute-button'));
+      expect(audioElement.volume).toEqual(0);
+      // unMute
+      fireEvent.click(getByTestId('mute-button'));
+      expect(audioElement.volume).toEqual(0.7);
+
+      // TODO to fix
+      // Mute with key press
+      fireEvent.keyDown(getByTestId('mute-button'), {
+        key: 'M',
+        code: 77,
+      });
+      expect(audioElement.volume).toEqual(0);
+
+
+      // Increase volume 0.1
+      fireEvent.keyDown(getByTestId('volume-control-thumb'), {
+        key: 'ArrowUp',
+        code: 38,
+      });
+      expect(audioElement.volume).toEqual(0.1);
+    })
+
+    it('should render correctly with props', () => {
+      const props = {
+        ...AudioAndVolumeControlWithProps,
+      };
+      const {queryByTestId, getByTestId} = renderWithTheme(AudioPlayerComposable, props);
+      
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const volumeSlider = queryByTestId('volume-slider');
+      
+      // Slider should no exist, given that collapsed is set to true
+      expect(volumeSlider).not.toBeInTheDocument()
+      // TODO to fix
+      // Initial volume should be 0.2, as by props
+      expect(audioElement.volume).toBe(0.2)
+    });
+
+  })
 });

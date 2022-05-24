@@ -16,6 +16,7 @@ Array [
   "AudioPlayerSkipNextButton",
   "AudioPlayerSkipPreviousButton",
   "AudioPlayerTimeDisplay",
+  "AudioPlayerVolumeControl",
   "Banner",
   "Block",
   "Button",

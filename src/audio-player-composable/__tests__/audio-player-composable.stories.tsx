@@ -9,6 +9,7 @@ import {
   AudioPlayerTimeDisplay,
   AudioPlayerSkipNextButton,
   AudioPlayerSkipPreviousButton,
+  AudioPlayerVolumeControl
 } from '..';
 import {
   StorybookHeading,
@@ -26,6 +27,7 @@ import {
   IconFilledReplay5,
   IconFilledForward5,
 } from '../../icons';
+import { useBreakpointKey } from '../../utils/hooks';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-audio-player-theme',
@@ -73,102 +75,106 @@ const fullAudioPlayerAreasDesktop = `
  `;
 
 const fullAudioPlayerAreasMobile = `
-  seekBar     seekBar   seekBar   seekBar   seekBar
-  currentTime volume    none      link      totalTime  
-  prev        backward  play      forward   next
+  seekBar     seekBar   seekBar   seekBar   seekBar   seekBar
+  currentTime none      none      none      link      totalTime  
+  volume      prev      backward  play      forward   next
  `;
 
 const AudioPlayerFull = (props: {
   ariaLandmark: string;
   src?: string;
   autoPlay?: boolean;
-}) => (
-  <AudioPlayerComposable
-    src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    {...props}
-  >
-    <GridLayout
-      columns={{
-        xs: '1fr auto auto auto 1fr',
-        md: '50px 1fr auto auto auto 1fr 50px',
-      }}
-      rowGap="space040"
-      columnGap="space040"
-      areas={{
-        xs: fullAudioPlayerAreasMobile,
-        md: fullAudioPlayerAreasDesktop,
-      }}
+}) => {
+  const breakpointKey = useBreakpointKey();
+
+  return(
+    <AudioPlayerComposable
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      {...props}
     >
-      {Areas => (
-        <>
-          <Areas.Play alignSelf="center">
-            <AudioPlayerPlayPauseButton />
-          </Areas.Play>
+      <GridLayout
+        columns={{
+          xs: '1fr auto auto auto 1fr',
+          md: '1fr auto auto auto auto auto 1fr'
+        }}
+        rowGap="space040"
+        columnGap="space040"
+        areas={{
+          xs: fullAudioPlayerAreasMobile,
+          md: fullAudioPlayerAreasDesktop,
+        }}
+      >
+        {Areas => (
+          <>
+            <Areas.Play alignSelf="center">
+              <AudioPlayerPlayPauseButton />
+            </Areas.Play>
 
-          <Areas.Backward alignSelf="center">
-            <AudioPlayerReplayButton />
-          </Areas.Backward>
+            <Areas.Backward alignSelf="center">
+              <AudioPlayerReplayButton />
+            </Areas.Backward>
 
-          <Areas.Forward alignSelf="center">
-            <AudioPlayerForwardButton />
-          </Areas.Forward>
+            <Areas.Forward alignSelf="center">
+              <AudioPlayerForwardButton />
+            </Areas.Forward>
 
-          <Areas.Prev alignSelf="center" justifySelf="end">
-            <AudioPlayerSkipPreviousButton
-              onClick={() => console.log('on skip Prev track')}
-            />
-          </Areas.Prev>
+            <Areas.Prev alignSelf="center" justifySelf="end">
+              <AudioPlayerSkipPreviousButton
+                onClick={() => console.log('on skip Prev track')}
+              />
+            </Areas.Prev>
 
-          <Areas.Next alignSelf="center">
-            <AudioPlayerSkipNextButton
-              onClick={() => console.log('on skip Next track')}
-            />
-          </Areas.Next>
+            <Areas.Next alignSelf="center">
+              <AudioPlayerSkipNextButton
+                onClick={() => console.log('on skip Next track')}
+              />
+            </Areas.Next>
 
-          <Areas.Volume alignSelf="center" justifySelf="start">
-            <Hidden xs sm>
-              Not yet
-            </Hidden>
-          </Areas.Volume>
+            <Areas.Volume alignSelf="center">
+              <AudioPlayerVolumeControl 
+                collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+              />
+            </Areas.Volume>
 
-          <Areas.SeekBar>
-            <AudioPlayerSeekBar />
-          </Areas.SeekBar>
+            <Areas.SeekBar>
+              <AudioPlayerSeekBar />
+            </Areas.SeekBar>
 
-          <Areas.CurrentTime>
-            <AudioPlayerTimeDisplay
-              format={({currentTime}) => calculateTime(currentTime)}
-            />
-          </Areas.CurrentTime>
+            <Areas.CurrentTime>
+              <AudioPlayerTimeDisplay
+                format={({currentTime}) => calculateTime(currentTime)}
+              />
+            </Areas.CurrentTime>
 
-          <Areas.TotalTime justifySelf="end">
-            <AudioPlayerTimeDisplay
-              format={({duration}) => calculateTime(duration)}
-            />
-          </Areas.TotalTime>
+            <Areas.TotalTime justifySelf="end">
+              <AudioPlayerTimeDisplay
+                format={({duration}) => calculateTime(duration)}
+              />
+            </Areas.TotalTime>
 
-          <Areas.Link alignSelf="center" justifySelf="end">
-            <Hidden xs sm>
-              <IconButton
-                aria-label="Open popout player"
-                overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
-                onClick={() => {
-                  window.open(
-                    'https://www.newskit.co.uk/',
-                    '',
-                    'width=380,height=665',
-                  );
-                }}
-              >
-                <IconFilledLaunch />
-              </IconButton>
-            </Hidden>
-          </Areas.Link>
-        </>
-      )}
-    </GridLayout>
-  </AudioPlayerComposable>
-);
+            <Areas.Link alignSelf="center" justifySelf="end">
+              <Hidden xs sm>
+                <IconButton
+                  aria-label="Open popout player"
+                  overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
+                  onClick={() => {
+                    window.open(
+                      'https://www.newskit.co.uk/',
+                      '',
+                      'width=380,height=665',
+                    );
+                  }}
+                >
+                  <IconFilledLaunch />
+                </IconButton>
+              </Hidden>
+            </Areas.Link>
+          </>
+        )}
+      </GridLayout>
+    </AudioPlayerComposable>
+  )
+};
 
 const AudioPlayerInline = (props: {ariaLandmark: string; src?: string}) => (
   <AudioPlayerComposable
