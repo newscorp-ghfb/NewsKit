@@ -362,8 +362,6 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
       },
     }}
     componentAPI={{
-      introduction:
-        'StructuredList have a number of props to facilitate a variety of uses:',
       components: [
         {
           title: 'StructuredList',
