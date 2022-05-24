@@ -155,14 +155,13 @@ export const StoryTooltipPlacements = () => (
     <Container>
       <GridLayout
         columns="repeat(3, 1fr)"
-        rows="repeat(3, 1fr)"
+        rows="repeat(4, 1fr)"
         columnGap="10px"
-        rowGap="20px"
       >
         <GridLayoutItem
           column="1"
-          row="2/3"
-          justifySelf="flex-start"
+          row="2/4"
+          justifySelf="center"
           alignSelf="center"
         >
           <Stack spaceInline="space050">
@@ -205,8 +204,8 @@ export const StoryTooltipPlacements = () => (
         </GridLayoutItem>
         <GridLayoutItem
           column="3"
-          row="2/3"
-          justifySelf="flex-end"
+          row="2/4"
+          justifySelf="center"
           alignSelf="center"
         >
           <Stack spaceInline="space050">
@@ -247,9 +246,9 @@ export const StoryTooltipPlacements = () => (
         </GridLayoutItem>
         <GridLayoutItem
           column="2"
-          row="1"
+          row="1/2"
           justifySelf="center"
-          alignSelf="flex-start"
+          alignSelf="center"
         >
           <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
             <Tooltip title="Tooltip content" placement="top-start">
@@ -289,9 +288,9 @@ export const StoryTooltipPlacements = () => (
         </GridLayoutItem>
         <GridLayoutItem
           column="2/3"
-          row="3"
+          row="4/5"
           justifySelf="center"
-          alignSelf="flex-end"
+          alignSelf="center"
         >
           <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
             <Tooltip title="Tooltip content" placement="bottom-start">
@@ -451,14 +450,13 @@ export const StoryTooltipPlacementsVisualTest = () => (
     <Container>
       <GridLayout
         columns="repeat(3, 1fr)"
-        rows="repeat(3, 1fr)"
+        rows="repeat(4, 1fr)"
         columnGap="10px"
-        rowGap="20px"
       >
         <GridLayoutItem
           column="1"
-          row="2/3"
-          justifySelf="flex-start"
+          row="2/4"
+          justifySelf="center"
           alignSelf="center"
         >
           <Stack spaceInline="space050">
@@ -501,8 +499,8 @@ export const StoryTooltipPlacementsVisualTest = () => (
         </GridLayoutItem>
         <GridLayoutItem
           column="3"
-          row="2/3"
-          justifySelf="flex-end"
+          row="2/4"
+          justifySelf="center"
           alignSelf="center"
         >
           <Stack spaceInline="space050">
@@ -543,9 +541,9 @@ export const StoryTooltipPlacementsVisualTest = () => (
         </GridLayoutItem>
         <GridLayoutItem
           column="2"
-          row="1"
+          row="1/2"
           justifySelf="center"
-          alignSelf="flex-start"
+          alignSelf="center"
         >
           <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
             <Tooltip title="Tooltip content" placement="top-start" open>
@@ -585,9 +583,9 @@ export const StoryTooltipPlacementsVisualTest = () => (
         </GridLayoutItem>
         <GridLayoutItem
           column="2/3"
-          row="3"
+          row="4/5"
           justifySelf="center"
-          alignSelf="flex-end"
+          alignSelf="center"
         >
           <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
             <Tooltip title="Tooltip content" placement="bottom-start" open>
