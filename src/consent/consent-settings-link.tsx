@@ -2,9 +2,19 @@ import * as React from 'react';
 import {LinkStandalone} from '../link';
 import {LinkProps} from '../link/types';
 
-type SPWindowTCF1 = Window & {
+type SPWindowUnifiedGDPR = Window & {
   _sp_?: {
-    loadPrivacyManagerModal: (siteId?: string, managerId?: string) => void;
+    gdpr?: {
+      loadPrivacyManagerModal: (managerId: string, tabToOpen?: string) => void;
+    };
+  };
+};
+
+type SPWindowUnifiedCCPA = Window & {
+  _sp_?: {
+    ccpa?: {
+      loadPrivacyManagerModal: (managerId: string) => void;
+    };
   };
 };
 
@@ -18,11 +28,22 @@ export interface ConsentSettingsLinkProps extends Omit<LinkProps, 'href'> {
   siteId?: string;
   privacyManagerId: string;
   children?: string;
+  gdpr?: boolean;
+  ccpa?: boolean;
+  tabToOpen?:
+    | 'purposes'
+    | 'vendors'
+    | 'features'
+    | 'purposes-li'
+    | 'vendors-li';
 }
 
 export const ConsentSettingsLink: React.FC<ConsentSettingsLinkProps> = ({
   siteId,
   privacyManagerId,
+  gdpr,
+  ccpa,
+  tabToOpen,
   children = 'Manage Consent',
   ...props
 }) => (
@@ -32,15 +53,20 @@ export const ConsentSettingsLink: React.FC<ConsentSettingsLinkProps> = ({
     role="button"
     onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
       try {
-        if (!siteId) {
+        if (gdpr) {
           // eslint-disable-next-line no-underscore-dangle
-          (window as SPWindowTCF2)._sp_!.loadPrivacyManagerModal(
+          (window as SPWindowUnifiedGDPR)._sp_!.gdpr!.loadPrivacyManagerModal(
+            privacyManagerId,
+            tabToOpen,
+          );
+        } else if (ccpa) {
+          // eslint-disable-next-line no-underscore-dangle
+          (window as SPWindowUnifiedCCPA)._sp_!.ccpa!.loadPrivacyManagerModal(
             privacyManagerId,
           );
         } else {
           // eslint-disable-next-line no-underscore-dangle
-          (window as SPWindowTCF1)._sp_!.loadPrivacyManagerModal(
-            siteId,
+          (window as SPWindowTCF2)._sp_!.loadPrivacyManagerModal(
             privacyManagerId,
           );
         }
