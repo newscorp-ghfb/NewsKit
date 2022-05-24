@@ -31,6 +31,30 @@ export interface SourcePointConfigTCFV2 {
   consentLanguage?: string;
 }
 
+export interface SourcePointConfigUnified {
+  accountId: number;
+  baseEndpoint?: string;
+  authId?: number;
+  authCookie?: string;
+  campaignEnv?: string;
+  isSPA?: boolean;
+  joinHref?: boolean;
+  targetingParams?: object;
+  propertyHref?: string;
+  propertyId?: number;
+  events?: object;
+  gdpr?: {
+    consentLanguage?: string;
+    groupPmId?: number;
+    targetingParams?: object;
+  };
+  ccpa?: {
+    alwaysDisplayDNS?: boolean;
+    groupPmId?: number;
+    targetingParams?: object;
+  };
+}
+
 export interface SourcePointConfigNonTCFV1 {
   accountId: number;
   baseEndpoint?: string;
@@ -51,8 +75,15 @@ export interface ConsentPropsTCFV2 extends BaseConsentProps {
   sourcePointConfigTCFV2: SourcePointConfigTCFV2;
 }
 
+export interface ConsentPropsUnified extends BaseConsentProps {
+  sourcePointConfigUnified: SourcePointConfigUnified;
+}
+
 export interface ConsentPropsNonTCFV1 extends BaseConsentProps {
   sourcePointConfigNonTCFV1: SourcePointConfigNonTCFV1;
 }
 
-export type ConsentProps = ConsentPropsTCFV2 | ConsentPropsNonTCFV1;
+export type ConsentProps =
+  | ConsentPropsTCFV2
+  | ConsentPropsNonTCFV1
+  | ConsentPropsUnified;
