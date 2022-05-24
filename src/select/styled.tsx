@@ -164,6 +164,7 @@ export const StyledOption = styled.div<{
     text-overflow: ellipsis;
   }
 
+  // LOGICAL_PROPS_TO_DO: this gap is not currently applied because the parent is not display:grid
   ${({$spaceInline}) =>
     $spaceInline ? getSpacingCssFromTheme('columnGap', $spaceInline) : null};
 
@@ -178,7 +179,9 @@ export const StyledOption = styled.div<{
   ${({$size}) =>
     getResponsiveSpace(`padding`, `selectOption.${$size}`, '', 'spaceInset')}
 
-    ${({$size}) =>
+  ${logicalProps()};
+
+  ${({$size}) =>
     getResponsiveSize('minHeight', `selectOption.${$size}`, '', 'minHeight')}
 `;
 
