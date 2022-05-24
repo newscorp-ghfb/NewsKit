@@ -53,13 +53,17 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
   // Because of above, 'aria-describedby' has different id for reference and floating, hence manually set below as well;
   const id = useId();
 
+  const titleIsString = typeof title === 'string';
+
   const labelOrDescProps = {} as {
+    'aria-label'?: string | null;
     'aria-labelledby'?: string | null;
     'aria-describedby'?: string | null;
   };
 
   if (asLabel) {
-    labelOrDescProps['aria-labelledby'] = open ? id : null;
+    labelOrDescProps['aria-label'] = titleIsString ? title : null;
+    labelOrDescProps['aria-labelledby'] = open && !titleIsString ? id : null;
   } else {
     labelOrDescProps['aria-describedby'] = open ? id : null;
   }
@@ -84,7 +88,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
       )}
       {open && (
         <StyledTooltip
-          as={['string', 'number'].includes(typeof title) ? 'p' : 'div'}
+          as={titleIsString ? 'p' : 'div'}
           {...getFloatingProps({
             ref: floating,
             id,

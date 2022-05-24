@@ -170,7 +170,7 @@ describe('Tooltip', () => {
       fireEvent.mouseLeave(button);
       expect(button.hasAttribute('aria-describedby')).toBe(false);
     });
-    test('can render with exotic title when open and remove aria attribute when closed', () => {
+    test('can describe with exotic title when open and remove aria attribute when closed', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
         title: <div>the title</div>,
@@ -182,19 +182,16 @@ describe('Tooltip', () => {
       fireEvent.mouseLeave(button);
       expect(button.hasAttribute('aria-describedby')).toBe(false);
     });
-    test('should label the child when open and remove aria attribute when closed', () => {
+    test('should label the child when closed', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         defaultOpen: false,
         asLabel: true,
       });
       const button = getByRole('button');
-      fireEvent.mouseEnter(button);
-      expect(button.hasAttribute('aria-labelledby')).toBe(true);
-      fireEvent.mouseLeave(button);
-      expect(button.hasAttribute('aria-labelledby')).toBe(false);
+      expect(button.hasAttribute('aria-label')).toBe(true);
     });
-    test('should label the exotic child when open and remove aria attribute when closed', () => {
+    test('should label the child when open with an exotic title', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
         title: <div>the title</div>,
@@ -202,10 +199,9 @@ describe('Tooltip', () => {
         asLabel: true,
       });
       const button = getByRole('button');
+      expect(button.hasAttribute('aria-labelledby')).toBe(false);
       fireEvent.mouseEnter(button);
       expect(button.hasAttribute('aria-labelledby')).toBe(true);
-      fireEvent.mouseLeave(button);
-      expect(button.hasAttribute('aria-labelledby')).toBe(false);
     });
   });
 
