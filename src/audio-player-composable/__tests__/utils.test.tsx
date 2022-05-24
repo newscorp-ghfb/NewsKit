@@ -60,7 +60,7 @@ describe('formatTrackData', () => {
   test('when multiple buffered sections take the nearest to the curser time (start time is closest)', () => {
     // This can occur when a user moves ahead then back again, multiple disparate buffered sections can exist.
     // Example here is buffered sections exist between 0-125 and 216-228. The current play position is at 32.
-    // It has been diecided to only show the first buffer section similar to how youtube does it.
+    // It has been decided to only show the first buffer section similar to how youtube does it.
     expect(
       formatTrackData('track', 'indicator', 'buffer', [32], {
         length: 2,
