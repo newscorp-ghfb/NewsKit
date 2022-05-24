@@ -49,21 +49,22 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
     useDismiss(context),
   ]);
 
-  // If tooltip is used as a label, add aria-labelledby to childrenProps and id to StyledTooltip;
-  // Because of above, 'aria-describedby' has different id for reference and floating, hence manually set below as well;
   const id = useId();
 
-  const titleIsString = typeof title === 'string';
+  const isTitleString = typeof title === 'string';
 
-  const labelOrDescProps = {} as {
+  const labelOrDescProps: {
     'aria-label'?: string | null;
     'aria-labelledby'?: string | null;
     'aria-describedby'?: string | null;
-  };
+  } = {};
 
+  // If tooltip is used as a label, add aria-label or aria-labelledby to childrenProps and id to StyledTooltip;
+  // aria-label is used when title is string; aria-labelledby is used when it's not a string;
+  // Because of above, 'aria-describedby' has different id for reference and floating, hence manually set below as well;
   if (asLabel) {
-    labelOrDescProps['aria-label'] = titleIsString ? title : null;
-    labelOrDescProps['aria-labelledby'] = open && !titleIsString ? id : null;
+    labelOrDescProps['aria-label'] = isTitleString ? title : null;
+    labelOrDescProps['aria-labelledby'] = open && !isTitleString ? id : null;
   } else {
     labelOrDescProps['aria-describedby'] = open ? id : null;
   }
@@ -88,7 +89,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
       )}
       {open && (
         <StyledTooltip
-          as={titleIsString ? 'p' : 'div'}
+          as={isTitleString ? 'p' : 'div'}
           {...getFloatingProps({
             ref: floating,
             id,
