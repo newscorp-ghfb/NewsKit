@@ -2,15 +2,15 @@ export default {
   audioPlayerVolumeControl: {
     slider: {
       track: {
-        stylePreset: 'volumeControlTrack',
+        stylePreset: 'audioPlayerVolumeControlTrack',
         size: 'sizing020',
-        length: '130px'
+        length: '130px',
       },
       indicator: {
-        stylePreset: 'volumeControlIndicator',
+        stylePreset: 'audioPlayerVolumeControlIndicator',
       },
       thumb: {
-        stylePreset: 'volumeControlThumb',
+        stylePreset: 'audioPlayerVolumeControlThumb',
         size: 'sizing040',
       },
     },
@@ -20,4 +20,4 @@ export default {
       size: 'small',
     },
   },
-}
+};

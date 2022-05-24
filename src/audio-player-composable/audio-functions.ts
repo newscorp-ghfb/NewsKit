@@ -45,9 +45,7 @@ export const useAudioFunctions = ({
       media_type: 'audio',
     };
     return live
-      ? // TODO remove ignore once in implemented live
-        /* istanbul ignore next */
-        playerData
+      ? playerData
       : {
           ...playerData,
           media_duration: formatTrackTime(duration),
@@ -196,8 +194,6 @@ export const useAudioFunctions = ({
 
       fireEvent(
         getTrackingInformation(
-          // TODO remove ignore once implemented live functionality
-          /* istanbul ignore next */
           live ? 'audio-player-stop-button' : 'audio-player-pause-button',
           EventTrigger.Click,
         ),

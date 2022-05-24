@@ -9,4 +9,5 @@ export interface PageIntroductionProps {
         illustration: string;
       }
     | ImageProps;
+  showSeparator?: boolean;
 }

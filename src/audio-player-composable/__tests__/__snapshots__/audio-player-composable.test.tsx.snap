@@ -571,7 +571,6 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 .emotion-15 {
   display: grid;
   grid-template-columns: auto 1fr;
-  width: 100%;
 }
 
 .emotion-16 {
@@ -649,7 +648,11 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   }
 }
 
-.emotion-22 {
+.emotion-21 {
+  width: 130px;
+}
+
+.emotion-23 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -666,7 +669,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   width: 100%;
 }
 
-.emotion-23 {
+.emotion-24 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -687,27 +690,27 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   cursor: pointer;
 }
 
-.emotion-23 svg {
+.emotion-24 svg {
   fill: #C0C0C0;
 }
 
-.emotion-23:hover:not(:disabled) {
+.emotion-24:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-23:hover:not(:disabled) svg {
+.emotion-24:hover:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-23:active:not(:disabled) {
+.emotion-24:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-23:active:not(:disabled) svg {
+.emotion-24:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-24 {
+.emotion-25 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -722,40 +725,40 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-24:hover:not(:disabled) {
+.emotion-25:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-24:disabled {
+.emotion-25:disabled {
   opacity: 0;
 }
 
-.emotion-24:hover:active:not(:disabled) {
+.emotion-25:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-24:valid:hover:not(:disabled) {
+.emotion-25:valid:hover:not(:disabled) {
   background-color: #148F39;
   opacity: 0.2;
 }
 
-.emotion-24:valid:hover:active:not(:disabled) {
+.emotion-25:valid:hover:active:not(:disabled) {
   background-color: #148F39;
   opacity: 0.4;
 }
 
-.emotion-24:invalid:hover:not(:disabled) {
+.emotion-25:invalid:hover:not(:disabled) {
   background-color: #D20600;
   opacity: 0.2;
 }
 
-.emotion-24:invalid:hover:active:not(:disabled) {
+.emotion-25:invalid:hover:active:not(:disabled) {
   background-color: #D20600;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-24 {
+  .emotion-25 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -763,14 +766,14 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-24 {
+  .emotion-25 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-26 {
+.emotion-27 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -803,34 +806,34 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   cursor: pointer;
 }
 
-.emotion-26 svg {
+.emotion-27 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-26 svg {
+.emotion-27 svg {
   fill: #3358CC;
 }
 
-.emotion-26:hover:not(:disabled) {
+.emotion-27:hover:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-26:active:not(:disabled) {
+.emotion-27:active:not(:disabled) {
   background-color: #AEBFFF;
 }
 
-.emotion-26:disabled {
+.emotion-27:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-26:disabled svg {
+.emotion-27:disabled svg {
   fill: #C0C0C0;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-26 {
+  .emotion-27 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -838,21 +841,21 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-26 {
+  .emotion-27 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-39 {
+.emotion-40 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-39 {
+  .emotion-40 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -860,7 +863,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-39 {
+  .emotion-40 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1006,49 +1009,53 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
         </div>
       </button>
       <div
-        class="emotion-0"
-        data-testid="volume-slider"
+        class="emotion-21"
       >
         <div
-          class="emotion-22"
-          data-testid="volume-slider-track"
-          style="background: rgb(255, 255, 0);"
-          values="0.7"
+          class="emotion-0"
+          data-testid="volume-slider"
         >
           <div
-            aria-describedby="volume-control-sr-only-message"
-            aria-label="Volume Control"
-            aria-orientation="horizontal"
-            aria-valuemax="1"
-            aria-valuemin="0"
-            aria-valuenow="0.7"
-            aria-valuetext="volume level 7 of 10"
             class="emotion-23"
-            data-testid="volume-slider-thumb"
-            draggable="false"
-            role="slider"
-            style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-            tabindex="0"
+            data-testid="volume-slider-track"
+            style="background: rgb(255, 255, 0);"
             values="0.7"
           >
-            <span
+            <div
+              aria-describedby="volume-control-sr-only-message"
+              aria-label="Volume Control"
+              aria-orientation="horizontal"
+              aria-valuemax="1"
+              aria-valuemin="0"
+              aria-valuenow="0.7"
+              aria-valuetext="volume level 7 of 10"
               class="emotion-24"
-              data-testid="volume-slider-feedback"
-            />
+              data-testid="volume-slider-thumb"
+              draggable="false"
+              role="slider"
+              style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+              tabindex="0"
+              values="0.7"
+            >
+              <span
+                class="emotion-25"
+                data-testid="volume-slider-feedback"
+              />
+            </div>
           </div>
         </div>
+        <span
+          aria-hidden="true"
+          class="emotion-4"
+          id="volume-control-sr-only-message"
+        >
+          Use the arrow keys to adjust volume
+        </span>
       </div>
-      <span
-        aria-hidden="true"
-        class="emotion-4"
-        id="volume-control-sr-only-message"
-      >
-        Use the arrow keys to adjust volume
-      </span>
     </div>
     <button
       aria-label="next"
-      class="emotion-26"
+      class="emotion-27"
       data-testid="audio-player-skip-next-button"
       type="button"
     >
@@ -1079,7 +1086,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
     </button>
     <button
       aria-label="previous"
-      class="emotion-26"
+      class="emotion-27"
       data-testid="audio-player-skip-previous-button"
       type="button"
     >
@@ -1110,7 +1117,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
     </button>
     <button
       aria-label="Fast forward for 10 seconds"
-      class="emotion-26"
+      class="emotion-27"
       data-testid="audio-player-forward-button"
       type="button"
     >
@@ -1122,7 +1129,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
         >
           <svg
             aria-hidden="true"
-            class="emotion-39"
+            class="emotion-40"
             fill="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -1138,7 +1145,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
     </button>
     <button
       aria-label="Rewind 10 seconds"
-      class="emotion-26"
+      class="emotion-27"
       data-testid="audio-player-replay-button"
       type="button"
     >
@@ -1150,7 +1157,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
         >
           <svg
             aria-hidden="true"
-            class="emotion-39"
+            class="emotion-40"
             fill="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -2815,7 +2822,6 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 .emotion-14 {
   display: grid;
   grid-template-columns: auto 1fr;
-  width: 100%;
 }
 
 .emotion-15 {
@@ -2918,7 +2924,11 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   }
 }
 
-.emotion-21 {
+.emotion-20 {
+  width: 130px;
+}
+
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2935,7 +2945,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   width: 100%;
 }
 
-.emotion-22 {
+.emotion-23 {
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
@@ -2956,27 +2966,27 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   cursor: pointer;
 }
 
-.emotion-22 svg {
+.emotion-23 svg {
   fill: #C0C0C0;
 }
 
-.emotion-22:hover:not(:disabled) {
+.emotion-23:hover:not(:disabled) {
   background-color: #2B4AAB;
 }
 
-.emotion-22:hover:not(:disabled) svg {
+.emotion-23:hover:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-22:active:not(:disabled) {
+.emotion-23:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-22:active:not(:disabled) svg {
+.emotion-23:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-23 {
+.emotion-24 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2991,40 +3001,40 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-23:hover:not(:disabled) {
+.emotion-24:hover:not(:disabled) {
   opacity: 0.2;
 }
 
-.emotion-23:disabled {
+.emotion-24:disabled {
   opacity: 0;
 }
 
-.emotion-23:hover:active:not(:disabled) {
+.emotion-24:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-23:valid:hover:not(:disabled) {
+.emotion-24:valid:hover:not(:disabled) {
   background-color: #148F39;
   opacity: 0.2;
 }
 
-.emotion-23:valid:hover:active:not(:disabled) {
+.emotion-24:valid:hover:active:not(:disabled) {
   background-color: #148F39;
   opacity: 0.4;
 }
 
-.emotion-23:invalid:hover:not(:disabled) {
+.emotion-24:invalid:hover:not(:disabled) {
   background-color: #D20600;
   opacity: 0.2;
 }
 
-.emotion-23:invalid:hover:active:not(:disabled) {
+.emotion-24:invalid:hover:active:not(:disabled) {
   background-color: #D20600;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-23 {
+  .emotion-24 {
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3032,14 +3042,14 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-23 {
+  .emotion-24 {
     transition-property: opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-25 {
+.emotion-26 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3072,34 +3082,34 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   cursor: pointer;
 }
 
-.emotion-25 svg {
+.emotion-26 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-25 svg {
+.emotion-26 svg {
   fill: #3358CC;
 }
 
-.emotion-25:hover:not(:disabled) {
+.emotion-26:hover:not(:disabled) {
   background-color: #E0E7FF;
 }
 
-.emotion-25:active:not(:disabled) {
+.emotion-26:active:not(:disabled) {
   background-color: #AEBFFF;
 }
 
-.emotion-25:disabled {
+.emotion-26:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-25:disabled svg {
+.emotion-26:disabled svg {
   fill: #C0C0C0;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-25 {
+  .emotion-26 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3107,21 +3117,21 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-25 {
+  .emotion-26 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-38 {
+.emotion-39 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-38 {
+  .emotion-39 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3129,7 +3139,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-38 {
+  .emotion-39 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3273,49 +3283,53 @@ exports[`Audio Player Composable should render with no errors 1`] = `
         </div>
       </button>
       <div
-        class="emotion-0"
-        data-testid="volume-slider"
+        class="emotion-20"
       >
         <div
-          class="emotion-21"
-          data-testid="volume-slider-track"
-          style="background: rgb(255, 255, 0);"
-          values="0.7"
+          class="emotion-0"
+          data-testid="volume-slider"
         >
           <div
-            aria-describedby="volume-control-sr-only-message"
-            aria-label="Volume Control"
-            aria-orientation="horizontal"
-            aria-valuemax="1"
-            aria-valuemin="0"
-            aria-valuenow="0.7"
-            aria-valuetext="volume level 7 of 10"
             class="emotion-22"
-            data-testid="volume-slider-thumb"
-            draggable="false"
-            role="slider"
-            style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-            tabindex="0"
+            data-testid="volume-slider-track"
+            style="background: rgb(255, 255, 0);"
             values="0.7"
           >
-            <span
+            <div
+              aria-describedby="volume-control-sr-only-message"
+              aria-label="Volume Control"
+              aria-orientation="horizontal"
+              aria-valuemax="1"
+              aria-valuemin="0"
+              aria-valuenow="0.7"
+              aria-valuetext="volume level 7 of 10"
               class="emotion-23"
-              data-testid="volume-slider-feedback"
-            />
+              data-testid="volume-slider-thumb"
+              draggable="false"
+              role="slider"
+              style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+              tabindex="0"
+              values="0.7"
+            >
+              <span
+                class="emotion-24"
+                data-testid="volume-slider-feedback"
+              />
+            </div>
           </div>
         </div>
+        <span
+          aria-hidden="true"
+          class="emotion-4"
+          id="volume-control-sr-only-message"
+        >
+          Use the arrow keys to adjust volume
+        </span>
       </div>
-      <span
-        aria-hidden="true"
-        class="emotion-4"
-        id="volume-control-sr-only-message"
-      >
-        Use the arrow keys to adjust volume
-      </span>
     </div>
     <button
       aria-label="next"
-      class="emotion-25"
+      class="emotion-26"
       data-testid="audio-player-skip-next-button"
       type="button"
     >
@@ -3346,7 +3360,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
     </button>
     <button
       aria-label="previous"
-      class="emotion-25"
+      class="emotion-26"
       data-testid="audio-player-skip-previous-button"
       type="button"
     >
@@ -3377,7 +3391,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
     </button>
     <button
       aria-label="Fast forward for 10 seconds"
-      class="emotion-25"
+      class="emotion-26"
       data-testid="audio-player-forward-button"
       type="button"
     >
@@ -3389,7 +3403,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="emotion-38"
+            class="emotion-39"
             fill="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -3405,7 +3419,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
     </button>
     <button
       aria-label="Rewind 10 seconds"
-      class="emotion-25"
+      class="emotion-26"
       data-testid="audio-player-replay-button"
       type="button"
     >
@@ -3417,7 +3431,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="emotion-38"
+            class="emotion-39"
             fill="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"

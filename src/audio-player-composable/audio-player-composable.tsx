@@ -32,7 +32,7 @@ import {AudioPlayerForwardButtonProps} from './components/forward-button/types';
 import {AudioPlayerReplayButtonProps} from './components/replay-button/types';
 import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/types';
 import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
-import { AudioPlayerVolumeControlProps } from './components/volume-control/types';
+import {AudioPlayerVolumeControlProps} from './components/volume-control/types';
 
 const defaultKeyboardShortcuts = {
   jumpToStart: ['0', 'Home'],
@@ -42,9 +42,7 @@ const defaultKeyboardShortcuts = {
 export const AudioPlayerComposable = ({
   children,
   src,
-  /* istanbul ignore next */
   autoPlay = false,
-  /* istanbul ignore next */
   live = false,
   ariaLandmark,
   keyboardShortcuts: keyboardShortcutsProp,
@@ -99,6 +97,7 @@ export const AudioPlayerComposable = ({
     setDuration,
     setVolume,
     src,
+    live,
   } as AudioFunctionDependencies);
 
   const getPlayPauseButtonProps = useCallback(
@@ -117,8 +116,6 @@ export const AudioPlayerComposable = ({
 
       if (playing) {
         ariaPressed = true;
-        // TODO remove ignore as we implement the "live" functionality back and write test for it
-        /* istanbul ignore next */
         if (canPause) {
           playStateIcon = <IconFilledPause />;
           ariaLabel = 'Pause';
@@ -209,23 +206,24 @@ export const AudioPlayerComposable = ({
     [currentTime, duration],
   );
 
-  const getVolumeControlProps = useCallback(({
-    vertical,
-    overrides,
-    muteKeyboardShortcuts,
-    collapsed,
-    initialVolume
-  }: AudioPlayerVolumeControlProps) => {
-    return {
+  const getVolumeControlProps = useCallback(
+    ({
+      vertical,
+      overrides,
+      muteKeyboardShortcuts,
+      collapsed,
+      initialVolume,
+    }: AudioPlayerVolumeControlProps) => ({
       muteKeyboardShortcuts,
       vertical,
       overrides: overrides || {},
       onChange: onChangeVolumeSlider,
       volume,
       collapsed,
-      initialVolume
-    } 
-  },[volume, onChangeVolumeSlider])
+      initialVolume,
+    }),
+    [volume, onChangeVolumeSlider],
+  );
 
   const getSkipPreviousButtonProps = useCallback(
     ({
@@ -277,7 +275,7 @@ export const AudioPlayerComposable = ({
       getSkipNextButtonProps,
       getForwardButtonProps,
       getReplayButtonProps,
-      getVolumeControlProps
+      getVolumeControlProps,
     }),
     [
       getVolumeControlProps,

@@ -12,6 +12,7 @@ import {MQ} from '../utils/style';
 import {NewsKitIconProps} from '../icons';
 import {BreakpointKeys} from '../theme/types';
 import {Override} from '../utils/overrides';
+import {LogicalMarginProps} from '../utils/logical-properties';
 
 type LoadingType = 'lazy' | 'eager';
 
@@ -24,7 +25,7 @@ export type ImageCommonProps = {
   overrides?: {
     height?: MQ<HeightProperty<string>>;
     width?: MQ<WidthProperty<string>>;
-  };
+  } & LogicalMarginProps;
 };
 
 interface ImageAlignmentProps {

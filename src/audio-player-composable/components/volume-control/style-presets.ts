@@ -1,13 +1,13 @@
 import {StylePreset} from '../../../theme/types';
 
 export default {
-  volumeControlIndicator: {
+  audioPlayerVolumeControlIndicator: {
     base: {
       backgroundColor: '{{colors.interactivePrimary030}}',
       borderRadius: '{{borders.borderRadiusPill}}',
     },
   },
-  volumeControlThumb: {
+  audioPlayerVolumeControlThumb: {
     base: {
       boxShadow: '{{shadows.shadow010}}',
       backgroundColor: '{{colors.interactivePrimary030}}',
@@ -26,7 +26,7 @@ export default {
       iconColor: '{{colors.inkSubtle}}',
     },
   },
-  volumeControlTrack: {
+  audioPlayerVolumeControlTrack: {
     base: {
       backgroundColor: '{{colors.interface030}}',
       borderRadius: '{{borders.borderRadiusPill}}',

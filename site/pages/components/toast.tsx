@@ -6,6 +6,10 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Mono} from '../../components/flags';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {
+  logicalMarginOverrideProps,
+  logicalPaddingOverrideProps,
+} from '../../components/component-api/common-logical-props';
 
 const playGroundActions = () => (
   <Button size="small" overrides={{stylePreset: 'toastButton'}}>
@@ -480,10 +484,11 @@ const ToastComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'spaceInset',
+              attribute: 'spaceInset(deprecated)',
               type: 'MQ<string>',
               default: 'spaceInset030',
-              description: 'Overrides the spaceInset of the Toast container.',
+              description:
+                'This property is deprecated. Use paddingInline and paddingBlock instead.',
             },
             {
               attribute: 'width',
@@ -569,6 +574,8 @@ const ToastComponent = (layoutProps: LayoutProps) => (
               description:
                 'Overrides the space between the icon and the content.',
             },
+            ...logicalMarginOverrideProps,
+            ...logicalPaddingOverrideProps,
           ],
         },
         {

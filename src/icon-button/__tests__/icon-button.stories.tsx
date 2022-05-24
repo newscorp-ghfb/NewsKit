@@ -255,3 +255,23 @@ export const StoryIconButtonLink = () => (
   </>
 );
 StoryIconButtonLink.storyName = 'icon-button-link';
+
+export const StoryIconButtonOverrides = () => (
+  <>
+    <StorybookSubHeading>Icon button overrides</StorybookSubHeading>
+    <Container>
+      <IconButton
+        aria-label="Email icon"
+        overrides={{
+          paddingInline: '50px',
+          paddingBlock: '30px',
+          marginInline: '50px',
+          marginBlock: '30px',
+        }}
+      >
+        <IconFilledEmail />
+      </IconButton>
+    </Container>
+  </>
+);
+StoryIconButtonOverrides.storyName = 'icon-button-overrides';
