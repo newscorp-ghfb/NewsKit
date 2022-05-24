@@ -152,20 +152,20 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         {
           name: 'Wrapper',
           description: 'Includes the list item(s)',
-          component: ['Grid, Cell'],
+          component: ['Grid, Block'],
           optional: undefined,
         },
         {
           name: 'List Item',
           description: 'Includes cells',
-          component: ['Grid, Cell'],
+          component: ['Cell, Block'],
           optional: undefined,
         },
         {
           name: 'Cell',
           description:
             'Content within the cells. Any component can be parsed to each cell (ReactNode)',
-          component: ['Grid, Cell'],
+          component: ['Cell, Block'],
           optional: undefined,
         },
         {
@@ -391,10 +391,8 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
               description: (
                 <>
                   If true, renders a{' '}
-                  <Link target="_blank" href="/components/divider">
-                    Divider
-                  </Link>{' '}
-                  component between structured list items in a Structured List
+                  <Link href="/components/divider">Divider</Link> component
+                  between structured list items in a Structured List
                 </>
               ),
             },
@@ -407,7 +405,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
               description: (
                 <>
                   If provided, this overrides the divider styling.{' '}
-                  <Link target="_blank" href="/components/divider">
+                  <Link href="/components/divider">
                     Refer to the Divider component for full documentation.
                   </Link>
                 </>
