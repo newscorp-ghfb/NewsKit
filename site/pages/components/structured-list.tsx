@@ -364,7 +364,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
     componentAPI={{
       components: [
         {
-          title: 'StructuredList',
+          title: 'Structured List',
           propsSummary:
             'The Structured List has a range of props that can be used to define an appropriate experience for different use cases.',
           overridesSummary:
@@ -393,6 +393,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
                   between structured list items in a Structured List
                 </>
               ),
+              required: true,
             },
           ],
           overridesRows: [
@@ -412,7 +413,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
           ],
         },
         {
-          title: 'StructuredListItem',
+          title: 'Structured List Item',
           propsSummary:
             'The Structured List Item has a range of props that can be used to define an appropriate experience for different use cases.',
           overridesSummary:
@@ -488,9 +489,9 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
           ],
         },
         {
-          title: 'StructuredListCell',
+          title: 'Structured List Cell',
           summary:
-            'The Structured List Item has a range of props that can be used to define an appropriate experience for different use cases.',
+            'The Structured List Cell has a range of props that can be used to define an appropriate experience for different use cases.',
           propsRows: [
             {
               name: 'children',
