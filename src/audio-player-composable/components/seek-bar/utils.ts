@@ -10,7 +10,7 @@ export const formatTrackData = (
   }
 
   const time = timeArr[0];
-  const bufferPositions = [];
+  const bufferPositions: {type: 'start' | 'end'; value: number}[] = [];
   const closestBuffer = [];
 
   const {length} = buffered;
