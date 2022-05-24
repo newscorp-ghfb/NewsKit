@@ -94,6 +94,7 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
             <FooterLink>
               <ConsentSettingsLink
                 privacyManagerId="407619"
+                gdpr
                 overrides={linkOverrides}
               >
                 Privacy policy
