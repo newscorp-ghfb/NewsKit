@@ -1,5 +1,6 @@
 import React from 'react';
 import {Block, TextBlock, Image, ImageProps} from 'newskit';
+import {Separator} from '../separator';
 import {Illustration} from '../illustrations/illustration-loader';
 import {PageIntroductionProps} from './types';
 import {ComponentPageCell, ComponentPageCellCompact} from '../layout-cells';
@@ -13,6 +14,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
   name,
   introduction,
   hero,
+  showSeparator,
 }) => (
   <>
     <ComponentPageCell>
@@ -65,7 +67,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
           hero && <Illustration path={hero.illustration} />
         )}
       </Block>
-      {/* <Block spaceStack="space060" /> */}
+      {showSeparator && <Separator />}
     </ComponentPageCell>
   </>
 );
