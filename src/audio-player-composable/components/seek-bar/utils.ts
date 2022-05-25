@@ -10,27 +10,48 @@ export const formatTrackData = (
   }
 
   const time = timeArr[0];
-  const bufferPositions = [];
+  const bufferPositions: {type: 'start' | 'end'; value: number}[] = [];
+  let closestBuffer: number = 0;
 
   const {length} = buffered;
   for (let i = 0; i < length; i += 1) {
-    const startPosition = buffered.start(i);
-    if (startPosition > time) {
-      bufferPositions.push(startPosition);
+    // get all buffer segments
+    bufferPositions.push({type: 'start', value: buffered.start(i)});
+    bufferPositions.push({type: 'end', value: buffered.end(i)});
+  }
+
+  if (bufferPositions.length) {
+    // get closest buffer segment to curser
+    const closest = bufferPositions.reduce((prev, curr) =>
+      Math.abs(curr.value - time) < Math.abs(prev.value - time) ? curr : prev,
+    );
+    // get index of closest buffer in array
+    const pos = bufferPositions.map(a => a.value).indexOf(closest.value);
+
+    let value;
+    if (closest.type === 'start') {
+      // if closest buffer is type start set the next end as value
+      value = bufferPositions[pos + 1].value;
     }
 
-    const endPosition = buffered.end(i);
-    if (endPosition > time) {
-      bufferPositions.push(endPosition);
+    if (closest.type === 'end' && closest.value > time) {
+      // if closest buffer is type end and greater then current time set as value
+      value = bufferPositions[pos].value;
+    }
+
+    if (value) {
+      // set value for buffer
+      closestBuffer = value;
     }
   }
 
   const colors = [
     indicatorColor,
-    ...bufferPositions.map((x, i) => (i % 2 ? trackColor : bufferColor)),
+    ...(closestBuffer ? [closestBuffer] : []).map(() => bufferColor),
     trackColor,
   ];
-  const values = [time, ...bufferPositions];
+
+  const values = closestBuffer ? [time, closestBuffer] : [time];
   return {colors, values};
 };
 
