@@ -1,6 +1,25 @@
-import {BaseSwitchIconProps, BaseSwitchProps} from '../base-switch/types';
+import {
+  BaseSwitchIconProps,
+  BaseSwitchOverrides,
+  BaseSwitchProps,
+} from '../base-switch/types';
+import {LogicalProps} from '../utils/logical-properties';
 
 export type RadioButtonIconProps = BaseSwitchIconProps;
+
+export type RadioButtonOverrides = {
+  spaceStack?: BaseSwitchOverrides['spaceStack'];
+  input?: Pick<
+    NonNullable<BaseSwitchOverrides['input']>,
+    'size' | 'stylePreset' | 'spaceInline' | 'transitionPreset'
+  >;
+  feedback?: Pick<
+    NonNullable<BaseSwitchOverrides['feedback']>,
+    'size' | 'stylePreset'
+  >;
+  label?: BaseSwitchOverrides['label'];
+  icon?: BaseSwitchOverrides['icon'];
+} & LogicalProps;
 
 export type RadioButtonProps = Omit<
   BaseSwitchProps,
@@ -9,7 +28,9 @@ export type RadioButtonProps = Omit<
   | 'type'
   | 'defaultChecked'
   | 'defaultValue'
->;
+  | 'overrides'
+  | 'hideFeedback'
+> & {overrides?: RadioButtonOverrides};
 
 export type RadioGroupContextValue = {
   name: string | undefined;

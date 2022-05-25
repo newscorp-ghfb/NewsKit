@@ -266,3 +266,11 @@ transitionPresets.growOnClick = {
     transitionDuration: '{{motions.motionDuration020}}',
   },
 };
+
+transitionPresets.shiftAbsolute = {
+  base: {
+    transitionProperty: 'inset',
+    transitionDuration: '{{motions.motionDuration020}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
+  },
+};
