@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {
   Divider,
   GridLayout,
+  IconButton,
   IconOutlinedLaunch,
   Menu,
   MenuGroup,
@@ -111,9 +112,10 @@ export const MenuMobileCollapsible = ({
           className={openPanelIds.includes(index) ? 'expanded' : 'collapsed'}
           key={title}
         >
+          {/* does this need to be wrapped in a button */}
           <TextBlock
-            as="h5"
-            aria-expanded={openPanelIds.includes(index) ? 'true' : 'false'}
+            role="button"
+            as="h3"
             marginInline="space060"
             marginBlock="space010"
             typographyPreset="utilityHeading020"
@@ -125,25 +127,45 @@ export const MenuMobileCollapsible = ({
           >
             <GridLayout columns="1fr auto" columnGap="20px">
               {title}
-
+              {/* Each title of each accordion header should be contained in an element with role=button.  */}
               {openPanelIds.includes(index) ? (
-                <IconExpandLess
-                  aria-haspopup="true"
-                  aria-expanded="true"
+                <IconButton
+                  aria-label="open button"
+                  aria-expanded={
+                    openPanelIds.includes(index) ? 'true' : 'false'
+                  }
+                  aria-controls="sect-1"
+                  id="accordion-1"
                   overrides={{
-                    size: 'iconSize020',
-                    stylePreset: 'inkContrast',
+                    stylePreset: 'iconButtonMinimalPrimary',
                   }}
-                />
+                >
+                  <IconExpandLess
+                    overrides={{
+                      size: 'iconSize020',
+                      stylePreset: 'inkContrast',
+                    }}
+                  />
+                </IconButton>
               ) : (
-                <IconExpandMore
-                  aria-haspopup="false"
-                  aria-expanded="false"
+                <IconButton
+                  aria-controls="sect-1"
+                  id="accordion-1"
+                  aria-label="close button"
+                  aria-expanded={
+                    openPanelIds.includes(index) ? 'true' : 'false'
+                  }
                   overrides={{
-                    size: 'iconSize020',
-                    stylePreset: 'inkContrast',
+                    stylePreset: 'iconButtonMinimalPrimary',
                   }}
-                />
+                >
+                  <IconExpandMore
+                    overrides={{
+                      size: 'iconSize020',
+                      stylePreset: 'inkContrast',
+                    }}
+                  />
+                </IconButton>
               )}
             </GridLayout>
           </TextBlock>
