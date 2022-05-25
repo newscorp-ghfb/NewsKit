@@ -312,8 +312,8 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         tableRows: [
           {
             order: 1,
-            element: 'listitem',
-            role: 'Focusses on the first List item in the Structured List',
+            element: 'List item',
+            role: 'Focusses on the first List item in the Structured List.',
           },
         ],
       },
