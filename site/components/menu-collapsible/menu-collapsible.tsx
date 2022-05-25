@@ -11,18 +11,15 @@ import {
   TextBlock,
 } from 'newskit';
 import {IconExpandLess, IconExpandMore} from '../icons';
-import {MenuCollapsible, MobileNavigationDivider} from './styled';
+import {MenuCollapsible, MobileNavigationDivider, StyledAnchor} from './styled';
 
 export const GitHubLaunch: React.FC = () => (
-  <GridLayout
-    columns="1fr 24px"
-    onClick={() => {
-      window.open('https://github.com/newscorp-ghfb/newskit', '', '');
-    }}
-  >
-    <P overrides={{typographyPreset: 'utilityLabel030'}}>Github</P>
-    <IconOutlinedLaunch overrides={{size: 'iconSize020'}} />
-  </GridLayout>
+  <StyledAnchor href="https://github.com/newscorp-ghfb/newskit">
+    <GridLayout columns="1fr 24px">
+      <P overrides={{typographyPreset: 'utilityLabel030'}}>Github</P>
+      <IconOutlinedLaunch overrides={{size: 'iconSize020'}} />
+    </GridLayout>
+  </StyledAnchor>
 );
 
 type NavProps = {

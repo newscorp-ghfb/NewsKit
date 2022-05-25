@@ -1,24 +1,11 @@
 import React, {useEffect, useRef} from 'react';
 import {useRouter} from 'next/router';
-import {
-  Block,
-  getSpacingCssFromTheme,
-  Menu,
-  MenuDivider,
-  MenuItem,
-  styled,
-  TextBlock,
-} from 'newskit';
+import {Block, Menu, MenuDivider, MenuItem} from 'newskit';
 import routes from '../../routes';
 import {Visible} from '../../../src/grid/visibility';
 import {MenuMobileCollapsible} from '../menu-collapsible/menu-collapsible';
 import {PageLinkProps, SiteMenuItemProps, SubNavProps} from './types';
-import {DesktopNavigationDivider} from './styled';
-
-const StyledTitle = styled(TextBlock)`
-  ${getSpacingCssFromTheme('marginLeft', 'space060')};
-  ${getSpacingCssFromTheme('marginBottom', 'space040')};
-`;
+import {DesktopNavigationDivider, StyledTitle} from './styled';
 
 const MenuTitleLinks: React.FC<PageLinkProps> = ({
   page,

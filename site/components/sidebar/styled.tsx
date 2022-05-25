@@ -7,12 +7,18 @@ import {
   getSpacingCssFromTheme,
   getStylePresetFromTheme,
   styled,
+  TextBlock,
 } from 'newskit';
 
 interface SidebarWrapperProps {
   open: boolean;
   hideSidebar?: boolean;
 }
+
+export const StyledTitle = styled(TextBlock)`
+  ${getSpacingCssFromTheme('marginLeft', 'space060')};
+  ${getSpacingCssFromTheme('marginBottom', 'space040')};
+`;
 
 export const DesktopNavigationDivider = styled.div`
   width: 100%;

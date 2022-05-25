@@ -6,6 +6,10 @@ import {MenuGroupProps, MenuProps} from '../../../src/menu/types';
 
 import {splitAriaProps} from '../../../src/utils/a11y';
 
+export const StyledAnchor = styled.a`
+  text-decoration: none;
+`;
+
 const StyledMenuCollapsible = styled.ul`
   list-style-type: none;
   margin: 0;
