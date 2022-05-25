@@ -8,6 +8,11 @@ import {ContentText} from '../../components/text-section/content-text';
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
+import {
+  logicalMarginOverrideProps,
+  logicalPaddingOverrideProps,
+  prefixLogicalProps,
+} from '../../components/component-api/common-logical-props';
 
 const commonPropsRows = [
   {
@@ -139,6 +144,8 @@ const commonOverridesRows = [
     description:
       'If provided, this overrides the inline space of the end enhancer.',
   },
+  ...prefixLogicalProps(logicalPaddingOverrideProps, 'button'),
+  ...prefixLogicalProps(logicalMarginOverrideProps, 'button'),
   {
     attribute: 'panel.stylePreset',
     type: 'MQ<string>',
@@ -174,6 +181,8 @@ const commonOverridesRows = [
     description:
       'If provided, this overrides the width property of the Modal panel.',
   },
+  ...prefixLogicalProps(logicalPaddingOverrideProps, 'panel'),
+  ...prefixLogicalProps(logicalMarginOverrideProps, 'panel'),
 ];
 
 const selectOptionOverrides = [
@@ -220,6 +229,8 @@ const selectOptionOverrides = [
     description:
       'If provided, this overrides the inline space of the Select option.',
   },
+  ...logicalMarginOverrideProps,
+  ...logicalPaddingOverrideProps,
 ];
 
 const selectOptionProps = [

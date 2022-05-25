@@ -13,6 +13,10 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Link} from '../../components/link';
+import {
+  logicalMarginOverrideProps,
+  logicalPaddingOverrideProps,
+} from '../../components/component-api/common-logical-props';
 
 const StructuredListComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -298,6 +302,14 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
                 </>
               ),
             },
+            {
+              attribute: 'width',
+              type: 'MQ<string>',
+              default: '100%',
+              description: 'Overrides width of the Structured List.',
+            },
+            ...logicalMarginOverrideProps,
+            ...logicalPaddingOverrideProps,
           ],
         },
         {
