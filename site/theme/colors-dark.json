@@ -67,7 +67,8 @@
     "illustrationInterface100": "{{colors.blue010}}",
     "illustrationAnatomySubtle": "{{colors.blue040}}",
     "illustrationAnatomyBorder010": "{{colors.blue080}}",
-    "illustrationAnatomyBorder020": "{{colors.blue040}}"
+    "illustrationAnatomyBorder020": "{{colors.blue040}}",
+    "interactiveFocus010": "{{colors.white}}"
   },
   "shadows": {
     "shadow010": "0 0 2px 0 rgba(10,10,10,0.28)",
