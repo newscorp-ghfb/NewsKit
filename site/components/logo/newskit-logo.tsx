@@ -22,7 +22,7 @@ interface StyledLogoProps {
 const LogoSvg = styled.svg<StyledLogoProps>`
   display: inline-block;
   ${getSpacingCssFromTheme('width', {xs: '125px', lg: '183px'})};
-  height: ${getSizingFromTheme('sizing070')};
+  height: ${getSizingFromTheme('sizing080')};
 `;
 
 const StyledText = styled.g`

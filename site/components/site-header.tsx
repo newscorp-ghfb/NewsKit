@@ -63,8 +63,8 @@ const Header = styled.header`
 
 const MobileMenu = styled.div`
   font-size: 0;
-  // align-self: center;
   ${getSpacingCssFromTheme('marginLeft', 'space040')};
+  ${getSpacingCssFromTheme('marginBottom', 'space010')};
 `;
 
 interface HeaderProps {
@@ -138,10 +138,17 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           <GridLayout
             data-testid="logo-container"
             columns={{xs: '50px 1fr 50px'}}
+            overrides={
+              {
+                // minHeight: '200px',
+              }
+            }
             alignItems="center"
             justifyItems="center"
           >
+            {/* <GridLayoutItem       alignItems="center"> */}
             {renderMobileNavigation(handleSidebarClick)}
+            {/* </GridLayoutItem> */}
             <Link
               type="standalone"
               href="/"
