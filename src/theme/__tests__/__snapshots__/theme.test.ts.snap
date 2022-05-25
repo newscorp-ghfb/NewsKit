@@ -611,6 +611,13 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+      },
+    },
     "slideBottom": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -2233,6 +2240,104 @@ Object {
     "minHeight": "sizing100",
     "spaceInset": "spaceInsetStretch040",
     "stylePreset": "structuredListItem",
+  },
+  "switch": Object {
+    "large": Object {
+      "feedback": Object {
+        "size": "sizing090",
+        "stylePreset": "feedback",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+          "opacityChange",
+        ],
+      },
+      "input": Object {
+        "blockSize": "sizing070",
+        "inlineSize": "76px",
+        "paddingInline": "space010",
+        "spaceInline": "space040",
+        "stylePreset": "switchTrack",
+      },
+      "label": Object {
+        "stylePreset": "controlLabel",
+        "typographyPreset": "utilityBody030",
+      },
+      "thumb": Object {
+        "size": "sizing060",
+        "spaceInset": "sizing010",
+        "stylePreset": "switchThumb",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+        ],
+      },
+      "trackIcon": Object {
+        "stylePreset": "switchTrackIcon",
+      },
+    },
+    "medium": Object {
+      "feedback": Object {
+        "size": "sizing080",
+        "stylePreset": "feedback",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+          "opacityChange",
+        ],
+      },
+      "input": Object {
+        "blockSize": "sizing060",
+        "inlineSize": "60px",
+        "paddingInline": "space010",
+        "spaceInline": "space030",
+        "stylePreset": "switchTrack",
+      },
+      "label": Object {
+        "stylePreset": "controlLabel",
+        "typographyPreset": "utilityBody020",
+      },
+      "thumb": Object {
+        "size": "sizing050",
+        "spaceInset": "sizing010",
+        "stylePreset": "switchThumb",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+        ],
+      },
+      "trackIcon": Object {
+        "stylePreset": "switchTrackIcon",
+      },
+    },
+    "small": Object {
+      "feedback": Object {
+        "size": "sizing070",
+        "stylePreset": "feedback",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+          "opacityChange",
+        ],
+      },
+      "input": Object {
+        "blockSize": "sizing050",
+        "inlineSize": "44px",
+        "paddingInline": "space010",
+        "spaceInline": "space030",
+        "stylePreset": "switchTrack",
+      },
+      "label": Object {
+        "stylePreset": "controlLabel",
+        "typographyPreset": "utilityBody020",
+      },
+      "thumb": Object {
+        "size": "sizing040",
+        "spaceInset": "sizing010",
+        "stylePreset": "switchThumb",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+        ],
+      },
+      "trackIcon": Object {
+        "stylePreset": "switchTrackIcon",
+      },
+    },
   },
   "tab": Object {
     "large": Object {
@@ -4466,6 +4571,33 @@ Object {
     },
     "hover": Object {
       "backgroundColor": "{{colors.interactiveSecondary010}}",
+    },
+  },
+  "switchThumb": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.inkInverse}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "iconColor": "{{colors.inkContrast}}",
+    },
+  },
+  "switchTrack": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interactiveInput020}}",
+      "borderRadius": "{{borders.borderRadiusPill}}",
+    },
+    "checked": Object {
+      "backgroundColor": "{{colors.interactiveInput040}}",
+    },
+    "disabled": Object {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+    },
+  },
+  "switchTrackIcon": Object {
+    "base": Object {
+      "iconColor": "{{colors.inkInverse}}",
+    },
+    "disabled": Object {
+      "iconColor": "{{colors.inkNonEssential}}",
     },
   },
   "tab": Object {
