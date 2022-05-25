@@ -24,6 +24,13 @@ export default {
       color: '{{colors.inkBrand010}}',
       iconColor: '{{colors.inkBrand010}}',
     },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+    },
   },
   buttonSolidSecondary: {
     base: {
@@ -148,6 +155,13 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactivePrimary020}}',
       borderStyle: 'none',
+    },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
     },
   },
   buttonOutlinedSecondary: {

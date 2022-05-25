@@ -27,6 +27,7 @@ export interface GetStylePresetFromThemeOptions {
   filterStates?: StylePresetStates[];
   omitStyles?: StylePresetStyleKeys[];
   filterStyles?: StylePresetStyleKeys[];
+  isFocusedVisible?: boolean;
 }
 
 /* When we are not on directly on a svg we need to add an
@@ -85,6 +86,7 @@ const getPresetStates = (
     isFocused = false,
     isHovered = false,
     isActive = false,
+    isFocusedVisible = false,
   } = options || {};
   const {selected, loading, invalid, valid, ...presetStates} =
     filterStates && filterStates.length
@@ -93,6 +95,7 @@ const getPresetStates = (
   const stateOverrides =
     (isDisabled && presetStates.disabled) ||
     (isLoading && loading) ||
+    (isFocusedVisible && presetStates['focus-visible']) ||
     (isFocused && presetStates.focus) ||
     (isHovered && presetStates.hover) ||
     (isActive && presetStates.active) ||
@@ -124,6 +127,9 @@ const getPresetStates = (
   if (isFocused) {
     forcedStates.push('focus');
   }
+  if (isFocusedVisible) {
+    forcedStates.push('focus-visible');
+  }
   if (isHovered) {
     forcedStates.push('hover');
   }
@@ -135,6 +141,7 @@ const getPresetStates = (
     const pseudoStates = [
       'hover',
       'focus',
+      'focus-visible',
       'active',
       'invalid',
       'valid',
@@ -172,6 +179,26 @@ const getPresetStates = (
   return presetStates;
 };
 
+const addSafariMediaTag = (
+  cssObject: CSSObject,
+  safariOutlineOffset: string,
+  safariOutlineStyle: string,
+) => {
+  const outlineOffset = safariOutlineOffset
+    ? {outlineOffset: safariOutlineOffset}
+    : {};
+  const outlineStyle = safariOutlineStyle
+    ? {outlineStyle: safariOutlineStyle}
+    : {};
+  // eslint-disable-next-line no-param-reassign
+  cssObject['@media not all and (min-resolution: 0.001dpcm)'] = {
+    '@supports (-webkit-appearance: none) and (stroke-color: transparent)': {
+      ...outlineOffset,
+      ...outlineStyle,
+    },
+  };
+};
+
 const getStylePresetValueFromTheme = (
   stylePreset: StylePreset,
   options?: GetStylePresetFromThemeOptions,
@@ -185,7 +212,20 @@ const getStylePresetValueFromTheme = (
             ? `:${stateKey} ${nestedCssSelector || ''}`
             : `:${stateKey}:not(:disabled) ${nestedCssSelector || ''}`;
 
-        const styles = getPresetStyles(presetState, options);
+        const {
+          safariOutlineOffset,
+          safariOutlineStyle,
+          ...styles
+        } = getPresetStyles(presetState, options);
+
+        if (safariOutlineOffset || safariOutlineStyle) {
+          addSafariMediaTag(
+            styles,
+            safariOutlineOffset as string,
+            safariOutlineStyle as string,
+          );
+        }
+
         if (stateKey === 'base') {
           if (nestedCssSelector) {
             acc[nestedCssSelector] = styles;

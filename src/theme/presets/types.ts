@@ -26,6 +26,12 @@ export interface StylePresetStyles {
   whiteSpace?: string;
   wordBreak?: string;
   opacity?: string;
+  outlineColor?: string;
+  outlineStyle?: string;
+  outlineWidth?: string;
+  outlineOffset?: string;
+  safariOutlineOffset?: string;
+  safariOutlineStyle?: string;
 }
 export type StylePresetStyleKeys = keyof StylePresetStyles;
 
@@ -80,6 +86,7 @@ export interface StylePreset {
   'invalid:hover:active'?: StylePresetStyles;
   'visited:hover'?: StylePresetStyles;
   'visited:focus'?: StylePresetStyles;
+  'focus-visible'?: StylePresetStyles;
 }
 export type StylePresetStates = keyof StylePreset;
 
