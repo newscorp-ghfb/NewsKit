@@ -55,6 +55,13 @@ export default {
       color: '{{colors.inkBase}}',
       iconColor: '{{colors.inkBase}}',
     },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+    },
   },
   buttonSolidNegative: {
     base: {
@@ -78,6 +85,13 @@ export default {
       backgroundColor: '{{colors.interactiveNegative020}}',
       color: '{{colors.inkNegative}}',
       iconColor: '{{colors.inkNegative}}',
+    },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
     },
   },
   buttonSolidPositive: {
@@ -103,6 +117,13 @@ export default {
       color: '{{colors.inkPositive}}',
       iconColor: '{{colors.inkPositive}}',
     },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+    },
   },
   buttonSolidInverse: {
     base: {
@@ -126,6 +147,13 @@ export default {
       backgroundColor: '{{colors.interactiveInverse020}}',
       color: '{{colors.inkInverse}}',
       iconColor: '{{colors.inkInverse}}',
+    },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
     },
   },
 
@@ -191,6 +219,13 @@ export default {
       backgroundColor: '{{colors.interactiveSecondary020}}',
       borderStyle: 'none',
     },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+    },
   },
   buttonOutlinedNegative: {
     base: {
@@ -218,6 +253,13 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactiveNegative020}}',
       borderStyle: 'none',
+    },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
     },
   },
   buttonOutlinedPositive: {
@@ -247,6 +289,13 @@ export default {
       backgroundColor: '{{colors.interactivePositive020}}',
       borderStyle: 'none',
     },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+    },
   },
   buttonOutlinedInverse: {
     base: {
@@ -275,6 +324,13 @@ export default {
       backgroundColor: '{{colors.interactiveInverse020}}',
       borderStyle: 'none',
     },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+    },
   },
 
   buttonMinimalPrimary: {
@@ -297,6 +353,13 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactivePrimary020}}',
     },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+    },
   },
   buttonMinimalSecondary: {
     base: {
@@ -317,6 +380,13 @@ export default {
     },
     loading: {
       backgroundColor: '{{colors.interactiveSecondary020}}',
+    },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
     },
   },
   buttonMinimalNegative: {
@@ -339,6 +409,13 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactiveNegative020}}',
     },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+    },
   },
   buttonMinimalPositive: {
     base: {
@@ -360,6 +437,13 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactivePositive020}}',
     },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+    },
   },
   buttonMinimalInverse: {
     base: {
@@ -380,6 +464,13 @@ export default {
     },
     loading: {
       backgroundColor: '{{colors.interactiveInverse020}}',
+    },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
     },
   },
 } as Record<string, StylePreset>;

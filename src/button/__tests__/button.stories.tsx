@@ -514,6 +514,13 @@ const myCustomTransitionPresets = createTheme({
         loading: {
           backgroundColor: '{{colors.interactivePrimary020}}',
         },
+        'focus-visible': {
+          outlineColor: '{{outline.outlineColorDefault}}',
+          outlineStyle: '{{outline.outlineStyleDefault}}',
+          outlineWidth: '{{outline.outlineWidthDefault}}',
+          outlineOffset: '{{outline.outlineOffsetDefault}}',
+          safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+        },
       },
     },
   },
