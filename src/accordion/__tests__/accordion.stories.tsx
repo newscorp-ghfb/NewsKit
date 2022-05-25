@@ -2,8 +2,7 @@ import * as React from 'react';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {Accordion} from '../accordion';
 import {TextBlock} from '../../text-block';
-import {Stack} from '../../stack';
-import {Button} from '../../button';
+import {IconFilledAccountBalance} from '../../icons';
 
 export default {
   title: 'NewsKit Light/accordion',
@@ -13,7 +12,12 @@ export default {
 export const StoryAccordion = () => (
   <>
     <StorybookHeading>Accordion</StorybookHeading>
-    <Accordion header={}>
+    <Accordion
+      headerText="Hello"
+      startEnhancer={
+        <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
+      }
+    >
       <TextBlock>This is a text block</TextBlock>
     </Accordion>
   </>

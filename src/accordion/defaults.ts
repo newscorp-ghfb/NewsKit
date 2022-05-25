@@ -5,8 +5,9 @@ export default {
       typographyPreset: 'utilityButton030',
       borderBottom: 'interface050',
       borderWidth: 'borderWidth010',
-      spaceInset: 'spaceInset030',
-      spaceInline: 'spaceInline020',
+      spaceInline: 'space020',
+      paddingBlock: 'spaceInset030',
+      paddingInline: 'spaceInset030',
       indicatorIcon: {
         stylePreset: 'inkBase',
       },
@@ -14,7 +15,7 @@ export default {
         stylePreset: 'inkBase',
         typographyPreset: 'utilityButton030',
       },
-      starEnhancer: {
+      startEnhancer: {
         stylePreset: 'inkBase',
       },
     },

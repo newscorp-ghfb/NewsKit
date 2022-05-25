@@ -5,20 +5,25 @@ import {
   getTypographyPreset,
   styled,
 } from '../utils';
+import {logicalProps} from '../utils/logical-properties';
 import {AccordionProps} from './types';
 
-export const StyledAccordionContainer = styled.div``;
+export const StyledAccodionContainer = styled.div``;
 
-export const StyledHeader = styled(TextBlock)<
-  Pick<AccordionProps, 'overrides'>
->`
-  ${getResponsiveSize('maxWidth', '', '', 'maxWidth')};
-  ${getResponsiveSize('maxHeight', '', '', 'maxHeight')};
+export const StyledHeader = styled.button`
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+  ${getResponsiveSize('minWidth', '', '', 'minWidth')};
+  ${getResponsiveSize('minHeight', '', '', 'minHeight')};
   ${getStylePreset('accordion.header', 'header')};
   ${getTypographyPreset('accordion.header', 'header')}
+  ${logicalProps('accordion.header')}
 `;
 
-// spaceInset: MQ<string>;
-// spaceInline: MQ<string>;
-// borderBottom?: MQ<string>;
-// borderWidth?: MQ<string>;
+export const StyledHeaderWrapper = styled(TextBlock)<
+  Pick<AccordionProps, 'overrides'>
+>``;
+
+export const StyledPanel = styled.div``;

@@ -5,6 +5,9 @@ export default {
     base: {
       backgroundColor: '{{colors.interface010}}',
       color: '{{colors.inkBase}}',
+      borderStyle: 'none none solid none',
+      borderColor: '{{colors.interface050}}',
+      borderWidth: '{{borders.borderWidth010}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInput010}}',
