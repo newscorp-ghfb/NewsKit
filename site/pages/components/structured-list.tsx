@@ -152,20 +152,20 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         {
           name: 'Wrapper',
           description: 'Includes the list item(s)',
-          component: ['Grid, Block'],
+          component: ['Grid', 'Block'],
           optional: undefined,
         },
         {
           name: 'List Item',
           description: 'Includes cells',
-          component: ['Cell, Block'],
+          component: ['Grid', 'Block'],
           optional: undefined,
         },
         {
           name: 'Cell',
           description:
             'Content within the cells. Any component can be parsed to each cell (ReactNode)',
-          component: ['Cell, Block'],
+          component: ['Grid', 'Block'],
           optional: undefined,
         },
         {
