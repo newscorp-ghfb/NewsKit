@@ -113,8 +113,8 @@ const MenuDesktop = ({path}: {path: string}) => {
         overrides={{spaceInline: 'space000'}}
       >
         {currentSection &&
-          currentSection.map(({subNav}) => (
-            <SiteMenuItem menuItemList={subNav} />
+          currentSection.map(({subNav, id}) => (
+            <SiteMenuItem menuItemList={subNav} key={id} />
           ))}
       </Menu>
     </>

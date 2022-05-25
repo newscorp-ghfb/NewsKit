@@ -1234,6 +1234,9 @@ Object {
     },
     "linkTopNavigation": Object {
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -1242,11 +1245,16 @@ Object {
         "textDecoration": "none",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderBottomColor": "{{colors.interactivePrimary030}}",
         "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -1418,6 +1426,9 @@ Object {
         "color": "{{colors.interactivePrimary050}}",
       },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -1426,9 +1437,7 @@ Object {
         "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
-        "borderLeftColor": "{{colors.interactivePrimary030}}",
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
@@ -3431,6 +3440,9 @@ Object {
     },
     "linkTopNavigation": Object {
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -3439,11 +3451,16 @@ Object {
         "textDecoration": "none",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderBottomColor": "{{colors.interactivePrimary030}}",
         "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -3615,6 +3632,9 @@ Object {
         "color": "{{colors.interactivePrimary050}}",
       },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -3623,9 +3643,7 @@ Object {
         "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
-        "borderLeftColor": "{{colors.interactivePrimary030}}",
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
@@ -5628,6 +5646,9 @@ Object {
     },
     "linkTopNavigation": Object {
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -5636,11 +5657,16 @@ Object {
         "textDecoration": "none",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderBottomColor": "{{colors.interactivePrimary030}}",
         "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -5812,6 +5838,9 @@ Object {
         "color": "{{colors.interactivePrimary050}}",
       },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -5820,9 +5849,7 @@ Object {
         "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
-        "borderLeftColor": "{{colors.interactivePrimary030}}",
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
@@ -7825,6 +7852,9 @@ Object {
     },
     "linkTopNavigation": Object {
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -7833,11 +7863,16 @@ Object {
         "textDecoration": "none",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderBottomColor": "{{colors.interactivePrimary030}}",
         "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -8009,6 +8044,9 @@ Object {
         "color": "{{colors.interactivePrimary050}}",
       },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -8017,9 +8055,7 @@ Object {
         "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
-        "borderLeftColor": "{{colors.interactivePrimary030}}",
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
@@ -10022,6 +10058,9 @@ Object {
     },
     "linkTopNavigation": Object {
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -10030,11 +10069,16 @@ Object {
         "textDecoration": "none",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderBottomColor": "{{colors.interactivePrimary030}}",
         "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -10206,6 +10250,9 @@ Object {
         "color": "{{colors.interactivePrimary050}}",
       },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -10214,9 +10261,7 @@ Object {
         "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
-        "borderLeftColor": "{{colors.interactivePrimary030}}",
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
@@ -12219,6 +12264,9 @@ Object {
     },
     "linkTopNavigation": Object {
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -12227,11 +12275,16 @@ Object {
         "textDecoration": "none",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderBottomColor": "{{colors.interactivePrimary030}}",
         "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -12403,6 +12456,9 @@ Object {
         "color": "{{colors.interactivePrimary050}}",
       },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -12411,9 +12467,7 @@ Object {
         "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
-        "borderLeftColor": "{{colors.interactivePrimary030}}",
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
@@ -14416,6 +14470,9 @@ Object {
     },
     "linkTopNavigation": Object {
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -14424,11 +14481,16 @@ Object {
         "textDecoration": "none",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderBottomColor": "{{colors.interactivePrimary030}}",
         "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -14600,6 +14662,9 @@ Object {
         "color": "{{colors.interactivePrimary050}}",
       },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -14608,9 +14673,7 @@ Object {
         "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
-        "borderLeftColor": "{{colors.interactivePrimary030}}",
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
@@ -16613,6 +16676,9 @@ Object {
     },
     "linkTopNavigation": Object {
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -16621,11 +16687,16 @@ Object {
         "textDecoration": "none",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderBottomColor": "{{colors.interactivePrimary030}}",
         "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -16797,6 +16868,9 @@ Object {
         "color": "{{colors.interactivePrimary050}}",
       },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
@@ -16805,9 +16879,7 @@ Object {
         "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "border": "4px solid transparent",
-        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
-        "borderLeftColor": "{{colors.interactivePrimary030}}",
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
         "color": "{{colors.interactivePrimary030}}",
         "textDecoration": "none",
       },
