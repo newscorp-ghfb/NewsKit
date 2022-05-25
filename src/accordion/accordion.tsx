@@ -3,45 +3,47 @@ import {withOwnTheme} from '../utils/with-own-theme';
 import {
   StyledAccodionContainer,
   StyledHeaderWrapper,
-  StyledHeader,
+  StyledAccordionButton,
   StyledPanel,
+  StyledEnhancer,
+  StyledIndicatorIcon,
+  StyledIndicatorLabel,
+  StyledDivider,
+  StyledHeaderText,
 } from './styled';
 import {AccordionProps} from './types';
 import defaults from './defaults';
 import stylePresets from './style-presets';
-import {IconFilledExpandMore} from '../icons';
-import {GridLayout, GridLayoutItem} from '../grid-layout';
 
 const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
-  ({headerText, headingAs = 'h3', startEnhancer, children}, ref) => (
+  (
+    {
+      headingAs = 'h3',
+      headerText,
+      label,
+      startEnhancer,
+      indicatorIcon,
+      applyDivider,
+      children,
+      overrides,
+    },
+    ref,
+  ) => (
     <StyledAccodionContainer ref={ref}>
       {headerText && (
         <StyledHeaderWrapper as={headingAs}>
-          <StyledHeader>
-            <GridLayout
-              columns="auto 1fr auto auto"
-              columnGap="space020"
-              overrides={{width: '100%'}}
-            >
-              {startEnhancer && (
-                <GridLayoutItem>{startEnhancer}</GridLayoutItem>
-              )}
-              <GridLayoutItem justifySelf="flex-start">
-                {headerText}
-              </GridLayoutItem>
-              <GridLayoutItem>Label</GridLayoutItem>
-              <GridLayoutItem>
-                <IconFilledExpandMore
-                  overrides={{
-                    size: 'sizing050',
-                  }}
-                />
-              </GridLayoutItem>
-            </GridLayout>
-          </StyledHeader>
+          <StyledAccordionButton overrides={overrides}>
+            {startEnhancer && <StyledEnhancer>{startEnhancer}</StyledEnhancer>}
+            {headerText && <StyledHeaderText>{headerText}</StyledHeaderText>}
+            {label && <StyledIndicatorLabel>{label}</StyledIndicatorLabel>}
+            {indicatorIcon && (
+              <StyledIndicatorIcon>{indicatorIcon}</StyledIndicatorIcon>
+            )}
+          </StyledAccordionButton>
         </StyledHeaderWrapper>
       )}
-      <StyledPanel>{children}</StyledPanel>
+      {applyDivider && <StyledDivider />}
+      <StyledPanel overrides={overrides}>{children}</StyledPanel>
     </StyledAccodionContainer>
   ),
 );

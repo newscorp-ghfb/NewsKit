@@ -21,6 +21,14 @@ export default {
   accordionDivider: {
     base: {
       backgroundColor: '{{colors.interface050}}',
+      borderWidth: '{{borders.borderWidth010}}',
+    },
+  },
+  accordionPanel: {
+    base: {
+      borderStyle: 'none none solid none',
+      borderColor: '{{colors.interface050}}',
+      borderWidth: '{{borders.borderWidth010}}',
     },
   },
 } as Record<string, StylePreset>;

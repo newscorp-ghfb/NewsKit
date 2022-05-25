@@ -1,15 +1,13 @@
-import {EnhancerOverrides} from '../form/types';
+import React from 'react';
 import {MQ} from '../utils';
 import {LogicalPaddingProps} from '../utils/logical-properties';
 
-export interface AccordionHeaderOverrides
-  extends EnhancerOverrides,
-    LogicalPaddingProps {
-  minWidth: MQ<string>;
-  minHeight: MQ<string>;
-  stylePreset: MQ<string>;
-  typographyPreset: MQ<string>;
-  spaceInline: MQ<string>;
+export interface AccordionHeaderOverrides extends LogicalPaddingProps {
+  minWidth?: MQ<string>;
+  minHeight?: MQ<string>;
+  stylePreset?: MQ<string>;
+  typographyPreset?: MQ<string>;
+  spaceInline?: MQ<string>;
   indicatorIcon?: {
     stylePreset: MQ<string>;
   };
@@ -35,6 +33,8 @@ export interface AccordionProps {
   applyDivider?: boolean;
   headerText?: Exclude<React.ReactNode, 'undefined'>;
   headingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
+  label?: string;
   startEnhancer?: React.ReactNode;
+  indicatorIcon?: React.ReactNode;
   overrides?: AccordionPropsOverrides;
 }

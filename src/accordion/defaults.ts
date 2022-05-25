@@ -19,13 +19,7 @@ export default {
         stylePreset: 'inkBase',
       },
     },
-    divider: {
-      stylePreset: 'accordionDivider',
-      size: 'borderWidth010',
-    },
-    panel: {
-      borderBottom: 'interface050',
-      borderWidth: 'borderWidth010',
-    },
+    divider: {stylePreset: 'accordionDivider'},
+    panel: {stylePreset: 'accordionPanel'},
   },
 };
