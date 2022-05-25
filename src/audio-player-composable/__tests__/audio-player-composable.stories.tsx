@@ -439,6 +439,26 @@ export const AudioSubComponents = () => (
         </GridLayoutItem>
       </GridLayout>
       <StorybookSubHeading>SeekBar</StorybookSubHeading> <AudioPlayerSeekBar />
+      <GridLayout
+        columns="1fr 1fr 1fr"
+        rows="1fr 1fr 1fr"
+        rowGap="10px"
+        columnGap="20px"
+      >
+        <GridLayoutItem>
+          <StorybookSubHeading>Volume Control</StorybookSubHeading>
+          <AudioPlayerVolumeControl />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Vertical Volume Control</StorybookSubHeading>
+          <AudioPlayerVolumeControl vertical />
+        </GridLayoutItem>
+
+        <GridLayoutItem>
+          <StorybookSubHeading>collapsed Volume Control</StorybookSubHeading>
+          <AudioPlayerVolumeControl collapsed />
+        </GridLayoutItem>
+      </GridLayout>
     </AudioPlayerComposable>
   </>
 );
@@ -697,7 +717,7 @@ export const AudioPlayerKeyboard = () => (
             </Areas.Next>
 
             <Areas.Volume alignSelf="center" justifySelf="start">
-              <AudioPlayerVolumeControl muteKeyboardShortcuts='y' />
+              <AudioPlayerVolumeControl muteKeyboardShortcuts="y" />
             </Areas.Volume>
 
             <Areas.SeekBar>
