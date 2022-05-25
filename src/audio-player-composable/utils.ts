@@ -49,7 +49,7 @@ export const useKeyboardShortcutsOnButton = ({
   const options = {target: audioSectionRef, preventDefault: false};
   const {keyboardShortcuts} = props;
   const key = keyboardShortcuts || defaultKeys;
-  
+
   const callback = action || props.onClick;
   useKeypress(key, callback, options);
 };

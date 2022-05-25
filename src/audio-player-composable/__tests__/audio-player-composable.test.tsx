@@ -67,7 +67,7 @@ const recordedAudioProps: AudioPlayerComposableProps = {
   ),
 };
 
-const AudioAndVolumeControlWithProps: AudioPlayerComposableProps = {
+const AudioPropsAndVolumeControlWithProps: AudioPlayerComposableProps = {
   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
   children: (
     <>
@@ -776,8 +776,10 @@ describe('Audio Player Composable', () => {
         AudioPlayerComposable,
         recordedAudioProps,
       );
-      const audioElement = getByTestId('audio-element') as any;
-
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const muteButton = getByTestId('mute-button');
+      muteButton.focus();
+      
       // Should default to 0.7
       expect(audioElement.volume).toEqual(0.7);
       // Mute with button click
@@ -787,26 +789,26 @@ describe('Audio Player Composable', () => {
       fireEvent.click(getByTestId('mute-button'));
       expect(audioElement.volume).toEqual(0.7);
 
-      // TODO to fix
-      // Mute with key press
-      fireEvent.keyDown(getByTestId('mute-button'), {
-        key: 'M',
-        code: 77,
-      });
+      userEvent.keyboard('m');
       expect(audioElement.volume).toEqual(0);
-
+       
       // Increase volume 0.1
-      fireEvent.keyDown(getByTestId('volume-control-thumb'), {
-        key: 'ArrowUp',
-        code: 38,
+      fireEvent.keyDown(getByTestId('volume-control-slider-thumb'), {
+        key: 'ArrowRight',
+        code: 39,
       });
       expect(audioElement.volume).toEqual(0.1);
     });
 
     it('should render correctly with props', () => {
       const props = {
-        ...AudioAndVolumeControlWithProps,
+        ...AudioPropsAndVolumeControlWithProps,
       };
+
+      // Clearing localStorage before render for allowing  
+      // InitialVolume to be used instead.
+      localStorage.clear();
+
       const {queryByTestId, getByTestId} = renderWithTheme(
         AudioPlayerComposable,
         props,
@@ -817,11 +819,12 @@ describe('Audio Player Composable', () => {
 
       // Slider should no exist, given that collapsed is set to true
       expect(volumeSlider).not.toBeInTheDocument();
-      // TODO to fix
+      
       // Initial volume should be 0.2, as by props
       expect(audioElement.volume).toBe(0.2);
     });
   });
+
   describe('Instrumentation tests', () => {
     test('should raise "end" event when the track has ended', () => {
       const fireEventSpy = jest.fn();

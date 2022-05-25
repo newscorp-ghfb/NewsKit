@@ -1013,11 +1013,11 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
       >
         <div
           class="emotion-0"
-          data-testid="volume-slider"
+          data-testid="volume-control-slider"
         >
           <div
             class="emotion-23"
-            data-testid="volume-slider-track"
+            data-testid="volume-control-slider-track"
             style="background: rgb(255, 255, 0);"
             values="0.7"
           >
@@ -1030,7 +1030,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
               aria-valuenow="0.7"
               aria-valuetext="volume level 7 of 10"
               class="emotion-24"
-              data-testid="volume-slider-thumb"
+              data-testid="volume-control-slider-thumb"
               draggable="false"
               role="slider"
               style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
@@ -1039,7 +1039,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
             >
               <span
                 class="emotion-25"
-                data-testid="volume-slider-feedback"
+                data-testid="volume-control-slider-feedback"
               />
             </div>
           </div>
@@ -3287,11 +3287,11 @@ exports[`Audio Player Composable should render with no errors 1`] = `
       >
         <div
           class="emotion-0"
-          data-testid="volume-slider"
+          data-testid="volume-control-slider"
         >
           <div
             class="emotion-22"
-            data-testid="volume-slider-track"
+            data-testid="volume-control-slider-track"
             style="background: rgb(255, 255, 0);"
             values="0.7"
           >
@@ -3304,7 +3304,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
               aria-valuenow="0.7"
               aria-valuetext="volume level 7 of 10"
               class="emotion-23"
-              data-testid="volume-slider-thumb"
+              data-testid="volume-control-slider-thumb"
               draggable="false"
               role="slider"
               style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
@@ -3313,7 +3313,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
             >
               <span
                 class="emotion-24"
-                data-testid="volume-slider-feedback"
+                data-testid="volume-control-slider-feedback"
               />
             </div>
           </div>

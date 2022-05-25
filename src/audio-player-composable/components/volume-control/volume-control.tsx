@@ -1,46 +1,43 @@
-import React, { useCallback, useState } from 'react'
-import { ScreenReaderOnly } from '../../../screen-reader-only';
-import { Slider } from '../../../slider';
-import { withOwnTheme } from '../../../utils/with-own-theme';
-import { getTokensForVolumeControl, useInitialVolume } from './utils';
-import { useAudioPlayerContext } from '../../context';
+import React, {useCallback, useState} from 'react';
+import {ScreenReaderOnly} from '../../../screen-reader-only';
+import {Slider} from '../../../slider';
+import {withOwnTheme} from '../../../utils/with-own-theme';
+import {getTokensForVolumeControl, useInitialVolume} from './utils';
+import {useAudioPlayerContext} from '../../context';
 import defaults from './defaults';
-import { MuteButton } from './mute-button';
-import { useTheme } from '../../../theme';
+import {MuteButton} from './mute-button';
+import {useTheme} from '../../../theme';
 import stylePresets from './style-presets';
-import { AudioPlayerVolumeControlProps } from './types';
-import { GridLayout } from '../../../grid-layout';
-import { getResponsiveSize, styled } from '../../../utils/style';
+import {AudioPlayerVolumeControlProps} from './types';
+import {GridLayout} from '../../../grid-layout';
+import {getResponsiveSize, styled} from '../../../utils/style';
 
 // TODO handle vertical
 const VolumeSliderContainer = styled.div<{vertical?: boolean}>`
-  ${({vertical}) => (
+  ${({vertical}) =>
     getResponsiveSize(
-      vertical ? 'height' : 'width', 
+      vertical ? 'height' : 'width',
       'audioPlayerVolumeControl.slider.track',
       'slider.track',
       'length',
-    ) 
-  )}
-`
+    )}
+`;
 
-const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps> = (
-  props
-) => {
-  const { getVolumeControlProps } = useAudioPlayerContext();
-  const { 
-    volume, 
-    onChange, 
-    vertical, 
-    collapsed = false, 
-    muteKeyboardShortcuts, 
-    overrides, 
-    initialVolume = 0.7
-  } = getVolumeControlProps!(props)
+const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps> = props => {
+  const {getVolumeControlProps} = useAudioPlayerContext();
+  const {
+    volume,
+    onChange,
+    vertical,
+    collapsed = false,
+    muteKeyboardShortcuts,
+    overrides,
+    initialVolume = 0.7,
+  } = getVolumeControlProps!(props);
 
   const [unMutedVolume, setUnMutedVolume] = useState(volume);
 
-  // Saves the volume into a state, 
+  // Saves the volume into a state,
   // for re-using it when clicking the mute unmute button.
   if (unMutedVolume !== volume && volume > 0) {
     setUnMutedVolume(volume);
@@ -61,12 +58,12 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
   const onSliderChange = useCallback(([newVolume]) => onChange(newVolume), [
     onChange,
   ]);
-  
+
   // useInitialVolume Sets the initial volume on page load
-  useInitialVolume({onChange, initialVolume})
+  useInitialVolume({onChange, initialVolume});
 
   return (
-    <GridLayout columns={`auto 1fr`}>
+    <GridLayout columns="auto 1fr">
       <MuteButton
         volume={volume}
         unMutedVolume={unMutedVolume}
@@ -76,7 +73,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
         iconSize={iconSize}
         muteKeyboardShortcuts={muteKeyboardShortcuts}
       />
-      {!collapsed && 
+      {!collapsed && (
         <VolumeSliderContainer>
           <Slider
             vertical={vertical}
@@ -87,8 +84,8 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
             onChange={onSliderChange}
             ariaLabel="Volume Control"
             ariaValueText={`volume level ${[volume][0] * 10} of 10`}
-            dataTestId="volume-slider"
-            ariaDescribedBy={'volume-control-sr-only-message'}
+            dataTestId="volume-control-slider"
+            ariaDescribedBy="volume-control-sr-only-message"
             overrides={{
               track: {
                 stylePreset: sliderTrackStylePreset,
@@ -100,18 +97,21 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
               thumb: {
                 stylePreset: sliderThumbStylePreset,
                 size: thumbSize,
-              }
+              },
             }}
           />
-          <ScreenReaderOnly id={'volume-control-sr-only-message'} aria-hidden="true">
+          <ScreenReaderOnly
+            id="volume-control-sr-only-message"
+            aria-hidden="true"
+          >
             Use the arrow keys to adjust volume
           </ScreenReaderOnly>
         </VolumeSliderContainer>
-      }
-     </GridLayout>
-  )
-}
+      )}
+    </GridLayout>
+  );
+};
 
 export const AudioPlayerVolumeControl = withOwnTheme(
-  ThemelessAudioPlayerVolumeControl
-)({ defaults, stylePresets })
+  ThemelessAudioPlayerVolumeControl,
+)({defaults, stylePresets});

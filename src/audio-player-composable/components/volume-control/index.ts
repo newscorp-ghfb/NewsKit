@@ -1,2 +1,2 @@
-export * from './volume-control'
-export * from './types'
+export * from './volume-control';
+export * from './types';

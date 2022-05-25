@@ -1,8 +1,8 @@
-import React from 'react'
-import { IconButton } from '../../../icon-button';
-import { IconFilledVolumeDown, IconFilledVolumeOff } from '../../../icons';
-import { useKeyboardShortcutsOnButton } from '../../utils';
-import { MuteButtonProps } from './types';
+import React from 'react';
+import {IconButton} from '../../../icon-button';
+import {IconFilledVolumeDown, IconFilledVolumeOff} from '../../../icons';
+import {useKeyboardShortcutsOnButton} from '../../utils';
+import {MuteButtonProps} from './types';
 
 const toggleMute = (
   volume: number,
@@ -17,13 +17,14 @@ export const MuteButton: React.FC<MuteButtonProps> = ({
   volumeControlButtonStylePreset,
   iconSize,
   size,
-  muteKeyboardShortcuts
+  muteKeyboardShortcuts,
 }) => {
-
   useKeyboardShortcutsOnButton({
-    props: { 
-      keyboardShortcuts: muteKeyboardShortcuts, 
-      onClick: () => {toggleMute(volume, unMutedVolume, onChange)}
+    props: {
+      keyboardShortcuts: muteKeyboardShortcuts,
+      onClick: () => {
+        toggleMute(volume, unMutedVolume, onChange);
+      },
     },
     defaults: 'm',
   });
@@ -41,5 +42,5 @@ export const MuteButton: React.FC<MuteButtonProps> = ({
     >
       {volume === 0 ? <IconFilledVolumeOff /> : <IconFilledVolumeDown />}
     </IconButton>
-  )
+  );
 };

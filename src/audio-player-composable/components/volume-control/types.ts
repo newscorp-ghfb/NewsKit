@@ -1,6 +1,6 @@
-import { ButtonSize } from "../../../button";
-import { SliderOverrideProps } from "../../../slider";
-import { MQ } from "../../../utils";
+import {ButtonSize} from '../../../button';
+import {SliderOverrideProps} from '../../../slider';
+import {MQ} from '../../../utils';
 
 export interface VolumeControlOverridesPropsComposable {
   slider?: SliderOverrideProps;

@@ -39,6 +39,55 @@ const myCustomTheme = createTheme({
   name: 'my-custom-audio-player-theme',
   overrides: {
     stylePresets: {
+      customTrackStylePreset: {
+        base: {
+          backgroundColor: 'red',
+          borderColor: 'blue',
+          borderWidth: '1px',
+          borderStyle: 'solid',
+        },
+      },
+      customIndicatorStylePreset: {
+        base: {
+          backgroundColor: 'yellow',
+        },
+      },
+      customThumbStylePreset: {
+        base: {
+          backgroundColor: 'green',
+          borderColor: 'black',
+          borderWidth: '2px',
+          borderStyle: 'solid',
+        },
+      },
+      customThumbLabelStylePreset: {
+        base: {
+          borderColor: 'black',
+          borderWidth: '1px',
+          borderRadius: '999px',
+          borderStyle: 'dashed',
+          color: 'green',
+        },
+      },
+      customLabelStylePreset: {
+        base: {
+          borderColor: 'purple',
+          borderWidth: '2px',
+          borderRadius: '999px',
+          borderStyle: 'dashed',
+          color: 'purple',
+        },
+      },
+      customButtonStylePreset: {
+        base: {
+          borderColor: 'purple',
+          borderWidth: '2px',
+          borderRadius: '999px',
+          borderStyle: 'dashed',
+          iconColor: 'purple',
+          backgroundColor: '{{colors.interface010}}',
+        },
+      },
       customAudioPlayerThumb: {
         base: {
           backgroundColor: '#f6807e',
@@ -469,9 +518,35 @@ export const AudioPlayerOverrides = () => (
             </Areas.Next>
 
             <Areas.Volume alignSelf="center" justifySelf="start">
-              <Hidden xs sm>
-                Not yet
-              </Hidden>
+              <AudioPlayerVolumeControl
+                overrides={{
+                  slider: {
+                    track: {
+                      stylePreset: 'customTrackStylePreset',
+                      size: 'sizing020',
+                    },
+                    indicator: {
+                      stylePreset: 'customIndicatorStylePreset',
+                    },
+                    thumb: {
+                      stylePreset: 'customThumbStylePreset',
+                      size: 'sizing040',
+                    },
+                    labels: {
+                      stylePreset: 'customLabelStylePreset',
+                      space: 'spacing060',
+                    },
+                    thumbLabel: {
+                      stylePreset: 'customThumbLabelStylePreset',
+                    },
+                  },
+                  button: {
+                    stylePreset: 'customButtonStylePreset',
+                    iconSize: 'iconSize020',
+                    size: ButtonSize.Small,
+                  },
+                }}
+              />
             </Areas.Volume>
 
             <Areas.SeekBar>
@@ -565,6 +640,8 @@ export const AudioPlayerKeyboard = () => (
       <dd>Forward 10sec</dd>
       <dt>j</dt>
       <dd>Replay 10 sec</dd>
+      <dt>m</dt>
+      <dd>mute / unmute volume</dd>
     </GridLayout>
     <Block marginBlockEnd="space090" />
 
@@ -620,9 +697,7 @@ export const AudioPlayerKeyboard = () => (
             </Areas.Next>
 
             <Areas.Volume alignSelf="center" justifySelf="start">
-              <Hidden xs sm>
-                Not yet
-              </Hidden>
+              <AudioPlayerVolumeControl muteKeyboardShortcuts='y' />
             </Areas.Volume>
 
             <Areas.SeekBar>
@@ -672,6 +747,8 @@ export const AudioPlayerKeyboard = () => (
       <dd>Forward 10sec</dd>
       <dt>a</dt>
       <dd>Replay 10 sec</dd>
+      <dt>y</dt>
+      <dd>mute / unmute volume</dd>
     </GridLayout>
   </>
 );
