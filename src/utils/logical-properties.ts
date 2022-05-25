@@ -1,4 +1,4 @@
-import {CSSObject, getXFromTheme, MQ} from './style';
+import {CSSObject, getTypographyPreset, getXFromTheme, MQ} from './style';
 import {ThemeProp} from './style-types';
 import {deepMerge} from './deep-merge';
 import {get} from './get';
@@ -151,3 +151,19 @@ export const omitLogicalPropsFromOverrides = (overrides: object | undefined) =>
 export const extractLogicalPropsFromOverrides = (
   overrides: object | undefined,
 ) => filterObject(overrides || {}, logicalPropsArray as keyof object);
+
+// TypographyPreset and spacing logical props can both set padding. This is a
+// helper function that takes the TypographyPreset padding value unless there is
+// another value set in the component defaults or overrides.
+export const getLogicalPropsAndTypographyPreset = (
+  defaultsPath?: string,
+  overridesPath?: string,
+) => (props: ThemeProp): CSSObject => {
+  const padding = logicalPadding(props, defaultsPath, overridesPath);
+  const margins = logicalMargins(props, defaultsPath, overridesPath);
+  const typographyPreset = getTypographyPreset(defaultsPath, overridesPath, {
+    // Only apply the crop padding if there are no padding overrides.
+    withCrop: !Object.keys(padding).length,
+  })(props);
+  return deepMerge(margins, padding, typographyPreset);
+};
