@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import {
   Divider,
   GridLayout,
-  GridLayoutItem,
   IconOutlinedLaunch,
   Menu,
   MenuGroup,
@@ -20,12 +19,8 @@ export const GitHubLaunch: React.FC = () => (
       window.open('https://github.com/newscorp-ghfb/newskit', '', '');
     }}
   >
-    <GridLayoutItem>
-      <P overrides={{typographyPreset: 'utilityLabel030'}}>Github</P>
-    </GridLayoutItem>
-    <GridLayoutItem>
-      <IconOutlinedLaunch overrides={{size: 'iconSize020'}} />
-    </GridLayoutItem>
+    <P overrides={{typographyPreset: 'utilityLabel030'}}>Github</P>
+    <IconOutlinedLaunch overrides={{size: 'iconSize020'}} />
   </GridLayout>
 );
 
@@ -42,13 +37,7 @@ type SubNavProps = {
 
 type SubNavItemProps = NavProps & SubNavProps;
 
-// const StyledMenuItem = styled(MenuItem)`
-//   [class~='nk-menu-item']:last-of-type {
-//     ${getSpacingCssFromTheme('marginBottom', 'space060')};
-//   }
-// `;
-
-export const MenuNavCollapsible = ({
+export const MenuMobileCollapsible = ({
   path,
   menu,
 }: {
@@ -68,39 +57,24 @@ export const MenuNavCollapsible = ({
           <React.Fragment key={id}>
             {page ? (
               <>
-                {title.includes('Getting started') ||
-                title.includes('Overview') ? (
-                  <MenuItem
-                    href={id}
-                    selected={path.includes(id)}
-                    overrides={{
-                      minHeight: '40px',
-                      stylePreset: 'sideBarNavigation',
-                      typographyPreset: 'utilityButton020',
-                      paddingInline: 'space070',
-                      marginBlockEnd: 'space030',
-                    }}
-                    size="small"
-                  >
-                    {title}
-                  </MenuItem>
-                ) : (
-                  <>
-                    <MenuItem
-                      href={id}
-                      selected={path.includes(id)}
-                      overrides={{
-                        minHeight: '40px',
-                        stylePreset: 'sideBarNavigation',
-                        typographyPreset: 'utilityButton020',
-                        paddingInline: 'space070',
-                      }}
-                      size="small"
-                    >
-                      {title}
-                    </MenuItem>
-                  </>
-                )}
+                <MenuItem
+                  href={id}
+                  selected={path.includes(id)}
+                  overrides={{
+                    minHeight: '40px',
+                    stylePreset: 'sideBarNavigation',
+                    typographyPreset: 'utilityButton020',
+                    paddingInline: 'space070',
+                    marginBlockEnd:
+                      title.includes('Getting started') ||
+                      title.includes('Overview')
+                        ? 'space030'
+                        : undefined,
+                  }}
+                  size="small"
+                >
+                  {title}
+                </MenuItem>
               </>
             ) : (
               <>

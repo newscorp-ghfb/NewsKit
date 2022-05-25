@@ -11,7 +11,7 @@ import {
 } from 'newskit';
 import routes from '../../routes';
 import {Visible} from '../../../src/grid/visibility';
-import {MenuNavCollapsible} from '../menu-collapsible/menu-collapsible';
+import {MenuMobileCollapsible} from '../menu-collapsible/menu-collapsible';
 import {PageLinkProps, SiteMenuItemProps, SubNavProps} from './types';
 import {DesktopNavigationDivider} from './styled';
 
@@ -20,7 +20,7 @@ const StyledTitle = styled(TextBlock)`
   ${getSpacingCssFromTheme('marginBottom', 'space040')};
 `;
 
-const PageMenuLinks: React.FC<PageLinkProps> = ({
+const MenuTitleLinks: React.FC<PageLinkProps> = ({
   page,
   active,
   href,
@@ -64,16 +64,14 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
                 {title.includes('Overview') ||
                 title.includes('Getting started') ? undefined : (
                   <>
-                    <PageMenuLinks active={path.includes(id)} href={id}>
+                    <MenuTitleLinks active={path.includes(id)} href={id}>
                       {title}
-                    </PageMenuLinks>
+                    </MenuTitleLinks>
                   </>
                 )}
               </>
             ) : (
               <>
-                {/* I cant get the first item in the array
-              as this returns each title individually  */}
                 {title === 'Foundation' ||
                 title === 'Actions & Inputs' ||
                 title === 'Design' ? (
@@ -92,8 +90,6 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
                 </StyledTitle>
 
                 <SiteMenuItem menuItemList={subNav as SubNavProps} />
-
-                {/* added this cause last item needs space */}
               </>
             )}
           </React.Fragment>
@@ -102,7 +98,7 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
   );
 };
 
-const MenuNavDesktop = ({path}: {path: string}) => {
+const MenuDesktop = ({path}: {path: string}) => {
   const currentRoute = path.match(/\/[A-z\d-]*/g);
   const currentSection =
     currentRoute && routes.filter(({id}) => id === currentRoute[0]);
@@ -131,10 +127,10 @@ export const SidebarNav = () => {
   return (
     <>
       <Visible xs sm md>
-        <MenuNavCollapsible path={path} menu={routes} />
+        <MenuMobileCollapsible path={path} menu={routes} />
       </Visible>
       <Visible lg xl>
-        <MenuNavDesktop path={path} />
+        <MenuDesktop path={path} />
         <Block spaceStack="space060" />
       </Visible>
     </>

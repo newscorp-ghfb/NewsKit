@@ -73,7 +73,7 @@ export const MenuCollapsible = React.forwardRef<
   );
 });
 export const MobileNavigationDivider = styled.div`
-  width: 100vw;
+  width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
 

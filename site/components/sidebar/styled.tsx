@@ -15,7 +15,7 @@ interface SidebarWrapperProps {
 }
 
 export const DesktopNavigationDivider = styled.div`
-  width: 100vw;
+  width: 100%;
   position: relative;
 
   ${getSpacingCssFromTheme('marginTop', 'space045')};
