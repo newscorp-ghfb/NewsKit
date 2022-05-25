@@ -57,6 +57,7 @@ Object {
     "blue090": "#213A5F",
     "blue100": "#192C48",
     "disabled": "{{colors.neutral090}}",
+    "focus010": "#3768FB",
     "green010": "#E6FAEB",
     "green020": "#B8EFC8",
     "green030": "#8EE1A6",
@@ -88,6 +89,7 @@ Object {
     "interactive240": "{{colors.blue090}}",
     "interactive250": "{{colors.blue100}}",
     "interactiveDisabled010": "{{colors.neutral090}}",
+    "interactiveFocus010": "{{colors.focus010}}",
     "interactiveInput010": "{{colors.neutral010}}",
     "interactiveInput020": "{{colors.neutral040}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -289,6 +291,14 @@ Object {
     "motionTimingLinear": "linear",
   },
   "name": "newskit-dark",
+  "outline": Object {
+    "outlineColorDefault": "{{colors.interactiveFocus010}}",
+    "outlineOffsetDefault": "{{borders.borderWidth020}}",
+    "outlineStyleDefault": "solid",
+    "outlineWidthDefault": "{{borders.borderWidth020}}",
+    "safariOutlineOffsetDefault": "{{borders.borderWidth020}}",
+    "safariOutlineStyleDefault": "auto",
+  },
   "overlays": Object {
     "opacity000": "0",
     "opacity010": "0.1",
@@ -3008,6 +3018,13 @@ Object {
       "color": "{{colors.inkNonEssential}}",
       "iconColor": "{{colors.inkNonEssential}}",
     },
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
+    },
     "hover": Object {
       "backgroundColor": "{{colors.interactivePrimary010}}",
       "borderColor": "{{colors.interactivePrimary040}}",
@@ -3131,6 +3148,13 @@ Object {
       "backgroundColor": "{{colors.interactiveDisabled010}}",
       "color": "{{colors.inkNonEssential}}",
       "iconColor": "{{colors.inkNonEssential}}",
+    },
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "backgroundColor": "{{colors.interactivePrimary040}}",
@@ -4346,6 +4370,13 @@ Object {
       "borderColor": "{{colors.interactiveDisabled010}}",
     },
     "focus": Object {},
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
+    },
     "focus:hover": Object {
       "backgroundColor": "{{colors.interactiveInput030}}",
       "borderColor": "{{colors.interactiveInput050}}",

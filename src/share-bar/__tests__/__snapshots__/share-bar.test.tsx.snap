@@ -1048,6 +1048,21 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-12:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-12:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-12 {
     transition-property: background-color;
@@ -1450,6 +1465,21 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-12:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-12:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-12 {
     transition-property: background-color;
@@ -1847,6 +1877,21 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-12:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-12:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-12 {
     transition-property: background-color;
@@ -2242,6 +2287,21 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 
 .emotion-12:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-12:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2695,6 +2755,21 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-12:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-12:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-12 {
     transition-property: background-color;
@@ -3101,6 +3176,21 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-12:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-12:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-12 {
     transition-property: background-color;
@@ -3505,6 +3595,21 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 
 .emotion-12:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-12:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

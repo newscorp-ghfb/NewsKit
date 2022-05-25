@@ -3250,9 +3250,6 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
   align-items: center;
   background-color: #CCCCCC;
   border-radius: 20rem;
-  outline: 5px auto Highlight;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: 3px;
   z-index: 2;
   padding-inline: 4px;
 }

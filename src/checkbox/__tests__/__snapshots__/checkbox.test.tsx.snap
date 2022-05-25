@@ -3169,19 +3169,11 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   border-width: 2px;
   border-radius: 4px;
   border-style: solid;
-  outline: 5px auto Highlight;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: 3px;
   z-index: 2;
 }
 
 .emotion-3 svg {
   fill: #FFFFFF;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-color: #2B4AAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

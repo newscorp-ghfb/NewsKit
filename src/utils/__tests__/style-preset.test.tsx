@@ -731,6 +731,28 @@ describe('getStylePresetFromTheme', () => {
     });
   });
 
+  test(`renders with focus-visible state when isFocusedVisible is true`, () => {
+    const fragment = renderToFragmentWithTheme(
+      TestSurfaceCheckbox,
+      {
+        isFocusedVisible: true,
+      },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            checkboxInput: deepMerge({}, checkboxInput, {
+              'focus-visible': {
+                safariOutlineOffset: '5px',
+              },
+            }),
+          },
+        },
+      }),
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('with isSvg ', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,
