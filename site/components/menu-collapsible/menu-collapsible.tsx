@@ -65,7 +65,7 @@ export const MenuMobileCollapsible = ({
                     minHeight: '40px',
                     stylePreset: 'sideBarNavigation',
                     typographyPreset: 'utilityButton020',
-                    paddingInline: 'space070',
+                    paddingInline: 'space090',
                     marginBlockEnd:
                       title.includes('Getting started') ||
                       title.includes('Overview')
@@ -85,9 +85,10 @@ export const MenuMobileCollapsible = ({
                     title: {
                       typographyPreset: 'utilityHeading010',
                       stylePreset: 'sidebarHeader',
+                      // paddingInline: 'space070',
                       //  marginInline: 'space030',
                       spaceInline: 'space030',
-                      spaceInset: 'space060',
+                      spaceInset: 'space080',
                     },
                   }}
                 >
@@ -112,9 +113,7 @@ export const MenuMobileCollapsible = ({
           className={openPanelIds.includes(index) ? 'expanded' : 'collapsed'}
           key={title}
         >
-          {/* does this need to be wrapped in a button */}
           <TextBlock
-            role="button"
             as="h3"
             marginInline="space060"
             marginBlock="space010"
@@ -127,7 +126,6 @@ export const MenuMobileCollapsible = ({
           >
             <GridLayout columns="1fr auto" columnGap="20px">
               {title}
-              {/* Each title of each accordion header should be contained in an element with role=button.  */}
               {openPanelIds.includes(index) ? (
                 <IconButton
                   aria-label="open button"

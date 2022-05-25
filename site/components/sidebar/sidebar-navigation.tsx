@@ -78,7 +78,7 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
                   <Block spaceStack="space060" />
                 ) : (
                   <DesktopNavigationDivider>
-                    <MenuDivider />
+                    <MenuDivider overrides={{stylePreset: 'menuDivider'}} />
                   </DesktopNavigationDivider>
                 )}
 

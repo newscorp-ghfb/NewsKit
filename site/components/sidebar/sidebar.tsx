@@ -41,7 +41,6 @@ const Sidebar: React.FC<SidebarProps> = ({
           },
         }}
       >
-        {/* <Block paddingBlock="space020" /> */}
         <SidebarNav />
         <Block marginInline="space060" marginBlock="space050">
           <GitHubLaunch />

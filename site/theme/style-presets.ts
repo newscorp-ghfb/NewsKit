@@ -218,6 +218,13 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusDefault}}',
     },
   },
+  menuDivider: {
+    base: {
+      borderStyle: 'solid',
+      borderColor: '{{colors.interface050}}',
+      borderWidth: '{{borders.borderWidth010}}',
+    },
+  },
   flagSolidPositive: {
     base: {
       borderRadius: '{{borders.borderRadiusDefault}}',
