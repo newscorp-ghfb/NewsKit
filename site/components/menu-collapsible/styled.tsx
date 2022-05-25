@@ -44,7 +44,7 @@ const StyledMenuCollapsibleItem = styled.div<
   }
 
   &.expanded > li:last-of-type {
-    ${getSpacingCssFromTheme('marginBottom', 'space040')};
+    ${getSpacingCssFromTheme('marginBottom', 'space060')};
   }
   }
 `;

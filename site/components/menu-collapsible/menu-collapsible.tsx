@@ -64,8 +64,9 @@ export const MenuMobileCollapsible = ({
                     typographyPreset: 'utilityButton020',
                     paddingInline: 'space090',
                     marginBlockEnd:
-                      title.includes('Getting started') ||
-                      title.includes('Overview')
+                      id.includes('theme/overview') ||
+                      id.includes('/components/overview') ||
+                      id.includes('/getting-started/overview')
                         ? 'space030'
                         : undefined,
                   }}
