@@ -2596,6 +2596,13 @@ Object {
     "spaceInset": "spaceInset030",
     "stylePreset": "toastNeutral",
   },
+  "tooltip": Object {
+    "paddingBlock": "spaceInset020",
+    "paddingInline": "spaceInset020",
+    "stylePreset": "tooltip",
+    "typographyPreset": "utilityLabel010",
+    "zIndex": 80,
+  },
   "unorderedList": Object {
     "content": Object {
       "stylePreset": "inkBase",
@@ -4771,6 +4778,13 @@ Object {
       "backgroundColor": "{{colors.interfacePositive010}}",
       "borderRadius": "{{borders.borderRadiusDefault}}",
       "iconColor": "{{colors.inkInverse}}",
+    },
+  },
+  "tooltip": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interface060}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkInverse}}",
     },
   },
   "videoPlayerControlBar": Object {
