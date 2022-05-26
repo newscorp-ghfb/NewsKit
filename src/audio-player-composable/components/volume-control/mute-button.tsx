@@ -8,7 +8,7 @@ const toggleMute = (
   volume: number,
   unMutedVolume: number,
   onChange: (volume: number) => void,
-) => (volume === 0 ? onChange(unMutedVolume || 1) : onChange(0));
+) => (volume === 0 ? onChange(unMutedVolume) : onChange(0));
 
 export const MuteButton: React.FC<MuteButtonProps> = ({
   volume,

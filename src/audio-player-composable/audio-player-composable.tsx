@@ -46,6 +46,7 @@ export const AudioPlayerComposable = ({
   live = false,
   ariaLandmark,
   keyboardShortcuts: keyboardShortcutsProp,
+  initialVolume = 0.7,
   ...props
 }: AudioPlayerComposableProps) => {
   const currentTimeRef = useRef(0);
@@ -212,7 +213,6 @@ export const AudioPlayerComposable = ({
       overrides,
       muteKeyboardShortcuts,
       collapsed,
-      initialVolume,
     }: AudioPlayerVolumeControlProps) => ({
       muteKeyboardShortcuts,
       vertical,

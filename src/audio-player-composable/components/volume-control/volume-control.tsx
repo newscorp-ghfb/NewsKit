@@ -32,7 +32,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
     collapsed = false,
     muteKeyboardShortcuts,
     overrides,
-    initialVolume = 0.7,
+    initialVolume,
   } = getVolumeControlProps!(props);
 
   const [unMutedVolume, setUnMutedVolume] = useState(volume);
@@ -74,7 +74,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
         muteKeyboardShortcuts={muteKeyboardShortcuts}
       />
       {!collapsed && (
-        <VolumeSliderContainer>
+        <VolumeSliderContainer vertical={vertical}>
           <Slider
             vertical={vertical}
             min={0}

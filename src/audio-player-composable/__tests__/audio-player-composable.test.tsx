@@ -69,9 +69,10 @@ const recordedAudioProps: AudioPlayerComposableProps = {
 
 const AudioPropsAndVolumeControlWithProps: AudioPlayerComposableProps = {
   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  initialVolume: 0.2,
   children: (
     <>
-      <AudioPlayerVolumeControl collapsed initialVolume={0.2} />
+      <AudioPlayerVolumeControl collapsed />
     </>
   ),
 };
@@ -811,7 +812,7 @@ describe('Audio Player Composable', () => {
 
       const {queryByTestId, getByTestId} = renderWithTheme(
         AudioPlayerComposable,
-        props,
+        AudioPropsAndVolumeControlWithProps,
       );
 
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;

@@ -322,6 +322,10 @@ const AudioPlayerInlineRecorded = (props: {
       columnGap="space040"
       alignItems="center"
     >
+      {/* TODO add vertical scenario */}
+      {/* <AudioPlayerVolumeControl
+        vertical={true}
+      /> */}
       <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
       <AudioPlayerTimeDisplay
         format={({currentTime}) => calculateTime(currentTime)}

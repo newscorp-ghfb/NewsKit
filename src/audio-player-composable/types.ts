@@ -66,7 +66,7 @@ export interface AudioPlayerProviderContext {
     collapsed?: boolean;
     onChange: (value: number) => void;
     volume: number;
-    initialVolume?: 0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1;
+    initialVolume: 0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1;
   };
   getSkipPreviousButtonProps: (
     props: AudioPlayerSkipPreviousButtonProps,
@@ -98,6 +98,7 @@ export interface AudioPlayerComposableProps
     jumpToStart: string | string[];
     jumpToEnd: string | string[];
   };
+  initialVolume?: 0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1;
 }
 
 export enum AudioEvents {
