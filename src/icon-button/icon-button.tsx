@@ -6,7 +6,10 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 
-const ThemelessIconButton = ({overrides = {}, ...props}: IconButtonProps) => {
+const ThemelessIconButton = React.forwardRef<
+  HTMLButtonElement | HTMLAnchorElement,
+  IconButtonProps
+>(({overrides = {}, ...props}, ref) => {
   const theme = useTheme();
   const {size = ButtonSize.Small} = props;
 
@@ -15,8 +18,10 @@ const ThemelessIconButton = ({overrides = {}, ...props}: IconButtonProps) => {
     ...filterOutFalsyProperties(overrides),
   };
 
-  return <Button {...props} size={size} overrides={iconButtonSettings} />;
-};
+  return (
+    <Button {...props} size={size} ref={ref} overrides={iconButtonSettings} />
+  );
+});
 
 export const IconButton: React.FC<IconButtonProps> = withOwnTheme(
   ThemelessIconButton,
