@@ -292,6 +292,31 @@ const PRESETS = [
     implementation:
       'Can be applied to components and triggered on page load, or when entering (mount), or exiting (unmount).',
   },
+  {
+    example: getImage(
+      'theme/transition-presets/predefined-transition-presets/shiftabsolute',
+    ),
+    token: 'shiftAbsolute',
+    description: 'Transition inset from the initial state to the final state.',
+    implementation:
+      'Can be applied to components to achieve movement when interacting eg. applied to the Switch thumb on click/tap.',
+  },
+  {
+    example: getImage(
+      'theme/transition-presets/predefined-transition-presets/opacitychange',
+    ),
+    token: 'opacityChange',
+    description:
+      'Transition opacity from the initial state to the final state.',
+    implementation: (
+      <>
+        Can be applied to components to achieve an opacity change eg. applied to
+        the feedback element that appears on hover for components like the{' '}
+        <Link href="/components/checkbox/">Checkbox</Link>, or{' '}
+        <Link href="/components/radio-button/">Radio Button.</Link>
+      </>
+    ),
+  },
 ];
 
 const USER_INTERACTION = [
