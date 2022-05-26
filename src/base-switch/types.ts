@@ -8,7 +8,7 @@ import {MQ} from '../utils/style/types';
 export type BaseSwitchIconProps = NewsKitIconProps &
   Pick<BaseSwitchProps, 'checked' | 'state' | 'size'> & {
     iconSize?: string;
-    parentOverrides?: BaseSwitchOverrides;
+    overrides?: BaseSwitchOverrides;
     isFocused?: boolean;
     isHovered?: boolean;
   };

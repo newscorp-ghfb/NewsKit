@@ -7,12 +7,12 @@ import {
 } from '../base-switch/types';
 import {LogicalProps} from '../utils/logical-properties';
 
-export type SwitchIconProps = Omit<
+export type SwitchTrackContentsProps = Omit<
   BaseSwitchIconProps,
-  'state' | 'parentOverrides'
+  'state' | 'overrides'
 > & {
   state: SwitchState;
-  parentOverrides: SwitchOverrides;
+  overrides: SwitchOverrides;
 };
 
 export type SwitchOverrides = {

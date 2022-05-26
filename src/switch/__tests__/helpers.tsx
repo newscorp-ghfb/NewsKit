@@ -1,6 +1,12 @@
+import React from 'react';
 import {SwitchOverrides, SwitchProps, SwitchState} from '../types';
-import {BaseSwitchSize} from '../../base-switch/types';
-import {IconFilledCheck, IconFilledClose, IconFilledDragHandle} from '../..';
+import {BaseSwitchIconProps, BaseSwitchSize} from '../../base-switch/types';
+import {
+  IconFilledCheck,
+  IconFilledClose,
+  IconFilledDarkMode,
+  IconFilledLightMode,
+} from '../..';
 
 export const states: [string, {checked?: boolean; state?: SwitchState}][] = [
   ['base', {}],
@@ -11,18 +17,22 @@ export const states: [string, {checked?: boolean; state?: SwitchState}][] = [
 
 export const sizes: BaseSwitchSize[] = ['small', 'medium', 'large'];
 
+/* istanbul ignore next */
+const DynamicThumbIcon = ({checked}: BaseSwitchIconProps) =>
+  checked ? <IconFilledDarkMode /> : <IconFilledLightMode />;
+
 export const icons: [
   string,
   Pick<SwitchOverrides, 'thumbIcon' | 'offIcon' | 'onIcon'>,
 ][] = [
-  ['thumb-icon', {thumbIcon: IconFilledDragHandle}],
+  ['thumb-icon', {thumbIcon: DynamicThumbIcon}],
   ['on-icon', {onIcon: IconFilledCheck}],
   ['off-icon', {offIcon: IconFilledClose}],
   ['on-and-off-icon', {onIcon: IconFilledCheck, offIcon: IconFilledClose}],
   [
     'thumb-and-on-and-off-icon',
     {
-      thumbIcon: IconFilledDragHandle,
+      thumbIcon: DynamicThumbIcon,
       onIcon: IconFilledCheck,
       offIcon: IconFilledClose,
     },
