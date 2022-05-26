@@ -243,6 +243,24 @@ const STYLE_PRESET_STATES = [
     description: `When using a mouse, "activation" typically starts when a user presses down a primary mouse button. Sometimes referred to as ‘pressed’`,
   },
   {
+    example: getImage('theme/style-presets/hover-active'),
+    state: 'hover:active',
+    description:
+      'The style and behaviour when a user’s cursor hovers over an interactive element and a user presses down a primary mouse button',
+  },
+  {
+    example: getImage('theme/style-presets/valid-hover-active'),
+    state: 'valid:hover:active',
+    description:
+      'The style and behaviour when a user’s cursor hovers over an interactive element in a valid state, and a user presses down a primary mouse button',
+  },
+  {
+    example: getImage('theme/style-presets/invalid-hover-active'),
+    state: 'invalid:hover:active',
+    description:
+      'The style and behaviour when a user’s cursor hovers over an interactive element in an invalid state, and a user presses down a primary mouse button',
+  },
+  {
     example: getImage('theme/style-presets/visited'),
     state: 'visited',
     description:
