@@ -5,7 +5,6 @@ import overlays from './overlays.json';
 import shadows from './shadows.json';
 import typographyPresets from './typography-presets.json';
 import {createTheme} from '../../../theme';
-import {newskitLightTheme} from '../../..';
 
 export const tnlOverrides = {
   typographyPresets,
@@ -18,6 +17,5 @@ export const tnlOverrides = {
 
 export const tnlTheme = createTheme({
   name: 'tnl-theme',
-  baseTheme: newskitLightTheme,
   overrides: tnlOverrides,
 });
