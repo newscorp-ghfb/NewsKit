@@ -319,4 +319,5 @@ export const INTERACTIVE_DESCRIPTION = {
   ),
   interactiveDisabled010: 'Disabled state',
   interactiveVisited010: 'Visited state',
+  interactiveFocus010: 'Focus tabbing',
 };

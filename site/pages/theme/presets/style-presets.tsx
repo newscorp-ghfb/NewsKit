@@ -195,6 +195,16 @@ const CSS_PROPS = [
     acceptedValues: <Link href="/theme/shadows/">foundations shadows</Link>,
     description: 'The box shadow to an element',
   },
+  {
+    token: 'opacity',
+    acceptedValues: 'foundations opacity',
+    description: 'The opacity level of an element',
+  },
+  {
+    token: 'linear-gradient',
+    acceptedValues: 'foundations gradient',
+    description: 'The transition between two or more specified colors',
+  },
 ];
 
 const ImageWrapper = styled.div`
