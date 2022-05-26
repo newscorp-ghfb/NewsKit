@@ -5,6 +5,7 @@ import {
   IconFilledCheck,
   IconFilledClose,
   IconFilledDarkMode,
+  IconFilledDragHandle,
   IconFilledLightMode,
 } from '../..';
 
@@ -40,13 +41,30 @@ export const icons: [
 ];
 
 export const sizeOverrides: [string, SwitchOverrides][] = [
-  ['small-margin', {input: {spaceInline: '5px'}}],
-  ['large-margin', {input: {spaceInline: '100px'}}],
+  [
+    'small-margin',
+    {
+      input: {spaceInline: '5px'},
+      thumbIcon: IconFilledDragHandle,
+      onIcon: IconFilledCheck,
+      offIcon: IconFilledClose,
+    },
+  ],
+  [
+    'large-margin',
+    {
+      input: {spaceInline: '100px'},
+      thumbIcon: IconFilledDragHandle,
+      onIcon: IconFilledCheck,
+      offIcon: IconFilledClose,
+    },
+  ],
   [
     'narrow-track-with-long-text-to-show-vertical-alignment',
     {
       input: {blockSize: '12px', paddingInline: '0px', marginBlock: '10px'},
-      thumb: {stylePreset: 'borderedThumb'},
+      thumb: {stylePreset: 'borderedThumb', size: 'sizing060'},
+      thumbIcon: IconFilledDragHandle,
     },
   ],
 ];
