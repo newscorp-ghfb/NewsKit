@@ -20,6 +20,10 @@ export default {
       },
     },
     divider: {stylePreset: 'accordionDivider'},
-    panel: {stylePreset: 'accordionPanel'},
+    panel: {
+      stylePreset: 'accordionPanel',
+      paddingBlock: 'spaceInset030',
+      paddingInline: 'spaceInset030',
+    },
   },
 };

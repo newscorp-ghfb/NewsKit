@@ -15,12 +15,13 @@ export const StyledAccodionContainer = styled.div``;
 export const StyledHeaderWrapper = styled(TextBlock)``;
 
 export const StyledAccordionButton = styled.button<
-  Pick<AccordionProps, 'overrides'>
+  Pick<AccordionProps, 'overrides' | 'disabled'>
 >`
   display: flex;
   box-sizing: border-box;
   align-items: center;
   width: 100%;
+  cursor: ${({disabled}) => (disabled ? 'not-allowed' : 'default')};
   & > :not(:last-of-type) {
     ${getResponsiveSpace(
       'marginRight',
@@ -33,7 +34,7 @@ export const StyledAccordionButton = styled.button<
   ${getResponsiveSize('minHeight', '', '', 'minHeight')};
   ${getStylePreset('accordion.header', 'header')};
   ${getTypographyPreset('accordion.header', 'header')}
-  ${logicalProps('accordion.header')}
+  ${logicalProps('accordion.header', 'header')}
 `;
 
 export const StyledEnhancer = styled.div<Pick<AccordionProps, 'overrides'>>`
@@ -70,4 +71,5 @@ export const StyledDivider = styled(Divider)`
 `;
 export const StyledPanel = styled.div<Pick<AccordionProps, 'overrides'>>`
   ${getStylePreset('accordion.panel', 'panel')};
+  ${logicalProps('accordion.panel', 'panel')}
 `;

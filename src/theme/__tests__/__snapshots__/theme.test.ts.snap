@@ -1081,6 +1081,35 @@ Object {
 
 exports[`NewsKit Light theme combine all component defaults 1`] = `
 Object {
+  "accordion": Object {
+    "divider": Object {
+      "stylePreset": "accordionDivider",
+    },
+    "header": Object {
+      "borderBottom": "interface050",
+      "borderWidth": "borderWidth010",
+      "indicatorIcon": Object {
+        "stylePreset": "inkBase",
+      },
+      "indicatorLabel": Object {
+        "stylePreset": "inkBase",
+        "typographyPreset": "utilityButton030",
+      },
+      "paddingBlock": "spaceInset030",
+      "paddingInline": "spaceInset030",
+      "spaceInline": "space020",
+      "startEnhancer": Object {
+        "stylePreset": "inkBase",
+      },
+      "stylePreset": "accordionHeader",
+      "typographyPreset": "utilityButton030",
+    },
+    "panel": Object {
+      "paddingBlock": "spaceInset030",
+      "paddingInline": "spaceInset030",
+      "stylePreset": "accordionPanel",
+    },
+  },
   "assistiveText": Object {
     "large": Object {
       "endEnhancer": Object {
@@ -2627,6 +2656,36 @@ Object {
 
 exports[`NewsKit Light theme combine all style presets 1`] = `
 Object {
+  "accordionDivider": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interface050}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+    },
+  },
+  "accordionHeader": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interface010}}",
+      "borderColor": "{{colors.interface050}}",
+      "borderStyle": "none none solid none",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "color": "{{colors.inkBase}}",
+    },
+    "disabled": Object {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+    },
+    "hover": Object {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "color": "{{colors.interactiveInput040}}",
+    },
+  },
+  "accordionPanel": Object {
+    "base": Object {
+      "borderColor": "{{colors.interface050}}",
+      "borderStyle": "none none solid none",
+      "borderWidth": "{{borders.borderWidth010}}",
+    },
+  },
   "assistiveText": Object {
     "base": Object {
       "color": "{{colors.inkSubtle}}",

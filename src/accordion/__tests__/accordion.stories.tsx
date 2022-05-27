@@ -52,22 +52,66 @@ export const StoryAccordion = () => (
           }}
         />
       }
-      applyDivider
-    />
+    >
+      <TextBlock>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        malesuada lacus ex, sit amet blandit leo lobortis eget.
+      </TextBlock>
+    </Accordion>
     <br />
     <br />
-    <StorybookHeading>HeaderText & IndicatorIcon</StorybookHeading>
+    <StorybookHeading>Disabled</StorybookHeading>
     <Accordion
       headerText="Hello"
+      disabled
+      label="Label"
+      startEnhancer={
+        <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
+      }
       indicatorIcon={
-        <IconFilledExpandLess
+        <IconFilledExpandMore
           overrides={{
             size: 'iconSize020',
           }}
         />
       }
       applyDivider
-    />
+    >
+      <TextBlock>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        malesuada lacus ex, sit amet blandit leo lobortis eget.
+      </TextBlock>
+    </Accordion>
+    <br />
+    <StorybookHeading>HeaderText & IndicatorIcon</StorybookHeading>
+    <div>
+      <Accordion
+        headerText="Hello"
+        indicatorIcon={
+          <IconFilledExpandLess
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+        applyDivider
+      >
+        <TextBlock>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </TextBlock>
+      </Accordion>
+      <Accordion
+        headerText="Hello"
+        indicatorIcon={
+          <IconFilledExpandLess
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+      />
+    </div>
   </>
 );
 StoryAccordion.storyName = 'accordion';
