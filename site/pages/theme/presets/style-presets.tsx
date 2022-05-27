@@ -272,11 +272,6 @@ const STYLE_PRESET_STATES = [
     description: `Communicates that an element exists, but is not available to a user in that scenario. It is used to maintain layout consistency and communicate to a user that an element may become available if another condition has been met. When a user hovers over an element in a disabled state, the cursor shows as “not-allowed”`,
   },
   {
-    example: getImage('theme/style-presets/selected'),
-    state: 'selected',
-    description: `The style of a component changes to visually communicate and provide feedback to a user that a component has been selected (e.g. in a Tab menu, "selected" would be the selected Tab)`,
-  },
-  {
     example: getImage('theme/style-presets/checked'),
     state: 'checked',
     description: `The style of a component changes to visually communicate and provide feedback to a user that a component has been checked (e.g. a “checked” checkbox)`,
@@ -297,6 +292,11 @@ const STYLE_PRESET_STATES = [
     example: getImage('theme/style-presets/loading'),
     state: 'loading',
     description: `When a component can’t be displayed because it is in a transitional "loading" state (e.g. images that haven't loaded yet)`,
+  },
+  {
+    example: getImage('theme/style-presets/selected'),
+    state: 'selected',
+    description: `The style of a component changes to visually communicate and provide feedback to a user that a component has been selected (e.g. in a Tab menu, "selected" would be the selected Tab)`,
   },
   {
     example: getImage('theme/style-presets/selected-hover'),
