@@ -20,7 +20,7 @@ const SwitchTrackContents = (props: BaseSwitchIconProps) => {
   const {
     size,
     checked,
-    overrides,
+    parentOverrides: overrides,
     isFocused,
     isHovered,
     state,

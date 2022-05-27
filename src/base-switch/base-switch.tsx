@@ -116,7 +116,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
         checked,
         size,
         iconSize,
-        overrides: omitLogicalPropsFromOverrides(overrides),
+        parentOverrides: omitLogicalPropsFromOverrides(overrides),
         isFocused: isInputFocused,
         isHovered: isLabelHovered || isInputFocused,
       },

@@ -9,10 +9,10 @@ import {LogicalProps} from '../utils/logical-properties';
 
 export type SwitchTrackContentsProps = Omit<
   BaseSwitchIconProps,
-  'state' | 'overrides'
+  'state' | 'parentOverrides'
 > & {
   state: SwitchState;
-  overrides: SwitchOverrides;
+  parentOverrides: SwitchOverrides;
 };
 
 export type SwitchOverrides = {
