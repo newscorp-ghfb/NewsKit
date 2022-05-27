@@ -9,7 +9,6 @@ import {StyledSwitchContainer, StyledThumb, StyledTrackIcon} from './styled';
 import {BaseSwitchIconProps} from '../base-switch/types';
 import {Override} from '../utils/overrides';
 
-// TODO: Contains similar logic to getComponentOverrides to cast the override icon as a component. But why is this necessary?
 const iconAsComponent = (OverridesValue?: Override<BaseSwitchIconProps>) => {
   if (OverridesValue && isValidElementType(OverridesValue)) {
     return OverridesValue as React.ComponentType<BaseSwitchIconProps>;

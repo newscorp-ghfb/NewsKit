@@ -166,20 +166,14 @@ export const StorySwitchFieldset = () => (
         <StorybookSubHeading>Fieldset</StorybookSubHeading>
 
         <Container>
-          <Fieldset legend="Accessibility Preferences">
+          <Fieldset legend="Fieldset label">
             <Switch
-              label="Reduced motion"
+              label="Switch label"
               defaultChecked
               overrides={{
                 thumbIcon: IconFilledDragHandle,
                 onIcon: IconFilledCheck,
                 offIcon: IconFilledClose,
-                thumb: {
-                  transitionPreset: [],
-                },
-                feedback: {
-                  transitionPreset: [],
-                },
               }}
             />
           </Fieldset>
