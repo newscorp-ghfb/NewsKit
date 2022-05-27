@@ -3,7 +3,7 @@ export default {
     slider: {
       track: {
         stylePreset: 'audioPlayerVolumeControlTrack',
-        size: 'sizing020',
+        size: 'sizing010',
         length: '130px',
       },
       indicator: {
