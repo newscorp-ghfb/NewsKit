@@ -7,6 +7,10 @@ import {getIllustrationComponent} from '../../components/illustrations/illustrat
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
+import {
+  logicalMarginOverrideProps,
+  logicalPaddingOverrideProps,
+} from '../../components/component-api/common-logical-props';
 
 const infoIcon = (
   <IconFilledInfo
@@ -148,6 +152,8 @@ const commonOverridesRows = [
     description:
       'If provided, this overrides the lnline space of the end enhancer.',
   },
+  ...logicalMarginOverrideProps,
+  ...logicalPaddingOverrideProps,
 ];
 
 const formInputPropsFooter = (
