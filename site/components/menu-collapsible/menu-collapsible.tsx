@@ -128,8 +128,6 @@ export const MenuMobileCollapsible = ({
                   aria-expanded={
                     openPanelIds.includes(index) ? 'true' : 'false'
                   }
-                  aria-controls="sect-1"
-                  id="accordion-1"
                   overrides={{
                     stylePreset: 'iconButtonMinimalPrimary',
                   }}
@@ -143,8 +141,6 @@ export const MenuMobileCollapsible = ({
                 </IconButton>
               ) : (
                 <IconButton
-                  aria-controls="sect-1"
-                  id="accordion-1"
                   aria-label="close button"
                   aria-expanded={
                     openPanelIds.includes(index) ? 'true' : 'false'
