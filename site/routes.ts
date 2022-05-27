@@ -506,8 +506,8 @@ export default [
             page: true,
             id: '/components/structured-list',
             description:
-              'Structured lists group content that is similar or related.',
-            illustration: 'components/standfirst-illustration',
+              'The Structured List is a layout component that groups similar or related content.',
+            illustration: 'components/structured-list/hero',
           },
           {
             title: 'Visibility',
