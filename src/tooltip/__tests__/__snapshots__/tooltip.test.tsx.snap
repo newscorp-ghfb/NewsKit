@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip should render correct styles: default 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-2"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  margin: 0;
+  pointer-events: none;
+  z-index: 80;
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+<p
+    class="Tooltip emotion-0"
+    id="floating-ui-2"
+    role="tooltip"
+    style="position: absolute;"
+    tabindex="-1"
+  >
+    hello
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Tooltip should render correct styles: with overrides 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-11"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  margin: 0;
+  padding-inline: 8px;
+  padding-block: 16px;
+  pointer-events: none;
+  z-index: 70;
+  max-width: 80px;
+  min-width: 50px;
+  background-color: #EF1703;
+  border-radius: 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 16px;
+}
+
+<p
+    class="Tooltip emotion-0"
+    id="floating-ui-11"
+    role="tooltip"
+    style="position: absolute;"
+    tabindex="-1"
+  >
+    hello
+  </p>
+</DocumentFragment>
+`;

@@ -570,6 +570,17 @@ describe('Audio Player', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  test('recorded player renders with logical props overrides', () => {
+    const {asFragment} = renderWithTheme(AudioPlayer, {
+      ...recordedAudioProps,
+      overrides: {
+        paddingBlock: '30px',
+        marginBlock: '30px',
+      },
+    });
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   describe('Instrumentation tests should', () => {
     test('raise event when paused', () => {
       const fireEventSpy = jest.fn();

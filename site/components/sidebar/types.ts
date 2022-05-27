@@ -8,6 +8,7 @@ export interface Item {
   subNav?: Item[];
   illustration?: string;
   description?: string;
+  cardTitle?: string;
 }
 
 export type PageType = {

@@ -599,8 +599,27 @@ Object {
   },
   "name": "docs-accessibility-dark",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(180deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(-90deg, rgba(22,255,255,0.00) 0%,rgba(255,255,255,1.00)  100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg, rgba(255,255,255,0.00) 0%,rgba(255,255,255,1.00) 100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -1016,32 +1035,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -1612,29 +1631,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -1718,6 +1737,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -2805,8 +2831,27 @@ Object {
   },
   "name": "docs-accessibility-light",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -3222,32 +3267,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -3818,29 +3863,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -3924,6 +3969,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -5011,8 +5063,27 @@ Object {
   },
   "name": "docs-theme-dark",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(180deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(-90deg, rgba(22,255,255,0.00) 0%,rgba(255,255,255,1.00)  100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg, rgba(255,255,255,0.00) 0%,rgba(255,255,255,1.00) 100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -5428,32 +5499,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -6024,29 +6095,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -6130,6 +6201,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -7217,8 +7295,27 @@ Object {
   },
   "name": "docs-theme-light",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -7634,32 +7731,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -8230,29 +8327,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -8336,6 +8433,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -9423,8 +9527,27 @@ Object {
   },
   "name": "docs-foundations-dark",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(180deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(-90deg, rgba(22,255,255,0.00) 0%,rgba(255,255,255,1.00)  100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg, rgba(255,255,255,0.00) 0%,rgba(255,255,255,1.00) 100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -9840,32 +9963,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -10436,29 +10559,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -10542,6 +10665,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -11629,8 +11759,27 @@ Object {
   },
   "name": "docs-foundations-light",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -12046,32 +12195,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -12642,29 +12791,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -12748,6 +12897,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -13835,8 +13991,27 @@ Object {
   },
   "name": "docs-patterns-dark",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(180deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(-90deg, rgba(22,255,255,0.00) 0%,rgba(255,255,255,1.00)  100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg, rgba(255,255,255,0.00) 0%,rgba(255,255,255,1.00) 100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -14252,32 +14427,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -14848,29 +15023,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -14954,6 +15129,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -16041,8 +16223,27 @@ Object {
   },
   "name": "docs-patterns-light",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -16458,32 +16659,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -17054,29 +17255,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -17160,6 +17361,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {

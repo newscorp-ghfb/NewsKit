@@ -35,6 +35,10 @@ const schema = yup.object().shape({
   username: yup.string().required(),
 });
 
+const StyledDiv = styled.div`
+  border: 1px solid red;
+`;
+
 export default {
   title: 'NewsKit Light/form',
   component: () => 'None',
@@ -404,3 +408,54 @@ export const StoryFormWithTextInputAndFormInput = () => (
 );
 StoryFormWithTextInputAndFormInput.storyName =
   'form-with-text-input-and-form-input';
+
+export const StoryFormWithLogicalProps = () => (
+  <>
+    <StorybookHeading>Form with logical properties</StorybookHeading>
+    <StorybookSubHeading>Logical padding </StorybookSubHeading>
+    <StyledDiv>
+      <Form
+        onSubmit={onSubmit}
+        paddingBlock="space050"
+        paddingInline="space030"
+      >
+        <Block spaceStack="space050">
+          <TextInput
+            label="Email"
+            name="email"
+            rules={{
+              required: 'Required field',
+              pattern: {
+                // eslint-disable-next-line no-useless-escape
+                value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+                message: 'Please provide a valid email',
+              },
+            }}
+          />
+        </Block>
+        <Button type="submit">Submit</Button>
+      </Form>
+    </StyledDiv>
+    <StorybookSubHeading>Logical margin </StorybookSubHeading>
+    <StyledDiv>
+      <Form onSubmit={onSubmit} marginBlock="space050" marginInline="space030">
+        <Block spaceStack="space050">
+          <TextInput
+            label="Email"
+            name="email"
+            rules={{
+              required: 'Required field',
+              pattern: {
+                // eslint-disable-next-line no-useless-escape
+                value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+                message: 'Please provide a valid email',
+              },
+            }}
+          />
+        </Block>
+        <Button type="submit">Submit</Button>
+      </Form>
+    </StyledDiv>
+  </>
+);
+StoryFormWithLogicalProps.storyName = 'form-with-logical-props';

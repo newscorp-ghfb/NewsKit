@@ -40,6 +40,7 @@ import {AlignSelfValues, StackChild} from '../stack-child';
 import {EmailInput} from '../email-input';
 import {Fieldset} from '../fieldset';
 import {Checkbox} from '../checkbox';
+import {Switch} from '../switch';
 import {Flag} from '../flag';
 import {Image} from '../image';
 import {
@@ -97,6 +98,7 @@ import {
 import {calculateTime} from '../audio-player-composable/components/time-display/utils';
 
 import {GridLayout} from '../grid-layout';
+import {SwitchState} from '../switch/types';
 
 export const checkboxStates: [
   string,
@@ -110,6 +112,16 @@ export const checkboxStates: [
   ['invalid-checked', {state: 'invalid', checked: true}],
   ['valid', {state: 'valid'}],
   ['valid-checked', {state: 'valid', checked: true}],
+];
+
+export const switchStates: [
+  string,
+  {checked?: boolean; state?: SwitchState},
+][] = [
+  ['default', {}],
+  ['checked', {checked: true}],
+  ['disabled', {state: 'disabled'}],
+  ['checked-disabled', {checked: true, state: 'disabled'}],
 ];
 
 export const radioButtonStates: [
@@ -579,6 +591,29 @@ export const scenarios: Array<ComponentData> = [
           <Stack key={`${id}-checkbox`} spaceInline="space050">
             <LabelFlag>{id[0].toUpperCase() + id.slice(1)}</LabelFlag>
             <Checkbox
+              {...props}
+              defaultChecked={checked}
+              label={id}
+              size="medium"
+            />
+          </Stack>
+        ))}
+      </Stack>
+    ),
+  },
+  {
+    name: 'Switch',
+    component: () => (
+      <Stack
+        spaceInline="space100"
+        spaceStack="space060"
+        flow={Flow.HorizontalTop}
+        wrap="wrap"
+      >
+        {switchStates.map(([id, {checked, ...props}]) => (
+          <Stack key={`${id}-checkbox`} spaceInline="space050">
+            <LabelFlag>{id[0].toUpperCase() + id.slice(1)}</LabelFlag>
+            <Switch
               {...props}
               defaultChecked={checked}
               label={id}

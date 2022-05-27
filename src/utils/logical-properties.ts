@@ -124,6 +124,18 @@ export const logicalProps = (defaultsPath?: string, overridesPath?: string) => (
   return deepMerge(margin, padding);
 };
 
+export const logicalPaddingProps = (
+  defaultsPath?: string,
+  overridesPath?: string,
+) => (props: ThemeProp): CSSObject =>
+  logicalPadding(props, defaultsPath, overridesPath);
+
+export const logicalMarginProps = (
+  defaultsPath?: string,
+  overridesPath?: string,
+) => (props: ThemeProp): CSSObject =>
+  logicalMargins(props, defaultsPath, overridesPath);
+
 const logicalPropsArray = [
   'marginInlineStart',
   'marginInlineEnd',

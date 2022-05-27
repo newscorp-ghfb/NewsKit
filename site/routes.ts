@@ -48,8 +48,9 @@ export default [
             page: true,
             id: '/getting-started/design/design-quickstart',
             description:
-              'This page describes how to get started designing a digital product with NewsKit.',
+              'A step by step guide to get you up and running using NewsKit.',
             illustration: 'guides/design-quickstart/hero',
+            cardTitle: 'Design Quickstart Guide',
           },
         ],
       },
@@ -62,18 +63,27 @@ export default [
             page: true,
             id: '/getting-started/code/engineering-quickstart',
             description:
-              'This page describes how to get started building a web application with NewsKit.',
+              'Guides on how to get started building a web application with NewsKit.',
             illustration: 'guides/engineering-quickstart/hero',
+            cardTitle: 'Engineering Quickstart Guide',
           },
           {
             title: 'Instrumentation setup',
             page: true,
             id: '/getting-started/code/instrumentation',
+            description:
+              'NewsKit components are built to emit events "out of the box".',
+            illustration: 'guides/overview/instrumentation-setup',
+            cardTitle: 'Instrumentation Setup',
           },
           {
             title: 'Testing',
             page: true,
             id: '/getting-started/code/testing',
+            description:
+              'NewsKit uses Jest and React Testing Library for unit testing.',
+            illustration: 'guides/overview/testing',
+            cardTitle: 'Testing',
           },
         ],
       },
@@ -441,6 +451,14 @@ export default [
             illustration: 'components/drawer/drawer-illustration',
           },
           {
+            title: 'Fieldset',
+            page: true,
+            id: '/components/fieldset',
+            description:
+              'The Fieldset is used to provide contextual information around a group of form controls in a web form.',
+            illustration: 'components/fieldset/hero',
+          },
+          {
             title: 'Grid',
             page: true,
             id: '/components/grid',
@@ -454,7 +472,7 @@ export default [
             id: '/components/grid-layout',
             description:
               'Used to construct a visual grid for responsive page layout. A Proxy for CSS grid.',
-            illustration: 'static/placeholder-3x2.png',
+            illustration: 'components/grid-layout-illustration',
           },
           {
             title: 'Modal',
@@ -471,6 +489,14 @@ export default [
             description:
               'A low-level foundational component used to layout items in a horizontal or vertical stack.',
             illustration: 'components/stack-illustration',
+          },
+          {
+            title: 'Structured List',
+            page: true,
+            id: '/components/structured-list',
+            description:
+              'The Structured List is a layout component that groups similar or related content.',
+            illustration: 'components/structured-list/hero',
           },
           {
             title: 'Visibility',

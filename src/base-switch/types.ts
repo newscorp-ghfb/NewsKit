@@ -6,9 +6,14 @@ import {Override} from '../utils/overrides';
 import {MQ} from '../utils/style/types';
 
 export type BaseSwitchIconProps = NewsKitIconProps &
-  Pick<BaseSwitchProps, 'checked' | 'state'> & {iconSize?: string};
+  Pick<BaseSwitchProps, 'checked' | 'state' | 'size'> & {
+    iconSize?: string;
+    parentOverrides?: BaseSwitchOverrides;
+    isFocused?: boolean;
+    isHovered?: boolean;
+  };
 
-type BaseSwitchOverrides = {
+export type BaseSwitchOverrides = {
   /**
    * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlockEnd` instead.
    */
@@ -16,18 +21,28 @@ type BaseSwitchOverrides = {
   input?: {
     size?: MQ<string>;
     stylePreset?: MQ<string>;
-    spaceInline?: MQ<string>; // Note: spaceInline is used as a gap. Should rename this instead of using logical props.
+    spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
     transitionPreset?: TransitionToken | TransitionToken[];
-  };
+    blockSize?: MQ<string>;
+    inlineSize?: MQ<string>;
+  } & LogicalProps;
   feedback?: {
     size?: MQ<string>;
     stylePreset?: MQ<string>;
+    transitionPreset?: TransitionToken | TransitionToken[];
   };
   label?: {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
   };
+  thumb?: {
+    size?: MQ<string>;
+    stylePreset?: MQ<string>;
+    transitionPreset?: TransitionToken | TransitionToken[];
+  };
   icon?: Override<BaseSwitchIconProps>;
+  onIcon?: Override<BaseSwitchIconProps>;
+  offIcon?: Override<BaseSwitchIconProps>;
 };
 
 export type BaseSwitchSize = 'small' | 'medium' | 'large';
@@ -49,4 +64,5 @@ export interface BaseSwitchProps
   labelPosition?: BaseSwitchLabelPosition;
   path: string;
   defaultSwitchSelectorComponent: React.ComponentType<BaseSwitchIconProps>;
+  hideFeedback?: boolean;
 }

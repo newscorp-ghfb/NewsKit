@@ -152,3 +152,44 @@ exports[`Label should render disabled Label 1`] = `
   </label>
 </DocumentFragment>
 `;
+
+exports[`Label should render with logical props overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+  margin-block: 30px;
+  padding-block: 30px;
+}
+
+.emotion-0:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-0::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-0::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<label
+    class="emotion-0"
+  >
+    Label
+  </label>
+</DocumentFragment>
+`;

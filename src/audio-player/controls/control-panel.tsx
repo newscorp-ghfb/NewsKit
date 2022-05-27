@@ -17,7 +17,7 @@ export interface TrackControlProps {
 }
 
 export interface ControlsOverrideProps {
-  space?: MQ<string>; // Note: LogicalProps can not replace spaceInline! spaceInline = Stack's gap
+  space?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between items. Should be renamed.
   previousButton?: ButtonOverrides;
   replayButton?: ButtonOverrides;
   playPauseButton?: ButtonOverrides;

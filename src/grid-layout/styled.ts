@@ -1,4 +1,5 @@
 import {Theme} from '../theme';
+import {logicalProps} from '../utils/logical-properties';
 import {getResponsiveSize, handleResponsiveProp, styled} from '../utils/style';
 import {GridLayoutProps} from './types';
 
@@ -92,4 +93,5 @@ export const StyledGridLayout = styled.div<GridLayoutProps>`
   ${getResponsiveSize('height', 'gridLayout', '', 'height')};
   ${getResponsiveSize('minHeight', 'gridLayout', '', 'minHeight')};
   ${getResponsiveSize('maxHeight', 'gridLayout', '', 'maxHeight')};
+  ${logicalProps('gridLayout')}
 `;
