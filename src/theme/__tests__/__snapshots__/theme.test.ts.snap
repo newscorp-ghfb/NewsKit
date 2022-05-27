@@ -3315,6 +3315,15 @@ Object {
       "backgroundColor": "{{colors.interactiveInput040}}",
       "borderColor": "{{colors.interactiveInput040}}",
     },
+    "checked:focus-visible": Object {
+      "backgroundColor": "{{colors.interactiveInput040}}",
+      "borderColor": "{{colors.interactiveInput040}}",
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
+    },
     "checked:focus:hover": Object {
       "backgroundColor": "{{colors.interactiveInput050}}",
       "borderColor": "{{colors.interactiveInput050}}",
@@ -3330,6 +3339,15 @@ Object {
     "checked:invalid:focus": Object {
       "backgroundColor": "{{colors.interactiveNegative040}}",
       "borderColor": "{{colors.interactiveNegative040}}",
+    },
+    "checked:invalid:focus-visible": Object {
+      "backgroundColor": "{{colors.interactiveNegative040}}",
+      "borderColor": "{{colors.interactiveNegative040}}",
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "checked:invalid:focus:hover": Object {
       "backgroundColor": "{{colors.interactiveNegative050}}",
@@ -3347,6 +3365,15 @@ Object {
       "backgroundColor": "{{colors.interactivePositive040}}",
       "borderColor": "{{colors.interactivePositive040}}",
     },
+    "checked:valid:focus-visible": Object {
+      "backgroundColor": "{{colors.interactivePositive040}}",
+      "borderColor": "{{colors.interactivePositive040}}",
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
+    },
     "checked:valid:focus:hover": Object {
       "backgroundColor": "{{colors.interactivePositive050}}",
       "borderColor": "{{colors.interactivePositive050}}",
@@ -3360,6 +3387,13 @@ Object {
       "borderColor": "{{colors.interactiveDisabled010}}",
     },
     "focus": Object {},
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
+    },
     "focus:hover": Object {
       "backgroundColor": "{{colors.interactiveInput030}}",
       "borderColor": "{{colors.interactiveInput050}}",
@@ -3373,6 +3407,14 @@ Object {
     },
     "invalid:focus": Object {
       "borderColor": "{{colors.interactiveNegative040}}",
+    },
+    "invalid:focus-visible": Object {
+      "borderColor": "{{colors.interactiveNegative040}}",
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "invalid:focus:hover": Object {
       "backgroundColor": "{{colors.interactiveNegative010}}",
@@ -3389,6 +3431,15 @@ Object {
     "valid:focus": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
       "borderColor": "{{colors.interactivePositive040}}",
+    },
+    "valid:focus-visible": Object {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactivePositive040}}",
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "valid:focus:hover": Object {
       "backgroundColor": "{{colors.interactivePositive010}}",
@@ -4519,6 +4570,16 @@ Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
       "borderColor": "{{colors.interactiveInput040}}",
       "iconColor": "{{colors.interactiveInput040}}",
+    },
+    "checked:focus-visible": Object {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactiveInput040}}",
+      "iconColor": "{{colors.interactiveInput040}}",
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "checked:focus:hover": Object {
       "backgroundColor": "{{colors.interactiveInput030}}",

@@ -68,7 +68,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
     const onInputFocus = useCallback(
       (e: React.FocusEvent<HTMLInputElement>) => {
         if (isFocusVisible(e)) {
-          setIsInputFocusVisible(isFocusVisible(e));
+          setIsInputFocusVisible(true);
         } else {
           setIsInputFocused(true);
         }
