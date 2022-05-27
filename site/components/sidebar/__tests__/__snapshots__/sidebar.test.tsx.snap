@@ -742,11 +742,16 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-487 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-488 {
   display: grid;
   grid-template-columns: 1fr 24px;
 }
 
-.emotion-488 {
+.emotion-489 {
   margin: 0;
   color: #2E2E2E;
   font-family: "Poppins",sans-serif;
@@ -756,11 +761,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-488 svg {
+.emotion-489 svg {
   fill: #2E2E2E;
 }
 
-.emotion-489 {
+.emotion-490 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -770,7 +775,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-489 {
+  .emotion-490 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -778,28 +783,28 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-489 {
+  .emotion-490 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-489.emotion-489 {
+.emotion-490.emotion-490 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-491 {
+.emotion-492 {
   margin-block: 24px;
 }
 
-.emotion-493 {
+.emotion-494 {
   display: grid;
   grid-template-columns: 1fr 30px;
 }
 
-.emotion-495 {
+.emotion-496 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -831,21 +836,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
   cursor: pointer;
 }
 
-.emotion-495 svg {
+.emotion-496 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-495:hover:not(:disabled) {
+.emotion-496:hover:not(:disabled) {
   background-color: #CCCCCC;
 }
 
-.emotion-495:active:not(:disabled) {
+.emotion-496:active:not(:disabled) {
   background-color: #CCCCCC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-495 {
+  .emotion-496 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -853,21 +858,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-495 {
+  .emotion-496 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-498 {
+.emotion-499 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-498 {
+  .emotion-499 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -875,14 +880,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-498 {
+  .emotion-499 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-498.emotion-498 {
+.emotion-499.emotion-499 {
   width: 16px;
   height: 16px;
 }
@@ -1781,7 +1786,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <a
                               aria-current="false"
-                              class="emotion-47"
+                              class="emotion-14"
                               data-testid="buttonLink"
                               href="/theme/theming/overview"
                               tabindex="-1"
@@ -3435,49 +3440,55 @@ exports[`Sidebar renders correctly when closed 1`] = `
             <div
               class="emotion-486"
             >
-              <div
+              <a
                 class="emotion-487"
-              >
-                <p
-                  class="emotion-488"
-                >
-                  Github
-                </p>
-                <svg
-                  aria-hidden="true"
-                  class="emotion-489 emotion-490"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0V0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                  />
-                </svg>
-              </div>
-              <div
-                class="emotion-491"
-              />
-              <div
-                class="emotion-492"
+                href="https://github.com/newscorp-ghfb/newskit"
+                tabindex="-1"
               >
                 <div
-                  class="emotion-493"
+                  class="emotion-488"
                 >
                   <p
-                    class="emotion-488"
+                    class="emotion-489"
+                  >
+                    Github
+                  </p>
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-490 emotion-491"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <div
+                class="emotion-492"
+              />
+              <div
+                class="emotion-493"
+              >
+                <div
+                  class="emotion-494"
+                >
+                  <p
+                    class="emotion-489"
                   >
                     Dark  Theme 
                   </p>
                   <button
                     aria-label="Enable Dark Theme"
                     aria-pressed="false"
-                    class="emotion-495"
+                    class="emotion-496"
                     data-testid="theme-switch-button"
                     tabindex="-1"
                     title="Enable Dark Theme"
@@ -3490,7 +3501,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         class="emotion-11"
                       >
                         <svg
-                          class="emotion-498"
+                          class="emotion-499"
                           fill="currentColor"
                           role="img"
                           viewBox="0 0 17 17"
@@ -4966,7 +4977,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <a
                         aria-current="false"
-                        class="emotion-47"
+                        class="emotion-14"
                         data-testid="buttonLink"
                         href="/theme/theming/overview"
                       >
@@ -7305,11 +7316,16 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-487 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-488 {
   display: grid;
   grid-template-columns: 1fr 24px;
 }
 
-.emotion-488 {
+.emotion-489 {
   margin: 0;
   color: #2E2E2E;
   font-family: "Poppins",sans-serif;
@@ -7319,11 +7335,11 @@ exports[`Sidebar renders correctly when open 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-488 svg {
+.emotion-489 svg {
   fill: #2E2E2E;
 }
 
-.emotion-489 {
+.emotion-490 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -7333,7 +7349,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-489 {
+  .emotion-490 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7341,28 +7357,28 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-489 {
+  .emotion-490 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-489.emotion-489 {
+.emotion-490.emotion-490 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-491 {
+.emotion-492 {
   margin-block: 24px;
 }
 
-.emotion-493 {
+.emotion-494 {
   display: grid;
   grid-template-columns: 1fr 30px;
 }
 
-.emotion-495 {
+.emotion-496 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7394,21 +7410,21 @@ exports[`Sidebar renders correctly when open 1`] = `
   cursor: pointer;
 }
 
-.emotion-495 svg {
+.emotion-496 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-495:hover:not(:disabled) {
+.emotion-496:hover:not(:disabled) {
   background-color: #CCCCCC;
 }
 
-.emotion-495:active:not(:disabled) {
+.emotion-496:active:not(:disabled) {
   background-color: #CCCCCC;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-495 {
+  .emotion-496 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7416,21 +7432,21 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-495 {
+  .emotion-496 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-498 {
+.emotion-499 {
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-498 {
+  .emotion-499 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7438,14 +7454,14 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-498 {
+  .emotion-499 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-498.emotion-498 {
+.emotion-499.emotion-499 {
   width: 16px;
   height: 16px;
 }
@@ -8317,7 +8333,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <a
                               aria-current="false"
-                              class="emotion-47"
+                              class="emotion-14"
                               data-testid="buttonLink"
                               href="/theme/theming/overview"
                             >
@@ -9913,49 +9929,54 @@ exports[`Sidebar renders correctly when open 1`] = `
             <div
               class="emotion-486"
             >
-              <div
+              <a
                 class="emotion-487"
-              >
-                <p
-                  class="emotion-488"
-                >
-                  Github
-                </p>
-                <svg
-                  aria-hidden="true"
-                  class="emotion-489 emotion-490"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0V0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                  />
-                </svg>
-              </div>
-              <div
-                class="emotion-491"
-              />
-              <div
-                class="emotion-492"
+                href="https://github.com/newscorp-ghfb/newskit"
               >
                 <div
-                  class="emotion-493"
+                  class="emotion-488"
                 >
                   <p
-                    class="emotion-488"
+                    class="emotion-489"
+                  >
+                    Github
+                  </p>
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-490 emotion-491"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <div
+                class="emotion-492"
+              />
+              <div
+                class="emotion-493"
+              >
+                <div
+                  class="emotion-494"
+                >
+                  <p
+                    class="emotion-489"
                   >
                     Dark  Theme 
                   </p>
                   <button
                     aria-label="Enable Dark Theme"
                     aria-pressed="false"
-                    class="emotion-495"
+                    class="emotion-496"
                     data-testid="theme-switch-button"
                     title="Enable Dark Theme"
                     type="button"
@@ -9967,7 +9988,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         class="emotion-11"
                       >
                         <svg
-                          class="emotion-498"
+                          class="emotion-499"
                           fill="currentColor"
                           role="img"
                           viewBox="0 0 17 17"
@@ -11446,7 +11467,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <a
                         aria-current="false"
-                        class="emotion-47"
+                        class="emotion-14"
                         data-testid="buttonLink"
                         href="/theme/theming/overview"
                       >

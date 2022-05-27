@@ -14,7 +14,7 @@ exports[`Logo Default logo renders as expected 1`] = `
 
 .emotion-1 {
   display: inline-block;
-  height: 40px;
+  height: 48px;
 }
 
 @media screen and (max-width: 1023px) {

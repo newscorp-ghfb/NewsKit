@@ -83,8 +83,6 @@ export const MenuMobileCollapsible = ({
                     title: {
                       typographyPreset: 'utilityHeading010',
                       stylePreset: 'sidebarHeader',
-                      // paddingInline: 'space070',
-                      //  marginInline: 'space030',
                       spaceInline: 'space030',
                       spaceInset: 'space080',
                     },

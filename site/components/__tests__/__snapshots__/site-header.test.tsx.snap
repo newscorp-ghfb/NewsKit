@@ -75,6 +75,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 .emotion-3 {
   font-size: 0;
   margin-left: 16px;
+  margin-bottom: 4px;
 }
 
 .emotion-4 {
@@ -287,7 +288,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-12 {
   display: inline-block;
-  height: 40px;
+  height: 48px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -1234,6 +1235,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 .emotion-3 {
   font-size: 0;
   margin-left: 16px;
+  margin-bottom: 4px;
 }
 
 .emotion-4 {
@@ -1446,7 +1448,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-12 {
   display: inline-block;
-  height: 40px;
+  height: 48px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -2393,6 +2395,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 .emotion-3 {
   font-size: 0;
   margin-left: 16px;
+  margin-bottom: 4px;
 }
 
 .emotion-4 {
@@ -2605,7 +2608,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-12 {
   display: inline-block;
-  height: 40px;
+  height: 48px;
 }
 
 @media screen and (max-width: 1023px) {
