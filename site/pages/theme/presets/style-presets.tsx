@@ -197,12 +197,12 @@ const CSS_PROPS = [
   },
   {
     token: 'opacity',
-    acceptedValues: 'foundations opacity',
+    acceptedValues: 'foundations opacity', // TODO: Link to Opacity page when we have it live
     description: 'The opacity level of an element',
   },
   {
     token: 'linear-gradient',
-    acceptedValues: 'foundations gradient',
+    acceptedValues: 'foundations gradient', // TODO: Link to Gradients page when we have it live
     description: 'The transition between two or more specified colors',
   },
 ];
