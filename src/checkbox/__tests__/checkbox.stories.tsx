@@ -34,6 +34,13 @@ const myCustomTheme = compileTheme(
           hover: {
             backgroundColor: 'blue',
           },
+          'focus-visible': {
+            outlineColor: '{{outline.outlineColorDefault}}',
+            outlineStyle: '{{outline.outlineStyleDefault}}',
+            outlineWidth: '{{outline.outlineWidthDefault}}',
+            outlineOffset: '{{outline.outlineOffsetDefault}}',
+            safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+          },
         },
         customCheckboxFeedback: {
           base: {

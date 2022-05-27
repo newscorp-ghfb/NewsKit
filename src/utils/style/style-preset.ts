@@ -124,11 +124,11 @@ const getPresetStates = (
   if (isValid) {
     forcedStates.push('valid');
   }
-  if (isFocused) {
-    forcedStates.push('focus');
-  }
   if (isFocusedVisible) {
     forcedStates.push('focus-visible');
+  }
+  if (isFocused) {
+    forcedStates.push('focus');
   }
   if (isHovered) {
     forcedStates.push('hover');

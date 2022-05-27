@@ -1,5 +1,19 @@
 import {StylePreset} from '../theme/types';
 
+const checked = {
+  backgroundColor: '{{colors.interactiveInput010}}',
+  borderColor: '{{colors.interactiveInput040}}',
+  iconColor: '{{colors.interactiveInput040}}',
+};
+
+const focusVisible = {
+  outlineColor: '{{outline.outlineColorDefault}}',
+  outlineStyle: '{{outline.outlineStyleDefault}}',
+  outlineWidth: '{{outline.outlineWidthDefault}}',
+  outlineOffset: '{{outline.outlineOffsetDefault}}',
+  safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+};
+
 export default {
   radioButtonInput: {
     base: {
@@ -18,21 +32,13 @@ export default {
       backgroundColor: '{{colors.interactiveInput030}}',
       borderColor: '{{colors.interactiveInput050}}',
     },
-    checked: {
-      backgroundColor: '{{colors.interactiveInput010}}',
-      borderColor: '{{colors.interactiveInput040}}',
-      iconColor: '{{colors.interactiveInput040}}',
-    },
+    checked,
     'checked:hover': {
       backgroundColor: '{{colors.interactiveInput030}}',
       borderColor: '{{colors.interactiveInput050}}',
       iconColor: '{{colors.interactiveInput050}}',
     },
-    'checked:focus': {
-      backgroundColor: '{{colors.interactiveInput010}}',
-      borderColor: '{{colors.interactiveInput040}}',
-      iconColor: '{{colors.interactiveInput040}}',
-    },
+    'checked:focus': checked,
     'checked:focus:hover': {
       backgroundColor: '{{colors.interactiveInput030}}',
       borderColor: '{{colors.interactiveInput050}}',
@@ -115,12 +121,10 @@ export default {
       borderColor: '{{colors.interactiveDisabled010}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outline.outlineColorDefault}}',
-      outlineStyle: '{{outline.outlineStyleDefault}}',
-      outlineWidth: '{{outline.outlineWidthDefault}}',
-      outlineOffset: '{{outline.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+    'focus-visible': focusVisible,
+    'checked:focus-visible': {
+      ...focusVisible,
+      ...checked,
     },
   },
 } as Record<string, StylePreset>;

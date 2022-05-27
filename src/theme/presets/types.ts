@@ -87,6 +87,11 @@ export interface StylePreset {
   'visited:hover'?: StylePresetStyles;
   'visited:focus'?: StylePresetStyles;
   'focus-visible'?: StylePresetStyles;
+  'checked:focus-visible'?: StylePresetStyles;
+  'invalid:focus-visible'?: StylePresetStyles;
+  'checked:invalid:focus-visible'?: StylePresetStyles;
+  'valid:focus-visible'?: StylePresetStyles;
+  'checked:valid:focus-visible'?: StylePresetStyles;
 }
 export type StylePresetStates = keyof StylePreset;
 
