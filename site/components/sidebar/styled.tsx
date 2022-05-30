@@ -33,7 +33,7 @@ export const StyledDrawer = styled(Drawer)`
   height: calc(100vh - 48px);
 `;
 
-export const SidebarDesktop = styled.div<SidebarWrapperProps>`
+export const StyledSidebarDesktop = styled.div<SidebarWrapperProps>`
   width: 100vw;
   position: fixed;
   overflow: auto;

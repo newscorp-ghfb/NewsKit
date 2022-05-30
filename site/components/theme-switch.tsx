@@ -6,18 +6,19 @@ interface ThemeSwitchProps {
   toggle: () => void;
   themeMode: string;
   textTheme?: boolean;
+  // handleSidebarClick?: () => void;
 }
 
 export const ThemeSwitch: React.FC<
   ThemeSwitchProps & {size?: FlagProps['size']}
 > = ({size, toggle, themeMode, textTheme}) => {
-  const isDark = () => themeMode === 'dark';
+  const isDark = themeMode === 'dark';
 
   return textTheme ? (
     <>
       <GridLayout columns="1fr 30px" onClick={toggle}>
         <P overrides={{typographyPreset: 'utilityLabel030'}}>
-          {`${isDark() ? 'Light' : 'Dark'}  Theme`} {textTheme}
+          {`${isDark ? 'Light' : 'Dark'}  Theme`} {textTheme}
         </P>
         <IconButton
           size={size}
@@ -27,14 +28,14 @@ export const ThemeSwitch: React.FC<
           eventOriginator="theme-switch-button"
           data-testid="theme-switch-button"
           onClick={toggle}
-          title={`${isDark() ? 'Disable' : 'Enable'} Dark Theme`}
-          aria-label={`${isDark() ? 'Disable' : 'Enable'} Dark Theme`}
-          aria-pressed={isDark() ? 'true' : 'false'}
+          title={`${isDark ? 'Disable' : 'Enable'} Dark Theme`}
+          aria-label={`${isDark ? 'Disable' : 'Enable'} Dark Theme`}
+          aria-pressed={isDark ? 'true' : 'false'}
           overrides={{
             stylePreset: 'buttonLightDarkToggle',
           }}
         >
-          {isDark() ? (
+          {isDark ? (
             <IconFilledLight overrides={{size: 'iconSize010'}} />
           ) : (
             <IconFilledDark overrides={{size: 'iconSize010'}} />
@@ -51,14 +52,14 @@ export const ThemeSwitch: React.FC<
       eventOriginator="theme-switch-button"
       data-testid="theme-switch-button"
       onClick={toggle}
-      title={`${isDark() ? 'Disable' : 'Enable'} Dark Theme`}
-      aria-label={`${isDark() ? 'Disable' : 'Enable'} Dark Theme`}
-      aria-pressed={isDark() ? 'true' : 'false'}
+      title={`${isDark ? 'Disable' : 'Enable'} Dark Theme`}
+      aria-label={`${isDark ? 'Disable' : 'Enable'} Dark Theme`}
+      aria-pressed={isDark ? 'true' : 'false'}
       overrides={{
         stylePreset: 'buttonLightDarkToggle',
       }}
     >
-      {isDark() ? (
+      {isDark ? (
         <IconFilledLight overrides={{size: 'iconSize010'}} />
       ) : (
         <IconFilledDark overrides={{size: 'iconSize010'}} />
