@@ -1,30 +1,19 @@
-import React, {useCallback, useState} from 'react';
-import {ScreenReaderOnly} from '../../../screen-reader-only';
-import {Slider} from '../../../slider';
-import {withOwnTheme} from '../../../utils/with-own-theme';
-import {getTokensForVolumeControl, useInitialVolume} from './utils';
-import {useAudioPlayerContext} from '../../context';
+import React, { useCallback, useState } from 'react';
+import { ScreenReaderOnly } from '../../../screen-reader-only';
+import { Slider } from '../../../slider';
+import { withOwnTheme } from '../../../utils/with-own-theme';
+import { getTokensForVolumeControl, useInitialVolume } from './utils';
+import { useAudioPlayerContext } from '../../context';
 import defaults from './defaults';
-import {MuteButton} from './mute-button';
-import {useTheme} from '../../../theme';
+import { MuteButton } from './mute-button';
+import { useTheme } from '../../../theme';
 import stylePresets from './style-presets';
-import {AudioPlayerVolumeControlProps} from './types';
-import {GridLayout} from '../../../grid-layout';
-import {getResponsiveSize, styled} from '../../../utils/style';
-
-// TODO handle vertical
-const VolumeSliderContainer = styled.div<{vertical?: boolean}>`
-  ${({vertical}) =>
-    getResponsiveSize(
-      vertical ? 'height' : 'width',
-      'audioPlayerVolumeControl.slider.track',
-      'slider.track',
-      'length',
-    )}
-`;
+import { AudioPlayerVolumeControlProps } from './types';
+import { GridLayoutItem } from '../../../grid-layout';
+import { StyledGridLayout, VolumeSliderContainer } from './styled';
 
 const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps> = props => {
-  const {getVolumeControlProps} = useAudioPlayerContext();
+  const { getVolumeControlProps } = useAudioPlayerContext();
   const {
     volume,
     onChange,
@@ -60,58 +49,73 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
   ]);
 
   // useInitialVolume Sets the initial volume on page load
-  useInitialVolume({onChange, initialVolume});
+  useInitialVolume({ onChange, initialVolume });
+
+  const verticalAreas = `slider
+                         muteButton`
+  const gridAreas = vertical ? verticalAreas: `muteButton slider`
+  const gridColumns = vertical ? "1fr" : "auto 1fr"
 
   return (
-    <GridLayout columns="auto 1fr">
-      <MuteButton
-        volume={volume}
-        unMutedVolume={unMutedVolume}
-        volumeControlButtonStylePreset={volumeControlButtonStylePreset}
-        onChange={onChange}
-        size={buttonSize}
-        iconSize={iconSize}
-        muteKeyboardShortcuts={muteKeyboardShortcuts}
-      />
+    <StyledGridLayout 
+      columns={gridColumns} 
+      areas={gridAreas} 
+      justifyItems={vertical ? 'center': 'start'} 
+      alignItems={'center'}
+      vertical={vertical}
+    >
+      <GridLayoutItem area='muteButton'>
+        <MuteButton
+          volume={volume}
+          unMutedVolume={unMutedVolume}
+          volumeControlButtonStylePreset={volumeControlButtonStylePreset}
+          onChange={onChange}
+          size={buttonSize}
+          iconSize={iconSize}
+          muteKeyboardShortcuts={muteKeyboardShortcuts}
+        />
+      </GridLayoutItem>
       {!collapsed && (
-        <VolumeSliderContainer vertical={vertical}>
-          <Slider
-            vertical={vertical}
-            min={0}
-            max={1}
-            step={0.1}
-            values={[volume]}
-            onChange={onSliderChange}
-            ariaLabel="Volume Control"
-            ariaValueText={`volume level ${[volume][0] * 10} of 10`}
-            dataTestId="volume-control-slider"
-            ariaDescribedBy="volume-control-sr-only-message"
-            overrides={{
-              track: {
-                stylePreset: sliderTrackStylePreset,
-                size: trackSize,
-              },
-              indicator: {
-                stylePreset: sliderIndicatorTrackStylePreset,
-              },
-              thumb: {
-                stylePreset: sliderThumbStylePreset,
-                size: thumbSize,
-              },
-            }}
-          />
-          <ScreenReaderOnly
-            id="volume-control-sr-only-message"
-            aria-hidden="true"
-          >
-            Use the arrow keys to adjust volume
-          </ScreenReaderOnly>
-        </VolumeSliderContainer>
+        <GridLayoutItem area='slider'>
+          <VolumeSliderContainer vertical={vertical}>
+            <Slider
+              vertical={vertical}
+              min={0}
+              max={1}
+              step={0.1}
+              values={[volume]}
+              onChange={onSliderChange}
+              ariaLabel="Volume Control"
+              ariaValueText={`volume level ${[volume][0] * 10} of 10`}
+              dataTestId="volume-control-slider"
+              ariaDescribedBy="volume-control-sr-only-message"
+              overrides={{
+                track: {
+                  stylePreset: sliderTrackStylePreset,
+                  size: trackSize,
+                },
+                indicator: {
+                  stylePreset: sliderIndicatorTrackStylePreset,
+                },
+                thumb: {
+                  stylePreset: sliderThumbStylePreset,
+                  size: thumbSize,
+                },
+              }}
+            />
+            <ScreenReaderOnly
+              id="volume-control-sr-only-message"
+              aria-hidden="true"
+            >
+              Use the arrow keys to adjust volume
+            </ScreenReaderOnly>
+          </VolumeSliderContainer>
+        </GridLayoutItem>
       )}
-    </GridLayout>
+    </StyledGridLayout>
   );
 };
 
 export const AudioPlayerVolumeControl = withOwnTheme(
   ThemelessAudioPlayerVolumeControl,
-)({defaults, stylePresets});
+)({ defaults, stylePresets });

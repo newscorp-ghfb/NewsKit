@@ -318,14 +318,15 @@ const AudioPlayerInlineRecorded = (props: {
 }) => (
   <AudioPlayerComposable src={AUDIO_SRC} {...props}>
     <GridLayout
-      columns="auto 40px 1fr auto"
+      columns="auto auto 40px 1fr auto"
       columnGap="space040"
-      alignItems="center"
+      alignItems="center" 
     >
-      {/* TODO add vertical scenario */}
-      {/* <AudioPlayerVolumeControl
+    <GridLayoutItem alignSelf={'end'}>
+      <AudioPlayerVolumeControl
         vertical={true}
-      /> */}
+      />
+    </GridLayoutItem>
       <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
       <AudioPlayerTimeDisplay
         format={({currentTime}) => calculateTime(currentTime)}
