@@ -23,9 +23,12 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
       label,
       startEnhancer,
       indicatorIcon,
+      expanded,
       applyDivider = true,
       disabled = false,
       children,
+      ariaControls,
+      id,
       overrides,
     },
     ref,
@@ -33,7 +36,13 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
     <StyledAccodionContainer ref={ref}>
       {headerText && (
         <StyledHeaderWrapper as={headingAs}>
-          <StyledAccordionButton overrides={overrides} disabled={disabled}>
+          <StyledAccordionButton
+            overrides={overrides}
+            disabled={disabled}
+            id={id}
+            aria-expanded={expanded}
+            aria-controls={ariaControls}
+          >
             {startEnhancer && <StyledEnhancer>{startEnhancer}</StyledEnhancer>}
             {headerText && <StyledHeaderText>{headerText}</StyledHeaderText>}
             {label && <StyledIndicatorLabel>{label}</StyledIndicatorLabel>}
@@ -43,8 +52,19 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
           </StyledAccordionButton>
         </StyledHeaderWrapper>
       )}
-      {applyDivider && <StyledDivider />}
-      {children && <StyledPanel overrides={overrides}>{children}</StyledPanel>}
+      {expanded && (
+        <>
+          {applyDivider && <StyledDivider />}
+          <StyledPanel
+            aria-labelledby={id}
+            id={ariaControls}
+            role="region"
+            overrides={overrides}
+          >
+            {children}
+          </StyledPanel>
+        </>
+      )}
     </StyledAccodionContainer>
   ),
 );

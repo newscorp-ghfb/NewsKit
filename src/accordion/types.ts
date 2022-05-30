@@ -30,11 +30,14 @@ export type AccordionPropsOverrides = {
 export interface AccordionProps {
   children?: Exclude<React.ReactNode, 'undefined'>;
   disabled?: boolean;
-  applyDivider?: boolean;
   headerText?: Exclude<React.ReactNode, 'undefined'>;
   headingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
   label?: string;
   startEnhancer?: React.ReactNode;
   indicatorIcon?: React.ReactNode;
+  ariaControls?: string;
+  id?: string;
+  expanded?: boolean;
+  applyDivider?: boolean;
   overrides?: AccordionPropsOverrides;
 }

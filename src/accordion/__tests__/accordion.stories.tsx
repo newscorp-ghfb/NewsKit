@@ -17,7 +17,7 @@ export const StoryAccordion = () => (
   <>
     <StorybookHeading>Expanded</StorybookHeading>
     <Accordion
-      headerText="Hello"
+      headerText="Header"
       label="Label"
       startEnhancer={
         <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
@@ -29,7 +29,9 @@ export const StoryAccordion = () => (
           }}
         />
       }
-      applyDivider
+      aria-controls="panel1-content"
+      id="panel1-header"
+      expanded
     >
       <TextBlock>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -40,7 +42,7 @@ export const StoryAccordion = () => (
     <br />
     <StorybookHeading>Collapsed</StorybookHeading>
     <Accordion
-      headerText="Hello"
+      headerText="Header"
       label="Label"
       startEnhancer={
         <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
@@ -52,6 +54,9 @@ export const StoryAccordion = () => (
           }}
         />
       }
+      expanded={false}
+      aria-controls="panel2-content"
+      id="panel2-header"
     >
       <TextBlock>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -62,7 +67,7 @@ export const StoryAccordion = () => (
     <br />
     <StorybookHeading>Disabled</StorybookHeading>
     <Accordion
-      headerText="Hello"
+      headerText="Header"
       disabled
       label="Label"
       startEnhancer={
@@ -76,6 +81,8 @@ export const StoryAccordion = () => (
         />
       }
       applyDivider
+      aria-controls="panel3-content"
+      id="panel3-header"
     >
       <TextBlock>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -86,7 +93,7 @@ export const StoryAccordion = () => (
     <StorybookHeading>HeaderText & IndicatorIcon</StorybookHeading>
     <div>
       <Accordion
-        headerText="Hello"
+        headerText="Header"
         indicatorIcon={
           <IconFilledExpandLess
             overrides={{
@@ -94,7 +101,9 @@ export const StoryAccordion = () => (
             }}
           />
         }
-        applyDivider
+        expanded
+        aria-controls="panel4-content"
+        id="panel4-header"
       >
         <TextBlock>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -102,7 +111,7 @@ export const StoryAccordion = () => (
         </TextBlock>
       </Accordion>
       <Accordion
-        headerText="Hello"
+        headerText="Header"
         indicatorIcon={
           <IconFilledExpandLess
             overrides={{
@@ -110,6 +119,8 @@ export const StoryAccordion = () => (
             }}
           />
         }
+        aria-controls="panel5-content"
+        id="panel5-header"
       />
     </div>
   </>
