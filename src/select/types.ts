@@ -70,5 +70,5 @@ export interface SelectOptionProps {
     typographyPreset?: MQ<string>;
     spaceInset?: MQ<string>;
     spaceInline?: MQ<string>;
-  };
+  } & LogicalProps;
 }

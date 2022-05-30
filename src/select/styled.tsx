@@ -163,6 +163,7 @@ export const StyledOption = styled.div<{
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+  ${logicalProps()}
 
   ${({$spaceInline}) =>
     $spaceInline ? getSpacingCssFromTheme('columnGap', $spaceInline) : null};

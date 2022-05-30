@@ -156,6 +156,14 @@ export default [
           'Fonts define the font family, boldness, size, and style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
       },
       {
+        title: 'Gradients',
+        page: true,
+        id: '/theme/gradients',
+        illustration: 'theme/gradients/hero',
+        description:
+          'Gradients is a visual representation of a colour. It is used to convey meaning and communicate a brand.',
+      },
+      {
         title: 'Iconography',
         page: true,
         id: '/theme/iconography',
@@ -170,6 +178,22 @@ export default [
         illustration: 'theme/motion/hero',
         description:
           'Motion is used to create movement and narrative within a product. Timely animated interface elements attract attention, provide guidance and enhance user experience.',
+      },
+      {
+        title: 'Opacity',
+        page: true,
+        id: '/theme/opacity',
+        illustration: 'static/theming/theme/opacity',
+        description:
+          'Opacity is used to create a visual layer between elements.',
+      },
+      {
+        title: 'Overlays',
+        page: true,
+        id: '/theme/overlays',
+        illustration: 'static/theming/theme/overlays',
+        description:
+          'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
       },
       {
         title: 'Shadows',
