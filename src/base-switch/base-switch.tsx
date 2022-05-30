@@ -15,6 +15,7 @@ import {useControlled} from '../utils/hooks';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {isFocusVisible} from '../utils/focus-visible';
+import {omitLogicalPropsFromOverrides} from '../utils/logical-properties';
 
 export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
   (
@@ -118,7 +119,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
         checked,
         size,
         iconSize,
-        parentOverrides: overrides,
+        parentOverrides: omitLogicalPropsFromOverrides(overrides),
         isFocused: isInputFocused,
         isHovered: isLabelHovered || isInputFocused,
       },

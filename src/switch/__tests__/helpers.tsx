@@ -1,6 +1,13 @@
+import React from 'react';
 import {SwitchOverrides, SwitchProps, SwitchState} from '../types';
-import {BaseSwitchSize} from '../../base-switch/types';
-import {IconFilledCheck, IconFilledClose, IconFilledDragHandle} from '../..';
+import {BaseSwitchIconProps, BaseSwitchSize} from '../../base-switch/types';
+import {
+  IconFilledCheck,
+  IconFilledClose,
+  IconFilledDarkMode,
+  IconFilledDragHandle,
+  IconFilledLightMode,
+} from '../..';
 
 export const states: [string, {checked?: boolean; state?: SwitchState}][] = [
   ['base', {}],
@@ -11,18 +18,22 @@ export const states: [string, {checked?: boolean; state?: SwitchState}][] = [
 
 export const sizes: BaseSwitchSize[] = ['small', 'medium', 'large'];
 
+/* istanbul ignore next */
+const DynamicThumbIcon = ({checked}: BaseSwitchIconProps) =>
+  checked ? <IconFilledDarkMode /> : <IconFilledLightMode />;
+
 export const icons: [
   string,
   Pick<SwitchOverrides, 'thumbIcon' | 'offIcon' | 'onIcon'>,
 ][] = [
-  ['thumb-icon', {thumbIcon: IconFilledDragHandle}],
+  ['thumb-icon', {thumbIcon: DynamicThumbIcon}],
   ['on-icon', {onIcon: IconFilledCheck}],
   ['off-icon', {offIcon: IconFilledClose}],
   ['on-and-off-icon', {onIcon: IconFilledCheck, offIcon: IconFilledClose}],
   [
     'thumb-and-on-and-off-icon',
     {
-      thumbIcon: IconFilledDragHandle,
+      thumbIcon: DynamicThumbIcon,
       onIcon: IconFilledCheck,
       offIcon: IconFilledClose,
     },
@@ -30,13 +41,30 @@ export const icons: [
 ];
 
 export const sizeOverrides: [string, SwitchOverrides][] = [
-  ['small-margin', {input: {spaceInline: '5px'}}],
-  ['large-margin', {input: {spaceInline: '100px'}}],
+  [
+    'small-margin',
+    {
+      input: {spaceInline: '5px'},
+      thumbIcon: IconFilledDragHandle,
+      onIcon: IconFilledCheck,
+      offIcon: IconFilledClose,
+    },
+  ],
+  [
+    'large-margin',
+    {
+      input: {spaceInline: '100px'},
+      thumbIcon: IconFilledDragHandle,
+      onIcon: IconFilledCheck,
+      offIcon: IconFilledClose,
+    },
+  ],
   [
     'narrow-track-with-long-text-to-show-vertical-alignment',
     {
       input: {blockSize: '12px', paddingInline: '0px', marginBlock: '10px'},
-      thumb: {stylePreset: 'borderedThumb'},
+      thumb: {stylePreset: 'borderedThumb', size: 'sizing060'},
+      thumbIcon: IconFilledDragHandle,
     },
   ],
 ];
