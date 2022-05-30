@@ -1,6 +1,6 @@
 import React from 'react';
 import {isValidElementType} from 'react-is';
-import {SwitchIconProps, SwitchProps} from './types';
+import {SwitchProps, SwitchTrackContentsProps} from './types';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
@@ -9,7 +9,6 @@ import {StyledSwitchContainer, StyledThumb, StyledTrackIcon} from './styled';
 import {BaseSwitchIconProps} from '../base-switch/types';
 import {Override} from '../utils/overrides';
 
-// TODO: Contains similar logic to getComponentOverrides to cast the override icon as a component. But why is this necessary?
 const iconAsComponent = (OverridesValue?: Override<BaseSwitchIconProps>) => {
   if (OverridesValue && isValidElementType(OverridesValue)) {
     return OverridesValue as React.ComponentType<BaseSwitchIconProps>;
@@ -17,17 +16,18 @@ const iconAsComponent = (OverridesValue?: Override<BaseSwitchIconProps>) => {
   return null;
 };
 
-const SwitchSelector = ({
-  size,
-  checked,
-  parentOverrides: overrides,
-  children,
-  isFocused,
-  isHovered,
-  state,
-}: SwitchIconProps & {children?: React.ReactNode}) => {
+const SwitchTrackContents = (props: BaseSwitchIconProps) => {
+  const {
+    size,
+    checked,
+    parentOverrides: overrides,
+    isFocused,
+    isHovered,
+    state,
+  } = props as SwitchTrackContentsProps;
   const OnIcon = iconAsComponent(overrides!.onIcon);
   const OffIcon = iconAsComponent(overrides!.offIcon);
+  const ThumbIcon = iconAsComponent(overrides!.thumbIcon);
   return (
     <StyledSwitchContainer size={size} overrides={overrides}>
       <StyledTrackIcon
@@ -53,34 +53,24 @@ const SwitchSelector = ({
         isHovered={isHovered}
         overrides={overrides}
       >
-        {children}
+        {!!ThumbIcon && <ThumbIcon checked={checked} />}
       </StyledThumb>
     </StyledSwitchContainer>
   );
 };
 
 const ThemelessSwitch = React.forwardRef<HTMLInputElement, SwitchProps>(
-  ({overrides, ...rest}, inputRef) => {
-    const ThumbIcon = iconAsComponent(overrides?.thumbIcon);
-
-    const SwitchSelectorWithIcon = (props: BaseSwitchIconProps) => (
-      <SwitchSelector {...(props as SwitchIconProps)}>
-        {!!ThumbIcon && <ThumbIcon />}
-      </SwitchSelector>
-    );
-
-    return (
-      <BaseSwitch
-        path="switch"
-        ref={inputRef}
-        type="checkbox"
-        role="switch"
-        overrides={overrides || {}}
-        {...rest}
-        defaultSwitchSelectorComponent={SwitchSelectorWithIcon}
-      />
-    );
-  },
+  ({overrides, ...rest}, inputRef) => (
+    <BaseSwitch
+      path="switch"
+      ref={inputRef}
+      type="checkbox"
+      role="switch"
+      overrides={overrides || {}}
+      {...rest}
+      defaultSwitchSelectorComponent={SwitchTrackContents}
+    />
+  ),
 );
 
 export const Switch = withOwnTheme(ThemelessSwitch)({

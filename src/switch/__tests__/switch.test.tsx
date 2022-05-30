@@ -4,9 +4,16 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {Switch} from '..';
+import {Switch, SwitchProps} from '..';
 import {sizes, states} from './helpers';
-import {IconFilledCheck, IconFilledClose, IconFilledError} from '../../icons';
+import {
+  IconFilledCheck,
+  IconFilledClose,
+  IconFilledDarkMode,
+  IconFilledError,
+  IconFilledLightMode,
+} from '../../icons';
+import {BaseSwitchIconProps} from '../../base-switch/types';
 
 describe('Switch', () => {
   states.forEach(([id, props]) => {
@@ -104,6 +111,26 @@ describe('Switch', () => {
       />
     ));
     expect(fragment).toMatchSnapshot();
+  });
+
+  test('passes checked prop to custom thumb icon', () => {
+    const props: SwitchProps = {
+      label: 'label',
+      overrides: {
+        thumbIcon: ({checked}: BaseSwitchIconProps) =>
+          checked ? <IconFilledDarkMode /> : <IconFilledLightMode />,
+      },
+    };
+
+    const checkedFragment = renderToFragmentWithTheme(() => (
+      <Switch {...props} checked />
+    ));
+    expect(checkedFragment).toMatchSnapshot();
+
+    const uncheckedFragment = renderToFragmentWithTheme(() => (
+      <Switch {...props} checked={false} />
+    ));
+    expect(uncheckedFragment).toMatchSnapshot();
   });
 
   test('toggle checked', () => {
