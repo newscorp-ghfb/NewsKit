@@ -44,6 +44,15 @@ export default [
         id: '/getting-started/design',
         subNav: [
           {
+            title: 'Overview',
+            page: true,
+            id: '/getting-started/design/design-overview',
+            description:
+              'Everything you need to know about using NewsKit to design digital products.',
+            illustration: 'guides/design-overview/hero',
+            cardTitle: 'Design Overview',
+          },
+          {
             title: 'Quickstart',
             page: true,
             id: '/getting-started/design/design-quickstart',
@@ -58,6 +67,15 @@ export default [
         title: 'Code',
         id: '/getting-started/code',
         subNav: [
+          {
+            title: 'Overview',
+            page: true,
+            id: '/getting-started/code/engineering-overview',
+            description:
+              'Everything you need to know about using NewsKit’s library of React web components.',
+            illustration: 'guides/engineering-overview/hero',
+            cardTitle: 'Engineering Overview',
+          },
           {
             title: 'Quickstart',
             page: true,
@@ -92,97 +110,92 @@ export default [
   {
     title: 'Theme',
     id: '/theme',
+
     subNav: [
       {
         title: 'Overview',
         page: true,
         id: '/theme/overview',
       },
+      {title: 'Foundation', id: '/theme'},
       {
-        title: 'Foundation',
-        id: '/theme/foundation',
-
-        subNav: [
-          {
-            title: 'Borders',
-            page: true,
-            id: '/theme/borders',
-            description:
-              'Borders direct attention, identify components, communicate state, and express a brand.',
-            illustration: 'theme/hero-borders-illustration',
-          },
-          {
-            title: 'Breakpoints',
-            page: true,
-            id: '/theme/breakpoints',
-            illustration: 'theme/breakpoints/hero',
-            description:
-              'Breakpoints set a visual point on a screen to alter the layout of content (responsive design), ensuring consistency across different screen widths.',
-          },
-          {
-            title: 'Colours',
-            page: true,
-            id: '/theme/colours',
-            illustration: 'theme/colours/hero',
-            description:
-              'Colour is key to expressing brand and identity, but it also plays a vital role in conveying specific meaning to a user.',
-          },
-          {
-            title: 'Design tokens',
-            page: true,
-            id: '/theme/design-tokens',
-            illustration: 'theme/design-tokens/hero',
-            description: `Design tokens are the design decisions of the design system. They are used in place of hard-coded values to maintain a scalable and consistent system for UI.`,
-          },
-          {
-            title: 'Fonts',
-            page: true,
-            id: '/theme/fonts',
-            illustration: 'theme/fonts/hero',
-            description:
-              'Fonts define the font family, boldness, size, and style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
-          },
-          {
-            title: 'Iconography',
-            page: true,
-            id: '/theme/iconography',
-            illustration: 'theme/iconography/hero',
-            description:
-              'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
-          },
-          {
-            title: 'Motion',
-            page: true,
-            id: '/theme/motion',
-            illustration: 'theme/motion/hero',
-            description:
-              'Motion is used to create movement and narrative within a product. Timely animated interface elements attract attention, provide guidance and enhance user experience.',
-          },
-          {
-            title: 'Shadows',
-            page: true,
-            id: '/theme/shadows',
-            illustration: 'components/hero-shadows-illustration',
-            description:
-              'Shadows provide visual cues about the distance between layers. They add levels of depth and realism to the user’s visual experience and improve the UI visual hierarchy.',
-          },
-          {
-            title: 'Sizing',
-            page: true,
-            id: '/theme/sizing',
-            illustration: 'components/hero-sizing-illustration',
-            description:
-              'A simple, standardised approach to size increases consistency and visual rhythm. Appropriate sizing is important for providing an inclusive experience.',
-          },
-          {
-            title: 'Spacing',
-            page: true,
-            id: '/theme/spacing',
-            illustration: 'theme/spacing/hero',
-            description:
-              'Considered use of space can improve communication: reducing visual clutter, providing hierarchy or helping show a relationship between elements on a screen.',
-          },
-        ],
+        title: 'Borders',
+        page: true,
+        id: '/theme/borders',
+        description:
+          'Borders direct attention, identify components, communicate state, and express a brand.',
+        illustration: 'theme/hero-borders-illustration',
+      },
+      {
+        title: 'Breakpoints',
+        page: true,
+        id: '/theme/breakpoints',
+        illustration: 'theme/breakpoints/hero',
+        description:
+          'Breakpoints set a visual point on a screen to alter the layout of content (responsive design), ensuring consistency across different screen widths.',
+      },
+      {
+        title: 'Colours',
+        page: true,
+        id: '/theme/colours',
+        illustration: 'theme/colours/hero',
+        description:
+          'Colour is key to expressing brand and identity, but it also plays a vital role in conveying specific meaning to a user.',
+      },
+      {
+        title: 'Design tokens',
+        page: true,
+        id: '/theme/design-tokens',
+        illustration: 'theme/design-tokens/hero',
+        description: `Design tokens are the design decisions of the design system. They are used in place of hard-coded values to maintain a scalable and consistent system for UI.`,
+      },
+      {
+        title: 'Fonts',
+        page: true,
+        id: '/theme/fonts',
+        illustration: 'theme/fonts/hero',
+        description:
+          'Fonts define the font family, boldness, size, and style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
+      },
+      {
+        title: 'Iconography',
+        page: true,
+        id: '/theme/iconography',
+        illustration: 'theme/iconography/hero',
+        description:
+          'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
+      },
+      {
+        title: 'Motion',
+        page: true,
+        id: '/theme/motion',
+        illustration: 'theme/motion/hero',
+        description:
+          'Motion is used to create movement and narrative within a product. Timely animated interface elements attract attention, provide guidance and enhance user experience.',
+      },
+      {
+        title: 'Shadows',
+        page: true,
+        id: '/theme/shadows',
+        illustration: 'components/hero-shadows-illustration',
+        description:
+          'Shadows provide visual cues about the distance between layers. They add levels of depth and realism to the user’s visual experience and improve the UI visual hierarchy.',
+      },
+      {
+        title: 'Sizing',
+        page: true,
+        id: '/theme/sizing',
+        illustration: 'components/hero-sizing-illustration',
+        description:
+          'A simple, standardised approach to size increases consistency and visual rhythm. Appropriate sizing is important for providing an inclusive experience.',
+      },
+      {
+        title: 'Spacing',
+        page: true,
+        id: '/theme/spacing',
+        illustration: 'theme/spacing/hero',
+        description:
+          'Considered use of space can improve communication: reducing visual clutter, providing hierarchy or helping show a relationship between elements on a screen.',
       },
       // {
       //   title: 'Overlays',
