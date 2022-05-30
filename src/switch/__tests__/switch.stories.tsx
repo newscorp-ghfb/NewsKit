@@ -117,17 +117,12 @@ export const StorySwitchOverrides = () => (
       <Cell xs={8} md={4}>
         <StorybookSubHeading>Size / spacing overrides</StorybookSubHeading>
 
-        {sizeOverrides.map(([id, o, ...props]) => (
+        {sizeOverrides.map(([id, overrides, ...props]) => (
           <Container key={id}>
             <Switch
               defaultChecked
               label={id}
-              overrides={{
-                ...o,
-                thumbIcon: IconFilledDragHandle,
-                onIcon: IconFilledCheck,
-                offIcon: IconFilledClose,
-              }}
+              overrides={overrides}
               {...props}
             />
           </Container>
@@ -171,9 +166,9 @@ export const StorySwitchFieldset = () => (
         <StorybookSubHeading>Fieldset</StorybookSubHeading>
 
         <Container>
-          <Fieldset legend="Accessibility Preferences">
+          <Fieldset legend="Fieldset label">
             <Switch
-              label="Reduced motion"
+              label="Switch label"
               defaultChecked
               overrides={{
                 thumbIcon: IconFilledDragHandle,
