@@ -22,7 +22,7 @@ const myCustomAccordionTheme = createTheme({
           color: 'black',
           borderStyle: 'none none solid none',
           borderColor: 'blue',
-          borderWidth: 'borderWidth010',
+          borderWidth: '{{borders.borderWidth020}}',
         },
         hover: {
           backgroundColor: 'pink',
@@ -35,15 +35,16 @@ const myCustomAccordionTheme = createTheme({
       },
       accordionDividerCustom: {
         base: {
-          borderColor: 'red',
-          borderWidth: 'borderWidth020',
+          borderColor: 'yellow',
+          borderWidth: '{{borders.borderWidth020}}',
+          borderStyle: 'solid',
         },
       },
       accordionPanelCustom: {
         base: {
-          borderStyle: 'dotted',
+          borderStyle: 'none none dotted none',
           borderColor: 'purple',
-          borderWidth: 'borderWidth020',
+          borderWidth: '{{borders.borderWidth020}}',
         },
       },
     },
@@ -60,8 +61,9 @@ export const StoryAccordion = () => (
     <StorybookHeading>Accordion</StorybookHeading>
     <StorybookSubHeading>Expanded</StorybookSubHeading>
     <Accordion
-      headerText="Hello"
+      header="Header"
       label="Label"
+      expanded
       startEnhancer={
         <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
       }
@@ -72,7 +74,6 @@ export const StoryAccordion = () => (
           }}
         />
       }
-      applyDivider
     >
       <TextBlock>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -83,7 +84,7 @@ export const StoryAccordion = () => (
     <br />
     <StorybookSubHeading>Collapsed</StorybookSubHeading>
     <Accordion
-      headerText="Hello"
+      header="Header"
       label="Label"
       startEnhancer={
         <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
@@ -105,7 +106,7 @@ export const StoryAccordion = () => (
     <br />
     <StorybookSubHeading>Disabled</StorybookSubHeading>
     <Accordion
-      headerText="Hello"
+      header="Header"
       disabled
       label="Label"
       startEnhancer={
@@ -118,7 +119,6 @@ export const StoryAccordion = () => (
           }}
         />
       }
-      applyDivider
     >
       <TextBlock>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -129,7 +129,8 @@ export const StoryAccordion = () => (
     <StorybookSubHeading>HeaderText & IndicatorIcon</StorybookSubHeading>
     <div>
       <Accordion
-        headerText="Hello"
+        headingAs="h4"
+        header="Header"
         indicatorIcon={
           <IconFilledExpandLess
             overrides={{
@@ -137,7 +138,6 @@ export const StoryAccordion = () => (
             }}
           />
         }
-        applyDivider
       >
         <TextBlock>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -145,7 +145,7 @@ export const StoryAccordion = () => (
         </TextBlock>
       </Accordion>
       <Accordion
-        headerText="Hello"
+        header="Header"
         indicatorIcon={
           <IconFilledExpandLess
             overrides={{
@@ -165,7 +165,7 @@ export const StoryAccordionOverrides = () => (
     <StorybookSubHeading>Overrides</StorybookSubHeading>
     <ThemeProvider theme={myCustomAccordionTheme}>
       <Accordion
-        headerText="Hello"
+        header="Header"
         label="Label"
         expanded
         startEnhancer={

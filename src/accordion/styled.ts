@@ -1,4 +1,3 @@
-import {Divider} from '../divider';
 import {TextBlock} from '../text-block';
 import {
   getResponsiveSize,
@@ -30,8 +29,8 @@ export const StyledAccordionButton = styled.button<
       'spaceInline',
     )}
   }
-  ${getResponsiveSize('minWidth', '', '', 'minWidth')};
-  ${getResponsiveSize('minHeight', '', '', 'minHeight')};
+  ${getResponsiveSize('minWidth', '', 'header', 'minWidth')};
+  ${getResponsiveSize('minHeight', '', 'header', 'minHeight')};
   ${getStylePreset('accordion.header', 'header')};
   ${getTypographyPreset('accordion.header', 'header')}
   ${logicalProps('accordion.header', 'header')}
@@ -43,7 +42,7 @@ export const StyledEnhancer = styled.div<Pick<AccordionProps, 'overrides'>>`
   ${getStylePreset('accordion.header.startEnhancer', 'header.startEnhancer')};
 `;
 
-export const StyledHeaderText = styled.div`
+export const StyledHeader = styled.div`
   display: flex;
   align-self: center;
   text-align: start;
@@ -66,7 +65,9 @@ export const StyledIndicatorIcon = styled.div<
   ${getStylePreset('accordion.header.indicatorIcon', 'header.indicatorIcon')};
 `;
 
-export const StyledDivider = styled(Divider)`
+export const StyledDividerWrapper = styled.div<
+  Pick<AccordionProps, 'overrides'>
+>`
   ${getStylePreset('accordion.divider', 'divider')};
 `;
 export const StyledPanel = styled.div<Pick<AccordionProps, 'overrides'>>`

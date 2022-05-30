@@ -1086,8 +1086,6 @@ Object {
       "stylePreset": "accordionDivider",
     },
     "header": Object {
-      "borderBottom": "interface050",
-      "borderWidth": "borderWidth010",
       "indicatorIcon": Object {
         "stylePreset": "inkBase",
       },
@@ -2658,7 +2656,8 @@ exports[`NewsKit Light theme combine all style presets 1`] = `
 Object {
   "accordionDivider": Object {
     "base": Object {
-      "backgroundColor": "{{colors.interface050}}",
+      "borderColor": "{{colors.interface050}}",
+      "borderStyle": "solid",
       "borderWidth": "{{borders.borderWidth010}}",
     },
   },
