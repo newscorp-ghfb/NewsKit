@@ -544,12 +544,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
               >
                 Group 1
                 <button
-                  aria-controls="sect-1"
                   aria-expanded="true"
                   aria-label="open button"
                   class="emotion-6"
                   data-testid="button"
-                  id="accordion-1"
                   type="button"
                 >
                   <div
@@ -620,12 +618,10 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
               >
                 Group 2
                 <button
-                  aria-controls="sect-1"
                   aria-expanded="false"
                   aria-label="close button"
                   class="emotion-6"
                   data-testid="button"
-                  id="accordion-1"
                   type="button"
                 >
                   <div
@@ -1517,12 +1513,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
               >
                 Group 1
                 <button
-                  aria-controls="sect-1"
                   aria-expanded="false"
                   aria-label="close button"
                   class="emotion-6"
                   data-testid="button"
-                  id="accordion-1"
                   type="button"
                 >
                   <div
@@ -1594,12 +1588,10 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
               >
                 Group 2
                 <button
-                  aria-controls="sect-1"
                   aria-expanded="false"
                   aria-label="close button"
                   class="emotion-6"
                   data-testid="button"
-                  id="accordion-1"
                   type="button"
                 >
                   <div
@@ -2320,12 +2312,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
               >
                 Group 1
                 <button
-                  aria-controls="sect-1"
                   aria-expanded="true"
                   aria-label="open button"
                   class="emotion-6"
                   data-testid="button"
-                  id="accordion-1"
                   type="button"
                 >
                   <div
@@ -2396,12 +2386,10 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
               >
                 Group 2
                 <button
-                  aria-controls="sect-1"
                   aria-expanded="false"
                   aria-label="close button"
                   class="emotion-6"
                   data-testid="button"
-                  id="accordion-1"
                   type="button"
                 >
                   <div
