@@ -16,7 +16,7 @@ FQDNStorybook:
   newskit-storybook.prod.ceng.newsuk.tech
 SSLCertARN:
   # this cert is for *.prod.ceng.newsuk.tech
-  arn:aws:acm:eu-west-1:474887192380:certificate/3d1137c3-2c58-4aeb-8d01-4927c43271ee
+  arn:aws:acm:eu-west-1:474887192380:certificate/ec49c52e-1347-4150-a577-276b397f2c53
 resources:
   limits:
     cpu: "0.5"
