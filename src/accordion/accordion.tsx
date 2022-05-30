@@ -29,7 +29,7 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
       children,
       ariaControls,
       id,
-      overrides,
+      overrides = {},
     },
     ref,
   ) => (
@@ -43,18 +43,28 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
             aria-expanded={expanded}
             aria-controls={ariaControls}
           >
-            {startEnhancer && <StyledEnhancer>{startEnhancer}</StyledEnhancer>}
+            {startEnhancer && (
+              <StyledEnhancer overrides={overrides}>
+                {startEnhancer}
+              </StyledEnhancer>
+            )}
             {headerText && <StyledHeaderText>{headerText}</StyledHeaderText>}
-            {label && <StyledIndicatorLabel>{label}</StyledIndicatorLabel>}
+            {label && (
+              <StyledIndicatorLabel overrides={overrides}>
+                {label}
+              </StyledIndicatorLabel>
+            )}
             {indicatorIcon && (
-              <StyledIndicatorIcon>{indicatorIcon}</StyledIndicatorIcon>
+              <StyledIndicatorIcon overrides={overrides}>
+                {indicatorIcon}
+              </StyledIndicatorIcon>
             )}
           </StyledAccordionButton>
         </StyledHeaderWrapper>
       )}
       {expanded && (
         <>
-          {applyDivider && <StyledDivider />}
+          {applyDivider && <StyledDivider overrides={overrides?.divider} />}
           <StyledPanel
             aria-labelledby={id}
             id={ariaControls}

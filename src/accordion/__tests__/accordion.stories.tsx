@@ -1,5 +1,8 @@
 import * as React from 'react';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {Accordion} from '../accordion';
 import {TextBlock} from '../../text-block';
 import {
@@ -7,6 +10,45 @@ import {
   IconFilledExpandLess,
   IconFilledExpandMore,
 } from '../../icons';
+import {createTheme, ThemeProvider} from '../../theme';
+
+const myCustomAccordionTheme = createTheme({
+  name: 'my-custom-accordion-theme',
+  overrides: {
+    stylePresets: {
+      accordionHeaderCustom: {
+        base: {
+          backgroundColor: '#81D2DA',
+          color: 'black',
+          borderStyle: 'none none solid none',
+          borderColor: 'blue',
+          borderWidth: 'borderWidth010',
+        },
+        hover: {
+          backgroundColor: 'pink',
+          color: 'red',
+        },
+        disabled: {
+          backgroundColor: 'interactiveDisabled010',
+          color: 'inkNonEssential',
+        },
+      },
+      accordionDividerCustom: {
+        base: {
+          borderColor: 'red',
+          borderWidth: 'borderWidth020',
+        },
+      },
+      accordionPanelCustom: {
+        base: {
+          borderStyle: 'dotted',
+          borderColor: 'purple',
+          borderWidth: 'borderWidth020',
+        },
+      },
+    },
+  },
+});
 
 export default {
   title: 'NewsKit Light/accordion',
@@ -15,9 +57,10 @@ export default {
 
 export const StoryAccordion = () => (
   <>
-    <StorybookHeading>Expanded</StorybookHeading>
+    <StorybookHeading>Accordion</StorybookHeading>
+    <StorybookSubHeading>Expanded</StorybookSubHeading>
     <Accordion
-      headerText="Header"
+      headerText="Hello"
       label="Label"
       startEnhancer={
         <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
@@ -29,9 +72,7 @@ export const StoryAccordion = () => (
           }}
         />
       }
-      aria-controls="panel1-content"
-      id="panel1-header"
-      expanded
+      applyDivider
     >
       <TextBlock>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -40,9 +81,9 @@ export const StoryAccordion = () => (
     </Accordion>
     <br />
     <br />
-    <StorybookHeading>Collapsed</StorybookHeading>
+    <StorybookSubHeading>Collapsed</StorybookSubHeading>
     <Accordion
-      headerText="Header"
+      headerText="Hello"
       label="Label"
       startEnhancer={
         <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
@@ -54,9 +95,6 @@ export const StoryAccordion = () => (
           }}
         />
       }
-      expanded={false}
-      aria-controls="panel2-content"
-      id="panel2-header"
     >
       <TextBlock>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -65,9 +103,9 @@ export const StoryAccordion = () => (
     </Accordion>
     <br />
     <br />
-    <StorybookHeading>Disabled</StorybookHeading>
+    <StorybookSubHeading>Disabled</StorybookSubHeading>
     <Accordion
-      headerText="Header"
+      headerText="Hello"
       disabled
       label="Label"
       startEnhancer={
@@ -81,8 +119,6 @@ export const StoryAccordion = () => (
         />
       }
       applyDivider
-      aria-controls="panel3-content"
-      id="panel3-header"
     >
       <TextBlock>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -90,10 +126,10 @@ export const StoryAccordion = () => (
       </TextBlock>
     </Accordion>
     <br />
-    <StorybookHeading>HeaderText & IndicatorIcon</StorybookHeading>
+    <StorybookSubHeading>HeaderText & IndicatorIcon</StorybookSubHeading>
     <div>
       <Accordion
-        headerText="Header"
+        headerText="Hello"
         indicatorIcon={
           <IconFilledExpandLess
             overrides={{
@@ -101,9 +137,7 @@ export const StoryAccordion = () => (
             }}
           />
         }
-        expanded
-        aria-controls="panel4-content"
-        id="panel4-header"
+        applyDivider
       >
         <TextBlock>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -111,7 +145,7 @@ export const StoryAccordion = () => (
         </TextBlock>
       </Accordion>
       <Accordion
-        headerText="Header"
+        headerText="Hello"
         indicatorIcon={
           <IconFilledExpandLess
             overrides={{
@@ -119,10 +153,64 @@ export const StoryAccordion = () => (
             }}
           />
         }
-        aria-controls="panel5-content"
-        id="panel5-header"
       />
     </div>
   </>
 );
 StoryAccordion.storyName = 'accordion';
+
+export const StoryAccordionOverrides = () => (
+  <>
+    <StorybookHeading>Accordion</StorybookHeading>
+    <StorybookSubHeading>Overrides</StorybookSubHeading>
+    <ThemeProvider theme={myCustomAccordionTheme}>
+      <Accordion
+        headerText="Hello"
+        label="Label"
+        expanded
+        startEnhancer={
+          <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
+        }
+        indicatorIcon={
+          <IconFilledExpandMore
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+        overrides={{
+          header: {
+            minWidth: 'sizing050',
+            minHeight: 'sizing060',
+            stylePreset: 'accordionHeaderCustom',
+            typographyPreset: 'utilityButton020',
+            spaceInline: 'space030',
+            indicatorIcon: {
+              stylePreset: 'inkPositive',
+            },
+            indicatorLabel: {
+              stylePreset: 'inkPositive',
+              typographyPreset: 'utilityButton020',
+            },
+            startEnhancer: {
+              stylePreset: 'inkPositive',
+            },
+          },
+          panel: {
+            stylePreset: 'accordionPanelCustom',
+          },
+          divider: {
+            stylePreset: 'accordionDividerCustom',
+          },
+        }}
+      >
+        <TextBlock>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </TextBlock>
+      </Accordion>
+    </ThemeProvider>
+  </>
+);
+
+StoryAccordionOverrides.storyName = 'accordion-with-overrides';

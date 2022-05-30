@@ -20,8 +20,9 @@ export default {
   },
   accordionDivider: {
     base: {
-      backgroundColor: '{{colors.interface050}}',
+      borderColor: '{{colors.interface050}}',
       borderWidth: '{{borders.borderWidth010}}',
+      borderStyle: 'solid',
     },
   },
   accordionPanel: {

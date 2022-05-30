@@ -15,16 +15,19 @@ export interface AccordionHeaderOverrides extends LogicalPaddingProps {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
   };
-}
-
-export interface AccordionPanelOverrides {
-  stylePreset?: MQ<string>;
-  borderBottom?: MQ<string>;
+  startEnhancer?: {
+    stylePreset?: MQ<string>;
+  };
 }
 
 export type AccordionPropsOverrides = {
+  divider?: {
+    stylePreset?: MQ<string>;
+  };
   header?: AccordionHeaderOverrides;
-  panel?: AccordionPanelOverrides;
+  panel?: {
+    stylePreset?: MQ<string>;
+  };
 };
 
 export interface AccordionProps {
