@@ -757,16 +757,15 @@ export default [
       },
     ],
   },
-  // ToDo: At least one pattern page should be ready to enable this nav link .
-  // {
-  //   title: 'Patterns',
-  //   id: '/patterns',
-  //   subNav: [
-  //     {
-  //       title: 'Overview',
-  //       page: true,
-  //       id: '/patterns/overview',
-  //     },
-  //   ],
-  // },
+  {
+    title: 'Patterns',
+    id: '/patterns',
+    subNav: [
+      {
+        title: 'Forms',
+        page: true,
+        id: '/patterns/patterns-index',
+      },
+    ],
+  },
 ];
