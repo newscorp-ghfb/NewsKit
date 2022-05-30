@@ -114,15 +114,14 @@ const commonOverridesRows = [
     description: 'If provided, this overrides the input & placeholder text.',
   },
   {
-    attribute: 'spaceInset',
+    attribute: 'spaceInset(deprecated)',
     type: 'MQ<string>',
     default: [
       'small = spaceInset020',
       'medium = spaceInset030',
       'large = spaceInset030',
     ],
-    description:
-      'If provided, this overrides the inset space within the Text Field.',
+    description: `This property is deprecated. Use paddingInline and paddingBlock instead.`,
   },
   {
     attribute: 'startEnhancer.iconSize',

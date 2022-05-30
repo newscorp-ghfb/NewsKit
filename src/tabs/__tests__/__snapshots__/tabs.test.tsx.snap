@@ -30387,6 +30387,10 @@ exports[`with logical props overrides 1`] = `
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
 }
 
 .emotion-1 {
@@ -30437,10 +30441,6 @@ exports[`with logical props overrides 1`] = `
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  margin-inline: 48px;
-  margin-block: 32px;
-  padding-inline: 8px;
-  padding-block: 16px;
   width: 100%;
   border-width: 0;
   position: relative;

@@ -297,8 +297,6 @@ Object {
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 8px;
-  padding-block: 16px;
 }
 
 .emotion-4::before {
@@ -558,8 +556,6 @@ Object {
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 8px;
-  padding-block: 16px;
 }
 
 .emotion-4::before {

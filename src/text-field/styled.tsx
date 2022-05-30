@@ -1,4 +1,3 @@
-import {logicalPaddingProps} from '../utils/logical-properties';
 import {getTypographyPreset, styled, getResponsiveSpace} from '../utils/style';
 import {FormInputTextFieldProps, TextFieldSizeType} from './types';
 
@@ -26,6 +25,4 @@ export const StyledInput = styled.input<
   // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
   ${({$size}) =>
     getResponsiveSpace('padding', `textField.${$size}`, '', 'spaceInset')}
-
-  ${({$size}) => logicalPaddingProps(`textField.${$size}`)}
 `;
