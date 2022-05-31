@@ -764,7 +764,16 @@ export default [
       {
         title: 'Forms',
         page: true,
-        id: '/patterns/patterns-index',
+        id: '/patterns/forms',
+        description:
+          'Design patterns provide a framework for solving a particular user problem in a consistent, considered way.',
+      },
+      {
+        title: 'Overview',
+        page: true,
+        id: '/patterns/overview',
+        description: 'Forms are used to collect customer’s data.',
+        illustration: 'patterns/overview/hero',
       },
     ],
   },

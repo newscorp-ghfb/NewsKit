@@ -32,7 +32,7 @@ const getPatternsCardList = (routeList: Item[]) =>
 
 const patternsIndexRouteListCards = getPatternsCardList(patternsRouteList);
 
-const PatternsIndex = (layoutProps: LayoutProps) => (
+const Forms = (layoutProps: LayoutProps) => (
   <>
     <Layout {...layoutProps} newPage>
       {({themeMode}) => (
@@ -61,4 +61,4 @@ const PatternsIndex = (layoutProps: LayoutProps) => (
   </>
 );
 
-export default PatternsIndex;
+export default Forms;
