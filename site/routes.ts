@@ -158,7 +158,7 @@ export default [
       {
         title: 'Gradients',
         page: true,
-        id: '/theme/gradients',
+        id: '/theme/overview',
         illustration: 'theme/gradients/hero',
         description:
           'Gradients is a visual representation of a colour. It is used to convey meaning and communicate a brand.',
@@ -182,16 +182,16 @@ export default [
       {
         title: 'Opacity',
         page: true,
-        id: '/theme/opacity',
-        illustration: 'static/theming/theme/opacity',
+        id: '/theme/overview',
+        illustration: 'theme/opacity/hero',
         description:
           'Opacity is used to create a visual layer between elements.',
       },
       {
         title: 'Overlays',
         page: true,
-        id: '/theme/overlays',
-        illustration: 'static/theming/theme/overlays',
+        id: '/theme/overview',
+        illustration: 'theme/overlays/hero',
         description:
           'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
       },
