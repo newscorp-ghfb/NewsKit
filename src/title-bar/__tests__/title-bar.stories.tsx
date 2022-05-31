@@ -8,6 +8,10 @@ import {Stack} from '../../stack';
 
 import {IconFilledFigma} from '../../icons/filled/custom/icon-filled-figma';
 import {styled} from '../../utils/style';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-title-bar-theme',
@@ -113,3 +117,51 @@ export const StoryTitleBarAsH1toh6 = () => (
   </>
 );
 StoryTitleBarAsH1toh6.storyName = 'title-bar-as-h1toh6';
+
+export const StoryTagLogicalProps = () => (
+  <>
+    <StorybookHeading>TitleBar with Logical Props overrides</StorybookHeading>
+
+    <StorybookSubHeading>marginInline & marginBlock</StorybookSubHeading>
+    <TitleBar
+      headingAs="h6"
+      overrides={{
+        marginBlock: 'space060',
+        marginInline: 'space080',
+      }}
+    >
+      Title bar
+    </TitleBar>
+
+    <br />
+    <StorybookSubHeading>paddingInline & paddingBlock</StorybookSubHeading>
+    <TitleBar
+      headingAs="h6"
+      overrides={{
+        paddingBlock: 'space060',
+        paddingInline: 'space080',
+      }}
+    >
+      Title bar
+    </TitleBar>
+
+    <br />
+    <StorybookSubHeading>
+      marginInline & marginBlock & paddingInline & paddingBlock
+    </StorybookSubHeading>
+    <TitleBar
+      headingAs="h6"
+      overrides={{
+        marginBlock: 'space060',
+        marginInline: 'space080',
+        paddingBlock: 'space060',
+        paddingInline: 'space080',
+      }}
+    >
+      Title bar
+    </TitleBar>
+
+    <br />
+  </>
+);
+StoryTagLogicalProps.storyName = 'title-bar-logical-props';
