@@ -24,7 +24,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
   padding-block: 8px;
 }
 
-<p
+<div
     class="Tooltip emotion-0"
     id="floating-ui-2"
     role="tooltip"
@@ -32,7 +32,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
     tabindex="-1"
   >
     hello
-  </p>
+  </div>
 </DocumentFragment>
 `;
 
@@ -64,7 +64,7 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
   padding-block: 16px;
 }
 
-<p
+<div
     class="Tooltip emotion-0"
     id="floating-ui-11"
     role="tooltip"
@@ -72,6 +72,6 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
     tabindex="-1"
   >
     hello
-  </p>
+  </div>
 </DocumentFragment>
 `;

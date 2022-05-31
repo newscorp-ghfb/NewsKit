@@ -89,7 +89,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
       )}
       {open && (
         <StyledTooltip
-          as={isTitleString ? 'p' : 'div'}
+          as="div"
           {...getFloatingProps({
             ref: floating,
             id,
