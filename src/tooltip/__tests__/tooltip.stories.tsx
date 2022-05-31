@@ -36,6 +36,11 @@ const myCustomTheme = createTheme({
           color: '{{colors.inkInverse}}',
         },
       },
+      tooltipPointerCustom: {
+        base: {
+          backgroundColor: '{{colors.red080}}',
+        },
+      },
     },
   },
 });
@@ -430,6 +435,11 @@ export const StoryTooltipOverrides = () => (
           paddingInline: 'space020',
           stylePreset: 'tooltipCustom',
           typographyPreset: 'utilityLabel020',
+          distance: 'space080',
+          pointer: {
+            stylePreset: 'tooltipPointerCustom',
+            size: 'sizing030',
+          },
         }}
       >
         <Button

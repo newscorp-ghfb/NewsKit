@@ -1,16 +1,17 @@
 import React from 'react';
 import {fireEvent} from '@testing-library/react';
 import {renderWithTheme} from '../../test/test-utils';
-import {Tooltip} from '..';
+import {Tooltip, TooltipProps} from '..';
 import {TriggerType} from '../types';
 import {Button} from '../../button';
 import {createTheme} from '../../theme';
 
 describe('Tooltip', () => {
-  const defaultProps = {
+  const defaultProps: TooltipProps = {
     children: <button type="submit">Add</button>,
     title: 'hello',
     defaultOpen: true,
+    showPointer: false,
   };
 
   // Mocking ResizeObserver
@@ -81,6 +82,73 @@ describe('Tooltip', () => {
         },
         myCustomTheme,
       );
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('with pointer', () => {
+      const {asFragment} = renderWithTheme(Tooltip, {
+        ...defaultProps,
+        showPointer: true,
+      });
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('with pointer stylePreset overrides', () => {
+      const myCustomTheme = createTheme({
+        name: 'my-custom-tooltip-theme',
+        overrides: {
+          stylePresets: {
+            tooltipPointerCustom: {
+              base: {
+                backgroundColor: '{{colors.red080}}',
+              },
+            },
+          },
+        },
+      });
+      const {asFragment} = renderWithTheme(
+        Tooltip,
+        {
+          ...defaultProps,
+          showPointer: true,
+          overrides: {
+            pointer: {
+              stylePreset: 'tooltipPointerCustom',
+            },
+          },
+        },
+        myCustomTheme,
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('with pointer size overrides', () => {
+      const {asFragment} = renderWithTheme(Tooltip, {
+        ...defaultProps,
+        showPointer: true,
+        overrides: {
+          pointer: {
+            size: 'sizing040',
+          },
+        },
+      });
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('with pointer and distance override has offset', () => {
+      const {asFragment} = renderWithTheme(Tooltip, {
+        ...defaultProps,
+        showPointer: true,
+        overrides: {
+          distance: 'space040',
+        },
+      });
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('with no pointer and distance override has no offset', () => {
+      const {asFragment} = renderWithTheme(Tooltip, {
+        ...defaultProps,
+        showPointer: false,
+        overrides: {
+          distance: 'space040',
+        },
+      });
       expect(asFragment()).toMatchSnapshot();
     });
   });

@@ -8,14 +8,29 @@ import {
   useRole,
   useDismiss,
   useId,
+  arrow,
+  offset,
 } from '@floating-ui/react-dom-interactions';
 import composeRefs from '@seznam/compose-react-refs';
+import {useRef} from 'react';
 import {TooltipProps} from './types';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {StyledTooltip} from './styled';
+import {StyledPointer, StyledTooltip} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {useControlled} from '../utils/hooks';
+import {useTheme} from '../theme';
+import {getResponsiveSpace, ThemeProp} from '../utils';
+
+const calculateDistance = <Props extends ThemeProp>(props: Props) => {
+  const {distance} = getResponsiveSpace(
+    'distance',
+    'tooltip',
+    'distance',
+    'distance',
+  )(props) as {distance: string};
+  return parseInt(distance.replace('px', ''), 10);
+};
 
 const ThemelessTooltip: React.FC<TooltipProps> = ({
   children,
@@ -26,6 +41,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
   defaultOpen,
   asLabel,
   overrides,
+  showPointer = true,
   ...props
 }) => {
   const [open, setOpen] = useControlled({
@@ -33,11 +49,25 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
     defaultValue: Boolean(defaultOpen),
   });
 
-  const {x, y, reference, floating, strategy, context} = useFloating({
+  const theme = useTheme();
+  const distance = calculateDistance({theme, overrides});
+  const pointerRef = useRef(null);
+  const {
+    x,
+    y,
+    reference,
+    floating,
+    strategy,
+    context,
+    middlewareData: {arrow: {x: pointerX, y: pointerY} = {}},
+  } = useFloating({
     placement,
     open,
     onOpenChange: setOpen,
     whileElementsMounted: autoUpdate,
+    middleware: showPointer
+      ? [arrow({element: pointerRef}), offset(distance)]
+      : [],
   });
 
   const {getReferenceProps, getFloatingProps} = useInteractions([
@@ -103,6 +133,16 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
           overrides={overrides}
           {...props}
         >
+          {showPointer && (
+            <StyledPointer
+              id="arrow"
+              ref={pointerRef}
+              placement={placement}
+              x={pointerX}
+              y={pointerY}
+              overrides={overrides}
+            />
+          )}
           {title}
         </StyledTooltip>
       )}

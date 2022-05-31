@@ -16,11 +16,17 @@ export interface TooltipProps
   trigger?: TriggerType | TriggerType[];
   placement?: Placement;
   asLabel?: boolean;
+  showPointer?: boolean;
   overrides?: {
     zIndex?: number;
     maxWidth?: MQ<string>;
     minWidth?: MQ<string>;
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
+    distance?: MQ<string>;
+    pointer?: {
+      size?: MQ<string>;
+      stylePreset?: MQ<string>;
+    };
   } & LogicalPaddingProps;
 }

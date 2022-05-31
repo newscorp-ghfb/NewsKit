@@ -2597,10 +2597,16 @@ Object {
     "stylePreset": "toastNeutral",
   },
   "tooltip": Object {
+    "distance": "space020",
     "paddingBlock": "spaceInset020",
     "paddingInline": "spaceInset020",
     "stylePreset": "tooltip",
     "typographyPreset": "utilityLabel010",
+    "zIndex": 80,
+  },
+  "tooltipPointer": Object {
+    "size": "sizing010",
+    "stylePreset": "tooltipPointer",
     "zIndex": 80,
   },
   "unorderedList": Object {
@@ -4785,6 +4791,11 @@ Object {
       "backgroundColor": "{{colors.interface060}}",
       "borderRadius": "{{borders.borderRadiusDefault}}",
       "color": "{{colors.inkInverse}}",
+    },
+  },
+  "tooltipPointer": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interface060}}",
     },
   },
   "videoPlayerControlBar": Object {

@@ -36,6 +36,42 @@ exports[`Tooltip should render correct styles: default 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Tooltip should render correct styles: with no pointer and distance override has no offset 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-26"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  margin: 0;
+  pointer-events: none;
+  z-index: 80;
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+<div
+    class="Tooltip emotion-0"
+    id="floating-ui-26"
+    role="tooltip"
+    style="position: absolute;"
+    tabindex="-1"
+  >
+    hello
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Tooltip should render correct styles: with overrides 1`] = `
 <DocumentFragment>
   <button
@@ -71,6 +107,214 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
     style="position: absolute;"
     tabindex="-1"
   >
+    hello
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip should render correct styles: with pointer 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-14"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  margin: 0;
+  pointer-events: none;
+  z-index: 80;
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-1 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  bottom: calc(-4px / 2);
+}
+
+<div
+    class="Tooltip emotion-0"
+    id="floating-ui-14"
+    role="tooltip"
+    style="position: absolute;"
+    tabindex="-1"
+  >
+    <div
+      class="emotion-1"
+      id="arrow"
+    />
+    hello
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip should render correct styles: with pointer and distance override has offset 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-23"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  margin: 0;
+  pointer-events: none;
+  z-index: 80;
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-1 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  bottom: calc(-4px / 2);
+}
+
+<div
+    class="Tooltip emotion-0"
+    id="floating-ui-23"
+    role="tooltip"
+    style="position: absolute;"
+    tabindex="-1"
+  >
+    <div
+      class="emotion-1"
+      id="arrow"
+    />
+    hello
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip should render correct styles: with pointer size overrides 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-20"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  margin: 0;
+  pointer-events: none;
+  z-index: 80;
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-1 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0A0A0A;
+  width: 16px;
+  height: 16px;
+  bottom: calc(-16px / 2);
+}
+
+<div
+    class="Tooltip emotion-0"
+    id="floating-ui-20"
+    role="tooltip"
+    style="position: absolute;"
+    tabindex="-1"
+  >
+    <div
+      class="emotion-1"
+      id="arrow"
+    />
+    hello
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip should render correct styles: with pointer stylePreset overrides 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-17"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  margin: 0;
+  pointer-events: none;
+  z-index: 80;
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-1 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #A60100;
+  width: 4px;
+  height: 4px;
+  bottom: calc(-4px / 2);
+}
+
+<div
+    class="Tooltip emotion-0"
+    id="floating-ui-17"
+    role="tooltip"
+    style="position: absolute;"
+    tabindex="-1"
+  >
+    <div
+      class="emotion-1"
+      id="arrow"
+    />
     hello
   </div>
 </DocumentFragment>

@@ -8,4 +8,9 @@ export default {
       borderRadius: '{{borders.borderRadiusDefault}}',
     },
   },
+  tooltipPointer: {
+    base: {
+      backgroundColor: '{{colors.interface060}}',
+    },
+  },
 } as Record<string, StylePreset>;

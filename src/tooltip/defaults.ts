@@ -5,5 +5,11 @@ export default {
     paddingInline: 'spaceInset020',
     stylePreset: 'tooltip',
     typographyPreset: 'utilityLabel010',
+    distance: 'space020',
+  },
+  tooltipPointer: {
+    zIndex: 80,
+    stylePreset: 'tooltipPointer',
+    size: 'sizing010',
   },
 };
