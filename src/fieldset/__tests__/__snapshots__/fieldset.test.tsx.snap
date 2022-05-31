@@ -246,8 +246,8 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -503,7 +503,6 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -824,8 +823,8 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1081,7 +1080,6 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -1402,8 +1400,8 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1659,7 +1657,6 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;

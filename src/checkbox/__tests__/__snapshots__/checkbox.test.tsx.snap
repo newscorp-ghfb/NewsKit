@@ -96,8 +96,8 @@ exports[`Checkbox active state: active off 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -353,7 +353,6 @@ exports[`Checkbox active state: active off 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -481,8 +480,8 @@ exports[`Checkbox active state: active on 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -738,7 +737,6 @@ exports[`Checkbox active state: active on 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -843,8 +841,8 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -889,7 +887,6 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -1035,8 +1032,8 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1292,7 +1289,6 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -1410,8 +1406,8 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1455,7 +1451,6 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -1570,8 +1565,8 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1615,7 +1610,6 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -1735,8 +1729,8 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1781,7 +1775,6 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -1927,8 +1920,8 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2184,7 +2177,6 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -2302,8 +2294,8 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2347,7 +2339,6 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -2462,8 +2453,8 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2507,7 +2498,6 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -2650,8 +2640,8 @@ exports[`Checkbox label attributes 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2907,7 +2897,6 @@ exports[`Checkbox label attributes 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -3068,8 +3057,8 @@ exports[`Checkbox label position start 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3325,7 +3314,6 @@ exports[`Checkbox label position start 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -3458,8 +3446,8 @@ exports[`Checkbox onBlur and onFocus when isFocusVisible return false: with blur
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3715,7 +3703,6 @@ exports[`Checkbox onBlur and onFocus when isFocusVisible return false: with blur
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -3843,8 +3830,8 @@ exports[`Checkbox onBlur and onFocus when isFocusVisible return false: with focu
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3894,7 +3881,6 @@ exports[`Checkbox onBlur and onFocus when isFocusVisible return false: with focu
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -4022,8 +4008,8 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4279,7 +4265,6 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -4407,8 +4392,8 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4464,7 +4449,6 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -4592,8 +4576,8 @@ exports[`Checkbox render with size: large & checked 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4713,7 +4697,6 @@ exports[`Checkbox render with size: large & checked 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -4858,8 +4841,8 @@ exports[`Checkbox render with size: large & label 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5115,7 +5098,6 @@ exports[`Checkbox render with size: large & label 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -5261,8 +5243,8 @@ exports[`Checkbox render with size: large 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5518,7 +5500,6 @@ exports[`Checkbox render with size: large 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -5646,8 +5627,8 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5767,7 +5748,6 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -5912,8 +5892,8 @@ exports[`Checkbox render with size: medium & label 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6169,7 +6149,6 @@ exports[`Checkbox render with size: medium & label 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -6315,8 +6294,8 @@ exports[`Checkbox render with size: medium 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6572,7 +6551,6 @@ exports[`Checkbox render with size: medium 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -6700,8 +6678,8 @@ exports[`Checkbox render with size: small & checked 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6821,7 +6799,6 @@ exports[`Checkbox render with size: small & checked 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -6966,8 +6943,8 @@ exports[`Checkbox render with size: small & label 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7223,7 +7200,6 @@ exports[`Checkbox render with size: small & label 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -7369,8 +7345,8 @@ exports[`Checkbox render with size: small 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7626,7 +7602,6 @@ exports[`Checkbox render with size: small 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -7754,8 +7729,8 @@ exports[`Checkbox render with state: base 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8011,7 +7986,6 @@ exports[`Checkbox render with state: base 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -8140,8 +8114,8 @@ exports[`Checkbox render with state: checked 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8261,7 +8235,6 @@ exports[`Checkbox render with state: checked 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -8379,8 +8352,8 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8454,7 +8427,6 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -8573,8 +8545,8 @@ exports[`Checkbox render with state: disabled 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8618,7 +8590,6 @@ exports[`Checkbox render with state: disabled 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -8748,8 +8719,8 @@ exports[`Checkbox render with state: invalid 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8818,7 +8789,6 @@ exports[`Checkbox render with state: invalid 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -8947,8 +8917,8 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9049,7 +9019,6 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -9195,8 +9164,8 @@ exports[`Checkbox render with state: valid 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9267,7 +9236,6 @@ exports[`Checkbox render with state: valid 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -9396,8 +9364,8 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9498,7 +9466,6 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -9646,8 +9613,8 @@ exports[`Checkbox with logical props overrides 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9767,7 +9734,6 @@ exports[`Checkbox with logical props overrides 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -9881,8 +9847,8 @@ exports[`Checkbox with overrides 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9947,7 +9913,6 @@ exports[`Checkbox with overrides 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;

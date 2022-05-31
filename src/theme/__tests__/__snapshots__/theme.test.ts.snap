@@ -4891,8 +4891,23 @@ Object {
     "checked": Object {
       "backgroundColor": "{{colors.interactiveInput040}}",
     },
+    "checked:focus-visible": Object {
+      "backgroundColor": "{{colors.interactiveInput040}}",
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
+    },
     "disabled": Object {
       "backgroundColor": "{{colors.interactiveDisabled010}}",
+    },
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
   },
   "switchTrackIcon": Object {

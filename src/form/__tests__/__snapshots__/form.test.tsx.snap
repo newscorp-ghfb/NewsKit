@@ -4462,8 +4462,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4719,7 +4719,6 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -4743,8 +4742,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5700,8 +5699,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5957,7 +5956,6 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -5981,8 +5979,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7293,8 +7291,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7550,7 +7548,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
@@ -7757,8 +7754,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7992,7 +7989,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0;
   opacity: 0;
