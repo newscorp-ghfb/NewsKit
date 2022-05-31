@@ -786,17 +786,14 @@ describe('Audio Player Composable', () => {
 
   describe('VolumeControl', () => {
     it('should have mute unmute functionality', () => {
-      // TODO 
+      // TODO
       // const onVolumeChange = jest.fn();
       const props = {
         ...recordedAudioProps,
         // onVolumeChange
-      }
+      };
 
-      const {getByTestId} = renderWithTheme(
-        AudioPlayerComposable,
-        props,
-      );
+      const {getByTestId} = renderWithTheme(AudioPlayerComposable, props);
 
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
       const muteButton = getByTestId('mute-button');
@@ -820,7 +817,6 @@ describe('Audio Player Composable', () => {
         code: 39,
       });
       expect(audioElement.volume).toEqual(0.1);
-
 
       // fireEvent.volumeChange(audioElement, {
       //   target: {volume: 0.5},

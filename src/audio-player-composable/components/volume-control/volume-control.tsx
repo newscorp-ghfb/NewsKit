@@ -10,7 +10,11 @@ import {useTheme} from '../../../theme';
 import stylePresets from './style-presets';
 import {AudioPlayerVolumeControlProps} from './types';
 import {GridLayoutItem} from '../../../grid-layout';
-import {StyledGridLayout, StyledGridLayoutItem, VolumeSliderContainer} from './styled';
+import {
+  StyledGridLayout,
+  StyledGridLayoutItem,
+  VolumeSliderContainer,
+} from './styled';
 
 const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps> = props => {
   const {getVolumeControlProps} = useAudioPlayerContext();
