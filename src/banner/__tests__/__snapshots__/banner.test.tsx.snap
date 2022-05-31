@@ -826,14 +826,6 @@ exports[`Banner renders with content as string and link 1`] = `
   outline-offset: 2px;
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-9:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1199,14 +1191,6 @@ exports[`Banner renders with content as string and link 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-9:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-10 {

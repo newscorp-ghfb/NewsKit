@@ -149,14 +149,6 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   outline-offset: 2px;
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-4:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -536,14 +528,6 @@ exports[`Byline renders correctly with authors and links 1`] = `
   outline-offset: 2px;
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-4:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -849,14 +833,6 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   outline-offset: 2px;
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-4:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1128,14 +1104,6 @@ exports[`Byline renders correctly with logical props overrides 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-4:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-5 {

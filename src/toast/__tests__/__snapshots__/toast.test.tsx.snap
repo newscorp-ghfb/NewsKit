@@ -1682,14 +1682,6 @@ exports[`Toast Component renders with content as string and link 1`] = `
   outline-offset: 2px;
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-4:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;

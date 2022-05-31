@@ -27,6 +27,12 @@ const myCustomTheme = createTheme({
         hover: {
           color: '{{colors.inkLinkHover}}',
         },
+        'focus-visible': {
+          outlineColor: '{{outline.outlineColorDefault}}',
+          outlineStyle: '{{outline.outlineStyleDefault}}',
+          outlineWidth: '{{outline.outlineWidthDefault}}',
+          outlineOffset: '{{outline.outlineOffsetDefault}}',
+        },
       },
     },
   },
@@ -122,9 +128,7 @@ export const StoryLink = () => (
     </LinkInline>
     <br />
     <br />
-    <LinkInline href="mailto:###" overrides={{stylePreset: 'linkEmail'}}>
-      Inline mail link
-    </LinkInline>
+    <LinkInline href="mailto:###">Inline mail link</LinkInline>
     <br />
     <br />
     <LinkInline href="tel:###">Inline telephone link</LinkInline>
@@ -399,6 +403,12 @@ const myCustomLinkTheme = createTheme({
         hover: {
           color: '{{colors.inkLinkHover}}',
           iconColor: '{{colors.inkLinkHover}}',
+        },
+        'focus-visible': {
+          outlineColor: '{{outline.outlineColorDefault}}',
+          outlineStyle: '{{outline.outlineStyleDefault}}',
+          outlineWidth: '{{outline.outlineWidthDefault}}',
+          outlineOffset: '{{outline.outlineOffsetDefault}}',
         },
       },
     },

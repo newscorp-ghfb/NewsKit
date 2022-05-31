@@ -4362,7 +4362,6 @@ Object {
       "outlineOffset": "{{outline.outlineOffsetDefault}}",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
-      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "color": "{{colors.interactivePrimary040}}",
@@ -4396,7 +4395,6 @@ Object {
       "outlineOffset": "{{outline.outlineOffsetDefault}}",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
-      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "color": "{{colors.interactiveInverse030}}",
@@ -4429,7 +4427,6 @@ Object {
       "outlineOffset": "{{outline.outlineOffsetDefault}}",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
-      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "color": "{{colors.interactivePrimary040}}",
@@ -4453,7 +4450,6 @@ Object {
       "outlineOffset": "{{outline.outlineOffsetDefault}}",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
-      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "color": "{{colors.interactiveInverse030}}",
