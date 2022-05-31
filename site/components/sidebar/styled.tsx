@@ -1,61 +1,61 @@
 import {
-  styled,
-  getTypographyPresetFromTheme,
+  css,
+  Devices,
+  Drawer,
+  getDeviceQueryFromTheme,
+  getSpacingCssFromTheme,
   getStylePresetFromTheme,
-  getSizingFromTheme,
-  getSpacingFromTheme,
+  styled,
+  TextBlock,
 } from 'newskit';
 
-export const StyledLinkItem = styled.div<{
-  $selected: boolean;
-}>`
-  ${getTypographyPresetFromTheme('utilityButton020', undefined, {
-    withCrop: true,
-  })};
-  ${({$selected, ...props}) =>
-    getStylePresetFromTheme('sidebarNavItem', undefined, {
-      isSelected: $selected,
-    })(props)}
-  box-sizing: border-box;
+interface SidebarWrapperProps {
+  open: boolean;
+  hideSidebar?: boolean;
+}
 
-  cursor: 'pointer';
-  min-width: 230px;
-  padding: ${getSpacingFromTheme('spaceInset030')};
-  margin: ${({theme}) => `${theme.spacePresets.space010} 0`};
-  text-overflow: ellipsis;
+export const StyledTitle = styled(TextBlock)`
+  ${getSpacingCssFromTheme('marginLeft', 'space060')};
+  ${getSpacingCssFromTheme('marginBottom', 'space040')};
 `;
 
-export const StyledFirstLevelHeader = styled.div`
-  ${getTypographyPresetFromTheme('utilityLabel020')};
-  ${getStylePresetFromTheme('sidebarHeader')};
-  min-height: ${getSizingFromTheme('sizing070')};
-  padding: ${getSpacingFromTheme('space040')} ${getSpacingFromTheme('space000')};
-`;
-export const StyledSecondLevelHeader = styled.div`
-  ${getTypographyPresetFromTheme('utilityLabel020')};
-  ${getStylePresetFromTheme('sidebarHeader')};
-  min-height: ${getSizingFromTheme('sizing060')};
-  margin-top: ${getSpacingFromTheme('space045')};
+export const DesktopNavigationDivider = styled.div`
+  width: 100%;
+  position: relative;
+
+  ${getSpacingCssFromTheme('marginTop', 'space045')};
+  ${getSpacingCssFromTheme('marginBottom', 'space060')};
 `;
 
-export const StyledSidebarNav = styled.nav`
-  ${getTypographyPresetFromTheme('utilityBody030')};
+export const StyledDrawer = styled(Drawer)`
+  ${getSpacingCssFromTheme('marginTop', '48px')};
+  height: calc(100vh - 48px);
 `;
 
-export const StyledSectionContainer = styled.li`
-  margin-bottom: ${getSpacingFromTheme('space050')};
-`;
+export const StyledSidebarDesktop = styled.div<SidebarWrapperProps>`
+  position: fixed;
+  overflow: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  ${getSpacingCssFromTheme('paddingTop', 'space040')};
+  ${getSpacingCssFromTheme('marginTop', 'space080')};
+  ${getStylePresetFromTheme('sidebar')};
 
-export const StyledNavigationWrapper = styled.ul`
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
+  width: 276px;
 
-  :last-child {
-    margin-bottom: ${getSpacingFromTheme('space050')};
+  ${getSpacingCssFromTheme('marginTop', 'space100')};
+  ${getSpacingCssFromTheme('paddingTop', 'space000')};
+  overflow: hidden;
+  &:hover {
+    overflow: auto;
   }
-`;
 
-export const StyledNavigationSection = styled.div`
-  margin-bottom: ${getSpacingFromTheme('space050')};
+  ${getDeviceQueryFromTheme(
+    [Devices.iPadPro],
+    css`
+      overflow: auto;
+    `,
+  )};
 `;
