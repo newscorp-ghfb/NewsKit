@@ -821,4 +821,53 @@ export const stylePresets = {
       iconColor: '{{colors.neutral100}}',
     },
   },
+  patternFeatureCardContainerInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand030}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+    hover: {
+      boxShadow: '{{shadows.shadow040}}',
+    },
+  },
+  patternFeatureCardContainerNonInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand030}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
+  patternFeatureCardButton: {
+    base: {
+      backgroundColor: '{{colors.interactiveInverse030}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactiveInverse050}}',
+      color: '{{colors.inkBrand020}}',
+      iconColor: '{{colors.inkBrand020}}',
+    },
+    disabled: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+    loading: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+  },
+  patternFeatureCardMedia: {
+    base: {
+      backgroundImage: 'url(static/feature-card-patterns-16-9.svg)',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+      backgroundSize: 'cover',
+      backgroundPosition: 'bottom left',
+    },
+  },
 };

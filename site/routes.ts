@@ -757,16 +757,24 @@ export default [
       },
     ],
   },
-  // ToDo: At least one pattern page should be ready to enable this nav link .
-  // {
-  //   title: 'Patterns',
-  //   id: '/patterns',
-  //   subNav: [
-  //     {
-  //       title: 'Overview',
-  //       page: true,
-  //       id: '/patterns/overview',
-  //     },
-  //   ],
-  // },
+  {
+    title: 'Patterns',
+    id: '/patterns',
+    subNav: [
+      {
+        title: 'Forms',
+        page: true,
+        id: '/patterns/forms',
+        description:
+          'Design patterns provide a framework for solving a particular user problem in a consistent, considered way.',
+      },
+      {
+        title: 'Overview',
+        page: true,
+        id: '/patterns/overview',
+        description: 'Forms are used to collect customer’s data.',
+        illustration: 'patterns/overview/hero',
+      },
+    ],
+  },
 ];
