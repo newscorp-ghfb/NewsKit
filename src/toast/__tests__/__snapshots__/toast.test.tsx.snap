@@ -1675,6 +1675,21 @@ exports[`Toast Component renders with content as string and link 1`] = `
   fill: #5E44E4;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;

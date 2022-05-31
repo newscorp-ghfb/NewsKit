@@ -892,6 +892,21 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   fill: #5E44E4;
 }
 
+.emotion-5:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-5:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;

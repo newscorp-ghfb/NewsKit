@@ -4357,6 +4357,13 @@ Object {
       "iconColor": "{{colors.interactivePrimary030}}",
       "textDecoration": "underline",
     },
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
+    },
     "hover": Object {
       "color": "{{colors.interactivePrimary040}}",
       "iconColor": "{{colors.interactivePrimary040}}",
@@ -4384,6 +4391,13 @@ Object {
       "iconColor": "{{colors.interactiveInverse030}}",
       "textDecoration": "underline",
     },
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
+    },
     "hover": Object {
       "color": "{{colors.interactiveInverse030}}",
       "iconColor": "{{colors.interactiveInverse030}}",
@@ -4410,6 +4424,13 @@ Object {
       "iconColor": "{{colors.interactivePrimary030}}",
       "textDecoration": "none",
     },
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
+    },
     "hover": Object {
       "color": "{{colors.interactivePrimary040}}",
       "iconColor": "{{colors.interactivePrimary040}}",
@@ -4426,6 +4447,13 @@ Object {
       "color": "{{colors.interactiveInverse030}}",
       "iconColor": "{{colors.interactiveInverse030}}",
       "textDecoration": "none",
+    },
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "color": "{{colors.interactiveInverse030}}",

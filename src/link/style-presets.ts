@@ -17,6 +17,13 @@ export default {
       iconColor: '{{colors.interactivePrimary050}}',
       textDecoration: 'underline',
     },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+    },
   },
   linkStandaloneInverse: {
     base: {
@@ -33,6 +40,13 @@ export default {
       color: '{{colors.interactiveInverse030}}',
       iconColor: '{{colors.interactiveInverse030}}',
       textDecoration: 'underline',
+    },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
     },
   },
   linkInline: {
@@ -61,6 +75,13 @@ export default {
       iconColor: '{{colors.interactiveVisited010}}',
       textDecoration: 'underline',
     },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+    },
   },
   linkInlineInverse: {
     base: {
@@ -86,6 +107,13 @@ export default {
     'visited:hover': {
       color: '{{colors.interactiveInverse040}}',
       iconColor: '{{colors.interactiveInverse040}}',
+    },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
     },
   },
 } as Record<string, StylePreset>;
