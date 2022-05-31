@@ -676,7 +676,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: block;
 }
 
-.emotion-501 {
+.emotion-496 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -684,7 +684,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-502 {
+.emotion-497 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -695,55 +695,55 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen {
-  .emotion-503 {
+  .emotion-498 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-503 {
+  .emotion-498 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-503 {
+  .emotion-498 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-503 {
+  .emotion-498 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-503 {
+  .emotion-498 {
     display: block;
   }
 }
 
-.emotion-505 {
+.emotion-500 {
   margin-bottom: 32px;
 }
 
-.emotion-506 {
+.emotion-501 {
   margin-inline: 32px;
   margin-block: 24px;
 }
 
-.emotion-507 {
+.emotion-502 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-508 {
+.emotion-503 {
   display: grid;
   grid-template-columns: 1fr 24px;
 }
 
-.emotion-509 {
+.emotion-504 {
   margin: 0;
   color: #2E2E2E;
   font-family: "Poppins",sans-serif;
@@ -753,11 +753,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-509 svg {
+.emotion-504 svg {
   fill: #2E2E2E;
 }
 
-.emotion-510 {
+.emotion-505 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -767,7 +767,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-510 {
+  .emotion-505 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -775,19 +775,19 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-510 {
+  .emotion-505 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-510.emotion-510 {
+.emotion-505.emotion-505 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-512 {
+.emotion-507 {
   margin-block: 24px;
 }
 
@@ -1357,262 +1357,238 @@ exports[`Sidebar renders correctly when closed 1`] = `
                             class="emotion-53"
                             id="mock-nk-1"
                           >
-                            Foundation
+                            Foundations
                           </h2>
                         </div>
                         <ul
                           aria-labelledby="mock-nk-1"
-                        />
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/borders"
-                          tabindex="-1"
                         >
-                          <div
-                            class="emotion-10"
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/breakpoints"
+                              tabindex="-1"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Borders
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/breakpoints"
-                          tabindex="-1"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Breakpoints
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/colours"
+                              tabindex="-1"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Breakpoints
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/colours"
-                          tabindex="-1"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Colours
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/design-tokens"
+                              tabindex="-1"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Colours
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/design-tokens"
-                          tabindex="-1"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Design tokens
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/fonts"
+                              tabindex="-1"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Design tokens
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/fonts"
-                          tabindex="-1"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Fonts
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/iconography"
+                              tabindex="-1"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Fonts
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/iconography"
-                          tabindex="-1"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Iconography
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/motion"
+                              tabindex="-1"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Iconography
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/motion"
-                          tabindex="-1"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Motion
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/shadows"
+                              tabindex="-1"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Motion
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/shadows"
-                          tabindex="-1"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Shadows
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/sizing"
+                              tabindex="-1"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Shadows
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/sizing"
-                          tabindex="-1"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Sizing
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/spacing"
+                              tabindex="-1"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Sizing
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/spacing"
-                          tabindex="-1"
-                        >
-                          <div
-                            class="emotion-10"
-                          >
-                            <div
-                              class="emotion-11"
-                            >
-                              <span
-                                class="emotion-17"
-                              >
-                                Spacing
-                              </span>
-                            </div>
-                          </div>
-                        </a>
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Spacing
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
                       </li>
                       <li
                         class="nk-menu-group emotion-51"
@@ -3399,11 +3375,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     </div>
                   </ul>
                   <div
-                    class="emotion-501"
+                    class="emotion-496"
                   >
                     <hr
                       aria-hidden="true"
-                      class="emotion-502"
+                      class="emotion-497"
                       data-testid="divider"
                     />
                   </div>
@@ -3411,7 +3387,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </nav>
             </div>
             <div
-              class="emotion-503"
+              class="emotion-498"
             >
               <nav
                 aria-label="menu-sidebar"
@@ -3424,28 +3400,28 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 />
               </nav>
               <div
-                class="emotion-505"
+                class="emotion-500"
               />
             </div>
             <div
-              class="emotion-506"
+              class="emotion-501"
             >
               <a
-                class="emotion-507"
+                class="emotion-502"
                 href="https://github.com/newscorp-ghfb/newskit"
                 tabindex="-1"
               >
                 <div
-                  class="emotion-508"
+                  class="emotion-503"
                 >
                   <p
-                    class="emotion-509"
+                    class="emotion-504"
                   >
                     Github
                   </p>
                   <svg
                     aria-hidden="true"
-                    class="emotion-510 emotion-511"
+                    class="emotion-505 emotion-506"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -3462,7 +3438,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 </div>
               </a>
               <div
-                class="emotion-512"
+                class="emotion-507"
               />
             </div>
           </div>
@@ -3506,38 +3482,26 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-1 {
-  width: 100vw;
   position: fixed;
   overflow: auto;
   bottom: 0;
   top: 0;
   left: 0;
   z-index: 3;
-  -webkit-transition: -webkit-transform 300ms;
-  transition: transform 300ms;
   padding-top: 16px;
   margin-top: 48px;
   background-color: #F4F4F4;
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 1px 0 0;
+  width: 276px;
+  margin-top: 80px;
+  padding-top: 0;
+  overflow: hidden;
 }
 
-@media screen and (min-width: 1024px) {
-  .emotion-1 {
-    width: 276px;
-    margin-top: 80px;
-    padding-top: 0;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    overflow: hidden;
-  }
-
-  .emotion-1:hover {
-    overflow: auto;
-  }
+.emotion-1:hover {
+  overflow: auto;
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -4036,7 +4000,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: block;
 }
 
-.emotion-501 {
+.emotion-496 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -4044,7 +4008,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-502 {
+.emotion-497 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -4054,7 +4018,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   width: 100%;
 }
 
-.emotion-505 {
+.emotion-500 {
   margin-bottom: 32px;
 }
 
@@ -4590,252 +4554,229 @@ exports[`Sidebar renders correctly when closed 1`] = `
                       class="emotion-53"
                       id="mock-nk-1"
                     >
-                      Foundation
+                      Foundations
                     </h2>
                   </div>
                   <ul
                     aria-labelledby="mock-nk-1"
-                  />
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/borders"
                   >
-                    <div
-                      class="emotion-10"
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/breakpoints"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Borders
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/breakpoints"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Breakpoints
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/colours"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Breakpoints
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/colours"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Colours
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/design-tokens"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Colours
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/design-tokens"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Design tokens
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/fonts"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Design tokens
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/fonts"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Fonts
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/iconography"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Fonts
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/iconography"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Iconography
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/motion"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Iconography
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/motion"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Motion
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/shadows"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Motion
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/shadows"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Shadows
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/sizing"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Shadows
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/sizing"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Sizing
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/spacing"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Sizing
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/spacing"
-                  >
-                    <div
-                      class="emotion-10"
-                    >
-                      <div
-                        class="emotion-11"
-                      >
-                        <span
-                          class="emotion-17"
-                        >
-                          Spacing
-                        </span>
-                      </div>
-                    </div>
-                  </a>
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Spacing
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
                 <li
                   class="nk-menu-group emotion-51"
@@ -6559,11 +6500,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </div>
             </ul>
             <div
-              class="emotion-501"
+              class="emotion-496"
             >
               <hr
                 aria-hidden="true"
-                class="emotion-502"
+                class="emotion-497"
                 data-testid="divider"
               />
             </div>
@@ -6584,7 +6525,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
           />
         </nav>
         <div
-          class="emotion-505"
+          class="emotion-500"
         />
       </div>
     </div>
@@ -7267,7 +7208,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: block;
 }
 
-.emotion-501 {
+.emotion-496 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -7275,7 +7216,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-502 {
+.emotion-497 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -7286,55 +7227,55 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen {
-  .emotion-503 {
+  .emotion-498 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-503 {
+  .emotion-498 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-503 {
+  .emotion-498 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-503 {
+  .emotion-498 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-503 {
+  .emotion-498 {
     display: block;
   }
 }
 
-.emotion-505 {
+.emotion-500 {
   margin-bottom: 32px;
 }
 
-.emotion-506 {
+.emotion-501 {
   margin-inline: 32px;
   margin-block: 24px;
 }
 
-.emotion-507 {
+.emotion-502 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-508 {
+.emotion-503 {
   display: grid;
   grid-template-columns: 1fr 24px;
 }
 
-.emotion-509 {
+.emotion-504 {
   margin: 0;
   color: #2E2E2E;
   font-family: "Poppins",sans-serif;
@@ -7344,11 +7285,11 @@ exports[`Sidebar renders correctly when open 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-509 svg {
+.emotion-504 svg {
   fill: #2E2E2E;
 }
 
-.emotion-510 {
+.emotion-505 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -7358,7 +7299,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-510 {
+  .emotion-505 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7366,19 +7307,19 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-510 {
+  .emotion-505 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-510.emotion-510 {
+.emotion-505.emotion-505 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-512 {
+.emotion-507 {
   margin-block: 24px;
 }
 
@@ -7932,252 +7873,229 @@ exports[`Sidebar renders correctly when open 1`] = `
                             class="emotion-53"
                             id="mock-nk-1"
                           >
-                            Foundation
+                            Foundations
                           </h2>
                         </div>
                         <ul
                           aria-labelledby="mock-nk-1"
-                        />
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/borders"
                         >
-                          <div
-                            class="emotion-10"
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/breakpoints"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Borders
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/breakpoints"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Breakpoints
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/colours"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Breakpoints
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/colours"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Colours
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/design-tokens"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Colours
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/design-tokens"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Design tokens
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/fonts"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Design tokens
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/fonts"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Fonts
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/iconography"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Fonts
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/iconography"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Iconography
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/motion"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Iconography
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/motion"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Motion
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/shadows"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Motion
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/shadows"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Shadows
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/sizing"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Shadows
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/sizing"
-                        >
-                          <div
-                            class="emotion-10"
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Sizing
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
                           >
-                            <div
-                              class="emotion-11"
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/spacing"
                             >
-                              <span
-                                class="emotion-17"
+                              <div
+                                class="emotion-10"
                               >
-                                Sizing
-                              </span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item emotion-13"
-                      >
-                        <a
-                          aria-current="false"
-                          class="emotion-14"
-                          data-testid="buttonLink"
-                          href="/theme/spacing"
-                        >
-                          <div
-                            class="emotion-10"
-                          >
-                            <div
-                              class="emotion-11"
-                            >
-                              <span
-                                class="emotion-17"
-                              >
-                                Spacing
-                              </span>
-                            </div>
-                          </div>
-                        </a>
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Spacing
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
                       </li>
                       <li
                         class="nk-menu-group emotion-51"
@@ -9901,11 +9819,11 @@ exports[`Sidebar renders correctly when open 1`] = `
                     </div>
                   </ul>
                   <div
-                    class="emotion-501"
+                    class="emotion-496"
                   >
                     <hr
                       aria-hidden="true"
-                      class="emotion-502"
+                      class="emotion-497"
                       data-testid="divider"
                     />
                   </div>
@@ -9913,7 +9831,7 @@ exports[`Sidebar renders correctly when open 1`] = `
               </nav>
             </div>
             <div
-              class="emotion-503"
+              class="emotion-498"
             >
               <nav
                 aria-label="menu-sidebar"
@@ -9926,27 +9844,27 @@ exports[`Sidebar renders correctly when open 1`] = `
                 />
               </nav>
               <div
-                class="emotion-505"
+                class="emotion-500"
               />
             </div>
             <div
-              class="emotion-506"
+              class="emotion-501"
             >
               <a
-                class="emotion-507"
+                class="emotion-502"
                 href="https://github.com/newscorp-ghfb/newskit"
               >
                 <div
-                  class="emotion-508"
+                  class="emotion-503"
                 >
                   <p
-                    class="emotion-509"
+                    class="emotion-504"
                   >
                     Github
                   </p>
                   <svg
                     aria-hidden="true"
-                    class="emotion-510 emotion-511"
+                    class="emotion-505 emotion-506"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -9963,7 +9881,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                 </div>
               </a>
               <div
-                class="emotion-512"
+                class="emotion-507"
               />
             </div>
           </div>
@@ -10007,38 +9925,26 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-1 {
-  width: 100vw;
   position: fixed;
   overflow: auto;
   bottom: 0;
   top: 0;
   left: 0;
   z-index: 3;
-  -webkit-transition: -webkit-transform 300ms;
-  transition: transform 300ms;
   padding-top: 16px;
   margin-top: 48px;
   background-color: #F4F4F4;
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 1px 0 0;
+  width: 276px;
+  margin-top: 80px;
+  padding-top: 0;
+  overflow: hidden;
 }
 
-@media screen and (min-width: 1024px) {
-  .emotion-1 {
-    width: 276px;
-    margin-top: 80px;
-    padding-top: 0;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    overflow: hidden;
-  }
-
-  .emotion-1:hover {
-    overflow: auto;
-  }
+.emotion-1:hover {
+  overflow: auto;
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -10537,7 +10443,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: block;
 }
 
-.emotion-501 {
+.emotion-496 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -10545,7 +10451,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-502 {
+.emotion-497 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -10555,7 +10461,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   width: 100%;
 }
 
-.emotion-505 {
+.emotion-500 {
   margin-bottom: 32px;
 }
 
@@ -11094,252 +11000,229 @@ exports[`Sidebar renders correctly when open 1`] = `
                       class="emotion-53"
                       id="mock-nk-1"
                     >
-                      Foundation
+                      Foundations
                     </h2>
                   </div>
                   <ul
                     aria-labelledby="mock-nk-1"
-                  />
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/borders"
                   >
-                    <div
-                      class="emotion-10"
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/breakpoints"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Borders
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/breakpoints"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Breakpoints
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/colours"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Breakpoints
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/colours"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Colours
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/design-tokens"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Colours
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/design-tokens"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Design tokens
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/fonts"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Design tokens
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/fonts"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Fonts
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/iconography"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Fonts
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/iconography"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Iconography
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/motion"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Iconography
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/motion"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Motion
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/shadows"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Motion
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/shadows"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Shadows
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/sizing"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Shadows
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/sizing"
-                  >
-                    <div
-                      class="emotion-10"
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Sizing
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/spacing"
                       >
-                        <span
-                          class="emotion-17"
+                        <div
+                          class="emotion-10"
                         >
-                          Sizing
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item emotion-13"
-                >
-                  <a
-                    aria-current="false"
-                    class="emotion-14"
-                    data-testid="buttonLink"
-                    href="/theme/spacing"
-                  >
-                    <div
-                      class="emotion-10"
-                    >
-                      <div
-                        class="emotion-11"
-                      >
-                        <span
-                          class="emotion-17"
-                        >
-                          Spacing
-                        </span>
-                      </div>
-                    </div>
-                  </a>
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Spacing
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
                 <li
                   class="nk-menu-group emotion-51"
@@ -13063,11 +12946,11 @@ exports[`Sidebar renders correctly when open 1`] = `
               </div>
             </ul>
             <div
-              class="emotion-501"
+              class="emotion-496"
             >
               <hr
                 aria-hidden="true"
-                class="emotion-502"
+                class="emotion-497"
                 data-testid="divider"
               />
             </div>
@@ -13088,7 +12971,7 @@ exports[`Sidebar renders correctly when open 1`] = `
           />
         </nav>
         <div
-          class="emotion-505"
+          class="emotion-500"
         />
       </div>
     </div>
