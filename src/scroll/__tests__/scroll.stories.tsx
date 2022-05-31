@@ -312,12 +312,7 @@ export const StoryResetScrollPosition = () => {
     <MainContainer>
       <StorybookSubHeading>Reset scroll position with ref</StorybookSubHeading>
       <Container>
-        <Scroll
-          scrollBar
-          ref={scrollRef}
-          vertical={false}
-          overrides={{paddingInline: '12px'}}
-        >
+        <Scroll scrollBar ref={scrollRef}>
           <Stack flow="horizontal-top">{tags}</Stack>
         </Scroll>
       </Container>
