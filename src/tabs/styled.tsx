@@ -19,6 +19,7 @@ import {
 import {Stack} from '../stack';
 import {TextBlock, TextBlockProps} from '../text-block';
 import {Button, ButtonProps} from '../button';
+import {logicalProps} from '../utils/logical-properties';
 
 const getFlexFromTabsDistribution = (
   distribution: TabsDistributionType,
@@ -68,6 +69,7 @@ export const StyledTabGroup = styled.div<
   flex-flow: ${({vertical}) => (vertical ? 'row' : 'column')};
   // IE11 fix: this has to be max-height but IE11 wants height
   ${({vertical}) => vertical && 'height: 100%;'}
+  ${logicalProps()}
 `;
 
 export const StyledTabsBar = styled.div<TabsBarProps>`

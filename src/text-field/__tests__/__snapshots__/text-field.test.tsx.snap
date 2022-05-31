@@ -164,6 +164,579 @@ exports[`TextField renders TextField Correctly 1`] = `
 </DocumentFragment>
 `;
 
+exports[`TextField renders TextField with logical props overrides 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2.emotion-2 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-4 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  padding: 12px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
+}
+
+.emotion-5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6.emotion-6 {
+  width: 16px;
+  height: 16px;
+}
+
+<body>
+    <div>
+      <div
+        class="emotion-0"
+      >
+        <div
+          class="emotion-1"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-2 emotion-3"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+          </svg>
+        </div>
+        <input
+          class="emotion-4"
+          data-testid="text-field-email"
+          placeholder="placeholder"
+          type="text"
+        />
+        <div
+          class="emotion-5"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-6 emotion-3"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2.emotion-2 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-4 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  padding: 12px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
+}
+
+.emotion-5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6.emotion-6 {
+  width: 16px;
+  height: 16px;
+}
+
+<div>
+    <div
+      class="emotion-0"
+    >
+      <div
+        class="emotion-1"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-2 emotion-3"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+          />
+        </svg>
+      </div>
+      <input
+        class="emotion-4"
+        data-testid="text-field-email"
+        placeholder="placeholder"
+        type="text"
+      />
+      <div
+        class="emotion-5"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-3"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
 exports[`TextField renders TextField with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
