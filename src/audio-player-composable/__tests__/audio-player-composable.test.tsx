@@ -67,12 +67,22 @@ const recordedAudioProps: AudioPlayerComposableProps = {
   ),
 };
 
-const AudioPropsAndVolumeControlWithProps: AudioPlayerComposableProps = {
+const AudioPropsAndVolumeControlWithInitialVolumeCollapsed: AudioPlayerComposableProps = {
   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
   initialVolume: 0.2,
   children: (
     <>
       <AudioPlayerVolumeControl collapsed />
+    </>
+  ),
+};
+
+const AudioPropsAndVolumeControlVertical: AudioPlayerComposableProps = {
+  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  initialVolume: 0.2,
+  children: (
+    <>
+      <AudioPlayerVolumeControl vertical />
     </>
   ),
 };
@@ -213,7 +223,7 @@ describe('Audio Player Composable', () => {
   const mediaElement = (window as any).HTMLMediaElement.prototype;
 
   beforeAll(() => {
-    ['duration', 'seekable', 'buffered', 'paused'].forEach(k => {
+    ['duration', 'seekable', 'buffered', 'paused', 'volume'].forEach(k => {
       Object.defineProperty(mediaElement, k, {
         writable: true,
       });
@@ -232,6 +242,9 @@ describe('Audio Player Composable', () => {
     });
     mediaElement.onDurationChange = jest.fn(val => {
       mediaElement.duration = val;
+    });
+    mediaElement.onVolumeChange = jest.fn(val => {
+      mediaElement.volume = val;
     });
     window.open = jest.fn();
     jest.useFakeTimers('legacy');
@@ -773,14 +786,22 @@ describe('Audio Player Composable', () => {
 
   describe('VolumeControl', () => {
     it('should have mute unmute functionality', () => {
+      // TODO 
+      // const onVolumeChange = jest.fn();
+      const props = {
+        ...recordedAudioProps,
+        // onVolumeChange
+      }
+
       const {getByTestId} = renderWithTheme(
         AudioPlayerComposable,
-        recordedAudioProps,
+        props,
       );
+
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
       const muteButton = getByTestId('mute-button');
       muteButton.focus();
-      
+
       // Should default to 0.7
       expect(audioElement.volume).toEqual(0.7);
       // Mute with button click
@@ -792,27 +813,30 @@ describe('Audio Player Composable', () => {
 
       userEvent.keyboard('m');
       expect(audioElement.volume).toEqual(0);
-       
+
       // Increase volume 0.1
       fireEvent.keyDown(getByTestId('volume-control-slider-thumb'), {
         key: 'ArrowRight',
         code: 39,
       });
       expect(audioElement.volume).toEqual(0.1);
+
+
+      // fireEvent.volumeChange(audioElement, {
+      //   target: {volume: 0.5},
+      // });
+      // expect(audioElement.volume).toBe(0.5);
+      // expect(onVolumeChange).toBeCalled()
     });
 
-    it('should render correctly with props', () => {
-      const props = {
-        ...AudioPropsAndVolumeControlWithProps,
-      };
-
-      // Clearing localStorage before render for allowing  
+    it('should render correctly with collapsed and initialVolume', () => {
+      // Clearing localStorage before render for allowing
       // InitialVolume to be used instead.
       localStorage.clear();
 
-      const {queryByTestId, getByTestId} = renderWithTheme(
+      const {queryByTestId, getByTestId, asFragment} = renderWithTheme(
         AudioPlayerComposable,
-        AudioPropsAndVolumeControlWithProps,
+        AudioPropsAndVolumeControlWithInitialVolumeCollapsed,
       );
 
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
@@ -820,9 +844,18 @@ describe('Audio Player Composable', () => {
 
       // Slider should no exist, given that collapsed is set to true
       expect(volumeSlider).not.toBeInTheDocument();
-      
+
       // Initial volume should be 0.2, as by props
       expect(audioElement.volume).toBe(0.2);
+      expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('should render correctly with vertical prop', () => {
+      const {asFragment} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndVolumeControlVertical,
+      );
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 

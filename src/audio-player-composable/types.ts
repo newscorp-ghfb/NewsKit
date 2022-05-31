@@ -1,12 +1,14 @@
 import {IconButtonProps} from '../icon-button/types';
-import {VolumeControlOverridesPropsComposable} from './components/volume-control';
+import {
+  AudioPlayerVolumeControlOverridesProps,
+  AudioPlayerVolumeControlProps,
+} from './components/volume-control';
 import {AudioPlayerForwardButtonProps} from './components/forward-button/types';
 import {AudioPlayerPlayPauseButtonProps} from './components/play-pause-button/types';
 import {AudioPlayerReplayButtonProps} from './components/replay-button/types';
 import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/types';
 import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
 import {AudioPlayerTimeFormatFn} from './components/time-display/types';
-import {AudioPlayerVolumeControlProps} from './components/volume-control/types';
 
 export interface AudioFunctionDependencies {
   autoPlay: boolean;
@@ -60,7 +62,7 @@ export interface AudioPlayerProviderContext {
   getVolumeControlProps: (
     props: AudioPlayerVolumeControlProps,
   ) => {
-    overrides: VolumeControlOverridesPropsComposable;
+    overrides: AudioPlayerVolumeControlOverridesProps;
     muteKeyboardShortcuts?: string | string[];
     vertical?: boolean;
     collapsed?: boolean;

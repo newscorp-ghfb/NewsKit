@@ -1247,7 +1247,7 @@ Object {
       },
       "track": Object {
         "length": "130px",
-        "size": "sizing020",
+        "size": "sizing010",
         "stylePreset": "audioPlayerVolumeControlTrack",
       },
     },

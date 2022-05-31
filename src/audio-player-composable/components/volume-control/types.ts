@@ -2,7 +2,7 @@ import {ButtonSize} from '../../../button';
 import {SliderOverrideProps} from '../../../slider';
 import {MQ} from '../../../utils';
 
-export interface VolumeControlOverridesPropsComposable {
+export interface AudioPlayerVolumeControlOverridesProps {
   slider?: SliderOverrideProps;
   button?: {
     stylePreset?: MQ<string>;
@@ -14,7 +14,7 @@ export interface VolumeControlOverridesPropsComposable {
 export interface AudioPlayerVolumeControlProps {
   vertical?: boolean;
   collapsed?: boolean;
-  overrides?: VolumeControlOverridesPropsComposable;
+  overrides?: AudioPlayerVolumeControlOverridesProps;
   muteKeyboardShortcuts?: string[] | string;
 }
 

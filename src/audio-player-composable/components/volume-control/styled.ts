@@ -1,4 +1,4 @@
-import { GridLayout } from '../../../grid-layout';
+import { GridLayout, GridLayoutItem } from '../../../grid-layout';
 import { getResponsiveSize, styled } from '../../../utils/style';
 
 export const VolumeSliderContainer = styled.div<{ vertical?: boolean }>`
@@ -10,11 +10,6 @@ export const VolumeSliderContainer = styled.div<{ vertical?: boolean }>`
       'length',
     )
   }
-
-  ${({vertical}) => (vertical && 
-    `position: absolute;
-     bottom: 100%;`
-  )};
 `;
  
 export const StyledGridLayout = styled(GridLayout)<{ vertical?: boolean }>`
@@ -22,3 +17,11 @@ export const StyledGridLayout = styled(GridLayout)<{ vertical?: boolean }>`
     position: relative;
   `)};
 `;
+
+export const StyledGridLayoutItem = styled(GridLayoutItem)<{ vertical?: boolean }>`
+  ${({vertical}) => (vertical && 
+    `position: absolute;
+     bottom: 100%;`
+  )};
+`;
+

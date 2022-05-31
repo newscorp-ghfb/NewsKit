@@ -1,19 +1,19 @@
-import React, { useCallback, useState } from 'react';
-import { ScreenReaderOnly } from '../../../screen-reader-only';
-import { Slider } from '../../../slider';
-import { withOwnTheme } from '../../../utils/with-own-theme';
-import { getTokensForVolumeControl, useInitialVolume } from './utils';
-import { useAudioPlayerContext } from '../../context';
+import React, {useCallback, useState} from 'react';
+import {ScreenReaderOnly} from '../../../screen-reader-only';
+import {Slider} from '../../../slider';
+import {withOwnTheme} from '../../../utils/with-own-theme';
+import {getTokensForVolumeControl, useInitialVolume} from './utils';
+import {useAudioPlayerContext} from '../../context';
 import defaults from './defaults';
-import { MuteButton } from './mute-button';
-import { useTheme } from '../../../theme';
+import {MuteButton} from './mute-button';
+import {useTheme} from '../../../theme';
 import stylePresets from './style-presets';
-import { AudioPlayerVolumeControlProps } from './types';
-import { GridLayoutItem } from '../../../grid-layout';
-import { StyledGridLayout, VolumeSliderContainer } from './styled';
+import {AudioPlayerVolumeControlProps} from './types';
+import {GridLayoutItem} from '../../../grid-layout';
+import {StyledGridLayout, StyledGridLayoutItem, VolumeSliderContainer} from './styled';
 
 const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps> = props => {
-  const { getVolumeControlProps } = useAudioPlayerContext();
+  const {getVolumeControlProps} = useAudioPlayerContext();
   const {
     volume,
     onChange,
@@ -49,22 +49,22 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
   ]);
 
   // useInitialVolume Sets the initial volume on page load
-  useInitialVolume({ onChange, initialVolume });
+  useInitialVolume({onChange, initialVolume});
 
   const verticalAreas = `slider
-                         muteButton`
-  const gridAreas = vertical ? verticalAreas: `muteButton slider`
-  const gridColumns = vertical ? "1fr" : "auto 1fr"
+                         muteButton`;
+  const gridAreas = vertical ? verticalAreas : `muteButton slider`;
+  const gridColumns = vertical ? '1fr' : 'auto 1fr';
 
   return (
-    <StyledGridLayout 
-      columns={gridColumns} 
-      areas={gridAreas} 
-      justifyItems={vertical ? 'center': 'start'} 
-      alignItems={'center'}
+    <StyledGridLayout
+      columns={gridColumns}
+      areas={gridAreas}
+      justifyItems={vertical ? 'center' : 'start'}
+      alignItems="center"
       vertical={vertical}
     >
-      <GridLayoutItem area='muteButton'>
+      <GridLayoutItem area="muteButton">
         <MuteButton
           volume={volume}
           unMutedVolume={unMutedVolume}
@@ -76,7 +76,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
         />
       </GridLayoutItem>
       {!collapsed && (
-        <GridLayoutItem area='slider'>
+        <StyledGridLayoutItem area="slider" vertical={vertical}>
           <VolumeSliderContainer vertical={vertical}>
             <Slider
               vertical={vertical}
@@ -110,7 +110,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
               Use the arrow keys to adjust volume
             </ScreenReaderOnly>
           </VolumeSliderContainer>
-        </GridLayoutItem>
+        </StyledGridLayoutItem>
       )}
     </StyledGridLayout>
   );
@@ -118,4 +118,4 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
 
 export const AudioPlayerVolumeControl = withOwnTheme(
   ThemelessAudioPlayerVolumeControl,
-)({ defaults, stylePresets });
+)({defaults, stylePresets});
