@@ -2,7 +2,7 @@ import {IconButtonProps} from '../icon-button/types';
 import {
   AudioPlayerVolumeControlOverridesProps,
   AudioPlayerVolumeControlProps,
-} from './components/volume-control';
+} from './components/volume-control/types';
 import {AudioPlayerForwardButtonProps} from './components/forward-button/types';
 import {AudioPlayerPlayPauseButtonProps} from './components/play-pause-button/types';
 import {AudioPlayerReplayButtonProps} from './components/replay-button/types';

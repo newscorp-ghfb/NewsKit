@@ -785,15 +785,33 @@ describe('Audio Player Composable', () => {
   });
 
   describe('VolumeControl', () => {
-    it('should have mute unmute functionality', () => {
-      // TODO
-      // const onVolumeChange = jest.fn();
+    it('calls event handler passed from the props', () => {
+      const onVolumeChange = jest.fn();
       const props = {
         ...recordedAudioProps,
-        // onVolumeChange
+        onVolumeChange,
       };
-
       const {getByTestId} = renderWithTheme(AudioPlayerComposable, props);
+      fireEvent.volumeChange(getByTestId('audio-element'), {
+        target: {volume: 0.6},
+      });
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+
+      expect(audioElement.volume).toBe(0.6);
+      expect(onVolumeChange).toHaveBeenCalledTimes(1);
+      expect(onVolumeChange).toHaveBeenCalledWith(
+        expect.objectContaining({
+          target: expect.objectContaining({volume: 0.6}),
+        }),
+      );
+    });
+
+    it('should have mute unmute functionality', () => {
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        recordedAudioProps,
+      );
 
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
       const muteButton = getByTestId('mute-button');
@@ -817,12 +835,6 @@ describe('Audio Player Composable', () => {
         code: 39,
       });
       expect(audioElement.volume).toEqual(0.1);
-
-      // fireEvent.volumeChange(audioElement, {
-      //   target: {volume: 0.5},
-      // });
-      // expect(audioElement.volume).toBe(0.5);
-      // expect(onVolumeChange).toBeCalled()
     });
 
     it('should render correctly with collapsed and initialVolume', () => {
