@@ -3,7 +3,6 @@ import {
   Devices,
   Drawer,
   getDeviceQueryFromTheme,
-  getMediaQueryFromTheme,
   getSpacingCssFromTheme,
   getStylePresetFromTheme,
   styled,
@@ -34,28 +33,23 @@ export const StyledDrawer = styled(Drawer)`
 `;
 
 export const StyledSidebarDesktop = styled.div<SidebarWrapperProps>`
-  width: 100vw;
   position: fixed;
   overflow: auto;
   bottom: 0;
   top: 0;
   left: 0;
   z-index: 3;
-  transition: transform 300ms;
   ${getSpacingCssFromTheme('paddingTop', 'space040')};
   ${getSpacingCssFromTheme('marginTop', 'space080')};
   ${getStylePresetFromTheme('sidebar')};
 
-  ${getMediaQueryFromTheme('lg')} {
-    width: 276px;
+  width: 276px;
 
-    ${getSpacingCssFromTheme('marginTop', 'space100')};
-    ${getSpacingCssFromTheme('paddingTop', 'space000')};
-    transform: translateX(0);
-    overflow: hidden;
-    &:hover {
-      overflow: auto;
-    }
+  ${getSpacingCssFromTheme('marginTop', 'space100')};
+  ${getSpacingCssFromTheme('paddingTop', 'space000')};
+  overflow: hidden;
+  &:hover {
+    overflow: auto;
   }
 
   ${getDeviceQueryFromTheme(

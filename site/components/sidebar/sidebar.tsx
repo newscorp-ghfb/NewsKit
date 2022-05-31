@@ -44,16 +44,18 @@ const Sidebar: React.FC<SidebarProps> = ({
       </StyledDrawer>
     </Visible>
     <Visible lg xl>
-      <StyledSidebarDesktop
-        open={sidebarOpen}
-        data-testid="sidebar"
-        role="complementary"
-        hideSidebar={hideSidebar}
-      >
-        <Block spaceInset="space010" />
+      {!hideSidebar && (
+        <StyledSidebarDesktop
+          open={sidebarOpen}
+          data-testid="sidebar"
+          role="complementary"
+          hideSidebar={hideSidebar}
+        >
+          <Block spaceInset="space010" />
 
-        <SidebarNav />
-      </StyledSidebarDesktop>
+          <SidebarNav />
+        </StyledSidebarDesktop>
+      )}
     </Visible>
   </>
 );

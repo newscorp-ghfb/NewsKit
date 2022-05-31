@@ -59,7 +59,7 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
               </>
             ) : (
               <>
-                {title === 'Foundation' ||
+                {title === 'Foundations' ||
                 title === 'Actions & Inputs' ||
                 title === 'Design' ? (
                   <Block spaceStack="space060" />
