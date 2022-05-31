@@ -31,7 +31,7 @@ export * from './layer';
 export * from './link';
 export * from './menu';
 export * from './modal';
-export * from './newskitprovider';
+export * from './newskit-provider';
 export * from './ordered-list';
 export * from './radio-button';
 export * from './screen-reader-only';

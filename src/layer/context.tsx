@@ -1,20 +1,15 @@
 import {createContext, useContext} from 'react';
 
-interface LayerOrganizerContext {
+type LayerOrganizerContextType = {
   host: HTMLDivElement | null;
-}
-
-const LayerOganizerContext = createContext<LayerOrganizerContext>({
+};
+const LayerOrganizerContext = createContext<LayerOrganizerContextType>({
   host: null,
 });
+export const useLayerOrganizer = () => useContext(LayerOrganizerContext);
+export const LayerOrganizerContextProvider = LayerOrganizerContext.Provider;
 
-export const useLayerOrganizer = () => useContext(LayerOganizerContext);
-export const LayerOganizerContextProvider = LayerOganizerContext.Provider;
-
-type LayerContext = HTMLDivElement | null;
-
-// eslint-disable-next-line @typescript-eslint/no-redeclare
-const LayerContext = createContext<LayerContext | null>(null);
-
+type LayerContextType = HTMLDivElement | null;
+const LayerContext = createContext<LayerContextType | null>(null);
 export const useLayer = () => useContext(LayerContext);
 export const LayerContextProvider = LayerContext.Provider;

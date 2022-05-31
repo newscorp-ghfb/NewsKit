@@ -1,10 +1,6 @@
 import * as React from 'react';
 import {Layer as UnstyledLayer, LayerOrganizer} from '..';
-// import {
-//   StorybookHeading,
-//   StorybookSubHeading,
-// } from '../../test/storybook-comps';
-// import {createTheme, ThemeProvider} from '../../theme';
+import {StorybookHeading} from '../../test/storybook-comps';
 import {getColorCssFromTheme, styled} from '../../utils/style';
 
 export default {
@@ -39,7 +35,7 @@ const Box = styled.div<{
 
 export const StoryBasicLayer = () => (
   <>
-    {/* <StorybookHeading>Byline</StorybookHeading> */}
+    <StorybookHeading>Basic layer</StorybookHeading>
     <Box width="300px" height="200px" border="black">
       <p>This is is the main content</p>
       <Layer color="purple040">
@@ -55,7 +51,7 @@ StoryBasicLayer.storyName = 'basic layer';
 
 export const StoryNestedLayer = () => (
   <>
-    {/* <StorybookHeading>Byline</StorybookHeading> */}
+    <StorybookHeading>Nested layers</StorybookHeading>
     <Box width="300px" height="200px" border="black">
       <p>This is is the main content</p>
       <Layer color="teal040">
@@ -81,7 +77,7 @@ export const StoryAppendLayerToCustomParentStory = () => {
   const ref = React.useRef<HTMLDivElement>(null);
   return (
     <>
-      {/* <StorybookHeading>Byline</StorybookHeading> */}
+      <StorybookHeading>append layer to custom parent</StorybookHeading>
       <p>Welcome</p>
       <Box width="300px" height="300px" border="black" ref={ref}>
         This is the parent div
@@ -102,7 +98,7 @@ export const StoryAppendNestedLayerToCustomParentStory = () => {
 
   return (
     <>
-      {/* <StorybookHeading>Byline</StorybookHeading> */}
+      <StorybookHeading>Append nested layers to custom parent</StorybookHeading>
       <p>Welcome</p>
       <Box width="300px" height="300px" border="black" ref={ref}>
         This is the parent div
@@ -165,7 +161,7 @@ const Wrapper = styled.div<{
 
 export const StoryBasicLayerOrganizer = () => (
   <>
-    {/* <StorybookHeading>Byline</StorybookHeading> */}
+    <StorybookHeading>basic layer organizer</StorybookHeading>
     <Box width="300px" height="200px" border="black">
       <p>This is is the main content</p>
       <Layer color="purple040">
@@ -183,7 +179,7 @@ StoryBasicLayerOrganizer.storyName = 'basic layer organizer';
 
 export const StoryBasicLayerOrganizerZindex = () => (
   <>
-    {/* <StorybookHeading>Byline</StorybookHeading> */}
+    <StorybookHeading>basic layer organizer zIndex</StorybookHeading>
     <Box width="300px" height="200px" border="black">
       This is is the main content
     </Box>
@@ -215,7 +211,7 @@ StoryBasicLayerOrganizerZindex.storyName = 'basic layer organizer zindex';
 
 export const StoryNestedLayerOrganizerZindex = () => (
   <>
-    {/* <StorybookHeading>Byline</StorybookHeading> */}
+    <StorybookHeading>nested layer organizer zIndex</StorybookHeading>
     <Box width="300px" height="200px" border="black">
       This is is the main content
     </Box>

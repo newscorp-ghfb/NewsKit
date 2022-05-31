@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {useIsomorphicLayoutEffect} from '../utils/hooks';
-import {LayerOganizerContextProvider, useLayerOrganizer} from './context';
+import {LayerOrganizerContextProvider, useLayerOrganizer} from './context';
 
 export interface LayerOrganizerProps {
   children?: React.ReactNode;
@@ -57,8 +57,8 @@ export const LayerOrganizer: React.FC<LayerOrganizerProps> = ({
   };
 
   return (
-    <LayerOganizerContextProvider value={layerOrganizerCtx}>
+    <LayerOrganizerContextProvider value={layerOrganizerCtx}>
       {children}
-    </LayerOganizerContextProvider>
+    </LayerOrganizerContextProvider>
   );
 };

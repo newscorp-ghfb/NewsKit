@@ -6,7 +6,7 @@ import {
 } from '@testing-library/react';
 import {newskitLightTheme, ThemeProviderProps, UncompiledTheme} from '../theme';
 import {InstrumentationEvent} from '../instrumentation';
-import {NewskitProvider} from '../newskitprovider';
+import {NewskitProvider} from '../newskit-provider';
 
 export const renderToFragment = (
   ui: React.ReactElement,
