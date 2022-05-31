@@ -19,7 +19,7 @@ stylePresets.inputField = {
     iconColor: '{{colors.inkBase}}',
   },
   focus: {
-    borderColor: '{{colors.interactiveInput040}}',
+    borderColor: '{{outline.outlineColorDefault}}',
     backgroundColor: '{{colors.interactiveInput010}}',
   },
   hover: {
@@ -33,7 +33,7 @@ stylePresets.inputField = {
     backgroundColor: '{{colors.interactiveInput010}}',
   },
   'valid:focus': {
-    borderColor: '{{colors.interactiveInput040}}',
+    borderColor: '{{outline.outlineColorDefault}}',
     backgroundColor: '{{colors.interactiveInput010}}',
   },
   disabled: {
@@ -48,7 +48,7 @@ stylePresets.inputField = {
     borderColor: '{{colors.interactiveNegative030}}',
   },
   'invalid:focus': {
-    borderColor: '{{colors.interactiveInput040}}',
+    borderColor: '{{outline.outlineColorDefault}}',
     backgroundColor: '{{colors.interactiveInput010}}',
   },
   'invalid:hover': {

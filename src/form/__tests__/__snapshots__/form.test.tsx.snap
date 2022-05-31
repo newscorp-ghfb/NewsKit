@@ -4104,7 +4104,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-2:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4118,7 +4118,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-2:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4132,7 +4132,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5342,7 +5342,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-2:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5356,7 +5356,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-2:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5370,7 +5370,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6587,7 +6587,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6601,7 +6601,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6615,7 +6615,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6900,7 +6900,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6914,7 +6914,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6928,7 +6928,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -8160,7 +8160,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   margin-bottom: 8px;
   background-color: #FAFAFA;
   border-style: solid;
-  border-color: #3358CC;
+  border-color: #3768FB;
   border-width: 1px;
   border-radius: 8px;
   color: #2E2E2E;
@@ -8390,7 +8390,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 }
 
 .emotion-13:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -8788,7 +8788,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -8802,7 +8802,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -8816,7 +8816,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -9101,7 +9101,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -9115,7 +9115,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -9129,7 +9129,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 

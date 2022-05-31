@@ -33,7 +33,7 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -47,7 +47,7 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -61,7 +61,7 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -925,7 +925,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -939,7 +939,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -953,7 +953,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -1648,7 +1648,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -1662,7 +1662,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -1676,7 +1676,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -2820,7 +2820,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -2834,7 +2834,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -2848,7 +2848,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3386,7 +3386,7 @@ exports[`Select renders large Select 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3400,7 +3400,7 @@ exports[`Select renders large Select 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3414,7 +3414,7 @@ exports[`Select renders large Select 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3656,7 +3656,7 @@ exports[`Select renders loading select 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3670,7 +3670,7 @@ exports[`Select renders loading select 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3684,7 +3684,7 @@ exports[`Select renders loading select 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3905,7 +3905,7 @@ exports[`Select renders medium Select 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3919,7 +3919,7 @@ exports[`Select renders medium Select 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3933,7 +3933,7 @@ exports[`Select renders medium Select 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4175,7 +4175,7 @@ exports[`Select renders select with a pre selected option 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4189,7 +4189,7 @@ exports[`Select renders select with a pre selected option 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4203,7 +4203,7 @@ exports[`Select renders select with a pre selected option 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4479,7 +4479,7 @@ exports[`Select renders select with a selected option 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4493,7 +4493,7 @@ exports[`Select renders select with a selected option 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4507,7 +4507,7 @@ exports[`Select renders select with a selected option 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4783,7 +4783,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4797,7 +4797,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4811,7 +4811,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5111,7 +5111,7 @@ exports[`Select renders select with non-string options 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5125,7 +5125,7 @@ exports[`Select renders select with non-string options 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5139,7 +5139,7 @@ exports[`Select renders select with non-string options 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5417,7 +5417,7 @@ exports[`Select renders small Select 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5431,7 +5431,7 @@ exports[`Select renders small Select 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5445,7 +5445,7 @@ exports[`Select renders small Select 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5687,7 +5687,7 @@ exports[`Select should render custom placeholder 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5701,7 +5701,7 @@ exports[`Select should render custom placeholder 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5715,7 +5715,7 @@ exports[`Select should render custom placeholder 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5957,7 +5957,7 @@ exports[`Select virtualize long list 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5971,7 +5971,7 @@ exports[`Select virtualize long list 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5985,7 +5985,7 @@ exports[`Select virtualize long list 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 

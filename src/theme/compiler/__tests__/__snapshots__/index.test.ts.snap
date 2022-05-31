@@ -517,7 +517,7 @@ Object {
       },
       "focus": Object {
         "backgroundColor": "#FAFAFA",
-        "borderColor": "#3358CC",
+        "borderColor": "#3768FB",
       },
       "hover": Object {
         "backgroundColor": "#FAFAFA",
@@ -527,7 +527,7 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "#FAFAFA",
-        "borderColor": "#3358CC",
+        "borderColor": "#3768FB",
       },
       "invalid:hover": Object {
         "backgroundColor": "#FAFAFA",
@@ -541,7 +541,7 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "#FAFAFA",
-        "borderColor": "#3358CC",
+        "borderColor": "#3768FB",
       },
       "valid:hover": Object {
         "backgroundColor": "#FAFAFA",

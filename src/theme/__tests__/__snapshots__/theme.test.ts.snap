@@ -463,7 +463,7 @@ Object {
       },
       "focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{colors.interactiveInput040}}",
+        "borderColor": "{{outline.outlineColorDefault}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -473,7 +473,7 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{colors.interactiveInput040}}",
+        "borderColor": "{{outline.outlineColorDefault}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -487,7 +487,7 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{colors.interactiveInput040}}",
+        "borderColor": "{{outline.outlineColorDefault}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -4299,7 +4299,7 @@ Object {
     },
     "focus": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
-      "borderColor": "{{colors.interactiveInput040}}",
+      "borderColor": "{{outline.outlineColorDefault}}",
     },
     "hover": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
@@ -4309,7 +4309,7 @@ Object {
     },
     "invalid:focus": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
-      "borderColor": "{{colors.interactiveInput040}}",
+      "borderColor": "{{outline.outlineColorDefault}}",
     },
     "invalid:hover": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
@@ -4323,7 +4323,7 @@ Object {
     },
     "valid:focus": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
-      "borderColor": "{{colors.interactiveInput040}}",
+      "borderColor": "{{outline.outlineColorDefault}}",
     },
     "valid:hover": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",

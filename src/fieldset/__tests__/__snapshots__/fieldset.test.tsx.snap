@@ -72,7 +72,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
 }
 
 .emotion-2:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -86,7 +86,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
 }
 
 .emotion-2:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -100,7 +100,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -650,7 +650,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
 }
 
 .emotion-2:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -664,7 +664,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
 }
 
 .emotion-2:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -678,7 +678,7 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -1228,7 +1228,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 }
 
 .emotion-2:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -1242,7 +1242,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 }
 
 .emotion-2:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -1256,7 +1256,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
 }
 
 .emotion-2:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
