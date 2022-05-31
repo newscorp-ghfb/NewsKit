@@ -69,14 +69,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-3.collapsed>h5 {
-  margin-bottom: 24px;
-}
-
-.emotion-3.expanded>h5 {
-  margin-bottom: 16px;
-}
-
 .emotion-3.collapsed>li {
   overflow: hidden;
   max-height: 0px;
@@ -545,7 +537,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                 Group 1
                 <button
                   aria-expanded="true"
-                  aria-label="open button"
+                  aria-label="Show sub-menu for Group 1"
                   class="emotion-6"
                   data-testid="button"
                   type="button"
@@ -619,7 +611,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                 Group 2
                 <button
                   aria-expanded="false"
-                  aria-label="close button"
+                  aria-label="Hide sub-menu for Group 2"
                   class="emotion-6"
                   data-testid="button"
                   type="button"
@@ -1117,14 +1109,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-3.collapsed>h5 {
-  margin-bottom: 24px;
-}
-
-.emotion-3.expanded>h5 {
-  margin-bottom: 16px;
-}
-
 .emotion-3.collapsed>li {
   overflow: hidden;
   max-height: 0px;
@@ -1514,7 +1498,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                 Group 1
                 <button
                   aria-expanded="false"
-                  aria-label="close button"
+                  aria-label="Hide sub-menu for Group 1"
                   class="emotion-6"
                   data-testid="button"
                   type="button"
@@ -1589,7 +1573,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                 Group 2
                 <button
                   aria-expanded="false"
-                  aria-label="close button"
+                  aria-label="Hide sub-menu for Group 2"
                   class="emotion-6"
                   data-testid="button"
                   type="button"
@@ -1914,14 +1898,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   color: #0A0A0A;
   margin-top: 16px;
   margin-bottom: 0;
-}
-
-.emotion-3.collapsed>h5 {
-  margin-bottom: 24px;
-}
-
-.emotion-3.expanded>h5 {
-  margin-bottom: 16px;
 }
 
 .emotion-3.collapsed>li {
@@ -2313,7 +2289,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                 Group 1
                 <button
                   aria-expanded="true"
-                  aria-label="open button"
+                  aria-label="Show sub-menu for Group 1"
                   class="emotion-6"
                   data-testid="button"
                   type="button"
@@ -2387,7 +2363,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                 Group 2
                 <button
                   aria-expanded="false"
-                  aria-label="close button"
+                  aria-label="Hide sub-menu for Group 2"
                   class="emotion-6"
                   data-testid="button"
                   type="button"

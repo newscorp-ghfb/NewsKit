@@ -23,14 +23,6 @@ const StyledMenuCollapsibleItem = styled.div<
   ${getSpacingCssFromTheme('marginTop', 'space040')};
   ${getSpacingCssFromTheme('marginBottom', 'space000')};
 
-  &.collapsed > h5 {
-    ${getSpacingCssFromTheme('marginBottom', 'space050')};
- 
-    
-  }
-  &.expanded > h5 {
-    ${getSpacingCssFromTheme('marginBottom', 'space040')};
-  }
   &.collapsed > li {
     overflow: hidden;
     max-height: 0px;

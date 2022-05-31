@@ -257,14 +257,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-6.collapsed>h5 {
-  margin-bottom: 24px;
-}
-
-.emotion-6.expanded>h5 {
-  margin-bottom: 16px;
-}
-
 .emotion-6.collapsed>li {
   overflow: hidden;
   max-height: 0px;
@@ -799,99 +791,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-block: 24px;
 }
 
-.emotion-513 {
-  display: grid;
-  grid-template-columns: 1fr 30px;
-}
-
-.emotion-515 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 32px;
-  height: 32px;
-  padding: 8px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: #F4F4F4;
-  border-radius: 50%;
-  margin: 0;
-  cursor: pointer;
-}
-
-.emotion-515 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-515:hover:not(:disabled) {
-  background-color: #CCCCCC;
-}
-
-.emotion-515:active:not(:disabled) {
-  background-color: #CCCCCC;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-515 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-515 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-518 {
-  fill: #2E2E2E;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-518 {
-    transition-property: fill;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-518 {
-    transition-property: fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-518.emotion-518 {
-  width: 16px;
-  height: 16px;
-}
-
 <div
     class="emotion-0"
   >
@@ -948,7 +847,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           About
                           <button
                             aria-expanded="false"
-                            aria-label="close button"
+                            aria-label="Hide sub-menu for About"
                             class="emotion-9"
                             data-testid="button"
                             tabindex="-1"
@@ -1125,7 +1024,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           Guides
                           <button
                             aria-expanded="false"
-                            aria-label="close button"
+                            aria-label="Hide sub-menu for Guides"
                             class="emotion-9"
                             data-testid="button"
                             tabindex="-1"
@@ -1388,7 +1287,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           Theme
                           <button
                             aria-expanded="false"
-                            aria-label="close button"
+                            aria-label="Hide sub-menu for Theme"
                             class="emotion-9"
                             data-testid="button"
                             tabindex="-1"
@@ -1943,7 +1842,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           Components
                           <button
                             aria-expanded="false"
-                            aria-label="close button"
+                            aria-label="Hide sub-menu for Components"
                             class="emotion-9"
                             data-testid="button"
                             tabindex="-1"
@@ -3565,50 +3464,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
               <div
                 class="emotion-512"
               />
-              <div
-                class="emotion-513"
-              >
-                <p
-                  class="emotion-509"
-                >
-                  Dark  Theme 
-                </p>
-                <button
-                  aria-label="Enable Dark Theme"
-                  aria-pressed="false"
-                  class="emotion-515"
-                  data-testid="theme-switch-button"
-                  tabindex="-1"
-                  title="Enable Dark Theme"
-                  type="button"
-                >
-                  <div
-                    class="emotion-10"
-                  >
-                    <div
-                      class="emotion-11"
-                    >
-                      <svg
-                        class="emotion-518"
-                        fill="currentColor"
-                        role="img"
-                        viewBox="0 0 17 17"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <title>
-                          Dark icon
-                        </title>
-                        <path
-                          clip-rule="evenodd"
-                          d="M12.7349 0C12.9152 0 13.0614 0.146193 13.0614 0.326531C13.0614 1.76923 14.2309 2.93878 15.6736 2.93878C15.854 2.93878 16.0002 3.08497 16.0002 3.26531V3.59184C16.0002 3.77217 15.854 3.91837 15.6736 3.91837C14.2309 3.91837 13.0614 5.08791 13.0614 6.53061C13.0614 6.71095 12.9152 6.85714 12.7349 6.85714H12.4083C12.228 6.85714 12.0818 6.71095 12.0818 6.53061C12.0818 5.08791 10.9123 3.91837 9.46956 3.91837C9.28922 3.91837 9.14303 3.77217 9.14303 3.59184V3.26531C9.14303 3.08497 9.28922 2.93878 9.46956 2.93878C10.9123 2.93878 12.0818 1.76923 12.0818 0.326531C12.0818 0.146193 12.228 0 12.4083 0H12.7349ZM14.8384 9.78689C15.2381 9.50799 15.8414 9.80867 15.7022 10.2758C14.7157 13.5862 11.6485 16 8.01747 16C3.58955 16 0 12.4105 0 7.98253C0 4.35151 2.41376 1.28426 5.72424 0.29782C6.19133 0.158637 6.49201 0.761872 6.21311 1.16157C5.51277 2.16524 5.10203 3.38598 5.10203 4.70265C5.10203 8.12423 7.87577 10.898 11.2973 10.898C12.614 10.898 13.8348 10.4872 14.8384 9.78689Z"
-                          fill="#577FFB"
-                          fill-rule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -3658,10 +3513,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   top: 0;
   left: 0;
   z-index: 3;
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
   -webkit-transition: -webkit-transform 300ms;
   transition: transform 300ms;
   padding-top: 16px;
@@ -3764,14 +3615,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   color: #0A0A0A;
   margin-top: 16px;
   margin-bottom: 0;
-}
-
-.emotion-6.collapsed>h5 {
-  margin-bottom: 24px;
-}
-
-.emotion-6.expanded>h5 {
-  margin-bottom: 16px;
 }
 
 .emotion-6.collapsed>li {
@@ -4253,7 +4096,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     About
                     <button
                       aria-expanded="false"
-                      aria-label="close button"
+                      aria-label="Hide sub-menu for About"
                       class="emotion-9"
                       data-testid="button"
                       type="button"
@@ -4424,7 +4267,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     Guides
                     <button
                       aria-expanded="false"
-                      aria-label="close button"
+                      aria-label="Hide sub-menu for Guides"
                       class="emotion-9"
                       data-testid="button"
                       type="button"
@@ -4679,7 +4522,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     Theme
                     <button
                       aria-expanded="false"
-                      aria-label="close button"
+                      aria-label="Hide sub-menu for Theme"
                       class="emotion-9"
                       data-testid="button"
                       type="button"
@@ -5215,7 +5058,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     Components
                     <button
                       aria-expanded="false"
-                      aria-label="close button"
+                      aria-label="Hide sub-menu for Components"
                       class="emotion-9"
                       data-testid="button"
                       type="button"
@@ -7005,14 +6848,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-6.collapsed>h5 {
-  margin-bottom: 24px;
-}
-
-.emotion-6.expanded>h5 {
-  margin-bottom: 16px;
-}
-
 .emotion-6.collapsed>li {
   overflow: hidden;
   max-height: 0px;
@@ -7547,99 +7382,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-block: 24px;
 }
 
-.emotion-513 {
-  display: grid;
-  grid-template-columns: 1fr 30px;
-}
-
-.emotion-515 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 32px;
-  height: 32px;
-  padding: 8px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: #F4F4F4;
-  border-radius: 50%;
-  margin: 0;
-  cursor: pointer;
-}
-
-.emotion-515 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-515:hover:not(:disabled) {
-  background-color: #CCCCCC;
-}
-
-.emotion-515:active:not(:disabled) {
-  background-color: #CCCCCC;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-515 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-515 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-518 {
-  fill: #2E2E2E;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-518 {
-    transition-property: fill;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-518 {
-    transition-property: fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-518.emotion-518 {
-  width: 16px;
-  height: 16px;
-}
-
 <div
     class="emotion-0"
   >
@@ -7696,7 +7438,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           About
                           <button
                             aria-expanded="false"
-                            aria-label="close button"
+                            aria-label="Hide sub-menu for About"
                             class="emotion-9"
                             data-testid="button"
                             type="button"
@@ -7867,7 +7609,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           Guides
                           <button
                             aria-expanded="false"
-                            aria-label="close button"
+                            aria-label="Hide sub-menu for Guides"
                             class="emotion-9"
                             data-testid="button"
                             type="button"
@@ -8122,7 +7864,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           Theme
                           <button
                             aria-expanded="false"
-                            aria-label="close button"
+                            aria-label="Hide sub-menu for Theme"
                             class="emotion-9"
                             data-testid="button"
                             type="button"
@@ -8658,7 +8400,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           Components
                           <button
                             aria-expanded="false"
-                            aria-label="close button"
+                            aria-label="Hide sub-menu for Components"
                             class="emotion-9"
                             data-testid="button"
                             type="button"
@@ -10223,49 +9965,6 @@ exports[`Sidebar renders correctly when open 1`] = `
               <div
                 class="emotion-512"
               />
-              <div
-                class="emotion-513"
-              >
-                <p
-                  class="emotion-509"
-                >
-                  Dark  Theme 
-                </p>
-                <button
-                  aria-label="Enable Dark Theme"
-                  aria-pressed="false"
-                  class="emotion-515"
-                  data-testid="theme-switch-button"
-                  title="Enable Dark Theme"
-                  type="button"
-                >
-                  <div
-                    class="emotion-10"
-                  >
-                    <div
-                      class="emotion-11"
-                    >
-                      <svg
-                        class="emotion-518"
-                        fill="currentColor"
-                        role="img"
-                        viewBox="0 0 17 17"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <title>
-                          Dark icon
-                        </title>
-                        <path
-                          clip-rule="evenodd"
-                          d="M12.7349 0C12.9152 0 13.0614 0.146193 13.0614 0.326531C13.0614 1.76923 14.2309 2.93878 15.6736 2.93878C15.854 2.93878 16.0002 3.08497 16.0002 3.26531V3.59184C16.0002 3.77217 15.854 3.91837 15.6736 3.91837C14.2309 3.91837 13.0614 5.08791 13.0614 6.53061C13.0614 6.71095 12.9152 6.85714 12.7349 6.85714H12.4083C12.228 6.85714 12.0818 6.71095 12.0818 6.53061C12.0818 5.08791 10.9123 3.91837 9.46956 3.91837C9.28922 3.91837 9.14303 3.77217 9.14303 3.59184V3.26531C9.14303 3.08497 9.28922 2.93878 9.46956 2.93878C10.9123 2.93878 12.0818 1.76923 12.0818 0.326531C12.0818 0.146193 12.228 0 12.4083 0H12.7349ZM14.8384 9.78689C15.2381 9.50799 15.8414 9.80867 15.7022 10.2758C14.7157 13.5862 11.6485 16 8.01747 16C3.58955 16 0 12.4105 0 7.98253C0 4.35151 2.41376 1.28426 5.72424 0.29782C6.19133 0.158637 6.49201 0.761872 6.21311 1.16157C5.51277 2.16524 5.10203 3.38598 5.10203 4.70265C5.10203 8.12423 7.87577 10.898 11.2973 10.898C12.614 10.898 13.8348 10.4872 14.8384 9.78689Z"
-                          fill="#577FFB"
-                          fill-rule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -10315,10 +10014,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   top: 0;
   left: 0;
   z-index: 3;
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
   -webkit-transition: -webkit-transform 300ms;
   transition: transform 300ms;
   padding-top: 16px;
@@ -10421,14 +10116,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   color: #0A0A0A;
   margin-top: 16px;
   margin-bottom: 0;
-}
-
-.emotion-6.collapsed>h5 {
-  margin-bottom: 24px;
-}
-
-.emotion-6.expanded>h5 {
-  margin-bottom: 16px;
 }
 
 .emotion-6.collapsed>li {
@@ -10913,7 +10600,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     About
                     <button
                       aria-expanded="false"
-                      aria-label="close button"
+                      aria-label="Hide sub-menu for About"
                       class="emotion-9"
                       data-testid="button"
                       type="button"
@@ -11084,7 +10771,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     Guides
                     <button
                       aria-expanded="false"
-                      aria-label="close button"
+                      aria-label="Hide sub-menu for Guides"
                       class="emotion-9"
                       data-testid="button"
                       type="button"
@@ -11339,7 +11026,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     Theme
                     <button
                       aria-expanded="false"
-                      aria-label="close button"
+                      aria-label="Hide sub-menu for Theme"
                       class="emotion-9"
                       data-testid="button"
                       type="button"
@@ -11875,7 +11562,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     Components
                     <button
                       aria-expanded="false"
-                      aria-label="close button"
+                      aria-label="Hide sub-menu for Components"
                       class="emotion-9"
                       data-testid="button"
                       type="button"

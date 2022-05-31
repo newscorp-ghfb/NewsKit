@@ -41,7 +41,6 @@ export const StyledSidebarDesktop = styled.div<SidebarWrapperProps>`
   top: 0;
   left: 0;
   z-index: 3;
-  transform: ${({open}) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   transition: transform 300ms;
   ${getSpacingCssFromTheme('paddingTop', 'space040')};
   ${getSpacingCssFromTheme('marginTop', 'space080')};
@@ -49,7 +48,7 @@ export const StyledSidebarDesktop = styled.div<SidebarWrapperProps>`
 
   ${getMediaQueryFromTheme('lg')} {
     width: 276px;
-    display: ${({hideSidebar}) => hideSidebar && 'none'};
+
     ${getSpacingCssFromTheme('marginTop', 'space100')};
     ${getSpacingCssFromTheme('paddingTop', 'space000')};
     transform: translateX(0);

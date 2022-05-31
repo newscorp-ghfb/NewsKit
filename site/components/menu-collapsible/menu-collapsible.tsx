@@ -124,7 +124,7 @@ export const MenuMobileCollapsible = ({
               {title}
               {openPanelIds.includes(index) ? (
                 <IconButton
-                  aria-label="open button"
+                  aria-label={`Show sub-menu for ${title}`}
                   aria-expanded={
                     openPanelIds.includes(index) ? 'true' : 'false'
                   }
@@ -141,7 +141,7 @@ export const MenuMobileCollapsible = ({
                 </IconButton>
               ) : (
                 <IconButton
-                  aria-label="close button"
+                  aria-label={`Hide sub-menu for ${title}`}
                   aria-expanded={
                     openPanelIds.includes(index) ? 'true' : 'false'
                   }
