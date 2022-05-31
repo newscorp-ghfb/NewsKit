@@ -4833,6 +4833,14 @@ Object {
       "boxShadow": "none",
       "iconColor": "{{colors.inkNonEssential}}",
     },
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineOffset": "-7px",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
+    },
     "hover": Object {
       "backgroundColor": "{{colors.interactivePrimary040}}",
       "iconColor": "{{colors.inkNonEssential}}",

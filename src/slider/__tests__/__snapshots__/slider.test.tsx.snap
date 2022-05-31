@@ -824,6 +824,22 @@ exports[`slider react-range Range function props renderThumb should render custo
   fill: #C0C0C0;
 }
 
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: -7px;
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-1 {
   position: absolute;
   top: 50%;
@@ -956,6 +972,22 @@ exports[`slider react-range Range function props renderThumb should render custo
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: -7px;
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-1 {
@@ -1135,6 +1167,22 @@ exports[`slider react-range Range function props renderThumb should render dragg
   fill: #C0C0C0;
 }
 
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: -7px;
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-1 {
   position: absolute;
   top: 50%;
@@ -1268,6 +1316,22 @@ exports[`slider react-range Range function props renderThumb should render multi
   fill: #C0C0C0;
 }
 
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: -7px;
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-1 {
   position: absolute;
   top: 50%;
@@ -1399,6 +1463,22 @@ exports[`slider react-range Range function props renderThumb should render range
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: -7px;
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-1 {
@@ -1569,6 +1649,22 @@ exports[`slider react-range Range function props renderThumb should render slide
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: -7px;
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-1 {
@@ -1745,6 +1841,22 @@ exports[`slider react-range Range function props renderThumb should render undra
   fill: #C0C0C0;
 }
 
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: -7px;
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-1 {
   position: absolute;
   top: 50%;
@@ -1876,6 +1988,22 @@ exports[`slider react-range Range function props renderThumb should render verti
 
 .emotion-0:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-0:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-offset: -7px;
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-1 {
