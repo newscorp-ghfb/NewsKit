@@ -49,7 +49,6 @@ const Sidebar: React.FC<SidebarProps> = ({
           open={sidebarOpen}
           data-testid="sidebar"
           role="complementary"
-          hideSidebar={hideSidebar}
         >
           <Block spaceInset="space010" />
 
