@@ -639,3 +639,20 @@ export const StoryTooltipPlacementsVisualTest = () => (
   </>
 );
 StoryTooltipPlacementsVisualTest.storyName = 'tooltip-placements-visual-test';
+
+export const StoryTooltipNoPointer = () => (
+  <>
+    <StorybookSubHeading>Tooltip no pointer</StorybookSubHeading>
+    <ThemeProvider theme={myCustomTheme}>
+      <Tooltip title="Tooltip content" placement="right" showPointer={false}>
+        <Button
+          size={ButtonSize.Small}
+          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+        >
+          Button
+        </Button>
+      </Tooltip>
+    </ThemeProvider>
+  </>
+);
+StoryTooltipNoPointer.storyName = 'tooltip-no-pointer';
