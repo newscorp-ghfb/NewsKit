@@ -62,6 +62,20 @@ describe('TitleBar', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders a title bar with logical props overrides', () => {
+    const fragment = renderToFragmentWithTheme(TitleBar, {
+      children: TITLE,
+      overrides: {
+        paddingInline: 'space020',
+        paddingBlock: 'space040',
+        marginBlock: 'space060',
+        marginInline: 'space080',
+      },
+    } as TitleBarProps);
+
+    expect(fragment).toMatchSnapshot();
+  });
+
   describe('should display correctly as', () => {
     const headingLevels = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
 

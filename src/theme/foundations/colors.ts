@@ -111,6 +111,7 @@ export const palettes = {
   socialGoogleRed: '#DB4437',
   socialGoogleYellow: '#F4B400',
   socialGoogleGreen: '#0F9D58',
+  focus010: '#3768FB',
   transparent: 'transparent',
 };
 
@@ -172,6 +173,7 @@ export const colors = {
   interactivePositive030: '{{colors.green060}}',
   interactivePositive040: '{{colors.green070}}',
   interactivePositive050: '{{colors.green080}}',
+  interactiveFocus010: '{{colors.focus010}}',
   interactiveVisited010: '{{colors.purple050}}',
   interactiveDisabled010: '{{colors.neutral020}}',
   interactiveInverse010: '{{colors.whiteTint010}}',

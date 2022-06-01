@@ -4,6 +4,7 @@ import {BaseFlagProps, BaseFlagOverrides} from '../flag';
 import {DividerOverrides} from '../divider';
 import {ScrollProps} from '../scroll';
 import {Override} from '../utils/overrides';
+import {LogicalProps} from '../utils/logical-properties';
 
 export enum TabAlign {
   Start = 'start',
@@ -51,7 +52,7 @@ export interface TabsProps {
   align?: TabAlign;
   onChange?: (selectedIndex: number) => void;
   overrides?: {
-    spaceInline?: MQ<string>;
+    spaceInline?: MQ<string>; // LOGICAL_PROPS_TO_DO: Used as the gap between tabs. Should be renamed.
     divider?: DividerOverrides;
     tab?: {
       spaceInline?: MQ<string>;
@@ -70,7 +71,7 @@ export interface TabsProps {
       };
     };
     scroll?: Override<ScrollProps>;
-  };
+  } & LogicalProps;
 }
 
 export interface TabPanelProps {
