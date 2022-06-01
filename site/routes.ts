@@ -776,6 +776,13 @@ export default [
             description: 'Forms are used to collect customer’s data.',
             illustration: 'patterns/overview/hero',
           },
+          {
+            title: 'Overview2',
+            page: true,
+            id: '/patterns/overview2',
+            description: 'Overview2 Forms are used to collect customer’s data.',
+            illustration: 'patterns/overview/hero',
+          },
         ],
       },
     ],
