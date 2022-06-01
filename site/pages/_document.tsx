@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import Document, {Head, Main, NextScript, Html} from 'next/document';
-import {Consent, Global, css, Tealium} from 'newskit';
+import {Global, css} from 'newskit';
 import Helmet from 'react-helmet';
 import {HTMLMeta} from '../components/html-meta';
 
