@@ -1395,3 +1395,52 @@ export const StoryTabsTransitions = () => (
   </>
 );
 StoryTabsTransitions.storyName = 'tabs-transitions';
+
+export const StoryTagLogicalProps = () => (
+  <>
+    <StorybookHeading>Tabs with Logical Props overrides</StorybookHeading>
+
+    <StorybookSubHeading>marginInline & marginBlock</StorybookSubHeading>
+    <ThemeProvider theme={transitionTheme}>
+      <Tabs
+        overrides={{
+          marginBlock: 'space060',
+          marginInline: 'space080',
+        }}
+      >
+        <Tab label="Content 1">Content 1</Tab>
+        <Tab label="Content 2">Content 2</Tab>
+      </Tabs>
+
+      <br />
+
+      <StorybookSubHeading>paddingInline & paddingBlock</StorybookSubHeading>
+      <Tabs
+        overrides={{
+          paddingBlock: 'space060',
+          paddingInline: 'space080',
+        }}
+      >
+        <Tab label="Content 1">Content 1</Tab>
+        <Tab label="Content 2">Content 2</Tab>
+      </Tabs>
+
+      <br />
+      <StorybookSubHeading>
+        marginInline & marginBlock & paddingInline & paddingBlock
+      </StorybookSubHeading>
+      <Tabs
+        overrides={{
+          marginBlock: 'space060',
+          marginInline: 'space080',
+          paddingBlock: 'space060',
+          paddingInline: 'space080',
+        }}
+      >
+        <Tab label="Content 1">Content 1</Tab>
+        <Tab label="Content 2">Content 2</Tab>
+      </Tabs>
+    </ThemeProvider>
+  </>
+);
+StoryTagLogicalProps.storyName = 'tabs-logical-props';

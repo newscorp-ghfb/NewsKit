@@ -322,3 +322,49 @@ export const StoryTagTransitions = () => (
   </>
 );
 StoryTagTransitions.storyName = 'tag-transitions';
+export const StoryTagLogicalProps = () => (
+  <>
+    <StorybookHeading>Tag with Logical Props overrides</StorybookHeading>
+    <StorybookSubHeading>
+      Inspect the box for better understanding
+    </StorybookSubHeading>
+
+    <ThemeProvider theme={myCustomTheme}>
+      <Tag
+        href="http://example.com"
+        overrides={{
+          marginBlock: 'space060',
+          marginInline: 'space080',
+        }}
+      >
+        marginInline & marginBlock
+      </Tag>
+
+      <br />
+      <Tag
+        href="http://example.com"
+        overrides={{
+          paddingBlock: 'space060',
+          paddingInline: 'space080',
+        }}
+      >
+        paddingInline & paddingBlock
+      </Tag>
+
+      <br />
+
+      <Tag
+        href="http://example.com"
+        overrides={{
+          marginBlock: 'space060',
+          marginInline: 'space080',
+          paddingBlock: 'space060',
+          paddingInline: 'space080',
+        }}
+      >
+        marginInline & marginBlock & paddingInline & paddingBlock
+      </Tag>
+    </ThemeProvider>
+  </>
+);
+StoryTagLogicalProps.storyName = 'tag-logical-props';

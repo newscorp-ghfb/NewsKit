@@ -7,6 +7,10 @@ import {getIllustrationComponent} from '../../components/illustrations/illustrat
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
+import {
+  logicalMarginOverrideProps,
+  logicalPaddingOverrideProps,
+} from '../../components/component-api/common-logical-props';
 
 const infoIcon = (
   <IconFilledInfo
@@ -110,15 +114,14 @@ const commonOverridesRows = [
     description: 'If provided, this overrides the input & placeholder text.',
   },
   {
-    attribute: 'spaceInset',
+    attribute: 'spaceInset(deprecated)',
     type: 'MQ<string>',
     default: [
       'small = spaceInset020',
       'medium = spaceInset030',
       'large = spaceInset030',
     ],
-    description:
-      'If provided, this overrides the inset space within the Text Field.',
+    description: `This property is deprecated. Use paddingInline and paddingBlock instead.`,
   },
   {
     attribute: 'startEnhancer.iconSize',
@@ -148,6 +151,8 @@ const commonOverridesRows = [
     description:
       'If provided, this overrides the lnline space of the end enhancer.',
   },
+  ...logicalMarginOverrideProps,
+  ...logicalPaddingOverrideProps,
 ];
 
 const formInputPropsFooter = (

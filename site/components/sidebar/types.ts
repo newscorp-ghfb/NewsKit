@@ -17,29 +17,34 @@ export type PageType = {
   id: string;
 };
 
-export type NavigationSectionType = {
+type NavProps = {
   title: string;
   id: string;
-  subNav: PageType[];
+  description?: string;
+  page?: boolean;
 };
 
-type SectionPropType = {
-  title?: string;
+export type SubNavProps = {
+  title: string;
   id: string;
-  subNav: Array<PageType | NavigationSectionType>;
+  description?: string | undefined;
+  page?: boolean | undefined;
+  subNav?: NavProps[] | undefined;
+}[];
+export type SiteMenuItemProps = {
+  menuItemList: Array<{
+    title: string;
+    id: string;
+    description?: string;
+    page?: boolean;
+    subNav?: NavProps[];
+  }>;
 };
 
 export interface PageLinkProps {
-  page: PageType;
+  page?: PageType;
+  href: string;
   active: boolean;
-}
 
-export interface NavigationSectionProps {
-  navigationSection: NavigationSectionType;
-  activePagePath: string;
-}
-
-export interface SectionProps {
-  section: SectionPropType;
-  activePagePath: string;
+  children: React.ReactNode;
 }
