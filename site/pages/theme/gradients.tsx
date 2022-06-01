@@ -30,7 +30,7 @@ const Gradients = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Gradients',
       description:
-        'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the background contrast when a component is layered above the interface, e.g. a Modal',
+        'Gradient foundations consist of both ‘base’ styles (these are dark when used in a light theme) and ‘inverse’ styles (these are light when used in a dark theme).',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -40,7 +40,7 @@ const Gradients = (layoutProps: LayoutProps) => (
         illustration: 'theme/gradient/hero',
       },
       introduction:
-        'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the background contrast when a component is layered above the interface, e.g. a Modal.',
+        "Gradients Base gradient tokens are used to fade elements into the interface background. 'Inverse' gradient tokens are used to fade elements into a dark background in a light theme.",
     }}
   >
     <ComponentPageCell>
@@ -49,7 +49,7 @@ const Gradients = (layoutProps: LayoutProps) => (
           toc="Usage"
           id="usage"
           headline="Usage"
-          description="The following guidance describes how and when to appropriately use overlays."
+          description="The following guidance describes how and when to appropriately use gradients."
           showSeparator
         >
           <MediaList
