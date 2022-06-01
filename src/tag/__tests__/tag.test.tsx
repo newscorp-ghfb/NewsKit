@@ -201,4 +201,17 @@ describe('Tag', () => {
     const fragment = renderToFragmentWithTheme(renderTagWithText, props);
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders a tag with logical props overrides', () => {
+    const props: TagProps = {
+      overrides: {
+        paddingInline: 'space020',
+        paddingBlock: 'space040',
+        marginBlock: 'space060',
+        marginInline: 'space080',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(renderTagWithTextAndIcon, props);
+    expect(fragment).toMatchSnapshot();
+  });
 });

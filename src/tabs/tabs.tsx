@@ -41,6 +41,7 @@ import {Divider} from '../divider';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {omitLogicalPropsFromOverrides} from '../utils/logical-properties';
 
 /* istanbul ignore next */
 export const Tab: React.FC<TabProps> = () => <></>;
@@ -82,6 +83,7 @@ const ThemelessTabs: React.FC<TabsProps> = ({
 }) => {
   const theme = useTheme();
   const align = getAlign(passedAlign, vertical);
+  const nonLogicalOverrides = omitLogicalPropsFromOverrides(overrides);
 
   const [ScrollComponent, scrollProps] = getComponentOverrides(
     /* istanbul ignore next  */
@@ -147,7 +149,7 @@ const ThemelessTabs: React.FC<TabsProps> = ({
   const activeTabSize = vertical ? activeTabHeight : activeTabWidth;
 
   const tabsBarIndicatorSizeOverride = get(
-    overrides,
+    nonLogicalOverrides,
     'selectionIndicator.indicator.size',
   );
 
@@ -270,7 +272,7 @@ const ThemelessTabs: React.FC<TabsProps> = ({
     <StyledDividerWrapper
       key={`${key}-divider`}
       vertical={!vertical}
-      overrides={overrides}
+      overrides={nonLogicalOverrides}
     >
       <Divider overrides={overrides.divider} vertical={!vertical} />
     </StyledDividerWrapper>
@@ -293,7 +295,7 @@ const ThemelessTabs: React.FC<TabsProps> = ({
         vertical={vertical}
         last={array.length === index + 1}
         key={`${tab.key}-wrapper`}
-        overrides={overrides}
+        overrides={nonLogicalOverrides}
       >
         <ScrollSnapAlignment snapAlign={getScrollAlign(index, array)}>
           <TabInternal
@@ -334,13 +336,13 @@ const ThemelessTabs: React.FC<TabsProps> = ({
       data-testid="tab-group"
     >
       <StyledTabsBar
-        overrides={overrides}
+        overrides={nonLogicalOverrides}
         vertical={vertical}
         data-testid="tab-bar"
       >
         <ScrollComponent {...scrollProps}>
           <StyledInnerTabGroup
-            overrides={overrides}
+            overrides={nonLogicalOverrides}
             flow={vertical ? Flow.VerticalLeft : Flow.HorizontalCenter}
             inline={!vertical}
             role="tablist"
@@ -349,7 +351,7 @@ const ThemelessTabs: React.FC<TabsProps> = ({
             {tabs}
 
             <StyledTabsBarIndicator
-              overrides={overrides}
+              overrides={nonLogicalOverrides}
               vertical={vertical}
               indicatorPosition={indicatorPosition}
               style={getTabsBarIndicatorStyle(
@@ -358,7 +360,7 @@ const ThemelessTabs: React.FC<TabsProps> = ({
                 indicator.distance,
                 vertical,
                 keyUpdated,
-                overrides,
+                nonLogicalOverrides,
               )}
               data-testid="tab-bar-indicator"
               aria-hidden="true"
@@ -367,7 +369,7 @@ const ThemelessTabs: React.FC<TabsProps> = ({
           </StyledInnerTabGroup>
         </ScrollComponent>
         <StyledTabsBarTrack
-          overrides={overrides}
+          overrides={nonLogicalOverrides}
           vertical={vertical}
           indicatorPosition={indicatorPosition}
           role="presentation"

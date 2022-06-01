@@ -4,13 +4,12 @@ import {
   styled,
   getSizingFromTheme,
   getColorFromTheme,
+  getSpacingCssFromTheme,
 } from 'newskit';
 
 const LogoWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  height: 52px;
   overflow: hidden;
+  ${getSpacingCssFromTheme('marginLeft', {lg: '24px'})};
 `;
 
 interface StyledLogoProps {
@@ -19,8 +18,8 @@ interface StyledLogoProps {
 
 const LogoSvg = styled.svg<StyledLogoProps>`
   display: inline-block;
-  width: 183px;
-  height: ${getSizingFromTheme('sizing070')};
+  ${getSpacingCssFromTheme('width', {xs: '125px', lg: '183px'})};
+  height: ${getSizingFromTheme('sizing080')};
 `;
 
 const StyledText = styled.g`

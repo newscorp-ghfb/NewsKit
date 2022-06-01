@@ -204,6 +204,60 @@ export const TextFieldWithOverrides = () => (
     </Container>
   </>
 );
+
+export const TextFieldLogicalProps = () => (
+  <>
+    <StorybookHeading>Text With Logical Props overrides</StorybookHeading>
+    <StorybookSubHeading>
+      Inspect the box for better understanding
+    </StorybookSubHeading>
+    <Container>
+      <ThemeProvider theme={myCustomTheme}>
+        <Label htmlFor="id-14" overrides={{stylePreset: 'labelOverrides'}}>
+          Label
+        </Label>
+        <TextField
+          aria-describedby="id-14-at"
+          id="id-14"
+          placeholder="marginInline & marginBlock"
+          overrides={{
+            marginBlock: 'space060',
+            marginInline: 'space080',
+          }}
+        />
+        <Block spaceStack="space080" />
+        <Label htmlFor="id-15" overrides={{stylePreset: 'labelOverrides'}}>
+          Label
+        </Label>
+        <TextField
+          aria-describedby="id-15-at"
+          id="id-15"
+          placeholder="paddingInline & paddingBlock"
+          overrides={{
+            paddingBlock: 'space060',
+            paddingInline: 'space080',
+          }}
+        />
+        <Block spaceStack="space080" />
+        <Label htmlFor="id-16" overrides={{stylePreset: 'labelOverrides'}}>
+          Label
+        </Label>
+        <TextField
+          aria-describedby="id-16-at"
+          id="id-16"
+          placeholder="marginInline & marginBlock & paddingInline & paddingBlock"
+          overrides={{
+            marginBlock: 'space060',
+            marginInline: 'space080',
+            paddingBlock: 'space060',
+            paddingInline: 'space080',
+          }}
+        />
+      </ThemeProvider>
+    </Container>
+  </>
+);
+
 export const TextFieldIcons = () => (
   <>
     <Container>

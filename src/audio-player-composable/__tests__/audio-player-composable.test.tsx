@@ -618,14 +618,12 @@ describe('Audio Player Composable', () => {
       expect(mockGetTrackBackground).toHaveBeenCalledWith({
         colors: [
           `${seekBarIndicator.base!.backgroundColor}`, // indicator
-          `${seekBarBuffering.base!.backgroundColor}`, // buffered
-          `${seekBarTrack.base!.backgroundColor}`, // track background
-          `${seekBarBuffering.base!.backgroundColor}`, // buffered
+          `${seekBarBuffering.base!.backgroundColor}`, // buffered// track background
           `${seekBarTrack.base!.backgroundColor}`, // track background
         ],
         max: 6610,
         min: 0,
-        values: [10, 14, 20, 20],
+        values: [10, 14],
       });
 
       // Audio player snapshot last (so that buffering is included)
