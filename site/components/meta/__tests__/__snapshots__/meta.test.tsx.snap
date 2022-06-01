@@ -508,7 +508,7 @@ exports[`Meta renders with mandatory props 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 8px;
+  border-radius: 24px;
   color: #2E2E2E;
   margin: 0;
   cursor: pointer;
@@ -1660,7 +1660,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 8px;
+  border-radius: 24px;
   color: #2E2E2E;
   margin: 0;
   cursor: pointer;

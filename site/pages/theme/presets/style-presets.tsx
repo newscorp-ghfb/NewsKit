@@ -195,6 +195,16 @@ const CSS_PROPS = [
     acceptedValues: <Link href="/theme/shadows/">foundations shadows</Link>,
     description: 'The box shadow to an element',
   },
+  {
+    token: 'opacity',
+    acceptedValues: 'foundations opacity', // TODO: Link to Opacity page when we have it live
+    description: 'The opacity level of an element',
+  },
+  {
+    token: 'linear-gradient',
+    acceptedValues: 'foundations gradient', // TODO: Link to Gradients page when we have it live
+    description: 'The transition between two or more specified colors',
+  },
 ];
 
 const ImageWrapper = styled.div`
@@ -233,6 +243,24 @@ const STYLE_PRESET_STATES = [
     description: `When using a mouse, "activation" typically starts when a user presses down a primary mouse button. Sometimes referred to as ‘pressed’`,
   },
   {
+    example: getImage('theme/style-presets/hover-active'),
+    state: 'hover:active',
+    description:
+      'The style and behaviour when a user’s cursor hovers over an interactive element and a user presses down a primary mouse button',
+  },
+  {
+    example: getImage('theme/style-presets/valid-hover-active'),
+    state: 'valid:hover:active',
+    description:
+      'The style and behaviour when a user’s cursor hovers over an interactive element in a valid state, and a user presses down a primary mouse button',
+  },
+  {
+    example: getImage('theme/style-presets/invalid-hover-active'),
+    state: 'invalid:hover:active',
+    description:
+      'The style and behaviour when a user’s cursor hovers over an interactive element in an invalid state, and a user presses down a primary mouse button',
+  },
+  {
     example: getImage('theme/style-presets/visited'),
     state: 'visited',
     description:
@@ -242,11 +270,6 @@ const STYLE_PRESET_STATES = [
     example: getImage('theme/style-presets/disabled'),
     state: 'disabled',
     description: `Communicates that an element exists, but is not available to a user in that scenario. It is used to maintain layout consistency and communicate to a user that an element may become available if another condition has been met. When a user hovers over an element in a disabled state, the cursor shows as “not-allowed”`,
-  },
-  {
-    example: getImage('theme/style-presets/selected'),
-    state: 'selected',
-    description: `The style of a component changes to visually communicate and provide feedback to a user that a component has been selected (e.g. in a Tab menu, "selected" would be the selected Tab)`,
   },
   {
     example: getImage('theme/style-presets/checked'),
@@ -269,6 +292,11 @@ const STYLE_PRESET_STATES = [
     example: getImage('theme/style-presets/loading'),
     state: 'loading',
     description: `When a component can’t be displayed because it is in a transitional "loading" state (e.g. images that haven't loaded yet)`,
+  },
+  {
+    example: getImage('theme/style-presets/selected'),
+    state: 'selected',
+    description: `The style of a component changes to visually communicate and provide feedback to a user that a component has been selected (e.g. in a Tab menu, "selected" would be the selected Tab)`,
   },
   {
     example: getImage('theme/style-presets/selected-hover'),

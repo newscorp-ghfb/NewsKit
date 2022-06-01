@@ -294,11 +294,12 @@ const coloursTable = [
         header: 'Common',
         columnHeader: ['Colour', 'Colour token', 'Token value', 'Common uses'],
         rows: themeColorRows('interactive', INTERACTIVE_DESCRIPTION, [
+          'interactiveFocus010',
           'interactiveDisabled010',
           'interactiveVisited010',
         ]),
         description:
-          '‘Common’ interactive colours are used across the system and are universal in their application.',
+          '‘Other’ interactive colours are used for focus tabbing, ‘disabled’, & ‘visited states.',
       },
     ],
   },

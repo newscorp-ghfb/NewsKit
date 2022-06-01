@@ -225,6 +225,20 @@ describe('TextField', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders TextField with logical props overrides', () => {
+    const props: TextFieldProps = {
+      overrides: {
+        paddingInline: 'space020',
+        paddingBlock: 'space040',
+        marginBlock: 'space060',
+        marginInline: 'space080',
+      },
+    };
+    const fragment = renderWithTheme(renderTextField, props) as any;
+
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('fires focus event onFocus with custom originator', async () => {
     const mockFireEvent = jest.fn();
 

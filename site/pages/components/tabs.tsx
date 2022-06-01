@@ -18,6 +18,10 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Link} from '../../components/link';
+import {
+  logicalMarginOverrideProps,
+  logicalPaddingOverrideProps,
+} from '../../components/component-api/common-logical-props';
 
 const TabsComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -307,6 +311,8 @@ const TabsComponent = (layoutProps: LayoutProps) => (
                 </>
               ),
             },
+            ...logicalMarginOverrideProps,
+            ...logicalPaddingOverrideProps,
           ],
           propsFooter: (
             <InlineMessage>
