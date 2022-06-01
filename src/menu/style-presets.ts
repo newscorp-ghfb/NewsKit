@@ -36,6 +36,12 @@ export default {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+    },
   },
 
   menuItemHorizontal: {
@@ -72,6 +78,12 @@ export default {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+    },
   },
 
   menuItemHorizontalInverse: {
@@ -107,6 +119,12 @@ export default {
     disabled: {
       color: '{{colors.interactiveInverse020}}',
       iconColor: '{{colors.interactiveInverse020}}',
+    },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
     },
   },
 } as Record<string, StylePreset>;

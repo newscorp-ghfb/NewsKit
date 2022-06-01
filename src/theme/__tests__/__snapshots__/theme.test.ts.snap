@@ -4478,6 +4478,12 @@ Object {
       "color": "{{colors.inkNonEssential}}",
       "iconColor": "{{colors.inkNonEssential}}",
     },
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+    },
     "hover": Object {
       "borderColor": "{{colors.interactivePrimary030}}",
       "color": "{{colors.inkBase}}",
@@ -4512,6 +4518,12 @@ Object {
       "color": "{{colors.interactiveInverse020}}",
       "iconColor": "{{colors.interactiveInverse020}}",
     },
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+    },
     "hover": Object {
       "borderColor": "{{colors.interactiveInverse030}}",
       "color": "{{colors.inkInverse}}",
@@ -4545,6 +4557,12 @@ Object {
     "disabled": Object {
       "color": "{{colors.inkNonEssential}}",
       "iconColor": "{{colors.inkNonEssential}}",
+    },
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
     },
     "hover": Object {
       "backgroundColor": "{{colors.interactivePrimary010}}",
