@@ -182,7 +182,7 @@ export default [
       {
         title: 'Opacity',
         page: true,
-        id: '/theme/overview',
+        id: '/theme/opacity',
         illustration: 'theme/opacity/hero',
         description:
           'Opacity is used to create a visual layer between elements.',
@@ -190,7 +190,7 @@ export default [
       {
         title: 'Overlays',
         page: true,
-        id: '/theme/overview',
+        id: '/theme/overlays',
         illustration: 'theme/overlays/hero',
         description:
           'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
