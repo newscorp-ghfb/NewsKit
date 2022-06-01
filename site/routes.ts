@@ -766,14 +766,12 @@ export default [
       {
         title: 'Index',
         page: true,
-        id: '/patterns/forms',
+        id: '/patterns/forms-index',
         indexPage: true,
       },
       {
         title: 'Forms',
         id: '/patterns/forms',
-        description:
-          'Design patterns provide a framework for solving a particular user problem in a consistent, considered way.',
         subNav: [
           {
             title: 'Overview',
