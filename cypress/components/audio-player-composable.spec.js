@@ -193,7 +193,7 @@ describe('audio player composable', () => {
     triggerKeyEvent('@muteButton', {key: 'm'});
     isVolumeVal(0);
 
-    triggerKeyEvent('@muteButton', {key: 'm'});
+    triggerKeyEvent('@muteButton', {key: 'm', force: true});
     isVolumeVal(0.7);
   });
 

@@ -15,6 +15,7 @@ import {
   StyledGridLayoutItem,
   VolumeSliderContainer,
 } from './styled';
+import {useReactKeys} from '../../../utils/hooks';
 
 const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps> = props => {
   const {getVolumeControlProps} = useAudioPlayerContext();
@@ -59,6 +60,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
                          muteButton`;
   const gridAreas = vertical ? verticalAreas : `muteButton slider`;
   const gridColumns = vertical ? '1fr' : 'auto 1fr';
+  const volumeSliderInstructionId = useReactKeys(1)[0];
 
   return (
     <StyledGridLayout
@@ -92,7 +94,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
               ariaLabel="Volume Control"
               ariaValueText={`volume level ${[volume][0] * 10} of 10`}
               dataTestId="volume-control-slider"
-              ariaDescribedBy="volume-control-sr-only-message"
+              ariaDescribedBy={volumeSliderInstructionId}
               overrides={{
                 track: {
                   stylePreset: sliderTrackStylePreset,
@@ -107,10 +109,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
                 },
               }}
             />
-            <ScreenReaderOnly
-              id="volume-control-sr-only-message"
-              aria-hidden="true"
-            >
+            <ScreenReaderOnly id={volumeSliderInstructionId} aria-hidden="true">
               Use the arrow keys to adjust volume
             </ScreenReaderOnly>
           </VolumeSliderContainer>
