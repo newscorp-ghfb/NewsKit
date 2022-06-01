@@ -202,7 +202,7 @@ Object {
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -216,7 +216,7 @@ Object {
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -230,7 +230,7 @@ Object {
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -461,7 +461,7 @@ Object {
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -475,7 +475,7 @@ Object {
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -489,7 +489,7 @@ Object {
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
