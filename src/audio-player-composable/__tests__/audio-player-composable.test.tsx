@@ -808,6 +808,9 @@ describe('Audio Player Composable', () => {
     });
 
     it('should have mute unmute functionality', () => {
+      // Clearing localStorage so not using any cashed initial volume
+      localStorage.clear();
+
       const {getByTestId} = renderWithTheme(
         AudioPlayerComposable,
         recordedAudioProps,
