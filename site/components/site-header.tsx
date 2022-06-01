@@ -115,21 +115,28 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
 
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
       items.map(({title, id}) => (
-        <MenuItem
-          data-testid="styled-indicator"
-          key={id}
-          href="/theme/overview"
-          size="small"
-          selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
-          overrides={{
-            stylePreset: 'linkTopNavigation',
-            minHeight: '80px',
+        <>
+          <MenuItem
+            data-testid="styled-indicator"
+            key={id}
+            href={id}
+            size="small"
+            selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
+            overrides={{
+              stylePreset: 'linkTopNavigation',
+              minHeight: '80px',
 
-            marginInline: '10px',
-          }}
-        >
-          {title}
-        </MenuItem>
+              marginInline: '10px',
+            }}
+          >
+            {title}
+          </MenuItem>
+          <br />
+          <a href="/theme/overview">/theme/overview</a>{' '}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <br />
+          <a href="theme/overview">theme/overview</a>
+        </>
       ));
 
     return (
