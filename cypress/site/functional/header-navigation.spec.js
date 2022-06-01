@@ -2,7 +2,7 @@
 
 const hamburgerIconTestID = '[data-testid="mobile-menu-icon"]';
 const sidebarTestID = '[data-testid="sidebar"]';
-const overlayTestID = '[data-testid="overlay"]';
+const indicatorID = '[data-testid="styled-indicator"]';
 
 describe('Documentation Site - header-navigation component', () => {
   before(() => {
@@ -13,12 +13,9 @@ describe('Documentation Site - header-navigation component', () => {
     it('should contain logo', () => {
       cy.get('[data-testid="logo-container"]').should('exist');
     });
-
     it('should highlight active section', () => {
       cy.visit('/about/introduction');
-      cy.contains('About').within(() =>
-        cy.get('div').should('have.attr', 'aria-current'),
-      );
+      cy.get(indicatorID).should('have.attr', 'aria-current');
     });
   });
 
@@ -30,18 +27,9 @@ describe('Documentation Site - header-navigation component', () => {
       cy.get(sidebarTestID).should('exist').and('not.be.visible');
       cy.get(hamburgerIconTestID).first().click();
       cy.get(sidebarTestID).should('be.visible');
-      cy.get('body').should('have.css', 'overflow', 'hidden');
-      cy.get(overlayTestID).should('have.css', 'visibility', 'visible');
 
       cy.get(hamburgerIconTestID).first().click();
       cy.get(sidebarTestID).should('exist').and('not.be.visible');
-      cy.get('body').should('have.css', 'overflow', 'visible');
-      cy.get(overlayTestID).should('have.css', 'visibility', 'hidden');
-    });
-
-    it('burger menu should not be visible on the homepage', () => {
-      cy.visit('/');
-      cy.get(hamburgerIconTestID).should('not.exist');
     });
   });
 });
