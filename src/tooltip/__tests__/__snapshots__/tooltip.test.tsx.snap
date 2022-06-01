@@ -157,7 +157,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
   >
     <div
       class="emotion-1"
-      id="arrow"
+      id="floating-ui-14-pointer"
     />
     hello
   </div>
@@ -209,7 +209,7 @@ exports[`Tooltip should render correct styles: with pointer and distance overrid
   >
     <div
       class="emotion-1"
-      id="arrow"
+      id="floating-ui-23-pointer"
     />
     hello
   </div>
@@ -261,7 +261,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
   >
     <div
       class="emotion-1"
-      id="arrow"
+      id="floating-ui-20-pointer"
     />
     hello
   </div>
@@ -313,7 +313,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
   >
     <div
       class="emotion-1"
-      id="arrow"
+      id="floating-ui-17-pointer"
     />
     hello
   </div>

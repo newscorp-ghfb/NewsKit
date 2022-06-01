@@ -135,7 +135,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
         >
           {showPointer && (
             <StyledPointer
-              id="arrow"
+              id={`${id}-pointer`}
               ref={pointerRef}
               placement={placement}
               x={pointerX}
