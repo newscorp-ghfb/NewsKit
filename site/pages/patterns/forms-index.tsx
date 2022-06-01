@@ -4,6 +4,7 @@ import routes from '../../routes';
 import Layout, {LayoutProps} from '../../components/layout';
 import {Hero} from '../../components/illustrations/patterns/hero';
 import {Item} from '../../components/sidebar/types';
+import {HeadNextSeo} from '../../components/head-next-seo';
 import {HeaderIndex} from '../../components/header-index/index';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {patternsThemeDark, patternsThemeLight} from '../../theme/doc-theme';
@@ -42,13 +43,21 @@ const Forms = (layoutProps: LayoutProps) => (
         <ThemeProvider
           theme={themeMode === 'light' ? patternsThemeLight : patternsThemeDark}
         >
+          <HeadNextSeo
+            title="Forms index"
+            description="Design patterns provide a framework for solving a particular user problem in a consistent, considered way."
+            image={{
+              url: 'social/patterns.png',
+              alt: 'Forms index',
+            }}
+          />
           <HeaderIndex title="Patterns" media={Hero}>
             Design patterns provide a framework for solving a particular user
             problem in a consistent, considered way.
           </HeaderIndex>
           <Grid lgMargin="sizing000" xsRowGutter="sizing000">
             <ComponentPageCell>
-              <ContentSection sectionName="Forms">
+              <ContentSection sectionName="forms">
                 <ContentPrimary headline="Forms">
                   <MediaList
                     cards={patternsIndexRouteListCards}
