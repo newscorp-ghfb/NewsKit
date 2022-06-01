@@ -83,6 +83,13 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   border-width: 1px;
 }
 
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-2 {
     transition-property: background-color;
@@ -330,6 +337,13 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   border-width: 1px;
 }
 
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-2 {
     transition-property: background-color;
@@ -575,6 +589,13 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
 
 .emotion-2:active:not(:disabled) {
   border-width: 1px;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

@@ -5031,6 +5031,12 @@ Object {
       "color": "{{colors.inkBase}}",
       "iconColor": "{{colors.inkBase}}",
     },
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+    },
     "hover": Object {
       "backgroundColor": "{{colors.interactiveSecondary020}}",
     },
@@ -5047,6 +5053,12 @@ Object {
       "borderWidth": "{{borders.borderWidth010}}",
       "color": "{{colors.inkInverse}}",
       "iconColor": "{{colors.inkInverse}}",
+    },
+    "focus-visible": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "{{outline.outlineOffsetDefault}}",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
     },
     "hover": Object {
       "backgroundColor": "{{colors.interactiveInverse010}}",

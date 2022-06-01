@@ -29,6 +29,12 @@ const myCustomTheme = createTheme({
           iconColor: '{{colors.inkInverse}}',
           backgroundColor: '{{colors.red020}}',
         },
+        'focus-visible': {
+          outlineColor: '{{outline.outlineColorDefault}}',
+          outlineStyle: '{{outline.outlineStyleDefault}}',
+          outlineWidth: '{{outline.outlineWidthDefault}}',
+          outlineOffset: '{{outline.outlineOffsetDefault}}',
+        },
       },
     },
   },
@@ -102,15 +108,15 @@ export const StoryTag = () => (
         spaceInline="space020"
         wrap="wrap"
       >
-        <Tag size={TagSize.Small}>
+        <Tag size={TagSize.Small} href="http://example.com">
           <IconFilledEmail />
           Text
         </Tag>
-        <Tag size={TagSize.Medium}>
+        <Tag size={TagSize.Medium} href="http://example.com">
           <IconFilledEmail />
           Text
         </Tag>
-        <Tag size={TagSize.Large}>
+        <Tag size={TagSize.Large} href="http://example.com">
           <IconFilledEmail />
           Text
         </Tag>
@@ -236,6 +242,12 @@ const myCustomThemeTransitions = createTheme({
         hover: {
           backgroundColor: '{{colors.amber070}}',
           borderColor: '{{colors.green040}}',
+        },
+        'focus-visible': {
+          outlineColor: '{{outline.outlineColorDefault}}',
+          outlineStyle: '{{outline.outlineStyleDefault}}',
+          outlineWidth: '{{outline.outlineWidthDefault}}',
+          outlineOffset: '{{outline.outlineOffsetDefault}}',
         },
       },
     },

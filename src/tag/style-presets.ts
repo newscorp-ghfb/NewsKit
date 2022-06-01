@@ -17,6 +17,12 @@ export default {
     active: {
       borderWidth: '{{borders.borderWidth010}}',
     },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
+    },
   },
   tagPrimaryInverse: {
     base: {
@@ -33,6 +39,12 @@ export default {
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse020}}',
+    },
+    'focus-visible': {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '{{outline.outlineOffsetDefault}}',
     },
   },
 } as Record<string, StylePreset>;
