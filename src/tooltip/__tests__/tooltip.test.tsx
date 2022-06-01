@@ -151,6 +151,14 @@ describe('Tooltip', () => {
       });
       expect(asFragment()).toMatchSnapshot();
     });
+    test('with pointer y coordinate', () => {
+      const {asFragment} = renderWithTheme(Tooltip, {
+        ...defaultProps,
+        showPointer: true,
+        placement: 'right',
+      });
+      expect(asFragment()).toMatchSnapshot();
+    });
   });
 
   describe('with different triggers:', () => {

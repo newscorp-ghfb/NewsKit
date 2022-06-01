@@ -319,3 +319,55 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
   </div>
 </DocumentFragment>
 `;
+
+exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-29"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  margin: 0;
+  pointer-events: none;
+  z-index: 80;
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-1 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  left: calc(-4px / 2);
+}
+
+<div
+    class="Tooltip emotion-0"
+    id="floating-ui-29"
+    role="tooltip"
+    style="position: absolute;"
+    tabindex="-1"
+  >
+    <div
+      class="emotion-1"
+      id="floating-ui-29-pointer"
+    />
+    hello
+  </div>
+</DocumentFragment>
+`;
