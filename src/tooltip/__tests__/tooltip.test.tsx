@@ -182,11 +182,10 @@ describe('Tooltip', () => {
       fireEvent.mouseLeave(button);
       expect(queryByRole('tooltip')).not.toBeInTheDocument();
     });
-    test('opens on focus', () => {
+    test('opens on focus by default', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         defaultOpen: false,
-        trigger: 'focus' as TriggerType,
       });
       const button = getByRole('button');
       fireEvent.focus(button);
@@ -209,6 +208,7 @@ describe('Tooltip', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         defaultOpen: false,
+        trigger: 'hover',
       });
       const button = getByRole('button');
       fireEvent.focus(button);

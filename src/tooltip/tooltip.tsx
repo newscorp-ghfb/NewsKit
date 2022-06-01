@@ -36,7 +36,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
   children,
   title,
   placement = 'top',
-  trigger = 'hover',
+  trigger = ['hover', 'focus'],
   open: openProp,
   defaultOpen,
   asLabel,
