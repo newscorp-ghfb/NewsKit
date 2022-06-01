@@ -57,6 +57,7 @@ Object {
     "blue090": "#213A5F",
     "blue100": "#192C48",
     "disabled": "{{colors.neutral090}}",
+    "focus010": "#3768FB",
     "green010": "#E6FAEB",
     "green020": "#B8EFC8",
     "green030": "#8EE1A6",
@@ -88,6 +89,7 @@ Object {
     "interactive240": "{{colors.blue090}}",
     "interactive250": "{{colors.blue100}}",
     "interactiveDisabled010": "{{colors.neutral090}}",
+    "interactiveFocus010": "{{colors.focus010}}",
     "interactiveInput010": "{{colors.neutral010}}",
     "interactiveInput020": "{{colors.neutral040}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -609,6 +611,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -2255,6 +2264,104 @@ Object {
     "spaceInset": "spaceInsetStretch040",
     "stylePreset": "structuredListItem",
   },
+  "switch": Object {
+    "large": Object {
+      "feedback": Object {
+        "size": "sizing090",
+        "stylePreset": "feedback",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+          "opacityChange",
+        ],
+      },
+      "input": Object {
+        "blockSize": "sizing070",
+        "inlineSize": "76px",
+        "paddingInline": "space010",
+        "spaceInline": "space040",
+        "stylePreset": "switchTrack",
+      },
+      "label": Object {
+        "stylePreset": "controlLabel",
+        "typographyPreset": "utilityBody030",
+      },
+      "thumb": Object {
+        "size": "sizing060",
+        "spaceInset": "sizing010",
+        "stylePreset": "switchThumb",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+        ],
+      },
+      "trackIcon": Object {
+        "stylePreset": "switchTrackIcon",
+      },
+    },
+    "medium": Object {
+      "feedback": Object {
+        "size": "sizing080",
+        "stylePreset": "feedback",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+          "opacityChange",
+        ],
+      },
+      "input": Object {
+        "blockSize": "sizing060",
+        "inlineSize": "60px",
+        "paddingInline": "space010",
+        "spaceInline": "space030",
+        "stylePreset": "switchTrack",
+      },
+      "label": Object {
+        "stylePreset": "controlLabel",
+        "typographyPreset": "utilityBody020",
+      },
+      "thumb": Object {
+        "size": "sizing050",
+        "spaceInset": "sizing010",
+        "stylePreset": "switchThumb",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+        ],
+      },
+      "trackIcon": Object {
+        "stylePreset": "switchTrackIcon",
+      },
+    },
+    "small": Object {
+      "feedback": Object {
+        "size": "sizing070",
+        "stylePreset": "feedback",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+          "opacityChange",
+        ],
+      },
+      "input": Object {
+        "blockSize": "sizing050",
+        "inlineSize": "44px",
+        "paddingInline": "space010",
+        "spaceInline": "space030",
+        "stylePreset": "switchTrack",
+      },
+      "label": Object {
+        "stylePreset": "controlLabel",
+        "typographyPreset": "utilityBody020",
+      },
+      "thumb": Object {
+        "size": "sizing040",
+        "spaceInset": "sizing010",
+        "stylePreset": "switchThumb",
+        "transitionPreset": Array [
+          "shiftAbsolute",
+        ],
+      },
+      "trackIcon": Object {
+        "stylePreset": "switchTrackIcon",
+      },
+    },
+  },
   "tab": Object {
     "large": Object {
       "iconSize": "iconSize030",
@@ -2511,6 +2618,13 @@ Object {
     },
     "spaceInset": "spaceInset030",
     "stylePreset": "toastNeutral",
+  },
+  "tooltip": Object {
+    "paddingBlock": "spaceInset020",
+    "paddingInline": "spaceInset020",
+    "stylePreset": "tooltip",
+    "typographyPreset": "utilityLabel010",
+    "zIndex": 80,
   },
   "unorderedList": Object {
     "content": Object {
@@ -4520,6 +4634,33 @@ Object {
       "backgroundColor": "{{colors.interactiveSecondary010}}",
     },
   },
+  "switchThumb": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.inkInverse}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "iconColor": "{{colors.inkContrast}}",
+    },
+  },
+  "switchTrack": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interactiveInput020}}",
+      "borderRadius": "{{borders.borderRadiusPill}}",
+    },
+    "checked": Object {
+      "backgroundColor": "{{colors.interactiveInput040}}",
+    },
+    "disabled": Object {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+    },
+  },
+  "switchTrackIcon": Object {
+    "base": Object {
+      "iconColor": "{{colors.inkInverse}}",
+    },
+    "disabled": Object {
+      "iconColor": "{{colors.inkNonEssential}}",
+    },
+  },
   "tab": Object {
     "active": Object {
       "backgroundColor": "{{colors.interactivePrimary020}}",
@@ -4691,6 +4832,13 @@ Object {
       "backgroundColor": "{{colors.interfacePositive010}}",
       "borderRadius": "{{borders.borderRadiusDefault}}",
       "iconColor": "{{colors.inkInverse}}",
+    },
+  },
+  "tooltip": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interface060}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkInverse}}",
     },
   },
   "videoPlayerControlBar": Object {
