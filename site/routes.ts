@@ -764,6 +764,12 @@ export default [
     id: '/patterns',
     subNav: [
       {
+        title: 'Index',
+        page: true,
+        id: '/patterns/forms',
+        indexPage: true,
+      },
+      {
         title: 'Forms',
         id: '/patterns/forms',
         description:
