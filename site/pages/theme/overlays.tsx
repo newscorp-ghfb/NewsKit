@@ -1,4 +1,5 @@
 import React from 'react';
+// import {newskitLightTheme} from 'newskit';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
@@ -9,6 +10,7 @@ import {
   ContentSection,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
+// import {getTokenType} from '../../utils/get-token-type';
 
 const DO_AND_DONT = [
   {
@@ -24,6 +26,14 @@ const DO_AND_DONT = [
     media: getIllustrationComponent('theme/overlays/dont'),
   },
 ];
+
+// const shadowRows = getTokenType(newskitLightTheme.shadows, 'shadow').map(
+//   ({tokenName, tokenValue}) => ({
+//     shadow: tokenValue as string,
+//     token: tokenName,
+//     exampleUsage: '',
+//   }),
+// );
 
 const Overlays = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
