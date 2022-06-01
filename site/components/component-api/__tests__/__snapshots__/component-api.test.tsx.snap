@@ -1077,18 +1077,6 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   }
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
-}
-
 .emotion-41 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1208,18 +1196,6 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   }
 }
 
-.emotion-46:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-46:focus {
-      outline-offset: -5px;
-    }
-  }
-}
-
 .emotion-50 {
   background-color: #577FFB;
   position: absolute;
@@ -1244,16 +1220,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   width: 100%;
 }
 
-.emotion-52:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-52:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-52:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 .emotion-84 {

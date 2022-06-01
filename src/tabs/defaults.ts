@@ -43,4 +43,7 @@ export default {
       },
     },
   },
+  tabPanel: {
+    stylePreset: 'tabPanel',
+  },
 };

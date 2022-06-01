@@ -2378,6 +2378,9 @@ Object {
       "typographyPreset": "utilityButton010",
     },
   },
+  "tabPanel": Object {
+    "stylePreset": "tabPanel",
+  },
   "tabs": Object {
     "selectionIndicator": Object {
       "indicator": Object {
@@ -4958,6 +4961,12 @@ Object {
       "color": "{{colors.inkNonEssential}}",
       "iconColor": "{{colors.inkNonEssential}}",
     },
+    "focus": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "-2px",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
+    },
     "hover": Object {
       "backgroundColor": "{{colors.interactivePrimary010}}",
       "color": "{{colors.inkBrand010}}",
@@ -4971,6 +4980,14 @@ Object {
       "backgroundColor": "{{colors.transparent}}",
       "color": "{{colors.inkBrand010}}",
       "iconColor": "{{colors.inkBrand010}}",
+    },
+  },
+  "tabPanel": Object {
+    "focus": Object {
+      "outlineColor": "{{outline.outlineColorDefault}}",
+      "outlineOffset": "-2px",
+      "outlineStyle": "{{outline.outlineStyleDefault}}",
+      "outlineWidth": "{{outline.outlineWidthDefault}}",
     },
   },
   "tabsBarIndicator": Object {

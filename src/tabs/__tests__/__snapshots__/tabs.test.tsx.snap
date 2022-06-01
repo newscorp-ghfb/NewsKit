@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tabs changes focus on-tab to tab-panel  1`] = `
+exports[`Tabs changes focus on tab to tab-panel  1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -175,6 +175,13 @@ exports[`Tabs changes focus on-tab to tab-panel  1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -202,18 +209,6 @@ exports[`Tabs changes focus on-tab to tab-panel  1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -350,6 +345,13 @@ exports[`Tabs changes focus on-tab to tab-panel  1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -366,15 +368,586 @@ exports[`Tabs changes focus on-tab to tab-panel  1`] = `
   }
 }
 
-.emotion-13:focus {
-  outline-offset: -1px;
+.emotion-18 {
+  scroll-snap-align: end;
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
+.emotion-23 {
+  background-color: #3358CC;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-24 {
+  background-color: #DEDEDE;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-25 {
+  margin: 0;
+  width: 100%;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+.emotion-26 {
+  margin: 0;
+  width: 100%;
+}
+
+.emotion-26:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+<div
+    class="emotion-0"
+    data-testid="tab-group"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tab-bar"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+          data-testid="scroll-container"
+        >
+          <div
+            aria-orientation="horizontal"
+            class="emotion-4"
+            role="tablist"
+          >
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-6"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="true"
+                  class="emotion-7"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="0"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        First tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-12"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="false"
+                  class="emotion-13"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Second tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-18"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="false"
+                  class="emotion-13"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Third tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="emotion-23"
+              data-testid="tab-bar-indicator"
+              role="presentation"
+              style="width: 0px; height: 2px; transform: translateX(0px);"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-24"
+        data-testid="tab-bar-track"
+        role="presentation"
+      />
+    </div>
+    <div
+      aria-hidden="false"
+      aria-labelledby="mock-nk-1"
+      class="emotion-25"
+      data-testid="tab-panel"
+      role="tabpanel"
+      tabindex="0"
+    >
+      First tab content
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="mock-nk-1"
+      class="emotion-26"
+      data-testid="tab-panel"
+      hidden=""
+      role="tabpanel"
+      tabindex="-1"
+    >
+      Second tab content
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="mock-nk-1"
+      class="emotion-26"
+      data-testid="tab-panel"
+      hidden=""
+      role="tabpanel"
+      tabindex="-1"
+    >
+      Third tab content
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tabs changes focus on tab-panel to tab  1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: column;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.emotion-1 {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 8px;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.emotion-3::-webkit-scrollbar {
+  display: none;
+}
+
+.emotion-3 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  border-width: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-5>*:not(style) {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-6 {
+  scroll-snap-align: start;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #2E2E2E;
+  margin: 0;
+  cursor: pointer;
+  background-color: transparent;
+  color: #3358CC;
+}
+
+.emotion-7 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-7 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-7:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #3358CC;
+}
+
+.emotion-7:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-7:active:not(:disabled) {
+  background-color: #AEBFFF;
+  color: #3358CC;
+}
+
+.emotion-7:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-7:selected:hover:not(:disabled) {
+  background-color: transparent;
+  color: #3358CC;
+}
+
+.emotion-7:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-7:disabled {
+  background-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-7:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-7 svg {
+  fill: #3358CC;
+}
+
+.emotion-7:hover:not(:disabled) {
+  background-color: transparent;
+  color: #3358CC;
+}
+
+.emotion-7:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-10 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-10::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-10::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-12 {
+  scroll-snap-align: center;
+}
+
+.emotion-13 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #2E2E2E;
+  margin: 0;
+  cursor: pointer;
+}
+
+.emotion-13 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-13 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-13:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #3358CC;
+}
+
+.emotion-13:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-13:active:not(:disabled) {
+  background-color: #AEBFFF;
+  color: #3358CC;
+}
+
+.emotion-13:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-13:selected:hover:not(:disabled) {
+  background-color: transparent;
+  color: #3358CC;
+}
+
+.emotion-13:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-13:disabled {
+  background-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-13:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-13 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-13 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -406,16 +979,11 @@ exports[`Tabs changes focus on-tab to tab-panel  1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -764,6 +1332,13 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -791,18 +1366,6 @@ exports[`Tabs clears focus onMouseDown 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -939,6 +1502,13 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -952,18 +1522,6 @@ exports[`Tabs clears focus onMouseDown 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -995,16 +1553,11 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -1351,6 +1904,13 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -1378,18 +1938,6 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -1526,6 +2074,13 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -1539,18 +2094,6 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -1582,16 +2125,11 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -1946,6 +2484,13 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -1973,18 +2518,6 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -2126,6 +2659,13 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -2139,18 +2679,6 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -2182,16 +2710,11 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -2540,6 +3063,13 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -2567,18 +3097,6 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -2715,6 +3233,13 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -2728,18 +3253,6 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -2771,16 +3284,11 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -3137,6 +3645,13 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -3164,18 +3679,6 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -3317,6 +3820,13 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -3330,18 +3840,6 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -3373,16 +3871,11 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -3731,6 +4224,13 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -3758,18 +4258,6 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -3906,6 +4394,13 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -3919,18 +4414,6 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -3962,16 +4445,11 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -4328,6 +4806,13 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -4355,18 +4840,6 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -4508,6 +4981,13 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -4521,18 +5001,6 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -4564,16 +5032,11 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -4922,6 +5385,13 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -4949,18 +5419,6 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -5076,18 +5534,6 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   }
 }
 
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
-  }
-}
-
 .emotion-18 {
   scroll-snap-align: end;
 }
@@ -5116,16 +5562,11 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -5476,6 +5917,13 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -5503,18 +5951,6 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -5651,6 +6087,13 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -5664,18 +6107,6 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -5707,16 +6138,11 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -6073,6 +6499,13 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -6100,18 +6533,6 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -6253,6 +6674,13 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -6266,18 +6694,6 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -6309,16 +6725,11 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -6667,6 +7078,13 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -6694,18 +7112,6 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -6842,6 +7248,13 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -6855,18 +7268,6 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -6898,16 +7299,11 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -7262,6 +7658,13 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -7275,18 +7678,6 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -7435,6 +7826,13 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-19:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-19 {
     transition-property: background-color;
@@ -7464,18 +7862,6 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   fill: #3358CC;
 }
 
-.emotion-19:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-19:focus {
-      outline-offset: -5px;
-    }
-  }
-}
-
 .emotion-23 {
   background-color: #3358CC;
   position: absolute;
@@ -7500,16 +7886,11 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -7856,6 +8237,13 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -7869,18 +8257,6 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -8024,6 +8400,13 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   fill: #C0C0C0;
 }
 
+.emotion-19:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-19 {
     transition-property: background-color;
@@ -8053,18 +8436,6 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   fill: #3358CC;
 }
 
-.emotion-19:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-19:focus {
-      outline-offset: -5px;
-    }
-  }
-}
-
 .emotion-23 {
   background-color: #3358CC;
   position: absolute;
@@ -8089,16 +8460,11 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -8453,6 +8819,13 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -8466,18 +8839,6 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -8622,6 +8983,13 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -8649,18 +9017,6 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
 
 .emotion-13:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-18 {
@@ -8691,16 +9047,11 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -9047,6 +9398,13 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -9060,18 +9418,6 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -9211,6 +9557,13 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -9238,18 +9591,6 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
 
 .emotion-13:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-18 {
@@ -9280,16 +9621,11 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -9638,6 +9974,13 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -9665,18 +10008,6 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -9813,6 +10144,13 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -9826,18 +10164,6 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -9869,16 +10195,11 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -10235,6 +10556,13 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -10262,18 +10590,6 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -10415,6 +10731,13 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -10428,18 +10751,6 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -10471,16 +10782,11 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -10837,6 +11143,13 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -10864,18 +11177,6 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -11037,6 +11338,13 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-15:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-15 {
     transition-property: background-color;
@@ -11050,18 +11358,6 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-15:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-15:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -11093,16 +11389,11 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   width: 100%;
 }
 
-.emotion-29:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-29:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-29:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -11469,6 +11760,13 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -11496,18 +11794,6 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -11669,6 +11955,13 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -11682,18 +11975,6 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -11725,16 +12006,11 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -12170,6 +12446,13 @@ exports[`Tabs renders with default styles 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -12197,18 +12480,6 @@ exports[`Tabs renders with default styles 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -12345,6 +12616,13 @@ exports[`Tabs renders with default styles 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -12358,18 +12636,6 @@ exports[`Tabs renders with default styles 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -12401,16 +12667,11 @@ exports[`Tabs renders with default styles 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -12759,6 +13020,13 @@ exports[`Tabs renders with default styles and divider 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -12786,18 +13054,6 @@ exports[`Tabs renders with default styles and divider 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -12955,6 +13211,13 @@ exports[`Tabs renders with default styles and divider 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-15:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-15 {
     transition-property: background-color;
@@ -12968,18 +13231,6 @@ exports[`Tabs renders with default styles and divider 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-15:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-15:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -13011,16 +13262,11 @@ exports[`Tabs renders with default styles and divider 1`] = `
   width: 100%;
 }
 
-.emotion-29:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-29:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-29:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -13387,6 +13633,13 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -13414,18 +13667,6 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -13587,6 +13828,13 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -13600,18 +13848,6 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -13643,16 +13879,11 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -14088,6 +14319,13 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -14115,18 +14353,6 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -14288,6 +14514,13 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -14301,18 +14534,6 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -14344,16 +14565,11 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -14789,6 +15005,13 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -14816,18 +15039,6 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -14989,6 +15200,13 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -15002,18 +15220,6 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -15045,16 +15251,11 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -15490,6 +15691,13 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -15517,18 +15725,6 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -15690,6 +15886,13 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -15703,18 +15906,6 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -15746,16 +15937,11 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -16191,6 +16377,13 @@ exports[`Tabs renders with icons for tabs 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -16218,18 +16411,6 @@ exports[`Tabs renders with icons for tabs 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -16368,6 +16549,13 @@ exports[`Tabs renders with icons for tabs 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-14:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-14 {
     transition-property: background-color;
@@ -16381,18 +16569,6 @@ exports[`Tabs renders with icons for tabs 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-14:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -16424,16 +16600,11 @@ exports[`Tabs renders with icons for tabs 1`] = `
   width: 100%;
 }
 
-.emotion-28:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-28:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -16823,6 +16994,13 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -16850,18 +17028,6 @@ exports[`Tabs renders with left/right aligned text 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -17028,6 +17194,13 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -17041,18 +17214,6 @@ exports[`Tabs renders with left/right aligned text 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -17084,16 +17245,11 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -17537,6 +17693,13 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -17564,18 +17727,6 @@ exports[`Tabs renders with left/right aligned text 2`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -17742,6 +17893,13 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -17755,18 +17913,6 @@ exports[`Tabs renders with left/right aligned text 2`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -17798,16 +17944,11 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -18243,6 +18384,13 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -18270,18 +18418,6 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -18418,6 +18554,13 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -18431,18 +18574,6 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -18474,16 +18605,11 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -18833,6 +18959,13 @@ exports[`Tabs renders with overrides 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -18860,18 +18993,6 @@ exports[`Tabs renders with overrides 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -19033,6 +19154,13 @@ exports[`Tabs renders with overrides 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -19046,18 +19174,6 @@ exports[`Tabs renders with overrides 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -19112,16 +19228,11 @@ exports[`Tabs renders with overrides 1`] = `
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -19532,18 +19643,6 @@ exports[`Tabs renders with overrides on Tab 1`] = `
   }
 }
 
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
-}
-
 .emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -19701,6 +19800,13 @@ exports[`Tabs renders with overrides on Tab 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -19714,18 +19820,6 @@ exports[`Tabs renders with overrides on Tab 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -19753,16 +19847,11 @@ exports[`Tabs renders with overrides on Tab 1`] = `
   width: 100%;
 }
 
-.emotion-19:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-19:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-19:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -20076,6 +20165,13 @@ exports[`Tabs renders with overrides vertical 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -20103,18 +20199,6 @@ exports[`Tabs renders with overrides vertical 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -20281,6 +20365,13 @@ exports[`Tabs renders with overrides vertical 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -20294,18 +20385,6 @@ exports[`Tabs renders with overrides vertical 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -20361,16 +20440,11 @@ exports[`Tabs renders with overrides vertical 1`] = `
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -20804,6 +20878,13 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -20817,18 +20898,6 @@ exports[`Tabs renders with second tab initially selected 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -20968,6 +21037,13 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -20995,18 +21071,6 @@ exports[`Tabs renders with second tab initially selected 1`] = `
 
 .emotion-13:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-18 {
@@ -21037,16 +21101,11 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -21393,6 +21452,13 @@ exports[`Tabs renders with selectedIndex 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -21406,18 +21472,6 @@ exports[`Tabs renders with selectedIndex 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -21561,6 +21615,13 @@ exports[`Tabs renders with selectedIndex 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-19:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-19 {
     transition-property: background-color;
@@ -21590,18 +21651,6 @@ exports[`Tabs renders with selectedIndex 1`] = `
   fill: #3358CC;
 }
 
-.emotion-19:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-19:focus {
-      outline-offset: -5px;
-    }
-  }
-}
-
 .emotion-23 {
   background-color: #3358CC;
   position: absolute;
@@ -21626,16 +21675,11 @@ exports[`Tabs renders with selectedIndex 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -21984,6 +22028,13 @@ exports[`Tabs renders with sizing 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -22011,18 +22062,6 @@ exports[`Tabs renders with sizing 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -22159,6 +22198,13 @@ exports[`Tabs renders with sizing 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -22172,18 +22218,6 @@ exports[`Tabs renders with sizing 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -22215,16 +22249,11 @@ exports[`Tabs renders with sizing 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -22573,6 +22602,13 @@ exports[`Tabs sets active on click 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -22600,18 +22636,6 @@ exports[`Tabs sets active on click 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -22748,6 +22772,13 @@ exports[`Tabs sets active on click 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -22761,18 +22792,6 @@ exports[`Tabs sets active on click 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -22804,16 +22823,11 @@ exports[`Tabs sets active on click 1`] = `
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -23162,6 +23176,13 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -23189,18 +23210,6 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -23337,6 +23346,13 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
   fill: #C0C0C0;
 }
 
+.emotion-13:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-13 {
     transition-property: background-color;
@@ -23350,18 +23366,6 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-13:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-13:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -23393,16 +23397,11 @@ exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] =
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -23749,6 +23748,13 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -23762,18 +23768,6 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -23917,6 +23911,13 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   fill: #C0C0C0;
 }
 
+.emotion-19:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-19 {
     transition-property: background-color;
@@ -23946,18 +23947,6 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   fill: #3358CC;
 }
 
-.emotion-19:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-19:focus {
-      outline-offset: -5px;
-    }
-  }
-}
-
 .emotion-23 {
   background-color: #3358CC;
   position: absolute;
@@ -23982,16 +23971,11 @@ exports[`Tabs updated selected Index to maximum size when selectedIndex value is
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -24338,6 +24322,13 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -24351,18 +24342,6 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -24506,6 +24485,13 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   fill: #C0C0C0;
 }
 
+.emotion-19:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-19 {
     transition-property: background-color;
@@ -24535,18 +24521,6 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   fill: #3358CC;
 }
 
-.emotion-19:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-19:focus {
-      outline-offset: -5px;
-    }
-  }
-}
-
 .emotion-23 {
   background-color: #3358CC;
   position: absolute;
@@ -24571,16 +24545,11 @@ exports[`Tabs updated selected Index when selectedIndex prop change controlled m
   width: 100%;
 }
 
-.emotion-25:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-25:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-25:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -24904,6 +24873,13 @@ exports[`Tabs with custom scroll component 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-5:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
     transition-property: background-color;
@@ -24931,18 +24907,6 @@ exports[`Tabs with custom scroll component 1`] = `
 
 .emotion-5:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-5:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-6 {
@@ -25104,6 +25068,13 @@ exports[`Tabs with custom scroll component 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-16:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-16 {
     transition-property: background-color;
@@ -25117,18 +25088,6 @@ exports[`Tabs with custom scroll component 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-16:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-16:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -25160,16 +25119,11 @@ exports[`Tabs with custom scroll component 1`] = `
   width: 100%;
 }
 
-.emotion-38:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-38:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-38:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -25609,6 +25563,13 @@ exports[`Tabs with custom scroll props 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -25636,18 +25597,6 @@ exports[`Tabs with custom scroll props 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -25809,6 +25758,13 @@ exports[`Tabs with custom scroll props 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -25822,18 +25778,6 @@ exports[`Tabs with custom scroll props 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -25865,16 +25809,11 @@ exports[`Tabs with custom scroll props 1`] = `
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -26310,6 +26249,13 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -26337,18 +26283,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -26510,6 +26444,13 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -26523,18 +26464,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -26564,16 +26493,11 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -27009,6 +26933,13 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -27036,18 +26967,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -27209,6 +27128,13 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -27222,18 +27148,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -27265,16 +27179,11 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -27710,6 +27619,13 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -27737,18 +27653,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -27910,6 +27814,13 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -27923,18 +27834,6 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -27966,16 +27865,11 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -28419,6 +28313,13 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -28446,18 +28347,6 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -28624,6 +28513,13 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -28637,18 +28533,6 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -28678,16 +28562,11 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -29131,6 +29010,13 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -29158,18 +29044,6 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -29336,6 +29210,13 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -29349,18 +29230,6 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -29392,16 +29261,11 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -29845,6 +29709,13 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -29872,18 +29743,6 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -30050,6 +29909,13 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -30063,18 +29929,6 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -30106,16 +29960,11 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div
@@ -30555,6 +30404,13 @@ exports[`with logical props overrides 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-7:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
     transition-property: background-color;
@@ -30582,18 +30438,6 @@ exports[`with logical props overrides 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #3358CC;
-}
-
-.emotion-7:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus {
-      outline-offset: -5px;
-    }
-  }
 }
 
 .emotion-8 {
@@ -30755,6 +30599,13 @@ exports[`with logical props overrides 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-18:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-18 {
     transition-property: background-color;
@@ -30768,18 +30619,6 @@ exports[`with logical props overrides 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-18:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-18:focus {
-      outline-offset: -5px;
-    }
   }
 }
 
@@ -30811,16 +30650,11 @@ exports[`with logical props overrides 1`] = `
   width: 100%;
 }
 
-.emotion-40:focus {
-  outline-offset: -1px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus {
-      outline-offset: -5px;
-    }
-  }
+.emotion-40:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 <div

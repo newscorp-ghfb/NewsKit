@@ -31,6 +31,12 @@ export default {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
+    focus: {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '-2px',
+    },
   },
   tabsBarTrack: {
     base: {
@@ -40,6 +46,14 @@ export default {
   tabsBarIndicator: {
     base: {
       backgroundColor: '{{colors.interactivePrimary030}}',
+    },
+  },
+  tabPanel: {
+    focus: {
+      outlineColor: '{{outline.outlineColorDefault}}',
+      outlineStyle: '{{outline.outlineStyleDefault}}',
+      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineOffset: '-2px',
     },
   },
 } as Record<string, StylePreset>;
