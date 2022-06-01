@@ -82,8 +82,6 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
   </button>
   .emotion-0 {
   margin: 0;
-  padding-inline: 8px;
-  padding-block: 16px;
   pointer-events: none;
   z-index: 70;
   max-width: 80px;
@@ -280,7 +278,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
   margin: 0;
   pointer-events: none;
   z-index: 80;
-  background-color: #0A0A0A;
+  background-color: #A60100;
   color: #FFFFFF;
   border-radius: 8px;
   font-family: "Poppins",sans-serif;

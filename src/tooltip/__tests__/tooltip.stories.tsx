@@ -32,13 +32,12 @@ const myCustomTheme = createTheme({
       tooltipCustom: {
         base: {
           backgroundColor: '{{colors.red080}}',
-          borderRadius: '{{borders.borderRadiusDefault}}',
-          color: '{{colors.inkInverse}}',
         },
       },
-      tooltipPointerCustom: {
+      tooltipPanelCustom: {
         base: {
-          backgroundColor: '{{colors.red080}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
         },
       },
     },
@@ -431,13 +430,15 @@ export const StoryTooltipOverrides = () => (
           minWidth: '50px',
           maxWidth: '150px',
           zIndex: 70,
-          paddingBlock: 'space040',
-          paddingInline: 'space020',
           stylePreset: 'tooltipCustom',
-          typographyPreset: 'utilityLabel020',
           distance: 'space080',
+          panel: {
+            paddingBlock: 'space040',
+            paddingInline: 'space080',
+            stylePreset: 'tooltipPanelCustom',
+            typographyPreset: 'utilityLabel020',
+          },
           pointer: {
-            stylePreset: 'tooltipPointerCustom',
             size: 'sizing030',
           },
         }}

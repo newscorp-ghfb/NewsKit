@@ -2600,16 +2600,17 @@ Object {
   },
   "tooltip": Object {
     "distance": "space020",
+    "stylePreset": "tooltip",
+    "zIndex": 80,
+  },
+  "tooltipPanel": Object {
     "paddingBlock": "spaceInset020",
     "paddingInline": "spaceInset020",
-    "stylePreset": "tooltip",
+    "stylePreset": "tooltipPanel",
     "typographyPreset": "utilityLabel010",
-    "zIndex": 80,
   },
   "tooltipPointer": Object {
     "size": "sizing010",
-    "stylePreset": "tooltipPointer",
-    "zIndex": 80,
   },
   "unorderedList": Object {
     "content": Object {
@@ -4791,13 +4792,12 @@ Object {
   "tooltip": Object {
     "base": Object {
       "backgroundColor": "{{colors.interface060}}",
-      "borderRadius": "{{borders.borderRadiusDefault}}",
-      "color": "{{colors.inkInverse}}",
     },
   },
-  "tooltipPointer": Object {
+  "tooltipPanel": Object {
     "base": Object {
-      "backgroundColor": "{{colors.interface060}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkInverse}}",
     },
   },
   "videoPlayerControlBar": Object {

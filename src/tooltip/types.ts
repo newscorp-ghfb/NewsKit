@@ -21,12 +21,14 @@ export interface TooltipProps
     zIndex?: number;
     maxWidth?: MQ<string>;
     minWidth?: MQ<string>;
-    stylePreset?: MQ<string>;
-    typographyPreset?: MQ<string>;
     distance?: MQ<string>;
+    stylePreset?: MQ<string>;
+    panel?: {
+      stylePreset?: MQ<string>;
+      typographyPreset?: MQ<string>;
+    } & LogicalPaddingProps;
     pointer?: {
       size?: MQ<string>;
-      stylePreset?: MQ<string>;
     };
-  } & LogicalPaddingProps;
+  };
 }

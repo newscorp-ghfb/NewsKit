@@ -59,6 +59,10 @@ describe('Tooltip', () => {
             tooltipCustom: {
               base: {
                 backgroundColor: '{{colors.red060}}',
+              },
+            },
+            tooltipPanelCustom: {
+              base: {
                 borderRadius: '{{borders.borderRadiusSharp}}',
                 color: '{{colors.inkContrast}}',
               },
@@ -74,10 +78,13 @@ describe('Tooltip', () => {
             minWidth: '50px',
             maxWidth: '80px',
             zIndex: 70,
-            paddingBlock: 'space040',
-            paddingInline: 'space020',
             stylePreset: 'tooltipCustom',
-            typographyPreset: 'utilityLabel020',
+            panel: {
+              paddingBlock: 'space040',
+              paddingInline: 'space020',
+              stylePreset: 'tooltipPanelCustom',
+              typographyPreset: 'utilityLabel020',
+            },
           },
         },
         myCustomTheme,
@@ -96,7 +103,7 @@ describe('Tooltip', () => {
         name: 'my-custom-tooltip-theme',
         overrides: {
           stylePresets: {
-            tooltipPointerCustom: {
+            tooltipCustom: {
               base: {
                 backgroundColor: '{{colors.red080}}',
               },
@@ -110,9 +117,7 @@ describe('Tooltip', () => {
           ...defaultProps,
           showPointer: true,
           overrides: {
-            pointer: {
-              stylePreset: 'tooltipPointerCustom',
-            },
+            stylePreset: 'tooltipCustom',
           },
         },
         myCustomTheme,
