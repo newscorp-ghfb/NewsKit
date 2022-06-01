@@ -1,5 +1,4 @@
 import React from 'react';
-import {styled, getColorFromTheme} from 'newskit';
 import {Link} from '../../components/link';
 import {MediaList} from '../../components/media-list';
 import {LayoutProps} from '../../components/layout';
@@ -50,10 +49,6 @@ const FORMS_PATTERN_CARDS = [
   },
 ];
 
-const StyledHeading = styled.span`
-  color: ${getColorFromTheme('inkBrand010')};
-`;
-
 const Overview = (layoutProps: LayoutProps) => (
   <PatternPageTemplate
     headTags={{
@@ -73,11 +68,7 @@ const Overview = (layoutProps: LayoutProps) => (
     <ComponentPageCell>
       <ContentSection sectionName="capture the moment">
         <ContentPrimary
-          headline={
-            <>
-              Capture the moment <StyledHeading>(with data)</StyledHeading>
-            </>
-          }
+          headline="Capture the moment (with data)"
           description={
             <>
               Using <Link href="/components/form/">Form</Link> components
@@ -118,11 +109,7 @@ const Overview = (layoutProps: LayoutProps) => (
         <ContentPrimary
           id="help-improve-this-page"
           toc="Help improve this page"
-          headline={
-            <>
-              <StyledHeading>Help improve this page</StyledHeading>
-            </>
-          }
+          headline="Help improve this page"
           description={
             <>
               To help make sure this page is as useful as it can be, relevant
