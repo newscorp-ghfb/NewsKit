@@ -17,6 +17,9 @@ import {
 const patternsRouteList: Item[] =
   routes.filter(route => route.title === 'Patterns')[0].subNav || [];
 
+const patternsFormRouteList: Item[] =
+  patternsRouteList.filter(route => route.title === 'Forms')[0].subNav || [];
+
 const getPatternsCardList = (routeList: Item[]) =>
   routeList
     .filter(route => route.page && route?.illustration)
@@ -30,7 +33,7 @@ const getPatternsCardList = (routeList: Item[]) =>
       description,
     })) as MediaItem[];
 
-const patternsIndexRouteListCards = getPatternsCardList(patternsRouteList);
+const patternsIndexRouteListCards = getPatternsCardList(patternsFormRouteList);
 
 const Forms = (layoutProps: LayoutProps) => (
   <>

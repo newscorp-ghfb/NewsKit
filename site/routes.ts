@@ -38,6 +38,7 @@ export default [
         title: 'Getting started',
         page: true,
         id: '/getting-started/overview',
+        indexPage: true,
       },
       {
         title: 'Design',
@@ -110,12 +111,12 @@ export default [
   {
     title: 'Theme',
     id: '/theme',
-
     subNav: [
       {
         title: 'Overview',
         page: true,
         id: '/theme/overview',
+        indexPage: true,
       },
       {
         title: 'Foundations',
@@ -288,6 +289,7 @@ export default [
         title: 'Overview',
         page: true,
         id: '/components/overview',
+        indexPage: true,
       },
       {
         title: 'Actions & Inputs',
@@ -762,18 +764,25 @@ export default [
     id: '/patterns',
     subNav: [
       {
-        title: 'Forms',
+        title: 'Index',
         page: true,
+        id: '/patterns/forms',
+        indexPage: true,
+      },
+      {
+        title: 'Forms',
         id: '/patterns/forms',
         description:
           'Design patterns provide a framework for solving a particular user problem in a consistent, considered way.',
-      },
-      {
-        title: 'Overview',
-        page: true,
-        id: '/patterns/overview',
-        description: 'Forms are used to collect customer’s data.',
-        illustration: 'patterns/overview/hero',
+        subNav: [
+          {
+            title: 'Overview',
+            page: true,
+            id: '/patterns/overview',
+            description: 'Forms are used to collect customer’s data.',
+            illustration: 'patterns/overview/hero',
+          },
+        ],
       },
     ],
   },
