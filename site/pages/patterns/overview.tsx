@@ -95,7 +95,7 @@ const Overview = (layoutProps: LayoutProps) => (
         />
       </ContentSection>
 
-      <ContentSection sectionName="why use the forms pattern">
+      <ContentSection sectionName="forms pattern">
         <ContentPrimary
           id="why-use-forms-pattern"
           toc="Why use the Forms pattern"
@@ -108,6 +108,7 @@ const Overview = (layoutProps: LayoutProps) => (
           />
         </ContentPrimary>
         <ContentSecondary
+          headline="When should forms be used?"
           description="Forms should be used to capture information from customers based on clear business requirements/benefits. The data captured in Forms allows us to serve the customer or user."
           showSeparator
         />
