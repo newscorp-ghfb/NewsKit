@@ -1,58 +1,58 @@
 import React from 'react';
-import {styled, getColorFromTheme} from 'newskit';
-import {Link} from '../../components/link';
-import {MediaList} from '../../components/media-list';
+// import {styled, getColorFromTheme} from 'newskit';
+// import {Link} from '../../components/link';
+// import {MediaList} from '../../components/media-list';
 import {LayoutProps} from '../../components/layout';
 import {PatternPageTemplate} from '../../templates/pattern-page-template/pattern-page-template';
-import {
-  ContentSection,
-  ContentPrimary,
-  ContentSecondary,
-} from '../../components/content-structure';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {Illustration} from '../../components/illustrations/illustration-loader';
+// import {
+//   ContentSection,
+//   ContentPrimary,
+//   ContentSecondary,
+// } from '../../components/content-structure';
+// import {ComponentPageCell} from '../../components/layout-cells';
+// import {Illustration} from '../../components/illustrations/illustration-loader';
 
-const featureCardoverrides = {
-  title: {
-    typographyPreset: 'editorialHeadline030',
-  },
-  description: {
-    typographyPreset: 'editorialParagraph020',
-  },
-};
+// const featureCardoverrides = {
+//   title: {
+//     typographyPreset: 'editorialHeadline030',
+//   },
+//   description: {
+//     typographyPreset: 'editorialParagraph020',
+//   },
+// };
 
-const FORMS_PATTERN_CARDS = [
-  {
-    media: () => <Illustration path="patterns/overview/why-use/consistency" />,
-    title: 'Consistency',
-    description:
-      'All our brands have some form of data capture. Aligning our approach means there is one source of truth when building forms and capturing customer information. ',
-    stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
-  },
-  {
-    media: () => <Illustration path="patterns/overview/why-use/ease-of-use" />,
-    title: 'Ease of use',
-    description:
-      'Customer data is only useful if it’s accurate. If we make our forms straightforward, it’s more likely our users will complete the form successfully.',
-    stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
-  },
-  {
-    media: () => (
-      <Illustration path="patterns/overview/why-use/best-practice" />
-    ),
-    title: 'Best practice',
-    description:
-      'Digital forms have been around for decades. We can rely on proven industry best practice and shared learning to supplement our own research.',
-    stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
-  },
-];
+// const FORMS_PATTERN_CARDS = [
+//   {
+//     media: () => <Illustration path="patterns/overview/why-use/consistency" />,
+//     title: 'Consistency',
+//     description:
+//       'All our brands have some form of data capture. Aligning our approach means there is one source of truth when building forms and capturing customer information. ',
+//     stylePrefix: 'featureCard',
+//     overrides: featureCardoverrides,
+//   },
+//   {
+//     media: () => <Illustration path="patterns/overview/why-use/ease-of-use" />,
+//     title: 'Ease of use',
+//     description:
+//       'Customer data is only useful if it’s accurate. If we make our forms straightforward, it’s more likely our users will complete the form successfully.',
+//     stylePrefix: 'featureCard',
+//     overrides: featureCardoverrides,
+//   },
+//   {
+//     media: () => (
+//       <Illustration path="patterns/overview/why-use/best-practice" />
+//     ),
+//     title: 'Best practice',
+//     description:
+//       'Digital forms have been around for decades. We can rely on proven industry best practice and shared learning to supplement our own research.',
+//     stylePrefix: 'featureCard',
+//     overrides: featureCardoverrides,
+//   },
+// ];
 
-const StyledHeading = styled.span`
-  color: ${getColorFromTheme('inkBrand010')};
-`;
+// const StyledHeading = styled.span`
+//   color: ${getColorFromTheme('inkBrand010')};
+// `;
 
 const Overview = (layoutProps: LayoutProps) => (
   <PatternPageTemplate
@@ -70,7 +70,7 @@ const Overview = (layoutProps: LayoutProps) => (
       introduction: `Forms are used to collect customer’s data.`,
     }}
   >
-    <ComponentPageCell>
+    {/* <ComponentPageCell>
       <ContentSection sectionName="capture the moment">
         <ContentPrimary
           headline={
@@ -139,7 +139,7 @@ const Overview = (layoutProps: LayoutProps) => (
           showSeparator
         />
       </ContentSection>
-    </ComponentPageCell>
+    </ComponentPageCell> */}
   </PatternPageTemplate>
 );
 
