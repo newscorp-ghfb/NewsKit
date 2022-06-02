@@ -100,15 +100,18 @@ const Overview = (layoutProps: LayoutProps) => (
           id="why-use-forms-pattern"
           toc="Why use the Forms pattern"
           headline="Why use the Forms pattern?"
-        >
-          <MediaList
-            layout="3-span"
-            cardType="feature"
-            cards={FORMS_PATTERN_CARDS}
-          />
-        </ContentPrimary>
+          description={
+            <>
+              <MediaList
+                layout="3-span"
+                cardType="feature"
+                cards={FORMS_PATTERN_CARDS}
+              />
+            </>
+          }
+        />
         <ContentSecondary
-          headline={<>When should forms be used?</>}
+          headline="When should forms be used?"
           description="Forms should be used to capture information from customers based on clear business requirements/benefits. The data captured in Forms allows us to serve the customer or user."
           showSeparator
         />
