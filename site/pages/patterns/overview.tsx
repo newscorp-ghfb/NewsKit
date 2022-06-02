@@ -7,7 +7,6 @@ import {PatternPageTemplate} from '../../templates/pattern-page-template/pattern
 import {
   ContentSection,
   ContentPrimary,
-  ContentSecondary,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {Illustration} from '../../components/illustrations/illustration-loader';
@@ -107,11 +106,11 @@ const Overview = (layoutProps: LayoutProps) => (
             cards={FORMS_PATTERN_CARDS}
           />
         </ContentPrimary>
-        <ContentSecondary
+        {/* <ContentSecondary
           headline="When should forms be used?"
           description="Forms should be used to capture information from customers based on clear business requirements/benefits. The data captured in Forms allows us to serve the customer or user."
           showSeparator
-        />
+        /> */}
       </ContentSection>
 
       <ContentSection sectionName="help improve this page">
