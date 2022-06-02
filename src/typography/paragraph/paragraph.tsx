@@ -35,7 +35,7 @@ export const ParagraphText = withOwnTheme(ThemelessParagraphText)({
 });
 
 const ThemelessParagraphDropCap = styled.span<ParagraphProps>`
-  margin: 0 0 0 0.15em;
+  margin: 0 0.15em 0 0;
   float: left;
   ${getResponsiveSpace('marginTop', 'paragraph.dropCap', 'dropCap', 'space')};
   ${getTypographyPreset('paragraph.dropCap', 'dropCap')};

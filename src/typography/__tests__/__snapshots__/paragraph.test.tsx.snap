@@ -114,7 +114,7 @@ exports[`Paragraph renders with drop cap 1`] = `
 }
 
 .emotion-1 {
-  margin: 0 0 0 0.15em;
+  margin: 0 0.15em 0 0;
   float: left;
   margin-top: 4px;
   color: #0A0A0A;
@@ -197,7 +197,7 @@ exports[`Paragraph renders with drop cap and complex children 1`] = `
 }
 
 .emotion-1 {
-  margin: 0 0 0 0.15em;
+  margin: 0 0.15em 0 0;
   float: left;
   margin-top: 4px;
   color: #0A0A0A;
