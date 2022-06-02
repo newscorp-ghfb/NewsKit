@@ -1,12 +1,13 @@
 import React from 'react';
 import {styled, getColorFromTheme} from 'newskit';
 import {Link} from '../../components/link';
-import {MediaItem, MediaList} from '../../components/media-list';
+import {MediaList} from '../../components/media-list';
 import {LayoutProps} from '../../components/layout';
 import {PatternPageTemplate} from '../../templates/pattern-page-template/pattern-page-template';
 import {
   ContentSection,
   ContentPrimary,
+  ContentSecondary,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {Illustration} from '../../components/illustrations/illustration-loader';
@@ -47,7 +48,7 @@ const FORMS_PATTERN_CARDS = [
     stylePrefix: 'featureCard',
     overrides: featureCardoverrides,
   },
-] as MediaItem[];
+];
 
 const StyledHeading = styled.span`
   color: ${getColorFromTheme('inkBrand010')};
@@ -106,11 +107,14 @@ const Overview = (layoutProps: LayoutProps) => (
             cards={FORMS_PATTERN_CARDS}
           />
         </ContentPrimary>
-        {/* <ContentSecondary
+      </ContentSection>
+
+      <ContentSection sectionName="when should forms be used">
+        <ContentSecondary
           headline="When should forms be used?"
           description="Forms should be used to capture information from customers based on clear business requirements/benefits. The data captured in Forms allows us to serve the customer or user."
           showSeparator
-        /> */}
+        />
       </ContentSection>
 
       <ContentSection sectionName="help improve this page">
