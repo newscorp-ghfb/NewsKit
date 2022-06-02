@@ -67,6 +67,13 @@ publish_npm_dev:
 publish_npm:
 	cd dist; yarn publish --no-git-tag-version;
 
+publish_codemods_npm:
+	# TODO: script that copies package version from components to codemods
+	cd codemods; TODO; yarn publish --no-git-tag-version;
+
+publish_codemods_npm_dev:
+	cd codemods; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable;
+
 build_docker:
 	docker build -t ncu-newskit .
 

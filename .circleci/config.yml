@@ -653,12 +653,18 @@ jobs:
             - run:
                 name: Publish components to NPM
                 command: make publish_npm_dev
+            - run:
+                name: Publish codemods to NPM
+                command: make publish_codemods_npm_dev
       - unless:
           condition: << parameters.publish_dev >>
           steps:
             - run:
                 name: Publish components to NPM
                 command: make publish_npm
+            - run:
+                name: Publish codemods to NPM
+                command: make publish_codemods_npm
       - slack/status:
           <<: *slack_status
 
@@ -868,16 +874,16 @@ jobs:
           at: ~/project
       - run:
           name: Install yalc and create-next-app
-          command: | 
-            yarn global add yalc && yarn add create-next-app@latest 
+          command: |
+            yarn global add yalc && yarn add create-next-app@latest
       - run:
           name: Yalc publish and run create-nextjs-app
-          command: | 
+          command: |
             cd dist
             yalc publish
             cd ..
             npx create-next-app@latest newskit-integration-test
-      - run: 
+      - run:
           name: Prepare the NextJs app
           command: |
             echo "Adding nedded files into the NextJs app"
@@ -887,7 +893,7 @@ jobs:
             mkdir -p ./newskit-integration-test/cypress/integration
             cp ./scripts/templates-integration-test/theme-checker.spec.js ./newskit-integration-test/cypress/integration
 
-        
+
             echo "Installing needed packages into the NextJS app"
 
             cd newskit-integration-test
@@ -905,9 +911,6 @@ jobs:
             yarn start-test start 3000 'yarn cypress run'
       - slack/status:
           <<: *slack_status
-
-            
-  
 
 # ========== FILTERS START    ==========
 
@@ -930,7 +933,6 @@ only_on_version_tag: &only_on_version_tag
 # ========== FILTERS END        ==========
 
 workflows:
-
   pull_request:
     when:
       matches:
@@ -962,7 +964,7 @@ workflows:
           requires:
             - build_icons
       - test_newskit_in_nextjs_app:
-          requires: 
+          requires:
             - build_components
       - test_e2e_comps:
           context: ncu-product-platforms-context
@@ -1076,7 +1078,7 @@ workflows:
 
   main:
     when:
-      equal: [ main, << pipeline.git.branch >> ]
+      equal: [main, << pipeline.git.branch >>]
     jobs:
       - init_aws:
           context: ncu-product-platforms-context
@@ -1139,7 +1141,7 @@ workflows:
             - build_docs_dev
             - install_cypress
       - test_newskit_in_nextjs_app:
-          requires: 
+          requires:
             - build_components
 
       # Jobs for deploying unstable NewsKit version
@@ -1212,7 +1214,6 @@ workflows:
           environment: staging
           requires:
             - eks_flux_deploy_staging
-
 
       - eks_flux_deploy:
           name: eks_flux_deploy_dev_to_prod
@@ -1327,7 +1328,7 @@ workflows:
             - test_e2e_docs_prod
       - test_newskit_in_nextjs_app:
           <<: *only_on_version_tag
-          requires: 
+          requires:
             - build_components
 
       - publish_npm:
