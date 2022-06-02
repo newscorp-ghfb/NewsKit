@@ -1,7 +1,7 @@
 import React from 'react';
 import {styled, getColorFromTheme} from 'newskit';
 import {Link} from '../../components/link';
-import {MediaList} from '../../components/media-list';
+import {MediaItem, MediaList} from '../../components/media-list';
 import {LayoutProps} from '../../components/layout';
 import {PatternPageTemplate} from '../../templates/pattern-page-template/pattern-page-template';
 import {
@@ -48,7 +48,7 @@ const FORMS_PATTERN_CARDS = [
     stylePrefix: 'featureCard',
     overrides: featureCardoverrides,
   },
-];
+] as MediaItem[];
 
 const StyledHeading = styled.span`
   color: ${getColorFromTheme('inkBrand010')};
