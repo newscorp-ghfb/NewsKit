@@ -1,18 +1,18 @@
 import React from 'react';
+import {isFragment} from 'react-is';
 import {
   styled,
   getTypographyPreset,
   MQ,
-  getSpace,
   getStylePreset,
+  getResponsiveSpace,
 } from '../../utils/style';
 import defaults from './defaults';
 import {withOwnTheme} from '../../utils/with-own-theme';
 import {ScreenReaderOnly} from '../../screen-reader-only';
 
 export interface ParagraphProps {
-  // eslint-disable-next-line
-  children: any;
+  children: React.ReactNode;
   dropCap?: boolean;
   overrides?: {
     stylePreset?: MQ<string>;
@@ -35,11 +35,9 @@ export const ParagraphText = withOwnTheme(ThemelessParagraphText)({
 });
 
 const ThemelessParagraphDropCap = styled.span<ParagraphProps>`
-  margin: 0;
+  margin: 0 0 0 0.15em;
   float: left;
-  margin-right: 0.15em;
-
-  margin-top: ${getSpace('paragraph.dropCap', 'dropCap')};
+  ${getResponsiveSpace('marginTop', 'paragraph.dropCap', 'dropCap', 'space')};
   ${getTypographyPreset('paragraph.dropCap', 'dropCap')};
   ${getStylePreset('paragraph.dropCap', 'dropCap')};
 `;
@@ -47,28 +45,71 @@ export const ParagraphDropCap = withOwnTheme(ThemelessParagraphDropCap)({
   defaults,
 });
 
-const ParagraphContainer = styled.div`
-  display: inline-flex;
-  max-width: 100%;
-`;
+const getFirstWord = (
+  children: (React.ReactChild | React.ReactFragment | React.ReactPortal)[],
+): string => {
+  if (children.length > 0 && typeof children[0] === 'string') {
+    return children[0].split(' ')[0];
+  }
+  if (children.length && isFragment(children[0])) {
+    return getFirstWord(React.Children.toArray(children[0].props.children));
+  }
+  return '';
+};
+
+const removeFirstWord = (
+  children: (React.ReactChild | React.ReactFragment | React.ReactPortal)[],
+) => {
+  if (children.length > 0 && typeof children[0] === 'string') {
+    // eslint-disable-next-line no-param-reassign
+    children[0] = children[0].split(' ').slice(1).join(' ');
+  } else if (children.length && isFragment(children[0])) {
+    // eslint-disable-next-line no-param-reassign
+    children[0] = removeFirstWord(
+      React.Children.toArray(children[0].props.children),
+    );
+  }
+
+  return children;
+};
+
+/**
+
+For a11y reason we need to add aria-hidden to the first word of the paragraph.
+Creating the fallowing structure:
+<p>
+  <span aria-hidden="true"><span class="dropcap">T</span>his</span>
+  <span class="sr-only">This</span> is paragraph text
+</p>          
+
+ */
 
 export const Paragraph: React.FC<ParagraphProps> = ({
-  children,
+  children: ch,
   overrides = {},
   dropCap = false,
-}) =>
-  dropCap && children ? (
-    <ParagraphContainer>
-      <ParagraphText aria-hidden="true" overrides={overrides}>
-        <ParagraphDropCap overrides={overrides}>{children[0]}</ParagraphDropCap>
-        {children.slice(1)}
-      </ParagraphText>
+}) => {
+  const children = React.Children.toArray(ch);
+  const firstWord = getFirstWord(children);
+  const useDropCap = dropCap && firstWord;
 
-      <ScreenReaderOnly>{children}</ScreenReaderOnly>
-    </ParagraphContainer>
-  ) : (
-    <ParagraphText overrides={overrides}>{children}</ParagraphText>
+  return (
+    <ParagraphText>
+      {useDropCap && (
+        <>
+          <span aria-hidden="true">
+            <ParagraphDropCap overrides={overrides}>
+              {firstWord[0]}
+            </ParagraphDropCap>
+            {firstWord.slice(1)}{' '}
+          </span>
+          <ScreenReaderOnly>{firstWord}</ScreenReaderOnly>
+        </>
+      )}
+      {useDropCap ? removeFirstWord(children) : children}
+    </ParagraphText>
   );
+};
 
 Paragraph.displayName = 'Paragraph';
 export const P = Paragraph;
