@@ -772,15 +772,15 @@ export default [
       {
         title: 'Forms',
         id: '/patterns/forms',
-        // subNav: [
-        //   {
-        //     title: 'Overview',
-        //     page: true,
-        //     id: '/patterns/overview',
-        //     description: 'Forms are used to collect customer’s data.',
-        //     illustration: 'patterns/overview/hero',
-        //   },
-        // ],
+        subNav: [
+          {
+            title: 'Overview',
+            page: true,
+            id: '/patterns/overview',
+            description: 'Forms are used to collect customer’s data.',
+            illustration: 'patterns/overview/hero',
+          },
+        ],
       },
     ],
   },
