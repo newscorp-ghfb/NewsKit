@@ -37,40 +37,38 @@ const getPatternsCardList = (routeList: Item[]) =>
 const patternsIndexRouteListCards = getPatternsCardList(patternsFormRouteList);
 
 const Forms = (layoutProps: LayoutProps) => (
-  <>
-    <Layout {...layoutProps} newPage>
-      {({themeMode}) => (
-        <ThemeProvider
-          theme={themeMode === 'light' ? patternsThemeLight : patternsThemeDark}
-        >
-          <HeadNextSeo
-            title="Forms index"
-            description="Design patterns provide a framework for solving a particular user problem in a consistent, considered way."
-            image={{
-              url: 'social/patterns.png',
-              alt: 'Forms index',
-            }}
-          />
-          <HeaderIndex title="Patterns" media={Hero}>
-            Design patterns provide a framework for solving a particular user
-            problem in a consistent, considered way.
-          </HeaderIndex>
-          <Grid lgMargin="sizing000" xsRowGutter="sizing000">
-            <ComponentPageCell>
-              <ContentSection sectionName="forms">
-                <ContentPrimary headline="Forms">
-                  <MediaList
-                    cards={patternsIndexRouteListCards}
-                    gridProps={{xsRowGutter: 'space050'}}
-                  />
-                </ContentPrimary>
-              </ContentSection>
-            </ComponentPageCell>
-          </Grid>
-        </ThemeProvider>
-      )}
-    </Layout>
-  </>
+  <Layout {...layoutProps} newPage>
+    {({themeMode}) => (
+      <ThemeProvider
+        theme={themeMode === 'light' ? patternsThemeLight : patternsThemeDark}
+      >
+        <HeadNextSeo
+          title="Forms index"
+          description="Design patterns provide a framework for solving a particular user problem in a consistent, considered way."
+          image={{
+            url: 'social/patterns.png',
+            alt: 'Forms index',
+          }}
+        />
+        <HeaderIndex title="Patterns" media={Hero}>
+          Design patterns provide a framework for solving a particular user
+          problem in a consistent, considered way.
+        </HeaderIndex>
+        <Grid lgMargin="sizing000" xsRowGutter="sizing000">
+          <ComponentPageCell>
+            <ContentSection sectionName="forms">
+              <ContentPrimary headline="Forms">
+                <MediaList
+                  cards={patternsIndexRouteListCards}
+                  gridProps={{xsRowGutter: 'space050'}}
+                />
+              </ContentPrimary>
+            </ContentSection>
+          </ComponentPageCell>
+        </Grid>
+      </ThemeProvider>
+    )}
+  </Layout>
 );
 
 export default Forms;
