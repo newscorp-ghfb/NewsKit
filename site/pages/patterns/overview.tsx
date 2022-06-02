@@ -1,54 +1,53 @@
 import React from 'react';
 import {styled, getColorFromTheme} from 'newskit';
 import {Link} from '../../components/link';
-import {MediaList} from '../../components/media-list';
+// import {MediaList} from '../../components/media-list';
 import {LayoutProps} from '../../components/layout';
 import {PatternPageTemplate} from '../../templates/pattern-page-template/pattern-page-template';
 import {
   ContentSection,
   ContentPrimary,
-  ContentSecondary,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
-import {Illustration} from '../../components/illustrations/illustration-loader';
+// import {Illustration} from '../../components/illustrations/illustration-loader';
 
-const featureCardoverrides = {
-  title: {
-    typographyPreset: 'editorialHeadline030',
-  },
-  description: {
-    typographyPreset: 'editorialParagraph020',
-  },
-};
+// const featureCardoverrides = {
+//   title: {
+//     typographyPreset: 'editorialHeadline030',
+//   },
+//   description: {
+//     typographyPreset: 'editorialParagraph020',
+//   },
+// };
 
-const FORMS_PATTERN_CARDS = [
-  {
-    media: () => <Illustration path="patterns/overview/why-use/consistency" />,
-    title: 'Consistency',
-    description:
-      'All our brands have some form of data capture. Aligning our approach means there is one source of truth when building forms and capturing customer information. ',
-    stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
-  },
-  {
-    media: () => <Illustration path="patterns/overview/why-use/ease-of-use" />,
-    title: 'Ease of use',
-    description:
-      'Customer data is only useful if it’s accurate. If we make our forms straightforward, it’s more likely our users will complete the form successfully.',
-    stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
-  },
-  {
-    media: () => (
-      <Illustration path="patterns/overview/why-use/best-practice" />
-    ),
-    title: 'Best practice',
-    description:
-      'Digital forms have been around for decades. We can rely on proven industry best practice and shared learning to supplement our own research.',
-    stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
-  },
-];
+// const FORMS_PATTERN_CARDS = [
+//   {
+//     media: () => <Illustration path="patterns/overview/why-use/consistency" />,
+//     title: 'Consistency',
+//     description:
+//       'All our brands have some form of data capture. Aligning our approach means there is one source of truth when building forms and capturing customer information. ',
+//     stylePrefix: 'featureCard',
+//     overrides: featureCardoverrides,
+//   },
+//   {
+//     media: () => <Illustration path="patterns/overview/why-use/ease-of-use" />,
+//     title: 'Ease of use',
+//     description:
+//       'Customer data is only useful if it’s accurate. If we make our forms straightforward, it’s more likely our users will complete the form successfully.',
+//     stylePrefix: 'featureCard',
+//     overrides: featureCardoverrides,
+//   },
+//   {
+//     media: () => (
+//       <Illustration path="patterns/overview/why-use/best-practice" />
+//     ),
+//     title: 'Best practice',
+//     description:
+//       'Digital forms have been around for decades. We can rely on proven industry best practice and shared learning to supplement our own research.',
+//     stylePrefix: 'featureCard',
+//     overrides: featureCardoverrides,
+//   },
+// ];
 
 const StyledHeading = styled.span`
   color: ${getColorFromTheme('inkBrand010')};
@@ -71,7 +70,31 @@ const Overview = (layoutProps: LayoutProps) => (
     }}
   >
     <ComponentPageCell>
-      <ContentSection sectionName="why use the forms pattern">
+      <ContentSection sectionName="capture the moment">
+        <ContentPrimary
+          headline={
+            <>
+              Capture the moment <StyledHeading>(with data)</StyledHeading>
+            </>
+          }
+          description={
+            <>
+              Using <Link href="/components/form/">Form</Link> components
+              increases cohesion and avoids duplication of effort. Everyone
+              benefits from shared best practice, research, and development.
+              <br />
+              <br />
+              This guide outlines best practices to follow when creating a Form
+              and highlights the relevant NewsKit components. Following shared
+              best practices ensures the best possible experience for our
+              customers.
+            </>
+          }
+          showSeparator
+        />
+      </ContentSection>
+
+      {/* <ContentSection sectionName="why use the forms pattern">
         <ContentPrimary
           id="why-use-forms-pattern"
           toc="Why use the Forms pattern"
@@ -88,7 +111,7 @@ const Overview = (layoutProps: LayoutProps) => (
           description="Forms should be used to capture information from customers based on clear business requirements/benefits. The data captured in Forms allows us to serve the customer or user."
           showSeparator
         />
-      </ContentSection>
+      </ContentSection> */}
 
       <ContentSection sectionName="help improve this page">
         <ContentPrimary
