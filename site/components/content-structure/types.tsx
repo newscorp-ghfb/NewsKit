@@ -1,7 +1,7 @@
 import {MQ} from 'newskit';
 
 export interface ContentBaseProps {
-  headline?: string | React.ReactNode;
+  headline?: string | React.ReactElement;
   description?: string | React.ReactElement;
   toc?: string;
   id?: string;
