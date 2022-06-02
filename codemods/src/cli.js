@@ -16,24 +16,26 @@ const TRANSFORMS = {
 
 // Set up yargs
 // Includes usage on -h or --help
+// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 yargs
   .scriptName(PACKAGE_NAME)
   .command({
     command: '$0 [codemod] [paths]',
     desc: 'Run codemod on files',
-    builder: yargs => {
-      yargs.positional('codemod', {
+    builder: y => {
+      y.positional('codemod', {
         type: 'string',
         describe: 'The name of the codemod to run',
         demandOption: true,
       });
-      yargs.positional('paths', {
+      y.positional('paths', {
         type: 'string',
         describe: 'Paths or globs to run codemod on.',
         demandOption: true,
       });
     },
     handler: params => {
+      // eslint-disable-next-line @typescript-eslint/no-use-before-define
       runTransform(params.codemod, params.paths);
     },
   })
@@ -81,25 +83,18 @@ async function runTransform(codemod, userPath) {
   const start = process.hrtime();
 
   const transformPath = path.join(__dirname, `transforms/${codemod}.js`);
-
   const files = [userPath];
-  const filesFullPath = files.map(filePath => path.join(__dirname, filePath));
 
   const options = {
-    //dry: true,
-    //print: true,
+    // dry: true,
+    // print: true,
     verbose: 1,
     parser: 'tsx',
-    //extensions: 'ts',
+    // extensions: 'ts',
   };
 
-  const filesExpanded = expandFilePathsIfNeeded(filesFullPath);
-  console.log('userPath', userPath);
-  console.log(files);
-  console.log(filesFullPath);
-  console.log(filesExpanded);
-  const res = await jscodeshift(transformPath, filesExpanded, options);
-
+  const filesExpanded = expandFilePathsIfNeeded(files);
+  await jscodeshift(transformPath, filesExpanded, options);
   const end = process.hrtime(start);
   console.log(`Successfully completed running ${chalk.cyan(codemod)} codemod.`);
   console.log(`✨  Done in ${(end[0] + end[1] / 1e9).toFixed(2)}s.`);
