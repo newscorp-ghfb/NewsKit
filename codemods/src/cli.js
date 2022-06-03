@@ -35,9 +35,25 @@ yargs
       });
     },
     handler: params => {
+      const {codemod, paths, ...args} = params;
+      console.log(args);
+
       // eslint-disable-next-line @typescript-eslint/no-use-before-define
-      runTransform(params.codemod, params.paths);
+      runTransform(codemod, paths, args);
     },
+  })
+  .option('print', {
+    describe: 'print transformed files to stdout, useful for development',
+    type: 'boolean',
+  })
+  .option('dry', {
+    description: 'dry run (no changes are made to files)',
+    type: 'boolean',
+  })
+  .option('parser', {
+    description:
+      'the parser to use for parsing the source files (default: typescript)',
+    type: 'string',
   })
   .demandOption(
     ['codemod', 'paths'],
@@ -60,13 +76,6 @@ ${Object.keys(TRANSFORMS)
   .map(m => `  ${m}`)
   .join(`\n`)}`,
   )
-  .epilogue(`TODO`)
-  .option('paths', {
-    description: 'Paths or globs to run codemod on.',
-  })
-  .option('mod', {
-    description: 'The name of the codemod to run',
-  })
   .help()
   .alias('help', 'h').argv;
 
@@ -79,18 +88,16 @@ function expandFilePathsIfNeeded(filesBeforeExpansion) {
     : filesBeforeExpansion;
 }
 
-async function runTransform(codemod, userPath) {
+async function runTransform(codemod, userPath, args) {
   const start = process.hrtime();
 
   const transformPath = path.join(__dirname, `transforms/${codemod}.js`);
   const files = [userPath];
 
   const options = {
-    // dry: true,
-    // print: true,
     verbose: 1,
     parser: 'tsx',
-    // extensions: 'ts',
+    ...args,
   };
 
   const filesExpanded = expandFilePathsIfNeeded(files);
