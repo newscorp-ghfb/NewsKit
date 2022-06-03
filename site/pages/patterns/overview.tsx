@@ -21,6 +21,10 @@ const featureCardoverrides = {
   },
 };
 
+export enum ContentColSpan {
+  FULL = 12,
+  TEXT = 10,
+}
 const FORMS_PATTERN_CARDS = [
   {
     media: () => <Illustration path="patterns/overview/why-use/consistency" />,
@@ -100,19 +104,17 @@ const Overview = (layoutProps: LayoutProps) => (
           id="why-use-forms-pattern"
           toc="Why use the Forms pattern"
           headline="Why use the Forms pattern?"
-          description={
-            <>
-              <MediaList
-                layout="3-span"
-                cardType="feature"
-                cards={FORMS_PATTERN_CARDS}
-              />
-            </>
-          }
-        />
+        >
+          <MediaList
+            layout="3-span"
+            cardType="feature"
+            cards={FORMS_PATTERN_CARDS}
+          />
+        </ContentPrimary>
         <ContentSecondary
-          headline="When should forms be used?"
-          description="Forms should be used to capture information from customers based on clear business requirements/benefits. The data captured in Forms allows us to serve the customer or user."
+          headline="test1"
+          description="test2"
+          childrenColSpan={ContentColSpan.TEXT}
           showSeparator
         />
       </ContentSection>
