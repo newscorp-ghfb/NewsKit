@@ -1,6 +1,7 @@
 import React from 'react';
 import {styled, getColorFromTheme} from 'newskit';
 import {Link} from '../../components/link';
+import {MediaList} from '../../components/media-list';
 import {LayoutProps} from '../../components/layout';
 import {PatternPageTemplate} from '../../templates/pattern-page-template/pattern-page-template';
 import {
@@ -9,46 +10,59 @@ import {
   ContentSecondary,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
-// import {Illustration} from '../../components/illustrations/illustration-loader';
-// import { MediaList } from '../../components/media-list';
 
-// const featureCardoverrides = {
-//   title: {
-//     typographyPreset: 'editorialHeadline030',
-//   },
-//   description: {
-//     typographyPreset: 'editorialParagraph020',
-//   },
-// };
+const featureCardOverrides = {
+  title: {
+    typographyPreset: 'editorialHeadline030',
+  },
+  description: {
+    typographyPreset: 'editorialParagraph020',
+  },
+};
+const {title, description} = featureCardOverrides;
 
-// const FORMS_PATTERN_CARDS = [
-//   {
-//     media: () => <Illustration path="patterns/overview/why-use/consistency" />,
-//     title: 'Consistency',
-//     description:
-//       'All our brands have some form of data capture. Aligning our approach means there is one source of truth when building forms and capturing customer information. ',
-//     stylePrefix: 'featureCard',
-//     overrides: featureCardoverrides,
-//   },
-//   {
-//     media: () => <Illustration path="patterns/overview/why-use/ease-of-use" />,
-//     title: 'Ease of use',
-//     description:
-//       'Customer data is only useful if it’s accurate. If we make our forms straightforward, it’s more likely our users will complete the form successfully.',
-//     stylePrefix: 'featureCard',
-//     overrides: featureCardoverrides,
-//   },
-//   {
-//     media: () => (
-//       <Illustration path="patterns/overview/why-use/best-practice" />
-//     ),
-//     title: 'Best practice',
-//     description:
-//       'Digital forms have been around for decades. We can rely on proven industry best practice and shared learning to supplement our own research.',
-//     stylePrefix: 'featureCard',
-//     overrides: featureCardoverrides,
-//   },
-// ];
+const PRINCIPLE_CARDS = [
+  {
+    media: {
+      src: 'static/theming/foundations/purposeful-fonts.svg',
+      alt: '',
+    },
+    title: 'Purposeful',
+    description:
+      'The choice of font families are appropriate for their use e.g. decorative or functional, bold or subtle.',
+    stylePrefix: 'featureCard',
+    overrides: {
+      title,
+      description,
+    },
+  },
+  {
+    media: {
+      src: 'static/theming/foundations/legible.svg',
+      alt: '',
+    },
+    title: 'Legible',
+    description: `Font families are legible for screen use across multiple sizes.`,
+    stylePrefix: 'featureCard',
+    overrides: {
+      title,
+      description,
+    },
+  },
+  {
+    media: {
+      src: 'static/theming/foundations/balanced.svg',
+      alt: '',
+    },
+    title: 'Balanced',
+    description: `When using multiple font families, ensure they complement each other.`,
+    stylePrefix: 'featureCard',
+    overrides: {
+      title,
+      description,
+    },
+  },
+];
 
 const StyledHeading = styled.span`
   color: ${getColorFromTheme('inkBrand010')};
@@ -101,12 +115,11 @@ const Overview = (layoutProps: LayoutProps) => (
           toc="Why use the Forms pattern"
           headline="Why use the Forms pattern?"
         >
-          test
-          {/* <MediaList
+          <MediaList
             layout="3-span"
             cardType="feature"
-            cards={FORMS_PATTERN_CARDS}
-          /> */}
+            cards={PRINCIPLE_CARDS}
+          />
         </ContentPrimary>
 
         <ContentSecondary

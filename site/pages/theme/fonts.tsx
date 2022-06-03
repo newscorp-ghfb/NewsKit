@@ -245,18 +245,18 @@ const Fonts = (layoutProps: LayoutProps) => (
   >
     <ComponentPageCell>
       <ContentSection sectionName="principles">
-        <ContentPrimary id="principles" toc="Principles" headline="Principles">
+        <ContentPrimary
+          id="principles"
+          toc="Principles"
+          headline="Principles"
+          showSeparator
+        >
           <MediaList
             layout="3-span"
             cardType="feature"
             cards={PRINCIPLE_CARDS}
           />
         </ContentPrimary>
-        <ContentSecondary
-          headline="When should forms be used?"
-          description="Forms should be used to capture information from customers based on clear business requirements/benefits. The data captured in Forms allows us to serve the customer or user."
-          showSeparator
-        />
       </ContentSection>
 
       <ContentSection sectionName="overview">
