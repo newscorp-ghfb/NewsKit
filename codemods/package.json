@@ -1,11 +1,9 @@
 {
-  "name": "newskit-codemods",
-  "version": "0.0.1",
+  "name": "@newskit/codemods",
+  "version": "5.4.6",
   "description": "You can use this CLI tool to run various scripts (codemods) that will help update NewsKit APIs",
   "main": "src/cli.js",
-  "scripts": {
-    "test": "yarn jest"
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -15,6 +13,6 @@
     "yargs": "^17.5.1"
   },
   "bin": {
-    "newskit-codemods": "./src/cli.js"
+    "@newskit/codemods": "./src/cli.js"
   }
 }

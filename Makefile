@@ -68,8 +68,7 @@ publish_npm:
 	cd dist; yarn publish --no-git-tag-version;
 
 publish_codemods_npm:
-	# TODO: script that copies package version from components to codemods
-	cd codemods; TODO; yarn publish --no-git-tag-version;
+	yarn build:sync-codemods-version; cd codemods; yarn publish --no-git-tag-version;
 
 publish_codemods_npm_dev:
 	cd codemods; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable;
