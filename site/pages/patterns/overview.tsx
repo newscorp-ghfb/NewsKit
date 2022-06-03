@@ -38,16 +38,16 @@ const FORMS_PATTERN_CARDS = [
     stylePrefix: 'featureCard',
     overrides: featureCardoverrides,
   },
-  {
-    media: () => (
-      <Illustration path="patterns/overview/why-use/best-practice" />
-    ),
-    title: 'Best practice',
-    description:
-      'Digital forms have been around for decades. We can rely on proven industry best practice and shared learning to supplement our own research.',
-    stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
-  },
+  // {
+  //   media: () => (
+  //     <Illustration path="patterns/overview/why-use/best-practice" />
+  //   ),
+  //   title: 'Best practice',
+  //   description:
+  //     'Digital forms have been around for decades. We can rely on proven industry best practice and shared learning to supplement our own research.',
+  //   stylePrefix: 'featureCard',
+  //   overrides: featureCardoverrides,
+  // },
 ];
 
 const StyledHeading = styled.span`
@@ -95,11 +95,11 @@ const Overview = (layoutProps: LayoutProps) => (
         />
       </ContentSection>
 
-      <ContentSection sectionName="font attributes">
+      <ContentSection sectionName="why use the Forms pattern">
         <ContentPrimary
-          id="fontattributes"
-          toc="Font attributes"
-          headline="Font attributes"
+          id="why-use-forms-pattern"
+          toc="Why use the Forms pattern"
+          headline="Why use the Forms pattern?"
         >
           <MediaList
             layout="3-span"
@@ -109,18 +109,8 @@ const Overview = (layoutProps: LayoutProps) => (
         </ContentPrimary>
 
         <ContentSecondary
-          headline="Font family"
-          description={
-            <>
-              Font family defines a set of characters of the same design. These
-              characters include letters, numbers, punctuation marks, and
-              symbols in various weights. Font families are mapped to design
-              tokens. Font family can be applied to any text element using the{' '}
-              <Link href="/theme/presets/typography-presets">
-                Typography Preset.
-              </Link>
-            </>
-          }
+          headline="When should forms be used?"
+          description="Forms should be used to capture information from customers based on clear business requirements/benefits. The data captured in Forms allows us to serve the customer or user."
           showSeparator
         />
       </ContentSection>
