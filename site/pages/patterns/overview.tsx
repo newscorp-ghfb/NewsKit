@@ -10,6 +10,7 @@ import {
   ContentSecondary,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
+import {Illustration} from '../../components/illustrations/illustration-loader';
 
 const featureCardOverrides = {
   title: {
@@ -19,48 +20,33 @@ const featureCardOverrides = {
     typographyPreset: 'editorialParagraph020',
   },
 };
-const {title, description} = featureCardOverrides;
 
-const PRINCIPLE_CARDS = [
+const FORMS_PATTERN_CARDS = [
   {
-    media: {
-      src: 'static/theming/foundations/purposeful-fonts.svg',
-      alt: '',
-    },
-    title: 'Purposeful',
+    media: () => <Illustration path="patterns/overview/why-use/consistency" />,
+    title: 'Consistency',
     description:
-      'The choice of font families are appropriate for their use e.g. decorative or functional, bold or subtle.',
+      'All our brands have some form of data capture. Aligning our approach means there is one source of truth when building forms and capturing customer information. ',
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardOverrides,
   },
   {
-    media: {
-      src: 'static/theming/foundations/legible.svg',
-      alt: '',
-    },
-    title: 'Legible',
-    description: `Font families are legible for screen use across multiple sizes.`,
+    media: () => <Illustration path="patterns/overview/why-use/ease-of-use" />,
+    title: 'Ease of use',
+    description:
+      'Customer data is only useful if it’s accurate. If we make our forms straightforward, it’s more likely our users will complete the form successfully.',
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardOverrides,
   },
   {
-    media: {
-      src: 'static/theming/foundations/balanced.svg',
-      alt: '',
-    },
-    title: 'Balanced',
-    description: `When using multiple font families, ensure they complement each other.`,
+    media: () => (
+      <Illustration path="patterns/overview/why-use/best-practice" />
+    ),
+    title: 'Best practice',
+    description:
+      'Digital forms have been around for decades. We can rely on proven industry best practice and shared learning to supplement our own research.',
     stylePrefix: 'featureCard',
-    overrides: {
-      title,
-      description,
-    },
+    overrides: featureCardOverrides,
   },
 ];
 
@@ -109,7 +95,7 @@ const Overview = (layoutProps: LayoutProps) => (
         />
       </ContentSection>
 
-      <ContentSection sectionName="why use the Forms pattern">
+      <ContentSection sectionName="why use the forms pattern">
         <ContentPrimary
           id="why-use-forms-pattern"
           toc="Why use the Forms pattern"
@@ -118,10 +104,9 @@ const Overview = (layoutProps: LayoutProps) => (
           <MediaList
             layout="3-span"
             cardType="feature"
-            cards={PRINCIPLE_CARDS}
+            cards={FORMS_PATTERN_CARDS}
           />
         </ContentPrimary>
-
         <ContentSecondary
           headline="When should forms be used?"
           description="Forms should be used to capture information from customers based on clear business requirements/benefits. The data captured in Forms allows us to serve the customer or user."
