@@ -5,14 +5,42 @@ const chalk = require('chalk');
 const {run: jscodeshift} = require('jscodeshift/src/Runner');
 const path = require('path');
 const glob = require('glob');
+const packageJson = require('../package.json');
 
-const PACKAGE_NAME = 'newskit-codemods';
+const PACKAGE_NAME = packageJson.name;
 
-// Each mod or script is an array of dubstep steps
-// Users can select one of these to run from the CLI via `--mod`
+// Codemods names and descriptions are defined below.
+// Users can select one of these to run from the CLI
 const TRANSFORMS = {
-  'update-token': 'Update token for v6',
+  'update-token': 'Update newskit tokens from v5 to v6',
 };
+
+function expandFilePathsIfNeeded(filesBeforeExpansion) {
+  const shouldExpandFiles = filesBeforeExpansion.some(file =>
+    file.includes('*'),
+  );
+  return shouldExpandFiles
+    ? filesBeforeExpansion.map(filePath => glob.sync(filePath)).flat()
+    : filesBeforeExpansion;
+}
+
+async function runTransform(codemodName, files, args) {
+  const transformPath = path.join(__dirname, `transforms/${codemodName}.js`);
+  const filesBeforeExpansion = [files];
+
+  const filesExpanded = expandFilePathsIfNeeded(filesBeforeExpansion);
+
+  const options = {
+    verbose: 1,
+    parser: 'tsx',
+    ...args,
+  };
+
+  await jscodeshift(transformPath, filesExpanded, options);
+  console.log(
+    `✨ Successfully completed running ${chalk.cyan(codemodName)} codemod.`,
+  );
+}
 
 // Set up yargs
 // Includes usage on -h or --help
@@ -30,15 +58,14 @@ yargs
       });
       y.positional('paths', {
         type: 'string',
-        describe: 'Paths or globs to run codemod on.',
+        describe:
+          'Files or directory to transform. Can be a glob like src/**.js',
         demandOption: true,
       });
     },
     handler: params => {
       const {codemod, paths, ...args} = params;
-      console.log(args);
 
-      // eslint-disable-next-line @typescript-eslint/no-use-before-define
       runTransform(codemod, paths, args);
     },
   })
@@ -52,57 +79,29 @@ yargs
   })
   .option('parser', {
     description:
-      'the parser to use for parsing the source files (default: typescript)',
+      'the parser to use for parsing the source files (default: tsx)',
     type: 'string',
   })
   .demandOption(
     ['codemod', 'paths'],
-    `Please provide both ${chalk.green.bold('codemod')} and ${chalk.green.bold(
-      'paths',
-    )} arguments to work with this tool`,
+    `⛔️  Please provide both ${chalk.green.bold(
+      'codemod',
+    )} and ${chalk.green.bold('paths')} arguments to work with this tool`,
   )
-
   .usage(
-    `${chalk.white.bold(PACKAGE_NAME)}
-You can use this CLI tool to run various scripts (codemods)...TODO...
-Usage:
-  $ ${PACKAGE_NAME}  <CODEMOD_NAME> <PATH_TO_CODE>
+    `
+    ${chalk.white.bold(PACKAGE_NAME)}
+    Codemods for updating NewsKit
+    Usage:
+      $ ${PACKAGE_NAME}  <CODEMOD_NAME> <PATH_TO_CODE>
 
-Example:
-  $ ${PACKAGE_NAME} v5-to-v6 ./src/**/*.+(ts|tsx|json) 
+    Example:
+      $ ${PACKAGE_NAME} update-tokens ./src/**/*.+(ts|tsx|json) 
 
-Codemods:
-${Object.keys(TRANSFORMS)
-  .map(m => `  ${m}`)
-  .join(`\n`)}`,
+    Codemods:
+      ${Object.keys(TRANSFORMS)
+        .map(m => `  ${m} - ${TRANSFORMS[m]}`)
+        .join(`\n`)}`,
   )
   .help()
   .alias('help', 'h').argv;
-
-function expandFilePathsIfNeeded(filesBeforeExpansion) {
-  const shouldExpandFiles = filesBeforeExpansion.some(file =>
-    file.includes('*'),
-  );
-  return shouldExpandFiles
-    ? filesBeforeExpansion.map(filePath => glob.sync(filePath)).flat()
-    : filesBeforeExpansion;
-}
-
-async function runTransform(codemod, userPath, args) {
-  const start = process.hrtime();
-
-  const transformPath = path.join(__dirname, `transforms/${codemod}.js`);
-  const files = [userPath];
-
-  const options = {
-    verbose: 1,
-    parser: 'tsx',
-    ...args,
-  };
-
-  const filesExpanded = expandFilePathsIfNeeded(files);
-  await jscodeshift(transformPath, filesExpanded, options);
-  const end = process.hrtime(start);
-  console.log(`Successfully completed running ${chalk.cyan(codemod)} codemod.`);
-  console.log(`✨  Done in ${(end[0] + end[1] / 1e9).toFixed(2)}s.`);
-}

@@ -1,8 +1,20 @@
 # Codemods for NewsKit
 
-You can use this CLI tool to run various scripts (codemods) that will help update NewsKit APIs
+NewsKit provides Codemod transformations to help upgrade your codebase when a component is updated or deprecated.
 
-> 
+Codemods are transformations that run on your codebase programmatically. This allows for a large amount of changes to be applied without having to manually go through every file.
 
-Examples:
-node src/cli.js update-token "../../site/**/*.+(ts|tsx|json)"
+
+## Usage
+You can run these at the root of your project.
+```
+npx newskit-codemods [codemod] [paths]
+```
+
+
+run to see all codemods and flags
+```
+npx newskit-codemods --help
+```
+
+## Development
