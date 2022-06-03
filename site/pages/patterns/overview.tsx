@@ -1,7 +1,7 @@
 import React from 'react';
 import {styled, getColorFromTheme} from 'newskit';
 import {Link} from '../../components/link';
-import {MediaList} from '../../components/media-list';
+// import {MediaList} from '../../components/media-list';
 import {LayoutProps} from '../../components/layout';
 import {PatternPageTemplate} from '../../templates/pattern-page-template/pattern-page-template';
 import {
@@ -10,49 +10,45 @@ import {
   ContentSecondary,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
-import {Illustration} from '../../components/illustrations/illustration-loader';
+// import {Illustration} from '../../components/illustrations/illustration-loader';
 
-const featureCardoverrides = {
-  title: {
-    typographyPreset: 'editorialHeadline030',
-  },
-  description: {
-    typographyPreset: 'editorialParagraph020',
-  },
-};
+// const featureCardoverrides = {
+//   title: {
+//     typographyPreset: 'editorialHeadline030',
+//   },
+//   description: {
+//     typographyPreset: 'editorialParagraph020',
+//   },
+// };
 
-export enum ContentColSpan {
-  FULL = 12,
-  TEXT = 10,
-}
-const FORMS_PATTERN_CARDS = [
-  {
-    media: () => <Illustration path="patterns/overview/why-use/consistency" />,
-    title: 'Consistency',
-    description:
-      'All our brands have some form of data capture. Aligning our approach means there is one source of truth when building forms and capturing customer information. ',
-    stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
-  },
-  {
-    media: () => <Illustration path="patterns/overview/why-use/ease-of-use" />,
-    title: 'Ease of use',
-    description:
-      'Customer data is only useful if it’s accurate. If we make our forms straightforward, it’s more likely our users will complete the form successfully.',
-    stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
-  },
-  {
-    media: () => (
-      <Illustration path="patterns/overview/why-use/best-practice" />
-    ),
-    title: 'Best practice',
-    description:
-      'Digital forms have been around for decades. We can rely on proven industry best practice and shared learning to supplement our own research.',
-    stylePrefix: 'featureCard',
-    overrides: featureCardoverrides,
-  },
-];
+// const FORMS_PATTERN_CARDS = [
+//   {
+//     media: () => <Illustration path="patterns/overview/why-use/consistency" />,
+//     title: 'Consistency',
+//     description:
+//       'All our brands have some form of data capture. Aligning our approach means there is one source of truth when building forms and capturing customer information. ',
+//     stylePrefix: 'featureCard',
+//     overrides: featureCardoverrides,
+//   },
+//   {
+//     media: () => <Illustration path="patterns/overview/why-use/ease-of-use" />,
+//     title: 'Ease of use',
+//     description:
+//       'Customer data is only useful if it’s accurate. If we make our forms straightforward, it’s more likely our users will complete the form successfully.',
+//     stylePrefix: 'featureCard',
+//     overrides: featureCardoverrides,
+//   },
+//   {
+//     media: () => (
+//       <Illustration path="patterns/overview/why-use/best-practice" />
+//     ),
+//     title: 'Best practice',
+//     description:
+//       'Digital forms have been around for decades. We can rely on proven industry best practice and shared learning to supplement our own research.',
+//     stylePrefix: 'featureCard',
+//     overrides: featureCardoverrides,
+//   },
+// ];
 
 const StyledHeading = styled.span`
   color: ${getColorFromTheme('inkBrand010')};
@@ -99,22 +95,28 @@ const Overview = (layoutProps: LayoutProps) => (
         />
       </ContentSection>
 
-      <ContentSection sectionName="why use the forms pattern">
+      <ContentSection sectionName="font attributes">
         <ContentPrimary
-          id="why-use-forms-pattern"
-          toc="Why use the Forms pattern"
-          headline="Why use the Forms pattern?"
+          id="fontattributes"
+          toc="Font attributes"
+          headline="Font attributes"
         >
-          <MediaList
-            layout="3-span"
-            cardType="feature"
-            cards={FORMS_PATTERN_CARDS}
-          />
+          test
         </ContentPrimary>
+
         <ContentSecondary
-          headline="test1"
-          description="test2"
-          childrenColSpan={ContentColSpan.TEXT}
+          headline="Font family"
+          description={
+            <>
+              Font family defines a set of characters of the same design. These
+              characters include letters, numbers, punctuation marks, and
+              symbols in various weights. Font families are mapped to design
+              tokens. Font family can be applied to any text element using the{' '}
+              <Link href="/theme/presets/typography-presets">
+                Typography Preset.
+              </Link>
+            </>
+          }
           showSeparator
         />
       </ContentSection>
