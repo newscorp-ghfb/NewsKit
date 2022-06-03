@@ -26,6 +26,7 @@ export interface ColumnMapObject extends TableCellProps {
     | 'motionDurationSwatch'
     | 'motionTimingSwatch'
     | 'boxShadow'
+    | 'boxOverlay'
     | 'sizeBox'
     | 'fontSize'
     | 'fontWeight'

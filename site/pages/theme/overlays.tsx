@@ -1,5 +1,5 @@
 import React from 'react';
-// import {newskitLightTheme} from 'newskit';
+import {newskitLightTheme} from 'newskit';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
@@ -10,7 +10,8 @@ import {
   ContentSection,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
-// import {getTokenType} from '../../utils/get-token-type';
+import {getTokenType} from '../../utils/get-token-type';
+import {Table, TableRow} from '../../components/table';
 
 const DO_AND_DONT = [
   {
@@ -27,13 +28,15 @@ const DO_AND_DONT = [
   },
 ];
 
-// const shadowRows = getTokenType(newskitLightTheme.shadows, 'shadow').map(
-//   ({tokenName, tokenValue}) => ({
-//     shadow: tokenValue as string,
-//     token: tokenName,
-//     exampleUsage: '',
-//   }),
-// );
+const overlayRows = getTokenType(
+  newskitLightTheme.overlays,
+  'overlayTintBase',
+).map(({tokenName, tokenValue}) => ({
+  value: tokenValue,
+  overlay: tokenValue as string,
+  token: tokenName,
+  exampleUsage: '',
+})) as TableRow[];
 
 const Overlays = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
@@ -54,7 +57,31 @@ const Overlays = (layoutProps: LayoutProps) => (
     }}
   >
     <ComponentPageCell>
-      <ContentSection sectionName="usgae">
+      <ContentSection sectionName="overview">
+        <ContentPrimary
+          id="overview"
+          toc="Overview"
+          headline="Overview"
+          description="Tints make colours in a UI more or less intense by aiding legibility contrast between the foreground and background elements. "
+        >
+          <Table
+            columns={['Overlay', 'Token', 'Value', 'Example usage']}
+            rows={overlayRows}
+          />
+        </ContentPrimary>
+
+        {/* <ContentSecondary
+          description={
+            <>
+              Shadows can be applied to a UI element using the boxShadow
+              attribute on a{' '}
+              <Link href="/theme/presets/style-presets/">Style Preset.</Link>
+            </>
+          }
+          showSeparator
+        /> */}
+      </ContentSection>
+      <ContentSection sectionName="usage">
         <ContentPrimary
           toc="Usage"
           id="usage"

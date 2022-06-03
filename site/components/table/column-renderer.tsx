@@ -20,6 +20,7 @@ import {
 } from '../theming-values/motions/swatches';
 import {FontAttributes} from '../font-attributes';
 import {SizeBox} from '../theming-values/size-box';
+import {OverlayCards} from '../theming-values/overlays/swatches';
 
 const renderIcon = (value?: TableRowValue) => {
   switch (value) {
@@ -214,6 +215,15 @@ export const renderCols = (
         cellContent = cellValue && (
           <BorderCard boxShadowToken={cellValue.toString()} />
         );
+        // console.log(<BorderCard boxShadowToken={cellValue.toString()} />);
+        break;
+      }
+
+      case 'boxOverlay': {
+        cellContent = cellValue && (
+          <OverlayCards overlayToken={cellValue.toString()} />
+        );
+        // console.log(<OverlayCards overlayToken={cellValue.toString()} />);
         break;
       }
 
