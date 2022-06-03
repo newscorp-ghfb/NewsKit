@@ -26,6 +26,46 @@ exports[`Video Player playlist player should render properly with data attribute
 />
 `;
 
+exports[`Video Player renders video player with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+}
+
+.emotion-0 .video-js .vjs-big-play-button {
+  background-color: transparent;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 2px;
+  border-radius: 50%;
+  color: #FFFFFF;
+}
+
+.emotion-0 .video-js .vjs-progress-holder {
+  width: 100%;
+  background-color: rgba(10,10,10,0.2);
+}
+
+<div
+    class="emotion-0"
+  >
+    <video
+      class="video-js vjs-fluid"
+      controls=""
+      data-account="1752604059001"
+      data-embed="default"
+      data-player="default"
+      data-testid="bc-video-player"
+      data-video-id="5290445795001"
+      id="bc-video-5290445795001"
+    />
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Video Player renders video player with overriden play button style 1`] = `
 <DocumentFragment>
   .emotion-0 .video-js .vjs-big-play-button {

@@ -1,4 +1,4 @@
-import {CSSObject, getXFromTheme, MQ} from './style';
+import {CSSObject, getTypographyPreset, getXFromTheme, MQ} from './style';
 import {ThemeProp} from './style-types';
 import {deepMerge} from './deep-merge';
 import {get} from './get';
@@ -122,6 +122,19 @@ export const logicalProps = (defaultsPath?: string, overridesPath?: string) => (
   const margin = logicalMargins(props, defaultsPath, overridesPath);
   const padding = logicalPadding(props, defaultsPath, overridesPath);
   return deepMerge(margin, padding);
+};
+
+export const logicalPropsWithTypographyCropSupport = (
+  defaultsPath?: string,
+  overridesPath?: string,
+) => (props: ThemeProp) => {
+  const padding = logicalPadding(props, defaultsPath, overridesPath);
+  const margins = logicalMargins(props, defaultsPath, overridesPath);
+  const typographyPreset = getTypographyPreset(defaultsPath, overridesPath, {
+    // Only apply the crop padding if there are no padding overrides.
+    withCrop: !Object.keys(padding).length,
+  })(props);
+  return deepMerge(margins, padding, typographyPreset);
 };
 
 export const logicalPaddingProps = (
