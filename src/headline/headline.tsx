@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   styled,
-  getTypographyPreset,
   getSpacingInlineHorizontal,
   getStylePreset,
   css,
@@ -9,19 +8,10 @@ import {
 import {HeadlineProps, HeadlinePropsWithRenderAs} from './types';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {logicalPadding, logicalMargins} from '../utils/logical-properties';
-import {deepMerge} from '../utils';
+import {getLogicalPropsAndTypographyPreset} from '../utils/logical-properties';
 
 const HeadlineContainer = styled.section<Pick<HeadlineProps, 'overrides'>>`
-  ${props => {
-    const padding = logicalPadding(props, 'headline');
-    const margins = logicalMargins(props, 'headline');
-    const typographyPreset = getTypographyPreset('headline', '', {
-      // Only apply the crop padding if there are no padding overrides.
-      withCrop: !Object.keys(padding).length,
-    })(props);
-    return deepMerge(margins, padding, typographyPreset);
-  }}
+  ${getLogicalPropsAndTypographyPreset('headline')}
 `;
 
 const cssReset = css`

@@ -17,6 +17,10 @@ import {getToken} from '../utils/get-token';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {
+  omitLogicalPropsFromOverrides,
+  extractLogicalPropsFromOverrides,
+} from '../utils/logical-properties';
 
 const labelFlowMap = [
   // horizontal
@@ -52,10 +56,13 @@ const ThemelessSlider: React.FC<SliderProps> = ({
   thumbLabel,
   thumbIcon: ThumbIcon,
   dataTestId = 'slider',
-  overrides = {},
+  overrides: allOverrides = {},
   renderTrack,
   renderThumb,
 }) => {
+  const overrides = omitLogicalPropsFromOverrides(allOverrides);
+  const logicalProps = extractLogicalPropsFromOverrides(allOverrides);
+
   const theme = useTheme();
   const sliderTrackStylePreset = getToken(
     {theme, overrides},
@@ -215,6 +222,7 @@ const ThemelessSlider: React.FC<SliderProps> = ({
       wrap={!inlineLabels}
       flexGrow
       data-testid={dataTestId}
+      {...logicalProps}
     >
       {inlineLabels && minimumLabel}
       {labelPosition === LabelPosition.Before && labelContainer}

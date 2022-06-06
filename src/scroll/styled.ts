@@ -8,6 +8,7 @@ import {
   styled,
 } from '../utils/style';
 import {ScrollProps} from './types';
+import {logicalProps} from '../utils/logical-properties';
 
 const getPseudoStyles = (props: ScrollProps & ThemeProp) => {
   const {vertical} = props;
@@ -43,6 +44,8 @@ export const StyledScrollNav = styled.div<
   position: relative;
   overflow: hidden;
   height: 100%;
+
+  ${logicalProps()}
 
   ${({controlsVariant}) =>
     controlsVariant === 'hover' &&

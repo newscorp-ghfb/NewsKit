@@ -3,6 +3,7 @@ export default {
     divider: {
       stylePreset: 'divider',
     },
+    width: '100%',
   },
   structuredListItem: {
     stylePreset: 'structuredListItem',

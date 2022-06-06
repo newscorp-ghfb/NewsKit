@@ -74,6 +74,21 @@ describe('slider', () => {
       expect(mockRange.mock.calls[0][0].renderThumb).toBe(renderThumb);
     });
 
+    it('should pass logical prop overrides to Stack', () => {
+      const {asFragment} = renderWithTheme(Slider, {
+        values: [20, 80],
+        min: 0,
+        max: 100,
+        onChange: () => {},
+        overrides: {
+          paddingInline: '50px',
+          marginBlock: '20px',
+        },
+      });
+
+      expect(asFragment()).toMatchSnapshot();
+    });
+
     it('should pass custom optional props to Range component', () => {
       renderWithTheme(Slider, {
         values: [22.5],
