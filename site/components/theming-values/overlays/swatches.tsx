@@ -13,6 +13,7 @@ import {compileTheme} from '../../../../src/theme/compiler';
 export interface OverlayCardProps {
   overlayToken?: string;
   gradientToken?: string;
+  opacityToken?: string;
 }
 
 const compiledNewskitLightTheme = compileTheme(newskitLightTheme);
@@ -47,6 +48,7 @@ export const StyledSwatchCardTopOverlay = styled.div`
 const StyledOverlayCard = styled.div<{
   overlayToken: string;
   gradientToken: string;
+  opacityToken: string;
 }>`
   ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
   ${getSizingCssFromTheme('width', 'sizing100')};
@@ -58,6 +60,11 @@ const StyledOverlayCard = styled.div<{
       'backgroundColor',
       overlayToken,
       //  'overlayTintBase020',
+    )({theme: compiledNewskitLightTheme})};
+  ${({opacityToken}) =>
+    getOverlayCssFromTheme(
+      'opacity',
+      opacityToken,
     )({theme: compiledNewskitLightTheme})};
 
   ${({gradientToken}) =>
@@ -71,11 +78,13 @@ const StyledOverlayCard = styled.div<{
 export const OverlayCards: React.FC<OverlayCardProps> = ({
   overlayToken = '',
   gradientToken = '',
+  opacityToken = '',
 }) => (
   <StyledSwatchCardTopOverlay>
     <StyledOverlayCard
       overlayToken={overlayToken}
       gradientToken={gradientToken}
+      opacityToken={opacityToken}
     />
   </StyledSwatchCardTopOverlay>
 );

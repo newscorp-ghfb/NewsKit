@@ -37,7 +37,7 @@ const overlayRows = getTokenType(
   'overlayTintBase',
 ).map(({tokenName, tokenValue}) => ({
   value: tokenValue,
-  overlay: tokenName as string,
+  tint: tokenName as string,
   token: tokenName,
   exampleUsage:
     tokenName === 'overlayTintBase040' ? internalOverlay : usageString,
@@ -48,7 +48,7 @@ const inverserOverlayRows = getTokenType(
   'overlayTintInverse',
 ).map(({tokenName, tokenValue}) => ({
   value: tokenValue,
-  overlay: tokenName as string,
+  tint: tokenName as string,
   token: tokenName,
   exampleUsage: usageString,
 })) as TableRow[];
@@ -82,29 +82,27 @@ const Overlays = (layoutProps: LayoutProps) => (
           <Tabs size="medium">
             <Tab label="Base">
               <Table
-                columns={['Overlay', 'Token', 'Value', 'Example usage']}
+                columns={['Tint', 'Token', 'Value', 'Example usage']}
                 rows={overlayRows}
               />
             </Tab>
             <Tab label="Inverse">
               <Table
-                columns={['Overlay', 'Token', 'Value', 'Example usage']}
+                columns={['Tint', 'Token', 'Value', 'Example usage']}
                 rows={inverserOverlayRows}
               />
             </Tab>
           </Tabs>
         </ContentPrimary>
-
-        {/* <ContentSecondary
-          description={
-            <>
-              Shadows can be applied to a UI element using the boxShadow
-              attribute on a{' '}
-              <Link href="/theme/presets/style-presets/">Style Preset.</Link>
-            </>
-          }
-          showSeparator
-        /> */}
+        <ContentSection sectionName="a11y">
+          <ContentPrimary
+            id="ally"
+            toc="Acessibility"
+            headline="Accessibility considerations"
+            description="When using overlays, ensure important UI elements like text
+and icons are legible without compromising the aesthetic."
+          />
+        </ContentSection>
       </ContentSection>
       <ContentSection sectionName="usage">
         <ContentPrimary

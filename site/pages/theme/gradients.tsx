@@ -20,6 +20,15 @@ const baseGradientRows = getTokenType(
   token: tokenName,
 })) as TableRow[];
 
+const inverserGradientRows = getTokenType(
+  newskitLightTheme.overlays,
+  'overlayGradientInverse',
+).map(({tokenName, tokenValue}) => ({
+  value: tokenValue,
+  gradient: tokenName as string,
+  token: tokenName,
+})) as TableRow[];
+
 const Gradients = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
@@ -58,11 +67,19 @@ styles (these are light when used in a dark theme)`}
             <Tab label="Inverse">
               <Table
                 columns={['Gradient', 'Token', 'Value']}
-                rows={baseGradientRows}
+                rows={inverserGradientRows}
               />
             </Tab>
           </Tabs>
         </ContentPrimary>
+      </ContentSection>
+      <ContentSection sectionName="a11y">
+        <ContentPrimary
+          id="a11y"
+          toc="Accessibility"
+          headline="Accessibility consdierations"
+          description="When using gradients, ensure important UI elements like text and icons are legible without compromising the aesthetic."
+        />
       </ContentSection>
     </ComponentPageCell>
   </FoundationPageTemplate>
