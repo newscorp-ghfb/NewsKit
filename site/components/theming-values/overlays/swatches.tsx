@@ -54,24 +54,21 @@ const StyledOverlayCard = styled.div<{
   ${getSizingCssFromTheme('width', 'sizing100')};
   ${getSizingCssFromTheme('height', 'sizing100')};
   display: flex;
-
   ${({overlayToken}) =>
     getOverlayCssFromTheme(
       'backgroundColor',
       overlayToken,
-      //  'overlayTintBase020',
     )({theme: compiledNewskitLightTheme})};
   ${({opacityToken}) =>
     getOverlayCssFromTheme(
       'opacity',
       opacityToken,
     )({theme: compiledNewskitLightTheme})};
-
+  background-color: ${({opacityToken}) => (opacityToken ? 'black' : '')};
   ${({gradientToken}) =>
     getOverlayCssFromTheme(
       'backgroundImage',
       gradientToken,
-      //  'overlayGradientBase',  //
     )({theme: compiledNewskitLightTheme})};
 `;
 

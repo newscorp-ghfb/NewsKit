@@ -16,7 +16,7 @@ import {Table, TableRow} from '../../components/table';
 const DO_AND_DONT = [
   {
     description:
-      'Overlay contrasts should be distinct and clear. They can be used to obscure page content and emphasise an element for greater legibility. I.e. the Modal.',
+      'Overlay contrasts should be distinct and clear. They can be used to obscure page content and emphasise an element for greater legibility. I.e. the  Modal.',
     kind: UsageKind.DO,
     media: getIllustrationComponent('theme/overlays/do'),
   },
@@ -72,28 +72,44 @@ const Overlays = (layoutProps: LayoutProps) => (
     }}
   >
     <ComponentPageCell>
-      <ContentSection sectionName="overview">
+      <ContentSection sectionName="Overview">
         <ContentPrimary
           id="overview"
           toc="Overview"
           headline="Overview"
-          description="Tints make colours in a UI more or less intense by aiding legibility contrast between the foreground and background elements. "
-        >
-          <Tabs size="medium">
-            <Tab label="Base">
-              <Table
-                columns={['Tint', 'Token', 'Value', 'Example usage']}
-                rows={overlayRows}
-              />
-            </Tab>
-            <Tab label="Inverse">
-              <Table
-                columns={['Tint', 'Token', 'Value', 'Example usage']}
-                rows={inverserOverlayRows}
-              />
-            </Tab>
-          </Tabs>
-        </ContentPrimary>
+          description="Overlay foundations consist of tints in both ‘base’ styles
+          (these are dark when used in a light theme) and ‘inverse’
+          styles (these are light when used in a dark theme)."
+        />
+
+        <ContentSection sectionName="Tints">
+          <ContentPrimary
+            id="tints"
+            toc="Tints"
+            headline="Tints"
+            description="Tints make colors in a UI more or less intense by aiding
+                legibility contrast between the foreground and background
+                elements.
+                'Base' tint tokens are used to darken a background or element.
+                'Inverse' tint tokens are used to lighten a background or
+                element."
+          >
+            <Tabs size="medium">
+              <Tab label="Base">
+                <Table
+                  columns={['Tint', 'Token', 'Value', 'Example usage']}
+                  rows={overlayRows}
+                />
+              </Tab>
+              <Tab label="Inverse">
+                <Table
+                  columns={['Tint', 'Token', 'Value', 'Example usage']}
+                  rows={inverserOverlayRows}
+                />
+              </Tab>
+            </Tabs>
+          </ContentPrimary>
+        </ContentSection>
         <ContentSection sectionName="a11y">
           <ContentPrimary
             id="ally"
