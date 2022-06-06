@@ -42,9 +42,9 @@ export const StyledTooltip = styled.div<
 
 export const StyledPanel = styled(TextBlock)<Pick<TooltipProps, 'overrides'>>`
   ${getStylePreset('tooltip', '')};
-  ${getStylePreset('tooltipPanel', 'panel')};
-  ${getTypographyPreset('tooltipPanel', 'panel')};
-  ${logicalProps('tooltipPanel', 'panel')}
+  ${getStylePreset('tooltip.panel', 'panel')};
+  ${getTypographyPreset('tooltip.panel', 'panel')};
+  ${logicalProps('tooltip.panel', 'panel')}
 `;
 
 export const StyledPointer = styled.div<
@@ -76,7 +76,7 @@ export const StyledPointer = styled.div<
           [staticSide]: `calc(-${size} / 2)`,
         };
       },
-      `tooltipPointer`,
+      `tooltip.pointer`,
       'pointer',
       'size',
     )}
