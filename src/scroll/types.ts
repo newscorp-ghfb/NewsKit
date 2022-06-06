@@ -1,5 +1,6 @@
 import {ButtonOverrides} from '../button';
 import {MQ} from '../utils/style';
+import {LogicalProps} from '../utils/logical-properties';
 
 export interface ScrollProps extends React.HTMLAttributes<HTMLDivElement> {
   vertical?: boolean;
@@ -16,5 +17,5 @@ export interface ScrollProps extends React.HTMLAttributes<HTMLDivElement> {
       stylePreset?: MQ<string>;
       size?: MQ<string>;
     };
-  };
+  } & LogicalProps;
 }

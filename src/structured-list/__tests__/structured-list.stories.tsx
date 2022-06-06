@@ -440,3 +440,28 @@ export const StoryStructuredListAlignment = () => (
   </StructuredList>
 );
 StoryStructuredListAlignment.storyName = 'structured-list-alignment';
+
+export const StoryStructuredListLogicalProps = () => (
+  <>
+    <StorybookHeading>StructuredList</StorybookHeading>
+    <StorybookSubHeading>padding logical props</StorybookSubHeading>
+    <StructuredList
+      ariaLabel="list"
+      overrides={{paddingInline: '50px', paddingBlock: '25px', width: 'unset'}}
+    >
+      {listItemWithThreeCells}
+      {listItemWithThreeCells}
+      {listItemWithThreeCells}
+    </StructuredList>
+    <StorybookSubHeading>margin logical props</StorybookSubHeading>
+    <StructuredList
+      ariaLabel="list"
+      overrides={{marginInline: '50px', marginBlock: '25px', width: 'unset'}}
+    >
+      {listItemWithThreeCells}
+      {listItemWithThreeCells}
+      {listItemWithThreeCells}
+    </StructuredList>
+  </>
+);
+StoryStructuredListLogicalProps.storyName = 'structured-list-logical-props';

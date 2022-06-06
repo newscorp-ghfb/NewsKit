@@ -476,3 +476,27 @@ export const StorySliderWithLabelsBeforeAndAfter = () => (
 );
 StorySliderWithLabelsBeforeAndAfter.storyName =
   'slider-with-labels-before-and-after';
+
+export const StorySliderLogicalProps = () => (
+  <>
+    <StorybookHeading>Padding logical props</StorybookHeading>
+    <ContainerWithBorder>
+      <StatefulSlider
+        values={[50]}
+        max={100}
+        min={0}
+        overrides={{paddingInline: '20px', paddingBlock: '50px'}}
+      />
+    </ContainerWithBorder>
+    <StorybookHeading>Margin logical props</StorybookHeading>
+    <ContainerWithBorder>
+      <StatefulSlider
+        values={[50]}
+        max={100}
+        min={0}
+        overrides={{marginInline: '20px', marginBlock: '50px'}}
+      />
+    </ContainerWithBorder>
+  </>
+);
+StorySliderLogicalProps.storyName = 'slider-logical-props';
