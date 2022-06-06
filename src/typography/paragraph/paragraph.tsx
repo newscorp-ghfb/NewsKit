@@ -34,6 +34,10 @@ export const ParagraphText = withOwnTheme(ThemelessParagraphText)({
   defaults,
 });
 
+/*
+We use this solution instead of css :first-letter since there is Firefox inconsistences,
+which causes the first letter to has less margin than desired.
+*/
 const ThemelessParagraphDropCap = styled.span<ParagraphProps>`
   margin: 0 0.15em 0 0;
   float: left;
