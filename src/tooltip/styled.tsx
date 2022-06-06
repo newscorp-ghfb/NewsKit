@@ -1,20 +1,43 @@
-import {Placement} from '@floating-ui/react-dom-interactions';
+import {Placement, Strategy} from '@floating-ui/react-dom-interactions';
 import {TooltipProps} from './types';
 import {
-  getTypographyPreset,
-  getStylePreset,
-  styled,
-  getResponsiveSpace,
   getResponsiveSize,
+  getResponsiveSpace,
+  getStylePreset,
+  getTypographyPreset,
+  styled,
 } from '../utils/style';
 import {logicalProps} from '../utils/logical-properties';
 import {TextBlock} from '../text-block';
+import {calculateInset} from './utils';
 
-export const StyledTooltip = styled.div<Pick<TooltipProps, 'overrides'>>`
+export const StyledTooltip = styled.div<
+  {
+    strategy: Strategy;
+    placement: Placement;
+    x?: number;
+    y?: number;
+    showPointer: boolean;
+  } & Pick<TooltipProps, 'overrides'>
+>`
   pointer-events: none;
   ${getResponsiveSpace('zIndex', 'tooltip', '', 'zIndex')};
   ${getResponsiveSize('maxWidth', 'tooltip', '', 'maxWidth')};
   ${getResponsiveSize('minWidth', 'tooltip', '', 'minWidth')};
+  ${({x, y, strategy, placement, showPointer}) =>
+    getResponsiveSpace(
+      distance => {
+        const offset = showPointer ? distance : undefined;
+        return {
+          position: strategy,
+          left: calculateInset(x, 'x', offset, placement),
+          top: calculateInset(y, 'y', offset, placement),
+        };
+      },
+      'tooltip',
+      'distance',
+      'distance',
+    )}
 `;
 
 export const StyledPanel = styled(TextBlock)<Pick<TooltipProps, 'overrides'>>`

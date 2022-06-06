@@ -9,7 +9,6 @@ import {
   useDismiss,
   useId,
   arrow,
-  offset,
 } from '@floating-ui/react-dom-interactions';
 import composeRefs from '@seznam/compose-react-refs';
 import {useRef} from 'react';
@@ -19,18 +18,6 @@ import {StyledPanel, StyledPointer, StyledTooltip} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {useControlled} from '../utils/hooks';
-import {useTheme} from '../theme';
-import {getResponsiveSpace, ThemeProp} from '../utils';
-
-const calculateDistance = <Props extends ThemeProp>(props: Props) => {
-  const {distance} = getResponsiveSpace(
-    'distance',
-    'tooltip',
-    'distance',
-    'distance',
-  )(props) as {distance: string};
-  return parseInt(distance.replace('px', ''), 10);
-};
 
 const ThemelessTooltip: React.FC<TooltipProps> = ({
   children,
@@ -49,8 +36,6 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
     defaultValue: Boolean(defaultOpen),
   });
 
-  const theme = useTheme();
-  const distance = calculateDistance({theme, overrides});
   const pointerRef = useRef(null);
   const {
     x,
@@ -65,9 +50,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
     open,
     onOpenChange: setOpen,
     whileElementsMounted: autoUpdate,
-    middleware: showPointer
-      ? [arrow({element: pointerRef}), offset(distance)]
-      : [],
+    middleware: showPointer ? [arrow({element: pointerRef})] : [],
   });
 
   const {getReferenceProps, getFloatingProps} = useInteractions([
@@ -123,13 +106,13 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
             ref: floating,
             id,
             className: 'Tooltip',
-            style: {
-              position: strategy,
-              top: y ?? '',
-              left: x ?? '',
-            },
           })}
+          strategy={strategy}
+          x={x}
+          y={y}
+          placement={placement}
           overrides={overrides}
+          showPointer={showPointer}
           {...props}
         >
           <StyledPanel as={isTitleString ? 'p' : 'div'} overrides={overrides}>

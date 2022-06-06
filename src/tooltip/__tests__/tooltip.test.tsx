@@ -151,17 +151,18 @@ describe('Tooltip', () => {
       });
       expect(asFragment()).toMatchSnapshot();
     });
-    test('with pointer and distance override has offset', async () => {
+    test('with pointer y coordinate', async () => {
       const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
         showPointer: true,
-        overrides: {
-          distance: 'space040',
-        },
+        placement: 'right',
       });
       expect(asFragment()).toMatchSnapshot();
     });
-    test('with no pointer and distance override has no offset', async () => {
+  });
+
+  describe('offset', () => {
+    test('should not be applied with with no pointer', async () => {
       const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
         showPointer: false,
@@ -171,11 +172,45 @@ describe('Tooltip', () => {
       });
       expect(asFragment()).toMatchSnapshot();
     });
-    test('with pointer y coordinate', async () => {
+    test('should be applied with pointer and token distance override', async () => {
       const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
         showPointer: true,
-        placement: 'right',
+        overrides: {
+          distance: 'space040',
+        },
+      });
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('should be applied with pointer and px distance override', async () => {
+      const {asFragment} = await asyncRender(Tooltip, {
+        ...defaultProps,
+        showPointer: true,
+        overrides: {
+          distance: '10px',
+        },
+      });
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('should be applied with pointer and non-px distance override', async () => {
+      const {asFragment} = await asyncRender(Tooltip, {
+        ...defaultProps,
+        showPointer: true,
+        overrides: {
+          distance: '1rem',
+        },
+      });
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('should be applied with pointer and mq distance override', async () => {
+      const {asFragment} = await asyncRender(Tooltip, {
+        ...defaultProps,
+        showPointer: true,
+        overrides: {
+          distance: {
+            xs: 'space060',
+          },
+        },
       });
       expect(asFragment()).toMatchSnapshot();
     });
