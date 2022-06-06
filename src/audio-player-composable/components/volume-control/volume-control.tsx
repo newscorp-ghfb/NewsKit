@@ -60,7 +60,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
                          muteButton`;
   const gridAreas = vertical ? verticalAreas : `muteButton slider`;
   const gridColumns = vertical ? '1fr' : 'auto 1fr';
-  const volumeSliderInstructionId = useReactKeys(1)[0];
+  const [volumeSliderInstructionId] = useReactKeys(1);
 
   return (
     <StyledGridLayout
