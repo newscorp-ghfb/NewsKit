@@ -1,7 +1,7 @@
 import {StylePreset} from '../theme/types';
 
 export default {
-  tooltip: {
+  tooltipPointer: {
     base: {
       backgroundColor: '{{colors.interface060}}',
     },
@@ -10,6 +10,7 @@ export default {
     base: {
       color: '{{colors.inkInverse}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
+      backgroundColor: '{{colors.interface060}}',
     },
   },
 } as Record<string, StylePreset>;

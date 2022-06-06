@@ -41,7 +41,6 @@ export const StyledTooltip = styled.div<
 `;
 
 export const StyledPanel = styled(TextBlock)<Pick<TooltipProps, 'overrides'>>`
-  ${getStylePreset('tooltip', '')};
   ${getStylePreset('tooltip.panel', 'panel')};
   ${getTypographyPreset('tooltip.panel', 'panel')};
   ${logicalProps('tooltip.panel', 'panel')}
@@ -56,7 +55,7 @@ export const StyledPointer = styled.div<
 >`
   position: absolute;
   transform: rotate(45deg);
-  ${getStylePreset('tooltip', '')};
+  ${getStylePreset('tooltip.pointer', 'pointer')};
   ${({placement, x, y}) =>
     getResponsiveSize(
       size => {

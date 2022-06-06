@@ -29,13 +29,14 @@ const myCustomTheme = createTheme({
   name: 'my-custom-modal-theme',
   overrides: {
     stylePresets: {
-      tooltipCustom: {
+      tooltipPointerCustom: {
         base: {
           backgroundColor: '{{colors.red080}}',
         },
       },
       tooltipPanelCustom: {
         base: {
+          backgroundColor: '{{colors.red080}}',
           borderRadius: '{{borders.borderRadiusDefault}}',
           color: '{{colors.inkInverse}}',
         },
@@ -430,7 +431,6 @@ export const StoryTooltipOverrides = () => (
           minWidth: '50px',
           maxWidth: '150px',
           zIndex: 70,
-          stylePreset: 'tooltipCustom',
           distance: 'space080',
           panel: {
             paddingBlock: 'space040',
@@ -439,6 +439,7 @@ export const StoryTooltipOverrides = () => (
             typographyPreset: 'utilityLabel020',
           },
           pointer: {
+            stylePreset: 'tooltipPointerCustom',
             size: 'sizing030',
           },
         }}

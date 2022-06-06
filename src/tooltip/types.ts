@@ -28,6 +28,7 @@ export interface TooltipProps
       typographyPreset?: MQ<string>;
     } & LogicalPaddingProps;
     pointer?: {
+      stylePreset?: MQ<string>;
       size?: MQ<string>;
     };
   };

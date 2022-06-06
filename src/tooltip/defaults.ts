@@ -1,9 +1,9 @@
 export default {
   tooltip: {
     zIndex: 80,
-    stylePreset: 'tooltip',
     distance: 'space020',
     pointer: {
+      stylePreset: 'tooltipPointer',
       size: 'sizing010',
     },
     panel: {
