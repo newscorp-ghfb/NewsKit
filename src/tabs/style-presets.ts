@@ -36,6 +36,7 @@ export default {
       outlineStyle: '{{outline.outlineStyleDefault}}',
       outlineWidth: '{{outline.outlineWidthDefault}}',
       outlineOffset: '-2px',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
     },
   },
   tabsBarTrack: {
@@ -53,7 +54,8 @@ export default {
       outlineColor: '{{outline.outlineColorDefault}}',
       outlineStyle: '{{outline.outlineStyleDefault}}',
       outlineWidth: '{{outline.outlineWidthDefault}}',
-      outlineOffset: '-2px',
+      outlineOffset: '-3px',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
     },
   },
 } as Record<string, StylePreset>;

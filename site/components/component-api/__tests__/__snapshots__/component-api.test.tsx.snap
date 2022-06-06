@@ -1224,7 +1224,15 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: -2px;
+  outline-offset: -3px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-52:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-84 {

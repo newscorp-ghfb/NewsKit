@@ -4365,6 +4365,7 @@ Object {
       "outlineOffset": "{{outline.outlineOffsetDefault}}",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "color": "{{colors.interactivePrimary040}}",
@@ -4398,6 +4399,7 @@ Object {
       "outlineOffset": "{{outline.outlineOffsetDefault}}",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "color": "{{colors.interactiveInverse030}}",
@@ -4430,6 +4432,7 @@ Object {
       "outlineOffset": "{{outline.outlineOffsetDefault}}",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "color": "{{colors.interactivePrimary040}}",
@@ -4453,6 +4456,7 @@ Object {
       "outlineOffset": "{{outline.outlineOffsetDefault}}",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "color": "{{colors.interactiveInverse030}}",
@@ -4483,6 +4487,7 @@ Object {
       "outlineOffset": "{{outline.outlineOffsetDefault}}",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "borderColor": "{{colors.interactivePrimary030}}",
@@ -4523,6 +4528,7 @@ Object {
       "outlineOffset": "{{outline.outlineOffsetDefault}}",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "borderColor": "{{colors.interactiveInverse030}}",
@@ -4563,6 +4569,7 @@ Object {
       "outlineOffset": "{{outline.outlineOffsetDefault}}",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "backgroundColor": "{{colors.interactivePrimary010}}",
@@ -4992,6 +4999,7 @@ Object {
       "outlineOffset": "-2px",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "backgroundColor": "{{colors.interactivePrimary010}}",
@@ -5011,9 +5019,10 @@ Object {
   "tabPanel": Object {
     "focus": Object {
       "outlineColor": "{{outline.outlineColorDefault}}",
-      "outlineOffset": "-2px",
+      "outlineOffset": "-3px",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
   },
   "tabsBarIndicator": Object {
@@ -5044,6 +5053,7 @@ Object {
       "outlineOffset": "{{outline.outlineOffsetDefault}}",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "backgroundColor": "{{colors.interactiveSecondary020}}",
@@ -5067,6 +5077,7 @@ Object {
       "outlineOffset": "{{outline.outlineOffsetDefault}}",
       "outlineStyle": "{{outline.outlineStyleDefault}}",
       "outlineWidth": "{{outline.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
     },
     "hover": Object {
       "backgroundColor": "{{colors.interactiveInverse010}}",

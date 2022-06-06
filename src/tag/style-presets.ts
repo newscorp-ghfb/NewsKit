@@ -22,6 +22,7 @@ export default {
       outlineStyle: '{{outline.outlineStyleDefault}}',
       outlineWidth: '{{outline.outlineWidthDefault}}',
       outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
     },
   },
   tagPrimaryInverse: {
@@ -45,6 +46,7 @@ export default {
       outlineStyle: '{{outline.outlineStyleDefault}}',
       outlineWidth: '{{outline.outlineWidthDefault}}',
       outlineOffset: '{{outline.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
     },
   },
 } as Record<string, StylePreset>;

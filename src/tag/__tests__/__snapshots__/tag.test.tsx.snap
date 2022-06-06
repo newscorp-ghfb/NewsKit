@@ -60,6 +60,14 @@ exports[`Tag href renders as an anchor 1`] = `
   outline-offset: 2px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -209,6 +217,14 @@ exports[`Tag href renders as an anchor and user can pass anchor attributes 1`] =
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -362,6 +378,14 @@ exports[`Tag href renders in disable state as a div 1`] = `
   outline-offset: 2px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -510,6 +534,14 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -661,6 +693,14 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
   outline-offset: 2px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -808,6 +848,14 @@ exports[`Tag renders a tag with an icon 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1009,6 +1057,14 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   outline-offset: 2px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -1206,6 +1262,14 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1408,6 +1472,14 @@ exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
   outline-offset: 2px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -1556,6 +1628,14 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1709,6 +1789,14 @@ exports[`Tag renders a tag with logical props overrides 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1910,6 +1998,14 @@ exports[`Tag renders a tag with no paddings 1`] = `
   outline-offset: 2px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -2058,6 +2154,14 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2210,6 +2314,14 @@ exports[`Tag renders a tag with percentage for width and height 1`] = `
   outline-offset: 2px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -2358,6 +2470,14 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2510,6 +2630,14 @@ exports[`Tag renders a tag with token set for width and height 1`] = `
   outline-offset: 2px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -2657,6 +2785,14 @@ exports[`Tag renders in disabled state 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2809,6 +2945,14 @@ exports[`Tag renders with Large size 1`] = `
   outline-offset: 2px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -2956,6 +3100,14 @@ exports[`Tag renders with Medium size 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3107,6 +3259,14 @@ exports[`Tag renders with Small size 1`] = `
   outline-offset: 2px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -3256,6 +3416,14 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
   outline-offset: 2px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
     transition-property: background-color;
@@ -3403,6 +3571,14 @@ exports[`Tag renders with default styles 1`] = `
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

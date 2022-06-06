@@ -158,6 +158,14 @@ exports[`UnorderedList renders different types of children 1`] = `
   outline-offset: 2px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
