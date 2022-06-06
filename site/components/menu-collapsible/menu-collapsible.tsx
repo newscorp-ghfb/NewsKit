@@ -56,7 +56,7 @@ export const MenuMobileCollapsible = ({
             {page ? (
               <>
                 <MenuItem
-                  href={id.replace('/', '')}
+                  href={id}
                   selected={path.includes(id)}
                   overrides={{
                     minHeight: '40px',
