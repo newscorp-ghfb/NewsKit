@@ -6,6 +6,7 @@ import {LegacyBlock} from '../../components/legacy-block';
 import {CodeFromDefaultPresets} from '../../components/code';
 import {Tag, TagSize} from 'newskit';
 import {InverseTheme} from '../../components/inverse-theme';
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
 export default Layout;
 
@@ -53,7 +54,7 @@ Tags have a number of props to facilitate a variety of uses:
     <Prop name="stylePreset" type="MQ<string>">
       If provided, this overrides the style preset applied to the Tag.
     </Prop>
-     <Prop name="transitionPreset" type="TransitionToken | TransitionToken[]">
+    <Prop name="transitionPreset" type="TransitionToken | TransitionToken[]">
       If provided, this overrides the transition preset applied to the Tag.
     </Prop>
     <Prop name="typographyPreset" type="MQ<string>">
@@ -100,6 +101,7 @@ Tags have a number of props to facilitate a variety of uses:
       If provided, this sets a maximum width to the Tag. This can be a sizing
       token from the theme, or any CSS length value.
     </Prop>
+    <CommonLogicalPropsMDX nested />
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="tag" />
   </Prop>

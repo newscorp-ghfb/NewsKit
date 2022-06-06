@@ -21,6 +21,9 @@ import {
 const themeRouteList: Item[] =
   routes.filter(route => route.title === 'Theme')[0].subNav || [];
 
+const themeFoundationRouteList: Item[] =
+  themeRouteList.filter(route => route.title === 'Foundations')[0].subNav || [];
+
 const themePresetsRouteList: Item[] =
   themeRouteList.filter(route => route.title === 'Presets')[0].subNav || [];
 
@@ -41,7 +44,7 @@ const getCardList = (routeList: Item[]) =>
       description,
     })) as MediaItem[];
 
-const themeOverviewRouteListCards = getCardList(themeRouteList);
+const themeFoundationRouteListCards = getCardList(themeFoundationRouteList);
 const themePresetsRouteListCards = getCardList(themePresetsRouteList);
 const themeThemingRouteListCards = getCardList(themeThemingRouteList);
 
@@ -77,7 +80,7 @@ const Overview = (layoutProps: LayoutProps) => {
                   breakpoints, colours, fonts, motion, shadows, sizing and space."
                 >
                   <MediaList
-                    cards={themeOverviewRouteListCards}
+                    cards={themeFoundationRouteListCards}
                     gridProps={{xsRowGutter: 'space050'}}
                   />
                 </ContentPrimary>

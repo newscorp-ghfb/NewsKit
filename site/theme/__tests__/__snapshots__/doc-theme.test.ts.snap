@@ -791,6 +791,17 @@ Object {
         "borderStyle": "none",
       },
     },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
     "buttonSolidInverse010": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -1243,17 +1254,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -1420,6 +1442,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -1435,22 +1478,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -2990,6 +3025,17 @@ Object {
         "borderStyle": "none",
       },
     },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
     "buttonSolidInverse010": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -3442,17 +3488,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -3619,6 +3676,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -3634,22 +3712,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -5189,6 +5259,17 @@ Object {
         "borderStyle": "none",
       },
     },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
     "buttonSolidInverse010": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -5641,17 +5722,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -5818,6 +5910,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -5833,22 +5946,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -7388,6 +7493,17 @@ Object {
         "borderStyle": "none",
       },
     },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
     "buttonSolidInverse010": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -7840,17 +7956,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -8017,6 +8144,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -8032,22 +8180,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -9587,6 +9727,17 @@ Object {
         "borderStyle": "none",
       },
     },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
     "buttonSolidInverse010": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -10039,17 +10190,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -10216,6 +10378,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -10231,22 +10414,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -11786,6 +11961,17 @@ Object {
         "borderStyle": "none",
       },
     },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
     "buttonSolidInverse010": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -12238,17 +12424,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -12415,6 +12612,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -12430,22 +12648,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -13985,6 +14195,17 @@ Object {
         "borderStyle": "none",
       },
     },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
     "buttonSolidInverse010": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -14437,17 +14658,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -14614,6 +14846,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -14629,22 +14882,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -16184,6 +16429,17 @@ Object {
         "borderStyle": "none",
       },
     },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
     "buttonSolidInverse010": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -16636,17 +16892,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -16813,6 +17080,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -16828,22 +17116,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
