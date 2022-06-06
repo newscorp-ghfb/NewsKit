@@ -92,26 +92,32 @@ exports[`Accordion renders as a h4 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
   text-align: start;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
+.emotion-7 {
+  color: #2E2E2E;
+}
+
+.emotion-7 svg {
+  fill: #2E2E2E;
+}
+
 .emotion-11 {
+  visibility: visible;
+  height: auto;
+}
+
+.emotion-12 {
   border-color: #CCCCCC;
   border-width: 1px;
   border-style: solid;
 }
 
-.emotion-12 {
+.emotion-13 {
   border-style: solid;
   border-color: #DEDEDE;
   border-width: 1px;
@@ -121,7 +127,7 @@ exports[`Accordion renders as a h4 1`] = `
   width: 100%;
 }
 
-.emotion-13 {
+.emotion-14 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -136,10 +142,10 @@ exports[`Accordion renders as a h4 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1"
+        aria-controls="mock-nk-1-content"
         aria-expanded="true"
         class="emotion-2"
-        id="mock-nk-1"
+        id="mock-nk-1-header"
       >
         <div
           class="emotion-3"
@@ -192,7 +198,7 @@ exports[`Accordion renders as a h4 1`] = `
           Header
         </div>
         <div
-          class="emotion-3"
+          class="emotion-7"
         >
           Label
         </div>
@@ -221,23 +227,27 @@ exports[`Accordion renders as a h4 1`] = `
     <div
       class="emotion-11"
     >
-      <hr
-        aria-hidden="true"
+      <div
         class="emotion-12"
-        data-testid="divider"
-      />
-    </div>
-    <div
-      aria-labelledby="mock-nk-1"
-      class="emotion-13"
-      id="mock-nk-1"
-      role="region"
-    >
-      <p
-        class="emotion-1"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <hr
+          aria-hidden="true"
+          class="emotion-13"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        aria-labelledby="mock-nk-1-header"
+        class="emotion-14"
+        id="mock-nk-1-content"
+        role="region"
+      >
+        <p
+          class="emotion-1"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -335,17 +345,47 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
   text-align: start;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+.emotion-7 {
+  color: #2E2E2E;
+}
+
+.emotion-7 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-11 {
+  visibility: hidden;
+  height: 0px;
+}
+
+.emotion-12 {
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.emotion-13 {
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+.emotion-14 {
+  border-style: none none solid none;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div
@@ -355,10 +395,10 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1"
+        aria-controls="mock-nk-1-content"
         aria-expanded="false"
         class="emotion-2"
-        id="mock-nk-1"
+        id="mock-nk-1-header"
       >
         <div
           class="emotion-3"
@@ -411,7 +451,7 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
           Header
         </div>
         <div
-          class="emotion-3"
+          class="emotion-7"
         >
           Label
         </div>
@@ -437,6 +477,31 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
         </div>
       </button>
     </h3>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-12"
+      >
+        <hr
+          aria-hidden="true"
+          class="emotion-13"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        aria-labelledby="mock-nk-1-header"
+        class="emotion-14"
+        id="mock-nk-1-content"
+        role="region"
+      >
+        <p
+          class="emotion-1"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -488,13 +553,6 @@ exports[`Accordion renders with default props 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
   text-align: start;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -502,18 +560,40 @@ exports[`Accordion renders with default props 1`] = `
 }
 
 .emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
   color: #2E2E2E;
 }
 
 .emotion-4 svg {
   fill: #2E2E2E;
+}
+
+.emotion-5 {
+  visibility: hidden;
+  height: 0px;
+}
+
+.emotion-6 {
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.emotion-7 {
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+.emotion-8 {
+  border-style: none none solid none;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div
@@ -523,9 +603,9 @@ exports[`Accordion renders with default props 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1"
+        aria-controls="mock-nk-1-content"
         class="emotion-2"
-        id="mock-nk-1"
+        id="mock-nk-1-header"
       >
         <div
           class="emotion-3"
@@ -539,6 +619,31 @@ exports[`Accordion renders with default props 1`] = `
         </div>
       </button>
     </h3>
+    <div
+      class="emotion-5"
+    >
+      <div
+        class="emotion-6"
+      >
+        <hr
+          aria-hidden="true"
+          class="emotion-7"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        aria-labelledby="mock-nk-1-header"
+        class="emotion-8"
+        id="mock-nk-1-content"
+        role="region"
+      >
+        <p
+          class="emotion-1"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -635,17 +740,47 @@ exports[`Accordion renders with disabled state 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
   text-align: start;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+.emotion-7 {
+  color: #2E2E2E;
+}
+
+.emotion-7 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-11 {
+  visibility: hidden;
+  height: 0px;
+}
+
+.emotion-12 {
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.emotion-13 {
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+.emotion-14 {
+  border-style: none none solid none;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div
@@ -655,10 +790,10 @@ exports[`Accordion renders with disabled state 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1"
+        aria-controls="mock-nk-1-content"
         class="emotion-2"
         disabled=""
-        id="mock-nk-1"
+        id="mock-nk-1-header"
       >
         <div
           class="emotion-3"
@@ -711,7 +846,7 @@ exports[`Accordion renders with disabled state 1`] = `
           Header
         </div>
         <div
-          class="emotion-3"
+          class="emotion-7"
         >
           Label
         </div>
@@ -737,6 +872,31 @@ exports[`Accordion renders with disabled state 1`] = `
         </div>
       </button>
     </h3>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-12"
+      >
+        <hr
+          aria-hidden="true"
+          class="emotion-13"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        aria-labelledby="mock-nk-1-header"
+        class="emotion-14"
+        id="mock-nk-1-content"
+        role="region"
+      >
+        <p
+          class="emotion-1"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -833,26 +993,32 @@ exports[`Accordion renders with expanded state and icon 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
   text-align: start;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
+.emotion-7 {
+  color: #2E2E2E;
+}
+
+.emotion-7 svg {
+  fill: #2E2E2E;
+}
+
 .emotion-11 {
+  visibility: visible;
+  height: auto;
+}
+
+.emotion-12 {
   border-color: #CCCCCC;
   border-width: 1px;
   border-style: solid;
 }
 
-.emotion-12 {
+.emotion-13 {
   border-style: solid;
   border-color: #DEDEDE;
   border-width: 1px;
@@ -862,7 +1028,7 @@ exports[`Accordion renders with expanded state and icon 1`] = `
   width: 100%;
 }
 
-.emotion-13 {
+.emotion-14 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -877,10 +1043,10 @@ exports[`Accordion renders with expanded state and icon 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1"
+        aria-controls="mock-nk-1-content"
         aria-expanded="true"
         class="emotion-2"
-        id="mock-nk-1"
+        id="mock-nk-1-header"
       >
         <div
           class="emotion-3"
@@ -933,7 +1099,7 @@ exports[`Accordion renders with expanded state and icon 1`] = `
           Header
         </div>
         <div
-          class="emotion-3"
+          class="emotion-7"
         >
           Label
         </div>
@@ -962,23 +1128,27 @@ exports[`Accordion renders with expanded state and icon 1`] = `
     <div
       class="emotion-11"
     >
-      <hr
-        aria-hidden="true"
+      <div
         class="emotion-12"
-        data-testid="divider"
-      />
-    </div>
-    <div
-      aria-labelledby="mock-nk-1"
-      class="emotion-13"
-      id="mock-nk-1"
-      role="region"
-    >
-      <p
-        class="emotion-1"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <hr
+          aria-hidden="true"
+          class="emotion-13"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        aria-labelledby="mock-nk-1-header"
+        class="emotion-14"
+        id="mock-nk-1-content"
+        role="region"
+      >
+        <p
+          class="emotion-1"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -1076,20 +1246,26 @@ exports[`Accordion renders with no divider 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
   text-align: start;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
+.emotion-7 {
+  color: #2E2E2E;
+}
+
+.emotion-7 svg {
+  fill: #2E2E2E;
+}
+
 .emotion-11 {
+  visibility: visible;
+  height: auto;
+}
+
+.emotion-12 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -1104,10 +1280,10 @@ exports[`Accordion renders with no divider 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1"
+        aria-controls="mock-nk-1-content"
         aria-expanded="true"
         class="emotion-2"
-        id="mock-nk-1"
+        id="mock-nk-1-header"
       >
         <div
           class="emotion-3"
@@ -1160,7 +1336,7 @@ exports[`Accordion renders with no divider 1`] = `
           Header
         </div>
         <div
-          class="emotion-3"
+          class="emotion-7"
         >
           Label
         </div>
@@ -1187,16 +1363,20 @@ exports[`Accordion renders with no divider 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1"
       class="emotion-11"
-      id="mock-nk-1"
-      role="region"
     >
-      <p
-        class="emotion-1"
+      <div
+        aria-labelledby="mock-nk-1-header"
+        class="emotion-12"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-1"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -1251,13 +1431,6 @@ exports[`Accordion renders with overrides 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
   text-align: start;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1265,13 +1438,6 @@ exports[`Accordion renders with overrides 1`] = `
 }
 
 .emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
   color: #0A782A;
 }
 
@@ -1280,12 +1446,17 @@ exports[`Accordion renders with overrides 1`] = `
 }
 
 .emotion-5 {
+  visibility: visible;
+  height: auto;
+}
+
+.emotion-6 {
   border-color: #f7aef8;
   border-width: 4px;
   border-style: solid;
 }
 
-.emotion-6 {
+.emotion-7 {
   border-color: #f7aef8;
   border-width: 4px;
   border-style: solid;
@@ -1295,7 +1466,7 @@ exports[`Accordion renders with overrides 1`] = `
   width: 100%;
 }
 
-.emotion-7 {
+.emotion-8 {
   border-style: none none dotted none;
   border-color: #fb8500;
   border-width: 4px;
@@ -1310,10 +1481,10 @@ exports[`Accordion renders with overrides 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1"
+        aria-controls="mock-nk-1-content"
         aria-expanded="true"
         class="emotion-2"
-        id="mock-nk-1"
+        id="mock-nk-1-header"
       >
         <div
           class="emotion-3"
@@ -1330,23 +1501,27 @@ exports[`Accordion renders with overrides 1`] = `
     <div
       class="emotion-5"
     >
-      <hr
-        aria-hidden="true"
+      <div
         class="emotion-6"
-        data-testid="divider"
-      />
-    </div>
-    <div
-      aria-labelledby="mock-nk-1"
-      class="emotion-7"
-      id="mock-nk-1"
-      role="region"
-    >
-      <p
-        class="emotion-1"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <hr
+          aria-hidden="true"
+          class="emotion-7"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        aria-labelledby="mock-nk-1-header"
+        class="emotion-8"
+        id="mock-nk-1-content"
+        role="region"
+      >
+        <p
+          class="emotion-1"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -1444,17 +1619,47 @@ exports[`Accordion renders with startEnhancer 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
   text-align: start;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+.emotion-7 {
+  color: #2E2E2E;
+}
+
+.emotion-7 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-8 {
+  visibility: hidden;
+  height: 0px;
+}
+
+.emotion-9 {
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.emotion-10 {
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+.emotion-11 {
+  border-style: none none solid none;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div
@@ -1464,9 +1669,9 @@ exports[`Accordion renders with startEnhancer 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1"
+        aria-controls="mock-nk-1-content"
         class="emotion-2"
-        id="mock-nk-1"
+        id="mock-nk-1-header"
       >
         <div
           class="emotion-3"
@@ -1519,12 +1724,37 @@ exports[`Accordion renders with startEnhancer 1`] = `
           Header
         </div>
         <div
-          class="emotion-3"
+          class="emotion-7"
         >
           Label
         </div>
       </button>
     </h3>
+    <div
+      class="emotion-8"
+    >
+      <div
+        class="emotion-9"
+      >
+        <hr
+          aria-hidden="true"
+          class="emotion-10"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        aria-labelledby="mock-nk-1-header"
+        class="emotion-11"
+        id="mock-nk-1-content"
+        role="region"
+      >
+        <p
+          class="emotion-1"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;

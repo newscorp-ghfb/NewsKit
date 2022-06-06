@@ -43,8 +43,6 @@ export const StyledEnhancer = styled.div<Pick<AccordionProps, 'overrides'>>`
 `;
 
 export const StyledHeader = styled.div`
-  display: flex;
-  align-self: center;
   text-align: start;
   flex: 1;
 `;
@@ -52,8 +50,6 @@ export const StyledHeader = styled.div`
 export const StyledIndicatorLabel = styled.div<
   Pick<AccordionProps, 'overrides'>
 >`
-  display: flex;
-  align-self: center;
   ${getStylePreset('accordion.header.indicatorLabel', 'header.indicatorLabel')};
 `;
 
@@ -73,4 +69,9 @@ export const StyledDividerWrapper = styled.div<
 export const StyledPanel = styled.div<Pick<AccordionProps, 'overrides'>>`
   ${getStylePreset('accordion.panel', 'panel')};
   ${logicalProps('accordion.panel', 'panel')}
+`;
+
+export const StyledPanelWrapper = styled.div<Pick<AccordionProps, 'expanded'>>`
+  visibility: ${({expanded}) => (expanded ? 'visible' : 'hidden')};
+  height: ${({expanded}) => (expanded ? 'auto' : '0px')};
 `;

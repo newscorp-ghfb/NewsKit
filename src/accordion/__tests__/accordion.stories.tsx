@@ -18,7 +18,7 @@ const myCustomAccordionTheme = createTheme({
     stylePresets: {
       accordionHeaderCustom: {
         base: {
-          backgroundColor: '#90e0ef',
+          backgroundColor: '#7FFFD4',
           color: 'black',
           borderStyle: 'none none solid none',
           borderColor: '#6a040f',
@@ -61,31 +61,9 @@ export const StoryAccordion = () => (
     <StorybookHeading>Accordion</StorybookHeading>
     <StorybookSubHeading>Expanded</StorybookSubHeading>
     <Accordion
-      header="Header"
-      label="Label"
+      header="Header1"
+      label="Label1"
       expanded
-      startEnhancer={
-        <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
-      }
-      indicatorIcon={
-        <IconFilledExpandMore
-          overrides={{
-            size: 'iconSize020',
-          }}
-        />
-      }
-    >
-      <TextBlock>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </TextBlock>
-    </Accordion>
-    <br />
-    <br />
-    <StorybookSubHeading>Collapsed</StorybookSubHeading>
-    <Accordion
-      header="Header"
-      label="Label"
       startEnhancer={
         <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
       }
@@ -104,11 +82,35 @@ export const StoryAccordion = () => (
     </Accordion>
     <br />
     <br />
+    <StorybookSubHeading>Collapsed</StorybookSubHeading>
+    <Accordion
+      header="Header2"
+      label="Label2"
+      expanded={false}
+      startEnhancer={
+        <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
+      }
+      indicatorIcon={
+        <IconFilledExpandMore
+          overrides={{
+            size: 'iconSize020',
+          }}
+        />
+      }
+    >
+      <TextBlock>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        malesuada lacus ex, sit amet blandit leo lobortis eget.
+      </TextBlock>
+    </Accordion>
+    <br />
+    <br />
     <StorybookSubHeading>Disabled</StorybookSubHeading>
     <Accordion
-      header="Header"
+      header="Header3"
       disabled
-      label="Label"
+      expanded={false}
+      label="Label3"
       startEnhancer={
         <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
       }
@@ -129,8 +131,7 @@ export const StoryAccordion = () => (
     <StorybookSubHeading>HeaderText & IndicatorIcon</StorybookSubHeading>
     <div>
       <Accordion
-        headingAs="h4"
-        header="Header"
+        header="Header4"
         indicatorIcon={
           <IconFilledExpandLess
             overrides={{
@@ -145,7 +146,7 @@ export const StoryAccordion = () => (
         </TextBlock>
       </Accordion>
       <Accordion
-        header="Header"
+        header="Header5"
         indicatorIcon={
           <IconFilledExpandLess
             overrides={{
@@ -182,7 +183,6 @@ export const StoryAccordionOverrides = () => (
           header: {
             minWidth: 'sizing050',
             minHeight: 'sizing060',
-            // paddingInlineStart: 'space050',
             stylePreset: 'accordionHeaderCustom',
             typographyPreset: 'utilityButton020',
             spaceInline: 'space030',
