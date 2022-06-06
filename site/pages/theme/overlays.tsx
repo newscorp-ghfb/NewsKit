@@ -1,5 +1,5 @@
 import React from 'react';
-import {newskitLightTheme} from 'newskit';
+import {newskitLightTheme, Tab, Tabs} from 'newskit';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
@@ -28,14 +28,29 @@ const DO_AND_DONT = [
   },
 ];
 
+const usageString = 'Creative use case';
+const internalOverlay =
+  'Internal overlay component that sits behind the panels (used by modals and drawers)';
+
 const overlayRows = getTokenType(
   newskitLightTheme.overlays,
   'overlayTintBase',
 ).map(({tokenName, tokenValue}) => ({
   value: tokenValue,
-  overlay: tokenValue as string,
+  overlay: tokenName as string,
   token: tokenName,
-  exampleUsage: '',
+  exampleUsage:
+    tokenName === 'overlayTintBase040' ? internalOverlay : usageString,
+})) as TableRow[];
+
+const inverserOverlayRows = getTokenType(
+  newskitLightTheme.overlays,
+  'overlayTintInverse',
+).map(({tokenName, tokenValue}) => ({
+  value: tokenValue,
+  overlay: tokenName as string,
+  token: tokenName,
+  exampleUsage: usageString,
 })) as TableRow[];
 
 const Overlays = (layoutProps: LayoutProps) => (
@@ -64,10 +79,20 @@ const Overlays = (layoutProps: LayoutProps) => (
           headline="Overview"
           description="Tints make colours in a UI more or less intense by aiding legibility contrast between the foreground and background elements. "
         >
-          <Table
-            columns={['Overlay', 'Token', 'Value', 'Example usage']}
-            rows={overlayRows}
-          />
+          <Tabs size="medium">
+            <Tab label="Base">
+              <Table
+                columns={['Overlay', 'Token', 'Value', 'Example usage']}
+                rows={overlayRows}
+              />
+            </Tab>
+            <Tab label="Inverse">
+              <Table
+                columns={['Overlay', 'Token', 'Value', 'Example usage']}
+                rows={inverserOverlayRows}
+              />
+            </Tab>
+          </Tabs>
         </ContentPrimary>
 
         {/* <ContentSecondary
