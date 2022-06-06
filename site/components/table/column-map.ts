@@ -49,6 +49,7 @@ export const columnMap: Record<string, ColumnMapObject> = {
   Timing: {...large, cellType: 'motionTimingSwatch'},
   Shadow: {...medium, cellType: 'boxShadow'},
   Overlay: {...medium, cellType: 'boxOverlay'},
+  Gradient: {...medium, cellType: 'boxGradient'},
   'Font family': {...medium, cellType: 'text'},
   'Font size': {
     ...xxlarge,

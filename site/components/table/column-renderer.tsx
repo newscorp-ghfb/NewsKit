@@ -227,6 +227,13 @@ export const renderCols = (
         break;
       }
 
+      case 'boxGradient': {
+        cellContent = cellValue && (
+          <OverlayCards gradientToken={cellValue.toString()} />
+        );
+        break;
+      }
+
       case 'sizeBox': {
         cellContent = cellValue && <SizeBox sideLength={cellValue as string} />;
         break;

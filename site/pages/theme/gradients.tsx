@@ -1,29 +1,24 @@
 import React from 'react';
-// import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-// import {UsageKind} from '../../components/usage-card';
+import {getTokenType} from '../../utils/get-token-type';
+import {
+  ContentPrimary,
+  ContentSection,
+} from '../../components/content-structure';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {LayoutProps} from '../../components/layout';
-// import {MediaList} from '../../components/media-list';
-// import {
-//   ContentPrimary,
-//   ContentSection,
-// } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
+import {Tab, Tabs} from '../../../src/tabs';
+import {Table, TableRow} from '../../components/table';
+import {newskitLightTheme} from '../../../src/theme';
 
-// const DO_AND_DONT = [
-//   {
-//     description:
-//       'Overlay contrasts should be distinct and clear. They can be used to obscure page content and emphasise an element for greater legibility. I.e. the Modal.',
-//     kind: UsageKind.DO,
-//     media: getIllustrationComponent('theme/overlays/do'),
-//   },
-//   {
-//     description:
-//       'Ensure overlays used do not obscure the legibility of important UI elements like text and icons, and contrasts are distinct and clear.',
-//     kind: UsageKind.DONT,
-//     media: getIllustrationComponent('theme/overlays/dont'),
-//   },
-// ];
+const baseGradientRows = getTokenType(
+  newskitLightTheme.overlays,
+  'overlayGradientBase',
+).map(({tokenName, tokenValue}) => ({
+  value: tokenValue,
+  gradient: tokenName as string,
+  token: tokenName,
+})) as TableRow[];
 
 const Gradients = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
@@ -43,7 +38,33 @@ const Gradients = (layoutProps: LayoutProps) => (
         "Gradients Base gradient tokens are used to fade elements into the interface background. 'Inverse' gradient tokens are used to fade elements into a dark background in a light theme.",
     }}
   >
-    <ComponentPageCell />
+    <ComponentPageCell>
+      <ContentSection sectionName="Overview">
+        <ContentPrimary
+          id="Overview"
+          toc="Overview"
+          headline="Overview"
+          description={`Gradient foundations consist of both ‘base’ styles
+(these are dark when used in a light theme and inverse)
+styles (these are light when used in a dark theme)`}
+        >
+          <Tabs size="medium">
+            <Tab label="Base">
+              <Table
+                columns={['Gradient', 'Token', 'Value']}
+                rows={baseGradientRows}
+              />
+            </Tab>
+            <Tab label="Inverse">
+              <Table
+                columns={['Gradient', 'Token', 'Value']}
+                rows={baseGradientRows}
+              />
+            </Tab>
+          </Tabs>
+        </ContentPrimary>
+      </ContentSection>
+    </ComponentPageCell>
   </FoundationPageTemplate>
 );
 
