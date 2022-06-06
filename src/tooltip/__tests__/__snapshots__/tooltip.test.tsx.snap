@@ -28,7 +28,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
     class="Tooltip emotion-0"
     id="floating-ui-2"
     role="tooltip"
-    style="position: absolute;"
+    style="position: absolute; top: 0px; left: 0px;"
     tabindex="-1"
   >
     hello
@@ -64,7 +64,7 @@ exports[`Tooltip should render correct styles: with no pointer and distance over
     class="Tooltip emotion-0"
     id="floating-ui-26"
     role="tooltip"
-    style="position: absolute;"
+    style="position: absolute; top: 0px; left: 0px;"
     tabindex="-1"
   >
     hello
@@ -102,7 +102,7 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
     class="Tooltip emotion-0"
     id="floating-ui-11"
     role="tooltip"
-    style="position: absolute;"
+    style="position: absolute; top: 0px; left: 0px;"
     tabindex="-1"
   >
     hello
@@ -143,6 +143,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
   background-color: #0A0A0A;
   width: 4px;
   height: 4px;
+  left: 0px;
   bottom: calc(-4px / 2);
 }
 
@@ -150,12 +151,13 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
     class="Tooltip emotion-0"
     id="floating-ui-14"
     role="tooltip"
-    style="position: absolute;"
+    style="position: absolute; top: -8px; left: 0px;"
     tabindex="-1"
   >
     <div
       class="emotion-1"
       id="floating-ui-14-pointer"
+      x="0"
     />
     hello
   </div>
@@ -195,6 +197,7 @@ exports[`Tooltip should render correct styles: with pointer and distance overrid
   background-color: #0A0A0A;
   width: 4px;
   height: 4px;
+  left: 0px;
   bottom: calc(-4px / 2);
 }
 
@@ -202,12 +205,13 @@ exports[`Tooltip should render correct styles: with pointer and distance overrid
     class="Tooltip emotion-0"
     id="floating-ui-23"
     role="tooltip"
-    style="position: absolute;"
+    style="position: absolute; top: -16px; left: 0px;"
     tabindex="-1"
   >
     <div
       class="emotion-1"
       id="floating-ui-23-pointer"
+      x="0"
     />
     hello
   </div>
@@ -247,6 +251,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
   background-color: #0A0A0A;
   width: 16px;
   height: 16px;
+  left: 0px;
   bottom: calc(-16px / 2);
 }
 
@@ -254,12 +259,13 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
     class="Tooltip emotion-0"
     id="floating-ui-20"
     role="tooltip"
-    style="position: absolute;"
+    style="position: absolute; top: -8px; left: 0px;"
     tabindex="-1"
   >
     <div
       class="emotion-1"
       id="floating-ui-20-pointer"
+      x="0"
     />
     hello
   </div>
@@ -299,6 +305,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
   background-color: #A60100;
   width: 4px;
   height: 4px;
+  left: 0px;
   bottom: calc(-4px / 2);
 }
 
@@ -306,12 +313,13 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
     class="Tooltip emotion-0"
     id="floating-ui-17"
     role="tooltip"
-    style="position: absolute;"
+    style="position: absolute; top: -8px; left: 0px;"
     tabindex="-1"
   >
     <div
       class="emotion-1"
       id="floating-ui-17-pointer"
+      x="0"
     />
     hello
   </div>
@@ -352,18 +360,20 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
   width: 4px;
   height: 4px;
   left: calc(-4px / 2);
+  top: 0px;
 }
 
 <div
     class="Tooltip emotion-0"
     id="floating-ui-29"
     role="tooltip"
-    style="position: absolute;"
+    style="position: absolute; top: 0px; left: 8px;"
     tabindex="-1"
   >
     <div
       class="emotion-1"
       id="floating-ui-29-pointer"
+      y="0"
     />
     hello
   </div>

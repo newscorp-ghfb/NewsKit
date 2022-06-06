@@ -1,10 +1,25 @@
 import React from 'react';
-import {fireEvent} from '@testing-library/react';
+import {fireEvent, act, RenderOptions} from '@testing-library/react';
 import {renderWithTheme} from '../../test/test-utils';
 import {Tooltip, TooltipProps} from '..';
 import {TriggerType} from '../types';
 import {Button} from '../../button';
-import {createTheme} from '../../theme';
+import {createTheme, ThemeProviderProps} from '../../theme';
+
+// The tooltip's inset styling is applied asynchronously. To make assertions on
+// the top / left attribute values, we need to flush the queue to ensure that
+// the element has been positioned before making assertions on snapshots.
+// See https://floating-ui.com/docs/react-dom#testing for more info.
+const asyncRender = async <T extends {}>(
+  Component: React.ComponentType<T>,
+  props?: T & {children?: React.ReactNode},
+  theme?: ThemeProviderProps['theme'],
+  options?: Omit<RenderOptions, 'wrapper'>,
+) => {
+  const res = await renderWithTheme(Component, props, theme, options);
+  await act(async () => {});
+  return res;
+};
 
 describe('Tooltip', () => {
   const defaultProps: TooltipProps = {
@@ -14,7 +29,7 @@ describe('Tooltip', () => {
     showPointer: false,
   };
 
-  // Mocking ResizeObserver
+  // ResizeObserver is not implemented by JSDom but is needed by the lib
   const mockResizeObserver = jest.fn(() => ({
     observe: jest.fn(),
     disconnect: jest.fn(),
@@ -26,8 +41,8 @@ describe('Tooltip', () => {
   });
 
   describe('should render correct styles:', () => {
-    test('default', () => {
-      const {getByRole, asFragment} = renderWithTheme(Tooltip, defaultProps);
+    test('default', async () => {
+      const {getByRole, asFragment} = await asyncRender(Tooltip, defaultProps);
       expect(getByRole('tooltip').textContent).toBe('hello');
       expect(getByRole('tooltip')).toHaveStyle({
         position: 'absolute',
@@ -41,17 +56,17 @@ describe('Tooltip', () => {
       });
       expect(queryByRole('tooltip')).not.toBeInTheDocument();
     });
-    // Cannot test the exact position with unit tests but will be covered in visual tests
-    test('with different placement', () => {
-      const {getByRole} = renderWithTheme(Tooltip, {
+    test('with different placement', async () => {
+      const {getByRole} = await asyncRender(Tooltip, {
         ...defaultProps,
         placement: 'bottom',
       });
+      await act(async () => {});
       expect(getByRole('tooltip')).toHaveStyle({
         position: 'absolute',
       });
     });
-    test('with overrides', () => {
+    test('with overrides', async () => {
       const myCustomTheme = createTheme({
         name: 'my-custom-tooltip-theme',
         overrides: {
@@ -70,7 +85,7 @@ describe('Tooltip', () => {
           },
         },
       });
-      const {asFragment} = renderWithTheme(
+      const {asFragment} = await asyncRender(
         Tooltip,
         {
           ...defaultProps,
@@ -91,14 +106,14 @@ describe('Tooltip', () => {
       );
       expect(asFragment()).toMatchSnapshot();
     });
-    test('with pointer', () => {
-      const {asFragment} = renderWithTheme(Tooltip, {
+    test('with pointer', async () => {
+      const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
         showPointer: true,
       });
       expect(asFragment()).toMatchSnapshot();
     });
-    test('with pointer stylePreset overrides', () => {
+    test('with pointer stylePreset overrides', async () => {
       const myCustomTheme = createTheme({
         name: 'my-custom-tooltip-theme',
         overrides: {
@@ -111,7 +126,7 @@ describe('Tooltip', () => {
           },
         },
       });
-      const {asFragment} = renderWithTheme(
+      const {asFragment} = await asyncRender(
         Tooltip,
         {
           ...defaultProps,
@@ -124,8 +139,8 @@ describe('Tooltip', () => {
       );
       expect(asFragment()).toMatchSnapshot();
     });
-    test('with pointer size overrides', () => {
-      const {asFragment} = renderWithTheme(Tooltip, {
+    test('with pointer size overrides', async () => {
+      const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
         showPointer: true,
         overrides: {
@@ -136,8 +151,8 @@ describe('Tooltip', () => {
       });
       expect(asFragment()).toMatchSnapshot();
     });
-    test('with pointer and distance override has offset', () => {
-      const {asFragment} = renderWithTheme(Tooltip, {
+    test('with pointer and distance override has offset', async () => {
+      const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
         showPointer: true,
         overrides: {
@@ -146,8 +161,8 @@ describe('Tooltip', () => {
       });
       expect(asFragment()).toMatchSnapshot();
     });
-    test('with no pointer and distance override has no offset', () => {
-      const {asFragment} = renderWithTheme(Tooltip, {
+    test('with no pointer and distance override has no offset', async () => {
+      const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
         showPointer: false,
         overrides: {
@@ -156,8 +171,8 @@ describe('Tooltip', () => {
       });
       expect(asFragment()).toMatchSnapshot();
     });
-    test('with pointer y coordinate', () => {
-      const {asFragment} = renderWithTheme(Tooltip, {
+    test('with pointer y coordinate', async () => {
+      const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
         showPointer: true,
         placement: 'right',
