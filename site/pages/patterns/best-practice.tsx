@@ -1,18 +1,45 @@
 import React from 'react';
-import {styled, getColorFromTheme} from 'newskit';
-import {LayoutProps} from '../../components/layout';
+import {
+  styled,
+  getColorFromTheme,
+  IconFilledInfo,
+  InlineMessage,
+  Block,
+  P,
+  UnorderedList,
+} from 'newskit';
+import {Link} from '../../components/link';
 import {MediaList} from '../../components/media-list';
+import {LayoutProps} from '../../components/layout';
 import {PatternPageTemplate} from '../../templates/pattern-page-template/pattern-page-template';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
+  ContentTertiary,
 } from '../../components/content-structure';
+import {IconFilledCircle} from '../../components/icons';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
+);
+
 const StyledHeading = styled.span`
   color: ${getColorFromTheme('inkBrand010')};
+`;
+
+const StyledDoHeading = styled.span`
+  color: ${getColorFromTheme('inkPositive')};
+`;
+
+const StyledDontHeading = styled.span`
+  color: ${getColorFromTheme('inkNegative')};
 `;
 
 const BestPractice = (layoutProps: LayoutProps) => (
@@ -70,7 +97,6 @@ const BestPractice = (layoutProps: LayoutProps) => (
               found here.
             </>
           }
-          showSeparator
         >
           <MediaList
             layout="1-span"
@@ -85,6 +111,79 @@ const BestPractice = (layoutProps: LayoutProps) => (
             ]}
           />
         </ContentSecondary>
+        <ContentSecondary
+          headline="Keep the number of fields to a minimum "
+          description="The more personal data you ask for, the more likely users will drop out of the funnel. Therefore, you should only ask for information that is genuinely required."
+        >
+          <InlineMessage
+            icon={infoIcon}
+            role="region"
+            aria-label="minimum fields"
+          >
+            <Link href="https://www.wsj.com/" target="_blank">
+              WSJ
+            </Link>{' '}
+            saw a 1.8% conversion lift for each field that was reduced, so
+            keeping fields to a minimum is likely to have a positive impact.
+          </InlineMessage>
+        </ContentSecondary>
+        <ContentSecondary headline="Layout" />
+        <ContentTertiary
+          headline={<StyledDoHeading>Do</StyledDoHeading>}
+          description={
+            <>
+              <Block spaceStack="space030" />
+              <UnorderedList
+                listItemMarker={IconFilledCircle}
+                markerAlign="start"
+                overrides={{spaceStack: 'space040'}}
+              >
+                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                  <Link href="/components/form/">Forms</Link> should be
+                  displayed in a single column layout. This means the user’s
+                  focus is on one data input type at a time and there is less
+                  cognitive load searching the page for what data to enter.
+                </P>
+              </UnorderedList>
+            </>
+          }
+        />
+        <ContentSecondary headline="Text field width" />
+        <ContentTertiary
+          headline={<StyledDoHeading>Do</StyledDoHeading>}
+          description={
+            <>
+              <Block spaceStack="space030" />
+              <UnorderedList
+                listItemMarker={IconFilledCircle}
+                markerAlign="start"
+                overrides={{spaceStack: 'space040'}}
+              >
+                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                  Most <Link href="/components/text-field/">Text fields</Link>{' '}
+                  should be proportional to the expected user input - no longer
+                  than a single line, such as their name or phone number.
+                </P>
+                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                  For example, Text Fields that have a set short number of
+                  characters should have a proportional width i.e year of birth
+                  or postcode.
+                </P>
+              </UnorderedList>
+            </>
+          }
+        />
+        <ContentTertiary
+          headline={<StyledDontHeading>Don’t</StyledDontHeading>}
+          description={
+            <>
+              You should avoid using the Text Field if you need to let users
+              enter longer answers that might span multiple lines. Consider
+              using an alternative, such as Text Area.
+            </>
+          }
+          showSeparator
+        />
       </ContentSection>
     </ComponentPageCell>
   </PatternPageTemplate>
