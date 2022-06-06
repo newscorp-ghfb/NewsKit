@@ -1202,6 +1202,156 @@ exports[`Accordion renders with no divider 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Accordion renders with overrides 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  margin: 0;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  cursor: default;
+  min-width: 24px;
+  min-height: 32px;
+  background-color: #90e0ef;
+  color: black;
+  border-style: none none solid none;
+  border-color: #6a040f;
+  border-width: 4px;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 12px;
+  padding-block: 12px;
+}
+
+.emotion-2>:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #f08080;
+  color: #FFD23F;
+}
+
+.emotion-2:disabled {
+  background-color: interface010;
+  color: black;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  text-align: start;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  color: #0A782A;
+}
+
+.emotion-4 svg {
+  fill: #0A782A;
+}
+
+.emotion-5 {
+  border-color: #f7aef8;
+  border-width: 4px;
+  border-style: solid;
+}
+
+.emotion-6 {
+  border-color: #f7aef8;
+  border-width: 4px;
+  border-style: solid;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 4px;
+  width: 100%;
+}
+
+.emotion-7 {
+  border-style: none none dotted none;
+  border-color: #fb8500;
+  border-width: 4px;
+  padding-inline: 12px;
+  padding-block: 12px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <h3
+      class="emotion-1"
+    >
+      <button
+        aria-controls="mock-nk-1"
+        aria-expanded="true"
+        class="emotion-2"
+        id="mock-nk-1"
+      >
+        <div
+          class="emotion-3"
+        >
+          Header
+        </div>
+        <div
+          class="emotion-4"
+        >
+          Label
+        </div>
+      </button>
+    </h3>
+    <div
+      class="emotion-5"
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-6"
+        data-testid="divider"
+      />
+    </div>
+    <div
+      aria-labelledby="mock-nk-1"
+      class="emotion-7"
+      id="mock-nk-1"
+      role="region"
+    >
+      <p
+        class="emotion-1"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Accordion renders with startEnhancer 1`] = `
 <DocumentFragment>
   .emotion-1 {

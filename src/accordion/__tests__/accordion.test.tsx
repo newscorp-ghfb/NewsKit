@@ -4,8 +4,12 @@ import {
   IconFilledExpandLess,
   IconFilledExpandMore,
 } from '../../icons';
-import {renderToFragmentWithTheme} from '../../test/test-utils';
+import {
+  renderToFragmentWithTheme,
+  renderWithTheme,
+} from '../../test/test-utils';
 import {TextBlock} from '../../text-block';
+import {createTheme} from '../../theme';
 import {Accordion} from '../accordion';
 
 describe('Accordion', () => {
@@ -130,4 +134,80 @@ describe('Accordion', () => {
     const fragment = renderToFragmentWithTheme(Accordion, props);
     expect(fragment).toMatchSnapshot();
   });
+  test('renders with overrides', () => {
+    const myCustomAccordionTheme = createTheme({
+      name: 'my-custom-accordion-theme',
+      overrides: {
+        stylePresets: {
+          accordionHeaderCustom: {
+            base: {
+              backgroundColor: '#90e0ef',
+              color: 'black',
+              borderStyle: 'none none solid none',
+              borderColor: '#6a040f',
+              borderWidth: '{{borders.borderWidth030}}',
+            },
+            hover: {
+              backgroundColor: '#f08080',
+              color: '#FFD23F',
+            },
+            disabled: {
+              backgroundColor: 'interface010',
+              color: 'black',
+            },
+          },
+          accordionDividerCustom: {
+            base: {
+              borderColor: '#f7aef8',
+              borderWidth: '{{borders.borderWidth030}}',
+              borderStyle: 'solid',
+            },
+          },
+          accordionPanelCustom: {
+            base: {
+              borderStyle: 'none none dotted none',
+              borderColor: '#fb8500',
+              borderWidth: '{{borders.borderWidth030}}',
+            },
+          },
+        },
+      },
+    });
+    const {asFragment} = renderWithTheme(
+      Accordion,
+      {
+        ...defaultProps,
+        expanded: true,
+        overrides: {
+          header: {
+            minWidth: 'sizing050',
+            minHeight: 'sizing060',
+            stylePreset: 'accordionHeaderCustom',
+            typographyPreset: 'utilityButton020',
+            spaceInline: 'space030',
+            indicatorIcon: {
+              stylePreset: 'inkPositive',
+            },
+            indicatorLabel: {
+              stylePreset: 'inkPositive',
+              typographyPreset: 'utilityButton020',
+            },
+            startEnhancer: {
+              stylePreset: 'inkPositive',
+            },
+          },
+          panel: {
+            stylePreset: 'accordionPanelCustom',
+          },
+          divider: {
+            stylePreset: 'accordionDividerCustom',
+          },
+        },
+      },
+      myCustomAccordionTheme,
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+  // test('line 77 in accordion.tsx', () => {});
 });

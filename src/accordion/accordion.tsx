@@ -31,7 +31,7 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
       children,
       ariaControls,
       id,
-      overrides,
+      overrides = {},
       ...props
     },
     ref,
@@ -74,7 +74,7 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
           <>
             {applyDivider && (
               <StyledDividerWrapper overrides={overrides}>
-                <Divider overrides={overrides?.divider} />
+                <Divider overrides={overrides.divider} />
               </StyledDividerWrapper>
             )}
             <StyledPanel
