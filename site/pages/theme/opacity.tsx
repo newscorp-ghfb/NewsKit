@@ -10,12 +10,15 @@ import {ComponentPageCell} from '../../components/layout-cells';
 import {getTokenType} from '../../utils/get-token-type';
 import {Table, TableRow} from '../../components/table';
 
+const opacity000Token =
+  'Applied to the background of the feedback element applied to the multiple interactive elements, such as the Checkbox, or Radio Button on hover.';
+const creativeUseCase = ' Creative use case';
 const opacityRows = getTokenType(newskitLightTheme.overlays, 'opacity').map(
   ({tokenName, tokenValue}) => ({
     value: tokenValue,
     opacity: tokenName as string,
     token: tokenName,
-    commonUsage: '',
+    commonUsage: tokenName === 'opacity000' ? opacity000Token : creativeUseCase,
   }),
 ) as TableRow[];
 
