@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import {ScreenReaderOnly} from '../../../screen-reader-only';
 import {Slider} from '../../../slider';
 import {withOwnTheme} from '../../../utils/with-own-theme';
@@ -6,7 +6,7 @@ import {getTokensForVolumeControl, useInitialVolume} from './utils';
 import {useAudioPlayerContext} from '../../context';
 import defaults from './defaults';
 import {MuteButton} from './mute-button';
-import {useTheme} from '../../../theme';
+import {BreakpointKeys, useTheme} from '../../../theme';
 import stylePresets from './style-presets';
 import {AudioPlayerVolumeControlProps} from './types';
 import {GridLayoutItem} from '../../../grid-layout';
@@ -16,6 +16,10 @@ import {
   VolumeSliderContainer,
 } from './styled';
 import {useReactKeys} from '../../../utils/hooks';
+import { deepMerge } from '../../../utils/deep-merge';
+import { mergeBreakpointObject } from '../../../utils/merge-breakpoint-object';
+import { filterOutFalsyProperties } from '../../../utils/filter-object';
+import { ButtonSize } from '../../../button/types';
 
 const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps> = props => {
   const {getVolumeControlProps} = useAudioPlayerContext();
@@ -24,30 +28,37 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
     onChange,
     vertical,
     collapsed = false,
-    muteKeyboardShortcuts,
+    keyboardShortcuts,
     overrides,
     initialVolume,
+    muteButtonSize,
   } = getVolumeControlProps!(props);
 
   const [unMutedVolume, setUnMutedVolume] = useState(volume);
 
-  // Saves the volume into a state,
-  // for re-using it when clicking the mute unmute button.
-  if (unMutedVolume !== volume && volume > 0) {
-    setUnMutedVolume(volume);
-  }
+  useEffect(() => {
+    // Saves the volume into a state,
+    // for re-using it when clicking the mute unmute button.
+    if (unMutedVolume !== volume && volume > 0) {
+      setUnMutedVolume(volume);
+    }
+  },[unMutedVolume, volume])
 
   const theme = useTheme();
   const {
-    sliderTrackStylePreset,
-    trackSize,
-    sliderIndicatorTrackStylePreset,
-    sliderThumbStylePreset,
-    thumbSize,
     volumeControlButtonStylePreset,
     iconSize,
-    buttonSize,
   } = getTokensForVolumeControl(theme, overrides);
+
+
+  const sliderOverrides =  {
+    ...deepMerge(
+      mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
+      theme.componentDefaults.audioPlayerVolumeControl.slider,
+      /* istanbul ignore next */
+      filterOutFalsyProperties(overrides?.slider),
+    ),
+  };
 
   const onSliderChange = useCallback(([newVolume]) => onChange(newVolume), [
     onChange,
@@ -76,9 +87,9 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
           unMutedVolume={unMutedVolume}
           volumeControlButtonStylePreset={volumeControlButtonStylePreset}
           onChange={onChange}
-          size={buttonSize}
+          size={muteButtonSize || ButtonSize.Small}
           iconSize={iconSize}
-          muteKeyboardShortcuts={muteKeyboardShortcuts}
+          muteKeyboardShortcuts={keyboardShortcuts?.muteButton}
         />
       </GridLayoutItem>
       {!collapsed && (
@@ -95,19 +106,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
               ariaValueText={`volume level ${[volume][0] * 10} of 10`}
               dataTestId="volume-control-slider"
               ariaDescribedBy={volumeSliderInstructionId}
-              overrides={{
-                track: {
-                  stylePreset: sliderTrackStylePreset,
-                  size: trackSize,
-                },
-                indicator: {
-                  stylePreset: sliderIndicatorTrackStylePreset,
-                },
-                thumb: {
-                  stylePreset: sliderThumbStylePreset,
-                  size: thumbSize,
-                },
-              }}
+              overrides={sliderOverrides}
             />
             <ScreenReaderOnly id={volumeSliderInstructionId} aria-hidden="true">
               Use the arrow keys to adjust volume

@@ -9,6 +9,7 @@ import {AudioPlayerReplayButtonProps} from './components/replay-button/types';
 import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/types';
 import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
 import {AudioPlayerTimeFormatFn} from './components/time-display/types';
+import { ButtonSize } from '../button';
 
 export interface AudioFunctionDependencies {
   autoPlay: boolean;
@@ -63,12 +64,13 @@ export interface AudioPlayerProviderContext {
     props: AudioPlayerVolumeControlProps,
   ) => {
     overrides: AudioPlayerVolumeControlOverridesProps;
-    muteKeyboardShortcuts?: string | string[];
+    keyboardShortcuts?: {muteButton: string | string[]}
     vertical?: boolean;
     collapsed?: boolean;
     onChange: (value: number) => void;
     volume: number;
     initialVolume: 0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1;
+    muteButtonSize?: ButtonSize
   };
   getSkipPreviousButtonProps: (
     props: AudioPlayerSkipPreviousButtonProps,

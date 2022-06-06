@@ -17,7 +17,6 @@ export default {
     button: {
       stylePreset: 'iconButtonMinimalPrimary',
       iconSize: 'iconSize020',
-      size: 'small',
     },
   },
 };

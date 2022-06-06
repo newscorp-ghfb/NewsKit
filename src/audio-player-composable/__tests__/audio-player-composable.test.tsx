@@ -87,6 +87,30 @@ const AudioPropsAndVolumeControlVertical: AudioPlayerComposableProps = {
   ),
 };
 
+const AudioPropsAndVolumeControlOverridenShortcuts: AudioPlayerComposableProps = {
+  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  children: (
+    <>
+      <AudioPlayerVolumeControl keyboardShortcuts={{muteButton: 'y'}} />
+    </>
+  ),
+};
+
+// const AudioPropsAndVolumeControlWithOverrides: AudioPlayerComposableProps = {
+//   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+//   children: (
+//     <>
+//       <AudioPlayerVolumeControl overrides={{
+//         slider: {
+//           track: {
+//             stylePreset: 'sliderTrack'
+//           }
+//         }
+//       }} />
+//     </>
+//   ),
+// };
+
 const recordedAudioPropsAutoplay: AudioPlayerComposableProps = {
   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
   autoPlay: true,
@@ -838,6 +862,32 @@ describe('Audio Player Composable', () => {
       expect(audioElement.volume).toEqual(0.1);
     });
 
+    it('unmute keyshortcut should be overriden', () => {
+      // Clearing localStorage so not using any cashed initial volume
+      localStorage.clear();
+
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsAndVolumeControlOverridenShortcuts,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const muteButton = getByTestId('mute-button');
+      muteButton.focus();
+
+      // Should default to 0.7
+      expect(audioElement.volume).toEqual(0.7);
+      userEvent.keyboard('y');
+      expect(audioElement.volume).toEqual(0);
+
+      // Increase volume 0.1
+      fireEvent.keyDown(getByTestId('volume-control-slider-thumb'), {
+        key: 'ArrowRight',
+        code: 39,
+      });
+      expect(audioElement.volume).toEqual(0.1);
+    });
+
     it('should render correctly with collapsed and initialVolume', () => {
       // Clearing localStorage before render for allowing
       // InitialVolume to be used instead.
@@ -866,6 +916,15 @@ describe('Audio Player Composable', () => {
       );
       expect(asFragment()).toMatchSnapshot();
     });
+
+    // it('should render correctly with overrides prop', () => {
+    //   const {asFragment} = renderWithTheme(
+    //     AudioPlayerComposable,
+    //     AudioPropsAndVolumeControlWithOverrides,
+    //   );
+    //   expect(asFragment()).toMatchSnapshot();
+    // });
+    
   });
 
   describe('Instrumentation tests', () => {

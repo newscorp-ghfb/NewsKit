@@ -11,35 +11,15 @@ export const getTokensForVolumeControl = (theme: Theme, overrides: {}) => {
       propName,
     );
 
-  const sliderTrackStylePreset = getVolumeControlToken(
-    'slider.track',
-    'stylePreset',
-  );
-  const trackSize = getVolumeControlToken('slider.track', 'size');
-  const sliderIndicatorTrackStylePreset = getVolumeControlToken(
-    'slider.indicator',
-    'stylePreset',
-  );
-  const sliderThumbStylePreset = getVolumeControlToken(
-    'slider.thumb',
-    'stylePreset',
-  );
-  const thumbSize = getVolumeControlToken('slider.thumb', 'size');
   const volumeControlButtonStylePreset = getVolumeControlToken(
     'button',
     'stylePreset',
   );
   const iconSize = getVolumeControlToken('button', 'iconSize');
-  const buttonSize = getVolumeControlToken('button', 'size');
+  
   return {
-    sliderTrackStylePreset,
-    trackSize,
-    sliderIndicatorTrackStylePreset,
-    sliderThumbStylePreset,
-    thumbSize,
     volumeControlButtonStylePreset,
     iconSize,
-    buttonSize,
   };
 };
 

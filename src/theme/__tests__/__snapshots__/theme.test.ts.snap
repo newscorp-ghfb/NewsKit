@@ -1243,7 +1243,6 @@ Object {
   "audioPlayerVolumeControl": Object {
     "button": Object {
       "iconSize": "iconSize020",
-      "size": "small",
       "stylePreset": "iconButtonMinimalPrimary",
     },
     "slider": Object {
