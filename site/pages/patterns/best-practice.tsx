@@ -1,15 +1,8 @@
 import React from 'react';
-import {
-  styled,
-  getColorFromTheme,
-  IconFilledInfo,
-  InlineMessage,
-  Block,
-  P,
-  UnorderedList,
-} from 'newskit';
+import {IconFilledInfo, InlineMessage, Block, P, UnorderedList} from 'newskit';
 import {Link} from '../../components/link';
 import {MediaList} from '../../components/media-list';
+import {StyledHeading, StyledDoHeading, StyledDontHeading} from './styled';
 import {LayoutProps} from '../../components/layout';
 import {PatternPageTemplate} from '../../templates/pattern-page-template/pattern-page-template';
 import {
@@ -29,18 +22,6 @@ const infoIcon = (
     }}
   />
 );
-
-const StyledHeading = styled.span`
-  color: ${getColorFromTheme('inkBrand010')};
-`;
-
-const StyledDoHeading = styled.span`
-  color: ${getColorFromTheme('inkPositive')};
-`;
-
-const StyledDontHeading = styled.span`
-  color: ${getColorFromTheme('inkNegative')};
-`;
 
 const BestPractice = (layoutProps: LayoutProps) => (
   <PatternPageTemplate
@@ -163,8 +144,8 @@ const BestPractice = (layoutProps: LayoutProps) => (
                   Most <Link href="/components/text-field/">Text fields</Link>{' '}
                   should be proportional to the expected user input - no longer
                   than a single line, such as their name or phone number.
-                </P>
-                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                  <br />
+                  <br />
                   For example, Text Fields that have a set short number of
                   characters should have a proportional width i.e year of birth
                   or postcode.
@@ -176,11 +157,17 @@ const BestPractice = (layoutProps: LayoutProps) => (
         <ContentTertiary
           headline={<StyledDontHeading>Don’t</StyledDontHeading>}
           description={
-            <>
-              You should avoid using the Text Field if you need to let users
-              enter longer answers that might span multiple lines. Consider
-              using an alternative, such as Text Area.
-            </>
+            <UnorderedList
+              listItemMarker={IconFilledCircle}
+              markerAlign="start"
+              overrides={{spaceStack: 'space040'}}
+            >
+              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                You should avoid using the Text Field if you need to let users
+                enter longer answers that might span multiple lines. Consider
+                using an alternative, such as Text Area.
+              </P>
+            </UnorderedList>
           }
           showSeparator
         />
