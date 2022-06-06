@@ -15,7 +15,7 @@ import composeRefs from '@seznam/compose-react-refs';
 import {useRef} from 'react';
 import {TooltipProps} from './types';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {StyledPointer, StyledTooltip} from './styled';
+import {StyledPanel, StyledPointer, StyledTooltip} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {useControlled} from '../utils/hooks';
@@ -119,7 +119,6 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
       )}
       {open && (
         <StyledTooltip
-          as="div"
           {...getFloatingProps({
             ref: floating,
             id,
@@ -133,6 +132,9 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
           overrides={overrides}
           {...props}
         >
+          <StyledPanel as={isTitleString ? 'p' : 'div'} overrides={overrides}>
+            {title}
+          </StyledPanel>
           {showPointer && (
             <StyledPointer
               id={`${id}-pointer`}
@@ -143,7 +145,6 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
               overrides={overrides}
             />
           )}
-          {title}
         </StyledTooltip>
       )}
     </>

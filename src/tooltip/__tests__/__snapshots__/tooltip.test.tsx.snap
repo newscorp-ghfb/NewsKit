@@ -9,9 +9,12 @@ exports[`Tooltip should render correct styles: default 1`] = `
     Add
   </button>
   .emotion-0 {
-  margin: 0;
   pointer-events: none;
   z-index: 80;
+}
+
+.emotion-1 {
+  margin: 0;
   background-color: #0A0A0A;
   color: #FFFFFF;
   border-radius: 8px;
@@ -31,7 +34,11 @@ exports[`Tooltip should render correct styles: default 1`] = `
     style="position: absolute; top: 0px; left: 0px;"
     tabindex="-1"
   >
-    hello
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
   </div>
 </DocumentFragment>
 `;
@@ -45,9 +52,12 @@ exports[`Tooltip should render correct styles: with no pointer and distance over
     Add
   </button>
   .emotion-0 {
-  margin: 0;
   pointer-events: none;
   z-index: 80;
+}
+
+.emotion-1 {
+  margin: 0;
   background-color: #0A0A0A;
   color: #FFFFFF;
   border-radius: 8px;
@@ -67,7 +77,11 @@ exports[`Tooltip should render correct styles: with no pointer and distance over
     style="position: absolute; top: 0px; left: 0px;"
     tabindex="-1"
   >
-    hello
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
   </div>
 </DocumentFragment>
 `;
@@ -81,11 +95,14 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
     Add
   </button>
   .emotion-0 {
-  margin: 0;
   pointer-events: none;
   z-index: 70;
   max-width: 80px;
   min-width: 50px;
+}
+
+.emotion-1 {
+  margin: 0;
   background-color: #EF1703;
   border-radius: 0;
   color: #0A0A0A;
@@ -105,7 +122,11 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
     style="position: absolute; top: 0px; left: 0px;"
     tabindex="-1"
   >
-    hello
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
   </div>
 </DocumentFragment>
 `;
@@ -119,9 +140,12 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
     Add
   </button>
   .emotion-0 {
-  margin: 0;
   pointer-events: none;
   z-index: 80;
+}
+
+.emotion-1 {
+  margin: 0;
   background-color: #0A0A0A;
   color: #FFFFFF;
   border-radius: 8px;
@@ -134,7 +158,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
   padding-block: 8px;
 }
 
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -154,12 +178,16 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
     style="position: absolute; top: -8px; left: 0px;"
     tabindex="-1"
   >
-    <div
+    <p
       class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
       id="floating-ui-14-pointer"
       x="0"
     />
-    hello
   </div>
 </DocumentFragment>
 `;
@@ -173,9 +201,12 @@ exports[`Tooltip should render correct styles: with pointer and distance overrid
     Add
   </button>
   .emotion-0 {
-  margin: 0;
   pointer-events: none;
   z-index: 80;
+}
+
+.emotion-1 {
+  margin: 0;
   background-color: #0A0A0A;
   color: #FFFFFF;
   border-radius: 8px;
@@ -188,7 +219,7 @@ exports[`Tooltip should render correct styles: with pointer and distance overrid
   padding-block: 8px;
 }
 
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -208,12 +239,16 @@ exports[`Tooltip should render correct styles: with pointer and distance overrid
     style="position: absolute; top: -16px; left: 0px;"
     tabindex="-1"
   >
-    <div
+    <p
       class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
       id="floating-ui-23-pointer"
       x="0"
     />
-    hello
   </div>
 </DocumentFragment>
 `;
@@ -227,9 +262,12 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
     Add
   </button>
   .emotion-0 {
-  margin: 0;
   pointer-events: none;
   z-index: 80;
+}
+
+.emotion-1 {
+  margin: 0;
   background-color: #0A0A0A;
   color: #FFFFFF;
   border-radius: 8px;
@@ -242,7 +280,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
   padding-block: 8px;
 }
 
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -262,12 +300,16 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
     style="position: absolute; top: -8px; left: 0px;"
     tabindex="-1"
   >
-    <div
+    <p
       class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
       id="floating-ui-20-pointer"
       x="0"
     />
-    hello
   </div>
 </DocumentFragment>
 `;
@@ -281,9 +323,12 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
     Add
   </button>
   .emotion-0 {
-  margin: 0;
   pointer-events: none;
   z-index: 80;
+}
+
+.emotion-1 {
+  margin: 0;
   background-color: #A60100;
   color: #FFFFFF;
   border-radius: 8px;
@@ -296,7 +341,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
   padding-block: 8px;
 }
 
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -316,12 +361,16 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
     style="position: absolute; top: -8px; left: 0px;"
     tabindex="-1"
   >
-    <div
+    <p
       class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
       id="floating-ui-17-pointer"
       x="0"
     />
-    hello
   </div>
 </DocumentFragment>
 `;
@@ -335,9 +384,12 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
     Add
   </button>
   .emotion-0 {
-  margin: 0;
   pointer-events: none;
   z-index: 80;
+}
+
+.emotion-1 {
+  margin: 0;
   background-color: #0A0A0A;
   color: #FFFFFF;
   border-radius: 8px;
@@ -350,7 +402,7 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
   padding-block: 8px;
 }
 
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -370,12 +422,16 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
     style="position: absolute; top: 0px; left: 8px;"
     tabindex="-1"
   >
-    <div
+    <p
       class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
       id="floating-ui-29-pointer"
       y="0"
     />
-    hello
   </div>
 </DocumentFragment>
 `;

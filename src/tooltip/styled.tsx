@@ -10,11 +10,14 @@ import {
 import {logicalProps} from '../utils/logical-properties';
 import {TextBlock} from '../text-block';
 
-export const StyledTooltip = styled(TextBlock)<Pick<TooltipProps, 'overrides'>>`
+export const StyledTooltip = styled.div<Pick<TooltipProps, 'overrides'>>`
   pointer-events: none;
   ${getResponsiveSpace('zIndex', 'tooltip', '', 'zIndex')};
   ${getResponsiveSize('maxWidth', 'tooltip', '', 'maxWidth')};
   ${getResponsiveSize('minWidth', 'tooltip', '', 'minWidth')};
+`;
+
+export const StyledPanel = styled(TextBlock)<Pick<TooltipProps, 'overrides'>>`
   ${getStylePreset('tooltip', '')};
   ${getStylePreset('tooltipPanel', 'panel')};
   ${getTypographyPreset('tooltipPanel', 'panel')};
