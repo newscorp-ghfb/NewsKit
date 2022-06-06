@@ -25,6 +25,10 @@ export default {
       ...focusVisible,
       ...checked,
     },
+    'checked:focus-visible:hover': {
+      ...focusVisible,
+      ...checked,
+    },
   },
   // A separate style preset is required for track icons. We cannot put this
   // styling in the switchTrack preset as this overrides the thumb icon styling.

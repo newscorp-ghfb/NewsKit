@@ -4406,8 +4406,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
+  width: 1px;
+  height: 1px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -5643,8 +5643,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
+  width: 1px;
+  height: 1px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -7235,8 +7235,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
+  width: 1px;
+  height: 1px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
@@ -7698,8 +7698,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
+  width: 1px;
+  height: 1px;
   -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
   -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);

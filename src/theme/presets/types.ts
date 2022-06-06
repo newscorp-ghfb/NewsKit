@@ -92,6 +92,7 @@ export interface StylePreset {
   'checked:invalid:focus-visible'?: StylePresetStyles;
   'valid:focus-visible'?: StylePresetStyles;
   'checked:valid:focus-visible'?: StylePresetStyles;
+  'checked:focus-visible:hover'?: StylePresetStyles;
 }
 export type StylePresetStates = keyof StylePreset;
 

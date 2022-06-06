@@ -160,11 +160,11 @@ export const StyledSwitchFeedback = styled.div<
       // when is not HOVER we need to remove the hover so it does not apply as class:hover
       omitStates: isHovered ? [] : ['hover'],
     })}
-  ${({size, path}) =>
+  ${({size, path, isHovered}) =>
     getResponsiveSize(
       rectSize => ({
-        width: rectSize,
-        height: rectSize,
+        width: isHovered ? rectSize : '1px',
+        height: isHovered ? rectSize : '1px',
         transform: `translate3d(calc(${rectSize} / -2), calc(${rectSize} / -2), 0)`,
       }),
       `${path}.${size}.feedback`,
