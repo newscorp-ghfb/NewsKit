@@ -25,6 +25,7 @@ const Container = styled.div`
   max-width: 1024px;
   max-height: 768px;
   overflow: hidden;
+  padding: 5px
 `;
 const LimitSizeDecorator = ({children}) => <Container>{children}</Container>;
 const NoDecorator = ({children}) => <>{children}</>;
