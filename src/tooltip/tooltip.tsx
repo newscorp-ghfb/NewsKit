@@ -21,7 +21,7 @@ import {useControlled} from '../utils/hooks';
 
 const ThemelessTooltip: React.FC<TooltipProps> = ({
   children,
-  title,
+  content,
   placement = 'top',
   trigger = ['hover', 'focus'],
   open: openProp,
@@ -64,7 +64,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
 
   const id = useId();
 
-  const isTitleString = typeof title === 'string';
+  const contentIsString = typeof content === 'string';
 
   const labelOrDescProps: {
     'aria-label'?: string | null;
@@ -73,11 +73,11 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
   } = {};
 
   // If tooltip is used as a label, add aria-label or aria-labelledby to childrenProps and id to StyledTooltip;
-  // aria-label is used when title is string; aria-labelledby is used when it's not a string;
+  // aria-label is used when content is string; aria-labelledby is used when it's not a string;
   // Because of above, 'aria-describedby' has different id for reference and floating, hence manually set below as well;
   if (asLabel) {
-    labelOrDescProps['aria-label'] = isTitleString ? title : null;
-    labelOrDescProps['aria-labelledby'] = open && !isTitleString ? id : null;
+    labelOrDescProps['aria-label'] = contentIsString ? content : null;
+    labelOrDescProps['aria-labelledby'] = open && !contentIsString ? id : null;
   } else {
     labelOrDescProps['aria-describedby'] = open ? id : null;
   }
@@ -87,7 +87,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
     ...children.props,
   };
 
-  if (!title) {
+  if (!content) {
     return children;
   }
 
@@ -115,8 +115,8 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
           showPointer={showPointer}
           {...props}
         >
-          <StyledPanel as={isTitleString ? 'p' : 'div'} overrides={overrides}>
-            {title}
+          <StyledPanel as={contentIsString ? 'p' : 'div'} overrides={overrides}>
+            {content}
           </StyledPanel>
           {showPointer && (
             <StyledPointer

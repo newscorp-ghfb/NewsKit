@@ -10,7 +10,7 @@ export interface TooltipProps
   children: React.ReactElement & {
     ref?: React.Ref<unknown>;
   };
-  title: React.ReactNode;
+  content: React.ReactNode;
   open?: boolean;
   defaultOpen?: boolean;
   trigger?: TriggerType | TriggerType[];

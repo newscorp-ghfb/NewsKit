@@ -24,7 +24,7 @@ const asyncRender = async <T extends {}>(
 describe('Tooltip', () => {
   const defaultProps: TooltipProps = {
     children: <button type="submit">Add</button>,
-    title: 'hello',
+    content: 'hello',
     defaultOpen: true,
     showPointer: false,
   };
@@ -49,10 +49,10 @@ describe('Tooltip', () => {
       });
       expect(asFragment()).toMatchSnapshot();
     });
-    test('not render if title is an empty string', () => {
+    test('not render if content is an empty string', () => {
       const {queryByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
-        title: '',
+        content: '',
       });
       expect(queryByRole('tooltip')).not.toBeInTheDocument();
     });
@@ -298,10 +298,10 @@ describe('Tooltip', () => {
       fireEvent.mouseLeave(button);
       expect(button.hasAttribute('aria-describedby')).toBe(false);
     });
-    test('can describe with exotic title when open and remove aria attribute when closed', () => {
+    test('can describe with exotic content when open and remove aria attribute when closed', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
-        title: <div>the title</div>,
+        content: <div>the content</div>,
         defaultOpen: false,
       });
       const button = getByRole('button');
@@ -319,10 +319,10 @@ describe('Tooltip', () => {
       const button = getByRole('button');
       expect(button.hasAttribute('aria-label')).toBe(true);
     });
-    test('should label the child when open with an exotic title', () => {
+    test('should label the child when open with an exotic content', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
-        title: <div>the title</div>,
+        content: <div>the content</div>,
         defaultOpen: false,
         asLabel: true,
       });
@@ -338,7 +338,7 @@ describe('Tooltip', () => {
       const [open, setOpen] = React.useState(false);
       return (
         <>
-          <Tooltip open title="hello">
+          <Tooltip open content="hello">
             <button type="submit">Add</button>
           </Tooltip>
           <Button data-testid="outside-control" onClick={() => setOpen(!open)}>
