@@ -114,11 +114,7 @@ export const StorySelectSize = () => (
           </Label>
           <Select aria-describedby="id-3-at" id="id-3" size="large">
             {items.map(item => (
-              <SelectOption
-                key={item}
-                value={item}
-                overrides={{marginBlock: '20px'}}
-              >
+              <SelectOption key={item} value={item}>
                 {item}
               </SelectOption>
             ))}
