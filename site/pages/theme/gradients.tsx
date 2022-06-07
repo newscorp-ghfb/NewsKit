@@ -11,14 +11,23 @@ import {Tab, Tabs} from '../../../src/tabs';
 import {Table, TableRow} from '../../components/table';
 import {newskitLightTheme} from '../../../src/theme';
 
-const baseGradientRows = getTokenType(
-  newskitLightTheme.overlays,
-  'overlayGradientBase',
-).map(({tokenName, tokenValue}) => ({
-  value: tokenValue,
-  gradient: tokenName as string,
-  token: tokenName,
-})) as TableRow[];
+const themeGradientRows = (tokenTypes: string[]) => {
+  const tokens = getTokenType(newskitLightTheme.overlays, '');
+
+  const rows = tokens.reduce((result, current) => {
+    const {tokenName, tokenValue} = current;
+    if (tokenTypes.includes(tokenName)) {
+      const gradient = {
+        gradient: tokenName,
+        token: tokenName,
+        value: tokenValue as string,
+      };
+      return [...result, gradient];
+    }
+    return result;
+  }, [] as TableRow[]);
+  return rows;
+};
 
 const inverserGradientRows = getTokenType(
   newskitLightTheme.overlays,
@@ -61,7 +70,20 @@ styles (these are light when used in a dark theme)`}
             <Tab label="Base">
               <Table
                 columns={['Gradient', 'Token', 'Value']}
-                rows={baseGradientRows}
+                rows={
+                  (themeGradientRows([
+                    'overlayGradientBaseVertical',
+                    'overlayGradientBaseHorizontal',
+                    'overlayGradientFromBottom',
+                    'overlayGradientFromBottomLeft',
+                    'overlayGradientFromBottomRight',
+                    'overlayGradientFromLeft',
+                    'overlayGradientFromRight',
+                    'overlayGradientFromTop',
+                    'overlayGradientFromTopLeft',
+                    'overlayGradientFromTopRight',
+                  ]) as unknown) as TableRow[]
+                }
               />
             </Tab>
             <Tab label="Inverse">
