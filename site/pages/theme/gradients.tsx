@@ -43,7 +43,7 @@ const Gradients = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Gradients',
       description:
-        'Gradient foundations consist of both ‘base’ styles (these are dark when used in a light theme) and ‘inverse’ styles (these are light when used in a dark theme).',
+        'Gradients are used to create the illusion of content fading into an interface or image.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -53,7 +53,7 @@ const Gradients = (layoutProps: LayoutProps) => (
         illustration: 'theme/gradients/hero',
       },
       introduction:
-        "Gradients Base gradient tokens are used to fade elements into the interface background. 'Inverse' gradient tokens are used to fade elements into a dark background in a light theme.",
+        'Gradients are used to create the illusion of content fading into an interface or image.',
     }}
   >
     <ComponentPageCell>
@@ -65,6 +65,18 @@ const Gradients = (layoutProps: LayoutProps) => (
           description={`Gradient foundations consist of both ‘base’ styles
 (these are dark when used in a light theme and inverse)
 styles (these are light when used in a dark theme)`}
+          showSeparator
+        />
+      </ContentSection>
+      <ContentSection sectionName="Gradients">
+        <ContentPrimary
+          id="Gradients"
+          toc="Gradients"
+          headline="Gradients"
+          description="'Base' gradient tokens are used to fade elements
+          into the interface background. 
+          'Inverse' gradient tokens are used to fade elements
+          into a dark background in a light theme."
         >
           <Tabs size="medium">
             <Tab label="Base">
