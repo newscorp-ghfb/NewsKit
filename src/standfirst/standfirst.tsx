@@ -1,19 +1,18 @@
 import React from 'react';
-import {styled, getTypographyPreset, getStylePreset} from '../utils/style';
+import {styled, getStylePreset} from '../utils/style';
 
 import {isInlineElement} from '../utils/inline-tags';
 import {StandfirstProps} from './types';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {getLogicalPropsAndTypographyPreset} from '../utils/logical-properties';
 
 const StyledText = styled.h2<StandfirstProps>`
   ${getStylePreset('standfirst.styledText', 'styledText', {
     filterStates: ['base'],
     filterStyles: ['color'],
   })};
-  ${getTypographyPreset('standfirst.styledText', 'styledText', {
-    withCrop: true,
-  })}
+  ${getLogicalPropsAndTypographyPreset('standfirst.styledText', 'styledText')}
   ${({as}) => as && (isInlineElement(as) ? 'display: inline-block' : '')}
 `;
 

@@ -66,3 +66,20 @@ export const StoryStackChildWithStackList = () => (
   </MainContainer>
 );
 StoryStackChildWithStackList.storyName = 'stack-child-with-stack-list';
+
+export const StoryStackChildWithLogicalProps = () => (
+  <MainContainer>
+    <StorybookHeading>StackChild with logical props</StorybookHeading>
+    <Container>
+      <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
+        <StackChild order={1} paddingInline="30px" paddingBlock="20px">
+          <Tag>With padding props</Tag>
+        </StackChild>
+        <StackChild order={2} marginInline="30px" marginBlock="20px">
+          <Tag>With margin props</Tag>
+        </StackChild>
+      </Stack>
+    </Container>
+  </MainContainer>
+);
+StoryStackChildWithLogicalProps.storyName = 'stack-child-with-logical-props';

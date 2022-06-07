@@ -3,6 +3,12 @@ import {DividerProps} from '../divider';
 import {CellProps} from '../grid';
 import {EventData} from '../instrumentation';
 import {MQ} from '../utils/style';
+import {LogicalProps} from '../utils/logical-properties';
+
+export interface StructuredListOverrides extends LogicalProps {
+  divider?: DividerProps['overrides'];
+  width?: MQ<string>;
+}
 
 export interface StructuredListProps {
   children:
@@ -10,9 +16,7 @@ export interface StructuredListProps {
     | React.ReactElement<StructuredListProps>[];
   ariaLabel?: string;
   divider?: boolean;
-  overrides?: {
-    divider?: DividerProps['overrides'];
-  };
+  overrides?: StructuredListOverrides;
 }
 
 export type StructuredListCellAlign = 'start' | 'center' | 'end';
