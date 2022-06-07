@@ -55,7 +55,7 @@ exports[`Paragraph renders Paragraph with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  color: #2E2E2E;
+  color: #FFFFFF;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -64,7 +64,7 @@ exports[`Paragraph renders Paragraph with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2E2E2E;
+  fill: #FFFFFF;
 }
 
 <p
@@ -145,7 +145,18 @@ exports[`Paragraph renders with drop cap 1`] = `
   fill: #0A0A0A;
 }
 
-.emotion-2 {
+<p
+    aria-hidden="true"
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    >
+      p
+    </span>
+    aragraph component
+  </p>
+  .emotion-0 {
   display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -157,26 +168,11 @@ exports[`Paragraph renders with drop cap 1`] = `
   width: 1px;
 }
 
-<p
+<span
     class="emotion-0"
   >
-    <span
-      aria-hidden="true"
-    >
-      <span
-        class="emotion-1"
-      >
-        p
-      </span>
-      aragraph 
-    </span>
-    <span
-      class="emotion-2"
-    >
-      paragraph
-    </span>
-    component
-  </p>
+    paragraph component
+  </span>
 </DocumentFragment>
 `;
 
@@ -228,7 +224,27 @@ exports[`Paragraph renders with drop cap and complex children 1`] = `
   fill: #0A0A0A;
 }
 
-.emotion-2 {
+<p
+    aria-hidden="true"
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    >
+      p
+    </span>
+    aragraph 
+    <b>
+      component
+    </b>
+     with 
+    <a
+      href="/"
+    >
+      link
+    </a>
+  </p>
+  .emotion-0 {
   display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -240,24 +256,10 @@ exports[`Paragraph renders with drop cap and complex children 1`] = `
   width: 1px;
 }
 
-<p
+<span
     class="emotion-0"
   >
-    <span
-      aria-hidden="true"
-    >
-      <span
-        class="emotion-1"
-      >
-        p
-      </span>
-      aragraph 
-    </span>
-    <span
-      class="emotion-2"
-    >
-      paragraph
-    </span>
+    paragraph 
     <b>
       component
     </b>
@@ -267,7 +269,7 @@ exports[`Paragraph renders with drop cap and complex children 1`] = `
     >
       link
     </a>
-  </p>
+  </span>
 </DocumentFragment>
 `;
 

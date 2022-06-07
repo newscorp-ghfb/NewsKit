@@ -49,29 +49,29 @@ export const ParagraphDropCap = withOwnTheme(ThemelessParagraphDropCap)({
   defaults,
 });
 
-const getFirstWord = (
+const getFirstLetter = (
   children: (React.ReactChild | React.ReactFragment | React.ReactPortal)[],
 ): string => {
   const [firstChild] = children;
-  if (children.length > 0 && typeof firstChild === 'string') {
-    return firstChild.split(' ')[0];
+  if (typeof firstChild === 'string') {
+    return firstChild.split('')[0];
   }
-  if (children.length && isFragment(firstChild)) {
-    return getFirstWord(React.Children.toArray(firstChild.props.children));
+  if (isFragment(firstChild)) {
+    return getFirstLetter(React.Children.toArray(firstChild.props.children));
   }
   return '';
 };
 
-const removeFirstWord = (
+const removeFirstLetter = (
   children: (React.ReactChild | React.ReactFragment | React.ReactPortal)[],
 ): (React.ReactChild | React.ReactFragment | React.ReactPortal)[] => {
   const [firstChild, ...rest] = children;
-  if (children.length > 0 && typeof firstChild === 'string') {
-    return [firstChild.split(' ').slice(1).join(' '), ...rest];
+  if (typeof firstChild === 'string') {
+    return [firstChild.split('').slice(1).join(''), ...rest];
   }
-  if (children.length && isFragment(firstChild)) {
+  if (isFragment(firstChild)) {
     return [
-      removeFirstWord(React.Children.toArray(firstChild.props.children)),
+      removeFirstLetter(React.Children.toArray(firstChild.props.children)),
       ...rest,
     ];
   }
@@ -79,41 +79,25 @@ const removeFirstWord = (
   return children;
 };
 
-/**
-
-For a11y reason we need to add aria-hidden to the first word of the paragraph.
-Creating the fallowing structure:
-<p>
-  <span aria-hidden="true"><span class="dropcap">T</span>his</span>
-  <span class="sr-only">This</span> is paragraph text
-</p>          
-
- */
-
 export const Paragraph: React.FC<ParagraphProps> = ({
   children,
   overrides = {},
   dropCap = false,
 }) => {
   const childrenAsArray = React.Children.toArray(children);
-  const firstWord = getFirstWord(childrenAsArray);
-  const useDropCap = dropCap && firstWord;
+  const firstLetter = getFirstLetter(childrenAsArray);
+  const useDropCap = dropCap && firstLetter;
 
-  return (
-    <ParagraphText>
-      {useDropCap && (
-        <>
-          <span aria-hidden="true">
-            <ParagraphDropCap overrides={overrides}>
-              {firstWord[0]}
-            </ParagraphDropCap>
-            {firstWord.slice(1)}{' '}
-          </span>
-          <ScreenReaderOnly>{firstWord}</ScreenReaderOnly>
-        </>
-      )}
-      {useDropCap ? removeFirstWord(childrenAsArray) : childrenAsArray}
-    </ParagraphText>
+  return useDropCap && children ? (
+    <>
+      <ParagraphText aria-hidden="true" overrides={overrides}>
+        <ParagraphDropCap overrides={overrides}>{firstLetter}</ParagraphDropCap>
+        {removeFirstLetter(childrenAsArray)}
+      </ParagraphText>
+      <ScreenReaderOnly>{children}</ScreenReaderOnly>
+    </>
+  ) : (
+    <ParagraphText overrides={overrides}>{children}</ParagraphText>
   );
 };
 
