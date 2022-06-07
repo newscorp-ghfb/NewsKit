@@ -211,6 +211,409 @@ const BestPractice = (layoutProps: LayoutProps) => (
           />
         </ContentPrimary>
       </ContentSection>
+
+      <ContentSection sectionName="labels">
+        <ContentPrimary
+          id="labels"
+          toc="Labels"
+          headline={<StyledHeading>Labels</StyledHeading>}
+          description="Using best practice when displaying labels on a Form is vital to ensure the user knows what data they need to enter and that data is entered in the correct format."
+        />
+        <ContentSecondary headline="Display" />
+        <ContentTertiary
+          headline={<StyledDoHeading>Do</StyledDoHeading>}
+          description={
+            <>
+              <Block spaceStack="space030" />
+              <UnorderedList
+                listItemMarker={IconFilledCircle}
+                markerAlign="start"
+                overrides={{spaceStack: 'space040'}}
+              >
+                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                  Labels should be displayed above the required field and left
+                  aligned so that the user can still see the requested data
+                  format when their cursor is active within the field.
+                </P>
+                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                  Input labels and placeholder text should be in sentence case,
+                  whereby only the first word of a sentence and proper nouns are
+                  capitalised, with the rest of the words in lowercase. This
+                  helps with scannability and legibility.
+                </P>
+              </UnorderedList>
+            </>
+          }
+        />
+        <ContentTertiary
+          headline={<StyledDontHeading>Don’t</StyledDontHeading>}
+          description={
+            <UnorderedList
+              listItemMarker={IconFilledCircle}
+              markerAlign="start"
+              overrides={{spaceStack: 'space040'}}
+            >
+              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                Input label text should not be truncated or wrapped over two or
+                more lines. Keep it short, clear, and fully visible.
+              </P>
+            </UnorderedList>
+          }
+        />
+        <ContentSecondary headline="Placeholder text" />
+        <ContentTertiary
+          headline={<StyledDoHeading>Do</StyledDoHeading>}
+          description={
+            <>
+              <Block spaceStack="space030" />
+              <UnorderedList
+                listItemMarker={IconFilledCircle}
+                markerAlign="start"
+                overrides={{spaceStack: 'space040'}}
+              >
+                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                  Placeholder text can be displayed to provide the user with a
+                  short hint that describes the content that is expected to be
+                  inputted by the user (e.g. a sample value or a short
+                  description of the expected format).
+                </P>
+                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                  Once a value is entered, the placeholder text is no longer
+                  visible. Assistive Text is the preferred way to communicate
+                  this information.
+                </P>
+              </UnorderedList>
+            </>
+          }
+        />
+        <ContentTertiary
+          headline={<StyledDontHeading>Don’t</StyledDontHeading>}
+          description={
+            <UnorderedList
+              listItemMarker={IconFilledCircle}
+              markerAlign="start"
+              overrides={{spaceStack: 'space040'}}
+            >
+              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                The short hint is displayed in the input container before the
+                user enters a value. However, placeholders should not be used as
+                a replacement for labels.
+              </P>
+              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                Don&apos;t put instructions on completing an input or
+                requirements into placeholder text as it cannot be read by a
+                screenreader and is therefore not accessible.
+              </P>
+            </UnorderedList>
+          }
+        />
+        <ContentSecondary headline="Assistive text" />
+        <ContentTertiary
+          headline={<StyledDoHeading>Do</StyledDoHeading>}
+          description={
+            <>
+              <Block spaceStack="space030" />
+              <UnorderedList
+                listItemMarker={IconFilledCircle}
+                markerAlign="start"
+                overrides={{spaceStack: 'space040'}}
+              >
+                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                  If needed, Assistive Text should be used to hint at the action
+                  the user is being asked to do, for example, ‘Select all that
+                  apply’.
+                </P>
+                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                  In terms of placement of Assistive Text - if it&apos;s
+                  attributed to a single input like a text field then it
+                  typically appears below. If there are multiple text fields in
+                  a group{' '}
+                  <Link href="/components/fieldset/">
+                    (Fieldset for example)
+                  </Link>{' '}
+                  then it may make sense to sit above the inputs so assistive
+                  text/error messages are in a consistent place.{' '}
+                </P>
+                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+                  If there are a lot of{' '}
+                  <Link href="/components/text-field/">Text Fields</Link> in a
+                  group, then the Assistive Text would be pushed to the end of
+                  the group, so it’s worth considering placement depending on
+                  the number of inputs in a group.
+                </P>
+              </UnorderedList>
+            </>
+          }
+        />
+        <ContentSecondary
+          headline="Float labels"
+          description={
+            <>
+              It has become more common to use ‘float labels’ whereby the Label
+              sits within the text field initially and then moves above the Text
+              Field once the Text Field becomes in focus. Whilst this is an
+              interesting way of displaying Labels, before implementing, you
+              should consider if there is any benefit to the user. It uses up
+              space for hint text within the field, distracts the user and
+              offers little benefit in terms of spacing as space needs to be
+              given for the Label above the field either way.
+              <br />
+              <br />
+              You can find a more detailed breakdown on why float labels may not
+              be appropriate on the{' '}
+              <Link
+                href="https://uxmovement.com/forms/infield-top-aligned-labels-floating-labels/"
+                target="_blank"
+              >
+                UX Movement.
+              </Link>
+            </>
+          }
+        />
+        <ContentSecondary
+          headline="Single underline text entry field"
+          description={
+            <>
+              In 2017, Google changed their{' '}
+              <Link
+                href="https://medium.com/google-design/the-evolution-of-material-designs-text-fields-603688b3fe03"
+                target="_blank"
+              >
+                Material Design guidelines
+              </Link>{' '}
+              to recommend single underline text entry fields. Due to this they
+              have become a lot more popular when designing forms. However, it’s
+              worth noting that since then Google have updated their guidelines
+              as they found that:
+            </>
+          }
+          showSeparator
+        >
+          <UnorderedList
+            listItemMarker={IconFilledCircle}
+            markerAlign="start"
+            overrides={{spaceStack: 'space040'}}
+          >
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              Some users didn’t know that they could interact with the text
+              field.
+            </P>
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              It looked like an empty box.
+            </P>
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              The line affordance under the old text fields was not clear to
+              some users.
+            </P>
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              The line was confused with a divider.{' '}
+            </P>
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              The label and input were confused with body text, especially in
+              dense compositions.
+            </P>
+          </UnorderedList>
+          <Block spaceStack="space080" />
+          <MediaList
+            layout="1-span"
+            cardsLayout="horizontal"
+            cards={[
+              {
+                title: 'Tip',
+                description: (
+                  <>
+                    There is more on this and the research they carried out{' '}
+                    <Link
+                      href="https://medium.com/google-design/the-evolution-of-material-designs-text-fields-603688b3fe03"
+                      target="_blank"
+                    >
+                      here.
+                    </Link>{' '}
+                    They have since changed the guideline to add a box for the
+                    text field as well as an underline so just displaying an
+                    underline for text entry should be avoided.
+                  </>
+                ),
+                media: getIllustrationComponent(
+                  'patterns/best-practice/labels/tip',
+                ),
+              },
+              {
+                title: 'Mandatory/Optional',
+                description:
+                  'Only optional fields should be highlighted. You should only be asking for customer data that we need as part of the business requirements so the vast majority will be mandatory.',
+                media: getIllustrationComponent(
+                  'patterns/best-practice/labels/optional',
+                ),
+              },
+            ]}
+          />
+        </ContentSecondary>
+      </ContentSection>
+
+      <ContentSection sectionName="validation & error messages">
+        <ContentPrimary
+          id="validation-error-messages"
+          toc="Validation & Error messages"
+          headline={<StyledHeading>Validation & Error messages</StyledHeading>}
+          description="Validation and error messaging goes hand in hand to ensure you are
+          capturing customer data accurately. This informs the user when
+          they have entered data correctly, as well as clearly highlighting when
+          an error has occurred."
+        >
+          <MediaList
+            layout="1-span"
+            cardsLayout="horizontal"
+            cards={[
+              {
+                title: 'Validation',
+                description: (
+                  <>
+                    Displaying a tick next to data that has been entered
+                    correctly means the user can confidently move onto the next
+                    data entry point.
+                    <br />
+                    <br />
+                    However, consider if this is always needed. Validation is
+                    only useful if information needs to be in a certain format
+                    or meet specific criteria e.g password.
+                  </>
+                ),
+                media: getIllustrationComponent(
+                  'patterns/best-practice/validation-error-messages/validation',
+                ),
+              },
+              {
+                title: 'Tip',
+                description: (
+                  <>
+                    Validation should be displayed ‘On blur’ (Once the user has
+                    tabbed out of the field), not summarised on submission of
+                    data. More information on validation states can be found{' '}
+                    <Link
+                      href="https://www.w3schools.com/jsref/event_onblur.asp"
+                      target="_blank"
+                    >
+                      here.
+                    </Link>
+                    <br />
+                    <br />
+                    You can toggle between both options in NewsKit{' '}
+                    <Link
+                      href="https://newskit.co.uk/components/form/"
+                      target="_blank"
+                    >
+                      here.
+                    </Link>
+                  </>
+                ),
+                media: getIllustrationComponent(
+                  'patterns/best-practice/validation-error-messages/tip',
+                ),
+              },
+            ]}
+          />
+        </ContentPrimary>
+        <ContentSecondary
+          headline="Error messages"
+          description={
+            <>
+              Error messaging should clearly inform the user an error has
+              occurred, highlight where that error has occurred and what the
+              user has to do to address the error.
+              <br />
+              <br />
+              Within NewsKit, error messages are displayed in the place of
+              Assistive Text. Once the error has been addressed then the
+              Assistive Text is shown again.
+            </>
+          }
+        />
+        <ContentSecondary headline="Best practice" showSeparator>
+          <UnorderedList
+            listItemMarker={IconFilledCircle}
+            markerAlign="start"
+            overrides={{spaceStack: 'space040'}}
+          >
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              Errors and validation should be displayed ‘On blur’ (once the user
+              has tabbed out of the field) not as the user is entering their
+              information.
+            </P>
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              Write error text that communicates a solution. Error text should
+              be written in a few clear, concise and complete sentences. More
+              guidance on error text can be found{' '}
+              <Link
+                href="https://design-system.service.gov.uk/components/error-message/"
+                target="_blank"
+              >
+                here.
+              </Link>
+            </P>
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              Space for error messaging below the Text Field should be catered
+              for to stop the page jumping up and down when errors are
+              shown/addressed. Within NewsKit you can apply min heights to text
+              fields.
+            </P>
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              If an error is being addressed, the relevant error message should
+              not be displayed when the field is active, however a check should
+              still be done when the user tabs out of the field to ensure the
+              error has been addressed.
+            </P>
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              When the user has addressed the error it should no longer appear.
+            </P>
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              If there are a number of data inputs on a page, consider whether
+              to add a summary of errors panel so the user can see all errors
+              listed in one place. More information on error summaries can be
+              found{' '}
+              <Link
+                href="https://design-system.service.gov.uk/components/error-summary/"
+                target="_blank"
+              >
+                here.
+              </Link>
+            </P>
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              Errors and validation should be based on the previous fields the
+              user has engaged with, not the whole form, unless they are
+              submitting the Form. (See below)
+            </P>
+          </UnorderedList>
+          <Block spaceStack="space070" />
+          <MediaList
+            layout="1-span"
+            cardsLayout="horizontal"
+            cards={[
+              {
+                title: 'Tip',
+                description: (
+                  <>
+                    Further guidance on the display of errors and visual
+                    feedback within form fields has been outlined{' '}
+                    <Link
+                      href="https://www.nngroup.com/articles/errors-forms-design-guidelines/"
+                      target="_blank"
+                    >
+                      here.
+                    </Link>
+                    <br />
+                    <br />
+                    Credit: Nielsen Norman Group.
+                  </>
+                ),
+                media: getIllustrationComponent(
+                  'patterns/best-practice/best-practice/tip',
+                ),
+              },
+            ]}
+          />
+        </ContentSecondary>
+      </ContentSection>
     </ComponentPageCell>
   </PatternPageTemplate>
 );
