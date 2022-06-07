@@ -2,10 +2,15 @@
   "name": "@newskit/codemods",
   "version": "0.0.0-PLACEHOLDER",
   "description": "You can use this CLI tool to run various scripts (codemods) that will help update NewsKit APIs",
+  "keywords": [
+    "react",
+    "newsuk",
+    "newskit"
+  ],
+  "license": "MIT",
   "main": "src/cli.js",
   "scripts": {},
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "chalk": "4.1.2",
     "glob": "^8.0.3",
@@ -13,7 +18,7 @@
     "yargs": "^17.5.1"
   },
   "engines": {
-    "node": ">= 16.0.0"
+    "node": ">=16.9.1"
   },
   "bin": {
     "newskit-codemods": "./src/cli.js"

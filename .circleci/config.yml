@@ -443,6 +443,24 @@ jobs:
       - slack/status:
           <<: *slack_status
 
+  test_unit_codemods:
+    executor: node-large
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Unit Testing Codemods
+          command: make unit_test_codemods
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+      - store_test_results:
+          path: ./reports/junit/
+      - store_artifacts:
+          path: ./reports/junit
+      - slack/status:
+          <<: *slack_status
+
   lint:
     executor: node
     steps:
@@ -963,6 +981,9 @@ workflows:
       - test_unit_docs:
           requires:
             - build_icons
+      - test_unit_codemods:
+          requires:
+            - build_icons
       - test_newskit_in_nextjs_app:
           requires:
             - build_components
@@ -1007,6 +1028,7 @@ workflows:
             - lint
             - test_unit_comps
             - test_unit_docs
+            - test_unit_codemods
             - test_e2e_comps
             - test_e2e_docs_pr
       - publish_npm:
@@ -1119,6 +1141,9 @@ workflows:
       - test_unit_docs:
           requires:
             - build_icons
+      - test_unit_codemods:
+          requires:
+            - build_icons
       - test_e2e_comps:
           context: ncu-product-platforms-context
           requires:
@@ -1152,6 +1177,7 @@ workflows:
             - lint
             - test_unit_comps
             - test_unit_docs
+            - test_unit_codemods
             - test_e2e_comps
             - test_e2e_docs_dev
       - publish_npm:
@@ -1170,6 +1196,7 @@ workflows:
             - lint
             - test_unit_comps
             - test_unit_docs
+            - test_unit_codemods
             - test_e2e_comps
             - test_e2e_docs_dev
       - eks_flux_deploy:
@@ -1289,6 +1316,10 @@ workflows:
           <<: *only_on_version_tag
           requires:
             - build_icons
+      - test_unit_codemods:
+          <<: *only_on_version_tag
+          requires:
+            - build_icons
       - test_e2e_comps:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
@@ -1324,6 +1355,7 @@ workflows:
             - lint
             - test_unit_comps
             - test_unit_docs
+            - test_unit_codemods
             - test_e2e_comps
             - test_e2e_docs_prod
       - test_newskit_in_nextjs_app:
@@ -1338,6 +1370,7 @@ workflows:
             - lint
             - test_unit_comps
             - test_unit_docs
+            - test_unit_codemods
             - test_e2e_comps
             - test_e2e_docs_prod
             - test_newskit_in_nextjs_app

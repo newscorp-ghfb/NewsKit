@@ -40,6 +40,9 @@ unit_test_docs:
 unit_test_comps:
 	yarn test:unit:ci --projects=src
 
+unit_test_codemods:
+	yarn test:unit:ci --projects=codemods
+
 lint:
 	yarn lint
 
