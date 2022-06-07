@@ -53,8 +53,6 @@ exports[`Tooltip offset should be applied with pointer and mq distance override 
     id="floating-ui-38"
     role="tooltip"
     tabindex="-1"
-    x="0"
-    y="0"
   >
     <p
       class="emotion-1"
@@ -64,7 +62,6 @@ exports[`Tooltip offset should be applied with pointer and mq distance override 
     <div
       class="emotion-2"
       id="floating-ui-38-pointer"
-      x="0"
     />
   </div>
 </DocumentFragment>
@@ -118,8 +115,6 @@ exports[`Tooltip offset should be applied with pointer and non-px distance overr
     id="floating-ui-35"
     role="tooltip"
     tabindex="-1"
-    x="0"
-    y="0"
   >
     <p
       class="emotion-1"
@@ -129,7 +124,6 @@ exports[`Tooltip offset should be applied with pointer and non-px distance overr
     <div
       class="emotion-2"
       id="floating-ui-35-pointer"
-      x="0"
     />
   </div>
 </DocumentFragment>
@@ -183,8 +177,6 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
     id="floating-ui-32"
     role="tooltip"
     tabindex="-1"
-    x="0"
-    y="0"
   >
     <p
       class="emotion-1"
@@ -194,7 +186,6 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
     <div
       class="emotion-2"
       id="floating-ui-32-pointer"
-      x="0"
     />
   </div>
 </DocumentFragment>
@@ -248,8 +239,6 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
     id="floating-ui-29"
     role="tooltip"
     tabindex="-1"
-    x="0"
-    y="0"
   >
     <p
       class="emotion-1"
@@ -259,7 +248,6 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
     <div
       class="emotion-2"
       id="floating-ui-29-pointer"
-      x="0"
     />
   </div>
 </DocumentFragment>
@@ -300,8 +288,6 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
     id="floating-ui-26"
     role="tooltip"
     tabindex="-1"
-    x="0"
-    y="0"
   >
     <p
       class="emotion-1"
@@ -347,8 +333,6 @@ exports[`Tooltip should render correct styles: default 1`] = `
     id="floating-ui-2"
     role="tooltip"
     tabindex="-1"
-    x="0"
-    y="0"
   >
     <p
       class="emotion-1"
@@ -396,8 +380,6 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
     id="floating-ui-11"
     role="tooltip"
     tabindex="-1"
-    x="0"
-    y="0"
   >
     <p
       class="emotion-1"
@@ -456,8 +438,6 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
     id="floating-ui-14"
     role="tooltip"
     tabindex="-1"
-    x="0"
-    y="0"
   >
     <p
       class="emotion-1"
@@ -467,7 +447,6 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
     <div
       class="emotion-2"
       id="floating-ui-14-pointer"
-      x="0"
     />
   </div>
 </DocumentFragment>
@@ -521,8 +500,6 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
     id="floating-ui-20"
     role="tooltip"
     tabindex="-1"
-    x="0"
-    y="0"
   >
     <p
       class="emotion-1"
@@ -532,7 +509,6 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
     <div
       class="emotion-2"
       id="floating-ui-20-pointer"
-      x="0"
     />
   </div>
 </DocumentFragment>
@@ -586,8 +562,6 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
     id="floating-ui-17"
     role="tooltip"
     tabindex="-1"
-    x="0"
-    y="0"
   >
     <p
       class="emotion-1"
@@ -597,7 +571,6 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
     <div
       class="emotion-2"
       id="floating-ui-17-pointer"
-      x="0"
     />
   </div>
 </DocumentFragment>
@@ -651,8 +624,6 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
     id="floating-ui-23"
     role="tooltip"
     tabindex="-1"
-    x="0"
-    y="0"
   >
     <p
       class="emotion-1"
@@ -662,7 +633,6 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
     <div
       class="emotion-2"
       id="floating-ui-23-pointer"
-      y="0"
     />
   </div>
 </DocumentFragment>

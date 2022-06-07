@@ -15,8 +15,8 @@ export const StyledTooltip = styled.div<
   {
     strategy: Strategy;
     placement: Placement;
-    x?: number;
-    y?: number;
+    $x?: number;
+    $y?: number;
     showPointer: boolean;
   } & Pick<TooltipProps, 'overrides'>
 >`
@@ -24,14 +24,14 @@ export const StyledTooltip = styled.div<
   ${getResponsiveSpace('zIndex', 'tooltip', '', 'zIndex')};
   ${getResponsiveSize('maxWidth', 'tooltip', '', 'maxWidth')};
   ${getResponsiveSize('minWidth', 'tooltip', '', 'minWidth')};
-  ${({x, y, strategy, placement, showPointer}) =>
+  ${({$x, $y, strategy, placement, showPointer}) =>
     getResponsiveSpace(
       distance => {
         const offset = showPointer ? distance : undefined;
         return {
           position: strategy,
-          left: calculateInset(x, 'x', offset, placement),
-          top: calculateInset(y, 'y', offset, placement),
+          left: calculateInset($x, 'x', offset, placement),
+          top: calculateInset($y, 'y', offset, placement),
         };
       },
       'tooltip',
@@ -49,14 +49,14 @@ export const StyledPanel = styled(TextBlock)<Pick<TooltipProps, 'overrides'>>`
 export const StyledPointer = styled.div<
   {
     placement: Placement;
-    x?: number;
-    y?: number;
+    $x?: number;
+    $y?: number;
   } & Pick<TooltipProps, 'overrides'>
 >`
   position: absolute;
   transform: rotate(45deg);
   ${getStylePreset('tooltip.pointer', 'pointer')};
-  ${({placement, x, y}) =>
+  ${({placement, $x, $y}) =>
     getResponsiveSize(
       size => {
         const staticSide: string = {
@@ -68,8 +68,8 @@ export const StyledPointer = styled.div<
         return {
           width: size,
           height: size,
-          left: x != null ? `${x}px` : '',
-          top: y != null ? `${y}px` : '',
+          left: $x != null ? `${$x}px` : '',
+          top: $y != null ? `${$y}px` : '',
           right: '',
           bottom: '',
           [staticSide]: `calc(-${size} / 2)`,

@@ -108,8 +108,8 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
             className: 'Tooltip',
           })}
           strategy={strategy}
-          x={x}
-          y={y}
+          $x={x}
+          $y={y}
           placement={placement}
           overrides={overrides}
           showPointer={showPointer}
@@ -123,8 +123,8 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
               id={`${id}-pointer`}
               ref={pointerRef}
               placement={placement}
-              x={pointerX}
-              y={pointerY}
+              $x={pointerX}
+              $y={pointerY}
               overrides={overrides}
             />
           )}
