@@ -16,8 +16,14 @@ import {Table, TableRow} from '../../components/table';
 
 const DO_AND_DONT = [
   {
-    description:
-      'Overlay contrasts should be distinct and clear. They can be used to obscure page content and emphasise an element for greater legibility. I.e. the  Modal.',
+    description: (
+      <>
+        Overlay contrasts should be distinct and clear. They can be used to
+        obscure page content and emphasise an element for greater legibility.
+        I.e. the <Link href="/components/modal">Modal.</Link>.
+      </>
+    ),
+
     kind: UsageKind.DO,
     media: getIllustrationComponent('theme/overlays/do'),
   },
@@ -37,8 +43,8 @@ const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
   overlayTintBase040: (
     <>
       Internal overlay component that sits behind the panels (used by
-      <Link href="/componants/modal">modals</Link> and
-      <Link href="/componants/drawer">drawers</Link>)
+      <Link href="/components/modal">modals</Link> and
+      <Link href="/components/drawer">drawers</Link>)
     </>
   ),
 };
@@ -50,7 +56,7 @@ const overlayRows = getTokenType(
   value: tokenValue,
   tint: tokenName as string,
   token: tokenName,
-  commoUsage: TOKENS_DESCRIPTION[tokenName] || '-',
+  commonUsage: TOKENS_DESCRIPTION[tokenName] || '-',
 })) as TableRow[];
 
 const inverserOverlayRows = getTokenType(
@@ -129,6 +135,22 @@ const Overlays = (layoutProps: LayoutProps) => (
             </Tabs>
           </ContentPrimary>
         </ContentSection>
+        <ContentSection sectionName="usage">
+          <ContentPrimary
+            toc="Usage"
+            id="usage"
+            headline="Usage"
+            description="The following guidance describes how and when to appropriately use overlays."
+            showSeparator
+          >
+            <MediaList
+              gridProps={{xsRowGutter: 'space050'}}
+              cardType="usage"
+              layout="2-span"
+              cards={DO_AND_DONT}
+            />
+          </ContentPrimary>
+        </ContentSection>
         <ContentSection sectionName="a11y">
           <ContentPrimary
             id="ally"
@@ -138,22 +160,6 @@ const Overlays = (layoutProps: LayoutProps) => (
 and icons are legible without compromising the aesthetic."
           />
         </ContentSection>
-      </ContentSection>
-      <ContentSection sectionName="usage">
-        <ContentPrimary
-          toc="Usage"
-          id="usage"
-          headline="Usage"
-          description="The following guidance describes how and when to appropriately use overlays."
-          showSeparator
-        >
-          <MediaList
-            gridProps={{xsRowGutter: 'space050'}}
-            cardType="usage"
-            layout="2-span"
-            cards={DO_AND_DONT}
-          />
-        </ContentPrimary>
       </ContentSection>
     </ComponentPageCell>
   </FoundationPageTemplate>
