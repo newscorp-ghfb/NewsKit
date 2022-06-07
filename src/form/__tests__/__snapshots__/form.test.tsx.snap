@@ -4104,8 +4104,19 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-2:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -5548,8 +5559,19 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-2:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -6999,8 +7021,19 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -7312,8 +7345,19 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -8782,10 +8826,21 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
 }
 
 .emotion-2 svg {
   fill: #2E2E2E;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2 {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-3 {
@@ -9405,8 +9460,19 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -9718,8 +9784,19 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3768FB;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {

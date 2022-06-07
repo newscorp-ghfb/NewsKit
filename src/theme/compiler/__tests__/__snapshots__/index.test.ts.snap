@@ -517,7 +517,11 @@ Object {
       },
       "focus": Object {
         "backgroundColor": "#FAFAFA",
-        "borderColor": "#3768FB",
+        "borderColor": "transparent",
+        "outlineColor": "#3768FB",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "safariOutlineStyle": "auto",
       },
       "hover": Object {
         "backgroundColor": "#FAFAFA",

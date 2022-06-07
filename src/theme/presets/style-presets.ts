@@ -19,7 +19,11 @@ stylePresets.inputField = {
     iconColor: '{{colors.inkBase}}',
   },
   focus: {
-    borderColor: '{{outline.outlineColorDefault}}',
+    outlineColor: '{{outline.outlineColorDefault}}',
+    outlineStyle: '{{outline.outlineStyleDefault}}',
+    outlineWidth: '{{outline.outlineWidthDefault}}',
+    safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+    borderColor: '{{colors.transparent}}',
     backgroundColor: '{{colors.interactiveInput010}}',
   },
   hover: {
