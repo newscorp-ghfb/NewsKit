@@ -75,7 +75,13 @@ const BestPractice = (layoutProps: LayoutProps) => (
               <br />
               <br />
               More information and insight on single step vs multi step can be
-              found here.
+              found{' '}
+              <Link
+                href="https://wpmanageninja.com/single-step-form-vs-multi-step-form-which-one-is-the-best-and-why/"
+                target="_blank"
+              >
+                here.
+              </Link>
             </>
           }
         >
@@ -797,6 +803,32 @@ const BestPractice = (layoutProps: LayoutProps) => (
             ]}
           />
         </ContentPrimary>
+      </ContentSection>
+
+      <ContentSection sectionName="help improve this page">
+        <ContentPrimary
+          id="help-improve-this-page"
+          toc="Help improve this page"
+          headline={<StyledHeading>Help improve this page</StyledHeading>}
+          description={
+            <>
+              To help make sure this page is as useful as it can be, relevant
+              and kept up to date with industry best practices, please get in
+              touch to share your research findings, and contribute to this
+              page.
+              <br />
+              <br />
+              <Link
+                href="https://github.com/newscorp-ghfb/newskit/issues/new/choose"
+                target="_blank"
+              >
+                Propose a change or contribution by suggesting a feature
+                request.
+              </Link>
+            </>
+          }
+          showSeparator
+        />
       </ContentSection>
     </ComponentPageCell>
   </PatternPageTemplate>
