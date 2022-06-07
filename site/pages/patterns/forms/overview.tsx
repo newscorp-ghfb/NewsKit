@@ -1,16 +1,16 @@
 import React from 'react';
 import {styled, getColorFromTheme} from 'newskit';
-import {Link} from '../../components/link';
-import {MediaList} from '../../components/media-list';
-import {LayoutProps} from '../../components/layout';
-import {PatternPageTemplate} from '../../templates/pattern-page-template/pattern-page-template';
+import {Link} from '../../../components/link';
+import {MediaList} from '../../../components/media-list';
+import {LayoutProps} from '../../../components/layout';
+import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-} from '../../components/content-structure';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {Illustration} from '../../components/illustrations/illustration-loader';
+} from '../../../components/content-structure';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {Illustration} from '../../../components/illustrations/illustration-loader';
 
 const featureCardOverrides = {
   title: {

@@ -3472,7 +3472,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="/patterns/overview"
+                              href="/patterns/forms/overview"
                               tabindex="-1"
                             >
                               <div
@@ -6715,7 +6715,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="/patterns/overview"
+                        href="/patterns/forms/overview"
                       >
                         <div
                           class="emotion-10"
@@ -10151,7 +10151,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="/patterns/overview"
+                              href="/patterns/forms/overview"
                             >
                               <div
                                 class="emotion-10"
@@ -13395,7 +13395,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="/patterns/overview"
+                        href="/patterns/forms/overview"
                       >
                         <div
                           class="emotion-10"
