@@ -614,6 +614,190 @@ const BestPractice = (layoutProps: LayoutProps) => (
           />
         </ContentSecondary>
       </ContentSection>
+
+      <ContentSection sectionName="call to actions/buttons">
+        <ContentPrimary
+          id="callto-actions-buttons"
+          toc="Call to actions/buttons"
+          headline={<StyledHeading>Call to actions/buttons</StyledHeading>}
+          description="Having consistency across your site as to where call to actions
+          appear means that users are comfortable with the action they are
+          selecting and not making mistakes when submitting a form."
+        >
+          <MediaList
+            layout="1-span"
+            cardsLayout="horizontal"
+            cards={[
+              {
+                title: 'Tip',
+                description: (
+                  <>
+                    Labeling call to actions effectively and contextually means
+                    that users understand the action they are taking or where
+                    they will be taken on selection of the CTA. (See example, if
+                    the user is midway through several steps, ‘Continue’ should
+                    be used rather than ‘Submit’ which feels like the end of a
+                    journey.)
+                    <br />
+                    <br />
+                    Contextual labelling also gives screen reader users
+                    confidence that they are performing the intended action.
+                  </>
+                ),
+                media: getIllustrationComponent(
+                  'patterns/best-practice/call-to-actions/tip',
+                ),
+              },
+            ]}
+          />
+        </ContentPrimary>
+        <ContentSecondary
+          headline="Positioning"
+          description={
+            <>
+              <Link href="/components/button/">Buttons</Link> should be
+              displayed in order of importance from right to left, with the
+              primary button on the right.
+              <br />
+              <br />
+              However, avoid multiple submit buttons on forms whenever possible.
+              If the form must have multiple submit buttons the primary action
+              should come first (i.e: Primary: Continue/Submit, Secondary:
+              Back/Cancel)
+              <br />
+              <br />
+              There might be some cases where a support/help action is needed,
+              it should be put as a tertiary action with a link button styling.
+              <br />
+              <br />
+              On mobile, buttons should be centered and go full width, the
+              ordering would then change from right to left to top to bottom.
+            </>
+          }
+          showSeparator
+        >
+          <InlineMessage icon={infoIcon} role="region" aria-label="positioning">
+            This behaviour is already built into NewsKit as part of the button
+            group component. When the button group is used in mobile
+            breakpoints, the buttons become full width, change order and are
+            fixed at the bottom of the viewport with a background to separate
+            them from the page content.
+          </InlineMessage>
+          <Block spaceStack="space070" />
+          <MediaList
+            layout="1-span"
+            cardsLayout="horizontal"
+            cards={[
+              {
+                title: 'Visual treatment',
+                description: (
+                  <>
+                    Primary and secondary buttons should have a clear visual
+                    treatment to clearly differentiate their importance to the
+                    user. Tertiary buttons should be text links to avoid having
+                    3 call to actions in a similar style.
+                    <br />
+                    <br />
+                    Different styles can also be applied to buttons when used in
+                    the right context to give visual aid for critical actions,
+                    for example, destructive flows like confirming cancellation,
+                    deleting account, revoking access, etc.
+                  </>
+                ),
+                media: getIllustrationComponent(
+                  'patterns/best-practice/call-to-actions/visual-treatment',
+                ),
+              },
+            ]}
+          />
+        </ContentSecondary>
+      </ContentSection>
+
+      <ContentSection sectionName="auto on focus">
+        <ContentPrimary
+          id="auto-on-focus"
+          toc="Auto - On focus"
+          headline={<StyledHeading>Auto - On focus</StyledHeading>}
+          description="Automatically auto-focus the first field in your form. This makes
+          it clear to the user which field they need to fill out first and also
+          reduces the number of clicks/effort it takes to start filling out the
+          form. There should also be a clear focus state so the user
+          understands where their cursor is and what data they need to
+          enter."
+          showSeparator
+        />
+      </ContentSection>
+
+      <ContentSection sectionName="accessibility">
+        <ContentPrimary
+          id="accessibility"
+          toc="Accessibility"
+          headline={<StyledHeading>Accessibility</StyledHeading>}
+          description={
+            <>
+              All forms should adhere to accessibility guidelines to ensure they
+              are usable by all. There should be a visible label on each data
+              entry type as well as hard coded instructions for users with
+              screen readers.
+              <br />
+              <br />
+              Any restrictions on data entry such as password credentials should
+              be displayed on the page upfront, not once data has been entered.
+              <br />
+              <br />
+              Full, up to date guidance on accessibility when designing forms
+              can be found on the{' '}
+              <Link
+                href="https://www.w3.org/WAI/tutorials/forms/"
+                target="_blank"
+              >
+                WCAG website.
+              </Link>
+            </>
+          }
+          showSeparator
+        />
+      </ContentSection>
+
+      <ContentSection sectionName="security captcha">
+        <ContentPrimary
+          id="security-captcha"
+          toc="Security & CAPTCHA"
+          headline={<StyledHeading>Security & CAPTCHA</StyledHeading>}
+          description={
+            <>
+              Security when capturing user data is imperative, however you still
+              need to consider the user’s experience. CAPTCHA is a commonly used
+              security feature whereby users have to enter text that’s displayed
+              on screen or select required images to prove that they are not a
+              robot.
+              <br />
+              <br />
+              However there are simpler, more user friendly options that don’t
+              disrupt the user experience as much and potentially lead to drop
+              off. reCAPTCHA is a simpler form of security whereby a user just
+              has to select a check box next to ‘I am not a robot’. This is much
+              less disruptive to their experience so it is recommended.
+            </>
+          }
+          showSeparator
+        >
+          <MediaList
+            layout="1-span"
+            cardsLayout="horizontal"
+            cards={[
+              {
+                title: 'Tip',
+                description:
+                  'Consider placement. It’s important that reCAPTCHA is displayed at the end of a form and not half way. Displaying this randomly disrupts the flow of the form and can look like it’s not part of your site. Some login platforms such as Auth0 display the reCaptcha widget half way through the form as default and this should be avoided. (See example)',
+                media: getIllustrationComponent(
+                  'patterns/best-practice/security-captcha/tip',
+                ),
+              },
+            ]}
+          />
+        </ContentPrimary>
+      </ContentSection>
     </ComponentPageCell>
   </PatternPageTemplate>
 );
