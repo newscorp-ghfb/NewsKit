@@ -20,23 +20,19 @@ const myCustomAccordionTheme = createTheme({
         base: {
           backgroundColor: '#7FFFD4',
           color: 'black',
-          borderStyle: 'none none solid none',
+          borderStyle: 'none none dotted none',
           borderColor: '#6a040f',
-          borderWidth: '{{borders.borderWidth030}}',
+          borderWidth: '{{borders.borderWidth020}}',
         },
         hover: {
           backgroundColor: '#f08080',
           color: '#FFD23F',
         },
-        disabled: {
-          backgroundColor: 'interactiveDisabled010',
-          color: 'inkNonEssential',
-        },
       },
       accordionDividerCustom: {
         base: {
           borderColor: '#f7aef8',
-          borderWidth: '{{borders.borderWidth030}}',
+          borderWidth: '{{borders.borderWidth020}}',
           borderStyle: 'solid',
         },
       },
@@ -44,7 +40,7 @@ const myCustomAccordionTheme = createTheme({
         base: {
           borderStyle: 'none none dotted none',
           borderColor: '#fb8500',
-          borderWidth: '{{borders.borderWidth030}}',
+          borderWidth: '{{borders.borderWidth020}}',
         },
       },
     },
@@ -132,6 +128,7 @@ export const StoryAccordion = () => (
     <div>
       <Accordion
         header="Header4"
+        expanded
         indicatorIcon={
           <IconFilledExpandLess
             overrides={{
@@ -147,8 +144,9 @@ export const StoryAccordion = () => (
       </Accordion>
       <Accordion
         header="Header5"
+        expanded={false}
         indicatorIcon={
-          <IconFilledExpandLess
+          <IconFilledExpandMore
             overrides={{
               size: 'iconSize020',
             }}
@@ -166,8 +164,8 @@ export const StoryAccordionOverrides = () => (
     <StorybookSubHeading>Overrides</StorybookSubHeading>
     <ThemeProvider theme={myCustomAccordionTheme}>
       <Accordion
-        header="Header"
-        label="Label"
+        header="Header6"
+        label="Label6"
         expanded
         startEnhancer={
           <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
@@ -186,6 +184,8 @@ export const StoryAccordionOverrides = () => (
             stylePreset: 'accordionHeaderCustom',
             typographyPreset: 'utilityButton020',
             spaceInline: 'space030',
+            paddingBlock: 'spaceInset040',
+            paddingInline: 'spaceInset040',
             indicatorIcon: {
               stylePreset: 'inkPositive',
             },

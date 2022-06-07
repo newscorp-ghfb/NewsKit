@@ -1412,8 +1412,8 @@ exports[`Accordion renders with overrides 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 12px;
-  padding-block: 12px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-2>:not(:last-of-type) {

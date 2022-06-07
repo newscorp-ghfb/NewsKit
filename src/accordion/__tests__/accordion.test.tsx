@@ -185,6 +185,8 @@ describe('Accordion', () => {
             stylePreset: 'accordionHeaderCustom',
             typographyPreset: 'utilityButton020',
             spaceInline: 'space030',
+            paddingBlock: 'spaceInset040',
+            paddingInline: 'spaceInset040',
             indicatorIcon: {
               stylePreset: 'inkPositive',
             },
@@ -209,5 +211,4 @@ describe('Accordion', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
-  // test('line 77 in accordion.tsx', () => {});
 });

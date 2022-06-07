@@ -13,6 +13,7 @@ export default {
       backgroundColor: '{{colors.interactiveInput010}}',
       color: '{{colors.interactiveInput040}}',
     },
+    // To Do: Focus state should be added in or after https://nidigitalsolutions.jira.com/browse/PPDSC-2151.
     disabled: {
       backgroundColor: '{{colors.interactiveDisabled010}}',
       color: '{{colors.inkNonEssential}}',
