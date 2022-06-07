@@ -96,21 +96,6 @@ const AudioPropsAndVolumeControlOverridenShortcuts: AudioPlayerComposableProps =
   ),
 };
 
-// const AudioPropsAndVolumeControlWithOverrides: AudioPlayerComposableProps = {
-//   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
-//   children: (
-//     <>
-//       <AudioPlayerVolumeControl overrides={{
-//         slider: {
-//           track: {
-//             stylePreset: 'sliderTrack'
-//           }
-//         }
-//       }} />
-//     </>
-//   ),
-// };
-
 const recordedAudioPropsAutoplay: AudioPlayerComposableProps = {
   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
   autoPlay: true,
@@ -916,15 +901,6 @@ describe('Audio Player Composable', () => {
       );
       expect(asFragment()).toMatchSnapshot();
     });
-
-    // it('should render correctly with overrides prop', () => {
-    //   const {asFragment} = renderWithTheme(
-    //     AudioPlayerComposable,
-    //     AudioPropsAndVolumeControlWithOverrides,
-    //   );
-    //   expect(asFragment()).toMatchSnapshot();
-    // });
-    
   });
 
   describe('Instrumentation tests', () => {

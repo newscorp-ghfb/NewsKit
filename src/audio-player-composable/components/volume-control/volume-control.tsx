@@ -16,10 +16,10 @@ import {
   VolumeSliderContainer,
 } from './styled';
 import {useReactKeys} from '../../../utils/hooks';
-import { deepMerge } from '../../../utils/deep-merge';
-import { mergeBreakpointObject } from '../../../utils/merge-breakpoint-object';
-import { filterOutFalsyProperties } from '../../../utils/filter-object';
-import { ButtonSize } from '../../../button/types';
+import {deepMerge} from '../../../utils/deep-merge';
+import {mergeBreakpointObject} from '../../../utils/merge-breakpoint-object';
+import {filterOutFalsyProperties} from '../../../utils/filter-object';
+import {ButtonSize} from '../../../button/types';
 
 const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps> = props => {
   const {getVolumeControlProps} = useAudioPlayerContext();
@@ -42,21 +42,19 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
     if (unMutedVolume !== volume && volume > 0) {
       setUnMutedVolume(volume);
     }
-  },[unMutedVolume, volume])
+  }, [unMutedVolume, volume]);
 
   const theme = useTheme();
-  const {
-    volumeControlButtonStylePreset,
-    iconSize,
-  } = getTokensForVolumeControl(theme, overrides);
+  const {volumeControlButtonStylePreset, iconSize} = getTokensForVolumeControl(
+    theme,
+    overrides,
+  );
 
-
-  const sliderOverrides =  {
+  const sliderOverrides = {
     ...deepMerge(
       mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
       theme.componentDefaults.audioPlayerVolumeControl.slider,
-      /* istanbul ignore next */
-      filterOutFalsyProperties(overrides?.slider),
+      filterOutFalsyProperties(overrides.slider),
     ),
   };
 
