@@ -1,6 +1,6 @@
 module.exports = {
-  name: 'codemods',
-  displayName: 'Codemods',
+  name: 'codemod',
+  displayName: 'Codemod',
   bail: true,
   rootDir: './',
   testEnvironment: 'node',

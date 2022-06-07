@@ -40,8 +40,8 @@ unit_test_docs:
 unit_test_comps:
 	yarn test:unit:ci --projects=src
 
-unit_test_codemods:
-	yarn test:unit:ci --projects=codemods
+unit_test_codemod:
+	yarn test:unit:ci --projects=codemod
 
 lint:
 	yarn lint
@@ -70,11 +70,11 @@ publish_npm_dev:
 publish_npm:
 	cd dist; yarn publish --no-git-tag-version;
 
-publish_codemods_npm:
-	yarn build:sync-codemods-version; cd codemods; yarn publish --no-git-tag-version;
+publish_codemod_npm:
+	yarn build:sync-codemod-version; cd codemod; yarn publish --no-git-tag-version;
 
-publish_codemods_npm_dev:
-	cd codemods; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable;
+publish_codemod_npm_dev:
+	cd codemod; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable;
 
 build_docker:
 	docker build -t ncu-newskit .

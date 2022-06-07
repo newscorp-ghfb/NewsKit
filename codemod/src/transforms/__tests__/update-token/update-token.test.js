@@ -7,7 +7,7 @@ function read(fileName) {
   return readFile(path.join(__dirname, fileName));
 }
 
-describe('@newskit/codemods', () => {
+describe('@newskit/codemod', () => {
   test('update-token', () => {
     const actual = transform(
       {

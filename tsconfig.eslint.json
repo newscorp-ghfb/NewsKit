@@ -7,7 +7,7 @@
     "cypress/",
     "scripts/",
     "githooks/",
-    "codemods/",
+    "codemod/",
     "jest.config.js",
     ".eslintrc.js",
     "applitools.components.config.js",

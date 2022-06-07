@@ -9,13 +9,13 @@ Codemods are transformations that run on your codebase programmatically. This al
 You can run these at the root of your project.
 
 ```sh
-npx newskit-codemods [codemod] [paths]
+npx @newskit/codemod [codemod] [paths]
 ```
 
 run to see all codemods and flags
 
 ```sh
-npx newskit-codemods --help
+npx @newskit/codemod --help
 ```
 
 ## Development

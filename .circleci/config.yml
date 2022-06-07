@@ -443,15 +443,15 @@ jobs:
       - slack/status:
           <<: *slack_status
 
-  test_unit_codemods:
+  test_unit_codemod:
     executor: node-large
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
       - run:
-          name: Unit Testing Codemods
-          command: make unit_test_codemods
+          name: Unit Testing Codemod
+          command: make unit_test_codemod
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - store_test_results:
@@ -672,8 +672,8 @@ jobs:
                 name: Publish components to NPM
                 command: make publish_npm_dev
             - run:
-                name: Publish codemods to NPM
-                command: make publish_codemods_npm_dev
+                name: Publish codemod to NPM
+                command: make publish_codemod_npm_dev
       - unless:
           condition: << parameters.publish_dev >>
           steps:
@@ -681,8 +681,8 @@ jobs:
                 name: Publish components to NPM
                 command: make publish_npm
             - run:
-                name: Publish codemods to NPM
-                command: make publish_codemods_npm
+                name: Publish codemod to NPM
+                command: make publish_codemod_npm
       - slack/status:
           <<: *slack_status
 
@@ -981,7 +981,7 @@ workflows:
       - test_unit_docs:
           requires:
             - build_icons
-      - test_unit_codemods:
+      - test_unit_codemod:
           requires:
             - build_icons
       - test_newskit_in_nextjs_app:
@@ -1028,7 +1028,7 @@ workflows:
             - lint
             - test_unit_comps
             - test_unit_docs
-            - test_unit_codemods
+            - test_unit_codemod
             - test_e2e_comps
             - test_e2e_docs_pr
       - publish_npm:
@@ -1141,7 +1141,7 @@ workflows:
       - test_unit_docs:
           requires:
             - build_icons
-      - test_unit_codemods:
+      - test_unit_codemod:
           requires:
             - build_icons
       - test_e2e_comps:
@@ -1177,7 +1177,7 @@ workflows:
             - lint
             - test_unit_comps
             - test_unit_docs
-            - test_unit_codemods
+            - test_unit_codemod
             - test_e2e_comps
             - test_e2e_docs_dev
       - publish_npm:
@@ -1196,7 +1196,7 @@ workflows:
             - lint
             - test_unit_comps
             - test_unit_docs
-            - test_unit_codemods
+            - test_unit_codemod
             - test_e2e_comps
             - test_e2e_docs_dev
       - eks_flux_deploy:
@@ -1316,7 +1316,7 @@ workflows:
           <<: *only_on_version_tag
           requires:
             - build_icons
-      - test_unit_codemods:
+      - test_unit_codemod:
           <<: *only_on_version_tag
           requires:
             - build_icons
@@ -1355,7 +1355,7 @@ workflows:
             - lint
             - test_unit_comps
             - test_unit_docs
-            - test_unit_codemods
+            - test_unit_codemod
             - test_e2e_comps
             - test_e2e_docs_prod
       - test_newskit_in_nextjs_app:
@@ -1370,7 +1370,7 @@ workflows:
             - lint
             - test_unit_comps
             - test_unit_docs
-            - test_unit_codemods
+            - test_unit_codemod
             - test_e2e_comps
             - test_e2e_docs_prod
             - test_newskit_in_nextjs_app
