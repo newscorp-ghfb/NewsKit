@@ -52,26 +52,28 @@ export const ParagraphDropCap = withOwnTheme(ThemelessParagraphDropCap)({
 const getFirstWord = (
   children: (React.ReactChild | React.ReactFragment | React.ReactPortal)[],
 ): string => {
-  if (children.length > 0 && typeof children[0] === 'string') {
-    return children[0].split(' ')[0];
+  const [firstChild] = children;
+  if (children.length > 0 && typeof firstChild === 'string') {
+    return firstChild.split(' ')[0];
   }
-  if (children.length && isFragment(children[0])) {
-    return getFirstWord(React.Children.toArray(children[0].props.children));
+  if (children.length && isFragment(firstChild)) {
+    return getFirstWord(React.Children.toArray(firstChild.props.children));
   }
   return '';
 };
 
 const removeFirstWord = (
   children: (React.ReactChild | React.ReactFragment | React.ReactPortal)[],
-) => {
-  if (children.length > 0 && typeof children[0] === 'string') {
-    // eslint-disable-next-line no-param-reassign
-    children[0] = children[0].split(' ').slice(1).join(' ');
-  } else if (children.length && isFragment(children[0])) {
-    // eslint-disable-next-line no-param-reassign
-    children[0] = removeFirstWord(
-      React.Children.toArray(children[0].props.children),
-    );
+): (React.ReactChild | React.ReactFragment | React.ReactPortal)[] => {
+  const [firstChild, ...rest] = children;
+  if (children.length > 0 && typeof firstChild === 'string') {
+    return [firstChild.split(' ').slice(1).join(' '), ...rest];
+  }
+  if (children.length && isFragment(firstChild)) {
+    return [
+      removeFirstWord(React.Children.toArray(firstChild.props.children)),
+      ...rest,
+    ];
   }
 
   return children;
@@ -89,12 +91,12 @@ Creating the fallowing structure:
  */
 
 export const Paragraph: React.FC<ParagraphProps> = ({
-  children: ch,
+  children,
   overrides = {},
   dropCap = false,
 }) => {
-  const children = React.Children.toArray(ch);
-  const firstWord = getFirstWord(children);
+  const childrenAsArray = React.Children.toArray(children);
+  const firstWord = getFirstWord(childrenAsArray);
   const useDropCap = dropCap && firstWord;
 
   return (
@@ -110,7 +112,7 @@ export const Paragraph: React.FC<ParagraphProps> = ({
           <ScreenReaderOnly>{firstWord}</ScreenReaderOnly>
         </>
       )}
-      {useDropCap ? removeFirstWord(children) : children}
+      {useDropCap ? removeFirstWord(childrenAsArray) : childrenAsArray}
     </ParagraphText>
   );
 };
