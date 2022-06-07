@@ -48,12 +48,27 @@ const Opacity = (layoutProps: LayoutProps) => (
           headline="Overview"
           description="Opacity foundations consist of a scale of styles that can make interface elements appear more translucent.In some cases, a component will have an opacity applied
 to a background."
-        >
-          <Table
-            columns={['Opacity', 'Token', 'Value', 'Common usage']}
-            rows={opacityRows}
-          />
-        </ContentPrimary>
+          showSeparator
+        />
+        <ContentSection sectionName="Opacity">
+          <ContentPrimary
+            id="Opacity"
+            toc="Opacity"
+            headline="Opacity"
+            description={
+              <>
+                Opacity is used in a UI to make interface elements more or less
+                translucent that can be applied to a Block.
+                <br />
+              </>
+            }
+          >
+            <Table
+              columns={['Opacity', 'Token', 'Value', 'Common usage']}
+              rows={opacityRows}
+            />
+          </ContentPrimary>
+        </ContentSection>
         <ContentSection sectionName="a11y">
           <ContentPrimary
             id="a11y"
