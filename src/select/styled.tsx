@@ -67,6 +67,7 @@ export const StyledSelectButton = styled.button<{
     return 'pointer';
   }};
 
+  // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
   ${({$size}) =>
     getResponsiveSpace(`padding`, `select.${$size}.button`, '', 'spaceInset')}
 
@@ -112,9 +113,11 @@ export const StyledSelectPanel = styled.div<{
   outline: none;
   z-index: 1;
 
+  // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
   ${({$size}) =>
     getResponsiveSpace(`marginTop`, `select.${$size}.panel`, '', 'spaceStack')}
 
+  // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
   ${({$size}) =>
     getResponsiveSpace(
       space => ({paddingTop: space, paddingBottom: space}),
@@ -164,6 +167,7 @@ export const StyledOption = styled.div<{
     text-overflow: ellipsis;
   }
 
+  // LOGICAL_PROPS_TO_DO: this gap is not currently applied because the parent is not display:grid
   ${({$spaceInline}) =>
     $spaceInline ? getSpacingCssFromTheme('columnGap', $spaceInline) : null};
 
@@ -175,10 +179,13 @@ export const StyledOption = styled.div<{
 
   ${({$size}) => getTypographyPreset(`selectOption.${$size}`, '')}
 
+  // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
   ${({$size}) =>
     getResponsiveSpace(`padding`, `selectOption.${$size}`, '', 'spaceInset')}
 
-    ${({$size}) =>
+  ${logicalProps()};
+
+  ${({$size}) =>
     getResponsiveSize('minHeight', `selectOption.${$size}`, '', 'minHeight')}
 `;
 

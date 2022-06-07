@@ -2241,6 +2241,7 @@ Object {
     "divider": Object {
       "stylePreset": "divider",
     },
+    "width": "100%",
   },
   "structuredListItem": Object {
     "icon": Object {

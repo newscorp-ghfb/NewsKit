@@ -323,3 +323,22 @@ export const StoryResetScrollPosition = () => {
   );
 };
 StoryResetScrollPosition.storyName = 'reset-scroll-position';
+
+export const StoryLogicalProps = () => (
+  <MainContainer>
+    <StorybookSubHeading>Padding</StorybookSubHeading>
+    <Container>
+      <Scroll overrides={{paddingInline: '30px', paddingBlock: '15px'}}>
+        <Stack flow="horizontal-top">{tags}</Stack>
+      </Scroll>
+    </Container>
+
+    <StorybookSubHeading>Margin</StorybookSubHeading>
+    <Container>
+      <Scroll overrides={{marginInline: '30px', marginBlock: '15px'}}>
+        <Stack flow="horizontal-top">{tags}</Stack>
+      </Scroll>
+    </Container>
+  </MainContainer>
+);
+StoryLogicalProps.storyName = 'logical-props';

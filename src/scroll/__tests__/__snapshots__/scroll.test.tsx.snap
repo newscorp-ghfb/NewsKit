@@ -150,6 +150,52 @@ exports[`Scroll renders horizontal scroll with visible controls 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Scroll renders scroll with logical prop overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  margin-block: 15px;
+  padding-inline: 30px;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.emotion-1::-webkit-scrollbar {
+  display: none;
+}
+
+.emotion-1 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="scroll-container"
+      tabindex="0"
+    >
+      <p
+        style="width: 400px;"
+      >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ipsa, molestiae officia ipsum facere blanditiis iste obcaecati esse, quidem placeat tenetur dicta distinctio inventore quasi sit sint explicabo quia maiores. Doloremque sit doloribus incidunt aperiam recusandae magnam nostrum labore eveniet, perferendis a, quibusdam, quos earum! Numquam quaerat recusandae commodi laudantium modi inventore voluptates officiis nesciunt eius, quis velit voluptatum, quos natus, adipisci nisi! Laborum eos incidunt maiores eaque obcaecati, itaque perferendis! Consectetur magnam pariatur amet, enim recusandae at laborum? Corrupti libero non, in eligendi ipsum odio fugiat excepturi, architecto nam pariatur reiciendis adipisci laudantium maiores. Earum quis magnam consequatur maxime veniam itaque quae eveniet quasi harum neque, expedita totam tempore aspernatur nostrum maiores repudiandae suscipit velit quaerat illo! Temporibus pariatur, enim mollitia animi odio tempore illum asperiores est soluta. Itaque obcaecati eum molestias expedita neque. Atque eum sint esse optio in dolore cum officia iusto inventore ullam nobis culpa ipsum nostrum aspernatur perferendis recusandae, maiores consectetur mollitia provident! Placeat voluptatem a natus quod sequi asperiores nam! Cupiditate illo voluptatum cumque laudantium quo assumenda ut repudiandae perferendis. Molestias, beatae sunt deleniti quasi nobis, provident sequi iste quod corporis incidunt repellat architecto ab voluptates saepe dolor velit, perspiciatis adipisci veritatis debitis laboriosam?
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Scroll renders scroll with overriden controls style 1`] = `
 <DocumentFragment>
   .emotion-0 {
