@@ -444,7 +444,7 @@ jobs:
           <<: *slack_status
 
   test_unit_codemod:
-    executor: node-large
+    executor: node
     steps:
       - checkout
       - attach_workspace:
