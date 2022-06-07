@@ -74,7 +74,7 @@ publish_codemod_npm:
 	yarn build:sync-codemod-version; cd codemod; yarn publish --no-git-tag-version;
 
 publish_codemod_npm_dev:
-	cd codemod; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable;
+	cd codemod; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable --access public;
 
 build_docker:
 	docker build -t ncu-newskit .
