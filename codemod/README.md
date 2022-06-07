@@ -8,16 +8,21 @@ Codemods are transformations that run on your codebase programmatically. This al
 
 You can run these at the root of your project.
 
-```sh
+```bash
 npx @newskit/codemod [codemod] [paths]
 ```
 
 run to see all codemods and flags
 
-```sh
+```bash
 npx @newskit/codemod --help
 ```
 
 ## Development
 
-TODO: write it later
+Link this package in your global `node_modules` by running:
+
+```bash
+cd codemod
+npm link
+```
