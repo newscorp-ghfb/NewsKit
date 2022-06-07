@@ -42,8 +42,8 @@ const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
   overlayTintBase030: usageString,
   overlayTintBase040: (
     <>
-      Internal overlay component that sits behind the panels (used by
-      <Link href="/components/modal">modals</Link> and
+      Internal overlay component that sits behind the panels (used by{' '}
+      <Link href="/components/modal">modals</Link> and{' '}
       <Link href="/components/drawer">drawers</Link>)
     </>
   ),
