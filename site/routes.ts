@@ -786,7 +786,7 @@ export default [
             id: '/patterns/best-practice',
             description:
               'Help users to fill in forms quickly and accurately by following these industry best practices.',
-            illustration: 'patterns/overview/hero',
+            illustration: 'patterns/best-practice/hero',
           },
         ],
       },

@@ -35,7 +35,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
       type: 'Forms',
       name: 'Best practice',
       hero: {
-        illustration: 'patterns/overview/hero',
+        illustration: 'patterns/best-practice/hero',
       },
       introduction: `Help users to fill in forms quickly and accurately by following these industry best practices.`,
     }}
@@ -87,7 +87,9 @@ const BestPractice = (layoutProps: LayoutProps) => (
                 title: 'Tip',
                 description:
                   'If your form is split into several steps, there should  be an easy way for the user to go back to the previous step. Data should be autosaved when they go backwards/forwards through the steps.',
-                media: getIllustrationComponent('theme/fonts/cap-height'),
+                media: getIllustrationComponent(
+                  'patterns/best-practice/structure-layout/tip',
+                ),
               },
             ]}
           />
@@ -171,6 +173,43 @@ const BestPractice = (layoutProps: LayoutProps) => (
           }
           showSeparator
         />
+      </ContentSection>
+
+      <ContentSection sectionName="progress & abandonment">
+        <ContentPrimary
+          id="progress-abandonment"
+          toc="Progress & abandonment"
+          headline={<StyledHeading>Progress & abandonment</StyledHeading>}
+          description="The user's progress should be highlighted, so they understand
+          where they are in the relevant journey, what step is coming next
+          and how long the process will be. These can be given a visual
+          treatment so it's apparent to the user which steps are 'to be done',
+          'doing' and 'done'."
+          showSeparator
+        >
+          <MediaList
+            layout="1-span"
+            cardsLayout="horizontal"
+            cards={[
+              {
+                title: 'Tip',
+                description:
+                  'The user should be able to easily go back through each step and edit their data, in case a mistake has been made.',
+                media: getIllustrationComponent(
+                  'patterns/best-practice/progress-abandonment/tip',
+                ),
+              },
+              {
+                title: 'Abandonment capture',
+                description:
+                  'If users attempt to abandon a form or registration process by navigating away from a window, you can prompt them to stay on the page and continue their journey. This can be done natively via the user’s browser or via a bespoke experience that we can manage/control.',
+                media: getIllustrationComponent(
+                  'patterns/best-practice/progress-abandonment/abandonment',
+                ),
+              },
+            ]}
+          />
+        </ContentPrimary>
       </ContentSection>
     </ComponentPageCell>
   </PatternPageTemplate>
