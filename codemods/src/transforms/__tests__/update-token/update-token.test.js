@@ -20,4 +20,8 @@ describe('@newskit/codemods', () => {
     const expected = read('./expected.js');
     expect(actual).toBe(expected);
   });
+
+  test('fail test for CI', () => {
+    expect(1).toBe(2);
+  });
 });
