@@ -83,3 +83,23 @@ export const StoryWithOverrides = () => (
   </>
 );
 StoryWithOverrides.storyName = 'with-overrides';
+
+export const StoryLogicalProps = () => (
+  <>
+    <StorybookSubHeading>
+      Standfirst - logical padding props
+    </StorybookSubHeading>
+    <Standfirst
+      overrides={{styledText: {paddingInline: '20px', paddingBlock: '10px'}}}
+    >
+      {bodyString}
+    </Standfirst>
+    <StorybookSubHeading>Standfirst - logical margin props</StorybookSubHeading>
+    <Standfirst
+      overrides={{styledText: {marginInline: '20px', marginBlock: '10px'}}}
+    >
+      {bodyString}
+    </Standfirst>
+  </>
+);
+StoryLogicalProps.storyName = 'logical-props';

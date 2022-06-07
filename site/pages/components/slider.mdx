@@ -3,6 +3,7 @@ import Playground, {withProps} from '../../components/playground';
 import Prop from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
 import {CodeFromDefaultPresets} from '../../components/code';
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
 import {
   StatefulSlider,
@@ -176,6 +177,7 @@ NewsKit also exports a StatefulSlider component which has the same props (except
         If provided, this overrides the space between the min/max labels and the slider track.
       </Prop>
     </Prop>
+    <CommonLogicalPropsMDX nested/>
   </Prop>
 
 Refer to the defaults below for the full object structure:
