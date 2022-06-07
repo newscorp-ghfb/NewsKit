@@ -1,4 +1,15 @@
 export const stylePresets = {
+  buttonOutlinedSecondary: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interactiveSecondary030}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderRadius: '{{borders.borderRadiusRounded050}}',
+      color: '{{colors.inkBase}}',
+      iconColor: '{{colors.inkBase}}',
+    },
+  },
   buttonLightDarkToggle: {
     base: {
       backgroundColor: '{{colors.interactiveSecondary010}}',
@@ -22,17 +33,45 @@ export const stylePresets = {
       color: '{{colors.interactivePrimary050}}',
     },
   },
+
   linkTopNavigation: {
     base: {
       color: '{{colors.inkSubtle}}',
       textDecoration: 'none',
+      borderColor: '{{colors.transparent}}',
+      borderWidth: '4px',
+      borderStyle: 'solid',
     },
     hover: {
       color: '{{colors.inkSubtle}}',
       textDecoration: 'none',
     },
+    selected: {
+      borderColor:
+        '{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}',
+      color: '{{colors.interactivePrimary030}}',
+      textDecoration: 'none',
+    },
+  },
+  sideBarNavigation: {
+    base: {
+      textDecoration: 'none',
+      borderColor: '{{colors.transparent}}',
+      borderWidth: '4px',
+      borderStyle: 'solid',
+      color: '{{colors.inkSubtle}}', // TODO write color
+    },
+    hover: {
+      color: '{{colors.interactivePrimary030}}',
+      backgroundColor: '{{colors.interactivePrimary010}}',
+    },
     active: {
-      color: '{{colors.inkContrast}}',
+      color: '{{colors.interactivePrimary050}}',
+    },
+    selected: {
+      borderColor:
+        '{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ',
+      color: '{{colors.interactivePrimary030}}',
       textDecoration: 'none',
     },
   },
@@ -92,21 +131,14 @@ export const stylePresets = {
   },
   sidebarNavItem: {
     base: {
-      backgroundColor: '{{colors.transparent}}',
       color: '{{colors.inkSubtle}}',
     },
     hover: {
-      backgroundColor: '{{colors.interactivePrimary010}}',
-      borderRadius: '{{borders.borderRadiusDefault}}',
-      color: '{{colors.inkContrast}}',
+      color: '{{colors.interactivePrimary030}}',
     },
-    active: {
-      backgroundColor: '{{colors.interactivePrimary020}}',
-      borderRadius: '{{borders.borderRadiusDefault}}',
-      color: '{{colors.inkContrast}}',
-    },
+
     selected: {
-      color: '{{colors.inkContrast}}',
+      color: '{{colors.interactivePrimary030}}',
     },
   },
   sidebarHeader: {
@@ -184,6 +216,13 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceBrand010}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
+    },
+  },
+  menuDivider: {
+    base: {
+      borderStyle: 'solid',
+      borderColor: '{{colors.interface050}}',
+      borderWidth: '{{borders.borderWidth010}}',
     },
   },
   flagSolidPositive: {

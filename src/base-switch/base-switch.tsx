@@ -1,4 +1,4 @@
-import React, {useCallback, useRef} from 'react';
+import React, {useCallback, useLayoutEffect, useRef, useState} from 'react';
 import composeRefs from '@seznam/compose-react-refs';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
 import {
@@ -15,6 +15,7 @@ import {useControlled} from '../utils/hooks';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {isFocusVisible} from '../utils/focus-visible';
+import {omitLogicalPropsFromOverrides} from '../utils/logical-properties';
 
 export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
   (
@@ -33,6 +34,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
       path,
       defaultSwitchSelectorComponent: defaultSwitchComponent,
       type,
+      hideFeedback,
       ...restProps
     },
     inputRef,
@@ -114,6 +116,9 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
         checked,
         size,
         iconSize,
+        parentOverrides: omitLogicalPropsFromOverrides(overrides),
+        isFocused: isInputFocused,
+        isHovered: isLabelHovered || isInputFocused,
       },
     );
 
@@ -122,6 +127,12 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
         {label}
       </StyledLabel>
     );
+
+    const [switchPadding, setSwitchPadding] = useState('');
+    const switchRef = useRef<HTMLDivElement>(null);
+    useLayoutEffect(() => {
+      setSwitchPadding(getComputedStyle(switchRef.current!).paddingInline);
+    }, []);
 
     return (
       <StyledSwitchAndLabelWrapper
@@ -145,17 +156,23 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
           role="presentation"
           path={path}
         >
-          <StyledSwitchFeedback
-            size={size}
-            overrides={overrides}
-            state={state}
-            onClick={onFeedbackClick}
-            data-testid={`${type}-feedback`}
-            isActive={isInputActive}
-            isHovered={isLabelHovered}
-            path={path}
-          />
+          {!hideFeedback && (
+            <StyledSwitchFeedback
+              thumbOffset={switchPadding}
+              centreOnThumb={path === 'switch'}
+              checked={checked}
+              size={size}
+              overrides={overrides}
+              state={state}
+              onClick={onFeedbackClick}
+              data-testid={`${type}-feedback`}
+              isActive={isInputActive}
+              isHovered={isLabelHovered}
+              path={path}
+            />
+          )}
           <StyledSwitch
+            ref={switchRef}
             checked={checked}
             state={state}
             overrides={overrides}

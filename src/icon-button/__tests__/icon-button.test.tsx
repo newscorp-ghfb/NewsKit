@@ -1,5 +1,9 @@
-import React from 'react';
-import {renderToFragmentWithTheme} from '../../test/test-utils';
+import React, {createRef} from 'react';
+import {act} from '@testing-library/react';
+import {
+  renderToFragmentWithTheme,
+  renderWithTheme,
+} from '../../test/test-utils';
 import {IconButton} from '..';
 import {ButtonSize, IconButtonProps} from '../../button';
 import {IconFilledEmail} from '../../icons';
@@ -72,6 +76,25 @@ describe('IconButton', () => {
     };
     const fragment = renderToFragmentWithTheme(renderIconButton, props);
     expect(fragment).toMatchSnapshot();
+  });
+
+  test('focus can be triggered with ref', async () => {
+    const iconButtonRef = createRef<HTMLButtonElement>();
+
+    const props = {
+      ref: iconButtonRef,
+      'aria-label': 'Test icon button',
+      children: <IconFilledEmail />,
+    };
+
+    renderWithTheme(IconButton, props);
+
+    await act(async () => {
+      if (iconButtonRef && iconButtonRef.current) {
+        iconButtonRef.current.focus();
+      }
+    });
+    expect(iconButtonRef.current).toHaveFocus();
   });
 
   test('renders icon button with logical prop overrides', () => {

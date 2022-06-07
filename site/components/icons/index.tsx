@@ -12,3 +12,5 @@ export * from './icon-filled-firefox';
 export * from './icon-filled-safari';
 export * from './icon-filled-edge';
 export * from './icon-filled-timer';
+export * from './icon-filled-expand-less';
+export * from './icon-filled-expand-more';
