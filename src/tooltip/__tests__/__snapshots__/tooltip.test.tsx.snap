@@ -49,6 +49,7 @@ exports[`Tooltip offset should be applied with pointer and mq distance override 
 }
 
 <div
+    aria-hidden="true"
     class="Tooltip emotion-0"
     id="floating-ui-38"
     role="tooltip"
@@ -111,6 +112,7 @@ exports[`Tooltip offset should be applied with pointer and non-px distance overr
 }
 
 <div
+    aria-hidden="true"
     class="Tooltip emotion-0"
     id="floating-ui-35"
     role="tooltip"
@@ -173,6 +175,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
 }
 
 <div
+    aria-hidden="true"
     class="Tooltip emotion-0"
     id="floating-ui-32"
     role="tooltip"
@@ -235,6 +238,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
 }
 
 <div
+    aria-hidden="true"
     class="Tooltip emotion-0"
     id="floating-ui-29"
     role="tooltip"
@@ -284,6 +288,7 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="Tooltip emotion-0"
     id="floating-ui-26"
     role="tooltip"
@@ -329,6 +334,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="Tooltip emotion-0"
     id="floating-ui-2"
     role="tooltip"
@@ -376,6 +382,7 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="Tooltip emotion-0"
     id="floating-ui-11"
     role="tooltip"
@@ -434,6 +441,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="Tooltip emotion-0"
     id="floating-ui-14"
     role="tooltip"
@@ -496,6 +504,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
 }
 
 <div
+    aria-hidden="true"
     class="Tooltip emotion-0"
     id="floating-ui-20"
     role="tooltip"
@@ -558,6 +567,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
 }
 
 <div
+    aria-hidden="true"
     class="Tooltip emotion-0"
     id="floating-ui-17"
     role="tooltip"
@@ -620,6 +630,7 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="Tooltip emotion-0"
     id="floating-ui-23"
     role="tooltip"

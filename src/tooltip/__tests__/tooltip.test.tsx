@@ -50,8 +50,8 @@ describe('Tooltip', () => {
   describe('should render correct styles:', () => {
     test('default', async () => {
       const {getByRole, asFragment} = await asyncRender(Tooltip, defaultProps);
-      expect(getByRole('tooltip').textContent).toBe('hello');
-      expect(getByRole('tooltip')).toHaveStyle({
+      expect(getByRole('tooltip', {hidden: true}).textContent).toBe('hello');
+      expect(getByRole('tooltip', {hidden: true})).toHaveStyle({
         position: 'absolute',
       });
       expect(asFragment()).toMatchSnapshot();
@@ -61,15 +61,14 @@ describe('Tooltip', () => {
         children: <button type="submit">Add</button>,
         content: '',
       });
-      expect(queryByRole('tooltip')).not.toBeInTheDocument();
+      expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
     test('with different placement', async () => {
       const {getByRole} = await asyncRender(Tooltip, {
         ...defaultProps,
         placement: 'bottom',
       });
-      await act(async () => {});
-      expect(getByRole('tooltip')).toHaveStyle({
+      expect(getByRole('tooltip', {hidden: true})).toHaveStyle({
         position: 'absolute',
       });
     });
@@ -228,7 +227,7 @@ describe('Tooltip', () => {
       });
       const button = getByRole('button');
       fireEvent.mouseEnter(button);
-      expect(queryByRole('tooltip')).toBeInTheDocument();
+      expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
     });
     test('closes on mouseleave', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
@@ -239,7 +238,7 @@ describe('Tooltip', () => {
 
       fireEvent.mouseEnter(button);
       fireEvent.mouseLeave(button);
-      expect(queryByRole('tooltip')).not.toBeInTheDocument();
+      expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
     test('opens on focus by default', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
@@ -248,7 +247,7 @@ describe('Tooltip', () => {
       });
       const button = getByRole('button');
       fireEvent.focus(button);
-      expect(queryByRole('tooltip')).toBeInTheDocument();
+      expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
     });
 
     test('closes on blur', () => {
@@ -260,7 +259,7 @@ describe('Tooltip', () => {
       const button = getByRole('button');
       fireEvent.focus(button);
       fireEvent.blur(button);
-      expect(queryByRole('tooltip')).not.toBeInTheDocument();
+      expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
 
     test('will not open on focus when focus trigger is not passed', () => {
@@ -271,28 +270,28 @@ describe('Tooltip', () => {
       });
       const button = getByRole('button');
       fireEvent.focus(button);
-      expect(queryByRole('tooltip')).not.toBeInTheDocument();
+      expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
 
     test('dismisses with escape key', () => {
       const {queryByRole} = renderWithTheme(Tooltip, defaultProps);
-      expect(queryByRole('tooltip')).toBeInTheDocument();
+      expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
       fireEvent.keyDown(document.body, {key: 'Escape'});
-      expect(queryByRole('tooltip')).not.toBeInTheDocument();
+      expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
   });
 
   describe('pass the correct a11y attributes:', () => {
     test('have role tooltip when used as a description', () => {
       const {queryByRole} = renderWithTheme(Tooltip, defaultProps);
-      expect(queryByRole('tooltip')).toBeInTheDocument();
+      expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
     });
     test('do not have role tooltip when used as a label', () => {
       const {queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         asLabel: true,
       });
-      expect(queryByRole('tooltip')).not.toBeInTheDocument();
+      expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
     test('can describe the child when open and remove aria attribute when closed', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
@@ -359,7 +358,7 @@ describe('Tooltip', () => {
 
     const button = getByTestId('outside-control');
     fireEvent.click(button);
-    expect(queryByRole('tooltip')).toBeInTheDocument();
+    expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
   });
 
   describe('utils', () => {

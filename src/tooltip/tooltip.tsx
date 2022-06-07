@@ -113,6 +113,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
           placement={placement}
           overrides={overrides}
           hidePointer={hidePointer}
+          aria-hidden
           {...props}
         >
           <StyledPanel as={contentIsString ? 'p' : 'div'} overrides={overrides}>
