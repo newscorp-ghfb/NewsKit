@@ -10,6 +10,7 @@ import {
   getStylePreset,
   styled,
 } from '../utils';
+import {logicalProps} from '../utils/logical-properties';
 
 const getAlign = (align: string) => {
   switch (align) {
@@ -56,8 +57,9 @@ export const StyledLink = styled.a<StructuredListItemProps>`
 export const StyledListWrapper = styled.ul<StructuredListProps>`
   list-style: none;
   padding-left: 0;
-  width: 100%;
+  ${getResponsiveSize('width', 'structuredList', '', 'width')}
   margin: 0;
+  ${logicalProps()}
 `;
 
 export const StyledCell = styled(Cell)<

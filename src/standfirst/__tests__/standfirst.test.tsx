@@ -39,4 +39,16 @@ describe('Standfirst', () => {
     });
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders with logical prop overrides', () => {
+    const fragment = renderToFragmentWithTheme(Standfirst, {
+      overrides: {
+        styledText: {
+          paddingInline: '20px',
+          paddingBlock: '10px',
+        },
+      },
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });
