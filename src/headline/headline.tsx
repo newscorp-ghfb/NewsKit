@@ -8,10 +8,10 @@ import {
 import {HeadlineProps, HeadlinePropsWithRenderAs} from './types';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {logicalPropsWithTypographyCropSupport} from '../utils/logical-properties';
+import {getLogicalPropsAndTypographyPreset} from '../utils/logical-properties';
 
 const HeadlineContainer = styled.section<Pick<HeadlineProps, 'overrides'>>`
-  ${logicalPropsWithTypographyCropSupport('headline')}
+  ${getLogicalPropsAndTypographyPreset('headline')}
 `;
 
 const cssReset = css`

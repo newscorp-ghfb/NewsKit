@@ -129,6 +129,20 @@ describe('Scroll', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  test(`renders scroll with logical prop overrides`, () => {
+    const {asFragment} = renderWithTheme(
+      Scroll,
+      {
+        children: <Content />,
+        controls: 'static',
+        overrides: {paddingInline: '30px', marginBlock: '15px'},
+      },
+      myCustomTheme,
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   describe('flow', () => {
     const clientWidthMock = 600;
     const scrollWidthMock = 800;

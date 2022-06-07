@@ -1,6 +1,6 @@
 import {fireEvent} from '@testing-library/react';
 import React from 'react';
-import {StructuredListItem} from '..';
+import {StructuredListItem, StructuredListOverrides} from '..';
 import {EventTrigger, InstrumentationProvider, TextBlock} from '../..';
 import {IconOutlinedKeyboardArrowRight} from '../../icons';
 import {
@@ -75,6 +75,17 @@ const renderWithDividerOverrides = (props: StructuredListItemProps) => (
   >
     <StructuredListItem ariaLabel="list item" {...props} />
     <StructuredListItem ariaLabel="list item" {...props} />
+  </StructuredList>
+);
+
+const renderWithOverrides = (overrides: StructuredListOverrides) => (
+  <StructuredList ariaLabel="list" divider overrides={overrides}>
+    <StructuredListItem ariaLabel="list item">
+      <div />
+    </StructuredListItem>
+    <StructuredListItem ariaLabel="list item">
+      <div />
+    </StructuredListItem>
   </StructuredList>
 );
 
@@ -156,6 +167,17 @@ describe('StructuredList', () => {
         children: StructuredListCellDefault,
       };
       const fragment = renderToFragmentWithTheme(renderDefault, props);
+      expect(fragment).toMatchSnapshot();
+    });
+    test('renders with logical prop overrides', () => {
+      const overrides: StructuredListOverrides = {
+        paddingInline: '50px',
+        paddingBlock: '25px',
+      };
+      const fragment = renderToFragmentWithTheme(
+        renderWithOverrides,
+        overrides,
+      );
       expect(fragment).toMatchSnapshot();
     });
     test('renders with two cells default style', () => {
