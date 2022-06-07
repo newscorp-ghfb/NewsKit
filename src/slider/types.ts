@@ -1,10 +1,11 @@
 import {Range} from 'react-range';
 import {MQ} from '../utils/style';
+import {LogicalProps} from '../utils/logical-properties';
 
 type RenderTrackFunction = Range['props']['renderTrack'];
 type RenderThumbFunction = Range['props']['renderThumb'];
 
-export interface SliderOverrideProps {
+export interface SliderOverrideProps extends LogicalProps {
   track?: {
     stylePreset?: MQ<string>;
     size?: string;

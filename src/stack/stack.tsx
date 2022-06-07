@@ -11,6 +11,7 @@ import {
 import {StackChild, StackChildProps} from '../stack-child';
 import {hasMatchingDisplayNameWith, as as asUtil} from '../utils/component';
 import {MQ} from '../utils/style/types';
+import {extractLogicalPropsFromOverrides} from '../utils/logical-properties';
 
 const getAsProp = (as: StackProps['as'], list: StackProps['list']) =>
   !list && as ? asUtil(as) : null;
@@ -56,6 +57,7 @@ const wrapChild = (
     spaceInline,
     flow,
     $wrap: wrap,
+    ...extractLogicalPropsFromOverrides(child.props),
   };
   const hasSpace = hasSpacing(spaceStack, spaceInline);
 
