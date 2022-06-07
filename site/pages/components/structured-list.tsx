@@ -18,6 +18,10 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {
+  logicalMarginOverrideProps,
+  logicalPaddingOverrideProps,
+} from '../../components/component-api/common-logical-props';
 
 const infoIcon = (
   <IconFilledInfo
@@ -410,6 +414,14 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
                 </>
               ),
             },
+            {
+              attribute: 'width',
+              type: 'MQ<string>',
+              default: '100%',
+              description: 'Overrides width of the Structured List.',
+            },
+            ...logicalMarginOverrideProps,
+            ...logicalPaddingOverrideProps,
           ],
         },
         {

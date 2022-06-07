@@ -553,6 +553,88 @@ export const StorySelectOverrides = () => (
 );
 StorySelectOverrides.storyName = 'Select with overrides';
 
+export const StorySelectLogicalProps = () => (
+  <>
+    <StorybookHeading>Select with overrides</StorybookHeading>
+    <Container>
+      <ThemeProvider theme={myCustomTheme}>
+        <Container>
+          <StorybookSubHeading>
+            Select with logical prop overrides
+          </StorybookSubHeading>
+          <Label
+            htmlFor="id-logical-props"
+            overrides={{
+              stylePreset: 'labelOverrides',
+            }}
+          >
+            Label
+          </Label>
+          <Select
+            id="id-logical-props"
+            aria-describedby="id-logical-props-at"
+            overrides={{
+              button: {
+                marginInline: '40px',
+                paddingBlock: '20px',
+                width: 'unset',
+              },
+              panel: {
+                paddingInline: '30px',
+                marginBlock: '30px',
+              },
+            }}
+          >
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+          <Block spaceStack="space020" />
+          <AssistiveText id="id-logical-props-at">Assistive Text</AssistiveText>
+        </Container>
+        <Container>
+          <StorybookSubHeading>
+            Select with logical prop item overrides
+          </StorybookSubHeading>
+          <Label
+            htmlFor="id-item-logical-props"
+            overrides={{
+              stylePreset: 'labelOverrides',
+            }}
+          >
+            Label
+          </Label>
+          <Select
+            id="id-item-logical-props"
+            aria-describedby="id-item-logical-props-at"
+          >
+            {items.map(item => (
+              <SelectOption
+                key={item}
+                value={item}
+                overrides={{
+                  paddingInline: '10px',
+                  marginBlock: '10px',
+                  stylePreset: 'selectOptionCustom',
+                }}
+              >
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+          <Block spaceStack="space020" />
+          <AssistiveText id="id-item-logical-props-at">
+            Assistive Text
+          </AssistiveText>
+        </Container>
+      </ThemeProvider>
+    </Container>
+  </>
+);
+StorySelectLogicalProps.storyName = 'Select with logical props';
+
 export const StorySelectOptionsDisplay = () => (
   <>
     <StorybookHeading>
