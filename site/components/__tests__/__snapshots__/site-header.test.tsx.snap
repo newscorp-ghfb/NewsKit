@@ -1080,7 +1080,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                   aria-current="false"
                   class="emotion-30"
                   data-testid="styled-indicator"
-                  href="/patterns/forms-index"
+                  href="/patterns/patterns-index"
                 >
                   <div
                     class="emotion-5"
@@ -2264,7 +2264,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                   aria-current="false"
                   class="emotion-30"
                   data-testid="styled-indicator"
-                  href="/patterns/forms-index"
+                  href="/patterns/patterns-index"
                 >
                   <div
                     class="emotion-5"
@@ -3372,7 +3372,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
                   aria-current="false"
                   class="emotion-25"
                   data-testid="styled-indicator"
-                  href="/patterns/forms-index"
+                  href="/patterns/patterns-index"
                 >
                   <div
                     class="emotion-5"

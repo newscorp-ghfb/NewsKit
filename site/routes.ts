@@ -766,7 +766,7 @@ export default [
       {
         title: 'Index',
         page: true,
-        id: '/patterns/forms-index',
+        id: '/patterns/patterns-index',
         indexPage: true,
       },
       {
