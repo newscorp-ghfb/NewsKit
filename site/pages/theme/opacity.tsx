@@ -9,6 +9,7 @@ import {
 import {ComponentPageCell} from '../../components/layout-cells';
 import {getTokenType} from '../../utils/get-token-type';
 import {Table, TableRow} from '../../components/table';
+import {Link} from '../../components/link';
 
 const opacity000Token =
   'Applied to the background of the feedback element applied to the multiple interactive elements, such as the Checkbox, or Radio Button on hover.';
@@ -58,7 +59,8 @@ to a background."
             description={
               <>
                 Opacity is used in a UI to make interface elements more or less
-                translucent that can be applied to a Block.
+                translucent that can be applied to a{' '}
+                <Link href="/components/block">Block.</Link>
                 <br />
               </>
             }

@@ -1,5 +1,6 @@
 import React from 'react';
 import {newskitLightTheme, Tab, Tabs} from 'newskit';
+import {Link} from '../../components/link';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
@@ -29,8 +30,18 @@ const DO_AND_DONT = [
 ];
 
 const usageString = 'Creative use case';
-const internalOverlay =
-  'Internal overlay component that sits behind the panels (used by modals and drawers)';
+const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
+  overlayTintBase010: usageString,
+  overlayTintBase020: usageString,
+  overlayTintBase030: usageString,
+  overlayTintBase040: (
+    <>
+      Internal overlay component that sits behind the panels (used by
+      <Link href="/componants/modal">modals</Link> and
+      <Link href="/componants/drawer">drawers</Link>)
+    </>
+  ),
+};
 
 const overlayRows = getTokenType(
   newskitLightTheme.overlays,
@@ -39,8 +50,7 @@ const overlayRows = getTokenType(
   value: tokenValue,
   tint: tokenName as string,
   token: tokenName,
-  exampleUsage:
-    tokenName === 'overlayTintBase040' ? internalOverlay : usageString,
+  commoUsage: TOKENS_DESCRIPTION[tokenName] || '-',
 })) as TableRow[];
 
 const inverserOverlayRows = getTokenType(
@@ -50,7 +60,7 @@ const inverserOverlayRows = getTokenType(
   value: tokenValue,
   tint: tokenName as string,
   token: tokenName,
-  exampleUsage: usageString,
+  commonUsage: usageString,
 })) as TableRow[];
 
 const Overlays = (layoutProps: LayoutProps) => (
@@ -80,6 +90,7 @@ const Overlays = (layoutProps: LayoutProps) => (
           description="Overlay foundations consist of tints in both ‘base’ styles
           (these are dark when used in a light theme) and ‘inverse’
           styles (these are light when used in a dark theme)."
+          showSeparator
         />
 
         <ContentSection sectionName="Tints">
@@ -87,23 +98,31 @@ const Overlays = (layoutProps: LayoutProps) => (
             id="tints"
             toc="Tints"
             headline="Tints"
-            description="Tints make colors in a UI more or less intense by aiding
+            description={
+              <>
+                Tints make colors in a UI more or less intense by aiding
                 legibility contrast between the foreground and background
                 elements.
-                'Base' tint tokens are used to darken a background or element.
-                'Inverse' tint tokens are used to lighten a background or
-                element."
+                <br />
+                <br />
+                `Base` tint tokens are used to darken a background or element.
+                <br />
+                <br />
+                `Inverse` tint tokens are used to lighten a background or
+                element.
+              </>
+            }
           >
             <Tabs size="medium">
               <Tab label="Base">
                 <Table
-                  columns={['Tint', 'Token', 'Value', 'Example usage']}
+                  columns={['Tint', 'Token', 'Value', 'Common usage']}
                   rows={overlayRows}
                 />
               </Tab>
               <Tab label="Inverse">
                 <Table
-                  columns={['Tint', 'Token', 'Value', 'Example usage']}
+                  columns={['Tint', 'Token', 'Value', 'Common usage']}
                   rows={inverserOverlayRows}
                 />
               </Tab>
