@@ -780,7 +780,7 @@ export default [
             page: true,
             id: '/patterns/forms/overview',
             description: 'Forms are used to collect customer’s data.',
-            illustration: 'patterns/overview/hero',
+            illustration: 'patterns/forms/overview/hero',
           },
         ],
       },
