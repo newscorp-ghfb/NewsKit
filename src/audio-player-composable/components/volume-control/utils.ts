@@ -16,7 +16,7 @@ export const getTokensForVolumeControl = (theme: Theme, overrides: {}) => {
     'stylePreset',
   );
   const iconSize = getVolumeControlToken('button', 'iconSize');
-  
+
   return {
     volumeControlButtonStylePreset,
     iconSize,

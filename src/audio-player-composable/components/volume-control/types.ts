@@ -14,8 +14,8 @@ export interface AudioPlayerVolumeControlProps {
   vertical?: boolean;
   collapsed?: boolean;
   overrides?: AudioPlayerVolumeControlOverridesProps;
-  keyboardShortcuts?: {muteButton: string | string[]}
-  muteButtonSize?: ButtonSize
+  keyboardShortcuts?: {muteButton: string | string[]};
+  muteButtonSize?: ButtonSize;
 }
 
 export interface MuteButtonProps {
