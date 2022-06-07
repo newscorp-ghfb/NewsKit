@@ -73,10 +73,15 @@ styles (these are light when used in a dark theme)`}
           id="Gradients"
           toc="Gradients"
           headline="Gradients"
-          description="'Base' gradient tokens are used to fade elements
-          into the interface background. 
-          'Inverse' gradient tokens are used to fade elements
-          into a dark background in a light theme."
+          description={
+            <>
+              `Base` gradient tokens are used to fade elements into the
+              interface background. <br />
+              `Inverse` gradient tokens are used to fade elements into a dark
+              background in a light theme
+              <br />
+            </>
+          }
         >
           <Tabs size="medium">
             <Tab label="Base">
