@@ -16,7 +16,7 @@ export interface TooltipProps
   trigger?: TriggerType | TriggerType[];
   placement?: Placement;
   asLabel?: boolean;
-  showPointer?: boolean;
+  hidePointer?: boolean;
   overrides?: {
     zIndex?: number;
     maxWidth?: MQ<string>;

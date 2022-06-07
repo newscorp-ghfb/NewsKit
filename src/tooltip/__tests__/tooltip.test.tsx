@@ -26,7 +26,7 @@ describe('Tooltip', () => {
     children: <button type="submit">Add</button>,
     content: 'hello',
     defaultOpen: true,
-    showPointer: false,
+    hidePointer: true,
   };
 
   // ResizeObserver is not implemented by JSDom but is needed by the lib
@@ -104,7 +104,7 @@ describe('Tooltip', () => {
     test('with pointer', async () => {
       const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
-        showPointer: true,
+        hidePointer: false,
       });
       expect(asFragment()).toMatchSnapshot();
     });
@@ -125,7 +125,7 @@ describe('Tooltip', () => {
         Tooltip,
         {
           ...defaultProps,
-          showPointer: true,
+          hidePointer: false,
           overrides: {
             pointer: {
               stylePreset: 'tooltipPointerCustom',
@@ -139,7 +139,7 @@ describe('Tooltip', () => {
     test('with pointer size overrides', async () => {
       const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
-        showPointer: true,
+        hidePointer: false,
         overrides: {
           pointer: {
             size: 'sizing040',
@@ -151,7 +151,7 @@ describe('Tooltip', () => {
     test('with pointer y coordinate', async () => {
       const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
-        showPointer: true,
+        hidePointer: false,
         placement: 'right',
       });
       expect(asFragment()).toMatchSnapshot();
@@ -162,7 +162,7 @@ describe('Tooltip', () => {
     test('should not be applied with with no pointer', async () => {
       const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
-        showPointer: false,
+        hidePointer: true,
         overrides: {
           distance: 'space040',
         },
@@ -172,7 +172,7 @@ describe('Tooltip', () => {
     test('should be applied with pointer and token distance override', async () => {
       const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
-        showPointer: true,
+        hidePointer: false,
         overrides: {
           distance: 'space040',
         },
@@ -182,7 +182,7 @@ describe('Tooltip', () => {
     test('should be applied with pointer and px distance override', async () => {
       const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
-        showPointer: true,
+        hidePointer: false,
         overrides: {
           distance: '10px',
         },
@@ -192,7 +192,7 @@ describe('Tooltip', () => {
     test('should be applied with pointer and non-px distance override', async () => {
       const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
-        showPointer: true,
+        hidePointer: false,
         overrides: {
           distance: '1rem',
         },
@@ -202,7 +202,7 @@ describe('Tooltip', () => {
     test('should be applied with pointer and mq distance override', async () => {
       const {asFragment} = await asyncRender(Tooltip, {
         ...defaultProps,
-        showPointer: true,
+        hidePointer: false,
         overrides: {
           distance: {
             xs: 'space060',

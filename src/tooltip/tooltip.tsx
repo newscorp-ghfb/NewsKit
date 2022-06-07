@@ -28,7 +28,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
   defaultOpen,
   asLabel,
   overrides,
-  showPointer = true,
+  hidePointer = false,
   ...props
 }) => {
   const [open, setOpen] = useControlled({
@@ -50,7 +50,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
     open,
     onOpenChange: setOpen,
     whileElementsMounted: autoUpdate,
-    middleware: showPointer ? [arrow({element: pointerRef})] : [],
+    middleware: !hidePointer ? [arrow({element: pointerRef})] : [],
   });
 
   const {getReferenceProps, getFloatingProps} = useInteractions([
@@ -112,13 +112,13 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
           $y={y}
           placement={placement}
           overrides={overrides}
-          showPointer={showPointer}
+          hidePointer={hidePointer}
           {...props}
         >
           <StyledPanel as={contentIsString ? 'p' : 'div'} overrides={overrides}>
             {content}
           </StyledPanel>
-          {showPointer && (
+          {!hidePointer && (
             <StyledPointer
               id={`${id}-pointer`}
               ref={pointerRef}

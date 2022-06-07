@@ -645,7 +645,7 @@ export const StoryTooltipNoPointer = () => (
   <>
     <StorybookSubHeading>Tooltip no pointer</StorybookSubHeading>
     <ThemeProvider theme={myCustomTheme}>
-      <Tooltip content="Tooltip content" placement="right" showPointer={false}>
+      <Tooltip content="Tooltip content" placement="right" hidePointer>
         <Button
           size={ButtonSize.Small}
           overrides={{stylePreset: 'buttonOutlinedPrimary'}}

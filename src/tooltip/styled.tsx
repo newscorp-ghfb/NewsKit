@@ -17,17 +17,17 @@ export const StyledTooltip = styled.div<
     placement: Placement;
     $x?: number;
     $y?: number;
-    showPointer: boolean;
+    hidePointer: boolean;
   } & Pick<TooltipProps, 'overrides'>
 >`
   pointer-events: none;
   ${getResponsiveSpace('zIndex', 'tooltip', '', 'zIndex')};
   ${getResponsiveSize('maxWidth', 'tooltip', '', 'maxWidth')};
   ${getResponsiveSize('minWidth', 'tooltip', '', 'minWidth')};
-  ${({$x, $y, strategy, placement, showPointer}) =>
+  ${({$x, $y, strategy, placement, hidePointer}) =>
     getResponsiveSpace(
       distance => {
-        const offset = showPointer ? distance : undefined;
+        const offset = !hidePointer ? distance : undefined;
         return {
           position: strategy,
           left: calculateInset($x, 'x', offset, placement),
