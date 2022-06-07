@@ -4,27 +4,29 @@ export function getSide(placement: Placement): Side {
   return placement.split('-')[0] as Side;
 }
 
-export function getOffsetAxis(placement: Placement): Axis {
-  return !['top', 'bottom'].includes(getSide(placement)) ? 'x' : 'y';
+export function getOffsetAxis(side: Side): Axis {
+  return !['top', 'bottom'].includes(side) ? 'x' : 'y';
 }
 
-export function getOffsetAxisDirection(placement: Placement): 1 | -1 {
-  return ['left', 'top'].includes(getSide(placement)) ? -1 : 1;
+export function getOffsetAxisDirection(side: Side): 1 | -1 {
+  return ['left', 'top'].includes(side) ? -1 : 1;
 }
 
 export function calculateInset(
-  value: number | undefined,
-  axis: 'x' | 'y',
-  offset: string | undefined,
-  placement: Placement,
+  insetValue: number | undefined | null,
+  insetSide: Side,
+  offsetValue: string | undefined,
+  tooltipPlacement: Placement,
 ): string {
-  if (value === null) {
+  if (insetValue === null || insetValue === undefined) {
     return '';
   }
-  const offsetAxis = getOffsetAxis(placement);
-  if (!offset || offsetAxis !== axis) {
-    return `${value}px`;
+  const offsetSide = getSide(tooltipPlacement);
+  const insetAxis = getOffsetAxis(insetSide);
+  const offsetAxis = getOffsetAxis(offsetSide);
+  if (!offsetValue || offsetAxis !== insetAxis) {
+    return `${insetValue}px`;
   }
-  const dir = getOffsetAxisDirection(placement);
-  return `calc(${value}px + (${offset} * ${dir}))`;
+  const dir = getOffsetAxisDirection(offsetSide);
+  return `calc(${insetValue}px + (${offsetValue} * ${dir}))`;
 }

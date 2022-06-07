@@ -30,8 +30,8 @@ export const StyledTooltip = styled.div<
         const offset = !hidePointer ? distance : undefined;
         return {
           position: strategy,
-          left: calculateInset($x, 'x', offset, placement),
-          top: calculateInset($y, 'y', offset, placement),
+          left: calculateInset($x, 'left', offset, placement),
+          top: calculateInset($y, 'top', offset, placement),
         };
       },
       'tooltip',
