@@ -10,17 +10,26 @@ export interface TooltipProps
   children: React.ReactElement & {
     ref?: React.Ref<unknown>;
   };
-  title: React.ReactNode;
+  content: React.ReactNode;
   open?: boolean;
   defaultOpen?: boolean;
   trigger?: TriggerType | TriggerType[];
   placement?: Placement;
   asLabel?: boolean;
+  hidePointer?: boolean;
   overrides?: {
     zIndex?: number;
     maxWidth?: MQ<string>;
     minWidth?: MQ<string>;
+    distance?: MQ<string>;
     stylePreset?: MQ<string>;
-    typographyPreset?: MQ<string>;
-  } & LogicalPaddingProps;
+    panel?: {
+      stylePreset?: MQ<string>;
+      typographyPreset?: MQ<string>;
+    } & LogicalPaddingProps;
+    pointer?: {
+      stylePreset?: MQ<string>;
+      size?: MQ<string>;
+    };
+  };
 }
