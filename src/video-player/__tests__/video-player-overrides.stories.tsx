@@ -286,3 +286,25 @@ StoryVideoPlayerMiniCardOverlayOverrides.storyName =
 StoryVideoPlayerMiniCardOverlayOverrides.parameters = {
   eyes: {include: false},
 };
+
+export const StoryVideoPlayerLogicalPropsOverrides = () => (
+  <>
+    <StorybookHeading>Video Player</StorybookHeading>
+    <StorybookSubHeading>
+      MiniCardOverlay logical props overrides
+    </StorybookSubHeading>
+    <VideoPlayer
+      config={PLAYLISTS_VIDEO_PLAYER_CONFIG}
+      overrides={{
+        paddingInline: 'space020',
+        paddingBlock: 'space040',
+        marginBlock: 'space060',
+        marginInline: 'space080',
+      }}
+    />
+  </>
+);
+StoryVideoPlayerLogicalPropsOverrides.storyName = 'logical-props-overlay';
+StoryVideoPlayerLogicalPropsOverrides.parameters = {
+  eyes: {include: false},
+};

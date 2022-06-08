@@ -3,6 +3,7 @@ import Playground from '../../components/playground';
 import Prop from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
 import {CodeFromDefaultPresets} from '../../components/code';
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
 import {UnorderedList, IconFilledTwitter, IconFilledFacebook} from 'newskit';
 
@@ -59,7 +60,7 @@ An unordered list can be used to produce a list of related content prefixed with
       in case it is needed.</i>
     </Prop>
   </Prop>
-
+  <CommonLogicalPropsMDX nested />
 Refer to the defaults below for the full object structure:
 
   <CodeFromDefaultPresets componentName="unorderedList" />

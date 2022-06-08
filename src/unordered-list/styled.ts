@@ -1,4 +1,5 @@
 import {Block} from '../block';
+import {logicalProps} from '../utils/logical-properties';
 import {getStylePreset, styled} from '../utils/style';
 import {UnorderedListProps} from './types';
 
@@ -13,10 +14,11 @@ const getMarkerAlign = (align: 'start' | 'center' | 'end') => {
   }
 };
 
-export const StyledUl = styled.ul`
+export const StyledUl = styled.ul<{overrides: UnorderedListProps['overrides']}>`
   margin: 0;
   padding: 0;
   list-style: none;
+  ${logicalProps()}
 `;
 
 export const StyledListItem = styled.li`
