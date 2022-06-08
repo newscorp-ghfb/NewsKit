@@ -1,16 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Headings renders H1 correctly with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #0A0A0A;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+<h1
+    class="emotion-0"
+  >
+    A Heading
+  </h1>
+</DocumentFragment>
+`;
+
 exports[`Headings renders H1 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #FFFFFF;
   font-family: "Bitter",serif;
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -23,10 +80,6 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #FFFFFF;
 }
 
 <h1
@@ -44,6 +97,10 @@ exports[`Headings renders H1 with default styles 1`] = `
   color: #0A0A0A;
 }
 
+.emotion-0 svg {
+  fill: #0A0A0A;
+}
+
 @media screen and (max-width: 1023px) {
   .emotion-0 {
     font-family: "Bitter",serif;
@@ -113,10 +170,6 @@ exports[`Headings renders H1 with default styles 1`] = `
   }
 }
 
-.emotion-0 svg {
-  fill: #0A0A0A;
-}
-
 <h1
     class="emotion-0"
   >
@@ -125,17 +178,64 @@ exports[`Headings renders H1 with default styles 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Headings renders H2 correctly with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #0A0A0A;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 24px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+<h2
+    class="emotion-0"
+  >
+    A Heading
+  </h2>
+</DocumentFragment>
+`;
+
 exports[`Headings renders H2 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #FFFFFF;
   font-family: "Bitter",serif;
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -148,10 +248,6 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #FFFFFF;
 }
 
 <h2
@@ -169,6 +265,10 @@ exports[`Headings renders H2 with default styles 1`] = `
   color: #0A0A0A;
 }
 
+.emotion-0 svg {
+  fill: #0A0A0A;
+}
+
 @media screen and (max-width: 767px) {
   .emotion-0 {
     font-family: "Bitter",serif;
@@ -215,10 +315,6 @@ exports[`Headings renders H2 with default styles 1`] = `
   }
 }
 
-.emotion-0 svg {
-  fill: #0A0A0A;
-}
-
 <h2
     class="emotion-0"
   >
@@ -227,17 +323,64 @@ exports[`Headings renders H2 with default styles 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Headings renders H3 correctly with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #0A0A0A;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 20px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+<h3
+    class="emotion-0"
+  >
+    A Heading
+  </h3>
+</DocumentFragment>
+`;
+
 exports[`Headings renders H3 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #FFFFFF;
   font-family: "Bitter",serif;
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -250,10 +393,6 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #FFFFFF;
 }
 
 <h3
@@ -269,6 +408,10 @@ exports[`Headings renders H3 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   color: #0A0A0A;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
 }
 
 @media screen and (max-width: 767px) {
@@ -317,10 +460,6 @@ exports[`Headings renders H3 with default styles 1`] = `
   }
 }
 
-.emotion-0 svg {
-  fill: #0A0A0A;
-}
-
 <h3
     class="emotion-0"
   >
@@ -329,17 +468,64 @@ exports[`Headings renders H3 with default styles 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Headings renders H4 correctly with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #0A0A0A;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 18px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 20px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+<h4
+    class="emotion-0"
+  >
+    A Heading
+  </h4>
+</DocumentFragment>
+`;
+
 exports[`Headings renders H4 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #FFFFFF;
   font-family: "Bitter",serif;
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -352,10 +538,6 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #FFFFFF;
 }
 
 <h4
@@ -371,6 +553,10 @@ exports[`Headings renders H4 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   color: #0A0A0A;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
 }
 
 @media screen and (max-width: 767px) {
@@ -419,10 +605,6 @@ exports[`Headings renders H4 with default styles 1`] = `
   }
 }
 
-.emotion-0 svg {
-  fill: #0A0A0A;
-}
-
 <h4
     class="emotion-0"
   >
@@ -431,17 +613,49 @@ exports[`Headings renders H4 with default styles 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Headings renders H5 correctly with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #0A0A0A;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+  font-family: "Bitter",serif;
+  font-size: 20px;
+  line-height: 1.125;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
+}
+
+<h5
+    class="emotion-0"
+  >
+    A Heading
+  </h5>
+</DocumentFragment>
+`;
+
 exports[`Headings renders H5 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #FFFFFF;
   font-family: "Bitter",serif;
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -454,10 +668,6 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #FFFFFF;
 }
 
 <h5
@@ -472,13 +682,17 @@ exports[`Headings renders H5 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #0A0A0A;
   font-family: "Bitter",serif;
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #0A0A0A;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
 }
 
 .emotion-0::before {
@@ -491,10 +705,6 @@ exports[`Headings renders H5 with default styles 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #0A0A0A;
 }
 
 <h5
@@ -505,17 +715,49 @@ exports[`Headings renders H5 with default styles 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Headings renders H6 correctly with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #0A0A0A;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+  font-family: "Bitter",serif;
+  font-size: 16px;
+  line-height: 1.125;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
+}
+
+<h6
+    class="emotion-0"
+  >
+    A Heading
+  </h6>
+</DocumentFragment>
+`;
+
 exports[`Headings renders H6 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #FFFFFF;
   font-family: "Bitter",serif;
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -528,10 +770,6 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #FFFFFF;
 }
 
 <h6
@@ -546,13 +784,17 @@ exports[`Headings renders H6 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #0A0A0A;
   font-family: "Bitter",serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #0A0A0A;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
 }
 
 .emotion-0::before {
@@ -565,10 +807,6 @@ exports[`Headings renders H6 with default styles 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #0A0A0A;
 }
 
 <h6
@@ -579,17 +817,74 @@ exports[`Headings renders H6 with default styles 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Headings renders Heading1 correctly with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #0A0A0A;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+<h1
+    class="emotion-0"
+  >
+    A Heading
+  </h1>
+</DocumentFragment>
+`;
+
 exports[`Headings renders Heading1 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #FFFFFF;
   font-family: "Bitter",serif;
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -602,10 +897,6 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #FFFFFF;
 }
 
 <h1
@@ -621,6 +912,10 @@ exports[`Headings renders Heading1 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   color: #0A0A0A;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
 }
 
 @media screen and (max-width: 1023px) {
@@ -692,10 +987,6 @@ exports[`Headings renders Heading1 with default styles 1`] = `
   }
 }
 
-.emotion-0 svg {
-  fill: #0A0A0A;
-}
-
 <h1
     class="emotion-0"
   >
@@ -704,17 +995,64 @@ exports[`Headings renders Heading1 with default styles 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Headings renders Heading2 correctly with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #0A0A0A;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 24px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+<h2
+    class="emotion-0"
+  >
+    A Heading
+  </h2>
+</DocumentFragment>
+`;
+
 exports[`Headings renders Heading2 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #FFFFFF;
   font-family: "Bitter",serif;
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -727,10 +1065,6 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #FFFFFF;
 }
 
 <h2
@@ -746,6 +1080,10 @@ exports[`Headings renders Heading2 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   color: #0A0A0A;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
 }
 
 @media screen and (max-width: 767px) {
@@ -794,10 +1132,6 @@ exports[`Headings renders Heading2 with default styles 1`] = `
   }
 }
 
-.emotion-0 svg {
-  fill: #0A0A0A;
-}
-
 <h2
     class="emotion-0"
   >
@@ -806,17 +1140,64 @@ exports[`Headings renders Heading2 with default styles 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Headings renders Heading3 correctly with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #0A0A0A;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 20px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+<h3
+    class="emotion-0"
+  >
+    A Heading
+  </h3>
+</DocumentFragment>
+`;
+
 exports[`Headings renders Heading3 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #FFFFFF;
   font-family: "Bitter",serif;
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -829,10 +1210,6 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #FFFFFF;
 }
 
 <h3
@@ -848,6 +1225,10 @@ exports[`Headings renders Heading3 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   color: #0A0A0A;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
 }
 
 @media screen and (max-width: 767px) {
@@ -896,10 +1277,6 @@ exports[`Headings renders Heading3 with default styles 1`] = `
   }
 }
 
-.emotion-0 svg {
-  fill: #0A0A0A;
-}
-
 <h3
     class="emotion-0"
   >
@@ -908,17 +1285,64 @@ exports[`Headings renders Heading3 with default styles 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Headings renders Heading4 correctly with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #0A0A0A;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 18px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 20px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+<h4
+    class="emotion-0"
+  >
+    A Heading
+  </h4>
+</DocumentFragment>
+`;
+
 exports[`Headings renders Heading4 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #FFFFFF;
   font-family: "Bitter",serif;
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -931,10 +1355,6 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #FFFFFF;
 }
 
 <h4
@@ -950,6 +1370,10 @@ exports[`Headings renders Heading4 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   color: #0A0A0A;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
 }
 
 @media screen and (max-width: 767px) {
@@ -998,10 +1422,6 @@ exports[`Headings renders Heading4 with default styles 1`] = `
   }
 }
 
-.emotion-0 svg {
-  fill: #0A0A0A;
-}
-
 <h4
     class="emotion-0"
   >
@@ -1010,17 +1430,49 @@ exports[`Headings renders Heading4 with default styles 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Headings renders Heading5 correctly with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #0A0A0A;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+  font-family: "Bitter",serif;
+  font-size: 20px;
+  line-height: 1.125;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
+}
+
+<h5
+    class="emotion-0"
+  >
+    A Heading
+  </h5>
+</DocumentFragment>
+`;
+
 exports[`Headings renders Heading5 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #FFFFFF;
   font-family: "Bitter",serif;
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -1033,10 +1485,6 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #FFFFFF;
 }
 
 <h5
@@ -1051,13 +1499,17 @@ exports[`Headings renders Heading5 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #0A0A0A;
   font-family: "Bitter",serif;
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #0A0A0A;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
 }
 
 .emotion-0::before {
@@ -1070,10 +1522,6 @@ exports[`Headings renders Heading5 with default styles 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #0A0A0A;
 }
 
 <h5
@@ -1084,17 +1532,49 @@ exports[`Headings renders Heading5 with default styles 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Headings renders Heading6 correctly with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #0A0A0A;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+  font-family: "Bitter",serif;
+  font-size: 16px;
+  line-height: 1.125;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
+}
+
+<h6
+    class="emotion-0"
+  >
+    A Heading
+  </h6>
+</DocumentFragment>
+`;
+
 exports[`Headings renders Heading6 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #FFFFFF;
   font-family: "Bitter",serif;
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-0::before {
@@ -1107,10 +1587,6 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #FFFFFF;
 }
 
 <h6
@@ -1125,13 +1601,17 @@ exports[`Headings renders Heading6 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
+  color: #0A0A0A;
   font-family: "Bitter",serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #0A0A0A;
+}
+
+.emotion-0 svg {
+  fill: #0A0A0A;
 }
 
 .emotion-0::before {
@@ -1144,10 +1624,6 @@ exports[`Headings renders Heading6 with default styles 1`] = `
   content: '';
   margin-top: -0.2275em;
   display: block;
-}
-
-.emotion-0 svg {
-  fill: #0A0A0A;
 }
 
 <h6
