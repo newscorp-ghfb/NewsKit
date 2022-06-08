@@ -417,11 +417,11 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
                           <section
                             class="emotion-15"
                           >
-                            <h1
+                            <h3
                               class="nk-headline-heading emotion-5"
                             >
                               RelatedComp
-                            </h1>
+                            </h3>
                           </section>
                         </a>
                       </div>
