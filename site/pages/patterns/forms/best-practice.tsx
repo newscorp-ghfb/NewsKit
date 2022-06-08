@@ -524,12 +524,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
                     <br />
                     <br />
                     You can toggle between both options in NewsKit{' '}
-                    <Link
-                      href="https://newskit.co.uk/components/form/"
-                      target="_blank"
-                    >
-                      here.
-                    </Link>
+                    <Link href="/components/form/">here.</Link>
                   </>
                 ),
                 media: getIllustrationComponent(
