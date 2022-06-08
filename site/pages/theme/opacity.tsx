@@ -64,6 +64,7 @@ to a background."
                 <br />
               </>
             }
+            showSeparator
           >
             <Table
               columns={['Opacity', 'Token', 'Value', 'Common usage']}
@@ -77,6 +78,7 @@ to a background."
             toc="Accessibility"
             headline="Accessibility considerations"
             description="When using opacity, ensure important UI elements like text and icons are legible without compromising the aesthetic."
+            showSeparator
           />
         </ContentSection>
       </ContentSection>

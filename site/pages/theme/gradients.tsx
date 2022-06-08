@@ -82,6 +82,7 @@ styles (these are light when used in a dark theme)`}
               <br />
             </>
           }
+          showSeparator
         >
           <Tabs size="medium">
             <Tab label="Base">
@@ -118,6 +119,7 @@ styles (these are light when used in a dark theme)`}
           toc="Accessibility"
           headline="Accessibility consdierations"
           description="When using gradients, ensure important UI elements like text and icons are legible without compromising the aesthetic."
+          showSeparator
         />
       </ContentSection>
     </ComponentPageCell>

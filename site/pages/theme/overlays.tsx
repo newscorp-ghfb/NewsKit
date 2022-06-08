@@ -19,8 +19,8 @@ const DO_AND_DONT = [
     description: (
       <>
         Overlay contrasts should be distinct and clear. They can be used to
-        obscure page content and emphasise an element for greater legibility.
-        I.e. the <Link href="/components/modal">Modal.</Link>.
+        obscure page content and emphasise an element for greater legibility,
+        I.e. the <Link href="/components/modal">Modal.</Link>
       </>
     ),
 
@@ -118,6 +118,7 @@ const Overlays = (layoutProps: LayoutProps) => (
                 element.
               </>
             }
+            showSeparator
           >
             <Tabs size="medium">
               <Tab label="Base">
@@ -158,6 +159,7 @@ const Overlays = (layoutProps: LayoutProps) => (
             headline="Accessibility considerations"
             description="When using overlays, ensure important UI elements like text
 and icons are legible without compromising the aesthetic."
+            showSeparator
           />
         </ContentSection>
       </ContentSection>
