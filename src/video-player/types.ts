@@ -1,3 +1,4 @@
+import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
 declare global {
@@ -102,7 +103,7 @@ type VideoPlayerOverrides = {
       spaceInset?: MQ<string>;
     };
   };
-};
+} & LogicalProps;
 
 export interface VideoPlayerProps {
   config: BrightCoveBasicAttributes & BrightCoveOtherAttributes;
