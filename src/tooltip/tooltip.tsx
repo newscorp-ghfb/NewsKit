@@ -8,24 +8,27 @@ import {
   useRole,
   useDismiss,
   useId,
+  arrow,
 } from '@floating-ui/react-dom-interactions';
 import composeRefs from '@seznam/compose-react-refs';
+import {useRef} from 'react';
 import {TooltipProps} from './types';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {StyledTooltip} from './styled';
+import {StyledPanel, StyledPointer, StyledTooltip} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {useControlled} from '../utils/hooks';
 
 const ThemelessTooltip: React.FC<TooltipProps> = ({
   children,
-  title,
+  content,
   placement = 'top',
-  trigger = 'hover',
+  trigger = ['hover', 'focus'],
   open: openProp,
   defaultOpen,
   asLabel,
   overrides,
+  hidePointer = false,
   ...props
 }) => {
   const [open, setOpen] = useControlled({
@@ -33,11 +36,21 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
     defaultValue: Boolean(defaultOpen),
   });
 
-  const {x, y, reference, floating, strategy, context} = useFloating({
+  const pointerRef = useRef(null);
+  const {
+    x,
+    y,
+    reference,
+    floating,
+    strategy,
+    context,
+    middlewareData: {arrow: {x: pointerX, y: pointerY} = {}},
+  } = useFloating({
     placement,
     open,
     onOpenChange: setOpen,
     whileElementsMounted: autoUpdate,
+    middleware: !hidePointer ? [arrow({element: pointerRef})] : [],
   });
 
   const {getReferenceProps, getFloatingProps} = useInteractions([
@@ -51,7 +64,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
 
   const id = useId();
 
-  const isTitleString = typeof title === 'string';
+  const contentIsString = typeof content === 'string';
 
   const labelOrDescProps: {
     'aria-label'?: string | null;
@@ -60,11 +73,11 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
   } = {};
 
   // If tooltip is used as a label, add aria-label or aria-labelledby to childrenProps and id to StyledTooltip;
-  // aria-label is used when title is string; aria-labelledby is used when it's not a string;
+  // aria-label is used when content is string; aria-labelledby is used when it's not a string;
   // Because of above, 'aria-describedby' has different id for reference and floating, hence manually set below as well;
   if (asLabel) {
-    labelOrDescProps['aria-label'] = isTitleString ? title : null;
-    labelOrDescProps['aria-labelledby'] = open && !isTitleString ? id : null;
+    labelOrDescProps['aria-label'] = contentIsString ? content : null;
+    labelOrDescProps['aria-labelledby'] = open && !contentIsString ? id : null;
   } else {
     labelOrDescProps['aria-describedby'] = open ? id : null;
   }
@@ -74,7 +87,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
     ...children.props,
   };
 
-  if (!title) {
+  if (!content) {
     return children;
   }
 
@@ -89,21 +102,33 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
       )}
       {open && (
         <StyledTooltip
-          as={isTitleString ? 'p' : 'div'}
           {...getFloatingProps({
             ref: floating,
             id,
             className: 'Tooltip',
-            style: {
-              position: strategy,
-              top: y ?? '',
-              left: x ?? '',
-            },
           })}
+          strategy={strategy}
+          $x={x}
+          $y={y}
+          placement={placement}
           overrides={overrides}
+          hidePointer={hidePointer}
+          aria-hidden
           {...props}
         >
-          {title}
+          <StyledPanel as={contentIsString ? 'p' : 'div'} overrides={overrides}>
+            {content}
+          </StyledPanel>
+          {!hidePointer && (
+            <StyledPointer
+              id={`${id}-pointer`}
+              ref={pointerRef}
+              placement={placement}
+              $x={pointerX}
+              $y={pointerY}
+              overrides={overrides}
+            />
+          )}
         </StyledTooltip>
       )}
     </>
