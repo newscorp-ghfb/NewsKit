@@ -1,4 +1,4 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const theme = {
+const mockTheme = {
   interfaceBrand010: 'red',
 };

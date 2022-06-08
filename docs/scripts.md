@@ -37,6 +37,8 @@ Scripts should be named using the following naming convention:
 
 * `test:unit:site` -> runs the unit tests on the site folder.
 
+* `test:unit:codemod` -> runs the unit tests on the codemod folder.
+
 * `test:visual:comps:ci` -> starts the local storybook and runs the applitools storybook tests afterwards.
 
 * `e2e:build` -> builds the end to end tests.
@@ -82,6 +84,8 @@ Scripts should be named using the following naming convention:
 * `build:comps` -> builds the components folder ready to be published to NPM.
 
 * `build:sync-version-number` -> copies the current version number from package json into the src folder.
+
+* `build:sync-codemod-version` -> copies the current version number from package json into the codemode package.json.
 
 * `build` -> runs the above builds, creating a ready to publish dist folder, as well as storybook and docs.
 
