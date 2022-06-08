@@ -166,7 +166,6 @@ export const StyledOption = styled.div<{
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  ${logicalProps()}
 
   // LOGICAL_PROPS_TO_DO: this gap is not currently applied because the parent is not display:grid
   ${({$spaceInline}) =>
