@@ -155,7 +155,7 @@ const Overlays = (layoutProps: LayoutProps) => (
         <ContentSection sectionName="a11y">
           <ContentPrimary
             id="ally"
-            toc="Acessibility"
+            toc="Accessibility"
             headline="Accessibility considerations"
             description="When using overlays, ensure important UI elements like text
 and icons are legible without compromising the aesthetic."

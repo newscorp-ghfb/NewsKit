@@ -117,7 +117,7 @@ styles (these are light when used in a dark theme)`}
         <ContentPrimary
           id="a11y"
           toc="Accessibility"
-          headline="Accessibility consdierations"
+          headline="Accessibility considerations"
           description="When using gradients, ensure important UI elements like text and icons are legible without compromising the aesthetic."
           showSeparator
         />
