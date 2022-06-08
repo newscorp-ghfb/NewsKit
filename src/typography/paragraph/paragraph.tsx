@@ -76,6 +76,7 @@ const removeFirstLetter = (
     ];
   }
 
+  /* istanbul ignore next */
   return children;
 };
 
