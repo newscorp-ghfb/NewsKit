@@ -168,6 +168,7 @@ Array [
   "getMotionCssFromTheme",
   "getMotionDurationValue",
   "getMotionFromTheme",
+  "getOutlineCssFromTheme",
   "getOverlayCssFromTheme",
   "getPresetStyles",
   "getResponsiveBorder",

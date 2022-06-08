@@ -205,6 +205,36 @@ const CSS_PROPS = [
     acceptedValues: 'foundations gradient', // TODO: Link to Gradients page when we have it live
     description: 'The transition between two or more specified colors',
   },
+  {
+    token: 'outlineColor',
+    acceptedValues: 'foundations outline',
+    description: 'The colour property of the outline',
+  },
+  {
+    token: 'outlineStyle',
+    acceptedValues: 'foundations outline',
+    description: 'The style property of the outline',
+  },
+  {
+    token: 'outlineWidth',
+    acceptedValues: 'foundations outline',
+    description: 'The style property of the outline',
+  },
+  {
+    token: 'outlineOffset',
+    acceptedValues: 'foundations outline',
+    description: 'The offset property of the outline',
+  },
+  {
+    token: 'safariOutlineOffset',
+    acceptedValues: 'foundations outline',
+    description: 'The offset property of the outline for Safari',
+  },
+  {
+    token: 'safariOutlineStylet',
+    acceptedValues: 'foundations outline',
+    description: 'The style property of the outline for Safari',
+  },
 ];
 
 const ImageWrapper = styled.div`

@@ -11,6 +11,7 @@ export interface ThemeBase {
   // foundations
   motions: Record<string, string>;
   borders: Record<string, string>;
+  outline: Record<string, string>;
   breakpoints: Breakpoints;
   colors: Record<string, string>;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
