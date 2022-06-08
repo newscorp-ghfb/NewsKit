@@ -109,4 +109,21 @@ describe('UnorderedList', () => {
     const fragment = renderToFragmentWithTheme(renderStyledUlWithItems, props);
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders with logical props', () => {
+    const props: UnorderedListProps = {
+      overrides: {
+        paddingInline: 'space020',
+        paddingBlock: 'space040',
+        marginBlock: 'space060',
+        marginInline: 'space080',
+      },
+      listItemMarker: IconFilledMood,
+    };
+    const fragment = renderToFragmentWithTheme(
+      renderUnorderedListWithItems,
+      props,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
 });
