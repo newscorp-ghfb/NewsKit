@@ -13,6 +13,11 @@ import {
   getSide,
 } from '../utils';
 
+jest.mock('@floating-ui/react-dom-interactions', () => ({
+  ...jest.requireActual('@floating-ui/react-dom-interactions'),
+  useId: () => 'MOCK-ID',
+}));
+
 // The tooltip's inset styling is applied asynchronously. To make assertions on
 // the top / left attribute values, we need to flush the queue to ensure that
 // the element has been positioned before making assertions on snapshots.

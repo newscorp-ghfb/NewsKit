@@ -3,7 +3,7 @@
 exports[`Tooltip offset should be applied with pointer and mq distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-38"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
@@ -51,7 +51,7 @@ exports[`Tooltip offset should be applied with pointer and mq distance override 
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-38"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -62,7 +62,7 @@ exports[`Tooltip offset should be applied with pointer and mq distance override 
     </p>
     <div
       class="emotion-2"
-      id="floating-ui-38-pointer"
+      id="MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -71,7 +71,7 @@ exports[`Tooltip offset should be applied with pointer and mq distance override 
 exports[`Tooltip offset should be applied with pointer and non-px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-35"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
@@ -114,7 +114,7 @@ exports[`Tooltip offset should be applied with pointer and non-px distance overr
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-35"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -125,7 +125,7 @@ exports[`Tooltip offset should be applied with pointer and non-px distance overr
     </p>
     <div
       class="emotion-2"
-      id="floating-ui-35-pointer"
+      id="MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -134,7 +134,7 @@ exports[`Tooltip offset should be applied with pointer and non-px distance overr
 exports[`Tooltip offset should be applied with pointer and px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-32"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
@@ -177,7 +177,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-32"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -188,7 +188,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
     </p>
     <div
       class="emotion-2"
-      id="floating-ui-32-pointer"
+      id="MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -197,7 +197,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
 exports[`Tooltip offset should be applied with pointer and token distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-29"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
@@ -240,7 +240,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-29"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -251,7 +251,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
     </p>
     <div
       class="emotion-2"
-      id="floating-ui-29-pointer"
+      id="MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -260,7 +260,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
 exports[`Tooltip offset should not be applied with with no pointer 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-26"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
@@ -290,7 +290,7 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-26"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -306,7 +306,7 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
 exports[`Tooltip should render correct styles: default 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-2"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
@@ -336,7 +336,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-2"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -352,7 +352,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
 exports[`Tooltip should render correct styles: with overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-11"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
@@ -384,7 +384,7 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-11"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -400,7 +400,7 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
 exports[`Tooltip should render correct styles: with pointer 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-14"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
@@ -443,7 +443,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-14"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -454,7 +454,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
     </p>
     <div
       class="emotion-2"
-      id="floating-ui-14-pointer"
+      id="MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -463,7 +463,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
 exports[`Tooltip should render correct styles: with pointer size overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-20"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
@@ -506,7 +506,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-20"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -517,7 +517,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
     </p>
     <div
       class="emotion-2"
-      id="floating-ui-20-pointer"
+      id="MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -526,7 +526,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
 exports[`Tooltip should render correct styles: with pointer stylePreset overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-17"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
@@ -569,7 +569,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-17"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -580,7 +580,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
     </p>
     <div
       class="emotion-2"
-      id="floating-ui-17-pointer"
+      id="MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -589,7 +589,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
 exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-23"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
@@ -632,7 +632,7 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-23"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -643,7 +643,7 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
     </p>
     <div
       class="emotion-2"
-      id="floating-ui-23-pointer"
+      id="MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
