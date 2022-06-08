@@ -1,3 +1,4 @@
+import {logicalProps} from '../utils/logical-properties';
 import {
   getResponsiveBorder,
   getResponsiveSize,
@@ -11,6 +12,7 @@ import {VideoPlayerProps} from './types';
 export const VideoPlayerWrapper = styled.div<
   Pick<VideoPlayerProps, 'overrides'>
 >`
+  ${logicalProps()}
   //play button
   .video-js .vjs-big-play-button {
     ${getStylePreset('videoPlayer.playButton', 'playButton')}
@@ -22,7 +24,7 @@ export const VideoPlayerWrapper = styled.div<
     ${getStylePreset('videoPlayer.seekBar', 'seekBar')};
     )}
   }
-  
+
   // seekbar - loading progress bar
   .video-js .vjs-load-progress {
     ${getStylePreset(

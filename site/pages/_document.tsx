@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import Document, {Head, Main, NextScript, Html} from 'next/document';
-import {Consent, Global, css, Tealium} from 'newskit';
+import {Global, css} from 'newskit';
 import Helmet from 'react-helmet';
 import {HTMLMeta} from '../components/html-meta';
 
@@ -16,7 +16,7 @@ const Base = () => <base href={baseHref} />;
 
 export default class MyDocument extends Document {
   render() {
-    const isSiteEnvProduction = process.env.SITE_ENV === 'production';
+    // const isSiteEnvProduction = process.env.SITE_ENV === 'production';
     const helmet = Helmet.rewind();
     return (
       <Html lang="en">
@@ -35,14 +35,6 @@ export default class MyDocument extends Document {
           </style>
           {helmet.script.toComponent()}
           <HTMLMeta />
-          <Consent
-            sourcePointConfigUnified={{
-              accountId: 259,
-              propertyHref: 'https://newskit.co.uk',
-              gdpr: {},
-            }}
-            reactHelmet={Helmet}
-          />
         </Head>
         <body>
           <Global
@@ -233,11 +225,6 @@ export default class MyDocument extends Document {
                 font-display: swap;
               }
             `}
-          />
-          <Tealium
-            accountId="newsinternational"
-            profileId="thetimes.newskit"
-            env={isSiteEnvProduction ? 'prod' : 'dev'}
           />
           <Main />
           <NextScript />
