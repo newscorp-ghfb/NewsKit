@@ -29,7 +29,12 @@ const myCustomTheme = createTheme({
   name: 'my-custom-modal-theme',
   overrides: {
     stylePresets: {
-      tooltipCustom: {
+      tooltipPointerCustom: {
+        base: {
+          backgroundColor: '{{colors.red080}}',
+        },
+      },
+      tooltipPanelCustom: {
         base: {
           backgroundColor: '{{colors.red080}}',
           borderRadius: '{{borders.borderRadiusDefault}}',
@@ -44,7 +49,7 @@ export const StoryTooltip = () => (
   <Container>
     <StorybookSubHeading>Tooltip with icon button</StorybookSubHeading>
     <Tooltip
-      title="Share"
+      content="Share"
       asLabel
       placement="right"
       trigger={['focus', 'hover']}
@@ -58,7 +63,7 @@ export const StoryTooltip = () => (
     </Tooltip>
     <StorybookSubHeading>Tooltip with button</StorybookSubHeading>
     <Tooltip
-      title="Lorem ipsum dolor sit amet"
+      content="Lorem ipsum dolor sit amet"
       placement="right"
       trigger={['focus', 'hover']}
     >
@@ -71,7 +76,7 @@ export const StoryTooltip = () => (
     </Tooltip>
     <StorybookSubHeading>Tooltip with inline link</StorybookSubHeading>
     <Tooltip
-      title="Lorem ipsum dolor sit amet"
+      content="Lorem ipsum dolor sit amet"
       placement="right"
       trigger={['focus', 'hover']}
     >
@@ -79,16 +84,16 @@ export const StoryTooltip = () => (
     </Tooltip>
     <StorybookSubHeading>Tooltip with standalone link</StorybookSubHeading>
     <Tooltip
-      title="Lorem ipsum dolor sit amet"
+      content="Lorem ipsum dolor sit amet"
       placement="right"
       trigger={['focus', 'hover']}
     >
       <LinkStandalone href="/">Standalone link</LinkStandalone>
     </Tooltip>
     <StorybookSubHeading>
-      When title is empty, no tooltip is displayed
+      When content is empty, no tooltip is displayed
     </StorybookSubHeading>
-    <Tooltip title="" placement="right" trigger={['focus', 'hover']}>
+    <Tooltip content="" placement="right" trigger={['focus', 'hover']}>
       <Button
         size={ButtonSize.Small}
         overrides={{stylePreset: 'buttonOutlinedPrimary'}}
@@ -96,9 +101,9 @@ export const StoryTooltip = () => (
         Button
       </Button>
     </Tooltip>
-    <StorybookSubHeading>When title is not a string</StorybookSubHeading>
+    <StorybookSubHeading>When content is not a string</StorybookSubHeading>
     <Tooltip
-      title={<div>Lorem ipsum dolor sit amet</div>}
+      content={<div>Lorem ipsum dolor sit amet</div>}
       placement="right"
       trigger={['focus', 'hover']}
     >
@@ -110,11 +115,11 @@ export const StoryTooltip = () => (
       </Button>
     </Tooltip>
     <StorybookSubHeading>
-      When title is long and without maxWidth
+      When content is long and without maxWidth
     </StorybookSubHeading>
     <StyledDiv>
       <Tooltip
-        title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         trigger={['focus', 'hover']}
       >
         <Button
@@ -126,11 +131,11 @@ export const StoryTooltip = () => (
       </Tooltip>
     </StyledDiv>
     <StorybookSubHeading>
-      When title is long and with maxWidth
+      When content is long and with maxWidth
     </StorybookSubHeading>
     <StyledDiv>
       <Tooltip
-        title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         trigger={['focus', 'hover']}
         overrides={{maxWidth: '100px'}}
       >
@@ -165,7 +170,7 @@ export const StoryTooltipPlacements = () => (
           alignSelf="center"
         >
           <Stack spaceInline="space050">
-            <Tooltip title="Tooltip content" placement="left-start">
+            <Tooltip content="Tooltip content" placement="left-start">
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -177,7 +182,7 @@ export const StoryTooltipPlacements = () => (
               </Button>
             </Tooltip>
 
-            <Tooltip title="Tooltip content" placement="left">
+            <Tooltip content="Tooltip content" placement="left">
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -189,7 +194,7 @@ export const StoryTooltipPlacements = () => (
               </Button>
             </Tooltip>
 
-            <Tooltip title="Tooltip content" placement="left-end">
+            <Tooltip content="Tooltip content" placement="left-end">
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -209,7 +214,7 @@ export const StoryTooltipPlacements = () => (
           alignSelf="center"
         >
           <Stack spaceInline="space050">
-            <Tooltip title="Tooltip content" placement="right-start">
+            <Tooltip content="Tooltip content" placement="right-start">
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -220,7 +225,7 @@ export const StoryTooltipPlacements = () => (
                 right-start
               </Button>
             </Tooltip>
-            <Tooltip title="Tooltip content" placement="right">
+            <Tooltip content="Tooltip content" placement="right">
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -231,7 +236,7 @@ export const StoryTooltipPlacements = () => (
                 right
               </Button>
             </Tooltip>
-            <Tooltip title="Tooltip content" placement="right-end">
+            <Tooltip content="Tooltip content" placement="right-end">
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -251,7 +256,7 @@ export const StoryTooltipPlacements = () => (
           alignSelf="center"
         >
           <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
-            <Tooltip title="Tooltip content" placement="top-start">
+            <Tooltip content="Tooltip content" placement="top-start">
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -262,7 +267,7 @@ export const StoryTooltipPlacements = () => (
                 top-start
               </Button>
             </Tooltip>
-            <Tooltip title="Tooltip content" placement="top">
+            <Tooltip content="Tooltip content" placement="top">
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -273,7 +278,7 @@ export const StoryTooltipPlacements = () => (
                 top
               </Button>
             </Tooltip>
-            <Tooltip title="Tooltip content" placement="top-end">
+            <Tooltip content="Tooltip content" placement="top-end">
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -293,7 +298,7 @@ export const StoryTooltipPlacements = () => (
           alignSelf="center"
         >
           <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
-            <Tooltip title="Tooltip content" placement="bottom-start">
+            <Tooltip content="Tooltip content" placement="bottom-start">
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -304,7 +309,7 @@ export const StoryTooltipPlacements = () => (
                 bottom-start
               </Button>
             </Tooltip>
-            <Tooltip title="Tooltip content" placement="bottom">
+            <Tooltip content="Tooltip content" placement="bottom">
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -315,7 +320,7 @@ export const StoryTooltipPlacements = () => (
                 bottom
               </Button>
             </Tooltip>
-            <Tooltip title="Tooltip content" placement="bottom-end">
+            <Tooltip content="Tooltip content" placement="bottom-end">
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -340,7 +345,7 @@ StoryTooltipPlacements.parameters = {
 export const StoryTooltipTriggers = () => (
   <>
     <StorybookSubHeading>Triggered by focus only</StorybookSubHeading>
-    <Tooltip title="Tooltip content" placement="right" trigger="focus">
+    <Tooltip content="Tooltip content" placement="right" trigger="focus">
       <Button
         size={ButtonSize.Small}
         overrides={{stylePreset: 'buttonOutlinedPrimary'}}
@@ -350,7 +355,7 @@ export const StoryTooltipTriggers = () => (
     </Tooltip>
     <StorybookSubHeading>Triggered by hover & focus</StorybookSubHeading>
     <Tooltip
-      title="Tooltip content"
+      content="Tooltip content"
       placement="right"
       trigger={['focus', 'hover']}
     >
@@ -371,7 +376,7 @@ StoryTooltipTriggers.parameters = {
 export const StoryTooltipDefaultOpen = () => (
   <>
     <StorybookSubHeading>Tooltip default open</StorybookSubHeading>
-    <Tooltip title="Tooltip content" placement="right" defaultOpen>
+    <Tooltip content="Tooltip content" placement="right" defaultOpen>
       <Button
         size={ButtonSize.Small}
         overrides={{stylePreset: 'buttonOutlinedPrimary'}}
@@ -389,7 +394,7 @@ export const StoryTooltipControlled = () => {
     <>
       <StorybookSubHeading>Tooltip Controlled</StorybookSubHeading>
       <Tooltip
-        title="Tooltip content"
+        content="Tooltip content"
         placement="right"
         defaultOpen
         open={open}
@@ -419,17 +424,24 @@ export const StoryTooltipOverrides = () => (
     <StorybookSubHeading>Tooltip Overrides</StorybookSubHeading>
     <ThemeProvider theme={myCustomTheme}>
       <Tooltip
-        title="Tooltip content"
+        content="Tooltip content"
         open
         placement="right"
         overrides={{
           minWidth: '50px',
           maxWidth: '150px',
           zIndex: 70,
-          paddingBlock: 'space040',
-          paddingInline: 'space020',
-          stylePreset: 'tooltipCustom',
-          typographyPreset: 'utilityLabel020',
+          distance: 'space080',
+          panel: {
+            paddingBlock: 'space040',
+            paddingInline: 'space080',
+            stylePreset: 'tooltipPanelCustom',
+            typographyPreset: 'utilityLabel020',
+          },
+          pointer: {
+            stylePreset: 'tooltipPointerCustom',
+            size: 'sizing030',
+          },
         }}
       >
         <Button
@@ -460,7 +472,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
           alignSelf="center"
         >
           <Stack spaceInline="space050">
-            <Tooltip title="Tooltip content" placement="left-start" open>
+            <Tooltip content="Tooltip content" placement="left-start" open>
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -472,7 +484,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
               </Button>
             </Tooltip>
 
-            <Tooltip title="Tooltip content" placement="left" open>
+            <Tooltip content="Tooltip content" placement="left" open>
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -484,7 +496,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
               </Button>
             </Tooltip>
 
-            <Tooltip title="Tooltip content" placement="left-end" open>
+            <Tooltip content="Tooltip content" placement="left-end" open>
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -504,7 +516,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
           alignSelf="center"
         >
           <Stack spaceInline="space050">
-            <Tooltip title="Tooltip content" placement="right-start" open>
+            <Tooltip content="Tooltip content" placement="right-start" open>
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -515,7 +527,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
                 right-start
               </Button>
             </Tooltip>
-            <Tooltip title="Tooltip content" placement="right" open>
+            <Tooltip content="Tooltip content" placement="right" open>
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -526,7 +538,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
                 right
               </Button>
             </Tooltip>
-            <Tooltip title="Tooltip content" placement="right-end" open>
+            <Tooltip content="Tooltip content" placement="right-end" open>
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -546,7 +558,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
           alignSelf="center"
         >
           <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
-            <Tooltip title="Tooltip content" placement="top-start" open>
+            <Tooltip content="Tooltip content" placement="top-start" open>
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -557,7 +569,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
                 top-start
               </Button>
             </Tooltip>
-            <Tooltip title="Tooltip content" placement="top" open>
+            <Tooltip content="Tooltip content" placement="top" open>
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -568,7 +580,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
                 top
               </Button>
             </Tooltip>
-            <Tooltip title="Tooltip content" placement="top-end" open>
+            <Tooltip content="Tooltip content" placement="top-end" open>
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -588,7 +600,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
           alignSelf="center"
         >
           <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
-            <Tooltip title="Tooltip content" placement="bottom-start" open>
+            <Tooltip content="Tooltip content" placement="bottom-start" open>
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -599,7 +611,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
                 bottom-start
               </Button>
             </Tooltip>
-            <Tooltip title="Tooltip content" placement="bottom" open>
+            <Tooltip content="Tooltip content" placement="bottom" open>
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -610,7 +622,7 @@ export const StoryTooltipPlacementsVisualTest = () => (
                 bottom
               </Button>
             </Tooltip>
-            <Tooltip title="Tooltip content" placement="bottom-end" open>
+            <Tooltip content="Tooltip content" placement="bottom-end" open>
               <Button
                 size={ButtonSize.Small}
                 overrides={{
@@ -628,3 +640,20 @@ export const StoryTooltipPlacementsVisualTest = () => (
   </>
 );
 StoryTooltipPlacementsVisualTest.storyName = 'tooltip-placements-visual-test';
+
+export const StoryTooltipNoPointer = () => (
+  <>
+    <StorybookSubHeading>Tooltip no pointer</StorybookSubHeading>
+    <ThemeProvider theme={myCustomTheme}>
+      <Tooltip content="Tooltip content" placement="right" hidePointer>
+        <Button
+          size={ButtonSize.Small}
+          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+        >
+          Button
+        </Button>
+      </Tooltip>
+    </ThemeProvider>
+  </>
+);
+StoryTooltipNoPointer.storyName = 'tooltip-no-pointer';
