@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  IconFilledInfo,
-  InlineMessage,
-  Block,
-  P,
-  UnorderedList,
-  styled,
-  getColorFromTheme,
-} from 'newskit';
+import {IconFilledInfo, InlineMessage, Block, P, UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
@@ -21,6 +13,7 @@ import {
 import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
+import {StyledHeading, StyledDoHeading, StyledDontHeading} from '../styled';
 
 const infoIcon = (
   <IconFilledInfo
@@ -29,18 +22,6 @@ const infoIcon = (
     }}
   />
 );
-
-export const StyledHeading = styled.span`
-  color: ${getColorFromTheme('inkBrand010')};
-`;
-
-export const StyledDoHeading = styled.span`
-  color: ${getColorFromTheme('inkPositive')};
-`;
-
-export const StyledDontHeading = styled.span`
-  color: ${getColorFromTheme('inkNegative')};
-`;
 
 const BestPractice = (layoutProps: LayoutProps) => (
   <PatternPageTemplate
