@@ -111,11 +111,12 @@ const Overlays = (layoutProps: LayoutProps) => (
                 elements.
                 <br />
                 <br />
-                `Base` tint tokens are used to darken a background or element.
-                <br />
-                <br />
-                `Inverse` tint tokens are used to lighten a background or
+                &apos;Base&apos; tint tokens are used to darken a background or
                 element.
+                <br />
+                <br />
+                &apos;Inverse&apos; tint tokens are used to lighten a background
+                or element.
               </>
             }
             showSeparator

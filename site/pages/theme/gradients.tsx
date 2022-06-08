@@ -75,10 +75,10 @@ styles (these are light when used in a dark theme)`}
           headline="Gradients"
           description={
             <>
-              `Base` gradient tokens are used to fade elements into the
-              interface background. <br />
-              `Inverse` gradient tokens are used to fade elements into a dark
-              background in a light theme
+              &apos;Base&apos; gradient tokens are used to fade elements into
+              the interface background. <br />
+              &apos;Inverse&apos; gradient tokens are used to fade elements into
+              a dark background in a light theme
               <br />
             </>
           }

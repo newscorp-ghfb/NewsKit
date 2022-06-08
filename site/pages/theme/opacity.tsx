@@ -47,7 +47,7 @@ const Opacity = (layoutProps: LayoutProps) => (
           id="overview"
           toc="Overview"
           headline="Overview"
-          description="Opacity foundations consist of a scale of styles that can make interface elements appear more translucent.In some cases, a component will have an opacity applied
+          description="Opacity foundations consist of a scale of styles that can make interface elements appear more translucent. In some cases, a component will have an opacity applied
 to a background."
           showSeparator
         />
