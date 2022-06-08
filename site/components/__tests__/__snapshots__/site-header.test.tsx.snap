@@ -445,6 +445,18 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-25 {
+    padding-inline: 3px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-25 {
+    padding-inline: 16px;
+  }
+}
+
 .emotion-25 svg {
   width: 24px;
   height: 24px;
@@ -469,6 +481,18 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-25 {
+    padding-inline: 3px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-25 {
+    padding-inline: 16px;
   }
 }
 
@@ -538,6 +562,18 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-30 {
+    padding-inline: 3px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-30 {
+    padding-inline: 16px;
+  }
+}
+
 .emotion-30 svg {
   width: 24px;
   height: 24px;
@@ -562,6 +598,18 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-30 {
+    padding-inline: 3px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-30 {
+    padding-inline: 16px;
   }
 }
 
@@ -1629,6 +1677,18 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-25 {
+    padding-inline: 3px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-25 {
+    padding-inline: 16px;
+  }
+}
+
 .emotion-25 svg {
   width: 24px;
   height: 24px;
@@ -1653,6 +1713,18 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-25 {
+    padding-inline: 3px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-25 {
+    padding-inline: 16px;
   }
 }
 
@@ -1722,6 +1794,18 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-30 {
+    padding-inline: 3px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-30 {
+    padding-inline: 16px;
+  }
+}
+
 .emotion-30 svg {
   width: 24px;
   height: 24px;
@@ -1746,6 +1830,18 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-30 {
+    padding-inline: 3px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-30 {
+    padding-inline: 16px;
   }
 }
 
@@ -2807,6 +2903,18 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-25 {
+    padding-inline: 3px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-25 {
+    padding-inline: 16px;
+  }
+}
+
 .emotion-25 svg {
   width: 24px;
   height: 24px;
@@ -2831,6 +2939,18 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-25 {
+    padding-inline: 3px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-25 {
+    padding-inline: 16px;
   }
 }
 

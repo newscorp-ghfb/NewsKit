@@ -124,8 +124,8 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           overrides={{
             stylePreset: 'linkTopNavigation',
             minHeight: '80px',
-
             marginInline: '10px',
+            paddingInline: {lg: '3px', xl: '16px'},
           }}
         >
           {title}
