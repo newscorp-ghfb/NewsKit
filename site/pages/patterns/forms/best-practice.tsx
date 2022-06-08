@@ -13,11 +13,7 @@ import {
 import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
-import {
-  StyledHeading,
-  StyledDoHeading,
-  StyledDontHeading,
-} from '../../../templates/pattern-page-template/styled';
+import {StyledHeading, StyledDoHeading, StyledDontHeading} from '../styled';
 
 const infoIcon = (
   <IconFilledInfo
