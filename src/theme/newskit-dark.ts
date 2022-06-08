@@ -62,6 +62,9 @@ export const newskitDarkThemeOverrides = {
     overlayDarkGradient010:
       'linear-gradient(180deg, rgba(51, 51, 51, 0) 0%, #0A0A0A 100%)',
   },
+  outline: {
+    safariOutlineStyleDefault: 'solid',
+  },
 };
 
 export const newskitDarkTheme = createTheme({

@@ -297,7 +297,7 @@ Object {
     "outlineStyleDefault": "solid",
     "outlineWidthDefault": "{{borders.borderWidth020}}",
     "safariOutlineOffsetDefault": "{{borders.borderWidth020}}",
-    "safariOutlineStyleDefault": "auto",
+    "safariOutlineStyleDefault": "solid",
   },
   "overlays": Object {
     "opacity000": "0",
