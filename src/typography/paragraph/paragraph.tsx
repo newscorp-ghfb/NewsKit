@@ -54,7 +54,7 @@ const getFirstLetter = (
 ): string => {
   const [firstChild] = children;
   if (typeof firstChild === 'string') {
-    return firstChild.split('')[0];
+    return firstChild.charAt(0);
   }
   if (isFragment(firstChild)) {
     return getFirstLetter(React.Children.toArray(firstChild.props.children));
@@ -67,7 +67,7 @@ const removeFirstLetter = (
 ): (React.ReactChild | React.ReactFragment | React.ReactPortal)[] => {
   const [firstChild, ...rest] = children;
   if (typeof firstChild === 'string') {
-    return [firstChild.split('').slice(1).join(''), ...rest];
+    return [firstChild.substring(1), ...rest];
   }
   if (isFragment(firstChild)) {
     return [
