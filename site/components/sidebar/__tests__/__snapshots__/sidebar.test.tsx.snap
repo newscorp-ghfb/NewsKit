@@ -889,7 +889,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           aria-current="false"
                           class="emotion-14"
                           data-testid="buttonLink"
-                          href="about/introduction"
+                          href="/about/introduction"
                           tabindex="-1"
                         >
                           <div
@@ -914,7 +914,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           aria-current="false"
                           class="emotion-14"
                           data-testid="buttonLink"
-                          href="about/release-notes"
+                          href="/about/release-notes"
                           tabindex="-1"
                         >
                           <div
@@ -939,7 +939,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           aria-current="false"
                           class="emotion-14"
                           data-testid="buttonLink"
-                          href="about/roadmap"
+                          href="/about/roadmap"
                           tabindex="-1"
                         >
                           <div
@@ -964,7 +964,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           aria-current="false"
                           class="emotion-14"
                           data-testid="buttonLink"
-                          href="about/contribute"
+                          href="/about/contribute"
                           tabindex="-1"
                         >
                           <div
@@ -989,7 +989,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           aria-current="false"
                           class="emotion-14"
                           data-testid="buttonLink"
-                          href="about/contact-us"
+                          href="/about/contact-us"
                           tabindex="-1"
                         >
                           <div
@@ -1066,7 +1066,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           aria-current="false"
                           class="emotion-47"
                           data-testid="buttonLink"
-                          href="getting-started/overview"
+                          href="/getting-started/overview"
                           tabindex="-1"
                         >
                           <div
@@ -1107,7 +1107,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="getting-started/design/design-overview"
+                              href="/getting-started/design/design-overview"
                               tabindex="-1"
                             >
                               <div
@@ -1132,7 +1132,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="getting-started/design/design-quickstart"
+                              href="/getting-started/design/design-quickstart"
                               tabindex="-1"
                             >
                               <div
@@ -1175,7 +1175,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="getting-started/code/engineering-overview"
+                              href="/getting-started/code/engineering-overview"
                               tabindex="-1"
                             >
                               <div
@@ -1200,7 +1200,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="getting-started/code/engineering-quickstart"
+                              href="/getting-started/code/engineering-quickstart"
                               tabindex="-1"
                             >
                               <div
@@ -1225,7 +1225,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="getting-started/code/instrumentation"
+                              href="/getting-started/code/instrumentation"
                               tabindex="-1"
                             >
                               <div
@@ -1250,7 +1250,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="getting-started/code/testing"
+                              href="/getting-started/code/testing"
                               tabindex="-1"
                             >
                               <div
@@ -1329,7 +1329,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           aria-current="false"
                           class="emotion-47"
                           data-testid="buttonLink"
-                          href="theme/overview"
+                          href="/theme/overview"
                           tabindex="-1"
                         >
                           <div
@@ -1370,7 +1370,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/breakpoints"
+                              href="/theme/breakpoints"
                               tabindex="-1"
                             >
                               <div
@@ -1395,7 +1395,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/colours"
+                              href="/theme/colours"
                               tabindex="-1"
                             >
                               <div
@@ -1420,7 +1420,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/design-tokens"
+                              href="/theme/design-tokens"
                               tabindex="-1"
                             >
                               <div
@@ -1445,7 +1445,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/fonts"
+                              href="/theme/fonts"
                               tabindex="-1"
                             >
                               <div
@@ -1470,7 +1470,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/iconography"
+                              href="/theme/iconography"
                               tabindex="-1"
                             >
                               <div
@@ -1495,7 +1495,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/motion"
+                              href="/theme/motion"
                               tabindex="-1"
                             >
                               <div
@@ -1520,7 +1520,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/shadows"
+                              href="/theme/shadows"
                               tabindex="-1"
                             >
                               <div
@@ -1545,7 +1545,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/sizing"
+                              href="/theme/sizing"
                               tabindex="-1"
                             >
                               <div
@@ -1570,7 +1570,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/spacing"
+                              href="/theme/spacing"
                               tabindex="-1"
                             >
                               <div
@@ -1613,7 +1613,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/presets/style-presets"
+                              href="/theme/presets/style-presets"
                               tabindex="-1"
                             >
                               <div
@@ -1638,7 +1638,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/presets/transition-presets"
+                              href="/theme/presets/transition-presets"
                               tabindex="-1"
                             >
                               <div
@@ -1663,7 +1663,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/presets/typography-presets"
+                              href="/theme/presets/typography-presets"
                               tabindex="-1"
                             >
                               <div
@@ -1706,7 +1706,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/theming/overview"
+                              href="/theme/theming/overview"
                               tabindex="-1"
                             >
                               <div
@@ -1731,7 +1731,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/theming/creating-a-theme"
+                              href="/theme/theming/creating-a-theme"
                               tabindex="-1"
                             >
                               <div
@@ -1756,7 +1756,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/theming/using-a-theme"
+                              href="/theme/theming/using-a-theme"
                               tabindex="-1"
                             >
                               <div
@@ -1781,7 +1781,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/theming/component-defaults"
+                              href="/theme/theming/component-defaults"
                               tabindex="-1"
                             >
                               <div
@@ -1860,7 +1860,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           aria-current="false"
                           class="emotion-47"
                           data-testid="buttonLink"
-                          href="components/overview"
+                          href="/components/overview"
                           tabindex="-1"
                         >
                           <div
@@ -1901,7 +1901,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/button"
+                              href="/components/button"
                               tabindex="-1"
                             >
                               <div
@@ -1926,7 +1926,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/checkbox"
+                              href="/components/checkbox"
                               tabindex="-1"
                             >
                               <div
@@ -1951,7 +1951,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/form"
+                              href="/components/form"
                               tabindex="-1"
                             >
                               <div
@@ -1976,7 +1976,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/radio-button"
+                              href="/components/radio-button"
                               tabindex="-1"
                             >
                               <div
@@ -2001,7 +2001,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/select"
+                              href="/components/select"
                               tabindex="-1"
                             >
                               <div
@@ -2026,7 +2026,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/share-bar"
+                              href="/components/share-bar"
                               tabindex="-1"
                             >
                               <div
@@ -2051,7 +2051,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/slider"
+                              href="/components/slider"
                               tabindex="-1"
                             >
                               <div
@@ -2076,7 +2076,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/text-field"
+                              href="/components/text-field"
                               tabindex="-1"
                             >
                               <div
@@ -2101,7 +2101,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/text-input"
+                              href="/components/text-input"
                               tabindex="-1"
                             >
                               <div
@@ -2144,7 +2144,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/banner"
+                              href="/components/banner"
                               tabindex="-1"
                             >
                               <div
@@ -2169,7 +2169,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/flag"
+                              href="/components/flag"
                               tabindex="-1"
                             >
                               <div
@@ -2194,7 +2194,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/progress-indicator"
+                              href="/components/progress-indicator"
                               tabindex="-1"
                             >
                               <div
@@ -2219,7 +2219,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/toast"
+                              href="/components/toast"
                               tabindex="-1"
                             >
                               <div
@@ -2244,7 +2244,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/inline-message"
+                              href="/components/inline-message"
                               tabindex="-1"
                             >
                               <div
@@ -2287,7 +2287,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/aspect-ratio"
+                              href="/components/aspect-ratio"
                               tabindex="-1"
                             >
                               <div
@@ -2312,7 +2312,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/block"
+                              href="/components/block"
                               tabindex="-1"
                             >
                               <div
@@ -2337,7 +2337,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/card"
+                              href="/components/card"
                               tabindex="-1"
                             >
                               <div
@@ -2362,7 +2362,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/divider"
+                              href="/components/divider"
                               tabindex="-1"
                             >
                               <div
@@ -2387,7 +2387,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/drawer"
+                              href="/components/drawer"
                               tabindex="-1"
                             >
                               <div
@@ -2412,7 +2412,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/fieldset"
+                              href="/components/fieldset"
                               tabindex="-1"
                             >
                               <div
@@ -2437,7 +2437,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/grid"
+                              href="/components/grid"
                               tabindex="-1"
                             >
                               <div
@@ -2462,7 +2462,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/grid-layout"
+                              href="/components/grid-layout"
                               tabindex="-1"
                             >
                               <div
@@ -2487,7 +2487,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/modal"
+                              href="/components/modal"
                               tabindex="-1"
                             >
                               <div
@@ -2512,7 +2512,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/stack"
+                              href="/components/stack"
                               tabindex="-1"
                             >
                               <div
@@ -2537,7 +2537,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/structured-list"
+                              href="/components/structured-list"
                               tabindex="-1"
                             >
                               <div
@@ -2562,7 +2562,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/visibility"
+                              href="/components/visibility"
                               tabindex="-1"
                             >
                               <div
@@ -2605,7 +2605,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/audio-player"
+                              href="/components/audio-player"
                               tabindex="-1"
                             >
                               <div
@@ -2630,7 +2630,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/icons"
+                              href="/components/icons"
                               tabindex="-1"
                             >
                               <div
@@ -2655,7 +2655,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/image"
+                              href="/components/image"
                               tabindex="-1"
                             >
                               <div
@@ -2680,7 +2680,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/volume-control"
+                              href="/components/volume-control"
                               tabindex="-1"
                             >
                               <div
@@ -2723,7 +2723,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/link"
+                              href="/components/link"
                               tabindex="-1"
                             >
                               <div
@@ -2748,7 +2748,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/menu"
+                              href="/components/menu"
                               tabindex="-1"
                             >
                               <div
@@ -2773,7 +2773,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/scroll"
+                              href="/components/scroll"
                               tabindex="-1"
                             >
                               <div
@@ -2798,7 +2798,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/tabs"
+                              href="/components/tabs"
                               tabindex="-1"
                             >
                               <div
@@ -2823,7 +2823,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/tag"
+                              href="/components/tag"
                               tabindex="-1"
                             >
                               <div
@@ -2848,7 +2848,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/title-bar"
+                              href="/components/title-bar"
                               tabindex="-1"
                             >
                               <div
@@ -2891,7 +2891,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/byline"
+                              href="/components/byline"
                               tabindex="-1"
                             >
                               <div
@@ -2916,7 +2916,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/caption"
+                              href="/components/caption"
                               tabindex="-1"
                             >
                               <div
@@ -2941,7 +2941,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/date-time"
+                              href="/components/date-time"
                               tabindex="-1"
                             >
                               <div
@@ -2966,7 +2966,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/headline"
+                              href="/components/headline"
                               tabindex="-1"
                             >
                               <div
@@ -2991,7 +2991,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/ordered-list"
+                              href="/components/ordered-list"
                               tabindex="-1"
                             >
                               <div
@@ -3016,7 +3016,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/standfirst"
+                              href="/components/standfirst"
                               tabindex="-1"
                             >
                               <div
@@ -3041,7 +3041,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/text-block"
+                              href="/components/text-block"
                               tabindex="-1"
                             >
                               <div
@@ -3066,7 +3066,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/unordered-list"
+                              href="/components/unordered-list"
                               tabindex="-1"
                             >
                               <div
@@ -3109,7 +3109,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/consent"
+                              href="/components/consent"
                               tabindex="-1"
                             >
                               <div
@@ -3134,7 +3134,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/consent-settings-link"
+                              href="/components/consent-settings-link"
                               tabindex="-1"
                             >
                               <div
@@ -3159,7 +3159,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/experimentation-web"
+                              href="/components/experimentation-web"
                               tabindex="-1"
                             >
                               <div
@@ -3184,7 +3184,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/tealium"
+                              href="/components/tealium"
                               tabindex="-1"
                             >
                               <div
@@ -3227,7 +3227,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/utils/emotion"
+                              href="/components/utils/emotion"
                               tabindex="-1"
                             >
                               <div
@@ -3252,7 +3252,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/utils/custom-to-newskit-icon"
+                              href="/components/utils/custom-to-newskit-icon"
                               tabindex="-1"
                             >
                               <div
@@ -3277,7 +3277,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/utils/get-css-from-theme"
+                              href="/components/utils/get-css-from-theme"
                               tabindex="-1"
                             >
                               <div
@@ -3302,7 +3302,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/utils/get-from-theme"
+                              href="/components/utils/get-from-theme"
                               tabindex="-1"
                             >
                               <div
@@ -3327,7 +3327,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/utils/get-defaults"
+                              href="/components/utils/get-defaults"
                               tabindex="-1"
                             >
                               <div
@@ -3352,7 +3352,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/utils/hooks"
+                              href="/components/utils/hooks"
                               tabindex="-1"
                             >
                               <div
@@ -3431,7 +3431,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           aria-current="false"
                           class="emotion-47"
                           data-testid="buttonLink"
-                          href="patterns/forms-index"
+                          href="/patterns/patterns-index"
                           tabindex="-1"
                         >
                           <div
@@ -3472,7 +3472,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="patterns/overview"
+                              href="/patterns/forms/overview"
                               tabindex="-1"
                             >
                               <div
@@ -4246,7 +4246,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     aria-current="false"
                     class="emotion-14"
                     data-testid="buttonLink"
-                    href="about/introduction"
+                    href="/about/introduction"
                   >
                     <div
                       class="emotion-10"
@@ -4270,7 +4270,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     aria-current="false"
                     class="emotion-14"
                     data-testid="buttonLink"
-                    href="about/release-notes"
+                    href="/about/release-notes"
                   >
                     <div
                       class="emotion-10"
@@ -4294,7 +4294,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     aria-current="false"
                     class="emotion-14"
                     data-testid="buttonLink"
-                    href="about/roadmap"
+                    href="/about/roadmap"
                   >
                     <div
                       class="emotion-10"
@@ -4318,7 +4318,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     aria-current="false"
                     class="emotion-14"
                     data-testid="buttonLink"
-                    href="about/contribute"
+                    href="/about/contribute"
                   >
                     <div
                       class="emotion-10"
@@ -4342,7 +4342,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     aria-current="false"
                     class="emotion-14"
                     data-testid="buttonLink"
-                    href="about/contact-us"
+                    href="/about/contact-us"
                   >
                     <div
                       class="emotion-10"
@@ -4417,7 +4417,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     aria-current="false"
                     class="emotion-47"
                     data-testid="buttonLink"
-                    href="getting-started/overview"
+                    href="/getting-started/overview"
                   >
                     <div
                       class="emotion-10"
@@ -4457,7 +4457,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="getting-started/design/design-overview"
+                        href="/getting-started/design/design-overview"
                       >
                         <div
                           class="emotion-10"
@@ -4481,7 +4481,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="getting-started/design/design-quickstart"
+                        href="/getting-started/design/design-quickstart"
                       >
                         <div
                           class="emotion-10"
@@ -4523,7 +4523,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="getting-started/code/engineering-overview"
+                        href="/getting-started/code/engineering-overview"
                       >
                         <div
                           class="emotion-10"
@@ -4547,7 +4547,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="getting-started/code/engineering-quickstart"
+                        href="/getting-started/code/engineering-quickstart"
                       >
                         <div
                           class="emotion-10"
@@ -4571,7 +4571,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="getting-started/code/instrumentation"
+                        href="/getting-started/code/instrumentation"
                       >
                         <div
                           class="emotion-10"
@@ -4595,7 +4595,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="getting-started/code/testing"
+                        href="/getting-started/code/testing"
                       >
                         <div
                           class="emotion-10"
@@ -4672,7 +4672,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     aria-current="false"
                     class="emotion-47"
                     data-testid="buttonLink"
-                    href="theme/overview"
+                    href="/theme/overview"
                   >
                     <div
                       class="emotion-10"
@@ -4712,7 +4712,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/breakpoints"
+                        href="/theme/breakpoints"
                       >
                         <div
                           class="emotion-10"
@@ -4736,7 +4736,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/colours"
+                        href="/theme/colours"
                       >
                         <div
                           class="emotion-10"
@@ -4760,7 +4760,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/design-tokens"
+                        href="/theme/design-tokens"
                       >
                         <div
                           class="emotion-10"
@@ -4784,7 +4784,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/fonts"
+                        href="/theme/fonts"
                       >
                         <div
                           class="emotion-10"
@@ -4808,7 +4808,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/iconography"
+                        href="/theme/iconography"
                       >
                         <div
                           class="emotion-10"
@@ -4832,7 +4832,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/motion"
+                        href="/theme/motion"
                       >
                         <div
                           class="emotion-10"
@@ -4856,7 +4856,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/shadows"
+                        href="/theme/shadows"
                       >
                         <div
                           class="emotion-10"
@@ -4880,7 +4880,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/sizing"
+                        href="/theme/sizing"
                       >
                         <div
                           class="emotion-10"
@@ -4904,7 +4904,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/spacing"
+                        href="/theme/spacing"
                       >
                         <div
                           class="emotion-10"
@@ -4946,7 +4946,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/presets/style-presets"
+                        href="/theme/presets/style-presets"
                       >
                         <div
                           class="emotion-10"
@@ -4970,7 +4970,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/presets/transition-presets"
+                        href="/theme/presets/transition-presets"
                       >
                         <div
                           class="emotion-10"
@@ -4994,7 +4994,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/presets/typography-presets"
+                        href="/theme/presets/typography-presets"
                       >
                         <div
                           class="emotion-10"
@@ -5036,7 +5036,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/theming/overview"
+                        href="/theme/theming/overview"
                       >
                         <div
                           class="emotion-10"
@@ -5060,7 +5060,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/theming/creating-a-theme"
+                        href="/theme/theming/creating-a-theme"
                       >
                         <div
                           class="emotion-10"
@@ -5084,7 +5084,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/theming/using-a-theme"
+                        href="/theme/theming/using-a-theme"
                       >
                         <div
                           class="emotion-10"
@@ -5108,7 +5108,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/theming/component-defaults"
+                        href="/theme/theming/component-defaults"
                       >
                         <div
                           class="emotion-10"
@@ -5185,7 +5185,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     aria-current="false"
                     class="emotion-47"
                     data-testid="buttonLink"
-                    href="components/overview"
+                    href="/components/overview"
                   >
                     <div
                       class="emotion-10"
@@ -5225,7 +5225,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/button"
+                        href="/components/button"
                       >
                         <div
                           class="emotion-10"
@@ -5249,7 +5249,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/checkbox"
+                        href="/components/checkbox"
                       >
                         <div
                           class="emotion-10"
@@ -5273,7 +5273,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/form"
+                        href="/components/form"
                       >
                         <div
                           class="emotion-10"
@@ -5297,7 +5297,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/radio-button"
+                        href="/components/radio-button"
                       >
                         <div
                           class="emotion-10"
@@ -5321,7 +5321,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/select"
+                        href="/components/select"
                       >
                         <div
                           class="emotion-10"
@@ -5345,7 +5345,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/share-bar"
+                        href="/components/share-bar"
                       >
                         <div
                           class="emotion-10"
@@ -5369,7 +5369,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/slider"
+                        href="/components/slider"
                       >
                         <div
                           class="emotion-10"
@@ -5393,7 +5393,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/text-field"
+                        href="/components/text-field"
                       >
                         <div
                           class="emotion-10"
@@ -5417,7 +5417,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/text-input"
+                        href="/components/text-input"
                       >
                         <div
                           class="emotion-10"
@@ -5459,7 +5459,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/banner"
+                        href="/components/banner"
                       >
                         <div
                           class="emotion-10"
@@ -5483,7 +5483,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/flag"
+                        href="/components/flag"
                       >
                         <div
                           class="emotion-10"
@@ -5507,7 +5507,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/progress-indicator"
+                        href="/components/progress-indicator"
                       >
                         <div
                           class="emotion-10"
@@ -5531,7 +5531,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/toast"
+                        href="/components/toast"
                       >
                         <div
                           class="emotion-10"
@@ -5555,7 +5555,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/inline-message"
+                        href="/components/inline-message"
                       >
                         <div
                           class="emotion-10"
@@ -5597,7 +5597,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/aspect-ratio"
+                        href="/components/aspect-ratio"
                       >
                         <div
                           class="emotion-10"
@@ -5621,7 +5621,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/block"
+                        href="/components/block"
                       >
                         <div
                           class="emotion-10"
@@ -5645,7 +5645,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/card"
+                        href="/components/card"
                       >
                         <div
                           class="emotion-10"
@@ -5669,7 +5669,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/divider"
+                        href="/components/divider"
                       >
                         <div
                           class="emotion-10"
@@ -5693,7 +5693,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/drawer"
+                        href="/components/drawer"
                       >
                         <div
                           class="emotion-10"
@@ -5717,7 +5717,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/fieldset"
+                        href="/components/fieldset"
                       >
                         <div
                           class="emotion-10"
@@ -5741,7 +5741,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/grid"
+                        href="/components/grid"
                       >
                         <div
                           class="emotion-10"
@@ -5765,7 +5765,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/grid-layout"
+                        href="/components/grid-layout"
                       >
                         <div
                           class="emotion-10"
@@ -5789,7 +5789,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/modal"
+                        href="/components/modal"
                       >
                         <div
                           class="emotion-10"
@@ -5813,7 +5813,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/stack"
+                        href="/components/stack"
                       >
                         <div
                           class="emotion-10"
@@ -5837,7 +5837,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/structured-list"
+                        href="/components/structured-list"
                       >
                         <div
                           class="emotion-10"
@@ -5861,7 +5861,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/visibility"
+                        href="/components/visibility"
                       >
                         <div
                           class="emotion-10"
@@ -5903,7 +5903,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/audio-player"
+                        href="/components/audio-player"
                       >
                         <div
                           class="emotion-10"
@@ -5927,7 +5927,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/icons"
+                        href="/components/icons"
                       >
                         <div
                           class="emotion-10"
@@ -5951,7 +5951,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/image"
+                        href="/components/image"
                       >
                         <div
                           class="emotion-10"
@@ -5975,7 +5975,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/volume-control"
+                        href="/components/volume-control"
                       >
                         <div
                           class="emotion-10"
@@ -6017,7 +6017,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/link"
+                        href="/components/link"
                       >
                         <div
                           class="emotion-10"
@@ -6041,7 +6041,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/menu"
+                        href="/components/menu"
                       >
                         <div
                           class="emotion-10"
@@ -6065,7 +6065,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/scroll"
+                        href="/components/scroll"
                       >
                         <div
                           class="emotion-10"
@@ -6089,7 +6089,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/tabs"
+                        href="/components/tabs"
                       >
                         <div
                           class="emotion-10"
@@ -6113,7 +6113,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/tag"
+                        href="/components/tag"
                       >
                         <div
                           class="emotion-10"
@@ -6137,7 +6137,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/title-bar"
+                        href="/components/title-bar"
                       >
                         <div
                           class="emotion-10"
@@ -6179,7 +6179,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/byline"
+                        href="/components/byline"
                       >
                         <div
                           class="emotion-10"
@@ -6203,7 +6203,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/caption"
+                        href="/components/caption"
                       >
                         <div
                           class="emotion-10"
@@ -6227,7 +6227,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/date-time"
+                        href="/components/date-time"
                       >
                         <div
                           class="emotion-10"
@@ -6251,7 +6251,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/headline"
+                        href="/components/headline"
                       >
                         <div
                           class="emotion-10"
@@ -6275,7 +6275,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/ordered-list"
+                        href="/components/ordered-list"
                       >
                         <div
                           class="emotion-10"
@@ -6299,7 +6299,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/standfirst"
+                        href="/components/standfirst"
                       >
                         <div
                           class="emotion-10"
@@ -6323,7 +6323,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/text-block"
+                        href="/components/text-block"
                       >
                         <div
                           class="emotion-10"
@@ -6347,7 +6347,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/unordered-list"
+                        href="/components/unordered-list"
                       >
                         <div
                           class="emotion-10"
@@ -6389,7 +6389,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/consent"
+                        href="/components/consent"
                       >
                         <div
                           class="emotion-10"
@@ -6413,7 +6413,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/consent-settings-link"
+                        href="/components/consent-settings-link"
                       >
                         <div
                           class="emotion-10"
@@ -6437,7 +6437,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/experimentation-web"
+                        href="/components/experimentation-web"
                       >
                         <div
                           class="emotion-10"
@@ -6461,7 +6461,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/tealium"
+                        href="/components/tealium"
                       >
                         <div
                           class="emotion-10"
@@ -6503,7 +6503,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/utils/emotion"
+                        href="/components/utils/emotion"
                       >
                         <div
                           class="emotion-10"
@@ -6527,7 +6527,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/utils/custom-to-newskit-icon"
+                        href="/components/utils/custom-to-newskit-icon"
                       >
                         <div
                           class="emotion-10"
@@ -6551,7 +6551,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/utils/get-css-from-theme"
+                        href="/components/utils/get-css-from-theme"
                       >
                         <div
                           class="emotion-10"
@@ -6575,7 +6575,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/utils/get-from-theme"
+                        href="/components/utils/get-from-theme"
                       >
                         <div
                           class="emotion-10"
@@ -6599,7 +6599,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/utils/get-defaults"
+                        href="/components/utils/get-defaults"
                       >
                         <div
                           class="emotion-10"
@@ -6623,7 +6623,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/utils/hooks"
+                        href="/components/utils/hooks"
                       >
                         <div
                           class="emotion-10"
@@ -6700,7 +6700,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     aria-current="false"
                     class="emotion-47"
                     data-testid="buttonLink"
-                    href="patterns/forms-index"
+                    href="/patterns/patterns-index"
                   >
                     <div
                       class="emotion-10"
@@ -6740,7 +6740,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="patterns/overview"
+                        href="/patterns/forms/overview"
                       >
                         <div
                           class="emotion-10"
@@ -7706,7 +7706,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           aria-current="false"
                           class="emotion-14"
                           data-testid="buttonLink"
-                          href="about/introduction"
+                          href="/about/introduction"
                         >
                           <div
                             class="emotion-10"
@@ -7730,7 +7730,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           aria-current="false"
                           class="emotion-14"
                           data-testid="buttonLink"
-                          href="about/release-notes"
+                          href="/about/release-notes"
                         >
                           <div
                             class="emotion-10"
@@ -7754,7 +7754,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           aria-current="false"
                           class="emotion-14"
                           data-testid="buttonLink"
-                          href="about/roadmap"
+                          href="/about/roadmap"
                         >
                           <div
                             class="emotion-10"
@@ -7778,7 +7778,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           aria-current="false"
                           class="emotion-14"
                           data-testid="buttonLink"
-                          href="about/contribute"
+                          href="/about/contribute"
                         >
                           <div
                             class="emotion-10"
@@ -7802,7 +7802,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           aria-current="false"
                           class="emotion-14"
                           data-testid="buttonLink"
-                          href="about/contact-us"
+                          href="/about/contact-us"
                         >
                           <div
                             class="emotion-10"
@@ -7877,7 +7877,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           aria-current="false"
                           class="emotion-47"
                           data-testid="buttonLink"
-                          href="getting-started/overview"
+                          href="/getting-started/overview"
                         >
                           <div
                             class="emotion-10"
@@ -7917,7 +7917,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="getting-started/design/design-overview"
+                              href="/getting-started/design/design-overview"
                             >
                               <div
                                 class="emotion-10"
@@ -7941,7 +7941,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="getting-started/design/design-quickstart"
+                              href="/getting-started/design/design-quickstart"
                             >
                               <div
                                 class="emotion-10"
@@ -7983,7 +7983,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="getting-started/code/engineering-overview"
+                              href="/getting-started/code/engineering-overview"
                             >
                               <div
                                 class="emotion-10"
@@ -8007,7 +8007,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="getting-started/code/engineering-quickstart"
+                              href="/getting-started/code/engineering-quickstart"
                             >
                               <div
                                 class="emotion-10"
@@ -8031,7 +8031,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="getting-started/code/instrumentation"
+                              href="/getting-started/code/instrumentation"
                             >
                               <div
                                 class="emotion-10"
@@ -8055,7 +8055,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="getting-started/code/testing"
+                              href="/getting-started/code/testing"
                             >
                               <div
                                 class="emotion-10"
@@ -8132,7 +8132,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           aria-current="false"
                           class="emotion-47"
                           data-testid="buttonLink"
-                          href="theme/overview"
+                          href="/theme/overview"
                         >
                           <div
                             class="emotion-10"
@@ -8172,7 +8172,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/breakpoints"
+                              href="/theme/breakpoints"
                             >
                               <div
                                 class="emotion-10"
@@ -8196,7 +8196,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/colours"
+                              href="/theme/colours"
                             >
                               <div
                                 class="emotion-10"
@@ -8220,7 +8220,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/design-tokens"
+                              href="/theme/design-tokens"
                             >
                               <div
                                 class="emotion-10"
@@ -8244,7 +8244,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/fonts"
+                              href="/theme/fonts"
                             >
                               <div
                                 class="emotion-10"
@@ -8268,7 +8268,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/iconography"
+                              href="/theme/iconography"
                             >
                               <div
                                 class="emotion-10"
@@ -8292,7 +8292,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/motion"
+                              href="/theme/motion"
                             >
                               <div
                                 class="emotion-10"
@@ -8316,7 +8316,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/shadows"
+                              href="/theme/shadows"
                             >
                               <div
                                 class="emotion-10"
@@ -8340,7 +8340,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/sizing"
+                              href="/theme/sizing"
                             >
                               <div
                                 class="emotion-10"
@@ -8364,7 +8364,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/spacing"
+                              href="/theme/spacing"
                             >
                               <div
                                 class="emotion-10"
@@ -8406,7 +8406,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/presets/style-presets"
+                              href="/theme/presets/style-presets"
                             >
                               <div
                                 class="emotion-10"
@@ -8430,7 +8430,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/presets/transition-presets"
+                              href="/theme/presets/transition-presets"
                             >
                               <div
                                 class="emotion-10"
@@ -8454,7 +8454,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/presets/typography-presets"
+                              href="/theme/presets/typography-presets"
                             >
                               <div
                                 class="emotion-10"
@@ -8496,7 +8496,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/theming/overview"
+                              href="/theme/theming/overview"
                             >
                               <div
                                 class="emotion-10"
@@ -8520,7 +8520,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/theming/creating-a-theme"
+                              href="/theme/theming/creating-a-theme"
                             >
                               <div
                                 class="emotion-10"
@@ -8544,7 +8544,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/theming/using-a-theme"
+                              href="/theme/theming/using-a-theme"
                             >
                               <div
                                 class="emotion-10"
@@ -8568,7 +8568,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="theme/theming/component-defaults"
+                              href="/theme/theming/component-defaults"
                             >
                               <div
                                 class="emotion-10"
@@ -8645,7 +8645,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           aria-current="false"
                           class="emotion-47"
                           data-testid="buttonLink"
-                          href="components/overview"
+                          href="/components/overview"
                         >
                           <div
                             class="emotion-10"
@@ -8685,7 +8685,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/button"
+                              href="/components/button"
                             >
                               <div
                                 class="emotion-10"
@@ -8709,7 +8709,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/checkbox"
+                              href="/components/checkbox"
                             >
                               <div
                                 class="emotion-10"
@@ -8733,7 +8733,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/form"
+                              href="/components/form"
                             >
                               <div
                                 class="emotion-10"
@@ -8757,7 +8757,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/radio-button"
+                              href="/components/radio-button"
                             >
                               <div
                                 class="emotion-10"
@@ -8781,7 +8781,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/select"
+                              href="/components/select"
                             >
                               <div
                                 class="emotion-10"
@@ -8805,7 +8805,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/share-bar"
+                              href="/components/share-bar"
                             >
                               <div
                                 class="emotion-10"
@@ -8829,7 +8829,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/slider"
+                              href="/components/slider"
                             >
                               <div
                                 class="emotion-10"
@@ -8853,7 +8853,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/text-field"
+                              href="/components/text-field"
                             >
                               <div
                                 class="emotion-10"
@@ -8877,7 +8877,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/text-input"
+                              href="/components/text-input"
                             >
                               <div
                                 class="emotion-10"
@@ -8919,7 +8919,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/banner"
+                              href="/components/banner"
                             >
                               <div
                                 class="emotion-10"
@@ -8943,7 +8943,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/flag"
+                              href="/components/flag"
                             >
                               <div
                                 class="emotion-10"
@@ -8967,7 +8967,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/progress-indicator"
+                              href="/components/progress-indicator"
                             >
                               <div
                                 class="emotion-10"
@@ -8991,7 +8991,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/toast"
+                              href="/components/toast"
                             >
                               <div
                                 class="emotion-10"
@@ -9015,7 +9015,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/inline-message"
+                              href="/components/inline-message"
                             >
                               <div
                                 class="emotion-10"
@@ -9057,7 +9057,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/aspect-ratio"
+                              href="/components/aspect-ratio"
                             >
                               <div
                                 class="emotion-10"
@@ -9081,7 +9081,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/block"
+                              href="/components/block"
                             >
                               <div
                                 class="emotion-10"
@@ -9105,7 +9105,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/card"
+                              href="/components/card"
                             >
                               <div
                                 class="emotion-10"
@@ -9129,7 +9129,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/divider"
+                              href="/components/divider"
                             >
                               <div
                                 class="emotion-10"
@@ -9153,7 +9153,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/drawer"
+                              href="/components/drawer"
                             >
                               <div
                                 class="emotion-10"
@@ -9177,7 +9177,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/fieldset"
+                              href="/components/fieldset"
                             >
                               <div
                                 class="emotion-10"
@@ -9201,7 +9201,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/grid"
+                              href="/components/grid"
                             >
                               <div
                                 class="emotion-10"
@@ -9225,7 +9225,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/grid-layout"
+                              href="/components/grid-layout"
                             >
                               <div
                                 class="emotion-10"
@@ -9249,7 +9249,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/modal"
+                              href="/components/modal"
                             >
                               <div
                                 class="emotion-10"
@@ -9273,7 +9273,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/stack"
+                              href="/components/stack"
                             >
                               <div
                                 class="emotion-10"
@@ -9297,7 +9297,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/structured-list"
+                              href="/components/structured-list"
                             >
                               <div
                                 class="emotion-10"
@@ -9321,7 +9321,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/visibility"
+                              href="/components/visibility"
                             >
                               <div
                                 class="emotion-10"
@@ -9363,7 +9363,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/audio-player"
+                              href="/components/audio-player"
                             >
                               <div
                                 class="emotion-10"
@@ -9387,7 +9387,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/icons"
+                              href="/components/icons"
                             >
                               <div
                                 class="emotion-10"
@@ -9411,7 +9411,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/image"
+                              href="/components/image"
                             >
                               <div
                                 class="emotion-10"
@@ -9435,7 +9435,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/volume-control"
+                              href="/components/volume-control"
                             >
                               <div
                                 class="emotion-10"
@@ -9477,7 +9477,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/link"
+                              href="/components/link"
                             >
                               <div
                                 class="emotion-10"
@@ -9501,7 +9501,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/menu"
+                              href="/components/menu"
                             >
                               <div
                                 class="emotion-10"
@@ -9525,7 +9525,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/scroll"
+                              href="/components/scroll"
                             >
                               <div
                                 class="emotion-10"
@@ -9549,7 +9549,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/tabs"
+                              href="/components/tabs"
                             >
                               <div
                                 class="emotion-10"
@@ -9573,7 +9573,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/tag"
+                              href="/components/tag"
                             >
                               <div
                                 class="emotion-10"
@@ -9597,7 +9597,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/title-bar"
+                              href="/components/title-bar"
                             >
                               <div
                                 class="emotion-10"
@@ -9639,7 +9639,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/byline"
+                              href="/components/byline"
                             >
                               <div
                                 class="emotion-10"
@@ -9663,7 +9663,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/caption"
+                              href="/components/caption"
                             >
                               <div
                                 class="emotion-10"
@@ -9687,7 +9687,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/date-time"
+                              href="/components/date-time"
                             >
                               <div
                                 class="emotion-10"
@@ -9711,7 +9711,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/headline"
+                              href="/components/headline"
                             >
                               <div
                                 class="emotion-10"
@@ -9735,7 +9735,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/ordered-list"
+                              href="/components/ordered-list"
                             >
                               <div
                                 class="emotion-10"
@@ -9759,7 +9759,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/standfirst"
+                              href="/components/standfirst"
                             >
                               <div
                                 class="emotion-10"
@@ -9783,7 +9783,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/text-block"
+                              href="/components/text-block"
                             >
                               <div
                                 class="emotion-10"
@@ -9807,7 +9807,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/unordered-list"
+                              href="/components/unordered-list"
                             >
                               <div
                                 class="emotion-10"
@@ -9849,7 +9849,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/consent"
+                              href="/components/consent"
                             >
                               <div
                                 class="emotion-10"
@@ -9873,7 +9873,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/consent-settings-link"
+                              href="/components/consent-settings-link"
                             >
                               <div
                                 class="emotion-10"
@@ -9897,7 +9897,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/experimentation-web"
+                              href="/components/experimentation-web"
                             >
                               <div
                                 class="emotion-10"
@@ -9921,7 +9921,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/tealium"
+                              href="/components/tealium"
                             >
                               <div
                                 class="emotion-10"
@@ -9963,7 +9963,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/utils/emotion"
+                              href="/components/utils/emotion"
                             >
                               <div
                                 class="emotion-10"
@@ -9987,7 +9987,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/utils/custom-to-newskit-icon"
+                              href="/components/utils/custom-to-newskit-icon"
                             >
                               <div
                                 class="emotion-10"
@@ -10011,7 +10011,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/utils/get-css-from-theme"
+                              href="/components/utils/get-css-from-theme"
                             >
                               <div
                                 class="emotion-10"
@@ -10035,7 +10035,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/utils/get-from-theme"
+                              href="/components/utils/get-from-theme"
                             >
                               <div
                                 class="emotion-10"
@@ -10059,7 +10059,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/utils/get-defaults"
+                              href="/components/utils/get-defaults"
                             >
                               <div
                                 class="emotion-10"
@@ -10083,7 +10083,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="components/utils/hooks"
+                              href="/components/utils/hooks"
                             >
                               <div
                                 class="emotion-10"
@@ -10160,7 +10160,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           aria-current="false"
                           class="emotion-47"
                           data-testid="buttonLink"
-                          href="patterns/forms-index"
+                          href="/patterns/patterns-index"
                         >
                           <div
                             class="emotion-10"
@@ -10200,7 +10200,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="patterns/overview"
+                              href="/patterns/forms/overview"
                             >
                               <div
                                 class="emotion-10"
@@ -10974,7 +10974,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     aria-current="false"
                     class="emotion-14"
                     data-testid="buttonLink"
-                    href="about/introduction"
+                    href="/about/introduction"
                   >
                     <div
                       class="emotion-10"
@@ -10998,7 +10998,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     aria-current="false"
                     class="emotion-14"
                     data-testid="buttonLink"
-                    href="about/release-notes"
+                    href="/about/release-notes"
                   >
                     <div
                       class="emotion-10"
@@ -11022,7 +11022,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     aria-current="false"
                     class="emotion-14"
                     data-testid="buttonLink"
-                    href="about/roadmap"
+                    href="/about/roadmap"
                   >
                     <div
                       class="emotion-10"
@@ -11046,7 +11046,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     aria-current="false"
                     class="emotion-14"
                     data-testid="buttonLink"
-                    href="about/contribute"
+                    href="/about/contribute"
                   >
                     <div
                       class="emotion-10"
@@ -11070,7 +11070,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     aria-current="false"
                     class="emotion-14"
                     data-testid="buttonLink"
-                    href="about/contact-us"
+                    href="/about/contact-us"
                   >
                     <div
                       class="emotion-10"
@@ -11145,7 +11145,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     aria-current="false"
                     class="emotion-47"
                     data-testid="buttonLink"
-                    href="getting-started/overview"
+                    href="/getting-started/overview"
                   >
                     <div
                       class="emotion-10"
@@ -11185,7 +11185,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="getting-started/design/design-overview"
+                        href="/getting-started/design/design-overview"
                       >
                         <div
                           class="emotion-10"
@@ -11209,7 +11209,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="getting-started/design/design-quickstart"
+                        href="/getting-started/design/design-quickstart"
                       >
                         <div
                           class="emotion-10"
@@ -11251,7 +11251,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="getting-started/code/engineering-overview"
+                        href="/getting-started/code/engineering-overview"
                       >
                         <div
                           class="emotion-10"
@@ -11275,7 +11275,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="getting-started/code/engineering-quickstart"
+                        href="/getting-started/code/engineering-quickstart"
                       >
                         <div
                           class="emotion-10"
@@ -11299,7 +11299,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="getting-started/code/instrumentation"
+                        href="/getting-started/code/instrumentation"
                       >
                         <div
                           class="emotion-10"
@@ -11323,7 +11323,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="getting-started/code/testing"
+                        href="/getting-started/code/testing"
                       >
                         <div
                           class="emotion-10"
@@ -11400,7 +11400,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     aria-current="false"
                     class="emotion-47"
                     data-testid="buttonLink"
-                    href="theme/overview"
+                    href="/theme/overview"
                   >
                     <div
                       class="emotion-10"
@@ -11440,7 +11440,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/breakpoints"
+                        href="/theme/breakpoints"
                       >
                         <div
                           class="emotion-10"
@@ -11464,7 +11464,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/colours"
+                        href="/theme/colours"
                       >
                         <div
                           class="emotion-10"
@@ -11488,7 +11488,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/design-tokens"
+                        href="/theme/design-tokens"
                       >
                         <div
                           class="emotion-10"
@@ -11512,7 +11512,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/fonts"
+                        href="/theme/fonts"
                       >
                         <div
                           class="emotion-10"
@@ -11536,7 +11536,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/iconography"
+                        href="/theme/iconography"
                       >
                         <div
                           class="emotion-10"
@@ -11560,7 +11560,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/motion"
+                        href="/theme/motion"
                       >
                         <div
                           class="emotion-10"
@@ -11584,7 +11584,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/shadows"
+                        href="/theme/shadows"
                       >
                         <div
                           class="emotion-10"
@@ -11608,7 +11608,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/sizing"
+                        href="/theme/sizing"
                       >
                         <div
                           class="emotion-10"
@@ -11632,7 +11632,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/spacing"
+                        href="/theme/spacing"
                       >
                         <div
                           class="emotion-10"
@@ -11674,7 +11674,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/presets/style-presets"
+                        href="/theme/presets/style-presets"
                       >
                         <div
                           class="emotion-10"
@@ -11698,7 +11698,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/presets/transition-presets"
+                        href="/theme/presets/transition-presets"
                       >
                         <div
                           class="emotion-10"
@@ -11722,7 +11722,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/presets/typography-presets"
+                        href="/theme/presets/typography-presets"
                       >
                         <div
                           class="emotion-10"
@@ -11764,7 +11764,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/theming/overview"
+                        href="/theme/theming/overview"
                       >
                         <div
                           class="emotion-10"
@@ -11788,7 +11788,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/theming/creating-a-theme"
+                        href="/theme/theming/creating-a-theme"
                       >
                         <div
                           class="emotion-10"
@@ -11812,7 +11812,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/theming/using-a-theme"
+                        href="/theme/theming/using-a-theme"
                       >
                         <div
                           class="emotion-10"
@@ -11836,7 +11836,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="theme/theming/component-defaults"
+                        href="/theme/theming/component-defaults"
                       >
                         <div
                           class="emotion-10"
@@ -11913,7 +11913,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     aria-current="false"
                     class="emotion-47"
                     data-testid="buttonLink"
-                    href="components/overview"
+                    href="/components/overview"
                   >
                     <div
                       class="emotion-10"
@@ -11953,7 +11953,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/button"
+                        href="/components/button"
                       >
                         <div
                           class="emotion-10"
@@ -11977,7 +11977,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/checkbox"
+                        href="/components/checkbox"
                       >
                         <div
                           class="emotion-10"
@@ -12001,7 +12001,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/form"
+                        href="/components/form"
                       >
                         <div
                           class="emotion-10"
@@ -12025,7 +12025,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/radio-button"
+                        href="/components/radio-button"
                       >
                         <div
                           class="emotion-10"
@@ -12049,7 +12049,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/select"
+                        href="/components/select"
                       >
                         <div
                           class="emotion-10"
@@ -12073,7 +12073,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/share-bar"
+                        href="/components/share-bar"
                       >
                         <div
                           class="emotion-10"
@@ -12097,7 +12097,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/slider"
+                        href="/components/slider"
                       >
                         <div
                           class="emotion-10"
@@ -12121,7 +12121,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/text-field"
+                        href="/components/text-field"
                       >
                         <div
                           class="emotion-10"
@@ -12145,7 +12145,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/text-input"
+                        href="/components/text-input"
                       >
                         <div
                           class="emotion-10"
@@ -12187,7 +12187,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/banner"
+                        href="/components/banner"
                       >
                         <div
                           class="emotion-10"
@@ -12211,7 +12211,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/flag"
+                        href="/components/flag"
                       >
                         <div
                           class="emotion-10"
@@ -12235,7 +12235,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/progress-indicator"
+                        href="/components/progress-indicator"
                       >
                         <div
                           class="emotion-10"
@@ -12259,7 +12259,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/toast"
+                        href="/components/toast"
                       >
                         <div
                           class="emotion-10"
@@ -12283,7 +12283,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/inline-message"
+                        href="/components/inline-message"
                       >
                         <div
                           class="emotion-10"
@@ -12325,7 +12325,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/aspect-ratio"
+                        href="/components/aspect-ratio"
                       >
                         <div
                           class="emotion-10"
@@ -12349,7 +12349,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/block"
+                        href="/components/block"
                       >
                         <div
                           class="emotion-10"
@@ -12373,7 +12373,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/card"
+                        href="/components/card"
                       >
                         <div
                           class="emotion-10"
@@ -12397,7 +12397,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/divider"
+                        href="/components/divider"
                       >
                         <div
                           class="emotion-10"
@@ -12421,7 +12421,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/drawer"
+                        href="/components/drawer"
                       >
                         <div
                           class="emotion-10"
@@ -12445,7 +12445,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/fieldset"
+                        href="/components/fieldset"
                       >
                         <div
                           class="emotion-10"
@@ -12469,7 +12469,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/grid"
+                        href="/components/grid"
                       >
                         <div
                           class="emotion-10"
@@ -12493,7 +12493,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/grid-layout"
+                        href="/components/grid-layout"
                       >
                         <div
                           class="emotion-10"
@@ -12517,7 +12517,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/modal"
+                        href="/components/modal"
                       >
                         <div
                           class="emotion-10"
@@ -12541,7 +12541,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/stack"
+                        href="/components/stack"
                       >
                         <div
                           class="emotion-10"
@@ -12565,7 +12565,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/structured-list"
+                        href="/components/structured-list"
                       >
                         <div
                           class="emotion-10"
@@ -12589,7 +12589,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/visibility"
+                        href="/components/visibility"
                       >
                         <div
                           class="emotion-10"
@@ -12631,7 +12631,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/audio-player"
+                        href="/components/audio-player"
                       >
                         <div
                           class="emotion-10"
@@ -12655,7 +12655,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/icons"
+                        href="/components/icons"
                       >
                         <div
                           class="emotion-10"
@@ -12679,7 +12679,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/image"
+                        href="/components/image"
                       >
                         <div
                           class="emotion-10"
@@ -12703,7 +12703,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/volume-control"
+                        href="/components/volume-control"
                       >
                         <div
                           class="emotion-10"
@@ -12745,7 +12745,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/link"
+                        href="/components/link"
                       >
                         <div
                           class="emotion-10"
@@ -12769,7 +12769,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/menu"
+                        href="/components/menu"
                       >
                         <div
                           class="emotion-10"
@@ -12793,7 +12793,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/scroll"
+                        href="/components/scroll"
                       >
                         <div
                           class="emotion-10"
@@ -12817,7 +12817,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/tabs"
+                        href="/components/tabs"
                       >
                         <div
                           class="emotion-10"
@@ -12841,7 +12841,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/tag"
+                        href="/components/tag"
                       >
                         <div
                           class="emotion-10"
@@ -12865,7 +12865,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/title-bar"
+                        href="/components/title-bar"
                       >
                         <div
                           class="emotion-10"
@@ -12907,7 +12907,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/byline"
+                        href="/components/byline"
                       >
                         <div
                           class="emotion-10"
@@ -12931,7 +12931,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/caption"
+                        href="/components/caption"
                       >
                         <div
                           class="emotion-10"
@@ -12955,7 +12955,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/date-time"
+                        href="/components/date-time"
                       >
                         <div
                           class="emotion-10"
@@ -12979,7 +12979,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/headline"
+                        href="/components/headline"
                       >
                         <div
                           class="emotion-10"
@@ -13003,7 +13003,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/ordered-list"
+                        href="/components/ordered-list"
                       >
                         <div
                           class="emotion-10"
@@ -13027,7 +13027,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/standfirst"
+                        href="/components/standfirst"
                       >
                         <div
                           class="emotion-10"
@@ -13051,7 +13051,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/text-block"
+                        href="/components/text-block"
                       >
                         <div
                           class="emotion-10"
@@ -13075,7 +13075,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/unordered-list"
+                        href="/components/unordered-list"
                       >
                         <div
                           class="emotion-10"
@@ -13117,7 +13117,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/consent"
+                        href="/components/consent"
                       >
                         <div
                           class="emotion-10"
@@ -13141,7 +13141,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/consent-settings-link"
+                        href="/components/consent-settings-link"
                       >
                         <div
                           class="emotion-10"
@@ -13165,7 +13165,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/experimentation-web"
+                        href="/components/experimentation-web"
                       >
                         <div
                           class="emotion-10"
@@ -13189,7 +13189,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/tealium"
+                        href="/components/tealium"
                       >
                         <div
                           class="emotion-10"
@@ -13231,7 +13231,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/utils/emotion"
+                        href="/components/utils/emotion"
                       >
                         <div
                           class="emotion-10"
@@ -13255,7 +13255,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/utils/custom-to-newskit-icon"
+                        href="/components/utils/custom-to-newskit-icon"
                       >
                         <div
                           class="emotion-10"
@@ -13279,7 +13279,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/utils/get-css-from-theme"
+                        href="/components/utils/get-css-from-theme"
                       >
                         <div
                           class="emotion-10"
@@ -13303,7 +13303,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/utils/get-from-theme"
+                        href="/components/utils/get-from-theme"
                       >
                         <div
                           class="emotion-10"
@@ -13327,7 +13327,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/utils/get-defaults"
+                        href="/components/utils/get-defaults"
                       >
                         <div
                           class="emotion-10"
@@ -13351,7 +13351,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="components/utils/hooks"
+                        href="/components/utils/hooks"
                       >
                         <div
                           class="emotion-10"
@@ -13428,7 +13428,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     aria-current="false"
                     class="emotion-47"
                     data-testid="buttonLink"
-                    href="patterns/forms-index"
+                    href="/patterns/patterns-index"
                   >
                     <div
                       class="emotion-10"
@@ -13468,7 +13468,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="patterns/overview"
+                        href="/patterns/forms/overview"
                       >
                         <div
                           class="emotion-10"

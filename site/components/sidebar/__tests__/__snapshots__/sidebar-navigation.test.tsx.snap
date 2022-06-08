@@ -577,7 +577,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                 aria-current="page"
                 class="emotion-11"
                 data-testid="buttonLink"
-                href="group1/page1"
+                href="/group1/page1"
               >
                 <div
                   class="emotion-7"
@@ -668,7 +668,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                     aria-current="false"
                     class="emotion-27"
                     data-testid="buttonLink"
-                    href="group2/page1/a"
+                    href="/group2/page1/a"
                   >
                     <div
                       class="emotion-7"
@@ -692,7 +692,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                     aria-current="false"
                     class="emotion-27"
                     data-testid="buttonLink"
-                    href="group2/page1/b"
+                    href="/group2/page1/b"
                   >
                     <div
                       class="emotion-7"
@@ -734,7 +734,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                     aria-current="false"
                     class="emotion-27"
                     data-testid="buttonLink"
-                    href="group2/page2/a"
+                    href="/group2/page2/a"
                   >
                     <div
                       class="emotion-7"
@@ -758,7 +758,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
                     aria-current="false"
                     class="emotion-27"
                     data-testid="buttonLink"
-                    href="group2/page2/b"
+                    href="/group2/page2/b"
                   >
                     <div
                       class="emotion-7"
@@ -1000,7 +1000,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
           <a
             aria-current="false"
             class="emotion-3"
-            href="group1/page1"
+            href="/group1/page1"
           >
             <div
               class="emotion-4"
@@ -1539,7 +1539,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                 aria-current="false"
                 class="emotion-11"
                 data-testid="buttonLink"
-                href="group1/page1"
+                href="/group1/page1"
               >
                 <div
                   class="emotion-7"
@@ -1630,7 +1630,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                     aria-current="false"
                     class="emotion-11"
                     data-testid="buttonLink"
-                    href="group2/page1/a"
+                    href="/group2/page1/a"
                   >
                     <div
                       class="emotion-7"
@@ -1654,7 +1654,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                     aria-current="false"
                     class="emotion-11"
                     data-testid="buttonLink"
-                    href="group2/page1/b"
+                    href="/group2/page1/b"
                   >
                     <div
                       class="emotion-7"
@@ -1696,7 +1696,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                     aria-current="false"
                     class="emotion-11"
                     data-testid="buttonLink"
-                    href="group2/page2/a"
+                    href="/group2/page2/a"
                   >
                     <div
                       class="emotion-7"
@@ -1720,7 +1720,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
                     aria-current="false"
                     class="emotion-11"
                     data-testid="buttonLink"
-                    href="group2/page2/b"
+                    href="/group2/page2/b"
                   >
                     <div
                       class="emotion-7"
@@ -2329,7 +2329,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                 aria-current="false"
                 class="emotion-11"
                 data-testid="buttonLink"
-                href="group1/page1"
+                href="/group1/page1"
               >
                 <div
                   class="emotion-7"
@@ -2420,7 +2420,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                     aria-current="false"
                     class="emotion-11"
                     data-testid="buttonLink"
-                    href="group2/page1/a"
+                    href="/group2/page1/a"
                   >
                     <div
                       class="emotion-7"
@@ -2444,7 +2444,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                     aria-current="false"
                     class="emotion-11"
                     data-testid="buttonLink"
-                    href="group2/page1/b"
+                    href="/group2/page1/b"
                   >
                     <div
                       class="emotion-7"
@@ -2486,7 +2486,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                     aria-current="false"
                     class="emotion-11"
                     data-testid="buttonLink"
-                    href="group2/page2/a"
+                    href="/group2/page2/a"
                   >
                     <div
                       class="emotion-7"
@@ -2510,7 +2510,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
                     aria-current="false"
                     class="emotion-11"
                     data-testid="buttonLink"
-                    href="group2/page2/b"
+                    href="/group2/page2/b"
                   >
                     <div
                       class="emotion-7"
@@ -2752,7 +2752,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
           <a
             aria-current="false"
             class="emotion-3"
-            href="group1/page1"
+            href="/group1/page1"
           >
             <div
               class="emotion-4"

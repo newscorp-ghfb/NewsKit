@@ -56,7 +56,7 @@ export const MenuMobileCollapsible = ({
             {page ? (
               <>
                 <MenuItem
-                  href={id.replace('/', '')}
+                  href={id}
                   selected={path.includes(id)}
                   overrides={{
                     minHeight: '40px',
@@ -67,7 +67,7 @@ export const MenuMobileCollapsible = ({
                       id.includes('theme/overview') ||
                       id.includes('/components/overview') ||
                       id.includes('/getting-started/overview') ||
-                      id.includes('/patterns/form')
+                      id.includes('/patterns/patterns-index')
                         ? 'space030'
                         : undefined,
                   }}

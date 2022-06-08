@@ -1,16 +1,16 @@
 import React from 'react';
 import {styled, getColorFromTheme} from 'newskit';
-import {Link} from '../../components/link';
-import {MediaList} from '../../components/media-list';
-import {LayoutProps} from '../../components/layout';
-import {PatternPageTemplate} from '../../templates/pattern-page-template/pattern-page-template';
+import {Link} from '../../../components/link';
+import {MediaList} from '../../../components/media-list';
+import {LayoutProps} from '../../../components/layout';
+import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-} from '../../components/content-structure';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {Illustration} from '../../components/illustrations/illustration-loader';
+} from '../../../components/content-structure';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {Illustration} from '../../../components/illustrations/illustration-loader';
 
 const featureCardOverrides = {
   title: {
@@ -23,7 +23,9 @@ const featureCardOverrides = {
 
 const FORMS_PATTERN_CARDS = [
   {
-    media: () => <Illustration path="patterns/overview/why-use/consistency" />,
+    media: () => (
+      <Illustration path="patterns/forms/overview/why-use/consistency" />
+    ),
     title: 'Consistency',
     description:
       'All our brands have some form of data capture. Aligning our approach means there is one source of truth when building forms and capturing customer information. ',
@@ -31,7 +33,9 @@ const FORMS_PATTERN_CARDS = [
     overrides: featureCardOverrides,
   },
   {
-    media: () => <Illustration path="patterns/overview/why-use/ease-of-use" />,
+    media: () => (
+      <Illustration path="patterns/forms/overview/why-use/ease-of-use" />
+    ),
     title: 'Ease of use',
     description:
       'Customer data is only useful if it’s accurate. If we make our forms straightforward, it’s more likely our users will complete the form successfully.',
@@ -40,7 +44,7 @@ const FORMS_PATTERN_CARDS = [
   },
   {
     media: () => (
-      <Illustration path="patterns/overview/why-use/best-practice" />
+      <Illustration path="patterns/forms/overview/why-use/best-practice" />
     ),
     title: 'Best practice',
     description:
@@ -65,7 +69,7 @@ const Overview = (layoutProps: LayoutProps) => (
       type: 'Patterns',
       name: 'Forms overview',
       hero: {
-        illustration: 'patterns/overview/hero',
+        illustration: 'patterns/forms/overview/hero',
       },
       introduction: `Forms are used to collect customer’s data.`,
     }}
