@@ -43,7 +43,6 @@ async function runTransform(codemodName, files, args) {
 }
 
 // Set up yargs
-// Includes usage on -h or --help
 // eslint-disable-next-line @typescript-eslint/no-unused-expressions
 yargs
   .scriptName(PACKAGE_NAME)
@@ -70,17 +69,23 @@ yargs
     },
   })
   .option('print', {
-    describe: 'print transformed files to stdout, useful for development',
+    alias: 'p',
+    describe:
+      'print transformed file contents to stdout, useful for development',
     type: 'boolean',
+    default: false,
   })
   .option('dry', {
+    alias: 'd',
     description: 'dry run (no changes are made to files)',
     type: 'boolean',
+    default: false,
   })
   .option('parser', {
-    description:
-      'the parser to use for parsing the source files (default: tsx)',
+    description: 'the parser to use for parsing the source files ',
     type: 'string',
+    choices: ['babel', 'babylon', 'flow', 'ts', 'tsx'],
+    default: 'tsx',
   })
   .demandOption(
     ['codemod', 'paths'],
