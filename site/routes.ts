@@ -785,10 +785,10 @@ export default [
           {
             title: 'Best practice',
             page: true,
-            id: '/patterns/best-practice',
+            id: '/patterns/forms/best-practice',
             description:
               'Help users to fill in forms quickly and accurately by following these industry best practices.',
-            illustration: 'patterns/best-practice/hero',
+            illustration: 'patterns/forms/best-practice/hero',
           },
         ],
       },

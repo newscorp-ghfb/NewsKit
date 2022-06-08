@@ -1,9 +1,9 @@
 import React from 'react';
 import {getSSRId} from 'newskit';
-import {Svg} from '../../../svg';
-import {Path} from '../../../path';
-import {Rect} from '../../../rect';
-import {Circle} from '../../../circle';
+import {Svg} from '../../../../svg';
+import {Path} from '../../../../path';
+import {Rect} from '../../../../rect';
+import {Circle} from '../../../../circle';
 
 export const Tip: React.FC = () => {
   const mask0 = getSSRId();

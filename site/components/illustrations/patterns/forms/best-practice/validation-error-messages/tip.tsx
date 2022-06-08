@@ -1,7 +1,7 @@
 import React from 'react';
 import {getSSRId} from 'newskit';
-import {Svg} from '../../../svg';
-import {Path} from '../../../path';
+import {Svg} from '../../../../svg';
+import {Path} from '../../../../path';
 
 export const Tip: React.FC = () => {
   const filter0 = getSSRId();

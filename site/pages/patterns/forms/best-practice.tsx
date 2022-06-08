@@ -8,19 +8,19 @@ import {
   styled,
   getColorFromTheme,
 } from 'newskit';
-import {Link} from '../../components/link';
-import {MediaList} from '../../components/media-list';
-import {LayoutProps} from '../../components/layout';
-import {PatternPageTemplate} from '../../templates/pattern-page-template/pattern-page-template';
+import {Link} from '../../../components/link';
+import {MediaList} from '../../../components/media-list';
+import {LayoutProps} from '../../../components/layout';
+import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
   ContentTertiary,
-} from '../../components/content-structure';
-import {IconFilledCircle} from '../../components/icons';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+} from '../../../components/content-structure';
+import {IconFilledCircle} from '../../../components/icons';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
 
 const infoIcon = (
   <IconFilledInfo
@@ -54,7 +54,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
       type: 'Forms',
       name: 'Best practice',
       hero: {
-        illustration: 'patterns/best-practice/hero',
+        illustration: 'patterns/forms/best-practice/hero',
       },
       introduction: `Help users to fill in forms quickly and accurately by following these industry best practices.`,
     }}
@@ -113,7 +113,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
                 description:
                   'If your form is split into several steps, there should  be an easy way for the user to go back to the previous step. Data should be autosaved when they go backwards/forwards through the steps.',
                 media: getIllustrationComponent(
-                  'patterns/best-practice/structure-layout/tip',
+                  'patterns/forms/best-practice/structure-layout/tip',
                 ),
               },
             ]}
@@ -221,7 +221,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
                 description:
                   'The user should be able to easily go back through each step and edit their data, in case a mistake has been made.',
                 media: getIllustrationComponent(
-                  'patterns/best-practice/progress-abandonment/tip',
+                  'patterns/forms/best-practice/progress-abandonment/tip',
                 ),
               },
               {
@@ -229,7 +229,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
                 description:
                   'If users attempt to abandon a form or registration process by navigating away from a window, you can prompt them to stay on the page and continue their journey. This can be done natively via the user’s browser or via a bespoke experience that we can manage/control.',
                 media: getIllustrationComponent(
-                  'patterns/best-practice/progress-abandonment/abandonment',
+                  'patterns/forms/best-practice/progress-abandonment/abandonment',
                 ),
               },
             ]}
@@ -460,7 +460,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
                   </>
                 ),
                 media: getIllustrationComponent(
-                  'patterns/best-practice/labels/tip',
+                  'patterns/forms/best-practice/labels/tip',
                 ),
               },
               {
@@ -468,7 +468,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
                 description:
                   'Only optional fields should be highlighted. You should only be asking for customer data that we need as part of the business requirements so the vast majority will be mandatory.',
                 media: getIllustrationComponent(
-                  'patterns/best-practice/labels/optional',
+                  'patterns/forms/best-practice/labels/optional',
                 ),
               },
             ]}
@@ -505,7 +505,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
                   </>
                 ),
                 media: getIllustrationComponent(
-                  'patterns/best-practice/validation-error-messages/validation',
+                  'patterns/forms/best-practice/validation-error-messages/validation',
                 ),
               },
               {
@@ -533,7 +533,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
                   </>
                 ),
                 media: getIllustrationComponent(
-                  'patterns/best-practice/validation-error-messages/tip',
+                  'patterns/forms/best-practice/validation-error-messages/tip',
                 ),
               },
             ]}
@@ -632,7 +632,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
                   </>
                 ),
                 media: getIllustrationComponent(
-                  'patterns/best-practice/best-practice/tip',
+                  'patterns/forms/best-practice/best-practice/tip',
                 ),
               },
             ]}
@@ -670,7 +670,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
                   </>
                 ),
                 media: getIllustrationComponent(
-                  'patterns/best-practice/call-to-actions/tip',
+                  'patterns/forms/best-practice/call-to-actions/tip',
                 ),
               },
             ]}
@@ -730,7 +730,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
                   </>
                 ),
                 media: getIllustrationComponent(
-                  'patterns/best-practice/call-to-actions/visual-treatment',
+                  'patterns/forms/best-practice/call-to-actions/visual-treatment',
                 ),
               },
             ]}
@@ -816,7 +816,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
                 description:
                   'Consider placement. It’s important that reCAPTCHA is displayed at the end of a form and not half way. Displaying this randomly disrupts the flow of the form and can look like it’s not part of your site. Some login platforms such as Auth0 display the reCaptcha widget half way through the form as default and this should be avoided. (See example)',
                 media: getIllustrationComponent(
-                  'patterns/best-practice/security-captcha/tip',
+                  'patterns/forms/best-practice/security-captcha/tip',
                 ),
               },
             ]}

@@ -1,6 +1,6 @@
 import React from 'react';
-import {Svg} from '../../../svg';
-import {Path} from '../../../path';
+import {Svg} from '../../../../svg';
+import {Path} from '../../../../path';
 
 export const Validation: React.FC = () => (
   <Svg

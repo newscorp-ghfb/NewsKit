@@ -1,8 +1,8 @@
 import React from 'react';
 import {getSSRId} from 'newskit';
-import {Svg} from '../../../svg';
-import {Path} from '../../../path';
-import {Rect} from '../../../rect';
+import {Svg} from '../../../../svg';
+import {Path} from '../../../../path';
+import {Rect} from '../../../../rect';
 
 export const Abandonment: React.FC = () => {
   const mask0 = getSSRId();
