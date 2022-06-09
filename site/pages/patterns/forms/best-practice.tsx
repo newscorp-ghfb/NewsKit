@@ -2,7 +2,6 @@ import React from 'react';
 import {
   IconFilledInfo,
   InlineMessage,
-  Block,
   UnorderedList,
   styled,
   getColorFromTheme,
@@ -402,7 +401,6 @@ const BestPractice = (layoutProps: LayoutProps) => (
               as they found that:
             </>
           }
-          showSeparator
         >
           <UnorderedList
             markerAlign="start"
@@ -424,7 +422,8 @@ const BestPractice = (layoutProps: LayoutProps) => (
               dense compositions.
             </>
           </UnorderedList>
-          <Block spaceStack="space080" />
+        </ContentSecondary>
+        <ContentSecondary showSeparator>
           <MediaList
             layout="1-span"
             cardsLayout="horizontal"
@@ -538,7 +537,6 @@ const BestPractice = (layoutProps: LayoutProps) => (
         <ContentSecondary
           headline="Best practice"
           childrenColSpan={ContentColSpan.TEXT}
-          showSeparator
         >
           <UnorderedList
             markerAlign="start"
@@ -594,7 +592,8 @@ const BestPractice = (layoutProps: LayoutProps) => (
               submitting the Form. (See below)
             </>
           </UnorderedList>
-          <Block spaceStack="space070" />
+        </ContentSecondary>
+        <ContentSecondary showSeparator>
           <MediaList
             layout="1-span"
             cardsLayout="horizontal"
@@ -685,7 +684,6 @@ const BestPractice = (layoutProps: LayoutProps) => (
             </>
           }
           childrenColSpan={ContentColSpan.TEXT}
-          showSeparator
         >
           <InlineMessage icon={infoIcon} role="region" aria-label="positioning">
             This behaviour is already built into NewsKit as part of the button
@@ -694,7 +692,8 @@ const BestPractice = (layoutProps: LayoutProps) => (
             fixed at the bottom of the viewport with a background to separate
             them from the page content.
           </InlineMessage>
-          <Block spaceStack="space070" />
+        </ContentSecondary>
+        <ContentSecondary showSeparator>
           <MediaList
             layout="1-span"
             cardsLayout="horizontal"
