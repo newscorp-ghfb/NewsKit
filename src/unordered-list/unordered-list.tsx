@@ -59,7 +59,7 @@ const ThemelessUnorderedList: React.FC<UnorderedListProps> = ({
   );
 
   return (
-    <StyledUl role="list">
+    <StyledUl overrides={overrides} role="list">
       {React.Children.map(children, node => {
         if (!isValidNode(node)) return null;
 

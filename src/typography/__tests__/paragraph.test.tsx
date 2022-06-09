@@ -28,6 +28,19 @@ describe('Paragraph', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  test('renders Paragraph with logical props', () => {
+    const wrapper = renderToFragmentWithTheme(Paragraph, {
+      children: 'paragraph component',
+      overrides: {
+        paddingInline: 'space020',
+        paddingBlock: 'space040',
+        marginBlock: 'space060',
+        marginInline: 'space080',
+      },
+    });
+    expect(wrapper).toMatchSnapshot();
+  });
+
   test('renders empty Paragraph with dropCap without crashing ', () => {
     const wrapper = renderToFragmentWithTheme(Paragraph, {
       children: undefined,

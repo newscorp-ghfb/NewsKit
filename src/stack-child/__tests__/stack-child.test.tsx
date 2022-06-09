@@ -70,4 +70,20 @@ describe('StackChild', () => {
 
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders within a Stack with logical props', () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      spaceInline: 'space020',
+      children: [
+        <StackChild order={1} paddingInline="30px" paddingBlock="20px">
+          <Tag>With padding props</Tag>
+        </StackChild>,
+        <StackChild order={2} marginInline="30px" marginBlock="20px">
+          <Tag>With margin props</Tag>
+        </StackChild>,
+      ],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
 });

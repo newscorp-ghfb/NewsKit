@@ -107,3 +107,43 @@ export const StoryParagraphWithOverrides = () => (
   </>
 );
 StoryParagraphWithOverrides.storyName = 'paragraph-with-overrides';
+
+export const StoryParagraphWithLogicalProps = () => {
+  const logicalPropsOverrides = {
+    marginBlock: 'space060',
+    marginInline: 'space080',
+    paddingBlock: 'space060',
+    paddingInline: 'space080',
+  };
+
+  return (
+    <>
+      <StorybookHeading>Paragraph with logical props</StorybookHeading>
+      <StorybookSubHeading>on paragraph</StorybookSubHeading>
+      <br />
+      <ThemeProvider theme={myCustomTheme}>
+        <P overrides={logicalPropsOverrides}>
+          This being Black History Month, last week was Politicians In Search Of
+          An Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy
+          Corbyn had their own announcement, each seemingly benign and right-on,
+          each actually destructive and wrong-headed.
+        </P>
+        <StorybookSubHeading>on drop cap</StorybookSubHeading>
+        <br />
+        <P dropCap overrides={logicalPropsOverrides}>
+          This being Black History Month, last week was Politicians In Search Of
+          An Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy
+          Corbyn had their own announcement, each seemingly benign and right-on,
+          each actually destructive and wrong-headed.
+        </P>
+        <StorybookSubHeading>on Sub and Sup elements</StorybookSubHeading>
+        <br />
+        <P overrides={logicalPropsOverrides}>
+          Paragraph component containing a <Sub>subscript element</Sub> and a{' '}
+          <Sup>superscript element</Sup>
+        </P>
+      </ThemeProvider>
+    </>
+  );
+};
+StoryParagraphWithLogicalProps.storyName = 'paragraph-with-logical-props';

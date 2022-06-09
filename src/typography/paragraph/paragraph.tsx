@@ -10,6 +10,7 @@ import {
 import defaults from './defaults';
 import {withOwnTheme} from '../../utils/with-own-theme';
 import {ScreenReaderOnly} from '../../screen-reader-only';
+import {logicalProps, LogicalProps} from '../../utils/logical-properties';
 
 export interface ParagraphProps {
   children: React.ReactNode;
@@ -22,13 +23,14 @@ export interface ParagraphProps {
       typographyPreset?: MQ<string>;
       space?: MQ<string>;
     };
-  };
+  } & LogicalProps;
 }
 
 const ThemelessParagraphText = styled.p<ParagraphProps>`
   margin: 0;
   ${getStylePreset('paragraph', '')};
   ${getTypographyPreset('paragraph', '')};
+  ${logicalProps()}
 `;
 export const ParagraphText = withOwnTheme(ThemelessParagraphText)({
   defaults,

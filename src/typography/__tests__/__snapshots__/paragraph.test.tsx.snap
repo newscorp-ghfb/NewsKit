@@ -51,6 +51,34 @@ exports[`Paragraph renders Paragraph 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Paragraph renders Paragraph with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+<p
+    class="emotion-0"
+  >
+    paragraph component
+  </p>
+</DocumentFragment>
+`;
+
 exports[`Paragraph renders Paragraph with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
