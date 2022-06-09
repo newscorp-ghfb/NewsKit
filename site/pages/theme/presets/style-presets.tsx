@@ -489,19 +489,19 @@ const STYLE_PRESET_STATES = [
       'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid, and in a focus state',
   },
   {
-    example: getImage('theme/style-presets/hover'),
+    example: getImage('theme/style-presets/focus-visible-hover'),
     state: 'focus-visible:hover',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component has focus state and hover state',
   },
   {
-    example: getImage('theme/style-presets/valid-hover'),
+    example: getImage('theme/style-presets/valid-focus-visible-hover'),
     state: 'valid:focus-visible:hover',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is valid has focus state and hover state',
   },
   {
-    example: getImage('theme/style-presets/invalid-hover'),
+    example: getImage('theme/style-presets/invalid-focus-visible-hover'),
     state: 'invalid:focus-visible:hover',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid has focus state and hover state',
@@ -513,7 +513,7 @@ const STYLE_PRESET_STATES = [
       'The style of a component changes to visually communicate and provide feedback to a user that a component has been checked, and in a focus state',
   },
   {
-    example: getImage('theme/style-presets/checked-valid-hover'),
+    example: getImage('theme/style-presets/checked-focus-visible-hover'),
     state: 'checked:focus-visible:hover',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is checked, focused and in a hover state',
@@ -531,13 +531,15 @@ const STYLE_PRESET_STATES = [
       'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid, checked, and in a focus state',
   },
   {
-    example: getImage('theme/style-presets/checked-valid-hover'),
+    example: getImage('theme/style-presets/checked-valid-focus-visible-hover'),
     state: 'checked:valid:focus-visible:hover',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is checked, valid, focused and in a hover state',
   },
   {
-    example: getImage('theme/style-presets/checked-invalid-focus'),
+    example: getImage(
+      'theme/style-presets/checked-invalid-focus-visible-hover',
+    ),
     state: 'checked:invalid:focus-visible:hover',
     description:
       'The style of a component changes to visually communicate and provide feedback to the user that a component is checked, invalid, focused and in a hover state',
