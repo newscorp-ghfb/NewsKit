@@ -3,7 +3,6 @@ import {
   IconFilledInfo,
   InlineMessage,
   Block,
-  P,
   UnorderedList,
   styled,
   getColorFromTheme,
@@ -16,6 +15,7 @@ import {
   ContentPrimary,
   ContentSecondary,
   ContentTertiary,
+  ContentColSpan,
 } from '../../../components/content-structure';
 import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
@@ -29,6 +29,13 @@ const infoIcon = (
     }}
   />
 );
+
+const unorderedListOverrides = {
+  spaceStack: 'space040',
+  content: {
+    typographyPreset: 'editorialParagraph020',
+  },
+};
 
 const StyledHeading = styled.span`
   color: ${getColorFromTheme('inkBrand010')};
@@ -122,6 +129,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
         <ContentSecondary
           headline="Keep the number of fields to a minimum "
           description="The more personal data you ask for, the more likely users will drop out of the funnel. Therefore, you should only ask for information that is genuinely required."
+          childrenColSpan={ContentColSpan.TEXT}
         >
           <InlineMessage
             icon={infoIcon}
@@ -139,61 +147,55 @@ const BestPractice = (layoutProps: LayoutProps) => (
         <ContentTertiary
           headline={<StyledDoHeading>Do</StyledDoHeading>}
           description={
-            <>
-              <Block spaceStack="space030" />
-              <UnorderedList
-                listItemMarker={IconFilledCircle}
-                markerAlign="start"
-                overrides={{spaceStack: 'space040'}}
-              >
-                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                  <Link href="/components/form/">Forms</Link> should be
-                  displayed in a single column layout. This means the user’s
-                  focus is on one data input type at a time and there is less
-                  cognitive load searching the page for what data to enter.
-                </P>
-              </UnorderedList>
-            </>
+            <UnorderedList
+              markerAlign="start"
+              listItemMarker={IconFilledCircle}
+              overrides={unorderedListOverrides}
+            >
+              <>
+                <Link href="/components/form/">Forms</Link> should be displayed
+                in a single column layout. This means the user’s focus is on one
+                data input type at a time and there is less cognitive load
+                searching the page for what data to enter.
+              </>
+            </UnorderedList>
           }
         />
         <ContentSecondary headline="Text field width" />
         <ContentTertiary
           headline={<StyledDoHeading>Do</StyledDoHeading>}
           description={
-            <>
-              <Block spaceStack="space030" />
-              <UnorderedList
-                listItemMarker={IconFilledCircle}
-                markerAlign="start"
-                overrides={{spaceStack: 'space040'}}
-              >
-                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                  Most <Link href="/components/text-field/">Text fields</Link>{' '}
-                  should be proportional to the expected user input - no longer
-                  than a single line, such as their name or phone number.
-                  <br />
-                  <br />
-                  For example, Text Fields that have a set short number of
-                  characters should have a proportional width i.e year of birth
-                  or postcode.
-                </P>
-              </UnorderedList>
-            </>
+            <UnorderedList
+              markerAlign="start"
+              listItemMarker={IconFilledCircle}
+              overrides={unorderedListOverrides}
+            >
+              <>
+                Most <Link href="/components/text-field/">Text fields</Link>{' '}
+                should be proportional to the expected user input - no longer
+                than a single line, such as their name or phone number.
+                <br />
+                <br />
+                For example, Text Fields that have a set short number of
+                characters should have a proportional width i.e year of birth or
+                postcode.
+              </>
+            </UnorderedList>
           }
         />
         <ContentTertiary
           headline={<StyledDontHeading>Don’t</StyledDontHeading>}
           description={
             <UnorderedList
-              listItemMarker={IconFilledCircle}
               markerAlign="start"
-              overrides={{spaceStack: 'space040'}}
+              listItemMarker={IconFilledCircle}
+              overrides={unorderedListOverrides}
             >
-              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              <>
                 You should avoid using the Text Field if you need to let users
                 enter longer answers that might span multiple lines. Consider
                 using an alternative, such as Text Area.
-              </P>
+              </>
             </UnorderedList>
           }
           showSeparator
@@ -248,40 +250,37 @@ const BestPractice = (layoutProps: LayoutProps) => (
         <ContentTertiary
           headline={<StyledDoHeading>Do</StyledDoHeading>}
           description={
-            <>
-              <Block spaceStack="space030" />
-              <UnorderedList
-                listItemMarker={IconFilledCircle}
-                markerAlign="start"
-                overrides={{spaceStack: 'space040'}}
-              >
-                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                  Labels should be displayed above the required field and left
-                  aligned so that the user can still see the requested data
-                  format when their cursor is active within the field.
-                </P>
-                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                  Input labels and placeholder text should be in sentence case,
-                  whereby only the first word of a sentence and proper nouns are
-                  capitalised, with the rest of the words in lowercase. This
-                  helps with scannability and legibility.
-                </P>
-              </UnorderedList>
-            </>
+            <UnorderedList
+              markerAlign="start"
+              listItemMarker={IconFilledCircle}
+              overrides={unorderedListOverrides}
+            >
+              <>
+                Labels should be displayed above the required field and left
+                aligned so that the user can still see the requested data format
+                when their cursor is active within the field.
+              </>
+              <>
+                Input labels and placeholder text should be in sentence case,
+                whereby only the first word of a sentence and proper nouns are
+                capitalised, with the rest of the words in lowercase. This helps
+                with scannability and legibility.
+              </>
+            </UnorderedList>
           }
         />
         <ContentTertiary
           headline={<StyledDontHeading>Don’t</StyledDontHeading>}
           description={
             <UnorderedList
-              listItemMarker={IconFilledCircle}
               markerAlign="start"
-              overrides={{spaceStack: 'space040'}}
+              listItemMarker={IconFilledCircle}
+              overrides={unorderedListOverrides}
             >
-              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              <>
                 Input label text should not be truncated or wrapped over two or
                 more lines. Keep it short, clear, and fully visible.
-              </P>
+              </>
             </UnorderedList>
           }
         />
@@ -289,46 +288,43 @@ const BestPractice = (layoutProps: LayoutProps) => (
         <ContentTertiary
           headline={<StyledDoHeading>Do</StyledDoHeading>}
           description={
-            <>
-              <Block spaceStack="space030" />
-              <UnorderedList
-                listItemMarker={IconFilledCircle}
-                markerAlign="start"
-                overrides={{spaceStack: 'space040'}}
-              >
-                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                  Placeholder text can be displayed to provide the user with a
-                  short hint that describes the content that is expected to be
-                  inputted by the user (e.g. a sample value or a short
-                  description of the expected format).
-                </P>
-                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                  Once a value is entered, the placeholder text is no longer
-                  visible. Assistive Text is the preferred way to communicate
-                  this information.
-                </P>
-              </UnorderedList>
-            </>
+            <UnorderedList
+              markerAlign="start"
+              listItemMarker={IconFilledCircle}
+              overrides={unorderedListOverrides}
+            >
+              <>
+                Placeholder text can be displayed to provide the user with a
+                short hint that describes the content that is expected to be
+                inputted by the user (e.g. a sample value or a short description
+                of the expected format).
+              </>
+              <>
+                Once a value is entered, the placeholder text is no longer
+                visible. Assistive Text is the preferred way to communicate this
+                information.
+              </>
+            </UnorderedList>
           }
         />
         <ContentTertiary
           headline={<StyledDontHeading>Don’t</StyledDontHeading>}
           description={
             <UnorderedList
-              listItemMarker={IconFilledCircle}
               markerAlign="start"
-              overrides={{spaceStack: 'space040'}}
+              listItemMarker={IconFilledCircle}
+              overrides={unorderedListOverrides}
             >
-              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              <>
                 The short hint is displayed in the input container before the
                 user enters a value. However, placeholders should not be used as
                 a replacement for labels.
-              </P>
-              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              </>
+              <>
                 Don&apos;t put instructions on completing an input or
                 requirements into placeholder text as it cannot be read by a
                 screenreader and is therefore not accessible.
-              </P>
+              </>
             </UnorderedList>
           }
         />
@@ -336,38 +332,32 @@ const BestPractice = (layoutProps: LayoutProps) => (
         <ContentTertiary
           headline={<StyledDoHeading>Do</StyledDoHeading>}
           description={
-            <>
-              <Block spaceStack="space030" />
-              <UnorderedList
-                listItemMarker={IconFilledCircle}
-                markerAlign="start"
-                overrides={{spaceStack: 'space040'}}
-              >
-                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                  If needed, Assistive Text should be used to hint at the action
-                  the user is being asked to do, for example, ‘Select all that
-                  apply’.
-                </P>
-                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                  In terms of placement of Assistive Text - if it&apos;s
-                  attributed to a single input like a text field then it
-                  typically appears below. If there are multiple text fields in
-                  a group{' '}
-                  <Link href="/components/fieldset/">
-                    (Fieldset for example)
-                  </Link>{' '}
-                  then it may make sense to sit above the inputs so assistive
-                  text/error messages are in a consistent place.{' '}
-                </P>
-                <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                  If there are a lot of{' '}
-                  <Link href="/components/text-field/">Text Fields</Link> in a
-                  group, then the Assistive Text would be pushed to the end of
-                  the group, so it’s worth considering placement depending on
-                  the number of inputs in a group.
-                </P>
-              </UnorderedList>
-            </>
+            <UnorderedList
+              markerAlign="start"
+              listItemMarker={IconFilledCircle}
+              overrides={unorderedListOverrides}
+            >
+              <>
+                If needed, Assistive Text should be used to hint at the action
+                the user is being asked to do, for example, ‘Select all that
+                apply’.
+              </>
+              <>
+                In terms of placement of Assistive Text - if it&apos;s
+                attributed to a single input like a text field then it typically
+                appears below. If there are multiple text fields in a group{' '}
+                <Link href="/components/fieldset/">(Fieldset for example)</Link>{' '}
+                then it may make sense to sit above the inputs so assistive
+                text/error messages are in a consistent place.{' '}
+              </>
+              <>
+                If there are a lot of{' '}
+                <Link href="/components/text-field/">Text Fields</Link> in a
+                group, then the Assistive Text would be pushed to the end of the
+                group, so it’s worth considering placement depending on the
+                number of inputs in a group.
+              </>
+            </UnorderedList>
           }
         />
         <ContentSecondary
@@ -401,7 +391,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
             <>
               In 2017, Google changed their{' '}
               <Link
-                href="https://medium.com/google-design/the-evolution-of-material-designs-text-fields-603688b3fe03"
+                href="https://material.io/design/introduction"
                 target="_blank"
               >
                 Material Design guidelines
@@ -415,28 +405,28 @@ const BestPractice = (layoutProps: LayoutProps) => (
           showSeparator
         >
           <UnorderedList
-            listItemMarker={IconFilledCircle}
             markerAlign="start"
-            overrides={{spaceStack: 'space040'}}
+            listItemMarker={IconFilledCircle}
+            overrides={{
+              content: {
+                typographyPreset: 'editorialParagraph020',
+              },
+            }}
           >
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            <>
               Some users didn’t know that they could interact with the text
               field.
-            </P>
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-              It looked like an empty box.
-            </P>
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            </>
+            <>It looked like an empty box.</>
+            <>
               The line affordance under the old text fields was not clear to
               some users.
-            </P>
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-              The line was confused with a divider.{' '}
-            </P>
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            </>
+            <>The line was confused with a divider.</>
+            <>
               The label and input were confused with body text, especially in
               dense compositions.
-            </P>
+            </>
           </UnorderedList>
           <Block spaceStack="space080" />
           <MediaList
@@ -549,18 +539,26 @@ const BestPractice = (layoutProps: LayoutProps) => (
             </>
           }
         />
-        <ContentSecondary headline="Best practice" showSeparator>
+        <ContentSecondary
+          headline="Best practice"
+          childrenColSpan={ContentColSpan.TEXT}
+          showSeparator
+        >
           <UnorderedList
-            listItemMarker={IconFilledCircle}
             markerAlign="start"
-            overrides={{spaceStack: 'space040'}}
+            listItemMarker={IconFilledCircle}
+            overrides={{
+              content: {
+                typographyPreset: 'editorialParagraph020',
+              },
+            }}
           >
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            <>
               Errors and validation should be displayed ‘On blur’ (once the user
               has tabbed out of the field) not as the user is entering their
               information.
-            </P>
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            </>
+            <>
               Write error text that communicates a solution. Error text should
               be written in a few clear, concise and complete sentences. More
               guidance on error text can be found{' '}
@@ -570,23 +568,23 @@ const BestPractice = (layoutProps: LayoutProps) => (
               >
                 here.
               </Link>
-            </P>
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            </>
+            <>
               Space for error messaging below the Text Field should be catered
               for to stop the page jumping up and down when errors are
               shown/addressed. Within NewsKit you can apply min heights to text
               fields.
-            </P>
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            </>
+            <>
               If an error is being addressed, the relevant error message should
               not be displayed when the field is active, however a check should
               still be done when the user tabs out of the field to ensure the
               error has been addressed.
-            </P>
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            </>
+            <>
               When the user has addressed the error it should no longer appear.
-            </P>
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            </>
+            <>
               If there are a number of data inputs on a page, consider whether
               to add a summary of errors panel so the user can see all errors
               listed in one place. More information on error summaries can be
@@ -597,12 +595,12 @@ const BestPractice = (layoutProps: LayoutProps) => (
               >
                 here.
               </Link>
-            </P>
-            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+            </>
+            <>
               Errors and validation should be based on the previous fields the
               user has engaged with, not the whole form, unless they are
               submitting the Form. (See below)
-            </P>
+            </>
           </UnorderedList>
           <Block spaceStack="space070" />
           <MediaList
@@ -694,6 +692,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
               ordering would then change from right to left to top to bottom.
             </>
           }
+          childrenColSpan={ContentColSpan.TEXT}
           showSeparator
         >
           <InlineMessage icon={infoIcon} role="region" aria-label="positioning">
