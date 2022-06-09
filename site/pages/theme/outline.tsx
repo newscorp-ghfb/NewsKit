@@ -104,7 +104,7 @@ const Outline = (layoutProps: LayoutProps) => (
         <ExampleSection section="outlineStyle" />
 
         <ContentSecondary childrenColSpan={ContentColSpan.TEXT} showSeparator>
-          <InlineMessage title="Note">
+          <InlineMessage title="Note" aria-label="safari warning one">
             Safari&apos;s implemetation of outline CSS is signifacatly different
             to other main browsers. The solid style with not have rounded
             corners, while using auto will without control over its colour. See
@@ -164,7 +164,7 @@ const Outline = (layoutProps: LayoutProps) => (
         />
 
         <ContentSecondary childrenColSpan={ContentColSpan.TEXT} showSeparator>
-          <InlineMessage title="Note">
+          <InlineMessage title="Note" aria-label="safari warning two">
             Safari&apos;s implemetation of outline CSS is signifacatly different
             to other main browsers. You may find your offset is not the same on
             Safari. See Safari Outline Style.
