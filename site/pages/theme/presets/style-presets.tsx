@@ -207,32 +207,32 @@ const CSS_PROPS = [
   },
   {
     token: 'outlineColor',
-    acceptedValues: 'foundations outline',
+    acceptedValues: <Link href="/theme/outline/">foundations outline,</Link>,
     description: 'The colour property of the outline',
   },
   {
     token: 'outlineStyle',
-    acceptedValues: 'foundations outline',
+    acceptedValues: <Link href="/theme/outline/">foundations outline,</Link>,
     description: 'The style property of the outline',
   },
   {
     token: 'outlineWidth',
-    acceptedValues: 'foundations outline',
+    acceptedValues: <Link href="/theme/outline/">foundations outline,</Link>,
     description: 'The style property of the outline',
   },
   {
     token: 'outlineOffset',
-    acceptedValues: 'foundations outline',
+    acceptedValues: <Link href="/theme/outline/">foundations outline,</Link>,
     description: 'The offset property of the outline',
   },
   {
     token: 'safariOutlineOffset',
-    acceptedValues: 'foundations outline',
+    acceptedValues: <Link href="/theme/outline/">foundations outline,</Link>,
     description: 'The offset property of the outline for Safari',
   },
   {
     token: 'safariOutlineStylet',
-    acceptedValues: 'foundations outline',
+    acceptedValues: <Link href="/theme/outline/">foundations outline,</Link>,
     description: 'The style property of the outline for Safari',
   },
 ];
@@ -469,6 +469,78 @@ const STYLE_PRESET_STATES = [
     state: 'visited:focus',
     description:
       'Visually represents text links a user has already visited, and in a focus state',
+  },
+  {
+    example: getImage('theme/style-presets/focus'),
+    state: 'focus-visible',
+    description:
+      'Highlights an element to a user that has received focus, by using an input method such as a keyboard or voice. User agent determins if focus should be given to element.',
+  },
+  {
+    example: getImage('theme/style-presets/valid-focus'),
+    state: 'valid:focus-visible',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is valid, and in a focus state',
+  },
+  {
+    example: getImage('theme/style-presets/invalid-focus'),
+    state: 'invalid:focus-visible',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid, and in a focus state',
+  },
+  {
+    example: getImage('theme/style-presets/hover'),
+    state: 'focus-visible:hover',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component has focus state and hover state',
+  },
+  {
+    example: getImage('theme/style-presets/valid-hover'),
+    state: 'valid:focus-visible:hover',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is valid has focus state and hover state',
+  },
+  {
+    example: getImage('theme/style-presets/invalid-hover'),
+    state: 'invalid:focus-visible:hover',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid has focus state and hover state',
+  },
+  {
+    example: getImage('theme/style-presets/checked-focus'),
+    state: 'checked:focus-visible',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to a user that a component has been checked, and in a focus state',
+  },
+  {
+    example: getImage('theme/style-presets/checked-valid-hover'),
+    state: 'checked:focus-visible:hover',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is checked, focused and in a hover state',
+  },
+  {
+    example: getImage('theme/style-presets/checked-valid-focus'),
+    state: 'checked:valid:focus-visible',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is valid, checked, and in a focus state',
+  },
+  {
+    example: getImage('theme/style-presets/checked-invalid-focus'),
+    state: 'checked:invalid:focus-visible',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid, checked, and in a focus state',
+  },
+  {
+    example: getImage('theme/style-presets/checked-valid-hover'),
+    state: 'checked:valid:focus-visible:hover',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is checked, valid, focused and in a hover state',
+  },
+  {
+    example: getImage('theme/style-presets/checked-invalid-focus'),
+    state: 'checked:invalid:focus-visible:hover',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is checked, invalid, focused and in a hover state',
   },
 ];
 
