@@ -215,7 +215,6 @@ export const renderCols = (
         cellContent = cellValue && (
           <BorderCard boxShadowToken={cellValue.toString()} />
         );
-        // console.log(<BorderCard boxShadowToken={cellValue.toString()} />);
         break;
       }
 
@@ -223,7 +222,6 @@ export const renderCols = (
         cellContent = cellValue && (
           <OverlayCards overlayToken={cellValue.toString()} />
         );
-        // console.log(<OverlayCards overlayToken={cellValue.toString()} />);
         break;
       }
 
