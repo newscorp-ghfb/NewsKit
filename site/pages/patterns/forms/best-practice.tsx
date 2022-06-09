@@ -407,11 +407,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
           <UnorderedList
             markerAlign="start"
             listItemMarker={IconFilledCircle}
-            overrides={{
-              content: {
-                typographyPreset: 'editorialParagraph020',
-              },
-            }}
+            overrides={unorderedListOverrides}
           >
             <>
               Some users didn’t know that they could interact with the text
@@ -547,11 +543,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
           <UnorderedList
             markerAlign="start"
             listItemMarker={IconFilledCircle}
-            overrides={{
-              content: {
-                typographyPreset: 'editorialParagraph020',
-              },
-            }}
+            overrides={unorderedListOverrides}
           >
             <>
               Errors and validation should be displayed ‘On blur’ (once the user
