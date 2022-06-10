@@ -51,36 +51,36 @@ const Opacity = (layoutProps: LayoutProps) => (
 to a background."
           showSeparator
         />
-        <ContentSection sectionName="Opacity">
-          <ContentPrimary
-            id="Opacity"
-            toc="Opacity"
-            headline="Opacity"
-            description={
-              <>
-                Opacity is used in a UI to make interface elements more or less
-                translucent that can be applied to a{' '}
-                <Link href="/components/block">Block.</Link>
-                <br />
-              </>
-            }
-            showSeparator
-          >
-            <Table
-              columns={['Opacity', 'Token', 'Value', 'Common usage']}
-              rows={opacityRows}
-            />
-          </ContentPrimary>
-        </ContentSection>
-        <ContentSection sectionName="a11y">
-          <ContentPrimary
-            id="a11y"
-            toc="Accessibility"
-            headline="Accessibility considerations"
-            description="When using opacity, ensure important UI elements like text and icons are legible without compromising the aesthetic."
-            showSeparator
+      </ContentSection>
+      <ContentSection sectionName="Opacity">
+        <ContentPrimary
+          id="Opacity"
+          toc="Opacity"
+          headline="Opacity"
+          description={
+            <>
+              Opacity is used in a UI to make interface elements more or less
+              translucent that can be applied to a{' '}
+              <Link href="/components/block">Block.</Link>
+              <br />
+            </>
+          }
+          showSeparator
+        >
+          <Table
+            columns={['Opacity', 'Token', 'Value', 'Common usage']}
+            rows={opacityRows}
           />
-        </ContentSection>
+        </ContentPrimary>
+      </ContentSection>
+      <ContentSection sectionName="a11y">
+        <ContentPrimary
+          id="a11y"
+          toc="Accessibility"
+          headline="Accessibility considerations"
+          description="When using opacity, ensure important UI elements like text and icons are legible without compromising the aesthetic."
+          showSeparator
+        />
       </ContentSection>
     </ComponentPageCell>
   </FoundationPageTemplate>

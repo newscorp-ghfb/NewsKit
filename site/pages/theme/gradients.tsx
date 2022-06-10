@@ -7,9 +7,9 @@ import {
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageCell} from '../../components/layout-cells';
-import {Tab, Tabs} from '../../../src/tabs';
-import {Table, TableRow} from '../../components/table';
+import {TableRow} from '../../components/table';
 import {newskitLightTheme} from '../../../src/theme';
+import {TabsWithTable} from '../../components/tabs-with-table';
 
 const themeGradientRows = (tokenTypes: string[]) => {
   const tokens = getTokenType(newskitLightTheme.overlays, '');
@@ -37,6 +37,47 @@ const inverserGradientRows = getTokenType(
   gradient: tokenName as string,
   token: tokenName,
 })) as TableRow[];
+
+const COLUMN_HEADER = ['Gradient', 'Token', 'Value'];
+
+const gradientsTable = [
+  {
+    title: 'Gradients',
+    summary: (
+      <>
+        &apos;Base&apos; gradient tokens are used to fade elements into the
+        interface background. <br />
+        &apos;Inverse&apos; gradient tokens are used to fade elements into a
+        dark background in a light theme.
+        <br />
+      </>
+    ),
+
+    tabs: [
+      {
+        header: 'Base',
+        columnHeader: COLUMN_HEADER,
+        rows: themeGradientRows([
+          'overlayGradientBaseVertical',
+          'overlayGradientBaseHorizontal',
+          'overlayGradientFromBottom',
+          'overlayGradientFromBottomLeft',
+          'overlayGradientFromBottomRight',
+          'overlayGradientFromLeft',
+          'overlayGradientFromRight',
+          'overlayGradientFromTop',
+          'overlayGradientFromTopLeft',
+          'overlayGradientFromTopRight',
+        ]),
+      },
+      {
+        header: 'Inverse',
+        columnHeader: COLUMN_HEADER,
+        rows: inverserGradientRows,
+      },
+    ],
+  },
+];
 
 const Gradients = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
@@ -68,51 +109,7 @@ styles (these are light when used in a dark theme)`}
           showSeparator
         />
       </ContentSection>
-      <ContentSection sectionName="Gradients">
-        <ContentPrimary
-          id="Gradients"
-          toc="Gradients"
-          headline="Gradients"
-          description={
-            <>
-              &apos;Base&apos; gradient tokens are used to fade elements into
-              the interface background. <br />
-              &apos;Inverse&apos; gradient tokens are used to fade elements into
-              a dark background in a light theme
-              <br />
-            </>
-          }
-          showSeparator
-        >
-          <Tabs size="medium">
-            <Tab label="Base">
-              <Table
-                columns={['Gradient', 'Token', 'Value']}
-                rows={
-                  (themeGradientRows([
-                    'overlayGradientBaseVertical',
-                    'overlayGradientBaseHorizontal',
-                    'overlayGradientFromBottom',
-                    'overlayGradientFromBottomLeft',
-                    'overlayGradientFromBottomRight',
-                    'overlayGradientFromLeft',
-                    'overlayGradientFromRight',
-                    'overlayGradientFromTop',
-                    'overlayGradientFromTopLeft',
-                    'overlayGradientFromTopRight',
-                  ]) as unknown) as TableRow[]
-                }
-              />
-            </Tab>
-            <Tab label="Inverse">
-              <Table
-                columns={['Gradient', 'Token', 'Value']}
-                rows={inverserGradientRows}
-              />
-            </Tab>
-          </Tabs>
-        </ContentPrimary>
-      </ContentSection>
+      <TabsWithTable components={gradientsTable} showSeparator />
       <ContentSection sectionName="a11y">
         <ContentPrimary
           id="a11y"

@@ -1,5 +1,5 @@
 import React from 'react';
-import {newskitLightTheme, Tab, Tabs} from 'newskit';
+import {newskitLightTheme} from 'newskit';
 import {Link} from '../../components/link';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
@@ -12,7 +12,75 @@ import {
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {getTokenType} from '../../utils/get-token-type';
-import {Table, TableRow} from '../../components/table';
+import {TableRow} from '../../components/table';
+import {TabsWithTable} from '../../components/tabs-with-table';
+
+const usageString = 'Creative use case';
+const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
+  overlayTintBase010: usageString,
+  overlayTintBase020: usageString,
+  overlayTintBase030: usageString,
+  overlayTintBase040: (
+    <>
+      Internal overlay component that sits behind the panels (used by{' '}
+      <Link href="/components/modal">modals</Link> and{' '}
+      <Link href="/components/drawer">drawers</Link>)
+    </>
+  ),
+};
+const inverserOverlayRows = getTokenType(
+  newskitLightTheme.overlays,
+  'overlayTintInverse',
+).map(({tokenName, tokenValue}) => ({
+  value: tokenValue,
+  tint: tokenName as string,
+  token: tokenName,
+  commonUsage: usageString,
+})) as TableRow[];
+
+const overlayRows = getTokenType(
+  newskitLightTheme.overlays,
+  'overlayTintBase',
+).map(({tokenName, tokenValue}) => ({
+  value: tokenValue,
+  tint: tokenName as string,
+  token: tokenName,
+  commonUsage: TOKENS_DESCRIPTION[tokenName] || '-',
+})) as TableRow[];
+
+const COLUMN_HEADER = ['Tint', 'Token', 'Value', 'Common usage'];
+
+const overlayTable = [
+  {
+    title: 'Tint',
+    summary: (
+      <>
+        Tints make colors in a UI more or less intense by aiding legibility
+        contrast between the foreground and background elements.
+        <br />
+        <br />
+        &apos;Base&apos; tint tokens are used to darken a background or element.
+        <br />
+        <br />
+        &apos;Inverse&apos; tint tokens are used to lighten a background or
+        element.
+      </>
+    ),
+
+    tabs: [
+      {
+        header: 'Base',
+        columnHeader: COLUMN_HEADER,
+        rows: overlayRows,
+      },
+      {
+        header: 'Inverse',
+        columnHeader: COLUMN_HEADER,
+        rows: inverserOverlayRows,
+      },
+    ],
+  },
+];
 
 const DO_AND_DONT = [
   {
@@ -34,40 +102,6 @@ const DO_AND_DONT = [
     media: getIllustrationComponent('theme/overlays/dont'),
   },
 ];
-
-const usageString = 'Creative use case';
-const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
-  overlayTintBase010: usageString,
-  overlayTintBase020: usageString,
-  overlayTintBase030: usageString,
-  overlayTintBase040: (
-    <>
-      Internal overlay component that sits behind the panels (used by{' '}
-      <Link href="/components/modal">modals</Link> and{' '}
-      <Link href="/components/drawer">drawers</Link>)
-    </>
-  ),
-};
-
-const overlayRows = getTokenType(
-  newskitLightTheme.overlays,
-  'overlayTintBase',
-).map(({tokenName, tokenValue}) => ({
-  value: tokenValue,
-  tint: tokenName as string,
-  token: tokenName,
-  commonUsage: TOKENS_DESCRIPTION[tokenName] || '-',
-})) as TableRow[];
-
-const inverserOverlayRows = getTokenType(
-  newskitLightTheme.overlays,
-  'overlayTintInverse',
-).map(({tokenName, tokenValue}) => ({
-  value: tokenValue,
-  tint: tokenName as string,
-  token: tokenName,
-  commonUsage: usageString,
-})) as TableRow[];
 
 const Overlays = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
@@ -99,44 +133,8 @@ const Overlays = (layoutProps: LayoutProps) => (
           showSeparator
         />
 
-        <ContentSection sectionName="Tints">
-          <ContentPrimary
-            id="tints"
-            toc="Tints"
-            headline="Tints"
-            description={
-              <>
-                Tints make colors in a UI more or less intense by aiding
-                legibility contrast between the foreground and background
-                elements.
-                <br />
-                <br />
-                &apos;Base&apos; tint tokens are used to darken a background or
-                element.
-                <br />
-                <br />
-                &apos;Inverse&apos; tint tokens are used to lighten a background
-                or element.
-              </>
-            }
-            showSeparator
-          >
-            <Tabs size="medium">
-              <Tab label="Base">
-                <Table
-                  columns={['Tint', 'Token', 'Value', 'Common usage']}
-                  rows={overlayRows}
-                />
-              </Tab>
-              <Tab label="Inverse">
-                <Table
-                  columns={['Tint', 'Token', 'Value', 'Common usage']}
-                  rows={inverserOverlayRows}
-                />
-              </Tab>
-            </Tabs>
-          </ContentPrimary>
-        </ContentSection>
+        <TabsWithTable components={overlayTable} showSeparator />
+
         <ContentSection sectionName="usage">
           <ContentPrimary
             toc="Usage"
