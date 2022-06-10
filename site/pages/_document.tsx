@@ -2,9 +2,10 @@
 
 import * as React from 'react';
 import Document, {Head, Main, NextScript, Html} from 'next/document';
-import {Global, css} from 'newskit';
+import {Global, css, Consent} from 'newskit';
 import Helmet from 'react-helmet';
 import {HTMLMeta} from '../components/html-meta';
+import Tealium from '../../src/instrumentation/handlers/tealium';
 
 // Is added so relative paths work when we are on a sub dir e.g. s-3.com/ppdsc-123-foo/
 const baseHref =
@@ -16,7 +17,7 @@ const Base = () => <base href={baseHref} />;
 
 export default class MyDocument extends Document {
   render() {
-    // const isSiteEnvProduction = process.env.SITE_ENV === 'production';
+    const isSiteEnvProduction = process.env.SITE_ENV === 'production';
     const helmet = Helmet.rewind();
     return (
       <Html lang="en">
@@ -35,6 +36,14 @@ export default class MyDocument extends Document {
           </style>
           {helmet.script.toComponent()}
           <HTMLMeta />
+          <Consent
+            sourcePointConfigUnified={{
+              accountId: 259,
+              propertyHref: 'https://newskit.co.uk',
+              gdpr: {},
+            }}
+            reactHelmet={Helmet}
+          />
         </Head>
         <body>
           <Global
@@ -225,6 +234,11 @@ export default class MyDocument extends Document {
                 font-display: swap;
               }
             `}
+          />
+          <Tealium
+            accountId="newsinternational"
+            profileId="thetimes.newskit"
+            env={isSiteEnvProduction ? 'prod' : 'dev'}
           />
           <Main />
           <NextScript />
