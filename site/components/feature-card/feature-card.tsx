@@ -281,6 +281,7 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
           {title && (
             <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
               <Headline
+                headingAs="h3"
                 overrides={{
                   typographyPreset: titleTypographyPreset,
 
