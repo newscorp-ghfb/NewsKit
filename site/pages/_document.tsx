@@ -2,10 +2,9 @@
 
 import * as React from 'react';
 import Document, {Head, Main, NextScript, Html} from 'next/document';
-import {Global, css, Consent} from 'newskit';
+import {Global, css, Consent, Tealium} from 'newskit';
 import Helmet from 'react-helmet';
 import {HTMLMeta} from '../components/html-meta';
-import Tealium from '../../src/instrumentation/handlers/tealium';
 
 // Is added so relative paths work when we are on a sub dir e.g. s-3.com/ppdsc-123-foo/
 const baseHref =

@@ -4,6 +4,7 @@ import {Prop} from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {CodeFromDefaultPresets} from '../../components/code';
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
 import {Standfirst} from 'newskit';
 
@@ -45,8 +46,9 @@ The Standfirst component provides the following props for customisation.
       </Prop>
       <Prop name="typographyPreset" type="MQ<string>">
         If provided, this overrides the typography preset applied to the styled text.
-    </Prop>
       </Prop>
+      <CommonLogicalPropsMDX nested/>
+    </Prop>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="standfirst" />
   </Prop>

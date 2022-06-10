@@ -262,3 +262,37 @@ exports[`Standfirst renders with default styles 1`] = `
   />
 </DocumentFragment>
 `;
+
+exports[`Standfirst renders with logical prop overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  color: #2E2E2E;
+  padding-inline: 20px;
+  padding-block: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 16px;
+    line-height: 1.125;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 20px;
+    line-height: 1.125;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+
+<h2
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
