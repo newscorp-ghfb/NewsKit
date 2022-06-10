@@ -241,6 +241,8 @@ export const StyledChildContainer = styled.div<StyledChildProps>`
   ${handleResponsiveProp({$alignSelf: undefined}, ({$alignSelf}) => ({
     alignSelf: $alignSelf,
   }))}
+
+  ${logicalProps()}
 `;
 
 // Stack as list

@@ -542,6 +542,7 @@ export const AudioPlayerOverrides = () => (
 
             <Areas.Volume alignSelf="center" justifySelf="start">
               <AudioPlayerVolumeControl
+                muteButtonSize={ButtonSize.Medium}
                 overrides={{
                   slider: {
                     track: {
@@ -566,7 +567,6 @@ export const AudioPlayerOverrides = () => (
                   button: {
                     stylePreset: 'customButtonStylePreset',
                     iconSize: 'iconSize020',
-                    size: ButtonSize.Small,
                   },
                 }}
               />
