@@ -1,5 +1,5 @@
 import {Placement, Strategy} from '@floating-ui/react-dom-interactions';
-import {TooltipProps} from './types';
+import {BaseFloatingElementProps} from './types';
 import {
   getResponsiveSize,
   getResponsiveSpace,
@@ -11,20 +11,21 @@ import {logicalProps} from '../utils/logical-properties';
 import {TextBlock} from '../text-block';
 import {calculateInset} from './utils';
 
-export const StyledTooltip = styled.div<
+export const StyledFloatingElement = styled.div<
   {
     strategy: Strategy;
     placement: Placement;
     $x?: number;
     $y?: number;
     hidePointer: boolean;
-  } & Pick<TooltipProps, 'overrides'>
+  } & Pick<BaseFloatingElementProps, 'overrides' | 'path'>
 >`
+  ${({path}) => getStylePreset(`${path}`, '')};
   pointer-events: none;
-  ${getResponsiveSpace('zIndex', 'tooltip', '', 'zIndex')};
-  ${getResponsiveSize('maxWidth', 'tooltip', '', 'maxWidth')};
-  ${getResponsiveSize('minWidth', 'tooltip', '', 'minWidth')};
-  ${({$x, $y, strategy, placement, hidePointer}) =>
+  ${({path}) => getResponsiveSpace('zIndex', path, '', 'zIndex')};
+  ${({path}) => getResponsiveSize('maxWidth', path, '', 'maxWidth')};
+  ${({path}) => getResponsiveSize('minWidth', path, '', 'minWidth')};
+  ${({$x, $y, strategy, placement, hidePointer, path}) =>
     getResponsiveSpace(
       distance => {
         const offset = !hidePointer ? distance : undefined;
@@ -34,16 +35,18 @@ export const StyledTooltip = styled.div<
           top: calculateInset($y, 'top', offset, placement),
         };
       },
-      'tooltip',
+      path,
       'distance',
       'distance',
     )}
 `;
 
-export const StyledPanel = styled(TextBlock)<Pick<TooltipProps, 'overrides'>>`
-  ${getStylePreset('tooltip.panel', 'panel')};
-  ${getTypographyPreset('tooltip.panel', 'panel')};
-  ${logicalProps('tooltip.panel', 'panel')}
+export const StyledPanel = styled(TextBlock)<
+  Pick<BaseFloatingElementProps, 'overrides' | 'path'>
+>`
+  ${({path}) => getStylePreset(`${path}.panel`, 'panel')};
+  ${({path}) => getTypographyPreset(`${path}.panel`, 'panel')};
+  ${({path}) => logicalProps(`${path}.panel`, 'panel')}
 `;
 
 export const StyledPointer = styled.div<
@@ -51,12 +54,13 @@ export const StyledPointer = styled.div<
     placement: Placement;
     $x?: number;
     $y?: number;
-  } & Pick<TooltipProps, 'overrides'>
+  } & Pick<BaseFloatingElementProps, 'overrides' | 'path'>
 >`
   position: absolute;
   transform: rotate(45deg);
-  ${getStylePreset('tooltip.pointer', 'pointer')};
-  ${({placement, $x, $y}) =>
+  box-sizing: border-box;
+  ${({path}) => getStylePreset(`${path}.pointer`, 'pointer')};
+  ${({placement, $x, $y, path}) =>
     getResponsiveSize(
       size => {
         const staticSide: string = {
@@ -75,7 +79,7 @@ export const StyledPointer = styled.div<
           [staticSide]: `calc(-${size} / 2)`,
         };
       },
-      `tooltip.pointer`,
+      `${path}.pointer`,
       'pointer',
       'size',
     )}

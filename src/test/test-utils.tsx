@@ -1,5 +1,5 @@
 import React, {ComponentType} from 'react';
-import {render as renderer, RenderOptions} from '@testing-library/react';
+import {act, render as renderer, RenderOptions} from '@testing-library/react';
 import {newskitLightTheme, ThemeProvider, ThemeProviderProps} from '../theme';
 import {
   InstrumentationProvider,
@@ -64,3 +64,18 @@ export const renderToFragmentWithTheme = renderToFragmentWithThemeFactory(
 
 export {render} from '@testing-library/react';
 export {renderHook} from '@testing-library/react-hooks';
+
+// The @floating-ui lib's inset styling is applied asynchronously. To make
+// assertions on the top / left attribute values, we need to flush the queue to
+// ensure that the element has been positioned before making assertions on
+// snapshots. See https://floating-ui.com/docs/react-dom#testing for more info.
+export const asyncRender = async <T extends {}>(
+  Component: React.ComponentType<T>,
+  props?: T & {children?: React.ReactNode},
+  theme?: ThemeProviderProps['theme'],
+  options?: Omit<RenderOptions, 'wrapper'>,
+) => {
+  const res = await renderWithTheme(Component, props, theme, options);
+  await act(async () => {});
+  return res;
+};

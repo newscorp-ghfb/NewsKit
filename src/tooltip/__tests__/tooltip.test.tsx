@@ -1,37 +1,15 @@
 import React from 'react';
-import {fireEvent, act, RenderOptions} from '@testing-library/react';
-import {Alignment, Side} from '@floating-ui/react-dom-interactions';
-import {renderWithTheme} from '../../test/test-utils';
+import {fireEvent} from '@testing-library/react';
+import {renderWithTheme, asyncRender} from '../../test/test-utils';
 import {Tooltip, TooltipProps} from '..';
 import {TriggerType} from '../types';
 import {Button} from '../../button';
-import {createTheme, ThemeProviderProps} from '../../theme';
-import {
-  calculateInset,
-  getOffsetAxis,
-  getOffsetAxisDirection,
-  getSide,
-} from '../utils';
+import {createTheme} from '../../theme';
 
 jest.mock('@floating-ui/react-dom-interactions', () => ({
   ...jest.requireActual('@floating-ui/react-dom-interactions'),
   useId: () => 'MOCK-ID',
 }));
-
-// The tooltip's inset styling is applied asynchronously. To make assertions on
-// the top / left attribute values, we need to flush the queue to ensure that
-// the element has been positioned before making assertions on snapshots.
-// See https://floating-ui.com/docs/react-dom#testing for more info.
-const asyncRender = async <T extends {}>(
-  Component: React.ComponentType<T>,
-  props?: T & {children?: React.ReactNode},
-  theme?: ThemeProviderProps['theme'],
-  options?: Omit<RenderOptions, 'wrapper'>,
-) => {
-  const res = await renderWithTheme(Component, props, theme, options);
-  await act(async () => {});
-  return res;
-};
 
 describe('Tooltip', () => {
   const defaultProps: TooltipProps = {
@@ -364,99 +342,5 @@ describe('Tooltip', () => {
     const button = getByTestId('outside-control');
     fireEvent.click(button);
     expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
-  });
-
-  describe('utils', () => {
-    const sides: Side[] = ['top', 'right', 'bottom', 'left'];
-    const alignments: Alignment[] = ['start', 'end'];
-
-    describe('getSide', () => {
-      test('should return correct side', () => {
-        sides.forEach(side => {
-          expect(getSide(side)).toEqual(side);
-          alignments.forEach(alignment => {
-            expect(getSide(`${side}-${alignment}`)).toEqual(side);
-          });
-        });
-      });
-    });
-
-    describe('getOffsetAxis', () => {
-      test('should return correct axis for offset to be applied along', () => {
-        expect(getOffsetAxis('top')).toEqual('y');
-        expect(getOffsetAxis('bottom')).toEqual('y');
-        expect(getOffsetAxis('right')).toEqual('x');
-        expect(getOffsetAxis('left')).toEqual('x');
-      });
-    });
-
-    describe('getOffsetAxisDirection', () => {
-      test('should return correct direction for offset to be applied in', () => {
-        expect(getOffsetAxisDirection('top')).toEqual(-1);
-        expect(getOffsetAxisDirection('bottom')).toEqual(1);
-        expect(getOffsetAxisDirection('right')).toEqual(1);
-        expect(getOffsetAxisDirection('left')).toEqual(-1);
-      });
-    });
-
-    describe('calculateInset', () => {
-      const insetValue: number = 10;
-      const offsetValue: string = '5px';
-
-      test('should return an empty string if there is no inset value', () => {
-        expect(calculateInset(null, 'left', offsetValue, 'right')).toEqual('');
-        expect(calculateInset(undefined, 'left', offsetValue, 'right')).toEqual(
-          '',
-        );
-      });
-
-      test('should return the original inset value if there is no offset value', () => {
-        expect(calculateInset(insetValue, 'left', undefined, 'right')).toEqual(
-          '10px',
-        );
-        expect(calculateInset(insetValue, 'left', undefined, 'right')).toEqual(
-          '10px',
-        );
-      });
-
-      test('should return the original inset value if there is an offset value even if it is 0', () => {
-        expect(calculateInset(0, 'left', undefined, 'right')).toEqual('0px');
-        expect(calculateInset(0, 'left', undefined, 'right')).toEqual('0px');
-      });
-
-      test('should return the original inset value if the offset should not be applied to this axis', () => {
-        expect(calculateInset(insetValue, 'left', offsetValue, 'top')).toEqual(
-          '10px',
-        );
-        expect(
-          calculateInset(insetValue, 'left', offsetValue, 'bottom'),
-        ).toEqual('10px');
-        expect(calculateInset(insetValue, 'top', offsetValue, 'left')).toEqual(
-          '10px',
-        );
-        expect(calculateInset(insetValue, 'top', offsetValue, 'right')).toEqual(
-          '10px',
-        );
-      });
-
-      describe('when the offset should be applied to this axis', () => {
-        test('should increase the inset value by the offset value if the tooltip is positioned right or bottom', () => {
-          expect(
-            calculateInset(insetValue, 'left', offsetValue, 'right'),
-          ).toEqual('calc(10px + (5px * 1))');
-          expect(
-            calculateInset(insetValue, 'top', offsetValue, 'bottom'),
-          ).toEqual('calc(10px + (5px * 1))');
-        });
-        test('should decrease the inset value by the offset value if the tooltip is positioned left or top', () => {
-          expect(
-            calculateInset(insetValue, 'left', offsetValue, 'left'),
-          ).toEqual('calc(10px + (5px * -1))');
-          expect(calculateInset(insetValue, 'top', offsetValue, 'top')).toEqual(
-            'calc(10px + (5px * -1))',
-          );
-        });
-      });
-    });
   });
 });

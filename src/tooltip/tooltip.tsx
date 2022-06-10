@@ -1,137 +1,72 @@
 import * as React from 'react';
+import {AriaAttributes} from 'react';
 import {
-  autoUpdate,
-  useFloating,
-  useInteractions,
-  useHover,
-  useFocus,
-  useRole,
+  FloatingContext,
   useDismiss,
-  useId,
-  arrow,
+  useFocus,
+  useHover,
+  useInteractions as floatingUiUseInteractions,
 } from '@floating-ui/react-dom-interactions';
-import composeRefs from '@seznam/compose-react-refs';
-import {useRef} from 'react';
 import {TooltipProps} from './types';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {StyledPanel, StyledPointer, StyledTooltip} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
-import {useControlled} from '../utils/hooks';
+import {BaseFloatingElement} from '../base-floating-element/base-floating-element';
+import {BuildAriaAttributesFn} from '../base-floating-element';
 
 const ThemelessTooltip: React.FC<TooltipProps> = ({
   children,
   content,
-  placement = 'top',
   trigger = ['hover', 'focus'],
-  open: openProp,
-  defaultOpen,
   asLabel,
-  overrides,
-  hidePointer = false,
   ...props
 }) => {
-  const [open, setOpen] = useControlled({
-    controlledValue: openProp,
-    defaultValue: Boolean(defaultOpen),
-  });
-
-  const pointerRef = useRef(null);
-  const {
-    x,
-    y,
-    reference,
-    floating,
-    strategy,
-    context,
-    middlewareData: {arrow: {x: pointerX, y: pointerY} = {}},
-  } = useFloating({
-    placement,
-    open,
-    onOpenChange: setOpen,
-    whileElementsMounted: autoUpdate,
-    middleware: !hidePointer ? [arrow({element: pointerRef})] : [],
-  });
-
-  const {getReferenceProps, getFloatingProps} = useInteractions([
-    useHover(context, {
-      enabled: trigger.includes('hover'),
-    }),
-    useFocus(context, {enabled: trigger.includes('focus')}),
-    useRole(context, {enabled: !asLabel, role: 'tooltip'}),
-    useDismiss(context),
-  ]);
-
-  const id = useId();
+  const useInteractions = (context: FloatingContext<HTMLElement>) =>
+    floatingUiUseInteractions([
+      useHover(context, {
+        enabled: trigger.includes('hover'),
+      }),
+      useFocus(context, {enabled: trigger.includes('focus')}),
+      useDismiss(context),
+    ]);
 
   const contentIsString = typeof content === 'string';
 
-  const labelOrDescProps: {
-    'aria-label'?: string | null;
-    'aria-labelledby'?: string | null;
-    'aria-describedby'?: string | null;
-  } = {};
+  const buildContextAriaAttributes: BuildAriaAttributesFn = ({
+    floating: {id, open},
+  }) => {
+    const attrs: AriaAttributes = {};
 
-  // If tooltip is used as a label, add aria-label or aria-labelledby to childrenProps and id to StyledTooltip;
-  // aria-label is used when content is string; aria-labelledby is used when it's not a string;
-  // Because of above, 'aria-describedby' has different id for reference and floating, hence manually set below as well;
-  if (asLabel) {
-    labelOrDescProps['aria-label'] = contentIsString ? content : null;
-    labelOrDescProps['aria-labelledby'] = open && !contentIsString ? id : null;
-  } else {
-    labelOrDescProps['aria-describedby'] = open ? id : null;
-  }
+    // If tooltip is used as a label, add aria-label or aria-labelledby to childrenProps and id to StyledTooltip;
+    // aria-label is used when content is string; aria-labelledby is used when it's not a string;
+    // Because of above, 'aria-describedby' has different id for reference and floating, hence manually set below as well;
+    if (asLabel) {
+      attrs['aria-label'] = contentIsString ? content : undefined;
+      attrs['aria-labelledby'] = open && !contentIsString ? id : undefined;
+    } else {
+      attrs['aria-describedby'] = open ? id : undefined;
+    }
 
-  const childrenProps = {
-    ...labelOrDescProps,
-    ...children.props,
+    return attrs;
   };
 
-  if (!content) {
-    return children;
-  }
+  const buildFloatingElementAriaAttributes: BuildAriaAttributesFn = () => ({
+    'aria-hidden': true,
+  });
 
   return (
-    <>
-      {React.cloneElement(
-        children,
-        getReferenceProps({
-          ref: composeRefs(reference, children.ref),
-          ...childrenProps,
-        }),
-      )}
-      {open && (
-        <StyledTooltip
-          {...getFloatingProps({
-            ref: floating,
-            id,
-            className: 'Tooltip',
-          })}
-          strategy={strategy}
-          $x={x}
-          $y={y}
-          placement={placement}
-          overrides={overrides}
-          hidePointer={hidePointer}
-          aria-hidden
-          {...props}
-        >
-          <StyledPanel as={contentIsString ? 'p' : 'div'} overrides={overrides}>
-            {content}
-          </StyledPanel>
-          {!hidePointer && (
-            <StyledPointer
-              id={`${id}-pointer`}
-              ref={pointerRef}
-              placement={placement}
-              $x={pointerX}
-              $y={pointerY}
-              overrides={overrides}
-            />
-          )}
-        </StyledTooltip>
-      )}
-    </>
+    <BaseFloatingElement
+      path="tooltip"
+      className="Tooltip"
+      content={content}
+      buildContextAriaAttributes={buildContextAriaAttributes}
+      buildFloatingElementAriaAttributes={buildFloatingElementAriaAttributes}
+      useInteractions={useInteractions}
+      role={!asLabel ? 'tooltip' : undefined}
+      {...props}
+    >
+      {children}
+    </BaseFloatingElement>
   );
 };
 
