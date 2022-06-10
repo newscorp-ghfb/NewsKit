@@ -720,7 +720,7 @@ export const AudioPlayerKeyboard = () => (
             </Areas.Next>
 
             <Areas.Volume alignSelf="center" justifySelf="start">
-              <AudioPlayerVolumeControl keyboardShortcuts={{muteButton: 'y'}} />
+              <AudioPlayerVolumeControl keyboardShortcuts={{muteToggle: 'y'}} />
             </Areas.Volume>
 
             <Areas.SeekBar>
