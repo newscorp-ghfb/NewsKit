@@ -48,6 +48,18 @@ export const StoryParagraph = () => (
       Week.
     </P>
     <br />
+    <StorybookSubHeading>
+      with drop cap and multiply children
+    </StorybookSubHeading>
+    <P dropCap>
+      This being <strong>Black History Month</strong>, last week was Politicians
+      In Search Of An Eye-Catching Race-Related Policy Week. Both Theresa May
+      and <strong>Jeremy Corbyn</strong> had their own announcement, each
+      seemingly benign and right-on, each actually destructive and wrong-headed.
+      This being Black History Month, last week was
+      <i>Politicians In Search Of An Eye-Catching Race-Related Policy Week</i>.
+    </P>
+    <br />
     <StorybookSubHeading>with Sup and Sub elements</StorybookSubHeading>
     <P>
       Paragraph component containing a <Sub>subscript element</Sub> and a{' '}
