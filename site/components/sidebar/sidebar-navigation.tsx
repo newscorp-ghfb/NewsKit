@@ -44,12 +44,11 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
   return (
     <>
       {menuItemList &&
-        menuItemList.map(({title, id, page, subNav}) => (
+        menuItemList.map(({title, id, page, subNav, indexPage}) => (
           <React.Fragment key={id}>
             {page ? (
               <>
-                {title.includes('Overview') ||
-                title.includes('Getting started') ? undefined : (
+                {indexPage ? undefined : (
                   <>
                     <MenuTitleLinks active={path.includes(id)} href={id}>
                       {title}
@@ -61,7 +60,8 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
               <>
                 {title === 'Foundations' ||
                 title === 'Actions & Inputs' ||
-                title === 'Design' ? (
+                title === 'Design' ||
+                title === 'Forms' ? (
                   <Block spaceStack="space060" />
                 ) : (
                   <DesktopNavigationDivider>
