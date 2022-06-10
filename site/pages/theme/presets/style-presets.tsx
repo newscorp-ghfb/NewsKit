@@ -207,32 +207,32 @@ const CSS_PROPS = [
   },
   {
     token: 'outlineColor',
-    acceptedValues: <Link href="/theme/outline/">foundations outline,</Link>,
+    acceptedValues: <Link href="/theme/outline/">foundations outline</Link>,
     description: 'The colour property of the outline',
   },
   {
     token: 'outlineStyle',
-    acceptedValues: <Link href="/theme/outline/">foundations outline,</Link>,
+    acceptedValues: <Link href="/theme/outline/">foundations outline</Link>,
     description: 'The style property of the outline',
   },
   {
     token: 'outlineWidth',
-    acceptedValues: <Link href="/theme/outline/">foundations outline,</Link>,
+    acceptedValues: <Link href="/theme/outline/">foundations outline</Link>,
     description: 'The style property of the outline',
   },
   {
     token: 'outlineOffset',
-    acceptedValues: <Link href="/theme/outline/">foundations outline,</Link>,
+    acceptedValues: <Link href="/theme/outline/">foundations outline</Link>,
     description: 'The offset property of the outline',
   },
   {
     token: 'safariOutlineOffset',
-    acceptedValues: <Link href="/theme/outline/">foundations outline,</Link>,
+    acceptedValues: <Link href="/theme/outline/">foundations outline</Link>,
     description: 'The offset property of the outline for Safari',
   },
   {
     token: 'safariOutlineStylet',
-    acceptedValues: <Link href="/theme/outline/">foundations outline,</Link>,
+    acceptedValues: <Link href="/theme/outline/">foundations outline</Link>,
     description: 'The style property of the outline for Safari',
   },
 ];
