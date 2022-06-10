@@ -1,20 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tooltip should render correct styles: default 1`] = `
+exports[`Tooltip offset should be applied with pointer and mq distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-2"
+    aria-describedby="floating-ui-38"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
-  margin: 0;
   pointer-events: none;
   z-index: 80;
-  background-color: #0A0A0A;
+}
+
+@media screen {
+  .emotion-0 {
+    position: absolute;
+    left: 0px;
+    top: calc(0px + (32px * -1));
+  }
+}
+
+.emotion-1 {
+  margin: 0;
   color: #FFFFFF;
   border-radius: 8px;
+  background-color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -24,15 +35,317 @@ exports[`Tooltip should render correct styles: default 1`] = `
   padding-block: 8px;
 }
 
-<p
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  left: 0px;
+  bottom: calc(-4px / 2);
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="floating-ui-38"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="floating-ui-38-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip offset should be applied with pointer and non-px distance override 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-35"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: calc(0px + (1rem * -1));
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  left: 0px;
+  bottom: calc(-4px / 2);
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="floating-ui-35"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="floating-ui-35-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip offset should be applied with pointer and px distance override 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-32"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: calc(0px + (10px * -1));
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  left: 0px;
+  bottom: calc(-4px / 2);
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="floating-ui-32"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="floating-ui-32-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip offset should be applied with pointer and token distance override 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-29"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: calc(0px + (16px * -1));
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  left: 0px;
+  bottom: calc(-4px / 2);
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="floating-ui-29"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="floating-ui-29-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip offset should not be applied with with no pointer 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-26"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="floating-ui-26"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip should render correct styles: default 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-2"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+<div
+    aria-hidden="true"
     class="Tooltip emotion-0"
     id="floating-ui-2"
     role="tooltip"
-    style="position: absolute;"
     tabindex="-1"
   >
-    hello
-  </p>
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+  </div>
 </DocumentFragment>
 `;
 
@@ -45,13 +358,17 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
     Add
   </button>
   .emotion-0 {
-  margin: 0;
-  padding-inline: 8px;
-  padding-block: 16px;
   pointer-events: none;
   z-index: 70;
   max-width: 80px;
   min-width: 50px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.emotion-1 {
+  margin: 0;
   background-color: #EF1703;
   border-radius: 0;
   color: #0A0A0A;
@@ -64,14 +381,270 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
   padding-block: 16px;
 }
 
-<p
+<div
+    aria-hidden="true"
     class="Tooltip emotion-0"
     id="floating-ui-11"
     role="tooltip"
-    style="position: absolute;"
     tabindex="-1"
   >
-    hello
-  </p>
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip should render correct styles: with pointer 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-14"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: calc(0px + (8px * -1));
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  left: 0px;
+  bottom: calc(-4px / 2);
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="floating-ui-14"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="floating-ui-14-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip should render correct styles: with pointer size overrides 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-20"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: calc(0px + (8px * -1));
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0A0A0A;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  bottom: calc(-16px / 2);
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="floating-ui-20"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="floating-ui-20-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip should render correct styles: with pointer stylePreset overrides 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-17"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: calc(0px + (8px * -1));
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #A60100;
+  width: 4px;
+  height: 4px;
+  left: 0px;
+  bottom: calc(-4px / 2);
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="floating-ui-17"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="floating-ui-17-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-ui-23"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: calc(0px + (8px * 1));
+  top: 0px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  left: calc(-4px / 2);
+  top: 0px;
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="floating-ui-23"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="floating-ui-23-pointer"
+    />
+  </div>
 </DocumentFragment>
 `;

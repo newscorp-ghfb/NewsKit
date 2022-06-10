@@ -167,3 +167,31 @@ export const StoryHeadingOverrides = () => (
   </>
 );
 StoryHeadingOverrides.storyName = 'heading-overrides';
+
+export const StoryHeadingLogicalProps = () => {
+  const logicalPropsOverrides = {
+    marginBlock: 'space030',
+    marginInline: 'space050',
+    paddingBlock: 'space030',
+    paddingInline: 'space050',
+  };
+  return (
+    <>
+      <StorybookHeading>Heading with logical props</StorybookHeading>
+      <ThemeProvider theme={myCustomTheme}>
+        <H1 overrides={logicalPropsOverrides}>H1 with logical props</H1>
+        <br />
+        <H2 overrides={logicalPropsOverrides}>H2 with logical props</H2>
+        <br />
+        <H3 overrides={logicalPropsOverrides}>H3 with logical props</H3>
+        <br />
+        <H4 overrides={logicalPropsOverrides}>H4 with logical props</H4>
+        <br />
+        <H5 overrides={logicalPropsOverrides}>H5 with logical props</H5>
+        <br />
+        <H6 overrides={logicalPropsOverrides}>H6 with logical props</H6>
+      </ThemeProvider>
+    </>
+  );
+};
+StoryHeadingLogicalProps.storyName = 'heading-logical-props';
