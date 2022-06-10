@@ -3431,7 +3431,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           aria-current="false"
                           class="emotion-47"
                           data-testid="buttonLink"
-                          href="/patterns/patterns-index"
+                          href="/patterns/overview"
                           tabindex="-1"
                         >
                           <div
@@ -3443,7 +3443,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               <span
                                 class="emotion-17"
                               >
-                                Index
+                                Overview
                               </span>
                             </div>
                           </div>
@@ -6675,7 +6675,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     aria-current="false"
                     class="emotion-47"
                     data-testid="buttonLink"
-                    href="/patterns/patterns-index"
+                    href="/patterns/overview"
                   >
                     <div
                       class="emotion-10"
@@ -6686,7 +6686,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         <span
                           class="emotion-17"
                         >
-                          Index
+                          Overview
                         </span>
                       </div>
                     </div>
@@ -10111,7 +10111,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           aria-current="false"
                           class="emotion-47"
                           data-testid="buttonLink"
-                          href="/patterns/patterns-index"
+                          href="/patterns/overview"
                         >
                           <div
                             class="emotion-10"
@@ -10122,7 +10122,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               <span
                                 class="emotion-17"
                               >
-                                Index
+                                Overview
                               </span>
                             </div>
                           </div>
@@ -13355,7 +13355,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                     aria-current="false"
                     class="emotion-47"
                     data-testid="buttonLink"
-                    href="/patterns/patterns-index"
+                    href="/patterns/overview"
                   >
                     <div
                       class="emotion-10"
@@ -13366,7 +13366,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         <span
                           class="emotion-17"
                         >
-                          Index
+                          Overview
                         </span>
                       </div>
                     </div>

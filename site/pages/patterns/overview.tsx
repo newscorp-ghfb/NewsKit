@@ -36,18 +36,18 @@ const getPatternsCardList = (routeList: Item[]) =>
 
 const patternsIndexRouteListCards = getPatternsCardList(patternsFormRouteList);
 
-const PatternsIndex = (layoutProps: LayoutProps) => (
+const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     {({themeMode}) => (
       <ThemeProvider
         theme={themeMode === 'light' ? patternsThemeLight : patternsThemeDark}
       >
         <HeadNextSeo
-          title="Patterns index"
+          title="Overview"
           description="Design patterns provide a framework for solving a particular user problem in a consistent, considered way."
           image={{
             url: 'social/patterns.png',
-            alt: 'Patterns index',
+            alt: 'Overview',
           }}
         />
         <HeaderIndex title="Patterns" media={Hero}>
@@ -71,4 +71,4 @@ const PatternsIndex = (layoutProps: LayoutProps) => (
   </Layout>
 );
 
-export default PatternsIndex;
+export default Overview;
