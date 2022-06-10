@@ -67,7 +67,7 @@ export const MenuMobileCollapsible = ({
                       id.includes('theme/overview') ||
                       id.includes('/components/overview') ||
                       id.includes('/getting-started/overview') ||
-                      id.includes('/patterns/patterns-index')
+                      id.includes('/patterns/overview')
                         ? 'space030'
                         : undefined,
                   }}

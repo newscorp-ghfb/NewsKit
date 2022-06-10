@@ -764,9 +764,9 @@ export default [
     id: '/patterns',
     subNav: [
       {
-        title: 'Index',
+        title: 'Overview',
         page: true,
-        id: '/patterns/patterns-index',
+        id: '/patterns/overview',
         indexPage: true,
         description:
           'Design patterns provide a framework for solving a particular user problem in a consistent, considered way.',
