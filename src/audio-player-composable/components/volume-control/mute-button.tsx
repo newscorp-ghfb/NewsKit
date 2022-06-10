@@ -14,10 +14,9 @@ export const MuteButton: React.FC<MuteButtonProps> = ({
   volume,
   unMutedVolume,
   onChange,
-  volumeControlButtonStylePreset,
-  iconSize,
   size,
   muteKeyboardShortcuts,
+  overrides,
 }) => {
   useKeyboardShortcutsOnButton({
     props: {
@@ -35,10 +34,7 @@ export const MuteButton: React.FC<MuteButtonProps> = ({
       aria-label={volume === 0 ? 'Unmute' : 'Mute'}
       onClick={() => toggleMute(volume, unMutedVolume, onChange)}
       size={size}
-      overrides={{
-        stylePreset: volumeControlButtonStylePreset,
-        iconSize,
-      }}
+      overrides={overrides}
     >
       {volume === 0 ? <IconFilledVolumeOff /> : <IconFilledVolumeDown />}
     </IconButton>

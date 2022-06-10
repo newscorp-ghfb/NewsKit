@@ -2,7 +2,7 @@ import React, {useCallback, useEffect, useState} from 'react';
 import {ScreenReaderOnly} from '../../../screen-reader-only';
 import {Slider} from '../../../slider';
 import {withOwnTheme} from '../../../utils/with-own-theme';
-import {getTokensForVolumeControl, useInitialVolume} from './utils';
+import {useInitialVolume} from './utils';
 import {useAudioPlayerContext} from '../../context';
 import defaults from './defaults';
 import {MuteButton} from './mute-button';
@@ -45,10 +45,14 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
   }, [unMutedVolume, volume]);
 
   const theme = useTheme();
-  const {volumeControlButtonStylePreset, iconSize} = getTokensForVolumeControl(
-    theme,
-    overrides,
-  );
+
+  const buttonOverrides = {
+    ...deepMerge(
+      mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
+      theme.componentDefaults.audioPlayerVolumeControl.button,
+      filterOutFalsyProperties(overrides.button),
+    ),
+  };
 
   const sliderOverrides = {
     ...deepMerge(
@@ -83,11 +87,10 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
         <MuteButton
           volume={volume}
           unMutedVolume={unMutedVolume}
-          volumeControlButtonStylePreset={volumeControlButtonStylePreset}
           onChange={onChange}
           size={muteButtonSize || ButtonSize.Small}
-          iconSize={iconSize}
-          muteKeyboardShortcuts={keyboardShortcuts?.muteButton}
+          muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
+          overrides={buttonOverrides}
         />
       </GridLayoutItem>
       {!collapsed && (

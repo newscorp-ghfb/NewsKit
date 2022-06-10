@@ -91,7 +91,7 @@ const AudioPropsAndVolumeControlOverridenShortcuts: AudioPlayerComposableProps =
   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
   children: (
     <>
-      <AudioPlayerVolumeControl keyboardShortcuts={{muteButton: 'y'}} />
+      <AudioPlayerVolumeControl keyboardShortcuts={{muteToggle: 'y'}} />
     </>
   ),
 };
