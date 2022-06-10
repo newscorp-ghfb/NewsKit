@@ -788,7 +788,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   fill: #C0C0C0;
 }
 
-.emotion-45:focus-visible:not(:disabled) {
+.emotion-50:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -797,7 +797,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-45:focus-visible:not(:disabled) {
+    .emotion-50:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -913,7 +913,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   background-color: #CCCCCC;
 }
 
-.emotion-52:focus-visible:not(:disabled) {
+.emotion-57:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -922,7 +922,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-52:focus-visible:not(:disabled) {
+    .emotion-57:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -2157,7 +2157,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   fill: #C0C0C0;
 }
 
-.emotion-45:focus-visible:not(:disabled) {
+.emotion-50:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -2166,7 +2166,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-45:focus-visible:not(:disabled) {
+    .emotion-50:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -2282,7 +2282,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   background-color: #CCCCCC;
 }
 
-.emotion-52:focus-visible:not(:disabled) {
+.emotion-57:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -2291,7 +2291,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-52:focus-visible:not(:disabled) {
+    .emotion-57:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -3411,7 +3411,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   fill: #C0C0C0;
 }
 
-.emotion-45:focus-visible:not(:disabled) {
+.emotion-50:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3420,7 +3420,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-45:focus-visible:not(:disabled) {
+    .emotion-50:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -3536,7 +3536,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   background-color: #CCCCCC;
 }
 
-.emotion-52:focus-visible:not(:disabled) {
+.emotion-57:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3545,7 +3545,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-52:focus-visible:not(:disabled) {
+    .emotion-57:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
