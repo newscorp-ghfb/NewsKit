@@ -3,19 +3,19 @@ import {InlineMessage} from 'newskit';
 import {
   Illustration,
   getIllustrationComponent,
-} from '../../components/illustrations/illustration-loader';
-import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {MediaList} from '../../components/media-list';
-import {UsageKind} from '../../components/usage-card';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {LayoutProps} from '../../components/layout';
+} from '../../../components/illustrations/illustration-loader';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {MediaList} from '../../../components/media-list';
+import {UsageKind} from '../../../components/usage-card';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {LayoutProps} from '../../../components/layout';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
   ContentColSpan,
-} from '../../components/content-structure';
-import {Link} from '../../components/link';
+} from '../../../components/content-structure';
+import {Link} from '../../../components/link';
 
 const featureCardoverrides = {
   title: {

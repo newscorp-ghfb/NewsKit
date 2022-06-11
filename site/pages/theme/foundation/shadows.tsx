@@ -1,16 +1,16 @@
 import React from 'react';
 import {newskitLightTheme} from 'newskit';
-import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {Table} from '../../components/table';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {LayoutProps} from '../../components/layout';
-import {getTokenType} from '../../utils/get-token-type';
-import {Link} from '../../components/link';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {Table} from '../../../components/table';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {LayoutProps} from '../../../components/layout';
+import {getTokenType} from '../../../utils/get-token-type';
+import {Link} from '../../../components/link';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-} from '../../components/content-structure';
+} from '../../../components/content-structure';
 
 const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
   shadow010: (
