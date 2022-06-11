@@ -157,7 +157,7 @@ const Iconography = (layoutProps: LayoutProps) => (
                 description: (
                   <>
                     Colour can be applied to icons using{' '}
-                    <Link href="/theme/colours#css-w5wzt1">
+                    <Link href="/theme/foundation/colours#css-w5wzt1">
                       Ink colour tokens.
                     </Link>
                   </>
@@ -169,7 +169,7 @@ const Iconography = (layoutProps: LayoutProps) => (
                 description: (
                   <>
                     Icons can be sized using{' '}
-                    <Link href="/theme/spacing/#css-2ka130">
+                    <Link href="/theme/foundation/spacing/#css-2ka130">
                       icon size tokens.
                     </Link>
                   </>
