@@ -1,16 +1,20 @@
+import {fireEvent} from '@testing-library/react';
 import React from 'react';
-import {
-  IconFilledAccountBalance,
-  IconFilledExpandLess,
-  IconFilledExpandMore,
-} from '../../icons';
+import {Block} from '../../block';
+import {IconFilledAccountBalance} from '../../icons';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
 import {TextBlock} from '../../text-block';
 import {createTheme} from '../../theme';
+import {styled} from '../../utils';
 import {Accordion} from '../accordion';
+
+const StyledBlock = styled(Block)`
+  display: flex;
+  align-items: center;
+`;
 
 describe('Accordion', () => {
   const defaultProps = {
@@ -20,19 +24,24 @@ describe('Accordion', () => {
         malesuada lacus ex, sit amet blandit leo lobortis eget.
       </TextBlock>
     ),
-    header: 'Header',
+    header: (
+      <StyledBlock paddingInlineEnd="8px">
+        <IconFilledAccountBalance
+          overrides={{size: 'iconSize020', paddingInlineEnd: '8px'}}
+        />
+        Header
+      </StyledBlock>
+    ),
     label: 'Label',
   };
   test('renders with default props', () => {
     const fragment = renderToFragmentWithTheme(Accordion, defaultProps);
     expect(fragment).toMatchSnapshot();
   });
-  test('renders with startEnhancer', () => {
+  test('renders without startEnhancer', () => {
     const props = {
       ...defaultProps,
-      startEnhancer: (
-        <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
-      ),
+      header: 'Header',
     };
     const fragment = renderToFragmentWithTheme(Accordion, props);
     expect(fragment).toMatchSnapshot();
@@ -41,17 +50,6 @@ describe('Accordion', () => {
     const props = {
       ...defaultProps,
       expanded: true,
-      label: 'Label',
-      startEnhancer: (
-        <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
-      ),
-      indicatorIcon: (
-        <IconFilledExpandMore
-          overrides={{
-            size: 'iconSize020',
-          }}
-        />
-      ),
     };
     const fragment = renderToFragmentWithTheme(Accordion, props);
     expect(fragment).toMatchSnapshot();
@@ -60,17 +58,6 @@ describe('Accordion', () => {
     const props = {
       ...defaultProps,
       expanded: false,
-      label: 'Label',
-      startEnhancer: (
-        <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
-      ),
-      indicatorIcon: (
-        <IconFilledExpandLess
-          overrides={{
-            size: 'iconSize020',
-          }}
-        />
-      ),
     };
     const fragment = renderToFragmentWithTheme(Accordion, props);
     expect(fragment).toMatchSnapshot();
@@ -79,37 +66,22 @@ describe('Accordion', () => {
     const props = {
       ...defaultProps,
       disabled: true,
-      label: 'Label',
-      startEnhancer: (
-        <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
-      ),
-      indicatorIcon: (
-        <IconFilledExpandLess
-          overrides={{
-            size: 'iconSize020',
-          }}
-        />
-      ),
     };
     const fragment = renderToFragmentWithTheme(Accordion, props);
     expect(fragment).toMatchSnapshot();
   });
-  test('renders with no divider', () => {
+  test('renders with no label', () => {
     const props = {
       ...defaultProps,
-      expanded: true,
-      applyDivider: false,
-      label: 'Label',
-      startEnhancer: (
-        <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
-      ),
-      indicatorIcon: (
-        <IconFilledExpandLess
-          overrides={{
-            size: 'iconSize020',
-          }}
-        />
-      ),
+      label: undefined,
+    };
+    const fragment = renderToFragmentWithTheme(Accordion, props);
+    expect(fragment).toMatchSnapshot();
+  });
+  test('renders with no header', () => {
+    const props = {
+      ...defaultProps,
+      header: undefined,
     };
     const fragment = renderToFragmentWithTheme(Accordion, props);
     expect(fragment).toMatchSnapshot();
@@ -119,22 +91,24 @@ describe('Accordion', () => {
       ...defaultProps,
       headingAs: 'h4' as 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span',
       expanded: true,
-      label: 'Label',
-      startEnhancer: (
-        <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
-      ),
-      indicatorIcon: (
-        <IconFilledExpandLess
-          overrides={{
-            size: 'iconSize020',
-          }}
-        />
-      ),
     };
     const fragment = renderToFragmentWithTheme(Accordion, props);
     expect(fragment).toMatchSnapshot();
   });
-  test('renders with overrides', () => {
+  test('should invoke onClick when clicked', () => {
+    const mockOnClick = jest.fn();
+    const props = {
+      ...defaultProps,
+      onClick: mockOnClick,
+    };
+    const {getByTestId} = renderWithTheme(Accordion, props);
+
+    const headerButton = getByTestId('accordion-control');
+
+    fireEvent.click(headerButton);
+    expect(mockOnClick).toHaveBeenCalled();
+  });
+  test('renders with style overrides', () => {
     const myCustomAccordionTheme = createTheme({
       name: 'my-custom-accordion-theme',
       overrides: {
@@ -154,13 +128,6 @@ describe('Accordion', () => {
             disabled: {
               backgroundColor: 'interface010',
               color: 'black',
-            },
-          },
-          accordionDividerCustom: {
-            base: {
-              borderColor: '#f7aef8',
-              borderWidth: '{{borders.borderWidth030}}',
-              borderStyle: 'solid',
             },
           },
           accordionPanelCustom: {
@@ -187,22 +154,16 @@ describe('Accordion', () => {
             spaceInline: 'space030',
             paddingBlock: 'spaceInset040',
             paddingInline: 'spaceInset040',
-            indicatorIcon: {
-              stylePreset: 'inkPositive',
-            },
             indicatorLabel: {
-              stylePreset: 'inkPositive',
               typographyPreset: 'utilityButton020',
             },
-            startEnhancer: {
+            indicatorIcon: {
               stylePreset: 'inkPositive',
+              size: 'iconSize030',
             },
           },
           panel: {
             stylePreset: 'accordionPanelCustom',
-          },
-          divider: {
-            stylePreset: 'accordionDividerCustom',
           },
         },
       },

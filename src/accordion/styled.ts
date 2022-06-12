@@ -9,7 +9,7 @@ import {
 import {logicalProps} from '../utils/logical-properties';
 import {AccordionProps} from './types';
 
-export const StyledAccodionContainer = styled.div``;
+export const StyledAccodionContainer = styled.div<AccordionProps>``;
 
 export const StyledHeaderWrapper = styled(TextBlock)``;
 
@@ -29,17 +29,14 @@ export const StyledAccordionButton = styled.button<
       'spaceInline',
     )}
   }
-  ${getResponsiveSize('minWidth', '', 'header', 'minWidth')};
-  ${getResponsiveSize('minHeight', '', 'header', 'minHeight')};
-  ${getStylePreset('accordion.header', 'header')};
+  ${getResponsiveSize('minWidth', 'accordion.header', 'header', 'minWidth')};
+  ${getResponsiveSize('minHeight', 'accordion.header', 'header', 'minHeight')};
+  ${({disabled}) =>
+    getStylePreset('accordion.header', 'header', {
+      isDisabled: disabled,
+    })};
   ${getTypographyPreset('accordion.header', 'header')}
   ${logicalProps('accordion.header', 'header')}
-`;
-
-export const StyledEnhancer = styled.div<Pick<AccordionProps, 'overrides'>>`
-  display: flex;
-  align-self: center;
-  ${getStylePreset('accordion.header.startEnhancer', 'header.startEnhancer')};
 `;
 
 export const StyledHeader = styled.div`
@@ -50,28 +47,22 @@ export const StyledHeader = styled.div`
 export const StyledIndicatorLabel = styled.div<
   Pick<AccordionProps, 'overrides'>
 >`
-  ${getStylePreset('accordion.header.indicatorLabel', 'header.indicatorLabel')};
+  ${getTypographyPreset(
+    'accordion.header.indicatorLabel',
+    'header.indicatorLabel',
+  )}
 `;
 
-export const StyledIndicatorIcon = styled.div<
-  Pick<AccordionProps, 'overrides'>
->`
+export const StyledIconWrapper = styled.div`
   display: flex;
   align-self: center;
-  ${getStylePreset('accordion.header.indicatorIcon', 'header.indicatorIcon')};
 `;
 
-export const StyledDividerWrapper = styled.div<
-  Pick<AccordionProps, 'overrides'>
->`
-  ${getStylePreset('accordion.divider', 'divider')};
-`;
 export const StyledPanel = styled.div<Pick<AccordionProps, 'overrides'>>`
   ${getStylePreset('accordion.panel', 'panel')};
   ${logicalProps('accordion.panel', 'panel')}
 `;
 
 export const StyledPanelWrapper = styled.div<Pick<AccordionProps, 'expanded'>>`
-  visibility: ${({expanded}) => (expanded ? 'visible' : 'hidden')};
-  height: ${({expanded}) => (expanded ? 'auto' : '0px')};
+  display: ${({expanded}) => (expanded ? 'block' : 'none')};
 `;

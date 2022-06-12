@@ -1,29 +1,24 @@
 import React from 'react';
+import {NewsKitIconProps} from '../icons';
 import {MQ} from '../utils';
 import {LogicalPaddingProps} from '../utils/logical-properties';
+import {Override} from '../utils/overrides';
 
+export type AccordionIconProps = NewsKitIconProps &
+  Pick<AccordionProps, 'expanded'>;
 export interface AccordionHeaderOverrides extends LogicalPaddingProps {
   minWidth?: MQ<string>;
   minHeight?: MQ<string>;
   stylePreset?: MQ<string>;
   typographyPreset?: MQ<string>;
   spaceInline?: MQ<string>;
-  indicatorIcon?: {
-    stylePreset: MQ<string>;
-  };
   indicatorLabel?: {
-    stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
   };
-  startEnhancer?: {
-    stylePreset?: MQ<string>;
-  };
+  indicatorIcon?: Override<AccordionIconProps>;
 }
 
 export type AccordionPropsOverrides = {
-  divider?: {
-    stylePreset?: MQ<string>;
-  };
   header?: AccordionHeaderOverrides;
   panel?: {
     stylePreset?: MQ<string>;
@@ -36,11 +31,9 @@ export interface AccordionProps {
   header?: Exclude<React.ReactNode, 'undefined'>;
   headingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
   label?: string;
-  startEnhancer?: React.ReactNode;
-  indicatorIcon?: React.ReactNode;
   ariaControls?: string;
   id?: string;
   expanded?: boolean;
-  applyDivider?: boolean;
+  onClick?: () => void;
   overrides?: AccordionPropsOverrides;
 }

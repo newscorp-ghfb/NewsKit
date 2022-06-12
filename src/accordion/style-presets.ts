@@ -19,13 +19,6 @@ export default {
       color: '{{colors.inkNonEssential}}',
     },
   },
-  accordionDivider: {
-    base: {
-      borderColor: '{{colors.interface050}}',
-      borderWidth: '{{borders.borderWidth010}}',
-      borderStyle: 'solid',
-    },
-  },
   accordionPanel: {
     base: {
       borderStyle: 'none none solid none',

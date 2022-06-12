@@ -1091,23 +1091,13 @@ Object {
 exports[`NewsKit Light theme combine all component defaults 1`] = `
 Object {
   "accordion": Object {
-    "divider": Object {
-      "stylePreset": "accordionDivider",
-    },
     "header": Object {
-      "indicatorIcon": Object {
-        "stylePreset": "inkBase",
-      },
       "indicatorLabel": Object {
-        "stylePreset": "inkBase",
         "typographyPreset": "utilityButton030",
       },
       "paddingBlock": "spaceInset030",
       "paddingInline": "spaceInset030",
       "spaceInline": "space020",
-      "startEnhancer": Object {
-        "stylePreset": "inkBase",
-      },
       "stylePreset": "accordionHeader",
       "typographyPreset": "utilityButton030",
     },
@@ -2769,13 +2759,6 @@ Object {
 
 exports[`NewsKit Light theme combine all style presets 1`] = `
 Object {
-  "accordionDivider": Object {
-    "base": Object {
-      "borderColor": "{{colors.interface050}}",
-      "borderStyle": "solid",
-      "borderWidth": "{{borders.borderWidth010}}",
-    },
-  },
   "accordionHeader": Object {
     "base": Object {
       "backgroundColor": "{{colors.interface010}}",
