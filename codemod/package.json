@@ -9,22 +9,8 @@
   ],
   "license": "MIT",
   "main": "src/cli.js",
-  "scripts": {
-    "test:unit:run:local": "yarn test:unit:run --maxWorkers=4",
-    "test:unit:run": "node --expose-gc ./node_modules/.bin/jest --forceExit --logHeapUsage --coverage --coverageReporters=lcov --coverageReporters=text",
-    "test:unit:watch": "yarn test:unit:run:local --watch",
-    "test:unit:dev": "yarn test:unit:run:local",
-    "test:unit:ci": "yarn test:unit:run --maxWorkers=2 --ci --reporters=default --reporters=jest-junit",
-    "lint:code:base": "eslint --report-unused-disable-directives --ext=.js,.ts,.jsx,.tsx --cache",
-    "lint:code": "yarn lint:code:base .",
-    "lint:code:fix": "yarn lint:code --fix"
-  },
+  "scripts": {},
   "author": "",
-  "devDependencies": {
-    "jest": "^28.1.1",
-    "jest-junit": "^13.2.0",
-    "eslint": "^8.17.0"
-  },
   "dependencies": {
     "chalk": "4.1.2",
     "glob": "^8.0.3",

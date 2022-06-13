@@ -916,7 +916,7 @@ jobs:
             - yarn-build-v1-codemod-
       - run:
           name: Dependencies Install
-          command: cd codemod && make install
+          command: make install_codemod
       - save_cache:
           key: yarn-build-v1-codemod-{{ checksum "yarn.lock" }}
           paths:
@@ -935,9 +935,6 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run:
-          name: Change Dir
-          command: cd codemod
-      - run:
           name: Unit Testing Codemod
           command: make unit_test_codemod
           environment:
@@ -946,21 +943,6 @@ jobs:
           path: ./reports/junit/
       - store_artifacts:
           path: ./reports/junit
-      - slack/status:
-          <<: *slack_status
-
-  lint_codemod:
-    executor: node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Change Dir
-          command: cd codemod
-      - run:
-          name: Lint
-          command: make lint
       - slack/status:
           <<: *slack_status
 
@@ -1162,13 +1144,9 @@ workflows:
       - test_unit_codemod:
           requires:
             - install_codemod_deps
-      - lint_codemod:
-          requires:
-            - install_codemod_deps
       - approve_publish_npm_codemod_pr:
           type: approval
           requires:
-            - lint_codemod
             - test_unit_codemod
       - publish_codemod_npm:
           name: publish_npm_codemod_pr
