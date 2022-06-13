@@ -1040,9 +1040,6 @@ workflows:
       - test_unit_docs:
           requires:
             - build_icons
-      - test_unit_codemod:
-          requires:
-            - build_icons
       - test_newskit_in_nextjs_app:
           requires:
             - build_components
