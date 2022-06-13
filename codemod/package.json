@@ -17,11 +17,13 @@
     "test:unit:ci": "yarn test:unit:run --maxWorkers=2 --ci --reporters=default --reporters=jest-junit"
   },
   "author": "",
+  "devDependencies": {
+    "jest": "^28.1.1",
+    "jest-junit": "^13.2.0"
+  },
   "dependencies": {
     "chalk": "4.1.2",
     "glob": "^8.0.3",
-    "jest": "^28.1.1",
-    "jest-junit": "^13.2.0",
     "jscodeshift": "^0.13.1",
     "yargs": "^17.5.1"
   },

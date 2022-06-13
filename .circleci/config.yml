@@ -935,6 +935,9 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run:
+          name: LS
+          command: ls
+      - run:
           name: Unit Testing Codemod
           command: make unit_test_codemod
           environment:
@@ -952,6 +955,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
+      - run:
+          name: LS
+          command: ls
       - run:
           name: Lint
           command: make lint
