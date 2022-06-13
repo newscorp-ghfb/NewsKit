@@ -2734,11 +2734,11 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
               <section
                 class="emotion-8"
               >
-                <h1
+                <h3
                   class="nk-headline-heading emotion-9"
                 >
                   Interactive Horizontal Card
-                </h1>
+                </h3>
               </section>
             </div>
             <div
@@ -3059,11 +3059,11 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
               <section
                 class="emotion-8"
               >
-                <h1
+                <h3
                   class="nk-headline-heading emotion-9"
                 >
                   Interactive Horizontal Card
-                </h1>
+                </h3>
               </section>
             </div>
             <div
@@ -3893,11 +3893,11 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
           <section
             class="emotion-6"
           >
-            <h1
+            <h3
               class="nk-headline-heading emotion-7"
             >
               Interactive Horizontal Card
-            </h1>
+            </h3>
           </section>
         </div>
         <div
@@ -4777,11 +4777,11 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
           <section
             class="emotion-6"
           >
-            <h1
+            <h3
               class="nk-headline-heading emotion-7"
             >
               Interactive Horizontal Card
-            </h1>
+            </h3>
           </section>
         </div>
         <div
