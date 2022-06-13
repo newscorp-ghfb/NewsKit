@@ -906,7 +906,7 @@ jobs:
       - slack/status:
           <<: *slack_status
 
-  install_deps_codemod:
+  install_codemod_deps:
     executor: node
     steps:
       - checkout
