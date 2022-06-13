@@ -66,8 +66,11 @@ const ThemelessDrawer: React.FC<DrawerProps> = ({
             `${drawerPath}.panel.${placement}`,
             '',
           )({theme, overrides})}
+          className="nk-drawer-enter-done"
           classNames="nk-drawer"
           appear
+          mountOnEnter
+          //  unmountOnExit
         >
           <StyledDrawer
             aria-hidden={!open}

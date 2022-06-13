@@ -64,6 +64,7 @@ const ThemelessModal: React.FC<ModalProps> = ({
               `modal.panel`,
               '',
             )({theme, overrides})}
+            className="nk-modal-enter-done"
             classNames="nk-modal"
             mountOnEnter
             unmountOnExit
