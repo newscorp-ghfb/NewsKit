@@ -933,10 +933,10 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: ~/project/codemod
+          at: ~/project
       - run:
-          name: LS
-          command: ls
+          name: Change Dir
+          command: cd codemod
       - run:
           name: Unit Testing Codemod
           command: make unit_test_codemod
@@ -954,13 +954,13 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: ~/project/codemod
+          at: ~/project
       - run:
           name: LS
           command: ls
       - run:
-          name: Lint
-          command: make lint
+          name: Change Dir
+          command: cd codemod
       - slack/status:
           <<: *slack_status
 
