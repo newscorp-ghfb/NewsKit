@@ -922,9 +922,10 @@ jobs:
           paths:
             - ~/.cache
       - persist_to_workspace:
-          root: ./codemod/
+          root: ./
           paths:
-            - ./node_modules/*
+            - node_modules/*
+            - codemod/node_modules/*
       - slack/status:
           <<: *slack_status
 
@@ -973,7 +974,8 @@ jobs:
           steps:
             - run:
                 name: Publish codemod to NPM
-                command: make publish_codemod_npm
+                #command: make publish_codemod_npm
+                command: echo "publish to NPM prod"
       - slack/status:
           <<: *slack_status
 
