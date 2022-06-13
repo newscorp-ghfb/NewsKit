@@ -83,7 +83,7 @@ const Outline = (layoutProps: LayoutProps) => (
           id="outline-color"
           toc="Outline Colour"
           headline="Outline Colour"
-          description="Applying a Outline Colour to an element defines the colour of the element's outline. Outline colour utilises Interface and Interactive colour tokens."
+          description="Applying an Outline Colour to an element defines the colour of the element's outline. Outline colour utilises Interface and Interactive colour tokens."
         />
         <ExampleSection section="outlineColor" showSeparator />
       </ContentSection>
@@ -93,7 +93,7 @@ const Outline = (layoutProps: LayoutProps) => (
           id="outline-style"
           toc="Outline Style"
           headline="Outline Style"
-          description="Applying a Outline Style to an element defines the style of the element’s outline. Outline Style utilises the standard CSS outline Style values."
+          description="Applying an Outline Style to an element defines the style of the element’s outline. Outline Style utilises the standard CSS outline Style values."
         >
           <Table
             columns={['Outline Style', 'Token', 'Token value']}
@@ -105,10 +105,10 @@ const Outline = (layoutProps: LayoutProps) => (
 
         <ContentSecondary childrenColSpan={ContentColSpan.TEXT} showSeparator>
           <InlineMessage title="Note" aria-label="safari warning one">
-            Safari&apos;s implemetation of outline CSS is signifacatly different
-            to other main browsers. The solid style with not have rounded
-            corners, while using auto will without control over its colour. See
-            Safari Outline Style.
+            Safari&apos;s implementation of outline CSS is significantly
+            different to other main browsers. The solid style will not have
+            rounded corners, and using auto will not allow control over its
+            colour. See Safari Outline Style.
           </InlineMessage>
         </ContentSecondary>
       </ContentSection>
@@ -118,7 +118,7 @@ const Outline = (layoutProps: LayoutProps) => (
           id="outline-width"
           toc="Outline Width"
           headline="Outline Width"
-          description="Applying a Outline Width to an element defines the width of the element’s outline. NewsKit uses a simple set of design token to ensure consistency throughout the UI."
+          description="Applying an Outline Width to an element defines the width of the element’s outline. NewsKit uses a simple set of design token to ensure consistency throughout the UI."
         >
           <Table
             columns={['Outline Width', 'Token', 'Token value']}
@@ -144,7 +144,7 @@ const Outline = (layoutProps: LayoutProps) => (
           id="outline-offset"
           toc="Outline Offset"
           headline="Outline Offset"
-          description="Applying a Outline Offset to an element defines the offset of the element’s outline. NewsKit uses a simple set of design token to ensure consistency throughout the UI."
+          description="Applying an Outline Offset to an element defines the offset of the element’s outline. NewsKit uses a simple set of design tokens to ensure consistency throughout the UI."
         >
           <Table
             columns={['Outline Offset', 'Token', 'Token value']}
@@ -165,9 +165,9 @@ const Outline = (layoutProps: LayoutProps) => (
 
         <ContentSecondary childrenColSpan={ContentColSpan.TEXT} showSeparator>
           <InlineMessage title="Note" aria-label="safari warning two">
-            Safari&apos;s implemetation of outline CSS is signifacatly different
-            to other main browsers. You may find your offset is not the same on
-            Safari. See Safari Outline Style.
+            Safari&apos;s implementation of outline CSS is significantly
+            different to other main browsers. You may find your offset is not
+            the same on Safari. See Safari Outline Style.
           </InlineMessage>
         </ContentSecondary>
       </ContentSection>
