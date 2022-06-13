@@ -38,6 +38,7 @@ export type SiteMenuItemProps = {
     description?: string;
     page?: boolean;
     subNav?: NavProps[];
+    indexPage?: boolean;
   }>;
 };
 
@@ -45,6 +46,5 @@ export interface PageLinkProps {
   page?: PageType;
   href: string;
   active: boolean;
-
   children: React.ReactNode;
 }
