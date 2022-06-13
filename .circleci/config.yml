@@ -915,7 +915,7 @@ jobs:
             - yarn-build-v1-codemod-{{ checksum "yarn.lock" }}
             - yarn-build-v1-codemod-
       - run:
-          name: Dependencies Install
+          name: Codemode Dependencies Install
           command: make install_codemod
       - save_cache:
           key: yarn-build-v1-codemod-{{ checksum "yarn.lock" }}
@@ -1142,7 +1142,10 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_to_s3
-      - install_codemod_deps
+
+      - install_codemod_deps:
+          requires:
+            - install_deps
       - test_unit_codemod:
           requires:
             - install_codemod_deps
