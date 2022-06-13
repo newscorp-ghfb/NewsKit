@@ -924,7 +924,7 @@ jobs:
       - persist_to_workspace:
           root: ./codemod/
           paths:
-            - /node_modules/*
+            - ./node_modules/*
       - slack/status:
           <<: *slack_status
 
