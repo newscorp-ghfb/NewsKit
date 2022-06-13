@@ -1155,7 +1155,6 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_to_s3
-
       - install_codemod_deps
       - test_unit_codemod:
           requires:
@@ -1167,13 +1166,13 @@ workflows:
           type: approval
           requires:
             - lint_codemod
-            - test_unit_codemod     
+            - test_unit_codemod
       - publish_codemod_npm:
           name: publish_npm_codemod_pr
-            context: ncu-product-platforms-context
-            publish_dev: true
-            requires:
-              - approve_publish_npm_codemod_pr
+          context: ncu-product-platforms-context
+          publish_dev: true
+          requires:
+            - approve_publish_npm_codemod_pr
 
   main:
     when:
