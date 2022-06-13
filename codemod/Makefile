@@ -11,7 +11,7 @@ unit_test_codemod:
 	yarn test:unit:ci
 
 lint:
-	echo 1;
+	yarn lint:code
 
 # publish_codemod_npm:
 # 	yarn build:sync-codemod-version; yarn publish --no-git-tag-version --access public;

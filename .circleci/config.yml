@@ -956,11 +956,11 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run:
-          name: LS
-          command: ls
-      - run:
           name: Change Dir
           command: cd codemod
+      - run:
+          name: Lint
+          command: make lint
       - slack/status:
           <<: *slack_status
 
