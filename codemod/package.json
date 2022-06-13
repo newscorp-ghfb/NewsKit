@@ -9,11 +9,18 @@
   ],
   "license": "MIT",
   "main": "src/cli.js",
-  "scripts": {},
+  "scripts": {
+    "test:unit:run:local": "yarn test:unit:run --maxWorkers=4",
+    "test:unit:run": "node --expose-gc ./node_modules/.bin/jest --forceExit --logHeapUsage --coverage --coverageReporters=lcov --coverageReporters=text",
+    "test:unit:watch": "yarn test:unit:run:local --watch",
+    "test:unit:dev": "yarn test:unit:run:local",
+    "test:unit:ci": "yarn test:unit:run --maxWorkers=2 --ci --reporters=default --reporters=jest-junit"
+  },
   "author": "",
   "dependencies": {
     "chalk": "4.1.2",
     "glob": "^8.0.3",
+    "jest": "^28.1.1",
     "jscodeshift": "^0.13.1",
     "yargs": "^17.5.1"
   },

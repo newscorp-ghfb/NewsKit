@@ -8,10 +8,10 @@ install:
 	yarn install --frozen-lockfile
 
 unit_test_codemod:
-	yarn test:unit:ci --projects=codemod
+	yarn test:unit:ci
 
 lint:
-	yarn lint
+	echo 1;
 
 # publish_codemod_npm:
 # 	yarn build:sync-codemod-version; cd codemod; yarn publish --no-git-tag-version --access public;
