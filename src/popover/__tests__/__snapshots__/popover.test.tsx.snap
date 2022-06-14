@@ -1,144 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Popover offset should be applied with pointer and mq distance override 1`] = `
-<DocumentFragment>
-  <button
-    aria-controls="MOCK-ID"
-    aria-haspopup="dialog"
-    type="submit"
-  >
-    Add
-  </button>
-  .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  border-radius: 8px;
-  pointer-events: none;
-  z-index: 80;
-}
-
-@media screen {
-  .emotion-0 {
-    position: absolute;
-    left: 0px;
-    top: calc(0px + (32px * -1));
-  }
-}
-
-.emotion-1 {
-  margin: 0;
-  color: #2E2E2E;
-  border-radius: 8px;
-  background-color: #FFFFFF;
-  font-family: "Poppins",sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding-inline: 16px;
-  padding-block: 16px;
-}
-
-.emotion-2 {
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  box-sizing: border-box;
-  background-color: #FFFFFF;
-  width: 16px;
-  height: 16px;
-  left: 0px;
-  bottom: calc(-16px / 2);
-}
-
-<div
-    aria-expanded="true"
-    class="emotion-0"
-    id="MOCK-ID"
-    role="dialog"
-    tabindex="-1"
-  >
-    <p
-      class="emotion-1"
-    >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="MOCK-ID-pointer"
-    />
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Popover offset should be applied with pointer and non-px distance override 1`] = `
-<DocumentFragment>
-  <button
-    aria-controls="MOCK-ID"
-    aria-haspopup="dialog"
-    type="submit"
-  >
-    Add
-  </button>
-  .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  border-radius: 8px;
-  pointer-events: none;
-  z-index: 80;
-  position: absolute;
-  left: 0px;
-  top: calc(0px + (1rem * -1));
-}
-
-.emotion-1 {
-  margin: 0;
-  color: #2E2E2E;
-  border-radius: 8px;
-  background-color: #FFFFFF;
-  font-family: "Poppins",sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding-inline: 16px;
-  padding-block: 16px;
-}
-
-.emotion-2 {
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  box-sizing: border-box;
-  background-color: #FFFFFF;
-  width: 16px;
-  height: 16px;
-  left: 0px;
-  bottom: calc(-16px / 2);
-}
-
-<div
-    aria-expanded="true"
-    class="emotion-0"
-    id="MOCK-ID"
-    role="dialog"
-    tabindex="-1"
-  >
-    <p
-      class="emotion-1"
-    >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="MOCK-ID-pointer"
-    />
-  </div>
-</DocumentFragment>
-`;
-
 exports[`Popover offset should be applied with pointer and px distance override 1`] = `
 <DocumentFragment>
   <button
@@ -155,7 +16,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: calc(0px + (10px * -1));
+  top: -10px;
 }
 
 .emotion-1 {
@@ -222,7 +83,141 @@ exports[`Popover offset should be applied with pointer and token distance overri
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: calc(0px + (16px * -1));
+  top: -16px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #2E2E2E;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 16px;
+  padding-block: 16px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  bottom: calc(-16px / 2);
+}
+
+<div
+    aria-expanded="true"
+    class="emotion-0"
+    id="MOCK-ID"
+    role="dialog"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="MOCK-ID-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Popover offset should not be applied with pointer and invalid token distance override 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #2E2E2E;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 16px;
+  padding-block: 16px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  bottom: calc(-16px / 2);
+}
+
+<div
+    aria-expanded="true"
+    class="emotion-0"
+    id="MOCK-ID"
+    role="dialog"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="MOCK-ID-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Popover offset should not be applied with pointer and non-px distance override 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 .emotion-1 {
@@ -438,7 +433,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: calc(0px + (24px * -1));
+  top: -24px;
 }
 
 .emotion-1 {
@@ -505,7 +500,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: calc(0px + (24px * -1));
+  top: -24px;
 }
 
 .emotion-1 {
@@ -572,7 +567,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: calc(0px + (24px * -1));
+  top: -24px;
 }
 
 .emotion-1 {
@@ -638,7 +633,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   pointer-events: none;
   z-index: 80;
   position: absolute;
-  left: calc(0px + (24px * 1));
+  left: 24px;
   top: 0px;
 }
 

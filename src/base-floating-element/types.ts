@@ -1,5 +1,6 @@
 import React, {AriaAttributes, AriaRole} from 'react';
 import {
+  Boundary,
   FloatingContext,
   Placement,
   useId,
@@ -32,7 +33,7 @@ export interface FloatingElementProps
     zIndex?: number;
     maxWidth?: MQ<string>;
     minWidth?: MQ<string>;
-    distance?: MQ<string>;
+    distance?: string;
     stylePreset?: MQ<string>;
     panel?: {
       stylePreset?: MQ<string>;
@@ -46,7 +47,7 @@ export interface FloatingElementProps
   className?: string;
   onDismiss?: () => void;
   fallbackBehaviour?: FallbackBehaviourType | FallbackBehaviourType[];
-  boundary?: 'viewport' | 'window' | 'scrollParent' | Element;
+  boundary?: Boundary;
   hidePointer?: boolean;
   // popover props
   restoreFocusTo?: HTMLElement;

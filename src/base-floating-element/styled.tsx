@@ -9,7 +9,6 @@ import {
 } from '../utils/style';
 import {logicalProps} from '../utils/logical-properties';
 import {TextBlock} from '../text-block';
-import {calculateInset} from './utils';
 
 export const StyledFloatingElement = styled.div<
   {
@@ -25,20 +24,11 @@ export const StyledFloatingElement = styled.div<
   ${({path}) => getResponsiveSpace('zIndex', path, '', 'zIndex')};
   ${({path}) => getResponsiveSize('maxWidth', path, '', 'maxWidth')};
   ${({path}) => getResponsiveSize('minWidth', path, '', 'minWidth')};
-  ${({$x, $y, strategy, placement, hidePointer, path}) =>
-    getResponsiveSpace(
-      distance => {
-        const offset = !hidePointer ? distance : undefined;
-        return {
-          position: strategy,
-          left: calculateInset($x, 'left', offset, placement),
-          top: calculateInset($y, 'top', offset, placement),
-        };
-      },
-      path,
-      'distance',
-      'distance',
-    )}
+  ${({$x, $y, strategy}) => ({
+    position: strategy,
+    left: $x != null ? `${$x}px` : '',
+    top: $y != null ? `${$y}px` : '',
+  })}
 `;
 
 export const StyledPanel = styled(TextBlock)<

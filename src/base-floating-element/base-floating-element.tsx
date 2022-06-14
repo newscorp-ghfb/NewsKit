@@ -5,11 +5,43 @@ import {
   autoUpdate,
   useFloating,
   useId,
+  offset,
 } from '@floating-ui/react-dom-interactions';
 import composeRefs from '@seznam/compose-react-refs';
 import {BaseFloatingElementProps} from './types';
 import {StyledFloatingElement, StyledPanel, StyledPointer} from './styled';
 import {useControlled} from '../utils/hooks';
+import {useTheme} from '../theme';
+import {getResponsiveSpace, ThemeProp} from '../utils';
+
+const parseOffset = (offsetPx: string): number | null => {
+  if (!offsetPx.includes('px')) {
+    return null;
+  }
+  return parseInt(offsetPx.replace('px', ''), 10);
+};
+
+const getOffsetPx = (
+  path: string,
+  props: ThemeProp & {overrides?: unknown},
+): string | null => {
+  // Value returned by getResponsiveSpace depends on default / override string:
+  // 1. String is valid token --> {gap: $PARSED_TOKEN_VALUE}
+  // 2. String is not a valid token but contains valid CSSUnits --> {gap: $RAW_VALUE}
+  // 3. String is not a valid token and does not contain valid CSSUnits --> ''
+  const distance = getResponsiveSpace(
+    'gap',
+    path,
+    'distance',
+    'distance',
+  )(props);
+
+  if (typeof distance === 'string') {
+    return null;
+  }
+  const {gap} = distance as {gap: string};
+  return gap;
+};
 
 export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   children,
@@ -33,6 +65,24 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     defaultValue: Boolean(defaultOpen),
   });
 
+  const theme = useTheme();
+  const offsetPx = getOffsetPx(path, {theme, overrides});
+  const offsetVal = offsetPx ? parseOffset(offsetPx) : null;
+
+  useEffect(() => {
+    if (!offsetPx) {
+      // eslint-disable-next-line no-console
+      console.warn(
+        "Invalid Tooltip component override: please make sure 'distance' is a valid token.",
+      );
+    } else if (!offsetVal) {
+      // eslint-disable-next-line no-console
+      console.warn(
+        "Invalid Tooltip component override: please make sure 'distance' is a px value.",
+      );
+    }
+  }, [offsetPx, offsetVal]);
+
   const pointerRef = useRef(null);
   const {
     x,
@@ -48,7 +98,14 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     open,
     onOpenChange: setOpen,
     whileElementsMounted: autoUpdate,
-    middleware: !hidePointer ? [arrow({element: pointerRef})] : [],
+    middleware: [
+      ...(!hidePointer
+        ? [
+            arrow({element: pointerRef}),
+            ...(offsetVal ? [offset(offsetVal)] : []),
+          ]
+        : []),
+    ],
   });
 
   const id = useId();
