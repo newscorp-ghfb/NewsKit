@@ -1,4 +1,3 @@
-import {TextBlock} from '../text-block';
 import {
   getResponsiveSize,
   getResponsiveSpace,
@@ -8,10 +7,6 @@ import {
 } from '../utils';
 import {logicalProps} from '../utils/logical-properties';
 import {AccordionProps} from './types';
-
-export const StyledAccodionContainer = styled.div<AccordionProps>``;
-
-export const StyledHeaderWrapper = styled(TextBlock)``;
 
 export const StyledAccordionButton = styled.button<
   Pick<AccordionProps, 'overrides' | 'disabled'>
