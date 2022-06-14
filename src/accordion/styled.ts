@@ -15,7 +15,7 @@ export const StyledAccordionButton = styled.button<
   box-sizing: border-box;
   align-items: center;
   width: 100%;
-  cursor: ${({disabled}) => (disabled ? 'not-allowed' : 'default')};
+  cursor: ${({disabled}) => (disabled ? 'not-allowed' : 'pointer')};
   & > :not(:last-of-type) {
     ${getResponsiveSpace(
       'marginRight',

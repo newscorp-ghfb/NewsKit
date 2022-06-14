@@ -43,7 +43,7 @@ describe('Accordion', () => {
     const fragment = renderToFragmentWithTheme(Accordion, defaultProps);
     expect(fragment).toMatchSnapshot();
   });
-  test('renders without startEnhancer', () => {
+  test('renders without leading icon', () => {
     const props = {
       ...defaultProps,
       header: 'Header',
@@ -113,6 +113,15 @@ describe('Accordion', () => {
     fireEvent.click(headerButton);
     expect(mockOnClick).toHaveBeenCalled();
   });
+  test('should render with custom ariaControls and id', () => {
+    const props = {
+      ...defaultProps,
+      ariaControls: 'nk-custom-ariaControl',
+      id: 'nk-custom-id',
+    };
+    const fragment = renderToFragmentWithTheme(Accordion, props);
+    expect(fragment).toMatchSnapshot();
+  });
   test('renders with style overrides', () => {
     const myCustomAccordionTheme = createTheme({
       name: 'my-custom-accordion-theme',
@@ -177,7 +186,7 @@ describe('Accordion', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
-  test('renders with indicatorIcon componet overrides', () => {
+  test('renders with indicatorIcon component overrides', () => {
     const CustomIndicator = ({expanded}: AccordionIconProps) =>
       expanded ? (
         <IconFilledStarOutline overrides={{size: 'iconSize020'}} />

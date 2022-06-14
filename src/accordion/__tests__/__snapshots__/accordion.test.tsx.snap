@@ -17,7 +17,7 @@ exports[`Accordion renders as a h4 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  cursor: default;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #2E2E2E;
   border-style: none none solid none;
@@ -277,7 +277,7 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  cursor: default;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #2E2E2E;
   border-style: none none solid none;
@@ -537,7 +537,7 @@ exports[`Accordion renders with default props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  cursor: default;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #2E2E2E;
   border-style: none none solid none;
@@ -1046,7 +1046,7 @@ exports[`Accordion renders with expanded state and icon 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  cursor: default;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #2E2E2E;
   border-style: none none solid none;
@@ -1289,7 +1289,7 @@ exports[`Accordion renders with expanded state and icon 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Accordion renders with indicatorIcon componet overrides 1`] = `
+exports[`Accordion renders with indicatorIcon component overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
@@ -1306,7 +1306,7 @@ exports[`Accordion renders with indicatorIcon componet overrides 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  cursor: default;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #2E2E2E;
   border-style: none none solid none;
@@ -1562,7 +1562,7 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  cursor: default;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #2E2E2E;
   border-style: none none solid none;
@@ -1841,7 +1841,7 @@ exports[`Accordion renders with no header 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  cursor: default;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #2E2E2E;
   border-style: none none solid none;
@@ -2008,7 +2008,7 @@ exports[`Accordion renders with no label 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  cursor: default;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #2E2E2E;
   border-style: none none solid none;
@@ -2254,7 +2254,7 @@ exports[`Accordion renders with style overrides 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  cursor: default;
+  cursor: pointer;
   min-width: 24px;
   min-height: 32px;
   background-color: #90e0ef;
@@ -2518,7 +2518,7 @@ exports[`Accordion renders with style overrides 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Accordion renders without startEnhancer 1`] = `
+exports[`Accordion renders without leading icon 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
@@ -2535,7 +2535,7 @@ exports[`Accordion renders without startEnhancer 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  cursor: default;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #2E2E2E;
   border-style: none none solid none;
@@ -2675,6 +2675,265 @@ exports[`Accordion renders without startEnhancer 1`] = `
       class="emotion-7"
       data-testid="accordion-content"
       id="mock-nk-1-content"
+      role="region"
+    >
+      <p
+        class="emotion-0"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Accordion should render with custom ariaControls and id 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #2E2E2E;
+  border-style: none none solid none;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 12px;
+  padding-block: 12px;
+}
+
+.emotion-1>:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #FAFAFA;
+  color: #3358CC;
+}
+
+.emotion-1:disabled {
+  background-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-2 {
+  text-align: start;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-3 {
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-4.emotion-4 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6 {
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-8 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-8.emotion-8 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-10 {
+  display: none;
+  border-style: none none solid none;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  padding-inline: 12px;
+  padding-block: 12px;
+}
+
+<div>
+    <h3
+      class="emotion-0"
+    >
+      <button
+        aria-controls="nk-custom-ariaControl"
+        class="emotion-1"
+        data-testid="accordion-control"
+        id="nk-custom-id"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-3"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-4 emotion-5"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="24"
+                width="24"
+              />
+              <rect
+                height="7"
+                width="3"
+                x="4"
+                y="10"
+              />
+              <rect
+                height="7"
+                width="3"
+                x="10.5"
+                y="10"
+              />
+              <rect
+                height="3"
+                width="20"
+                x="2"
+                y="19"
+              />
+              <rect
+                height="7"
+                width="3"
+                x="17"
+                y="10"
+              />
+              <polygon
+                points="12,1 2,6 2,8 22,8 22,6"
+              />
+            </svg>
+            Header
+          </div>
+        </div>
+        <div
+          class="emotion-6"
+        >
+          Label
+        </div>
+        <div
+          class="emotion-7"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-8 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+          </svg>
+        </div>
+      </button>
+    </h3>
+    <div
+      aria-labelledby="nk-custom-id"
+      class="emotion-10"
+      data-testid="accordion-content"
+      id="nk-custom-ariaControl"
       role="region"
     >
       <p

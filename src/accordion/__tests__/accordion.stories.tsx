@@ -3,6 +3,7 @@ import {StorybookSubHeading} from '../../test/storybook-comps';
 import {Accordion} from '../accordion';
 import {Block} from '../../block';
 import {TextBlock} from '../../text-block';
+import {Image} from '../../image';
 import {
   IconFilledAccountBalance,
   IconFilledCancel,
@@ -80,36 +81,12 @@ export const StoryAccordion = () => {
   const [expanded, toggleExpanded] = React.useState(false);
   return (
     <>
-      <StorybookSubHeading>Expanded</StorybookSubHeading>
+      <StorybookSubHeading>Expanded/Collapsed</StorybookSubHeading>
       <Spacer>
         <Accordion
-          header={
-            <StyledBlock>
-              <IconFilledAccountBalance
-                overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-              />
-              Accordion 1
-            </StyledBlock>
-          }
-          label="Label"
-          expanded
-        >
-          {content}
-        </Accordion>
-      </Spacer>
-      <StorybookSubHeading>Collapsed</StorybookSubHeading>
-      <Spacer>
-        <Accordion
-          header={
-            <StyledBlock>
-              <IconFilledAccountBalance
-                overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-              />
-              Accordion 2
-            </StyledBlock>
-          }
-          label="Label"
-          expanded={false}
+          header="Header 1"
+          expanded={expanded}
+          onClick={() => toggleExpanded(!expanded)}
         >
           {content}
         </Accordion>
@@ -117,21 +94,9 @@ export const StoryAccordion = () => {
       <StorybookSubHeading>Disabled</StorybookSubHeading>
       <Spacer>
         <Accordion
-          header={
-            <StyledBlock>
-              <IconFilledAccountBalance
-                overrides={{
-                  size: 'iconSize020',
-                  marginInlineEnd: '8px',
-                  stylePreset: 'inkNonEssential',
-                }}
-              />
-              Accordion 3
-            </StyledBlock>
-          }
+          header="Header 2"
           disabled
           expanded={false}
-          label="Label"
           overrides={{
             header: {
               indicatorIcon: {
@@ -143,7 +108,7 @@ export const StoryAccordion = () => {
           {content}
         </Accordion>
       </Spacer>
-      <StorybookSubHeading>onClick event</StorybookSubHeading>
+      <StorybookSubHeading>With leading icon</StorybookSubHeading>
       <Spacer>
         <Accordion
           header={
@@ -151,13 +116,43 @@ export const StoryAccordion = () => {
               <IconFilledAccountBalance
                 overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
               />
-              Accordion 4
+              Header 3
             </StyledBlock>
           }
-          label="Label"
-          expanded={expanded}
-          onClick={() => toggleExpanded(!expanded)}
         >
+          {content}
+        </Accordion>
+      </Spacer>
+      <StorybookSubHeading>With leading image</StorybookSubHeading>
+      <Spacer>
+        <Accordion
+          header={
+            <StyledBlock>
+              <Image
+                src="/placeholder-3x2.png"
+                alt="Example Image"
+                overrides={{
+                  height: '30px',
+                  width: '30px',
+                  marginInlineEnd: '8px',
+                }}
+              />
+              Header 3
+            </StyledBlock>
+          }
+        >
+          {content}
+        </Accordion>
+      </Spacer>
+      <StorybookSubHeading>With show label</StorybookSubHeading>
+      <Spacer>
+        <Accordion header="Header 4" label="Show">
+          {content}
+        </Accordion>
+      </Spacer>
+      <StorybookSubHeading>With hide label</StorybookSubHeading>
+      <Spacer>
+        <Accordion header="Header 5" label="Hide" expanded>
           {content}
         </Accordion>
       </Spacer>
@@ -165,44 +160,6 @@ export const StoryAccordion = () => {
   );
 };
 StoryAccordion.storyName = 'accordion';
-
-export const StoryAccordionVariants = () => (
-  <>
-    <StorybookSubHeading>Without StartEnhancer</StorybookSubHeading>
-    <Spacer>
-      <Accordion
-        header={<StyledBlock>Accordion 5</StyledBlock>}
-        expanded
-        label="Label"
-      >
-        {content}
-      </Accordion>
-    </Spacer>
-    <StorybookSubHeading>Without Label</StorybookSubHeading>
-    <Spacer>
-      <Accordion
-        header={
-          <StyledBlock>
-            <IconFilledAccountBalance
-              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-            />
-            Accordion 6
-          </StyledBlock>
-        }
-        expanded
-      >
-        {content}
-      </Accordion>
-    </Spacer>
-    <StorybookSubHeading>Without Header</StorybookSubHeading>
-    <Spacer>
-      <Accordion label="Label" expanded>
-        {content}
-      </Accordion>
-    </Spacer>
-  </>
-);
-StoryAccordionVariants.storyName = 'accordion-variants';
 
 export const StoryAccordionOverrides = () => (
   <>
@@ -215,10 +172,10 @@ export const StoryAccordionOverrides = () => (
               <IconFilledAccountBalance
                 overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
               />
-              Accordion 8
+              Header 6
             </StyledBlock>
           }
-          label="Label"
+          label="Hide"
           expanded
           overrides={{
             header: {
@@ -249,11 +206,10 @@ export const StoryAccordionOverrides = () => (
               <IconFilledAccountBalance
                 overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
               />
-              Accordion 9
+              Header 7
             </StyledBlock>
           }
-          label="Label"
-          expanded
+          label="Show"
           overrides={{
             header: {
               indicatorIcon: {
@@ -278,10 +234,10 @@ export const StoryAccordionOverrides = () => (
               <IconFilledAccountBalance
                 overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
               />
-              Accordion 10
+              Header 8
             </StyledBlock>
           }
-          label="Label"
+          label="Show"
           overrides={{
             header: {
               indicatorIcon: {
@@ -304,10 +260,10 @@ export const StoryAccordionOverrides = () => (
               <IconFilledAccountBalance
                 overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
               />
-              Accordion 11
+              Header 9
             </StyledBlock>
           }
-          label="Label"
+          label="Hide"
           expanded
           overrides={{
             header: {
@@ -317,18 +273,16 @@ export const StoryAccordionOverrides = () => (
         >
           {content}
         </Accordion>
-      </Spacer>
-      <Spacer>
         <Accordion
           header={
             <StyledBlock>
               <IconFilledAccountBalance
                 overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
               />
-              Accordion 12
+              Header 10
             </StyledBlock>
           }
-          label="Label"
+          label="Show"
           overrides={{
             header: {
               indicatorIcon: CustomIndicator,
