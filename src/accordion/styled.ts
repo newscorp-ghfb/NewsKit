@@ -44,13 +44,8 @@ export const StyledHeader = styled.div`
   flex: 1;
 `;
 
-export const StyledIndicatorLabel = styled.div<
-  Pick<AccordionProps, 'overrides'>
->`
-  ${getTypographyPreset(
-    'accordion.header.indicatorLabel',
-    'header.indicatorLabel',
-  )}
+export const StyledLabel = styled.div<Pick<AccordionProps, 'overrides'>>`
+  ${getTypographyPreset('accordion.header.label', 'header.label')}
 `;
 
 export const StyledIconWrapper = styled.div`
@@ -58,11 +53,10 @@ export const StyledIconWrapper = styled.div`
   align-self: center;
 `;
 
-export const StyledPanel = styled.div<Pick<AccordionProps, 'overrides'>>`
+export const StyledPanel = styled.div<
+  Pick<AccordionProps, 'overrides' | 'expanded'>
+>`
+  display: ${({expanded}) => (expanded ? 'block' : 'none')};
   ${getStylePreset('accordion.panel', 'panel')};
   ${logicalProps('accordion.panel', 'panel')}
-`;
-
-export const StyledPanelWrapper = styled.div<Pick<AccordionProps, 'expanded'>>`
-  display: ${({expanded}) => (expanded ? 'block' : 'none')};
 `;

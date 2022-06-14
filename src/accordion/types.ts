@@ -12,7 +12,7 @@ export interface AccordionHeaderOverrides extends LogicalPaddingProps {
   stylePreset?: MQ<string>;
   typographyPreset?: MQ<string>;
   spaceInline?: MQ<string>;
-  indicatorLabel?: {
+  label?: {
     typographyPreset?: MQ<string>;
   };
   indicatorIcon?: Override<AccordionIconProps>;
@@ -29,11 +29,11 @@ export interface AccordionProps {
   children?: Exclude<React.ReactNode, 'undefined'>;
   disabled?: boolean;
   header?: Exclude<React.ReactNode, 'undefined'>;
-  headingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
+  headerAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
   label?: string;
   ariaControls?: string;
   id?: string;
   expanded?: boolean;
-  onClick?: () => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   overrides?: AccordionPropsOverrides;
 }

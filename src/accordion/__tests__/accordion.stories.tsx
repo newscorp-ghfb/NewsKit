@@ -51,6 +51,13 @@ const StyledBlock = styled(Block)`
   align-items: center;
 `;
 
+const content = (
+  <TextBlock>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+    malesuada lacus ex, sit amet blandit leo lobortis eget.
+  </TextBlock>
+);
+
 const CustomIndicator = ({expanded}: AccordionIconProps) =>
   expanded ? (
     <IconFilledStarOutline overrides={{size: 'iconSize020'}} />
@@ -70,7 +77,7 @@ export default {
 };
 
 export const StoryAccordion = () => {
-  const [event, showEvent] = React.useState('');
+  const [expanded, toggleExpanded] = React.useState(false);
   return (
     <>
       <StorybookSubHeading>Expanded</StorybookSubHeading>
@@ -87,10 +94,7 @@ export const StoryAccordion = () => {
           label="Label"
           expanded
         >
-          <TextBlock>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </TextBlock>
+          {content}
         </Accordion>
       </Spacer>
       <StorybookSubHeading>Collapsed</StorybookSubHeading>
@@ -107,10 +111,7 @@ export const StoryAccordion = () => {
           label="Label"
           expanded={false}
         >
-          <TextBlock>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </TextBlock>
+          {content}
         </Accordion>
       </Spacer>
       <StorybookSubHeading>Disabled</StorybookSubHeading>
@@ -139,10 +140,7 @@ export const StoryAccordion = () => {
             },
           }}
         >
-          <TextBlock>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </TextBlock>
+          {content}
         </Accordion>
       </Spacer>
       <StorybookSubHeading>onClick event</StorybookSubHeading>
@@ -157,18 +155,11 @@ export const StoryAccordion = () => {
             </StyledBlock>
           }
           label="Label"
-          expanded
-          onClick={() => {
-            console.log('onClick event');
-            showEvent('onClick event');
-          }}
+          expanded={expanded}
+          onClick={() => toggleExpanded(!expanded)}
         >
-          <TextBlock>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </TextBlock>
+          {content}
         </Accordion>
-        <div data-testid="event">{event}</div>
       </Spacer>
     </>
   );
@@ -184,10 +175,7 @@ export const StoryAccordionVariants = () => (
         expanded
         label="Label"
       >
-        <TextBlock>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </TextBlock>
+        {content}
       </Accordion>
     </Spacer>
     <StorybookSubHeading>Without Label</StorybookSubHeading>
@@ -203,19 +191,13 @@ export const StoryAccordionVariants = () => (
         }
         expanded
       >
-        <TextBlock>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </TextBlock>
+        {content}
       </Accordion>
     </Spacer>
     <StorybookSubHeading>Without Header</StorybookSubHeading>
     <Spacer>
       <Accordion label="Label" expanded>
-        <TextBlock>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </TextBlock>
+        {content}
       </Accordion>
     </Spacer>
   </>
@@ -247,7 +229,7 @@ export const StoryAccordionOverrides = () => (
               spaceInline: 'space030',
               paddingBlock: 'spaceInset040',
               paddingInline: 'spaceInset040',
-              indicatorLabel: {
+              label: {
                 typographyPreset: 'utilityButton020',
               },
             },
@@ -256,10 +238,7 @@ export const StoryAccordionOverrides = () => (
             },
           }}
         >
-          <TextBlock>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </TextBlock>
+          {content}
         </Accordion>
       </Spacer>
       <StorybookSubHeading>Indicator Icon Prop Overrides</StorybookSubHeading>
@@ -288,10 +267,7 @@ export const StoryAccordionOverrides = () => (
             },
           }}
         >
-          <TextBlock>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </TextBlock>
+          {content}
         </Accordion>
       </Spacer>
       <StorybookSubHeading>Indicator Icon Override</StorybookSubHeading>
@@ -315,10 +291,7 @@ export const StoryAccordionOverrides = () => (
             },
           }}
         >
-          <TextBlock>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </TextBlock>
+          {content}
         </Accordion>
       </Spacer>
       <StorybookSubHeading>
@@ -342,10 +315,7 @@ export const StoryAccordionOverrides = () => (
             },
           }}
         >
-          <TextBlock>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </TextBlock>
+          {content}
         </Accordion>
       </Spacer>
       <Spacer>
@@ -365,10 +335,7 @@ export const StoryAccordionOverrides = () => (
             },
           }}
         >
-          <TextBlock>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </TextBlock>
+          {content}
         </Accordion>
       </Spacer>
     </ThemeProvider>

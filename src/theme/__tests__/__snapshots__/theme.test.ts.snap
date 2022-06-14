@@ -1092,7 +1092,7 @@ exports[`NewsKit Light theme combine all component defaults 1`] = `
 Object {
   "accordion": Object {
     "header": Object {
-      "indicatorLabel": Object {
+      "label": Object {
         "typographyPreset": "utilityButton030",
       },
       "paddingBlock": "spaceInset030",

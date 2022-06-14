@@ -5,8 +5,7 @@ import {
   StyledHeaderWrapper,
   StyledAccordionButton,
   StyledPanel,
-  StyledIndicatorLabel,
-  StyledPanelWrapper,
+  StyledLabel,
   StyledIconWrapper,
   StyledHeader,
 } from './styled';
@@ -37,7 +36,7 @@ const DefaultIcon = ({expanded, overrides}: AccordionIconProps) =>
 const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
   (
     {
-      headingAs = 'h3',
+      headerAs = 'h3',
       header,
       label,
       expanded,
@@ -64,8 +63,8 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
     );
 
     return (
-      <StyledAccodionContainer ref={ref} {...props}>
-        <StyledHeaderWrapper as={headingAs}>
+      <StyledAccodionContainer ref={ref}>
+        <StyledHeaderWrapper as={headerAs}>
           <StyledAccordionButton
             overrides={overrides}
             disabled={disabled}
@@ -76,27 +75,22 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
             {...props}
           >
             <StyledHeader>{header}</StyledHeader>
-            {label && (
-              <StyledIndicatorLabel overrides={overrides}>
-                {label}
-              </StyledIndicatorLabel>
-            )}
+            {label && <StyledLabel overrides={overrides}>{label}</StyledLabel>}
             <StyledIconWrapper>
               <IndicatorIcon {...(indicatorIconProps as AccordionIconProps)} />
             </StyledIconWrapper>
           </StyledAccordionButton>
         </StyledHeaderWrapper>
-        <StyledPanelWrapper expanded={expanded}>
-          <StyledPanel
-            aria-labelledby={ariaLabelledById}
-            id={ariaControlsId}
-            data-testid="accordion-content"
-            role="region"
-            overrides={overrides}
-          >
-            {children}
-          </StyledPanel>
-        </StyledPanelWrapper>
+        <StyledPanel
+          aria-labelledby={ariaLabelledById}
+          id={ariaControlsId}
+          data-testid="accordion-content"
+          role="region"
+          expanded={expanded}
+          overrides={overrides}
+        >
+          {children}
+        </StyledPanel>
       </StyledAccodionContainer>
     );
   },

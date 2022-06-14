@@ -6,7 +6,7 @@ export default {
       spaceInline: 'space020',
       paddingBlock: 'spaceInset030',
       paddingInline: 'spaceInset030',
-      indicatorLabel: {
+      label: {
         typographyPreset: 'utilityButton030',
       },
     },

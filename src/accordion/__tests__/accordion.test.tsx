@@ -1,7 +1,11 @@
 import {fireEvent} from '@testing-library/react';
 import React from 'react';
 import {Block} from '../../block';
-import {IconFilledAccountBalance} from '../../icons';
+import {
+  IconFilledAccountBalance,
+  IconFilledCancel,
+  IconFilledStarOutline,
+} from '../../icons';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
@@ -10,6 +14,7 @@ import {TextBlock} from '../../text-block';
 import {createTheme} from '../../theme';
 import {styled} from '../../utils';
 import {Accordion} from '../accordion';
+import {AccordionIconProps} from '../types';
 
 const StyledBlock = styled(Block)`
   display: flex;
@@ -89,7 +94,7 @@ describe('Accordion', () => {
   test('renders as a h4', () => {
     const props = {
       ...defaultProps,
-      headingAs: 'h4' as 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span',
+      headerAs: 'h4' as 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span',
       expanded: true,
     };
     const fragment = renderToFragmentWithTheme(Accordion, props);
@@ -154,7 +159,7 @@ describe('Accordion', () => {
             spaceInline: 'space030',
             paddingBlock: 'spaceInset040',
             paddingInline: 'spaceInset040',
-            indicatorLabel: {
+            label: {
               typographyPreset: 'utilityButton020',
             },
             indicatorIcon: {
@@ -169,6 +174,51 @@ describe('Accordion', () => {
       },
       myCustomAccordionTheme,
     );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+  test('renders with indicatorIcon componet overrides', () => {
+    const CustomIndicator = ({expanded}: AccordionIconProps) =>
+      expanded ? (
+        <IconFilledStarOutline overrides={{size: 'iconSize020'}} />
+      ) : (
+        <IconFilledCancel
+          overrides={{
+            size: 'iconSize020',
+            stylePreset: 'inkPositive',
+          }}
+        />
+      );
+
+    const {asFragment} = renderWithTheme(Accordion, {
+      ...defaultProps,
+      expanded: true,
+      overrides: {
+        header: {
+          indicatorIcon: CustomIndicator,
+        },
+      },
+    });
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+  test('renders with indicatorIcon prop overrides', () => {
+    const {asFragment} = renderWithTheme(Accordion, {
+      ...defaultProps,
+      expanded: true,
+      overrides: {
+        header: {
+          indicatorIcon: {
+            props: {
+              overrides: {
+                stylePreset: 'inkNegative',
+                size: 'iconSize010',
+              },
+            },
+          },
+        },
+      },
+    });
 
     expect(asFragment()).toMatchSnapshot();
   });
