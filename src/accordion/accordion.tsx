@@ -1,8 +1,6 @@
 import React from 'react';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {
-  StyledAccodionContainer,
-  StyledHeaderWrapper,
   StyledAccordionButton,
   StyledPanel,
   StyledLabel,
@@ -15,6 +13,7 @@ import stylePresets from './style-presets';
 import {useReactKeys} from '../utils/hooks';
 import {IconFilledExpandLess, IconFilledExpandMore} from '../icons';
 import {getComponentOverrides} from '../utils/overrides';
+import {TextBlock} from '../text-block';
 
 const DefaultIcon = ({expanded, overrides}: AccordionIconProps) =>
   expanded ? (
@@ -58,13 +57,12 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
       DefaultIcon,
       {
         expanded,
-        parentOverrides: overrides,
       },
     );
 
     return (
-      <StyledAccodionContainer ref={ref}>
-        <StyledHeaderWrapper as={headerAs}>
+      <div ref={ref}>
+        <TextBlock as={headerAs}>
           <StyledAccordionButton
             overrides={overrides}
             disabled={disabled}
@@ -80,7 +78,7 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
               <IndicatorIcon {...(indicatorIconProps as AccordionIconProps)} />
             </StyledIconWrapper>
           </StyledAccordionButton>
-        </StyledHeaderWrapper>
+        </TextBlock>
         <StyledPanel
           aria-labelledby={ariaLabelledById}
           id={ariaControlsId}
@@ -91,7 +89,7 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
         >
           {children}
         </StyledPanel>
-      </StyledAccodionContainer>
+      </div>
     );
   },
 );
