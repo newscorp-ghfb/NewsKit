@@ -12,36 +12,7 @@ import {BaseFloatingElementProps} from './types';
 import {StyledFloatingElement, StyledPanel, StyledPointer} from './styled';
 import {useControlled} from '../utils/hooks';
 import {useTheme} from '../theme';
-import {getResponsiveSpace, ThemeProp} from '../utils';
-
-const parseOffset = (offsetPx: string): number | null => {
-  if (!offsetPx.includes('px')) {
-    return null;
-  }
-  return parseInt(offsetPx.replace('px', ''), 10);
-};
-
-const getOffsetPx = (
-  path: string,
-  props: ThemeProp & {overrides?: unknown},
-): string | null => {
-  // Value returned by getResponsiveSpace depends on default / override string:
-  // 1. String is valid token --> {gap: $PARSED_TOKEN_VALUE}
-  // 2. String is not a valid token but contains valid CSSUnits --> {gap: $RAW_VALUE}
-  // 3. String is not a valid token and does not contain valid CSSUnits --> ''
-  const distance = getResponsiveSpace(
-    'gap',
-    path,
-    'distance',
-    'distance',
-  )(props);
-
-  if (typeof distance === 'string') {
-    return null;
-  }
-  const {gap} = distance as {gap: string};
-  return gap;
-};
+import {showOverridePxWarnings, getOverridePxValue} from './utils';
 
 export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   children,
@@ -66,22 +37,23 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   });
 
   const theme = useTheme();
-  const offsetPx = getOffsetPx(path, {theme, overrides});
-  const offsetVal = offsetPx ? parseOffset(offsetPx) : null;
+  const distance = getOverridePxValue(
+    path,
+    {theme, overrides},
+    'distance',
+    'distance',
+  );
+  const pointerPadding = getOverridePxValue(
+    `${path}.pointer`,
+    {theme, overrides},
+    'pointer.padding',
+    'padding',
+  );
 
   useEffect(() => {
-    if (!offsetPx) {
-      // eslint-disable-next-line no-console
-      console.warn(
-        "Invalid Tooltip component override: please make sure 'distance' is a valid token.",
-      );
-    } else if (!offsetVal) {
-      // eslint-disable-next-line no-console
-      console.warn(
-        "Invalid Tooltip component override: please make sure 'distance' is a px value.",
-      );
-    }
-  }, [offsetPx, offsetVal]);
+    showOverridePxWarnings(distance, 'distance');
+    showOverridePxWarnings(pointerPadding, 'pointer.padding');
+  }, [distance, pointerPadding]);
 
   const pointerRef = useRef(null);
   const {
@@ -101,8 +73,8 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     middleware: [
       ...(!hidePointer
         ? [
-            arrow({element: pointerRef}),
-            ...(offsetVal ? [offset(offsetVal)] : []),
+            arrow({element: pointerRef, padding: pointerPadding}),
+            ...(distance ? [offset(distance)] : []),
           ]
         : []),
     ],

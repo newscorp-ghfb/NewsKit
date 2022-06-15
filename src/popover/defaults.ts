@@ -6,6 +6,7 @@ export default {
     pointer: {
       stylePreset: 'popoverPointer',
       size: 'sizing040',
+      padding: 'space030',
     },
     panel: {
       stylePreset: 'popoverPanel',

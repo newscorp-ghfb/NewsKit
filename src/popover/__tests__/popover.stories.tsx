@@ -1,11 +1,13 @@
 import * as React from 'react';
 import {Placement} from '@floating-ui/react-dom-interactions';
+import {useRef, useState} from 'react';
 import {ButtonSize} from '../../button';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {styled} from '../../utils';
 import {Popover} from '../popover';
 import {IconFilledInfo} from '../../icons';
 import {IconButton} from '../../icon-button';
+import {FallbackBehaviourType} from '../../base-floating-element';
 
 const getPlacementPosition = (placement: Placement) => {
   const [side, alignment = 'center'] = placement.split('-');
@@ -90,3 +92,72 @@ export const StoryPopoverOptions = () => (
   </StyledPage>
 );
 StoryPopoverOptions.storyName = 'popover-options';
+
+const CONTAINER_HEIGHT = 200;
+const CONTAINER_WIDTH = 300;
+
+const StyledScrollParent = styled.div`
+  ${{
+    maxHeight: `${CONTAINER_HEIGHT}px`,
+    maxWidth: `${CONTAINER_WIDTH}px`,
+  }}
+  border: 1px solid red;
+  overflow: scroll;
+`;
+
+const StyledScrollChild = styled.div`
+  ${{
+    height: `${CONTAINER_HEIGHT + 50}px`,
+    width: `${CONTAINER_WIDTH + 50}px`,
+    paddingTop: `${CONTAINER_HEIGHT - 50}px`,
+    paddingLeft: `${CONTAINER_WIDTH - 100}px`,
+  }}
+  background-color: #F7F7F7;
+`;
+
+const PopoverWithBoundary = ({
+  fallbackBehaviour,
+}: {
+  fallbackBehaviour: FallbackBehaviourType[];
+}) => {
+  const boundaryRef = useRef<HTMLDivElement>(null);
+
+  // need to force a state update because useRef does not?
+  const [, setX] = useState(false);
+  setTimeout(() => setX(true), 0);
+
+  return (
+    <>
+      <StorybookSubHeading>
+        Fallback behaviour: {`${fallbackBehaviour.join(', ')}`}
+      </StorybookSubHeading>
+      <StyledScrollParent ref={boundaryRef}>
+        <StyledScrollChild>
+          <Popover
+            defaultOpen
+            fallbackBehaviour={fallbackBehaviour}
+            content={<StyledContent>PLACEHOLDER</StyledContent>}
+            placement="top"
+            boundary={boundaryRef.current || undefined}
+          >
+            <IconButton
+              size={ButtonSize.Small}
+              overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
+            >
+              <IconFilledInfo />
+            </IconButton>
+          </Popover>
+        </StyledScrollChild>
+      </StyledScrollParent>
+    </>
+  );
+};
+
+export const StoryPopoverBehaviours = () => (
+  <>
+    <PopoverWithBoundary fallbackBehaviour={['flip']} />
+    <PopoverWithBoundary fallbackBehaviour={['shift']} />
+    <PopoverWithBoundary fallbackBehaviour={['flip', 'shift']} />
+  </>
+);
+StoryPopoverBehaviours.storyName = 'popover-behaviours';

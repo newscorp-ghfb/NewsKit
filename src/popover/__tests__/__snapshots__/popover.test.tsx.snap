@@ -43,7 +43,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
-  left: 0px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -110,7 +110,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
-  left: 0px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -177,7 +177,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
-  left: 0px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -244,7 +244,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
-  left: 0px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -313,6 +313,274 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
     >
       hello
     </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Popover pointer padding should be applied with px distance override 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: -24px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #2E2E2E;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 16px;
+  padding-block: 16px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  left: 10px;
+  bottom: calc(-16px / 2);
+}
+
+<div
+    aria-expanded="true"
+    class="emotion-0"
+    id="MOCK-ID"
+    role="dialog"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="MOCK-ID-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Popover pointer padding should be applied with token distance override 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: -24px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #2E2E2E;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 16px;
+  padding-block: 16px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  left: 16px;
+  bottom: calc(-16px / 2);
+}
+
+<div
+    aria-expanded="true"
+    class="emotion-0"
+    id="MOCK-ID"
+    role="dialog"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="MOCK-ID-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Popover pointer padding should not be applied with invalid token distance override 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: -24px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #2E2E2E;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 16px;
+  padding-block: 16px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  bottom: calc(-16px / 2);
+}
+
+<div
+    aria-expanded="true"
+    class="emotion-0"
+    id="MOCK-ID"
+    role="dialog"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="MOCK-ID-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Popover pointer padding should not be applied with non-px distance override 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: -24px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #2E2E2E;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 16px;
+  padding-block: 16px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  bottom: calc(-16px / 2);
+}
+
+<div
+    aria-expanded="true"
+    class="emotion-0"
+    id="MOCK-ID"
+    role="dialog"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -460,7 +728,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
-  left: 0px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -527,7 +795,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   background-color: #FFFFFF;
   width: 16px;
   height: 16px;
-  left: 0px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -594,7 +862,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   background-color: #A60100;
   width: 16px;
   height: 16px;
-  left: 0px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
@@ -662,7 +930,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   width: 16px;
   height: 16px;
   left: calc(-16px / 2);
-  top: 0px;
+  top: 12px;
 }
 
 <div

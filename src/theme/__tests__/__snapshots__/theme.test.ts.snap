@@ -1939,6 +1939,22 @@ Object {
     "stylePreset": "inkBase",
     "typographyPreset": "editorialParagraph020",
   },
+  "popover": Object {
+    "distance": "space050",
+    "panel": Object {
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
+      "stylePreset": "popoverPanel",
+      "typographyPreset": "utilityLabel010",
+    },
+    "pointer": Object {
+      "padding": "space030",
+      "size": "sizing040",
+      "stylePreset": "popoverPointer",
+    },
+    "stylePreset": "popover",
+    "zIndex": 80,
+  },
   "radioButton": Object {
     "large": Object {
       "feedback": Object {
@@ -2608,6 +2624,7 @@ Object {
       "typographyPreset": "utilityLabel010",
     },
     "pointer": Object {
+      "padding": "space020",
       "size": "sizing010",
       "stylePreset": "tooltipPointer",
     },
@@ -4285,6 +4302,24 @@ Object {
   "overlay": Object {
     "base": Object {
       "backgroundColor": "{{overlays.overlayTintBase040}}",
+    },
+  },
+  "popover": Object {
+    "base": Object {
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "boxShadow": "{{shadows.shadow050}}",
+    },
+  },
+  "popoverPanel": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interface010}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.neutral090}}",
+    },
+  },
+  "popoverPointer": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interface010}}",
     },
   },
   "radioButtonInput": Object {

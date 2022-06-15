@@ -170,7 +170,7 @@ describe('Popover', () => {
       });
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
-        "Invalid Tooltip component override: please make sure 'distance' is a px value.",
+        "Invalid component override: please make sure 'distance' is a valid token or px value.",
       );
       expect(asFragment()).toMatchSnapshot();
     });
@@ -185,7 +185,7 @@ describe('Popover', () => {
       });
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
-        "Invalid Tooltip component override: please make sure 'distance' is a valid token.",
+        "Invalid component override: please make sure 'distance' is a valid token or px value.",
       );
       expect(asFragment()).toMatchSnapshot();
     });
@@ -205,6 +205,67 @@ describe('Popover', () => {
         hidePointer: false,
         overrides: {
           distance: '10px',
+        },
+      });
+      expect(asFragment()).toMatchSnapshot();
+    });
+  });
+
+  describe('pointer padding', () => {
+    test('should not be applied with non-px distance override', async () => {
+      jest.spyOn(console, 'warn').mockImplementation();
+      const {asFragment} = await asyncRender(Popover, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          pointer: {
+            padding: '1rem',
+          },
+        },
+      });
+      // eslint-disable-next-line no-console
+      expect(console.warn).toHaveBeenCalledWith(
+        "Invalid component override: please make sure 'pointer.padding' is a valid token or px value.",
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('should not be applied with invalid token distance override', async () => {
+      jest.spyOn(console, 'warn').mockImplementation();
+      const {asFragment} = await asyncRender(Popover, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          pointer: {
+            padding: 'invalid token',
+          },
+        },
+      });
+      // eslint-disable-next-line no-console
+      expect(console.warn).toHaveBeenCalledWith(
+        "Invalid component override: please make sure 'pointer.padding' is a valid token or px value.",
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('should be applied with token distance override', async () => {
+      const {asFragment} = await asyncRender(Popover, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          pointer: {
+            padding: 'space040',
+          },
+        },
+      });
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('should be applied with px distance override', async () => {
+      const {asFragment} = await asyncRender(Popover, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          pointer: {
+            padding: '10px',
+          },
         },
       });
       expect(asFragment()).toMatchSnapshot();
