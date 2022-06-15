@@ -50,7 +50,6 @@ export interface FloatingElementProps
   fallbackBehaviour?: FallbackBehaviourType | FallbackBehaviourType[];
   boundary?: Boundary;
   hidePointer?: boolean;
-  // popover props
   restoreFocusTo?: HTMLElement;
 }
 

@@ -435,18 +435,6 @@ describe('Popover', () => {
     });
   });
 
-  describe.skip('fallbackPlacement', () => {
-    test('reverts to default fallbackPlacement', () => {});
-    test('reverts to custom fallbackPlacement', () => {});
-  });
-
-  describe.skip('boundary', () => {
-    test('respects scrollParent boundary', () => {});
-    test('respects viewport boundary', () => {});
-    test('respects window boundary', () => {});
-    test('respects custom boundary', () => {});
-  });
-
   describe('focus', () => {
     test('does not update on first load', () => {
       const Component = () => (

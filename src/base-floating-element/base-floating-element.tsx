@@ -6,6 +6,8 @@ import {
   useFloating,
   useId,
   offset,
+  shift,
+  flip,
 } from '@floating-ui/react-dom-interactions';
 import composeRefs from '@seznam/compose-react-refs';
 import {BaseFloatingElementProps} from './types';
@@ -30,6 +32,9 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   onDismiss,
   restoreFocusTo,
   className,
+  /* istanbul ignore next */
+  fallbackBehaviour = ['flip', 'shift'],
+  boundary,
 }) => {
   const [open, setOpen] = useControlled({
     controlledValue: openProp,
@@ -64,6 +69,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     strategy,
     context,
     middlewareData: {arrow: {x: pointerX, y: pointerY} = {}},
+    placement: statefulPlacement,
     refs,
   } = useFloating<HTMLElement>({
     placement,
@@ -71,11 +77,15 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     onOpenChange: setOpen,
     whileElementsMounted: autoUpdate,
     middleware: [
+      ...(!hidePointer && distance ? [offset(distance)] : []),
+      ...(fallbackBehaviour.includes('flip')
+        ? [flip({boundary})]
+        : /* istanbul ignore next */ []),
+      ...(fallbackBehaviour.includes('shift')
+        ? [shift({boundary})]
+        : /* istanbul ignore next */ []),
       ...(!hidePointer
-        ? [
-            arrow({element: pointerRef, padding: pointerPadding}),
-            ...(distance ? [offset(distance)] : []),
-          ]
+        ? [arrow({element: pointerRef, padding: pointerPadding})]
         : []),
     ],
   });
@@ -85,27 +95,27 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   const contentIsString = typeof content === 'string';
   const {getReferenceProps, getFloatingProps} = useInteractions(context);
 
-  // handle open changes in a useEffect because:
-  // - can't access context.refs in onOpenChange
+  // We need to handle changes to the value of 'open' in a useEffect because:
+  // - We can't access context.refs in onOpenChange
   // - onOpenChange isn't called in the controlled case
   const isFirstRun = useRef(true);
   useEffect(() => {
-    // don't call onDismiss or update focus on the first render
+    // Don't call onDismiss or update focus on the first render.
     if (isFirstRun.current) {
       isFirstRun.current = false;
       return;
     }
 
-    // update the focus state
-    // can't use FloatingFocusManager as this does not allow tabbing past the floating element
-    // without force closing it
-    // not needed for tooltip
+    // We can't use floating-ui's FloatingFocusManager to update the focus state
+    // because this does not allow tabbing past the floating element without closing it.
     if (path === 'popover') {
       if (open) {
+        /* istanbul ignore next */
         refs.floating?.current?.focus();
       } else if (restoreFocusTo) {
         restoreFocusTo.focus();
       } else {
+        /* istanbul ignore next */
         refs.reference?.current?.focus();
       }
     }
@@ -138,7 +148,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
           strategy={strategy}
           $x={x}
           $y={y}
-          placement={placement}
+          placement={statefulPlacement}
           overrides={overrides}
           hidePointer={hidePointer}
           role={role}
@@ -157,7 +167,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
               path={path}
               id={`${id}-pointer`}
               ref={pointerRef}
-              placement={placement}
+              placement={statefulPlacement}
               $x={pointerX}
               $y={pointerY}
               overrides={overrides}
