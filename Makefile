@@ -3,6 +3,7 @@ DOCKER_REPO ?= design-system-site
 DOCKER_TAG ?= latest
 CIRCLE_SHA1 ?= 0000000000
 SHORT_GIT_HASH := $(shell echo ${CIRCLE_SHA1} | cut -c -9)
+NEW_VERSION ?= 7.0.0
 
 # CURRENT BRANCH CHECKED OUT
 CURRENT_BRANCH = $(shell git symbolic-ref --short -q HEAD)
@@ -93,6 +94,9 @@ set_git_identity:
 bump_version:
 	git checkout main
 	git pull
+	
+	cd codemod; yarn version --no-git-tag-version --new-version ${NEW_VERSION}; cd ..
+
 	yarn config set version-git-message "Bumping to version v%s - [skip ci]"
 	echo "Updating package.json and creating a tag for `${NEW_VERSION}`"
 	yarn version --new-version ${NEW_VERSION}
