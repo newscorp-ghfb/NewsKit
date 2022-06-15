@@ -101,7 +101,6 @@ const useActiveState = (
 
   return [isActive, open, close, toggle];
 };
-
 export const StoryDefault = () =>
   React.createElement(() => {
     const [isActive, setIsActive] = React.useState(false);

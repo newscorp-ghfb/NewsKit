@@ -6,7 +6,7 @@ import {formatTrackTime, getMediaSegment} from './utils';
 import calculateStringPercentage from '../utils/calculate-string-percentage';
 import {getValueInRange} from '../utils/value-in-range';
 
-import {version} from '../version-number.json';
+import versionNumber from '../version-number.json';
 
 export interface AudioFunctionDependencies {
   onPreviousTrack: AudioPlayerProps['onPreviousTrack'];
@@ -72,7 +72,7 @@ export const useAudioFunctions = ({
 
   const buildMediaData = useCallback(() => {
     const playerData = {
-      media_player: `newskit-audio-player-${version}`,
+      media_player: `newskit-audio-player-${versionNumber.version}`,
       media_type: 'audio',
     };
     return live
