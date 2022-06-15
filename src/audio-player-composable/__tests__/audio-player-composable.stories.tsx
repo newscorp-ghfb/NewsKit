@@ -648,7 +648,7 @@ export const AudioPlayerKeyboard = () => (
     <StorybookSubHeading>Audio Player Keyboard shortcuts</StorybookSubHeading>
     <AudioPlayerFullRecorded ariaLandmark="audio player keyboard" />
     <Block marginBlockEnd="space040" />
-    <GridLayout columns="auto 1fr" rowGap="space020" as="dl">
+    <GridLayout columns="auto 1fr auto 1fr" rowGap="space020" as="dl">
       <dt>k / space</dt>
       <dd>Toggle play/pause</dd>
       <dt>0 / Home</dt>
@@ -755,7 +755,7 @@ export const AudioPlayerKeyboard = () => (
       </GridLayout>
     </AudioPlayerComposable>
     <Block marginBlockEnd="space040" />
-    <GridLayout columns="auto 1fr" rowGap="space020" as="dl">
+    <GridLayout columns="auto 1fr auto 1fr" rowGap="space020" as="dl">
       <dt>s</dt>
       <dd>Toggle play/pause</dd>
       <dt>1</dt>
