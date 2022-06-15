@@ -910,21 +910,12 @@ jobs:
     executor: node
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - yarn-build-v1-codemod-{{ checksum "yarn.lock" }}
-            - yarn-build-v1-codemod-
       - run:
           name: Codemode Dependencies Install
           command: make install_codemod
-      - save_cache:
-          key: yarn-build-v1-codemod-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache
       - persist_to_workspace:
           root: ./
           paths:
-            - node_modules/*
             - codemod/node_modules/*
       - slack/status:
           <<: *slack_status
