@@ -1415,6 +1415,21 @@ workflows:
             - test_e2e_comps
             - test_e2e_docs_prod
             - test_newskit_in_nextjs_app
+            - install_codemod_deps
+
+      - install_codemod_deps:
+          <<: *only_on_version_tag
+          requires:
+            - install_deps
+
+      - test_unit_codemod:
+          requires:
+            - install_codemod_deps
+
+      - publish_codemod_npm:
+          context: ncu-product-platforms-context
+          requires:
+            - publish_npm
 
       # Deploying newskit.co.uk and storybook to Staging then to Prod environment.
       - eks_flux_deploy:
