@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "10.0.0",
+  "version": "5.4.6",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
@@ -226,7 +226,15 @@
     "react-dom": ">= 16.8.0 <= 17",
     "react-is": ">= 16.8.0 <= 17"
   },
-  "husky": {},
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "node githooks/preparecommitmsg",
+      "commit-msg": "node githooks/commitmsg",
+      "pre-commit": "lint-staged && node githooks/update-readme-node-version.js",
+      "post-merge": "yarn dependencies:check",
+      "post-checkout": "yarn dependencies:check"
+    }
+  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "yarn lint:code:base --fix",
