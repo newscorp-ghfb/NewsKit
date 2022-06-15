@@ -1415,7 +1415,7 @@ workflows:
             - test_e2e_comps
             - test_e2e_docs_prod
             - test_newskit_in_nextjs_app
-            - install_codemod_deps
+            - test_unit_codemod
 
       - install_codemod_deps:
           <<: *only_on_version_tag
