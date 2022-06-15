@@ -74,7 +74,7 @@ publish_npm:
 	cd dist; yarn publish --no-git-tag-version;
 
 publish_codemod_npm:
-	yarn build:sync-codemod-version; cd codemod; yarn publish --no-git-tag-version --access public;
+	cd codemod; yarn publish --no-git-tag-version --access public;
 
 publish_codemod_npm_dev:
 	cd codemod; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable --access public;

@@ -643,7 +643,7 @@ jobs:
           at: ~/project
       - run:
           name: Add NPM login credentionals
-          command: echo "//registry.npmjs.org/:_authToken=${f_TOKEN}" > ~/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
       - run:
           name: Set github identity
           command: make set_git_identity
@@ -974,8 +974,7 @@ jobs:
           steps:
             - run:
                 name: Publish codemod to NPM
-                #command: make publish_codemod_npm
-                command: echo "publish to NPM prod"
+                command: make publish_codemod_npm
       - slack/status:
           <<: *slack_status
 

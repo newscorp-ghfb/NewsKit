@@ -85,8 +85,6 @@ Scripts should be named using the following naming convention:
 
 * `build:sync-version-number` -> copies the current version number from package json into the src folder.
 
-* `build:sync-codemod-version` -> copies the current version number from package json into the codemode package.json.
-
 * `build` -> runs the above builds, creating a ready to publish dist folder, as well as storybook and docs.
 
 * `serve:docs` -> starts a simple http server to serve the documentation site in public/.
