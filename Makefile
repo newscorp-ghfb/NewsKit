@@ -3,7 +3,6 @@ DOCKER_REPO ?= design-system-site
 DOCKER_TAG ?= latest
 CIRCLE_SHA1 ?= 0000000000
 SHORT_GIT_HASH := $(shell echo ${CIRCLE_SHA1} | cut -c -9)
-NEW_VERSION ?= 7.0.0
 
 # CURRENT BRANCH CHECKED OUT
 CURRENT_BRANCH = $(shell git symbolic-ref --short -q HEAD)
