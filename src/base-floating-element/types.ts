@@ -3,7 +3,6 @@ import {
   Boundary,
   FloatingContext,
   Placement,
-  useId,
   useInteractions,
 } from '@floating-ui/react-dom-interactions';
 import {MQ} from '../utils';
@@ -14,8 +13,11 @@ export type FallbackBehaviourType = 'flip' | 'shift';
 
 export type BuildAriaAttributesFn = (args: {
   floating: {
-    id: ReturnType<typeof useId>;
+    id: string;
     open?: boolean;
+  };
+  ref: {
+    id: string;
   };
 }) => AriaAttributes;
 
@@ -57,7 +59,7 @@ export interface BaseFloatingElementProps extends FloatingElementProps {
   useInteractions: (
     context: FloatingContext<HTMLElement>,
   ) => ReturnType<typeof useInteractions>;
-  buildContextAriaAttributes: BuildAriaAttributesFn;
-  buildFloatingElementAriaAttributes: BuildAriaAttributesFn;
+  buildRefElAriaAttributes: BuildAriaAttributesFn;
+  buildFloatingElAriaAttributes: BuildAriaAttributesFn;
   path: 'tooltip' | 'popover';
 }

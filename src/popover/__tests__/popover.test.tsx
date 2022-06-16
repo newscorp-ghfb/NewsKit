@@ -412,15 +412,37 @@ describe('Popover', () => {
       const el = queryByRole('dialog');
       expect(el).toHaveAttribute('aria-expanded', 'true');
     });
+    test('floating element has default aria-labelledby', () => {
+      const {queryByRole, getByRole} = renderWithTheme(Popover, defaultProps);
+      const btn = getByRole('button');
+      fireEvent.click(btn);
+      const el = queryByRole('dialog');
+      expect(el).toHaveAttribute('aria-labelledby', MOCK_ID);
+      expect(btn).toHaveAttribute('id', MOCK_ID);
+    });
+    test('floating element has custom aria-labelledby', () => {
+      const {queryByRole, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        children: (
+          <button id="customId" type="submit">
+            Add
+          </button>
+        ),
+      });
+      fireEvent.click(getByRole('button'));
+      const el = queryByRole('dialog');
+      expect(el).toHaveAttribute('aria-labelledby', 'customId');
+    });
     test('context element has aria-haspopup', () => {
       const {queryByRole} = renderWithTheme(Popover, defaultProps);
       const el = queryByRole('button');
       expect(el).toHaveAttribute('aria-haspopup', 'dialog');
     });
-    test('context element has aria-controls', () => {
-      const {queryByRole} = renderWithTheme(Popover, defaultProps);
-      const el = queryByRole('button');
-      expect(el).toHaveAttribute('aria-controls', MOCK_ID);
+    test('context element has aria-controls when dialog is open', () => {
+      const {getByRole} = renderWithTheme(Popover, defaultProps);
+      const btn = getByRole('button');
+      fireEvent.click(btn);
+      expect(btn).toHaveAttribute('aria-controls', MOCK_ID);
     });
   });
 

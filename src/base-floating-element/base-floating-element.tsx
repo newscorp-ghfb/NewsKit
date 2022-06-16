@@ -25,8 +25,8 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   hidePointer = false,
   role,
   useInteractions,
-  buildContextAriaAttributes,
-  buildFloatingElementAriaAttributes,
+  buildRefElAriaAttributes,
+  buildFloatingElAriaAttributes,
   path,
   onDismiss,
   restoreFocusTo,
@@ -89,8 +89,15 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     ],
   });
 
-  const id = useId();
-  const ariaArgs = {floating: {id, open}};
+  const defaultRefId = useId();
+  const floatingId = useId();
+  const ariaArgs = {
+    floating: {id: floatingId, open},
+    ref: {id: children.props.id || defaultRefId},
+  };
+  const refElAriaAttributes = buildRefElAriaAttributes(ariaArgs);
+  const floatingElAriaAttributes = buildFloatingElAriaAttributes(ariaArgs);
+
   const contentIsString = typeof content === 'string';
   const {getReferenceProps, getFloatingProps} = useInteractions(context);
 
@@ -134,14 +141,18 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
         children,
         getReferenceProps({
           ref: composeRefs<Element>(reference, children.ref),
-          ...buildContextAriaAttributes(ariaArgs),
+          ...refElAriaAttributes,
+          id:
+            floatingElAriaAttributes['aria-labelledby'] && !children.props.id
+              ? defaultRefId
+              : undefined,
         }),
       )}
       {open && (
         <StyledFloatingElement
           {...getFloatingProps({
             ref: floating,
-            id,
+            id: floatingId,
             className,
           })}
           strategy={strategy}
@@ -151,7 +162,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
           overrides={overrides}
           hidePointer={hidePointer}
           role={role}
-          {...buildFloatingElementAriaAttributes(ariaArgs)}
+          {...floatingElAriaAttributes}
           path={path}
         >
           <StyledPanel
@@ -164,7 +175,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
           {!hidePointer && (
             <StyledPointer
               path={path}
-              id={`${id}-pointer`}
+              id={`${floatingId}-pointer`}
               ref={pointerRef}
               placement={statefulPlacement}
               $x={pointerX}

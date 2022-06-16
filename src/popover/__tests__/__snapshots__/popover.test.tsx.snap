@@ -5,6 +5,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -49,6 +50,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -72,6 +74,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -116,6 +119,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -139,6 +143,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -183,6 +188,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -206,6 +212,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -250,6 +257,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -273,6 +281,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -303,6 +312,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -322,6 +332,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -366,6 +377,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -389,6 +401,7 @@ exports[`Popover pointer padding should be applied with token distance override 
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -433,6 +446,7 @@ exports[`Popover pointer padding should be applied with token distance override 
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -456,6 +470,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -500,6 +515,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -523,6 +539,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -567,6 +584,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -590,6 +608,7 @@ exports[`Popover should render correct styles: default 1`] = `
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -620,6 +639,7 @@ exports[`Popover should render correct styles: default 1`] = `
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -639,6 +659,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -671,6 +692,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -690,6 +712,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -734,6 +757,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -757,6 +781,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -801,6 +826,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -824,6 +850,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -868,6 +895,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -891,6 +919,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -935,6 +964,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 
 <div
     aria-expanded="true"
+    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"

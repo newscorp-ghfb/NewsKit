@@ -59,8 +59,8 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
       path="tooltip"
       className="Tooltip"
       content={content}
-      buildContextAriaAttributes={buildContextAriaAttributes}
-      buildFloatingElementAriaAttributes={buildFloatingElementAriaAttributes}
+      buildRefElAriaAttributes={buildContextAriaAttributes}
+      buildFloatingElAriaAttributes={buildFloatingElementAriaAttributes}
       useInteractions={useInteractions}
       role={!asLabel ? 'tooltip' : undefined}
       {...props}

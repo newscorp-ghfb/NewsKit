@@ -23,8 +23,10 @@ const buildContextAriaAttributes: BuildAriaAttributesFn = ({
 
 const buildFloatingElementAriaAttributes: BuildAriaAttributesFn = ({
   floating: {open},
+  ref: {id},
 }) => ({
   'aria-expanded': open,
+  'aria-labelledby': id,
 });
 
 const ThemelessPopover: React.FC<PopoverProps> = ({
@@ -40,8 +42,8 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
     <BaseFloatingElement
       path="popover"
       content={content}
-      buildContextAriaAttributes={buildContextAriaAttributes}
-      buildFloatingElementAriaAttributes={buildFloatingElementAriaAttributes}
+      buildRefElAriaAttributes={buildContextAriaAttributes}
+      buildFloatingElAriaAttributes={buildFloatingElementAriaAttributes}
       useInteractions={useInteractions}
       role="dialog"
       {...props}
