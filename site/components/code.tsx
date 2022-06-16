@@ -33,12 +33,27 @@ const StyledDiv = styled.div`
   ${getColorCssFromTheme('backgroundColor', 'interface020')};
 `;
 
+const inRange = (lineNumber, ranges) => {
+  for (let [start, end] of ranges) {
+    console.log({start, end});
+    if (lineNumber >= start && lineNumber <= end) {
+      return true;
+    }
+  }
+  return false;
+};
+
 export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const tabIndex = useTabIndexWhenScroll(containerRef, {firstChild: true});
 
   const {colors} = useTheme();
   const highlighterTheme = generateCodeHighlighterTheme(colors);
+
+  const ranges = [
+    [2, 2],
+    [5, 10],
+  ];
 
   return (
     <StyledDiv ref={containerRef}>
@@ -49,11 +64,24 @@ export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => {
         style={highlighterTheme}
         showLineNumbers
         showInlineLineNumbers
+        wrapLines
         customStyle={{
           overflow: 'auto',
           marginLeft: '0.5em',
           marginRight: '0.5em',
           marginBottom: '0.5em',
+        }}
+        lineProps={lineNumber => {
+          console.log({lineNumber});
+          let style = {display: 'block'};
+          if (ranges.length) {
+            if (inRange(lineNumber, ranges)) {
+              style.backgroundColor = 'rgb(231 225 225)';
+            } else {
+              style.opacity = '0.2';
+            }
+          }
+          return {style};
         }}
       >
         {children}
