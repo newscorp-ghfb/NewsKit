@@ -16,11 +16,13 @@ export const Layer: React.FC<LayerProps> = ({
   appendToRef,
   className,
 }) => {
+  // This is the host set in the parent LayerOrganizer
   const {host: layerOrganizerHost} = useLayerOrganizer();
 
-  const parentLayer = useLayer(); // Needed for nesting
+  // parent layer is used for nesting multiple layers
+  const parentLayer = useLayer(); //
 
-  const container = React.useMemo(
+  const layerElement = React.useMemo(
     () => typeof document !== 'undefined' && document.createElement('div'),
     [],
   );
@@ -28,38 +30,45 @@ export const Layer: React.FC<LayerProps> = ({
   useIsomorphicLayoutEffect(() => {
     // SSR only
     /* istanbul ignore next */
-    if (!container || typeof document === 'undefined') return;
+    if (!layerElement || typeof document === 'undefined') return;
 
-    let target = layerOrganizerHost || document.body;
+    // target: is the element the Layer will be appended to
+    // it can be document.body, parent layer-organizer or attache to another element via Ref
+    let hostElement = layerOrganizerHost || document.body;
     if (appendToRef && appendToRef.current && appendToRef.current.appendChild) {
-      target = appendToRef.current;
+      hostElement = appendToRef.current;
     } else if (parentLayer) {
-      target = parentLayer;
+      hostElement = parentLayer;
     }
 
     /* istanbul ignore next */
-    if (!target) return;
+    if (!hostElement) return;
 
+    // Add default className and user provided classNames to the layer element
+    // Which will allow user to style Layer component
     const classList = [LAYER_CLASSNAME];
     if (className) className.split(' ').forEach(item => classList.push(item));
-    classList.forEach(item => container.classList.add(item));
+    classList.forEach(item => layerElement.classList.add(item));
 
-    target.appendChild(container);
+    hostElement.appendChild(layerElement);
     // eslint-disable-next-line consistent-return
     return () => {
-      if (target) {
-        target.removeChild(container);
+      if (hostElement) {
+        hostElement.removeChild(layerElement);
       }
     };
-  }, [container, parentLayer, layerOrganizerHost, appendToRef, className]);
+  }, [layerElement, parentLayer, layerOrganizerHost, appendToRef, className]);
 
-  return typeof document === 'undefined' || !container ? (
+  // On SSR we don't render layers so there is not nesting, because React.Portal needs DOM
+  return typeof document === 'undefined' || !layerElement ? (
     /* istanbul ignore next */
     <>{children}</>
   ) : (
     createPortal(
-      <LayerContextProvider value={container}>{children}</LayerContextProvider>,
-      container,
+      <LayerContextProvider value={layerElement}>
+        {children}
+      </LayerContextProvider>,
+      layerElement,
     )
   );
 };

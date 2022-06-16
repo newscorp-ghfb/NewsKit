@@ -13,35 +13,39 @@ export const LayerOrganizer: React.FC<LayerOrganizerProps> = ({
   children,
   zIndex,
 }) => {
+  // host is a container for all layers
   const [host, setHost] = useState<HTMLDivElement | null>(null);
 
-  const parentLayerOrganizer = useLayerOrganizer(); // Needed for nesting
+  // parent layer organizer is used for nesting multiple layer-organizers
+  const parentLayerOrganizer = useLayerOrganizer();
+  // The parent container that the new layer-organizer(host) will be attached
+  const parentHost = parentLayerOrganizer.host;
 
-  // Create host when additional layers
-  // Otherwise don't add div to DOM ??
-  // Remove host when needed
-  const container = React.useMemo(
+  // Create a host element which hold all layers
+  const hostElement = React.useMemo(
     () => typeof document !== 'undefined' && document.createElement('div'),
     [],
   );
 
   useIsomorphicLayoutEffect(() => {
+    // Ignore that on SSR
     /* istanbul ignore next */
-    if (!container || typeof document === 'undefined') return;
+    if (!hostElement || typeof document === 'undefined') return;
 
-    const target = parentLayerOrganizer.host || document.body;
-    container.setAttribute('class', LAYER_ORGANIZER_CLASSNAME);
+    // target: is the place where we attach the current layer-organizer(host)
+    const target = parentHost || document.body;
+    hostElement.setAttribute('class', LAYER_ORGANIZER_CLASSNAME);
 
     if (zIndex) {
-      container.style.position = 'absolute';
-      container.style.top = '0';
-      container.style.left = '0';
-      container.style.right = '0';
-      container.style.zIndex = zIndex.toString();
+      hostElement.style.position = 'absolute';
+      hostElement.style.top = '0';
+      hostElement.style.left = '0';
+      hostElement.style.right = '0';
+      hostElement.style.zIndex = zIndex.toString();
     }
 
-    target.appendChild(container);
-    setHost(container);
+    target.appendChild(hostElement);
+    setHost(hostElement);
 
     // eslint-disable-next-line consistent-return
     return () => {
@@ -50,7 +54,7 @@ export const LayerOrganizer: React.FC<LayerOrganizerProps> = ({
         setHost(null);
       }
     };
-  }, [container, host, parentLayerOrganizer.host, zIndex]);
+  }, [hostElement, host, parentLayerOrganizer.host, zIndex]);
 
   const layerOrganizerCtx = {
     host,
