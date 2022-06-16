@@ -156,7 +156,7 @@ export default [
           {
             title: 'Gradients',
             page: true,
-            id: '/theme/gradients',
+            id: '/theme/foundation/gradients',
             illustration: 'theme/gradients/hero',
             description:
               'Gradients is a visual representation of a colour. It is used to convey meaning and communicate a brand.',
@@ -180,7 +180,7 @@ export default [
           {
             title: 'Opacity',
             page: true,
-            id: '/theme/opacity',
+            id: '/theme/foundation/opacity',
             illustration: 'theme/opacity/hero',
             description:
               'Opacity is used to create a visual layer between elements.',
@@ -188,7 +188,7 @@ export default [
           {
             title: 'Overlays',
             page: true,
-            id: '/theme/overlays',
+            id: '/theme/foundation/overlays',
             illustration: 'theme/overlays/hero',
             description:
               'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
@@ -219,23 +219,6 @@ export default [
           },
         ],
       },
-      //
-      // {
-      //   title: 'Overlays',
-      //   page: true,
-      //   id: '/theme/foundation/overlays',
-      //   illustration: 'static/theming/theme/overlays.svg',
-      //   description:
-      //     'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
-      // },
-      // {
-      //   title: 'Typography',
-      //   page: true,
-      //   id: /theme/foundation/fonts',
-      //   illustration: 'static/theming/theme/typography.svg',
-      //   description:
-      //     'Fonts define the font family, boldness, size, and the style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
-      // },
       {
         title: 'Presets',
         id: '/theme/presets',

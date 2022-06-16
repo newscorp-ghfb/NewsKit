@@ -1470,7 +1470,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="/theme/gradients"
+                              href="/theme/foundation/gradients"
                               tabindex="-1"
                             >
                               <div
@@ -1545,7 +1545,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="/theme/opacity"
+                              href="/theme/foundation/opacity"
                               tabindex="-1"
                             >
                               <div
@@ -1570,7 +1570,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="/theme/overlays"
+                              href="/theme/foundation/overlays"
                               tabindex="-1"
                             >
                               <div
@@ -4858,7 +4858,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="/theme/gradients"
+                        href="/theme/foundation/gradients"
                       >
                         <div
                           class="emotion-10"
@@ -4930,7 +4930,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="/theme/opacity"
+                        href="/theme/foundation/opacity"
                       >
                         <div
                           class="emotion-10"
@@ -4954,7 +4954,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="/theme/overlays"
+                        href="/theme/foundation/overlays"
                       >
                         <div
                           class="emotion-10"
@@ -8366,7 +8366,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="/theme/gradients"
+                              href="/theme/foundation/gradients"
                             >
                               <div
                                 class="emotion-10"
@@ -8438,7 +8438,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="/theme/opacity"
+                              href="/theme/foundation/opacity"
                             >
                               <div
                                 class="emotion-10"
@@ -8462,7 +8462,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="/theme/overlays"
+                              href="/theme/foundation/overlays"
                             >
                               <div
                                 class="emotion-10"
@@ -11682,7 +11682,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="/theme/gradients"
+                        href="/theme/foundation/gradients"
                       >
                         <div
                           class="emotion-10"
@@ -11754,7 +11754,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="/theme/opacity"
+                        href="/theme/foundation/opacity"
                       >
                         <div
                           class="emotion-10"
@@ -11778,7 +11778,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="/theme/overlays"
+                        href="/theme/foundation/overlays"
                       >
                         <div
                           class="emotion-10"

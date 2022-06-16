@@ -1,19 +1,19 @@
 import React from 'react';
 import {newskitLightTheme} from 'newskit';
-import {Link} from '../../components/link';
-import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-import {UsageKind} from '../../components/usage-card';
-import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {LayoutProps} from '../../components/layout';
-import {MediaList} from '../../components/media-list';
+import {Link} from '../../../components/link';
+import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
+import {UsageKind} from '../../../components/usage-card';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {LayoutProps} from '../../../components/layout';
+import {MediaList} from '../../../components/media-list';
 import {
   ContentPrimary,
   ContentSection,
-} from '../../components/content-structure';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {getTokenType} from '../../utils/get-token-type';
-import {TableRow} from '../../components/table';
-import {TabsWithTable} from '../../components/tabs-with-table';
+} from '../../../components/content-structure';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {getTokenType} from '../../../utils/get-token-type';
+import {TableRow} from '../../../components/table';
+import {TabsWithTable} from '../../../components/tabs-with-table';
 
 const usageString = 'Creative use case';
 const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
