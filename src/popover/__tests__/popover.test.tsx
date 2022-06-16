@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import {fireEvent} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import {asyncRender, renderWithTheme} from '../../test/test-utils';
+import {renderWithTheme, applyAsyncStyling} from '../../test/test-utils';
 import {Popover, PopoverProps} from '..';
 import {Button} from '../../button';
 import {createTheme} from '../../theme';
@@ -16,7 +16,6 @@ describe('Popover', () => {
   const defaultProps: PopoverProps = {
     children: <button type="submit">Add</button>,
     content: 'hello',
-    defaultOpen: true,
     hidePointer: true,
   };
 
@@ -33,7 +32,9 @@ describe('Popover', () => {
 
   describe('should render correct styles:', () => {
     test('default', async () => {
-      const {getByRole, asFragment} = await asyncRender(Popover, defaultProps);
+      const {getByRole, asFragment} = renderWithTheme(Popover, defaultProps);
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(getByRole('dialog').textContent).toBe('hello');
       expect(getByRole('dialog')).toHaveStyle({
         position: 'absolute',
@@ -41,17 +42,19 @@ describe('Popover', () => {
       expect(asFragment()).toMatchSnapshot();
     });
     test('not render if content is an empty string', () => {
-      const {queryByRole} = renderWithTheme(Popover, {
+      const {queryByRole, getByRole} = renderWithTheme(Popover, {
         children: <button type="submit">Add</button>,
         content: '',
       });
+      fireEvent.click(getByRole('button'));
       expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
     test('with different placement', async () => {
-      const {getByRole} = await asyncRender(Popover, {
+      const {getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         placement: 'bottom',
       });
+      fireEvent.click(getByRole('button'));
       expect(getByRole('dialog')).toHaveStyle({
         position: 'absolute',
       });
@@ -71,7 +74,7 @@ describe('Popover', () => {
           },
         },
       });
-      const {asFragment} = await asyncRender(
+      const {asFragment, getByRole} = renderWithTheme(
         Popover,
         {
           ...defaultProps,
@@ -89,13 +92,17 @@ describe('Popover', () => {
         },
         myCustomTheme,
       );
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer', async () => {
-      const {asFragment} = await asyncRender(Popover, {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         hidePointer: false,
       });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer stylePreset overrides', async () => {
@@ -111,7 +118,7 @@ describe('Popover', () => {
           },
         },
       });
-      const {asFragment} = await asyncRender(
+      const {asFragment, getByRole} = renderWithTheme(
         Popover,
         {
           ...defaultProps,
@@ -124,10 +131,12 @@ describe('Popover', () => {
         },
         myCustomTheme,
       );
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer size overrides', async () => {
-      const {asFragment} = await asyncRender(Popover, {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
@@ -136,38 +145,46 @@ describe('Popover', () => {
           },
         },
       });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer y coordinate', async () => {
-      const {asFragment} = await asyncRender(Popover, {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         hidePointer: false,
         placement: 'right',
       });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
   });
 
   describe('offset', () => {
     test('should not be applied with with no pointer', async () => {
-      const {asFragment} = await asyncRender(Popover, {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         hidePointer: true,
         overrides: {
           distance: 'space040',
         },
       });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('should not be applied with pointer and non-px distance override', async () => {
       jest.spyOn(console, 'warn').mockImplementation();
-      const {asFragment} = await asyncRender(Popover, {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
           distance: '1rem',
         },
       });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'distance' is a valid token or px value.",
@@ -176,13 +193,15 @@ describe('Popover', () => {
     });
     test('should not be applied with pointer and invalid token distance override', async () => {
       jest.spyOn(console, 'warn').mockImplementation();
-      const {asFragment} = await asyncRender(Popover, {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
           distance: 'invalid token',
         },
       });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'distance' is a valid token or px value.",
@@ -190,23 +209,27 @@ describe('Popover', () => {
       expect(asFragment()).toMatchSnapshot();
     });
     test('should be applied with pointer and token distance override', async () => {
-      const {asFragment} = await asyncRender(Popover, {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
           distance: 'space040',
         },
       });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('should be applied with pointer and px distance override', async () => {
-      const {asFragment} = await asyncRender(Popover, {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
           distance: '10px',
         },
       });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
   });
@@ -214,7 +237,7 @@ describe('Popover', () => {
   describe('pointer padding', () => {
     test('should not be applied with non-px distance override', async () => {
       jest.spyOn(console, 'warn').mockImplementation();
-      const {asFragment} = await asyncRender(Popover, {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
@@ -223,6 +246,8 @@ describe('Popover', () => {
           },
         },
       });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'pointer.padding' is a valid token or px value.",
@@ -231,7 +256,7 @@ describe('Popover', () => {
     });
     test('should not be applied with invalid token distance override', async () => {
       jest.spyOn(console, 'warn').mockImplementation();
-      const {asFragment} = await asyncRender(Popover, {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
@@ -240,6 +265,8 @@ describe('Popover', () => {
           },
         },
       });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'pointer.padding' is a valid token or px value.",
@@ -247,7 +274,7 @@ describe('Popover', () => {
       expect(asFragment()).toMatchSnapshot();
     });
     test('should be applied with token distance override', async () => {
-      const {asFragment} = await asyncRender(Popover, {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
@@ -256,10 +283,12 @@ describe('Popover', () => {
           },
         },
       });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('should be applied with px distance override', async () => {
-      const {asFragment} = await asyncRender(Popover, {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
@@ -268,6 +297,8 @@ describe('Popover', () => {
           },
         },
       });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
   });
@@ -276,7 +307,6 @@ describe('Popover', () => {
     test('opens on clicking context element', () => {
       const {getByRole, queryByRole} = renderWithTheme(Popover, {
         ...defaultProps,
-        defaultOpen: false,
       });
       const button = getByRole('button');
       fireEvent.click(button);
@@ -285,7 +315,6 @@ describe('Popover', () => {
     test('closes on clicking context element', () => {
       const {getByRole, queryByRole} = renderWithTheme(Popover, {
         ...defaultProps,
-        defaultOpen: false,
       });
       const button = getByRole('button');
       fireEvent.click(button);
@@ -295,7 +324,6 @@ describe('Popover', () => {
     test('does not close on escape key', () => {
       const {getByRole, queryByRole} = renderWithTheme(Popover, {
         ...defaultProps,
-        defaultOpen: false,
       });
       const button = getByRole('button');
       fireEvent.click(button);
@@ -306,7 +334,7 @@ describe('Popover', () => {
       const Component = () => (
         <>
           <div data-testid="outside" />
-          <Popover {...defaultProps} defaultOpen={false} />
+          <Popover {...defaultProps} />
         </>
       );
       const {getByTestId, getByRole, queryByRole} = renderWithTheme(Component);
@@ -317,20 +345,6 @@ describe('Popover', () => {
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
   });
-
-  // Not currently supported due to https://github.com/floating-ui/floating-ui/issues/1741
-  // describe('defaultOpen', () => {
-  //   test('should be open onload and close on first click if defaultOpen=true', () => {
-  //     const {getByRole, queryByRole} = renderWithTheme(Popover, {
-  //       ...defaultProps,
-  //       defaultOpen: true,
-  //     });
-  //     expect(queryByRole('dialog')).not.toBeInTheDocument();
-  //     const button = getByRole('button');
-  //     fireEvent.click(button);
-  //     expect(queryByRole('dialog')).not.toBeInTheDocument();
-  //   });
-  // });
 
   describe('controlled case', () => {
     test('should open and close based on state passed', () => {
@@ -388,11 +402,13 @@ describe('Popover', () => {
 
   describe('pass the correct a11y attributes:', () => {
     test("floating element has role 'dialog'", () => {
-      const {queryByRole} = renderWithTheme(Popover, defaultProps);
+      const {queryByRole, getByRole} = renderWithTheme(Popover, defaultProps);
+      fireEvent.click(getByRole('button'));
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
     test('floating element has aria-expanded', () => {
-      const {queryByRole} = renderWithTheme(Popover, defaultProps);
+      const {queryByRole, getByRole} = renderWithTheme(Popover, defaultProps);
+      fireEvent.click(getByRole('button'));
       const el = queryByRole('dialog');
       expect(el).toHaveAttribute('aria-expanded', 'true');
     });
@@ -417,7 +433,6 @@ describe('Popover', () => {
     test('calls onDismiss on close', () => {
       const {getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
-        defaultOpen: false,
         onDismiss,
       });
       const button = getByRole('button');
@@ -428,7 +443,6 @@ describe('Popover', () => {
     test('does not call onDismiss on first load if closed', () => {
       renderWithTheme(Popover, {
         ...defaultProps,
-        defaultOpen: false,
         onDismiss,
       });
       expect(onDismiss).not.toHaveBeenCalled();
@@ -441,7 +455,7 @@ describe('Popover', () => {
         <>
           {/* eslint-disable-next-line jsx-a11y/no-autofocus */}
           <input data-testid="input1" autoFocus />
-          <Popover {...defaultProps} defaultOpen={false} />
+          <Popover {...defaultProps} />
         </>
       );
       const {getByTestId} = renderWithTheme(Component);
@@ -451,7 +465,6 @@ describe('Popover', () => {
     test('on container on open', () => {
       const {getByRole, queryByRole} = renderWithTheme(Popover, {
         ...defaultProps,
-        defaultOpen: false,
       });
       const button = getByRole('button');
       userEvent.click(button);
@@ -462,7 +475,6 @@ describe('Popover', () => {
       const Component = () => (
         <Popover
           {...defaultProps}
-          defaultOpen={false}
           content={
             <>
               <input data-testid="input1" />
@@ -486,7 +498,7 @@ describe('Popover', () => {
     test('can still focus on elements outside popover', () => {
       const Component = () => (
         <>
-          <Popover {...defaultProps} defaultOpen={false} />
+          <Popover {...defaultProps} />
           <input data-testid="input1" />
           <input data-testid="input2" />
         </>
@@ -506,7 +518,6 @@ describe('Popover', () => {
     test('on context element on close', () => {
       const {getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
-        defaultOpen: false,
       });
       const button = getByRole('button');
       userEvent.click(button);
@@ -527,7 +538,6 @@ describe('Popover', () => {
             <div>Has re-rendered with ref initialized: {forceRenderState}</div>
             <Popover
               {...defaultProps}
-              defaultOpen={false}
               restoreFocusTo={restoreFocusRef.current || undefined}
             />
             <input ref={restoreFocusRef} data-testid="restoreFocus" />

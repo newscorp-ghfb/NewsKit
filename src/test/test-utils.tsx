@@ -69,13 +69,6 @@ export {renderHook} from '@testing-library/react-hooks';
 // assertions on the top / left attribute values, we need to flush the queue to
 // ensure that the element has been positioned before making assertions on
 // snapshots. See https://floating-ui.com/docs/react-dom#testing for more info.
-export const asyncRender = async <T extends {}>(
-  Component: React.ComponentType<T>,
-  props?: T & {children?: React.ReactNode},
-  theme?: ThemeProviderProps['theme'],
-  options?: Omit<RenderOptions, 'wrapper'>,
-) => {
-  const res = await renderWithTheme(Component, props, theme, options);
+export const applyAsyncStyling = async () => {
   await act(async () => {});
-  return res;
 };

@@ -21,7 +21,6 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   content,
   placement = 'top',
   open: openProp,
-  defaultOpen,
   overrides,
   hidePointer = false,
   role,
@@ -38,7 +37,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
 }) => {
   const [open, setOpen] = useControlled({
     controlledValue: openProp,
-    defaultValue: Boolean(defaultOpen),
+    defaultValue: false,
   });
 
   const theme = useTheme();

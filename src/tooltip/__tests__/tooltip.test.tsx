@@ -1,6 +1,6 @@
 import React from 'react';
 import {fireEvent} from '@testing-library/react';
-import {renderWithTheme, asyncRender} from '../../test/test-utils';
+import {renderWithTheme, applyAsyncStyling} from '../../test/test-utils';
 import {Tooltip, TooltipProps} from '..';
 import {TriggerType} from '../types';
 import {Button} from '../../button';
@@ -15,7 +15,6 @@ describe('Tooltip', () => {
   const defaultProps: TooltipProps = {
     children: <button type="submit">Add</button>,
     content: 'hello',
-    defaultOpen: true,
     hidePointer: true,
   };
 
@@ -32,7 +31,9 @@ describe('Tooltip', () => {
 
   describe('should render correct styles:', () => {
     test('default', async () => {
-      const {getByRole, asFragment} = await asyncRender(Tooltip, defaultProps);
+      const {getByRole, asFragment} = renderWithTheme(Tooltip, defaultProps);
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(getByRole('tooltip', {hidden: true}).textContent).toBe('hello');
       expect(getByRole('tooltip', {hidden: true})).toHaveStyle({
         position: 'absolute',
@@ -47,10 +48,12 @@ describe('Tooltip', () => {
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
     test('with different placement', async () => {
-      const {getByRole} = await asyncRender(Tooltip, {
+      const {getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         placement: 'bottom',
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(getByRole('tooltip', {hidden: true})).toHaveStyle({
         position: 'absolute',
       });
@@ -70,7 +73,7 @@ describe('Tooltip', () => {
           },
         },
       });
-      const {asFragment} = await asyncRender(
+      const {asFragment, getByRole} = renderWithTheme(
         Tooltip,
         {
           ...defaultProps,
@@ -88,13 +91,17 @@ describe('Tooltip', () => {
         },
         myCustomTheme,
       );
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer stylePreset overrides', async () => {
@@ -110,7 +117,7 @@ describe('Tooltip', () => {
           },
         },
       });
-      const {asFragment} = await asyncRender(
+      const {asFragment, getByRole} = renderWithTheme(
         Tooltip,
         {
           ...defaultProps,
@@ -123,10 +130,12 @@ describe('Tooltip', () => {
         },
         myCustomTheme,
       );
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer size overrides', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
@@ -135,38 +144,46 @@ describe('Tooltip', () => {
           },
         },
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer y coordinate', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         placement: 'right',
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
   });
 
   describe('offset', () => {
     test('should not be applied with with no pointer', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: true,
         overrides: {
           distance: 'space040',
         },
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('should not be applied with pointer and non-px distance override', async () => {
       jest.spyOn(console, 'warn').mockImplementation();
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
           distance: '1rem',
         },
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'distance' is a valid token or px value.",
@@ -175,13 +192,15 @@ describe('Tooltip', () => {
     });
     test('should not be applied with pointer and invalid token distance override', async () => {
       jest.spyOn(console, 'warn').mockImplementation();
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
           distance: 'invalid token',
         },
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'distance' is a valid token or px value.",
@@ -189,23 +208,27 @@ describe('Tooltip', () => {
       expect(asFragment()).toMatchSnapshot();
     });
     test('should be applied with pointer and token distance override', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
           distance: 'space040',
         },
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('should be applied with pointer and px distance override', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
           distance: '10px',
         },
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
   });
@@ -213,7 +236,7 @@ describe('Tooltip', () => {
   describe('pointer padding', () => {
     test('should not be applied with non-px distance override', async () => {
       jest.spyOn(console, 'warn').mockImplementation();
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
@@ -222,6 +245,8 @@ describe('Tooltip', () => {
           },
         },
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'pointer.padding' is a valid token or px value.",
@@ -230,7 +255,7 @@ describe('Tooltip', () => {
     });
     test('should not be applied with invalid token distance override', async () => {
       jest.spyOn(console, 'warn').mockImplementation();
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
@@ -239,6 +264,8 @@ describe('Tooltip', () => {
           },
         },
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
         "Invalid component override: please make sure 'pointer.padding' is a valid token or px value.",
@@ -246,7 +273,7 @@ describe('Tooltip', () => {
       expect(asFragment()).toMatchSnapshot();
     });
     test('should be applied with token distance override', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
@@ -255,10 +282,12 @@ describe('Tooltip', () => {
           },
         },
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('should be applied with px distance override', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
@@ -267,6 +296,8 @@ describe('Tooltip', () => {
           },
         },
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
   });
@@ -275,7 +306,6 @@ describe('Tooltip', () => {
     test('opens on mouseover by default', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        defaultOpen: false,
       });
       const button = getByRole('button');
       fireEvent.mouseEnter(button);
@@ -284,7 +314,6 @@ describe('Tooltip', () => {
     test('closes on mouseleave', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        defaultOpen: false,
       });
       const button = getByRole('button');
 
@@ -295,7 +324,6 @@ describe('Tooltip', () => {
     test('opens on focus by default', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        defaultOpen: false,
       });
       const button = getByRole('button');
       fireEvent.focus(button);
@@ -305,7 +333,6 @@ describe('Tooltip', () => {
     test('closes on blur', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        defaultOpen: false,
         trigger: 'focus' as TriggerType,
       });
       const button = getByRole('button');
@@ -317,7 +344,6 @@ describe('Tooltip', () => {
     test('will not open on focus when focus trigger is not passed', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        defaultOpen: false,
         trigger: 'hover',
       });
       const button = getByRole('button');
@@ -326,7 +352,8 @@ describe('Tooltip', () => {
     });
 
     test('dismisses with escape key', () => {
-      const {queryByRole} = renderWithTheme(Tooltip, defaultProps);
+      const {queryByRole, getByRole} = renderWithTheme(Tooltip, defaultProps);
+      fireEvent.mouseEnter(getByRole('button'));
       expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
       fireEvent.keyDown(document.body, {key: 'Escape'});
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
@@ -335,20 +362,21 @@ describe('Tooltip', () => {
 
   describe('pass the correct a11y attributes:', () => {
     test('have role tooltip when used as a description', () => {
-      const {queryByRole} = renderWithTheme(Tooltip, defaultProps);
+      const {queryByRole, getByRole} = renderWithTheme(Tooltip, defaultProps);
+      fireEvent.mouseEnter(getByRole('button'));
       expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
     });
     test('do not have role tooltip when used as a label', () => {
-      const {queryByRole} = renderWithTheme(Tooltip, {
+      const {queryByRole, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         asLabel: true,
       });
+      fireEvent.mouseEnter(getByRole('button'));
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
     test('can describe the child when open and remove aria attribute when closed', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        defaultOpen: false,
       });
       const button = getByRole('button');
       fireEvent.mouseEnter(button);
@@ -360,7 +388,6 @@ describe('Tooltip', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
         content: <div>the content</div>,
-        defaultOpen: false,
       });
       const button = getByRole('button');
       fireEvent.mouseEnter(button);
@@ -371,7 +398,6 @@ describe('Tooltip', () => {
     test('should label the child when closed', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        defaultOpen: false,
         asLabel: true,
       });
       const button = getByRole('button');
@@ -381,7 +407,6 @@ describe('Tooltip', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
         content: <div>the content</div>,
-        defaultOpen: false,
         asLabel: true,
       });
       const button = getByRole('button');

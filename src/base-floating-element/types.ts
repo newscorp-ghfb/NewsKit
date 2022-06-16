@@ -27,7 +27,6 @@ export interface FloatingElementProps
   trigger?: TriggerType | TriggerType[];
   content: React.ReactNode;
   open?: boolean;
-  defaultOpen?: boolean;
   placement?: Placement;
   overrides?: {
     zIndex?: number;
