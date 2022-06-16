@@ -140,6 +140,7 @@ const myCustomTheme = createTheme({
           borderColor: '{{colors.red080}}',
           boxShadow: '{{shadows.shadow050}}',
           borderRadius: '{{borders.borderRadiusDefault}}',
+          backgroundColor: '{{colors.red020}}', // require for Firefox
         },
       },
       popoverPointerCustom: {
