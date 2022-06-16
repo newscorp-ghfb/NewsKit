@@ -10,6 +10,7 @@ import {IconButton} from '../../icon-button';
 import {FallbackBehaviourType} from '../../base-floating-element';
 import {GridLayout} from '../../grid-layout';
 import {createTheme, ThemeProvider} from '../../theme';
+import {PopoverProps} from '../types';
 
 const getPlacementPosition = (placement: Placement) => {
   const [side, alignment = 'center'] = placement.split('-');
@@ -59,72 +60,55 @@ const StyledContainer = styled.div`
   padding: 5px;
 `;
 
+const PopoverWithBtn = (props: Omit<PopoverProps, 'children'>) => (
+  <Popover {...props}>
+    <IconButton
+      aria-label="info-icon"
+      size={ButtonSize.Small}
+      overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
+    >
+      <IconFilledInfo />
+    </IconButton>
+  </Popover>
+);
+
 export const StoryPopoverDefault = () => (
   <>
     <div>
       <StorybookSubHeading>String content</StorybookSubHeading>
       <StyledContainer style={getPlacementPosition('top')}>
-        <Popover content="Popover content">
-          <IconButton
-            size={ButtonSize.Small}
-            overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
-          >
-            <IconFilledInfo />
-          </IconButton>
-        </Popover>
+        <PopoverWithBtn content="Popover content" />
       </StyledContainer>
     </div>
     <div>
       <StorybookSubHeading>HTML content</StorybookSubHeading>
       <StyledContainer style={getPlacementPosition('top')}>
-        <Popover content={<Button size="small">Click me</Button>}>
-          <IconButton
-            size={ButtonSize.Small}
-            overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
-          >
-            <IconFilledInfo />
-          </IconButton>
-        </Popover>
+        <PopoverWithBtn content={<Button size="small">Click me</Button>} />
       </StyledContainer>
     </div>
     <GridLayout columns={{xs: 'repeat(3, minmax(0, 1fr))'}}>
       <div>
         <StorybookSubHeading>Default distance</StorybookSubHeading>
         <StyledContainer style={getPlacementPosition('top')}>
-          <Popover content="Popover content">
-            <IconButton
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
-            >
-              <IconFilledInfo />
-            </IconButton>
-          </Popover>
+          <PopoverWithBtn content="Popover content" />
         </StyledContainer>
       </div>
       <div>
         <StorybookSubHeading>Increased distance</StorybookSubHeading>
         <StyledContainer style={getPlacementPosition('top')}>
-          <Popover content="Popover content" overrides={{distance: 'space070'}}>
-            <IconButton
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
-            >
-              <IconFilledInfo />
-            </IconButton>
-          </Popover>
+          <PopoverWithBtn
+            content="Popover content"
+            overrides={{distance: 'space070'}}
+          />
         </StyledContainer>
       </div>
       <div>
         <StorybookSubHeading>Decreased distance</StorybookSubHeading>
         <StyledContainer style={getPlacementPosition('top')}>
-          <Popover content="Popover content" overrides={{distance: 'space030'}}>
-            <IconButton
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
-            >
-              <IconFilledInfo />
-            </IconButton>
-          </Popover>
+          <PopoverWithBtn
+            content="Popover content"
+            overrides={{distance: 'space030'}}
+          />
         </StyledContainer>
       </div>
     </GridLayout>
@@ -138,14 +122,7 @@ export const StoryPopoverPositions = () => (
       <div key={placement}>
         <StorybookSubHeading>Popover - {placement}</StorybookSubHeading>
         <StyledContainer style={getPlacementPosition(placement)}>
-          <Popover content="Popover content" placement={placement}>
-            <IconButton
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
-            >
-              <IconFilledInfo />
-            </IconButton>
-          </Popover>
+          <PopoverWithBtn content="Popover content" placement={placement} />
         </StyledContainer>
       </div>
     ))}
@@ -189,7 +166,7 @@ export const StoryPopoverStyleOverrides = () => (
     <div>
       <StorybookSubHeading>Popover - style overrides</StorybookSubHeading>
       <StyledContainer style={getPlacementPosition('top')}>
-        <Popover
+        <PopoverWithBtn
           content="Popover content"
           overrides={{
             stylePreset: 'popoverCustom',
@@ -200,14 +177,7 @@ export const StoryPopoverStyleOverrides = () => (
               stylePreset: 'popoverPanelCustom',
             },
           }}
-        >
-          <IconButton
-            size={ButtonSize.Small}
-            overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
-          >
-            <IconFilledInfo />
-          </IconButton>
-        </Popover>
+        />
       </StyledContainer>
     </div>
   </ThemeProvider>
@@ -252,20 +222,13 @@ const PopoverWithBoundary = ({
       </StorybookSubHeading>
       <StyledScrollParent ref={boundaryRef}>
         <StyledScrollChild visualTest={visualTest}>
-          <Popover
+          <PopoverWithBtn
             open={visualTest}
             fallbackBehaviour={fallbackBehaviour}
             content="Popover content"
             placement="top"
             boundary={boundaryRef.current || undefined}
-          >
-            <IconButton
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
-            >
-              <IconFilledInfo />
-            </IconButton>
-          </Popover>
+          />
         </StyledScrollChild>
       </StyledScrollParent>
     </>
@@ -287,14 +250,11 @@ export const StoryPopoverPositionsVisualTest = () => (
       <div key={placement}>
         <StorybookSubHeading>Popover - {placement}</StorybookSubHeading>
         <StyledContainer style={getPlacementPosition(placement)}>
-          <Popover open content="Popover content" placement={placement}>
-            <IconButton
-              size={ButtonSize.Small}
-              overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
-            >
-              <IconFilledInfo />
-            </IconButton>
-          </Popover>
+          <PopoverWithBtn
+            open
+            content="Popover content"
+            placement={placement}
+          />
         </StyledContainer>
       </div>
     ))}

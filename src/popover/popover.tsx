@@ -15,10 +15,10 @@ const useInteractions = (context: FloatingContext<HTMLElement>) =>
   floatingUiUseInteractions([useClick(context)]);
 
 const buildContextAriaAttributes: BuildAriaAttributesFn = ({
-  floating: {id},
+  floating: {id, open},
 }) => ({
   'aria-haspopup': 'dialog',
-  'aria-controls': id,
+  'aria-controls': open ? id : undefined,
 });
 
 const buildFloatingElementAriaAttributes: BuildAriaAttributesFn = ({
