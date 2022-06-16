@@ -214,13 +214,18 @@ const CSS_PROPS = [
     description: 'The box shadow to an element',
   },
   {
+    token: 'backgroundColor',
+    acceptedValues: <Link href="/theme/overlays/">foundations overlays</Link>,
+    description: 'The overlay of an element',
+  },
+  {
     token: 'opacity',
-    acceptedValues: 'foundations opacity', // TODO: Link to Opacity page when we have it live
+    acceptedValues: <Link href="/theme/opacity/">foundations opacity</Link>,
     description: 'The opacity level of an element',
   },
   {
     token: 'linear-gradient',
-    acceptedValues: 'foundations gradient', // TODO: Link to Gradients page when we have it live
+    acceptedValues: <Link href="/theme/gradients/">foundations gradient</Link>,
     description: 'The transition between two or more specified colors',
   },
 ];

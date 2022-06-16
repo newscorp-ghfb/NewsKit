@@ -15,6 +15,7 @@ export const useTheme = (_useTheme as unknown) as () => Theme;
 
 export interface ThemeProviderProps {
   theme: UncompiledTheme | Theme | ((outerTheme: Theme) => Theme);
+  children: React.ReactNode;
 }
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   theme,
