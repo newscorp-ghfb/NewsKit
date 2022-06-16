@@ -496,7 +496,7 @@ const StylePresets = (layoutProps: LayoutProps) => (
               <br />
               <br />
               In combination with{' '}
-              <Link href="/theme/foundation/presets/typography-presets/">
+              <Link href="/theme/presets/typography-presets/">
                 Typography Presets
               </Link>
               , <Link href="/theme/foundation/sizing/">Sizing</Link>, and{' '}
@@ -563,7 +563,7 @@ const StylePresets = (layoutProps: LayoutProps) => (
             <>
               Style Presets can be applied to NewsKit components in a number of
               ways,{' '}
-              <Link href="/theme/foundation/theming/using-a-theme/">
+              <Link href="/theme/theming/using-a-theme/">
                 learn more about using a theme in code
               </Link>{' '}
               to better understand the trade-offs associated with each approach.
@@ -624,7 +624,7 @@ const StylePresets = (layoutProps: LayoutProps) => (
           description={
             <>
               Custom Style Presets can be added to the theme. See the{' '}
-              <Link href="/theme/foundation/theming/creating-a-theme/">
+              <Link href="/theme/theming/creating-a-theme/">
                 Creating Themes
               </Link>{' '}
               guide for more details.
