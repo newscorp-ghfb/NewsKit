@@ -1,0 +1,938 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectionList render should render SelectionList with a selected option 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+}
+
+.emotion-1 {
+  width: 100%;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  min-height: 48px;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-1:selected:focus:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #3358CC;
+}
+
+.emotion-1:selected:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:selected:focus:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:selected:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2.emotion-2 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+    role="menu"
+  >
+    <button
+      aria-checked="true"
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      Option 1
+      <svg
+        aria-hidden="true"
+        class="emotion-2 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
+    </button>
+    <button
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      Option 2
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SelectionList render should render SelectionList with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  margin-inline: 12px;
+  margin-block: 8px;
+  padding-inline: 24px;
+  padding-block: 16px;
+}
+
+.emotion-1 {
+  width: 100%;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  min-height: 48px;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-1:selected:focus:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #3358CC;
+}
+
+.emotion-1:selected:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:selected:focus:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:selected:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+<div
+    class="emotion-0"
+    role="menu"
+  >
+    <button
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      Option 1
+    </button>
+    <button
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      Option 2
+    </button>
+    <button
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      Option 3
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SelectionList render should render SelectionList with non-string options 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+}
+
+.emotion-1 {
+  width: 100%;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  min-height: 48px;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-1:selected:focus:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #3358CC;
+}
+
+.emotion-1:selected:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:selected:focus:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:selected:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-3 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3.emotion-3 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+    role="menu"
+  >
+    <button
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      option 1
+    </button>
+    <button
+      aria-checked="true"
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      <div>
+        this is not a string
+      </div>
+      <svg
+        aria-hidden="true"
+        class="emotion-3 emotion-4"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SelectionList render should render SelectionList with updated icon 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+}
+
+.emotion-1 {
+  width: 100%;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  min-height: 48px;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-1:selected:focus:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #3358CC;
+}
+
+.emotion-1:selected:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:selected:focus:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:selected:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<div
+    class="emotion-0"
+    role="menu"
+  >
+    <button
+      aria-checked="true"
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      Option 1
+      <svg
+        aria-hidden="true"
+        class="emotion-2 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SelectionList render should render SelectionListOptions with logical props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+}
+
+.emotion-1 {
+  width: 100%;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  min-height: 48px;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  margin-inline: 12px;
+  margin-block: 8px;
+  padding-inline: 24px;
+  padding-block: 16px;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-1:selected:focus:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #3358CC;
+}
+
+.emotion-1:selected:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:selected:focus:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:selected:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2.emotion-2 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+    role="menu"
+  >
+    <button
+      aria-checked="true"
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      Option 1
+      <svg
+        aria-hidden="true"
+        class="emotion-2 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
+    </button>
+    <button
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      Option 2
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SelectionList render should render SelectionListOptions with overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+}
+
+.emotion-1 {
+  width: 100%;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  font-family: "Bitter",serif;
+  font-size: 22px;
+  line-height: 1.125;
+  font-weight: 500;
+  letter-spacing: 0;
+  min-height: 64px;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-1:selected:focus:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #3358CC;
+}
+
+.emotion-1:selected:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:selected:focus:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:selected:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2.emotion-2 {
+  width: 32px;
+  height: 32px;
+}
+
+<div
+    class="emotion-0"
+    role="menu"
+  >
+    <button
+      aria-checked="true"
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      Option 1
+      <svg
+        aria-hidden="true"
+        class="emotion-2 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
+    </button>
+    <button
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      Option 2
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SelectionList render should render default SelectionList 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+}
+
+.emotion-1 {
+  width: 100%;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  min-height: 48px;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+.emotion-1:selected:focus:not(:disabled) {
+  background-color: #E0E7FF;
+  border-color: #3358CC;
+}
+
+.emotion-1:selected:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:selected:focus:active:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-1:selected:focus:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #0A0A0A;
+}
+
+<div
+    class="emotion-0"
+    role="menu"
+  >
+    <button
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      Option 1
+    </button>
+    <button
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      Option 2
+    </button>
+    <button
+      class="emotion-1"
+      role="menuitemradio"
+    >
+      Option 3
+    </button>
+  </div>
+</DocumentFragment>
+`;

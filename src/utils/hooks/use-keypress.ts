@@ -15,7 +15,7 @@ const isKeyboardEvent = (event: Event): event is KeyboardEvent =>
  This store together with addEventIfNotExist and removeEvent track if the event with the same
   keyShortcut is already attached to the element. This is needed to prevent adding the same event twice.
 
-  In context of audio-player if you add 2 buttons for SkipBackward with same 
+  In context of audio-player if you add 2 buttons for SkipBackward with same
   keyShortcut it will attach event only for the first one.
 */
 const eventsStore = new WeakMap<HTMLElement | Document, string[]>();
