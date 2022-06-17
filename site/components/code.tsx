@@ -14,6 +14,7 @@ import {useTabIndexWhenScroll} from './hooks';
 interface CodeProps extends HTMLAttributes<HTMLDivElement> {
   children: string;
   language?: string;
+  ranges?: Array<Array<number>>;
 }
 
 interface CodeFromFileProps extends HTMLAttributes<HTMLDivElement> {
@@ -33,9 +34,9 @@ const StyledDiv = styled.div`
   ${getColorCssFromTheme('backgroundColor', 'interface020')};
 `;
 
-const inRange = (lineNumber, ranges) => {
-  for (let [start, end] of ranges) {
-    console.log({start, end});
+const inRange = (lineNumber: number, ranges: Array<Array<number>>): boolean => {
+  // eslint-disable-next-line no-restricted-syntax
+  for (const [start, end] of ranges) {
     if (lineNumber >= start && lineNumber <= end) {
       return true;
     }
@@ -43,17 +44,31 @@ const inRange = (lineNumber, ranges) => {
   return false;
 };
 
-export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => {
+export const Code: React.FC<CodeProps> = ({
+  language = 'jsx',
+  children,
+  ranges = [],
+}) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const tabIndex = useTabIndexWhenScroll(containerRef, {firstChild: true});
 
   const {colors} = useTheme();
   const highlighterTheme = generateCodeHighlighterTheme(colors);
 
-  const ranges = [
-    [2, 2],
-    [5, 10],
-  ];
+  useEffect(() => {
+    if (ranges.length) {
+      setTimeout(() => {
+        const [firstLine] = [
+          ...document.querySelectorAll('[data-highlighted="true"]'),
+        ];
+        console.log({firstLine});
+        if (firstLine) {
+          console.log('scroll into view');
+          firstLine.scrollIntoView();
+        }
+      }, 200);
+    }
+  }, [ranges]);
 
   return (
     <StyledDiv ref={containerRef}>
@@ -72,16 +87,16 @@ export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => {
           marginBottom: '0.5em',
         }}
         lineProps={lineNumber => {
-          console.log({lineNumber});
-          let style = {display: 'block'};
+          const props = {style: {display: 'block'}};
           if (ranges.length) {
             if (inRange(lineNumber, ranges)) {
-              style.backgroundColor = 'rgb(231 225 225)';
+              props.style.backgroundColor = 'rgb(231 225 225)';
+              props['data-highlighted'] = 'true';
             } else {
-              style.opacity = '0.2';
+              props.style.opacity = '0.2';
             }
           }
-          return {style};
+          return props;
         }}
       >
         {children}
