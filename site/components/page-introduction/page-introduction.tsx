@@ -1,9 +1,21 @@
 import React from 'react';
-import {Block, TextBlock, Image, ImageProps} from 'newskit';
-import {Separator} from '../separator';
+import {
+  Block,
+  Divider,
+  TextBlock,
+  Image,
+  ImageProps,
+  getSpacingCssFromTheme,
+  styled,
+} from 'newskit';
 import {Illustration} from '../illustrations/illustration-loader';
 import {PageIntroductionProps} from './types';
 import {ComponentPageCell, ComponentPageCellCompact} from '../layout-cells';
+
+const StyledBlock = styled(Block)`
+  ${getSpacingCssFromTheme('marginTop', {xs: 'space090', md: 'space100'})};
+  ${getSpacingCssFromTheme('marginBottom', {xs: 'space030', md: 'space040'})};
+`;
 
 const heroIsImage = (hero: PageIntroductionProps['hero']): hero is ImageProps =>
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -67,7 +79,11 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
           hero && <Illustration path={hero.illustration} />
         )}
       </Block>
-      {showSeparator && <Separator />}
+      {showSeparator && (
+        <StyledBlock>
+          <Divider />
+        </StyledBlock>
+      )}
     </ComponentPageCell>
   </>
 );
