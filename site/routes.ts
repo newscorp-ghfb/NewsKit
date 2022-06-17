@@ -814,6 +814,13 @@ export default [
               'Help users to fill in forms quickly and accurately by following these industry best practices.',
             illustration: 'patterns/forms/best-practice/hero',
           },
+          {
+            title: 'Address',
+            page: true,
+            id: '/patterns/forms/address',
+            description: `Use this type of data entry when there are clear business requirements to collect a user's address. Ask for a user’s physical address for delivery or as part of a billing service.`,
+            illustration: 'patterns/forms/address/hero',
+          },
         ],
       },
     ],
