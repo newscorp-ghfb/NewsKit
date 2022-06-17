@@ -36,7 +36,7 @@ const unorderedListOverrides = {
   },
 };
 
-const StyledDontHeading = styled.span`
+const StyledHeading = styled.span`
   ${getColorCssFromTheme('color', 'inkBrand010')};
 `;
 
