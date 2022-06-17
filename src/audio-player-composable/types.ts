@@ -1,10 +1,15 @@
 import {IconButtonProps} from '../icon-button/types';
+import {
+  AudioPlayerVolumeControlOverridesProps,
+  AudioPlayerVolumeControlProps,
+} from './components/volume-control/types';
 import {AudioPlayerForwardButtonProps} from './components/forward-button/types';
 import {AudioPlayerPlayPauseButtonProps} from './components/play-pause-button/types';
 import {AudioPlayerReplayButtonProps} from './components/replay-button/types';
 import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/types';
 import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
 import {AudioPlayerTimeFormatFn} from './components/time-display/types';
+import {ButtonSize} from '../button';
 
 export interface AudioFunctionDependencies {
   autoPlay: boolean;
@@ -22,7 +27,7 @@ export interface AudioFunctionDependencies {
   setLoading: React.Dispatch<React.SetStateAction<boolean>>;
   setCurrentTime: React.Dispatch<React.SetStateAction<number>>;
   setPlayState: React.Dispatch<React.SetStateAction<boolean>>;
-  // setVolume: React.Dispatch<React.SetStateAction<number>>;
+  setVolume: React.Dispatch<React.SetStateAction<number>>;
   setDuration: React.Dispatch<React.SetStateAction<number>>;
   setDisplayDuration: React.Dispatch<React.SetStateAction<number>>;
   setBuffered: React.Dispatch<React.SetStateAction<TimeRanges | undefined>>;
@@ -55,6 +60,18 @@ export interface AudioPlayerProviderContext {
     onChange: (value: number) => void;
     buffered: TimeRanges | undefined;
   };
+  getVolumeControlProps: (
+    props: AudioPlayerVolumeControlProps,
+  ) => {
+    overrides: AudioPlayerVolumeControlOverridesProps;
+    keyboardShortcuts?: {muteToggle: string | string[]};
+    vertical?: boolean;
+    collapsed?: boolean;
+    onChange: (value: number) => void;
+    volume: number;
+    initialVolume: 0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1;
+    muteButtonSize?: ButtonSize;
+  };
   getSkipPreviousButtonProps: (
     props: AudioPlayerSkipPreviousButtonProps,
   ) => IconButtonProps;
@@ -85,6 +102,7 @@ export interface AudioPlayerComposableProps
     jumpToStart: string | string[];
     jumpToEnd: string | string[];
   };
+  initialVolume?: 0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1;
 }
 
 export enum AudioEvents {
@@ -93,7 +111,7 @@ export enum AudioEvents {
   Waiting = 'onWaiting',
   CanPlay = 'onCanPlay',
   Ended = 'onEnded',
-  // VolumeChange = 'onVolumeChange',
+  VolumeChange = 'onVolumeChange',
   DurationChange = 'onDurationChange',
   TimeUpdate = 'onTimeUpdate',
   Progress = 'onProgress',
