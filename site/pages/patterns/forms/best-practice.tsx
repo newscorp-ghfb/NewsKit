@@ -4,7 +4,7 @@ import {
   InlineMessage,
   UnorderedList,
   styled,
-  getColorFromTheme,
+  getColorCssFromTheme,
 } from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
@@ -37,15 +37,15 @@ const unorderedListOverrides = {
 };
 
 const StyledHeading = styled.span`
-  color: ${getColorFromTheme('inkBrand010')};
+  ${getColorCssFromTheme('color', 'inkBrand010')};
 `;
 
 const StyledDoHeading = styled.span`
-  color: ${getColorFromTheme('inkPositive')};
+  ${getColorCssFromTheme('color', 'inkPositive')};
 `;
 
 const StyledDontHeading = styled.span`
-  color: ${getColorFromTheme('inkNegative')};
+  ${getColorCssFromTheme('color', 'inkNegative')};
 `;
 
 const BestPractice = (layoutProps: LayoutProps) => (
