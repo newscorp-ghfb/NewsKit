@@ -8,6 +8,14 @@ const isPlaying = () => {
     });
 };
 
+const isVolumeVal = val => {
+  cy.get('@audioElement')
+    .invoke('prop', 'volume')
+    .then(volume => {
+      expect(volume).to.equal(val);
+    });
+};
+
 const isPaused = () => {
   cy.get('@togglePlay').should('have.attr', 'aria-label', 'Play');
   cy.get('@audioElement')
@@ -83,6 +91,9 @@ describe('audio player composable', () => {
     ).as('togglePlay');
     cy.get(`${parentTestIDSelector} [data-testid="audio-slider"]`).as(
       'audioSlider',
+    );
+    cy.get(`${parentTestIDSelector} [data-testid="mute-button"]`).as(
+      'muteButton',
     );
     cy.get(`${parentTestIDSelector} [data-testid="audio-slider-thumb"]`).as(
       'audioSliderThumb',
@@ -175,6 +186,15 @@ describe('audio player composable', () => {
 
     triggerKeyEvent('@togglePlay', {key: 'k'});
     isPaused();
+  });
+
+  it('keyboard: toggle when press M key', () => {
+    cy.get('@muteButton').focus();
+    triggerKeyEvent('@muteButton', {key: 'm'});
+    isVolumeVal(0);
+
+    triggerKeyEvent('@muteButton', {key: 'm', force: true});
+    isVolumeVal(0.7);
   });
 
   it('keyboard: toggle when press Space key', () => {
