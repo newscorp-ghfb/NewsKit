@@ -806,6 +806,14 @@ export default [
             description: 'Forms are used to collect customer’s data.',
             illustration: 'patterns/forms/overview/hero',
           },
+          {
+            title: 'Best practice',
+            page: true,
+            id: '/patterns/forms/best-practice',
+            description:
+              'Help users to fill in forms quickly and accurately by following these industry best practices.',
+            illustration: 'patterns/forms/best-practice/hero',
+          },
         ],
       },
     ],
