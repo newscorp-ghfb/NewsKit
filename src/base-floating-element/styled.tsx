@@ -20,7 +20,6 @@ export const StyledFloatingElement = styled.div<
   } & Pick<BaseFloatingElementProps, 'overrides' | 'path'>
 >`
   ${({path}) => getStylePreset(`${path}`, '')};
-  pointer-events: none;
   ${({path}) => getResponsiveSpace('zIndex', path, '', 'zIndex')};
   ${({path}) => getResponsiveSize('maxWidth', path, '', 'maxWidth')};
   ${({path}) => getResponsiveSize('minWidth', path, '', 'minWidth')};

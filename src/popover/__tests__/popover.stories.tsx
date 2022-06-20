@@ -83,7 +83,19 @@ export const StoryPopoverDefault = () => (
     <div>
       <StorybookSubHeading>HTML content</StorybookSubHeading>
       <StyledContainer style={getPlacementStyling('top')}>
-        <PopoverWithBtn content={<Button size="small">Click me</Button>} />
+        <PopoverWithBtn
+          content={
+            <Button
+              size="small"
+              onClick={() => {
+                // eslint-disable-next-line no-alert
+                alert('Button clicked');
+              }}
+            >
+              Click me
+            </Button>
+          }
+        />
       </StyledContainer>
     </div>
     <GridLayout columns={{xs: 'repeat(3, minmax(0, 1fr))'}}>

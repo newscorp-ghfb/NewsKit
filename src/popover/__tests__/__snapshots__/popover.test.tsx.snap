@@ -13,7 +13,6 @@ exports[`Popover offset should be applied with pointer and px distance override 
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -84,7 +83,6 @@ exports[`Popover offset should be applied with pointer and token distance overri
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -155,7 +153,6 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -226,7 +223,6 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -297,7 +293,6 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -350,7 +345,6 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -421,7 +415,6 @@ exports[`Popover pointer padding should be applied with token distance override 
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -492,7 +485,6 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -563,7 +555,6 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -634,7 +625,6 @@ exports[`Popover should render correct styles: default 1`] = `
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -687,7 +677,6 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 70;
   max-width: 80px;
   min-width: 50px;
@@ -742,7 +731,6 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -813,7 +801,6 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -884,7 +871,6 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -955,7 +941,6 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   .emotion-0 {
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 24px;
