@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import {CSSTransition} from 'react-transition-group';
 import {DrawerProps} from './types';
-import {DrawerPanelProps, StyledDrawer} from './styled';
+import {StyledDrawer} from './styled';
 import {BaseDialogFunction} from '../dialog';
 import {Overlay} from '../overlay/overlay';
 import {BreakpointKeys, useTheme} from '../theme';
@@ -13,19 +13,6 @@ import {getTransitionDuration} from '../utils/get-transition-duration';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {BaseDialogViewProps} from '../dialog/types';
-
-const MemoStyledDrawer = ({
-  className,
-  children,
-  ...props
-}: BaseDialogViewProps & DrawerPanelProps & React.RefObject<HTMLElement>) => (
-  <div className={className}>
-    <StyledDrawer className={className} {...props}>
-      {children}
-    </StyledDrawer>
-  </div>
-);
 
 const ThemelessDrawer: React.FC<DrawerProps> = ({
   children,
@@ -84,6 +71,7 @@ const ThemelessDrawer: React.FC<DrawerProps> = ({
         >
           {state => {
             let className = '';
+            // eslint-disable-next-line default-case
             switch (state) {
               case 'entering':
                 className = 'enter-active';
@@ -97,11 +85,9 @@ const ThemelessDrawer: React.FC<DrawerProps> = ({
               case 'exited':
                 className = 'exit-done';
                 break;
-              default:
-                className = 'exit';
             }
             return (
-              <MemoStyledDrawer
+              <StyledDrawer
                 aria-hidden={!open}
                 className={`nk-drawer-${className}`}
                 open={open}
@@ -119,7 +105,7 @@ const ThemelessDrawer: React.FC<DrawerProps> = ({
                 {...props}
               >
                 {children}
-              </MemoStyledDrawer>
+              </StyledDrawer>
             );
           }}
         </CSSTransition>
