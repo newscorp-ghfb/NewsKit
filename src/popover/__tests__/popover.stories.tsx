@@ -115,6 +115,9 @@ export const StoryPopoverDefault = () => (
   </>
 );
 StoryPopoverDefault.storyName = 'popover-default';
+StoryPopoverDefault.parameters = {
+  eyes: {include: false},
+};
 
 export const StoryPopoverPositions = () => (
   <GridLayout columns={{xs: 'repeat(3, minmax(0, 1fr))'}}>
@@ -129,6 +132,9 @@ export const StoryPopoverPositions = () => (
   </GridLayout>
 );
 StoryPopoverPositions.storyName = 'popover-positions';
+StoryPopoverPositions.parameters = {
+  eyes: {include: false},
+};
 
 const myCustomTheme = createTheme({
   name: 'my-custom-theme',
@@ -184,6 +190,9 @@ export const StoryPopoverStyleOverrides = () => (
   </ThemeProvider>
 );
 StoryPopoverStyleOverrides.storyName = 'popover-style-overrides';
+StoryPopoverStyleOverrides.parameters = {
+  eyes: {include: false},
+};
 
 const StyledScrollParent = styled(StyledContainer)`
   max-height: 125px;
@@ -244,6 +253,34 @@ export const StoryPopoverBehaviours = () => (
   </>
 );
 StoryPopoverBehaviours.storyName = 'popover-behaviours';
+StoryPopoverBehaviours.parameters = {
+  eyes: {include: false},
+};
+
+export const StoryPopoverStyleOverridesVisualTest = () => (
+  <ThemeProvider theme={myCustomTheme}>
+    <div>
+      <StorybookSubHeading>Popover - style overrides</StorybookSubHeading>
+      <StyledContainer style={getPlacementPosition('top')}>
+        <PopoverWithBtn
+          open
+          content="Popover content"
+          overrides={{
+            stylePreset: 'popoverCustom',
+            pointer: {
+              stylePreset: 'popoverPointerCustom',
+            },
+            panel: {
+              stylePreset: 'popoverPanelCustom',
+            },
+          }}
+        />
+      </StyledContainer>
+    </div>
+  </ThemeProvider>
+);
+StoryPopoverStyleOverridesVisualTest.storyName =
+  'popover-style-overrides-visual-test';
 
 export const StoryPopoverPositionsVisualTest = () => (
   <GridLayout columns={{xs: 'repeat(3, minmax(0, 1fr))'}}>
