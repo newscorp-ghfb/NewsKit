@@ -9,12 +9,34 @@ import {createTheme} from '../../theme';
 import {Drawer, DrawerProps} from '..';
 import {TextBlock} from '../../text-block';
 import {sharedDialogTests} from '../../dialog/base-dialog-tests';
+import {setCorrectClassName} from '../utils';
 
 const drawerBody = <TextBlock>Drawer body content</TextBlock>;
 const drawerHeader = <TextBlock>Drawer header content</TextBlock>;
 
 describe('Drawer', () => {
   sharedDialogTests(Drawer, drawerHeader, drawerBody);
+
+  test('it applies default exit-done class to component', () => {
+    expect(setCorrectClassName('nk-drawer', 'exited')).toBe(
+      'nk-drawer-exit-done',
+    );
+  });
+  test('it applies entered class to component', () => {
+    expect(setCorrectClassName('nk-drawer', 'entered')).toBe(
+      'nk-drawer-enter-done',
+    );
+  });
+  test('it applies exiting-active class to component', () => {
+    expect(setCorrectClassName('nk-drawer', 'exiting')).toBe(
+      'nk-drawer-exit-active',
+    );
+  });
+  test('it applies entering-active class to component', () => {
+    expect(setCorrectClassName('nk-drawer', 'entering')).toBe(
+      'nk-drawer-enter-active',
+    );
+  });
 
   test.each(['right', 'top', 'bottom'])(
     'renders with menu items aligned at the %s',

@@ -8,7 +8,7 @@ import {BreakpointKeys, useTheme} from '../theme';
 import {deepMerge} from '../utils/deep-merge';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
-import {setDrawerElementFocusability} from './utils';
+import {setCorrectClassName, setDrawerElementFocusability} from './utils';
 import {getTransitionDuration} from '../utils/get-transition-duration';
 import defaults from './defaults';
 import stylePresets from './style-presets';
@@ -69,45 +69,25 @@ const ThemelessDrawer: React.FC<DrawerProps> = ({
           classNames="nk-drawer"
           appear
         >
-          {state => {
-            let className = '';
-            // eslint-disable-next-line default-case
-            switch (state) {
-              case 'entering':
-                className = 'enter-active';
-                break;
-              case 'exiting':
-                className = 'exit-active';
-                break;
-              case 'entered':
-                className = 'enter-done';
-                break;
-              case 'exited':
-                className = 'exit-done';
-                break;
-            }
-            return (
-              <StyledDrawer
-                aria-hidden={!open}
-                className={`nk-drawer-${className}`}
-                open={open}
-                key="test-drawer"
-                disableFocusTrap={disableFocusTrap}
-                handleCloseButtonClick={handleCloseButtonClick}
-                path={drawerPath}
-                data-testid={drawerPath}
-                placement={placement}
-                closePosition={closePosition}
-                overrides={overrides}
-                // @ts-ignore
-                ref={drawerRef}
-                inline={inline}
-                {...props}
-              >
-                {children}
-              </StyledDrawer>
-            );
-          }}
+          {state => (
+            <StyledDrawer
+              aria-hidden={!open}
+              className={setCorrectClassName('nk-drawer', state)}
+              open={open}
+              disableFocusTrap={disableFocusTrap}
+              handleCloseButtonClick={handleCloseButtonClick}
+              path={drawerPath}
+              data-testid={drawerPath}
+              placement={placement}
+              closePosition={closePosition}
+              overrides={overrides}
+              ref={drawerRef}
+              inline={inline}
+              {...props}
+            >
+              {children}
+            </StyledDrawer>
+          )}
         </CSSTransition>
       )}
     </BaseDialogFunction>

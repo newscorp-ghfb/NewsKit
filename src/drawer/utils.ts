@@ -47,3 +47,34 @@ export const setDrawerElementFocusability = (
     });
   }
 };
+
+function whichComponent(prefix: string) {
+  if (prefix === 'nk-modal') {
+    return 'nk-modal';
+  }
+  return 'nk-drawer';
+}
+
+export const setCorrectClassName = (
+  componentName: string,
+  state: string,
+): string => {
+  let prefixClassName = '';
+  const nkComponent = whichComponent(componentName);
+  // eslint-disable-next-line default-case
+  switch (state) {
+    case 'exiting':
+      prefixClassName = 'exit-active';
+      break;
+    case 'entering':
+      prefixClassName = 'enter-active';
+      break;
+    case 'exited':
+      prefixClassName = 'exit-done';
+      break;
+    case 'entered':
+      prefixClassName = 'enter-done';
+      break;
+  }
+  return `${nkComponent}-${prefixClassName}`;
+};

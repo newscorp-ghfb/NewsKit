@@ -12,6 +12,7 @@ import {getTransitionDuration} from '../utils/get-transition-duration';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {setCorrectClassName} from '../drawer/utils';
 
 const ThemelessModal: React.FC<ModalProps> = ({
   children,
@@ -64,7 +65,6 @@ const ThemelessModal: React.FC<ModalProps> = ({
               `modal.panel`,
               '',
             )({theme, overrides})}
-            className="nk-modal-enter-done"
             classNames="nk-modal"
             mountOnEnter
             unmountOnExit
@@ -72,18 +72,21 @@ const ThemelessModal: React.FC<ModalProps> = ({
             onEnter={() => setShowWrapper(true)}
             onExited={() => setShowWrapper(false)}
           >
-            <StyledModal
-              open={open}
-              disableFocusTrap={disableFocusTrap}
-              handleCloseButtonClick={handleCloseButtonClick}
-              path="modal"
-              data-testid="modal"
-              closePosition={closePosition}
-              overrides={overrides}
-              {...props}
-            >
-              {children}
-            </StyledModal>
+            {state => (
+              <StyledModal
+                open={open}
+                className={setCorrectClassName('nk-modal', state)}
+                disableFocusTrap={disableFocusTrap}
+                handleCloseButtonClick={handleCloseButtonClick}
+                path="modal"
+                data-testid="modal"
+                closePosition={closePosition}
+                overrides={overrides}
+                {...props}
+              >
+                {children}
+              </StyledModal>
+            )}
           </CSSTransition>
         </StyledModalWrapper>
       )}
