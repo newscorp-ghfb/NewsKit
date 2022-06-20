@@ -1,21 +1,14 @@
 import React from 'react';
 import {
   Block,
-  UnorderedList,
   styled,
-  getColorCssFromTheme,
   TextBlock,
+  UnorderedList,
+  getColorCssFromTheme,
 } from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
-import {
-  ContentSection,
-  ContentPrimary,
-  ContentSecondary,
-  ContentTertiary,
-  ContentColSpan,
-} from '../../../components/content-structure';
 import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
@@ -23,6 +16,13 @@ import {
   Illustration,
   getIllustrationComponent,
 } from '../../../components/illustrations/illustration-loader';
+import {
+  ContentSection,
+  ContentPrimary,
+  ContentSecondary,
+  ContentTertiary,
+  ContentColSpan,
+} from '../../../components/content-structure';
 
 const unorderedListOverrides = {
   spaceStack: 'space040',
@@ -79,7 +79,7 @@ const Address = (layoutProps: LayoutProps) => (
               <br />
               <br />
               <Link
-                href="https://drive.google.com/file/d/1YIOt_NqRAP69h8D7hVVqQ5NtLYBwjHJk/view?usp=sharing"
+                href="https://drive.google.com/file/d/1YIOt_NqRAP69h8D7hVVqQ5NtLYBwjHJk/view"
                 target="_blank"
               >
                 Address look up on type video.
@@ -107,41 +107,49 @@ const Address = (layoutProps: LayoutProps) => (
         />
         <ContentSecondary
           headline="Input fields"
-          description="The Post office recommends four line items when capturing an address which are highlighted below:"
+          description={
+            <>
+              <Block spaceStack="space050">
+                The Post office recommends four line items when capturing an
+                address which are highlighted below:
+              </Block>
+              <UnorderedList
+                markerAlign="start"
+                listItemMarker={IconFilledCircle}
+                overrides={unorderedListOverrides}
+              >
+                <>House number and street name</>
+                <>Locality name (If needed)</>
+                <>Town/City</>
+                <>Postcode</>
+                <>Country (if needed)</>
+              </UnorderedList>
+            </>
+          }
           childrenColSpan={ContentColSpan.TEXT}
         >
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
-            <>House number and street name</>
-            <>Locality name (If needed)</>
-            <>Town/City</>
-            <>Postcode</>
-            <>Country (if needed)</>
-          </UnorderedList>
-          <Block spaceStack="space070" />
-          <TextBlock
-            typographyPreset="editorialParagraph020"
-            stylePreset="inkBase"
-          >
-            It makes sense to follow this structure when capturing a users
-            address and should be labeled as follows:
-          </TextBlock>
-          <Block spaceStack="space070" />
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={unorderedListOverrides}
-          >
-            <>Address line 1</>
-            <>Address line 2</>
-            <>Town/City</>
-            <>County (Optional)</>
-            <>Postcode</>
-          </UnorderedList>
-          <Block spaceStack="space070" />
+          <Block spaceStack="space050">
+            <TextBlock
+              typographyPreset="editorialParagraph020"
+              stylePreset="inkBase"
+            >
+              It makes sense to follow this structure when capturing a users
+              address and should be labeled as follows:
+            </TextBlock>
+          </Block>
+          <Block spaceStack="space080">
+            <UnorderedList
+              markerAlign="start"
+              listItemMarker={IconFilledCircle}
+              overrides={unorderedListOverrides}
+            >
+              <>Address line 1</>
+              <>Address line 2</>
+              <>Town/City</>
+              <>County (Optional)</>
+              <>Postcode</>
+            </UnorderedList>
+          </Block>
           <TextBlock
             typographyPreset="editorialParagraph020"
             stylePreset="inkBase"
@@ -198,18 +206,17 @@ const Address = (layoutProps: LayoutProps) => (
         </ContentTertiary>
         <ContentTertiary
           headline={<StyledDontHeading>Don’t</StyledDontHeading>}
-          description={
-            <UnorderedList
-              markerAlign="start"
-              listItemMarker={IconFilledCircle}
-              overrides={unorderedListOverrides}
-            >
-              <>
-                Display unnecessary address Text Fields that you do not require.
-              </>
-            </UnorderedList>
-          }
-        />
+        >
+          <UnorderedList
+            markerAlign="start"
+            listItemMarker={IconFilledCircle}
+            overrides={unorderedListOverrides}
+          >
+            <>
+              Display unnecessary address Text Fields that you do not require.
+            </>
+          </UnorderedList>
+        </ContentTertiary>
         <ContentSecondary
           headline="Further guidance on address"
           description={
