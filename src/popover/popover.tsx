@@ -33,25 +33,19 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
   children,
   content,
   ...props
-}) => {
-  if (!content) {
-    return children;
-  }
-
-  return (
-    <BaseFloatingElement
-      path="popover"
-      content={content}
-      buildRefElAriaAttributes={buildContextAriaAttributes}
-      buildFloatingElAriaAttributes={buildFloatingElementAriaAttributes}
-      useInteractions={useInteractions}
-      role="dialog"
-      {...props}
-    >
-      {children}
-    </BaseFloatingElement>
-  );
-};
+}) => (
+  <BaseFloatingElement
+    path="popover"
+    content={content}
+    buildRefElAriaAttributes={buildContextAriaAttributes}
+    buildFloatingElAriaAttributes={buildFloatingElementAriaAttributes}
+    useInteractions={useInteractions}
+    role="dialog"
+    {...props}
+  >
+    {children}
+  </BaseFloatingElement>
+);
 
 export const Popover = withOwnTheme(ThemelessPopover)({
   defaults,
