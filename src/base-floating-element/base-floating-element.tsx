@@ -50,13 +50,13 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   const pointerPadding = getOverridePxValue(
     `${path}.pointer`,
     {theme, overrides},
-    'pointer.padding',
-    'padding',
+    'pointer.edgeOffset',
+    'edgeOffset',
   );
 
   useEffect(() => {
     showOverridePxWarnings(distance, 'distance');
-    showOverridePxWarnings(pointerPadding, 'pointer.padding');
+    showOverridePxWarnings(pointerPadding, 'pointer.edgeOffset');
   }, [distance, pointerPadding]);
 
   const pointerRef = useRef(null);

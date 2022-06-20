@@ -43,7 +43,7 @@ export interface FloatingElementProps
     pointer?: {
       stylePreset?: MQ<string>;
       size?: MQ<string>;
-      padding?: string;
+      edgeOffset?: string;
     };
   };
   className?: string;

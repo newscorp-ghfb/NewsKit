@@ -5,7 +5,7 @@ export default {
     pointer: {
       stylePreset: 'tooltipPointer',
       size: 'sizing010',
-      padding: 'space020',
+      edgeOffset: 'space020',
     },
     panel: {
       stylePreset: 'tooltipPanel',

@@ -35,7 +35,7 @@ const parseRawValue = (offsetPx: string): number | null => {
 // Some floating-ui middleware APIs accept a single px value (i.e.. offset and arrow.padding).
 // But so that users can use tokens and update component configs globally, we want
 // to use overrides to set these values.
-// As a solution, the distance and pointer.padding overrides do not accept MQ objects.
+// As a solution, the distance and pointer.edgeOffset overrides do not accept MQ objects.
 // They only accept strings and a console warning will display if the value passed
 // is not a valid token or px string.
 // This function fetches the override value and returns the px value as an integer.

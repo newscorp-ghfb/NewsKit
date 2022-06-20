@@ -241,7 +241,7 @@ describe('Tooltip', () => {
         hidePointer: false,
         overrides: {
           pointer: {
-            padding: '1rem',
+            edgeOffset: '1rem',
           },
         },
       });
@@ -249,7 +249,7 @@ describe('Tooltip', () => {
       await applyAsyncStyling();
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
-        "Invalid component override: please make sure 'pointer.padding' is a valid token or px value.",
+        "Invalid component override: please make sure 'pointer.edgeOffset' is a valid token or px value.",
       );
       expect(asFragment()).toMatchSnapshot();
     });
@@ -260,7 +260,7 @@ describe('Tooltip', () => {
         hidePointer: false,
         overrides: {
           pointer: {
-            padding: 'invalid token',
+            edgeOffset: 'invalid token',
           },
         },
       });
@@ -268,7 +268,7 @@ describe('Tooltip', () => {
       await applyAsyncStyling();
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
-        "Invalid component override: please make sure 'pointer.padding' is a valid token or px value.",
+        "Invalid component override: please make sure 'pointer.edgeOffset' is a valid token or px value.",
       );
       expect(asFragment()).toMatchSnapshot();
     });
@@ -278,7 +278,7 @@ describe('Tooltip', () => {
         hidePointer: false,
         overrides: {
           pointer: {
-            padding: 'space040',
+            edgeOffset: 'space040',
           },
         },
       });
@@ -292,7 +292,7 @@ describe('Tooltip', () => {
         hidePointer: false,
         overrides: {
           pointer: {
-            padding: '10px',
+            edgeOffset: '10px',
           },
         },
       });
