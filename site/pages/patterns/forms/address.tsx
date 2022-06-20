@@ -206,6 +206,7 @@ const Address = (layoutProps: LayoutProps) => (
         </ContentTertiary>
         <ContentTertiary
           headline={<StyledDontHeading>Don’t</StyledDontHeading>}
+          showSeparator
         >
           <UnorderedList
             markerAlign="start"
@@ -217,7 +218,12 @@ const Address = (layoutProps: LayoutProps) => (
             </>
           </UnorderedList>
         </ContentTertiary>
-        <ContentSecondary
+      </ContentSection>
+
+      <ContentSection sectionName="further guidance">
+        <ContentPrimary
+          id="further-guidance"
+          toc="Further guidance on address"
           headline="Further guidance on address"
           description={
             <>
@@ -262,7 +268,7 @@ const Address = (layoutProps: LayoutProps) => (
               },
             ]}
           />
-        </ContentSecondary>
+        </ContentPrimary>
       </ContentSection>
 
       <ContentSection sectionName="help improve this page">
