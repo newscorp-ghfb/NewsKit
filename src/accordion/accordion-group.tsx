@@ -1,6 +1,8 @@
 import React, {useCallback} from 'react';
 import {useControlled} from '../utils/hooks';
-import {AccordionGroupProps} from './types';
+import {AccordionGroupProps, AccordionProps} from './types';
+import {hasMatchingDisplayNameWith} from '../utils/component';
+import {Accordion} from './accordion';
 
 const unifyValue = (
   value: number | number[] | undefined,
@@ -59,10 +61,15 @@ export const AccordionGroup = React.forwardRef<
       [setExpandedState, expandedList, single, onChange],
     );
 
+    const accordionOnlyChildren = React.Children.toArray(
+      children,
+    ).filter((child: React.ReactNode) =>
+      hasMatchingDisplayNameWith(child, Accordion),
+    ) as React.ReactElement<AccordionProps>[];
+
     return (
       <div ref={ref} {...restProps}>
-        {React.Children.map(children, (child, index) =>
-          // @ts-ignore
+        {accordionOnlyChildren.map((child, index: number) =>
           React.cloneElement(child, {
             expanded: expandedList.includes(index),
             onChange: (isExpanded: boolean) => handleChange(isExpanded, index),
