@@ -1,5 +1,8 @@
 import * as React from 'react';
-import {StorybookSubHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {Accordion} from '../accordion';
 import {Block} from '../../block';
 import {TextBlock} from '../../text-block';
@@ -12,6 +15,7 @@ import {
 import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils/style';
 import {AccordionIconProps} from '../types';
+import {AccordionGroup} from '../accordion-group';
 
 const myCustomAccordionTheme = createTheme({
   name: 'my-custom-accordion-theme',
@@ -297,3 +301,52 @@ export const StoryAccordionOverrides = () => (
 );
 
 StoryAccordionOverrides.storyName = 'accordion-with-overrides';
+
+export const StoryAccordionGroupUnControlled = () => (
+  <>
+    <StorybookHeading>Accordion Group UnControlled</StorybookHeading>
+    <StorybookSubHeading>No default</StorybookSubHeading>
+    <AccordionGroup>
+      <Accordion header="Header 1">{content}</Accordion>
+      <Accordion header="Header 2">{content}</Accordion>
+      <Accordion header="Header 3">{content}</Accordion>
+    </AccordionGroup>
+    <StorybookSubHeading>Multiply</StorybookSubHeading>
+    <AccordionGroup defaultExpanded={[1]}>
+      <Accordion header="Header 1">{content}</Accordion>
+      <Accordion header="Header 2">{content}</Accordion>
+      <Accordion header="Header 3">{content}</Accordion>
+    </AccordionGroup>
+    <StorybookSubHeading>Single</StorybookSubHeading>
+    <AccordionGroup defaultExpanded={[1]} single>
+      <Accordion header="Header 1">{content}</Accordion>
+      <Accordion header="Header 2">{content}</Accordion>
+      <Accordion header="Header 3">{content}</Accordion>
+    </AccordionGroup>
+  </>
+);
+StoryAccordionGroupUnControlled.storyName = 'accordion-group-uncontrolled';
+
+export const StoryAccordionGroupControlled = () => {
+  const [expanded1, setExpanded1] = React.useState([1]);
+  const [expanded2, setExpanded2] = React.useState([1]);
+
+  return (
+    <>
+      <StorybookHeading>Accordion Group Controlled</StorybookHeading>
+      <StorybookSubHeading>Multiply</StorybookSubHeading>
+      <AccordionGroup expanded={expanded1} onChange={setExpanded1}>
+        <Accordion header="Header 1">{content}</Accordion>
+        <Accordion header="Header 2">{content}</Accordion>
+        <Accordion header="Header 3">{content}</Accordion>
+      </AccordionGroup>
+      <StorybookSubHeading>Single</StorybookSubHeading>
+      <AccordionGroup expanded={expanded2} onChange={setExpanded2} single>
+        <Accordion header="Header 1">{content}</Accordion>
+        <Accordion header="Header 2">{content}</Accordion>
+        <Accordion header="Header 3">{content}</Accordion>
+      </AccordionGroup>
+    </>
+  );
+};
+StoryAccordionGroupControlled.storyName = 'accordion-group-controlled';

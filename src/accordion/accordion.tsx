@@ -14,6 +14,7 @@ import {useReactKeys} from '../utils/hooks';
 import {IconFilledExpandLess, IconFilledExpandMore} from '../icons';
 import {getComponentOverrides} from '../utils/overrides';
 import {TextBlock} from '../text-block';
+import {composeEventHandlers} from '../utils/compose-event-handlers';
 
 const DefaultIcon = ({expanded, overrides}: AccordionIconProps) =>
   expanded ? (
@@ -44,6 +45,8 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
       ariaControls,
       id,
       overrides,
+      onClick: onClickProp,
+      onChange: onChangeProp = () => null,
       ...props
     },
     ref,
@@ -60,6 +63,11 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
       },
     );
 
+    const onClick = composeEventHandlers([
+      onClickProp,
+      () => onChangeProp(!expanded),
+    ]);
+
     return (
       <div ref={ref}>
         <TextBlock as={headerAs}>
@@ -70,6 +78,7 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
             aria-controls={ariaControlsId}
             id={ariaLabelledById}
             data-testid="accordion-control"
+            onClick={onClick}
             {...props}
           >
             <StyledHeader>{header}</StyledHeader>
