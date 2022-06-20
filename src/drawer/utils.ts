@@ -48,12 +48,12 @@ export const setDrawerElementFocusability = (
   }
 };
 
-function whichComponent(prefix: string) {
+const whichComponent = (prefix: string) => {
   if (prefix === 'nk-modal') {
     return 'nk-modal';
   }
   return 'nk-drawer';
-}
+};
 
 export const setCorrectClassName = (
   componentName: string,
