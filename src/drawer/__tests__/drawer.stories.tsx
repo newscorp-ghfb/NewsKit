@@ -8,13 +8,7 @@ import {Link} from '../../link';
 import {TextInput} from '../../text-input';
 import {Block} from '../../block';
 import {Menu, MenuItem} from '../../menu';
-import {
-  createTheme,
-  compileTheme,
-  ThemeProvider,
-  newskitLightTheme,
-  newskitDarkTheme,
-} from '../../theme';
+import {createTheme, compileTheme, ThemeProvider} from '../../theme';
 import {Stack} from '../../stack';
 import {useMediaQueryObject} from '../../utils/hooks';
 
@@ -113,48 +107,7 @@ const useActiveState = (
 
   return [isActive, open, close, toggle];
 };
-export const StoryDefaultThemeBug = () => {
-  // React.createElement(() => {
-  const [isActive, setIsActive] = React.useState(false);
-  const [themeMode, setThemeMode] = React.useState('light');
 
-  const toggleTheme = () => {
-    if (themeMode === 'light') {
-      setThemeMode('dark');
-    } else {
-      setThemeMode('light');
-    }
-  };
-
-  const open = () => setIsActive(true);
-  const close = () => setIsActive(false);
-
-  return (
-    <ThemeProvider
-      theme={themeMode === 'light' ? newskitLightTheme : newskitDarkTheme}
-    >
-      theme is: {themeMode}
-      <Button onClick={open} data-testid="drawer-open-button">
-        Open Drawer
-      </Button>
-      <Drawer
-        aria-label="Drawer example"
-        open={isActive}
-        //  key={isActive}
-        onDismiss={close}
-        placement="left"
-        header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-      >
-        <Button
-          //  className={themeMode === 'light' ? 'light' : 'dark'}
-          onClick={toggleTheme}
-        >
-          Toggle theme
-        </Button>
-      </Drawer>
-    </ThemeProvider>
-  );
-};
 export const StoryDefault = () =>
   React.createElement(() => {
     const [isActive, setIsActive] = React.useState(false);
