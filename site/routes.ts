@@ -821,6 +821,13 @@ export default [
             description: `Use this type of data entry when there are clear business requirements to collect a user's address. Ask for a user’s physical address for delivery or as part of a billing service.`,
             illustration: 'patterns/forms/address/hero',
           },
+          {
+            title: 'Date of birth',
+            page: true,
+            id: '/patterns/forms/date-of-birth',
+            description: `Ask for a user’s date of birth when we need to validate the user’s age. This should not be collected unless you have a need for it to validate a user’s age or benefit them in some way.`,
+            illustration: 'patterns/forms/date-of-birth/hero',
+          },
         ],
       },
     ],
