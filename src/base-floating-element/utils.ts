@@ -27,7 +27,7 @@ export const showOverridePxWarnings = (
   parsedValue: number | undefined,
   overridePath: string,
 ): void => {
-  if (!parsedValue) {
+  if (process.env.NODE_ENV !== 'production' && !parsedValue) {
     // eslint-disable-next-line no-console
     console.warn(
       `Invalid component override: please make sure '${overridePath}' is a valid token or px value.`,
