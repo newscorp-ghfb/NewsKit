@@ -13,7 +13,7 @@ import {PageIntroductionProps} from './types';
 import {ComponentPageCell, ComponentPageCellCompact} from '../layout-cells';
 
 const StyledBlock = styled(Block)`
-  ${getSpacingCssFromTheme('marginTop', {xs: 'space090', md: 'space100'})};
+  ${getSpacingCssFromTheme('marginTop', {xs: 'space080', md: 'space100'})};
   ${getSpacingCssFromTheme('marginBottom', {xs: 'space030', md: 'space040'})};
 `;
 
