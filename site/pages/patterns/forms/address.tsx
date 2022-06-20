@@ -161,20 +161,12 @@ const Address = (layoutProps: LayoutProps) => (
         <ContentSecondary
           headline="Country input"
           description="Country should only be shown if there is a business requirement to capture it or the product/brand is international. If collecting the user's country, it should be collected up front so the address entry fields can be displayed appropriately i.e Postcode isn’t relevant in the US (ZIP Code)."
-          showSeparator
         />
-      </ContentSection>
-
-      <ContentSection sectionName="how to display">
-        <ContentPrimary
-          id="how-to-display"
-          toc="How to display"
-          headline="How to display this data entry"
-        >
+        <ContentSecondary headline="How to display this data entry">
           <Block stylePreset="blockRoundedMedium">
             <Illustration path="patterns/forms/address/how-to-display" />
           </Block>
-        </ContentPrimary>
+        </ContentSecondary>
         <ContentTertiary
           headline={<StyledDoHeading>Do</StyledDoHeading>}
           childrenColSpan={ContentColSpan.TEXT}
