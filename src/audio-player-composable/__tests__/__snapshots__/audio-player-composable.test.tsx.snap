@@ -76,6 +76,21 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   fill: #C0C0C0;
 }
 
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-2 {
     transition-property: background-color;
@@ -272,6 +287,21 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1282,6 +1312,21 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   fill: #C0C0C0;
 }
 
+.emotion-17:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-17:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-17 {
     transition-property: background-color;
@@ -1486,7 +1531,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   fill: #C0C0C0;
 }
 
-.emotion-15:focus-visible:not(:disabled) {
+.emotion-29:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -1495,7 +1540,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-15:focus-visible:not(:disabled) {
+    .emotion-29:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -3600,7 +3645,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   fill: #C0C0C0;
 }
 
-.emotion-14:focus-visible:not(:disabled) {
+.emotion-16:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3609,7 +3654,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus-visible:not(:disabled) {
+    .emotion-16:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -3842,6 +3887,21 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 
 .emotion-28:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-28:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-28:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
