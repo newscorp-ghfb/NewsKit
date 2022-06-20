@@ -433,11 +433,11 @@ exports[`Media List renders with custom layout 1`] = `
                   <section
                     class="emotion-18"
                   >
-                    <h1
+                    <h3
                       class="nk-headline-heading emotion-19"
                     >
                       static
-                    </h1>
+                    </h3>
                   </section>
                 </div>
                 <p
@@ -858,11 +858,11 @@ exports[`Media List renders with default layout 1`] = `
                   <section
                     class="emotion-18"
                   >
-                    <h1
+                    <h3
                       class="nk-headline-heading emotion-19"
                     >
                       static
-                    </h1>
+                    </h3>
                   </section>
                 </div>
                 <p
@@ -1792,11 +1792,11 @@ exports[`Media List renders with feature cardscards 1`] = `
                       <section
                         class="emotion-13"
                       >
-                        <h1
+                        <h3
                           class="nk-headline-heading emotion-14"
                         >
                           Feature Card 2
-                        </h1>
+                        </h3>
                       </section>
                     </div>
                     <div
