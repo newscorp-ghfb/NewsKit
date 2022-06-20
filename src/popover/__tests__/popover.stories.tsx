@@ -12,7 +12,7 @@ import {GridLayout} from '../../grid-layout';
 import {createTheme, ThemeProvider} from '../../theme';
 import {PopoverProps} from '../types';
 
-const getPlacementPosition = (placement: Placement) => {
+const getPlacementStyling = (placement: Placement) => {
   const [side, alignment = 'center'] = placement.split('-');
   let alignItems;
   let justifyContent;
@@ -76,26 +76,26 @@ export const StoryPopoverDefault = () => (
   <>
     <div>
       <StorybookSubHeading>String content</StorybookSubHeading>
-      <StyledContainer style={getPlacementPosition('top')}>
+      <StyledContainer style={getPlacementStyling('top')}>
         <PopoverWithBtn content="Popover content" />
       </StyledContainer>
     </div>
     <div>
       <StorybookSubHeading>HTML content</StorybookSubHeading>
-      <StyledContainer style={getPlacementPosition('top')}>
+      <StyledContainer style={getPlacementStyling('top')}>
         <PopoverWithBtn content={<Button size="small">Click me</Button>} />
       </StyledContainer>
     </div>
     <GridLayout columns={{xs: 'repeat(3, minmax(0, 1fr))'}}>
       <div>
         <StorybookSubHeading>Default distance</StorybookSubHeading>
-        <StyledContainer style={getPlacementPosition('top')}>
+        <StyledContainer style={getPlacementStyling('top')}>
           <PopoverWithBtn content="Popover content" />
         </StyledContainer>
       </div>
       <div>
         <StorybookSubHeading>Increased distance</StorybookSubHeading>
-        <StyledContainer style={getPlacementPosition('top')}>
+        <StyledContainer style={getPlacementStyling('top')}>
           <PopoverWithBtn
             content="Popover content"
             overrides={{distance: 'space070'}}
@@ -104,7 +104,7 @@ export const StoryPopoverDefault = () => (
       </div>
       <div>
         <StorybookSubHeading>Decreased distance</StorybookSubHeading>
-        <StyledContainer style={getPlacementPosition('top')}>
+        <StyledContainer style={getPlacementStyling('top')}>
           <PopoverWithBtn
             content="Popover content"
             overrides={{distance: 'space030'}}
@@ -119,20 +119,20 @@ StoryPopoverDefault.parameters = {
   eyes: {include: false},
 };
 
-export const StoryPopoverPositions = () => (
+export const StoryPopoverPlacements = () => (
   <GridLayout columns={{xs: 'repeat(3, minmax(0, 1fr))'}}>
     {placements.map(placement => (
       <div key={placement}>
         <StorybookSubHeading>Popover - {placement}</StorybookSubHeading>
-        <StyledContainer style={getPlacementPosition(placement)}>
+        <StyledContainer style={getPlacementStyling(placement)}>
           <PopoverWithBtn content="Popover content" placement={placement} />
         </StyledContainer>
       </div>
     ))}
   </GridLayout>
 );
-StoryPopoverPositions.storyName = 'popover-positions';
-StoryPopoverPositions.parameters = {
+StoryPopoverPlacements.storyName = 'popover-placements';
+StoryPopoverPlacements.parameters = {
   eyes: {include: false},
 };
 
@@ -172,7 +172,7 @@ export const StoryPopoverStyleOverrides = () => (
   <ThemeProvider theme={myCustomTheme}>
     <div>
       <StorybookSubHeading>Popover - style overrides</StorybookSubHeading>
-      <StyledContainer style={getPlacementPosition('top')}>
+      <StyledContainer style={getPlacementStyling('top')}>
         <PopoverWithBtn
           content="Popover content"
           overrides={{
@@ -261,7 +261,7 @@ export const StoryPopoverStyleOverridesVisualTest = () => (
   <ThemeProvider theme={myCustomTheme}>
     <div>
       <StorybookSubHeading>Popover - style overrides</StorybookSubHeading>
-      <StyledContainer style={getPlacementPosition('top')}>
+      <StyledContainer style={getPlacementStyling('top')}>
         <PopoverWithBtn
           open
           content="Popover content"
@@ -282,12 +282,12 @@ export const StoryPopoverStyleOverridesVisualTest = () => (
 StoryPopoverStyleOverridesVisualTest.storyName =
   'popover-style-overrides-visual-test';
 
-export const StoryPopoverPositionsVisualTest = () => (
+export const StoryPopoverPlacementsVisualTest = () => (
   <GridLayout columns={{xs: 'repeat(3, minmax(0, 1fr))'}}>
     {placements.map(placement => (
       <div key={placement}>
         <StorybookSubHeading>Popover - {placement}</StorybookSubHeading>
-        <StyledContainer style={getPlacementPosition(placement)}>
+        <StyledContainer style={getPlacementStyling(placement)}>
           <PopoverWithBtn
             open
             content="Popover content"
@@ -298,7 +298,7 @@ export const StoryPopoverPositionsVisualTest = () => (
     ))}
   </GridLayout>
 );
-StoryPopoverPositionsVisualTest.storyName = 'popover-positions-visual-test';
+StoryPopoverPlacementsVisualTest.storyName = 'popover-placements-visual-test';
 
 export const StoryPopoverBehavioursVisualTest = () => (
   <>
