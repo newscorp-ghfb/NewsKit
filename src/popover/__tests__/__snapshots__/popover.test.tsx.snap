@@ -58,6 +58,8 @@ exports[`Popover offset should be applied with pointer and px distance override 
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -127,6 +129,8 @@ exports[`Popover offset should be applied with pointer and token distance overri
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -196,6 +200,8 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -265,6 +271,8 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -320,6 +328,8 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -385,6 +395,8 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -454,6 +466,8 @@ exports[`Popover pointer padding should be applied with token distance override 
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -523,6 +537,8 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -592,6 +608,8 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -647,6 +665,8 @@ exports[`Popover should render correct styles: default 1`] = `
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -700,6 +720,8 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -765,6 +787,8 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -834,6 +858,8 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -903,6 +929,8 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -972,6 +1000,8 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>

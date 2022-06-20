@@ -484,16 +484,16 @@ describe('Popover', () => {
       const input1 = getByTestId('input1');
       expect(input1).toHaveFocus();
     });
-    test('on container on open', () => {
-      const {getByRole, queryByRole} = renderWithTheme(Popover, {
+    test('shifts to panel panel on open', () => {
+      const {getByRole, getByTestId} = renderWithTheme(Popover, {
         ...defaultProps,
       });
       const button = getByRole('button');
       userEvent.click(button);
-      const dialog = queryByRole('dialog');
-      expect(dialog).toHaveFocus();
+      const panel = getByTestId('floating-element-panel');
+      expect(panel).toHaveFocus();
     });
-    test('scroll through focusable elements within popover', () => {
+    test('shifts through interactive elements within popover', () => {
       const Component = () => (
         <Popover
           {...defaultProps}
@@ -505,11 +505,11 @@ describe('Popover', () => {
           }
         />
       );
-      const {getByRole, queryByRole, getByTestId} = renderWithTheme(Component);
+      const {getByRole, getByTestId} = renderWithTheme(Component);
       const button = getByRole('button');
       userEvent.click(button);
-      const dialog = queryByRole('dialog');
-      expect(dialog).toHaveFocus();
+      const panel = getByTestId('floating-element-panel');
+      expect(panel).toHaveFocus();
       userEvent.tab();
       const input1 = getByTestId('input1');
       expect(input1).toHaveFocus();
@@ -517,19 +517,25 @@ describe('Popover', () => {
       const input2 = getByTestId('input2');
       expect(input2).toHaveFocus();
     });
-    test('can still focus on elements outside popover', () => {
+    test('shifts to elements outside popover after elements within popover', () => {
       const Component = () => (
         <>
-          <Popover {...defaultProps} />
-          <input data-testid="input1" />
+          <Popover
+            {...defaultProps}
+            content={
+              <>
+                <input data-testid="input1" />
+              </>
+            }
+          />
           <input data-testid="input2" />
         </>
       );
-      const {getByRole, queryByRole, getByTestId} = renderWithTheme(Component);
+      const {getByRole, getByTestId} = renderWithTheme(Component);
       const button = getByRole('button');
       userEvent.click(button);
-      const dialog = queryByRole('dialog');
-      expect(dialog).toHaveFocus();
+      const panel = getByTestId('floating-element-panel');
+      expect(panel).toHaveFocus();
       userEvent.tab();
       const input1 = getByTestId('input1');
       expect(input1).toHaveFocus();
@@ -537,7 +543,7 @@ describe('Popover', () => {
       const input2 = getByTestId('input2');
       expect(input2).toHaveFocus();
     });
-    test('on context element on close', () => {
+    test('returns to context element on close by default', () => {
       const {getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
       });
@@ -546,7 +552,7 @@ describe('Popover', () => {
       userEvent.click(button);
       expect(button).toHaveFocus();
     });
-    test('on custom element on close', () => {
+    test('returns to custom element on close if restoreFocusTo is provided', () => {
       const Component = () => {
         const [forceRenderState, setForceRenderState] = React.useState(false);
         const restoreFocusRef = useRef(null);
@@ -572,8 +578,8 @@ describe('Popover', () => {
       const button = getByRole('button');
       userEvent.click(button);
 
-      const dialog = getByRole('dialog');
-      expect(dialog).toHaveFocus();
+      const panel = getByTestId('floating-element-panel');
+      expect(panel).toHaveFocus();
 
       userEvent.click(button);
 

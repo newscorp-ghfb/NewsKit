@@ -59,6 +59,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     showOverridePxWarnings(pointerPadding, 'pointer.edgeOffset');
   }, [distance, pointerPadding]);
 
+  const panelRef = useRef<HTMLDivElement>(null);
   const pointerRef = useRef(null);
   const {
     x,
@@ -117,7 +118,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     if (path === 'popover') {
       if (open) {
         /* istanbul ignore next */
-        refs.floating?.current?.focus();
+        panelRef?.current?.focus();
       } else if (restoreFocusTo) {
         restoreFocusTo.focus();
       } else {
@@ -129,7 +130,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     if (!open && onDismiss) {
       onDismiss();
     }
-  }, [onDismiss, open, path, refs.floating, refs.reference, restoreFocusTo]);
+  }, [onDismiss, open, path, refs.reference, restoreFocusTo, panelRef]);
 
   if (!content) {
     return children;
@@ -166,9 +167,12 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
           path={path}
         >
           <StyledPanel
+            tabIndex={-1}
+            data-testid="floating-element-panel"
             as={contentIsString ? 'p' : 'div'}
             overrides={overrides}
             path={path}
+            ref={panelRef}
           >
             {content}
           </StyledPanel>
