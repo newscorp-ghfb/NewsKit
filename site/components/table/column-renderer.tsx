@@ -21,6 +21,7 @@ import {
 } from '../theming-values/motions/swatches';
 import {FontAttributes} from '../font-attributes';
 import {SizeBox} from '../theming-values/size-box';
+import {OverlayCards} from '../theming-values/overlays/swatches';
 
 const renderIcon = (value?: TableRowValue) => {
   switch (value) {
@@ -211,13 +212,6 @@ export const renderCols = (
         break;
       }
 
-      case 'boxShadow': {
-        cellContent = cellValue && (
-          <BorderCard boxShadowToken={cellValue.toString()} />
-        );
-        break;
-      }
-
       case 'outlineStyle': {
         cellContent = cellValue && (
           <OutlineCard outlineStyleToken={cellValue.toString()} />
@@ -249,6 +243,34 @@ export const renderCols = (
       case 'safariOutlineOffset': {
         cellContent = cellValue && (
           <OutlineCard safariOutlineOffsetToken={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'boxShadow': {
+        cellContent = cellValue && (
+          <BorderCard boxShadowToken={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'boxOverlay': {
+        cellContent = cellValue && (
+          <OverlayCards overlayToken={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'boxOpacity': {
+        cellContent = cellValue && (
+          <OverlayCards opacityToken={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'boxGradient': {
+        cellContent = cellValue && (
+          <OverlayCards gradientToken={cellValue.toString()} />
         );
         break;
       }

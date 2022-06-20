@@ -3,6 +3,7 @@
 exports[`index exports all expected functions and components are exported 1`] = `
 Array [
   "A",
+  "Accordion",
   "AlignSelfValues",
   "AspectRatio",
   "AssistiveText",
@@ -16,6 +17,7 @@ Array [
   "AudioPlayerSkipNextButton",
   "AudioPlayerSkipPreviousButton",
   "AudioPlayerTimeDisplay",
+  "AudioPlayerVolumeControl",
   "Banner",
   "Block",
   "Button",
