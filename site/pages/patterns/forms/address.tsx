@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Block,
-  styled,
-  TextBlock,
-  UnorderedList,
-  getColorCssFromTheme,
-} from 'newskit';
+import {Block, TextBlock, UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
@@ -23,25 +17,18 @@ import {
   ContentTertiary,
   ContentColSpan,
 } from '../../../components/content-structure';
+import {
+  StyledPatternsHeading,
+  StyledPatternsDoHeading,
+  StyledPatternsDontHeading,
+} from '../../../utils/styled';
 
-const unorderedListOverrides = {
+export const unorderedListOverrides = {
   spaceStack: 'space040',
   content: {
     typographyPreset: 'editorialParagraph020',
   },
 };
-
-const StyledHeading = styled.span`
-  ${getColorCssFromTheme('color', 'inkBrand010')};
-`;
-
-const StyledDoHeading = styled.span`
-  ${getColorCssFromTheme('color', 'inkPositive')};
-`;
-
-const StyledDontHeading = styled.span`
-  ${getColorCssFromTheme('color', 'inkNegative')};
-`;
 
 const Address = (layoutProps: LayoutProps) => (
   <PatternPageTemplate
@@ -168,7 +155,7 @@ const Address = (layoutProps: LayoutProps) => (
           </Block>
         </ContentSecondary>
         <ContentTertiary
-          headline={<StyledDoHeading>Do</StyledDoHeading>}
+          headline={<StyledPatternsDoHeading>Do</StyledPatternsDoHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
@@ -197,7 +184,9 @@ const Address = (layoutProps: LayoutProps) => (
           </UnorderedList>
         </ContentTertiary>
         <ContentTertiary
-          headline={<StyledDontHeading>Don’t</StyledDontHeading>}
+          headline={
+            <StyledPatternsDontHeading>Don’t</StyledPatternsDontHeading>
+          }
         >
           <UnorderedList
             markerAlign="start"
@@ -261,7 +250,11 @@ const Address = (layoutProps: LayoutProps) => (
         <ContentPrimary
           id="help-improve-this-page"
           toc="Help improve this page"
-          headline={<StyledHeading>Help improve this page</StyledHeading>}
+          headline={
+            <StyledPatternsHeading>
+              Help improve this page
+            </StyledPatternsHeading>
+          }
           description={
             <>
               To help make sure this page is as useful as it can be, relevant

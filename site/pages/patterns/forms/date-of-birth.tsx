@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, styled, UnorderedList, getColorCssFromTheme} from 'newskit';
+import {Block, UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
@@ -17,6 +17,11 @@ import {
   ContentTertiary,
   ContentColSpan,
 } from '../../../components/content-structure';
+import {
+  StyledPatternsHeading,
+  StyledPatternsDoHeading,
+  StyledPatternsDontHeading,
+} from '../../../utils/styled';
 
 const unorderedListOverrides = {
   spaceStack: 'space040',
@@ -24,18 +29,6 @@ const unorderedListOverrides = {
     typographyPreset: 'editorialParagraph020',
   },
 };
-
-const StyledHeading = styled.span`
-  ${getColorCssFromTheme('color', 'inkBrand010')};
-`;
-
-const StyledDoHeading = styled.span`
-  ${getColorCssFromTheme('color', 'inkPositive')};
-`;
-
-const StyledDontHeading = styled.span`
-  ${getColorCssFromTheme('color', 'inkNegative')};
-`;
 
 const DateOfBirth = (layoutProps: LayoutProps) => (
   <PatternPageTemplate
@@ -107,7 +100,7 @@ const DateOfBirth = (layoutProps: LayoutProps) => (
           description="As there are 3 fields to fill out for date of birth, the field should auto-tab to the next field once the relevant number of digits have been entered. This saves users time and effort selecting each field individually."
         />
         <ContentTertiary
-          headline={<StyledDoHeading>Do</StyledDoHeading>}
+          headline={<StyledPatternsDoHeading>Do</StyledPatternsDoHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
@@ -138,7 +131,9 @@ const DateOfBirth = (layoutProps: LayoutProps) => (
           </UnorderedList>
         </ContentTertiary>
         <ContentTertiary
-          headline={<StyledDontHeading>Don’t</StyledDontHeading>}
+          headline={
+            <StyledPatternsDontHeading>Don’t</StyledPatternsDontHeading>
+          }
           childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
@@ -185,7 +180,11 @@ const DateOfBirth = (layoutProps: LayoutProps) => (
         <ContentPrimary
           id="help-improve-this-page"
           toc="Help improve this page"
-          headline={<StyledHeading>Help improve this page</StyledHeading>}
+          headline={
+            <StyledPatternsHeading>
+              Help improve this page
+            </StyledPatternsHeading>
+          }
           description={
             <>
               To help make sure this page is as useful as it can be, relevant
