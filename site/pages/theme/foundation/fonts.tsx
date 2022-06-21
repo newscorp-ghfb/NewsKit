@@ -7,20 +7,20 @@ import {
   ContentSecondary,
   ContentTertiary,
   ContentColSpan,
-} from '../../components/content-structure';
-import {LayoutProps} from '../../components/layout';
-import {InlineCode} from '../../components/markdown-elements';
-import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {Code, CodeFromFile} from '../../components/code';
-import {MediaList} from '../../components/media-list';
-import {Link} from '../../components/link';
+} from '../../../components/content-structure';
+import {LayoutProps} from '../../../components/layout';
+import {InlineCode} from '../../../components/markdown-elements';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {Code, CodeFromFile} from '../../../components/code';
+import {MediaList} from '../../../components/media-list';
+import {Link} from '../../../components/link';
 import {
   getIllustrationComponent,
   Illustration,
-} from '../../components/illustrations/illustration-loader';
-import {Table} from '../../components/table';
-import {getTokenType} from '../../utils/get-token-type';
+} from '../../../components/illustrations/illustration-loader';
+import {Table} from '../../../components/table';
+import {getTokenType} from '../../../utils/get-token-type';
 
 interface FontAttributesRow {
   tokenName: string;

@@ -1,16 +1,16 @@
 import React from 'react';
 import {styled, getColorCssFromTheme} from 'newskit';
-import {InlineCode} from '../../components/markdown-elements';
-import {Illustration} from '../../components/illustrations/illustration-loader';
-import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {Link} from '../../components/link';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {LayoutProps} from '../../components/layout';
+import {InlineCode} from '../../../components/markdown-elements';
+import {Illustration} from '../../../components/illustrations/illustration-loader';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {Link} from '../../../components/link';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {LayoutProps} from '../../../components/layout';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-} from '../../components/content-structure';
+} from '../../../components/content-structure';
 
 interface TextElementProps {
   colorPreset?: string;
