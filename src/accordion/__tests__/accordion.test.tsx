@@ -374,4 +374,12 @@ describe('AccordionGroup', () => {
       expect(btn).toHaveAttribute('aria-expanded', 'true');
     });
   });
+  test('different type of children', () => {
+    const {asFragment} = renderWithTheme(AccordionGroup, {
+      children: [...defaultGroupProps.children, <hr />],
+      expanded: 'all',
+    });
+
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
