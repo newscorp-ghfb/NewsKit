@@ -50,17 +50,13 @@ export const AccordionGroup = React.forwardRef<
     },
     ref,
   ) => {
-    const accordionOnlyChildren = React.Children.toArray(children);
+    const childrenArray = React.Children.toArray(children);
 
     const [expandedList, setExpandedState] = useControlled<number[]>({
-      controlledValue: unifyValue(
-        expanded,
-        accordionOnlyChildren.length,
-        expandSingle,
-      ),
+      controlledValue: unifyValue(expanded, childrenArray.length, expandSingle),
       defaultValue: unifyValue(
         defaultExpanded,
-        accordionOnlyChildren.length,
+        childrenArray.length,
         expandSingle,
       ),
     }) as [number[], (state: number[]) => void];
@@ -102,7 +98,7 @@ export const AccordionGroup = React.forwardRef<
 
     return (
       <div ref={ref} {...restProps}>
-        {accordionOnlyChildren.map((child, index: number) => {
+        {childrenArray.map((child, index: number) => {
           if (hasMatchingDisplayNameWith(child, Accordion)) {
             return React.cloneElement(
               child as React.ReactElement<AccordionProps>,
