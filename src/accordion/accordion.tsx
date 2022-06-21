@@ -107,3 +107,5 @@ export const Accordion = withOwnTheme(ThemelessAccordion)({
   defaults,
   stylePresets,
 });
+
+Accordion.displayName = 'Accordion';

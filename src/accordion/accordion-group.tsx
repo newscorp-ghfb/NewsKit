@@ -33,7 +33,7 @@ export const AccordionGroup = React.forwardRef<
         // in the case only 1 accordion is allowed to be open
         if (single) {
           // replace current the expanded accordion with the new one
-          if (isExpanded && !expandedList?.includes(index)) {
+          if (isExpanded && !expandedList.includes(index)) {
             newExpandedState = [index];
           } else {
             // close all when you click on the same accordion

@@ -14,6 +14,7 @@ import {TextBlock} from '../../text-block';
 import {createTheme} from '../../theme';
 import {styled} from '../../utils';
 import {Accordion} from '../accordion';
+import {AccordionGroup} from '../accordion-group';
 import {AccordionIconProps} from '../types';
 
 const StyledBlock = styled(Block)`
@@ -230,5 +231,136 @@ describe('Accordion', () => {
     });
 
     expect(asFragment()).toMatchSnapshot();
+  });
+});
+
+describe('AccordionGroup', () => {
+  const defaultGroupProps = {
+    children: [
+      <Accordion header="Accordion 1">Content 1</Accordion>,
+      <Accordion header="Accordion 2">Content 2</Accordion>,
+    ],
+  };
+
+  test('render all closed', () => {
+    const {getAllByTestId} = renderWithTheme(AccordionGroup, defaultGroupProps);
+
+    const buttons = getAllByTestId('accordion-control');
+
+    buttons.forEach(btn => {
+      expect(btn).toHaveAttribute('aria-expanded', 'false');
+    });
+  });
+
+  test('render initial when controlled', () => {
+    const {getAllByTestId} = renderWithTheme(AccordionGroup, {
+      ...defaultGroupProps,
+      expanded: [1],
+    });
+
+    const [btn1, btn2] = getAllByTestId('accordion-control');
+
+    expect(btn1).toHaveAttribute('aria-expanded', 'false');
+    expect(btn2).toHaveAttribute('aria-expanded', 'true');
+  });
+
+  test('render initial when uncontrolled', () => {
+    const {getAllByTestId} = renderWithTheme(AccordionGroup, {
+      ...defaultGroupProps,
+      defaultExpanded: [1],
+    });
+
+    const [btn1, btn2] = getAllByTestId('accordion-control');
+
+    expect(btn1).toHaveAttribute('aria-expanded', 'false');
+    expect(btn2).toHaveAttribute('aria-expanded', 'true');
+  });
+
+  test('call onChange when controlled', () => {
+    const onChange = jest.fn();
+    const {getAllByTestId} = renderWithTheme(AccordionGroup, {
+      ...defaultGroupProps,
+      onChange,
+    });
+
+    const [btn1, btn2] = getAllByTestId('accordion-control');
+    fireEvent.click(btn1);
+    fireEvent.click(btn2);
+    expect(onChange).toHaveBeenCalledTimes(2);
+    expect(onChange).toHaveBeenLastCalledWith([0, 1]);
+  });
+
+  test('expand accordion when uncontrolled ', () => {
+    const {getAllByTestId} = renderWithTheme(AccordionGroup, {
+      ...defaultGroupProps,
+      defaultExpanded: [0],
+    });
+
+    const [btn1, btn2] = getAllByTestId('accordion-control');
+
+    // expand 2nd accordion
+    fireEvent.click(btn2);
+
+    expect(btn1).toHaveAttribute('aria-expanded', 'true');
+    expect(btn2).toHaveAttribute('aria-expanded', 'true');
+  });
+
+  test('only one can be expanded at a time', () => {
+    const {getAllByTestId} = renderWithTheme(AccordionGroup, {
+      ...defaultGroupProps,
+      defaultExpanded: [0],
+      single: true,
+    });
+
+    const [btn1, btn2] = getAllByTestId('accordion-control');
+
+    // first one should be expanded by default
+    expect(btn1).toHaveAttribute('aria-expanded', 'true');
+    expect(btn2).toHaveAttribute('aria-expanded', 'false');
+
+    // expand 2nd accordion
+    fireEvent.click(btn2);
+
+    expect(btn1).toHaveAttribute('aria-expanded', 'false');
+    expect(btn2).toHaveAttribute('aria-expanded', 'true');
+  });
+
+  test('allow all to close when single', () => {
+    const {getAllByTestId} = renderWithTheme(AccordionGroup, {
+      ...defaultGroupProps,
+      defaultExpanded: 0,
+      single: true,
+    });
+
+    const [btn1, btn2] = getAllByTestId('accordion-control');
+
+    // first one should be expanded by default
+    expect(btn1).toHaveAttribute('aria-expanded', 'true');
+    expect(btn2).toHaveAttribute('aria-expanded', 'false');
+
+    // close the first one
+    fireEvent.click(btn1);
+
+    expect(btn1).toHaveAttribute('aria-expanded', 'false');
+    expect(btn2).toHaveAttribute('aria-expanded', 'false');
+  });
+
+  test('allow all to close when multiple', () => {
+    const {getAllByTestId} = renderWithTheme(AccordionGroup, {
+      ...defaultGroupProps,
+      defaultExpanded: 0,
+    });
+
+    const [btn1, btn2] = getAllByTestId('accordion-control');
+
+    // first one should be expanded by default
+    expect(btn1).toHaveAttribute('aria-expanded', 'true');
+    expect(btn2).toHaveAttribute('aria-expanded', 'false');
+
+    // close the first one
+    fireEvent.click(btn1);
+
+    expect(btn1).toHaveAttribute('aria-expanded', 'false');
+    expect(btn2).toHaveAttribute('aria-expanded', 'false');
   });
 });
