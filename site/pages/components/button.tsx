@@ -310,7 +310,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
               The Border Radius and Border Width applied to the Button can be
               overridden and applied to the theme. <br />
               <br />
-              <Link href="/theme/borders/">
+              <Link href="/theme/foundation/borders/">
                 For more information, refer to the Borders foundations.
               </Link>
             </>

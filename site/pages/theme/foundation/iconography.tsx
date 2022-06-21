@@ -3,19 +3,19 @@ import {InlineMessage} from 'newskit';
 import {
   Illustration,
   getIllustrationComponent,
-} from '../../components/illustrations/illustration-loader';
-import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {MediaList} from '../../components/media-list';
-import {UsageKind} from '../../components/usage-card';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {LayoutProps} from '../../components/layout';
+} from '../../../components/illustrations/illustration-loader';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {MediaList} from '../../../components/media-list';
+import {UsageKind} from '../../../components/usage-card';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {LayoutProps} from '../../../components/layout';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
   ContentColSpan,
-} from '../../components/content-structure';
-import {Link} from '../../components/link';
+} from '../../../components/content-structure';
+import {Link} from '../../../components/link';
 
 const featureCardoverrides = {
   title: {
@@ -157,7 +157,7 @@ const Iconography = (layoutProps: LayoutProps) => (
                 description: (
                   <>
                     Colour can be applied to icons using{' '}
-                    <Link href="/theme/colours#css-w5wzt1">
+                    <Link href="/theme/foundation/colours#css-w5wzt1">
                       Ink colour tokens.
                     </Link>
                   </>
@@ -169,7 +169,7 @@ const Iconography = (layoutProps: LayoutProps) => (
                 description: (
                   <>
                     Icons can be sized using{' '}
-                    <Link href="/theme/spacing/#css-2ka130">
+                    <Link href="/theme/foundation/spacing/#css-2ka130">
                       icon size tokens.
                     </Link>
                   </>

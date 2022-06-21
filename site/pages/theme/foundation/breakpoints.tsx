@@ -1,22 +1,22 @@
 import React from 'react';
 import {newskitLightTheme, compileTheme} from 'newskit';
-import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {ComponentPageCell} from '../../components/layout-cells';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {ComponentPageCell} from '../../../components/layout-cells';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
-} from '../../components/content-structure';
-import {LayoutProps} from '../../components/layout';
+} from '../../../components/content-structure';
+import {LayoutProps} from '../../../components/layout';
 import {
   Illustration,
   getIllustrationComponent,
-} from '../../components/illustrations/illustration-loader';
-import {Table} from '../../components/table';
-import {Code} from '../../components/code';
-import {Link} from '../../components/link';
-import {MediaList} from '../../components/media-list';
-import {InlineCode} from '../../components/markdown-elements';
+} from '../../../components/illustrations/illustration-loader';
+import {Table} from '../../../components/table';
+import {Code} from '../../../components/code';
+import {Link} from '../../../components/link';
+import {MediaList} from '../../../components/media-list';
+import {InlineCode} from '../../../components/markdown-elements';
 
 const compiledNewskitLightTheme = compileTheme(newskitLightTheme);
 
