@@ -215,17 +215,23 @@ const CSS_PROPS = [
   },
   {
     token: 'backgroundColor',
-    acceptedValues: <Link href="/theme/overlays/">foundations overlays</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/overlays/">foundations overlays</Link>
+    ),
     description: 'The overlay of an element',
   },
   {
     token: 'opacity',
-    acceptedValues: <Link href="/theme/opacity/">foundations opacity</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/opacity/">foundations opacity</Link>
+    ),
     description: 'The opacity level of an element',
   },
   {
     token: 'linear-gradient',
-    acceptedValues: <Link href="/theme/gradients/">foundations gradient</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/gradients/">foundations gradient</Link>
+    ),
     description: 'The transition between two or more specified colors',
   },
 ];
