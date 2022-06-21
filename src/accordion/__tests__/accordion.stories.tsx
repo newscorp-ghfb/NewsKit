@@ -307,21 +307,21 @@ export const StoryAccordionGroupUnControlled = () => (
     <StorybookHeading>Accordion Group UnControlled</StorybookHeading>
     <StorybookSubHeading>No default</StorybookSubHeading>
     <AccordionGroup>
-      <Accordion header="Header 1">{content}</Accordion>
-      <Accordion header="Header 2">{content}</Accordion>
-      <Accordion header="Header 3">{content}</Accordion>
+      <Accordion header="Header 21">{content}</Accordion>
+      <Accordion header="Header 22">{content}</Accordion>
+      <Accordion header="Header 23">{content}</Accordion>
     </AccordionGroup>
     <StorybookSubHeading>Multiply</StorybookSubHeading>
     <AccordionGroup defaultExpanded={[1]}>
-      <Accordion header="Header 1">{content}</Accordion>
-      <Accordion header="Header 2">{content}</Accordion>
-      <Accordion header="Header 3">{content}</Accordion>
+      <Accordion header="Header 31">{content}</Accordion>
+      <Accordion header="Header 32">{content}</Accordion>
+      <Accordion header="Header 33">{content}</Accordion>
     </AccordionGroup>
     <StorybookSubHeading>Single</StorybookSubHeading>
     <AccordionGroup defaultExpanded={[1]} single>
-      <Accordion header="Header 1">{content}</Accordion>
-      <Accordion header="Header 2">{content}</Accordion>
-      <Accordion header="Header 3">{content}</Accordion>
+      <Accordion header="Header 41">{content}</Accordion>
+      <Accordion header="Header 42">{content}</Accordion>
+      <Accordion header="Header 43">{content}</Accordion>
     </AccordionGroup>
   </>
 );
@@ -336,15 +336,15 @@ export const StoryAccordionGroupControlled = () => {
       <StorybookHeading>Accordion Group Controlled</StorybookHeading>
       <StorybookSubHeading>Multiply</StorybookSubHeading>
       <AccordionGroup expanded={expanded1} onChange={setExpanded1}>
-        <Accordion header="Header 1">{content}</Accordion>
-        <Accordion header="Header 2">{content}</Accordion>
-        <Accordion header="Header 3">{content}</Accordion>
+        <Accordion header="Header 51">{content}</Accordion>
+        <Accordion header="Header 52">{content}</Accordion>
+        <Accordion header="Header 53">{content}</Accordion>
       </AccordionGroup>
       <StorybookSubHeading>Single</StorybookSubHeading>
       <AccordionGroup expanded={expanded2} onChange={setExpanded2} single>
-        <Accordion header="Header 1">{content}</Accordion>
-        <Accordion header="Header 2">{content}</Accordion>
-        <Accordion header="Header 3">{content}</Accordion>
+        <Accordion header="Header 61">{content}</Accordion>
+        <Accordion header="Header 62">{content}</Accordion>
+        <Accordion header="Header 63">{content}</Accordion>
       </AccordionGroup>
     </>
   );
