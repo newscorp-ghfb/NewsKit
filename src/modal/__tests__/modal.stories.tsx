@@ -47,47 +47,7 @@ export default {
   component: () => 'None',
   disabledRules: ['tabindex'], // Because of scenario 'open on page load'
 };
-// export const StoryDefaultThemeBug = () =>
-//   React.createElement(() => {
-//     const [isActive, setIsActive] = React.useState(false);
-//     const [themeMode, setThemeMode] = React.useState('light');
 
-//     const toggleTheme = () => {
-//       if (themeMode === 'light') {
-//         setThemeMode('dark');
-//       } else {
-//         setThemeMode('light');
-//       }
-//     };
-
-//     const open = () => setIsActive(true);
-//     const close = () => setIsActive(false);
-
-//     return (
-//       <ThemeProvider
-//         theme={themeMode === 'light' ? newskitLightTheme : newskitDarkTheme}
-//       >
-//         theme is: {themeMode}
-//         <Button onClick={open} data-testid="drawer-open-button">
-//           Open Modal
-//         </Button>
-//         <Modal
-//           aria-label="Drawer example"
-//           open={isActive}
-//           //  key={isActive}
-//           onDismiss={close}
-//           header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-//         >
-//           <Button
-//             //  className={themeMode === 'light' ? 'light' : 'dark'}
-//             onClick={toggleTheme}
-//           >
-//             Toggle theme
-//           </Button>
-//         </Modal>
-//       </ThemeProvider>
-//     );
-//   });
 export const StoryDefault = () =>
   React.createElement(() => {
     const [isActive, open, close] = useActiveState();

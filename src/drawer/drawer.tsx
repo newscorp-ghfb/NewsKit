@@ -8,11 +8,12 @@ import {BreakpointKeys, useTheme} from '../theme';
 import {deepMerge} from '../utils/deep-merge';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
-import {setCorrectClassName, setDrawerElementFocusability} from './utils';
+import {setDrawerElementFocusability} from './utils';
 import {getTransitionDuration} from '../utils/get-transition-duration';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {getTransitionClassName} from '../utils/get-transition-class-name';
 
 const ThemelessDrawer: React.FC<DrawerProps> = ({
   children,
@@ -72,7 +73,7 @@ const ThemelessDrawer: React.FC<DrawerProps> = ({
           {state => (
             <StyledDrawer
               aria-hidden={!open}
-              className={setCorrectClassName('nk-drawer', state)}
+              className={getTransitionClassName('nk-drawer', state)}
               open={open}
               disableFocusTrap={disableFocusTrap}
               handleCloseButtonClick={handleCloseButtonClick}

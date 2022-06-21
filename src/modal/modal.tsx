@@ -12,7 +12,7 @@ import {getTransitionDuration} from '../utils/get-transition-duration';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {setCorrectClassName} from '../drawer/utils';
+import {getTransitionClassName} from '../utils/get-transition-class-name';
 
 const ThemelessModal: React.FC<ModalProps> = ({
   children,
@@ -75,7 +75,7 @@ const ThemelessModal: React.FC<ModalProps> = ({
             {state => (
               <StyledModal
                 open={open}
-                className={setCorrectClassName('nk-modal', state)}
+                className={getTransitionClassName('nk-modal', state)}
                 disableFocusTrap={disableFocusTrap}
                 handleCloseButtonClick={handleCloseButtonClick}
                 path="modal"
