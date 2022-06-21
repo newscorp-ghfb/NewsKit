@@ -45,6 +45,4 @@ export type AccordionGroupProps = {
   onChange?: (expanded: number[]) => void;
   expandSingle?: boolean;
   children: React.ReactNode;
-  // | React.ReactElement<AccordionProps>
-  // | React.ReactElement<AccordionProps>[];
 } & Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'>;
