@@ -40,10 +40,10 @@ export interface AccordionProps {
 }
 
 export type AccordionGroupProps = {
-  defaultExpanded?: number | number[];
-  expanded?: number | number[];
+  defaultExpanded?: number | number[] | 'all';
+  expanded?: number | number[] | 'all';
   onChange?: (expanded: number[]) => void;
-  single?: boolean;
+  expandSingle?: boolean;
   children:
     | React.ReactElement<AccordionProps>
     | React.ReactElement<AccordionProps>[];

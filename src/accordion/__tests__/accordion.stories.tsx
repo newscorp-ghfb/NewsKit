@@ -305,7 +305,7 @@ StoryAccordionOverrides.storyName = 'accordion-with-overrides';
 export const StoryAccordionGroupUnControlled = () => (
   <>
     <StorybookHeading>Accordion Group UnControlled</StorybookHeading>
-    <StorybookSubHeading>No default</StorybookSubHeading>
+    <StorybookSubHeading>No expanded</StorybookSubHeading>
     <AccordionGroup>
       <Accordion header="Header 21">{content}</Accordion>
       <Accordion header="Header 22">{content}</Accordion>
@@ -318,7 +318,7 @@ export const StoryAccordionGroupUnControlled = () => (
       <Accordion header="Header 33">{content}</Accordion>
     </AccordionGroup>
     <StorybookSubHeading>Single</StorybookSubHeading>
-    <AccordionGroup defaultExpanded={[1]} single>
+    <AccordionGroup defaultExpanded={[1, 2]} expandSingle>
       <Accordion header="Header 41">{content}</Accordion>
       <Accordion header="Header 42">{content}</Accordion>
       <Accordion header="Header 43">{content}</Accordion>
@@ -341,7 +341,7 @@ export const StoryAccordionGroupControlled = () => {
         <Accordion header="Header 53">{content}</Accordion>
       </AccordionGroup>
       <StorybookSubHeading>Single</StorybookSubHeading>
-      <AccordionGroup expanded={expanded2} onChange={setExpanded2} single>
+      <AccordionGroup expanded={expanded2} onChange={setExpanded2} expandSingle>
         <Accordion header="Header 61">{content}</Accordion>
         <Accordion header="Header 62">{content}</Accordion>
         <Accordion header="Header 63">{content}</Accordion>

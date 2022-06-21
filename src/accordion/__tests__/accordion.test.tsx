@@ -309,7 +309,7 @@ describe('AccordionGroup', () => {
     const {getAllByTestId} = renderWithTheme(AccordionGroup, {
       ...defaultGroupProps,
       defaultExpanded: [0],
-      single: true,
+      expandSingle: true,
     });
 
     const [btn1, btn2] = getAllByTestId('accordion-control');
@@ -329,7 +329,7 @@ describe('AccordionGroup', () => {
     const {getAllByTestId} = renderWithTheme(AccordionGroup, {
       ...defaultGroupProps,
       defaultExpanded: 0,
-      single: true,
+      expandSingle: true,
     });
 
     const [btn1, btn2] = getAllByTestId('accordion-control');
@@ -362,5 +362,16 @@ describe('AccordionGroup', () => {
 
     expect(btn1).toHaveAttribute('aria-expanded', 'false');
     expect(btn2).toHaveAttribute('aria-expanded', 'false');
+  });
+
+  test('prop expanded=all', () => {
+    const {getAllByTestId} = renderWithTheme(AccordionGroup, {
+      ...defaultGroupProps,
+      expanded: 'all',
+    });
+
+    getAllByTestId('accordion-control').forEach(btn => {
+      expect(btn).toHaveAttribute('aria-expanded', 'true');
+    });
   });
 });
