@@ -18,9 +18,9 @@ import {
   ContentColSpan,
 } from '../../../components/content-structure';
 import {
-  StyledPatternsHeading,
-  StyledPatternsDoHeading,
-  StyledPatternsDontHeading,
+  StyledHeading,
+  StyledDoHeading,
+  StyledDontHeading,
 } from '../../../utils/styled';
 
 const unorderedListOverrides = {
@@ -100,7 +100,7 @@ const DateOfBirth = (layoutProps: LayoutProps) => (
           description="As there are 3 fields to fill out for date of birth, the field should auto-tab to the next field once the relevant number of digits have been entered. This saves users time and effort selecting each field individually."
         />
         <ContentTertiary
-          headline={<StyledPatternsDoHeading>Do</StyledPatternsDoHeading>}
+          headline={<StyledDoHeading>Do</StyledDoHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
@@ -131,9 +131,7 @@ const DateOfBirth = (layoutProps: LayoutProps) => (
           </UnorderedList>
         </ContentTertiary>
         <ContentTertiary
-          headline={
-            <StyledPatternsDontHeading>Don’t</StyledPatternsDontHeading>
-          }
+          headline={<StyledDontHeading>Don’t</StyledDontHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
@@ -180,11 +178,7 @@ const DateOfBirth = (layoutProps: LayoutProps) => (
         <ContentPrimary
           id="help-improve-this-page"
           toc="Help improve this page"
-          headline={
-            <StyledPatternsHeading>
-              Help improve this page
-            </StyledPatternsHeading>
-          }
+          headline={<StyledHeading>Help improve this page</StyledHeading>}
           description={
             <>
               To help make sure this page is as useful as it can be, relevant

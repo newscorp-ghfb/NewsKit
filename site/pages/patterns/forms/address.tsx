@@ -18,9 +18,9 @@ import {
   ContentColSpan,
 } from '../../../components/content-structure';
 import {
-  StyledPatternsHeading,
-  StyledPatternsDoHeading,
-  StyledPatternsDontHeading,
+  StyledHeading,
+  StyledDoHeading,
+  StyledDontHeading,
 } from '../../../utils/styled';
 
 export const unorderedListOverrides = {
@@ -155,7 +155,7 @@ const Address = (layoutProps: LayoutProps) => (
           </Block>
         </ContentSecondary>
         <ContentTertiary
-          headline={<StyledPatternsDoHeading>Do</StyledPatternsDoHeading>}
+          headline={<StyledDoHeading>Do</StyledDoHeading>}
           childrenColSpan={ContentColSpan.TEXT}
         >
           <UnorderedList
@@ -184,9 +184,7 @@ const Address = (layoutProps: LayoutProps) => (
           </UnorderedList>
         </ContentTertiary>
         <ContentTertiary
-          headline={
-            <StyledPatternsDontHeading>Don’t</StyledPatternsDontHeading>
-          }
+          headline={<StyledDontHeading>Don’t</StyledDontHeading>}
         >
           <UnorderedList
             markerAlign="start"
@@ -250,11 +248,7 @@ const Address = (layoutProps: LayoutProps) => (
         <ContentPrimary
           id="help-improve-this-page"
           toc="Help improve this page"
-          headline={
-            <StyledPatternsHeading>
-              Help improve this page
-            </StyledPatternsHeading>
-          }
+          headline={<StyledHeading>Help improve this page</StyledHeading>}
           description={
             <>
               To help make sure this page is as useful as it can be, relevant

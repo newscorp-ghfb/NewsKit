@@ -1,13 +1,13 @@
 import {styled, getColorCssFromTheme} from 'newskit';
 
-export const StyledPatternsHeading = styled.span`
+export const StyledHeading = styled.span`
   ${getColorCssFromTheme('color', 'inkBrand010')};
 `;
 
-export const StyledPatternsDoHeading = styled.span`
+export const StyledDoHeading = styled.span`
   ${getColorCssFromTheme('color', 'inkPositive')};
 `;
 
-export const StyledPatternsDontHeading = styled.span`
+export const StyledDontHeading = styled.span`
   ${getColorCssFromTheme('color', 'inkNegative')};
 `;
