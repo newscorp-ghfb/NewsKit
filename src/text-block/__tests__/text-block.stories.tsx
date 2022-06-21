@@ -45,7 +45,7 @@ export default {
 export const StoryDefault = () => (
   <>
     <StorybookHeading>TextBlock default</StorybookHeading>
-    <TextBlock>{bodyString}</TextBlock>
+    <TextBlock stylePreset="inkContrast">{bodyString}</TextBlock>
   </>
 );
 StoryDefault.storyName = 'default';
@@ -54,10 +54,14 @@ export const StoryAsDifferentHtmlTag = () => (
   <>
     <StorybookHeading>TextBlock</StorybookHeading>
     <StorybookSubHeading>As h3</StorybookSubHeading>
-    <TextBlock as="h3">{bodyString}</TextBlock>
+    <TextBlock stylePreset="inkContrast" as="h3">
+      {bodyString}
+    </TextBlock>
 
     <StorybookSubHeading>As div</StorybookSubHeading>
-    <TextBlock as="div">{bodyString}</TextBlock>
+    <TextBlock stylePreset="inkContrast" as="div">
+      {bodyString}
+    </TextBlock>
   </>
 );
 StoryAsDifferentHtmlTag.storyName = 'as different html tag';
@@ -79,20 +83,18 @@ StoryWithOverriddenPresets.storyName = 'with overridden presets';
 
 export const StoryWithLogicalPropsOverrides = () => (
   <>
-    <ThemeProvider theme={myCustomTheme}>
-      <StorybookHeading>TextBlock</StorybookHeading>
-      <StorybookSubHeading>With logical padding overrides</StorybookSubHeading>
-      <TextBlock stylePreset="textblockCustom" paddingBlock="space040">
+    <StorybookHeading>TextBlock</StorybookHeading>
+    <StorybookSubHeading>With logical padding overrides</StorybookSubHeading>
+    <TextBlock stylePreset="inkContrast" paddingBlock="space040">
+      {bodyString}
+    </TextBlock>
+
+    <StorybookSubHeading>With logical margin overrides</StorybookSubHeading>
+    <StyledDiv>
+      <TextBlock marginBlock="space040" stylePreset="inkContrast">
         {bodyString}
       </TextBlock>
-
-      <StorybookSubHeading>With logical margin overrides</StorybookSubHeading>
-      <StyledDiv>
-        <TextBlock marginBlock="space040" stylePreset="textblockCustom">
-          {bodyString}
-        </TextBlock>
-      </StyledDiv>
-    </ThemeProvider>
+    </StyledDiv>
   </>
 );
 StoryWithLogicalPropsOverrides.storyName = 'with-logical-overrides';

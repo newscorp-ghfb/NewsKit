@@ -3,6 +3,7 @@ import {Button} from '..';
 import {
   getColorFromTheme,
   getTypographyPresetFromTheme,
+  getColorCssFromTheme,
   styled,
 } from '../../utils/style';
 import {ButtonOverrides, ButtonSize} from '../types';
@@ -10,7 +11,7 @@ import {IconFilledEmail} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
-import {StorybookSubHeading} from '../../test/storybook-comps';
+import {StorybookSubHeading, StorybookH3} from '../../test/storybook-comps';
 import {ThemeProvider, createTheme} from '../../theme';
 
 const Container = styled.div`
@@ -36,7 +37,7 @@ const Block = styled.div`
   }
 `;
 
-const Label = styled.div`
+const Label = styled.div<{hasBackground?: boolean}>`
   height: 20px;
   padding: 8px 12px;
   margin: 12px 0;
@@ -44,6 +45,8 @@ const Label = styled.div`
   align-items: center;
   justify-content: center;
   ${getTypographyPresetFromTheme('utilityLabel020')};
+  ${({hasBackground}) =>
+    getColorCssFromTheme('color', hasBackground ? 'white' : 'inkBase')};
 `;
 
 const Spacer = styled.div`
@@ -100,13 +103,17 @@ const ButtonIntentKindsScenario: React.FC<{
   overrides: ButtonOverrides;
 }> = ({hasBackground = false, name, buttonIntents: buttonKinds, overrides}) => (
   <Background hasBackground={hasBackground}>
-    <StorybookSubHeading>{name}</StorybookSubHeading>
+    <StorybookSubHeading stylePreset={hasBackground ? 'white' : undefined}>
+      {name}
+    </StorybookSubHeading>
     <Grid>
       <Cell xsHidden sm={3}>
         <Stack>
-          <h3>State</h3>
+          <StorybookH3 stylePreset={hasBackground ? 'white' : undefined}>
+            State
+          </StorybookH3>
           {states.map(state => (
-            <Label>{state}</Label>
+            <Label hasBackground={hasBackground}>{state}</Label>
           ))}
         </Stack>
       </Cell>
@@ -118,7 +125,9 @@ const ButtonIntentKindsScenario: React.FC<{
               spaceInline="space020"
               stackDistribution={StackDistribution.SpaceEvenly}
             >
-              <h3>{kind}</h3>
+              <StorybookH3 stylePreset={hasBackground ? 'white' : undefined}>
+                {kind}
+              </StorybookH3>
               <Block data-state="Default">
                 <Button overrides={kindOverrides}>Button</Button>
               </Block>

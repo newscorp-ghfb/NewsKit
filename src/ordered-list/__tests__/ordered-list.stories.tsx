@@ -64,16 +64,14 @@ StoryOrderedListOverrides.storyName = 'ordered-list-overrides';
 export const StoryOrderedListLogicalProps = () => (
   <>
     <StorybookHeading>Ordered list with logical props</StorybookHeading>
-    <ThemeProvider theme={myCustomTheme}>
-      <OrderedList
-        overrides={{
-          paddingInline: '30px',
-          marginBlock: '30px',
-        }}
-      >
-        {listData}
-      </OrderedList>
-    </ThemeProvider>
+    <OrderedList
+      overrides={{
+        paddingInline: '30px',
+        marginBlock: '30px',
+      }}
+    >
+      {listData}
+    </OrderedList>
   </>
 );
 StoryOrderedListLogicalProps.storyName = 'ordered-list-logical-props';

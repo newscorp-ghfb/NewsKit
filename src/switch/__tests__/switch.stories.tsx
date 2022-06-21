@@ -44,6 +44,14 @@ const borderedThumbTheme = compileTheme(
             borderWidth: '{{borders.borderWidth010}}',
           },
         },
+        controlLabel: {
+          base: {
+            color: '{{colors.inkContrast}}',
+          },
+          disabled: {
+            color: '{{colors.inkNonEssential}}',
+          },
+        },
       },
     },
   }),
@@ -111,49 +119,51 @@ export const StorySwitchIcons = () => (
 StorySwitchIcons.storyName = 'switch-icons';
 
 export const StorySwitchOverrides = () => (
-  <ThemeProvider theme={borderedThumbTheme}>
+  <>
     <StorybookHeading>Switch</StorybookHeading>
     <Grid>
       <Cell xs={8} md={4}>
         <StorybookSubHeading>Size / spacing overrides</StorybookSubHeading>
-
-        {sizeOverrides.map(([id, overrides, ...props]) => (
-          <Container key={id}>
-            <Switch
-              defaultChecked
-              label={id}
-              overrides={overrides}
-              {...props}
-            />
-          </Container>
-        ))}
+        <ThemeProvider theme={borderedThumbTheme}>
+          {sizeOverrides.map(([id, overrides, ...props]) => (
+            <Container key={id}>
+              <Switch
+                defaultChecked
+                label={id}
+                overrides={overrides}
+                {...props}
+              />
+            </Container>
+          ))}
+        </ThemeProvider>
       </Cell>
     </Grid>
-  </ThemeProvider>
+  </>
 );
 
 StorySwitchOverrides.storyName = 'switch-overrides';
 
 export const StorySwitchLabels = () => (
-  <ThemeProvider theme={borderedThumbTheme}>
+  <>
     <StorybookHeading>Switch</StorybookHeading>
     <Grid>
       <Cell xs={8} md={4}>
         <StorybookSubHeading>Labels</StorybookSubHeading>
-
-        {labels.map(([id, {label, labelPosition, ...props}]) => (
-          <Container key={id}>
-            <Switch
-              defaultChecked
-              label={label}
-              labelPosition={labelPosition}
-              {...props}
-            />
-          </Container>
-        ))}
+        <ThemeProvider theme={borderedThumbTheme}>
+          {labels.map(([id, {label, labelPosition, ...props}]) => (
+            <Container key={id}>
+              <Switch
+                defaultChecked
+                label={label}
+                labelPosition={labelPosition}
+                {...props}
+              />
+            </Container>
+          ))}
+        </ThemeProvider>
       </Cell>
     </Grid>
-  </ThemeProvider>
+  </>
 );
 
 StorySwitchLabels.storyName = 'switch-labels';

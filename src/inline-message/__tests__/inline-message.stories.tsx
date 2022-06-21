@@ -3,14 +3,16 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {createTheme, compileTheme, ThemeProvider} from '../../theme';
+import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
 import {IconFilledInfo} from '../../icons';
 import {InlineMessage} from '..';
 import {Link} from '../../link';
+import {themeObject} from '../../test/theme-select-object';
 
-const myCustomTheme = compileTheme(
+const getCustomTheme = (theme: UncompiledTheme) =>
   createTheme({
     name: 'inline-message-theme',
+    baseTheme: theme,
     overrides: {
       stylePresets: {
         customInlineMessage: {
@@ -25,8 +27,7 @@ const myCustomTheme = compileTheme(
         },
       },
     },
-  }),
-);
+  });
 
 const link = <Link href="/">link</Link>;
 const icon = (
@@ -40,6 +41,17 @@ const icon = (
 export default {
   title: 'NewsKit Light/inline-message',
   component: () => 'None',
+  decorators: [
+    (Story, context) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 export const StoryDefault = () => (
@@ -85,7 +97,7 @@ export const StoryDefault = () => (
 StoryDefault.storyName = 'inline-message-default';
 
 export const StoryOverrides = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <StorybookHeading>
       Inline message with custom theme and overrides
     </StorybookHeading>
@@ -115,7 +127,7 @@ export const StoryOverrides = () => (
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
     </InlineMessage>
-  </ThemeProvider>
+  </>
 );
 StoryOverrides.storyName = 'inline-message-with-overrides';
 

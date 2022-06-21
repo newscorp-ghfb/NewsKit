@@ -144,7 +144,7 @@ const LoremIpsum: React.FC<{textNumber: number; text?: Array<string>}> = ({
   text = LoremIpsumText,
 }) => (
   <Block spaceInset="spaceInset040">
-    <TextBlock typographyPreset="utilityBody020">
+    <TextBlock stylePreset="inkContrast" typographyPreset="utilityBody020">
       {text[textNumber - 1]}
     </TextBlock>
   </Block>

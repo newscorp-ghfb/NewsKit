@@ -129,7 +129,7 @@ export const StoryInverseTag = () => (
         spaceStack="space020"
         wrap="wrap"
       >
-        <StorybookSubHeading>
+        <StorybookSubHeading stylePreset="white">
           tag with tagPrimaryInverse style preset
         </StorybookSubHeading>
         <Tag

@@ -5,9 +5,10 @@ import {withPerformance} from 'storybook-addon-performance';
 import {
   ThemeProvider,
   MediaQueryProvider,
-  newskitLightTheme,
   styled,
 } from '../src';
+
+import {themeObject} from '../src/test/theme-select-object'
 
 const unlimitedScenarios = [
   'grid',
@@ -40,12 +41,32 @@ export const parameters = {
   viewport: {
     viewports: INITIAL_VIEWPORTS,
   },
+  backgrounds: {
+    default: 'Newskit light',
+    values: [
+      {
+        name: 'Newskit light',
+        value: '#ffffff',
+      },
+      {
+        name: 'Newskit dark',
+        value: '#2E2E2E',
+      },
+      {
+        name: 'The Sun',
+        value: 'sun',
+      },
+      {
+        name: 'The Times',
+        value: 'times',
+      },
+      {
+        name: 'Virgin',
+        value: 'virgin',
+      }
+    ],
+  },
 };
-
-const getThemeFromContext = ({kind}) =>
-  [['', newskitLightTheme]].find(([name, theme]) =>
-    kind.toLowerCase().includes(name) ? theme : false,
-  )[1];
 
 export const decorators = [
   // Add wrapper around stories to limit their size
@@ -79,7 +100,7 @@ export const decorators = [
   },
   (Story, context) => {
     return (
-      <ThemeProvider theme={getThemeFromContext(context)}>
+      <ThemeProvider theme={themeObject[context?.globals?.backgrounds?.value || '#ffffff']}>
         <Story />
       </ThemeProvider>
     );

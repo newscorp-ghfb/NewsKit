@@ -1,15 +1,12 @@
 import * as React from 'react';
 import {Headline} from '..';
-import {compileTheme, createTheme, ThemeProvider} from '../../theme';
+import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {themeObject} from '../../test/theme-select-object';
 
-export default {
-  title: 'NewsKit Light/headline',
-  component: () => 'None',
-};
-
-const myCustomTheme = compileTheme(
+const getCustomTheme = (theme: UncompiledTheme) =>
   createTheme({
     name: 'my-custom-theme',
+    baseTheme: theme,
     overrides: {
       stylePresets: {
         tagPrimary: {
@@ -32,11 +29,26 @@ const myCustomTheme = compileTheme(
         },
       },
     },
-  }),
-);
+  });
+
+export default {
+  title: 'NewsKit Light/headline',
+  component: () => 'None',
+  decorators: [
+    (Story, context) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};
 
 export const StoryHeadline = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <Headline>Headline text with no kicker</Headline>
     <br />
     <br />
@@ -93,6 +105,6 @@ export const StoryHeadline = () => (
     >
       For Margin
     </Headline>
-  </ThemeProvider>
+  </>
 );
 StoryHeadline.storyName = 'headline';

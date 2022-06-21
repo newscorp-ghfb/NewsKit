@@ -1,7 +1,11 @@
 import * as React from 'react';
 import {IconButton} from '..';
-import {getColorFromTheme, styled} from '../../utils/style';
-import {StorybookSubHeading} from '../../test/storybook-comps';
+import {
+  getColorFromTheme,
+  styled,
+  getColorCssFromTheme,
+} from '../../utils/style';
+import {StorybookSubHeading, StorybookH3} from '../../test/storybook-comps';
 import {
   Block,
   Cell,
@@ -26,13 +30,15 @@ interface IntentKindStylePreset {
   stylePreset: string;
 }
 
-const Label = styled.div`
+const Label = styled.div<{hasBackground?: boolean}>`
   height: 20px;
   padding: 8px 12px;
   margin: 12px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  ${({hasBackground}) =>
+    getColorCssFromTheme('color', hasBackground ? 'white' : 'inkBase')};
 `;
 
 const Background = styled.div<{hasBackground?: boolean}>`
@@ -51,13 +57,17 @@ const IconButtonIntentKindsScenario: React.FC<{
   overrides: ButtonOverrides;
 }> = ({hasBackground = false, name, buttonKinds, overrides}) => (
   <Background hasBackground={hasBackground}>
-    <StorybookSubHeading>{name}</StorybookSubHeading>
+    <StorybookSubHeading stylePreset={hasBackground ? 'white' : undefined}>
+      {name}
+    </StorybookSubHeading>
     <Grid>
       <Cell xsHidden sm={3}>
         <Stack>
-          <h3>State</h3>
+          <StorybookH3 stylePreset={hasBackground ? 'white' : undefined}>
+            State
+          </StorybookH3>
           {states.map(state => (
-            <Label>{state}</Label>
+            <Label hasBackground={hasBackground}>{state}</Label>
           ))}
         </Stack>
       </Cell>
@@ -69,7 +79,9 @@ const IconButtonIntentKindsScenario: React.FC<{
               spaceInline="space020"
               stackDistribution={StackDistribution.SpaceEvenly}
             >
-              <h3>{kind}</h3>
+              <StorybookH3 stylePreset={hasBackground ? 'white' : undefined}>
+                {kind}
+              </StorybookH3>
               <Block data-state="Default">
                 <IconButton
                   aria-label="Pause icon"

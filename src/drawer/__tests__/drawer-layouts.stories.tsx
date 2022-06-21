@@ -1,53 +1,61 @@
 import React from 'react';
 import {Drawer} from '..';
-import {createTheme, ThemeProvider} from '../../theme';
+import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
 import {getColorFromTheme, styled} from '../../utils/style';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookParah,
+  StorybookH3,
+  StorybookH4,
+} from '../../test/storybook-comps';
 import {IconFilledChevronRight, IconFilledAddCircleOutline} from '../../icons';
 import {Button} from '../../button';
 import {Link, LinkStandalone} from '../../link';
 import {TextInput} from '../../text-input';
 import {UnorderedList} from '../../unordered-list';
+import {themeObject} from '../../test/theme-select-object';
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-drawer-theme',
-  overrides: {
-    stylePresets: {
-      overlayCustom: {
-        base: {
-          backgroundColor: '{{colors.amber010}}',
+const getCustomTheme = (theme: UncompiledTheme) =>
+  createTheme({
+    name: 'my-custom-drawer-theme',
+    baseTheme: theme,
+    overrides: {
+      stylePresets: {
+        overlayCustom: {
+          base: {
+            backgroundColor: '{{colors.amber010}}',
+          },
         },
-      },
-      drawerPanelCustom: {
-        base: {
-          backgroundColor: '{{colors.green010}}',
-          boxShadow: '0px 0px 16px 14px rgba(169,183,172,0.9)',
+        drawerPanelCustom: {
+          base: {
+            backgroundColor: '{{colors.green010}}',
+            boxShadow: '0px 0px 16px 14px rgba(169,183,172,0.9)',
+          },
         },
-      },
-      drawerHeaderCustom: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'none none solid none',
-          borderWidth: '{{borders.borderWidth010}}',
-          borderColor: '{{colors.red060}}',
+        drawerHeaderCustom: {
+          base: {
+            backgroundColor: '{{colors.transparent}}',
+            borderStyle: 'none none solid none',
+            borderWidth: '{{borders.borderWidth010}}',
+            borderColor: '{{colors.red060}}',
+          },
         },
-      },
-      drawerCloseButtonCustom: {
-        base: {
-          borderWidth: '{{borders.borderWidth010}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.teal030}}',
-          backgroundColor: '{{colors.transparent}}',
-          borderRadius: '{{borders.borderRadiusCircle}}',
-          iconColor: '{{colors.teal070}}',
-        },
-        hover: {
-          backgroundColor: '{{colors.teal050}}',
+        drawerCloseButtonCustom: {
+          base: {
+            borderWidth: '{{borders.borderWidth010}}',
+            borderStyle: 'solid',
+            borderColor: '{{colors.teal030}}',
+            backgroundColor: '{{colors.transparent}}',
+            borderRadius: '{{borders.borderRadiusCircle}}',
+            iconColor: '{{colors.teal070}}',
+          },
+          hover: {
+            backgroundColor: '{{colors.teal050}}',
+          },
         },
       },
     },
-  },
-});
+  });
 
 const StyledCategoryRow = styled.div`
   border-bottom: 1px solid ${getColorFromTheme('interface050')};
@@ -71,6 +79,17 @@ export default {
   title: 'NewsKit Light/drawer-layouts-only',
   component: () => 'None',
   disabledRules: ['tabindex'],
+  decorators: [
+    (Story, context) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 export const StoryRightPlacement = () =>
@@ -103,7 +122,7 @@ export const StoryLeftPlacement = () =>
   React.createElement(() => {
     const renderChildren = () => (
       <>
-        <p>
+        <StorybookParah>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
           lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
           lacus. Pellentesque eu odio <Link href="/">Test link 1</Link> sapien.
@@ -115,14 +134,14 @@ export const StoryLeftPlacement = () =>
           molestie lectus. Curabitur ultricies massa eu sem varius volutpat. Ut
           vitae purus et enim imperdiet finibus. Quisque posuere lacus a nunc
           tempor accumsan. Aliquam odio nunc, interdum.
-        </p>
+        </StorybookParah>
         <TextInput label="First name" />
         <TextInput label="Last name" />
         <TextInput label="Phone number" />
         <div>
           <Link href="/">For more information...</Link>{' '}
         </div>
-        <p>
+        <StorybookParah>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
           scelerisque sapien. Praesent mollis vestibulum nunc at blandit. Donec
           vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
@@ -132,7 +151,7 @@ export const StoryLeftPlacement = () =>
           lacus, quis auctor dui mauris eu odio. Vivamus eu augue et enim varius
           viverra. Vivamus ut tellus iaculis, ullamcorper ligula sit amet,
           posuere ipsum.
-        </p>
+        </StorybookParah>
         <div>
           <Button>Remind me later</Button>
           <Button>Ok</Button>
@@ -253,10 +272,10 @@ export const StoryNoHeaderContent = () =>
         onDismiss={() => {}}
         overrides={{header: {spaceInset: 'space000'}}}
       >
-        <h3>List title</h3>
-        <p>List description goes here</p>
+        <StorybookH3>List title</StorybookH3>
+        <StorybookParah>List description goes here</StorybookParah>
 
-        <h4>List content</h4>
+        <StorybookH4>List content</StorybookH4>
         <UnorderedList listItemMarker={IconFilledAddCircleOutline}>
           {Array.from({length: 5}, () => 'List item')}
         </UnorderedList>
@@ -270,10 +289,10 @@ export const StoryNoClose = () =>
     <>
       <StorybookHeading>Default with no close button</StorybookHeading>
       <Drawer header="Header" open onDismiss={() => {}} closePosition="none">
-        <h3>List title</h3>
-        <p>List description goes here</p>
+        <StorybookH3>List title</StorybookH3>
+        <StorybookParah>List description goes here</StorybookParah>
 
-        <h4>List content</h4>
+        <StorybookH4>List content</StorybookH4>
         <UnorderedList listItemMarker={IconFilledAddCircleOutline}>
           {Array.from({length: 5}, () => 'List item')}
         </UnorderedList>
@@ -287,10 +306,10 @@ export const StoryNoHeader = () =>
     <>
       <StorybookHeading>Default withhout header</StorybookHeading>
       <Drawer open onDismiss={() => {}} closePosition="none">
-        <h3>List title</h3>
-        <p>List description goes here</p>
+        <StorybookH3>List title</StorybookH3>
+        <StorybookParah>List description goes here</StorybookParah>
 
-        <h4>List content</h4>
+        <StorybookH4>List content</StorybookH4>
         <UnorderedList listItemMarker={IconFilledAddCircleOutline}>
           {Array.from({length: 5}, () => 'List item')}
         </UnorderedList>
@@ -303,38 +322,37 @@ export const StoryWithOverrides = () =>
   React.createElement(() => (
     <>
       <StorybookHeading>Drawer with overriden space inset </StorybookHeading>
-      <ThemeProvider theme={myCustomTheme}>
-        <Drawer
-          aria-label="drawer with overriden space inset"
-          open
-          onDismiss={() => {}}
-          placement="right"
-          overrides={{
-            overlay: {
-              stylePreset: 'overlayCustom',
-            },
-            panel: {
-              stylePreset: 'drawerPanelCustom',
-              size: '50%',
-              maxSize: '40%',
-              minSize: '200px',
-            },
-            header: {
-              spaceInset: 'spaceInset000',
-              stylePreset: 'drawerHeaderCustom',
-            },
-            content: {
-              spaceInset: 'spaceInset000',
-            },
-            closeButton: {
-              stylePreset: 'drawerCloseButtonCustom',
-              spaceInset: 'spaceInset000',
-            },
-          }}
-        >
-          Content area
-        </Drawer>
-      </ThemeProvider>
+
+      <Drawer
+        aria-label="drawer with overriden space inset"
+        open
+        onDismiss={() => {}}
+        placement="right"
+        overrides={{
+          overlay: {
+            stylePreset: 'overlayCustom',
+          },
+          panel: {
+            stylePreset: 'drawerPanelCustom',
+            size: '50%',
+            maxSize: '40%',
+            minSize: '200px',
+          },
+          header: {
+            spaceInset: 'spaceInset000',
+            stylePreset: 'drawerHeaderCustom',
+          },
+          content: {
+            spaceInset: 'spaceInset000',
+          },
+          closeButton: {
+            stylePreset: 'drawerCloseButtonCustom',
+            spaceInset: 'spaceInset000',
+          },
+        }}
+      >
+        Content area
+      </Drawer>
     </>
   ));
 StoryWithOverrides.storyName = 'with overrides';
@@ -343,40 +361,38 @@ export const StoryDrawerLogicalPropsOverrides = () =>
   React.createElement(() => (
     <div data-testid="scrollable-drawer">
       <StorybookHeading>right drawer</StorybookHeading>
-      <ThemeProvider theme={myCustomTheme}>
-        <Drawer
-          aria-label="Drawer example"
-          open
-          onDismiss={() => {}}
-          placement="right"
-          header="This is a drawer header."
-          overrides={{
-            overlay: {
-              stylePreset: 'overlayCustom',
-            },
-            panel: {
-              size: '50%',
-              maxSize: '60%',
-              minSize: '200px',
-              paddingBlock: 'space030',
-              paddingInline: 'space050',
-            },
-            header: {
-              spaceInset: 'spaceInset050',
-              stylePreset: 'drawerHeaderCustom',
-            },
-            content: {
-              spaceInset: 'spaceInset050',
-            },
-            closeButton: {
-              stylePreset: 'drawerCloseButtonCustom',
-              spaceInset: 'spaceInset020',
-            },
-          }}
-        >
-          Content area
-        </Drawer>
-      </ThemeProvider>
+      <Drawer
+        aria-label="Drawer example"
+        open
+        onDismiss={() => {}}
+        placement="right"
+        header="This is a drawer header."
+        overrides={{
+          overlay: {
+            stylePreset: 'overlayCustom',
+          },
+          panel: {
+            size: '50%',
+            maxSize: '60%',
+            minSize: '200px',
+            paddingBlock: 'space030',
+            paddingInline: 'space050',
+          },
+          header: {
+            spaceInset: 'spaceInset050',
+            stylePreset: 'drawerHeaderCustom',
+          },
+          content: {
+            spaceInset: 'spaceInset050',
+          },
+          closeButton: {
+            stylePreset: 'drawerCloseButtonCustom',
+            spaceInset: 'spaceInset020',
+          },
+        }}
+      >
+        Content area
+      </Drawer>
     </div>
   ));
 StoryDrawerLogicalPropsOverrides.storyName = 'drawer-logical-props-overrides';

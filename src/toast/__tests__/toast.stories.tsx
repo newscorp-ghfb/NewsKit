@@ -3,7 +3,7 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {createTheme, compileTheme, ThemeProvider} from '../../theme';
+import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
 import {styled, withDefaultProps} from '../../utils';
 import {
   IconFilledInfo,
@@ -14,6 +14,7 @@ import {
 import {toast, ToastProvider, Toast} from '..';
 import {Link} from '../../link';
 import {Button} from '../../button';
+import {themeObject} from '../../test/theme-select-object';
 
 const CustomToast = styled.div`
   padding: 1em;
@@ -24,9 +25,10 @@ const CustomToast = styled.div`
   color: red;
 `;
 
-const myCustomTheme = compileTheme(
+const getCustomTheme = (theme: UncompiledTheme) =>
   createTheme({
     name: 'toast-intents-theme',
+    baseTheme: theme,
     overrides: {
       stylePresets: {
         toastWithOverrides: {
@@ -45,8 +47,7 @@ const myCustomTheme = compileTheme(
         },
       },
     },
-  }),
-);
+  });
 
 const ToastInformative = withDefaultProps(Toast, {
   icon: (
@@ -102,10 +103,21 @@ export default {
   title: 'NewsKit Light/toast',
   component: () => 'None',
   disabledRules: [],
+  decorators: [
+    (Story, context) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 export const StoryToastDefault = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <StorybookHeading>Toast</StorybookHeading>
     <StorybookSubHeading>default</StorybookSubHeading>
     <Toast>Short text</Toast>
@@ -152,12 +164,12 @@ export const StoryToastDefault = () => (
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt {toastLink} ut labore et dolore magna aliqua.
     </Toast>
-  </ThemeProvider>
+  </>
 );
 StoryToastDefault.storyName = 'toast-default';
 
 export const StoryToastTitle = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <StorybookHeading>Toast with title</StorybookHeading>
     <Toast title="Title">
       Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -193,12 +205,12 @@ export const StoryToastTitle = () => (
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing
     </Toast>
-  </ThemeProvider>
+  </>
 );
 StoryToastTitle.storyName = 'toast-title';
 
 export const StoryToastActions = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <StorybookHeading>Toast with actions</StorybookHeading>
     <Toast
       actions={() => (
@@ -255,12 +267,12 @@ export const StoryToastActions = () => (
     >
       Lorem ipsum
     </Toast>
-  </ThemeProvider>
+  </>
 );
 StoryToastActions.storyName = 'toast-actions';
 
 export const StoryToastIntents = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <StorybookHeading>Toast with Intents</StorybookHeading>
     <StorybookSubHeading>Neutral ( default )</StorybookSubHeading>
     <Toast>Neutral message {toastLink}</Toast>
@@ -276,12 +288,12 @@ export const StoryToastIntents = () => (
 
     <StorybookSubHeading>Negative</StorybookSubHeading>
     <ToastNegative>Negative message {toastLink}</ToastNegative>
-  </ThemeProvider>
+  </>
 );
 StoryToastIntents.storyName = 'toast-intents';
 
 export const StoryToastOverrides = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <StorybookHeading>Toast with overrides</StorybookHeading>
     <Toast
       role="alert"
@@ -326,12 +338,12 @@ export const StoryToastOverrides = () => (
     >
       Short text
     </Toast>
-  </ThemeProvider>
+  </>
 );
 StoryToastOverrides.storyName = 'toast-overrides';
 
 export const StoryToastLogicalProps = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <StorybookHeading>Toast with logical props</StorybookHeading>
     <Toast
       overrides={{
@@ -341,7 +353,7 @@ export const StoryToastLogicalProps = () => (
     >
       Uses logical padding props
     </Toast>
-  </ThemeProvider>
+  </>
 );
 StoryToastLogicalProps.storyName = 'toast-logical-props';
 
@@ -427,7 +439,7 @@ export const StoryToastApi = () => {
     ));
 
   return (
-    <ThemeProvider theme={myCustomTheme}>
+    <>
       <StorybookHeading>Toast API</StorybookHeading>
       <button type="button" onClick={notifyNeutral}>
         Neutral
@@ -452,7 +464,7 @@ export const StoryToastApi = () => {
         horizontalOffset="10px"
         position="bottom-center"
       />
-    </ThemeProvider>
+    </>
   );
 };
 StoryToastApi.storyName = 'toast-api';

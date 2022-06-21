@@ -6,31 +6,34 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {IconFilledEmail} from '../../icons';
-import {createTheme, ThemeProvider} from '../../theme';
+import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {themeObject} from '../../test/theme-select-object';
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-link-theme',
-  overrides: {
-    colors: {
-      inkLinkBase: '{{colors.red080}}',
-      inkLinkHover: '{{colors.green080}}',
-      inkLinkVisited: '{{colors.red090}}',
-    },
-    stylePresets: {
-      linkCustom: {
-        base: {
-          color: '{{colors.inkLinkBase}}',
-        },
-        visited: {
-          color: '{{colors.inkLinkVisited}}',
-        },
-        hover: {
-          color: '{{colors.inkLinkHover}}',
+const getCustomTheme = (theme: UncompiledTheme) =>
+  createTheme({
+    name: 'my-custom-link-theme',
+    baseTheme: theme,
+    overrides: {
+      colors: {
+        inkLinkBase: '{{colors.red080}}',
+        inkLinkHover: '{{colors.green080}}',
+        inkLinkVisited: '{{colors.red090}}',
+      },
+      stylePresets: {
+        linkCustom: {
+          base: {
+            color: '{{colors.inkLinkBase}}',
+          },
+          visited: {
+            color: '{{colors.inkLinkVisited}}',
+          },
+          hover: {
+            color: '{{colors.inkLinkHover}}',
+          },
         },
       },
     },
-  },
-});
+  });
 
 const StyledDiv = styled.div`
   border: 1px red dotted;
@@ -51,36 +54,47 @@ const CustomPragraph = styled.p`
 `;
 
 const LinkWithOverrides = ({children}: {children: React.ReactNode}) => (
-  <ThemeProvider theme={myCustomTheme}>
-    <LinkInline
-      href="http://localhost:6006"
-      overrides={{
-        typographyPreset: 'utilityButton020',
-        stylePreset: 'linkCustom',
-      }}
-    >
-      {children}
-    </LinkInline>
-  </ThemeProvider>
+  // <ThemeProvider theme={myCustomTheme}>
+  <LinkInline
+    href="http://localhost:6006"
+    overrides={{
+      typographyPreset: 'utilityButton020',
+      stylePreset: 'linkCustom',
+    }}
+  >
+    {children}
+  </LinkInline>
+  // </ThemeProvider>
 );
 
 const ExternalLinkWithOverrides = ({children}: {children: React.ReactNode}) => (
-  <ThemeProvider theme={myCustomTheme}>
-    <LinkInline
-      href="http://apple.com"
-      overrides={{
-        typographyPreset: 'utilityButton020',
-        stylePreset: 'linkCustom',
-      }}
-    >
-      {children}
-    </LinkInline>
-  </ThemeProvider>
+  // <ThemeProvider theme={myCustomTheme}>
+  <LinkInline
+    href="http://apple.com"
+    overrides={{
+      typographyPreset: 'utilityButton020',
+      stylePreset: 'linkCustom',
+    }}
+  >
+    {children}
+  </LinkInline>
+  // </ThemeProvider>
 );
 
 export default {
   title: 'NewsKit Light/link',
   component: () => 'None',
+  decorators: [
+    (Story, context) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 export const StoryLink = () => (
@@ -90,17 +104,15 @@ export const StoryLink = () => (
     <LinkInline href="/">Inline link</LinkInline>
     <br />
     <br />
-    <ThemeProvider theme={myCustomTheme}>
-      <LinkInline
-        href="/"
-        overrides={{
-          typographyPreset: 'utilityButton020',
-          stylePreset: 'linkCustom',
-        }}
-      >
-        Inline link with style and type overrides
-      </LinkInline>
-    </ThemeProvider>
+    <LinkInline
+      href="/"
+      overrides={{
+        typographyPreset: 'utilityButton020',
+        stylePreset: 'linkCustom',
+      }}
+    >
+      Inline link with style and type overrides
+    </LinkInline>
     <br />
     <br />
     <LinkInline href="/">
@@ -170,17 +182,15 @@ export const StoryLink = () => (
     </LinkStandalone>
     <br />
     <br />
-    <ThemeProvider theme={myCustomTheme}>
-      <LinkStandalone
-        href="https://google.com"
-        overrides={{
-          typographyPreset: 'utilityButton020',
-          stylePreset: 'linkCustom',
-        }}
-      >
-        Link Standalone external with type and style Preset overrides
-      </LinkStandalone>
-    </ThemeProvider>
+    <LinkStandalone
+      href="https://google.com"
+      overrides={{
+        typographyPreset: 'utilityButton020',
+        stylePreset: 'linkCustom',
+      }}
+    >
+      Link Standalone external with type and style Preset overrides
+    </LinkStandalone>
   </Container>
 );
 StoryLink.storyName = 'link';
@@ -188,7 +198,7 @@ StoryLink.storyName = 'link';
 export const StoryLinkInverse = () => (
   <Container hasBackground>
     {/* ------ Link inline -------- */}
-    <StorybookHeading>Link inline</StorybookHeading>
+    <StorybookHeading stylePreset="white">Link inline</StorybookHeading>
     <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
       Inline link
     </LinkInline>
@@ -222,7 +232,7 @@ export const StoryLinkInverse = () => (
     </LinkInline>
 
     {/* ------ Link external -------- */}
-    <StorybookHeading>Link external</StorybookHeading>
+    <StorybookHeading stylePreset="white">Link external</StorybookHeading>
     <LinkInline
       href="http://newskit.staging-news.co.uk/"
       overrides={{stylePreset: 'linkInlineInverse'}}
@@ -253,7 +263,7 @@ export const StoryLinkInverse = () => (
     </LinkInline>
 
     {/* ------ Link standalone -------- */}
-    <StorybookHeading>Link standalone</StorybookHeading>
+    <StorybookHeading stylePreset="white">Link standalone</StorybookHeading>
     <LinkStandalone href="/" overrides={{stylePreset: 'linkStandaloneInverse'}}>
       Standalone link
     </LinkStandalone>

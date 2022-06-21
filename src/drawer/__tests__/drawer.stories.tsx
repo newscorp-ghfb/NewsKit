@@ -2,15 +2,16 @@
 import React, {MouseEvent} from 'react';
 import {Drawer} from '..';
 import {styled} from '../../utils/style';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {StorybookHeading, StorybookParah} from '../../test/storybook-comps';
 import {Button} from '../../button';
 import {Link} from '../../link';
 import {TextInput} from '../../text-input';
 import {Block} from '../../block';
 import {Menu, MenuItem} from '../../menu';
-import {createTheme, compileTheme, ThemeProvider} from '../../theme';
+import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
 import {Stack} from '../../stack';
 import {useMediaQueryObject} from '../../utils/hooks';
+import {themeObject} from '../../test/theme-select-object';
 
 const Box = styled.div`
   width: 400px;
@@ -49,7 +50,7 @@ const BoxWithContent = ({open}: {open?: () => void}) => (
 
 const DrawerContent = () => (
   <>
-    <p>
+    <StorybookParah>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lorem
       massa, et lacinia ipsum tristique id. Phasellus sed posuere lacus.
       Pellentesque eu odio <Link href="/">Test link 1</Link> sapien. Donec
@@ -61,14 +62,14 @@ const DrawerContent = () => (
       ultricies massa eu sem varius volutpat. Ut vitae purus et enim imperdiet
       finibus. Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
       interdum.
-    </p>
+    </StorybookParah>
     <TextInput label="First name" />
     <TextInput label="Last name" />
     <TextInput label="Phone number" />
     <div>
       <Link href="/">For more information...</Link>{' '}
     </div>
-    <p>
+    <StorybookParah>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
       scelerisque sapien. Praesent mollis vestibulum nunc at blandit. Donec
       vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
@@ -77,18 +78,13 @@ const DrawerContent = () => (
       dapibus, enim sed tristique gravida, nisl dolor malesuada lacus, quis
       auctor dui mauris eu odio. Vivamus eu augue et enim varius viverra.
       Vivamus ut tellus iaculis, ullamcorper ligula sit amet, posuere ipsum.
-    </p>
+    </StorybookParah>
     <div>
       <Button>Remind me later</Button>
       <Button>Ok</Button>
     </div>
   </>
 );
-
-export default {
-  title: 'NewsKit Light/drawer',
-  component: () => 'None',
-};
 
 const useActiveState = (
   initial = false,
@@ -238,7 +234,7 @@ export const StoryInline = () =>
           >
             <DrawerContent />
           </Drawer>
-          <p>
+          <StorybookParah>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
             lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
             lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
@@ -251,7 +247,7 @@ export const StoryInline = () =>
             sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
             Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
             interdum.
-          </p>
+          </StorybookParah>
         </DrawerContainer>
 
         <BoxWithContent open={open} />
@@ -279,9 +275,10 @@ const HeaderDrawer = styled.div`
   position: relative;
 `;
 
-const menuDrawerTheme = compileTheme(
+const getCustomTheme = (theme: UncompiledTheme) =>
   createTheme({
     name: 'my-custom-drawer-theme',
+    baseTheme: theme,
     overrides: {
       transitionPresets: {
         scaleUp: {
@@ -319,8 +316,7 @@ const menuDrawerTheme = compileTheme(
         },
       },
     },
-  }),
-);
+  });
 
 export const StoryMenuAndInline = () =>
   React.createElement(() => {
@@ -331,7 +327,7 @@ export const StoryMenuAndInline = () =>
     const closeDrawer = () => setDrawer(null);
 
     return (
-      <ThemeProvider theme={menuDrawerTheme}>
+      <>
         <Header fixed={isFixed}>
           <HeaderMenu fixed={isFixed}>
             <Menu aria-label="Menu">
@@ -360,7 +356,7 @@ export const StoryMenuAndInline = () =>
             >
               {selectedDrawer !== null &&
                 Array.from({length: selectedDrawer + 1}).map(() => (
-                  <p>
+                  <StorybookParah>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                     aliquet lorem massa, et lacinia ipsum tristique id.
                     Phasellus sed posuere lacus. Pellentesque eu odio{' '}
@@ -374,7 +370,7 @@ export const StoryMenuAndInline = () =>
                     Curabitur ultricies massa eu sem varius volutpat. Ut vitae
                     purus et enim imperdiet finibus. Quisque posuere lacus a
                     nunc tempor accumsan. Aliquam odio nunc, interdum.
-                  </p>
+                  </StorybookParah>
                 ))}
             </Drawer>
           </HeaderDrawer>
@@ -384,7 +380,7 @@ export const StoryMenuAndInline = () =>
             Toggle Menu fixed: ( current {isFixed.toString()})
           </Button>
         </div>
-        <p>
+        <StorybookParah>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
           lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
           lacus. Pellentesque eu odio sapien. Donec finibus pellentesque est
@@ -396,10 +392,10 @@ export const StoryMenuAndInline = () =>
           ultricies massa eu sem varius volutpat. Ut vitae purus et enim
           imperdiet finibus. Quisque posuere lacus a nunc tempor accumsan.
           Aliquam odio nunc, interdum.
-        </p>
+        </StorybookParah>
 
         <BoxWithContent />
-      </ThemeProvider>
+      </>
     );
   });
 StoryMenuAndInline.storyName = 'menu+inline';
@@ -440,7 +436,9 @@ export const StoryWithRestoreFocusAndCustomAutofocus = () =>
     return (
       <div>
         <StorybookHeading>Drawer with custom auto-focus</StorybookHeading>
-        <p>Drawer with autofocus using data-autofocus attribute</p>
+        <StorybookParah>
+          Drawer with autofocus using data-autofocus attribute
+        </StorybookParah>
         <Button onClick={open} data-testid="drawer-open-button">
           Open Drawer
         </Button>
@@ -570,7 +568,9 @@ export const StoryModelessWithRestoreFocusAndCustomAutofocus = () =>
     return (
       <div>
         <StorybookHeading>Drawer with custom auto-focus</StorybookHeading>
-        <p>Drawer with autofocus using data-autofocus attribute</p>
+        <StorybookParah>
+          Drawer with autofocus using data-autofocus attribute
+        </StorybookParah>
         <Button onClick={open} data-testid="modeless-drawer-open-button">
           Open Drawer
         </Button>
@@ -805,7 +805,7 @@ export const StoryInlineDrawerLogicalPropsOnPanel = () =>
           >
             <DrawerContent />
           </Drawer>
-          <p>
+          <StorybookParah>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
             lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
             lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
@@ -818,7 +818,7 @@ export const StoryInlineDrawerLogicalPropsOnPanel = () =>
             sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
             Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
             interdum.
-          </p>
+          </StorybookParah>
         </DrawerContainer>
       </div>
     );
@@ -826,3 +826,19 @@ export const StoryInlineDrawerLogicalPropsOnPanel = () =>
 StoryInlineDrawerLogicalPropsOnPanel.storyName =
   'inline drawer with logical padding & margin';
 StoryInlineDrawerLogicalPropsOnPanel.parameters = {eyes: {include: false}};
+
+export default {
+  title: 'NewsKit Light/drawer',
+  component: () => 'None',
+  decorators: [
+    (Story, context) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

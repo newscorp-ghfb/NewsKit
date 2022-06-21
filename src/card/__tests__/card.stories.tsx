@@ -13,8 +13,9 @@ import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
 import {IconFilledImage} from '../../icons';
 import {getColorCssFromTheme, styled} from '../../utils/style';
-import {createTheme, ThemeProvider} from '../../theme';
+import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
 import {Link} from '../../link';
+import {themeObject} from '../../test/theme-select-object';
 
 const ContainerWithBackground = styled.div<{colorToken?: string}>`
   ${({colorToken = 'white', ...props}) =>
@@ -68,88 +69,90 @@ const labelDefault = {
   },
 };
 
-const myCustomCardTheme = createTheme({
-  name: 'my-custom-card-theme',
-  overrides: {
-    stylePresets: {
-      cardLabel: labelDefault,
-      cardTeaserLead: {
-        base: {
-          color: '{{colors.inkBase}}',
+const getCustomTheme = (theme: UncompiledTheme) =>
+  createTheme({
+    name: 'my-custom-card-theme',
+    baseTheme: theme,
+    overrides: {
+      stylePresets: {
+        cardLabel: labelDefault,
+        cardTeaserLead: {
+          base: {
+            color: '{{colors.inkBase}}',
+          },
         },
-      },
-      // mocked card Containers
-      cardContainerMock: {
-        base: {
-          borderStyle: 'solid',
-          borderColor: '{{colors.purple020}}',
-          borderWidth: '{{borders.borderWidth010}}',
-          backgroundColor: '{{colors.blue020}}',
+        // mocked card Containers
+        cardContainerMock: {
+          base: {
+            borderStyle: 'solid',
+            borderColor: '{{colors.purple020}}',
+            borderWidth: '{{borders.borderWidth010}}',
+            backgroundColor: '{{colors.blue020}}',
+          },
+          hover: {
+            backgroundColor: '{{colors.blue040}}',
+            boxShadow: '{{shadows.shadow030}}',
+          },
+          active: {
+            backgroundColor: '{{colors.blue060}}',
+            boxShadow: '{{shadows.shadow050}}',
+          },
         },
-        hover: {
-          backgroundColor: '{{colors.blue040}}',
-          boxShadow: '{{shadows.shadow030}}',
+        cardContainerMediaMock: {
+          base: {
+            backgroundColor: '{{colors.red020}}',
+          },
         },
-        active: {
-          backgroundColor: '{{colors.blue060}}',
-          boxShadow: '{{shadows.shadow050}}',
+        cardContainerTeaserMock: {
+          base: {
+            backgroundColor: '{{colors.neutral010}}',
+          },
+          hover: {
+            backgroundColor: '{{colors.amber010}}',
+          },
+          active: {
+            backgroundColor: '{{colors.amber020}}',
+          },
         },
-      },
-      cardContainerMediaMock: {
-        base: {
-          backgroundColor: '{{colors.red020}}',
+        cardContainerActionsMock: {
+          base: {
+            backgroundColor: '{{colors.green020}}',
+          },
         },
-      },
-      cardContainerTeaserMock: {
-        base: {
-          backgroundColor: '{{colors.neutral010}}',
+        headlineKickerInteractiveMock: {
+          base: {
+            color: '{{colors.interactiveNegative050}}',
+            textDecoration: 'underline',
+          },
+          hover: {
+            color: '{{colors.interactiveNegative050}}',
+            textDecoration: 'underline',
+          },
+          active: {
+            color: '{{colors.interactiveNegative050}}',
+            textDecoration: 'none',
+          },
+          visited: {
+            color: '{{colors.interactiveVisited010}}',
+          },
         },
-        hover: {
-          backgroundColor: '{{colors.amber010}}',
-        },
-        active: {
-          backgroundColor: '{{colors.amber020}}',
-        },
-      },
-      cardContainerActionsMock: {
-        base: {
-          backgroundColor: '{{colors.green020}}',
-        },
-      },
-      headlineKickerInteractiveMock: {
-        base: {
-          color: '{{colors.interactiveNegative050}}',
-          textDecoration: 'underline',
-        },
-        hover: {
-          color: '{{colors.interactiveNegative050}}',
-          textDecoration: 'underline',
-        },
-        active: {
-          color: '{{colors.interactiveNegative050}}',
-          textDecoration: 'none',
-        },
-        visited: {
-          color: '{{colors.interactiveVisited010}}',
-        },
-      },
-      headlineHeadingInteractiveMock: {
-        base: {
-          color: '{{colors.green090}}',
-          textDecoration: 'underline',
-        },
-        hover: {
-          color: '{{colors.interactivePositive040}}',
-          textDecoration: 'none',
-        },
-        active: {
-          color: '{{colors.interactivePositive050}}',
-          textDecoration: 'underline',
+        headlineHeadingInteractiveMock: {
+          base: {
+            color: '{{colors.green090}}',
+            textDecoration: 'underline',
+          },
+          hover: {
+            color: '{{colors.interactivePositive040}}',
+            textDecoration: 'none',
+          },
+          active: {
+            color: '{{colors.interactivePositive050}}',
+            textDecoration: 'underline',
+          },
         },
       },
     },
-  },
-});
+  });
 
 const VideoElement = ({width = 'auto', height = 'auto'}) => (
   <iframe
@@ -245,7 +248,7 @@ const cardInsetMediumBody = cardBodyBase({inset: true})({cardSize: 'Medium'});
 const cardInsetLargeBody = cardBodyBase({inset: true})({cardSize: 'Large'});
 
 const renderCard = () => (
-  <ThemeProvider theme={myCustomCardTheme}>
+  <>
     <Visible xs sm>
       <StorybookSubHeading>Card - small - Without Inset</StorybookSubHeading>
       <ContainerWithBackground>
@@ -288,10 +291,10 @@ const renderCard = () => (
         </Card>
       </ContainerWithBackground>
     </Visible>
-  </ThemeProvider>
+  </>
 );
 const renderCardInset = () => (
-  <ThemeProvider theme={myCustomCardTheme}>
+  <>
     <Visible xs sm>
       <StorybookSubHeading>Card - small - With Inset</StorybookSubHeading>
       <ContainerWithBackground>
@@ -334,12 +337,23 @@ const renderCardInset = () => (
         </CardInset>
       </ContainerWithBackground>
     </Visible>
-  </ThemeProvider>
+  </>
 );
 
 export default {
   title: 'NewsKit Light/card',
   component: () => 'None',
+  decorators: [
+    (Story, context) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 export const StoryCardSmallWithoutInset = () => renderCard();
@@ -398,30 +412,28 @@ export const StoryCardWithoutInsetContainersOverrides = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={4}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <Card
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-              }}
-              actions={cardSmallTags}
-              overrides={{
-                stylePreset: 'cardContainerMock',
-                mediaContainer: {
-                  stylePreset: 'cardContainerMediaMock',
-                },
-                teaserContainer: {
-                  stylePreset: 'cardContainerTeaserMock',
-                },
-                actionsContainer: {
-                  stylePreset: 'cardContainerActionsMock',
-                  minHeight: 'sizing090',
-                },
-              }}
-            >
-              {cardSmallBody}
-            </Card>
-          </ThemeProvider>
+          <Card
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              stylePreset: 'cardContainerMock',
+              mediaContainer: {
+                stylePreset: 'cardContainerMediaMock',
+              },
+              teaserContainer: {
+                stylePreset: 'cardContainerTeaserMock',
+              },
+              actionsContainer: {
+                stylePreset: 'cardContainerActionsMock',
+                minHeight: 'sizing090',
+              },
+            }}
+          >
+            {cardSmallBody}
+          </Card>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -438,29 +450,27 @@ export const StoryCardWithInsetContainersOverrides = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={4}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <CardInset
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-              }}
-              actions={cardSmallTags}
-              overrides={{
-                stylePreset: 'cardContainerMock',
-                mediaContainer: {
-                  stylePreset: 'cardContainerMediaMock',
-                },
-                teaserContainer: {
-                  stylePreset: 'cardContainerTeaserMock',
-                },
-                actionsContainer: {
-                  stylePreset: 'cardContainerActionsMock',
-                },
-              }}
-            >
-              {cardInsetSmallBody}
-            </CardInset>
-          </ThemeProvider>
+          <CardInset
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              stylePreset: 'cardContainerMock',
+              mediaContainer: {
+                stylePreset: 'cardContainerMediaMock',
+              },
+              teaserContainer: {
+                stylePreset: 'cardContainerTeaserMock',
+              },
+              actionsContainer: {
+                stylePreset: 'cardContainerActionsMock',
+              },
+            }}
+          >
+            {cardInsetSmallBody}
+          </CardInset>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -477,22 +487,20 @@ export const StoryCardWithMediaLinkAndHeadline = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={4}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <Card
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-              }}
-              actions={cardSmallTags}
-            >
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-            </Card>
-          </ThemeProvider>
+          <Card
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+          >
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
+          </Card>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -509,23 +517,21 @@ export const StoryCardWithLinkAndHeadlineAndMediainteractive = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={4}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <Card
-              mediaInteractive
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-              }}
-              actions={cardSmallTags}
-            >
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-            </Card>
-          </ThemeProvider>
+          <Card
+            mediaInteractive
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+          >
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
+          </Card>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -542,41 +548,39 @@ export const StoryCardWithLinkAndNoHeadline = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={4}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <Card
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-              }}
-              actions={cardSmallTags}
-            >
-              <Block>
-                <Block spaceStack={cardLabel}>
-                  <Flag
-                    overrides={{
-                      spaceInset: 'spaceInsetSquish000',
-                      stylePreset: 'cardLabel',
-                      typographyPreset: cardTypographyPresets.cardLabelSmall,
-                      minHeight: 'sizing000',
-                    }}
-                  >
-                    <IconFilledImage />
-                    IMAGE
-                  </Flag>
-                </Block>
-                <Block spaceStack={cardTeaserLead}>
-                  <TextBlock
-                    stylePreset="headlineHeadingInteractive"
-                    typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-                  >
-                    A short paragraph description of the article, outlining the
-                    main story and focus.
-                  </TextBlock>
-                </Block>
+          <Card
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+          >
+            <Block>
+              <Block spaceStack={cardLabel}>
+                <Flag
+                  overrides={{
+                    spaceInset: 'spaceInsetSquish000',
+                    stylePreset: 'cardLabel',
+                    typographyPreset: cardTypographyPresets.cardLabelSmall,
+                    minHeight: 'sizing000',
+                  }}
+                >
+                  <IconFilledImage />
+                  IMAGE
+                </Flag>
               </Block>
-            </Card>
-          </ThemeProvider>
+              <Block spaceStack={cardTeaserLead}>
+                <TextBlock
+                  stylePreset="headlineHeadingInteractive"
+                  typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+                >
+                  A short paragraph description of the article, outlining the
+                  main story and focus.
+                </TextBlock>
+              </Block>
+            </Block>
+          </Card>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -592,50 +596,48 @@ export const StoryCardWithLinkHeadlineAndNestedLinksInCardBody = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={4}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <Card
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-              }}
-              actions={cardSmallTags}
-            >
-              <Block spaceStack={cardLabel}>
-                <Flag
-                  overrides={{
-                    spaceInset: 'spaceInsetSquish000',
-                    stylePreset: 'cardLabel',
-                    typographyPreset: cardTypographyPresets.cardLabelSmall,
-                    minHeight: 'sizing000',
-                  }}
-                >
-                  <IconFilledImage />
-                  IMAGE
-                </Flag>
-              </Block>
+          <Card
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+          >
+            <Block spaceStack={cardLabel}>
+              <Flag
+                overrides={{
+                  spaceInset: 'spaceInsetSquish000',
+                  stylePreset: 'cardLabel',
+                  typographyPreset: cardTypographyPresets.cardLabelSmall,
+                  minHeight: 'sizing000',
+                }}
+              >
+                <IconFilledImage />
+                IMAGE
+              </Flag>
+            </Block>
 
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">
-                  title of the card describing the main content
-                </Headline>
-              </Block>
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
 
-              <Block spaceStack={cardTeaserLead}>
-                <TextBlock
-                  stylePreset="cardTeaserLead"
-                  typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-                >
-                  A short paragraph description of the article, outlining the{' '}
-                  <Link href="/test">main story</Link> and focus.
-                </TextBlock>
-              </Block>
+            <Block spaceStack={cardTeaserLead}>
+              <TextBlock
+                stylePreset="cardTeaserLead"
+                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+              >
+                A short paragraph description of the article, outlining the{' '}
+                <Link href="/test">main story</Link> and focus.
+              </TextBlock>
+            </Block>
 
-              <Block spaceStack={cardTeaserLead}>
-                <Link href="https://google.com">External link</Link>
-              </Block>
-            </Card>
-          </ThemeProvider>
+            <Block spaceStack={cardTeaserLead}>
+              <Link href="https://google.com">External link</Link>
+            </Block>
+          </Card>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -650,22 +652,20 @@ export const StoryCardWithInsetNoMediaAndLink = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={4}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <CardInset href="https://newskit.co.uk/" actions={cardSmallTags}>
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-              <TextBlock
-                stylePreset="cardTeaserLead"
-                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-              >
-                A short paragraph description of the article, outlining the main
-                story and focus.
-              </TextBlock>
-            </CardInset>
-          </ThemeProvider>
+          <CardInset href="https://newskit.co.uk/" actions={cardSmallTags}>
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
+            <TextBlock
+              stylePreset="cardTeaserLead"
+              typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+            >
+              A short paragraph description of the article, outlining the main
+              story and focus.
+            </TextBlock>
+          </CardInset>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -682,55 +682,53 @@ export const StoryCardWithoutInsetLinkContainersAndHeadlineOverrides = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={4}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <Card
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-              }}
-              actions={cardSmallTags}
-              overrides={{
-                stylePreset: 'cardContainerMock',
-                mediaContainer: {
-                  stylePreset: 'cardContainerMediaMock',
-                },
-                teaserContainer: {
-                  stylePreset: 'cardContainerTeaserMock',
-                },
-                actionsContainer: {
-                  stylePreset: 'cardContainerActionsMock',
-                  minHeight: 'sizing090',
-                },
-              }}
-            >
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline
-                  kickerText="SHORT"
-                  overrides={{
-                    kicker: {
-                      stylePreset: 'headlineKickerInteractiveMock',
-                      // spaceInline: 'space000',
-                    },
-                    heading: {
-                      stylePreset: 'headlineHeadingInteractiveMock',
-                    },
-                  }}
-                >
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-              <Block spaceStack={cardTeaserLead}>
-                <TextBlock
-                  stylePreset="cardTeaserLead"
-                  typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-                >
-                  A short paragraph description of the article, outlining the
-                  main story and focus.
-                </TextBlock>
-              </Block>
-            </Card>
-          </ThemeProvider>
+          <Card
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              stylePreset: 'cardContainerMock',
+              mediaContainer: {
+                stylePreset: 'cardContainerMediaMock',
+              },
+              teaserContainer: {
+                stylePreset: 'cardContainerTeaserMock',
+              },
+              actionsContainer: {
+                stylePreset: 'cardContainerActionsMock',
+                minHeight: 'sizing090',
+              },
+            }}
+          >
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline
+                kickerText="SHORT"
+                overrides={{
+                  kicker: {
+                    stylePreset: 'headlineKickerInteractiveMock',
+                    // spaceInline: 'space000',
+                  },
+                  heading: {
+                    stylePreset: 'headlineHeadingInteractiveMock',
+                  },
+                }}
+              >
+                title of the card describing the main content
+              </Headline>
+            </Block>
+            <Block spaceStack={cardTeaserLead}>
+              <TextBlock
+                stylePreset="cardTeaserLead"
+                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+              >
+                A short paragraph description of the article, outlining the main
+                story and focus.
+              </TextBlock>
+            </Block>
+          </Card>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -750,52 +748,50 @@ export const StoryCardWithInsetLinkContainersAndHeadlineOverrides = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={4}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <CardInset
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-              }}
-              actions={cardSmallTags}
-              overrides={{
-                stylePreset: 'cardContainerMock',
-                mediaContainer: {
-                  stylePreset: 'cardContainerMediaMock',
-                },
-                teaserContainer: {
-                  stylePreset: 'cardContainerTeaserMock',
-                },
-                actionsContainer: {
-                  stylePreset: 'cardContainerActionsMock',
-                },
-              }}
-            >
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline
-                  kickerText="SHORT"
-                  overrides={{
-                    kicker: {
-                      stylePreset: 'headlineKickerInteractiveMock',
-                      spaceInline: 'space000',
-                    },
-                    heading: {
-                      stylePreset: 'headlineHeadingInteractiveMock',
-                    },
-                  }}
-                >
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-              <TextBlock
-                stylePreset="cardTeaserLead"
-                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+          <CardInset
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              stylePreset: 'cardContainerMock',
+              mediaContainer: {
+                stylePreset: 'cardContainerMediaMock',
+              },
+              teaserContainer: {
+                stylePreset: 'cardContainerTeaserMock',
+              },
+              actionsContainer: {
+                stylePreset: 'cardContainerActionsMock',
+              },
+            }}
+          >
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline
+                kickerText="SHORT"
+                overrides={{
+                  kicker: {
+                    stylePreset: 'headlineKickerInteractiveMock',
+                    spaceInline: 'space000',
+                  },
+                  heading: {
+                    stylePreset: 'headlineHeadingInteractiveMock',
+                  },
+                }}
               >
-                A short paragraph description of the article, outlining the main
-                story and focus.
-              </TextBlock>
-            </CardInset>
-          </ThemeProvider>
+                title of the card describing the main content
+              </Headline>
+            </Block>
+            <TextBlock
+              stylePreset="cardTeaserLead"
+              typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+            >
+              A short paragraph description of the article, outlining the main
+              story and focus.
+            </TextBlock>
+          </CardInset>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -813,30 +809,28 @@ export const StoryCardHorizontal = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={6} md={5}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <Card
-              layout="horizontal"
-              media={{
-                src: '/placeholder-2x3.png',
-                alt: 'Card Media',
-                loadingAspectRatio: '2:3',
-              }}
-              actions={cardSmallTags}
+          <Card
+            layout="horizontal"
+            media={{
+              src: '/placeholder-2x3.png',
+              alt: 'Card Media',
+              loadingAspectRatio: '2:3',
+            }}
+            actions={cardSmallTags}
+          >
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
+            <TextBlock
+              stylePreset="cardTeaserLead"
+              typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
             >
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-              <TextBlock
-                stylePreset="cardTeaserLead"
-                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-              >
-                A short paragraph description of the article, outlining the main
-                story and focus.
-              </TextBlock>
-            </Card>
-          </ThemeProvider>
+              A short paragraph description of the article, outlining the main
+              story and focus.
+            </TextBlock>
+          </Card>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -850,30 +844,28 @@ export const StoryCardHorizontalReverseWithLink = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={6} md={5}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <Card
-              layout="horizontal-reverse"
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-2x3.png',
-                alt: 'Card Media',
-              }}
-              actions={cardSmallTags}
+          <Card
+            layout="horizontal-reverse"
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-2x3.png',
+              alt: 'Card Media',
+            }}
+            actions={cardSmallTags}
+          >
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
+            <TextBlock
+              stylePreset="cardTeaserLead"
+              typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
             >
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-              <TextBlock
-                stylePreset="cardTeaserLead"
-                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-              >
-                A short paragraph description of the article, outlining the main
-                story and focus.
-              </TextBlock>
-            </Card>
-          </ThemeProvider>
+              A short paragraph description of the article, outlining the main
+              story and focus.
+            </TextBlock>
+          </Card>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -890,32 +882,30 @@ export const StoryCardInsetHorizontalWithLinkAndMediainteractive = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={6} md={5}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <CardInset
-              layout="horizontal"
-              href="https://newskit.co.uk/"
-              mediaInteractive
-              media={{
-                src: '/placeholder-2x3.png',
-                alt: 'Card Media',
-                loadingAspectRatio: '2:3',
-              }}
-              actions={cardSmallTags}
+          <CardInset
+            layout="horizontal"
+            href="https://newskit.co.uk/"
+            mediaInteractive
+            media={{
+              src: '/placeholder-2x3.png',
+              alt: 'Card Media',
+              loadingAspectRatio: '2:3',
+            }}
+            actions={cardSmallTags}
+          >
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
+            <TextBlock
+              stylePreset="cardTeaserLead"
+              typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
             >
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-              <TextBlock
-                stylePreset="cardTeaserLead"
-                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-              >
-                A short paragraph description of the article, outlining the main
-                story and focus.
-              </TextBlock>
-            </CardInset>
-          </ThemeProvider>
+              A short paragraph description of the article, outlining the main
+              story and focus.
+            </TextBlock>
+          </CardInset>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -932,32 +922,30 @@ export const StoryCardInsetHorizontalReverseWithLinkAndMediainteractive = () => 
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={6} md={5}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <CardInset
-              layout="horizontal-reverse"
-              href="https://newskit.co.uk/"
-              mediaInteractive
-              media={{
-                src: '/placeholder-2x3.png',
-                alt: 'Card Media',
-                loadingAspectRatio: '2:3',
-              }}
-              actions={cardSmallTags}
+          <CardInset
+            layout="horizontal-reverse"
+            href="https://newskit.co.uk/"
+            mediaInteractive
+            media={{
+              src: '/placeholder-2x3.png',
+              alt: 'Card Media',
+              loadingAspectRatio: '2:3',
+            }}
+            actions={cardSmallTags}
+          >
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
+            <TextBlock
+              stylePreset="cardTeaserLead"
+              typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
             >
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-              <TextBlock
-                stylePreset="cardTeaserLead"
-                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-              >
-                A short paragraph description of the article, outlining the main
-                story and focus.
-              </TextBlock>
-            </CardInset>
-          </ThemeProvider>
+              A short paragraph description of the article, outlining the main
+              story and focus.
+            </TextBlock>
+          </CardInset>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -975,55 +963,53 @@ export const StoryCardHorizontalWithoutInsetLinkContainersAndHeadlineOverrides =
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={6} md={5}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <Card
-              layout="horizontal-reverse"
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-2x3.png',
-                alt: 'Card Media',
-                loadingAspectRatio: '2:3',
-              }}
-              actions={cardSmallTags}
-              overrides={{
-                stylePreset: 'cardContainerMock',
-                mediaContainer: {
-                  stylePreset: 'cardContainerMediaMock',
-                },
-                teaserContainer: {
-                  stylePreset: 'cardContainerTeaserMock',
-                },
-                actionsContainer: {
-                  stylePreset: 'cardContainerActionsMock',
-                  minHeight: 'sizing090',
-                },
-              }}
-            >
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline
-                  kickerText="SHORT"
-                  overrides={{
-                    kicker: {
-                      stylePreset: 'headlineKickerInteractiveMock',
-                      spaceInline: 'space000',
-                    },
-                    heading: {
-                      stylePreset: 'headlineHeadingInteractiveMock',
-                    },
-                  }}
-                >
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-              <TextBlock
-                stylePreset="cardTeaserLead"
-                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+          <Card
+            layout="horizontal-reverse"
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-2x3.png',
+              alt: 'Card Media',
+              loadingAspectRatio: '2:3',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              stylePreset: 'cardContainerMock',
+              mediaContainer: {
+                stylePreset: 'cardContainerMediaMock',
+              },
+              teaserContainer: {
+                stylePreset: 'cardContainerTeaserMock',
+              },
+              actionsContainer: {
+                stylePreset: 'cardContainerActionsMock',
+                minHeight: 'sizing090',
+              },
+            }}
+          >
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline
+                kickerText="SHORT"
+                overrides={{
+                  kicker: {
+                    stylePreset: 'headlineKickerInteractiveMock',
+                    spaceInline: 'space000',
+                  },
+                  heading: {
+                    stylePreset: 'headlineHeadingInteractiveMock',
+                  },
+                }}
               >
-                A short paragraph description of the article, outlining the main
-                story and focus.
-              </TextBlock>
-            </Card>
-          </ThemeProvider>
+                title of the card describing the main content
+              </Headline>
+            </Block>
+            <TextBlock
+              stylePreset="cardTeaserLead"
+              typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+            >
+              A short paragraph description of the article, outlining the main
+              story and focus.
+            </TextBlock>
+          </Card>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -1044,54 +1030,52 @@ export const StoryCardHorizontalReverseWithInsetLinkContainersAndHeadlineOverrid
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={6} md={5}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <CardInset
-              layout="horizontal-reverse"
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-2x3.png',
-                alt: 'Card Media',
-                loadingAspectRatio: '2:3',
-              }}
-              actions={cardSmallTags}
-              overrides={{
-                stylePreset: 'cardContainerMock',
-                mediaContainer: {
-                  stylePreset: 'cardContainerMediaMock',
-                },
-                teaserContainer: {
-                  stylePreset: 'cardContainerTeaserMock',
-                },
-                actionsContainer: {
-                  stylePreset: 'cardContainerActionsMock',
-                },
-              }}
-            >
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline
-                  kickerText="SHORT"
-                  overrides={{
-                    kicker: {
-                      stylePreset: 'headlineKickerInteractiveMock',
-                      spaceInline: 'space000',
-                    },
-                    heading: {
-                      stylePreset: 'headlineHeadingInteractiveMock',
-                    },
-                  }}
-                >
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-              <TextBlock
-                stylePreset="cardTeaserLead"
-                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+          <CardInset
+            layout="horizontal-reverse"
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-2x3.png',
+              alt: 'Card Media',
+              loadingAspectRatio: '2:3',
+            }}
+            actions={cardSmallTags}
+            overrides={{
+              stylePreset: 'cardContainerMock',
+              mediaContainer: {
+                stylePreset: 'cardContainerMediaMock',
+              },
+              teaserContainer: {
+                stylePreset: 'cardContainerTeaserMock',
+              },
+              actionsContainer: {
+                stylePreset: 'cardContainerActionsMock',
+              },
+            }}
+          >
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline
+                kickerText="SHORT"
+                overrides={{
+                  kicker: {
+                    stylePreset: 'headlineKickerInteractiveMock',
+                    spaceInline: 'space000',
+                  },
+                  heading: {
+                    stylePreset: 'headlineHeadingInteractiveMock',
+                  },
+                }}
               >
-                A short paragraph description of the article, outlining the main
-                story and focus.
-              </TextBlock>
-            </CardInset>
-          </ThemeProvider>
+                title of the card describing the main content
+              </Headline>
+            </Block>
+            <TextBlock
+              stylePreset="cardTeaserLead"
+              typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+            >
+              A short paragraph description of the article, outlining the main
+              story and focus.
+            </TextBlock>
+          </CardInset>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -1109,32 +1093,30 @@ export const StoryCardHorizontalWithRatio = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={6} md={5}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <Card
-              layout="horizontal"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-                loadingAspectRatio: '3:2',
-              }}
-              overrides={{
-                horizontalRatio: '3:1',
-              }}
+          <Card
+            layout="horizontal"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+              loadingAspectRatio: '3:2',
+            }}
+            overrides={{
+              horizontalRatio: '3:1',
+            }}
+          >
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
+            <TextBlock
+              stylePreset="cardTeaserLead"
+              typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
             >
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-              <TextBlock
-                stylePreset="cardTeaserLead"
-                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-              >
-                A short paragraph description of the article, outlining the main
-                story and focus.
-              </TextBlock>
-            </Card>
-          </ThemeProvider>
+              A short paragraph description of the article, outlining the main
+              story and focus.
+            </TextBlock>
+          </Card>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -1148,32 +1130,30 @@ export const StoryCardHorizontalWithRatioFalsyValue = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={6} md={5}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <Card
-              layout="horizontal"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-                loadingAspectRatio: '3:2',
-              }}
-              overrides={{
-                horizontalRatio: '',
-              }}
+          <Card
+            layout="horizontal"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+              loadingAspectRatio: '3:2',
+            }}
+            overrides={{
+              horizontalRatio: '',
+            }}
+          >
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
+            <TextBlock
+              stylePreset="cardTeaserLead"
+              typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
             >
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-              <TextBlock
-                stylePreset="cardTeaserLead"
-                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-              >
-                A short paragraph description of the article, outlining the main
-                story and focus.
-              </TextBlock>
-            </Card>
-          </ThemeProvider>
+              A short paragraph description of the article, outlining the main
+              story and focus.
+            </TextBlock>
+          </Card>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -1190,38 +1170,36 @@ export const StoryCardWithCroppingText = () => (
     <ContainerWithBackground>
       <Grid>
         <Cell xs={12} sm={4}>
-          <ThemeProvider theme={myCustomCardTheme}>
-            <Card
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-              }}
-            >
-              <Block spaceStack={cardLabel}>
-                <Flag
-                  overrides={{
-                    spaceInset: 'spaceInsetSquish000',
-                    stylePreset: 'cardLabel',
-                    typographyPreset: cardTypographyPresets.cardLabelSmall,
-                    minHeight: 'sizing000',
-                  }}
-                >
-                  <IconFilledImage />
-                  IMAGE
-                </Flag>
-              </Block>
-              <Block spaceStack={cardTeaserLeadInset}>
-                <TextBlock
-                  stylePreset="headlineHeadingInteractive"
-                  typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-                >
-                  A short paragraph description of the article, outlining the
-                  main story and focus. qg
-                </TextBlock>
-              </Block>
-            </Card>
-          </ThemeProvider>
+          <Card
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+          >
+            <Block spaceStack={cardLabel}>
+              <Flag
+                overrides={{
+                  spaceInset: 'spaceInsetSquish000',
+                  stylePreset: 'cardLabel',
+                  typographyPreset: cardTypographyPresets.cardLabelSmall,
+                  minHeight: 'sizing000',
+                }}
+              >
+                <IconFilledImage />
+                IMAGE
+              </Flag>
+            </Block>
+            <Block spaceStack={cardTeaserLeadInset}>
+              <TextBlock
+                stylePreset="headlineHeadingInteractive"
+                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+              >
+                A short paragraph description of the article, outlining the main
+                story and focus. qg
+              </TextBlock>
+            </Block>
+          </Card>
         </Cell>
       </Grid>
     </ContainerWithBackground>
@@ -1392,259 +1370,288 @@ StoryCardLogicalOverrides.storyName = 'card-logical-overrides';
 export const StoryCardSlices = () => (
   <>
     <StorybookHeading>Card Slices</StorybookHeading>
-    <ThemeProvider theme={myCustomCardTheme}>
-      <ContainerWithBackground colorToken="white">
-        <Grid>
-          <Cell xs={12}>
-            <hr />
-          </Cell>
-          <Cell xs={12} md={9}>
+    <ContainerWithBackground colorToken="white">
+      <Grid>
+        <Cell xs={12}>
+          <hr />
+        </Cell>
+        <Cell xs={12} md={9}>
+          <Card
+            layout={{xs: 'vertical', md: 'horizontal-reverse'}}
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+              loadingAspectRatio: '3:2',
+            }}
+            overrides={{horizontalRatio: '2:3'}}
+            actions={() => (
+              <Link href="https://google.com">Read the full story</Link>
+            )}
+          >
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="CROWDS HEAD">
+                outdoors as bank holiday temps soar above 20 degrees
+              </Headline>
+            </Block>
+
+            <Block spaceStack={cardTeaserHeadline}>
+              <TextBlock
+                stylePreset="cardTeaserLead"
+                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+              >
+                The bank holiday weekend has seen some mixed weather, but as the
+                sun emerged, many in the UK took the opportunity to make the
+                most of the lockdown easing.
+              </TextBlock>
+            </Block>
+            <Block spaceStack={cardTeaserHeadline}>
+              <TextBlock
+                stylePreset="cardTeaserLead"
+                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+              >
+                The bank holiday weekend has seen some mixed weather, but as the
+                sun emerged, many in the UK took the opportunity to make the
+                most of the lockdown easing.
+              </TextBlock>
+            </Block>
+          </Card>
+        </Cell>
+        <Cell xs={12} md={3}>
+          <Card
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            actions={() => (
+              <Link href="https://google.com">Read the full story</Link>
+            )}
+          >
+            <Block spaceStack={cardLabel}>
+              <Flag
+                overrides={{
+                  spaceInset: 'spaceInsetSquish000',
+                  stylePreset: 'cardLabel',
+                  typographyPreset: cardTypographyPresets.cardLabelSmall,
+                  minHeight: 'sizing000',
+                }}
+              >
+                <IconFilledImage />
+                IMAGE
+              </Flag>
+            </Block>
+
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
+
+            <Block spaceStack={cardTeaserLead}>
+              <TextBlock
+                stylePreset="cardTeaserLead"
+                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+              >
+                A short paragraph description of the article, outlining the main
+                story and focus.
+              </TextBlock>
+            </Block>
+          </Card>
+        </Cell>
+        <Cell xs={12}>
+          <hr />
+        </Cell>
+        <Cell xs={12} md={3}>
+          <Card
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            layout={{xs: 'horizontal', md: 'vertical'}}
+            overrides={{horizontalRatio: '1:2'}}
+            actions={() => (
+              <Link href="https://google.com">Read the full story</Link>
+            )}
+          >
+            <Block spaceStack={cardLabel}>
+              <Flag
+                overrides={{
+                  spaceInset: 'spaceInsetSquish000',
+                  stylePreset: 'cardLabel',
+                  typographyPreset: cardTypographyPresets.cardLabelSmall,
+                  minHeight: 'sizing000',
+                }}
+              >
+                <IconFilledImage />
+                IMAGE
+              </Flag>
+            </Block>
+
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
+          </Card>
+        </Cell>
+        <Cell xs={12} md={3}>
+          <Card
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            layout={{xs: 'horizontal', md: 'vertical'}}
+            overrides={{horizontalRatio: '1:2'}}
+            actions={() => (
+              <Link href="https://google.com">Read the full story</Link>
+            )}
+          >
+            <Block spaceStack={cardLabel}>
+              <Flag
+                overrides={{
+                  spaceInset: 'spaceInsetSquish000',
+                  stylePreset: 'cardLabel',
+                  typographyPreset: cardTypographyPresets.cardLabelSmall,
+                  minHeight: 'sizing000',
+                }}
+              >
+                <IconFilledImage />
+                IMAGE
+              </Flag>
+            </Block>
+
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">title of the card</Headline>
+            </Block>
+          </Card>
+        </Cell>
+        <Cell xs={12} md={3}>
+          <Card
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            layout={{xs: 'horizontal', md: 'vertical'}}
+            overrides={{horizontalRatio: '1:2'}}
+            actions={() => (
+              <Link href="https://google.com">Read the full story</Link>
+            )}
+          >
+            <Block spaceStack={cardLabel}>
+              <Flag
+                overrides={{
+                  spaceInset: 'spaceInsetSquish000',
+                  stylePreset: 'cardLabel',
+                  typographyPreset: cardTypographyPresets.cardLabelSmall,
+                  minHeight: 'sizing000',
+                }}
+              >
+                <IconFilledImage />
+                IMAGE
+              </Flag>
+            </Block>
+
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
+          </Card>
+        </Cell>
+        <Cell xs={12} md={3}>
+          <Card
+            href="https://newskit.co.uk/"
+            media={{
+              src: '/placeholder-3x2.png',
+              alt: 'Card Media',
+            }}
+            layout={{xs: 'horizontal', md: 'vertical'}}
+            overrides={{horizontalRatio: '1:2'}}
+            actions={() => (
+              <Link href="https://google.com">Read the full story</Link>
+            )}
+          >
+            <Block spaceStack={cardLabel}>
+              <Flag
+                overrides={{
+                  spaceInset: 'spaceInsetSquish000',
+                  stylePreset: 'cardLabel',
+                  typographyPreset: cardTypographyPresets.cardLabelSmall,
+                  minHeight: 'sizing000',
+                }}
+              >
+                <IconFilledImage />
+                IMAGE
+              </Flag>
+            </Block>
+
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
+          </Card>
+        </Cell>
+        <Cell xs={12}>
+          <hr />
+        </Cell>
+        <Cell xs={12} sm={6}>
+          <Card
+            href="https://newskit.co.uk/"
+            mediaInteractive
+            media={() => <VideoElement width="100%" height="300px" />}
+            actions={() => (
+              <Link href="https://google.com">Read the full story</Link>
+            )}
+          >
+            <Block spaceStack={cardLabel}>
+              <Flag
+                overrides={{
+                  spaceInset: 'spaceInsetSquish000',
+                  stylePreset: 'cardLabel',
+                  typographyPreset: cardTypographyPresets.cardLabelSmall,
+                  minHeight: 'sizing000',
+                }}
+              >
+                <IconFilledImage />
+                IMAGE
+              </Flag>
+            </Block>
+
+            <Block spaceStack={cardTeaserHeadline}>
+              <Headline kickerText="SHORT">
+                title of the card describing the main content
+              </Headline>
+            </Block>
+            <Block spaceStack={cardTeaserLeadInset}>
+              <TextBlock
+                stylePreset="cardTeaserLead"
+                typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+              >
+                A short paragraph description of the article, outlining the main
+                story and focus.
+              </TextBlock>
+            </Block>
+          </Card>
+        </Cell>
+        <Cell xs={12} sm={6}>
+          <Stack spaceInline="space050">
             <Card
-              layout={{xs: 'vertical', md: 'horizontal-reverse'}}
-              href="https://newskit.co.uk/"
+              layout="horizontal"
+              href="http://newskit.co.uk"
               media={{
                 src: '/placeholder-3x2.png',
                 alt: 'Card Media',
                 loadingAspectRatio: '3:2',
               }}
-              overrides={{horizontalRatio: '2:3'}}
-              actions={() => (
-                <Link href="https://google.com">Read the full story</Link>
-              )}
-            >
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="CROWDS HEAD">
-                  outdoors as bank holiday temps soar above 20 degrees
-                </Headline>
-              </Block>
-
-              <Block spaceStack={cardTeaserHeadline}>
-                <TextBlock
-                  stylePreset="cardTeaserLead"
-                  typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-                >
-                  The bank holiday weekend has seen some mixed weather, but as
-                  the sun emerged, many in the UK took the opportunity to make
-                  the most of the lockdown easing.
-                </TextBlock>
-              </Block>
-              <Block spaceStack={cardTeaserHeadline}>
-                <TextBlock
-                  stylePreset="cardTeaserLead"
-                  typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-                >
-                  The bank holiday weekend has seen some mixed weather, but as
-                  the sun emerged, many in the UK took the opportunity to make
-                  the most of the lockdown easing.
-                </TextBlock>
-              </Block>
-            </Card>
-          </Cell>
-          <Cell xs={12} md={3}>
-            <Card
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
+              overrides={{
+                horizontalRatio: '1:2',
               }}
-              actions={() => (
-                <Link href="https://google.com">Read the full story</Link>
-              )}
             >
-              <Block spaceStack={cardLabel}>
-                <Flag
-                  overrides={{
-                    spaceInset: 'spaceInsetSquish000',
-                    stylePreset: 'cardLabel',
-                    typographyPreset: cardTypographyPresets.cardLabelSmall,
-                    minHeight: 'sizing000',
-                  }}
-                >
-                  <IconFilledImage />
-                  IMAGE
-                </Flag>
-              </Block>
-
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-
-              <Block spaceStack={cardTeaserLead}>
-                <TextBlock
-                  stylePreset="cardTeaserLead"
-                  typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-                >
-                  A short paragraph description of the article, outlining the
-                  main story and focus.
-                </TextBlock>
-              </Block>
-            </Card>
-          </Cell>
-          <Cell xs={12}>
-            <hr />
-          </Cell>
-          <Cell xs={12} md={3}>
-            <Card
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-              }}
-              layout={{xs: 'horizontal', md: 'vertical'}}
-              overrides={{horizontalRatio: '1:2'}}
-              actions={() => (
-                <Link href="https://google.com">Read the full story</Link>
-              )}
-            >
-              <Block spaceStack={cardLabel}>
-                <Flag
-                  overrides={{
-                    spaceInset: 'spaceInsetSquish000',
-                    stylePreset: 'cardLabel',
-                    typographyPreset: cardTypographyPresets.cardLabelSmall,
-                    minHeight: 'sizing000',
-                  }}
-                >
-                  <IconFilledImage />
-                  IMAGE
-                </Flag>
-              </Block>
-
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-            </Card>
-          </Cell>
-          <Cell xs={12} md={3}>
-            <Card
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-              }}
-              layout={{xs: 'horizontal', md: 'vertical'}}
-              overrides={{horizontalRatio: '1:2'}}
-              actions={() => (
-                <Link href="https://google.com">Read the full story</Link>
-              )}
-            >
-              <Block spaceStack={cardLabel}>
-                <Flag
-                  overrides={{
-                    spaceInset: 'spaceInsetSquish000',
-                    stylePreset: 'cardLabel',
-                    typographyPreset: cardTypographyPresets.cardLabelSmall,
-                    minHeight: 'sizing000',
-                  }}
-                >
-                  <IconFilledImage />
-                  IMAGE
-                </Flag>
-              </Block>
-
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">title of the card</Headline>
-              </Block>
-            </Card>
-          </Cell>
-          <Cell xs={12} md={3}>
-            <Card
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-              }}
-              layout={{xs: 'horizontal', md: 'vertical'}}
-              overrides={{horizontalRatio: '1:2'}}
-              actions={() => (
-                <Link href="https://google.com">Read the full story</Link>
-              )}
-            >
-              <Block spaceStack={cardLabel}>
-                <Flag
-                  overrides={{
-                    spaceInset: 'spaceInsetSquish000',
-                    stylePreset: 'cardLabel',
-                    typographyPreset: cardTypographyPresets.cardLabelSmall,
-                    minHeight: 'sizing000',
-                  }}
-                >
-                  <IconFilledImage />
-                  IMAGE
-                </Flag>
-              </Block>
-
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-            </Card>
-          </Cell>
-          <Cell xs={12} md={3}>
-            <Card
-              href="https://newskit.co.uk/"
-              media={{
-                src: '/placeholder-3x2.png',
-                alt: 'Card Media',
-              }}
-              layout={{xs: 'horizontal', md: 'vertical'}}
-              overrides={{horizontalRatio: '1:2'}}
-              actions={() => (
-                <Link href="https://google.com">Read the full story</Link>
-              )}
-            >
-              <Block spaceStack={cardLabel}>
-                <Flag
-                  overrides={{
-                    spaceInset: 'spaceInsetSquish000',
-                    stylePreset: 'cardLabel',
-                    typographyPreset: cardTypographyPresets.cardLabelSmall,
-                    minHeight: 'sizing000',
-                  }}
-                >
-                  <IconFilledImage />
-                  IMAGE
-                </Flag>
-              </Block>
-
-              <Block spaceStack={cardTeaserHeadline}>
-                <Headline kickerText="SHORT">
-                  title of the card describing the main content
-                </Headline>
-              </Block>
-            </Card>
-          </Cell>
-          <Cell xs={12}>
-            <hr />
-          </Cell>
-          <Cell xs={12} sm={6}>
-            <Card
-              href="https://newskit.co.uk/"
-              mediaInteractive
-              media={() => <VideoElement width="100%" height="300px" />}
-              actions={() => (
-                <Link href="https://google.com">Read the full story</Link>
-              )}
-            >
-              <Block spaceStack={cardLabel}>
-                <Flag
-                  overrides={{
-                    spaceInset: 'spaceInsetSquish000',
-                    stylePreset: 'cardLabel',
-                    typographyPreset: cardTypographyPresets.cardLabelSmall,
-                    minHeight: 'sizing000',
-                  }}
-                >
-                  <IconFilledImage />
-                  IMAGE
-                </Flag>
-              </Block>
-
               <Block spaceStack={cardTeaserHeadline}>
                 <Headline kickerText="SHORT">
                   title of the card describing the main content
@@ -1660,125 +1667,94 @@ export const StoryCardSlices = () => (
                 </TextBlock>
               </Block>
             </Card>
-          </Cell>
-          <Cell xs={12} sm={6}>
-            <Stack spaceInline="space050">
-              <Card
-                layout="horizontal"
-                href="http://newskit.co.uk"
-                media={{
-                  src: '/placeholder-3x2.png',
-                  alt: 'Card Media',
-                  loadingAspectRatio: '3:2',
-                }}
-                overrides={{
-                  horizontalRatio: '1:2',
-                }}
-              >
-                <Block spaceStack={cardTeaserHeadline}>
-                  <Headline kickerText="SHORT">
-                    title of the card describing the main content
-                  </Headline>
-                </Block>
-                <Block spaceStack={cardTeaserLeadInset}>
-                  <TextBlock
-                    stylePreset="cardTeaserLead"
-                    typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-                  >
-                    A short paragraph description of the article, outlining the
-                    main story and focus.
-                  </TextBlock>
-                </Block>
-              </Card>
-              <Card
-                layout="horizontal"
-                href="http://newskit.co.uk"
-                media={{
-                  src: '/placeholder-3x2.png',
-                  alt: 'Card Media',
-                  loadingAspectRatio: '3:2',
-                }}
-                overrides={{
-                  horizontalRatio: '1:2',
-                }}
-              >
-                <Block spaceStack={cardTeaserHeadline}>
-                  <Headline kickerText="SHORT">
-                    title of the card describing the main content
-                  </Headline>
-                </Block>
-                <Block spaceStack={cardTeaserLeadInset}>
-                  <TextBlock
-                    stylePreset="cardTeaserLead"
-                    typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-                  >
-                    A short paragraph description of the article, outlining the
-                    main story and focus.
-                  </TextBlock>
-                </Block>
-              </Card>
-              <Card
-                layout="horizontal"
-                href="http://newskit.co.uk"
-                media={{
-                  src: '/placeholder-3x2.png',
-                  alt: 'Card Media',
-                  loadingAspectRatio: '3:2',
-                }}
-                overrides={{
-                  horizontalRatio: '1:2',
-                }}
-              >
-                <Block spaceStack={cardTeaserHeadline}>
-                  <Headline kickerText="SHORT">
-                    title of the card describing the main content
-                  </Headline>
-                </Block>
-                <Block spaceStack={cardTeaserLeadInset}>
-                  <TextBlock
-                    stylePreset="cardTeaserLead"
-                    typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-                  >
-                    A short paragraph description of the article, outlining the
-                    main story and focus.
-                  </TextBlock>
-                </Block>
-              </Card>
-              <Card
-                layout="horizontal"
-                href="http://newskit.co.uk"
-                media={{
-                  src: '/placeholder-3x2.png',
-                  alt: 'Card Media',
-                  loadingAspectRatio: '3:2',
-                }}
-                overrides={{
-                  horizontalRatio: '1:2',
-                }}
-              >
-                <Block spaceStack={cardTeaserHeadline}>
-                  <Headline kickerText="SHORT">
-                    title of the card describing the main content
-                  </Headline>
-                </Block>
-                <Block spaceStack={cardTeaserLeadInset}>
-                  <TextBlock
-                    stylePreset="cardTeaserLead"
-                    typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
-                  >
-                    A short paragraph description of the article, outlining the
-                    main story and focus.
-                  </TextBlock>
-                </Block>
-              </Card>
-            </Stack>
-          </Cell>
-          <Cell xs={12}>
-            <hr />
-          </Cell>
-        </Grid>
-      </ContainerWithBackground>
-    </ThemeProvider>
+            <Card
+              layout="horizontal"
+              href="http://newskit.co.uk"
+              media={{
+                src: '/placeholder-3x2.png',
+                alt: 'Card Media',
+                loadingAspectRatio: '3:2',
+              }}
+              overrides={{
+                horizontalRatio: '1:2',
+              }}
+            >
+              <Block spaceStack={cardTeaserHeadline}>
+                <Headline kickerText="SHORT">
+                  title of the card describing the main content
+                </Headline>
+              </Block>
+              <Block spaceStack={cardTeaserLeadInset}>
+                <TextBlock
+                  stylePreset="cardTeaserLead"
+                  typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+                >
+                  A short paragraph description of the article, outlining the
+                  main story and focus.
+                </TextBlock>
+              </Block>
+            </Card>
+            <Card
+              layout="horizontal"
+              href="http://newskit.co.uk"
+              media={{
+                src: '/placeholder-3x2.png',
+                alt: 'Card Media',
+                loadingAspectRatio: '3:2',
+              }}
+              overrides={{
+                horizontalRatio: '1:2',
+              }}
+            >
+              <Block spaceStack={cardTeaserHeadline}>
+                <Headline kickerText="SHORT">
+                  title of the card describing the main content
+                </Headline>
+              </Block>
+              <Block spaceStack={cardTeaserLeadInset}>
+                <TextBlock
+                  stylePreset="cardTeaserLead"
+                  typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+                >
+                  A short paragraph description of the article, outlining the
+                  main story and focus.
+                </TextBlock>
+              </Block>
+            </Card>
+            <Card
+              layout="horizontal"
+              href="http://newskit.co.uk"
+              media={{
+                src: '/placeholder-3x2.png',
+                alt: 'Card Media',
+                loadingAspectRatio: '3:2',
+              }}
+              overrides={{
+                horizontalRatio: '1:2',
+              }}
+            >
+              <Block spaceStack={cardTeaserHeadline}>
+                <Headline kickerText="SHORT">
+                  title of the card describing the main content
+                </Headline>
+              </Block>
+              <Block spaceStack={cardTeaserLeadInset}>
+                <TextBlock
+                  stylePreset="cardTeaserLead"
+                  typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+                >
+                  A short paragraph description of the article, outlining the
+                  main story and focus.
+                </TextBlock>
+              </Block>
+            </Card>
+          </Stack>
+        </Cell>
+        <Cell xs={12}>
+          <hr />
+        </Cell>
+      </Grid>
+    </ContainerWithBackground>
   </>
 );
 StoryCardSlices.storyName = 'card-slices';

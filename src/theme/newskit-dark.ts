@@ -29,6 +29,7 @@ export const newskitDarkThemeOverrides = {
     interactiveNegative020: '{{colors.red100}}',
     interactivePositive010: '{{colors.green090}}',
     interactivePositive020: '{{colors.green100}}',
+    interactiveInverse030: '{{colors.black}}',
     interfaceNotice010: '{{colors.amber030}}',
     interfaceBackground: '{{colors.neutral090}}',
     interface010: '{{colors.neutral090}}',
@@ -54,6 +55,10 @@ export const newskitDarkThemeOverrides = {
     interfaceSkeleton010: '{{colors.neutral090}}',
     interfaceSkeleton020: '{{colors.neutral080}}',
     inverse: '{{colors.black}}',
+    interfaceInformative010: '{{colors.teal050}}',
+    interfaceInformative020: '{{colors.teal070}}',
+    interfaceNegative010: '{{colors.red040}}',
+    interfaceNegative020: '{{colors.red070}}',
   },
   overlays: {
     overlayLightGradient010:

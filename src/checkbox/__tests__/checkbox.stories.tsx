@@ -5,7 +5,7 @@ import {
 } from '../../test/storybook-comps';
 
 import {Checkbox} from '..';
-import {compileTheme, createTheme, ThemeProvider} from '../../theme';
+import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
 import {styled} from '../../utils';
 import {
   Cell,
@@ -16,10 +16,12 @@ import {
 } from '../..';
 import {CheckboxIconProps} from '../types';
 import {states, sizes} from './helpers';
+import {themeObject} from '../../test/theme-select-object';
 
-const myCustomTheme = compileTheme(
+const getCustomTheme = (theme: UncompiledTheme) =>
   createTheme({
     name: 'checkbox-theme',
+    baseTheme: theme,
     overrides: {
       stylePresets: {
         customCheckboxInput: {
@@ -48,14 +50,42 @@ const myCustomTheme = compileTheme(
           },
         },
       },
+      transitionPresets: {
+        customBackgroundColorChange: {
+          base: {
+            transitionProperty: 'background-color',
+            transitionDuration: '500ms',
+            transitionDelay: '500ms',
+            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+          },
+        },
+        customBorderColourChange: {
+          base: {
+            transitionProperty: 'border-color',
+            transitionDuration: '500ms',
+            transitionDelay: '0ms',
+            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+          },
+        },
+      },
     },
-  }),
-);
+  });
 
 export default {
   title: 'NewsKit Light/checkbox',
   component: () => 'None',
   disabledRules: [],
+  decorators: [
+    (Story, context) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 const Container = styled.div`
@@ -63,7 +93,7 @@ const Container = styled.div`
   display: flex;
 `;
 export const StoryCheckboxDefault = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <StorybookHeading>Checkbox</StorybookHeading>
     <Grid>
       <Cell xs={8} sm={4}>
@@ -90,7 +120,7 @@ export const StoryCheckboxDefault = () => (
         ))}
       </Cell>
     </Grid>
-  </ThemeProvider>
+  </>
 );
 
 StoryCheckboxDefault.storyName = 'checkbox-default';
@@ -100,12 +130,12 @@ export const StoryCheckboxLabel = () => {
   const longLabel =
     'Very long label... The array of dependencies is not passed as arguments to the effect function.';
   return (
-    <ThemeProvider theme={myCustomTheme}>
+    <>
       <StorybookHeading>Checkbox - Labels</StorybookHeading>
       <Grid>
         {sizes.map(size => (
           <Cell xs={8} sm={4}>
-            <StorybookSubHeading>Size {size}</StorybookSubHeading>
+            <StorybookSubHeading>{`Size ${size}`}</StorybookSubHeading>
             <Container>
               <Checkbox label={shortLabel} size={size} />
             </Container>
@@ -130,7 +160,7 @@ export const StoryCheckboxLabel = () => {
         {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
         <label htmlFor="custom-label"> with custom label</label>
       </Container>
-    </ThemeProvider>
+    </>
   );
 };
 
@@ -145,7 +175,7 @@ const CustomCheck = ({checked}: CheckboxIconProps) =>
     />
   );
 export const StoryCheckboxOverrides = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <StorybookHeading>Checkbox</StorybookHeading>
     <StorybookSubHeading>Style overrides</StorybookSubHeading>
     <Container>
@@ -218,35 +248,12 @@ export const StoryCheckboxOverrides = () => (
         }}
       />
     </Container>
-  </ThemeProvider>
+  </>
 );
 StoryCheckboxOverrides.storyName = 'checkbox-overrides';
 
-const myCustomTransitionPresets = createTheme({
-  name: 'my-custom-transition-presets',
-  overrides: {
-    transitionPresets: {
-      customBackgroundColorChange: {
-        base: {
-          transitionProperty: 'background-color',
-          transitionDuration: '500ms',
-          transitionDelay: '500ms',
-          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-        },
-      },
-      customBorderColourChange: {
-        base: {
-          transitionProperty: 'border-color',
-          transitionDuration: '500ms',
-          transitionDelay: '0ms',
-          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-        },
-      },
-    },
-  },
-});
 export const StoryCheckboxTransitions = () => (
-  <ThemeProvider theme={myCustomTransitionPresets}>
+  <>
     <StorybookSubHeading>Checkbox with Transition Presets</StorybookSubHeading>
     <Container>
       <GridLayout rowGap="space040">
@@ -287,7 +294,7 @@ export const StoryCheckboxTransitions = () => (
         />
       </GridLayout>
     </Container>
-  </ThemeProvider>
+  </>
 );
 
 StoryCheckboxTransitions.storyName = 'checkbox-transitions';
