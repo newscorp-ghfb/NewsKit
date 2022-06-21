@@ -3,7 +3,6 @@ export const getTransitionClassName = (
   state: string,
 ): string => {
   let suffixClassName = '';
-  const nkComponent = componentName === 'nk-modal' ? 'nk-modal' : 'nk-drawer';
   // eslint-disable-next-line default-case
   switch (state) {
     case 'exiting':
@@ -19,5 +18,5 @@ export const getTransitionClassName = (
       suffixClassName = 'enter-done';
       break;
   }
-  return `${nkComponent}-${suffixClassName}`;
+  return `${componentName}-${suffixClassName}`;
 };

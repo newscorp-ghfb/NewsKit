@@ -71,7 +71,6 @@ describe('Drawer', () => {
       );
       fireEvent.click(toggleThemeButton);
     });
-    expect(getByTestId('drawer')).toBeInTheDocument();
     expect(getByTestId('drawer')).toHaveClass('nk-drawer-enter-done');
   });
 
