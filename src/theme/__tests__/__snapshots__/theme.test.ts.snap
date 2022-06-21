@@ -1985,7 +1985,7 @@ Object {
       "typographyPreset": "utilityLabel010",
     },
     "pointer": Object {
-      "padding": "space030",
+      "edgeOffset": "space030",
       "size": "sizing040",
       "stylePreset": "popoverPointer",
     },
@@ -2661,7 +2661,7 @@ Object {
       "typographyPreset": "utilityLabel010",
     },
     "pointer": Object {
-      "padding": "space020",
+      "edgeOffset": "space020",
       "size": "sizing010",
       "stylePreset": "tooltipPointer",
     },
