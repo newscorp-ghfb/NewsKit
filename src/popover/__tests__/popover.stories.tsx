@@ -53,23 +53,23 @@ const myCustomTheme = createTheme({
       popoverCustom: {
         base: {
           borderStyle: 'solid',
-          borderColor: '{{colors.red080}}',
+          borderColor: '{{colors.black}}',
           boxShadow: '{{shadows.shadow050}}',
           borderRadius: '{{borders.borderRadiusDefault}}',
-          backgroundColor: '{{colors.red020}}', // require for Firefox
+          backgroundColor: '{{colors.red080}}', // required for Firefox
         },
       },
       popoverPointerCustom: {
         base: {
-          backgroundColor: '{{colors.red020}}',
+          backgroundColor: '{{colors.red080}}',
           borderStyle: 'solid',
           borderColor:
-            '{{colors.transparent}} {{colors.red080}} {{colors.red080}} {{colors.transparent}}',
+            '{{colors.transparent}} {{colors.black}} {{colors.black}} {{colors.transparent}}',
         },
       },
       popoverPanelCustom: {
         base: {
-          backgroundColor: '{{colors.red020}}',
+          backgroundColor: '{{colors.red080}}',
           borderRadius: '{{borders.borderRadiusDefault}}',
           color: '{{colors.inkInverse}}',
         },
