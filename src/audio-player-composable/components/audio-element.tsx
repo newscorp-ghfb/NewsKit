@@ -12,6 +12,7 @@ export const AudioElement: React.FC<AudioElementProps> = ({
   onPause,
   onEnded,
   onDurationChange,
+  onVolumeChange,
   onTimeUpdate,
   onProgress,
 }) => (
@@ -27,6 +28,7 @@ export const AudioElement: React.FC<AudioElementProps> = ({
     onDurationChange={onDurationChange}
     onTimeUpdate={onTimeUpdate}
     onProgress={onProgress}
+    onVolumeChange={onVolumeChange}
     data-testid="audio-element"
   />
 );

@@ -38,6 +38,7 @@ export default [
         title: 'Getting started',
         page: true,
         id: '/getting-started/overview',
+        indexPage: true,
       },
       {
         title: 'Design',
@@ -110,12 +111,12 @@ export default [
   {
     title: 'Theme',
     id: '/theme',
-
     subNav: [
       {
         title: 'Overview',
         page: true,
         id: '/theme/overview',
+        indexPage: true,
       },
       {
         title: 'Foundations',
@@ -153,6 +154,14 @@ export default [
               'Fonts define the font family, boldness, size, and style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
           },
           {
+            title: 'Gradients',
+            page: true,
+            id: '/theme/gradients',
+            illustration: 'theme/gradients/hero',
+            description:
+              'Gradients is a visual representation of a colour. It is used to convey meaning and communicate a brand.',
+          },
+          {
             title: 'Iconography',
             page: true,
             id: '/theme/iconography',
@@ -167,6 +176,22 @@ export default [
             illustration: 'theme/motion/hero',
             description:
               'Motion is used to create movement and narrative within a product. Timely animated interface elements attract attention, provide guidance and enhance user experience.',
+          },
+          {
+            title: 'Opacity',
+            page: true,
+            id: '/theme/opacity',
+            illustration: 'theme/opacity/hero',
+            description:
+              'Opacity is used to create a visual layer between elements.',
+          },
+          {
+            title: 'Overlays',
+            page: true,
+            id: '/theme/overlays',
+            illustration: 'theme/overlays/hero',
+            description:
+              'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
           },
           {
             title: 'Shadows',
@@ -288,6 +313,7 @@ export default [
         title: 'Overview',
         page: true,
         id: '/components/overview',
+        indexPage: true,
       },
       {
         title: 'Actions & Inputs',
@@ -757,16 +783,39 @@ export default [
       },
     ],
   },
-  // ToDo: At least one pattern page should be ready to enable this nav link .
-  // {
-  //   title: 'Patterns',
-  //   id: '/patterns',
-  //   subNav: [
-  //     {
-  //       title: 'Overview',
-  //       page: true,
-  //       id: '/patterns/overview',
-  //     },
-  //   ],
-  // },
+  {
+    title: 'Patterns',
+    id: '/patterns',
+    subNav: [
+      {
+        title: 'Overview',
+        page: true,
+        id: '/patterns/overview',
+        indexPage: true,
+        description:
+          'Design patterns provide a framework for solving a particular user problem in a consistent, considered way.',
+      },
+      {
+        title: 'Forms',
+        id: '/patterns/forms',
+        subNav: [
+          {
+            title: 'Overview',
+            page: true,
+            id: '/patterns/forms/overview',
+            description: 'Forms are used to collect customer’s data.',
+            illustration: 'patterns/forms/overview/hero',
+          },
+          {
+            title: 'Best practice',
+            page: true,
+            id: '/patterns/forms/best-practice',
+            description:
+              'Help users to fill in forms quickly and accurately by following these industry best practices.',
+            illustration: 'patterns/forms/best-practice/hero',
+          },
+        ],
+      },
+    ],
+  },
 ];
