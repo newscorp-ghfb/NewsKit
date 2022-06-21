@@ -50,11 +50,7 @@ export const AccordionGroup = React.forwardRef<
     },
     ref,
   ) => {
-    const accordionOnlyChildren = React.Children.toArray(
-      children,
-    ).filter((child: React.ReactNode) =>
-      hasMatchingDisplayNameWith(child, Accordion),
-    ) as React.ReactElement<AccordionProps>[];
+    const accordionOnlyChildren = React.Children.toArray(children);
 
     const [expandedList, setExpandedState] = useControlled<number[]>({
       controlledValue: unifyValue(
@@ -70,13 +66,13 @@ export const AccordionGroup = React.forwardRef<
     }) as [number[], (state: number[]) => void];
 
     const handleChange = useCallback(
-      (isExpanded: boolean, index: number) => {
+      (index: number) => {
         let newExpandedState: number[] = [];
 
         // in the case only 1 accordion is allowed to be open
         if (expandSingle) {
           // replace current the expanded accordion with the new one
-          if (isExpanded && !expandedList.includes(index)) {
+          if (!expandedList.includes(index)) {
             newExpandedState = [index];
           } else {
             // close all when you click on the same accordion
@@ -86,7 +82,7 @@ export const AccordionGroup = React.forwardRef<
           //
         } else {
           // eslint-disable-next-line no-lonely-if
-          if (isExpanded) {
+          if (!expandedList.includes(index)) {
             // add to the list of expanded accordions
             newExpandedState = [...expandedList, index];
           } else {
@@ -106,12 +102,18 @@ export const AccordionGroup = React.forwardRef<
 
     return (
       <div ref={ref} {...restProps}>
-        {accordionOnlyChildren.map((child, index: number) =>
-          React.cloneElement(child, {
-            expanded: expandedList.includes(index),
-            onChange: (isExpanded: boolean) => handleChange(isExpanded, index),
-          }),
-        )}
+        {accordionOnlyChildren.map((child, index: number) => {
+          if (hasMatchingDisplayNameWith(child, Accordion)) {
+            return React.cloneElement(
+              child as React.ReactElement<AccordionProps>,
+              {
+                expanded: expandedList.includes(index),
+                onChange: () => handleChange(index),
+              },
+            );
+          }
+          return child;
+        })}
       </div>
     );
   },
