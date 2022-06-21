@@ -48,7 +48,7 @@ export const AccordionGroup = React.forwardRef<
             newExpandedState = [...expandedList, index];
           } else {
             // remove from the list of expanded accordions
-            newExpandedState = expandedList?.filter(i => i !== index);
+            newExpandedState = expandedList.filter(i => i !== index);
           }
         }
 
