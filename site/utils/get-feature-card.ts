@@ -20,7 +20,8 @@ const findIndex = (
     routesData.find(e => e.id.includes(currentRoute[elementIndex]));
   const currentSubNav = matchedRoute && matchedRoute.subNav;
   if (!initialRoute) {
-    initialRoute = currentSubNav && currentSubNav[0];
+    initialRoute =
+      currentSubNav && currentSubNav[1].subNav && currentSubNav[1].subNav[0];
   }
   const currentIndex =
     currentSubNav && currentSubNav.findIndex((e: RouteObject) => e.id === path);
@@ -54,7 +55,7 @@ export const useGetFeatureCard = () => {
   }
   const featureCard = {
     ...(feature || initialRoute),
-    href: (feature && feature.id.substring(1)) || initialRoute?.id,
+    href: (feature && feature.id) || initialRoute?.id,
   };
   return featureCard;
 };

@@ -506,7 +506,7 @@ exports[`Modal renders default 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -1085,7 +1085,7 @@ exports[`Modal renders inline 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -1600,7 +1600,7 @@ exports[`Modal renders modal with overrides 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -2228,7 +2228,7 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
       >
         <div
           aria-modal="false"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -2816,7 +2816,7 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
         <div
           aria-labelledby="headerLabel"
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -3371,7 +3371,7 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
         <div
           aria-describedby="description purpose"
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -3946,7 +3946,7 @@ exports[`Modal renders with different closePosition 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -4527,7 +4527,7 @@ exports[`Modal renders with logical padding props 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -4951,7 +4951,7 @@ exports[`Modal renders without close button 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -5480,7 +5480,7 @@ exports[`Modal renders without header 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -5874,7 +5874,7 @@ exports[`Modal renders without header and close 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -6316,7 +6316,7 @@ exports[`Modal renders without overlay 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-1 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-1"
           data-testid="modal"
           role="dialog"
         >
@@ -6883,7 +6883,7 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
