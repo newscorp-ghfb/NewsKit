@@ -34,17 +34,15 @@ const StyledOutlineCard = styled.div<{
   ${getColorCssFromTheme('borderColor', 'interface060')};
   ${getColorCssFromTheme('background', 'interface020')};
 
-  ${() =>
-    getBorderCssFromTheme(
-      'borderRadius',
-      'borderRadiusRounded020',
-    )({theme: compiledNewskitLightTheme})};
+  ${getBorderCssFromTheme(
+    'borderRadius',
+    'borderRadiusRounded020',
+  )({theme: compiledNewskitLightTheme})};
 
-  ${() =>
-    getOutlineCssFromTheme(
-      'outlineColor',
-      'outlineColorDefault',
-    )({theme: compiledNewskitLightTheme})};
+  ${getOutlineCssFromTheme(
+    'outlineColor',
+    'outlineColorDefault',
+  )({theme: compiledNewskitLightTheme})};
 
   ${({outlineStyleToken}) =>
     getOutlineCssFromTheme(
