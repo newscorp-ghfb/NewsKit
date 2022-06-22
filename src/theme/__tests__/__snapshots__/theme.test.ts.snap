@@ -97,7 +97,7 @@ Object {
     "interactiveInput050": "{{colors.blue070}}",
     "interactiveInverse010": "{{colors.whiteTint010}}",
     "interactiveInverse020": "{{colors.whiteTint020}}",
-    "interactiveInverse030": "{{colors.white}}",
+    "interactiveInverse030": "{{colors.black}}",
     "interactiveInverse040": "{{colors.whiteTint070}}",
     "interactiveInverse050": "{{colors.whiteTint080}}",
     "interactiveNegative010": "{{colors.red090}}",
@@ -130,10 +130,10 @@ Object {
     "interfaceBackground": "{{colors.neutral090}}",
     "interfaceBrand010": "{{colors.blue060}}",
     "interfaceBrand020": "{{colors.blue020}}",
-    "interfaceInformative010": "{{colors.teal070}}",
-    "interfaceInformative020": "{{colors.teal010}}",
-    "interfaceNegative010": "{{colors.red070}}",
-    "interfaceNegative020": "{{colors.red010}}",
+    "interfaceInformative010": "{{colors.teal050}}",
+    "interfaceInformative020": "{{colors.teal070}}",
+    "interfaceNegative010": "{{colors.red040}}",
+    "interfaceNegative020": "{{colors.red070}}",
     "interfaceNeutral010": "{{colors.neutral080}}",
     "interfaceNeutral020": "{{colors.neutral010}}",
     "interfaceNotice010": "{{colors.amber030}}",
@@ -4840,6 +4840,7 @@ Object {
   "timeDisplay": Object {
     "base": Object {
       "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.inkBase}}",
     },
   },
   "titleBar": Object {
