@@ -1,30 +1,30 @@
 import React from 'react';
 import {newskitLightTheme, UnorderedList, InlineMessage} from 'newskit';
-import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {LayoutProps} from '../../components/layout';
-import {getTokenType} from '../../utils/get-token-type';
-import {Link} from '../../components/link';
-import {MediaList} from '../../components/media-list';
-import {Illustration} from '../../components/illustrations/illustration-loader';
-import {ColorPalettes} from '../../components/theming-values/colors/colors';
-import {TabsWithTable} from '../../components/tabs-with-table';
-import {TableRow} from '../../components/table';
-import {Code} from '../../components/code';
-import {IconFilledError} from '../../../src/icons';
-import {IconFilledAA, IconFilledAAA} from '../../components/icons';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {LayoutProps} from '../../../components/layout';
+import {getTokenType} from '../../../utils/get-token-type';
+import {Link} from '../../../components/link';
+import {MediaList} from '../../../components/media-list';
+import {Illustration} from '../../../components/illustrations/illustration-loader';
+import {ColorPalettes} from '../../../components/theming-values/colors/colors';
+import {TabsWithTable} from '../../../components/tabs-with-table';
+import {TableRow} from '../../../components/table';
+import {Code} from '../../../components/code';
+import {IconFilledError} from '../../../../src/icons';
+import {IconFilledAA, IconFilledAAA} from '../../../components/icons';
 import {
   INK_DESCRIPTION,
   INTERFACE_DESCRIPTION,
   INTERACTIVE_DESCRIPTION,
-} from '../../utils/colors-token-description';
+} from '../../../utils/colors-token-description';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
   ContentTertiary,
   ContentColSpan,
-} from '../../components/content-structure';
+} from '../../../components/content-structure';
 
 const themeColorRows = (
   type: string,

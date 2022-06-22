@@ -1,15 +1,15 @@
 import React from 'react';
 import {newskitLightTheme} from 'newskit';
-import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {LayoutProps} from '../../components/layout';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {LayoutProps} from '../../../components/layout';
 import {
   ContentPrimary,
   ContentSection,
-} from '../../components/content-structure';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {getTokenType} from '../../utils/get-token-type';
-import {Table, TableRow} from '../../components/table';
-import {Link} from '../../components/link';
+} from '../../../components/content-structure';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {getTokenType} from '../../../utils/get-token-type';
+import {Table, TableRow} from '../../../components/table';
+import {Link} from '../../../components/link';
 
 const opacity000Token =
   'Applied to the background of the feedback element applied to the multiple interactive elements, such as the Checkbox, or Radio Button on hover.';

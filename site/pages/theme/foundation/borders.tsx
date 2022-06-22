@@ -1,17 +1,17 @@
 import React from 'react';
 import {InlineMessage, newskitLightTheme, compileTheme} from 'newskit';
-import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {LayoutProps} from '../../components/layout';
-import {Table} from '../../components/table';
-import {getTokenType} from '../../utils/get-token-type';
-import {Code} from '../../components/code';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {LayoutProps} from '../../../components/layout';
+import {Table} from '../../../components/table';
+import {getTokenType} from '../../../utils/get-token-type';
+import {Code} from '../../../components/code';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
   ContentColSpan,
-} from '../../components/content-structure';
-import {ComponentPageCell} from '../../components/layout-cells';
+} from '../../../components/content-structure';
+import {ComponentPageCell} from '../../../components/layout-cells';
 
 const compiledNewskitLightTheme = compileTheme(newskitLightTheme);
 const borderRows = (type: string) =>
