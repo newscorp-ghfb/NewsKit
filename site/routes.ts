@@ -811,6 +811,13 @@ export default [
             description: `Ask for a user’s date of birth when we need to validate the user’s age. This should not be collected unless you have a need for it to validate a user’s age or benefit them in some way.`,
             illustration: 'patterns/forms/date-of-birth/hero',
           },
+          {
+            title: 'Date picker',
+            page: true,
+            id: '/patterns/forms/date-picker',
+            description: `Use this data entry type when capturing a date that is in the future such as a delivery date or booking date.`,
+            illustration: 'patterns/forms/date-picker/hero',
+          },
         ],
       },
     ],
