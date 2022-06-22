@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, {MouseEvent} from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Drawer} from '..';
 import {styled} from '../../utils/style';
 import {StorybookHeading, StorybookParah} from '../../test/storybook-comps';
@@ -275,7 +276,7 @@ const HeaderDrawer = styled.div`
   position: relative;
 `;
 
-const getCustomTheme = (theme: UncompiledTheme) =>
+const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
   createTheme({
     name: 'my-custom-drawer-theme',
     baseTheme: theme,
@@ -831,7 +832,7 @@ export default {
   title: 'NewsKit Light/drawer',
   component: () => 'None',
   decorators: [
-    (Story, context) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
         theme={getCustomTheme(
           themeObject[context?.globals?.backgrounds?.value || '#ffffff'],

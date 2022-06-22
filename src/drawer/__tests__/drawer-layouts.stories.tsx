@@ -1,4 +1,5 @@
 import React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Drawer} from '..';
 import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
 import {getColorFromTheme, styled} from '../../utils/style';
@@ -15,7 +16,7 @@ import {TextInput} from '../../text-input';
 import {UnorderedList} from '../../unordered-list';
 import {themeObject} from '../../test/theme-select-object';
 
-const getCustomTheme = (theme: UncompiledTheme) =>
+const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
   createTheme({
     name: 'my-custom-drawer-theme',
     baseTheme: theme,
@@ -80,7 +81,7 @@ export default {
   component: () => 'None',
   disabledRules: ['tabindex'],
   decorators: [
-    (Story, context) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
         theme={getCustomTheme(
           themeObject[context?.globals?.backgrounds?.value || '#ffffff'],

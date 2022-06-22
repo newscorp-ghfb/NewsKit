@@ -1,9 +1,10 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Headline} from '..';
 import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
 import {themeObject} from '../../test/theme-select-object';
 
-const getCustomTheme = (theme: UncompiledTheme) =>
+const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
   createTheme({
     name: 'my-custom-theme',
     baseTheme: theme,
@@ -35,7 +36,7 @@ export default {
   title: 'NewsKit Light/headline',
   component: () => 'None',
   decorators: [
-    (Story, context) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
         theme={getCustomTheme(
           themeObject[context?.globals?.backgrounds?.value || '#ffffff'],

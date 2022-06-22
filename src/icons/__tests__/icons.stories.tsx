@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
 import {styled} from '../../utils/style';
 import {Stack} from '../../stack';
@@ -27,7 +28,7 @@ const Constrain = styled.div`
   display: inline-block;
 `;
 
-const getCustomTheme = (baseTheme?: UncompiledTheme) =>
+const getCustomTheme = (baseTheme?: UncompiledTheme): UncompiledTheme =>
   createTheme({
     name: 'my-custom-icons-theme',
     baseTheme,
@@ -82,7 +83,7 @@ export default {
   title: 'NewsKit Light/icons',
   component: () => 'None',
   decorators: [
-    (Story, context) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
         theme={getCustomTheme(
           themeObject[context?.globals?.backgrounds?.value || '#ffffff'],

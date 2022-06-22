@@ -1,4 +1,5 @@
 import React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -18,7 +19,7 @@ import {CheckboxIconProps} from '../types';
 import {states, sizes} from './helpers';
 import {themeObject} from '../../test/theme-select-object';
 
-const getCustomTheme = (theme: UncompiledTheme) =>
+const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
   createTheme({
     name: 'checkbox-theme',
     baseTheme: theme,
@@ -76,7 +77,7 @@ export default {
   component: () => 'None',
   disabledRules: [],
   decorators: [
-    (Story, context) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
         theme={getCustomTheme(
           themeObject[context?.globals?.backgrounds?.value || '#ffffff'],

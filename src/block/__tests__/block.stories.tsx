@@ -1,4 +1,5 @@
 import React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Block} from '..';
 import {styled} from '../../utils/style';
 import {
@@ -17,7 +18,7 @@ const Square = styled(Block)`
 `;
 
 // The style presets are added for easier visualization of the spacings around the Block component
-const getCustomTheme = (theme: UncompiledTheme) =>
+const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
   createTheme({
     name: 'my-custom-block-theme',
     baseTheme: theme,
@@ -84,7 +85,7 @@ export default {
   title: 'NewsKit Light/block',
   component: () => 'None',
   decorators: [
-    (Story, context) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
         theme={getCustomTheme(
           themeObject[context?.globals?.backgrounds?.value || '#ffffff'],

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -9,7 +10,7 @@ import {InlineMessage} from '..';
 import {Link} from '../../link';
 import {themeObject} from '../../test/theme-select-object';
 
-const getCustomTheme = (theme: UncompiledTheme) =>
+const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
   createTheme({
     name: 'inline-message-theme',
     baseTheme: theme,
@@ -42,7 +43,7 @@ export default {
   title: 'NewsKit Light/inline-message',
   component: () => 'None',
   decorators: [
-    (Story, context) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
         theme={getCustomTheme(
           themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
