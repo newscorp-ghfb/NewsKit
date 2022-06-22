@@ -780,7 +780,7 @@ exports[`Select in Modal render Select 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -1533,7 +1533,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -2370,7 +2370,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >

@@ -6,7 +6,10 @@ import {getTransitionPreset} from '../utils/style/transition-preset';
 import {BaseDialogViewProps} from '../dialog/types';
 import {logicalPaddingProps, logicalProps} from '../utils/logical-properties';
 
-type DrawerPanelProps = Pick<DrawerProps, 'placement' | 'overrides' | 'open'>;
+export type DrawerPanelProps = Pick<
+  DrawerProps,
+  'placement' | 'overrides' | 'open'
+>;
 
 const placementOptions = {
   left: {
