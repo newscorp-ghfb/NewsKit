@@ -1,4 +1,4 @@
-export const outline = {
+export const outlines = {
   outlineColorDefault: '{{colors.interactiveFocus010}}',
   outlineStyleDefault: 'solid',
   outlineWidthDefault: '{{borders.borderWidth020}}',

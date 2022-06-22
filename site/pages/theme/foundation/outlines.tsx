@@ -1,22 +1,22 @@
 import React from 'react';
 import {newskitLightTheme, compileTheme, InlineMessage} from 'newskit';
-import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {Table} from '../../components/table';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {LayoutProps} from '../../components/layout';
-import {getTokenType} from '../../utils/get-token-type';
-import {Link} from '../../components/link';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {Table} from '../../../components/table';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {LayoutProps} from '../../../components/layout';
+import {getTokenType} from '../../../utils/get-token-type';
+import {Link} from '../../../components/link';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
   ContentColSpan,
-} from '../../components/content-structure';
-import {Code} from '../../components/code';
+} from '../../../components/content-structure';
+import {Code} from '../../../components/code';
 
 const compiledNewskitLightTheme = compileTheme(newskitLightTheme);
 const outlineRows = (type: string) =>
-  getTokenType(compiledNewskitLightTheme.outline, type).map(
+  getTokenType(compiledNewskitLightTheme.outlines, type).map(
     ({tokenName, tokenValue}) => ({
       [type]: tokenName,
       token: tokenName,
@@ -29,11 +29,11 @@ type CodeExampleType = {
 };
 
 const codeExamples: CodeExampleType = {
-  outlineColor: `outlineColor: '{{outline.outlineColorDefault}}'`,
-  outlineStyle: `outlineStyle: '{{outline.outlineStyleDefault}}'`,
-  outlineWidth: `outlineWidth: '{{outline.outlineWidthDefault}}'`,
-  outlineOffset: `outlineOffset: '{{outline.outlineOffsetDefault}}'`,
-  safariOutlineStyle: `safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}'`,
+  outlineColor: `outlineColor: '{{outlines.outlineColorDefault}}'`,
+  outlineStyle: `outlineStyle: '{{outlines.outlineStyleDefault}}'`,
+  outlineWidth: `outlineWidth: '{{outlines.outlineWidthDefault}}'`,
+  outlineOffset: `outlineOffset: '{{outlines.outlineOffsetDefault}}'`,
+  safariOutlineStyle: `safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}'`,
   safariOutlineOffset: `safariOutlineOffset: '-7px'`,
 };
 
@@ -54,14 +54,14 @@ const ExampleSection: React.FC<ExampleSectionProps> = ({
 const Outline = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Outline',
+      title: 'Outlines',
       description:
         'Outlines provide visual cues about the focus or active states of elements.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Foundations',
-      name: 'Outline',
+      name: 'Outlines',
       hero: {
         illustration: 'theme/hero-borders-illustration',
       },

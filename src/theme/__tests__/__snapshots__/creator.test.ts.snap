@@ -280,7 +280,7 @@ Object {
     "motionTimingLinear": "linear",
   },
   "name": "default-theme",
-  "outline": Object {
+  "outlines": Object {
     "outlineColorDefault": "{{colors.interactiveFocus010}}",
     "outlineOffsetDefault": "{{borders.borderWidth020}}",
     "outlineStyleDefault": "solid",
@@ -451,10 +451,10 @@ Object {
       "focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.transparent}}",
-        "outlineColor": "{{outline.outlineColorDefault}}",
-        "outlineStyle": "{{outline.outlineStyleDefault}}",
-        "outlineWidth": "{{outline.outlineWidthDefault}}",
-        "safariOutlineStyle": "{{outline.safariOutlineStyleDefault}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -464,7 +464,7 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outline.outlineColorDefault}}",
+        "borderColor": "{{outlines.outlineColorDefault}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -478,7 +478,7 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{outline.outlineColorDefault}}",
+        "borderColor": "{{outlines.outlineColorDefault}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",

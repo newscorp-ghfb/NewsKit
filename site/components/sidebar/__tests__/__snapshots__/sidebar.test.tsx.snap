@@ -1385,7 +1385,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="/theme/borders"
+                              href="/theme/foundation/borders"
                               tabindex="-1"
                             >
                               <div
@@ -1585,7 +1585,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="/theme/outline"
+                              href="/theme/foundation/outlines"
                               tabindex="-1"
                             >
                               <div
@@ -1597,7 +1597,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                   <span
                                     class="emotion-17"
                                   >
-                                    Outline
+                                    Outlines
                                   </span>
                                 </div>
                               </div>
@@ -4867,7 +4867,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="/theme/borders"
+                        href="/theme/foundation/borders"
                       >
                         <div
                           class="emotion-10"
@@ -5059,7 +5059,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="/theme/outline"
+                        href="/theme/foundation/outlines"
                       >
                         <div
                           class="emotion-10"
@@ -5070,7 +5070,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                             <span
                               class="emotion-17"
                             >
-                              Outline
+                              Outlines
                             </span>
                           </div>
                         </div>
@@ -8462,7 +8462,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="/theme/borders"
+                              href="/theme/foundation/borders"
                             >
                               <div
                                 class="emotion-10"
@@ -8654,7 +8654,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="/theme/outline"
+                              href="/theme/foundation/outlines"
                             >
                               <div
                                 class="emotion-10"
@@ -8665,7 +8665,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                                   <span
                                     class="emotion-17"
                                   >
-                                    Outline
+                                    Outlines
                                   </span>
                                 </div>
                               </div>
@@ -11865,7 +11865,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="/theme/borders"
+                        href="/theme/foundation/borders"
                       >
                         <div
                           class="emotion-10"
@@ -12057,7 +12057,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="/theme/outline"
+                        href="/theme/foundation/outlines"
                       >
                         <div
                           class="emotion-10"
@@ -12068,7 +12068,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                             <span
                               class="emotion-17"
                             >
-                              Outline
+                              Outlines
                             </span>
                           </div>
                         </div>

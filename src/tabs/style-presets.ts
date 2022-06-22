@@ -32,11 +32,11 @@ export default {
       iconColor: '{{colors.inkNonEssential}}',
     },
     focus: {
-      outlineColor: '{{outline.outlineColorDefault}}',
-      outlineStyle: '{{outline.outlineStyleDefault}}',
-      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
       outlineOffset: '-2px',
-      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
     },
   },
   tabsBarTrack: {
@@ -51,11 +51,11 @@ export default {
   },
   tabPanel: {
     focus: {
-      outlineColor: '{{outline.outlineColorDefault}}',
-      outlineStyle: '{{outline.outlineStyleDefault}}',
-      outlineWidth: '{{outline.outlineWidthDefault}}',
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
       outlineOffset: '-3px',
-      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
     },
   },
 } as Record<string, StylePreset>;

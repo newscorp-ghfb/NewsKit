@@ -18,11 +18,11 @@ export default {
       borderWidth: '{{borders.borderWidth010}}',
     },
     'focus-visible': {
-      outlineColor: '{{outline.outlineColorDefault}}',
-      outlineStyle: '{{outline.outlineStyleDefault}}',
-      outlineWidth: '{{outline.outlineWidthDefault}}',
-      outlineOffset: '{{outline.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      outlineOffset: '{{outlines.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
     },
   },
   tagPrimaryInverse: {
@@ -42,11 +42,11 @@ export default {
       backgroundColor: '{{colors.interactiveInverse020}}',
     },
     'focus-visible': {
-      outlineColor: '{{outline.outlineColorDefault}}',
-      outlineStyle: '{{outline.outlineStyleDefault}}',
-      outlineWidth: '{{outline.outlineWidthDefault}}',
-      outlineOffset: '{{outline.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      outlineOffset: '{{outlines.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
     },
   },
 } as Record<string, StylePreset>;

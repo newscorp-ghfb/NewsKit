@@ -281,7 +281,7 @@ Object {
     "motionTimingLinear": "linear",
   },
   "name": "my theme",
-  "outline": Object {
+  "outlines": Object {
     "outlineColorDefault": "#3768FB",
     "outlineOffsetDefault": "2px",
     "outlineStyleDefault": "solid",

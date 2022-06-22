@@ -219,7 +219,7 @@ export const getOverlayCssFromTheme = getXFromTheme('overlays');
 export const getShadowCssFromTheme = getXFromTheme('shadows');
 export const getSizingCssFromTheme = getXFromTheme('sizing');
 export const getSpacingCssFromTheme = getXFromTheme('spacePresets');
-export const getOutlineCssFromTheme = getXFromTheme('outline');
+export const getOutlineCssFromTheme = getXFromTheme('outlines');
 
 type BreakpointKeysUnsafe = BreakpointKeys | undefined;
 

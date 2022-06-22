@@ -42,11 +42,11 @@ const checkedInvalidHover = {
 };
 
 const focusVisible = {
-  outlineColor: '{{outline.outlineColorDefault}}',
-  outlineStyle: '{{outline.outlineStyleDefault}}',
-  outlineWidth: '{{outline.outlineWidthDefault}}',
-  outlineOffset: '{{outline.outlineOffsetDefault}}',
-  safariOutlineStyle: '{{outline.safariOutlineStyleDefault}}',
+  outlineColor: '{{outlines.outlineColorDefault}}',
+  outlineStyle: '{{outlines.outlineStyleDefault}}',
+  outlineWidth: '{{outlines.outlineWidthDefault}}',
+  outlineOffset: '{{outlines.outlineOffsetDefault}}',
+  safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
 };
 
 export default {
