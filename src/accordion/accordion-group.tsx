@@ -5,35 +5,36 @@ import {hasMatchingDisplayNameWith} from '../utils/component';
 import {Accordion} from './accordion';
 
 const toArray = (
-  value: number | number[] | 'all' | undefined,
+  expandedProp: number | number[] | 'all' | undefined,
   arrayLength: number,
 ): number[] | undefined => {
-  if (value === 'all') {
+  if (expandedProp === 'all') {
     return Array.from(Array(arrayLength).keys());
   }
 
-  if (value !== undefined && !Array.isArray(value)) {
-    return [value];
+  if (expandedProp !== undefined && !Array.isArray(expandedProp)) {
+    return [expandedProp];
   }
-  return value;
+  return expandedProp;
 };
 
-const maybeSingle = (
-  array: number[] | undefined,
+const takeFirst = (
+  expandedProp: number[] | undefined,
   onlyOne: boolean | undefined,
 ): number[] | undefined => {
-  if (Array.isArray(array) && onlyOne) {
-    return [...array].splice(0, 1);
+  if (Array.isArray(expandedProp) && onlyOne) {
+    return [...expandedProp].splice(0, 1);
   }
 
-  return array;
+  return expandedProp;
 };
 
 const unifyValue = (
-  value: number | number[] | 'all' | undefined,
+  expandedProp: number | number[] | 'all' | undefined,
   arrayLength: number,
   single: boolean | undefined,
-): number[] | undefined => maybeSingle(toArray(value, arrayLength), single);
+): number[] | undefined =>
+  takeFirst(toArray(expandedProp, arrayLength), single);
 
 export const AccordionGroup = React.forwardRef<
   HTMLInputElement,
@@ -52,7 +53,7 @@ export const AccordionGroup = React.forwardRef<
   ) => {
     const childrenArray = React.Children.toArray(children);
 
-    const [expandedList, setExpandedState] = useControlled<number[]>({
+    const [expandedList, setExpandedList] = useControlled<number[]>({
       controlledValue: unifyValue(expanded, childrenArray.length, expandSingle),
       defaultValue: unifyValue(
         defaultExpanded,
@@ -87,13 +88,13 @@ export const AccordionGroup = React.forwardRef<
           }
         }
 
-        setExpandedState(newExpandedState);
+        setExpandedList(newExpandedState);
 
         if (onChange) {
           onChange(newExpandedState);
         }
       },
-      [setExpandedState, expandedList, expandSingle, onChange],
+      [setExpandedList, expandedList, expandSingle, onChange],
     );
 
     return (
