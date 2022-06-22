@@ -114,7 +114,7 @@ const DateOfBirth = (layoutProps: LayoutProps) => (
             </>
             <>
               Split out each date field, not rely on users entering a forward
-              slash or hyphen. 2
+              slash or hyphen.
             </>
             <>
               Collect 4 digits for the year as year of birth now crosses between
@@ -125,7 +125,7 @@ const DateOfBirth = (layoutProps: LayoutProps) => (
               saved personal data on their device.
             </>
             <>
-              Show hint text so the users understands the date format they need
+              Show hint text so the user understands the date format they need
               to enter.
             </>
           </UnorderedList>
