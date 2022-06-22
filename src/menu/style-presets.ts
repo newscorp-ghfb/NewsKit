@@ -1,4 +1,5 @@
 import {StylePreset} from '../theme/types';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 export default {
   menuItemVertical: {
@@ -36,13 +37,7 @@ export default {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
 
   menuItemHorizontal: {
@@ -79,13 +74,7 @@ export default {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
 
   menuItemHorizontalInverse: {
@@ -122,12 +111,6 @@ export default {
       color: '{{colors.interactiveInverse020}}',
       iconColor: '{{colors.interactiveInverse020}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
 } as Record<string, StylePreset>;

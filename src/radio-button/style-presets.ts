@@ -1,4 +1,5 @@
 import {StylePreset} from '../theme/types';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 const checked = {
   backgroundColor: '{{colors.interactiveInput010}}',
@@ -39,14 +40,6 @@ const checkedInvalidHover = {
   backgroundColor: '{{colors.interactiveNegative010}}',
   borderColor: '{{colors.interactiveNegative050}}',
   iconColor: '{{colors.interactiveNegative050}}',
-};
-
-const focusVisible = {
-  outlineColor: '{{outlines.outlineColorDefault}}',
-  outlineStyle: '{{outlines.outlineStyleDefault}}',
-  outlineWidth: '{{outlines.outlineWidthDefault}}',
-  outlineOffset: '{{outlines.outlineOffsetDefault}}',
-  safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
 };
 
 export default {
@@ -118,29 +111,29 @@ export default {
       borderColor: '{{colors.interactiveDisabled010}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
-    'focus-visible': focusVisible,
+    'focus-visible': defaultFocusVisible,
     'checked:focus-visible': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...checked,
     },
     'checked:focus-visible:hover': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...checkedHover,
     },
     'checked:valid:focus-visible': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...checkedValid,
     },
     'checked:valid:focus-visible:hover': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...checkedValidHover,
     },
     'checked:invalid:focus-visible': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...checkedInvalid,
     },
     'checked:invalid:focus-visible:hover': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...checkedInvalidHover,
     },
   },

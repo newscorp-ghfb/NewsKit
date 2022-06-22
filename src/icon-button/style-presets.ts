@@ -1,4 +1,5 @@
 import {StylePreset} from '../theme/types';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 export default {
   iconButtonSolidPrimary: {
@@ -24,13 +25,7 @@ export default {
       color: '{{colors.inkBrand010}}',
       iconColor: '{{colors.inkBrand010}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   iconButtonSolidSecondary: {
     base: {
@@ -55,13 +50,7 @@ export default {
       color: '{{colors.inkBase}}',
       iconColor: '{{colors.inkBase}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   iconButtonSolidNegative: {
     base: {
@@ -86,13 +75,7 @@ export default {
       color: '{{colors.inkNegative}}',
       iconColor: '{{colors.inkNegative}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   iconButtonSolidPositive: {
     base: {
@@ -117,13 +100,7 @@ export default {
       color: '{{colors.inkPositive}}',
       iconColor: '{{colors.inkPositive}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   iconButtonSolidInverse: {
     base: {
@@ -148,13 +125,7 @@ export default {
       color: '{{colors.inkInverse}}',
       iconColor: '{{colors.inkInverse}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
 
   iconButtonOutlinedPrimary: {
@@ -184,13 +155,7 @@ export default {
       backgroundColor: '{{colors.interactivePrimary020}}',
       borderStyle: 'none',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   iconButtonOutlinedSecondary: {
     base: {
@@ -219,13 +184,7 @@ export default {
       backgroundColor: '{{colors.interactiveSecondary020}}',
       borderStyle: 'none',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   iconButtonOutlinedNegative: {
     base: {
@@ -254,13 +213,7 @@ export default {
       backgroundColor: '{{colors.interactiveNegative020}}',
       borderStyle: 'none',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   iconButtonOutlinedPositive: {
     base: {
@@ -289,13 +242,7 @@ export default {
       backgroundColor: '{{colors.interactivePositive020}}',
       borderStyle: 'none',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   iconButtonOutlinedInverse: {
     base: {
@@ -324,13 +271,7 @@ export default {
       backgroundColor: '{{colors.interactiveInverse020}}',
       borderStyle: 'none',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
 
   iconButtonMinimalPrimary: {
@@ -354,13 +295,7 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactivePrimary020}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   iconButtonMinimalSecondary: {
     base: {
@@ -384,13 +319,7 @@ export default {
       backgroundColor: '{{colors.interactiveSecondary020}}',
       color: '{{colors.inkInverse}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   iconButtonMinimalNegative: {
     base: {
@@ -412,13 +341,7 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactiveNegative020}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   iconButtonMinimalPositive: {
     base: {
@@ -440,13 +363,7 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactivePositive020}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   iconButtonMinimalInverse: {
     base: {
@@ -469,12 +386,6 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactiveInverse020}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
 } as Record<string, StylePreset>;

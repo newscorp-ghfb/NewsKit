@@ -7,6 +7,7 @@ import {
 } from '../../test/storybook-comps';
 import {IconFilledEmail} from '../../icons';
 import {createTheme, ThemeProvider} from '../../theme';
+import {defaultFocusVisible} from '../../utils/default-focus-visible';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-link-theme',
@@ -27,13 +28,7 @@ const myCustomTheme = createTheme({
         hover: {
           color: '{{colors.inkLinkHover}}',
         },
-        'focus-visible': {
-          outlineColor: '{{outlines.outlineColorDefault}}',
-          outlineStyle: '{{outlines.outlineStyleDefault}}',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-          safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-        },
+        'focus-visible': defaultFocusVisible,
       },
     },
   },
@@ -405,13 +400,7 @@ const myCustomLinkTheme = createTheme({
           color: '{{colors.inkLinkHover}}',
           iconColor: '{{colors.inkLinkHover}}',
         },
-        'focus-visible': {
-          outlineColor: '{{outlines.outlineColorDefault}}',
-          outlineStyle: '{{outlines.outlineStyleDefault}}',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-          safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-        },
+        'focus-visible': defaultFocusVisible,
       },
     },
   },

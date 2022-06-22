@@ -8,6 +8,7 @@ import {getColorFromTheme, styled} from '../../utils/style';
 import {IconFilledEmail} from '../../icons';
 import {Stack} from '../../stack';
 import {createTheme, ThemeProvider} from '../../theme';
+import {defaultFocusVisible} from '../../utils/default-focus-visible';
 
 const Container = styled.div<{hasBlackBackground?: boolean}>`
   margin: 24px;
@@ -29,13 +30,7 @@ const myCustomTheme = createTheme({
           iconColor: '{{colors.inkInverse}}',
           backgroundColor: '{{colors.red020}}',
         },
-        'focus-visible': {
-          outlineColor: '{{outlines.outlineColorDefault}}',
-          outlineStyle: '{{outlines.outlineStyleDefault}}',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-          safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-        },
+        'focus-visible': defaultFocusVisible,
       },
     },
   },
@@ -244,13 +239,7 @@ const myCustomThemeTransitions = createTheme({
           backgroundColor: '{{colors.amber070}}',
           borderColor: '{{colors.green040}}',
         },
-        'focus-visible': {
-          outlineColor: '{{outlines.outlineColorDefault}}',
-          outlineStyle: '{{outlines.outlineStyleDefault}}',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-          safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-        },
+        'focus-visible': defaultFocusVisible,
       },
     },
   },

@@ -1,4 +1,5 @@
 import {StylePreset} from '../theme/types';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 export default {
   sliderTrack: {
@@ -46,11 +47,7 @@ export default {
       iconColor: '{{colors.inkNonEssential}}',
     },
     'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
+      ...defaultFocusVisible,
       safariOutlineOffset: '-7px',
     },
   },

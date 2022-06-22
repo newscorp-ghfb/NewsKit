@@ -1,4 +1,5 @@
 import {StylePreset} from '../theme/types';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 export default {
   linkStandalone: {
@@ -17,13 +18,7 @@ export default {
       iconColor: '{{colors.interactivePrimary050}}',
       textDecoration: 'underline',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   linkStandaloneInverse: {
     base: {
@@ -41,13 +36,7 @@ export default {
       iconColor: '{{colors.interactiveInverse030}}',
       textDecoration: 'underline',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   linkInline: {
     base: {
@@ -75,13 +64,7 @@ export default {
       iconColor: '{{colors.interactiveVisited010}}',
       textDecoration: 'underline',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   linkInlineInverse: {
     base: {
@@ -108,12 +91,6 @@ export default {
       color: '{{colors.interactiveInverse040}}',
       iconColor: '{{colors.interactiveInverse040}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
 } as Record<string, StylePreset>;

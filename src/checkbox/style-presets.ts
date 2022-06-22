@@ -1,4 +1,5 @@
 import {StylePreset} from '../theme/types';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 const checked = {
   backgroundColor: '{{colors.interactiveInput040}}',
@@ -54,14 +55,6 @@ const checkedValidHover = {
   borderColor: '{{colors.interactivePositive050}}',
 };
 
-const focusVisible = {
-  outlineColor: '{{outlines.outlineColorDefault}}',
-  outlineStyle: '{{outlines.outlineStyleDefault}}',
-  outlineWidth: '{{outlines.outlineWidthDefault}}',
-  outlineOffset: '{{outlines.outlineOffsetDefault}}',
-  safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-};
-
 export default {
   checkboxInput: {
     base: {
@@ -104,49 +97,49 @@ export default {
       borderColor: '{{colors.interactiveDisabled010}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
-    'focus-visible': focusVisible,
+    'focus-visible': defaultFocusVisible,
     'checked:focus-visible': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...checked,
     },
     'invalid:focus-visible': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...invalid,
     },
     'checked:invalid:focus-visible': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...checkedInvalid,
     },
     'valid:focus-visible': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...valid,
     },
     'checked:valid:focus-visible': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...checkedValid,
     },
     'focus-visible:hover': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...hover,
     },
     'checked:focus-visible:hover': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...checkedHover,
     },
     'invalid:focus-visible:hover': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...invalidHover,
     },
     'checked:invalid:focus-visible:hover': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...checkedInvalidHover,
     },
     'valid:focus-visible:hover': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...validHover,
     },
     'checked:valid:focus-visible:hover': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...checkedValidHover,
     },
   },

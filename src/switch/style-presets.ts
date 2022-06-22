@@ -1,10 +1,4 @@
-const focusVisible = {
-  outlineColor: '{{outlines.outlineColorDefault}}',
-  outlineStyle: '{{outlines.outlineStyleDefault}}',
-  outlineWidth: '{{outlines.outlineWidthDefault}}',
-  outlineOffset: '{{outlines.outlineOffsetDefault}}',
-  safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-};
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 const checked = {
   backgroundColor: '{{colors.interactiveInput040}}',
@@ -20,13 +14,13 @@ export default {
     disabled: {
       backgroundColor: '{{colors.interactiveDisabled010}}',
     },
-    'focus-visible': focusVisible,
+    'focus-visible': defaultFocusVisible,
     'checked:focus-visible': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...checked,
     },
     'checked:focus-visible:hover': {
-      ...focusVisible,
+      ...defaultFocusVisible,
       ...checked,
     },
   },

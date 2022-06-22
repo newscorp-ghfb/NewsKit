@@ -1,4 +1,5 @@
 import {StylePreset} from '../theme/types';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 export default {
   tagPrimary: {
@@ -17,13 +18,7 @@ export default {
     active: {
       borderWidth: '{{borders.borderWidth010}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
   tagPrimaryInverse: {
     base: {
@@ -41,12 +36,6 @@ export default {
     active: {
       backgroundColor: '{{colors.interactiveInverse020}}',
     },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
+    'focus-visible': defaultFocusVisible,
   },
 } as Record<string, StylePreset>;

@@ -16,6 +16,7 @@ import {
 } from '../..';
 import {CheckboxIconProps} from '../types';
 import {states, sizes} from './helpers';
+import {defaultFocusVisible} from '../../utils/default-focus-visible';
 
 const myCustomTheme = compileTheme(
   createTheme({
@@ -34,13 +35,7 @@ const myCustomTheme = compileTheme(
           hover: {
             backgroundColor: 'blue',
           },
-          'focus-visible': {
-            outlineColor: '{{outlines.outlineColorDefault}}',
-            outlineStyle: '{{outlines.outlineStyleDefault}}',
-            outlineWidth: '{{outlines.outlineWidthDefault}}',
-            outlineOffset: '{{outlines.outlineOffsetDefault}}',
-            safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-          },
+          'focus-visible': defaultFocusVisible,
         },
         customCheckboxFeedback: {
           base: {
