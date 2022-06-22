@@ -1,38 +1,20 @@
 import React from 'react';
-import {fireEvent, act, RenderOptions} from '@testing-library/react';
-import {Alignment, Side} from '@floating-ui/react-dom-interactions';
-import {renderWithTheme} from '../../test/test-utils';
+import {fireEvent} from '@testing-library/react';
+import {renderWithTheme, applyAsyncStyling} from '../../test/test-utils';
 import {Tooltip, TooltipProps} from '..';
 import {TriggerType} from '../types';
 import {Button} from '../../button';
-import {createTheme, ThemeProviderProps} from '../../theme';
-import {
-  calculateInset,
-  getOffsetAxis,
-  getOffsetAxisDirection,
-  getSide,
-} from '../utils';
+import {createTheme} from '../../theme';
 
-// The tooltip's inset styling is applied asynchronously. To make assertions on
-// the top / left attribute values, we need to flush the queue to ensure that
-// the element has been positioned before making assertions on snapshots.
-// See https://floating-ui.com/docs/react-dom#testing for more info.
-const asyncRender = async <T extends {}>(
-  Component: React.ComponentType<T>,
-  props?: T & {children?: React.ReactNode},
-  theme?: ThemeProviderProps['theme'],
-  options?: Omit<RenderOptions, 'wrapper'>,
-) => {
-  const res = await renderWithTheme(Component, props, theme, options);
-  await act(async () => {});
-  return res;
-};
+jest.mock('@floating-ui/react-dom-interactions', () => ({
+  ...jest.requireActual('@floating-ui/react-dom-interactions'),
+  useId: () => 'MOCK-ID',
+}));
 
 describe('Tooltip', () => {
   const defaultProps: TooltipProps = {
     children: <button type="submit">Add</button>,
     content: 'hello',
-    defaultOpen: true,
     hidePointer: true,
   };
 
@@ -49,7 +31,9 @@ describe('Tooltip', () => {
 
   describe('should render correct styles:', () => {
     test('default', async () => {
-      const {getByRole, asFragment} = await asyncRender(Tooltip, defaultProps);
+      const {getByRole, asFragment} = renderWithTheme(Tooltip, defaultProps);
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(getByRole('tooltip', {hidden: true}).textContent).toBe('hello');
       expect(getByRole('tooltip', {hidden: true})).toHaveStyle({
         position: 'absolute',
@@ -64,10 +48,12 @@ describe('Tooltip', () => {
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
     test('with different placement', async () => {
-      const {getByRole} = await asyncRender(Tooltip, {
+      const {getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         placement: 'bottom',
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(getByRole('tooltip', {hidden: true})).toHaveStyle({
         position: 'absolute',
       });
@@ -87,7 +73,7 @@ describe('Tooltip', () => {
           },
         },
       });
-      const {asFragment} = await asyncRender(
+      const {asFragment, getByRole} = renderWithTheme(
         Tooltip,
         {
           ...defaultProps,
@@ -105,13 +91,17 @@ describe('Tooltip', () => {
         },
         myCustomTheme,
       );
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer stylePreset overrides', async () => {
@@ -127,7 +117,7 @@ describe('Tooltip', () => {
           },
         },
       });
-      const {asFragment} = await asyncRender(
+      const {asFragment, getByRole} = renderWithTheme(
         Tooltip,
         {
           ...defaultProps,
@@ -140,10 +130,12 @@ describe('Tooltip', () => {
         },
         myCustomTheme,
       );
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer size overrides', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
@@ -152,69 +144,160 @@ describe('Tooltip', () => {
           },
         },
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
     test('with pointer y coordinate', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         placement: 'right',
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
   });
 
   describe('offset', () => {
     test('should not be applied with with no pointer', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: true,
         overrides: {
           distance: 'space040',
         },
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
-    test('should be applied with pointer and token distance override', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
-        ...defaultProps,
-        hidePointer: false,
-        overrides: {
-          distance: 'space040',
-        },
-      });
-      expect(asFragment()).toMatchSnapshot();
-    });
-    test('should be applied with pointer and px distance override', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
-        ...defaultProps,
-        hidePointer: false,
-        overrides: {
-          distance: '10px',
-        },
-      });
-      expect(asFragment()).toMatchSnapshot();
-    });
-    test('should be applied with pointer and non-px distance override', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
+    test('should not be applied with pointer and non-px distance override', async () => {
+      jest.spyOn(console, 'warn').mockImplementation();
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
           distance: '1rem',
         },
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
+      // eslint-disable-next-line no-console
+      expect(console.warn).toHaveBeenCalledWith(
+        "Invalid component override: please make sure 'distance' is a valid token or px value.",
+      );
       expect(asFragment()).toMatchSnapshot();
     });
-    test('should be applied with pointer and mq distance override', async () => {
-      const {asFragment} = await asyncRender(Tooltip, {
+    test('should not be applied with pointer and invalid token distance override', async () => {
+      jest.spyOn(console, 'warn').mockImplementation();
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
-          distance: {
-            xs: 'space060',
+          distance: 'invalid token',
+        },
+      });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
+      // eslint-disable-next-line no-console
+      expect(console.warn).toHaveBeenCalledWith(
+        "Invalid component override: please make sure 'distance' is a valid token or px value.",
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('should be applied with pointer and token distance override', async () => {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          distance: 'space040',
+        },
+      });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('should be applied with pointer and px distance override', async () => {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          distance: '10px',
+        },
+      });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+  });
+
+  describe('pointer padding', () => {
+    test('should not be applied with non-px distance override', async () => {
+      jest.spyOn(console, 'warn').mockImplementation();
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          pointer: {
+            edgeOffset: '1rem',
           },
         },
       });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
+      // eslint-disable-next-line no-console
+      expect(console.warn).toHaveBeenCalledWith(
+        "Invalid component override: please make sure 'pointer.edgeOffset' is a valid token or px value.",
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('should not be applied with invalid token distance override', async () => {
+      jest.spyOn(console, 'warn').mockImplementation();
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          pointer: {
+            edgeOffset: 'invalid token',
+          },
+        },
+      });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
+      // eslint-disable-next-line no-console
+      expect(console.warn).toHaveBeenCalledWith(
+        "Invalid component override: please make sure 'pointer.edgeOffset' is a valid token or px value.",
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('should be applied with token distance override', async () => {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          pointer: {
+            edgeOffset: 'space040',
+          },
+        },
+      });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('should be applied with px distance override', async () => {
+      const {asFragment, getByRole} = renderWithTheme(Tooltip, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          pointer: {
+            edgeOffset: '10px',
+          },
+        },
+      });
+      fireEvent.mouseEnter(getByRole('button'));
+      await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
   });
@@ -223,7 +306,6 @@ describe('Tooltip', () => {
     test('opens on mouseover by default', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        defaultOpen: false,
       });
       const button = getByRole('button');
       fireEvent.mouseEnter(button);
@@ -232,7 +314,6 @@ describe('Tooltip', () => {
     test('closes on mouseleave', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        defaultOpen: false,
       });
       const button = getByRole('button');
 
@@ -243,7 +324,6 @@ describe('Tooltip', () => {
     test('opens on focus by default', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        defaultOpen: false,
       });
       const button = getByRole('button');
       fireEvent.focus(button);
@@ -253,7 +333,6 @@ describe('Tooltip', () => {
     test('closes on blur', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        defaultOpen: false,
         trigger: 'focus' as TriggerType,
       });
       const button = getByRole('button');
@@ -265,7 +344,6 @@ describe('Tooltip', () => {
     test('will not open on focus when focus trigger is not passed', () => {
       const {getByRole, queryByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        defaultOpen: false,
         trigger: 'hover',
       });
       const button = getByRole('button');
@@ -274,7 +352,8 @@ describe('Tooltip', () => {
     });
 
     test('dismisses with escape key', () => {
-      const {queryByRole} = renderWithTheme(Tooltip, defaultProps);
+      const {queryByRole, getByRole} = renderWithTheme(Tooltip, defaultProps);
+      fireEvent.mouseEnter(getByRole('button'));
       expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
       fireEvent.keyDown(document.body, {key: 'Escape'});
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
@@ -283,20 +362,21 @@ describe('Tooltip', () => {
 
   describe('pass the correct a11y attributes:', () => {
     test('have role tooltip when used as a description', () => {
-      const {queryByRole} = renderWithTheme(Tooltip, defaultProps);
+      const {queryByRole, getByRole} = renderWithTheme(Tooltip, defaultProps);
+      fireEvent.mouseEnter(getByRole('button'));
       expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
     });
     test('do not have role tooltip when used as a label', () => {
-      const {queryByRole} = renderWithTheme(Tooltip, {
+      const {queryByRole, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         asLabel: true,
       });
+      fireEvent.mouseEnter(getByRole('button'));
       expect(queryByRole('tooltip', {hidden: true})).not.toBeInTheDocument();
     });
     test('can describe the child when open and remove aria attribute when closed', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        defaultOpen: false,
       });
       const button = getByRole('button');
       fireEvent.mouseEnter(button);
@@ -308,7 +388,6 @@ describe('Tooltip', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
         content: <div>the content</div>,
-        defaultOpen: false,
       });
       const button = getByRole('button');
       fireEvent.mouseEnter(button);
@@ -319,7 +398,6 @@ describe('Tooltip', () => {
     test('should label the child when closed', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
-        defaultOpen: false,
         asLabel: true,
       });
       const button = getByRole('button');
@@ -329,7 +407,6 @@ describe('Tooltip', () => {
       const {getByRole} = renderWithTheme(Tooltip, {
         children: <button type="submit">Add</button>,
         content: <div>the content</div>,
-        defaultOpen: false,
         asLabel: true,
       });
       const button = getByRole('button');
@@ -359,99 +436,5 @@ describe('Tooltip', () => {
     const button = getByTestId('outside-control');
     fireEvent.click(button);
     expect(queryByRole('tooltip', {hidden: true})).toBeInTheDocument();
-  });
-
-  describe('utils', () => {
-    const sides: Side[] = ['top', 'right', 'bottom', 'left'];
-    const alignments: Alignment[] = ['start', 'end'];
-
-    describe('getSide', () => {
-      test('should return correct side', () => {
-        sides.forEach(side => {
-          expect(getSide(side)).toEqual(side);
-          alignments.forEach(alignment => {
-            expect(getSide(`${side}-${alignment}`)).toEqual(side);
-          });
-        });
-      });
-    });
-
-    describe('getOffsetAxis', () => {
-      test('should return correct axis for offset to be applied along', () => {
-        expect(getOffsetAxis('top')).toEqual('y');
-        expect(getOffsetAxis('bottom')).toEqual('y');
-        expect(getOffsetAxis('right')).toEqual('x');
-        expect(getOffsetAxis('left')).toEqual('x');
-      });
-    });
-
-    describe('getOffsetAxisDirection', () => {
-      test('should return correct direction for offset to be applied in', () => {
-        expect(getOffsetAxisDirection('top')).toEqual(-1);
-        expect(getOffsetAxisDirection('bottom')).toEqual(1);
-        expect(getOffsetAxisDirection('right')).toEqual(1);
-        expect(getOffsetAxisDirection('left')).toEqual(-1);
-      });
-    });
-
-    describe('calculateInset', () => {
-      const insetValue: number = 10;
-      const offsetValue: string = '5px';
-
-      test('should return an empty string if there is no inset value', () => {
-        expect(calculateInset(null, 'left', offsetValue, 'right')).toEqual('');
-        expect(calculateInset(undefined, 'left', offsetValue, 'right')).toEqual(
-          '',
-        );
-      });
-
-      test('should return the original inset value if there is no offset value', () => {
-        expect(calculateInset(insetValue, 'left', undefined, 'right')).toEqual(
-          '10px',
-        );
-        expect(calculateInset(insetValue, 'left', undefined, 'right')).toEqual(
-          '10px',
-        );
-      });
-
-      test('should return the original inset value if there is an offset value even if it is 0', () => {
-        expect(calculateInset(0, 'left', undefined, 'right')).toEqual('0px');
-        expect(calculateInset(0, 'left', undefined, 'right')).toEqual('0px');
-      });
-
-      test('should return the original inset value if the offset should not be applied to this axis', () => {
-        expect(calculateInset(insetValue, 'left', offsetValue, 'top')).toEqual(
-          '10px',
-        );
-        expect(
-          calculateInset(insetValue, 'left', offsetValue, 'bottom'),
-        ).toEqual('10px');
-        expect(calculateInset(insetValue, 'top', offsetValue, 'left')).toEqual(
-          '10px',
-        );
-        expect(calculateInset(insetValue, 'top', offsetValue, 'right')).toEqual(
-          '10px',
-        );
-      });
-
-      describe('when the offset should be applied to this axis', () => {
-        test('should increase the inset value by the offset value if the tooltip is positioned right or bottom', () => {
-          expect(
-            calculateInset(insetValue, 'left', offsetValue, 'right'),
-          ).toEqual('calc(10px + (5px * 1))');
-          expect(
-            calculateInset(insetValue, 'top', offsetValue, 'bottom'),
-          ).toEqual('calc(10px + (5px * 1))');
-        });
-        test('should decrease the inset value by the offset value if the tooltip is positioned left or top', () => {
-          expect(
-            calculateInset(insetValue, 'left', offsetValue, 'left'),
-          ).toEqual('calc(10px + (5px * -1))');
-          expect(calculateInset(insetValue, 'top', offsetValue, 'top')).toEqual(
-            'calc(10px + (5px * -1))',
-          );
-        });
-      });
-    });
   });
 });

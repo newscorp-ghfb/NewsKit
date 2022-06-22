@@ -1,14 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tooltip offset should be applied with pointer and px distance override 1`] = `
+exports[`Popover offset should be applied with pointer and px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -17,16 +21,16 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
 
 .emotion-1 {
   margin: 0;
-  color: #FFFFFF;
+  color: #2E2E2E;
   border-radius: 8px;
-  background-color: #0A0A0A;
+  background-color: #FFFFFF;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-2 {
@@ -36,18 +40,19 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #0A0A0A;
-  width: 4px;
-  height: 4px;
-  left: 8px;
-  bottom: calc(-4px / 2);
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  bottom: calc(-16px / 2);
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
     id="MOCK-ID"
-    role="tooltip"
+    role="dialog"
     tabindex="-1"
   >
     <p
@@ -65,15 +70,19 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
 </DocumentFragment>
 `;
 
-exports[`Tooltip offset should be applied with pointer and token distance override 1`] = `
+exports[`Popover offset should be applied with pointer and token distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -82,16 +91,16 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
 
 .emotion-1 {
   margin: 0;
-  color: #FFFFFF;
+  color: #2E2E2E;
   border-radius: 8px;
-  background-color: #0A0A0A;
+  background-color: #FFFFFF;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-2 {
@@ -101,18 +110,19 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #0A0A0A;
-  width: 4px;
-  height: 4px;
-  left: 8px;
-  bottom: calc(-4px / 2);
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  bottom: calc(-16px / 2);
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
     id="MOCK-ID"
-    role="tooltip"
+    role="dialog"
     tabindex="-1"
   >
     <p
@@ -130,15 +140,19 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
 </DocumentFragment>
 `;
 
-exports[`Tooltip offset should not be applied with pointer and invalid token distance override 1`] = `
+exports[`Popover offset should not be applied with pointer and invalid token distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -147,16 +161,16 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
 
 .emotion-1 {
   margin: 0;
-  color: #FFFFFF;
+  color: #2E2E2E;
   border-radius: 8px;
-  background-color: #0A0A0A;
+  background-color: #FFFFFF;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-2 {
@@ -166,18 +180,19 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #0A0A0A;
-  width: 4px;
-  height: 4px;
-  left: 8px;
-  bottom: calc(-4px / 2);
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  bottom: calc(-16px / 2);
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
     id="MOCK-ID"
-    role="tooltip"
+    role="dialog"
     tabindex="-1"
   >
     <p
@@ -195,15 +210,19 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
 </DocumentFragment>
 `;
 
-exports[`Tooltip offset should not be applied with pointer and non-px distance override 1`] = `
+exports[`Popover offset should not be applied with pointer and non-px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -212,16 +231,16 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
 
 .emotion-1 {
   margin: 0;
-  color: #FFFFFF;
+  color: #2E2E2E;
   border-radius: 8px;
-  background-color: #0A0A0A;
+  background-color: #FFFFFF;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-2 {
@@ -231,18 +250,19 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #0A0A0A;
-  width: 4px;
-  height: 4px;
-  left: 8px;
-  bottom: calc(-4px / 2);
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  bottom: calc(-16px / 2);
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
     id="MOCK-ID"
-    role="tooltip"
+    role="dialog"
     tabindex="-1"
   >
     <p
@@ -260,15 +280,19 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
 </DocumentFragment>
 `;
 
-exports[`Tooltip offset should not be applied with with no pointer 1`] = `
+exports[`Popover offset should not be applied with with no pointer 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -277,23 +301,24 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #FFFFFF;
+  color: #2E2E2E;
   border-radius: 8px;
-  background-color: #0A0A0A;
+  background-color: #FFFFFF;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
     id="MOCK-ID"
-    role="tooltip"
+    role="dialog"
     tabindex="-1"
   >
     <p
@@ -307,33 +332,37 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tooltip pointer padding should be applied with px distance override 1`] = `
+exports[`Popover pointer padding should be applied with px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: -8px;
+  top: -24px;
 }
 
 .emotion-1 {
   margin: 0;
-  color: #FFFFFF;
+  color: #2E2E2E;
   border-radius: 8px;
-  background-color: #0A0A0A;
+  background-color: #FFFFFF;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-2 {
@@ -343,18 +372,19 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #0A0A0A;
-  width: 4px;
-  height: 4px;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
   left: 10px;
-  bottom: calc(-4px / 2);
+  bottom: calc(-16px / 2);
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
     id="MOCK-ID"
-    role="tooltip"
+    role="dialog"
     tabindex="-1"
   >
     <p
@@ -372,33 +402,37 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
 </DocumentFragment>
 `;
 
-exports[`Tooltip pointer padding should be applied with token distance override 1`] = `
+exports[`Popover pointer padding should be applied with token distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: -8px;
+  top: -24px;
 }
 
 .emotion-1 {
   margin: 0;
-  color: #FFFFFF;
+  color: #2E2E2E;
   border-radius: 8px;
-  background-color: #0A0A0A;
+  background-color: #FFFFFF;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-2 {
@@ -408,18 +442,19 @@ exports[`Tooltip pointer padding should be applied with token distance override 
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #0A0A0A;
-  width: 4px;
-  height: 4px;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
   left: 16px;
-  bottom: calc(-4px / 2);
+  bottom: calc(-16px / 2);
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
     id="MOCK-ID"
-    role="tooltip"
+    role="dialog"
     tabindex="-1"
   >
     <p
@@ -437,33 +472,37 @@ exports[`Tooltip pointer padding should be applied with token distance override 
 </DocumentFragment>
 `;
 
-exports[`Tooltip pointer padding should not be applied with invalid token distance override 1`] = `
+exports[`Popover pointer padding should not be applied with invalid token distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: -8px;
+  top: -24px;
 }
 
 .emotion-1 {
   margin: 0;
-  color: #FFFFFF;
+  color: #2E2E2E;
   border-radius: 8px;
-  background-color: #0A0A0A;
+  background-color: #FFFFFF;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-2 {
@@ -473,18 +512,19 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #0A0A0A;
-  width: 4px;
-  height: 4px;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
   left: 0px;
-  bottom: calc(-4px / 2);
+  bottom: calc(-16px / 2);
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
     id="MOCK-ID"
-    role="tooltip"
+    role="dialog"
     tabindex="-1"
   >
     <p
@@ -502,33 +542,37 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
 </DocumentFragment>
 `;
 
-exports[`Tooltip pointer padding should not be applied with non-px distance override 1`] = `
+exports[`Popover pointer padding should not be applied with non-px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: -8px;
+  top: -24px;
 }
 
 .emotion-1 {
   margin: 0;
-  color: #FFFFFF;
+  color: #2E2E2E;
   border-radius: 8px;
-  background-color: #0A0A0A;
+  background-color: #FFFFFF;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-2 {
@@ -538,18 +582,19 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #0A0A0A;
-  width: 4px;
-  height: 4px;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
   left: 0px;
-  bottom: calc(-4px / 2);
+  bottom: calc(-16px / 2);
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
     id="MOCK-ID"
-    role="tooltip"
+    role="dialog"
     tabindex="-1"
   >
     <p
@@ -567,15 +612,19 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
 </DocumentFragment>
 `;
 
-exports[`Tooltip should render correct styles: default 1`] = `
+exports[`Popover should render correct styles: default 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -584,23 +633,24 @@ exports[`Tooltip should render correct styles: default 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #FFFFFF;
+  color: #2E2E2E;
   border-radius: 8px;
-  background-color: #0A0A0A;
+  background-color: #FFFFFF;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
     id="MOCK-ID"
-    role="tooltip"
+    role="dialog"
     tabindex="-1"
   >
     <p
@@ -614,15 +664,19 @@ exports[`Tooltip should render correct styles: default 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tooltip should render correct styles: with overrides 1`] = `
+exports[`Popover should render correct styles: with overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
   z-index: 70;
   max-width: 80px;
   min-width: 50px;
@@ -646,10 +700,11 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
     id="MOCK-ID"
-    role="tooltip"
+    role="dialog"
     tabindex="-1"
   >
     <p
@@ -663,98 +718,37 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tooltip should render correct styles: with pointer 1`] = `
+exports[`Popover should render correct styles: with pointer 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
-    type="submit"
-  >
-    Add
-  </button>
-  .emotion-0 {
-  z-index: 80;
-  position: absolute;
-  left: 0px;
-  top: -8px;
-}
-
-.emotion-1 {
-  margin: 0;
-  color: #FFFFFF;
-  border-radius: 8px;
-  background-color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
-}
-
-.emotion-2 {
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  box-sizing: border-box;
-  background-color: #0A0A0A;
-  width: 4px;
-  height: 4px;
-  left: 8px;
-  bottom: calc(-4px / 2);
-}
-
-<div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
     id="MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
-  >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
-      tabindex="-1"
-    >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="MOCK-ID-pointer"
-    />
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tooltip should render correct styles: with pointer size overrides 1`] = `
-<DocumentFragment>
-  <button
-    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: -8px;
+  top: -24px;
 }
 
 .emotion-1 {
   margin: 0;
-  color: #FFFFFF;
+  color: #2E2E2E;
   border-radius: 8px;
-  background-color: #0A0A0A;
+  background-color: #FFFFFF;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-2 {
@@ -764,18 +758,19 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #0A0A0A;
+  background-color: #FFFFFF;
   width: 16px;
   height: 16px;
-  left: 8px;
+  left: 12px;
   bottom: calc(-16px / 2);
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
     id="MOCK-ID"
-    role="tooltip"
+    role="dialog"
     tabindex="-1"
   >
     <p
@@ -793,33 +788,107 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
 </DocumentFragment>
 `;
 
-exports[`Tooltip should render correct styles: with pointer stylePreset overrides 1`] = `
+exports[`Popover should render correct styles: with pointer size overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: -8px;
+  top: -24px;
 }
 
 .emotion-1 {
   margin: 0;
-  color: #FFFFFF;
+  color: #2E2E2E;
   border-radius: 8px;
-  background-color: #0A0A0A;
+  background-color: #FFFFFF;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  padding-inline: 16px;
+  padding-block: 16px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  bottom: calc(-16px / 2);
+}
+
+<div
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
+    id="MOCK-ID"
+    role="dialog"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="MOCK-ID-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Popover should render correct styles: with pointer stylePreset overrides 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: -24px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #2E2E2E;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-2 {
@@ -830,17 +899,18 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
   transform: rotate(45deg);
   box-sizing: border-box;
   background-color: #A60100;
-  width: 4px;
-  height: 4px;
-  left: 8px;
-  bottom: calc(-4px / 2);
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  bottom: calc(-16px / 2);
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
     id="MOCK-ID"
-    role="tooltip"
+    role="dialog"
     tabindex="-1"
   >
     <p
@@ -858,33 +928,37 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
 </DocumentFragment>
 `;
 
-exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
+exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
   z-index: 80;
   position: absolute;
-  left: 8px;
+  left: 24px;
   top: 0px;
 }
 
 .emotion-1 {
   margin: 0;
-  color: #FFFFFF;
+  color: #2E2E2E;
   border-radius: 8px;
-  background-color: #0A0A0A;
+  background-color: #FFFFFF;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-2 {
@@ -894,18 +968,19 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #0A0A0A;
-  width: 4px;
-  height: 4px;
-  left: calc(-4px / 2);
-  top: 8px;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  left: calc(-16px / 2);
+  top: 12px;
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
     id="MOCK-ID"
-    role="tooltip"
+    role="dialog"
     tabindex="-1"
   >
     <p
