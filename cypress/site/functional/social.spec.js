@@ -1,7 +1,7 @@
 const pages = [
   '/',
   '/about/introduction',
-  '/theme/borders',
+  '/theme/foundation/borders',
   '/components/button',
   '/components/modal',
 ];

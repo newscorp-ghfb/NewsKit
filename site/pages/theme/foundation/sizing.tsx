@@ -1,19 +1,19 @@
 import React from 'react';
 import {newskitLightTheme, InlineMessage, IconFilledInfo} from 'newskit';
-import {MediaList} from '../../components/media-list';
-import {Illustration} from '../../components/illustrations/illustration-loader';
-import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {Table, TableRow} from '../../components/table';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {LayoutProps} from '../../components/layout';
-import {getTokenType} from '../../utils/get-token-type';
-import {Link} from '../../components/link';
+import {MediaList} from '../../../components/media-list';
+import {Illustration} from '../../../components/illustrations/illustration-loader';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {Table, TableRow} from '../../../components/table';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {LayoutProps} from '../../../components/layout';
+import {getTokenType} from '../../../utils/get-token-type';
+import {Link} from '../../../components/link';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
   ContentColSpan,
-} from '../../components/content-structure';
+} from '../../../components/content-structure';
 
 const sizingRows = getTokenType(newskitLightTheme.sizing, 'sizing').map(
   ({tokenName, tokenValue}) => ({
