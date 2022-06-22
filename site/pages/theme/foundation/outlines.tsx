@@ -132,7 +132,7 @@ const Outline = (layoutProps: LayoutProps) => (
           description={
             <>
               If you wish to move away from the default provided, we recommend
-              using <Link href="/theme/borders/">border</Link> tokens
+              using <Link href="/theme/foundation/borders/">border</Link> tokens
             </>
           }
           showSeparator
@@ -158,7 +158,7 @@ const Outline = (layoutProps: LayoutProps) => (
           description={
             <>
               If you wish to move away from the default provided, we recommend
-              using <Link href="/theme/borders/">border</Link> tokens
+              using <Link href="/theme/foundation/borders/">border</Link> tokens
             </>
           }
         />
