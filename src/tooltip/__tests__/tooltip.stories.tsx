@@ -373,32 +373,12 @@ StoryTooltipTriggers.parameters = {
   eyes: {include: false},
 };
 
-export const StoryTooltipDefaultOpen = () => (
-  <>
-    <StorybookSubHeading>Tooltip default open</StorybookSubHeading>
-    <Tooltip content="Tooltip content" placement="right" defaultOpen>
-      <Button
-        size={ButtonSize.Small}
-        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-      >
-        Button
-      </Button>
-    </Tooltip>
-  </>
-);
-StoryTooltipDefaultOpen.storyName = 'tooltip-default-open';
-
 export const StoryTooltipControlled = () => {
   const [open, setOpen] = React.useState(false);
   return (
     <>
       <StorybookSubHeading>Tooltip Controlled</StorybookSubHeading>
-      <Tooltip
-        content="Tooltip content"
-        placement="right"
-        defaultOpen
-        open={open}
-      >
+      <Tooltip content="Tooltip content" placement="right" open={open}>
         <Button
           size={ButtonSize.Small}
           overrides={{stylePreset: 'buttonOutlinedPrimary'}}
