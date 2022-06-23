@@ -589,6 +589,20 @@ describe('Tabs', () => {
   });
 });
 
+test('with logical props overrides', () => {
+  const props: TabsProps = {
+    children: tabsWithLabelAndIcons,
+    overrides: {
+      paddingInline: 'space020',
+      paddingBlock: 'space040',
+      marginBlock: 'space060',
+      marginInline: 'space080',
+    },
+  };
+  const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
+  expect(fragment).toMatchSnapshot();
+});
+
 const tabs = [
   <Tab label="H tab 1">First tab content</Tab>,
   <Tab label="H tab 2">Second tab content</Tab>,

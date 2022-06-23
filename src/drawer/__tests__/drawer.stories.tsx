@@ -46,7 +46,13 @@ const BoxWithContent = ({open}: {open?: () => void}) => (
     </Box>
   </>
 );
-
+const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const onSubmit = async (data: any) => {
+  await sleep(2000);
+  // eslint-disable-next-line no-console
+  console.log('Submitted data:', data);
+};
 const DrawerContent = () => (
   <>
     <p>
@@ -79,7 +85,7 @@ const DrawerContent = () => (
       Vivamus ut tellus iaculis, ullamcorper ligula sit amet, posuere ipsum.
     </p>
     <div>
-      <Button>Remind me later</Button>
+      <Button onClick={onSubmit}>Remind me later</Button>
       <Button>Ok</Button>
     </div>
   </>
@@ -101,7 +107,6 @@ const useActiveState = (
 
   return [isActive, open, close, toggle];
 };
-
 export const StoryDefault = () =>
   React.createElement(() => {
     const [isActive, setIsActive] = React.useState(false);

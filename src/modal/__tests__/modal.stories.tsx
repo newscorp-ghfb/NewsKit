@@ -428,3 +428,32 @@ export const StoryOptionalHeaderClose = () =>
   });
 StoryOptionalHeaderClose.storyName = 'optional header & close';
 StoryOptionalHeaderClose.parameters = {eyes: {include: false}};
+
+export const StoryLogicalProps = () =>
+  React.createElement(() => {
+    const [isActive, open, close] = useActiveState();
+
+    return (
+      <div data-testid="scrollable-modal">
+        <StorybookHeading>Modal with logical props</StorybookHeading>
+        <Button onClick={open} data-testid="modal-open-button">
+          Open Modal
+        </Button>
+        <Modal
+          aria-label="Default Modal"
+          open={isActive}
+          onDismiss={close}
+          header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          overrides={{
+            panel: {
+              paddingInline: '15px',
+              paddingBlock: '30px',
+            },
+          }}
+        >
+          {modalContent}
+        </Modal>
+      </div>
+    );
+  });
+StoryLogicalProps.storyName = 'logical-props';

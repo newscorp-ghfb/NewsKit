@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   styled,
-  getTypographyPreset,
   getSpacingInlineHorizontal,
   getStylePreset,
   css,
@@ -9,11 +8,10 @@ import {
 import {HeadlineProps, HeadlinePropsWithRenderAs} from './types';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {getLogicalPropsAndTypographyPreset} from '../utils/logical-properties';
 
 const HeadlineContainer = styled.section<Pick<HeadlineProps, 'overrides'>>`
-  ${getTypographyPreset('headline', '', {
-    withCrop: true,
-  })}
+  ${getLogicalPropsAndTypographyPreset('headline')}
 `;
 
 const cssReset = css`

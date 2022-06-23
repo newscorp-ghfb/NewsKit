@@ -277,3 +277,17 @@ export const StoryIconsTransition = () => (
   </>
 );
 StoryIconsTransition.storyName = 'icons-transition-overrides';
+
+export const StoryIconsLogicalProps = () => (
+  <ThemeProvider theme={getTheme()}>
+    <Constrain>
+      <StorybookSubHeading>Icon with logical props</StorybookSubHeading>
+      <IconFilledAccountBalance
+        overrides={{
+          marginBlock: '20px',
+        }}
+      />
+    </Constrain>
+  </ThemeProvider>
+);
+StoryIconsLogicalProps.storyName = 'icons-logical-props';

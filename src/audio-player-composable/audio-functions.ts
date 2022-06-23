@@ -5,7 +5,7 @@ import {AudioEvents, AudioFunctionDependencies} from './types';
 import {formatTrackTime, getMediaSegment} from './utils';
 import calculateStringPercentage from '../utils/calculate-string-percentage';
 import {getValueInRange} from '../utils/value-in-range';
-import {version} from '../version-number.json';
+import versionNumber from '../version-number.json';
 
 export const useAudioFunctions = ({
   autoPlay,
@@ -20,7 +20,7 @@ export const useAudioFunctions = ({
   setLoading,
   setCurrentTime,
   setPlayState,
-  // setVolume,
+  setVolume,
   setDuration,
   setDisplayDuration,
   setBuffered,
@@ -41,13 +41,11 @@ export const useAudioFunctions = ({
 
   const buildMediaData = useCallback(() => {
     const playerData = {
-      media_player: `newskit-audio-player-${version}`,
+      media_player: `newskit-audio-player-${versionNumber.version}`,
       media_type: 'audio',
     };
     return live
-      ? // TODO remove ignore once in implemented live
-        /* istanbul ignore next */
-        playerData
+      ? playerData
       : {
           ...playerData,
           media_duration: formatTrackTime(duration),
@@ -109,17 +107,17 @@ export const useAudioFunctions = ({
     [duration, setCurrentTime, ifPlayer],
   );
 
-  // const updateAudioVolume = useCallback(
-  //   (vol: number) => {
-  //     window.localStorage.setItem('newskit-audioplayer-volume', vol.toString());
-  //     setVolume(vol);
+  const updateAudioVolume = useCallback(
+    (vol: number) => {
+      window.localStorage.setItem('newskit-audioplayer-volume', vol.toString());
+      setVolume(vol);
 
-  //     ifPlayer(player => {
-  //       player.volume = vol;
-  //     });
-  //   },
-  //   [ifPlayer, setVolume],
-  // );
+      ifPlayer(player => {
+        player.volume = vol;
+      });
+    },
+    [ifPlayer, setVolume],
+  );
 
   const onClickBackward = useCallback(
     /* istanbul ignore next */
@@ -196,8 +194,6 @@ export const useAudioFunctions = ({
 
       fireEvent(
         getTrackingInformation(
-          // TODO remove ignore once implemented live functionality
-          /* istanbul ignore next */
           live ? 'audio-player-stop-button' : 'audio-player-pause-button',
           EventTrigger.Click,
         ),
@@ -240,12 +236,12 @@ export const useAudioFunctions = ({
     [fireEvent, getTrackingInformation, setCurrentTime, currentTimeRef],
   );
 
-  // const onVolumeChange = useCallback(
-  //   ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
-  //     updateAudioVolume((target as HTMLAudioElement).volume);
-  //   },
-  //   [updateAudioVolume],
-  // );
+  const onVolumeChange = useCallback(
+    ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
+      updateAudioVolume((target as HTMLAudioElement).volume);
+    },
+    [updateAudioVolume],
+  );
 
   const onChangeSlider = useCallback(
     (value: number) => {
@@ -254,12 +250,12 @@ export const useAudioFunctions = ({
     [updateAudioTime],
   );
 
-  // const onChangeVolumeSlider = useCallback(
-  //   (value: number) => {
-  //     updateAudioVolume(value);
-  //   },
-  //   [updateAudioVolume],
-  // );
+  const onChangeVolumeSlider = useCallback(
+    (value: number) => {
+      updateAudioVolume(value);
+    },
+    [updateAudioVolume],
+  );
 
   const onEnded = useCallback(() => {
     const trackingInformation = getTrackingInformation(
@@ -288,15 +284,6 @@ export const useAudioFunctions = ({
     };
   }, [src]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // useEffect(() => {
-  //   const storedVolume = parseFloat(
-  //     (typeof window !== 'undefined' &&
-  //       window.localStorage.getItem('newskit-audioplayer-volume')) ||
-  //       '',
-  //   );
-  //   updateAudioVolume(Number.isNaN(storedVolume) ? 0.7 : storedVolume);
-  // }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
   return {
     audioEvents: {
       [AudioEvents.Play]: onPlay,
@@ -304,16 +291,15 @@ export const useAudioFunctions = ({
       [AudioEvents.Waiting]: onWaiting,
       [AudioEvents.CanPlay]: onCanPlay,
       [AudioEvents.Ended]: onEnded,
-      // [AudioEvents.VolumeChange]: onVolumeChange,
+      [AudioEvents.VolumeChange]: onVolumeChange,
       [AudioEvents.DurationChange]: onDurationChange,
       [AudioEvents.TimeUpdate]: onTimeUpdate,
       [AudioEvents.Progress]: onProgress,
     },
     onClickBackward,
     onClickForward,
-
     togglePlay,
     onChangeSlider,
-    // onChangeVolumeSlider,
+    onChangeVolumeSlider,
   };
 };

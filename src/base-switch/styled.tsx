@@ -6,7 +6,11 @@ import {
   getTypographyPreset,
   styled,
 } from '../utils';
-import {logicalProps} from '../utils/logical-properties';
+import {
+  logicalMarginProps,
+  logicalProps,
+  logicalPaddingProps,
+} from '../utils/logical-properties';
 import {BaseSwitchProps} from './types';
 
 const STACKING_CONTEXT = {
@@ -28,6 +32,7 @@ export const StyledSwitchAndLabelWrapper = styled.label<
   ${({size, path}) => logicalProps(`${path}.${size}`)}
 `;
 
+// todo: is this container element necessary?
 export const StyledSwitchContainer = styled.div<
   Pick<
     BaseSwitchProps,
@@ -51,6 +56,22 @@ export const StyledSwitchContainer = styled.div<
       'size',
     )}
 
+  ${({size, path}) =>
+    getResponsiveSize(
+      'blockSize',
+      `${path}.${size}.input`,
+      'input',
+      'blockSize',
+    )}
+  
+  ${({size, path}) =>
+    getResponsiveSize(
+      'inlineSize',
+      `${path}.${size}.input`,
+      'input',
+      'inlineSize',
+    )}
+
   ${({size, labelPosition, path}) =>
     getResponsiveSpace(
       labelPosition === 'end' ? 'marginRight' : 'marginLeft',
@@ -58,6 +79,7 @@ export const StyledSwitchContainer = styled.div<
       'input',
       'spaceInline',
     )}
+  ${({size, path}) => logicalMarginProps(`${path}.${size}.input`, 'input')}
 `;
 
 const insetCSS = `
@@ -101,17 +123,36 @@ export const StyledSwitch = styled.div<
     feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`};
 
   ${({size, path}) => getTransitionPreset(`${path}.${size}.input`, 'input')};
+  ${({size, path}) => logicalPaddingProps(`${path}.${size}.input`, 'input')}
 `;
 
 export const StyledSwitchFeedback = styled.div<
-  Pick<BaseSwitchProps, 'size' | 'overrides' | 'state' | 'path'> & {
+  Pick<BaseSwitchProps, 'size' | 'overrides' | 'state' | 'path' | 'checked'> & {
     isHovered: boolean;
     isActive: boolean;
+    centreOnThumb?: boolean;
+    thumbOffset: string;
   }
 >`
   position: absolute;
   top: 50%;
-  left: 50%;
+
+  ${({centreOnThumb, size, checked, path, thumbOffset, ...rest}) => {
+    if (!centreOnThumb) {
+      return {left: '50%'};
+    }
+    return getResponsiveSize(
+      thumbSize => ({
+        left: checked
+          ? `calc(100% - (${thumbSize} / 2) - ${thumbOffset || `0px`})`
+          : `calc((${thumbSize} / 2) + ${thumbOffset || `0px`})`,
+      }),
+      `${path}.${size}.thumb`,
+      'thumb',
+      'size',
+    )(rest);
+  }}
+
   ${({isHovered}) => isHovered && `z-index: ${STACKING_CONTEXT.feedback}`};
 
   ${({size, isHovered, isActive, state, path}) =>

@@ -67,6 +67,7 @@ Object {
     "darkBlue080": "#555E74",
     "darkBlue090": "#243853",
     "darkBlue100": "#162740",
+    "focus010": "#3768FB",
     "green010": "#E6FAEB",
     "green020": "#B8EFC8",
     "green030": "#8EE1A6",
@@ -125,6 +126,7 @@ Object {
     "inkWhiteContrast": "{{colors.white}}",
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.darkBlue080}}",
+    "interactiveFocus010": "{{colors.focus010}}",
     "interactiveInput010": "{{colors.neutral010}}",
     "interactiveInput020": "{{colors.neutral040}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -599,8 +601,27 @@ Object {
   },
   "name": "docs-accessibility-dark",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(180deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(-90deg, rgba(22,255,255,0.00) 0%,rgba(255,255,255,1.00)  100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg, rgba(255,255,255,0.00) 0%,rgba(255,255,255,1.00) 100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -768,6 +789,17 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
     "buttonSolidInverse010": Object {
@@ -1005,32 +1037,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -1222,17 +1254,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -1287,6 +1330,55 @@ Object {
     "nullDotIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interface040}}",
+      },
+    },
+    "patternFeatureCardButton": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse050}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "patternFeatureCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "patternFeatureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "patternFeatureCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
+        "backgroundPosition": "bottom left",
+        "backgroundSize": "cover",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "patternsCardButton": Object {
@@ -1399,6 +1491,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -1414,22 +1527,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -1577,29 +1682,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -1683,6 +1788,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -2238,6 +2350,7 @@ Object {
     "darkBlue080": "#555E74",
     "darkBlue090": "#243853",
     "darkBlue100": "#162740",
+    "focus010": "#3768FB",
     "green010": "#E6FAEB",
     "green020": "#B8EFC8",
     "green030": "#8EE1A6",
@@ -2296,6 +2409,7 @@ Object {
     "inkWhiteContrast": "{{colors.white}}",
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.neutral020}}",
+    "interactiveFocus010": "{{colors.focus010}}",
     "interactiveInput010": "{{colors.neutral010}}",
     "interactiveInput020": "{{colors.neutral040}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -2770,8 +2884,27 @@ Object {
   },
   "name": "docs-accessibility-light",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -2939,6 +3072,17 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
     "buttonSolidInverse010": Object {
@@ -3176,32 +3320,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -3393,17 +3537,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -3458,6 +3613,55 @@ Object {
     "nullDotIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interface040}}",
+      },
+    },
+    "patternFeatureCardButton": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse050}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "patternFeatureCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "patternFeatureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "patternFeatureCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
+        "backgroundPosition": "bottom left",
+        "backgroundSize": "cover",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "patternsCardButton": Object {
@@ -3570,6 +3774,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -3585,22 +3810,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -3748,29 +3965,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -3854,6 +4071,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -4409,6 +4633,7 @@ Object {
     "darkBlue080": "#555E74",
     "darkBlue090": "#243853",
     "darkBlue100": "#162740",
+    "focus010": "#3768FB",
     "green010": "#E6FAEB",
     "green020": "#B8EFC8",
     "green030": "#8EE1A6",
@@ -4467,6 +4692,7 @@ Object {
     "inkWhiteContrast": "{{colors.white}}",
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.darkBlue080}}",
+    "interactiveFocus010": "{{colors.focus010}}",
     "interactiveInput010": "{{colors.neutral010}}",
     "interactiveInput020": "{{colors.neutral040}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -4941,8 +5167,27 @@ Object {
   },
   "name": "docs-theme-dark",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(180deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(-90deg, rgba(22,255,255,0.00) 0%,rgba(255,255,255,1.00)  100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg, rgba(255,255,255,0.00) 0%,rgba(255,255,255,1.00) 100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -5110,6 +5355,17 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
     "buttonSolidInverse010": Object {
@@ -5347,32 +5603,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -5564,17 +5820,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -5629,6 +5896,55 @@ Object {
     "nullDotIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interface040}}",
+      },
+    },
+    "patternFeatureCardButton": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse050}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "patternFeatureCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "patternFeatureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "patternFeatureCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
+        "backgroundPosition": "bottom left",
+        "backgroundSize": "cover",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "patternsCardButton": Object {
@@ -5741,6 +6057,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -5756,22 +6093,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -5919,29 +6248,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -6025,6 +6354,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -6580,6 +6916,7 @@ Object {
     "darkBlue080": "#555E74",
     "darkBlue090": "#243853",
     "darkBlue100": "#162740",
+    "focus010": "#3768FB",
     "green010": "#E6FAEB",
     "green020": "#B8EFC8",
     "green030": "#8EE1A6",
@@ -6638,6 +6975,7 @@ Object {
     "inkWhiteContrast": "{{colors.white}}",
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.neutral020}}",
+    "interactiveFocus010": "{{colors.focus010}}",
     "interactiveInput010": "{{colors.neutral010}}",
     "interactiveInput020": "{{colors.neutral040}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -7112,8 +7450,27 @@ Object {
   },
   "name": "docs-theme-light",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -7281,6 +7638,17 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
     "buttonSolidInverse010": Object {
@@ -7518,32 +7886,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -7735,17 +8103,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -7800,6 +8179,55 @@ Object {
     "nullDotIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interface040}}",
+      },
+    },
+    "patternFeatureCardButton": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse050}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "patternFeatureCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "patternFeatureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "patternFeatureCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
+        "backgroundPosition": "bottom left",
+        "backgroundSize": "cover",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "patternsCardButton": Object {
@@ -7912,6 +8340,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -7927,22 +8376,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -8090,29 +8531,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -8196,6 +8637,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -8751,6 +9199,7 @@ Object {
     "darkBlue080": "#555E74",
     "darkBlue090": "#243853",
     "darkBlue100": "#162740",
+    "focus010": "#3768FB",
     "green010": "#E6FAEB",
     "green020": "#B8EFC8",
     "green030": "#8EE1A6",
@@ -8809,6 +9258,7 @@ Object {
     "inkWhiteContrast": "{{colors.white}}",
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.darkBlue080}}",
+    "interactiveFocus010": "{{colors.focus010}}",
     "interactiveInput010": "{{colors.neutral010}}",
     "interactiveInput020": "{{colors.neutral040}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -9283,8 +9733,27 @@ Object {
   },
   "name": "docs-foundations-dark",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(180deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(-90deg, rgba(22,255,255,0.00) 0%,rgba(255,255,255,1.00)  100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg, rgba(255,255,255,0.00) 0%,rgba(255,255,255,1.00) 100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -9452,6 +9921,17 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
     "buttonSolidInverse010": Object {
@@ -9689,32 +10169,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -9906,17 +10386,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -9971,6 +10462,55 @@ Object {
     "nullDotIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interface040}}",
+      },
+    },
+    "patternFeatureCardButton": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse050}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "patternFeatureCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "patternFeatureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "patternFeatureCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
+        "backgroundPosition": "bottom left",
+        "backgroundSize": "cover",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "patternsCardButton": Object {
@@ -10083,6 +10623,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -10098,22 +10659,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -10261,29 +10814,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -10367,6 +10920,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -10922,6 +11482,7 @@ Object {
     "darkBlue080": "#555E74",
     "darkBlue090": "#243853",
     "darkBlue100": "#162740",
+    "focus010": "#3768FB",
     "green010": "#E6FAEB",
     "green020": "#B8EFC8",
     "green030": "#8EE1A6",
@@ -10980,6 +11541,7 @@ Object {
     "inkWhiteContrast": "{{colors.white}}",
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.neutral020}}",
+    "interactiveFocus010": "{{colors.focus010}}",
     "interactiveInput010": "{{colors.neutral010}}",
     "interactiveInput020": "{{colors.neutral040}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -11454,8 +12016,27 @@ Object {
   },
   "name": "docs-foundations-light",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -11623,6 +12204,17 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
     "buttonSolidInverse010": Object {
@@ -11860,32 +12452,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -12077,17 +12669,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -12142,6 +12745,55 @@ Object {
     "nullDotIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interface040}}",
+      },
+    },
+    "patternFeatureCardButton": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse050}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "patternFeatureCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "patternFeatureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "patternFeatureCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
+        "backgroundPosition": "bottom left",
+        "backgroundSize": "cover",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "patternsCardButton": Object {
@@ -12254,6 +12906,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -12269,22 +12942,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -12432,29 +13097,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -12538,6 +13203,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -13093,6 +13765,7 @@ Object {
     "darkBlue080": "#555E74",
     "darkBlue090": "#243853",
     "darkBlue100": "#162740",
+    "focus010": "#3768FB",
     "green010": "#E6FAEB",
     "green020": "#B8EFC8",
     "green030": "#8EE1A6",
@@ -13151,6 +13824,7 @@ Object {
     "inkWhiteContrast": "{{colors.white}}",
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.darkBlue080}}",
+    "interactiveFocus010": "{{colors.focus010}}",
     "interactiveInput010": "{{colors.neutral010}}",
     "interactiveInput020": "{{colors.neutral040}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -13625,8 +14299,27 @@ Object {
   },
   "name": "docs-patterns-dark",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(180deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(-90deg, rgba(22,255,255,0.00) 0%,rgba(255,255,255,1.00)  100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg, rgba(255,255,255,0.00) 0%,rgba(255,255,255,1.00) 100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -13794,6 +14487,17 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
     "buttonSolidInverse010": Object {
@@ -14031,32 +14735,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -14248,17 +14952,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -14313,6 +15028,55 @@ Object {
     "nullDotIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interface040}}",
+      },
+    },
+    "patternFeatureCardButton": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse050}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "patternFeatureCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "patternFeatureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "patternFeatureCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
+        "backgroundPosition": "bottom left",
+        "backgroundSize": "cover",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "patternsCardButton": Object {
@@ -14425,6 +15189,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -14440,22 +15225,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -14603,29 +15380,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -14709,6 +15486,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {
@@ -15264,6 +16048,7 @@ Object {
     "darkBlue080": "#555E74",
     "darkBlue090": "#243853",
     "darkBlue100": "#162740",
+    "focus010": "#3768FB",
     "green010": "#E6FAEB",
     "green020": "#B8EFC8",
     "green030": "#8EE1A6",
@@ -15322,6 +16107,7 @@ Object {
     "inkWhiteContrast": "{{colors.white}}",
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.neutral020}}",
+    "interactiveFocus010": "{{colors.focus010}}",
     "interactiveInput010": "{{colors.neutral010}}",
     "interactiveInput020": "{{colors.neutral040}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -15796,8 +16582,27 @@ Object {
   },
   "name": "docs-patterns-light",
   "overlays": Object {
+    "opacity000": "0",
+    "opacity010": "0.1",
+    "opacity020": "0.2",
+    "opacity030": "0.3",
+    "opacity040": "0.4",
+    "opacity050": "0.5",
+    "opacity060": "0.6",
+    "opacity070": "0.7",
+    "opacity080": "0.8",
+    "opacity090": "0.9",
+    "opacity100": "1",
     "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
     "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
+    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
     "overlayGradientInverseVertical": "linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
     "overlayTintBase010": "rgba(22,39,64,0.2)",
@@ -15965,6 +16770,17 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedSecondary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
     "buttonSolidInverse010": Object {
@@ -16202,32 +17018,32 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveInput040}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "disabled": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "hover": Object {
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "hover:active": Object {
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "invalid:hover:active": Object {
         "backgroundColor": "{{colors.interactiveNegative040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.2",
+        "opacity": "{{overlays.opacity020}}",
       },
       "valid:hover:active": Object {
         "backgroundColor": "{{colors.interactivePositive040}}",
-        "opacity": "0.4",
+        "opacity": "{{overlays.opacity040}}",
       },
     },
     "flagBrand": Object {
@@ -16419,17 +17235,28 @@ Object {
       },
     },
     "linkTopNavigation": Object {
-      "active": Object {
-        "color": "{{colors.inkContrast}}",
-        "textDecoration": "none",
-      },
       "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
       },
       "hover": Object {
         "color": "{{colors.inkSubtle}}",
         "textDecoration": "none",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
+    "menuDivider": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface050}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
       },
     },
     "needHelpCardButton": Object {
@@ -16484,6 +17311,55 @@ Object {
     "nullDotIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interface040}}",
+      },
+    },
+    "patternFeatureCardButton": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse050}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "patternFeatureCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "patternFeatureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "patternFeatureCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
+        "backgroundPosition": "bottom left",
+        "backgroundSize": "cover",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
     "patternsCardButton": Object {
@@ -16596,6 +17472,27 @@ Object {
         "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
+    "sideBarNavigation": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.transparent}}",
+        "borderStyle": "solid",
+        "borderWidth": "4px",
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "selected": Object {
+        "borderColor": "{{colors.transparent}} {{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} ",
+        "color": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+    },
     "sidebar": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
@@ -16611,22 +17508,14 @@ Object {
       },
     },
     "sidebarNavItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
-      },
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
       "selected": Object {
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.interactivePrimary030}}",
       },
     },
     "stepFlag": Object {
@@ -16774,29 +17663,29 @@ Object {
     },
     "fade": Object {
       "base": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enter": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
       "enterActive": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "enterDone": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exit": Object {
-        "opacity": "1",
+        "opacity": "{{overlays.opacity100}}",
       },
       "exitActive": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
       },
       "exitDone": Object {
-        "opacity": "0",
+        "opacity": "{{overlays.opacity000}}",
       },
     },
     "fontColorChange": Object {
@@ -16880,6 +17769,13 @@ Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "opacity",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "shiftAbsolute": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "inset",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
     },
     "slideBottom": Object {

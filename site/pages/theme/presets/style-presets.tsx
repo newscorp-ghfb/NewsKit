@@ -152,48 +152,87 @@ const CSS_PROPS = [
   },
   {
     token: 'borderRadius',
-    acceptedValues: <Link href="/theme/borders/">foundations borders</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/borders/">foundations borders</Link>
+    ),
     description: 'The border radius (shape) of an element',
   },
   {
     token: 'borderWidth',
-    acceptedValues: <Link href="/theme/borders/">foundations borders</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/borders/">foundations borders</Link>
+    ),
     description: 'The border width of an element',
   },
   {
     token: 'backgroundColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The background colour of an element',
   },
   {
     token: 'borderColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of a border',
   },
   {
     token: 'caretColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of a caret (cursor) in a text input',
   },
   {
     token: 'color',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of text. For text, use ink colours',
   },
   {
     token: 'iconColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of icons. For icons, use ink colours',
   },
   {
     token: 'placeholderColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of placeholder text',
   },
   {
     token: 'boxShadow',
-    acceptedValues: <Link href="/theme/shadows/">foundations shadows</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/shadows/">foundations shadows</Link>
+    ),
     description: 'The box shadow to an element',
+  },
+  {
+    token: 'backgroundColor',
+    acceptedValues: (
+      <Link href="/theme/foundation/overlays/">foundations overlays</Link>
+    ),
+    description: 'The overlay of an element',
+  },
+  {
+    token: 'opacity',
+    acceptedValues: (
+      <Link href="/theme/foundation/opacity/">foundations opacity</Link>
+    ),
+    description: 'The opacity level of an element',
+  },
+  {
+    token: 'linear-gradient',
+    acceptedValues: (
+      <Link href="/theme/foundation/gradients/">foundations gradient</Link>
+    ),
+    description: 'The transition between two or more specified colors',
   },
 ];
 
@@ -233,6 +272,24 @@ const STYLE_PRESET_STATES = [
     description: `When using a mouse, "activation" typically starts when a user presses down a primary mouse button. Sometimes referred to as ‘pressed’`,
   },
   {
+    example: getImage('theme/style-presets/hover-active'),
+    state: 'hover:active',
+    description:
+      'The style and behaviour when a user’s cursor hovers over an interactive element and a user presses down a primary mouse button',
+  },
+  {
+    example: getImage('theme/style-presets/valid-hover-active'),
+    state: 'valid:hover:active',
+    description:
+      'The style and behaviour when a user’s cursor hovers over an interactive element in a valid state, and a user presses down a primary mouse button',
+  },
+  {
+    example: getImage('theme/style-presets/invalid-hover-active'),
+    state: 'invalid:hover:active',
+    description:
+      'The style and behaviour when a user’s cursor hovers over an interactive element in an invalid state, and a user presses down a primary mouse button',
+  },
+  {
     example: getImage('theme/style-presets/visited'),
     state: 'visited',
     description:
@@ -242,11 +299,6 @@ const STYLE_PRESET_STATES = [
     example: getImage('theme/style-presets/disabled'),
     state: 'disabled',
     description: `Communicates that an element exists, but is not available to a user in that scenario. It is used to maintain layout consistency and communicate to a user that an element may become available if another condition has been met. When a user hovers over an element in a disabled state, the cursor shows as “not-allowed”`,
-  },
-  {
-    example: getImage('theme/style-presets/selected'),
-    state: 'selected',
-    description: `The style of a component changes to visually communicate and provide feedback to a user that a component has been selected (e.g. in a Tab menu, "selected" would be the selected Tab)`,
   },
   {
     example: getImage('theme/style-presets/checked'),
@@ -269,6 +321,11 @@ const STYLE_PRESET_STATES = [
     example: getImage('theme/style-presets/loading'),
     state: 'loading',
     description: `When a component can’t be displayed because it is in a transitional "loading" state (e.g. images that haven't loaded yet)`,
+  },
+  {
+    example: getImage('theme/style-presets/selected'),
+    state: 'selected',
+    description: `The style of a component changes to visually communicate and provide feedback to a user that a component has been selected (e.g. in a Tab menu, "selected" would be the selected Tab)`,
   },
   {
     example: getImage('theme/style-presets/selected-hover'),
@@ -448,9 +505,9 @@ const StylePresets = (layoutProps: LayoutProps) => (
               <Link href="/theme/presets/typography-presets/">
                 Typography Presets
               </Link>
-              , <Link href="/theme/sizing/">Sizing</Link>, and{' '}
-              <Link href="/theme/spacing/">Spacing</Link>, Style Presets provide
-              the visual attributes of a component.
+              , <Link href="/theme/foundation/sizing/">Sizing</Link>, and{' '}
+              <Link href="/theme/foundation/spacing/">Spacing</Link>, Style
+              Presets provide the visual attributes of a component.
             </>
           }
           showSeparator

@@ -32,6 +32,7 @@ import {AudioPlayerForwardButtonProps} from './components/forward-button/types';
 import {AudioPlayerReplayButtonProps} from './components/replay-button/types';
 import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/types';
 import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
+import {AudioPlayerVolumeControlProps} from './components/volume-control/types';
 
 const defaultKeyboardShortcuts = {
   jumpToStart: ['0', 'Home'],
@@ -41,12 +42,11 @@ const defaultKeyboardShortcuts = {
 export const AudioPlayerComposable = ({
   children,
   src,
-  /* istanbul ignore next */
   autoPlay = false,
-  /* istanbul ignore next */
   live = false,
   ariaLandmark,
   keyboardShortcuts: keyboardShortcutsProp,
+  initialVolume = 0.7,
   ...props
 }: AudioPlayerComposableProps) => {
   const currentTimeRef = useRef(0);
@@ -59,6 +59,8 @@ export const AudioPlayerComposable = ({
   const [loading, setLoading] = useState(true);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
+  const [volume, setVolume] = useState(0);
+
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [displayDuration, setDisplayDuration] = useState(0);
 
@@ -73,13 +75,13 @@ export const AudioPlayerComposable = ({
     setDisplayDuration(0);
   }, [src]);
 
-  // @ts-ignore as we are not passing all the parameters yet.
   const {
     audioEvents,
     togglePlay,
     onChangeSlider,
     onClickForward,
     onClickBackward,
+    onChangeVolumeSlider,
   } = useAudioFunctions({
     autoPlay,
     audioRef,
@@ -94,7 +96,9 @@ export const AudioPlayerComposable = ({
     currentTimeRef,
     duration,
     setDuration,
+    setVolume,
     src,
+    live,
   } as AudioFunctionDependencies);
 
   const getPlayPauseButtonProps = useCallback(
@@ -113,8 +117,6 @@ export const AudioPlayerComposable = ({
 
       if (playing) {
         ariaPressed = true;
-        // TODO remove ignore as we implement the "live" functionality back and write test for it
-        /* istanbul ignore next */
         if (canPause) {
           playStateIcon = <IconFilledPause />;
           ariaLabel = 'Pause';
@@ -205,6 +207,26 @@ export const AudioPlayerComposable = ({
     [currentTime, duration],
   );
 
+  const getVolumeControlProps = useCallback(
+    ({
+      vertical,
+      overrides,
+      keyboardShortcuts,
+      collapsed,
+      muteButtonSize,
+    }: AudioPlayerVolumeControlProps) => ({
+      keyboardShortcuts,
+      vertical,
+      overrides: overrides || {},
+      onChange: onChangeVolumeSlider,
+      volume,
+      collapsed,
+      initialVolume,
+      muteButtonSize,
+    }),
+    [volume, onChangeVolumeSlider],
+  );
+
   const getSkipPreviousButtonProps = useCallback(
     ({
       onClick: consumerOnClick,
@@ -255,8 +277,10 @@ export const AudioPlayerComposable = ({
       getSkipNextButtonProps,
       getForwardButtonProps,
       getReplayButtonProps,
+      getVolumeControlProps,
     }),
     [
+      getVolumeControlProps,
       togglePlay,
       getPlayPauseButtonProps,
       getTimeDisplayProps,
@@ -310,6 +334,7 @@ export const AudioPlayerComposable = ({
           onDurationChange={eventHandler(AudioEvents.DurationChange)}
           onTimeUpdate={eventHandler(AudioEvents.TimeUpdate)}
           onProgress={eventHandler(AudioEvents.Progress)}
+          onVolumeChange={eventHandler(AudioEvents.VolumeChange)}
         />
         {children}
       </AudioPlayerProvider>

@@ -153,3 +153,26 @@ export const StoryStylePresets = () => (
 );
 
 StoryStylePresets.storyName = 'inline-message-intents';
+
+export const StoryLogicalProps = () => (
+  <>
+    <StorybookHeading>Inline message</StorybookHeading>
+    <StorybookSubHeading>With logical padding props</StorybookSubHeading>
+    <InlineMessage
+      aria-label="with logical padding overrides"
+      overrides={{paddingInline: '50px'}}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </InlineMessage>
+    <StorybookSubHeading>With logical margin props</StorybookSubHeading>
+    <InlineMessage
+      aria-label="with logical margin overrides"
+      overrides={{marginInline: '50px'}}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </InlineMessage>
+  </>
+);
+StoryLogicalProps.storyName = 'inline-message-logical-props';

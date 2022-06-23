@@ -9,6 +9,7 @@ import {
   AudioPlayerTimeDisplay,
   AudioPlayerSkipNextButton,
   AudioPlayerSkipPreviousButton,
+  AudioPlayerVolumeControl,
 } from '..';
 import {
   StorybookHeading,
@@ -25,12 +26,68 @@ import {
   IconFilledLaunch,
   IconFilledReplay5,
   IconFilledForward5,
+  IconFilledGraphicEq,
 } from '../../icons';
+import {useBreakpointKey} from '../../utils/hooks';
+import {Flag} from '../../flag';
+
+const AUDIO_SRC =
+  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3';
+const LIVE_AUDIO_SRC = 'https://radio.talkradio.co.uk/stream';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-audio-player-theme',
   overrides: {
     stylePresets: {
+      customTrackStylePreset: {
+        base: {
+          backgroundColor: 'red',
+          borderColor: 'blue',
+          borderWidth: '1px',
+          borderStyle: 'solid',
+        },
+      },
+      customIndicatorStylePreset: {
+        base: {
+          backgroundColor: 'yellow',
+        },
+      },
+      customThumbStylePreset: {
+        base: {
+          backgroundColor: 'green',
+          borderColor: 'black',
+          borderWidth: '2px',
+          borderStyle: 'solid',
+        },
+      },
+      customThumbLabelStylePreset: {
+        base: {
+          borderColor: 'black',
+          borderWidth: '1px',
+          borderRadius: '999px',
+          borderStyle: 'dashed',
+          color: 'green',
+        },
+      },
+      customLabelStylePreset: {
+        base: {
+          borderColor: 'purple',
+          borderWidth: '2px',
+          borderRadius: '999px',
+          borderStyle: 'dashed',
+          color: 'purple',
+        },
+      },
+      customButtonStylePreset: {
+        base: {
+          borderColor: 'purple',
+          borderWidth: '2px',
+          borderRadius: '999px',
+          borderStyle: 'dashed',
+          iconColor: 'purple',
+          backgroundColor: '{{colors.interface010}}',
+        },
+      },
       customAudioPlayerThumb: {
         base: {
           backgroundColor: '#f6807e',
@@ -68,25 +125,124 @@ export default {
 
 const fullAudioPlayerAreasDesktop = `
   seekBar     seekBar   seekBar   seekBar   seekBar   seekBar   seekBar
-  currentTime none      none      none      none      none      totalTime  
+  currentTime none      none      none      none      none      totalTime
   volume      prev      backward  play      forward   next      link
  `;
 
 const fullAudioPlayerAreasMobile = `
-  seekBar     seekBar   seekBar   seekBar   seekBar
-  currentTime volume    none      link      totalTime  
-  prev        backward  play      forward   next
+  seekBar     seekBar   seekBar   seekBar   seekBar   seekBar
+  currentTime none      none      none      link      totalTime  
+  volume      prev      backward  play      forward   next
  `;
 
-const AudioPlayerFull = (props: {
+const fullAudioPlayerLiveAreasDesktop = `
+  live   prev   backward   play   forward   next   link
+ `;
+
+const fullAudioPlayerLiveAreasMobile = `
+  none        none      none      link      live
+  prev        backward  play      forward   next
+`;
+
+const AudioPlayerFullRecorded = (props: {
+  ariaLandmark: string;
+  src?: string;
+  autoPlay?: boolean;
+}) => {
+  const breakpointKey = useBreakpointKey();
+
+  return (
+    <AudioPlayerComposable src={AUDIO_SRC} {...props}>
+      <GridLayout
+        columns={{
+          xs: '1fr auto auto auto 1fr',
+          md: '50px 1fr auto auto auto 1fr 50px',
+        }}
+        rowGap="space040"
+        columnGap="space040"
+        areas={{
+          xs: fullAudioPlayerAreasMobile,
+          md: fullAudioPlayerAreasDesktop,
+        }}
+      >
+        {Areas => (
+          <>
+            <Areas.Play alignSelf="center">
+              <AudioPlayerPlayPauseButton />
+            </Areas.Play>
+
+            <Areas.Backward alignSelf="center">
+              <AudioPlayerReplayButton />
+            </Areas.Backward>
+
+            <Areas.Forward alignSelf="center">
+              <AudioPlayerForwardButton />
+            </Areas.Forward>
+
+            <Areas.Prev alignSelf="center" justifySelf="end">
+              <AudioPlayerSkipPreviousButton
+                onClick={() => console.log('on skip Prev track')}
+              />
+            </Areas.Prev>
+
+            <Areas.Next alignSelf="center">
+              <AudioPlayerSkipNextButton
+                onClick={() => console.log('on skip Next track')}
+              />
+            </Areas.Next>
+
+            <Areas.Volume alignSelf="center" justifySelf="start">
+              <AudioPlayerVolumeControl
+                collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+              />
+            </Areas.Volume>
+
+            <Areas.SeekBar>
+              <AudioPlayerSeekBar />
+            </Areas.SeekBar>
+
+            <Areas.CurrentTime>
+              <AudioPlayerTimeDisplay
+                format={({currentTime}) => calculateTime(currentTime)}
+              />
+            </Areas.CurrentTime>
+
+            <Areas.TotalTime justifySelf="end">
+              <AudioPlayerTimeDisplay
+                format={({duration}) => calculateTime(duration)}
+              />
+            </Areas.TotalTime>
+
+            <Areas.Link alignSelf="center" justifySelf="end">
+              <Hidden xs sm>
+                <IconButton
+                  aria-label="Open popout player"
+                  overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
+                  onClick={() => {
+                    window.open(
+                      'https://www.newskit.co.uk/',
+                      '',
+                      'width=380,height=665',
+                    );
+                  }}
+                >
+                  <IconFilledLaunch />
+                </IconButton>
+              </Hidden>
+            </Areas.Link>
+          </>
+        )}
+      </GridLayout>
+    </AudioPlayerComposable>
+  );
+};
+
+const AudioPlayerFullLive = (props: {
   ariaLandmark: string;
   src?: string;
   autoPlay?: boolean;
 }) => (
-  <AudioPlayerComposable
-    src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    {...props}
-  >
+  <AudioPlayerComposable src={LIVE_AUDIO_SRC} live {...props}>
     <GridLayout
       columns={{
         xs: '1fr auto auto auto 1fr',
@@ -95,8 +251,8 @@ const AudioPlayerFull = (props: {
       rowGap="space040"
       columnGap="space040"
       areas={{
-        xs: fullAudioPlayerAreasMobile,
-        md: fullAudioPlayerAreasDesktop,
+        xs: fullAudioPlayerLiveAreasMobile,
+        md: fullAudioPlayerLiveAreasDesktop,
       }}
     >
       {Areas => (
@@ -110,7 +266,7 @@ const AudioPlayerFull = (props: {
           </Areas.Backward>
 
           <Areas.Forward alignSelf="center">
-            <AudioPlayerForwardButton />
+            <AudioPlayerForwardButton disabled />
           </Areas.Forward>
 
           <Areas.Prev alignSelf="center" justifySelf="end">
@@ -121,31 +277,17 @@ const AudioPlayerFull = (props: {
 
           <Areas.Next alignSelf="center">
             <AudioPlayerSkipNextButton
+              disabled
               onClick={() => console.log('on skip Next track')}
             />
           </Areas.Next>
 
-          <Areas.Volume alignSelf="center" justifySelf="start">
-            <Hidden xs sm>
-              Not yet
-            </Hidden>
-          </Areas.Volume>
-
-          <Areas.SeekBar>
-            <AudioPlayerSeekBar />
-          </Areas.SeekBar>
-
-          <Areas.CurrentTime>
-            <AudioPlayerTimeDisplay
-              format={({currentTime}) => calculateTime(currentTime)}
-            />
-          </Areas.CurrentTime>
-
-          <Areas.TotalTime justifySelf="end">
-            <AudioPlayerTimeDisplay
-              format={({duration}) => calculateTime(duration)}
-            />
-          </Areas.TotalTime>
+          <Areas.Live alignSelf="center" justifySelf={{xs: 'end', md: 'start'}}>
+            <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
+              <IconFilledGraphicEq />
+              Live
+            </Flag>
+          </Areas.Live>
 
           <Areas.Link alignSelf="center" justifySelf="end">
             <Hidden xs sm>
@@ -170,16 +312,19 @@ const AudioPlayerFull = (props: {
   </AudioPlayerComposable>
 );
 
-const AudioPlayerInline = (props: {ariaLandmark: string; src?: string}) => (
-  <AudioPlayerComposable
-    src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    {...props}
-  >
+const AudioPlayerInlineRecorded = (props: {
+  ariaLandmark: string;
+  src?: string;
+}) => (
+  <AudioPlayerComposable src={AUDIO_SRC} {...props}>
     <GridLayout
-      columns="auto 40px 1fr auto"
+      columns="auto auto 40px 1fr auto"
       columnGap="space040"
       alignItems="center"
     >
+      <GridLayoutItem alignSelf="end">
+        <AudioPlayerVolumeControl vertical />
+      </GridLayoutItem>
       <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
       <AudioPlayerTimeDisplay
         format={({currentTime}) => calculateTime(currentTime)}
@@ -192,14 +337,37 @@ const AudioPlayerInline = (props: {ariaLandmark: string; src?: string}) => (
   </AudioPlayerComposable>
 );
 
+const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
+  <AudioPlayerComposable src={LIVE_AUDIO_SRC} live {...props}>
+    <GridLayout
+      columns="auto auto"
+      columnGap="space040"
+      alignItems="center"
+      justifyContent="flex-start"
+    >
+      <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+      <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
+        <IconFilledGraphicEq />
+        Live
+      </Flag>
+    </GridLayout>
+  </AudioPlayerComposable>
+);
+
 export const AudioPlayer = () => (
   <>
-    <StorybookSubHeading>Full player-recorded</StorybookSubHeading>
-    <AudioPlayerFull ariaLandmark="audio player full" />
+    <StorybookSubHeading>Audio Player - full recorded</StorybookSubHeading>
+    <AudioPlayerFullRecorded ariaLandmark="audio player full recorded" />
+    <br />
+    <StorybookSubHeading>Audio Player - full live</StorybookSubHeading>
+    <AudioPlayerFullLive ariaLandmark="audio player full live" />
     <br />
     <br />
-    <StorybookSubHeading>Audio player inline recorded </StorybookSubHeading>
-    <AudioPlayerInline ariaLandmark="audio player inline" />
+    <StorybookSubHeading>Audio Player - inline recorded</StorybookSubHeading>
+    <AudioPlayerInlineRecorded ariaLandmark="audio player inline recorded" />
+    <br />
+    <StorybookSubHeading>Audio Player - inline live</StorybookSubHeading>
+    <AudioPlayerInlineLive ariaLandmark="audio player inline live" />
   </>
 );
 AudioPlayer.storyName = 'audio-player';
@@ -211,7 +379,7 @@ export const AudioSubComponents = () => (
     <br />
 
     <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      src={AUDIO_SRC}
       ariaLandmark="audio player time display"
     >
       <GridLayout
@@ -231,6 +399,13 @@ export const AudioSubComponents = () => (
           <AudioPlayerTimeDisplay
             format={({duration}) => calculateTime(duration)}
           />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>live</StorybookSubHeading>
+          <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
+            <IconFilledGraphicEq />
+            Live
+          </Flag>
         </GridLayoutItem>
         <GridLayoutItem>
           <StorybookSubHeading>default</StorybookSubHeading>
@@ -267,6 +442,26 @@ export const AudioSubComponents = () => (
         </GridLayoutItem>
       </GridLayout>
       <StorybookSubHeading>SeekBar</StorybookSubHeading> <AudioPlayerSeekBar />
+      <GridLayout
+        columns="1fr 1fr 1fr"
+        rows="1fr 1fr 1fr"
+        rowGap="10px"
+        columnGap="20px"
+      >
+        <GridLayoutItem>
+          <StorybookSubHeading>Volume Control</StorybookSubHeading>
+          <AudioPlayerVolumeControl />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <StorybookSubHeading>Vertical Volume Control</StorybookSubHeading>
+          <AudioPlayerVolumeControl vertical />
+        </GridLayoutItem>
+
+        <GridLayoutItem>
+          <StorybookSubHeading>collapsed Volume Control</StorybookSubHeading>
+          <AudioPlayerVolumeControl collapsed />
+        </GridLayoutItem>
+      </GridLayout>
     </AudioPlayerComposable>
   </>
 );
@@ -276,7 +471,7 @@ export const AudioPlayerOverrides = () => (
   <ThemeProvider theme={myCustomTheme}>
     <StorybookSubHeading>Audio player with overrides</StorybookSubHeading>
     <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      src={AUDIO_SRC}
       ariaLandmark="audio player overrides"
     >
       <GridLayout
@@ -346,9 +541,35 @@ export const AudioPlayerOverrides = () => (
             </Areas.Next>
 
             <Areas.Volume alignSelf="center" justifySelf="start">
-              <Hidden xs sm>
-                Not yet
-              </Hidden>
+              <AudioPlayerVolumeControl
+                muteButtonSize={ButtonSize.Medium}
+                overrides={{
+                  slider: {
+                    track: {
+                      stylePreset: 'customTrackStylePreset',
+                      size: 'sizing020',
+                    },
+                    indicator: {
+                      stylePreset: 'customIndicatorStylePreset',
+                    },
+                    thumb: {
+                      stylePreset: 'customThumbStylePreset',
+                      size: 'sizing040',
+                    },
+                    labels: {
+                      stylePreset: 'customLabelStylePreset',
+                      space: 'spacing060',
+                    },
+                    thumbLabel: {
+                      stylePreset: 'customThumbLabelStylePreset',
+                    },
+                  },
+                  button: {
+                    stylePreset: 'customButtonStylePreset',
+                    iconSize: 'iconSize020',
+                  },
+                }}
+              />
             </Areas.Volume>
 
             <Areas.SeekBar>
@@ -416,7 +637,7 @@ AudioPlayerOverrides.storyName = 'audio-player-overrides';
 export const AudioPlayPauseButtonAutoplay = () => (
   <>
     <StorybookSubHeading>Autoplay</StorybookSubHeading>
-    <AudioPlayerFull ariaLandmark="audio player autoplay" autoPlay />
+    <AudioPlayerFullRecorded ariaLandmark="audio player autoplay" autoPlay />
   </>
 );
 
@@ -425,9 +646,9 @@ AudioPlayPauseButtonAutoplay.storyName = 'audio-play-pause-button-autoplay';
 export const AudioPlayerKeyboard = () => (
   <>
     <StorybookSubHeading>Audio Player Keyboard shortcuts</StorybookSubHeading>
-    <AudioPlayerFull ariaLandmark="audio player keyboard" />
+    <AudioPlayerFullRecorded ariaLandmark="audio player keyboard" />
     <Block marginBlockEnd="space040" />
-    <GridLayout columns="auto 1fr" rowGap="space020" as="dl">
+    <GridLayout columns="auto 1fr auto 1fr" rowGap="space020" as="dl">
       <dt>k / space</dt>
       <dd>Toggle play/pause</dd>
       <dt>0 / Home</dt>
@@ -442,6 +663,8 @@ export const AudioPlayerKeyboard = () => (
       <dd>Forward 10sec</dd>
       <dt>j</dt>
       <dd>Replay 10 sec</dd>
+      <dt>m</dt>
+      <dd>mute / unmute volume</dd>
     </GridLayout>
     <Block marginBlockEnd="space090" />
 
@@ -449,7 +672,7 @@ export const AudioPlayerKeyboard = () => (
       Audio Player Keyboard overrides shortcuts
     </StorybookSubHeading>
     <AudioPlayerComposable
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      src={AUDIO_SRC}
       ariaLandmark="audio player keyboard overrides"
       keyboardShortcuts={{
         jumpToStart: '1',
@@ -497,9 +720,7 @@ export const AudioPlayerKeyboard = () => (
             </Areas.Next>
 
             <Areas.Volume alignSelf="center" justifySelf="start">
-              <Hidden xs sm>
-                Not yet
-              </Hidden>
+              <AudioPlayerVolumeControl keyboardShortcuts={{muteToggle: 'y'}} />
             </Areas.Volume>
 
             <Areas.SeekBar>
@@ -534,7 +755,7 @@ export const AudioPlayerKeyboard = () => (
       </GridLayout>
     </AudioPlayerComposable>
     <Block marginBlockEnd="space040" />
-    <GridLayout columns="auto 1fr" rowGap="space020" as="dl">
+    <GridLayout columns="auto 1fr auto 1fr" rowGap="space020" as="dl">
       <dt>s</dt>
       <dd>Toggle play/pause</dd>
       <dt>1</dt>
@@ -549,6 +770,8 @@ export const AudioPlayerKeyboard = () => (
       <dd>Forward 10sec</dd>
       <dt>a</dt>
       <dd>Replay 10 sec</dd>
+      <dt>y</dt>
+      <dd>mute / unmute volume</dd>
     </GridLayout>
   </>
 );

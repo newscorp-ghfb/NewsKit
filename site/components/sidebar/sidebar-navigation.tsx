@@ -1,24 +1,18 @@
 import React, {useEffect, useRef} from 'react';
 import {useRouter} from 'next/router';
-import {Link} from '../link';
+import {Block, Menu, MenuDivider, MenuItem} from 'newskit';
 import routes from '../../routes';
-import {
-  StyledSectionContainer,
-  StyledNavigationWrapper,
-  StyledLinkItem,
-  StyledSidebarNav,
-  StyledSecondLevelHeader,
-  StyledNavigationSection,
-} from './styled';
-import {
-  PageLinkProps,
-  NavigationSectionProps,
-  SectionProps,
-  NavigationSectionType,
-  PageType,
-} from './types';
+import {Visible} from '../../../src/grid/visibility';
+import {MenuMobileCollapsible} from '../menu-collapsible/menu-collapsible';
+import {PageLinkProps, SiteMenuItemProps, SubNavProps} from './types';
+import {DesktopNavigationDivider, StyledTitle} from './styled';
 
-const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
+const MenuTitleLinks: React.FC<PageLinkProps> = ({
+  page,
+  active,
+  href,
+  children,
+}) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -28,79 +22,104 @@ const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
   });
 
   return (
-    <div ref={ref}>
-      <Link
-        type="standalone"
-        href={page.id}
-        overrides={{stylePreset: 'linkNoUnderline'}}
-      >
-        <StyledLinkItem data-testid={page.id} $selected={active}>
-          {page.title}
-        </StyledLinkItem>
-      </Link>
-    </div>
+    <MenuItem
+      href={href}
+      data-testid={page}
+      selected={active}
+      overrides={{
+        stylePreset: 'sideBarNavigation',
+        typographyPreset: 'utilityButton020',
+        minHeight: '40px',
+        paddingInlineStart: 'space060',
+      }}
+      size="small"
+    >
+      {children} <span ref={ref} />
+    </MenuItem>
+  );
+};
+export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
+  const path = useRouter()?.pathname || '';
+
+  return (
+    <>
+      {menuItemList &&
+        menuItemList.map(({title, id, page, subNav, indexPage}) => (
+          <React.Fragment key={id}>
+            {page ? (
+              <>
+                {indexPage ? undefined : (
+                  <>
+                    <MenuTitleLinks active={path.includes(id)} href={id}>
+                      {title}
+                    </MenuTitleLinks>
+                  </>
+                )}
+              </>
+            ) : (
+              <>
+                {title === 'Foundations' ||
+                title === 'Actions & Inputs' ||
+                title === 'Design' ||
+                title === 'Forms' ? (
+                  <Block spaceStack="space060" />
+                ) : (
+                  <DesktopNavigationDivider>
+                    <MenuDivider overrides={{stylePreset: 'menuDivider'}} />
+                  </DesktopNavigationDivider>
+                )}
+
+                <StyledTitle
+                  typographyPreset="utilityHeading030"
+                  stylePreset="sidebarHeader"
+                >
+                  {title}
+                </StyledTitle>
+
+                <SiteMenuItem menuItemList={subNav as SubNavProps} />
+              </>
+            )}
+          </React.Fragment>
+        ))}
+    </>
   );
 };
 
-const NavigationSection: React.FC<NavigationSectionProps> = ({
-  navigationSection,
-  activePagePath,
-}) => (
-  <>
-    <StyledSecondLevelHeader id={navigationSection.id}>
-      {navigationSection.title}
-    </StyledSecondLevelHeader>
-    {navigationSection.subNav.map(page => (
-      <PageLink
-        key={page.id}
-        page={page}
-        active={activePagePath.includes(page.id)}
-      />
-    ))}
-  </>
-);
-
-const Section: React.FC<SectionProps> = ({section, activePagePath}) => (
-  <StyledSectionContainer>
-    <StyledNavigationSection>
-      {section.subNav.map(subNav => {
-        if ((subNav as NavigationSectionType).subNav) {
-          return (
-            <NavigationSection
-              key={subNav.id}
-              navigationSection={subNav as NavigationSectionType}
-              activePagePath={activePagePath}
-            />
-          );
-        }
-        return (
-          <PageLink
-            key={subNav.id}
-            page={subNav as PageType}
-            // TODO: can rollback to subNav.id === activePagePath after https://nidigitalsolutions.jira.com/browse/PPDSE-312
-            active={activePagePath.includes(subNav.id)}
-          />
-        );
-      })}
-    </StyledNavigationSection>
-  </StyledSectionContainer>
-);
-
-export const SidebarNav: React.FC = () => {
-  const path = useRouter().pathname;
-
+const MenuDesktop = ({path}: {path: string}) => {
   const currentRoute = path.match(/\/[A-z\d-]*/g);
   const currentSection =
     currentRoute && routes.filter(({id}) => id === currentRoute[0]);
 
   return (
-    <StyledSidebarNav role="navigation" aria-label="Sidebar">
-      <StyledNavigationWrapper role="list">
+    <>
+      <Menu
+        aria-label="menu-sidebar"
+        vertical
+        size="small"
+        align="start"
+        overrides={{spaceInline: 'space000'}}
+      >
         {currentSection &&
-          currentSection.map(section => (
-            <Section key={section.id} section={section} activePagePath={path} />
+          currentSection.map(({subNav, id}) => (
+            <SiteMenuItem menuItemList={subNav} key={id} />
           ))}
-      </StyledNavigationWrapper>
-    </StyledSidebarNav>
+      </Menu>
+    </>
+  );
+};
+
+export const SidebarNav = () => {
+  const path = useRouter().pathname;
+
+  return (
+    <>
+      <Visible xs sm md>
+        <MenuMobileCollapsible path={path} menu={routes} />
+      </Visible>
+      <Visible lg xl>
+        <MenuDesktop path={path} />
+        <Block spaceStack="space060" />
+      </Visible>
+    </>
   );
 };
