@@ -31,14 +31,6 @@ export const StorySelectionList = () => {
         flow={Flow.HorizontalTop}
       >
         <Container>
-          <StorybookSubHeading>No selected option</StorybookSubHeading>
-          <SelectionList aria-label="selection-list-story">
-            {ITEMS.map(item => (
-              <SelectionListOption key={item}>{item}</SelectionListOption>
-            ))}
-          </SelectionList>
-        </Container>
-        <Container>
           <StorybookSubHeading>
             Selected option (interactive)
           </StorybookSubHeading>
@@ -55,27 +47,31 @@ export const StorySelectionList = () => {
           </SelectionList>
         </Container>
         <Container>
-          <StorybookSubHeading>Multiple selected options</StorybookSubHeading>
-          <SelectionList>
-            <SelectionListOption selected>Option 1</SelectionListOption>
-            <SelectionListOption selected>Option 2</SelectionListOption>
-            <SelectionListOption>Option 3</SelectionListOption>
-            <SelectionListOption>Option 4</SelectionListOption>
+          <StorybookSubHeading>
+            Selected option (non-interactive)
+          </StorybookSubHeading>
+          <SelectionList aria-label="selection-list-story">
+            {ITEMS.map((item, index) => (
+              <SelectionListOption key={item} selected={index === 0}>
+                {item}
+              </SelectionListOption>
+            ))}
           </SelectionList>
         </Container>
-      </Stack>
-      <Stack
-        stackDistribution={StackDistribution.SpaceBetween}
-        flow={Flow.HorizontalTop}
-      >
         <Container>
           <StorybookSubHeading>JSX options</StorybookSubHeading>
           <SelectionList>
             <SelectionListOption selected>
-              <div>Option 1</div>
+              <Stack>
+                <div>Multiple line</div>
+                <div>option 1</div>
+              </Stack>
             </SelectionListOption>
             <SelectionListOption>
-              <div>Option 2</div>
+              <Stack>
+                <div>Multiple line</div>
+                <div>option 2</div>
+              </Stack>
             </SelectionListOption>
           </SelectionList>
         </Container>

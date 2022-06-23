@@ -1,29 +1,9 @@
 import React from 'react';
 import {IconFilledCheck} from '../icons';
 import {useTheme} from '../theme';
-import {
-  getResponsiveSize,
-  getResponsiveSpace,
-  getStylePreset,
-  getTypographyPreset,
-  styled,
-} from '../utils';
 import {getToken} from '../utils/get-token';
-import {logicalProps} from '../utils/logical-properties';
+import {StyledSelectionListOption} from './styled';
 import {SelectionListOptionProps} from './types';
-
-const SelectionListOptionContainer = styled.button<SelectionListOptionProps>`
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  ${getStylePreset('selectionList.option', '')}
-  ${getTypographyPreset('selectionList.option', '')}
-  ${getResponsiveSize('minHeight', 'selectionList.option', '', 'minHeight')}
-  ${getResponsiveSpace('columnGap', 'selectionList.option', '', 'spaceInline')}
-  ${logicalProps('selectionList.option')}
-`;
 
 export const SelectionListOption = ({
   children,
@@ -35,7 +15,7 @@ export const SelectionListOption = ({
   const theme = useTheme();
   const iconSize = getToken(
     {theme, overrides},
-    `selectionList.option.icon`,
+    `selectionListOption.icon`,
     'icon',
     'iconSize',
   );
@@ -46,14 +26,15 @@ export const SelectionListOption = ({
   };
 
   return (
-    <SelectionListOptionContainer
+    <StyledSelectionListOption
       role="menuitemradio"
       aria-checked={selected}
       overrides={overrides}
+      tabIndex={selected ? 0 : -1}
       {...restProps}
     >
       {children}
       {selected && renderIcon()}
-    </SelectionListOptionContainer>
+    </StyledSelectionListOption>
   );
 };

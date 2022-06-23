@@ -2295,19 +2295,18 @@ Object {
       "typographyPreset": "utilityBody020",
     },
   },
-  "selectionList": Object {
-    "option": Object {
-      "icon": Object {
-        "iconSize": "iconSize020",
-        "stylePreset": "selectOptionItemIcon",
-      },
-      "minHeight": "sizing080",
-      "paddingBlock": "space020",
-      "paddingInline": "space020",
-      "spaceInline": "space020",
-      "stylePreset": "selectOptionItem",
-      "typographyPreset": "utilityBody020",
+  "selectionList": Object {},
+  "selectionListOption": Object {
+    "icon": Object {
+      "iconSize": "iconSize020",
+      "stylePreset": "selectOptionItemIcon",
     },
+    "minHeight": "sizing080",
+    "paddingBlock": "space020",
+    "paddingInline": "space020",
+    "spaceInline": "space020",
+    "stylePreset": "selectOptionItem",
+    "typographyPreset": "utilityBody020",
   },
   "shareBar": Object {
     "items": Object {

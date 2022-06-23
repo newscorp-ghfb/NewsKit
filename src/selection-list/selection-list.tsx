@@ -3,17 +3,9 @@ import composeRefs from '@seznam/compose-react-refs';
 import {SelectionListProps} from './types';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {styled} from '../utils/style';
-import {logicalProps} from '../utils/logical-properties';
 import {useKeypress} from '../utils/hooks';
 import {handleArrowDown, handleArrowUp} from './utils';
-
-const SelectionListContainer = styled.div<
-  Pick<SelectionListProps, 'overrides'>
->`
-  box-sizing: border-box;
-  ${logicalProps()}
-`;
+import {StyledSelectionList} from './styled';
 
 const ThemelessSelectionList = React.forwardRef<
   HTMLDivElement,
@@ -32,14 +24,14 @@ const ThemelessSelectionList = React.forwardRef<
   });
 
   return (
-    <SelectionListContainer
+    <StyledSelectionList
       ref={composeRefs(selectionListRef, ref)}
       role="menu"
       overrides={overrides}
       {...restProps}
     >
       {children}
-    </SelectionListContainer>
+    </StyledSelectionList>
   );
 });
 
