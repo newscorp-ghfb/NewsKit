@@ -136,19 +136,24 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     return children;
   }
 
+  // This object contains the event handlers that should be added to the reference
+  // element (e.g. onClick, etc. if useClick is passed to useInteractions). It is
+  // also passed to the content prop (if this is a function) to allow other elements
+  // to trigger these handlers (e.g. the Popover's close button triggers the onClick
+  // handler).
+  const referenceProps = getReferenceProps();
+
   return (
     <>
-      {React.cloneElement(
-        children,
-        getReferenceProps({
-          ref: composeRefs<Element>(reference, children.ref),
-          ...refElAriaAttributes,
-          id:
-            floatingElAriaAttributes['aria-labelledby'] && !children.props.id
-              ? defaultRefId
-              : undefined,
-        }),
-      )}
+      {React.cloneElement(children, {
+        ref: composeRefs<Element>(reference, children.ref),
+        ...refElAriaAttributes,
+        id:
+          floatingElAriaAttributes['aria-labelledby'] && !children.props.id
+            ? defaultRefId
+            : undefined,
+        ...referenceProps,
+      })}
       {open && (
         <StyledFloatingElement
           {...getFloatingProps({
@@ -174,7 +179,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
             path={path}
             ref={panelRef}
           >
-            {content}
+            {typeof content === 'function' ? content(referenceProps) : content}
           </StyledPanel>
           {!hidePointer && (
             <StyledPointer

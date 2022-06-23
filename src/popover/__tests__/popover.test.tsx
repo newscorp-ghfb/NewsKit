@@ -747,13 +747,18 @@ describe('Popover', () => {
       await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
-    test.skip('should show close popover when close button clicked', () => {
-      const {getByRole, getByTestId} = renderWithTheme(Popover, defaultProps);
+    test('should close popover and call onDismiss when close button clicked', () => {
+      const onDismiss = jest.fn();
+      const {getByRole, queryByRole, getByTestId} = renderWithTheme(Popover, {
+        ...defaultProps,
+        onDismiss,
+      });
       fireEvent.click(getByRole('button'));
-      expect(getByRole('dialog')).toBeInTheDocument();
+      expect(queryByRole('dialog')).toBeInTheDocument();
       const closeBtn = getByTestId('close-button');
       fireEvent.click(closeBtn);
-      expect(getByRole('dialog')).not.toBeInTheDocument();
+      expect(queryByRole('dialog')).not.toBeInTheDocument();
+      expect(onDismiss).toHaveBeenCalled();
     });
   });
 });

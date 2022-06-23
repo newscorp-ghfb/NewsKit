@@ -65,7 +65,7 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
   return (
     <BaseFloatingElement
       path="popover"
-      content={
+      content={({onClick}) => (
         <StyledDialogPanel closePosition={closePosition}>
           {header !== undefined && (
             <StyledPopoverHeader
@@ -84,6 +84,7 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
               closePosition={closePosition}
             >
               <IconButton
+                onClick={onClick}
                 data-testid="close-button"
                 aria-label="close"
                 overrides={closeButtonOverrides}
@@ -94,7 +95,7 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
             </StyledPopoverCloseButtonContainer>
           )}
         </StyledDialogPanel>
-      }
+      )}
       buildRefElAriaAttributes={buildContextAriaAttributes}
       buildFloatingElAriaAttributes={buildFloatingElementAriaAttributes}
       useInteractions={useInteractions}
