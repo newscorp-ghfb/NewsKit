@@ -1,23 +1,23 @@
 import React, {useEffect} from 'react';
 import {newskitLightTheme, InlineMessage, P, UnorderedList} from 'newskit';
-import {FoundationPageTemplate} from '../../templates/foundation-page-template';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
 import {
   ContentSection,
   ContentPrimary,
   ContentSecondary,
   ContentColSpan,
-} from '../../components/content-structure';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {LayoutProps} from '../../components/layout';
-import {Table} from '../../components/table';
-import {MediaList} from '../../components/media-list';
-import {IconFilledCircle} from '../../components/icons';
-import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-import {UsageKind} from '../../components/usage-card';
-import {Link} from '../../components/link';
-import {getTokenType} from '../../utils/get-token-type';
+} from '../../../components/content-structure';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {LayoutProps} from '../../../components/layout';
+import {Table} from '../../../components/table';
+import {MediaList} from '../../../components/media-list';
+import {IconFilledCircle} from '../../../components/icons';
+import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
+import {UsageKind} from '../../../components/usage-card';
+import {Link} from '../../../components/link';
+import {getTokenType} from '../../../utils/get-token-type';
 
-import useMediaQuery from '../../helpers/use-media-query';
+import useMediaQuery from '../../../helpers/use-media-query';
 
 const TOKENS_DESCRIPTION: {[key in string]: string} = {
   motionTimingLinear: 'Has the same even speed from start to end.',

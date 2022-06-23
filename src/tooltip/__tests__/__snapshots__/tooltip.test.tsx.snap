@@ -1,150 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tooltip offset should be applied with pointer and mq distance override 1`] = `
-<DocumentFragment>
-  <button
-    aria-describedby="floating-ui-38"
-    type="submit"
-  >
-    Add
-  </button>
-  .emotion-0 {
-  pointer-events: none;
-  z-index: 80;
-}
-
-@media screen {
-  .emotion-0 {
-    position: absolute;
-    left: 0px;
-    top: calc(0px + (32px * -1));
-  }
-}
-
-.emotion-1 {
-  margin: 0;
-  color: #FFFFFF;
-  border-radius: 8px;
-  background-color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
-}
-
-.emotion-2 {
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background-color: #0A0A0A;
-  width: 4px;
-  height: 4px;
-  left: 0px;
-  bottom: calc(-4px / 2);
-}
-
-<div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="floating-ui-38"
-    role="tooltip"
-    tabindex="-1"
-  >
-    <p
-      class="emotion-1"
-    >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="floating-ui-38-pointer"
-    />
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tooltip offset should be applied with pointer and non-px distance override 1`] = `
-<DocumentFragment>
-  <button
-    aria-describedby="floating-ui-35"
-    type="submit"
-  >
-    Add
-  </button>
-  .emotion-0 {
-  pointer-events: none;
-  z-index: 80;
-  position: absolute;
-  left: 0px;
-  top: calc(0px + (1rem * -1));
-}
-
-.emotion-1 {
-  margin: 0;
-  color: #FFFFFF;
-  border-radius: 8px;
-  background-color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
-}
-
-.emotion-2 {
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background-color: #0A0A0A;
-  width: 4px;
-  height: 4px;
-  left: 0px;
-  bottom: calc(-4px / 2);
-}
-
-<div
-    aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="floating-ui-35"
-    role="tooltip"
-    tabindex="-1"
-  >
-    <p
-      class="emotion-1"
-    >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="floating-ui-35-pointer"
-    />
-  </div>
-</DocumentFragment>
-`;
-
 exports[`Tooltip offset should be applied with pointer and px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-32"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: calc(0px + (10px * -1));
+  top: -10px;
 }
 
 .emotion-1 {
@@ -167,28 +35,31 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+  box-sizing: border-box;
   background-color: #0A0A0A;
   width: 4px;
   height: 4px;
-  left: 0px;
+  left: 8px;
   bottom: calc(-4px / 2);
 }
 
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-32"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
     <div
       class="emotion-2"
-      id="floating-ui-32-pointer"
+      id="MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -197,17 +68,16 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
 exports[`Tooltip offset should be applied with pointer and token distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-29"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: calc(0px + (16px * -1));
+  top: -16px;
 }
 
 .emotion-1 {
@@ -230,6 +100,379 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  left: 8px;
+  bottom: calc(-4px / 2);
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="MOCK-ID"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="MOCK-ID-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip offset should not be applied with pointer and invalid token distance override 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="MOCK-ID"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  left: 8px;
+  bottom: calc(-4px / 2);
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="MOCK-ID"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="MOCK-ID-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip offset should not be applied with pointer and non-px distance override 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="MOCK-ID"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  left: 8px;
+  bottom: calc(-4px / 2);
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="MOCK-ID"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="MOCK-ID-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip offset should not be applied with with no pointer 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="MOCK-ID"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="MOCK-ID"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
+    >
+      hello
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip pointer padding should be applied with px distance override 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="MOCK-ID"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: -8px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  left: 10px;
+  bottom: calc(-4px / 2);
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="MOCK-ID"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="MOCK-ID-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip pointer padding should be applied with token distance override 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="MOCK-ID"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: -8px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  left: 16px;
+  bottom: calc(-4px / 2);
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="MOCK-ID"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
+    >
+      hello
+    </p>
+    <div
+      class="emotion-2"
+      id="MOCK-ID-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip pointer padding should not be applied with invalid token distance override 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="MOCK-ID"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: -8px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
   background-color: #0A0A0A;
   width: 4px;
   height: 4px;
@@ -240,37 +483,38 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-29"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
     <div
       class="emotion-2"
-      id="floating-ui-29-pointer"
+      id="MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
 `;
 
-exports[`Tooltip offset should not be applied with with no pointer 1`] = `
+exports[`Tooltip pointer padding should not be applied with non-px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-26"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: -8px;
 }
 
 .emotion-1 {
@@ -287,18 +531,38 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
   padding-block: 8px;
 }
 
+.emotion-2 {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #0A0A0A;
+  width: 4px;
+  height: 4px;
+  left: 0px;
+  bottom: calc(-4px / 2);
+}
+
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-26"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
+    <div
+      class="emotion-2"
+      id="MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -306,13 +570,12 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
 exports[`Tooltip should render correct styles: default 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-2"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
@@ -336,12 +599,14 @@ exports[`Tooltip should render correct styles: default 1`] = `
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-2"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -352,13 +617,12 @@ exports[`Tooltip should render correct styles: default 1`] = `
 exports[`Tooltip should render correct styles: with overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-11"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
-  pointer-events: none;
   z-index: 70;
   max-width: 80px;
   min-width: 50px;
@@ -384,12 +648,14 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-11"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
@@ -400,17 +666,16 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
 exports[`Tooltip should render correct styles: with pointer 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-14"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: calc(0px + (8px * -1));
+  top: -8px;
 }
 
 .emotion-1 {
@@ -433,28 +698,31 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+  box-sizing: border-box;
   background-color: #0A0A0A;
   width: 4px;
   height: 4px;
-  left: 0px;
+  left: 8px;
   bottom: calc(-4px / 2);
 }
 
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-14"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
     <div
       class="emotion-2"
-      id="floating-ui-14-pointer"
+      id="MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -463,17 +731,16 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
 exports[`Tooltip should render correct styles: with pointer size overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-20"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: calc(0px + (8px * -1));
+  top: -8px;
 }
 
 .emotion-1 {
@@ -496,28 +763,31 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+  box-sizing: border-box;
   background-color: #0A0A0A;
   width: 16px;
   height: 16px;
-  left: 0px;
+  left: 8px;
   bottom: calc(-16px / 2);
 }
 
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-20"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
     <div
       class="emotion-2"
-      id="floating-ui-20-pointer"
+      id="MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -526,17 +796,16 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
 exports[`Tooltip should render correct styles: with pointer stylePreset overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-17"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
-  pointer-events: none;
   z-index: 80;
   position: absolute;
   left: 0px;
-  top: calc(0px + (8px * -1));
+  top: -8px;
 }
 
 .emotion-1 {
@@ -559,28 +828,31 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+  box-sizing: border-box;
   background-color: #A60100;
   width: 4px;
   height: 4px;
-  left: 0px;
+  left: 8px;
   bottom: calc(-4px / 2);
 }
 
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-17"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
     <div
       class="emotion-2"
-      id="floating-ui-17-pointer"
+      id="MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -589,16 +861,15 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
 exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="floating-ui-23"
+    aria-describedby="MOCK-ID"
     type="submit"
   >
     Add
   </button>
   .emotion-0 {
-  pointer-events: none;
   z-index: 80;
   position: absolute;
-  left: calc(0px + (8px * 1));
+  left: 8px;
   top: 0px;
 }
 
@@ -622,28 +893,31 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+  box-sizing: border-box;
   background-color: #0A0A0A;
   width: 4px;
   height: 4px;
   left: calc(-4px / 2);
-  top: 0px;
+  top: 8px;
 }
 
 <div
     aria-hidden="true"
     class="Tooltip emotion-0"
-    id="floating-ui-23"
+    id="MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
     <p
       class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
     >
       hello
     </p>
     <div
       class="emotion-2"
-      id="floating-ui-23-pointer"
+      id="MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>

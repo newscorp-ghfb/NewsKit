@@ -125,7 +125,7 @@ export default [
           {
             title: 'Breakpoints',
             page: true,
-            id: '/theme/breakpoints',
+            id: '/theme/foundation/breakpoints',
             illustration: 'theme/breakpoints/hero',
             description:
               'Breakpoints set a visual point on a screen to alter the layout of content (responsive design), ensuring consistency across different screen widths.',
@@ -133,7 +133,7 @@ export default [
           {
             title: 'Colours',
             page: true,
-            id: '/theme/colours',
+            id: '/theme/foundation/colours',
             illustration: 'theme/colours/hero',
             description:
               'Colour is key to expressing brand and identity, but it also plays a vital role in conveying specific meaning to a user.',
@@ -141,14 +141,14 @@ export default [
           {
             title: 'Design tokens',
             page: true,
-            id: '/theme/design-tokens',
+            id: '/theme/foundation/design-tokens',
             illustration: 'theme/design-tokens/hero',
             description: `Design tokens are the design decisions of the design system. They are used in place of hard-coded values to maintain a scalable and consistent system for UI.`,
           },
           {
             title: 'Fonts',
             page: true,
-            id: '/theme/fonts',
+            id: '/theme/foundation/fonts',
             illustration: 'theme/fonts/hero',
             description:
               'Fonts define the font family, boldness, size, and style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
@@ -156,7 +156,7 @@ export default [
           {
             title: 'Gradients',
             page: true,
-            id: '/theme/gradients',
+            id: '/theme/foundation/gradients',
             illustration: 'theme/gradients/hero',
             description:
               'Gradients is a visual representation of a colour. It is used to convey meaning and communicate a brand.',
@@ -164,7 +164,7 @@ export default [
           {
             title: 'Iconography',
             page: true,
-            id: '/theme/iconography',
+            id: '/theme/foundation/iconography',
             illustration: 'theme/iconography/hero',
             description:
               'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
@@ -172,7 +172,7 @@ export default [
           {
             title: 'Motion',
             page: true,
-            id: '/theme/motion',
+            id: '/theme/foundation/motion',
             illustration: 'theme/motion/hero',
             description:
               'Motion is used to create movement and narrative within a product. Timely animated interface elements attract attention, provide guidance and enhance user experience.',
@@ -180,7 +180,7 @@ export default [
           {
             title: 'Opacity',
             page: true,
-            id: '/theme/opacity',
+            id: '/theme/foundation/opacity',
             illustration: 'theme/opacity/hero',
             description:
               'Opacity is used to create a visual layer between elements.',
@@ -188,7 +188,7 @@ export default [
           {
             title: 'Overlays',
             page: true,
-            id: '/theme/overlays',
+            id: '/theme/foundation/overlays',
             illustration: 'theme/overlays/hero',
             description:
               'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
@@ -196,7 +196,7 @@ export default [
           {
             title: 'Shadows',
             page: true,
-            id: '/theme/shadows',
+            id: '/theme/foundation/shadows',
             illustration: 'components/hero-shadows-illustration',
             description:
               'Shadows provide visual cues about the distance between layers. They add levels of depth and realism to the user’s visual experience and improve the UI visual hierarchy.',
@@ -204,7 +204,7 @@ export default [
           {
             title: 'Sizing',
             page: true,
-            id: '/theme/sizing',
+            id: '/theme/foundation/sizing',
             illustration: 'components/hero-sizing-illustration',
             description:
               'A simple, standardised approach to size increases consistency and visual rhythm. Appropriate sizing is important for providing an inclusive experience.',
@@ -212,30 +212,13 @@ export default [
           {
             title: 'Spacing',
             page: true,
-            id: '/theme/spacing',
+            id: '/theme/foundation/spacing',
             illustration: 'theme/spacing/hero',
             description:
               'Considered use of space can improve communication: reducing visual clutter, providing hierarchy or helping show a relationship between elements on a screen.',
           },
         ],
       },
-      //
-      // {
-      //   title: 'Overlays',
-      //   page: true,
-      //   id: '/theme/overlays',
-      //   illustration: 'static/theming/theme/overlays.svg',
-      //   description:
-      //     'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
-      // },
-      // {
-      //   title: 'Typography',
-      //   page: true,
-      //   id: '/theme/fonts',
-      //   illustration: 'static/theming/theme/typography.svg',
-      //   description:
-      //     'Fonts define the font family, boldness, size, and the style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
-      // },
       {
         title: 'Presets',
         id: '/theme/presets',
@@ -805,6 +788,14 @@ export default [
             id: '/patterns/forms/overview',
             description: 'Forms are used to collect customer’s data.',
             illustration: 'patterns/forms/overview/hero',
+          },
+          {
+            title: 'Best practice',
+            page: true,
+            id: '/patterns/forms/best-practice',
+            description:
+              'Help users to fill in forms quickly and accurately by following these industry best practices.',
+            illustration: 'patterns/forms/best-practice/hero',
           },
         ],
       },

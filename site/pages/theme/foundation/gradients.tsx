@@ -1,15 +1,15 @@
 import React from 'react';
-import {getTokenType} from '../../utils/get-token-type';
+import {getTokenType} from '../../../utils/get-token-type';
 import {
   ContentPrimary,
   ContentSection,
-} from '../../components/content-structure';
-import {FoundationPageTemplate} from '../../templates/foundation-page-template';
-import {LayoutProps} from '../../components/layout';
-import {ComponentPageCell} from '../../components/layout-cells';
-import {TableRow} from '../../components/table';
-import {newskitLightTheme} from '../../../src/theme';
-import {TabsWithTable} from '../../components/tabs-with-table';
+} from '../../../components/content-structure';
+import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
+import {LayoutProps} from '../../../components/layout';
+import {ComponentPageCell} from '../../../components/layout-cells';
+import {TableRow} from '../../../components/table';
+import {newskitLightTheme} from '../../../../src/theme';
+import {TabsWithTable} from '../../../components/tabs-with-table';
 
 const themeGradientRows = (tokenTypes: string[]) => {
   const tokens = getTokenType(newskitLightTheme.overlays, '');
