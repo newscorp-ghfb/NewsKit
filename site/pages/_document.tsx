@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import Document, {Head, Main, NextScript, Html} from 'next/document';
-import {Consent, Global, css, Tealium} from 'newskit';
+import {Global, css, Consent, Tealium} from 'newskit';
 import Helmet from 'react-helmet';
 import {HTMLMeta} from '../components/html-meta';
 
@@ -36,9 +36,10 @@ export default class MyDocument extends Document {
           {helmet.script.toComponent()}
           <HTMLMeta />
           <Consent
-            sourcePointConfigNonTCFV1={{
+            sourcePointConfigUnified={{
               accountId: 259,
               propertyHref: 'https://newskit.co.uk',
+              gdpr: {},
             }}
             reactHelmet={Helmet}
           />

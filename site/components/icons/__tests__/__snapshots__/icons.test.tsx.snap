@@ -1,5 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Icons IconExpandLess icon renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<svg
+    aria-hidden="true"
+    class="emotion-0"
+    fill="currentColor"
+    height="24px"
+    viewBox="0 0 24 24"
+    width="24px"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 0h24v24H0V0z"
+      fill="none"
+    />
+    <path
+      d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Icons IconExpandMore icon renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<svg
+    aria-hidden="true"
+    class="emotion-0"
+    fill="currentColor"
+    height="24px"
+    viewBox="0 0 24 24"
+    width="24px"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M24 24H0V0h24v24z"
+      fill="none"
+      opacity=".87"
+    />
+    <path
+      d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
 exports[`Icons IconFilledAA icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {

@@ -31,6 +31,7 @@ export const BaseCard = React.forwardRef<HTMLDivElement, BaseCardProps>(
         {title && (
           <Block spaceStack="space045">
             <Headline
+              headingAs="h3"
               overrides={{
                 typographyPreset: 'editorialHeadline020',
                 heading: {

@@ -129,6 +129,22 @@ describe('Modal', () => {
     });
     expect(asFragment()).toMatchSnapshot();
   });
+
+  test('renders with logical padding props', () => {
+    const {asFragment} = renderWithThemeInBody(Modal, {
+      open: true,
+      header: modalHeader,
+      children: modalBody,
+      onDismiss: () => {},
+      overrides: {
+        panel: {
+          paddingInline: '15px',
+          paddingBlock: '30px',
+        },
+      },
+    });
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
 
 describe('Modal focus management', () => {

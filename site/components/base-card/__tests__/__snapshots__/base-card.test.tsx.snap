@@ -111,11 +111,11 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
           <section
             class="emotion-4"
           >
-            <h1
+            <h3
               class="nk-headline-heading emotion-5"
             >
               Non-interactive Vertical Card
-            </h1>
+            </h3>
           </section>
         </div>
         <p
@@ -309,11 +309,11 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
             <section
               class="emotion-5"
             >
-              <h1
+              <h3
                 class="nk-headline-heading emotion-6"
               >
                 Interactive Horizontal Card
-              </h1>
+              </h3>
             </section>
           </a>
         </div>
@@ -452,11 +452,11 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
           <section
             class="emotion-4"
           >
-            <h1
+            <h3
               class="nk-headline-heading emotion-5"
             >
               Non-interactive Horizontal Card
-            </h1>
+            </h3>
           </section>
         </div>
         <p
@@ -637,11 +637,11 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
             <section
               class="emotion-5"
             >
-              <h1
+              <h3
                 class="nk-headline-heading emotion-6"
               >
                 Interactive Horizontal Card
-              </h1>
+              </h3>
             </section>
           </a>
         </div>

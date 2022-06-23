@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import Prop from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
-
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 import {OrderedList} from 'newskit';
 
 export default Layout;
@@ -45,6 +45,7 @@ An ordered list can be used to produce a list of related content prefixed with i
         If provided, overrides the "sizing" token which defines the distance between counter and list content.
       </Prop>
     </Prop>
+    <CommonLogicalPropsMDX nested/>
   </Prop>
 </LegacyBlock>
 

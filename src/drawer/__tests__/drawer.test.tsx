@@ -1,7 +1,12 @@
 import {cleanup, fireEvent, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import React, {useRef, useState} from 'react';
-import {createTheme} from '../../theme';
+import {
+  createTheme,
+  newskitDarkTheme,
+  newskitLightTheme,
+  ThemeProvider,
+} from '../../theme';
 import {Drawer, DrawerProps} from '..';
 import {TextBlock} from '../../text-block';
 import {sharedDialogTests} from '../../dialog/base-dialog-tests';
@@ -9,12 +14,65 @@ import {
   renderToFragmentInBody,
   renderWithThemeInBody,
 } from '../../test/test-utils';
+import {Button} from '../../button';
 
 const drawerBody = <TextBlock>Drawer body content</TextBlock>;
 const drawerHeader = <TextBlock>Drawer header content</TextBlock>;
 
 describe('Drawer', () => {
   sharedDialogTests(Drawer, drawerHeader, drawerBody);
+
+  test('drawer remains open when theme is toggled', async () => {
+    const DrawerPage = () => {
+      const [isActive, setIsActive] = React.useState(false);
+      const [themeMode, setThemeMode] = React.useState('light');
+
+      const toggleTheme = () => {
+        if (themeMode === 'light') {
+          setThemeMode('dark');
+        } else {
+          setThemeMode('light');
+        }
+      };
+
+      const open = () => setIsActive(true);
+      const close = () => setIsActive(false);
+      return (
+        <ThemeProvider
+          theme={themeMode === 'light' ? newskitLightTheme : newskitDarkTheme}
+        >
+          theme is: {themeMode}
+          <Button onClick={open} data-testid="drawer-open-button">
+            Open Drawer
+          </Button>
+          <Drawer
+            aria-label="Drawer example"
+            open={isActive}
+            onDismiss={close}
+            placement="left"
+            header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          >
+            <Button
+              onClick={toggleTheme}
+              data-testid="toggle-theme-drawer-button"
+            >
+              Toggle theme
+            </Button>
+          </Drawer>
+        </ThemeProvider>
+      );
+    };
+    const {findByTestId, getByTestId} = renderWithThemeInBody(DrawerPage);
+    const openDrawerButton = getByTestId('drawer-open-button');
+    fireEvent.click(openDrawerButton);
+    await waitFor(async () => {
+      const toggleThemeButton = await findByTestId(
+        'toggle-theme-drawer-button',
+      );
+      fireEvent.click(toggleThemeButton);
+    });
+    expect(getByTestId('drawer')).toHaveClass('nk-drawer-enter-done');
+  });
 
   test.each(['right', 'top', 'bottom'])(
     'renders with menu items aligned at the %s',

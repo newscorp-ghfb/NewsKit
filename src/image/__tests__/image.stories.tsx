@@ -301,3 +301,24 @@ export const StoryImageWithSourcesAndMedia = () => {
 };
 StoryImageWithSourcesAndMedia.storyName =
   'image-with-sources-using-media-query';
+
+export const StoryImageWithLogicalProps = () => (
+  <>
+    <Container>
+      <StorybookHeading>300px by 200px</StorybookHeading>
+      <Image
+        src="/placeholder-3x2.png"
+        alt="Example Image"
+        overrides={{
+          width: '100px',
+          height: '100px',
+          marginInline: '25px',
+          marginBlock: '50px',
+        }}
+        placeholderIcon
+      />
+    </Container>
+  </>
+);
+
+StoryImageWithLogicalProps.storyName = 'image-with-logical-props';

@@ -25,4 +25,21 @@ describe('Headings', () => {
     } as Headings.HeadingOverrides);
     expect(wrapper).toMatchSnapshot();
   });
+
+  test.each(HeadingsKeys)(
+    'renders %s correctly with logical props',
+    current => {
+      const Component = Headings[current];
+      const wrapper = renderToFragmentWithTheme(Component, {
+        children: 'A Heading',
+        overrides: {
+          paddingInline: 'space020',
+          paddingBlock: 'space040',
+          marginBlock: 'space060',
+          marginInline: 'space080',
+        },
+      } as Headings.HeadingOverrides);
+      expect(wrapper).toMatchSnapshot();
+    },
+  );
 });

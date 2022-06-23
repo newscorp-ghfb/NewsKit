@@ -60,4 +60,20 @@ describe('OrderedList', () => {
     );
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders with logical props', () => {
+    const props = {
+      children: ['first node', 'second node', 'third node'],
+      overrides: {
+        paddingInline: '30px',
+        marginBlock: '30px',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(
+      OrderedList,
+      props,
+      myCustomTheme,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
 });

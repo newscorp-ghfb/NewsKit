@@ -14,6 +14,7 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {Layer} from '../layer';
+import {getTransitionClassName} from '../utils/get-transition-class-name';
 
 const ThemelessDrawer: React.FC<DrawerProps> = ({
   children,
@@ -74,22 +75,25 @@ const ThemelessDrawer: React.FC<DrawerProps> = ({
             classNames="nk-drawer"
             appear
           >
-            <StyledDrawer
-              aria-hidden={!open}
-              open={open}
-              disableFocusTrap={disableFocusTrap}
-              handleCloseButtonClick={handleCloseButtonClick}
-              path={drawerPath}
-              data-testid={drawerPath}
-              placement={placement}
-              closePosition={closePosition}
-              overrides={overrides}
-              ref={drawerRef}
-              inline={inline}
-              {...props}
-            >
-              {children}
-            </StyledDrawer>
+            {state => (
+              <StyledDrawer
+                aria-hidden={!open}
+                className={getTransitionClassName('nk-drawer', state)}
+                open={open}
+                disableFocusTrap={disableFocusTrap}
+                handleCloseButtonClick={handleCloseButtonClick}
+                path={drawerPath}
+                data-testid={drawerPath}
+                placement={placement}
+                closePosition={closePosition}
+                overrides={overrides}
+                ref={drawerRef}
+                inline={inline}
+                {...props}
+              >
+                {children}
+              </StyledDrawer>
+            )}
           </CSSTransition>
         )}
       </BaseDialogFunction>

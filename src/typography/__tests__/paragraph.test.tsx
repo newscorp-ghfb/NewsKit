@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Paragraph,
   P,
@@ -27,6 +28,19 @@ describe('Paragraph', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  test('renders Paragraph with logical props', () => {
+    const wrapper = renderToFragmentWithTheme(Paragraph, {
+      children: 'paragraph component',
+      overrides: {
+        paddingInline: 'space020',
+        paddingBlock: 'space040',
+        marginBlock: 'space060',
+        marginInline: 'space080',
+      },
+    });
+    expect(wrapper).toMatchSnapshot();
+  });
+
   test('renders empty Paragraph with dropCap without crashing ', () => {
     const wrapper = renderToFragmentWithTheme(Paragraph, {
       children: undefined,
@@ -38,6 +52,30 @@ describe('Paragraph', () => {
   test('renders with drop cap', () => {
     const wrapper = renderToFragmentWithTheme(Paragraph, {
       children: 'paragraph component',
+      dropCap: true,
+    } as ParagraphProps);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  test('renders with drop cap and complex children', () => {
+    const wrapper = renderToFragmentWithTheme(Paragraph, {
+      children: (
+        <>
+          paragraph <b>component</b> with <a href="/">link</a>
+        </>
+      ),
+      dropCap: true,
+    } as ParagraphProps);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  test('does not render dropCap when first children is not plain text', () => {
+    const wrapper = renderToFragmentWithTheme(Paragraph, {
+      children: (
+        <>
+          <b>paragraph</b> component
+        </>
+      ),
       dropCap: true,
     } as ParagraphProps);
     expect(wrapper).toMatchSnapshot();

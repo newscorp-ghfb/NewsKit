@@ -38,6 +38,7 @@ export default [
         title: 'Getting started',
         page: true,
         id: '/getting-started/overview',
+        indexPage: true,
       },
       {
         title: 'Design',
@@ -115,102 +116,109 @@ export default [
         title: 'Overview',
         page: true,
         id: '/theme/overview',
+        indexPage: true,
       },
       {
-        title: 'Borders',
-        page: true,
-        id: '/theme/borders',
-        description:
-          'Borders direct attention, identify components, communicate state, and express a brand.',
-        illustration: 'theme/hero-borders-illustration',
+        title: 'Foundations',
+        id: '/theme/foundation',
+        subNav: [
+          {
+            title: 'Breakpoints',
+            page: true,
+            id: '/theme/foundation/breakpoints',
+            illustration: 'theme/breakpoints/hero',
+            description:
+              'Breakpoints set a visual point on a screen to alter the layout of content (responsive design), ensuring consistency across different screen widths.',
+          },
+          {
+            title: 'Colours',
+            page: true,
+            id: '/theme/foundation/colours',
+            illustration: 'theme/colours/hero',
+            description:
+              'Colour is key to expressing brand and identity, but it also plays a vital role in conveying specific meaning to a user.',
+          },
+          {
+            title: 'Design tokens',
+            page: true,
+            id: '/theme/foundation/design-tokens',
+            illustration: 'theme/design-tokens/hero',
+            description: `Design tokens are the design decisions of the design system. They are used in place of hard-coded values to maintain a scalable and consistent system for UI.`,
+          },
+          {
+            title: 'Fonts',
+            page: true,
+            id: '/theme/foundation/fonts',
+            illustration: 'theme/fonts/hero',
+            description:
+              'Fonts define the font family, boldness, size, and style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
+          },
+          {
+            title: 'Gradients',
+            page: true,
+            id: '/theme/foundation/gradients',
+            illustration: 'theme/gradients/hero',
+            description:
+              'Gradients is a visual representation of a colour. It is used to convey meaning and communicate a brand.',
+          },
+          {
+            title: 'Iconography',
+            page: true,
+            id: '/theme/foundation/iconography',
+            illustration: 'theme/iconography/hero',
+            description:
+              'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
+          },
+          {
+            title: 'Motion',
+            page: true,
+            id: '/theme/foundation/motion',
+            illustration: 'theme/motion/hero',
+            description:
+              'Motion is used to create movement and narrative within a product. Timely animated interface elements attract attention, provide guidance and enhance user experience.',
+          },
+          {
+            title: 'Opacity',
+            page: true,
+            id: '/theme/foundation/opacity',
+            illustration: 'theme/opacity/hero',
+            description:
+              'Opacity is used to create a visual layer between elements.',
+          },
+          {
+            title: 'Overlays',
+            page: true,
+            id: '/theme/foundation/overlays',
+            illustration: 'theme/overlays/hero',
+            description:
+              'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
+          },
+          {
+            title: 'Shadows',
+            page: true,
+            id: '/theme/foundation/shadows',
+            illustration: 'components/hero-shadows-illustration',
+            description:
+              'Shadows provide visual cues about the distance between layers. They add levels of depth and realism to the user’s visual experience and improve the UI visual hierarchy.',
+          },
+          {
+            title: 'Sizing',
+            page: true,
+            id: '/theme/foundation/sizing',
+            illustration: 'components/hero-sizing-illustration',
+            description:
+              'A simple, standardised approach to size increases consistency and visual rhythm. Appropriate sizing is important for providing an inclusive experience.',
+          },
+          {
+            title: 'Spacing',
+            page: true,
+            id: '/theme/foundation/spacing',
+            illustration: 'theme/spacing/hero',
+            description:
+              'Considered use of space can improve communication: reducing visual clutter, providing hierarchy or helping show a relationship between elements on a screen.',
+          },
+        ],
       },
-      {
-        title: 'Breakpoints',
-        page: true,
-        id: '/theme/breakpoints',
-        illustration: 'theme/breakpoints/hero',
-        description:
-          'Breakpoints set a visual point on a screen to alter the layout of content (responsive design), ensuring consistency across different screen widths.',
-      },
-      {
-        title: 'Colours',
-        page: true,
-        id: '/theme/colours',
-        illustration: 'theme/colours/hero',
-        description:
-          'Colour is key to expressing brand and identity, but it also plays a vital role in conveying specific meaning to a user.',
-      },
-      {
-        title: 'Design tokens',
-        page: true,
-        id: '/theme/design-tokens',
-        illustration: 'theme/design-tokens/hero',
-        description: `Design tokens are the design decisions of the design system. They are used in place of hard-coded values to maintain a scalable and consistent system for UI.`,
-      },
-      {
-        title: 'Fonts',
-        page: true,
-        id: '/theme/fonts',
-        illustration: 'theme/fonts/hero',
-        description:
-          'Fonts define the font family, boldness, size, and style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
-      },
-      {
-        title: 'Iconography',
-        page: true,
-        id: '/theme/iconography',
-        illustration: 'theme/iconography/hero',
-        description:
-          'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
-      },
-      {
-        title: 'Motion',
-        page: true,
-        id: '/theme/motion',
-        illustration: 'theme/motion/hero',
-        description:
-          'Motion is used to create movement and narrative within a product. Timely animated interface elements attract attention, provide guidance and enhance user experience.',
-      },
-      {
-        title: 'Shadows',
-        page: true,
-        id: '/theme/shadows',
-        illustration: 'components/hero-shadows-illustration',
-        description:
-          'Shadows provide visual cues about the distance between layers. They add levels of depth and realism to the user’s visual experience and improve the UI visual hierarchy.',
-      },
-      {
-        title: 'Sizing',
-        page: true,
-        id: '/theme/sizing',
-        illustration: 'components/hero-sizing-illustration',
-        description:
-          'A simple, standardised approach to size increases consistency and visual rhythm. Appropriate sizing is important for providing an inclusive experience.',
-      },
-      {
-        title: 'Spacing',
-        page: true,
-        id: '/theme/spacing',
-        illustration: 'theme/spacing/hero',
-        description:
-          'Considered use of space can improve communication: reducing visual clutter, providing hierarchy or helping show a relationship between elements on a screen.',
-      },
-      // {
-      //   title: 'Overlays',
-      //   page: true,
-      //   id: '/theme/overlays',
-      //   illustration: 'static/theming/theme/overlays.svg',
-      //   description:
-      //     'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
-      // },
-      // {
-      //   title: 'Typography',
-      //   page: true,
-      //   id: '/theme/fonts',
-      //   illustration: 'static/theming/theme/typography.svg',
-      //   description:
-      //     'Fonts define the font family, boldness, size, and the style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
-      // },
       {
         title: 'Presets',
         id: '/theme/presets',
@@ -288,6 +296,7 @@ export default [
         title: 'Overview',
         page: true,
         id: '/components/overview',
+        indexPage: true,
       },
       {
         title: 'Actions & Inputs',
@@ -506,8 +515,8 @@ export default [
             page: true,
             id: '/components/structured-list',
             description:
-              'Structured lists group content that is similar or related.',
-            illustration: 'components/standfirst-illustration',
+              'The Structured List is a layout component that groups similar or related content.',
+            illustration: 'components/structured-list/hero',
           },
           {
             title: 'Visibility',
@@ -757,16 +766,53 @@ export default [
       },
     ],
   },
-  // ToDo: At least one pattern page should be ready to enable this nav link .
-  // {
-  //   title: 'Patterns',
-  //   id: '/patterns',
-  //   subNav: [
-  //     {
-  //       title: 'Overview',
-  //       page: true,
-  //       id: '/patterns/overview',
-  //     },
-  //   ],
-  // },
+  {
+    title: 'Patterns',
+    id: '/patterns',
+    subNav: [
+      {
+        title: 'Overview',
+        page: true,
+        id: '/patterns/overview',
+        indexPage: true,
+        description:
+          'Design patterns provide a framework for solving a particular user problem in a consistent, considered way.',
+      },
+      {
+        title: 'Forms',
+        id: '/patterns/forms',
+        subNav: [
+          {
+            title: 'Overview',
+            page: true,
+            id: '/patterns/forms/overview',
+            description: 'Forms are used to collect customer’s data.',
+            illustration: 'patterns/forms/overview/hero',
+          },
+          {
+            title: 'Best practice',
+            page: true,
+            id: '/patterns/forms/best-practice',
+            description:
+              'Help users to fill in forms quickly and accurately by following these industry best practices.',
+            illustration: 'patterns/forms/best-practice/hero',
+          },
+          {
+            title: 'Address',
+            page: true,
+            id: '/patterns/forms/address',
+            description: `Use this type of data entry when there are clear business requirements to collect a user's address. Ask for a user’s physical address for delivery or as part of a billing service.`,
+            illustration: 'patterns/forms/address/hero',
+          },
+          {
+            title: 'Date of birth',
+            page: true,
+            id: '/patterns/forms/date-of-birth',
+            description: `Ask for a user’s date of birth when we need to validate the user’s age. This should not be collected unless you have a need for it to validate a user’s age or benefit them in some way.`,
+            illustration: 'patterns/forms/date-of-birth/hero',
+          },
+        ],
+      },
+    ],
+  },
 ];

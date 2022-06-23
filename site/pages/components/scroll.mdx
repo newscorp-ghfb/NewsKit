@@ -6,6 +6,7 @@ import {CodeFromDefaultPresets} from '../../components/code';
 import {Code} from '../../components/code';
 import {InlineCode} from '../../components/markdown-elements';
 import {ScrollSnap, Box} from '../../demo-components/scroll/scroll-snap';
+import {CommonLogicalPropsMDX} from '../../components/component-api/common-logical-props';
 
 import {
   Scroll,
@@ -81,6 +82,7 @@ By adding a scroll component to a block, you can enable the content within the b
          Size of overlays depending on orientation ( width for horizontal, and height for vertical)
         </Prop>
       </Prop>
+      <CommonLogicalPropsMDX nested/>
     </Prop>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="scroll" />

@@ -7,6 +7,7 @@ import {
   renderToFragmentInBody,
   renderWithTheme,
   renderWithThemeInBody,
+  renderToFragmentWithTheme,
 } from '../../test/test-utils';
 import {AssistiveText} from '../../assistive-text';
 import {Label} from '../../label';
@@ -601,5 +602,68 @@ describe('Select', () => {
       expect(queryByTestId('modal')).toBeInTheDocument();
       unmount();
     });
+  });
+
+  test('renders SelectOption with logical props', async () => {
+    const props: SelectProps = {
+      children: [
+        <SelectOption
+          defaultSelected
+          overrides={{paddingInline: '20px', marginBlock: '10px'}}
+          selectedIcon="TEST"
+          value="option 1"
+          key="1"
+        >
+          option 1
+        </SelectOption>,
+        <SelectOption key="2" value="option 2">
+          option 2
+        </SelectOption>,
+      ],
+    };
+
+    const fragment = renderToFragmentWithTheme(Select, props) as any;
+
+    await act(async () => {
+      fireEvent.click(screen.getByTestId('select-button'));
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders Select with logical props', async () => {
+    const props: SelectProps = {
+      overrides: {
+        button: {
+          marginInline: '40px',
+          paddingBlock: '20px',
+        },
+        panel: {
+          paddingInline: '30px',
+          marginBlock: '30px',
+        },
+      },
+      children: [
+        <SelectOption
+          defaultSelected
+          selectedIcon="TEST"
+          value="option 1"
+          key="1"
+        >
+          option 1
+        </SelectOption>,
+        <SelectOption key="2" value="option 2">
+          option 2
+        </SelectOption>,
+      ],
+    };
+
+    const fragment = renderToFragmentWithTheme(Select, props) as any;
+
+    await act(async () => {
+      fireEvent.click(screen.getByTestId('select-button'));
+    });
+
+    expect(fragment).toMatchSnapshot();
   });
 });

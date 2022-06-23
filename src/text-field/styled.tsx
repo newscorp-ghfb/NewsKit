@@ -22,6 +22,7 @@ export const StyledInput = styled.input<
   ::placeholder {
     color: ${({placeholderColor}) => placeholderColor && placeholderColor};
   }
+  // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
   ${({$size}) =>
     getResponsiveSpace('padding', `textField.${$size}`, '', 'spaceInset')}
 `;

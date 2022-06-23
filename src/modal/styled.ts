@@ -3,6 +3,7 @@ import {ModalProps} from './types';
 import {styled, getStylePreset, getResponsiveSize} from '../utils/style';
 import {getMediaQueryFromTheme} from '../utils';
 import {getTransitionPreset} from '../utils/style/transition-preset';
+import {logicalProps} from '../utils/logical-properties';
 
 type ModalPanelProps = Pick<ModalProps, 'overrides' | 'open'>;
 
@@ -42,4 +43,6 @@ export const StyledModal = styled(BaseDialogView)<ModalPanelProps>`
   ${getResponsiveSize('maxHeight', 'modal.panel', 'panel', 'maxHeight')};
 
   ${getTransitionPreset(`modal.panel`, 'panel', 'nk-modal')};
+
+  ${logicalProps('modal.panel', 'panel')}
 `;

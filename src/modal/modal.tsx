@@ -13,6 +13,7 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {Layer} from '../layer';
+import {getTransitionClassName} from '../utils/get-transition-class-name';
 
 const ThemelessModal: React.FC<ModalProps> = ({
   children,
@@ -76,18 +77,21 @@ const ThemelessModal: React.FC<ModalProps> = ({
               onEnter={() => setShowWrapper(true)}
               onExited={() => setShowWrapper(false)}
             >
-              <StyledModal
-                open={open}
-                disableFocusTrap={disableFocusTrap}
-                handleCloseButtonClick={handleCloseButtonClick}
-                path="modal"
-                data-testid="modal"
-                closePosition={closePosition}
-                overrides={overrides}
-                {...props}
-              >
-                {children}
-              </StyledModal>
+              {state => (
+                <StyledModal
+                  open={open}
+                  className={getTransitionClassName('nk-modal', state)}
+                  disableFocusTrap={disableFocusTrap}
+                  handleCloseButtonClick={handleCloseButtonClick}
+                  path="modal"
+                  data-testid="modal"
+                  closePosition={closePosition}
+                  overrides={overrides}
+                  {...props}
+                >
+                  {children}
+                </StyledModal>
+              )}
             </CSSTransition>
           </StyledModalWrapper>
         )}

@@ -1,6 +1,7 @@
 import {getResponsiveSize, getStylePreset, styled} from '../utils/style';
 import {StyledPictureProps, StyledImageProps} from './types';
 import {getResponsiveAspectRatioFromProps} from './utils';
+import {logicalProps} from '../utils/logical-properties';
 
 export const StyledPicture = styled.picture<StyledPictureProps>`
   position: relative;
@@ -18,6 +19,8 @@ export const StyledPicture = styled.picture<StyledPictureProps>`
         : {paddingTop, height: 0, width};
     })}
   ${({isLoading, ...props}) => getStylePreset('image', '', {isLoading})(props)}
+
+  ${logicalProps()}
 `;
 
 export const StyledImage = styled.img<StyledImageProps>`

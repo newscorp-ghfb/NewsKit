@@ -1,5 +1,6 @@
 Cypress.Commands.add('mockConsentAndVisit', url => {
-  cy.intercept('GET', '**/wrapper/tcfv2/v1/gdpr/**', 'fx:consent-request');
+  cy.setCookie('nukt_sp_consent', 'JABCDEFGHI');
+  cy.setCookie('consentUUID', '0714192a-0776-4b78-b462-41dde53d35e8_7');
   cy.visit(url);
 });
 

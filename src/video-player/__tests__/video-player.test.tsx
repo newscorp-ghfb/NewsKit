@@ -91,4 +91,21 @@ describe('Video Player', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
+
+  test(`renders video player with logical props`, () => {
+    const {asFragment} = renderWithTheme(
+      VideoPlayer,
+      {
+        config: DEFATULT_VIDEO_PLAYER_CONFIG,
+        overrides: {
+          paddingInline: 'space020',
+          paddingBlock: 'space040',
+          marginBlock: 'space060',
+          marginInline: 'space080',
+        },
+      },
+      myCustomTheme,
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
 });

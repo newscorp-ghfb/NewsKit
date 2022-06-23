@@ -1,5 +1,7 @@
 import React, {ComponentType} from 'react';
+
 import {
+  act,
   render as renderer,
   RenderOptions,
   RenderResult,
@@ -133,4 +135,11 @@ export const renderToFragmentInBody = <T extends {}>(
   const {asFragment} = renderWithThemeInBody(Component, props, theme);
   const fragment = asFragment();
   return fragment;
+};
+// The @floating-ui lib's inset styling is applied asynchronously. To make
+// assertions on the top / left attribute values, we need to flush the queue to
+// ensure that the element has been positioned before making assertions on
+// snapshots. See https://floating-ui.com/docs/react-dom#testing for more info.
+export const applyAsyncStyling = async () => {
+  await act(async () => {});
 };

@@ -3,6 +3,7 @@
 exports[`index exports all expected functions and components are exported 1`] = `
 Array [
   "A",
+  "Accordion",
   "AlignSelfValues",
   "AspectRatio",
   "AssistiveText",
@@ -16,6 +17,7 @@ Array [
   "AudioPlayerSkipNextButton",
   "AudioPlayerSkipPreviousButton",
   "AudioPlayerTimeDisplay",
+  "AudioPlayerVolumeControl",
   "Banner",
   "Block",
   "Button",
@@ -117,6 +119,7 @@ Array [
   "Sup",
   "Superscript",
   "Svg",
+  "Switch",
   "Tab",
   "TabAlign",
   "TabSize",
@@ -136,6 +139,7 @@ Array [
   "TitleBar",
   "Toast",
   "ToastProvider",
+  "Tooltip",
   "UnorderedList",
   "VideoPlayer",
   "Visible",
