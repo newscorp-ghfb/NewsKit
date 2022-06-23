@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {useRef, useState} from 'react';
+import {CSSProperties, useRef, useState} from 'react';
 import {Placement} from '@floating-ui/react-dom-interactions';
 import {Button, ButtonSize} from '../../button';
 import {StorybookSubHeading} from '../../test/storybook-comps';
@@ -85,14 +85,9 @@ const StyledPage = styled.div`
 const StyledContainer = styled.div`
   border: 1px solid red;
   background-color: #f7f7f7;
-  height: 125px;
-  width: 200px;
+  height: 220px;
+  width: 320px;
   padding: 5px;
-`;
-
-const StyledScrollParent = styled(StyledContainer)`
-  height: 200px;
-  width: 300px;
   overflow: scroll;
 `;
 
@@ -103,13 +98,18 @@ const StyledScrollChild = styled.div<{visualTest?: boolean}>`
     visualTest
       ? {}
       : {
-          paddingTop: '95px',
-          paddingLeft: '115px',
+          paddingTop: '180px',
+          paddingLeft: '140px',
         }}
 `;
 
-const PopoverWithBtn = (props: Omit<PopoverProps, 'children'>) => (
-  <Popover {...props}>
+const PopoverWithBtn = (props: Partial<Omit<PopoverProps, 'children'>>) => (
+  <Popover
+    header="Popover header"
+    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    overrides={{maxWidth: '250px'}}
+    {...props}
+  >
     <IconButton
       aria-label="info-icon"
       size={ButtonSize.Small}
@@ -120,19 +120,45 @@ const PopoverWithBtn = (props: Omit<PopoverProps, 'children'>) => (
   </Popover>
 );
 
+// Force a state to make sure useRef updates once the element renders.
+function useUpdatedRef<T>(initialValue: T | null) {
+  const boundaryRef = useRef<T>(initialValue);
+  const [, setX] = useState(false);
+  setTimeout(() => setX(true), 0);
+  return boundaryRef;
+}
+
+// Make sure Popovers in stories remain in their containers to prevent the page
+// getting cluttered by adding a boundary and disabling fallback behaviours.
+const BoundedPopover = ({
+  containerStyle,
+  ...popoverProps
+}: Partial<Omit<PopoverProps, 'children'>> & {
+  containerStyle?: CSSProperties;
+}) => {
+  const boundaryRef = useUpdatedRef<HTMLDivElement>(null);
+  return (
+    <StyledContainer ref={boundaryRef} style={containerStyle}>
+      <PopoverWithBtn
+        boundary={boundaryRef.current || undefined}
+        fallbackBehaviour={[]}
+        {...popoverProps}
+      />
+    </StyledContainer>
+  );
+};
+
 const PopoverPlacements = ({open}: {open?: boolean}) => (
   <StyledPage>
     <GridLayout columns={{xs: 'repeat(3, minmax(0, 1fr))'}} rowGap="20px">
       {placements.map(placement => (
         <div key={placement}>
           <StorybookSubHeading>Popover - {placement}</StorybookSubHeading>
-          <StyledContainer style={getPlacementStyling(placement)}>
-            <PopoverWithBtn
-              open={open}
-              content="Popover content"
-              placement={placement}
-            />
-          </StyledContainer>
+          <BoundedPopover
+            containerStyle={getPlacementStyling(placement)}
+            open={open}
+            placement={placement}
+          />
         </div>
       ))}
     </GridLayout>
@@ -143,35 +169,29 @@ const PopoverStyleOverrides = ({open}: {open?: boolean}) => (
   <ThemeProvider theme={myCustomTheme}>
     <StyledPage>
       <StorybookSubHeading>Popover - style overrides</StorybookSubHeading>
-      <StyledContainer style={getPlacementStyling('top')}>
-        <PopoverWithBtn
-          open={open}
-          content="Popover content"
-          overrides={{
-            stylePreset: 'popoverCustom',
-            pointer: {
-              stylePreset: 'popoverPointerCustom',
-            },
-            panel: {
-              stylePreset: 'popoverPanelCustom',
-            },
-          }}
-        />
-      </StyledContainer>
+      <BoundedPopover
+        containerStyle={getPlacementStyling('top')}
+        open={open}
+        overrides={{
+          maxWidth: '250px',
+          stylePreset: 'popoverCustom',
+          pointer: {
+            stylePreset: 'popoverPointerCustom',
+          },
+          panel: {
+            stylePreset: 'popoverPanelCustom',
+          },
+        }}
+      />
     </StyledPage>
   </ThemeProvider>
 );
 
-const PopoverWithBoundary = ({
+const BoundedPopoverWithOverflow = ({
   fallbackBehaviour,
   open,
 }: Pick<PopoverProps, 'open' | 'fallbackBehaviour'>) => {
-  const boundaryRef = useRef<HTMLDivElement>(null);
-
-  // need to force a state update because useRef does not
-  const [, setX] = useState(false);
-  setTimeout(() => setX(true), 0);
-
+  const boundaryRef = useUpdatedRef<HTMLDivElement>(null);
   return (
     <>
       <StorybookSubHeading>
@@ -180,7 +200,7 @@ const PopoverWithBoundary = ({
           ? fallbackBehaviour
           : `${(fallbackBehaviour || []).join(', ')}`}
       </StorybookSubHeading>
-      <StyledScrollParent ref={boundaryRef}>
+      <StyledContainer ref={boundaryRef}>
         <StyledScrollChild visualTest={open}>
           <PopoverWithBtn
             open={open}
@@ -190,7 +210,7 @@ const PopoverWithBoundary = ({
             boundary={boundaryRef.current || undefined}
           />
         </StyledScrollChild>
-      </StyledScrollParent>
+      </StyledContainer>
     </>
   );
 };
@@ -198,9 +218,12 @@ const PopoverWithBoundary = ({
 const PopoverBehaviours = ({open}: {open?: boolean}) => (
   <StyledPage>
     <GridLayout columns={{xs: 'repeat(1, minmax(0, 1fr))'}} rowGap="20px">
-      <PopoverWithBoundary open={open} fallbackBehaviour={['flip']} />
-      <PopoverWithBoundary open={open} fallbackBehaviour={['shift']} />
-      <PopoverWithBoundary open={open} fallbackBehaviour={['flip', 'shift']} />
+      <BoundedPopoverWithOverflow open={open} fallbackBehaviour={['flip']} />
+      <BoundedPopoverWithOverflow open={open} fallbackBehaviour={['shift']} />
+      <BoundedPopoverWithOverflow
+        open={open}
+        fallbackBehaviour={['flip', 'shift']}
+      />
     </GridLayout>
   </StyledPage>
 );
@@ -210,58 +233,51 @@ export const StoryPopoverDefault = () => (
     <GridLayout columns={{xs: 'repeat(1, minmax(0, 1fr))'}} rowGap="20px">
       <div>
         <StorybookSubHeading>String content</StorybookSubHeading>
-        <StyledContainer style={getPlacementStyling('top')}>
-          <PopoverWithBtn content="Popover content" />
-        </StyledContainer>
+        <BoundedPopover containerStyle={getPlacementStyling('top')} />
       </div>
       <div>
         <StorybookSubHeading>Interactive content</StorybookSubHeading>
-        <StyledContainer style={getPlacementStyling('top')}>
-          <PopoverWithBtn
-            content={
-              <Button
-                size="small"
-                onClick={() => {
-                  // eslint-disable-next-line no-alert
-                  alert('Button clicked');
-                }}
-              >
-                Click me
-              </Button>
-            }
-          />
-        </StyledContainer>
+        <BoundedPopover
+          containerStyle={getPlacementStyling('top')}
+          content={
+            <Button
+              size="small"
+              onClick={() => {
+                // eslint-disable-next-line no-alert
+                alert('Button clicked');
+              }}
+              style={{width: '100%'}}
+            >
+              Click me
+            </Button>
+          }
+        />
       </div>
       <div>
         <StorybookSubHeading>No pointer</StorybookSubHeading>
-        <StyledContainer style={getPlacementStyling('top')}>
-          <PopoverWithBtn content="Popover content" hidePointer />
-        </StyledContainer>
+        <BoundedPopover
+          containerStyle={getPlacementStyling('top')}
+          hidePointer
+        />
       </div>
       <GridLayout columns={{xs: 'repeat(3, minmax(0, 1fr))'}}>
         <div>
           <StorybookSubHeading>Default distance</StorybookSubHeading>
-          <StyledContainer style={getPlacementStyling('top')}>
-            <PopoverWithBtn content="Popover content" />
-          </StyledContainer>
+          <BoundedPopover containerStyle={getPlacementStyling('top')} />
         </div>
         <div>
           <StorybookSubHeading>Increased distance</StorybookSubHeading>
-          <StyledContainer style={getPlacementStyling('top')}>
-            <PopoverWithBtn
-              content="Popover content"
-              overrides={{distance: 'space070'}}
-            />
-          </StyledContainer>
+          <BoundedPopover
+            containerStyle={getPlacementStyling('top')}
+            overrides={{distance: 'space070', maxWidth: '250px'}}
+          />
         </div>
         <div>
           <StorybookSubHeading>Decreased distance</StorybookSubHeading>
-          <StyledContainer style={getPlacementStyling('top')}>
-            <PopoverWithBtn
-              content="Popover content"
-              overrides={{distance: 'space030'}}
-            />
-          </StyledContainer>
+          <BoundedPopover
+            containerStyle={getPlacementStyling('top')}
+            overrides={{distance: 'space030', maxWidth: '250px'}}
+          />
         </div>
       </GridLayout>
     </GridLayout>

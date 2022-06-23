@@ -88,6 +88,10 @@ describe('Popover', () => {
               stylePreset: 'popoverPanelCustom',
               typographyPreset: 'utilityLabel020',
             },
+            content: {
+              paddingBlock: 'space040',
+              paddingInline: 'space020',
+            },
           },
         },
         myCustomTheme,
@@ -517,7 +521,7 @@ describe('Popover', () => {
       const input2 = getByTestId('input2');
       expect(input2).toHaveFocus();
     });
-    test('shifts to elements outside popover after elements within popover', () => {
+    test('shifts to close button then to elements outside popover after elements within popover', () => {
       const Component = () => (
         <>
           <Popover
@@ -539,6 +543,9 @@ describe('Popover', () => {
       userEvent.tab();
       const input1 = getByTestId('input1');
       expect(input1).toHaveFocus();
+      userEvent.tab();
+      const closeBtn = getByTestId('close-button');
+      expect(closeBtn).toHaveFocus();
       userEvent.tab();
       const input2 = getByTestId('input2');
       expect(input2).toHaveFocus();
@@ -585,6 +592,168 @@ describe('Popover', () => {
 
       const restoreFocus = getByTestId('restoreFocus');
       expect(restoreFocus).toHaveFocus();
+    });
+  });
+
+  describe('header', () => {
+    test('should show if passed', () => {
+      const {getByRole, queryByTestId} = renderWithTheme(Popover, {
+        ...defaultProps,
+        header: 'header value',
+      });
+      fireEvent.click(getByRole('button'));
+      const headerText = queryByTestId('header-text');
+      expect(headerText).toHaveTextContent('header value');
+    });
+    test('should not show if not passed', () => {
+      const {getByRole, queryByTestId} = renderWithTheme(Popover, {
+        ...defaultProps,
+        header: undefined,
+      });
+      fireEvent.click(getByRole('button'));
+      const headerText = queryByTestId('header-text');
+      expect(headerText).not.toBeInTheDocument();
+    });
+    test('applies stylePreset overrides', async () => {
+      const myCustomTheme = createTheme({
+        name: 'my-custom-popover-theme',
+        overrides: {
+          stylePresets: {
+            popoverHeaderCustom: {
+              base: {
+                borderColor: '{{colors.red080}}',
+                borderStyle: 'solid',
+                borderWidth: '{{borders.borderWidth020}}',
+              },
+            },
+          },
+        },
+      });
+      const {asFragment, getByRole} = renderWithTheme(
+        Popover,
+        {
+          ...defaultProps,
+          header: 'header value',
+          overrides: {
+            pointer: {
+              stylePreset: 'popoverHeaderCustom',
+            },
+          },
+        },
+        myCustomTheme,
+      );
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('applies logical prop overrides', async () => {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          header: {
+            paddingBlock: '24px',
+            paddingInline: '20px',
+          },
+        },
+      });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+  });
+
+  describe('close button', () => {
+    test('should not show if hidden', () => {
+      const {getByRole, queryByTestId} = renderWithTheme(Popover, {
+        ...defaultProps,
+        closePosition: 'none',
+      });
+      fireEvent.click(getByRole('button'));
+      const closeBtn = queryByTestId('close-button');
+      expect(closeBtn).not.toBeInTheDocument();
+    });
+    test('should show right-aligned', () => {
+      const {getByRole, asFragment} = renderWithTheme(Popover, {
+        ...defaultProps,
+        closePosition: 'right',
+      });
+      fireEvent.click(getByRole('button'));
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('should show left-aligned', () => {
+      const {getByRole, asFragment} = renderWithTheme(Popover, {
+        ...defaultProps,
+        closePosition: 'left',
+      });
+      fireEvent.click(getByRole('button'));
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('applies stylePreset overrides', async () => {
+      const myCustomTheme = createTheme({
+        name: 'my-custom-popover-theme',
+        overrides: {
+          stylePresets: {
+            closeButtonCustom: {
+              base: {
+                backgroundColor: '{{colors.red080}}',
+                borderRadius: '{{borders.borderRadiusCircle}}',
+                color: '{{colors.white}}',
+                iconColor: '{{colors.inkBase}}',
+              },
+            },
+            closeButtonContainerCustom: {
+              base: {
+                borderColor: '{{colors.red080}}',
+                borderStyle: 'solid',
+                borderWidth: '{{borders.borderWidth020}}',
+              },
+            },
+          },
+        },
+      });
+      const {asFragment, getByRole} = renderWithTheme(
+        Popover,
+        {
+          ...defaultProps,
+          header: 'header value',
+          overrides: {
+            closeButton: {
+              stylePreset: 'closeButtonCustom',
+            },
+            closeButtonContainer: {
+              stylePreset: 'closeButtonContainerCustom',
+            },
+          },
+        },
+        myCustomTheme,
+      );
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('applies logical prop overrides', async () => {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          closeButtonContainer: {
+            paddingBlock: '24px',
+            paddingInline: '20px',
+          },
+        },
+      });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test.skip('should show close popover when close button clicked', () => {
+      const {getByRole, getByTestId} = renderWithTheme(Popover, defaultProps);
+      fireEvent.click(getByRole('button'));
+      expect(getByRole('dialog')).toBeInTheDocument();
+      const closeBtn = getByTestId('close-button');
+      fireEvent.click(closeBtn);
+      expect(getByRole('dialog')).not.toBeInTheDocument();
     });
   });
 });

@@ -11,8 +11,23 @@ export default {
     panel: {
       stylePreset: 'popoverPanel',
       typographyPreset: 'utilityLabel010',
+    },
+    header: {
+      stylePreset: 'popoverHeader',
       paddingBlock: 'space040',
-      paddingInline: 'space040',
+      paddingInline: 'space050',
+    },
+    content: {
+      paddingBlock: 'space050',
+      paddingInline: 'space050',
+    },
+    closeButton: {
+      stylePreset: 'iconButtonMinimalSecondary',
+    },
+    closeButtonContainer: {
+      stylePreset: 'popoverCloseButtonContainer',
+      paddingBlock: 'space020',
+      paddingInline: 'space020',
     },
   },
 };
