@@ -152,62 +152,86 @@ const CSS_PROPS = [
   },
   {
     token: 'borderRadius',
-    acceptedValues: <Link href="/theme/borders/">foundations borders</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/borders/">foundations borders</Link>
+    ),
     description: 'The border radius (shape) of an element',
   },
   {
     token: 'borderWidth',
-    acceptedValues: <Link href="/theme/borders/">foundations borders</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/borders/">foundations borders</Link>
+    ),
     description: 'The border width of an element',
   },
   {
     token: 'backgroundColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The background colour of an element',
   },
   {
     token: 'borderColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of a border',
   },
   {
     token: 'caretColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of a caret (cursor) in a text input',
   },
   {
     token: 'color',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of text. For text, use ink colours',
   },
   {
     token: 'iconColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of icons. For icons, use ink colours',
   },
   {
     token: 'placeholderColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of placeholder text',
   },
   {
     token: 'boxShadow',
-    acceptedValues: <Link href="/theme/shadows/">foundations shadows</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/shadows/">foundations shadows</Link>
+    ),
     description: 'The box shadow to an element',
   },
   {
     token: 'backgroundColor',
-    acceptedValues: <Link href="/theme/overlays/">foundations overlays</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/overlays/">foundations overlays</Link>
+    ),
     description: 'The overlay of an element',
   },
   {
     token: 'opacity',
-    acceptedValues: <Link href="/theme/opacity/">foundations opacity</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/opacity/">foundations opacity</Link>
+    ),
     description: 'The opacity level of an element',
   },
   {
     token: 'linear-gradient',
-    acceptedValues: <Link href="/theme/gradients/">foundations gradient</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/gradients/">foundations gradient</Link>
+    ),
     description: 'The transition between two or more specified colors',
   },
 ];
@@ -481,9 +505,9 @@ const StylePresets = (layoutProps: LayoutProps) => (
               <Link href="/theme/presets/typography-presets/">
                 Typography Presets
               </Link>
-              , <Link href="/theme/sizing/">Sizing</Link>, and{' '}
-              <Link href="/theme/spacing/">Spacing</Link>, Style Presets provide
-              the visual attributes of a component.
+              , <Link href="/theme/foundation/sizing/">Sizing</Link>, and{' '}
+              <Link href="/theme/foundation/spacing/">Spacing</Link>, Style
+              Presets provide the visual attributes of a component.
             </>
           }
           showSeparator

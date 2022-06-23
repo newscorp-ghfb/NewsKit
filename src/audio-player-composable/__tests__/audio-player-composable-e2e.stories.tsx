@@ -11,6 +11,7 @@ import {
   AudioPlayerTimeDisplay,
   AudioPlayerSkipNextButton,
   AudioPlayerSkipPreviousButton,
+  AudioPlayerVolumeControl,
 } from '..';
 import {calculateTime} from '../components/time-display/utils';
 
@@ -54,7 +55,7 @@ export const AudioPlayerE2E = () => {
                 />
               </Areas.TotalTime>
               <Areas.Volume alignSelf="center" justifySelf="start">
-                Not yet
+                <AudioPlayerVolumeControl />
               </Areas.Volume>
               <Areas.Link alignSelf="center" justifySelf="end">
                 <Button
