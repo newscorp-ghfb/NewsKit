@@ -4,7 +4,7 @@ import {AccordionGroupProps, AccordionProps} from './types';
 import {hasMatchingDisplayNameWith} from '../utils/component';
 import {Accordion} from './accordion';
 
-const toArray = (
+const expandedPropToArray = (
   expandedProp: number | number[] | 'all' | undefined,
   arrayLength: number,
 ): number[] | undefined => {
@@ -29,12 +29,12 @@ const takeFirst = (
   return expandedProp;
 };
 
-const unifyValue = (
+const unifyPropValue = (
   expandedProp: number | number[] | 'all' | undefined,
   arrayLength: number,
   single: boolean | undefined,
 ): number[] | undefined =>
-  takeFirst(toArray(expandedProp, arrayLength), single);
+  takeFirst(expandedPropToArray(expandedProp, arrayLength), single);
 
 export const AccordionGroup = React.forwardRef<
   HTMLInputElement,
@@ -54,8 +54,12 @@ export const AccordionGroup = React.forwardRef<
     const childrenArray = React.Children.toArray(children);
 
     const [expandedList, setExpandedList] = useControlled<number[]>({
-      controlledValue: unifyValue(expanded, childrenArray.length, expandSingle),
-      defaultValue: unifyValue(
+      controlledValue: unifyPropValue(
+        expanded,
+        childrenArray.length,
+        expandSingle,
+      ),
+      defaultValue: unifyPropValue(
         defaultExpanded,
         childrenArray.length,
         expandSingle,
