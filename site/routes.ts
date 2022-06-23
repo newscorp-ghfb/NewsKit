@@ -818,6 +818,13 @@ export default [
             description: `Use this data entry type when capturing a date that is in the future such as a delivery date or booking date.`,
             illustration: 'patterns/forms/date-picker/hero',
           },
+          {
+            title: 'Email address',
+            page: true,
+            id: '/patterns/forms/email-address',
+            description: `Ask for a user’s email address to provide a service, to contact them directly, or as a unique way of identifying them.`,
+            illustration: 'patterns/forms/email-address/hero',
+          },
         ],
       },
     ],
