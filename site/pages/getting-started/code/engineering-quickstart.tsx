@@ -156,18 +156,9 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
               >
                 react components
               </Link>
-              .
-              {/* . One thing to bear in mind is that they will need to be
-              descendants of a <InlineCode>NewskitProvider</InlineCode>, this
-              can be thought of as the theme context, this theme will be applied
-              to all of its descendants. The following example shows the
-              &quot;Hello World!&quot; example of using a NewsKit{' '}
-              <Link href="/components/tag/">Tag component</Link> with the{' '}
-              <Link href="/theme/theming/using-a-theme/">Newskit Provider</Link>
-              . */}
-              One thing to bear in mind is that they will need to be descendants
-              of a <InlineCode>NewskitProvider</InlineCode> which provides a
-              single wrapper to configure your application. It adds a{' '}
+              . One thing to bear in mind is that they will need to be
+              descendants of a <InlineCode>NewskitProvider</InlineCode> which
+              provides a single wrapper to configure your application. It adds a{' '}
               <Link href="/theme/theming/using-a-theme/">ThemeProvider</Link>,{' '}
               <Link href="/components/utils/hooks/#usemediaqueryobject">
                 MediaQueryProvider
