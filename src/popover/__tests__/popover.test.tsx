@@ -453,8 +453,8 @@ describe('Popover', () => {
       const btn = getByRole('button');
       fireEvent.click(btn);
       const el = queryByRole('dialog');
-      expect(el).toHaveAttribute('aria-labelledby', MOCK_ID);
-      expect(btn).toHaveAttribute('id', MOCK_ID);
+      expect(el).toHaveAttribute('aria-labelledby', `ref-${MOCK_ID}`);
+      expect(btn).toHaveAttribute('id', `ref-${MOCK_ID}`);
     });
     test('floating element has custom aria-labelledby if no header is passed', () => {
       const {queryByRole, getByRole} = renderWithTheme(Popover, {
@@ -478,7 +478,7 @@ describe('Popover', () => {
       const btn = getByRole('button');
       fireEvent.click(btn);
       const el = queryByRole('dialog');
-      expect(el).toHaveAttribute('aria-describedby', MOCK_ID);
+      expect(el).toHaveAttribute('aria-describedby', `header-${MOCK_ID}`);
     });
     test('context element has aria-haspopup', () => {
       const {queryByRole} = renderWithTheme(Popover, defaultProps);
@@ -489,7 +489,7 @@ describe('Popover', () => {
       const {getByRole} = renderWithTheme(Popover, defaultProps);
       const btn = getByRole('button');
       fireEvent.click(btn);
-      expect(btn).toHaveAttribute('aria-controls', MOCK_ID);
+      expect(btn).toHaveAttribute('aria-controls', `floating-${MOCK_ID}`);
     });
   });
 

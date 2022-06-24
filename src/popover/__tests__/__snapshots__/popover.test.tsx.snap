@@ -3,9 +3,9 @@
 exports[`Popover close button applies logical prop overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -206,9 +206,9 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -264,7 +264,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -273,7 +273,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 exports[`Popover close button applies stylePreset overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
     type="submit"
   >
@@ -465,10 +465,10 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 }
 
 <div
-    aria-describedby="MOCK-ID"
+    aria-describedby="header-MOCK-ID"
     aria-expanded="true"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -483,7 +483,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
         <div
           class="emotion-3"
           data-testid="header-text"
-          id="MOCK-ID"
+          id="header-MOCK-ID"
         >
           header value
         </div>
@@ -536,9 +536,9 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 exports[`Popover close button should show left-aligned 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -722,9 +722,9 @@ exports[`Popover close button should show left-aligned 1`] = `
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -785,9 +785,9 @@ exports[`Popover close button should show left-aligned 1`] = `
 exports[`Popover close button should show right-aligned 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -971,9 +971,9 @@ exports[`Popover close button should show right-aligned 1`] = `
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -1034,9 +1034,9 @@ exports[`Popover close button should show right-aligned 1`] = `
 exports[`Popover content applies logical prop overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -1237,9 +1237,9 @@ exports[`Popover content applies logical prop overrides 1`] = `
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -1295,7 +1295,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -1304,7 +1304,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
 exports[`Popover content applies stylePreset overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
     type="submit"
   >
@@ -1514,10 +1514,10 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 }
 
 <div
-    aria-describedby="MOCK-ID"
+    aria-describedby="header-MOCK-ID"
     aria-expanded="true"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -1532,7 +1532,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
         <div
           class="emotion-3"
           data-testid="header-text"
-          id="MOCK-ID"
+          id="header-MOCK-ID"
         >
           header value
         </div>
@@ -1585,9 +1585,9 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 exports[`Popover content applies typography preset overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -1788,9 +1788,9 @@ exports[`Popover content applies typography preset overrides 1`] = `
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -1846,7 +1846,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -1855,7 +1855,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
 exports[`Popover header applies logical prop overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
     type="submit"
   >
@@ -2079,10 +2079,10 @@ exports[`Popover header applies logical prop overrides 1`] = `
 }
 
 <div
-    aria-describedby="MOCK-ID"
+    aria-describedby="header-MOCK-ID"
     aria-expanded="true"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -2097,7 +2097,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
         <div
           class="emotion-3"
           data-testid="header-text"
-          id="MOCK-ID"
+          id="header-MOCK-ID"
         >
           header value
         </div>
@@ -2145,7 +2145,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
     </div>
     <div
       class="emotion-11"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -2154,7 +2154,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
 exports[`Popover header applies stylePreset overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
     type="submit"
   >
@@ -2363,10 +2363,10 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 }
 
 <div
-    aria-describedby="MOCK-ID"
+    aria-describedby="header-MOCK-ID"
     aria-expanded="true"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -2381,7 +2381,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
         <div
           class="emotion-3"
           data-testid="header-text"
-          id="MOCK-ID"
+          id="header-MOCK-ID"
         >
           header value
         </div>
@@ -2434,7 +2434,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 exports[`Popover header applies typography preset overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
     type="submit"
   >
@@ -2658,10 +2658,10 @@ exports[`Popover header applies typography preset overrides 1`] = `
 }
 
 <div
-    aria-describedby="MOCK-ID"
+    aria-describedby="header-MOCK-ID"
     aria-expanded="true"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -2676,7 +2676,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
         <div
           class="emotion-3"
           data-testid="header-text"
-          id="MOCK-ID"
+          id="header-MOCK-ID"
         >
           header value
         </div>
@@ -2724,7 +2724,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
     </div>
     <div
       class="emotion-11"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -2733,9 +2733,9 @@ exports[`Popover header applies typography preset overrides 1`] = `
 exports[`Popover offset should be applied with pointer and px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -2936,9 +2936,9 @@ exports[`Popover offset should be applied with pointer and px distance override 
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -2994,7 +2994,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -3003,9 +3003,9 @@ exports[`Popover offset should be applied with pointer and px distance override 
 exports[`Popover offset should be applied with pointer and token distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -3206,9 +3206,9 @@ exports[`Popover offset should be applied with pointer and token distance overri
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -3264,7 +3264,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -3273,9 +3273,9 @@ exports[`Popover offset should be applied with pointer and token distance overri
 exports[`Popover offset should not be applied with pointer and invalid token distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -3476,9 +3476,9 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -3534,7 +3534,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -3543,9 +3543,9 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 exports[`Popover offset should not be applied with pointer and non-px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -3746,9 +3746,9 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -3804,7 +3804,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -3813,9 +3813,9 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 exports[`Popover offset should not be applied with with no pointer 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -4001,9 +4001,9 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -4064,9 +4064,9 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 exports[`Popover pointer padding should be applied with px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -4267,9 +4267,9 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -4325,7 +4325,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -4334,9 +4334,9 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 exports[`Popover pointer padding should be applied with token distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -4537,9 +4537,9 @@ exports[`Popover pointer padding should be applied with token distance override 
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -4595,7 +4595,7 @@ exports[`Popover pointer padding should be applied with token distance override 
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -4604,9 +4604,9 @@ exports[`Popover pointer padding should be applied with token distance override 
 exports[`Popover pointer padding should not be applied with invalid token distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -4807,9 +4807,9 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -4865,7 +4865,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -4874,9 +4874,9 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 exports[`Popover pointer padding should not be applied with non-px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -5077,9 +5077,9 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -5135,7 +5135,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -5144,9 +5144,9 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 exports[`Popover should render correct styles: default 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -5332,9 +5332,9 @@ exports[`Popover should render correct styles: default 1`] = `
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -5395,9 +5395,9 @@ exports[`Popover should render correct styles: default 1`] = `
 exports[`Popover should render correct styles: with overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -5592,9 +5592,9 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -5655,9 +5655,9 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 exports[`Popover should render correct styles: with pointer 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -5858,9 +5858,9 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -5916,7 +5916,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -5925,9 +5925,9 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 exports[`Popover should render correct styles: with pointer size overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -6128,9 +6128,9 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -6186,7 +6186,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -6195,9 +6195,9 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 exports[`Popover should render correct styles: with pointer stylePreset overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -6398,9 +6398,9 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -6456,7 +6456,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -6465,9 +6465,9 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="MOCK-ID"
+    aria-controls="floating-MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
+    id="ref-MOCK-ID"
     type="submit"
   >
     Add
@@ -6668,9 +6668,9 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 
 <div
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
+    aria-labelledby="ref-MOCK-ID"
     class="emotion-0"
-    id="MOCK-ID"
+    id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
   >
@@ -6726,7 +6726,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
     </div>
     <div
       class="emotion-10"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>

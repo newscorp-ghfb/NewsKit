@@ -90,8 +90,8 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     ],
   });
 
-  const defaultRefId = useId();
-  const floatingId = useId();
+  const defaultRefId = `ref-${useId()}`;
+  const floatingId = `floating-${useId()}`;
   const ariaArgs = {
     floating: {id: floatingId, open},
     ref: {id: children.props.id || defaultRefId},

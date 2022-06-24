@@ -52,7 +52,7 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
       filterOutFalsyProperties(overrides.closeButton),
     ),
   };
-  const headerId = useId();
+  const headerId = `header-${useId()}`;
 
   const buildFloatingElementAriaAttributes: BuildAriaAttributesFn = ({
     floating: {open},
