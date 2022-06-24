@@ -77,6 +77,17 @@ const AudioPropsAndVolumeControlWithInitialVolumeCollapsed: AudioPlayerComposabl
   ),
 };
 
+const AudioPropsWithInitialTime: AudioPlayerComposableProps = {
+  initialTime: 50,
+  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  children: (
+    <>
+      <AudioPlayerTimeDisplay />
+      <AudioPlayerSeekBar />
+    </>
+  ),
+};
+
 const AudioPropsAndVolumeControlVertical: AudioPlayerComposableProps = {
   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
   initialVolume: 0.2,
@@ -900,6 +911,29 @@ describe('Audio Player Composable', () => {
         AudioPropsAndVolumeControlVertical,
       );
       expect(asFragment()).toMatchSnapshot();
+    });
+  });
+  describe('initialTime prop', () => {
+    it('should render correctly with initial time', () => {
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        AudioPropsWithInitialTime,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const audioTimeLabel = getByTestId(
+        'audio-player-time-display',
+      ) as HTMLParagraphElement;
+
+      const seekBar = getByTestId('audio-slider-track') as HTMLDivElement;
+      fireEvent.timeUpdate(audioElement, {
+        target: {
+          currentTime: 50,
+        },
+      });
+      expect(audioElement.currentTime).toEqual(50);
+      expect(audioTimeLabel.innerHTML).toEqual('00:50/00:00 ');
+      expect(seekBar.getAttribute('values')).toEqual('50');
     });
   });
 

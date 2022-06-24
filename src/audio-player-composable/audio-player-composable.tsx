@@ -47,6 +47,7 @@ export const AudioPlayerComposable = ({
   ariaLandmark,
   keyboardShortcuts: keyboardShortcutsProp,
   initialVolume = 0.7,
+  initialTime = 0,
   ...props
 }: AudioPlayerComposableProps) => {
   const currentTimeRef = useRef(0);
@@ -71,6 +72,12 @@ export const AudioPlayerComposable = ({
   });
 
   useEffect(() => {
+    // On render onTimeUpdate will be fired and 50 will be set as a value for currentTime state.
+    // I can't set this one to the currentTime state directly as the audioElement time
+    // will still be 0, currentTime will be overridden to 0 and the audio will start from 0
+    if (audioRef && audioRef.current) {
+      audioRef.current.currentTime = initialTime;
+    }
     setCurrentTime(0);
     setDisplayDuration(0);
   }, [src]);
@@ -197,6 +204,15 @@ export const AudioPlayerComposable = ({
     }),
     [buffered, currentTime, duration, onChangeSlider],
   );
+
+  // const getTimeDisplayProps = useCallback(
+  //   () => ({
+  //     format: formatFunction,
+  //     currentTime,
+  //     duration,
+  //   }),
+  //   [currentTime, duration],
+  // );
 
   const getTimeDisplayProps = useCallback(
     () => ({
