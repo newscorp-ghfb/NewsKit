@@ -10,6 +10,7 @@ import {IconButton} from '../../icon-button';
 import {GridLayout} from '../../grid-layout';
 import {createTheme, ThemeProvider} from '../../theme';
 import {PopoverProps} from '../types';
+import {LinkStandalone} from '../../link';
 
 const getPlacementStyling = (placement: Placement) => {
   const [side, alignment = 'center'] = placement.split('-');
@@ -74,6 +75,20 @@ const myCustomTheme = createTheme({
           color: '{{colors.inkInverse}}',
         },
       },
+      popoverHeaderCustom: {
+        base: {
+          borderColor: '{{colors.black}}',
+          borderStyle: 'none none solid none',
+          borderWidth: '{{borders.borderWidth010}}',
+        },
+      },
+      popoverCloseButtonContainerCustom: {
+        base: {
+          borderColor: '{{colors.black}}',
+          borderStyle: 'none none solid none',
+          borderWidth: '{{borders.borderWidth010}}',
+        },
+      },
     },
   },
 });
@@ -85,8 +100,8 @@ const StyledPage = styled.div`
 const StyledContainer = styled.div`
   border: 1px solid red;
   background-color: #f7f7f7;
-  height: 220px;
-  width: 320px;
+  height: 260px;
+  width: 360px;
   padding: 5px;
   overflow: scroll;
 `;
@@ -103,11 +118,14 @@ const StyledScrollChild = styled.div<{visualTest?: boolean}>`
         }}
 `;
 
+const DEFAULT_CONTENT =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum justo id rutrum consectetur. Cras ultrices diam id dapibus viverra.';
+
 const PopoverWithBtn = (props: Partial<Omit<PopoverProps, 'children'>>) => (
   <Popover
-    header="Popover header"
-    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    overrides={{maxWidth: '250px'}}
+    header="Popover Title"
+    content={DEFAULT_CONTENT}
+    overrides={{maxWidth: '300px'}}
     {...props}
   >
     <IconButton
@@ -137,8 +155,9 @@ const BoundedPopover = ({
   containerStyle?: CSSProperties;
 }) => {
   const boundaryRef = useUpdatedRef<HTMLDivElement>(null);
+  const style = containerStyle || getPlacementStyling('top');
   return (
-    <StyledContainer ref={boundaryRef} style={containerStyle}>
+    <StyledContainer ref={boundaryRef} style={style}>
       <PopoverWithBtn
         boundary={boundaryRef.current || undefined}
         fallbackBehaviour={[]}
@@ -170,7 +189,6 @@ const PopoverStyleOverrides = ({open}: {open?: boolean}) => (
     <StyledPage>
       <StorybookSubHeading>Popover - style overrides</StorybookSubHeading>
       <BoundedPopover
-        containerStyle={getPlacementStyling('top')}
         open={open}
         overrides={{
           maxWidth: '250px',
@@ -180,6 +198,12 @@ const PopoverStyleOverrides = ({open}: {open?: boolean}) => (
           },
           panel: {
             stylePreset: 'popoverPanelCustom',
+          },
+          header: {
+            stylePreset: 'popoverHeaderCustom',
+          },
+          closeButtonContainer: {
+            stylePreset: 'popoverCloseButtonContainerCustom',
           },
         }}
       />
@@ -228,54 +252,77 @@ const PopoverBehaviours = ({open}: {open?: boolean}) => (
   </StyledPage>
 );
 
-export const StoryPopoverDefault = () => (
+export const StoryPopoverDefault = (open = true) => (
   <StyledPage>
     <GridLayout columns={{xs: 'repeat(1, minmax(0, 1fr))'}} rowGap="20px">
       <div>
-        <StorybookSubHeading>String content</StorybookSubHeading>
-        <BoundedPopover containerStyle={getPlacementStyling('top')} />
+        <StorybookSubHeading>Close button on right</StorybookSubHeading>
+        <BoundedPopover open={open} />
+      </div>
+      <div>
+        <StorybookSubHeading>Close button on left</StorybookSubHeading>
+        <BoundedPopover open={open} closePosition="left" />
+      </div>
+      <div>
+        <StorybookSubHeading>No header or close button</StorybookSubHeading>
+        <BoundedPopover open={open} header={undefined} closePosition="none" />
+      </div>
+      <div>
+        <StorybookSubHeading>Header title overflow</StorybookSubHeading>
+        <BoundedPopover
+          open={open}
+          header="This is a popover header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          containerStyle={{
+            ...getPlacementStyling('top'),
+            height: '330px',
+          }}
+        />
       </div>
       <div>
         <StorybookSubHeading>Interactive content</StorybookSubHeading>
         <BoundedPopover
-          containerStyle={getPlacementStyling('top')}
+          open={open}
+          containerStyle={{
+            ...getPlacementStyling('top'),
+            height: '330px',
+          }}
           content={
-            <Button
-              size="small"
-              onClick={() => {
-                // eslint-disable-next-line no-alert
-                alert('Button clicked');
-              }}
-              style={{width: '100%'}}
-            >
-              Click me
-            </Button>
+            <div>
+              <div>{DEFAULT_CONTENT}</div>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'end',
+                  paddingTop: '30px',
+                }}
+              >
+                <LinkStandalone href="/">Find out more</LinkStandalone>
+                <Button style={{marginLeft: '30px'}}>Continue</Button>
+              </div>
+            </div>
           }
         />
       </div>
       <div>
         <StorybookSubHeading>No pointer</StorybookSubHeading>
-        <BoundedPopover
-          containerStyle={getPlacementStyling('top')}
-          hidePointer
-        />
+        <BoundedPopover open={open} hidePointer />
       </div>
       <GridLayout columns={{xs: 'repeat(3, minmax(0, 1fr))'}}>
         <div>
           <StorybookSubHeading>Default distance</StorybookSubHeading>
-          <BoundedPopover containerStyle={getPlacementStyling('top')} />
+          <BoundedPopover open={open} />
         </div>
         <div>
           <StorybookSubHeading>Increased distance</StorybookSubHeading>
           <BoundedPopover
-            containerStyle={getPlacementStyling('top')}
+            open={open}
             overrides={{distance: 'space070', maxWidth: '250px'}}
           />
         </div>
         <div>
           <StorybookSubHeading>Decreased distance</StorybookSubHeading>
           <BoundedPopover
-            containerStyle={getPlacementStyling('top')}
+            open={open}
             overrides={{distance: 'space030', maxWidth: '250px'}}
           />
         </div>
