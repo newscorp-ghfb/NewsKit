@@ -17,7 +17,7 @@ import {
   StyledPopoverCloseButtonContainer,
   StyledPopoverContent,
   StyledPopoverHeader,
-  StyledDialogPanel,
+  StyledPopoverInnerPanel,
 } from './styled';
 import {BreakpointKeys, useTheme} from '../theme';
 import {deepMerge} from '../utils';
@@ -66,7 +66,7 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
     <BaseFloatingElement
       path="popover"
       content={({onClick}) => (
-        <StyledDialogPanel closePosition={closePosition}>
+        <StyledPopoverInnerPanel closePosition={closePosition}>
           {header !== undefined && (
             <StyledPopoverHeader
               data-testid="header-text"
@@ -94,7 +94,7 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
               </IconButton>
             </StyledPopoverCloseButtonContainer>
           )}
-        </StyledDialogPanel>
+        </StyledPopoverInnerPanel>
       )}
       buildRefElAriaAttributes={buildContextAriaAttributes}
       buildFloatingElAriaAttributes={buildFloatingElementAriaAttributes}

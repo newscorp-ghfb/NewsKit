@@ -3,7 +3,7 @@ import {logicalProps} from '../utils/logical-properties';
 import {createCssGrid} from '../dialog/styled';
 import {PopoverProps} from './types';
 
-export const StyledDialogPanel = styled.div<
+export const StyledPopoverInnerPanel = styled.div<
   Pick<PopoverProps, 'closePosition'>
 >`
   ${({closePosition}) => createCssGrid({closePosition})}

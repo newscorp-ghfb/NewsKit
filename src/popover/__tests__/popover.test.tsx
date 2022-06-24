@@ -761,4 +761,22 @@ describe('Popover', () => {
       expect(onDismiss).toHaveBeenCalled();
     });
   });
+
+  describe('content', () => {
+    test('applies logical prop overrides', async () => {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          content: {
+            paddingBlock: '24px',
+            paddingInline: '20px',
+          },
+        },
+      });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+  });
 });
