@@ -14,7 +14,9 @@ export type PopoverProps = Omit<
     header?: {
       stylePreset?: MQ<string>;
     } & LogicalPaddingProps;
-    content?: LogicalPaddingProps;
+    content?: {
+      stylePreset?: MQ<string>;
+    } & LogicalPaddingProps;
     closeButton?: {
       stylePreset?: MQ<string>;
     };

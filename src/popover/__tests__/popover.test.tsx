@@ -763,6 +763,36 @@ describe('Popover', () => {
   });
 
   describe('content', () => {
+    test('applies stylePreset overrides', async () => {
+      const myCustomTheme = createTheme({
+        name: 'my-custom-popover-theme',
+        overrides: {
+          stylePresets: {
+            contentCustom: {
+              base: {
+                color: '{{colors.inkInverse}}',
+              },
+            },
+          },
+        },
+      });
+      const {asFragment, getByRole} = renderWithTheme(
+        Popover,
+        {
+          ...defaultProps,
+          header: 'header value',
+          overrides: {
+            content: {
+              stylePreset: 'contentCustom',
+            },
+          },
+        },
+        myCustomTheme,
+      );
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
     test('applies logical prop overrides', async () => {
       const {asFragment, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,

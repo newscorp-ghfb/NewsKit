@@ -13,7 +13,7 @@ import {PopoverProps} from '../types';
 import {LinkStandalone} from '../../link';
 
 // Open all Popovers by default when running in Applitools.
-const isApplitoolsTest = process.env.APPLITOOLS_BATCH_ID !== undefined;
+const isApplitoolsTest = process.env.APPLITOOLS_BATCH_ID === undefined;
 
 const getPlacementStyling = (placement: Placement) => {
   const [side, alignment = 'center'] = placement.split('-');
@@ -75,7 +75,6 @@ const myCustomTheme = createTheme({
         base: {
           backgroundColor: '{{colors.red080}}',
           borderRadius: '{{borders.borderRadiusDefault}}',
-          color: '{{colors.inkInverse}}',
         },
       },
       popoverHeaderCustom: {
@@ -83,6 +82,7 @@ const myCustomTheme = createTheme({
           borderColor: '{{colors.black}}',
           borderStyle: 'none none solid none',
           borderWidth: '{{borders.borderWidth010}}',
+          color: '{{colors.inkInverse}}',
         },
       },
       popoverCloseButtonContainerCustom: {
@@ -90,6 +90,11 @@ const myCustomTheme = createTheme({
           borderColor: '{{colors.black}}',
           borderStyle: 'none none solid none',
           borderWidth: '{{borders.borderWidth010}}',
+        },
+      },
+      popoverContentCustom: {
+        base: {
+          color: '{{colors.inkInverse}}',
         },
       },
     },
@@ -314,7 +319,7 @@ export const StoryPopoverStyleOverrides = () => (
       <StorybookSubHeading>Popover - style overrides</StorybookSubHeading>
       <BoundedPopover
         overrides={{
-          maxWidth: '250px',
+          maxWidth: '300px',
           stylePreset: 'popoverCustom',
           pointer: {
             stylePreset: 'popoverPointerCustom',
@@ -327,6 +332,9 @@ export const StoryPopoverStyleOverrides = () => (
           },
           closeButtonContainer: {
             stylePreset: 'popoverCloseButtonContainerCustom',
+          },
+          content: {
+            stylePreset: 'popoverContentCustom',
           },
         }}
       />

@@ -1,4 +1,4 @@
-import {getStylePreset, styled} from '../utils/style';
+import {getStylePreset, getTypographyPreset, styled} from '../utils/style';
 import {logicalProps} from '../utils/logical-properties';
 import {createCssGrid} from '../dialog/styled';
 import {PopoverProps} from './types';
@@ -15,11 +15,14 @@ export const StyledPopoverHeader = styled.div<Pick<PopoverProps, 'overrides'>>`
   align-items: center;
   box-sizing: border-box;
   ${getStylePreset('popover.header', 'header')}
+  ${getTypographyPreset('popover.header', 'header')}
   ${logicalProps('popover.header', 'header')}
 `;
 
 export const StyledPopoverContent = styled.div<Pick<PopoverProps, 'overrides'>>`
   grid-area: content;
+  ${getStylePreset('popover.content', 'content')}
+  ${getTypographyPreset('popover.content', 'content')}
   ${logicalProps('popover.content', 'content')}
 `;
 
