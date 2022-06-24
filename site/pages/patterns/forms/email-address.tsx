@@ -85,8 +85,9 @@ const EmailAddress = (layoutProps: LayoutProps) => (
                 attribute to ‘email’.
               </>
               <>
-                Give plenty of room in the text field for (Most) users to fit
-                their whole email address.
+                Give plenty of room in the{' '}
+                <Link href="/components/text-input/">Text Field</Link> for
+                (Most) users to fit their whole email address.
               </>
             </UnorderedList>
           </Block>
