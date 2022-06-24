@@ -22,3 +22,19 @@ export const handleArrowUp = (ref: HTMLDivElement | null) => {
     prevOption.focus();
   }
 };
+
+export const handleHome = (ref: HTMLDivElement | null) => {
+  if (ref) {
+    const elements = ref.childNodes;
+    const firstOption = elements[0] as HTMLButtonElement;
+    firstOption.focus();
+  }
+};
+
+export const handleEnd = (ref: HTMLDivElement | null) => {
+  if (ref) {
+    const elements = ref.childNodes;
+    const lastOption = elements[elements.length - 1] as HTMLButtonElement;
+    lastOption.focus();
+  }
+};

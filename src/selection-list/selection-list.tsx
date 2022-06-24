@@ -3,14 +3,16 @@ import composeRefs from '@seznam/compose-react-refs';
 import {SelectionListProps} from './types';
 import defaults from './defaults';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {useKeypress} from '../utils/hooks';
-import {handleArrowDown, handleArrowUp} from './utils';
+import {useKeypress, useReactKeys} from '../utils/hooks';
+import {handleArrowDown, handleArrowUp, handleHome, handleEnd} from './utils';
 import {StyledSelectionList} from './styled';
+import {ScreenReaderOnly} from '../screen-reader-only';
 
 const ThemelessSelectionList = React.forwardRef<
   HTMLDivElement,
   SelectionListProps
 >(({children, overrides = {}, ...restProps}, ref) => {
+  const listDescriptionId = useReactKeys(1)[0];
   const selectionListRef = useRef<HTMLDivElement>(null);
 
   useKeypress('ArrowDown', () => handleArrowDown(selectionListRef.current), {
@@ -23,15 +25,35 @@ const ThemelessSelectionList = React.forwardRef<
     eventType: 'keydown',
   });
 
+  useKeypress('Home', () => handleHome(selectionListRef.current), {
+    target: selectionListRef,
+    eventType: 'keydown',
+  });
+
+  useKeypress('End', () => handleEnd(selectionListRef.current), {
+    target: selectionListRef,
+    eventType: 'keydown',
+  });
+
+  const screenReaderOnlyMessage = (
+    <ScreenReaderOnly id={listDescriptionId}>
+      Press down arrow key to navigate to the first item
+    </ScreenReaderOnly>
+  );
+
   return (
-    <StyledSelectionList
-      ref={composeRefs(selectionListRef, ref)}
-      role="menu"
-      overrides={overrides}
-      {...restProps}
-    >
-      {children}
-    </StyledSelectionList>
+    <>
+      {screenReaderOnlyMessage}
+      <StyledSelectionList
+        ref={composeRefs(selectionListRef, ref)}
+        role="menu"
+        aria-describedby={listDescriptionId}
+        overrides={overrides}
+        {...restProps}
+      >
+        {children}
+      </StyledSelectionList>
+    </>
   );
 });
 

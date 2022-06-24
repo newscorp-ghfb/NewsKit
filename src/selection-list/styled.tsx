@@ -21,7 +21,11 @@ export const StyledSelectionListOption = styled.button<SelectionListOptionProps>
   display: flex;
   justify-content: space-between;
   align-items: center;
-  ${getStylePreset('selectionListOption', '')}
+  ${({selected}) =>
+    getStylePreset('selectionListOption', '', {
+      isSelected: selected,
+    })}
+
   ${getTypographyPreset('selectionListOption', '')}
   ${getResponsiveSize('minHeight', 'selectionListOption', '', 'minHeight')}
   ${getResponsiveSpace('columnGap', 'selectionListOption', '', 'spaceInline')}

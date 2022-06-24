@@ -20,15 +20,27 @@ export const SelectionListOption = ({
     'iconSize',
   );
 
+  const iconStylePreset = getToken(
+    {theme, overrides: overrides?.icon},
+    `selectionListOption.icon`,
+    '',
+    'stylePreset',
+  );
+
   const renderIcon = () => {
     if (selectedIcon) return selectedIcon;
-    return <IconFilledCheck overrides={{size: iconSize}} />;
+    return (
+      <IconFilledCheck
+        overrides={{size: iconSize, stylePreset: iconStylePreset}}
+      />
+    );
   };
 
   return (
     <StyledSelectionListOption
       role="menuitemradio"
       aria-checked={selected}
+      selected={selected}
       overrides={overrides}
       tabIndex={selected ? 0 : -1}
       {...restProps}

@@ -146,6 +146,9 @@ stylePresets.selectOptionItem = {
 };
 
 stylePresets.selectOptionItemIcon = {
+  base: {
+    iconColor: '{{colors.interactiveInput040}}',
+  },
   selected: {
     iconColor: '{{colors.interactiveInput040}}',
   },
