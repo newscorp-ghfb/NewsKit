@@ -30,7 +30,8 @@ export const StyledPopoverCloseButtonContainer = styled.div<
   Pick<PopoverProps, 'closePosition' | 'overrides'>
 >`
   grid-area: close;
-  align-self: center;
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   ${getStylePreset('popover.closeButtonContainer', 'closeButtonContainer')}

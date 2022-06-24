@@ -46,9 +46,14 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -338,9 +343,14 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 
 .emotion-5 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #A60100;
@@ -577,9 +587,14 @@ exports[`Popover close button should show left-aligned 1`] = `
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -826,9 +841,14 @@ exports[`Popover close button should show right-aligned 1`] = `
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -1077,9 +1097,14 @@ exports[`Popover content applies logical prop overrides 1`] = `
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -1370,9 +1395,14 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 
 .emotion-5 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -1628,9 +1658,14 @@ exports[`Popover content applies typography preset overrides 1`] = `
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -1920,9 +1955,14 @@ exports[`Popover header applies logical prop overrides 1`] = `
 
 .emotion-5 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -2219,9 +2259,14 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 
 .emotion-5 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -2499,9 +2544,14 @@ exports[`Popover header applies typography preset overrides 1`] = `
 
 .emotion-5 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -2776,9 +2826,14 @@ exports[`Popover offset should be applied with pointer and px distance override 
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -3046,9 +3101,14 @@ exports[`Popover offset should be applied with pointer and token distance overri
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -3316,9 +3376,14 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -3586,9 +3651,14 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -3856,9 +3926,14 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -4107,9 +4182,14 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -4377,9 +4457,14 @@ exports[`Popover pointer padding should be applied with token distance override 
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -4647,9 +4732,14 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -4917,9 +5007,14 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -5187,9 +5282,14 @@ exports[`Popover should render correct styles: default 1`] = `
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -5447,9 +5547,14 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -5698,9 +5803,14 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -5968,9 +6078,14 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -6238,9 +6353,14 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
@@ -6508,9 +6628,14 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 
 .emotion-4 {
   grid-area: close;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100%;
   border-color: #CCCCCC;
