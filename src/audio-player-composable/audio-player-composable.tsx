@@ -205,15 +205,6 @@ export const AudioPlayerComposable = ({
     [buffered, currentTime, duration, onChangeSlider],
   );
 
-  // const getTimeDisplayProps = useCallback(
-  //   () => ({
-  //     format: formatFunction,
-  //     currentTime,
-  //     duration,
-  //   }),
-  //   [currentTime, duration],
-  // );
-
   const getTimeDisplayProps = useCallback(
     () => ({
       format: formatFunction,
