@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  IconFilledInfo,
-  InlineMessage,
-  UnorderedList,
-  styled,
-  getColorCssFromTheme,
-} from 'newskit';
+import {IconFilledInfo, InlineMessage, UnorderedList} from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
@@ -20,6 +14,11 @@ import {IconFilledCircle} from '../../../components/icons';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
+import {
+  StyledHeading,
+  StyledDoHeading,
+  StyledDontHeading,
+} from '../../../utils/styled';
 
 const infoIcon = (
   <IconFilledInfo
@@ -35,18 +34,6 @@ const unorderedListOverrides = {
     typographyPreset: 'editorialParagraph020',
   },
 };
-
-const StyledHeading = styled.span`
-  ${getColorCssFromTheme('color', 'inkBrand010')};
-`;
-
-const StyledDoHeading = styled.span`
-  ${getColorCssFromTheme('color', 'inkPositive')};
-`;
-
-const StyledDontHeading = styled.span`
-  ${getColorCssFromTheme('color', 'inkNegative')};
-`;
 
 const BestPractice = (layoutProps: LayoutProps) => (
   <PatternPageTemplate

@@ -29,7 +29,7 @@ export const IntroductionSection: React.FC<IntroductionSectionProps> = ({
           </ComponentPageCell>
         )}
       </Grid>
-      {!meta && (
+      {!meta && !pageIntroduction.showSeparator && (
         <Block spaceStack={{xs: 'space060', md: 'space070', lg: 'space090'}} />
       )}
     </StyledSection>
