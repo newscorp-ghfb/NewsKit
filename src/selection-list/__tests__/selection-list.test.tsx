@@ -182,6 +182,62 @@ describe('SelectionList', () => {
       expect(getByTestId('selection-list-option-1')).toHaveFocus();
     });
 
+    test('changes focus using keyboard to the last option - End', async () => {
+      const props: SelectionListProps = {
+        children: [
+          <SelectionListOption data-testid="selection-list-option-1" key="1">
+            Option 1
+          </SelectionListOption>,
+          <SelectionListOption data-testid="selection-list-option-2" key="2">
+            Option 2
+          </SelectionListOption>,
+          <SelectionListOption data-testid="selection-list-option-3" key="3">
+            Option 3
+          </SelectionListOption>,
+        ],
+      };
+      const {getByTestId} = renderWithTheme(SelectionList, props);
+
+      await act(async () => {
+        fireEvent.keyDown(getByTestId('selection-list-option-1'), {
+          code: 'End',
+          key: 'End',
+          keyCode: 35,
+        });
+      });
+
+      expect(getByTestId('selection-list-option-3')).toHaveFocus();
+    });
+
+    test('changes focus using keyboard to the first option - Home', async () => {
+      const props: SelectionListProps = {
+        children: [
+          <SelectionListOption data-testid="selection-list-option-1" key="1">
+            Option 1
+          </SelectionListOption>,
+          <SelectionListOption data-testid="selection-list-option-2" key="2">
+            Option 2
+          </SelectionListOption>,
+          <SelectionListOption data-testid="selection-list-option-3" key="3">
+            Option 3
+          </SelectionListOption>,
+        ],
+      };
+      const {getByTestId} = renderWithTheme(SelectionList, props);
+      await act(async () => {
+        fireEvent.focus(getByTestId('selection-list-option-3'));
+      });
+      await act(async () => {
+        fireEvent.keyDown(getByTestId('selection-list-option-3'), {
+          code: 'Home',
+          key: 'Home',
+          keyCode: 36,
+        });
+      });
+
+      expect(getByTestId('selection-list-option-1')).toHaveFocus();
+    });
+
     test('changes focus using keyboard loops from end to start', async () => {
       const props: SelectionListProps = {
         children: [
