@@ -190,6 +190,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1220,6 +1221,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1770,6 +1772,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -2319,6 +2322,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -2588,6 +2592,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -2857,6 +2862,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -3126,6 +3132,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -3646,6 +3653,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -3915,6 +3923,7 @@ exports[`Popover pointer padding should be applied with token distance override 
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -4184,6 +4193,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -4453,6 +4463,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -5233,6 +5244,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -5502,6 +5514,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -5771,6 +5784,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -6040,6 +6054,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 }
 
 .emotion-10 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);

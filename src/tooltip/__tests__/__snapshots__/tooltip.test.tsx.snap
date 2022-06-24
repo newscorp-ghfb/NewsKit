@@ -30,6 +30,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -95,6 +96,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -160,6 +162,7 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -225,6 +228,7 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -337,6 +341,7 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -402,6 +407,7 @@ exports[`Tooltip pointer padding should be applied with token distance override 
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -467,6 +473,7 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -532,6 +539,7 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -693,6 +701,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -758,6 +767,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -823,6 +833,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -888,6 +899,7 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
