@@ -36,4 +36,13 @@ export interface AccordionProps {
   expanded?: boolean;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   overrides?: AccordionPropsOverrides;
+  onChange?: (expanded: boolean) => void;
 }
+
+export type AccordionGroupProps = {
+  defaultExpanded?: number | number[] | 'all';
+  expanded?: number | number[] | 'all';
+  onChange?: (expanded: number[]) => void;
+  expandSingle?: boolean;
+  children: React.ReactNode;
+} & Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'>;
