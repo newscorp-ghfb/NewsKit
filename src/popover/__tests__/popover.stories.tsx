@@ -279,13 +279,13 @@ export const StoryPopoverDefault = () => (
             Popover - distance (increased)
           </StorybookSubHeading>
           <BoundedPopover
-            overrides={{distance: 'space070', maxWidth: '250px'}}
+            overrides={{distance: 'space070', maxWidth: '300px'}}
           />
         </div>
         <div>
           <StorybookSubHeading>Popover - distance (zero)</StorybookSubHeading>
           <BoundedPopover
-            overrides={{distance: 'space030', maxWidth: '250px'}}
+            overrides={{distance: 'space030', maxWidth: '300px'}}
           />
         </div>
       </GridLayout>
