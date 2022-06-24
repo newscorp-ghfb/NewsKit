@@ -48,6 +48,7 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
   header,
   closePosition = 'right',
   overrides = {},
+  handleCloseButtonClick,
   ...props
 }) => {
   const theme = useTheme();
@@ -84,7 +85,12 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
               closePosition={closePosition}
             >
               <IconButton
-                onClick={onClick}
+                onClick={(e: React.MouseEvent<HTMLElement>) => {
+                  onClick(e);
+                  if (handleCloseButtonClick) {
+                    handleCloseButtonClick();
+                  }
+                }}
                 data-testid="close-button"
                 aria-label="close"
                 overrides={closeButtonOverrides}
