@@ -12,9 +12,11 @@ export type PopoverProps = Omit<
   handleCloseButtonClick?: () => void;
   overrides?: FloatingElementProps['overrides'] & {
     header?: {
+      typographyPreset?: MQ<string>;
       stylePreset?: MQ<string>;
     } & LogicalPaddingProps;
     content?: {
+      typographyPreset?: MQ<string>;
       stylePreset?: MQ<string>;
     } & LogicalPaddingProps;
     closeButton?: {

@@ -1582,7 +1582,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Popover header applies logical prop overrides 1`] = `
+exports[`Popover content applies typography preset overrides 1`] = `
 <DocumentFragment>
   <button
     aria-controls="MOCK-ID"
@@ -1618,7 +1618,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
 .emotion-3 {
   grid-area: content;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -1846,6 +1846,305 @@ exports[`Popover header applies logical prop overrides 1`] = `
     </div>
     <div
       class="emotion-10"
+      id="MOCK-ID-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Popover header applies logical prop overrides 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: -24px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #2E2E2E;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-areas: 'header close' 'content content';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: header;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-color: #CCCCCC;
+  border-style: none none solid none;
+  border-width: 1px;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 20px;
+  padding-block: 24px;
+}
+
+.emotion-4 {
+  grid-area: content;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 24px;
+}
+
+.emotion-5 {
+  grid-area: close;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  box-sizing: border-box;
+  height: 100%;
+  border-color: #CCCCCC;
+  border-style: none none solid none;
+  border-width: 1px;
+  padding-inline: 8px;
+  padding-block: 8px;
+  padding-left: 0;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #2E2E2E;
+  margin: 0;
+  cursor: pointer;
+}
+
+.emotion-6 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-6:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-6:active:not(:disabled) {
+  background-color: #F4F4F4;
+}
+
+.emotion-6:disabled {
+  background-color: transparent;
+  color: #C0C0C0;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-9 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
+  z-index: -1;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  bottom: calc(-16px / 2);
+}
+
+<div
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
+    id="MOCK-ID"
+    role="dialog"
+    tabindex="-1"
+  >
+    <div
+      class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+          data-testid="header-text"
+        >
+          header value
+        </div>
+        <div
+          class="emotion-4"
+        >
+          hello
+        </div>
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-label="close"
+            class="emotion-6"
+            data-testid="close-button"
+            type="button"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-8"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="emotion-9 emotion-10"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-11"
       id="MOCK-ID-pointer"
     />
   </div>
@@ -2128,6 +2427,305 @@ exports[`Popover header applies stylePreset overrides 1`] = `
         </div>
       </div>
     </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Popover header applies typography preset overrides 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="MOCK-ID"
+    aria-haspopup="dialog"
+    id="MOCK-ID"
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  border-radius: 8px;
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: -24px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #2E2E2E;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-areas: 'header close' 'content content';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: header;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-color: #CCCCCC;
+  border-style: none none solid none;
+  border-width: 1px;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
+}
+
+.emotion-4 {
+  grid-area: content;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 24px;
+}
+
+.emotion-5 {
+  grid-area: close;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  box-sizing: border-box;
+  height: 100%;
+  border-color: #CCCCCC;
+  border-style: none none solid none;
+  border-width: 1px;
+  padding-inline: 8px;
+  padding-block: 8px;
+  padding-left: 0;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #2E2E2E;
+  margin: 0;
+  cursor: pointer;
+}
+
+.emotion-6 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-6:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-6:active:not(:disabled) {
+  background-color: #F4F4F4;
+}
+
+.emotion-6:disabled {
+  background-color: transparent;
+  color: #C0C0C0;
+}
+
+.emotion-6:disabled svg {
+  fill: #C0C0C0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-9 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
+  z-index: -1;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  bottom: calc(-16px / 2);
+}
+
+<div
+    aria-expanded="true"
+    aria-labelledby="MOCK-ID"
+    class="emotion-0"
+    id="MOCK-ID"
+    role="dialog"
+    tabindex="-1"
+  >
+    <div
+      class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+          data-testid="header-text"
+        >
+          header value
+        </div>
+        <div
+          class="emotion-4"
+        >
+          hello
+        </div>
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-label="close"
+            class="emotion-6"
+            data-testid="close-button"
+            type="button"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-8"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="emotion-9 emotion-10"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+      id="MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;

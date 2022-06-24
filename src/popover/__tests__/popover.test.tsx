@@ -650,10 +650,26 @@ describe('Popover', () => {
       const {asFragment, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
         hidePointer: false,
+        header: 'header value',
         overrides: {
           header: {
             paddingBlock: '24px',
             paddingInline: '20px',
+          },
+        },
+      });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('applies typography preset overrides', async () => {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        hidePointer: false,
+        header: 'header value',
+        overrides: {
+          header: {
+            typographyPreset: 'utilityLabel010',
           },
         },
       });
@@ -801,6 +817,20 @@ describe('Popover', () => {
           content: {
             paddingBlock: '24px',
             paddingInline: '20px',
+          },
+        },
+      });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('applies typography preset overrides', async () => {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          content: {
+            typographyPreset: 'editorialParagraph020',
           },
         },
       });
