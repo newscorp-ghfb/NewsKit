@@ -218,7 +218,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v3.13.0',
       codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/blob/develop/src/text-field/text-field.tsx',
+        'https://github.com/newscorp-ghfb/newskit/blob/develop/src/text-field/text-field.tsx',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=4897%3A131265',
     }}
