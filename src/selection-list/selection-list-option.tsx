@@ -21,7 +21,7 @@ export const SelectionListOption = ({
   );
 
   const iconStylePreset = getToken(
-    {theme, overrides: overrides?.icon},
+    {theme, overrides},
     `selectionListOption.icon`,
     '',
     'stylePreset',
