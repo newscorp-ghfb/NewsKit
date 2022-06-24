@@ -176,7 +176,7 @@ const DatePicker = (layoutProps: LayoutProps) => (
               {
                 title: 'Tip',
                 description:
-                  'If the user is required to select a date in the near future such as 1-2 months, the date picker should display fo',
+                  'Users should be able to change their date range by selecting a new date which becomes the new start date.',
                 media: getIllustrationComponent(
                   'patterns/forms/date-picker/tip',
                 ),

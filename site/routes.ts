@@ -123,6 +123,14 @@ export default [
         id: '/theme/foundation',
         subNav: [
           {
+            title: 'Borders',
+            page: true,
+            id: '/theme/foundation/borders',
+            description:
+              'Borders direct attention, identify components, communicate state, and express a brand.',
+            illustration: 'theme/hero-borders-illustration',
+          },
+          {
             title: 'Breakpoints',
             page: true,
             id: '/theme/foundation/breakpoints',
