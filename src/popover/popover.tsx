@@ -2,6 +2,7 @@ import * as React from 'react';
 import {
   FloatingContext,
   useClick,
+  useId,
   useInteractions as floatingUiUseInteractions,
 } from '@floating-ui/react-dom-interactions';
 import {PopoverProps} from './types';
@@ -34,14 +35,6 @@ const buildContextAriaAttributes: BuildAriaAttributesFn = ({
   'aria-controls': open ? id : undefined,
 });
 
-const buildFloatingElementAriaAttributes: BuildAriaAttributesFn = ({
-  floating: {open},
-  ref: {id},
-}) => ({
-  'aria-expanded': open,
-  'aria-labelledby': id,
-});
-
 const ThemelessPopover: React.FC<PopoverProps> = ({
   children,
   content,
@@ -59,6 +52,17 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
       filterOutFalsyProperties(overrides.closeButton),
     ),
   };
+  const headerId = useId();
+
+  const buildFloatingElementAriaAttributes: BuildAriaAttributesFn = ({
+    floating: {open},
+    ref: {id},
+  }) => ({
+    'aria-expanded': open,
+    'aria-labelledby': header ? undefined : id,
+    'aria-describedby': header ? headerId : undefined,
+  });
+
   if (!content) {
     return children;
   }
@@ -70,6 +74,7 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
         <StyledPopoverInnerPanel closePosition={closePosition}>
           {header !== undefined && (
             <StyledPopoverHeader
+              id={headerId}
               data-testid="header-text"
               overrides={overrides}
             >

@@ -445,17 +445,21 @@ describe('Popover', () => {
       const el = queryByRole('dialog');
       expect(el).toHaveAttribute('aria-expanded', 'true');
     });
-    test('floating element has default aria-labelledby', () => {
-      const {queryByRole, getByRole} = renderWithTheme(Popover, defaultProps);
+    test('floating element has default aria-labelledby if no header is passed', () => {
+      const {queryByRole, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        header: undefined,
+      });
       const btn = getByRole('button');
       fireEvent.click(btn);
       const el = queryByRole('dialog');
       expect(el).toHaveAttribute('aria-labelledby', MOCK_ID);
       expect(btn).toHaveAttribute('id', MOCK_ID);
     });
-    test('floating element has custom aria-labelledby', () => {
+    test('floating element has custom aria-labelledby if no header is passed', () => {
       const {queryByRole, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
+        header: undefined,
         children: (
           <button id="customId" type="submit">
             Add
@@ -465,6 +469,16 @@ describe('Popover', () => {
       fireEvent.click(getByRole('button'));
       const el = queryByRole('dialog');
       expect(el).toHaveAttribute('aria-labelledby', 'customId');
+    });
+    test('floating element has aria-describedby if header is passed', () => {
+      const {queryByRole, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        header: 'header value',
+      });
+      const btn = getByRole('button');
+      fireEvent.click(btn);
+      const el = queryByRole('dialog');
+      expect(el).toHaveAttribute('aria-describedby', MOCK_ID);
     });
     test('context element has aria-haspopup', () => {
       const {queryByRole} = renderWithTheme(Popover, defaultProps);

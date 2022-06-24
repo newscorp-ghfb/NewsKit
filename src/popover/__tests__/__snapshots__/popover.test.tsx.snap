@@ -275,7 +275,6 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -466,8 +465,8 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 }
 
 <div
+    aria-describedby="MOCK-ID"
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -484,6 +483,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
         <div
           class="emotion-3"
           data-testid="header-text"
+          id="MOCK-ID"
         >
           header value
         </div>
@@ -1306,7 +1306,6 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -1515,8 +1514,8 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 }
 
 <div
+    aria-describedby="MOCK-ID"
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -1533,6 +1532,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
         <div
           class="emotion-3"
           data-testid="header-text"
+          id="MOCK-ID"
         >
           header value
         </div>
@@ -1857,7 +1857,6 @@ exports[`Popover header applies logical prop overrides 1`] = `
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -2080,8 +2079,8 @@ exports[`Popover header applies logical prop overrides 1`] = `
 }
 
 <div
+    aria-describedby="MOCK-ID"
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -2098,6 +2097,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
         <div
           class="emotion-3"
           data-testid="header-text"
+          id="MOCK-ID"
         >
           header value
         </div>
@@ -2156,7 +2156,6 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -2364,8 +2363,8 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 }
 
 <div
+    aria-describedby="MOCK-ID"
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -2382,6 +2381,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
         <div
           class="emotion-3"
           data-testid="header-text"
+          id="MOCK-ID"
         >
           header value
         </div>
@@ -2436,7 +2436,6 @@ exports[`Popover header applies typography preset overrides 1`] = `
   <button
     aria-controls="MOCK-ID"
     aria-haspopup="dialog"
-    id="MOCK-ID"
     type="submit"
   >
     Add
@@ -2659,8 +2658,8 @@ exports[`Popover header applies typography preset overrides 1`] = `
 }
 
 <div
+    aria-describedby="MOCK-ID"
     aria-expanded="true"
-    aria-labelledby="MOCK-ID"
     class="emotion-0"
     id="MOCK-ID"
     role="dialog"
@@ -2677,6 +2676,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
         <div
           class="emotion-3"
           data-testid="header-text"
+          id="MOCK-ID"
         >
           header value
         </div>
