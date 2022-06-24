@@ -1,5 +1,4 @@
 import React from 'react';
-import {styled, getColorFromTheme} from 'newskit';
 import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {LayoutProps} from '../../../components/layout';
@@ -11,6 +10,7 @@ import {
 } from '../../../components/content-structure';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {Illustration} from '../../../components/illustrations/illustration-loader';
+import {StyledHeading} from '../../../utils/styled';
 
 const featureCardOverrides = {
   title: {
@@ -53,10 +53,6 @@ const FORMS_PATTERN_CARDS = [
     overrides: featureCardOverrides,
   },
 ];
-
-const StyledHeading = styled.span`
-  color: ${getColorFromTheme('inkBrand010')};
-`;
 
 const Overview = (layoutProps: LayoutProps) => (
   <PatternPageTemplate

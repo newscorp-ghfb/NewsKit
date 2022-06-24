@@ -164,7 +164,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v4.2.0',
       codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/blob/develop/src/checkbox/checkbox.tsx',
+        'https://github.com/newscorp-ghfb/newskit/blob/develop/src/checkbox/checkbox.tsx',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=3712%3A75609',
     }}
