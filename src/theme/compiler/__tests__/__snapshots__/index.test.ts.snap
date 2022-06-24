@@ -586,6 +586,9 @@ Object {
       },
     },
     "selectOptionItemIcon": Object {
+      "base": Object {
+        "iconColor": "#3358CC",
+      },
       "selected": Object {
         "iconColor": "#3358CC",
       },

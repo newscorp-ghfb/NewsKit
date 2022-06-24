@@ -532,6 +532,9 @@ Object {
       },
     },
     "selectOptionItemIcon": Object {
+      "base": Object {
+        "iconColor": "{{colors.interactiveInput040}}",
+      },
       "selected": Object {
         "iconColor": "{{colors.interactiveInput040}}",
       },
@@ -4693,6 +4696,9 @@ Object {
     },
   },
   "selectOptionItemIcon": Object {
+    "base": Object {
+      "iconColor": "{{colors.interactiveInput040}}",
+    },
     "selected": Object {
       "iconColor": "{{colors.interactiveInput040}}",
     },
