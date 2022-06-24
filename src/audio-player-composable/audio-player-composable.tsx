@@ -80,7 +80,7 @@ export const AudioPlayerComposable = ({
     }
     setCurrentTime(0);
     setDisplayDuration(0);
-  }, [src]);
+  }, [src, initialTime]);
 
   const {
     audioEvents,
@@ -231,7 +231,7 @@ export const AudioPlayerComposable = ({
       initialVolume,
       muteButtonSize,
     }),
-    [volume, onChangeVolumeSlider],
+    [volume, initialVolume, onChangeVolumeSlider],
   );
 
   const getSkipPreviousButtonProps = useCallback(
