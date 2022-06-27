@@ -17,6 +17,17 @@ export const StyledGridLayout = styled(GridLayout)<{vertical?: boolean}>`
     `
     position: relative;
   `};
+  ${({vertical}) =>
+    !vertical &&
+    `.slider {
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s linear all;
+  }
+
+  .slider input {
+    width: 100%;
+  }`};
 `;
 
 export const StyledGridLayoutItem = styled(GridLayoutItem)<{
@@ -26,4 +37,15 @@ export const StyledGridLayoutItem = styled(GridLayoutItem)<{
     vertical &&
     `position: absolute;
      bottom: 100%;`};
+`;
+
+export const TestContainer = styled.div<{vertical?: boolean}>`
+  ${({vertical}) =>
+    !vertical &&
+    `&:focus-within .slider,
+    &:hover .slider {
+    border: 1px solid green;
+    width: 100px;
+    margin-left: 4px;
+}`}
 `;

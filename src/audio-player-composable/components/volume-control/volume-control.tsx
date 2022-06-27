@@ -13,6 +13,7 @@ import {GridLayoutItem} from '../../../grid-layout';
 import {
   StyledGridLayout,
   StyledGridLayoutItem,
+  TestContainer,
   VolumeSliderContainer,
 } from './styled';
 import {useReactKeys} from '../../../utils/hooks';
@@ -76,46 +77,51 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
   const [volumeSliderInstructionId] = useReactKeys(1);
 
   return (
-    <StyledGridLayout
-      columns={gridColumns}
-      areas={gridAreas}
-      justifyItems={vertical ? 'center' : 'start'}
-      alignItems="center"
-      vertical={vertical}
-    >
-      <GridLayoutItem area="muteButton">
-        <MuteButton
-          volume={volume}
-          unMutedVolume={unMutedVolume}
-          onChange={onChange}
-          size={muteButtonSize || ButtonSize.Small}
-          muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
-          overrides={buttonOverrides}
-        />
-      </GridLayoutItem>
-      {!collapsed && (
-        <StyledGridLayoutItem area="slider" vertical={vertical}>
-          <VolumeSliderContainer vertical={vertical}>
-            <Slider
-              vertical={vertical}
-              min={0}
-              max={1}
-              step={0.1}
-              values={[volume]}
-              onChange={onSliderChange}
-              ariaLabel="Volume Control"
-              ariaValueText={`volume level ${[volume][0] * 10} of 10`}
-              dataTestId="volume-control-slider"
-              ariaDescribedBy={volumeSliderInstructionId}
-              overrides={sliderOverrides}
-            />
-            <ScreenReaderOnly id={volumeSliderInstructionId} aria-hidden="true">
-              Use the arrow keys to adjust volume
-            </ScreenReaderOnly>
-          </VolumeSliderContainer>
-        </StyledGridLayoutItem>
-      )}
-    </StyledGridLayout>
+    <TestContainer vertical={vertical}>
+      <StyledGridLayout
+        columns={gridColumns}
+        areas={gridAreas}
+        justifyItems={vertical ? 'center' : 'start'}
+        alignItems="center"
+        vertical={vertical}
+      >
+        <GridLayoutItem area="muteButton">
+          <MuteButton
+            volume={volume}
+            unMutedVolume={unMutedVolume}
+            onChange={onChange}
+            size={muteButtonSize || ButtonSize.Small}
+            muteKeyboardShortcuts={keyboardShortcuts?.muteToggle}
+            overrides={buttonOverrides}
+          />
+        </GridLayoutItem>
+        {!collapsed && (
+          <StyledGridLayoutItem area="slider" vertical={vertical}>
+            <VolumeSliderContainer vertical={vertical} className="slider">
+              <Slider
+                vertical={vertical}
+                min={0}
+                max={1}
+                step={0.1}
+                values={[volume]}
+                onChange={onSliderChange}
+                ariaLabel="Volume Control"
+                ariaValueText={`volume level ${[volume][0] * 10} of 10`}
+                dataTestId="volume-control-slider"
+                ariaDescribedBy={volumeSliderInstructionId}
+                overrides={sliderOverrides}
+              />
+              <ScreenReaderOnly
+                id={volumeSliderInstructionId}
+                aria-hidden="true"
+              >
+                Use the arrow keys to adjust volume
+              </ScreenReaderOnly>
+            </VolumeSliderContainer>
+          </StyledGridLayoutItem>
+        )}
+      </StyledGridLayout>
+    </TestContainer>
   );
 };
 

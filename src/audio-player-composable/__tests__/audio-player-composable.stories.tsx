@@ -143,6 +143,98 @@ const fullAudioPlayerLiveAreasMobile = `
   none        none      none      link      live
   prev        backward  play      forward   next
 `;
+const AudioPlayerFullRecordedExpandableVolume = (props: {
+  ariaLandmark: string;
+  src?: string;
+  autoPlay?: boolean;
+}) => {
+  const breakpointKey = useBreakpointKey();
+
+  return (
+    <AudioPlayerComposable src={AUDIO_SRC} {...props}>
+      <GridLayout
+        columns={{
+          xs: '1fr auto auto auto 1fr',
+          md: '50px 1fr auto auto auto 1fr 50px',
+        }}
+        rowGap="space040"
+        columnGap="space040"
+        areas={{
+          xs: fullAudioPlayerAreasMobile,
+          md: fullAudioPlayerAreasDesktop,
+        }}
+      >
+        {Areas => (
+          <>
+            <Areas.Play alignSelf="center">
+              <AudioPlayerPlayPauseButton />
+            </Areas.Play>
+
+            <Areas.Backward alignSelf="center">
+              <AudioPlayerReplayButton />
+            </Areas.Backward>
+
+            <Areas.Forward alignSelf="center">
+              <AudioPlayerForwardButton />
+            </Areas.Forward>
+
+            <Areas.Prev alignSelf="center" justifySelf="end">
+              <AudioPlayerSkipPreviousButton
+                onClick={() => console.log('on skip Prev track')}
+              />
+            </Areas.Prev>
+
+            <Areas.Next alignSelf="center">
+              <AudioPlayerSkipNextButton
+                onClick={() => console.log('on skip Next track')}
+              />
+            </Areas.Next>
+
+            <Areas.Volume alignSelf="center" justifySelf="start">
+              <AudioPlayerVolumeControl
+                collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+              />
+            </Areas.Volume>
+
+            <Areas.SeekBar>
+              <AudioPlayerSeekBar />
+            </Areas.SeekBar>
+
+            <Areas.CurrentTime>
+              <AudioPlayerTimeDisplay
+                format={({currentTime}) => calculateTime(currentTime)}
+              />
+            </Areas.CurrentTime>
+
+            <Areas.TotalTime justifySelf="end">
+              <AudioPlayerTimeDisplay
+                format={({duration}) => calculateTime(duration)}
+              />
+            </Areas.TotalTime>
+
+            <Areas.Link alignSelf="center" justifySelf="end">
+              <Hidden xs sm>
+                <IconButton
+                  aria-label="Open popout player"
+                  overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
+                  onClick={() => {
+                    window.open(
+                      'https://www.newskit.co.uk/',
+                      '',
+                      'width=380,height=665',
+                    );
+                  }}
+                >
+                  <IconFilledLaunch />
+                </IconButton>
+              </Hidden>
+            </Areas.Link>
+          </>
+        )}
+      </GridLayout>
+    </AudioPlayerComposable>
+  );
+};
 
 const AudioPlayerFullRecorded = (props: {
   ariaLandmark: string;
@@ -356,6 +448,8 @@ const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
 
 export const AudioPlayer = () => (
   <>
+    <StorybookSubHeading> Audio Player expandable volume</StorybookSubHeading>
+    <AudioPlayerFullRecordedExpandableVolume ariaLandmark="test" />
     <StorybookSubHeading>Audio Player - full recorded</StorybookSubHeading>
     <AudioPlayerFullRecorded ariaLandmark="audio player full recorded" />
     <br />
@@ -371,6 +465,22 @@ export const AudioPlayer = () => (
   </>
 );
 AudioPlayer.storyName = 'audio-player';
+
+export const TestVControlExpandable = () => {
+  const breakpointKey = useBreakpointKey();
+  return (
+    <AudioPlayerComposable src={AUDIO_SRC}>
+      <GridLayout columns="auto 1fr" columnGap="20px">
+        <AudioPlayerVolumeControl
+          collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+        />
+
+        <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+      </GridLayout>
+    </AudioPlayerComposable>
+  );
+};
+TestVControlExpandable.storyName = 'audio-player-volume-control-expand';
 
 export const AudioSubComponents = () => (
   <>
