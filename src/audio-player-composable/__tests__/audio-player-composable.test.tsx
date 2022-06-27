@@ -926,11 +926,7 @@ describe('Audio Player Composable', () => {
       ) as HTMLParagraphElement;
 
       const seekBar = getByTestId('audio-slider-track') as HTMLDivElement;
-      fireEvent.timeUpdate(audioElement, {
-        target: {
-          currentTime: 50,
-        },
-      });
+      fireEvent.timeUpdate(audioElement);
       expect(audioElement.currentTime).toEqual(50);
       expect(audioTimeLabel.innerHTML).toEqual('00:50/00:00 ');
       expect(seekBar.getAttribute('values')).toEqual('50');
