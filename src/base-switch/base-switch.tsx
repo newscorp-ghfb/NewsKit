@@ -74,7 +74,7 @@ export const BaseSwitch = React.forwardRef<HTMLInputElement, BaseSwitchProps>(
           setIsInputFocused(true);
         }
       },
-      [setIsInputFocused],
+      [setIsInputFocused, setIsInputFocusVisible],
     );
 
     const onInputBlur = useCallback(() => {

@@ -12,7 +12,6 @@ import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {ThemeProvider, createTheme} from '../../theme';
-import {defaultFocusVisible} from '../../utils/default-focus-visible';
 
 const Container = styled.div`
   margin: 24px;
@@ -515,7 +514,6 @@ const myCustomTransitionPresets = createTheme({
         loading: {
           backgroundColor: '{{colors.interactivePrimary020}}',
         },
-        'focus-visible': defaultFocusVisible,
       },
     },
   },
