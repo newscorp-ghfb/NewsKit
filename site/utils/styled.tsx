@@ -11,3 +11,7 @@ export const StyledDoHeading = styled.span`
 export const StyledDontHeading = styled.span`
   ${getColorCssFromTheme('color', 'inkNegative')};
 `;
+
+export const StyledEmailText = styled.span`
+  ${getColorCssFromTheme('color', 'blue040')};
+`;

@@ -21,6 +21,7 @@ import {
   StyledHeading,
   StyledDoHeading,
   StyledDontHeading,
+  StyledEmailText,
 } from '../../../utils/styled';
 
 const unorderedListOverrides = {
@@ -157,9 +158,7 @@ const EmailAddress = (layoutProps: LayoutProps) => (
                     <br />
                     <br />
                     Please enter a valid email address e.g{' '}
-                    <Link href="mailto: name@example.co.uk" target="_blank">
-                      name@example.co.uk
-                    </Link>
+                    <StyledEmailText>name@example.co.uk</StyledEmailText>
                   </>
                 ),
                 media: getIllustrationComponent(
