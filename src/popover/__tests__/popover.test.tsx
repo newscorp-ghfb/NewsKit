@@ -439,12 +439,6 @@ describe('Popover', () => {
       fireEvent.click(getByRole('button'));
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
-    test('floating element has aria-expanded', () => {
-      const {queryByRole, getByRole} = renderWithTheme(Popover, defaultProps);
-      fireEvent.click(getByRole('button'));
-      const el = queryByRole('dialog');
-      expect(el).toHaveAttribute('aria-expanded', 'true');
-    });
     test('floating element has default aria-labelledby if no header is passed', () => {
       const {queryByRole, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,

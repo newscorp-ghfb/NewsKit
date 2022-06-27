@@ -55,10 +55,8 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
   const headerId = `header-${useId()}`;
 
   const buildFloatingElementAriaAttributes: BuildAriaAttributesFn = ({
-    floating: {open},
     ref: {id},
   }) => ({
-    'aria-expanded': open,
     'aria-labelledby': header ? undefined : id,
     'aria-describedby': header ? headerId : undefined,
   });
