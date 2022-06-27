@@ -1,10 +1,11 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Banner, BannerProps} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {createTheme, ThemeProvider} from '../../theme';
+import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
 import {styled} from '../../utils/style';
 import {
   IconFilledInfo,
@@ -17,61 +18,64 @@ import {Button, ButtonOrButtonLinkProps} from '../../button';
 import {LinkInline} from '../../link';
 import {Cell, Grid, Visible} from '../../grid';
 import {GridLayout, GridLayoutItem} from '../..';
+import {themeObject} from '../../test/theme-select-object';
 
-const myCustomTheme = createTheme({
-  name: 'banner-intents-theme',
-  overrides: {
-    stylePresets: {
-      bannerContainerSolidCustom: {
-        base: {
-          backgroundColor: '{{colors.interfaceSkeleton020}}',
-          iconColor: '{{colors.inkInverse}}',
+const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
+  createTheme({
+    name: 'banner-intents-theme',
+    baseTheme: theme,
+    overrides: {
+      stylePresets: {
+        bannerContainerSolidCustom: {
+          base: {
+            backgroundColor: '{{colors.interfaceSkeleton020}}',
+            iconColor: '{{colors.inkInverse}}',
+          },
         },
-      },
-      bannerMessageCustom: {
-        base: {
-          color: '{{colors.inkContrast}}',
+        bannerMessageCustom: {
+          base: {
+            color: '{{colors.inkContrast}}',
+          },
         },
-      },
-      bannerActionsCustom: {
-        base: {
-          color: '{{colors.inkContrast}}',
-          backgroundColor: '{{colors.white}}',
-          borderRadius: '{{borders.borderRadiusSharp}}',
+        bannerActionsCustom: {
+          base: {
+            color: '{{colors.inkContrast}}',
+            backgroundColor: '{{colors.white}}',
+            borderRadius: '{{borders.borderRadiusSharp}}',
+          },
+          hover: {
+            backgroundColor: '{{colors.neutral050}}',
+          },
         },
-        hover: {
-          backgroundColor: '{{colors.neutral050}}',
+        bannerCloseCustomHorizontal: {
+          base: {
+            color: '{{colors.inkContrast}}',
+            iconColor: '{{colors.inkContrast}}',
+            backgroundColor: '{{colors.transparent}}',
+            borderRadius: '{{borders.borderRadiusSharp}}',
+            borderColor: '{{colors.transparent}}',
+          },
+          hover: {
+            backgroundColor: '{{colors.neutral050}}',
+          },
         },
-      },
-      bannerCloseCustomHorizontal: {
-        base: {
-          color: '{{colors.inkContrast}}',
-          iconColor: '{{colors.inkContrast}}',
-          backgroundColor: '{{colors.transparent}}',
-          borderRadius: '{{borders.borderRadiusSharp}}',
-          borderColor: '{{colors.transparent}}',
-        },
-        hover: {
-          backgroundColor: '{{colors.neutral050}}',
-        },
-      },
-      bannerCloseCustomVertical: {
-        base: {
-          color: '{{colors.inkContrast}}',
-          iconColor: '{{colors.inkContrast}}',
-          backgroundColor: '{{colors.transparent}}',
-          borderRadius: '{{borders.borderRadiusSharp}}',
-          borderStyle: 'solid',
-          borderWidth: '1px',
-          borderColor: '{{colors.inkContrast}}',
-        },
-        hover: {
-          backgroundColor: '{{colors.neutral050}}',
+        bannerCloseCustomVertical: {
+          base: {
+            color: '{{colors.inkContrast}}',
+            iconColor: '{{colors.inkContrast}}',
+            backgroundColor: '{{colors.transparent}}',
+            borderRadius: '{{borders.borderRadiusSharp}}',
+            borderStyle: 'solid',
+            borderWidth: '1px',
+            borderColor: '{{colors.inkContrast}}',
+          },
+          hover: {
+            backgroundColor: '{{colors.neutral050}}',
+          },
         },
       },
     },
-  },
-});
+  });
 
 const BannerWrapper = styled.div`
   margin-bottom: 24px;
@@ -204,6 +208,17 @@ export default {
   title: 'NewsKit Light/banner',
   component: () => 'None',
   disabledRules: [],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 export const StoryBannerDefault = () => (
@@ -320,98 +335,96 @@ export const StoryBannerWithOverrides = () => (
   <>
     <StorybookHeading>Banner</StorybookHeading>
     <StorybookSubHeading>with overrides</StorybookSubHeading>
-    <ThemeProvider theme={myCustomTheme}>
-      <BannerWrapper>
-        <BannerWithState
-          aria-label="Banner with overrides"
-          icon={
-            <IconFilledError
-              overrides={{
-                size: 'iconSize020',
-                stylePreset: 'inkContrast',
-              }}
-            />
-          }
-          actions={[
-            () => <CTABtn overrides={{stylePreset: 'bannerActionsCustom'}} />,
-          ]}
-          layout={{
-            xs: 'vertical',
-            sm: 'horizontal',
-            md: 'vertical',
-          }}
-          overrides={{
-            stylePreset: 'bannerContainerSolidCustom',
-            spaceInset: 'spaceInset060',
-            minHeight: 'sizing100',
-            grid: {
-              props: {
-                xsMargin: 'space030',
-                mdMargin: 'space040',
-                lgMargin: 'space050',
-              },
-            },
-            cell: {
-              props: {
-                xs: 12,
-                md: 10,
-                mdOffset: 1,
-              },
-            },
-            icon: {
-              spaceInline: 'space060',
-            },
-            content: {
-              spaceInline: 'space050',
-              title: {
-                stylePreset: 'inkContrast',
-                typographyPreset: 'utilityHeading030',
-                spaceStack: 'space050',
-              },
-              message: {
-                stylePreset: 'inkContrast',
-                typographyPreset: 'utilityBody030',
-              },
-            },
-            actions: {
-              closeButton: {
-                stylePreset: {
-                  xs: 'bannerCloseCustomVertical',
-                  sm: 'bannerCloseCustomHorizontal',
-                  md: 'bannerCloseCustomVertical',
-                },
-              },
-            },
-          }}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </BannerWithState>
-      </BannerWrapper>
-      <StorybookSubHeading>
-        with spaceInset overrides on each breakpoint
-      </StorybookSubHeading>
-
-      <Banner
-        title="Banner title"
-        aria-label="Banner with breakpoint overrides"
+    <BannerWrapper>
+      <BannerWithState
+        aria-label="Banner with overrides"
+        icon={
+          <IconFilledError
+            overrides={{
+              size: 'iconSize020',
+              stylePreset: 'inkContrast',
+            }}
+          />
+        }
+        actions={[
+          () => <CTABtn overrides={{stylePreset: 'bannerActionsCustom'}} />,
+        ]}
+        layout={{
+          xs: 'vertical',
+          sm: 'horizontal',
+          md: 'vertical',
+        }}
         overrides={{
-          spaceInset: {
-            xs: 'space050 space045 space045 space050',
-            md: 'space040 space070 space070 space050',
-            lg: 'space040',
+          stylePreset: 'bannerContainerSolidCustom',
+          spaceInset: 'spaceInset060',
+          minHeight: 'sizing100',
+          grid: {
+            props: {
+              xsMargin: 'space030',
+              mdMargin: 'space040',
+              lgMargin: 'space050',
+            },
+          },
+          cell: {
+            props: {
+              xs: 12,
+              md: 10,
+              mdOffset: 1,
+            },
+          },
+          icon: {
+            spaceInline: 'space060',
+          },
+          content: {
+            spaceInline: 'space050',
+            title: {
+              stylePreset: 'inkContrast',
+              typographyPreset: 'utilityHeading030',
+              spaceStack: 'space050',
+            },
+            message: {
+              stylePreset: 'inkContrast',
+              typographyPreset: 'utilityBody030',
+            },
+          },
+          actions: {
+            closeButton: {
+              stylePreset: {
+                xs: 'bannerCloseCustomVertical',
+                sm: 'bannerCloseCustomHorizontal',
+                md: 'bannerCloseCustomVertical',
+              },
+            },
           },
         }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing eli
-      </Banner>
-    </ThemeProvider>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </BannerWithState>
+    </BannerWrapper>
+    <StorybookSubHeading>
+      with spaceInset overrides on each breakpoint
+    </StorybookSubHeading>
+
+    <Banner
+      title="Banner title"
+      aria-label="Banner with breakpoint overrides"
+      overrides={{
+        spaceInset: {
+          xs: 'space050 space045 space045 space050',
+          md: 'space040 space070 space070 space050',
+          lg: 'space040',
+        },
+      }}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing eli
+    </Banner>
   </>
 );
 StoryBannerWithOverrides.storyName = 'banner-with-overrides';
 
 export const StoryBannerWithGridAlignment = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <StorybookSubHeading>Align to Grid component</StorybookSubHeading>
     <Grid>
       <Cell xs="full-width">Content above the banner</Cell>
@@ -451,13 +464,13 @@ export const StoryBannerWithGridAlignment = () => (
         Content bellow the banner
       </Cell>
     </Grid>
-  </ThemeProvider>
+  </>
 );
 
 StoryBannerWithGridAlignment.storyName = 'banner-with-grid-alignment';
 
 export const StoryBannerWithGridLayoutAlignment = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <StorybookSubHeading>Align to GridLayout component</StorybookSubHeading>
     <GridLayout>
       <GridLayoutItem>Content above the banner</GridLayoutItem>
@@ -498,7 +511,7 @@ export const StoryBannerWithGridLayoutAlignment = () => (
         Content bellow the banner
       </GridLayoutItem>
     </GridLayout>
-  </ThemeProvider>
+  </>
 );
 
 StoryBannerWithGridLayoutAlignment.storyName =
