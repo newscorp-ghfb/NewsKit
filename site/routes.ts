@@ -811,6 +811,13 @@ export default [
             description: `Ask for a user’s date of birth when we need to validate the user’s age. This should not be collected unless you have a need for it to validate a user’s age or benefit them in some way.`,
             illustration: 'patterns/forms/date-of-birth/hero',
           },
+          {
+            title: 'Gender/Sex/Title',
+            page: true,
+            id: '/patterns/forms/gender',
+            description: `Use this component to collect a user’s gender.`,
+            illustration: 'patterns/forms/gender/hero',
+          },
         ],
       },
     ],
