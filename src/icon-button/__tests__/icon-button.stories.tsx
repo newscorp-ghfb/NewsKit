@@ -1,10 +1,6 @@
 import * as React from 'react';
 import {IconButton} from '..';
-import {
-  getColorFromTheme,
-  styled,
-  getColorCssFromTheme,
-} from '../../utils/style';
+import {styled, getColorCssFromTheme} from '../../utils/style';
 import {StorybookSubHeading, StorybookH3} from '../../test/storybook-comps';
 import {
   Block,
@@ -38,16 +34,13 @@ const Label = styled.div<{hasBackground?: boolean}>`
   align-items: center;
   justify-content: center;
   ${({hasBackground}) =>
-    getColorCssFromTheme('color', hasBackground ? 'white' : 'inkBase')};
+    getColorCssFromTheme('color', hasBackground ? 'inkInverse' : 'inkBase')};
 `;
 
 const Background = styled.div<{hasBackground?: boolean}>`
   margin-top: 24px;
-  ${({hasBackground, theme}) =>
-    hasBackground && {
-      background: getColorFromTheme('black')({theme}),
-      color: getColorFromTheme('white')({theme}),
-    }}
+  ${({hasBackground}) =>
+    hasBackground && getColorCssFromTheme('background', 'inkBase')};
 `;
 
 const IconButtonIntentKindsScenario: React.FC<{
@@ -57,13 +50,13 @@ const IconButtonIntentKindsScenario: React.FC<{
   overrides: ButtonOverrides;
 }> = ({hasBackground = false, name, buttonKinds, overrides}) => (
   <Background hasBackground={hasBackground}>
-    <StorybookSubHeading stylePreset={hasBackground ? 'white' : undefined}>
+    <StorybookSubHeading stylePreset={hasBackground ? 'inkInverse' : undefined}>
       {name}
     </StorybookSubHeading>
     <Grid>
       <Cell xsHidden sm={3}>
         <Stack>
-          <StorybookH3 stylePreset={hasBackground ? 'white' : undefined}>
+          <StorybookH3 stylePreset={hasBackground ? 'inkInverse' : undefined}>
             State
           </StorybookH3>
           {states.map(state => (
@@ -79,7 +72,9 @@ const IconButtonIntentKindsScenario: React.FC<{
               spaceInline="space020"
               stackDistribution={StackDistribution.SpaceEvenly}
             >
-              <StorybookH3 stylePreset={hasBackground ? 'white' : undefined}>
+              <StorybookH3
+                stylePreset={hasBackground ? 'inkInverse' : undefined}
+              >
                 {kind}
               </StorybookH3>
               <Block data-state="Default">
