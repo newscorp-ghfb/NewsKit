@@ -2824,6 +2824,11 @@ Object {
       "color": "{{colors.inkSubtle}}",
     },
   },
+  "audioPlayerLabels": Object {
+    "base": Object {
+      "color": "{{colors.inkBase}}",
+    },
+  },
   "audioPlayerSeekBarBuffering": Object {
     "base": Object {
       "backgroundColor": "{{colors.interface030}}",
