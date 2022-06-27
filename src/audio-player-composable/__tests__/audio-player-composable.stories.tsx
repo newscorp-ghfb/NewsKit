@@ -415,7 +415,7 @@ const AudioPlayerInlineRecorded = (props: {
       alignItems="center"
     >
       <GridLayoutItem alignSelf="end">
-        <AudioPlayerVolumeControl vertical />
+        <AudioPlayerVolumeControl />
       </GridLayoutItem>
       <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
       <AudioPlayerTimeDisplay
@@ -470,7 +470,7 @@ export const TestVControlExpandable = () => {
   const breakpointKey = useBreakpointKey();
   return (
     <AudioPlayerComposable src={AUDIO_SRC}>
-      <GridLayout columns="auto 1fr" columnGap="20px">
+      <GridLayout columns="auto 1fr" rows="1fr" columnGap="20px" rowGap="100px">
         <AudioPlayerVolumeControl
           collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
         />

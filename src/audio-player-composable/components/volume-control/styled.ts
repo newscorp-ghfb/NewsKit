@@ -23,10 +23,6 @@ export const StyledGridLayout = styled(GridLayout)<{vertical?: boolean}>`
     width: 0;
     overflow: hidden;
     transition: 0.5s linear all;
-  }
-
-  .slider input {
-    width: 100%;
   }`};
 `;
 
@@ -44,8 +40,8 @@ export const TestContainer = styled.div<{vertical?: boolean}>`
     !vertical &&
     `&:focus-within .slider,
     &:hover .slider {
-    border: 1px solid green;
+    margin-left: 8px;
     width: 100px;
-    margin-left: 4px;
+    overflow: visible;
 }`}
 `;
