@@ -123,6 +123,14 @@ export default [
         id: '/theme/foundation',
         subNav: [
           {
+            title: 'Borders',
+            page: true,
+            id: '/theme/foundation/borders',
+            illustration: 'theme/borders/hero',
+            description:
+              'Borders direct attention, identify components, communicate state, and express a brand.',
+          },
+          {
             title: 'Breakpoints',
             page: true,
             id: '/theme/foundation/breakpoints',
@@ -176,6 +184,14 @@ export default [
             illustration: 'theme/motion/hero',
             description:
               'Motion is used to create movement and narrative within a product. Timely animated interface elements attract attention, provide guidance and enhance user experience.',
+          },
+          {
+            title: 'Outlines',
+            page: true,
+            id: '/theme/foundation/outlines',
+            illustration: 'theme/borders/hero',
+            description:
+              'Outlines provide visual cues about the focus or active states of elements.',
           },
           {
             title: 'Opacity',
@@ -810,6 +826,20 @@ export default [
             id: '/patterns/forms/date-of-birth',
             description: `Ask for a user’s date of birth when we need to validate the user’s age. This should not be collected unless you have a need for it to validate a user’s age or benefit them in some way.`,
             illustration: 'patterns/forms/date-of-birth/hero',
+          },          
+         {
+            title: 'Date picker',
+            page: true,
+            id: '/patterns/forms/date-picker',
+            description: `Use this data entry type when capturing a date that is in the future such as a delivery date or booking date.`,
+            illustration: 'patterns/forms/date-picker/hero',
+          },
+          {
+            title: 'Email address',
+            page: true,
+            id: '/patterns/forms/email-address',
+            description: `Ask for a user’s email address to provide a service, to contact them directly, or as a unique way of identifying them.`,
+            illustration: 'patterns/forms/email-address/hero',
           },
           {
             title: 'Gender/Sex/Title',
