@@ -818,6 +818,13 @@ export default [
             description: `Use this component to collect a user’s gender.`,
             illustration: 'patterns/forms/gender/hero',
           },
+          {
+            title: 'Names',
+            page: true,
+            id: '/patterns/forms/names',
+            description: `Ask for a user’s name when it is needed to provide a service.`,
+            illustration: 'patterns/forms/names/hero',
+          },
         ],
       },
     ],
