@@ -33,6 +33,12 @@ const myCustomAccordionTheme = createTheme({
           backgroundColor: '#f08080',
           color: '#FFD23F',
         },
+        'focus-visible': {
+          outlineColor: '{{outlines.outlineColorDefault}}',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
+        },
       },
       accordionPanelCustom: {
         base: {

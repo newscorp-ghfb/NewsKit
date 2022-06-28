@@ -7,6 +7,7 @@ import {
 } from '../../test/storybook-comps';
 import {IconFilledEmail} from '../../icons';
 import {createTheme, ThemeProvider} from '../../theme';
+import {defaultFocusVisible} from '../../utils/default-focus-visible';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-link-theme',
@@ -27,6 +28,7 @@ const myCustomTheme = createTheme({
         hover: {
           color: '{{colors.inkLinkHover}}',
         },
+        'focus-visible': defaultFocusVisible,
       },
     },
   },
@@ -122,9 +124,7 @@ export const StoryLink = () => (
     </LinkInline>
     <br />
     <br />
-    <LinkInline href="mailto:###" overrides={{stylePreset: 'linkEmail'}}>
-      Inline mail link
-    </LinkInline>
+    <LinkInline href="mailto:###">Inline mail link</LinkInline>
     <br />
     <br />
     <LinkInline href="tel:###">Inline telephone link</LinkInline>
@@ -400,6 +400,7 @@ const myCustomLinkTheme = createTheme({
           color: '{{colors.inkLinkHover}}',
           iconColor: '{{colors.inkLinkHover}}',
         },
+        'focus-visible': defaultFocusVisible,
       },
     },
   },

@@ -1,4 +1,5 @@
 import {StylePreset} from '../theme/types';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 export default {
   menuItemVertical: {
@@ -36,6 +37,7 @@ export default {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
 
   menuItemHorizontal: {
@@ -72,6 +74,7 @@ export default {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
 
   menuItemHorizontalInverse: {
@@ -108,5 +111,6 @@ export default {
       color: '{{colors.interactiveInverse020}}',
       iconColor: '{{colors.interactiveInverse020}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
 } as Record<string, StylePreset>;

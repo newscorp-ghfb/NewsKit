@@ -21,6 +21,13 @@ export const stylePresets = {
     active: {
       backgroundColor: '{{colors.interactiveSecondary020}}',
     },
+    'focus-visible': {
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      outlineOffset: '{{outlines.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
+    },
   },
   linkSectionNavigation: {
     base: {
@@ -51,6 +58,13 @@ export const stylePresets = {
         '{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}',
       color: '{{colors.interactivePrimary030}}',
       textDecoration: 'none',
+    },
+    'focus-visible': {
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      outlineOffset: '{{outlines.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
     },
   },
   sideBarNavigation: {
@@ -424,6 +438,13 @@ export const stylePresets = {
       color: '{{colors.interactivePrimary020}}',
       textDecoration: 'none',
     },
+    'focus-visible': {
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      outlineOffset: '{{outlines.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
+    },
   },
   roadmapCardContainerInteractive: {
     base: {
@@ -522,6 +543,13 @@ export const stylePresets = {
       backgroundColor: '{{colors.interactiveInverse020}}',
       color: '{{colors.inkBrand030}}',
       iconColor: '{{colors.inkBrand030}}',
+    },
+    'focus-visible': {
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      outlineOffset: '{{outlines.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
     },
   },
 
@@ -785,6 +813,13 @@ export const stylePresets = {
     loading: {
       backgroundColor: '{{colors.interactiveInverse020}}',
     },
+    'focus-visible': {
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      outlineOffset: '{{outlines.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
+    },
   },
   buttonOutlinedInverseDocs: {
     base: {
@@ -812,6 +847,13 @@ export const stylePresets = {
     loading: {
       backgroundColor: '{{colors.interactiveInverse020}}',
       borderStyle: 'none',
+    },
+    'focus-visible': {
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      outlineOffset: '{{outlines.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
     },
   },
   dividerInverse: {

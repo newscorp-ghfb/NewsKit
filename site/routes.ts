@@ -123,6 +123,14 @@ export default [
         id: '/theme/foundation',
         subNav: [
           {
+            title: 'Borders',
+            page: true,
+            id: '/theme/foundation/borders',
+            illustration: 'theme/borders/hero',
+            description:
+              'Borders direct attention, identify components, communicate state, and express a brand.',
+          },
+          {
             title: 'Breakpoints',
             page: true,
             id: '/theme/foundation/breakpoints',
@@ -176,6 +184,14 @@ export default [
             illustration: 'theme/motion/hero',
             description:
               'Motion is used to create movement and narrative within a product. Timely animated interface elements attract attention, provide guidance and enhance user experience.',
+          },
+          {
+            title: 'Outlines',
+            page: true,
+            id: '/theme/foundation/outlines',
+            illustration: 'theme/borders/hero',
+            description:
+              'Outlines provide visual cues about the focus or active states of elements.',
           },
           {
             title: 'Opacity',
