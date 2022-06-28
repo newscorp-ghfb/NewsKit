@@ -72,8 +72,8 @@ export const AudioPlayerComposable = ({
   });
 
   useEffect(() => {
-    // On render onTimeUpdate will be fired and 50 will be set as a value for currentTime state.
-    // I can't set this one to the currentTime state directly as the audioElement time
+    // On render onTimeUpdate will be fired and initialTime will be set as a value for currentTime state.
+    // I can't set this one to the setCurrentTime state directly as the audioElement time
     // will still be 0, currentTime will be overridden to 0 and the audio will start from 0
     if (audioRef && audioRef.current) {
       audioRef.current.currentTime = initialTime;
