@@ -9,6 +9,7 @@ import {
 import {IconFilledEmail} from '../../icons';
 import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
 import {themeObject} from '../../test/theme-select-object';
+import {defaultFocusVisible} from '../../utils/default-focus-visible';
 
 const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
   createTheme({
@@ -32,6 +33,7 @@ const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
             color: '{{colors.inkLinkHover}}',
           },
         },
+        'focus-visible': defaultFocusVisible,
       },
     },
   });
@@ -132,9 +134,7 @@ export const StoryLink = () => (
     </LinkInline>
     <br />
     <br />
-    <LinkInline href="mailto:###" overrides={{stylePreset: 'linkEmail'}}>
-      Inline mail link
-    </LinkInline>
+    <LinkInline href="mailto:###">Inline mail link</LinkInline>
     <br />
     <br />
     <LinkInline href="tel:###">Inline telephone link</LinkInline>
@@ -410,6 +410,7 @@ const myCustomLinkTheme = createTheme({
           color: '{{colors.inkLinkHover}}',
           iconColor: '{{colors.inkLinkHover}}',
         },
+        'focus-visible': defaultFocusVisible,
       },
     },
   },

@@ -8,6 +8,7 @@ import {getColorFromTheme, styled} from '../../utils/style';
 import {IconFilledEmail} from '../../icons';
 import {Stack} from '../../stack';
 import {createTheme, ThemeProvider} from '../../theme';
+import {defaultFocusVisible} from '../../utils/default-focus-visible';
 
 const Container = styled.div<{hasBlackBackground?: boolean}>`
   margin: 24px;
@@ -29,6 +30,7 @@ const myCustomTheme = createTheme({
           iconColor: '{{colors.inkInverse}}',
           backgroundColor: '{{colors.red020}}',
         },
+        'focus-visible': defaultFocusVisible,
       },
     },
   },
@@ -102,15 +104,15 @@ export const StoryTag = () => (
         spaceInline="space020"
         wrap="wrap"
       >
-        <Tag size={TagSize.Small}>
+        <Tag size={TagSize.Small} href="http://example.com">
           <IconFilledEmail />
           Text
         </Tag>
-        <Tag size={TagSize.Medium}>
+        <Tag size={TagSize.Medium} href="http://example.com">
           <IconFilledEmail />
           Text
         </Tag>
-        <Tag size={TagSize.Large}>
+        <Tag size={TagSize.Large} href="http://example.com">
           <IconFilledEmail />
           Text
         </Tag>
@@ -237,6 +239,7 @@ const myCustomThemeTransitions = createTheme({
           backgroundColor: '{{colors.amber070}}',
           borderColor: '{{colors.green040}}',
         },
+        'focus-visible': defaultFocusVisible,
       },
     },
   },

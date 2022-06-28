@@ -2,7 +2,6 @@ import React from 'react';
 import {Headline, Stack, Flow, TextBlock} from 'newskit';
 import {Link} from '../link';
 
-const ncuNewskitRepoLink = `https://github.com/newscorp-ghfb/ncu-newskit/releases/tag/`;
 const newskitRepoLink = `https://github.com/newscorp-ghfb/newskit/releases/tag/`;
 
 export const Introduced: React.FC<{
@@ -14,12 +13,10 @@ export const Introduced: React.FC<{
       <Headline overrides={{typographyPreset: 'utilityLabel020'}}>
         Introduced
       </Headline>
-      {introducedLink ? (
+      {introducedLink && introduced >= 'v5.0.0' ? (
         <Link
           target="_blank"
-          href={`${
-            introduced >= 'v5.0.0' ? newskitRepoLink : ncuNewskitRepoLink
-          }${introduced}`}
+          href={`${newskitRepoLink}${introduced}`}
           overrides={{typographyPreset: 'utilityButton030'}}
         >
           {introduced}

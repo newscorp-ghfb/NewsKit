@@ -365,6 +365,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-9:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-9:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-9 {
     transition-property: background-color;
@@ -676,7 +691,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: block;
 }
 
-.emotion-537 {
+.emotion-557 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -684,7 +699,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-538 {
+.emotion-558 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -695,55 +710,55 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen {
-  .emotion-539 {
+  .emotion-559 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-539 {
+  .emotion-559 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-539 {
+  .emotion-559 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-539 {
+  .emotion-559 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-539 {
+  .emotion-559 {
     display: block;
   }
 }
 
-.emotion-541 {
+.emotion-561 {
   margin-bottom: 32px;
 }
 
-.emotion-542 {
+.emotion-562 {
   margin-inline: 32px;
   margin-block: 24px;
 }
 
-.emotion-543 {
+.emotion-563 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-544 {
+.emotion-564 {
   display: grid;
   grid-template-columns: 1fr 24px;
 }
 
-.emotion-545 {
+.emotion-565 {
   margin: 0;
   color: #2E2E2E;
   font-family: "Poppins",sans-serif;
@@ -753,11 +768,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-545 svg {
+.emotion-565 svg {
   fill: #2E2E2E;
 }
 
-.emotion-546 {
+.emotion-566 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -767,7 +782,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-546 {
+  .emotion-566 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -775,19 +790,19 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-546 {
+  .emotion-566 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-546.emotion-546 {
+.emotion-566.emotion-566 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-548 {
+.emotion-568 {
   margin-block: 24px;
 }
 
@@ -1370,6 +1385,31 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
+                              href="/theme/foundation/borders"
+                              tabindex="-1"
+                            >
+                              <div
+                                class="emotion-10"
+                              >
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Borders
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
+                          >
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
                               href="/theme/foundation/breakpoints"
                               tabindex="-1"
                             >
@@ -1533,6 +1573,31 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                     class="emotion-17"
                                   >
                                     Motion
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
+                          >
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/foundation/outlines"
+                              tabindex="-1"
+                            >
+                              <div
+                                class="emotion-10"
+                              >
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Outlines
                                   </span>
                                 </div>
                               </div>
@@ -3590,16 +3655,66 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               </div>
                             </a>
                           </li>
+                          <li
+                            class="nk-menu-item emotion-13"
+                          >
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/patterns/forms/address"
+                              tabindex="-1"
+                            >
+                              <div
+                                class="emotion-10"
+                              >
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Address
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
+                          >
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/patterns/forms/date-of-birth"
+                              tabindex="-1"
+                            >
+                              <div
+                                class="emotion-10"
+                              >
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Date of birth
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
                         </ul>
                       </li>
                     </div>
                   </ul>
                   <div
-                    class="emotion-537"
+                    class="emotion-557"
                   >
                     <hr
                       aria-hidden="true"
-                      class="emotion-538"
+                      class="emotion-558"
                       data-testid="divider"
                     />
                   </div>
@@ -3607,7 +3722,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </nav>
             </div>
             <div
-              class="emotion-539"
+              class="emotion-559"
             >
               <nav
                 aria-label="menu-sidebar"
@@ -3620,28 +3735,28 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 />
               </nav>
               <div
-                class="emotion-541"
+                class="emotion-561"
               />
             </div>
             <div
-              class="emotion-542"
+              class="emotion-562"
             >
               <a
-                class="emotion-543"
+                class="emotion-563"
                 href="https://github.com/newscorp-ghfb/newskit"
                 tabindex="-1"
               >
                 <div
-                  class="emotion-544"
+                  class="emotion-564"
                 >
                   <p
-                    class="emotion-545"
+                    class="emotion-565"
                   >
                     Github
                   </p>
                   <svg
                     aria-hidden="true"
-                    class="emotion-546 emotion-547"
+                    class="emotion-566 emotion-567"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -3658,7 +3773,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 </div>
               </a>
               <div
-                class="emotion-548"
+                class="emotion-568"
               />
             </div>
           </div>
@@ -3907,6 +4022,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-9:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-9:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-9:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4220,7 +4350,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: block;
 }
 
-.emotion-537 {
+.emotion-557 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -4228,7 +4358,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-538 {
+.emotion-558 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -4238,7 +4368,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   width: 100%;
 }
 
-.emotion-541 {
+.emotion-561 {
   margin-bottom: 32px;
 }
 
@@ -4787,6 +4917,30 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
+                        href="/theme/foundation/borders"
+                      >
+                        <div
+                          class="emotion-10"
+                        >
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Borders
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
+                    >
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
                         href="/theme/foundation/breakpoints"
                       >
                         <div
@@ -4943,6 +5097,30 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               class="emotion-17"
                             >
                               Motion
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
+                    >
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/foundation/outlines"
+                      >
+                        <div
+                          class="emotion-10"
+                        >
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Outlines
                             </span>
                           </div>
                         </div>
@@ -6928,16 +7106,64 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         </div>
                       </a>
                     </li>
+                    <li
+                      class="nk-menu-item emotion-13"
+                    >
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/patterns/forms/address"
+                      >
+                        <div
+                          class="emotion-10"
+                        >
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Address
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
+                    >
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/patterns/forms/date-of-birth"
+                      >
+                        <div
+                          class="emotion-10"
+                        >
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Date of birth
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
                   </ul>
                 </li>
               </div>
             </ul>
             <div
-              class="emotion-537"
+              class="emotion-557"
             >
               <hr
                 aria-hidden="true"
-                class="emotion-538"
+                class="emotion-558"
                 data-testid="divider"
               />
             </div>
@@ -6958,7 +7184,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
           />
         </nav>
         <div
-          class="emotion-541"
+          class="emotion-561"
         />
       </div>
     </div>
@@ -7330,6 +7556,21 @@ exports[`Sidebar renders correctly when open 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-9:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-9:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-9 {
     transition-property: background-color;
@@ -7641,7 +7882,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: block;
 }
 
-.emotion-537 {
+.emotion-557 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -7649,7 +7890,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-538 {
+.emotion-558 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -7660,55 +7901,55 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen {
-  .emotion-539 {
+  .emotion-559 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-539 {
+  .emotion-559 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-539 {
+  .emotion-559 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-539 {
+  .emotion-559 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-539 {
+  .emotion-559 {
     display: block;
   }
 }
 
-.emotion-541 {
+.emotion-561 {
   margin-bottom: 32px;
 }
 
-.emotion-542 {
+.emotion-562 {
   margin-inline: 32px;
   margin-block: 24px;
 }
 
-.emotion-543 {
+.emotion-563 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-544 {
+.emotion-564 {
   display: grid;
   grid-template-columns: 1fr 24px;
 }
 
-.emotion-545 {
+.emotion-565 {
   margin: 0;
   color: #2E2E2E;
   font-family: "Poppins",sans-serif;
@@ -7718,11 +7959,11 @@ exports[`Sidebar renders correctly when open 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-545 svg {
+.emotion-565 svg {
   fill: #2E2E2E;
 }
 
-.emotion-546 {
+.emotion-566 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -7732,7 +7973,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-546 {
+  .emotion-566 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7740,19 +7981,19 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-546 {
+  .emotion-566 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-546.emotion-546 {
+.emotion-566.emotion-566 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-548 {
+.emotion-568 {
   margin-block: 24px;
 }
 
@@ -8319,6 +8560,30 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
+                              href="/theme/foundation/borders"
+                            >
+                              <div
+                                class="emotion-10"
+                              >
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Borders
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
+                          >
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
                               href="/theme/foundation/breakpoints"
                             >
                               <div
@@ -8475,6 +8740,30 @@ exports[`Sidebar renders correctly when open 1`] = `
                                     class="emotion-17"
                                   >
                                     Motion
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
+                          >
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/theme/foundation/outlines"
+                            >
+                              <div
+                                class="emotion-10"
+                              >
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Outlines
                                   </span>
                                 </div>
                               </div>
@@ -10460,16 +10749,64 @@ exports[`Sidebar renders correctly when open 1`] = `
                               </div>
                             </a>
                           </li>
+                          <li
+                            class="nk-menu-item emotion-13"
+                          >
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/patterns/forms/address"
+                            >
+                              <div
+                                class="emotion-10"
+                              >
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Address
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
+                          >
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/patterns/forms/date-of-birth"
+                            >
+                              <div
+                                class="emotion-10"
+                              >
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Date of birth
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
                         </ul>
                       </li>
                     </div>
                   </ul>
                   <div
-                    class="emotion-537"
+                    class="emotion-557"
                   >
                     <hr
                       aria-hidden="true"
-                      class="emotion-538"
+                      class="emotion-558"
                       data-testid="divider"
                     />
                   </div>
@@ -10477,7 +10814,7 @@ exports[`Sidebar renders correctly when open 1`] = `
               </nav>
             </div>
             <div
-              class="emotion-539"
+              class="emotion-559"
             >
               <nav
                 aria-label="menu-sidebar"
@@ -10490,27 +10827,27 @@ exports[`Sidebar renders correctly when open 1`] = `
                 />
               </nav>
               <div
-                class="emotion-541"
+                class="emotion-561"
               />
             </div>
             <div
-              class="emotion-542"
+              class="emotion-562"
             >
               <a
-                class="emotion-543"
+                class="emotion-563"
                 href="https://github.com/newscorp-ghfb/newskit"
               >
                 <div
-                  class="emotion-544"
+                  class="emotion-564"
                 >
                   <p
-                    class="emotion-545"
+                    class="emotion-565"
                   >
                     Github
                   </p>
                   <svg
                     aria-hidden="true"
-                    class="emotion-546 emotion-547"
+                    class="emotion-566 emotion-567"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -10527,7 +10864,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                 </div>
               </a>
               <div
-                class="emotion-548"
+                class="emotion-568"
               />
             </div>
           </div>
@@ -10776,6 +11113,21 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-9:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-9:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-9:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -11089,7 +11441,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: block;
 }
 
-.emotion-537 {
+.emotion-557 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -11097,7 +11449,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-538 {
+.emotion-558 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -11107,7 +11459,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   width: 100%;
 }
 
-.emotion-541 {
+.emotion-561 {
   margin-bottom: 32px;
 }
 
@@ -11659,6 +12011,30 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
+                        href="/theme/foundation/borders"
+                      >
+                        <div
+                          class="emotion-10"
+                        >
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Borders
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
+                    >
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
                         href="/theme/foundation/breakpoints"
                       >
                         <div
@@ -11815,6 +12191,30 @@ exports[`Sidebar renders correctly when open 1`] = `
                               class="emotion-17"
                             >
                               Motion
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
+                    >
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/theme/foundation/outlines"
+                      >
+                        <div
+                          class="emotion-10"
+                        >
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Outlines
                             </span>
                           </div>
                         </div>
@@ -13800,16 +14200,64 @@ exports[`Sidebar renders correctly when open 1`] = `
                         </div>
                       </a>
                     </li>
+                    <li
+                      class="nk-menu-item emotion-13"
+                    >
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/patterns/forms/address"
+                      >
+                        <div
+                          class="emotion-10"
+                        >
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Address
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
+                    >
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/patterns/forms/date-of-birth"
+                      >
+                        <div
+                          class="emotion-10"
+                        >
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Date of birth
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
                   </ul>
                 </li>
               </div>
             </ul>
             <div
-              class="emotion-537"
+              class="emotion-557"
             >
               <hr
                 aria-hidden="true"
-                class="emotion-538"
+                class="emotion-558"
                 data-testid="divider"
               />
             </div>
@@ -13830,7 +14278,7 @@ exports[`Sidebar renders correctly when open 1`] = `
           />
         </nav>
         <div
-          class="emotion-541"
+          class="emotion-561"
         />
       </div>
     </div>
