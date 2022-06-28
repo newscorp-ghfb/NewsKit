@@ -91,7 +91,7 @@ const DatePicker = (layoutProps: LayoutProps) => (
                 description:
                   'On mobile, users should be able to scroll or swipe through months as this is an easier interaction than tapping a small CTA.',
                 media: getIllustrationComponent(
-                  'patterns/forms/date-picker/how-to-use/mobbile',
+                  'patterns/forms/date-picker/how-to-use/mobile',
                 ),
               },
             ]}

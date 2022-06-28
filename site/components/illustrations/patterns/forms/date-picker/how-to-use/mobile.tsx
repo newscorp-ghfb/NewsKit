@@ -4,7 +4,7 @@ import {Svg} from '../../../../svg';
 import {Path} from '../../../../path';
 import {Rect} from '../../../../rect';
 
-export const Mobbile: React.FC = () => {
+export const Mobile: React.FC = () => {
   const clip0 = getSSRId();
   const clip1 = getSSRId();
   const clip2 = getSSRId();
@@ -585,4 +585,4 @@ export const Mobbile: React.FC = () => {
   );
 };
 
-export default Mobbile;
+export default Mobile;
