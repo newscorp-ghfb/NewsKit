@@ -1,6 +1,6 @@
 import React from 'react';
 import {TextBlock} from '../text-block';
-import {MQ} from '../utils/style';
+import {MQ, styled, getColorCssFromTheme} from '../utils/style';
 
 interface Props {
   children: React.ReactNode;
@@ -65,5 +65,14 @@ export const StorybookSpan: React.FC<Props> = ({children, stylePreset}) => (
 );
 
 export const StorybookParah: React.FC<Props> = ({children, stylePreset}) => (
-  <TextBlock stylePreset={stylePreset || 'inkContrast'}>{children}</TextBlock>
+  <TextBlock
+    stylePreset={stylePreset || 'inkContrast'}
+    paddingBlockEnd="space020"
+  >
+    {children}
+  </TextBlock>
 );
+
+export const StorybookLabel = styled.label`
+  ${getColorCssFromTheme('color', 'inkBase')}
+`;

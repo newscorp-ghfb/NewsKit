@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {LinkInline, LinkStandalone} from '..';
-import {getColorFromTheme, styled} from '../../utils/style';
+import {getColorCssFromTheme, styled} from '../../utils/style';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -43,11 +43,8 @@ const StyledDiv = styled.div`
 const Container = styled.div<{hasBackground?: boolean}>`
   max-width: 600px;
   margin: 0 auto;
-  ${({hasBackground, theme}) =>
-    hasBackground && {
-      background: getColorFromTheme('black')({theme}),
-      color: getColorFromTheme('white')({theme}),
-    }}
+  ${({hasBackground}) =>
+    hasBackground && getColorCssFromTheme('background', 'inkBase')};
 `;
 
 const CustomPragraph = styled.p`
@@ -199,7 +196,7 @@ StoryLink.storyName = 'link';
 export const StoryLinkInverse = () => (
   <Container hasBackground>
     {/* ------ Link inline -------- */}
-    <StorybookHeading stylePreset="white">Link inline</StorybookHeading>
+    <StorybookHeading stylePreset="inkInverse">Link inline</StorybookHeading>
     <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
       Inline link
     </LinkInline>
@@ -233,7 +230,7 @@ export const StoryLinkInverse = () => (
     </LinkInline>
 
     {/* ------ Link external -------- */}
-    <StorybookHeading stylePreset="white">Link external</StorybookHeading>
+    <StorybookHeading stylePreset="inkInverse">Link external</StorybookHeading>
     <LinkInline
       href="http://newskit.staging-news.co.uk/"
       overrides={{stylePreset: 'linkInlineInverse'}}
@@ -264,7 +261,9 @@ export const StoryLinkInverse = () => (
     </LinkInline>
 
     {/* ------ Link standalone -------- */}
-    <StorybookHeading stylePreset="white">Link standalone</StorybookHeading>
+    <StorybookHeading stylePreset="inkInverse">
+      Link standalone
+    </StorybookHeading>
     <LinkStandalone href="/" overrides={{stylePreset: 'linkStandaloneInverse'}}>
       Standalone link
     </LinkStandalone>

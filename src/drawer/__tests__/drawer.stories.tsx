@@ -3,7 +3,11 @@ import React, {MouseEvent} from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {Drawer} from '..';
 import {styled} from '../../utils/style';
-import {StorybookHeading, StorybookParah} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookParah,
+  StorybookLabel,
+} from '../../test/storybook-comps';
 import {Button} from '../../button';
 import {Link} from '../../link';
 import {TextInput} from '../../text-input';
@@ -42,7 +46,7 @@ const BoxWithContent = ({open}: {open?: () => void}) => (
           {open && i === 3 && (
             <Button onClick={open}>Another button to open the drawer</Button>
           )}
-          <p key={i}>{content}</p>
+          <StorybookParah key={i}>{content}</StorybookParah>
         </>
       ))}
     </Box>
@@ -122,11 +126,11 @@ export const StoryDefault = () =>
           Open Drawer
         </Button>
         <Block as="span" spaceInset="space030" onChange={onChangeValue}>
-          <label htmlFor="drawer_top">
+          <StorybookLabel htmlFor="drawer_top">
             top:
             <input type="radio" value="top" id="drawer_top" name="placement" />
-          </label>
-          <label htmlFor="drawer_left">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer_left">
             left:
             <input
               type="radio"
@@ -135,8 +139,8 @@ export const StoryDefault = () =>
               name="placement"
               defaultChecked
             />
-          </label>
-          <label htmlFor="drawer_bottom">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer_bottom">
             bottom:
             <input
               type="radio"
@@ -144,8 +148,8 @@ export const StoryDefault = () =>
               id="drawer_bottom"
               name="placement"
             />
-          </label>
-          <label htmlFor="drawer_right">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer_right">
             right:
             <input
               type="radio"
@@ -153,7 +157,7 @@ export const StoryDefault = () =>
               id="drawer_right"
               name="placement"
             />
-          </label>
+          </StorybookLabel>
         </Block>
 
         <Drawer
@@ -186,7 +190,7 @@ export const StoryInline = () =>
           Open Drawer
         </Button>
         <Block as="span" spaceInset="space030" onChange={onChangeValue}>
-          <label htmlFor="drawer-inline_top">
+          <StorybookLabel htmlFor="drawer-inline_top">
             top:
             <input
               type="radio"
@@ -194,8 +198,8 @@ export const StoryInline = () =>
               id="drawer-inline_top"
               name="placement"
             />
-          </label>
-          <label htmlFor="drawer-inline_left">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer-inline_left">
             left:
             <input
               type="radio"
@@ -204,8 +208,8 @@ export const StoryInline = () =>
               name="placement"
               defaultChecked
             />
-          </label>
-          <label htmlFor="drawer-inline_bottom">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer-inline_bottom">
             bottom:
             <input
               type="radio"
@@ -213,8 +217,8 @@ export const StoryInline = () =>
               id="drawer-inline_bottom"
               name="placement"
             />
-          </label>
-          <label htmlFor="drawer-inline_right">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer-inline_right">
             right:
             <input
               type="radio"
@@ -222,7 +226,7 @@ export const StoryInline = () =>
               id="drawer-inline_right"
               name="placement"
             />
-          </label>
+          </StorybookLabel>
         </Block>
 
         <DrawerContainer>
@@ -723,7 +727,7 @@ export const StoryDrawerLogicalPaddingOnPanel = () =>
           Open Drawer
         </Button>
         <Block as="span" spaceInset="space030" onChange={onChangeValue}>
-          <label htmlFor="drawer_top_logical">
+          <StorybookLabel htmlFor="drawer_top_logical">
             top:
             <input
               type="radio"
@@ -731,8 +735,8 @@ export const StoryDrawerLogicalPaddingOnPanel = () =>
               id="drawer_top_logical"
               name="placement"
             />
-          </label>
-          <label htmlFor="drawer_left_logical">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer_left_logical">
             left:
             <input
               type="radio"
@@ -741,8 +745,8 @@ export const StoryDrawerLogicalPaddingOnPanel = () =>
               name="placement"
               defaultChecked
             />
-          </label>
-          <label htmlFor="drawer_bottom_logical">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer_bottom_logical">
             bottom:
             <input
               type="radio"
@@ -750,8 +754,8 @@ export const StoryDrawerLogicalPaddingOnPanel = () =>
               id="drawer_bottom_logical"
               name="placement"
             />
-          </label>
-          <label htmlFor="drawer_right_logical">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer_right_logical">
             right:
             <input
               type="radio"
@@ -759,7 +763,7 @@ export const StoryDrawerLogicalPaddingOnPanel = () =>
               id="drawer_right_logical"
               name="placement"
             />
-          </label>
+          </StorybookLabel>
         </Block>
 
         <Drawer

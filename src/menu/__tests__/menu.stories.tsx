@@ -1,22 +1,42 @@
 import React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {
   StorybookHeading,
   StorybookSubHeading,
+  StorybookSpan,
 } from '../../test/storybook-comps';
-import {createTheme, compileTheme, ThemeProvider} from '../../theme';
+import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
 import {IconFilledAddCircleOutline, IconFilledClose} from '../../icons';
 import {Menu, MenuItem, MenuGroup, MenuDivider} from '..';
 import {MenuItemAlign, MenuItemSize} from '../types';
-import {styled} from '../../utils';
+import {styled, getColorCssFromTheme} from '../../utils';
 import {getSSRId} from '../../utils/get-ssr-id';
+import {themeObject} from '../../test/theme-select-object';
 
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
 
-const myCustomTheme = compileTheme(
+const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
   createTheme({
     name: 'my-custom-menu-theme',
+    baseTheme: theme,
     overrides: {
+      transitionPresets: {
+        customBackgroundColorChange: {
+          base: {
+            transitionProperty: 'background-color',
+            transitionDuration: '400ms',
+            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+          },
+        },
+        customFontColourChange: {
+          base: {
+            transitionProperty: 'color',
+            transitionDuration: '400ms',
+            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+          },
+        },
+      },
       stylePresets: {
         menuItemCustom: {
           base: {
@@ -39,15 +59,88 @@ const myCustomTheme = compileTheme(
             iconColor: '{{colors.inkBrand010}}',
           },
         },
+        menuGroupCustom: {
+          base: {
+            backgroundColor: '#2f1e9f',
+            borderStyle: 'solid',
+            borderColor: '#8074eb',
+            borderWidth: '4px 4px 0px 4px',
+            color: '#dfd3d3',
+            iconColor: 'grey',
+            borderRadius: '10px 10px 0 0',
+          },
+          hover: {
+            backgroundColor: '#d8335c',
+          },
+        },
+        menuItemTwoCustom: {
+          base: {
+            backgroundColor: 'transparent',
+            color: 'inherit',
+          },
+        },
+        menuItemClose: {
+          base: {
+            backgroundColor: 'transparent',
+            borderStyle: 'solid',
+            borderColor: 'white',
+            borderWidth: '1px',
+            borderRadius: '50%',
+          },
+          focus: {
+            backgroundColor: 'rgba(0,0,0,0.3)',
+          },
+          hover: {
+            backgroundColor: 'rgba(0,0,0,0.3)',
+            iconColor: 'white',
+          },
+        },
+        menuItemCustomTransition: {
+          base: {
+            backgroundColor: '{{colors.transparent}}',
+            borderStyle: 'solid',
+            borderColor: '{{colors.transparent}}',
+            borderWidth:
+              '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+            color: '{{colors.inkSubtle}}',
+            iconColor: '{{colors.inkSubtle}}',
+          },
+          hover: {
+            backgroundColor: '{{colors.amber020}}',
+            borderColor: '{{colors.interactivePrimary030}}',
+            color: '{{colors.inkBase}}',
+            iconColor: '{{colors.inkBase}}',
+          },
+          active: {
+            borderColor: '{{colors.interactivePrimary040}}',
+            color: '{{colors.inkContrast}}',
+            iconColor: '{{colors.inkContrast}}',
+          },
+        },
+        menuItemVerticalTransition: {
+          base: {
+            backgroundColor: '{{colors.transparent}}',
+            borderStyle: 'solid',
+            borderColor: '{{colors.transparent}}',
+            borderWidth:
+              '{{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
+            color: '{{colors.inkSubtle}}',
+            iconColor: '{{colors.inkSubtle}}',
+          },
+          hover: {
+            backgroundColor: '{{colors.amber020}}',
+            color: '{{colors.inkBrand010}}',
+            iconColor: '{{colors.inkBrand010}}',
+          },
+        },
       },
     },
-  }),
-);
+  });
 
 const MenuGroupTitle = () => (
   <>
     <IconFilledAddCircleOutline overrides={{size: 'iconSize010'}} />
-    <span id="custom-menu-title"> Menu Group Title Custom Component </span>
+    <StorybookSpan> Menu Group Title Custom Component </StorybookSpan>
     <IconFilledAddCircleOutline overrides={{size: 'iconSize010'}} />
   </>
 );
@@ -56,6 +149,17 @@ export default {
   title: 'NewsKit Light/menu',
   component: () => 'None',
   disabledRules: [],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 export const StoryMenuItemsHorizontal = () => (
@@ -299,96 +403,96 @@ export const StoryMenuItemsOverrides = () => {
   };
   return (
     <>
-      <ThemeProvider theme={myCustomTheme}>
-        <StorybookHeading>Menu items with overrides</StorybookHeading>
-        <Menu aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem href={href} overrides={menuItemOverrides}>
-            Menu item 1
-          </MenuItem>
-          <MenuItem href={href} overrides={menuItemOverrides}>
-            Menu item 2
-          </MenuItem>
-          <MenuItem href={href} overrides={menuItemOverrides}>
-            Menu item 3
-          </MenuItem>
-          <MenuItem href={href} overrides={menuItemOverrides}>
-            Menu item 4
-          </MenuItem>
-          <MenuItem href={href} overrides={menuItemOverrides}>
-            Menu item 5
-          </MenuItem>
-          <MenuItem href={href} overrides={menuItemOverrides}>
-            Menu item 6
-          </MenuItem>
-        </Menu>
-      </ThemeProvider>
+      {/* <ThemeProvider theme={myCustomTheme}> */}
+      <StorybookHeading>Menu items with overrides</StorybookHeading>
+      <Menu aria-label={`Menu ${getSSRId()}`}>
+        <MenuItem href={href} overrides={menuItemOverrides}>
+          Menu item 1
+        </MenuItem>
+        <MenuItem href={href} overrides={menuItemOverrides}>
+          Menu item 2
+        </MenuItem>
+        <MenuItem href={href} overrides={menuItemOverrides}>
+          Menu item 3
+        </MenuItem>
+        <MenuItem href={href} overrides={menuItemOverrides}>
+          Menu item 4
+        </MenuItem>
+        <MenuItem href={href} overrides={menuItemOverrides}>
+          Menu item 5
+        </MenuItem>
+        <MenuItem href={href} overrides={menuItemOverrides}>
+          Menu item 6
+        </MenuItem>
+      </Menu>
+      {/* </ThemeProvider> */}
     </>
   );
 };
 StoryMenuItemsOverrides.storyName = 'menu items - overrides';
-const myCustomThemeTransitions = compileTheme(
-  createTheme({
-    name: 'my-custom-menu-theme',
-    overrides: {
-      transitionPresets: {
-        customBackgroundColorChange: {
-          base: {
-            transitionProperty: 'background-color',
-            transitionDuration: '400ms',
-            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-          },
-        },
-        customFontColourChange: {
-          base: {
-            transitionProperty: 'color',
-            transitionDuration: '400ms',
-            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-          },
-        },
-      },
-      stylePresets: {
-        menuItemCustomTransition: {
-          base: {
-            backgroundColor: '{{colors.transparent}}',
-            borderStyle: 'solid',
-            borderColor: '{{colors.transparent}}',
-            borderWidth:
-              '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
-            color: '{{colors.inkSubtle}}',
-            iconColor: '{{colors.inkSubtle}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.amber020}}',
-            borderColor: '{{colors.interactivePrimary030}}',
-            color: '{{colors.inkBase}}',
-            iconColor: '{{colors.inkBase}}',
-          },
-          active: {
-            borderColor: '{{colors.interactivePrimary040}}',
-            color: '{{colors.inkContrast}}',
-            iconColor: '{{colors.inkContrast}}',
-          },
-        },
-        menuItemVerticalTransition: {
-          base: {
-            backgroundColor: '{{colors.transparent}}',
-            borderStyle: 'solid',
-            borderColor: '{{colors.transparent}}',
-            borderWidth:
-              '{{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
-            color: '{{colors.inkSubtle}}',
-            iconColor: '{{colors.inkSubtle}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.amber020}}',
-            color: '{{colors.inkBrand010}}',
-            iconColor: '{{colors.inkBrand010}}',
-          },
-        },
-      },
-    },
-  }),
-);
+// const myCustomThemeTransitions = compileTheme(
+//   createTheme({
+//     name: 'my-custom-menu-theme',
+//     overrides: {
+//       transitionPresets: {
+//         customBackgroundColorChange: {
+//           base: {
+//             transitionProperty: 'background-color',
+//             transitionDuration: '400ms',
+//             transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+//           },
+//         },
+//         customFontColourChange: {
+//           base: {
+//             transitionProperty: 'color',
+//             transitionDuration: '400ms',
+//             transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+//           },
+//         },
+//       },
+//       stylePresets: {
+//         menuItemCustomTransition: {
+//           base: {
+//             backgroundColor: '{{colors.transparent}}',
+//             borderStyle: 'solid',
+//             borderColor: '{{colors.transparent}}',
+//             borderWidth:
+//               '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+//             color: '{{colors.inkSubtle}}',
+//             iconColor: '{{colors.inkSubtle}}',
+//           },
+//           hover: {
+//             backgroundColor: '{{colors.amber020}}',
+//             borderColor: '{{colors.interactivePrimary030}}',
+//             color: '{{colors.inkBase}}',
+//             iconColor: '{{colors.inkBase}}',
+//           },
+//           active: {
+//             borderColor: '{{colors.interactivePrimary040}}',
+//             color: '{{colors.inkContrast}}',
+//             iconColor: '{{colors.inkContrast}}',
+//           },
+//         },
+//         menuItemVerticalTransition: {
+//           base: {
+//             backgroundColor: '{{colors.transparent}}',
+//             borderStyle: 'solid',
+//             borderColor: '{{colors.transparent}}',
+//             borderWidth:
+//               '{{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
+//             color: '{{colors.inkSubtle}}',
+//             iconColor: '{{colors.inkSubtle}}',
+//           },
+//           hover: {
+//             backgroundColor: '{{colors.amber020}}',
+//             color: '{{colors.inkBrand010}}',
+//             iconColor: '{{colors.inkBrand010}}',
+//           },
+//         },
+//       },
+//     },
+//   }),
+// );
 export const StoryMenuTransitionHorizontalOverrides = () => {
   const Container = styled.div`
     & > div {
@@ -398,113 +502,111 @@ export const StoryMenuTransitionHorizontalOverrides = () => {
   `;
   return (
     <Container>
-      <ThemeProvider theme={myCustomThemeTransitions}>
-        <StorybookHeading>
-          Default Transition Preset horizontal
-        </StorybookHeading>
-        <Menu aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem href={href}>Menu item 1</MenuItem>
-          <MenuItem href={href}>Menu item 2</MenuItem>
-        </Menu>
-        <StorybookSubHeading>
-          Menu items with Transition Preset overrides
-        </StorybookSubHeading>
-        <Menu aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem
-            href={href}
-            overrides={{
-              stylePreset: 'menuItemCustomTransition',
-              transitionPreset: 'customBackgroundColorChange',
-            }}
-          >
-            Menu item 1
-          </MenuItem>
-          <MenuItem
-            href={href}
-            overrides={{
-              stylePreset: 'menuItemCustomTransition',
-              transitionPreset: 'customBackgroundColorChange',
-            }}
-          >
-            Menu item 2
-          </MenuItem>
-        </Menu>
-        <StorybookSubHeading>
-          Menu item with two Transition Preset Overrides
-        </StorybookSubHeading>
-        <Menu aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem
-            href={href}
-            overrides={{
-              stylePreset: 'menuItemCustomTransition',
-              transitionPreset: [
-                'customBackgroundColorChange',
-                'customFontColourChange',
-              ],
-            }}
-          >
-            Menu item 1
-          </MenuItem>
-          <MenuItem
-            href={href}
-            overrides={{
-              stylePreset: 'menuItemCustomTransition',
-              transitionPreset: [
-                'customBackgroundColorChange',
-                'customFontColourChange',
-              ],
-            }}
-          >
-            Menu item 2
-          </MenuItem>
-        </Menu>
-        <StorybookSubHeading>
-          Menu item with overrides using extend on transitionDuration
-        </StorybookSubHeading>
-        <Menu aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem
-            href={href}
-            overrides={{
-              stylePreset: 'menuItemCustomTransition',
-              transitionPreset: {
+      {/* <ThemeProvider theme={myCustomThemeTransitions}> */}
+      <StorybookHeading>Default Transition Preset horizontal</StorybookHeading>
+      <Menu aria-label={`Menu ${getSSRId()}`}>
+        <MenuItem href={href}>Menu item 1</MenuItem>
+        <MenuItem href={href}>Menu item 2</MenuItem>
+      </Menu>
+      <StorybookSubHeading>
+        Menu items with Transition Preset overrides
+      </StorybookSubHeading>
+      <Menu aria-label={`Menu ${getSSRId()}`}>
+        <MenuItem
+          href={href}
+          overrides={{
+            stylePreset: 'menuItemCustomTransition',
+            transitionPreset: 'customBackgroundColorChange',
+          }}
+        >
+          Menu item 1
+        </MenuItem>
+        <MenuItem
+          href={href}
+          overrides={{
+            stylePreset: 'menuItemCustomTransition',
+            transitionPreset: 'customBackgroundColorChange',
+          }}
+        >
+          Menu item 2
+        </MenuItem>
+      </Menu>
+      <StorybookSubHeading>
+        Menu item with two Transition Preset Overrides
+      </StorybookSubHeading>
+      <Menu aria-label={`Menu ${getSSRId()}`}>
+        <MenuItem
+          href={href}
+          overrides={{
+            stylePreset: 'menuItemCustomTransition',
+            transitionPreset: [
+              'customBackgroundColorChange',
+              'customFontColourChange',
+            ],
+          }}
+        >
+          Menu item 1
+        </MenuItem>
+        <MenuItem
+          href={href}
+          overrides={{
+            stylePreset: 'menuItemCustomTransition',
+            transitionPreset: [
+              'customBackgroundColorChange',
+              'customFontColourChange',
+            ],
+          }}
+        >
+          Menu item 2
+        </MenuItem>
+      </Menu>
+      <StorybookSubHeading>
+        Menu item with overrides using extend on transitionDuration
+      </StorybookSubHeading>
+      <Menu aria-label={`Menu ${getSSRId()}`}>
+        <MenuItem
+          href={href}
+          overrides={{
+            stylePreset: 'menuItemCustomTransition',
+            transitionPreset: {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration050}}',
+              },
+            },
+          }}
+        >
+          Menu item 1
+        </MenuItem>
+      </Menu>
+      <StorybookSubHeading>
+        Menu item with overrides on two presets using extend
+      </StorybookSubHeading>
+      <Menu aria-label={`Menu ${getSSRId()}`}>
+        <MenuItem
+          href={href}
+          overrides={{
+            stylePreset: 'menuItemCustomTransition',
+            transitionPreset: [
+              {
                 extend: 'backgroundColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration030}}',
+                },
+              },
+              {
+                extend: 'customFontColourChange',
                 base: {
                   transitionDuration: '{{motions.motionDuration050}}',
                 },
               },
-            }}
-          >
-            Menu item 1
-          </MenuItem>
-        </Menu>
-        <StorybookSubHeading>
-          Menu item with overrides on two presets using extend
-        </StorybookSubHeading>
-        <Menu aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem
-            href={href}
-            overrides={{
-              stylePreset: 'menuItemCustomTransition',
-              transitionPreset: [
-                {
-                  extend: 'backgroundColorChange',
-                  base: {
-                    transitionDuration: '{{motions.motionDuration030}}',
-                  },
-                },
-                {
-                  extend: 'customFontColourChange',
-                  base: {
-                    transitionDuration: '{{motions.motionDuration050}}',
-                  },
-                },
-              ],
-            }}
-          >
-            Menu item 1
-          </MenuItem>
-        </Menu>
-      </ThemeProvider>
+            ],
+          }}
+        >
+          Menu item 1
+        </MenuItem>
+      </Menu>
+      {/* </ThemeProvider> */}
     </Container>
   );
 };
@@ -520,147 +622,147 @@ export const StoryMenuTransitionVerticalOverrides = () => {
   `;
   return (
     <Container>
-      <ThemeProvider theme={myCustomThemeTransitions}>
-        <StorybookHeading>Default Transition Preset vertical</StorybookHeading>
-        <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem href={href}>Menu item 1</MenuItem>
-          <MenuItem href={href}>Menu item 2</MenuItem>
-        </Menu>
-        <StorybookSubHeading>
-          Menu items with Transition Preset overrides
-        </StorybookSubHeading>
-        <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem
-            href={href}
-            overrides={{
-              stylePreset: 'menuItemVerticalTransition',
-              transitionPreset: 'customBackgroundColorChange',
-            }}
-          >
-            Menu item 1
-          </MenuItem>
-          <MenuItem
-            href={href}
-            overrides={{
-              stylePreset: 'menuItemVerticalTransition',
-              transitionPreset: 'customBackgroundColorChange',
-            }}
-          >
-            Menu item 2
-          </MenuItem>
-        </Menu>
-        <StorybookSubHeading>
-          Menu item with two Transition Preset Overrides
-        </StorybookSubHeading>
-        <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem
-            href={href}
-            overrides={{
-              stylePreset: 'menuItemVerticalTransition',
-              transitionPreset: [
-                'customBackgroundColorChange',
-                'customFontColourChange',
-              ],
-            }}
-          >
-            Menu item 1
-          </MenuItem>
-          <MenuItem
-            href={href}
-            overrides={{
-              stylePreset: 'menuItemVerticalTransition',
-              transitionPreset: [
-                'customBackgroundColorChange',
-                'customFontColourChange',
-              ],
-            }}
-          >
-            Menu item 2
-          </MenuItem>
-        </Menu>
-        <StorybookSubHeading>
-          Menu item with overrides using extend on transitionDuration
-        </StorybookSubHeading>
-        <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem
-            href={href}
-            overrides={{
-              stylePreset: 'menuItemVerticalTransition',
-              transitionPreset: {
+      {/* <ThemeProvider theme={myCustomThemeTransitions}> */}
+      <StorybookHeading>Default Transition Preset vertical</StorybookHeading>
+      <Menu vertical aria-label={`Menu ${getSSRId()}`}>
+        <MenuItem href={href}>Menu item 1</MenuItem>
+        <MenuItem href={href}>Menu item 2</MenuItem>
+      </Menu>
+      <StorybookSubHeading>
+        Menu items with Transition Preset overrides
+      </StorybookSubHeading>
+      <Menu vertical aria-label={`Menu ${getSSRId()}`}>
+        <MenuItem
+          href={href}
+          overrides={{
+            stylePreset: 'menuItemVerticalTransition',
+            transitionPreset: 'customBackgroundColorChange',
+          }}
+        >
+          Menu item 1
+        </MenuItem>
+        <MenuItem
+          href={href}
+          overrides={{
+            stylePreset: 'menuItemVerticalTransition',
+            transitionPreset: 'customBackgroundColorChange',
+          }}
+        >
+          Menu item 2
+        </MenuItem>
+      </Menu>
+      <StorybookSubHeading>
+        Menu item with two Transition Preset Overrides
+      </StorybookSubHeading>
+      <Menu vertical aria-label={`Menu ${getSSRId()}`}>
+        <MenuItem
+          href={href}
+          overrides={{
+            stylePreset: 'menuItemVerticalTransition',
+            transitionPreset: [
+              'customBackgroundColorChange',
+              'customFontColourChange',
+            ],
+          }}
+        >
+          Menu item 1
+        </MenuItem>
+        <MenuItem
+          href={href}
+          overrides={{
+            stylePreset: 'menuItemVerticalTransition',
+            transitionPreset: [
+              'customBackgroundColorChange',
+              'customFontColourChange',
+            ],
+          }}
+        >
+          Menu item 2
+        </MenuItem>
+      </Menu>
+      <StorybookSubHeading>
+        Menu item with overrides using extend on transitionDuration
+      </StorybookSubHeading>
+      <Menu vertical aria-label={`Menu ${getSSRId()}`}>
+        <MenuItem
+          href={href}
+          overrides={{
+            stylePreset: 'menuItemVerticalTransition',
+            transitionPreset: {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration050}}',
+              },
+            },
+          }}
+        >
+          Menu item 1
+        </MenuItem>
+        <MenuItem
+          href={href}
+          overrides={{
+            stylePreset: 'menuItemVerticalTransition',
+            transitionPreset: {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration050}}',
+              },
+            },
+          }}
+        >
+          Menu item 1
+        </MenuItem>
+      </Menu>
+      <StorybookSubHeading>
+        Menu item with overrides on two presets using extend
+      </StorybookSubHeading>
+      <Menu vertical aria-label={`Menu ${getSSRId()}`}>
+        <MenuItem
+          href={href}
+          overrides={{
+            stylePreset: 'menuItemVerticalTransition',
+            transitionPreset: [
+              {
                 extend: 'backgroundColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration030}}',
+                },
+              },
+              {
+                extend: 'customFontColourChange',
                 base: {
                   transitionDuration: '{{motions.motionDuration050}}',
                 },
               },
-            }}
-          >
-            Menu item 1
-          </MenuItem>
-          <MenuItem
-            href={href}
-            overrides={{
-              stylePreset: 'menuItemVerticalTransition',
-              transitionPreset: {
+            ],
+          }}
+        >
+          Menu item 1
+        </MenuItem>
+        <MenuItem
+          href={href}
+          overrides={{
+            stylePreset: 'menuItemVerticalTransition',
+            transitionPreset: [
+              {
                 extend: 'backgroundColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration030}}',
+                },
+              },
+              {
+                extend: 'customFontColourChange',
                 base: {
                   transitionDuration: '{{motions.motionDuration050}}',
                 },
               },
-            }}
-          >
-            Menu item 1
-          </MenuItem>
-        </Menu>
-        <StorybookSubHeading>
-          Menu item with overrides on two presets using extend
-        </StorybookSubHeading>
-        <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem
-            href={href}
-            overrides={{
-              stylePreset: 'menuItemVerticalTransition',
-              transitionPreset: [
-                {
-                  extend: 'backgroundColorChange',
-                  base: {
-                    transitionDuration: '{{motions.motionDuration030}}',
-                  },
-                },
-                {
-                  extend: 'customFontColourChange',
-                  base: {
-                    transitionDuration: '{{motions.motionDuration050}}',
-                  },
-                },
-              ],
-            }}
-          >
-            Menu item 1
-          </MenuItem>
-          <MenuItem
-            href={href}
-            overrides={{
-              stylePreset: 'menuItemVerticalTransition',
-              transitionPreset: [
-                {
-                  extend: 'backgroundColorChange',
-                  base: {
-                    transitionDuration: '{{motions.motionDuration030}}',
-                  },
-                },
-                {
-                  extend: 'customFontColourChange',
-                  base: {
-                    transitionDuration: '{{motions.motionDuration050}}',
-                  },
-                },
-              ],
-            }}
-          >
-            Menu item 2
-          </MenuItem>
-        </Menu>
-      </ThemeProvider>
+            ],
+          }}
+        >
+          Menu item 2
+        </MenuItem>
+      </Menu>
+      {/* </ThemeProvider> */}
     </Container>
   );
 };
@@ -669,7 +771,7 @@ StoryMenuTransitionVerticalOverrides.storyName =
 
 export const StoryMenuItemsInverse = () => {
   const InverseContainer = styled.div`
-    background: black;
+    ${getColorCssFromTheme('background', 'inkBase')}
   `;
 
   const inverseOverrides = {
@@ -923,7 +1025,7 @@ StoryMenuMenuGroupsOnlyhorizontaldividersWithinGroups.storyName =
   'menu - menu groups only (horizontal) (dividers within groups)';
 
 export const StoryMenuItemsAndGroups = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <StorybookHeading>Menu - items and groups</StorybookHeading>
     <Menu vertical aria-label={`Menu ${getSSRId()}`}>
       <MenuItem href={href}>item 1</MenuItem>
@@ -972,7 +1074,7 @@ export const StoryMenuItemsAndGroups = () => (
       <MenuItem href={href}>item 6</MenuItem>
       <MenuDivider />
     </Menu>
-  </ThemeProvider>
+  </>
 );
 StoryMenuItemsAndGroups.storyName = 'menu - items and groups';
 
@@ -1082,56 +1184,56 @@ export const StoryMenuAlignedTitle = () => (
 );
 StoryMenuAlignedTitle.storyName = 'menu - aligned title';
 
-const closeButtonTheme = compileTheme(
-  createTheme({
-    name: 'my-custom-menu-theme',
-    overrides: {
-      stylePresets: {
-        menuGroupCustom: {
-          base: {
-            backgroundColor: '#2f1e9f',
-            borderStyle: 'solid',
-            borderColor: '#8074eb',
-            borderWidth: '4px 4px 0px 4px',
-            color: '#dfd3d3',
-            iconColor: 'grey',
-            borderRadius: '10px 10px 0 0',
-          },
-          hover: {
-            backgroundColor: '#d8335c',
-          },
-        },
-        menuItemCustom: {
-          base: {
-            backgroundColor: 'transparent',
-            color: 'inherit',
-          },
-        },
-        menuItemClose: {
-          base: {
-            backgroundColor: 'transparent',
-            borderStyle: 'solid',
-            borderColor: 'white',
-            borderWidth: '1px',
-            borderRadius: '50%',
-          },
-          focus: {
-            backgroundColor: 'rgba(0,0,0,0.3)',
-          },
-          hover: {
-            backgroundColor: 'rgba(0,0,0,0.3)',
-            iconColor: 'white',
-          },
-        },
-      },
-    },
-  }),
-);
+// const closeButtonTheme = compileTheme(
+//   createTheme({
+//     name: 'my-custom-menu-theme',
+//     overrides: {
+//       stylePresets: {
+//         menuGroupCustom: {
+//           base: {
+//             backgroundColor: '#2f1e9f',
+//             borderStyle: 'solid',
+//             borderColor: '#8074eb',
+//             borderWidth: '4px 4px 0px 4px',
+//             color: '#dfd3d3',
+//             iconColor: 'grey',
+//             borderRadius: '10px 10px 0 0',
+//           },
+//           hover: {
+//             backgroundColor: '#d8335c',
+//           },
+//         },
+//         menuItemCustom: {
+//           base: {
+//             backgroundColor: 'transparent',
+//             color: 'inherit',
+//           },
+//         },
+//         menuItemClose: {
+//           base: {
+//             backgroundColor: 'transparent',
+//             borderStyle: 'solid',
+//             borderColor: 'white',
+//             borderWidth: '1px',
+//             borderRadius: '50%',
+//           },
+//           focus: {
+//             backgroundColor: 'rgba(0,0,0,0.3)',
+//           },
+//           hover: {
+//             backgroundColor: 'rgba(0,0,0,0.3)',
+//             iconColor: 'white',
+//           },
+//         },
+//       },
+//     },
+//   }),
+// );
 
 export const StoryMenuWithCloseButtons = () => {
   const menuItemOverrides = {
     overrides: {
-      stylePreset: 'menuItemCustom',
+      stylePreset: 'menuItemTwoCustom',
     },
   };
   const menuItemCloseOverrides = {
@@ -1162,7 +1264,7 @@ export const StoryMenuWithCloseButtons = () => {
   `;
 
   return (
-    <ThemeProvider theme={closeButtonTheme}>
+    <>
       <StorybookHeading>Menu - menu with close buttons</StorybookHeading>
       <Menu
         aria-label={`Menu ${getSSRId()}`}
@@ -1223,7 +1325,7 @@ export const StoryMenuWithCloseButtons = () => {
           </MenuItemNoOutlineIcon>
         </MenuGroup>
       </Menu>
-    </ThemeProvider>
+    </>
   );
 };
 StoryMenuWithCloseButtons.storyName = 'menu - menu with close buttons';

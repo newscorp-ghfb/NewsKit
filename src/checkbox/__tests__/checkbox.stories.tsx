@@ -3,6 +3,7 @@ import {Story as StoryType} from '@storybook/react';
 import {
   StorybookHeading,
   StorybookSubHeading,
+  StorybookLabel,
 } from '../../test/storybook-comps';
 
 import {Checkbox} from '..';
@@ -93,6 +94,7 @@ const Container = styled.div`
   margin: 10px;
   display: flex;
 `;
+
 export const StoryCheckboxDefault = () => (
   <>
     <StorybookHeading>Checkbox</StorybookHeading>
@@ -155,11 +157,12 @@ export const StoryCheckboxLabel = () => {
           </Cell>
         ))}
       </Grid>
+
       <StorybookSubHeading>No label</StorybookSubHeading>
       <Container>
-        <span>This is checkbox</span> <Checkbox id="custom-label" />
-        {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-        <label htmlFor="custom-label"> with custom label</label>
+        <Checkbox id="custom-label" />
+        {}
+        <StorybookLabel htmlFor="custom-label"> Custom label</StorybookLabel>
       </Container>
     </>
   );
