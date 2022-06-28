@@ -137,6 +137,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   fill: #C0C0C0;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-4 {
     transition-property: background-color;
@@ -365,6 +380,68 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   justify-self: start;
 }
 
+.emotion-17 {
+  display: inline-block;
+  color: #577FFB;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-17 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-17 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-17 svg {
+  fill: #577FFB;
+}
+
+.emotion-17:hover:not(:disabled) {
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-17:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-17:active:not(:disabled) {
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-17:active:not(:disabled) svg {
+  fill: #213A82;
+}
+
+.emotion-17:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-17:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-22 {
   grid-area: menu;
   justify-self: start;
@@ -466,6 +543,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-25:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -585,6 +677,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   text-decoration: none;
 }
 
+.emotion-30:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-30:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-30 {
     transition-property: background-color;
@@ -679,6 +786,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-50:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-50:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-50:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -789,6 +911,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-57:active:not(:disabled) {
   background-color: #CCCCCC;
+}
+
+.emotion-57:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-57:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -953,7 +1090,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
           class="emotion-16"
         >
           <a
-            class="emotion-9"
+            class="emotion-17"
             href="/"
           >
             <span
@@ -1369,6 +1506,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   fill: #C0C0C0;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-4 {
     transition-property: background-color;
@@ -1597,6 +1749,68 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   justify-self: start;
 }
 
+.emotion-17 {
+  display: inline-block;
+  color: #577FFB;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-17 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-17 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-17 svg {
+  fill: #577FFB;
+}
+
+.emotion-17:hover:not(:disabled) {
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-17:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-17:active:not(:disabled) {
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-17:active:not(:disabled) svg {
+  fill: #213A82;
+}
+
+.emotion-17:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-17:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-22 {
   grid-area: menu;
   justify-self: start;
@@ -1698,6 +1912,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-25:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1817,6 +2046,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   text-decoration: none;
 }
 
+.emotion-30:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-30:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-30 {
     transition-property: background-color;
@@ -1911,6 +2155,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-50:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-50:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-50:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2021,6 +2280,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-57:active:not(:disabled) {
   background-color: #CCCCCC;
+}
+
+.emotion-57:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-57:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2185,7 +2459,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
           class="emotion-16"
         >
           <a
-            class="emotion-9"
+            class="emotion-17"
             href="/"
           >
             <span
@@ -2601,6 +2875,21 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-4 {
     transition-property: background-color;
@@ -2829,6 +3118,68 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   justify-self: start;
 }
 
+.emotion-17 {
+  display: inline-block;
+  color: #577FFB;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-17 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-17 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-17 svg {
+  fill: #577FFB;
+}
+
+.emotion-17:hover:not(:disabled) {
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-17:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-17:active:not(:disabled) {
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-17:active:not(:disabled) svg {
+  fill: #213A82;
+}
+
+.emotion-17:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-17:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-22 {
   grid-area: menu;
   justify-self: start;
@@ -2924,6 +3275,21 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-25:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-25:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3045,6 +3411,21 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-50:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-50:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-50 {
     transition-property: background-color;
@@ -3153,6 +3534,21 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-57:active:not(:disabled) {
   background-color: #CCCCCC;
+}
+
+.emotion-57:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-57:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3317,7 +3713,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
           class="emotion-16"
         >
           <a
-            class="emotion-9"
+            class="emotion-17"
             href="/"
           >
             <span

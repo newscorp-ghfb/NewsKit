@@ -243,7 +243,7 @@ describe('Tabs', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('changes focus on-tab to tab-panel ', async () => {
+  it('changes focus on tab to tab-panel ', async () => {
     const props: TabsProps = {
       children: tabsWithLabel,
     };
@@ -260,6 +260,27 @@ describe('Tabs', () => {
 
     userEvent.tab();
     expect(firstTabPanel).toHaveFocus();
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('changes focus on tab-panel to tab ', async () => {
+    const props: TabsProps = {
+      children: tabsWithLabel,
+    };
+    const {getAllByTestId, asFragment} = renderWithTheme(
+      renderTabsDefault,
+      props,
+    );
+
+    const firstTab = getAllByTestId('tab')[0];
+    const firstTabPanel = getAllByTestId('tab-panel')[0];
+
+    firstTabPanel.focus();
+    expect(firstTabPanel).toHaveFocus();
+
+    firstTab.focus();
+    expect(firstTab).toHaveFocus();
 
     expect(asFragment()).toMatchSnapshot();
   });

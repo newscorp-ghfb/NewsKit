@@ -7,6 +7,13 @@ import {
 import {Checkbox} from '..';
 import {states, sizes} from './helpers';
 
+jest.mock('../../utils/focus-visible', () => ({
+  isFocusVisible: jest
+    .fn()
+    .mockImplementationOnce(() => true)
+    .mockImplementation(() => false),
+}));
+
 describe('Checkbox', () => {
   states.forEach(([id, props]) => {
     test(`render with state: ${id}`, () => {
@@ -56,6 +63,18 @@ describe('Checkbox', () => {
   });
 
   test('onBlur and onFocus', () => {
+    const {getByRole, asFragment} = renderWithTheme(() => (
+      <Checkbox defaultChecked={false} />
+    ));
+    const checkbox = getByRole('checkbox') as HTMLInputElement;
+    fireEvent.focus(checkbox);
+    expect(asFragment()).toMatchSnapshot('with focus');
+
+    fireEvent.blur(checkbox);
+    expect(asFragment()).toMatchSnapshot('with blur');
+  });
+
+  test('onBlur and onFocus when isFocusVisible return false', () => {
     const {getByRole, asFragment} = renderWithTheme(() => (
       <Checkbox defaultChecked={false} />
     ));
