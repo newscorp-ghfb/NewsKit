@@ -1,4 +1,5 @@
 import {StylePreset} from '../theme/types';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 export default {
   tagPrimary: {
@@ -17,6 +18,7 @@ export default {
     active: {
       borderWidth: '{{borders.borderWidth010}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
   tagPrimaryInverse: {
     base: {
@@ -34,5 +36,6 @@ export default {
     active: {
       backgroundColor: '{{colors.interactiveInverse020}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
 } as Record<string, StylePreset>;
