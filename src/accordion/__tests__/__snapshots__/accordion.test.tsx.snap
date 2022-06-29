@@ -46,6 +46,20 @@ exports[`Accordion renders as a h4 1`] = `
   color: #C0C0C0;
 }
 
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -306,6 +320,20 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
   color: #C0C0C0;
 }
 
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -564,6 +592,20 @@ exports[`Accordion renders with default props 1`] = `
 .emotion-1:disabled {
   background-color: #F4F4F4;
   color: #C0C0C0;
+}
+
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2 {
@@ -1075,6 +1117,20 @@ exports[`Accordion renders with expanded state and icon 1`] = `
   color: #C0C0C0;
 }
 
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -1335,6 +1391,20 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
   color: #C0C0C0;
 }
 
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -1589,6 +1659,20 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
 .emotion-1:disabled {
   background-color: #F4F4F4;
   color: #C0C0C0;
+}
+
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2 {
@@ -1870,6 +1954,20 @@ exports[`Accordion renders with no header 1`] = `
   color: #C0C0C0;
 }
 
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -2035,6 +2133,20 @@ exports[`Accordion renders with no label 1`] = `
 .emotion-1:disabled {
   background-color: #F4F4F4;
   color: #C0C0C0;
+}
+
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2 {
@@ -2564,6 +2676,20 @@ exports[`Accordion renders without leading icon 1`] = `
   color: #C0C0C0;
 }
 
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -2731,6 +2857,20 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
 .emotion-1:disabled {
   background-color: #F4F4F4;
   color: #C0C0C0;
+}
+
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2 {
@@ -2990,6 +3130,20 @@ exports[`AccordionGroup different type of children 1`] = `
 .emotion-1:disabled {
   background-color: #F4F4F4;
   color: #C0C0C0;
+}
+
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2 {

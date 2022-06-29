@@ -420,6 +420,21 @@ exports[`Meta renders with mandatory props 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-26:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-26:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-26 {
     transition-property: background-color;
@@ -1481,6 +1496,21 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-26:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-26:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-26:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2594,6 +2624,21 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   fill: #5E44E4;
 }
 
+.emotion-23:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-23:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-24 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2764,6 +2809,21 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 
 .emotion-32:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-32:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-32:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
