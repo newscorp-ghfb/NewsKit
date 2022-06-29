@@ -45,6 +45,7 @@ export const StyledPointer = styled.div<
     $y?: number;
   } & Pick<BaseFloatingElementProps, 'overrides' | 'path'>
 >`
+  z-index: -1; // This makes sure that the pointer doesn't sit over panel contents.
   position: absolute;
   transform: rotate(45deg);
   box-sizing: border-box;

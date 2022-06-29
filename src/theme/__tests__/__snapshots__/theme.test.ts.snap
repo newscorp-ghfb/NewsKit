@@ -2054,12 +2054,28 @@ Object {
     "typographyPreset": "editorialParagraph020",
   },
   "popover": Object {
+    "closeButton": Object {
+      "stylePreset": "iconButtonMinimalSecondary",
+    },
+    "closeButtonContainer": Object {
+      "paddingBlock": "space020",
+      "paddingInline": "space020",
+      "stylePreset": "popoverCloseButtonContainer",
+    },
+    "content": Object {
+      "paddingBlock": "space050",
+      "paddingInline": "space050",
+      "typographyPreset": "editorialParagraph010",
+    },
     "distance": "space050",
-    "panel": Object {
+    "header": Object {
       "paddingBlock": "space040",
-      "paddingInline": "space040",
+      "paddingInline": "space050",
+      "stylePreset": "popoverHeader",
+      "typographyPreset": "utilityLabel030",
+    },
+    "panel": Object {
       "stylePreset": "popoverPanel",
-      "typographyPreset": "utilityLabel010",
     },
     "pointer": Object {
       "edgeOffset": "space030",
@@ -4867,6 +4883,20 @@ Object {
     "base": Object {
       "borderRadius": "{{borders.borderRadiusDefault}}",
       "boxShadow": "{{shadows.shadow050}}",
+    },
+  },
+  "popoverCloseButtonContainer": Object {
+    "base": Object {
+      "borderColor": "{{colors.neutral040}}",
+      "borderStyle": "none none solid none",
+      "borderWidth": "{{borders.borderWidth010}}",
+    },
+  },
+  "popoverHeader": Object {
+    "base": Object {
+      "borderColor": "{{colors.neutral040}}",
+      "borderStyle": "none none solid none",
+      "borderWidth": "{{borders.borderWidth010}}",
     },
   },
   "popoverPanel": Object {
