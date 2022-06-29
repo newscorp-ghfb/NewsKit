@@ -21,13 +21,19 @@ export type BuildAriaAttributesFn = (args: {
   };
 }) => AriaAttributes;
 
+type ReferenceProps = ReturnType<
+  ReturnType<typeof useInteractions>['getReferenceProps']
+>;
+
 export interface FloatingElementProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title' | 'defaultValue'> {
   children: React.ReactElement & {
     ref?: React.Ref<HTMLElement>;
   };
   trigger?: TriggerType | TriggerType[];
-  content: React.ReactNode;
+  content:
+    | React.ReactNode
+    | ((referenceProps: ReferenceProps) => React.ReactNode);
   open?: boolean;
   placement?: Placement;
   overrides?: {
