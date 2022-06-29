@@ -38,8 +38,7 @@ export const StyledGridLayoutItem = styled(GridLayoutItem)<{
 export const TestContainer = styled.div<{vertical?: boolean}>`
   ${({vertical}) =>
     !vertical &&
-    `&:focus-within .slider,
-    &:hover .slider {
+    `&:hover .slider {
     margin-left: 8px;
     width: 100px;
     overflow: visible;

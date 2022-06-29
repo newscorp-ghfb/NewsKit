@@ -466,20 +466,26 @@ export const AudioPlayer = () => (
 );
 AudioPlayer.storyName = 'audio-player';
 
-export const TestVControlExpandable = () => {
-  const breakpointKey = useBreakpointKey();
-  return (
+export const TestVControlExpandable = () => (
+  <>
+    <StorybookHeading>Audio Player - volume expandable</StorybookHeading>
     <AudioPlayerComposable src={AUDIO_SRC}>
-      <GridLayout columns="auto 1fr" rows="1fr" columnGap="20px" rowGap="100px">
-        <AudioPlayerVolumeControl
-          collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
-        />
-
-        <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+      <GridLayout columns="auto 1fr" rows="1fr 1fr">
+        <GridLayoutItem>
+          <AudioPlayerVolumeControl />
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <AudioPlayerPlayPauseButton
+            size={ButtonSize.Small}
+            onClick={() => {
+              console.log('customer click function');
+            }}
+          />
+        </GridLayoutItem>
       </GridLayout>
     </AudioPlayerComposable>
-  );
-};
+  </>
+);
 TestVControlExpandable.storyName = 'audio-player-volume-control-expand';
 
 export const AudioSubComponents = () => (
