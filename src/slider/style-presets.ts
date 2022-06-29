@@ -1,4 +1,5 @@
 import {StylePreset} from '../theme/types';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 export default {
   sliderTrack: {
@@ -44,6 +45,10 @@ export default {
       borderColor: 'none',
       borderWidth: 'none',
       iconColor: '{{colors.inkNonEssential}}',
+    },
+    'focus-visible': {
+      ...defaultFocusVisible,
+      safariOutlineOffset: '-7px',
     },
   },
   sliderThumbLabel: {

@@ -34,7 +34,12 @@ export interface ColumnMapObject extends TableCellProps {
     | 'fontWeight'
     | 'fontLineHeight'
     | 'fontLetterSpacing'
-    | 'typographyPreset';
+    | 'typographyPreset'
+    | 'outlineStyle'
+    | 'outlineWidth'
+    | 'outlineOffset'
+    | 'safariOutlineStyle'
+    | 'safariOutlineOffset';
 }
 
 export interface CellWithOverrides {

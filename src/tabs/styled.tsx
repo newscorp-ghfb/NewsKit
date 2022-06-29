@@ -178,35 +178,13 @@ export const StyledTabButton = styled(Button)<
       justifyContent: tabFlexAlign[align],
       textAlign: tabTextAlign[align] as TextAlignProperty,
     }}
-  // Here we use a negative offset to fix the outline went missing when overflow is hidden
-  :focus {
-    outline-offset: -1px;
-  }
-  // Here we are adding Safari specific code to fix outline on that browser
-  @media not all and (min-resolution: 0.001dpcm) {
-    @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-      :focus {
-        outline-offset: -5px;
-      }
-    }
-  }
 `;
 
 export const StyledTabPanelBlock = styled(TextBlock)<
-  TextBlockProps & {selected: boolean}
+  TextBlockProps & {selected: boolean; isFocused: boolean}
 >`
   width: 100%;
-  :focus {
-    outline-offset: -1px;
-  }
-  // Here we are adding Safari specific code to fix outline on that browser
-  @media not all and (min-resolution: 0.001dpcm) {
-    @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-      :focus {
-        outline-offset: -5px;
-      }
-    }
-  }
+  ${({isFocused}) => getStylePreset('tabPanel', '', {isFocused})}
 `;
 
 export const StyledDividerWrapper = styled.div<

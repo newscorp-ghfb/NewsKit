@@ -86,7 +86,6 @@ const insetCSS = `
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
 `;
 
@@ -99,11 +98,12 @@ export const StyledSwitch = styled.div<
   }
 >`
   ${insetCSS}
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  ${({size, checked, state, isFocused, isHovered, path}) =>
+  ${({size, checked, state, isFocused, isHovered, isFocusedVisible, path}) =>
     getStylePreset(`${path}.${size}.input`, 'input', {
       isChecked: checked,
       isDisabled: state === 'disabled',
@@ -111,14 +111,9 @@ export const StyledSwitch = styled.div<
       isValid: state === 'valid',
       isFocused,
       isHovered,
+      isFocusedVisible,
     })};
 
-  ${({isFocusedVisible}) =>
-    isFocusedVisible &&
-    ` outline: 5px auto Highlight;
-      outline: 5px auto -webkit-focus-ring-color;
-      outline-offset: 3px;
-  `}
   ${({feedbackIsVisible}) =>
     feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`};
 
@@ -165,11 +160,11 @@ export const StyledSwitchFeedback = styled.div<
       // when is not HOVER we need to remove the hover so it does not apply as class:hover
       omitStates: isHovered ? [] : ['hover'],
     })}
-  ${({size, path}) =>
+  ${({size, path, isHovered}) =>
     getResponsiveSize(
       rectSize => ({
-        width: rectSize,
-        height: rectSize,
+        width: isHovered ? rectSize : '1px',
+        height: isHovered ? rectSize : '1px',
         transform: `translate3d(calc(${rectSize} / -2), calc(${rectSize} / -2), 0)`,
       }),
       `${path}.${size}.feedback`,
