@@ -501,6 +501,68 @@ Object {
         "borderColor": "{{colors.interactivePositive030}}",
       },
     },
+    "selectOptionItem": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInput030}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "textOverflow": "ellipsis",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+      },
+      "focus": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput040}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.interactiveInput030}}",
+      },
+      "selected:active": Object {
+        "backgroundColor": "{{colors.interactiveInput030}}",
+      },
+      "selected:focus": Object {
+        "backgroundColor": "{{colors.interactiveInput030}}",
+        "borderColor": "{{colors.interactiveInput040}}",
+      },
+      "selected:focus:active": Object {
+        "backgroundColor": "{{colors.interactiveInput030}}",
+      },
+      "selected:focus:hover": Object {
+        "backgroundColor": "{{colors.interactiveInput030}}",
+        "color": "{{colors.inkContrast}}",
+      },
+      "selected:hover": Object {
+        "backgroundColor": "{{colors.interactiveInput030}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "selectOptionItemIcon": Object {
+      "base": Object {
+        "iconColor": "{{colors.interactiveInput040}}",
+      },
+      "selected": Object {
+        "iconColor": "{{colors.interactiveInput040}}",
+      },
+      "selected:active": Object {
+        "iconColor": "{{colors.interactiveInput040}}",
+      },
+      "selected:focus": Object {
+        "iconColor": "{{colors.interactiveInput040}}",
+      },
+      "selected:hover": Object {
+        "iconColor": "{{colors.interactiveInput040}}",
+      },
+    },
   },
   "themeVersion": 1,
   "transitionPresets": Object {
@@ -1992,12 +2054,28 @@ Object {
     "typographyPreset": "editorialParagraph020",
   },
   "popover": Object {
+    "closeButton": Object {
+      "stylePreset": "iconButtonMinimalSecondary",
+    },
+    "closeButtonContainer": Object {
+      "paddingBlock": "space020",
+      "paddingInline": "space020",
+      "stylePreset": "popoverCloseButtonContainer",
+    },
+    "content": Object {
+      "paddingBlock": "space050",
+      "paddingInline": "space050",
+      "typographyPreset": "editorialParagraph010",
+    },
     "distance": "space050",
-    "panel": Object {
+    "header": Object {
       "paddingBlock": "space040",
-      "paddingInline": "space040",
+      "paddingInline": "space050",
+      "stylePreset": "popoverHeader",
+      "typographyPreset": "utilityLabel030",
+    },
+    "panel": Object {
       "stylePreset": "popoverPanel",
-      "typographyPreset": "utilityLabel010",
     },
     "pointer": Object {
       "edgeOffset": "space030",
@@ -2250,6 +2328,19 @@ Object {
       "stylePreset": "selectOptionItem",
       "typographyPreset": "utilityBody020",
     },
+  },
+  "selectionList": Object {},
+  "selectionListOption": Object {
+    "icon": Object {
+      "iconSize": "iconSize020",
+      "stylePreset": "selectOptionItemIcon",
+    },
+    "minHeight": "sizing080",
+    "paddingBlock": "space020",
+    "paddingInline": "space020",
+    "spaceInline": "space020",
+    "stylePreset": "selectOptionItem",
+    "typographyPreset": "utilityBody020",
   },
   "shareBar": Object {
     "items": Object {
@@ -4799,6 +4890,20 @@ Object {
       "boxShadow": "{{shadows.shadow050}}",
     },
   },
+  "popoverCloseButtonContainer": Object {
+    "base": Object {
+      "borderColor": "{{colors.neutral040}}",
+      "borderStyle": "none none solid none",
+      "borderWidth": "{{borders.borderWidth010}}",
+    },
+  },
+  "popoverHeader": Object {
+    "base": Object {
+      "borderColor": "{{colors.neutral040}}",
+      "borderStyle": "none none solid none",
+      "borderWidth": "{{borders.borderWidth010}}",
+    },
+  },
   "popoverPanel": Object {
     "base": Object {
       "backgroundColor": "{{colors.interface010}}",
@@ -5085,6 +5190,9 @@ Object {
     },
   },
   "selectOptionItemIcon": Object {
+    "base": Object {
+      "iconColor": "{{colors.interactiveInput040}}",
+    },
     "selected": Object {
       "iconColor": "{{colors.interactiveInput040}}",
     },
