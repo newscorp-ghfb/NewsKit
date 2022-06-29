@@ -281,6 +281,14 @@ Object {
     "motionTimingLinear": "linear",
   },
   "name": "my theme",
+  "outlines": Object {
+    "outlineColorDefault": "#3768FB",
+    "outlineOffsetDefault": "2px",
+    "outlineStyleDefault": "solid",
+    "outlineWidthDefault": "2px",
+    "safariOutlineOffsetDefault": "2px",
+    "safariOutlineStyleDefault": "auto",
+  },
   "overlays": Object {
     "opacity000": "0",
     "opacity010": "0.1",
@@ -509,7 +517,11 @@ Object {
       },
       "focus": Object {
         "backgroundColor": "#FAFAFA",
-        "borderColor": "#3358CC",
+        "borderColor": "transparent",
+        "outlineColor": "#3768FB",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "safariOutlineStyle": "auto",
       },
       "hover": Object {
         "backgroundColor": "#FAFAFA",
@@ -519,7 +531,7 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "#FAFAFA",
-        "borderColor": "#3358CC",
+        "borderColor": "#3768FB",
       },
       "invalid:hover": Object {
         "backgroundColor": "#FAFAFA",
@@ -533,7 +545,7 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "#FAFAFA",
-        "borderColor": "#3358CC",
+        "borderColor": "#3768FB",
       },
       "valid:hover": Object {
         "backgroundColor": "#FAFAFA",

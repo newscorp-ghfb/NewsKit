@@ -54,12 +54,16 @@ export const newskitDarkThemeOverrides = {
     interfaceSkeleton010: '{{colors.neutral090}}',
     interfaceSkeleton020: '{{colors.neutral080}}',
     inverse: '{{colors.black}}',
+    interactiveFocus010: '{{colors.white}}',
   },
   overlays: {
     overlayLightGradient010:
       'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)',
     overlayDarkGradient010:
       'linear-gradient(180deg, rgba(51, 51, 51, 0) 0%, #0A0A0A 100%)',
+  },
+  outline: {
+    safariOutlineStyleDefault: 'solid',
   },
 };
 

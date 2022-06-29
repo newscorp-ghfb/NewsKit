@@ -731,6 +731,109 @@ describe('getStylePresetFromTheme', () => {
     });
   });
 
+  test(`renders with focus-visible state when isFocusedVisible is true`, () => {
+    const fragment = renderToFragmentWithTheme(
+      TestSurfaceCheckbox,
+      {
+        isFocusedVisible: true,
+      },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            checkboxInput: deepMerge({}, checkboxInput, {
+              'focus-visible': {
+                safariOutlineOffset: '5px',
+              },
+            }),
+          },
+        },
+      }),
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders with checked:focus-visible state when isFocusedVisible and isChecked are true`, () => {
+    const fragment = renderToFragmentWithTheme(
+      TestSurfaceCheckbox,
+      {
+        isChecked: true,
+        isFocusedVisible: true,
+      },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            checkboxInput: deepMerge({}, checkboxInput, {
+              'checked:focus-visible': {
+                safariOutlineOffset: '5px',
+              },
+            }),
+          },
+        },
+      }),
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  [
+    ['checked:invalid:focus-visible', 'isInvalid'],
+    ['checked:valid:focus-visible', 'isValid'],
+    ['checked:focus-visible:hover', 'isHovered'],
+  ].forEach(([pseudoState, prop]) => {
+    test(`renders with ${pseudoState} state when isChecked, isFocused and ${prop} are passed`, () => {
+      const fragment = renderToFragmentWithTheme(
+        TestSurfaceCheckbox,
+        {
+          isChecked: true,
+          isFocusedVisible: true,
+          [prop]: true,
+        },
+        createTheme({
+          name: 'test-style-preset',
+          overrides: {
+            stylePresets: {
+              checkboxInput: deepMerge({}, checkboxInput, {
+                [pseudoState]: {
+                  safariOutlineOffset: '5px',
+                },
+              }),
+            },
+          },
+        }),
+      );
+      expect(fragment).toMatchSnapshot();
+    });
+  });
+
+  [
+    ['invalid:focus-visible', 'isInvalid'],
+    ['valid:focus-visible', 'isValid'],
+  ].forEach(([pseudoState, prop]) => {
+    test(`renders with ${pseudoState} state when isChecked, isFocused and ${prop} are passed`, () => {
+      const fragment = renderToFragmentWithTheme(
+        TestSurfaceCheckbox,
+        {
+          isFocusedVisible: true,
+          [prop]: true,
+        },
+        createTheme({
+          name: 'test-style-preset',
+          overrides: {
+            stylePresets: {
+              checkboxInput: deepMerge({}, checkboxInput, {
+                [pseudoState]: {
+                  safariOutlineOffset: '5px',
+                },
+              }),
+            },
+          },
+        }),
+      );
+      expect(fragment).toMatchSnapshot();
+    });
+  });
+
   test('with isSvg ', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,

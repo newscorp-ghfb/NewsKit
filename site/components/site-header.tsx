@@ -164,11 +164,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
             {Areas => (
               <>
                 <Areas.Logo justifySelf="start">
-                  <Link
-                    type="standalone"
-                    href="/"
-                    overrides={{stylePreset: 'inkBase'}}
-                  >
+                  <Link type="standalone" href="/">
                     <NewsKitLogo />
                   </Link>
                 </Areas.Logo>
