@@ -3,7 +3,10 @@ import React from 'react';
 import {StatefulSlider} from '..';
 import {styled} from '../../utils/style';
 import {ThumbLabelProps, SliderProps, LabelPosition} from '../types';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
 import {IconOutlinedImage} from '../../icons';
 import {withDefaultProps} from '../../utils/with-default-props';
@@ -56,6 +59,74 @@ const myCustomTheme = createTheme({
       customPlaceholderIcon: {
         base: {
           iconColor: '{{colors.inkNonEssential}}',
+        },
+      },
+      customOutlineColor: {
+        base: {
+          boxShadow: '{{shadows.shadow010}}',
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactivePrimary010}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          boxShadow: '{{shadows.shadow010}}',
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactivePrimary010}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          boxShadow: '{{shadows.shadow010}}',
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactivePrimary010}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          boxShadow: '{{shadows.shadow010}}',
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactivePrimary010}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '5px',
         },
       },
     },
@@ -500,3 +571,76 @@ export const StorySliderLogicalProps = () => (
   </>
 );
 StorySliderLogicalProps.storyName = 'slider-logical-props';
+
+export const StorySliderWithOutlineOverride = () => (
+  <>
+    <StorybookHeading>Slider with custom outline override</StorybookHeading>
+    <ThemeProvider theme={myCustomTheme}>
+      <StorybookSubHeading>Custom Color</StorybookSubHeading>
+      <ContainerWithBorder>
+        <StatefulSlider
+          values={[50]}
+          max={100}
+          min={0}
+          minLabel="0"
+          maxLabel="100%"
+          thumbLabel
+          overrides={{
+            thumb: {
+              stylePreset: 'customOutlineColor',
+            },
+          }}
+        />
+      </ContainerWithBorder>
+      <StorybookSubHeading>Custom Style</StorybookSubHeading>
+      <ContainerWithBorder>
+        <StatefulSlider
+          values={[50]}
+          max={100}
+          min={0}
+          minLabel="0"
+          maxLabel="100%"
+          thumbLabel
+          overrides={{
+            thumb: {
+              stylePreset: 'customOutlineStyle',
+            },
+          }}
+        />
+      </ContainerWithBorder>
+      <StorybookSubHeading>Custom Width</StorybookSubHeading>
+      <ContainerWithBorder>
+        <StatefulSlider
+          values={[50]}
+          max={100}
+          min={0}
+          minLabel="0"
+          maxLabel="100%"
+          thumbLabel
+          overrides={{
+            thumb: {
+              stylePreset: 'customOutlineWidth',
+            },
+          }}
+        />
+      </ContainerWithBorder>
+      <StorybookSubHeading>Custom Offset</StorybookSubHeading>
+      <ContainerWithBorder>
+        <StatefulSlider
+          values={[50]}
+          max={100}
+          min={0}
+          minLabel="0"
+          maxLabel="100%"
+          thumbLabel
+          overrides={{
+            thumb: {
+              stylePreset: 'customOutlineOffset',
+            },
+          }}
+        />
+      </ContainerWithBorder>
+    </ThemeProvider>
+  </>
+);
+StorySliderWithOutlineOverride.storyName = 'slider-with-custom-outline';

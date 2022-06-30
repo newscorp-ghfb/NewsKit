@@ -30,6 +30,58 @@ const myCustomTheme = createTheme({
         },
         'focus-visible': defaultFocusVisible,
       },
+      customOutlineColor: {
+        base: {
+          color: '{{colors.interactivePrimary030}}',
+          iconColor: '{{colors.interactivePrimary030}}',
+          textDecoration: 'none',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          color: '{{colors.interactivePrimary030}}',
+          iconColor: '{{colors.interactivePrimary030}}',
+          textDecoration: 'none',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          color: '{{colors.interactivePrimary030}}',
+          iconColor: '{{colors.interactivePrimary030}}',
+          textDecoration: 'none',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          color: '{{colors.interactivePrimary030}}',
+          iconColor: '{{colors.interactivePrimary030}}',
+          textDecoration: 'none',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '5px',
+        },
+      },
     },
   },
 });
@@ -568,3 +620,52 @@ export const StoryLinkWithLogicalPropsOverrides = () => (
 );
 StoryLinkWithLogicalPropsOverrides.storyName =
   'link-with-logical-props-overrides';
+
+export const StoryLinkOutlineOverride = () => (
+  <Container>
+    <StorybookHeading>Outline overrides</StorybookHeading>
+    <ThemeProvider theme={myCustomTheme}>
+      <LinkInline
+        href="/"
+        overrides={{
+          stylePreset: 'customOutlineColor',
+        }}
+      >
+        Custom Color
+      </LinkInline>
+      <br />
+      <br />
+      <LinkInline
+        href="/"
+        overrides={{
+          stylePreset: 'customOutlineStyle',
+        }}
+      >
+        Custom Style
+      </LinkInline>
+      <br />
+      <br />
+      <LinkInline
+        href="/"
+        overrides={{
+          stylePreset: 'customOutlineWidth',
+        }}
+      >
+        Custom Width
+      </LinkInline>
+      <br />
+      <br />
+      <LinkInline
+        href="/"
+        overrides={{
+          stylePreset: 'customOutlineOffset',
+        }}
+      >
+        Custom Offset
+      </LinkInline>
+      <br />
+      <br />
+    </ThemeProvider>
+  </Container>
+);
+StoryLinkOutlineOverride.storyName = 'link with outline override';
