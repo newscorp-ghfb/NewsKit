@@ -13,7 +13,7 @@ import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {StorybookSubHeading, StorybookH3} from '../../test/storybook-comps';
 import {ThemeProvider, createTheme, UncompiledTheme} from '../../theme';
-import {themeObject} from '../../test/theme-select-object';
+import {getThemeObject} from '../../test/theme-select-object';
 
 const Container = styled.div`
   margin: 24px;
@@ -637,7 +637,7 @@ export default {
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
         theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+          getThemeObject(context?.globals?.backgrounds?.value),
         )}
       >
         <Story />

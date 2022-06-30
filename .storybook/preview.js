@@ -9,7 +9,7 @@ import {
   getColorCssFromTheme
 } from '../src';
 
-import {themeObject} from '../src/test/theme-select-object'
+import {getThemeObject} from '../src/test/theme-select-object'
 
 const unlimitedScenarios = [
   'grid',
@@ -56,7 +56,6 @@ export const parameters = {
     viewports: INITIAL_VIEWPORTS,
   },
   backgrounds: {
-    default: 'Newskit light',
     values: [
       {
         name: 'Newskit light',
@@ -114,7 +113,7 @@ export const decorators = [
   },
   (Story, context) => {
     return (
-      <ThemeProvider theme={themeObject[context?.globals?.backgrounds?.value || '#ffffff']}>
+      <ThemeProvider theme={getThemeObject(context?.globals?.backgrounds?.value)}>
         <Story />
       </ThemeProvider>
     );
