@@ -1044,6 +1044,7 @@ workflows:
             - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs_pr
+            - test_broken_links_docs
       - init_aws:
           context: ncu-product-platforms-context
       - deploy_terraform:
