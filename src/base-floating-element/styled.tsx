@@ -18,7 +18,7 @@ export const StyledFloatingElement = styled.div<
     $x?: number;
     $y?: number;
     hidePointer: boolean;
-    transitionClassname: string;
+    baseTransitionClassname: string;
   } & Pick<BaseFloatingElementProps, 'overrides' | 'path'>
 >`
   ${({path}) => getStylePreset(`${path}`, '')};
@@ -30,8 +30,8 @@ export const StyledFloatingElement = styled.div<
     left: $x != null ? `${$x}px` : '',
     top: $y != null ? `${$y}px` : '',
   })}
-  ${({path, transitionClassname}) =>
-    getTransitionPreset(`${path}`, '', transitionClassname)};
+  ${({path, baseTransitionClassname}) =>
+    getTransitionPreset(`${path}`, '', baseTransitionClassname)};
 `;
 
 export const StyledPanel = styled(TextBlock)<

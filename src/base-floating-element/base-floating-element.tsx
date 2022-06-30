@@ -146,7 +146,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   // handler).
   const referenceProps = getReferenceProps();
 
-  const transitionClassname = `nk-${path}`;
+  const baseTransitionClassname = `nk-${path}`;
 
   return (
     <>
@@ -162,7 +162,7 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
       <CSSTransition
         in={open}
         timeout={getTransitionDuration(path, '')({theme, overrides})}
-        classNames={transitionClassname}
+        classNames={baseTransitionClassname}
         mountOnEnter
         unmountOnExit
         appear
@@ -174,10 +174,10 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
               id: floatingId,
             })}
             className={`${className || ''} ${getTransitionClassName(
-              transitionClassname,
+              baseTransitionClassname,
               state,
             )}`}
-            transitionClassname={transitionClassname}
+            baseTransitionClassname={baseTransitionClassname}
             strategy={strategy}
             $x={x}
             $y={y}
