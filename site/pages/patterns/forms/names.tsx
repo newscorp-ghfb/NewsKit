@@ -64,10 +64,11 @@ const Names = (layoutProps: LayoutProps) => (
           headline="Labelling"
           description={
             <>
-              ‘First name’ and ‘Last name’ should be split out as these are
-              collected separately in our database. Asking for ‘Full name’
-              should be avoided as we won’t be able to split each data point out
-              (currently).
+              ‘First name’ and ‘Last name’ should be split out as this
+              information is collected separately, and stored in a database.
+              Asking for ‘Full name’ should be avoided as each data point should
+              be split out individually (this is the way we do this currently at
+              NewsCorp).
               <br />
               <br />
               ‘Last name’ should be used instead of ‘Surname’ as it is a clearer
