@@ -848,6 +848,13 @@ export default [
             description: `Use a password entry field when asking users to create an account or log in.`,
             illustration: 'patterns/forms/passwords/hero',
           },
+          {
+            title: 'Payment/Billing',
+            page: true,
+            id: '/patterns/forms/payment',
+            description: `Use the payment field when the business needs to take payment for a service.`,
+            illustration: 'patterns/forms/payment/hero',
+          },
         ],
       },
     ],
