@@ -735,7 +735,7 @@ export const AudioPlayerOverrides = () => (
     <StorybookSubHeading>MuteButton Icon Overrides</StorybookSubHeading>
     <AudioPlayerComposable
       src={AUDIO_SRC}
-      ariaLandmark="audio player mutebutton icon prop overrides"
+      ariaLandmark="audio player mutebutton icon overrides"
     >
       <AudioPlayerVolumeControl
         muteButtonSize={ButtonSize.Medium}
@@ -754,7 +754,7 @@ export const AudioPlayerOverrides = () => (
     </StorybookSubHeading>
     <AudioPlayerComposable
       src={AUDIO_SRC}
-      ariaLandmark="audio player mutebutton icon prop overrides"
+      ariaLandmark="audio player mutebutton component overrides"
     >
       <AudioPlayerVolumeControl
         muteButtonSize={ButtonSize.Medium}
