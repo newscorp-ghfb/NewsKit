@@ -13,9 +13,9 @@ type BaseDialogViewOverridesAndPathProps = Pick<
   'path' | 'overrides' | 'inline' | 'closePosition'
 > & {$open?: boolean};
 
-const createCssGrid = ({
-  closePosition,
-}: Pick<BaseDialogViewProps, 'closePosition'>) =>
+export const createCssGrid: (
+  props: Pick<BaseDialogViewProps, 'closePosition'>,
+) => ReturnType<typeof css> = ({closePosition}) =>
   closePosition === 'left'
     ? css`
         display: grid;
