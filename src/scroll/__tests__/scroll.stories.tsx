@@ -342,3 +342,22 @@ export const StoryLogicalProps = () => (
   </MainContainer>
 );
 StoryLogicalProps.storyName = 'logical-props';
+
+export const StoryScrollInsideTheContainer = () => (
+  <MainContainer>
+    <StorybookSubHeading>
+      Scroll elements inside the container using tab key
+    </StorybookSubHeading>
+    <Container width="250px" height="100px">
+      <Scroll scrollBar controls="static" tabIndex={-1}>
+        <Flex>
+          {Array.from({length: 10}, (_, i) => (
+            <Box key={getSSRId()} tabIndex={0}>{`Item ${i + 1}`}</Box>
+          ))}
+        </Flex>
+      </Scroll>
+    </Container>
+  </MainContainer>
+);
+StoryScrollInsideTheContainer.storyName =
+  'scroll-inside-the-container-with-tab-key';
