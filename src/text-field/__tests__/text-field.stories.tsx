@@ -48,6 +48,79 @@ const myCustomTheme = createTheme({
           color: '#0ed200',
         },
       },
+      customOutlineColor: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveInput020}}',
+          borderWidth: '{{borders.borderWidthDefault}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkBase}}',
+          textOverflow: 'ellipsis',
+          placeholderColor: '{{colors.inkSubtle}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+        focus: {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveInput020}}',
+          borderWidth: '{{borders.borderWidthDefault}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkBase}}',
+          textOverflow: 'ellipsis',
+          placeholderColor: '{{colors.inkSubtle}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+        focus: {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveInput020}}',
+          borderWidth: '{{borders.borderWidthDefault}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkBase}}',
+          textOverflow: 'ellipsis',
+          placeholderColor: '{{colors.inkSubtle}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+        focus: {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveInput020}}',
+          borderWidth: '{{borders.borderWidthDefault}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkBase}}',
+          textOverflow: 'ellipsis',
+          placeholderColor: '{{colors.inkSubtle}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+        focus: {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '5px',
+        },
+      },
     },
   },
 });
@@ -445,3 +518,118 @@ export const TextFieldAddOn = () => {
     </>
   );
 };
+
+export const TextFieldOutlineOverrideExamples = () => (
+  <>
+    <StorybookHeading>Outline override</StorybookHeading>
+    <ThemeProvider theme={myCustomTheme}>
+      <Container>
+        <Stack
+          flow="horizontal-center"
+          spaceInline="space070"
+          spaceStack="space050"
+          wrap="wrap"
+        >
+          <Block>
+            <Block>
+              <Grid>
+                <Cell xs={12}>
+                  <StorybookSubHeading>Custom Color</StorybookSubHeading>
+                  <Label htmlFor="id-outline-1" size={'small' as TextFieldSize}>
+                    A Label
+                  </Label>
+                  <TextField
+                    aria-describedby="id-outline-1-at"
+                    id="id-outline-1"
+                    size={'small' as TextFieldSize}
+                    overrides={{
+                      stylePreset: 'customOutlineColor',
+                    }}
+                  />
+                  <AssistiveText
+                    id="id-outline-1-at"
+                    size={'small' as TextFieldSize}
+                  >
+                    Assistive Text Goes Here
+                  </AssistiveText>
+                </Cell>
+              </Grid>
+            </Block>
+            <Block>
+              <Grid>
+                <Cell xs={12}>
+                  <StorybookSubHeading>Custom Style</StorybookSubHeading>
+                  <Label htmlFor="id-outline-2" size={'small' as TextFieldSize}>
+                    A Label
+                  </Label>
+                  <TextField
+                    aria-describedby="id-2-at"
+                    id="id-outline-2"
+                    size={'small' as TextFieldSize}
+                    overrides={{
+                      stylePreset: 'customOutlineStyle',
+                    }}
+                  />
+                  <AssistiveText
+                    id="id-outline-2-at"
+                    size={'small' as TextFieldSize}
+                  >
+                    Assistive Text Goes Here
+                  </AssistiveText>
+                </Cell>
+              </Grid>
+            </Block>
+            <Block>
+              <Grid>
+                <Cell xs={12}>
+                  <StorybookSubHeading>Custom Width</StorybookSubHeading>
+                  <Label htmlFor="id-outline-3" size={'small' as TextFieldSize}>
+                    A Label
+                  </Label>
+                  <TextField
+                    aria-describedby="id-outline-3-at"
+                    id="id-outline-3"
+                    size={'small' as TextFieldSize}
+                    overrides={{
+                      stylePreset: 'customOutlineWidth',
+                    }}
+                  />
+                  <AssistiveText
+                    id="id-outline-3-at"
+                    size={'small' as TextFieldSize}
+                  >
+                    Assistive Text Goes Here
+                  </AssistiveText>
+                </Cell>
+              </Grid>
+            </Block>
+            <Block>
+              <Grid>
+                <Cell xs={12}>
+                  <StorybookSubHeading>Custom Offset</StorybookSubHeading>
+                  <Label htmlFor="id-outline-4" size={'small' as TextFieldSize}>
+                    A Label
+                  </Label>
+                  <TextField
+                    aria-describedby="id-outline-4-at"
+                    id="id-outline-4"
+                    size={'small' as TextFieldSize}
+                    overrides={{
+                      stylePreset: 'customOutlineOffset',
+                    }}
+                  />
+                  <AssistiveText
+                    id="id-outline-4-at"
+                    size={'small' as TextFieldSize}
+                  >
+                    Assistive Text Goes Here
+                  </AssistiveText>
+                </Cell>
+              </Grid>
+            </Block>
+          </Block>
+        </Stack>
+      </Container>
+    </ThemeProvider>
+  </>
+);

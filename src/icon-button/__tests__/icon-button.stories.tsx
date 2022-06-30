@@ -14,6 +14,71 @@ import {
   ButtonOverrides,
   ButtonSize,
 } from '../..';
+import {ThemeProvider, createTheme} from '../../theme';
+
+const myCustomTheme = createTheme({
+  name: 'my-custom-text-input-theme',
+  overrides: {
+    stylePresets: {
+      customOutlineColor: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '5px',
+        },
+      },
+    },
+  },
+});
 
 const Container = styled.div`
   margin: 24px;
@@ -275,3 +340,53 @@ export const StoryIconButtonOverrides = () => (
   </>
 );
 StoryIconButtonOverrides.storyName = 'icon-button-overrides';
+
+export const StoryIconButtonWithOutlineOverride = () => (
+  <>
+    <StorybookSubHeading>Icon Button with custom outline</StorybookSubHeading>
+    <ThemeProvider theme={myCustomTheme}>
+      <StorybookSubHeading>Custom Color</StorybookSubHeading>
+      <Container>
+        <IconButton
+          aria-label="Link icon"
+          href="https://www.newskit.co.uk/"
+          overrides={{stylePreset: 'customOutlineColor'}}
+        >
+          <IconFilledLink />
+        </IconButton>
+      </Container>
+      <StorybookSubHeading>Custom Style</StorybookSubHeading>
+      <Container>
+        <IconButton
+          aria-label="Link icon"
+          href="https://www.newskit.co.uk/"
+          overrides={{stylePreset: 'customOutlineStyle'}}
+        >
+          <IconFilledLink />
+        </IconButton>
+      </Container>
+      <StorybookSubHeading>Custom Width</StorybookSubHeading>
+      <Container>
+        <IconButton
+          aria-label="Link icon"
+          href="https://www.newskit.co.uk/"
+          overrides={{stylePreset: 'customOutlineWidth'}}
+        >
+          <IconFilledLink />
+        </IconButton>
+      </Container>
+      <StorybookSubHeading>Custom Offset</StorybookSubHeading>
+      <Container>
+        <IconButton
+          aria-label="Link icon"
+          href="https://www.newskit.co.uk/"
+          overrides={{stylePreset: 'customOutlineOffset'}}
+        >
+          <IconFilledLink />
+        </IconButton>
+      </Container>
+    </ThemeProvider>
+  </>
+);
+StoryIconButtonWithOutlineOverride.storyName =
+  'icon-button-with-outline-overrides';
