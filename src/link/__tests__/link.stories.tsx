@@ -10,7 +10,6 @@ import {
 import {IconFilledEmail} from '../../icons';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
-import {defaultFocusVisible} from '../../utils/default-focus-visible';
 
 const linkCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-link-theme',
@@ -48,7 +47,6 @@ const linkCustomThemeObject: CreateThemeArgs = {
         hover: {
           color: '{{colors.inkLinkHover}}',
         },
-        'focus-visible': defaultFocusVisible,
       },
       linkCustomTwo: {
         base: {
@@ -63,7 +61,58 @@ const linkCustomThemeObject: CreateThemeArgs = {
           color: '{{colors.inkLinkHover}}',
           iconColor: '{{colors.inkLinkHover}}',
         },
-        'focus-visible': defaultFocusVisible,
+      },
+      customOutlineColor: {
+        base: {
+          color: '{{colors.interactivePrimary030}}',
+          iconColor: '{{colors.interactivePrimary030}}',
+          textDecoration: 'none',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          color: '{{colors.interactivePrimary030}}',
+          iconColor: '{{colors.interactivePrimary030}}',
+          textDecoration: 'none',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          color: '{{colors.interactivePrimary030}}',
+          iconColor: '{{colors.interactivePrimary030}}',
+          textDecoration: 'none',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          color: '{{colors.interactivePrimary030}}',
+          iconColor: '{{colors.interactivePrimary030}}',
+          textDecoration: 'none',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '5px',
+        },
       },
     },
   },
@@ -545,6 +594,53 @@ export const StoryLinkWithLogicalPropsOverrides = () => (
 );
 StoryLinkWithLogicalPropsOverrides.storyName =
   'link-with-logical-props-overrides';
+
+export const StoryLinkOutlineOverride = () => (
+  <Container>
+    <StorybookHeading>Outline overrides</StorybookHeading>
+    <LinkInline
+      href="/"
+      overrides={{
+        stylePreset: 'customOutlineColor',
+      }}
+    >
+      Custom Color
+    </LinkInline>
+    <br />
+    <br />
+    <LinkInline
+      href="/"
+      overrides={{
+        stylePreset: 'customOutlineStyle',
+      }}
+    >
+      Custom Style
+    </LinkInline>
+    <br />
+    <br />
+    <LinkInline
+      href="/"
+      overrides={{
+        stylePreset: 'customOutlineWidth',
+      }}
+    >
+      Custom Width
+    </LinkInline>
+    <br />
+    <br />
+    <LinkInline
+      href="/"
+      overrides={{
+        stylePreset: 'customOutlineOffset',
+      }}
+    >
+      Custom Offset
+    </LinkInline>
+    <br />
+    <br />
+  </Container>
+);
+StoryLinkOutlineOverride.storyName = 'link with outline override';
 
 export default {
   title: 'NewsKit Light/link',

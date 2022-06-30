@@ -99,6 +99,79 @@ const selectCustomThemeObject: CreateThemeArgs = {
           color: '#325C00',
         },
       },
+      customOutlineColor: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveInput020}}',
+          borderWidth: '{{borders.borderWidthDefault}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkBase}}',
+          textOverflow: 'ellipsis',
+          placeholderColor: '{{colors.inkSubtle}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+        focus: {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveInput020}}',
+          borderWidth: '{{borders.borderWidthDefault}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkBase}}',
+          textOverflow: 'ellipsis',
+          placeholderColor: '{{colors.inkSubtle}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+        focus: {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveInput020}}',
+          borderWidth: '{{borders.borderWidthDefault}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkBase}}',
+          textOverflow: 'ellipsis',
+          placeholderColor: '{{colors.inkSubtle}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+        focus: {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveInput020}}',
+          borderWidth: '{{borders.borderWidthDefault}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkBase}}',
+          textOverflow: 'ellipsis',
+          placeholderColor: '{{colors.inkSubtle}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+        focus: {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '5px',
+        },
+      },
     },
   },
 };
@@ -900,6 +973,117 @@ export const SelectVirtualization = () => {
     </>
   );
 };
+
+export const StoryOutlineOverride = () => (
+  <>
+    <StorybookHeading>Outline override</StorybookHeading>
+    <Container>
+      <Stack flow="vertical-left" spaceInline="space040">
+        <Block>
+          <StorybookSubHeading>Custom Color</StorybookSubHeading>
+          <Label htmlFor="id-outline-1" size={'small' as TextFieldSize}>
+            Label
+          </Label>
+          <Select
+            overrides={{
+              button: {
+                stylePreset: 'customOutlineColor',
+              },
+            }}
+            aria-describedby="id-outline-1-at"
+            id="id-outline-1"
+            size="small"
+          >
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+          <AssistiveText id="id-outline-1-at" size={'small' as TextFieldSize}>
+            Assistive Text
+          </AssistiveText>
+        </Block>
+        <Block>
+          <StorybookSubHeading>Custom Style</StorybookSubHeading>
+          <Label htmlFor="id-outline-2" size={'small' as TextFieldSize}>
+            Label
+          </Label>
+          <Select
+            overrides={{
+              button: {
+                stylePreset: 'customOutlineStyle',
+              },
+            }}
+            aria-describedby="id-outline-2-at"
+            id="id-outline-2"
+            size="small"
+          >
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+          <AssistiveText id="id-outline-2-at" size={'small' as TextFieldSize}>
+            Assistive Text
+          </AssistiveText>
+        </Block>
+        <Block>
+          <StorybookSubHeading>Custom Width</StorybookSubHeading>
+          <Label htmlFor="id-outline-3" size={'small' as TextFieldSize}>
+            Label
+          </Label>
+          <Select
+            overrides={{
+              button: {
+                stylePreset: 'customOutlineWidth',
+              },
+            }}
+            aria-describedby="id-outline-3-at"
+            id="id-outline-3"
+            size="small"
+          >
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+          <AssistiveText id="id-outline-3-at" size={'small' as TextFieldSize}>
+            Assistive Text
+          </AssistiveText>
+        </Block>
+        <Block>
+          <StorybookSubHeading>Custom Offset</StorybookSubHeading>
+          <Label htmlFor="id-outline-4" size={'small' as TextFieldSize}>
+            Label
+          </Label>
+          <Select
+            overrides={{
+              button: {
+                stylePreset: 'customOutlineOffset',
+              },
+            }}
+            aria-describedby="id-outline-4-at"
+            id="id-outline-4"
+            size="small"
+          >
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+          <AssistiveText id="id-outline-4-at" size={'small' as TextFieldSize}>
+            Assistive Text
+          </AssistiveText>
+        </Block>
+      </Stack>
+    </Container>
+  </>
+);
+StoryOutlineOverride.storyName = 'Select Outline override';
 
 export default {
   title: 'NewsKit Light/select',

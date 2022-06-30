@@ -116,6 +116,62 @@ const buttonCustomThemeObject: CreateThemeArgs = {
           backgroundColor: '{{colors.interactivePrimary020}}',
         },
       },
+      customOutlineColor: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '5px',
+        },
+      },
     },
   },
 };
@@ -618,6 +674,29 @@ export const StoryButtonWithTransitions = () => (
   </>
 );
 StoryButtonWithTransitions.storyName = 'button-with-transition';
+
+export const StoryButtonWithOutlineOverride = () => (
+  <>
+    <StorybookSubHeading>Button with custom outline</StorybookSubHeading>
+    <StorybookSubHeading>Custom Color</StorybookSubHeading>
+    <Container>
+      <Button overrides={{stylePreset: 'customOutlineColor'}}>Button</Button>
+    </Container>
+    <StorybookSubHeading>Custom Style</StorybookSubHeading>
+    <Container>
+      <Button overrides={{stylePreset: 'customOutlineStyle'}}>Button</Button>
+    </Container>
+    <StorybookSubHeading>Custom Width</StorybookSubHeading>
+    <Container>
+      <Button overrides={{stylePreset: 'customOutlineWidth'}}>Button</Button>
+    </Container>
+    <StorybookSubHeading>Custom Offset</StorybookSubHeading>
+    <Container>
+      <Button overrides={{stylePreset: 'customOutlineOffset'}}>Button</Button>
+    </Container>
+  </>
+);
+StoryButtonWithOutlineOverride.storyName = 'button-with-outline-overrides';
 
 export default {
   title: 'NewsKit Light/button',

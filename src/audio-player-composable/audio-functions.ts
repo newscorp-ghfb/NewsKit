@@ -223,6 +223,7 @@ export const useAudioFunctions = ({
   const onTimeUpdate = useCallback(
     ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
       const eventTime = Math.floor((target as HTMLAudioElement).currentTime);
+
       if (currentTimeRef.current !== eventTime) {
         setCurrentTime(eventTime);
 

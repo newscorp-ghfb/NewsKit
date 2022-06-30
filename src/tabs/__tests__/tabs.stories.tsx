@@ -105,6 +105,58 @@ const tabsCustomThemeObject: CreateThemeArgs = {
           borderStyle: 'solid',
         },
       },
+      customOutlineColor: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+        focus: {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '-2px',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+        focus: {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '-2px',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+        focus: {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '-2px',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+        focus: {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '-5px',
+        },
+      },
     },
     transitionPresets: {
       customBackgroundColorChange: {
@@ -1635,6 +1687,105 @@ export const StoryTagLogicalProps = () => (
   </>
 );
 StoryTagLogicalProps.storyName = 'tabs-logical-props';
+
+export const StoryTabsOutlineOverride = () => (
+  <>
+    <StorybookHeading>Tabs Outline Overrides</StorybookHeading>
+
+    <StorybookSubHeading>Custom Color</StorybookSubHeading>
+    <Tabs
+      size={TabSize.Small}
+      distribution={TabsDistribution.Start}
+      divider
+      initialSelectedIndex={10}
+    >
+      <Tab
+        label="H tab 1"
+        key="tab-1"
+        overrides={{stylePreset: 'customOutlineColor'}}
+      >
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label={titleCanHaveIcons} key="tab-2">
+        <LoremIpsum textNumber={2} />
+      </Tab>
+      <Tab label="H tab 3, three" key="tab-3">
+        <LoremIpsum textNumber={3} />
+      </Tab>
+    </Tabs>
+    <Spacer />
+
+    <StorybookSubHeading>Custom Style</StorybookSubHeading>
+    <Tabs
+      size={TabSize.Small}
+      distribution={TabsDistribution.Start}
+      divider
+      initialSelectedIndex={10}
+    >
+      <Tab
+        label="H tab 1"
+        key="tab-1"
+        overrides={{stylePreset: 'customOutlineStyle'}}
+      >
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label={titleCanHaveIcons} key="tab-2">
+        <LoremIpsum textNumber={2} />
+      </Tab>
+      <Tab label="H tab 3, three" key="tab-3">
+        <LoremIpsum textNumber={3} />
+      </Tab>
+    </Tabs>
+    <Spacer />
+
+    <StorybookSubHeading>Custom Width</StorybookSubHeading>
+    <Tabs
+      size={TabSize.Small}
+      distribution={TabsDistribution.Start}
+      divider
+      initialSelectedIndex={10}
+    >
+      <Tab
+        label="H tab 1"
+        key="tab-1"
+        overrides={{stylePreset: 'customOutlineWidth'}}
+      >
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label={titleCanHaveIcons} key="tab-2">
+        <LoremIpsum textNumber={2} />
+      </Tab>
+      <Tab label="H tab 3, three" key="tab-3">
+        <LoremIpsum textNumber={3} />
+      </Tab>
+    </Tabs>
+    <Spacer />
+
+    <StorybookSubHeading>Custom Offset</StorybookSubHeading>
+    <Tabs
+      size={TabSize.Small}
+      distribution={TabsDistribution.Start}
+      divider
+      initialSelectedIndex={10}
+    >
+      <Tab
+        label="H tab 1"
+        key="tab-1"
+        overrides={{stylePreset: 'customOutlineOffset'}}
+      >
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label={titleCanHaveIcons} key="tab-2">
+        <LoremIpsum textNumber={2} />
+      </Tab>
+      <Tab label="H tab 3, three" key="tab-3">
+        <LoremIpsum textNumber={3} />
+      </Tab>
+    </Tabs>
+    <Spacer />
+  </>
+);
+StoryTabsOutlineOverride.storyName = 'tabs-outline-overrides';
 
 export default {
   title: 'NewsKit Light/tabs',

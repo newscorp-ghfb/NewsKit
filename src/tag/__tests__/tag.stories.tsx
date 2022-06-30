@@ -41,6 +41,74 @@ const tagCustomThemeObject: CreateThemeArgs = {
           borderColor: '{{colors.green040}}',
         },
       },
+      customOutlineColor: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveSecondary030}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveSecondary030}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveSecondary030}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveSecondary030}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '5px',
+        },
+      },
     },
     transitionPresets: {
       customBackgroundColorChange: {
@@ -221,43 +289,6 @@ export const StoryTagIconSizes = () => (
 );
 StoryTagIconSizes.storyName = 'tag-icon-sizes';
 
-// const myCustomThemeTransitions = createTheme({
-//   name: 'my-custom-tag-theme',
-//   overrides: {
-//     transitionPresets: {
-//       customBackgroundColorChange: {
-//         base: {
-//           transitionProperty: 'background-color',
-//           transitionDuration: '100ms',
-//           transitionDelay: '500ms',
-//           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-//         },
-//       },
-//       customborderColorChange: {
-//         base: {
-//           transitionProperty: 'border-color',
-//           transitionDuration: '100ms',
-//           transitionDelay: '500ms',
-//           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-//         },
-//       },
-//     },
-//     stylePresets: {
-//       tagCustom: {
-//         base: {
-//           borderStyle: 'solid',
-//           borderColor: '{{colors.interactiveSecondary030}}',
-//           backgroundColor: '{{colors.transparent}}',
-//           color: '{{colors.inkBase}}',
-//         },
-//         hover: {
-//           backgroundColor: '{{colors.amber070}}',
-//           borderColor: '{{colors.green040}}',
-//         },
-//       },
-//     },
-//   },
-// });
 export const StoryTagTransitions = () => (
   <>
     <StorybookSubHeading>Tag with Transition Presets</StorybookSubHeading>
@@ -381,6 +412,47 @@ export const StoryTagLogicalProps = () => (
   </>
 );
 StoryTagLogicalProps.storyName = 'tag-logical-props';
+
+export const StoryTagWithOutlineOverride = () => (
+  <>
+    <StorybookHeading>Tag with outline overrides</StorybookHeading>
+
+    <StorybookSubHeading>with Style Presets overrides</StorybookSubHeading>
+    <Container>
+      <Tag
+        href="http://example.com"
+        overrides={{stylePreset: 'customOutlineColor'}}
+      >
+        Custom Color
+      </Tag>
+      <br />
+      <br />
+      <Tag
+        href="http://example.com"
+        overrides={{stylePreset: 'customOutlineStyle'}}
+      >
+        Custom Style
+      </Tag>
+      <br />
+      <br />
+      <Tag
+        href="http://example.com"
+        overrides={{stylePreset: 'customOutlineWidth'}}
+      >
+        Custom Width
+      </Tag>
+      <br />
+      <br />
+      <Tag
+        href="http://example.com"
+        overrides={{stylePreset: 'customOutlineOffset'}}
+      >
+        Custom Offset
+      </Tag>
+    </Container>
+  </>
+);
+StoryTagWithOutlineOverride.storyName = 'tag with outline overrides';
 
 export default {
   title: 'NewsKit Light/tag',

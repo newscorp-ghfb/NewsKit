@@ -55,6 +55,66 @@ const accordionCustomThemeObject: CreateThemeArgs = {
           iconColor: '{{colors.inkInverse}}',
         },
       },
+      customOutlineColor: {
+        base: {
+          backgroundColor: '{{colors.interface010}}',
+          color: '{{colors.inkBase}}',
+          borderStyle: 'none none solid none',
+          borderColor: '{{colors.interface050}}',
+          borderWidth: '{{borders.borderWidth010}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          backgroundColor: '{{colors.interface010}}',
+          color: '{{colors.inkBase}}',
+          borderStyle: 'none none solid none',
+          borderColor: '{{colors.interface050}}',
+          borderWidth: '{{borders.borderWidth010}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          backgroundColor: '{{colors.interface010}}',
+          color: '{{colors.inkBase}}',
+          borderStyle: 'none none solid none',
+          borderColor: '{{colors.interface050}}',
+          borderWidth: '{{borders.borderWidth010}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          backgroundColor: '{{colors.interface010}}',
+          color: '{{colors.inkBase}}',
+          borderStyle: 'none none solid none',
+          borderColor: '{{colors.interface050}}',
+          borderWidth: '{{borders.borderWidth010}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '5px',
+        },
+      },
     },
   },
 };
@@ -351,6 +411,98 @@ export const StoryAccordionGroupControlled = () => {
   );
 };
 StoryAccordionGroupControlled.storyName = 'accordion-group-controlled';
+
+export const StoryAccordionOutlineOverrides = () => (
+  <>
+    <StorybookSubHeading>Accordion Outline Overrides</StorybookSubHeading>
+    <Spacer>
+      <Accordion
+        header={
+          <StyledBlock>
+            <IconFilledAccountBalance
+              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
+            />
+            Custom Color
+          </StyledBlock>
+        }
+        label="Hide"
+        expanded
+        overrides={{
+          header: {
+            stylePreset: 'customOutlineColor',
+          },
+        }}
+      >
+        {content}
+      </Accordion>
+    </Spacer>
+    <Spacer>
+      <Accordion
+        header={
+          <StyledBlock>
+            <IconFilledAccountBalance
+              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
+            />
+            Custom Style
+          </StyledBlock>
+        }
+        label="Hide"
+        expanded
+        overrides={{
+          header: {
+            stylePreset: 'customOutlineStyle',
+          },
+        }}
+      >
+        {content}
+      </Accordion>
+    </Spacer>
+    <Spacer>
+      <Accordion
+        header={
+          <StyledBlock>
+            <IconFilledAccountBalance
+              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
+            />
+            Custom Width
+          </StyledBlock>
+        }
+        label="Hide"
+        expanded
+        overrides={{
+          header: {
+            stylePreset: 'customOutlineWidth',
+          },
+        }}
+      >
+        {content}
+      </Accordion>
+    </Spacer>
+    <Spacer>
+      <Accordion
+        header={
+          <StyledBlock>
+            <IconFilledAccountBalance
+              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
+            />
+            Custom Offset
+          </StyledBlock>
+        }
+        label="Hide"
+        expanded
+        overrides={{
+          header: {
+            stylePreset: 'customOutlineOffset',
+          },
+        }}
+      >
+        {content}
+      </Accordion>
+    </Spacer>
+  </>
+);
+
+StoryAccordionOutlineOverrides.storyName = 'accordion-with-outline-overrides';
 
 export default {
   title: 'NewsKit Light/accordion',
