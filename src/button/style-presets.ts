@@ -1,4 +1,5 @@
 import {StylePreset} from '../theme/types';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 export default {
   buttonSolidPrimary: {
@@ -24,6 +25,7 @@ export default {
       color: '{{colors.inkBrand010}}',
       iconColor: '{{colors.inkBrand010}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
   buttonSolidSecondary: {
     base: {
@@ -48,6 +50,7 @@ export default {
       color: '{{colors.inkBase}}',
       iconColor: '{{colors.inkBase}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
   buttonSolidNegative: {
     base: {
@@ -72,6 +75,7 @@ export default {
       color: '{{colors.inkNegative}}',
       iconColor: '{{colors.inkNegative}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
   buttonSolidPositive: {
     base: {
@@ -96,6 +100,7 @@ export default {
       color: '{{colors.inkPositive}}',
       iconColor: '{{colors.inkPositive}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
   buttonSolidInverse: {
     base: {
@@ -120,6 +125,7 @@ export default {
       color: '{{colors.inkInverse}}',
       iconColor: '{{colors.inkInverse}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
 
   buttonOutlinedPrimary: {
@@ -149,6 +155,7 @@ export default {
       backgroundColor: '{{colors.interactivePrimary020}}',
       borderStyle: 'none',
     },
+    'focus-visible': defaultFocusVisible,
   },
   buttonOutlinedSecondary: {
     base: {
@@ -177,6 +184,7 @@ export default {
       backgroundColor: '{{colors.interactiveSecondary020}}',
       borderStyle: 'none',
     },
+    'focus-visible': defaultFocusVisible,
   },
   buttonOutlinedNegative: {
     base: {
@@ -205,6 +213,7 @@ export default {
       backgroundColor: '{{colors.interactiveNegative020}}',
       borderStyle: 'none',
     },
+    'focus-visible': defaultFocusVisible,
   },
   buttonOutlinedPositive: {
     base: {
@@ -233,6 +242,7 @@ export default {
       backgroundColor: '{{colors.interactivePositive020}}',
       borderStyle: 'none',
     },
+    'focus-visible': defaultFocusVisible,
   },
   buttonOutlinedInverse: {
     base: {
@@ -261,6 +271,7 @@ export default {
       backgroundColor: '{{colors.interactiveInverse020}}',
       borderStyle: 'none',
     },
+    'focus-visible': defaultFocusVisible,
   },
 
   buttonMinimalPrimary: {
@@ -283,6 +294,7 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactivePrimary020}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
   buttonMinimalSecondary: {
     base: {
@@ -304,6 +316,7 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactiveSecondary020}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
   buttonMinimalNegative: {
     base: {
@@ -325,6 +338,7 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactiveNegative020}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
   buttonMinimalPositive: {
     base: {
@@ -346,6 +360,7 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactivePositive020}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
   buttonMinimalInverse: {
     base: {
@@ -367,5 +382,6 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactiveInverse020}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
 } as Record<string, StylePreset>;

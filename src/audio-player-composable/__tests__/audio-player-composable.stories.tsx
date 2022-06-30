@@ -497,6 +497,58 @@ export const AudioSubComponents = () => (
 );
 AudioSubComponents.storyName = 'audio-sub-components';
 
+export const AudioPlayerWithInitialProps = () => {
+  const breakpointKey = useBreakpointKey();
+  return (
+    <AudioPlayerComposable src={AUDIO_SRC} initialTime={50} initialVolume={0.2}>
+      <GridLayout
+        columns={{
+          xs: '1fr auto auto auto 1fr',
+          md: '50px 1fr auto auto auto 1fr 50px',
+        }}
+        rowGap="space040"
+        columnGap="space040"
+        areas={{
+          xs: fullAudioPlayerAreasMobile,
+          md: fullAudioPlayerAreasDesktop,
+        }}
+      >
+        {Areas => (
+          <>
+            <Areas.Play alignSelf="center">
+              <AudioPlayerPlayPauseButton />
+            </Areas.Play>
+
+            <Areas.Volume alignSelf="center" justifySelf="start">
+              <AudioPlayerVolumeControl
+                collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+              />
+            </Areas.Volume>
+
+            <Areas.SeekBar>
+              <AudioPlayerSeekBar />
+            </Areas.SeekBar>
+
+            <Areas.CurrentTime>
+              <AudioPlayerTimeDisplay
+                format={({currentTime}) => calculateTime(currentTime)}
+              />
+            </Areas.CurrentTime>
+
+            <Areas.TotalTime justifySelf="end">
+              <AudioPlayerTimeDisplay
+                format={({duration}) => calculateTime(duration)}
+              />
+            </Areas.TotalTime>
+          </>
+        )}
+      </GridLayout>
+    </AudioPlayerComposable>
+  );
+};
+
+AudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
+
 export const AudioPlayerOverrides = () => (
   <ThemeProvider theme={myCustomTheme}>
     <StorybookSubHeading>Audio player with overrides</StorybookSubHeading>

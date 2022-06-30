@@ -22,7 +22,12 @@ const ThemelessTimeDisplay = ({
   const {format: defaultFormat, currentTime, duration} = getTimeDisplayProps!();
   const formatFn = typeof format === 'function' ? format : defaultFormat;
   return (
-    <StyledTextBlock as="span" overrides={overrides} {...restProps}>
+    <StyledTextBlock
+      as="span"
+      overrides={overrides}
+      data-testid="audio-player-time-display"
+      {...restProps}
+    >
       {formatFn({currentTime, duration})}
     </StyledTextBlock>
   );
