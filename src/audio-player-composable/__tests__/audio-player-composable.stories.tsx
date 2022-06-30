@@ -10,6 +10,7 @@ import {
   AudioPlayerSkipNextButton,
   AudioPlayerSkipPreviousButton,
   AudioPlayerVolumeControl,
+  MuteButtonIconProps,
 } from '..';
 import {
   StorybookHeading,
@@ -27,9 +28,12 @@ import {
   IconFilledReplay5,
   IconFilledForward5,
   IconFilledGraphicEq,
+  IconFilledStarOutline,
+  IconFilledCancel,
 } from '../../icons';
 import {useBreakpointKey} from '../../utils/hooks';
 import {Flag} from '../../flag';
+import {styled} from '../../utils';
 
 const AUDIO_SRC =
   'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3';
@@ -114,9 +118,29 @@ const myCustomTheme = createTheme({
           backgroundColor: 'grey',
         },
       },
+      customAudioPlayerVolumeControlHorizontalContainer: {
+        base: {
+          backgroundColor: 'grey',
+        },
+      },
     },
   },
 });
+
+const VerticalContainer = styled.div`
+  display: inline-flex;
+`;
+
+const CustomMuteButtonIcon = ({volume}: MuteButtonIconProps) =>
+  volume === 0 ? (
+    <IconFilledStarOutline
+      overrides={{size: 'iconSize030', stylePreset: 'inkNegative'}}
+    />
+  ) : (
+    <IconFilledCancel
+      overrides={{size: 'iconSize030', stylePreset: 'inkPositive'}}
+    />
+  );
 
 export default {
   title: 'NewsKit Light/audio-player-composable',
@@ -321,18 +345,27 @@ const AudioPlayerInlineRecorded = (props: {
       columns="auto auto 40px 1fr auto"
       columnGap="space040"
       alignItems="center"
+      overrides={{marginInline: 'space030'}}
     >
-      <GridLayoutItem alignSelf="end">
-        <AudioPlayerVolumeControl vertical />
+      <GridLayoutItem column="1/2" row="1/5">
+        <AudioPlayerVolumeControl layout="vertical" />
       </GridLayoutItem>
-      <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
-      <AudioPlayerTimeDisplay
-        format={({currentTime}) => calculateTime(currentTime)}
-      />
-      <AudioPlayerSeekBar />
-      <AudioPlayerTimeDisplay
-        format={({duration}) => calculateTime(duration)}
-      />
+      <GridLayoutItem column="2/3" row="4/5">
+        <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+      </GridLayoutItem>
+      <GridLayoutItem column="3/4" row="4/5">
+        <AudioPlayerTimeDisplay
+          format={({currentTime}) => calculateTime(currentTime)}
+        />
+      </GridLayoutItem>
+      <GridLayoutItem column="4/5" row="4/5">
+        <AudioPlayerSeekBar />
+      </GridLayoutItem>
+      <GridLayoutItem column="5/6" row="4/5">
+        <AudioPlayerTimeDisplay
+          format={({duration}) => calculateTime(duration)}
+        />
+      </GridLayoutItem>
     </GridLayout>
   </AudioPlayerComposable>
 );
@@ -442,21 +475,18 @@ export const AudioSubComponents = () => (
         </GridLayoutItem>
       </GridLayout>
       <StorybookSubHeading>SeekBar</StorybookSubHeading> <AudioPlayerSeekBar />
-      <GridLayout
-        columns="1fr 1fr 1fr"
-        rows="1fr 1fr 1fr"
-        rowGap="10px"
-        columnGap="20px"
-      >
+      <GridLayout columns="1fr 1fr 1fr" rowGap="10px" columnGap="20px">
         <GridLayoutItem>
           <StorybookSubHeading>Volume Control</StorybookSubHeading>
           <AudioPlayerVolumeControl />
         </GridLayoutItem>
+
         <GridLayoutItem>
           <StorybookSubHeading>Vertical Volume Control</StorybookSubHeading>
-          <AudioPlayerVolumeControl vertical />
+          <VerticalContainer>
+            <AudioPlayerVolumeControl layout="vertical" />
+          </VerticalContainer>
         </GridLayoutItem>
-
         <GridLayoutItem>
           <StorybookSubHeading>collapsed Volume Control</StorybookSubHeading>
           <AudioPlayerVolumeControl collapsed />
@@ -544,6 +574,9 @@ export const AudioPlayerOverrides = () => (
               <AudioPlayerVolumeControl
                 muteButtonSize={ButtonSize.Medium}
                 overrides={{
+                  stylePreset:
+                    'customAudioPlayerVolumeControlHorizontalContainer',
+                  spaceBetween: 'space050',
                   slider: {
                     track: {
                       stylePreset: 'customTrackStylePreset',
@@ -563,10 +596,6 @@ export const AudioPlayerOverrides = () => (
                     thumbLabel: {
                       stylePreset: 'customThumbLabelStylePreset',
                     },
-                  },
-                  button: {
-                    stylePreset: 'customButtonStylePreset',
-                    iconSize: 'iconSize020',
                   },
                 }}
               />
@@ -629,6 +658,60 @@ export const AudioPlayerOverrides = () => (
           </>
         )}
       </GridLayout>
+    </AudioPlayerComposable>
+    <StorybookSubHeading>MuteButton Icon Prop Overrides</StorybookSubHeading>
+    <AudioPlayerComposable
+      src={AUDIO_SRC}
+      ariaLandmark="audio player mutebutton icon prop overrides"
+    >
+      <AudioPlayerVolumeControl
+        muteButtonSize={ButtonSize.Medium}
+        overrides={{
+          button: {
+            muteButtonIcon: {
+              props: {
+                overrides: {
+                  stylePreset: 'inkPositive',
+                  size: 'iconSize010',
+                },
+              },
+            },
+          },
+        }}
+      />
+    </AudioPlayerComposable>
+    <StorybookSubHeading>MuteButton Icon Overrides</StorybookSubHeading>
+    <AudioPlayerComposable
+      src={AUDIO_SRC}
+      ariaLandmark="audio player mutebutton icon prop overrides"
+    >
+      <AudioPlayerVolumeControl
+        muteButtonSize={ButtonSize.Medium}
+        overrides={{
+          button: {
+            muteButtonIcon: {
+              stylePreset: 'inkNegative',
+              size: 'iconSize030',
+            },
+          },
+        }}
+      />
+    </AudioPlayerComposable>
+    <StorybookSubHeading>
+      MuteButton Icon Component Overrides
+    </StorybookSubHeading>
+    <AudioPlayerComposable
+      src={AUDIO_SRC}
+      ariaLandmark="audio player mutebutton icon prop overrides"
+    >
+      <AudioPlayerVolumeControl
+        muteButtonSize={ButtonSize.Medium}
+        overrides={{
+          button: {
+            muteButtonIcon: CustomMuteButtonIcon,
+          },
+        }}
+      />
     </AudioPlayerComposable>
   </ThemeProvider>
 );

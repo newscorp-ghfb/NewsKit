@@ -209,14 +209,14 @@ export const AudioPlayerComposable = ({
 
   const getVolumeControlProps = useCallback(
     ({
-      vertical,
+      layout,
       overrides,
       keyboardShortcuts,
       collapsed,
       muteButtonSize,
     }: AudioPlayerVolumeControlProps) => ({
       keyboardShortcuts,
-      vertical,
+      layout,
       overrides: overrides || {},
       onChange: onChangeVolumeSlider,
       volume,
