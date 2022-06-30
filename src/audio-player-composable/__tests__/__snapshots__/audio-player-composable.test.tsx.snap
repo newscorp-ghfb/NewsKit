@@ -806,6 +806,7 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
     </button>
     <span
       class="emotion-4"
+      data-testid="audio-player-time-display"
     >
       00:00/00:00 
     </span>
@@ -2357,6 +2358,7 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
     </button>
     <span
       class="emotion-9"
+      data-testid="audio-player-time-display"
     >
       00:00/00:00 
     </span>
