@@ -92,6 +92,12 @@ describe('Popover', () => {
               paddingBlock: 'space040',
               paddingInline: 'space020',
             },
+            transitionPreset: {
+              extend: 'fade',
+              base: {
+                transitionDelay: '{{motions.motionDuration050}}',
+              },
+            },
           },
         },
         myCustomTheme,
