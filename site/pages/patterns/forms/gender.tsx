@@ -25,7 +25,7 @@ const unorderedListOverrides = {
   },
 };
 
-const EmailAddress = (layoutProps: LayoutProps) => (
+const Gender = (layoutProps: LayoutProps) => (
   <PatternPageTemplate
     headTags={{
       title: 'Gender/Sex/Title',
@@ -127,4 +127,4 @@ const EmailAddress = (layoutProps: LayoutProps) => (
   </PatternPageTemplate>
 );
 
-export default EmailAddress;
+export default Gender;
