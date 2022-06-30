@@ -841,6 +841,13 @@ export default [
             description: `Ask for a user’s email address to provide a service, to contact them directly, or as a unique way of identifying them.`,
             illustration: 'patterns/forms/email-address/hero',
           },
+          {
+            title: 'Passwords',
+            page: true,
+            id: '/patterns/forms/passwords',
+            description: `Use a password entry field when asking users to create an account or log in.`,
+            illustration: 'patterns/forms/passwords/hero',
+          },
         ],
       },
     ],
