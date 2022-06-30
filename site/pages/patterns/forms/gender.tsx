@@ -43,10 +43,10 @@ const Gender = (layoutProps: LayoutProps) => (
     }}
   >
     <ComponentPageCell>
-      <ContentSection sectionName="How to use">
+      <ContentSection sectionName="How to ask">
         <ContentPrimary
-          id="how-to-use"
-          toc="How to use"
+          id="how-to-ask"
+          toc="How to ask"
           headline="How to ask users for their gender"
           description="Gender is sensitive information. Only ask for a user’s gender if it is vital to collect as part of a business requirement. If gender is collected you should make it clear to the user why we are asking for this data."
         />
