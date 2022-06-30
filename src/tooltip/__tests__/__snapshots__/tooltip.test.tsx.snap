@@ -15,6 +15,76 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
   top: -10px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -46,7 +116,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
@@ -81,6 +151,76 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
   top: -16px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -112,7 +252,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
@@ -147,6 +287,76 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
   top: 0px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -178,7 +388,7 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
@@ -213,6 +423,76 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
   top: 0px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -244,7 +524,7 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
@@ -279,6 +559,76 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
   top: 0px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -295,7 +645,7 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
@@ -324,6 +674,76 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
   position: absolute;
   left: 0px;
   top: -8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -357,7 +777,7 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
@@ -392,6 +812,76 @@ exports[`Tooltip pointer padding should be applied with token distance override 
   top: -8px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -423,7 +913,7 @@ exports[`Tooltip pointer padding should be applied with token distance override 
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
@@ -458,6 +948,76 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
   top: -8px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -489,7 +1049,7 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
@@ -524,6 +1084,76 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
   top: -8px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -555,7 +1185,7 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
@@ -590,6 +1220,76 @@ exports[`Tooltip should render correct styles: default 1`] = `
   top: 0px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -606,7 +1306,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
@@ -639,6 +1339,76 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
   top: 0px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   background-color: #EF1703;
@@ -655,7 +1425,7 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
@@ -684,6 +1454,76 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
   position: absolute;
   left: 0px;
   top: -8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -717,7 +1557,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
@@ -752,6 +1592,76 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
   top: -8px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -783,7 +1693,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
@@ -818,6 +1728,76 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
   top: -8px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -849,7 +1829,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
@@ -884,6 +1864,76 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
   top: 0px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -915,7 +1965,7 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"

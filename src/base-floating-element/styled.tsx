@@ -4,6 +4,7 @@ import {
   getResponsiveSize,
   getResponsiveSpace,
   getStylePreset,
+  getTransitionPreset,
   getTypographyPreset,
   styled,
 } from '../utils/style';
@@ -17,6 +18,7 @@ export const StyledFloatingElement = styled.div<
     $x?: number;
     $y?: number;
     hidePointer: boolean;
+    transitionClassname: string;
   } & Pick<BaseFloatingElementProps, 'overrides' | 'path'>
 >`
   ${({path}) => getStylePreset(`${path}`, '')};
@@ -28,6 +30,8 @@ export const StyledFloatingElement = styled.div<
     left: $x != null ? `${$x}px` : '',
     top: $y != null ? `${$y}px` : '',
   })}
+  ${({path, transitionClassname}) =>
+    getTransitionPreset(`${path}`, '', transitionClassname)};
 `;
 
 export const StyledPanel = styled(TextBlock)<
