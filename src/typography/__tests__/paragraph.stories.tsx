@@ -1,51 +1,33 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {P, Sub, Sup} from '../index';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-paragraph-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        paragraphCustom: {
-          base: {
-            color: '{{colors.blue060}}',
-          },
+const paragraphCustomThemeObject: CreateThemeArgs = {
+  name: 'my-custom-paragraph-theme',
+  overrides: {
+    stylePresets: {
+      paragraphCustom: {
+        base: {
+          color: '{{colors.blue060}}',
         },
-        dropCapCustom: {
-          base: {
-            color: '{{colors.blue060}}',
-          },
+      },
+      dropCapCustom: {
+        base: {
+          color: '{{colors.blue060}}',
         },
       },
     },
-  });
+  },
+};
 
 const bodyString =
   'Telling the stories that matter, seeding ideas and stirring emotion. Capturing moments, meaning and magic. Making sense of the world. On the shoulders of giants, in the thick of it, behind the scenes and fighting the good fight. Long form and rapid-fire, pragmatic and poetic, comical and critical.';
-
-export default {
-  title: 'NewsKit Light/typography/paragraph',
-  component: () => 'None',
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
-};
 
 export const StoryParagraph = () => (
   <>
@@ -158,3 +140,20 @@ export const StoryParagraphWithLogicalProps = () => {
   );
 };
 StoryParagraphWithLogicalProps.storyName = 'paragraph-with-logical-props';
+
+export default {
+  title: 'NewsKit Light/typography/paragraph',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          paragraphCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

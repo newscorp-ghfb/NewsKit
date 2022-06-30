@@ -5,7 +5,7 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled} from '../../utils/style';
 import {
   IconFilledInfo,
@@ -18,64 +18,62 @@ import {Button, ButtonOrButtonLinkProps} from '../../button';
 import {LinkInline} from '../../link';
 import {Cell, Grid, Visible} from '../../grid';
 import {GridLayout, GridLayoutItem} from '../..';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'banner-intents-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        bannerContainerSolidCustom: {
-          base: {
-            backgroundColor: '{{colors.interfaceSkeleton020}}',
-            iconColor: '{{colors.inkInverse}}',
-          },
+const bannerCustomThemeObject: CreateThemeArgs = {
+  name: 'banner-custom-theme',
+  overrides: {
+    stylePresets: {
+      bannerContainerSolidCustom: {
+        base: {
+          backgroundColor: '{{colors.interfaceSkeleton020}}',
+          iconColor: '{{colors.inkInverse}}',
         },
-        bannerMessageCustom: {
-          base: {
-            color: '{{colors.inkContrast}}',
-          },
+      },
+      bannerMessageCustom: {
+        base: {
+          color: '{{colors.inkContrast}}',
         },
-        bannerActionsCustom: {
-          base: {
-            color: '{{colors.inkContrast}}',
-            backgroundColor: '{{colors.white}}',
-            borderRadius: '{{borders.borderRadiusSharp}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.neutral050}}',
-          },
+      },
+      bannerActionsCustom: {
+        base: {
+          color: '{{colors.inkContrast}}',
+          backgroundColor: '{{colors.white}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
         },
-        bannerCloseCustomHorizontal: {
-          base: {
-            color: '{{colors.inkContrast}}',
-            iconColor: '{{colors.inkContrast}}',
-            backgroundColor: '{{colors.transparent}}',
-            borderRadius: '{{borders.borderRadiusSharp}}',
-            borderColor: '{{colors.transparent}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.neutral050}}',
-          },
+        hover: {
+          backgroundColor: '{{colors.neutral050}}',
         },
-        bannerCloseCustomVertical: {
-          base: {
-            color: '{{colors.inkContrast}}',
-            iconColor: '{{colors.inkContrast}}',
-            backgroundColor: '{{colors.transparent}}',
-            borderRadius: '{{borders.borderRadiusSharp}}',
-            borderStyle: 'solid',
-            borderWidth: '1px',
-            borderColor: '{{colors.inkContrast}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.neutral050}}',
-          },
+      },
+      bannerCloseCustomHorizontal: {
+        base: {
+          color: '{{colors.inkContrast}}',
+          iconColor: '{{colors.inkContrast}}',
+          backgroundColor: '{{colors.transparent}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
+          borderColor: '{{colors.transparent}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.neutral050}}',
+        },
+      },
+      bannerCloseCustomVertical: {
+        base: {
+          color: '{{colors.inkContrast}}',
+          iconColor: '{{colors.inkContrast}}',
+          backgroundColor: '{{colors.transparent}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
+          borderStyle: 'solid',
+          borderWidth: '1px',
+          borderColor: '{{colors.inkContrast}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.neutral050}}',
         },
       },
     },
-  });
+  },
+};
 
 const BannerWrapper = styled.div`
   margin-bottom: 24px;
@@ -203,23 +201,6 @@ const bannerLink = (
     with link
   </LinkInline>
 );
-
-export default {
-  title: 'NewsKit Light/banner',
-  component: () => 'None',
-  disabledRules: [],
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
-};
 
 export const StoryBannerDefault = () => (
   <>
@@ -577,3 +558,21 @@ export const StoryBannerWithLogicalOverrides = () => (
   </>
 );
 StoryBannerWithLogicalOverrides.storyName = 'banner-with-logical-overrides';
+
+export default {
+  title: 'NewsKit Light/banner',
+  component: () => 'None',
+  disabledRules: [],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          bannerCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

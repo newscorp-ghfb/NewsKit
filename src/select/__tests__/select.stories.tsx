@@ -14,7 +14,7 @@ import {
 } from '../../test/storybook-comps';
 import {Label} from '../../label';
 import {AssistiveText} from '../../assistive-text';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {
   IconFilledCheckCircle,
   IconFilledAccountBalance,
@@ -25,7 +25,7 @@ import {Button} from '../../button/button';
 import {InlineMessage} from '../../inline-message';
 import {GridLayout} from '../../grid-layout';
 import {countries} from './phone-countries';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const items = [
   'Neptunium',
@@ -68,57 +68,39 @@ const Spacer = styled.div`
   margin-bottom: 20px;
 `;
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-select-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        selectContainerCustom: {
-          base: {
-            borderStyle: 'solid',
-            borderColor: '#D20600',
-            placeholderColor: 'blue',
-          },
+const selectCustomThemeObject: CreateThemeArgs = {
+  name: 'my-custom-select-theme',
+  overrides: {
+    stylePresets: {
+      selectContainerCustom: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '#D20600',
+          placeholderColor: 'blue',
         },
-        selectPanelCustom: {
-          base: {
-            backgroundColor: 'red',
-          },
+      },
+      selectPanelCustom: {
+        base: {
+          backgroundColor: 'red',
         },
-        selectOptionCustom: {
-          base: {
-            backgroundColor: 'yellow',
-          },
+      },
+      selectOptionCustom: {
+        base: {
+          backgroundColor: 'yellow',
         },
-        labelOverrides: {
-          base: {
-            color: '#325C00',
-          },
+      },
+      labelOverrides: {
+        base: {
+          color: '#325C00',
         },
-        assistiveTextOverrides: {
-          base: {
-            color: '#325C00',
-          },
+      },
+      assistiveTextOverrides: {
+        base: {
+          color: '#325C00',
         },
       },
     },
-  });
-
-export default {
-  title: 'NewsKit Light/select',
-  component: () => 'None',
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
+  },
 };
 
 export const StorySelectSize = () => (
@@ -919,4 +901,19 @@ export const SelectVirtualization = () => {
   );
 };
 
-// StorySelectVirtualized.name = "sel"
+export default {
+  title: 'NewsKit Light/select',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          selectCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

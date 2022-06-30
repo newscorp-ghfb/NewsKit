@@ -8,7 +8,7 @@ import {
 } from '../../test/storybook-comps';
 
 import {RadioButton} from '..';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled} from '../../utils';
 import {
   Cell,
@@ -21,63 +21,44 @@ import {states, sizes} from './helpers';
 import {RadioGroup} from '../radio-group';
 import {RadioButtonIconProps} from '../types';
 import {Fieldset} from '../../fieldset';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'radio-group-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        customRadioInput: {
-          base: {
-            borderColor: 'red',
-            borderStyle: 'solid',
-            borderWidth: '2px',
-            borderRadius: '50%',
-            backgroundColor: 'orange',
-            iconColor: 'red',
-          },
-          hover: {
-            backgroundColor: 'blue',
-          },
+const radioButtonCustomThemeObject: CreateThemeArgs = {
+  name: 'radio-group-theme',
+  overrides: {
+    stylePresets: {
+      customRadioInput: {
+        base: {
+          borderColor: 'red',
+          borderStyle: 'solid',
+          borderWidth: '2px',
+          borderRadius: '50%',
+          backgroundColor: 'orange',
+          iconColor: 'red',
         },
-        customRadioFeedback: {
-          base: {
-            backgroundColor: 'rgba(0,0,0,0.0)',
-            borderRadius: '50%',
-          },
-          hover: {
-            backgroundColor: 'rgba(0,0,0,0.5)',
-            borderRadius: '50%',
-          },
+        hover: {
+          backgroundColor: 'blue',
         },
-        customIconFilledCancel: {
-          base: {
-            backgroundColor: '{{colors.interfaceInformative010}}',
-            iconColor: '{{colors.inkInverse}}',
-            borderRadius: '50%',
-          },
+      },
+      customRadioFeedback: {
+        base: {
+          backgroundColor: 'rgba(0,0,0,0.0)',
+          borderRadius: '50%',
+        },
+        hover: {
+          backgroundColor: 'rgba(0,0,0,0.5)',
+          borderRadius: '50%',
+        },
+      },
+      customIconFilledCancel: {
+        base: {
+          backgroundColor: '{{colors.interfaceInformative010}}',
+          iconColor: '{{colors.inkInverse}}',
+          borderRadius: '50%',
         },
       },
     },
-  });
-
-export default {
-  title: 'NewsKit Light/radio-button',
-  component: () => 'None',
-  disabledRules: [],
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
+  },
 };
 
 const Container = styled.div`
@@ -374,3 +355,21 @@ export const StoryRadioButtonLogicalPropsOverrides = () => (
 );
 StoryRadioButtonLogicalPropsOverrides.storyName =
   'radio-button-logical-overrides';
+
+export default {
+  title: 'NewsKit Light/radio-button',
+  component: () => 'None',
+  disabledRules: [],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          radioButtonCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

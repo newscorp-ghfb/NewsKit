@@ -4,7 +4,7 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled, withDefaultProps} from '../../utils';
 import {
   IconFilledInfo,
@@ -15,7 +15,7 @@ import {
 import {toast, ToastProvider, Toast} from '..';
 import {Link} from '../../link';
 import {Button} from '../../button';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const CustomToast = styled.div`
   padding: 1em;
@@ -26,29 +26,27 @@ const CustomToast = styled.div`
   color: red;
 `;
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'toast-intents-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        toastWithOverrides: {
-          base: {
-            backgroundColor: '#fdda9b',
-            borderRadius: '2px',
-            iconColor: 'red',
-          },
+const toastCustomThemeObject: CreateThemeArgs = {
+  name: 'toast-intents-theme',
+  overrides: {
+    stylePresets: {
+      toastWithOverrides: {
+        base: {
+          backgroundColor: '#fdda9b',
+          borderRadius: '2px',
+          iconColor: 'red',
         },
-        customDivider: {
-          base: {
-            borderStyle: 'dotted',
-            borderColor: 'red',
-            borderWidth: '3px',
-          },
+      },
+      customDivider: {
+        base: {
+          borderStyle: 'dotted',
+          borderColor: 'red',
+          borderWidth: '3px',
         },
       },
     },
-  });
+  },
+};
 
 const ToastInformative = withDefaultProps(Toast, {
   icon: (
@@ -99,23 +97,6 @@ const toastLink = (
     with link
   </Link>
 );
-
-export default {
-  title: 'NewsKit Light/toast',
-  component: () => 'None',
-  disabledRules: [],
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
-};
 
 export const StoryToastDefault = () => (
   <>
@@ -471,4 +452,22 @@ export const StoryToastApi = () => {
 StoryToastApi.storyName = 'toast-api';
 StoryToastApi.parameters = {
   eyes: {include: false},
+};
+
+export default {
+  title: 'NewsKit Light/toast',
+  component: () => 'None',
+  disabledRules: [],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          toastCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };

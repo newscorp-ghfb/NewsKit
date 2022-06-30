@@ -4,31 +4,29 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {IconFilledInfo} from '../../icons';
 import {InlineMessage} from '..';
 import {Link} from '../../link';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'inline-message-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        customInlineMessage: {
-          base: {
-            backgroundColor: '#a05a64',
-            borderWidth: '1px 4px',
-            borderColor: 'deeppink',
-            borderStyle: 'solid',
-            borderRadius: '3px',
-            iconColor: 'deeppink',
-          },
+const inlineMessageCustomThemeObject: CreateThemeArgs = {
+  name: 'inline-message-custom-theme',
+  overrides: {
+    stylePresets: {
+      customInlineMessage: {
+        base: {
+          backgroundColor: '#a05a64',
+          borderWidth: '1px 4px',
+          borderColor: 'deeppink',
+          borderStyle: 'solid',
+          borderRadius: '3px',
+          iconColor: 'deeppink',
         },
       },
     },
-  });
+  },
+};
 
 const link = <Link href="/">link</Link>;
 const icon = (
@@ -38,22 +36,6 @@ const icon = (
     }}
   />
 );
-
-export default {
-  title: 'NewsKit Light/inline-message',
-  component: () => 'None',
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
-};
 
 export const StoryDefault = () => (
   <>
@@ -189,3 +171,20 @@ export const StoryLogicalProps = () => (
   </>
 );
 StoryLogicalProps.storyName = 'inline-message-logical-props';
+
+export default {
+  title: 'NewsKit Light/inline-message',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          inlineMessageCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

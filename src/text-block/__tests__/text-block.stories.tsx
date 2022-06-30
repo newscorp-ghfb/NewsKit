@@ -1,39 +1,37 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {TextBlock} from '..';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {styled} from '../../utils';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-textblock-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        textblockCustom: {
-          base: {
-            color: '{{colors.blue060}}',
-            borderStyle: 'solid',
-            borderWidth: '{{borders.borderWidth010}}',
-          },
-        },
-      },
-      typographyPresets: {
-        textblockCustom: {
-          fontFamily: '{{fonts.fontFamily1.fontFamily}}',
-          fontSize: '{{fonts.fontSize030}}',
-          lineHeight: '{{fonts.fontLineHeight030}}',
-          fontWeight: '{{fonts.fontWeight020}}',
-          letterSpacing: '{{fonts.fontLetterSpacing030}}',
+const textBlockCustomThemeObject: CreateThemeArgs = {
+  name: 'textblock-custom-theme',
+  overrides: {
+    stylePresets: {
+      textblockCustom: {
+        base: {
+          color: '{{colors.blue060}}',
+          borderStyle: 'solid',
+          borderWidth: '{{borders.borderWidth010}}',
         },
       },
     },
-  });
+    typographyPresets: {
+      textblockCustom: {
+        fontFamily: '{{fonts.fontFamily1.fontFamily}}',
+        fontSize: '{{fonts.fontSize030}}',
+        lineHeight: '{{fonts.fontLineHeight030}}',
+        fontWeight: '{{fonts.fontWeight020}}',
+        letterSpacing: '{{fonts.fontLetterSpacing030}}',
+      },
+    },
+  },
+};
 
 const bodyString =
   'Telling the stories that matter, seeding ideas and stirring emotion. Capturing moments, meaning and magic. Making sense of the world. On the shoulders of giants, in the thick of it, behind the scenes and fighting the good fight. Long form and rapid-fire, pragmatic and poetic, comical and critical. Being at the biggest events with the biggest names noticing the smallest details, and sticking up for the little guy.';
@@ -41,21 +39,6 @@ const bodyString =
 const StyledDiv = styled.div`
   border: 1px purple dotted;
 `;
-export default {
-  title: 'NewsKit Light/text-block',
-  component: () => 'None',
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
-};
 
 export const StoryDefault = () => (
   <>
@@ -114,3 +97,20 @@ export const StoryWithLogicalPropsOverrides = () => (
   </>
 );
 StoryWithLogicalPropsOverrides.storyName = 'with-logical-overrides';
+
+export default {
+  title: 'NewsKit Light/text-block',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          textBlockCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

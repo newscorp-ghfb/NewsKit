@@ -1,4 +1,10 @@
-import {newskitLightTheme, newskitDarkTheme, UncompiledTheme} from '..';
+import {
+  newskitLightTheme,
+  newskitDarkTheme,
+  UncompiledTheme,
+  createTheme,
+  CreateThemeArgs,
+} from '..';
 import {tnlTheme} from '../theme-checker/themes/tnl-theme/tnl-theme';
 import {virginTheme} from '../theme-checker/themes/virgin-theme/virgin-theme';
 import {sunTheme} from '../theme-checker/themes/sun-theme/sun-theme';
@@ -12,18 +18,27 @@ export const themeObject: {[key: string]: UncompiledTheme} = {
   '#006699': tnlTheme,
 };
 
-export const getThemeObject = (value: string): UncompiledTheme => {
-  if (!value) {
+export const getThemeObject = (key: string): UncompiledTheme => {
+  if (!key) {
     const themeKey = localStorage.getItem('themeKey');
     if (themeKey) {
       return themeObject[themeKey];
     }
     return themeObject.transparent;
   }
-  if (value === 'transparent') {
+  if (key === 'transparent') {
     localStorage.removeItem('themeKey');
   } else {
-    localStorage.setItem('themeKey', value);
+    localStorage.setItem('themeKey', key);
   }
-  return themeObject[value];
+  return themeObject[key];
 };
+
+export const createCustomThemeWithBaseThemeSwitch = (
+  key: string,
+  customThemeArgs: CreateThemeArgs,
+): UncompiledTheme =>
+  createTheme({
+    ...customThemeArgs,
+    baseTheme: getThemeObject(key),
+  });

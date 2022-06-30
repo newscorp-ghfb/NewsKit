@@ -8,61 +8,41 @@ import {Switch} from '..';
 import {styled} from '../../utils';
 import {
   Cell,
-  createTheme,
   Fieldset,
   Grid,
   IconFilledCheck,
   IconFilledClose,
   IconFilledDragHandle,
   ThemeProvider,
-  UncompiledTheme,
+  CreateThemeArgs,
 } from '../..';
 import {icons, labels, sizeOverrides, sizes, states} from './helpers';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'bordered-thumb-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        borderedThumb: {
-          base: {
-            backgroundColor: '{{colors.inkInverse}}',
-            borderRadius: '{{borders.borderRadiusCircle}}',
-            iconColor: '{{colors.inkContrast}}',
-            borderColor: '{{colors.interactiveInput040}}',
-            borderStyle: 'solid',
-            borderWidth: '{{borders.borderWidth010}}',
-          },
+const switchCustomThemeObject: CreateThemeArgs = {
+  name: 'bordered-thumb-theme',
+  overrides: {
+    stylePresets: {
+      borderedThumb: {
+        base: {
+          backgroundColor: '{{colors.inkInverse}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          iconColor: '{{colors.inkContrast}}',
+          borderColor: '{{colors.interactiveInput040}}',
+          borderStyle: 'solid',
+          borderWidth: '{{borders.borderWidth010}}',
         },
-        controlLabel: {
-          base: {
-            color: '{{colors.inkContrast}}',
-          },
-          disabled: {
-            color: '{{colors.inkNonEssential}}',
-          },
+      },
+      controlLabel: {
+        base: {
+          color: '{{colors.inkContrast}}',
+        },
+        disabled: {
+          color: '{{colors.inkNonEssential}}',
         },
       },
     },
-  });
-
-export default {
-  title: 'NewsKit Light/switch',
-  component: () => 'None',
-  disabledRules: [],
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
+  },
 };
 
 const Container = styled.div`
@@ -244,3 +224,21 @@ export const StorySwitchLogicalProps = () => (
 );
 
 StorySwitchLogicalProps.storyName = 'switch-logical-props';
+
+export default {
+  title: 'NewsKit Light/switch',
+  component: () => 'None',
+  disabledRules: [],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          switchCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

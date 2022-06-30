@@ -10,8 +10,8 @@ import {Tab, TabAlign, Tabs, TabsDistribution, TabsIndicatorPosition} from '..';
 import {IconFilledEmail} from '../../icons';
 import {Block} from '../../block';
 import {Button} from '../../button';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
-import {themeObject} from '../../test/theme-select-object';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const LoremIpsumText = [
   `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -42,157 +42,90 @@ const LoremIpsumText2 = [
   `Again different Content`,
 ];
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-tab-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        tabCustomPreset: {
-          base: {
-            backgroundColor: '{{colors.transparent}}',
-            color: '{{colors.inkContrast}}',
-          },
-          selected: {color: '{{colors.inkBase}}'},
-          'selected:hover': {
-            color: '{{colors.green060}}',
-          },
+const tabsCustomThemeObject: CreateThemeArgs = {
+  name: 'tab-custom-theme',
+  overrides: {
+    stylePresets: {
+      tabCustomPreset: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          color: '{{colors.inkContrast}}',
         },
-        tabsBarTrackCustomPreset: {
-          base: {
-            backgroundColor: '{{colors.amber020}}',
-          },
-        },
-        tabsBarIndicatorCustomPreset: {
-          base: {
-            backgroundColor: '{{colors.green060}}',
-          },
-        },
-        dividerCustomPreset: {
-          base: {
-            borderStyle: 'solid',
-            borderColor: '{{colors.red060}}',
-            borderWidth: '{{borders.borderWidth030}}',
-          },
-        },
-        scrollArrowsCustom: {
-          base: {
-            backgroundColor: '{{colors.amber010}}',
-            color: '{{colors.purple050}}',
-            iconColor: '{{colors.purple050}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.amber020}}',
-          },
-          active: {
-            backgroundColor: '{{colors.amber060}}',
-          },
-          disabled: {
-            color: '{{colors.inkNonEssential}}',
-            iconColor: '{{colors.inkNonEssential}}',
-          },
-        },
-        shadowTab: {
-          base: {
-            backgroundColor: 'transparent',
-            color: '#111',
-          },
-          selected: {
-            backgroundColor: '#fff',
-            color: 'black',
-            boxShadow: '0px -1px 3px 1px #999999',
-            borderRadius: '4px 4px 0 0',
-            borderWidth: '0 0 1px 0',
-            borderColor: '#fff',
-            borderStyle: 'solid',
-          },
+        selected: {color: '{{colors.inkBase}}'},
+        'selected:hover': {
+          color: '{{colors.green060}}',
         },
       },
-      transitionPresets: {
-        customBackgroundColorChange: {
-          base: {
-            transitionProperty: 'background-color',
-            transitionDuration: '100ms',
-            transitionDelay: '500ms',
-            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-          },
+      tabsBarTrackCustomPreset: {
+        base: {
+          backgroundColor: '{{colors.amber020}}',
         },
-        customFontColorChange: {
-          base: {
-            transitionProperty: 'color',
-            transitionDuration: '100ms',
-            transitionDelay: '500ms',
-            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-          },
+      },
+      tabsBarIndicatorCustomPreset: {
+        base: {
+          backgroundColor: '{{colors.green060}}',
+        },
+      },
+      dividerCustomPreset: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '{{colors.red060}}',
+          borderWidth: '{{borders.borderWidth030}}',
+        },
+      },
+      scrollArrowsCustom: {
+        base: {
+          backgroundColor: '{{colors.amber010}}',
+          color: '{{colors.purple050}}',
+          iconColor: '{{colors.purple050}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.amber020}}',
+        },
+        active: {
+          backgroundColor: '{{colors.amber060}}',
+        },
+        disabled: {
+          color: '{{colors.inkNonEssential}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+      },
+      shadowTab: {
+        base: {
+          backgroundColor: 'transparent',
+          color: '#111',
+        },
+        selected: {
+          backgroundColor: '#fff',
+          color: 'black',
+          boxShadow: '0px -1px 3px 1px #999999',
+          borderRadius: '4px 4px 0 0',
+          borderWidth: '0 0 1px 0',
+          borderColor: '#fff',
+          borderStyle: 'solid',
         },
       },
     },
-  });
-
-// const myCustomTabsTheme = createTheme({
-//   name: 'my-custom-tabs-theme',
-//   overrides: {
-//     stylePresets: {
-//       tabsBarTrackCustomPreset: {
-//         base: {
-//           backgroundColor: '{{colors.amber020}}',
-//         },
-//       },
-//       tabsBarIndicatorCustomPreset: {
-//         base: {
-//           backgroundColor: '{{colors.green060}}',
-//         },
-//       },
-//       dividerCustomPreset: {
-//         base: {
-//           borderStyle: 'solid',
-//           borderColor: '{{colors.red060}}',
-//           borderWidth: '{{borders.borderWidth030}}',
-//         },
-//       },
-//       scrollArrowsCustom: {
-//         base: {
-//           backgroundColor: '{{colors.amber010}}',
-//           color: '{{colors.purple050}}',
-//           iconColor: '{{colors.purple050}}',
-//         },
-//         hover: {
-//           backgroundColor: '{{colors.amber020}}',
-//         },
-//         active: {
-//           backgroundColor: '{{colors.amber060}}',
-//         },
-//         disabled: {
-//           color: '{{colors.inkNonEssential}}',
-//           iconColor: '{{colors.inkNonEssential}}',
-//         },
-//       },
-//     },
-//   },
-// });
-
-// const myCustomThemeShadows = createTheme({
-//   name: 'my-custom-tabs-theme2',
-//   overrides: {
-//     stylePresets: {
-//       shadowTab: {
-//         base: {
-//           backgroundColor: 'transparent',
-//           color: '#111',
-//         },
-//         selected: {
-//           backgroundColor: '#fff',
-//           color: 'black',
-//           boxShadow: '0px -1px 3px 1px #999999',
-//           borderRadius: '4px 4px 0 0',
-//           borderWidth: '0 0 1px 0',
-//           borderColor: '#fff',
-//           borderStyle: 'solid',
-//         },
-//       },
-//     },
-//   },
-// });
+    transitionPresets: {
+      customBackgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '100ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+      customFontColorChange: {
+        base: {
+          transitionProperty: 'color',
+          transitionDuration: '100ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+    },
+  },
+};
 
 const Spacer = styled.div`
   margin-bottom: 2em;
@@ -257,22 +190,6 @@ const titleBetweenIcons = (
     <IconFilledEmail />
   </>
 );
-
-export default {
-  title: 'NewsKit Light/tabs',
-  component: () => 'None',
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
-};
 
 export const StoryTabsDistributionStart = () => (
   <>
@@ -1718,3 +1635,20 @@ export const StoryTagLogicalProps = () => (
   </>
 );
 StoryTagLogicalProps.storyName = 'tabs-logical-props';
+
+export default {
+  title: 'NewsKit Light/tabs',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          tabsCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

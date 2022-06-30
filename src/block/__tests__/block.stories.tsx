@@ -7,9 +7,9 @@ import {
   StorybookSubHeading,
   StorybookSpan,
 } from '../../test/storybook-comps';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {Visible} from '../../grid/visibility';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const Square = styled(Block)`
   box-sizing: border-box;
@@ -18,84 +18,66 @@ const Square = styled(Block)`
 `;
 
 // The style presets are added for easier visualization of the spacings around the Block component
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-block-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        blockOuter: {
-          base: {
-            backgroundColor: 'transparent',
-            borderWidth: '{{borders.borderWidth010}}',
-            borderStyle: 'solid',
-            borderColor: '{{colors.blue060}}',
-          },
-        },
-        blockInner: {
-          base: {
-            backgroundColor: 'transparent',
-            borderWidth: '{{borders.borderWidth010}}',
-            borderStyle: 'solid',
-            borderColor: '{{colors.red060}}',
-          },
-        },
-        customBlock: {
-          base: {
-            backgroundColor: '{{colors.interfaceInformative010}}',
-            color: '{{colors.inkInverse}}',
-            iconColor: '{{colors.inkInverse}}',
-          },
-        },
-        transitionBlock: {
-          base: {
-            backgroundColor: '{{colors.purple020}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.amber070}}',
-          },
-        },
-        logicalBlock: {
-          base: {
-            backgroundColor: '{{colors.green040}}',
-            borderWidth: '{{borders.borderWidth020}}',
-            borderStyle: 'solid',
-            borderColor: '{{colors.blue060}}',
-          },
+const blockCustomThemeObject: CreateThemeArgs = {
+  name: 'block-custom-theme',
+  overrides: {
+    stylePresets: {
+      blockOuter: {
+        base: {
+          backgroundColor: 'transparent',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.blue060}}',
         },
       },
-      transitionPresets: {
-        customBackgroundColorChange: {
-          base: {
-            transitionProperty: 'background-color',
-            transitionDuration: '500ms',
-            transitionDelay: '500ms',
-            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-          },
+      blockInner: {
+        base: {
+          backgroundColor: 'transparent',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.red060}}',
+        },
+      },
+      customBlock: {
+        base: {
+          backgroundColor: '{{colors.interfaceInformative010}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+      },
+      transitionBlock: {
+        base: {
+          backgroundColor: '{{colors.purple020}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.amber070}}',
+        },
+      },
+      logicalBlock: {
+        base: {
+          backgroundColor: '{{colors.green040}}',
+          borderWidth: '{{borders.borderWidth020}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.blue060}}',
         },
       },
     },
-  });
+    transitionPresets: {
+      customBackgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '500ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+    },
+  },
+};
 
 const StyledHr = styled.hr`
   border: 1px solid dashed;
 `;
-
-export default {
-  title: 'NewsKit Light/block',
-  component: () => 'None',
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
-};
 
 export const StoryBlock = () => (
   <>
@@ -230,3 +212,20 @@ export const StoryBlockLogical = () => (
   </>
 );
 StoryBlockLogical.storyName = 'block-logical';
+
+export default {
+  title: 'NewsKit Light/block',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          blockCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

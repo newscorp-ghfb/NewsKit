@@ -5,38 +5,69 @@ import {getColorCssFromTheme, styled} from '../../utils/style';
 import {
   StorybookHeading,
   StorybookSubHeading,
+  StorybookParah,
 } from '../../test/storybook-comps';
 import {IconFilledEmail} from '../../icons';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
-import {themeObject} from '../../test/theme-select-object';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {defaultFocusVisible} from '../../utils/default-focus-visible';
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-link-theme',
-    baseTheme: theme,
-    overrides: {
-      colors: {
-        inkLinkBase: '{{colors.red080}}',
-        inkLinkHover: '{{colors.green080}}',
-        inkLinkVisited: '{{colors.red090}}',
+const linkCustomThemeObject: CreateThemeArgs = {
+  name: 'my-custom-link-theme',
+  overrides: {
+    transitionPresets: {
+      customIconChange: {
+        base: {
+          transitionProperty: 'fill',
+          transitionDuration: '100ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
       },
-      stylePresets: {
-        linkCustom: {
-          base: {
-            color: '{{colors.inkLinkBase}}',
-          },
-          visited: {
-            color: '{{colors.inkLinkVisited}}',
-          },
-          hover: {
-            color: '{{colors.inkLinkHover}}',
-          },
+      customFontColorChange: {
+        base: {
+          transitionProperty: 'color',
+          transitionDuration: '100ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+    },
+    colors: {
+      inkLinkBase: '{{colors.red080}}',
+      inkLinkHover: '{{colors.green080}}',
+      inkLinkVisited: '{{colors.red090}}',
+      inkLinkActive: '{{colors.purpl020}}',
+    },
+    stylePresets: {
+      linkCustom: {
+        base: {
+          color: '{{colors.inkLinkBase}}',
+        },
+        visited: {
+          color: '{{colors.inkLinkVisited}}',
+        },
+        hover: {
+          color: '{{colors.inkLinkHover}}',
+        },
+        'focus-visible': defaultFocusVisible,
+      },
+      linkCustomTwo: {
+        base: {
+          color: '{{colors.interactivePrimary030}}',
+          iconColor: '{{colors.interactivePrimary030}}',
+        },
+        active: {
+          color: '{{colors.inkLinkActive}}',
+          iconColor: '{{colors.inkLinkActive}}',
+        },
+        hover: {
+          color: '{{colors.inkLinkHover}}',
+          iconColor: '{{colors.inkLinkHover}}',
         },
         'focus-visible': defaultFocusVisible,
       },
     },
-  });
+  },
+};
 
 const StyledDiv = styled.div`
   border: 1px red dotted;
@@ -49,12 +80,11 @@ const Container = styled.div<{hasBackground?: boolean}>`
     hasBackground && getColorCssFromTheme('background', 'inkBase')};
 `;
 
-const CustomPragraph = styled.p`
+const CustomPragraph = styled(StorybookParah)`
  margin 0;
 `;
 
 const LinkWithOverrides = ({children}: {children: React.ReactNode}) => (
-  // <ThemeProvider theme={myCustomTheme}>
   <LinkInline
     href="http://localhost:6006"
     overrides={{
@@ -64,11 +94,9 @@ const LinkWithOverrides = ({children}: {children: React.ReactNode}) => (
   >
     {children}
   </LinkInline>
-  // </ThemeProvider>
 );
 
 const ExternalLinkWithOverrides = ({children}: {children: React.ReactNode}) => (
-  // <ThemeProvider theme={myCustomTheme}>
   <LinkInline
     href="http://apple.com"
     overrides={{
@@ -78,24 +106,7 @@ const ExternalLinkWithOverrides = ({children}: {children: React.ReactNode}) => (
   >
     {children}
   </LinkInline>
-  // </ThemeProvider>
 );
-
-export default {
-  title: 'NewsKit Light/link',
-  component: () => 'None',
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
-};
 
 export const StoryLink = () => (
   <Container>
@@ -372,49 +383,7 @@ export const StoryLinkWithinTextParagraph = () => (
   </Container>
 );
 StoryLinkWithinTextParagraph.storyName = 'link-within-text-paragraph';
-const myCustomLinkTheme = createTheme({
-  name: 'my-custom-link-theme',
-  overrides: {
-    transitionPresets: {
-      customIconChange: {
-        base: {
-          transitionProperty: 'fill',
-          transitionDuration: '100ms',
-          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-        },
-      },
-      customFontColorChange: {
-        base: {
-          transitionProperty: 'color',
-          transitionDuration: '100ms',
-          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-        },
-      },
-    },
-    colors: {
-      inkLinkBase: '{{colors.red080}}',
-      inkLinkHover: '{{colors.green080}}',
-      inkLinkActive: '{{colors.purpl020}}',
-    },
-    stylePresets: {
-      linkCustom: {
-        base: {
-          color: '{{colors.interactivePrimary030}}',
-          iconColor: '{{colors.interactivePrimary030}}',
-        },
-        active: {
-          color: '{{colors.inkLinkActive}}',
-          iconColor: '{{colors.inkLinkActive}}',
-        },
-        hover: {
-          color: '{{colors.inkLinkHover}}',
-          iconColor: '{{colors.inkLinkHover}}',
-        },
-        'focus-visible': defaultFocusVisible,
-      },
-    },
-  },
-});
+
 export const StoryLinkStandAloneTransition = () => (
   <Container>
     {/* ------ Link standalone -------- */}
@@ -433,84 +402,82 @@ export const StoryLinkStandAloneTransition = () => (
     <StorybookHeading>
       Link with Transition Preset overrides no icon
     </StorybookHeading>
-    <ThemeProvider theme={myCustomLinkTheme}>
-      <LinkStandalone
-        href="/"
-        overrides={{
-          stylePreset: 'linkCustom',
-          transitionPreset: ['customFontColorChange', 'customIconChange'],
-        }}
-      >
-        Standalone link
-      </LinkStandalone>
-      <br />
-      <br />
-      <LinkInline
-        href="/"
-        overrides={{
-          stylePreset: 'linkCustom',
-          transitionPreset: ['customFontColorChange', 'customIconChange'],
-        }}
-      >
-        Linkinline link
-      </LinkInline>
-      <StorybookHeading>
-        Link with Transition Preset overrides and external icon
-      </StorybookHeading>
-      <LinkStandalone
-        href="https://google.com"
-        overrides={{
-          stylePreset: 'linkCustom',
-          transitionPreset: ['customFontColorChange', 'customIconChange'],
-        }}
-      >
-        Standalone link
-      </LinkStandalone>
-      <br />
-      <br />
-      <LinkInline
-        href="https://google.com"
-        overrides={{
-          stylePreset: 'linkCustom',
-          transitionPreset: ['customFontColorChange', 'customIconChange'],
-        }}
-      >
-        Linkinline link
-      </LinkInline>
-      <StorybookHeading>
-        Link with overrides using extend on transitionDuration
-      </StorybookHeading>
-      <LinkStandalone
-        href="https://google.com"
-        overrides={{
-          stylePreset: 'linkCustom',
-          transitionPreset: {
-            extend: 'customFontColorChange',
-            base: {
-              transitionDuration: '{{motions.motionDuration050}}',
-            },
+    <LinkStandalone
+      href="/"
+      overrides={{
+        stylePreset: 'linkCustomTwo',
+        transitionPreset: ['customFontColorChange', 'customIconChange'],
+      }}
+    >
+      Standalone link
+    </LinkStandalone>
+    <br />
+    <br />
+    <LinkInline
+      href="/"
+      overrides={{
+        stylePreset: 'linkCustomTwo',
+        transitionPreset: ['customFontColorChange', 'customIconChange'],
+      }}
+    >
+      Linkinline link
+    </LinkInline>
+    <StorybookHeading>
+      Link with Transition Preset overrides and external icon
+    </StorybookHeading>
+    <LinkStandalone
+      href="https://google.com"
+      overrides={{
+        stylePreset: 'linkCustomTwo',
+        transitionPreset: ['customFontColorChange', 'customIconChange'],
+      }}
+    >
+      Standalone link
+    </LinkStandalone>
+    <br />
+    <br />
+    <LinkInline
+      href="https://google.com"
+      overrides={{
+        stylePreset: 'linkCustomTwo',
+        transitionPreset: ['customFontColorChange', 'customIconChange'],
+      }}
+    >
+      Linkinline link
+    </LinkInline>
+    <StorybookHeading>
+      Link with overrides using extend on transitionDuration
+    </StorybookHeading>
+    <LinkStandalone
+      href="https://google.com"
+      overrides={{
+        stylePreset: 'linkCustomTwo',
+        transitionPreset: {
+          extend: 'customFontColorChange',
+          base: {
+            transitionDuration: '{{motions.motionDuration050}}',
           },
-        }}
-      >
-        Standalone Link
-      </LinkStandalone>
-      <br />
-      <br />
-      <LinkInline
-        href="https://google.com"
-        overrides={{
-          stylePreset: 'linkCustom',
-          transitionPreset: {
-            extend: 'customFontColorChange',
-            base: {
-              transitionDuration: '{{motions.motionDuration030}}',
-            },
+        },
+      }}
+    >
+      Standalone Link
+    </LinkStandalone>
+    <br />
+    <br />
+    <LinkInline
+      href="https://google.com"
+      overrides={{
+        stylePreset: 'linkCustomTwo',
+        transitionPreset: {
+          extend: 'customFontColorChange',
+          base: {
+            transitionDuration: '{{motions.motionDuration030}}',
           },
-        }}
-      >
-        Inline Link
-      </LinkInline>
-    </ThemeProvider>
+        },
+      }}
+    >
+      Inline Link
+    </LinkInline>
   </Container>
 );
 StoryLinkStandAloneTransition.storyName = 'link-standalone-transition';
@@ -578,3 +545,20 @@ export const StoryLinkWithLogicalPropsOverrides = () => (
 );
 StoryLinkWithLogicalPropsOverrides.storyName =
   'link-with-logical-props-overrides';
+
+export default {
+  title: 'NewsKit Light/link',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          linkCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

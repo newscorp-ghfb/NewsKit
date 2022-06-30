@@ -8,8 +8,8 @@ import {
 import {getColorCssFromTheme, styled} from '../../utils/style';
 import {IconFilledEmail} from '../../icons';
 import {Stack} from '../../stack';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
-import {themeObject} from '../../test/theme-select-object';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const Container = styled.div<{hasBlackBackground?: boolean}>`
   margin: 24px;
@@ -17,68 +17,50 @@ const Container = styled.div<{hasBlackBackground?: boolean}>`
     hasBlackBackground && getColorCssFromTheme('background', 'inkBase')};
 `;
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-tag-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        tagCustom: {
-          base: {
-            borderStyle: 'dashed',
-            borderColor: '{{colors.blue060}}',
-            iconColor: '{{colors.inkInverse}}',
-            backgroundColor: '{{colors.red020}}',
-          },
-        },
-        tagCustomTwo: {
-          base: {
-            borderStyle: 'solid',
-            borderColor: '{{colors.interactiveSecondary030}}',
-            backgroundColor: '{{colors.transparent}}',
-            color: '{{colors.inkBase}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.amber070}}',
-            borderColor: '{{colors.green040}}',
-          },
+const tagCustomThemeObject: CreateThemeArgs = {
+  name: 'my-custom-tag-theme',
+  overrides: {
+    stylePresets: {
+      tagCustom: {
+        base: {
+          borderStyle: 'dashed',
+          borderColor: '{{colors.blue060}}',
+          iconColor: '{{colors.inkInverse}}',
+          backgroundColor: '{{colors.red020}}',
         },
       },
-      transitionPresets: {
-        customBackgroundColorChange: {
-          base: {
-            transitionProperty: 'background-color',
-            transitionDuration: '100ms',
-            transitionDelay: '500ms',
-            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-          },
+      tagCustomTwo: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveSecondary030}}',
+          backgroundColor: '{{colors.transparent}}',
+          color: '{{colors.inkBase}}',
         },
-        customborderColorChange: {
-          base: {
-            transitionProperty: 'border-color',
-            transitionDuration: '100ms',
-            transitionDelay: '500ms',
-            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-          },
+        hover: {
+          backgroundColor: '{{colors.amber070}}',
+          borderColor: '{{colors.green040}}',
         },
       },
     },
-  });
-
-export default {
-  title: 'NewsKit Light/tag',
-  component: () => 'None',
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
+    transitionPresets: {
+      customBackgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '100ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+      customborderColorChange: {
+        base: {
+          transitionProperty: 'border-color',
+          transitionDuration: '100ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+    },
+  },
 };
 
 export const StoryTag = () => (
@@ -399,3 +381,20 @@ export const StoryTagLogicalProps = () => (
   </>
 );
 StoryTagLogicalProps.storyName = 'tag-logical-props';
+
+export default {
+  title: 'NewsKit Light/tag',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          tagCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

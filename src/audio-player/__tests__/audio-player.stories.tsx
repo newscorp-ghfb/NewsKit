@@ -2,12 +2,12 @@ import React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {AudioPlayer} from '..';
 import {styled} from '../../utils/style';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const liveAudioProps = {
   src: 'https://radio.talkradio.co.uk/stream',
@@ -33,124 +33,105 @@ const AudioPlayerContainer = styled.div<{dark?: boolean}>`
 // eslint-disable-next-line no-alert
 const alert = (msg: string) => () => window.alert(msg);
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-audio-player-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        customAudioPlayPauseButton: {
-          base: {
-            backgroundColor: 'transparent',
-            borderRadius: '50%',
-            iconColor: '#fff',
-            borderWidth: '2px',
-            borderStyle: 'solid',
-            borderColor: '#243c46',
-          },
-          hover: {
-            backgroundColor: '#243c46',
-            borderStyle: 'none',
-          },
-          active: {
-            backgroundColor: '#818f94',
-            borderStyle: 'none',
-          },
+const audioPlayerCustomThemeObject: CreateThemeArgs = {
+  name: 'audio-player-custom-theme',
+  overrides: {
+    stylePresets: {
+      customAudioPlayPauseButton: {
+        base: {
+          backgroundColor: 'transparent',
+          borderRadius: '50%',
+          iconColor: '#fff',
+          borderWidth: '2px',
+          borderStyle: 'solid',
+          borderColor: '#243c46',
         },
-        customAudioPlayPauseButtonLoading: {
-          base: {
-            iconColor: '#fff',
-          },
+        hover: {
+          backgroundColor: '#243c46',
+          borderStyle: 'none',
         },
-        customAudioForwardButton: {
-          base: {
-            backgroundColor: 'transparent',
-            iconColor: '#fff',
-          },
+        active: {
+          backgroundColor: '#818f94',
+          borderStyle: 'none',
         },
-        customAudioPlayerReplayButton: {
-          base: {
-            backgroundColor: 'transparent',
-            iconColor: '#fff',
-          },
+      },
+      customAudioPlayPauseButtonLoading: {
+        base: {
+          iconColor: '#fff',
         },
-        customAudioNextButton: {
-          base: {
-            backgroundColor: 'transparent',
-            iconColor: '#fff',
-          },
+      },
+      customAudioForwardButton: {
+        base: {
+          backgroundColor: 'transparent',
+          iconColor: '#fff',
         },
-        customAudioPlayerPreviousButton: {
-          base: {
-            backgroundColor: 'transparent',
-          },
-          active: {
-            color: 'white',
-            iconColor: 'white',
-          },
-          disabled: {
-            iconColor: '#9EA9AC',
-          },
+      },
+      customAudioPlayerReplayButton: {
+        base: {
+          backgroundColor: 'transparent',
+          iconColor: '#fff',
         },
-        customAudioPopoutButton: {
-          base: {
-            backgroundColor: 'transparent',
-            iconColor: '#fff',
-          },
+      },
+      customAudioNextButton: {
+        base: {
+          backgroundColor: 'transparent',
+          iconColor: '#fff',
         },
-        customAudioPlayerThumb: {
-          base: {
-            backgroundColor: '#f6807e',
-            borderRadius: '50%',
-          },
+      },
+      customAudioPlayerPreviousButton: {
+        base: {
+          backgroundColor: 'transparent',
         },
-        customAudioPlayerSeekBarTrack: {
-          base: {
-            backgroundColor: '#243c46',
-          },
+        active: {
+          color: 'white',
+          iconColor: 'white',
         },
-        customAudioPlayerSeekBarIndicator: {
-          base: {
-            backgroundColor: '#0c2731',
-          },
+        disabled: {
+          iconColor: '#9EA9AC',
         },
-        customAudioPlayerLabels: {
-          base: {
-            backgroundColor: 'transparent',
-            iconColor: '#fff',
-            color: '#fff',
-          },
+      },
+      customAudioPopoutButton: {
+        base: {
+          backgroundColor: 'transparent',
+          iconColor: '#fff',
         },
-        customAudioPlayerSeekBarBuffering: {
-          base: {
-            backgroundColor: 'rgb(51, 51, 51)',
-          },
+      },
+      customAudioPlayerThumb: {
+        base: {
+          backgroundColor: '#f6807e',
+          borderRadius: '50%',
         },
-        customVolumeControlButton: {
-          base: {
-            backgroundColor: 'transparent',
-            iconColor: '#fff',
-          },
+      },
+      customAudioPlayerSeekBarTrack: {
+        base: {
+          backgroundColor: '#243c46',
+        },
+      },
+      customAudioPlayerSeekBarIndicator: {
+        base: {
+          backgroundColor: '#0c2731',
+        },
+      },
+      customAudioPlayerLabels: {
+        base: {
+          backgroundColor: 'transparent',
+          iconColor: '#fff',
+          color: '#fff',
+        },
+      },
+      customAudioPlayerSeekBarBuffering: {
+        base: {
+          backgroundColor: 'rgb(51, 51, 51)',
+        },
+      },
+      customVolumeControlButton: {
+        base: {
+          backgroundColor: 'transparent',
+          iconColor: '#fff',
         },
       },
     },
-  });
-
-export default {
-  title: 'NewsKit Light/audio-player',
-  component: () => 'None',
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
-  parameters: {eyes: {waitBeforeCapture: 10000}},
+  },
 };
 
 export const StoryAudioPlayer = () => (
@@ -374,3 +355,21 @@ export const StoryRecordedWithHiddenControls = () => (
 );
 StoryRecordedWithHiddenControls.storyName = 'recorded-with-hidden-controls';
 StoryRecordedWithControls.parameters = {eyes: {waitBeforeCapture: 10000}};
+
+export default {
+  title: 'NewsKit Light/audio-player',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          audioPlayerCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+  parameters: {eyes: {waitBeforeCapture: 10000}},
+};

@@ -12,8 +12,8 @@ import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {StorybookSubHeading, StorybookH3} from '../../test/storybook-comps';
-import {ThemeProvider, createTheme, UncompiledTheme} from '../../theme';
-import {getThemeObject} from '../../test/theme-select-object';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const Container = styled.div`
   margin: 24px;
@@ -60,9 +60,27 @@ const Background = styled.div<{hasBackground?: boolean}>`
     hasBackground && getColorCssFromTheme('background', 'inkBase')};
 `;
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-text-input-theme',
+const buttonCustomThemeObject: CreateThemeArgs = {
+  name: 'button-custom-theme',
   overrides: {
+    transitionPresets: {
+      customBackgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '500ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+      customBorderColourChange: {
+        base: {
+          transitionProperty: 'border-color',
+          transitionDuration: '500ms',
+          transitionDelay: '0ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+    },
     stylePresets: {
       myButton: {
         base: {
@@ -74,9 +92,33 @@ const myCustomTheme = createTheme({
           backgroundColor: 'transparent',
         },
       },
+      testButtonStylePresetWithBorders: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+          borderColor: '{{colors.blue020}}',
+          borderStyle: 'solid',
+          borderWidth: '1px',
+        },
+        hover: {
+          backgroundColor: '{{colors.amber070}}',
+          borderColor: '{{colors.green040}}',
+        },
+        active: {
+          backgroundColor: '{{colors.interactivePrimary050}}',
+        },
+        disabled: {
+          backgroundColor: '{{colors.interactiveDisabled010}}',
+        },
+        loading: {
+          backgroundColor: '{{colors.interactivePrimary020}}',
+        },
+      },
     },
   },
-});
+};
 
 interface IntentKindStylePreset {
   kind: string;
@@ -211,22 +253,20 @@ export const StoryFullAndFixedWidthButton = () => (
     </Container>
     <StorybookSubHeading>Fixed-Width and overflow</StorybookSubHeading>
     <Container>
-      <ThemeProvider theme={myCustomTheme}>
-        <Border>
-          <Spacer>
-            <Button
-              size={ButtonSize.Small}
-              overrides={{
-                width: 'sizing120',
-                height: 'sizing070',
-                stylePreset: 'myButton',
-              }}
-            >
-              Small fixed-width button and overflow with long long text
-            </Button>
-          </Spacer>
-        </Border>
-      </ThemeProvider>
+      <Border>
+        <Spacer>
+          <Button
+            size={ButtonSize.Small}
+            overrides={{
+              width: 'sizing120',
+              height: 'sizing070',
+              stylePreset: 'myButton',
+            }}
+          >
+            Small fixed-width button and overflow with long long text
+          </Button>
+        </Spacer>
+      </Border>
     </Container>
   </>
 );
@@ -472,57 +512,7 @@ export const StoryButtonLink = () => (
   </>
 );
 StoryButtonLink.storyName = 'button-link';
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-transition-presets',
-    baseTheme: theme,
-    overrides: {
-      transitionPresets: {
-        customBackgroundColorChange: {
-          base: {
-            transitionProperty: 'background-color',
-            transitionDuration: '500ms',
-            transitionDelay: '500ms',
-            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-          },
-        },
-        customBorderColourChange: {
-          base: {
-            transitionProperty: 'border-color',
-            transitionDuration: '500ms',
-            transitionDelay: '0ms',
-            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-          },
-        },
-      },
-      stylePresets: {
-        testButtonStylePresetWithBorders: {
-          base: {
-            backgroundColor: '{{colors.interactivePrimary030}}',
-            borderRadius: '{{borders.borderRadiusDefault}}',
-            color: '{{colors.inkInverse}}',
-            iconColor: '{{colors.inkInverse}}',
-            borderColor: '{{colors.blue020}}',
-            borderStyle: 'solid',
-            borderWidth: '1px',
-          },
-          hover: {
-            backgroundColor: '{{colors.amber070}}',
-            borderColor: '{{colors.green040}}',
-          },
-          active: {
-            backgroundColor: '{{colors.interactivePrimary050}}',
-          },
-          disabled: {
-            backgroundColor: '{{colors.interactiveDisabled010}}',
-          },
-          loading: {
-            backgroundColor: '{{colors.interactivePrimary020}}',
-          },
-        },
-      },
-    },
-  });
+
 const buttonStyles: Array<{
   stylePreset: string;
   buttonKind: string;
@@ -636,8 +626,9 @@ export default {
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
-        theme={getCustomTheme(
-          getThemeObject(context?.globals?.backgrounds?.value),
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          buttonCustomThemeObject,
         )}
       >
         <Story />

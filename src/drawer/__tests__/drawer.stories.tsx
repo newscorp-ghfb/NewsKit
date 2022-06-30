@@ -13,10 +13,10 @@ import {Link} from '../../link';
 import {TextInput} from '../../text-input';
 import {Block} from '../../block';
 import {Menu, MenuItem} from '../../menu';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {Stack} from '../../stack';
 import {useMediaQueryObject} from '../../utils/hooks';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const Box = styled.div`
   width: 400px;
@@ -286,48 +286,46 @@ const HeaderDrawer = styled.div`
   position: relative;
 `;
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-drawer-theme',
-    baseTheme: theme,
-    overrides: {
-      transitionPresets: {
-        scaleUp: {
-          base: {
-            transform: 'scaleY(0)',
-            transformOrigin: 'top center',
-          },
-          appear: {},
-          appearActive: {},
-          appearDone: {},
-          enter: {
-            transform: 'scaleY(0)',
-          },
-          enterActive: {
-            transform: 'scaleY(1)',
-            transitionProperty: 'transform',
-            transitionDuration: '{{motions.motionDuration020}}',
-            transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
-          },
-          enterDone: {
-            transform: 'scaleY(1)',
-          },
-          exit: {
-            transform: 'scaleY(1)',
-          },
-          exitActive: {
-            transform: 'scaleY(0)',
-            transitionProperty: 'transform',
-            transitionDuration: '{{motions.motionDuration020}}',
-            transitionTimingFunction: '{{motions.motionTimingLinear}}',
-          },
-          exitDone: {
-            transform: 'scaleY(0)',
-          },
+const drawerCustomThemeObject: CreateThemeArgs = {
+  name: 'my-custom-drawer-theme',
+  overrides: {
+    transitionPresets: {
+      scaleUp: {
+        base: {
+          transform: 'scaleY(0)',
+          transformOrigin: 'top center',
+        },
+        appear: {},
+        appearActive: {},
+        appearDone: {},
+        enter: {
+          transform: 'scaleY(0)',
+        },
+        enterActive: {
+          transform: 'scaleY(1)',
+          transitionProperty: 'transform',
+          transitionDuration: '{{motions.motionDuration020}}',
+          transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
+        },
+        enterDone: {
+          transform: 'scaleY(1)',
+        },
+        exit: {
+          transform: 'scaleY(1)',
+        },
+        exitActive: {
+          transform: 'scaleY(0)',
+          transitionProperty: 'transform',
+          transitionDuration: '{{motions.motionDuration020}}',
+          transitionTimingFunction: '{{motions.motionTimingLinear}}',
+        },
+        exitDone: {
+          transform: 'scaleY(0)',
         },
       },
     },
-  });
+  },
+};
 
 export const StoryMenuAndInline = () =>
   React.createElement(() => {
@@ -844,8 +842,9 @@ export default {
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          drawerCustomThemeObject,
         )}
       >
         <Story />

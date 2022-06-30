@@ -14,9 +14,9 @@ import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
 import {IconFilledImage} from '../../icons';
 import {styled} from '../../utils/style';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {Link} from '../../link';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const StyledDiv = styled.div`
   border: 1px red dotted;
@@ -66,90 +66,88 @@ const labelDefault = {
   },
 };
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-card-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        cardLabel: labelDefault,
-        cardTeaserLead: {
-          base: {
-            color: '{{colors.inkBase}}',
-          },
+const cardCustomThemeObject: CreateThemeArgs = {
+  name: 'card-custom-theme',
+  overrides: {
+    stylePresets: {
+      cardLabel: labelDefault,
+      cardTeaserLead: {
+        base: {
+          color: '{{colors.inkBase}}',
         },
-        // mocked card Containers
-        cardContainerMock: {
-          base: {
-            borderStyle: 'solid',
-            borderColor: '{{colors.purple020}}',
-            borderWidth: '{{borders.borderWidth010}}',
-            backgroundColor: '{{colors.blue020}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.blue040}}',
-            boxShadow: '{{shadows.shadow030}}',
-          },
-          active: {
-            backgroundColor: '{{colors.blue060}}',
-            boxShadow: '{{shadows.shadow050}}',
-          },
+      },
+      // mocked card Containers
+      cardContainerMock: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '{{colors.purple020}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          backgroundColor: '{{colors.blue020}}',
         },
-        cardContainerMediaMock: {
-          base: {
-            backgroundColor: '{{colors.red020}}',
-          },
+        hover: {
+          backgroundColor: '{{colors.blue040}}',
+          boxShadow: '{{shadows.shadow030}}',
         },
-        cardContainerTeaserMock: {
-          base: {
-            backgroundColor: '{{colors.neutral010}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.amber010}}',
-          },
-          active: {
-            backgroundColor: '{{colors.amber020}}',
-          },
+        active: {
+          backgroundColor: '{{colors.blue060}}',
+          boxShadow: '{{shadows.shadow050}}',
         },
-        cardContainerActionsMock: {
-          base: {
-            backgroundColor: '{{colors.green020}}',
-          },
+      },
+      cardContainerMediaMock: {
+        base: {
+          backgroundColor: '{{colors.red020}}',
         },
-        headlineKickerInteractiveMock: {
-          base: {
-            color: '{{colors.interactiveNegative050}}',
-            textDecoration: 'underline',
-          },
-          hover: {
-            color: '{{colors.interactiveNegative050}}',
-            textDecoration: 'underline',
-          },
-          active: {
-            color: '{{colors.interactiveNegative050}}',
-            textDecoration: 'none',
-          },
-          visited: {
-            color: '{{colors.interactiveVisited010}}',
-          },
+      },
+      cardContainerTeaserMock: {
+        base: {
+          backgroundColor: '{{colors.neutral010}}',
         },
-        headlineHeadingInteractiveMock: {
-          base: {
-            color: '{{colors.green090}}',
-            textDecoration: 'underline',
-          },
-          hover: {
-            color: '{{colors.interactivePositive040}}',
-            textDecoration: 'none',
-          },
-          active: {
-            color: '{{colors.interactivePositive050}}',
-            textDecoration: 'underline',
-          },
+        hover: {
+          backgroundColor: '{{colors.amber010}}',
+        },
+        active: {
+          backgroundColor: '{{colors.amber020}}',
+        },
+      },
+      cardContainerActionsMock: {
+        base: {
+          backgroundColor: '{{colors.green020}}',
+        },
+      },
+      headlineKickerInteractiveMock: {
+        base: {
+          color: '{{colors.interactiveNegative050}}',
+          textDecoration: 'underline',
+        },
+        hover: {
+          color: '{{colors.interactiveNegative050}}',
+          textDecoration: 'underline',
+        },
+        active: {
+          color: '{{colors.interactiveNegative050}}',
+          textDecoration: 'none',
+        },
+        visited: {
+          color: '{{colors.interactiveVisited010}}',
+        },
+      },
+      headlineHeadingInteractiveMock: {
+        base: {
+          color: '{{colors.green090}}',
+          textDecoration: 'underline',
+        },
+        hover: {
+          color: '{{colors.interactivePositive040}}',
+          textDecoration: 'none',
+        },
+        active: {
+          color: '{{colors.interactivePositive050}}',
+          textDecoration: 'underline',
         },
       },
     },
-  });
+  },
+};
 
 const VideoElement = ({width = 'auto', height = 'auto'}) => (
   <iframe
@@ -324,22 +322,6 @@ const renderCardInset = () => (
     </Visible>
   </>
 );
-
-export default {
-  title: 'NewsKit Light/card',
-  component: () => 'None',
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
-};
 
 export const StoryCardSmallWithoutInset = () => renderCard();
 StoryCardSmallWithoutInset.storyName = 'card-small-without-inset';
@@ -1706,3 +1688,20 @@ export const StoryCardSlices = () => (
 );
 StoryCardSlices.storyName = 'card-slices';
 StoryCardSlices.parameters = {eyes: {include: false}};
+
+export default {
+  title: 'NewsKit Light/card',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          cardCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

@@ -24,16 +24,20 @@ const unlimitedScenarios = [
   'popover',
 ];
 
-const Background = styled.div`
+const BackgroundColor = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
+  ${getColorCssFromTheme('background', 'interfaceBackground')}
+`
+
+const PaddingReset = styled.div`
+  position: relative;
   padding: 0;
   padding-left: 8px;
   padding-right: 8px;
-  ${getColorCssFromTheme('background', 'interfaceBackground')}
 `
 
 const Container = styled.div`
@@ -41,7 +45,9 @@ const Container = styled.div`
   max-height: 768px;
   overflow: hidden;
 `;
+const Background = ({children}) => <BackgroundColor><PaddingReset>{children}</PaddingReset></BackgroundColor>
 const LimitSizeDecorator = ({children}) => <Background><Container>{children}</Container></Background>;
+const MediaQueryProviderDecorator = ({children}) => <Background><MediaQueryProvider>{children}</MediaQueryProvider></Background>
 const NoDecorator = ({children}) => <>{children}</>;
 
 export const parameters = {
@@ -103,7 +109,7 @@ export const decorators = [
 
     const Decorator = shouldDisableMQDecorator
       ? NoDecorator
-      : MediaQueryProvider;
+      : MediaQueryProviderDecorator;
 
     return (
       <Decorator>

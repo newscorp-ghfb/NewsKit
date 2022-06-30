@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {createTheme, ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled} from '../../utils/style';
 import {Stack} from '../../stack';
 import {StorybookSubHeading} from '../../test/storybook-comps';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 import {
   IconFilledAccountBalance,
@@ -28,28 +28,26 @@ const Constrain = styled.div`
   display: inline-block;
 `;
 
-const getCustomTheme = (baseTheme?: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-icons-theme',
-    baseTheme,
-    overrides: {
-      stylePresets: {
-        iconCustom: {
-          base: {
-            iconColor: '{{colors.amber050}}',
-          },
+const iconsCustomThemeObject: CreateThemeArgs = {
+  name: 'icons-custom-theme',
+  overrides: {
+    stylePresets: {
+      iconCustom: {
+        base: {
+          iconColor: '{{colors.amber050}}',
         },
-        iconCustomWithTransitions: {
-          base: {
-            iconColor: '{{colors.amber050}}',
-          },
-          hover: {
-            iconColor: '{{colors.green050}}',
-          },
+      },
+      iconCustomWithTransitions: {
+        base: {
+          iconColor: '{{colors.amber050}}',
+        },
+        hover: {
+          iconColor: '{{colors.green050}}',
         },
       },
     },
-  });
+  },
+};
 
 const getSocialIconStylePreset = (iconName: string) =>
   `iconSocial${iconName
@@ -78,22 +76,6 @@ const socialIconList = [
 ];
 
 const isSocialIcon = (iconName: string) => socialIconList.includes(iconName);
-
-export default {
-  title: 'NewsKit Light/icons',
-  component: () => 'None',
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
-};
 
 export const StoryCustomIcons = () => (
   <>
@@ -291,3 +273,20 @@ export const StoryIconsLogicalProps = () => (
   </Constrain>
 );
 StoryIconsLogicalProps.storyName = 'icons-logical-props';
+
+export default {
+  title: 'NewsKit Light/icons',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          iconsCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

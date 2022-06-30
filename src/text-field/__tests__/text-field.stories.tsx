@@ -17,7 +17,7 @@ import {
   StorybookSubHeading,
   StorybookParah,
 } from '../../test/storybook-comps';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {
   styled,
   getSizingCssFromTheme,
@@ -25,7 +25,7 @@ import {
 } from '../../utils/style';
 import {Label} from '../../label';
 import {AssistiveText} from '../../assistive-text';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const CustomBlock = styled.div`
   margin-right: 12px;
@@ -34,49 +34,31 @@ const Container = styled.div`
   ${getSizingCssFromTheme('margin', 'sizing080')};
 `;
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-text-input-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        inputContainerCustom: {
-          base: {
-            borderStyle: 'solid',
-            borderColor: '#D20600',
-            placeholderColor: 'blue',
-          },
+const textFieldCustomThemeObject: CreateThemeArgs = {
+  name: 'text-input-custom-theme',
+  overrides: {
+    stylePresets: {
+      inputContainerCustom: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '#D20600',
+          placeholderColor: 'blue',
         },
-        labelOverrides: {
-          base: {
-            color: '#0ed200',
-          },
+      },
+      labelOverrides: {
+        base: {
+          color: '#0ed200',
         },
-        assistiveTextOverrides: {
-          base: {
-            color: '#0ed200',
-          },
+      },
+      assistiveTextOverrides: {
+        base: {
+          color: '#0ed200',
         },
       },
     },
-  });
-
-export default {
-  title: 'NewsKit Light/text-field',
-  component: () => 'None',
-  disabledRules: ['color-contrast'],
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
+  },
 };
+
 export const TextFieldSizeExamples = () => (
   <>
     <StorybookHeading>Text Field Sizes</StorybookHeading>
@@ -463,4 +445,22 @@ export const TextFieldAddOn = () => {
       </Container>
     </>
   );
+};
+
+export default {
+  title: 'NewsKit Light/text-field',
+  component: () => 'None',
+  disabledRules: ['color-contrast'],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          textFieldCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };

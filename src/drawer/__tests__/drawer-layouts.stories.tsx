@@ -1,7 +1,7 @@
 import React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {Drawer} from '..';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {getColorFromTheme, styled} from '../../utils/style';
 import {
   StorybookHeading,
@@ -14,49 +14,47 @@ import {Button} from '../../button';
 import {Link, LinkStandalone} from '../../link';
 import {TextInput} from '../../text-input';
 import {UnorderedList} from '../../unordered-list';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-drawer-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        overlayCustom: {
-          base: {
-            backgroundColor: '{{colors.amber010}}',
-          },
+const drawerLayoutCustomThemeObject: CreateThemeArgs = {
+  name: 'drawer-layout-custom-theme',
+  overrides: {
+    stylePresets: {
+      overlayCustom: {
+        base: {
+          backgroundColor: '{{colors.amber010}}',
         },
-        drawerPanelCustom: {
-          base: {
-            backgroundColor: '{{colors.green010}}',
-            boxShadow: '0px 0px 16px 14px rgba(169,183,172,0.9)',
-          },
+      },
+      drawerPanelCustom: {
+        base: {
+          backgroundColor: '{{colors.green010}}',
+          boxShadow: '0px 0px 16px 14px rgba(169,183,172,0.9)',
         },
-        drawerHeaderCustom: {
-          base: {
-            backgroundColor: '{{colors.transparent}}',
-            borderStyle: 'none none solid none',
-            borderWidth: '{{borders.borderWidth010}}',
-            borderColor: '{{colors.red060}}',
-          },
+      },
+      drawerHeaderCustom: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'none none solid none',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderColor: '{{colors.red060}}',
         },
-        drawerCloseButtonCustom: {
-          base: {
-            borderWidth: '{{borders.borderWidth010}}',
-            borderStyle: 'solid',
-            borderColor: '{{colors.teal030}}',
-            backgroundColor: '{{colors.transparent}}',
-            borderRadius: '{{borders.borderRadiusCircle}}',
-            iconColor: '{{colors.teal070}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.teal050}}',
-          },
+      },
+      drawerCloseButtonCustom: {
+        base: {
+          borderWidth: '{{borders.borderWidth010}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.teal030}}',
+          backgroundColor: '{{colors.transparent}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          iconColor: '{{colors.teal070}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.teal050}}',
         },
       },
     },
-  });
+  },
+};
 
 const StyledCategoryRow = styled.div`
   border-bottom: 1px solid ${getColorFromTheme('interface050')};
@@ -75,23 +73,6 @@ const CategoryRow = ({children}: {children: string}) => (
     <IconFilledChevronRight overrides={{size: 'sizing040'}} />
   </StyledCategoryRow>
 );
-
-export default {
-  title: 'NewsKit Light/drawer-layouts-only',
-  component: () => 'None',
-  disabledRules: ['tabindex'],
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
-};
 
 export const StoryRightPlacement = () =>
   React.createElement(() => (
@@ -397,3 +378,21 @@ export const StoryDrawerLogicalPropsOverrides = () =>
     </div>
   ));
 StoryDrawerLogicalPropsOverrides.storyName = 'drawer-logical-props-overrides';
+
+export default {
+  title: 'NewsKit Light/drawer-layouts-only',
+  component: () => 'None',
+  disabledRules: ['tabindex'],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          drawerLayoutCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

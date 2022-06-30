@@ -7,7 +7,7 @@ import {
 } from '../../test/storybook-comps';
 
 import {Checkbox} from '..';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled} from '../../utils';
 import {
   Cell,
@@ -18,78 +18,59 @@ import {
 } from '../..';
 import {CheckboxIconProps} from '../types';
 import {states, sizes} from './helpers';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {defaultFocusVisible} from '../../utils/default-focus-visible';
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'checkbox-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        customCheckboxInput: {
-          base: {
-            borderColor: 'red',
-            borderStyle: 'solid',
-            borderWidth: '2px',
-            borderRadius: '50%',
-            backgroundColor: 'orange',
-            iconColor: 'red',
-          },
-          hover: {
-            backgroundColor: 'blue',
-          },
-          'focus-visible': defaultFocusVisible,
+const checkboxCustomThemeObject: CreateThemeArgs = {
+  name: 'checkbox-custom-theme',
+  overrides: {
+    stylePresets: {
+      customCheckboxInput: {
+        base: {
+          borderColor: 'red',
+          borderStyle: 'solid',
+          borderWidth: '2px',
+          borderRadius: '50%',
+          backgroundColor: 'orange',
+          iconColor: 'red',
         },
-        customCheckboxFeedback: {
-          base: {
-            backgroundColor: 'rgba(0,0,0,0.2)',
-            borderRadius: '50%',
-          },
+        hover: {
+          backgroundColor: 'blue',
         },
-        customIconFilledCancel: {
-          base: {
-            backgroundColor: '{{colors.interfaceInformative010}}',
-            iconColor: '{{colors.inkInverse}}',
-          },
+        'focus-visible': defaultFocusVisible,
+      },
+      customCheckboxFeedback: {
+        base: {
+          backgroundColor: 'rgba(0,0,0,0.2)',
+          borderRadius: '50%',
         },
       },
-      transitionPresets: {
-        customBackgroundColorChange: {
-          base: {
-            transitionProperty: 'background-color',
-            transitionDuration: '500ms',
-            transitionDelay: '500ms',
-            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-          },
-        },
-        customBorderColourChange: {
-          base: {
-            transitionProperty: 'border-color',
-            transitionDuration: '500ms',
-            transitionDelay: '0ms',
-            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-          },
+      customIconFilledCancel: {
+        base: {
+          backgroundColor: '{{colors.interfaceInformative010}}',
+          iconColor: '{{colors.inkInverse}}',
         },
       },
     },
-  });
-
-export default {
-  title: 'NewsKit Light/checkbox',
-  component: () => 'None',
-  disabledRules: [],
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
+    transitionPresets: {
+      customBackgroundColorChange: {
+        base: {
+          transitionProperty: 'background-color',
+          transitionDuration: '500ms',
+          transitionDelay: '500ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+      customBorderColourChange: {
+        base: {
+          transitionProperty: 'border-color',
+          transitionDuration: '500ms',
+          transitionDelay: '0ms',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+      },
+    },
+  },
 };
 
 const Container = styled.div`
@@ -304,3 +285,21 @@ export const StoryCheckboxTransitions = () => (
 );
 
 StoryCheckboxTransitions.storyName = 'checkbox-transitions';
+
+export default {
+  title: 'NewsKit Light/checkbox',
+  component: () => 'None',
+  disabledRules: [],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          checkboxCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

@@ -13,7 +13,6 @@ import {
 import {
   Block,
   Button,
-  createTheme,
   IconButton,
   IconFilledAccountBalance,
   IconFilledAccountTree,
@@ -22,7 +21,7 @@ import {
   StackDistribution,
   styled,
   ThemeProvider,
-  UncompiledTheme,
+  CreateThemeArgs,
 } from '../..';
 import {SelectOption} from '../../select';
 import {TextFieldSize} from '../../text-field';
@@ -32,24 +31,22 @@ import {
 } from '../../test/storybook-comps';
 import {Fieldset} from '../../fieldset';
 import {RadioGroup} from '../../radio-button';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-select-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        fieldsetWithBorder: {
-          base: {
-            borderColor: '{{colors.amber010}}',
-            borderWidth: '1px',
-            borderStyle: 'solid',
-          },
+const formInputCustomThemeObject: CreateThemeArgs = {
+  name: 'my-custom-select-theme',
+  overrides: {
+    stylePresets: {
+      fieldsetWithBorder: {
+        base: {
+          borderColor: '{{colors.amber010}}',
+          borderWidth: '1px',
+          borderStyle: 'solid',
         },
       },
     },
-  });
+  },
+};
 
 const FormInputBlock = styled(Block)``;
 
@@ -64,23 +61,6 @@ const onSubmit = async (data: any) => {
 const validateUserName = async (value: string) => {
   await sleep(1000);
   return value !== 'newskit' || 'This username is already taken';
-};
-
-export default {
-  title: 'NewsKit Light/form-input',
-  component: () => 'None',
-  disabledRules: [],
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
 };
 
 export const StoryFormField = () => (
@@ -829,3 +809,21 @@ export const StoryFormFieldset = () => (
   </>
 );
 StoryFormFieldset.storyName = 'form-input-fieldset';
+
+export default {
+  title: 'NewsKit Light/form-input',
+  component: () => 'None',
+  disabledRules: [],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          formInputCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

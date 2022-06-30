@@ -13,53 +13,51 @@ import {
   IconFilledCancel,
   IconFilledStarOutline,
 } from '../../icons';
-import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled} from '../../utils/style';
 import {AccordionIconProps} from '../types';
-import {themeObject} from '../../test/theme-select-object';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {AccordionGroup} from '../accordion-group';
 
-const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
-  createTheme({
-    name: 'my-custom-accordion-theme',
-    baseTheme: theme,
-    overrides: {
-      stylePresets: {
-        accordionHeaderCustom: {
-          base: {
-            backgroundColor: '#7FFFD4',
-            color: 'black',
-            borderStyle: 'none none solid none',
-            borderColor: '#6a040f',
-            borderWidth: '{{borders.borderWidth020}}',
-          },
-          hover: {
-            backgroundColor: '#f08080',
-            color: '#FFD23F',
-          },
-          'focus-visible': {
-            outlineColor: '{{outlines.outlineColorDefault}}',
-            outlineStyle: '{{outlines.outlineStyleDefault}}',
-            outlineWidth: '{{outlines.outlineWidthDefault}}',
-            safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-          },
+const accordionCustomThemeObject: CreateThemeArgs = {
+  name: 'my-custom-accordion-theme',
+  overrides: {
+    stylePresets: {
+      accordionHeaderCustom: {
+        base: {
+          backgroundColor: '#7FFFD4',
+          color: 'black',
+          borderStyle: 'none none solid none',
+          borderColor: '#6a040f',
+          borderWidth: '{{borders.borderWidth020}}',
         },
-        accordionPanelCustom: {
-          base: {
-            borderStyle: 'none none solid none',
-            borderColor: '#fb8500',
-            borderWidth: '{{borders.borderWidth020}}',
-          },
+        hover: {
+          backgroundColor: '#f08080',
+          color: '#FFD23F',
         },
-        customIconFilledCancel: {
-          base: {
-            backgroundColor: '{{colors.interfaceInformative010}}',
-            iconColor: '{{colors.inkInverse}}',
-          },
+        'focus-visible': {
+          outlineColor: '{{outlines.outlineColorDefault}}',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
+        },
+      },
+      accordionPanelCustom: {
+        base: {
+          borderStyle: 'none none solid none',
+          borderColor: '#fb8500',
+          borderWidth: '{{borders.borderWidth020}}',
+        },
+      },
+      customIconFilledCancel: {
+        base: {
+          backgroundColor: '{{colors.interfaceInformative010}}',
+          iconColor: '{{colors.inkInverse}}',
         },
       },
     },
-  });
+  },
+};
 
 const StyledBlock = styled(Block)`
   display: flex;
@@ -85,22 +83,6 @@ const CustomIndicator = ({expanded}: AccordionIconProps) =>
 const Spacer = styled.div`
   margin-bottom: 30px;
 `;
-
-export default {
-  title: 'NewsKit Light/accordion',
-  component: () => 'None',
-  decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={getCustomTheme(
-          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
-};
 
 export const StoryAccordion = () => {
   const [expanded, toggleExpanded] = React.useState(false);
@@ -369,3 +351,20 @@ export const StoryAccordionGroupControlled = () => {
   );
 };
 StoryAccordionGroupControlled.storyName = 'accordion-group-controlled';
+
+export default {
+  title: 'NewsKit Light/accordion',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          accordionCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};
