@@ -1038,12 +1038,12 @@ workflows:
       - i_have_merged_applitools:
           type: approval
           requires:
-          - test_newskit_in_nextjs_app
-          - lint
-          - test_unit_comps
-          - test_unit_docs
-          - test_e2e_comps
-          - test_e2e_docs_dev
+            - test_newskit_in_nextjs_app
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_pr
       - init_aws:
           context: ncu-product-platforms-context
       - deploy_terraform:
