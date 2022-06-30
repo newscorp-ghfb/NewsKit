@@ -1,35 +1,39 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {TextBlock} from '..';
-import {createTheme, ThemeProvider} from '../../theme';
+import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {styled} from '../../utils';
+import {themeObject} from '../../test/theme-select-object';
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-textblock-theme',
-  overrides: {
-    stylePresets: {
-      textblockCustom: {
-        base: {
-          color: '{{colors.blue060}}',
-          borderStyle: 'solid',
-          borderWidth: '{{borders.borderWidth010}}',
+const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
+  createTheme({
+    name: 'my-custom-textblock-theme',
+    baseTheme: theme,
+    overrides: {
+      stylePresets: {
+        textblockCustom: {
+          base: {
+            color: '{{colors.blue060}}',
+            borderStyle: 'solid',
+            borderWidth: '{{borders.borderWidth010}}',
+          },
+        },
+      },
+      typographyPresets: {
+        textblockCustom: {
+          fontFamily: '{{fonts.fontFamily1.fontFamily}}',
+          fontSize: '{{fonts.fontSize030}}',
+          lineHeight: '{{fonts.fontLineHeight030}}',
+          fontWeight: '{{fonts.fontWeight020}}',
+          letterSpacing: '{{fonts.fontLetterSpacing030}}',
         },
       },
     },
-    typographyPresets: {
-      textblockCustom: {
-        fontFamily: '{{fonts.fontFamily1.fontFamily}}',
-        fontSize: '{{fonts.fontSize030}}',
-        lineHeight: '{{fonts.fontLineHeight030}}',
-        fontWeight: '{{fonts.fontWeight020}}',
-        letterSpacing: '{{fonts.fontLetterSpacing030}}',
-      },
-    },
-  },
-});
+  });
 
 const bodyString =
   'Telling the stories that matter, seeding ideas and stirring emotion. Capturing moments, meaning and magic. Making sense of the world. On the shoulders of giants, in the thick of it, behind the scenes and fighting the good fight. Long form and rapid-fire, pragmatic and poetic, comical and critical. Being at the biggest events with the biggest names noticing the smallest details, and sticking up for the little guy.';
@@ -40,6 +44,17 @@ const StyledDiv = styled.div`
 export default {
   title: 'NewsKit Light/text-block',
   component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 export const StoryDefault = () => (
@@ -68,15 +83,16 @@ StoryAsDifferentHtmlTag.storyName = 'as different html tag';
 
 export const StoryWithOverriddenPresets = () => (
   <>
-    <ThemeProvider theme={myCustomTheme}>
-      <StorybookHeading>TextBlock</StorybookHeading>
-      <StorybookSubHeading>With style-preset override</StorybookSubHeading>
-      <TextBlock stylePreset="textblockCustom">{bodyString}</TextBlock>
-      <StorybookSubHeading>With typography-preset override</StorybookSubHeading>
-      <TextBlock typographyPreset="editorialParagraph010">
-        {bodyString}
-      </TextBlock>
-    </ThemeProvider>
+    <StorybookHeading>TextBlock</StorybookHeading>
+    <StorybookSubHeading>With style-preset override</StorybookSubHeading>
+    <TextBlock stylePreset="textblockCustom">{bodyString}</TextBlock>
+    <StorybookSubHeading>With typography-preset override</StorybookSubHeading>
+    <TextBlock
+      typographyPreset="editorialParagraph010"
+      stylePreset="inkContrast"
+    >
+      {bodyString}
+    </TextBlock>
   </>
 );
 StoryWithOverriddenPresets.storyName = 'with overridden presets';

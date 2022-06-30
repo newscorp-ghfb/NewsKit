@@ -134,7 +134,7 @@ Object {
     "interfaceInformative020": "{{colors.teal070}}",
     "interfaceNegative010": "{{colors.red040}}",
     "interfaceNegative020": "{{colors.red070}}",
-    "interfaceNeutral010": "{{colors.neutral080}}",
+    "interfaceNeutral010": "{{colors.neutral030}}",
     "interfaceNeutral020": "{{colors.neutral010}}",
     "interfaceNotice010": "{{colors.amber030}}",
     "interfaceNotice020": "{{colors.neutral020}}",
@@ -2839,7 +2839,7 @@ Object {
           "md": "space030",
           "xs": "space020",
         },
-        "stylePreset": "inkInverse",
+        "stylePreset": "videoPlayerDockTextTitle",
         "typographyPreset": Object {
           "md": "utilityHeading040",
           "xs": "utilityHeading010",
@@ -5583,6 +5583,11 @@ Object {
       "backgroundImage": "{{overlays.overlayGradientInverseVertical}}",
     },
   },
+  "videoPlayerDockTextTitle": Object {
+    "base": Object {
+      "color": "{{colors.white}}",
+    },
+  },
   "videoPlayerLoadProgressBar": Object {
     "base": Object {
       "backgroundColor": "{{colors.whiteTint050}}",
@@ -5596,11 +5601,11 @@ Object {
   "videoPlayerPlayButton": Object {
     "base": Object {
       "backgroundColor": "{{colors.transparent}}",
-      "borderColor": "{{colors.inkInverse}}",
+      "borderColor": "{{colors.white}}",
       "borderRadius": "{{borders.borderRadiusCircle}}",
       "borderStyle": "solid",
       "borderWidth": "{{borders.borderWidth020}}",
-      "color": "{{colors.inkInverse}}",
+      "color": "{{colors.white}}",
     },
   },
   "videoPlayerPlayProgressBar": Object {

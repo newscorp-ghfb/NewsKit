@@ -1,9 +1,11 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 
 import {Select, SelectOption} from '..';
 import {styled} from '../../utils/style';
 import {Stack} from '../../stack';
 import {Block} from '../../block';
+import {Image} from '../../image';
 import {TextFieldSize} from '../../text-field';
 
 import {
@@ -12,7 +14,7 @@ import {
 } from '../../test/storybook-comps';
 import {Label} from '../../label';
 import {AssistiveText} from '../../assistive-text';
-import {createTheme, ThemeProvider} from '../../theme';
+import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
 import {
   IconFilledCheckCircle,
   IconFilledAccountBalance,
@@ -23,6 +25,7 @@ import {Button} from '../../button/button';
 import {InlineMessage} from '../../inline-message';
 import {GridLayout} from '../../grid-layout';
 import {countries} from './phone-countries';
+import {themeObject} from '../../test/theme-select-object';
 
 const items = [
   'Neptunium',
@@ -65,9 +68,57 @@ const Spacer = styled.div`
   margin-bottom: 20px;
 `;
 
+const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
+  createTheme({
+    name: 'my-custom-select-theme',
+    baseTheme: theme,
+    overrides: {
+      stylePresets: {
+        selectContainerCustom: {
+          base: {
+            borderStyle: 'solid',
+            borderColor: '#D20600',
+            placeholderColor: 'blue',
+          },
+        },
+        selectPanelCustom: {
+          base: {
+            backgroundColor: 'red',
+          },
+        },
+        selectOptionCustom: {
+          base: {
+            backgroundColor: 'yellow',
+          },
+        },
+        labelOverrides: {
+          base: {
+            color: '#325C00',
+          },
+        },
+        assistiveTextOverrides: {
+          base: {
+            color: '#325C00',
+          },
+        },
+      },
+    },
+  });
+
 export default {
   title: 'NewsKit Light/select',
   component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 export const StorySelectSize = () => (
@@ -377,177 +428,138 @@ export const StorySelectVariations = () => (
 );
 StorySelectVariations.storyName = 'Select variations';
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-select-theme',
-  overrides: {
-    stylePresets: {
-      selectContainerCustom: {
-        base: {
-          borderStyle: 'solid',
-          borderColor: '#D20600',
-          placeholderColor: 'blue',
-        },
-      },
-      selectPanelCustom: {
-        base: {
-          backgroundColor: 'red',
-        },
-      },
-      selectOptionCustom: {
-        base: {
-          backgroundColor: 'yellow',
-        },
-      },
-      labelOverrides: {
-        base: {
-          color: '#325C00',
-        },
-      },
-      assistiveTextOverrides: {
-        base: {
-          color: '#325C00',
-        },
-      },
-    },
-  },
-});
-
 export const StorySelectOverrides = () => (
   <>
     <StorybookHeading>Select with overrides</StorybookHeading>
     <Container>
-      <ThemeProvider theme={myCustomTheme}>
-        <Container>
-          <StorybookSubHeading>
-            Select loading with overrides
-          </StorybookSubHeading>
-          <Label
-            htmlFor="id-6"
-            overrides={{
-              stylePreset: 'labelOverrides',
-            }}
-          >
-            Label
-          </Label>
-          <Select
-            id="id-6"
-            aria-describedby="id-6-at"
-            loading
-            overrides={{
-              button: {
-                stylePreset: 'selectContainerCustom',
+      <Container>
+        <StorybookSubHeading>Select loading with overrides</StorybookSubHeading>
+        <Label
+          htmlFor="id-6"
+          overrides={{
+            stylePreset: 'labelOverrides',
+          }}
+        >
+          Label
+        </Label>
+        <Select
+          id="id-6"
+          aria-describedby="id-6-at"
+          loading
+          overrides={{
+            button: {
+              stylePreset: 'selectContainerCustom',
+              typographyPreset: 'utilityButton010',
+              spaceStack: 'space050',
+              loadingIndicator: {
+                stylePreset: 'indeterminateProgressIndicatorNegative',
+              },
+            },
+            panel: {
+              maxHeight: '100px',
+              stylePreset: 'selectPanelCustom',
+              spaceInset: 'spaceInset050',
+              spaceStack: 'space020',
+            },
+          }}
+        >
+          {items.map(item => (
+            <SelectOption key={item} value={item}>
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <Block spaceStack="space020" />
+        <AssistiveText
+          id="id-6-at"
+          overrides={{
+            stylePreset: 'assistiveTextOverrides',
+          }}
+        >
+          Assistive Text
+        </AssistiveText>
+      </Container>
+      <Container>
+        <StorybookSubHeading>
+          Select with overrides on menu items
+        </StorybookSubHeading>
+        <Label
+          htmlFor="id-7"
+          overrides={{
+            stylePreset: 'labelOverrides',
+          }}
+        >
+          Label
+        </Label>
+        <Select
+          id="id-7"
+          aria-describedby="id-7-at"
+          overrides={{
+            button: {
+              stylePreset: 'selectContainerCustom',
+              typographyPreset: 'utilityButton010',
+              spaceStack: 'space050',
+            },
+            panel: {
+              maxHeight: '100px',
+              stylePreset: 'selectPanelCustom',
+              spaceInset: 'spaceInset050',
+              spaceStack: 'space020',
+            },
+          }}
+        >
+          {items.map(item => (
+            <SelectOption
+              key={item}
+              value={item}
+              overrides={{
+                spaceInset: 'space050',
                 typographyPreset: 'utilityButton010',
-                spaceStack: 'space050',
-                loadingIndicator: {
-                  stylePreset: 'indeterminateProgressIndicatorNegative',
-                },
-              },
-              panel: {
-                maxHeight: '100px',
-                stylePreset: 'selectPanelCustom',
-                spaceInset: 'spaceInset050',
-                spaceStack: 'space020',
-              },
-            }}
-          >
-            {items.map(item => (
-              <SelectOption key={item} value={item}>
-                {item}
-              </SelectOption>
-            ))}
-          </Select>
-          <Block spaceStack="space020" />
-          <AssistiveText
-            id="id-6-at"
-            overrides={{
-              stylePreset: 'assistiveTextOverrides',
-            }}
-          >
-            Assistive Text
-          </AssistiveText>
-        </Container>
-        <Container>
-          <StorybookSubHeading>
-            Select with overrides on menu items
-          </StorybookSubHeading>
-          <Label
-            htmlFor="id-7"
-            overrides={{
-              stylePreset: 'labelOverrides',
-            }}
-          >
-            Label
-          </Label>
-          <Select
-            id="id-7"
-            aria-describedby="id-7-at"
-            overrides={{
-              button: {
-                stylePreset: 'selectContainerCustom',
-                typographyPreset: 'utilityButton010',
-                spaceStack: 'space050',
-              },
-              panel: {
-                maxHeight: '100px',
-                stylePreset: 'selectPanelCustom',
-                spaceInset: 'spaceInset050',
-                spaceStack: 'space020',
-              },
-            }}
-          >
-            {items.map(item => (
-              <SelectOption
-                key={item}
-                value={item}
-                overrides={{
-                  spaceInset: 'space050',
-                  typographyPreset: 'utilityButton010',
-                  stylePreset: 'selectOptionCustom',
-                }}
-              >
-                {item}
-              </SelectOption>
-            ))}
-          </Select>
-          <Block spaceStack="space020" />
-          <AssistiveText
-            id="id-7-at"
-            overrides={{
-              stylePreset: 'assistiveTextOverrides',
-            }}
-          >
-            Assistive Text
-          </AssistiveText>
-        </Container>
-        <Container>
-          <StorybookSubHeading>
-            Select with minHeight override on menu items
-          </StorybookSubHeading>
-          <Label
-            htmlFor="id-8"
-            overrides={{
-              stylePreset: 'labelOverrides',
-            }}
-          >
-            Label
-          </Label>
-          <Select id="id-8" aria-describedby="id-8-at">
-            {items.map(item => (
-              <SelectOption
-                key={item}
-                value={item}
-                overrides={{
-                  minHeight: '100px',
-                }}
-              >
-                {item}
-              </SelectOption>
-            ))}
-          </Select>
-          <Block spaceStack="space020" />
-          <AssistiveText id="id-8-at">Assistive Text</AssistiveText>
-        </Container>
-      </ThemeProvider>
+                stylePreset: 'selectOptionCustom',
+              }}
+            >
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <Block spaceStack="space020" />
+        <AssistiveText
+          id="id-7-at"
+          overrides={{
+            stylePreset: 'assistiveTextOverrides',
+          }}
+        >
+          Assistive Text
+        </AssistiveText>
+      </Container>
+      <Container>
+        <StorybookSubHeading>
+          Select with minHeight override on menu items
+        </StorybookSubHeading>
+        <Label
+          htmlFor="id-8"
+          overrides={{
+            stylePreset: 'labelOverrides',
+          }}
+        >
+          Label
+        </Label>
+        <Select id="id-8" aria-describedby="id-8-at">
+          {items.map(item => (
+            <SelectOption
+              key={item}
+              value={item}
+              overrides={{
+                minHeight: '100px',
+              }}
+            >
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <Block spaceStack="space020" />
+        <AssistiveText id="id-8-at">Assistive Text</AssistiveText>
+      </Container>
     </Container>
   </>
 );
@@ -557,79 +569,77 @@ export const StorySelectLogicalProps = () => (
   <>
     <StorybookHeading>Select with overrides</StorybookHeading>
     <Container>
-      <ThemeProvider theme={myCustomTheme}>
-        <Container>
-          <StorybookSubHeading>
-            Select with logical prop overrides
-          </StorybookSubHeading>
-          <Label
-            htmlFor="id-logical-props"
-            overrides={{
-              stylePreset: 'labelOverrides',
-            }}
-          >
-            Label
-          </Label>
-          <Select
-            id="id-logical-props"
-            aria-describedby="id-logical-props-at"
-            overrides={{
-              button: {
-                marginInline: '40px',
-                paddingBlock: '20px',
-                width: 'unset',
-              },
-              panel: {
-                paddingInline: '30px',
-                marginBlock: '30px',
-              },
-            }}
-          >
-            {items.map(item => (
-              <SelectOption key={item} value={item}>
-                {item}
-              </SelectOption>
-            ))}
-          </Select>
-          <Block spaceStack="space020" />
-          <AssistiveText id="id-logical-props-at">Assistive Text</AssistiveText>
-        </Container>
-        <Container>
-          <StorybookSubHeading>
-            Select with logical prop item overrides
-          </StorybookSubHeading>
-          <Label
-            htmlFor="id-item-logical-props"
-            overrides={{
-              stylePreset: 'labelOverrides',
-            }}
-          >
-            Label
-          </Label>
-          <Select
-            id="id-item-logical-props"
-            aria-describedby="id-item-logical-props-at"
-          >
-            {items.map(item => (
-              <SelectOption
-                key={item}
-                value={item}
-                overrides={{
-                  paddingInline: '10px',
-                  marginBlock: '10px',
-                  stylePreset: 'selectOptionCustom',
-                }}
-              >
-                {item}
-              </SelectOption>
-            ))}
-          </Select>
-          <Block spaceStack="space020" />
-          <AssistiveText id="id-item-logical-props-at">
-            Assistive Text
-          </AssistiveText>
-        </Container>
-      </ThemeProvider>
+      <Container>
+        <StorybookSubHeading>
+          Select with logical prop overrides
+        </StorybookSubHeading>
+        <Label
+          htmlFor="id-logical-props"
+          overrides={{
+            stylePreset: 'labelOverrides',
+          }}
+        >
+          Label
+        </Label>
+        <Select
+          id="id-logical-props"
+          aria-describedby="id-logical-props-at"
+          overrides={{
+            button: {
+              marginInline: '40px',
+              paddingBlock: '20px',
+              width: 'unset',
+            },
+            panel: {
+              paddingInline: '30px',
+              marginBlock: '30px',
+            },
+          }}
+        >
+          {items.map(item => (
+            <SelectOption key={item} value={item}>
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <Block spaceStack="space020" />
+        <AssistiveText id="id-logical-props-at">Assistive Text</AssistiveText>
+      </Container>
+      <Container>
+        <StorybookSubHeading>
+          Select with logical prop item overrides
+        </StorybookSubHeading>
+        <Label
+          htmlFor="id-item-logical-props"
+          overrides={{
+            stylePreset: 'labelOverrides',
+          }}
+        >
+          Label
+        </Label>
+        <Select
+          id="id-item-logical-props"
+          aria-describedby="id-item-logical-props-at"
+        >
+          {items.map(item => (
+            <SelectOption
+              key={item}
+              value={item}
+              overrides={{
+                paddingInline: '10px',
+                marginBlock: '10px',
+                stylePreset: 'selectOptionCustom',
+              }}
+            >
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <Block spaceStack="space020" />
+        <AssistiveText id="id-item-logical-props-at">
+          Assistive Text
+        </AssistiveText>
+      </Container>
     </Container>
   </>
 );
@@ -641,51 +651,49 @@ export const StorySelectOptionsDisplay = () => (
       Examples of ways to display selected options
     </StorybookHeading>
     <Container>
-      <ThemeProvider theme={myCustomTheme}>
-        <Block>
-          <StorybookSubHeading>
-            Displaying options as-is, including the padding
-          </StorybookSubHeading>
-          <Label htmlFor="id-9">Label</Label>
-          <Select id="id-9" aria-describedby="id-9-at">
-            {items.map(item => (
-              <SelectOption
-                key={item}
-                value={item}
-                overrides={{
-                  spaceInset: 'space050',
-                }}
-              >
-                {item}
-              </SelectOption>
-            ))}
-          </Select>
-          <Block spaceStack="space020" />
-          <AssistiveText id="id-9-at">Assistive Text</AssistiveText>
-        </Block>
-        <Block>
-          <StorybookSubHeading>
-            Rendering only option value, using <code>selectedDisplay</code>
-          </StorybookSubHeading>
-          <Label htmlFor="id-10">Label</Label>
-          <Select id="id-10" aria-describedby="id-10-at">
-            {items.map(item => (
-              <SelectOption
-                key={item}
-                value={item}
-                selectedDisplay={item}
-                overrides={{
-                  spaceInset: 'space050',
-                }}
-              >
-                {item}
-              </SelectOption>
-            ))}
-          </Select>
-          <Block spaceStack="space020" />
-          <AssistiveText id="id-10-at">Assistive Text</AssistiveText>
-        </Block>
-      </ThemeProvider>
+      <Block>
+        <StorybookSubHeading>
+          Displaying options as-is, including the padding
+        </StorybookSubHeading>
+        <Label htmlFor="id-9">Label</Label>
+        <Select id="id-9" aria-describedby="id-9-at">
+          {items.map(item => (
+            <SelectOption
+              key={item}
+              value={item}
+              overrides={{
+                spaceInset: 'space050',
+              }}
+            >
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <Block spaceStack="space020" />
+        <AssistiveText id="id-9-at">Assistive Text</AssistiveText>
+      </Block>
+      <Block>
+        <StorybookSubHeading>
+          Rendering only option value, using <code>selectedDisplay</code>
+        </StorybookSubHeading>
+        <Label htmlFor="id-10">Label</Label>
+        <Select id="id-10" aria-describedby="id-10-at">
+          {items.map(item => (
+            <SelectOption
+              key={item}
+              value={item}
+              selectedDisplay={item}
+              overrides={{
+                spaceInset: 'space050',
+              }}
+            >
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <Block spaceStack="space020" />
+        <AssistiveText id="id-10-at">Assistive Text</AssistiveText>
+      </Block>
     </Container>
   </>
 );
@@ -694,49 +702,47 @@ StorySelectOptionsDisplay.storyName = 'Select option display';
 export const StorySelectScreenReaderExample = () => (
   <>
     <Container>
-      <ThemeProvider theme={myCustomTheme}>
-        <Block>
-          <StorybookSubHeading>With Assistive Text</StorybookSubHeading>
-          <Label htmlFor="id-11" id="id-11-label">
-            Choose an element
-          </Label>
-          <Select
-            id="id-11"
-            aria-labelledby="id-11-label id-11"
-            aria-describedby="id-11-at"
-          >
-            {items.map(item => (
-              <SelectOption
-                key={item}
-                value={item}
-                aria-label={`Testing if aria labels work ${item}`}
-              >
-                {item}
-              </SelectOption>
-            ))}
-          </Select>
-          <Block spaceStack="space020" />
-          <AssistiveText id="id-11-at">Assistive Text</AssistiveText>
-        </Block>
-        <Block>
-          <StorybookSubHeading>Without Assistive Text</StorybookSubHeading>
-          <Label htmlFor="id-12" id="id-12-label">
-            Choose an element
-          </Label>
-          <Select id="id-12" aria-labelledby="id-12-label id-12">
-            {items.map(item => (
-              <SelectOption
-                key={item}
-                value={item}
-                aria-label={`Testing if aria labels work ${item}`}
-              >
-                {item}
-              </SelectOption>
-            ))}
-          </Select>
-          <Block spaceStack="space020" />
-        </Block>
-      </ThemeProvider>
+      <Block>
+        <StorybookSubHeading>With Assistive Text</StorybookSubHeading>
+        <Label htmlFor="id-11" id="id-11-label">
+          Choose an element
+        </Label>
+        <Select
+          id="id-11"
+          aria-labelledby="id-11-label id-11"
+          aria-describedby="id-11-at"
+        >
+          {items.map(item => (
+            <SelectOption
+              key={item}
+              value={item}
+              aria-label={`Testing if aria labels work ${item}`}
+            >
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <Block spaceStack="space020" />
+        <AssistiveText id="id-11-at">Assistive Text</AssistiveText>
+      </Block>
+      <Block>
+        <StorybookSubHeading>Without Assistive Text</StorybookSubHeading>
+        <Label htmlFor="id-12" id="id-12-label">
+          Choose an element
+        </Label>
+        <Select id="id-12" aria-labelledby="id-12-label id-12">
+          {items.map(item => (
+            <SelectOption
+              key={item}
+              value={item}
+              aria-label={`Testing if aria labels work ${item}`}
+            >
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <Block spaceStack="space020" />
+      </Block>
     </Container>
   </>
 );
@@ -853,10 +859,10 @@ export const SelectVirtualization = () => {
   const selectOptions = countries.map(({value, name}) => (
     <SelectOption value={value} key={value} aria-label={name}>
       <GridLayout columns="auto 1fr" columnGap="space020" alignItems="center">
-        <img
+        <Image
           src={`https://flagcdn.com/16x12/${value.toLowerCase()}.png`}
-          width="16"
-          height="12"
+          // width="16"
+          // height="12"
           alt={name}
         />
         <span>{name}</span>

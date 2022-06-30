@@ -68,6 +68,7 @@ export const StorybookParah: React.FC<Props> = ({children, stylePreset}) => (
   <TextBlock
     stylePreset={stylePreset || 'inkContrast'}
     paddingBlockEnd="space020"
+    typographyPreset="editorialParagraph010"
   >
     {children}
   </TextBlock>

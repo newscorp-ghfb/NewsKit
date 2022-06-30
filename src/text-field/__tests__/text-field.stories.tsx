@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {TextField, TextFieldSize} from '..';
 import {Block} from '../../block';
 import {Button} from '../../button';
@@ -14,11 +15,17 @@ import {Stack} from '../../stack';
 import {
   StorybookHeading,
   StorybookSubHeading,
+  StorybookParah,
 } from '../../test/storybook-comps';
-import {createTheme, ThemeProvider} from '../../theme';
-import {styled, getSizingCssFromTheme} from '../../utils/style';
+import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {
+  styled,
+  getSizingCssFromTheme,
+  getColorCssFromTheme,
+} from '../../utils/style';
 import {Label} from '../../label';
 import {AssistiveText} from '../../assistive-text';
+import {themeObject} from '../../test/theme-select-object';
 
 const CustomBlock = styled.div`
   margin-right: 12px;
@@ -27,35 +34,48 @@ const Container = styled.div`
   ${getSizingCssFromTheme('margin', 'sizing080')};
 `;
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-text-input-theme',
-  overrides: {
-    stylePresets: {
-      inputContainerCustom: {
-        base: {
-          borderStyle: 'solid',
-          borderColor: '#D20600',
-          placeholderColor: 'blue',
+const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
+  createTheme({
+    name: 'my-custom-text-input-theme',
+    baseTheme: theme,
+    overrides: {
+      stylePresets: {
+        inputContainerCustom: {
+          base: {
+            borderStyle: 'solid',
+            borderColor: '#D20600',
+            placeholderColor: 'blue',
+          },
         },
-      },
-      labelOverrides: {
-        base: {
-          color: '#0ed200',
+        labelOverrides: {
+          base: {
+            color: '#0ed200',
+          },
         },
-      },
-      assistiveTextOverrides: {
-        base: {
-          color: '#0ed200',
+        assistiveTextOverrides: {
+          base: {
+            color: '#0ed200',
+          },
         },
       },
     },
-  },
-});
+  });
 
 export default {
   title: 'NewsKit Light/text-field',
   component: () => 'None',
   disabledRules: ['color-contrast'],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 export const TextFieldSizeExamples = () => (
   <>
@@ -170,37 +190,35 @@ export const TextFieldWithOverrides = () => (
   <>
     <StorybookHeading>Text With Overrides</StorybookHeading>
     <Container>
-      <ThemeProvider theme={myCustomTheme}>
-        <Label
-          htmlFor="id-7"
-          overrides={{
-            stylePreset: 'labelOverrides',
-          }}
-        >
-          Label
-        </Label>
-        <TextField
-          aria-describedby="id-7-at"
-          id="id-7"
-          placeholder="Placeholder"
-          overrides={{
-            stylePreset: 'inputContainerCustom',
-            typographyPreset: 'utilityBody030',
-            spaceInset: 'spaceInset040',
-            minHeight: 'sizing090',
-            spaceStack: 'space000',
-          }}
-        />
-        <Block spaceStack="space020" />
-        <AssistiveText
-          id="id-7-at"
-          overrides={{
-            stylePreset: 'assistiveTextOverrides',
-          }}
-        >
-          Assistive Text
-        </AssistiveText>
-      </ThemeProvider>
+      <Label
+        htmlFor="id-7"
+        overrides={{
+          stylePreset: 'labelOverrides',
+        }}
+      >
+        Label
+      </Label>
+      <TextField
+        aria-describedby="id-7-at"
+        id="id-7"
+        placeholder="Placeholder"
+        overrides={{
+          stylePreset: 'inputContainerCustom',
+          typographyPreset: 'utilityBody030',
+          spaceInset: 'spaceInset040',
+          minHeight: 'sizing090',
+          spaceStack: 'space000',
+        }}
+      />
+      <Block spaceStack="space020" />
+      <AssistiveText
+        id="id-7-at"
+        overrides={{
+          stylePreset: 'assistiveTextOverrides',
+        }}
+      >
+        Assistive Text
+      </AssistiveText>
     </Container>
   </>
 );
@@ -212,48 +230,46 @@ export const TextFieldLogicalProps = () => (
       Inspect the box for better understanding
     </StorybookSubHeading>
     <Container>
-      <ThemeProvider theme={myCustomTheme}>
-        <Label htmlFor="id-14" overrides={{stylePreset: 'labelOverrides'}}>
-          Label
-        </Label>
-        <TextField
-          aria-describedby="id-14-at"
-          id="id-14"
-          placeholder="marginInline & marginBlock"
-          overrides={{
-            marginBlock: 'space060',
-            marginInline: 'space080',
-          }}
-        />
-        <Block spaceStack="space080" />
-        <Label htmlFor="id-15" overrides={{stylePreset: 'labelOverrides'}}>
-          Label
-        </Label>
-        <TextField
-          aria-describedby="id-15-at"
-          id="id-15"
-          placeholder="paddingInline & paddingBlock"
-          overrides={{
-            paddingBlock: 'space060',
-            paddingInline: 'space080',
-          }}
-        />
-        <Block spaceStack="space080" />
-        <Label htmlFor="id-16" overrides={{stylePreset: 'labelOverrides'}}>
-          Label
-        </Label>
-        <TextField
-          aria-describedby="id-16-at"
-          id="id-16"
-          placeholder="marginInline & marginBlock & paddingInline & paddingBlock"
-          overrides={{
-            marginBlock: 'space060',
-            marginInline: 'space080',
-            paddingBlock: 'space060',
-            paddingInline: 'space080',
-          }}
-        />
-      </ThemeProvider>
+      <Label htmlFor="id-14" overrides={{stylePreset: 'labelOverrides'}}>
+        Label
+      </Label>
+      <TextField
+        aria-describedby="id-14-at"
+        id="id-14"
+        placeholder="marginInline & marginBlock"
+        overrides={{
+          marginBlock: 'space060',
+          marginInline: 'space080',
+        }}
+      />
+      <Block spaceStack="space080" />
+      <Label htmlFor="id-15" overrides={{stylePreset: 'labelOverrides'}}>
+        Label
+      </Label>
+      <TextField
+        aria-describedby="id-15-at"
+        id="id-15"
+        placeholder="paddingInline & paddingBlock"
+        overrides={{
+          paddingBlock: 'space060',
+          paddingInline: 'space080',
+        }}
+      />
+      <Block spaceStack="space080" />
+      <Label htmlFor="id-16" overrides={{stylePreset: 'labelOverrides'}}>
+        Label
+      </Label>
+      <TextField
+        aria-describedby="id-16-at"
+        id="id-16"
+        placeholder="marginInline & marginBlock & paddingInline & paddingBlock"
+        overrides={{
+          marginBlock: 'space060',
+          marginInline: 'space080',
+          paddingBlock: 'space060',
+          paddingInline: 'space080',
+        }}
+      />
     </Container>
   </>
 );
@@ -319,6 +335,7 @@ export const TextFieldAddOn = () => {
     background: none;
     appearance: none;
     width: 40px;
+    ${getColorCssFromTheme('color', 'inkBase')};
   `;
 
   const DropDown = () => (
@@ -399,7 +416,9 @@ export const TextFieldAddOn = () => {
         </Block>
         <Block spaceStack={blockSpaceStack}>
           <StorybookSubHeading>Text Field with two icons</StorybookSubHeading>
-          <p>Please type inside the text field to see second icons</p>
+          <StorybookParah>
+            Please type inside the text field to see second icons
+          </StorybookParah>
           <Label htmlFor="id-12">Label</Label>
           <TextField
             aria-describedby="id-12-at"
@@ -422,7 +441,7 @@ export const TextFieldAddOn = () => {
         </Block>
         <Block spaceStack={blockSpaceStack}>
           <Label htmlFor="id-13">Label</Label>
-          Label
+
           <TextField
             aria-describedby="id-13-at"
             id="id-13"

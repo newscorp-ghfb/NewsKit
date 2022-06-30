@@ -64,6 +64,7 @@ export const newskitDarkThemeOverrides = {
     interfaceNegative010: '{{colors.red040}}',
     interfaceNegative020: '{{colors.red070}}',
     interactiveFocus010: '{{colors.white}}',
+    interfaceNeutral010: '{{colors.neutral030}}',
   },
   overlays: {
     overlayLightGradient010:

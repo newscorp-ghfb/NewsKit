@@ -1,4 +1,5 @@
 import React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -7,7 +8,6 @@ import {Switch} from '..';
 import {styled} from '../../utils';
 import {
   Cell,
-  compileTheme,
   createTheme,
   Fieldset,
   Grid,
@@ -15,23 +15,15 @@ import {
   IconFilledClose,
   IconFilledDragHandle,
   ThemeProvider,
+  UncompiledTheme,
 } from '../..';
 import {icons, labels, sizeOverrides, sizes, states} from './helpers';
+import {themeObject} from '../../test/theme-select-object';
 
-export default {
-  title: 'NewsKit Light/switch',
-  component: () => 'None',
-  disabledRules: [],
-};
-
-const Container = styled.div`
-  margin: 20px;
-  display: flex;
-`;
-
-const borderedThumbTheme = compileTheme(
+const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
   createTheme({
     name: 'bordered-thumb-theme',
+    baseTheme: theme,
     overrides: {
       stylePresets: {
         borderedThumb: {
@@ -54,8 +46,29 @@ const borderedThumbTheme = compileTheme(
         },
       },
     },
-  }),
-);
+  });
+
+export default {
+  title: 'NewsKit Light/switch',
+  component: () => 'None',
+  disabledRules: [],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};
+
+const Container = styled.div`
+  margin: 20px;
+  display: flex;
+`;
 
 export const StorySwitchDefault = () => (
   <>
@@ -124,18 +137,16 @@ export const StorySwitchOverrides = () => (
     <Grid>
       <Cell xs={8} md={4}>
         <StorybookSubHeading>Size / spacing overrides</StorybookSubHeading>
-        <ThemeProvider theme={borderedThumbTheme}>
-          {sizeOverrides.map(([id, overrides, ...props]) => (
-            <Container key={id}>
-              <Switch
-                defaultChecked
-                label={id}
-                overrides={overrides}
-                {...props}
-              />
-            </Container>
-          ))}
-        </ThemeProvider>
+        {sizeOverrides.map(([id, overrides, ...props]) => (
+          <Container key={id}>
+            <Switch
+              defaultChecked
+              label={id}
+              overrides={overrides}
+              {...props}
+            />
+          </Container>
+        ))}
       </Cell>
     </Grid>
   </>
@@ -149,18 +160,16 @@ export const StorySwitchLabels = () => (
     <Grid>
       <Cell xs={8} md={4}>
         <StorybookSubHeading>Labels</StorybookSubHeading>
-        <ThemeProvider theme={borderedThumbTheme}>
-          {labels.map(([id, {label, labelPosition, ...props}]) => (
-            <Container key={id}>
-              <Switch
-                defaultChecked
-                label={label}
-                labelPosition={labelPosition}
-                {...props}
-              />
-            </Container>
-          ))}
-        </ThemeProvider>
+        {labels.map(([id, {label, labelPosition, ...props}]) => (
+          <Container key={id}>
+            <Switch
+              defaultChecked
+              label={label}
+              labelPosition={labelPosition}
+              {...props}
+            />
+          </Container>
+        ))}
       </Cell>
     </Grid>
   </>

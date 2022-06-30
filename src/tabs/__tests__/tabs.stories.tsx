@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 
 import {TabSize, styled, Scroll, TextBlock, getColorCssFromTheme} from '../..';
 import {
@@ -9,7 +10,8 @@ import {Tab, TabAlign, Tabs, TabsDistribution, TabsIndicatorPosition} from '..';
 import {IconFilledEmail} from '../../icons';
 import {Block} from '../../block';
 import {Button} from '../../button';
-import {createTheme, ThemeProvider} from '../../theme';
+import {createTheme, ThemeProvider, UncompiledTheme} from '../../theme';
+import {themeObject} from '../../test/theme-select-object';
 
 const LoremIpsumText = [
   `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -40,87 +42,157 @@ const LoremIpsumText2 = [
   `Again different Content`,
 ];
 
-const myCustomTabTheme = createTheme({
-  name: 'my-custom-tab-theme',
-  overrides: {
-    stylePresets: {
-      tabCustomPreset: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
+const getCustomTheme = (theme: UncompiledTheme): UncompiledTheme =>
+  createTheme({
+    name: 'my-custom-tab-theme',
+    baseTheme: theme,
+    overrides: {
+      stylePresets: {
+        tabCustomPreset: {
+          base: {
+            backgroundColor: '{{colors.transparent}}',
+            color: '{{colors.inkContrast}}',
+          },
+          selected: {color: '{{colors.inkBase}}'},
+          'selected:hover': {
+            color: '{{colors.green060}}',
+          },
         },
-        selected: {color: '{{colors.inkBase}}'},
-        'selected:hover': {
-          color: '{{colors.green060}}',
+        tabsBarTrackCustomPreset: {
+          base: {
+            backgroundColor: '{{colors.amber020}}',
+          },
+        },
+        tabsBarIndicatorCustomPreset: {
+          base: {
+            backgroundColor: '{{colors.green060}}',
+          },
+        },
+        dividerCustomPreset: {
+          base: {
+            borderStyle: 'solid',
+            borderColor: '{{colors.red060}}',
+            borderWidth: '{{borders.borderWidth030}}',
+          },
+        },
+        scrollArrowsCustom: {
+          base: {
+            backgroundColor: '{{colors.amber010}}',
+            color: '{{colors.purple050}}',
+            iconColor: '{{colors.purple050}}',
+          },
+          hover: {
+            backgroundColor: '{{colors.amber020}}',
+          },
+          active: {
+            backgroundColor: '{{colors.amber060}}',
+          },
+          disabled: {
+            color: '{{colors.inkNonEssential}}',
+            iconColor: '{{colors.inkNonEssential}}',
+          },
+        },
+        shadowTab: {
+          base: {
+            backgroundColor: 'transparent',
+            color: '#111',
+          },
+          selected: {
+            backgroundColor: '#fff',
+            color: 'black',
+            boxShadow: '0px -1px 3px 1px #999999',
+            borderRadius: '4px 4px 0 0',
+            borderWidth: '0 0 1px 0',
+            borderColor: '#fff',
+            borderStyle: 'solid',
+          },
+        },
+      },
+      transitionPresets: {
+        customBackgroundColorChange: {
+          base: {
+            transitionProperty: 'background-color',
+            transitionDuration: '100ms',
+            transitionDelay: '500ms',
+            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+          },
+        },
+        customFontColorChange: {
+          base: {
+            transitionProperty: 'color',
+            transitionDuration: '100ms',
+            transitionDelay: '500ms',
+            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+          },
         },
       },
     },
-  },
-});
+  });
 
-const myCustomTabsTheme = createTheme({
-  name: 'my-custom-tabs-theme',
-  overrides: {
-    stylePresets: {
-      tabsBarTrackCustomPreset: {
-        base: {
-          backgroundColor: '{{colors.amber020}}',
-        },
-      },
-      tabsBarIndicatorCustomPreset: {
-        base: {
-          backgroundColor: '{{colors.green060}}',
-        },
-      },
-      dividerCustomPreset: {
-        base: {
-          borderStyle: 'solid',
-          borderColor: '{{colors.red060}}',
-          borderWidth: '{{borders.borderWidth030}}',
-        },
-      },
-      scrollArrowsCustom: {
-        base: {
-          backgroundColor: '{{colors.amber010}}',
-          color: '{{colors.purple050}}',
-          iconColor: '{{colors.purple050}}',
-        },
-        hover: {
-          backgroundColor: '{{colors.amber020}}',
-        },
-        active: {
-          backgroundColor: '{{colors.amber060}}',
-        },
-        disabled: {
-          color: '{{colors.inkNonEssential}}',
-          iconColor: '{{colors.inkNonEssential}}',
-        },
-      },
-    },
-  },
-});
+// const myCustomTabsTheme = createTheme({
+//   name: 'my-custom-tabs-theme',
+//   overrides: {
+//     stylePresets: {
+//       tabsBarTrackCustomPreset: {
+//         base: {
+//           backgroundColor: '{{colors.amber020}}',
+//         },
+//       },
+//       tabsBarIndicatorCustomPreset: {
+//         base: {
+//           backgroundColor: '{{colors.green060}}',
+//         },
+//       },
+//       dividerCustomPreset: {
+//         base: {
+//           borderStyle: 'solid',
+//           borderColor: '{{colors.red060}}',
+//           borderWidth: '{{borders.borderWidth030}}',
+//         },
+//       },
+//       scrollArrowsCustom: {
+//         base: {
+//           backgroundColor: '{{colors.amber010}}',
+//           color: '{{colors.purple050}}',
+//           iconColor: '{{colors.purple050}}',
+//         },
+//         hover: {
+//           backgroundColor: '{{colors.amber020}}',
+//         },
+//         active: {
+//           backgroundColor: '{{colors.amber060}}',
+//         },
+//         disabled: {
+//           color: '{{colors.inkNonEssential}}',
+//           iconColor: '{{colors.inkNonEssential}}',
+//         },
+//       },
+//     },
+//   },
+// });
 
-const myCustomThemeShadows = createTheme({
-  name: 'my-custom-tabs-theme2',
-  overrides: {
-    stylePresets: {
-      shadowTab: {
-        base: {
-          backgroundColor: 'transparent',
-          color: '#111',
-        },
-        selected: {
-          backgroundColor: '#fff',
-          color: 'black',
-          boxShadow: '0px -1px 3px 1px #999999',
-          borderRadius: '4px 4px 0 0',
-          borderWidth: '0 0 1px 0',
-          borderColor: '#fff',
-          borderStyle: 'solid',
-        },
-      },
-    },
-  },
-});
+// const myCustomThemeShadows = createTheme({
+//   name: 'my-custom-tabs-theme2',
+//   overrides: {
+//     stylePresets: {
+//       shadowTab: {
+//         base: {
+//           backgroundColor: 'transparent',
+//           color: '#111',
+//         },
+//         selected: {
+//           backgroundColor: '#fff',
+//           color: 'black',
+//           boxShadow: '0px -1px 3px 1px #999999',
+//           borderRadius: '4px 4px 0 0',
+//           borderWidth: '0 0 1px 0',
+//           borderColor: '#fff',
+//           borderStyle: 'solid',
+//         },
+//       },
+//     },
+//   },
+// });
 
 const Spacer = styled.div`
   margin-bottom: 2em;
@@ -189,6 +261,17 @@ const titleBetweenIcons = (
 export default {
   title: 'NewsKit Light/tabs',
   component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={getCustomTheme(
+          themeObject[context?.globals?.backgrounds?.value || '#ffffff'],
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 export const StoryTabsDistributionStart = () => (
@@ -423,25 +506,43 @@ export const StoryTabsHorizontal = () => (
     <StorybookSubHeading>Small</StorybookSubHeading>
 
     <Tabs size={TabSize.Small}>
-      <Tab label="Small tab">Content 1</Tab>
-      <Tab label="Small tab">Content 2</Tab>
-      <Tab label="Small tab">Content 3</Tab>
+      <Tab label="Small tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Small tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Small tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
 
     <StorybookSubHeading>Medium</StorybookSubHeading>
 
     <Tabs size={TabSize.Medium}>
-      <Tab label="Medium tab">Content 1</Tab>
-      <Tab label="Medium tab">Content 2</Tab>
-      <Tab label="Medium tab">Content 3</Tab>
+      <Tab label="Medium tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Medium tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Medium tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
 
     <StorybookSubHeading>Large</StorybookSubHeading>
 
     <Tabs size={TabSize.Large}>
-      <Tab label="Large tab">Content 1</Tab>
-      <Tab label="Large tab">Content 2</Tab>
-      <Tab label="Large tab">Content 3</Tab>
+      <Tab label="Large tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Large tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Large tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
   </>
 );
@@ -586,21 +687,39 @@ export const StoryTabsVertical = () => (
     <StorybookHeading>Tabs Vertical</StorybookHeading>
     <StorybookSubHeading>Small</StorybookSubHeading>
     <Tabs size={TabSize.Small} vertical>
-      <Tab label="Small tab">Content 1</Tab>
-      <Tab label="Small tab">Content 2</Tab>
-      <Tab label="Small tab">Content 3</Tab>
+      <Tab label="Small tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Small tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Small tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <StorybookSubHeading>Medium</StorybookSubHeading>
     <Tabs size={TabSize.Medium} vertical>
-      <Tab label="Medium tab">Content 1</Tab>
-      <Tab label="Medium tab">Content 2</Tab>
-      <Tab label="Medium tab">Content 3</Tab>
+      <Tab label="Medium tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Medium tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Medium tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <StorybookSubHeading>Large</StorybookSubHeading>
     <Tabs size={TabSize.Large} vertical>
-      <Tab label="Large tab">Content 1</Tab>
-      <Tab label="Large tab">Content 2</Tab>
-      <Tab label="Large tab">Content 3</Tab>
+      <Tab label="Large tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Large tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Large tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
   </>
 );
@@ -611,20 +730,26 @@ export const StoryTabsVerticalVariantsLabelOrIcon = () => (
     <StorybookHeading>Tabs Vertical Variants (Label or Icon)</StorybookHeading>
     <StorybookSubHeading>Label Only</StorybookSubHeading>
     <Tabs size={TabSize.Medium} vertical divider>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <StorybookSubHeading>Icon Only</StorybookSubHeading>
     <Tabs size={TabSize.Medium} vertical divider>
       <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
-        Content 1
+        <LoremIpsum textNumber={1} />
       </Tab>
       <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
-        Content 2
+        <LoremIpsum textNumber={1} />
       </Tab>
       <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
-        Content 3
+        <LoremIpsum textNumber={1} />
       </Tab>
     </Tabs>
   </>
@@ -637,20 +762,26 @@ export const StoryTabsVerticalVariantsIconPlacement = () => (
     <StorybookHeading>Tabs Vertical Variants (Icon Placement)</StorybookHeading>
     <StorybookSubHeading>Leading Icon and Label</StorybookSubHeading>
     <Tabs size={TabSize.Medium} vertical divider>
-      <Tab label={titleAndRightIcon}>Content 1</Tab>
-      <Tab label={titleAndRightIcon}>Content 2</Tab>
-      <Tab label={titleAndRightIcon}>Content 3</Tab>
+      <Tab label={titleAndRightIcon}>
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label={titleAndRightIcon}>
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label={titleAndRightIcon}>
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
     <Tabs size={TabSize.Medium} vertical divider>
       <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
-        Content 1
+        <LoremIpsum textNumber={1} />
       </Tab>
       <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
-        Content 2
+        <LoremIpsum textNumber={1} />
       </Tab>
       <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
-        Content 3
+        <LoremIpsum textNumber={1} />
       </Tab>
     </Tabs>
     <StorybookSubHeading>
@@ -658,13 +789,13 @@ export const StoryTabsVerticalVariantsIconPlacement = () => (
     </StorybookSubHeading>
     <Tabs size={TabSize.Medium} vertical divider>
       <Tab ariaLabel="tab label" label={titleBetweenIcons}>
-        Content 1
+        <LoremIpsum textNumber={1} />
       </Tab>
       <Tab ariaLabel="tab label" label={titleBetweenIcons}>
-        Content 2
+        <LoremIpsum textNumber={1} />
       </Tab>
       <Tab ariaLabel="tab label" label={titleBetweenIcons}>
-        Content 3
+        <LoremIpsum textNumber={1} />
       </Tab>
     </Tabs>
   </>
@@ -679,21 +810,39 @@ export const StoryTabsHorizontalIndicatorPositionVariants = () => (
     </StorybookHeading>
     <StorybookSubHeading>Indicator position Start</StorybookSubHeading>
     <Tabs size={TabSize.Medium} indicatorPosition={TabsIndicatorPosition.Start}>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <StorybookSubHeading>Indicator position End (default)</StorybookSubHeading>
     <Tabs size={TabSize.Medium}>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <StorybookSubHeading>Indicator position None</StorybookSubHeading>
     <Tabs size={TabSize.Medium} indicatorPosition={TabsIndicatorPosition.None}>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
   </>
 );
@@ -711,15 +860,27 @@ export const StoryTabsVerticalIndicatorPositionVariants = () => (
       vertical
       indicatorPosition={TabsIndicatorPosition.Start}
     >
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <StorybookSubHeading>Indicator position End (default)</StorybookSubHeading>
     <Tabs size={TabSize.Medium} vertical>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <StorybookSubHeading>Indicator position None</StorybookSubHeading>
     <Tabs
@@ -727,9 +888,15 @@ export const StoryTabsVerticalIndicatorPositionVariants = () => (
       vertical
       indicatorPosition={TabsIndicatorPosition.None}
     >
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
   </>
 );
@@ -772,19 +939,27 @@ export const StoryTabsWithDisabledTab = () => (
     <StorybookHeading>Tabs With Disabled Tab</StorybookHeading>
     <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
     <Tabs>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two" disabled>
-        Content 3
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
       </Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab Two" disabled>
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
     <Tabs vertical>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two" disabled>
-        Content 3
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
       </Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab Two" disabled>
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
   </>
 );
@@ -795,18 +970,30 @@ export const StoryTabsWithFixedTabIndicatorSize = () => (
     <StorybookHeading>Tabs With Fixed Tab Indicator Size</StorybookHeading>
     <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
     <Tabs overrides={{selectionIndicator: {indicator: {size: 'sizing050'}}}}>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
     <Tabs
       vertical
       overrides={{selectionIndicator: {indicator: {size: 'sizing030'}}}}
     >
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
   </>
 );
@@ -820,15 +1007,27 @@ export const StoryTabsWithFixedTabIndicatorPercentageSize = () => (
     </StorybookHeading>
     <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
     <Tabs overrides={{selectionIndicator: {indicator: {size: '75%'}}}}>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
     <Tabs vertical overrides={{selectionIndicator: {indicator: {size: '75%'}}}}>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 1</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
   </>
 );
@@ -842,18 +1041,30 @@ export const StoryTabsWithFixedTabIndicatorPixelSize = () => (
     </StorybookHeading>
     <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
     <Tabs overrides={{selectionIndicator: {indicator: {size: '30px'}}}}>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
     <Tabs
       vertical
       overrides={{selectionIndicator: {indicator: {size: '30px'}}}}
     >
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 1</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
   </>
 );
@@ -878,10 +1089,18 @@ export const StoryTabsWithCustomTabBarTrackAndIndicatorWeight = () => (
         },
       }}
     >
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
-      <Tab label="Tab Four">Content 4</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Four">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <div style={{height: '100px'}} />
     <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
@@ -898,10 +1117,18 @@ export const StoryTabsWithCustomTabBarTrackAndIndicatorWeight = () => (
         },
       }}
     >
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
-      <Tab label="Tab Four">Content 4</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Four">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
   </>
 );
@@ -924,10 +1151,18 @@ export const StoryTabsWithCustomTabBarIndicatorAnimation = () => (
         },
       }}
     >
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
-      <Tab label="Tab Four">Content 4</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Four">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <br />
     <br />
@@ -944,10 +1179,18 @@ export const StoryTabsWithCustomTabBarIndicatorAnimation = () => (
         },
       }}
     >
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
-      <Tab label="Tab Four">Content 4</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Four">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
   </>
 );
@@ -961,46 +1204,44 @@ export const StoryTabsWithPresetsOverrides = () => (
   <>
     <StorybookHeading>Tabs with presets overides</StorybookHeading>
     <StorybookSubHeading>Vertical</StorybookSubHeading>
-    <ThemeProvider theme={myCustomTabsTheme}>
-      <Tabs
-        size={TabSize.Small}
-        overrides={{
-          spaceInline: {
-            xs: 'space010',
-            lg: 'space080',
+    <Tabs
+      size={TabSize.Small}
+      overrides={{
+        spaceInline: {
+          xs: 'space010',
+          lg: 'space080',
+        },
+        tab: {
+          spaceInline: 'space020',
+        },
+        selectionIndicator: {
+          track: {
+            stylePreset: 'tabsBarTrackCustomPreset',
+            weight: 'borderWidth030',
           },
-          tab: {
-            spaceInline: 'space020',
+          indicator: {
+            stylePreset: 'tabsBarIndicatorCustomPreset',
+            weight: 'borderWidth030',
           },
-          selectionIndicator: {
-            track: {
-              stylePreset: 'tabsBarTrackCustomPreset',
-              weight: 'borderWidth030',
-            },
-            indicator: {
-              stylePreset: 'tabsBarIndicatorCustomPreset',
-              weight: 'borderWidth030',
-            },
-          },
-          divider: {
-            stylePreset: 'dividerCustomPreset',
-          },
-        }}
-        vertical
-        divider
-        distribution={TabsDistribution.Grow}
-      >
-        <Tab label="V tab 1">
-          <LoremIpsum textNumber={1} />
-        </Tab>
-        <Tab label="V tab 2">
-          <LoremIpsum textNumber={2} />
-        </Tab>
-        <Tab label="V tab 3, three">
-          <LoremIpsum textNumber={3} />
-        </Tab>
-      </Tabs>
-    </ThemeProvider>
+        },
+        divider: {
+          stylePreset: 'dividerCustomPreset',
+        },
+      }}
+      vertical
+      divider
+      distribution={TabsDistribution.Grow}
+    >
+      <Tab label="V tab 1">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="V tab 2">
+        <LoremIpsum textNumber={2} />
+      </Tab>
+      <Tab label="V tab 3, three">
+        <LoremIpsum textNumber={3} />
+      </Tab>
+    </Tabs>
   </>
 );
 StoryTabsWithPresetsOverrides.storyName = 'tabs-with-presets-overrides';
@@ -1031,40 +1272,38 @@ export const StoryTabsWithPresetsOverridesShadows = () => {
   return (
     <>
       <StorybookHeading>Tabs with Box Shadow</StorybookHeading>
-      <ThemeProvider theme={myCustomThemeShadows}>
-        <TabsContainer>
-          <Tabs
-            size={TabSize.Medium}
-            overrides={{
-              scroll: props => <CustomScroll {...props} />,
-              spaceInline: 'space000',
-              tab: {
-                spaceInline: '30px',
-              },
-            }}
-            indicatorPosition={TabsIndicatorPosition.None}
-          >
-            <Tab label="V tab 1" overrides={{stylePreset: 'shadowTab'}}>
-              <TabPanel>
-                <TabPaneCutter />
-                <LoremIpsum textNumber={1} />
-              </TabPanel>
-            </Tab>
-            <Tab label="V tab 2" overrides={{stylePreset: 'shadowTab'}}>
-              <TabPanel>
-                <TabPaneCutter />
-                <LoremIpsum textNumber={2} />
-              </TabPanel>
-            </Tab>
-            <Tab label="V tab 3, three" overrides={{stylePreset: 'shadowTab'}}>
-              <TabPanel>
-                <TabPaneCutter />
-                <LoremIpsum textNumber={3} />
-              </TabPanel>
-            </Tab>
-          </Tabs>
-        </TabsContainer>
-      </ThemeProvider>
+      <TabsContainer>
+        <Tabs
+          size={TabSize.Medium}
+          overrides={{
+            scroll: props => <CustomScroll {...props} />,
+            spaceInline: 'space000',
+            tab: {
+              spaceInline: '30px',
+            },
+          }}
+          indicatorPosition={TabsIndicatorPosition.None}
+        >
+          <Tab label="V tab 1" overrides={{stylePreset: 'shadowTab'}}>
+            <TabPanel>
+              <TabPaneCutter />
+              <LoremIpsum textNumber={1} />
+            </TabPanel>
+          </Tab>
+          <Tab label="V tab 2" overrides={{stylePreset: 'shadowTab'}}>
+            <TabPanel>
+              <TabPaneCutter />
+              <LoremIpsum textNumber={2} />
+            </TabPanel>
+          </Tab>
+          <Tab label="V tab 3, three" overrides={{stylePreset: 'shadowTab'}}>
+            <TabPanel>
+              <TabPaneCutter />
+              <LoremIpsum textNumber={3} />
+            </TabPanel>
+          </Tab>
+        </Tabs>
+      </TabsContainer>
     </>
   );
 };
@@ -1076,27 +1315,22 @@ export const StoryTabsWithPresetsOverridesOnIndividualTab = () => (
       Tabs with presets overides on individual tab
     </StorybookHeading>
     <StorybookSubHeading>Vertical</StorybookSubHeading>
-    <ThemeProvider theme={myCustomTabTheme}>
-      <Tabs
-        size={TabSize.Small}
-        vertical
-        divider
-        distribution={TabsDistribution.Grow}
-      >
-        <Tab label="V tab 1" overrides={{stylePreset: 'tabCustomPreset'}}>
-          <LoremIpsum textNumber={1} />
-        </Tab>
-        <Tab label="V tab 2" overrides={{stylePreset: 'tabCustomPreset'}}>
-          <LoremIpsum textNumber={2} />
-        </Tab>
-        <Tab
-          label="V tab 3, three"
-          overrides={{stylePreset: 'tabCustomPreset'}}
-        >
-          <LoremIpsum textNumber={3} />
-        </Tab>
-      </Tabs>
-    </ThemeProvider>
+    <Tabs
+      size={TabSize.Small}
+      vertical
+      divider
+      distribution={TabsDistribution.Grow}
+    >
+      <Tab label="V tab 1" overrides={{stylePreset: 'tabCustomPreset'}}>
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="V tab 2" overrides={{stylePreset: 'tabCustomPreset'}}>
+        <LoremIpsum textNumber={2} />
+      </Tab>
+      <Tab label="V tab 3, three" overrides={{stylePreset: 'tabCustomPreset'}}>
+        <LoremIpsum textNumber={3} />
+      </Tab>
+    </Tabs>
   </>
 );
 StoryTabsWithPresetsOverridesOnIndividualTab.storyName =
@@ -1107,29 +1341,53 @@ export const StoryTabsWithAlign = () => (
     <StorybookHeading>Tabs With Align</StorybookHeading>
     <StorybookSubHeading>Tabs Horizontal Align Left</StorybookSubHeading>
     <Tabs align={TabAlign.Start} distribution={TabsDistribution.Grow}>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
 
     <StorybookSubHeading>Tabs Horizontal Align Right</StorybookSubHeading>
     <Tabs align={TabAlign.End} distribution={TabsDistribution.Grow}>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
 
     <StorybookSubHeading>Tabs Vertical Align Left</StorybookSubHeading>
     <Tabs align={TabAlign.Start} distribution={TabsDistribution.Grow} vertical>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
     <StorybookSubHeading>Tabs Vertical Align Right</StorybookSubHeading>
     <Tabs align={TabAlign.End} distribution={TabsDistribution.Grow} vertical>
-      <Tab label="Tab">Content 1</Tab>
-      <Tab label="Tab Two">Content 2</Tab>
-      <Tab label="Tab Three is Long">Content 3</Tab>
+      <Tab label="Tab">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Two">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab Three is Long">
+        <LoremIpsum textNumber={1} />
+      </Tab>
     </Tabs>
   </>
 );
@@ -1178,220 +1436,226 @@ export const StoryTabsWithScrollOverrides = () => {
   `;
 
   return (
-    <ThemeProvider theme={myCustomTabsTheme}>
-      <MainContainer>
-        <StorybookHeading>Tabs With Scroll Overrides</StorybookHeading>
-        <StorybookSubHeading>
-          Tabs Horizontal With Scroll Overridies via Component
-        </StorybookSubHeading>
-        <Tabs
-          overrides={{
-            scroll: ({children, vertical}) => (
-              <Scroll controls="hover" snapAlign="center" vertical={vertical}>
-                {children}
-              </Scroll>
-            ),
-          }}
-        >
-          {Array.from(Array(15)).map((_, i) => (
-            <Tab label={`Tab text here ${i}`}>Content {i}</Tab>
-          ))}
-        </Tabs>
-        <hr />
-        <Tabs
-          overrides={{
-            scroll: ({children}) => <CustomScroll>{children}</CustomScroll>,
-          }}
-        >
-          {Array.from(Array(15)).map((_, i) => (
-            <Tab label={`Tab text here  ${i}`}>Content {i}</Tab>
-          ))}
-        </Tabs>
+    <MainContainer>
+      <StorybookHeading>Tabs With Scroll Overrides</StorybookHeading>
+      <StorybookSubHeading>
+        Tabs Horizontal With Scroll Overridies via Component
+      </StorybookSubHeading>
+      <Tabs
+        overrides={{
+          scroll: ({children, vertical}) => (
+            <Scroll controls="hover" snapAlign="center" vertical={vertical}>
+              {children}
+            </Scroll>
+          ),
+        }}
+      >
+        {Array.from(Array(15)).map((_, i) => (
+          <Tab label={`Tab text here ${i}`}>
+            <LoremIpsum textNumber={1} />
+          </Tab>
+        ))}
+      </Tabs>
+      <hr />
+      <Tabs
+        overrides={{
+          scroll: ({children}) => <CustomScroll>{children}</CustomScroll>,
+        }}
+      >
+        {Array.from(Array(15)).map((_, i) => (
+          <Tab label={`Tab text here  ${i}`}>
+            <LoremIpsum textNumber={1} />
+          </Tab>
+        ))}
+      </Tabs>
 
-        <StorybookSubHeading>
-          Tabs Horizontal With Scroll Overridies via Props
-        </StorybookSubHeading>
-        <Tabs
-          overrides={{
-            scroll: {
-              props: {
-                scrollBar: true,
-                controls: 'hover',
-                overrides: {
-                  controls: {
-                    button: {
-                      stylePreset: 'scrollArrowsCustom',
-                    },
-                    offset: '0px',
+      <StorybookSubHeading>
+        Tabs Horizontal With Scroll Overridies via Props
+      </StorybookSubHeading>
+      <Tabs
+        overrides={{
+          scroll: {
+            props: {
+              scrollBar: true,
+              controls: 'hover',
+              overrides: {
+                controls: {
+                  button: {
+                    stylePreset: 'scrollArrowsCustom',
                   },
+                  offset: '0px',
                 },
               },
             },
-          }}
-        >
-          {Array.from(Array(15)).map((_, i) => (
-            <Tab label={`Tab text here ${i}`}>Content {i}</Tab>
-          ))}
-        </Tabs>
-      </MainContainer>
-    </ThemeProvider>
+          },
+        }}
+      >
+        {Array.from(Array(15)).map((_, i) => (
+          <Tab label={`Tab text here ${i}`}>
+            <LoremIpsum textNumber={1} />
+          </Tab>
+        ))}
+      </Tabs>
+    </MainContainer>
   );
 };
 StoryTabsWithScrollOverrides.storyName = 'tabs-with-scroll-overrides';
 
-const transitionTheme = createTheme({
-  name: 'my-custom-tab-theme',
-  overrides: {
-    transitionPresets: {
-      customBackgroundColorChange: {
-        base: {
-          transitionProperty: 'background-color',
-          transitionDuration: '100ms',
-          transitionDelay: '500ms',
-          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-        },
-      },
-      customFontColorChange: {
-        base: {
-          transitionProperty: 'color',
-          transitionDuration: '100ms',
-          transitionDelay: '500ms',
-          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-        },
-      },
-    },
-    stylePresets: {
-      tabCustomPreset: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-        },
-        hover: {
-          backgroundColor: '{{colors.amber070}}',
-          color: '{{colors.green040}}',
-        },
-      },
-    },
-  },
-});
+// const transitionTheme = createTheme({
+//   name: 'my-custom-tab-theme',
+//   overrides: {
+//     transitionPresets: {
+//       customBackgroundColorChange: {
+//         base: {
+//           transitionProperty: 'background-color',
+//           transitionDuration: '100ms',
+//           transitionDelay: '500ms',
+//           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+//         },
+//       },
+//       customFontColorChange: {
+//         base: {
+//           transitionProperty: 'color',
+//           transitionDuration: '100ms',
+//           transitionDelay: '500ms',
+//           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+//         },
+//       },
+//     },
+//     stylePresets: {
+//       tabCustomPreset: {
+//         base: {
+//           backgroundColor: '{{colors.transparent}}',
+//         },
+//         hover: {
+//           backgroundColor: '{{colors.amber070}}',
+//           color: '{{colors.green040}}',
+//         },
+//       },
+//     },
+//   },
+// });
 
 export const StoryTabsTransitions = () => (
   <>
     <StorybookHeading>Tabs item with Transition Presets</StorybookHeading>
     <StorybookSubHeading>Default Transition Preset</StorybookSubHeading>
-    <ThemeProvider theme={transitionTheme}>
-      <Tabs>
-        <Tab label="One transition preset">Content 1</Tab>
-        <Tab label="Two transition presets">Content 2</Tab>
-      </Tabs>
-      <StorybookSubHeading>
-        Tab items with Transition Preset overrides
-      </StorybookSubHeading>
-      <Tabs>
-        <Tab
-          overrides={{
-            stylePreset: 'tabCustomPreset',
-            transitionPreset: 'customBackgroundColorChange',
-          }}
-          label="One transition preset"
-        >
-          Content 1
-        </Tab>
-        <Tab
-          overrides={{
-            stylePreset: 'tabCustomPreset',
-            transitionPreset: [
-              'customBackgroundColorChange',
-              'customFontColorChange',
-            ],
-          }}
-          label="Two transition presets"
-        >
-          Content 2
-        </Tab>
-      </Tabs>
-      <StorybookSubHeading>
-        Tab items with overrides using extend on transitionDuration
-      </StorybookSubHeading>
-      <Tabs>
-        <Tab
-          label="Using extend prop on one preset"
-          overrides={{
-            stylePreset: 'tabCustomPreset',
-            transitionPreset: {
+    <Tabs>
+      <Tab label="One transition preset">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Two transition presets">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+    </Tabs>
+    <StorybookSubHeading>
+      Tab items with Transition Preset overrides
+    </StorybookSubHeading>
+    <Tabs>
+      <Tab
+        overrides={{
+          stylePreset: 'tabCustomPreset',
+          transitionPreset: 'customBackgroundColorChange',
+        }}
+        label="One transition preset"
+      >
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab
+        overrides={{
+          stylePreset: 'tabCustomPreset',
+          transitionPreset: [
+            'customBackgroundColorChange',
+            'customFontColorChange',
+          ],
+        }}
+        label="Two transition presets"
+      >
+        <LoremIpsum textNumber={1} />
+      </Tab>
+    </Tabs>
+    <StorybookSubHeading>
+      Tab items with overrides using extend on transitionDuration
+    </StorybookSubHeading>
+    <Tabs>
+      <Tab
+        label="Using extend prop on one preset"
+        overrides={{
+          stylePreset: 'tabCustomPreset',
+          transitionPreset: {
+            extend: 'backgroundColorChange',
+            base: {
+              transitionDuration: '{{motions.motionDuration050}}',
+            },
+          },
+        }}
+      >
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab
+        label="Using extend prop on one preset"
+        overrides={{
+          stylePreset: 'tabCustomPreset',
+          transitionPreset: {
+            extend: 'backgroundColorChange',
+            base: {
+              transitionDuration: '{{motions.motionDuration050}}',
+            },
+          },
+        }}
+      >
+        <LoremIpsum textNumber={1} />
+      </Tab>
+    </Tabs>
+    <StorybookSubHeading>
+      Tab items with overrides on two presets using extend
+    </StorybookSubHeading>
+    <Tabs>
+      <Tab
+        label="Using extend prop on two presets"
+        overrides={{
+          stylePreset: 'tabCustomPreset',
+          transitionPreset: [
+            {
               extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration030}}',
+              },
+            },
+            {
+              extend: 'customFontColorChange',
               base: {
                 transitionDuration: '{{motions.motionDuration050}}',
               },
             },
-          }}
-        >
-          Content 1
-        </Tab>
-        <Tab
-          label="Using extend prop on one preset"
-          overrides={{
-            stylePreset: 'tabCustomPreset',
-            transitionPreset: {
+          ],
+        }}
+      >
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab
+        label="Using extend prop on two presets"
+        overrides={{
+          stylePreset: 'tabCustomPreset',
+          transitionPreset: [
+            {
               extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration030}}',
+              },
+            },
+            {
+              extend: 'customFontColorChange',
               base: {
                 transitionDuration: '{{motions.motionDuration050}}',
               },
             },
-          }}
-        >
-          Content 2
-        </Tab>
-      </Tabs>
-      <StorybookSubHeading>
-        Tab items with overrides on two presets using extend
-      </StorybookSubHeading>
-      <Tabs>
-        <Tab
-          label="Using extend prop on two presets"
-          overrides={{
-            stylePreset: 'tabCustomPreset',
-            transitionPreset: [
-              {
-                extend: 'backgroundColorChange',
-                base: {
-                  transitionDuration: '{{motions.motionDuration030}}',
-                },
-              },
-              {
-                extend: 'customFontColorChange',
-                base: {
-                  transitionDuration: '{{motions.motionDuration050}}',
-                },
-              },
-            ],
-          }}
-        >
-          Content 1
-        </Tab>
-        <Tab
-          label="Using extend prop on two presets"
-          overrides={{
-            stylePreset: 'tabCustomPreset',
-            transitionPreset: [
-              {
-                extend: 'backgroundColorChange',
-                base: {
-                  transitionDuration: '{{motions.motionDuration030}}',
-                },
-              },
-              {
-                extend: 'customFontColorChange',
-                base: {
-                  transitionDuration: '{{motions.motionDuration050}}',
-                },
-              },
-            ],
-          }}
-        >
-          Content 2
-        </Tab>
-      </Tabs>
-    </ThemeProvider>
+          ],
+        }}
+      >
+        <LoremIpsum textNumber={1} />
+      </Tab>
+    </Tabs>
   </>
 );
 StoryTabsTransitions.storyName = 'tabs-transitions';
@@ -1401,46 +1665,56 @@ export const StoryTagLogicalProps = () => (
     <StorybookHeading>Tabs with Logical Props overrides</StorybookHeading>
 
     <StorybookSubHeading>marginInline & marginBlock</StorybookSubHeading>
-    <ThemeProvider theme={transitionTheme}>
-      <Tabs
-        overrides={{
-          marginBlock: 'space060',
-          marginInline: 'space080',
-        }}
-      >
-        <Tab label="Content 1">Content 1</Tab>
-        <Tab label="Content 2">Content 2</Tab>
-      </Tabs>
+    <Tabs
+      overrides={{
+        marginBlock: 'space060',
+        marginInline: 'space080',
+      }}
+    >
+      <Tab label="Content 1">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Content 2">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+    </Tabs>
 
-      <br />
+    <br />
 
-      <StorybookSubHeading>paddingInline & paddingBlock</StorybookSubHeading>
-      <Tabs
-        overrides={{
-          paddingBlock: 'space060',
-          paddingInline: 'space080',
-        }}
-      >
-        <Tab label="Content 1">Content 1</Tab>
-        <Tab label="Content 2">Content 2</Tab>
-      </Tabs>
+    <StorybookSubHeading>paddingInline & paddingBlock</StorybookSubHeading>
+    <Tabs
+      overrides={{
+        paddingBlock: 'space060',
+        paddingInline: 'space080',
+      }}
+    >
+      <Tab label="Content 1">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Content 2">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+    </Tabs>
 
-      <br />
-      <StorybookSubHeading>
-        marginInline & marginBlock & paddingInline & paddingBlock
-      </StorybookSubHeading>
-      <Tabs
-        overrides={{
-          marginBlock: 'space060',
-          marginInline: 'space080',
-          paddingBlock: 'space060',
-          paddingInline: 'space080',
-        }}
-      >
-        <Tab label="Content 1">Content 1</Tab>
-        <Tab label="Content 2">Content 2</Tab>
-      </Tabs>
-    </ThemeProvider>
+    <br />
+    <StorybookSubHeading>
+      marginInline & marginBlock & paddingInline & paddingBlock
+    </StorybookSubHeading>
+    <Tabs
+      overrides={{
+        marginBlock: 'space060',
+        marginInline: 'space080',
+        paddingBlock: 'space060',
+        paddingInline: 'space080',
+      }}
+    >
+      <Tab label="<LoremIpsum textNumber={1} />">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="<LoremIpsum textNumber={1} />">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+    </Tabs>
   </>
 );
 StoryTagLogicalProps.storyName = 'tabs-logical-props';
