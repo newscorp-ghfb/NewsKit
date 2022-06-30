@@ -6,6 +6,7 @@ import {
   ThemeProvider,
   MediaQueryProvider,
   styled,
+  getColorCssFromTheme
 } from '../src';
 
 import {themeObject} from '../src/test/theme-select-object'
@@ -23,12 +24,24 @@ const unlimitedScenarios = [
   'popover',
 ];
 
+const Background = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  ${getColorCssFromTheme('background', 'interfaceBackground')}
+`
+
 const Container = styled.div`
   max-width: 1024px;
   max-height: 768px;
   overflow: hidden;
 `;
-const LimitSizeDecorator = ({children}) => <Container>{children}</Container>;
+const LimitSizeDecorator = ({children}) => <Background><Container>{children}</Container></Background>;
 const NoDecorator = ({children}) => <>{children}</>;
 
 export const parameters = {
@@ -55,15 +68,15 @@ export const parameters = {
       },
       {
         name: 'The Sun',
-        value: 'sun',
+        value: '#eb1801',
       },
       {
         name: 'The Times',
-        value: 'times',
+        value: '#006699',
       },
       {
         name: 'Virgin',
-        value: 'virgin',
+        value: '#e10a0a',
       }
     ],
   },

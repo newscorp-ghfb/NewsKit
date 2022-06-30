@@ -7,7 +7,7 @@ export const themeObject: {[key: string]: UncompiledTheme} = {
   '#ffffff': newskitLightTheme,
   '#2E2E2E': newskitDarkTheme,
   transparent: newskitLightTheme,
-  sun: sunTheme,
-  virgin: virginTheme,
-  times: tnlTheme,
+  '#eb1801': sunTheme,
+  '#e10a0a': virginTheme,
+  '#006699': tnlTheme,
 };
