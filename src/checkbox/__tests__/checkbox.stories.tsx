@@ -16,7 +16,6 @@ import {
 } from '../..';
 import {CheckboxIconProps} from '../types';
 import {states, sizes} from './helpers';
-import {defaultFocusVisible} from '../../utils/default-focus-visible';
 
 const myCustomTheme = compileTheme(
   createTheme({
@@ -35,7 +34,6 @@ const myCustomTheme = compileTheme(
           hover: {
             backgroundColor: 'blue',
           },
-          'focus-visible': defaultFocusVisible,
         },
         customCheckboxFeedback: {
           base: {
@@ -47,6 +45,70 @@ const myCustomTheme = compileTheme(
           base: {
             backgroundColor: '{{colors.interfaceInformative010}}',
             iconColor: '{{colors.inkInverse}}',
+          },
+        },
+        customOutlineColor: {
+          base: {
+            backgroundColor: '{{colors.interactiveInput010}}',
+            borderColor: '{{colors.interactiveInput020}}',
+            borderWidth: '{{borders.borderWidth020}}',
+            borderRadius: '{{borders.borderRadiusRounded010}}',
+            borderStyle: 'solid',
+            iconColor: '{{colors.inkInverse}}',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: '{{outlines.outlineStyleDefault}}',
+            outlineWidth: '{{outlines.outlineWidthDefault}}',
+            outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          },
+        },
+        customOutlineStyle: {
+          base: {
+            backgroundColor: '{{colors.interactiveInput010}}',
+            borderColor: '{{colors.interactiveInput020}}',
+            borderWidth: '{{borders.borderWidth020}}',
+            borderRadius: '{{borders.borderRadiusRounded010}}',
+            borderStyle: 'solid',
+            iconColor: '{{colors.inkInverse}}',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: 'dotted',
+            outlineWidth: '{{outlines.outlineWidthDefault}}',
+            outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          },
+        },
+        customOutlineWidth: {
+          base: {
+            backgroundColor: '{{colors.interactiveInput010}}',
+            borderColor: '{{colors.interactiveInput020}}',
+            borderWidth: '{{borders.borderWidth020}}',
+            borderRadius: '{{borders.borderRadiusRounded010}}',
+            borderStyle: 'solid',
+            iconColor: '{{colors.inkInverse}}',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: 'dotted',
+            outlineWidth: '5px',
+            outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          },
+        },
+        customOutlineOffset: {
+          base: {
+            backgroundColor: '{{colors.interactiveInput010}}',
+            borderColor: '{{colors.interactiveInput020}}',
+            borderWidth: '{{borders.borderWidth020}}',
+            borderRadius: '{{borders.borderRadiusRounded010}}',
+            borderStyle: 'solid',
+            iconColor: '{{colors.inkInverse}}',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: 'dotted',
+            outlineWidth: '5px',
+            outlineOffset: '5px',
           },
         },
       },
@@ -293,3 +355,47 @@ export const StoryCheckboxTransitions = () => (
 );
 
 StoryCheckboxTransitions.storyName = 'checkbox-transitions';
+
+export const StoryCheckboxOutlineOverride = () => (
+  <ThemeProvider theme={myCustomTheme}>
+    <StorybookSubHeading>Checkbox Outline override</StorybookSubHeading>
+    <Container>
+      <GridLayout rowGap="space040">
+        <Checkbox
+          overrides={{
+            input: {
+              stylePreset: 'customOutlineColor',
+            },
+          }}
+          label="Custom Color"
+        />
+        <Checkbox
+          overrides={{
+            input: {
+              stylePreset: 'customOutlineStyle',
+            },
+          }}
+          label="Custom Style"
+        />
+        <Checkbox
+          overrides={{
+            input: {
+              stylePreset: 'customOutlineWidth',
+            },
+          }}
+          label="Custom Width"
+        />
+        <Checkbox
+          overrides={{
+            input: {
+              stylePreset: 'customOutlineOffset',
+            },
+          }}
+          label="Custom Offset"
+        />
+      </GridLayout>
+    </Container>
+  </ThemeProvider>
+);
+
+StoryCheckboxOutlineOverride.storyName = 'checkbox-outline-override';
