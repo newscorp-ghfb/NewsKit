@@ -11,7 +11,7 @@ slack_notify: &slack_notify
   event: 'fail'
   # TODO try it on PR, then with a TAG, then with regex?
   branch_pattern: 'main'
-  tag_pattern: '/^test-1$/, /^test-2$/'
+  tag_pattern: /^test-1$/, /^test-2$/
 
 cypress_defaults: &cypress_defaults
   environment:
