@@ -1,6 +1,6 @@
 import React from 'react';
 import {IconButton} from '../../../icon-button';
-import {IconFilledVolumeDown, IconFilledVolumeOff} from '../../../icons';
+import {IconFilledVolumeOff, IconFilledVolumeUp} from '../../../icons';
 import {getComponentOverrides} from '../../../utils/overrides';
 import {useKeyboardShortcutsOnButton} from '../../utils';
 import {MuteButtonIconProps, MuteButtonProps} from './types';
@@ -20,7 +20,7 @@ const DefaultIcon = ({volume, overrides}: MuteButtonIconProps) =>
       }}
     />
   ) : (
-    <IconFilledVolumeDown
+    <IconFilledVolumeUp
       overrides={{
         size: 'iconSize020',
         ...overrides,
