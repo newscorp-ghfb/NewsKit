@@ -1253,6 +1253,7 @@ workflows:
   test_tag_fail_slack:
     jobs:
       - test_failing_job:
+          context: ncu-product-platforms-context
           filters:
             tags:
               # The pattern must match the tag created in the github release interface. E.g: "trigger-release@5.0.1"
