@@ -124,8 +124,8 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           overrides={{
             stylePreset: 'linkTopNavigation',
             minHeight: '80px',
-
             marginInline: '10px',
+            paddingInline: {lg: '3px', xl: '16px'},
           }}
         >
           {title}
@@ -164,11 +164,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
             {Areas => (
               <>
                 <Areas.Logo justifySelf="start">
-                  <Link
-                    type="standalone"
-                    href="/"
-                    overrides={{stylePreset: 'inkBase'}}
-                  >
+                  <Link type="standalone" href="/">
                     <NewsKitLogo />
                   </Link>
                 </Areas.Logo>

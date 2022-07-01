@@ -280,6 +280,14 @@ Object {
     "motionTimingLinear": "linear",
   },
   "name": "default-theme",
+  "outlines": Object {
+    "outlineColorDefault": "{{colors.interactiveFocus010}}",
+    "outlineOffsetDefault": "{{borders.borderWidth020}}",
+    "outlineStyleDefault": "solid",
+    "outlineWidthDefault": "{{borders.borderWidth020}}",
+    "safariOutlineOffsetDefault": "{{borders.borderWidth020}}",
+    "safariOutlineStyleDefault": "auto",
+  },
   "overlays": Object {
     "opacity000": "0",
     "opacity010": "0.1",
@@ -442,7 +450,11 @@ Object {
       },
       "focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{colors.interactiveInput040}}",
+        "borderColor": "{{colors.transparent}}",
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -452,7 +464,7 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{colors.interactiveInput040}}",
+        "borderColor": "{{outlines.outlineColorDefault}}",
       },
       "invalid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -466,11 +478,73 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
-        "borderColor": "{{colors.interactiveInput040}}",
+        "borderColor": "{{outlines.outlineColorDefault}}",
       },
       "valid:hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactivePositive030}}",
+      },
+    },
+    "selectOptionItem": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInput030}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "textOverflow": "ellipsis",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+      },
+      "focus": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+        "borderColor": "{{colors.interactiveInput040}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInput010}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.interactiveInput030}}",
+      },
+      "selected:active": Object {
+        "backgroundColor": "{{colors.interactiveInput030}}",
+      },
+      "selected:focus": Object {
+        "backgroundColor": "{{colors.interactiveInput030}}",
+        "borderColor": "{{colors.interactiveInput040}}",
+      },
+      "selected:focus:active": Object {
+        "backgroundColor": "{{colors.interactiveInput030}}",
+      },
+      "selected:focus:hover": Object {
+        "backgroundColor": "{{colors.interactiveInput030}}",
+        "color": "{{colors.inkContrast}}",
+      },
+      "selected:hover": Object {
+        "backgroundColor": "{{colors.interactiveInput030}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "selectOptionItemIcon": Object {
+      "base": Object {
+        "iconColor": "{{colors.interactiveInput040}}",
+      },
+      "selected": Object {
+        "iconColor": "{{colors.interactiveInput040}}",
+      },
+      "selected:active": Object {
+        "iconColor": "{{colors.interactiveInput040}}",
+      },
+      "selected:focus": Object {
+        "iconColor": "{{colors.interactiveInput040}}",
+      },
+      "selected:hover": Object {
+        "iconColor": "{{colors.interactiveInput040}}",
       },
     },
   },

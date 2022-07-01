@@ -221,6 +221,66 @@ const myCustomTheme = compileTheme(
             borderRadius: '50%',
           },
         },
+        customOutlineColor: {
+          base: {
+            backgroundColor: '{{colors.interactiveInput010}}',
+            borderColor: '{{colors.interactiveInput020}}',
+            borderWidth: '{{borders.borderWidth020}}',
+            borderRadius: '{{borders.borderRadiusCircle}}',
+            borderStyle: 'solid',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: '{{outlines.outlineStyleDefault}}',
+            outlineWidth: '{{outlines.outlineWidthDefault}}',
+            outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          },
+        },
+        customOutlineStyle: {
+          base: {
+            backgroundColor: '{{colors.interactiveInput010}}',
+            borderColor: '{{colors.interactiveInput020}}',
+            borderWidth: '{{borders.borderWidth020}}',
+            borderRadius: '{{borders.borderRadiusCircle}}',
+            borderStyle: 'solid',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: 'dotted',
+            outlineWidth: '{{outlines.outlineWidthDefault}}',
+            outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          },
+        },
+        customOutlineWidth: {
+          base: {
+            backgroundColor: '{{colors.interactiveInput010}}',
+            borderColor: '{{colors.interactiveInput020}}',
+            borderWidth: '{{borders.borderWidth020}}',
+            borderRadius: '{{borders.borderRadiusCircle}}',
+            borderStyle: 'solid',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: 'dotted',
+            outlineWidth: '5px',
+            outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          },
+        },
+        customOutlineOffset: {
+          base: {
+            backgroundColor: '{{colors.interactiveInput010}}',
+            borderColor: '{{colors.interactiveInput020}}',
+            borderWidth: '{{borders.borderWidth020}}',
+            borderRadius: '{{borders.borderRadiusCircle}}',
+            borderStyle: 'solid',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: 'dotted',
+            outlineWidth: '5px',
+            outlineOffset: '5px',
+          },
+        },
       },
     },
   }),
@@ -382,3 +442,151 @@ export const StoryRadioButtonLogicalPropsOverrides = () => (
 );
 StoryRadioButtonLogicalPropsOverrides.storyName =
   'radio-button-logical-overrides';
+
+export const StoryRadioButtonOutlineOverrides = () => (
+  <ThemeProvider theme={myCustomTheme}>
+    <Container>
+      <StorybookSubHeading>Radio Button outline override</StorybookSubHeading>
+      <Fieldset legend="Custom Color">
+        <RadioGroup name="color" defaultValue="1">
+          <GridLayout rowGap="space040" columns="max-content">
+            <RadioButton
+              value="1"
+              label="Option 1"
+              overrides={{
+                input: {
+                  stylePreset: 'customOutlineColor',
+                },
+              }}
+            />
+            <RadioButton
+              value="2"
+              label="Option 2"
+              overrides={{
+                input: {
+                  stylePreset: 'customOutlineColor',
+                },
+              }}
+            />
+            <RadioButton
+              value="3"
+              label="Option 3"
+              overrides={{
+                input: {
+                  stylePreset: 'customOutlineColor',
+                },
+              }}
+            />
+          </GridLayout>
+        </RadioGroup>
+      </Fieldset>
+    </Container>
+    <Container>
+      <Fieldset legend="Custom Style">
+        <RadioGroup name="style" defaultValue="1">
+          <GridLayout rowGap="space040" columns="max-content">
+            <RadioButton
+              value="1"
+              label="Option 1"
+              overrides={{
+                input: {
+                  stylePreset: 'customOutlineStyle',
+                },
+              }}
+            />
+            <RadioButton
+              value="2"
+              label="Option 2"
+              overrides={{
+                input: {
+                  stylePreset: 'customOutlineStyle',
+                },
+              }}
+            />
+            <RadioButton
+              value="3"
+              label="Option 3"
+              overrides={{
+                input: {
+                  stylePreset: 'customOutlineStyle',
+                },
+              }}
+            />
+          </GridLayout>
+        </RadioGroup>
+      </Fieldset>
+    </Container>
+    <Container>
+      <Fieldset legend="Custom Width">
+        <RadioGroup name="width" defaultValue="1">
+          <GridLayout rowGap="space040" columns="max-content">
+            <RadioButton
+              value="1"
+              label="Option 1"
+              overrides={{
+                input: {
+                  stylePreset: 'customOutlineWidth',
+                },
+              }}
+            />
+            <RadioButton
+              value="2"
+              label="Option 2"
+              overrides={{
+                input: {
+                  stylePreset: 'customOutlineWidth',
+                },
+              }}
+            />
+            <RadioButton
+              value="3"
+              label="Option 3"
+              overrides={{
+                input: {
+                  stylePreset: 'customOutlineWidth',
+                },
+              }}
+            />
+          </GridLayout>
+        </RadioGroup>
+      </Fieldset>
+    </Container>
+    <Container>
+      <Fieldset legend="Custom Offset">
+        <RadioGroup name="offset" defaultValue="1">
+          <GridLayout rowGap="space040" columns="max-content">
+            <RadioButton
+              value="1"
+              label="Option 1"
+              overrides={{
+                input: {
+                  stylePreset: 'customOutlineOffset',
+                },
+              }}
+            />
+            <RadioButton
+              value="2"
+              label="Option 2"
+              overrides={{
+                input: {
+                  stylePreset: 'customOutlineOffset',
+                },
+              }}
+            />
+            <RadioButton
+              value="3"
+              label="Option 3"
+              overrides={{
+                input: {
+                  stylePreset: 'customOutlineOffset',
+                },
+              }}
+            />
+          </GridLayout>
+        </RadioGroup>
+      </Fieldset>
+    </Container>
+  </ThemeProvider>
+);
+
+StoryRadioButtonOutlineOverrides.storyName = 'radio-button-outline-overrides';

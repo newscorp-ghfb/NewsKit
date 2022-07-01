@@ -4,6 +4,7 @@ import {Link} from '../link';
 import {SwatchCard} from '../swatch-card';
 import {MonoColor} from '../flags/mono-color';
 import {BorderCard} from '../border-card';
+import {OutlineCard} from '../outline-card';
 import {getByTitle} from '../../utils/get-route-object';
 import {StyledDataCell} from './styled';
 import {TableProps, TableRow, TableRowValue, CellWithOverrides} from './types';
@@ -20,6 +21,7 @@ import {
 } from '../theming-values/motions/swatches';
 import {FontAttributes} from '../font-attributes';
 import {SizeBox} from '../theming-values/size-box';
+import {OverlayCards} from '../theming-values/overlays/swatches';
 
 const renderIcon = (value?: TableRowValue) => {
   switch (value) {
@@ -210,9 +212,65 @@ export const renderCols = (
         break;
       }
 
+      case 'outlineStyle': {
+        cellContent = cellValue && (
+          <OutlineCard outlineStyleToken={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'outlineWidth': {
+        cellContent = cellValue && (
+          <OutlineCard outlineWidthToken={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'outlineOffset': {
+        cellContent = cellValue && (
+          <OutlineCard outlineOffsetToken={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'safariOutlineStyle': {
+        cellContent = cellValue && (
+          <OutlineCard safariOutlineStyleToken={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'safariOutlineOffset': {
+        cellContent = cellValue && (
+          <OutlineCard safariOutlineOffsetToken={cellValue.toString()} />
+        );
+        break;
+      }
+
       case 'boxShadow': {
         cellContent = cellValue && (
           <BorderCard boxShadowToken={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'boxOverlay': {
+        cellContent = cellValue && (
+          <OverlayCards overlayToken={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'boxOpacity': {
+        cellContent = cellValue && (
+          <OverlayCards opacityToken={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'boxGradient': {
+        cellContent = cellValue && (
+          <OverlayCards gradientToken={cellValue.toString()} />
         );
         break;
       }

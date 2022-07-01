@@ -251,9 +251,9 @@ jobs:
           name: 'Waiting for "no_visual_changes" or "test_visual_docs"'
           command: |
             if [[ $(curl --location --request GET "https://circleci.com/api/v2/workflow/${CIRCLE_WORKFLOW_ID}/job" --header "Circle-Token: ${CIRCLECI_BASE_AUTH}"| jq -r '.items[]|select(.name == "no_visual_changes" or .name == "test_visual_docs" or .name == "test_visual_docs_2")|.status' | grep -c "success") -gt 0 ]]
-            then 
+            then
               echo "Passed!"
-            else 
+            else
               echo "Failed!"
               exit 1
             fi
@@ -712,7 +712,7 @@ jobs:
           command: |
             if [ << parameters.docker_version >> = release ]; then
               export DOCKER_TAG=$(node -p "require('./package.json').version")
-            else 
+            else
               export DOCKER_TAG=${CIRCLE_SHA1}
             fi
             export AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
@@ -757,13 +757,13 @@ jobs:
       - run:
           name: Doc site link
           command: |
-            if gh pr view -c | grep "Documentation Site" ; 
+            if gh pr view -c | grep "Documentation Site" ;
             then
               circleci-agent step halt
             else
-              gh pr comment --body "You can preview these changes on: 
-              Documentation Site: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/' 'docs') 
-              Storybook: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/' 'storybook')" 
+              gh pr comment --body "You can preview these changes on:
+              Documentation Site: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/' 'docs')
+              Storybook: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/' 'storybook')"
             fi
       - slack/status:
           <<: *slack_status
@@ -1096,6 +1096,14 @@ workflows:
             - i_have_merged_applitools
       - i_have_merged_applitools:
           type: approval
+          requires:
+            - test_newskit_in_nextjs_app
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_pr
+            - test_broken_links_docs_pr
       - init_aws:
           context: ncu-product-platforms-context
       - deploy_terraform:

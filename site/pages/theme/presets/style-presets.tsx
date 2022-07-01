@@ -152,58 +152,127 @@ const CSS_PROPS = [
   },
   {
     token: 'borderRadius',
-    acceptedValues: <Link href="/theme/borders/">foundations borders</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/borders/">foundations borders</Link>
+    ),
     description: 'The border radius (shape) of an element',
   },
   {
     token: 'borderWidth',
-    acceptedValues: <Link href="/theme/borders/">foundations borders</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/borders/">foundations borders</Link>
+    ),
     description: 'The border width of an element',
   },
   {
     token: 'backgroundColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The background colour of an element',
   },
   {
     token: 'borderColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of a border',
   },
   {
     token: 'caretColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of a caret (cursor) in a text input',
   },
   {
     token: 'color',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of text. For text, use ink colours',
   },
   {
     token: 'iconColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of icons. For icons, use ink colours',
   },
   {
     token: 'placeholderColor',
-    acceptedValues: <Link href="/theme/colours/">foundations colors</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/colours/">foundations colors</Link>
+    ),
     description: 'The colour of placeholder text',
   },
   {
     token: 'boxShadow',
-    acceptedValues: <Link href="/theme/shadows/">foundations shadows</Link>,
+    acceptedValues: (
+      <Link href="/theme/foundation/shadows/">foundations shadows</Link>
+    ),
     description: 'The box shadow to an element',
   },
   {
+    token: 'backgroundColor',
+    acceptedValues: (
+      <Link href="/theme/foundation/overlays/">foundations overlays</Link>
+    ),
+    description: 'The overlay of an element',
+  },
+  {
     token: 'opacity',
-    acceptedValues: 'foundations opacity', // TODO: Link to Opacity page when we have it live
+    acceptedValues: (
+      <Link href="/theme/foundation/opacity/">foundations opacity</Link>
+    ),
     description: 'The opacity level of an element',
   },
   {
     token: 'linear-gradient',
-    acceptedValues: 'foundations gradient', // TODO: Link to Gradients page when we have it live
+    acceptedValues: (
+      <Link href="/theme/foundation/gradients/">foundations gradient</Link>
+    ),
     description: 'The transition between two or more specified colors',
+  },
+  {
+    token: 'outlineColor',
+    acceptedValues: <Link href="/theme/outline/">foundations outline</Link>,
+    description: 'The colour property of the outline',
+  },
+  {
+    token: 'outlineStyle',
+    acceptedValues: (
+      <Link href="/theme/foundation/outlines/">foundations outline</Link>
+    ),
+    description: 'The style property of the outline',
+  },
+  {
+    token: 'outlineWidth',
+    acceptedValues: (
+      <Link href="/theme/foundation/outlines/">foundations outline</Link>
+    ),
+    description: 'The style property of the outline',
+  },
+  {
+    token: 'outlineOffset',
+    acceptedValues: (
+      <Link href="/theme/foundation/outlines/">foundations outline</Link>
+    ),
+    description: 'The offset property of the outline',
+  },
+  {
+    token: 'safariOutlineOffset',
+    acceptedValues: (
+      <Link href="/theme/foundation/outlines/">foundations outline</Link>
+    ),
+    description: 'The offset property of the outline for Safari',
+  },
+  {
+    token: 'safariOutlineStyle',
+    acceptedValues: (
+      <Link href="/theme/foundation/outlines/">foundations outline</Link>
+    ),
+    description: 'The style property of the outline for Safari',
   },
 ];
 
@@ -440,6 +509,80 @@ const STYLE_PRESET_STATES = [
     description:
       'Visually represents text links a user has already visited, and in a focus state',
   },
+  {
+    example: getImage('theme/style-presets/focus'),
+    state: 'focus-visible',
+    description:
+      'Highlights an element to a user that has received focus, by using an input method such as a keyboard or voice. User agent determins if focus should be given to element.',
+  },
+  {
+    example: getImage('theme/style-presets/valid-focus'),
+    state: 'valid:focus-visible',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is valid, and in a focus state',
+  },
+  {
+    example: getImage('theme/style-presets/invalid-focus'),
+    state: 'invalid:focus-visible',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid, and in a focus state',
+  },
+  {
+    example: getImage('theme/style-presets/focus-visible-hover'),
+    state: 'focus-visible:hover',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component has focus state and hover state',
+  },
+  {
+    example: getImage('theme/style-presets/valid-focus-visible-hover'),
+    state: 'valid:focus-visible:hover',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is valid has focus state and hover state',
+  },
+  {
+    example: getImage('theme/style-presets/invalid-focus-visible-hover'),
+    state: 'invalid:focus-visible:hover',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid has focus state and hover state',
+  },
+  {
+    example: getImage('theme/style-presets/checked-focus'),
+    state: 'checked:focus-visible',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to a user that a component has been checked, and in a focus state',
+  },
+  {
+    example: getImage('theme/style-presets/checked-focus-visible-hover'),
+    state: 'checked:focus-visible:hover',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is checked, focused and in a hover state',
+  },
+  {
+    example: getImage('theme/style-presets/checked-valid-focus'),
+    state: 'checked:valid:focus-visible',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is valid, checked, and in a focus state',
+  },
+  {
+    example: getImage('theme/style-presets/checked-invalid-focus'),
+    state: 'checked:invalid:focus-visible',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is invalid, checked, and in a focus state',
+  },
+  {
+    example: getImage('theme/style-presets/checked-valid-focus-visible-hover'),
+    state: 'checked:valid:focus-visible:hover',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is checked, valid, focused and in a hover state',
+  },
+  {
+    example: getImage(
+      'theme/style-presets/checked-invalid-focus-visible-hover',
+    ),
+    state: 'checked:invalid:focus-visible:hover',
+    description:
+      'The style of a component changes to visually communicate and provide feedback to the user that a component is checked, invalid, focused and in a hover state',
+  },
 ];
 
 const StylePresets = (layoutProps: LayoutProps) => (
@@ -476,9 +619,9 @@ const StylePresets = (layoutProps: LayoutProps) => (
               <Link href="/theme/presets/typography-presets/">
                 Typography Presets
               </Link>
-              , <Link href="/theme/sizing/">Sizing</Link>, and{' '}
-              <Link href="/theme/spacing/">Spacing</Link>, Style Presets provide
-              the visual attributes of a component.
+              , <Link href="/theme/foundation/sizing/">Sizing</Link>, and{' '}
+              <Link href="/theme/foundation/spacing/">Spacing</Link>, Style
+              Presets provide the visual attributes of a component.
             </>
           }
           showSeparator

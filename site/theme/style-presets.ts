@@ -21,6 +21,13 @@ export const stylePresets = {
     active: {
       backgroundColor: '{{colors.interactiveSecondary020}}',
     },
+    'focus-visible': {
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      outlineOffset: '{{outlines.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
+    },
   },
   linkSectionNavigation: {
     base: {
@@ -51,6 +58,13 @@ export const stylePresets = {
         '{{colors.transparent}} {{colors.transparent}} {{colors.interactivePrimary030}} {{colors.transparent}}',
       color: '{{colors.interactivePrimary030}}',
       textDecoration: 'none',
+    },
+    'focus-visible': {
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      outlineOffset: '{{outlines.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
     },
   },
   sideBarNavigation: {
@@ -424,6 +438,13 @@ export const stylePresets = {
       color: '{{colors.interactivePrimary020}}',
       textDecoration: 'none',
     },
+    'focus-visible': {
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      outlineOffset: '{{outlines.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
+    },
   },
   roadmapCardContainerInteractive: {
     base: {
@@ -522,6 +543,13 @@ export const stylePresets = {
       backgroundColor: '{{colors.interactiveInverse020}}',
       color: '{{colors.inkBrand030}}',
       iconColor: '{{colors.inkBrand030}}',
+    },
+    'focus-visible': {
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      outlineOffset: '{{outlines.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
     },
   },
 
@@ -785,6 +813,13 @@ export const stylePresets = {
     loading: {
       backgroundColor: '{{colors.interactiveInverse020}}',
     },
+    'focus-visible': {
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      outlineOffset: '{{outlines.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
+    },
   },
   buttonOutlinedInverseDocs: {
     base: {
@@ -812,6 +847,13 @@ export const stylePresets = {
     loading: {
       backgroundColor: '{{colors.interactiveInverse020}}',
       borderStyle: 'none',
+    },
+    'focus-visible': {
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      outlineOffset: '{{outlines.outlineOffsetDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
     },
   },
   dividerInverse: {
@@ -858,6 +900,55 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusRounded050}}',
       color: '{{colors.neutral080}}',
       iconColor: '{{colors.neutral100}}',
+    },
+  },
+  patternFeatureCardContainerInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand030}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+    hover: {
+      boxShadow: '{{shadows.shadow040}}',
+    },
+  },
+  patternFeatureCardContainerNonInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand030}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
+  patternFeatureCardButton: {
+    base: {
+      backgroundColor: '{{colors.interactiveInverse030}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactiveInverse050}}',
+      color: '{{colors.inkBrand020}}',
+      iconColor: '{{colors.inkBrand020}}',
+    },
+    disabled: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+    loading: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+  },
+  patternFeatureCardMedia: {
+    base: {
+      backgroundImage: 'url(static/feature-card-patterns-16-9.svg)',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+      backgroundSize: 'cover',
+      backgroundPosition: 'bottom left',
     },
   },
 };

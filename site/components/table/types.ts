@@ -26,12 +26,20 @@ export interface ColumnMapObject extends TableCellProps {
     | 'motionDurationSwatch'
     | 'motionTimingSwatch'
     | 'boxShadow'
+    | 'boxOverlay'
+    | 'boxOpacity'
+    | 'boxGradient'
     | 'sizeBox'
     | 'fontSize'
     | 'fontWeight'
     | 'fontLineHeight'
     | 'fontLetterSpacing'
-    | 'typographyPreset';
+    | 'typographyPreset'
+    | 'outlineStyle'
+    | 'outlineWidth'
+    | 'outlineOffset'
+    | 'safariOutlineStyle'
+    | 'safariOutlineOffset';
 }
 
 export interface CellWithOverrides {

@@ -303,6 +303,9 @@ export const darkOverrides = {
   shadows: colorsDark.shadows,
   colors: colorsDark.colors,
   overlays: overlaysDark,
+  outline: {
+    safariOutlineStyleDefault: 'solid',
+  },
 };
 
 export const lightOverrides = {

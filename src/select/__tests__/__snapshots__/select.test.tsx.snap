@@ -33,8 +33,19 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -47,7 +58,7 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -61,7 +72,7 @@ exports[`Select in Modal render Select 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -686,6 +697,21 @@ exports[`Select in Modal render Select 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-10:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-10 {
     transition-property: background-color;
@@ -780,7 +806,7 @@ exports[`Select in Modal render Select 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -910,8 +936,19 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -924,7 +961,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -938,7 +975,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -1533,7 +1570,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -1633,8 +1670,19 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -1647,7 +1695,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -1661,7 +1709,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -2276,6 +2324,21 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-10:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-10:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-10 {
     transition-property: background-color;
@@ -2370,7 +2433,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
       >
         <div
           aria-modal="true"
-          class="emotion-2 nk-modal-enter-done"
+          class="nk-modal-enter-done emotion-2"
           data-testid="modal"
           role="dialog"
         >
@@ -2502,8 +2565,19 @@ exports[`Select renders Select with logical props 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -2516,7 +2590,7 @@ exports[`Select renders Select with logical props 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -2530,7 +2604,7 @@ exports[`Select renders Select with logical props 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3098,8 +3172,19 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -3112,7 +3197,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3126,7 +3211,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3429,8 +3514,19 @@ exports[`Select renders SelectOption with logical props 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -3443,7 +3539,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3457,7 +3553,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3970,8 +4066,19 @@ exports[`Select renders large Select 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -3984,7 +4091,7 @@ exports[`Select renders large Select 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -3998,7 +4105,7 @@ exports[`Select renders large Select 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4240,8 +4347,19 @@ exports[`Select renders loading select 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -4254,7 +4372,7 @@ exports[`Select renders loading select 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4268,7 +4386,7 @@ exports[`Select renders loading select 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4489,8 +4607,19 @@ exports[`Select renders medium Select 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -4503,7 +4632,7 @@ exports[`Select renders medium Select 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4517,7 +4646,7 @@ exports[`Select renders medium Select 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4759,8 +4888,19 @@ exports[`Select renders select with a pre selected option 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -4773,7 +4913,7 @@ exports[`Select renders select with a pre selected option 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -4787,7 +4927,7 @@ exports[`Select renders select with a pre selected option 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5063,8 +5203,19 @@ exports[`Select renders select with a selected option 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -5077,7 +5228,7 @@ exports[`Select renders select with a selected option 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5091,7 +5242,7 @@ exports[`Select renders select with a selected option 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5367,8 +5518,19 @@ exports[`Select renders select with leading and trailing icon 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -5381,7 +5543,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5395,7 +5557,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5695,8 +5857,19 @@ exports[`Select renders select with non-string options 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -5709,7 +5882,7 @@ exports[`Select renders select with non-string options 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -5723,7 +5896,7 @@ exports[`Select renders select with non-string options 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6001,8 +6174,19 @@ exports[`Select renders small Select 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -6015,7 +6199,7 @@ exports[`Select renders small Select 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6029,7 +6213,7 @@ exports[`Select renders small Select 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6271,8 +6455,19 @@ exports[`Select should render custom placeholder 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -6285,7 +6480,7 @@ exports[`Select should render custom placeholder 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6299,7 +6494,7 @@ exports[`Select should render custom placeholder 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6541,8 +6736,19 @@ exports[`Select virtualize long list 1`] = `
 }
 
 .emotion-0:focus:not(:disabled) {
-  border-color: #3358CC;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
   background-color: #FAFAFA;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -6555,7 +6761,7 @@ exports[`Select virtualize long list 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 
@@ -6569,7 +6775,7 @@ exports[`Select virtualize long list 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #3358CC;
+  border-color: #3768FB;
   background-color: #FAFAFA;
 }
 

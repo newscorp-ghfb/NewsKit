@@ -148,8 +148,8 @@ const TypographyPresets = (layoutProps: LayoutProps) => (
               font-weight and line-height, in one design token. In combination
               with{' '}
               <Link href="/theme/presets/style-presets">Style Presets</Link>,
-              Sizing, and <Link href="/theme/spacing/">Spacing</Link> they
-              provide the visual attributes of a component.
+              Sizing, and <Link href="/theme/foundation/spacing/">Spacing</Link>{' '}
+              they provide the visual attributes of a component.
             </>
           }
           showSeparator
@@ -167,8 +167,8 @@ const TypographyPresets = (layoutProps: LayoutProps) => (
               font-weight and line-height, in one design token. In combination
               with{' '}
               <Link href="/theme/presets/style-presets">Style Presets</Link>,
-              Sizing, and <Link href="/theme/spacing/">Spacing</Link> they
-              provide the visual attributes of a component.
+              Sizing, and <Link href="/theme/foundation/spacing/">Spacing</Link>{' '}
+              they provide the visual attributes of a component.
             </>
           }
         />

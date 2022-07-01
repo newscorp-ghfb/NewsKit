@@ -108,6 +108,21 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   fill: #C0C0C0;
 }
 
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-2 {
     transition-property: background-color;
@@ -556,6 +571,21 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1008,6 +1038,21 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   fill: #C0C0C0;
 }
 
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-2 {
     transition-property: background-color;
@@ -1455,6 +1500,21 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1907,6 +1967,21 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   fill: #C0C0C0;
 }
 
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-2 {
     transition-property: background-color;
@@ -2355,6 +2430,21 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2807,6 +2897,21 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   fill: #C0C0C0;
 }
 
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-2 {
     transition-property: background-color;
@@ -3257,6 +3362,21 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   fill: #C0C0C0;
 }
 
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-2 {
     transition-property: background-color;
@@ -3705,6 +3825,21 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 
 .emotion-2:disabled svg {
   fill: #C0C0C0;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
