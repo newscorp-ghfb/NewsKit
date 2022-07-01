@@ -9,8 +9,8 @@ slack_notify: &slack_notify
   channel: '#nuk-pp-newskit'
   mentions: '@newskitdevs'
   event: 'fail'
-  branch_pattern: 'ci/PPDSC-2084-enable-back-slack-messages-on-release'
-  # tag_pattern: '/^trigger-release@([0-9])(\.([0-9])){2}$/, /^v([0-9])(\.([0-9])){2}$/'
+  # TODO try it on PR, then with a TAG, then with regex?
+  branch_pattern: 'main'
   tag_pattern: '/^test-1$/, /^test-2$/'
 
 cypress_defaults: &cypress_defaults
@@ -1250,6 +1250,25 @@ workflows:
             - eks_flux_deploy_dev_to_prod
       # end
   
+  test_tag_fail_slack:
+    jobs:
+      - test_failing_job:
+          context: ncu-product-platforms-context
+          filters:
+            tags:
+              # The pattern must match the tag created in the github release interface. E.g: "trigger-release@5.0.1"
+              only: /^test-1$/
+            branches:
+              ignore: /.*/
+      - test_failing_job:
+          context: ncu-product-platforms-context
+          filters:
+            tags:
+              # The pattern must match the tag created in the github release interface. E.g: "trigger-release@5.0.1"
+              only: /^test-2$/
+            branches:
+              ignore: /.*/
+
   on_trigger_release_tag:
     jobs:
       - bump_version:
