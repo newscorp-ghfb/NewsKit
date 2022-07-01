@@ -918,7 +918,7 @@ jobs:
           name: Codemode Dependencies Install
           command: cd codemod & make install
       - persist_to_workspace:
-          root: ./codemod
+          root: ~/project/codemod
           paths:
             - codemod/node_modules/*
       - slack/status:
