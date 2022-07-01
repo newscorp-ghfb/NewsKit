@@ -1,7 +1,9 @@
 SHORT_GIT_HASH := $(shell echo ${CIRCLE_SHA1} | cut -c -9)
 
 install:
-	yarn install --frozen-lockfile
+	echo "$PWD" 
+	ls
+	yarn install --frozen-lockfile;
 
 lint:
 	yarn lint
