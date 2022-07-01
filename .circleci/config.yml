@@ -936,7 +936,7 @@ jobs:
           at: ~/project/codemod
       - run:
           name: Lint Codemod
-          command: make lint
+          command: cd codemod && make lint
       - slack/status:
           <<: *slack_status
 
@@ -948,7 +948,7 @@ jobs:
           at: ~/project/codemod
       - run:
           name: Unit Testing Codemod
-          command: make unit_test
+          command: cd codemod && make unit_test
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports/codemod-junit/
       - store_test_results:
@@ -973,19 +973,19 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
       - run:
           name: Set github identity
-          command: make set_git_identity
+          command: cd codemod && make set_git_identity
       - when:
           condition: << parameters.publish_dev >>
           steps:
             - run:
                 name: Publish codemod to NPM
-                command: make publish_npm_dev
+                command: cd codemod && make publish_npm_dev
       - unless:
           condition: << parameters.publish_dev >>
           steps:
             - run:
                 name: Publish codemod to NPM
-                command: make publish_npm_dev; echo 'TODO'
+                command: cd codemod && make publish_npm_dev; echo 'TODO'
       - slack/status:
           <<: *slack_status
 

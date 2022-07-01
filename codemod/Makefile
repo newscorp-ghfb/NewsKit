@@ -14,3 +14,7 @@ publish_npm:
 
 publish_npm_dev:
 	yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable --access public;
+
+set_git_identity:
+	git config --global user.email "ncu-product-platforms@news.co.uk"
+	git config --global user.name "Product Platforms Service"
