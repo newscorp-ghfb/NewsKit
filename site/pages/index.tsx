@@ -297,6 +297,7 @@ const Index = (layoutProps: LayoutProps) => {
                   }}
                 >
                   Collaborate
+                  <h1>TEST</h1>
                 </TextBlock>
               </Block>
               <Block spaceStack="space050">
