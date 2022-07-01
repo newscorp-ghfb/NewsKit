@@ -917,8 +917,12 @@ jobs:
       - run:
           name: Codemode Dependencies Install
           command: cd codemod & make install
+      - save_cache:
+          key: yarn-build-v1-codemod-{{ checksum "codemod/yarn.lock" }}
+          paths:
+            - ~/.cache    
       - persist_to_workspace:
-          root: ~/project/codemod
+          root: ./codemod/
           paths:
             - codemod/node_modules/*
       - slack/status:
