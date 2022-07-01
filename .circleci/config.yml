@@ -10,7 +10,7 @@ slack_notify: &slack_notify
   mentions: 'newskitdevs'
   event: 'fail'
   # TODO try it on PR, then with a TAG
-  branch_pattern: 'ci/PPDSC-2084-enable-back-slack-messages-on-release)'
+  branch_pattern: 'ci/PPDSC-2084-enable-back-slack-messages-on-release'
 
 cypress_defaults: &cypress_defaults
   environment:
