@@ -6,6 +6,8 @@ install:
 	yarn install --frozen-lockfile;
 
 lint:
+	ls 
+	ls node_modules
 	yarn lint
 
 unit_test:
