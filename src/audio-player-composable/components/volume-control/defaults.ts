@@ -16,6 +16,9 @@ export default {
           stylePreset: 'audioPlayerVolumeControlThumb',
           size: 'sizing040',
         },
+        feedback: {
+          size: 'sizing060',
+        },
       },
       button: {
         stylePreset: 'iconButtonMinimalPrimary',
@@ -36,6 +39,9 @@ export default {
         thumb: {
           stylePreset: 'audioPlayerVolumeControlThumb',
           size: 'sizing040',
+        },
+        feedback: {
+          size: 'sizing060',
         },
       },
       button: {

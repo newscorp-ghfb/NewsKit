@@ -53,6 +53,16 @@ const myCustomTheme = createTheme({
           color: 'purple',
         },
       },
+      customFeedback: {
+        base: {
+          backgroundColor: '{{colors.red060}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          opacity: '{{overlays.opacity000}}',
+        },
+        hover: {
+          opacity: '{{overlays.opacity020}}',
+        },
+      },
       customPlaceholderIcon: {
         base: {
           iconColor: '{{colors.inkNonEssential}}',
@@ -293,26 +303,30 @@ export const StorySliderWithCustomStylePreset = () => (
           maxLabel="100%"
           thumbLabel
           overrides={{
-            track: {
-              stylePreset: 'customTrackStylePreset',
-              size: 'sizing050',
-            },
-            indicator: {
-              stylePreset: 'customIndicatorStylePreset',
-            },
-            thumb: {
-              stylePreset: 'customThumbStylePreset',
-              size: 'sizing070',
-            },
-            thumbLabel: {
-              stylePreset: 'customThumbLabelStylePreset',
-              typographyPreset: 'utilityLabel020',
-              space: 'space060',
-            },
-            labels: {
-              stylePreset: 'customLabelStylePreset',
-              typographyPreset: 'utilityLabel030',
-              space: 'space040',
+            // track: {
+            //   stylePreset: 'customTrackStylePreset',
+            //   size: 'sizing050',
+            // },
+            // indicator: {
+            //   stylePreset: 'customIndicatorStylePreset',
+            // },
+            // thumb: {
+            //   stylePreset: 'customThumbStylePreset',
+            //   size: 'sizing070',
+            // },
+            // thumbLabel: {
+            //   stylePreset: 'customThumbLabelStylePreset',
+            //   typographyPreset: 'utilityLabel020',
+            //   space: 'space060',
+            // },
+            // labels: {
+            //   stylePreset: 'customLabelStylePreset',
+            //   typographyPreset: 'utilityLabel030',
+            //   space: 'space040',
+            // },
+            feedback: {
+              size: 'sizing090',
+              stylePreset: 'customFeedback',
             },
           }}
         />

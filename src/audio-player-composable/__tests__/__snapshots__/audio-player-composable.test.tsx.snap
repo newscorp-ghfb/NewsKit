@@ -463,47 +463,15 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: #3358CC;
+  background-color: #EF1703;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-}
-
-.emotion-12:hover:not(:disabled) {
-  opacity: 0.2;
-}
-
-.emotion-12:disabled {
-  opacity: 0;
-}
-
-.emotion-12:hover:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.emotion-12:valid:hover:not(:disabled) {
-  background-color: #148F39;
-  opacity: 0.2;
-}
-
-.emotion-12:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
-  opacity: 0.4;
-}
-
-.emotion-12:invalid:hover:not(:disabled) {
-  background-color: #D20600;
-  opacity: 0.2;
-}
-
-.emotion-12:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
-  opacity: 0.4;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  -moz-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  -ms-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -900,12 +868,12 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
-  width: 48px;
-  height: 48px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  width: 32px;
+  height: 32px;
+  -webkit-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  -moz-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  -ms-transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
+  transform: translate3d(calc(32px / -2), calc(32px / -2), 0);
 }
 
 .emotion-12:hover:not(:disabled) {
@@ -1869,69 +1837,6 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   fill: #535353;
 }
 
-.emotion-27 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #3358CC;
-  border-radius: 50%;
-  opacity: 0;
-  width: 48px;
-  height: 48px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-}
-
-.emotion-27:hover:not(:disabled) {
-  opacity: 0.2;
-}
-
-.emotion-27:disabled {
-  opacity: 0;
-}
-
-.emotion-27:hover:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.emotion-27:valid:hover:not(:disabled) {
-  background-color: #148F39;
-  opacity: 0.2;
-}
-
-.emotion-27:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
-  opacity: 0.4;
-}
-
-.emotion-27:invalid:hover:not(:disabled) {
-  background-color: #D20600;
-  opacity: 0.2;
-}
-
-.emotion-27:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
-  opacity: 0.4;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-27 {
-    transition-property: opacity;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-27 {
-    transition-property: opacity;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
 .emotion-29 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -2219,7 +2124,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
                 values="0.7"
               >
                 <span
-                  class="emotion-27"
+                  class="emotion-3"
                   data-testid="volume-control-slider-feedback"
                 />
               </div>
@@ -4236,69 +4141,6 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   fill: #535353;
 }
 
-.emotion-26 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #3358CC;
-  border-radius: 50%;
-  opacity: 0;
-  width: 48px;
-  height: 48px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-}
-
-.emotion-26:hover:not(:disabled) {
-  opacity: 0.2;
-}
-
-.emotion-26:disabled {
-  opacity: 0;
-}
-
-.emotion-26:hover:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.emotion-26:valid:hover:not(:disabled) {
-  background-color: #148F39;
-  opacity: 0.2;
-}
-
-.emotion-26:valid:hover:active:not(:disabled) {
-  background-color: #148F39;
-  opacity: 0.4;
-}
-
-.emotion-26:invalid:hover:not(:disabled) {
-  background-color: #D20600;
-  opacity: 0.2;
-}
-
-.emotion-26:invalid:hover:active:not(:disabled) {
-  background-color: #D20600;
-  opacity: 0.4;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-26 {
-    transition-property: opacity;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-26 {
-    transition-property: opacity;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
 .emotion-28 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -4609,7 +4451,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
                 values="0.7"
               >
                 <span
-                  class="emotion-26"
+                  class="emotion-3"
                   data-testid="volume-control-slider-feedback"
                 />
               </div>

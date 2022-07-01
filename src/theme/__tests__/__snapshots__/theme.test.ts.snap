@@ -1340,6 +1340,9 @@ Object {
         "stylePreset": "iconButtonMinimalPrimary",
       },
       "slider": Object {
+        "feedback": Object {
+          "size": "sizing060",
+        },
         "indicator": Object {
           "stylePreset": "audioPlayerVolumeControlIndicator",
         },
@@ -1361,6 +1364,9 @@ Object {
         "stylePreset": "iconButtonMinimalPrimary",
       },
       "slider": Object {
+        "feedback": Object {
+          "size": "sizing060",
+        },
         "indicator": Object {
           "stylePreset": "audioPlayerVolumeControlIndicator",
         },

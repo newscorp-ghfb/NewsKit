@@ -953,6 +953,13 @@ describe('Audio Player Composable', () => {
                 color: 'green',
               },
             },
+            customFeedback: {
+              base: {
+                backgroundColor: '{{colors.red060}}',
+                borderRadius: '{{borders.borderRadiusCircle}}',
+                opacity: '{{overlays.opacity000}}',
+              },
+            },
           },
         },
       });
@@ -982,6 +989,10 @@ describe('Audio Player Composable', () => {
                 },
                 thumbLabel: {
                   stylePreset: 'customThumbLabelStylePreset',
+                },
+                feedback: {
+                  size: 'sizing070',
+                  stylePreset: 'customFeedback',
                 },
               },
             }}
