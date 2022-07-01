@@ -867,6 +867,8 @@ jobs:
       - run:
           name: 'exit 1'
           command: 'exit 1'
+      - slack/notify:
+        <<: *slack_notify
 
   test_newskit_in_nextjs_app:
     executor: cypress
