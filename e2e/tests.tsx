@@ -6,6 +6,7 @@ import React from 'react';
 interface StoryType {
   default: {
     title: string;
+    decorators: Array<(Story: StoryType) => JSX.Element>;
   };
 }
 
@@ -55,6 +56,18 @@ export default function showTestcase() {
     const message = `No story found with the name: '${name}.'`;
     console.error(message);
     return <A11yFail message={message} />;
+  }
+
+  if (story.default.decorators) {
+    return (
+      <>
+        {Object.values(story)
+          .filter(storyComponent => typeof storyComponent === 'function')
+          .map(Story => (
+            <>{story.default.decorators[0](Story)}</>
+          ))}
+      </>
+    );
   }
 
   return (
