@@ -11,7 +11,6 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
   -webkit-column-gap: 12px;
   column-gap: 12px;
 }

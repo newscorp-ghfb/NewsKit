@@ -175,12 +175,11 @@ const fullAudioPlayerAreasMobile = `
  `;
 
 const fullAudioPlayerLiveAreasDesktop = `
-  live        none   none       none   none      none   none
-  volume      prev   backward   play   forward   next   link
+  volume      prev   backward   play   forward   next   live   link
  `;
 
 const fullAudioPlayerLiveAreasMobile = `
-  none        none      none      none      link      live
+  none        none      none      none      none      live
   volume      prev      backward  play      forward   next
 `;
 
@@ -196,7 +195,7 @@ const AudioPlayerFullRecorded = (props: {
       <GridLayout
         columns={{
           xs: 'auto 1fr auto auto auto 1fr',
-          md: '50px 1fr auto auto auto 1fr 50px',
+          md: '50px 1fr auto auto auto 1fr 100px',
         }}
         rowGap="space040"
         columnGap="space040"
@@ -288,9 +287,8 @@ const AudioPlayerFullLive = (props: {
       <GridLayout
         columns={{
           xs: 'auto 1fr auto auto auto 1fr',
-          md: '50px 1fr auto auto auto 1fr 50px',
+          md: '50px 1fr auto auto auto 1fr 42px 42px',
         }}
-        rowGap="space040"
         columnGap="space040"
         areas={{
           xs: fullAudioPlayerLiveAreasMobile,
@@ -367,35 +365,41 @@ const AudioPlayerFullLive = (props: {
 const AudioPlayerInlineRecorded = (props: {
   ariaLandmark: string;
   src?: string;
-}) => (
-  <AudioPlayerComposable src={AUDIO_SRC} {...props}>
-    <GridLayout
-      columns="auto auto 40px 1fr 40px"
-      columnGap="space040"
-      alignItems="center"
-    >
-      <GridLayoutItem column="1/2" row="1/5">
-        <AudioPlayerVolumeControl layout="vertical" />
-      </GridLayoutItem>
-      <GridLayoutItem column="2/3" row="4/5">
-        <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
-      </GridLayoutItem>
-      <GridLayoutItem column="3/4" row="4/5">
-        <AudioPlayerTimeDisplay
-          format={({currentTime}) => calculateTime(currentTime)}
-        />
-      </GridLayoutItem>
-      <GridLayoutItem column="4/5" row="4/5">
-        <AudioPlayerSeekBar />
-      </GridLayoutItem>
-      <GridLayoutItem column="5/6" row="4/5">
-        <AudioPlayerTimeDisplay
-          format={({duration}) => calculateTime(duration)}
-        />
-      </GridLayoutItem>
-    </GridLayout>
-  </AudioPlayerComposable>
-);
+}) => {
+  const breakpointKey = useBreakpointKey();
+  return (
+    <AudioPlayerComposable src={AUDIO_SRC} {...props}>
+      <GridLayout
+        columns="auto auto 40px 1fr 40px"
+        columnGap="space040"
+        alignItems="center"
+      >
+        <GridLayoutItem column="1/2" row="1/5">
+          <AudioPlayerVolumeControl
+            collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+            layout="vertical"
+          />
+        </GridLayoutItem>
+        <GridLayoutItem column="2/3" row="4/5">
+          <AudioPlayerPlayPauseButton size={ButtonSize.Small} />
+        </GridLayoutItem>
+        <GridLayoutItem column="3/4" row="4/5">
+          <AudioPlayerTimeDisplay
+            format={({currentTime}) => calculateTime(currentTime)}
+          />
+        </GridLayoutItem>
+        <GridLayoutItem column="4/5" row="4/5">
+          <AudioPlayerSeekBar />
+        </GridLayoutItem>
+        <GridLayoutItem column="5/6" row="4/5">
+          <AudioPlayerTimeDisplay
+            format={({duration}) => calculateTime(duration)}
+          />
+        </GridLayoutItem>
+      </GridLayout>
+    </AudioPlayerComposable>
+  );
+};
 
 const AudioPlayerInlineLive = (props: {ariaLandmark: string; src?: string}) => (
   <AudioPlayerComposable src={LIVE_AUDIO_SRC} live {...props}>
@@ -583,227 +587,233 @@ export const AudioPlayerWithInitialProps = () => {
 
 AudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
 
-export const AudioPlayerOverrides = () => (
-  <ThemeProvider theme={myCustomTheme}>
-    <StyledPage>
-      <StorybookSubHeading>Audio player with overrides</StorybookSubHeading>
-      <AudioPlayerComposable
-        src={AUDIO_SRC}
-        ariaLandmark="audio player overrides"
-      >
-        <GridLayout
-          columns={{
-            xs: '1fr auto auto auto 1fr',
-            md: '50px 1fr auto auto auto 1fr 50px',
-          }}
-          rowGap="space040"
-          columnGap="space040"
-          areas={{
-            xs: fullAudioPlayerAreasMobile,
-            md: fullAudioPlayerAreasDesktop,
-          }}
+export const AudioPlayerOverrides = () => {
+  const breakpointKey = useBreakpointKey();
+  return (
+    <ThemeProvider theme={myCustomTheme}>
+      <StyledPage>
+        <StorybookSubHeading>Audio player with overrides</StorybookSubHeading>
+        <AudioPlayerComposable
+          src={AUDIO_SRC}
+          ariaLandmark="audio player overrides"
         >
-          {Areas => (
-            <>
-              <Areas.Play alignSelf="center">
-                <AudioPlayerPlayPauseButton
-                  overrides={{
-                    iconSize: 'iconSize030',
-                    stylePreset: 'buttonOutlinedNegative',
-                  }}
-                />
-              </Areas.Play>
+          <GridLayout
+            columns={{
+              xs: '1fr auto auto auto 1fr',
+              md: '50px 1fr auto auto auto 1fr 50px',
+            }}
+            rowGap="space040"
+            columnGap="space040"
+            areas={{
+              xs: fullAudioPlayerAreasMobile,
+              md: fullAudioPlayerAreasDesktop,
+            }}
+          >
+            {Areas => (
+              <>
+                <Areas.Play alignSelf="center">
+                  <AudioPlayerPlayPauseButton
+                    overrides={{
+                      iconSize: 'iconSize030',
+                      stylePreset: 'buttonOutlinedNegative',
+                    }}
+                  />
+                </Areas.Play>
 
-              <Areas.Backward alignSelf="center">
-                <AudioPlayerReplayButton
-                  seconds={5}
-                  overrides={{
-                    iconSize: 'iconSize030',
-                    stylePreset: 'buttonOutlinedNegative',
-                  }}
-                >
-                  <IconFilledReplay5 />
-                </AudioPlayerReplayButton>
-              </Areas.Backward>
-
-              <Areas.Forward alignSelf="center">
-                <AudioPlayerForwardButton
-                  seconds={5}
-                  overrides={{
-                    iconSize: 'iconSize030',
-                    stylePreset: 'buttonOutlinedNegative',
-                  }}
-                >
-                  <IconFilledForward5 />
-                </AudioPlayerForwardButton>
-              </Areas.Forward>
-
-              <Areas.Prev alignSelf="center" justifySelf="end">
-                <AudioPlayerSkipPreviousButton
-                  overrides={{
-                    iconSize: 'iconSize030',
-                    stylePreset: 'buttonOutlinedNegative',
-                  }}
-                />
-              </Areas.Prev>
-
-              <Areas.Next alignSelf="center">
-                <AudioPlayerSkipNextButton
-                  overrides={{
-                    iconSize: 'iconSize030',
-                    stylePreset: 'buttonOutlinedNegative',
-                  }}
-                  onClick={() => console.log('on skip Next track')}
-                />
-              </Areas.Next>
-
-              <Areas.Volume alignSelf="center" justifySelf="start">
-                <AudioPlayerVolumeControl
-                  muteButtonSize={ButtonSize.Medium}
-                  overrides={{
-                    stylePreset:
-                      'customAudioPlayerVolumeControlHorizontalContainer',
-                    spaceBetween: 'space050',
-                    slider: {
-                      track: {
-                        stylePreset: 'customTrackStylePreset',
-                        size: 'sizing020',
-                      },
-                      indicator: {
-                        stylePreset: 'customIndicatorStylePreset',
-                      },
-                      thumb: {
-                        stylePreset: 'customThumbStylePreset',
-                        size: 'sizing040',
-                      },
-                      feedback: {
-                        size: 'sizing070',
-                        stylePreset: 'customFeedback',
-                      },
-                    },
-                  }}
-                />
-              </Areas.Volume>
-
-              <Areas.SeekBar>
-                <AudioPlayerSeekBar
-                  overrides={{
-                    slider: {
-                      track: {
-                        stylePreset: 'customAudioPlayerSeekBarTrack',
-                        size: 'sizing030',
-                      },
-                      indicator: {
-                        stylePreset: 'customAudioPlayerSeekBarIndicator',
-                      },
-                      thumb: {
-                        stylePreset: 'customAudioPlayerThumb',
-                        size: 'sizing050',
-                      },
-                      feedback: {
-                        size: 'sizing070',
-                        stylePreset: 'customFeedback',
-                      },
-                    },
-                    buffering: {
-                      stylePreset: 'customAudioPlayerSeekBarBuffering',
-                    },
-                  }}
-                />
-              </Areas.SeekBar>
-
-              <Areas.CurrentTime>
-                <AudioPlayerTimeDisplay
-                  overrides={{
-                    typographyPreset: 'editorialSubheadline010',
-                    stylePreset: 'customAudioPlayerLabels',
-                  }}
-                  format={({currentTime}) => calculateTime(currentTime)}
-                />
-              </Areas.CurrentTime>
-
-              <Areas.TotalTime justifySelf="end">
-                <AudioPlayerTimeDisplay
-                  overrides={{
-                    typographyPreset: 'editorialSubheadline010',
-                    stylePreset: 'customAudioPlayerLabels',
-                  }}
-                  format={({duration}) => calculateTime(duration)}
-                />
-              </Areas.TotalTime>
-
-              <Areas.Link alignSelf="center" justifySelf="end">
-                <Hidden xs sm>
-                  <IconButton
-                    aria-label="Open popout player"
-                    href="https://www.newskit.co.uk/"
-                    overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
+                <Areas.Backward alignSelf="center">
+                  <AudioPlayerReplayButton
+                    seconds={5}
+                    overrides={{
+                      iconSize: 'iconSize030',
+                      stylePreset: 'buttonOutlinedNegative',
+                    }}
                   >
-                    <IconFilledLaunch />
-                  </IconButton>
-                </Hidden>
-              </Areas.Link>
-            </>
-          )}
-        </GridLayout>
-      </AudioPlayerComposable>
-      <StorybookSubHeading>MuteButton Icon Prop Overrides</StorybookSubHeading>
-      <AudioPlayerComposable
-        src={AUDIO_SRC}
-        ariaLandmark="audio player mutebutton icon prop overrides"
-      >
-        <AudioPlayerVolumeControl
-          muteButtonSize={ButtonSize.Medium}
-          overrides={{
-            button: {
-              muteButtonIcon: {
-                props: {
-                  overrides: {
-                    stylePreset: 'inkPositive',
-                    size: 'iconSize010',
+                    <IconFilledReplay5 />
+                  </AudioPlayerReplayButton>
+                </Areas.Backward>
+
+                <Areas.Forward alignSelf="center">
+                  <AudioPlayerForwardButton
+                    seconds={5}
+                    overrides={{
+                      iconSize: 'iconSize030',
+                      stylePreset: 'buttonOutlinedNegative',
+                    }}
+                  >
+                    <IconFilledForward5 />
+                  </AudioPlayerForwardButton>
+                </Areas.Forward>
+
+                <Areas.Prev alignSelf="center" justifySelf="end">
+                  <AudioPlayerSkipPreviousButton
+                    overrides={{
+                      iconSize: 'iconSize030',
+                      stylePreset: 'buttonOutlinedNegative',
+                    }}
+                  />
+                </Areas.Prev>
+
+                <Areas.Next alignSelf="center">
+                  <AudioPlayerSkipNextButton
+                    overrides={{
+                      iconSize: 'iconSize030',
+                      stylePreset: 'buttonOutlinedNegative',
+                    }}
+                    onClick={() => console.log('on skip Next track')}
+                  />
+                </Areas.Next>
+
+                <Areas.Volume alignSelf="center" justifySelf="start">
+                  <AudioPlayerVolumeControl
+                    muteButtonSize={ButtonSize.Medium}
+                    collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+                    overrides={{
+                      stylePreset:
+                        'customAudioPlayerVolumeControlHorizontalContainer',
+                      spaceBetween: 'space050',
+                      slider: {
+                        track: {
+                          stylePreset: 'customTrackStylePreset',
+                          size: 'sizing020',
+                        },
+                        indicator: {
+                          stylePreset: 'customIndicatorStylePreset',
+                        },
+                        thumb: {
+                          stylePreset: 'customThumbStylePreset',
+                          size: 'sizing040',
+                        },
+                        feedback: {
+                          size: 'sizing070',
+                          stylePreset: 'customFeedback',
+                        },
+                      },
+                    }}
+                  />
+                </Areas.Volume>
+
+                <Areas.SeekBar>
+                  <AudioPlayerSeekBar
+                    overrides={{
+                      slider: {
+                        track: {
+                          stylePreset: 'customAudioPlayerSeekBarTrack',
+                          size: 'sizing030',
+                        },
+                        indicator: {
+                          stylePreset: 'customAudioPlayerSeekBarIndicator',
+                        },
+                        thumb: {
+                          stylePreset: 'customAudioPlayerThumb',
+                          size: 'sizing050',
+                        },
+                        feedback: {
+                          size: 'sizing070',
+                          stylePreset: 'customFeedback',
+                        },
+                      },
+                      buffering: {
+                        stylePreset: 'customAudioPlayerSeekBarBuffering',
+                      },
+                    }}
+                  />
+                </Areas.SeekBar>
+
+                <Areas.CurrentTime>
+                  <AudioPlayerTimeDisplay
+                    overrides={{
+                      typographyPreset: 'editorialSubheadline010',
+                      stylePreset: 'customAudioPlayerLabels',
+                    }}
+                    format={({currentTime}) => calculateTime(currentTime)}
+                  />
+                </Areas.CurrentTime>
+
+                <Areas.TotalTime justifySelf="end">
+                  <AudioPlayerTimeDisplay
+                    overrides={{
+                      typographyPreset: 'editorialSubheadline010',
+                      stylePreset: 'customAudioPlayerLabels',
+                    }}
+                    format={({duration}) => calculateTime(duration)}
+                  />
+                </Areas.TotalTime>
+
+                <Areas.Link alignSelf="center" justifySelf="end">
+                  <Hidden xs sm>
+                    <IconButton
+                      aria-label="Open popout player"
+                      href="https://www.newskit.co.uk/"
+                      overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
+                    >
+                      <IconFilledLaunch />
+                    </IconButton>
+                  </Hidden>
+                </Areas.Link>
+              </>
+            )}
+          </GridLayout>
+        </AudioPlayerComposable>
+        <StorybookSubHeading>
+          MuteButton Icon Prop Overrides
+        </StorybookSubHeading>
+        <AudioPlayerComposable
+          src={AUDIO_SRC}
+          ariaLandmark="audio player mutebutton icon prop overrides"
+        >
+          <AudioPlayerVolumeControl
+            muteButtonSize={ButtonSize.Medium}
+            overrides={{
+              button: {
+                muteButtonIcon: {
+                  props: {
+                    overrides: {
+                      stylePreset: 'inkPositive',
+                      size: 'iconSize010',
+                    },
                   },
                 },
               },
-            },
-          }}
-        />
-      </AudioPlayerComposable>
-      <StorybookSubHeading>MuteButton Icon Overrides</StorybookSubHeading>
-      <AudioPlayerComposable
-        src={AUDIO_SRC}
-        ariaLandmark="audio player mutebutton icon overrides"
-      >
-        <AudioPlayerVolumeControl
-          muteButtonSize={ButtonSize.Medium}
-          overrides={{
-            button: {
-              muteButtonIcon: {
-                stylePreset: 'inkNegative',
-                size: 'iconSize030',
+            }}
+          />
+        </AudioPlayerComposable>
+        <StorybookSubHeading>MuteButton Icon Overrides</StorybookSubHeading>
+        <AudioPlayerComposable
+          src={AUDIO_SRC}
+          ariaLandmark="audio player mutebutton icon overrides"
+        >
+          <AudioPlayerVolumeControl
+            muteButtonSize={ButtonSize.Medium}
+            overrides={{
+              button: {
+                muteButtonIcon: {
+                  stylePreset: 'inkNegative',
+                  size: 'iconSize030',
+                },
               },
-            },
-          }}
-        />
-      </AudioPlayerComposable>
-      <StorybookSubHeading>
-        MuteButton Icon Component Overrides
-      </StorybookSubHeading>
-      <AudioPlayerComposable
-        src={AUDIO_SRC}
-        ariaLandmark="audio player mutebutton component overrides"
-      >
-        <AudioPlayerVolumeControl
-          muteButtonSize={ButtonSize.Medium}
-          overrides={{
-            button: {
-              muteButtonIcon: CustomMuteButtonIcon,
-            },
-          }}
-        />
-      </AudioPlayerComposable>
-    </StyledPage>
-  </ThemeProvider>
-);
+            }}
+          />
+        </AudioPlayerComposable>
+        <StorybookSubHeading>
+          MuteButton Icon Component Overrides
+        </StorybookSubHeading>
+        <AudioPlayerComposable
+          src={AUDIO_SRC}
+          ariaLandmark="audio player mutebutton component overrides"
+        >
+          <AudioPlayerVolumeControl
+            muteButtonSize={ButtonSize.Medium}
+            overrides={{
+              button: {
+                muteButtonIcon: CustomMuteButtonIcon,
+              },
+            }}
+          />
+        </AudioPlayerComposable>
+      </StyledPage>
+    </ThemeProvider>
+  );
+};
 AudioPlayerOverrides.storyName = 'audio-player-overrides';
 
 export const AudioPlayPauseButtonAutoplay = () => (

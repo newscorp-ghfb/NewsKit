@@ -20,9 +20,10 @@ export const StyledVolumeSliderContainer = styled.div<
 `;
 
 export const StyledGridLayout = styled(GridLayout)<
-  Pick<AudioPlayerVolumeControlProps, 'layout' | 'overrides'>
+  Pick<AudioPlayerVolumeControlProps, 'layout' | 'overrides' | 'collapsed'>
 >`
-  ${({layout}) => getStylePreset(`audioPlayerVolumeControl.${layout}`, '')};
+  ${({layout, collapsed}) =>
+    !collapsed && getStylePreset(`audioPlayerVolumeControl.${layout}`, '')};
   ${({layout}) =>
     layout === 'vertical' &&
     `

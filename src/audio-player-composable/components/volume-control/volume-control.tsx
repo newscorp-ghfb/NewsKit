@@ -78,6 +78,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
       justifyItems={layout === 'vertical' ? 'center' : 'start'}
       alignItems="center"
       layout={layout}
+      collapsed={collapsed}
       overrides={overrides}
     >
       <GridLayoutItem area="muteButton">
