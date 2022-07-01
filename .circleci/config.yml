@@ -1,15 +1,16 @@
 version: 2.1
 
 orbs:
-  slack: circleci/slack@3.4.1
+  slack: circleci/slack@4.10.1
   aws-cli: circleci/aws-cli@2.0.0
   github-cli: circleci/github-cli@1.0.4
 
 slack_status: &slack_status
   channel: '#nuk-pp-newskit'
   mentions: 'newskitdevs'
-  fail_only: true
-  only_for_branches: 'main'
+  event: 'fail'
+  # TODO try it on PR, then with a TAG
+  branch_pattern: 'ci/PPDSC-2084-enable-back-slack-messages-on-release)'
 
 cypress_defaults: &cypress_defaults
   environment:
@@ -860,6 +861,11 @@ jobs:
       - slack/status:
           <<: *slack_status
 
+  test_failing_job:
+    executor: node
+    steps: 
+      run: 'exit 1'
+
   test_newskit_in_nextjs_app:
     executor: cypress
     steps:
@@ -938,6 +944,7 @@ workflows:
         pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert\/.*|style\/.*|test\/.*|^dependabot\/.*'
         value: << pipeline.git.branch >>
     jobs:
+      - test_failing_job
       - install_deps
       - install_cypress
       - build_icons:
