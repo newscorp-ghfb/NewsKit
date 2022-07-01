@@ -1,0 +1,9 @@
+{
+  "include": [
+    "src/",
+    "scripts/",
+    ".eslintrc.js",
+    "jest.config.js",
+    "theme-packages/"
+  ]
+}

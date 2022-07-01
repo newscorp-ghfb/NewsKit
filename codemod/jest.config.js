@@ -1,5 +1,4 @@
 module.exports = {
-  name: 'codemod',
   displayName: 'Codemod',
   bail: true,
   rootDir: './',

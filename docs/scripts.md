@@ -37,8 +37,6 @@ Scripts should be named using the following naming convention:
 
 * `test:unit:site` -> runs the unit tests on the site folder.
 
-* `test:unit:codemod` -> runs the unit tests on the codemod folder.
-
 * `test:visual:comps:ci` -> starts the local storybook and runs the applitools storybook tests afterwards.
 
 * `e2e:build` -> builds the end to end tests.

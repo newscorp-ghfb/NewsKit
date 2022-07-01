@@ -15,9 +15,6 @@ BASE_URI = ${SITE_BASE_URL}${BASE_PATH}/
 install:
 	yarn install --frozen-lockfile
 
-install_codemod:
-	cd codemod && yarn install --frozen-lockfile
-
 # When changing the version, make sure it matches the one used in the `test_newskit_in_nextjs_app` CircleCI's job.
 install_cypress:
 	yarn add -D cypress@9.1.0;
@@ -42,9 +39,6 @@ unit_test_docs:
 
 unit_test_comps:
 	yarn test:unit:ci --projects=src
-
-unit_test_codemod:
-	yarn test:unit:ci --projects=codemod
 
 lint:
 	yarn lint
@@ -73,12 +67,6 @@ publish_npm_dev:
 publish_npm:
 	cd dist; yarn publish --no-git-tag-version;
 
-publish_codemod_npm:
-	cd codemod; yarn publish --no-git-tag-version --access public;
-
-publish_codemod_npm_dev:
-	cd codemod; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable --access public;
-
 build_docker:
 	docker build -t ncu-newskit .
 
@@ -93,9 +81,6 @@ set_git_identity:
 bump_version:
 	git checkout main
 	git pull
-	
-	cd codemod; yarn version --no-git-tag-version --new-version ${NEW_VERSION}; cd ..
-
 	yarn config set version-git-message "Bumping to version v%s - [skip ci]"
 	echo "Updating package.json and creating a tag for `${NEW_VERSION}`"
 	yarn version --new-version ${NEW_VERSION}

@@ -906,17 +906,33 @@ jobs:
       - slack/status:
           <<: *slack_status
 
-  install_codemod_deps:
+  install_deps_codemod:
     executor: node
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - yarn-build-v1-codemod-{{ checksum "codemod/yarn.lock" }}
+            - yarn-build-v1-codemod-
       - run:
           name: Codemode Dependencies Install
-          command: make install_codemod
+          command: cd codemod & make install
       - persist_to_workspace:
-          root: ./
+          root: ./codemod
           paths:
             - codemod/node_modules/*
+      - slack/status:
+          <<: *slack_status
+
+  lint_codemod:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project/codemod
+      - run:
+          name: Lint Codemod
+          command: make lint
       - slack/status:
           <<: *slack_status
 
@@ -925,20 +941,20 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: ~/project
+          at: ~/project/codemod
       - run:
           name: Unit Testing Codemod
-          command: make unit_test_codemod
+          command: make unit_test
           environment:
-            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+            JEST_JUNIT_OUTPUT_DIR: ./reports/codemod-junit/
       - store_test_results:
-          path: ./reports/junit/
+          path: ./reports/codemod-junit/
       - store_artifacts:
-          path: ./reports/junit
+          path: ./reports/codemod-junit
       - slack/status:
           <<: *slack_status
 
-  publish_codemod_npm:
+  publish_npm_codemod:
     parameters:
       publish_dev:
         type: boolean
@@ -959,13 +975,13 @@ jobs:
           steps:
             - run:
                 name: Publish codemod to NPM
-                command: make publish_codemod_npm_dev
+                command: make publish_npm_dev
       - unless:
           condition: << parameters.publish_dev >>
           steps:
             - run:
                 name: Publish codemod to NPM
-                command: make publish_codemod_npm
+                command: make publish_npm_dev; echo 'TODO'
       - slack/status:
           <<: *slack_status
 
@@ -1141,22 +1157,28 @@ workflows:
           requires:
             - deploy_to_s3
 
-      - install_codemod_deps:
-          requires:
-            - install_deps
+      - install_deps_codemod:
+
       - test_unit_codemod:
           requires:
-            - install_codemod_deps
-      - approve_publish_npm_codemod_pr:
+            - install_deps_codemod
+
+      - lint_codemod:
+          requires:
+            - install_deps_codemod
+
+      - approve_publish_npm_pr_codemod:
           type: approval
           requires:
             - test_unit_codemod
-      - publish_codemod_npm:
+            - lint_codemod
+
+      - publish_npm_codemod:
           name: publish_npm_codemod_pr
           context: ncu-product-platforms-context
           publish_dev: true
           requires:
-            - approve_publish_npm_codemod_pr
+            - approve_publish_npm_pr_codemod
 
   main:
     when:
@@ -1423,21 +1445,33 @@ workflows:
             - test_e2e_comps
             - test_e2e_docs_prod
             - test_newskit_in_nextjs_app
-            - test_unit_codemod
 
-      - install_codemod_deps:
+      - install_deps_codemod:
           <<: *only_on_version_tag
-          requires:
-            - install_deps
 
       - test_unit_codemod:
+          <<: *only_on_version_tag
           requires:
-            - install_codemod_deps
+            - install_deps_codemod
 
-      - publish_codemod_npm:
-          context: ncu-product-platforms-context
+      - lint_codemod:
+          <<: *only_on_version_tag
           requires:
-            - publish_npm
+            - install_deps_codemod
+
+      - approve_publish_npm_codemod:
+          <<: *only_on_version_tag
+          type: approval
+          requires:
+            - test_unit_codemod
+            - lint_codemod
+
+      - publish_npm_codemod:
+          <<: *only_on_version_tag
+          context: ncu-product-platforms-context
+          publish_dev: false
+          requires:
+            - approve_publish_npm_codemod
 
       # Deploying newskit.co.uk and storybook to Staging then to Prod environment.
       - eks_flux_deploy:
