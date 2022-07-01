@@ -1,16 +1,16 @@
 SHORT_GIT_HASH := $(shell echo ${CIRCLE_SHA1} | cut -c -9)
 
 install:
-	cd codemod; yarn install --frozen-lockfile
+	yarn install --frozen-lockfile
 
 lint:
 	yarn lint
 
 unit_test:
-	cd codemod; yarn test:unit:ci --projects=codemod	
+	yarn test:unit:ci --projects=codemod	
 
 publish_npm:
-	cd codemod; yarn publish --no-git-tag-version --access public;
+	yarn publish --no-git-tag-version --access public;
 
 publish_npm_dev:
-	cd codemod; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable --access public;
+	yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable --access public;

@@ -916,7 +916,7 @@ jobs:
             - yarn-build-v1-codemod-
       - run:
           name: Codemode Dependencies Install
-          command: make install
+          command: cd codemod && make install
       - save_cache:
           key: yarn-build-v1-codemod-{{ checksum "codemod/yarn.lock" }}
           paths:
