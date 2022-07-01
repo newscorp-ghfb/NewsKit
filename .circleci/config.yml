@@ -933,7 +933,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: ~/project/codemod
+          at: ~/project
       - run:
           name: Lint Codemod
           command: cd codemod && make lint
@@ -945,7 +945,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: ~/project/codemod
+          at: ~/project
       - run:
           name: Unit Testing Codemod
           command: cd codemod && make unit_test
@@ -967,7 +967,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: ~/project/codemod
+          at: ~/project
       - run:
           name: Add NPM login credentionals
           command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
