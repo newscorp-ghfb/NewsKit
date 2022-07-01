@@ -1,17 +1,13 @@
 SHORT_GIT_HASH := $(shell echo ${CIRCLE_SHA1} | cut -c -9)
 
 install:
-	echo "$PWD" 
-	ls
 	yarn install --frozen-lockfile;
 
 lint:
-	ls 
-	ls node_modules
 	yarn lint
 
 unit_test:
-	yarn test:unit:ci --projects=codemod	
+	yarn test:ci	
 
 publish_npm:
 	yarn publish --no-git-tag-version --access public;
