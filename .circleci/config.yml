@@ -1157,7 +1157,7 @@ workflows:
           requires:
             - deploy_to_s3
 
-      - install_deps_codemod:
+      - install_deps_codemod
 
       - test_unit_codemod:
           requires:
