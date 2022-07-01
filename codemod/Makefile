@@ -7,10 +7,10 @@ lint:
 	yarn lint
 
 unit_test:
-	yarn test:unit:ci --projects=codemod	
+	cd codemod; yarn test:unit:ci --projects=codemod	
 
 publish_npm:
-	yarn publish --no-git-tag-version --access public;
+	cd codemod; yarn publish --no-git-tag-version --access public;
 
 publish_npm_dev:
-	yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable --access public;
+	cd codemod; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable --access public;
