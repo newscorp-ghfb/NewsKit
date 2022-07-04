@@ -1,5 +1,6 @@
 export default {
   popover: {
+    transitionPreset: 'fade',
     zIndex: 80,
     distance: 'space050',
     stylePreset: 'popover',
