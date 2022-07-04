@@ -11,7 +11,7 @@ slack_notify: &slack_notify
   event: 'fail'
   branch_pattern: 'main'
   # The following tag_pattern allows slack messages to be sent also when workflows are triggered by tags.
-  # Such as in the release process.
+  # Such as in the release process. The tags MUST mirror the one used by release workflows filters.
   tag_pattern: '/^trigger-release@([0-9])(\.([0-9])){2}$/, /^v([0-9])(\.([0-9])){2}$/'
 
 cypress_defaults: &cypress_defaults
