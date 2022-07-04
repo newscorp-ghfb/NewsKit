@@ -173,6 +173,7 @@ export const FormInputSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       assistiveTextId,
       labelId,
       statusIcon,
+      isRequired,
     } = useFormFieldContext();
 
     return (
@@ -187,6 +188,7 @@ export const FormInputSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         ref={composeRefs(ref, inputRef)}
         id={id}
         aria-describedby={assistiveTextId}
+        aria-required={isRequired ? true : undefined}
         {...props}
       >
         {children}
@@ -256,6 +258,7 @@ export const FormInputCheckbox = React.forwardRef<
     ref,
     id,
     assistiveTextId,
+    isRequired,
   } = useFormFieldContext();
 
   return (
@@ -268,6 +271,7 @@ export const FormInputCheckbox = React.forwardRef<
       ref={composeRefs(ref, inputRef)}
       id={id}
       aria-describedby={assistiveTextId}
+      aria-required={isRequired ? true : undefined}
       {...props}
     />
   );
@@ -286,6 +290,7 @@ export const FormInputRadioButton = React.forwardRef<
     ref,
     id,
     assistiveTextId,
+    isRequired,
   } = useFormFieldContext();
 
   return (
@@ -298,6 +303,7 @@ export const FormInputRadioButton = React.forwardRef<
       ref={composeRefs(ref, inputRef)}
       id={id}
       aria-describedby={assistiveTextId}
+      aria-required={isRequired ? true : undefined}
       {...props}
     />
   );
