@@ -7,6 +7,7 @@ import {
 } from '@floating-ui/react-dom-interactions';
 import {MQ} from '../utils';
 import {LogicalPaddingProps} from '../utils/logical-properties';
+import {TransitionToken} from '../theme';
 
 export type TriggerType = 'click' | 'hover' | 'focus';
 export type FallbackBehaviourType = 'flip' | 'shift';
@@ -51,6 +52,7 @@ export interface FloatingElementProps
       size?: MQ<string>;
       edgeOffset?: string;
     };
+    transitionPreset?: TransitionToken | TransitionToken[];
   };
   className?: string;
   onDismiss?: () => void;

@@ -1,5 +1,11 @@
 export default {
   tooltip: {
+    transitionPreset: {
+      extend: 'fade',
+      base: {
+        transitionDelay: '{{motions.motionDuration020}}',
+      },
+    },
     zIndex: 80,
     distance: 'space020',
     pointer: {
