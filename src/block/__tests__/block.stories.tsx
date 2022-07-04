@@ -217,12 +217,9 @@ export default {
   title: 'NewsKit Light/block',
   component: () => 'None',
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (Story: StoryType) => (
       <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(
-          context?.globals?.backgrounds?.value,
-          blockCustomThemeObject,
-        )}
+        theme={createCustomThemeWithBaseThemeSwitch(blockCustomThemeObject)}
       >
         <Story />
       </ThemeProvider>

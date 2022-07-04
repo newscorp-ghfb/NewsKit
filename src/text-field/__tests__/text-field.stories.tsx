@@ -638,12 +638,9 @@ export default {
   component: () => 'None',
   disabledRules: ['color-contrast'],
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (Story: StoryType) => (
       <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(
-          context?.globals?.backgrounds?.value,
-          textFieldCustomThemeObject,
-        )}
+        theme={createCustomThemeWithBaseThemeSwitch(textFieldCustomThemeObject)}
       >
         <Story />
       </ThemeProvider>

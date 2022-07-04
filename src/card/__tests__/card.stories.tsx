@@ -1693,12 +1693,9 @@ export default {
   title: 'NewsKit Light/card',
   component: () => 'None',
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (Story: StoryType) => (
       <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(
-          context?.globals?.backgrounds?.value,
-          cardCustomThemeObject,
-        )}
+        theme={createCustomThemeWithBaseThemeSwitch(cardCustomThemeObject)}
       >
         <Story />
       </ThemeProvider>

@@ -840,12 +840,9 @@ export default {
   title: 'NewsKit Light/drawer',
   component: () => 'None',
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (Story: StoryType) => (
       <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(
-          context?.globals?.backgrounds?.value,
-          drawerCustomThemeObject,
-        )}
+        theme={createCustomThemeWithBaseThemeSwitch(drawerCustomThemeObject)}
       >
         <Story />
       </ThemeProvider>

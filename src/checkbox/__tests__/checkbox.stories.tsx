@@ -399,12 +399,9 @@ export default {
   component: () => 'None',
   disabledRules: [],
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (Story: StoryType) => (
       <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(
-          context?.globals?.backgrounds?.value,
-          checkboxCustomThemeObject,
-        )}
+        theme={createCustomThemeWithBaseThemeSwitch(checkboxCustomThemeObject)}
       >
         <Story />
       </ThemeProvider>
