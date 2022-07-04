@@ -9,9 +9,9 @@ slack_notify: &slack_notify
   channel: '#nuk-pp-newskit'
   mentions: '@newskitdevs'
   event: 'fail'
-  # TODO try it on PR, then with a TAG, then with regex?
   branch_pattern: 'main'
-  tag_pattern: /^test-1$/, /^test-2$/
+  #TODO raised issue for multy tag regex https://github.com/CircleCI-Public/slack-orb/issues/355
+  tag_pattern: 'test-[0-9], test-[a-z]'
 
 cypress_defaults: &cypress_defaults
   environment:
@@ -862,7 +862,18 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
+  # TODO to remove
   test_failing_job:
+    executor: node
+    steps: 
+      - run:
+          name: 'exit 1'
+          command: 'exit 1'
+      - slack/notify:
+          <<: *slack_notify
+
+  # TODO to remove
+  test_failing_job_2:
     executor: node
     steps: 
       - run:
@@ -949,8 +960,6 @@ workflows:
         pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert\/.*|style\/.*|test\/.*|^dependabot\/.*'
         value: << pipeline.git.branch >>
     jobs:
-      - test_failing_job:
-          context: ncu-product-platforms-context
       - install_deps
       - install_cypress
       - build_icons:
@@ -1249,7 +1258,9 @@ workflows:
           requires:
             - eks_flux_deploy_dev_to_prod
       # end
-  
+    
+  # TODO raised issue for multy tag regex https://github.com/CircleCI-Public/slack-orb/issues/355
+  # TODO to remove
   test_tag_fail_slack:
     jobs:
       - test_failing_job:
@@ -1260,12 +1271,12 @@ workflows:
               only: /^test-1$/
             branches:
               ignore: /.*/
-      - test_failing_job:
+      - test_failing_job_2:
           context: ncu-product-platforms-context
           filters:
             tags:
               # The pattern must match the tag created in the github release interface. E.g: "trigger-release@5.0.1"
-              only: /^test-2$/
+              only: /^test-x$/
             branches:
               ignore: /.*/
 
