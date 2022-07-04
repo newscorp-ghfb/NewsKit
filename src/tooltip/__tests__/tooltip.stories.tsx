@@ -61,18 +61,21 @@ export const StoryTooltip = () => (
         <IconFilledTwitter />
       </IconButton>
     </Tooltip>
-    <StorybookSubHeading>Tooltip with button</StorybookSubHeading>
+    <StorybookSubHeading>Tooltip with button disabled</StorybookSubHeading>
     <Tooltip
-      content="Lorem ipsum dolor sit amet"
+      content="You are not permitted to view this"
       placement="right"
       trigger={['focus', 'hover']}
     >
-      <Button
-        size={ButtonSize.Small}
-        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-      >
-        Button
-      </Button>
+      <span>
+        <Button
+          size={ButtonSize.Small}
+          disabled
+          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+        >
+          Button
+        </Button>
+      </span>
     </Tooltip>
     <StorybookSubHeading>Tooltip with inline link</StorybookSubHeading>
     <Tooltip
