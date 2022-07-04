@@ -3762,56 +3762,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="/patterns/forms/passwords"
-                              tabindex="-1"
-                            >
-                              <div
-                                class="emotion-10"
-                              >
-                                <div
-                                  class="emotion-11"
-                                >
-                                  <span
-                                    class="emotion-17"
-                                  >
-                                    Passwords
-                                  </span>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item emotion-13"
-                          >
-                            <a
-                              aria-current="false"
-                              class="emotion-14"
-                              data-testid="buttonLink"
-                              href="/patterns/forms/payment"
-                              tabindex="-1"
-                            >
-                              <div
-                                class="emotion-10"
-                              >
-                                <div
-                                  class="emotion-11"
-                                >
-                                  <span
-                                    class="emotion-17"
-                                  >
-                                    Payment/Billing
-                                  </span>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item emotion-13"
-                          >
-                            <a
-                              aria-current="false"
-                              class="emotion-14"
-                              data-testid="buttonLink"
                               href="/patterns/forms/gender"
                               tabindex="-1"
                             >
@@ -3850,6 +3800,56 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                     class="emotion-17"
                                   >
                                     Names
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
+                          >
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/patterns/forms/passwords"
+                              tabindex="-1"
+                            >
+                              <div
+                                class="emotion-10"
+                              >
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Passwords
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
+                          >
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/patterns/forms/payment"
+                              tabindex="-1"
+                            >
+                              <div
+                                class="emotion-10"
+                              >
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Payment/Billing
                                   </span>
                                 </div>
                               </div>
@@ -7359,54 +7359,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="/patterns/forms/passwords"
-                      >
-                        <div
-                          class="emotion-10"
-                        >
-                          <div
-                            class="emotion-11"
-                          >
-                            <span
-                              class="emotion-17"
-                            >
-                              Passwords
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li
-                      class="nk-menu-item emotion-13"
-                    >
-                      <a
-                        aria-current="false"
-                        class="emotion-14"
-                        data-testid="buttonLink"
-                        href="/patterns/forms/payment"
-                      >
-                        <div
-                          class="emotion-10"
-                        >
-                          <div
-                            class="emotion-11"
-                          >
-                            <span
-                              class="emotion-17"
-                            >
-                              Payment/Billing
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li
-                      class="nk-menu-item emotion-13"
-                    >
-                      <a
-                        aria-current="false"
-                        class="emotion-14"
-                        data-testid="buttonLink"
                         href="/patterns/forms/gender"
                       >
                         <div
@@ -7443,6 +7395,54 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               class="emotion-17"
                             >
                               Names
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
+                    >
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/patterns/forms/passwords"
+                      >
+                        <div
+                          class="emotion-10"
+                        >
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Passwords
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
+                    >
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/patterns/forms/payment"
+                      >
+                        <div
+                          class="emotion-10"
+                        >
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Payment/Billing
                             </span>
                           </div>
                         </div>
@@ -11146,54 +11146,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                               aria-current="false"
                               class="emotion-14"
                               data-testid="buttonLink"
-                              href="/patterns/forms/passwords"
-                            >
-                              <div
-                                class="emotion-10"
-                              >
-                                <div
-                                  class="emotion-11"
-                                >
-                                  <span
-                                    class="emotion-17"
-                                  >
-                                    Passwords
-                                  </span>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item emotion-13"
-                          >
-                            <a
-                              aria-current="false"
-                              class="emotion-14"
-                              data-testid="buttonLink"
-                              href="/patterns/forms/payment"
-                            >
-                              <div
-                                class="emotion-10"
-                              >
-                                <div
-                                  class="emotion-11"
-                                >
-                                  <span
-                                    class="emotion-17"
-                                  >
-                                    Payment/Billing
-                                  </span>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item emotion-13"
-                          >
-                            <a
-                              aria-current="false"
-                              class="emotion-14"
-                              data-testid="buttonLink"
                               href="/patterns/forms/gender"
                             >
                               <div
@@ -11230,6 +11182,54 @@ exports[`Sidebar renders correctly when open 1`] = `
                                     class="emotion-17"
                                   >
                                     Names
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
+                          >
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/patterns/forms/passwords"
+                            >
+                              <div
+                                class="emotion-10"
+                              >
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Passwords
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="nk-menu-item emotion-13"
+                          >
+                            <a
+                              aria-current="false"
+                              class="emotion-14"
+                              data-testid="buttonLink"
+                              href="/patterns/forms/payment"
+                            >
+                              <div
+                                class="emotion-10"
+                              >
+                                <div
+                                  class="emotion-11"
+                                >
+                                  <span
+                                    class="emotion-17"
+                                  >
+                                    Payment/Billing
                                   </span>
                                 </div>
                               </div>
@@ -14741,54 +14741,6 @@ exports[`Sidebar renders correctly when open 1`] = `
                         aria-current="false"
                         class="emotion-14"
                         data-testid="buttonLink"
-                        href="/patterns/forms/passwords"
-                      >
-                        <div
-                          class="emotion-10"
-                        >
-                          <div
-                            class="emotion-11"
-                          >
-                            <span
-                              class="emotion-17"
-                            >
-                              Passwords
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li
-                      class="nk-menu-item emotion-13"
-                    >
-                      <a
-                        aria-current="false"
-                        class="emotion-14"
-                        data-testid="buttonLink"
-                        href="/patterns/forms/payment"
-                      >
-                        <div
-                          class="emotion-10"
-                        >
-                          <div
-                            class="emotion-11"
-                          >
-                            <span
-                              class="emotion-17"
-                            >
-                              Payment/Billing
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li
-                      class="nk-menu-item emotion-13"
-                    >
-                      <a
-                        aria-current="false"
-                        class="emotion-14"
-                        data-testid="buttonLink"
                         href="/patterns/forms/gender"
                       >
                         <div
@@ -14825,6 +14777,54 @@ exports[`Sidebar renders correctly when open 1`] = `
                               class="emotion-17"
                             >
                               Names
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
+                    >
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/patterns/forms/passwords"
+                      >
+                        <div
+                          class="emotion-10"
+                        >
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Passwords
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item emotion-13"
+                    >
+                      <a
+                        aria-current="false"
+                        class="emotion-14"
+                        data-testid="buttonLink"
+                        href="/patterns/forms/payment"
+                      >
+                        <div
+                          class="emotion-10"
+                        >
+                          <div
+                            class="emotion-11"
+                          >
+                            <span
+                              class="emotion-17"
+                            >
+                              Payment/Billing
                             </span>
                           </div>
                         </div>
