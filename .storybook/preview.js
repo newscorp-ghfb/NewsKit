@@ -46,8 +46,8 @@ const Container = styled.div`
   overflow: hidden;
 `;
 const Background = ({children}) => <BackgroundColor><PaddingReset>{children}</PaddingReset></BackgroundColor>
-const LimitSizeDecorator = ({children}) => <Background><Container>{children}</Container></Background>;
-const MediaQueryProviderDecorator = ({children}) => <Background><MediaQueryProvider>{children}</MediaQueryProvider></Background>
+const LimitSizeDecorator = ({children}) => <Container>{children}</Container>;
+const MediaQueryProviderDecorator = ({children}) => <MediaQueryProvider>{children}</MediaQueryProvider>
 const NoDecorator = ({children}) => <>{children}</>;
 
 export const parameters = {
@@ -120,7 +120,9 @@ export const decorators = [
   (Story, context) => {
     return (
       <ThemeProvider theme={getThemeObject(context?.globals?.backgrounds?.value)}>
-        <Story />
+        <Background>
+          <Story />
+        </Background>
       </ThemeProvider>
     );
   },

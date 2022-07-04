@@ -58,6 +58,8 @@ export default function showTestcase() {
     return <A11yFail message={message} />;
   }
 
+  // This checks to see if the story has a decorator and if so wraps the Story component in it.
+  // This ensures story specific custom themes are applied to the components in the e2e tests
   if (story.default.decorators) {
     return (
       <>
