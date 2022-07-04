@@ -1326,7 +1326,7 @@ workflows:
   
   test_failing_workflow:
     jobs:
-      - test_failing_job
+      - test_failing_job:
           context: ncu-product-platforms-context
           filters:
             tags:
