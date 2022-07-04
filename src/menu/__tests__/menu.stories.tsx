@@ -39,6 +39,74 @@ const myCustomTheme = compileTheme(
             iconColor: '{{colors.inkBrand010}}',
           },
         },
+        customOutlineColor: {
+          base: {
+            backgroundColor: '{{colors.transparent}}',
+            borderStyle: 'solid',
+            borderColor: '{{colors.transparent}}',
+            borderWidth:
+              '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+            color: '{{colors.inkSubtle}}',
+            iconColor: '{{colors.inkSubtle}}',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: '{{outlines.outlineStyleDefault}}',
+            outlineWidth: '{{outlines.outlineWidthDefault}}',
+            outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          },
+        },
+        customOutlineStyle: {
+          base: {
+            backgroundColor: '{{colors.transparent}}',
+            borderStyle: 'solid',
+            borderColor: '{{colors.transparent}}',
+            borderWidth:
+              '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+            color: '{{colors.inkSubtle}}',
+            iconColor: '{{colors.inkSubtle}}',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: 'dotted',
+            outlineWidth: '{{outlines.outlineWidthDefault}}',
+            outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          },
+        },
+        customOutlineWidth: {
+          base: {
+            backgroundColor: '{{colors.transparent}}',
+            borderStyle: 'solid',
+            borderColor: '{{colors.transparent}}',
+            borderWidth:
+              '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+            color: '{{colors.inkSubtle}}',
+            iconColor: '{{colors.inkSubtle}}',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: 'dotted',
+            outlineWidth: '5px',
+            outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          },
+        },
+        customOutlineOffset: {
+          base: {
+            backgroundColor: '{{colors.transparent}}',
+            borderStyle: 'solid',
+            borderColor: '{{colors.transparent}}',
+            borderWidth:
+              '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+            color: '{{colors.inkSubtle}}',
+            iconColor: '{{colors.inkSubtle}}',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: 'dotted',
+            outlineWidth: '5px',
+            outlineOffset: '5px',
+          },
+        },
       },
     },
   }),
@@ -1248,3 +1316,28 @@ export const StoryMenuLogicalProps = () => (
   </>
 );
 StoryMenuLogicalProps.storyName = 'menu - logical props';
+
+export const StoryMenuItemsOutlineOverrides = () => (
+  <>
+    <ThemeProvider theme={myCustomTheme}>
+      <StorybookHeading>Menu items with overrides</StorybookHeading>
+      <Menu aria-label={`Menu ${getSSRId()}`}>
+        <MenuItem href={href} overrides={{stylePreset: 'customOutlineColor'}}>
+          Custom Color
+        </MenuItem>
+        <MenuItem href={href} overrides={{stylePreset: 'customOutlineStyle'}}>
+          Custom Style
+        </MenuItem>
+        <MenuItem href={href} overrides={{stylePreset: 'customOutlineWidth'}}>
+          Custom Width
+        </MenuItem>
+        <MenuItem href={href} overrides={{stylePreset: 'customOutlineOffset'}}>
+          Custom Offset
+        </MenuItem>
+      </Menu>
+      <br />
+      <br />
+    </ThemeProvider>
+  </>
+);
+StoryMenuItemsOutlineOverrides.storyName = 'menu items outline overrides';

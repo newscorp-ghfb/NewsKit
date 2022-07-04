@@ -29,7 +29,7 @@ const Container = styled.div`
   display: flex;
 `;
 
-const borderedThumbTheme = compileTheme(
+const customTheme = compileTheme(
   createTheme({
     name: 'bordered-thumb-theme',
     overrides: {
@@ -42,6 +42,54 @@ const borderedThumbTheme = compileTheme(
             borderColor: '{{colors.interactiveInput040}}',
             borderStyle: 'solid',
             borderWidth: '{{borders.borderWidth010}}',
+          },
+        },
+        customOutlineColor: {
+          base: {
+            backgroundColor: '{{colors.interactiveInput020}}',
+            borderRadius: '{{borders.borderRadiusPill}}',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: '{{outlines.outlineStyleDefault}}',
+            outlineWidth: '{{outlines.outlineWidthDefault}}',
+            outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          },
+        },
+        customOutlineStyle: {
+          base: {
+            backgroundColor: '{{colors.interactiveInput020}}',
+            borderRadius: '{{borders.borderRadiusPill}}',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: 'dotted',
+            outlineWidth: '{{outlines.outlineWidthDefault}}',
+            outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          },
+        },
+        customOutlineWidth: {
+          base: {
+            backgroundColor: '{{colors.interactiveInput020}}',
+            borderRadius: '{{borders.borderRadiusPill}}',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: 'dotted',
+            outlineWidth: '5px',
+            outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          },
+        },
+        customOutlineOffset: {
+          base: {
+            backgroundColor: '{{colors.interactiveInput020}}',
+            borderRadius: '{{borders.borderRadiusPill}}',
+          },
+          'focus-visible': {
+            outlineColor: 'red',
+            outlineStyle: 'dotted',
+            outlineWidth: '5px',
+            outlineOffset: '5px',
           },
         },
       },
@@ -111,7 +159,7 @@ export const StorySwitchIcons = () => (
 StorySwitchIcons.storyName = 'switch-icons';
 
 export const StorySwitchOverrides = () => (
-  <ThemeProvider theme={borderedThumbTheme}>
+  <ThemeProvider theme={customTheme}>
     <StorybookHeading>Switch</StorybookHeading>
     <Grid>
       <Cell xs={8} md={4}>
@@ -135,7 +183,7 @@ export const StorySwitchOverrides = () => (
 StorySwitchOverrides.storyName = 'switch-overrides';
 
 export const StorySwitchLabels = () => (
-  <ThemeProvider theme={borderedThumbTheme}>
+  <ThemeProvider theme={customTheme}>
     <StorybookHeading>Switch</StorybookHeading>
     <Grid>
       <Cell xs={8} md={4}>
@@ -225,3 +273,55 @@ export const StorySwitchLogicalProps = () => (
 );
 
 StorySwitchLogicalProps.storyName = 'switch-logical-props';
+
+export const StorySwitchOutlineOverrides = () => (
+  <ThemeProvider theme={customTheme}>
+    <StorybookHeading>Outline overrides</StorybookHeading>
+    <Grid>
+      <Cell xs={8} md={4}>
+        <Container key="Custom Color">
+          <Switch
+            label="Custom Color"
+            overrides={{
+              input: {
+                stylePreset: 'customOutlineColor',
+              },
+            }}
+          />
+        </Container>
+        <Container key="Custom Style">
+          <Switch
+            label="Custom Style"
+            overrides={{
+              input: {
+                stylePreset: 'customOutlineStyle',
+              },
+            }}
+          />
+        </Container>
+        <Container key="Custom Width">
+          <Switch
+            label="Custom Width"
+            overrides={{
+              input: {
+                stylePreset: 'customOutlineWidth',
+              },
+            }}
+          />
+        </Container>
+        <Container key="Custom Offset">
+          <Switch
+            label="Custom Offset"
+            overrides={{
+              input: {
+                stylePreset: 'customOutlineOffset',
+              },
+            }}
+          />
+        </Container>
+      </Cell>
+    </Grid>
+  </ThemeProvider>
+);
+
+StorySwitchOutlineOverrides.storyName = 'switch-outline-overrides';

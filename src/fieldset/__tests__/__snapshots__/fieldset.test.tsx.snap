@@ -647,7 +647,6 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
       class="emotion-2"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
         class="emotion-3"
         id="mock-nk-1"
@@ -670,7 +669,6 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
           class="emotion-7"
         >
           <input
-            aria-describedby="mock-nk-1-assistive-text"
             class="emotion-8"
             data-testid="checkbox-input"
             id="mock-nk-1"
@@ -1337,7 +1335,6 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
       class="emotion-2"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
         class="emotion-3"
         id="mock-nk-1"
@@ -1360,7 +1357,6 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
           class="emotion-7"
         >
           <input
-            aria-describedby="mock-nk-1-assistive-text"
             class="emotion-8"
             data-testid="checkbox-input"
             id="mock-nk-1"
@@ -2027,7 +2023,6 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
       class="emotion-2"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
         class="emotion-3"
         id="mock-nk-1"
@@ -2050,7 +2045,6 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
           class="emotion-7"
         >
           <input
-            aria-describedby="mock-nk-1-assistive-text"
             class="emotion-8"
             data-testid="checkbox-input"
             id="mock-nk-1"
