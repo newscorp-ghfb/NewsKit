@@ -142,7 +142,7 @@ const Passwords = (layoutProps: LayoutProps) => (
                 href="https://design-system.service.gov.uk/patterns/passwords/"
                 target="_blank"
               >
-                YouGov website here.
+                Gov.uk Design System website here.
               </Link>
               <br />
               <br />
