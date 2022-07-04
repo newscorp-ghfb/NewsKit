@@ -6,13 +6,85 @@ orbs:
   github-cli: circleci/github-cli@1.0.4
 
 slack_notify: &slack_notify
-  channel: '#nuk-pp-newskit'
-  mentions: '@newskitdevs'
   event: 'fail'
-  branch_pattern: 'main'
+  channel: '#nuk-pp-newskit'
+  # TODO add back
+  # mentions: '@newskitdevs'
+  # TODO add back
+  # branch_pattern: 'main'
+  # TODO remove
+  branch_pattern: 'ci/PPDSC-2084-enable-back-slack-messages-on-release'
   # The following tag_pattern allows slack messages to be sent also when workflows are triggered by tags.
   # Such as in the release process. The tags MUST mirror the one used by release workflows filters.
-  tag_pattern: '/^trigger-release@([0-9])(\.([0-9])){2}$/, /^v([0-9])(\.([0-9])){2}$/'
+  # TODO add back
+  # tag_pattern: 'trigger-release@([0-9])(\.([0-9])){2}, v([0-9])(\.([0-9])){2}'
+  # TODO remove
+  tag_pattern: 'test-[0-9]'
+  custom: |
+    {
+      "blocks": [
+        {
+          "type": "section",
+          "text": {
+            "type": "plain_text",
+            "text": "A CircleCI job has failed! :red_circle:",
+            "emoji": true
+          }
+        },
+        {
+          "type": "section",
+          "fields": [
+            {
+              "type": "mrkdwn",
+              "text": "*Job*: ${CIRCLE_JOB}"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "fields": [
+            {
+              "type": "mrkdwn",
+              "text": "*Project*: $CIRCLE_PROJECT_REPONAME"
+            },
+            {
+              "type": "mrkdwn",
+              "text": "*Branch*: $CIRCLE_BRANCH"
+            },
+            {
+              "type": "mrkdwn",
+              "text": "*Author*: $CIRCLE_USERNAME"
+            },
+            {
+              "type": "mrkdwn",
+              "text": "*Tag*: $CIRCLE_TAG"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "fields": [
+            {
+              "type": "mrkdwn",
+              "text": "*Mentions*: $SLACK_PARAM_MENTIONS"
+            }
+          ]
+        },
+        {
+          "type": "actions",
+          "elements": [
+            {
+              "type": "button",
+              "text": {
+                "type": "plain_text",
+                "text": "View Job"
+              },
+              "url": "https://www.google.it"
+            }
+          ]
+        }
+      ]
+    }
 
 cypress_defaults: &cypress_defaults
   environment:
@@ -634,6 +706,16 @@ jobs:
           name: Delete trigger-release@ tag
           command: make delete_trigger_release_tag VERSION=<< parameters.version >>
 
+    # TODO to remove
+  test_failing_job:
+    executor: node
+    steps: 
+      - run:
+          name: 'exit 1'
+          command: 'exit 1'
+      - slack/notify:
+          <<: *slack_notify
+
   publish_npm:
     parameters:
       publish_dev:
@@ -941,6 +1023,8 @@ workflows:
         pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert\/.*|style\/.*|test\/.*|^dependabot\/.*'
         value: << pipeline.git.branch >>
     jobs:
+      - test_failing_job
+          context: ncu-product-platforms-context
       - install_deps
       - install_cypress
       - build_icons:
@@ -1239,6 +1323,17 @@ workflows:
           requires:
             - eks_flux_deploy_dev_to_prod
       # end
+  
+  test_failing_workflow:
+    jobs:
+      - test_failing_job
+          context: ncu-product-platforms-context
+          filters:
+            tags:
+              # The pattern must match the tag created in the github release interface. E.g: "trigger-release@5.0.1"
+              only: /^test-1$/
+            branches:
+              ignore: /.*/
 
   on_trigger_release_tag:
     jobs:
