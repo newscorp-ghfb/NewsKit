@@ -1023,7 +1023,7 @@ workflows:
         pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert\/.*|style\/.*|test\/.*|^dependabot\/.*'
         value: << pipeline.git.branch >>
     jobs:
-      - test_failing_job
+      - test_failing_job:
           context: ncu-product-platforms-context
       - install_deps
       - install_cypress
