@@ -36,7 +36,7 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
     if (children.props.disabled) {
       // eslint-disable-next-line no-console
       console.warn(
-        `Please make sure you wrap your disabled component in a span.`,
+        `When passing a component with disabled prop to Tooltip please remember to wrap it inside span element.`,
       );
     }
   };
