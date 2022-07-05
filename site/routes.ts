@@ -855,6 +855,13 @@ export default [
             description: `Ask for a user’s name when it is needed to provide a service.`,
             illustration: 'patterns/forms/names/hero',
           },
+          {
+            title: 'Telephone number',
+            page: true,
+            id: '/patterns/forms/telephone-number',
+            description: `Ask for a user’s telephone number when there is a clear business requirement.`,
+            illustration: 'patterns/forms/telephone-number/hero',
+          },
         ],
       },
     ],
