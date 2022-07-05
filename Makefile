@@ -7,7 +7,7 @@ SHORT_GIT_HASH := $(shell echo ${CIRCLE_SHA1} | cut -c -9)
 # CURRENT BRANCH CHECKED OUT
 CURRENT_BRANCH = $(shell git symbolic-ref --short -q HEAD)
 
-# Cleans branch into a url friendly format 
+# Cleans branch into a url friendly format
 BASE_PATH = $(shell node -p "/(^main$$)/.test('${CURRENT_BRANCH}') ? '' : require('./scripts/branch-name-to-url.js').branchNameToUrl('${CURRENT_BRANCH}')")
 
 BASE_URI = ${SITE_BASE_URL}${BASE_PATH}/
@@ -47,7 +47,7 @@ check_broken_links_docs:
 	yarn e2e:findbrokenlinks:ci
 
 comps_visual_test:
-	yarn test:visual:comps:ci
+	echo 'the batch id being used is: ${APPLITOOLS_BATCH_ID}'; yarn test:visual:comps:ci
 
 e2e_test_comps:
 	yarn e2e:comps:ci;
