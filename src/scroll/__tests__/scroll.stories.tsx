@@ -7,7 +7,7 @@ import {Block} from '../../block';
 import {Image} from '../../image';
 import {createTheme, ThemeProvider} from '../../theme';
 import {getSSRId} from '../../utils';
-import {Button} from '../../button';
+import {Button, ButtonSize} from '../../button';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-scroll-theme',
@@ -352,7 +352,11 @@ export const StoryScrollInsideTheContainer = () => (
       <Scroll scrollBar controls="static" tabIndex={-1}>
         <Flex>
           {Array.from({length: 10}, (_, i) => (
-            <Box key={getSSRId()} tabIndex={0}>{`Item ${i + 1}`}</Box>
+            <Button
+              key={getSSRId()}
+              tabIndex={0}
+              size={ButtonSize.Small}
+            >{`Item ${i + 1}`}</Button>
           ))}
         </Flex>
       </Scroll>
