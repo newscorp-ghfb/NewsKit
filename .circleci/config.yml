@@ -855,7 +855,7 @@ jobs:
             then
               export DOCKER_TAG=$(node -p "require('./package.json').version")
             else
-              export DOCKER_TAG=$(node -p "require('./package.json').version")-$CIRCLE_SHA1
+              export DOCKER_TAG=${CIRCLE_SHA1}
             fi
             config_values=eks/values/product-platforms-values-<< parameters.environment >>.yaml
             out_dir=product-platforms-<< parameters.environment >>
@@ -1278,7 +1278,6 @@ workflows:
           environment: staging
           requires:
             - eks_flux_deploy_staging
-
 
       - eks_flux_deploy:
           name: eks_flux_deploy_dev_to_prod
