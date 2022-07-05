@@ -2,6 +2,7 @@ import * as React from 'react';
 import {
   FloatingContext,
   useClick,
+  useDismiss,
   useId,
   useInteractions as floatingUiUseInteractions,
 } from '@floating-ui/react-dom-interactions';
@@ -25,9 +26,6 @@ import {deepMerge} from '../utils';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 
-const useInteractions = (context: FloatingContext<HTMLElement>) =>
-  floatingUiUseInteractions([useClick(context)]);
-
 const buildContextAriaAttributes: BuildAriaAttributesFn = ({
   floating: {id, open},
 }) => ({
@@ -42,6 +40,7 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
   closePosition = 'right',
   overrides = {},
   handleCloseButtonClick,
+  enableDismiss = false,
   ...props
 }) => {
   const theme = useTheme();
@@ -60,6 +59,14 @@ const ThemelessPopover: React.FC<PopoverProps> = ({
     'aria-labelledby': header ? undefined : id,
     'aria-describedby': header ? headerId : undefined,
   });
+
+  const useInteractions = (context: FloatingContext<HTMLElement>) =>
+    floatingUiUseInteractions([
+      useClick(context),
+      useDismiss(context, {
+        enabled: enableDismiss,
+      }),
+    ]);
 
   if (!content) {
     return children;
