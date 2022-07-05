@@ -87,6 +87,12 @@ describe('Tooltip', () => {
               stylePreset: 'tooltipPanelCustom',
               typographyPreset: 'utilityLabel020',
             },
+            transitionPreset: {
+              extend: 'fade',
+              base: {
+                transitionDelay: '{{motions.motionDuration050}}',
+              },
+            },
           },
         },
         myCustomTheme,

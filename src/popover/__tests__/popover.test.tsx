@@ -92,6 +92,12 @@ describe('Popover', () => {
               paddingBlock: 'space040',
               paddingInline: 'space020',
             },
+            transitionPreset: {
+              extend: 'fade',
+              base: {
+                transitionDelay: '{{motions.motionDuration050}}',
+              },
+            },
           },
         },
         myCustomTheme,
@@ -334,6 +340,16 @@ describe('Popover', () => {
       fireEvent.keyDown(document.body, {key: 'Escape'});
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
+    test('does close on escape key', () => {
+      const {getByRole, queryByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        enableDismiss: true,
+      });
+      const button = getByRole('button');
+      fireEvent.click(button);
+      fireEvent.keyDown(document.body, {key: 'Escape'});
+      expect(queryByRole('dialog')).not.toBeInTheDocument();
+    });
     test('does not close on clicking outside', () => {
       const Component = () => (
         <>
@@ -347,6 +363,20 @@ describe('Popover', () => {
       const outside = getByTestId('outside');
       fireEvent.click(outside);
       expect(queryByRole('dialog')).toBeInTheDocument();
+    });
+    test('does close on clicking outside', () => {
+      const Component = () => (
+        <>
+          <div data-testid="outside" />
+          <Popover {...defaultProps} enableDismiss />
+        </>
+      );
+      const {getByTestId, getByRole, queryByRole} = renderWithTheme(Component);
+      const button = getByRole('button');
+      fireEvent.click(button);
+      const outside = getByTestId('outside');
+      userEvent.click(outside);
+      expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
   });
 
