@@ -145,9 +145,12 @@ export default {
   title: 'NewsKit Light/typography/paragraph',
   component: () => 'None',
   decorators: [
-    (Story: StoryType) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(paragraphCustomThemeObject)}
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          paragraphCustomThemeObject,
+        )}
       >
         <Story />
       </ThemeProvider>

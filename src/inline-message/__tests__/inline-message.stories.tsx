@@ -176,9 +176,10 @@ export default {
   title: 'NewsKit Light/inline-message',
   component: () => 'None',
   decorators: [
-    (Story: StoryType) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
           inlineMessageCustomThemeObject,
         )}
       >

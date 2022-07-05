@@ -384,9 +384,10 @@ export default {
   component: () => 'None',
   disabledRules: ['tabindex'],
   decorators: [
-    (Story: StoryType) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
           drawerLayoutCustomThemeObject,
         )}
       >

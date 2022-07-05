@@ -1791,9 +1791,12 @@ export default {
   title: 'NewsKit Light/tabs',
   component: () => 'None',
   decorators: [
-    (Story: StoryType) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(tabsCustomThemeObject)}
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          tabsCustomThemeObject,
+        )}
       >
         <Story />
       </ThemeProvider>

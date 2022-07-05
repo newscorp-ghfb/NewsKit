@@ -815,9 +815,12 @@ export default {
   component: () => 'None',
   disabledRules: [],
   decorators: [
-    (Story: StoryType) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(formInputCustomThemeObject)}
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          formInputCustomThemeObject,
+        )}
       >
         <Story />
       </ThemeProvider>

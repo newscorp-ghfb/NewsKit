@@ -1314,9 +1314,12 @@ export default {
   component: () => 'None',
   disabledRules: [],
   decorators: [
-    (Story: StoryType) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(menuCustomThemeObject)}
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          menuCustomThemeObject,
+        )}
       >
         <Story />
       </ThemeProvider>

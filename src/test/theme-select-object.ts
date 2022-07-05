@@ -8,7 +8,6 @@ import {
 import {tnlTheme} from '../theme-checker/themes/tnl-theme/tnl-theme';
 import {virginTheme} from '../theme-checker/themes/virgin-theme/virgin-theme';
 import {sunTheme} from '../theme-checker/themes/sun-theme/sun-theme';
-import {useStorybookContext} from './storybook-comps';
 
 export const themeObject: {[key: string]: UncompiledTheme} = {
   transparent: newskitLightTheme,
@@ -36,12 +35,10 @@ export const getThemeObject = (key: string): UncompiledTheme => {
 };
 
 export const createCustomThemeWithBaseThemeSwitch = (
+  key: string,
   customThemeArgs: CreateThemeArgs,
-): UncompiledTheme => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const key = useStorybookContext();
-  return createTheme({
+): UncompiledTheme =>
+  createTheme({
     ...customThemeArgs,
     baseTheme: getThemeObject(key),
   });
-};

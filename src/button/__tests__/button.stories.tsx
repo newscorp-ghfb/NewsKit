@@ -703,9 +703,12 @@ export default {
   component: () => 'None',
   disabledRules: ['color-contrast'],
   decorators: [
-    (Story: StoryType) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(buttonCustomThemeObject)}
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          buttonCustomThemeObject,
+        )}
       >
         <Story />
       </ThemeProvider>

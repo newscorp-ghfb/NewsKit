@@ -10,7 +10,6 @@ import {
 } from '../src';
 
 import {getThemeObject} from '../src/test/theme-select-object'
-import {StorybookContext} from '../src/test/storybook-comps'
 
 const unlimitedScenarios = [
   'grid',
@@ -121,11 +120,9 @@ export const decorators = [
   (Story, context) => {
     return (
       <ThemeProvider theme={getThemeObject(context?.globals?.backgrounds?.value)}>
-        <StorybookContext.Provider value={context?.globals?.backgrounds?.value}>
-          <Background>
-            <Story />
-          </Background>
-        </StorybookContext.Provider>
+        <Background>
+          <Story />
+        </Background>
       </ThemeProvider>
     );
   },

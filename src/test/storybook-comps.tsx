@@ -1,4 +1,4 @@
-import React, {createContext, useContext} from 'react';
+import React from 'react';
 import {TextBlock} from '../text-block';
 import {MQ, styled, getColorCssFromTheme} from '../utils/style';
 
@@ -77,6 +77,3 @@ export const StorybookParah: React.FC<Props> = ({children, stylePreset}) => (
 export const StorybookLabel = styled.label`
   ${getColorCssFromTheme('color', 'inkBase')}
 `;
-
-export const StorybookContext = createContext('transparent');
-export const useStorybookContext = () => useContext(StorybookContext);

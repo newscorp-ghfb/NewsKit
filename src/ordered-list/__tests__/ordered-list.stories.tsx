@@ -75,9 +75,10 @@ export default {
   title: 'NewsKit Light/ordered-list',
   component: () => 'None',
   decorators: [
-    (Story: StoryType) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
           orderedListCustomThemeObject,
         )}
       >

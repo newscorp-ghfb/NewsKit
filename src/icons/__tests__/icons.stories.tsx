@@ -278,9 +278,12 @@ export default {
   title: 'NewsKit Light/icons',
   component: () => 'None',
   decorators: [
-    (Story: StoryType) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(iconsCustomThemeObject)}
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          iconsCustomThemeObject,
+        )}
       >
         <Story />
       </ThemeProvider>

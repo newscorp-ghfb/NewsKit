@@ -508,9 +508,12 @@ export default {
   title: 'NewsKit Light/accordion',
   component: () => 'None',
   decorators: [
-    (Story: StoryType) => (
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(accordionCustomThemeObject)}
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          accordionCustomThemeObject,
+        )}
       >
         <Story />
       </ThemeProvider>
