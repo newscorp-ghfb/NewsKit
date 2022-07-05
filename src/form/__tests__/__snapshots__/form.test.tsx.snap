@@ -5208,11 +5208,11 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
       <input
         aria-describedby="email-assistive-text"
         aria-invalid="false"
-        aria-required="true"
         class="emotion-3"
         data-testid="text-field-email"
         id="email"
         name="email"
+        required=""
         type="text"
       />
       <div
@@ -5289,11 +5289,11 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
         aria-expanded="false"
         aria-haspopup="listbox"
         aria-labelledby="email-label email"
-        aria-required="true"
         class="emotion-12"
         data-testid="select-pizza-topping"
         id="email"
         name="email"
+        required=""
         type="button"
         value=""
       >
@@ -5374,11 +5374,11 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
         >
           <input
             aria-describedby="email-assistive-text"
-            aria-required="true"
             class="emotion-27"
             data-testid="checkbox-input"
             id="email"
             name="email"
+            required=""
             type="checkbox"
             value="checked"
           />
@@ -5417,11 +5417,11 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
           >
             <input
               aria-describedby="email-assistive-text"
-              aria-required="true"
               class="emotion-27"
               data-testid="radio-input"
               id="email"
               name="email"
+              required=""
               type="radio"
               value="1"
             />
@@ -5449,11 +5449,11 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
           >
             <input
               aria-describedby="email-assistive-text"
-              aria-required="true"
               class="emotion-27"
               data-testid="radio-input"
               id="email"
               name="email"
+              required=""
               type="radio"
               value="2"
             />
@@ -5481,11 +5481,11 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
           >
             <input
               aria-describedby="email-assistive-text"
-              aria-required="true"
               class="emotion-27"
               data-testid="radio-input"
               id="email"
               name="email"
+              required=""
               type="radio"
               value="2"
             />
@@ -6668,11 +6668,11 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
       <input
         aria-describedby="email-assistive-text"
         aria-invalid="false"
-        aria-required="true"
         class="emotion-3"
         data-testid="text-field-email"
         id="email"
         name="email"
+        required=""
         type="text"
       />
       <div
@@ -6749,11 +6749,11 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
         aria-expanded="false"
         aria-haspopup="listbox"
         aria-labelledby="email-label email"
-        aria-required="true"
         class="emotion-12"
         data-testid="select-pizza-topping"
         id="email"
         name="email"
+        required=""
         type="button"
         value=""
       >
@@ -6834,11 +6834,11 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
         >
           <input
             aria-describedby="email-assistive-text"
-            aria-required="true"
             class="emotion-27"
             data-testid="checkbox-input"
             id="email"
             name="email"
+            required=""
             type="checkbox"
             value="checked"
           />
@@ -6877,11 +6877,11 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
           >
             <input
               aria-describedby="email-assistive-text"
-              aria-required="true"
               class="emotion-27"
               data-testid="radio-input"
               id="email"
               name="email"
+              required=""
               type="radio"
               value="1"
             />
@@ -6909,11 +6909,11 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
           >
             <input
               aria-describedby="email-assistive-text"
-              aria-required="true"
               class="emotion-27"
               data-testid="radio-input"
               id="email"
               name="email"
+              required=""
               type="radio"
               value="2"
             />
@@ -6941,11 +6941,11 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
           >
             <input
               aria-describedby="email-assistive-text"
-              aria-required="true"
               class="emotion-27"
               data-testid="radio-input"
               id="email"
               name="email"
+              required=""
               type="radio"
               value="2"
             />
@@ -7173,11 +7173,11 @@ exports[`FormInput renders FormInput Correctly 1`] = `
     <input
       aria-describedby="email-assistive-text"
       aria-invalid="false"
-      aria-required="true"
       class="emotion-1"
       data-testid="text-field-email"
       id="email"
       name="email"
+      required=""
       type="text"
     />
     <div
@@ -7525,11 +7525,11 @@ exports[`FormInput renders FormInput Correctly 1`] = `
       aria-expanded="false"
       aria-haspopup="listbox"
       aria-labelledby="email-label email"
-      aria-required="true"
       class="emotion-2"
       data-testid="select-pizza-topping"
       id="email"
       name="email"
+      required=""
       type="button"
     >
       <div
@@ -8154,11 +8154,11 @@ exports[`FormInput renders FormInput Correctly 1`] = `
       >
         <input
           aria-describedby="email-assistive-text"
-          aria-required="true"
           class="emotion-4"
           data-testid="checkbox-input"
           id="email"
           name="email"
+          required=""
           type="checkbox"
           value="checked"
         />
@@ -8702,11 +8702,11 @@ exports[`FormInput renders FormInput Correctly 1`] = `
         >
           <input
             aria-describedby="email-assistive-text"
-            aria-required="true"
             class="emotion-4"
             data-testid="radio-input"
             id="email"
             name="email"
+            required=""
             type="radio"
             value="1"
           />
@@ -8734,11 +8734,11 @@ exports[`FormInput renders FormInput Correctly 1`] = `
         >
           <input
             aria-describedby="email-assistive-text"
-            aria-required="true"
             class="emotion-4"
             data-testid="radio-input"
             id="email"
             name="email"
+            required=""
             type="radio"
             value="2"
           />
@@ -8766,11 +8766,11 @@ exports[`FormInput renders FormInput Correctly 1`] = `
         >
           <input
             aria-describedby="email-assistive-text"
-            aria-required="true"
             class="emotion-4"
             data-testid="radio-input"
             id="email"
             name="email"
+            required=""
             type="radio"
             value="2"
           />
@@ -9241,11 +9241,11 @@ exports[`FormInput renders with error and with submit validation and revalidatio
       <input
         aria-describedby="mock-nk-1-error-text"
         aria-invalid="true"
-        aria-required="true"
         class="emotion-3"
         data-testid="text-field-email"
         id="mock-nk-1"
         name="email"
+        required=""
         type="text"
       />
       <div
@@ -9342,11 +9342,11 @@ exports[`FormInput renders with error and with submit validation and revalidatio
       <input
         aria-describedby="mock-nk-1-error-text"
         aria-invalid="true"
-        aria-required="true"
         class="emotion-3"
         data-testid="text-field-username"
         id="mock-nk-1"
         name="username"
+        required=""
         type="text"
       />
       <div
@@ -9617,11 +9617,11 @@ exports[`FormInput renders with nested inputs 1`] = `
     <input
       aria-describedby="mock-nk-1-assistive-text"
       aria-invalid="false"
-      aria-required="true"
       class="emotion-1"
       data-testid="text-field-email"
       id="mock-nk-1"
       name="email"
+      required=""
       type="text"
     />
     <div
@@ -9896,11 +9896,11 @@ exports[`FormInput renders with nested inputs 1`] = `
     <input
       aria-describedby="mock-nk-1-assistive-text"
       aria-invalid="false"
-      aria-required="true"
       class="emotion-1"
       data-testid="text-field-username"
       id="mock-nk-1"
       name="username"
+      required=""
       type="text"
     />
   </div>
