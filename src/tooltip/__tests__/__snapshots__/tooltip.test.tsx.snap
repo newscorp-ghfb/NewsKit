@@ -934,3 +934,51 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`Tooltip should throw a warning if disabled component is not wrapped in a span 1`] = `
+<DocumentFragment>
+  <button
+    aria-describedby="floating-MOCK-ID"
+    disabled=""
+    type="submit"
+  >
+    Add
+  </button>
+  .emotion-0 {
+  z-index: 80;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.emotion-1 {
+  margin: 0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  background-color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+<div
+    aria-hidden="true"
+    class="Tooltip emotion-0"
+    id="floating-MOCK-ID"
+    role="tooltip"
+    tabindex="-1"
+  >
+    <p
+      class="emotion-1"
+      data-testid="floating-element-panel"
+      tabindex="-1"
+    >
+      hello
+    </p>
+  </div>
+</DocumentFragment>
+`;
