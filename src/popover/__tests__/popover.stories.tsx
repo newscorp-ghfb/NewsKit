@@ -226,6 +226,12 @@ export const StoryPopoverDefault = () => (
         <BoundedPopover header={undefined} closePosition="none" />
       </div>
       <div>
+        <StorybookSubHeading>
+          Popover - click outside or press esc to close
+        </StorybookSubHeading>
+        <BoundedPopover header={undefined} closePosition="none" enableDismiss />
+      </div>
+      <div>
         <StorybookSubHeading>Popover - no pointer</StorybookSubHeading>
         <BoundedPopover hidePointer />
       </div>
@@ -335,6 +341,12 @@ export const StoryPopoverStyleOverrides = () => (
           },
           content: {
             stylePreset: 'popoverContentCustom',
+          },
+          transitionPreset: {
+            extend: 'fade',
+            base: {
+              transitionDelay: '{{motions.motionDuration050}}',
+            },
           },
         }}
       />
