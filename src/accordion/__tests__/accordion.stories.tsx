@@ -249,6 +249,12 @@ export const StoryAccordionOverrides = () => (
           expanded
           overrides={{
             header: {
+              transitionPreset: {
+                extend: 'backgroundColorChange',
+                base: {
+                  transitionDuration: '{{motions.motionDuration050}}',
+                },
+              },
               minWidth: 'sizing090',
               minHeight: 'sizing090',
               stylePreset: 'accordionHeaderCustom',

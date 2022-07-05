@@ -162,6 +162,12 @@ describe('Accordion', () => {
         expanded: true,
         overrides: {
           header: {
+            transitionPreset: {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration050}}',
+              },
+            },
             minWidth: 'sizing050',
             minHeight: 'sizing060',
             stylePreset: 'accordionHeaderCustom',

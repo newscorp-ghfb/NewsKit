@@ -2,6 +2,7 @@ import {
   getResponsiveSize,
   getResponsiveSpace,
   getStylePreset,
+  getTransitionPreset,
   getTypographyPreset,
   styled,
 } from '../utils';
@@ -32,6 +33,7 @@ export const StyledAccordionButton = styled.button<
     })};
   ${getTypographyPreset('accordion.header', 'header')}
   ${logicalProps('accordion.header', 'header')}
+  ${getTransitionPreset('accordion.header', 'header')}
 `;
 
 export const StyledHeader = styled.div`

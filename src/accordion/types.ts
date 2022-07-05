@@ -3,6 +3,7 @@ import {NewsKitIconProps} from '../icons';
 import {MQ} from '../utils';
 import {LogicalPaddingProps} from '../utils/logical-properties';
 import {Override} from '../utils/overrides';
+import {TransitionToken} from '../theme';
 
 export type AccordionIconProps = NewsKitIconProps &
   Pick<AccordionProps, 'expanded'>;
@@ -16,6 +17,7 @@ export interface AccordionHeaderOverrides extends LogicalPaddingProps {
     typographyPreset?: MQ<string>;
   };
   indicatorIcon?: Override<AccordionIconProps>;
+  transitionPreset?: TransitionToken | TransitionToken[];
 }
 
 export type AccordionPropsOverrides = {

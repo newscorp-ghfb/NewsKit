@@ -60,6 +60,22 @@ exports[`Accordion renders as a h4 1`] = `
   }
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -331,6 +347,22 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
     .emotion-1:focus-visible:not(:disabled) {
       outline-style: auto;
     }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -608,6 +640,22 @@ exports[`Accordion renders with default props 1`] = `
   }
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -855,6 +903,22 @@ exports[`Accordion renders with disabled state 1`] = `
 
 .emotion-1>:not(:last-of-type) {
   margin-right: 8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-2 {
@@ -1128,6 +1192,22 @@ exports[`Accordion renders with expanded state and icon 1`] = `
     .emotion-1:focus-visible:not(:disabled) {
       outline-style: auto;
     }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1405,6 +1485,22 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
   }
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -1672,6 +1768,22 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
     .emotion-1:focus-visible:not(:disabled) {
       outline-style: auto;
     }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1968,6 +2080,22 @@ exports[`Accordion renders with no header 1`] = `
   }
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -2146,6 +2274,22 @@ exports[`Accordion renders with no label 1`] = `
     .emotion-1:focus-visible:not(:disabled) {
       outline-style: auto;
     }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -2395,6 +2539,22 @@ exports[`Accordion renders with style overrides 1`] = `
 .emotion-1:disabled {
   background-color: interface010;
   color: black;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-2 {
@@ -2690,6 +2850,22 @@ exports[`Accordion renders without leading icon 1`] = `
   }
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-2 {
   text-align: start;
   -webkit-flex: 1;
@@ -2870,6 +3046,22 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
     .emotion-1:focus-visible:not(:disabled) {
       outline-style: auto;
     }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -3143,6 +3335,22 @@ exports[`AccordionGroup different type of children 1`] = `
     .emotion-1:focus-visible:not(:disabled) {
       outline-style: auto;
     }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 

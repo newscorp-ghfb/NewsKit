@@ -1,6 +1,7 @@
 export default {
   accordion: {
     header: {
+      transitionPreset: 'backgroundColorChange',
       stylePreset: 'accordionHeader',
       typographyPreset: 'utilityButton030',
       spaceInline: 'space020',
