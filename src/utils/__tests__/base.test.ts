@@ -33,6 +33,7 @@ describe('getXFromTheme', () => {
             },
             motionDuration: 'motionDuration030',
             weight: 'borderWidth020',
+            space5: 'auto',
           },
         },
       },
@@ -336,5 +337,17 @@ describe('getXFromTheme', () => {
       theme,
     });
     expect(result).toEqual({transitionTime: '300ms'});
+  });
+
+  test('getResponsiveSpace with auto values', () => {
+    const result = getResponsiveSpace(
+      'padding',
+      'tabs',
+      '',
+      'space5',
+    )({
+      theme,
+    });
+    expect(result).toEqual({padding: 'auto'});
   });
 });
