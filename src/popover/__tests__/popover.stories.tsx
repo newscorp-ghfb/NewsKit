@@ -336,6 +336,12 @@ export const StoryPopoverStyleOverrides = () => (
           content: {
             stylePreset: 'popoverContentCustom',
           },
+          transitionPreset: {
+            extend: 'fade',
+            base: {
+              transitionDelay: '{{motions.motionDuration050}}',
+            },
+          },
         }}
       />
     </StyledPage>

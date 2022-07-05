@@ -708,4 +708,64 @@ describe('FormInput', () => {
     });
     expect(await findByTestId('error-icon')).not.toBeNull();
   });
+
+  describe('input.aria-describedby', () => {
+    const INPUT_ID = 'test-input-1';
+    let assistiveTextId;
+
+    test('is set to assistive text id in default state', () => {
+      const {getByText, getByTestId} = renderWithImplementation(Form, {
+        onSubmit: () => {},
+        children: (
+          <FormInput id={INPUT_ID} name="test-input">
+            <FormInputLabel>Test input</FormInputLabel>
+            <FormInputTextField data-testid="text-field-test-input" />
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </FormInput>
+        ),
+      });
+
+      assistiveTextId = `${INPUT_ID}-assistive-text`;
+
+      const assistiveText = getByText('Assistive Text');
+      expect(assistiveText).toHaveAttribute('id', assistiveTextId);
+      const input = getByTestId('text-field-test-input');
+      expect(input).toHaveAttribute('aria-describedby', assistiveTextId);
+    });
+
+    test('is not set if no assistive text is provided', () => {
+      const {getByTestId} = renderWithImplementation(Form, {
+        onSubmit: () => {},
+        children: (
+          <FormInput id={INPUT_ID} name="test-input">
+            <FormInputLabel>Test input</FormInputLabel>
+            <FormInputTextField data-testid="text-field-test-input" />
+          </FormInput>
+        ),
+      });
+
+      const input = getByTestId('text-field-test-input');
+      expect(input).not.toHaveAttribute('aria-describedby');
+    });
+
+    test('is set to assistive text id in invalid state', () => {
+      const {getByText, getByTestId} = renderWithImplementation(Form, {
+        onSubmit: () => {},
+        children: (
+          <FormInput id={INPUT_ID} state="invalid" name="test-input">
+            <FormInputLabel>Test input</FormInputLabel>
+            <FormInputTextField data-testid="text-field-test-input" />
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </FormInput>
+        ),
+      });
+
+      assistiveTextId = `${INPUT_ID}-error-text`;
+
+      const assistiveText = getByText('Assistive Text');
+      expect(assistiveText).toHaveAttribute('id', assistiveTextId);
+      const input = getByTestId('text-field-test-input');
+      expect(input).toHaveAttribute('aria-describedby', assistiveTextId);
+    });
+  });
 });
