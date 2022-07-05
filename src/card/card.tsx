@@ -29,7 +29,7 @@ import {omitLogicalPropsFromOverrides} from '../utils/logical-properties';
 // This key is needed to for the card headline (and to the link when it is wrapped)
 // to avoid missing key prop warning from react.
 // There is no need for the key to be automatically generated for now
-// as we only support one Headline per card
+// as we only support one Headline per card.
 // https://nidigitalsolutions.jira.com/browse/PPDSC-1527
 const cardHeadlineKey = '1';
 
