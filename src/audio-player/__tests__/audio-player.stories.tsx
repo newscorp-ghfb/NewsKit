@@ -137,7 +137,7 @@ const audioPlayerCustomThemeObject: CreateThemeArgs = {
 export const StoryAudioPlayer = () => (
   <>
     <StorybookHeading>Recored Audio Player</StorybookHeading>
-    <StorybookSubHeading>test</StorybookSubHeading>
+    <StorybookSubHeading>default</StorybookSubHeading>
     <AudioPlayerContainer>
       <AudioPlayer
         {...recordedAudioProps}
