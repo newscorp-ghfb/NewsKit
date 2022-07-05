@@ -334,6 +334,36 @@ describe('StructuredList', () => {
       );
     });
 
+    test('renders one cell with internal link and no icon', () => {
+      const props: StructuredListItemProps = {
+        children: OneCellDefault,
+        noIcon: true,
+      };
+
+      const fragment = renderToFragmentWithTheme(renderWithInternalLink, props);
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders one cell with external link and no icon', () => {
+      const props: StructuredListItemProps = {
+        children: OneCellDefault,
+        noIcon: true,
+      };
+
+      const fragment = renderToFragmentWithTheme(renderWithExternalLink, props);
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders one cell with disabled link and no icon', () => {
+      const props: StructuredListItemProps = {
+        children: OneCellDefault,
+        noIcon: true,
+      };
+
+      const fragment = renderToFragmentWithTheme(renderWithDisabledLink, props);
+      expect(fragment).toMatchSnapshot();
+    });
+
     test('fires click event onClick with custom originator for list item', async () => {
       const mockFireEvent = jest.fn();
 

@@ -31,6 +31,7 @@ const ThemelessStructuredListItem = React.forwardRef<
       disabled,
       overrides,
       href,
+      noIcon,
       linkIconAlign,
       eventContext,
       eventOriginator = 'list item',
@@ -45,7 +46,8 @@ const ThemelessStructuredListItem = React.forwardRef<
     if (
       hasHref &&
       childrenArray.length === 2 &&
-      !getPullRight(childrenArray[1])
+      !getPullRight(childrenArray[1]) &&
+      !noIcon
     ) {
       childrenArray.push(
         <StructuredListCell align={linkIconAlign} key="link-icon">
@@ -53,7 +55,7 @@ const ThemelessStructuredListItem = React.forwardRef<
         </StructuredListCell>,
       );
     }
-    if (hasHref && childrenArray.length === 1) {
+    if (hasHref && childrenArray.length === 1 && !noIcon) {
       childrenArray.push(
         <StructuredListCell pullRight align={linkIconAlign} key="link-icon">
           <StructuredListIcon href={href} overrides={overrides} />
