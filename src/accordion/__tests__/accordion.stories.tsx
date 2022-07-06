@@ -545,25 +545,25 @@ export const StoryAccordionGroupTransitionOverrides = () => {
       <StorybookHeading>Accordion Group Transition Overrides</StorybookHeading>
       <StorybookSubHeading>No transitions</StorybookSubHeading>
       <AccordionGroup>
-        <Accordion header="Header 1" overrides={noTransitions}>
+        <Accordion header="Header 64" overrides={noTransitions}>
           {content}
         </Accordion>
-        <Accordion header="Header 2" overrides={noTransitions}>
+        <Accordion header="Header 65" overrides={noTransitions}>
           {content}
         </Accordion>
-        <Accordion header="Header 3" overrides={noTransitions}>
+        <Accordion header="Header 66" overrides={noTransitions}>
           {content}
         </Accordion>
       </AccordionGroup>
       <StorybookSubHeading>Slow transitions</StorybookSubHeading>
       <AccordionGroup>
-        <Accordion header="Header 1" overrides={slowTransitions}>
+        <Accordion header="Header 67" overrides={slowTransitions}>
           {content}
         </Accordion>
-        <Accordion header="Header 2" overrides={slowTransitions}>
+        <Accordion header="Header 68" overrides={slowTransitions}>
           {content}
         </Accordion>
-        <Accordion header="Header 3" overrides={slowTransitions}>
+        <Accordion header="Header 69" overrides={slowTransitions}>
           {content}
         </Accordion>
       </AccordionGroup>
