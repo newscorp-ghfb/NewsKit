@@ -1872,6 +1872,13 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "moveUp": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -4268,6 +4275,13 @@ Object {
       "base": Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
@@ -6673,6 +6687,13 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "moveUp": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -9069,6 +9090,13 @@ Object {
       "base": Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
@@ -11474,6 +11502,13 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "moveUp": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -13870,6 +13905,13 @@ Object {
       "base": Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
@@ -16275,6 +16317,13 @@ Object {
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
     "moveUp": Object {
       "appear": Object {},
       "appearActive": Object {},
@@ -18671,6 +18720,13 @@ Object {
       "base": Object {
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "fill",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+      },
+    },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "max-height",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
     },

@@ -781,6 +781,13 @@ Object {
         "transitionTimingFunction": "cubic-bezier(0, 0, .5, 1)",
       },
     },
+    "maxHeightChange": Object {
+      "base": Object {
+        "transitionDuration": "200ms",
+        "transitionProperty": "max-height",
+        "transitionTimingFunction": "cubic-bezier(0, 0, .5, 1)",
+      },
+    },
     "moveUp": Object {
       "appear": Object {},
       "appearActive": Object {},
