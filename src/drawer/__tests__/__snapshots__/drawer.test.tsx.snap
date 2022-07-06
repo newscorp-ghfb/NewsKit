@@ -633,6 +633,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   overflow: hidden;
   top: 0;
   left: 0;
+  max-width: auto;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
@@ -1171,6 +1172,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   overflow: hidden;
   top: 0;
   left: 0;
+  max-width: auto;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
