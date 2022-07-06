@@ -187,9 +187,8 @@ export const FormInputSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         onBlur={composeEventHandlers([onBlur, onBlurContext])}
         ref={composeRefs(ref, inputRef)}
         id={id}
-        role="combobox"
         aria-describedby={assistiveTextId}
-        aria-required={isRequired || undefined}
+        required={isRequired || undefined}
         {...props}
       >
         {children}
