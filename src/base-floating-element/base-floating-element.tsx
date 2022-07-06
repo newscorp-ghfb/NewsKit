@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {CSSTransition} from 'react-transition-group';
 import {useEffect, useRef} from 'react';
 import {
   arrow,
@@ -15,6 +16,8 @@ import {StyledFloatingElement, StyledPanel, StyledPointer} from './styled';
 import {useControlled} from '../utils/hooks';
 import {useTheme} from '../theme';
 import {showOverridePxWarnings, getOverridePxValue} from './utils';
+import {getTransitionDuration} from '../utils';
+import {getTransitionClassName} from '../utils/get-transition-class-name';
 
 export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   children,
@@ -143,6 +146,8 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   // handler).
   const referenceProps = getReferenceProps();
 
+  const baseTransitionClassname = `nk-${path}`;
+
   return (
     <>
       {React.cloneElement(children, {
@@ -154,46 +159,61 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
             : undefined,
         ...referenceProps,
       })}
-      {open && (
-        <StyledFloatingElement
-          {...getFloatingProps({
-            ref: floating,
-            id: floatingId,
-            className,
-          })}
-          strategy={strategy}
-          $x={x}
-          $y={y}
-          placement={statefulPlacement}
-          overrides={overrides}
-          hidePointer={hidePointer}
-          role={role}
-          {...floatingElAriaAttributes}
-          path={path}
-        >
-          <StyledPanel
-            tabIndex={-1}
-            data-testid="floating-element-panel"
-            as={contentIsString ? 'p' : 'div'}
+      <CSSTransition
+        in={open}
+        timeout={getTransitionDuration(path, '')({theme, overrides})}
+        classNames={baseTransitionClassname}
+        mountOnEnter
+        unmountOnExit
+        appear
+      >
+        {state => (
+          <StyledFloatingElement
+            {...getFloatingProps({
+              ref: floating,
+              id: floatingId,
+            })}
+            className={`${className || ''} ${getTransitionClassName(
+              baseTransitionClassname,
+              state,
+            )}`}
+            baseTransitionClassname={baseTransitionClassname}
+            strategy={strategy}
+            $x={x}
+            $y={y}
+            placement={statefulPlacement}
             overrides={overrides}
+            hidePointer={hidePointer}
+            role={role}
+            {...floatingElAriaAttributes}
             path={path}
-            ref={panelRef}
           >
-            {typeof content === 'function' ? content(referenceProps) : content}
-          </StyledPanel>
-          {!hidePointer && (
-            <StyledPointer
-              path={path}
-              id={`${floatingId}-pointer`}
-              ref={pointerRef}
-              placement={statefulPlacement}
-              $x={pointerX}
-              $y={pointerY}
+            <StyledPanel
+              tabIndex={-1}
+              data-testid="floating-element-panel"
+              as={contentIsString ? 'p' : 'div'}
               overrides={overrides}
-            />
-          )}
-        </StyledFloatingElement>
-      )}
+              path={path}
+              ref={panelRef}
+            >
+              {typeof content === 'function'
+                ? content(referenceProps)
+                : content}
+            </StyledPanel>
+            {!hidePointer && (
+              <StyledPointer
+                path={path}
+                id={`${floatingId}-pointer`}
+                ref={pointerRef}
+                placement={statefulPlacement}
+                $x={pointerX}
+                $y={pointerY}
+                overrides={overrides}
+              />
+            )}
+          </StyledFloatingElement>
+        )}
+      </CSSTransition>
     </>
   );
 };

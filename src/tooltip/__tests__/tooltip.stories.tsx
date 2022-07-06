@@ -439,6 +439,12 @@ export const StoryTooltipOverrides = () => (
             stylePreset: 'tooltipPointerCustom',
             size: 'sizing030',
           },
+          transitionPreset: {
+            extend: 'fade',
+            base: {
+              transitionDelay: '{{motions.motionDuration050}}',
+            },
+          },
         }}
       >
         <Button
