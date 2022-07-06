@@ -125,7 +125,6 @@ export const StoryTooltip = () => (
     >
       <Button
         size={ButtonSize.Small}
-        // disabled
         overrides={{stylePreset: 'buttonOutlinedPrimary'}}
       >
         Button
