@@ -23,6 +23,7 @@ export * from './grid';
 export * from './grid-layout';
 export * from './headline';
 export * from './icon-button';
+// TODO: Should we stop exporting this?
 export * from './icons';
 export * from './image';
 export * from './inline-message';

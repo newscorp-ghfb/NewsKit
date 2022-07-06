@@ -44,7 +44,7 @@ const StyledIcon = styled.svg<NewsKitIconProps>`
     ${props =>
       props.overrides?.size &&
       getSizingCssFromTheme('height', props.overrides.size)}
-      
+
       // If overridden, render SP CSS here instead - this ensures we override fill color from parent SP.
       ${renderIconStylePreset(true)}
   }

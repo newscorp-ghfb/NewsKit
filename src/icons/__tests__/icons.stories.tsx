@@ -1,6 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from 'react';
 import {
+  AccountBalance,
+  AccountTree,
+  Close,
+} from '@emotion-icons/material-outlined';
+import {
   createTheme,
   newskitDarkTheme,
   ThemeProvider,
@@ -12,9 +17,6 @@ import {StorybookSubHeading} from '../../test/storybook-comps';
 
 import {
   IconFilledAccountBalance,
-  IconOutlinedAccountBalance,
-  IconFilledAccountTree,
-  IconOutlinedAccountTree,
   IconOutlinedClose,
   Svg,
   NewsKitIcon,
@@ -64,10 +66,9 @@ const getSocialIconStylePreset = (iconName: string) =>
 const {IndeterminateProgressIndicator, ...remainingCustomIcons} = customIcons;
 
 const materialIconsSample = {
-  IconFilledAccountBalance,
-  IconOutlinedAccountBalance,
-  IconFilledAccountTree,
-  IconOutlinedAccountTree,
+  AccountBalance,
+  AccountTree,
+  Close,
 };
 
 const socialIconList = [
@@ -161,46 +162,28 @@ export const StoryCustomIcons = () => (
 );
 StoryCustomIcons.storyName = 'custom-icons';
 
-export const StoryMaterialIcons = () => (
-  <>
-    {Object.values(materialIconsSample).map((Icon: NewsKitIcon) => (
-      <div>
-        <ThemeProvider theme={getTheme()}>
-          <Constrain>
-            <Icon />
-          </Constrain>
-          <Icon overrides={{size: 'iconSize030'}} />
-          <Icon
-            overrides={{
-              size: {
-                xs: 'iconSize010',
-                sm: 'iconSize020',
-                md: 'iconSize030',
-                lg: 'iconSize040',
-                xl: 'iconSize050',
-              },
-            }}
-          />
+export const StoryIcons = () => {
+  const myCustomIcons = Object.entries(
+    materialIconsSample,
+  ).map(([name, Icon]: [string, NewsKitIcon]) =>
+    customToNewsKitIcon(name, props => <Icon {...props} viewBox="0 0 24 24" />),
+  );
 
-          <Constrain>
-            <Icon
-              overrides={{
-                stylePreset: 'iconCustom',
-              }}
-            />
-          </Constrain>
-          <Icon
-            overrides={{
-              size: 'iconSize020',
-              stylePreset: 'iconCustom',
-            }}
-          />
-        </ThemeProvider>
-      </div>
-    ))}
-  </>
-);
-StoryMaterialIcons.storyName = 'material-icons';
+  return (
+    <>
+      <StorybookSubHeading>Material icons default</StorybookSubHeading>
+      {myCustomIcons.map(Icon => (
+        <Icon
+          overrides={{
+            size: 'iconSize050',
+            stylePreset: 'iconSocialFacebook',
+          }}
+        />
+      ))}
+    </>
+  );
+};
+StoryIcons.storyName = 'icons';
 
 export const StoryOverriddenIcons = () => {
   const MyCustomIcon = customToNewsKitIcon('IconFilledStop', props => (
