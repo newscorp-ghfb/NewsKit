@@ -63,7 +63,7 @@ exports[`StructuredList with href renders four cells with href 1`] = `
 </DocumentFragment>
 `;
 
-exports[`StructuredList with href renders one cell with disabled link and no icon 1`] = `
+exports[`StructuredList with href renders one cell with disabled link and hidden icon 1`] = `
 <DocumentFragment>
   .emotion-0 {
   list-style: none;
@@ -308,7 +308,7 @@ exports[`StructuredList with href renders one cell with disabled link and no ico
 </DocumentFragment>
 `;
 
-exports[`StructuredList with href renders one cell with external link and no icon 1`] = `
+exports[`StructuredList with href renders one cell with external link and hidden icon 1`] = `
 <DocumentFragment>
   .emotion-0 {
   list-style: none;
@@ -959,7 +959,7 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
 </DocumentFragment>
 `;
 
-exports[`StructuredList with href renders one cell with internal link and no icon 1`] = `
+exports[`StructuredList with href renders one cell with internal link and hidden icon 1`] = `
 <DocumentFragment>
   .emotion-0 {
   list-style: none;

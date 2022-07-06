@@ -334,30 +334,30 @@ describe('StructuredList', () => {
       );
     });
 
-    test('renders one cell with internal link and no icon', () => {
+    test('renders one cell with internal link and hidden icon', () => {
       const props: StructuredListItemProps = {
         children: OneCellDefault,
-        noIcon: true,
+        hideIcon: true,
       };
 
       const fragment = renderToFragmentWithTheme(renderWithInternalLink, props);
       expect(fragment).toMatchSnapshot();
     });
 
-    test('renders one cell with external link and no icon', () => {
+    test('renders one cell with external link and hidden icon', () => {
       const props: StructuredListItemProps = {
         children: OneCellDefault,
-        noIcon: true,
+        hideIcon: true,
       };
 
       const fragment = renderToFragmentWithTheme(renderWithExternalLink, props);
       expect(fragment).toMatchSnapshot();
     });
 
-    test('renders one cell with disabled link and no icon', () => {
+    test('renders one cell with disabled link and hidden icon', () => {
       const props: StructuredListItemProps = {
         children: OneCellDefault,
-        noIcon: true,
+        hideIcon: true,
       };
 
       const fragment = renderToFragmentWithTheme(renderWithDisabledLink, props);

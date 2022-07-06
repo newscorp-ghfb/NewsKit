@@ -28,7 +28,7 @@ export interface StructuredListItemProps
   ariaLabel?: string;
   disabled?: boolean;
   href?: string;
-  noIcon?: boolean;
+  hideIcon?: boolean;
   linkIconAlign?: StructuredListCellAlign;
   overrides?: {
     stylePreset?: MQ<string>;
