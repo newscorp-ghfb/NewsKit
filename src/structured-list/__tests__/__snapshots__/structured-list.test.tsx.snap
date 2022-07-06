@@ -63,6 +63,491 @@ exports[`StructuredList with href renders four cells with href 1`] = `
 </DocumentFragment>
 `;
 
+exports[`StructuredList with href renders one cell with disabled link and hidden icon 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.emotion-1 {
+  cursor: not-allowed;
+  list-style: none;
+  width: 100%;
+}
+
+.emotion-2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline-offset: -1px;
+}
+
+.emotion-3 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 24px 16px;
+  min-height: 80px;
+}
+
+@media screen {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+.emotion-4:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-4:active:not(:disabled) {
+  background-color: #F4F4F4;
+}
+
+.emotion-4:disabled {
+  background-color: transparent;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-5 {
+    padding: 0 8px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-5 {
+    padding: 0 12px;
+  }
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-7 {
+  margin: 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-7 svg {
+  fill: #0A0A0A;
+}
+
+.emotion-7::before {
+  content: '';
+  margin-bottom: -0.2155em;
+  display: block;
+}
+
+.emotion-7::after {
+  content: '';
+  margin-top: -0.2125em;
+  display: block;
+}
+
+.emotion-8 {
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+<ul
+    aria-label="list"
+    class="emotion-0"
+  >
+    <li
+      aria-label="list item"
+      class="emotion-1"
+      disabled=""
+    >
+      <span
+        aria-disabled="true"
+        class="emotion-2"
+        data-testid="list-item-link"
+        href="/"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <p
+                  class="emotion-7"
+                >
+                  Label
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </span>
+    </li>
+    <hr
+      aria-hidden="true"
+      class="emotion-8"
+      data-testid="divider"
+    />
+    <li
+      aria-label="list item"
+      class="emotion-1"
+      disabled=""
+    >
+      <span
+        aria-disabled="true"
+        class="emotion-2"
+        data-testid="list-item-link"
+        href="/"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <p
+                  class="emotion-7"
+                >
+                  Label
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </span>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`StructuredList with href renders one cell with external link and hidden icon 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.emotion-1 {
+  list-style: none;
+  width: 100%;
+}
+
+.emotion-2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline-offset: -1px;
+}
+
+.emotion-3 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 24px 16px;
+  min-height: 80px;
+}
+
+@media screen {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+.emotion-4:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-4:active:not(:disabled) {
+  background-color: #F4F4F4;
+}
+
+.emotion-4:disabled {
+  background-color: transparent;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-5 {
+    padding: 0 8px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-5 {
+    padding: 0 12px;
+  }
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-7 {
+  margin: 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-7 svg {
+  fill: #0A0A0A;
+}
+
+.emotion-7::before {
+  content: '';
+  margin-bottom: -0.2155em;
+  display: block;
+}
+
+.emotion-7::after {
+  content: '';
+  margin-top: -0.2125em;
+  display: block;
+}
+
+.emotion-8 {
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+<ul
+    aria-label="list"
+    class="emotion-0"
+  >
+    <li
+      aria-label="list item"
+      class="emotion-1"
+    >
+      <a
+        class="emotion-2"
+        data-testid="list-item-link"
+        href="http://apple.com"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <p
+                  class="emotion-7"
+                >
+                  Label
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <hr
+      aria-hidden="true"
+      class="emotion-8"
+      data-testid="divider"
+    />
+    <li
+      aria-label="list item"
+      class="emotion-1"
+    >
+      <a
+        class="emotion-2"
+        data-testid="list-item-link"
+        href="http://apple.com"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <p
+                  class="emotion-7"
+                >
+                  Label
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
 exports[`StructuredList with href renders one cell with external link icon 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -464,6 +949,246 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
                     />
                   </svg>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`StructuredList with href renders one cell with internal link and hidden icon 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.emotion-1 {
+  list-style: none;
+  width: 100%;
+}
+
+.emotion-2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline-offset: -1px;
+}
+
+.emotion-3 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 24px 16px;
+  min-height: 80px;
+}
+
+@media screen {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-4 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+.emotion-4:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-4:active:not(:disabled) {
+  background-color: #F4F4F4;
+}
+
+.emotion-4:disabled {
+  background-color: transparent;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-5 {
+    padding: 0 8px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-5 {
+    padding: 0 12px;
+  }
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-7 {
+  margin: 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-7 svg {
+  fill: #0A0A0A;
+}
+
+.emotion-7::before {
+  content: '';
+  margin-bottom: -0.2155em;
+  display: block;
+}
+
+.emotion-7::after {
+  content: '';
+  margin-top: -0.2125em;
+  display: block;
+}
+
+.emotion-8 {
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+<ul
+    aria-label="list"
+    class="emotion-0"
+  >
+    <li
+      aria-label="list item"
+      class="emotion-1"
+    >
+      <a
+        class="emotion-2"
+        data-testid="list-item-link"
+        href="/"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <p
+                  class="emotion-7"
+                >
+                  Label
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <hr
+      aria-hidden="true"
+      class="emotion-8"
+      data-testid="divider"
+    />
+    <li
+      aria-label="list item"
+      class="emotion-1"
+    >
+      <a
+        class="emotion-2"
+        data-testid="list-item-link"
+        href="/"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <p
+                  class="emotion-7"
+                >
+                  Label
+                </p>
               </div>
             </div>
           </div>
