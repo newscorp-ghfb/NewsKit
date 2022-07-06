@@ -7,6 +7,7 @@ import {TransitionToken} from '../theme';
 
 export type AccordionIconProps = NewsKitIconProps &
   Pick<AccordionProps, 'expanded'>;
+
 export interface AccordionHeaderOverrides extends LogicalPaddingProps {
   minWidth?: MQ<string>;
   minHeight?: MQ<string>;
@@ -20,11 +21,14 @@ export interface AccordionHeaderOverrides extends LogicalPaddingProps {
   transitionPreset?: TransitionToken | TransitionToken[];
 }
 
+export interface AccordionPanelOverrides {
+  stylePreset?: MQ<string>;
+  transitionPreset?: TransitionToken | TransitionToken[];
+}
+
 export type AccordionPropsOverrides = {
   header?: AccordionHeaderOverrides;
-  panel?: {
-    stylePreset?: MQ<string>;
-  };
+  panel?: AccordionPanelOverrides;
 };
 
 export interface AccordionProps {

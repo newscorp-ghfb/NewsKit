@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {
   StyledAccordionButton,
@@ -6,6 +6,7 @@ import {
   StyledLabel,
   StyledIconWrapper,
   StyledHeader,
+  StyledPanelTransitionContainer,
 } from './styled';
 import {AccordionIconProps, AccordionProps} from './types';
 import defaults from './defaults';
@@ -15,6 +16,31 @@ import {IconFilledExpandLess, IconFilledExpandMore} from '../icons';
 import {getComponentOverrides} from '../utils/overrides';
 import {TextBlock} from '../text-block';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
+
+// Based on https://www.w3schools.com/howto/howto_js_accordion.asp
+const MaxHeightTransitionPanel = ({
+  expanded,
+  children,
+  overrides,
+}: Pick<AccordionProps, 'expanded' | 'children' | 'overrides'>) => {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (expanded) {
+      ref.current!.style.maxHeight = `${ref.current!.scrollHeight}px`;
+    } else {
+      ref.current!.style.maxHeight = '0px';
+    }
+  }, [expanded]);
+  return (
+    <StyledPanelTransitionContainer
+      ref={ref}
+      expanded={expanded}
+      overrides={overrides}
+    >
+      {children}
+    </StyledPanelTransitionContainer>
+  );
+};
 
 const DefaultIcon = ({expanded, overrides}: AccordionIconProps) =>
   expanded ? (
@@ -88,16 +114,18 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
             </StyledIconWrapper>
           </StyledAccordionButton>
         </TextBlock>
-        <StyledPanel
-          aria-labelledby={ariaLabelledById}
-          id={ariaControlsId}
-          data-testid="accordion-content"
-          role="region"
-          expanded={expanded}
-          overrides={overrides}
-        >
-          {children}
-        </StyledPanel>
+        <MaxHeightTransitionPanel expanded={expanded} overrides={overrides}>
+          <StyledPanel
+            aria-labelledby={ariaLabelledById}
+            id={ariaControlsId}
+            data-testid="accordion-content"
+            role="region"
+            expanded={expanded}
+            overrides={overrides}
+          >
+            {children}
+          </StyledPanel>
+        </MaxHeightTransitionPanel>
       </div>
     );
   },

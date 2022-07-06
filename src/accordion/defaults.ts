@@ -12,6 +12,7 @@ export default {
       },
     },
     panel: {
+      transitionPreset: 'maxHeightChange',
       stylePreset: 'accordionPanel',
       paddingBlock: 'spaceInset030',
       paddingInline: 'spaceInset030',

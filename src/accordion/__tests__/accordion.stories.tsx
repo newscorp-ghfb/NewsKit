@@ -249,12 +249,6 @@ export const StoryAccordionOverrides = () => (
           expanded
           overrides={{
             header: {
-              transitionPreset: {
-                extend: 'backgroundColorChange',
-                base: {
-                  transitionDuration: '{{motions.motionDuration050}}',
-                },
-              },
               minWidth: 'sizing090',
               minHeight: 'sizing090',
               stylePreset: 'accordionHeaderCustom',
@@ -516,3 +510,68 @@ export const StoryAccordionOutlineOverrides = () => (
 );
 
 StoryAccordionOutlineOverrides.storyName = 'accordion-with-outline-overrides';
+
+export const StoryAccordionGroupTransitionOverrides = () => {
+  const noTransitions = {
+    header: {
+      transitionPreset: [],
+    },
+    panel: {
+      transitionPreset: [],
+    },
+  };
+
+  const slowTransitions = {
+    header: {
+      transitionPreset: {
+        extend: 'backgroundColorChange',
+        base: {
+          transitionDuration: '1000ms',
+        },
+      },
+    },
+    panel: {
+      transitionPreset: {
+        extend: 'maxHeightChange',
+        base: {
+          transitionDuration: '1000ms',
+        },
+      },
+    },
+  };
+
+  return (
+    <>
+      <StorybookHeading>Accordion Group Transition Overrides</StorybookHeading>
+      <StorybookSubHeading>No transitions</StorybookSubHeading>
+      <AccordionGroup>
+        <Accordion header="Header 1" overrides={noTransitions}>
+          {content}
+        </Accordion>
+        <Accordion header="Header 2" overrides={noTransitions}>
+          {content}
+        </Accordion>
+        <Accordion header="Header 3" overrides={noTransitions}>
+          {content}
+        </Accordion>
+      </AccordionGroup>
+      <StorybookSubHeading>Slow transitions</StorybookSubHeading>
+      <AccordionGroup>
+        <Accordion header="Header 1" overrides={slowTransitions}>
+          {content}
+        </Accordion>
+        <Accordion header="Header 2" overrides={slowTransitions}>
+          {content}
+        </Accordion>
+        <Accordion header="Header 3" overrides={slowTransitions}>
+          {content}
+        </Accordion>
+      </AccordionGroup>
+    </>
+  );
+};
+StoryAccordionGroupTransitionOverrides.storyName =
+  'accordion-group-transition-overrides';
+StoryAccordionGroupTransitionOverrides.parameters = {
+  eyes: {include: false},
+};

@@ -177,7 +177,27 @@ exports[`Accordion renders as a h4 1`] = `
 }
 
 .emotion-10 {
-  display: block;
+  max-height: unset;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -274,17 +294,22 @@ exports[`Accordion renders as a h4 1`] = `
       </button>
     </h4>
     <div
-      aria-labelledby="mock-nk-1-control"
       class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -467,7 +492,27 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
 }
 
 .emotion-10 {
-  display: none;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -564,17 +609,22 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
       class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -757,7 +807,27 @@ exports[`Accordion renders with default props 1`] = `
 }
 
 .emotion-10 {
-  display: none;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -853,17 +923,22 @@ exports[`Accordion renders with default props 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
       class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -1022,7 +1097,27 @@ exports[`Accordion renders with disabled state 1`] = `
 }
 
 .emotion-10 {
-  display: none;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -1119,17 +1214,22 @@ exports[`Accordion renders with disabled state 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
       class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -1312,7 +1412,27 @@ exports[`Accordion renders with expanded state and icon 1`] = `
 }
 
 .emotion-10 {
-  display: block;
+  max-height: unset;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -1409,17 +1529,22 @@ exports[`Accordion renders with expanded state and icon 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
       class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -1602,7 +1727,27 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
 }
 
 .emotion-10 {
-  display: block;
+  max-height: unset;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -1695,17 +1840,22 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
       class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -1907,7 +2057,27 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
 }
 
 .emotion-10 {
-  display: block;
+  max-height: unset;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -2004,17 +2174,22 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
       class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -2152,7 +2327,27 @@ exports[`Accordion renders with no header 1`] = `
 }
 
 .emotion-7 {
-  display: none;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: max-height;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: max-height;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-8 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -2201,17 +2396,22 @@ exports[`Accordion renders with no header 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
       class="emotion-7"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-8"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -2386,7 +2586,27 @@ exports[`Accordion renders with no label 1`] = `
 }
 
 .emotion-9 {
-  display: none;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: max-height;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: max-height;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-10 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -2477,17 +2697,22 @@ exports[`Accordion renders with no label 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
       class="emotion-9"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-10"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -2677,7 +2902,27 @@ exports[`Accordion renders with style overrides 1`] = `
 }
 
 .emotion-10 {
-  display: block;
+  max-height: unset;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
   border-style: none none dotted none;
   border-color: #fb8500;
   border-width: 4px;
@@ -2774,17 +3019,22 @@ exports[`Accordion renders with style overrides 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
       class="emotion-10"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -2922,7 +3172,27 @@ exports[`Accordion renders without leading icon 1`] = `
 }
 
 .emotion-7 {
-  display: none;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: max-height;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: max-height;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-8 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -2973,17 +3243,22 @@ exports[`Accordion renders without leading icon 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="mock-nk-1-control"
       class="emotion-7"
-      data-testid="accordion-content"
-      id="mock-nk-1-content"
-      role="region"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="mock-nk-1-control"
+        class="emotion-8"
+        data-testid="accordion-content"
+        id="mock-nk-1-content"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -3166,7 +3441,27 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
 }
 
 .emotion-10 {
-  display: none;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-10 {
+    transition-property: max-height;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -3262,17 +3557,22 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
       </button>
     </h3>
     <div
-      aria-labelledby="nk-custom-id"
       class="emotion-10"
-      data-testid="accordion-content"
-      id="nk-custom-ariaControl"
-      role="region"
+      style="max-height: 0px;"
     >
-      <p
-        class="emotion-0"
+      <div
+        aria-labelledby="nk-custom-id"
+        class="emotion-11"
+        data-testid="accordion-content"
+        id="nk-custom-ariaControl"
+        role="region"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-      </p>
+        <p
+          class="emotion-0"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -3402,7 +3702,27 @@ exports[`AccordionGroup different type of children 1`] = `
 }
 
 .emotion-6 {
-  display: block;
+  max-height: unset;
+  overflow: hidden;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: max-height;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: max-height;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-7 {
   border-style: none none solid none;
   border-color: #CCCCCC;
   border-width: 1px;
@@ -3450,13 +3770,18 @@ exports[`AccordionGroup different type of children 1`] = `
         </button>
       </h3>
       <div
-        aria-labelledby="mock-nk-1-control"
         class="emotion-6"
-        data-testid="accordion-content"
-        id="mock-nk-1-content"
-        role="region"
+        style="max-height: 0px;"
       >
-        Content 1
+        <div
+          aria-labelledby="mock-nk-1-control"
+          class="emotion-7"
+          data-testid="accordion-content"
+          id="mock-nk-1-content"
+          role="region"
+        >
+          Content 1
+        </div>
       </div>
     </div>
     <div>
@@ -3498,13 +3823,18 @@ exports[`AccordionGroup different type of children 1`] = `
         </button>
       </h3>
       <div
-        aria-labelledby="mock-nk-1-control"
         class="emotion-6"
-        data-testid="accordion-content"
-        id="mock-nk-1-content"
-        role="region"
+        style="max-height: 0px;"
       >
-        Content 2
+        <div
+          aria-labelledby="mock-nk-1-control"
+          class="emotion-7"
+          data-testid="accordion-content"
+          id="mock-nk-1-content"
+          role="region"
+        >
+          Content 2
+        </div>
       </div>
     </div>
     <hr />
