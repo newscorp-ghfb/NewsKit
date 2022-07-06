@@ -920,7 +920,7 @@ jobs:
       - save_cache:
           key: yarn-build-v1-codemod-{{ checksum "codemod/yarn.lock" }}
           paths:
-            - ~/.cache    
+            - ~/.cache
       - persist_to_workspace:
           root: ./
           paths:
@@ -1161,6 +1161,13 @@ workflows:
           requires:
             - deploy_to_s3
 
+  pull_request_codemod:
+    when:
+      matches:
+        # Supporting Pr branches starting with feat/, docs/, fix/, chore/, style/, refactor/, perf/, test/, etc.
+        pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert\/.*|style\/.*|test\/.*|^dependabot\/.*'
+        value: << pipeline.git.branch >>
+    jobs:
       - install_deps_codemod
 
       - test_unit_codemod:
