@@ -1345,6 +1345,33 @@ workflows:
             - eks_flux_deploy_dev_to_prod
       # end
 
+  main_codemod:
+    when:
+      equal: [main, << pipeline.git.branch >>]
+    jobs:
+      - install_deps_codemod
+
+      - test_unit_codemod:
+          requires:
+            - install_deps_codemod
+
+      - lint_codemod:
+          requires:
+            - install_deps_codemod
+
+      - approve_publish_npm_pr_codemod:
+          type: approval
+          requires:
+            - test_unit_codemod
+            - lint_codemod
+
+      - publish_npm_codemod:
+          name: publish_npm_codemod_pr
+          context: ncu-product-platforms-context
+          publish_dev: true
+          requires:
+            - approve_publish_npm_pr_codemod
+
   on_trigger_release_tag:
     jobs:
       - bump_version:
@@ -1456,33 +1483,6 @@ workflows:
             - test_e2e_comps
             - test_e2e_docs_prod
             - test_newskit_in_nextjs_app
-
-      - install_deps_codemod:
-          <<: *only_on_version_tag
-
-      - test_unit_codemod:
-          <<: *only_on_version_tag
-          requires:
-            - install_deps_codemod
-
-      - lint_codemod:
-          <<: *only_on_version_tag
-          requires:
-            - install_deps_codemod
-
-      - approve_publish_npm_codemod:
-          <<: *only_on_version_tag
-          type: approval
-          requires:
-            - test_unit_codemod
-            - lint_codemod
-
-      - publish_npm_codemod:
-          <<: *only_on_version_tag
-          context: ncu-product-platforms-context
-          publish_dev: false
-          requires:
-            - approve_publish_npm_codemod
 
       # Deploying newskit.co.uk and storybook to Staging then to Prod environment.
       - eks_flux_deploy:
