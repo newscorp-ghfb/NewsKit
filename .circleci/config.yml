@@ -1301,7 +1301,7 @@ workflows:
             - lint_codemod
 
       - publish_npm_codemod:
-          name: publish_npm_codemod_pr
+          name: publish_npm_pr_codemod
           context: ncu-product-platforms-context
           publish_dev: true
           requires:
@@ -1482,7 +1482,7 @@ workflows:
             - lint_codemod
 
       - publish_npm_codemod:
-          name: publish_npm_codemod_pr
+          name: publish_npm_pr_codemod
           context: ncu-product-platforms-context
           publish_dev: true
           requires:
