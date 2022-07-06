@@ -1021,6 +1021,11 @@ jobs:
           name: Delete trigger-release-codemod@ tag
           command: cd codemod && make delete_trigger_release_tag VERSION=<< parameters.version >>
 
+  merge_checker:
+    executor: node
+    steps:
+      - run: echo "Merge checker"
+
 # ========== FILTERS START    ==========
 
 only_on_trigger_release_tag: &only_on_trigger_release_tag
@@ -1228,6 +1233,11 @@ workflows:
 
       - approve_publish_npm_pr_codemod:
           type: approval
+          requires:
+            - test_unit_codemod
+            - lint_codemod
+
+      - merge_checker:
           requires:
             - test_unit_codemod
             - lint_codemod
@@ -1571,7 +1581,6 @@ workflows:
           environment: prod
           requires:
             - eks_flux_deploy_prod
-      #
 
   on_release_version_tag_codemod:
     # Workflow's jobs triggered by the bump_version_codemod make script, which creates and pushes a new version tag e.g: "codemod-v5.0.1".
@@ -1594,10 +1603,10 @@ workflows:
           requires:
             - install_deps_codemod
 
-      # - publish_npm_codemod:
-      #     <<: *only_on_version_tag_codemod
-      #     context: ncu-product-platforms-context
-      #     publish_dev: false
-      #     requires:
-      #       - test_unit_codemod
-      #       - lint_codemod
+      - publish_npm_codemod:
+          <<: *only_on_version_tag_codemod
+          context: ncu-product-platforms-context
+          publish_dev: false
+          requires:
+            - test_unit_codemod
+            - lint_codemod

@@ -26,7 +26,8 @@ bump_version:
 	yarn config set version-tag-prefix "codemod-v"
 	echo "Updating package.json and creating a tag for `${NEW_VERSION}`"
 	yarn version --new-version ${NEW_VERSION}
-		
+	git push
+	git push origin codemod-v${NEW_VERSION}
 
 delete_trigger_release_tag:
 	git checkout main
