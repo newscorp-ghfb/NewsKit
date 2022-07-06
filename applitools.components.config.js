@@ -8,7 +8,7 @@ module.exports = {
     {width: 1024, height: 768, name: 'chrome'},
     {width: 1024, height: 768, name: 'safari'},
   ],
-  concurrency: 100,
+  concurrency: 20,
   viewportSize: {width: 1027, height: 768},
   dontCloseBatches: true,
 };

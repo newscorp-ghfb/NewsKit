@@ -19,6 +19,74 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   top: -24px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #2E2E2E;
@@ -226,7 +294,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -305,6 +373,74 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -490,7 +626,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 
 <div
     aria-describedby="header-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -571,6 +707,74 @@ exports[`Popover close button should show left-aligned 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -765,7 +969,7 @@ exports[`Popover close button should show left-aligned 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class="nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -839,6 +1043,74 @@ exports[`Popover close button should show right-aligned 1`] = `
   border-radius: 8px;
   z-index: 80;
   position: absolute;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -1033,7 +1305,7 @@ exports[`Popover close button should show right-aligned 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class="nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -1109,6 +1381,74 @@ exports[`Popover content applies logical prop overrides 1`] = `
   position: absolute;
   left: 0px;
   top: -24px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -1318,7 +1658,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -1397,6 +1737,74 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -1615,7 +2023,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 
 <div
     aria-describedby="header-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -1698,6 +2106,74 @@ exports[`Popover content applies typography preset overrides 1`] = `
   position: absolute;
   left: 0px;
   top: -24px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -1907,7 +2383,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -1986,6 +2462,74 @@ exports[`Popover header applies logical prop overrides 1`] = `
   position: absolute;
   left: 0px;
   top: -24px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -2218,7 +2762,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
 
 <div
     aria-describedby="header-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -2304,6 +2848,74 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -2521,7 +3133,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 
 <div
     aria-describedby="header-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -2603,6 +3215,74 @@ exports[`Popover header applies typography preset overrides 1`] = `
   position: absolute;
   left: 0px;
   top: -24px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -2835,7 +3515,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
 
 <div
     aria-describedby="header-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -2924,6 +3604,74 @@ exports[`Popover offset should be applied with pointer and px distance override 
   top: -10px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #2E2E2E;
@@ -3131,7 +3879,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -3213,6 +3961,74 @@ exports[`Popover offset should be applied with pointer and token distance overri
   top: -16px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #2E2E2E;
@@ -3420,7 +4236,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -3502,6 +4318,74 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   top: 0px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #2E2E2E;
@@ -3709,7 +4593,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -3791,6 +4675,74 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   top: 0px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #2E2E2E;
@@ -3998,7 +4950,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -4078,6 +5030,74 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -4272,7 +5292,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -4348,6 +5368,74 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   position: absolute;
   left: 0px;
   top: -24px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -4557,7 +5645,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -4637,6 +5725,74 @@ exports[`Popover pointer padding should be applied with token distance override 
   position: absolute;
   left: 0px;
   top: -24px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -4846,7 +6002,7 @@ exports[`Popover pointer padding should be applied with token distance override 
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -4928,6 +6084,74 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   top: -24px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #2E2E2E;
@@ -5135,7 +6359,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -5217,6 +6441,74 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   top: -24px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #2E2E2E;
@@ -5424,7 +6716,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -5504,6 +6796,74 @@ exports[`Popover should render correct styles: default 1`] = `
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -5698,7 +7058,7 @@ exports[`Popover should render correct styles: default 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -5776,6 +7136,76 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 500ms;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 500ms;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -5977,7 +7407,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -6053,6 +7483,74 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   position: absolute;
   left: 0px;
   top: -24px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -6262,7 +7760,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -6344,6 +7842,74 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   top: -24px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #2E2E2E;
@@ -6551,7 +8117,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -6631,6 +8197,74 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   position: absolute;
   left: 0px;
   top: -24px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -6840,7 +8474,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"
@@ -6920,6 +8554,74 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   position: absolute;
   left: 24px;
   top: 0px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-popover-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-popover-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-popover-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -7129,7 +8831,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 
 <div
     aria-labelledby="ref-MOCK-ID"
-    class="emotion-0"
+    class=" nk-popover-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="dialog"
     tabindex="-1"

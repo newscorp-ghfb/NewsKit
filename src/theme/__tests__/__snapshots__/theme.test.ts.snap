@@ -2113,6 +2113,7 @@ Object {
       "stylePreset": "popoverPointer",
     },
     "stylePreset": "popover",
+    "transitionPreset": "fade",
     "zIndex": 80,
   },
   "radioButton": Object {
@@ -2803,6 +2804,12 @@ Object {
       "edgeOffset": "space020",
       "size": "sizing010",
       "stylePreset": "tooltipPointer",
+    },
+    "transitionPreset": Object {
+      "base": Object {
+        "transitionDelay": "{{motions.motionDuration020}}",
+      },
+      "extend": "fade",
     },
     "zIndex": 80,
   },
