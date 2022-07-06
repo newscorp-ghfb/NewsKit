@@ -128,6 +128,12 @@ const myCustomTheme = createTheme({
           backgroundColor: 'grey',
         },
       },
+      customAudioPlayerVolumeControlVerticalContainer: {
+        base: {
+          backgroundColor: 'purple',
+          boxShadow: '{{shadows.shadow030}}',
+        },
+      },
       customFeedback: {
         base: {
           backgroundColor: '{{colors.red060}}',
@@ -675,6 +681,7 @@ export const AudioPlayerOverrides = () => {
                         track: {
                           stylePreset: 'customTrackStylePreset',
                           size: 'sizing020',
+                          length: '150px',
                         },
                         indicator: {
                           stylePreset: 'customIndicatorStylePreset',
@@ -753,6 +760,42 @@ export const AudioPlayerOverrides = () => {
               </>
             )}
           </GridLayout>
+        </AudioPlayerComposable>
+        <StorybookSubHeading>
+          Vertical volume control with overrides
+        </StorybookSubHeading>
+        <AudioPlayerComposable
+          src={AUDIO_SRC}
+          ariaLandmark="audio player vertical volume control overrides"
+        >
+          <VerticalContainer>
+            <AudioPlayerVolumeControl
+              layout="vertical"
+              collapsed={breakpointKey === 'xs' || breakpointKey === 'sm'}
+              overrides={{
+                stylePreset: 'customAudioPlayerVolumeControlVerticalContainer',
+                spaceBetween: 'space050',
+                slider: {
+                  track: {
+                    stylePreset: 'customTrackStylePreset',
+                    size: 'sizing020',
+                    length: '100px',
+                  },
+                  indicator: {
+                    stylePreset: 'customIndicatorStylePreset',
+                  },
+                  thumb: {
+                    stylePreset: 'customThumbStylePreset',
+                    size: 'sizing040',
+                  },
+                  feedback: {
+                    size: 'sizing070',
+                    stylePreset: 'customFeedback',
+                  },
+                },
+              }}
+            />
+          </VerticalContainer>
         </AudioPlayerComposable>
         <StorybookSubHeading>
           MuteButton Icon Prop Overrides

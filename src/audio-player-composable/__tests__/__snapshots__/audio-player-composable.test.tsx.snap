@@ -231,8 +231,8 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   -ms-flex-align: center;
   align-items: center;
   background-color: grey;
-  -webkit-column-gap: 12px;
-  column-gap: 12px;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
 }
 
 .emotion-1 {

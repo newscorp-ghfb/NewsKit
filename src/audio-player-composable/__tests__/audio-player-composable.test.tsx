@@ -975,6 +975,7 @@ describe('Audio Player Composable', () => {
                 track: {
                   stylePreset: 'customTrackStylePreset',
                   size: 'sizing020',
+                  length: '100px',
                 },
                 indicator: {
                   stylePreset: 'customIndicatorStylePreset',

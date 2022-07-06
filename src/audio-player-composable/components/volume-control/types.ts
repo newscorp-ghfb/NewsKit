@@ -9,7 +9,13 @@ export type MuteButtonIconProps = NewsKitIconProps &
 export interface AudioPlayerVolumeControlOverridesProps {
   stylePreset?: MQ<string>;
   spaceBetween?: MQ<string>;
-  slider?: SliderOverrideProps;
+  slider?: Omit<SliderOverrideProps, 'track'> & {
+    track?: {
+      stylePreset?: MQ<string>;
+      size?: string;
+      length?: string;
+    };
+  };
   button?: {
     stylePreset?: MQ<string>;
     muteButtonIcon: Override<MuteButtonIconProps>;

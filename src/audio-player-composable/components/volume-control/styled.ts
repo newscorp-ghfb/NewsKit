@@ -8,13 +8,13 @@ import {
 import {AudioPlayerVolumeControlProps} from './types';
 
 export const StyledVolumeSliderContainer = styled.div<
-  Pick<AudioPlayerVolumeControlProps, 'layout'>
+  Pick<AudioPlayerVolumeControlProps, 'layout' | 'overrides'>
 >`
   ${({layout}) =>
     getResponsiveSize(
       layout === 'vertical' ? 'height' : 'width',
       `audioPlayerVolumeControl.${layout}.slider.track`,
-      `${layout}.slider.track`,
+      `slider.track`,
       'length',
     )}
 `;
@@ -33,7 +33,7 @@ export const StyledGridLayout = styled(GridLayout)<
     getResponsiveSpace(
       layout === 'vertical' ? 'rowGap' : 'columnGap',
       `audioPlayerVolumeControl.${layout}.spaceBetween`,
-      `${layout}.spaceBetween`,
+      '',
       'spaceBetween',
     )};
 `;
