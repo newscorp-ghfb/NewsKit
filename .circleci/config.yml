@@ -985,8 +985,8 @@ jobs:
           root: ./
           paths:
             - codemod/node_modules/*
-      - slack/status:
-          <<: *slack_status
+      - slack/notify:
+          <<: *slack_notify
 
   lint_codemod:
     executor: node
@@ -997,8 +997,8 @@ jobs:
       - run:
           name: Lint Codemod
           command: cd codemod && make lint
-      - slack/status:
-          <<: *slack_status
+      - slack/notify:
+          <<: *slack_notify
 
   test_unit_codemod:
     executor: node
@@ -1015,8 +1015,8 @@ jobs:
           path: ./reports/codemod-junit/
       - store_artifacts:
           path: ./reports/codemod-junit
-      - slack/status:
-          <<: *slack_status
+      - slack/notify:
+          <<: *slack_notify
 
   publish_npm_codemod:
     parameters:
@@ -1046,8 +1046,8 @@ jobs:
             - run:
                 name: Publish codemod to NPM
                 command: cd codemod && make publish_npm;
-      - slack/status:
-          <<: *slack_status
+      - slack/notify:
+          <<: *slack_notify
 
   bump_version_codemod:
     executor: node
@@ -1062,8 +1062,8 @@ jobs:
       - run:
           name: Bump version
           command: cd codemod && make bump_version NEW_VERSION=<< parameters.version >>
-      - slack/status:
-          <<: *slack_status
+      - slack/notify:
+          <<: *slack_notify
 
   delete_trigger_release_tag_codemod:
     executor: node
