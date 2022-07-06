@@ -134,7 +134,7 @@ export const FormInputTextField = React.forwardRef<
 
   return (
     <TextField
-      required={isRequired || undefined}
+      aria-required={isRequired || undefined}
       aria-invalid={state === 'invalid' ? 'true' : 'false'}
       name={name}
       state={state}
@@ -187,8 +187,9 @@ export const FormInputSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         onBlur={composeEventHandlers([onBlur, onBlurContext])}
         ref={composeRefs(ref, inputRef)}
         id={id}
+        role="combobox"
         aria-describedby={assistiveTextId}
-        required={isRequired || undefined}
+        aria-required={isRequired || undefined}
         {...props}
       >
         {children}
@@ -271,7 +272,7 @@ export const FormInputCheckbox = React.forwardRef<
       ref={composeRefs(ref, inputRef)}
       id={id}
       aria-describedby={assistiveTextId}
-      required={isRequired || undefined}
+      aria-required={isRequired || undefined}
       {...props}
     />
   );
@@ -303,7 +304,7 @@ export const FormInputRadioButton = React.forwardRef<
       ref={composeRefs(ref, inputRef)}
       id={id}
       aria-describedby={assistiveTextId}
-      required={isRequired || undefined}
+      aria-required={isRequired || undefined}
       {...props}
     />
   );
