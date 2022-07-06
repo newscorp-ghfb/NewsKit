@@ -906,7 +906,7 @@ jobs:
       - slack/status:
           <<: *slack_status
 
-# ========== CODEMOD TASKS    ==========
+  # ========== CODEMOD TASKS    ==========
 
   install_deps_codemod:
     executor: node
@@ -1581,7 +1581,7 @@ workflows:
           context: ncu-product-platforms-context
           version: $(echo << pipeline.git.tag >> | cut -f2 -d "v")
 
-      - install_deps_codemod
+      - install_deps_codemod:
           <<: *only_on_version_tag_codemod
 
       - test_unit_codemod:
