@@ -18,3 +18,16 @@ publish_npm_dev:
 set_git_identity:
 	git config --global user.email "ncu-product-platforms@news.co.uk"
 	git config --global user.name "Product Platforms Service"
+
+bump_version:
+	git checkout main
+	git pull
+	yarn config set version-git-message "Bumping Codemod version to v%s - [skip ci]"
+	yarn config set version-tag-prefix "codemod-v"
+	echo "Updating package.json and creating a tag for `${NEW_VERSION}`"
+	yarn version --new-version ${NEW_VERSION}
+		
+
+delete_trigger_release_tag:
+	git checkout main
+	git push origin --delete trigger-release-codemod@${VERSION}	
