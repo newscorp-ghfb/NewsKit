@@ -247,6 +247,58 @@ export const StoryStructuredListInteractive = () => (
 );
 StoryStructuredListInteractive.storyName = 'structured-list-interactive';
 
+export const StoryStructuredListInteractiveHideIcon = () => (
+  <>
+    <StorybookHeading>StructuredList</StorybookHeading>
+    <StorybookSubHeading>with internal link (hide icon)</StorybookSubHeading>
+    <StructuredListWithDivider>
+      <ListItemWithInternalLink hideIcon ariaLabel="list item">
+        <StructuredListCell>
+          <HeadingTextBlock>Label</HeadingTextBlock>
+        </StructuredListCell>
+        <StructuredListCell>
+          <BodyTextBlock>A short description of the label</BodyTextBlock>
+        </StructuredListCell>
+      </ListItemWithInternalLink>
+      <ListItemWithInternalLink hideIcon>
+        <StructuredListCell>
+          <HeadingTextBlock>Label</HeadingTextBlock>
+        </StructuredListCell>
+      </ListItemWithInternalLink>
+    </StructuredListWithDivider>
+
+    <StorybookSubHeading>with external link (hide icon)</StorybookSubHeading>
+    <StructuredListWithDivider>
+      <ListItemWithExternalLink hideIcon ariaLabel="list item">
+        <StructuredListCell>
+          <HeadingTextBlock>Label</HeadingTextBlock>
+        </StructuredListCell>
+        <StructuredListCell>
+          <BodyTextBlock>A short description of the label</BodyTextBlock>
+        </StructuredListCell>
+      </ListItemWithExternalLink>
+      <ListItemWithExternalLink hideIcon>
+        <StructuredListCell>
+          <HeadingTextBlock>Label</HeadingTextBlock>
+        </StructuredListCell>
+      </ListItemWithExternalLink>
+    </StructuredListWithDivider>
+    <StorybookSubHeading>with disabled link (hide icon)</StorybookSubHeading>
+    <StructuredListWithDivider>
+      <StructuredListItem hideIcon href="/" disabled ariaLabel="list item">
+        <StructuredListCell>
+          <HeadingTextBlock>Label</HeadingTextBlock>
+        </StructuredListCell>
+        <StructuredListCell>
+          <BodyTextBlock>A short description of the label</BodyTextBlock>
+        </StructuredListCell>
+      </StructuredListItem>
+    </StructuredListWithDivider>
+  </>
+);
+StoryStructuredListInteractiveHideIcon.storyName =
+  'structured-list-interactive-hide-icon';
+
 export const StoryStructuredListCombined = () => (
   <>
     <StorybookHeading>StructuredList combines</StorybookHeading>
