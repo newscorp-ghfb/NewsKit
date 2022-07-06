@@ -2001,6 +2001,76 @@ exports[`Tooltip should throw a warning if disabled component is not wrapped in 
   top: 0px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -2017,7 +2087,7 @@ exports[`Tooltip should throw a warning if disabled component is not wrapped in 
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
     id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
