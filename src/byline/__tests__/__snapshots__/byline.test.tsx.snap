@@ -142,6 +142,21 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   fill: #5E44E4;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -514,6 +529,21 @@ exports[`Byline renders correctly with authors and links 1`] = `
   fill: #5E44E4;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -812,6 +842,21 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   fill: #5E44E4;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1076,6 +1121,21 @@ exports[`Byline renders correctly with logical props overrides 1`] = `
 
 .emotion-4:visited:hover:not(:disabled) svg {
   fill: #5E44E4;
+}
+
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-5 {

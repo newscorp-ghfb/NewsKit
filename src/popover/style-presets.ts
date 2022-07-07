@@ -19,4 +19,18 @@ export default {
       backgroundColor: '{{colors.interface010}}',
     },
   },
+  popoverHeader: {
+    base: {
+      borderColor: '{{colors.neutral040}}',
+      borderStyle: 'none none solid none',
+      borderWidth: '{{borders.borderWidth010}}',
+    },
+  },
+  popoverCloseButtonContainer: {
+    base: {
+      borderColor: '{{colors.neutral040}}',
+      borderStyle: 'none none solid none',
+      borderWidth: '{{borders.borderWidth010}}',
+    },
+  },
 } as Record<string, StylePreset>;

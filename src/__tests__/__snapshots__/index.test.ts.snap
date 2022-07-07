@@ -4,6 +4,7 @@ exports[`index exports all expected functions and components are exported 1`] = 
 Array [
   "A",
   "Accordion",
+  "AccordionGroup",
   "AlignSelfValues",
   "AspectRatio",
   "AssistiveText",
@@ -170,6 +171,7 @@ Array [
   "getMotionCssFromTheme",
   "getMotionDurationValue",
   "getMotionFromTheme",
+  "getOutlineCssFromTheme",
   "getOverlayCssFromTheme",
   "getPresetStyles",
   "getResponsiveBorder",

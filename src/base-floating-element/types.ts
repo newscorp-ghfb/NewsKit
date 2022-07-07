@@ -7,6 +7,7 @@ import {
 } from '@floating-ui/react-dom-interactions';
 import {MQ} from '../utils';
 import {LogicalPaddingProps} from '../utils/logical-properties';
+import {TransitionToken} from '../theme';
 
 export type TriggerType = 'click' | 'hover' | 'focus';
 export type FallbackBehaviourType = 'flip' | 'shift';
@@ -21,13 +22,19 @@ export type BuildAriaAttributesFn = (args: {
   };
 }) => AriaAttributes;
 
+type ReferenceProps = ReturnType<
+  ReturnType<typeof useInteractions>['getReferenceProps']
+>;
+
 export interface FloatingElementProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title' | 'defaultValue'> {
   children: React.ReactElement & {
     ref?: React.Ref<HTMLElement>;
   };
   trigger?: TriggerType | TriggerType[];
-  content: React.ReactNode;
+  content:
+    | React.ReactNode
+    | ((referenceProps: ReferenceProps) => React.ReactNode);
   open?: boolean;
   placement?: Placement;
   overrides?: {
@@ -45,6 +52,7 @@ export interface FloatingElementProps
       size?: MQ<string>;
       edgeOffset?: string;
     };
+    transitionPreset?: TransitionToken | TransitionToken[];
   };
   className?: string;
   onDismiss?: () => void;

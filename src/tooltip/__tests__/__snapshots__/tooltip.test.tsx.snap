@@ -3,7 +3,7 @@
 exports[`Tooltip offset should be applied with pointer and px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -15,6 +15,76 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
   top: -10px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -30,6 +100,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -45,8 +116,8 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -59,7 +130,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
     </p>
     <div
       class="emotion-2"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -68,7 +139,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
 exports[`Tooltip offset should be applied with pointer and token distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -80,6 +151,76 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
   top: -16px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -95,6 +236,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -110,8 +252,8 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -124,7 +266,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
     </p>
     <div
       class="emotion-2"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -133,7 +275,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
 exports[`Tooltip offset should not be applied with pointer and invalid token distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -143,6 +285,76 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -160,6 +372,7 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -175,8 +388,8 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -189,7 +402,7 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
     </p>
     <div
       class="emotion-2"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -198,7 +411,7 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
 exports[`Tooltip offset should not be applied with pointer and non-px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -208,6 +421,76 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -225,6 +508,7 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -240,8 +524,8 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -254,7 +538,7 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
     </p>
     <div
       class="emotion-2"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -263,7 +547,7 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
 exports[`Tooltip offset should not be applied with with no pointer 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -273,6 +557,76 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -291,8 +645,8 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -310,7 +664,7 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
 exports[`Tooltip pointer padding should be applied with px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -320,6 +674,76 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
   position: absolute;
   left: 0px;
   top: -8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -337,6 +761,7 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -352,8 +777,8 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -366,7 +791,7 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
     </p>
     <div
       class="emotion-2"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -375,7 +800,7 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
 exports[`Tooltip pointer padding should be applied with token distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -385,6 +810,76 @@ exports[`Tooltip pointer padding should be applied with token distance override 
   position: absolute;
   left: 0px;
   top: -8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -402,6 +897,7 @@ exports[`Tooltip pointer padding should be applied with token distance override 
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -417,8 +913,8 @@ exports[`Tooltip pointer padding should be applied with token distance override 
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -431,7 +927,7 @@ exports[`Tooltip pointer padding should be applied with token distance override 
     </p>
     <div
       class="emotion-2"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -440,7 +936,7 @@ exports[`Tooltip pointer padding should be applied with token distance override 
 exports[`Tooltip pointer padding should not be applied with invalid token distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -450,6 +946,76 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
   position: absolute;
   left: 0px;
   top: -8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -467,6 +1033,7 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -482,8 +1049,8 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -496,7 +1063,7 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
     </p>
     <div
       class="emotion-2"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -505,7 +1072,7 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
 exports[`Tooltip pointer padding should not be applied with non-px distance override 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -515,6 +1082,76 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
   position: absolute;
   left: 0px;
   top: -8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -532,6 +1169,7 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -547,8 +1185,8 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -561,7 +1199,7 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
     </p>
     <div
       class="emotion-2"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -570,7 +1208,7 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
 exports[`Tooltip should render correct styles: default 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -582,6 +1220,76 @@ exports[`Tooltip should render correct styles: default 1`] = `
   top: 0px;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   color: #FFFFFF;
@@ -598,8 +1306,8 @@ exports[`Tooltip should render correct styles: default 1`] = `
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -617,7 +1325,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
 exports[`Tooltip should render correct styles: with overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -629,6 +1337,76 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 500ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 500ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -647,8 +1425,8 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -666,7 +1444,7 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
 exports[`Tooltip should render correct styles: with pointer 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -676,6 +1454,76 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
   position: absolute;
   left: 0px;
   top: -8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -693,6 +1541,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -708,8 +1557,8 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -722,7 +1571,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
     </p>
     <div
       class="emotion-2"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -731,7 +1580,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
 exports[`Tooltip should render correct styles: with pointer size overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -741,6 +1590,76 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
   position: absolute;
   left: 0px;
   top: -8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -758,6 +1677,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -773,8 +1693,8 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -787,7 +1707,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
     </p>
     <div
       class="emotion-2"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -796,7 +1716,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
 exports[`Tooltip should render correct styles: with pointer stylePreset overrides 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -806,6 +1726,76 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
   position: absolute;
   left: 0px;
   top: -8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -823,6 +1813,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -838,8 +1829,8 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -852,7 +1843,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
     </p>
     <div
       class="emotion-2"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>
@@ -861,7 +1852,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
 exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="MOCK-ID"
+    aria-describedby="floating-MOCK-ID"
     type="submit"
   >
     Add
@@ -871,6 +1862,76 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
   position: absolute;
   left: 8px;
   top: 0px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  .emotion-0.nk-tooltip-enter {
+    opacity: 0;
+  }
+
+  .emotion-0.nk-tooltip-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-enter-done {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit {
+    opacity: 1;
+  }
+
+  .emotion-0.nk-tooltip-exit-active {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0ms;
+  }
+
+  .emotion-0.nk-tooltip-exit-done {
+    opacity: 0;
+  }
 }
 
 .emotion-1 {
@@ -888,6 +1949,7 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
 }
 
 .emotion-2 {
+  z-index: -1;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -903,8 +1965,8 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
 
 <div
     aria-hidden="true"
-    class="Tooltip emotion-0"
-    id="MOCK-ID"
+    class="Tooltip nk-tooltip-enter-done emotion-0"
+    id="floating-MOCK-ID"
     role="tooltip"
     tabindex="-1"
   >
@@ -917,7 +1979,7 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
     </p>
     <div
       class="emotion-2"
-      id="MOCK-ID-pointer"
+      id="floating-MOCK-ID-pointer"
     />
   </div>
 </DocumentFragment>

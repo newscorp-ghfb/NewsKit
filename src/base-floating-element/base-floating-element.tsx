@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {CSSTransition} from 'react-transition-group';
 import {useEffect, useRef} from 'react';
 import {
   arrow,
@@ -15,6 +16,8 @@ import {StyledFloatingElement, StyledPanel, StyledPointer} from './styled';
 import {useControlled} from '../utils/hooks';
 import {useTheme} from '../theme';
 import {showOverridePxWarnings, getOverridePxValue} from './utils';
+import {getTransitionDuration} from '../utils';
+import {getTransitionClassName} from '../utils/get-transition-class-name';
 
 export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
   children,
@@ -90,8 +93,8 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     ],
   });
 
-  const defaultRefId = useId();
-  const floatingId = useId();
+  const defaultRefId = `ref-${useId()}`;
+  const floatingId = `floating-${useId()}`;
   const ariaArgs = {
     floating: {id: floatingId, open},
     ref: {id: children.props.id || defaultRefId},
@@ -136,59 +139,81 @@ export const BaseFloatingElement: React.FC<BaseFloatingElementProps> = ({
     return children;
   }
 
+  // This object contains the event handlers that should be added to the reference
+  // element (e.g. onClick, etc. if useClick is passed to useInteractions). It is
+  // also passed to the content prop (if this is a function) to allow other elements
+  // to trigger these handlers (e.g. the Popover's close button triggers the onClick
+  // handler).
+  const referenceProps = getReferenceProps();
+
+  const baseTransitionClassname = `nk-${path}`;
+
   return (
     <>
-      {React.cloneElement(
-        children,
-        getReferenceProps({
-          ref: composeRefs<Element>(reference, children.ref),
-          ...refElAriaAttributes,
-          id:
-            floatingElAriaAttributes['aria-labelledby'] && !children.props.id
-              ? defaultRefId
-              : undefined,
-        }),
-      )}
-      {open && (
-        <StyledFloatingElement
-          {...getFloatingProps({
-            ref: floating,
-            id: floatingId,
-            className,
-          })}
-          strategy={strategy}
-          $x={x}
-          $y={y}
-          placement={statefulPlacement}
-          overrides={overrides}
-          hidePointer={hidePointer}
-          role={role}
-          {...floatingElAriaAttributes}
-          path={path}
-        >
-          <StyledPanel
-            tabIndex={-1}
-            data-testid="floating-element-panel"
-            as={contentIsString ? 'p' : 'div'}
+      {React.cloneElement(children, {
+        ref: composeRefs<Element>(reference, children.ref),
+        ...refElAriaAttributes,
+        id:
+          floatingElAriaAttributes['aria-labelledby'] && !children.props.id
+            ? defaultRefId
+            : undefined,
+        ...referenceProps,
+      })}
+      <CSSTransition
+        in={open}
+        timeout={getTransitionDuration(path, '')({theme, overrides})}
+        classNames={baseTransitionClassname}
+        mountOnEnter
+        unmountOnExit
+        appear
+      >
+        {state => (
+          <StyledFloatingElement
+            {...getFloatingProps({
+              ref: floating,
+              id: floatingId,
+            })}
+            className={`${className || ''} ${getTransitionClassName(
+              baseTransitionClassname,
+              state,
+            )}`}
+            baseTransitionClassname={baseTransitionClassname}
+            strategy={strategy}
+            $x={x}
+            $y={y}
+            placement={statefulPlacement}
             overrides={overrides}
+            hidePointer={hidePointer}
+            role={role}
+            {...floatingElAriaAttributes}
             path={path}
-            ref={panelRef}
           >
-            {content}
-          </StyledPanel>
-          {!hidePointer && (
-            <StyledPointer
-              path={path}
-              id={`${floatingId}-pointer`}
-              ref={pointerRef}
-              placement={statefulPlacement}
-              $x={pointerX}
-              $y={pointerY}
+            <StyledPanel
+              tabIndex={-1}
+              data-testid="floating-element-panel"
+              as={contentIsString ? 'p' : 'div'}
               overrides={overrides}
-            />
-          )}
-        </StyledFloatingElement>
-      )}
+              path={path}
+              ref={panelRef}
+            >
+              {typeof content === 'function'
+                ? content(referenceProps)
+                : content}
+            </StyledPanel>
+            {!hidePointer && (
+              <StyledPointer
+                path={path}
+                id={`${floatingId}-pointer`}
+                ref={pointerRef}
+                placement={statefulPlacement}
+                $x={pointerX}
+                $y={pointerY}
+                overrides={overrides}
+              />
+            )}
+          </StyledFloatingElement>
+        )}
+      </CSSTransition>
     </>
   );
 };

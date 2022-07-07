@@ -88,6 +88,16 @@ describe('Popover', () => {
               stylePreset: 'popoverPanelCustom',
               typographyPreset: 'utilityLabel020',
             },
+            content: {
+              paddingBlock: 'space040',
+              paddingInline: 'space020',
+            },
+            transitionPreset: {
+              extend: 'fade',
+              base: {
+                transitionDelay: '{{motions.motionDuration050}}',
+              },
+            },
           },
         },
         myCustomTheme,
@@ -330,6 +340,16 @@ describe('Popover', () => {
       fireEvent.keyDown(document.body, {key: 'Escape'});
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
+    test('does close on escape key', () => {
+      const {getByRole, queryByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        enableDismiss: true,
+      });
+      const button = getByRole('button');
+      fireEvent.click(button);
+      fireEvent.keyDown(document.body, {key: 'Escape'});
+      expect(queryByRole('dialog')).not.toBeInTheDocument();
+    });
     test('does not close on clicking outside', () => {
       const Component = () => (
         <>
@@ -343,6 +363,20 @@ describe('Popover', () => {
       const outside = getByTestId('outside');
       fireEvent.click(outside);
       expect(queryByRole('dialog')).toBeInTheDocument();
+    });
+    test('does close on clicking outside', () => {
+      const Component = () => (
+        <>
+          <div data-testid="outside" />
+          <Popover {...defaultProps} enableDismiss />
+        </>
+      );
+      const {getByTestId, getByRole, queryByRole} = renderWithTheme(Component);
+      const button = getByRole('button');
+      fireEvent.click(button);
+      const outside = getByTestId('outside');
+      userEvent.click(outside);
+      expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
   });
 
@@ -373,6 +407,35 @@ describe('Popover', () => {
       expect(queryByRole('dialog')).not.toBeInTheDocument();
       fireEvent.click(button);
       expect(queryByRole('dialog')).toBeInTheDocument();
+    });
+    test('should be able to use handleCloseButtonClick to update parent state', () => {
+      const Component = () => {
+        const [open, setOpen] = React.useState(true);
+        return (
+          <>
+            <Popover
+              handleCloseButtonClick={() => setOpen(false)}
+              open={open}
+              content="hello"
+            >
+              <button type="submit">Add</button>
+            </Popover>
+            <Button
+              data-testid="outside-control"
+              onClick={() => setOpen(!open)}
+            >
+              External control
+            </Button>
+          </>
+        );
+      };
+
+      const {getByTestId, queryByRole} = renderWithTheme(Component);
+      const closeButton = getByTestId('close-button');
+
+      expect(queryByRole('dialog')).toBeInTheDocument();
+      fireEvent.click(closeButton);
+      expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
     test('should call onDismiss on close', () => {
       const onDismiss = jest.fn();
@@ -406,23 +469,21 @@ describe('Popover', () => {
       fireEvent.click(getByRole('button'));
       expect(queryByRole('dialog')).toBeInTheDocument();
     });
-    test('floating element has aria-expanded', () => {
-      const {queryByRole, getByRole} = renderWithTheme(Popover, defaultProps);
-      fireEvent.click(getByRole('button'));
-      const el = queryByRole('dialog');
-      expect(el).toHaveAttribute('aria-expanded', 'true');
-    });
-    test('floating element has default aria-labelledby', () => {
-      const {queryByRole, getByRole} = renderWithTheme(Popover, defaultProps);
+    test('floating element has default aria-labelledby if no header is passed', () => {
+      const {queryByRole, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        header: undefined,
+      });
       const btn = getByRole('button');
       fireEvent.click(btn);
       const el = queryByRole('dialog');
-      expect(el).toHaveAttribute('aria-labelledby', MOCK_ID);
-      expect(btn).toHaveAttribute('id', MOCK_ID);
+      expect(el).toHaveAttribute('aria-labelledby', `ref-${MOCK_ID}`);
+      expect(btn).toHaveAttribute('id', `ref-${MOCK_ID}`);
     });
-    test('floating element has custom aria-labelledby', () => {
+    test('floating element has custom aria-labelledby if no header is passed', () => {
       const {queryByRole, getByRole} = renderWithTheme(Popover, {
         ...defaultProps,
+        header: undefined,
         children: (
           <button id="customId" type="submit">
             Add
@@ -433,6 +494,16 @@ describe('Popover', () => {
       const el = queryByRole('dialog');
       expect(el).toHaveAttribute('aria-labelledby', 'customId');
     });
+    test('floating element has aria-describedby if header is passed', () => {
+      const {queryByRole, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        header: 'header value',
+      });
+      const btn = getByRole('button');
+      fireEvent.click(btn);
+      const el = queryByRole('dialog');
+      expect(el).toHaveAttribute('aria-describedby', `header-${MOCK_ID}`);
+    });
     test('context element has aria-haspopup', () => {
       const {queryByRole} = renderWithTheme(Popover, defaultProps);
       const el = queryByRole('button');
@@ -442,7 +513,7 @@ describe('Popover', () => {
       const {getByRole} = renderWithTheme(Popover, defaultProps);
       const btn = getByRole('button');
       fireEvent.click(btn);
-      expect(btn).toHaveAttribute('aria-controls', MOCK_ID);
+      expect(btn).toHaveAttribute('aria-controls', `floating-${MOCK_ID}`);
     });
   });
 
@@ -517,7 +588,7 @@ describe('Popover', () => {
       const input2 = getByTestId('input2');
       expect(input2).toHaveFocus();
     });
-    test('shifts to elements outside popover after elements within popover', () => {
+    test('shifts to close button then to elements outside popover after elements within popover', () => {
       const Component = () => (
         <>
           <Popover
@@ -539,6 +610,9 @@ describe('Popover', () => {
       userEvent.tab();
       const input1 = getByTestId('input1');
       expect(input1).toHaveFocus();
+      userEvent.tab();
+      const closeBtn = getByTestId('close-button');
+      expect(closeBtn).toHaveFocus();
       userEvent.tab();
       const input2 = getByTestId('input2');
       expect(input2).toHaveFocus();
@@ -585,6 +659,254 @@ describe('Popover', () => {
 
       const restoreFocus = getByTestId('restoreFocus');
       expect(restoreFocus).toHaveFocus();
+    });
+  });
+
+  describe('header', () => {
+    test('should show if passed', () => {
+      const {getByRole, queryByTestId} = renderWithTheme(Popover, {
+        ...defaultProps,
+        header: 'header value',
+      });
+      fireEvent.click(getByRole('button'));
+      const headerText = queryByTestId('header-text');
+      expect(headerText).toHaveTextContent('header value');
+    });
+    test('should not show if not passed', () => {
+      const {getByRole, queryByTestId} = renderWithTheme(Popover, {
+        ...defaultProps,
+        header: undefined,
+      });
+      fireEvent.click(getByRole('button'));
+      const headerText = queryByTestId('header-text');
+      expect(headerText).not.toBeInTheDocument();
+    });
+    test('applies stylePreset overrides', async () => {
+      const myCustomTheme = createTheme({
+        name: 'my-custom-popover-theme',
+        overrides: {
+          stylePresets: {
+            popoverHeaderCustom: {
+              base: {
+                borderColor: '{{colors.red080}}',
+                borderStyle: 'solid',
+                borderWidth: '{{borders.borderWidth020}}',
+              },
+            },
+          },
+        },
+      });
+      const {asFragment, getByRole} = renderWithTheme(
+        Popover,
+        {
+          ...defaultProps,
+          header: 'header value',
+          overrides: {
+            pointer: {
+              stylePreset: 'popoverHeaderCustom',
+            },
+          },
+        },
+        myCustomTheme,
+      );
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('applies logical prop overrides', async () => {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        hidePointer: false,
+        header: 'header value',
+        overrides: {
+          header: {
+            paddingBlock: '24px',
+            paddingInline: '20px',
+          },
+        },
+      });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('applies typography preset overrides', async () => {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        hidePointer: false,
+        header: 'header value',
+        overrides: {
+          header: {
+            typographyPreset: 'utilityLabel010',
+          },
+        },
+      });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+  });
+
+  describe('close button', () => {
+    test('should not show if hidden', () => {
+      const {getByRole, queryByTestId} = renderWithTheme(Popover, {
+        ...defaultProps,
+        closePosition: 'none',
+      });
+      fireEvent.click(getByRole('button'));
+      const closeBtn = queryByTestId('close-button');
+      expect(closeBtn).not.toBeInTheDocument();
+    });
+    test('should show right-aligned', () => {
+      const {getByRole, asFragment} = renderWithTheme(Popover, {
+        ...defaultProps,
+        closePosition: 'right',
+      });
+      fireEvent.click(getByRole('button'));
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('should show left-aligned', () => {
+      const {getByRole, asFragment} = renderWithTheme(Popover, {
+        ...defaultProps,
+        closePosition: 'left',
+      });
+      fireEvent.click(getByRole('button'));
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('applies stylePreset overrides', async () => {
+      const myCustomTheme = createTheme({
+        name: 'my-custom-popover-theme',
+        overrides: {
+          stylePresets: {
+            closeButtonCustom: {
+              base: {
+                backgroundColor: '{{colors.red080}}',
+                borderRadius: '{{borders.borderRadiusCircle}}',
+                color: '{{colors.white}}',
+                iconColor: '{{colors.inkBase}}',
+              },
+            },
+            closeButtonContainerCustom: {
+              base: {
+                borderColor: '{{colors.red080}}',
+                borderStyle: 'solid',
+                borderWidth: '{{borders.borderWidth020}}',
+              },
+            },
+          },
+        },
+      });
+      const {asFragment, getByRole} = renderWithTheme(
+        Popover,
+        {
+          ...defaultProps,
+          header: 'header value',
+          overrides: {
+            closeButton: {
+              stylePreset: 'closeButtonCustom',
+            },
+            closeButtonContainer: {
+              stylePreset: 'closeButtonContainerCustom',
+            },
+          },
+        },
+        myCustomTheme,
+      );
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('applies logical prop overrides', async () => {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          closeButtonContainer: {
+            paddingBlock: '24px',
+            paddingInline: '20px',
+          },
+        },
+      });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('should close popover and call onDismiss and handleCloseButtonClick when close button clicked', () => {
+      const onDismiss = jest.fn();
+      const handleCloseButtonClick = jest.fn();
+      const {getByRole, queryByRole, getByTestId} = renderWithTheme(Popover, {
+        ...defaultProps,
+        onDismiss,
+        handleCloseButtonClick,
+      });
+      fireEvent.click(getByRole('button'));
+      expect(queryByRole('dialog')).toBeInTheDocument();
+      const closeBtn = getByTestId('close-button');
+      fireEvent.click(closeBtn);
+      expect(queryByRole('dialog')).not.toBeInTheDocument();
+      expect(onDismiss).toHaveBeenCalled();
+      expect(handleCloseButtonClick).toHaveBeenCalled();
+    });
+  });
+
+  describe('content', () => {
+    test('applies stylePreset overrides', async () => {
+      const myCustomTheme = createTheme({
+        name: 'my-custom-popover-theme',
+        overrides: {
+          stylePresets: {
+            contentCustom: {
+              base: {
+                color: '{{colors.inkInverse}}',
+              },
+            },
+          },
+        },
+      });
+      const {asFragment, getByRole} = renderWithTheme(
+        Popover,
+        {
+          ...defaultProps,
+          header: 'header value',
+          overrides: {
+            content: {
+              stylePreset: 'contentCustom',
+            },
+          },
+        },
+        myCustomTheme,
+      );
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('applies logical prop overrides', async () => {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          content: {
+            paddingBlock: '24px',
+            paddingInline: '20px',
+          },
+        },
+      });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
+    });
+    test('applies typography preset overrides', async () => {
+      const {asFragment, getByRole} = renderWithTheme(Popover, {
+        ...defaultProps,
+        hidePointer: false,
+        overrides: {
+          content: {
+            typographyPreset: 'editorialParagraph020',
+          },
+        },
+      });
+      fireEvent.click(getByRole('button'));
+      await applyAsyncStyling();
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 });

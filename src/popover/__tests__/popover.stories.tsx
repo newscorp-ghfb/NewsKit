@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {useRef, useState} from 'react';
+import {CSSProperties, useRef, useState} from 'react';
 import {Placement} from '@floating-ui/react-dom-interactions';
 import {Button, ButtonSize} from '../../button';
 import {StorybookSubHeading} from '../../test/storybook-comps';
@@ -10,6 +10,10 @@ import {IconButton} from '../../icon-button';
 import {GridLayout} from '../../grid-layout';
 import {createTheme, ThemeProvider} from '../../theme';
 import {PopoverProps} from '../types';
+import {LinkStandalone} from '../../link';
+
+// Open all Popovers by default when running in Applitools.
+const isApplitoolsTest = process.env.APPLITOOLS_BATCH_ID !== undefined;
 
 const getPlacementStyling = (placement: Placement) => {
   const [side, alignment = 'center'] = placement.split('-');
@@ -71,6 +75,25 @@ const myCustomTheme = createTheme({
         base: {
           backgroundColor: '{{colors.red080}}',
           borderRadius: '{{borders.borderRadiusDefault}}',
+        },
+      },
+      popoverHeaderCustom: {
+        base: {
+          borderColor: '{{colors.black}}',
+          borderStyle: 'none none solid none',
+          borderWidth: '{{borders.borderWidth010}}',
+          color: '{{colors.inkInverse}}',
+        },
+      },
+      popoverCloseButtonContainerCustom: {
+        base: {
+          borderColor: '{{colors.black}}',
+          borderStyle: 'none none solid none',
+          borderWidth: '{{borders.borderWidth010}}',
+        },
+      },
+      popoverContentCustom: {
+        base: {
           color: '{{colors.inkInverse}}',
         },
       },
@@ -85,31 +108,37 @@ const StyledPage = styled.div`
 const StyledContainer = styled.div`
   border: 1px solid red;
   background-color: #f7f7f7;
-  height: 125px;
-  width: 200px;
+  height: 260px;
+  width: 360px;
   padding: 5px;
-`;
-
-const StyledScrollParent = styled(StyledContainer)`
-  height: 200px;
-  width: 300px;
   overflow: scroll;
 `;
 
-const StyledScrollChild = styled.div<{visualTest?: boolean}>`
+const StyledScrollChild = styled.div`
   height: 250px;
   width: 350px;
-  ${({visualTest = false}) =>
-    visualTest
+  ${() =>
+    isApplitoolsTest
       ? {}
       : {
-          paddingTop: '95px',
-          paddingLeft: '115px',
+          paddingTop: '180px',
+          paddingLeft: '140px',
         }}
 `;
 
-const PopoverWithBtn = (props: Omit<PopoverProps, 'children'>) => (
-  <Popover {...props}>
+const DEFAULT_CONTENT =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum justo id rutrum consectetur. Cras ultrices diam id dapibus viverra.';
+
+const PopoverWithBtn = (
+  props: Partial<Omit<PopoverProps, 'children' | 'open'>>,
+) => (
+  <Popover
+    open={isApplitoolsTest || undefined}
+    header="Popover Title"
+    content={DEFAULT_CONTENT}
+    overrides={{maxWidth: '300px'}}
+    {...props}
+  >
     <IconButton
       aria-label="info-icon"
       size={ButtonSize.Small}
@@ -120,58 +149,39 @@ const PopoverWithBtn = (props: Omit<PopoverProps, 'children'>) => (
   </Popover>
 );
 
-const PopoverPlacements = ({open}: {open?: boolean}) => (
-  <StyledPage>
-    <GridLayout columns={{xs: 'repeat(3, minmax(0, 1fr))'}} rowGap="20px">
-      {placements.map(placement => (
-        <div key={placement}>
-          <StorybookSubHeading>Popover - {placement}</StorybookSubHeading>
-          <StyledContainer style={getPlacementStyling(placement)}>
-            <PopoverWithBtn
-              open={open}
-              content="Popover content"
-              placement={placement}
-            />
-          </StyledContainer>
-        </div>
-      ))}
-    </GridLayout>
-  </StyledPage>
-);
-
-const PopoverStyleOverrides = ({open}: {open?: boolean}) => (
-  <ThemeProvider theme={myCustomTheme}>
-    <StyledPage>
-      <StorybookSubHeading>Popover - style overrides</StorybookSubHeading>
-      <StyledContainer style={getPlacementStyling('top')}>
-        <PopoverWithBtn
-          open={open}
-          content="Popover content"
-          overrides={{
-            stylePreset: 'popoverCustom',
-            pointer: {
-              stylePreset: 'popoverPointerCustom',
-            },
-            panel: {
-              stylePreset: 'popoverPanelCustom',
-            },
-          }}
-        />
-      </StyledContainer>
-    </StyledPage>
-  </ThemeProvider>
-);
-
-const PopoverWithBoundary = ({
-  fallbackBehaviour,
-  open,
-}: Pick<PopoverProps, 'open' | 'fallbackBehaviour'>) => {
-  const boundaryRef = useRef<HTMLDivElement>(null);
-
-  // need to force a state update because useRef does not
+// Force a state to make sure useRef updates once the element renders.
+function useUpdatedRef<T>(initialValue: T | null) {
+  const boundaryRef = useRef<T>(initialValue);
   const [, setX] = useState(false);
   setTimeout(() => setX(true), 0);
+  return boundaryRef;
+}
 
+// Make sure Popovers in stories remain in their containers to prevent the page
+// getting cluttered by adding a boundary and disabling fallback behaviours.
+const BoundedPopover = ({
+  containerStyle,
+  ...popoverProps
+}: Partial<Omit<PopoverProps, 'children' | 'open'>> & {
+  containerStyle?: CSSProperties;
+}) => {
+  const boundaryRef = useUpdatedRef<HTMLDivElement>(null);
+  const style = containerStyle || getPlacementStyling('top');
+  return (
+    <StyledContainer ref={boundaryRef} style={style}>
+      <PopoverWithBtn
+        boundary={boundaryRef.current || undefined}
+        fallbackBehaviour={[]}
+        {...popoverProps}
+      />
+    </StyledContainer>
+  );
+};
+
+const BoundedPopoverWithOverflow = ({
+  fallbackBehaviour,
+}: Pick<PopoverProps, 'fallbackBehaviour'>) => {
+  const boundaryRef = useUpdatedRef<HTMLDivElement>(null);
   return (
     <>
       <StorybookSubHeading>
@@ -180,131 +190,181 @@ const PopoverWithBoundary = ({
           ? fallbackBehaviour
           : `${(fallbackBehaviour || []).join(', ')}`}
       </StorybookSubHeading>
-      <StyledScrollParent ref={boundaryRef}>
-        <StyledScrollChild visualTest={open}>
+      <StyledContainer ref={boundaryRef}>
+        <StyledScrollChild>
           <PopoverWithBtn
-            open={open}
             fallbackBehaviour={fallbackBehaviour}
             content="Popover content"
             placement="top"
             boundary={boundaryRef.current || undefined}
           />
         </StyledScrollChild>
-      </StyledScrollParent>
+      </StyledContainer>
     </>
   );
 };
-
-const PopoverBehaviours = ({open}: {open?: boolean}) => (
-  <StyledPage>
-    <GridLayout columns={{xs: 'repeat(1, minmax(0, 1fr))'}} rowGap="20px">
-      <PopoverWithBoundary open={open} fallbackBehaviour={['flip']} />
-      <PopoverWithBoundary open={open} fallbackBehaviour={['shift']} />
-      <PopoverWithBoundary open={open} fallbackBehaviour={['flip', 'shift']} />
-    </GridLayout>
-  </StyledPage>
-);
 
 export const StoryPopoverDefault = () => (
   <StyledPage>
     <GridLayout columns={{xs: 'repeat(1, minmax(0, 1fr))'}} rowGap="20px">
       <div>
-        <StorybookSubHeading>String content</StorybookSubHeading>
-        <StyledContainer style={getPlacementStyling('top')}>
-          <PopoverWithBtn content="Popover content" />
-        </StyledContainer>
+        <StorybookSubHeading>
+          Popover - with optional header & close button on right
+        </StorybookSubHeading>
+        <BoundedPopover />
       </div>
       <div>
-        <StorybookSubHeading>Interactive content</StorybookSubHeading>
-        <StyledContainer style={getPlacementStyling('top')}>
-          <PopoverWithBtn
-            content={
-              <Button
-                size="small"
-                onClick={() => {
-                  // eslint-disable-next-line no-alert
-                  alert('Button clicked');
+        <StorybookSubHeading>
+          Popover - with optional header & close button on left
+        </StorybookSubHeading>
+        <BoundedPopover closePosition="left" />
+      </div>
+      <div>
+        <StorybookSubHeading>
+          Popover - no optional header & close button
+        </StorybookSubHeading>
+        <BoundedPopover header={undefined} closePosition="none" />
+      </div>
+      <div>
+        <StorybookSubHeading>
+          Popover - click outside or press esc to close
+        </StorybookSubHeading>
+        <BoundedPopover header={undefined} closePosition="none" enableDismiss />
+      </div>
+      <div>
+        <StorybookSubHeading>Popover - no pointer</StorybookSubHeading>
+        <BoundedPopover hidePointer />
+      </div>
+      <div>
+        <StorybookSubHeading>
+          Popover - header title overflow
+        </StorybookSubHeading>
+        <BoundedPopover
+          header="This is a popover header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          containerStyle={{
+            ...getPlacementStyling('top'),
+            height: '330px',
+          }}
+        />
+      </div>
+      <div>
+        <StorybookSubHeading>
+          Popover - example of other components passed to panel
+        </StorybookSubHeading>
+        <BoundedPopover
+          containerStyle={{
+            ...getPlacementStyling('top'),
+            height: '330px',
+          }}
+          content={
+            <div>
+              <div>{DEFAULT_CONTENT}</div>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'end',
+                  paddingTop: '30px',
                 }}
               >
-                Click me
-              </Button>
-            }
-          />
-        </StyledContainer>
-      </div>
-      <div>
-        <StorybookSubHeading>No pointer</StorybookSubHeading>
-        <StyledContainer style={getPlacementStyling('top')}>
-          <PopoverWithBtn content="Popover content" hidePointer />
-        </StyledContainer>
+                <LinkStandalone href="/">Find out more</LinkStandalone>
+                <Button style={{marginLeft: '30px'}}>Continue</Button>
+              </div>
+            </div>
+          }
+        />
       </div>
       <GridLayout columns={{xs: 'repeat(3, minmax(0, 1fr))'}}>
         <div>
-          <StorybookSubHeading>Default distance</StorybookSubHeading>
-          <StyledContainer style={getPlacementStyling('top')}>
-            <PopoverWithBtn content="Popover content" />
-          </StyledContainer>
+          <StorybookSubHeading>
+            Popover - distance (default)
+          </StorybookSubHeading>
+          <BoundedPopover />
         </div>
         <div>
-          <StorybookSubHeading>Increased distance</StorybookSubHeading>
-          <StyledContainer style={getPlacementStyling('top')}>
-            <PopoverWithBtn
-              content="Popover content"
-              overrides={{distance: 'space070'}}
-            />
-          </StyledContainer>
+          <StorybookSubHeading>
+            Popover - distance (increased)
+          </StorybookSubHeading>
+          <BoundedPopover
+            overrides={{distance: 'space070', maxWidth: '300px'}}
+          />
         </div>
         <div>
-          <StorybookSubHeading>Decreased distance</StorybookSubHeading>
-          <StyledContainer style={getPlacementStyling('top')}>
-            <PopoverWithBtn
-              content="Popover content"
-              overrides={{distance: 'space030'}}
-            />
-          </StyledContainer>
+          <StorybookSubHeading>Popover - distance (zero)</StorybookSubHeading>
+          <BoundedPopover
+            overrides={{distance: 'space030', maxWidth: '300px'}}
+          />
         </div>
       </GridLayout>
     </GridLayout>
   </StyledPage>
 );
 StoryPopoverDefault.storyName = 'popover-default';
-StoryPopoverDefault.parameters = {
-  eyes: {include: false},
-};
 
-export const StoryPopoverPlacements = () => <PopoverPlacements />;
+export const StoryPopoverPlacements = () => (
+  <StyledPage>
+    <GridLayout columns={{xs: 'repeat(3, minmax(0, 1fr))'}} rowGap="20px">
+      {placements.map(placement => (
+        <div key={placement}>
+          <StorybookSubHeading>
+            Popover - placement {placement}
+          </StorybookSubHeading>
+          <BoundedPopover
+            containerStyle={getPlacementStyling(placement)}
+            placement={placement}
+          />
+        </div>
+      ))}
+    </GridLayout>
+  </StyledPage>
+);
 StoryPopoverPlacements.storyName = 'popover-placements';
-StoryPopoverPlacements.parameters = {
-  eyes: {include: false},
-};
 
-export const StoryPopoverStyleOverrides = () => <PopoverStyleOverrides />;
+export const StoryPopoverStyleOverrides = () => (
+  <ThemeProvider theme={myCustomTheme}>
+    <StyledPage>
+      <StorybookSubHeading>Popover - style overrides</StorybookSubHeading>
+      <BoundedPopover
+        overrides={{
+          maxWidth: '300px',
+          stylePreset: 'popoverCustom',
+          pointer: {
+            stylePreset: 'popoverPointerCustom',
+          },
+          panel: {
+            stylePreset: 'popoverPanelCustom',
+          },
+          header: {
+            stylePreset: 'popoverHeaderCustom',
+          },
+          closeButtonContainer: {
+            stylePreset: 'popoverCloseButtonContainerCustom',
+          },
+          content: {
+            stylePreset: 'popoverContentCustom',
+          },
+          transitionPreset: {
+            extend: 'fade',
+            base: {
+              transitionDelay: '{{motions.motionDuration050}}',
+            },
+          },
+        }}
+      />
+    </StyledPage>
+  </ThemeProvider>
+);
 StoryPopoverStyleOverrides.storyName = 'popover-style-overrides';
-StoryPopoverStyleOverrides.parameters = {
-  eyes: {include: false},
-};
 
-export const StoryPopoverBehaviours = () => <PopoverBehaviours />;
+export const StoryPopoverBehaviours = () => (
+  <StyledPage>
+    <GridLayout columns={{xs: 'repeat(1, minmax(0, 1fr))'}} rowGap="20px">
+      <BoundedPopoverWithOverflow fallbackBehaviour={['flip']} />
+      <BoundedPopoverWithOverflow fallbackBehaviour={['shift']} />
+      <BoundedPopoverWithOverflow fallbackBehaviour={['flip', 'shift']} />
+    </GridLayout>
+  </StyledPage>
+);
 StoryPopoverBehaviours.storyName = 'popover-behaviours';
-StoryPopoverBehaviours.parameters = {
-  eyes: {include: false},
-};
-
-export const StoryPopoverStyleOverridesVisualTest = () => (
-  <PopoverStyleOverrides open />
-);
-StoryPopoverStyleOverridesVisualTest.storyName =
-  'popover-style-overrides-visual-test';
-
-export const StoryPopoverPlacementsVisualTest = () => (
-  <PopoverPlacements open />
-);
-StoryPopoverPlacementsVisualTest.storyName = 'popover-placements-visual-test';
-
-export const StoryPopoverBehavioursVisualTest = () => (
-  <PopoverBehaviours open />
-);
-StoryPopoverBehavioursVisualTest.storyName = 'popover-behaviours-visual-test';
 
 export default {
   title: 'NewsKit Light/popover',

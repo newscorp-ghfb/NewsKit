@@ -464,6 +464,13 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
               description:
                 'Vertically align the Icon when the StructuredListItem is Link',
             },
+            {
+              name: 'hideIcon',
+              type: 'boolean',
+              default: 'false',
+              description:
+                'If true, hides the link icon in the StructuredListItem',
+            },
           ],
           overridesRows: [
             {

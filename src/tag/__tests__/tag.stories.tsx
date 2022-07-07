@@ -30,6 +30,74 @@ const myCustomTheme = createTheme({
           backgroundColor: '{{colors.red020}}',
         },
       },
+      customOutlineColor: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveSecondary030}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveSecondary030}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveSecondary030}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactiveSecondary030}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '5px',
+        },
+      },
     },
   },
 });
@@ -102,15 +170,15 @@ export const StoryTag = () => (
         spaceInline="space020"
         wrap="wrap"
       >
-        <Tag size={TagSize.Small}>
+        <Tag size={TagSize.Small} href="http://example.com">
           <IconFilledEmail />
           Text
         </Tag>
-        <Tag size={TagSize.Medium}>
+        <Tag size={TagSize.Medium} href="http://example.com">
           <IconFilledEmail />
           Text
         </Tag>
-        <Tag size={TagSize.Large}>
+        <Tag size={TagSize.Large} href="http://example.com">
           <IconFilledEmail />
           Text
         </Tag>
@@ -368,3 +436,46 @@ export const StoryTagLogicalProps = () => (
   </>
 );
 StoryTagLogicalProps.storyName = 'tag-logical-props';
+
+export const StoryTagWithOutlineOverride = () => (
+  <>
+    <StorybookHeading>Tag with outline overrides</StorybookHeading>
+
+    <StorybookSubHeading>with Style Presets overrides</StorybookSubHeading>
+    <Container>
+      <ThemeProvider theme={myCustomTheme}>
+        <Tag
+          href="http://example.com"
+          overrides={{stylePreset: 'customOutlineColor'}}
+        >
+          Custom Color
+        </Tag>
+        <br />
+        <br />
+        <Tag
+          href="http://example.com"
+          overrides={{stylePreset: 'customOutlineStyle'}}
+        >
+          Custom Style
+        </Tag>
+        <br />
+        <br />
+        <Tag
+          href="http://example.com"
+          overrides={{stylePreset: 'customOutlineWidth'}}
+        >
+          Custom Width
+        </Tag>
+        <br />
+        <br />
+        <Tag
+          href="http://example.com"
+          overrides={{stylePreset: 'customOutlineOffset'}}
+        >
+          Custom Offset
+        </Tag>
+      </ThemeProvider>
+    </Container>
+  </>
+);
+StoryTagWithOutlineOverride.storyName = 'tag with outline overrides';
