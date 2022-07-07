@@ -45,17 +45,6 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
     children.props.disabled,
   ]);
 
-  // // eslint-disable-next-line react-hooks/exhaustive-deps
-  // useEffect(() => showSpanWarning(children.props.disabled), [
-  //   children.props.disabled,
-  // ]);
-
-  // useEffect(() => {
-  //   if (children.props.disabled.current) {
-  //     return showSpanWarning();
-  //   }
-  // }, []);
-
   const buildContextAriaAttributes: BuildAriaAttributesFn = ({
     floating: {id, open},
   }) => {
