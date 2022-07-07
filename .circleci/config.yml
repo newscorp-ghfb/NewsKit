@@ -972,13 +972,13 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - yarn-build-v1-codemod-{{ checksum "codemod/yarn.lock" }}
+            - yarn-build-v1-codemod-{{ checksum "lib/codemod/yarn.lock" }}
             - yarn-build-v1-codemod-
       - run:
           name: Codemode Dependencies Install
           command: cd lib/codemod && make install
       - save_cache:
-          key: yarn-build-v1-codemod-{{ checksum "codemod/yarn.lock" }}
+          key: yarn-build-v1-codemod-{{ checksum "lib/codemod/yarn.lock" }}
           paths:
             - ~/.cache
       - persist_to_workspace:
