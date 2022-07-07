@@ -15,7 +15,7 @@ const liveAudioProps = {
 };
 
 const recordedAudioProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   title: 'The Breakfast Show with Giles Coren',
   captionSrc: 'captions.vtt',
 };

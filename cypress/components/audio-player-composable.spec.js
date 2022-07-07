@@ -59,7 +59,7 @@ const checkTime = expectedValue => {
 };
 
 const TEST_DATA = {
-  durationInSeconds: 372,
+  durationInSeconds: 1799,
 };
 
 /*
@@ -113,6 +113,10 @@ describe('audio player composable', () => {
     cy.get(`${parentTestIDSelector} [data-testid="audio-player-duration"]`).as(
       'audioDuration',
     );
+    cy.get('[data-testid="audio-player-duration"]').should(
+      'not.have.text',
+      '00:00',
+    );
   });
 
   it('toggle when click Play Button', () => {
@@ -126,14 +130,14 @@ describe('audio player composable', () => {
   it('move track using slider', () => {
     // move to middle
     cy.get('@audioSliderTrack').click('center');
-    checkTime(TEST_DATA.durationInSeconds / 2);
+    checkTime(Math.ceil(TEST_DATA.durationInSeconds / 2));
 
     // move to the begining
     cy.get('@audioSliderTrack').click('left');
     checkTime(0);
 
     // move to 4th minute
-    cy.get('@audioSliderTrack').click(624, 4);
+    cy.get('@audioSliderTrack').click(129, 4);
     checkTime(4 * 60);
   });
 
@@ -173,7 +177,7 @@ describe('audio player composable', () => {
   });
 
   it('it replay button back to 0 if under 10 seconds', () => {
-    cy.get('@audioSliderTrack').click(9, 4);
+    cy.get('@audioSliderTrack').click(4, 4);
     cy.get('@backwardButton').click();
     checkTime(0);
   });

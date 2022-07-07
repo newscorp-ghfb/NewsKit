@@ -33,7 +33,7 @@ export const AudioPlayerE2E = () => {
     <div data-testid="audio-player-inline">
       <StorybookSubHeading>Audio player for e2e tests</StorybookSubHeading>
       <AudioPlayerComposable
-        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        src="/audio_file_1.mp3"
         ariaLandmark="audio player e2e tests"
       >
         <GridLayout rowGap="space020" areas={fullAudioPlayerAreas}>
