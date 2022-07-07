@@ -79,10 +79,11 @@ applitools_defaults: &applitools_defaults
   command: |
     export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`
     export APPLITOOLS_PARENT_BRANCH_NAME=main
-    export APPLITOOLS_BATCH_NAME=mikestest
+    export APPLITOOLS_BATCH_NAME=mikestestbatchname
     export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
     export APPLITOOLS_DONT_CLOSE_BATCHES=true
     echo "export APPLITOOLS_BATCH_ID=${APPLITOOLS_BATCH_ID}" >> $BASH_ENV
+    echo "export APPLITOOLS_BATCH_NAME=${APPLITOOLS_BATCH_NAME}" >> $BASH_ENV
     echo "export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}" >> $BASH_ENV
 # ========== APPLITOOLS ENVIRONMENT VARIABLES END ==========
 executors:
