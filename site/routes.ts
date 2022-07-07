@@ -126,7 +126,7 @@ export default [
             title: 'Borders',
             page: true,
             id: '/theme/foundation/borders',
-            illustration: 'theme/borders/hero',
+            illustration: 'theme/hero-borders-illustration',
             description:
               'Borders direct attention, identify components, communicate state, and express a brand.',
           },
@@ -861,6 +861,13 @@ export default [
             id: '/patterns/forms/telephone-number',
             description: `Ask for a user’s telephone number when there is a clear business requirement.`,
             illustration: 'patterns/forms/telephone-number/hero',
+          },
+          {
+            title: 'Input components',
+            page: true,
+            id: '/patterns/forms/input-components',
+            description: `Forms can be split out into data entry types, each will have their own patterns and best practice.`,
+            illustration: 'patterns/forms/input-components/hero',
           },
         ],
       },
