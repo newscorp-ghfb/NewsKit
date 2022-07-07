@@ -984,7 +984,7 @@ jobs:
       - persist_to_workspace:
           root: ./
           paths:
-            - codemod/node_modules/*
+            - lib/codemod/node_modules/*
       - slack/notify:
           <<: *slack_notify
 
