@@ -866,7 +866,7 @@ export default [
             title: 'Input components',
             page: true,
             id: '/patterns/forms/input-components',
-            description: `Forms can be split out into data entry types, each will have their own patterns and best practice.`,
+            description: `Use the right component for the type of data you’re collecting.`,
             illustration: 'patterns/forms/input-components/hero',
           },
         ],

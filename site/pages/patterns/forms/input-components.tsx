@@ -14,6 +14,7 @@ import {
   ContentSection,
   ContentPrimary,
   ContentTertiary,
+  ContentColSpan,
 } from '../../../components/content-structure';
 import {StyledHeading} from '../../../utils/styled';
 
@@ -88,6 +89,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
           />
         </ContentPrimary>
         <ContentTertiary
+          headline="Text Field usage examples"
           description={
             <UnorderedList
               markerAlign="start"
@@ -109,7 +111,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
       <ContentSection sectionName="radio group">
         <ContentPrimary
           id="radio-group"
-          toc="Radio Group"
+          toc="Radio Group - Single selection"
           headline={
             <StyledHeading>Radio Group - Single selection</StyledHeading>
           }
@@ -176,7 +178,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
       <ContentSection sectionName="checkbox">
         <ContentPrimary
           id="checkbox"
-          toc="Checkbox"
+          toc="Checkbox - Multiple selection"
           headline={
             <StyledHeading>Checkbox - Multiple selection</StyledHeading>
           }
@@ -199,47 +201,46 @@ const InputComponents = (layoutProps: LayoutProps) => (
         </ContentPrimary>
         <ContentTertiary
           headline="Considerations"
-          description={
-            <UnorderedList
-              markerAlign="start"
-              listItemMarker={IconFilledCircle}
-              overrides={unorderedListOverrides}
-            >
-              <>
-                Checkboxes should only be displayed vertically, stacked for
-                consistent alignment and positioning across different
-                breakpoints.
-              </>
-              <>You should not pre-select an option for the user</>
-              <>
-                There may need to be an ‘Other’ option where the user enters an
-                answer that isn’t displayed e.g interests.
-              </>
-              <>
-                If there are a higher number of Checkbox options required it may
-                be necessary to split out the relevant question onto its own
-                page to reduce cognitive load and keep focus on the question.
-              </>
-              <>
-                If there is a maximum/minimum number of responses required, this
-                should be made clear to the user upfront.
-              </>
-              <>
-                Avoid placing Labels to the left (start) of Checkboxes when
-                there are multiple Checkboxes grouped together to avoid layout
-                misalignment. Instead place Labels to the right (end) so that
-                when used together in forms, Checkbox inputs align vertically,
-                which makes them easier to find, especially for users of screen
-                magnifiers.
-              </>
-              <>
-                Avoid using Checkboxes in a horizontal orientation to avoid
-                issues with alignment and legibility when there are multiple
-                Checkboxes grouped together.
-              </>
-            </UnorderedList>
-          }
-        />
+          childrenColSpan={ContentColSpan.TEXT}
+        >
+          <UnorderedList
+            markerAlign="start"
+            listItemMarker={IconFilledCircle}
+            overrides={unorderedListOverrides}
+          >
+            <>
+              Checkboxes should only be displayed vertically, stacked for
+              consistent alignment and positioning across different breakpoints.
+            </>
+            <>You should not pre-select an option for the user</>
+            <>
+              There may need to be an ‘Other’ option where the user enters an
+              answer that isn’t displayed e.g interests.
+            </>
+            <>
+              If there are a higher number of Checkbox options required it may
+              be necessary to split out the relevant question onto its own page
+              to reduce cognitive load and keep focus on the question.
+            </>
+            <>
+              If there is a maximum/minimum number of responses required, this
+              should be made clear to the user upfront.
+            </>
+            <>
+              Avoid placing Labels to the left (start) of Checkboxes when there
+              are multiple Checkboxes grouped together to avoid layout
+              misalignment. Instead place Labels to the right (end) so that when
+              used together in forms, Checkbox inputs align vertically, which
+              makes them easier to find, especially for users of screen
+              magnifiers.
+            </>
+            <>
+              Avoid using Checkboxes in a horizontal orientation to avoid issues
+              with alignment and legibility when there are multiple Checkboxes
+              grouped together.
+            </>
+          </UnorderedList>
+        </ContentTertiary>
         <ContentTertiary
           headline="Checkbox usage example"
           description={
@@ -258,7 +259,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
       <ContentSection sectionName="select">
         <ContentPrimary
           id="select"
-          toc="Select"
+          toc="Select - Single or multiple selection"
           headline={
             <StyledHeading>Select - Single or multiple selection</StyledHeading>
           }
@@ -279,47 +280,43 @@ const InputComponents = (layoutProps: LayoutProps) => (
         </ContentPrimary>
         <ContentTertiary
           headline="Considerations"
-          description={
-            <UnorderedList
-              markerAlign="start"
-              listItemMarker={IconFilledCircle}
-              overrides={unorderedListOverrides}
-            >
-              <>
-                Consider if a Select is necessary or if a Text Field can be
-                used. Selects can be cumbersome if there are a lot of options
-                for users to scroll through.
-              </>
-              <>You should not pre-select an option for the user.</>
-              <>
-                In general all valid options should be displayed within the
-                Select so an ‘Other’ option isn’t needed.
-              </>
-              <>
-                If there is a more likely/default option, this should be
-                displayed at the top of the drop down to save most users
-                scrolling through every option e.g United Kingdom.
-              </>
-              <>
-                Options should be displayed in alphabetical order so they are
-                easier to scan/find.
-              </>
-            </UnorderedList>
-          }
-        />
-        <ContentTertiary
-          headline="Select usage example"
-          description={
-            <UnorderedList
-              markerAlign="start"
-              listItemMarker={IconFilledCircle}
-              overrides={unorderedListOverrides}
-            >
-              <>Country code (If not using text input).</>
-            </UnorderedList>
-          }
-          showSeparator
-        />
+          childrenColSpan={ContentColSpan.TEXT}
+        >
+          <UnorderedList
+            markerAlign="start"
+            listItemMarker={IconFilledCircle}
+            overrides={unorderedListOverrides}
+          >
+            <>
+              Consider if a Select is necessary or if a Text Field can be used.
+              Selects can be cumbersome if there are a lot of options for users
+              to scroll through.
+            </>
+            <>You should not pre-select an option for the user.</>
+            <>
+              In general all valid options should be displayed within the Select
+              so an ‘Other’ option isn’t needed.
+            </>
+            <>
+              If there is a more likely/default option, this should be displayed
+              at the top of the drop down to save most users scrolling through
+              every option e.g United Kingdom.
+            </>
+            <>
+              Options should be displayed in alphabetical order so they are
+              easier to scan/find.
+            </>
+          </UnorderedList>
+        </ContentTertiary>
+        <ContentTertiary headline="Select usage example" showSeparator>
+          <UnorderedList
+            markerAlign="start"
+            listItemMarker={IconFilledCircle}
+            overrides={unorderedListOverrides}
+          >
+            <>Country code (If not using text input).</>
+          </UnorderedList>
+        </ContentTertiary>
       </ContentSection>
 
       <ContentSection sectionName="combobox">
@@ -335,43 +332,43 @@ const InputComponents = (layoutProps: LayoutProps) => (
         </ContentPrimary>
         <ContentTertiary
           headline="Considerations"
-          description={
-            <UnorderedList
-              markerAlign="start"
-              listItemMarker={IconFilledCircle}
-              overrides={unorderedListOverrides}
-            >
-              <>
-                Consider giving the user the option to add their entry manually.
-                Sometimes lookup doesn’t give the required answer so manually
-                typing the response is easier.
-              </>
-              <>
-                Give clear instructions as to what the user has to type into the
-                text input and what they then have to do i.e ‘Enter your
-                postcode and select your address from the list provided’.
-              </>
-              <>
-                Allow users to change their entry if a mistake has been made or
-                they decide on a different entry i.e different postcode.
-              </>
-              <>
-                Select results should be displayed as the user types their text
-                entry rather than waiting for users to select a CTA to submit as
-                this reduces time and effort for the user. There should still
-                however be an option to tap/type the return key on a keyboard or
-                select a CTA to submit.
-              </>
-            </UnorderedList>
-          }
+          childrenColSpan={ContentColSpan.TEXT}
           showSeparator
-        />
+        >
+          <UnorderedList
+            markerAlign="start"
+            listItemMarker={IconFilledCircle}
+            overrides={unorderedListOverrides}
+          >
+            <>
+              Consider giving the user the option to add their entry manually.
+              Sometimes lookup doesn’t give the required answer so manually
+              typing the response is easier.
+            </>
+            <>
+              Give clear instructions as to what the user has to type into the
+              text input and what they then have to do i.e ‘Enter your postcode
+              and select your address from the list provided’.
+            </>
+            <>
+              Allow users to change their entry if a mistake has been made or
+              they decide on a different entry i.e different postcode.
+            </>
+            <>
+              Select results should be displayed as the user types their text
+              entry rather than waiting for users to select a CTA to submit as
+              this reduces time and effort for the user. There should still
+              however be an option to tap/type the return key on a keyboard or
+              select a CTA to submit.
+            </>
+          </UnorderedList>
+        </ContentTertiary>
       </ContentSection>
 
-      <ContentSection sectionName="newsKit input component">
+      <ContentSection sectionName="newsKit input component links">
         <ContentPrimary
           id="newsKit-input-component"
-          toc="NewsKit input component"
+          toc="NewsKit input component links"
           headline={
             <StyledHeading>NewsKit input component links</StyledHeading>
           }
