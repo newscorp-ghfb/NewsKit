@@ -17,7 +17,7 @@ export default {
 export const StoryAutoPlayAudioPlayer = () => (
   <AudioPlayerContainer>
     <AudioPlayer
-      src="/audio-player-song.mp3"
+      src="/audio_file_1.mp3"
       title="Auto Play Test"
       captionSrc="captions.vtt"
       ariaLandmark="audio player with autoplay"
