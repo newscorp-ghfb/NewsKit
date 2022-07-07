@@ -432,16 +432,12 @@ describe('Tooltip', () => {
   });
   test('should throw a warning if disabled component is not wrapped in a span', async () => {
     jest.spyOn(console, 'warn').mockImplementation();
-    const {asFragment, getByRole} = renderWithTheme(Tooltip, {
+    renderWithTheme(Tooltip, {
       ...disabledPropToolTip,
     });
-    fireEvent.mouseEnter(getByRole('button'));
-    await applyAsyncStyling();
-    // eslint-disable-next-line no-console
     expect(console.warn).toHaveBeenCalledWith(
-      'When passing a component with disabled prop to Tooltip please remember to wrap it inside span element.',
+      'When passing a component with disabled prop to Tooltip please remember to use a wrapper element, such as a span.',
     );
-    expect(asFragment()).toMatchSnapshot();
   });
   test('should be controllable', () => {
     const Component = () => {
