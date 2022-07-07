@@ -23,6 +23,6 @@ npx @newskit/codemod --help
 Link this package in your global `node_modules` by running:
 
 ```bash
-cd codemod
+cd lib/codemod
 npm link
 ```

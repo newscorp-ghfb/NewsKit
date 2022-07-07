@@ -976,7 +976,7 @@ jobs:
             - yarn-build-v1-codemod-
       - run:
           name: Codemode Dependencies Install
-          command: cd codemod && make install
+          command: cd lib/codemod && make install
       - save_cache:
           key: yarn-build-v1-codemod-{{ checksum "codemod/yarn.lock" }}
           paths:
@@ -996,7 +996,7 @@ jobs:
           at: ~/project
       - run:
           name: Lint Codemod
-          command: cd codemod && make lint
+          command: cd lib/codemod && make lint
       - slack/notify:
           <<: *slack_notify
 
@@ -1008,7 +1008,7 @@ jobs:
           at: ~/project
       - run:
           name: Unit Testing Codemod
-          command: cd codemod && make unit_test
+          command: cd lib/codemod && make unit_test
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports/codemod-junit/
       - store_test_results:
@@ -1033,19 +1033,19 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
       - run:
           name: Set github identity
-          command: cd codemod && make set_git_identity
+          command: cd lib/codemod && make set_git_identity
       - when:
           condition: << parameters.publish_dev >>
           steps:
             - run:
                 name: Publish codemod to NPM
-                command: cd codemod && make publish_npm_dev
+                command: cd lib/codemod && make publish_npm_dev
       - unless:
           condition: << parameters.publish_dev >>
           steps:
             - run:
                 name: Publish codemod to NPM
-                command: cd codemod && make publish_npm;
+                command: cd lib/codemod && make publish_npm;
       - slack/notify:
           <<: *slack_notify
 
@@ -1058,10 +1058,10 @@ jobs:
       - checkout
       - run:
           name: Set github identity
-          command: cd codemod && make set_git_identity
+          command: cd lib/codemod && make set_git_identity
       - run:
           name: Bump version
-          command: cd codemod && make bump_version NEW_VERSION=<< parameters.version >>
+          command: cd lib/codemod && make bump_version NEW_VERSION=<< parameters.version >>
       - slack/notify:
           <<: *slack_notify
 
@@ -1074,10 +1074,10 @@ jobs:
       - checkout
       - run:
           name: Set github identity
-          command: cd codemod && make set_git_identity
+          command: cd lib/codemod && make set_git_identity
       - run:
           name: Delete trigger-release-codemod@ tag
-          command: cd codemod && make delete_trigger_release_tag VERSION=<< parameters.version >>
+          command: cd lib/codemod && make delete_trigger_release_tag VERSION=<< parameters.version >>
 
   merge_checker:
     executor: node
