@@ -19,4 +19,7 @@ export interface ThemeProviderProps {
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   theme,
   ...props
-}) => <EmotionThemeProvider {...props} theme={compileTheme(theme)} />;
+}: ThemeProviderProps) => (
+  // @ts-ignore
+  <EmotionThemeProvider {...props} theme={compileTheme(theme)} />
+);

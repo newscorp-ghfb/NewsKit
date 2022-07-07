@@ -132,32 +132,12 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
     line-height: 1.5555555555555556;
     font-weight: 400;
-    letter-spacing: -0.5px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-0 {
-    font-family: "Bitter",serif;
-    font-size: 18px;
-    line-height: 1.1111111111111112;
-    font-weight: 500;
-    letter-spacing: -0.5px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-0 {
-    font-family: "Bitter",serif;
-    font-size: 22px;
-    line-height: 1.1666666666666667;
-    font-weight: 500;
     letter-spacing: -0.5px;
   }
 }

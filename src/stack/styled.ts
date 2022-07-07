@@ -55,12 +55,12 @@ const verticalFlows = [
   Flow.VerticalStretch,
 ];
 
-export const hasSpacing = (theme: Theme, spaceToken: SizingKeys) =>
+export const hasSpacing = (theme: Theme, spaceToken: string) =>
   theme.spacePresets[spaceToken] &&
   parseInt(theme.spacePresets[spaceToken], 10) !== 0;
 
 const getSpaceInHalf = (theme: Theme, spaceToken: string, negative?: boolean) =>
-  `calc(${negative ? '-' : ''}${theme.sizing[spaceToken]}/2)`;
+  `calc(${negative ? '-' : ''}${theme.spacePresets[spaceToken]}/2)`;
 
 const calculateMargins = (negative?: boolean) => ({
   theme,
