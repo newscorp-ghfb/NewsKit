@@ -67,15 +67,15 @@ export const StoryTooltip = () => (
       placement="right"
       trigger={['focus', 'hover']}
     >
-      {/* <span> */}
-      <Button
-        size={ButtonSize.Small}
-        disabled
-        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-      >
-        Button
-      </Button>
-      {/* </span> */}
+      <span>
+        <Button
+          size={ButtonSize.Small}
+          disabled
+          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+        >
+          Button
+        </Button>
+      </span>
     </Tooltip>
     <StorybookSubHeading>Tooltip with button</StorybookSubHeading>
     <Tooltip

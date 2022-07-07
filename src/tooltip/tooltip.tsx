@@ -32,18 +32,16 @@ const ThemelessTooltip: React.FC<TooltipProps> = ({
 
   const contentIsString = typeof content === 'string';
 
-  const showSpanWarning = (a: string): void => {
-    if (process.env.NODE_ENV !== 'production' && a) {
+  const showSpanWarning = (): void => {
+    if (process.env.NODE_ENV !== 'production' && children.props.disabled) {
       // eslint-disable-next-line no-console
       console.warn(
         `When passing a component with disabled prop to Tooltip please remember to use a wrapper element, such as a span.`,
       );
     }
   };
-
-  useEffect(() => showSpanWarning(children.props.disabled), [
-    children.props.disabled,
-  ]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => showSpanWarning(), [children.props.disabled]);
 
   const buildContextAriaAttributes: BuildAriaAttributesFn = ({
     floating: {id, open},
