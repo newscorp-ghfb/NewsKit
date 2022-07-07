@@ -394,7 +394,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
 }
 
 .emotion-8 {
-  width: 130px;
+  width: 100px;
 }
 
 .emotion-9 {

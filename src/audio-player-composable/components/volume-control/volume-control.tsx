@@ -93,7 +93,7 @@ const ThemelessAudioPlayerVolumeControl: React.FC<AudioPlayerVolumeControlProps>
       </GridLayoutItem>
       {!collapsed && (
         <GridLayoutItem area="slider">
-          <StyledVolumeSliderContainer layout={layout}>
+          <StyledVolumeSliderContainer layout={layout} overrides={overrides}>
             <Slider
               vertical={layout === 'vertical'}
               min={0}
