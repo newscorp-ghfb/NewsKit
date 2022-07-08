@@ -4,7 +4,7 @@ exports[`themeing functions createTheme should create a default theme 1`] = `
 Object {
   "borders": Object {
     "borderRadiusCircle": "50%",
-    "borderRadiusDefault": "{{sizing.sizing020}}",
+    "borderRadiusDefault": "{{borders.borderRadiusRounded020}}",
     "borderRadiusPill": "20rem",
     "borderRadiusRounded010": "{{sizing.sizing010}}",
     "borderRadiusRounded020": "{{sizing.sizing020}}",
@@ -305,10 +305,10 @@ Object {
     "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
-    "overlayGradientFromLeft": "linear-gradient(-90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
+    "overlayGradientFromLeft": "linear-gradient(270deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromRight": "linear-gradient(90deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromTop": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.99) 100%)",
-    "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
+    "overlayGradientFromTopLeft": "linear-gradient(315deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(10,10,10,0) 0%, rgba(10,10,10,1) 100%)",
     "overlayGradientInverseVertical": "linear-gradient(0deg, rgba(10,10,10,0) 0%, rgba(10,10,10,1) 100%)",
