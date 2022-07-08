@@ -388,7 +388,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
                     <br />
                     <br />
                     <Link href="/components/text-field/">
-                      View the Text Field components
+                      View the Text Field component
                     </Link>
                   </>
                 ),
@@ -440,8 +440,8 @@ const InputComponents = (layoutProps: LayoutProps) => (
                     list. They typically appear in Forms.
                     <br />
                     <br />
-                    <Link href="/components/radio-button/">
-                      View the Radio Button component
+                    <Link href="/components/select/">
+                      View the Select component
                     </Link>
                   </>
                 ),
