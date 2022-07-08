@@ -31,7 +31,8 @@ import {
 import {useBreakpointKey} from '../../utils/hooks';
 import {Flag} from '../../flag';
 
-const AUDIO_SRC = '/audio_file_1.mp3';
+const AUDIO_SRC =
+  'https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3';
 const LIVE_AUDIO_SRC = 'https://radio.talkradio.co.uk/stream';
 
 const myCustomTheme = createTheme({
