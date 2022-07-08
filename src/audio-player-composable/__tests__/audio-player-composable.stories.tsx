@@ -41,7 +41,7 @@ const StyledPage = styled.div`
 `;
 
 const AUDIO_SRC =
-  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3';
+  'https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3';
 const LIVE_AUDIO_SRC = 'https://radio.talkradio.co.uk/stream';
 
 const myCustomTheme = createTheme({

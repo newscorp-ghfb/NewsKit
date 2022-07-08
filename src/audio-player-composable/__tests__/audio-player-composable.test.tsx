@@ -30,7 +30,7 @@ const liveAudioProps: AudioPlayerComposableProps = {
 };
 
 const recordedAudioProps: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   autoPlay: false,
   children: (
     <>
@@ -68,7 +68,7 @@ const recordedAudioProps: AudioPlayerComposableProps = {
 };
 
 const AudioPropsAndVolumeControlWithInitialVolumeCollapsed: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   initialVolume: 0.2,
   children: (
     <>
@@ -79,7 +79,7 @@ const AudioPropsAndVolumeControlWithInitialVolumeCollapsed: AudioPlayerComposabl
 
 const AudioPropsWithInitialTime: AudioPlayerComposableProps = {
   initialTime: 50,
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   children: (
     <>
       <AudioPlayerTimeDisplay />
@@ -89,7 +89,7 @@ const AudioPropsWithInitialTime: AudioPlayerComposableProps = {
 };
 
 const AudioPropsAndVolumeControlVertical: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   initialVolume: 0.2,
   children: (
     <>
@@ -99,7 +99,7 @@ const AudioPropsAndVolumeControlVertical: AudioPlayerComposableProps = {
 };
 
 const AudioPropsAndVolumeControlOverridenShortcuts: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   children: (
     <>
       <AudioPlayerVolumeControl keyboardShortcuts={{muteToggle: 'y'}} />
@@ -108,7 +108,7 @@ const AudioPropsAndVolumeControlOverridenShortcuts: AudioPlayerComposableProps =
 };
 
 const recordedAudioPropsAutoplay: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   autoPlay: true,
   children: (
     <>
@@ -146,7 +146,7 @@ const liveTrackingOutputObject = {
 };
 
 const recordedSeekBarOverrides: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   autoPlay: false,
   children: (
     <>
@@ -185,7 +185,7 @@ const recordedSeekBarOverrides: AudioPlayerComposableProps = {
 };
 
 const recordedTimeDisplayOverrides: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   autoPlay: true,
   children: (
     <>
@@ -200,7 +200,7 @@ const recordedTimeDisplayOverrides: AudioPlayerComposableProps = {
 };
 
 const audioPlayerSecondsProps: AudioPlayerComposableProps = {
-  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  src: '/audio_file_1.mp3',
   children: (
     <>
       <AudioPlayerForwardButton

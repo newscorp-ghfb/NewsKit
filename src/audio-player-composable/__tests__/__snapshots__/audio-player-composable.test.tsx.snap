@@ -506,7 +506,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   >
     <audio
       data-testid="audio-element"
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      src="/audio_file_1.mp3"
     />
     <div
       class="emotion-0"
@@ -940,7 +940,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   >
     <audio
       data-testid="audio-element"
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      src="/audio_file_1.mp3"
     />
     <div
       class="emotion-0"
@@ -1165,7 +1165,7 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
     <audio
       autoplay=""
       data-testid="audio-element"
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      src="/audio_file_1.mp3"
     />
     <button
       aria-busy="true"
@@ -1953,7 +1953,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   >
     <audio
       data-testid="audio-element"
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      src="/audio_file_1.mp3"
     />
     <div
       class="emotion-0"
@@ -2647,7 +2647,7 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   >
     <audio
       data-testid="audio-element"
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      src="/audio_file_1.mp3"
     />
     <div
       class="emotion-0"
@@ -3470,7 +3470,7 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
     <audio
       autoplay=""
       data-testid="audio-element"
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      src="/audio_file_1.mp3"
     />
     <div
       class="emotion-0"
@@ -4282,7 +4282,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   >
     <audio
       data-testid="audio-element"
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      src="/audio_file_1.mp3"
     />
     <div
       class="emotion-0"

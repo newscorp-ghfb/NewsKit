@@ -1021,7 +1021,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
@@ -2389,7 +2389,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
@@ -3635,7 +3635,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
@@ -6561,7 +6561,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
@@ -8172,7 +8172,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
@@ -9652,7 +9652,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
@@ -11134,7 +11134,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
@@ -12555,7 +12555,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
       >
         <audio
           data-testid="audio-element"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src="/audio_file_1.mp3"
           title="The Breakfast Show with Giles Coren"
         >
           <track
