@@ -15,7 +15,7 @@ import * as presets from './presets';
 import {get} from '../utils/get';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 
-interface CreateThemeArgs {
+export interface CreateThemeArgs {
   name?: string;
   baseTheme?: UncompiledTheme;
   overrides?: ThemeOverrides;

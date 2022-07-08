@@ -37,4 +37,9 @@ export default {
       iconColor: '{{colors.inkSubtle}}',
     },
   },
+  audioPlayerLabels: {
+    base: {
+      color: '{{colors.inkBase}}',
+    },
+  },
 } as Record<string, StylePreset>;

@@ -2,7 +2,11 @@
 import React, {useEffect} from 'react';
 import {Modal} from '..';
 import {styled} from '../../utils/style';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookParah,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {Button} from '../../button';
 import {Link} from '../../link';
 import {Stack} from '../../stack';
@@ -23,10 +27,10 @@ const modalContent = (
     spaceInline="space020"
   >
     <H1>You need an account</H1>
-    <p contentEditable>
+    <StorybookParah>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
       doloremque laudantium, totam rem aperiam. (Double click for more text :) )
-    </p>
+    </StorybookParah>
     <Button>Register for a free account</Button>
     <P>Already have an account?</P>
     <Link href="/">Sign in here</Link>
@@ -58,14 +62,14 @@ export const StoryDefault = () =>
         <Button onClick={open} data-testid="modal-open-button">
           Open Modal
         </Button>
-        <p>SCROLL DOWN </p>
+        <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
         <Box>
           {Array.from({length: 5}, (_, i) => (
             <>
               {i === 3 && (
                 <Button onClick={open}>Another button to open the modal</Button>
               )}
-              <p key={i}>{scrollContent}</p>
+              <StorybookParah key={i}>{scrollContent}</StorybookParah>
             </>
           ))}
         </Box>
@@ -95,7 +99,7 @@ export const StoryOpenOnPageLoad = () =>
     return (
       <>
         <StorybookHeading>Open modal on page load</StorybookHeading>
-        <p>Refresh the page to open the modal</p>
+        <StorybookParah>Refresh the page to open the modal</StorybookParah>
         <Modal
           open={isActive}
           onDismiss={close}
@@ -108,11 +112,11 @@ export const StoryOpenOnPageLoad = () =>
             spaceInline="space020"
           >
             <H1>You need an account</H1>
-            <p contentEditable>
+            <StorybookParah>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam. (Double
               click for more text :) )
-            </p>
+            </StorybookParah>
             <Button>Register for a free account</Button>
             <P>Already have an account?</P>
             <Link href="/">Sign in here</Link>
@@ -154,7 +158,9 @@ export const StoryWithCustomAutofocus = () =>
     return (
       <div data-testid="scrollable-modal">
         <StorybookHeading>Modal with custom auto-focus</StorybookHeading>
-        <p>Modal with autofocus using data-autofocus attribute</p>
+        <StorybookParah>
+          Modal with autofocus using data-autofocus attribute
+        </StorybookParah>
         <Button onClick={open} data-testid="modal-open-button">
           Open modal
         </Button>
@@ -171,11 +177,11 @@ export const StoryWithCustomAutofocus = () =>
             spaceInline="space020"
           >
             <H1>You need an account</H1>
-            <p contentEditable>
+            <StorybookParah>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam. (Double
               click for more text :) )
-            </p>
+            </StorybookParah>
             <Button>Register for a free account</Button>
             <Button data-autofocus>Middle Button with focus</Button>
             <Button>Something else</Button>
@@ -216,11 +222,11 @@ export const StoryWithCustomRestoreFocus = () =>
             spaceInline="space020"
           >
             <H1>You need an account</H1>
-            <p contentEditable>
+            <StorybookParah>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam. (Double
               click for more text :) )
-            </p>
+            </StorybookParah>
             <Button>Register for a free account</Button>
           </Stack>
         </Modal>
@@ -240,14 +246,14 @@ export const StoryWithHiddenOverlay = () =>
         <Button onClick={open} data-testid="modal-open-button">
           Open Modal
         </Button>
-        <p>SCROLL DOWN </p>
+        <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
         <Box>
           {Array.from({length: 5}, (_, i) => (
             <>
               {i === 3 && (
                 <Button onClick={open}>Another button to open the modal</Button>
               )}
-              <p key={i}>{scrollContent}</p>
+              <StorybookParah key={i}>{scrollContent}</StorybookParah>
             </>
           ))}
         </Box>
@@ -275,14 +281,14 @@ export const StoryWithDisabledFocusTrap = () =>
         <Button onClick={open} data-testid="modal-open-button">
           Open Modal
         </Button>
-        <p>SCROLL DOWN </p>
+        <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
         <Box>
           {Array.from({length: 5}, (_, i) => (
             <>
               {i === 3 && (
                 <Button onClick={open}>Another button to open the modal</Button>
               )}
-              <p key={i}>{scrollContent}</p>
+              <StorybookParah key={i}>{scrollContent}</StorybookParah>
             </>
           ))}
         </Box>
@@ -310,7 +316,7 @@ export const StoryModelessModal = () =>
         <Button onClick={open} data-testid="modal-open-button">
           Open Modal
         </Button>
-        <p>SCROLL DOWN </p>
+        <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
         <Box>
           {Array.from({length: 5}, (_, i) => (
             <>
@@ -354,7 +360,7 @@ export const StoryModelessInlineModal = () =>
           <Button onClick={open} data-testid="modal-open-button">
             Open Modal
           </Button>
-          <p>SCROLL DOWN </p>
+          <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
 
           <Box>
             {Array.from({length: 5}, (_, i) => (

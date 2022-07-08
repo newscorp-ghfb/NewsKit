@@ -14,6 +14,7 @@ import {
 import {
   StorybookHeading,
   StorybookSubHeading,
+  StorybookSpan,
 } from '../../test/storybook-comps';
 import {calculateTime} from '../components/time-display/utils';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
@@ -701,22 +702,54 @@ export const AudioPlayerKeyboard = () => (
     <AudioPlayerFullRecorded ariaLandmark="audio player keyboard" />
     <Block marginBlockEnd="space040" />
     <GridLayout columns="auto 1fr auto 1fr" rowGap="space020" as="dl">
-      <dt>k / space</dt>
-      <dd>Toggle play/pause</dd>
-      <dt>0 / Home</dt>
-      <dd>Jump to start</dd>
-      <dt>End</dt>
-      <dd>Jump to end</dd>
-      <dt>shift + n</dt>
-      <dd>Next track</dd>
-      <dt>shift + p</dt>
-      <dd>Prev track</dd>
-      <dt>l</dt>
-      <dd>Forward 10sec</dd>
-      <dt>j</dt>
-      <dd>Replay 10 sec</dd>
-      <dt>m</dt>
-      <dd>mute / unmute volume</dd>
+      <dt>
+        <StorybookSpan>k / space</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>Toggle play/pause</StorybookSpan>
+      </dd>
+      <dt>
+        <StorybookSpan>0 / Home</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>Jump to start</StorybookSpan>
+      </dd>
+      <dt>
+        <StorybookSpan>End</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>Jump to end</StorybookSpan>
+      </dd>
+      <dt>
+        <StorybookSpan>shift + n</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>Next track</StorybookSpan>
+      </dd>
+      <dt>
+        <StorybookSpan>shift + p</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>Prev track</StorybookSpan>
+      </dd>
+      <dt>
+        <StorybookSpan>l</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>Forward 10sec</StorybookSpan>
+      </dd>
+      <dt>
+        <StorybookSpan>j</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>Replay 10 sec</StorybookSpan>
+      </dd>
+      <dt>
+        <StorybookSpan>m</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>mute / unmute volume</StorybookSpan>
+      </dd>
     </GridLayout>
     <Block marginBlockEnd="space090" />
 
@@ -808,22 +841,54 @@ export const AudioPlayerKeyboard = () => (
     </AudioPlayerComposable>
     <Block marginBlockEnd="space040" />
     <GridLayout columns="auto 1fr auto 1fr" rowGap="space020" as="dl">
-      <dt>s</dt>
-      <dd>Toggle play/pause</dd>
-      <dt>1</dt>
-      <dd>Jump to start</dd>
-      <dt>9</dt>
-      <dd>Jump to end</dd>
-      <dt>n</dt>
-      <dd>Next track</dd>
-      <dt>p</dt>
-      <dd>Prev track</dd>
-      <dt>d</dt>
-      <dd>Forward 10sec</dd>
-      <dt>a</dt>
-      <dd>Replay 10 sec</dd>
-      <dt>y</dt>
-      <dd>mute / unmute volume</dd>
+      <dt>
+        <StorybookSpan>s</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>Toggle play/pause</StorybookSpan>
+      </dd>
+      <dt>
+        <StorybookSpan>1</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>Jump to start</StorybookSpan>
+      </dd>
+      <dt>
+        <StorybookSpan>9</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>Jump to end</StorybookSpan>
+      </dd>
+      <dt>
+        <StorybookSpan>n</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>Next track</StorybookSpan>
+      </dd>
+      <dt>
+        <StorybookSpan>p</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>Prev track</StorybookSpan>
+      </dd>
+      <dt>
+        <StorybookSpan>d</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>Forward 10sec</StorybookSpan>
+      </dd>
+      <dt>
+        <StorybookSpan>a</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>Replay 10 sec</StorybookSpan>
+      </dd>
+      <dt>
+        <StorybookSpan>y</StorybookSpan>
+      </dt>
+      <dd>
+        <StorybookSpan>mute / unmute volume</StorybookSpan>
+      </dd>
     </GridLayout>
   </>
 );
