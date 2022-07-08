@@ -1,6 +1,9 @@
 import * as React from 'react';
 import {createTheme, ThemeProvider} from '../../theme';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {H6, H5, H4, H3, H2, H1} from '..';
 import {TextBlock} from '../../text-block';
 import {Grid, Cell} from '../../grid';
@@ -48,56 +51,112 @@ export const StoryCropVsNoCrop = () => (
   <>
     <Grid>
       <Cell xs={6}>
-        <h1>cropped</h1>
-        <TextBlock typographyPreset="editorialHeadline010">
+        <StorybookSubHeading>cropped</StorybookSubHeading>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline010"
+        >
           editorialHeadline010
         </TextBlock>
-        <TextBlock typographyPreset="editorialHeadline020">
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline020"
+        >
           editorialHeadline020
         </TextBlock>
-        <TextBlock typographyPreset="editorialHeadline030">
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline030"
+        >
           editorialHeadline030
         </TextBlock>
-        <TextBlock typographyPreset="editorialHeadline040">
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline040"
+        >
           editorialHeadline040
         </TextBlock>
-        <TextBlock typographyPreset="editorialHeadline050">
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline050"
+        >
           editorialHeadline050
         </TextBlock>
-        <TextBlock typographyPreset="editorialHeadline060">
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline060"
+        >
           editorialHeadline060
         </TextBlock>
-        <TextBlock typographyPreset="editorialHeadline070">
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline070"
+        >
           editorialHeadline070
         </TextBlock>
-        <TextBlock typographyPreset="editorialHeadline080">
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline080"
+        >
           editorialHeadline080
         </TextBlock>
       </Cell>
       <Cell xs={6}>
-        <h1>not cropped</h1>
-        <TextBlock typographyPreset="editorialHeadline010" noCrop>
+        <StorybookSubHeading>not cropped</StorybookSubHeading>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline010"
+          noCrop
+        >
           editorialHeadline010
         </TextBlock>
-        <TextBlock typographyPreset="editorialHeadline020" noCrop>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline020"
+          noCrop
+        >
           editorialHeadline020
         </TextBlock>
-        <TextBlock typographyPreset="editorialHeadline030" noCrop>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline030"
+          noCrop
+        >
           editorialHeadline030
         </TextBlock>
-        <TextBlock typographyPreset="editorialHeadline040" noCrop>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline040"
+          noCrop
+        >
           editorialHeadline040
         </TextBlock>
-        <TextBlock typographyPreset="editorialHeadline050" noCrop>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline050"
+          noCrop
+        >
           editorialHeadline050
         </TextBlock>
-        <TextBlock typographyPreset="editorialHeadline060" noCrop>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline060"
+          noCrop
+        >
           editorialHeadline060
         </TextBlock>
-        <TextBlock typographyPreset="editorialHeadline070" noCrop>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline070"
+          noCrop
+        >
           editorialHeadline070
         </TextBlock>
-        <TextBlock typographyPreset="editorialHeadline080" noCrop>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline080"
+          noCrop
+        >
           editorialHeadline080
         </TextBlock>
       </Cell>
@@ -178,19 +237,18 @@ export const StoryHeadingLogicalProps = () => {
   return (
     <>
       <StorybookHeading>Heading with logical props</StorybookHeading>
-      <ThemeProvider theme={myCustomTheme}>
-        <H1 overrides={logicalPropsOverrides}>H1 with logical props</H1>
-        <br />
-        <H2 overrides={logicalPropsOverrides}>H2 with logical props</H2>
-        <br />
-        <H3 overrides={logicalPropsOverrides}>H3 with logical props</H3>
-        <br />
-        <H4 overrides={logicalPropsOverrides}>H4 with logical props</H4>
-        <br />
-        <H5 overrides={logicalPropsOverrides}>H5 with logical props</H5>
-        <br />
-        <H6 overrides={logicalPropsOverrides}>H6 with logical props</H6>
-      </ThemeProvider>
+
+      <H1 overrides={logicalPropsOverrides}>H1 with logical props</H1>
+      <br />
+      <H2 overrides={logicalPropsOverrides}>H2 with logical props</H2>
+      <br />
+      <H3 overrides={logicalPropsOverrides}>H3 with logical props</H3>
+      <br />
+      <H4 overrides={logicalPropsOverrides}>H4 with logical props</H4>
+      <br />
+      <H5 overrides={logicalPropsOverrides}>H5 with logical props</H5>
+      <br />
+      <H6 overrides={logicalPropsOverrides}>H6 with logical props</H6>
     </>
   );
 };

@@ -1,32 +1,32 @@
 import React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {createTheme, compileTheme, ThemeProvider} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {IconFilledInfo} from '../../icons';
 import {InlineMessage} from '..';
 import {Link} from '../../link';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const myCustomTheme = compileTheme(
-  createTheme({
-    name: 'inline-message-theme',
-    overrides: {
-      stylePresets: {
-        customInlineMessage: {
-          base: {
-            backgroundColor: '#a05a64',
-            borderWidth: '1px 4px',
-            borderColor: 'deeppink',
-            borderStyle: 'solid',
-            borderRadius: '3px',
-            iconColor: 'deeppink',
-          },
+const inlineMessageCustomThemeObject: CreateThemeArgs = {
+  name: 'inline-message-custom-theme',
+  overrides: {
+    stylePresets: {
+      customInlineMessage: {
+        base: {
+          backgroundColor: '#a05a64',
+          borderWidth: '1px 4px',
+          borderColor: 'deeppink',
+          borderStyle: 'solid',
+          borderRadius: '3px',
+          iconColor: 'deeppink',
         },
       },
     },
-  }),
-);
+  },
+};
 
 const link = <Link href="/">link</Link>;
 const icon = (
@@ -36,11 +36,6 @@ const icon = (
     }}
   />
 );
-
-export default {
-  title: 'NewsKit Light/inline-message',
-  component: () => 'None',
-};
 
 export const StoryDefault = () => (
   <>
@@ -85,7 +80,7 @@ export const StoryDefault = () => (
 StoryDefault.storyName = 'inline-message-default';
 
 export const StoryOverrides = () => (
-  <ThemeProvider theme={myCustomTheme}>
+  <>
     <StorybookHeading>
       Inline message with custom theme and overrides
     </StorybookHeading>
@@ -115,7 +110,7 @@ export const StoryOverrides = () => (
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
     </InlineMessage>
-  </ThemeProvider>
+  </>
 );
 StoryOverrides.storyName = 'inline-message-with-overrides';
 
@@ -176,3 +171,20 @@ export const StoryLogicalProps = () => (
   </>
 );
 StoryLogicalProps.storyName = 'inline-message-logical-props';
+
+export default {
+  title: 'NewsKit Light/inline-message',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          inlineMessageCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

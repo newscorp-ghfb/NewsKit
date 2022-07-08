@@ -1,4 +1,5 @@
 import React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -7,95 +8,95 @@ import {Switch} from '..';
 import {styled} from '../../utils';
 import {
   Cell,
-  compileTheme,
-  createTheme,
   Fieldset,
   Grid,
   IconFilledCheck,
   IconFilledClose,
   IconFilledDragHandle,
   ThemeProvider,
+  CreateThemeArgs,
 } from '../..';
 import {icons, labels, sizeOverrides, sizes, states} from './helpers';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-export default {
-  title: 'NewsKit Light/switch',
-  component: () => 'None',
-  disabledRules: [],
+const switchCustomThemeObject: CreateThemeArgs = {
+  name: 'bordered-thumb-theme',
+  overrides: {
+    stylePresets: {
+      borderedThumb: {
+        base: {
+          backgroundColor: '{{colors.inkInverse}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          iconColor: '{{colors.inkContrast}}',
+          borderColor: '{{colors.interactiveInput040}}',
+          borderStyle: 'solid',
+          borderWidth: '{{borders.borderWidth010}}',
+        },
+      },
+      controlLabel: {
+        base: {
+          color: '{{colors.inkContrast}}',
+        },
+        disabled: {
+          color: '{{colors.inkNonEssential}}',
+        },
+      },
+      customOutlineColor: {
+        base: {
+          backgroundColor: '{{colors.interactiveInput020}}',
+          borderRadius: '{{borders.borderRadiusPill}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineStyle: {
+        base: {
+          backgroundColor: '{{colors.interactiveInput020}}',
+          borderRadius: '{{borders.borderRadiusPill}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineWidth: {
+        base: {
+          backgroundColor: '{{colors.interactiveInput020}}',
+          borderRadius: '{{borders.borderRadiusPill}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      customOutlineOffset: {
+        base: {
+          backgroundColor: '{{colors.interactiveInput020}}',
+          borderRadius: '{{borders.borderRadiusPill}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '5px',
+          outlineOffset: '5px',
+        },
+      },
+    },
+  },
 };
 
 const Container = styled.div`
   margin: 20px;
   display: flex;
 `;
-
-const customTheme = compileTheme(
-  createTheme({
-    name: 'bordered-thumb-theme',
-    overrides: {
-      stylePresets: {
-        borderedThumb: {
-          base: {
-            backgroundColor: '{{colors.inkInverse}}',
-            borderRadius: '{{borders.borderRadiusCircle}}',
-            iconColor: '{{colors.inkContrast}}',
-            borderColor: '{{colors.interactiveInput040}}',
-            borderStyle: 'solid',
-            borderWidth: '{{borders.borderWidth010}}',
-          },
-        },
-        customOutlineColor: {
-          base: {
-            backgroundColor: '{{colors.interactiveInput020}}',
-            borderRadius: '{{borders.borderRadiusPill}}',
-          },
-          'focus-visible': {
-            outlineColor: 'red',
-            outlineStyle: '{{outlines.outlineStyleDefault}}',
-            outlineWidth: '{{outlines.outlineWidthDefault}}',
-            outlineOffset: '{{outlines.outlineOffsetDefault}}',
-          },
-        },
-        customOutlineStyle: {
-          base: {
-            backgroundColor: '{{colors.interactiveInput020}}',
-            borderRadius: '{{borders.borderRadiusPill}}',
-          },
-          'focus-visible': {
-            outlineColor: 'red',
-            outlineStyle: 'dotted',
-            outlineWidth: '{{outlines.outlineWidthDefault}}',
-            outlineOffset: '{{outlines.outlineOffsetDefault}}',
-          },
-        },
-        customOutlineWidth: {
-          base: {
-            backgroundColor: '{{colors.interactiveInput020}}',
-            borderRadius: '{{borders.borderRadiusPill}}',
-          },
-          'focus-visible': {
-            outlineColor: 'red',
-            outlineStyle: 'dotted',
-            outlineWidth: '5px',
-            outlineOffset: '{{outlines.outlineOffsetDefault}}',
-          },
-        },
-        customOutlineOffset: {
-          base: {
-            backgroundColor: '{{colors.interactiveInput020}}',
-            borderRadius: '{{borders.borderRadiusPill}}',
-          },
-          'focus-visible': {
-            outlineColor: 'red',
-            outlineStyle: 'dotted',
-            outlineWidth: '5px',
-            outlineOffset: '5px',
-          },
-        },
-      },
-    },
-  }),
-);
 
 export const StorySwitchDefault = () => (
   <>
@@ -159,12 +160,11 @@ export const StorySwitchIcons = () => (
 StorySwitchIcons.storyName = 'switch-icons';
 
 export const StorySwitchOverrides = () => (
-  <ThemeProvider theme={customTheme}>
+  <>
     <StorybookHeading>Switch</StorybookHeading>
     <Grid>
       <Cell xs={8} md={4}>
         <StorybookSubHeading>Size / spacing overrides</StorybookSubHeading>
-
         {sizeOverrides.map(([id, overrides, ...props]) => (
           <Container key={id}>
             <Switch
@@ -177,18 +177,17 @@ export const StorySwitchOverrides = () => (
         ))}
       </Cell>
     </Grid>
-  </ThemeProvider>
+  </>
 );
 
 StorySwitchOverrides.storyName = 'switch-overrides';
 
 export const StorySwitchLabels = () => (
-  <ThemeProvider theme={customTheme}>
+  <>
     <StorybookHeading>Switch</StorybookHeading>
     <Grid>
       <Cell xs={8} md={4}>
         <StorybookSubHeading>Labels</StorybookSubHeading>
-
         {labels.map(([id, {label, labelPosition, ...props}]) => (
           <Container key={id}>
             <Switch
@@ -201,7 +200,7 @@ export const StorySwitchLabels = () => (
         ))}
       </Cell>
     </Grid>
-  </ThemeProvider>
+  </>
 );
 
 StorySwitchLabels.storyName = 'switch-labels';
@@ -275,7 +274,7 @@ export const StorySwitchLogicalProps = () => (
 StorySwitchLogicalProps.storyName = 'switch-logical-props';
 
 export const StorySwitchOutlineOverrides = () => (
-  <ThemeProvider theme={customTheme}>
+  <>
     <StorybookHeading>Outline overrides</StorybookHeading>
     <Grid>
       <Cell xs={8} md={4}>
@@ -321,7 +320,25 @@ export const StorySwitchOutlineOverrides = () => (
         </Container>
       </Cell>
     </Grid>
-  </ThemeProvider>
+  </>
 );
 
 StorySwitchOutlineOverrides.storyName = 'switch-outline-overrides';
+
+export default {
+  title: 'NewsKit Light/switch',
+  component: () => 'None',
+  disabledRules: [],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          switchCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

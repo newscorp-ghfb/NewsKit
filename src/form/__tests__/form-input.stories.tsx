@@ -1,4 +1,5 @@
 import React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {
   Form,
   FormInput,
@@ -12,7 +13,6 @@ import {
 import {
   Block,
   Button,
-  createTheme,
   IconButton,
   IconFilledAccountBalance,
   IconFilledAccountTree,
@@ -21,6 +21,7 @@ import {
   StackDistribution,
   styled,
   ThemeProvider,
+  CreateThemeArgs,
 } from '../..';
 import {SelectOption} from '../../select';
 import {TextFieldSize} from '../../text-field';
@@ -30,6 +31,22 @@ import {
 } from '../../test/storybook-comps';
 import {Fieldset} from '../../fieldset';
 import {RadioGroup} from '../../radio-button';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+
+const formInputCustomThemeObject: CreateThemeArgs = {
+  name: 'my-custom-select-theme',
+  overrides: {
+    stylePresets: {
+      fieldsetWithBorder: {
+        base: {
+          borderColor: '{{colors.amber010}}',
+          borderWidth: '1px',
+          borderStyle: 'solid',
+        },
+      },
+    },
+  },
+};
 
 const FormInputBlock = styled(Block)``;
 
@@ -44,12 +61,6 @@ const onSubmit = async (data: any) => {
 const validateUserName = async (value: string) => {
   await sleep(1000);
   return value !== 'newskit' || 'This username is already taken';
-};
-
-export default {
-  title: 'NewsKit Light/form-input',
-  component: () => 'None',
-  disabledRules: [],
 };
 
 export const StoryFormField = () => (
@@ -375,443 +386,444 @@ export const FormFieldRadioButton = () => {
 
 FormFieldRadioButton.storyName = 'form-input-radio-button';
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-select-theme',
-  overrides: {
-    stylePresets: {
-      fieldsetWithBorder: {
-        base: {
-          borderColor: '{{colors.amber010}}',
-          borderWidth: '1px',
-          borderStyle: 'solid',
-        },
-      },
-    },
-  },
-});
-
 export const StoryFormFieldset = () => (
   <>
     <StorybookHeading>FormInputs inside Fieldset</StorybookHeading>
 
     <Form onSubmit={onSubmit}>
-      <ThemeProvider theme={myCustomTheme}>
-        <Stack
-          stackDistribution={StackDistribution.SpaceBetween}
-          flow="horizontal-top"
+      <Stack
+        stackDistribution={StackDistribution.SpaceBetween}
+        flow="horizontal-top"
+      >
+        <Fieldset
+          legend="Small Fieldset"
+          size="small"
+          overrides={{
+            stylePreset: 'fieldsetWithBorder',
+            legend: {
+              spaceStack: 'space070',
+            },
+          }}
         >
-          <Fieldset
-            legend="Small Fieldset"
-            size="small"
-            overrides={{
-              stylePreset: 'fieldsetWithBorder',
-              legend: {
-                spaceStack: 'space070',
-              },
-            }}
-          >
-            <FormInputBlock spaceStack="space040">
-              <FormInput
-                name="first-name"
-                rules={{
-                  required: 'Required field',
-                  minLength: {
-                    value: 2,
-                    message: 'Name must be at least 2 characters long',
-                  },
-                  validate: validateUserName,
+          <FormInputBlock spaceStack="space040">
+            <FormInput
+              name="first-name"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 2,
+                  message: 'Name must be at least 2 characters long',
+                },
+                validate: validateUserName,
+              }}
+            >
+              <FormInputLabel
+                overrides={{
+                  typographyPreset: 'utilityLabel010',
+                  spaceStack: 'space030',
                 }}
               >
-                <FormInputLabel
-                  overrides={{
-                    typographyPreset: 'utilityLabel010',
-                    spaceStack: 'space030',
-                  }}
-                >
-                  First name
-                </FormInputLabel>
-                <FormInputTextField
-                  startEnhancer={
-                    <IconFilledAddCircleOutline
-                      overrides={{size: 'iconSize020'}}
-                    />
-                  }
-                  overrides={{spaceStack: 'space000'}}
-                />
-              </FormInput>
-            </FormInputBlock>
-            <FormInputBlock spaceStack="space050">
-              <FormInput
-                name="last-name"
-                rules={{
-                  required: 'Required field',
-                  minLength: {
-                    value: 2,
-                    message: 'Last name must be at least 2 characters long',
-                  },
-                  validate: validateUserName,
+                First name
+              </FormInputLabel>
+              <FormInputTextField
+                startEnhancer={
+                  <IconFilledAddCircleOutline
+                    overrides={{size: 'iconSize020'}}
+                  />
+                }
+                overrides={{spaceStack: 'space000'}}
+              />
+            </FormInput>
+          </FormInputBlock>
+          <FormInputBlock spaceStack="space050">
+            <FormInput
+              name="last-name"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 2,
+                  message: 'Last name must be at least 2 characters long',
+                },
+                validate: validateUserName,
+              }}
+            >
+              <FormInputLabel
+                overrides={{
+                  typographyPreset: 'utilityLabel010',
+                  spaceStack: 'space030',
                 }}
               >
-                <FormInputLabel
-                  overrides={{
-                    typographyPreset: 'utilityLabel010',
-                    spaceStack: 'space030',
-                  }}
-                >
-                  Last name
-                </FormInputLabel>
-                <FormInputTextField
-                  startEnhancer={
-                    <IconFilledAddCircleOutline
-                      overrides={{size: 'iconSize020'}}
-                    />
-                  }
-                  overrides={{spaceStack: 'space020'}}
-                />
-                <FormInputAssistiveText>
-                  This should be your legal last name
-                </FormInputAssistiveText>
-              </FormInput>
-            </FormInputBlock>
-            <FormInputBlock>
-              <FormInput
-                name="small-checkbox"
-                rules={{
-                  required: 'Required field',
-                }}
-              >
-                <FormInputCheckbox
-                  label="I agree to the terms & conditions"
-                  value="tc"
-                  overrides={{spaceStack: 'space020'}}
-                />
-              </FormInput>
-              <FormInput
-                name="small-checkbox"
-                rules={{
-                  required: 'Required field',
-                }}
-              >
-                <FormInputCheckbox
-                  label="I want to hear about more offers"
-                  value="tc"
-                />
-              </FormInput>
-            </FormInputBlock>
-          </Fieldset>
+                Last name
+              </FormInputLabel>
+              <FormInputTextField
+                startEnhancer={
+                  <IconFilledAddCircleOutline
+                    overrides={{size: 'iconSize020'}}
+                  />
+                }
+                overrides={{spaceStack: 'space020'}}
+              />
+              <FormInputAssistiveText>
+                This should be your legal last name
+              </FormInputAssistiveText>
+            </FormInput>
+          </FormInputBlock>
+          <FormInputBlock>
+            <FormInput
+              name="small-checkbox"
+              rules={{
+                required: 'Required field',
+              }}
+            >
+              <FormInputCheckbox
+                label="I agree to the terms & conditions"
+                value="tc"
+                overrides={{spaceStack: 'space020'}}
+              />
+            </FormInput>
+            <FormInput
+              name="small-checkbox"
+              rules={{
+                required: 'Required field',
+              }}
+            >
+              <FormInputCheckbox
+                label="I want to hear about more offers"
+                value="tc"
+              />
+            </FormInput>
+          </FormInputBlock>
+        </Fieldset>
 
-          <Fieldset
-            legend="Medium Fieldset"
-            size="medium"
-            overrides={{
-              stylePreset: 'fieldsetWithBorder',
-              legend: {
-                spaceStack: 'space070',
-              },
-            }}
-          >
-            <FormInputBlock spaceStack="space050">
-              <FormInput
-                name="first-name"
-                rules={{
-                  required: 'Required field',
-                  minLength: {
-                    value: 2,
-                    message: 'Name must be at least 2 characters long',
-                  },
-                  validate: validateUserName,
+        <Fieldset
+          legend="Medium Fieldset"
+          size="medium"
+          overrides={{
+            stylePreset: 'fieldsetWithBorder',
+            legend: {
+              spaceStack: 'space070',
+            },
+          }}
+        >
+          <FormInputBlock spaceStack="space050">
+            <FormInput
+              name="first-name"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 2,
+                  message: 'Name must be at least 2 characters long',
+                },
+                validate: validateUserName,
+              }}
+            >
+              <FormInputLabel
+                overrides={{
+                  typographyPreset: 'utilityLabel020',
+                  spaceStack: 'space030',
                 }}
               >
-                <FormInputLabel
-                  overrides={{
-                    typographyPreset: 'utilityLabel020',
-                    spaceStack: 'space030',
-                  }}
-                >
-                  First name
-                </FormInputLabel>
-                <FormInputTextField
-                  startEnhancer={
-                    <IconFilledAddCircleOutline
-                      overrides={{size: 'iconSize020'}}
-                    />
-                  }
-                  overrides={{spaceStack: 'space000'}}
-                />
-              </FormInput>
-            </FormInputBlock>
+                First name
+              </FormInputLabel>
+              <FormInputTextField
+                startEnhancer={
+                  <IconFilledAddCircleOutline
+                    overrides={{size: 'iconSize020'}}
+                  />
+                }
+                overrides={{spaceStack: 'space000'}}
+              />
+            </FormInput>
+          </FormInputBlock>
 
-            <FormInputBlock spaceStack="space060">
-              <FormInput
-                name="last-name"
-                rules={{
-                  required: 'Required field',
-                  minLength: {
-                    value: 2,
-                    message: 'Last name must be at least 2 characters long',
-                  },
-                  validate: validateUserName,
+          <FormInputBlock spaceStack="space060">
+            <FormInput
+              name="last-name"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 2,
+                  message: 'Last name must be at least 2 characters long',
+                },
+                validate: validateUserName,
+              }}
+            >
+              <FormInputLabel
+                overrides={{
+                  typographyPreset: 'utilityLabel020',
+                  spaceStack: 'space030',
                 }}
               >
-                <FormInputLabel
-                  overrides={{
-                    typographyPreset: 'utilityLabel020',
-                    spaceStack: 'space030',
-                  }}
-                >
-                  Last name
-                </FormInputLabel>
-                <FormInputTextField
-                  startEnhancer={
-                    <IconFilledAddCircleOutline
-                      overrides={{size: 'iconSize020'}}
-                    />
-                  }
-                  overrides={{spaceStack: 'space020'}}
-                />
-                <FormInputAssistiveText>
-                  This should be your legal last name
-                </FormInputAssistiveText>
-              </FormInput>
-            </FormInputBlock>
+                Last name
+              </FormInputLabel>
+              <FormInputTextField
+                startEnhancer={
+                  <IconFilledAddCircleOutline
+                    overrides={{size: 'iconSize020'}}
+                  />
+                }
+                overrides={{spaceStack: 'space020'}}
+              />
+              <FormInputAssistiveText>
+                This should be your legal last name
+              </FormInputAssistiveText>
+            </FormInput>
+          </FormInputBlock>
 
-            <FormInputBlock>
-              <FormInput
-                name="medium-checkbox"
-                rules={{
-                  required: 'Required field',
-                }}
-              >
-                <FormInputCheckbox
-                  label="I agree to the terms & conditions"
-                  value="tc"
-                  overrides={{spaceStack: 'space030'}}
-                />
-              </FormInput>
-              <FormInput
-                name="medium-checkbox"
-                rules={{
-                  required: 'Required field',
-                }}
-              >
-                <FormInputCheckbox
-                  label="I want to hear about more offers"
-                  value="tc"
-                />
-              </FormInput>
-            </FormInputBlock>
-          </Fieldset>
+          <FormInputBlock>
+            <FormInput
+              name="medium-checkbox"
+              rules={{
+                required: 'Required field',
+              }}
+            >
+              <FormInputCheckbox
+                label="I agree to the terms & conditions"
+                value="tc"
+                overrides={{spaceStack: 'space030'}}
+              />
+            </FormInput>
+            <FormInput
+              name="medium-checkbox"
+              rules={{
+                required: 'Required field',
+              }}
+            >
+              <FormInputCheckbox
+                label="I want to hear about more offers"
+                value="tc"
+              />
+            </FormInput>
+          </FormInputBlock>
+        </Fieldset>
 
-          <Fieldset
-            legend="Large Fieldset"
-            size="large"
-            overrides={{
-              stylePreset: 'fieldsetWithBorder',
-              legend: {
-                spaceStack: 'space070',
-              },
-            }}
-          >
-            <FormInputBlock spaceStack="space050">
-              <FormInput
-                name="first-name"
-                rules={{
-                  required: 'Required field',
-                  minLength: {
-                    value: 2,
-                    message: 'Name must be at least 2 characters long',
-                  },
-                  validate: validateUserName,
+        <Fieldset
+          legend="Large Fieldset"
+          size="large"
+          overrides={{
+            stylePreset: 'fieldsetWithBorder',
+            legend: {
+              spaceStack: 'space070',
+            },
+          }}
+        >
+          <FormInputBlock spaceStack="space050">
+            <FormInput
+              name="first-name"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 2,
+                  message: 'Name must be at least 2 characters long',
+                },
+                validate: validateUserName,
+              }}
+            >
+              <FormInputLabel
+                overrides={{
+                  typographyPreset: 'utilityLabel030',
+                  spaceStack: 'space030',
                 }}
               >
-                <FormInputLabel
-                  overrides={{
-                    typographyPreset: 'utilityLabel030',
-                    spaceStack: 'space030',
-                  }}
-                >
-                  First name
-                </FormInputLabel>
-                <FormInputTextField
-                  startEnhancer={
-                    <IconFilledAddCircleOutline
-                      overrides={{size: 'iconSize010'}}
-                    />
-                  }
-                  overrides={{
-                    spaceStack: 'space000',
-                  }}
-                />
-              </FormInput>
-            </FormInputBlock>
-            <FormInputBlock spaceStack="space060">
-              <FormInput
-                name="last-name"
-                rules={{
-                  required: 'Required field',
-                  minLength: {
-                    value: 2,
-                    message: 'Last name must be at least 2 characters long',
-                  },
-                  validate: validateUserName,
+                First name
+              </FormInputLabel>
+              <FormInputTextField
+                startEnhancer={
+                  <IconFilledAddCircleOutline
+                    overrides={{size: 'iconSize010'}}
+                  />
+                }
+                overrides={{
+                  spaceStack: 'space000',
+                }}
+              />
+            </FormInput>
+          </FormInputBlock>
+          <FormInputBlock spaceStack="space060">
+            <FormInput
+              name="last-name"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 2,
+                  message: 'Last name must be at least 2 characters long',
+                },
+                validate: validateUserName,
+              }}
+            >
+              <FormInputLabel
+                overrides={{
+                  typographyPreset: 'utilityLabel030',
+                  spaceStack: 'space030',
                 }}
               >
-                <FormInputLabel
-                  overrides={{
-                    typographyPreset: 'utilityLabel030',
-                    spaceStack: 'space030',
-                  }}
-                >
-                  Last name
-                </FormInputLabel>
-                <FormInputTextField
-                  startEnhancer={
-                    <IconFilledAddCircleOutline
-                      overrides={{size: 'iconSize010'}}
-                    />
-                  }
-                  overrides={{
-                    spaceStack: 'space020',
-                  }}
-                />
-                <FormInputAssistiveText>
-                  This should be your legal last name
-                </FormInputAssistiveText>
-              </FormInput>
-            </FormInputBlock>
+                Last name
+              </FormInputLabel>
+              <FormInputTextField
+                startEnhancer={
+                  <IconFilledAddCircleOutline
+                    overrides={{size: 'iconSize010'}}
+                  />
+                }
+                overrides={{
+                  spaceStack: 'space020',
+                }}
+              />
+              <FormInputAssistiveText>
+                This should be your legal last name
+              </FormInputAssistiveText>
+            </FormInput>
+          </FormInputBlock>
 
-            <FormInputBlock>
-              <FormInput
-                name="large-checkbox"
-                rules={{
-                  required: 'Required field',
-                }}
-              >
-                <FormInputCheckbox
-                  label="I agree to the terms & conditions"
-                  value="tc"
-                  overrides={{spaceStack: 'space030'}}
-                />
-              </FormInput>
-              <FormInput
-                name="large-checkbox"
-                rules={{
-                  required: 'Required field',
-                }}
-              >
-                <FormInputCheckbox
-                  label="I want to hear about more offers"
-                  value="tc"
-                />
-              </FormInput>
-            </FormInputBlock>
-          </Fieldset>
+          <FormInputBlock>
+            <FormInput
+              name="large-checkbox"
+              rules={{
+                required: 'Required field',
+              }}
+            >
+              <FormInputCheckbox
+                label="I agree to the terms & conditions"
+                value="tc"
+                overrides={{spaceStack: 'space030'}}
+              />
+            </FormInput>
+            <FormInput
+              name="large-checkbox"
+              rules={{
+                required: 'Required field',
+              }}
+            >
+              <FormInputCheckbox
+                label="I want to hear about more offers"
+                value="tc"
+              />
+            </FormInput>
+          </FormInputBlock>
+        </Fieldset>
 
-          <Fieldset
-            legend="Mixed Size Fieldset"
-            size="small"
-            overrides={{
-              stylePreset: 'fieldsetWithBorder',
-              legend: {
-                spaceStack: 'space070',
-              },
-            }}
-          >
-            <FormInputBlock spaceStack="space040">
-              <FormInput
-                name="first-name"
-                rules={{
-                  required: 'Required field',
-                  minLength: {
-                    value: 2,
-                    message: 'Name must be at least 2 characters long',
-                  },
-                  validate: validateUserName,
+        <Fieldset
+          legend="Mixed Size Fieldset"
+          size="small"
+          overrides={{
+            stylePreset: 'fieldsetWithBorder',
+            legend: {
+              spaceStack: 'space070',
+            },
+          }}
+        >
+          <FormInputBlock spaceStack="space040">
+            <FormInput
+              name="first-name"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 2,
+                  message: 'Name must be at least 2 characters long',
+                },
+                validate: validateUserName,
+              }}
+            >
+              <FormInputLabel
+                overrides={{
+                  typographyPreset: 'utilityLabel010',
+                  spaceStack: 'space030',
                 }}
               >
-                <FormInputLabel
-                  overrides={{
-                    typographyPreset: 'utilityLabel010',
-                    spaceStack: 'space030',
-                  }}
-                >
-                  First name
-                </FormInputLabel>
-                <FormInputTextField
-                  startEnhancer={
-                    <IconFilledAddCircleOutline
-                      overrides={{size: 'iconSize020'}}
-                    />
-                  }
-                  overrides={{spaceStack: 'space000'}}
-                />
-              </FormInput>
-            </FormInputBlock>
-            <FormInputBlock spaceStack="space050">
-              <FormInput
-                name="last-name"
-                rules={{
-                  required: 'Required field',
-                  minLength: {
-                    value: 2,
-                    message: 'Last name must be at least 2 characters long',
-                  },
-                  validate: validateUserName,
-                }}
-                size={'large' as TextFieldSize}
-              >
-                <FormInputLabel
-                  overrides={{
-                    typographyPreset: 'utilityLabel010',
-                    spaceStack: 'space030',
-                  }}
-                >
-                  Last name
-                </FormInputLabel>
-                <FormInputTextField
-                  startEnhancer={
-                    <IconFilledAddCircleOutline
-                      overrides={{size: 'iconSize020'}}
-                    />
-                  }
-                  overrides={{spaceStack: 'space020'}}
-                />
-                <FormInputAssistiveText>
-                  This should be your legal last name
-                </FormInputAssistiveText>
-              </FormInput>
-            </FormInputBlock>
-            <FormInputBlock>
-              <FormInput
-                name="medium-checkbox"
-                rules={{
-                  required: 'Required field',
-                }}
-                size={'large' as TextFieldSize}
-              >
-                <FormInputCheckbox
-                  label="I agree to the terms & conditions"
-                  value="tc"
-                  overrides={{spaceStack: 'space020'}}
-                  size={'medium' as TextFieldSize}
-                />
-              </FormInput>
-              <FormInput
-                name="small-checkbox"
-                rules={{
-                  required: 'Required field',
+                First name
+              </FormInputLabel>
+              <FormInputTextField
+                startEnhancer={
+                  <IconFilledAddCircleOutline
+                    overrides={{size: 'iconSize020'}}
+                  />
+                }
+                overrides={{spaceStack: 'space000'}}
+              />
+            </FormInput>
+          </FormInputBlock>
+          <FormInputBlock spaceStack="space050">
+            <FormInput
+              name="last-name"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 2,
+                  message: 'Last name must be at least 2 characters long',
+                },
+                validate: validateUserName,
+              }}
+              size={'large' as TextFieldSize}
+            >
+              <FormInputLabel
+                overrides={{
+                  typographyPreset: 'utilityLabel010',
+                  spaceStack: 'space030',
                 }}
               >
-                <FormInputCheckbox
-                  label="I want to hear about more offers"
-                  value="tc"
-                />
-              </FormInput>
-            </FormInputBlock>
-          </Fieldset>
-        </Stack>
-      </ThemeProvider>
+                Last name
+              </FormInputLabel>
+              <FormInputTextField
+                startEnhancer={
+                  <IconFilledAddCircleOutline
+                    overrides={{size: 'iconSize020'}}
+                  />
+                }
+                overrides={{spaceStack: 'space020'}}
+              />
+              <FormInputAssistiveText>
+                This should be your legal last name
+              </FormInputAssistiveText>
+            </FormInput>
+          </FormInputBlock>
+          <FormInputBlock>
+            <FormInput
+              name="medium-checkbox"
+              rules={{
+                required: 'Required field',
+              }}
+              size={'large' as TextFieldSize}
+            >
+              <FormInputCheckbox
+                label="I agree to the terms & conditions"
+                value="tc"
+                overrides={{spaceStack: 'space020'}}
+                size={'medium' as TextFieldSize}
+              />
+            </FormInput>
+            <FormInput
+              name="small-checkbox"
+              rules={{
+                required: 'Required field',
+              }}
+            >
+              <FormInputCheckbox
+                label="I want to hear about more offers"
+                value="tc"
+              />
+            </FormInput>
+          </FormInputBlock>
+        </Fieldset>
+      </Stack>
     </Form>
   </>
 );
 StoryFormFieldset.storyName = 'form-input-fieldset';
+
+export default {
+  title: 'NewsKit Light/form-input',
+  component: () => 'None',
+  disabledRules: [],
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          formInputCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

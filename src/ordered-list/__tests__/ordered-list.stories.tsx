@@ -1,31 +1,28 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {OrderedList} from '../ordered-list';
 import {StorybookHeading} from '../../test/storybook-comps';
-import {createTheme, ThemeProvider} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const listData = [`alpha`, `bravo`, `charlie`, `delta`, `echo`, `foxtrot`];
 
-const myCustomTheme = createTheme({
+const orderedListCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-ordered-list',
   overrides: {
     stylePresets: {
       customOrderedListItemCounter: {
         base: {
-          color: '{{colors.blue060}}',
+          color: '{{colors.interfaceInformative010}}',
         },
       },
       customOrderedListItemContent: {
         base: {
-          color: '{{colors.blue090}}',
+          color: '{{colors.inkNotice}}',
         },
       },
     },
   },
-});
-
-export default {
-  title: 'NewsKit Light/ordered-list',
-  component: () => 'None',
 };
 
 export const StoryOrderedListDefault = () => (
@@ -39,24 +36,22 @@ StoryOrderedListDefault.storyName = 'ordered-list-default';
 export const StoryOrderedListOverrides = () => (
   <>
     <StorybookHeading>Ordered list with overrides</StorybookHeading>
-    <ThemeProvider theme={myCustomTheme}>
-      <OrderedList
-        overrides={{
-          spaceInline: 'space010',
-          content: {
-            stylePreset: 'customOrderedListItemContent',
-            typographyPreset: 'editorialParagraph030',
-          },
-          counter: {
-            stylePreset: 'customOrderedListItemCounter',
-            typographyPreset: 'editorialParagraph020',
-            minWidth: 'sizing030',
-          },
-        }}
-      >
-        {listData}
-      </OrderedList>
-    </ThemeProvider>
+    <OrderedList
+      overrides={{
+        spaceInline: 'space010',
+        content: {
+          stylePreset: 'customOrderedListItemContent',
+          typographyPreset: 'editorialParagraph030',
+        },
+        counter: {
+          stylePreset: 'customOrderedListItemCounter',
+          typographyPreset: 'editorialParagraph020',
+          minWidth: 'sizing030',
+        },
+      }}
+    >
+      {listData}
+    </OrderedList>
   </>
 );
 StoryOrderedListOverrides.storyName = 'ordered-list-overrides';
@@ -64,16 +59,31 @@ StoryOrderedListOverrides.storyName = 'ordered-list-overrides';
 export const StoryOrderedListLogicalProps = () => (
   <>
     <StorybookHeading>Ordered list with logical props</StorybookHeading>
-    <ThemeProvider theme={myCustomTheme}>
-      <OrderedList
-        overrides={{
-          paddingInline: '30px',
-          marginBlock: '30px',
-        }}
-      >
-        {listData}
-      </OrderedList>
-    </ThemeProvider>
+    <OrderedList
+      overrides={{
+        paddingInline: '30px',
+        marginBlock: '30px',
+      }}
+    >
+      {listData}
+    </OrderedList>
   </>
 );
 StoryOrderedListLogicalProps.storyName = 'ordered-list-logical-props';
+
+export default {
+  title: 'NewsKit Light/ordered-list',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          orderedListCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

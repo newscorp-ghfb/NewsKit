@@ -5,10 +5,10 @@ export default {
     base: {
       backgroundColor: '{{colors.transparent}}',
       borderStyle: 'solid',
-      borderColor: '{{colors.inkInverse}}',
+      borderColor: '{{colors.white}}',
       borderWidth: '{{borders.borderWidth020}}',
       borderRadius: '{{borders.borderRadiusCircle}}',
-      color: '{{colors.inkInverse}}',
+      color: '{{colors.white}}',
     },
   },
   videoPlayerSeekBarContainer: {
@@ -69,6 +69,11 @@ export default {
   videoPlayerDockText: {
     base: {
       backgroundImage: '{{overlays.overlayGradientInverseVertical}}',
+    },
+  },
+  videoPlayerDockTextTitle: {
+    base: {
+      color: '{{colors.white}}',
     },
   },
   videoPlayerMiniCardOverlay: {
