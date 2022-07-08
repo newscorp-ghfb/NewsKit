@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {AspectRatio} from '..';
-import {styled} from '../../utils/style';
+import {styled, getColorCssFromTheme} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 
 const Container = styled.div`
@@ -12,6 +12,7 @@ const ChildContainer = styled.div`
   width: 98%;
   height: 98%;
   border: dashed red;
+  ${getColorCssFromTheme('color', 'inkBase')};
 `;
 
 export default {
