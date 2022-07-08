@@ -1,14 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from 'react';
-import {
-  createTheme,
-  newskitDarkTheme,
-  ThemeProvider,
-  UncompiledTheme,
-} from '../../theme';
+import {Story as StoryType} from '@storybook/react';
+import {createTheme, ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled} from '../../utils/style';
 import {Stack} from '../../stack';
 import {StorybookSubHeading} from '../../test/storybook-comps';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 import {
   IconFilledAccountBalance,
@@ -31,28 +28,26 @@ const Constrain = styled.div`
   display: inline-block;
 `;
 
-const getTheme = (baseTheme?: UncompiledTheme) =>
-  createTheme({
-    name: 'my-custom-icons-theme',
-    baseTheme,
-    overrides: {
-      stylePresets: {
-        iconCustom: {
-          base: {
-            iconColor: '{{colors.amber050}}',
-          },
+const iconsCustomThemeObject: CreateThemeArgs = {
+  name: 'icons-custom-theme',
+  overrides: {
+    stylePresets: {
+      iconCustom: {
+        base: {
+          iconColor: '{{colors.amber050}}',
         },
-        iconCustomWithTransitions: {
-          base: {
-            iconColor: '{{colors.amber050}}',
-          },
-          hover: {
-            iconColor: '{{colors.green050}}',
-          },
+      },
+      iconCustomWithTransitions: {
+        base: {
+          iconColor: '{{colors.amber050}}',
+        },
+        hover: {
+          iconColor: '{{colors.green050}}',
         },
       },
     },
-  });
+  },
+};
 
 const getSocialIconStylePreset = (iconName: string) =>
   `iconSocial${iconName
@@ -81,11 +76,6 @@ const socialIconList = [
 ];
 
 const isSocialIcon = (iconName: string) => socialIconList.includes(iconName);
-
-export default {
-  title: 'NewsKit Light/icons',
-  component: () => 'None',
-};
 
 export const StoryCustomIcons = () => (
   <>
@@ -121,38 +111,36 @@ export const StoryCustomIcons = () => (
             />
           </Container>
           <Container>
-            <ThemeProvider theme={getTheme()}>
-              <Constrain>
-                <Icon
-                  overrides={{
-                    stylePreset: stylePresetOverride,
-                  }}
-                />
-              </Constrain>
+            <Constrain>
               <Icon
                 overrides={{
-                  size: 'iconSize020',
                   stylePreset: stylePresetOverride,
                 }}
               />
-            </ThemeProvider>
+            </Constrain>
+            <Icon
+              overrides={{
+                size: 'iconSize020',
+                stylePreset: stylePresetOverride,
+              }}
+            />
+            {/* </ThemeProvider> */}
           </Container>
           <Container dark>
-            <ThemeProvider theme={getTheme(newskitDarkTheme)}>
-              <Constrain>
-                <Icon
-                  overrides={{
-                    stylePreset: stylePresetOverride,
-                  }}
-                />
-              </Constrain>
+            {/* <ThemeProvider theme={getTheme(newskitDarkTheme)}> */}
+            <Constrain>
               <Icon
                 overrides={{
-                  size: 'iconSize020',
                   stylePreset: stylePresetOverride,
                 }}
               />
-            </ThemeProvider>
+            </Constrain>
+            <Icon
+              overrides={{
+                size: 'iconSize020',
+                stylePreset: stylePresetOverride,
+              }}
+            />
           </Container>
         </Stack>
       );
@@ -165,37 +153,35 @@ export const StoryMaterialIcons = () => (
   <>
     {Object.values(materialIconsSample).map((Icon: NewsKitIcon) => (
       <div>
-        <ThemeProvider theme={getTheme()}>
-          <Constrain>
-            <Icon />
-          </Constrain>
-          <Icon overrides={{size: 'iconSize030'}} />
-          <Icon
-            overrides={{
-              size: {
-                xs: 'iconSize010',
-                sm: 'iconSize020',
-                md: 'iconSize030',
-                lg: 'iconSize040',
-                xl: 'iconSize050',
-              },
-            }}
-          />
+        <Constrain>
+          <Icon />
+        </Constrain>
+        <Icon overrides={{size: 'iconSize030'}} />
+        <Icon
+          overrides={{
+            size: {
+              xs: 'iconSize010',
+              sm: 'iconSize020',
+              md: 'iconSize030',
+              lg: 'iconSize040',
+              xl: 'iconSize050',
+            },
+          }}
+        />
 
-          <Constrain>
-            <Icon
-              overrides={{
-                stylePreset: 'iconCustom',
-              }}
-            />
-          </Constrain>
+        <Constrain>
           <Icon
             overrides={{
-              size: 'iconSize020',
               stylePreset: 'iconCustom',
             }}
           />
-        </ThemeProvider>
+        </Constrain>
+        <Icon
+          overrides={{
+            size: 'iconSize020',
+            stylePreset: 'iconCustom',
+          }}
+        />
       </div>
     ))}
   </>
@@ -263,31 +249,44 @@ StoryOverriddenIcons.storyName = 'overridden-icons';
 export const StoryIconsTransition = () => (
   <>
     {Object.values([IconFilledAccountBalance]).map((Icon: NewsKitIcon) => (
-      <ThemeProvider theme={getTheme()}>
-        <Constrain>
-          <StorybookSubHeading>Icon with transition</StorybookSubHeading>
-          <Icon
-            overrides={{
-              stylePreset: 'iconCustomWithTransitions',
-            }}
-          />
-        </Constrain>
-      </ThemeProvider>
+      <Constrain>
+        <StorybookSubHeading>Icon with transition</StorybookSubHeading>
+        <Icon
+          overrides={{
+            stylePreset: 'iconCustomWithTransitions',
+          }}
+        />
+      </Constrain>
     ))}
   </>
 );
 StoryIconsTransition.storyName = 'icons-transition-overrides';
 
 export const StoryIconsLogicalProps = () => (
-  <ThemeProvider theme={getTheme()}>
-    <Constrain>
-      <StorybookSubHeading>Icon with logical props</StorybookSubHeading>
-      <IconFilledAccountBalance
-        overrides={{
-          marginBlock: '20px',
-        }}
-      />
-    </Constrain>
-  </ThemeProvider>
+  <Constrain>
+    <StorybookSubHeading>Icon with logical props</StorybookSubHeading>
+    <IconFilledAccountBalance
+      overrides={{
+        marginBlock: '20px',
+      }}
+    />
+  </Constrain>
 );
 StoryIconsLogicalProps.storyName = 'icons-logical-props';
+
+export default {
+  title: 'NewsKit Light/icons',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          iconsCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

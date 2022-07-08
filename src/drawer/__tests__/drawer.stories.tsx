@@ -1,16 +1,22 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, {MouseEvent} from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Drawer} from '..';
 import {styled} from '../../utils/style';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookParah,
+  StorybookLabel,
+} from '../../test/storybook-comps';
 import {Button} from '../../button';
 import {Link} from '../../link';
 import {TextInput} from '../../text-input';
 import {Block} from '../../block';
 import {Menu, MenuItem} from '../../menu';
-import {createTheme, compileTheme, ThemeProvider} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {Stack} from '../../stack';
 import {useMediaQueryObject} from '../../utils/hooks';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const Box = styled.div`
   width: 400px;
@@ -40,7 +46,7 @@ const BoxWithContent = ({open}: {open?: () => void}) => (
           {open && i === 3 && (
             <Button onClick={open}>Another button to open the drawer</Button>
           )}
-          <p key={i}>{content}</p>
+          <StorybookParah key={i}>{content}</StorybookParah>
         </>
       ))}
     </Box>
@@ -55,7 +61,7 @@ const onSubmit = async (data: any) => {
 };
 const DrawerContent = () => (
   <>
-    <p>
+    <StorybookParah>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lorem
       massa, et lacinia ipsum tristique id. Phasellus sed posuere lacus.
       Pellentesque eu odio <Link href="/">Test link 1</Link> sapien. Donec
@@ -67,14 +73,14 @@ const DrawerContent = () => (
       ultricies massa eu sem varius volutpat. Ut vitae purus et enim imperdiet
       finibus. Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
       interdum.
-    </p>
+    </StorybookParah>
     <TextInput label="First name" />
     <TextInput label="Last name" />
     <TextInput label="Phone number" />
     <div>
       <Link href="/">For more information...</Link>{' '}
     </div>
-    <p>
+    <StorybookParah>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
       scelerisque sapien. Praesent mollis vestibulum nunc at blandit. Donec
       vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
@@ -83,18 +89,13 @@ const DrawerContent = () => (
       dapibus, enim sed tristique gravida, nisl dolor malesuada lacus, quis
       auctor dui mauris eu odio. Vivamus eu augue et enim varius viverra.
       Vivamus ut tellus iaculis, ullamcorper ligula sit amet, posuere ipsum.
-    </p>
+    </StorybookParah>
     <div>
       <Button onClick={onSubmit}>Remind me later</Button>
       <Button>Ok</Button>
     </div>
   </>
 );
-
-export default {
-  title: 'NewsKit Light/drawer',
-  component: () => 'None',
-};
 
 const useActiveState = (
   initial = false,
@@ -125,11 +126,11 @@ export const StoryDefault = () =>
           Open Drawer
         </Button>
         <Block as="span" spaceInset="space030" onChange={onChangeValue}>
-          <label htmlFor="drawer_top">
+          <StorybookLabel htmlFor="drawer_top">
             top:
             <input type="radio" value="top" id="drawer_top" name="placement" />
-          </label>
-          <label htmlFor="drawer_left">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer_left">
             left:
             <input
               type="radio"
@@ -138,8 +139,8 @@ export const StoryDefault = () =>
               name="placement"
               defaultChecked
             />
-          </label>
-          <label htmlFor="drawer_bottom">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer_bottom">
             bottom:
             <input
               type="radio"
@@ -147,8 +148,8 @@ export const StoryDefault = () =>
               id="drawer_bottom"
               name="placement"
             />
-          </label>
-          <label htmlFor="drawer_right">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer_right">
             right:
             <input
               type="radio"
@@ -156,7 +157,7 @@ export const StoryDefault = () =>
               id="drawer_right"
               name="placement"
             />
-          </label>
+          </StorybookLabel>
         </Block>
 
         <Drawer
@@ -189,7 +190,7 @@ export const StoryInline = () =>
           Open Drawer
         </Button>
         <Block as="span" spaceInset="space030" onChange={onChangeValue}>
-          <label htmlFor="drawer-inline_top">
+          <StorybookLabel htmlFor="drawer-inline_top">
             top:
             <input
               type="radio"
@@ -197,8 +198,8 @@ export const StoryInline = () =>
               id="drawer-inline_top"
               name="placement"
             />
-          </label>
-          <label htmlFor="drawer-inline_left">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer-inline_left">
             left:
             <input
               type="radio"
@@ -207,8 +208,8 @@ export const StoryInline = () =>
               name="placement"
               defaultChecked
             />
-          </label>
-          <label htmlFor="drawer-inline_bottom">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer-inline_bottom">
             bottom:
             <input
               type="radio"
@@ -216,8 +217,8 @@ export const StoryInline = () =>
               id="drawer-inline_bottom"
               name="placement"
             />
-          </label>
-          <label htmlFor="drawer-inline_right">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer-inline_right">
             right:
             <input
               type="radio"
@@ -225,7 +226,7 @@ export const StoryInline = () =>
               id="drawer-inline_right"
               name="placement"
             />
-          </label>
+          </StorybookLabel>
         </Block>
 
         <DrawerContainer>
@@ -244,7 +245,7 @@ export const StoryInline = () =>
           >
             <DrawerContent />
           </Drawer>
-          <p>
+          <StorybookParah>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
             lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
             lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
@@ -257,7 +258,7 @@ export const StoryInline = () =>
             sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
             Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
             interdum.
-          </p>
+          </StorybookParah>
         </DrawerContainer>
 
         <BoxWithContent open={open} />
@@ -285,48 +286,46 @@ const HeaderDrawer = styled.div`
   position: relative;
 `;
 
-const menuDrawerTheme = compileTheme(
-  createTheme({
-    name: 'my-custom-drawer-theme',
-    overrides: {
-      transitionPresets: {
-        scaleUp: {
-          base: {
-            transform: 'scaleY(0)',
-            transformOrigin: 'top center',
-          },
-          appear: {},
-          appearActive: {},
-          appearDone: {},
-          enter: {
-            transform: 'scaleY(0)',
-          },
-          enterActive: {
-            transform: 'scaleY(1)',
-            transitionProperty: 'transform',
-            transitionDuration: '{{motions.motionDuration020}}',
-            transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
-          },
-          enterDone: {
-            transform: 'scaleY(1)',
-          },
-          exit: {
-            transform: 'scaleY(1)',
-          },
-          exitActive: {
-            transform: 'scaleY(0)',
-            transitionProperty: 'transform',
-            transitionDuration: '{{motions.motionDuration020}}',
-            transitionTimingFunction: '{{motions.motionTimingLinear}}',
-          },
-          exitDone: {
-            transform: 'scaleY(0)',
-          },
+const drawerCustomThemeObject: CreateThemeArgs = {
+  name: 'my-custom-drawer-theme',
+  overrides: {
+    transitionPresets: {
+      scaleUp: {
+        base: {
+          transform: 'scaleY(0)',
+          transformOrigin: 'top center',
+        },
+        appear: {},
+        appearActive: {},
+        appearDone: {},
+        enter: {
+          transform: 'scaleY(0)',
+        },
+        enterActive: {
+          transform: 'scaleY(1)',
+          transitionProperty: 'transform',
+          transitionDuration: '{{motions.motionDuration020}}',
+          transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
+        },
+        enterDone: {
+          transform: 'scaleY(1)',
+        },
+        exit: {
+          transform: 'scaleY(1)',
+        },
+        exitActive: {
+          transform: 'scaleY(0)',
+          transitionProperty: 'transform',
+          transitionDuration: '{{motions.motionDuration020}}',
+          transitionTimingFunction: '{{motions.motionTimingLinear}}',
+        },
+        exitDone: {
+          transform: 'scaleY(0)',
         },
       },
     },
-  }),
-);
+  },
+};
 
 export const StoryMenuAndInline = () =>
   React.createElement(() => {
@@ -337,7 +336,7 @@ export const StoryMenuAndInline = () =>
     const closeDrawer = () => setDrawer(null);
 
     return (
-      <ThemeProvider theme={menuDrawerTheme}>
+      <>
         <Header fixed={isFixed}>
           <HeaderMenu fixed={isFixed}>
             <Menu aria-label="Menu">
@@ -366,7 +365,7 @@ export const StoryMenuAndInline = () =>
             >
               {selectedDrawer !== null &&
                 Array.from({length: selectedDrawer + 1}).map(() => (
-                  <p>
+                  <StorybookParah>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                     aliquet lorem massa, et lacinia ipsum tristique id.
                     Phasellus sed posuere lacus. Pellentesque eu odio{' '}
@@ -380,7 +379,7 @@ export const StoryMenuAndInline = () =>
                     Curabitur ultricies massa eu sem varius volutpat. Ut vitae
                     purus et enim imperdiet finibus. Quisque posuere lacus a
                     nunc tempor accumsan. Aliquam odio nunc, interdum.
-                  </p>
+                  </StorybookParah>
                 ))}
             </Drawer>
           </HeaderDrawer>
@@ -390,7 +389,7 @@ export const StoryMenuAndInline = () =>
             Toggle Menu fixed: ( current {isFixed.toString()})
           </Button>
         </div>
-        <p>
+        <StorybookParah>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
           lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
           lacus. Pellentesque eu odio sapien. Donec finibus pellentesque est
@@ -402,10 +401,10 @@ export const StoryMenuAndInline = () =>
           ultricies massa eu sem varius volutpat. Ut vitae purus et enim
           imperdiet finibus. Quisque posuere lacus a nunc tempor accumsan.
           Aliquam odio nunc, interdum.
-        </p>
+        </StorybookParah>
 
         <BoxWithContent />
-      </ThemeProvider>
+      </>
     );
   });
 StoryMenuAndInline.storyName = 'menu+inline';
@@ -446,7 +445,9 @@ export const StoryWithRestoreFocusAndCustomAutofocus = () =>
     return (
       <div>
         <StorybookHeading>Drawer with custom auto-focus</StorybookHeading>
-        <p>Drawer with autofocus using data-autofocus attribute</p>
+        <StorybookParah>
+          Drawer with autofocus using data-autofocus attribute
+        </StorybookParah>
         <Button onClick={open} data-testid="drawer-open-button">
           Open Drawer
         </Button>
@@ -576,7 +577,9 @@ export const StoryModelessWithRestoreFocusAndCustomAutofocus = () =>
     return (
       <div>
         <StorybookHeading>Drawer with custom auto-focus</StorybookHeading>
-        <p>Drawer with autofocus using data-autofocus attribute</p>
+        <StorybookParah>
+          Drawer with autofocus using data-autofocus attribute
+        </StorybookParah>
         <Button onClick={open} data-testid="modeless-drawer-open-button">
           Open Drawer
         </Button>
@@ -722,7 +725,7 @@ export const StoryDrawerLogicalPaddingOnPanel = () =>
           Open Drawer
         </Button>
         <Block as="span" spaceInset="space030" onChange={onChangeValue}>
-          <label htmlFor="drawer_top_logical">
+          <StorybookLabel htmlFor="drawer_top_logical">
             top:
             <input
               type="radio"
@@ -730,8 +733,8 @@ export const StoryDrawerLogicalPaddingOnPanel = () =>
               id="drawer_top_logical"
               name="placement"
             />
-          </label>
-          <label htmlFor="drawer_left_logical">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer_left_logical">
             left:
             <input
               type="radio"
@@ -740,8 +743,8 @@ export const StoryDrawerLogicalPaddingOnPanel = () =>
               name="placement"
               defaultChecked
             />
-          </label>
-          <label htmlFor="drawer_bottom_logical">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer_bottom_logical">
             bottom:
             <input
               type="radio"
@@ -749,8 +752,8 @@ export const StoryDrawerLogicalPaddingOnPanel = () =>
               id="drawer_bottom_logical"
               name="placement"
             />
-          </label>
-          <label htmlFor="drawer_right_logical">
+          </StorybookLabel>
+          <StorybookLabel htmlFor="drawer_right_logical">
             right:
             <input
               type="radio"
@@ -758,7 +761,7 @@ export const StoryDrawerLogicalPaddingOnPanel = () =>
               id="drawer_right_logical"
               name="placement"
             />
-          </label>
+          </StorybookLabel>
         </Block>
 
         <Drawer
@@ -811,7 +814,7 @@ export const StoryInlineDrawerLogicalPropsOnPanel = () =>
           >
             <DrawerContent />
           </Drawer>
-          <p>
+          <StorybookParah>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
             lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
             lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
@@ -824,7 +827,7 @@ export const StoryInlineDrawerLogicalPropsOnPanel = () =>
             sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
             Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
             interdum.
-          </p>
+          </StorybookParah>
         </DrawerContainer>
       </div>
     );
@@ -832,3 +835,20 @@ export const StoryInlineDrawerLogicalPropsOnPanel = () =>
 StoryInlineDrawerLogicalPropsOnPanel.storyName =
   'inline drawer with logical padding & margin';
 StoryInlineDrawerLogicalPropsOnPanel.parameters = {eyes: {include: false}};
+
+export default {
+  title: 'NewsKit Light/drawer',
+  component: () => 'None',
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          drawerCustomThemeObject,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};
