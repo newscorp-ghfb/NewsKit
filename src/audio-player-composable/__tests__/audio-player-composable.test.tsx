@@ -93,7 +93,7 @@ const AudioPropsAndVolumeControlVertical: AudioPlayerComposableProps = {
   initialVolume: 0.2,
   children: (
     <>
-      <AudioPlayerVolumeControl vertical />
+      <AudioPlayerVolumeControl layout="vertical" />
     </>
   ),
 };
@@ -909,6 +909,101 @@ describe('Audio Player Composable', () => {
       const {asFragment} = renderWithTheme(
         AudioPlayerComposable,
         AudioPropsAndVolumeControlVertical,
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
+    it('should render correctly with overrides', () => {
+      const myCustomTheme = createTheme({
+        name: 'my-custom-volume-control-theme',
+        overrides: {
+          stylePresets: {
+            customAudioPlayerVolumeControlHorizontalContainer: {
+              base: {
+                backgroundColor: 'grey',
+              },
+            },
+            customTrackStylePreset: {
+              base: {
+                backgroundColor: 'red',
+                borderColor: 'blue',
+                borderWidth: '1px',
+                borderStyle: 'solid',
+              },
+            },
+            customIndicatorStylePreset: {
+              base: {
+                backgroundColor: 'yellow',
+              },
+            },
+            customThumbStylePreset: {
+              base: {
+                backgroundColor: 'green',
+                borderColor: 'black',
+              },
+            },
+            customLabelStylePreset: {
+              base: {
+                borderColor: 'purple',
+                color: 'purple',
+              },
+            },
+            customThumbLabelStylePreset: {
+              base: {
+                borderColor: 'black',
+                color: 'green',
+              },
+            },
+            customFeedback: {
+              base: {
+                backgroundColor: '{{colors.red060}}',
+                borderRadius: '{{borders.borderRadiusCircle}}',
+                opacity: '{{overlays.opacity000}}',
+              },
+            },
+          },
+        },
+      });
+      const recordedVolumeControlOverrides: AudioPlayerComposableProps = {
+        src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+        autoPlay: false,
+        children: (
+          <AudioPlayerVolumeControl
+            overrides={{
+              stylePreset: 'customAudioPlayerVolumeControlHorizontalContainer',
+              spaceBetween: 'space050',
+              slider: {
+                track: {
+                  stylePreset: 'customTrackStylePreset',
+                  size: 'sizing020',
+                  length: '100px',
+                },
+                indicator: {
+                  stylePreset: 'customIndicatorStylePreset',
+                },
+                thumb: {
+                  stylePreset: 'customThumbStylePreset',
+                  size: 'sizing040',
+                },
+                labels: {
+                  stylePreset: 'customLabelStylePreset',
+                  space: 'spacing060',
+                },
+                thumbLabel: {
+                  stylePreset: 'customThumbLabelStylePreset',
+                },
+                feedback: {
+                  size: 'sizing070',
+                  stylePreset: 'customFeedback',
+                },
+              },
+            }}
+          />
+        ),
+      };
+      const {asFragment} = renderWithTheme(
+        AudioPlayerComposable,
+        recordedVolumeControlOverrides,
+        myCustomTheme,
       );
       expect(asFragment()).toMatchSnapshot();
     });
