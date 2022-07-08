@@ -373,6 +373,7 @@ const InputComponents = (layoutProps: LayoutProps) => (
           headline={
             <StyledHeading>NewsKit input component links</StyledHeading>
           }
+          showSeparator
         >
           <MediaList
             layout="1-span"
